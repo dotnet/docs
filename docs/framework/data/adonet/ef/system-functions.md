@@ -22,8 +22,8 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides the followi
   
 |SQL Server 2000|SQL Server 2005|SQL Server 2008|  
 |---------------------|---------------------|---------------------|  
-|[System Functions Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115918)|[System Functions Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115917)|[System Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115919)|  
+|[System Functions Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115918)|[System Functions Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115917)|[System Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115919)|  
   
-## See Also  
- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)  
- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)
+## See also
+- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)

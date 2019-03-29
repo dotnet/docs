@@ -31,14 +31,14 @@ As you construct forms and controls for your Windows Forms application, there ar
  When you are finished, you will have an understanding of the role played by these important layout features.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
   
 #### To create the project  
   
-1.  Create a Windows-based application project called "SmartTagsExample". For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called "SmartTagsExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  Select the form in the **Windows Forms Designer**.  
   
@@ -47,7 +47,7 @@ As you construct forms and controls for your Windows Forms application, there ar
   
 #### To use smart tags  
   
-1.  Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the smart-tag glyph (![Smart Tag Glyph](../../../../docs/framework/winforms/controls/media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) that appears on the side of the <xref:System.Windows.Forms.TabControl>.  
+1.  Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the smart-tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) that appears on the side of the <xref:System.Windows.Forms.TabControl>.  
   
 2.  Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Add Tab** item. Observe that a new tab page is added to the <xref:System.Windows.Forms.TabControl>.  
   
@@ -59,9 +59,9 @@ As you construct forms and controls for your Windows Forms application, there ar
   
 6.  Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Horizontal splitter orientation** item. Observe that the <xref:System.Windows.Forms.SplitContainer> control's splitter bar is now oriented horizontally.  
   
-## See Also  
- <xref:System.Windows.Forms.TextBox>  
- <xref:System.Windows.Forms.TabControl>  
- <xref:System.Windows.Forms.SplitContainer>  
- <xref:System.ComponentModel.Design.DesignerActionList>  
- [Walkthrough: Adding Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/a6814169-fa7d-4527-808c-637ca5c95f63)
+## See also
+- <xref:System.Windows.Forms.TextBox>
+- <xref:System.Windows.Forms.TabControl>
+- <xref:System.Windows.Forms.SplitContainer>
+- <xref:System.ComponentModel.Design.DesignerActionList>
+- [Walkthrough: Adding Smart Tags to a Windows Forms Component](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171829(v=vs.120))

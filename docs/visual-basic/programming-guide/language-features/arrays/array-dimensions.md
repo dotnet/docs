@@ -21,14 +21,11 @@ A *dimension* is a direction in which you can vary the specification of an array
   
  The following illustrations show the conceptual structure of arrays with different ranks. Each element in the illustrations shows the index values that access it. For example, you can access the first element of the second row of the two-dimensional array by specifying indexes `(1, 0)`.  
   
- ![Graphic diagram of one&#45;dimensional array](../../../../visual-basic/programming-guide/language-features/arrays/media/arrayexdimone.gif "ArrayExDimOne")  
-One-dimensional array  
+ ![Diagram that shows a one-dimensional array.](./media/array-dimensions/one-dimensional-array.gif)  
   
- ![Graphic diagram of two&#45;dimensional array](../../../../visual-basic/programming-guide/language-features/arrays/media/arrayexdimtwo.gif "ArrayExDimTwo")  
-Two-dimensional array  
+ ![Diagram that shows a two-dimensional array.](./media/array-dimensions/two-dimensional-array.gif)  
   
- ![Graphic diagram of three&#45;dimensional array](../../../../visual-basic/programming-guide/language-features/arrays/media/arrayexdimthree.gif "ArrayExDimThree")  
-Three-dimensional array  
+ ![Diagram that shows a three-dimensional array.](./media/array-dimensions/three-dimensional-array.gif)  
   
 ### One Dimension  
  Many arrays have only one dimension, such as the number of people of each age. The only requirement to specify an element is the age for which that element holds the count. Therefore, such an array uses only one index. The following example declares a variable to hold a *one-dimensional array* of age counts for ages 0 through 120.  
@@ -83,6 +80,6 @@ Dim salesAmounts(4, 11, 30) As Double
 > [!NOTE]
 >  You can create an array without using the `Dim` statement or the `New` clause. For example, you can call the <xref:System.Array.CreateInstance%2A> method, or another component can pass your code an array created in this manner. Such an array can have a lower bound other than 0. You can always test for the lower bound of a dimension by using the <xref:System.Array.GetLowerBound%2A> method or the `LBound` function.  
   
-## See Also  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
+## See also
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

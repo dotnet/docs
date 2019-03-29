@@ -1,9 +1,9 @@
 ---
-title: "&lt;tracking&gt; of WCF"
+title: "<tracking> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
 ---
-# &lt;tracking&gt; of WCF
+# \<tracking> of WCF
 Represents a configuration section for defining tracking settings for a workflow service.  
   
  For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
@@ -13,9 +13,61 @@ Represents a configuration section for defining tracking settings for a workflow
   
 ## Syntax  
   
-```xml
-   <system.serviceModel>  <tracking>       <participants>       <add name="String"            profileName="String"           type="String" />      </participants>     <trackingProfile name="String">      <workflow activityDefinitionId="String">          <activityScheduledQueries>             <activityScheduledQuery activityName="String"                 childActivityName="String"/>          </activityScheduledQueries>             <activityStateQuery activityName="String" />                <arguments>                   <argument name="String"/>                </arguments>                <states>                   <state name="String"/>                </states>                <variables>                   <variable name="String"/>                </variables>          </activityStateQueries>          <bookmarkResumptionQueries>             <bookmarkResumptionQuery name="String" />          </bookmarkResumptionQueries>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>          <customTrackingQueries>             <customTrackingQuery activityName="String"                 name="String"/>          </customTrackingQueries>          <faultPropagationQueries>             <faultPropagationQuery activityName="String"                 faultHandlerActivityName="String"/>          </faultPropagationQueries>         <workflowInstanceQueries>            <workflowInstanceQuery>              <states>                 <state name="String"/>              </states>          </workflowInstanceQuery>        </workflowInstanceQueries>      </workflow>    </trackingProfile>           </profiles>  </tracking></system.serviceModel>  
-```
+```xml  
+<system.serviceModel>
+  <tracking>
+    <participants>
+      <add name="String"
+           profileName="String"
+           type="String" />
+    </participants>
+    <profiles>
+      <trackingProfile name="String">
+        <workflow activityDefinitionId="String">
+          <activityScheduledQueries>
+            <activityScheduledQuery activityName="String"
+                                    childActivityName="String"/>
+          </activityScheduledQueries>
+          <activityStateQueries>
+            <activityStateQuery activityName="String" />
+            <arguments>
+              <argument name="String"/>
+            </arguments>
+            <states>
+              <state name="String"/>
+            </states>
+            <variables>
+              <variable name="String"/>
+            </variables>
+          </activityStateQueries>
+          <bookmarkResumptionQueries>
+            <bookmarkResumptionQuery name="String" />
+          </bookmarkResumptionQueries>
+          <cancelRequestQueries>
+            <cancelRequestQuery activityName="String"
+                                childActivityName="String"/>
+          </cancelRequestQueries>
+          <customTrackingQueries>
+            <customTrackingQuery activityName="String"
+                                 name="String"/>
+          </customTrackingQueries>
+          <faultPropagationQueries>
+            <faultPropagationQuery activityName="String"
+                                   faultHandlerActivityName="String"/>
+          </faultPropagationQueries>
+          <workflowInstanceQueries>
+            <workflowInstanceQuery>
+              <states>
+                <state name="String"/>
+              </states>
+            </workflowInstanceQuery>
+          </workflowInstanceQueries>
+        </workflow>
+      </trackingProfile>
+    </profiles>
+  </tracking>
+</system.serviceModel>
+```  
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -39,6 +91,6 @@ Represents a configuration section for defining tracking settings for a workflow
 ## Remarks  
  Tracking provides you with the ability to examine the execution of a workflow. The workflow tracking infrastructure instruments a workflow to emit records reflecting key events during the execution. For example, when a workflow instance starts or completes tracking records are emitted. Tracking can also extract business relevant data associated with the workflow variables. For example, if the workflow represents an order processing system the order id can be extracted along with the tracking record. In general, enabling WF tracking facilitates diagnostics or business analytics over a workflow execution.  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

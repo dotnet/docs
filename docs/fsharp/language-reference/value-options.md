@@ -1,7 +1,7 @@
 ---
-title: Value Options (F#)
+title: Value Options
 description: Learn about the F# Value Option type, which is a struct version of the Option type.
-ms.date: 06/16/2018
+ms.date: 02/06/2019
 ---
 
 # Value Options
@@ -11,23 +11,18 @@ The Value Option type in F# is used when the following two circumstances hold:
 1. A scenario is appropriate for an [F# Option](options.md).
 2. Using a struct provides a performance benefit in your scenario.
 
-Not all performance-sensitive scenarios are "solved" by using structs. You must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, because structs can sometimes yield better overall performance over the lifetime of a program.
+Not all performance-sensitive scenarios are "solved" by using structs. You must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, and in such cases, structs can often yield better overall performance over the lifetime of a program.
 
 ## Definition
 
-Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions) that is similar to the reference option type:
+Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions) that is similar to the reference option type. Its definition can be thought of this way:
 
 ```fsharp
 [<StructuralEquality; StructuralComparison>]
-[<CompiledName("FSharpValueOption`1")>]
 [<Struct>]
 type ValueOption<'T> =
-    | ValueNone: 'T voption
-    | ValueSome: 'T -> 'T voption
-
-    member Value : 'T
-
-and 'T voption = ValueOption<'T>
+    | ValueNone
+    | ValueSome of 'T
 ```
 
 Value Option conforms to structural equality and comparison. The main difference is that the compiled name, type name, and case names all indicate that it is a value type.
@@ -75,4 +70,4 @@ At this time, there are no other module-bound functions for Value Options.
 
 ## See also
 
-[Options](options.md)
+- [Options](options.md)

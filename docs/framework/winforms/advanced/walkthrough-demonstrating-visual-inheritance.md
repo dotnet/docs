@@ -26,7 +26,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
  Ultimately, this walkthrough will demonstrate the difference between private and protected controls on an inherited form.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 > [!CAUTION]
 >  Not all controls support visual inheritance from a base form. The following controls do not support the scenario described in this walkthrough:  
@@ -74,7 +74,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
     -   Set the **(Name)** property to **btnProtected**.  
   
-    -   Set the**Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
+    -   Set the **Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
   
 4.  Double-click the **Say Hello** button to add an event handler for the **Click** event.  
   
@@ -122,7 +122,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 #### To add an inherited form  
   
-1.  In **Solution Explorer**, right-click the **InheritanceTest** project, select **Add**, and then select**New Item**.  
+1.  In **Solution Explorer**, right-click the **InheritanceTest** project, select **Add**, and then select **New Item**.  
   
 2.  In the **Add New Item** dialog box, select the **Windows Forms** category (if you have a list of categories) and then select the **Inherited Form** template.  
   
@@ -134,7 +134,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 5.  Open the inherited form (**Form2**) in the designer by double-clicking it, if it is not already open.  
   
-     In the designer, the inherited buttons have a symbol (![VisualBasicInheritanceSymbol screenshot](../../../../docs/framework/winforms/advanced/media/vbinheritanceglyph.gif "vbInheritanceGlyph")) in their upper corner, indicating they are inherited.  
+     In the designer, the inherited buttons have a symbol (![VisualBasicInheritanceSymbol screenshot](./media/vbinheritanceglyph.gif "vbInheritanceGlyph")) in their upper corner, indicating they are inherited.  
   
 6.  Select the **Say Hello** button and observe the resize handles. Because this button is protected, the inheritors can move it, resize it, change its caption, and make other modifications.  
   
@@ -155,9 +155,9 @@ Visual inheritance enables you to see the controls on the base form and to add n
 12. Press F5 to run the application, and observe the behavior of the inherited form.  
   
 ## Next Steps  
- Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in Visual C#) statement. For more information, see [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md).  
+ Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in Visual C#) statement. For more information, see [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md).  
   
-## See Also  
- [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  
- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+## See also
+- [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)
+- [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)
+- [Windows Forms](../index.md)

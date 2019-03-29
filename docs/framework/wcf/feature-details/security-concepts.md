@@ -2,8 +2,6 @@
 title: "Security Concepts"
 ms.date: "03/30/2017"
 ms.assetid: 944fa5ca-2c34-4268-8897-e005a61b470d
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Concepts
 This section briefly explains the concepts associated with Windows Communication Foundation (WCF) security.  
@@ -32,7 +30,7 @@ This section briefly explains the concepts associated with Windows Communication
 ## Related Sections  
  [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)  
   
-## See Also  
- [Security](../../../../docs/framework/wcf/feature-details/security.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Security](../../../../docs/framework/wcf/feature-details/security.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

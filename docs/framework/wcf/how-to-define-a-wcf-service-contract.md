@@ -1,83 +1,108 @@
 ---
-title: "How to: Define a Windows Communication Foundation Service Contract"
-ms.date: "03/30/2017"
-helpviewer_keywords: 
+title: "Tutorial: Define a Windows Communication Foundation service contract"
+ms.date: 03/19/2019
+helpviewer_keywords:
   - "service contracts [WCF], defining"
+dev_langs:
+ - CSharp
+ - VB
 ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 ---
-# How to: Define a Windows Communication Foundation Service Contract
-This is the first of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
-  
- When creating a WCF service, the first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. Contracts are created by defining a C++, C#, or Visual Basic (VB) interface. Each method in the interface corresponds to a specific service operation. Each interface must have the <xref:System.ServiceModel.ServiceContractAttribute> applied to it and each operation must have the <xref:System.ServiceModel.OperationContractAttribute> attribute applied to it. If a method within an interface that has the <xref:System.ServiceModel.ServiceContractAttribute> attribute does not have the <xref:System.ServiceModel.OperationContractAttribute> attribute, that method is not exposed by the service.  
-  
- The code used for this task is provided in the example following the procedure.  
-  
-### To define a service contract  
-  
-1.  Open  [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)] as an administrator by right-clicking the program in the **Start** menu and selecting **Run as administrator**.  
-  
-2.  Create a WCF Service Library project by clicking the **File** menu and selecting **New**, **Project**. In the **New Project** dialog, on the left-hand side of the dialog expand **Visual C#** for a C# project or **Other Languages** and then **Visual Basic** for a Visual Basic project. Under the language selected select **WCF** and a list of project templates will be displayed on the center section of the dialog. Select **WCF Service Library**, and type `GettingStartedLib` in the **Name** textbox and `GettingStarted` in the **Solution name** textbox at the bottom of the dialog.  
-  
-3.  Visual Studio will create the project which contains 3 files: IService1.cs (or IService1.vb), Service1.cs (or Service1.vb), and App.config.  The IService1 file contains a default service contract.  The Service1 file contains a default implementation of the service contract. The App.config file contains configuration needed to load the default service with the Visual Studio WCF Service Host. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)  
-  
-4.  Open the IService1.cs or IService1.vb file and delete the code within the namespace declaration leaving the namespace declaration. Inside the namespace declaration define a new interface called `ICalculator` as shown in the code below.  
-  
-    ```  
-    // IService.cs  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Linq;  
-    using System.Runtime.Serialization;  
-    using System.ServiceModel;  
-    using System.Text;  
-  
-    namespace GettingStartedLib  
-    {  
-            [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
-            public interface ICalculator  
-            {  
-                [OperationContract]  
-                double Add(double n1, double n2);  
-                [OperationContract]  
-                double Subtract(double n1, double n2);  
-                [OperationContract]  
-                double Multiply(double n1, double n2);  
-                [OperationContract]  
-                double Divide(double n1, double n2);  
-            }  
-    }  
-    ```  
-  
-    ```  
-    ‘IService.vb  
-    Imports System  
-    Imports System.ServiceModel  
-  
-    Namespace GettingStartedLib  
-  
-        <ServiceContract(Namespace:="http://Microsoft.ServiceModel.Samples")> _  
-        Public Interface ICalculator  
-  
-            <OperationContract()> _  
-            Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double  
-            <OperationContract()> _  
-            Function Subtract(ByVal n1 As Double, ByVal n2 As Double) As Double  
-            <OperationContract()> _  
-            Function Multiply(ByVal n1 As Double, ByVal n2 As Double) As Double  
-            <OperationContract()> _  
-            Function Divide(ByVal n1 As Double, ByVal n2 As Double) As Double  
-        End Interface  
-    End Namespace  
-    ```  
-  
-     This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. This attribute defines a namespace that is used to disambiguate the contract name. Each calculator operation is marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute.  
-  
-    > [!NOTE]
-    >  When using attributes to annotate an interface, member, or class, you can drop the "Attribute" part from the attribute name. So <xref:System.ServiceModel.ServiceContractAttribute> becomes `[ServiceContract]` in C#, or `<ServiceContract>` in Visual Basic.  
-  
-## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute>  
- <xref:System.ServiceModel.OperationContractAttribute>  
- [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)  
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)
+# Tutorial: Define a Windows Communication Foundation service contract
+
+This tutorial describes the first of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
+
+When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a Visual C# or Visual Basic (VB) interface. An interface has the following characteristics:
+
+- Each method in the interface corresponds to a specific service operation. 
+- For each interface, you must apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute.
+- For each operation/method, you must apply the <xref:System.ServiceModel.OperationContractAttribute> attribute. 
+
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> - Create a **WCF Service Library** project.
+> - Define a service contract interface.
+
+
+## Create a WCF Service Library project and define a service contract interface
+
+1. Open Visual Studio as an administrator. To do so, select the Visual Studio program in the **Start** menu, and then select **More** > **Run as administrator** from the shortcut menu.
+
+2. Create a **WCF Service Library** project.
+
+   1. From the **File** menu, select **New** > **Project**.
+
+   2. In the **New Project** dialog, on the left-hand side, expand **Visual C#** or **Visual Basic**, and then select the **WCF** category. Visual Studio displays a list of project templates in the center section of the window. Select **WCF Service Library**.
+
+      > [!NOTE]
+      > If you don't see the **WCF** project template category, you may need to install the **Windows Communication Foundation** component of Visual Studio. In the **New Project** dialog box, select the **Open Visual Studio Installer** link on the left side. Select the **Individual components** tab, and then find and select **Windows Communication Foundation** under the **Development activities** category. Choose **Modify** to begin installing the component.
+
+   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**. 
+
+   4. Select **OK**.
+
+      Visual Studio creates the project, which has three files: *IService1.cs* (or *IService1.vb* for a Visual Basic project), *Service1.cs* (or *Service1.vb* for a Visual Basic project), and *App.config*. Visual Studio defines these files as follows: 
+      - The *IService1* file contains the default definition of the service contract. 
+      - The *Service1* file contains the default implementation of the service contract. 
+      - The *App.config* file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
+
+      > [!NOTE]
+      > If you installed Visual Studio with Visual Basic developer environment settings, the solution might be hidden. If this is the case, select **Options** from the **Tools** menu, then select **Projects and Solutions** > **General** in the **Options** window. Select **Always show solution**. Also, verify that **Save new projects when created** is selected.
+
+
+3. From **Solution Explorer**, open the **IService1.cs** or **IService1.vb** file, and replace its code with the following code:
+
+    ```csharp
+    using System;
+    using System.ServiceModel;
+
+    namespace GettingStartedLib
+    {
+            [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
+            public interface ICalculator
+            {
+                [OperationContract]
+                double Add(double n1, double n2);
+                [OperationContract]
+                double Subtract(double n1, double n2);
+                [OperationContract]
+                double Multiply(double n1, double n2);
+                [OperationContract]
+                double Divide(double n1, double n2);
+            }
+    }
+    ```
+
+    ```vb
+    Imports System.ServiceModel
+
+    Namespace GettingStartedLib
+
+        <ServiceContract(Namespace:="http://Microsoft.ServiceModel.Samples")> _
+        Public Interface ICalculator
+
+            <OperationContract()> _
+            Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double
+            <OperationContract()> _
+            Function Subtract(ByVal n1 As Double, ByVal n2 As Double) As Double
+            <OperationContract()> _
+            Function Multiply(ByVal n1 As Double, ByVal n2 As Double) As Double
+            <OperationContract()> _
+            Function Divide(ByVal n1 As Double, ByVal n2 As Double) As Double
+        End Interface
+    End Namespace
+    ```
+
+     This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute (simplified as `ServiceContract`). This attribute defines a namespace to disambiguate the contract name. The code marks each calculator operation with the <xref:System.ServiceModel.OperationContractAttribute> attribute (simplified as `OperationContract`).
+
+## Next steps
+
+In this tutorial, you learned how to:
+> [!div class="checklist"]
+> - Create a WCF Service Library project.
+> - Define a service contract interface.
+
+Advance to the next tutorial to learn how to implement the WCF service contract.
+
+> [!div class="nextstepaction"]
+> [Tutorial: Implement a WCF service contract](how-to-implement-a-wcf-contract.md)

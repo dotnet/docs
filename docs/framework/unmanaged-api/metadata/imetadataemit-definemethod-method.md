@@ -36,7 +36,7 @@ HRESULT DefineMethod (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypedef` token of the parent class or parent interface of the method. Set `td` to `mdTokenNil`, if you are defining a global function.  
   
@@ -69,7 +69,7 @@ HRESULT DefineMethod (
 ## Slots in the V-table  
  The runtime uses method definitions to set up v-table slots. In the case where one or more slots need to be skipped, such as to preserve parity with a COM interface layout, a dummy method is defined to take up the slot or slots in the v-table; set the `dwMethodFlags` to the `mdRTSpecialName` value of the [CorMethodAttr](../../../../docs/framework/unmanaged-api/metadata/cormethodattr-enumeration.md) enumeration and specify the name as:  
   
- _VtblGap\<*SequenceNumber*>\<\_*CountOfSlots*>  
+ _VtblGap\<*SequenceNumber*>\<\_*CountOfSlots*>
   
  where *SequenceNumber* is the sequence number of the method and *CountOfSlots* is the number of slots to skip in the v-table. If *CountOfSlots* is omitted, 1 is assumed. These dummy methods are not callable from either managed or unmanaged code and any attempt to call them, from either managed or unmanaged code, generates an exception. Their only purpose is to take up space in the v-table that the runtime generates for COM integration.  
   
@@ -106,6 +106,6 @@ HRESULT DefineMethod (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

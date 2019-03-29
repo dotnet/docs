@@ -95,5 +95,5 @@ Guid'1afc7f5c-ffa0-4741-81cf-f12eAAb822bf'
 GUID  '1AFC7F5C-FFA0-4741-81CF-F12EAAB822BF'  
 ```  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## See also
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

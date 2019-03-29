@@ -3,7 +3,6 @@ title: "How To: Display Signed In Status Using WIF"
 ms.date: "03/30/2017"
 ms.assetid: 4d1174e4-5397-4962-9a5f-3b1ad7b3fc14
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Display Signed In Status Using WIF
 ## Applies To  

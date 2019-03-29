@@ -116,6 +116,6 @@ The key sequence 'AAAAA' in Keyref fails to refer to some key.
 custOrdDoc did not validate  
 ```  
   
-## See Also  
- <xref:System.Xml.Schema.Extensions.Validate%2A>  
- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+## See also
+- <xref:System.Xml.Schema.Extensions.Validate%2A>
+- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

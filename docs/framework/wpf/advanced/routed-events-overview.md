@@ -21,7 +21,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you have basic knowledge of the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] and object-oriented programming, as well as the concept of how the relationships between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write very basic [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ This topic assumes that you have basic knowledge of the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] and object-oriented programming, as well as the concept of how the relationships between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write very basic [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).  
   
 <a name="routing"></a>   
 ## What Is a Routed Event?  
@@ -35,11 +35,11 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  Consider the following simple element tree:  
   
- [!code-xaml[EventOvwSupport#GroupButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#groupbutton)]  
+ [!code-xaml[EventOvwSupport#GroupButton](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#groupbutton)]  
   
  This element tree produces something like the following:  
   
- ![Yes, No, and Cancel buttons](../../../../docs/framework/wpf/advanced/media/routedevent-ovw-1.gif "RoutedEvent_ovw_1")  
+ ![Yes, No, and Cancel buttons](./media/routedevent-ovw-1.gif "RoutedEvent_ovw_1")  
   
  In this simplified element tree, the source of a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is one of the <xref:System.Windows.Controls.Button> elements, and whichever <xref:System.Windows.Controls.Button> was clicked is the first element that has the opportunity to handle the event. But if no handler attached to the <xref:System.Windows.Controls.Button> acts on the event, then the event will bubble upwards to the <xref:System.Windows.Controls.Button> parent in the element tree, which is the <xref:System.Windows.Controls.StackPanel>. Potentially, the event bubbles to <xref:System.Windows.Controls.Border>, and then beyond to the page root of the element tree (not shown).  
   
@@ -54,8 +54,8 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  **Singular handler attachment points:** In [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)], you would have to attach the same handler multiple times to process events that could be raised from multiple elements. Routed events enable you to attach that handler only once, as was shown in the previous example, and use handler logic to determine where the event came from if necessary. For instance, this might be the handler for the previously shown [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]:  
   
- [!code-csharp[EventOvwSupport#GroupButtonCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#groupbuttoncodebehind)]
- [!code-vb[EventOvwSupport#GroupButtonCodeBehind](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#groupbuttoncodebehind)]  
+ [!code-csharp[EventOvwSupport#GroupButtonCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#groupbuttoncodebehind)]
+ [!code-vb[EventOvwSupport#GroupButtonCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#groupbuttoncodebehind)]  
   
  **Class handling:** Routed events permit a static handler that is defined by the class. This class handler has the opportunity to handle an event before any attached instance handlers can.  
   
@@ -66,15 +66,15 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  The following example shows the declaration for a custom `Tap` routed event, including the registration and exposure of the <xref:System.Windows.RoutedEvent> identifier field and the `add` and `remove` implementations for the `Tap` [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event.  
   
- [!code-csharp[RoutedEventCustom#AddRemoveHandler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventCustom/CSharp/SDKSampleLibrary/class1.cs#addremovehandler)]
- [!code-vb[RoutedEventCustom#AddRemoveHandler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventCustom/VB/SDKSampleLibrary/Class1.vb#addremovehandler)]  
+ [!code-csharp[RoutedEventCustom#AddRemoveHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventCustom/CSharp/SDKSampleLibrary/class1.cs#addremovehandler)]
+ [!code-vb[RoutedEventCustom#AddRemoveHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventCustom/VB/SDKSampleLibrary/Class1.vb#addremovehandler)]  
   
 ### Routed Event Handlers and XAML  
  To add a handler for an event using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you declare the event name as an attribute on the element that is an event listener. The value of the attribute is the name of your implemented handler method, which must exist in the partial class of the code-behind file.  
   
- [!code-xaml[EventOvwSupport#SimplestSyntax](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]  
+ [!code-xaml[EventOvwSupport#SimplestSyntax](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]  
   
- The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event handlers is the same for adding routed event handlers, because you are really adding handlers to the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event handlers is the same for adding routed event handlers, because you are really adding handlers to the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [XAML Overview (WPF)](xaml-overview-wpf.md).  
   
 <a name="routing_strategies"></a>   
 ## Routing Strategies  
@@ -108,30 +108,30 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
 ## Adding and Implementing an Event Handler for a Routed Event  
  To add an event handler in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you simply add the event name to an element as an attribute and set the attribute value as the name of the event handler that implements an appropriate delegate, as in the following example.  
   
- [!code-xaml[EventOvwSupport#SimplestSyntax](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]  
+ [!code-xaml[EventOvwSupport#SimplestSyntax](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]  
   
  `b1SetColor` is the name of the implemented handler that contains the code that handles the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. `b1SetColor` must have the same signature as the <xref:System.Windows.RoutedEventHandler> delegate, which is the event handler delegate for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. The first parameter of all routed event handler delegates specifies the element to which the event handler is added, and the second parameter specifies the data for the event.  
   
-[!code-csharp[EventOvwSupport#SimpleHandlerA](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#simplehandlera)]
-[!code-vb[EventOvwSupport#SimpleHandlerA](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#simplehandlera)]  
+[!code-csharp[EventOvwSupport#SimpleHandlerA](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#simplehandlera)]
+[!code-vb[EventOvwSupport#SimpleHandlerA](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#simplehandlera)]  
   
  <xref:System.Windows.RoutedEventHandler> is the basic routed event handler delegate. For routed events that are specialized for certain controls or scenarios, the delegates to use for the routed event handlers also might become more specialized, so that they can transmit specialized event data. For instance, in a common input scenario, you might handle a <xref:System.Windows.UIElement.DragEnter> routed event. Your handler should implement the <xref:System.Windows.DragEventHandler> delegate. By using the most specific delegate, you can process the <xref:System.Windows.DragEventArgs> in the handler and read the <xref:System.Windows.DragEventArgs.Data%2A> property, which contains the clipboard payload of the drag operation.  
   
- For a complete example of how to add an event handler to an element using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [Handle a Routed Event](../../../../docs/framework/wpf/advanced/how-to-handle-a-routed-event.md).  
+ For a complete example of how to add an event handler to an element using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [Handle a Routed Event](how-to-handle-a-routed-event.md).  
   
  Adding a handler for a routed event in an application that is created in code is straightforward. Routed event handlers can always be added through a helper method <xref:System.Windows.UIElement.AddHandler%2A> (which is the same method that the existing backing calls for `add`.) However, existing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] routed events generally have backing implementations of `add` and `remove` logic that allow the handlers for routed events to be added by a language-specific event syntax, which is more intuitive syntax than the helper method. The following is an example usage of the helper method:  
   
- [!code-csharp[EventOvwSupport#AddHandlerCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#addhandlercode)]
- [!code-vb[EventOvwSupport#AddHandlerCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#addhandlercode)]  
+ [!code-csharp[EventOvwSupport#AddHandlerCode](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#addhandlercode)]
+ [!code-vb[EventOvwSupport#AddHandlerCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#addhandlercode)]  
   
  The next example shows the C# operator syntax (Visual Basic has slightly different operator syntax because of its handling of dereferencing):  
   
- [!code-csharp[EventOvwSupport#AddHandlerPlusEquals](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#addhandlerplusequals)]
- [!code-vb[EventOvwSupport#AddHandlerPlusEquals](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#addhandlerplusequals)]  
+ [!code-csharp[EventOvwSupport#AddHandlerPlusEquals](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#addhandlerplusequals)]
+ [!code-vb[EventOvwSupport#AddHandlerPlusEquals](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#addhandlerplusequals)]  
   
- For an example of how to add an event handler in code, see [Add an Event Handler Using Code](../../../../docs/framework/wpf/advanced/how-to-add-an-event-handler-using-code.md).  
+ For an example of how to add an event handler in code, see [Add an Event Handler Using Code](how-to-add-an-event-handler-using-code.md).  
   
- If you are using Visual Basic, you can also use the `Handles` keyword to add handlers as part of the handler declarations. For more information, see [Visual Basic and WPF Event Handling](../../../../docs/framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).  
+ If you are using Visual Basic, you can also use the `Handles` keyword to add handlers as part of the handler declarations. For more information, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
   
 <a name="concept_handled"></a>   
 ### The Concept of Handled  
@@ -159,7 +159,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  This conceptual design is reinforced by the routing behavior mentioned earlier: it is more difficult (although still possible in code or styles) to attach handlers for routed events that are invoked even if a previous handler along the route has already set <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`.  
   
- For more information about <xref:System.Windows.RoutedEventArgs.Handled%2A>, class handling of routed events, and recommendations about when it is appropriate to mark a routed event as <xref:System.Windows.RoutedEventArgs.Handled%2A>, see [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md).  
+ For more information about <xref:System.Windows.RoutedEventArgs.Handled%2A>, class handling of routed events, and recommendations about when it is appropriate to mark a routed event as <xref:System.Windows.RoutedEventArgs.Handled%2A>, see [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md).  
   
  In applications, it is quite common to just handle a bubbling routed event on the object that raised it, and not be concerned with the event's routing characteristics at all. However, it is still a good practice to mark the routed event as handled in the event data, to prevent unanticipated side effects just in case an element that is further up the element tree also has a handler attached for that same routed event.  
   
@@ -167,7 +167,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
 ## Class Handlers  
  If you are defining a class that derives in some way from <xref:System.Windows.DependencyObject>, you can also define and attach a class handler for a routed event that is a declared or inherited event member of your class. Class handlers are invoked before any instance listener handlers that are attached to an instance of that class, whenever a routed event reaches an element instance in its route.  
   
- Some [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls have inherent class handling for certain routed events. This might give the outward appearance that the routed event is not ever raised, but in reality it is being class handled, and the routed event can potentially still be handled by your instance handlers if you use certain techniques. Also, many base classes and controls expose virtual methods that can be used to override class handling behavior. For more information both on how to work around undesired class handling and on defining your own class handling in a custom class, see [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md).  
+ Some [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls have inherent class handling for certain routed events. This might give the outward appearance that the routed event is not ever raised, but in reality it is being class handled, and the routed event can potentially still be handled by your instance handlers if you use certain techniques. Also, many base classes and controls expose virtual methods that can be used to override class handling behavior. For more information both on how to work around undesired class handling and on defining your own class handling in a custom class, see [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md).  
   
 <a name="attached_events"></a>   
 ## Attached Events in WPF  
@@ -175,15 +175,15 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] input system uses attached events extensively. However, nearly all of these attached events are forwarded through base elements. The input events then appear as equivalent non-attached routed events that are members of the base element class. For instance, the underlying attached event <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> can more easily be handled on any given <xref:System.Windows.UIElement> by using <xref:System.Windows.UIElement.MouseDown> on that <xref:System.Windows.UIElement> rather than dealing with attached event syntax either in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] or code.  
   
- For more information about attached events in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Attached Events Overview](../../../../docs/framework/wpf/advanced/attached-events-overview.md).  
+ For more information about attached events in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Attached Events Overview](attached-events-overview.md).  
   
 <a name="Qualifying_Event_Names_in_XAML_for_Anticipated_Routing"></a>   
 ## Qualified Event Names in XAML  
  Another syntax usage that resembles *typename*.*eventname* attached event syntax but is not strictly speaking an attached event usage is when you attach handlers for routed events that are raised by child elements. You attach the handlers to a common parent, to take advantage of event routing, even though the common parent might not have the relevant routed event as a member. Consider this example again:  
   
- [!code-xaml[EventOvwSupport#GroupButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#groupbutton)]  
+ [!code-xaml[EventOvwSupport#GroupButton](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#groupbutton)]  
   
- Here, the parent element listener where the handler is added is a <xref:System.Windows.Controls.StackPanel>. However, it is adding a handler for a routed event that was declared and will be raised by the <xref:System.Windows.Controls.Button> class (<xref:System.Windows.Controls.Primitives.ButtonBase> actually, but available to <xref:System.Windows.Controls.Button> through inheritance). <xref:System.Windows.Controls.Button> "owns" the event, but the routed event system permits handlers for any routed event to be attached to any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> instance listener that could otherwise attach listeners for a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event. The default xmlns namespace for these qualified event attribute names is typically the default [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] xmlns namespace, but you can also specify prefixed namespaces for custom routed events. For more information about xmlns, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ Here, the parent element listener where the handler is added is a <xref:System.Windows.Controls.StackPanel>. However, it is adding a handler for a routed event that was declared and will be raised by the <xref:System.Windows.Controls.Button> class (<xref:System.Windows.Controls.Primitives.ButtonBase> actually, but available to <xref:System.Windows.Controls.Button> through inheritance). <xref:System.Windows.Controls.Button> "owns" the event, but the routed event system permits handlers for any routed event to be attached to any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> instance listener that could otherwise attach listeners for a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event. The default xmlns namespace for these qualified event attribute names is typically the default [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] xmlns namespace, but you can also specify prefixed namespaces for custom routed events. For more information about xmlns, see [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 <a name="how_event_processing_works"></a>   
 ## WPF Input Events  
@@ -193,7 +193,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  As an illustration of how input event processing works, consider the following input event example. In the following tree illustration, `leaf element #2` is the source of both a `PreviewMouseDown` and then a `MouseDown` event.  
   
- ![Event routing diagram](../../../../docs/framework/wpf/advanced/media/wcsdkcoreinputevents.png "wcsdkCoreInputEvents")  
+ ![Event routing diagram](./media/wcsdkcoreinputevents.png "wcsdkCoreInputEvents")  
 Input Event Bubbling and Tunneling  
   
  The order of event processing is as follows:  
@@ -216,35 +216,35 @@ Input Event Bubbling and Tunneling
   
  Usually, once the input event is marked <xref:System.Windows.RoutedEventArgs.Handled%2A>, further handlers are not invoked. Typically, you should mark input events as handled as soon as a handler is invoked that addresses your application-specific logical handling of the meaning of the input event.  
   
- The exception to this general statement about <xref:System.Windows.RoutedEventArgs.Handled%2A> state is that input event handlers that are registered to deliberately ignore <xref:System.Windows.RoutedEventArgs.Handled%2A> state of the event data would still be invoked along either route. For more information, see [Preview Events](../../../../docs/framework/wpf/advanced/preview-events.md) or [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md).  
+ The exception to this general statement about <xref:System.Windows.RoutedEventArgs.Handled%2A> state is that input event handlers that are registered to deliberately ignore <xref:System.Windows.RoutedEventArgs.Handled%2A> state of the event data would still be invoked along either route. For more information, see [Preview Events](preview-events.md) or [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md).  
   
  The shared event data model between tunneling and bubbling events, and the sequential raising of first tunneling then bubbling events, is not a concept that is generally true for all routed events. That behavior is specifically implemented by how [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] input devices choose to raise and connect the input event pairs. Implementing your own input events is an advanced scenario, but you might choose to follow that model for your own input events also.  
   
- Certain classes choose to class-handle certain input events, usually with the intent of redefining what a particular user-driven input event means within that control and raising a new event. For more information, see [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md).  
+ Certain classes choose to class-handle certain input events, usually with the intent of redefining what a particular user-driven input event means within that control and raising a new event. For more information, see [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md).  
   
- For more information on input and how input and events interact in typical application scenarios, see [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md).  
+ For more information on input and how input and events interact in typical application scenarios, see [Input Overview](input-overview.md).  
   
 <a name="events_styles"></a>   
 ## EventSetters and EventTriggers  
  In styles, you can include some pre-declared [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] event handling syntax in the markup by using an <xref:System.Windows.EventSetter>. When the style is applied, the referenced handler is added to the styled instance. You can declare an <xref:System.Windows.EventSetter> only for a routed event. The following is an example. Note that the `b1SetColor` method referenced here is in a code-behind file.  
   
- [!code-xaml[EventOvwSupport#XAML2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+ [!code-xaml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
   
  The advantage gained here is that the style is likely to contain a great deal of other information that could apply to any button in your application, and having the <xref:System.Windows.EventSetter> be part of that style promotes code reuse even at the markup level. Also, an <xref:System.Windows.EventSetter> abstracts method names for handlers one step further away from the general application and page markup.  
   
- Another specialized syntax that combines the routed event and animation features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is an <xref:System.Windows.EventTrigger>. As with <xref:System.Windows.EventSetter>, only routed events may be used for an <xref:System.Windows.EventTrigger>. Typically, an <xref:System.Windows.EventTrigger> is declared as part of a style, but an <xref:System.Windows.EventTrigger> can also be declared on page-level elements as part of the <xref:System.Windows.FrameworkElement.Triggers%2A> collection, or in a <xref:System.Windows.Controls.ControlTemplate>. An <xref:System.Windows.EventTrigger> enables you to specify a <xref:System.Windows.Media.Animation.Storyboard> that runs whenever a routed event reaches an element in its route that declares an <xref:System.Windows.EventTrigger> for that event. The advantage of an <xref:System.Windows.EventTrigger> over just handling the event and causing it to start an existing storyboard is that an <xref:System.Windows.EventTrigger> provides better control over the storyboard and its run-time behavior. For more information, see [Use Event Triggers to Control a Storyboard After It Starts](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md).  
+ Another specialized syntax that combines the routed event and animation features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is an <xref:System.Windows.EventTrigger>. As with <xref:System.Windows.EventSetter>, only routed events may be used for an <xref:System.Windows.EventTrigger>. Typically, an <xref:System.Windows.EventTrigger> is declared as part of a style, but an <xref:System.Windows.EventTrigger> can also be declared on page-level elements as part of the <xref:System.Windows.FrameworkElement.Triggers%2A> collection, or in a <xref:System.Windows.Controls.ControlTemplate>. An <xref:System.Windows.EventTrigger> enables you to specify a <xref:System.Windows.Media.Animation.Storyboard> that runs whenever a routed event reaches an element in its route that declares an <xref:System.Windows.EventTrigger> for that event. The advantage of an <xref:System.Windows.EventTrigger> over just handling the event and causing it to start an existing storyboard is that an <xref:System.Windows.EventTrigger> provides better control over the storyboard and its run-time behavior. For more information, see [Use Event Triggers to Control a Storyboard After It Starts](../graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md).  
   
 <a name="more_about"></a>   
 ## More About Routed Events  
- This topic mainly discusses routed events from the perspective of describing the basic concepts and offering guidance on how and when to respond to the routed events that are already present in the various base elements and controls. However, you can create your own routed event on your custom class along with all the necessary support, such as specialized event data classes and delegates. The routed event owner can be any class, but routed events must be raised by and handled by <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> derived classes in order to be useful. For more information about custom events, see [Create a Custom Routed Event](../../../../docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md).  
+ This topic mainly discusses routed events from the perspective of describing the basic concepts and offering guidance on how and when to respond to the routed events that are already present in the various base elements and controls. However, you can create your own routed event on your custom class along with all the necessary support, such as specialized event data classes and delegates. The routed event owner can be any class, but routed events must be raised by and handled by <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> derived classes in order to be useful. For more information about custom events, see [Create a Custom Routed Event](how-to-create-a-custom-routed-event.md).  
   
-## See Also  
- <xref:System.Windows.EventManager>  
- <xref:System.Windows.RoutedEvent>  
- <xref:System.Windows.RoutedEventArgs>  
- [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)  
- [Weak Event Patterns](../../../../docs/framework/wpf/advanced/weak-event-patterns.md)
+## See also
+- <xref:System.Windows.EventManager>
+- <xref:System.Windows.RoutedEvent>
+- <xref:System.Windows.RoutedEventArgs>
+- [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md)
+- [Input Overview](input-overview.md)
+- [Commanding Overview](commanding-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [Trees in WPF](trees-in-wpf.md)
+- [Weak Event Patterns](weak-event-patterns.md)

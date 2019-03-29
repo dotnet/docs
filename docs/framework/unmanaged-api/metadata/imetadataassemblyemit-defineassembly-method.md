@@ -35,7 +35,7 @@ HRESULT DefineAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKey`  
  [in] The public key that identifies the publisher of the assembly, or NULL if the assembly is not strongly named.  
   
@@ -69,5 +69,5 @@ HRESULT DefineAssembly (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

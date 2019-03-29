@@ -32,7 +32,7 @@ HRESULT GetFileNameFromOffset(
        length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   
@@ -51,5 +51,5 @@ HRESULT GetFileNameFromOffset(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

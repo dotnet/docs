@@ -118,7 +118,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 </PurchaseOrder>  
 ```  
   
- The "ser" namespace refers to the standard serialization namespace, http://schemas.microsoft.com/2003/10/Serialization/. Each piece of data is serialized only once and given an ID number, and subsequent uses result in a reference to the already serialized data.  
+ The "ser" namespace refers to the standard serialization namespace, `http://schemas.microsoft.com/2003/10/Serialization/`. Each piece of data is serialized only once and given an ID number, and subsequent uses result in a reference to the already serialized data.  
   
 > [!IMPORTANT]
 >  If both "id" and "ref" attributes are present in the data contract `XMLElement`, then the "ref" attribute is honored and the "id" attribute is ignored.  
@@ -254,9 +254,9 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
   
  Also, note that the `NetDataContractSerializer` does not output the full [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type and assembly name for each node in the object graph. It outputs that information only where it is ambiguous. That is, it outputs at the root object level and for any polymorphic cases.  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.NetDataContractSerializer>  
- <xref:System.Runtime.Serialization.XmlObjectSerializer>  
- [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md)  
- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.NetDataContractSerializer>
+- <xref:System.Runtime.Serialization.XmlObjectSerializer>
+- [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md)
+- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

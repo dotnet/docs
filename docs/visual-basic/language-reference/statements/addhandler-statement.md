@@ -36,10 +36,10 @@ AddHandler event, AddressOf eventhandler
 >  For custom events, the `AddHandler` statement invokes the event's `AddHandler` accessor. For more information on custom events, see [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
 ## Example  
- [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
+ [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
-## See Also  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

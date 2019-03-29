@@ -4,9 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Network"
 ms.assetid: 31b44dd3-b903-4a48-8419-40419a3e4038
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # NetworkInformation
 The <xref:System.Net.NetworkInformation> namespace enables you to gather information about network events, changes, statistics, and properties. You can also determine whether a remote host is reachable by using the <xref:System.Net.NetworkInformation.Ping?displayProperty=nameWithType> class.  
@@ -20,8 +17,8 @@ The <xref:System.Net.NetworkInformation> namespace enables you to gather informa
 ## Determine if a Remote Host is Reachable  
  You can use the <xref:System.Net.NetworkInformation.Ping> class to determine whether a Remote Host is up, on the network, and reachable. For more information, see [How to: Ping a Host](../../../docs/framework/network-programming/how-to-ping-a-host.md).  
   
-## See Also  
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [Network Information Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179564)  
- [NetStat Tool Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179562)  
- [Ping Client Technology Sample](http://go.microsoft.com/fwlink/?LinkID=179565)
+## See also
+- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [Network Information Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179564)
+- [NetStat Tool Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179562)
+- [Ping Client Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179565)

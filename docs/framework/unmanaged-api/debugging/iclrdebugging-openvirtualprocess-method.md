@@ -35,7 +35,7 @@ HRESULT OpenVirtualProcess(
     [out] CLR_DEBUGGING_PROCESS_FLAGS * pdwFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleBaseAddress`  
  [in] The base address of a module in the target process. COR_E_NOT_CLR will be returned if the specified module is not a CLR module.  
   
@@ -90,6 +90,6 @@ HRESULT OpenVirtualProcess(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

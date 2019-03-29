@@ -31,7 +31,7 @@ HRESULT GetDimensions (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cdim`  
  [in] The number of dimensions of this ICorDebugArrayValue object.  
   

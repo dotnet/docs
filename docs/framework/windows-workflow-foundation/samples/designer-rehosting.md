@@ -3,7 +3,7 @@ title: "Designer ReHosting"
 ms.date: "03/30/2017"
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
 ---
-# Designer ReHosting
+# Designer Rehosting
 Designer rehosting is a common scenario that refers to hosting the workflow design canvas inside of a custom application. The hosting application most people are familiar with is Visual Studio, however there are a number of scenarios where showing the workflow designer in an application may be useful:  
   
 -   Monitoring applications (allowing an end user to visualize the process, as well as runtime data about the process such as the currently active state, aggregate execution time data, or other information about an instance of the workflow).  
@@ -108,7 +108,7 @@ protected override void OnInitialized(EventArgs e)
   
 #### Using the sample  
   
-1.  Open the DesignerRehosting.sln solution in [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)].  
+1.  Open the DesignerRehosting.sln solution in Visual Studio 2010.  
   
 2.  Press F5 to compile and run the application.  
   
@@ -119,6 +119,6 @@ protected override void OnInitialized(EventArgs e)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\DesignerRehosting\Basic`

@@ -14,9 +14,6 @@ helpviewer_keywords:
   - "network"
   - "WPAD (Web Proxy Auto-Discovery)"
 ms.assetid: fcd9c3bd-93de-4c92-8ff3-837327ad18de
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Automatic Proxy Detection
 Automatic proxy detection is a process by which a Web proxy server is identified by the system and used to send requests on behalf of the client. This feature is also known as Web Proxy Auto-Discovery (WPAD). When automatic proxy detection is enabled, the system attempts to locate a proxy configuration script that is responsible for returning the set of proxies that can be used for the request. If the proxy configuration script is found, the script is downloaded, compiled, and run on the local computer when proxy information, the request stream, or the response is obtained for a request that uses a <xref:System.Net.WebProxy> instance.  
@@ -64,7 +61,7 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
   
  Requests that do not have a proxy use your application domain's default proxy, which is available in the <xref:System.Net.WebRequest.DefaultWebProxy%2A> property.  
   
-## See Also  
- <xref:System.Net.WebProxy>  
- <xref:System.Net.WebRequest>  
- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)
+## See also
+- <xref:System.Net.WebProxy>
+- <xref:System.Net.WebRequest>
+- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)

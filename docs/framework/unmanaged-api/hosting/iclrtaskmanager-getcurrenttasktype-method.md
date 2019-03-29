@@ -29,7 +29,7 @@ HRESULT GetCurrentTaskType(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTaskType`  
  [out] A pointer to a value of the [ETaskType](../../../../docs/framework/unmanaged-api/hosting/etasktype-enumeration.md) enumeration that indicates the type of task that is currently executing.  
   
@@ -42,5 +42,5 @@ HRESULT GetCurrentTaskType(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
+## See also
+- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)

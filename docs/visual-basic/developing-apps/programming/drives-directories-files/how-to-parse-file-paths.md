@@ -21,17 +21,17 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem> object offers a number of use
   
 -   Use the <xref:System.IO.FileInfo.DirectoryName%2A> and <xref:System.IO.FileInfo.Name%2A> properties of the <xref:System.IO.FileInfo> object to determine a file's name and path. This example determines the name and path and displays them.  
   
-     [!code-vb[VbVbcnMyFileSystem#54](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-parse-file-paths_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#54)]  
   
 ### To combine a file's name and directory to create the full path  
   
 -   Use the `CombinePath` method, supplying the directory and name. This example takes the strings `folderPath` and `fileName` created in the previous example, combines them, and displays the result.  
   
-     [!code-vb[VbVbcnMyFileSystem#55](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-parse-file-paths_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#55)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A>  
- <xref:System.IO.FileInfo>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A>  
- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A>
+- <xref:System.IO.FileInfo>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A>
+- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)

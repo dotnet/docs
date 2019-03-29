@@ -12,7 +12,7 @@ The specified transaction for the specified operation was completed due to an un
 ## Troubleshooting  
  Inspect the traced message for the exception message and any actionable items.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

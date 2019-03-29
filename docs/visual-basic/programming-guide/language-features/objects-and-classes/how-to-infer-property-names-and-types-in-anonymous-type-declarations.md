@@ -10,7 +10,7 @@ ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
 # How to: Infer Property Names and Types in Anonymous Type Declarations (Visual Basic)
 Anonymous types provide no mechanism for directly specifying the data types of properties. Types of all properties are inferred. In the following example, the types of `Name` and `Price` are inferred directly from the values that are used to initialize them.  
   
- [!code-vb[VbVbalrAnonymousTypes#1](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#1)]  
   
  Anonymous types can also infer property names and types from other sources. The sections that follow provide a list of the circumstances where inference is possible, and examples of situations where it is not.  
   
@@ -20,19 +20,19 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
 -   From variable names. Anonymous type `anonProduct` will have two properties, `productName` and `productPrice`. Their data types will be those of the original variables, `String` and `Double`, respectively.  
   
-     [!code-vb[VbVbalrAnonymousTypes#11](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_2.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#11)]  
   
 -   From property or field names of other objects. For example, consider a `car` object of a `CarClass` type that includes `Name` and `ID` properties. To create a new anonymous type instance, `car1`, with `Name` and `ID` properties that are initialized with the values from the `car` object, you can write the following:  
   
-     [!code-vb[VbVbalrAnonymousTypes#34](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_3.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#34)]  
   
      The previous declaration is equivalent to the longer line of code that defines anonymous type `car2`.  
   
-     [!code-vb[VbVbalrAnonymousTypes#35](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_4.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#35)]  
   
 -   From XML member names.  
   
-     [!code-vb[VbVbalrAnonymousTypes#12](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_5.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#12)]  
   
      The resulting type for `anon` would have one property, `Book`, of type <xref:System.Collections.IEnumerable>(Of XElement).  
   
@@ -44,7 +44,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
      The variable `anon2` in the following code is an anonymous type that has one property, a character named `First`. This code will display a letter "E," the letter that is returned by function <xref:System.Linq.Enumerable.First%2A>.  
   
-     [!code-vb[VbVbalrAnonymousTypes#13](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_6.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#13)]  
   
 ## Inference Failures  
   
@@ -72,7 +72,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
      The error can be resolved by assigning the result of the expression to a property name.  
   
-     [!code-vb[VbVbalrAnonymousTypes#14](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_7.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#14)]  
   
 -   Inference for multiple properties produces two or more properties that have the same name. Referring back to declarations in earlier examples, you cannot list both `product.Name` and `car1.Name` as properties of the same anonymous type. This is because the inferred identifier for each of these would be `Name`.  
   
@@ -82,7 +82,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
      The problem can be solved by assigning the values to distinct property names.  
   
-     [!code-vb[VbVbalrAnonymousTypes#36](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_8.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#36)]  
   
      Note that changes in case (changes between uppercase and lowercase letters) do not make two names distinct.  
   
@@ -100,7 +100,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
      In this example, you can fix the problem by reversing the order in which the properties are declared.  
   
-     [!code-vb[VbVbalrAnonymousTypes#15](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_9.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#15)]  
   
 -   A property name of the anonymous type is the same as the name of a member of <xref:System.Object>. For example, the following declaration fails because `Equals` is a method of <xref:System.Object>.  
   
@@ -112,10 +112,10 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
      You can fix the problem by changing the property name:  
   
-     [!code-vb[VbVbalrAnonymousTypes#16](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_10.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#16)]  
   
-## See Also  
- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Key](../../../../visual-basic/language-reference/modifiers/key.md)
+## See also
+- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Key](../../../../visual-basic/language-reference/modifiers/key.md)

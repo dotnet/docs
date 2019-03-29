@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugValue Interface1"
+title: "ICorDebugValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugValue"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugValue Interface1
+# ICorDebugValue Interface
 Represents a value in the process being debugged. The value can be a read or a write value.  
   
 ## Methods  
@@ -46,10 +46,10 @@ Represents a value in the process being debugged. The value can be a read or a w
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
-    
-    
-    
- [ICorDebugValue3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+
+
+
+- [ICorDebugValue3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

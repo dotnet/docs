@@ -81,9 +81,9 @@ var result = await myTask;
         // is designed to be used with a monospaced font, such as  
         // Lucida Console or Global Monospace.  
         var bytes = content.Length;  
-        // Strip off the "http://".  
-        var displayURL = url.Replace("http://", "");  
-        resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
+        // Strip off the "https://".  
+        var displayURL = url.Replace("https://", "");  
+        resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
     }  
     ```  
   
@@ -110,11 +110,11 @@ var result = await myTask;
         // Create and start the tasks. As each task finishes, DisplayResults   
         // displays its length.  
         Task<int> download1 =   
-            ProcessURLAsync("http://msdn.microsoft.com", client);  
+            ProcessURLAsync("https://msdn.microsoft.com", client);  
         Task<int> download2 =   
-            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
+            ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
         Task<int> download3 =   
-            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);  
+            ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client);  
   
         // Await each task.  
         int length1 = await download1;  
@@ -124,8 +124,7 @@ var result = await myTask;
         int total = length1 + length2 + length3;  
   
         // Display the total count for the downloaded websites.  
-        resultsTextBox.Text +=  
-            string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+        resultsTextBox.Text += $"\r\n\r\nTotal bytes returned:  {total}\r\n";
     }  
     ```  
   
@@ -181,11 +180,11 @@ namespace AsyncExample_MultipleTasks
             // Create and start the tasks. As each task finishes, DisplayResults   
             // displays its length.  
             Task<int> download1 =   
-                ProcessURLAsync("http://msdn.microsoft.com", client);  
+                ProcessURLAsync("https://msdn.microsoft.com", client);  
             Task<int> download2 =   
-                ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
+                ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
             Task<int> download3 =   
-                ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);  
+                ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client);  
   
             // Await each task.  
             int length1 = await download1;  
@@ -195,8 +194,7 @@ namespace AsyncExample_MultipleTasks
             int total = length1 + length2 + length3;  
   
             // Display the total count for the downloaded websites.  
-            resultsTextBox.Text +=  
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+            resultsTextBox.Text += $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }  
   
         async Task<int> ProcessURLAsync(string url, HttpClient client)  
@@ -212,15 +210,16 @@ namespace AsyncExample_MultipleTasks
             // is designed to be used with a monospaced font, such as  
             // Lucida Console or Global Monospace.  
             var bytes = content.Length;  
-            // Strip off the "http://".  
-            var displayURL = url.Replace("http://", "");  
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
-        }  
+            // Strip off the "https://".  
+            var displayURL = url.Replace("https://", "");  
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
+        }
     }  
 }  
 ```  
   
-## See Also  
- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)  
- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+## See also
+
+- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)

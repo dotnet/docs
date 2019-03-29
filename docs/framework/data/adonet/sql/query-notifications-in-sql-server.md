@@ -18,19 +18,19 @@ Built upon the Service Broker infrastructure, query notifications allow applicat
   
  You can set up notifications for SELECT and EXECUTE statements. When using an EXECUTE statement, SQL Server registers a notification for the command executed rather than the EXECUTE statement itself. The command must meet the requirements and limitations for a SELECT statement. When a command that registers a notification contains more than one statement, the Database Engine creates a notification for each statement in the batch.  
   
- If you are developing an application where you need reliable sub-second notifications when data changes, review the sections **Planning an Efficient Query Notifications Strategy** and **Alternatives to Query Notifications** in the [Planning for Notifications](http://go.microsoft.com/fwlink/?LinkId=211984) topic in SQL Server Books Online. For more information about Query Notifications and SQL Server Service Broker, see the following links to topics in SQL Server Books Online.  
+ If you are developing an application where you need reliable sub-second notifications when data changes, review the sections **Planning an Efficient Query Notifications Strategy** and **Alternatives to Query Notifications** in the [Planning for Notifications](https://go.microsoft.com/fwlink/?LinkId=211984) topic in SQL Server Books Online. For more information about Query Notifications and SQL Server Service Broker, see the following links to topics in SQL Server Books Online.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
--   [Using Query Notifications](http://msdn.microsoft.com/library/ms175110.aspx)  
+-   [Using Query Notifications](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms175110(v=sql.105))  
   
--   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
+-   [Creating a Query for Notification](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   
--   [Service Broker](http://msdn.microsoft.com/library/bb522889.aspx)  
+-   [Development (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522889(v=sql.105))  
   
--   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
+-   [Service Broker Developer InfoCenter](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms166100(v=sql.105))  
   
--   [Development (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
+-   [Developer's Guide (Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
 ## In This Section  
  [Enabling Query Notifications](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md)  
@@ -55,6 +55,6 @@ Built upon the Service Broker infrastructure, query notifications allow applicat
  <xref:System.Web.Caching.SqlCacheDependency>  
  Describes the <xref:System.Web.Caching.SqlCacheDependency> class and all of its members.  
   
-## See Also  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

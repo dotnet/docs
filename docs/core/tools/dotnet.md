@@ -1,8 +1,6 @@
 ---
-title: dotnet command - .NET Core CLI
+title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
-author: mairaw
-ms.author: mairaw
 ms.date: 06/04/2018
 ---
 # dotnet command
@@ -74,9 +72,14 @@ Displays the installed .NET Core runtimes.
 
 Displays the installed .NET Core SDKs.
 
-`--roll-forward-on-no-candidate-fx`
+`--roll-forward-on-no-candidate-fx <N>`
 
- Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+Defines behavior when the required shared framework is not available. `N` can be:
+* `0` - Disable even minor version roll forward.
+* `1` - Roll forward on minor version, but not on major version. This is the default behavior.
+* `2` - Roll forward on minor and major versions.
+
+ For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
 `-v|--verbosity <LEVEL>`
 

@@ -20,7 +20,7 @@ ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
 Traditionally, data binding has been used within applications to take advantage of data stored in databases. With Windows Forms data binding, you can access data from databases as well as data in other structures, such as arrays and collections, so long as certain minimum requirements have been met.  
   
 ## Structures to Bind To  
- In Windows Forms, you can bind to a wide variety of structures, from simple objects (simple binding) to complex lists such as ADO.NET data tables (complex binding). For simple binding, Windows Forms supports binding to the public properties on the simple object. Windows Forms list-based binding generally requires that the object support the <xref:System.Collections.IList> interface or the <xref:System.ComponentModel.IListSource> interface. Additionally, if you are binding with through a <xref:System.Windows.Forms.BindingSource> component, you can bind to an object that supports the <xref:System.Collections.IEnumerable> interface. For more information about interfaces related to data binding, see [Interfaces Related to Data Binding](../../../docs/framework/winforms/interfaces-related-to-data-binding.md).  
+ In Windows Forms, you can bind to a wide variety of structures, from simple objects (simple binding) to complex lists such as ADO.NET data tables (complex binding). For simple binding, Windows Forms supports binding to the public properties on the simple object. Windows Forms list-based binding generally requires that the object support the <xref:System.Collections.IList> interface or the <xref:System.ComponentModel.IListSource> interface. Additionally, if you are binding with through a <xref:System.Windows.Forms.BindingSource> component, you can bind to an object that supports the <xref:System.Collections.IEnumerable> interface. For more information about interfaces related to data binding, see [Interfaces Related to Data Binding](interfaces-related-to-data-binding.md).  
   
  The following list shows the structures you can bind to in Windows Forms.  
   
@@ -31,7 +31,7 @@ Traditionally, data binding has been used within applications to take advantage 
  Windows Forms supports data binding control properties to public properties on the instance of an object using the <xref:System.Windows.Forms.Binding> type. Windows Forms also supports binding list based controls, such as a <xref:System.Windows.Forms.ListControl> to an object instance when a <xref:System.Windows.Forms.BindingSource> is used.  
   
  array or collection  
- To act as a data source, a list must implement the <xref:System.Collections.IList> interface; one example would be an array that is an instance of the <xref:System.Array> class. For more information on arrays, see [How to: Create an Array of Objects (Visual Basic)](http://msdn.microsoft.com/library/6b64e069-0387-400c-9081-3bdc581020c3).  
+ To act as a data source, a list must implement the <xref:System.Collections.IList> interface; one example would be an array that is an instance of the <xref:System.Array> class. For more information on arrays, see [How to: Create an Array of Objects (Visual Basic)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/487y7874(v=vs.100)).  
   
  In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. <xref:System.ComponentModel.BindingList%601> is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The <xref:System.ComponentModel.IBindingList> interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.  
   
@@ -51,7 +51,7 @@ Traditionally, data binding has been used within applications to take advantage 
   
 -   <xref:System.Data.DataViewManager>. A <xref:System.Data.DataViewManager> is a customized view of the entire <xref:System.Data.DataSet>, analogous to a <xref:System.Data.DataView>, but with relations included. With a <xref:System.Data.DataViewManager.DataViewSettings%2A> collection, you can set default filters and sort options for any views that the <xref:System.Data.DataViewManager> has for a given table.  
   
-## See Also  
- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## See also
+- [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)
+- [Data Binding and Windows Forms](data-binding-and-windows-forms.md)
+- [Windows Forms Data Binding](windows-forms-data-binding.md)

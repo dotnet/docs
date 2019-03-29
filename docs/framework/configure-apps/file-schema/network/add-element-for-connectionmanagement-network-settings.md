@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for connectionManagement (Network Settings)"
+title: "<add> Element for connectionManagement (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
@@ -10,11 +10,8 @@ helpviewer_keywords:
   - "add element, connectionManagement"
   - "connectionManagement, add element"
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
-# &lt;add&gt; Element for connectionManagement (Network Settings)
+# \<add> Element for connectionManagement (Network Settings)
 Adds an IP address or DNS name to the connection management list.  
   
  \<configuration>  
@@ -59,7 +56,7 @@ Adds an IP address or DNS name to the connection management list.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following example configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
+ The following example configures an application to use four connections to the server `www.contoso.com` and two connections to all other servers.  
   
 ```xml  
 <configuration>  
@@ -72,7 +69,7 @@ Adds an IP address or DNS name to the connection management list.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.ServicePoint>
+- <xref:System.Net.ServicePointManager>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

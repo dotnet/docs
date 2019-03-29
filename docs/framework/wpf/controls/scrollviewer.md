@@ -14,14 +14,14 @@ ms.assetid: 2163666e-04da-4036-841f-40947c9c034d
 The <xref:System.Windows.Controls.ScrollViewer> control creates a scrollable region wherein content can be scrolled horizontally or vertically.  
   
 ## In This Section  
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/scrollviewer-how-to-topics.md)  
+ [ScrollViewer Overview](scrollviewer-overview.md)  
+ [How-to Topics](scrollviewer-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Primitives.ScrollBar>  
   
  <xref:System.Windows.Controls.ScrollViewer>  
   
-## See Also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+## See also
+- [Panels Overview](panels-overview.md)
+- [Layout](../advanced/layout.md)

@@ -1,5 +1,6 @@
 ---
-title: "Exceptions and Exception Handling (C# Programming Guide)"
+title: "Exceptions and Exception Handling - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#]"
@@ -14,7 +15,7 @@ The C# language's exception handling features help you deal with any unexpected 
   
  In this example, a method tests for division by zero and catches the error. Without the exception handling, this program would terminate with a **DivideByZeroException was unhandled** error.  
   
- [!code-csharp[csProgGuideExceptions#18](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exceptions-and-exception-handling_1.cs)]  
+ [!code-csharp[csProgGuideExceptions#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExceptions/CS/Exceptions.cs#18)]  
   
 ## Exceptions Overview  
  Exceptions have the following properties:  
@@ -37,7 +38,7 @@ The C# language's exception handling features help you deal with any unexpected 
   
 -   Code in a `finally` block is executed even if an exception is thrown. Use a `finally` block to release resources, for example to close any streams or files that were opened in the `try` block.  
   
--   Managed exceptions in the .NET Framework are implemented on top of the Win32 structured exception handling mechanism. For more information, see [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) and [A Crash Course on the Depths of Win32 Structured Exception Handling](http://bytepointer.com/resources/pietrek_crash_course_depths_of_win32_seh.htm).  
+-   Managed exceptions in the .NET Framework are implemented on top of the Win32 structured exception handling mechanism. For more information, see [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) and [A Crash Course on the Depths of Win32 Structured Exception Handling](https://bytepointer.com/resources/pietrek_crash_course_depths_of_win32_seh.htm).  
   
 ## Related Sections  
  See the following topics for more information about exceptions and exception handling:  
@@ -55,14 +56,16 @@ The C# language's exception handling features help you deal with any unexpected 
 -   [How to: Execute Cleanup Code Using finally](../../../csharp/programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- <xref:System.SystemException>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [throw](../../../csharp/language-reference/keywords/throw.md)  
- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
- [Exceptions](../../../standard/exceptions/index.md)  
+## See also
+
+- <xref:System.SystemException>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [throw](../../../csharp/language-reference/keywords/throw.md)
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+- [Exceptions](../../../standard/exceptions/index.md)

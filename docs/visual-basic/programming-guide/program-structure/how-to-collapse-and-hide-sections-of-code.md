@@ -16,15 +16,15 @@ The `#Region` directive enables you to collapse and hide sections of code in Vis
   
 -   Place the section of code between the `#Region` and `#End Region` statements, as in the following example:  
   
-     [!code-vb[VbVbalrConditionalComp#6](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/how-to-collapse-and-hide-sections-of-code_1.vb)]  
+     [!code-vb[VbVbalrConditionalComp#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#6)]  
   
      The `#Region` block can be used multiple times in a code file; thus, users can define their own blocks of procedures and classes that can, in turn, be collapsed. `#Region` blocks can also be nested within other `#Region` blocks.  
   
     > [!NOTE]
     >  Hiding code does not prevent it from being compiled and does not affect `#If...#End If` statements.  
   
-## See Also  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)  
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [Outlining](/visualstudio/ide/outlining)
+## See also
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Outlining](/visualstudio/ide/outlining)

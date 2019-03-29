@@ -152,7 +152,7 @@ The following outlines the contents of the XDR schema file, *HeadCount.xdr*, to 
 </Schema>
 ```
 
-## See Also
+## See also
 
-<xref:System.Xml.XmlValidatingReader.ValidationType%2A>  
-[XmlSchemaCollection Schema Compilation](xmlschemacollection-schema-compilation.md)  
+- <xref:System.Xml.XmlValidatingReader.ValidationType%2A>
+- [XmlSchemaCollection Schema Compilation](xmlschemacollection-schema-compilation.md)

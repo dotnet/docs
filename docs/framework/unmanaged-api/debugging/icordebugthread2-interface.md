@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread2 Interface1"
+title: "ICorDebugThread2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugThread2"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugThread2 Interface1
+# ICorDebugThread2 Interface
 Serves as a logical extension to the ICorDebugThread interface.  
   
 ## Methods  
@@ -44,5 +44,5 @@ Serves as a logical extension to the ICorDebugThread interface.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

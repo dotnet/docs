@@ -57,6 +57,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |<xref:System.ServiceModel.NetNamedPipeBinding>|.NET|None,<br /><br /> (Transport)|None, (Transport)|(None), Yes|Yes|  
 |<xref:System.ServiceModel.NetMsmqBinding>|.NET|None, Message, (Transport), Both|(None)|(None), Yes|No|  
 |<xref:System.ServiceModel.NetPeerTcpBinding>|Peer|None, Message, (Transport), Mixed|(None)|(None)|Yes|  
+|<xref:System.ServiceModel.WebHttpBinding>|.Net|None, Transport, TransportCredentialOnly|(None)|(None)|n/a|  
 |<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|MSMQ|None, (Transport)|(None)|(None), Yes|n/a|  
   
  The following table explains the features found in the previous table.  
@@ -70,7 +71,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |Duplex|Specifies whether duplex contracts are supported. Note this feature requires support for Sessions in the binding.|  
 |Streaming|Specifies whether the message streaming is supported.|  
   
-## See Also  
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
+## See also
+- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)

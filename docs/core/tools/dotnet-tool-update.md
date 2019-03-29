@@ -1,8 +1,6 @@
 ---
-title: dotnet tool update command - .NET Core CLI
+title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET Core Global Tool on your machine.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet tool update
@@ -15,7 +13,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```
+```console
 dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [--framework] [-v|--verbosity]
 dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [--framework] [-v|--verbosity]
 dotnet tool update <-h|--help>
@@ -77,4 +75,4 @@ Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool l
 
 ## See also
 
-[.NET Core Global Tools](global-tools.md)
+- [.NET Core Global Tools](global-tools.md)

@@ -33,7 +33,7 @@ thisObject = Nothing
  You can include initialization in your declaration by using the [New](../../../../visual-basic/language-reference/operators/new-operator.md) keyword. The following declaration statements declare object variables `testUri` and `ver` and assign specific objects to them. Each uses one of the overloaded constructors of the appropriate class to initialize the object.  
   
 ```  
-Dim testUri As New System.Uri("http://www.microsoft.com")  
+Dim testUri As New System.Uri("https://www.microsoft.com")  
 Dim ver As New System.Version(6, 1, 0)  
 ```  
   
@@ -69,10 +69,10 @@ End Sub
 addStandardText(Me)  
 ```  
   
-## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)  
- [How to: Make an Object Variable Not Refer to Any Instance](../../../../visual-basic/programming-guide/language-features/variables/how-to-make-an-object-variable-not-refer-to-any-instance.md)  
- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+## See also
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
+- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
+- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
+- [How to: Make an Object Variable Not Refer to Any Instance](../../../../visual-basic/programming-guide/language-features/variables/how-to-make-an-object-variable-not-refer-to-any-instance.md)
+- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

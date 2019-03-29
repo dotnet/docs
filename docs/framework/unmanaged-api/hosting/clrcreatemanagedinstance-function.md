@@ -8,6 +8,7 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -35,7 +36,7 @@ STDAPI ClrCreateManagedInstance (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTypeName`  
  [in] A pointer to the name of the instance type being requested.  
   
@@ -57,6 +58,6 @@ STDAPI ClrCreateManagedInstance (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

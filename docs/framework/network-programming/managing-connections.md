@@ -17,9 +17,6 @@ helpviewer_keywords:
   - "downloading Internet resources, connections"
   - "ServicePointManager class, about ServicePointManager class"
 ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Managing Connections
 Applications that use HTTP to connect to data resources can use the .NET Framework's <xref:System.Net.ServicePoint> and <xref:System.Net.ServicePointManager> classes to manage connections to the Internet and to help them achieve optimum scale and performance.  
@@ -61,6 +58,6 @@ Dim sp As ServicePoint = ServicePointManager.FindServicePoint(uri)
 sp.ConnectionLimit = newLimit  
 ```  
   
-## See Also  
- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+## See also
+- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)
+- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)

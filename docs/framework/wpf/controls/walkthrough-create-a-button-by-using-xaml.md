@@ -9,11 +9,11 @@ ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 The objective of this walkthrough is to learn how to create an animated button for use in a Windows Presentation Foundation (WPF) application. This walkthrough uses styles and a template to create a customized button resource that allows reuse of code and separation of button logic from the button declaration. This walkthrough is written entirely in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
 > [!IMPORTANT]
->  This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] into Microsoft Visual Studio. If you would prefer to learn how to use a design tool (Microsoft Expression Blend) to create the same application, see [Create a Button by Using Microsoft Expression Blend](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md).  
+>  This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] into Microsoft Visual Studio. If you would prefer to learn how to use a design tool (Microsoft Expression Blend) to create the same application, see [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md).  
   
  The following figure shows the finished buttons.  
   
- ![Custom buttons that were created by using XAML](../../../../docs/framework/wpf/controls/media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
+ ![Custom buttons that were created by using XAML](./media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
   
 ## Create Basic Buttons  
  Let's start by creating a new project and adding a few buttons to the window.  
@@ -43,12 +43,12 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Press F5 to run the application; you should see a set of buttons that looks like the following figure.  
   
-     ![Three basic buttons](../../../../docs/framework/wpf/controls/media/custom-button-animatedbutton-1.gif "custom_button_AnimatedButton_1")  
+     ![Three basic buttons](./media/custom-button-animatedbutton-1.gif "custom_button_AnimatedButton_1")  
   
      Now that you have created the basic buttons, you are finished working in the Window1.xaml file. The rest of the walkthrough focuses on the app.xaml file, defining styles and a template for the buttons.  
   
 ## Set Basic Properties  
- Next, let's set some properties on these buttons to control the button appearance and layout. Rather than setting properties on the buttons individually, you will use resources to define button properties for the entire application. Application resources are conceptually similar to external [!INCLUDE[TLA#tla_css](../../../../includes/tlasharptla-css-md.md)] for Web pages; however, resources are much more powerful than [!INCLUDE[TLA#tla_css](../../../../includes/tlasharptla-css-md.md)], as you will see by the end of this walkthrough. To learn more about resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
+ Next, let's set some properties on these buttons to control the button appearance and layout. Rather than setting properties on the buttons individually, you will use resources to define button properties for the entire application. Application resources are conceptually similar to external [!INCLUDE[TLA#tla_css](../../../../includes/tlasharptla-css-md.md)] for Web pages; however, resources are much more powerful than [!INCLUDE[TLA#tla_css](../../../../includes/tlasharptla-css-md.md)], as you will see by the end of this walkthrough. To learn more about resources, see [XAML Resources](../advanced/xaml-resources.md).  
   
 #### To use styles to set basic properties on the buttons  
   
@@ -66,7 +66,7 @@ The objective of this walkthrough is to learn how to create an animated button f
     </Application>  
     ```  
   
-     Resource scope is determined by where you define the resource. Defining resources in `Application.Resources` in the app.xaml file enables the resource to be used from anywhere in the application. To learn more about defining the scope of your resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
+     Resource scope is determined by where you define the resource. Defining resources in `Application.Resources` in the app.xaml file enables the resource to be used from anywhere in the application. To learn more about defining the scope of your resources, see [XAML Resources](../advanced/xaml-resources.md).  
   
 2.  **Create a style and define basic property values with it:** Add the following markup to the `Application.Resources` block. This markup creates a <xref:System.Windows.Style> that applies to all buttons in the application, setting the <xref:System.Windows.FrameworkElement.Width%2A> of the buttons to 90 and the <xref:System.Windows.FrameworkElement.Margin%2A> to 10:  
   
@@ -81,9 +81,9 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      The <xref:System.Windows.Style.TargetType%2A> property specifies that the style applies to all objects of type <xref:System.Windows.Controls.Button>. Each <xref:System.Windows.Setter> sets a different property value for the <xref:System.Windows.Style>. Therefore, at this point every button in the application has a width of 90 and a margin of 10.  If you press F5 to run the application, you see the following window.  
   
-     ![Buttons with a width of 90 and a margin of 10](../../../../docs/framework/wpf/controls/media/custom-button-animatedbutton-2.gif "custom_button_AnimatedButton_2")  
+     ![Buttons with a width of 90 and a margin of 10](./media/custom-button-animatedbutton-2.gif "custom_button_AnimatedButton_2")  
   
-     There is much more you can do with styles, including a variety of ways to fine-tune what objects are targeted, specifying complex property values, and even using styles as input for other styles. For more information, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
+     There is much more you can do with styles, including a variety of ways to fine-tune what objects are targeted, specifying complex property values, and even using styles as input for other styles. For more information, see [Styling and Templating](styling-and-templating.md).  
   
 3.  **Set a style property value to a resource:** Resources enable a simple way to reuse commonly defined objects and values. It is especially useful to define complex values using resources to make your code more modular. Add the following highlighted markup to app.xaml.  
   
@@ -106,7 +106,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Press F5 to run the application. It should look like the following.  
   
-     ![Buttons with a gradient background](../../../../docs/framework/wpf/controls/media/custom-button-animatedbutton-3.gif "custom_button_AnimatedButton_3")  
+     ![Buttons with a gradient background](./media/custom-button-animatedbutton-3.gif "custom_button_AnimatedButton_3")  
   
 ## Create a Template That Defines the Look of the Button  
  In this section, you create a template that customizes the appearance (presentation) of the button. The button presentation is made up of several objects including rectangles and other components to give the button a unique look.  
@@ -159,7 +159,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Press F5 to run the application. It should look like the following.  
   
-     ![](../../../../docs/framework/wpf/controls/media/custom-button-animatedbutton-4.gif "custom_button_AnimatedButton_4")  
+     ![](./media/custom-button-animatedbutton-4.gif "custom_button_AnimatedButton_4")  
   
 3.  **Add a glasseffect to the template:** Next you will add the glass. First you create some resources that create a glass gradient effect. Add these gradient resources anywhere within the `Application.Resources` block:  
   
@@ -181,7 +181,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      These resources are used as the <xref:System.Windows.Shapes.Shape.Fill%2A> for a rectangle that we insert into the <xref:System.Windows.Controls.Grid> of the button template. Add the following highlighted markup to the template.  
   
-    ```  
+    ```xaml
     <Setter.Value>  
       <ControlTemplate TargetType="{x:Type Button}">  
         <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"  
@@ -238,7 +238,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      Notice that the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle with the `x:Name` property of "glassCube" is 0, so when you run the sample, you do not see the glass rectangle overlaid on top. This is because we will later add triggers to the template for when the user interacts with the button. However, you can see what the button looks like now by changing the <xref:System.Windows.UIElement.Opacity%2A> value to 1 and running the application. See the following figure. Before proceeding to the next step, change the <xref:System.Windows.UIElement.Opacity%2A> back to 0.  
   
-     ![Custom buttons that were created by using XAML](../../../../docs/framework/wpf/controls/media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
+     ![Custom buttons that were created by using XAML](./media/custom-button-animatedbutton-5.gif "custom_button_AnimatedButton_5")  
   
 ## Create Button Interactivity  
  In this section, you will create property triggers and event triggers to change property values and run animations in response to user actions such as moving the mouse pointer over the button and clicking.  
@@ -249,7 +249,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 1.  **Add template triggers:** Add the highlighted markup to your template.  
   
-    ```  
+    ```xaml
     <Setter.Value>  
       <ControlTemplate TargetType="{x:Type Button}">  
         <Grid Width="{TemplateBinding Width}"   
@@ -314,7 +314,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 2.  **Add property triggers:** Add the highlighted markup to the `ControlTemplate.Triggers` block:  
   
-    ```  
+    ```xaml
     <ControlTemplate.Triggers>  
   
       <!-- Set properties when mouse pointer is over the button. -->   <Trigger Property="IsMouseOver" Value="True">     <!-- Below are three property settings that occur when the           condition is met (user mouses over button).  -->     <!-- Change the color of the outer rectangle when user           mouses over it. -->     <Setter Property ="Rectangle.Stroke" TargetName="outerRectangle"       Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />     <!-- Sets the glass opacity to 1, therefore, the           glass "appears" when user mouses over it. -->     <Setter Property="Rectangle.Opacity" Value="1" TargetName="glassCube" />     <!-- Makes the text slightly blurry as though you           were looking at it through blurry glass. -->     <Setter Property="ContentPresenter.BitmapEffect"        TargetName="myContentPresenter">       <Setter.Value>         <BlurBitmapEffect Radius="1" />       </Setter.Value>     </Setter>   </Trigger>  
@@ -326,7 +326,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 3.  **Add a focus trigger:** Next, we'll add some similar setters to handle the case when the button has focus (for example, after the user clicks it).  
   
-    ```  
+    ```xaml  
     <ControlTemplate.Triggers>  
   
       <!-- Set properties when mouse pointer is over the button. -->  
@@ -357,7 +357,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 4.  **Add animations for**  <xref:System.Windows.UIElement.MouseEnter> **and** <xref:System.Windows.UIElement.MouseLeave> **:** Next we add some animations to the triggers. Add the following markup anywhere inside of the `ControlTemplate.Triggers` block.  
   
-    ```  
+    ```xaml
     <!-- Animations that start when mouse enters and leaves button. -->  
     <EventTrigger RoutedEvent="Mouse.MouseEnter">  
       <EventTrigger.Actions>  
@@ -390,11 +390,11 @@ The objective of this walkthrough is to learn how to create an animated button f
   
      There are two animations that are triggered when the pointer goes over the button (<xref:System.Windows.UIElement.MouseEnter> event is raised). These animations shrink the glass rectangle along the X and Y axis. Notice the properties on the <xref:System.Windows.Media.Animation.DoubleAnimation> elements — <xref:System.Windows.Media.Animation.Timeline.Duration%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A>. The <xref:System.Windows.Media.Animation.Timeline.Duration%2A> specifies that the animation occurs over half a second, and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> specifies that the glass shrinks by 10%.  
   
-     The second event trigger (<xref:System.Windows.UIElement.MouseLeave>) simply stops the first one. When you stop a <xref:System.Windows.Media.Animation.Storyboard>, all the animated properties return to their default values. Therefore, when the user moves the pointer off the button, the button goes back to the way it was before the mouse pointer moved over the button. For more information about animations, see [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
+     The second event trigger (<xref:System.Windows.UIElement.MouseLeave>) simply stops the first one. When you stop a <xref:System.Windows.Media.Animation.Storyboard>, all the animated properties return to their default values. Therefore, when the user moves the pointer off the button, the button goes back to the way it was before the mouse pointer moved over the button. For more information about animations, see [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
 5.  **Add an animation for when the button is clicked:** The final step is to add a trigger for when the user clicks the button. Add the following markup anywhere inside of the `ControlTemplate.Triggers` block:  
   
-    ```  
+    ```xaml
     <!-- Animation fires when button is clicked, causing glass to spin.  -->  
     <EventTrigger RoutedEvent="Button.Click">  
       <EventTrigger.Actions>  
@@ -425,9 +425,9 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 -   Customized behavior for the buttons in response to user actions (such as <xref:System.Windows.UIElement.MouseEnter>, <xref:System.Windows.UIElement.MouseLeave>, and <xref:System.Windows.Controls.Primitives.ButtonBase.Click>) that included animation effects.  
   
-## See Also  
- [Create a Button by Using Microsoft Expression Blend](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [Bitmap Effects Overview](../../../../docs/framework/wpf/graphics-multimedia/bitmap-effects-overview.md)
+## See also
+- [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md)
+- [Styling and Templating](styling-and-templating.md)
+- [Animation Overview](../graphics-multimedia/animation-overview.md)
+- [Painting with Solid Colors and Gradients Overview](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [Bitmap Effects Overview](../graphics-multimedia/bitmap-effects-overview.md)

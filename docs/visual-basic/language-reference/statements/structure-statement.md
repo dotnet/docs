@@ -96,16 +96,16 @@ End Structure
 ## Example  
  The following example uses the `Structure` statement to define a set of related data for an employee. It shows the use of `Public`, `Friend`, and `Private` members to reflect the sensitivity of the data items. It also shows procedure, property, and event members.  
   
- [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#57)]  
   
-## See Also  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+## See also
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)

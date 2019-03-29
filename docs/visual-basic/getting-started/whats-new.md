@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 02/15/2018
+ms.date: 10/24/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 
@@ -8,19 +8,20 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-author: rpetrusha
-ms.author: ronpet
 ---
 # What's new for Visual Basic
 
-This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
+This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
   
 ## Current version
 
-Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8  
+For new features, see [Visual Basic 15.8](#visual-basic-158)
 
 ## Previous versions
+
+Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
+For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 Visual Basic 15.3 / Visual Studio 2017 Version 15.3  
 For new features, see [Visual Basic 15.3](#visual-basic-153)
@@ -52,6 +53,39 @@ Bit-shift operators, loop variable declaration
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
 
+## Visual Basic 15.8
+
+**Optimized floating-point to integer conversion**
+
+In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) is set to `Off`:
+
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Single)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Single)?displayProperty=nameWithType>
+- <xref:System.Math.Ceiling(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Floor(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
+
+This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates some simple method calls that are affected by this optimization:
+
+```vb
+Dim s As Single = 173.7619
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+
+```
+
+Note that this truncates rather than rounds floating-point values.
+
 ## Visual Basic 15.5
 
 [Non-trailing named arguments](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md#mixing-arguments-by-position-and-by-name)
@@ -63,6 +97,10 @@ For example, the following method call has two positional arguments between a na
 ```vb
 StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 ```
+
+[`Private Protected` member access modifier](../language-reference/modifiers/private-protected.md)
+
+This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are also found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
 
 **Leading hex/binary/octal separator**
 
@@ -147,7 +185,7 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
-[Null-conditional member access and indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
+[Null-conditional member access and indexing](../language-reference/operators/null-conditional-operators.md)  
 You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
   
 [Multi-line string literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
@@ -208,5 +246,5 @@ End Interface
   
  Now the compiler will use normal overload resolution rules to choose the most appropriate `GetDetails` to call, and you can declare interface relationships in Visual Basic like those shown in the sample.  
   
-## See also  
- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+## See also
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)

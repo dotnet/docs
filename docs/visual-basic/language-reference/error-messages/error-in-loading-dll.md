@@ -26,5 +26,5 @@ A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `De
   
 -   If the DLL or referenced DLL is not in a directory specified by the path, move the DLL to a referenced directory.  
   
-## See Also  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+## See also
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)

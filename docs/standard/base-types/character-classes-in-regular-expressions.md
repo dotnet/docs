@@ -1,5 +1,6 @@
 ---
-title: "Character Classes in Regular Expressions"
+title: Character Classes in .NET Regular Expressions
+description: Learn how to use character classes to represent a set of characters in .NET regular expressions.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -13,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 0f8bffab-ee0d-4e0e-9a96-2b4a252bb7e4
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Character Classes in Regular Expressions
 <a name="Top"></a> A character class defines a set of characters, any one of which can occur in an input string for a match to succeed. The regular expression language in .NET supports the following character classes:  
@@ -584,7 +586,8 @@ ms.author: "ronpet"
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/classsubtraction1.cs#15)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/classsubtraction1.vb#15)]  
   
-## See Also  
- <xref:System.Char.GetUnicodeCategory%2A>  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)
+## See also
+
+- <xref:System.Char.GetUnicodeCategory%2A>
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)

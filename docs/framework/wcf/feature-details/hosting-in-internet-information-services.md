@@ -17,7 +17,7 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
   
 -   IIS 7.0 on [!INCLUDE[wv](../../../../includes/wv-md.md)] and [!INCLUDE[lserver](../../../../includes/lserver-md.md)]. IIS 7.0 provides the same advanced process model as [!INCLUDE[iis601](../../../../includes/iis601-md.md)], but uses the Windows Process Activation Service (WAS) to allow activation and network communication over protocols other than HTTP. This environment is suitable for the development of WCF services that communicate over any network protocol supported by WCF (including HTTP, net.tcp, net.pipe, and net.msmq). For more information about WAS, see [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).  
   
--   [Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkId=196496) works with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=196494) and [AppFabric Hosting Concepts](http://go.microsoft.com/fwlink/?LinkId=196495).  
+-   [Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkId=196496) works with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=196494) and [AppFabric Hosting Concepts](https://go.microsoft.com/fwlink/?LinkId=196495).  
   
 ## Benefits of IIS Hosting  
  Hosting WCF services in IIS has several benefits:  
@@ -50,10 +50,10 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
 ## WCF Services and ASP.NET  
  WCF services can be hosted either side-by-side with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] or in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Compatibility Mode in which services can take full advantage of features provided by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web application platform. For a discussion of these features, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
   
-## See Also  
- [Extending Hosting Using ServiceHostFactory](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md)  
- [Deploying an Internet Information Services-Hosted WCF Service](../../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md)  
- [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)  
- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)  
- [Configuring Internet Information Services 7.0 for Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/configuring-iis-for-wcf.md)  
- [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+- [Extending Hosting Using ServiceHostFactory](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md)
+- [Deploying an Internet Information Services-Hosted WCF Service](../../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md)
+- [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
+- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)
+- [Configuring Internet Information Services 7.0 for Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/configuring-iis-for-wcf.md)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -36,7 +36,7 @@ HRESULT DefineParameter(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The parameter name.  
   
@@ -64,5 +64,5 @@ HRESULT DefineParameter(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

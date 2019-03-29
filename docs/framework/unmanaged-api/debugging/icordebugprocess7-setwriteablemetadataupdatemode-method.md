@@ -28,7 +28,7 @@ HRESULT SetWriteableMetadataUpdateMode(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  A [WriteableMetadataUpdateMode](../../../../docs/framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md) enumeration value that specifies whether in-memory updates to metadata in the target process are visible (`WriteableMetadataUpdateMode::AlwaysShowUpdates`) or not visible (`WriteableMetadataUpdateMode::LegacyCompatPolicy`) to the debugger.  
   
@@ -44,6 +44,6 @@ HRESULT SetWriteableMetadataUpdateMode(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [ICorDebugProcess7 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess7 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

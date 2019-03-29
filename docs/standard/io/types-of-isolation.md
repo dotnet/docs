@@ -40,10 +40,9 @@ Access to isolated storage is always restricted to the user who created it. To i
   
  Either of these isolations can be combined with a roaming user profile. For more information, see the section [Isolated Storage and Roaming](#Roaming).  
   
- The following illustration demonstrates how stores are isolated in different scopes.  
+ The following illustration demonstrates how stores are isolated in different scopes:  
   
- ![Isolation by user and assembly](../../../docs/standard/io/media/typesofisolation.gif "typesofisolation")  
-Types of isolated storage  
+ ![Diagram that shows isolation by user and assembly.](./media/types-of-isolation/isolated-storage-types.gif)  
   
  Note that except for roaming stores, isolated storage is always implicitly isolated by computer because it uses the storage facilities that are local to a given computer.  
   
@@ -100,6 +99,7 @@ Types of isolated storage
  [!code-csharp[Conceptual.IsolatedStorage#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source9.cs#12)]
  [!code-vb[Conceptual.IsolatedStorage#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source9.vb#12)]  
   
-## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+## See also
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

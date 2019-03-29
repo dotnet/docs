@@ -8,10 +8,7 @@ This section contains samples that demonstrate integration between Message Queui
   
 ## In This Section  
  [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  
- Demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a WCF service.  
-  
- [Custom Demux](../../../../docs/framework/wcf/samples/custom-demux.md)  
- Demonstrates how MSMQ message headers can be mapped to different service operations so that WCF services that use <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> are not limited to using one service operation.  
+ Demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a WCF service.
   
  [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  
  Demonstrates how a WCF application can send a message to a Message Queuing (MSMQ) application.  

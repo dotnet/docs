@@ -21,5 +21,6 @@ The <xref:System.Text.RegularExpressions.Regex> class itself is thread safe and 
   
  Enumerators are the only exception. An application must serialize calls to collection enumerators. The rule is that if a collection can be enumerated on more than one thread simultaneously, you should synchronize enumerator methods on the root object of the collection traversed by the enumerator.  
   
-## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

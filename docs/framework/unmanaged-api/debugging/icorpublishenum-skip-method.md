@@ -29,7 +29,7 @@ HRESULT Skip (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of items by which to move the cursor forward.  
   
@@ -42,5 +42,5 @@ HRESULT Skip (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+## See also
+- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)

@@ -3,7 +3,6 @@ title: "How To: Enable WIF for a WCF Web Service Application"
 ms.date: "03/30/2017"
 ms.assetid: bfc64b3d-64e9-4093-a6a4-72e933917af7
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Enable WIF for a WCF Web Service Application
 ## Applies To  
@@ -13,7 +12,7 @@ manager: "mbaldwin"
 -   Microsoft® Windows® Communication Foundation (WCF)  
   
 ## Summary  
- This How-To provides detailed step-by-step procedures for enabling WIF in a WCF web service. It also provides instructions for how to test the application to verify that the web service is correctly presenting claims when the application is run. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](http://go.microsoft.com/fwlink/?LinkID=245849)  
+ This How-To provides detailed step-by-step procedures for enabling WIF in a WCF web service. It also provides instructions for how to test the application to verify that the web service is correctly presenting claims when the application is run. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](https://go.microsoft.com/fwlink/?LinkID=245849)  
   
 ## Contents  
   

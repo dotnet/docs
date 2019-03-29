@@ -772,5 +772,6 @@ ms.author: "ronpet"
   
      If the `% Time in GC` value spikes at the same time as process time, garbage collection is causing a high CPU usage. Otherwise, profile the application to find where the high usage is occurring.  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

@@ -64,7 +64,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
 -   Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.  
   
--   Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](http://go.microsoft.com/fwlink/?LinkId=120056).  
+-   Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://go.microsoft.com/fwlink/?LinkId=120056).  
   
 ## Message Security Fails if Using ASP.NET Impersonation and ASP.NET Compatibility Is Required  
  WCF does not support the following combination of settings because they can prevent client authentication from occurring:  
@@ -87,11 +87,11 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
  An example of this situation is a service with the following three endpoint addresses:  
   
--   http://localhost/CalculatorService/service (the service)  
+- `http://localhost/CalculatorService/service` (the service)  
   
--   http://localhost/CalculatorService/issue_ticket (the STS)  
+- `http://localhost/CalculatorService/issue_ticket` (the STS)  
   
--   http://localhost/CalculatorService/mex (the metadata endpoint)  
+- `http://localhost/CalculatorService/mex` (the metadata endpoint)  
   
  This throws an exception.  
   
@@ -102,10 +102,10 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
  The fix is to modify the binding directly on the client after doing the import.  
   
-## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+## See also
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
+- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
+- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
+- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)

@@ -22,13 +22,6 @@ This section provides links to reference information about various aspects of Vi
  [Visual Basic Language Specification](../../visual-basic/reference/language-specification/index.md)  
  Provides links to the complete Visual Basic language specification, which contains detailed information on all aspects of the language.  
   
-## Reference  
- <xref:Microsoft.VisualBasic.PowerPacks?displayProperty=nameWithType>  
- This namespace contains classes for the Visual Basic Power Packs controls. Visual Basic Power Packs controls are additional Windows Forms controls.  
-  
- <xref:Microsoft.VisualBasic.PowerPacks.Printing?displayProperty=nameWithType>  
- This namespace provides a component that enables you to print a facsimile of the form as it appears on screen.  
-  
 ## Related Sections  
  [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Contains topics for dialog boxes and windows used in Visual Studio.  
@@ -36,5 +29,5 @@ This section provides links to reference information about various aspects of Vi
  [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in Visual Studio.  
   
- [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
+ [Automation and Extensibility Reference](/visualstudio/extensibility/extensibility-in-visual-studio)  
  Provides links to topics covering automation and extensibility in Visual Studio, for both shared and language-specific components.

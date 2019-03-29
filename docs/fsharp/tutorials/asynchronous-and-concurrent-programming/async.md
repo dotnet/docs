@@ -1,9 +1,9 @@
 ---
-title: Async Programming in F#
+title: Async Programming
 description: Learn how F# async programming is accomplished via a language-level programming model that is easy to use and natural to the language.
 ms.date: 06/20/2016
 ---
-# Async Programming in F# #
+# Async Programming in F\#
 
 > [!NOTE]
 > Some inaccuracies have been discovered in this article.  It is being rewritten.  See [Issue #666](https://github.com/dotnet/docs/issues/666) to learn about the changes.
@@ -47,7 +47,7 @@ There are a few syntactical constructs which are worth noting:
 
 Additionally, normal `let`, `use`, and `do` keywords can be used alongside the async versions just as they would in a normal function.
 
-## How to start Async Code in F# #
+## How to start Async Code in F\#
 
 As mentioned earlier, async code is a specification of work to be done in another context which needs to be explicitly started. Here are two primary ways to accomplish this:
 
@@ -146,7 +146,7 @@ for html in htmlList do
 
  F#’s compiler is very strict, making it nearly impossible to do something troubling like run "async" code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will most likely execute as expected.
 
-## For the C#/VB Programmer Looking Into F# #
+## For the C#/VB Programmer Looking Into F\#
 
 This section assumes you’re familiar with the async model in C#/VB. If you are not, [Async Programming in C#](../../../csharp/async.md) is a starting point.
 
@@ -185,23 +185,23 @@ In contrast, F# async workflows are more naturally cancellable. Cancellation is 
 Example:
 
 ```fsharp
-open System
-open System.Net
+open System.Threading
 
-let uploadDataAsync url data = 
+// Create a workflow which will loop forever.
+let workflow =
     async {
-        let uri = Uri(url)
-        use webClient = new WebClient()
-        webClient.UploadStringAsync(uri, data)
+        while true do
+            printfn "Working..."
+            do! Async.Sleep 1000
     }
+    
+let tokenSource = new CancellationTokenSource()
 
-let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
+// Start the workflow in the background
+Async.Start (workflow, tokenSource.Token)
 
-let token = new CancellationTokenSource()
-Async.Start (workflow, token)
-
-// Immediately cancel uploadDataAsync after it's been started.
-token.Cancel()
+// Executing the next line will stop the workflow
+tokenSource.Cancel()
 ```
 
 And that’s it!

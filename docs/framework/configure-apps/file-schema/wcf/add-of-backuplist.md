@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;backupList&gt;"
+title: "<add> of <backupList>"
 ms.date: "03/30/2017"
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
 ---
-# &lt;add&gt; of &lt;backupList&gt;
+# \<add> of \<backupList>
 Represents a configuration element that defines a backup endpoint element.  
   
  \<system.serviceModel>  
@@ -15,7 +15,13 @@ Represents a configuration element that defines a backup endpoint element.
 ## Syntax  
   
 ```xml  
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
+<routing>
+  <backupLists>
+    <backupList name="String">
+      <add endpointName="String" />
+    </backupList>
+  </backupLists>
+</routing>
 ```  
   
 ```csharp  
@@ -39,5 +45,5 @@ Represents a configuration element that defines a backup endpoint element.
 |-------------|-----------------|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|Contains a list of endpoints that you would like the Routing Service to use in case the primary endpoint can't be reached.|  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=nameWithType> 
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=nameWithType>

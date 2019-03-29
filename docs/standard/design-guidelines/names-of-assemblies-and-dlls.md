@@ -1,6 +1,6 @@
 ---
 title: "Names of Assemblies and DLLs"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "names [.NET Framework], DLLs"
@@ -8,8 +8,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], names"
   - "DLLs, names"
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Names of Assemblies and DLLs
 An assembly is the unit of deployment and identity for managed code programs. Although assemblies can span one or more files, typically an assembly maps one-to-one with a DLL. Therefore, this section describes only DLL naming conventions, which then can be mapped to assembly naming conventions.  
@@ -30,6 +29,7 @@ An assembly is the unit of deployment and identity for managed code programs. Al
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

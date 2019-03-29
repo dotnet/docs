@@ -53,7 +53,7 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
  A service host file (service1.svc) is also created if the existing project is a Web project.  
   
 ### WCF WF Service Project and Item Template.  
- These templates create WCF services that host a Workflow Service, which is a workflow that can be accessed like a web service. Separate templates exist for XAML or imperative programming models. Using the templates, you can create sequential or state machine workflow. For more information on these types of workflow, see [Windows Workflow Foundation Tutorials](http://msdn.microsoft.com/library/e9705654-bd96-4b56-8d98-f1f118112d97). For more information about creating workflow projects, see [Creating Legacy Workflow Projects](/visualstudio/workflow-designer/creating-legacy-workflow-projects).  
+ These templates create WCF services that host a Workflow Service, which is a workflow that can be accessed like a web service. Separate templates exist for XAML or imperative programming models. Using the templates, you can create sequential or state machine workflow. For more information on these types of workflow, see [How to: Create a Workflow](../windows-workflow-foundation/how-to-create-a-workflow.md). For more information about creating workflow projects, see [Creating Legacy Workflow Projects](/visualstudio/workflow-designer/creating-legacy-workflow-projects).  
   
  Visual Studio designer is more responsive when XOML type workflows are used instead of code based ones. XOML workflow is the default workflow type to be created.  
   
@@ -66,7 +66,7 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
  If you change the address of your feed, you must also change the address in the **Debug** tab. If you do not do this, Internet Explorer attempts to open the feed at the default address and fail.  
   
 ### AJAX enabled WCF Service Item Template  
- This template exposes an AJAX control as a WCF service. For more information on AJAX controls, see the [AJAX control documentation](http://go.microsoft.com/fwlink/?LinkId=96717).  
+ This template exposes an AJAX control as a WCF service. For more information on AJAX controls, see the [AJAX control documentation](https://go.microsoft.com/fwlink/?LinkId=96717).  
   
 ### Silverlight-enabled WCF Service Item Template  
  This template creates a Web service that provides data to a Silverlight client or front-end. The template can be added to a Web site or Web application project to create a WCF service, which includes service code and configuration that support communicating with a Silverlight client. You can then use **Add Service Reference** to add a client proxy of the service to the client, and exchange data between the Silverlight client and the Silverlight-enabled WCF service.  
@@ -76,6 +76,6 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
 > [!NOTE]
 >  The Silverlight-enabled WCF Service exposes a `basicHttpBinding` endpoint without enabling any security settings. Therefore, information about the service can be obtained by all clients that connect to this service. Messages exchanged between the service and the client are also not signed or encrypted. To secure the endpoint properly, you should use ASP.NET authentication, HTTPS or other mechanisms.  
   
-## See Also  
- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)  
- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+## See also
+- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
+- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

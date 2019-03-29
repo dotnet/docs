@@ -30,7 +30,7 @@ HRESULT GetClassFromToken(
     [out] ClassID   *pClassId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The ID of the module that contains the class.  
   
@@ -52,5 +52,5 @@ HRESULT GetClassFromToken(
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

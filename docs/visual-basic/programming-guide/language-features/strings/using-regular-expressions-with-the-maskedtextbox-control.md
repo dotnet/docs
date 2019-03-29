@@ -32,7 +32,7 @@ This example demonstrates how to convert simple regular expressions to work with
 |\<|Converts all characters that follow to lowercase.|Not available.|  
 |>|Converts all characters that follow to uppercase.|Not available.|  
 |&#124;|Undoes a previous shift up or shift down.|Not available.|  
-|\|Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|\|  
+|&#92;|Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|&#92;|  
 |All other characters.|Literals. All non-mask elements will appear as themselves within <xref:System.Windows.Forms.MaskedTextBox>.|All other characters.|  
   
  The decimal (.), thousandths (,), time (:), date (/), and currency ($) symbols default to displaying those symbols as defined by the application's culture. You can force them to display symbols for another culture by using the <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.  
@@ -49,8 +49,8 @@ This example demonstrates how to convert simple regular expressions to work with
 |`(\(\d{3}\)-)?\d{3}-d{4}`|`(999)-000-0000`|United States phone number, area code optional. If the user does not wish to enter the optional characters, she can either enter spaces or place the mouse pointer directly at the position in the mask represented by the first 0.|  
 |`$\d{6}.00`|`$999,999.00`|A currency value in the range of 0 to 999999. The currency, thousandth, and decimal characters will be replaced at run-time with their culture-specific equivalents.|  
   
-## See Also  
- <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>  
- <xref:System.Windows.Forms.MaskedTextBox>  
- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)  
- [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>
+- <xref:System.Windows.Forms.MaskedTextBox>
+- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)
+- [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

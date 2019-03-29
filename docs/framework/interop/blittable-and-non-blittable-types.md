@@ -43,7 +43,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
 -   One-dimensional arrays of blittable types, such as an array of integers. However, a type that contains a variable array of blittable types is not itself blittable.  
   
--   Formatted value types that contain only blittable types (and classes if they are marshaled as formatted types). For more information about formatted value types, see [Default Marshaling for Value Types](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a(v=vs.100)).  
+-   Formatted value types that contain only blittable types (and classes if they are marshaled as formatted types). For more information about formatted value types, see [Default marshaling for value types](default-marshaling-behavior.md#default-marshaling-for-value-types).  
   
  Object references are not blittable. This includes an array of references to objects that are blittable by themselves. For example, you can define a structure that is blittable, but you cannot define a blittable type that contains an array of references to those structures.  
   
@@ -51,21 +51,21 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Some managed data types require a different representation in an unmanaged environment. These non-blittable data types must be converted into a form that can be marshaled. For example, managed strings are non-blittable types because they must be converted into string objects before they can be marshaled.  
   
- The following table lists non-blittable types from the <xref:System> namespace. [Delegates](https://msdn.microsoft.com/library/d176ee76-f982-494b-b03d-92e4118896e2(v=vs.100)), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
+ The following table lists non-blittable types from the <xref:System> namespace. [Delegates](default-marshaling-behavior.md#default-marshaling-for-delegates), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
   
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
 |[System.Array](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
-|[System.Boolean](https://msdn.microsoft.com/library/d4c00537-70f7-4ca6-8197-bfc1ec037ff9(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
-|[System.Char](https://msdn.microsoft.com/library/cecc87c1-075e-4cde-aa56-33d189f66feb(v=vs.100))|Converts to a Unicode or ANSI character.|  
-|[System.Class](https://msdn.microsoft.com/library/fe334af5-0123-43d8-be84-26f6f023ddb6(v=vs.100))|Converts to a class interface.|  
+|[System.Boolean](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
+|[System.Char](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  
+|[System.Class](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|  
 |[System.Object](../../../docs/framework/interop/default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
 |[System.Mdarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.String](../../../docs/framework/interop/default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
-|[System.Valuetype](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a(v=vs.100))|Converts to a structure with a fixed memory layout.|  
+|[System.Valuetype](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
 |[System.Szarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
   
  Class and object types are supported only by COM interop. For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  
   
-## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)
+## See also
+- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)

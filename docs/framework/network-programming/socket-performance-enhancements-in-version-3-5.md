@@ -2,9 +2,6 @@
 title: "Socket Performance Enhancements in Version 3.5"
 ms.date: "03/30/2017"
 ms.assetid: 225aa5f9-c54b-4620-ab64-5cd100cfd54c
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Socket Performance Enhancements in Version 3.5
 The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been enhanced in Version 3.5 for use by applications that use asynchronous network I/O to achieve the highest performance. A series of new classes have been added as part of a set of enhancements to the <xref:System.Net.Sockets.Socket> class that provide an alternative asynchronous pattern that can be used by specialized high-performance socket applications. These enhancements were specifically designed for network server applications that require high performance. An application can use the enhanced asynchronous pattern exclusively, or only in targeted hot areas of their application (when receiving large amounts of data, for example).  
@@ -30,10 +27,10 @@ The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been
   
  The lifetime of the new asynchronous socket operation context object is determined by references in the application code and asynchronous I/O references. It is not necessary for the application to retain a reference to an asynchronous socket operation context object after it is submitted as a parameter to one of the asynchronous socket operation methods. It will remain referenced until the completion callback returns. However it is advantageous for the application to retain the reference to the context object so that it can be reused for a future asynchronous socket operation.  
   
-## See Also  
- <xref:System.Net.Sockets.Socket?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.SendPacketsElement?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.SocketAsyncOperation?displayProperty=nameWithType>  
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [Socket Code Examples](socket-code-examples.md)
+## See also
+- <xref:System.Net.Sockets.Socket?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.SendPacketsElement?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.SocketAsyncOperation?displayProperty=nameWithType>
+- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [Socket Code Examples](socket-code-examples.md)

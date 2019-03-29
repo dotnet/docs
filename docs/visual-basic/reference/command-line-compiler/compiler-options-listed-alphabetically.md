@@ -4,8 +4,6 @@ ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e
-author: rpetrusha
-ms.author: ronpet
 ---
 # Visual Basic compiler options listed alphabetically
 The Visual Basic command-line compiler is provided as an alternative to compiling programs from the Visual Studio integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted alphabetically.  
@@ -76,8 +74,6 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-win32manifest](../../../visual-basic/reference/command-line-compiler/win32manifest.md)|Identifies a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.|  
 |[-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)|Inserts a Win32 resource into the output file.|  
   
-## See also  
- [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)  
- [Introduction to the Project Designer](http://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7)  
- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)
+## See also
+- [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
+- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)

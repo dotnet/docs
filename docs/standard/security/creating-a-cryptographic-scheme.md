@@ -24,7 +24,8 @@ The cryptographic components of the .NET Framework can be combined to create dif
   
 5.  The parties then initiate a conversation using symmetric encryption.  
   
- Creating a cryptographic scheme is not a trivial task. For more information on using cryptography, see the Cryptography topic in the Platform SDK documentation at http://msdn.microsoft.com/library.  
+ Creating a cryptographic scheme is not a trivial task.
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## See also
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

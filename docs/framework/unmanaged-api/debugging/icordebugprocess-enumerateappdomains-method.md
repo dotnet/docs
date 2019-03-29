@@ -28,7 +28,7 @@ HRESULT EnumerateAppDomains(
     [out] ICorDebugAppDomainEnum **ppAppDomains);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAppDomains`  
  [out] A pointer to the address of an [ICorDebugAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomainenum-interface.md) that is an enumerator for the application domains in this process.  
   

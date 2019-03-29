@@ -12,7 +12,7 @@ ms.author: "mairaw"
 
 # Custom element for SingleTagSectionHandler
 
-Defines settings in a custom configuration section that is defined by a <section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
+Defines settings in a custom configuration section that is defined by a \<section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;*\<sectionName>*
@@ -63,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

@@ -7,7 +7,7 @@ ms.date: 06/26/2018
 ---
 # Serverless architecture
 
-There are many approaches to using serverless architectures. This chapter explores examples of common architectures that integrate serverless. It also covers concerns that may pose additional challenges or require extra consideration when implementing serverless. Finally, several design examples are provided that illustrate various serverless use cases.
+There are many approaches to using [serverless](http://azure.com/serverless) architectures. This chapter explores examples of common architectures that integrate serverless. It also covers concerns that may pose additional challenges or require extra consideration when implementing serverless. Finally, several design examples are provided that illustrate various serverless use cases.
 
 Serverless hosts often use an existing container-based or PaaS layer to manage the serverless instances. For example, Azure Functions is based on [Azure App Service](https://docs.microsoft.com/azure/app-service/). The App Service is used to scale out instances and manage the runtime that executes Azure Functions code. For Windows-based functions, the host runs as PaaS and scales out the .NET runtime. For Linux-based functions, the host leverages containers.
 
@@ -68,5 +68,5 @@ The sheer volume of devices and information often dictates an event-driven archi
 The pervasiveness of IoT has resulted in several serverless products that focus specifically on IoT concerns, such as [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub). Serverless automates tasks such as device registration, policy enforcement, tracking, and even deployment of code to devices at *the edge*. The edge refers to devices like sensors and actuators that are connected to, but not an active part of, the Internet.
 
 >[!div class="step-by-step"]
-[Previous](architecture-approaches.md)
-[Next](serverless-architecture-considerations.md)
+>[Previous](architecture-approaches.md)
+>[Next](serverless-architecture-considerations.md)

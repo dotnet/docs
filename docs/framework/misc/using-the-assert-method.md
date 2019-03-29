@@ -51,8 +51,7 @@ ms.author: "mairaw"
   
 -   Method A is contained in assembly A, method B is contained in assembly B, and so on.  
   
- ![](../../../docs/framework/misc/media/assert.gif "assert")  
-Using Assert  
+ ![Diagram that shows the Assert method assemblies.](./media/using-the-assert-method/assert-method-assemblies.gif)    
   
  In this scenario, method A calls B, B calls C, C calls E, and E calls F. Method C asserts permission to read files on the C drive (permission P1), and method E demands permission to read .txt files on the C drive (permission P1A). When the demand in F is encountered at run time, a stack walk is performed to check the permissions of all callers of F, starting with E. E has been granted P1A permission, so the stack walk proceeds to examine the permissions of C, where C's assertion is discovered. Because the demanded permission (P1A) is a subset of the asserted permission (P1), the stack walk stops and the security check automatically succeeds. It does not matter that assemblies A and B have not been granted permission P1A. By asserting P1, method C ensures that its callers can access the resource protected by P1, even if the callers have not been granted permission to access that resource.  
   
@@ -162,10 +161,10 @@ namespace LogUtil
 }  
 ```  
   
-## See Also  
- <xref:System.Security.PermissionSet>  
- <xref:System.Security.Permissions.SecurityPermission>  
- <xref:System.Security.Permissions.FileIOPermission>  
- <xref:System.Security.Permissions.SecurityAction>  
- [Attributes](../../../docs/standard/attributes/index.md)  
- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+## See also
+- <xref:System.Security.PermissionSet>
+- <xref:System.Security.Permissions.SecurityPermission>
+- <xref:System.Security.Permissions.FileIOPermission>
+- <xref:System.Security.Permissions.SecurityAction>
+- [Attributes](../../../docs/standard/attributes/index.md)
+- [Code Access Security](../../../docs/framework/misc/code-access-security.md)

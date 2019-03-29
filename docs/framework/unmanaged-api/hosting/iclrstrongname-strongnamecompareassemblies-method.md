@@ -31,7 +31,7 @@ HRESULT StrongNameCompareAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssembly1`  
  [in] The path to the first assembly.  
   
@@ -48,7 +48,7 @@ HRESULT StrongNameCompareAssemblies (
 -   `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -62,5 +62,5 @@ HRESULT StrongNameCompareAssemblies (
 ## Remarks  
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
-## See Also  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

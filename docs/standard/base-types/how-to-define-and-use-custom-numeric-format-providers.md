@@ -85,5 +85,6 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
 ## Compiling the Code  
  Compile the code at the command line using csc.exe or vb.exe. To compile the code in Visual Studio, put it in a console application project template.  
   
-## See Also  
- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)
+## See also
+
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)

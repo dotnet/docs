@@ -1,9 +1,9 @@
 ---
 title: Developing Libraries with Cross Platform Tools
-description: Learn how to create libraries for .NET using .NET Core CLI tools.
+description: Learn how to create .NET Core libraries using the .NET Core CLI tools. You'll create a library that supports multiple frameworks.
 author: cartermp
-ms.author: mairaw
 ms.date: 05/01/2017
+ms.custom: seodec18
 ---
 # Developing Libraries with Cross Platform Tools
 
@@ -13,9 +13,9 @@ This article covers how to write libraries for .NET using cross-platform CLI too
 
 You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
 
-For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](http://getdotnet.azurewebsites.net/) installed on a Windows machine.
+For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
 
-Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET target platforms page](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html). Refer to this table:
+Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET download archives page](https://dotnet.microsoft.com/download/archives). Refer to this table:
 
 | .NET Framework Version | What to download                                       |
 | ---------------------- | ------------------------------------------------------ |
@@ -33,7 +33,7 @@ If you're not quite familiar with the .NET Standard, refer to the [.NET Standard
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
-[!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
+[!INCLUDE [net-standard-table](../../../includes/net-standard-table.md)]
 
 Here's what this table means for the purposes of creating a library:
 
@@ -52,9 +52,9 @@ You have three primary options when targeting the .NET Standard, depending on yo
     ```
 
 2. You can use a lower or higher version of the .NET Standard by modifying the value in the `TargetFramework` node of your project file.
-    
+
     .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher. However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones. This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher. Select the Standard version that has the right mix of APIs and platform support for your needs. We recommend `netstandard1.4` for now.
-    
+
 3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
 
 ## How to target the .NET Framework
@@ -125,12 +125,12 @@ Your project file could look like this:
 You'll notice three major changes here:
 
 1. The `TargetFramework` node has been replaced by `TargetFrameworks`, and three TFMs are expressed inside.
-1. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework reference.
+1. There is an `<ItemGroup>` node for the `net40` target pulling in one .NET Framework reference.
 1. There is an `<ItemGroup>` node for the `net45` target pulling in two .NET Framework references.
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:
 
-[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+[!INCLUDE [Preprocessor symbols](../../../includes/preprocessor-symbols.md)]
 
 Here is an example making use of conditional compilation per-target:
 
@@ -161,7 +161,7 @@ namespace MultitargetLib
         // .NET Framework 4.0 does not have async/await
         public string GetDotNetCount()
         {
-            string url = "http://www.dotnetfoundation.org/";
+            string url = "https://www.dotnetfoundation.org/";
 
             var uri = new Uri(url);
 
@@ -181,7 +181,7 @@ namespace MultitargetLib
         // .NET 4.5+ can use async/await!
         public async Task<string> GetDotNetCountAsync()
         {
-            string url = "http://www.dotnetfoundation.org/";
+            string url = "https://www.dotnetfoundation.org/";
 
             // HttpClient is thread-safe, so no need to explicitly lock here
             var result = await _client.GetStringAsync(url);
@@ -207,7 +207,7 @@ Each of these contain the `.dll` files for each target.
 
 ## How to test libraries on .NET Core
 
-It's important to be able to test across platforms. You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
+It's important to be able to test across platforms. You can use either [xUnit](https://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!NOTE]
 > This uses some [.NET Core CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
@@ -247,10 +247,10 @@ It's important to be able to test across platforms. You can use either [xUnit](h
    dotnet build
    ```
 
-   [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+   [!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]
 
 1. Verify that xUnit runs by executing the `dotnet test` command. If you chose to use MSTest, then the MSTest console runner should run instead.
-    
+
 And that's it! You can now test your library across all platforms using command line tools. To continue testing now that you have everything set up, testing your library is very simple:
 
 1. Make changes to your library.
@@ -315,7 +315,7 @@ This will add the three projects above and a solution file which links them toge
 The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```console
-$ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
+dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 
 The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** will now reference **AwesomeLibrary.Core** as a `ProjectReference` target.  You can verify this by inspecting the project files and seeing the following in them:

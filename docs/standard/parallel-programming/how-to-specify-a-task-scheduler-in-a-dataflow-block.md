@@ -75,5 +75,6 @@ This document demonstrates how to associate a specific task scheduler when you u
  [!code-csharp[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#100)]
  [!code-vb[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#100)]  
   
-## See Also  
- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## See also
+
+- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

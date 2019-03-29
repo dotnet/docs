@@ -1,12 +1,12 @@
 ---
-title: "Accessing the Computer&#39;s Ports (Visual Basic)"
+title: "Accessing the Computer's Ports (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "serial ports"
   - "My.Computer.Ports object [Visual Basic], tasks"
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 ---
-# Accessing the Computer&#39;s Ports (Visual Basic)
+# Accessing the Computer's Ports (Visual Basic)
 The `My.Computer.Ports` object provides a property and a method for accessing the computer's serial ports.  
   
 ## In This Section  

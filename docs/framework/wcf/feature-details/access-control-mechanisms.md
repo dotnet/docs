@@ -40,7 +40,7 @@ You can control access in several way with Windows Communication Foundation (WCF
   
  You can also use AzMan and the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider if you already have access to an existing AzMan installation and want to authorize your service users using the features of the AzMan/role provider combination.  
   
- For more information about AzMan and the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider, see [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](http://go.microsoft.com/fwlink/?LinkId=88951). For more information about using AzMan and the role provider for WCF services, see [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
+ For more information about AzMan and the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider, see [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](https://go.microsoft.com/fwlink/?LinkId=88951). For more information about using AzMan and the role provider for WCF services, see [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
   
 ## Identity Model  
  The Identity Model is a set of APIs that enable you to manage claims and policies to authorize clients. With the Identity Model, you can examine every claim contained in credentials that the caller used to authenticate itself to the service, compare the claims to the set of policies for the service, and grant or deny access based on the comparison.  
@@ -51,10 +51,10 @@ You can control access in several way with Windows Communication Foundation (WCF
   
  For more information about the Identity Model, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
   
-## See Also  
- <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)  
- [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+## See also
+- <xref:System.Security.Permissions.PrincipalPermissionAttribute>
+- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)
+- [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)
+- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

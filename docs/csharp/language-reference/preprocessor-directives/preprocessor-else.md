@@ -1,5 +1,7 @@
 ---
-title: "#else (C# Reference)"
+title: "#else - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "#else"
@@ -13,8 +15,8 @@ ms.assetid: 6a347322-cfa2-4a86-98f8-ddfa2cb7d4db
 ## Remarks  
  [#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md) must be the next preprocessor directive after `#else`. See [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) for an example of how to use `#else`.  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

@@ -35,22 +35,22 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  The following illustration shows a simple layout.  
   
- ![A typical Grid, no bounding box superimposed.](../../../../docs/framework/wpf/advanced/media/boundingbox1.png "boundingbox1")  
+ ![Screenshot that shows a typical grid, no bounding box superimposed.](./media/layout/grid-no-bounding-box-superimpose.png)  
   
  This layout can be achieved by using the following [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
- [!code-xaml[LayoutInformation#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml#1)]  
+ [!code-xaml[LayoutInformation#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml#1)]  
   
  A single <xref:System.Windows.Controls.TextBlock> element is hosted within a <xref:System.Windows.Controls.Grid>. While the text fills only the upper-left corner of the first column, the allocated space for the <xref:System.Windows.Controls.TextBlock> is actually much larger. The bounding box of any <xref:System.Windows.FrameworkElement> can be retrieved by using the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method. The following illustration shows the bounding box for the <xref:System.Windows.Controls.TextBlock> element.  
   
- ![The bounding box of the TextBlock is now visible.](../../../../docs/framework/wpf/advanced/media/boundingbox2.png "boundingbox2")  
+ ![Screenshot that shows that the TextBlock bounding box is now visible.](./media/layout/visible-textblock-bounding-box.png)  
   
  As shown by the yellow rectangle, the allocated space for the <xref:System.Windows.Controls.TextBlock> element is actually much larger than it appears. As additional elements are added to the <xref:System.Windows.Controls.Grid>, this allocation could shrink or expand, depending on the type and size of elements that are added.  
   
  The layout slot of the <xref:System.Windows.Controls.TextBlock> is translated into a <xref:System.Windows.Shapes.Path> by using the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method. This technique can be useful for displaying the bounding box of an element.  
   
- [!code-csharp[LayoutInformation#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
- [!code-vb[LayoutInformation#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
+ [!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
   
 <a name="LayoutSystem_Overview"></a>   
 ## The Layout System  
@@ -108,7 +108,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 |<xref:System.Windows.Controls.VirtualizingPanel>|Provides a framework for <xref:System.Windows.Controls.Panel> elements that virtualize their child data collection. This is an abstract class.|  
 |<xref:System.Windows.Controls.WrapPanel>|Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box. Subsequent ordering occurs sequentially from top to bottom or right to left, depending on the value of the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property.|  
   
- For applications that require a layout that is not possible by using any of the predefined <xref:System.Windows.Controls.Panel> elements, custom layout behaviors can be achieved by inheriting from <xref:System.Windows.Controls.Panel> and overriding the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For an example, see [Custom Radial Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159982).  
+ For applications that require a layout that is not possible by using any of the predefined <xref:System.Windows.Controls.Panel> elements, custom layout behaviors can be achieved by inheriting from <xref:System.Windows.Controls.Panel> and overriding the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For an example, see [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982).  
   
 <a name="LayoutSystem_Performance"></a>   
 ## Layout Performance Considerations  
@@ -116,7 +116,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 -   Be aware of which property value changes will force a recursive update by the layout system.  
   
-     Dependency properties whose values can cause the layout system to be initialized are marked with public flags. <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> and <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> provide useful clues as to which property value changes will force a recursive update by the layout system. In general, any property that can affect the size of an element's bounding box should have a <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> flag set to true. For more information, see [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md).  
+     Dependency properties whose values can cause the layout system to be initialized are marked with public flags. <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> and <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> provide useful clues as to which property value changes will force a recursive update by the layout system. In general, any property that can affect the size of an element's bounding box should have a <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> flag set to true. For more information, see [Dependency Properties Overview](dependency-properties-overview.md).  
   
 -   When possible, use a <xref:System.Windows.UIElement.RenderTransform%2A> instead of a <xref:System.Windows.FrameworkElement.LayoutTransform%2A>.  
   
@@ -140,11 +140,11 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 <a name="LayoutSystem_whatsnext"></a>   
 ## What's Next  
- Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md). For an example of a custom <xref:System.Windows.Controls.Panel> element, see [Custom Radial Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159982). When you are ready to put it all together in a light-weight application, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+ Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md). For an example of a custom <xref:System.Windows.Controls.Panel> element, see [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982). When you are ready to put it all together in a light-weight application, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
-## See Also  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.UIElement>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)  
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+## See also
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.UIElement>
+- [Panels Overview](../controls/panels-overview.md)
+- [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md)
+- [Layout and Design](optimizing-performance-layout-and-design.md)

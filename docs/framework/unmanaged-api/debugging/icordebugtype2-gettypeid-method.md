@@ -29,7 +29,7 @@ HRESULT GetTypeID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [out] A pointer to the [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this ICorDebugType.  
   
@@ -56,5 +56,5 @@ HRESULT GetTypeID(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)
+## See also
+- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)

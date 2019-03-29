@@ -8,7 +8,7 @@ Contract
   
 ## Syntax  
   
-```  
+```csharp
 class Contract  
 {  
   sint32 AppDomainId;  
@@ -98,5 +98,5 @@ class Contract
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ContractDescription>
+## See also
+- <xref:System.ServiceModel.Description.ContractDescription>

@@ -48,11 +48,11 @@ Bindings are objects that specify the communication details required to connect 
   
 -   [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md) provides an example of creating a binding in code.  
   
--   [How to: Configure a Client](../../../docs/framework/wcf/how-to-configure-a-basic-wcf-client.md) provides an example of creating a client using configuration.  
+-   [Tutorial: Create a Windows Communication Foundation client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md) provides an example of creating a client by using configuration.  
   
-## See Also  
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md)  
- [How to: Specify a Service Binding in Code](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md)  
- [How to: Specify a Client Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-configuration.md)  
- [How to: Specify a Client Binding in Code](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-code.md)
+## See also
+- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md)
+- [How to: Specify a Service Binding in Code](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md)
+- [How to: Specify a Client Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-configuration.md)
+- [How to: Specify a Client Binding in Code](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-code.md)

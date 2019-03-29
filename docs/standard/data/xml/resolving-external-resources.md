@@ -46,5 +46,6 @@ The **XmlResolver** property of the **XmlDocument** is used by the **XmlDocument
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlResolver> reference page.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

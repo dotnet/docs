@@ -31,14 +31,12 @@
 /docs/fsharp/** @cartermp
 
 # The Visual Basic Guide:
-/docs/visual-basic/** @rpetrusha
+/docs/visual-basic/** @KathleenDollard
 
 # The ML.NET Guide:
 /docs/machine-learning/** @JRAlexander
 
 ############### .NET Core ########################
-# Docker
-/docs/core/docker/** @JRAlexander
 # What's New
 /docs/core/whats-new/** @rpetrusha
 # Deployment
@@ -54,7 +52,14 @@
 # What's New
 /docs/framework/whats-new/** @rpetrusha
 # ADO.NET
-/docs/framework/data/adonet/** @douglaslMS
+/docs/framework/data/adonet/** @stevestein
+# NCL
+/docs/framework/configure-apps/file-schema/network/** @karelz
+/docs/framework/network-programming/** @karelz
+# WCF
+/docs/framework/configure-apps/file-schema/wcf/** @Lxiamail
+/docs/framework/data/wcf/** @Lxiamail
+/docs/framework/wcf/** @Lxiamail
 
 ################## .NET STANDARD ##################
 # Analyzers:
@@ -65,3 +70,5 @@
 /docs/standard/io/** @mairaw
 # .NET base types - Formatting
 /docs/standard/base-types/formatting-types/** @rpetrusha
+# .NET threading
+/docs/standard/threading/** @rpetrusha

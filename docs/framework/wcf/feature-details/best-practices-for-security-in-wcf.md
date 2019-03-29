@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "best practices [WCF], security"
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Best Practices for Security in WCF
 The following sections list the best practices to consider when creating secure applications using Windows Communication Foundation (WCF). For more information about security, see [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md), [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md), and [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md).  
@@ -52,7 +50,7 @@ The following sections list the best practices to consider when creating secure 
 ## Set SecurityBindingElement.IncludeTimestamp to True on Custom Bindings  
  When you create a custom binding, you must set <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> to `true`. Otherwise, if <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> is set to `false`, and the client is using an asymmetric key-based token such as an X509 certificate, the message will not be signed.  
   
-## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)  
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)
+## See also
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)
+- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)

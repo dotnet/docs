@@ -29,7 +29,7 @@ HRESULT GetAppDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAppDomain`  
  [out] A pointer to the address of an ICorDebugAppDomain interface that represents the application domain.  
   

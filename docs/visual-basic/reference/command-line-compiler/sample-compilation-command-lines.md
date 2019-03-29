@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "compiling source code [Visual Basic], from command line"
   - "Visual Basic compiler, sample command lines"
 ms.assetid: 5bfbb487-5f47-4267-969a-39dfb917beeb
-author: rpetrusha
-ms.author: ronpet
 ---
 # Sample compilation command lines (Visual Basic)
 As an alternative to compiling Visual Basic programs from within Visual Studio, you can compile from the command line to produce executable (.exe) files or dynamic-link library (.dll) files.  
@@ -31,6 +29,6 @@ As an alternative to compiling Visual Basic programs from within Visual Studio, 
 > [!TIP]
 >  When you build a project by using the Visual Studio IDE, you can display information about the associated **vbc** command with its compiler options in the output window. To display this information, open the [Options Dialog Box,  Projects and Solutions, Build and Run](/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run), and then set the **MSBuild project build output verbosity** to **Normal** or a higher level of verbosity.   
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

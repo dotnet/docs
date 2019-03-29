@@ -211,23 +211,23 @@ End Sub
 ## Example  
  The following example uses the `Sub` statement to define the name, parameters, and code that form the body of a `Sub` procedure.  
   
- [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#58](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#58)]  
   
 ## Example  
  In the following example, `DelayAsync` is an `Async` `Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore, the function declaration of `DelayAsync` must have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer, as the following statement shows: `Dim result As Integer = Await delayTask`.  
   
  The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `Await DoSomethingAsync()`. The `startButton_Click` `Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
+ [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]  
   
-## See Also  
- [Implements Statement](implements-statement.md)  
- [Function Statement](function-statement.md)  
- [Parameter List](parameter-list.md)  
- [Dim Statement](dim-statement.md)  
- [Call Statement](call-statement.md)  
- [Of](of-clause.md)  
- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+## See also
+- [Implements Statement](implements-statement.md)
+- [Function Statement](function-statement.md)
+- [Parameter List](parameter-list.md)
+- [Dim Statement](dim-statement.md)
+- [Call Statement](call-statement.md)
+- [Of](of-clause.md)
+- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

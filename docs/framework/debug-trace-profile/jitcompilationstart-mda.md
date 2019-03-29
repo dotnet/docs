@@ -33,7 +33,7 @@ method name="Test!ns2.C0::m"
 ```  
   
 ## Configuration  
- The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to *.  
+ The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to \*.  
   
 ```xml  
 <mdaConfig>  
@@ -56,7 +56,7 @@ method name="Test!ns2.C0::m"
 ## Example  
  The following code sample is intended to be used with the preceding configuration file.  
   
-```  
+```csharp
 using System;  
 using System.Reflection;  
 using System.Runtime.CompilerServices;  
@@ -151,7 +151,7 @@ namespace ns2
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

@@ -121,26 +121,26 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 -   **Mechanism.** Visual Basic uses the .NET Framework *platform invoke* (PInvoke) mechanism to resolve and access external procedures. The `Declare` statement and the <xref:System.Runtime.InteropServices.DllImportAttribute> class both use this mechanism automatically, and you do not need any knowledge of PInvoke. For more information, see [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
   
 > [!IMPORTANT]
->  If the external procedure runs outside the common language runtime (CLR), it is *unmanaged code*. When you call such a procedure, for example a Win32 API function or a COM method, you might expose your application to security risks. For more information, see [Secure Coding Guidelines for Unmanaged Code](../../../framework/security/secure-coding-guidelines-for-unmanaged-code.md).  
+>  If the external procedure runs outside the common language runtime (CLR), it is *unmanaged code*. When you call such a procedure, for example a Windows API function or a COM method, you might expose your application to security risks. For more information, see [Secure Coding Guidelines for Unmanaged Code](../../../framework/security/secure-coding-guidelines-for-unmanaged-code.md).  
   
 ## Example  
  The following example declares an external reference to a `Function` procedure that returns the current user name. It then calls the external procedure `GetUserNameA` as part of the `getUser` procedure.  
   
- [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#15)]  
   
 ## Example  
  The <xref:System.Runtime.InteropServices.DllImportAttribute> provides an alternative way of using functions in unmanaged code. The following example declares an imported function without using a `Declare` statement.  
   
- [!code-vb[VbVbalrStatements#16](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#16)]  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)  
- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+## See also
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)
+- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

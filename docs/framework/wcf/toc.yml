@@ -1,0 +1,249 @@
+- name: Service-Oriented Applications with WCF
+  href: index.md
+  items:
+  - name: What's New in Windows Communication Foundation 4.5
+    href: whats-new.md
+  - name: WCF Simplification Features
+    href: wcf-simplification-features.md
+  - name: Guide to the Documentation
+    href: guide-to-the-documentation.md
+  - name: Conceptual Overview
+    href: conceptual-overview.md
+    items:
+    - name: What Is Windows Communication Foundation
+      href: whats-wcf.md
+    - name: Fundamental Windows Communication Foundation Concepts
+      href: fundamental-concepts.md
+    - name: Windows Communication Foundation Architecture
+      href: architecture.md
+    - name: WCF and .NET Framework Client Profile
+      href: wcf-and-net-framework-client-profile.md
+  - name: Get Started Tutorial
+    href: getting-started-tutorial.md
+    items:
+    - name: Define a Service Contract
+      href: how-to-define-a-wcf-service-contract.md
+    - name: Implement a Service Contract
+      href: how-to-implement-a-wcf-contract.md
+    - name: Host and Run a Basic Service
+      href: how-to-host-and-run-a-basic-wcf-service.md
+    - name: Create a Client
+      href: how-to-create-a-wcf-client.md
+    - name: Use a Client
+      href: how-to-use-a-wcf-client.md
+    - name: Troubleshoot the Get Started Tutorial
+      href: troubleshooting-the-getting-started-tutorial.md
+  - name: Basic WCF Programming
+    href: basic-wcf-programming.md
+    items:
+    - name: Basic Programming Lifecycle
+      href: basic-programming-lifecycle.md
+    - name: Designing and Implementing Services
+      href: designing-and-implementing-services.md
+      items:
+      - name: Designing Service Contracts
+        href: designing-service-contracts.md
+        items:
+        - name: Specifying and Handling Faults in Contracts and Services
+          href: specifying-and-handling-faults-in-contracts-and-services.md
+          items:
+          - name: Defining and Specifying Faults
+            href: defining-and-specifying-faults.md
+            items:
+            - name: "How to: Declare Faults in Service Contracts"
+              href: how-to-declare-faults-in-service-contracts.md
+          - name: Sending and Receiving Faults
+            href: sending-and-receiving-faults.md
+        - name: Using Sessions
+          href: using-sessions.md
+        - name: Synchronous and Asynchronous Operations
+          href: synchronous-and-asynchronous-operations.md
+          items:
+          - name: "How to: Implement an Asynchronous Service Operation"
+            href: how-to-implement-an-asynchronous-service-operation.md
+        - name: Reliable Services
+          href: reliable-services.md
+        - name: Services and Transactions
+          href: services-and-transactions.md
+      - name: Implementing Service Contracts
+        href: implementing-service-contracts.md
+        items:
+        - name: Specifying Service Run-Time Behavior
+          href: specifying-service-run-time-behavior.md
+    - name: Configuring Services
+      href: configuring-services.md
+      items:
+      - name: Simplified Configuration
+        href: simplified-configuration.md
+      - name: Configuring Services Using Configuration Files
+        href: configuring-services-using-configuration-files.md
+      - name: Configuring WCF Services in Code
+        href: configuring-wcf-services-in-code.md
+      - name: Bindings
+        href: bindings.md
+        items:
+        - name: WCF Bindings Overview
+          href: bindings-overview.md
+        - name: System-Provided Bindings
+          href: system-provided-bindings.md
+        - name: Using Bindings to Configure Services and Clients
+          href: using-bindings-to-configure-services-and-clients.md
+          items:
+          - name: "How to: Specify a Client Binding in Code"
+            href: how-to-specify-a-client-binding-in-code.md
+          - name: "How to: Specify a Client Binding in Configuration"
+            href: how-to-specify-a-client-binding-in-configuration.md
+          - name: "How to: Specify a Service Binding in Code"
+            href: how-to-specify-a-service-binding-in-code.md
+          - name: "How to: Specify a Service Binding in Configuration"
+            href: how-to-specify-a-service-binding-in-configuration.md
+        - name: Configuring Bindings for Services
+          href: configuring-bindings-for-wcf-services.md
+      - name: Endpoints
+        href: endpoints.md
+        items:
+        - name: Endpoint Creation Overview
+          href: endpoint-creation-overview.md
+        - name: Specifying an Endpoint Address
+          href: specifying-an-endpoint-address.md
+        - name: Publishing Metadata Endpoints
+          href: publishing-metadata-endpoints.md
+      - name: Securing Services
+        href: securing-services.md
+        items:
+        - name: "How to: Secure a Service with Windows Credentials"
+          href: how-to-secure-a-service-with-windows-credentials.md
+        - name: "How to: Set the Security Mode"
+          href: how-to-set-the-security-mode.md
+        - name: "How to: Specify the Client Credential Type"
+          href: how-to-specify-the-client-credential-type.md
+        - name: "How to: Restrict Access with the PrincipalPermissionAttribute Class"
+          href: how-to-restrict-access-with-the-principalpermissionattribute-class.md
+        - name: "How to: Impersonate a Client on a Service"
+          href: how-to-impersonate-a-client-on-a-service.md
+        - name: "How to: Examine the Security Context"
+          href: how-to-examine-the-security-context.md
+        - name: Understanding Protection Level
+          href: understanding-protection-level.md
+        - name: "How to: Set the ProtectionLevel Property"
+          href: how-to-set-the-protectionlevel-property.md
+      - name: Creating WS-I Basic Profile 1.1 Interoperable Services
+        href: creating-ws-i-basic-profile-1-1-interoperable-services.md
+    - name: Hosting Services
+      href: hosting-services.md
+      items:
+      - name: "How to: Host a WCF Service in a Managed Application"
+        href: how-to-host-a-wcf-service-in-a-managed-application.md
+      - name: "How to: Host a WCF Service Written with .NET Framework 3.5 in IIS Running Under .NET Framework 4"
+        href: host-a-wcf-service-net-framework-3-5-iis--net-framework-4.md
+    - name: Building Clients
+      href: building-clients.md
+      items:
+      - name: WCF Client Overview
+        href: wcf-client-overview.md
+      - name: Accessing Services Using a WCF Client
+        href: accessing-services-using-a-wcf-client.md
+        items:
+        - name: Add Service Reference in a Portable Subset Project
+          href: add-service-reference-in-a-portable-subset-project.md
+        - name: Specifying Client Run-Time Behavior
+          href: specifying-client-run-time-behavior.md
+        - name: Configuring Client Behaviors
+          href: configuring-client-behaviors.md
+      - name: Securing Clients
+        href: securing-clients.md
+        items:
+        - name: "How to: Specify Client Credential Values"
+          href: how-to-specify-client-credential-values.md
+    - name: Introduction to Extensibility
+      href: introduction-to-extensibility.md
+    - name: WCF Troubleshooting Quickstart
+      href: wcf-troubleshooting-quickstart.md
+    - name: WCF Error Handling
+      href: wcf-error-handling.md
+    - name: WCF and ASP.NET Web API
+      href: wcf-and-aspnet-web-api.md
+  - name: WCF Feature Details
+    href: feature-details/
+  - name: Extending WCF
+    href: extending/
+  - name: Guidelines and Best Practices
+    href: guidelines-and-best-practices.md
+    items:
+    - name: "Best Practices: Data Contract Versioning"
+      href: best-practices-data-contract-versioning.md
+    - name: "Best Practices: Intermediaries"
+      href: best-practices-intermediaries.md
+    - name: Service Versioning
+      href: service-versioning.md
+    - name: Load Balancing
+      href: load-balancing.md
+    - name: Controlling Resource Consumption and Improving Performance
+      href: controlling-resource-consumption-and-improving-performance.md
+    - name: Deploying WCF Applications with ClickOnce
+      href: deploying-wcf-applications-with-clickonce.md
+  - name: Administration and Diagnostics
+    href: diagnostics/
+  - name: System Requirements
+    href: wcf-system-requirements.md
+  - name: Operating System Resources Required by WCF
+    href: operating-system-resources-required-by-wcf.md
+  - name: Troubleshooting Setup Issues
+    href: troubleshooting-setup-issues.md
+  - name: Migrating from .NET Remoting to WCF
+    href: migrating-from-net-remoting-to-wcf.md
+  - name: Using the WCF Development Tools
+    href: using-the-wcf-development-tools.md
+    items:
+    - name: WCF Service Host (WcfSvcHost.exe)
+      href: wcf-service-host-wcfsvchost-exe.md
+    - name: WCF Test Client (WcfTestClient.exe)
+      href: wcf-test-client-wcftestclient-exe.md
+    - name: WCF Visual Studio Templates
+      href: wcf-vs-templates.md
+    - name: WCF Service Publishing
+      href: wcf-service-publishing.md
+    - name: Renaming a WCF Service
+      href: renaming-a-wcf-service.md
+    - name: Deploying a WCF Library Project
+      href: deploying-a-wcf-library-project.md
+    - name: Controlling Auto-launching of WCF Service Host
+      href: controlling-auto-launching-of-wcf-service-host.md
+    - name: Generating Data Type Classes from XML
+      href: generating-data-type-classes-from-xml.md
+  - name: Windows Communication Foundation Tools
+    href: tools.md
+    items:
+    - name: ServiceModel Metadata Utility Tool (Svcutil.exe)
+      href: servicemodel-metadata-utility-tool-svcutil-exe.md
+    - name: Find Private Key Tool (FindPrivateKey.exe)
+      href: find-private-key-tool-findprivatekey-exe.md
+    - name: ServiceModel Registration Tool (ServiceModelReg.exe)
+      href: servicemodelreg-exe.md
+    - name: Service Trace Viewer Tool (SvcTraceViewer.exe)
+      href: service-trace-viewer-tool-svctraceviewer-exe.md
+    - name: Configuration Editor Tool (SvcConfigEditor.exe)
+      href: configuration-editor-tool-svcconfigeditor-exe.md
+    - name: COM+ Service Model Configuration Tool (ComSvcConfig.exe)
+      href: com-service-model-configuration-tool-comsvcconfig-exe.md
+    - name: WS-AtomicTransaction Configuration Utility (wsatConfig.exe)
+      href: ws-atomictransaction-configuration-utility-wsatconfig-exe.md
+      items:
+      - name: Interpreting Error Codes Returned by wsatConfig.exe
+        href: interpreting-error-codes-returned-by-wsatconfig-exe.md
+    - name: WS-AtomicTransaction Configuration MMC Snap-in
+      href: ws-atomictransaction-configuration-mmc-snap-in.md
+    - name: WorkFlow Service Registration Tool (WFServicesReg.exe)
+      href: workflow-service-registration-tool-wfservicesreg-exe.md
+    - name: Contract-First Tool
+      href: contract-first-tool.md
+  - name: Windows Communication Foundation Samples
+    href: samples/
+  - name: Windows Communication Foundation Glossary
+    href: glossary.md
+  - name: General Reference
+    href: general-reference.md
+  - name: Feedback and Community
+    href: feedback-and-community.md
+  - name: Privacy Information
+    href: privacy-information.md

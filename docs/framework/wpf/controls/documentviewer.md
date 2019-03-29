@@ -16,7 +16,7 @@ The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:
   
  <xref:System.Windows.Documents.FixedDocument>  
   
-## See Also  
- [Documents](../../../../docs/framework/wpf/advanced/documents.md)  
- [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+## See also
+- [Documents](../advanced/documents.md)
+- [Document Serialization and Storage](../advanced/document-serialization-and-storage.md)
+- [Printing Overview](../advanced/printing-overview.md)

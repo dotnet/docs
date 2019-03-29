@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper Interface1"
+title: "ICorDebugStepper Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStepper"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugStepper Interface1
+# ICorDebugStepper Interface
 Represents a step in code execution that is performed by a debugger, serves as an identifier between the issuance and completion of a command, and provides a way to cancel a step.  
   
 ## Methods  
@@ -58,5 +58,5 @@ Represents a step in code execution that is performed by a debugger, serves as a
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -68,8 +68,9 @@ al -out:A.dll A.netmodule -link:N.dll
 gacutil -i A.dll  
 ```  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md)  
- [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md)
+- [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

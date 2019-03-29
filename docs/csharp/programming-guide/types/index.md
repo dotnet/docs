@@ -1,5 +1,6 @@
 ---
-title: "Types (C# Programming Guide)"
+title: "Types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "value types [C#]"
@@ -32,7 +33,7 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
   
  The compiler uses type information to make sure that all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](../../../csharp/language-reference/keywords/int.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](../../../csharp/language-reference/keywords/bool.md), the compiler generates an error, as shown in the following example:  
   
- [!code-csharp[csProgGuideTypes#42](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideTypes#42](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#42)]  
   
 > [!NOTE]
 >  C and C++ developers, notice that in C#, [bool](../../../csharp/language-reference/keywords/bool.md) is not convertible to [int](../../../csharp/language-reference/keywords/int.md).  
@@ -42,11 +43,11 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
 ### Specifying Types in Variable Declarations  
  When you declare a variable or constant in a program, you must either specify its type or use the [var](../../../csharp/language-reference/keywords/var.md) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:  
   
- [!code-csharp[csProgGuideTypes#36](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_2.cs)]  
+ [!code-csharp[csProgGuideTypes#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#36)]  
   
  The types of method parameters and return values are specified in the method signature. The following signature shows a method that requires an [int](../../../csharp/language-reference/keywords/int.md) as an input argument and returns a string:  
   
- [!code-csharp[csProgGuideTypes#35](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_3.cs)]  
+ [!code-csharp[csProgGuideTypes#35](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#35)]  
   
  After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](../../../csharp/language-reference/keywords/int.md) and then assign it a Boolean value of [true](../../../csharp/language-reference/keywords/true-literal.md). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.  
   
@@ -65,10 +66,12 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
   
 -   Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET class library and also your own user-defined types. Types that you define by using the [struct](../../../csharp/language-reference/keywords/struct.md) keyword are value types; all the built-in numeric types are `structs`. Types that you define by using the [class](../../../csharp/language-reference/keywords/class.md) keyword are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.  
   
- The following illustration shows the relationship between value types and reference types in the CTS.  
+ The following illustration shows the relationship between value types and reference types in the CTS.
+
+ The following image shows value types and reference types in the CTS: 
   
- ![Value Types and Reference Types](../../../csharp/programming-guide/types/media/valuetypescts.png "ValueTypesCTS")  
-Value types and reference types in the CTS  
+  
+ ![Screenshot that shows CTS value types and reference types.](./media/index/value-reference-types-common-type-system.png)  
   
 > [!NOTE]
 >  You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it is a value type or reference type.  
@@ -81,8 +84,8 @@ Value types and reference types in the CTS
  The built-in numeric types are structs, and they have properties and methods that you can access:  
   
 ```csharp  
-// Static method on type Byte.  
-byte b = Byte.MaxValue;  
+// Static method on type byte.  
+byte b = byte.MaxValue;
 ```  
   
  But you declare and assign values to them as if they were simple non-aggregate types:  
@@ -97,13 +100,13 @@ char c = 'Z';
   
  You use the [struct](../../../csharp/language-reference/keywords/struct.md) keyword to create your own custom value types. Typically, a struct is used as a container for a small set of related variables, as shown in the following example:  
   
- [!code-csharp[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_4.cs)]  
+ [!code-csharp[csProgGuideObjects#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#1)]  
   
  For more information about structs, see [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md). For more information about value types in .NET, see [Value Types](../../../csharp/language-reference/keywords/value-types.md).  
   
  The other category of value types is [enum](../../../csharp/language-reference/keywords/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:  
  
- [!code-csharp[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_5.cs)]  
+ [!code-csharp[csProgGuideTypes#44](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#44)]  
   
  The `System.IO.FileMode.Create` constant has a value of 2. However, the name is much more meaningful for humans reading the source code, and for that reason it is better to use enumerations instead of constant literal numbers. For more information, see <xref:System.IO.FileMode?displayProperty=nameWithType>.  
   
@@ -126,7 +129,7 @@ IMyInterface iface = new MyClass();
   
  All arrays are reference types, even if their elements are value types. Arrays implicitly derive from the <xref:System.Array?displayProperty=nameWithType> class, but you declare and use them with the simplified syntax that is provided by C#, as shown in the following example:  
   
- [!code-csharp[csProgGuideTypes#45](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_6.cs)]  
+ [!code-csharp[csProgGuideTypes#45](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#45)]  
   
  Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](../../../csharp/language-reference/keywords/sealed.md), and other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md). For more information about inheritance and virtual methods, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
   
@@ -135,7 +138,7 @@ IMyInterface iface = new MyClass();
   
  Because literals are typed, and all types derive ultimately from <xref:System.Object?displayProperty=nameWithType>, you can write and compile code such as the following:  
   
- [!code-csharp[csProgGuideTypes#37](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_7.cs)]  
+ [!code-csharp[csProgGuideTypes#37](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#37)]  
   
 ## Generic Types  
  A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET type <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> has one type parameter that by convention is given the name *T*. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, string:  
@@ -177,8 +180,9 @@ stringList.Add(4);
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)  
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)

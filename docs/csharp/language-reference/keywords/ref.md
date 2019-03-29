@@ -1,6 +1,8 @@
 ---
-title: "ref (C# Reference)"
-ms.date: 03/06/2018
+title: "ref keyword - C# Reference"
+ms.custom: seodec18
+
+ms.date: 10/24/2018
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -12,10 +14,11 @@ helpviewer_keywords:
 
 The `ref` keyword indicates a value that is passed by reference. It is used in four different contexts:
 
-- In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
-- In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
-- In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. See [Ref locals](#ref-locals) for more information.
-- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [Reference semantics with value types](../../reference-semantics-with-value-types.md).
+- In a method signature and in a method call, to pass an argument to a method by reference. For more information, see [Passing an argument by reference](#passing-an-argument-by-reference).
+- In a method signature, to return a value to the caller by reference. For more information, see [Reference return values](#reference-return-values).
+- In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. For more information, see [Ref locals](#ref-locals).
+- In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [ref struct types](#ref-struct-types).
+
 
 ## Passing an argument by reference
 
@@ -26,7 +29,7 @@ When used in a method's parameter list, the `ref` keyword indicates that an argu
 
 To use a `ref` parameter, both the method definition and the calling method must explicitly use the `ref` keyword, as shown in the following example.  
 
-[!code-csharp-interactive[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#1)]
+[!code-csharp-interactive[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#1)]
 
 An argument that is passed to a `ref` or `in` parameter must be initialized before it is passed. This differs from [out](out-parameter-modifier.md) parameters, whose arguments do not have to be explicitly initialized before they are passed.
 
@@ -44,26 +47,24 @@ class CS0663_Example
 
 However, methods can be overloaded when one method has a `ref`, `in`, or `out` parameter and the other has a value parameter, as shown in the following example.
   
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#2)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#2)]
   
  In other situations that require signature matching, such as hiding or overriding, `in`, `ref`, and `out` are part of the signature and don't match each other.  
   
  Properties are not variables. They are methods, and cannot be passed to `ref` parameters.  
   
- For information about how to pass arrays, see [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md).  
-  
  You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:  
   
-- Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
-- Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
+- Async methods, which you define by using the [async](async.md) modifier.  
+- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.  
 
 ## Passing an argument by reference: An example
 
 The previous examples pass value types by reference. You can also use the `ref` keyword to pass reference types by reference. Passing a reference type by reference enables the called method to replace the object to which the reference parameter refers in the caller. The storage location of the object is passed to the method as the value of the reference parameter. If you change the value in the storage location of the parameter (to point to a new object), you also change the storage location to which the caller refers. The following example passes an instance of a reference type as a `ref` parameter.
   
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#3)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#3)]
 
-For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md).
+For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](../../programming-guide/classes-and-structs/passing-reference-type-parameters.md).
   
 ## Reference return values
 
@@ -85,7 +86,9 @@ return ref DecimalArray[0];
 
 In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals).
 
-For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example)
+The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
+
+For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example).
 
 ## Ref locals
 
@@ -107,25 +110,52 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
 
+Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
+
+## Ref readonly locals
+
+A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
+
 ## A ref returns and ref locals example
 
 The following example defines a `Book` class that has two <xref:System.String> fields, `Title` and `Author`. It also defines a `BookCollection` class that includes a private array of `Book` objects. Individual book objects are returned by reference by calling its `GetBookByTitle` method.
 
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#4)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#4)]
 
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
-[!code-csharp[csrefKeywordsMethodParams#6](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
+[!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
 
-## C# Language Specification
+## Ref struct types
+
+Adding the `ref` modifier to a `struct` declaration defines that instances of that type must be stack allocated. In other words, instances of these types can never be created on the
+heap as a member of another class. The primary motivation for this feature was <xref:System.Span%601> and related structures.
+
+The goal of keeping a `ref struct` type as a stack-allocated variable introduces several rules that the compiler enforces for all `ref struct` types.
+
+- You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
+- `ref struct` types cannot implement interfaces.
+- You can't declare a `ref struct` as a member of a class or a normal struct.
+- You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
+- You cannot declare `ref struct` local variables in iterators.
+- You cannot capture `ref struct` variables in lambda expressions or local functions.
+
+These restrictions ensure you don't accidentally use a `ref struct` in a manner that could promote it to the managed heap.
+
+You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref struct` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations.
+
+## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
 
-- [Reference semantics with value types](../../reference-semantics-with-value-types.md)  
-- [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)  
-- [Method Parameters](method-parameters.md)  
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
+- [Write safe efficient code](../../write-safe-efficient-code.md)
+- [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
+- [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
+- [ref assignment operator](../operators/assignment-operator.md#ref-assignment-operator)
+- [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)
+- [Method Parameters](method-parameters.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

@@ -19,7 +19,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
     [assembly: ComVisible(true)]  
     ```  
   
-3.  Compile the managed WCF client as a strong-named assembly. This requires signing with a cryptographic key pair. For more information, see [Signing an Assembly with a Strong Name](http://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
+3.  Compile the managed WCF client as a strong-named assembly. This requires signing with a cryptographic key pair. For more information, see [Signing an Assembly with a Strong Name](https://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
   
 4.  Use the Assembly Registration (Regasm.exe) tool with the `/tlb` option to register the types in the assembly with COM.  
   
@@ -91,5 +91,5 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
   
      This modifies the imported interface definitions so that all methods return an `HResult`. Any other return values are converted into out parameters. The overall execution of the methods remains the same. This allows you to determine the cause of an exception when calling a method on the proxy. This functionality is only available from C++ code.  
   
-## See Also  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+## See also
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

@@ -22,7 +22,6 @@ helpviewer_keywords:
   - "Windows Service applications, lifetime"
 ms.assetid: 1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae
 author: "ghogen"
-manager: "douge"
 ---
 # Introduction to Windows Service Applications
 Microsoft Windows services, formerly known as NT services, enable you to create long-running executable applications that run in their own Windows sessions. These services can be automatically started when the computer boots, can be paused and restarted, and do not show any user interface. These features make services ideal for use on a server or whenever you need long-running functionality that does not interfere with other users who are working on the same computer. You can also run services in the security context of a specific user account that is different from the logged-on user or the default computer account. For more information about services and Windows sessions, see the Windows SDK documentation.  
@@ -75,12 +74,12 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
   
 -   Projects containing Windows services must have installation components for the project and its services. This can be easily accomplished from the **Properties** window. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
   
-## See Also  
- [Windows Service Applications](../../../docs/framework/windows-services/index.md)  
- [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)  
- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)  
- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)  
- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)  
- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+## See also
+- [Windows Service Applications](../../../docs/framework/windows-services/index.md)
+- [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
+- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
+- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)

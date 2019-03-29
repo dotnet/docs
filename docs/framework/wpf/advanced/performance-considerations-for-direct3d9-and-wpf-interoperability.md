@@ -10,7 +10,7 @@ ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd
 You can host Direct3D9 content by using the <xref:System.Windows.Interop.D3DImage> class. Hosting Direct3D9 content can affect the performance of your application. This topic describes best practices to optimize performance when hosting Direct3D9 content in a Windows Presentation Foundation (WPF) application. These best practices include how to use <xref:System.Windows.Interop.D3DImage> and best practices when you are using Windows Vista, Windows XP, and multi-monitor displays.  
   
 > [!NOTE]
->  For code examples that demonstrate these best practices, see [WPF and Direct3D9 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md).  
+>  For code examples that demonstrate these best practices, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md).  
   
 ## Use D3DImage Sparingly  
  Direct3D9 content hosted in a <xref:System.Windows.Interop.D3DImage> instance does not render as fast as in a pure Direct3D application. Copying the surface and flushing the command buffer can be costly operations. As the number of <xref:System.Windows.Interop.D3DImage> instances increases, more flushing occurs, and performance degrades. Therefore, you should use <xref:System.Windows.Interop.D3DImage> sparingly.  
@@ -41,7 +41,7 @@ You can host Direct3D9 content by using the <xref:System.Windows.Interop.D3DImag
 ## Best Practices for Multi-Monitor Displays  
  If you are using a computer that has multiple monitors, you should follow the previously described best practices. There are also some additional performance considerations for a multi-monitor configuration.  
   
- When you create the back buffer, it is created on a specific device and adapter, but WPF may display the front buffer on any adapter. Copying across adapters to update the front buffer can be very expensive. On Windows Vista that is configured to use the WDDM with multiple video cards and with an `IDirect3DDevice9Ex` device, if the front buffer is on a different adapter but still the same video card, there is no performance penalty. However, on Windows XP and the XDDM with multiple video cards, there is a significant performance penalty when the front buffer is displayed on a different adapter than the back buffer. For more information, see [WPF and Direct3D9 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md).  
+ When you create the back buffer, it is created on a specific device and adapter, but WPF may display the front buffer on any adapter. Copying across adapters to update the front buffer can be very expensive. On Windows Vista that is configured to use the WDDM with multiple video cards and with an `IDirect3DDevice9Ex` device, if the front buffer is on a different adapter but still the same video card, there is no performance penalty. However, on Windows XP and the XDDM with multiple video cards, there is a significant performance penalty when the front buffer is displayed on a different adapter than the back buffer. For more information, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md).  
   
 ## Performance Summary  
  The following table shows performance of the front buffer update as a function of operating system, pixel format, and surface lockability. The front buffer and back buffer are assumed to be on the same adapter. Depending on the adapter configuration, hardware updates are generally much faster than software updates.  
@@ -53,8 +53,8 @@ You can host Direct3D9 content by using the <xref:System.Windows.Interop.D3DImag
 |D3DFMT_A8R8G8B8 (not lockable)|**Hardware Update**|Software Update|Software Update|Software Update|  
 |D3DFMT_A8R8G8B8 (lockable)|**Hardware Update**|Software Update|**Hardware Update**|Software Update|  
   
-## See Also  
- <xref:System.Windows.Interop.D3DImage>  
- [WPF and Direct3D9 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md)  
- [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](../../../../docs/framework/wpf/advanced/walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md)  
- [Walkthrough: Hosting Direct3D9 Content in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md)
+## See also
+- <xref:System.Windows.Interop.D3DImage>
+- [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md)
+- [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md)
+- [Walkthrough: Hosting Direct3D9 Content in WPF](walkthrough-hosting-direct3d9-content-in-wpf.md)

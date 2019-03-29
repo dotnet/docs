@@ -63,7 +63,7 @@ You may need to convert an object to a different type.
 - [Convert a string to a `DateTime`](../../standard/base-types/parsing-datetime.md).
 - [Convert a byte array to an int](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
-- [Use `as` and `is` to safely cast to a different type](../programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).
+- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [Define conversion operators for `struct` types](../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md).
 - [Determine if a type is a nullable value type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
 - [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-type-to-an-underlying-type).
@@ -117,7 +117,7 @@ and work with different data sources.
 - [Sort elements of a data source](../programming-guide/concepts/linq/how-to-sort-elements.md).
 - [Sort elements on multiple keys](../programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md).
 - [Control the type of a projection](../programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md).
-- [Count occurences of a value in a source sequence](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
+- [Count occurrences of a value in a source sequence](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
 - [Calculate intermediate values](../programming-guide/concepts/linq/how-to-calculate-intermediate-values.md).
 - [Merge data from multiple sources](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
 - [Find the set difference between two sequences](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).

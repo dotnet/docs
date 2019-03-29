@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAssembly Interface1"
+title: "ICorDebugAssembly Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAssembly"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAssembly Interface1
+# ICorDebugAssembly Interface
+
 Represents an assembly.  
   
 ## Methods  
@@ -44,5 +45,5 @@ Represents an assembly.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -29,7 +29,7 @@ HRESULT GetConfiguration(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConfiguration`  
  [out] A pointer to the address of an [ICorConfiguration](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md) object that can be used to configure the CLR.  
   
@@ -45,5 +45,5 @@ HRESULT GetConfiguration(
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

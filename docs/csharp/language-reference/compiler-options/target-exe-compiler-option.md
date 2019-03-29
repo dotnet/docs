@@ -47,6 +47,7 @@ csc -target:exe in.cs
 csc in.cs  
 ```  
   
-## See Also  
- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+## See also
+
+- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

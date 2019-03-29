@@ -64,7 +64,7 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
  For example, the publication of metadata is configured by using the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> object. The following application configuration file shows the most common usage.  
   
- [!code-csharp[ServiceMetadataBehavior#1](../../../samples/snippets/csharp/VS_Snippets_CFX/servicemetadatabehavior/cs/hostapplication.cs#1)]  
+ [!code-xml[ServiceMetadataBehavior#1](../../../samples/snippets/csharp/VS_Snippets_CFX/servicemetadatabehavior/cs/hostapplication.exe.config#1)]  
   
  The following sections describe many of the most useful system-provided behaviors that you can use to modify the runtime delivery of your service or client. See the reference topic to determine how to use each one.  
   
@@ -114,6 +114,6 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
 -   <xref:System.ServiceModel.TransactionFlowAttribute>. Specifies the level in which a service operation accepts a transaction header.  
   
-## See Also  
- [Configuring Services](../../../docs/framework/wcf/configuring-services.md)  
- [How to: Control Service Instancing](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
+## See also
+- [Configuring Services](../../../docs/framework/wcf/configuring-services.md)
+- [How to: Control Service Instancing](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)

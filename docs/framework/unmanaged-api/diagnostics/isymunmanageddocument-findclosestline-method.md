@@ -29,7 +29,7 @@ HRESULT FindClosestLine(
     [out, retval] ULONG32*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `line`  
  [in] A line in this document.  
   
@@ -39,5 +39,5 @@ HRESULT FindClosestLine(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

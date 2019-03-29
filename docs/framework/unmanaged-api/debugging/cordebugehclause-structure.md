@@ -49,7 +49,7 @@ typedef struct _CorDebugEHClause {
 ## Remarks  
  An array of `CoreDebugEHClause` values is returned by the [GetEHClauses](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md) method.  
   
- The EH clause information is defined by the CLI specification. For more information, see [Standard ECMA-355: Common Language Infrastructure (CLI), 6th Edition](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
+ The EH clause information is defined by the CLI specification. For more information, see [Standard ECMA-355: Common Language Infrastructure (CLI), 6th Edition](https://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
  The `flags` field can contain the following flags. Note that they are not defined in CorDebug.idl or CorDebug.h.  
   
@@ -69,6 +69,6 @@ typedef struct _CorDebugEHClause {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+## See also
+- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

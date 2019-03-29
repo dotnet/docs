@@ -29,7 +29,7 @@ HRESULT IsDebuggerAttached (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] A pointer to a value that is `true` if a managed debugger is attached to the process; otherwise, `false`.  
   
@@ -42,5 +42,5 @@ HRESULT IsDebuggerAttached (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IDebuggerInfo Interface](../../../../docs/framework/unmanaged-api/hosting/idebuggerinfo-interface.md)
+## See also
+- [IDebuggerInfo Interface](../../../../docs/framework/unmanaged-api/hosting/idebuggerinfo-interface.md)

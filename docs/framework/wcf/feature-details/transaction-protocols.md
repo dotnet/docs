@@ -8,16 +8,16 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
 |Specification/Document|Version|Link|  
 |-----------------------------|-------------|----------|  
-|WS-Coordination|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96104](http://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96079](http://go.microsoft.com/fwlink/?LinkId=96079)|  
-|WS-AtomicTransaction|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96080](http://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> http://go.microsoft.com/fwlink/?LinkId=96081|  
+|WS-Coordination|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96104](https://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|WS-AtomicTransaction|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081|  
   
  Interoperability on these protocol specifications is required at two levels: between applications and between transaction managers (see the following figure). Specifications describe in great detail the message formats and message exchange for both interoperability levels. Certain security, reliability, and encodings for application-to-application exchange apply as they do for regular application exchange. However, successful interoperability between transaction managers requires agreement on the particular binding, because it is usually not configured by the user.  
   
  This topic describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
   
- The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2.  
+ The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2:  
   
- ![Transaction Protocols](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
+ ![Screenshot that shows interaction between transaction managers.](./media/transaction-protocols/transaction-managers-flow.gif)  
   
  Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers, (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this topic.  
   
@@ -53,13 +53,13 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
 |Prefix|Version|Namespace URI|  
 |------------|-------------|-------------------|  
-|s11||[http://go.microsoft.com/fwlink/?LinkId=96014](http://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96022](http://go.microsoft.com/fwlink/?LinkId=96022)|  
-|wscoor|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96078](http://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96079](http://go.microsoft.com/fwlink/?LinkId=96079)|  
-|wsat|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96080](http://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96081](http://go.microsoft.com/fwlink/?LinkId=96081)|  
-|t|Pre-1.3<br /><br /> 1.3|[http://go.microsoft.com/fwlink/?LinkId=96082](http://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96100](http://go.microsoft.com/fwlink/?LinkId=96100)|  
-|o||[http://go.microsoft.com/fwlink/?LinkId=96101](http://go.microsoft.com/fwlink/?LinkId=96101)|  
-|xsd||[http://go.microsoft.com/fwlink/?LinkId=96102](http://go.microsoft.com/fwlink/?LinkId=96102)|  
+|s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
+|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
+|wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
+|t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
+|o||[https://go.microsoft.com/fwlink/?LinkId=96101](https://go.microsoft.com/fwlink/?LinkId=96101)|  
+|xsd||[https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)|  
   
 ## Transaction Manager Bindings  
  R1001: Transaction Managers participating in a WS-AT 1.0 transaction must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
@@ -112,7 +112,7 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
  R1232: Outgoing `wscoor:Register` messages must use the `IssuedTokenOverTransport` authentication mode described in [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md).  
   
- The `wsse:Timestamp` element must be signed using the `SecurityContextToken``STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
+ The `wsse:Timestamp` element must be signed using the `SecurityContextToken STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
@@ -281,9 +281,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 <t:IssuedTokens>   
 <wst:RequestSecurityTokenResponse   
 xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"   
-xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-     wssecurity-utility-1.0.xsd"   
-xmlns:wst=http://docs.oasis-open.org/ws-sx/ws-trust/200512  
-xmlns:wsc=http://schemas.xmlsoap.org/ws/2005/02/sc  
+xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"   
+xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"  
+xmlns:wsc="http://schemas.xmlsoap.org/ws/2005/02/sc"  
 xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">  
 <wst:TokenType>http://schemas.xmlsoap.org/ws/2005/02/sc/sct</wst:TokenType>  
 <wst:RequestedSecurityToken>   
@@ -296,14 +296,14 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 <wst:RequestedAttachedReference>   
 <wsse:SecurityTokenReference >   
 <wsse:Reference  
-  ValueType=http://schemas.xmlsoap.org/ws/2005/02/sc/sct  
+  ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"  
   URI="http://fabrikam123.com/SCTi"/>  
 </wsse:SecurityTokenReference>   
 </wst:RequestedAttachedReference>   
 <wst:RequestedUnattachedReference>   
 <wsse:SecurityTokenReference>   
 <wsse:Reference  
- ValueType=http://schemas.xmlsoap.org/ws/2005/02/sc/sct  
+ ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"  
  URI="http://fabrikam123.com/SCTi"/>  
 </wsse:SecurityTokenReference>   
 </wst:RequestedUnattachedReference>   

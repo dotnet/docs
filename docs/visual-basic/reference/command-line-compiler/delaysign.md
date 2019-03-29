@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-delaysign compiler option [Visual Basic]"
   - "-delaysign compiler option [Visual Basic]"
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
-author: rpetrusha
-ms.author: ronpet
 ---
 # -delaysign
 Specifies whether the assembly will be fully or partially signed.  
@@ -39,8 +37,8 @@ Specifies whether the assembly will be fully or partially signed.
   
 3.  Set the value in the **Delay sign only** box.  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)  
- [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)
+- [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

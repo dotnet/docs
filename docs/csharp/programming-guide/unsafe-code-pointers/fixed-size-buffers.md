@@ -1,5 +1,6 @@
 ---
-title: "Fixed Size Buffers (C# Programming Guide)"
+title: "Fixed Size Buffers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "fixed size buffers [C#]"
@@ -28,7 +29,7 @@ A `struct` can contain an embedded array in unsafe code. In the following exampl
 
 The size of the 128 element `char` array is 256 bytes. Fixed size [char](../../language-reference/keywords/char.md) buffers always take two bytes per character, regardless of the encoding. This is true even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
-The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3..
+The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
 
 Another common fixed-size array is the [bool](../../language-reference/keywords/bool.md) array. The elements in a `bool` array are always one byte in size. `bool` arrays are not appropriate for creating bit arrays or buffers.
 
@@ -42,9 +43,9 @@ Unsafe buffers differ from regular arrays in the following ways:
 - The declaration of the array should include a count, such as `char id[8]`. You cannot use `char id[]`.
 - Unsafe buffers can only be instance fields of structs in an unsafe context.
 
-## See Also
+## See also
 
-[C# Programming Guide](../index.md)  
-[Unsafe Code and Pointers](index.md)  
-[fixed Statement](../../language-reference/keywords/fixed-statement.md)  
-[Interoperability](../interop/index.md)
+- [C# Programming Guide](../index.md)
+- [Unsafe Code and Pointers](index.md)
+- [fixed Statement](../../language-reference/keywords/fixed-statement.md)
+- [Interoperability](../interop/index.md)

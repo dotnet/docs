@@ -1,10 +1,10 @@
 ---
 title: "Walkthrough: Binding to Data in Hybrid Applications"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "data binding [WPF interoperability]"
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
@@ -28,14 +28,14 @@ Binding a data source to a control is essential for providing users with access 
   
 -   Binding to the data source.  
   
- For a complete code listing of the tasks illustrated in this walkthrough, see [Data Binding in Hybrid Applications Sample](http://go.microsoft.com/fwlink/?LinkID=159983).  
+ For a complete code listing of the tasks illustrated in this walkthrough, see [Data Binding in Hybrid Applications Sample](https://go.microsoft.com/fwlink/?LinkID=159983).  
   
  When you are finished, you will have an understanding of data binding features in hybrid applications.  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+-   Visual Studio.  
   
 -   Access to the Northwind sample database running on Microsoft SQL Server.  
   
@@ -61,7 +61,7 @@ Binding a data source to a control is essential for providing users with access 
   
 5.  Name the default <xref:System.Windows.Controls.Grid> element `mainGrid` by assigning the <xref:System.Windows.FrameworkElement.Name%2A> property.  
   
-     [!code-xaml[WPFWithWFAndDatabinding#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#8)]  
+     [!code-xaml[WPFWithWFAndDatabinding#8](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#8)]  
   
 ## Defining the Data Template  
  The master list of customers is displayed in a <xref:System.Windows.Controls.ListBox> control. The following code example defines a <xref:System.Windows.DataTemplate> object named `ListItemsTemplate` that controls the visual tree of the <xref:System.Windows.Controls.ListBox> control. This <xref:System.Windows.DataTemplate> is assigned to the <xref:System.Windows.Controls.ListBox> control's <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property.  
@@ -70,7 +70,7 @@ Binding a data source to a control is essential for providing users with access 
   
 -   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
-     [!code-xaml[WPFWithWFAndDatabinding#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#3)]  
+     [!code-xaml[WPFWithWFAndDatabinding#3](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#3)]  
   
 ## Specifying the Form Layout  
  The layout of the form is defined by a grid with three rows and three columns. <xref:System.Windows.Controls.Label> controls are provided to identify each column in the Customers table.  
@@ -79,13 +79,13 @@ Binding a data source to a control is essential for providing users with access 
   
 -   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
-     [!code-xaml[WPFWithWFAndDatabinding#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#4)]  
+     [!code-xaml[WPFWithWFAndDatabinding#4](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#4)]  
   
 #### To set up the Label controls  
   
 -   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
-     [!code-xaml[WPFWithWFAndDatabinding#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#5)]  
+     [!code-xaml[WPFWithWFAndDatabinding#5](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#5)]  
   
 ## Specifying Data Bindings  
  The master list of customers is displayed in a <xref:System.Windows.Controls.ListBox> control. The attached `ListItemsTemplate` binds a <xref:System.Windows.Controls.TextBlock> control to the `ContactName` field from the database.  
@@ -98,7 +98,7 @@ Binding a data source to a control is essential for providing users with access 
   
      The <xref:System.Windows.Data.Binding> class binds the <xref:System.Windows.Controls.TextBox> controls to the appropriate fields in the database.  
   
-     [!code-xaml[WPFWithWFAndDatabinding#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#6)]  
+     [!code-xaml[WPFWithWFAndDatabinding#6](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#6)]  
   
 ## Displaying Data by Using Interoperation  
  The orders corresponding to the selected customer are displayed in a <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> control named `dataGridView1`. The `dataGridView1` control is bound to the data source in the code-behind file. A <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is the parent of this [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.  
@@ -107,7 +107,7 @@ Binding a data source to a control is essential for providing users with access 
   
 -   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
-     [!code-xaml[WPFWithWFAndDatabinding#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#7)]  
+     [!code-xaml[WPFWithWFAndDatabinding#7](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#7)]  
   
 ## Adding the Data Source to the Project  
  With Visual Studio, you can easily add a data source to your project. This procedure adds a strongly typed data set to your project. Several other support classes, such as table adapters for each of the chosen tables, are also added.  
@@ -116,7 +116,7 @@ Binding a data source to a control is essential for providing users with access 
   
 1.  From the **Data** menu, select **Add New Data Source**.  
   
-2.  In the **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see [How to: Connect to Data in a Database](http://msdn.microsoft.com/library/6c56e54e-8834-4297-85aa-cc1a443ba556).  
+2.  In the **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see [How to: Connect to Data in a Database](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fxk9yw1t(v=vs.120)).  
   
 3.  When you are prompted by the **Data Source Configuration Wizard**, save the connection string as `NorthwindConnectionString`.  
   
@@ -133,44 +133,44 @@ Binding a data source to a control is essential for providing users with access 
   
      This code declares the <xref:System.Windows.Forms.BindingSource> component and associated helper classes that connect to the database.  
   
-     [!code-csharp[WPFWithWFAndDatabinding#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#11)]
-     [!code-vb[WPFWithWFAndDatabinding#11](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]  
-  
-3.  Copy the following code into the constructor.  
-  
-     This code creates and initializes the <xref:System.Windows.Forms.BindingSource> component.  
-  
-     [!code-csharp[WPFWithWFAndDatabinding#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#12)]
-     [!code-vb[WPFWithWFAndDatabinding#12](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]  
-  
-4.  Open MainWindow.xaml.  
-  
-5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.  
-  
-6.  In the Properties window, click the **Events** tab.  
-  
-7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.  
-  
-8.  Copy the following code into the <xref:System.Windows.FrameworkElement.Loaded> event handler.  
-  
-     This code assigns the <xref:System.Windows.Forms.BindingSource> component as the data context and populates the `Customers` and `Orders` adapter objects.  
-  
-     [!code-csharp[WPFWithWFAndDatabinding#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#13)]
-     [!code-vb[WPFWithWFAndDatabinding#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#13)]  
-  
-9. Copy the following code into the `MainWindow` class definition.  
-  
-     This method handles the <xref:System.Windows.Data.CollectionView.CurrentChanged> event and updates the current item of the data binding.  
-  
-     [!code-csharp[WPFWithWFAndDatabinding#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#14)]
-     [!code-vb[WPFWithWFAndDatabinding#14](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#14)]  
+     [!code-csharp[WPFWithWFAndDatabinding#11](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#11)]
+     [!code-vb[WPFWithWFAndDatabinding#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]
+
+3.  Copy the following code into the constructor.
+
+     This code creates and initializes the <xref:System.Windows.Forms.BindingSource> component.
+
+     [!code-csharp[WPFWithWFAndDatabinding#12](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#12)]
+     [!code-vb[WPFWithWFAndDatabinding#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]
+
+4.  Open MainWindow.xaml.
+
+5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.
+
+6.  In the Properties window, click the **Events** tab.
+
+7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
+
+8.  Copy the following code into the <xref:System.Windows.FrameworkElement.Loaded> event handler.
+
+     This code assigns the <xref:System.Windows.Forms.BindingSource> component as the data context and populates the `Customers` and `Orders` adapter objects.
+
+     [!code-csharp[WPFWithWFAndDatabinding#13](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#13)]
+     [!code-vb[WPFWithWFAndDatabinding#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#13)]
+
+9. Copy the following code into the `MainWindow` class definition.
+
+     This method handles the <xref:System.Windows.Data.CollectionView.CurrentChanged> event and updates the current item of the data binding.
+
+     [!code-csharp[WPFWithWFAndDatabinding#14](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#14)]
+     [!code-vb[WPFWithWFAndDatabinding#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#14)]  
   
 10. Press F5 to build and run the application.  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)  
- [Data Binding in Hybrid Applications Sample](http://go.microsoft.com/fwlink/?LinkID=159983)  
- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Data Binding in Hybrid Applications Sample](https://go.microsoft.com/fwlink/?LinkID=159983)
+- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
+- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

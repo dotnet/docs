@@ -15,7 +15,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
 > [!IMPORTANT]
 >  The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
   
- The programmable area within a [StatusBar Control](../../../../docs/framework/winforms/controls/statusbar-control-windows-forms.md) control consists of instances of the <xref:System.Windows.Forms.StatusBarPanel> class. These are added through additions to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class.  
+ The programmable area within a [StatusBar Control](statusbar-control-windows-forms.md) control consists of instances of the <xref:System.Windows.Forms.StatusBarPanel> class. These are added through additions to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class.  
   
 ### To add panels to a status bar  
   
@@ -114,11 +114,11 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
        }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.StatusBar>  
- <xref:System.Windows.Forms.ToolStripStatusLabel>  
- [Collection Editor Dialog Box](http://msdn.microsoft.com/library/53fb3aad-bffa-4da5-ac89-8438e6fc803c)  
- [How to: Set the Size of Status-Bar Panels](../../../../docs/framework/winforms/controls/how-to-set-the-size-of-status-bar-panels.md)  
- [Walkthrough: Updating Status Bar Information at Run Time](../../../../docs/framework/winforms/controls/walkthrough-updating-status-bar-information-at-run-time.md)  
- [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)  
- [StatusBar Control Overview](../../../../docs/framework/winforms/controls/statusbar-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.StatusBar>
+- <xref:System.Windows.Forms.ToolStripStatusLabel>
+- [Collection Editor Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xc4yyekt(v=vs.100))
+- [How to: Set the Size of Status-Bar Panels](how-to-set-the-size-of-status-bar-panels.md)
+- [Walkthrough: Updating Status Bar Information at Run Time](walkthrough-updating-status-bar-information-at-run-time.md)
+- [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](determine-which-panel-wf-statusbar-control-was-clicked.md)
+- [StatusBar Control Overview](statusbar-control-overview-windows-forms.md)

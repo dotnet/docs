@@ -12,23 +12,23 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
   
  The topics in this section describe properties and features of the SQL Workflow Instance Store and provide you with details on configuring the store.  
   
- Windows Server App Fabric provides its own instance store and tooling to simplify the configuration and use of the instance store. For more information, see see [Windows Server App Fabric Instance Store](http://go.microsoft.com/fwlink/?LinkId=201201). For more information about the App Fabric SQL Server Persistence Database see [App Fabric SQL Server Persistence Database](http://go.microsoft.com/fwlink/?LinkId=201202)  
+ Windows Server App Fabric provides its own instance store and tooling to simplify the configuration and use of the instance store. For more information, see [Windows Server App Fabric Instance Store](https://go.microsoft.com/fwlink/?LinkId=201201). For more information about the App Fabric SQL Server Persistence Database see [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkId=201202)  
   
 ## In This Section  
   
--   [Properties of SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/properties-of-sql-workflow-instance-store.md)  
+-   [Properties of SQL Workflow Instance Store](properties-of-sql-workflow-instance-store.md)  
   
--   [How to: Enable SQL Persistence for Workflows and Workflow Services](../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)  
+-   [How to: Enable SQL Persistence for Workflows and Workflow Services](how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)  
   
--   [Instance Activation](../../../docs/framework/windows-workflow-foundation/instance-activation.md)  
+-   [Instance Activation](instance-activation.md)  
   
--   [Support for Queries](../../../docs/framework/windows-workflow-foundation/support-for-queries.md)  
+-   [Support for Queries](support-for-queries.md)  
   
--   [Store Extensibility](../../../docs/framework/windows-workflow-foundation/store-extensibility.md)  
+-   [Store Extensibility](store-extensibility.md)  
   
--   [Security](../../../docs/framework/windows-workflow-foundation/security.md)  
+-   [Security](security.md)  
   
--   [SQL Server Persistence Database](../../../docs/framework/windows-workflow-foundation/sql-server-persistence-database.md)  
+-   [SQL Server Persistence Database](sql-server-persistence-database.md)  
   
-## See Also  
- [Persistence Samples](http://go.microsoft.com/fwlink/?LinkID=177735)
+## See also
+- [Persistence Samples](https://go.microsoft.com/fwlink/?LinkID=177735)

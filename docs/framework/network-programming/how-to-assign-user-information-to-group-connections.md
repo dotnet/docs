@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # How to: Assign User Information to Group Connections
 
@@ -105,6 +102,6 @@ Dim myWebResponse As WebResponse = myWebRequest.GetResponse()
 MyWebResponse.Close()  
 ```  
   
-## See Also  
- [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)  
- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)
+## See also
+- [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)
+- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)

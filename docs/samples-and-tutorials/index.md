@@ -1,19 +1,14 @@
 ---
-title: Samples and tutorials
+title: .NET samples and tutorials
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
-keywords: .NET, .NET Core, ASP.NET, C#, sample, tutorial
 author: BillWagner
 ms.author: wiwagn
 ms.date: 04/11/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: dotnet
-ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 ---
 
-# Samples and tutorials
+# .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://www.microsoft.com/net/learn/in-browser-tutorial/1) and continue with [C# interactive quickstarts](../csharp/quick-starts/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://www.microsoft.com/net/learn/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
 
 ## .NET Core
 
@@ -61,6 +56,10 @@ This sample demonstrates many of the problems that can be solved by using Expres
 
 This series of samples demonstrate many of the features of Language Integrated Query (LINQ). The [completed sample](https://github.com/dotnet/samples/tree/master/core/linq/csharp) is available in the dotnet/samples repository on GitHub.
 
+**Microsoft Office PIA Sample**
+
+The [ExcelDemo](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo) sample demonstrates the consumption of [Microsoft Office PIAs](/visualstudio/vsto/office-primary-interop-assemblies) in .NET Core.
+
 ### Tutorials
 
 **[Console Application](../csharp/tutorials/console-teleprompter.md)**
@@ -75,10 +74,6 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
 
-**[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
-
-This tutorial demonstrates building an ASP.NET Core microservice and hosting it in Docker. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/WeatherMicroservice) is available in the dotnet/samples repository on GitHub.
-
 **[Getting started with .NET Core on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs.md)**
 
 This tutorial shows you how to build a simple .NET Core console app using Visual Studio for Mac.
@@ -86,6 +81,10 @@ This tutorial shows you how to build a simple .NET Core console app using Visual
 **[Building a complete .NET Core solution on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
 
 This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
+
+**[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
+
+This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
 
 ## Deploying to containers
 

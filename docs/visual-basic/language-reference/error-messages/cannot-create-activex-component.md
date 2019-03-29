@@ -12,6 +12,6 @@ You tried to place an ActiveX control on a form at design time or add a form to 
   
 -   The information in the registry may have been deleted or corrupted. Reinstall the ActiveX control or contact the control vendor.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+## See also
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

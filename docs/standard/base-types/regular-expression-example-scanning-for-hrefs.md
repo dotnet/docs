@@ -38,7 +38,7 @@ The following example searches an input string and displays all the href="…" v
 |`\s*`|Match zero or more white-space characters.|  
 |`=`|Match the equals sign.|  
 |`\s*`|Match zero or more white-space characters.|  
-|<code>(?:\["'\](?<1>\[^"'\]*)["']&#124;(?<1>\S+))</code>|Match one of the following without assigning the result to a captured group:<br /> <ul><li><p>A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.</p></li><li><p>One or more non-white-space characters. The group named `1` is included in this pattern.</p></li></ul>|  
+|`(?:\["'\](?<1>\[^"'\]*)["']|(?<1>\S+))`|Match one of the following without assigning the result to a captured group:<br /> <ul><li><p>A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.</p></li><li><p>One or more non-white-space characters. The group named `1` is included in this pattern.</p></li></ul>|  
 |`(?<1>[^"']*)`|Assign zero or more occurrences of any character other than a quotation mark or apostrophe to the capturing group named `1`.|  
 |`(?<1>\S+)`|Assign one or more non-white-space characters to the capturing group named `1`.|  
   
@@ -50,5 +50,6 @@ The following example searches an input string and displays all the href="…" v
   
  To address these problems, the <xref:System.Text.RegularExpressions.Regex> class supports the syntax `(?<name>…)` for capturing a match into a specified slot (the slot can be named using a string or an integer; integers can be recalled more quickly). Thus, alternative matches for the same string all can be directed to the same place. In case of a conflict, the last match dropped into a slot is the successful match. (However, a complete list of multiple matches for a single slot is available. See the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection for details.)  
   
-## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

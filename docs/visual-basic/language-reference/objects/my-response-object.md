@@ -19,8 +19,8 @@ Gets the <xref:System.Web.HttpResponse> object associated with the <xref:System.
 ## Example  
  The following example gets the header collection from the `My.Request` object and uses the `My.Response` object to write it to the ASP.NET page.  
   
- [!code-vb[VbVbalrMyWeb#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-response-object_1.aspx)]  
+ [!code-vb[VbVbalrMyWeb#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWeb/VB/Default.aspx#1)]  
   
-## See Also  
- <xref:System.Web.HttpResponse>  
- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
+## See also
+- <xref:System.Web.HttpResponse>
+- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)

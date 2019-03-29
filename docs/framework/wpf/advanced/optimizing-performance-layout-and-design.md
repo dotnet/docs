@@ -43,7 +43,7 @@ The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharpt
 ### Use the Most Efficient Panel where Possible  
  The complexity of the layout process is directly based on the layout behavior of the <xref:System.Windows.Controls.Panel>-derived elements you use. For example, a <xref:System.Windows.Controls.Grid> or <xref:System.Windows.Controls.StackPanel> control provides much more functionality than a <xref:System.Windows.Controls.Canvas> control. The price for this greater increase in functionality is a greater increase in performance costs. However, if you do not require the functionality that a <xref:System.Windows.Controls.Grid> control provides, you should use the less costly alternatives, such as a <xref:System.Windows.Controls.Canvas> or a custom panel.  
   
- For more information, see [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md).  
+ For more information, see [Panels Overview](../controls/panels-overview.md).  
   
 ### Update Rather than Replace a RenderTransform  
  You may be able to update a <xref:System.Windows.Media.Transform> rather than replacing it as the value of a <xref:System.Windows.UIElement.RenderTransform%2A> property. This is particularly true in scenarios that involve animation. By updating an existing <xref:System.Windows.Media.Transform>, you avoid initiating an unnecessary layout calculation.  
@@ -58,19 +58,19 @@ The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharpt
   
  The following code example demonstrates how to create a tree top down.  
   
- [!code-csharp[Performance#PerformanceSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet1)]
- [!code-vb[Performance#PerformanceSnippet1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet1)]  
+ [!code-csharp[Performance#PerformanceSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet1)]
+ [!code-vb[Performance#PerformanceSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet1)]  
   
- For more information on the logical tree, see [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md).  
+ For more information on the logical tree, see [Trees in WPF](trees-in-wpf.md).  
   
-## See Also  
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+## See also
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [Planning for Application Performance](planning-for-application-performance.md)
+- [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)
+- [2D Graphics and Imaging](optimizing-performance-2d-graphics-and-imaging.md)
+- [Object Behavior](optimizing-performance-object-behavior.md)
+- [Application Resources](optimizing-performance-application-resources.md)
+- [Text](optimizing-performance-text.md)
+- [Data Binding](optimizing-performance-data-binding.md)
+- [Other Performance Recommendations](optimizing-performance-other-recommendations.md)
+- [Layout](layout.md)

@@ -1,10 +1,10 @@
 ---
-title: "&lt;factorySettings&gt;"
+title: "<factorySettings>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 202aad17-1b8b-4c87-ad57-4ca5de18ed35
 ---
-# &lt;factorySettings&gt;
+# \<factorySettings>
 Specifies the settings of the channel factory cache.  
   
 \<system.ServiceModel>  
@@ -82,9 +82,9 @@ Specifies the settings of the channel factory cache.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.SendMessageChannelCache>  
- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>  
- <xref:System.ServiceModel.Activities.Send>  
- <xref:System.ServiceModel.Activities.ChannelCacheSettings>  
- [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)
+## See also
+- <xref:System.ServiceModel.Activities.SendMessageChannelCache>
+- <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>
+- <xref:System.ServiceModel.Activities.Send>
+- <xref:System.ServiceModel.Activities.ChannelCacheSettings>
+- [Changing the Cache Sharing Levels for Send Activities](../../../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md)

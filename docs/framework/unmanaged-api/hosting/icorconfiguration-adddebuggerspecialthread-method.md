@@ -29,7 +29,7 @@ HRESULT AddDebuggerSpecialThread (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpecialThreadId`  
  [in] The ID of the thread that should be allowed to continue executing.  
   
@@ -45,5 +45,5 @@ HRESULT AddDebuggerSpecialThread (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
+## See also
+- [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

@@ -118,5 +118,6 @@ doc.DocumentElement.SetAttributeNode(attr);
 ## Attribute Child Nodes  
  The value of an attribute node becomes its child nodes. There are only two types of valid child nodes: **XmlText** nodes, and **XmlEntityReference** nodes. These are child nodes in the sense that methods such as **FirstChild** and **LastChild** process them as child nodes. This distinction of an attribute having child nodes is important when trying to remove attributes or attribute child nodes. For more information, see [Removing Attributes from an Element Node in the DOM](../../../../docs/standard/data/xml/removing-attributes-from-an-element-node-in-the-dom.md).  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

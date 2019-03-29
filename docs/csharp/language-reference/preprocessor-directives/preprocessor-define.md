@@ -1,5 +1,7 @@
 ---
-title: "#define (C# Reference)"
+title: "#define - C# Reference"
+ms.custom: seodec18
+
 ms.date: 06/30/2018
 f1_keywords: 
   - "#define"
@@ -57,12 +59,12 @@ public class TestDefine
   
  For an example of how to undefine a symbol, see [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)  
-- [const](../../../csharp/language-reference/keywords/const.md)  
-- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)  
-- [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [const](../../../csharp/language-reference/keywords/const.md)
+- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)
+- [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)
 - [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)

@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "TransportWithMessageCredentials"
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Use Transport Security and Message Credentials
 Securing a service with both transport and message credentials uses the best of both Transport and Message security modes in Windows Communication Foundation (WCF). In sum, transport-layer security provides integrity and confidentiality, while message-layer security provides a variety of credentials that are not possible with strict transport security mechanisms. This topic shows the basic steps for implementing transport with message credentials using the <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding> bindings. For more information about setting the security mode, see [How to: Set the Security Mode](../../../../docs/framework/wcf/how-to-set-the-security-mode.md).  
@@ -156,7 +154,7 @@ Securing a service with both transport and message credentials uses the best of 
     </bindings>  
     ```  
   
-## See Also  
- [How to: Set the Security Mode](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)  
- [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+- [How to: Set the Security Mode](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)
+- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModuleBreakpoint Interface1"
+title: "ICorDebugModuleBreakpoint Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugModuleBreakpoint"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugModuleBreakpoint Interface1
+# ICorDebugModuleBreakpoint Interface
+
 Provides access to specific modules. This interface is a subclass of the ICorDebugBreakpoint interface.  
   
 ## Methods  
@@ -40,5 +41,5 @@ Provides access to specific modules. This interface is a subclass of the ICorDeb
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

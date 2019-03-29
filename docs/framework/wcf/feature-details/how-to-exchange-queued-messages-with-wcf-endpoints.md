@@ -18,7 +18,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
      [!code-csharp[S_Msmq_Transacted#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#1)]
      [!code-vb[S_Msmq_Transacted#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/service.vb#1)]  
   
-2.  When the service contract passes user-defined types, you must define data contracts for those types. The following code shows two data contracts, `PurchaseOrder` and `PurchaseOrderLineItem`. These two types define data that is sent to the service. (Note that the classes that define this data contract also define a number of methods. These methods are not considered part of the data contract. Only those members that are declared with the `DataMember` attribute are part of the data contract.)  
+2.  When the service contract passes user-defined types, you must define data contracts for those types. The following code shows two data contracts, `PurchaseOrder` and `PurchaseOrderLineItem`. These two types define data that is sent to the service. (Note that the classes that define this data contract also define a number of methods. These methods are not considered part of the data contract. Only those members that are declared with the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute are part of the data contract.)  
   
      [!code-csharp[S_Msmq_Transacted#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#2)]
      [!code-vb[S_Msmq_Transacted#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/service.vb#2)]  
@@ -35,7 +35,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
      [!code-csharp[S_Msmq_Transacted#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/hostapp.cs#4)]
      [!code-vb[S_Msmq_Transacted#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/hostapp.vb#4)]  
   
-5.  Define a <xref:System.ServiceModel.Description.ServiceEndpoint> in configuration that specifies the service address and uses the standard <xref:System.ServiceModel.NetMsmqBinding> binding. For more information about using WCF configuration, see [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
+5.  Define a <xref:System.ServiceModel.Description.ServiceEndpoint> in configuration that specifies the service address and uses the standard <xref:System.ServiceModel.NetMsmqBinding> binding. For more information about using WCF configuration, see [Configuring WCF services](../configuring-services.md).  
   
   
   
@@ -77,13 +77,12 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
   
   
   
-## See Also  
- <xref:System.ServiceModel.NetMsmqBinding>  
- [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
- [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  
- [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
- [Message Queuing Integration Binding Samples](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
- [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  
- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
+## See also
+- <xref:System.ServiceModel.NetMsmqBinding>
+- [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)
+- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
+- [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)
+- [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)
+- [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)
+- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)

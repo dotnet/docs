@@ -16,7 +16,7 @@ When sending large messages using Windows Communication Foundation (WCF), it is 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\ChunkingChannel`  
   
@@ -68,7 +68,7 @@ interface ITestService
 <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
             xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
-<!—Original message action is replaced with a chunking-specific action. -->  
+<!--Original message action is replaced with a chunking-specific action. -->  
     <a:Action s:mustUnderstand="1">http://samples.microsoft.com/chunkingAction</a:Action>  
 <!--  
 Original message is assigned a unique id that is transmitted   
@@ -195,11 +195,11 @@ as the ChunkingStart message.
 ## Chunking Channel Architecture  
  The chunking channel is an `IDuplexSessionChannel` that, at a high level, follows the typical channel architecture. There is a `ChunkingBindingElement` that can build a `ChunkingChannelFactory` and a `ChunkingChannelListener`. The `ChunkingChannelFactory` creates instances of `ChunkingChannel` when it is asked to. The `ChunkingChannelListener` creates instances of `ChunkingChannel` when a new inner channel is accepted. The `ChunkingChannel` itself is responsible for sending and receiving messages.  
   
- At the next level down, `ChunkingChannel` relies on several components to implement the chunking protocol. On the send side, the channel uses a custom `XmlDictionaryWriter` called `ChunkingWriter` that does the actual chunking. `ChunkingWriter` uses the inner channel directly to send chunks. Using a custom `XmlDictionaryWriter` allows us to send out chunks as the large body of the original message is being written. This means we do not buffer the entire original message.  
+ At the next level down, `ChunkingChannel` relies on several components to implement the chunking protocol. On the send side, the channel uses a custom <xref:System.Xml.XmlDictionaryWriter> called `ChunkingWriter` that does the actual chunking. `ChunkingWriter` uses the inner channel directly to send chunks. Using a custom `XmlDictionaryWriter` allows us to send out chunks as the large body of the original message is being written. This means we do not buffer the entire original message.  
   
  ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel1.gif "ChunkingChannel1")  
   
- On the receive side, `ChunkingChannel` pulls messages from the inner channel and hands them to a custom `XmlDictionaryReader` called `ChunkingReader`, which reconstitutes the original message from the incoming chunks. `ChunkingChannel` wraps this `ChunkingReader` in a custom `Message` implementation called `ChunkingMessage` and returns this message to the layer above. This combination of `ChunkingReader` and `ChunkingMessage` allows us to de-chunk the original message body as it is being read by the layer above instead of having to buffer the entire original message body. `ChunkingReader` has a queue where it buffers incoming chunks up to a maximum configurable number of buffered chunks. When this maximum limit is reached, the reader waits for messages to be drained from the queue by the layer above (that is, by just reading from the original message body) or until the maximum receive timeout is reached.  
+ On the receive side, `ChunkingChannel` pulls messages from the inner channel and hands them to a custom <xref:System.Xml.XmlDictionaryReader> called `ChunkingReader`, which reconstitutes the original message from the incoming chunks. `ChunkingChannel` wraps this `ChunkingReader` in a custom `Message` implementation called `ChunkingMessage` and returns this message to the layer above. This combination of `ChunkingReader` and `ChunkingMessage` allows us to de-chunk the original message body as it is being read by the layer above instead of having to buffer the entire original message body. `ChunkingReader` has a queue where it buffers incoming chunks up to a maximum configurable number of buffered chunks. When this maximum limit is reached, the reader waits for messages to be drained from the queue by the layer above (that is, by just reading from the original message body) or until the maximum receive timeout is reached.  
   
  ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel2.gif "ChunkingChannel2")  
   
@@ -242,7 +242,7 @@ interface ITestService
   
 -   The timeout passed to Send is used as the timeout for the entire send operation which includes sending all of the chunks.  
   
--   The custom `XmlDictionaryWriter` design was chosen to avoid buffering the entire original message body. If we were to get an `XmlDictionaryReader` on the body using `message.GetReaderAtBodyContents` the entire body would be buffered. Instead, we have a custom `XmlDictionaryWriter` that is passed to `message.WriteBodyContents`. As the message calls WriteBase64 on the writer, the writer packages up chunks into messages and sends them using the inner channel. WriteBase64 blocks until the chunk is sent.  
+-   The custom <xref:System.Xml.XmlDictionaryWriter> design was chosen to avoid buffering the entire original message body. If we were to get an <xref:System.Xml.XmlDictionaryReader> on the body using `message.GetReaderAtBodyContents` the entire body would be buffered. Instead, we have a custom  <xref:System.Xml.XmlDictionaryWriter> that is passed to `message.WriteBodyContents`. As the message calls WriteBase64 on the writer, the writer packages up chunks into messages and sends them using the inner channel. WriteBase64 blocks until the chunk is sent.  
   
 ## Implementing the Receive Operation  
  At a high level, the Receive operation first checks that the incoming message is not `null` and that its action is the `ChunkingAction`. If it does not meet both criteria, the message is returned unchanged from Receive. Otherwise, Receive creates a new `ChunkingReader` and a new `ChunkingMessage` wrapped around it (by calling `GetNewChunkingMessage`). Before returning that new `ChunkingMessage`, Receive uses a threadpool thread to execute `ReceiveChunkLoop`, which calls `innerChannel.Receive` in a loop and hands off chunks to the `ChunkingReader` until the end chunk message is received or the receive timeout is hit.  
@@ -265,7 +265,7 @@ interface ITestService
  `OnOpen` calls `innerChannel.Open` to open the inner channel.  
   
 ### OnClose  
- `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped``ManualResetEvent`, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
+ `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped` <xref:System.Threading.ManualResetEvent>, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
   
 ### OnAbort  
  `OnAbort` calls `innerChannel.Abort` to abort the inner channel. If there is a pending `ReceiveChunkLoop` it gets an exception from the pending `innerChannel.Receive` call.  
@@ -372,4 +372,4 @@ Service started, press enter to exit
  > Sent chunk 10 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
 ```  
   
-## See Also
+## See also

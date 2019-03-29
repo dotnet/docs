@@ -1,14 +1,13 @@
 ---
 title: "Field Design"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "fields, design guidelines"
   - "read-only fields"
   - "member design guidelines, fields"
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Field Design
 The principle of encapsulation is one of the most important notions in object-oriented design. This principle states that data stored inside an object should be accessible only to that object.  
@@ -37,6 +36,7 @@ The principle of encapsulation is one of the most important notions in object-or
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

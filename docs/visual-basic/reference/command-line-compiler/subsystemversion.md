@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-subsystemversion compiler option [Visual Basic]"
   - "subsystemversion compiler option [Visual Basic]"
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
-author: rpetrusha
-ms.author: ronpet
 ---
 # -subsystemversion (Visual Basic)
 Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren’t available with older versions of Windows.  
@@ -21,7 +19,7 @@ Specifies the minimum version of the subsystem on which the generated executable
 -subsystemversion:major.minor  
 ```  
   
-#### Parameters  
+## Parameters  
  `major.minor`  
  The minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7 if you set the value of this option to 6.01, as the table later in this topic describes. You must specify the values for `major` and `minor` as integers.  
   
@@ -60,7 +58,7 @@ Specifies the minimum version of the subsystem on which the generated executable
   
 
   
-## See Also  
-[Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 
-[MSBuild Properties](/visualstudio/msbuild/msbuild-properties)
+- [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

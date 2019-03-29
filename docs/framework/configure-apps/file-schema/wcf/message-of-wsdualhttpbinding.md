@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;wsDualHttpBinding&gt;"
+title: "<message> of <wsDualHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
 ---
-# &lt;message&gt; of &lt;wsDualHttpBinding&gt;
+# \<message> of \<wsDualHttpBinding>
 Defines message-level security for the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -16,11 +16,10 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 ## Syntax  
   
 ```xml  
-<message   
-      clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-     negotiateServiceCredential="Boolean"  
-   algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"/>  
-</message>  
+<message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+         negotiateServiceCredential="Boolean"
+         algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+</message>
 ```  
   
 ## Type  
@@ -46,7 +45,7 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 |Basic256|Use Aes256 encryption, Sha1 for message digest, Rsa-oaep-mgf1p for key wrap.|  
 |Basic256Rsa15|Use Aes256 for message encryption, Sha1 for message digest and Rsa15 for key wrap.|  
 |Basic192Rsa15|Use Aes192 for message encryption, Sha1 for message digest and Rsa15 for key wrap.|  
-|TripleDes|Use TripleDes encryption, , Sha1 for message digest, Rsa-oaep-mgf1p for key wrap.|  
+|TripleDes|Use TripleDes encryption, Sha1 for message digest, Rsa-oaep-mgf1p for key wrap.|  
 |Basic128Rsa15|Use Aes128 for message encryption, Sha1 for message digest and Rsa15 for key wrap.|  
 |TripleDesRsa15|Use TripleDes encryption, Sha1 for message digest and Rsa15 for key wrap.|  
 |Basic128Sha256|Use Aes256 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
@@ -77,13 +76,13 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md)|Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>  
- <xref:System.ServiceModel.MessageSecurityOverHttp>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>
+- <xref:System.ServiceModel.MessageSecurityOverHttp>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

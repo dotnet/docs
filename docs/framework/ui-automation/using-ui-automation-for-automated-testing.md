@@ -6,13 +6,10 @@ helpviewer_keywords:
   - "testing, UI Automation"
   - "UI Automation, automated testing"
 ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # Using UI Automation for Automated Testing
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This overview describes how [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] can be useful as a framework for programmatic access in automated testing scenarios.  
   
@@ -108,5 +105,5 @@ manager: "markl"
 ## Security  
  For security information, see [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md).  
   
-## See Also  
- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)
+## See also
+- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

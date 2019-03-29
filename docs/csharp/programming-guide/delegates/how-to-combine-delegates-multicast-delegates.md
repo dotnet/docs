@@ -1,5 +1,6 @@
 ---
-title: "How to: Combine Delegates (Multicast Delegates)(C# Programming Guide)"
+title: "How to: Combine Delegates (Multicast Delegates)- C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], combining"
@@ -12,9 +13,10 @@ This example demonstrates how to create multicast delegates. A useful property o
  The `-` operator can be used to remove a component delegate from a multicast delegate.  
   
 ## Example  
- [!code-csharp[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-combine-delegates-multicast-delegates_1.cs)]  
+ [!code-csharp[csProgGuideDelegates#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#11)]  
   
-## See Also  
- <xref:System.MulticastDelegate>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)
+## See also
+
+- <xref:System.MulticastDelegate>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)

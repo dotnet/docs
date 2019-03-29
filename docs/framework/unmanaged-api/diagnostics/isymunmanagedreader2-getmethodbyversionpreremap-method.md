@@ -30,7 +30,7 @@ HRESULT GetMethodByVersionPreRemap(
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `token`  
  [in] The method metadata token.  
   
@@ -46,5 +46,5 @@ HRESULT GetMethodByVersionPreRemap(
 ## Requirements  
  **Header:** CorSym.idl. CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+## See also
+- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

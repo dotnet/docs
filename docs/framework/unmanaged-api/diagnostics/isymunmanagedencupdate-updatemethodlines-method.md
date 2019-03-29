@@ -30,7 +30,7 @@ HRESULT UpdateMethodLines(
     [in]  ULONG        cDeltas);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata of the method token.  
   
@@ -46,5 +46,5 @@ HRESULT UpdateMethodLines(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+## See also
+- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

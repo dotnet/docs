@@ -33,7 +33,7 @@ When you call a procedure, you follow the procedure name with an argument list i
   
      The following example calls the Visual Basic <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> function.  
   
-     [!code-vb[VbVbcnProcedures#34](./codesnippet/VisualBasic/how-to-pass-arguments-to-a-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#34)]  
   
      The preceding example supplies the required first argument, which is the message string to be displayed. It omits an argument for the optional second parameter, which specifies the buttons to be displayed on the message box. Because the call does not supply a value, `MsgBox` uses the default value, `MsgBoxStyle.OKOnly`, which displays only an **OK** button.  
   
@@ -41,13 +41,13 @@ When you call a procedure, you follow the procedure name with an argument list i
   
 ## See also
 
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)  
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
- [Recursive Procedures](./recursive-procedures.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)  
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)
+- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
+- [Recursive Procedures](./recursive-procedures.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)

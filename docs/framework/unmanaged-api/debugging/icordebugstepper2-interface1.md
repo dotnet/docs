@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper2 Interface1"
+title: "ICorDebugStepper2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStepper2"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugStepper2 Interface1
+# ICorDebugStepper2 Interface
 Provides support for just my code (JMC) debugging.  
   
 ## Methods  
@@ -40,5 +40,5 @@ Provides support for just my code (JMC) debugging.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

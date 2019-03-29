@@ -29,7 +29,7 @@ HRESULT GetCachedWinRTTypes (
 ;  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppGuidToTypeEnum`  
  [out] A pointer to an [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md) interface object that can enumerate the managed representations of [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types currently loaded in the application domain.  
   
@@ -42,5 +42,5 @@ HRESULT GetCachedWinRTTypes (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugAppDomain3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain3-interface.md)
+## See also
+- [ICorDebugAppDomain3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain3-interface.md)

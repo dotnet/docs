@@ -35,9 +35,9 @@ Network administrators often field complaints from users about print jobs that d
   
  Next the application loops through the <xref:System.Printing.PrintSystemJobInfo> collection and compares each <xref:System.Printing.PrintSystemJobInfo.Submitter%2A> property with the alias of the complaining user. If they match, the application adds identifying information about the job to the string that will be presented. (The `userName` and `jobList` variables are initialized earlier in the application.)  
   
- [!code-cpp[DiagnoseProblematicPrintJob#EnumerateJobsInQueues](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#enumeratejobsinqueues)]
- [!code-csharp[DiagnoseProblematicPrintJob#EnumerateJobsInQueues](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#enumeratejobsinqueues)]
- [!code-vb[DiagnoseProblematicPrintJob#EnumerateJobsInQueues](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#enumeratejobsinqueues)]  
+ [!code-cpp[DiagnoseProblematicPrintJob#EnumerateJobsInQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#enumeratejobsinqueues)]
+ [!code-csharp[DiagnoseProblematicPrintJob#EnumerateJobsInQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#enumeratejobsinqueues)]
+ [!code-vb[DiagnoseProblematicPrintJob#EnumerateJobsInQueues](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#enumeratejobsinqueues)]  
   
  The next code example picks up the application at Step 2. (See above.) The problematic job has been identified and the application prompts for the information that will identify it. From this information it creates <xref:System.Printing.PrintServer>, <xref:System.Printing.PrintQueue>, and <xref:System.Printing.PrintSystemJobInfo> objects.  
   
@@ -47,39 +47,39 @@ Network administrators often field complaints from users about print jobs that d
   
 -   You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
   
- This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](../../../../docs/framework/wpf/advanced/how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
+ This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
   
- [!code-cpp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#identifyanddiagnoseproblematicjob)]
- [!code-csharp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#identifyanddiagnoseproblematicjob)]
- [!code-vb[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#identifyanddiagnoseproblematicjob)]  
+ [!code-cpp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#identifyanddiagnoseproblematicjob)]
+ [!code-csharp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#identifyanddiagnoseproblematicjob)]
+ [!code-vb[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#identifyanddiagnoseproblematicjob)]  
   
  To check print job status using the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintJobStatus>, the [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md), and <xref:System.FlagsAttribute>.  
   
  For each attribute whose bit is set, the code reports this to the console screen and sometimes suggests a way to respond. (The **HandlePausedJob** method that is called if the job or queue is paused is discussed below.)  
   
- [!code-cpp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#spottroubleusingjobattributes)]
- [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobattributes)]
- [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobattributes)]  
+ [!code-cpp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#spottroubleusingjobattributes)]
+ [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobattributes)]
+ [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobattributes)]  
   
  To check print job status using separate properties, you simply read each property and, if the property is `true`, report to the console screen and possibly suggest a way to respond. (The **HandlePausedJob** method that is called if the job or queue is paused is discussed below.)  
   
- [!code-cpp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#spottroubleusingjobproperties)]
- [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobproperties)]
- [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobproperties)]  
+ [!code-cpp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#spottroubleusingjobproperties)]
+ [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobproperties)]
+ [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobproperties)]  
   
  The **HandlePausedJob** method enables the application's user to remotely resume paused jobs. Because there might be a good reason why the print queue was paused, the method begins by prompting for a user decision about whether to resume it. If the answer is "Y", then the <xref:System.Printing.PrintQueue.Resume%2A?displayProperty=nameWithType> method is called.  
   
  Next the user is prompted to decide if the job itself should be resumed, just in case it is paused independently of the print queue. (Compare <xref:System.Printing.PrintQueue.IsPaused%2A?displayProperty=nameWithType> and <xref:System.Printing.PrintSystemJobInfo.IsPaused%2A?displayProperty=nameWithType>.) If the answer is "Y", then <xref:System.Printing.PrintSystemJobInfo.Resume%2A?displayProperty=nameWithType> is called; otherwise <xref:System.Printing.PrintSystemJobInfo.Cancel%2A> is called.  
   
- [!code-cpp[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#handlepausedjob)]
- [!code-csharp[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#handlepausedjob)]
- [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
+ [!code-cpp[DiagnoseProblematicPrintJob#HandlePausedJob](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#handlepausedjob)]
+ [!code-csharp[DiagnoseProblematicPrintJob#HandlePausedJob](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#handlepausedjob)]
+ [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
-## See Also  
- <xref:System.Printing.PrintJobStatus>  
- <xref:System.Printing.PrintSystemJobInfo>  
- <xref:System.FlagsAttribute>  
- <xref:System.Printing.PrintQueue>  
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+## See also
+- <xref:System.Printing.PrintJobStatus>
+- <xref:System.Printing.PrintSystemJobInfo>
+- <xref:System.FlagsAttribute>
+- <xref:System.Printing.PrintQueue>
+- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)

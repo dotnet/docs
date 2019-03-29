@@ -32,5 +32,6 @@ The following topics provide step-by-step instructions for performing specific f
   
 -   [How to: Display Dates in Non-Gregorian Calendars](../../../docs/standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md)  
   
-## See Also  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+## See also
+
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

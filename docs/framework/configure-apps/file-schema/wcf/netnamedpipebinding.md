@@ -1,9 +1,9 @@
 ---
-title: "&lt;netNamedPipeBinding&gt;"
+title: "<netNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 00a8580b-face-47a4-838d-b9fed48e72df
 ---
-# &lt;netNamedPipeBinding&gt;
+# \<netNamedPipeBinding>
 Defines a binding that is secure, reliable, optimized for on-machine cross process communication. By default, it generates a runtime communication stack with WS-ReliableMessaging for reliability, transport security for transfer security, named pipes for message delivery, and binary message encoding.  
   
  \<system.ServiceModel>  
@@ -13,26 +13,30 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 ## Syntax  
   
 ```xml  
-<netNamedPipeBinding>  
-   <binding   
-      closeTimeout="TimeSpan"  
-      hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-      maxBufferPoolSize="Integer"  
-      maxBufferSize="Integer"  
-      maxConnections="Integer"   
-      maxReceivedMessageSize="Integer"  
-            name="string"  
-      openTimeout="TimeSpan"   
-      receiveTimeout="TimeSpan"  
-      sendTimeout="TimeSpan"  
-      transactionFlow="Boolean"  
-      transactionProtocol="OleTransactions/WS-AtomicTransactionOctober2004"  
-            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-      <security mode="None/Transport">  
-            <transport  protectionLevel="None/Sign/EncryptAndSign" />  
-      </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
-</netNamedPipeBinding>  
+<netNamedPipeBinding>
+  <binding closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="Integer"
+           maxBufferSize="Integer"
+           maxConnections="Integer"
+           maxReceivedMessageSize="Integer"
+           name="String"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           transactionFlow="Boolean"
+           transactionProtocol="OleTransactions/WS-AtomicTransactionOctober2004"
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+    <security mode="None/Transport">
+      <transport protectionLevel="None/Sign/EncryptAndSign" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</netNamedPipeBinding>
 ```  
   
 ## Attributes and Elements  
@@ -43,7 +47,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 |Attribute|Description|  
 |---------------|-----------------|  
 |closeTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|hostnameComparisonMode|Specifies the HTTP hostname comparison mode used to parse URIs. This attribute is of type `System.ServiceModel.HostnameComparisonMode`, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is `StrongWildcard`, which ignores the hostname in the match.|  
+|hostNameComparisonMode|Specifies the HTTP hostname comparison mode used to parse URIs. This attribute is of type <xref:System.ServiceModel.HostNameComparisonMode>, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>, which ignores the hostname in the match.|  
 |maxBufferPoolSize|An integer that specifies the maximum buffer pool size for this binding. The default is 524,288 bytes (512 * 1024). Many parts of Windows Communication Foundation (WCF) use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.|  
 |maxBufferSize|A positive integer that specifies the maximum size, in bytes, of the buffer used to store messages in memory. If the buffer is full, excess data remains in the underlying socket until the buffer has room again. This value cannot be less than `maxReceivedMessageSize` attribute. The default is 65536. For more information, see <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferSize%2A>.|  
 |maxConnections|An integer that specifies the maximum number of outbound and inbound connections the service will create/accept. Incoming and outgoing connections are counted against a separate limit specified by this attribute.<br /><br /> Inbound connections in excess of the limit are queued until a space below the limit becomes available.<br /><br /> Outbound connections in excess of the limit are queued until a space below the limit becomes available.<br /><br /> The default is 10.|  
@@ -61,7 +65,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netnamedpipebinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>.|  
-|[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
@@ -80,66 +84,63 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netNamedPipeBinding binding and change some of its settings, you must define a binding configuration. The endpoint must reference the binding configuration by name with a `bindingConfiguration` attribute. In this example, the binding configuration is named Binding1.  
   
 ```xml  
-<configuration>  
-  <system.serviceModel>  
-    <services>  
-      <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
-               behaviorConfiguration="CalculatorServiceBehavior">  
-        <host>  
-          <baseAddresses>  
-            <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  
-          </baseAddresses>  
-        </host>  
-        <!-- this endpoint is exposed at the base address provided by host: net.pipe://localhost/ServiceModelSamples/service  -->  
-        <endpoint address="net.pipe://localhost/ServiceModelSamples/service"  
-                  binding="netNamedPipeBinding"  
-                  contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-        <!-- the mex endpoint is exposed at http://localhost:8000/ServiceModelSamples/service/mex -->  
-        <endpoint address="mex"  
-                  binding="mexHttpBinding"  
-                  contract="IMetadataExchange" />  
-      </service>  
-    </services>  
-  
-    <bindings>  
-      <netNamedPipeBinding>  
-        <binding   
-                 closeTimeout="00:01:00"  
-                 openTimeout="00:01:00"   
-                 receiveTimeout="00:10:00"   
-                 sendTimeout="00:01:00"  
-                 transactionFlow="false"   
-                 transferMode="Buffered"   
-                 transactionProtocol="OleTransactions"  
-                 hostNameComparisonMode="StrongWildcard"   
-                 maxBufferPoolSize="524288"  
-                 maxBufferSize="65536"   
-                 maxConnections="10"   
-                 maxReceivedMessageSize="65536">  
-          <security mode="Transport">  
-            <transport protectionLevel="EncryptAndSign" />  
-          </security>  
-        </binding>  
-      </netNamedPipeBinding>  
-    </bindings>  
-  
-    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
-    <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata httpGetEnabled="True"/>  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
-  </system.serviceModel>  
-</configuration>  
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+               behaviorConfiguration="CalculatorServiceBehavior">
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8000/ServiceModelSamples/service" />
+          </baseAddresses>
+        </host>
+        <!-- this endpoint is exposed at the base address provided by host: net.pipe://localhost/ServiceModelSamples/service  -->
+        <endpoint address="net.pipe://localhost/ServiceModelSamples/service"
+                  binding="netNamedPipeBinding"
+                  contract="Microsoft.ServiceModel.Samples.ICalculator" />
+        <!-- the mex endpoint is exposed at http://localhost:8000/ServiceModelSamples/service/mex -->
+        <endpoint address="mex"
+                  binding="mexHttpBinding"
+                  contract="IMetadataExchange" />
+      </service>
+    </services>
+    <bindings>
+      <netNamedPipeBinding>
+        <binding closeTimeout="00:01:00"
+                 openTimeout="00:01:00"
+                 receiveTimeout="00:10:00"
+                 sendTimeout="00:01:00"
+                 transactionFlow="false"
+                 transferMode="Buffered"
+                 transactionProtocol="OleTransactions"
+                 hostNameComparisonMode="StrongWildcard"
+                 maxBufferPoolSize="524288"
+                 maxBufferSize="65536"
+                 maxConnections="10"
+                 maxReceivedMessageSize="65536">
+          <security mode="Transport">
+            <transport protectionLevel="EncryptAndSign" />
+          </security>
+        </binding>
+      </netNamedPipeBinding>
+    </bindings>
+    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="CalculatorServiceBehavior">
+          <serviceMetadata httpGetEnabled="True" />
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+</configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>  
- <xref:System.ServiceModel.NetNamedPipeBinding>  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)
+## See also
+- <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>
+- <xref:System.ServiceModel.NetNamedPipeBinding>
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

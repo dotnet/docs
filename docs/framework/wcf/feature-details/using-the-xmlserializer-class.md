@@ -118,7 +118,7 @@ Windows Communication Foundation (WCF) can use two different serialization techn
   
  The schema provider method can also return the <xref:System.Xml.Schema.XmlSchemaType> to use. The type may or may not be anonymous. If it is anonymous, the schema for the `IXmlSerializable` type is exported as an anonymous type every time the `IXmlSerializable` type is used as a data member. The `IXmlSerializable` type still has a data contract name and namespace. (This is determined as described in [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md) except that the <xref:System.Runtime.Serialization.DataContractAttribute> attribute cannot be used to customize the name.) If it is not anonymous, it must be one of the types in the `XmlSchemaSet`. This case is equivalent to returning the `XmlQualifiedName` of the type.  
   
- Additionally, a global element declaration is exported for the type. If the type does not have the <xref:System.Xml.Serialization.XmlRootAttribute> attribute applied to it, the element has the same name and namespace as the data contract, and its "nillable" property is `true`. The only exception to this is the schema namespace ("http://www.w3.org/2001/XMLSchema") – if the type’s data contract is in this namespace, the corresponding global element is in the blank namespace because it is forbidden to add new elements to the schema namespace. If the type has the `XmlRootAttribute` attribute applied to it, the global element declaration is exported using the following: <xref:System.Xml.Serialization.XmlRootAttribute.ElementName%2A>, <xref:System.Xml.Serialization.XmlRootAttribute.Namespace%2A> and <xref:System.Xml.Serialization.XmlRootAttribute.IsNullable%2A> properties. The defaults with `XmlRootAttribute` applied are the data contract name, a blank namespace and "nillable" being `true`.  
+ Additionally, a global element declaration is exported for the type. If the type does not have the <xref:System.Xml.Serialization.XmlRootAttribute> attribute applied to it, the element has the same name and namespace as the data contract, and its "nillable" property is `true`. The only exception to this is the schema namespace (`http://www.w3.org/2001/XMLSchema`) – if the type’s data contract is in this namespace, the corresponding global element is in the blank namespace because it is forbidden to add new elements to the schema namespace. If the type has the `XmlRootAttribute` attribute applied to it, the global element declaration is exported using the following: <xref:System.Xml.Serialization.XmlRootAttribute.ElementName%2A>, <xref:System.Xml.Serialization.XmlRootAttribute.Namespace%2A> and <xref:System.Xml.Serialization.XmlRootAttribute.IsNullable%2A> properties. The defaults with `XmlRootAttribute` applied are the data contract name, a blank namespace and "nillable" being `true`.  
   
  The same global element declaration rules apply to legacy dataset types. Note that the `XmlRootAttribute` cannot override global element declarations added through custom code, either added to the `XmlSchemaSet` using the schema provider method or through `GetSchema` for legacy dataset types.  
   
@@ -199,11 +199,11 @@ Windows Communication Foundation (WCF) can use two different serialization techn
 > [!NOTE]
 >  The `<xmlSerializer useLegacySerializerGeneration="true"/>` switch only works on a machine running .NET Framework 4.5 or later version. The above `appSettings` approach works on all .NET Framework versions.  
   
-## See Also  
- <xref:System.ServiceModel.DataContractFormatAttribute>  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- <xref:System.ServiceModel.MessageHeaderArrayAttribute>  
- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+## See also
+- <xref:System.ServiceModel.DataContractFormatAttribute>
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- <xref:System.ServiceModel.MessageHeaderArrayAttribute>
+- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)

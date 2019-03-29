@@ -1,17 +1,17 @@
 ---
-title: Porting to .NET Core - Using the Windows Compatibility Pack
+title: Use the Windows Compatibility Pack to port code to .NET Core
 description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET Core
 author: terrajobst
-ms.author: mairaw
-ms.date: 11/13/2017
+ms.date: 12/07/2018
+ms.custom: seodec18
 ---
-# Using the Windows Compatibility Pack
+# Use the Windows Compatibility Pack to port code to .NET Core
 
-One of the most common issues that developers face when porting their existing
-code to .NET Core is that they depend on APIs and technologies that only exist
-in the .NET Framework. The *Windows Compatibility Pack* is about providing many
-of these technologies so that building .NET Core applications as well as .NET
-Standard libraries becomes much more viable for existing code.
+Some of the most common issues found when porting existing
+code to .NET Core are dependencies on APIs and technologies that are only
+found in the .NET Framework. The *Windows Compatibility Pack* provides many
+of these technologies, so it's much easier to build .NET Core applications and .NET
+Standard libraries.
 
 This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support)
 that significantly increases API set and existing code compiles with almost no
@@ -65,7 +65,7 @@ For more information, see the [spec of the compatibility pack](https://github.co
 3. If you want to stay on Windows, you're all set.
 
 4. If you want to run the .NET Core application or .NET Standard library on
-   Linux or macOS, use the [API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)
+   Linux or macOS, use the [API Analyzer](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/)
    to find usage of APIs that won't work cross-platform.
 
 5. Either remove the usages of those APIs, replace them with cross-platform
@@ -92,4 +92,3 @@ For more information, see the [spec of the compatibility pack](https://github.co
     ```
 
 For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com/Events/Connect/2017/T123).
-

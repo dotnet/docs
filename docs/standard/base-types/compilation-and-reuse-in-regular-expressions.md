@@ -40,5 +40,6 @@ However, generated MSIL cannot be unloaded. The only way to unload code is to un
   
  Because of the overhead of object instantiation and regular expression compilation, creating and rapidly destroying numerous <xref:System.Text.RegularExpressions.Regex> objects is a very expensive process. For applications that use a large number of different regular expressions, you can optimize performance by using calls to static `Regex` methods and possibly by increasing the size of the regular expression cache.  
   
-## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

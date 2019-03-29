@@ -8,7 +8,7 @@ A sorting operation orders the elements of a sequence based on one or more attri
   
  The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
   
- ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_ordering.png "LINQ_Ordering")  
+ ![Graphic that shows an alphabetical sort operation.](./media/sorting-data/alphabetical-sort-operation.png)  
   
  The standard query operator methods that sort data are listed in the following section.  
   
@@ -136,9 +136,9 @@ MsgBox(sb.ToString())
 ' brown  
 ```  
   
-## See Also  
- <xref:System.Linq>  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [How to: Sort Query Results](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md)  
- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+## See also
+- <xref:System.Linq>
+- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [How to: Sort Query Results](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md)
+- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

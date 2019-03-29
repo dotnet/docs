@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation, security"
   - "bindings [WCF]"
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Bindings and Security
 The system-provided bindings included with Windows Communication Foundation (WCF) offer a quick way to program WCF applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  
@@ -35,7 +33,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
 -   Web Service Enhancements (WSE) applications.  
   
--   Basic Profile as defined in the Web Services Interoperability (WS-I) specification ([http://go.microsoft.com/fwlink/?LinkId=38955](http://go.microsoft.com/fwlink/?LinkId=38955)).  
+-   Basic Profile as defined in the Web Services Interoperability (WS-I) specification ([https://go.microsoft.com/fwlink/?LinkId=38955](https://go.microsoft.com/fwlink/?LinkId=38955)).  
   
 -   Basic security profile as defined in WS-I.  
   
@@ -201,8 +199,8 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |Type|Description|  
 |----------|-----------------|  
 |None|Specifies that the client does not need to present any credential. This translates to an anonymous client.|  
-|Basic|Basic authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [http://go.microsoft.com/fwlink/?LinkId=84023](http://go.microsoft.com/fwlink/?LinkId=84023).|  
-|Digest|Digest authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [http://go.microsoft.com/fwlink/?LinkId=84023](http://go.microsoft.com/fwlink/?LinkId=84023).|  
+|Basic|Basic authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [https://go.microsoft.com/fwlink/?LinkId=84023](https://go.microsoft.com/fwlink/?LinkId=84023).|  
+|Digest|Digest authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [https://go.microsoft.com/fwlink/?LinkId=84023](https://go.microsoft.com/fwlink/?LinkId=84023).|  
 |NTLM|NT LAN Manager (NTLM) authentication.|  
 |Windows|Windows authentication.|  
 |Certificate|Authentication performed using a certificate.|  
@@ -219,10 +217,10 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |Certificate|Allows the service to require that the client be authenticated using a certificate.|  
 |IssuedToken|Allows the service to use a security token service to supply a custom token.|  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
- [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

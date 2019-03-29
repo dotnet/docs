@@ -67,7 +67,7 @@ public class SampleService:ISampleService
 }  
 ```  
   
- The SampleMethodTaskAsync operation returns Task\<string> because the logical operation returns a string. For more information about the task-based asynchronous pattern, see [The Task-Based Asynchronous Pattern](http://go.microsoft.com/fwlink/?LinkId=232504).  
+ The SampleMethodTaskAsync operation returns Task\<string> because the logical operation returns a string. For more information about the task-based asynchronous pattern, see [The Task-Based Asynchronous Pattern](https://go.microsoft.com/fwlink/?LinkId=232504).  
   
 > [!WARNING]
 >  When using the task-based asynchronous pattern, a T:System.AggregateException may be thrown if an exception occurs while waiting on the completion of the operation. This exception may occur on the client or services  
@@ -101,7 +101,7 @@ public class AsyncExample
 }  
 ```  
   
- For more information about the Event-based Asynchronous Pattern, see [The Event-Based Asynchronous Pattern](http://go.microsoft.com/fwlink/?LinkId=232515).  
+ For more information about the Event-based Asynchronous Pattern, see [The Event-Based Asynchronous Pattern](https://go.microsoft.com/fwlink/?LinkId=232515).  
   
 #### IAsyncResult Asynchronous Pattern  
  A service operation can be implemented in an asynchronous fashion using the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] asynchronous programming pattern and marking the `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property set to `true`. In this case, the asynchronous operation is exposed in metadata in the same form as a synchronous operation: It is exposed as a single operation with a request message and a correlated response message. Client programming models then have a choice. They can represent this pattern as a synchronous operation or as an asynchronous one, so long as when the service is invoked a request-response message exchange takes place.  
@@ -186,6 +186,6 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
   
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the **/messageContract** command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  
   
-## See Also  
- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>  
- <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>
+## See also
+- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>

@@ -21,7 +21,7 @@ The *entity type* is the fundamental building block for describing the structure
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`:  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/entity-type/example-model-three-entity-types.gif)  
   
  Note that the properties of each entity type that make up its entity key are denoted with "(Key)".  
   
@@ -29,7 +29,7 @@ The *entity type* is the fundamental building block for describing the structure
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
-## See Also  
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)  
- [facet](../../../../docs/framework/data/adonet/facet.md)
+## See also
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [facet](../../../../docs/framework/data/adonet/facet.md)

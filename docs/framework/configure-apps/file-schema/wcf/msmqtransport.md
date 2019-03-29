@@ -1,9 +1,9 @@
 ---
-title: "&lt;msmqTransport&gt;"
+title: "<msmqTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 ---
-# &lt;msmqTransport&gt;
+# \<msmqTransport>
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  
   
  \<system.serviceModel>  
@@ -15,27 +15,27 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 ## Syntax  
   
 ```xml  
-<msmqTransport>  
-    customDeadLetterQueue="Uri"  
-    deadLetterQueue="Custom/None/System"  
-    durable="Boolean"  
-    exactlyOnce="Boolean"  
-    manualAddressing="Boolean"  
-    maxBufferPoolSize="Integer"  
-    maxImmediateRetries="Integer"  
-    maxPoolSize="Integer"  
-    maxReceivedMessageSize="Integer"  
-    maxRetryCycles="Integer"  
-....queueTransferProtocol="Native/Srmp/SrmpSecure"  
-    rejectAfterLastRetry="Boolean"  
-    retryCycleDelay="TimeSpan"  
-    timeToLive="TimeSpan"  
-    useActiveDirectory="Boolean"  
-    useSourceJournal="Boolean"  
-    useMsmqTracing="Boolean"  
-    <msmqTransportSecurity>  
-    </msmqTransportSecurity>  
-</msmqIntegration>  
+<msmqTransport customDeadLetterQueue="Uri"
+               deadLetterQueue="Custom/None/System"
+               durable="Boolean"
+               exactlyOnce="Boolean"
+               manualAddressing="Boolean"
+               maxBufferPoolSize="Integer"
+               maxImmediateRetries="Integer"
+               maxPoolSize="Integer"
+               maxReceivedMessageSize="Integer"
+               maxRetryCycles="Integer"
+               queueTransferProtocol="Native/Srmp/SrmpSecure"
+               rejectAfterLastRetry="Boolean"
+               retryCycleDelay="TimeSpan"
+               timeToLive="TimeSpan"
+               useActiveDirectory="Boolean"
+               useSourceJournal="Boolean"
+               useMsmqTracing="Boolean"
+               ...>
+  <msmqTransportSecurity>
+  </msmqTransportSecurity>
+</msmqTransport>
 ```  
   
 ## Attributes and Elements  
@@ -51,7 +51,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 |exactlyOnce|A Boolean that specifies whether messages processed by this binding will be received exactly once. The default is `true`.<br /><br /> A message can be sent with or without assurances. An assurance enables an application to ensure that a sent message reached the receiving message queue, or if it did not, the application can determine this by reading the dead letter queue.<br /><br /> `exactlyOnce`, when set to `true`, indicates that MSMQ will ensure that a sent message is delivered to the receiving message queue once and only once, and if delivery fails, the message is sent to the dead letter queue.<br /><br /> Messages sent with `exactlyOnce` set to `true` must be sent to a transactional queue only.|  
 |manualAddressing|A Boolean value that enables the user to take control of message addressing. This property is usually used in router scenarios, where the application determines which one of several destinations to send a message to.<br /><br /> When set to `true`, the channel assumes the message has already been addressed and does not add any additional information to it. The user can then address every message individually.<br /><br /> When set to `false`, the default Windows Communication Foundation (WCF) addressing mechanism automatically creates addresses for all messages.<br /><br /> The default is `false`.|  
 |maxBufferPoolSize|A positive integer that specifies the maximum size of the buffer pool. The default is 524288.<br /><br /> Many parts of WCF use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.|  
-|maxImmediateRetries|An integer that specifies the maximum number of immediate retry attempts on a message that is read from the application queue.. The default is 5.<br /><br /> If the maximum number of immediate retries for the message is attempted and the message is not consumed by the application, then the message is sent to a retry queue for retrying at some later point in time. If no retry cycles are specified, then the messages is either sent to the poison message queue, or a negative acknowledgment is sent back to the sender.|  
+|maxImmediateRetries|An integer that specifies the maximum number of immediate retry attempts on a message that is read from the application queue. The default is 5.<br /><br /> If the maximum number of immediate retries for the message is attempted and the message is not consumed by the application, then the message is sent to a retry queue for retrying at some later point in time. If no retry cycles are specified, then the messages is either sent to the poison message queue, or a negative acknowledgment is sent back to the sender.|  
 |maxPoolSize|A positive integer that specifies the maximum size of the pool. The default is 524288.|  
 |maxReceivedMessageSize|A positive integer that specifies the maximum message size in bytes including headers. The sender of a message receives a SOAP fault when the message is too large for the receiver. The receiver drops the message and creates an entry of the event in the trace log. The default is 65536.|  
 |maxRetryCycles|An integer that specifies the maximum number of retry cycles to attempt delivery of messages to the receiving application. The default is <xref:System.Int32.MaxValue>.<br /><br /> A single retry cycle attempts to deliver a message to an application a specified number of times. The number of attempts made is set by the `maxImmediateRetries` attribute. If the application fails to consume the message after the attempts at delivery have been exhausted, the message is sent to a retry queue. Subsequent retry cycles consist of the message being returned from the retry queue to the application queue to attempt delivery to the application again, after a delay specified by the `retryCycleDelay` attribute. The `maxRetryCycles` attribute specifies the number of retry cycles the application uses to attempt to deliver the message.|  
@@ -80,15 +80,15 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
   
  This binding element is the default binding element used by the Message Queuing standard binding (`netMsmqBinding`).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.MsmqTransportElement>  
- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.MsmqTransportElement>
+- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

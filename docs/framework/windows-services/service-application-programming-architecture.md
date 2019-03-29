@@ -15,7 +15,6 @@ helpviewer_keywords:
   - "Windows Service applications, states"
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
 author: "ghogen"
-manager: "douge"
 ---
 # Service Application Programming Architecture
 Windows Service applications are based on a class that inherits from the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> class. You override methods from this class and define functionality for them to determine how your service behaves.  
@@ -61,6 +60,6 @@ Windows Service applications are based on a class that inherits from the <xref:S
   
  You can also use a component called the <xref:System.ServiceProcess.ServiceController> to communicate with and control the behavior of an existing service.  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+## See also
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)

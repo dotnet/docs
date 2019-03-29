@@ -30,7 +30,7 @@ HRESULT UpdateSymbolStore2(
     [in]  ULONG         cDeltaLines);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIStream`  
  [in] A pointer to an [IStream](/windows/desktop/api/objidl/nn-objidl-istream) that contains the line information.  
   
@@ -46,5 +46,5 @@ HRESULT UpdateSymbolStore2(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+## See also
+- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

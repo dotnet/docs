@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-doc compiler option [Visual Basic]"
   - "/doc compiler option [Visual Basic]"
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
-author: rpetrusha
-ms.author: ronpet
 ---
 # -doc
 Processes documentation comments to an XML file.  
@@ -49,6 +47,6 @@ Processes documentation comments to an XML file.
 ## Example  
  See [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md) for a sample.  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)

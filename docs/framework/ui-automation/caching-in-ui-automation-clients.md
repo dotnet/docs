@@ -5,13 +5,10 @@ helpviewer_keywords:
   - "UI Automation caching in clients"
   - "caching, UI Automation clients"
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic introduces caching of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties and control patterns.  
   
@@ -98,7 +95,7 @@ manager: "markl"
   
  Updating the cache does not alter the properties of any existing <xref:System.Windows.Automation.AutomationElement> references.  
   
-## See Also  
- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [FetchTimer Sample](http://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)
+## See also
+- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
+- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [FetchTimer Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))

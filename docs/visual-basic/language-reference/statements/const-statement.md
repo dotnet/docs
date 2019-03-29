@@ -84,23 +84,23 @@ Const constantlist
 ## Example  
  The following example uses the `Const` statement to declare constants for use in place of literal values.  
   
- [!code-vb[VbVbalrStatements#13](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/const-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#13)]  
   
 ## Example  
  If you define a constant with data type `Object`, the Visual Basic compiler gives it the type of `initializer`, instead of `Object`. In the following example, the constant `naturalLogBase` has the run-time type `Decimal`.  
   
- [!code-vb[VbVbalrStatements#87](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/const-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#87](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#87)]  
   
  The preceding example uses the <xref:System.Type.ToString%2A> method on the <xref:System.Type> object returned by the [GetType Operator](../../../visual-basic/language-reference/operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+## See also
+- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)
+- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

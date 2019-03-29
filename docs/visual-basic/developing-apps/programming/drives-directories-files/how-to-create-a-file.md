@@ -10,7 +10,7 @@ ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
 This example creates an empty text file at the specified path using the <xref:System.IO.File.Create%2A> method in the <xref:System.IO.File> class.  
   
 ## Example  
- [!code-vb[VbFileIOMisc#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-file_1.vb)]  
+ [!code-vb[VbFileIOMisc#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/class2.vb#1)]  
   
 ## Compiling the Code  
  Use the `file` variable to write to the file.  
@@ -39,8 +39,8 @@ This example creates an empty text file at the specified path using the <xref:Sy
   
  An <xref:System.UnauthorizedAccessException> is thrown if the user does not have permission to create the file.  
   
-## See Also  
- <xref:System.IO>  
- <xref:System.IO.File.Create%2A>  
- [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)  
- [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)
+## See also
+- <xref:System.IO>
+- <xref:System.IO.File.Create%2A>
+- [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)
+- [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)

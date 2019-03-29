@@ -31,7 +31,7 @@ HRESULT GetSymbolStoreFileName (
         length_is (*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` buffer.  
   
@@ -47,5 +47,5 @@ HRESULT GetSymbolStoreFileName (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

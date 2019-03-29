@@ -98,7 +98,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
  
  The following example illustrates the use of the multiline syntax of the `If`...`Then`...`Else` statement.  
   
- [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb?highlight=11,14,17,19)]
+ [!code-vb[VbVbalrStatements#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#101)]
 
 ## Nested syntax example
 
@@ -106,21 +106,21 @@ This article includes several examples that illustrate uses of the `If`...`Then`
 
  The following example contains nested `If`...`Then`...`Else` statements.  
   
- [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb?highlight=14,15,17,19,20,21,23,25,26,28)]
+ [!code-vb[VbVbalrStatements#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#102)]
 
 ## Single-Line syntax example
   
 <a name="single-line"></a>
  The following example illustrates the use of the single-line syntax.  
   
- [!code-vb[VbVbalrStatements#103](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_3.vb?highlight=18)]
+ [!code-vb[VbVbalrStatements#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#103)]
   
-## See also  
- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>  
- <xref:Microsoft.VisualBasic.Interaction.Switch%2A>  
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)  
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Decision Structures](../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)  
- [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)
+## See also
+- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
+- <xref:Microsoft.VisualBasic.Interaction.Switch%2A>
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)
+- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Decision Structures](../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
+- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+- [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)

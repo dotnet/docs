@@ -1,8 +1,6 @@
 ---
-title: dotnet publish command - .NET Core CLI
+title: dotnet publish command
 description: The dotnet publish command publishes your .NET Core project into a directory.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet publish
@@ -52,7 +50,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 `PROJECT`
 
-The project to publish. If not specified, it defaults to the current directory.
+The project to publish. It's either the path and filename of a [C#](csproj.md), F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If not specified, it defaults to the current directory.
 
 ## Options
 
@@ -223,5 +221,5 @@ Publish the current application but don't restore project-to-project (P2P) refer
 
 ## See also
 
-* [Target frameworks](../../standard/frameworks.md)
-* [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Target frameworks](../../standard/frameworks.md)
+- [Runtime IDentifier (RID) catalog](../rid-catalog.md)

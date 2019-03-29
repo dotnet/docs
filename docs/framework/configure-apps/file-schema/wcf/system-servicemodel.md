@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.serviceModel&gt;"
+title: "<system.serviceModel>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.ServiceModel"
@@ -9,38 +9,40 @@ helpviewer_keywords:
   - "system.serviceModel element"
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
 ---
-# &lt;system.serviceModel&gt;
+# \<system.serviceModel>
 This configuration section contains all the Windows Communication Foundation (WCF) ServiceModel configuration elements.  
   
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <behaviors>  
-  </behaviors>  
-  <bindings>  
-  </bindings>  
-  <client>  
-  </client>  
-  <comContracts>  
-  </comContracts>  
-  <commonBehaviors>  
-  </commonBehaviors>  
-  <diagnostics>  
-  </diagnostics>  
-  <extensions>  
+<system.serviceModel>
+  <behaviors>
+  </behaviors>
+  <bindings>
+  </bindings>
+  <client>
+  </client>
+  <comContracts>
+  </comContracts>
+  <commonBehaviors>
+  </commonBehaviors>
+  <diagnostics>
+  </diagnostics>
+  <extensions>
   </extensions>
   <protocolMapping>
   </protocolMapping>
   <routing>
-  </routing>  
-  <serviceHostingEnvironment>  
-  </serviceHostingEnvironment>  
-  <services>  
+  </routing>
+  <serviceHostingEnvironment>
+  </serviceHostingEnvironment>
+  <services>
   </services>
-  <standardEndpoints>  
-  </standardEndpoints>  
-</system.serviceModel>  
+  <standardEndpoints>
+  </standardEndpoints>
+  <tracking>
+  </tracking>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -58,14 +60,15 @@ This configuration section contains all the Windows Communication Foundation (WC
 |[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|This section contains a list of endpoints a client uses to connect to a service.|  
 |[\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)|This section defines COM contracts enabled for WCF and COM interop.|  
 |[\<commonBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md)|This section can only be defined in the machine.config file. It defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by all WCF endpoints and services on the machine respectively.  If a behavior is defined in both `<commonBehaviors>` and `<behaviors>` sections, the behavior in the \<behaviors> section is given preference.|  
-|[\<extensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/extensions-section.md)|This section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.|  
 |[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|This section contains settings for the diagnostics features of WCF. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.|  
+|[\<extensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/extensions-section.md)|This section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.|  
 |[\<protocolMapping>](../../../../../docs/framework/configure-apps/file-schema/wcf/protocolmapping.md)|This section defines a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings.|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|This section defines a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches.|  
 |[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|This section defines what type the service hosting environment instantiates for a particular transport. If this section is empty, the default type is used.|  
 |[\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md)|The section contains a collection of services. For each service defined in the assembly, this element contains a `service` element specifying settings for the service.|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|This section defines a collection of standard endpoints, which are reusable preconfigured endpoints. A standard endpoint will have one or more of the address, binding and contract attributes set to a fixed value. For example, in the discovery endpoint the contract is fixed. You can also use standard endpoints to extend service endpoint with new properties similar to defining custom bindings.|  
-  
+|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|This section defines a collection of standard endpoints, which are reusable preconfigured endpoints. A standard endpoint will have one or more of the address, binding and contract attributes set to a fixed value. For example, in the discovery endpoint the contract is fixed. You can also use standard endpoints to extend service endpoint with new properties similar to defining custom bindings.|
+|[\<tracking>](../../../../../docs/framework/configure-apps/file-schema/wcf/tracking-of-wcf.md)|This section defines tracking settings for a workflow service.|
+
 ### Parent Elements  
   
 |Element|Description|  
@@ -89,32 +92,34 @@ This configuration section contains all the Windows Communication Foundation (WC
  This is an example of a WCF configuration file.  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<configuration>  
-    <system.serviceModel>  
-        <behaviors>  
-           <!-- List of Behaviors -->  
-        </behaviors>  
-        <client>  
-           <!-- List of Endpoints -->  
-        </client>  
-        <diagnostics wmiProviderEnabled="false" performanceCountersEnabled="false" tracingEnabled="false">  
-        </diagnostics>  
-        <serviceHostingEnvironment>  
-           <!-- List of entries -->  
-        </serviceHostingEnvironment>  
-        <comContracts>  
-           <!-- List of COM+ Contracts -->  
-        </comContracts>          
-        <services>  
-           <!-- List of Services -->  
-        </services>  
-        <bindings>  
-           <!-- List of Bindings -->  
-        </bindings>  
-    </system.serviceModel>  
-</configuration>  
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <behaviors>
+      <!-- List of Behaviors -->
+    </behaviors>
+    <client>
+      <!-- List of Endpoints -->
+    </client>
+    <diagnostics wmiProviderEnabled="false"
+                 performanceCountersEnabled="false"
+                 tracingEnabled="false">
+    </diagnostics>
+    <serviceHostingEnvironment>
+      <!-- List of entries -->
+    </serviceHostingEnvironment>
+    <comContracts>
+      <!-- List of COM+ Contracts -->
+    </comContracts>
+    <services>
+      <!-- List of Services -->
+    </services>
+    <bindings>
+      <!-- List of Bindings -->
+    </bindings>
+  </system.serviceModel>
+</configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceModelSectionGroup>
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceModelSectionGroup>

@@ -1,5 +1,5 @@
 ---
-title: "AddFile Method1"
+title: "AddFile Method"
 ms.date: "03/30/2017"
 api_name: 
   - "IALink.AddFile"
@@ -18,7 +18,7 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# AddFile Method1
+# AddFile Method
 Adds files to the assembly. Can also be used to create unbound modules.  
   
 ## Syntax  
@@ -33,7 +33,7 @@ HRESULT AddFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of the assembly to be augmented.  
   
@@ -55,7 +55,7 @@ HRESULT AddFile(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

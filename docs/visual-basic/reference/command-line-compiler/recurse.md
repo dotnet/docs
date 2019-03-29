@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-recurse compiler option [Visual Basic]"
   - "recurse compiler option [Visual Basic]"
 ms.assetid: 84a0b670-33ae-44c4-a46a-b90388809317
-author: rpetrusha
-ms.author: ronpet
 ---
 # -recurse
 Compiles source-code files in all child directories of either the specified directory or the project directory.  
@@ -44,7 +42,7 @@ vbc *.vb
 vbc -target:library -out:Test.ABC.dll -recurse:Test\ABC\*.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

@@ -8,16 +8,16 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
   
 |Specification/Document|Link|  
 |-----------------------------|----------|  
-|WS-Coordination|http://msdn.microsoft.com/ws/2005/08/ws-coordination/|  
-|WS-AtomicTransaction|http://msdn.microsoft.com/ws/2005/08/ws-atomictransaction/|  
+|WS-Coordination|<http://specs.xmlsoap.org/ws/2004/10/wscoor/wscoor.pdf>|  
+|WS-AtomicTransaction|<http://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf>|  
   
  Interoperability on these protocol specifications is required at two levels: between applications and between transaction managers (see the following figure). Specifications describe in great detail the message formats and message exchange for both interoperability levels. Certain security, reliability, and encodings for application-to-application exchange apply as they do for regular application exchange. However, successful interoperability between transaction managers requires agreement on the particular binding, because it is usually not configured by the user.  
   
  This topic describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
   
- The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2.  
+ The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2:  
   
- ![Transaction Protocols](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
+ ![Screenshot that shows interaction between transaction managers.](./media/transaction-protocols/transaction-managers-flow.gif)  
   
  Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers, (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this topic.  
   
@@ -110,7 +110,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
   
  R1232: Outgoing `wscoor:Register` messages must use the `IssuedTokenOverTransport` authentication mode described in [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md).  
   
- The `wsse:Timestamp` element must be signed using the `SecurityContextToken``STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
+ The `wsse:Timestamp` element must be signed using the `SecurityContextToken STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  

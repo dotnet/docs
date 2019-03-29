@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
 ---
 # Large Data and Streaming
-Windows Communication Foundation (WCF) is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
+Windows Communication Foundation (WCF) is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](https://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
   
 ## Basic Considerations  
  To provide background information about the following information for WCF, this section highlights some general concerns and considerations for encodings, binary data, and streaming that generally apply to connected systems infrastructures.  
@@ -50,10 +50,10 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
   
  For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. For more information, see the "Streaming Data" section later in this topic.  
   
- When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](http://go.microsoft.com/fwlink/?LinkId=253165)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). The `maxAllowedContentLength` property defaults to 28.6 M and the `maxReceivedMessageSize` property defaults to 64KB.  
+ When sending large amounts of data you will need to set the `maxAllowedContentLength` IIS setting (for more information see [Configuring IIS Request Limits](https://go.microsoft.com/fwlink/?LinkId=253165)) and the `maxReceivedMessageSize` binding setting (for example [System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) or <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A>). The `maxAllowedContentLength` property defaults to 28.6 M and the `maxReceivedMessageSize` property defaults to 64KB.  
   
 ## Encodings  
- An *encoding* defines a set of rules about how to present messages on the wire. An *encoder* implements such an encoding and is responsible, on the sender side, for turning a <xref:System.ServiceModel.Channels.Message> in-memory message into a byte stream or byte buffer that can be sent across the network. On the receiver side, the encoder turns a sequence of bytes into an in-memory message.  
+ An *encoding* defines a set of rules about how to present messages on the wire. An *encoder* implements such an encoding and is responsible, on the sender side, for turning an in-memory <xref:System.ServiceModel.Channels.Message> into a byte stream or byte buffer that can be sent across the network. On the receiver side, the encoder turns a sequence of bytes into an in-memory message.  
   
  WCF includes three encoders and allows you to write and plug in your own encoders, if necessary.  
   
@@ -61,7 +61,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
   
 |Encoder binding element|Description|  
 |-----------------------------|-----------------|  
-|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|The text message encoder is the default encoder for all HTTP-based bindings and the appropriate choice for all custom bindings where interoperability is the highest concern. This encoder reads and writes standard SOAP 1.1/SOAP 1.2 text messages with no special handling for binary data. If the <xref:System.ServiceModel.Channels.MessageVersion> of a message is set to `None`, the SOAP envelope wrapper is omitted from the output and only the message body content is serialized.|  
+|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|The text message encoder is the default encoder for all HTTP-based bindings and the appropriate choice for all custom bindings where interoperability is the highest concern. This encoder reads and writes standard SOAP 1.1/SOAP 1.2 text messages with no special handling for binary data. If the <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> property of a message is set to <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>, the SOAP envelope wrapper is omitted from the output and only the message body content is serialized.|  
 |<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>|The MTOM message encoder is a text encoder that implements special handling for binary data and is not used by default in any of the standard bindings because it is strictly a case-by-case optimization utility. If the message contains binary data that exceeds a threshold where MTOM encoding yields a benefit, the data is externalized into a MIME part following the message envelope. See Enabling MTOM later in this section.|  
 |<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|The binary message encoder is the default encoder for the Net* bindings and the appropriate choice whenever both communicating parties are based on WCF. The binary message encoder uses the .NET Binary XML Format, a Microsoft-specific binary representation for XML Information Sets (Infosets) that generally yields a smaller footprint than the equivalent XML 1.0 representation and encodes binary data as a byte stream.|  
   
@@ -232,5 +232,5 @@ public class UploadStreamMessage
 > [!NOTE]
 >  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
-## See Also  
- [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
+## See also
+- [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)

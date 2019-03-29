@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "Windows Service applications, creating"
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Write Services Programmatically
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  
@@ -65,9 +64,9 @@ If you choose not to use the Windows Service project template, you can write you
   
 10. Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)  
- [How to: Log Information About Services](../../../docs/framework/windows-services/how-to-log-information-about-services.md)  
- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+## See also
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+- [How to: Log Information About Services](../../../docs/framework/windows-services/how-to-log-information-about-services.md)
+- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)

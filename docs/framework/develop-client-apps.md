@@ -49,12 +49,12 @@ Lists the .NET Framework APIs you can use for building apps with Windows Phone S
 [Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
 Describes the different methods you can use the .NET Framework to target multiple client app types.
 
-[Get Started with ASP.NET Web Sites](http://www.asp.net/get-started/websites)  
+[Get Started with ASP.NET Web Sites](https://www.asp.net/get-started/websites)  
 Describes the ways you can develop web apps using ASP.NET.
 
 ## See also
 
-[.NET Standard](../../docs/standard/net-standard.md)  
-[Overview](../../docs/framework/get-started/overview.md)  
-[Development Guide](../../docs/framework/development-guide.md)  
-[Windows Service Applications](../../docs/framework/windows-services/index.md)  
+- [.NET Standard](../../docs/standard/net-standard.md)
+- [Overview](../../docs/framework/get-started/overview.md)
+- [Development Guide](../../docs/framework/development-guide.md)
+- [Windows Service Applications](../../docs/framework/windows-services/index.md)

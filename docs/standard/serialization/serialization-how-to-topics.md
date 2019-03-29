@@ -26,5 +26,6 @@ The following list includes links to the How-to topics found in the conceptual d
   
 -   [How to: Chunk Serialized Data](../../../docs/standard/serialization/how-to-chunk-serialized-data.md)  
   
-## See Also  
- [Serialization](../../../docs/standard/serialization/index.md)
+## See also
+
+- [Serialization](../../../docs/standard/serialization/index.md)

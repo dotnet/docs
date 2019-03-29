@@ -1,5 +1,7 @@
 ---
-title: "async (C# Reference)"
+title: "async - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/22/2017
 f1_keywords: 
   - "async_CSharpKeyword"
@@ -72,13 +74,13 @@ You specify `Task<TResult>` as the return type of an async method if the [return
   
 You use the `void` return type primarily to define event handlers, which require that return type. The caller of a `void`-returning async method can't await it and can't catch exceptions that the method throws.  
 
-Starting with C# 7.0, you return another type, typically a value type, that has a `GetAwaiter` method to miminize memory allocations in performance-critical sections of code. 
+Starting with C# 7.0, you return another type, typically a value type, that has a `GetAwaiter` method to minimize memory allocations in performance-critical sections of code. 
 
 For more information and examples, see [Async Return Types](../../../csharp/programming-guide/concepts/async/async-return-types.md).  
   
-## See Also
+## See also
 
-- <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>  
-- [await](../../../csharp/language-reference/keywords/await.md)  
-- [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
+- <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>
+- [await](../../../csharp/language-reference/keywords/await.md)
+- [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)

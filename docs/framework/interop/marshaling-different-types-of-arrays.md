@@ -80,7 +80,7 @@ An array is a reference type in managed code that contains one or more elements 
     int TestArrayOfStructs2 (MYPERSON* pPersonArray, int size);  
     ```  
   
- [PinvokeLib.dll](https://msdn.microsoft.com/library/5d1438d7-9946-489d-8ede-6c694a08f614(v=vs.100)) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
+ [PinvokeLib.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as6wyhwt(v=vs.100)) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
   
 ```  
 typedef struct _MYPOINT  
@@ -108,7 +108,6 @@ typedef struct _MYPERSON
  [!code-csharp[Conceptual.Interop.Marshaling#32](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#32)]
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   
-## See Also  
- [Marshaling Arrays of Types](https://msdn.microsoft.com/library/049b1c1b-228f-4445-88ec-91bc7fd4b1e8(v=vs.100))  
- [Platform Invoke Data Types](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))  
- [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
+## See also
+- [Platform invoke data types](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
+- [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)

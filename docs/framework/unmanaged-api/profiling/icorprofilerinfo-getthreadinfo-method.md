@@ -29,7 +29,7 @@ HRESULT GetThreadInfo(
     [out] DWORD    *pdwWin32ThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread for which to get the current Win32 ID.  
   
@@ -45,5 +45,5 @@ HRESULT GetThreadInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

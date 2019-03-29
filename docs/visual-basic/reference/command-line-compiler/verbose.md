@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-verbose compiler option [Visual Basic]"
   - "/verbose compiler option [Visual Basic]"
 ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
-author: rpetrusha
-ms.author: ronpet
 ---
 # -verbose
 Causes the compiler to produce verbose status and error messages.  
@@ -35,6 +33,6 @@ Causes the compiler to produce verbose status and error messages.
 vbc -verbose in.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

@@ -7,7 +7,7 @@ ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
 To run the samples that securely communicate with Internet Information Services (IIS), you must create and install a server certificate.  
   
 ## Step 1. Creating Certificates  
- To create a certificate for your computer, open a Visual Studio command prompt with administrator privileges and run the Setup.bat that is included in each of the samples that use secure communication with IIS. Ensure that the path includes the folder that contains Makecert.exe before you run this batch file. The following command is used to create the certificate in Setup.bat.  
+ To create a certificate for your computer, open a Developer Command Prompt for Visual Studio with administrator privileges and run the Setup.bat that is included in each of the samples that use secure communication with IIS. Ensure that the path includes the folder that contains Makecert.exe before you run this batch file. The following command is used to create the certificate in Setup.bat.  
   
 ```  
 makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exchange -sk ServiceModelSamples-HTTPS-Key  
@@ -30,7 +30,7 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
   
      ![IIS Certificate Wizard](../../../../docs/framework/wcf/samples/media/iiscertificate-wizard.GIF "IISCertificate_Wizard")  
   
-6.  Test access to the service in a browser by using the HTTPS address https://localhost/servicemodelsamples/service.svc.  
+6.  Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   
 #### If SSL was previously configured by using Httpcfg.exe  
   
@@ -59,7 +59,7 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
   
 5.  Select the **ServiceModelSamples-HTTPS-Server** from the **SSL certificate** drop-down list and click **OK**.  
   
-6.  Test access to the service in a browser by using the HTTPS address https://localhost/servicemodelsamples/service.svc.  
+6.  Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   
 > [!NOTE]
 >  Because the test certificate you have just installed is not a trusted certificate, you may encounter additional Internet Explorer security warnings when browsing to local Web addresses secured with this certificate.  

@@ -12,7 +12,7 @@ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes
   
 1.  Open Internet Explorer.  
   
-2.  Go to the [SQL Server 2005 Samples and Sample Databases](http://go.microsoft.com/fwlink/?linkid=31046) Web site.  
+2.  Go to the [SQL Server 2005 Samples and Sample Databases](https://go.microsoft.com/fwlink/?linkid=31046) Web site.  
   
 3.  Follow the instructions for downloading the AdventureWorks sample database for your processor type (such as AdventureWorksDB.msi), and save the .MSI file to your local computer.  
   
@@ -50,7 +50,7 @@ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes
   
 2.  Attach the AdventureWorks database files to an instance of SQL Server by executing the following script SQLCMD or SQL Server Management Studio:  
   
-    ```  
+    ```sql
     exec sp_attach_db @dbname=N'AdventureWorks', @filename1=N'C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data\AdventureWorks_Data.mdf', @filename2=N'C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data\AdventureWorks_log.ldf'  
     ```  
   
@@ -63,9 +63,9 @@ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes
   
 1.  Start Internet Explorer.  
   
-2.  Go to the  [Microsoft SQL Server 2005 Express Edition](http://go.microsoft.com/fwlink/?LinkID=31070) download page.  
+2.  Go to the  [Microsoft SQL Server 2005 Express Edition](https://go.microsoft.com/fwlink/?LinkID=31070) download page.  
   
 3.  Follow the installation instructions on the Web site.  
   
-## See Also  
- [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)
+## See also
+- [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)

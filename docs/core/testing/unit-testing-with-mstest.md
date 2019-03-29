@@ -4,6 +4,7 @@ description: Learn unit test concepts in C# and .NET Core through an interactive
 author: ncarandini
 ms.author: wiwagn
 ms.date: 09/08/2017
+ms.custom: "seodec18"
 ---
 # Unit testing C# with MSTest and .NET Core
 
@@ -20,7 +21,7 @@ a new solution file for the class library and the test project. Next, create a *
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. You create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -83,11 +84,11 @@ The following outline shows the final solution layout:
         PrimeServiceTests.csproj
 ```
 
-Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-dotnet-test* directory. 
+Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-mstest* directory. 
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs* with the following content:
+You write one failing test, make it pass, then repeat the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs* with the following content:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;

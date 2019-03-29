@@ -1,5 +1,6 @@
 ---
-title: "Pointer types (C# Programming Guide)"
+title: "Pointer types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"
@@ -14,10 +15,10 @@ type* identifier;
 void* identifier; //allowed but not recommended
 ```
 
-The type specified before the `*` in a pointer type is called the **referrent type**. Any of the following types may be a referrent type:
+The type specified before the `*` in a pointer type is called the **referent type**. Any of the following types may be a referent type:
 
 - Any integral type: [sbyte](../../language-reference/keywords/sbyte.md), [byte](../../language-reference/keywords/byte.md), [short](../../language-reference/keywords/short.md), [ushort](../../language-reference/keywords/ushort.md), [int](../../language-reference/keywords/int.md), [uint](../../language-reference/keywords/uint.md), [long](../../language-reference/keywords/long.md), [ulong](../../language-reference/keywords/ulong.md).
-- Any floating point type: [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md).
+- Any floating-point type: [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md).
 - [char](../../language-reference/keywords/char.md).
 - [bool](../../language-reference/keywords/bool.md).
 - [decimal](../../language-reference/keywords/decimal.md).
@@ -82,13 +83,14 @@ The following table lists the operators and statements that can operate on point
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
- [C# Programming Guide](../index.md)  
- [Unsafe Code and Pointers](index.md)  
- [Pointer Conversions](pointer-conversions.md)  
- [Pointer Expressions](pointer-expressions.md)  
- [Types](../../language-reference/keywords/types.md)  
- [unsafe](../../language-reference/keywords/unsafe.md)  
- [fixed Statement](../../language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../language-reference/keywords/stackalloc.md)  
- [Boxing and Unboxing](../types/boxing-and-unboxing.md)
+## See also
+
+- [C# Programming Guide](../index.md)
+- [Unsafe Code and Pointers](index.md)
+- [Pointer Conversions](pointer-conversions.md)
+- [Pointer Expressions](pointer-expressions.md)
+- [Types](../../language-reference/keywords/types.md)
+- [unsafe](../../language-reference/keywords/unsafe.md)
+- [fixed Statement](../../language-reference/keywords/fixed-statement.md)
+- [stackalloc](../../language-reference/keywords/stackalloc.md)
+- [Boxing and Unboxing](../types/boxing-and-unboxing.md)

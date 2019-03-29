@@ -1,5 +1,6 @@
 ---
-title: "Interoperability (C# Programming Guide)"
+title: "Interoperability - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "COM interop"
@@ -9,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 238bb95a-e962-4026-bbd5-197055bdb8ee
 ---
 # Interoperability (C# Programming Guide)
-Interoperability enables you to preserve and take advantage of existing investments in unmanaged code. Code that runs under the control of the common language runtime (CLR) is called *managed code*, and code that runs outside the CLR is called *unmanaged code*. COM, COM+, C++ components, ActiveX components, and Microsoft Win32 API are examples of unmanaged code.  
+Interoperability enables you to preserve and take advantage of existing investments in unmanaged code. Code that runs under the control of the common language runtime (CLR) is called *managed code*, and code that runs outside the CLR is called *unmanaged code*. COM, COM+, C++ components, ActiveX components, and Microsoft Windows API are examples of unmanaged code.  
   
  The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] enables interoperability with unmanaged code through platform invoke services, the <xref:System.Runtime.InteropServices> namespace, C++ interoperability, and COM interoperability (COM interop).  
   
@@ -33,10 +34,12 @@ Interoperability enables you to preserve and take advantage of existing investme
  Demonstrates how to expose a C# class as a COM object.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Basic concepts](~/_csharplang/spec/unsafe-code.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
- [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)
+- [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)

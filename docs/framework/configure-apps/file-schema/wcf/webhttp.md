@@ -1,9 +1,9 @@
 ---
-title: "&lt;webHttp&gt;"
+title: "<webHttp>"
 ms.date: "03/30/2017"
 ms.assetid: 1f9d0754-d41e-44ce-a298-e51cb3096c64
 ---
-# &lt;webHttp&gt;
+# \<webHttp>
 This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior> on an endpoint through configuration. This behavior, when used in conjunction with the [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) standard binding, enables the Web programming model for a Windows Communication Foundation (WCF) service.  
   
  \<system.ServiceModel>  
@@ -15,7 +15,7 @@ This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior
 ## Syntax  
   
 ```xml  
-<webHttp />  
+<webHttp />
 ```  
   
 ## Attributes and Elements  
@@ -40,8 +40,8 @@ This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies the set of endpoint behaviors.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WebHttpElement>  
- <xref:System.ServiceModel.Description.WebHttpBehavior>  
- [AJAX Integration and JSON Support](../../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md)  
- [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.WebHttpElement>
+- <xref:System.ServiceModel.Description.WebHttpBehavior>
+- [AJAX Integration and JSON Support](../../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md)
+- [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)

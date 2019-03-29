@@ -1,5 +1,6 @@
 ---
-title: "await (C# Reference)"
+title: "await - C# Reference"
+ms.custom: seodec18
 ms.date: 05/22/2017
 f1_keywords: 
   - "await_CSharpKeyword"
@@ -14,17 +15,16 @@ The `await` operator is applied to a task in an asynchronous method to insert a 
 `await` can only be used in an asynchronous method modified by the [async](../../../csharp/language-reference/keywords/async.md) keyword. Such a method, defined by using the `async` modifier and usually containing one or more `await` expressions, is referred to as an *async method*.  
   
 > [!NOTE]
->  The `async` and `await` keywords were introduced in C# 5. For an introduction to async programming, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md).  
+> The `async` and `await` keywords were introduced in C# 5. For an introduction to async programming, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md).  
   
-The task to which the `await` operator is applied typically is returned by a call to a method that implements the [Task-Based Asynchronous Pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md). They include methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, and `System.Threading.Tasks.ValueType<TResult>` objects.  
+The task to which the `await` operator is applied typically is returned by a call to a method that implements the [Task-Based Asynchronous Pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md). They include methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, and <xref:System.Threading.Tasks.ValueTask%601> objects.  
 
-  
- In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns a `Task<byte[]>`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator suspends execution until the work of the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> method is complete. In the meantime, control is returned to the caller of `GetPageSizeAsync`. When the task finishes execution, the `await` expression evaluates to a byte array.  
+In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns a `Task<byte[]>`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator suspends execution until the work of the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> method is complete. In the meantime, control is returned to the caller of `GetPageSizeAsync`. When the task finishes execution, the `await` expression evaluates to a byte array.  
 
 [!code-csharp[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await1.cs)]  
 
 > [!IMPORTANT]
->  For the complete example, see [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the sample from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f) on the Microsoft website. The example is in the AsyncWalkthrough_HttpClient project.  
+> For the complete example, see [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the sample from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f) on the Microsoft website. The example is in the AsyncWalkthrough_HttpClient project.  
   
 As shown in the previous example, if `await` is applied to the result of a method call that returns a `Task<TResult>`, then the type of the `await` expression is `TResult`. If `await` is applied to the result of a method call that returns a `Task`, then the type of the `await` expression is `void`. The following example illustrates the difference.  
   
@@ -59,9 +59,9 @@ The following example returns the total number of characters in the pages whose 
 
 [!code-csharp[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await2.cs)]  
 
-Because the use of `async` and `await` in an application entry point is not supported, we cannot apply the `async` attribute to the `Main` method, nor can we await the `GetPageLengthsAsync` method call. We can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. 
+The preceding example uses C# 7.1, which supports the [`async` `Main` method](../../programming-guide/main-and-command-args/index.md). Because earlier C# versions don't support application entry points that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you cannot apply the `async` modifier to the `Main` method and await the `GetPageLengthsAsync` method call. In that case, you can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [Select the C# language version](../configure-language-version.md).
 
-## See also  
-- [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)   
-- [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
+## See also
+- [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)
+- [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [async](../../../csharp/language-reference/keywords/async.md)

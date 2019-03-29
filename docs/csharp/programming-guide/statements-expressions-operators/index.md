@@ -1,5 +1,6 @@
 ---
-title: "Statements, Expressions, and Operators (C# Programming Guide)"
+title: "Statements, Expressions, and Operators - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "expressions [C#]"
@@ -38,6 +39,7 @@ The C# code that comprises an application consists of statements made up of keyw
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)

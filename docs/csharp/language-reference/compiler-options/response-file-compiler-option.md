@@ -48,5 +48,6 @@ The @ option lets you specify a file that contains compiler options and source c
 -target:exe -out:MyExe.exe source1.cs source2.cs  
 ```  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

@@ -30,7 +30,7 @@ HRESULT CanLaunchOrAttach (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProcessId`  
  [in] The ID of an existing process.  
   
@@ -62,5 +62,5 @@ HRESULT CanLaunchOrAttach (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

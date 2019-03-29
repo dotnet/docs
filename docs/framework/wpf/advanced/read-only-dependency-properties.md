@@ -13,7 +13,7 @@ This topic describes read-only dependency properties, including existing read-on
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you understand the basic scenarios of implementing a dependency property, and how metadata is applied to a custom dependency property. See [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md) and [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md) for context.  
+ This topic assumes that you understand the basic scenarios of implementing a dependency property, and how metadata is applied to a custom dependency property. See [Custom Dependency Properties](custom-dependency-properties.md) and [Dependency Property Metadata](dependency-property-metadata.md) for context.  
   
 <a name="existing"></a>   
 ## Existing Read-Only Dependency Properties  
@@ -25,7 +25,7 @@ This topic describes read-only dependency properties, including existing read-on
 ## Creating Custom Read-Only Dependency Properties  
  Make sure to read the section above regarding why read-only dependency properties won't work for many typical dependency-property scenarios. But if you have an appropriate scenario, you may wish to create your own read-only dependency property.  
   
- Much of the process of creating a read-only dependency property is the same as is described in the [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md) and [Implement a Dependency Property](../../../../docs/framework/wpf/advanced/how-to-implement-a-dependency-property.md) topics. There are three important differences:  
+ Much of the process of creating a read-only dependency property is the same as is described in the [Custom Dependency Properties](custom-dependency-properties.md) and [Implement a Dependency Property](how-to-implement-a-dependency-property.md) topics. There are three important differences:  
   
 -   When registering your property, call the <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A> method instead of the normal <xref:System.Windows.DependencyProperty.Register%2A> method for property registration.  
   
@@ -35,9 +35,9 @@ This topic describes read-only dependency properties, including existing read-on
   
  Whatever private field or value you have backing your read-only dependency property can of course be fully writable using whatever logic you decide. However, the most straightforward way to set the property either initially or as part of runtime logic is to use the property system's [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], rather than circumventing the property system and setting the private backing field directly. In particular, there is a signature of <xref:System.Windows.DependencyObject.SetValue%2A> that accepts a parameter of type <xref:System.Windows.DependencyPropertyKey>. How and where you set this value programmatically within your application logic will affect how you may wish to set access on the <xref:System.Windows.DependencyPropertyKey> created when you first registered the dependency property. If you handle this logic all within the class you could make it private, or if you require it to be set from other portions of the assembly you might set it internal. One approach is to call <xref:System.Windows.DependencyObject.SetValue%2A> within a class event handler of a relevant event that informs a class instance that the stored property value needs to be changed. Another approach is to tie dependency properties together by using paired <xref:System.Windows.PropertyChangedCallback> and <xref:System.Windows.CoerceValueCallback> callbacks as part of those properties' metadata during registration.  
   
- Because the <xref:System.Windows.DependencyPropertyKey> is private, and is not propagated by the property system outside of your code, a read-only dependency property does have better setting security than a read-write dependency property. For a read-write dependency property, the identifying field is explicitly or implicitly public and thus the property is widely settable. For more specifics, see [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md).  
+ Because the <xref:System.Windows.DependencyPropertyKey> is private, and is not propagated by the property system outside of your code, a read-only dependency property does have better setting security than a read-write dependency property. For a read-write dependency property, the identifying field is explicitly or implicitly public and thus the property is widely settable. For more specifics, see [Dependency Property Security](dependency-property-security.md).  
   
-## See Also  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [Styling and Templating](../controls/styling-and-templating.md)

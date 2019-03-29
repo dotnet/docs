@@ -9,6 +9,6 @@ Counter Name: Instances Created Per Second.
 ## Description  
  Total number of service instances created in a second.  
   
- This counter is of performance counter type [PERF_COUNTER_COUNTER](http://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula.  
+ This counter is of performance counter type [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula.  
   
  (N 1 - N 0 ) / ( (D 1 -D 0 ) / F)

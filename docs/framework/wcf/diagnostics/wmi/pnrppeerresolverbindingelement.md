@@ -6,12 +6,12 @@ ms.assetid: 050f24bf-dc23-4181-ad1e-a4cce1dc89fb
 # PnrpPeerResolverBindingElement
 PnrpPeerResolverBindingElement  
   
-## Syntax  
- `class PnrpPeerResolverBindingElement : PeerResolverBindingElement`  
-  
- `{`  
-  
- `};`  
+## Syntax 
+```csharp 
+class PnrpPeerResolverBindingElement : PeerResolverBindingElement
+{ 
+};
+```  
   
 ## Methods  
  The PnrpPeerResolverBindingElement class inherits from PeerResolverBindingElement but does not define additional methods or properties.  
@@ -22,5 +22,5 @@ PnrpPeerResolverBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>

@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "staleness of cached resources"
   - "age of cached resources"
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Cache Policy Interaction—Maximum Age and Maximum Staleness
 To help ensure that the freshest content is returned to the client application, the interaction of client cache policy and server revalidation requirements always results in the most conservative cache policy. All the examples in this topic illustrate the cache policy for a resource that is cached on January 1 and expires on January 4.  
@@ -32,10 +29,10 @@ To help ensure that the freshest content is returned to the client application, 
   
 -   If the cache policy sets `maxAge` = 1 day and `maxStale` = 1 day, the content is revalidated on January 2.  
   
-## See Also  
- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  
- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)  
- [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)  
- [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)
+## See also
+- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
+- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
+- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)
+- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)
+- [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)
+- [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)

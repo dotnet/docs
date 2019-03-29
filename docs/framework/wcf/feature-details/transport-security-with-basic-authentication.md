@@ -5,13 +5,11 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Transport Security with Basic Authentication
-The following illustration shows a Windows Communication Foundation (WCF) service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. For more information about enabling basic authentication on Internet Information Services (IIS), see [http://go.microsoft.com/fwlink/?LinkId=83822](http://go.microsoft.com/fwlink/?LinkId=83822).  
+The following illustration shows a Windows Communication Foundation (WCF) service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. For more information about enabling basic authentication on Internet Information Services (IIS), see [https://go.microsoft.com/fwlink/?LinkId=83822](https://go.microsoft.com/fwlink/?LinkId=83822).  
   
- ![Transport security with basic authentication](../../../../docs/framework/wcf/feature-details/media/securedbyusername.gif "SecuredbyUsername")  
+ ![Screenshot that shows transport security with basic authentication.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -106,11 +104,11 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
+- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -404,7 +404,7 @@ Expression<Func<int, int>> factorial = (n) =>
 
 This code represents one possible implementation for the
 mathematical *factorial* function. The way I've written this code highlights
-two limitiations of building expression trees by assigning lambda expressions
+two limitations of building expression trees by assigning lambda expressions
 to Expressions. First, statement lambdas are not allowed. That means I can't use
 loops, blocks, if / else statements, and other control structures common in C#. I'm
 limited to using expressions. Second, I can't recursively call the same expression.

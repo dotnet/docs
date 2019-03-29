@@ -17,10 +17,7 @@ This section contains samples that demonstrate custom channels.
  Demonstrates how to build the channel stack in a custom way by implementing <xref:System.ServiceModel.ServiceHostBase> directly and how to create a custom channel dispatcher in Web host environment.  
   
  [Chunking Channel](../../../../docs/framework/wcf/samples/chunking-channel.md)  
- Demonstrates how to limit the amount of memory used to buffer large messages sent using WCF.  
-  
- [HTTP Acknowledgement Channel](../../../../docs/framework/wcf/samples/http-acknowledgement-channel.md)  
- Demonstrates a layered channel which changes the one-way messaging pattern.  
+ Demonstrates how to limit the amount of memory used to buffer large messages sent using WCF.
   
  [HttpCookieSession](../../../../docs/framework/wcf/samples/httpcookiesession.md)  
  Demonstrates how to build a custom protocol channel to use HTTP cookies for session management.  

@@ -1,6 +1,7 @@
 ---
 title: "Best Practices for Using Strings in .NET"
-ms.date: "08/22/2018"
+description: Learn how to use strings effectively in .NET applications.
+ms.date: "09/13/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -19,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Best Practices for Using Strings in .NET
 <a name="top"></a> .NET provides extensive support for developing localized and globalized applications, and makes it easy to apply the conventions of either the current culture or a specific culture when performing common operations such as sorting and displaying strings. But sorting or comparing strings is not always a culture-sensitive operation. For example, strings that are used internally by an application typically should be handled identically across all cultures. When culturally independent string data, such as XML tags, HTML tags, user names, file paths, and the names of system objects, are interpreted as if they were culture-sensitive, application code can be subject to subtle bugs, poor performance, and, in some cases, security issues.  
@@ -117,10 +119,12 @@ ms.author: "ronpet"
  String comparison is the heart of many string-related operations, particularly sorting and testing for equality. Strings sort in a determined order: If "my" appears before "string" in a sorted list of strings, "my" must compare less than or equal to "string". Additionally, comparison implicitly defines equality. The comparison operation returns zero for strings it deems equal. A good interpretation is that neither string is less than the other. Most meaningful operations involving strings include one or both of these procedures: comparing with another string, and executing a well-defined sort operation.  
 
 > [!NOTE]
-> You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems.
+> You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the latest version of the sort weight table for Linux and macOS. The specific version of the sort weight table on Linux and macOS depends on the version of the [International Components for Unicode](http://site.icu-project.org/) libraries installed on the system. For information on ICU versions and the Unicode versions that they implement, see [Downloading ICU](http://site.icu-project.org/download).
 
  However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.  
-  
+
+In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode). 
+
 <a name="current_culture"></a>   
 ### String Comparisons that Use the Current Culture  
  One criterion involves using the conventions of the current culture when comparing strings. Comparisons that are based on the current culture use the thread's current culture or locale. If the culture is not set by the user, it defaults to the setting in the **Regional Options** window in Control Panel. You should always use comparisons that are based on the current culture when data is linguistically relevant, and when it reflects culture-sensitive user interaction.  
@@ -364,5 +368,6 @@ ms.author: "ronpet"
 18.02.1905 15:12  
 ```  
   
-## See Also  
- [Manipulating Strings](../../../docs/standard/base-types/manipulating-strings.md)
+## See also
+
+- [Manipulating Strings](../../../docs/standard/base-types/manipulating-strings.md)

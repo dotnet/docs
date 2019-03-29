@@ -1,10 +1,10 @@
 ---
-title: "&lt;add&gt; of &lt;participants&gt;"
+title: "<add> of <participants>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 3c730850-6f8e-4102-acb8-8effb4e09463
 ---
-# &lt;add&gt; of &lt;participants&gt;
+# \<add> of \<participants>
 Configure a tracking participant that listens to the tracking records being emitted from the runtime directly and process them in whatever way it was configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.  
   
  For more information in workflow tracking and tracking participants, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md).  
@@ -81,9 +81,9 @@ Configure a tracking participant that listens to the tracking records being emit
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>  
- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>  
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
+- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
+- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)

@@ -8,7 +8,7 @@ ms.assetid: ae55e9cc-0809-442f-921f-d644290ebf15
 # Analytic Tracing Overview
 Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-current-long-md.md)] is a high performance and low verbosity tracing feature set on top of Event Tracing for Windows (ETW). ETW runs at the kernel-level to greatly reduce the overhead of tracing operations. It efficiently buffers user- and kernel-mode events, and allows dynamic enabling of logging without requiring service restarts. The tracing data is available in the event logs after it has been emitted and received.  
   
- For more information about ETW, see [Improve Debugging and Performance Tuning with ETW](http://go.microsoft.com/fwlink/?LinkId=164781).  
+ For more information about ETW, see [Improve Debugging and Performance Tuning with ETW](https://go.microsoft.com/fwlink/?LinkId=164781).  
   
  In addition to using the Windows System, Security, and Application event logs to analyze application, [!INCLUDE[wv](../../../../../includes/wv-md.md)] and [!INCLUDE[lserver](../../../../../includes/lserver-md.md)] introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of WCF Trace Events, WCF Message Logs, and [!INCLUDE[wf1](../../../../../includes/wf1-md.md)] Tracking records to the Applications and Services Logs.  
   

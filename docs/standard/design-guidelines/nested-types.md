@@ -1,6 +1,6 @@
 ---
 title: "Nested Types"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "types, nested"
@@ -10,8 +10,7 @@ helpviewer_keywords:
   - "members [.NET Framework], type"
   - "class library design guidelines [.NET Framework], nested types"
 ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Nested Types
 A nested type is a type defined within the scope of another type, which is called the enclosing type. A nested type has access to all members of its enclosing type. For example, it has access to private fields defined in the enclosing type and to protected fields defined in all ascendants of the enclosing type.  
@@ -40,6 +39,7 @@ A nested type is a type defined within the scope of another type, which is calle
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

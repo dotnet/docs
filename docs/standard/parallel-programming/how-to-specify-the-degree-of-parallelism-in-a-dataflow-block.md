@@ -25,7 +25,7 @@ This document describes how to set the <xref:System.Threading.Tasks.Dataflow.Exe
  [!code-vb[TPLDataflow_DegreeOfParallelism#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_degreeofparallelism/vb/dataflowdegreeofparallelism.vb#1)]  
   
 ## Compiling the Code  
- Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `DataflowDegreeOfParallelism.cs` (`DataflowDegreeOfParallelism.vb` for Visual Basic), and then run the following command in a Visual Studio Command Prompt window.  
+ Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `DataflowDegreeOfParallelism.cs` (`DataflowDegreeOfParallelism.vb` for Visual Basic), and then run the following command in a Developer Command Prompt for Visual Studio window.  
   
  Visual C#  
   
@@ -40,5 +40,6 @@ This document describes how to set the <xref:System.Threading.Tasks.Dataflow.Exe
   
  Because the <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> property represents the maximum degree of parallelism, the dataflow block might execute with a lesser degree of parallelism than you specify. The dataflow block can use a lesser degree of parallelism to meet its functional requirements or to account for a lack of available system resources. A dataflow block never chooses a greater degree of parallelism than you specify.  
   
-## See Also  
- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## See also
+
+- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

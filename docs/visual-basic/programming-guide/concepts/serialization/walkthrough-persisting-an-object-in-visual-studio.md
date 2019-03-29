@@ -25,7 +25,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To create the Loan class  
   
-1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](http://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
+1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
   
 2.  In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
   
@@ -209,6 +209,6 @@ Although you can set an object's properties to default values at design time, an
   
  At this point, you can again build and run the application. Initially, the default values appear in the text boxes. Try to change the values and enter a name in the fourth text box. Close the application and then run it again. Note that the new values now appear in the text boxes.  
   
-## See Also  
- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+## See also
+- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
+- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

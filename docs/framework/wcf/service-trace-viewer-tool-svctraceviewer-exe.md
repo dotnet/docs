@@ -44,7 +44,13 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 |ActivityTracing|Flow events between processing activities and components.<br /><br /> This level allows administrators and developers to correlate applications in the same application domain.<br /><br /> -   Traces for activity boundaries: start/stop.<br />-   Traces for transfers.|  
   
  You can use `add` to specify the name and type of the trace listener you want to use. In the example configuration, the Listener is named `sdt` and the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) is added as the type. Use `initializeData` to set the name of the log file for that Listener. In addition, you can substitute a fully-qualified path for a simple file name.  
-  
+
+Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes are displayed in the correct color. You can disable this change by removing the following setting from the *svcTraceViewer.exe.config* file:
+
+```xml
+<AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false" />
+```
+
 ## Using the Service Trace Viewer Tool  
   
 ### Opening and Viewing WCF Trace Files  
@@ -443,7 +449,7 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
  If you open a trace log created using an Arabic operating system, you may notice that the time filter does not work. For example, year 2005 corresponds to year 1427 in Arabic calendar. However, the time range supported by the Service Trace Viewer tool filter does not support a date earlier than 1752. This can imply that you are not able to select a correct date in the filter. To resolve this problem, you can create a custom filter (**View/Custom Filters**) using an XPath expression to include a specific time range.  
   
-## See Also  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Activity Tracing and Propagation for End-To-End Trace Correlation](http://msdn.microsoft.com/library/2c11a905-64f8-47b5-bae5-a74fc666137e)
+## See also
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [End-to-End Tracing](./diagnostics/tracing/end-to-end-tracing.md)

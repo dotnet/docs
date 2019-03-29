@@ -28,7 +28,7 @@ HRESULT EndInprocDebugging(
     [in]  DWORD dwProfilerContext);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProfilerContext`  
  [in] A value that identifies the debugging session. This value must be the same as that received in the [ICorProfilerInfo::BeginInprocDebugging](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-begininprocdebugging-method.md) method.  
   
@@ -46,5 +46,5 @@ HRESULT EndInprocDebugging(
   
  **.NET Framework Version:** 1.0  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

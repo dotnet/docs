@@ -38,7 +38,7 @@ Passing an argument to a parameter
 ## Parameter Data Type  
  You define a data type for a parameter by using the `As` clause in its declaration. For example, the following function accepts a string and an integer.  
   
- [!code-vb[VbVbcnProcedures#32](./codesnippet/VisualBasic/procedure-parameters-and-arguments_1.vb)]  
+ [!code-vb[VbVbcnProcedures#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#32)]  
   
  If the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `Off,` the `As` clause is optional, except that if any one parameter uses it, all parameters must use it. If type checking is `On`, the `As` clause is required for all procedure parameters.  
   
@@ -53,14 +53,14 @@ Passing an argument to a parameter
 ### Type Parameters  
  A *generic procedure* also defines one or more *type parameters* in addition to its normal parameters. A generic procedure allows the calling code to pass different data types each time it calls the procedure, so it can tailor the data types to the requirements of each individual call. See [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)  
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+## See also
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)
+- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)
+- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

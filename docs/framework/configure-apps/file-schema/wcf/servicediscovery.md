@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceDiscovery&gt;"
+title: "<serviceDiscovery>"
 ms.date: "03/30/2017"
 ms.assetid: a3c68a4a-fc95-43c5-aacb-785936c0cf39
 ---
-# &lt;serviceDiscovery&gt;
+# \<serviceDiscovery>
 Specifies the discoverability of service endpoints.  
   
  \<system.ServiceModel>  
@@ -20,17 +20,17 @@ Specifies the discoverability of service endpoints.
     <behavior name="String">
       <serviceDiscovery>
         <announcementEndpoints>
-          <endpoint name="String" 
+          <endpoint name="String"
                     kind="Type" />
         </announcementEndpoints>
         <discoveryEndpoints>
-          <endpoint name="String" 
+          <endpoint name="String"
                     kind="Type" />
         </discoveryEndpoints>
       </serviceDiscovery>
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  
@@ -59,26 +59,25 @@ Specifies the discoverability of service endpoints.
  The following configuration example specifies that the CalculatorService to be discoverable, and optionally specifies the announcement endpoint to be used.  
   
 ```xml  
-<services>  
-  <service name="CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-  ...  
-  </service>  
-</services>  
-  
-<behaviors>  
-  <serviceBehaviors>  
-    <behavior name="CalculatorServiceBehavior">  
-      <serviceDiscovery>  
-        <announcementEndpoints>  
-              <endpoint name="udpEndpoint"  
-                        kind="udpAnnouncementEndpoint" />  
-        </announcementEndpoints>  
-      </serviceDiscovery>  
-    </behavior>  
-  </serviceBehaviors>  
-</behaviors>  
+<services>
+  <service name="CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    ...
+  </service>
+</services>
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorServiceBehavior">
+      <serviceDiscovery>
+        <announcementEndpoints>
+          <endpoint name="udpEndpoint"
+                    kind="udpAnnouncementEndpoint" />
+        </announcementEndpoints>
+      </serviceDiscovery>
+    </behavior>
+  </serviceBehaviors>
+</behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>
+## See also
+- <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>

@@ -3,7 +3,6 @@ title: "Claims-Based Identity Model"
 ms.date: "03/30/2017"
 ms.assetid: 4a96a9af-d980-43be-bf91-341a23401431
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Claims-Based Identity Model
 When you build claims-aware applications, the user identity is represented in your application as a set of claims. One claim could be the user’s name, another might be an email address. The idea is that an external identity system is configured to give your application everything it needs to know about the user with each request she makes, along with cryptographic assurance that the identity data you receive comes from a trusted source.  
@@ -47,7 +46,7 @@ When you build claims-aware applications, the user identity is represented in yo
  Whatever issuing authority you choose, it plays a central role in your identity solution. When you factor authentication out of your application by relying on claims, you’re passing responsibility to that authority and asking it to authenticate users on your behalf.  
   
 ### Security Token Service (STS)  
- A security token service (STS) is the service component that builds, signs, and issues security tokens according to the WS-Trust and WS-Federation protocols. There’s a lot of work that goes into implementing these protocols, but WIF does all of this work for you, making it feasible for someone who isn’t an expert in the protocols to get an STS up and running with very little effort. You can use a pre-built STS such as [Active Directory® Federation Services (AD FS) 2.0](http://go.microsoft.com/fwlink/?LinkID=247516), a cloud STS such as a [Windows Azure Access Control Service (ACS)](http://go.microsoft.com/fwlink/?LinkID=247517), or, if you want to issue custom tokens or provide custom authentication or authorization, you can build your own custom STS using WIF. WIF makes it easy to build your own STS.  
+ A security token service (STS) is the service component that builds, signs, and issues security tokens according to the WS-Trust and WS-Federation protocols. There’s a lot of work that goes into implementing these protocols, but WIF does all of this work for you, making it feasible for someone who isn’t an expert in the protocols to get an STS up and running with very little effort. You can use a pre-built STS such as [Active Directory® Federation Services (AD FS) 2.0](https://go.microsoft.com/fwlink/?LinkID=247516), a cloud STS such as a [Windows Azure Access Control Service (ACS)](https://go.microsoft.com/fwlink/?LinkID=247517), or, if you want to issue custom tokens or provide custom authentication or authorization, you can build your own custom STS using WIF. WIF makes it easy to build your own STS.  
   
 ### Relying Party Application  
  When you build an application that relies on claims, you are building a relying party (RP) application. Synonyms for an RP include "claims-aware application" and "claims-based application". Web applications and Web services can both be RPs. A RP application consumes the tokens issued by a STS and extracts the claims from tokens to use them for identity related tasks. WIF offers functionalities to help you build RP applications.  
@@ -68,10 +67,10 @@ When you build claims-aware applications, the user identity is represented in yo
   
  This diagram shows a Web site (the relying party application, RP) that has been configured to use WIF for authentication and a client, a web browser, that wants to use that site.  
   
-1.  When an unauthenticated user requests a page their browser is redirected to the identity provider (IP) pages.  
+1.  When an unauthenticated user requests a page, their browser is redirected to the identity provider (IdP) pages.  
   
-2.  The IP requires the user to present their credentials, e.g. username/password, Kerberos, etc.  
+2.  The IdP requires the user to present their credentials, such as username/password or Kerberos authentication.  
   
-3.  The IP issues a token back to that is returned to the browser.  
+3.  The IdP issues a token back to that is returned to the browser.  
   
 4.  The browser is now redirected back to the originally requested page where WIF determines if the token satisfies the requirements to access the page. If so a cookie is issued to establish a session so the authentication only needs to occur once, and control is passed to the application.

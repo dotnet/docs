@@ -1,5 +1,6 @@
 ---
-title: "Delegates (C# Programming Guide)"
+title: "Delegates - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, delegates"
@@ -11,7 +12,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
  Delegates are used to pass methods as arguments to other methods. Event handlers are nothing more than methods that are invoked through delegates. You create a custom method, and a class such as a windows control can call your method when a certain event occurs. The following example shows a delegate declaration:  
   
- [!code-csharp[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideDelegates#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#20)]  
   
  Any method from any accessible class or struct that matches the delegate type can be assigned to the delegate. The method can be either static or an instance method. This makes it possible to programmatically change method calls, and also plug new code into existing classes.  
   
@@ -23,7 +24,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
 ## Delegates Overview  
  Delegates have the following properties:  
   
--   Delegates are like C++ function pointers but are type safe.  
+-   Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
   
 -   Delegates allow methods to be passed as parameters.  
   
@@ -39,7 +40,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   [Using Delegates](../../../csharp/programming-guide/delegates/using-delegates.md)  
   
--   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](http://msdn.microsoft.com/library/2e759bdf-7ca4-4005-8597-af92edf6d8f0)  
+-   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
   
 -   [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
   
@@ -51,15 +52,18 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   [How to: Declare, Instantiate, and Use a Delegate](../../../csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md)  
   
+  
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## Featured Book Chapters  
- [Delegates, Events, and Lambda Expressions](https://msdn.microsoft.com/library/orm-9780596516109-03-09.aspx) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://msdn.microsoft.com/library/orm-9780596516109-03.aspx)  
+ [Delegates, Events, and Lambda Expressions](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)  
   
- [Delegates and Events](https://msdn.microsoft.com/library/orm-9780596521066-01-17.aspx) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://msdn.microsoft.com/library/orm-9780596521066-01.aspx)  
+ [Delegates and Events](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652490%28v=orm.10%29) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v=orm.10%29)  
   
-## See Also  
- <xref:System.Delegate>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)
+## See also
+
+- <xref:System.Delegate>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)

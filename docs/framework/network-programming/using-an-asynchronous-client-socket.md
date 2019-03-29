@@ -17,9 +17,6 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "client sockets"
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Using an Asynchronous Client Socket
 An asynchronous client socket does not suspend the application while waiting for network operations to complete. Instead, it uses the standard .NET Framework asynchronous programming model to process the network connection on one thread while the application continues to run on the original thread. Asynchronous sockets are appropriate for applications that make heavy use of the network or that cannot wait for network operations to complete before continuing.  
@@ -282,7 +279,7 @@ private static void ReceiveCallback( IAsyncResult ar ) {
 }  
 ```  
   
-## See Also  
- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)  
- [Asynchronous Client Socket Example](../../../docs/framework/network-programming/asynchronous-client-socket-example.md)
+## See also
+- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)
+- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+- [Asynchronous Client Socket Example](../../../docs/framework/network-programming/asynchronous-client-socket-example.md)

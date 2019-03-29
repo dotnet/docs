@@ -45,7 +45,7 @@ Client applications must create, configure, and use WCF client or channel object
  Handling exceptions in client applications is straightforward. If a channel is opened, used, and closed inside a try block, then the conversation has succeeded, unless an exception is thrown. Typically, if an exception is thrown the conversation is aborted.  
   
 > [!NOTE]
->  Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Avoiding Problems with the Using Statement](../../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+>  Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Use Close and Abort to release WCF client resources](../../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
  The following code example shows the recommended client pattern using a try/catch block and not the `using` statement.  
   
@@ -87,11 +87,11 @@ Client applications must create, configure, and use WCF client or channel object
   
  Applications that use the implicit approach invoke the user-interface initializers, but if the user of the application fails to respond within the send timeout period of the binding, an exception is thrown when the user interface returns.  
   
-## See Also  
- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)  
- [How to: Access Services with One-Way and Request-Reply Contracts](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)  
- [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)  
- [How to: Access a WSE 3.0 Service](../../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)  
- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)  
- [How to: Call Service Operations Asynchronously](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)  
- [Middle-Tier Client Applications](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)
+## See also
+- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)
+- [How to: Access Services with One-Way and Request-Reply Contracts](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [How to: Access a WSE 3.0 Service](../../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [How to: Call Service Operations Asynchronously](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [Middle-Tier Client Applications](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)

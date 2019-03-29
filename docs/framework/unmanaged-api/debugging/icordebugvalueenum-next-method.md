@@ -32,7 +32,7 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of `ICorDebugValue` instances to be retrieved.  
   
@@ -51,6 +51,6 @@ HRESULT Next (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also
+
+

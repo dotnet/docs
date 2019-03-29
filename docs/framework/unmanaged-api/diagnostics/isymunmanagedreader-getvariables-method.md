@@ -32,7 +32,7 @@ HRESULT GetVariables (
         length_is (*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The parent of the variable.  
   
@@ -51,5 +51,5 @@ HRESULT GetVariables (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

@@ -29,7 +29,7 @@ HRESULT GetLocalVariableCount(
     [out] ULONG        *pcLocals);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata token of methods.  
   
@@ -42,5 +42,5 @@ HRESULT GetLocalVariableCount(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+## See also
+- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

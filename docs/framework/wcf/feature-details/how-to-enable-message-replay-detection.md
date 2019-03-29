@@ -14,7 +14,7 @@ ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
 # How to: Enable Message Replay Detection
 A replay attack occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack will process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
   
- For more information about message replay detection, see [Message Replay Detection](http://go.microsoft.com/fwlink/?LinkId=88536).  
+ For more information about message replay detection, see [Message Replay Detection](https://go.microsoft.com/fwlink/?LinkId=88536).  
   
  The following procedure demonstrates various properties that you can use to control replay detection using Windows Communication Foundation (WCF).  
   
@@ -96,9 +96,9 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
 -   <xref:System.ServiceModel.Channels>  
   
-## See Also  
- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>  
- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>  
- [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)  
- [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)  
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+## See also
+- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
+- [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)
+- [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

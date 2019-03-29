@@ -1,8 +1,6 @@
 ---
 title: "$ (Visual Basic Reference)"
 ms.date: 10/31/2017
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # $ (Visual Basic Reference)
 
@@ -14,6 +12,6 @@ The following example uses the `$` character to define an interpolated string.
 
 For more information on interpolated strings, see the [Interpolated Strings](../../programming-guide/language-features/strings/interpolated-strings.md) topic.
 
-## See Also  
- [Visual Basic Reference](../index.md)  
- [Visual Basic Special Characters](index.md)
+## See also
+- [Visual Basic Reference](../index.md)
+- [Visual Basic Special Characters](index.md)

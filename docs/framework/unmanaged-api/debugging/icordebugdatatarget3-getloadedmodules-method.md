@@ -18,7 +18,7 @@ HRESULT GetLoadedModules(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRequestedModules`  
  [in] The number of modules for which information is requested.  
   
@@ -42,6 +42,6 @@ HRESULT GetLoadedModules(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget3-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

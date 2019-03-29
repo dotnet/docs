@@ -29,7 +29,7 @@ HRESULT GetClass (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClass`  
  [out] A pointer to the address of the `ICorDebugClass` object that represents the class, or null, if this function is not a member of a class.  
   

@@ -30,7 +30,7 @@ HRESULT OpenScope(
     [in] ULONG32  endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `scopeId`  
  [in] The scope identifier for the scope.  
   
@@ -49,5 +49,5 @@ HRESULT OpenScope(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

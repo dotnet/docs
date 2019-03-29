@@ -15,13 +15,13 @@ This sample demonstrates how to implement an HTTP-based, RPC-based service - pop
   
  The App.config file configures the WCF service with a default <xref:System.ServiceModel.Description.WebHttpEndpoint> that has the <xref:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled%2A> property set to `true`. As a result, the WCF infrastructure creates an automatic HTML based help page at `http://localhost:8000/Customers/help` that provides information about how to construct HTTP requests to the service and how to consume the service’s HTTP response.  
   
- Program.cs demonstrates how a WCF channel factory can be used to make calls to the service and process responses. Note that this is just one way to access a WCF service. It is also possible to access the service using other .NET Framework classes like <xref:System.Net.HttpWebRequest> and <xref:System.Net.WebClient>. Other samples in the SDK (such as the [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md) sample and [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md) sample) show how to use these classes to communicate with a WCF service.  
+ Program.cs demonstrates how a WCF channel factory can be used to make calls to the service and process responses. Note that this is just one way to access a WCF service. It is also possible to access the service using other .NET Framework classes like <xref:System.Net.HttpWebRequest> and <xref:System.Net.WebClient>.
   
  The sample consists a self-hosted service and a client that both run within a console application. As the console application runs, the client makes requests to the service and writes the pertinent information from the responses to the console window.  
   
 #### To use this sample  
   
-1.  Open the solution for the Basic Http Service Sample. When launching [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], you must run as an administrator for the sample to execute successfully. Do this by right-clicking the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] icon and selecting **Run as Administrator** from the context menu.  
+1.  Open the solution for the Basic Http Service Sample. When launching Visual Studio 2012, you must run as an administrator for the sample to execute successfully. Do this by right-clicking the Visual Studio 2012 icon and selecting **Run as Administrator** from the context menu.  
   
 2.  Press CTRL+SHIFT+B to build the solution and then press Ctrl+F5 to run the console application without debugging. The console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser. As the sample runs, the client writes the status of the current activity.  
   
@@ -32,10 +32,6 @@ This sample demonstrates how to implement an HTTP-based, RPC-based service - pop
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\BasicHttpService`  
-  
-## See Also  
- [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md)  
- [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md)

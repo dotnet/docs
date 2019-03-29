@@ -104,7 +104,7 @@ In the `CreateServiceEndpoint` function, a `CustomEndpoint` object is created. I
 ```csharp
 public class CustomEndpoint : ServiceEndpoint
 {
-    public CustomEndpoint() 
+    public CustomEndpoint()
         : this(string.Empty)
     {
     }
@@ -133,7 +133,7 @@ public class CustomEndpoint : ServiceEndpoint
 
 #### To use this sample
 
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the StandardEndpoints.sln file.
+1.  Using Visual Studio 2012, open the StandardEndpoints.sln file.
 
 2.  Enable multiple projects to start up.
 
@@ -161,6 +161,6 @@ public class CustomEndpoint : ServiceEndpoint
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory doesn't exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory doesn't exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\StandardEndpoints`

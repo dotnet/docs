@@ -35,9 +35,10 @@ Sometimes called "fake sign" or "OSS sign", public signing includes the public k
 1. Open the **Properties** page for the project.
 1. Modify the **Delay sign only** property.
 
-## See Also
- [C# Compiler -delaysign option](delaysign-compiler-option.md)  
- [C# Compiler -keyfile option](keyfile-compiler-option.md)  
- [C# Compiler -keycontainer option](keycontainer-compiler-option.md)  
- [C# Compiler Options](index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler -delaysign option](delaysign-compiler-option.md)
+- [C# Compiler -keyfile option](keyfile-compiler-option.md)
+- [C# Compiler -keycontainer option](keycontainer-compiler-option.md)
+- [C# Compiler Options](index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

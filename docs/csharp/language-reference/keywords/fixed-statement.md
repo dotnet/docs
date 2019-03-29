@@ -1,5 +1,7 @@
 ---
-title: "fixed Statement (C# Reference)"
+title: "fixed Statement - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/10/2018
 f1_keywords: 
   - "fixed_CSharpKeyword"
@@ -65,10 +67,10 @@ In unsafe mode, you can allocate memory on the stack, where it is not subject to
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [unsafe](unsafe.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [unsafe](unsafe.md)
 - [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)

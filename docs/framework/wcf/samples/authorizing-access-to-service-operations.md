@@ -35,7 +35,7 @@ This sample demonstrates how to use the [\<serviceAuthorization>](../../../../do
   
  The <xref:System.Security.Permissions.PrincipalPermissionAttribute> is applied to each operation to require the caller to be part of the Windows administrators group, as shown in the following sample code.  
   
-```  
+```csharp
 [PrincipalPermission(SecurityAction.Demand,   
                              Role = "Builtin\\Administrators")]  
 public double Add(double n1, double n2)  
@@ -57,4 +57,4 @@ public double Add(double n1, double n2)
   
 3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-## See Also
+## See also

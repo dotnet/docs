@@ -82,8 +82,8 @@ Dim result = Await myTask
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
     ```  
@@ -111,11 +111,11 @@ Dim result = Await myTask
         ' Create and start the tasks. As each task finishes, DisplayResults   
         ' displays its length.  
         Dim download1 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com", client)  
+            ProcessURLAsync("https://msdn.microsoft.com", client)  
         Dim download2 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
         Dim download3 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client)  
   
         ' Await each task.  
         Dim length1 As Integer = Await download1  
@@ -159,11 +159,11 @@ Class MainWindow
         ' Create and start the tasks. As each task finishes, DisplayResults   
         ' displays its length.  
         Dim download1 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com", client)  
+            ProcessURLAsync("https://msdn.microsoft.com", client)  
         Dim download2 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)  
         Dim download3 As Task(Of Integer) =  
-            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client)  
+            ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client)  
   
         ' Await each task.  
         Dim length1 As Integer = Await download1  
@@ -190,14 +190,14 @@ Class MainWindow
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
 End Class  
 ```  
   
-## See Also  
- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+## See also
+- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)

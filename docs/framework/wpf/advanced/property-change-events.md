@@ -27,7 +27,7 @@ ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
   
  Because you have an old value and a new value, it might be tempting to use this event handler as a validator for the property value. However, that is not the design intention of most property changed events. Generally, the values are provided so that you can act on those values in other logic areas of your code, but actually changing the values from within the event handler is not advisable, and may cause unintentional recursion depending on how your handler is implemented.  
   
- If your property is a custom dependency property, or if you are working with a derived class where you have defined the instantiation code, there is a much better mechanism for tracking property changes that is built in to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system: the property system callbacks <xref:System.Windows.CoerceValueCallback> and <xref:System.Windows.PropertyChangedCallback>. For more details about how you can use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system for validation and coercion, see [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md) and [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md).  
+ If your property is a custom dependency property, or if you are working with a derived class where you have defined the instantiation code, there is a much better mechanism for tracking property changes that is built in to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system: the property system callbacks <xref:System.Windows.CoerceValueCallback> and <xref:System.Windows.PropertyChangedCallback>. For more details about how you can use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system for validation and coercion, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md) and [Custom Dependency Properties](custom-dependency-properties.md).  
   
 ### DependencyPropertyChanged Events  
  Another pair of types that are part of a property changed event scenario is <xref:System.Windows.DependencyPropertyChangedEventArgs> and <xref:System.Windows.DependencyPropertyChangedEventHandler>. Events for these property changes are not routed; they are standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] events. <xref:System.Windows.DependencyPropertyChangedEventArgs> is an unusual event data reporting type because it does not derive from <xref:System.EventArgs>; <xref:System.Windows.DependencyPropertyChangedEventArgs> is a structure, not a class.  
@@ -53,8 +53,8 @@ ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
   
  Property triggers are generally appropriate for scenarios where one or more appearance properties should change, based on the state of another property on the same element.  
   
- To learn more about property triggers, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
+ To learn more about property triggers, see [Styling and Templating](../controls/styling-and-templating.md).  
   
-## See Also  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+## See also
+- [Routed Events Overview](routed-events-overview.md)
+- [Dependency Properties Overview](dependency-properties-overview.md)

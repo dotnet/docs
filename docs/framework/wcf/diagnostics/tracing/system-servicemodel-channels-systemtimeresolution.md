@@ -9,7 +9,7 @@ System.ServiceModel.Channels.SystemTimeResolution
 ## Description  
  The operating system's timer resolution was detected as *n* ticks, which is approximately *m* milliseconds. Where *n* and *m* are numeric values.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

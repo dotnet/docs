@@ -10,7 +10,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Performance Counters in the .NET Framework
-This topic provides a list of performance counters you can find in the [Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx).  
+This topic provides a list of performance counters you can find in the [Windows Performance Monitor](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29).  
   
 -   [Exception performance counters](#exception)  
   
@@ -217,7 +217,7 @@ This topic provides a list of performance counters you can find in the [Performa
   
  Performance counters are grouped into Categories. An application can list all of the categories with the following example code:  
   
-```  
+```csharp
 PerformanceCounterCategory[] Array = PerformanceCounterCategory.GetCategories();  
 for (int i = 0; i < Array.Length; i++)  
 {  
@@ -245,6 +245,6 @@ for (int i = 0; i < Array.Length; i++)
 |**Stack Walk Depth**|Displays the depth of the stack during that last runtime code access security check. Runtime code access security checks are performed by walking the stack. This counter is not an average; it displays only the last observed value.|  
 |**Total Runtime Checks**|Displays the total number of runtime code access security checks performed since the application started. Runtime code access security checks are performed when a caller demands a particular permission. The runtime check is made on every call by the caller and examines the current thread stack of the caller. When used with the **Stack Walk Depth** counter, this counter indicates the performance penalty that occurs for security checks.|  
   
-## See Also  
- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)  
- [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)
+## See also
+- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
+- [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)

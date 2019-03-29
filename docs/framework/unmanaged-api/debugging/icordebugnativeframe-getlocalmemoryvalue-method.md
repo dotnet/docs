@@ -32,7 +32,7 @@ HRESULT GetLocalMemoryValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the value.  
   
@@ -54,5 +54,5 @@ HRESULT GetLocalMemoryValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

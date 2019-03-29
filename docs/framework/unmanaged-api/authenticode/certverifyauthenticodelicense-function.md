@@ -25,7 +25,7 @@ HRESULT CertVerifyAuthenticodeLicense (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLicenseBlob`  
  [in] The Authenticode XrML license to be verified.  
   
@@ -59,7 +59,7 @@ HRESULT CertVerifyAuthenticodeLicense (
 ## Return Value  
  Returns `S_OK` if successful. Otherwise, returns an error code.  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)  
- [GetHashFromHandle Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [GetHashFromHandle Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

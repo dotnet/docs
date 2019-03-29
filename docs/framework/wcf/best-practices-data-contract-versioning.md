@@ -64,7 +64,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
     2.  If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. For more information about the callback, see [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
   
-    3.  The `Order` property on the `DataMemberAttribute` should be used to make sure that all of the newly added data members appear after the existing data members. The recommended way of doing this is as follows: None of the data members in the first version of the data contract should have their `Order` property set. All of the data members added in version 2 of the data contract should have their `Order` property set to 2. All of the data members added in version 3 of the data contract should have their `Order` set to 3, and so on. It is permissible to have more than one data member set to the same `Order` number.  
+    3.  The <xref:System.Runtime.Serialization.DataMemberAttribute.Order?displayProperty=nameWithType> property should be used to make sure that all of the newly added data members appear after the existing data members. The recommended way of doing this is as follows: None of the data members in the first version of the data contract should have their `Order` property set. All of the data members added in version 2 of the data contract should have their `Order` property set to 2. All of the data members added in version 3 of the data contract should have their `Order` set to 3, and so on. It is permissible to have more than one data member set to the same `Order` number.  
   
 9. Do not remove data members in later versions, even if the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property was left at its default property of `false` in prior versions.  
   
@@ -84,18 +84,18 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  Some of the guidelines listed here can be safely ignored when special circumstances apply. Make sure you fully understand the serialization, deserialization, and schema mechanisms involved before deviating from the guidelines.  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
- <xref:System.Runtime.Serialization.IExtensibleDataObject>  
- <xref:System.ServiceModel.ServiceBehaviorAttribute>  
- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>  
- <xref:System.Runtime.Serialization.ExtensionDataObject>  
- <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
- [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)  
- [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)  
- [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>
+- <xref:System.Runtime.Serialization.IExtensibleDataObject>
+- <xref:System.ServiceModel.ServiceBehaviorAttribute>
+- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>
+- <xref:System.Runtime.Serialization.ExtensionDataObject>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute>
+- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)
+- [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)
+- [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
+- [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)

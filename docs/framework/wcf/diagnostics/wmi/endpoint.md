@@ -8,7 +8,7 @@ Endpoint
   
 ## Syntax  
   
-```  
+```csharp
 class Endpoint  
 {  
   string Address;  

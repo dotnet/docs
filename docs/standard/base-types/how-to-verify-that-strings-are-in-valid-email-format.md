@@ -1,6 +1,6 @@
 ---
 title: "How to: Verify that Strings Are in Valid Email Format"
-ms.date: "08/10/2018"
+ms.date: "12/10/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -97,5 +97,6 @@ vbc /t:library RegexUtilities.vb
     vbc Example.vb /r:RegexUtilities.dll  
     ```  
   
-## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

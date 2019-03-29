@@ -27,7 +27,7 @@ This topic describes how you can view message logs.
   
 -   If you must view all three logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at the same time, you can modify the relay service by creating a new <xref:System.ServiceModel.Channels.Message> instance. This instance should be a copy of the body of the incoming message, plus all the headers except for the `ActivityId` and `Action` headers. The following example code demonstrates how to do this.  
   
-```  
+```csharp
 Message outgoingMessage = Message.CreateMessage(incomingMessage.Version, incomingMessage.Headers.Action, incomingMessage.GetReaderAtBodyContents());  
   
 for (int i = 0; i < incomingMessage.Headers.Count; i++)  
@@ -54,7 +54,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 -   Encoding is enabled for transforming to UTF-8.  
   
-## See Also  
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
+## See also
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)

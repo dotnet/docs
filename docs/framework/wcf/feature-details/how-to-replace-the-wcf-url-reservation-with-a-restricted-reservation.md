@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2754d223-79fc-4e2b-a6ce-989889f2abfa
 ---
 # How to: Replace the WCF URL Reservation with a Restricted Reservation
-A URL reservation allows you to restrict who can receive messages from a URL or a set of URLs. A reservation consists of a URL template, an access control list (ACL), and a set of flags. The URL template defines which URLs the reservation affects. For more information about how URL templates are processed, see [Routing Incoming Requests](http://go.microsoft.com/fwlink/?LinkId=136764). The ACL controls what user or group of users is permitted to receive messages from the specified URLs. The flags indicate whether the reservation is to give a user or group permission to listen on the URL directly or to delegate the permission to listen to some other process.  
+A URL reservation allows you to restrict who can receive messages from a URL or a set of URLs. A reservation consists of a URL template, an access control list (ACL), and a set of flags. The URL template defines which URLs the reservation affects. For more information about how URL templates are processed, see [Routing Incoming Requests](https://go.microsoft.com/fwlink/?LinkId=136764). The ACL controls what user or group of users is permitted to receive messages from the specified URLs. The flags indicate whether the reservation is to give a user or group permission to listen on the URL directly or to delegate the permission to listen to some other process.  
   
  As part of the default operating system configuration, Windows Communication Foundation (WCF) creates a globally accessible reservation for port 80 to enable all users to run applications that use a dual HTTP binding for duplex communication. Because the ACL on this reservation is for everyone, administrators cannot explicitly allow or disallow permission to listen on a URL or set of URLs. This topic explains how to delete this reservation and how to re-create the reservation with a restricted ACL.  
   
@@ -18,7 +18,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
             SDDL: D:(A;;GX;;;WD)  
 ```  
   
- The reservation consists of a URL template used when a WCF application is using an HTTP dual binding for duplex communication. URLs of this form are used for a WCF service to send messages back to the WCF client when communicating over a HTTP dual binding. Everyone is given permission to listen on the URL but not to delegate listening to another process. Finally, the ACL is described in Security Descriptor Definition Language (SSDL). For more information about SSDL, see [SSDL](http://go.microsoft.com/fwlink/?LinkId=136789)  
+ The reservation consists of a URL template used when a WCF application is using an HTTP dual binding for duplex communication. URLs of this form are used for a WCF service to send messages back to the WCF client when communicating over a HTTP dual binding. Everyone is given permission to listen on the URL but not to delegate listening to another process. Finally, the ACL is described in Security Descriptor Definition Language (SSDL). For more information about SSDL, see [SSDL](https://go.microsoft.com/fwlink/?LinkId=136789)  
   
 ### To delete the WCF URL reservation  
   

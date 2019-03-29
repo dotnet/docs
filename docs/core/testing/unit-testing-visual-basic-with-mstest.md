@@ -1,11 +1,12 @@
 ---
-title: Unit testing Visual Basic in .NET Core using dotnet test and MSTest
+title: Unit testing Visual Basic in .NET Core with dotnet test and MSTest
 description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/01/2017
 dev_langs: 
   - "vb"
+ms.custom: "seodec18"
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and MStest
 
@@ -24,7 +25,7 @@ Inside the solution directory, create a *PrimeService* directory. You have the f
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib -lang VB`](../tools/dotnet-new.md) to create the source project. Rename *Class1.VB* to *PrimeService.VB*. To use test-driven development (TDD), you create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib -lang VB`](../tools/dotnet-new.md) to create the source project. Rename *Class1.VB* to *PrimeService.VB*. You create a failing implementation of the `PrimeService` class:
 
 ```vb
 Imports System
@@ -89,7 +90,7 @@ Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj`](../too
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.vb* from the *PrimeService.Tests* directory and create a new Visual Basic file named *PrimeService_IsPrimeShould.VB*. Add the following code:
+You write one failing test, make it pass, then repeat the process. Remove *UnitTest1.vb* from the *PrimeService.Tests* directory and create a new Visual Basic file named *PrimeService_IsPrimeShould.VB*. Add the following code:
 
 ```vb
 Imports Microsoft.VisualStudio.TestTools.UnitTesting

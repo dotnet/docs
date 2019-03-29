@@ -91,7 +91,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
     ```csharp  
     var length = await firstFinishedTask;  
-    resultsTextBox.Text += String.Format("\r\nLength of the downloaded website:  {0}\r\n", length);  
+    resultsTextBox.Text += $"\r\nLength of the downloaded website:  {length}\r\n";
     ```  
   
  Run the program several times to verify that different downloads finish first.  
@@ -191,7 +191,7 @@ namespace CancelAfterOneTask
             //    byte[] urlContents = await response.Content.ReadAsByteArrayAsync();  
   
             //    resultsTextBox.Text +=  
-            //        String.Format("\r\nLength of the downloaded string: {0}.\r\n", urlContents.Length);  
+            //        $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
             //}  
   
             // ***Create a query that, when executed, returns a collection of tasks.  
@@ -212,7 +212,7 @@ namespace CancelAfterOneTask
             // Run the program several times to demonstrate that different  
             // websites can finish first.  
             var length = await firstFinishedTask;  
-            resultsTextBox.Text += String.Format("\r\nLength of the downloaded website:  {0}\r\n", length);  
+            resultsTextBox.Text += $"\r\nLength of the downloaded website:  {length}\r\n";
         }  
   
         // ***Bundle the processing steps for a website into one async method.  
@@ -232,13 +232,13 @@ namespace CancelAfterOneTask
         {  
             List<string> urls = new List<string>   
             {   
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             };  
             return urls;  
         }  
@@ -251,8 +251,9 @@ namespace CancelAfterOneTask
 }  
 ```  
   
-## See Also  
- <xref:System.Threading.Tasks.Task.WhenAny%2A>  
- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)  
- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+## See also
+
+- <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

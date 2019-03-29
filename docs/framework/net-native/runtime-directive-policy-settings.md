@@ -7,7 +7,7 @@ ms.author: "ronpet"
 ---
 # Runtime Directive Policy Settings
 > [!NOTE]
->  This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](http://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
+>  This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
   
  Runtime directive policy settings for .NET Native determine the availability of metadata for types and type members at run time. Without the necessary metadata, operations that rely on reflection, serialization and deserialization, or marshaling of .NET Framework types to COM or the Windows Runtime can fail and throw an exception. Most common exceptions are [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) and (in the case of interop) [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md).  
   
@@ -121,6 +121,6 @@ ms.author: "ronpet"
 |`Required PublicAndInternal`|Enables the policy for public and internal types or members, and ensures that metadata for public and internal types and members is always available. This setting differs from `PublicAndInternal`, which makes metadata for public and internal types and members available only if the tool chain determines that it's necessary.|✓||  
 |`Required All`|Requires the tool chain to keep all types and members whether or not they're used, and enables policy for them.|✓||  
   
-## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

@@ -2,8 +2,6 @@
 title: "Secure Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Secure Sessions
 A feature of Windows Communication Foundation (WCF) is reliable sessions that guarantee messages are received in the order they were sent. The topics in this section discuss the security implications to consider when creating a reliable session. For more information about reliable sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
@@ -30,7 +28,7 @@ A feature of Windows Communication Foundation (WCF) is reliable sessions that gu
   
  [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
   
-## See Also  
- [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)  
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
+## See also
+- [How to: Enable Message Replay Detection](../../../../docs/framework/wcf/feature-details/how-to-enable-message-replay-detection.md)
+- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)

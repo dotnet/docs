@@ -65,20 +65,20 @@ End Get
   
      The following example illustrates two ways the read-only property `quoteForTheDay` can return the value held in the private variable `quoteValue`.  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#27)]  
   
-     [!code-vb[VbVbalrStatements#28](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_2.vb)]  
+     [!code-vb[VbVbalrStatements#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#28)]  
   
-     [!code-vb[VbVbalrStatements#29](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_3.vb)]  
+     [!code-vb[VbVbalrStatements#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#29)]  
   
 ## Example  
  The following example uses the `Get` statement to return the value of a property.  
   
- [!code-vb[VbVbalrStatements#30](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/get-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#30)]  
   
-## See Also  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Walkthrough: Defining Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)
+## See also
+- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Walkthrough: Defining Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)

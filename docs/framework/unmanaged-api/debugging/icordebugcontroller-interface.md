@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugController Interface1"
+title: "ICorDebugController Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugController"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugController Interface1
+# ICorDebugController Interface
+
 Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:System.AppDomain>, in which code execution context can be controlled.  
   
 ## Methods  
@@ -50,5 +51,5 @@ Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:Syste
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

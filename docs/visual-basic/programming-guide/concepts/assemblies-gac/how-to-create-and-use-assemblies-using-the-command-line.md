@@ -2,8 +2,6 @@
 title: "How to: Create and Use Assemblies Using the Command Line (Visual Basic)"
 ms.date: 03/14/2018
 ms.assetid: 229ff9fb-1bd1-403b-946b-526104864c60
-author: rpetrusha
-ms.author: ronpet
 ---
 # How to: Create and Use Assemblies Using the Command Line (Visual Basic)
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  
@@ -113,7 +111,7 @@ vbc -out:TestCode.exe -reference:MathLibrary.DLL TestCode.vb
   
  For more information about building from the command line, see  and [Building from the Command Line](../../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
-## See Also  
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)
+## See also
+- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)

@@ -68,7 +68,7 @@ Binding customBinding = new CustomBinding(
 ### Example  
  This example implements profile binding in `SampleProfileUdpBinding`, which derives from <xref:System.ServiceModel.Channels.Binding>. The `SampleProfileUdpBinding` contains up to four binding elements within it: one user-created `UdpTransportBindingElement`; and three system-provided: `TextMessageEncodingBindingElement`, `CompositeDuplexBindingElement`, and `ReliableSessionBindingElement`.  
   
-```  
+```csharp
 public override BindingElementCollection CreateBindingElements()  
 {     
     BindingElementCollection bindingElements = new BindingElementCollection();  
@@ -112,6 +112,6 @@ public override BindingElementCollection CreateBindingElements()
 ## Deriving from a Standard Binding  
  Instead of creating an entirely new binding class, it may be possible for you to extend one of the existing system-provided bindings. Much like the preceding case, you must override the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method and the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property.  
   
-## See Also  
- <xref:System.ServiceModel.Channels.Binding>  
- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
+## See also
+- <xref:System.ServiceModel.Channels.Binding>
+- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)

@@ -48,62 +48,59 @@ Custom serialization is the process of controlling the serialization and deseria
   
  Implementing <xref:System.Runtime.Serialization.ISerializable> involves implementing the `GetObjectData` method and a special constructor that is used when the object is deserialized. The following sample code shows how to implement <xref:System.Runtime.Serialization.ISerializable> on the `MyObject` class from a previous section.  
   
-```csharp  
-[Serializable]  
-public class MyObject : ISerializable   
-{  
-  public int n1;  
-  public int n2;  
-  public String str;  
-  
-  public MyObject()  
-  {  
-  }  
-  
-  protected MyObject(SerializationInfo info, StreamingContext context)  
-  {  
-    n1 = info.GetInt32("i");  
-    n2 = info.GetInt32("j");  
-    str = info.GetString("k");  
-  }  
-[SecurityPermissionAttribute(SecurityAction.Demand,   
-SerializationFormatter =true)]  
-  
-public virtual void GetObjectData(SerializationInfo info, StreamingContext context)  
-  {  
-    info.AddValue("i", n1);  
-    info.AddValue("j", n2);  
-    info.AddValue("k", str);  
-  }  
-}  
-```  
-  
-```vb  
-<Serializable()>  _  
-Public Class MyObject  
-    Implements ISerializable  
-    Public n1 As Integer  
-    Public n2 As Integer  
-    Public str As String  
-  
-    Public Sub New()   
-    End Sub   
-  
-    Protected Sub New(ByVal info As SerializationInfo, _  
-    ByVal context As StreamingContext)   
-        n1 = info.GetInt32("i")  
-        n2 = info.GetInt32("j")  
-        str = info.GetString("k")  
-    End Sub 'New  
-  
-    <SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)>  _  
-    Public Overridable Sub GetObjectData(ByVal info As _  
-    SerializationInfo, ByVal context As StreamingContext)   
-        info.AddValue("i", n1)  
-        info.AddValue("j", n2)  
-        info.AddValue("k", str)  
-    End Sub   
-End Class  
+```csharp
+[Serializable]
+public class MyObject : ISerializable
+{
+    public int n1;
+    public int n2;
+    public String str;
+
+    public MyObject()
+    {
+    }
+
+    protected MyObject(SerializationInfo info, StreamingContext context)
+    {
+      n1 = info.GetInt32("i");
+      n2 = info.GetInt32("j");
+      str = info.GetString("k");
+    }
+
+    [SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter = true)]
+    public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+    {
+        info.AddValue("i", n1);
+        info.AddValue("j", n2);
+        info.AddValue("k", str);
+    }
+}
+```
+
+```vb
+<Serializable()>  _
+Public Class MyObject
+    Implements ISerializable
+    Public n1 As Integer
+    Public n2 As Integer
+    Public str As String
+
+    Public Sub New()
+    End Sub
+
+    Protected Sub New(ByVal info As SerializationInfo, ByVal context As StreamingContext)
+        n1 = info.GetInt32("i")
+        n2 = info.GetInt32("j")
+        str = info.GetString("k")
+    End Sub 'New
+
+    <SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)> _
+    Public Overridable Sub GetObjectData(ByVal info As SerializationInfo, ByVal context As StreamingContext)
+        info.AddValue("i", n1)
+        info.AddValue("j", n2)
+        info.AddValue("k", str)
+    End Sub
+End Class
 ```  
   
  When **GetObjectData** is called during serialization, you are responsible for populating the <xref:System.Runtime.Serialization.SerializationInfo> provided with the method call. Add the variables to be serialized as name and value pairs. Any text can be used as the name. You have the freedom to decide which member variables are added to the <xref:System.Runtime.Serialization.SerializationInfo>, provided that sufficient data is serialized to restore the object during deserialization. Derived classes should call the **GetObjectData** method on the base object if the latter implements <xref:System.Runtime.Serialization.ISerializable>.  
@@ -122,63 +119,62 @@ End Class
   
  When you derive a new class from one that implements <xref:System.Runtime.Serialization.ISerializable>, the derived class must implement both the constructor as well as the **GetObjectData** method if it has variables that need to be serialized. The following code example shows how this is done using the `MyObject` class shown previously.  
   
-```csharp  
-[Serializable]  
-public class ObjectTwo : MyObject  
-{  
-    public int num;  
-  
-    public ObjectTwo() : base()  
-    {  
-    }  
-  
-    protected ObjectTwo(SerializationInfo si,   
-    StreamingContext context) : base(si,context)  
-    {  
-        num = si.GetInt32("num");  
-    }  
-[SecurityPermissionAttribute(SecurityAction.Demand,  
-SerializationFormatter = true)]  
-    public override void GetObjectData(SerializationInfo si,   
-    StreamingContext context)  
-    {  
-        base.GetObjectData(si,context);  
-        si.AddValue("num", num);  
-    }  
-}  
-```  
-  
-```vb  
-<Serializable()>  _  
-Public Class ObjectTwo  
-    Inherits MyObject  
-    Public num As Integer  
-  
-    Public Sub New()   
-  
-    End Sub       
-  
-    Protected Sub New(ByVal si As SerializationInfo, _  
-    ByVal context As StreamingContext)   
-        MyBase.New(si, context)  
-        num = si.GetInt32("num")      
-    End Sub   
-  
-    <SecurityPermissionAttribute(SecurityAction.Demand, _  
-    SerializationFormatter := True)>  _  
-    Public Overrides Sub GetObjectData(ByVal si As _  
-    SerializationInfo, ByVal context As StreamingContext)   
-        MyBase.GetObjectData(si, context)  
-        si.AddValue("num", num)      
-    End Sub   
-End Class  
+```csharp
+[Serializable]
+public class ObjectTwo : MyObject
+{
+    public int num;
+
+    public ObjectTwo()
+      : base()
+    {
+    }
+
+    protected ObjectTwo(SerializationInfo si, StreamingContext context)
+      : base(si, context)
+    {
+        num = si.GetInt32("num");
+    }
+
+    [SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter = true)]
+    public override void GetObjectData(SerializationInfo si, StreamingContext context)
+    {
+        base.GetObjectData(si,context);
+        si.AddValue("num", num);
+    }
+}
+```
+
+```vb
+<Serializable()>  _
+Public Class ObjectTwo
+    Inherits MyObject
+    Public num As Integer
+
+    Public Sub New()
+
+    End Sub
+
+    Protected Sub New(ByVal si As SerializationInfo, _
+    ByVal context As StreamingContext)
+        MyBase.New(si, context)
+        num = si.GetInt32("num")
+    End Sub
+
+    <SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)> _
+    Public Overrides Sub GetObjectData(ByVal si As SerializationInfo, ByVal context As StreamingContext)
+        MyBase.GetObjectData(si, context)
+        si.AddValue("num", num)
+    End Sub
+End Class
 ```  
   
  Don't forget to call the base class in the deserialization constructor. If this isn't done, the constructor on the base class is never called, and the object is not fully constructed after deserialization.  
   
  Objects are reconstructed from the inside out; and calling methods during deserialization can have undesirable side effects, because the methods called might refer to object references that have not been deserialized by the time the call is made. If the class being deserialized implements the <xref:System.Runtime.Serialization.IDeserializationCallback>, the <xref:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization*> method is automatically called when the entire object graph has been deserialized. At this point, all the child objects referenced have been fully restored. A hash table is a typical example of a class that is difficult to deserialize without using the event listener. It is easy to retrieve the key and value pairs during deserialization, but adding these objects back to the hash table can cause problems, because there is no guarantee that classes that derived from the hash table have been deserialized. Calling methods on a hash table at this stage is therefore not advisable.  
   
-## See also  
- [Binary Serialization](binary-serialization.md)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+## See also
+
+- [Binary Serialization](binary-serialization.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

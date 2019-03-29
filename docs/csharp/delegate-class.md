@@ -132,7 +132,7 @@ that can be used as a delegate invocation target, and attach that method as
 an invocation target.
 
 You could also have been explicit by declaring a variable of type
-'Comparison<string>` and doing an assignment:
+`Comparison<string>` and doing an assignment:
 
 ```csharp
 Comparison<string> comparer = CompareLength;
@@ -140,7 +140,7 @@ phrases.Sort(comparer);
 ```
 
 In uses where the method being used as a delegate target is a small method,
-it's common to use [Lambda Expression](lambda-expressions.md) syntax
+it's common to use [lambda expression](./programming-guide/statements-expressions-operators/lambda-expressions.md) syntax
 to perform the assignment:
 
 ```csharp
@@ -148,7 +148,7 @@ Comparison<string> comparer = (left, right) => left.Length.CompareTo(right.Lengt
 phrases.Sort(comparer);
 ```
 
-Using Lambda Expressions for delegate targets
+Using lambda expressions for delegate targets
 is covered more in a [later section](delegates-patterns.md).
 
 The Sort() example typically attaches a single target method to the

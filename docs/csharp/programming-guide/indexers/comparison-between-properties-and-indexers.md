@@ -1,5 +1,6 @@
 ---
-title: "Comparison Between Properties and Indexers (C# Programming Guide)"
+title: "Comparison Between Properties and Indexers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [C#], vs. indexers"
@@ -18,7 +19,8 @@ Indexers are like properties. Except for the differences shown in the following 
 |A [set](../../../csharp/language-reference/keywords/set.md) accessor of a property contains the implicit `value` parameter.|A `set` accessor of an indexer has the same formal parameter list as the indexer, and also to the [value](../../../csharp/language-reference/keywords/value.md) parameter.|  
 |Supports shortened syntax with [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).|Does not support shortened syntax.|  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

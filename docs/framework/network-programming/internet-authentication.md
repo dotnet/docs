@@ -15,9 +15,6 @@ helpviewer_keywords:
   - "NetworkCredential class, about NetworkCredential class"
   - "client authentication, classes for authentication"
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Internet Authentication
 The <xref:System.Net> classes support a variety of client authentication mechanisms, including the standard Internet authentication methods basic, digest, negotiate, NTLM, and Kerberos authentication, as well as custom methods that you can create.  
@@ -36,7 +33,7 @@ The <xref:System.Net> classes support a variety of client authentication mechani
   
  Some authentication schemes can authenticate a user without first making a request for a resource. An application can save time by preauthenticating the user with the resource, thus eliminating at least one round trip to the server. Or, it can perform authentication during program startup in order to be more responsive to the user later. Authentication schemes that can use preauthentication set the <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> property to **true**.  
   
-## See Also  
- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)  
- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)  
- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+## See also
+- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)
+- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)
+- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)

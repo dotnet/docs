@@ -16,17 +16,8 @@ In an application consisting entirely of managed code, the common language runti
   
  With [pinning optimization](copying-and-pinning.md), a blittable array can appear to operate as an In/Out parameter when interacting with objects in the same apartment. However, if you later export the code to a type library used to generate the cross-machine proxy, and that library is used to marshal your calls across apartments, the calls can revert to true In parameter behavior.  
   
- Arrays are complex by nature, and the distinctions between managed and unmanaged arrays warrant more information than other non-blittable types. This topic provides the following information on marshaling arrays:  
+ Arrays are complex by nature, and the distinctions between managed and unmanaged arrays warrant more information than other non-blittable types.  
   
--   [Managed Arrays](#cpcondefaultmarshalingforarraysanchor1)  
-  
--   [Unmanaged Arrays](#cpcondefaultmarshalingforarraysanchor2)  
-  
--   [Passing Array Parameters to .NET Code](#cpcondefaultmarshalingforarraysanchor3)  
-  
--   [Passing Arrays to COM](#cpcondefaultmarshalingforarraysanchor4)  
-  
-<a name="cpcondefaultmarshalingforarraysanchor1"></a>   
 ## Managed Arrays  
  Managed array types can vary; however, the <xref:System.Array?displayProperty=nameWithType> class is the base class of all array types. The **System.Array** class has properties for determining the rank, length, and lower and upper bounds of an array, as well as methods for accessing, sorting, searching, copying, and creating arrays.  
   
@@ -40,11 +31,9 @@ In an application consisting entirely of managed code, the common language runti
 |**ELEMENT_TYPE_CLASS**|Unknown|Unknown|Unknown|**System.Array**|  
 |**ELEMENT_TYPE_SZARRAY**|Specified by type.|1|0|*type* **[** *n* **]**|  
   
-<a name="cpcondefaultmarshalingforarraysanchor2"></a>   
 ## Unmanaged Arrays  
  Unmanaged arrays are either COM-style safe arrays or C-style arrays with fixed or variable length. Safe arrays are self-describing arrays that carry the type, rank, and bounds of the associated array data. C-style arrays are one-dimensional typed arrays with a fixed lower bound of 0. The marshaling service has limited support for both types of arrays.  
   
-<a name="cpcondefaultmarshalingforarraysanchor3"></a>   
 ## Passing Array Parameters to .NET Code  
  Both C-style arrays and safe arrays can be passed to .NET code from unmanaged code as either a safe array or a C-style array. The following table shows the unmanaged type value and the imported type.  
   
@@ -85,7 +74,7 @@ void New3([MarshalAs(UnmanagedType.SafeArray, SafeArraySubType=VT_BSTR)]
    ref String[] ar);  
 ```  
   
- Multidimensional, or nonzero-bound safe arrays, can be marshaled into managed code if the method signature produced by Tlbimp.exe is modified to indicate an element type of **ELEMENT_TYPE_ARRAY** instead of **ELEMENT_TYPE_SZARRAY**. Alternatively, you can use the **/sysarray** switch with Tlbimp.exe to import all arrays as <xref:System.Array?displayProperty=nameWithType> objects. In cases where the array being passed is known to be multidimensional, you can edit the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompile it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](https://msdn.microsoft.com/library/4652beaf-77d0-4f37-9687-ca193288c0be(v=vs.100)).  
+ Multidimensional, or nonzero-bound safe arrays, can be marshaled into managed code if the method signature produced by Tlbimp.exe is modified to indicate an element type of **ELEMENT_TYPE_ARRAY** instead of **ELEMENT_TYPE_SZARRAY**. Alternatively, you can use the **/sysarray** switch with Tlbimp.exe to import all arrays as <xref:System.Array?displayProperty=nameWithType> objects. In cases where the array being passed is known to be multidimensional, you can edit the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompile it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e753eftz(v=vs.100)).  
   
 ### C-Style Arrays  
  When a C-style array is imported from a type library to a .NET assembly, the array is converted to **ELEMENT_TYPE_SZARRAY**.  
@@ -149,7 +138,7 @@ void New2(ref double ar);
 void New3(ref String ar);   
 ```  
   
- You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](https://msdn.microsoft.com/library/4652beaf-77d0-4f37-9687-ca193288c0be(v=vs.100)). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
+ You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e753eftz(v=vs.100)). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
   
 -   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0.     
   
@@ -184,7 +173,6 @@ void New3(ref String ar);
   
  The interop marshaler uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
   
-<a name="cpcondefaultmarshalingforarraysanchor4"></a>   
 ## Passing Arrays to COM  
  All managed array types can be passed to unmanaged code from managed code. Depending on the managed type and the attributes applied to it, the array can be accessed as a safe array or a C-style array, as shown in the following table.  
   
@@ -366,8 +354,8 @@ public struct MyStruct {
 }  
 ```  
   
-## See Also  
- [Default Marshaling Behavior](default-marshaling-behavior.md)  
- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
- [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  
- [Copying and Pinning](copying-and-pinning.md)
+## See also
+- [Default Marshaling Behavior](default-marshaling-behavior.md)
+- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
+- [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
+- [Copying and Pinning](copying-and-pinning.md)

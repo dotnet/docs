@@ -18,13 +18,13 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
 > [!NOTE]
 >  The root node of the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data has an **xmlns** attribute that sets the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] namespace to an empty string. This is a requirement for applying XPath queries to a data island that is inline within the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page. In this inline case, the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], and thus the data island, inherits the <xref:System.Windows> namespace. Because of this, you need to set the namespace blank to keep XPath queries from being qualified by the <xref:System.Windows> namespace, which would misdirect the queries.  
   
- [!code-xaml[XMLDataSource#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
+ [!code-xaml[XMLDataSource#1](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
   
- As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](../../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md).  
+ As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](../../xaml-services/xml-character-entities-and-xaml.md).  
   
  The <xref:System.Windows.Controls.ListBox> will show the following items when this example is run. These are the *Title*s of all of the elements under *Books* with either a *Stock* value of "*out*" or a *Number* value of 3 or greater than or equals to 8. Notice that no *CD* items are returned because the <xref:System.Windows.Data.XmlDataProvider.XPath%2A> value set on the <xref:System.Windows.Data.XmlDataProvider> indicates that only the *Books* elements should be exposed (essentially setting a filter).  
   
- ![XPath Example](../../../../docs/framework/wpf/data/media/xpathexample.PNG "XPathExample")  
+ ![XPath Example](./media/xpathexample.PNG "XPathExample")  
   
  In this example, the book titles are displayed because the <xref:System.Windows.Data.Binding.XPath%2A> of the <xref:System.Windows.Controls.TextBlock> binding in the <xref:System.Windows.DataTemplate> is set to "*Title*". If you want to display the value of an attribute, such as the *ISBN*, you would set that <xref:System.Windows.Data.Binding.XPath%2A> value to "`@ISBN`".  
   
@@ -40,11 +40,11 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
   
  When you run an **XPath** query, it returns an <xref:System.Xml.XmlNode> or a list of XmlNodes. <xref:System.Xml.XmlNode> is a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] object, which means you can use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] properties. Consider the previous example again. If the rest of the example stays the same and you change the <xref:System.Windows.Controls.TextBlock> binding to the following, you will see the names of the returned XmlNodes in the <xref:System.Windows.Controls.ListBox>. In this case, the name of all the returned nodes is "*Book*".  
   
- [!code-xaml[XmlDataSourceVariation#XmlNodePath](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSourceVariation/CS/Page1.xaml#xmlnodepath)]  
+ [!code-xaml[XmlDataSourceVariation#XmlNodePath](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSourceVariation/CS/Page1.xaml#xmlnodepath)]  
   
  In some applications, embedding the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] as a data island within the source of the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page can be inconvenient because the exact content of the data must be known at compile time. Therefore, obtaining the data from an external [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] file is also supported, as in the following example:  
   
- [!code-xaml[XMLDataSource2#XmlFileExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
+ [!code-xaml[XMLDataSource2#XmlFileExample](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
   
  If the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data resides in a remote [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] file, you would define access to the data by assigning an appropriate [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)] to the <xref:System.Windows.Data.XmlDataProvider.Source%2A> attribute as follows:  
   
@@ -52,10 +52,10 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
 <XmlDataProvider x:Key="BookData" Source="http://MyUrl" XPath="Books"/>  
 ```  
   
-## See Also  
- <xref:System.Windows.Data.ObjectDataProvider>  
- [Bind to XDocument, XElement, or LINQ for XML Query Results](../../../../docs/framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)  
- [Use the Master-Detail Pattern with Hierarchical XML Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)  
- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- <xref:System.Windows.Data.ObjectDataProvider>
+- [Bind to XDocument, XElement, or LINQ for XML Query Results](how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)
+- [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
+- [Binding Sources Overview](binding-sources-overview.md)
+- [Data Binding Overview](data-binding-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

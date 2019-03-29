@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-win32icon compiler option [Visual Basic]"
   - "/win32icon compiler option [Visual Basic]"
 ms.assetid: aecaab01-9353-46c5-941c-6edabd4eff92
-author: rpetrusha
-ms.author: ronpet
 ---
 # -win32icon
 Inserts an .ico file in the output file. This .ico file represents the output file in **File Explorer**.  
@@ -40,6 +38,6 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
 vbc -win32icon:rf.ico in.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

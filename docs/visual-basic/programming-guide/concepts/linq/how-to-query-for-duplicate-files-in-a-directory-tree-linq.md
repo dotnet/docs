@@ -49,14 +49,14 @@ Module QueryDuplicateFileNames
         PageOutput(duplicates, trimLength)  
   
     End Sub  
-    ' Pages console diplay for large query results. No more than one group per page.  
+    ' Pages console display for large query results. No more than one group per page.  
     ' This sub specifically works with group queries of FileInfo objects  
     ' but can be modified for any type.  
     Sub PageOutput(ByVal groupQuery, ByVal charsToSkip)  
   
         ' "3" = 1 line for extension key + 1 for "Press any key" + 1 for input cursor.  
         Dim numLines As Integer = Console.WindowHeight - 3  
-        ' Flag to indicate whether there are more results to diplay  
+        ' Flag to indicate whether there are more results to display  
         Dim goAgain As Boolean = True  
   
         For Each fg As IEnumerable(Of System.IO.FileInfo) In groupQuery  
@@ -97,6 +97,6 @@ End Module
 ## Compiling the Code  
  Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a `Imports` statement for the System.Linq namespace.  
   
-## See Also  
- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+## See also
+- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

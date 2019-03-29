@@ -12,7 +12,7 @@ When you design the user interface (UI) of your Windows application, you can loc
  Additionally, you can lock and unlock all the controls on the form at once, which is helpful for forms with many controls, or you can unlock individual controls. Once you have placed all the controls where you want them on the form, lock them all in place to prevent erroneous movement.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To lock a control  
   
@@ -40,9 +40,9 @@ When you design the user interface (UI) of your Windows application, you can loc
   
 1.  In the **Properties** window, click the **Locked** property and select `false`. (Double-clicking the name toggles the property setting.)  
   
-## See Also  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)  
- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
- [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)
+## See also
+- [Windows Forms Controls](index.md)
+- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
+- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
+- [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

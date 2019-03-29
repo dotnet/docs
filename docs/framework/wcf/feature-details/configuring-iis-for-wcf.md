@@ -50,23 +50,19 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 ## Request Limits
  On [!INCLUDE[wv](../../../../includes/wv-md.md)] with IIS 7 the default value of the `maxUri` and `maxQueryStringSize` settings have been changed. By default, request filtering in IIS 7.0 allows a URL length of 4096 characters and a query string length of 2048 characters. To change these defaults add the following XML to your App.config file.
 
- `<system.webServer>`
+```xml
+ <system.webServer>
+    <security>
+        <requestFiltering>
+            <requestLimits maxUrl="8192" maxQueryString="8192" />
+        </requestFiltering>
+    </security>
+ </system.webServer>
+ ```
 
- `<security>`
-
- `<requestFiltering>`
-
- `<requestLimits maxUrl="8192" maxQueryString="8192" />`
-
- `</requestFiltering>`
-
- `</security>`
-
- `</system.webServer>`
-
-## See Also
+## See also
 
 - [WAS Activation Architecture](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)
 - [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
 - [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)
-- [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -5,13 +5,10 @@ helpviewer_keywords:
   - "UI Automation, providers"
   - "providers, UI Automation"
 ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Providers Overview
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  UI Automation providers enable controls to communicate with UI Automation client applications. In general, each control or other distinct element in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] is represented by a provider. The provider exposes information about the element and optionally implements control patterns that enable the client application to interact with the control.  
   
@@ -73,5 +70,5 @@ manager: "markl"
   
  The host of a fragment plays an important role in providing [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] services. It enables navigation to the fragment root, and supplies some default properties so that the custom provider does not have to implement them.  
   
-## See Also  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

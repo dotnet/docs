@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a7c7747a-5b8c-463f-8493-7266dac75066
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a SecurityBindingElement for a Specified Authentication Mode
 Windows Communication Foundation (WCF) provides several modes by which clients and services authenticate to one another. You can create security binding elements for these authentication modes by using static methods on the <xref:System.ServiceModel.Channels.SecurityBindingElement> class or through configuration, as shown in the following example.  
@@ -22,6 +20,6 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
  [!code-csharp[c_CustomBindingsAuthMode#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombindingsauthmode/cs/source.cs#2)]
  [!code-vb[c_CustomBindingsAuthMode#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombindingsauthmode/vb/source.vb#2)]  
   
-## See Also  
- [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md)  
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+## See also
+- [SecurityBindingElement Authentication Modes](../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

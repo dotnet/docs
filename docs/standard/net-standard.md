@@ -3,7 +3,7 @@ title: .NET Standard
 description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 author: mairaw
 ms.author: mairaw
-ms.date: 07/19/2018
+ms.date: 02/25/2019
 ms.technology: dotnet-standard
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
@@ -29,7 +29,7 @@ To find the highest version of .NET Standard that you can target, do the followi
 
 1. Find the row that indicates the .NET implementation you want to run on.
 2. Find the column in that row that indicates your version starting from right to left.
-3. The column header indicates the .NET Standard version that your target supports (and any lower .NET Standard versions will also support it).
+3. The column header indicates the .NET Standard version that your target supports. You may also target any lower .NET Standard version. Higher .NET Standard versions will also support your implementation.
 4. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.5 and .NET Core 1.0, the highest .NET Standard version you can use is .NET Standard 1.1.
 
 ### Which .NET Standard version to target
@@ -44,6 +44,8 @@ In general, we recommend you to target the *lowest* version of .NET Standard pos
 1. Target the next lower version of .NET Standard and build your project.
 2. If your project builds successfully, repeat step 1. Otherwise, retarget to the next higher version and that's the version you should use.
 
+However, targeting lower .NET Standard versions introduces a number of support dependencies. If your project targets .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. This simplifies the dependency graph for users of your library that run on .NET Standard 2.0 compatible frameworks, and it reduces the number of packages they need to download.
+
 ### .NET Standard versioning rules
 
 There are two primary versioning rules:
@@ -57,9 +59,9 @@ The .NET Standard specification is a standardized set of APIs. The specification
 
 ### Official artifacts
 
-The official specification is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
+The official specification is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
 
-The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
+The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/src/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
 
 A given component, like `System.Runtime`, describes:
 
@@ -154,4 +156,4 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 
 ## See also
 
-[.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)
+- [.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)

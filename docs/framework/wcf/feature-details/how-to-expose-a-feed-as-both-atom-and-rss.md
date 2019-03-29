@@ -58,9 +58,9 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 ### To call GetBlog with an HTTP GET  
   
-1.  Open Internet Explorer, type the following URL, and press ENTER. http://localhost:8000/BlogService/GetBlog  
+1.  Open Internet Explorer, type the following URL, and press ENTER: `http://localhost:8000/BlogService/GetBlog`.
   
-     The URL contains the base address of the service (http://localhost:8000/BlogService), the relative address of the endpoint, and the service operation to call.  
+     The URL contains the base address of the service (`http://localhost:8000/BlogService`), the relative address of the endpoint, and the service operation to call.  
   
 ### To call GetBlog() from code  
   
@@ -89,6 +89,6 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
 ## Compiling the Code  
  When compiling the preceding code, reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
-## See Also  
- <xref:System.ServiceModel.WebHttpBinding>  
- <xref:System.ServiceModel.Web.WebGetAttribute>
+## See also
+- <xref:System.ServiceModel.WebHttpBinding>
+- <xref:System.ServiceModel.Web.WebGetAttribute>

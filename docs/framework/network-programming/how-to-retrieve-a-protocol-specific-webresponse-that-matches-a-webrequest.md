@@ -5,9 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d8c90785-f16b-42a5-8439-ed2f731b2ba8
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest
 This example shows how to retrieve a protocol-specific WebResponse that matches a WebRequest.  
@@ -29,5 +26,5 @@ Dim resp As WebResponse = req.GetResponse()
   
 -   References to the **System.Net** namespace.  
   
-## See Also  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+## See also
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

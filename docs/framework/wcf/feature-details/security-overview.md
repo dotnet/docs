@@ -5,14 +5,12 @@ helpviewer_keywords:
   - "Windows Communication Foundation, security"
   - "WCF, security"
 ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Overview
 Windows Communication Foundation (WCF) is a SOAP message-based distributed programming platform, and securing messages between clients and services is essential to protecting data. WCF provides a versatile and interoperable platform for exchanging secure messages based upon both the existing security infrastructure and the recognized security standards for SOAP messages.  
   
 > [!NOTE]
->  For a comprehensive guide to WCF security, see [WCF Security Guidance](http://go.microsoft.com/fwlink/?LinkID=158912).  
+>  For a comprehensive guide to WCF security, see [WCF Security Guidance](https://go.microsoft.com/fwlink/?LinkID=158912).  
   
  WCF uses concepts that are familiar if you have built secure, distributed applications with existing technologies such as HTTPS, Windows integrated security, or user names and passwords to authenticate users. WCF not only integrates with existing security infrastructures, but also extends distributed security beyond Windows-only domains by using secure SOAP messages. Consider WCF an implementation of existing security mechanisms with the major advantage of using SOAP as the protocol in addition to existing protocols. For example, credentials that identify a client or a service, such as user name and password or X.509 certificates, have interoperable XML-based SOAP profiles. Using these profiles, messages are exchanged securely by taking advantage of open specifications like XML digital signatures and XML encryption. For a list of specifications, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
   
@@ -93,19 +91,19 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
 ### Auditing  
  *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md). For programming details, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
   
-## See Also  
- <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
- [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
- [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [Security Guidance and Best Practices](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
- [Configuring Services Using Configuration Files](../../../../docs/framework/wcf/configuring-services-using-configuration-files.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- <xref:System.Security.Permissions.PrincipalPermissionAttribute>
+- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
+- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
+- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)
+- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
+- [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [Security Guidance and Best Practices](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)
+- [Configuring Services Using Configuration Files](../../../../docs/framework/wcf/configuring-services-using-configuration-files.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

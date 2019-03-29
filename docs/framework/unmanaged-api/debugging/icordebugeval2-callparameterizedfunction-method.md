@@ -33,7 +33,7 @@ HRESULT CallParameterizedFunction (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFunction`  
  [in] A pointer to an `ICorDebugFunction` object that represents the function to be called.  
   

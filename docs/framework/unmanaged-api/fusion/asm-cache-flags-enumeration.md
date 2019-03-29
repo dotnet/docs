@@ -27,7 +27,7 @@ typedef enum {
     ASM_CACHE_ZAP       = 0x01,  
     ASM_CACHE_GAC       = 0x02,  
     ASM_CACHE_DOWNLOAD  = 0x04,  
-    ASM_CACHE_ROOT      = 0x08  
+    ASM_CACHE_ROOT      = 0x08,  
     ASM_CACHE_ROOT_EX   = 0x80  
 } ASM_CACHE_FLAGS;  
 ```  
@@ -51,7 +51,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetCachePath Function](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)  
- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)  
- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+## See also
+- [GetCachePath Function](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)
+- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)

@@ -29,7 +29,7 @@ HRESULT GetILCode (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCode`  
  [out] A pointer to the `ICorDebugCode` instance, or null, if the function was not compiled into MSIL.  
   

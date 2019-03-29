@@ -8,13 +8,10 @@ helpviewer_keywords:
   - "properties, UI Automation clients"
   - "UI Automation, client properties"
 ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Properties for Clients
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This overview introduces you to [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties as they are exposed to UI Automation client applications.  
   
@@ -100,7 +97,7 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElement.FocusedElement%2A>|(Static property) The <xref:System.Windows.Automation.AutomationElement> that has the input focus.|  
 |<xref:System.Windows.Automation.AutomationElement.RootElement%2A>|(Static property) The root <xref:System.Windows.Automation.AutomationElement>.|  
   
-## See Also  
- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)  
- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
+## See also
+- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)

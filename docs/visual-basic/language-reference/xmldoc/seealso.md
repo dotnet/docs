@@ -1,12 +1,12 @@
 ---
-title: "&lt;seealso&gt; (Visual Basic)"
+title: "<seealso> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<seealso> XML tag"
   - "seealso XML tag"
 ms.assetid: 36050c95-1af2-4284-b9b6-1a70691ed978
 ---
-# &lt;seealso&gt; (Visual Basic)
+# \<seealso> (Visual Basic)
 Specifies a link that appears in the See Also section.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Specifies a link that appears in the See Also section.
 <seealso cref="member"/>  
 ```  
   
-#### Parameters  
+## Parameters  
  `member`  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within double quotation marks (" ").  
   
@@ -27,7 +27,7 @@ Specifies a link that appears in the See Also section.
 ## Example  
  This example uses the `<seealso>` tag in the `DoesRecordExist` remarks section to refer to the `UpdateRecord` method.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/seealso_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

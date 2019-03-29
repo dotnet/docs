@@ -3,7 +3,6 @@ title: "How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF"
 ms.date: "03/30/2017"
 ms.assetid: efb264dd-f47b-49a9-85ee-9f45d4425765
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF
 ## Applies To  

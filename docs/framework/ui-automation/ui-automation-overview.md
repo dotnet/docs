@@ -6,13 +6,10 @@ helpviewer_keywords:
   - "user interface, see UI"
   - "accessibility, UI automation"
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Overview
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] is the new accessibility framework for [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)], available on all operating systems that support [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
   
@@ -71,9 +68,9 @@ manager: "markl"
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] also provides information to client applications through events. Unlike [!INCLUDE[TLA2#tla_winevents](../../../includes/tla2sharptla-winevents-md.md)], [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events are not based on a broadcast mechanism. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] clients register for specific event notifications and can request that specific [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties and control pattern information be passed into their event handlers. In addition, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] event contains a reference to the element that raised it. Providers can improve performance by raising events selectively, depending on whether any clients are listening.  
   
-## See Also  
- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)  
- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)  
- [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md)
+## See also
+- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)
+- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
+- [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md)

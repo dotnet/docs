@@ -20,7 +20,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
 <a name="xpdmandwddm"></a>   
 ## What are XPDM and WDDM?  
- Some of the graphics rendering registry settings have different default values, depending on whether your video card uses an XPDM or WDDM driver. XPDM is the [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] Display Driver Model and WDDM is the Windows Display Driver Model. WDDM is available on computers running [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] and [!INCLUDE[win7](../../../../includes/win7-md.md)]. XPDM is available on computers running [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)], [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfam](../../../../includes/tlasharptla-winnetsvrfam-md.md)]. For more information about WDDM, see [Windows Vista Display Driver Model Design Guide](http://go.microsoft.com/fwlink/?LinkId=178394).  
+ Some of the graphics rendering registry settings have different default values, depending on whether your video card uses an XPDM or WDDM driver. XPDM is the [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] Display Driver Model and WDDM is the Windows Display Driver Model. WDDM is available on computers running [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] and [!INCLUDE[win7](../../../../includes/win7-md.md)]. XPDM is available on computers running [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)], [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfam](../../../../includes/tlasharptla-winnetsvrfam-md.md)]. For more information about WDDM, see [Windows Vista Display Driver Model Design Guide](https://go.microsoft.com/fwlink/?LinkId=178394).  
   
 <a name="registry_settings"></a>   
 ## Registry Settings  
@@ -44,7 +44,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The **disable hardware acceleration option** enables you to turn off hardware acceleration for debugging and test purposes. When you see rendering artifacts in an application, try turning off hardware acceleration. If the artifact disappears, the problem might be with your video driver.  
   
- The **disable hardware acceleration option** is a DWORD value that is either 0 or 1. A value of 1 disables hardware acceleration. A value of 0 enables hardware acceleration, provided the system meets hardware acceleration requirements; for more information, see [Graphics Rendering Tiers](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md).  
+ The **disable hardware acceleration option** is a DWORD value that is either 0 or 1. A value of 1 disables hardware acceleration. A value of 0 enables hardware acceleration, provided the system meets hardware acceleration requirements; for more information, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
   
 <a name="maxmultisample"></a>   
 ## Maximum Multisample Value  
@@ -91,6 +91,6 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The **use reference rasterizer option** takes a DWORD value. A value of 0 indicates that the reference rasterizer is not used. Any other non-zero value forces [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to use the reference rasterizer.  
   
-## See Also  
- [Graphics Rendering Tiers](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## See also
+- [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

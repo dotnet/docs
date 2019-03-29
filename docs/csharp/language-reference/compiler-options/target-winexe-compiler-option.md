@@ -19,7 +19,7 @@ The **-target:winexe** option causes the compiler to create an executable (EXE),
 ```  
   
 ## Remarks  
- The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET Framework library or with the Win32 APIs.  
+ The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET Framework library or with the Windows APIs.  
   
  Use [-target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md) to create a console application.  
   
@@ -46,6 +46,7 @@ The **-target:winexe** option causes the compiler to create an executable (EXE),
 csc -target:winexe in.cs  
 ```  
   
-## See Also  
- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+## See also
+
+- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

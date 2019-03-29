@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEnum Interface1"
+title: "ICorDebugEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugEnum Interface1
+# ICorDebugEnum Interface
+
 Serves as the abstract base interface for the enumerators that are used by a debugging application.  
   
 ## Methods  
@@ -86,5 +87,5 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

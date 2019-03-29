@@ -29,7 +29,7 @@ HRESULT GetObjectSize(
     [out] ULONG  *pcSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object.  
   
@@ -58,5 +58,5 @@ HRESULT GetObjectSize(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

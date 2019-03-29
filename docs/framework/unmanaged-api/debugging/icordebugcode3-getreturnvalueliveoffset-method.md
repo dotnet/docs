@@ -34,7 +34,7 @@ HRESULT GetReturnValueLiveOffset(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ILoffset`  
  The IL offset. It must be a function call site or the function call will fail.  
   
@@ -72,6 +72,6 @@ HRESULT GetReturnValueLiveOffset(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## See Also  
- [GetReturnValueForILOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md)  
- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
+## See also
+- [GetReturnValueForILOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md)
+- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)

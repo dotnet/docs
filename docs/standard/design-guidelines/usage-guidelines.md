@@ -1,12 +1,11 @@
 ---
 title: "Usage guidelines"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], usage guidelines"
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Usage guidelines
 
@@ -15,7 +14,7 @@ This section contains guidelines for using common types in publicly accessible A
 The <xref:System.IDisposable?displayProperty=nameWithType> interface is not covered in this section, but is discussed in the [Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md) section.
 
 > [!NOTE]
-> For guidelines and additional information about about other common, built-in .NET Framework types, see the reference topics for the following: <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>, <xref:System.IEquatable%601?displayProperty=nameWithType>, <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, <xref:System.Uri?displayProperty=nameWithType>.
+> For guidelines and additional information about other common, built-in .NET Framework types, see the reference topics for the following: <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.DateTimeOffset?displayProperty=nameWithType>, <xref:System.ICloneable?displayProperty=nameWithType>, <xref:System.IComparable%601?displayProperty=nameWithType>, <xref:System.IEquatable%601?displayProperty=nameWithType>, <xref:System.Nullable%601?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, <xref:System.Uri?displayProperty=nameWithType>.
 
 ## In this section
 
@@ -32,4 +31,4 @@ The <xref:System.IDisposable?displayProperty=nameWithType> interface is not cove
   
 ## See also
 
-[Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

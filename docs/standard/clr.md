@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: "updateeachrelease"
 ---
 # Common Language Runtime (CLR) overview
 
@@ -83,4 +84,4 @@ The version number of the .NET Framework doesn't necessarily correspond to the v
 
 ## See also
 
-[Versions and Dependencies](../framework/migration-guide/versions-and-dependencies.md)
+- [Versions and Dependencies](../framework/migration-guide/versions-and-dependencies.md)

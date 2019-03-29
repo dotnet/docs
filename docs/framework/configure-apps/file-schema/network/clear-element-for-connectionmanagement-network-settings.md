@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for connectionManagement (Network Settings)"
+title: "<clear> Element for connectionManagement (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement/clear"
@@ -10,11 +10,8 @@ helpviewer_keywords:
   - "clear element, connectionManagement"
   - "<connectionManagement>, clear element"
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
-# &lt;clear&gt; Element for connectionManagement (Network Settings)
+# \<clear> Element for connectionManagement (Network Settings)
 Clears the connection management list.  
   
  \<configuration>  
@@ -50,7 +47,7 @@ Clears the connection management list.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following example clears the connection management list and then adds new connection management entries for the server www.contoso.com and all other network hosts.  
+ The following example clears the connection management list and then adds new connection management entries for the server `www.contoso.com` and all other network hosts.  
   
 ```xml  
 <configuration>  
@@ -64,7 +61,7 @@ Clears the connection management list.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.ServicePoint>
+- <xref:System.Net.ServicePointManager>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

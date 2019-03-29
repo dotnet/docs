@@ -1,5 +1,5 @@
 ---
-title: "Hosting1"
+title: "WCF hosting samples"
 ms.date: "03/30/2017"
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4
 ---
@@ -9,9 +9,6 @@ This section contains samples that demonstrate hosting Windows Communication Fou
 ## In This Section  
  [Windows Process Activation](../../../../docs/framework/wcf/samples/windows-process-activation.md)  
  Demonstrates service activation through network protocols.  
-  
- [Configuration-Based Activation](../../../../docs/framework/wcf/samples/configuration-based-activation.md)  
- Demonstrates activation of WCF services without requiring a .svc file.  
   
  [SystemWebRouting Integration Sample](../../../../docs/framework/wcf/samples/systemwebrouting-integration-sample.md)  
  Demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace.  

@@ -13,7 +13,7 @@ ms.assetid: 7c4e5cec-2bd2-4f0b-8d75-c2b88929bd61
 You can use of the <xref:System.Windows.Forms.HelpProvider> component to attach Help topics within a Help file to specific controls on Windows Forms. The Help file can be either HTML or HTMLHelp 1.x or greater format.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To provide Help  
   
@@ -47,10 +47,10 @@ You can use of the <xref:System.Windows.Forms.HelpProvider> component to attach 
 > [!IMPORTANT]
 >  Be careful to check any information that is sent from a client before using it in your application. Malicious users might try to send or inject executable script, SQL statements, or other code. Before you display a user's input, store it in a database, or work with it, check that it does not contain potentially unsafe information. A typical way to check is to use a regular expression to look for keywords such as "SCRIPT" when you receive input from a user.  
   
- You can also use the <xref:System.Windows.Forms.HelpProvider> component to show pop-up Help, even if you have it configured to display Help files for the controls on your Windows Forms. For more information, see [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md).  
+ You can also use the <xref:System.Windows.Forms.HelpProvider> component to show pop-up Help, even if you have it configured to display Help files for the controls on your Windows Forms. For more information, see [How to: Display Pop-up Help](how-to-display-pop-up-help.md).  
   
-## See Also  
- [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md)  
- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)  
- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+## See also
+- [How to: Display Pop-up Help](how-to-display-pop-up-help.md)
+- [Control Help Using ToolTips](control-help-using-tooltips.md)
+- [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
+- [Windows Forms](../index.md)

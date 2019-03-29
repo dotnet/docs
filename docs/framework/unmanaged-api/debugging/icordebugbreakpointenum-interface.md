@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugBreakpointEnum Interface1"
+title: "ICorDebugBreakpointEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugBreakpointEnum"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugBreakpointEnum Interface1
+# ICorDebugBreakpointEnum Interface
+
 Implements ICorDebugEnum methods, and enumerates ICorDebugBreakpoint arrays.  
   
 ## Methods  
@@ -40,5 +41,5 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugBreakpoint arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

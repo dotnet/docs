@@ -1,5 +1,5 @@
 ---
-title: "&lt;settings&gt; Element (Network Settings)"
+title: "<settings> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#settings"
@@ -8,11 +8,8 @@ helpviewer_keywords:
   - "settings element"
   - "<settings> element"
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
-# &lt;settings&gt; Element (Network Settings)
+# \<settings> Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  
   
  \<configuration>  
@@ -23,13 +20,13 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
   
 ```xml  
 <settings>  
-  <httpListener> … </httpListener>  
-  <httpWebRequest> … </httpWebRequest>  
-  <ipv6> … </ipv6>  
-  <performanceCounters> … </performanceCounters>  
-  <servicePointManager> … </servicePointManager>  
-  <socket> … </socket>  
-  <webProxyScript> … </webProxyScript>  
+  <httpListener>...</httpListener>  
+  <httpWebRequest>...</httpWebRequest>  
+  <ipv6>...</ipv6>  
+  <performanceCounters>...</performanceCounters>  
+  <servicePointManager>...</servicePointManager>  
+  <socket>...</socket>  
+  <webProxyScript>...</webProxyScript>  
 </settings>  
 ```  
   
@@ -62,6 +59,6 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
-## See Also  
- <xref:System.Net?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

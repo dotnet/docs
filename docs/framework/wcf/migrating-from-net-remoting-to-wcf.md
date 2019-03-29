@@ -83,8 +83,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
     serviceHost.AddServiceEndpoint(typeof(IWCFServer), binding, baseAddress);  
     serviceHost.Open();  
   
-    Console.WriteLine(String.Format("The WCF server is ready at {0}.",  
-                                    baseAddress));  
+    Console.WriteLine($"The WCF server is ready at {baseAddress}.");
     Console.WriteLine("Press <ENTER> to terminate service...");  
     Console.WriteLine();  
     Console.ReadLine();  
@@ -115,8 +114,7 @@ RemotingServer server = (RemotingServer)Activator.GetObject(
                             "tcp://localhost:8080/RemotingServer");  
   
 RemotingCustomer customer = server.GetCustomer(42);  
-Console.WriteLine(String.Format("Customer {0} {1} received.",   
-                                 customer.FirstName, customer.LastName));  
+Console.WriteLine($"Customer {customer.FirstName} {customer.LastName} received.");
 ```  
   
  The RemotingServer instance returned from Activator.GetObject() is known as a "transparent proxy." It implements the public API for the RemotingServer type on the client, but all the methods call the server object running in a different process or machine.  
@@ -133,8 +131,7 @@ ChannelFactory<IWCFServer> channelFactory =
 IWCFServer server = channelFactory.CreateChannel();  
   
 Customer customer = server.GetCustomer(42);  
-Console.WriteLine(String.Format("  Customer {0} {1} received.",  
-                    customer.FirstName, customer.LastName));  
+Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received.");
 ```  
   
  This example shows programming at the channel level because it is most similar to the Remoting example. Also available is the **Add Service Reference** approach in Visual Studio that generates code to simplify client programming. For more information, see the following topics:  
@@ -204,11 +201,7 @@ public class WCFCustomer
   
  The [DataContract] attribute identifies this type as one that can be serialized and deserialized between client and server. The [DataMember] attribute identifies the individual properties or fields to serialize.  
   
- When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see the following topics:  
-  
--   [Serialization and Deserialization](./feature-details/serialization-and-deserialization.md)  
-  
--   [Serialization in Windows Communication Foundation](http://msdn.microsoft.com/magazine/cc163569.aspx)  
+ When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see [Serialization and Deserialization](./feature-details/serialization-and-deserialization.md).  
   
 ### Exception Handling Capabilities  
   
@@ -263,8 +256,7 @@ try
 }  
 catch (FaultException<CustomerServiceFault> fault)  
 {  
-    Console.WriteLine(String.Format("Fault received: {0}",  
-    fault.Detail.ErrorMessage));  
+    Console.WriteLine($"Fault received: {fault.Detail.ErrorMessage}");
 }  
 ```  
   
@@ -286,7 +278,7 @@ catch (FaultException<CustomerServiceFault> fault)
   
 ### Why Migrate from Remoting to WCF?  
   
--   **.NET Remoting is a legacy product.** As described in [.NET Remoting](http://msdn.microsoft.com/library/vstudio/72x4h507\(v=vs.100\).aspx), it is considered a legacy product and is not recommended for new development. WCF or ASP.NET Web API are recommended for new and existing applications.  
+-   **.NET Remoting is a legacy product.** As described in [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507%28v=vs.100%29), it is considered a legacy product and is not recommended for new development. WCF or ASP.NET Web API are recommended for new and existing applications.  
   
 -   **WCF uses cross-platform standards.** WCF was designed with cross-platform interoperability in mind and supports many industry standards (SOAP, WS-Security, WS-Trust, etc.). A WCF service can interoperate with clients running on operating systems other than Windows. Remoting was designed primarily for environments where both the server and client applications run using the .NET framework on a Windows operating system.  
   
@@ -305,9 +297,9 @@ catch (FaultException<CustomerServiceFault> fault)
   
  Once a Remoting application has been migrated to WCF, it is still important to remove dependencies on .NET Remoting. This ensures that any Remoting vulnerabilities are removed from the application. These steps include the following:  
   
--   **Discontinue use of MarshalByRefObject.** The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed. The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed.  
+-   **Discontinue use of MarshalByRefObject.** The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed.  
   
--   **Discontinue use of [Serializable] and ISerializable.** The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable]. The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable].  
+-   **Discontinue use of [Serializable] and ISerializable.** The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable].  
   
 ### Migration Scenarios  
  Now let’s see how to accomplish the following common Remoting scenarios in WCF:  
@@ -445,8 +437,7 @@ public class RemotingServer : MarshalByRefObject
        new ChannelFactory<ICustomerService>("customerservice");  
    ICustomerService service = factory.CreateChannel();  
    Customer customer = service.GetCustomer(42);  
-   Console.WriteLine(String.Format("  Customer {0} {1} received.",  
-           customer.FirstName, customer.LastName));  
+   Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received.");
    ```  
   
  Objects returned by WCF from the server to the client are always by value. The objects are deserialized copies of the data sent by the server. The client can call methods on these local copies without any danger of invoking server code through callbacks.  
@@ -651,7 +642,7 @@ public class RemotingServer : MarshalByRefObject
    CustomerId = 43,   
    AccountId = 99};  
    bool success = service.UpdateCustomer(customer);  
-   Console.WriteLine(String.Format("  Server returned {0}.", success));  
+   Console.WriteLine($"  Server returned {success}.");
    ```  
   
      The customer object will be serialized, and sent to the server, where it is deserialized into a new copy of that object.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], integral"
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SByte data type (Visual Basic)
 
@@ -54,13 +52,13 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
 
 - Disable integer bounds checks by compiling with the `/removeintchecks` compiler switch.
 
-- Use a [type character](../../programming-guide\language-features\data-types/type-characters.md) to explicitly define the literal value that you want to assign to the `SByte`. The following example assigns a negative literal `Short` value to an `SByte`. Note that, for negative numbers, the high-order bit of the high-order word of the numeric literal must be set. In the case of our example, this is bit 15 of the literal `Short` value.
+- Use a [type character](../../programming-guide/language-features/data-types/type-characters.md) to explicitly define the literal value that you want to assign to the `SByte`. The following example assigns a negative literal `Short` value to an `SByte`. Note that, for negative numbers, the high-order bit of the high-order word of the numeric literal must be set. In the case of our example, this is bit 15 of the literal `Short` value.
 
    [!code-vb[SByteTypeChars](../../../../samples/snippets/visualbasic/language-reference/data-types/sbyte-assignment.vb#1)]
 
 ## Programming tips
   
--   **CLS Compliance.** The `SByte` data type is not part of the [Common Language Specification](http://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
+-   **CLS Compliance.** The `SByte` data type is not part of the [Common Language Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
 
 -   **Widening.** The `SByte` data type widens to `Short`, `Integer`, `Long`, `Decimal`, `Single`, and `Double`. This means you can convert `SByte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.
   
@@ -70,11 +68,11 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
   
 ## See also
 
- <xref:System.SByte?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.SByte?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

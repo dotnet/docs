@@ -37,7 +37,7 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 caspol [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -84,7 +84,7 @@ caspol [options]
 |**-pub** { **-cert** *cert_file_name* &#124;<br /><br /> **-file** *signed_file_name* &#124; **-hex**  *hex_string* }|Specifies code that has the given software publisher, as denoted by a certificate file, a signature on a file, or the hexadecimal representation of an X509 certificate. For more information about this membership condition, see <xref:System.Security.Policy.PublisherMembershipCondition?displayProperty=nameWithType>.|  
 |**-site** *website*|Specifies code that has the given site of origin. For example:<br /><br /> `-site** www.proseware.com`<br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.SiteMembershipCondition?displayProperty=nameWithType>.|  
 |**-strong -file** *file_name* {*name* &#124; **-noname**} {*version* &#124; **-noversion**}|Specifies code that has a specific strong name, as designated by the file name, the assembly name as a string, and the assembly version in the format *major*.*minor*.*build*.*revision*. For example:<br /><br /> **-strong -file** myAssembly.exe myAssembly 1.2.3.4<br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.StrongNameMembershipCondition?displayProperty=nameWithType>.|  
-|**-url** *URL*|Specifies code that originates from the given URL. The URL must include a protocol, such as http:// or ftp://. Additionally, a wildcard character (\*) can be used to specify multiple assemblies from a particular URL. **Note:**  Because a URL can be identified using multiple names, using a URL as a membership condition is not a safe way to ascertain the identity of code. Where possible, use a strong name membership condition, a publisher membership condition, or the hash membership condition. <br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.UrlMembershipCondition?displayProperty=nameWithType>.|  
+|**-url** *URL*|Specifies code that originates from the given URL. The URL must include a protocol, such as `http://` or `ftp://`. Additionally, a wildcard character (\*) can be used to specify multiple assemblies from a particular URL. **Note:**  Because a URL can be identified using multiple names, using a URL as a membership condition is not a safe way to ascertain the identity of code. Where possible, use a strong name membership condition, a publisher membership condition, or the hash membership condition. <br /><br /> For more information about this membership condition, see <xref:System.Security.Policy.UrlMembershipCondition?displayProperty=nameWithType>.|  
 |**-zone** *zonename*|Specifies code with the given zone of origin. The *zonename* argument can be one of the following values: **MyComputer**, **Intranet**, **Trusted**, **Internet**, or **Untrusted**. For more information about this membership condition, see the <xref:System.Security.Policy.ZoneMembershipCondition> Class.|  
   
  The *flags* argument, which can be used with the **–addgroup** and **–chggroup** options, is specified using one of the following.  
@@ -97,9 +97,9 @@ caspol [options]
 |**-name** "*name*"|If used with the **–addgroup** option, specifies the scripting name for a code group to add. If used with the **-chggroup** option, specifies the scripting name for a code group to edit. The *name* argument must be enclosed in double quotes. The *name* argument cannot begin with a number, and can only contain A-Z, 0-9, and the underscore character. Code groups can be referred to by this *name* instead of by their numeric label. The *name* is also highly useful for scripting purposes.|  
   
 ## Remarks  
- Security policy is expressed using three policy levels: machine policy, user policy, and enterprise policy. The set of permissions that an assembly receives is determined by the intersection of the permission sets allowed by these three policy levels. Each policy level is represented by a hierarchical structure of code groups. Every code group has a membership condition that determines which code is a member of that group. A named permission set is also associated with each code group. This permission set specifies the permissions the runtime allows code that satisfies the membership condition to have. A code group hierarchy, along with its associated named permission sets, defines and maintains each level of security policy. You can use the**–user**, **-customuser**, **–machine** and **-enterprise** options to set the level of security policy.  
+ Security policy is expressed using three policy levels: machine policy, user policy, and enterprise policy. The set of permissions that an assembly receives is determined by the intersection of the permission sets allowed by these three policy levels. Each policy level is represented by a hierarchical structure of code groups. Every code group has a membership condition that determines which code is a member of that group. A named permission set is also associated with each code group. This permission set specifies the permissions the runtime allows code that satisfies the membership condition to have. A code group hierarchy, along with its associated named permission sets, defines and maintains each level of security policy. You can use the **–user**, **-customuser**, **–machine** and **-enterprise** options to set the level of security policy.  
   
- For more information about security policy and how the runtime determines which permissions to grant to code, see [Security Policy Management](http://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9).  
+ For more information about security policy and how the runtime determines which permissions to grant to code, see [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
   
 ## Referencing Code Groups and Permission Sets  
  To facilitate references to code groups in a hierarchy, the **-list** option displays an indented list of code groups along with their numerical labels (1, 1.1, 1.1.1, and so on). The other command-line operations that target code groups also use the numerical labels to refer to specific code groups.  
@@ -240,6 +240,6 @@ caspol -customall "c:\config_test\security.config" -resolvegroup myassembly
 caspol -all -resolveperm testassembly  
 ```  
   
-## See Also  
- [Tools](index.md)  
- [Command Prompts](developer-command-prompt-for-vs.md)
+## See also
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

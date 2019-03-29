@@ -1,5 +1,7 @@
 ---
-title: "Special Characters (C# Reference)"
+title: "Special Characters - C# Reference"
+ms.custom: seodec18
+
 ms.date: 02/14/2017
 f1_keywords: 
   - "cs.special characters"
@@ -22,7 +24,7 @@ Special characters are predefined, contextual characters that modify the program
 
 - [$](../../../csharp/language-reference/tokens/interpolated.md), the interpolated string character.
 
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

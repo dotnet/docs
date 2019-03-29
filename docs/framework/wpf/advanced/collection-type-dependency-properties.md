@@ -26,20 +26,20 @@ This topic provides guidance and suggested patterns for how to implement a depen
   
  Consider the following example. The following section of the example shows the definition for a class `Aquarium`. The class defines the collection type dependency property `AquariumObjects`, which uses the generic <xref:System.Collections.Generic.List%601> type with a <xref:System.Windows.FrameworkElement> type constraint. In the <xref:System.Windows.DependencyProperty.Register%28System.String%2CSystem.Type%2CSystem.Type%2CSystem.Windows.PropertyMetadata%29> call for the dependency property, the metadata establishes the default value to be a new generic <xref:System.Collections.Generic.List%601>.  
   
- [!code-csharp[PropertiesOvwSupport2#CollectionProblemDefinition](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport2/CSharp/page.xaml.cs#collectionproblemdefinition)]
- [!code-vb[PropertiesOvwSupport2#CollectionProblemDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport2/visualbasic/page.xaml.vb#collectionproblemdefinition)]  
+ [!code-csharp[PropertiesOvwSupport2#CollectionProblemDefinition](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport2/CSharp/page.xaml.cs#collectionproblemdefinition)]
+ [!code-vb[PropertiesOvwSupport2#CollectionProblemDefinition](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport2/visualbasic/page.xaml.vb#collectionproblemdefinition)]  
   
  However, if you just left the code as shown, that single list default value is shared for all instances of `Aquarium`. If you ran the following test code, which is intended to show how you would instantiate two separate `Aquarium` instances and add a single different `Fish` to each of them, you would see a surprising result:  
   
- [!code-csharp[PropertiesOvwSupport#CollectionProblemTestCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#collectionproblemtestcode)]
- [!code-vb[PropertiesOvwSupport#CollectionProblemTestCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#collectionproblemtestcode)]  
+ [!code-csharp[PropertiesOvwSupport#CollectionProblemTestCode](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#collectionproblemtestcode)]
+ [!code-vb[PropertiesOvwSupport#CollectionProblemTestCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#collectionproblemtestcode)]  
   
  Instead of each collection having a count of one, each collection has a count of two! This is because each `Aquarium` added its `Fish` to the default value collection, which resulted from a single constructor call in the metadata and is therefore shared between all instances. This situation is almost never what you want.  
   
  To correct this problem, you must reset the collection dependency property value to a unique instance, as part of the class constructor call. Because the property is a read-only dependency property, you use the <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29> method to set it, using the <xref:System.Windows.DependencyPropertyKey> that is only accessible within the class.  
   
- [!code-csharp[PropertiesOvwSupport#CollectionProblemCtor](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#collectionproblemctor)]
- [!code-vb[PropertiesOvwSupport#CollectionProblemCtor](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#collectionproblemctor)]  
+ [!code-csharp[PropertiesOvwSupport#CollectionProblemCtor](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#collectionproblemctor)]
+ [!code-vb[PropertiesOvwSupport#CollectionProblemCtor](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#collectionproblemctor)]  
   
  Now, if you ran that same test code again, you could see more expected results, where each `Aquarium` supported its own unique collection.  
   
@@ -50,10 +50,10 @@ This topic provides guidance and suggested patterns for how to implement a depen
   
  To enable subproperty binding in a dependency object collection, create the collection property as type <xref:System.Windows.FreezableCollection%601>, with a type constraint for that collection to any <xref:System.Windows.DependencyObject> derived class.  
   
-## See Also  
- <xref:System.Windows.FreezableCollection%601>  
- [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)
+## See also
+- <xref:System.Windows.FreezableCollection%601>
+- [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
+- [Data Binding Overview](../data/data-binding-overview.md)
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [Dependency Property Metadata](dependency-property-metadata.md)

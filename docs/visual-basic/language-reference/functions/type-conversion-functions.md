@@ -1,6 +1,6 @@
 ---
 title: "Type Conversion Functions (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 10/24/2018
 f1_keywords: 
   - "vb.CUShort"
   - "vb.csng"
@@ -116,27 +116,54 @@ CUShort(expression)
 |Function name|Return data type|Range for `expression` argument|  
 |-------------------|----------------------|-------------------------------------|  
 |`CBool`|[Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)|Any valid `Char` or `String` or numeric expression.|  
-|`CByte`|[Byte Data Type](../../../visual-basic/language-reference/data-types/byte-data-type.md)|0 through 255 (unsigned); fractional parts are rounded.<sup>1</sup>|  
+|`CByte`|[Byte Data Type](../../../visual-basic/language-reference/data-types/byte-data-type.md)|<xref:System.Byte.MinValue?displayProperty=nameWithType> (0) through <xref:System.Byte.MaxValue?displayProperty=nameWithType> (255) (unsigned); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to byte conversion with the `CByte` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
 |`CChar`|[Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)|Any valid `Char` or `String` expression; only first character of a `String` is converted; value can be 0 through 65535 (unsigned).|  
 |`CDate`|[Date Data Type](../../../visual-basic/language-reference/data-types/date-data-type.md)|Any valid representation of a date and time.|  
 |`CDbl`|[Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)|-1.79769313486231570E+308 through -4.94065645841246544E-324 for negative values; 4.94065645841246544E-324 through 1.79769313486231570E+308 for positive values.|  
 |`CDec`|[Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)|+/-79,228,162,514,264,337,593,543,950,335 for zero-scaled numbers, that is, numbers with no decimal places. For numbers with 28 decimal places, the range is +/-7.9228162514264337593543950335. The smallest possible non-zero number is 0.0000000000000000000000000001 (+/-1E-28).|  
-|`CInt`|[Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)|-2,147,483,648 through 2,147,483,647; fractional parts are rounded.<sup>1</sup>|  
-|`CLng`|[Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)|-9,223,372,036,854,775,808 through 9,223,372,036,854,775,807; fractional parts are rounded.<sup>1</sup>|  
+|`CInt`|[Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)|<xref:System.Int32.MinValue?displayProperty=nameWithType> (-2,147,483,648) through <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2,147,483,647); fractional parts are rounded.<sup>1</sup> <br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to integer conversion with the `CInt` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example. |  
+|`CLng`|[Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)|<xref:System.Int64.MinValue?displayProperty=nameWithType> (-9,223,372,036,854,775,808) through <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9,223,372,036,854,775,807); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to 64-bit integer conversion with the `CLng` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
 |`CObj`|[Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md)|Any valid expression.|  
-|`CSByte`|[SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)|-128 through 127; fractional parts are rounded.<sup>1</sup>|  
-|`CShort`|[Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)|-32,768 through 32,767; fractional parts are rounded.<sup>1</sup>|  
+|`CSByte`|[SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)|<xref:System.SByte.MinValue?displayProperty=nameWithType> (-128) through <xref:System.SByte.MaxValue?displayProperty=nameWithType> (127); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to signed byte conversion with the `CSByte` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
+|`CShort`|[Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)|<xref:System.Int16.MinValue?displayProperty=nameWithType> (-32,768) through <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32,767); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to 16-bit integer conversion with the `CShort` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
 |`CSng`|[Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)|-3.402823E+38 through -1.401298E-45 for negative values; 1.401298E-45 through 3.402823E+38 for positive values.|  
 |`CStr`|[String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)|Returns for `CStr` depend on the `expression` argument. See [Return Values for the CStr Function](../../../visual-basic/language-reference/functions/return-values-for-the-cstr-function.md).|  
-|`CUInt`|[UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)|0 through 4,294,967,295 (unsigned); fractional parts are rounded.<sup>1</sup>|  
-|`CULng`|[ULong Data Type](../../../visual-basic/language-reference/data-types/ulong-data-type.md)|0 through 18,446,744,073,709,551,615 (unsigned); fractional parts are rounded.<sup>1</sup>|  
-|`CUShort`|[UShort Data Type](../../../visual-basic/language-reference/data-types/ushort-data-type.md)|0 through 65,535 (unsigned); fractional parts are rounded.<sup>1</sup>|  
+|`CUInt`|[UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)|<xref:System.UInt32.MinValue?displayProperty=nameWithType> (0) through <xref:System.UInt32.MaxValue?displayProperty=nameWithType> (4,294,967,295) (unsigned); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to unsigned integer conversion with the `CUInt` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
+|`CULng`|[ULong Data Type](../../../visual-basic/language-reference/data-types/ulong-data-type.md)|<xref:System.UInt64.MinValue?displayProperty=nameWithType> (0) through <xref:System.UInt64.MaxValue?displayProperty=nameWithType> (18,446,744,073,709,551,615) (unsigned); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to unsigned long integer conversion with the `CULng` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
+|`CUShort`|[UShort Data Type](../../../visual-basic/language-reference/data-types/ushort-data-type.md)|<xref:System.UInt16.MinValue?displayProperty=nameWithType> (0) through <xref:System.UInt16.MaxValue?displayProperty=nameWithType> (65,535) (unsigned); fractional parts are rounded.<sup>1</sup><br/><br/>Starting with Visual Basic 15.8, Visual Basic optimizes the performance of floating-point to unsigned 16-bit integer conversion with the `CUShort` function; see the [Remarks](#remarks) section for more information. See the [CInt Example](#cint-example) section for an example.|  
   
  <sup>1</sup> Fractional parts can be subject to a special type of rounding called *banker's rounding*. See "Remarks" for more information.  
   
 ## Remarks  
  As a rule, you should use the Visual Basic type conversion functions in preference to the .NET Framework methods such as `ToString()`, either on the <xref:System.Convert> class or on an individual type structure or class. The Visual Basic functions are designed for optimal interaction with Visual Basic code, and they also make your source code shorter and easier to read. In addition, the .NET Framework conversion methods do not always produce the same results as the Visual Basic functions, for example when converting `Boolean` to `Integer`. For more information, see [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md).  
-  
+
+
+Starting with Visual Basic 15.8, the performance of floating-point-to-integer conversion is optimized when you pass the <xref:System.Single> or <xref:System.Double> value returned by the following methods to one of the integer conversion functions (`CByte`, `CShort`, `CInt`, `CLng`, `CSByte`, `CUShort`, `CUInt`, `CULng`):
+
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Single)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Single)?displayProperty=nameWithType>
+- <xref:System.Math.Ceiling(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Floor(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
+
+This optimization allows code that does a large number of integer conversions to run up to twice as fast. The following example illustrates these optimized floating-point-to-integer conversions:
+
+```vb
+Dim s As Single = 173.7619
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+```
+
 ## Behavior  
   
 -   **Coercion.** In general, you can use the data type conversion functions to coerce the result of an operation to a particular data type rather than the default data type. For example, use `CDec` to force decimal arithmetic in cases where single-precision, double-precision, or integer arithmetic would normally take place.  
@@ -165,73 +192,73 @@ CUShort(expression)
 ## CBool Example  
  The following example uses the `CBool` function to convert expressions to `Boolean` values. If an expression evaluates to a nonzero value, `CBool` returns `True`; otherwise, it returns `False`.  
   
- [!code-vb[VbVbalrFunctions#1](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_1.vb)]  
+ [!code-vb[VbVbalrFunctions#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#1)]  
   
 ## CByte Example  
  The following example uses the `CByte` function to convert an expression to a `Byte`.  
   
- [!code-vb[VbVbalrFunctions#2](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_2.vb)]  
+ [!code-vb[VbVbalrFunctions#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#2)]  
   
 ## CChar Example  
  The following example uses the `CChar` function to convert the first character of a `String` expression to a `Char` type.  
   
- [!code-vb[VbVbalrFunctions#3](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_3.vb)]  
+ [!code-vb[VbVbalrFunctions#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#3)]  
   
  The input argument to `CChar` must be of data type `Char` or `String`. You cannot use `CChar` to convert a number to a character, because `CChar` cannot accept a numeric data type. The following example obtains a number representing a code point (character code) and converts it to the corresponding character. It uses the <xref:Microsoft.VisualBasic.Interaction.InputBox%2A> function to obtain the string of digits, `CInt` to convert the string to type `Integer`, and `ChrW` to convert the number to type `Char`.  
   
- [!code-vb[VbVbalrFunctions#4](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_4.vb)]  
+ [!code-vb[VbVbalrFunctions#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#4)]  
   
 ## CDate Example  
  The following example uses the `CDate` function to convert strings to `Date` values. In general, hard-coding dates and times as strings (as shown in this example) is not recommended. Use date literals and time literals, such as #Feb 12, 1969# and #4:45:23 PM#, instead.  
   
- [!code-vb[VbVbalrFunctions#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_5.vb)]  
+ [!code-vb[VbVbalrFunctions#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#5)]  
   
 ## CDbl Example  
- [!code-vb[VbVbalrFunctions#6](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_6.vb)]  
+ [!code-vb[VbVbalrFunctions#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#6)]  
   
 ## CDec Example  
  The following example uses the `CDec` function to convert a numeric value to `Decimal`.  
   
- [!code-vb[VbVbalrFunctions#7](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_7.vb)]  
+ [!code-vb[VbVbalrFunctions#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#7)]  
   
 ## CInt Example  
  The following example uses the `CInt` function to convert a value to `Integer`.  
   
- [!code-vb[VbVbalrFunctions#8](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_8.vb)]  
-  
-## CLng Example  
+ [!code-vb[VbVbalrFunctions#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#8)]  
+
+## CLng Example
  The following example uses the `CLng` function to convert values to `Long`.  
   
- [!code-vb[VbVbalrFunctions#9](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_9.vb)]  
+ [!code-vb[VbVbalrFunctions#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#9)]  
   
 ## CObj Example  
  The following example uses the `CObj` function to convert a numeric value to `Object`. The `Object` variable itself contains only a four-byte pointer, which points to the `Double` value assigned to it.  
   
- [!code-vb[VbVbalrFunctions#10](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_10.vb)]  
+ [!code-vb[VbVbalrFunctions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#10)]  
   
 ## CSByte Example  
  The following example uses the `CSByte` function to convert a numeric value to `SByte`.  
   
- [!code-vb[VbVbalrFunctions#11](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_11.vb)]  
+ [!code-vb[VbVbalrFunctions#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#11)]  
   
 ## CShort Example  
  The following example uses the `CShort` function to convert a numeric value to `Short`.  
   
- [!code-vb[VbVbalrFunctions#12](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_12.vb)]  
+ [!code-vb[VbVbalrFunctions#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#12)]  
   
 ## CSng Example  
  The following example uses the `CSng` function to convert values to `Single`.  
   
- [!code-vb[VbVbalrFunctions#13](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_13.vb)]  
+ [!code-vb[VbVbalrFunctions#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#13)]  
   
 ## CStr Example  
  The following example uses the `CStr` function to convert a numeric value to `String`.  
   
- [!code-vb[VbVbalrFunctions#14](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_14.vb)]  
+ [!code-vb[VbVbalrFunctions#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#14)]  
   
  The following example uses the `CStr` function to convert `Date` values to `String` values.  
   
- [!code-vb[VbVbalrFunctions#15](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_15.vb)]  
+ [!code-vb[VbVbalrFunctions#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#15)]  
   
  `CStr` always renders a `Date` value in the standard short format for the current locale, for example, "6/15/2003 4:35:47 PM". However, `CStr` suppresses the *neutral values* of 1/1/0001 for the date and 00:00:00 for the time.  
   
@@ -240,29 +267,29 @@ CUShort(expression)
 ## CUInt Example  
  The following example uses the `CUInt` function to convert a numeric value to `UInteger`.  
   
- [!code-vb[VbVbalrFunctions#16](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_16.vb)]  
+ [!code-vb[VbVbalrFunctions#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#16)]  
   
 ## CULng Example  
  The following example uses the `CULng` function to convert a numeric value to `ULong`.  
   
- [!code-vb[VbVbalrFunctions#17](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_17.vb)]  
+ [!code-vb[VbVbalrFunctions#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#17)]  
   
 ## CUShort Example  
  The following example uses the `CUShort` function to convert a numeric value to `UShort`.  
   
- [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_18.vb)]  
+ [!code-vb[VbVbalrFunctions#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#18)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- <xref:Microsoft.VisualBasic.Strings.Chr%2A>  
- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Int%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>  
- <xref:Microsoft.VisualBasic.Strings.Format%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Str%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Val%2A>  
- [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)  
- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+## See also
+- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Chr%2A>
+- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Int%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
+- <xref:Microsoft.VisualBasic.Strings.Format%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Str%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Val%2A>
+- [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)
+- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

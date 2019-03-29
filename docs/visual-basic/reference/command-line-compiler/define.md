@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "/define compiler option [Visual Basic]"
   - "define compiler option [Visual Basic]"
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
-author: rpetrusha
-ms.author: ronpet
 ---
 # -define (Visual Basic)
 Defines conditional compiler constants.  
@@ -46,10 +44,10 @@ Defines conditional compiler constants.
 ## Example  
  The following code defines and then uses two conditional compiler constants.  
   
- [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/define_1.vb)]  
+ [!code-vb[VbVbalrCompiler#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/Class1.vb#45)]  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

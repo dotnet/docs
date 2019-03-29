@@ -1,7 +1,7 @@
 ---
 title: "Windows Forms Application Basics (Visual Basic)"
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows applications"
   - "Windows Forms, Visual Basic"
 ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
@@ -40,7 +40,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
   
 |To|See|  
 |--------|---------|  
-|Create a new Windows Forms application with Visual Studio|[Walkthrough: Creating a Simple Windows Form](http://msdn.microsoft.com/library/2d9daec0-0543-41d0-acb1-964f685bddbb)|  
+|Create a new Windows Forms application with Visual Studio|[Tutorial 1: Create a picture viewer](/visualstudio/ide/tutorial-1-create-a-picture-viewer)|  
 |Use controls on forms|[How to: Add Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-controls-to-windows-forms.md)|   
 |Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](../../../framework/winforms/advanced/getting-started-with-graphics-programming.md)|  
 |Create custom controls|[How to: Inherit from the UserControl Class](../../../framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)|  
@@ -48,7 +48,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 ## Displaying and Manipulating Data  
  Many applications must display data from a database, XML file, XML Web service, or other data source. Windows Forms provides a flexible control called the <xref:System.Windows.Forms.DataGridView> control for rendering such tabular data in a traditional row and column format, so that every piece of data occupies its own cell. Using <xref:System.Windows.Forms.DataGridView> you can customize the appearance of individual cells, lock arbitrary rows and columns in place, and display complex controls inside cells, among other features.  
   
- Connecting to data sources over a network is a simple task with Windows Forms smart clients. The <xref:System.Windows.Forms.BindingSource> component, new with Windows Forms in [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] and the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], represents a connection to a data source, and exposes methods for binding data to controls, navigating to the previous and next records, editing records, and saving changes back to the original source. The <xref:System.Windows.Forms.BindingNavigator> control provides a simple interface over the <xref:System.Windows.Forms.BindingSource> component for users to navigate between records.  
+ Connecting to data sources over a network is a simple task with Windows Forms smart clients. The <xref:System.Windows.Forms.BindingSource> component, new with Windows Forms in Visual Studio 2005 and the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], represents a connection to a data source, and exposes methods for binding data to controls, navigating to the previous and next records, editing records, and saving changes back to the original source. The <xref:System.Windows.Forms.BindingNavigator> control provides a simple interface over the <xref:System.Windows.Forms.BindingSource> component for users to navigate between records.  
   
 ### Data-Bound Controls  
  You can create data-bound controls easily using the Data Sources window, which displays data sources such as databases, Web services, and objects in your project. You can create data-bound controls by dragging items from this window onto forms in your project. You can also data-bind existing controls to data by dragging objects from the Data Sources window onto existing controls.  
@@ -61,7 +61,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |To|See|  
 |--------|---------|  
 |Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
-|Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](https://msdn.microsoft.com/library/ya3sah92.aspx)|  
+|Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## Deploying Applications to Client Computers  
@@ -89,7 +89,8 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |Print the contents of a form|[How to: Print Graphics in Windows Forms](../../../framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](../../../framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)|   
 |Learn more about Windows Forms security|[Security in Windows Forms Overview](../../../framework/winforms/security-in-windows-forms-overview.md)|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
+- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

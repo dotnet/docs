@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "ref return values [Visual Basic]"
   - "ref returns [Visual Basic]"
 ms.assetid: 5ef0cc69-eb3a-4a67-92a2-78585f223cb5
-author: rpetrusha
-ms.author: ronpet
 ---
 # Support for reference return values (Visual Basic)
 
@@ -43,7 +41,7 @@ The best way to handle this scenario is to pass the reference return value by re
 
 ## See also
 
-[Passing arguments by value and by reference](passing-arguments-by-value-and-by-reference.md)   
-[Procedures in Visual Basic](index.md)   
+- [Passing arguments by value and by reference](passing-arguments-by-value-and-by-reference.md)
+- [Procedures in Visual Basic](index.md)
 
 

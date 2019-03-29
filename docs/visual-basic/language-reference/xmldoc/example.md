@@ -1,12 +1,12 @@
 ---
-title: "&lt;example&gt; (Visual Basic)"
+title: "<example> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "example XML tag"
   - "<example> XML tag"
 ms.assetid: 90eeda1c-3fc4-427c-879c-5046d265a97c
 ---
-# &lt;example&gt; (Visual Basic)
+# \<example> (Visual Basic)
 Specifies an example for the member.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Specifies an example for the member.
 <example>description</example>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the code sample.  
   
@@ -27,7 +27,7 @@ Specifies an example for the member.
 ## Example  
  This example uses the `<example>` tag to include an example for using the `ID` field.  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/example_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#2)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

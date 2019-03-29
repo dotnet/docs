@@ -30,7 +30,7 @@ Specifies that a class can be used only as a base class and that you cannot crea
 ## Example  
  The following example illustrates both forced inheritance and forced overriding. The base class `shape` defines a variable `acrossLine`. The classes `circle` and `square` derive from `shape`. They inherit the definition of `acrossLine`, but they must define the function `area` because that calculation is different for each kind of shape.  
   
- [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/VisualBasic/mustinherit_1.vb)]  
+ [!code-vb[VbVbalrKeywords#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#2)]  
   
  You can declare `shape1` and `shape2` to be of type `shape`. However, you cannot create an object from `shape` because it lacks the functionality of the function `area` and is marked `MustInherit`.  
   
@@ -41,8 +41,8 @@ Specifies that a class can be used only as a base class and that you cannot crea
   
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
   
-## See Also  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+## See also
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)

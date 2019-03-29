@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "else directive (#else)"
   - "#Else directive [Visual Basic]"
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
-author: rpetrusha
-ms.author: ronpet
 ---
 # #If...Then...#Else Directives
 Conditionally compiles selected blocks of Visual Basic code.  
@@ -74,12 +72,12 @@ The statements within a conditional compilation block must be complete logical s
 ## Example
  This example uses the `#If...Then...#Else` construct to determine whether to compile certain statements.  
   
- [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#1)]  
   
-## See Also  
-[#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
-[If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
-[Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
-<xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>   
+## See also
+- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>
 
 

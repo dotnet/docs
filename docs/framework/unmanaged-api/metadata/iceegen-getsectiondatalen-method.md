@@ -32,7 +32,7 @@ HRESULT GetSectionDataLen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The data section whose length will be retrieved.  
   
@@ -51,5 +51,5 @@ HRESULT GetSectionDataLen (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

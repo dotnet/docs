@@ -30,7 +30,7 @@ HRESULT GetDocumentVersion (
     [out] BOOL* pbCurrent);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDoc`  
  [in] The specified document.  
   
@@ -46,5 +46,5 @@ HRESULT GetDocumentVersion (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

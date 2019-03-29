@@ -27,7 +27,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  The major components of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] are illustrated in the figure below. The red sections of the diagram (PresentationFramework, PresentationCore, and milcore) are the major code portions of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. Of these, only one is an unmanaged component – milcore. Milcore is written in unmanaged code in order to enable tight integration with [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]. All display in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] is done through the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] engine, allowing for efficient hardware and software rendering. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also required fine control over memory and execution. The composition engine in milcore is extremely performance sensitive, and required giving up many advantages of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] to gain performance.  
   
- ![The position of WPF within the .NET Framework.](../../../../docs/framework/wpf/advanced/media/wpf-architect1.PNG "wpf_architect1")  
+ ![The position of WPF within the .NET Framework.](./media/wpf-architect1.PNG "wpf_architect1")  
   
  Communication between the managed and unmanaged portions of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] is discussed later in this topic. The remainder of the managed programming model is described below.  
   
@@ -65,7 +65,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  When programming [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you create <xref:System.Windows.Media.Visual> elements, and derived types, which internally communicate to the composition tree through this messaging protocol. Each <xref:System.Windows.Media.Visual> in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] may create one, none, or several composition nodes.  
   
- ![The Windows Presentation Foundation Visual Tree.](../../../../docs/framework/wpf/advanced/media/wpf-architecture2.PNG "wpf_architecture2")  
+ ![The Windows Presentation Foundation Visual Tree.](./media/wpf-architecture2.PNG "wpf_architecture2")  
   
  There is a very important architectural detail to notice here – the entire tree of visuals and drawing instructions is cached. In graphics terms, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] uses a retained rendering system. This enables the system to repaint at high refresh rates without the composition system blocking on callbacks to user code. This helps prevent the appearance of an unresponsive application.  
   
@@ -93,7 +93,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  Input originates as a signal on a kernel mode device driver and gets routed to the correct process and thread through an intricate process involving the Windows kernel and User32. Once the User32 message corresponding to the input is routed to [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], it is converted into a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] raw input message and sent to the dispatcher. [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] allows for raw input events to be converted to multiple actual events, enabling features like "MouseEnter" to be implemented at a low level of the system with guaranteed delivery.  
   
- Each input event is converted to at least two events – a "preview" event and the actual event. All events in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] have a notion of routing through the element tree. Events are said to "bubble" if they traverse from a target up the tree to the root, and are said to "tunnel" if that start at the root and traverse down to a target. Input preview events tunnel, enabling any element in the tree an opportunity to filter or take action on the event. The regular (non-preview) events then bubble from the target up to the root.  
+ Each input event is converted to at least two events – a "preview" event and the actual event. All events in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] have a notion of routing through the element tree. Events are said to "bubble" if they traverse from a target up the tree to the root, and are said to "tunnel" if they start at the root and traverse down to a target. Input preview events tunnel, enabling any element in the tree an opportunity to filter or take action on the event. The regular (non-preview) events then bubble from the target up to the root.  
   
  This split between the tunnel and bubble phase makes implementation of features like keyboard accelerators work in a consistent fashion in a composite world. In User32 you would implement keyboard accelerators by having a single global table containing all the accelerators you wanted to support (Ctrl+N mapping to "New"). In the dispatcher for your application you would call **TranslateAccelerator** which would sniff the input messages in User32 and determine if any matched a registered accelerator. In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] this wouldn’t work because the system is fully "composable" – any element can handle and use any keyboard accelerator. Having this two phase model for input allows components to implement their own "TranslateAccelerator".  
   
@@ -135,14 +135,14 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  When you begin developing [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] based applications, it should feel very familiar. You can set properties, use objects, and data bind in much the same way that you can using [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] or [!INCLUDE[TLA#tla_aspnet](../../../../includes/tlasharptla-aspnet-md.md)]. With a deeper investigation into the architecture of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you'll find that the possibility exists for creating much richer applications that fundamentally treat data as the core driver of the application.  
   
-## See Also  
- <xref:System.Windows.Media.Visual>  
- <xref:System.Windows.UIElement>  
- <xref:System.Windows.Input.ICommand>  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.Threading.DispatcherObject>  
- <xref:System.Windows.Input.CommandBinding>  
- <xref:System.Windows.Controls.Control>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+## See also
+- <xref:System.Windows.Media.Visual>
+- <xref:System.Windows.UIElement>
+- <xref:System.Windows.Input.ICommand>
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.Threading.DispatcherObject>
+- <xref:System.Windows.Input.CommandBinding>
+- <xref:System.Windows.Controls.Control>
+- [Data Binding Overview](../data/data-binding-overview.md)
+- [Layout](layout.md)
+- [Animation Overview](../graphics-multimedia/animation-overview.md)

@@ -2,9 +2,6 @@
 title: "International Resource Identifier Support in System.Uri"
 ms.date: "03/30/2017"
 ms.assetid: b5e994c3-3535-4aff-8e1b-b69be22e9a22
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # International Resource Identifier Support in System.Uri
 The <xref:System.Uri?displayProperty=nameWithType> class has been extended with International Resource Identifier (IRI) and Internationalized Domain Names (IDN) support. These enhancements are available in .NET Framework 3.5, 3.0 SP1, and 2.0 SP1.  
@@ -40,8 +37,8 @@ The <xref:System.Uri?displayProperty=nameWithType> class has been extended with 
   
  The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> and <xref:System.Configuration.IdnElement?displayProperty=nameWithType> configuration classes will be read once when the first <xref:System.Uri?displayProperty=nameWithType> class is constructed. Changes to configuration settings after that time are ignored.  
   
-## See Also  
- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>  
- <xref:System.Uri?displayProperty=nameWithType>  
- <xref:System.Uri.DnsSafeHost%2A?displayProperty=nameWithType>
+## See also
+- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
+- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
+- <xref:System.Uri.DnsSafeHost%2A?displayProperty=nameWithType>

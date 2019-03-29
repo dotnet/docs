@@ -27,7 +27,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists exactly of the single character `H`.  
   
-     [!code-vb[VbVbalrOperators#70](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_1.vb)]  
+     [!code-vb[VbVbalrOperators#70](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#70)]  
   
 ### To match a character in the string expression against a wildcard character  
   
@@ -35,7 +35,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists of the single character `W` followed by exactly two characters of any values.  
   
-     [!code-vb[VbVbalrOperators#71](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_2.vb)]  
+     [!code-vb[VbVbalrOperators#71](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#71)]  
   
 ### To match a character in the string expression against a list of characters  
   
@@ -43,7 +43,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists of any valid character followed by exactly one of the characters `A`, `C`, or `E`.  
   
-     [!code-vb[VbVbalrOperators#72](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_3.vb)]  
+     [!code-vb[VbVbalrOperators#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#72)]  
   
      Note that this match is case-sensitive.  
   
@@ -53,7 +53,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists of the characters `num` followed by exactly one of the characters `i`, `j`, `k`, `l`, `m`, or `n`.  
   
-     [!code-vb[VbVbalrOperators#73](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_4.vb)]  
+     [!code-vb[VbVbalrOperators#73](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#73)]  
   
      Note that this match is case-sensitive.  
   
@@ -70,10 +70,10 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests the seven-digit telephone number `phoneNum` for exactly three numeric digits, followed by a space, a hyphen (`–`), a period (`.`), or no character at all, followed by exactly four numeric digits.  
   
-     [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_5.vb)]  
+     [!code-vb[VbVbalrOperators#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#74)]  
   
-## See Also  
- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md)  
- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)
+## See also
+- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md)
+- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)

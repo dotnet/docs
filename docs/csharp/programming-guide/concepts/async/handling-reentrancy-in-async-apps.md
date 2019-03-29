@@ -23,7 +23,7 @@ When you include asynchronous code in your app, you should consider and possibly
 > [!NOTE]
 >  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-##  <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy  
+## <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy  
  In the example in this topic, users choose a **Start** button to initiate an asynchronous app that downloads a series of websites and calculates the total number of bytes that are downloaded. A synchronous version of the example would respond the same way regardless of how many times a user chooses the button because, after the first time, the UI thread ignores those events until the app finishes running. In an asynchronous app, however, the UI thread continues to respond, and you might reenter the asynchronous operation before it has completed.  
   
  The following example shows the expected output if the user chooses the **Start** button only once. A list of the downloaded websites appears with the size, in bytes, of each site. The total number of bytes appears at the end.  
@@ -80,7 +80,7 @@ TOTAL bytes returned:  890591
   
  You can review the code that produces this output by scrolling to the end of this topic. You can experiment with the code by downloading the solution to your local computer and then running the WebsiteDownload project or by using the code at the end of this topic to create your own project. For more information and instructions, see [Reviewing and Running the Example App](#BKMD_SettingUpTheExample).  
   
-##  <a name="BKMK_HandlingReentrancy"></a> Handling Reentrancy  
+## <a name="BKMK_HandlingReentrancy"></a> Handling Reentrancy  
  You can handle reentrancy in a variety of ways, depending on what you want your app to do. This topic presents the following examples:  
   
 -   [Disable the Start Button](#BKMK_DisableTheStartButton)  
@@ -95,7 +95,7 @@ TOTAL bytes returned:  890591
   
      Allow all requested operations to run asynchronously, but coordinate the display of output so that the results from each operation appear together and in order.  
   
-###  <a name="BKMK_DisableTheStartButton"></a> Disable the Start Button  
+### <a name="BKMK_DisableTheStartButton"></a> Disable the Start Button  
  You can block the **Start** button while an operation is running by disabling the button at the top of the `StartButton_Click` event handler. You can then reenable the button from within a  `finally` block when the operation finishes so that users can run the app again.  
   
  To set up this scenario, make the following changes to the basic code that is provided in [Reviewing and Running the Example App](#BKMD_SettingUpTheExample). You also can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06). The name of the project is DisableStartButton.  
@@ -127,7 +127,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
  As a result of the changes, the button doesn't respond while `AccessTheWebAsync` is downloading the websites, so the process can’t be reentered.  
   
-###  <a name="BKMK_CancelAndRestart"></a> Cancel and Restart the Operation  
+### <a name="BKMK_CancelAndRestart"></a> Cancel and Restart the Operation  
  Instead of disabling the **Start** button, you can keep the button active but, if the user chooses that button again, cancel the operation that's already running and let the most recently started operation continue.  
   
  For more information about cancellation, see [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md).  
@@ -253,7 +253,7 @@ async Task AccessTheWebAsync(CancellationToken ct)
   
     // Display the total count for all of the websites.  
     ResultsTextBox.Text +=  
-        string.Format("\r\n\r\nTOTAL bytes returned:  {0}\r\n", total);  
+        $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
 }     
 ```  
   
@@ -287,7 +287,7 @@ TOTAL bytes returned:  890591
   
  To eliminate the partial lists, uncomment the first line of code in `StartButton_Click` to clear the text box each time the user restarts the operation.  
   
-###  <a name="BKMK_RunMultipleOperations"></a> Run Multiple Operations and Queue the Output  
+### <a name="BKMK_RunMultipleOperations"></a> Run Multiple Operations and Queue the Output  
  This third example is the most complicated in that the app starts another asynchronous operation each time that the user chooses the **Start** button, and all the operations run to completion. All the requested operations download websites from the list asynchronously, but the output from the operations is presented sequentially. That is, the actual downloading activity is interleaved, as the output in [Recognizing Reentrancy](#BKMK_RecognizingReentrancy) shows, but the list of results for each group is presented separately.  
   
  The operations share a global <xref:System.Threading.Tasks.Task>, `pendingWork`, which serves as a gatekeeper for the display process.  
@@ -396,7 +396,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
     // ***Verify that each group's results are displayed together, and that  
     // the groups display in order, by marking each group with a letter.  
     group = (char)(group + 1);  
-    ResultsTextBox.Text += string.Format("\r\n\r\n#Starting group {0}.", group);  
+    ResultsTextBox.Text += $"\r\n\r\n#Starting group {group}.";
   
     try  
     {  
@@ -405,7 +405,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
         // The following line verifies a successful return from the download and  
         // display procedures.   
-        ResultsTextBox.Text += string.Format("\r\n\r\n#Group {0} is complete.\r\n", finishedGroup);  
+        ResultsTextBox.Text += $"\r\n\r\n#Group {finishedGroup} is complete.\r\n";
     }  
     catch (Exception)  
     {  
@@ -436,7 +436,7 @@ private async Task<char> AccessTheWebAsync(char grp)
     // Assign the Task that FinishOneGroupAsync returns to the gatekeeper task, pendingWork.  
     pendingWork = FinishOneGroupAsync(urlList, getContentTasks, grp);  
   
-    ResultsTextBox.Text += string.Format("\r\n#Task assigned for group {0}. Download tasks are active.\r\n", grp);  
+    ResultsTextBox.Text += $"\r\n#Task assigned for group {grp}. Download tasks are active.\r\n";
   
     // ***This task is complete when a group has finished downloading and displaying.  
     await pendingWork;  
@@ -471,7 +471,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
     // Display the total count for all of the websites.  
     ResultsTextBox.Text +=  
-        string.Format("\r\n\r\nTOTAL bytes returned:  {0}\r\n", total);  
+        $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
 }  
 ```  
   
@@ -528,13 +528,13 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
      After a group enters `StartButton_Click`, the operation doesn't complete an await expression until the operation enters `FinishOneGroupAsync`. Therefore, no other operation can gain control during that segment of code.  
   
-##  <a name="BKMD_SettingUpTheExample"></a> Reviewing and Running the Example App  
+## <a name="BKMD_SettingUpTheExample"></a> Reviewing and Running the Example App  
  To better understand the example app, you can download it, build it yourself, or review the code at the end of this topic without implementing the app.  
   
 > [!NOTE]
 >  To run the example as a Windows Presentation Foundation (WPF) desktop app, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-###  <a name="BKMK_DownloadingTheApp"></a> Downloading the App  
+### <a name="BKMK_DownloadingTheApp"></a> Downloading the App  
   
 1.  Download the compressed file from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06).  
   
@@ -548,7 +548,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 6.  Choose the CTRL+F5 keys to build and run the project.  
   
-###  <a name="BKMK_BuildingTheApp"></a> Building the App  
+### <a name="BKMK_BuildingTheApp"></a> Building the App  
  The following section provides the code to build the example as a WPF app.  
   
 ##### To build a WPF app  
@@ -666,21 +666,21 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
                 // Display the total count for all of the websites.  
                 ResultsTextBox.Text +=  
-                    string.Format("\r\n\r\nTOTAL bytes returned:  {0}\r\n", total);  
+                    $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
             }  
   
             private List<string> SetUpURLList()  
             {  
                 List<string> urls = new List<string>   
                 {   
-                    "http://msdn.microsoft.com/library/hh191443.aspx",  
-                    "http://msdn.microsoft.com/library/aa578028.aspx",  
-                    "http://msdn.microsoft.com/library/jj155761.aspx",  
-                    "http://msdn.microsoft.com/library/hh290140.aspx",  
-                    "http://msdn.microsoft.com/library/hh524395.aspx",  
-                    "http://msdn.microsoft.com/library/ms404677.aspx",  
-                    "http://msdn.microsoft.com",  
-                    "http://msdn.microsoft.com/library/ff730837.aspx"  
+                    "https://msdn.microsoft.com/library/hh191443.aspx",  
+                    "https://msdn.microsoft.com/library/aa578028.aspx",  
+                    "https://msdn.microsoft.com/library/jj155761.aspx",  
+                    "https://msdn.microsoft.com/library/hh290140.aspx",  
+                    "https://msdn.microsoft.com/library/hh524395.aspx",  
+                    "https://msdn.microsoft.com/library/ms404677.aspx",  
+                    "https://msdn.microsoft.com",  
+                    "https://msdn.microsoft.com/library/ff730837.aspx"  
                 };  
                 return urls;  
             }  
@@ -691,10 +691,10 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
                 // to be used with a monospaced font, such as Lucida Console or   
                 // Global Monospace.  
   
-                // Strip off the "http://".  
-                var displayURL = url.Replace("http://", "");  
+                // Strip off the "https://".  
+                var displayURL = url.Replace("https://", "");  
                 // Display position in the URL list, the URL, and the number of bytes.  
-                ResultsTextBox.Text += string.Format("\n{0}. {1,-58} {2,8}", pos, displayURL, content.Length);  
+                ResultsTextBox.Text += $"\n{pos}. {displayURL,-58} {content.Length,8}";
             }  
         }  
     }  
@@ -704,6 +704,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 12. Make the changes from [Disable the Start Button](#BKMK_DisableTheStartButton), [Cancel and Restart the Operation](#BKMK_CancelAndRestart), or [Run Multiple Operations and Queue the Output](#BKMK_RunMultipleOperations) to handle the reentrancy.  
   
-## See Also  
- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+## See also
+
+- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)

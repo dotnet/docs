@@ -46,7 +46,7 @@ Friend stringForThisProject As String
  You can use `Friend` only at module, interface, or namespace level. This means you can declare a friend element at the level of a source file or namespace, or inside an interface, module, class, or structure, but not in a procedure.  
   
 ## Protected Friend  
- The `Protected` and `Friend` keywords together in the declaration statement specify that the element can be accessed either from derived classes or from within the same assembly, or both. The following code shows a sample `Protected Friend` declaration.  
+ The [Protected Friend](../../../language-reference/modifiers/protected-friend.md) keyword combination in the declaration statement specifies that the element can be accessed either from derived classes or from within the same assembly, or both. The following code shows a sample `Protected Friend` declaration.  
   
 ```vb  
 Protected Friend stringForProjectAndHeirs As String  
@@ -67,7 +67,7 @@ Private numberForMeOnly As Integer
 
 ## Private Protected
 
-The [Private Protected](../../../language-reference/modifiers/private-protected.md) keyword in the declaration statement specifies that the element can be accessed only from within the same class, as well as from derived classes found in the same assembly as the containing class. The `Private Protected` access modifier is supported starting with Visual Basic 15.5.
+The [Private Protected](../../../language-reference/modifiers/private-protected.md) keyword combination in the declaration statement specifies that the element can be accessed only from within the same class, as well as from derived classes found in the same assembly as the containing class. The `Private Protected` access modifier is supported starting with Visual Basic 15.5.
 
 The following example shows a `Private Protected` declaration:
 
@@ -95,8 +95,9 @@ To use the `Private Protected` access modifier, you must add the following eleme
 
 For more information see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
 
- ## Access Modifiers  
- The keywords that specify access level are called *access modifiers*. The following table compares the access modifiers.  
+## Access Modifiers  
+
+The keywords that specify access level are called *access modifiers*. The following table compares the access modifiers.  
   
 |Access modifier|Access level granted|Elements you can declare with this access level|Declaration context within which you can use this modifier|  
 |---------------------|--------------------------|-----------------------------------------------------|----------------------------------------------------------------|  
@@ -107,14 +108,14 @@ For more information see [setting the Visual Basic language version](../../../la
 |`Private`|Declaration context:<br /><br /> Code in the type that declares a private element, including code within contained types, can access the element|Interfaces<br /><br /> Classes<br /><br /> Structures<br /><br /> Structure members<br /><br /> Procedures<br /><br /> Properties<br /><br /> Member variables<br /><br /> Constants<br /><br /> Enumerations<br /><br /> Events<br /><br /> External declarations<br /><br /> Delegates|Module<br /><br /> Class<br /><br /> Structure|
 |`Private Protected`|Code in the class that declares a private protected element, or code in a derived class found in the same assembly as the bas class.|Interfaces<br /><br /> Classes<br /><br /> Structures<br /><br /> Procedures<br /><br /> Properties<br /><br /> Member variables<br /><br /> Constants<br /><br /> Enumerations<br /><br /> Events<br /><br /> External declarations<br /><br /> Delegates|Class|
   
-## See Also  
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Static](../../../../visual-basic/language-reference/modifiers/static.md)  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
- [How to: Control the Availability of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-availability-of-a-variable.md)  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+## See also
+- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Static](../../../../visual-basic/language-reference/modifiers/static.md)
+- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
+- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+- [How to: Control the Availability of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-availability-of-a-variable.md)
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)

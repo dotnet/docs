@@ -3,17 +3,25 @@ title: F# Interactive (fsi.exe) Reference
 description: Learn how F# Interactive (fsi.exe) is used to run F# code interactively at the console or to execute F# scripts.
 ms.date: 05/16/2016
 ---
-# Interactive Programming with F# #
+# Interactive Programming with F\#
 
 > [!NOTE]
-This article currently describes the experience for Windows only.  It will be rewritten.
+> This article currently describes the experience for Windows only.  It will be rewritten.
 
 > [!NOTE]
-The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 F# Interactive (fsi.exe) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
 
-To run F# Interactive from the console, run fsi.exe.  You will find fsi.exe in "c:\Program Files (x86)\Microsoft SDKs\F#\<version>\Framework\<version>\". For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
+To run F# Interactive from the console, run fsi.exe.  You will find fsi.exe in:
+
+```console
+C:\Program Files (x86)\Microsoft Visual Studio\2017\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
+```
+
+where `sku` is either `Community`, `Professional`, or `Enterprise`.
+
+For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
 To run F# Interactive through Visual Studio, you can click the appropriate toolbar button labeled **F# Interactive**, or use the keys **Ctrl+Alt+F**. Doing this will open the interactive window, a tool window running an F# Interactive session. You can also select some code that you want to run in the interactive window and hit the key combination **ALT+ENTER**. F# Interactive starts in a tool window labeled **F# Interactive**. When you use this key combination, make sure that the editor window has the focus.
 
@@ -30,7 +38,7 @@ If you have a project open that references some libraries, you can reference the
 You can control the F# Interactive command line arguments (options) by adjusting the settings. On the **Tools** menu, select **Options...**, and then expand **F# Tools**. The two settings that you can change are the F# Interactive options and the **64-bit F# Interactive** setting, which is relevant only if you are running F# Interactive on a 64-bit machine. This setting determines whether you want to run the dedicated 64-bit version of fsi.exe or fsianycpu.exe, which uses the machine architecture to determine whether to run as a 32-bit or 64-bit process.
 
 
-## Scripting with F# #
+## Scripting with F\#
 Scripts use the file extension **.fsx** or **.fsscript**. Instead of compiling source code and then later running the compiled assembly, you can just run **fsi.exe** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time.
 
 

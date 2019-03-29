@@ -1,5 +1,6 @@
 ---
-title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)"
+title: "How to: Subscribe to and Unsubscribe from Events - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handlers [C#], creating"
@@ -20,7 +21,7 @@ You subscribe to an event that is published by another class when you want to wr
   
      Visual C# creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
   
-     [!code-csharp[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-subscribe-to-and-unsubscribe-from-events_1.cs)]  
+     [!code-csharp[csProgGuideEvents#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#11)]  
   
      The line of code that is required to subscribe to the event is also automatically generated in the `InitializeComponent` method in the Form1.Designer.cs file in your project. It resembles this:  
   
@@ -92,9 +93,10 @@ You subscribe to an event that is published by another class when you want to wr
   
      When all subscribers have unsubscribed from an event, the event instance in the publisher class is set to `null`.  
   
-## See Also  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [event](../../../csharp/language-reference/keywords/event.md)  
- [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)  
- [-= Operator (C# Reference)](../../language-reference/operators/subtraction-assignment-operator.md)  
- [+= Operator](../../../csharp/language-reference/operators/addition-assignment-operator.md)
+## See also
+
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [event](../../../csharp/language-reference/keywords/event.md)
+- [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+- [-= Operator (C# Reference)](../../language-reference/operators/subtraction-assignment-operator.md)
+- [+= Operator](../../../csharp/language-reference/operators/addition-assignment-operator.md)

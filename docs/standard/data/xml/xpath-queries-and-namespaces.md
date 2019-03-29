@@ -35,7 +35,7 @@ XPath queries are aware of namespaces in an XML document and can use namespace p
  In the XML document that follows, the default namespace with an empty prefix is used to declare the `http://www.contoso.com/books` namespace.  
   
 ```xml  
-<books xmlns="http://www.example.com/books">  
+<books xmlns="http://www.contoso.com/books">  
     <book>  
         <title>Title</title>  
         <author>Author Name</author>  
@@ -72,13 +72,14 @@ query.SetContext(manager);
 XPathNodeIterator nodes = navigator.Select(query);  
 ```  
   
-## See Also  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [Select XML Data Using XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
- [Evaluate XPath Expressions using XPathNavigator](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+## See also
+
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XPath.XPathDocument>
+- <xref:System.Xml.XPath.XPathNavigator>
+- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
+- [Select XML Data Using XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)
+- [Evaluate XPath Expressions using XPathNavigator](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)
+- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
+- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)
+- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)

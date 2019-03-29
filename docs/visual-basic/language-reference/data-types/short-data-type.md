@@ -1,8 +1,6 @@
 ---
 title: "Short Data Type (Visual Basic)"
 ms.date: 01/31/2018
-author: "rpetrusha"
-ms.author: "ronpet"
 f1_keywords: 
   - "vb.Short"
 helpviewer_keywords: 
@@ -18,8 +16,6 @@ helpviewer_keywords:
   - "Short data type"
   - "literal type characters [Visual Basic], S"
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Short data type (Visual Basic)
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
@@ -52,7 +48,7 @@ Dim number As Short = &H_3264
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `S` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Short` data type, as the following example shows.
+Numeric literals can also include the `S` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `Short` data type, as the following example shows.
 
 ```vb
 Dim number = &H_3264S
@@ -68,10 +64,10 @@ Dim number = &H_3264S
   
 ## See also
 
- <xref:System.Int16?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.Int16?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

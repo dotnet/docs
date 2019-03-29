@@ -13,7 +13,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
  The <xref:System.Windows.Forms.FlowLayoutPanel> control and the <xref:System.Windows.Forms.TableLayoutPanel> control provide intuitive ways to arrange controls on your form. Both provide an automatic, configurable ability to control the relative positions of child controls contained within them, and both give you dynamic layout features at run time, so they can resize and reposition child controls as the dimensions of the parent form change. Layout panels can be nested within layout panels, to enable the realization of sophisticated user interfaces.  
   
- The <xref:System.Windows.Forms.TableLayoutPanel> arranges its contents in a grid, providing functionality similar to the HTML \<table> element. Its cells are arranged in rows and columns, and these can have different sizes. For more information, see [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md).  
+ The <xref:System.Windows.Forms.TableLayoutPanel> arranges its contents in a grid, providing functionality similar to the HTML \<table> element. Its cells are arranged in rows and columns, and these can have different sizes. For more information, see [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md).  
   
  The <xref:System.Windows.Forms.FlowLayoutPanel> arranges its contents in a specific flow direction: horizontal or vertical. Its contents can be wrapped from one row to the next, or from one column to the next. Alternately, its contents can be clipped instead of wrapped. Tasks illustrated in this walkthrough include:  
   
@@ -38,14 +38,14 @@ Some applications require a form with a layout that arranges itself appropriatel
  When you are finished, you will have an understanding of the role played by these important layout features.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
   
 #### To create the project  
   
-1.  Create a Windows-based application project called "FlowLayoutPanelExample". For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called "FlowLayoutPanelExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  Select the form in the **Forms Designer**.  
   
@@ -118,7 +118,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. If your form is large enough, the <xref:System.Windows.Forms.Button> controls will be moved into the first column of the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
-2.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Padding%2A> property by expanding the <xref:System.Windows.Forms.Control.Padding%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to **20**. For more information, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](../../../../docs/framework/winforms/controls/windows-forms-controls-padding-autosize.md). Note that the child controls are moved toward the center of the <xref:System.Windows.Forms.FlowLayoutPanel> control. The increased value for the <xref:System.Windows.Forms.Control.Padding%2A> property pushes the child controls away from the <xref:System.Windows.Forms.FlowLayoutPanel> control's borders.  
+2.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Padding%2A> property by expanding the <xref:System.Windows.Forms.Control.Padding%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to **20**. For more information, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md). Note that the child controls are moved toward the center of the <xref:System.Windows.Forms.FlowLayoutPanel> control. The increased value for the <xref:System.Windows.Forms.Control.Padding%2A> property pushes the child controls away from the <xref:System.Windows.Forms.FlowLayoutPanel> control's borders.  
   
 3.  Select all of the <xref:System.Windows.Forms.Button> controls in the <xref:System.Windows.Forms.FlowLayoutPanel> and set the value of the <xref:System.Windows.Forms.Control.Margin%2A> property to **20**. Note that the spacing between the <xref:System.Windows.Forms.Button> controls increases, so they are moved further apart. You may need to resize the <xref:System.Windows.Forms.FlowLayoutPanel> control to be larger to see all of the child controls.  
   
@@ -181,13 +181,13 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 -   Set the <xref:System.Windows.Forms.Control.Visible%2A> property of one of the controls to `false` and note how the <xref:System.Windows.Forms.FlowLayoutPanel> reflows in response.  
   
-## See Also  
- <xref:System.Windows.Forms.FlowLayoutPanel>  
- <xref:System.Windows.Forms.TableLayoutPanel>  
- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
- [Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers. Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1)](http://www.microsoft.com/mspress/southpacific/books/book11588.htm)  
- [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md)  
- [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md)  
- [How to: Anchor Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-anchor-controls-on-windows-forms.md)  
- [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](../../../../docs/framework/winforms/controls/windows-forms-controls-padding-autosize.md)
+## See also
+- <xref:System.Windows.Forms.FlowLayoutPanel>
+- <xref:System.Windows.Forms.TableLayoutPanel>
+- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
+- [Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers. Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1)](https://www.microsoft.com/mspress/southpacific/books/book11588.htm)
+- [AutoSize Property Overview](autosize-property-overview.md)
+- [How to: Dock Controls on Windows Forms](how-to-dock-controls-on-windows-forms.md)
+- [How to: Anchor Controls on Windows Forms](how-to-anchor-controls-on-windows-forms.md)
+- [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md)

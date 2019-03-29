@@ -54,7 +54,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 ### Ambient Properties  
  Some of the ambient properties of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls have [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] equivalents. These ambient properties are propagated to the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> control translates each [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] ambient property into its [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] equivalent.  
   
- For more information, see [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
  The following table describes interoperation behavior.  
@@ -97,7 +97,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 ### Ambient Properties  
  Some of the ambient properties of [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] equivalents. These ambient properties are propagated to the hosted [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.ElementHost> control. The <xref:System.Windows.Forms.Integration.ElementHost> control translates each [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] ambient property to its [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] equivalent.  
   
- For more information, see [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
  The following table describes interoperation behavior.  
@@ -111,10 +111,10 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 |Clipboard|All Clipboard operations work as usual. This includes cutting and pasting between [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
 |Drag-and-drop feature|All drag-and-drop operations work as usual. This includes operations between [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)  
- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)  
- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Walkthrough: Hosting a Windows Forms Control in WPF](walkthrough-hosting-a-windows-forms-control-in-wpf.md)
+- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
+- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
+- [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md)

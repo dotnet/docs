@@ -31,7 +31,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of GUID-to-type mapping objects to be retrieved.  
   
@@ -52,6 +52,6 @@ HRESULT Next(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugGuidToTypeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugGuidToTypeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

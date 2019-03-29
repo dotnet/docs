@@ -55,14 +55,14 @@ A *procedure* is a block of Visual Basic statements enclosed by a declaration st
   
 -   After you develop procedures for use in one program, you can use them in other programs, often with little or no modification. This helps you avoid code duplication.  
   
-## See Also  
- [How to: Create a Procedure](./how-to-create-a-procedure.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Recursive Procedures](./recursive-procedures.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)  
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+## See also
+- [How to: Create a Procedure](./how-to-create-a-procedure.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Recursive Procedures](./recursive-procedures.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)
+- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WS Security"
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security Windows
 This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBinding> binding to use message-level security with Windows authentication. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In this sample, the service is hosted in Internet Information Services (IIS) and the client is a console application (.exe).  
@@ -41,12 +39,11 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
   
   <bindings>  
     <wsHttpBinding>  
-      <!--   
-      <!--The default security for the WSHttpBinding is-->  
-      <!--Message security using Windows authentication. -->  
-      <!--This configuration explicitly defines the security mode -->  
-      <!--as Message and the clientCredentialType as Windows  -->  
-      <!--for demonstration purposes. -->  
+      <!-- The default security for the WSHttpBinding is -->  
+      <!-- Message security using Windows authentication. -->  
+      <!-- This configuration explicitly defines the security mode -->  
+      <!-- as Message and the clientCredentialType as Windows -->  
+      <!-- for demonstration purposes. -->  
       <binding name="Binding1">  
         <security mode="Message">  
           <message clientCredentialType="Windows"/>  
@@ -77,4 +74,4 @@ public string GetCallerIdentity()
   
 3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-## See Also
+## See also

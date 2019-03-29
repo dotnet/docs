@@ -30,7 +30,7 @@ HRESULT SetAllThreadsDebugState (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `state`  
  [in] A value of the "CorDebugThreadState" enumeration that specifies the state of the thread for debugging.  
   
@@ -49,5 +49,5 @@ HRESULT SetAllThreadsDebugState (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

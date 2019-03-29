@@ -11,7 +11,7 @@ Async methods have three possible return types: <xref:System.Threading.Tasks.Tas
 > [!NOTE]
 >  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-##  <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type  
+## <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type  
  The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [Return](../../../../visual-basic/language-reference/statements/return-statement.md) statement in which the operand has type `TResult`.  
   
  In the following example, the `TaskOfT_MethodAsync` async method contains a return statement that returns an integer. Therefore, the method declaration must specify a return type of `Task(Of Integer)`.  
@@ -73,7 +73,7 @@ textBox1.Text &= String.Format("Value of result2 variable:   {0}" & vbCrLf, resu
 textBox1.Text &= String.Format("Value of resultTask.Result:  {0}" & vbCrLf, integerTask.Result)  
 ```  
   
-##  <a name="BKMK_TaskReturnType"></a> Task Return Type  
+## <a name="BKMK_TaskReturnType"></a> Task Return Type  
  Async methods that don't contain a return statement or that contain a return statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods would be [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedures if they were written to run synchronously. If you use a `Task` return type for an async method, a calling method can use an `Await` operator to suspend the caller's completion until the called async method has finished.  
   
  In the following example, async method `Task_MethodAsync` doesn't contain a return statement. Therefore, you specify a return type of `Task` for the method, which enables `Task_MethodAsync` to be awaited. The definition of the `Task` type doesn't include a `Result` property to store a return value.  
@@ -115,7 +115,7 @@ textBox1.Text &= String.Format(vbCrLf & "Application can continue working while 
 Await simpleTask  
 ```  
   
-##  <a name="BKMK_VoidReturnType"></a> Void Return Type  
+## <a name="BKMK_VoidReturnType"></a> Void Return Type  
  The primary use of `Sub` procedures is in event handlers, where there is no return type (referred to as a void return type in other languages). A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget." However, you should return a `Task` wherever possible, because a void-returning async method can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   
  The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail. If an exception occurs in an async method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, the exception is stored in the returned task, and rethrown when the task is awaited. Therefore, make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.  
@@ -139,7 +139,7 @@ Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.
 End Sub  
 ```  
   
-##  <a name="BKMK_Example"></a> Complete Example  
+## <a name="BKMK_Example"></a> Complete Example  
  The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.  
   
  To run the project, perform the following steps:  
@@ -286,9 +286,9 @@ End Sub
     All done, exiting button-click event handler.  
     ```  
   
-## See Also  
- <xref:System.Threading.Tasks.Task.FromResult%2A>  
- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Control Flow in Async Programs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)  
- [Async](../../../../visual-basic/language-reference/modifiers/async.md)  
- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
+## See also
+- <xref:System.Threading.Tasks.Task.FromResult%2A>
+- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Control Flow in Async Programs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)
+- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
+- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)

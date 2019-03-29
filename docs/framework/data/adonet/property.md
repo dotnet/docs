@@ -25,7 +25,7 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. Each entity type has several properties, although type information for each property is not conveyed in the diagram. Properties that are [entity keys](../../../../docs/framework/data/adonet/entity-key.md) are denoted with (Key).  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/property/example-model-three-entity-types.gif)  
   
  The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines the `Book` entity type (as shown in the diagram above) and indicates the type and name of each property by using XML attributes. An optional facet, `Nullable`, is also defined by using an XML attribute.  
   
@@ -35,6 +35,6 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
   
  [!code-xml[EDM_Example_Model#ComplexTypeExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books2.edmx#complextypeexample)]  
   
-## See Also  
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+## See also
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

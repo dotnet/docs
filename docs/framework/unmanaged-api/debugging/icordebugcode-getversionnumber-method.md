@@ -29,7 +29,7 @@ HRESULT GetVersionNumber (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nVersion`  
  [out] A pointer to the version number of the code.  
   
@@ -45,5 +45,5 @@ HRESULT GetVersionNumber (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

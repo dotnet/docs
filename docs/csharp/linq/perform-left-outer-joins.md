@@ -1,7 +1,7 @@
 ---
 title: Perform left outer joins (LINQ in C#)
 description: Learn how to perform left outer joins using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: f542cee6-3169-4dcf-a631-3a6a79ccd473
 ---
 # Perform left outer joins
@@ -23,8 +23,8 @@ The second step is to include each element of the first (left) collection in the
 
 ## See also
 
-- <xref:System.Linq.Enumerable.Join%2A>  
-- <xref:System.Linq.Enumerable.GroupJoin%2A>  
-- [Perform inner joins](perform-inner-joins.md)  
-- [Perform grouped joins](perform-grouped-joins.md)  
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>
+- <xref:System.Linq.Enumerable.GroupJoin%2A>
+- [Perform inner joins](perform-inner-joins.md)
+- [Perform grouped joins](perform-grouped-joins.md)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)

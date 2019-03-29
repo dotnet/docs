@@ -33,7 +33,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iDebuggerVersion`  
  [in] The version of `ICorDebug` that is expected by the debugger. See the [CorDebugInterfaceVersion](../../../../docs/framework/unmanaged-api/debugging/cordebuginterfaceversion-enumeration.md) enumeration for valid values.  
   
@@ -63,5 +63,5 @@ HRESULT CreateDebuggingInterfaceFromVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

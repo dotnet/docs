@@ -17,12 +17,12 @@ An *entity container* is a logical grouping of [entity sets](../../../../docs/fr
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`.  See the next example for more information.  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/entity-container/example-model-three-entity-types.gif)  
   
  Although the diagram does not convey entity container information, the conceptual model must define an entity container. The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a DSL called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines an entity container for the conceptual model shown in the diagram above. Note that the entity container name is defined in an XML attribute.  
   
  [!code-xml[EDM_Example_Model#EntityContainerExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entitycontainerexample)]  
   
-## See Also  
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+## See also
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

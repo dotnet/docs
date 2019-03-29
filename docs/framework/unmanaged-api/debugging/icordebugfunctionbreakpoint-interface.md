@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFunctionBreakpoint Interface1"
+title: "ICorDebugFunctionBreakpoint Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFunctionBreakpoint"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFunctionBreakpoint Interface1
+# ICorDebugFunctionBreakpoint Interface
+
 Extends the ICorDebugBreakpoint interface to support breakpoints within functions.  
   
 ## Methods  
@@ -41,5 +42,5 @@ Extends the ICorDebugBreakpoint interface to support breakpoints within function
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

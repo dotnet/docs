@@ -19,7 +19,7 @@ You can place control statements inside other control statements, for example an
   
  In the following example, the procedure `sumRows` adds together the positive elements of each row of the matrix.  
   
-```  
+```vb
 Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)  
     Dim i, j As Integer  
     For i = 0 To UBound(a, 1)  
@@ -43,7 +43,7 @@ End Sub
 ## Nesting Different Kinds of Control Structures  
  You can nest one kind of control structure within another kind. The following example uses a `With` block inside a `For Each` loop and nested `If` blocks inside the `With` block.  
   
-```  
+```vb
 For Each ctl As System.Windows.Forms.Control In Me.Controls  
     With ctl  
         .BackColor = System.Drawing.Color.Yellow  
@@ -61,13 +61,12 @@ Next ctl
 ## Overlapping Control Structures  
  You cannot overlap control structures. This means that any nested structure must be completely contained within the next innermost structure. For example, the following arrangement is invalid because the `For` loop terminates before the inner `With` block terminates.  
   
- ![Graphic diagram of invalid nesting](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.gif "NestExampleInvalid")  
-Invalid nesting of For and With structures  
+ ![Diagram that shows an example of invalid nesting.](./media/nested-control-structures/example-invalid-nesting.gif) 
   
  The Visual Basic compiler detects such overlapping control structures and signals a compile-time error.  
   
-## See Also  
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)
+## See also
+- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
+- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
+- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

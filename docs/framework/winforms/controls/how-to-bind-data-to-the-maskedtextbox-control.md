@@ -227,9 +227,9 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
 ## Example  
  The following code example is the full code listing that results from completing the previous procedure.  
   
- [!code-cpp[MaskedTextBoxData#1](../../../../samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]
- [!code-csharp[MaskedTextBoxData#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/MaskedTextBoxData/CS/form1.cs#1)]
- [!code-vb[MaskedTextBoxData#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/MaskedTextBoxData/VB/form1.vb#1)]  
+ [!code-cpp[MaskedTextBoxData#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]
+ [!code-csharp[MaskedTextBoxData#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MaskedTextBoxData/CS/form1.cs#1)]
+ [!code-vb[MaskedTextBoxData#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MaskedTextBoxData/VB/form1.vb#1)]  
   
 ## Compiling the Code  
   
@@ -243,5 +243,5 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
   
 -   Compile the application.  
   
-## See Also  
- [Walkthrough: Working with the MaskedTextBox Control](../../../../docs/framework/winforms/controls/walkthrough-working-with-the-maskedtextbox-control.md)
+## See also
+- [Walkthrough: Working with the MaskedTextBox Control](walkthrough-working-with-the-maskedtextbox-control.md)

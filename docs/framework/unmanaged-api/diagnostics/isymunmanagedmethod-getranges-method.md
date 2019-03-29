@@ -34,7 +34,7 @@ HRESULT GetRanges(
         length_is(*pcRanges)] ULONG32 ranges[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The document for which the offset is requested.  
   
@@ -59,5 +59,5 @@ HRESULT GetRanges(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+## See also
+- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

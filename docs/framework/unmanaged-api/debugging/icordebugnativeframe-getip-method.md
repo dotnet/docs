@@ -29,7 +29,7 @@ HRESULT GetIP (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] A pointer to the offset location in the native code.  
   
@@ -45,5 +45,5 @@ HRESULT GetIP (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

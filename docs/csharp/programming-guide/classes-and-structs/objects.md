@@ -1,5 +1,6 @@
 ---
-title: "Objects (C# Programming Guide)"
+title: "Objects - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "objects [C#], about objects"
@@ -17,11 +18,11 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
  Instances of classes are created by using the [new operator](../../../csharp/language-reference/keywords/new-operator.md). In the following example, `Person` is the type and `person1` and `person 2` are instances, or objects, of that type.  
   
- [!code-csharp[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_1.cs)]  
+ [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
  Because structs are value types, a variable of a struct object holds a copy of the entire object. Instances of structs can also be created by using the `new` operator, but this is not required, as shown in the following example:  
   
- [!code-csharp[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
+ [!code-csharp[csProgGuideStatements#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#31)]  
   
  The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it is declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object have gone out of scope. It is not possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
@@ -35,11 +36,11 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   To determine whether the instance fields in two struct instances have the same values, use the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method. Because all structs implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, you call the method directly on your object as shown in the following example:  
   
- [!code-csharp[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_3.cs)]  
+ [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
  The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses reflection because it must be able to determine what the fields are in any struct. When creating your own structs, override the `Equals` method to provide an efficient equality algorithm that is specific to your type.  
   
--   To determine whether the values of the fields in two class instances are equal, you might be able to use the <xref:System.Object.Equals%2A> method or the [== operator](../../../csharp/language-reference/operators/equality-comparison-operator.md). However, only use them if the class has overridden or overloaded them to provide a custom definition of what "equality" means for objects of that type. The class might also implement the <xref:System.IEquatable%601> interface or the <xref:System.Collections.Generic.IEqualityComparer%601> interface. Both interfaces provide methods that can be used to test value equality. When designing your own classes that override `Equals`, make sure to follow the guidelines stated in [How to: Define Value Equality for a Type](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.  
+-   To determine whether the values of the fields in two class instances are equal, you might be able to use the <xref:System.Object.Equals%2A> method or the [== operator](../../../csharp/language-reference/operators/equality-operators.md#equality-operator-). However, only use them if the class has overridden or overloaded them to provide a custom definition of what "equality" means for objects of that type. The class might also implement the <xref:System.IEquatable%601> interface or the <xref:System.Collections.Generic.IEqualityComparer%601> interface. Both interfaces provide methods that can be used to test value equality. When designing your own classes that override `Equals`, make sure to follow the guidelines stated in [How to: Define Value Equality for a Type](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.  
   
 ## Related Sections  
  For more information:  
@@ -54,11 +55,12 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   [Events](../../../csharp/programming-guide/events/index.md)  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [object](../../../csharp/language-reference/keywords/object.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
- [class](../../../csharp/language-reference/keywords/class.md)  
- [struct](../../../csharp/language-reference/keywords/struct.md)  
- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)  
- [Common Type System](../../../standard/base-types/common-type-system.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [object](../../../csharp/language-reference/keywords/object.md)
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
+- [struct](../../../csharp/language-reference/keywords/struct.md)
+- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)
+- [Common Type System](../../../standard/base-types/common-type-system.md)

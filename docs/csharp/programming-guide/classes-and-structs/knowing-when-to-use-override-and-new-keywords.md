@@ -1,5 +1,6 @@
 ---
-title: "Knowing When to Use Override and New Keywords (C# Programming Guide)"
+title: "Knowing When to Use Override and New Keywords - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "override keyword [C#]"
@@ -535,9 +536,10 @@ namespace OverrideAndNew2
 }  
 ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)  
- [base](../../../csharp/language-reference/keywords/base.md)  
- [abstract](../../../csharp/language-reference/keywords/abstract.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)
+- [base](../../../csharp/language-reference/keywords/base.md)
+- [abstract](../../../csharp/language-reference/keywords/abstract.md)

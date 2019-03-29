@@ -25,7 +25,10 @@ ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 ---
 # Like Operator (Visual Basic)
 Compares a string against a pattern.  
-  
+
+> [!IMPORTANT]
+> The `Like` operator is currently not supported in .NET Core and .NET Standard projects.
+
 ## Syntax  
   
 ```  
@@ -94,14 +97,14 @@ result = string Like pattern
 ## Example  
  This example uses the `Like` operator to compare strings to various patterns. The results go into a `Boolean` variable indicating whether each string satisfies the pattern.  
   
- [!code-vb[VbVbalrOperators#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/like-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#30)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [How to: Match a String against a Pattern](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-match-a-string-against-a-pattern.md)
+## See also
+- <xref:Microsoft.VisualBasic.Strings.InStr%2A>
+- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>
+- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [How to: Match a String against a Pattern](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-match-a-string-against-a-pattern.md)

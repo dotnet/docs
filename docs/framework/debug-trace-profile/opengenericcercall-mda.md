@@ -58,7 +58,7 @@ The `openGenericCERCall` managed debugging assistant is activated to warn that a
 ## Example  
  The CER code is not executed.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.Runtime.CompilerServices;  
@@ -100,7 +100,7 @@ class Program
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>  
- <xref:System.Runtime.ConstrainedExecution>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
+- <xref:System.Runtime.ConstrainedExecution>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

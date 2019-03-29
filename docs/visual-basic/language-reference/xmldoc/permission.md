@@ -1,12 +1,12 @@
 ---
-title: "&lt;permission&gt; (Visual Basic)"
+title: "<permission> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<permission> XML tag"
   - "permission XML tag"
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
 ---
-# &lt;permission&gt; (Visual Basic)
+# \<permission> (Visual Basic)
 Specifies a required permission for the member.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Specifies a required permission for the member.
 <permission cref="member">description</permission>  
 ```  
   
-#### Parameters  
+## Parameters  
  `member`  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML. Enclose `member` in quotation marks (" ").  
   
@@ -30,7 +30,7 @@ Specifies a required permission for the member.
 ## Example  
  This example uses the `<permission>` tag to describe that the <xref:System.Security.Permissions.FileIOPermission> is required by the `ReadFile` method.  
   
- [!code-vb[VbVbcnXmlDocComments#7](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/permission_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#7)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

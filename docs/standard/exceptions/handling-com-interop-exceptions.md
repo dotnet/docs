@@ -24,5 +24,6 @@ Managed and unmanaged code can work together to handle exceptions. If a method t
   
  If a method fails in unmanaged code, an exception can be passed to a managed code segment. The topic [HRESULTS and Exceptions](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md) contains a table showing how HRESULTS map to runtime exception objects.  
 
-## See Also
-[Exceptions](index.md) 
+## See also
+
+- [Exceptions](index.md)

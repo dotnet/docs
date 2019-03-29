@@ -9,7 +9,7 @@ ms.author: "mairaw"
 # XPath Namespace Navigation
 To use XPath queries with XML documents, you have to correctly address XML namespaces and the elements contained by namespaces. Namespaces prevent ambiguities that can occur when names are used in more than one context; for example, the name `ID` may refer to more than one identifier associated with different elements of an XML document. Namespace syntax specifies URIs, names, and prefixes that distinguish the elements of an XML document.  
   
- The example in this topic demonstrates the use of prefixes in navigating an XML document with <xref:System.Xml.XPath.XPathNavigator>. For more information about namespaces and syntax, see [Understanding XML Namespaces](https://msdn.microsoft.com/library/aa468565.aspx).  
+ The example in this topic demonstrates the use of prefixes in navigating an XML document with <xref:System.Xml.XPath.XPathNavigator>. For more information about namespaces and syntax, see [XML Files: Understanding XML Namespaces](https://docs.microsoft.com/previous-versions/dotnet/articles/bb986013(v=msdn.10)).  
   
 ## Namespace Declarations  
  Namespace declarations make the elements of an XML document distinguishable and addressable when using an instance of <xref:System.Xml.XPath.XPathNavigator>. Namespace prefixes provide a brief syntax for addressing namespaces.  
@@ -64,6 +64,7 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
   
  The precision of fully qualifying namespaces and names is more than a convenience. A little experimentation with the document definition and code in the previous examples will verify that navigation without fully qualified element names throws exceptions. For example, the element definition: `<Search xmlns="http://schemas.microsoft.com/v1/Search">`, and query: string `xpath = "/s:Envelope/s:Body/Search";` without the namespace prefix on the `Search` element returns `null` instead of the `Search` element.  
   
-## See Also  
- [Accessing XML Data using XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)  
- [Selecting, Evaluating and Matching XML Data using XPathNavigator](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)
+## See also
+
+- [Accessing XML Data using XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)
+- [Selecting, Evaluating and Matching XML Data using XPathNavigator](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)

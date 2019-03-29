@@ -1,5 +1,6 @@
 ---
-title: "C# Coding Conventions (C# Programming Guide)"
+title: "C# Coding Conventions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions, C#"
@@ -189,6 +190,7 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
 ## Security  
  Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).  
   
-## See Also  
- [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)  
- [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)
+- [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

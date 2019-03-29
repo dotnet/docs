@@ -57,10 +57,11 @@ public sealed class Add : CodeActivity<int>
   
  **Value for a required activity argument 'Operand1' was not supplied.**  
 > [!NOTE]
->  For more information about about checking for and handling validation errors and warnings, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).  
+> For more information about checking for and handling validation errors and warnings, see [Invoking Activity Validation](invoking-activity-validation.md).  
   
-## Using Overload Groups  
- Overload groups provide a method for indicating which combinations of arguments are valid in an activity. Arguments are grouped together by using <xref:System.Activities.OverloadGroupAttribute>. Each group is given a name that is specified by the <xref:System.Activities.OverloadGroupAttribute>, The activity is valid when only one set of arguments in an overload group are bound. In the following example, taken from the [OverloadGroups](../../../docs/framework/windows-workflow-foundation/samples/overloadgroups.md) sample, a `CreateLocation` class is defined.  
+## Using Overload Groups
+
+Overload groups provide a method for indicating which combinations of arguments are valid in an activity. Arguments are grouped together by using <xref:System.Activities.OverloadGroupAttribute>. Each group is given a name that is specified by the <xref:System.Activities.OverloadGroupAttribute>. The activity is valid when only one set of arguments in an overload group are bound. In the following example, a `CreateLocation` class is defined.  
   
 ```csharp  
 class CreateLocation: Activity  
@@ -99,7 +100,7 @@ class CreateLocation: Activity
   
  The objective of this activity is to specify a location in the US. To do this, the user of the activity can specify the location using one of three groups of arguments. To specify the valid combinations of arguments, three overload groups are defined. `G1` contains the `Latitude` and `Longitude` arguments. `G2` contains `Street`, `City`, and `State`. `G3` contains `Street` and `Zip`. `Name` is also a required argument, but it is not part of an overload group. For this activity to be valid, `Name` would have to be bound together with all of the arguments from one and only one overload group.  
   
- In the following example, taken from the [Database Access Activities](../../../docs/framework/windows-workflow-foundation/samples/database-access-activities.md) sample, there are two overload groups: `ConnectionString` and `ConfigFileSectionName`. For this activity to be valid, either the `ProviderName` and `ConnectionString` arguments must be bound, or the `ConfigName` argument, but not both.  
+ In the following example, taken from the [Database Access Activities](./samples/database-access-activities.md) sample, there are two overload groups: `ConnectionString` and `ConfigFileSectionName`. For this activity to be valid, either the `ProviderName` and `ConnectionString` arguments must be bound, or the `ConfigName` argument, but not both.  
   
 ```  
 Public class DbUpdate: AsyncCodeActivity  

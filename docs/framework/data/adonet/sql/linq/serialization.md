@@ -44,7 +44,7 @@ This topic describes [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq
  [!code-csharp[DLinqSerialization#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#3)]
  [!code-vb[DLinqSerialization#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#3)]  
   
- For the `Order` class in the following example, only the reverse association property corresponding to the `Customer` class is shown for brevity. It does not have a `DataMember` attribute to avoid a cycle.  
+ For the `Order` class in the following example, only the reverse association property corresponding to the `Customer` class is shown for brevity. It does not have a <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to avoid a cycle.  
   
  [!code-csharp[DLinqSerialization#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#4)]
  [!code-vb[DLinqSerialization#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#4)]  
@@ -59,14 +59,14 @@ This topic describes [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq
  [!code-vb[DLinqSerialization#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/Module1.vb#6)]  
   
 ### Self-Recursive Relationships  
- Self-recursive relationships follow the same pattern. The association property corresponding to the foreign key does not have a `DataMember` attribute, whereas the parent property does.  
+ Self-recursive relationships follow the same pattern. The association property corresponding to the foreign key does not have a <xref:System.Runtime.Serialization.DataMemberAttribute> attribute, whereas the parent property does.  
   
  Consider the following class that has two self-recursive relationships: Employee.Manager/Reports and Employee.Mentor/Mentees.  
   
  [!code-csharp[DLinqSerialization#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#7)]
  [!code-vb[DLinqSerialization#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#7)]  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)  
- [How to: Make Entities Serializable](../../../../../../docs/framework/data/adonet/sql/linq/how-to-make-entities-serializable.md)
+## See also
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)
+- [How to: Make Entities Serializable](../../../../../../docs/framework/data/adonet/sql/linq/how-to-make-entities-serializable.md)

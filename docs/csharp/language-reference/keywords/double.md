@@ -1,5 +1,7 @@
 ---
-title: "double keyword (C# Reference)"
+title: "double keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "double"
@@ -14,7 +16,7 @@ The `double` keyword signifies a simple type that stores 64-bit floating-point v
 
 |Type|Approximate range|Precision|.NET type|
 |----------|-----------------------|---------------|-------------------------|
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=nameWithType>|
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|<xref:System.Double?displayProperty=nameWithType>|
 
 ## Literals
 
@@ -54,13 +56,13 @@ In the following example, an [int](../../../csharp/language-reference/keywords/i
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
-- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-- [Floating-Point Types Table](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
-- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)
+- [Floating-Point Types Table](../../../csharp/language-reference/keywords/floating-point-types-table.md)
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

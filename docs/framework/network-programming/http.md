@@ -13,9 +13,6 @@ helpviewer_keywords:
   - "HTTP, about HTTP"
   - "HttpWebRequest class, sending and receiving data"
 ms.assetid: 985fe5d8-eb71-4024-b361-41fbdc1618d8
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # HTTP
 The .NET Framework provides comprehensive support for the HTTP protocol, which makes up the majority of all Internet traffic, with the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> classes. These classes, derived from <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse>, are returned by default whenever the static method <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> encounters a URI beginning with "http" or "https". In most cases, the **WebRequest** and **WebResponse** classes provide all that is necessary to make the request, but if you need access to the HTTP-specific features exposed as properties, you can typecast these classes to **HttpWebRequest** or **HttpWebResponse**.  
@@ -28,7 +25,7 @@ The .NET Framework provides comprehensive support for the HTTP protocol, which m
   
  Applications receive HTTP protocol errors by catching a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> set to <xref:System.Net.WebExceptionStatus>. The <xref:System.Net.WebException.Response%2A> property contains the **WebResponse** sent by the server and indicates the actual HTTP error encountered.  
   
-## See Also  
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
- [How to: Access HTTP-Specific Properties](../../../docs/framework/network-programming/how-to-access-http-specific-properties.md)
+## See also
+- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+- [How to: Access HTTP-Specific Properties](../../../docs/framework/network-programming/how-to-access-http-specific-properties.md)

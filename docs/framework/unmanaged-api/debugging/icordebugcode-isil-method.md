@@ -29,7 +29,7 @@ HRESULT IsIL (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbIL`  
  [out] `true` if this `ICorDebugCode` represents code that was compiled in MSIL; otherwise, `false`.  
   
@@ -42,5 +42,5 @@ HRESULT IsIL (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

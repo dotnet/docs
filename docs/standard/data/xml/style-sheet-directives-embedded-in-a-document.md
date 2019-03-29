@@ -31,6 +31,6 @@ With the `<?xml:stylesheet?>` containing a colon, you now violate the rule in th
 
 According to the World Wide Web Consortium (W3C) [Associating Style Sheets with XML documents Version 1.0 Recommendation](https://www.w3.org/TR/xml-stylesheet/),  the processing instruction to associate an XSLT style sheet with an XML document is `<?xml-stylesheet?>`, with a dash replacing the colon.
 
-## See Also
+## See also
 
-[XML Document Object Model (DOM)](xml-document-object-model-dom.md)  
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

@@ -16,9 +16,6 @@ helpviewer_keywords:
   - "sockets, client sockets"
   - "client sockets"
 ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Using Client Sockets
 Before you can initiate a conversation through a <xref:System.Net.Sockets.Socket>, you must create a data pipe between your application and the remote device. Although other network address families and protocols exist, this example shows how to create a TCP/IP connection to a remote service.  
@@ -37,7 +34,7 @@ IPHostEntry ipHostInfo = Dns.Resolve("host.contoso.com");
 IPAddress ipAddress = ipHostInfo.AddressList[0];  
 ```  
   
- The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (for more information, see www.iana.org/assignments/port-numbers). Other services can have registered port numbers in the range 1,024 to 65,535. The following code combines the IP address for host.contoso.com with a port number to create a remote endpoint for a connection.  
+ The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (for more information, see [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Other services can have registered port numbers in the range 1,024 to 65,535. The following code combines the IP address for host.contoso.com with a port number to create a remote endpoint for a connection.  
   
 ```vb  
 Dim ipe As New IPEndPoint(ipAddress, 11000)  
@@ -74,8 +71,8 @@ try {
 }  
 ```  
   
-## See Also  
- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)  
- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)  
- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)
+- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)
+- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)
+- [Sockets](../../../docs/framework/network-programming/sockets.md)

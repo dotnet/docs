@@ -25,7 +25,7 @@ The following examples demonstrate how to define and call the **MessageBox** fun
   
  For additional examples, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
   
-## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>  
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
- [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)
+## See also
+- <xref:System.Runtime.InteropServices.DllImportAttribute>
+- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)
+- [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)

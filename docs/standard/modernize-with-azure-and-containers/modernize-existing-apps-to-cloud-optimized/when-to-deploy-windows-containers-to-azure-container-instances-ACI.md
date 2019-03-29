@@ -5,17 +5,18 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/29/2018
 ---
+
 # When to deploy Windows Containers to Azure Container Instances (ACI)
 
-Azure Container Instances main value proposition is that you can right away deploy containers to it and you don’t need to maintain that environment, you don’t need to upgrade/patch the underlaying operating system or VMs, all that is transparent and you just deploy containers into a ready-to-use environment.
+Azure Container Instances main value proposition is that you can right away deploy containers to it and you don’t need to maintain that environment, you don’t need to upgrade/patch the underlying operating system or VMs, all that is transparent and you just deploy containers into a ready-to-use environment.
 
 The reasons and scenarios when you would want to use ACI are similar to the main scenarios when you use Azure VMs with containers, so basically, the main scenarios for using Azure Container Instances are:
 
--   **Dev/Test scenarios**
--   **Task automation**
--   **CI/CD agents**
--   **Small/scale batch processing**
--   **Simple web apps**
+- **Dev/Test scenarios**
+- **Task automation**
+- **CI/CD agents**
+- **Small/scale batch processing**
+- **Simple web apps**
 
 The simple web apps scenario is a fair scenario for ACI but take into account that since in ACI you can only have a single container instance per container image, you won’t have high availability and only have limited scalability.
 
@@ -23,13 +24,13 @@ However, even when ACI is considered infrastructure because it just provides sin
 
 The main benefits of Azure Container Instances (ACI) are:
 
--   Run containers without managing servers
--   Increase agility with containers on demand
--   Deploy containers to the cloud with unprecedented simplicity and speed—with a single command. 
--   Secure applications with hypervisor isolation
+- Run containers without managing servers
+- Increase agility with containers on demand
+- Deploy containers to the cloud with unprecedented simplicity and speed—with a single command.
+- Secure applications with hypervisor isolation
 
 In short, with ACI you can develop apps fast without managing virtual machines or having to learn new tools. It's just your application, in a container, running in the cloud.
 
->[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
-[Next](when-to-deploy-windows-containers-to-service-fabric.md)
+> [!div class="step-by-step"]
+> [Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
+> [Next](when-to-deploy-windows-containers-to-service-fabric.md)

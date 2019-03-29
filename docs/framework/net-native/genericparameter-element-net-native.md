@@ -1,11 +1,11 @@
 ---
-title: "&lt;GenericParameter&gt; Element (.NET Native)"
+title: "<GenericParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;GenericParameter&gt; Element (.NET Native)
+# \<GenericParameter> Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  
   
 ## Syntax  
@@ -15,7 +15,7 @@ Applies policy to the parameter type of a generic type or method.
                   Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
-                  Serialize="policy_type" />  
+                  Serialize="policy_type"  
                   DataContractSerializer="policy_type"  
                   DataContractJsonSerializer="policy_type"  
                   XmlSerializer="policy_type"  
@@ -68,7 +68,7 @@ Applies policy to the parameter type of a generic type or method.
 ## Remarks  
  The `<GenericParameter>` element is a child of either the [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) or [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element and is used to apply policy to a particular generic type parameter, which is specified by its name in the generic type or method signature.  
   
- The `<GenericParameter>` element is most useful when used with serializers. The following example uses the `<GenericParameter>` element to apply policy to the type `T` in calls to the NewtonSoft JSON serializer's [JsonConvert.DeserializeObject\<T>(String)](http://james.newtonking.com/json/help/index.html?topic=html/T_Newtonsoft_Json_JsonConvert.htm) method overloads.  
+ The `<GenericParameter>` element is most useful when used with serializers. The following example uses the `<GenericParameter>` element to apply policy to the type `T` in calls to the NewtonSoft JSON serializer's [JsonConvert.DeserializeObject\<T>(String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) method overloads.  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -80,9 +80,9 @@ Applies policy to the parameter type of a generic type or method.
 </Directives>  
 ```  
   
-## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
+- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

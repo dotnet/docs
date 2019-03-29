@@ -1,14 +1,9 @@
 ---
 title: project.json and Visual Studio 2015 with .NET Core
 description: Where to find documentation for pre-release tooling for .NET Core and ASP.NET Core (project.json and Visual Studio 2015).
-keywords: project.json, Visual Studio 2015, .NET Core, ASP.NET Core
 author: mairaw
 ms.author: mairaw
 ms.date: 03/08/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: dotnet
-ms.assetid: e282c43b-593e-40a6-af91-de0babcd7b72
 ---
 
 # project.json and Visual Studio 2015 with .NET Core
@@ -17,12 +12,9 @@ On March 7, 2017, the .NET Core and ASP.NET Core documentation was updated for t
 
 The documentation version from before the March 7 update is available in a PDF file and in a branch in the documentation repository.
 
-## PDF files
+## PDF documentation
 
-The best source of the earlier documentation is PDF files:
-
-* [.NET Core - PDF for project.json and Visual Studio 2015](https://github.com/dotnet/docs/blob/project.json/net-core-project-json.pdf)
-* [ASP.NET Core - PDF for project.json and Visual Studio 2015](https://github.com/aspnet/Docs/blob/master/aspnetcore/common/_static/aspnet-core-project-json.pdf)
+The best source of the earlier documentation is the [.NET Core - PDF for project.json and Visual Studio 2015](https://github.com/dotnet/docs/blob/project.json/net-core-project-json.pdf).
 
 ## Documentation repository branch
 

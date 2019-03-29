@@ -28,7 +28,7 @@ HRESULT SetUserEntryPoint(
     [in] mdMethodDef entryMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
  `entryMethod`  
  [in] The metadata token for the method that is the user entry point.  
   
@@ -38,5 +38,5 @@ HRESULT SetUserEntryPoint(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

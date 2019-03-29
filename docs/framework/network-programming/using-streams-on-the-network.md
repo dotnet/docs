@@ -17,9 +17,6 @@ helpviewer_keywords:
   - "Internet, streams"
   - "streams"
 ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Using Streams on the Network
 Network resources are represented in the .NET Framework as streams. By treating streams generically, the .NET Framework offers the following capabilities:  
@@ -99,6 +96,6 @@ Dim sr As _
 sr.Close()  
 ```  
   
-## See Also  
- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+## See also
+- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

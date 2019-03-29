@@ -1,9 +1,9 @@
 ---
-title: "&lt;discoveryClientSettings&gt;"
+title: "<discoveryClientSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
 ---
-# &lt;discoveryClientSettings&gt;
+# \<discoveryClientSettings>
 Contains the settings needed by an application to participate in the service discovery process as a client.  
   
 \<system.ServiceModel>  
@@ -12,16 +12,17 @@ Contains the settings needed by an application to participate in the service dis
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
         <discoveryClientSettings discoveryEndpoint="String">
-          <findCriteria duration="TimeSpan" 
-                        maxResults="Integer" 
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
                         scopeMatchBy="Uri">
             <contractTypeNames>
-              <add name="String" namespace="String" />
+              <add name="String"
+                   namespace="String" />
             <contractTypeNames>
             <extensions />
             <scopes>
@@ -31,8 +32,8 @@ Contains the settings needed by an application to participate in the service dis
         </discoveryClientSettings>
       <standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -56,6 +57,6 @@ Contains the settings needed by an application to participate in the service dis
 |-------------|-----------------|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>  
- <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>
+## See also
+- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
+- <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>

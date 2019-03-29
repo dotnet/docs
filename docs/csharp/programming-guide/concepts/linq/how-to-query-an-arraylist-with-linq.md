@@ -77,5 +77,6 @@ namespace NonGenericLINQ
 */  
 ```  
   
-## See Also  
- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+## See also
+
+- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)

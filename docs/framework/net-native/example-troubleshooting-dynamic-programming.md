@@ -7,7 +7,7 @@ ms.author: "ronpet"
 ---
 # Example: Troubleshooting Dynamic Programming
 > [!NOTE]
->  This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](http://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
+>  This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
   
  Not all metadata lookup failures in apps developed using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain result in an exception.  Some can manifest in unpredictable ways in an app.  The following example shows an access violation caused by referencing a null object:  
   
@@ -54,6 +54,6 @@ AppViewModel.Current.LayoutVM.PageMap
 ## Could the code be rewritten?  
  If the app had used `typeof(LayoutApplicationVM)` instead of `Type.GetType("LayoutApplicationVM")`, the tool chain could have preserved `browse` metadata.  However, it still wouldn't have created `invoke` metadata, which would have led to a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception when instantiating the type. To prevent the exception, you'd still have to add a runtime directive for the namespace or the type that specifies the `dynamic` policy. For information on runtime directives, see the [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
   
-## See Also  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)  
- [Example: Handling Exceptions When Binding Data](../../../docs/framework/net-native/example-handling-exceptions-when-binding-data.md)
+## See also
+- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
+- [Example: Handling Exceptions When Binding Data](../../../docs/framework/net-native/example-handling-exceptions-when-binding-data.md)

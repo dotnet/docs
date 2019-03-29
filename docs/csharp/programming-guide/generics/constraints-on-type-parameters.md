@@ -1,5 +1,6 @@
 ---
-title: "Constraints on Type Parameters (C# Programming Guide)"
+title: "Constraints on Type Parameters - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 04/12/2018
 helpviewer_keywords: 
   - "generics [C#], type constraints"
@@ -9,7 +10,7 @@ helpviewer_keywords:
 ---
 # Constraints on type parameters (C# Programming Guide)
 
-Constraints inform the compiler about the capabilities a type argument must have. Without any constraints, the type argument could be any type. The compiler can only assume the members of <xref:System.Object?displayPropety=nameWithType>, which is the ultimate base class for any .NET type. For more information, see [Why use constraints](#why-use-constraints). If client code tries to instantiate your class by using a type that is not allowed by a constraint, the result is a compile-time error. Constraints are specified by using the `where` contextual keyword. The following table lists the seven types of constraints:
+Constraints inform the compiler about the capabilities a type argument must have. Without any constraints, the type argument could be any type. The compiler can only assume the members of <xref:System.Object?displayProperty=nameWithType>, which is the ultimate base class for any .NET type. For more information, see [Why use constraints](#why-use-constraints). If client code tries to instantiate your class by using a type that is not allowed by a constraint, the result is a compile-time error. Constraints are specified by using the `where` contextual keyword. The following table lists the seven types of constraints:
 
 |Constraint|Description|
 |----------------|-----------------|
@@ -105,8 +106,8 @@ You could use it as shown in the following sample to create an enum and build a 
 
 ## See also
 
- <xref:System.Collections.Generic>
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)  
- [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)  
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
+- [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)

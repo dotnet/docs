@@ -22,7 +22,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |CONSTRAINT_SCHEMA|String|Schema that contains the constraint.|  
 |CONSTRAINT_NAME|String|Name.|  
 |TABLE_CATALOG|String|Table Name constraint is part of.|  
-|TABLE_SCHEMA|String|Schema that that contains the table.|  
+|TABLE_SCHEMA|String|Schema that contains the table.|  
 |TABLE_NAME|String|Table Name|  
 |CONSTRAINT_TYPE|String|Type of constraint. Only "FOREIGN KEY" is allowed.|  
 |IS_DEFERRABLE|String|Specifies whether the constraint is deferrable. Returns NO.|  
@@ -249,6 +249,6 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |Create_Date|DateTime|The date the assembly was created/registered.|  
 |Permission_set_desc|String|The friendly name for the permission-set/security-level for the assembly.|  
   
-## See Also  
- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

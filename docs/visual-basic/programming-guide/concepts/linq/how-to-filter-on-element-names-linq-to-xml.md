@@ -72,5 +72,5 @@ End Module
 {http://www.adventure-works.com}ProductName:Baby Monitor  
 ```  
   
-## See Also  
- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See also
+- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)

@@ -75,7 +75,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A <xref:System.Type> that specifies the most precise type to expect as the `ProvideValue` result of the attributed <xref:System.Windows.Markup.MarkupExtension>.  
   
- For more information, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+ For more information, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
   
 ### NameScopePropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.NameScopePropertyAttribute>  
@@ -97,7 +97,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the run-time name property on the attributed type.  
   
- <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> reports a property of the attributed type that maps to the XAML [x:Name Directive](../../../docs/framework/xaml-services/x-name-directive.md). The property must be of type <xref:System.String> and must be read/write.  
+ <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> reports a property of the attributed type that maps to the XAML [x:Name Directive](x-name-directive.md). The property must be of type <xref:System.String> and must be read/write.  
   
  The definition inherits to all derived types that are assignable to the defining type. You can override the definition on a specific derived type by applying <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> on the specific derived type.  
   
@@ -108,7 +108,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within white-space significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is applied to specific types that might appear as child elements within white-space significant content (content held by a collection that has <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>). <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is mainly relevant to the save path, but is available in the XAML type system in the load path by examining <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A?displayProperty=nameWithType>. For more information, see [White-space processing in XAML](whitespace-processing-in-xaml.md).  
   
 ### TypeConverterAttribute  
  **Reference Documentation:**  <xref:System.ComponentModel.TypeConverterAttribute>  
@@ -121,7 +121,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  You apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type, referencing your type converter implementation. You can define type converters for XAML on classes, structures, or interfaces. You do not need to provide type conversion for enumerations, that conversion is enabled natively.  
   
- Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md).  
+ Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](../wpf/advanced/typeconverters-and-xaml.md).  
   
  Rather than applying to all values of a type, a type converter behavior for XAML can also be established on a specific property. In this case, you apply <xref:System.ComponentModel.TypeConverterAttribute> to the property definition (the outer definition, not the specific `get` and `set` definitions).  
   
@@ -136,7 +136,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that references the relevant property by name.  
   
- Indicates the CLR property of a class that aliases the [x:Uid Directive](../../../docs/framework/xaml-services/x-uid-directive.md).  
+ Indicates the CLR property of a class that aliases the [x:Uid Directive](x-uid-directive.md).  
   
 ### UsableDuringInitializationAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.UsableDuringInitializationAttribute>  
@@ -163,7 +163,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** None.  
   
- <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> indicates that a collection type should be processed as white-space significant by a XAML processor, which influences the construction of the XAML node stream's value nodes within the collection. For more information, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+ <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> indicates that a collection type should be processed as white-space significant by a XAML processor, which influences the construction of the XAML node stream's value nodes within the collection. For more information, see [White-space processing in XAML](whitespace-processing-in-xaml.md).  
   
 ### XamlDeferLoadAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.XamlDeferLoadAttribute>  
@@ -262,6 +262,6 @@ This topic describes the common language runtime (CLR) attributes that are defin
 > [!NOTE]
 >  .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
   
-## See Also  
- <xref:System.Attribute>  
- [Defining Custom Types for Use with .NET Framework XAML Services](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)
+## See also
+- <xref:System.Attribute>
+- [Defining Custom Types for Use with .NET Framework XAML Services](defining-custom-types-for-use-with-net-framework-xaml-services.md)

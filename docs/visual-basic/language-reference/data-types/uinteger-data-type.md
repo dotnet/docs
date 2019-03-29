@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "UI literal type characters [Visual Basic]"
   - "data types [Visual Basic], integral"
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # UInteger data type
 
@@ -52,7 +50,7 @@ Dim number As UInteger = &H_0F8C_0326
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `UI` or `ui` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UInteger` data type, as the following example shows.
+Numeric literals can also include the `UI` or `ui` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `UInteger` data type, as the following example shows.
 
 ```vb
 Dim number = &H_0FAC_14D7ui
@@ -64,7 +62,7 @@ Dim number = &H_0FAC_14D7ui
   
 -   **Negative Numbers.** Because `UInteger` is an unsigned type, it cannot represent a negative number. If you use the unary minus (`-`) operator on an expression that evaluates to type `UInteger`, Visual Basic converts the expression to `Long` first.  
   
--   **CLS Compliance.** The `UInteger` data type is not part of the [Common Language Specification](http://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
+-   **CLS Compliance.** The `UInteger` data type is not part of the [Common Language Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
   
 -   **Interop Considerations.** If you are interfacing with components not written for the .NET Framework, for example Automation or COM objects, keep in mind that types such as `uint` can have a different data width (16 bits) in other environments. If you are passing a 16-bit argument to such a component, declare it as `UShort` instead of `UInteger` in your managed Visual Basic code.  
   
@@ -74,10 +72,10 @@ Dim number = &H_0FAC_14D7ui
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.UInt32?displayProperty=nameWithType> structure.  
   
-## See Also  
- <xref:System.UInt32>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## See also
+- <xref:System.UInt32>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

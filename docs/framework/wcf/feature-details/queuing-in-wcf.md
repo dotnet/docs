@@ -113,14 +113,12 @@ This section describes how to use queued communication in Windows Communication 
   
 -   [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
   
--   [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)  
-  
--   [Transacted Batching](../../../../docs/framework/wcf/samples/transacted-batching.md)  
+-   [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) 
   
 -   [SRMP](../../../../docs/framework/wcf/samples/srmp.md)  
   
 -   [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
   
-## See Also  
- [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)  
- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)
+## See also
+- [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)
+- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)

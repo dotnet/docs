@@ -60,8 +60,8 @@ If portability is a requirement, use the <xref:System.Runtime.Serialization.Form
 <SOAP-ENV:Envelope  
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
-  xmlns:SOAP- ENC="http://schemas.xmlsoap.org/soap/encoding/"  
-  xmlns:SOAP- ENV="http://schemas.xmlsoap.org/soap/envelope/"  
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"  
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"  
   SOAP-ENV:encodingStyle=  
   "http://schemas.microsoft.com/soap/encoding/clr/1.0"  
   "http://schemas.xmlsoap.org/soap/encoding/"  
@@ -88,6 +88,7 @@ public class MyStuff : MyObject
   
  Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization Guidelines](serialization-guidelines.md) for information about when you should mark a class for serialization. Serialization cannot be added to a class after it has been compiled.  
   
-## See also  
- [Binary Serialization](binary-serialization.md)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+## See also
+
+- [Binary Serialization](binary-serialization.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)

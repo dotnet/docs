@@ -34,12 +34,12 @@ HRESULT DefineSequencePoints(
     [in, size_is(spCount)] ULONG32     endColumns[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The document object for which the sequence points are being defined.  
   
  `spCount`  
- [in] A `ULONG32` that that indicates the size of each of the `offsets`, `lines`, `columns`, `endLines`, and `endColumns` buffers.  
+ [in] A `ULONG32` that indicates the size of each of the `offsets`, `lines`, `columns`, `endLines`, and `endColumns` buffers.  
   
  `offsets`  
  [in] The offset of the sequence points measured from the beginning of the method.  
@@ -62,5 +62,5 @@ HRESULT DefineSequencePoints(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

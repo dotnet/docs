@@ -12,7 +12,7 @@ ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
 # How to: Programmatically Print XPS Files
 You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] at all.  
   
- You can also print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, [Printing an XPS Document](https://msdn.microsoft.com/library/849555c8-0c4e-48c0-86bc-a5494c69b36c(v=vs.90)).  
+ You can also print [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).  
   
  Another way of printing [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] is to use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> or <xref:System.Windows.Controls.PrintDialog.PrintVisual%2A> methods of the <xref:System.Windows.Controls.PrintDialog> control. See [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
   
@@ -37,8 +37,8 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  The meat of the example is in the `static`**BatchXPSPrinter.PrintXPS** method. After creating a print server and queue, the method prompts the user for a directory containing [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files. After validating the existence of the directory and the presence of \*.xps files in it, the method adds each such file to the print queue. The example assumes that the printer is non-XPSDrv, so we are passing `false` to the last parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method. For this reason, the method will validate the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] markup in the file before it attempts to convert it to the printer's page description language. If the validation fails, an exception is thrown. The example code will catch the exception, notify the user about it, and then go on to process the next [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] file.  
   
- [!code-csharp[BatchPrintXPSFiles#BatchPrintXPSFiles](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BatchPrintXPSFiles/CSharp/Program.cs#batchprintxpsfiles)]
- [!code-vb[BatchPrintXPSFiles#BatchPrintXPSFiles](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BatchPrintXPSFiles/visualbasic/program.vb#batchprintxpsfiles)]  
+ [!code-csharp[BatchPrintXPSFiles#BatchPrintXPSFiles](~/samples/snippets/csharp/VS_Snippets_Wpf/BatchPrintXPSFiles/CSharp/Program.cs#batchprintxpsfiles)]
+ [!code-vb[BatchPrintXPSFiles#BatchPrintXPSFiles](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BatchPrintXPSFiles/visualbasic/program.vb#batchprintxpsfiles)]  
   
  If you are using an XPSDrv printer, then you can set the final parameter to `true`. In that case, since [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] is the printer's page description language, the method will send the file to the printer without validating it or converting it to another page description language. If you are uncertain at design time whether the application will be using an XPSDrv printer, you can modify the application to have it read the <xref:System.Printing.PrintQueue.IsXpsDevice%2A> property and branch according to what it finds.  
   
@@ -50,16 +50,16 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  This disguise will enable you to pass `true` as the final parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> without causing an exception, but since *\<PseudoXPSPrinter>* is not really an XPSDrv printer, only garbage will print.  
   
- **Note** For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
+ **Note** For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100)) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
   
-## See Also  
- <xref:System.Printing.PrintQueue>  
- <xref:System.Printing.PrintQueue.AddJob%2A>  
- <xref:System.Threading.ApartmentState>  
- <xref:System.STAThreadAttribute>  
- [XPS](http://www.microsoft.com/xps)  
- [Printing an XPS Document](https://msdn.microsoft.com/library/849555c8-0c4e-48c0-86bc-a5494c69b36c(v=vs.90))  
- [Managed and Unmanaged Threading](https://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5(v=vs.100))  
- [isXPS.exe (isXPS Conformance Tool)](https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3(v=vs.100))  
- [Documents in WPF](documents-in-wpf.md)  
- [Printing Overview](printing-overview.md)
+## See also
+- <xref:System.Printing.PrintQueue>
+- <xref:System.Printing.PrintQueue.AddJob%2A>
+- <xref:System.Threading.ApartmentState>
+- <xref:System.STAThreadAttribute>
+- [XPS Documents](/windows/desktop/printdocs/documents)
+- [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))
+- [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
+- [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)

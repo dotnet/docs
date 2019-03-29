@@ -1,5 +1,5 @@
 ---
-title: Discriminated Unions (F#)
+title: Discriminated Unions
 description: Learn how to use F# discriminated unions.
 ms.date: 05/16/2016
 ---
@@ -89,10 +89,18 @@ The following example demonstrates this:
 ```fsharp
 type ShaderProgram = | ShaderProgram of id:int
 
-let someMethodUsingShaderProgram shaderProgram =
+let someFunctionUsingShaderProgram shaderProgram =
     let (ShaderProgram id) = shaderProgram
     // Use the unwrapped value
-    ..
+    ...
+```
+
+Pattern matching is also allowed directly in function parameters, so you can unwrap a single case there:
+
+```fsharp
+let someFunctionUsingShaderProgram (ShaderProgram id) =
+    // Use the unwrapped value
+    ...
 ```
 
 ## Struct Discriminated Unions
@@ -159,6 +167,6 @@ The following attributes are commonly seen in discriminated unions:
 * `[NoComparison]`
 * `[Struct]`
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

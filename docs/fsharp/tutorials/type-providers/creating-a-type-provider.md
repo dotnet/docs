@@ -1,8 +1,9 @@
 ---
-title: "Tutorial: Create a Type Provider (F#)"
+title: "Tutorial: Create a Type Provider"
 description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
-ms.date: 05/16/2016
+ms.date: 02/02/2019
 ---
+
 # Tutorial: Create a Type Provider
 
 The type provider mechanism in F# is a significant part of its support for information rich programming. This tutorial explains how to create your own type providers by walking you through the development of several simple type providers to illustrate the basic concepts. For more information about the type provider mechanism in F#, see [Type Providers](index.md).
@@ -18,7 +19,6 @@ The F# ecosystem contains a range of type providers for commonly used Internet a
 - [FSharp.Data.TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) is an older set of type providers for use only with .NET Framework programming for accessing SQL, Entity Framework, OData and WSDL data services.
 
 Where necessary, you can create custom type providers, or you can reference type providers that others have created. For example, your organization could have a data service that provides a large and growing number of named data sets, each with its own stable data schema. You can create a type provider that reads the schemas and presents the current data sets to the programmer in a strongly typed way.
-
 
 ## Before You Start
 
@@ -46,7 +46,6 @@ Before you start, you might ask the following questions:
 
 Type providers are best suited to situations where the schema is stable at runtime and during the lifetime of compiled code.
 
-
 ## A Simple Type Provider
 
 This sample is Samples.HelloWorldTypeProvider, similar to the samples in the `examples` directory of the [F# Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK/). The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
@@ -70,7 +69,7 @@ type Type1 =
     /// This is an instance method.
     member InstanceMethod : x:int -> char
 
-    nested type NestedType = 
+    nested type NestedType =
         /// This is StaticProperty1 on NestedType.
         static member StaticProperty1 : string
         …
@@ -87,9 +86,8 @@ type Type100 =
 
 Note that the set of types and members provided is statically known. This example doesn't leverage the ability of providers to provide types that depend on a schema. The implementation of the type provider is outlined in the following code, and the details are covered in later sections of this topic.
 
-
->[!WARNING] 
-There may be differences between this code and the online samples.
+> [!WARNING]
+> There may be differences between this code and the online samples.
 
 ```fsharp
 namespace Samples.FSharp.HelloWorldTypeProvider
@@ -103,9 +101,9 @@ open FSharp.Quotations
 // This type defines the type provider. When compiled to a DLL, it can be added
 // as a reference to an F# command-line compilation, script, or project.
 [<TypeProvider>]
-type SampleTypeProvider(config: TypeProviderConfig) as this = 
+type SampleTypeProvider(config: TypeProviderConfig) as this =
 
-  // Inheriting from this type provides implementations of ITypeProvider 
+  // Inheriting from this type provides implementations of ITypeProvider
   // in terms of the provided types below.
   inherit TypeProviderForNamespaces(config)
 
@@ -113,15 +111,15 @@ type SampleTypeProvider(config: TypeProviderConfig) as this =
   let thisAssembly = Assembly.GetExecutingAssembly()
 
   // Make one provided type, called TypeN.
-  let makeOneProvidedType (n:int) = 
+  let makeOneProvidedType (n:int) =
   …
   // Now generate 100 types
-  let types = [ for i in 1 .. 100 -> makeOneProvidedType i ] 
+  let types = [ for i in 1 .. 100 -> makeOneProvidedType i ]
 
   // And add them to the namespace
   do this.AddNamespace(namespaceName, types)
 
-[<assembly:TypeProviderAssembly>] 
+[<assembly:TypeProviderAssembly>]
 do()
 ```
 
@@ -149,20 +147,19 @@ Before you recompile the provider, make sure that you have closed all instances 
 
 To debug this provider by using print statements, make a script that exposes a problem with the provider, and then use the following code:
 
-```fsharp
+```
 fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
-To debug this provider by using Visual Studio, open the Visual Studio command prompt with administrative credentials, and run the following command:
+To debug this provider by using Visual Studio, open the Developer Command Prompt for Visual Studio with administrative credentials, and run the following command:
 
-```fsharp
+```
 devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
 As an alternative, open Visual Studio, open the Debug menu, choose `Debug/Attach to process…`, and attach to another `devenv` process where you’re editing your script. By using this method, you can more easily target particular logic in the type provider by interactively typing expressions into the second instance (with full IntelliSense and other features).
 
 You can disable Just My Code debugging to better identify errors in generated code. For information about how to enable or disable this feature, see [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger). Also, you can also set first-chance exception catching by opening the `Debug` menu and then choosing `Exceptions` or by choosing the Ctrl+Alt+E keys to open the `Exceptions` dialog box. In that dialog box, under `Common Language Runtime Exceptions`, select the `Thrown` check box.
-
 
 ### Implementation of the Type Provider
 
@@ -209,7 +206,7 @@ do this.AddNamespace(namespaceName, types)
 Finally, add an assembly attribute that indicates that you are creating a type provider DLL:
 
 ```fsharp
-[<assembly:TypeProviderAssembly>] 
+[<assembly:TypeProviderAssembly>]
 do()
 ```
 
@@ -218,14 +215,14 @@ do()
 The `makeOneProvidedType` function does the real work of providing one of the types.
 
 ```fsharp
-let makeOneProvidedType (n:int) = 
+let makeOneProvidedType (n:int) =
 …
 ```
 
 This step explains the implementation of this function. First, create the provided type (for example, Type1, when n = 1, or Type57, when n = 57).
 
 ```fsharp
-// This is the provided type. It is an erased provided type and, in compiled code, 
+// This is the provided type. It is an erased provided type and, in compiled code,
 // will appear as type 'obj'.
 let t = ProvidedTypeDefinition(thisAssembly, namespaceName,
                                "Type" + string n,
@@ -247,8 +244,8 @@ t.AddXmlDocDelayed (fun () -> sprintf "This provided type %s" ("Type" + string n
 Next you add a provided static property to the type:
 
 ```fsharp
-let staticProp = ProvidedProperty(propertyName = "StaticProperty", 
-                                  propertyType = typeof<string>, 
+let staticProp = ProvidedProperty(propertyName = "StaticProperty",
+                                  propertyType = typeof<string>,
                                   isStatic = true,
                                   getterCode = (fun args -> <@@ "Hello!" @@>))
 ```
@@ -270,7 +267,7 @@ t.AddMember staticProp
 Now create a provided constructor that takes no parameters.
 
 ```fsharp
-let ctor = ProvidedConstructor(parameters = [ ], 
+let ctor = ProvidedConstructor(parameters = [ ],
                                invokeCode = (fun args -> <@@ "The object data" :> obj @@>))
 ```
 
@@ -293,8 +290,8 @@ t.AddMember ctor
 Create a second provided constructor that takes one parameter:
 
 ```fsharp
-let ctor2 = 
-ProvidedConstructor(parameters = [ ProvidedParameter("data",typeof<string>) ], 
+let ctor2 =
+ProvidedConstructor(parameters = [ ProvidedParameter("data",typeof<string>) ],
                     invokeCode = (fun args -> <@@ (%%(args.[0]) : string) :> obj @@>))
 ```
 
@@ -307,10 +304,10 @@ new Type10("ten")
 An instance of the provided type is created with underlying data "ten". You may have already noticed that the `InvokeCode` function returns a quotation. The input to this function is a list of expressions, one per constructor parameter. In this case, an expression that represents the single parameter value is available in `args.[0]`. The code for a call to the constructor coerces the return value to the erased type `obj`. After you add the second provided constructor to the type, you create a provided instance property:
 
 ```fsharp
-let instanceProp = 
-    ProvidedProperty(propertyName = "InstanceProperty", 
-                     propertyType = typeof<int>, 
-                     getterCode= (fun args -> 
+let instanceProp =
+    ProvidedProperty(propertyName = "InstanceProperty",
+                     propertyType = typeof<int>,
+                     getterCode= (fun args ->
                         <@@ ((%%(args.[0]) : obj) :?> string).Length @@>))
 instanceProp.AddXmlDocDelayed(fun () -> "This is an instance property")
 t.AddMember instanceProp
@@ -319,11 +316,11 @@ t.AddMember instanceProp
 Getting this property will return the length of the string, which is the representation object. The `GetterCode` property returns an F# quotation that specifies the code that the host compiler generates to get the property. Like `InvokeCode`, the `GetterCode` function returns a quotation. The host compiler calls this function with a list of arguments. In this case, the arguments include just the single expression that represents the instance upon which the getter is being called, which you can access by using `args.[0]`.The implementation of `GetterCode` then splices into the result quotation at the erased type `obj`, and a cast is used to satisfy the compiler's mechanism for checking types that the object is a string. The next part of `makeOneProvidedType` provides an instance method with one parameter.
 
 ```fsharp
-let instanceMeth = 
-    ProvidedMethod(methodName = "InstanceMethod", 
-                   parameters = [ProvidedParameter("x",typeof<int>)], 
-                   returnType = typeof<char>, 
-                   invokeCode = (fun args -> 
+let instanceMeth =
+    ProvidedMethod(methodName = "InstanceMethod",
+                   parameters = [ProvidedParameter("x",typeof<int>)],
+                   returnType = typeof<char>,
+                   invokeCode = (fun args ->
                        <@@ ((%%(args.[0]) : obj) :?> string).Chars(%%(args.[1]) : int) @@>))
 
 instanceMeth.AddXmlDocDelayed(fun () -> "This is an instance method")
@@ -334,21 +331,21 @@ t.AddMember instanceMeth
 Finally, create a nested type that contains 100 nested properties. The creation of this nested type and its properties is delayed, that is, computed on-demand.
 
 ```fsharp
-t.AddMembersDelayed(fun () -> 
+t.AddMembersDelayed(fun () ->
   let nestedType = ProvidedTypeDefinition("NestedType", Some typeof<obj>)
 
-  nestedType.AddMembersDelayed (fun () -> 
-    let staticPropsInNestedType = 
+  nestedType.AddMembersDelayed (fun () ->
+    let staticPropsInNestedType =
       [ for i in 1 .. 100 do
           let valueOfTheProperty = "I am string "  + string i
 
-          let p = 
-            ProvidedProperty(propertyName = "StaticProperty" + string i, 
-              propertyType = typeof<string>, 
+          let p =
+            ProvidedProperty(propertyName = "StaticProperty" + string i,
+              propertyType = typeof<string>,
               isStatic = true,
               getterCode= (fun args -> <@@ valueOfTheProperty @@>))
 
-          p.AddXmlDocDelayed(fun () -> 
+          p.AddXmlDocDelayed(fun () ->
               sprintf "This is StaticProperty%d on NestedType" i)
 
           yield p ]
@@ -369,7 +366,6 @@ The example in this section provides only *erased provided types*, which are par
 - When you are writing a provider for an information space that is so large and interconnected that it isn’t technically feasible to generate real .NET types for the information space.
 
 In this example, each provided type is erased to type `obj`, and all uses of the type will appear as type `obj` in compiled code. In fact, the underlying objects in these examples are strings, but the type will appear as `System.Object` in .NET compiled code. As with all uses of type erasure, you can use explicit boxing, unboxing, and casting to subvert erased types. In this case, a cast exception that isn’t valid may result when the object is used. A provider runtime can define its own private representation type to help protect against false representations. You can’t define erased types in F# itself. Only provided types may be erased. You must understand the ramifications, both practical and semantic, of using either erased types for your type provider or a provider that provides erased types. An erased type has no real .NET type. Therefore, you cannot do accurate reflection over the type, and you might subvert erased types if you use runtime casts and other techniques that rely on exact runtime type semantics. Subversion of erased types frequently results in type cast exceptions at runtime.
-
 
 ### Choosing Representations for Erased Provided Types
 
@@ -398,7 +394,7 @@ You can choose a representation for provided objects by using either of the foll
 The example in this document uses strings as representations of provided objects. Frequently, it may be appropriate to use other objects for representations. For example, you may use a dictionary as a property bag:
 
 ```fsharp
-ProvidedConstructor(parameters = [], 
+ProvidedConstructor(parameters = [],
     invokeCode= (fun args -> <@@ (new Dictionary<string,obj>()) :> obj @@>))
 ```
 
@@ -413,7 +409,7 @@ type DataObject() =
 Provided members can then construct instances of this object type:
 
 ```fsharp
-ProvidedConstructor(parameters = [], 
+ProvidedConstructor(parameters = [],
     invokeCode= (fun args -> <@@ (new DataObject()) :> obj @@>))
 ```
 
@@ -429,11 +425,9 @@ ProvidedConstructor(…, InvokeCode = (fun args -> <@@ new DataObject() @@>), �
 
 The previous section explained how to create a simple erasing type provider that provides a range of types, properties, and methods. This section also explained the concept of type erasure, including some of the advantages and disadvantages of providing erased types from a type provider, and discussed representations of erased types.
 
-
 ## A Type Provider That Uses Static Parameters
 
 The ability to parameterize type providers by static data enables many interesting scenarios, even in cases when the provider doesn't need to access any local or remote data. In this section, you’ll learn some basic techniques for putting together such a provider.
-
 
 ### Type Checked Regex Provider
 
@@ -470,7 +464,7 @@ Note the following points:
 
 - Each named group results in a provided property, and accessing the property results in a use of an indexer on a match’s `Groups` collection.
 
-The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](https://fsharp3sample.codeplex.com) on the Codeplex website.
+The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](https://archive.codeplex.com/?p=fsharp3sample) on the CodePlex website.
 
 ```fsharp
 namespace Samples.FSharp.RegexTypeProvider
@@ -493,32 +487,32 @@ type public CheckedRegexProvider() as this =
     let regexTy = ProvidedTypeDefinition(thisAssembly, rootNamespace, "RegexTyped", Some baseTy)
 
     do regexTy.DefineStaticParameters(
-        parameters=staticParams, 
+        parameters=staticParams,
         instantiationFunction=(fun typeName parameterValues ->
 
-          match parameterValues with 
-          | [| :? string as pattern|] -> 
+          match parameterValues with
+          | [| :? string as pattern|] ->
 
-            // Create an instance of the regular expression. 
+            // Create an instance of the regular expression.
             //
-            // This will fail with System.ArgumentException if the regular expression is not valid. 
+            // This will fail with System.ArgumentException if the regular expression is not valid.
             // The exception will escape the type provider and be reported in client code.
-            let r = System.Text.RegularExpressions.Regex(pattern)            
+            let r = System.Text.RegularExpressions.Regex(pattern)
 
             // Declare the typed regex provided type.
             // The type erasure of this type is 'obj', even though the representation will always be a Regex
             // This, combined with hiding the object methods, makes the IntelliSense experience simpler.
-            let ty = 
+            let ty =
               ProvidedTypeDefinition(
-                thisAssembly, 
-                rootNamespace, 
-                typeName, 
+                thisAssembly,
+                rootNamespace,
+                typeName,
                 baseType = Some baseTy)
 
             ...
 
             ty
-          | _ -> failwith "unexpected parameter values")) 
+          | _ -> failwith "unexpected parameter values"))
 
     do this.AddNamespace(rootNamespace, [regexTy])
 
@@ -543,15 +537,15 @@ Note the following points:
 The type defined above isn't useful yet because it doesn’t contain any meaningful methods or properties. First, add a static `IsMatch` method:
 
 ```fsharp
-let isMatch = 
+let isMatch =
     ProvidedMethod(
-        methodName = "IsMatch", 
-        parameters = [ProvidedParameter("input", typeof<string>)], 
-        returnType = typeof<bool>, 
+        methodName = "IsMatch",
+        parameters = [ProvidedParameter("input", typeof<string>)],
+        returnType = typeof<bool>,
         isStatic = true,
-        invokeCode = fun args -> <@@ Regex.IsMatch(%%args.[0], pattern) @@>) 
+        invokeCode = fun args -> <@@ Regex.IsMatch(%%args.[0], pattern) @@>)
 
-isMatch.AddXmlDoc "Indicates whether the regular expression finds a match in the specified input string." 
+isMatch.AddXmlDoc "Indicates whether the regular expression finds a match in the specified input string."
 ty.AddMember isMatch
 ```
 
@@ -560,10 +554,10 @@ The previous code defines a method `IsMatch`, which takes a string as input and 
 Next, add an instance Match method. However, this method should return a value of a provided `Match` type so that the groups can be accessed in a strongly typed fashion. Thus, you first declare the `Match` type. Because this type depends on the pattern that was supplied as a static argument, this type must be nested within the parameterized type definition:
 
 ```fsharp
-let matchTy = 
+let matchTy =
     ProvidedTypeDefinition(
-        "MatchType", 
-        baseType = Some baseTy, 
+        "MatchType",
+        baseType = Some baseTy,
         hideObjectMethods = true)
 
 ty.AddMember matchTy
@@ -575,10 +569,10 @@ You then add one property to the Match type for each group. At runtime, a match 
 for group in r.GetGroupNames() do
     // Ignore the group named 0, which represents all input.
     if group <> "0" then
-    let prop = 
+    let prop =
       ProvidedProperty(
-        propertyName = group, 
-        propertyType = typeof<Group>, 
+        propertyName = group,
+        propertyType = typeof<Group>,
         getterCode = fun args -> <@@ ((%%args.[0]:obj) :?> Match).Groups.[group] @@>)
         prop.AddXmlDoc(sprintf @"Gets the ""%s"" group from this match" group)
     matchTy.AddMember prop
@@ -589,14 +583,14 @@ Again, note that you’re adding XML documentation to the provided property. Als
 Now you can create an instance method that returns a value of this `Match` type:
 
 ```fsharp
-let matchMethod = 
+let matchMethod =
     ProvidedMethod(
-        methodName = "Match", 
-        parameters = [ProvidedParameter("input", typeof<string>)], 
-        returnType = matchTy, 
+        methodName = "Match",
+        parameters = [ProvidedParameter("input", typeof<string>)],
+        returnType = matchTy,
         invokeCode = fun args -> <@@ ((%%args.[0]:obj) :?> Regex).Match(%%args.[1]) :> obj @@>)
 
-matchMeth.AddXmlDoc "Searches the specified input string for the first ocurrence of this regular expression" 
+matchMeth.AddXmlDoc "Searches the specified input string for the first occurrence of this regular expression"
 
 ty.AddMember matchMeth
 ```
@@ -606,9 +600,9 @@ Because you are creating an instance method, `args.[0]` represents the `RegexTyp
 Finally, provide a constructor so that instances of the provided type can be created.
 
 ```fsharp
-let ctor = 
+let ctor =
     ProvidedConstructor(
-        parameters = [], 
+        parameters = [],
         invokeCode = fun args -> <@@ Regex(pattern, options) :> obj @@>)
 
 ctor.AddXmlDoc("Initializes a regular expression instance.")
@@ -639,35 +633,35 @@ type public CheckedRegexProvider() as this =
     let regexTy = ProvidedTypeDefinition(thisAssembly, rootNamespace, "RegexTyped", Some baseTy)
 
     do regexTy.DefineStaticParameters(
-        parameters=staticParams, 
+        parameters=staticParams,
         instantiationFunction=(fun typeName parameterValues ->
 
-            match parameterValues with 
-            | [| :? string as pattern|] -> 
+            match parameterValues with
+            | [| :? string as pattern|] ->
 
-                // Create an instance of the regular expression. 
+                // Create an instance of the regular expression.
 
-                let r = System.Text.RegularExpressions.Regex(pattern)            
+                let r = System.Text.RegularExpressions.Regex(pattern)
 
                 // Declare the typed regex provided type.
 
-                let ty = 
+                let ty =
                     ProvidedTypeDefinition(
-                        thisAssembly, 
-                        rootNamespace, 
-                        typeName, 
+                        thisAssembly,
+                        rootNamespace,
+                        typeName,
                         baseType = Some baseTy)
 
                 ty.AddXmlDoc "A strongly typed interface to the regular expression '%s'"
 
                 // Provide strongly typed version of Regex.IsMatch static method.
-                let isMatch = 
+                let isMatch =
                     ProvidedMethod(
-                        methodName = "IsMatch", 
-                        parameters = [ProvidedParameter("input", typeof<string>)], 
-                        returnType = typeof<bool>, 
+                        methodName = "IsMatch",
+                        parameters = [ProvidedParameter("input", typeof<string>)],
+                        returnType = typeof<bool>,
                         isStatic = true,
-                        invokeCode = fun args -> <@@ Regex.IsMatch(%%args.[0], pattern) @@>) 
+                        invokeCode = fun args -> <@@ Regex.IsMatch(%%args.[0], pattern) @@>)
 
                 isMatch.AddXmlDoc "Indicates whether the regular expression finds a match in the specified input string"
 
@@ -675,10 +669,10 @@ type public CheckedRegexProvider() as this =
 
                 // Provided type for matches
                 // Again, erase to obj even though the representation will always be a Match
-                let matchTy = 
+                let matchTy =
                     ProvidedTypeDefinition(
-                        "MatchType", 
-                        baseType = Some baseTy, 
+                        "MatchType",
+                        baseType = Some baseTy,
                         hideObjectMethods = true)
 
                 // Nest the match type within parameterized Regex type.
@@ -688,29 +682,29 @@ type public CheckedRegexProvider() as this =
                 for group in r.GetGroupNames() do
                     // Ignore the group named 0, which represents all input.
                     if group <> "0" then
-                        let prop = 
+                        let prop =
                           ProvidedProperty(
-                            propertyName = group, 
-                            propertyType = typeof<Group>, 
+                            propertyName = group,
+                            propertyType = typeof<Group>,
                             getterCode = fun args -> <@@ ((%%args.[0]:obj) :?> Match).Groups.[group] @@>)
                         prop.AddXmlDoc(sprintf @"Gets the ""%s"" group from this match" group)
                         matchTy.AddMember(prop)
 
                 // Provide strongly typed version of Regex.Match instance method.
-                let matchMeth = 
+                let matchMeth =
                   ProvidedMethod(
-                    methodName = "Match", 
-                    parameters = [ProvidedParameter("input", typeof<string>)], 
-                    returnType = matchTy, 
+                    methodName = "Match",
+                    parameters = [ProvidedParameter("input", typeof<string>)],
+                    returnType = matchTy,
                     invokeCode = fun args -> <@@ ((%%args.[0]:obj) :?> Regex).Match(%%args.[1]) :> obj @@>)
-                matchMeth.AddXmlDoc "Searches the specified input string for the first occurence of this regular expression"
+                matchMeth.AddXmlDoc "Searches the specified input string for the first occurrence of this regular expression"
 
                 ty.AddMember matchMeth
 
                 // Declare a constructor.
-                let ctor = 
+                let ctor =
                   ProvidedConstructor(
-                    parameters = [], 
+                    parameters = [],
                     invokeCode = fun args -> <@@ Regex(pattern) :> obj @@>)
 
                 // Add documentation to the constructor.
@@ -719,7 +713,7 @@ type public CheckedRegexProvider() as this =
                 ty.AddMember ctor
 
                 ty
-            | _ -> failwith "unexpected parameter values")) 
+            | _ -> failwith "unexpected parameter values"))
 
     do this.AddNamespace(rootNamespace, [regexTy])
 
@@ -731,16 +725,13 @@ do ()
 
 This section explained how to create a type provider that operates on its static parameters. The provider checks the static parameter and provides operations based on its value.
 
-
 ## A Type Provider That Is Backed By Local Data
 
 Frequently you might want type providers to present APIs based on not only static parameters but also information from local or remote systems. This section discusses type providers that are based on local data, such as local data files.
 
-
 ### Simple CSV File Provider
 
 As a simple example, consider a type provider for accessing scientific data in Comma Separated Value (CSV) format. This section assumes that the CSV files contain a header row followed by floating point data, as the following table illustrates:
-
 
 |Distance (meter)|Time (second)|
 |----------------|-------------|
@@ -752,7 +743,7 @@ This section shows how to provide a type that you can use to get rows with a `Di
 
 - Header names are either unit-less or have the form "Name (unit)" and don't contain commas.
 
-- Units are all Systeme International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
+- Units are all System International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
 
 - Units are all simple (for example, meter) rather than compound (for example, meter/second).
 
@@ -786,7 +777,7 @@ The following code shows the core of the implementation.
 // Simple type wrapping CSV data
 type CsvFile(filename) =
     // Cache the sequence of all data lines (all lines but the first)
-    let data = 
+    let data =
         seq { for line in File.ReadAllLines(filename) |> Seq.skip 1 do
                  yield line.Split(',') |> Array.map float }
         |> Seq.cache
@@ -806,7 +797,7 @@ type public MiniCsvProvider(cfg:TypeProviderConfig) as this =
     // Parameterize the type by the file to use as a template.
     let filename = ProvidedStaticParameter("filename", typeof<string>)
     do csvTy.DefineStaticParameters([filename], fun tyName [| :? string as filename |] ->
-    
+
         // Resolve the filename relative to the resolution folder.
         let resolvedFilename = Path.Combine(cfg.ResolutionFolder, filename)
 
@@ -837,31 +828,31 @@ type public MiniCsvProvider(cfg:TypeProviderConfig) as this =
                     // no units, just treat it as a normal float
                     headerText, typeof<float>
 
-            let prop = 
-                ProvidedProperty(fieldName, fieldTy, 
+            let prop =
+                ProvidedProperty(fieldName, fieldTy,
                     getterCode = fun [row] -> <@@ (%%row:float[]).[i] @@>)
 
             // Add metadata that defines the property's location in the referenced file.
             prop.AddDefinitionLocation(1, headers.[i].Index + 1, filename)
-            rowTy.AddMember(prop) 
+            rowTy.AddMember(prop)
 
         // Define the provided type, erasing to CsvFile.
         let ty = ProvidedTypeDefinition(asm, ns, tyName, Some(typeof<CsvFile>))
 
         // Add a parameterless constructor that loads the file that was used to define the schema.
-        let ctor0 = 
-            ProvidedConstructor([], 
+        let ctor0 =
+            ProvidedConstructor([],
                 invokeCode = fun [] -> <@@ CsvFile(resolvedFilename) @@>)
         ty.AddMember ctor0
 
         // Add a constructor that takes the file name to load.
-        let ctor1 = ProvidedConstructor([ProvidedParameter("filename", typeof<string>)], 
+        let ctor1 = ProvidedConstructor([ProvidedParameter("filename", typeof<string>)],
             invokeCode = fun [filename] -> <@@ CsvFile(%%filename) @@>)
         ty.AddMember ctor1
 
         // Add a more strongly typed Data property, which uses the existing property at runtime.
-        let prop = 
-            ProvidedProperty("Data", typedefof<seq<_>>.MakeGenericType(rowTy), 
+        let prop =
+            ProvidedProperty("Data", typedefof<seq<_>>.MakeGenericType(rowTy),
                 getterCode = fun [csvFile] -> <@@ (%%csvFile:CsvFile).Data @@>)
         ty.AddMember prop
 
@@ -887,18 +878,16 @@ Note the following points about the implementation:
 
 This section explained how to create a type provider for a local data source with a simple schema that's contained in the data source itself.
 
-
 ## Going Further
 
 The following sections include suggestions for further study.
-
 
 ### A Look at the Compiled Code for Erased Types
 
 To give you some idea of how the use of the type provider corresponds to the code that's emitted, look at the following function by using the `HelloWorldTypeProvider` that's used earlier in this topic.
 
 ```fsharp
-let function1 () = 
+let function1 () =
     let obj1 = Samples.HelloWorldTypeProvider.Type1("some data")
     obj1.InstanceProperty
 ```
@@ -933,8 +922,8 @@ IL_0017:  ret
 
 As the example shows, all mentions of the type `Type1` and the `InstanceProperty` property have been erased, leaving only operations on the runtime types involved.
 
-
 ### Design and Naming Conventions for Type Providers
+
 Observe the following conventions when authoring type providers.
 
 **Providers for Connectivity Protocols** In general, names of most provider DLLs for data and service connectivity protocols, such as OData or SQL connections, should end in `TypeProvider` or `TypeProviders`. For example, use a DLL name that resembles the following string:
@@ -953,14 +942,14 @@ Ensure that your provided types are members of the corresponding namespace, and 
 **Utility Providers for General Coding**.  For a utility type provider such as that for regular expressions, the type provider may be part of a base library, as the following example shows:
 
 ```fsharp
-  #r "Fabrikam.Core.Text.Utilities.dll"
+#r "Fabrikam.Core.Text.Utilities.dll"
 ```
 
 In this case, the provided type would appear at an appropriate point according to normal .NET design conventions:
 
 ```fsharp
   open Fabrikam.Core.Text.RegexTyped
-  
+
   let regex = new RegexTyped<"a+b+a+b+">()
 ```
 
@@ -968,19 +957,18 @@ In this case, the provided type would appear at an appropriate point according t
 
 ```fsharp
 #r "Fabrikam.Data.Freebase.dll"
-  
+
 let data = Fabrikam.Data.Freebase.Astronomy.Asteroids
 ```
 
 For more information, see the `GetConnection` design convention that's described later in this topic.
 
-
 ### Design Patterns for Type Providers
 
 The following sections describe design patterns you can use when authoring type providers.
 
-
 #### The GetConnection Design Pattern
+
 Most type providers should be written to use the `GetConnection` pattern that's used by the type providers in FSharp.Data.TypeProviders.dll, as the following example shows:
 
 ```fsharp
@@ -1084,7 +1072,7 @@ All uses of all members from provided types may throw exceptions. In all cases, 
 So far, this document has explained how to provide erased types. You can also use the type provider mechanism in F# to provide generated types, which are added as real .NET type definitions into the users' program. You must refer to generated provided types by using a type definition.
 
 ```fsharp
-open Microsoft.FSharp.TypeProviders 
+open Microsoft.FSharp.TypeProviders
 
 type Service = ODataService<"http://services.odata.org/Northwind/Northwind.svc/">
 ```
@@ -1117,9 +1105,9 @@ The type provider mechanism in F# has the following limitations:
 
 ## Development Tips
 
-You might find the following tips helpful during the development process.
+You might find the following tips helpful during the development process:
 
-### Run Two Instances of Visual Studio
+### Run two instances of Visual Studio
 
 You can develop the type provider in one instance and test the provider in the other because the test IDE will take a lock on the .dll file that prevents the type provider from being rebuilt. Thus, you must close the second instance of Visual Studio while the provider is built in the first instance, and then you must reopen the second instance after the provider is built.
 
@@ -1141,10 +1129,7 @@ You can often debug type providers most easily by using fsc.exe on a test script
 
   You can use print-to-stdout logging.
 
+## See also
 
-## See Also
-
-* [Type Providers](index.md)
-
-* [The Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)
-
+- [Type Providers](index.md)
+- [The Type Provider SDK](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

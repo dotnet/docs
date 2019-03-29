@@ -1,5 +1,5 @@
 ---
-title: "&lt;authenticationModules&gt; Element (Network Settings)"
+title: "<authenticationModules> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#authenticationModules"
@@ -8,11 +8,8 @@ helpviewer_keywords:
   - "authenticationModules element"
   - "<authenticationModules> element"
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
-# &lt;authenticationModules&gt; Element (Network Settings)
+# \<authenticationModules> Element (Network Settings)
 Specifies modules used to authenticate network requests.  
   
  \<configuration>  
@@ -66,7 +63,7 @@ Specifies modules used to authenticate network requests.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.IAuthenticationModule>  
- <xref:System.Net.AuthenticationManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

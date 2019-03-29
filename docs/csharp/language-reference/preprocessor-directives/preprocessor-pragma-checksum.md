@@ -1,5 +1,7 @@
 ---
-title: "#pragma checksum (C# Reference)"
+title: "#pragma checksum - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "#pragma checksum"
@@ -16,7 +18,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
 #pragma checksum "filename" "{guid}" "checksum bytes"  
 ```  
   
-#### Parameters  
+## Parameters  
  `"filename"`  
  The name of the file that requires monitoring for changes or updates.  
   
@@ -47,8 +49,8 @@ class TestClass
 }  
 ```  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

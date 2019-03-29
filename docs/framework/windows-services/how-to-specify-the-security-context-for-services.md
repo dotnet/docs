@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "ServiceInstaller class, security context"
 ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Specify the Security Context for Services
 By default, services run in a different security context than that of the logged-in user. Services run in the context of the default system account, called `LocalSystem`, which gives them different access privileges to system resources than the user. You can change this behavior to specify a different user account under which your service should run.  
@@ -39,7 +38,7 @@ By default, services run in a different security context than that of the logged
   
 3.  In the **Properties** window, set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> to the appropriate value.  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+## See also
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)

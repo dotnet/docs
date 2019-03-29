@@ -1,7 +1,7 @@
 ---
-title: Computation Expressions (F#)
+title: Computation Expressions
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-ms.date: 07/27/2018
+ms.date: 03/15/2019
 ---
 # Computation Expressions
 
@@ -82,7 +82,7 @@ The `do!` keyword is for calling a computation expression that returns a `unit`-
 ```fsharp
 let doThingsAsync data url =
     async {
-        do! sumbitData data url
+        do! submitData data url
         ...
     }
 ```
@@ -212,6 +212,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`Yield`|`'T -> M<'T>`|Called for `yield` expressions in computation expressions.|
 |`YieldFrom`|`M<'T> -> M<'T>`|Called for `yield!` expressions in computation expressions.|
 |`Zero`|`unit -> M<'T>`|Called for empty `else` branches of `if...then` expressions in computation expressions.|
+|`Quote`|`Quotations.Expr<'T> -> Quotations.Expr<'T>`|Indicates that the computation expression is passed to the `Run` member as a quotation. It translates all instances of a computation into a quotation.|
 
 Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for asynchronous workflows and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next. The compiler, when it parses a computation expression, converts the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression.
 
@@ -222,8 +223,6 @@ builder.Run(builder.Delay(fun () -> {| cexpr |}))
 ```
 
 In the above code, the calls to `Run` and `Delay` are omitted if they are not defined in the computation expression builder class. The body of the computation expression, here denoted as `{| cexpr |}`, is translated into calls involving the methods of the builder class by the translations described in the following table. The computation expression `{| cexpr |}` is defined recursively according to these translations where `expr` is an F# expression and `cexpr` is a computation expression.
-
-
 
 |Expression|Translation|
 |----------|-----------|
@@ -241,12 +240,13 @@ In the above code, the calls to `Run` and `Delay` are omitted if they are not de
 |<code>{&#124; match expr with &#124; pattern_i -> cexpr_i &#124;}</code>|<code>match expr with &#124; pattern_i -> {&#124; cexpr_i &#124;}</code>|
 |<code>{&#124; for pattern in expr do cexpr &#124;}</code>|<code>builder.For(enumeration, (fun pattern -> {&#124; cexpr &#124;}))</code>|
 |<code>{&#124; for identifier = expr1 to expr2 do cexpr &#124;}</code>|<code>builder.For(enumeration, (fun identifier -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; while expr do cexpr &#124;}</code>|<code>builder.While(fun () -> expr), builder.Delay({&#124;cexpr &#124;})</code>|
+|<code>{&#124; while expr do cexpr &#124;}</code>|<code>builder.While(fun () -> expr, builder.Delay({&#124;cexpr &#124;}))</code>|
 |<code>{&#124; try cexpr with &#124; pattern_i -> expr_i &#124;}</code>|<code>builder.TryWith(builder.Delay({&#124; cexpr &#124;}), (fun value -> match value with &#124; pattern_i -> expr_i &#124; exn -> reraise exn)))</code>|
 |<code>{&#124; try cexpr finally expr &#124;}</code>|<code>builder.TryFinally(builder.Delay( {&#124; cexpr &#124;}), (fun () -> expr))</code>|
 |<code>{&#124; cexpr1; cexpr2 &#124;}</code>|<code>builder.Combine({&#124;cexpr1 &#124;}, {&#124; cexpr2 &#124;})</code>|
 |<code>{&#124; other-expr; cexpr &#124;}</code>|<code>expr; {&#124; cexpr &#124;}</code>|
 |<code>{&#124; other-expr &#124;}</code>|`expr; builder.Zero()`|
+
 In the previous table, `other-expr` describes an expression that is not otherwise listed in the table. A builder class does not need to implement all of the methods and support all of the translations listed in the previous table. Those constructs that are not implemented are not available in computation expressions of that type. For example, if you do not want to support the `use` keyword in your computation expressions, you can omit the definition of `Use` in your builder class.
 
 The following code example shows a computation expression that encapsulates a computation as a series of steps that can be evaluated one step at a time. A discriminated union type, `OkOrException`, encodes the error state of the expression as evaluated so far. This code demonstrates several typical patterns that you can use in your computation expressions, such as boilerplate implementations of some of the builder methods.
@@ -262,7 +262,7 @@ module Eventually =
     // computation.
     let rec bind func expr =
         match expr with
-        | Done value -> NotYetDone (fun () -> func value)
+        | Done value -> func value
         | NotYetDone work -> NotYetDone (fun () -> bind func (work()))
 
     // Return the final value wrapped in the Eventually type.
@@ -355,7 +355,7 @@ let comp = eventually {
         printfn " x = %d" x
     return 3 + 4 }
 
-// Try the remaining lines in F# interactive to see how this 
+// Try the remaining lines in F# interactive to see how this
 // computation expression works in practice.
 let step x = Eventually.step x
 
@@ -368,21 +368,18 @@ comp |> step |> step
 
 // prints "x = 1"
 // prints "x = 2"
-// returns "NotYetDone <closure>"
-comp |> step |> step |> step |> step |> step |> step
-
-// prints "x = 1"
-// prints "x = 2"
 // returns "Done 7"
-comp |> step |> step |> step |> step |> step |> step |> step |> step
+comp |> step |> step |> step |> step 
 ```
 
 A computation expression has an underlying type, which the expression returns. The underlying type may represent a computed result or a delayed computation that can be performed, or it may provide a way to iterate through some type of collection. In the previous example, the underlying type was **Eventually**. For a sequence expression, the underlying type is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. For a query expression, the underlying type is <xref:System.Linq.IQueryable?displayProperty=nameWithType>. For an asynchronous workflow, the underlying type is [`Async`](https://msdn.microsoft.com/library/03eb4d12-a01a-4565-a077-5e83f17cf6f7). The `Async` object represents the work to be performed to compute the result. For example, you call [`Async.RunSynchronously`](https://msdn.microsoft.com/library/0a6663a9-50f2-4d38-8bf3-cefd1a51fd6b) to execute a computation and return the result.
 
 ## Custom Operations
+
 You can define a custom operation on a computation expression and use a custom operation as an operator in a computation expression. For example, you can include a query operator in a query expression. When you define a custom operation, you must define the Yield and For methods in the computation expression. To define a custom operation, put it in a builder class for the computation expression, and then apply the [`CustomOperationAttribute`](https://msdn.microsoft.com/library/199f3927-79df-484b-ba66-85f58cc49b19). This attribute takes a string as an argument, which is the name to be used in a custom operation. This name comes into scope at the start of the opening curly brace of the computation expression. Therefore, you shouldn’t use identifiers that have the same name as a custom operation in this block. For example, avoid the use of identifiers such as `all` or `last` in query expressions.
 
 ### Extending existing Builders with new Custom Operations
+
 If you already have a builder class, its custom operations can be extended from outside of this builder class. Extensions must be declared in modules. Namespaces cannot contain extension members except in the same file and the same namespace declaration group where the type is defined.
 
 The following example shows the extension of the existing `Microsoft.FSharp.Linq.QueryBuilder` class.
@@ -395,11 +392,9 @@ type Microsoft.FSharp.Linq.QueryBuilder with
         Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[Asynchronous Workflows](asynchronous-workflows.md)
-
-[Sequences](https://msdn.microsoft.com/library/6b773b6b-9c9a-4af8-bd9e-d96585c166db)
-
-[Query Expressions](query-expressions.md)
+- [F# Language Reference](index.md)
+- [Asynchronous Workflows](asynchronous-workflows.md)
+- [Sequences](https://msdn.microsoft.com/library/6b773b6b-9c9a-4af8-bd9e-d96585c166db)
+- [Query Expressions](query-expressions.md)

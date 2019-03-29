@@ -30,7 +30,7 @@ STDAPI (VOID) _CorImageUnloading(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ImageBase`  
  [in] A pointer to the starting location of the image to unload.  
   
@@ -43,5 +43,5 @@ STDAPI (VOID) _CorImageUnloading(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

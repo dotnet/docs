@@ -1,13 +1,17 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-ms.date: 02/28/2018
+ms.date: 11/06/2018
 ---
-# Tour of F# #
+# Tour of F\#
 
-The best way to learn about F# is to read and write F# code.  This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
+The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
 
 There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
+
+## Executing the code online
+
+If you don't have F# installed on your machine, you can execute all of the samples online with the [Fable REPL](https://fable.io/repl/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
 
 ## Functions and Modules
 
@@ -75,8 +79,8 @@ Lists, Arrays, and Sequences are three primary collection types in the F# core l
 
 Processing collections or sequences of elements is typically done with [recursion](language-reference/functions/index.md#recursive-functions) in F#.  Although F# has support for loops and imperative programming, recursion is preferred because it is easier to guarantee correctness.
 
->[!NOTE]
-The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
+> [!NOTE]
+> The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
 
 [!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L461-L500)]
 
@@ -126,10 +130,6 @@ Failure to follow the above will result in a compilation error.
 [Pattern Matching](language-reference/pattern-matching.md) is the F# language feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
 
 [!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L705-L742)]
-
-You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](language-reference/functions/index.md#partial-application-of-arguments):
-
-[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L744-L762)]
 
 Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentally bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.  It is best used when you don't care about certain pieces of a decomposed type when pattern matching, or the final clause when you have enumerated all meaningful cases in a pattern matching expression.
 
@@ -187,6 +187,6 @@ Classes are great for a huge number of reasons, such as when you need to represe
 
 Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](tutorials/getting-started/index.md) to learn how to set up your development environment and write some code.
 
-The next steps for learning more can be whatever you like, but we recommend [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md)--> to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
+The next steps for learning more can be whatever you like, but we recommend [Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md) to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
 
 Also, check out the [F# Language Reference](language-reference/index.md) to see a comprehensive collection of conceptual content on F#.

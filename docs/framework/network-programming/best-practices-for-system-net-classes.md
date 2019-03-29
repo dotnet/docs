@@ -10,9 +10,6 @@ helpviewer_keywords:
   - "best practices, data requests"
   - "receiving data, best practices"
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Best Practices for System.Net Classes
 The following recommendations will help you use the classes contained in <xref:System.Net> to their best advantage:  
@@ -29,5 +26,5 @@ The following recommendations will help you use the classes contained in <xref:S
   
 -   When accessing sites that require credentials, use the <xref:System.Net.CredentialCache> class to create a cache of credentials rather than supplying them with every request. The **CredentialCache** class searches the cache to find the appropriate credential to present with a request, relieving you of the responsibility of creating and presenting credentials based on the URL.  
   
-## See Also  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+## See also
+- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "/filealign compiler option [Visual Basic]"
   - "filealign compiler option [Visual Basic]"
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
-author: rpetrusha
-ms.author: ronpet
 ---
 # -filealign
 Specifies where to align the sections of the output file.  
@@ -35,5 +33,5 @@ Specifies where to align the sections of the output file.
 > [!NOTE]
 >  The `-filealign` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)

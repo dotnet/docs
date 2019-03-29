@@ -42,7 +42,7 @@ This section shows you how to define and implement Windows Communication Foundat
   
 -   Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
   
- To convey this kind of information to applications on other platforms (including non-Microsoft platforms), XML service contracts are publicly expressed in standard XML formats, such as [Web Services Description Language (WSDL)](http://go.microsoft.com/fwlink/?LinkId=87004) and [XML Schema (XSD)](http://go.microsoft.com/fwlink/?LinkId=87005), among others. Developers for many platforms can use this public contract information to create applications that can communicate with the service, both because they understand the language of the specification and because those languages are designed to enable interoperation by describing the public forms, formats, and protocols that the service supports. For more information about how WCF handles this kind of information, see [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md).  
+ To convey this kind of information to applications on other platforms (including non-Microsoft platforms), XML service contracts are publicly expressed in standard XML formats, such as [Web Services Description Language (WSDL)](https://go.microsoft.com/fwlink/?LinkId=87004) and [XML Schema (XSD)](https://go.microsoft.com/fwlink/?LinkId=87005), among others. Developers for many platforms can use this public contract information to create applications that can communicate with the service, both because they understand the language of the specification and because those languages are designed to enable interoperation by describing the public forms, formats, and protocols that the service supports. For more information about how WCF handles this kind of information, see [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md).  
   
  Contracts can be expressed many ways, however, and while WSDL and XSD are excellent languages to describe services in an accessible way, they are difficult languages to use directly—in any case, they are merely descriptions of a service, not service contract implementations. Therefore, WCF applications use managed attributes, interfaces, and classes both to define the structure of and to implement a service.  
   
@@ -59,7 +59,7 @@ This section shows you how to define and implement Windows Communication Foundat
   
  This additive requirement process is important to keep in mind while designing, implementing, configuring, and hosting your Windows Communication Foundation (WCF) service application. For example, the contract can specify that it needs to support a session. If so, then you must configure the binding to support that contractual requirement, or the service implementation will not work. Or if your service requires Integrated Windows authentication and is hosted in Internet Information Services (IIS), the Web application in which the service resides must have Integrated Windows authentication turned on and anonymous support turned off. For more information about the features and impact of the different service host application types, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
   
-## See Also  
- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)  
- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)  
- [Implementing Service Contracts](../../../../docs/framework/wcf/implementing-service-contracts.md)
+## See also
+- [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
+- [Implementing Service Contracts](../../../../docs/framework/wcf/implementing-service-contracts.md)

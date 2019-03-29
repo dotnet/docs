@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; element for &lt;appSettings&gt;"
+title: "<remove> element for <appSettings>"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/remove"
@@ -55,4 +55,4 @@ The following example shows how to remove a custom configuration setting for `Ap
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

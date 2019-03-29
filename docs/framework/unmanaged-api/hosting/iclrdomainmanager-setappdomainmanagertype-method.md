@@ -29,7 +29,7 @@ HRESULT SetAppDomainManagerType(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAppDomainManagerAssembly`  
  [in] The display name of the assembly that contains the application domain manager type; for example: "AdMgrExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6856bccf150f00b3".  
   
@@ -64,7 +64,7 @@ HRESULT SetAppDomainManagerType(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)  
- [EInitializeNewDomainFlags Enumeration](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md)
+## See also
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)
+- [EInitializeNewDomainFlags Enumeration](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md)

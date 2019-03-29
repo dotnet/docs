@@ -18,27 +18,22 @@ This topic introduces the purpose of type conversion from string as a general XA
  A XAML processor needs two pieces of information in order to process an attribute value. The first piece of information is the value type of the property that is being set. Any string that defines an attribute value and that is processed in XAML must ultimately be converted or resolved to a value of that type. If the value is a primitive that is understood by the XAML parser (such as a numeric value), a direct conversion of the string is attempted. If the value is an enumeration, the string is used to check for a name match to a named constant in that enumeration. If the value is neither a parser-understood primitive nor an enumeration, then the type in question must be able to provide an instance of the type, or a value, based on a converted string. This is done by indicating a type converter class. The type converter is effectively a helper class for providing values of another class, both for the XAML scenario and also potentially for code calls in .NET code.  
   
 ### Using Existing Type Conversion Behavior in XAML  
- Depending on your familiarity with the underlying XAML concepts, you may already be using type conversion behavior in basic application XAML without realizing it. For instance, WPF defines literally hundreds of properties that take a value of type <xref:System.Windows.Point>. A <xref:System.Windows.Point> is a value that describes a coordinate in a two-dimensional coordinate space, and it really just has two important properties: <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A>. When you specify a point in XAML, you specify it as a string with a delimiter (typically a comma) between the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values you provide. For example: `<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">`.  
+ Depending on your familiarity with the underlying XAML concepts, you may already be using type conversion behavior in basic application XAML without realizing it. For instance, WPF defines literally hundreds of properties that take a value of type <xref:System.Windows.Point>. A <xref:System.Windows.Point> is a value that describes a coordinate in a two-dimensional coordinate space, and it really just has two important properties: <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A>. When you specify a point in XAML, you specify it as a string with a delimiter (typically a comma) between the <xref:System.Windows.Point.X%2A> and <xref:System.Windows.Point.Y%2A> values you provide. For example: `<LinearGradientBrush StartPoint="0,0" EndPoint="1,1"/>`.  
   
  Even this simple type of <xref:System.Windows.Point> and its simple usage in XAML involve a type converter. In this case that is the class <xref:System.Windows.PointConverter>.  
   
  The type converter for <xref:System.Windows.Point> defined at the class level streamlines the markup usages of all properties that take <xref:System.Windows.Point>. Without a type converter here, you would need the following much more verbose markup for the same example shown previously:  
-  
- `<LinearGradientBrush>`  
-  
- `<LinearGradientBrush.StartPoint>`  
-  
- `<Point X="0" Y="0"/>`  
-  
- `</LinearGradientBrush.StartPoint>`  
-  
- `<LinearGradientBrush.EndPoint>`  
-  
- `<Point X="1" Y="1"/>`  
-  
- `</LinearGradientBrush.EndPoint>`  
-  
- `<LinearGradientBrush>`  
+
+```xaml
+<LinearGradientBrush>
+  <LinearGradientBrush.StartPoint>
+    <Point X="0" Y="0"/>
+  </LinearGradientBrush.StartPoint>
+  <LinearGradientBrush.EndPoint>
+    <Point X="1" Y="1"/>
+  </LinearGradientBrush.EndPoint>
+</LinearGradientBrush>
+ ```
   
  Whether to use the type conversion string or a more verbose equivalent syntax is generally a coding style choice. Your XAML tooling workflow might also influence how values are set. Some XAML tools tend to emit the most verbose form of the markup because it is easier to round-trip to designer views or its own serialization mechanism.  
   
@@ -47,7 +42,7 @@ This topic introduces the purpose of type conversion from string as a general XA
 ### Type Converters and Markup Extensions  
  Markup extensions and type converters fill orthogonal roles in terms of XAML processor behavior and the scenarios that they are applied to. Although context is available for markup extension usages, type conversion behavior of properties where a markup extension provides a value is generally is not checked in the markup extension implementations. In other words, even if a markup extension returns a text string as its `ProvideValue` output, type conversion behavior on that string as applied to a specific property or property value type is not invoked, Generally, the purpose of a markup extension is to process a string and return an object without any type converter involved.  
   
- One common situation where a markup extension is necessary rather than a type converter is to make a reference to an object that already exists. At best, a stateless type converter could only generate a new instance, which might not be desirable. For more information on markup extensions, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+ One common situation where a markup extension is necessary rather than a type converter is to make a reference to an object that already exists. At best, a stateless type converter could only generate a new instance, which might not be desirable. For more information on markup extensions, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   
 ### Native Type Converters  
  In the WPF and .NET Framework implementation of the XAML parser, there are certain types that have native type conversion handling, yet are not types that might conventionally be thought of as primitives. An example of such a type is <xref:System.DateTime>. The reason for this is based on how the .NET Framework architecture works: the type <xref:System.DateTime> is defined in mscorlib, the most basic library in .NET. <xref:System.DateTime> is not permitted to be attributed with an attribute that comes from another assembly that introduces a dependency (<xref:System.ComponentModel.TypeConverterAttribute> is from System) so the usual type converter discovery mechanism by attributing cannot be supported. Instead, the XAML parser has a list of types that need such native processing and processes these similarly to how the true primitives are processed. (In the case of <xref:System.DateTime> this involves a call to <xref:System.DateTime.Parse%2A>.)  
@@ -75,7 +70,7 @@ This topic introduces the purpose of type conversion from string as a general XA
  <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A> and <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> are support methods that are used when a service queries the capabilities of the <xref:System.ComponentModel.TypeConverter> implementation. You must implement these methods to return `true` for type-specific cases that the equivalent conversion methods of your converter support. For XAML purposes, this generally means the <xref:System.String> type.  
   
 ### Culture Information and Type Converters for XAML  
- Each <xref:System.ComponentModel.TypeConverter> implementation can have its own interpretation of what constitutes a valid string for a conversion, and can also use or ignore the type description passed as parameters. There is an important consideration with regard to culture and XAML type conversion. Using localizable strings as attribute values is entirely supported by XAML. But using that localizable string as type converter input with specific culture requirements is not supported, because type converters for XAML attribute values involve a necessarily fixed-language parsing behavior, using `en-US` culture. For more information on the design reasons for this restriction, you should consult the XAML language specification ([\[MS-XAML\]](http://go.microsoft.com/fwlink/?LinkId=114525)).  
+ Each <xref:System.ComponentModel.TypeConverter> implementation can have its own interpretation of what constitutes a valid string for a conversion, and can also use or ignore the type description passed as parameters. There is an important consideration with regard to culture and XAML type conversion. Using localizable strings as attribute values is entirely supported by XAML. But using that localizable string as type converter input with specific culture requirements is not supported, because type converters for XAML attribute values involve a necessarily fixed-language parsing behavior, using `en-US` culture. For more information on the design reasons for this restriction, you should consult the XAML language specification ([\[MS-XAML\]](https://go.microsoft.com/fwlink/?LinkId=114525)).  
   
  As an example where culture can be an issue, some cultures use a comma as their decimal point delimiter for numbers. This will collide with the behavior that many of the WPF XAML type converters have, which is to use a comma as a delimiter (based on historical precedents such as the common X,Y form, or comma delimited lists). Even passing a culture in the surrounding XAML (setting `Language` or `xml:lang` to the `sl-SI` culture, an example of a culture that uses a comma for decimal in this way) does not solve the issue.  
   
@@ -108,8 +103,8 @@ This topic introduces the purpose of type conversion from string as a general XA
   
  You can also provide a type converter on a per-property basis. Instead of applying a [!INCLUDE[TLA#tla_netframewkattr](../../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> to the class definition, apply it to a property definition (the main definition, not the `get`/`set` implementations within it). The type of the property must match the type that is processed by your custom type converter. With this attribute applied, when a XAMLprocessor handles values of that property, it can process input strings and return object instances. The per-property type converter technique is particularly useful if you choose to use a property type from Microsoft .NET Framework or from some other library where you cannot control the class definition and cannot apply a <xref:System.ComponentModel.TypeConverterAttribute> there.  
   
-## See Also  
- <xref:System.ComponentModel.TypeConverter>  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)
+## See also
+- <xref:System.ComponentModel.TypeConverter>
+- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
+- [XAML Syntax In Detail](xaml-syntax-in-detail.md)

@@ -1,8 +1,6 @@
 ---
 title: Select the Visual Basic language version
 description: Configure the compiler to perform syntax validation using a specific compiler version.
-author: billwagner
-ms.author: wiwagn
 ms.date: 05/24/2018
 ---
 
@@ -58,7 +56,7 @@ You can create a **Directory.build.props** file that contains the `<LangVersion>
 </Project>
 ```
 
-Now, builds in every subdirectory of the directory containing that file will use Visual Basic version 15.5 syntax. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build.md).
+Now, builds in every subdirectory of the directory containing that file will use Visual Basic version 15.5 syntax. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ## Set the langversion compiler option
 

@@ -33,7 +33,7 @@ HRESULT CreateValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the [CorElementType](../../../../docs/framework/unmanaged-api/metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.  
   
@@ -59,7 +59,7 @@ HRESULT CreateValue (
   
  **.NET Framework Versions:** 1.1, 1.0  
   
-## See Also  
-    
- [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)  
- ICorDebugValue
+## See also
+
+- [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)
+- [ICorDebugEval Interface](icordebugeval-interface.md)

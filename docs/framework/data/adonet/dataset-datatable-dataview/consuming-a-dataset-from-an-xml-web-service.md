@@ -12,7 +12,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
  The following example shows how to create an XML Web service and client that use the **DataSet** to transport relational data (including modified data) and resolve any updates back to the original data source.  
   
 > [!NOTE]
->  We recommend that you always consider security implications when creating an XML Web service. For information on securing an XML Web service, see [Securing XML Web Services Created Using ASP.NET](https://msdn.microsoft.com/library/354b2ab1-2782-4542-b32a-dc560178b90c).  
+>  We recommend that you always consider security implications when creating an XML Web service. For information on securing an XML Web service, see [Securing XML Web Services Created Using ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w67h0dw7(v=vs.100)).  
   
 ### To create an XML Web service that returns and consumes a DataSet  
   
@@ -157,7 +157,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
   
      Clients of the XML Web service require a SOAP proxy in order to consume the exposed methods. You can have Visual Studio generate this proxy for you. By setting a Web reference to an existing Web service from within Visual Studio, all the behavior described in this step occurs transparently. If you want to create the proxy class yourself, continue with this discussion. In most circumstances, however, using Visual Studio to create the proxy class for the client application is sufficient.  
   
-     A proxy can be created using the Web Services Description Language Tool. For example, if the XML Web service is exposed at the URL http://myserver/data/DataSetSample.asmx, issue a command such as the following to create a Visual Basic .NET proxy with a namespace of **WebData.DSSample** and store it in the file sample.vb.  
+     A proxy can be created using the Web Services Description Language Tool. For example, if the XML Web service is exposed at the URL `http://myserver/data/DataSetSample.asmx`, issue a command such as the following to create a Visual Basic .NET proxy with a namespace of **WebData.DSSample** and store it in the file sample.vb.  
   
     ```console
     wsdl /l:VB -out:sample.vb http://myserver/data/DataSetSample.asmx /n:WebData.DSSample  
@@ -253,12 +253,12 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     csc client.cs -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll  
     ```  
   
-## See Also  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [Populating a DataSet from a DataAdapter](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)  
- [Updating Data Sources with DataAdapters](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
- [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
- [Web Services Description Language Tool (Wsdl.exe)](https://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
+- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [Populating a DataSet from a DataAdapter](../../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)
+- [Updating Data Sources with DataAdapters](../../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
+- [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)
+- [Web Services Description Language Tool (Wsdl.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100))
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -29,7 +29,7 @@ HRESULT GetOffset(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pOffset`  
  [out] The offset from the base register.  
   
@@ -50,5 +50,5 @@ HRESULT GetOffset(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+## See also
+- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

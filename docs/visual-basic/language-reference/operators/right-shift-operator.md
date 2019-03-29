@@ -1,5 +1,5 @@
 ---
-title: "&gt;&gt; Operator (Visual Basic)"
+title: ">> Operator (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.>>"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "right shift operators [Visual Basic]"
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
 ---
-# &gt;&gt; Operator (Visual Basic)
+# >> Operator (Visual Basic)
 Performs an arithmetic right shift on a bit pattern.  
   
 ## Syntax  
@@ -54,7 +54,7 @@ result = pattern >> amount
 ## Example  
  The following example uses the `>>` operator to perform arithmetic right shifts on integral values. The result always has the same data type as that of the expression being shifted.  
   
- [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#14)]  
   
  The results of the preceding example are as follows:  
   
@@ -72,7 +72,7 @@ result = pattern >> amount
   
  The following example shows arithmetic shifts on a negative value.  
   
- [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#55)]  
   
  The results of the preceding example are as follows:  
   
@@ -80,10 +80,10 @@ result = pattern >> amount
   
 -   `negresult2` is -1 (the sign bit is propagated).  
   
-## See Also  
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+## See also
+- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

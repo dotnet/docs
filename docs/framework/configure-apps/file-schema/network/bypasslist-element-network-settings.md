@@ -1,5 +1,5 @@
 ---
-title: "&lt;bypasslist&gt; Element (Network Settings)"
+title: "<bypasslist> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#bypasslist"
@@ -8,11 +8,8 @@ helpviewer_keywords:
   - "bypasslist element"
   - "<bypasslist> element"
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
-# &lt;bypasslist&gt; Element (Network Settings)
+# \<bypasslist> Element (Network Settings)
 Provides a set of regular expressions that describe addresses that do not use a proxy.  
   
  \<configuration>  
@@ -73,6 +70,6 @@ Provides a set of regular expressions that describe addresses that do not use a 
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -1,5 +1,6 @@
 ---
-title: "Common Type System"
+title: Common Type System
+description: Learn about the type system in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -17,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Common Type System
 The common type system defines how types are declared, used, and managed in the common language runtime, and is also an important part of the runtime's support for cross-language integration. The common type system performs the following functions:  
@@ -314,7 +316,8 @@ The common type system defines how types are declared, used, and managed in the 
   
 -   A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `final` and the new method is at least as accessible as the virtual method.  
   
-## See Also  
- [.NET API Browser](/dotnet/api)  
- [Common Language Runtime](../../../docs/standard/clr.md)  
- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)
+## See also
+
+- [.NET API Browser](/dotnet/api)
+- [Common Language Runtime](../../../docs/standard/clr.md)
+- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

@@ -1,5 +1,7 @@
 ---
-title: "interface (C# Reference)"
+title: "interface - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "interface_CSharpKeyword"
@@ -47,13 +49,13 @@ The following example demonstrates interface implementation. In this example, th
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [Reference Types](reference-types.md)  
-- [Interfaces](../../programming-guide/interfaces/index.md)  
-- [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)  
-- [Using Indexers](../../programming-guide/indexers/using-indexers.md)  
-- [class](class.md)  
-- [struct](struct.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Reference Types](reference-types.md)
+- [Interfaces](../../programming-guide/interfaces/index.md)
+- [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)
+- [Using Indexers](../../programming-guide/indexers/using-indexers.md)
+- [class](class.md)
+- [struct](struct.md)
 - [Interfaces](../../programming-guide/interfaces/index.md)

@@ -3,7 +3,6 @@ title: "Claims Based Authorization Using WIF"
 ms.date: "03/30/2017"
 ms.assetid: e24000a3-8fd8-4c0e-bdf0-39882cc0f6d8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Claims Based Authorization Using WIF
 In a relying party application, authorization determines what resources an authenticated identity is allowed to access and what operations it is allowed to perform on those resources. Improper or weak authorization leads to information disclosure and data tampering. This topic outlines the available approaches to implementing authorization for claims-aware ASP.NET web applications and services using Windows Identity Foundation (WIF) and a Security Token Service (STS), for example, the Windows Azure Access Control Service (ACS).  
@@ -31,13 +30,13 @@ In a relying party application, authorization determines what resources an authe
 ### Expressing Roles as Claims  
  When the **IsInRole()** method is called, there is a check made to see if the current user has that role. In claims-aware applications, the role is expressed by a role claim type that should be available in the token. The role claim type is expressed using the following URI:  
   
- http://schemas.microsoft.com/ws/2008/06/identity/claims/role  
+ `http://schemas.microsoft.com/ws/2008/06/identity/claims/role`
   
  There are several ways to enrich a token with a role claim type:  
   
 -   **During token issuance**. When a user is authenticated the role claim can be issued by the identity provider STS or by a federation provider such as the Windows Azure Access Control Service (ACS).  
   
--   **Transforming arbitrary claims into of claims role type using ClaimsAuthenticationManager**. The ClaimsAuthenticationManager is a component that ships as part of WIF. It allows requests to be intercepted when they launch an application, inspecting tokens and transforming them by adding, changing, or removing claims. For more information about how to use ClaimsAuthenticationManager for transforming claims, see [How To: Implement Role Based Access Control (RBAC) in a Claims Aware ASP.NET Application Using WIF and ACS](http://go.microsoft.com/fwlink/?LinkID=247445) (http://go.microsoft.com/fwlink/?LinkID=247444).  
+-   **Transforming arbitrary claims into of claims role type using ClaimsAuthenticationManager**. The ClaimsAuthenticationManager is a component that ships as part of WIF. It allows requests to be intercepted when they launch an application, inspecting tokens and transforming them by adding, changing, or removing claims. For more information about how to use ClaimsAuthenticationManager for transforming claims, see [How To: Implement Role Based Access Control (RBAC) in a Claims Aware ASP.NET Application Using WIF and ACS](https://go.microsoft.com/fwlink/?LinkID=247445).  
   
 -   **Mapping arbitrary claims to a role type using the samlSecurityTokenRequirement configuration section**—A declarative approach where the claims transformation is done using only the configuration and no coding is required.  
   
@@ -55,4 +54,4 @@ In a relying party application, authorization determines what resources an authe
   
 5.  Access is granted if the outcome is true and denied if it is false. For example, the rule might be that the user is of age 21 or above and lives in Washington State.  
   
- <xref:System.Security.Claims.ClaimsAuthorizationManager> is useful for externalizing the decision logic for  claims-based authorization in your applications. ClaimsAuthorizationManager is a WIF component that ships as part of .NET 4.5. ClaimsAuthorizationManager allows you to intercept incoming requests and implement any logic of your choice to make authorization decisions based on the incoming claims. This becomes important when authorization logic needs to be changed. In that case, using ClaimsAuthorizationManager will not affect the application’s integrity, thereby reducing the likelihood of an application error as a result of the change. To learn more about how to use ClaimsAuthorizationManager to implement claims-based access control, see [How To: Implement Claims Authorization in a Claims Aware ASP.NET Application Using WIF and ACS](http://go.microsoft.com/fwlink/?LinkID=247446).
+ <xref:System.Security.Claims.ClaimsAuthorizationManager> is useful for externalizing the decision logic for  claims-based authorization in your applications. ClaimsAuthorizationManager is a WIF component that ships as part of .NET 4.5. ClaimsAuthorizationManager allows you to intercept incoming requests and implement any logic of your choice to make authorization decisions based on the incoming claims. This becomes important when authorization logic needs to be changed. In that case, using ClaimsAuthorizationManager will not affect the application’s integrity, thereby reducing the likelihood of an application error as a result of the change. To learn more about how to use ClaimsAuthorizationManager to implement claims-based access control, see [How To: Implement Claims Authorization in a Claims Aware ASP.NET Application Using WIF and ACS](https://go.microsoft.com/fwlink/?LinkID=247446).

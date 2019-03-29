@@ -17,7 +17,7 @@ Use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> method t
   
 -   Use the `CopyDirectory` method, specifying source and destination directory names. The following example copies the directory named `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
   
-     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-copy-a-directory-to-another-directory_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#16)]  
   
      This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **File system - Processing Drives, Folders, and Files**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
@@ -54,7 +54,7 @@ Use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> method t
   
 -   A destination file exists but cannot be accessed (<xref:System.UnauthorizedAccessException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>  
- [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)  
- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>
+- [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)
+- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)

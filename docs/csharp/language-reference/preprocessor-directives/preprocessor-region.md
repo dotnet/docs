@@ -1,5 +1,7 @@
 ---
-title: "#region (C# Reference)"
+title: "#region - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "#region"
@@ -26,8 +28,8 @@ public class MyClass
   
  A `#region` block cannot overlap with a [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) block. However, a `#region` block can be nested in a `#if` block, and a `#if` block can be nested in a `#region` block.  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

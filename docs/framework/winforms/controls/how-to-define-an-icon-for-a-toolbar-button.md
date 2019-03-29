@@ -18,7 +18,7 @@ ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
 > [!NOTE]
 >  The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
- <xref:System.Windows.Forms.ToolBar> buttons are able to display icons within them for easy identification by users. This is achieved through adding images to the [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md) component and then associating the <xref:System.Windows.Forms.ImageList> component with the <xref:System.Windows.Forms.ToolBar> control.  
+ <xref:System.Windows.Forms.ToolBar> buttons are able to display icons within them for easy identification by users. This is achieved through adding images to the [ImageList Component](imagelist-component-windows-forms.md) component and then associating the <xref:System.Windows.Forms.ImageList> component with the <xref:System.Windows.Forms.ToolBar> control.  
   
 ### To set an icon for a toolbar button programmatically  
   
@@ -109,8 +109,8 @@ ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
        }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolBar>  
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ToolBar>
+- [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)
+- [ToolBar Control](toolbar-control-windows-forms.md)
+- [ImageList Component](imagelist-component-windows-forms.md)

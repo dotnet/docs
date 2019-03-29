@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for bypasslist (Network Settings)"
+title: "<add> Element for bypasslist (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/add"
@@ -10,11 +10,8 @@ helpviewer_keywords:
   - "<add> element, bypasslist"
   - "add element, bypasslist"
 ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
-# &lt;add&gt; Element for bypasslist (Network Settings)
+# \<add> Element for bypasslist (Network Settings)
 Adds an IP address or DNS name to the proxy bypass list.  
   
  \<configuration>  
@@ -77,6 +74,6 @@ Adds an IP address or DNS name to the proxy bypass list.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

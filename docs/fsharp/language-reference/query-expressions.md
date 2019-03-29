@@ -1,12 +1,12 @@
 ---
-title: Query Expressions (F#)
+title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
 ms.date: 05/16/2016
 ---
 # Query Expressions
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Query expressions enable you to query a data source and put the data in a desired form. Query expressions provide support for LINQ in F#.
 
@@ -17,6 +17,7 @@ query { expression }
 ```
 
 ## Remarks
+
 Query expressions are a type of computation expression similar to sequence expressions. Just as you specify a sequence by providing code in a sequence expression, you specify a set of data by providing code in a query expression. In a sequence expression, the `yield` keyword identifies data to be returned as part of the resulting sequence. In query expressions, the `select` keyword performs the same function. In addition to the `select` keyword, F# also supports a number of query operators that are much like the parts of a SQL SELECT statement. Here is an example of a simple query expression, along with code that connects to the Northwind OData source.
 
 ```fsharp
@@ -43,8 +44,8 @@ In the previous code example, the query expression is in curly braces. The meani
 
 Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions](computation-expressions.md) and [Linq.QueryBuilder Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d).
 
-
 ## Query Operators
+
 Query operators enable you to specify the details of the query, such as to put criteria on records to be returned, or specify the sorting order of results. The query source must support the query operator. If you attempt to use an unsupported query operator, `System.NotSupportedException` will be thrown.
 
 Only expressions that can be translated to SQL are allowed in query expressions. For example, no function calls are allowed in the expressions when you use the `where` query operator.
@@ -93,7 +94,6 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </td>
 </tr>
 
-
 <tr>
   <td><code>count</code></td><td>Returns the number of selected elements.<br/><br/>
 
@@ -104,7 +104,8 @@ let data = [ 1; 5; 7; 11; 18; 21]
 }
 </code></pre>
 
-</td></tr><tr>
+</td></tr>
+<tr>
 <td><code>last</code></td><td>Selects the last element of those selected so far.<br/><br/>
 
 <pre><code class="lang-fsharp">query {
@@ -113,7 +114,8 @@ let data = [ 1; 5; 7; 11; 18; 21]
 }
 </code></pre>
 
-</td></tr><tr>
+</td></tr>
+<tr>
 <td><code>lastOrDefault</code></td><td>Selects the last element of those selected so far, or a default value if no element is found.<br/><br/>
 
 <pre><code class="lang-fsharp">query {
@@ -503,7 +505,7 @@ The following table shows some common Transact-SQL queries and their equivalents
     <th>F# Query Expression (case sensitive)</th>
   </tr>
 <tr><td>
-Select all fields from table.</br>
+Select all fields from table.<br>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 </code></pre>
@@ -534,7 +536,7 @@ query {
 
 </td></tr><tr>
 <td><code>EXISTS</code>
-</br>
+<br />
 
 <pre><code class="lang-sql">SELECT * FROM Student
 WHERE EXISTS
@@ -1002,7 +1004,7 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>
@@ -1026,9 +1028,9 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          elif student.Age.HasValue && student.Age.Value = 0 then
-             (student.StudentID, System.Nullable<int>(1000), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(1000), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>
@@ -2420,9 +2422,8 @@ module Queries2 = begin
 end
 ```
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[Linq.QueryBuilder Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
-
-[Computation Expressions](Computation-Expressions.md)
+- [F# Language Reference](index.md)
+- [Linq.QueryBuilder Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
+- [Computation Expressions](Computation-Expressions.md)

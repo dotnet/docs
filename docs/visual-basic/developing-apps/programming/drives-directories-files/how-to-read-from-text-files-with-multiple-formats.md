@@ -30,24 +30,24 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
   
 2.  Define the expected format and the format used when an error is reported. The last entry in each array is -1, therefore the last field is assumed to be of variable width. This occurs when the last entry in the array is less than or equal to 0.  
   
-     [!code-vb[VbFileIORead#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files-with-multiple-formats_1.vb)]  
+     [!code-vb[VbFileIORead#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#4)]  
   
 3.  Create a new <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object, defining the width and format.  
   
-     [!code-vb[VbFileIORead#5](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files-with-multiple-formats_2.vb)]  
+     [!code-vb[VbFileIORead#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#5)]  
   
 4.  Loop through the rows, testing for format before reading.  
   
-     [!code-vb[VbFileIORead#6](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files-with-multiple-formats_3.vb)]  
+     [!code-vb[VbFileIORead#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#6)]  
   
 5.  Write errors to the console.  
   
-     [!code-vb[VbFileIORead#7](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files-with-multiple-formats_4.vb)]  
+     [!code-vb[VbFileIORead#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#7)]  
   
 ## Example  
  Following is the complete example that reads from the file `testfile.txt`.  
   
- [!code-vb[VbFileIORead#8](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files-with-multiple-formats_5.vb)]  
+ [!code-vb[VbFileIORead#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#8)]  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
@@ -62,13 +62,13 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
   
 -   The user does not have sufficient permissions to access the file (<xref:System.UnauthorizedAccessException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>  
- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>  
- [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
- [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
- [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>
+- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>
+- [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)
+- [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)
+- [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

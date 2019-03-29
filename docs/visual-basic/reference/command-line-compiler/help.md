@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "-? compiler option [Visual Basic]"
   - "? compiler option [Visual Basic]"
 ms.assetid: eb984aa5-ac98-4d0b-a0d2-24238d7bc8dc
-author: rpetrusha
-ms.author: ronpet
 ---
 # -help, -? (Visual Basic)
 Displays the compiler options.  
@@ -36,6 +34,6 @@ Displays the compiler options.
 vbc -help  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

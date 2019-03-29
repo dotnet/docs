@@ -45,5 +45,6 @@ The <xref:System.Xml.XmlDocument> has a create method for all of the node types.
 |<xref:System.Xml.XmlNode.PrependChild%2A>|Adds the node to the beginning of the list of child nodes of the given node. If the node being added is an <xref:System.Xml.XmlDocumentFragment>, the entire contents of the document fragment are moved into the child list of this node. For more information, see the <xref:System.Xml.XmlNode.PrependChild%2A> method.|  
 |<xref:System.Xml.XmlAttributeCollection.Append%2A>|Appends an <xref:System.Xml.XmlAttribute> node to the end of the attribute collection associated with an element. For more information, see the <xref:System.Xml.XmlAttributeCollection.Append%2A> method.|  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

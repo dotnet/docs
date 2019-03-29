@@ -1,5 +1,6 @@
 ---
-title: "Unsafe Code and Pointers (C# Programming Guide)"
+title: "Unsafe Code and Pointers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "security [C#], type safety"
@@ -44,5 +45,6 @@ To maintain type safety and security, C# does not support pointer arithmetic, by
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

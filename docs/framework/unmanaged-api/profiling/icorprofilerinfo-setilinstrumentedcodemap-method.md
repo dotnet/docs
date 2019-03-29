@@ -34,7 +34,7 @@ HRESULT SetILInstrumentedCodeMap(
     [in, size_is(cILMapEntries)] COR_IL_MAP rgILMapEntries[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which to set the code map.  
   
@@ -85,5 +85,5 @@ HRESULT SetILInstrumentedCodeMap(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

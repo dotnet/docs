@@ -13,7 +13,7 @@ ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
 # C# programming guide
 This section provides detailed information on key C# language features and features accessible to C# through the .NET Framework.  
   
- Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [C# Quickstarts](../quick-starts/index.md) or [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started) interactive tutorial, where no prior programming knowledge is required.  
+ Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [Introduction to C# Tutorials](../tutorials/intro-to-csharp/index.md) or [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started) interactive tutorial, where no prior programming knowledge is required.  
   
  For information about specific keywords, operators and preprocessor directives, see [C# Reference](../../csharp/language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
   
@@ -63,9 +63,9 @@ This section provides detailed information on key C# language features and featu
  [XML Documentation Comments](../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
   
 ## Platform Sections  
- [Application Domains (C# and Visual Basic)](http://msdn.microsoft.com/library/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
+ [Application Domains](../../framework/app-domains/application-domains.md)  
   
- [Assemblies and the Global Assembly Cache](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
+ [Assemblies in .NET](../../standard/assembly/index.md)  
   
  [Attributes](../../csharp/programming-guide/concepts/attributes/index.md)  
   
@@ -79,6 +79,7 @@ This section provides detailed information on key C# language features and featu
   
  [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   
-## See Also  
- [C# Reference](../../csharp/language-reference/index.md)  
- [C#](../../csharp/index.md)
+## See also
+
+- [C# Reference](../../csharp/language-reference/index.md)
+- [C#](../../csharp/index.md)

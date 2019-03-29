@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "security [WCF], creating a session"
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a Secure Session
 With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, the system-provided bindings in Windows Communication Foundation (WCF) automatically use secure sessions when message security is enabled.  
@@ -50,7 +48,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
      [!code-vb[c_CreateSecureSession#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#1)]  
   
     > [!NOTE]
-    >  Secure sessions can be turned off for the [<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) by setting the `establishSecurityContext` attribute to `false`. For the other system-provided bindings, secure sessions can only be turned off by creating a custom binding.  
+    >  Secure sessions can be turned off for the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) by setting the `establishSecurityContext` attribute to `false`. For the other system-provided bindings, secure sessions can only be turned off by creating a custom binding.  
   
 ### To specify that a service uses secure sessions by using a custom binding  
   
@@ -79,5 +77,5 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
      [!code-csharp[c_CreateSecureSession#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs/secureservice.cs#2)]
      [!code-vb[c_CreateSecureSession#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#2)]  
   
-## See Also  
- [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md)
+## See also
+- [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md)

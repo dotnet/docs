@@ -36,6 +36,6 @@ Represents a reference to the unique signature of a code object.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
- [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)
+## See also
+- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)

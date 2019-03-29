@@ -14,7 +14,7 @@ See [DefineKickoffMethod Method](../../../../docs/framework/unmanaged-api/diagno
 HRESULT GetKickoffMethod(    [out, retval] mdToken* kickoffMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -26,5 +26,5 @@ HRESULT GetKickoffMethod(    [out, retval] mdToken* kickoffMethod);
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+## See also
+- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)

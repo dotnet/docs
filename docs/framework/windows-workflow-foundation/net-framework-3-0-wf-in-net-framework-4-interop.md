@@ -18,7 +18,7 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
   
 -   The WF 3 activity must have a public default constructor.  
   
--   Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](http://go.microsoft.com/fwlink/?LinkId=178889) for details.  
+-   Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](https://go.microsoft.com/fwlink/?LinkId=178889) for details.  
   
 ## Configuring a WF 3 Activity Within an Interop Activity  
  To configure and pass data into and out of a WF 3 activity, across the interoperation boundary, the WF 3 activity’s properties and metadata properties are exposed by the <xref:System.Activities.Statements.Interop> activity. The WF 3 activity’s metadata properties (such as <xref:System.Workflow.ComponentModel.Activity.Name%2A>) are exposed through the <xref:System.Activities.Statements.Interop.ActivityMetaProperties%2A> collection. This is a collection of name-value pairs used to define the values for the WF 3 activity’s metadata properties. A metadata property is a property backed by dependency property for which the <xref:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata> flag is set.  
@@ -46,7 +46,4 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
   
 3.  WF 3 tracking records for activities within an <xref:System.Activities.Statements.Interop> activity are provided to WF 4.5 tracking participants as <xref:System.Activities.Tracking.InteropTrackingRecord> objects. <xref:System.Activities.Tracking.InteropTrackingRecord> is a derivative of <xref:System.Activities.Tracking.CustomTrackingRecord>.  
   
-4.  A WF 3 custom activity can access data using workflow queues within the interoperation environment in exactly the same way as within the WF 3 workflow runtime. No custom activity code changes are required. On the host, data is enqueued to a WF 3 workflow queue by resuming a <xref:System.Activities.Bookmark>. The name of the bookmark is the string form of the <xref:System.IComparable> workflow queue name.  
-  
-## See Also  
- [Using a .NET Framework 3.0 or .NET Framework 3.5 Activity in a .NET Framework 4.5 Workflow](../../../docs/framework/windows-workflow-foundation/samples/using-a-net-3-0-or-net-3-5-activity-in-a-net-4-5-workflow.md)
+4.  A WF 3 custom activity can access data using workflow queues within the interoperation environment in exactly the same way as within the WF 3 workflow runtime. No custom activity code changes are required. On the host, data is enqueued to a WF 3 workflow queue by resuming a <xref:System.Activities.Bookmark>. The name of the bookmark is the string form of the <xref:System.IComparable> workflow queue name.

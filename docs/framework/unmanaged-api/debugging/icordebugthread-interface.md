@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread Interface1"
+title: "ICorDebugThread Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugThread"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugThread Interface1
+# ICorDebugThread Interface
 Represents a thread in a process. The lifetime of an `ICorDebugThread` instance is the same as the lifetime of the thread it represents.  
   
 ## Methods  
@@ -55,5 +55,5 @@ Represents a thread in a process. The lifetime of an `ICorDebugThread` instance 
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

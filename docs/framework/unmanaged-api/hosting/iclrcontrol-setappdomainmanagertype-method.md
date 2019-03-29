@@ -30,7 +30,7 @@ HRESULT SetAppDomainManagerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppDomainManagerAssembly`  
  [in] The name of the assembly in which the requested type derived from <xref:System.AppDomainManager> is implemented.  
   
@@ -57,6 +57,6 @@ HRESULT SetAppDomainManagerType (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

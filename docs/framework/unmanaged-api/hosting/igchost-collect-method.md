@@ -29,7 +29,7 @@ HRESULT Collect (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation on which to perform the garbage collection. A value of -1 indicates that all generations will undergo a garbage collection.  
   
@@ -42,5 +42,5 @@ HRESULT Collect (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+## See also
+- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

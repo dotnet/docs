@@ -18,8 +18,7 @@ The goal of the XSLT is to transform the content of a source XML document into a
 
 ## Overview
 
-![XSLT Transformation Architecture](media/xslttransformationswithxsltransformclass.gif "xsltTransformationsWithXslTransformClass")  
-Transformation Architecture
+![Diagram that shows the XSLT transformation architecture.](./media/xslt-transformations-with-the-xsltransform-class/xslt-transformation-architecture.gif) 
 
 The XSLT recommendation uses XML Path Language (XPath) to select parts of an XML document, where XPath is a query language used to navigate nodes of a document tree. As shown in the diagram, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] implementation of XPath is used to select parts of XML stored in several classes, such as an <xref:System.Xml.XmlDocument>, an <xref:System.Xml.XmlDataDocument>, and an <xref:System.Xml.XPath.XPathDocument>. An <xref:System.Xml.XPath.XPathDocument> is an optimized XSLT data store, and when used with <xref:System.Xml.Xsl.XslTransform>, it provides XSLT transformations with good performance.
 
@@ -90,13 +89,13 @@ public class Sample
 }
 ```
 
-## See Also
+## See also
 
-<xref:System.Xml.Xsl.XslTransform>  
-[XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
-[Implementation of Discretionary Behaviors in the XslTransform Class](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md)  
-[XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
-[XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
-[XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
-[XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
-[XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  
+- <xref:System.Xml.Xsl.XslTransform>
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)
+- [Implementation of Discretionary Behaviors in the XslTransform Class](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md)
+- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)
+- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)
+- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)
+- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)
+- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)

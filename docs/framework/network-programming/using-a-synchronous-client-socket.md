@@ -17,9 +17,6 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "client sockets"
 ms.assetid: 945d00c6-7202-466c-9df9-140b84156d43
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Using a Synchronous Client Socket
 A synchronous client socket suspends the application program while the network operation completes. Synchronous sockets are not suitable for applications that make heavy use of the network for their operation, but they can enable simple access to network services for other applications.  
@@ -67,7 +64,7 @@ s.Shutdown(SocketShutdown.Both);
 s.Close();  
 ```  
   
-## See Also  
- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)  
- [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)
+## See also
+- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)
+- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+- [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)

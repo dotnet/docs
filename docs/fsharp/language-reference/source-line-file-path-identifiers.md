@@ -1,12 +1,11 @@
 ---
-title: Source Line, File, and Path Identifiers (F#)
+title: Source Line, File, and Path Identifiers
 description: Learn how to use built-in F# identifier values that enable you to access the source line number, directory, and file name in your code.
 ms.date: 05/16/2016
 ---
 # Source Line, File, and Path Identifiers
 
 The identifiers `__LINE__`, `__SOURCE_DIRECTORY__` and `__SOURCE_FILE__` are built-in values that enable you to access the source line number, directory and file name in your code.
-
 
 ## Syntax
 
@@ -17,6 +16,7 @@ __SOURCE_FILE__
 ```
 
 ## Remarks
+
 Each of these values has type `string`.
 
 The following table summarizes the source line, file, and path identifiers that are available in F#. These identifiers are not preprocessor macros; they are built-in values that are recognized by the compiler.
@@ -26,6 +26,7 @@ The following table summarizes the source line, file, and path identifiers that 
 |`__LINE__`|Evaluates to the current line number, considering `#line` directives.|
 |`__SOURCE_DIRECTORY__`|Evaluates to the current full path of the source directory, considering `#line` directives.|
 |`__SOURCE_FILE__`|Evaluates to the current source file name and its path, considering `#line` directives.|
+
 For more information about the `#line` directive, see [Compiler Directives](compiler-directives.md).
 
 ## Example
@@ -42,7 +43,7 @@ Source Directory: C:\Users\username\Documents\Visual Studio 2017\Projects\Source
 Source File: C:\Users\username\Documents\Visual Studio 2017\Projects\SourceInfo\SourceInfo\Program.fs
 ```
 
-## See Also
-[Compiler Directives](compiler-directives.md)
+## See also
 
-[F# Language Reference](index.md)
+- [Compiler Directives](compiler-directives.md)
+- [F# Language Reference](index.md)

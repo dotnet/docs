@@ -35,7 +35,7 @@ HRESULT GetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdmr`  
  [in] An `mdManifestResource` token that represents the resource for which to get the properties.  
   
@@ -66,5 +66,5 @@ HRESULT GetManifestResourceProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

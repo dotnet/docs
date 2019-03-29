@@ -11,17 +11,17 @@ ms.assetid: d5a56228-899d-41d9-8af8-87b3f4ec2f94
 With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog box.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To bind a control and format the displayed data  
   
 1.  Connect to a data source.  
   
-     For more information, see [Connecting to a Data Source](../../../docs/framework/data/adonet/connecting-to-a-data-source.md).  
+     For more information, see [Connecting to a Data Source](../data/adonet/connecting-to-a-data-source.md).  
   
 2.  In the form, select the control, and then open the Properties window.  
   
-3.  Expand the **(DataBindings)** property, and then in the **(Advanced)** box, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.  
+3.  Expand the **(DataBindings)** property, and then in the **(Advanced)** box, click the ellipsis button (![VisualStudioEllipsesButton screenshot](./media/vbellipsesbutton.png "vbEllipsesButton")) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.  
   
 4.  Select the property you want to bind, and then click the **Binding** arrow.  
   
@@ -44,11 +44,11 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
     |Currency|Specify number of decimal places by using **Decimal places** up-down control.|  
     |Date Time|Select how the date and time should be displayed by selecting one of the items in the **Type** selection box.|  
     |Scientific|Specify number of decimal places by using **Decimal places** up-down control.|  
-    |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md). **Note:**  Custom format strings are not guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|  
+    |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](../../standard/base-types/formatting-types.md). **Note:**  Custom format strings are not guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|  
   
 8.  Click **OK** to close the **Formatting and Advanced Binding** dialog box and return to the Properties window.  
   
-## See Also  
- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)  
- [User Input Validation in Windows Forms](../../../docs/framework/winforms/user-input-validation-in-windows-forms.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## See also
+- [How to: Create a Simple-Bound Control on a Windows Form](how-to-create-a-simple-bound-control-on-a-windows-form.md)
+- [User Input Validation in Windows Forms](user-input-validation-in-windows-forms.md)
+- [Windows Forms Data Binding](windows-forms-data-binding.md)

@@ -42,7 +42,7 @@ The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activ
 ## Example  
  The following code example demonstrates the pattern that causes this MDA to be activated.  
   
-```  
+```csharp
 void MethodWithInvalidPCR()  
 {  
     RuntimeHelpers.PrepareConstrainedRegions();  
@@ -58,8 +58,8 @@ void MethodWithInvalidPCR()
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

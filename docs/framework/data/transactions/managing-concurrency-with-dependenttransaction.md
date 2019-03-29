@@ -75,5 +75,5 @@ using(TransactionScope scope = new TransactionScope())
   
 -   If the worker thread spawns a new worker thread, make sure to create a dependent clone from the dependent clone and pass it to the new thread.  
   
-## See Also  
- <xref:System.Transactions.DependentTransaction>
+## See also
+- <xref:System.Transactions.DependentTransaction>

@@ -8,7 +8,7 @@ SynchronousReceiveBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class SynchronousReceiveBehavior : Behavior  
 {  
 };  
@@ -23,5 +23,5 @@ class SynchronousReceiveBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>
+## See also
+- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

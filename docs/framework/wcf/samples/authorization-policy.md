@@ -5,7 +5,7 @@ ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
 ---
 # Authorization Policy
 
-This sample demonstrates how to implement a custom claim authorization policy and an associated custom service authorization manager. This is useful when the service makes claim-based access checks to service operations and prior to the access checks, grants the caller certain rights. This sample shows both the process of adding claims as well as the process for doing an access check against the finalized set of claims. All application messages between the client and server are signed and encrypted. By default with the `wsHttpBinding` binding, a username and password supplied by the client are used to logon to a valid Windows NT account. This sample demonstrates how to utilize a custom <!--zz <xref:System.IdentityModel.Selectors.UsernamePasswordValidator>--> `System.IdentityModel.Selectors.UsernamePasswordValidator` to authenticate the client. In addition this sample shows the client authenticating to the service using an X.509 certificate. This sample shows an implementation of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> and <xref:System.ServiceModel.ServiceAuthorizationManager>, which between them grant access to specific methods of the service for specific users. This sample is based on the [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md), but demonstrates how to perform a claim transformation prior to the <xref:System.ServiceModel.ServiceAuthorizationManager> being called.
+This sample demonstrates how to implement a custom claim authorization policy and an associated custom service authorization manager. This is useful when the service makes claim-based access checks to service operations and prior to the access checks, grants the caller certain rights. This sample shows both the process of adding claims as well as the process for doing an access check against the finalized set of claims. All application messages between the client and server are signed and encrypted. By default with the `wsHttpBinding` binding, a username and password supplied by the client are used to logon to a valid Windows NT account. This sample demonstrates how to utilize a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> to authenticate the client. In addition this sample shows the client authenticating to the service using an X.509 certificate. This sample shows an implementation of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> and <xref:System.ServiceModel.ServiceAuthorizationManager>, which between them grant access to specific methods of the service for specific users. This sample is based on the [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md), but demonstrates how to perform a claim transformation prior to the <xref:System.ServiceModel.ServiceAuthorizationManager> being called.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -278,7 +278,7 @@ Or you can do the same thing in configuration:
 
 Windows Communication Foundation (WCF) provides a rich claims-based model for performing access checks. The <xref:System.ServiceModel.ServiceAuthorizationManager> object is used to perform the access check and determine whether the claims associated with the client satisfy the requirements necessary to access the service method.
 
-For the purposes of demonstration, this sample shows an implementation of <xref:System.ServiceModel.ServiceAuthorizationManager> that implements the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method to allow a user's access to methods based on claims of type http://example.com/claims/allowedoperation whose value is the Action URI of the operation that is allowed to be called.
+For the purposes of demonstration, this sample shows an implementation of <xref:System.ServiceModel.ServiceAuthorizationManager> that implements the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method to allow a user's access to methods based on claims of type `http://example.com/claims/allowedoperation` whose value is the Action URI of the operation that is allowed to be called.
 
 ```csharp
 public class MyServiceAuthorizationManager : ServiceAuthorizationManager
@@ -454,7 +454,7 @@ The following provides a brief overview of the different sections of the batch f
 
 1. Launch Client.exe from *\client\bin*. Client activity is displayed on the client console application.
 
-  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
+  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 ### To run the sample across computers
 
@@ -494,7 +494,7 @@ The following provides a brief overview of the different sections of the batch f
 
 14. On the client computer, launch Client.exe from a command prompt window.
 
-   If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).
+   If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 ### Clean up after the sample
 

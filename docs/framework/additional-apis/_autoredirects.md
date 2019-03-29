@@ -25,7 +25,7 @@ private int _AutoRedirects
 ```
 
 > [!WARNING]
-> The `HttpWebRequest._AutoRedirects` field is internal and not meant to be used directly in your code.
+> The `HttpWebRequest._AutoRedirects` field is internal and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

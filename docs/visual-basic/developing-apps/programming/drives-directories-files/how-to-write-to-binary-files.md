@@ -16,7 +16,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method write
   
 -   Use the `WriteAllBytes` method, supplying the file path and name and the bytes to be written. This example appends the data array `CustomerData` to the file named `CollectedData.dat`.  
   
-     [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-to-binary-files_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#27)]  
   
 ## Robust Programming  
  The following conditions may create an exception:  
@@ -35,6 +35,6 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method write
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>  
- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)
+## See also
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
+- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)

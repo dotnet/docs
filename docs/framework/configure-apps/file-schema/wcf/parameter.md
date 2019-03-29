@@ -1,9 +1,9 @@
 ---
-title: "&lt;parameter&gt;"
+title: "<parameter>"
 ms.date: "03/30/2017"
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
 ---
-# &lt;parameter&gt;
+# \<parameter>
 Specifies the generic parameter when a declared type is a generic type.  
   
  \<system.runtime.serialization>  
@@ -16,8 +16,8 @@ Specifies the generic parameter when a declared type is a generic type.
 ## Syntax  
   
 ```xml  
-<parameter index="integer"  
-                      type=String" />  
+<parameter index="Integer"
+           type="String" />
 ```  
   
 ## Attributes and Elements  
@@ -53,8 +53,8 @@ Specifies the generic parameter when a declared type is a generic type.
   
  This configuration element cannot have both attributes at the same time. If both attributes are set, a <xref:System.Configuration.ConfigurationErrorsException> occurs.  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)  
- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)
+- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)

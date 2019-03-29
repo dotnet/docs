@@ -1,5 +1,6 @@
 ---
-title: "&lt;code&gt; (C# Programming Guide)"
+title: "<code> - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "code"
@@ -9,14 +10,14 @@ helpviewer_keywords:
   - "<code> C# XML tag"
 ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 ---
-# &lt;code&gt; (C# Programming Guide)
+# \<code> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
 <code>content</code>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text you want marked as code.  
   
@@ -28,6 +29,7 @@ ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 ## Example  
  See the [\<example>](../../../csharp/programming-guide/xmldoc/example.md) topic for an example of how to use the \<code> tag.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

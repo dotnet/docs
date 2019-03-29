@@ -58,7 +58,7 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
     svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost:8000/servicemodelsamples/service.svc/mex /out:generatedClient.cs
     ```
 
-     Replace http://localhost:8000/ServiceModelSamples/service.svc/mex with the address of the self-hosted service's mex endpoint.
+     Replace `http://localhost:8000/ServiceModelSamples/service.svc/mex` with the address of the self-hosted service's mex endpoint.
 
      To generate the client in a Visual Basic type, use the following command.
 
@@ -75,7 +75,7 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
     > [!NOTE]
     > To skip the generation of client configuration add the **/noConfig** option.
 
-## See Also
+## See also
 
 - [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md)
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

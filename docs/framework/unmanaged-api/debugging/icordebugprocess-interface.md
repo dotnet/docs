@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess Interface1"
+title: "ICorDebugProcess Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugProcess"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugProcess Interface1
+# ICorDebugProcess Interface
 Represents a process that is executing managed code. This interface is a subclass of ICorDebugController.  
   
 ## Methods  
@@ -56,6 +56,6 @@ Represents a process that is executing managed code. This interface is a subclas
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

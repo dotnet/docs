@@ -31,7 +31,7 @@ HRESULT Commit();
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
- **Header:** CorSym.idl , CorSym.h  
+ **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)
+## See also
+- [ISymUnmanagedWriter3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)

@@ -10,7 +10,7 @@ There are situations when you may want to have a completely self-contained COM I
   
 1.  Open and build the GettingStarted sample solution.  
   
-2.  Open Internet Explorer and browse to http://localhost/ServiceModelSamples/Service.svc to make sure that the service is working.  
+2.  Open Internet Explorer and browse to `http://localhost/ServiceModelSamples/Service.svc` to make sure that the service is working.  
   
 3.  In the Service.cs file, add the following attribute on the CalculatorService class:  
   
@@ -20,7 +20,7 @@ There are situations when you may want to have a completely self-contained COM I
   
   
   
-5.  Create a WSDL file for the application to read. Because the namespaces were added in steps 3 and 4, you can use IE to query for the entire WSDL description of the service by browsing to http://localhost/ServiceModelSamples/Service.svc?wsdl. You can then save the file from Internet Explorer as serviceWSDL.xml. If you do not specify the namespaces in steps 3 and 4, the WSDL document returned from querying the above URL will not be the complete WSDL. The WSDL document returned will include several import statements that import other WSDL documents. You will have to go through each import statement and build the complete WSDL document, combining the WSDL returned from the service with the WSDL imported.  
+5.  Create a WSDL file for the application to read. Because the namespaces were added in steps 3 and 4, you can use IE to query for the entire WSDL description of the service by browsing to `http://localhost/ServiceModelSamples/Service.svc?wsdl`. You can then save the file from Internet Explorer as serviceWSDL.xml. If you do not specify the namespaces in steps 3 and 4, the WSDL document returned from querying the above URL will not be the complete WSDL. The WSDL document returned will include several import statements that import other WSDL documents. You will have to go through each import statement and build the complete WSDL document, combining the WSDL returned from the service with the WSDL imported.  
   
 6.  Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
@@ -50,6 +50,6 @@ There are situations when you may want to have a completely self-contained COM I
   
 7.  Run the Visual Basic application. A message box will be displayed with the results of calling Subtract(145, 76.54).  
   
-## See Also  
- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)  
- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)
+## See also
+- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)
+- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)

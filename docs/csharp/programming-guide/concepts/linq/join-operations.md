@@ -12,7 +12,7 @@ A *join* of two data sources is the association of objects in one data source wi
   
  The following illustration shows a conceptual view of two sets and the elements within those sets that are included in either an inner join or a left outer join.  
   
- ![Two overlapping circles showing inner&#47;outer.](../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "JoinCircles")  
+ ![Two overlapping circles showing inner&#47;outer.](./media/join-operations/join-method-overlapping-circles.png)  
   
 ## Methods  
   
@@ -21,17 +21,18 @@ A *join* of two data sources is the association of objects in one data source wi
 |Join|Joins two sequences based on key selector functions and extracts pairs of values.|`join … in … on … equals …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|  
 |GroupJoin|Joins two sequences based on key selector functions and groups the resulting matches for each element.|`join … in … on … equals … into …`|<xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=nameWithType>|  
   
-## See Also  
- <xref:System.Linq>  
- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [Formulate Joins and Cross-Product Queries](http://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)  
- [join clause](../../../../csharp/language-reference/keywords/join-clause.md)  
- [How to: Join by Using Composite Keys](../../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)  
- [How to: Join Content from Dissimilar Files (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)  
- [How to: Order the Results of a Join Clause](../../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)  
- [How to: Perform Custom Join Operations](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md)  
- [How to: Perform Grouped Joins](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)  
- [How to: Perform Inner Joins](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md)  
- [How to: Perform Left Outer Joins](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)  
- [How to: Populate Object Collections from Multiple Sources (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
+## See also
+
+- <xref:System.Linq>
+- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+- [Formulate Joins and Cross-Product Queries](../../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
+- [join clause](../../../../csharp/language-reference/keywords/join-clause.md)
+- [How to: Join by Using Composite Keys](../../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)
+- [How to: Join Content from Dissimilar Files (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)
+- [How to: Order the Results of a Join Clause](../../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)
+- [How to: Perform Custom Join Operations](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md)
+- [How to: Perform Grouped Joins](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)
+- [How to: Perform Inner Joins](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md)
+- [How to: Perform Left Outer Joins](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)
+- [How to: Populate Object Collections from Multiple Sources (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)

@@ -37,7 +37,7 @@ HRESULT DefineField (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypeDef` token for the enclosing class or interface.  
   
@@ -53,7 +53,7 @@ HRESULT DefineField (
  `cbSigBlob`  
  [in] The count of bytes in `pvSigBlob`.  
   
- `dwCPlusTypeFlage`  
+ `dwCPlusTypeFlag`  
  [in] The `ELEMENT_TYPE_`*\** for the constant value. This is a `CorElementType` value. If not defining a constant value for the field, use `ELEMENT_TYPE_END`.  
   
  `pValue`  
@@ -74,6 +74,6 @@ HRESULT DefineField (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

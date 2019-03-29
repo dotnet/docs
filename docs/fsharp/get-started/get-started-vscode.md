@@ -1,7 +1,7 @@
 ---
 title: Get Started with F# in Visual Studio Code
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
-ms.date: 05/28/2018
+ms.date: 12/23/2018
 ---
 # Get Started with F# in Visual Studio Code
 
@@ -9,11 +9,14 @@ You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the
 
 To begin, ensure that you have [F# and the Ionide plugin correctly installed](install-fsharp.md#install-f-with-visual-studio-code).
 
+> [!NOTE]
+> Ionide will generate .NET Framework F# projects, not dotnet core, which can have cross-platform compatibility issues. If you are running on **Linux** or **OSX**, a simpler way to get started is to use the [command line tools](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line).
+
 ## Creating your first project with Ionide
 
 To create a new F# project, open Visual Studio Code in a new folder (you can name it whatever you like).
 
-Next, open the command pallette (**View > Command Pallette**) and type the following:
+Next, open the command palette (**View > Command Palette**) and type the following:
 
 ```
 > F# new project
@@ -22,7 +25,7 @@ Next, open the command pallette (**View > Command Pallette**) and type the follo
 This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project.
 
 > [!NOTE]
-If you don't see template options, try refreshing templates by running the following command in the Command Palette: `>F#: Refresh Project Templates`.
+> If you don't see template options, try refreshing templates by running the following command in the Command Palette: `>F#: Refresh Project Templates`.
 
 Select "F#: New Project" by hitting **Enter**. This takes you to the next step, which is for selecting a project template.
 
@@ -91,8 +94,8 @@ val it : string = "appleyay"
 
 The function appears to be working as expected. Congratulations, you just wrote your first F# function in Visual Studio Code and evaluated it with FSI!
 
->[!NOTE]
-As you may have noticed, the lines in FSI are terminated with `;;`. This is because FSI allows you to enter multiple lines. The `;;` at the end lets FSI know when the code is finished.
+> [!NOTE]
+> As you may have noticed, the lines in FSI are terminated with `;;`. This is because FSI allows you to enter multiple lines. The `;;` at the end lets FSI know when the code is finished.
 
 ## Explaining the code
 
@@ -144,8 +147,7 @@ Next, open the `Script.fsx` file again, and delete the entire `toPigLatin` funct
 #load "ClassLibraryDemo.fs"
 open ClassLibraryDemo
 ```
-
-The first line is needed for FSI scripting to load `ClassLibraryDemo.fs`. The second line is a convenience: omitting it is optional, but you will need to type `open ClassLibraryDemo` in an FSI window if you wish to bring the `ToPigLatin` module into scope.
+Select both lines of text and press Alt+Enter to execute these lines in FSI. These will load the contents of the Pig Latin library into the FSI process and `open` the `ClassLibraryDemo` namespace so that you have access to the functionality.
 
 Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:
 

@@ -6,13 +6,10 @@ helpviewer_keywords:
   - "List control type"
   - "UI Automation, List control type"
 ms.assetid: 0e959fcb-50f2-413b-948d-7167d279bc11
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # UI Automation Support for the List Control Type
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic provides information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] support for the List control type. In [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], a control type is a set of conditions that a control must meet in order to use the <xref:System.Windows.Automation.AutomationElement.ControlTypeProperty> property. The conditions include specific guidelines for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property values and control patterns.  
   
@@ -31,21 +28,19 @@ manager: "markl"
   
  The control view for a control that implements the List control type (such as a list control) consists of:  
   
--   Zero or more items within the list control (items can be based on the List Item or Data Item control types)  
+- Zero or more items within the list control (items can be based on the List Item or Data Item control types).
   
--   Zero or more group controls within a list control  
+- Zero or more group controls within a list control.
   
--   Zero, one, or two scroll bar controls  
+- Zero, one, or two scroll bar controls.
   
--  
+The content view of a control that implements the List control type (such as a list control) consists of:  
   
- The content view of a control that implements the List control type (such as a list control) consists of:  
+- Zero or more items within the list control (items can be based on the List Item or Data Item control types).
   
--   Zero or more items within the list control (items can be based on the List Item or Data Item control types)  
-  
--   Zero or more groups within the list control  
-  
- A list control must not have items that have a hierarchical relationship other than being grouped together. If the items have children in the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, then the list container should be based on the Tree control type.  
+- Zero or more groups within the list control.
+
+A list control must not have items that have a hierarchical relationship other than being grouped together. If the items have children in the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, then the list container should be based on the Tree control type.  
   
  The selectable items within the list control will be available from the descendants in the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree of the list control. All items within the list control must belong to the same selection group. The selectable items in the list should be exposed as ListItem (instead of DataItem) control types.  
   
@@ -103,7 +98,7 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.List>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.List>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

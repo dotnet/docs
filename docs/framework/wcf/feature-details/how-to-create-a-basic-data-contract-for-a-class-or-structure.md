@@ -30,9 +30,9 @@ This topic shows the basic steps to create a data contract using a class or stru
  [!code-csharp[DataContractAttribute#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/datacontractattribute/cs/overview.cs#2)]
  [!code-vb[DataContractAttribute#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/datacontractattribute/vb/overview.vb#2)]  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)  
- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)
+- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)

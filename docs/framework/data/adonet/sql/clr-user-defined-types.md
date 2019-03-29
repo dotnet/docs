@@ -18,6 +18,6 @@ Microsoft SQL Server provides support for user-defined types (UDTs) implemented 
   
 1. [CLR User-Defined Types](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
-## See also  
+## See also
 
-[ADO.NET Overview](../ado-net-overview.md)  
+- [ADO.NET Overview](../ado-net-overview.md)

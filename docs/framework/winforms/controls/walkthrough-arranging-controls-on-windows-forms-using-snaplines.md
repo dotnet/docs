@@ -11,7 +11,7 @@ ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
 # Walkthrough: Arranging Controls on Windows Forms Using Snaplines
 Precise placement of controls on your form is a high priority for many applications. The Windows Forms Designer gives you many layout tools to accomplish this. One of the most important is the <xref:System.Windows.Forms.Design.Behavior.SnapLine> feature.  
   
- Snaplines show you precisely where to line up controls with other controls. They also show you the recommended distances for margins between controls, as specified by the Windows User Interface Guidelines. For details, see [User Interface Design and Development](http://go.microsoft.com/FWLink/?LinkId=83878).  
+ Snaplines show you precisely where to line up controls with other controls. They also show you the recommended distances for margins between controls, as specified by the Windows User Interface Guidelines. For details, see [User Interface Design and Development](https://go.microsoft.com/FWLink/?LinkId=83878).  
   
  Snaplines make it easy to align your controls, for crisp, professional appearance and behavior (look and feel).  
   
@@ -42,14 +42,14 @@ Precise placement of controls on your form is a high priority for many applicati
  When you are finished, you will have an understanding of the layout role played by the snaplines feature.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
   
 #### To create the project  
   
-1.  Create a Windows-based application project called "SnaplineExample". For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called "SnaplineExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  Select the form in the Forms Designer.  
   
@@ -86,7 +86,7 @@ Precise placement of controls on your form is a high priority for many applicati
 > [!NOTE]
 >  If the form's <xref:System.Windows.Forms.Control.Padding%2A> property is set to 0,0,0,0, the Windows Forms Designer gives the form a shadowed <xref:System.Windows.Forms.Control.Padding%2A> value of 9,9,9,9. To override this behavior, assign a value other than 0,0,0,0.  
   
-1.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Margin%2A> property by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 0. For details, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](../../../../docs/framework/winforms/controls/windows-forms-controls-padding-autosize.md).  
+1.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Margin%2A> property by expanding the <xref:System.Windows.Forms.Control.Margin%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to 0. For details, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md).  
   
 2.  Move the <xref:System.Windows.Forms.Button> control close to the right border of the form until a snapline appears. This distance is now given by the value of the form's <xref:System.Windows.Forms.Control.Padding%2A> property.  
   
@@ -148,7 +148,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 1.  Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto your form.  
   
-2.  Resize the <xref:System.Windows.Forms.Button> control by grabbing one of the corner sizing handles and dragging. For details, see [How to: Resize Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-resize-controls-on-windows-forms.md).  
+2.  Resize the <xref:System.Windows.Forms.Button> control by grabbing one of the corner sizing handles and dragging. For details, see [How to: Resize Controls on Windows Forms](how-to-resize-controls-on-windows-forms.md).  
   
 3.  Drag the sizing handle until one of the <xref:System.Windows.Forms.Button> control's borders is aligned with another control. Note that a snapline appears. Also note that the sizing handle snaps to the position indicated by the snapline.  
   
@@ -159,7 +159,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 #### To align a label to a control's text  
   
-1.  Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](../../../../docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md).  
+1.  Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md).  
   
 2.  Drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto your form.  
   
@@ -216,7 +216,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 #### To disable snaplines in the design environment  
   
-1.  From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834).  
+1.  From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100)).  
   
 2.  Select the **General** node. In the **Layout Mode** section, change the selection from **SnapLines** to **SnapToGrid**.  
   
@@ -233,9 +233,9 @@ Precise placement of controls on your form is a high priority for many applicati
   
  For information about Windows user interface design, see the book *Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers* Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1).  
   
-## See Also  
- <xref:System.Windows.Forms.Design.Behavior.SnapLine>  
- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)  
- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
- [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](../../../../docs/framework/winforms/controls/windows-forms-controls-padding-autosize.md)  
- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Design.Behavior.SnapLine>
+- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
+- [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md)
+- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)

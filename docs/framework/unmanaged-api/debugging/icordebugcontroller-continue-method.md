@@ -29,7 +29,7 @@ HRESULT Continue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fIsOutOfBand`  
  [in] Set to `true` if continuing from an out-of-band event; otherwise, set to `false`.  
   
@@ -51,5 +51,5 @@ HRESULT Continue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

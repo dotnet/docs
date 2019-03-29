@@ -13,7 +13,7 @@ items:
   content: |
     This tutorial lets you explore C# 7.0 features interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 7.0 features. The rest of this article provides an overview of each of these features, with a link to explore each feature.
 
-- title: Our variable declarations at the assignment location
+- title: Out variable declarations at the assignment location
   durationInMinutes: 2
   content: |
     The existing syntax that supports `out` parameters has been improved in this version. Try the following code in the interactive window: 
@@ -56,7 +56,7 @@ items:
 
     [!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#NamedTuple "Named tuple")]
 
-    The `namedLetters` tuple contains fields referred to as `Alpha` and `Beta`. Those names exist only at compile time and are not preserved when inspecting the tuple using reflection at runtime, for example.
+    The `namedLetters` tuple contains fields referred to as `Alpha` and `Beta`. Those names exist only at compile time and are not preserved at runtime (when inspecting the tuple using reflection, for example).
 
     In a tuple assignment, you can also specify the names of the fields on the right-hand side of the assignment: 
 
@@ -74,7 +74,7 @@ items:
 
     [!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#CallingWithDeconstructor "Deconstructing a tuple")]
 
-    As you work with tuples, you'll often find that you don't use sall of the members of a tuple result. When that happens, you can discard one or more of the returned values by using `_` in place of a variable. Add the following code in your browser to try it:
+    As you work with tuples, you'll often find that you don't use all of the members of a tuple result. When that happens, you can discard one or more of the returned values by using `_` in place of a variable. Add the following code in your browser to try it:
 
     [!code-csharp[DiscardTupleMember](~/samples/snippets/csharp/new-in-7/program.cs#DiscardMember "Discard a tuple member")]
 
@@ -114,15 +114,15 @@ items:
 
     [!code-csharp[SimpleSwitch](~/samples/snippets/csharp/new-in-7/patternmatch.cs#SimpleSwitchPattern "simple switch")]
 
-    The preceding code checks for an `int` or `null`. EVery other type reached the default case. Add the following two lines to verify the behavior:
+    The preceding code checks for an `int` or `null`. Every other type reached the default case. Add the following two lines to verify the behavior:
 
-    [!code-csharp[AddLongCase](~/samples/snippets/csharp/new-in-7/patternmatch.cs#TestLong "Add a case for long)]
+    [!code-csharp[AddLongCase](~/samples/snippets/csharp/new-in-7/patternmatch.cs#TestLong "Add a case for long")]
 
     The `switch` expression will convert a nullable type to its corresponding type. Add the following to verify:
 
     [!code-csharp[NullableCase](~/samples/snippets/csharp/new-in-7/patternmatch.cs#NullableSwitch "Add a nullable case")]
 
-    You can add any number of other type pattern expressions to the switch statements. Add these above the `null` case:
+    You can add any number of other type pattern expressions to the switch statements. Add these before the `null` case:
 
     [!code-csharp[MoreTypeCases](~/samples/snippets/csharp/new-in-7/patternmatch.cs#MoreCases "Add more type cases")]
 
@@ -144,7 +144,7 @@ items:
 
     [!code-csharp[TestWhenClause](~/samples/snippets/csharp/new-in-7/patternmatch.cs#TestWhenClause "Test the when clause")]
 
-    The new syntax for pattern matching expressions makes it easier to create dispatch algorithms based on an object's type, or other properties, using a clear and concise syntax. Pattern matching expressions enable these constructs on data types that are unrelated by inheritance.
+    The new syntax for pattern matching expressions makes it easier to create dispatch algorithms using a clear and concise syntax based on an object's type or other properties. Pattern matching expressions enable these constructs on data types that are unrelated by inheritance.
 
     You can learn more about pattern matching in the article dedicated to [pattern matching in C#](../../pattern-matching.md).
 
@@ -218,7 +218,7 @@ items:
     Console.WriteLine(matrix[4, 2]);
     ```
 
-    The second `WriteLine` statement in the example above prints out the value `42`, not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var` keyword enables the compiler to specify the type, but will not implicitly
+    The second `WriteLine` statement in the example above prints out the value `42`, not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var` keyword enables the compiler to specify the type but will not implicitly
     add the `ref` modifier. Instead, the value referred to by the `ref return` is *copied* to the variable on the left-hand side of the assignment. The variable is not a `ref` local.
 
     In order to modify the returned reference, you need to add the `ref` modifier to the local variable declaration and before the call to `Find` to make the variable a reference when the return value is a reference. Modify the `Main` method in your browser to match the following:
@@ -246,7 +246,7 @@ items:
     * You cannot return a `ref` to a variable whose lifetime does not extend beyond the execution of the method.
     * `ref` locals and returns can't be used with async methods.
 
-    The addition of ref locals and ref returns enable algorithms that are more efficient by avoiding copying values, or performing dereferencing operations multiple times.
+    The addition of ref locals and ref returns enable algorithms that are more efficient by avoiding copying values or performing dereferencing operations multiple times.
 
     For more information, see the [ref keyword](../../language-reference/keywords/ref.md) article.
 

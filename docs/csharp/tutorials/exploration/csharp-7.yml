@@ -106,6 +106,9 @@ items:
 
     The above won't compile because `number` isn't assigned in the `else` branch. It's only assigned in the `true` branch of the `if` statement.
 
+    > [!NOTE]
+    > There is an [issue](https://github.com/dotnet/try/issues/175) where you may get incorrect output in the preceding example.
+
     The `is` expression type pattern is useful when you have a small number of types to test against. Often, you may need to test multiple types. That requires the pattern matching `switch` statement.
 
 - title: Pattern matching in the switch statement

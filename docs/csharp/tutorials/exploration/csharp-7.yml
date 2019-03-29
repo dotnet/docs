@@ -16,7 +16,7 @@ items:
 - title: Out variable declarations at the assignment location
   durationInMinutes: 2
   content: |
-    The existing syntax that supports `out` parameters has been improved in this version. Try the following code in the interactive window: 
+    The existing syntax that supports `out` parameters has been improved in this version. Click the *Enter Focus Mode* button at the bottom of this page, then try the following code in the interactive window: 
 
     [!code-csharp[OutVariableOldStyle](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableOldStyle "classic out variable declaration")]
 
@@ -27,6 +27,8 @@ items:
     You can change the `int` declaration to a `var` declaration. Add the following code to the interactive window:
 
     [!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
+
+    The new syntax provides two important advantages over the existing syntax:
 
     * The code is easier to read. 
         - You declare the out variable where you use it, not on another line above.
@@ -66,7 +68,7 @@ items:
 
     Tuples are most useful as return types for `private` and `internal` methods. Tuples provide a simple syntax for those methods to return multiple discrete values.
 
-    Creating a tuple is more efficient and more productive. It has a simpler, lightweight syntax to define a data structure that carries more than one value. The example method below returns the minimum and maximum values found in a sequence of integers:
+    Creating a tuple is more efficient and more productive that creating a class or struct. It has a simpler, lightweight syntax to define a data structure that carries more than one value. The example method below returns the minimum and maximum values found in a sequence of integers:
 
     [!code-csharp[TupleReturningMethod](~/samples/snippets/csharp/new-in-7/program.cs#TupleReturningMethod "Tuple returning method")]
 

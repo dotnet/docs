@@ -213,7 +213,7 @@ the `ref` locals and returns:
 * You must add the `ref` keyword to the method signature and to all `return` statements in a method.
     - That makes it clear the method returns by reference throughout the method.
 * A `ref return` may be assigned to a value variable, or a `ref` variable.
-    - The return value is copied into a variable, a `ref` variable refers to the same storage.
+    - The caller controls whether the return value is copied or not. Omitting the `ref` modifier when assigning the return value indicates that the caller wants a copy of the value, not a reference to the storage.
 * You can't assign a standard method return value to a `ref` local variable.
     - That disallows statements like `ref int i = sequence.Count();`
 * You can't return a `ref` to a variable whose lifetime doesn't extend beyond the execution of the method.

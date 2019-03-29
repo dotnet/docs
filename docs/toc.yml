@@ -2380,11 +2380,13 @@
     items:
     - name: What is ML.NET?
       href: machine-learning/what-is-mldotnet.md
-    - name: Model training concepts
+    - name: How does ML.NET work?
       href: machine-learning/basic-concepts-model-training-in-mldotnet.md
   - name: Tutorials
     href: machine-learning/tutorials/index.md
     items:
+    - name: Overview
+      href: machine-learning/tutorials/index.md
     - name: Sentiment analysis (binary classification)
       href: machine-learning/tutorials/sentiment-analysis.md
     - name: Issue classification (multiclass classification)
@@ -2399,22 +2401,13 @@
       href: machine-learning/tutorials/image-classification.md
   - name: How-to guides
     items:
+    - name: Overview
+      href: machine-learning/howto-guides/index.md
+    - name: Load data
+      href: machine-learning/howto-guides/load-data.md
     - name: Prepare data
-      href: machine-learning/how-to-guides/index.md
-      items:
-      - name: Apply categorical feature engineering
-        href: machine-learning/how-to-guides/train-model-categorical-ml-net.md
-      - name: Apply textual feature engineering
-        href: machine-learning/how-to-guides/train-model-textual-ml-net.md
-      - name: Load data with many columns
-        href: machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md
-      - name: Load data from multiple files
-        href: machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md
-      - name: Load data from text file
-        href: machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD
-      - name: Preprocess data with normalizers
-        href: machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md
-    - name: Train, evaluate, and explain the model
+      href: machine-learning/howto-guides/prepare-data.md
+    - name: Train models  
       items:
       - name: Train model with real-time data sources
         href: machine-learning/how-to-guides/load-non-file-training-data-ml-net.md
@@ -2426,7 +2419,7 @@
         href: machine-learning/how-to-guides/train-regression-model-ml-net.md
       - name: Determine model feature importance with PFI
         href: machine-learning/how-to-guides/determine-global-feature-importance-in-model.md
-    - name: Use the trained model
+    - name: Use a trained model
       items:
       - name: One prediction at a time with PredictionEngine
         href: machine-learning/how-to-guides/single-predict-model-ml-net.md

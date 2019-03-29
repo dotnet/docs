@@ -20,11 +20,11 @@ items:
 
     [!code-csharp[OutVariableOldStyle](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableOldStyle "classic out variable declaration")]
 
-    You can now declare `out` variables in the argument list of a method call, rather than writing a separate declaration statement. You can move the declaration into the method call:
+    You can now declare `out` variables in the argument list of a method call, rather than writing a separate declaration statement. You can move the declaration into the method call. Add the following code to the bottom of the interactive window:
 
     [!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableDeclarations "Out variable declarations")]
 
-    You can change the `int` declaration to a `var` declaration:
+    You can change the `int` declaration to a `var` declaration. Add the following code to the interactive window:
 
     [!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
 
@@ -33,7 +33,7 @@ items:
     * No need to assign an initial value.
         - By declaring the `out` variable where it is used in a method call, you can't accidentally use it before it is assigned.
 
-    When using the `out` variable declaration, the declared variable "leaks" into the outer scope of the if statement. This allows you to use the variable afterwards. Modify the code as shown in the following snippet.
+    The declared variable's scope is the scope enclosing the `if` statement. This allows you to use the variable afterwards. Modify the last `if` block as shown in the following snippet.
 
     ```csharp
     if (!int.TryParse(input, out int result))
@@ -102,7 +102,7 @@ items:
     Console.WriteLine($"{number} is not an integer");
     ```
 
-    The above won't compile because `number` isn't in scope in the `else` branch. It's only in scope in the `true` branch of the `if` statement.
+    The above won't compile because `number` isn't assigned in the `else` branch. It's only assigned in the `true` branch of the `if` statement.
 
     The `is` expression type pattern is useful when you have a small number of types to test against. Often, you may need to test multiple types. That requires the pattern matching `switch` statement.
 
@@ -128,7 +128,7 @@ items:
 
     Make sure these work by adding the following tests:
 
-    [!code-csharp[AddMoreTests](~/samples/snippets/csharp/new-in-7/patternmatch.cs#MoreCases "Add more type tests")]
+    [!code-csharp[AddMoreTests](~/samples/snippets/csharp/new-in-7/patternmatch.cs#MoreTests "Add more type tests")]
 
     The match expressions also support constants. This can save time by factoring out simple cases:
 
@@ -153,20 +153,42 @@ items:
   content: |
     This feature enables algorithms that use and return references to variables defined elsewhere. One example is with large matrices and finding a single location with certain characteristics. One method would return the two indices a single location in the matrix:
 
-    [!code-csharp[FindReturningIndices](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#EverythingByValue "Find returning indices")]
+    ```csharp
+    public class Program
+    {
+        private static (int i, int j) Find(int[,] matrix, Func<int, bool> predicate)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                    if (predicate(matrix[i, j]))
+                        return (i, j);
+            return (-1, -1); // Not found
+        }
 
-    This method returns the indices to the item in the matrix. That leads callers to write code that uses those indices to dereference the matrix and modify a single element:
+        public static void Main()
+        {
+            int[,] sourceMatrix = new int[10, 10];
+            for (int x = 0; x < 10; x++)
+                for (int y = 0; y < 10; y++)
+                    sourceMatrix[x, y] = x * 10 + y;
 
-    [!code-csharp[TestReturningIndices](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByValue "Update Item From Indices")]
+            var indices = Find(sourceMatrix, (val) => val == 42);
+            Console.WriteLine(indices);
+            sourceMatrix[indices.i, indices.j] = 24;        
+        }
 
-    You'd rather write a method that returns a *reference* to the element of the matrix that you want to change.
+    }
+    ```
+
+    
+    This `Find` method returns the indices to the item in the matrix. That leads callers to write code that uses those indices to dereference the matrix and modify a single element. You'd rather write a method that returns a *reference* to the element of the matrix that you want to change.
 
     Let's walk through a series of changes to demonstrate the ref local feature and show how to create a method that returns a reference to internal storage. Along the way, you'll learn the rules of the ref return and ref local feature that protect you from accidentally misusing it.
 
     Start by modifying the `Find` method declaration so that it returns a `ref int` instead of a tuple.
     
     ```csharp
-    ref int Find(int[,] matrix, Func<int, bool> predicate)
+    private static ref int Find(int[,] matrix, Func<int, bool> predicate)
     ```
     
     Modify the return statement to return the item at the correct indices:
@@ -187,7 +209,7 @@ items:
     return ref matrix[i,j];
     ```
 
-    Now that the method returns a reference to the integer value in the matrix, you need to modify where it's called. The `var` declaration means that `valItem` is now an `int` rather than a tuple. Change the calling code to following:
+    Now that the method returns a reference to the integer value in the matrix, you need to modify where it's called. The `var` declaration means that `valItem` is now an `int` rather than a tuple. Change the calling code in the `Main` method to the following:
 
     ```csharp
     var valItem = Find(matrix, (val) => val == 42);
@@ -199,9 +221,22 @@ items:
     The second `WriteLine` statement in the example above prints out the value `42`, not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var` keyword enables the compiler to specify the type, but will not implicitly
     add the `ref` modifier. Instead, the value referred to by the `ref return` is *copied* to the variable on the left-hand side of the assignment. The variable is not a `ref` local.
 
-    In order to modify the returned reference, you need to add the `ref` modifier to the local variable declaration and before the call to `Find` to make the variable a reference when the return value is a reference. Modify the test code in your browser to match the following:
+    In order to modify the returned reference, you need to add the `ref` modifier to the local variable declaration and before the call to `Find` to make the variable a reference when the return value is a reference. Modify the `Main` method in your browser to match the following:
 
-    [!code-csharp[TestReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByREf "Update Item From reference")]
+    ```csharp
+    public static void Main()
+    {
+        int[,] sourceMatrix = new int[10, 10];
+        for (int x = 0; x < 10; x++)
+            for (int y = 0; y < 10; y++)
+                sourceMatrix[x, y] = x * 10 + y;
+
+        ref var item = ref Find(sourceMatrix, (val) => val == 42);
+        Console.WriteLine(item);
+        item = 24;
+        Console.WriteLine(sourceMatrix[4, 2]);
+    }
+    ```
 
     Now, the second `WriteLine` statement in the example above prints out the value `24`, indicating that the storage in the matrix has been modified. The local variable has been declared with the `ref` modifier, and it will take a `ref` return. You must initialize a `ref` variable when it is declared; you cannot split the declaration and the initialization.
 

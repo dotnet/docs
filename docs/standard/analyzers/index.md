@@ -2,7 +2,7 @@
 title: The Roslyn based Analyzers - .NET
 description: Learn about Roslyn based analyzers that find issues and suggest fixes for those issues.
 author: billwagner
-ms.author: billwagner
+ms.author: wiwagn
 ms.date: 01/24/2018
 ms.technology: dotnet-standard
 ---

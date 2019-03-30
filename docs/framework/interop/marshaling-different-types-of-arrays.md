@@ -23,7 +23,7 @@ An array is a reference type in managed code that contains one or more elements 
 |Of integers by value (two-dimensional).|Passes a matrix of integers as an In parameter.|  
 |Of strings by value.|Passes an array of strings as an In parameter.|  
 |Of structures with integers.|Passes an array of structures that contain integers as an In parameter.|  
-|Of structures with strings.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|  
+|Of structures with strings.|Passes an array of structures that contain only strings as an In/Out parameter. Members of the array can be changed.|  
   
 ## Example  
  This sample demonstrates how to pass the following types of arrays:  

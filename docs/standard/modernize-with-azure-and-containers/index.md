@@ -7,7 +7,7 @@ ms.date: 04/28/2018
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers (2nd edition)
 
-![cover image](./media/cover.png)
+![Cover image of the Modernize .NET applications guide.](./media/index/web-application-guide-cover-image.png)
 
 PUBLISHED BY  
 Microsoft Press and Microsoft DevDiv  
@@ -166,11 +166,14 @@ This guide doesn't show you how to create Cloud-Native applications, such as how
 
 ### Additional resources
 
-- **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book): [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+- **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book) \
+  [https://aka.ms/dockerlifecycleebook](https://aka.ms/dockerlifecycleebook)
 
-- **.NET Microservices: Architecture for containerized .NET applications** (downloadable e-book): [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
+- **.NET Microservices: Architecture for containerized .NET applications** (downloadable e-book) \
+  [https://aka.ms/microservicesebook](https://aka.ms/microservicesebook)
 
-- **Architecting modern web applications with ASP.NET Core and Azure** (downloadable e-book): [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
+- **Architecting modern web applications with ASP.NET Core and Azure** (downloadable e-book) \
+  [https://aka.ms/webappebook](https://aka.ms/webappebook)
 
 ## Who should use this guide
 

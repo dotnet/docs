@@ -41,9 +41,9 @@ These are the highest precedence operators.
 
 [a&#91;x&#93;](index-operator.md) – aggregate object indexing.
 
-[x++](increment-operator.md) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
+[x++](arithmetic-operators.md#increment-operator-) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
 
-[x--](decrement-operator.md) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
+[x--](arithmetic-operators.md#decrement-operator---) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
 
 [new](../keywords/new-operator.md) – type instantiation.
 
@@ -73,9 +73,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [~x](bitwise-complement-operator.md) – bitwise complement.
 
-[++x](increment-operator.md) – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
+[++x](arithmetic-operators.md#increment-operator-) – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
 
-[--x](decrement-operator.md) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
+[--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
 [(T)x](invocation-operator.md) – type casting.
 
@@ -89,19 +89,19 @@ These operators have higher precedence than the next section and lower precedenc
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x * y](multiplication-operator.md) – multiplication.
+[x * y](arithmetic-operators.md#multiplication-operator-) – multiplication.
 
-[x / y](division-operator.md) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).
+[x / y](arithmetic-operators.md#division-operator-) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).
 
-[x % y](remainder-operator.md) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.
+[x % y](arithmetic-operators.md#remainder-operator-) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.
 
 ## Additive operators
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x + y](addition-operator.md) – addition.
+[x + y](arithmetic-operators.md#addition-operator-) – addition.
 
-[x – y](subtraction-operator.md) – subtraction.
+[x – y](arithmetic-operators.md#subtraction-operator--) – subtraction.
 
 ## Shift operators
 
@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x == y](equality-comparison-operator.md) – equality. By default, for reference types other than `string`, this returns reference equality (identity test). However, types can overload `==`, so if your intent is to test identity, it is best to use the `ReferenceEquals` method on `object`.
+[x == y](equality-operators.md#equality-operator-) – equality. By default, for reference types other than `string`, this returns reference equality (identity test). However, types can overload `==`, so if your intent is to test identity, it is best to use the `ReferenceEquals` method on `object`.
 
-[x != y](not-equal-operator.md) – not equal. See comment for `==`. If a type overloads `==`, then it must overload `!=`.
+[x != y](equality-operators.md#inequality-operator-) – not equal. See comment for `==`. If a type overloads `==`, then it must overload `!=`.
 
 ## Logical AND operator
 
@@ -189,9 +189,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x *= y](multiplication-assignment-operator.md) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
 
-[x /= y](division-assignment-operator.md) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.
+[x /= y](arithmetic-operators.md#compound-assignment) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.
 
-[x %= y](remainder-assignment-operator.md) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.
+[x %= y](arithmetic-operators.md#compound-assignment) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.
 
 [x &= y](and-assignment-operator.md) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.
 
@@ -204,20 +204,6 @@ These operators have higher precedence than the next section and lower precedenc
 [x >>= y](right-shift-assignment-operator.md) – right-shift assignment. Shift the value of `x` right by `y` places, store the result in `x`, and return the new value.
 
 [=>](lambda-operator.md) – lambda declaration.
-
-## Arithmetic overflow
-
-The arithmetic operators ([+](addition-operator.md), [-](subtraction-operator.md), [*](multiplication-operator.md), [/](division-operator.md)) can produce results that are outside the range of possible values for the numeric type involved. You should refer to the section on a particular operator for details, but in general:
-
-- Integer arithmetic overflow either throws an <xref:System.OverflowException> or discards the most significant bits of the result. Integer division by zero always throws a <xref:System.DivideByZeroException>.
-
-   When integer overflow occurs, what happens depends on the execution context, which can be [checked or unchecked](../keywords/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown. In an unchecked context, the most significant bits of the result are discarded and execution continues. Thus, C# gives you the choice of handling or ignoring overflow. By default, arithmetic operations occur in an *unchecked* context.
-
-   In addition to the arithmetic operations, integral-type to integral-type casts can cause overflow (such as when you cast a [long](../keywords/long.md) to an [int](../keywords/int.md)), and are subject to checked or unchecked execution. However, bitwise operators and shift operators never cause overflow.
-
-- Floating-point arithmetic overflow or division by zero never throws an exception, because floating-point types are based on IEEE 754 and so have provisions for representing infinity and NaN (Not a Number).
-
-- [Decimal](../keywords/decimal.md) arithmetic overflow always throws an <xref:System.OverflowException>. Decimal division by zero always throws a <xref:System.DivideByZeroException>.
 
 ## See also
 

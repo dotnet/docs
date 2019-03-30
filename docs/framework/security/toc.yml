@@ -1,0 +1,96 @@
+- name: Windows Identity Foundation
+  href: index.md
+  items:
+  - name: What's New in Windows Identity Foundation 4.5
+    href: whats-new-in-wif.md
+  - name: Windows Identity Foundation 4.5 Overview
+    href: wif-overview.md
+    items:
+    - name: Claims-Based Identity Model
+      href: claims-based-identity-model.md
+    - name: Claims Based Authorization Using WIF
+      href: claims-based-authorization-using-wif.md
+    - name: WIF Claims Programming Model
+      href: wif-claims-programming-model.md
+  - name: Getting Started With WIF
+    href: getting-started-with-wif.md
+    items:
+    - name: Building My First Claims-Aware ASP.NET Web Application
+      href: building-my-first-claims-aware-aspnet-web-app.md
+    - name: Building My First Claims-Aware WCF Service
+      href: building-my-first-claims-aware-wcf-service.md
+  - name: WIF Features
+    href: wif-features.md
+    items:
+    - name: Custom Token Handlers
+      href: custom-token-handlers.md
+    - name: Identity and Access Tool for Visual Studio 2012
+      href: identity-and-access-tool-for-vs.md
+    - name: WIF Session Management
+      href: wif-session-management.md
+    - name: WIF and Web Farms
+      href: wif-and-web-farms.md
+    - name: WSFederation Authentication Module Overview
+      href: wsfederation-authentication-module-overview.md
+    - name: WSTrustChannelFactory and WSTrustChannel
+      href: wstrustchannelfactory-and-wstrustchannel.md
+  - name: WIF How-To's Index
+    href: wif-how-tos-index.md
+    items:
+    - name: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF"
+      href: how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md
+    - name: "How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF"
+      href: how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md
+    - name: "How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication"
+      href: claims-aware-aspnet-app-forms-authentication.md
+    - name: "How To: Build Claims-Aware ASP.NET Application Using Windows Authentication"
+      href: how-to-build-claims-aware-aspnet-app-using-windows-authentication.md
+    - name: "How To: Debug Claims-Aware Applications And Services Using WIF Tracing"
+      href: how-to-debug-claims-aware-applications-and-services-using-wif-tracing.md
+    - name: "How To: Display Signed In Status Using WIF"
+      href: how-to-display-signed-in-status-using-wif.md
+    - name: "How To: Enable WIF Tracing"
+      href: how-to-enable-wif-tracing.md
+    - name: "How To: Enable Token Replay Detection"
+      href: how-to-enable-token-replay-detection.md
+    - name: "How To: Enable WIF for a WCF Web Service Application"
+      href: how-to-enable-wif-for-a-wcf-web-service-application.md
+    - name: "How To: Transform Incoming Claims"
+      href: how-to-transform-incoming-claims.md
+  - name: WIF Guidelines
+    href: wif-guidelines.md
+    items:
+    - name: Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5
+      href: guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md
+    - name: Namespace Mapping between WIF 3.5 and WIF 4.5
+      href: namespace-mapping-between-wif-3-5-and-wif-4-5.md
+  - name: WIF Code Sample Index
+    href: wif-code-sample-index.md
+  - name: WIF Extensions
+    href: wif-extensions.md
+    items:
+    - name: JSON Web Token Handler
+      href: json-web-token-handler.md
+      items:
+      - name: Downloading the JSON Web Token Handler Package
+        href: downloading-the-json-web-token-handler-package.md
+      - name: API Reference
+        href: json-web-token-handler-api-reference.md
+    - name: Validating Issuer Name Registry
+      href: validating-issuer-name-registry.md
+      items:
+      - name: Downloading the Validating Issuer Name Registry Package
+        href: downloading-the-validating-issuer-name-registry-package.md
+      - name: API Reference
+        href: validating-issuer-name-registry-api-reference.md
+  - name: WIF API Reference
+    href: wif-api-reference.md
+  - name: WIF Configuration Reference
+    href: wif-configuration-reference.md
+    items:
+    - name: WIF Configuration Schema Conventions
+      href: wif-configuration-schema-conventions.md
+- name: Security Changes
+  href: security-changes.md
+- name: Secure Coding Guidelines for Unmanaged Code
+  href: secure-coding-guidelines-for-unmanaged-code.md

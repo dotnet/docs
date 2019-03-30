@@ -1,23 +1,23 @@
 ---
 title: "How to: Serialize and Deserialize JSON Data"
-ms.date: "03/30/2017"
+ms.date: "03/25/2019"
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
 ---
-# How to: Serialize and Deserialize JSON Data
+# How to: Serialize and deserialize JSON data
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX-enabled Web services.  
   
- This topic demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. This example uses a data contract to demonstrate serialization and deserialization of a user-defined `Person` type.  
+ This article demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types. This example uses a data contract to demonstrate serialization and deserialization of a user-defined `Person` type and uses <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
- Normally, JSON serialization and deserialization is handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly - this is the scenario that this topic demonstrates.  
+ Normally, JSON serialization and deserialization are handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly.   
   
 > [!NOTE]
->  If an error occurs during serialization of an outgoing reply on the server or the reply operation throws an exception for some other reason, it may not get returned to the client as a fault.  
+>  If an error occurs during serialization of an outgoing reply on the server or for some other reason, it may not get returned to the client as a fault.  
   
- This topic is based on the [JSON Serialization](../../../../docs/framework/wcf/samples/json-serialization.md) sample.  
+ This article is based on the [JSON serialization](../samples/json-serialization.md) sample.  
   
-### To define the data contract for a Person  
+## To define the data contract for a Person type 
   
-1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
+1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing service contracts](../designing-service-contracts.md).  
   
     ```csharp  
     [DataContract]  
@@ -31,7 +31,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
     }  
     ```  
   
-### To serialize an instance of type Person to JSON  
+## To serialize an instance of type Person to JSON  
   
 1.  Create an instance of the `Person` type.  
   
@@ -41,7 +41,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
     p.age = 42;  
     ```  
   
-2.  Serialize the `Person` object to a memory stream using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
+2.  Serialize the `Person` object to a memory stream by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
     ```csharp  
     MemoryStream stream1 = new MemoryStream();  
@@ -63,7 +63,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
     Console.WriteLine(sr.ReadToEnd());  
     ```  
   
-### To deserialize an instance of type Person from JSON  
+## To deserialize an instance of type Person from JSON  
   
 1.  Deserialize the JSON-encoded data into a new instance of `Person` by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject%2A> method of the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
@@ -130,5 +130,5 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
 ```  
   
 ## See also
-- [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md)
-- [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)
+- [Stand-alone JSON serialization](stand-alone-json-serialization.md)
+- [Support for JSON and other data transfer formats](support-for-json-and-other-data-transfer-formats.md)

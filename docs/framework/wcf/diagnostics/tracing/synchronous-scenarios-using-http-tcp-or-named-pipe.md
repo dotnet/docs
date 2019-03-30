@@ -39,7 +39,7 @@ This topic describes the activities and transfers for different synchronous requ
 #### Closing a Service Host  
  The ServiceHost’s close activity (Z) is created from the ambient activity.  
   
- ![Synchronous scenarios using HTTP&#47;TCP&#47; Named Pipes](../../../../../docs/framework/wcf/diagnostics/tracing/media/sync.gif "Sync")  
+ ![Diagram showing synchronous scenarios: HTTP, TCP, or named pipes.](./media/synchronous-scenarios-using-http-tcp-or-named-pipe/synchronous-scenario-http-tcp-named-pipes.gif)  
   
  In \<A: name>, `A` is a shortcut symbol that describes the activity in the previous text and in table 3. `Name` is a shortened name of the activity.  
   

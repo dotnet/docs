@@ -8,7 +8,7 @@ ms.date: 01/30/2019
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
-![cover image](./media/cover.png)
+![Cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
 
 PUBLISHED BY
 

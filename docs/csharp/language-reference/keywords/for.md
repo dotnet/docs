@@ -41,9 +41,9 @@ The statements in the *initializer* section are executed only once, before enter
 
   - invocation of a method
 
-  - prefix or postfix [increment](../operators/increment-operator.md) expression, such as `++i` or `i++`
+  - prefix or postfix [increment](../operators/arithmetic-operators.md#increment-operator-) expression, such as `++i` or `i++`
 
-  - prefix or postfix [decrement](../operators/decrement-operator.md) expression, such as `--i` or `i--`
+  - prefix or postfix [decrement](../operators/arithmetic-operators.md#decrement-operator---) expression, such as `--i` or `i--`
 
   - creation of an object by using [new](new-operator.md) keyword
 
@@ -73,9 +73,9 @@ The *iterator* section defines what happens after each iteration of the body of 
 
 - invocation of a method
 
-- prefix or postfix [increment](../operators/increment-operator.md) expression, such as `++i` or `i++`
+- prefix or postfix [increment](../operators/arithmetic-operators.md#increment-operator-) expression, such as `++i` or `i++`
 
-- prefix or postfix [decrement](../operators/decrement-operator.md) expression, such as `--i` or `i--`
+- prefix or postfix [decrement](../operators/arithmetic-operators.md#decrement-operator---) expression, such as `--i` or `i--`
 
 - creation of an object by using [new](new-operator.md) keyword
 

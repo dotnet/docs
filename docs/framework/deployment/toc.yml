@@ -1,0 +1,36 @@
+- name: Deployment
+  href: index.md
+  items:
+  - name: Deploying the .NET Framework
+    href: deploying-the-net-framework.md
+    items:
+    - name: Deployment Guide for Developers
+      href: deployment-guide-for-developers.md
+    - name: Deployment Guide for Administrators
+      href: guide-for-administrators.md
+    - name: Reducing System Restarts During .NET Framework 4.5 Installations
+      href: reducing-system-restarts.md
+    - name: "How to: Get Progress from the .NET Framework 4.5 Installer"
+      href: how-to-get-progress-from-the-dotnet-installer.md
+    - name: ".NET Framework Initialization Errors: Managing the User Experience"
+      href: initialization-errors-managing-the-user-experience.md
+    - name: "How to: Debug CLR Activation Issues"
+      href: how-to-debug-clr-activation-issues.md
+  - name: Deploying .NET Framework Applications
+    href: net-framework-applications.md
+    items:
+    - name: How the Runtime Locates Assemblies
+      href: how-the-runtime-locates-assemblies.md
+    - name: Best Practices for Assembly Loading
+      href: best-practices-for-assembly-loading.md
+  - name: .NET Framework Client Profile
+    href: client-profile.md
+  - name: Side-by-Side Execution
+    href: side-by-side-execution.md
+    items:
+    - name: Configuring Assembly Binding Redirection
+      href: configuring-assembly-binding-redirection.md
+    - name: Guidelines for Creating Components for Side-by-Side Execution
+      href: guidelines-for-creating-components-for-side-by-side-execution.md
+    - name: In-Process Side-by-Side Execution
+      href: in-process-side-by-side-execution.md

@@ -22,7 +22,7 @@ System.Console.WriteLine(type);
  The following example uses reflection to obtain the full name of the loaded assembly.  
   
 ```csharp  
-// Using Reflection to get information from an Assembly:  
+// Using Reflection to get information of an Assembly:  
 System.Reflection.Assembly info = typeof(System.Int32).Assembly;  
 System.Console.WriteLine(info);  
 ```  

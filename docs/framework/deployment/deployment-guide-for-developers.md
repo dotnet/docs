@@ -301,7 +301,7 @@ Type: DWORD
  To install a language pack with the .NET Framework offline installer, you must chain it to your app's setup. For example, to deploy the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] offline installer with the Japanese language pack, use the following command:
 
 ```
-NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductName>
+NDP451-KB2858728-x86-x64-AllOS-JPN.exe /q /norestart /ChainingPackage <ProductName>
 ```
 
  You do not have to chain the language packs if you use the web installer; setup will install the language pack that matches the user's MUI setting. If you want to install a different language, you can use the `/LCID` option to specify a language pack.

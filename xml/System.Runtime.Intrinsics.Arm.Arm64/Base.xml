@@ -18,7 +18,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+             This class provides access to the Arm64 Base intrinsics
+            
+             These intrinsics are supported by all Arm64 CPUs
+             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -71,7 +75,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Vector LeadingSignCount
+            Corresponds to integer forms of ARM64 CLS
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +136,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Vector LeadingZeroCount
+            Corresponds to integer forms of ARM64 CLZ
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

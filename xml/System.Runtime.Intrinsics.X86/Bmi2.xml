@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel BMI2 hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,7 +63,11 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _mulx_u32 (unsigned int a, unsigned int b, unsigned int* hi)
+              MULX r32a, r32b, reg/m32
+            The above native signature does not directly correspond to the managed signature. 
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +95,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="low">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _mulx_u32 (unsigned int a, unsigned int b, unsigned int* hi)
+              MULX r32a, r32b, reg/m32
+            The above native signature does not directly correspond to the managed signature. 
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +126,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _pdep_u32 (unsigned int a, unsigned int mask)
+              PDEP r32a, r32b, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +156,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _pext_u32 (unsigned int a, unsigned int mask)
+              PEXT r32a, r32b, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +186,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _bzhi_u32 (unsigned int a, unsigned int index)
+              BZHI r32a, reg/m32, r32b
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -40,7 +40,11 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cvtsi64_ss (__m128 a, __int64 b)
+              CVTSI2SS xmm, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,7 +69,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __int64 _mm_cvtss_si64 (__m128 a)
+              CVTSS2SI r64, xmm/m32
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +98,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __int64 _mm_cvttss_si64 (__m128 a)
+              CVTTSS2SI r64, xmm/m32
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

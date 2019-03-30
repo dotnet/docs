@@ -18,7 +18,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+             This class provides access to the Arm64 SHA1 Crypto intrinsics
+            
+             Arm64 CPU indicate support for this feature by setting
+             ID_AA64ISAR0_EL1.SHA1 is 1 or better
+             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,7 +51,10 @@
       </Parameters>
       <Docs>
         <param name="hash_e">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA1 fixed rotate
+            vsha1h_u32 (uint32_t hash_e)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +87,10 @@
         <param name="hash_abcd">To be added.</param>
         <param name="hash_e">To be added.</param>
         <param name="wk">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA1 hash update choose form.
+            vsha1cq_u32 (uint32x4_t hash_abcd, uint32_t hash_e, uint32x4_t wk)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +123,10 @@
         <param name="hash_abcd">To be added.</param>
         <param name="hash_e">To be added.</param>
         <param name="wk">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA1 hash update majority form.
+            vsha1mq_u32 (uint32x4_t hash_abcd, uint32_t hash_e, uint32x4_t wk)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +159,10 @@
         <param name="hash_abcd">To be added.</param>
         <param name="hash_e">To be added.</param>
         <param name="wk">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA1 hash update parity form.
+            vsha1pq_u32 (uint32x4_t hash_abcd, uint32_t hash_e, uint32x4_t wk)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +220,10 @@
         <param name="w0_3">To be added.</param>
         <param name="w4_7">To be added.</param>
         <param name="w8_11">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA1 schedule update 0
+            vsha1su0q_u32 (uint32x4_t w0_3, uint32x4_t w4_7, uint32x4_t w8_11)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +254,10 @@
       <Docs>
         <param name="tw0_3">To be added.</param>
         <param name="w12_15">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA1 schedule update 1
+            vsha1su1q_u32 (uint32x4_t tw0_3, uint32x4_t w12_15)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel PCLMULQDQ hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +44,10 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_clmulepi64_si128 (__m128i a, __m128i b, const int imm8)
+              PCLMULQDQ xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +76,10 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_clmulepi64_si128 (__m128i a, __m128i b, const int imm8)
+              PCLMULQDQ xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

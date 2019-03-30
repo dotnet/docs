@@ -19,7 +19,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel SSE2 hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +51,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi8 (__m128i a,  __m128i b)
+              PADDB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -80,7 +85,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_add_pd (__m128d a,  __m128d b)
+              ADDPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +119,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi16 (__m128i a,  __m128i b)
+              PADDW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +153,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi32 (__m128i a,  __m128i b)
+              PADDD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,7 +187,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi64 (__m128i a,  __m128i b)
+              PADDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +221,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi8 (__m128i a,  __m128i b)
+              PADDB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,7 +255,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi16 (__m128i a,  __m128i b)
+              PADDW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,7 +289,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi32 (__m128i a,  __m128i b)
+              PADDD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +323,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_add_epi64 (__m128i a,  __m128i b)
+              PADDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -328,7 +357,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_adds_epu8 (__m128i a,  __m128i b)
+              PADDUSB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +391,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_adds_epi16 (__m128i a,  __m128i b)
+              PADDSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,7 +425,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_adds_epi8 (__m128i a,  __m128i b)
+              PADDSB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -421,7 +459,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_adds_epu16 (__m128i a,  __m128i b)
+              PADDUSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,7 +493,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_add_sd (__m128d a,  __m128d b)
+              ADDSD xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -483,7 +527,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -514,7 +561,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_and_pd (__m128d a, __m128d b)
+              ANDPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -545,7 +595,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -576,7 +629,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,7 +663,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,7 +697,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -669,7 +731,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -700,7 +765,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -731,7 +799,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_and_si128 (__m128i a,  __m128i b)
+              PAND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -762,7 +833,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,7 +867,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_andnot_pd (__m128d a, __m128d b)
+              ADDNPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -824,7 +901,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -855,7 +935,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -886,7 +969,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -917,7 +1003,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -948,7 +1037,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -979,7 +1071,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,7 +1105,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_andnot_si128 (__m128i a,  __m128i b)
+              PANDN xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1041,7 +1139,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_avg_epu8 (__m128i a,  __m128i b)
+              PAVGB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1072,7 +1173,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_avg_epu16 (__m128i a,  __m128i b)
+              PAVGW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1103,7 +1207,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpeq_epi8 (__m128i a,  __m128i b)
+              PCMPEQB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1134,7 +1241,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpeq_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(0)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1165,7 +1275,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpeq_epi16 (__m128i a,  __m128i b)
+              PCMPEQW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1196,7 +1309,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpeq_epi32 (__m128i a,  __m128i b)
+              PCMPEQD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1227,7 +1343,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpeq_epi8 (__m128i a,  __m128i b)
+              PCMPEQB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1258,7 +1377,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpeq_epi16 (__m128i a,  __m128i b)
+              PCMPEQW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1289,7 +1411,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpeq_epi32 (__m128i a,  __m128i b)
+              PCMPEQD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1320,7 +1445,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comieq_sd (__m128d a, __m128d b)
+              COMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1351,7 +1479,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpeq_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(0)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1382,7 +1513,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomieq_sd (__m128d a, __m128d b)
+              UCOMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1413,7 +1547,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpgt_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1444,7 +1581,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpgt_epi16 (__m128i a,  __m128i b)
+              PCMPGTW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1475,7 +1615,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpgt_epi32 (__m128i a,  __m128i b)
+              PCMPGTD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1506,7 +1649,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmpgt_epi8 (__m128i a,  __m128i b)
+              PCMPGTB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1537,7 +1683,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comigt_sd (__m128d a, __m128d b)
+              COMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1568,7 +1717,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpge_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1599,7 +1751,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comige_sd (__m128d a, __m128d b)
+              COMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1630,7 +1785,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpge_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1661,7 +1819,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomige_sd (__m128d a, __m128d b)
+              UCOMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1692,7 +1853,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpgt_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1723,7 +1887,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomigt_sd (__m128d a, __m128d b)
+              UCOMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1754,7 +1921,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmplt_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1785,7 +1955,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmplt_epi16 (__m128i a,  __m128i b)
+              PCMPGTW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1816,7 +1989,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmplt_epi32 (__m128i a,  __m128i b)
+              PCMPGTD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1847,7 +2023,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cmplt_epi8 (__m128i a,  __m128i b)
+              PCMPGTB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1878,7 +2057,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comilt_sd (__m128d a, __m128d b)
+              COMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1909,7 +2091,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmple_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1940,7 +2125,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comile_sd (__m128d a, __m128d b)
+              COMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1971,7 +2159,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmple_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2002,7 +2193,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomile_sd (__m128d a, __m128d b)
+              UCOMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2033,7 +2227,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmplt_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2064,7 +2261,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomilt_sd (__m128d a, __m128d b)
+              UCOMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2095,7 +2295,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpneq_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(4)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2126,7 +2329,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comineq_sd (__m128d a, __m128d b)
+              COMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2157,7 +2363,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpneq_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(4)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2188,7 +2397,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomineq_sd (__m128d a, __m128d b)
+              UCOMISS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2219,7 +2431,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpngt_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2250,7 +2465,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpnge_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2281,7 +2499,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpnge_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2312,7 +2533,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpngt_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2343,7 +2567,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpnlt_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2374,7 +2601,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpnle_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2405,7 +2635,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpnle_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2436,7 +2669,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpnlt_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2467,7 +2703,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpord_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(7)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2498,7 +2737,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpord_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(7)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2529,7 +2771,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpunord_pd (__m128d a,  __m128d b)
+              CMPPD xmm, xmm/m128, imm8(3)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2560,7 +2805,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cmpunord_sd (__m128d a,  __m128d b)
+              CMPSD xmm, xmm/m64, imm8(3)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2591,7 +2839,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cvtsi32_sd (__m128d a, int b)
+              CVTSI2SD xmm, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2649,7 +2900,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cvtss_sd (__m128d a, __m128 b)
+              CVTSS2SD xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2678,7 +2932,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cvtsi32_si128 (int a)
+              MOVD xmm, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2734,7 +2991,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cvtsd_ss (__m128 a, __m128d b)
+              CVTSD2SS xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2763,7 +3023,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cvtsi32_si128 (int a)
+              MOVD xmm, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2842,7 +3105,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_cvtsd_si32 (__m128d a)
+              CVTSD2SI r32, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2871,7 +3137,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_cvtsi128_si32 (__m128i a)
+              MOVD reg/m32, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2900,7 +3169,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_cvttsd_si32 (__m128d a)
+              CVTTSD2SI reg, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3004,7 +3276,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_cvtsi128_si32 (__m128i a)
+              MOVD reg/m32, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3058,7 +3333,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cvtepi32_pd (__m128i a)
+              CVTDQ2PD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3087,7 +3365,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_cvtps_pd (__m128 a)
+              CVTPS2PD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3116,7 +3397,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cvtpd_epi32 (__m128d a)
+              CVTPD2DQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3145,7 +3429,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cvtps_epi32 (__m128 a)
+              CVTPS2DQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3174,7 +3461,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cvttpd_epi32 (__m128d a)
+              CVTTPD2DQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3203,7 +3493,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_cvttps_epi32 (__m128 a)
+              CVTTPS2DQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3232,7 +3525,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cvtpd_ps (__m128d a)
+              CVTPD2PS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3261,7 +3557,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cvtepi32_ps (__m128i a)
+              CVTDQ2PS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3292,7 +3591,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_div_pd (__m128d a,  __m128d b)
+              DIVPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3323,7 +3625,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_div_sd (__m128d a,  __m128d b)
+              DIVSD xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3381,7 +3686,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_extract_epi16 (__m128i a,  int immediate)
+              PEXTRW reg, xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3414,7 +3722,10 @@
         <param name="value">To be added.</param>
         <param name="data">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_insert_epi16 (__m128i a,  int i, int immediate)
+              PINSRW xmm, reg/m16, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3447,7 +3758,10 @@
         <param name="value">To be added.</param>
         <param name="data">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_insert_epi16 (__m128i a,  int i, int immediate)
+              PINSRW xmm, reg/m16, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3500,7 +3814,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3528,7 +3845,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_load_pd (double const* mem_address)
+              MOVAPD xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3556,7 +3876,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3584,7 +3907,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3612,7 +3938,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3640,7 +3969,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3668,7 +4000,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3696,7 +4031,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3724,7 +4062,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_load_si128 (__m128i const* mem_address)
+              MOVDQA xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3750,7 +4091,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_lfence(void)
+              LFENCE
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3779,7 +4123,10 @@
       <Docs>
         <param name="lower">To be added.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_loadh_pd (__m128d a, double const* mem_addr)
+              MOVHPD xmm, m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3809,7 +4156,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_loadl_pd (__m128d a, double const* mem_addr)
+              MOVLPD xmm, m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3837,7 +4187,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_load_sd (double const* mem_address)
+              MOVSD xmm, m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3865,7 +4218,11 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadl_epi32 (__m128i const* mem_addr)
+              MOVD xmm, reg/m32
+            The above native signature does not exist. We provide this additional overload for completeness.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3893,7 +4250,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadl_epi64 (__m128i const* mem_addr)
+              MOVQ xmm, reg/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3921,7 +4281,11 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadl_epi32 (__m128i const* mem_addr)
+              MOVD xmm, reg/m32
+            The above native signature does not exist. We provide this additional overload for completeness.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3949,7 +4313,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadl_epi64 (__m128i const* mem_addr)
+              MOVQ xmm, reg/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3977,7 +4344,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4005,7 +4375,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_loadu_pd (double const* mem_address)
+              MOVUPD xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4033,7 +4406,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4061,7 +4437,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4089,7 +4468,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4117,7 +4499,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4145,7 +4530,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4173,7 +4561,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4201,7 +4592,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_loadu_si128 (__m128i const* mem_address)
+              MOVDQU xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4233,7 +4627,10 @@
         <param name="source">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_maskmoveu_si128 (__m128i a,  __m128i mask, char* mem_address)
+              MASKMOVDQU xmm, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4264,7 +4661,10 @@
         <param name="source">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_maskmoveu_si128 (__m128i a,  __m128i mask, char* mem_address)
+              MASKMOVDQU xmm, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4294,7 +4694,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_max_epu8 (__m128i a,  __m128i b)
+              PMAXUB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4325,7 +4728,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_max_pd (__m128d a,  __m128d b)
+              MAXPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4356,7 +4762,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_max_epi16 (__m128i a,  __m128i b)
+              PMAXSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4387,7 +4796,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_max_sd (__m128d a,  __m128d b)
+              MAXSD xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4413,7 +4825,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_mfence(void)
+              MFENCE
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4443,7 +4858,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_min_epu8 (__m128i a,  __m128i b)
+              PMINUB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4474,7 +4892,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_min_pd (__m128d a,  __m128d b)
+              MINPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4505,7 +4926,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_min_epi16 (__m128i a,  __m128i b)
+              PMINSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4536,7 +4960,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_min_sd (__m128d a,  __m128d b)
+              MINSD xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4565,7 +4992,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_movemask_epi8 (__m128i a)
+              PMOVMSKB reg, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4594,7 +5024,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_movemask_pd (__m128d a)
+              MOVMSKPD reg, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4623,7 +5056,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_movemask_epi8 (__m128i a)
+              PMOVMSKB reg, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4652,7 +5088,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_move_epi64 (__m128i a)
+              MOVQ xmm, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4681,7 +5120,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_move_epi64 (__m128i a)
+              MOVQ xmm, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4712,7 +5154,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_move_sd (__m128d a, __m128d b)
+              MOVSD xmm, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4743,7 +5188,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_mul_pd (__m128d a,  __m128d b)
+              MULPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4774,7 +5222,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_mul_epu32 (__m128i a,  __m128i b)
+              PMULUDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4801,7 +5252,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_madd_epi16 (__m128i a,  __m128i b)
+              PMADDWD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4832,7 +5286,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_mulhi_epi16 (__m128i a,  __m128i b)
+              PMULHW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4863,7 +5320,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_mulhi_epu16 (__m128i a,  __m128i b)
+              PMULHUW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4921,7 +5381,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_mullo_epi16 (__m128i a,  __m128i b)
+              PMULLW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4948,7 +5411,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_mullo_epi16 (__m128i a,  __m128i b)
+              PMULLW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4979,7 +5445,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_mul_sd (__m128d a,  __m128d b)
+              MULSD xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5010,7 +5479,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5041,7 +5513,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_or_pd (__m128d a,  __m128d b)
+              ORPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5072,7 +5547,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5103,7 +5581,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5134,7 +5615,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5165,7 +5649,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5196,7 +5683,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5227,7 +5717,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5258,7 +5751,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_or_si128 (__m128i a,  __m128i b)
+              POR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5289,7 +5785,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_packs_epi16 (__m128i a,  __m128i b)
+              PACKSSWB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5320,7 +5819,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_packs_epi32 (__m128i a,  __m128i b)
+              PACKSSDW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5351,7 +5853,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_packus_epi16 (__m128i a,  __m128i b)
+              PACKUSWB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5995,7 +6500,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_slli_epi16 (__m128i a,  int immediate)
+              PSLLW xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6026,7 +6534,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sll_epi16 (__m128i a, __m128i count)
+              PSLLW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6057,7 +6568,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_slli_epi32 (__m128i a,  int immediate)
+              PSLLD xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6088,7 +6602,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sll_epi32 (__m128i a, __m128i count)
+              PSLLD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6119,7 +6636,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_slli_epi64 (__m128i a,  int immediate)
+              PSLLQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6150,7 +6670,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sll_epi64 (__m128i a, __m128i count)
+              PSLLQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6181,7 +6704,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_slli_epi16 (__m128i a,  int immediate)
+              PSLLW xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6212,7 +6738,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sll_epi16 (__m128i a,  __m128i count)
+              PSLLW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6243,7 +6772,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_slli_epi32 (__m128i a,  int immediate)
+              PSLLD xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6274,7 +6806,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sll_epi32 (__m128i a, __m128i count)
+              PSLLD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6305,7 +6840,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_slli_epi64 (__m128i a,  int immediate)
+              PSLLQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6336,7 +6874,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sll_epi64 (__m128i a, __m128i count)
+              PSLLQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6367,7 +6908,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6398,7 +6942,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6429,7 +6976,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6460,7 +7010,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6491,7 +7044,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6522,7 +7078,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6553,7 +7112,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6584,7 +7146,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bslli_si128 (__m128i a, int imm8)
+              PSLLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6615,7 +7180,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srai_epi16 (__m128i a,  int immediate)
+              PSRAW xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6646,7 +7214,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sra_epi16 (__m128i a, __m128i count)
+              PSRAW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6677,7 +7248,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srai_epi32 (__m128i a,  int immediate)
+              PSRAD xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6708,7 +7282,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sra_epi32 (__m128i a, __m128i count)
+              PSRAD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6739,7 +7316,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srli_epi16 (__m128i a,  int immediate)
+              PSRLW xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6770,7 +7350,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srl_epi16 (__m128i a, __m128i count)
+              PSRLW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6801,7 +7384,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srli_epi32 (__m128i a,  int immediate)
+              PSRLD xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6832,7 +7418,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srl_epi32 (__m128i a, __m128i count)
+              PSRLD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6863,7 +7452,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srli_epi64 (__m128i a,  int immediate)
+              PSRLQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6894,7 +7486,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srl_epi64 (__m128i a, __m128i count)
+              PSRLQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6925,7 +7520,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srli_epi16 (__m128i a,  int immediate)
+              PSRLW xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6956,7 +7554,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srl_epi16 (__m128i a, __m128i count)
+              PSRLW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6987,7 +7588,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srli_epi32 (__m128i a,  int immediate)
+              PSRLD xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7018,7 +7622,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srl_epi32 (__m128i a, __m128i count)
+              PSRLD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7049,7 +7656,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srli_epi64 (__m128i a,  int immediate)
+              PSRLQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7080,7 +7690,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_srl_epi64 (__m128i a, __m128i count)
+              PSRLQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7111,7 +7724,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7142,7 +7758,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7173,7 +7792,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7204,7 +7826,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7235,7 +7860,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7266,7 +7894,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7297,7 +7928,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7328,7 +7962,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="numBytes">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_bsrli_si128 (__m128i a, int imm8)
+              PSRLDQ xmm, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7359,7 +7996,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shuffle_epi32 (__m128i a,  int immediate)
+              PSHUFD xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7390,7 +8030,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shuffle_epi32 (__m128i a,  int immediate)
+              PSHUFD xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7423,7 +8066,10 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_shuffle_pd (__m128d a,  __m128d b, int immediate)
+              SHUFPD xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7454,7 +8100,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shufflehi_epi16 (__m128i a,  int immediate)
+              PSHUFHW xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7485,7 +8134,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shufflehi_epi16 (__m128i a,  int control)
+              PSHUFHW xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7516,7 +8168,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shufflelo_epi16 (__m128i a,  int control)
+              PSHUFLW xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7547,7 +8202,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shufflelo_epi16 (__m128i a,  int control)
+              PSHUFLW xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7576,7 +8234,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_sqrt_pd (__m128d a)
+              SQRTPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7605,7 +8266,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_sqrt_sd (__m128d a)
+              SQRTSD xmm, xmm/64
+            The above native signature does not exist. We provide this additional overload for the recommended use case of this intrinsic.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7636,7 +8301,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_sqrt_sd (__m128d a, __m128d b)
+              SQRTSD xmm, xmm/64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7666,7 +8334,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7695,7 +8366,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_pd (double* mem_addr, __m128d a)
+              MOVUPD m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7724,7 +8398,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7753,7 +8430,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7782,7 +8462,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7811,7 +8494,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7840,7 +8526,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7869,7 +8558,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7898,7 +8590,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQU m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7927,7 +8622,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7956,7 +8654,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_pd (double* mem_addr, __m128d a)
+              MOVAPD m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -7985,7 +8686,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8014,7 +8718,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8043,7 +8750,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8072,7 +8782,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8101,7 +8814,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8130,7 +8846,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8159,7 +8878,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_si128 (__m128i* mem_addr, __m128i a)
+              MOVDQA m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8188,7 +8910,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8217,7 +8942,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_pd (double* mem_addr, __m128d a)
+              MOVNTPD m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8246,7 +8974,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8275,7 +9006,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8304,7 +9038,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8333,7 +9070,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8362,7 +9102,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8391,7 +9134,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8420,7 +9166,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si128 (__m128i* mem_addr, __m128i a)
+              MOVNTDQ m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8449,7 +9198,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeh_pd (double* mem_addr, __m128d a)
+              MOVHPD m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8478,7 +9230,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storel_pd (double* mem_addr, __m128d a)
+              MOVLPD m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8507,7 +9262,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storel_epi64 (__m128i* mem_addr, __m128i a)
+              MOVQ m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8536,7 +9294,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storel_epi64 (__m128i* mem_addr, __m128i a)
+              MOVQ m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8565,7 +9326,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si32(int *p, int a)
+              MOVNTI m32, r32
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8619,7 +9383,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_si32(int *p, int a)
+              MOVNTI m32, r32
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8673,7 +9440,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_sd (double* mem_addr, __m128d a)
+              MOVSD m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -8703,7 +9473,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi8 (__m128i a,  __m128i b)
+              PSUBB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8734,7 +9507,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_sub_pd (__m128d a, __m128d b)
+              SUBPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8765,7 +9541,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi16 (__m128i a,  __m128i b)
+              PSUBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8796,7 +9575,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi32 (__m128i a,  __m128i b)
+              PSUBD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8827,7 +9609,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi64 (__m128i a,  __m128i b)
+              PSUBQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8858,7 +9643,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi8 (__m128i a,  __m128i b)
+              PSUBB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8889,7 +9677,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi16 (__m128i a,  __m128i b)
+              PSUBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8920,7 +9711,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi32 (__m128i a,  __m128i b)
+              PSUBD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8951,7 +9745,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sub_epi64 (__m128i a,  __m128i b)
+              PSUBQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8982,7 +9779,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_subs_epu8 (__m128i a,  __m128i b)
+              PSUBUSB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9013,7 +9813,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_subs_epi16 (__m128i a,  __m128i b)
+              PSUBSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9044,7 +9847,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_subs_epi8 (__m128i a,  __m128i b)
+              PSUBSB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9075,7 +9881,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_subs_epu16 (__m128i a,  __m128i b)
+              PSUBUSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9106,34 +9915,40 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_sub_sd (__m128d a, __m128d b)
+              SUBSD xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SumAbsoluteDifferences">
-      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;long&gt; SumAbsoluteDifferences (System.Runtime.Intrinsics.Vector128&lt;byte&gt; left, System.Runtime.Intrinsics.Vector128&lt;byte&gt; right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;int64&gt; SumAbsoluteDifferences(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; right) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;ushort&gt; SumAbsoluteDifferences (System.Runtime.Intrinsics.Vector128&lt;byte&gt; left, System.Runtime.Intrinsics.Vector128&lt;byte&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int16&gt; SumAbsoluteDifferences(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse2.SumAbsoluteDifferences(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SumAbsoluteDifferences (left As Vector128(Of Byte), right As Vector128(Of Byte)) As Vector128(Of Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;long&gt; SumAbsoluteDifferences(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; left, System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; right);" />
-      <MemberSignature Language="F#" Value="static member SumAbsoluteDifferences : System.Runtime.Intrinsics.Vector128&lt;byte&gt; * System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Sse2.SumAbsoluteDifferences (left, right)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SumAbsoluteDifferences (left As Vector128(Of Byte), right As Vector128(Of Byte)) As Vector128(Of UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;System::UInt16&gt; SumAbsoluteDifferences(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; left, System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; right);" />
+      <MemberSignature Language="F#" Value="static member SumAbsoluteDifferences : System.Runtime.Intrinsics.Vector128&lt;byte&gt; * System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;uint16&gt;" Usage="System.Runtime.Intrinsics.X86.Sse2.SumAbsoluteDifferences (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;</ReturnType>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sad_epu8 (__m128i a,  __m128i b)
+              PSADBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9164,7 +9979,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi8 (__m128i a,  __m128i b)
+              PUNPCKHBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9195,7 +10013,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_unpackhi_pd (__m128d a,  __m128d b)
+              UNPCKHPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9226,7 +10047,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi16 (__m128i a,  __m128i b)
+              PUNPCKHWD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9257,7 +10081,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi32 (__m128i a,  __m128i b)
+              PUNPCKHDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9288,7 +10115,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi64 (__m128i a,  __m128i b)
+              PUNPCKHQDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9319,7 +10149,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi8 (__m128i a,  __m128i b)
+              PUNPCKHBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9350,7 +10183,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi16 (__m128i a,  __m128i b)
+              PUNPCKHWD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9381,7 +10217,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi32 (__m128i a,  __m128i b)
+              PUNPCKHDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9412,7 +10251,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpackhi_epi64 (__m128i a,  __m128i b)
+              PUNPCKHQDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9443,7 +10285,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi8 (__m128i a,  __m128i b)
+              PUNPCKLBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9474,7 +10319,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_unpacklo_pd (__m128d a,  __m128d b)
+              UNPCKLPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9505,7 +10353,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi16 (__m128i a,  __m128i b)
+              PUNPCKLWD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9536,7 +10387,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi32 (__m128i a,  __m128i b)
+              PUNPCKLDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9567,7 +10421,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi64 (__m128i a,  __m128i b)
+              PUNPCKLQDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9598,7 +10455,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi8 (__m128i a,  __m128i b)
+              PUNPCKLBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9629,7 +10489,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi16 (__m128i a,  __m128i b)
+              PUNPCKLWD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9660,7 +10523,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi32 (__m128i a,  __m128i b)
+              PUNPCKLDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9691,7 +10557,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_unpacklo_epi64 (__m128i a,  __m128i b)
+              PUNPCKLQDQ xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9722,7 +10591,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9753,7 +10625,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_xor_pd (__m128d a,  __m128d b)
+              XORPD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9784,7 +10659,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9815,7 +10693,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9846,7 +10727,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9877,7 +10761,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9908,7 +10795,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9939,7 +10829,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9970,7 +10863,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_xor_si128 (__m128i a,  __m128i b)
+              PXOR xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -40,7 +40,11 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _andn_u64 (unsigned __int64 a, unsigned __int64 b)
+              ANDN r64a, r64b, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +71,11 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _bextr2_u64 (unsigned __int64 a, unsigned __int64 control)
+              BEXTR r64a, reg/m64, r64b
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +104,11 @@
         <param name="value">To be added.</param>
         <param name="start">To be added.</param>
         <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _bextr_u64 (unsigned __int64 a, unsigned int start, unsigned int len)
+              BEXTR r64a, reg/m64, r64b
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +133,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _blsi_u64 (unsigned __int64 a)
+              BLSI reg, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +162,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _blsmsk_u64 (unsigned __int64 a)
+              BLSMSK reg, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +212,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _blsr_u64 (unsigned __int64 a)
+              BLSR reg, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,7 +241,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __int64 _mm_tzcnt_64 (unsigned __int64 a)
+              TZCNT reg, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

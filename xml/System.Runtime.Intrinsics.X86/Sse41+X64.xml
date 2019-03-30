@@ -40,7 +40,11 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __int64 _mm_extract_epi64 (__m128i a, const int imm8)
+              PEXTRQ reg/m64, xmm, imm8
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +71,11 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __int64 _mm_extract_epi64 (__m128i a, const int imm8)
+              PEXTRQ reg/m64, xmm, imm8
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +104,11 @@
         <param name="value">To be added.</param>
         <param name="data">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_insert_epi64 (__m128i a, __int64 i, const int imm8)
+              PINSRQ xmm, reg/m64, imm8
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,7 +137,11 @@
         <param name="value">To be added.</param>
         <param name="data">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_insert_epi64 (__m128i a, __int64 i, const int imm8)
+              PINSRQ xmm, reg/m64, imm8
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

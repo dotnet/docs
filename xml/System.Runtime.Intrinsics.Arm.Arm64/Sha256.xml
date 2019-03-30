@@ -18,7 +18,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+             This class provides access to the Arm64 SHA256 Crypto intrinsics
+            
+             Arm64 CPU indicate support for this feature by setting
+             ID_AA64ISAR0_EL1.SHA2 is 1 or better
+             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +55,10 @@
         <param name="hash_abcd">To be added.</param>
         <param name="hash_efgh">To be added.</param>
         <param name="wk">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA256 hash update (part 1).
+            vsha256hq_u32 (uint32x4_t hash_abcd, uint32x4_t hash_efgh, uint32x4_t wk)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +91,10 @@
         <param name="hash_efgh">To be added.</param>
         <param name="hash_abcd">To be added.</param>
         <param name="wk">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA256 hash update (part 2).
+            vsha256h2q_u32 (uint32x4_t hash_efgh, uint32x4_t hash_abcd, uint32x4_t wk)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +150,10 @@
       <Docs>
         <param name="w0_3">To be added.</param>
         <param name="w4_7">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA256 schedule update 0
+            vsha256su0q_u32 (uint32x4_t w0_3, uint32x4_t w4_7)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +186,10 @@
         <param name="w0_3">To be added.</param>
         <param name="w8_11">To be added.</param>
         <param name="w12_15">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Performs SHA256 schedule update 1
+            vsha256su1q_u32 (uint32x4_t w0_3, uint32x4_t w8_11, uint32x4_t w12_15)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

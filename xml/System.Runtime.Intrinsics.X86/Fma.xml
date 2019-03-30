@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel FMA hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -63,7 +65,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fmadd_pd (__m128d a, __m128d b, __m128d c)
+              VFMADDPD xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +97,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fmadd_ps (__m128 a, __m128 b, __m128 c)
+              VFMADDPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +129,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256d _mm256_fmadd_pd (__m256d a, __m256d b, __m256d c)
+              VFMADDPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +161,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256 _mm256_fmadd_ps (__m256 a, __m256 b, __m256 c)
+              VFMADDPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +193,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fnmadd_pd (__m128d a, __m128d b, __m128d c)
+              VFNMADDPD xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,7 +225,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fnmadd_ps (__m128 a, __m128 b, __m128 c)
+              VFNMADDPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +257,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256d _mm256_fnmadd_pd (__m256d a, __m256d b, __m256d c)
+              VFNMADDPD ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,7 +289,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256 _mm256_fnmadd_ps (__m256 a, __m256 b, __m256 c)
+              VFNMADDPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +321,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fnmadd_sd (__m128d a, __m128d b, __m128d c)
+              VFNMADDSD xmm, xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,7 +353,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fnmadd_ss (__m128 a, __m128 b, __m128 c)
+              VFNMADDSS xmm, xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -353,7 +385,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fmadd_sd (__m128d a, __m128d b, __m128d c)
+              VFMADDSS xmm, xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,7 +417,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fmadd_ss (__m128 a, __m128 b, __m128 c)
+              VFMADDSS xmm, xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -411,7 +449,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fmaddsub_pd (__m128d a, __m128d b, __m128d c)
+              VFMADDSUBPD xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -440,7 +481,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fmaddsub_ps (__m128 a, __m128 b, __m128 c)
+              VFMADDSUBPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,7 +513,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256d _mm256_fmaddsub_pd (__m256d a, __m256d b, __m256d c)
+              VFMADDSUBPD ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +545,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256 _mm256_fmaddsub_ps (__m256 a, __m256 b, __m256 c)
+              VFMADDSUBPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,7 +577,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fmsub_pd (__m128d a, __m128d b, __m128d c)
+              VFMSUBPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,7 +609,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fmsub_ps (__m128 a, __m128 b, __m128 c)
+              VFMSUBPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,7 +641,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256d _mm256_fmsub_pd (__m256d a, __m256d b, __m256d c)
+              VFMSUBPD ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -614,7 +673,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256 _mm256_fmsub_ps (__m256 a, __m256 b, __m256 c)
+              VFMSUBPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -643,7 +705,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fmsubadd_pd (__m128d a, __m128d b, __m128d c)
+              VFMSUBADDPD xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -672,7 +737,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fmsubadd_ps (__m128 a, __m128 b, __m128 c)
+              VFMSUBADDPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,7 +769,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256d _mm256_fmsubadd_pd (__m256d a, __m256d b, __m256d c)
+              VFMSUBADDPD ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -730,7 +801,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256 _mm256_fmsubadd_ps (__m256 a, __m256 b, __m256 c)
+              VFMSUBADDPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,7 +833,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fnmsub_pd (__m128d a, __m128d b, __m128d c)
+              VFNMSUBPD xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -788,7 +865,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fnmsub_ps (__m128 a, __m128 b, __m128 c)
+              VFNMSUBPS xmm, xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -817,7 +897,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256d _mm256_fnmsub_pd (__m256d a, __m256d b, __m256d c)
+              VFNMSUBPD ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -846,7 +929,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m256 _mm256_fnmsub_ps (__m256 a, __m256 b, __m256 c)
+              VFNMSUBPS ymm, ymm, ymm/m256
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -875,7 +961,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fnmsub_sd (__m128d a, __m128d b, __m128d c)
+              VFNMSUBSD xmm, xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -904,7 +993,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fnmsub_ss (__m128 a, __m128 b, __m128 c)
+              VFNMSUBSS xmm, xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -933,7 +1025,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_fmsub_sd (__m128d a, __m128d b, __m128d c)
+              VFMSUBSD xmm, xmm, xmm/m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -962,7 +1057,10 @@
         <param name="a">To be added.</param>
         <param name="b">To be added.</param>
         <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_fmsub_ss (__m128 a, __m128 b, __m128 c)
+              VFMSUBSS xmm, xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

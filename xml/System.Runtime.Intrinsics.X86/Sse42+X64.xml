@@ -40,7 +40,11 @@
       <Docs>
         <param name="crc">To be added.</param>
         <param name="data">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned __int64 _mm_crc32_u64 (unsigned __int64 crc, unsigned __int64 v)
+              CRC32 reg, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

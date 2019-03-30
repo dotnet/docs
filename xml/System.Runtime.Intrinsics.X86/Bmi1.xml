@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel BMI1 hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +42,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _andn_u32 (unsigned int a, unsigned int b)
+              ANDN r32a, r32b, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +72,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _bextr2_u32 (unsigned int a, unsigned int control)
+              BEXTR r32a, reg/m32, r32b
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +104,10 @@
         <param name="value">To be added.</param>
         <param name="start">To be added.</param>
         <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _bextr_u32 (unsigned int a, unsigned int start, unsigned int len)
+              BEXTR r32a, reg/m32, r32b
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +132,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _blsi_u32 (unsigned int a)
+              BLSI reg, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +160,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _blsmsk_u32 (unsigned int a)
+              BLSMSK reg, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +209,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            unsigned int _blsr_u32 (unsigned int a)
+              BLSR reg, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,7 +237,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_tzcnt_32 (unsigned int a)
+              TZCNT reg, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

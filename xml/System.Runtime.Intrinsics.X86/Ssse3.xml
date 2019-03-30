@@ -19,7 +19,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel SSSE3 hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +49,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_abs_epi16 (__m128i a)
+              PABSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +81,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_abs_epi32 (__m128i a)
+              PABSD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +113,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_abs_epi8 (__m128i a)
+              PABSB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +145,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -163,7 +178,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +211,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,7 +244,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +281,10 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,7 +313,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,7 +346,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,7 +379,11 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_alignr_epi8 (__m128i a, __m128i b, int count)
+              PALIGNR xmm, xmm/m128, imm8
+            This intrinsic generates PALIGNR that operates over bytes rather than elements of the vectors.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -372,7 +414,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_hadd_epi16 (__m128i a, __m128i b)
+              PHADDW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +448,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_hadd_epi32 (__m128i a, __m128i b)
+              PHADDD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,7 +482,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_hadds_epi16 (__m128i a, __m128i b)
+              PHADDSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,7 +516,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_hsub_epi16 (__m128i a, __m128i b)
+              PHSUBW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,7 +550,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_hsub_epi32 (__m128i a, __m128i b)
+              PHSUBD xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,7 +584,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_hsubs_epi16 (__m128i a, __m128i b)
+              PHSUBSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -583,7 +643,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_maddubs_epi16 (__m128i a, __m128i b)
+              PMADDUBSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -614,7 +677,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_mulhrs_epi16 (__m128i a, __m128i b)
+              PMULHRSW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -641,7 +707,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shuffle_epi8 (__m128i a, __m128i b)
+              PSHUFB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -672,7 +741,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="mask">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_shuffle_epi8 (__m128i a, __m128i b)
+              PSHUFB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -703,7 +775,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sign_epi16 (__m128i a, __m128i b)
+              PSIGNW xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -734,7 +809,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sign_epi32 (__m128i a, __m128i b)
+              PSIGND xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -765,7 +843,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128i _mm_sign_epi8 (__m128i a, __m128i b)
+              PSIGNB xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

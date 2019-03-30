@@ -59,7 +59,11 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __int64 _mm_popcnt_u64 (unsigned __int64 a)
+              POPCNT reg64, reg/m64
+            This intrinisc is only available on 64-bit processes
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

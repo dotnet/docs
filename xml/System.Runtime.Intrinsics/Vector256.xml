@@ -430,9 +430,9 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,9 +455,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,9 +480,9 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,9 +505,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,9 +530,9 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,9 +555,9 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,9 +580,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,9 +605,9 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -630,9 +630,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -655,9 +655,9 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that all elements will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with all elements initialized to the specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with all elements initialized to <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,10 +681,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,10 +708,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,10 +735,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,10 +762,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -789,10 +789,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -816,10 +816,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -843,10 +843,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -870,10 +870,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,10 +897,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,10 +924,10 @@
         <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
       </Parameters>
       <Docs>
-        <param name="lower">To be added.</param>
-        <param name="upper">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lower">The value that the lower 128-bits will be initialized to.</param>
+        <param name="upper">The value that the upper 128-bits will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance from two <see cref="T:System.Runtime.Intrinsics.Vector128`1" /> instances.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> initialized from <paramref name="lower" /> and <paramref name="upper" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -953,12 +953,12 @@
         <Parameter Name="e3" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -984,12 +984,12 @@
         <Parameter Name="e3" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,12 +1015,12 @@
         <Parameter Name="e3" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1050,16 +1050,16 @@
         <Parameter Name="e7" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1089,16 +1089,16 @@
         <Parameter Name="e7" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1128,16 +1128,16 @@
         <Parameter Name="e7" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1175,24 +1175,24 @@
         <Parameter Name="e15" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <param name="e8">To be added.</param>
-        <param name="e9">To be added.</param>
-        <param name="e10">To be added.</param>
-        <param name="e11">To be added.</param>
-        <param name="e12">To be added.</param>
-        <param name="e13">To be added.</param>
-        <param name="e14">To be added.</param>
-        <param name="e15">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <param name="e8">The value that element 8 will be initialized to.</param>
+        <param name="e9">The value that element 9 will be initialized to.</param>
+        <param name="e10">The value that element 10 will be initialized to.</param>
+        <param name="e11">The value that element 11 will be initialized to.</param>
+        <param name="e12">The value that element 12 will be initialized to.</param>
+        <param name="e13">The value that element 13 will be initialized to.</param>
+        <param name="e14">The value that element 14 will be initialized to.</param>
+        <param name="e15">The value that element 15 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1230,24 +1230,24 @@
         <Parameter Name="e15" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <param name="e8">To be added.</param>
-        <param name="e9">To be added.</param>
-        <param name="e10">To be added.</param>
-        <param name="e11">To be added.</param>
-        <param name="e12">To be added.</param>
-        <param name="e13">To be added.</param>
-        <param name="e14">To be added.</param>
-        <param name="e15">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <param name="e8">The value that element 8 will be initialized to.</param>
+        <param name="e9">The value that element 9 will be initialized to.</param>
+        <param name="e10">The value that element 10 will be initialized to.</param>
+        <param name="e11">The value that element 11 will be initialized to.</param>
+        <param name="e12">The value that element 12 will be initialized to.</param>
+        <param name="e13">The value that element 13 will be initialized to.</param>
+        <param name="e14">The value that element 14 will be initialized to.</param>
+        <param name="e15">The value that element 15 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1301,40 +1301,40 @@
         <Parameter Name="e31" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <param name="e8">To be added.</param>
-        <param name="e9">To be added.</param>
-        <param name="e10">To be added.</param>
-        <param name="e11">To be added.</param>
-        <param name="e12">To be added.</param>
-        <param name="e13">To be added.</param>
-        <param name="e14">To be added.</param>
-        <param name="e15">To be added.</param>
-        <param name="e16">To be added.</param>
-        <param name="e17">To be added.</param>
-        <param name="e18">To be added.</param>
-        <param name="e19">To be added.</param>
-        <param name="e20">To be added.</param>
-        <param name="e21">To be added.</param>
-        <param name="e22">To be added.</param>
-        <param name="e23">To be added.</param>
-        <param name="e24">To be added.</param>
-        <param name="e25">To be added.</param>
-        <param name="e26">To be added.</param>
-        <param name="e27">To be added.</param>
-        <param name="e28">To be added.</param>
-        <param name="e29">To be added.</param>
-        <param name="e30">To be added.</param>
-        <param name="e31">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <param name="e8">The value that element 8 will be initialized to.</param>
+        <param name="e9">The value that element 9 will be initialized to.</param>
+        <param name="e10">The value that element 10 will be initialized to.</param>
+        <param name="e11">The value that element 11 will be initialized to.</param>
+        <param name="e12">The value that element 12 will be initialized to.</param>
+        <param name="e13">The value that element 13 will be initialized to.</param>
+        <param name="e14">The value that element 14 will be initialized to.</param>
+        <param name="e15">The value that element 15 will be initialized to.</param>
+        <param name="e16">The value that element 16 will be initialized to.</param>
+        <param name="e17">The value that element 17 will be initialized to.</param>
+        <param name="e18">The value that element 18 will be initialized to.</param>
+        <param name="e19">The value that element 19 will be initialized to.</param>
+        <param name="e20">The value that element 20 will be initialized to.</param>
+        <param name="e21">The value that element 21 will be initialized to.</param>
+        <param name="e22">The value that element 22 will be initialized to.</param>
+        <param name="e23">The value that element 23 will be initialized to.</param>
+        <param name="e24">The value that element 24 will be initialized to.</param>
+        <param name="e25">The value that element 25 will be initialized to.</param>
+        <param name="e26">The value that element 26 will be initialized to.</param>
+        <param name="e27">The value that element 27 will be initialized to.</param>
+        <param name="e28">The value that element 28 will be initialized to.</param>
+        <param name="e29">The value that element 29 will be initialized to.</param>
+        <param name="e30">The value that element 30 will be initialized to.</param>
+        <param name="e31">The value that element 31 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1388,40 +1388,40 @@
         <Parameter Name="e31" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="e0">To be added.</param>
-        <param name="e1">To be added.</param>
-        <param name="e2">To be added.</param>
-        <param name="e3">To be added.</param>
-        <param name="e4">To be added.</param>
-        <param name="e5">To be added.</param>
-        <param name="e6">To be added.</param>
-        <param name="e7">To be added.</param>
-        <param name="e8">To be added.</param>
-        <param name="e9">To be added.</param>
-        <param name="e10">To be added.</param>
-        <param name="e11">To be added.</param>
-        <param name="e12">To be added.</param>
-        <param name="e13">To be added.</param>
-        <param name="e14">To be added.</param>
-        <param name="e15">To be added.</param>
-        <param name="e16">To be added.</param>
-        <param name="e17">To be added.</param>
-        <param name="e18">To be added.</param>
-        <param name="e19">To be added.</param>
-        <param name="e20">To be added.</param>
-        <param name="e21">To be added.</param>
-        <param name="e22">To be added.</param>
-        <param name="e23">To be added.</param>
-        <param name="e24">To be added.</param>
-        <param name="e25">To be added.</param>
-        <param name="e26">To be added.</param>
-        <param name="e27">To be added.</param>
-        <param name="e28">To be added.</param>
-        <param name="e29">To be added.</param>
-        <param name="e30">To be added.</param>
-        <param name="e31">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e0">The value that element 0 will be initialized to.</param>
+        <param name="e1">The value that element 1 will be initialized to.</param>
+        <param name="e2">The value that element 2 will be initialized to.</param>
+        <param name="e3">The value that element 3 will be initialized to.</param>
+        <param name="e4">The value that element 4 will be initialized to.</param>
+        <param name="e5">The value that element 5 will be initialized to.</param>
+        <param name="e6">The value that element 6 will be initialized to.</param>
+        <param name="e7">The value that element 7 will be initialized to.</param>
+        <param name="e8">The value that element 8 will be initialized to.</param>
+        <param name="e9">The value that element 9 will be initialized to.</param>
+        <param name="e10">The value that element 10 will be initialized to.</param>
+        <param name="e11">The value that element 11 will be initialized to.</param>
+        <param name="e12">The value that element 12 will be initialized to.</param>
+        <param name="e13">The value that element 13 will be initialized to.</param>
+        <param name="e14">The value that element 14 will be initialized to.</param>
+        <param name="e15">The value that element 15 will be initialized to.</param>
+        <param name="e16">The value that element 16 will be initialized to.</param>
+        <param name="e17">The value that element 17 will be initialized to.</param>
+        <param name="e18">The value that element 18 will be initialized to.</param>
+        <param name="e19">The value that element 19 will be initialized to.</param>
+        <param name="e20">The value that element 20 will be initialized to.</param>
+        <param name="e21">The value that element 21 will be initialized to.</param>
+        <param name="e22">The value that element 22 will be initialized to.</param>
+        <param name="e23">The value that element 23 will be initialized to.</param>
+        <param name="e24">The value that element 24 will be initialized to.</param>
+        <param name="e25">The value that element 25 will be initialized to.</param>
+        <param name="e26">The value that element 26 will be initialized to.</param>
+        <param name="e27">The value that element 27 will be initialized to.</param>
+        <param name="e28">The value that element 28 will be initialized to.</param>
+        <param name="e29">The value that element 29 will be initialized to.</param>
+        <param name="e30">The value that element 30 will be initialized to.</param>
+        <param name="e31">The value that element 31 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with each element initialized to the corresponding specified value.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with each element initialized to corresponding specified value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1444,9 +1444,9 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1469,9 +1469,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1494,9 +1494,9 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1519,9 +1519,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1544,9 +1544,9 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1569,9 +1569,9 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1594,9 +1594,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1619,9 +1619,9 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1644,9 +1644,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1669,9 +1669,9 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements initialized to zero.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements initialized to zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1694,9 +1694,9 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1719,9 +1719,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1744,9 +1744,9 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1769,9 +1769,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1794,9 +1794,9 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1819,9 +1819,9 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1844,9 +1844,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1869,9 +1869,9 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1894,9 +1894,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1919,9 +1919,9 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that element 0 will be initialized to.</param>
+        <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to the specified value and the remaining elements left uninitialized.</summary>
+        <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> instance with the first element initialized to <paramref name="value" /> and the remaining elements left uninitialized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

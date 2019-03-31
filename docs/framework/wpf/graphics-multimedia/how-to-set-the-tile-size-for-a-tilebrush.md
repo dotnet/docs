@@ -19,7 +19,7 @@ The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of 
 
 The following illustration shows the output that the example produces:
 
-![Screenshot that shows tiling with an image brush.](./media/how-to-set-the-tile-size-for-a-tilebrush/rectangle-tile-image-brush.png)
+![A rectangle with four cherries demonstrating tiling with an image brush.](./media/how-to-set-the-tile-size-for-a-tilebrush/rectangle-tile-image-brush.png)
 
 [!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]
 

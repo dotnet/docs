@@ -27,7 +27,7 @@ The next example creates an <xref:System.Windows.Media.ImageBrush>, sets its <xr
 
 The following illustration shows the output that the example produces:
 
-![Screenshot that shows a tiled TileBrush with a Viewport.](./media/how-to-set-the-tile-size-for-a-tilebrush/25-x-25-viewport-tilebrush.png)
+![A rectangle with forty-eight cherries demonstrating a tiled TileBrush with a Viewport.](./media/how-to-set-the-tile-size-for-a-tilebrush/25-x-25-viewport-tilebrush.png)
 
 [!code-csharp[UsingImageBrush_snip#AbsoluteTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#absolutetilesizeexample)]
 

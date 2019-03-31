@@ -133,7 +133,7 @@ Creating an accessible application has important business implications. Many gov
     
       Your form will look something like the following image:
     
-      ![Screenshot that shows the pizza order form.](./media/walkthrough-creating-an-accessible-windows-based-application/visual-basic-pizza-order-form.gif)  
+      ![The pizza order form with a name textbox, and size and toppings selection.](./media/walkthrough-creating-an-accessible-windows-based-application/visual-basic-pizza-order-form.gif)  
 
   
 ## Supporting High Contrast Mode  

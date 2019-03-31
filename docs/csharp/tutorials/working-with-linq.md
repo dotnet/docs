@@ -110,7 +110,7 @@ The compiler translates LINQ statements written with query syntax into the equiv
 
 Go ahead and run the sample you've built at this point. It will display all 52 cards in the deck. You may find it very helpful to run this sample under a debugger to observe how the `Suits()` and `Ranks()` methods execute. You can clearly see that each string in each sequence is generated only as it is needed.
 
-![Screenshot that shows a Console window.](./media/working-with-linq/console-52-card-application.png)
+![A console window showing the app writing out 52 cards.](./media/working-with-linq/console-52-card-application.png)
 
 ## Manipulating the Order
 

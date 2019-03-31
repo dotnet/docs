@@ -116,11 +116,17 @@ dotnet /build_output/my_app.dll
 
 ### Driver
 
-The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command. The only time `dotnet` is used without a command is when it's used to start an application.
+The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command. 
 
-To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, simply execute `dotnet my_app.dll`.
+To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, simply execute `dotnet my_app.dll`. If you want to use a specific version of the .NET Core Runtime, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference).
 
-When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. First, the driver determines the version of the SDK to use. If the version isn't specified in the command options, the driver uses the latest version available. To specify a version other than the latest installed version, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference). Once the SDK version is determined, the driver executes the command.
+When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
+
+```bash
+> dotnet build
+```
+
+First, the driver determines the version of the SDK to use. If there is no ['global.json'](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json), the latest version of the SDK available is used. This might be either a preview or stable version, depending on what is latest on the machine.  Once the SDK version is determined, it executes the command.
 
 ### Command ("verb")
 

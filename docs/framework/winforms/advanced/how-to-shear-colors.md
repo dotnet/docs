@@ -17,7 +17,7 @@ Shearing increases or decreases a color component by an amount proportional to a
   
  The following illustration shows the original image on the left and the sheared image on the right: 
   
- ![Screenshot that shows an original image and a sheared image.](./media/how-to-shear-colors/original-image-sheared-image.png)  
+ ![Two squares with colored stripes side-by-side illustrating the original image and the sheared image.](./media/how-to-shear-colors/original-image-sheared-image.png)  
   
  The following table lists the color vectors for the four bars before and after the shearing transformation.  
   

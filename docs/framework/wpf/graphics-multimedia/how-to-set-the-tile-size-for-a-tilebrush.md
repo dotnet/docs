@@ -15,7 +15,7 @@ The <xref:System.Windows.Media.TileBrush.Viewport%2A> property specifies the til
 
 ## Example
 
-The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of <xref:System.Windows.Media.TileBrush>, to paint a rectangle with tiles. The example sets each tile to  50 percent by 50 percent of the output area (the rectangle). As a result, the rectangle is painted with four projections of the image.
+The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of <xref:System.Windows.Media.TileBrush>, to paint a rectangle with tiles. The example sets each tile to 50 percent by 50 percent of the output area (the rectangle). As a result, the rectangle is painted with four projections of the image.
 
 The following illustration shows the output that the example produces:
 

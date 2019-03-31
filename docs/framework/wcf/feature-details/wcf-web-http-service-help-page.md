@@ -10,7 +10,7 @@ ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
   
  The user can then click any method listed in the help page and detailed page for that operation is displayed showing more information about the method, including message formats and example responses. The following image is an example of a help page for a method.  
   
- ![Screenshot showing WCF REST Help Page details.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page-detail.gif)  
+ ![A browser with the WCF REST Help page details for the GetCustomers method open.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page-detail.gif)  
   
 ## Using the WCF Web HTTP Help Page  
  The WCF WEB HTTP Help page displays a short description for each operation provided that you specify one using the <xref:System.ComponentModel.DescriptionAttribute>. This attribute takes a string that contains a short description of the operation it is applied to. For example, the following code shows how to use the <xref:System.ComponentModel.DescriptionAttribute> to provide a short description.  

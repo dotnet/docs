@@ -80,6 +80,7 @@
   
 |osPlatform string|OSPlatform property|  
 |-----------------------|-------------------------|  
+|"FREEBSD"|<xref:System.Runtime.InteropServices.OSPlatform.FreeBSD?displayProperty=nameWithType>|
 |"LINUX"|<xref:System.Runtime.InteropServices.OSPlatform.Linux%2A?displayProperty=nameWithType>|  
 |"OSX"|<xref:System.Runtime.InteropServices.OSPlatform.OSX%2A?displayProperty=nameWithType>|  
 |"WINDOWS"|<xref:System.Runtime.InteropServices.OSPlatform.Windows%2A?displayProperty=nameWithType>|  
@@ -219,8 +220,8 @@
         <ReturnType>System.Runtime.InteropServices.OSPlatform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that represents the FreeBSD operating system.</summary>
+        <value>An object that represents the Linux operating system.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +333,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Two <xref:System.Runtime.InteropServices.OSPlatform> instances are equal if they have the same name. The name of an <xref:System.Runtime.InteropServices.OSPlatform> object is the `osPlatform` string passed to the <xref:System.Runtime.InteropServices.OSPlatform.Create%2A> method. The names of the <xref:System.Runtime.InteropServices.OSPlatform> objects returned by the static OSPlatform properties are "LINUX", "OSX", and "WINDOWS". The method uses ordinal comparison to determine whether the names are the same.  
+ Two <xref:System.Runtime.InteropServices.OSPlatform> instances are equal if they have the same name. The name of an <xref:System.Runtime.InteropServices.OSPlatform> object is the `osPlatform` string passed to the <xref:System.Runtime.InteropServices.OSPlatform.Create%2A> method. The names of the <xref:System.Runtime.InteropServices.OSPlatform> objects returned by the static OSPlatform properties are "FREEBSD", "LINUX", "OSX", and "WINDOWS". The method uses ordinal comparison to determine whether the names are the same.  
   
  ]]></format>
         </remarks>
@@ -446,7 +447,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of an  <xref:System.Runtime.InteropServices.OSPlatform> object is the `osPlatform` string passed to the <xref:System.Runtime.InteropServices.OSPlatform.Create%2A> method. The names of the OSPlatform objects returned by the static OSPlatform properties are "LINUX", "OSX", and "WINDOWS".  
+ The string representation of an  <xref:System.Runtime.InteropServices.OSPlatform> object is the `osPlatform` string passed to the <xref:System.Runtime.InteropServices.OSPlatform.Create%2A> method. The names of the OSPlatform objects returned by the static OSPlatform properties are "FREEBSD", "LINUX", "OSX", and "WINDOWS".  
   
  ]]></format>
         </remarks>

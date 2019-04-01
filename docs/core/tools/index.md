@@ -126,7 +126,7 @@ When you supply a command to the driver, `dotnet.exe` starts the CLI command exe
 > dotnet build
 ```
 
-First, the driver determines the version of the SDK to use. If there is no ['global.json'](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json), the latest version of the SDK available is used. This might be either a preview or stable version, depending on what is latest on the machine.  Once the SDK version is determined, it executes the command.
+First, the driver determines the version of the SDK to use. If there is no ['global.json'](global-json.md), the latest version of the SDK available is used. This might be either a preview or stable version, depending on what is latest on the machine.  Once the SDK version is determined, it executes the command.
 
 ### Command ("verb")
 

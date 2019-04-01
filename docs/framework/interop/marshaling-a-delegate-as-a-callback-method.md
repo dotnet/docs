@@ -48,5 +48,5 @@ This sample demonstrates how to pass delegates to an unmanaged function expectin
   
 ## See also
 - [Miscellaneous Marshaling Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ss9sb93t(v=vs.100))
-- [Platform Invoke Data Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ac7ay120(v=vs.100))
+- [Platform Invoke Data Types](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)

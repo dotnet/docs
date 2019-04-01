@@ -248,7 +248,7 @@
   
  The following statements must be true for all implementations of the <xref:System.Object.Equals%28System.Object%29> method. In the list, `x`, `y`, and `z` represent object references that are not **null**.  
   
--   `x.Equals(x)` returns `true`, except in cases that involve floating-point types. See ISO/IEC/IEEE 60559:2011, Information technology -- Microprocessor Systems -- Floating-Point arithmetic.  
+-   `x.Equals(x)` returns `true`, except in cases that involve floating-point types. See [ISO/IEC/IEEE 60559:2011, Information technology -- Microprocessor Systems -- Floating-Point arithmetic](https://www.iso.org/standard/57469.html).  
   
 -   `x.Equals(y)` returns the same value as `y.Equals(x)`.  
   

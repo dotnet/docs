@@ -99,6 +99,7 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
  [!code-vb[VbVbalrLambdas#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class5.vb#11)]  
   
 ## See also
+
 - <xref:System.Linq.Enumerable>
 - [Lambda Expressions](./lambda-expressions.md)
 - [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)

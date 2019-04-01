@@ -100,6 +100,7 @@ End Property
  [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Function Procedures](./function-procedures.md)
 - [Operator Procedures](./operator-procedures.md)

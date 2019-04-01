@@ -93,6 +93,7 @@ Imports [ aliasname = ] namespace.element
  [!code-vb[VbVbalrStatements#158](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#158)]  
   
 ## See also
+
 - [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
 - [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
 - [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)

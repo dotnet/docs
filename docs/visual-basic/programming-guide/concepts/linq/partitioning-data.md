@@ -44,6 +44,7 @@ Partitioning in LINQ refers to the operation of dividing an input sequence into 
  [!code-vb[CsLINQPartitioning#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#4)]  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Skip Clause](../../../../visual-basic/language-reference/queries/skip-clause.md)

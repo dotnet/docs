@@ -40,6 +40,7 @@ variableorproperty = value
  [!code-vb[VbVbalrOperators#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#9)]  
   
 ## See also
+
 - [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)
 - [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)
 - [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)

@@ -39,6 +39,7 @@ A `Function` procedure returns a value to the calling code. You call it by inclu
  [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
 ## See also
+
 - [Function Procedures](./function-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)

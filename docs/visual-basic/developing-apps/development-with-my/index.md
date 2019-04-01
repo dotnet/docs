@@ -36,6 +36,7 @@ Visual Basic provides new features for rapid application development that improv
  Gives details on which `My` features are available in different project types.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>

@@ -41,6 +41,7 @@ Return expression
  [!code-vb[VbVbalrStatements#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#53)]  
   
 ## See also
+
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
 - [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)

@@ -71,5 +71,6 @@ Encoding of loaded document is:utf-16
 ```  
   
 ## See also
+
 - <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>
 - [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

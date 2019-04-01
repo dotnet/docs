@@ -24,6 +24,7 @@ Determines whether an expression is `False`.
  [!code-vb[VbVbalrOperators#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
 ## See also
+
 - [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
 - [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
 - [AndAlso Operator](../../../visual-basic/language-reference/operators/andalso-operator.md)

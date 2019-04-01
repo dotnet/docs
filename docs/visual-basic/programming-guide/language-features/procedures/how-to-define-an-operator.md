@@ -32,6 +32,7 @@ If you have defined a class or structure, you can define the behavior of a stand
   
   
 ## See also
+
 - [Operator Procedures](./operator-procedures.md)
 - [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
 - [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)

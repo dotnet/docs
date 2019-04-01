@@ -39,6 +39,7 @@ Generic object variables (that is, variables you declare as `Object`) can hold o
      [!code-vb[VbVbalrOOP#95](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#95)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Information.TypeName%2A>
 - [Calling a Property or Method Using a String Name](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)
 - [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)

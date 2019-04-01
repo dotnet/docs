@@ -43,6 +43,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
  [!code-vb[CsLINQSetOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQSetOps/VB/setops.vb#1)]  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Distinct Clause](../../../../visual-basic/language-reference/queries/distinct-clause.md)

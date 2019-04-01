@@ -66,6 +66,7 @@ End Structure
 ```  
   
 ## See also
+
 - <xref:System.ValueType>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)

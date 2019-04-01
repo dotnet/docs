@@ -15,5 +15,6 @@ The <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories> object can be used to
      [!code-vb[VbVbcnMyFileSystem#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#15)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>

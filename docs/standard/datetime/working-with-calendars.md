@@ -1,6 +1,6 @@
 ---
 title: "Working with calendars"
-ms.date: "02/23/2019"
+ms.date: "04/01/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -132,13 +132,16 @@ However, there is one important exception. The default (uninitialized) value of 
 Calendars typically divide dates into eras. However, the <xref:System.Globalization.Calendar> classes in .NET do not support every era defined by a calendar, and most of the <xref:System.Globalization.Calendar> classes support only a single era. Only the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes support multiple eras.
 
 > [!IMPORTANT]
->  A new era in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> begins on May 1, 2019. This change affects all applications that use these calendars. See [Handling a new era in the Japanese calendar in .NET](https://devblogs.microsoft.com/dotnet/handling-a-new-era-in-the-japanese-calendar-in-net/) for more information and to determine whether your applications are affected. See [Prepare your application for the Japanese era change](/windows/uwp/design/globalizing/japanese-era-change) for information on testing your applications on Windows to ensure their readiness for the era change.
+>  The Reiwa era, a new era in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar>, begins on May 1, 2019. This change affects all applications that use these calendars. See the following articles for more information:
+> - [Handling a new era in the Japanese calendar in .NET](https://devblogs.microsoft.com/dotnet/handling-a-new-era-in-the-japanese-calendar-in-net/), which documents features added to .NET to support calendars with multiple eras and discusses best practies to use when handling multi-era calenars.
+> - [Prepare your application for the Japanese era change](/windows/uwp/design/globalizing/japanese-era-change), which provides information on testing your applications on Windows to ensure their readiness for the era change.
+> - [Summary of new Japanese Era updates for .NET Framework](https://support.microsoft.com/en-us/help/4477957/new-japanese-era-updates-for-net-framework), which lists .NET Framework updates for individual Windows versions that are related to the new Japanese calendar era, notes new .NET Framework features for multi-era support, and includes things to look for in testing your applications.
 
 An era in most calendars denotes an extremely long time period. In the Gregorian calendar, for example, the current era spans more than two millenia. For the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, the two calendars that support multiple eras, this is not the case. An era corresponds to the period of an emperor's reign. Support for multiple eras, particularly when the upper limit of the current era is unknown, poses special challenges. 
 
 ### Eras and era names
 
-In .NET, integers that represent the eras supported by a particular calendar implementation are stored in reverse order in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array. The current era is at index zero, and for <xref:System.Globalization.Calendar> classes that support multiple eras, each successive index reflects the previous era. The static <xref:System.Globalization.Calendar.CurrentEra?displayProperty=nameWithType> property defines the index of the current era in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array; it is a constant whose value is always zero. Individual <xref:System.Globalization.Calendar> classes also include static fields that return the value of the current era. They are listed in the following table.
+In .NET, integers that represent the eras supported by a particular calendar implementation are stored in reverse order in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array. The current era (which is the era with the latest time range) is at index zero, and for <xref:System.Globalization.Calendar> classes that support multiple eras, each successive index reflects the previous era. The static <xref:System.Globalization.Calendar.CurrentEra?displayProperty=nameWithType> property defines the index of the current era in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array; it is a constant whose value is always zero. Individual <xref:System.Globalization.Calendar> classes also include static fields that return the value of the current era. They are listed in the following table.
 
 | Calendar class                                        | Current era field                                                 |
 | ----------------------------------------------------- | ----------------------------------------------------------------- |
@@ -156,8 +159,8 @@ In .NET, integers that represent the eras supported by a particular calendar imp
 
 The name that corresponds to a particular era number can be retrieved by passing the era number to the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName%2A?displayProperty=nameWithType> method. The following example calls these methods to retrieve information about era support in the <xref:System.Globalization.GregorianCalendar> class.
 
-[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
-[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
+[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs)]
+[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb)]
 
 In addition, the "g" custom date and time format string includes a calendar's era name in the string representation of a date and time. For more information, see [Custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md).
 
@@ -199,7 +202,7 @@ In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System
 
 ### Calendars, eras, and date ranges: Relaxed range checks
 
-Very much like individual calendars have supported date ranges, eras in the  <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supported ranges. Previously, .NET used strict era range checks to ensure that a era-specific date was within the range of that era. An out-of-range date would throw a the .NET Framework uses relaxed ranged checking by default. That is, if a date is outside of the range of the specified era, the method throws an <xref:System.ArgumentOutOfRangeException>. Updates to all versions of the .NET Framework introduced relaxed era range checks; the attempt to instantiate an era-specific date that is outside the range of the specified era "overflow" into the following era, and no exception is thrown.
+Very much like individual calendars have supported date ranges, eras in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supported ranges. Previously, .NET used strict era range checks to ensure that an era-specific date was within the range of that era. That is, if a date is outside of the range of the specified era, the method throws an <xref:System.ArgumentOutOfRangeException>. Currently, the .NET Framework uses relaxed ranged checking by default. Updates to all versions of the .NET Framework introduced relaxed era range checks; the attempt to instantiate an era-specific date that is outside the range of the specified era "overflows" into the following era, and no exception is thrown.
 
 The following example attempts to instantiate a date in the 65th year of the Showa era, which began on December 25, 1926 and ended on January 7, 1989. This date corresponds to January 9, 1990, which is outside the range of the Showa era in the <xref:System.Globalization.JapaneseCalendar>. As the output from the example illustrates, the date displayed by the example is January 9, 1990, in the second year of the Heisei era.
 
@@ -355,3 +358,4 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 
 - [How to: Display dates in non-Gregorian calendars](../../../docs/standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md)
 - [Sample: Calendar week range utility](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)
+- [Calendar class](xref:System.Globalization.Calendar)

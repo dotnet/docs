@@ -1,21 +1,28 @@
 ---
-title: Containerize an app with Docker
-description: This tutorial teaches how to create a basic .NET Core application and containerize it with Docker.
-ms.date: 10/11/2018
+title: Containerize an app with Docker tutorial
+description: In this tutorial you will learn how to containerize a .NET Core application with Docker.
+ms.date: 03/20/2019
 ms.topic: tutorial
 ms.custom: "mvc, seodec18"
+#Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
 ---
 
-# How to containerize a .NET Core application
+# Tutorial: Containerize a .NET Core app
+
+This tutorial teaches you how to build a Docker image that contains your .NET Core application. The image can be used to create containers for your local development environment, private cloud, or public cloud.
+
+In this tutorial you will learn how to:
+
+> [!div class="checklist"]
+> * Create a Dockerfile
+> * Pull a Microsoft .NET Core Docker base image
+> * Customize and deploy your app to the image
+> * Create and run a container
+> * Deploy to Azure
 
 This tutorial teaches the Docker container build and deploy tasks for a .NET Core application. The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image). These images are written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format to be deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 
-During the course of this tutorial, you learn:
 
-> [!div class="checklist"]
-> * How to create a Dockerfile
-> * How to create a .NET Core app.
-> * How to deploy your app into a Docker container.
 
 ## .NET Core: Easiest way to get started
 

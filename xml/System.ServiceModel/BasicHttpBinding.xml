@@ -646,10 +646,9 @@ Extensive allocation from the CLR garbage heap is an indication that the message
 
 The value of the MaxBufferSize property and its significance is different depending on whether the messages are being buffered or streamed on the channel through which they are being received:
 
-For buffered transports, (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Buffered>). 
-This value is always equal to that specified by the <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize>.
+- For buffered transports (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Buffered?displayProperty=nameWithType>), this value is always equal to that specified by the <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize> property.
 
-For streamed transports, (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Streamed>), only the SOAP headers must be buffered to generate the message. 
+- For streamed transports (<xref:System.ServiceModel.BasicHttpBinding.TransferMode> set to <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType>), only the SOAP headers must be buffered to generate the message. 
 The body can be streamed in on-demand. In this case, MaxBufferSize is less than or equal to <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize>, where <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize> bounds the size of the overall message (headers and body) and MaxBufferSize bounds only the size of the SOAP headers.
 
 The limitations on buffer size set here are for optimizing the performance of message exchanges. 

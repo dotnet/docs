@@ -17,29 +17,31 @@ There are a few concepts you should be familiar with. The Docker client has a co
 
 ### Images
 
-An image is a read-only template with instructions on how to create a container. Much the time an image is based on another image, but with some customization. For example, when you create an image for your application, you would base it on an existing image that already contains the .NET Core runtime.
+An image is an ordered collection of filesystem changes that form the basis of a container. The image doesn't have a state and is read-only. Much the time an image is based on another image, but with some customization. For example, when you create an new image for your application, you would base it on an existing image that already contains the .NET Core runtime.
+
+Because containers are created from images, images have a set of run parameters (such as a starting executable) that run when the container starts.
 
 ### Containers
 
-A container is a runnable instance of an image. As you build your image, you deploy your application and dependencies. Then, multiple containers can be instantiated, each isolated from one another. Each container instance has its own filesystem, memory, network interface.
+A container is a runnable instance of an image. As you build your image, you deploy your application and dependencies. Then, multiple containers can be instantiated, each isolated from one another. Each container instance has its own filesystem, memory, and network interface.
 
 ### Registries
 
-Container registries are repositories of container images. You can base your images on a registry image. You can create containers directly from an image in a registry. 
+Container registries are a collection of image repositories. You can base your images on a registry image. You can create containers directly from an image in a registry. The [relationship between Docker containers, images, and registries](../../standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries.md) is an important concept when [architecting and building containerized applications or microservices](../../standard/microservices-architecture/architect-microservice-container-applications/index.md). This approach greatly shortens the time between development and deployment.
 
 Docker has a public registry hosted at the [Docker Hub](https://hub.docker.com/) that you can use. [.NET Core related images](https://hub.docker.com/_/microsoft-dotnet-core/) are listed at the Docker Hub. 
 
-The [relationship between Docker containers, images, and registries](../../standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries.md) is an important concept when [architecting and building containerized applications or microservices](../../standard/microservices-architecture/architect-microservice-container-applications/index.md). This approach greatly shortens the time between development and deployment.
+The Microsoft Container Registry (MCR) is the official source of Microsoft-provided container images. The MCR is built on Azure CDN to provide globally-replicated images. However, the MCR does not have a public-facing website and the primary way to learn about Microsoft-provided container images is through the [Microsoft Docker Hub pages](https://hub.docker.com/_/microsoft-dotnet-core/).
 
 ### Dockerfile
 
-A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. When you rebuild the image, only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate the image on their own system.
+A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. For the most part, when you rebuild the image only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate to create a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
 
 ## .NET Core images
 
-Official .NET Core Docker images are available at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet-core/). Each repository contains multiple images for different combinations of the .NET (SDK or Runtime) and OS that you can use. 
+Official .NET Core Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet-core/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use. 
 
-Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production. You can use images that include only the Runtime, omitting the SDK so that you can mirror a production environment.
+Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production.
 
 ## Azure services
 

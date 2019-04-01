@@ -30,6 +30,15 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/docker/docker-basics-dotnet-core.md",
+            "redirect_url": "/dotnet/core/docker/build-docker-netcore-container",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/docker/building-net-docker-images.md",
+            "redirect_url": "/dotnet/core/docker/intro-net-docker"
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true

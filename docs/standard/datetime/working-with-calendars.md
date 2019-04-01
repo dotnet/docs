@@ -6,11 +6,11 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "globalization [.NET Framework], calendars"
+  - "globalization [.NET], calendars"
   - "calendars, global applications"
   - "global applications, calendars"
   - "world-ready applications, calendars"
-  - "international applications [.NET Framework], calendars"
+  - "international applications [.NET], calendars"
   - "culture, calendars"
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
 author: "rpetrusha"
@@ -194,7 +194,7 @@ However, if the era changes, the intent of this code becomes ambiguous. Is the d
 > [!TIP]
 > When working with calendars that support multiple eras, *always* use the Gregorian date to instantiate a date, or specify the era when you instantiate a date and time based on that calendar.
 
-In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method, you provide the index of the era in the calendar's <xref:System.Globalization.Calendar.Eras> property. For calendars whose eras are subject to change, however, these indexes are not constant values; the current era is at index 0, and the oldest era is at index `Eras.Length - 1`. When a new era is added to a calendar, the indexes of the previous eras increase by one. You can supply the appropriate era index as follows:
+In specifying an era to the <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)> method, you provide the index of the era in the calendar's <xref:System.Globalization.Calendar.Eras> property. For calendars whose eras are subject to change, however, these indexes are not constant values; the current era is at index 0, and the oldest era is at index `Eras.Length - 1`. When a new era is added to a calendar, the indexes of the previous eras increase by one. You can supply the appropriate era index as follows:
 
 - For dates in the current era, always use the calendar's <xref:System.Globalization.Calendar.CurrentEra> property.
 
@@ -202,7 +202,7 @@ In specifying a era to the <xref:System.Globalization.Calendar.ToDateTime(System
 
 ### Calendars, eras, and date ranges: Relaxed range checks
 
-Very much like individual calendars have supported date ranges, eras in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supported ranges. Previously, .NET used strict era range checks to ensure that an era-specific date was within the range of that era. That is, if a date is outside of the range of the specified era, the method throws an <xref:System.ArgumentOutOfRangeException>. Currently, the .NET Framework uses relaxed ranged checking by default. Updates to all versions of the .NET Framework introduced relaxed era range checks; the attempt to instantiate an era-specific date that is outside the range of the specified era "overflows" into the following era, and no exception is thrown.
+Very much like individual calendars have supported date ranges, eras in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes also have supported ranges. Previously, .NET used strict era range checks to ensure that an era-specific date was within the range of that era. That is, if a date is outside of the range of the specified era, the method throws an <xref:System.ArgumentOutOfRangeException>. Currently, .NET uses relaxed ranged checking by default. Updates to all versions of .NET introduced relaxed era range checks; the attempt to instantiate an era-specific date that is outside the range of the specified era "overflows" into the following era, and no exception is thrown.
 
 The following example attempts to instantiate a date in the 65th year of the Showa era, which began on December 25, 1926 and ended on January 7, 1989. This date corresponds to January 9, 1990, which is outside the range of the Showa era in the <xref:System.Globalization.JapaneseCalendar>. As the output from the example illustrates, the date displayed by the example is January 9, 1990, in the second year of the Heisei era.
 

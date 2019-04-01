@@ -156,4 +156,3 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\UdpActivation`  
   
-## See also

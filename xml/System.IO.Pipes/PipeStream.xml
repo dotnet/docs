@@ -1521,6 +1521,8 @@
   
 ## Remarks  
  Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message> mode message transmission.  
+
+ To avoid an <xref:System.InvalidOperationException> accessing `ReadMode`, <xref:System.IO.Pipes.PipeStream.IsConnected> can be used to verify the pipe is connected.
   
  ]]></format>
         </remarks>

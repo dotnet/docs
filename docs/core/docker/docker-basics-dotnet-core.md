@@ -44,9 +44,9 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 #### Installing Docker Client
 
-Install the most recent version of [Docker](https://docs.docker.com/release-notes/docker-ce/).
+Install [Docker 18.06](https://docs.docker.com/release-notes/docker-ce/) or later of the Docker client.
 
-Docker can be installed in:
+The Docker client can be installed in:
 
 * Linux distributions
 
@@ -121,7 +121,7 @@ Open your text editor and let's get started! We're still working from the Hello 
 Add the following Docker instructions for either Linux or [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/) to a new file. When finished, save it in the root of your Hello directory as **Dockerfile**, with no extension (You may need to set your file type to `All types (*.*)` or something similar).
 
 ```Dockerfile
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1
+FROM microsoft/dotnet:2.1-sdk
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
@@ -136,10 +136,10 @@ ENTRYPOINT ["dotnet", "out/Hello.dll"]
 
 The Dockerfile contains Docker build instructions that run sequentially.
 
-The first instruction must be [**FROM**](https://docs.docker.com/engine/reference/builder/#from). This instruction initializes a new build stage and sets the Base Image for the remaining instructions. The multi-arch tags pull either Windows or Linux containers depending on the Docker for Windows [container mode](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers). The Base Image for our sample is the 2.1 image from the mcr.microsoft.com/dotnet/core/sdk repository,
+The first instruction must be [**FROM**](https://docs.docker.com/engine/reference/builder/#from). This instruction initializes a new build stage and sets the Base Image for the remaining instructions. The multi-arch tags pull either Windows or Linux containers depending on the Docker for Windows [container mode](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers). The Base Image for our sample is the 2.1-sdk image from the microsoft/dotnet repository,
 
 ```Dockerfile
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1
+FROM microsoft/dotnet:2.1-sdk
 ```
 
 The [**WORKDIR**](https://docs.docker.com/engine/reference/builder/#workdir) instruction sets the working directory for any remaining RUN, CMD, ENTRYPOINT, COPY, and ADD Dockerfile instructions. If the directory doesn't exist, it's created. In this case, WORKDIR is set to the app directory.
@@ -210,40 +210,28 @@ docker run --rm dotnetapp-dev Hello from Docker
 The output from the `docker build` command should be similar to the following console output:
 
 ```console
-Sending build context to Docker daemon  4.096kB
-Step 1/7 : FROM mcr.microsoft.com/dotnet/core/sdk:2.1
- ---> c17aa78d71c2
+Sending build context to Docker daemon   173.1kB
+Step 1/7 : FROM microsoft/dotnet:2.1-sdk
+ ---> 288f8c45f7c2
 Step 2/7 : WORKDIR /app
- ---> Running in 2addf56dc3c2
-Removing intermediate container 2addf56dc3c2
- ---> 7e9ca771c5d0
+ ---> Using cache
+ ---> 9af1fbdc7972
 Step 3/7 : COPY *.csproj ./
- ---> 154c01dfb5b6
+ ---> Using cache
+ ---> 86c8c332d4b3
 Step 4/7 : RUN dotnet restore
- ---> Running in 30293fba1f17
-  Restoring packages for /app/test.csproj...
-  Generating MSBuild file /app/obj/test.csproj.nuget.g.props.
-  Generating MSBuild file /app/obj/test.csproj.nuget.g.targets.
-  Restore completed in 204.7 ms for /app/test.csproj.
-Removing intermediate container 30293fba1f17
- ---> 7e2d249fcf81
+ ---> Using cache
+ ---> 86fcd7dd0ea4
 Step 5/7 : COPY . ./
- ---> 65fad4c7e216
+ ---> Using cache
+ ---> 6faf0a53607f
 Step 6/7 : RUN dotnet publish -c Release -o out
- ---> Running in d07d89887d65
-Microsoft (R) Build Engine version 15.9.20+g88f5fadfbe for .NET Core
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Restore completed in 52.22 ms for /app/test.csproj.
-  test -> /app/bin/Release/netcoreapp2.1/test.dll
-  test -> /app/out/
-Removing intermediate container d07d89887d65
- ---> ff2c4665b8ef
-Step 7/7 : ENTRYPOINT ["dotnet", "out/Hello.dll"]
- ---> Running in b7470442883a
-Removing intermediate container b7470442883a
- ---> eb070e72c57d
-Successfully built eb070e72c57d
+ ---> Using cache
+ ---> f972328318c8
+Step 7/7 : ENTRYPOINT dotnet out/Hello.dll
+ ---> Using cache
+ ---> 53c337887e18
+Successfully built 46db075bd98d
 Successfully tagged dotnetapp-dev:latest
 ```
 
@@ -275,9 +263,9 @@ Here are some next steps you can take:
 
 ## Docker Images used in this sample
 
-The following Docker image was used in this sample
+The following Docker images are used in this sample
 
-* [`mcr.microsoft.com/dotnet/core/sdk:2.1`](https://hub.docker.com/_/microsoft-dotnet-core-sdk/)
+* [`microsoft/dotnet:2.1-sdk`](https://hub.docker.com/r/microsoft/dotnet)
 
 ## Related resources
 

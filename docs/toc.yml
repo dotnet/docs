@@ -410,6 +410,8 @@
       href: core/porting/windows-compat-pack.md
     - name: Port Windows Forms projects
       href: core/porting/winforms.md
+    - name: Port WPF projects
+      href: core/porting/wpf.md
   - name: Build .NET Core from source
     href: core/build/index.md
     items:
@@ -525,6 +527,8 @@
           href: csharp/tutorials/intro-to-csharp/introduction-to-classes.md
     - name: Explore C# 6
       href: csharp/tutorials/exploration/csharp-6.yml
+    - name: Explore C# 7.0
+      href: csharp/tutorials/exploration/csharp-7.yml
     - name: Work with nullable reference types
       href: csharp/tutorials/nullable-reference-types.md
     - name: Upgrade an app to nullable reference types
@@ -547,7 +551,7 @@
       href: csharp/tutorials/attributes.md
   - name: Tour of C#
     href: csharp/tour-of-csharp/
-  - name: What's new in C
+  - name: What's new in C#
     items:
     - name: C# 8.0 - Preview 2
       href: csharp/whats-new/csharp-8.md

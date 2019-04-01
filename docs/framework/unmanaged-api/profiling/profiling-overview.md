@@ -72,8 +72,7 @@ ms.author: "mairaw"
   
  The following illustration shows how the profiler DLL interacts with the application that is being profiled and the CLR.  
   
- ![Profiling Architecture](../../../../docs/framework/unmanaged-api/profiling/media/profilingarch.png "ProfilingArch")  
-Profiling architecture  
+ ![Screenshot that shows the profiling architecture.](./media/profiling-overview/profiling-architecture.png)  
   
 ### The Notification Interfaces  
  [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md) and [ICorProfilerCallback2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md) can be considered notification interfaces. These interfaces consist of methods such as [ClassLoadStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md), [ClassLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md), and [JITCompilationStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md). Each time the CLR loads or unloads a class, compiles a function, and so on, it calls the corresponding method in the profiler's `ICorProfilerCallback` or `ICorProfilerCallback2` interface.  

@@ -1,6 +1,6 @@
 ---
-title: "Best Practices for Exceptions"
-ms.date: "12/05.2018"
+title: "Best Practices for exceptions - .NET"
+ms.date: "12/05/2018"
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"

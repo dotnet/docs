@@ -24,7 +24,7 @@ A *model-defined function* is a function that is defined in a conceptual model. 
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`.  
   
- ![Model With Published Date](../../../../docs/framework/data/adonet/media/modelwithpublisheddate.gif "ModelWithPublishedDate")  
+ ![Screenshot that shows a model with published date.](./media/model-defined-function/model-published-date-three-entity-types.gif)  
   
  The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines a function in the conceptual model that returns the numbers of years since an instance of a `Book` (in the diagram above) was published.  
   

@@ -158,22 +158,37 @@ public class Point
 }
 ```
 
-The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the quadrant of the point:
+Additionally, consider the following enum that represents various positions of a quadrant:
 
 ```csharp
-static string Quadrant(Point p) => p switch
+public enum Quadrant
 {
-    (0, 0) => "origin",
-    (var x, var y) when x > 0 && y > 0 => "Quadrant 1",
-    (var x, var y) when x < 0 && y > 0 => "Quadrant 2",
-    (var x, var y) when x < 0 && y < 0 => "Quadrant 3",
-    (var x, var y) when x > 0 && y < 0 => "Quadrant 4",
-    (var x, var y) => "on a border",
-    _ => "unknown"
+    Unknown,
+    Origin,
+    One,
+    Two,
+    Three,
+    Four,
+    OnBorder
+}
+```
+
+The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the `Quadrant` of the point:
+
+```csharp
+static Quadrant GetQuadrant(Point point) => point switch
+{
+    (0, 0) => Quadrant.Origin,
+    var (x, y) when x > 0 && y > 0 => Quadrant.One,
+    var (x, y) when x < 0 && y > 0 => Quadrant.Two,
+    var (x, y) when x < 0 && y < 0 => Quadrant.Three,
+    var (x, y) when x > 0 && y < 0 => Quadrant.Four,
+    var (_, _) => Quadrant.OnBorder,
+    _ => Quadrant.Unknown
 };
 ```
 
-The discard pattern in the preceding switch matches when either `x` or `y`, but not both, is 0. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
 
 You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
 

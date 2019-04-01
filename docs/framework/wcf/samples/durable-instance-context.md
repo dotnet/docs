@@ -454,4 +454,3 @@ Press ENTER to shut down client
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`  
   
-## See also

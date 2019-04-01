@@ -108,9 +108,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the block size, in bits, of the cryptographic operation.</summary>
+        <value>The block size, in bits, of the cryptographic operation. The default is 128 bits.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For AES, the only valid block size is 128 bits. See the <xref:System.Security.Cryptography.SymmetricAlgorithm.BlockSize> for more information about block size.   
+ ]]></format></remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDecryptor">
@@ -502,7 +506,11 @@
       <Docs>
         <summary>Gets or sets the initialization vector (IV) to use for the symmetric algorithm.</summary>
         <value>The initialization vector to use for the symmetric algorithm</value>
-        <remarks>To be added.</remarks>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV> for more information about initialization vector.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -602,9 +610,13 @@
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the block sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <value>The block sizes, in bits, that are supported by the symmetric algorithm.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The only valid block size for AES is 128 bits.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="LegalKeySizes">
@@ -631,9 +643,13 @@
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <value>The key sizes, in bits, that are supported by the symmetric algorithm.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes for AES are 128, 192 and 256 bits.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -708,7 +724,11 @@
       <Docs>
         <summary>Gets or sets the padding mode used in the symmetric algorithm.</summary>
         <value>One of the enumeration values that specifies the type of padding to apply. The default is <see cref="F:System.Security.Cryptography.PaddingMode.PKCS7" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding> for more information about padding.  
+ ]]></format></remarks>
       </Docs>
     </Member>
   </Members>

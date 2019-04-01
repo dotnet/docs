@@ -100,8 +100,7 @@
         <Parameter Name="authenticationMode" Type="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />
       </Parameters>
       <Docs>
-        <param name="authenticationMode">
-          <see cref="T:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />. Specifies the application's authentication mode.</param>
+        <param name="authenticationMode">One of the enumeration values that specifies the application's authentication mode.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" /> class with the specified authentication mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -142,7 +141,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Windows.Forms.ApplicationContext" /> object for the current thread of a Windows Forms application.</summary>
-        <value>This property returns the <see cref="T:System.Windows.Forms.ApplicationContext" /> object for the current thread. That object contains contextual information about the thread.</value>
+        <value>Contextual information about the current thread.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -350,8 +349,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether this application is a single-instance application.</summary>
-        <value>A <see cref="T:System.Boolean" /> value that indicates whether this application is a single-instance application.</value>
+        <summary>Gets or sets a value that indicates whether this application is a single-instance application.</summary>
+        <value><see langword="True" /> to indicate this application is a single-instance application; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -424,9 +423,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines the minimum length of time, in milliseconds, for which the splash screen is displayed.</summary>
-        <value>
-          <see langword="Integer" />. The minimum length of time, in milliseconds, for which the splash screen is displayed.</value>
+        <summary>Gets or sets the minimum length of time, in milliseconds, for which the splash screen is displayed.</summary>
+        <value>The minimum length of time, in milliseconds, for which the splash screen is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -653,7 +651,7 @@
         <Parameter Name="commandLineArgs" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="commandLineArgs">A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see langword="String" />, containing the command-line arguments as strings for the current application.</param>
+        <param name="commandLineArgs">A read-only collection containing the command-line arguments as strings for the current application.</param>
         <summary>Sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and initializes the splash screen, if defined.</summary>
         <returns>A <see cref="T:System.Boolean" /> indicating if application startup should continue.</returns>
         <remarks>
@@ -786,8 +784,7 @@
         <Parameter Name="eventArgs" Type="Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
       </Parameters>
       <Docs>
-        <param name="eventArgs">
-          <see cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />. Contains the command-line arguments of the application and indicates whether the application startup should be canceled.</param>
+        <param name="eventArgs">The command-line arguments of the application and indicates whether the application startup should be canceled.</param>
         <summary>When overridden in a derived class, allows for code to run when the application starts.</summary>
         <returns>A <see cref="T:System.Boolean" /> that indicates if the application should continue starting up.</returns>
         <remarks>
@@ -831,8 +828,7 @@
         <Parameter Name="eventArgs" Type="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
       </Parameters>
       <Docs>
-        <param name="eventArgs">
-          <see cref="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />. Contains the command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.</param>
+        <param name="eventArgs">The command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.</param>
         <summary>When overridden in a derived class, allows for code to run when a subsequent instance of a single-instance application starts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -873,8 +869,7 @@
         <Parameter Name="e" Type="Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">
-          <see cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />.</param>
+        <param name="e">The data for the event.</param>
         <summary>When overridden in a derived class, allows for code to run when an unhandled exception occurs in the application.</summary>
         <returns>A <see cref="T:System.Boolean" /> that indicates whether the <see cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" /> event was raised.</returns>
         <remarks>
@@ -908,7 +903,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of all the application's open forms.</summary>
-        <value>A <see cref="T:System.Windows.Forms.FormCollection" /> object that contains all of the application's open forms.</value>
+        <value>A collection that contains all of the application's open forms.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -974,7 +969,7 @@
         <Parameter Name="commandLine" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="commandLine">Array of type <see langword="String" />. The command line from <see langword="Sub Main" />.</param>
+        <param name="commandLine">The command line from <see langword="Sub Main" />.</param>
         <summary>Sets up and starts the Visual Basic Application model.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1034,7 +1029,7 @@
       <Docs>
         <summary>Determines whether the application saves the user settings on exit.</summary>
         <value>
-          <see langword="Boolean" />. <see langword="True" /> indicates that the application saves the user settings on exit. Otherwise, the settings are not implicitly saved.</value>
+          <see langword="True" /> to indicate that the application saves the user settings on exit. Otherwise, <see langword="False" /> to indicate the settings are not implicitly saved.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1203,7 +1198,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines what happens when the application's main form closes.</summary>
-        <value>A <see cref="T:Microsoft.VisualBasic.ApplicationServices.ShutdownMode" /> enumeration value, indicating what the application should do when the main form closes.</value>
+        <value>One of the enumeration values that indicates what the application should do when the main form closes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1238,7 +1233,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the splash screen for this application.</summary>
-        <value>A <see cref="T:System.Windows.Forms.Form" /> object that the application uses as the splash screen.</value>
+        <value>The splash screen for the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

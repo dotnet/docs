@@ -10,7 +10,7 @@ ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
 
 The <xref:System.ServiceModel.WorkflowServiceHost> class is used to host workflow services. It listens for incoming messages and routes them to the appropriate service instance, creating new instances or loading existing instances from durable storage as needed. The following diagram illustrates on a high level how <xref:System.ServiceModel.WorkflowServiceHost> works: 
   
- ![Diagram that shows a Workflow Service Host overview.](./media/workflow-service-host-internals/workflow-service-host-high-level-overview.gif)  
+ ![Diagram that shows an overview of the Workflow Service Host.](./media/workflow-service-host-internals/workflow-service-host-high-level-overview.gif)  
   
  This diagram shows that <xref:System.ServiceModel.WorkflowServiceHost> loads workflow service definitions from .xamlx files and loads configuration information from a configuration file. It also loads tracking configuration from the tracking profile. <xref:System.ServiceModel.WorkflowServiceHost> exposes a workflow control endpoint which allows you to send control operations to workflow instances.  For more information see [Workflow Control Endpoint sample](../../../../docs/framework/wcf/feature-details/workflow-control-endpoint.md).  
   

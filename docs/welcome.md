@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 12/03/2018
+ms.date: 04/02/2019
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -50,12 +50,15 @@ Additionally, you can browse the [.NET API reference](/dotnet/api).
 
 ## Open source
 
-This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source:
+This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source. The following list shows the main .NET GitHub repositories:
 
 - [.NET Core Home](https://github.com/dotnet/core)
 - [.NET Libraries](https://github.com/dotnet/corefx)
 - [.NET Core Runtime](https://github.com/dotnet/coreclr)
+- [.NET Core CLI](https://github.com/dotnet/cli)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
 - [F# Compiler and IDE Tools](https://github.com/microsoft/visualfsharp)
+- [Windows Forms](https://github.com/dotnet/winforms)
+- [WPF](https://github.com/dotnet/wpf)
 
 You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community) to find out what's new or ask for help.

@@ -33,7 +33,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 -   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> to specify that the pixels drawn with the green pen will be centered on the boundary of the rectangle.  
   
-     The following illustration shows the resulting rectangle.  
+     The following illustration shows the resulting rectangle:
   
      ![Illustration showing green pixels centered on a rectangle.](./media/how-to-set-pen-width-and-alignment/green-pixels-centered-rectangle.gif)  
   

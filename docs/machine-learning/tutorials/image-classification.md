@@ -171,7 +171,7 @@ Create some classes for your input data, and predictions. Add a new class to you
 
 Remove the existing class definition and add the following code for the `ImageData` class to the *ImageData.cs* file:
 
-[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageData.cs#DeclareTypes)]
+[!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/TransferLearningTF/ImageData.cs#DeclareTypes)]
 
 `ImageData` is the input image data class and has the following <xref:System.String> fields:
 

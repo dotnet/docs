@@ -39,7 +39,7 @@ This example shows how to specify the position of a tooltip on the screen.
  
  The following image shows tooltip placement by using the Placement, PlacementRectangle, and Offset properties:   
   
- ![ToolTip placement by using the Offset property.](./media/how-to-position-a-tooltip/tooltip-placement-offset-property.png)
+ ![Diagram showing ToolTip placement by using the Offset property.](./media/how-to-position-a-tooltip/tooltip-placement-offset-property.png)
 
  The following example shows how to use the <xref:System.Windows.Controls.ToolTip> properties to specify the position of a tooltip whose content is a <xref:System.Windows.Controls.ToolTip> object.  
   

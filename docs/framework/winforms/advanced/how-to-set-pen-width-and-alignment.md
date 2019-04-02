@@ -22,7 +22,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 -   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.  
   
-     ![Illustration showing green pixels centered on line.](./media/how-to-set-pen-width-and-alignment/green-pixels-centered-line.gif)  
+     ![A black thin line with green highlight.](./media/how-to-set-pen-width-and-alignment/green-pixels-centered-line.gif)  
   
      The following code example draws a rectangle twice: once with a black pen of width 1 and once with a green pen of width 10.  
   

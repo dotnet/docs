@@ -44,6 +44,7 @@ MsgBox(sb.ToString())
 ```  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)

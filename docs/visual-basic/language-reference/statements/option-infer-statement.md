@@ -90,6 +90,7 @@ Option Infer { On | Off }
  [!code-vb[VbVbalrTypeInference#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]  
   
 ## See also
+
 - [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
 - [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)

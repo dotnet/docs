@@ -32,5 +32,6 @@ Erase arraylist
  [!code-vb[VbVbalrStatements#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#19)]  
   
 ## See also
+
 - [Nothing](../../../visual-basic/language-reference/nothing.md)
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)

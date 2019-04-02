@@ -115,6 +115,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      [!code-vb[VbVbalrAnonymousTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#16)]  
   
 ## See also
+
 - [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 - [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

@@ -81,6 +81,7 @@ Public strMsg As String
  The narrower the scope of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See also
+
 - [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
 - [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
 - [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)

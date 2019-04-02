@@ -59,6 +59,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
  [!code-vb[VbVbalrDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#14)]  
   
 ## See also
+
 - [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
 - [Of](../../../visual-basic/language-reference/statements/of-clause.md)
 - [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

@@ -32,6 +32,7 @@ Quantifier operations return a <xref:System.Boolean> value that indicates whethe
  [!code-vb[CsLINQAnyAll#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAnyAll/VB/AnyAll.vb#2)]  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)

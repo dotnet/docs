@@ -308,6 +308,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
  [!code-vb[VbVbalrStatements#145](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#145)]  
   
 ## See also
+
 - [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
 - [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)

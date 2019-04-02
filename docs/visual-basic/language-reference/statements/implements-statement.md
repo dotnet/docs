@@ -50,6 +50,7 @@ Implements interfacename.interfacemember [, ...]
  [!code-vb[VbVbalrStatements#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#34)]  
   
 ## See also
+
 - [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)
 - [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

@@ -75,9 +75,8 @@ The statements within a conditional compilation block must be complete logical s
  [!code-vb[VbVbalrConditionalComp#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#1)]  
   
 ## See also
+
 - [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
 - [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
 - [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
 - <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>
-
-

@@ -64,6 +64,7 @@ From element [ As type ] In collection [ _ ]
  [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  
   
 ## See also
+
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

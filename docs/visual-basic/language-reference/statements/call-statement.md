@@ -38,6 +38,7 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
  [!code-vb[VbVbalrStatements#97](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#97)]  
   
 ## See also
+
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
 - [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)

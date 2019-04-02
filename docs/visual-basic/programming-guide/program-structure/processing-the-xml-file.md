@@ -36,5 +36,6 @@ The compiler generates an ID string for each construct in your code that is tagg
  [!code-vb[VbVbcnXmlDocComments#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#10)]  
   
 ## See also
+
 - [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)
 - [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

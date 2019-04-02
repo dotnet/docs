@@ -102,6 +102,7 @@ End Class
  [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
 ## See also
+
 - [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
 - [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
 - [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)

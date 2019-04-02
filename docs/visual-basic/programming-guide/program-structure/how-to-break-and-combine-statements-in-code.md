@@ -53,5 +53,6 @@ When writing your code, you might at times create lengthy statements that necess
      [!code-vb[VbVbcnConventions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#10)]  
   
 ## See also
+
 - [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 - [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

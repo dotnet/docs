@@ -15,9 +15,9 @@ Shearing increases or decreases a color component by an amount proportional to a
 ## Example  
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars4.bmp. Then the code applies the shearing transformation described in the preceding paragraph to each pixel in the image.  
   
- The following illustration shows the original image on the left and the sheared image on the right.  
+ The following illustration shows the original image on the left and the sheared image on the right: 
   
- ![Shear Colors](./media/colortrans6.png "colortrans6")  
+ ![Two squares with colored stripes side-by-side illustrating the original image and the sheared image.](./media/how-to-shear-colors/original-image-sheared-image.png)  
   
  The following table lists the color vectors for the four bars before and after the shearing transformation.  
   

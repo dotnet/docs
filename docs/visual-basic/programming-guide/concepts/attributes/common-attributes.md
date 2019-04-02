@@ -249,6 +249,7 @@ End Structure
  Use `VBFixedArrayAttribute` to declare arrays that are fixed in size. Like Visual Basic strings, arrays are of variable length by default. This attribute is useful when serializing or writing data to files.  
   
 ## See also
+
 - <xref:System.Reflection>
 - <xref:System.Attribute>
 - [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

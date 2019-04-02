@@ -48,6 +48,7 @@ End If
 ```  
   
 ## See also
+
 - <xref:System.Boolean?displayProperty=nameWithType>
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)
 - [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

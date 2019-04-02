@@ -22,6 +22,7 @@ There are several circumstances when it is important that one event handler not 
  [!code-vb[VbVbalrEvents#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#27)]  
   
 ## See also
+
 - <xref:System.Collections.ArrayList>
 - <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>
 - [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

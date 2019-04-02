@@ -136,6 +136,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
  [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
 - [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)

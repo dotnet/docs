@@ -146,6 +146,7 @@ End Class
      [!code-vb[VbVbalrLambdas#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#5)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)

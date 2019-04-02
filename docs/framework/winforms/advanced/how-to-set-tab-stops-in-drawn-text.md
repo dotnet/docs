@@ -18,9 +18,9 @@ You can set tab stops for text by calling the <xref:System.Drawing.StringFormat.
 ## Example  
  The following example sets tab stops at 150, 250, and 350. Then, the code displays a tabbed list of names and test scores.  
   
- The following illustration shows the tabbed text.  
+ The following illustration shows the tabbed text:  
   
- ![Fonts Text](./media/fontstext4.png "fontstext4")  
+ ![Screenshot that shows a tabbed list of names and scores.](./media/how-to-set-tab-stops-in-drawn-text/tab-list-names-test-scores.png)  
   
  The following code passes two arguments to the <xref:System.Drawing.StringFormat.SetTabStops%2A> method. The second argument is an array that contains tab offsets. The first argument passed to <xref:System.Drawing.StringFormat.SetTabStops%2A> is 0, which indicates that the first offset in the array is measured from position 0, the left edge of the bounding rectangle.  
   

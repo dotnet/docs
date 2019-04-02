@@ -17,7 +17,7 @@ int number;
 int* p = &number; //address-of operator &  
 ```  
   
- The address-of operator can only be applied to a variable. If the variable is a moveable variable, you can use the [fixed statement](../../../csharp/language-reference/keywords/fixed-statement.md) to temporarily fix the variable before obtaining its address.  
+ The address-of operator can only be applied to a variable. If the variable is a moveable variable, you can use the [fixed statement](../../../csharp/language-reference/keywords/fixed-statement.md) to temporarily fix the variable before obtaining its address. For more information about moveable variables, see [Fixed and moveable variables](/dotnet/csharp/language-reference/language-specification/unsafe-code#fixed-and-moveable-variables). 
   
  It's your responsibility to ensure that the variable is initialized. The compiler doesn't issue an error message if the variable is not initialized.  
   

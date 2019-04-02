@@ -15,19 +15,19 @@ The <xref:System.Windows.Media.TileBrush.Viewport%2A> property specifies the til
 
 ## Example
 
-The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of <xref:System.Windows.Media.TileBrush>, to paint a rectangle with tiles. The example sets each tile to  50 percent by 50 percent of the output area (the rectangle). As a result, the rectangle is painted with four projections of the image.
+The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of <xref:System.Windows.Media.TileBrush>, to paint a rectangle with tiles. The example sets each tile to 50 percent by 50 percent of the output area (the rectangle). As a result, the rectangle is painted with four projections of the image.
 
-The following illustration shows the output that the example produces.
+The following illustration shows the output that the example produces:
 
-![Example of tiling with an image brush](./media/0.png "0")
+![A rectangle with four cherries demonstrating tiling with an image brush.](./media/how-to-set-the-tile-size-for-a-tilebrush/rectangle-tile-image-brush.png)
 
 [!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]
 
 The next example creates an <xref:System.Windows.Media.ImageBrush>, sets its <xref:System.Windows.Media.TileBrush.Viewport%2A> to `0,0,25,25` and its <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> to <xref:System.Windows.Media.BrushMappingMode.Absolute>, and uses it to paint another rectangle. As a result, the brush produces tiles that have a width of 25  pixels and a height of 25 pixels .
 
-The following illustration shows the output that the example produces.
+The following illustration shows the output that the example produces:
 
-![A tiled TileBrush with a Viewport of 0,0,0.25,0.25](./media/25x25viewport.png "25x25viewport")
+![A rectangle with forty-eight cherries demonstrating a tiled TileBrush with a Viewport.](./media/how-to-set-the-tile-size-for-a-tilebrush/25-x-25-viewport-tilebrush.png)
 
 [!code-csharp[UsingImageBrush_snip#AbsoluteTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#absolutetilesizeexample)]
 

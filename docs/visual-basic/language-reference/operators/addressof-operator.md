@@ -38,6 +38,7 @@ AddressOf procedurename
  [!code-vb[VbVbalrDelegates#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#9)]  
   
 ## See also
+
 - [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)

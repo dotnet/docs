@@ -71,6 +71,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
     [!code-vb[VbLINQToSQLHowTos#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form2.vb#5)]  
   
 ## See also
+
 - [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Queries](../../../../visual-basic/language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)

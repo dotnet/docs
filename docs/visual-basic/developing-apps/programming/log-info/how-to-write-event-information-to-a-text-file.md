@@ -60,6 +60,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
      After you configure the file log listener for an assembly, it receives all messages that `My.Application.Log` writes from that assembly.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>

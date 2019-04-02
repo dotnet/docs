@@ -88,6 +88,7 @@ The <xref:System.Collections.Generic.IEnumerable%601> interface is implemented b
  [!code-vb[VbVbalrIteratorWalkthrough#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/Module1.vb#10)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)

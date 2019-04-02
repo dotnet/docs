@@ -77,6 +77,7 @@ End Select
  [!code-vb[VbVbalrStatements#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#54)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
 - [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)

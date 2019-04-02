@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "03/18/2019"
+ms.date: "04/02/2019"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -62,36 +62,36 @@ For information about detecting the installed updates for each version of the .N
 2. In the Registry Editor, open the following subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full**. If the **Full** subkey isn't present, then you don't have the .NET Framework 4.5 or later installed.
 
     > [!NOTE]
-    > The **NET Framework Setup** folder in the registry does not begin with a period.
+    > The **NET Framework Setup** folder in the registry does *not* begin with a period.
 
 3. Check for a DWORD entry named **Release**. If it exists, then you have .NET Framework 4.5 or later versions installed. Its value is a release key that corresponds to a particular version of the .NET Framework. In the following figure, for example, the value of the **Release** entry is *378389*, which is the release key for .NET Framework 4.5. 
 
      ![Registry entry for the .NET Framework 4.5](media/clr-installdir.png "Registry entry for the .NET Framework 4.5")
 
-The following table lists the minimum value of the **Release** entry for each .NET Framework version. You can use these values as follows:
-
-- To determine whether a minimum .NET Framework version is present, test whether the **Release** DWORD value found in the registry is *greater than or equal to* the value listed in the table. For example, if your application requires the .NET Framework 4.7 or later, you test for a minimum release key value of *460798*.
-
-- To test for multiple versions, begin with the latest .NET Framework version, and then test for each successive earlier version.
+The following table lists the value of the **Release** DWORD on individual operating systems for .NET Framework 4.5 and later versions.
 
 [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
 <a name="version_table"></a>
-
 |.NET Framework version|Value of the Release DWORD|
 |--------------------------------|-------------|
-|.NET Framework 4.5|378389|
-|.NET Framework 4.5.1|378675|
-|.NET Framework 4.5.2|379893|
-|.NET Framework 4.6|393295|
-|.NET Framework 4.6.1|394254|
-|.NET Framework 4.6.2|394802|
-|.NET Framework 4.7|460798|
-|.NET Framework 4.7.1|461308|
-|.NET Framework 4.7.2|461808|
+|.NET Framework 4.5|All Windows operating systems: 378389|
+|.NET Framework 4.5.1|On Windows 8.1 and Windows Server 2012 R2: 378675<br />On all other Windows operating systems: 378758|
+|.NET Framework 4.5.2|All Windows operating systems: 379893|
+|.NET Framework 4.6|On Windows 10: 393295<br />On all other Windows operating systems: 393297|
+|.NET Framework 4.6.1|On Windows 10 November Update systems: 394254<br />On all other Windows operating systems: 394271|
+|.NET Framework 4.6.2|On Windows 10 Anniversary Update and Windows Server 2016: 394802<br />On all other Windows operating systems: 394806|
+|.NET Framework 4.7|On Windows 10 Creators Update: 460798<br />On all other Windows operating systems: 460805| 
+|.NET Framework 4.7.1|On Windows 10 Fall Creators Update and Windows Server, version 1709: 461308<br/>On all other Windows operating systems: 461310|
+|.NET Framework 4.7.2|On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On all other Windows operating systems: 461814|  
 
-For a complete table of release keys for the .NET Framework for specific Windows operating system versions, see [.NET Framework release keys and Windows operating system versions](release-keys-and-os-versions.md).
+You can use these values as follows:
 
+- To determine whether a specific version of the .NET Framework is installed on a particular version of the Windows operating system, test whether the **Release** DWORD value is *equal to* the value listed in the table. For example, to determine whether .NET Framework 4.6 is present on a Windows 10 system, test for the a **Release** value that is *equal to* 393295.
+
+- To determine whether a minimum version of the .NET Framework is present, use the smaller **RELEASE** DWORD value for that version. For example, if your application runs under .NET Framework 4.6 or a later version, test for a **RELEASE** DWORD value that is *greater than or equal to* 393295. For a table that lists only the minimum **RELEASE** DWORD value for each .NET Framework version, see [The minimum values of the Release DWORD for .NET Framework 4.5 and later versions](minimum-release-dword.md).
+
+- To test for multiple versions, begin by testing for a value that is *greater than or equal to* the smaller DWORD value for the latest .NET Framework version, and then compare the value with the smaller DWORD value for each successive earlier version. For example, if your application requires .NET Framework 4.7 or later and you want to determine the specific version of .NET Framework present, start by testing for a **RELEASE** DWORD value that is *great than or equal to* to 461808 (the smaller DWORD value for .NET Framework 4.7.2). Then compare the **RELEASE** DWORD value with the smaller value for each later .NET Framework version. For a table that lists only the minimum **RELEASE** DWORD value for each .NET Framework version, see [The minimum values of the Release DWORD for .NET Framework 4.5 and later versions](minimum-release-dword.md).
 
 <a name="net_d"></a> 
 ### Find .NET Framework versions 4.5 and later with code

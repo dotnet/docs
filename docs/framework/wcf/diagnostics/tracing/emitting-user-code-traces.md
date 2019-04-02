@@ -120,15 +120,17 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
  ![Trace Viewer: Emitting User&#45;code traces](../../../../../docs/framework/wcf/diagnostics/tracing/media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd")  
 List of activities by creation time (left panel) and their nested activities (upper-right panel)  
   
- If the service code throws an exception that causes the client to throw as well (for example, when the client did not get the response to its request), both the service and client warning or error messages occur in the same activity for direct correlation. In the following diagram, the service throws an exception that states "The service refuses to process this request in user code." The client also throws an exception that states "The server was unable to process the request due to an internal error."  
+ If the service code throws an exception that causes the client to throw as well (for example, when the client did not get the response to its request), both the service and client warning or error messages occur in the same activity for direct correlation. In the following image, the service throws an exception that states "The service refuses to process this request in user code." The client also throws an exception that states "The server was unable to process the request due to an internal error."
+ 
+ The following images shows that errors across endpoints for a given request appear in the same activity if the request activity id was propagated:  	  
   
- ![Using Trace Viewer to emit user&#45;code traces](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace2.gif "e2eTrace2")  
-Errors across endpoints for a given request appear in the same activity if the request activity id was propagated  
+ ![Screenshot that shows errors across endpoints for a given request.](./media/emitting-user-code-traces/trace-viewer-endpoint-errors.gif)  
   
- Double-clicking the Multiply activity on the left panel shows the following graph, with the traces for the Multiply activity for each process involved. We can see a warning first occurred at the service (exception thrown), which is followed by warnings and errors on the client because the request could not be processed. Therefore, we can imply the causal error relationship between endpoints and derive the root cause of the error.  
+ Double-clicking the Multiply activity on the left panel shows the following graph, with the traces for the Multiply activity for each process involved. We can see a warning first occurred at the service (exception thrown), which is followed by warnings and errors on the client because the request could not be processed. Therefore, we can imply the causal error relationship between endpoints and derive the root cause of the error. 
+
+ The following image shows a graph view of error correlation:  	 
   
- ![Using Trace Viewer to emit user&#45;code traces](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace3.gif "e2eTrace3")  
-Graph view of error correlation  
+ ![Screenshot that shows the graph view of error correlation.](./media/emitting-user-code-traces/trace-viewer-error-correlation.gif)  
   
  To obtain the previous traces, we set `ActivityTracing` for the user trace sources and `propagateActivity=true` for the `System.ServiceModel` trace source. We did not set `ActivityTracing` for the `System.ServiceModel` trace source to enable user code to user code activity propagation. (When ServiceModel activity tracing is on, the activity ID defined in the client is not propagated all the way to the service user code; Transfers, however, correlate the client and service user code activities to the intermediate WCF activities.)  
   

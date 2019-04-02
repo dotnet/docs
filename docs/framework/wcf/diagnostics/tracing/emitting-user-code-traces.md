@@ -120,7 +120,7 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
  ![Trace Viewer: Emitting User&#45;code traces](../../../../../docs/framework/wcf/diagnostics/tracing/media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd")  
 List of activities by creation time (left panel) and their nested activities (upper-right panel)  
   
- If the service code throws an exception that causes the client to throw as well (for example, when the client did not get the response to its request), both the service and client warning or error messages occur in the same activity for direct correlation. In the following diagram, the service throws an exception that states "The service refuses to process this request in user code." The client also throws an exception that states "The server was unable to process the request due to an internal error."  
+ If the service code throws an exception that causes the client to throw as well (for example, when the client did not get the response to its request), both the service and client warning or error messages occur in the same activity for direct correlation. In the following image, the service throws an exception that states "The service refuses to process this request in user code." The client also throws an exception that states "The server was unable to process the request due to an internal error."  
   
  ![Screenshot that shows errors across endpoints for a given request.](./media/emmiting-user-code-traces/trace-viewer-endpoint-errors.gif)  
   

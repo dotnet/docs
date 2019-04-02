@@ -1,7 +1,7 @@
 ---
 title: Welcome to ML.NET
 description: Learn about ML.NET, a free, open-source, and cross-platform machine learning framework that enables you to build custom AI solutions and integrate them into your .NET applications.
-author: brachtma
+author: briacht
 ms.custom: seodec18
 ms.topic: overview
 ms.date: 04/02/2019

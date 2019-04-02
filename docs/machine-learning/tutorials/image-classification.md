@@ -129,7 +129,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Prepare your data
 
-1. Download [The project assets zip file](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip), and unzip.
+1. Download [The project assets zip file](), and unzip.
 
 2. Copy the `assets` directory into your *TransferLearningTF* project directory. This directory and its subdirectories contain the data and support files (including the Inception model) needed for this tutorial.
 

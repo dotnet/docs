@@ -35,7 +35,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
      The following illustration shows the resulting rectangle:
   
-     ![Illustration showing green pixels centered on a rectangle.](./media/how-to-set-pen-width-and-alignment/green-pixels-centered-rectangle.gif)  
+     ![A rectangle drawn with black thin lines with green highlight.](./media/how-to-set-pen-width-and-alignment/green-pixels-centered-rectangle.gif)  
   
      [!code-csharp[System.Drawing.UsingAPen#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#42)]
      [!code-vb[System.Drawing.UsingAPen#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#42)]  

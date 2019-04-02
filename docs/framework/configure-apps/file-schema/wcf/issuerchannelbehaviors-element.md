@@ -8,7 +8,7 @@ ms.assetid: f7378673-8e9b-45b2-98d1-cf5dccdd8c40
 
 Contains a collection of Windows Communication Foundation (WCF) client endpoint behaviors (defined in the configuration) to be used when communicating with the specified Service Token Services. The defined behaviors cannot include any [\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) elements.
 
-```
+```xml
 <system.ServiceModel>
   <behaviors>
     <endpointBehaviors>

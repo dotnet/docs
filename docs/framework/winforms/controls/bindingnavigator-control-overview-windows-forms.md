@@ -17,7 +17,7 @@ You can use the <xref:System.Windows.Forms.BindingNavigator> control to create a
 
  The <xref:System.Windows.Forms.BindingNavigator> control is composed of a <xref:System.Windows.Forms.ToolStrip> with a series of <xref:System.Windows.Forms.ToolStripItem> objects for most of the common data-related actions: adding data, deleting data, and navigating through data. By default, the <xref:System.Windows.Forms.BindingNavigator> control contains these standard buttons. The following screenshot shows the <xref:System.Windows.Forms.BindingNavigator> control on a form:
   
- ![Screenshot showing the BindingNavigator Control.](./media/bindingnavigator-control-overview-windows-forms/bindingnavigator-control-form.gif)  
+ ![Screenshot showing the BindingNavigator control.](./media/bindingnavigator-control-overview-windows-forms/bindingnavigator-control-form.gif)  
   
  The following table lists the controls and describes their functions.  
   

@@ -85,16 +85,11 @@
   
 -   The `msxsl:script` element must include an `implements-prefix` attribute that contains the prefix representing the namespace associated with the script block. This namespace must be defined within the style sheet. A style sheet can include multiple script blocks which are grouped by namespace. You cannot have script blocks with multiple languages within the same namespace. Script blocks can call a function defined in another script block, provided the script blocks reside within the same namespace. The contents of a script block are parsed according to the rules and syntax of the scripting language (supplied by the `language` attribute). For example, if you had a C# script block, comments would be prefixed by the `//` characters. The comments must be valid XML content.  
   
- `Note` It is recommended that you wrap script blocks in a CDATA section.  
+> [!NOTE]
+> It is recommended that you wrap script blocks in a CDATA section.
   
-```  
-<msxsl:script implements-prefix='xy' language='C#'>  
-  <![CDATA[  
-  // Add code here.  
-  ]]]><![CDATA[]>  
-</msxsl:script>  
-```  
-  
+ [!INCLUDE [xsltransform-script](~/includes/xsltransform-script.md)] 
+   
  Functions can be declared within the `msxsl:script` element. The following table shows the namespaces that are supported by default.  
   
 |Supported Namespaces|Description|  

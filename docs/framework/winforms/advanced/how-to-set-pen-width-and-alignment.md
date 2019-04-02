@@ -49,7 +49,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
      Now the pixels in the wide green line appear on the inside of the rectangle as shown in the following illustration.  
   
-     ![Illustration showing green pixels inside a rectangle.](./media/how-to-set-pen-width-and-alignment/green-pixels-inside-rectangle.gif)  
+     ![A rectangle drawn with black lines with the wide green line inside.](./media/how-to-set-pen-width-and-alignment/green-pixels-inside-rectangle.gif)  
   
 ## See also
 - [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)

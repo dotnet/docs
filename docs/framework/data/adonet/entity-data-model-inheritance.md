@@ -11,7 +11,8 @@ The Entity Data Model (EDM) supports inheritance for [entity types](../../../../
  You cannot build inheritance hierarchies in which a derived type inherits from more than one type. For example, in a conceptual model with a `Book` entity type, you could define derived types `FictionBook` and `NonFictionBook` that each inherit from `Book`. However, you could not then define a type that inherits from both the `FictionBook` and `NonFictionBook` types.  
   
 ## Example  
- The diagram below shows a conceptual model with four entity types: `Book`, `FictionBook`, `Publisher`, and `Author`. The `FictionBook` entity type is a derived type, inheriting from the `Book` entity type. The `FictionBook` type inherits the `ISBN (Key)`, `Title`, and `Revision` properties, and defines an additional property called `Genre`.  
+
+The following diagram shows a conceptual model with four entity types: `Book`, `FictionBook`, `Publisher`, and `Author`. The `FictionBook` entity type is a derived type, inheriting from the `Book` entity type. The `FictionBook` type inherits the `ISBN (Key)`, `Title`, and `Revision` properties, and defines an additional property called `Genre`.  
   
  ![Diagram that shows a conceptual model with four entity types.](./media/entity-data-model-inheritance/entity-type-inheritance.gif)  
   

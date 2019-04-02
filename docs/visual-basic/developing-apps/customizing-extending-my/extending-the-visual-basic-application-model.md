@@ -17,9 +17,9 @@ You can add functionality to the application model by overriding the `Overridabl
   
  The Visual Basic Application Model also provides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> and <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> events. The following graphics show the mechanism for raising these events.  
   
- ![Diagram showing the Application Model next instance.](./media/extending-the-visual-basic-application-model/application-model-next-instance.gif)  
+ ![Diagram showing the OnStartupNextInstance method raising the StartupNextInstance event.](./media/extending-the-visual-basic-application-model/raise-startupnextinstance-event.gif)  
   
- ![Diagram showing the Application Model unhandled exception.](./media/extending-the-visual-basic-application-model/application-model-unhandled-exception.gif)  
+ ![Diagram showing the OnUnhandledException method raising the UnhandledException event.](./media/extending-the-visual-basic-application-model/raise-unhandledexception-event.gif)  
   
 ## Overriding the Base Methods  
  The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method defines the order in which the `Application` methods run. By default, the `Sub Main` procedure for a Windows Forms application calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method.  

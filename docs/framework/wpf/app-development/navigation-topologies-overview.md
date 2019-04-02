@@ -40,7 +40,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  This topic covers three common navigation topologies: *fixed linear*, *fixed hierarchical*, and *dynamically generated*. Each navigation topology is demonstrated with a sample that has a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] like the one that is shown in the following figure:  
   
- ![Screenshot that shows task pages with data items.](./media/navigation-topologies-overview/navigation-topology-data-items.png)  
+ ![Task pages with data items and navigation buttons.](./media/navigation-topologies-overview/navigation-topology-data-items.png)  
   
 <a name="Structured_Navigation_Topologies"></a>   
 ## Structured Navigation Topologies  

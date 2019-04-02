@@ -8,7 +8,7 @@ ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
 
 Defines the SOAP message security settings on this `netMsmqBinding` binding.
 
-```
+```xml
 <system.ServiceModel>
   <bindings>
     <netMsmqBinding>

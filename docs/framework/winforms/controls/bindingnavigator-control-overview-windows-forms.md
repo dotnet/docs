@@ -14,7 +14,8 @@ ms.assetid: 4423eede-f8d1-4d02-822f-5bf8432680d0
 You can use the <xref:System.Windows.Forms.BindingNavigator> control to create a standardized means for users to search and change data on a Windows Form. You frequently use <xref:System.Windows.Forms.BindingNavigator> with the <xref:System.Windows.Forms.BindingSource> component to enable users to move through data records on a form and interact with the records.  
   
 ## How the BindingNavigator Works  
- The <xref:System.Windows.Forms.BindingNavigator> control is composed of a <xref:System.Windows.Forms.ToolStrip> with a series of <xref:System.Windows.Forms.ToolStripItem> objects for most of the common data-related actions: adding data, deleting data, and navigating through data. By default, the <xref:System.Windows.Forms.BindingNavigator> control contains these standard buttons. The following screen shot shows the <xref:System.Windows.Forms.BindingNavigator> control on a form.  
+
+ The <xref:System.Windows.Forms.BindingNavigator> control is composed of a <xref:System.Windows.Forms.ToolStrip> with a series of <xref:System.Windows.Forms.ToolStripItem> objects for most of the common data-related actions: adding data, deleting data, and navigating through data. By default, the <xref:System.Windows.Forms.BindingNavigator> control contains these standard buttons. The following screenshot shows the <xref:System.Windows.Forms.BindingNavigator> control on a form:
   
  ![Screenshot showing the BindingNavigator Control.](./media/bindingnavigator-control-overview-windows-forms/bindingnavigator-control-form.gif)  
   

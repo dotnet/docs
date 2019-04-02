@@ -603,7 +603,7 @@
         <typeparam name="TState">The type of elements of <paramref name="state" />.</typeparam>
         <param name="callBack">An <see cref="T:System.Action`1" /> representing the method to execute.</param>
         <param name="state">An object containing data to be used by the method.</param>
-        <param name="preferLocal">Unlike other QueueUserWorkItem methods, prefer exeucting in the local thread pool and not the global thread pool.</param>
+        <param name="preferLocal">Unlike other QueueUserWorkItem methods, prefer executing in the local thread pool and not the global thread pool.</param>
         <summary>Queues a method specified by an <see cref="T:System.Action`1" /> delegate for execution, and provides data to be used by the method. The method executes when a thread pool thread becomes available.</summary>
         <returns>
           <see langword="true" /> if the method is successfully queued; <see cref="T:System.NotSupportedException" /> is thrown if the work item could not be queued.
@@ -1085,7 +1085,7 @@
  If you specify a negative number or a number larger than the maximum number of active thread pool threads (obtained using <xref:System.Threading.ThreadPool.GetMaxThreads%2A>), <xref:System.Threading.ThreadPool.SetMinThreads%2A> returns `false` and does not change either of the minimum values.  
   
 > [!CAUTION]
->  By default, the minimum number of threads is set to the number of processors on a system. You can use the <xref:System.Threading.ThreadPool.SetMinThreads%2A> method to increase the minimum number ofthreads. However, unnecessarily increasing these values can cause performance problems. If too many tasks start at the same time, all of them might appear to be slow. In most cases, the thread pool will perform better with its own algorithm for allocating threads. Reducing the minimum to less than the number of processors can also hurt performance.  
+>  By default, the minimum number of threads is set to the number of processors on a system. You can use the <xref:System.Threading.ThreadPool.SetMinThreads%2A> method to increase the minimum number of threads. However, unnecessarily increasing these values can cause performance problems. If too many tasks start at the same time, all of them might appear to be slow. In most cases, the thread pool will perform better with its own algorithm for allocating threads. Reducing the minimum to less than the number of processors can also hurt performance.  
   
    
   

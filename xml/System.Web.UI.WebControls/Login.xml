@@ -1385,7 +1385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Login.LabelStyle%2A> property defines the appearance of text box labels in the <xref:System.Web.UI.WebControls.Login> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TableItemStyle> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.TableItemStyle> class (for example, `LabelStyle-ForeColor`). You can set the property programmatically in the form `Property.Subproperty` (for example, `LableStyle.ForeColor`).  
+ The <xref:System.Web.UI.WebControls.Login.LabelStyle%2A> property defines the appearance of text box labels in the <xref:System.Web.UI.WebControls.Login> control. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.TableItemStyle> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.TableItemStyle> class (for example, `LabelStyle-ForeColor`). You can set the property programmatically in the form `Property.Subproperty` (for example, `LabelStyle.ForeColor`).  
   
  Common settings include custom background color, text color, and font properties. The <xref:System.Web.UI.WebControls.Login.LabelStyle%2A> property defines the appearance of the following properties:  
   
@@ -2754,7 +2754,7 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The HMTL writer.</param>
+        <param name="writer">The HTML writer.</param>
         <summary>Renders the login form using the specified HTML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>

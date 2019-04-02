@@ -113,7 +113,7 @@
     OnInit="Init event handler  
     OnLoad="Load event handler"  
     OnPreRender="PreRender event handler"  
-    OnUnload="UnLoad event hadler"  
+    OnUnload="UnLoad event handler"  
     Runat="server"  
     TargetControlID="string"  
     Visible="True|False"  
@@ -126,7 +126,7 @@
             ControlD="string"  
         </asp:DynamicFilterExpression>  
         <asp:CustomExpression="string"  
-            OnQuerying="OnQerying event handler">  
+            OnQuerying="OnQuerying event handler">  
         </asp:CustomExpression>  
         <asp:OrderByExpression="string"  
             DataField="string"  
@@ -148,7 +148,7 @@
         </asp:RangeExpression>  
         <asp:SearchExpression="string"  
             ComparisonType="CurrentCulture|CurrentCultureIgnoreCase|  
-                InavariantCulture|InvariantCultureIgnoreCase|  
+                InvariantCulture|InvariantCultureIgnoreCase|  
                 Ordinal|OrdinalIgnoreCase"  
             DataField="string"  
             SearchType="Contains|EndsWith|StartsWith">  

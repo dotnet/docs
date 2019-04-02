@@ -1847,7 +1847,7 @@ The `LoadViewState` method is used to load the previously saved view state of th
 |Select|Use of new|Example|  
 |------------|----------------|-------------|  
 |Single property.|`new` not needed.|`Select="Category"`|  
-|Multiple properties.|`new` needed.|`Select="new(Cateogry, Name)"`|  
+|Multiple properties.|`new` needed.|`Select="new(Category, Name)"`|  
 |Single or multiple properties that have an alias.|`new` needed.|`Select="new(Category As CategoryGroup)"`|  
   
  If you want to enable automatic data modifications, but you do not want to display all the properties from the data object, do not set the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property. Instead, manage the display through the data-bound control. When you use the <xref:System.Web.UI.WebControls.DetailsView> control or the <xref:System.Web.UI.WebControls.GridView> control, you must also set the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateRows%2A> or the <xref:System.Web.UI.WebControls.GridView.AutoGenerateColumns%2A> property to `false`. Any values that are not displayed in the data-bound control are stored in view state. They are passed unchanged to the data source when the data update is performed.  

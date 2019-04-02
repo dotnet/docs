@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can query relevant information about a transaction by accessing the <xref:System.Transactions.Transaction.TransactionInformation%2A> proptery of the <xref:System.Transactions.Transaction> class. In this way, you can retrieve the status  of  any transaction object, including the current ambient transaction, by doing a call like `Transaction.Current.TransactionInfomation.Status`.  
+ You can query relevant information about a transaction by accessing the <xref:System.Transactions.Transaction.TransactionInformation%2A> property of the <xref:System.Transactions.Transaction> class. In this way, you can retrieve the status  of  any transaction object, including the current ambient transaction, by doing a call like `Transaction.Current.TransactionInformation.Status`.  
   
  ]]></format>
     </remarks>

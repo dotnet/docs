@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- XML Web services discovery involves discovering the available Web Services given an URL. The URL usually points to a discovery document, which typically has a.disco file name extension. Within a discovery document are references to information about the existance of XML Web services. These references can refer to service descriptions, XML Schema Definition language (XSD) schemas or other discovery documents. This class represents a reference to a Service Description.  
+ XML Web services discovery involves discovering the available Web Services given an URL. The URL usually points to a discovery document, which typically has a.disco file name extension. Within a discovery document are references to information about the existence of XML Web services. These references can refer to service descriptions, XML Schema Definition language (XSD) schemas or other discovery documents. This class represents a reference to a Service Description.  
   
  Within a discovery document, a reference to a Service Description is contained within a `contractRef` XML element. The `contractRef` XML element has two attributes: `ref` and `docRef`. The `contractRef` element must have an XML namespace matching the <xref:System.Web.Services.Discovery.ContractReference.Namespace> constant, whereas the `ref` and `docRef` attributes are placed in the <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> and <xref:System.Web.Services.Discovery.ContractReference.DocRef%2A> properties.  
   
@@ -115,7 +115,7 @@
         <Parameter Name="href" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="href">The URL for a Sevice Descritpion. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property value.</param>
+        <param name="href">The URL for a Service Description. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class using the supplied reference to a Service Description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

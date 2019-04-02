@@ -271,7 +271,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the status of the Last-Modified headerset to base on the timestamps of the file dependencies of the handler.</summary>
+        <summary>Gets the status of the Last-Modified header set to base on the timestamps of the file dependencies of the handler.</summary>
         <returns>
           <see langword="true" /> if the Last-Modified header is set to base on the timestamps of the file dependencies of the handler; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -1378,7 +1378,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the timestamp in Coordinated Universal Iime (UTC) for the <see cref="T:System.Web.HttpCachePolicy" />.</summary>
+        <summary>Gets or sets the timestamp in Coordinated Universal Time (UTC) for the <see cref="T:System.Web.HttpCachePolicy" />.</summary>
         <value>The <see cref="T:System.DateTime" /> for the <see cref="T:System.Web.HttpCachePolicy" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

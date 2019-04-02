@@ -76,7 +76,7 @@
  The <xref:System.Web.Security.Roles> class also enables you to create and delete roles and to add users to or remove users from roles.  
   
 > [!NOTE]
->  If you have configured your application to use the <xref:System.Web.Security.WindowsTokenRoleProvider> class, you cannot modify roles or role membership. The <xref:System.Web.Security.WindowsTokenRoleProvider> classverifies membership in Windows security groups only. In this case, you must use Windows user account management rather than ASP.NET roles to create and delete groups and manage group membership.  
+>  If you have configured your application to use the <xref:System.Web.Security.WindowsTokenRoleProvider> class, you cannot modify roles or role membership. The <xref:System.Web.Security.WindowsTokenRoleProvider> class verifies membership in Windows security groups only. In this case, you must use Windows user account management rather than ASP.NET roles to create and delete groups and manage group membership.  
   
  You can store role information in several data sources.  
   

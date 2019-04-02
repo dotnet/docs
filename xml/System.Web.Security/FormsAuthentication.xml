@@ -997,7 +997,7 @@ This method does not create a cookie.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects tothe return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
   
  ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
   
@@ -1059,7 +1059,7 @@ This method does not create a cookie.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the return URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects tothe return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the return URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
   
  ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
   

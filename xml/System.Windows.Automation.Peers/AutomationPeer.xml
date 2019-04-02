@@ -547,7 +547,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overriden in a derived class, provides UI Automation with a list of elements affected or controlled by this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
+        <summary>When overridden in a derived class, provides UI Automation with a list of elements affected or controlled by this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
         <returns>A list of automation peers for the controlled elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1240,8 +1240,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overriden in a derived class, provides UI Automation with the size of the group or set that this element belongs to.</summary>
-        <returns>An integer value that describes the size of the group or set tthat his element belongs to.</returns>
+        <summary>When overridden in a derived class, provides UI Automation with the size of the group or set that this element belongs to.</summary>
+        <returns>An integer value that describes the size of the group or set that this element belongs to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -133,7 +133,7 @@
       </Parameters>
       <Docs>
         <param name="initialState">true to set the initial state signaled; false to set the initial state to nonsignaled.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the intial state to signaled.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the initial state to signaled.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
@@ -170,7 +170,7 @@
       <Docs>
         <param name="initialState">true to set the initial state to signaled; false to set the initial state to nonsignaled.</param>
         <param name="spinCount">The number of spin waits that will occur before falling back to a kernel-based wait operation.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the intial state to signaled and a specified spin count.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the initial state to signaled and a specified spin count.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="spinCount" /> is less than 0 or greater than the maximum allowed value.</exception>

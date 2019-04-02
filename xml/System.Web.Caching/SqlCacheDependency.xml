@@ -105,7 +105,7 @@
   
  SQL statements that are associated with the `sqlCmd` parameter must include the following:  
   
--   Fully qualified table names, including the name of the table owner. For example, to refer to a table named Customersthat is owned by the database owner, the SQL statement must refer to `dbo.customers`.  
+-   Fully qualified table names, including the name of the table owner. For example, to refer to a table named Customers that is owned by the database owner, the SQL statement must refer to `dbo.customers`.  
   
 -   Explicit column names in the Select statement. You cannot use the asterisk (*) wildcard character to select all columns from a table. For example, instead of `select * from dbo.customers`, you must use `select name, address, city, state from dbo.customers`.  
   

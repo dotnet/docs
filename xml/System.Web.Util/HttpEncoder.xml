@@ -431,7 +431,7 @@
 ## Remarks  
  The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method is called by several URL encoding methods in the <xref:System.Web.HttpUtility> class.  
   
- The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method URL-encodes any character that is not in the set of ASCII characters that is considered to be URL-safe. Spaces are encoded as the ASCII "`+"` character. URL-safe ASCII characters include the ASCI characters (A to Z and a to z), numerals (0 to 9), and some punctuation marks. The following table lists the punctuation marks that are considered URL-safe ASCII characters.  
+ The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method URL-encodes any character that is not in the set of ASCII characters that is considered to be URL-safe. Spaces are encoded as the ASCII "`+"` character. URL-safe ASCII characters include the ASCII characters (A to Z and a to z), numerals (0 to 9), and some punctuation marks. The following table lists the punctuation marks that are considered URL-safe ASCII characters.  
   
 |Character|Description|  
 |---------------|-----------------|  

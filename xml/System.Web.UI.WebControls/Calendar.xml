@@ -67,7 +67,7 @@
   
 <a name="Introduction"></a>   
 ## Introduction  
- Use the <xref:System.Web.UI.WebControls.Calendar> control to display a single month of a calendar on a Web page. The control allows you to select dates and move to the next or previous month. The <xref:System.Web.UI.WebControls.Calendar> control supports all the <xref:System.Globalization.Calendar?displayProperty=nameWithType> types in the <xref:System.Globalization> namespace. Apart from the Gregorian calendar, this also includes calendars that use different year and month systems, such as the Hjiri calendar.  
+ Use the <xref:System.Web.UI.WebControls.Calendar> control to display a single month of a calendar on a Web page. The control allows you to select dates and move to the next or previous month. The <xref:System.Web.UI.WebControls.Calendar> control supports all the <xref:System.Globalization.Calendar?displayProperty=nameWithType> types in the <xref:System.Globalization> namespace. Apart from the Gregorian calendar, this also includes calendars that use different year and month systems, such as the Hijri calendar.  
   
  You can specify whether the <xref:System.Web.UI.WebControls.Calendar> control allows you to select a single day, week, or entire month by setting the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property.  
   

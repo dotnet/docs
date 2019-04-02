@@ -211,7 +211,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example captures the multiple values returned by the <xref:System.Web.HttpRequest.AcceptTypes%2A> property into an object variable and writes the number and name of each valueto a separate line of HTTP output.  
+ The following code example captures the multiple values returned by the <xref:System.Web.HttpRequest.AcceptTypes%2A> property into an object variable and writes the number and name of each value to a separate line of HTTP output.  
   
  [!code-csharp[Classic HttpRequest.AcceptTypes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.AcceptTypes Example/CS/source.cs#1)]
  [!code-vb[Classic HttpRequest.AcceptTypes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.AcceptTypes Example/VB/source.vb#1)]  

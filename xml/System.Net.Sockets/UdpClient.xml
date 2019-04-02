@@ -227,7 +227,7 @@
         <Parameter Name="localEP" Type="System.Net.IPEndPoint" />
       </Parameters>
       <Docs>
-        <param name="localEP">An <see cref="T:System.Net.IPEndPoint" /> that respresents the local endpoint to which you bind the UDP connection.</param>
+        <param name="localEP">An <see cref="T:System.Net.IPEndPoint" /> that represents the local endpoint to which you bind the UDP connection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.UdpClient" /> class and binds it to the specified local endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

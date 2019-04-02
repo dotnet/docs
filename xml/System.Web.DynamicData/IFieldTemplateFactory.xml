@@ -54,7 +54,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET Dynamic Data field templates are ASP.NET user controls that map data controls to data types in a data model. Field templates generally derive from <xref:System.Web.DynamicData.FieldTemplateUserControl>, the class that enables access to data fields, data columns, and metadata in data models. Dynamic Data projects provide default field templates, but you can modify them or create custom field templates. When imlemented, this method creates a field template based on the data column, the mode of the data column, and the <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property. You specify the `uiHint` parameter if you want to render data using a custom field template.  
+ ASP.NET Dynamic Data field templates are ASP.NET user controls that map data controls to data types in a data model. Field templates generally derive from <xref:System.Web.DynamicData.FieldTemplateUserControl>, the class that enables access to data fields, data columns, and metadata in data models. Dynamic Data projects provide default field templates, but you can modify them or create custom field templates. When implemented, this method creates a field template based on the data column, the mode of the data column, and the <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property. You specify the `uiHint` parameter if you want to render data using a custom field template.  
   
  ]]></format>
         </remarks>

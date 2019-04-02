@@ -79,7 +79,7 @@
   
 <a name="Inlining"></a>   
 ### Task inlining  
- In some cases when a <xref:System.Threading.Tasks.Task> is waited on, it may be executed synchronously on the thread that is performing the wait operation. This enhances performance by preventing the need for an additional thread and instead using the existing thread, which would have blocked otherwise. To prevent errors due to re-entrancy, task inlining only occurs when the wait target is found in the relevant thread's local queue.  
+ In some cases when a <xref:System.Threading.Tasks.Task> is waited on, it may be executed synchronously on the thread that is performing the wait operation. This enhances performance by preventing the need for an additional thread and instead using the existing thread, which would have blocked otherwise. To prevent errors due to reentrancy, task inlining only occurs when the wait target is found in the relevant thread's local queue.  
   
 <a name="Sync"></a>   
 ## Specifying a synchronization context  

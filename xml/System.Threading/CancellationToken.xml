@@ -161,7 +161,7 @@
 ## Remarks  
  If <xref:System.Threading.CancellationToken.CanBeCanceled%2A> returns `false`, it is guaranteed that the token will never transition into a canceled state, meaning that <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> will never return `true`. A cancellation token that cannot be canceled is returned by the static <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType> property.  
   
- You can optionally use this property to determine whether a cancellation token can be canceled before examing the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property to determine whether it has been canceled.  
+ You can optionally use this property to determine whether a cancellation token can be canceled before examining the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property to determine whether it has been canceled.  
   
  ]]></format>
         </remarks>

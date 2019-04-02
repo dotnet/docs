@@ -70,7 +70,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.Clear%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicatethatvalues in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
+ In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.Clear%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicate that values in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
   
    
   
@@ -269,7 +269,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.Remove%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicatevalues in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
+ In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.Remove%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicate values in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
   
  If the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation does not contain an element with the specified `name`, the collection should remain unchanged and no exception be thrown.  
   
@@ -312,7 +312,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.RemoveAt%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicatevalues in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
+ In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.RemoveAt%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicate values in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
   
  Your implementation of the <xref:System.Web.SessionState.ISessionStateItemCollection.RemoveAt%2A> method should throw an <xref:System.ArgumentOutOfRangeException> exception if `index` is less than zero or is equal to or greater than <xref:System.Collections.ICollection.Count%2A?displayProperty=nameWithType>.  
   

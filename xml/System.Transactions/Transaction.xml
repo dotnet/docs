@@ -512,7 +512,7 @@
   
 -   `TransactionInterop.GetExportCookie`  
   
--   `TransctionInterop.GetTransmitterPropagationToken`  
+-   `TransactionInterop.GetTransmitterPropagationToken`  
   
 -   Serialization of a Transaction object  
   
@@ -833,7 +833,7 @@
 ## Remarks  
  This method has the side effect of causing promotion of the transaction if it is not already promoted.  
   
- The format of the returned `byte[]` is defined by the value of the `Transation.PromoterType` property. If the value of the `Transaction.PromoterType` property is `TransactionInterop.PromoterTypeDtc` or `Guid.Empty`, then the `byte[]` returned by this method is an MSDTC transmitter propagation token. Any other value for the `Transaction.PromoterType` property specifies a format that is defined by the caller of `Transaction.EnlistPromotableSinglePhase` that specified the property type value. In order to interpret the promoted token in this latter case, you will need to consult the documentation for the code that made the `EnlistPromotableSinglePhase` call.  
+ The format of the returned `byte[]` is defined by the value of the `Transaction.PromoterType` property. If the value of the `Transaction.PromoterType` property is `TransactionInterop.PromoterTypeDtc` or `Guid.Empty`, then the `byte[]` returned by this method is an MSDTC transmitter propagation token. Any other value for the `Transaction.PromoterType` property specifies a format that is defined by the caller of `Transaction.EnlistPromotableSinglePhase` that specified the property type value. In order to interpret the promoted token in this latter case, you will need to consult the documentation for the code that made the `EnlistPromotableSinglePhase` call.  
   
  ]]></format>
         </remarks>

@@ -128,7 +128,7 @@
         <ReturnType>System.Web.Hosting.ApplicationMonitors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a group of repleacable monitor objects used by ASP.NET subsystems to maintain application health.</summary>
+        <summary>Gets a group of replaceable monitor objects used by ASP.NET subsystems to maintain application health.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -501,7 +501,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicats whether the current application is in a development environment.</summary>
+        <summary>Gets a value that indicates whether the current application is in a development environment.</summary>
         <value>
           <see langword="true" /> if the application is in a development environment; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

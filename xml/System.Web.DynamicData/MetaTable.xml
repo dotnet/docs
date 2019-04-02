@@ -1439,14 +1439,14 @@ End Function
 ```csharp  
 protected  override void Initialize() {  
     base.Initialize();  
-    MyOverridenInit();  
+    MyOverriddenInit();  
 }  
 ```  
   
 ```vb  
 Protected Overloads Overrides Sub Initialize()   
     MyBase.Initialize()   
-    MyOverridenInit()   
+    MyOverriddenInit()   
 End Sub  
 ```  
   

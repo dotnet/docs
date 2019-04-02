@@ -121,7 +121,7 @@
   
 <a name="applying_styles"></a>   
 ## Applying CSS Styles  
- The <xref:System.Web.UI.UpdateProgress> control accepts expando attributes. This makes it possible to set a CSS class on the HTMLelements that the controls render. For example, you might create the markup shown in the following example:  
+ The <xref:System.Web.UI.UpdateProgress> control accepts expando attributes. This makes it possible to set a CSS class on the HTML elements that the controls render. For example, you might create the markup shown in the following example:  
   
 ```  
 <asp:UpdateProgress runat="server" class="myStyle">  
@@ -516,7 +516,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.UpdateProgress> control does not have any server scriptdependencies.  
+ The <xref:System.Web.UI.UpdateProgress> control does not have any server script dependencies.  
   
  ]]></format>
         </remarks>

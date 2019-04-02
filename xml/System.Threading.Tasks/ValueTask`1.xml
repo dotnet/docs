@@ -594,7 +594,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       </Parameters>
       <Docs>
         <param name="left">The first value to compare.</param>
-        <param name="right">The seconed value to compare.</param>
+        <param name="right">The second value to compare.</param>
         <summary>Determines whether two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are unequal.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are not equal; otherwise, <see langword="false" />.</returns>
@@ -663,7 +663,7 @@ As such, the default choice for any asynchronous method should be to return a <x
 ## Remarks  
  If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property returns it directly.
 
- If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has faulted or was cancellecd, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
+ If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has faulted or was cancelled, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
   
  ]]></format>
         </remarks>

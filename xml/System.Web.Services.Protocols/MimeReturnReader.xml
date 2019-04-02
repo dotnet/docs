@@ -26,7 +26,7 @@
   
  The <xref:System.Web.Services.Protocols.MimeReturnReader> class establishes a common <xref:System.Web.Services.Protocols.MimeReturnReader.Read%2A> interface for all client-side reading of HTTP response streams into Web method return values.  
   
- You typically will not need touse <xref:System.Web.Services.Protocols.MimeReturnReader> or its descendant classes directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to the <xref:System.Web.Services.Protocols.XmlReturnReader> class, which is derived from <xref:System.Web.Services.Protocols.MimeReturnReader>.  
+ You typically will not need to use <xref:System.Web.Services.Protocols.MimeReturnReader> or its descendant classes directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to the <xref:System.Web.Services.Protocols.XmlReturnReader> class, which is derived from <xref:System.Web.Services.Protocols.MimeReturnReader>.  
   
  ]]></format>
     </remarks>

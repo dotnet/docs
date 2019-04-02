@@ -34,11 +34,11 @@
   
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
   <ContentTemplate>  
-    <!-- Items ommited for clarity. -->  
+    <!-- Items omitted for clarity. -->  
     <asp:FormView runat="server" ID="FormView1"   
         DataSourceID="DetailsDataSource" DefaultMode="Edit"  
         OnDataBound="FormView1_DataBound">  
-        <!-- Items ommited for clarity. -->  
+        <!-- Items omitted for clarity. -->  
     </asp:FormView>  
   
   </ContentTemplate>  
@@ -135,11 +135,11 @@
   
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">  
   <ContentTemplate>  
-  <!-- Items ommited for clarity. -->  
+  <!-- Items omitted for clarity. -->  
     <asp:FormView runat="server" ID="FormView1"   
         DataSourceID="DetailsDataSource" DefaultMode="Edit"  
         OnDataBound="FormView1_DataBound">  
-        <!-- Items ommited for clarity. -->  
+        <!-- Items omitted for clarity. -->  
     </asp:FormView>  
   
   </ContentTemplate>  

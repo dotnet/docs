@@ -92,7 +92,7 @@
 ## Remarks  
  It is the transaction manager's choice as to whether two phase commit or the single phase commit optimization is used with this resource manager.  For more information on single phase and two phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](https://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
- Therefore, on this enlistment of the resource manager, either the <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> method is called, or the two phase commit methods defined in ther <xref:System.Transactions.IEnlistmentNotification> interface are called.  
+ Therefore, on this enlistment of the resource manager, either the <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> method is called, or the two phase commit methods defined in the <xref:System.Transactions.IEnlistmentNotification> interface are called.  
   
  Your implementation of this method should call either the <xref:System.Transactions.SinglePhaseEnlistment.Committed%2A> method or the <xref:System.Transactions.SinglePhaseEnlistment.Aborted%2A> method of the `singlePhaseEnlistment` parameter to indicate whether the transaction should be committed or rolled back.  
   

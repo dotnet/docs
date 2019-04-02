@@ -148,7 +148,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">Accessing the supplied URL returned an HTTP status code other than <see cref="F:System.Net.HttpStatusCode.OK" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The <paramref name="url" /> parameteris a valid URL, but does not point to a valid discovery document.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="url" /> parameter is a valid URL, but does not point to a valid discovery document.</exception>
       </Docs>
     </Member>
     <Member MemberName="DiscoverAny">
@@ -195,7 +195,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">Accessing the supplied URL returned an HTTP status code other than <see cref="F:System.Net.HttpStatusCode.OK" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The <paramref name="url" /> parameteris a valid URL, but does not point to a valid discovery document, service description, or XSD schema.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="url" /> parameter is a valid URL, but does not point to a valid discovery document, service description, or XSD schema.</exception>
       </Docs>
     </Member>
     <Member MemberName="Documents">

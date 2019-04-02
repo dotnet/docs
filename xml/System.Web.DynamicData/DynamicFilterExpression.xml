@@ -38,7 +38,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.DynamicFilterExpression> control to select a filter template in a page. The filter template is selected by the <xref:System.Web.DynamicData.DynamicFilter> control that is identified by <xref:System.Web.DynamicData.DynamicFilterExpression> control through its `ControID` property.  
+ The following example shows how to use the <xref:System.Web.DynamicData.DynamicFilterExpression> control to select a filter template in a page. The filter template is selected by the <xref:System.Web.DynamicData.DynamicFilter> control that is identified by <xref:System.Web.DynamicData.DynamicFilterExpression> control through its `ControlID` property.  
   
 ```  
 <asp:QueryExtender ID="QueryExtender1"   

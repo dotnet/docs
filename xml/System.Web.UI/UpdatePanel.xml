@@ -103,7 +103,7 @@
   
 <a name="applying_styles"></a>   
 ## Applying Styles  
- The <xref:System.Web.UI.UpdatePanel> control accepts expando attributes. This lets you set a CSS class for the HTMLelements that the controls render. For example, you might create the markup shown in the following example:  
+ The <xref:System.Web.UI.UpdatePanel> control accepts expando attributes. This lets you set a CSS class for the HTML elements that the controls render. For example, you might create the markup shown in the following example:  
   
 ```  
 <asp:UpdatePanel runat="server" class="myStyle">  

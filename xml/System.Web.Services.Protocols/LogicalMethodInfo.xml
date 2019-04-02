@@ -253,7 +253,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Reflection.TargetException">The <paramref name="target" /> parameteris <see langword="null" />.</exception>
+        <exception cref="T:System.Reflection.TargetException">The <paramref name="target" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The number, type, and order of parameters in <paramref name="values" /> do not match the signature of the invoked method.</exception>
         <exception cref="T:System.MemberAccessException">The caller does not have permission to invoke the method.</exception>
       </Docs>

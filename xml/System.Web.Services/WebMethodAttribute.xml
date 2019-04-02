@@ -515,7 +515,7 @@
   
  The message name associated with an XML Web service method must be unique within the XML Web service.  
   
- If a new XML Web serivce method with the same name but different parameters is added after clients are calling the original method, a different message name should be specified for the new method but the original message name should be left as is to ensure compatibility with existing clients.  
+ If a new XML Web service method with the same name but different parameters is added after clients are calling the original method, a different message name should be specified for the new method but the original message name should be left as is to ensure compatibility with existing clients.  
   
    
   

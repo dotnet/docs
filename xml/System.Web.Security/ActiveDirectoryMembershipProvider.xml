@@ -444,7 +444,7 @@
 -or-
   
  <paramref name="newPasswordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer" /> property is <see langword="true" />.</exception>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decriptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decryptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.ActiveDirectoryMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" /> method is called before the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> instance is initialized.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
@@ -533,7 +533,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="providerUserKey" /> parameter is not <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The administrator has not mapped the password question-and-answer fields to attributes of the Active Directory schema, and either the <paramref name="passwordQuestion" /> or <paramref name="passwordAnswer" /> parameter is not <see langword="null" />.</exception>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decriptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.  
+        <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decryptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.  
   
 -or-
   
@@ -2116,7 +2116,7 @@
   
 -   The Active Directory schema must be modified to contain attributes for storing the password question and answer, and the three tracking fields for password answer changes.  
   
--   The `attributeMapPasswordQuestion`, `attributeMapPasswordAnswer`, `attributMapFailedPasswordAnswerCount`, `attributeMapFailedPasswordAnswerTime`, and `attributeMapFailedPasswordAnswerLockedTime` attributes must be set in the application configuration file.  
+-   The `attributeMapPasswordQuestion`, `attributeMapPasswordAnswer`, `attributeMapFailedPasswordAnswerCount`, `attributeMapFailedPasswordAnswerTime`, and `attributeMapFailedPasswordAnswerLockedTime` attributes must be set in the application configuration file.  
   
 -   The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer%2A> property must be set to `true`.  
   

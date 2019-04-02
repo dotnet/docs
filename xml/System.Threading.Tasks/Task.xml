@@ -2201,7 +2201,7 @@ End Sub
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="delay" /> represents a negative time interval other than <see langword="TimeSpan.FromMillseconds(-1)" />.  
+          <paramref name="delay" /> represents a negative time interval other than <see langword="TimeSpan.FromMilliseconds(-1)" />.  
   
  -or-  
   
@@ -2338,7 +2338,7 @@ Task t Status: RanToCompletion, Result: 42
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="delay" /> represents a negative time interval other than <see langword="TimeSpan.FromMillseconds(-1)" />.  
+          <paramref name="delay" /> represents a negative time interval other than <see langword="TimeSpan.FromMilliseconds(-1)" />.  
   
  -or-  
   

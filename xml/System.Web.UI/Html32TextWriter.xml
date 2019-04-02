@@ -71,7 +71,7 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> that renders the HMTL content.</param>
+        <param name="writer">The <see cref="T:System.IO.TextWriter" /> that renders the HTML content.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Html32TextWriter" /> class that uses the line indentation that is specified in the <see cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" /> field when the requesting browser requires line indentation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -114,7 +114,7 @@
         <Parameter Name="tabString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.TextWriter" /> that renders the HMTL 3.2 content.</param>
+        <param name="writer">The <see cref="T:System.IO.TextWriter" /> that renders the HTML 3.2 content.</param>
         <param name="tabString">A string that represents the number of spaces defined by the <see cref="P:System.Web.UI.HtmlTextWriter.Indent" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Html32TextWriter" /> class that uses the specified line indentation.</summary>
         <remarks>

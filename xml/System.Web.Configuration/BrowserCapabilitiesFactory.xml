@@ -11407,7 +11407,7 @@
       </Parameters>
       <Docs>
         <param name="ignoreApplicationBrowsers">
-          <see langword="true" /> to ignore definitions for the Iephone browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to ignore definitions for the Iphone browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Iphone browser making the current request.</summary>

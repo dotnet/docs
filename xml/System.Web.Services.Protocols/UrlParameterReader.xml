@@ -74,7 +74,7 @@
         <Parameter Name="request" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="request">A <see cref="T:System.Net.WebResponse" /> objectcontaining HTML URL-encoded name/value pairs.</param>
+        <param name="request">A <see cref="T:System.Net.WebResponse" /> object containing HTML URL-encoded name/value pairs.</param>
         <summary>Reads name/value pairs encoded in the query string of an HTTP request into Web method parameter values.</summary>
         <returns>An array of name/value pairs.</returns>
         <remarks>

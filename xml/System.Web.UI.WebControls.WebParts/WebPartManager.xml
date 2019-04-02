@@ -4011,7 +4011,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosing%2A> method raises the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing> event to indicate that a control is in the process of being closed or removed from a page. The method also provides the option to cancel the closing process. If the control is successfully removed from the page, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed> event follows.  
   
- Page developers can provide a custom handler for the associated event by adding the `OnWebPartClosinging` attribute to the `<asp:webpartmanager>` element on a Web page, and then assigning a custom method name to the attribute.  
+ Page developers can provide a custom handler for the associated event by adding the `OnWebPartClosing` attribute to the `<asp:webpartmanager>` element on a Web page, and then assigning a custom method name to the attribute.  
   
  ]]></format>
         </remarks>

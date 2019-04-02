@@ -265,7 +265,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameteris not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
         <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
         <altmember cref="T:System.Collections.IList" />
         <altmember cref="T:System.Web.Services.Protocols.SoapHeader" />
@@ -312,7 +312,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameteris not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">

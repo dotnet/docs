@@ -1,4 +1,4 @@
-﻿<Type Name="RijndaelManaged" FullName="System.Security.Cryptography.RijndaelManaged">
+<Type Name="RijndaelManaged" FullName="System.Security.Cryptography.RijndaelManaged">
   <TypeSignature Language="C#" Value="public sealed class RijndaelManaged : System.Security.Cryptography.Rijndael" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RijndaelManaged extends System.Security.Cryptography.Rijndael" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RijndaelManaged" />
@@ -39,8 +39,8 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This algorithm supports key lengths of 128, 192, or 256 bits; defaulting to 256 bits. This algorithm supports block sizes of 128, 192, or 256 bits; defaulting to 128 bits (<xref:System.Security.Cryptography.Aes>-compatible).  
+## Remarks 
+ This algorithm supports key lengths of 128, 192, or 256 bits; defaulting to 256 bits. In .NET Framework, this algorithm supports block sizes of 128, 192, or 256 bits; defaulting to 128 bits (<xref:System.Security.Cryptography.Aes>-compatible). In .NET Core, it is the same as AES and supports only a 128-bit block size. 
   
  The <xref:System.Security.Cryptography.Rijndael> algorithm is the predecessor of <xref:System.Security.Cryptography.Aes>. You should use the <xref:System.Security.Cryptography.Aes> class instead of <xref:System.Security.Cryptography.RijndaelManaged>. For more information, see the entry [The Differences Between Rijndael and AES](https://go.microsoft.com/fwlink/?LinkId=200932) in the .NET Security blog.  
   
@@ -125,9 +125,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the block size, in bits, of the cryptographic operation.</summary>
+        <value>The block size, in bits, of the cryptographic operation. The default is 128 bits.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In .NET Framework, the valid block size values for Rijndael are 128, 192 and 256 bits. In .NET Core, the block size for Rijndael can only be 128 bits. See the <xref:System.Security.Cryptography.SymmetricAlgorithm.BlockSize?displayProperty=nameWithType> for more information about block size.    
+ ]]></format></remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDecryptor">
@@ -483,9 +487,13 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the initialization vector (IV) to use for the symmetric algorithm.</summary>
+        <value>The initialization vector (IV) to use for the symmetric algorithm. </value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV?displayProperty=nameWithType> for more information about initialization vectors.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -512,9 +520,13 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the secret key used for the symmetric algorithm.</summary>
+        <value>The secret key used for the symmetric algorithm.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Security.Cryptography.SymmetricAlgorithm.Key?displayProperty=nameWithType> for more information about the secret key.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeySize">
@@ -541,9 +553,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the size, in bits, of the secret key used for the symmetric algorithm.</summary>
+        <value>The size, in bits, of the secret key used for the symmetric algorithm. The default is 256 bits.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes for Rijndael are 128, 192 and 256 bits.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="LegalKeySizes">
@@ -570,9 +586,13 @@
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key sizes, in bits, that are supported by the symmetric algorithm.</summary>
+        <value>The key sizes, in bits, that are supported by the symmetric algorithm.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes for Rijndael are 128, 192 and 256 bits.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -599,9 +619,13 @@
         <ReturnType>System.Security.Cryptography.CipherMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the mode for operation of the symmetric algorithm.</summary>
+        <value>The mode for operation of the symmetric algorithm. The default is <see cref="F:System.Security.Cryptography.CipherMode.CBC" /></value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Security.Cryptography.CipherMode> enumeration for a description of specific modes.  
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -628,9 +652,13 @@
         <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding mode used in the symmetric algorithm.</summary>
+        <value>The padding mode used in the symmetric algorithm. The default is <see cref="F:System.Security.Cryptography.PaddingMode.PKCS7" />.</value>
+        <remarks><format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding?displayProperty=nameWithType> property for more information about padding.  
+ ]]></format></remarks>
       </Docs>
     </Member>
   </Members>

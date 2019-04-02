@@ -21,11 +21,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Both SQL Server 2000 and SQL Server 2005 make it possible for applications to determine the existence of SQL Server instances within the current network. The <xref:System.Data.Sql.SqlDataSourceEnumerator> class exposes this information to the application developer, providing a <xref:System.Data.DataTable> containing information about all the available servers. This returned table contains a list of server instances that matches the list provided when a user attempts to create a new connection, and on the `Connection Properties` dialog box, expands the drop-down list containing all the available servers.  
+ SQL Server makes it possible for applications to determine the existence of its instances within the current network. The <xref:System.Data.Sql.SqlDataSourceEnumerator> class exposes this information to the application developer, providing a <xref:System.Data.DataTable> containing information about all the available servers. This returned table contains a list of server instances that matches the list provided when a user attempts to create a new connection, and on the `Connection Properties` dialog box, expands the drop-down list containing all the available servers.  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/ddf1c83c-9d40-45e6-b04d-9828c6cbbfdc">Enumerating Instances of SQL Server</related>
+    <related type="Article" href="/dotnet/framework/data/adonet/sql/enumerating-instances-of-sql-server">Enumerating Instances of SQL Server</related>
   </Docs>
   <Members>
     <Member MemberName="GetDataSources">
@@ -47,7 +47,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a <see cref="T:System.Data.DataTable" /> containing information about all visible SQL Server 2000 or SQL Server 2005 instances.</summary>
+        <summary>Retrieves a <see cref="T:System.Data.DataTable" /> containing information about all visible SQL Server instances.</summary>
         <returns>A <see cref="T:System.Data.DataTable" /> containing information about the visible SQL Server instances.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -60,7 +60,7 @@
 |**ServerName**|Name of the server.|  
 |**InstanceName**|Name of the server instance. Blank if the server is running as the default instance.|  
 |**IsClustered**|Indicates whether the server is part of a cluster.|  
-|**Version**|Version of the server (8.00.x for SQL Server 2000, and 9.00.x for SQL Server 2005).|  
+|**Version**|Version of the server:<br /><br />10.0.xx for SQL Server 2008<br />10.50.x for SQL Server 2008 R2<br />11.0.xx for SQL Server 2012<br />12.0.xx for SQL Server 2014<br />13.0.xx for SQL Server 2016<br />14.0.xx for SQL Server 2017|  
   
 > [!NOTE]
 >  Due to the nature of the mechanism used by <xref:System.Data.Sql.SqlDataSourceEnumerator> to locate data sources on a network, the method will not always return a complete list of the available servers, and the list might not be the same on every call. If you plan to use this function to let users select a server from a list, make sure that you always also supply an option to type in a name that is not in the list, in case the server enumeration does not return all the available servers. In addition, this method may take a significant amount of time to execute, so be careful about calling it when performance is critical.  
@@ -133,7 +133,7 @@ class Program
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ddf1c83c-9d40-45e6-b04d-9828c6cbbfdc">Enumerating Instances of SQL Server</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/enumerating-instances-of-sql-server">Enumerating Instances of SQL Server</related>
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -216,7 +216,7 @@ class Program
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ddf1c83c-9d40-45e6-b04d-9828c6cbbfdc">Enumerating Instances of SQL Server</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/enumerating-instances-of-sql-server">Enumerating Instances of SQL Server</related>
       </Docs>
     </Member>
   </Members>

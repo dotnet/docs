@@ -28,7 +28,7 @@ You can rotate, reflect, and skew an image by specifying destination points for 
   
  The following illustration shows a similar transformation applied to a photographic image:  
   
- ![Skewed, reflected, translated, and rotated photo.](./media/how-to-rotate-reflect-and-skew-images/reflected-skewed-rotated-photo.png)  
+ ![The picture of a climber and the picture mapped to the parallelogram.](./media/how-to-rotate-reflect-and-skew-images/reflected-skewed-rotated-photo.png)  
   
  The following illustration shows a similar transformation applied to a metafile:  
   

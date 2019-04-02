@@ -6,30 +6,51 @@ ms.custom: seodec18
 ms.topic: overview
 ms.date: 04/02/2019
 ---
-# What is ML.NET and how do I understand Machine Learning basics?
+# Welcome to ML.NET
 
-ML.NET is a free, open-source, and cross-platform machine learning framework that enables you to build custom machine learning solutions and integrate them into your .NET applications. With the ML.NET APIs, you can incorporate AI into your apps using the .NET skills you already have and without leaving .NET.
+ML.NET is a free, open-source and cross-platform machine learning framework for .NET developers.
+ 
+**ML.NET aims to make machine learning approachable and accessible to .NET developers,** without requiring a data science background (though data scientists are welcomed and encouraged to use ML.NET too!).
 
-> [!NOTE]
-> This documentation refers to ML.NET, which is currently in Preview. Material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
-
-## What is machine learning?
-
-Machine learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers learn without being explicitly programmed.
-
-Forecasts or predictions from machine learning can make apps and devices smarter. When you shop online, machine learning helps recommend other products you might like based on what you've purchased. When your credit card is swiped, machine learning compares the transaction to a database of transactions and helps detect fraud. When your robot vacuum cleaner vacuums a room, machine learning helps it decide whether the job is done.
-
-
-## Short videos on data science 
-
-Get a quick introduction to the basics of machine learning and data science from *Data Science for Beginners* in five short videos from a top data scientist. These videos are basic but useful, whether you're interested in doing data science or you work with data scientists.
-
-* Video 1: [The 5 questions data science answers](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-the-5-questions-data-science-answers) *(5 min 14 sec)*.
-
-* Video 2: [Is your data ready for data science?](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-is-your-data-ready-for-data-science) *(4 min 56 sec)*
-
-* Video 3: [Ask a question you can answer with data](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-ask-a-question-you-can-answer-with-data) *(4 min 17 sec)*
-
-* Video 4: [Predict an answer with a simple model](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-predict-an-answer-with-a-simple-model) *(7 min 42 sec)*
-
-* Video 5: [Copy other people's work to do data science](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-copy-other-peoples-work-to-do-data-science) *(3 min 18 sec)*
+<!-- markdownlint-disable MD033 -->
+<div id="main" class="v2">
+    <div class="container">
+        <ul class="cardsY panelContent featuredContent">
+            <li>
+                <a href="/dotnet/csharp/tutorials/intro-to-csharp/">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img data-hoverimage="/dotnet/images/hub/featured-1.svg" src="/dotnet/images/hub/featured-1.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <h3>Learn C#</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/dotnet/api/?view=netcore-2.2">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img data-hoverimage="/dotnet/images/hub/featured-2.svg" src="/dotnet/images/hub/featured-2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <h3>.NET Core API reference</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>

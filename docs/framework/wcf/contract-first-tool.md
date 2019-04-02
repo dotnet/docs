@@ -59,7 +59,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
 
  To configure advanced properties, click the Advanced button.
 
- ![Screenshot showing the Advanced Contract-First properties.](./media/contract-first-tool/advanced-contract-settings.png)
+ ![Advanced Contract Code Generation Settings dialog box.](./media/contract-first-tool/advanced-contract-settings.png)
 
  The following advanced settings can be configured for code generation from contracts. Settings can only be configured for all of the files in the project; settings cannot be configured for individual files at this time.
 

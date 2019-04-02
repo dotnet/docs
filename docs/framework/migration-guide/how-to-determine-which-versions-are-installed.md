@@ -73,6 +73,7 @@ The following table lists the value of the **Release** DWORD on individual opera
 [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
 <a name="version_table"></a>
+
 |.NET Framework version|Value of the Release DWORD|
 |--------------------------------|-------------|
 |.NET Framework 4.5|All Windows operating systems: 378389|

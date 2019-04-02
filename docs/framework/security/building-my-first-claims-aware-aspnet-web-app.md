@@ -13,7 +13,7 @@ author: "BrucePerlerMS"
   
  This topic outlines the scenario of building claims-aware ASP.NET web applications using WIF. There are usually three participants in a claims-aware application scenario: the application itself, the end user, and the Security Token Service (STS). The following figure describes this scenario:  
   
- ![WIF Basic Web App](../../../docs/framework/security/media/wifbasicwebapp.gif "WIFBasicWebApp")  
+ ![Diagram showing a WIF Basic Web App components.](./media/building-my-first-claims-aware-aspnet-web-app/windows-identity-foundation-basic-web-application.gif)  
   
 1.  The claims-aware application uses WIF to identify unauthenticated requests and to redirect them to the STS.  
   

@@ -48,7 +48,7 @@ ms.date: "12/04/2018"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netframework-4.7.2">
+                <a href="/dotnet/api/?view=netframework-4.8">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

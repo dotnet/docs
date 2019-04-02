@@ -61,7 +61,6 @@ The path to the assembly file and the type `name are stored with the` RuleSet in
 When you click **OK** in the **Workflow/Type Selector** dialog, it validates the selected type against the RuleSet, to ensure that the target type has all the members referenced by the rules. Errors are shown in a **Validation Errors** dialog. You can choose to continue with the change despite the errors, or click **Cancel**. From the **Tools** menu in the main tool dialog, you can click **Validate** to re-validate the RuleSet version against the target activity.
 
 ![Screenshot showing the Validation Errors dialog.](./media/external-ruleset-toolkit/validation-errors-dialog.png)
-external-ruleset-toolkit/validation-errors-dialog.png)
 
 From the **Data** menu in the tool, you can import and export RuleSets. When you click **Import**, a file-chooser dialog appears, from which you can select a .rules file. This may or may not be a file initially created in Visual Studio. The .rules file should contain a serialized `RuleDefinitions` instance that contains a collection of conditions and a collection of RuleSets. The tool does not use the conditions collection, but it does use the `RuleDefinitions` .rules format to allow interaction with the Visual Studio environment.
 

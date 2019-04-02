@@ -31,7 +31,7 @@ The <xref:System.ServiceModel.WorkflowServiceHost> class is used to host workflo
   
  The following illustration shows what the <xref:System.ServiceModel.WorkflowServiceHost> does when it receives a message bound for a Receive activity that has CanCreateInstance set to `true`:  
   
- ![Image showing when WFS Host receives a message and CanCreateInstance is true.](./media/workflow-service-host-internals/workflow-service-host-receive-message-cancreateinstance.gif)  
+ ![Decision tree used by the WFS Host when it receives a message and CanCreateInstance is true.](./media/workflow-service-host-internals/workflow-service-host-receive-message-cancreateinstance.gif)  
   
  The message arrives and is processed by the WCF channel stack. Throttles are checked and correlation queries are executed. If the message is bound for an existing instance the message is delivered. If a new instance needs to be created, the Receive activity’s CanCreateInstance property is checked. If it is set to true, a new instance is created and the message is delivered.  
   

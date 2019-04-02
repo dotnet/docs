@@ -3109,7 +3109,7 @@ Changing the value of this property affects the following properties as well: <x
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the custom format string for a universal, sortable date and time string.</summary>
+        <summary>Gets the custom format string for a universal, sortable date and time string, as defined by ISO 8601.</summary>
         <value>The custom format string for a universal, sortable date and time string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -38,7 +38,7 @@ The interaction of the components is shown in the following image. The sections 
 
 ## RuleSet Tool
 
-A screenshot of the RuleSet tool is shown below. From the **Rule Store** menu, you can load the available RuleSets from the database and save modified RuleSets back to the store. An application configuration file provides a database connection string for the RuleSet database. When you start the tool, it automatically loads the RuleSets from the configured database.
+The following image is a screenshot of the RuleSet tool. From the **Rule Store** menu, you can load the available RuleSets from the database and save modified RuleSets back to the store. An application configuration file provides a database connection string for the RuleSet database. When you start the tool, it automatically loads the RuleSets from the configured database.
 
 ![Screenshot showing the RuleSet Browser.](./media/external-ruleset-toolkit/ruleset-browser-dialog.gif)
 

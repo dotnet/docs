@@ -55,7 +55,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
 ## Configuring contract-first options
  Contract-first options can be configured in the Properties menu of a WCF project. To enable contract-first development, select the **Enable XSD as Type Definition Language** check box in the WCF page of the project properties window.
 
- ![Screenshot of the contract-first options.](./media/contract-first-tool/contract-first-options.png)
+ ![Screenshot of the WCF Options with contract-first development enabled.](./media/contract-first-tool/contract-first-options.png)
 
  To configure advanced properties, click the Advanced button.
 

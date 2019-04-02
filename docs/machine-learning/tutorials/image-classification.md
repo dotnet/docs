@@ -1,14 +1,14 @@
 ---
 title: Build an ML.NET custom image classifier with TensorFlow
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
-ms.date: 03/26/2019
+ms.date: 04/03/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
 # Tutorial: Build an ML.NET custom image classifier with TensorFlow
 
-This sample tutorial illustrates how you can use an already trained Image Classifier `TensorFlow` model to build a new custom model to classify images into a few categories. 
+This sample tutorial illustrates how you can use an already trained Image Classifier `TensorFlow` model to build a new custom model to classify images into a few categories.
 
 What if you could reuse a model that's already been pre trained to solve a similar problem and retrain either all or some of the layers of that model to make it solve your problem? This technique of reusing part of an already trained model to build a new model is known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning).
 
@@ -27,7 +27,7 @@ This tutorial and related sample are currently using **ML.NET version 0.10**. Fo
 
 ## Image classification sample overview
 
-The sample is a console app that uses ML.NET to build an image classifier by reusing a pre-trained model to classify images with a small amount of training data.
+The sample is a console application that uses ML.NET to build an image classifier by reusing a pre-trained model to classify images with a small amount of training data.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository.
 

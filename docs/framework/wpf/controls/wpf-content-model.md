@@ -34,7 +34,7 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
   
  Controls that inherit from these classes can contain the same type of content and treat the content in the same way. The following illustration shows one control from each content model that contains an image and some text:  
   
- ![Screenshot that shows a control from each content model.](./media/wpf-content-model/control-content-model-image-text.png)  
+ ![Screenshot that shows four different controls, one from each content model.](./media/wpf-content-model/control-content-model-image-text.png)  
   
 ### Controls That Contain a Single Arbitrary Object  
  The <xref:System.Windows.Controls.ContentControl> class contains a single piece of arbitrary content. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A>. The following controls inherit from <xref:System.Windows.Controls.ContentControl> and use its content model:  

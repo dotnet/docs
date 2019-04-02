@@ -220,13 +220,13 @@ The localization process begins after the unlocalized `MyDialog.resources.dll` f
   
  **English:**  
   
- ![Screenshot showing an English Homepage.](./media/wpf-globalization-and-localization-overview/english-homepage-sample.jpg)  
+ ![Screenshot showing an English home page.](./media/wpf-globalization-and-localization-overview/english-home-page-sample.jpg)  
   
  **Arabic:**  
   
- ![Screenshot showing an Arabic Homepage.](./media/wpf-globalization-and-localization-overview/arabic-homepage-sample.jpg)  
+ ![Screenshot showing an Arabic home page.](./media/wpf-globalization-and-localization-overview/arabic-home-page-sample.jpg)  
   
-### Designing a Global Microsoft Homepage  
+### Designing a Global Microsoft home page  
  This mock up of the Microsoft Saudi Arabia web site illustrates the globalization features provided for RightToLeft languages. Languages such as Hebrew and Arabic have a right-to-left reading order so the layout of [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] must often be laid out quite differently than it would be in left-to-right languages such as English. Localizing from a left-to-right language to a right-to-left language or vice versa can be quite challenging. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] has been designed to make such localizations much easier.  
   
  **FlowDirection**  

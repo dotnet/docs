@@ -78,7 +78,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 4.  Merge the profiles to create one log file:  
   
     ```  
-    xperf -merge -d clr1.etl clr2.etl merged.etl  
+    xperf -merge clr1.etl clr2.etl merged.etl  
     ```  
   
      The merged.etl file will contain the events from the runtime and the rundown provider sessions.  

@@ -255,7 +255,7 @@ Concurrent garbage collection
   
  Background garbage collection removes allocation restrictions imposed by concurrent garbage collection, because ephemeral garbage collections can occur during background garbage collection. This means that background garbage collection can remove dead objects in ephemeral generations and can also expand the heap if needed during a generation 1 garbage collection.  
   
- The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation.  
+The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation:
   
  ![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png)
    

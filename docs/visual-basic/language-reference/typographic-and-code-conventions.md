@@ -41,6 +41,7 @@ Visual Basic documentation uses the following typographic and code conventions.
 |`sampleVar = "This is an " _`<br /><br /> `& "example" _`<br /><br /> `& " of how to continue code."`|A space followed by an underscore ( _) at the end of a line indicates that the statement continues on the following line.|  
   
 ## See also
+
 - [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
 - [Keywords](../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)

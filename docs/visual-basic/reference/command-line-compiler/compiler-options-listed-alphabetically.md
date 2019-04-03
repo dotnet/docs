@@ -75,5 +75,6 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)|Inserts a Win32 resource into the output file.|  
   
 ## See also
+
 - [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
 - [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)

@@ -9,7 +9,7 @@ ms.date: 10/23/2018
 
 This tutorial teaches you how to use C# [string interpolation](../../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that show you how to insert values into a string and format those values in different ways.
 
-This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [introduction to the local tutorials](local-environment.md), with links to more details. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
+This tutorial expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
 
 ## Create an interpolated string
 
@@ -160,7 +160,5 @@ The output looks something like the following:
 ```
 
 You've completed the string interpolation tutorial.
-
-You can continue with the [List collection](arrays-and-collections.md) tutorial in your own development environment.
 
 For more information, see the [String interpolation](../../language-reference/tokens/interpolated.md) topic and the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.

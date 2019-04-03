@@ -508,8 +508,6 @@
         href: csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml
       - name: Branches and loops
         href: csharp/tutorials/intro-to-csharp/branches-and-loops.yml
-      - name: String interpolation
-        href: csharp/tutorials/intro-to-csharp/interpolated-strings.yml
       - name: List collections
         href: csharp/tutorials/intro-to-csharp/list-collection.yml
       - name: Work in your local environment
@@ -519,8 +517,6 @@
           href: csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md
         - name: Branches and loops
           href: csharp/tutorials/intro-to-csharp/branches-and-loops-local.md
-        - name: String interpolation
-          href: csharp/tutorials/intro-to-csharp/interpolated-strings-local.md
         - name: List collections
           href: csharp/tutorials/intro-to-csharp/arrays-and-collections.md
         - name: Introduction to classes
@@ -529,6 +525,10 @@
       href: csharp/tutorials/exploration/csharp-6.yml
     - name: Explore C# 7.0
       href: csharp/tutorials/exploration/csharp-7.yml
+    - name: String interpolation - interactive
+      href: csharp/tutorials/exploration/interpolated-strings.yml
+    - name: String interpolation - in your environment
+      href: csharp/tutorials/exploration/interpolated-strings-local.md
     - name: Work with nullable reference types
       href: csharp/tutorials/nullable-reference-types.md
     - name: Upgrade an app to nullable reference types

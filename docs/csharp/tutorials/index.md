@@ -41,10 +41,6 @@ different actions. This tutorial is also available
 This tutorial assumes that you have finished the [Hello world](intro-to-csharp/hello-world.yml) and
 [Numbers in C#](intro-to-csharp/numbers-in-csharp.yml) lessons.
 
-## [String interpolation](intro-to-csharp/interpolated-strings.yml)
-
-The [String interpolation](intro-to-csharp/interpolated-strings.yml) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This tutorial is also available [to run locally on your machine](intro-to-csharp/interpolated-strings-local.md).
-
 ## [List collection](intro-to-csharp/list-collection.yml)
 
 The [List collection](intro-to-csharp/list-collection.yml) lesson gives you
@@ -77,3 +73,6 @@ The following tutorials enable you to build C# programs using [.NET Core](../../
 * [Inheritance in C# and .NET](inheritance.md): demonstrates inheritance in C#, including the use of inheritance to define base classes, abstract base classes, and derived classes.
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
 * [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.
+* [String interpolation](exploration/interpolated-strings.yml) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This tutorial is also available [to run locally on your machine](exploration/interpolated-strings-local.md).
+
+

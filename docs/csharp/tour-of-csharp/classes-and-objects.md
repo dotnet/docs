@@ -241,7 +241,7 @@ A get accessor corresponds to a parameterless method with a return value of the 
 
 A set accessor corresponds to a method with a single parameter named value and no return type. When a property is referenced as the target of an assignment or as the operand of ++ or --, the set accessor is invoked with an argument that provides the new value.
 
-The `MyList<T>` class declares two properties, Count and Capacity, which are read-only and read-write, respectively. The following is an example of use of these properties.
+The `MyList<T>` class declares two properties, `Count` and `Capacity`, which are read-only and read-write, respectively. The following is an example of use of these properties:
 
 [!code-csharp[ListExample2](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L101-L104)]
 

@@ -212,7 +212,10 @@ As shown by the example, a particular method can always be selected by explicitl
 
 Members that contain executable code are collectively known as the *function members* of a class. The preceding section describes methods, which are the primary kind of function members. This section describes the other kinds of function members supported by C#: constructors, properties, indexers, events, operators, and finalizers.
 
-The following shows a generic class called List\<T>, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
+The following shows a generic class called `MyList<T>`, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
+
+> [!NOTE]
+> This example creates a `MyList` class, which is not the same as the .NET standard <xref:System.Collecions.Generic.List%0601?displayProperty=nameWithType>. It does illustrate the concepts needed for this tour, but is not a replacement for that class.
 
 [!code-csharp[ListClass](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L4-L89)]
 
@@ -222,7 +225,7 @@ C# supports both instance and static constructors. An *instance constructor* is 
 
 A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
 
-Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares two instance constructors, one with no parameters and one that takes an `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `List<string>` instances using the constructor of the `List` class with and without the optional argument.
+Instance constructors can be overloaded, and can have optional parameters. For example, the `MyList<T>` class declares two instance constructors, one with no parameters and one that takes an `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `MyList<string>` instances using the constructor of the `MyList` class with and without the optional argument.
 
 [!code-csharp[ListExample1](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L95-L96)]
 
@@ -238,7 +241,7 @@ A get accessor corresponds to a parameterless method with a return value of the 
 
 A set accessor corresponds to a method with a single parameter named value and no return type. When a property is referenced as the target of an assignment or as the operand of ++ or --, the set accessor is invoked with an argument that provides the new value.
 
-The `List<T>` class declares two properties, Count and Capacity, which are read-only and read-write, respectively. The following is an example of use of these properties.
+The `MyList<T>` class declares two properties, Count and Capacity, which are read-only and read-write, respectively. The following is an example of use of these properties.
 
 [!code-csharp[ListExample2](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L101-L104)]
 
@@ -250,7 +253,7 @@ The accessor(s) of a property can be virtual. When a property declaration includ
 
 An *indexer* is a member that enables objects to be indexed in the same way as an array. An indexer is declared like a property except that the name of the member is this followed by a parameter list written between the delimiters `[` and `]`. The parameters are available in the accessor(s) of the indexer. Similar to properties, indexers can be read-write, read-only, and write-only, and the accessor(s) of an indexer can be virtual.
 
-The `List` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `List` instances with `int` values. For example:
+The `MyList<T>` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `MyList<T>` instances with `int` values. For example:
 
 [!code-csharp[ListExample3](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L109-L117)]
 
@@ -262,9 +265,9 @@ An *event* is a member that enables a class or object to provide notifications. 
 
 Within a class that declares an event member, the event behaves just like a field of a delegate type (provided the event is not abstract and does not declare accessors). The field stores a reference to a delegate that represents the event handlers that have been added to the event. If no event handlers are present, the field is `null`.
 
-The `List<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event—thus, there are no special language constructs for raising events.
+The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event—thus, there are no special language constructs for raising events.
 
-Clients react to events through *event handlers*. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `List<string>`.
+Clients react to events through *event handlers*. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `MyList<string>`.
 
 [!code-csharp[EventExample](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L132-L148)]
 
@@ -274,11 +277,11 @@ For advanced scenarios where control of the underlying storage of an event is de
 
 An *operator* is a member that defines the meaning of applying a particular expression operator to instances of a class. Three kinds of operators can be defined: unary operators, binary operators, and conversion operators. All operators must be declared as `public` and `static`.
 
-The `List<T>` class declares two operators, `operator ==` and `operator !=`, and thus gives new meaning to expressions that apply those operators to `List` instances. Specifically, the operators define equality of two `List<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the `==` operator to compare two `List<int>` instances.
+The `MyList<T>` class declares two operators, `operator ==` and `operator !=`, and thus gives new meaning to expressions that apply those operators to `MyList` instances. Specifically, the operators define equality of two `MyList<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the `==` operator to compare two `MyList<int>` instances.
 
 [!code-csharp[OperatorExample](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L121-L129)]
 
-The first `Console.WriteLine` outputs `True` because the two lists contain the same number of objects with the same values in the same order. Had `List<T>` not defined `operator ==`, the first `Console.WriteLine` would have output `False` because `a` and `b` reference different `List<int>` instances.
+The first `Console.WriteLine` outputs `True` because the two lists contain the same number of objects with the same values in the same order. Had `MyList<T>` not defined `operator ==`, the first `Console.WriteLine` would have output `False` because `a` and `b` reference different `MyList<int>` instances.
 
 ### Finalizers
 

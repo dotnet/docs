@@ -30,7 +30,7 @@
 ## Examples  
  The following example demonstrates how to use two <xref:System.Windows.Ink.DrawingAttributes> objects to simulate using a pen and a highlighter on the same <xref:System.Windows.Controls.InkCanvas>. The highlighter's <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A> property is set to Rectangle.  
   
- The example assumes the root element in the "XAML" file is a <xref:System.Windows.Controls.DockPanel> called `root`. It also assumes that there is a <xref:System.Windows.Controls.Button> called `btnToggleHilighter` and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
+ The example assumes the root element in the "XAML" file is a <xref:System.Windows.Controls.DockPanel> called `root`. It also assumes that there is a <xref:System.Windows.Controls.Button> called `btnToggleHighlighter` and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
   
  [!code-csharp[DrawingAttributes#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#3)]
  [!code-vb[DrawingAttributes#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#3)]  

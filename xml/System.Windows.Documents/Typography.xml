@@ -2553,7 +2553,7 @@ Example of historical forms
   
 <a name="xamlAttributeUsage_MathematicalGreek"></a>   
 ## XAML Attribute Usage  
- \<*object* **Typography.MethematicalGreek**="*bool*"/>  
+ \<*object* **Typography.MathematicalGreek**="*bool*"/>  
   
 <a name="dependencyPropertyInfo_MathematicalGreek"></a>   
 ## Dependency Property Information  
@@ -2605,7 +2605,7 @@ Example of historical forms
         <ReturnType>System.Windows.FontNumeralAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.FontNumeralAlignment" /> enumerated value that indicates the alighnment of widths when using numerals.</summary>
+        <summary>Gets or sets a <see cref="T:System.Windows.FontNumeralAlignment" /> enumerated value that indicates the alignment of widths when using numerals.</summary>
         <value>A <see cref="T:System.Windows.FontNumeralAlignment" /> enumerated value. The default value is <see cref="F:System.Windows.FontNumeralAlignment.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

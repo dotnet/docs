@@ -157,7 +157,7 @@
         <param name="value">The object to convert to an instance of <paramref name="destinationType" />.</param>
         <param name="destinationType">The type to which the Matrix3D instance will be converted.</param>
         <summary>Attempts to convert an instance of <see cref="T:System.Windows.Media.Media3D.Vector3DCollection" /> to the given type.</summary>
-        <returns>The object which was constructoed.</returns>
+        <returns>The object which was constructed.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Throws NotSupportedException if the example object is null or is not a Vector3DCollection, or if the destinationType isn't one of the valid destination types.</exception>
       </Docs>

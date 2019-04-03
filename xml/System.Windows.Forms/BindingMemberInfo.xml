@@ -141,7 +141,7 @@
 ## Remarks  
  A <xref:System.Windows.Forms.BindingMemberInfo> is created automatically when you call the <xref:System.Windows.Forms.BindingMemberInfo.%23ctor%2A> constructor with a control-property name, data source, and navigation path. The `dataMember` parameter contains the <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> string.  
   
- The <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> is the period delimitated combination of the <xref:System.Windows.Forms.BindingMemberInfo.BindingPath%2A> and <xref:System.Windows.Forms.BindingMemberInfo.BindingField%2A> values. For example, when a new <xref:System.Windows.Forms.Binding> is created by using a `dataMember` parameter of "Customers.custToOrders.OrderDate", <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> will return "Customers.custToOrders.OrderDate".  
+ The <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> is the period delimited combination of the <xref:System.Windows.Forms.BindingMemberInfo.BindingPath%2A> and <xref:System.Windows.Forms.BindingMemberInfo.BindingField%2A> values. For example, when a new <xref:System.Windows.Forms.Binding> is created by using a `dataMember` parameter of "Customers.custToOrders.OrderDate", <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> will return "Customers.custToOrders.OrderDate".  
   
    
   
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingMemberInfo.BindingPath%2A> is the period delimitated combination of property names that comes before the <xref:System.Windows.Forms.BindingMemberInfo.BindingField%2A> in the navigational path returned by the <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> property. For example, when a new <xref:System.Windows.Forms.Binding> is created that has a `dataMember` parameter of "Customers.custToOrders.OrderDate", <xref:System.Windows.Forms.BindingMemberInfo.BindingPath%2A> will return "Customers.custToOrders".  
+ The <xref:System.Windows.Forms.BindingMemberInfo.BindingPath%2A> is the period delimited combination of property names that comes before the <xref:System.Windows.Forms.BindingMemberInfo.BindingField%2A> in the navigational path returned by the <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> property. For example, when a new <xref:System.Windows.Forms.Binding> is created that has a `dataMember` parameter of "Customers.custToOrders.OrderDate", <xref:System.Windows.Forms.BindingMemberInfo.BindingPath%2A> will return "Customers.custToOrders".  
   
    
   

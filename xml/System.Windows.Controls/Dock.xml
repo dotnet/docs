@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you set the anel.LastChildFill property to `true`, which is the default setting, the last child element of a anel always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child in another direction, you must set the anel.LastChildFill property to `false` and must also set an explicit dock direction on the last child element.  
+ If you set the DockPanel.LastChildFill property to `true`, which is the default setting, the last child element of a DockPanel always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child in another direction, you must set the DockPanel.LastChildFill property to `false` and must also set an explicit dock direction on the last child element.  
   
  ]]></format>
     </remarks>

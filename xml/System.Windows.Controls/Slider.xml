@@ -72,7 +72,7 @@
 ## Examples  
  The following examples shows how to bind the <xref:System.Windows.FrameworkElement.Height%2A> property of a <xref:System.Windows.Shapes.Rectangle> to the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> of a <xref:System.Windows.Controls.Slider> control.  
   
- The following example defines a <xref:System.Windows.Controls.Slider> control that is named `RectangeHeight` that can have a <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> between 0 and 200.  
+ The following example defines a <xref:System.Windows.Controls.Slider> control that is named `RectangleHeight` that can have a <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> between 0 and 200.  
   
  [!code-xaml[SliderwithDataBinding#Minimum](~/samples/snippets/csharp/VS_Snippets_Wpf/SliderwithDataBinding/CS/Pane1.xaml#minimum)]   
   

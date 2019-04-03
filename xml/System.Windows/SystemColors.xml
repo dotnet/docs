@@ -625,7 +625,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.AppWorkspaceBrushKey%2A> to create a dynamic reference to the application worspace system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.AppWorkspaceBrush%2A>.  
+ Use the <xref:System.Windows.SystemColors.AppWorkspaceBrushKey%2A> to create a dynamic reference to the application workspace system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.AppWorkspaceBrush%2A>.  
   
 <a name="xamlAttributeUsage_AppWorkspaceBrushKey"></a>   
 ## XAML Attribute Usage  

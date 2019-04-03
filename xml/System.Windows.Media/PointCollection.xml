@@ -83,7 +83,7 @@
  *oneOrMorePoints*  
  One or more <xref:System.Windows.Point> values, with each pair delimited by a single comma and/or one or more spaces.  
   
- <xref:System.Windows.Point> *[delimeter* <xref:System.Windows.Point> *]\**  
+ <xref:System.Windows.Point> *[delimiter* <xref:System.Windows.Point> *]\**  
   
  For example, `"0,0 100,100 200,100"` and `"0,0,100,100,200,100"` are both valid.  
   

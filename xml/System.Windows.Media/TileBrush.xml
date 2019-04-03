@@ -280,7 +280,7 @@ Components of a TileBrush with a TileMode of Tile
       <Parameters />
       <Docs>
         <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.TileBrush" /> object by making deep copies of its values. This method does not copy resource references, data bindings, or animations, although it does copy their current values.</summary>
-        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> prope-rty of the source is <see langword="true" />.</returns>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

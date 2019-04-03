@@ -93,8 +93,8 @@ private Grammar CreateColorGrammar()
   
  The example uses a <xref:System.Speech.Recognition.GrammarBuilder> object to assemble a phrase, using the <xref:System.Speech.Recognition.Choices> objects and two additional strings, that can be used to recognize speech input in the form of "Call [contactlList] on [phoneType] phone" , for example "Call Jane on cell phone".  
   
-```  
-public GrammarBuilder ChoicesContructor2 ()  
+```csharp
+public GrammarBuilder ChoicesConstructor2 ()  
 {  
     GrammarBuilder gb = new GrammarBuilder ();  
     Choices phoneType = new Choices (new string[] {"cell", "home", "work"});  

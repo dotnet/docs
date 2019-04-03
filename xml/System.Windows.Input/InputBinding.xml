@@ -156,8 +156,8 @@
 ## Examples  
  The following example shows how to use this constructor to associate a <xref:System.Windows.Input.KeyGesture> with a <xref:System.Windows.Input.RoutedCommand>.  
   
- [!code-csharp[commandlibrarysnippets#InputBindingAddingComand](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#inputbindingaddingcomand)]
- [!code-vb[commandlibrarysnippets#InputBindingAddingComand](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#inputbindingaddingcomand)]  
+ [!code-csharp[commandlibrarysnippets#InputBindingAddingCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#inputbindingaddingcommand)]
+ [!code-vb[commandlibrarysnippets#InputBindingAddingCommand](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#inputbindingaddingcommand)]  
   
  ]]></format>
         </remarks>

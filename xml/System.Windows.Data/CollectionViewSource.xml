@@ -544,7 +544,7 @@
         <param name="view">The view object to check.</param>
         <summary>Returns a value that indicates whether the given view is the default view for the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> collection.</summary>
         <returns>
-          <see langword="true" /> if the given view is the default view for the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> collection or if the given view is <see langword="nulll" />; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the given view is the default view for the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> collection or if the given view is <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

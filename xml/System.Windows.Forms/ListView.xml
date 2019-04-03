@@ -2637,7 +2637,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Enabling hot tracking willcause the <xref:System.Windows.Forms.ListView.Activation%2A> property to be set to <xref:System.Windows.Forms.ItemActivation.OneClick> andthe <xref:System.Windows.Forms.ListView.HoverSelection%2A> property to be set to `true`. In addition, run-time label editing is not allowed when hot tracking is enabled.  
+ Enabling hot tracking will cause the <xref:System.Windows.Forms.ListView.Activation%2A> property to be set to <xref:System.Windows.Forms.ItemActivation.OneClick> and the <xref:System.Windows.Forms.ListView.HoverSelection%2A> property to be set to `true`. In addition, run-time label editing is not allowed when hot tracking is enabled.  
   
    
   

@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A?displayProperty=nameWithType> property using the <xref:System.Windows.Forms.LinkBehavior> enumeration. It alsodemonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.LinkLabel.Text%2A> and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties. To run this sample place it in a blank form and call the InitializeLinkLabel method from the form's constructor or Load method.  
+ The following example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A?displayProperty=nameWithType> property using the <xref:System.Windows.Forms.LinkBehavior> enumeration. It also demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.LinkLabel.Text%2A> and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties. To run this sample place it in a blank form and call the InitializeLinkLabel method from the form's constructor or Load method.  
   
  [!code-cpp[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/CS/form1.cs#1)]

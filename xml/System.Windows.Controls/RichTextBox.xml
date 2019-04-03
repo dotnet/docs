@@ -251,7 +251,7 @@
       </Parameters>
       <Docs>
         <param name="position">A <see cref="T:System.Windows.Documents.TextPointer" /> indicating a position from which to search for the next spelling error.</param>
-        <param name="direction">A <see cref="T:System.Windows.Documents.LogicalDirection" /> in which to search for the next spelling error, starting at the specified <c>posision</c>.</param>
+        <param name="direction">A <see cref="T:System.Windows.Documents.LogicalDirection" /> in which to search for the next spelling error, starting at the specified <c>position</c>.</param>
         <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> that points to the next spelling error in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
         <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> that points to the next spelling error in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />, or <see langword="null" /> if no next spelling error exists.</returns>
         <remarks>To be added.</remarks>

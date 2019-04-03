@@ -326,7 +326,7 @@
       <Docs>
         <param name="dataSource">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> control the column belongs to.</param>
         <param name="rowNum">The number of the edited row.</param>
-        <summary>Inititates a request to complete an editing procedure.</summary>
+        <summary>Initiates a request to complete an editing procedure.</summary>
         <returns>
           <see langword="true" /> if the value was successfully committed; otherwise, <see langword="false" />.</returns>
         <remarks>

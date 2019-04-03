@@ -82,7 +82,7 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 ## Additional resources
 
-If you are new to string interpolation, see the [String interpolation in C#](../../tutorials/intro-to-csharp/interpolated-strings.yml) interactive tutorial. Or you can try the  [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial locally on your machine.
+If you are new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. Or you can try the  [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial locally on your machine.
 
 ## See also
 

@@ -35,7 +35,7 @@
     <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
     <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
     <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -46,7 +46,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegion" /> class.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -111,7 +111,7 @@
   
  <paramref name="name" /> is an empty string ("").</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,7 +179,7 @@
   
  <paramref name="name" /> is an empty string ("").</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -215,7 +215,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="DesignerRegionAttributeName">
@@ -245,7 +245,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -274,7 +274,7 @@
         <value>A text display name for the designer region. The default is an empty string ("").</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureSize">
@@ -307,7 +307,7 @@
           <see langword="true" />, if the design host should set the size on the designer region; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -339,7 +339,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Highlight">
@@ -372,7 +372,7 @@
           <see langword="true" />, if the visual designer should highlight the designer region on the design surface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -405,7 +405,7 @@
           <see langword="true" />, if the designer region can be selected by the user on the design surface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -438,7 +438,7 @@
           <see langword="true" />, if the designer region is currently selected on the design surface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="UserData">
@@ -479,7 +479,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

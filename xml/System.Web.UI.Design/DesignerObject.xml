@@ -22,7 +22,7 @@
     <summary>Represents an object in a design host such as Visual Studio 2005. This class must be inherited.</summary>
     <remarks>To be added.</remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +55,7 @@
  <paramref name="name" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Designer">
@@ -84,7 +84,7 @@
         <value>A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -115,7 +115,7 @@
         <returns>The requested service.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -144,7 +144,7 @@
         <value>The name of the object.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -168,7 +168,7 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> object containing the object's properties and their values.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.IServiceProvider.GetService">
@@ -203,7 +203,7 @@
         <returns>The requested service.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

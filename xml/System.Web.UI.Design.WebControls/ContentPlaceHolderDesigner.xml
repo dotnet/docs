@@ -26,7 +26,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
     <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,7 +52,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AllowResize">
@@ -77,7 +77,7 @@
           <see langword="true" /> if the control can be resized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDesignTimeHtml">
@@ -88,7 +88,7 @@
       <Docs>
         <summary>Gets the HTML that is used to represent the control at design time.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDesignTimeHtml">
@@ -114,7 +114,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The root component is not a <see cref="T:System.Web.UI.MasterPage" /> instance.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -143,7 +143,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The root component is not a <see cref="T:System.Web.UI.MasterPage" /> instance.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -171,7 +171,7 @@
         <returns>The content of the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetPersistenceContent">
@@ -196,7 +196,7 @@
         <returns>The persistable inner HTML of the control.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -225,7 +225,7 @@
         <summary>Sets the content of the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

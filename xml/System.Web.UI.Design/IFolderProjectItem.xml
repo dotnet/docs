@@ -15,7 +15,7 @@
     <summary>Provides an interface for a project folder in a design host, such as Visual Studio 2005.</summary>
     <remarks>To be added.</remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="AddDocument">
@@ -46,7 +46,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.IDocumentProjectItem" />
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AddFolder">
@@ -74,7 +74,7 @@
         <returns>An <see cref="T:System.Web.UI.Design.IFolderProjectItem" /> representing the new folder.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -98,7 +98,7 @@
         <value>An <see cref="T:System.Collections.ICollection" /> containing the items in the project folder of the design host.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

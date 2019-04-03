@@ -62,7 +62,7 @@ public class CalculatorService : ICalculatorDuplex
     public void AddTo(double n)  
     {  
         result += n;  
-        equation += $" + {n.ToString()}";  
+        equation += $" + {n}";  
         Callback.Result(result);  
     }  
     

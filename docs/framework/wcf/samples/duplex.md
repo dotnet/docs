@@ -55,7 +55,7 @@ public class CalculatorService : ICalculatorDuplex
   
     public void Clear()  
     {  
-        Callback.Equation($"{equation} = {result.ToString()}");  
+        Callback.Equation($"{equation} = {result}");  
         equation = result.ToString();  
     }  
   

@@ -8,9 +8,11 @@ ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594
 
 A secure and interoperable binding that derives from [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and supports federated security.
 
-\<system.ServiceModel>\
-\<bindings>\
-\<ws2007FederationHttpBinding>
+```xml
+<system.ServiceModel>
+  <bindings>
+    <ws2007FederationHttpBinding>
+```
 
 ## Syntax
 

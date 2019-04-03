@@ -215,7 +215,7 @@ Members that contain executable code are collectively known as the *function mem
 The following shows a generic class called `MyList<T>`, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
 
 > [!NOTE]
-> This example creates a `MyList` class, which is not the same as the .NET standard <xref:System.Collecions.Generic.List%0601?displayProperty=nameWithType>. It does illustrate the concepts needed for this tour, but is not a replacement for that class.
+> This example creates a `MyList` class, which is not the same as the .NET standard <xref:System.Collections.Generic.List%0601?displayProperty=nameWithType>. It does illustrate the concepts needed for this tour, but is not a replacement for that class.
 
 [!code-csharp[ListClass](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L4-L89)]
 

@@ -29,7 +29,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  If the <xref:System.Windows.Forms.DataGrid> is bound to data with multiple related tables, and if navigation is enabled on the grid, the grid will display expanders in each row. With an expander, the user can move from a parent table to a child table. Clicking a node displays the child table, and clicking a back button displays the original parent table. In this manner, the grid displays the hierarchical relationships between tables.  
   
- The following screen shot shows a DataGrid bound to data with multiple tables:  
+ The following screenshot shows a DataGrid bound to data with multiple tables:  
   
  ![Diagram that shows a DataGrid bound to data with multiple tables.](./media/datagrid-control-overview-windows-forms/datagrid-bound-multiple-tables.gif)  
   

@@ -15,7 +15,7 @@ When marshaling data, the interop marshaler can copy or pin the data being marsh
   
  ![Diagram that shows how value and reference types are copied.](./media/copying-and-pinning/interop-marshal-copy.gif)  
   
- Method arguments passed by value are marshaled to unmanaged code as values on the stack. The copying process is direct. Arguments passed by reference are passed as pointers on the stack. Reference types are also passed by value and by reference. As the following illustration shows, reference types passed by value are either copied or pinned, and are passed by value and by reference: 
+ Method arguments passed by value are marshaled to unmanaged code as values on the stack. The copying process is direct. Arguments passed by reference are passed as pointers on the stack. Reference types are also passed by value and by reference. As the following illustration shows, reference types passed by value are either copied or pinned: 
   
  ![Diagram showing reference types passed by value and by reference.](./media/copying-and-pinning/interop-marshal-reference-pin.gif)  
   

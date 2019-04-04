@@ -84,7 +84,7 @@ The following table lists the value of the **Release** DWORD on individual opera
 |.NET Framework 4.6.2|On Windows 10 Anniversary Update and Windows Server 2016: 394802<br />On all other Windows operating systems (including other Windows 10 operating systems): 394806|
 |.NET Framework 4.7|On Windows 10 Creators Update: 460798<br />On all other Windows operating systems (including other Windows 10 operating systems): 460805| 
 |.NET Framework 4.7.1|On Windows 10 Fall Creators Update and Windows Server, version 1709: 461308<br/>On all other Windows operating systems (including other Windows 10 operating systems): 461310|
-|.NET Framework 4.7.2|On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On all other Windows operating systems (including other Windows 10 operating systems): 461814|  
+|.NET Framework 4.7.2|On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On Windows 10 October 2018 Update and all Windows operating systems other than Windows 10 April 2018 Update: 461814|  
 
 You can use these values as follows:
 

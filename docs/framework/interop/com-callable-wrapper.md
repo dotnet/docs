@@ -22,7 +22,6 @@ When a COM client calls a .NET object, the common language runtime creates the m
 
 The runtime creates exactly one CCW for a managed object, regardless of the number of COM clients requesting its services. As the following illustration shows, multiple COM clients can hold a reference to the CCW that exposes the INew interface. The CCW, in turn, holds a single reference to the managed object that implements the interface and is garbage collected. Both COM and .NET clients can make requests on the same managed object simultaneously.
 
-The following image shows accessing .NET objects through COM callable wrapper:
 
 ![Diagram that shows COM clients that expose the INew interface.](./media/com-callable-wrapper/com-callable-wrapper-clients.gif)
 

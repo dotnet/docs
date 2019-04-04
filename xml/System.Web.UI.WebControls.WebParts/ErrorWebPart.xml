@@ -48,7 +48,7 @@
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,7 +92,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -131,7 +131,7 @@
  To require the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control to use a custom <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control, you must also inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" /> method. In that method, you should assign the value of the method's <paramref name="errorMessage" /> parameter to the <see cref="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" /> property of your custom <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control, because the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control calls this method from several other places, and usually passes in a specific error message.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.ErrorStyle" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EndLoadPersonalization">
@@ -167,7 +167,7 @@
  To require the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control to use a custom <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control, you must also inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" /> method. In that method, you should assign the value of the method's <paramref name="errorMessage" /> parameter to the <see cref="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" /> property of your custom <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control, because the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control calls this method from several other places, and usually passes in a specific error message.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ErrorMessage">
@@ -208,7 +208,7 @@
  To require the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control to use a custom <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control, you must also inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" /> method. In that method, you should assign the value of the method's <paramref name="errorMessage" /> parameter to the <see cref="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" /> property of your custom <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control, because the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control calls this method from several other places, and usually passes in a specific error message.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -242,7 +242,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginLoad">

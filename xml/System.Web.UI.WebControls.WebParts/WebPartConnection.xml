@@ -30,7 +30,7 @@
 ## Remarks  
  In the Web Parts control set, a connection is a link or association between two <xref:System.Web.UI.WebControls.WebParts.WebPart> (or other server or user) controls that enables them to share data. This ability to share data allows connected controls to be used in ways that exceed the functionality offered by the isolated controls. For example, if one control provides postal code data, and another control can read that data and provide local weather information based on the postal code, then the connected capability of the two controls provides more value to users. To extend this example, other controls could be created that also display information based on a postal code, such as a control with links to local news, and all these controls that can work with postal code data could share data with the single control that provides a postal code. End users of Web Parts applications can create and manage connections between all such compatible controls directly from a Web browser, using the standard connections user interface (UI) provided by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, or using a custom UI provided by a developer.  
   
- This <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class overview is a general statement of the basic details for creating a connection. For more on specific components and requirements involved in creating connections, see [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b), or see the reference classes and code examples mentioned in the following discussion. There are several fundamental aspects of a Web Parts connection:  
+ This <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class overview is a general statement of the basic details for creating a connection. For more on specific components and requirements involved in creating connections, see [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)), or see the reference classes and code examples mentioned in the following discussion. There are several fundamental aspects of a Web Parts connection:  
   
 -   Two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Every Web Parts connection consists of two controls. It is possible for a control to participate in more than one connection simultaneously, but every single connection consists of exactly two controls. The controls can derive directly from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class, or they can be other server controls, including ASP.NET controls, custom server controls, and user controls. Controls that do not derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, if placed in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, are automatically wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object at run time, which enables them to inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class and function as run-time <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
   
@@ -103,8 +103,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
-    <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -138,7 +138,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Consumer">
@@ -211,7 +211,7 @@
         <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" /> property is zero.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPoint">
@@ -285,7 +285,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPointID">
@@ -362,7 +362,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionPoint.ID" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerID">
@@ -433,7 +433,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -507,7 +507,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsActive">
@@ -582,7 +582,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ActivateConnections" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -679,7 +679,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -752,7 +752,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -820,7 +820,7 @@
         <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" /> property value is zero.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPoint">
@@ -895,7 +895,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPointID">
@@ -972,7 +972,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionPoint.ID" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderID">
@@ -1043,7 +1043,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1140,7 +1140,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Transformers">
@@ -1185,7 +1185,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
   </Members>

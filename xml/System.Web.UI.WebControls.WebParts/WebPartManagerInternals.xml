@@ -38,7 +38,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
   </Docs>
   <Members>
     <Member MemberName="AddWebPart">
@@ -88,7 +88,7 @@
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnClosing(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnClosing(System.EventArgs)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CallOnConnectModeChanged">
@@ -114,7 +114,7 @@
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CallOnDeleting">
@@ -140,7 +140,7 @@
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CallOnEditModeChanged">
@@ -166,7 +166,7 @@
         <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" /> method of the specified control.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionDeleted">
@@ -194,7 +194,7 @@
         <returns>A Boolean value that indicates whether the connection has been deleted.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.DeleteConnection(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateObjectFromType">
@@ -227,7 +227,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteConnection">
@@ -261,7 +261,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.ConnectionDeleted(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetZoneID">
@@ -298,7 +298,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Zone" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationState">
@@ -358,7 +358,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SaveConfigurationState">
@@ -394,7 +394,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.LoadConfigurationState(System.Web.UI.WebControls.WebParts.WebPartTransformer,System.Object)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SetConnectErrorMessage">
@@ -431,7 +431,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SetHasSharedData">
@@ -466,7 +466,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HasSharedData" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SetHasUserData">
@@ -501,7 +501,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HasUserData" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SetIsClosed">
@@ -536,7 +536,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetIsShared">
@@ -553,13 +553,13 @@
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.SetIsShared%2A> method calls a method in a base class to set a property that indicates whether a particular instance of a control is shared. In the Web Parts control set, a shared control means a control that is visible to all users of a page. This is in contrast to a per-user control, which is visible only to the specific user who added the control to the page.  
   
 > [!NOTE]
->  For more on personalization and shared versus per-user controls, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+>  For more on personalization and shared versus per-user controls, see [Web Parts Personalization Overview](https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SetIsShared">
@@ -661,7 +661,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetIsStatic">
@@ -678,7 +678,7 @@
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.SetIsStatic%2A> method calls a method in a base class to set a property that indicates whether a particular instance of a control is static. In the Web Parts control set, a static control is a control that is declared in the markup of a Web page. This is in contrast to a dynamic control, which is either added to a page programmatically, or added by a user from a catalog of controls. A static control is inherently a shared control, meaning that it is visible to all users of a page, and although users can close a static control, they can never delete (permanently remove) it.  
   
 > [!NOTE]
->  For more on personalization, static versus dynamic controls, and shared versus per-user controls, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+>  For more on personalization, static versus dynamic controls, and shared versus per-user controls, see [Web Parts Personalization Overview](https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -856,7 +856,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
   </Members>

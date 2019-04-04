@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the Web Parts control set, you can enable two server controls to form a connection and share data, with one control acting as the provider, and the other acting as the consumer of the data. The two controls can be <xref:System.Web.UI.WebControls.WebParts.WebPart> controls or any other type of server control, provided that they are designed to handle connections, and that they are residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. To learn more about Web Parts connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> class overviews, as well as [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ Using the Web Parts control set, you can enable two server controls to form a connection and share data, with one control acting as the provider, and the other acting as the consumer of the data. The two controls can be <xref:System.Web.UI.WebControls.WebParts.WebPart> controls or any other type of server control, provided that they are designed to handle connections, and that they are residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. To learn more about Web Parts connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> class overviews, as well as [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  Provided that the requisite controls and conditions exist to form a Web Parts connection, it is still necessary to actually connect the controls. There are three ways to form a connection between server controls: declaring a connection in a Web page, creating a connection in code, or adding a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to the page so that users can connect the controls on demand. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control generates a UI that enables users to connect or disconnect any server controls on a page that meet the conditions necessary to form a connection. It is an optional control that is not necessary to form connections, but is useful in the case where you want to give users control over which server controls are connected or disconnected.  
   
@@ -99,8 +99,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -146,7 +146,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CancelVerb">
@@ -368,7 +368,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ConfigureVerb">

@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A Web Parts connection consists of two server controls residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone and sharing data by means of an interface instance passed from one control to the other. The control that serves the interface instance is called the provider, and the control that receives the interface instance and processes or displays the data is called the consumer. For details on connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ A Web Parts connection consists of two server controls residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone and sharing data by means of an interface instance passed from one control to the other. The control that serves the interface instance is called the provider, and the control that receives the interface instance and processes or displays the data is called the consumer. For details on connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  The consumer control in a connection can be a <xref:System.Web.UI.WebControls.WebParts.WebPart> control or any type of server or user control, but it must have a method designated as a callback method. The callback method is invoked during the connection process, and its purpose is to receive from the provider an interface instance that contains data. To designate the method that serves as the callback method in a consumer, you must add a `ConnectionConsumerAttribute` metadata element to the method (the element is based on the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> class).  
   
@@ -67,9 +67,9 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
     <related type="Article" href="https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2">Securing Web Parts Pages</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

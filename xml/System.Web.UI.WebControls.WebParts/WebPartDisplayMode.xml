@@ -70,10 +70,10 @@
       <para>Developers can derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class to create custom display modes. To make a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> available on a Web Parts page, you would also need to derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" /> method.</para>
     </block>
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/k3w2y2tf(v=vs.100)">Web Parts Control Set Overview</related>
     <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
     <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,7 +107,7 @@
         <block subset="none" type="overrides">
           <para>If you derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class to create a custom display mode, in your class declaration you must call the base constructor and pass to it a string containing the name of the custom display mode.</para>
         </block>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AllowPageDesign">
@@ -131,7 +131,7 @@
         <value>
           <see langword="true" /> if users can change the page layout; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AssociatedWithToolZone">
@@ -166,7 +166,7 @@
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> base class to create custom display modes must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" /> property in order to set its value.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -193,7 +193,7 @@
         <returns>
           <see langword="true" /> if users can personalize a page; otherwise, <see langword="false" />. The default is <see langword="true" />. However, when <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.RequiresPersonalization" /> is set to <see langword="true" />, and personalization is disabled on the page, the default will be <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -221,7 +221,7 @@
         <summary>Gets the name of a display mode.</summary>
         <value>A string that contains the name of a display mode.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresPersonalization">
@@ -244,7 +244,7 @@
         <summary>Gets a value that indicates whether a particular display mode requires personalization to be enabled.</summary>
         <value>A Boolean value that indicates whether personalization is required. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ShowHiddenWebParts">
@@ -267,7 +267,7 @@
         <summary>Gets a value that indicates whether controls that have their <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" /> property set to <see langword="true" /> should be displayed.</summary>
         <value>A Boolean value that indicates whether hidden controls should be displayed. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
   </Members>

@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the capabilities of the Web Parts control set, it is possible to create a connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server controls, with one control acting as the provider, and the other acting as the consumer of data. To form a connection, the two controls must reside in a zone that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class (such as the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control), and they must be designed correctly to share data through a common interface. For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ Using the capabilities of the Web Parts control set, it is possible to create a connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server controls, with one control acting as the provider, and the other acting as the consumer of data. To form a connection, the two controls must reside in a zone that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class (such as the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control), and they must be designed correctly to share data through a common interface. For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> class passes event data to methods that use the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler> delegate to handle events. There are two such connection-related methods that raise events and use the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> class to provide event data. Both are members of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected%2A> method raises the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event after two server controls have successfully connected, and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected%2A> method raises the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event after two server controls have been disconnected.  
   
@@ -37,8 +37,8 @@
     <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -160,13 +160,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object contains all the details of a Web Parts connection, including references to the provider control, the provider's connection point, the consumer control, and the consumer's connection point.  
   
- For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
-        <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Consumer">
@@ -199,13 +199,13 @@
 ## Remarks  
  A connection between controls in a Web Parts zone requires one control to act as the provider and another to act as the consumer. Each control must also have a connection point defined; in the consumer's case, the connection point must be a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object.  
   
- For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
-        <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPoint">
@@ -238,13 +238,13 @@
 ## Remarks  
  A connection between controls in a Web Parts zone requires one control to act as the provider and another to act as the consumer. Each control must also have a connection point defined; in the consumer's case, the connection point must be a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object.  
   
- For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
-        <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -277,13 +277,13 @@
 ## Remarks  
  A connection between controls in a Web Parts zone requires one control to act as the provider and another to act as the consumer. Each control must also have a connection point defined; in the provider's case, the connection point must be a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object.  
   
- For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
-        <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPoint">
@@ -316,13 +316,13 @@
 ## Remarks  
  A connection between controls in a Web Parts zone requires one control to act as the provider and another to act as the consumer. Each control must also have a connection point defined; in the provider's case, the connection point must be a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object.  
   
- For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ For details about Web Parts connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection>, <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint>, and [Web Parts Connections Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
-        <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178187(v=vs.100)">Web Parts Connections Overview</related>
       </Docs>
     </Member>
   </Members>

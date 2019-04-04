@@ -82,10 +82,10 @@
   
  If you want to create a personalization subsystem significantly different from that provided by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> and the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes, you should create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> implementation by deriving from <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> and add your own custom logic. Then create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> implementation by deriving from <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />, add your own custom logic, and override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreatePersonalization" /> method to return your custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> implementation. Because a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control makes requests to the personalization infrastructure by way of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance, the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control does not directly interact with or hold references to <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> implementations.</para>
     </block>
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,10 +117,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ApplyPersonalizationState">
@@ -165,10 +165,10 @@
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyPersonalizationState">
@@ -215,10 +215,10 @@
   
  An attempt was made to apply personalization data more than once to the same Web Parts control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="CanEnterSharedScope">
@@ -267,10 +267,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ChangeScope">
@@ -309,10 +309,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="CopyPersonalizationState">
@@ -361,10 +361,10 @@
   
  <paramref name="webPartA" /> and <paramref name="webPartB" /> are <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> controls, but their child controls are not of the same <see cref="T:System.Type" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -409,10 +409,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property value after the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method had completed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureEnabled">
@@ -469,10 +469,10 @@
   
  <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" /> returned <see langword="false" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="EnterSharedScopeUserCapability">
@@ -502,10 +502,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExtractPersonalizationState">
@@ -560,10 +560,10 @@
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ExtractPersonalizationState">
@@ -610,10 +610,10 @@
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetAuthorizationFilter">
@@ -659,10 +659,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="webPartID" /> is <see langword="null" /> or an empty string ("").</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="HasPersonalizationState">
@@ -710,10 +710,10 @@
 -or-
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="InitialScope">
@@ -758,10 +758,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property to a value other than its current value after the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method had completed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to set a value of <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope" /> that is not a member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -805,10 +805,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="IsInitialized">
@@ -850,10 +850,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="IsModifiable">
@@ -900,10 +900,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -970,10 +970,10 @@
  An error occurred in the definition of a personalization provider in the configuration file.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The underlying personalization providers failed to initialize because a default provider could not be found or because a failure occurred while attempting to initialize a personalization provider.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ModifyStateUserCapability">
@@ -1003,10 +1003,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -1047,10 +1047,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property to a value other than its current value after the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method has completed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPersonalizationState">
@@ -1097,10 +1097,10 @@ The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <se
 
 The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance cannot reference a valid personalization provider.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1154,10 +1154,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -1200,10 +1200,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetDirty">
@@ -1246,10 +1246,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
         </remarks>
         <exception cref="T:System.InvalidOperationException">No personalization data has been loaded.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -1284,10 +1284,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
         <exception cref="T:System.ArgumentException">Attempted to mark as "dirty" a Web Parts control that is not managed by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
         <exception cref="T:System.InvalidOperationException">No personalization data has been loaded.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldResetPersonalizationState">
@@ -1328,10 +1328,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ToggleScope">
@@ -1388,10 +1388,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to toggle to a scope that is not defined in the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration. Technically, this situation should never occur.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="UserCapabilities">
@@ -1422,10 +1422,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -1461,10 +1461,10 @@ The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> i
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
       </Docs>
     </Member>
   </Members>

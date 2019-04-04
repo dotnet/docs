@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Within the Web Parts control set, a zone is a region on a Web page that contains Web Parts controls. A Web Parts zone is created by a zone control, which is a type of <xref:System.Web.UI.WebControls.CompositeControl> designed to contain other controls. The primary functions of a zone are to lay out the controls it contains, and to provide a common user interface (UI) for those controls. For general information about zones and how they are used in Web Parts applications, see the base <xref:System.Web.UI.WebControls.WebParts.WebZone> class, and [Web Parts Control Set Overview](https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668).  
+ Within the Web Parts control set, a zone is a region on a Web page that contains Web Parts controls. A Web Parts zone is created by a zone control, which is a type of <xref:System.Web.UI.WebControls.CompositeControl> designed to contain other controls. The primary functions of a zone are to lay out the controls it contains, and to provide a common user interface (UI) for those controls. For general information about zones and how they are used in Web Parts applications, see the base <xref:System.Web.UI.WebControls.WebParts.WebZone> class, and [Web Parts Control Set Overview](https://docs.microsoft.com/previous-versions/aspnet/k3w2y2tf(v=vs.100)).  
   
  A key feature of Web Parts controls is that they allow end users to modify (or personalize) Web pages according to their preferences, and save their personalized settings for future browser sessions. One aspect of modifying Web Parts pages includes the ability to add <xref:System.Web.UI.WebControls.WebParts.WebPart> controls or other server controls to a Web Parts page. The <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control provides a list or catalog of controls that users can add to a page.  
   
@@ -104,9 +104,9 @@
  If you inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> class, you can override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" /> method and use the method to add custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />, if you want greater programmatic control over adding custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls to your zone.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/k3w2y2tf(v=vs.100)">Web Parts Control Set Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,7 +145,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCatalogParts">
@@ -182,7 +182,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control does not have an ID.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -239,7 +239,7 @@
         </block>
         <altmember cref="T:System.Web.UI.ITemplate" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
       </Docs>
     </Member>
   </Members>

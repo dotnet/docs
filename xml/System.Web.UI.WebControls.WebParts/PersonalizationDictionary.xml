@@ -39,10 +39,10 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider" />
     <altmember cref="T:System.Collections.IDictionary" />
     <altmember cref="T:System.Collections.ICollection" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/784d8z92(v=vs.100)">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178182(v=vs.100)">Web Parts Personalization</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -140,7 +140,7 @@
   
  It is a good practice, however, to add all properties to the dictionary using <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> including properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope, regardless of the scope of the page.  
   
- The .NET Framework only saves the properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope when appropriate. In other words, shared properties are not saved when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that was initially added in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope. In an opposite scenario, if a <xref:System.Web.UI.WebControls.WebParts.WebPart> control was added to the page in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope, and the control is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope, custom shared property values are saved (along with custom user-scoped properties). For details on personalization data and how shared and user-scoped properties are affected by the personalization scope of the page, see the [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320) topic.  
+ The .NET Framework only saves the properties with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope when appropriate. In other words, shared properties are not saved when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that was initially added in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope. In an opposite scenario, if a <xref:System.Web.UI.WebControls.WebParts.WebPart> control was added to the page in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope, and the control is later saved while the page is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope, custom shared property values are saved (along with custom user-scoped properties). For details on personalization data and how shared and user-scoped properties are affected by the personalization scope of the page, see the [Web Parts Personalization Overview](https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)) topic.  
   
  As with any collection, this method increments the collection count by one and any enumerators currently active on the collection should be invalidated.  
   
@@ -162,7 +162,7 @@
 -or-
   
  <paramref name="value" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/z36h8be9(v=vs.100)">Web Parts Personalization Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">

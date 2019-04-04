@@ -31,7 +31,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  The following screenshot shows a DataGrid bound to data with multiple tables:  
   
- ![Diagram that shows a DataGrid bound to data with multiple tables.](./media/datagrid-control-overview-windows-forms/datagrid-bound-multiple-tables.gif)  
+ ![A WinForms app showing a DataGrid bound to data with multiple tables.](./media/datagrid-control-overview-windows-forms/datagrid-bound-multiple-tables.gif)  
   
  The <xref:System.Windows.Forms.DataGrid> can provide a user interface for a dataset, navigation between related tables, and rich formatting and editing capabilities.  
   

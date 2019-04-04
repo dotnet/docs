@@ -1,9 +1,6 @@
 ---
 title: "Minimum values of the Release DWORD for each .NET Framework version"
 ms.date: "04/02/2019"
-dev_langs: 
-  - "csharp"
-  - "vb"
 ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"

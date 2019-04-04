@@ -41,7 +41,6 @@ CCW exposes all public, COM-visible interfaces, data types, and return values to
 
 To create this seamless approach, the CCW manufactures traditional COM interfaces, such as **IUnknown** and **IDispatch**. As the following illustration shows, the CCW maintains a single reference on the .NET object that it wraps. Both the COM client and the .NET object interact with each other through the proxy and stub construction of the CCW.
 
-The following image shows COM interfaces and the COM callable wrapper:
 
 ![Diagram that shows how CCW manufactures COM interfaces.](./media/com-callable-wrapper/com-callable-wrapper-interfaces.gif)
 

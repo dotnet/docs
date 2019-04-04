@@ -112,7 +112,7 @@
      [!code-csharp-interactive[System.String.Class.Instantiate#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#4)]
      [!code-vb[System.String.Class.Instantiate#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#4)]  
   
--   By calling a formatting method to convert a value or object to its string representation. The following example uses the                [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.  
+-   By calling a formatting method to convert a value or object to its string representation. The following example uses the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.  
   
      [!code-cpp[System.String.Class.Instantiate#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate3.cpp#5)]
      [!code-csharp-interactive[System.String.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#5)]
@@ -6224,40 +6224,34 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
 >   
 >  For more information about hash codes, see <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- In desktop apps, you can use the             [\<UseRandomizedStringHashAlgorithm> element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md) to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the                [\<UseRandomizedStringHashAlgorithm> element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md). It defines a  to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the . It defines a `DisplayString` class that includes a private string constant, `s`, whose value is "This is a string." It also includes a `ShowStringHashCode` method that displays the string value and its hash code along with the name of the application domain in which the method is executing.  
+ In desktop apps, you can use the [\<UseRandomizedStringHashAlgorithm> element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md) to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the [\<UseRandomizedStringHashAlgorithm> element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md). It defines a `DisplayString` class that includes a private string constant, `s`, whose value is "This is a string." It also includes a `ShowStringHashCode` method that displays the string value and its hash code along with the name of the application domain in which the method is executing.
   
  [!code-csharp[System.String.GetHashCode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.GetHashCode/CS/perdomain.cs#2)]
  [!code-vb[System.String.GetHashCode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.GetHashCode/VB/perdomain.vb#2)]  
   
  When you run the example without supplying a configuration file, it displays output similar to the following. Note that the hash codes for the string are identical in the two application domains.  
   
-```  
-  
+```
 String 'This is a string.' in domain 'PerDomain.exe': 941BCEAC  
-String 'This is a string.' in domain 'NewDomain': 941BCEAC  
-  
+String 'This is a string.' in domain 'NewDomain': 941BCEAC
 ```  
   
  However, if you add the following configuration file to the example's directory and then run the example, the hash codes for the same string will differ by application domain.  
   
-```xml  
-  
+```xml
 <?xml version ="1.0"?>  
 <configuration>  
    <runtime>  
       <UseRandomizedStringHashAlgorithm enabled="1" />  
    </runtime>  
-</configuration>  
-  
+</configuration>
 ```  
   
  When the configuration file is present, the example displays the following output:  
   
 ```  
-  
-String 'This is a string.' in domain 'PerDomain.exe': 5435776D  
-String 'This is a string.' in domain 'NewDomain': 75CC8236  
-  
+String 'This is a string.' in domain 'PerDomain.exe': 5435776D
+String 'This is a string.' in domain 'NewDomain': 75CC8236
 ```  
   
 > [!IMPORTANT]

@@ -68,9 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MessageBox> class offers a more powerful version of the <xref:System.Windows.Forms.HtmlWindow.Alert%2A> method.  
-  
- Although <xref:System.Windows.Forms.HtmlWindow.Alert%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](https://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
+ The <xref:System.Windows.Forms.MessageBox?displayProperty=nameWithType> class offers a more powerful version of the <xref:System.Windows.Forms.HtmlWindow.Alert%2A> method.  
   
  ]]></format>
         </remarks>
@@ -181,48 +179,31 @@
 ## Remarks  
  <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> displays a modal dialog box; the user will not be able to access the underlying HTML page without first closing this dialog box.  
   
- Although <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](https://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
-  
-   
-  
 ## Examples  
- Copy the following HTML and save it into a form called orderForm.htm:  
-  
- `<HTML>`  
-  
- `<BODY>`  
-  
- `<FORM name="NewOrderForm">`  
-  
- `Select Part Type:`  
-  
- `<SELECT name="PartType">`  
-  
- `<OPTION>AZ-3700`  
-  
- `<OPTION>AZ-3701`  
-  
- `<OPTION>AZ-3702`  
-  
- `<SELECT><br>`  
-  
- `Quantity: <INPUT type="text" name="PartQty" size="2" maxsize="2"><br>`  
-  
- `Building/Desk:`  
-  
- `<INPUT type="text" name="PartBuilding" size="2" maxsize="2"> /`  
-  
- `<INPUT type="text" name="PartDesk" size="2" maxsize="2"><p>`  
-  
- `<INPUT type="submit" value="Transmit Order">`  
-  
- `</FORM>`  
-  
- `</BODY>`  
-  
- `</HTML>`  
-  
- The following code example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> dialog box when the user submits `NewOrderForm`.  
+
+Copy the following HTML and save it into a form called orderForm.htm:  
+
+```html
+<HTML>
+<BODY>
+<FORM name="NewOrderForm">
+Select Part Type:
+<SELECT name="PartType">
+  <OPTION>AZ-3700
+  <OPTION>AZ-3701
+  <OPTION>AZ-3702  
+</SELECT><br/>
+Quantity: <INPUT type="text" name="PartQty" size="2" maxsize="2" /><br/>
+Building/Desk:
+<INPUT type="text" name="PartBuilding" size="2" maxsize="2"/> /  
+<INPUT type="text" name="PartDesk" size="2" maxsize="2"/><p/>
+<INPUT type="submit" value="Transmit Order"/>
+</FORM>
+</BODY>
+</HTML>
+```
+
+The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> dialog box when the user submits `NewOrderForm`.  
   
  [!code-csharp[System.Windows.Forms.HtmlWindow#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#10)]
  [!code-vb[System.Windows.Forms.HtmlWindow#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#10)]  
@@ -1337,8 +1318,6 @@
   
 ## Remarks  
  <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> provides a quick, easy way to obtain simple text input from the user.  
-  
- Although <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](https://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
   
  ]]></format>
         </remarks>

@@ -27,7 +27,7 @@
     <summary>Represents an attribute that indicates whether the rendering of a mobile control can be overridden by the device. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
-    <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wa9x6tza(v=vs.100)">Mobile Device Capabilities</related>
     <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceOverridableAttribute" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wa9x6tza(v=vs.100)">Mobile Device Capabilities</related>
         <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </MemberGroup>
@@ -59,7 +59,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceOverridableAttribute" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wa9x6tza(v=vs.100)">Mobile Device Capabilities</related>
         <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
         <param name="overridable">The value to assign to <see cref="P:System.Web.UI.MobileControls.DeviceOverridableAttribute.Overridable" />.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceOverridableAttribute" /> class with the given value for the <see cref="P:System.Web.UI.MobileControls.DeviceOverridableAttribute.Overridable" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wa9x6tza(v=vs.100)">Mobile Device Capabilities</related>
         <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
         <value>
           <see langword="true" /> if rendering can be overridden; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wa9x6tza(v=vs.100)">Mobile Device Capabilities</related>
         <related type="Article" href="https://msdn.microsoft.com/library/d053675a-279a-40fa-ac24-89c86d94a862">Extended Browser Capabilities</related>
       </Docs>
     </Member>

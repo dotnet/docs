@@ -25,8 +25,8 @@
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.TextView" />
-    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
     <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
   </Docs>
   <Members>
@@ -48,8 +48,8 @@
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextView" />
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -74,8 +74,8 @@
         <value>A strongly typed reference to the associated control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.TextView" />
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="Render">

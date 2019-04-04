@@ -31,8 +31,8 @@
     <summary>Provides a page adapter for the HTML adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
-    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
     <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
   </Docs>
   <Members>
@@ -43,8 +43,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -71,8 +71,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,8 +96,8 @@
         <param name="defaultPageWeight">Value to be used as the default page weight.</param>
         <summary>Initializes an instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CacheVaryByHeaders">
@@ -133,8 +133,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CookielessDataDictionary">
@@ -168,8 +168,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -200,8 +200,8 @@
         <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -249,8 +249,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="DeviceQualifies">
@@ -292,8 +292,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EventArgumentKey">
@@ -324,8 +324,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EventSourceKey">
@@ -356,8 +356,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="GetFormUrl">
@@ -384,8 +384,8 @@
         <summary>Returns a URL that can be used to uniquely identify the form. This URL must only be passed as a parameter to the <see cref="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.BeginFile(System.String,System.String,System.String)" /> method of the text writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A URL that can be used to uniquely identify the form.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="HandleError">
@@ -430,8 +430,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="HandlePagePostBackEvent">
@@ -474,8 +474,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="IsFormRendered">
@@ -512,8 +512,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="OptimumPageWeight">
@@ -541,8 +541,8 @@
         <value>The page weight, based on the device's screen size, which is appropriate for the target device.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/78F2786D-0B5B-4760-9616-5027357713C2">Pagination Support</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -605,8 +605,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.IPageAdapter" />
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -661,8 +661,8 @@
         <param name="form">The form to render.</param>
         <summary>Renders the given form. Called by the form adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderHiddenVariables">
@@ -696,8 +696,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEvent">
@@ -735,8 +735,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackHeader">
@@ -771,8 +771,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderUrlPostBackEvent">
@@ -810,8 +810,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
   </Members>

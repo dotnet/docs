@@ -30,7 +30,7 @@
   
  The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control, given the characteristics of the requesting browser. The <xref:System.Web.HttpBrowserCapabilities> class uses browser definition files to identify the characteristics of the client browser and to map the adapter to the browser type.  
   
- For more information about adaptive rendering in ASP.NET, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
+ For more information about adaptive rendering in ASP.NET, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)).  
   
  ]]></format>
     </remarks>
@@ -38,7 +38,7 @@
     <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
     <altmember cref="T:System.Web.AspNetHostingPermission" />
     <altmember cref="T:System.Web.HttpBrowserCapabilities" />
-    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -185,7 +185,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Adapters.MenuAdapter.OnInit%2A> method registers the associated control as one that requires control state. By default, the .NET Framework calls the Web server control's own <xref:System.Web.UI.Control.OnInit%2A> method. However, after the <xref:System.Web.UI.Control.Adapter%2A> property of the server control is set, the .NET Framework will call the adapter's implementation of the <xref:System.Web.UI.Control.OnInit%2A> method instead of the control's implementation.  
   
- Use the <xref:System.Web.UI.WebControls.Adapters.MenuAdapter.OnInit%2A> method to initialize settings in the control. During a postback, this is an important phase for managing interaction with existing view-state data. For more information, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
+ Use the <xref:System.Web.UI.WebControls.Adapters.MenuAdapter.OnInit%2A> method to initialize settings in the control. During a postback, this is an important phase for managing interaction with existing view-state data. For more information, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -229,7 +229,7 @@
   
  By default, the .NET Framework calls the <xref:System.Web.UI.WebControls.Menu> control's <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method. However, after the <xref:System.Web.UI.Control.Adapter%2A> property of that control is set, the .NET Framework will call the adapter's implementation of the <xref:System.Web.UI.WebControls.Adapters.MenuAdapter.OnPreRender%2A> method instead of the control's implementation.  
   
- Use the <xref:System.Web.UI.WebControls.Adapters.MenuAdapter.OnPreRender%2A> method to finalize any settings in the control. Changes made to control properties in this phase will be saved to view state, but changes made in the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> method are not saved. For more information, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
+ Use the <xref:System.Web.UI.WebControls.Adapters.MenuAdapter.OnPreRender%2A> method to finalize any settings in the control. Changes made to control properties in this phase will be saved to view state, but changes made in the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> method are not saved. For more information, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)).  
   
  ]]></format>
         </remarks>

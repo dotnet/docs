@@ -22,9 +22,9 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter> class adapts the associated <xref:System.Web.UI.WebControls.WebControl> control to modify the default markup or behavior for a specific browser. You can extend the <xref:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter> class to further customize rendering of the <xref:System.Web.UI.WebControls.WebControl> control.  
   
- Adapters are compiled .NET Framework components that take over one or more stages in the life cycle of a page or control. Extending the <xref:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter> class will provide access to the life-cycle stages of the <xref:System.Web.UI.WebControls.WebControl> control. For more information, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
+ Adapters are compiled .NET Framework components that take over one or more stages in the life cycle of a page or control. Extending the <xref:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter> class will provide access to the life-cycle stages of the <xref:System.Web.UI.WebControls.WebControl> control. For more information, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)).  
   
- The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control given the characteristics of the requesting browser. Browser definition files are used by the <xref:System.Web.HttpBrowserCapabilities> class to identify the characteristics of the client browser and map the adapter to the browser type. For more information, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
+ The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control given the characteristics of the requesting browser. Browser definition files are used by the <xref:System.Web.HttpBrowserCapabilities> class to identify the characteristics of the client browser and map the adapter to the browser type. For more information, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)).  
   
  For a description of the adaptive rendering architecture of ASP.NET and a step-by-step walkthrough that shows how to implement a control adapter and map it to a control, see "Authoring ASP.NET Server Control Adapters: An Introduction" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
@@ -59,7 +59,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebControl" />
     <altmember cref="T:System.Web.AspNetHostingPermission" />
     <altmember cref="T:System.Web.HttpBrowserCapabilities" />
-    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework constructs an instance of the <xref:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter> class. The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control given the characteristics of the requesting browser. Once found, the control holds a reference to the mapped adapter instance in its <xref:System.Web.UI.Control.Adapter%2A> property. For information on adapter mappings and browser definition files, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)).  
+ The .NET Framework constructs an instance of the <xref:System.Web.UI.WebControls.Adapters.HideDisabledControlAdapter> class. The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control given the characteristics of the requesting browser. Once found, the control holds a reference to the mapped adapter instance in its <xref:System.Web.UI.Control.Adapter%2A> property. For information on adapter mappings and browser definition files, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -94,7 +94,7 @@
         <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
         <altmember cref="T:System.Web.UI.Control" />
         <altmember cref="P:System.Web.UI.Control.Adapter" />
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="Render">

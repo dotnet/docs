@@ -46,7 +46,7 @@
   
  You can use the members of this class, and any members it inherits from the <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter> class, to create custom text writers to use in a custom XHTML page or in class adapters. You can also create new derived classes that override the standard behavior of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> class.  
   
- Device filtering is required in order to use a specific adapter or text writer for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)) and [Device Filtering Overview](https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)).  
+ Device filtering is required in order to use a specific adapter or text writer for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)) and [Device Filtering Overview](https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)).  
   
  ]]></format>
     </remarks>
@@ -56,7 +56,7 @@
     <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
     <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
     <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
     <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
   </Docs>
   <Members>
@@ -93,7 +93,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddOnEnterForwardSetVar">
@@ -104,7 +104,7 @@
       <Docs>
         <summary>Adds a provided variable to a list of variables to be embedded in pages for WML devices. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddOnEnterForwardSetVar">
@@ -173,7 +173,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="AddOnEnterForwardSetVar">
@@ -244,7 +244,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="BeginCachedRendering">
@@ -276,7 +276,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EndCachedRendering" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="CacheKey">
@@ -314,7 +314,7 @@
         <altmember cref="P:System.Web.HttpContext.Cache" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetCacheKey(System.Web.Caching.Cache)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="ClearPendingBreak">
@@ -346,7 +346,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="CustomBodyStyles">
@@ -377,7 +377,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="EndCachedRendering">
@@ -409,7 +409,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="EnterFormat">
@@ -446,7 +446,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" />
         <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitFormat" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="EnterLayout">
@@ -483,7 +483,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" />
         <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitLayout" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="EnterStyle">
@@ -521,7 +521,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" />
         <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ExitStyle" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExitFormat">
@@ -535,7 +535,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ExitFormat">
@@ -571,7 +571,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="ExitFormat">
@@ -609,7 +609,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExitLayout">
@@ -623,7 +623,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ExitLayout">
@@ -659,7 +659,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="ExitLayout">
@@ -697,7 +697,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="ExitStyle">
@@ -733,7 +733,7 @@
         <altmember cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EnterStyle" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="IsStyleSheetEmpty">
@@ -759,7 +759,7 @@
           <see langword="true" /> if a style has been set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="MarkWmlOnEventLocation">
@@ -793,7 +793,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SessionKey">
@@ -830,7 +830,7 @@
         <exception cref="T:System.Exception">The <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey(System.Web.SessionState.HttpSessionState)" /> method has not been called.</exception>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetSessionKey(System.Web.SessionState.HttpSessionState)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SetBodyStyle">
@@ -864,7 +864,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SetCacheKey">
@@ -899,7 +899,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.CacheKey" />
         <altmember cref="T:System.Web.Caching.Cache" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SetPendingBreak">
@@ -932,7 +932,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ClearPendingBreak" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SetSessionKey">
@@ -968,7 +968,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SessionKey" />
         <altmember cref="P:System.Web.HttpContext.Session" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsNoWrapStyle">
@@ -1000,7 +1000,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="SuppressNewLine">
@@ -1032,7 +1032,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="UseDivsForBreaks">
@@ -1064,7 +1064,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAttribute">
@@ -1105,7 +1105,7 @@
         </remarks>
         <altmember cref="M:System.Web.HttpServerUtility.HtmlEncode(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteBeginTag">
@@ -1144,7 +1144,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteBreak">
@@ -1180,7 +1180,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WritePendingBreak" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteCachedMarkup">
@@ -1213,7 +1213,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.BeginCachedRendering" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.EndCachedRendering" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteDoctypeDeclaration">
@@ -1256,7 +1256,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedAttributeValue">
@@ -1290,7 +1290,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEndTag">
@@ -1329,7 +1329,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ClearPendingBreak" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteFullBeginTag">
@@ -1368,7 +1368,7 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SetPendingBreak" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.ClearPendingBreak" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteHiddenField">
@@ -1379,7 +1379,7 @@
       <Docs>
         <summary>Writes the markup for a hidden field to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteHiddenField">
@@ -1416,7 +1416,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
         <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
@@ -1457,7 +1457,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteLine">
@@ -1483,7 +1483,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1512,7 +1512,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1541,7 +1541,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1570,7 +1570,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1599,7 +1599,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1628,7 +1628,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1657,7 +1657,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1686,7 +1686,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1715,7 +1715,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1744,7 +1744,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1775,7 +1775,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1806,7 +1806,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1839,7 +1839,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1872,7 +1872,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WritePendingBreak">
@@ -1898,7 +1898,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteUrlParameter">
@@ -1935,7 +1935,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedUrl(System.String)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlDeclaration">
@@ -1969,7 +1969,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteDoctypeDeclaration(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype)" />
         <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
   </Members>

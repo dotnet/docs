@@ -121,5 +121,6 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |`-checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
   
 ## See also
+
 - [Visual Basic Compiler Options Listed Alphabetically](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md)
 - [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)

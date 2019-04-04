@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "?[] operator [C#]"
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
 ---
-# ?. and ?[] null-conditional operators (C# and Visual Basic)
+# ?. and ?[] null-conditional operators (C# Reference)
 
 Tests the value of the left-hand operand for null before performing a member access (`?.`) or index (`?[]`) operation; returns `null` if the left-hand operand evaluates to `null`.
 

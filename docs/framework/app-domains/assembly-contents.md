@@ -25,15 +25,13 @@ In general, a static assembly can consist of four elements:
   
  There are several ways to group these elements in an assembly. You can group all elements in a single physical file, which is shown in the following illustration.  
   
- ![MyAssembly.dll](../../../docs/framework/app-domains/media/assemblyover1.gif "assemblyover1")  
-Single-file assembly  
+ ![Diagram that shows a single-file assembly called MyAssembly.dll.](./media/assembly-contents/single-file-assembly.gif)  
   
  Alternatively, the elements of an assembly can be contained in several files. These files can be modules of compiled code (.netmodule), resources (such as .bmp or .jpg files), or other files required by the application. Create a multifile assembly when you want to combine modules written in different languages and to optimize downloading an application by putting seldom used types in a module that is downloaded only when needed.  
   
  In the following illustration, the developer of a hypothetical application has chosen to separate some utility code into a different module and to keep a large resource file (in this case a .bmp image) in its original file. The .NET Framework downloads a file only when it is referenced; keeping infrequently referenced code in a separate file from the application optimizes code download.  
   
- ![MyAssembly.dll](../../../docs/framework/app-domains/media/assemblyover2.gif "assemblyover2")  
-Multifile assembly  
+ ![Diagram that shows a multifile assembly.](./media/assembly-contents/multifile-assembly-diagram.gif) 
   
 > [!NOTE]
 >  The files that make up a multifile assembly are not physically linked by the file system. Rather, they are linked through the assembly manifest and the common language runtime manages them as a unit.  

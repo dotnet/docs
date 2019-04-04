@@ -11,7 +11,7 @@ This topic discusses hosting Windows Communication Foundation (WCF) services sid
 
 WCF services hosted in Internet Information Services (IIS) can be located with .ASPX pages and ASMX Web services inside of a single, common Application Domain. ASP.NET provides common infrastructure services such as AppDomain management and dynamic compilation for both WCF and the ASP.NET HTTP runtime. The default configuration for WCF is side-by-side with ASP.NET.
 
-![WCF Services and ASP .NET: sharing state](./media/hostingwcfwithaspnet.gif "HostingWCFwithASPNET")
+![Screenshot showing WCF Services and ASP .NET: sharing state.](./media/wcf-services-and-aspnet/windows-communication-foundation-services-asp-dotnet-configuration.gif)
 
 The ASP.NET HTTP runtime handles ASP.NET requests but does not participate in the processing of requests destined for WCF services, even though these services are hosted in the same AppDomain as is the ASP.NET content. Instead, the WCF Service Model intercepts messages addressed to WCF services and routes them through the WCF transport/channel stack.
 

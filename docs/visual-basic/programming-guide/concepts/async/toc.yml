@@ -1,0 +1,28 @@
+- name: Asynchronous Programming with Async and Await
+  href: index.md
+  items:
+  - name: "Walkthrough: Accessing the Web by Using Async and Await"
+    href: walkthrough-accessing-the-web-by-using-async-and-await.md
+  - name: "How to: Extend the Async Walkthrough by Using Task.WhenAll"
+    href: how-to-extend-the-async-walkthrough-by-using-task-whenall.md
+  - name: "How to: Make Multiple Web Requests in Parallel by Using Async and Await"
+    href: how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md
+  - name: Async Return Types
+    href: async-return-types.md
+  - name: Control Flow in Async Programs
+    href: control-flow-in-async-programs.md
+  - name: Fine-Tuning Your Async Application
+    href: fine-tuning-your-async-application.md
+    items:
+    - name: Cancel an Async Task or a List of Tasks
+      href: cancel-an-async-task-or-a-list-of-tasks.md
+    - name: Cancel Async Tasks after a Period of Time
+      href: cancel-async-tasks-after-a-period-of-time.md
+    - name: Cancel Remaining Async Tasks after One Is Complete
+      href: cancel-remaining-async-tasks-after-one-is-complete.md
+    - name: Start Multiple Async Tasks and Process Them As They Complete
+      href: start-multiple-async-tasks-and-process-them-as-they-complete.md
+  - name: Handling Reentrancy in Async Apps
+    href: handling-reentrancy-in-async-apps.md
+  - name: Using Async for File Access
+    href: using-async-for-file-access.md

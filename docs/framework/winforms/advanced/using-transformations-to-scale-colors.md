@@ -25,9 +25,9 @@ A scaling transformation multiplies one or more of the four color components by 
  [!code-csharp[System.Drawing.RecoloringImages#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#41)]
  [!code-vb[System.Drawing.RecoloringImages#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#41)]  
   
- The following illustration shows the original image on the left and the scaled image on the right.  
+ The following illustration shows the original image on the left and the scaled image on the right:  
   
- ![Scale Colors](./media/colortrans3.png "colortrans3")  
+ ![Screenshot that compares the original and scaled colors.](./media/using-transformations-to-scale-colors/four-bar-scale-one-color.png)  
   
  The following table lists the color vectors for the four bars before and after the blue scaling. Note that the blue component in the fourth color bar went from 0.8 to 0.6. That is because [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] retains only the fractional part of the result. For example, (2)(0.8) = 1.6, and the fractional part of 1.6 is 0.6. Retaining only the fractional part ensures that the result is always in the interval [0, 1].  
   
@@ -44,9 +44,9 @@ A scaling transformation multiplies one or more of the four color components by 
  [!code-csharp[System.Drawing.RecoloringImages#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#42)]
  [!code-vb[System.Drawing.RecoloringImages#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#42)]  
   
- The following illustration shows the original image on the left and the scaled image on the right.  
+ The following illustration shows the original image on the left and the scaled image on the right:  
   
- ![Scale Colors](./media/colortrans4.png "colortrans4")  
+ ![Screenshot that compares the original and scaled colors.](./media/using-transformations-to-scale-colors/four-bar-scale-multiple-colors.png)  
   
  The following table lists the color vectors for the four bars before and after the red, green and blue scaling.  
   

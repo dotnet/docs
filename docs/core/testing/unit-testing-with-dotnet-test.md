@@ -45,7 +45,7 @@ Change the directory back to the *unit-testing-using-dotnet-test* directory.
 Run the [dotnet sln](../tools/dotnet-sln.md) command to add the class library project to the solution:
 
 ```
-dotnet sln add .\PrimeService\PrimeService.csproj
+dotnet sln add ./PrimeService/PrimeService.csproj
 ```
 
 ## Creating the test project
@@ -95,7 +95,7 @@ The following shows the final solution layout:
 To add the test project to the solution, run the [dotnet sln](../tools/dotnet-sln.md) command in the *unit-testing-using-dotnet-test* directory:
 
 ```
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Creating the first test

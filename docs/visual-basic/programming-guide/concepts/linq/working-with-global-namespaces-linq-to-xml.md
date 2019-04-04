@@ -192,4 +192,5 @@ http://www.adventure-works.com
 ```  
   
 ## See also
+
 - [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)

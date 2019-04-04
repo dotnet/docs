@@ -141,9 +141,9 @@ Workflows can be constructed from built-in activities as well as from custom act
     "Your guess is too high."  
     ```  
   
-     The following example illustrates the completed workflow.  
+     The following example illustrates the completed workflow:  
   
-     ![Completed Sequential Workflow](./media/wfsequentialgettingstartedtutorialcomplete.JPG "WFSequentialGettingStartedTutorialComplete")  
+     ![Screenshot that shows the completed sequential workflow.](./media/how-to-create-a-sequential-workflow/complete-sequential-workflow.jpg)  
   
 ## To build the workflow  
   

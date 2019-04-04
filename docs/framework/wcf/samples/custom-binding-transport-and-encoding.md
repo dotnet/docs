@@ -80,4 +80,3 @@ client.Close()
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Custom\Transport`  
   
-## See also

@@ -40,7 +40,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  This topic covers three common navigation topologies: *fixed linear*, *fixed hierarchical*, and *dynamically generated*. Each navigation topology is demonstrated with a sample that has a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] like the one that is shown in the following figure:  
   
- ![Task pages with data items](./media/navigationtopologyfigure6.png "NavigationTopologyFigure6")  
+ ![Task pages with data items and navigation buttons.](./media/navigation-topologies-overview/navigation-topology-data-items.png)  
   
 <a name="Structured_Navigation_Topologies"></a>   
 ## Structured Navigation Topologies  
@@ -54,9 +54,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
 <a name="Navigation_over_a_Fixed_Linear_Topology"></a>   
 ## Navigation over a Fixed Linear Topology  
- A fixed linear topology is analogous to the structure of a wizard that has one or more wizard pages that are navigated in a fixed sequence. The following figure shows the high-level structure and flow of a wizard with a fixed linear topology.  
+ A fixed linear topology is analogous to the structure of a wizard that has one or more wizard pages that are navigated in a fixed sequence. The following figure shows the high-level structure and flow of a wizard with a fixed linear topology:  
   
- ![Navigation topology diagram](./media/navigationtopologyfigure1.png "NavigationTopologyFigure1")  
+ ![Diagram that shows a fixed linear topology.](./media/navigation-topologies-overview/navigation-topology-fixed-linear.png)  
   
  The typical behaviors for navigating over a fixed linear topology include the following:  
   
@@ -78,13 +78,13 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
 <a name="Dynamic_Navigation_over_a_Fixed_Hierarchical_Topology"></a>   
 ## Dynamic Navigation over a Fixed Hierarchical Topology  
- In some applications, pages allow navigation to two or more other pages, as shown in the following figure.  
+ In some applications, pages allow navigation to two or more other pages, as shown in the following figure: 
   
- ![A page that can navigate to multiple pages](./media/navigationtopologyfigure2.png "NavigationTopologyFigure2")  
+ ![Diagram that shows a page that can navigate to multiple pages.](./media/navigation-topologies-overview/navigation-topology-multiple-pages.png)  
   
- This structure is known as a fixed hierarchical topology, and the sequence in which the hierarchy is traversed is often determined at run time by either the application or the user. At run time, each page in the hierarchy that allows navigation to two or more other pages gathers the data required to determine which page to navigate to. The following figure illustrates one of several possible navigation sequences based on the previous figure.  
+ This structure is known as a fixed hierarchical topology, and the sequence in which the hierarchy is traversed is often determined at run time by either the application or the user. At run time, each page in the hierarchy that allows navigation to two or more other pages gathers the data required to determine which page to navigate to. The following figure illustrates one of several possible navigation sequences based on the previous figure:  
   
- ![Navigation topology diagram](./media/navigationtopologyfigure3.png "NavigationTopologyFigure3")  
+ ![Diagram that shows a possible navigation sequence.](./media/navigation-topologies-overview/navigation-topology-fixed-hierarchical.png)  
   
  Even though the sequence in which pages in a fixed hierarchical structure are navigated is determined at run time, the user experience is the same as the user experience for a fixed linear topology:  
   
@@ -108,13 +108,13 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
 <a name="Navigation_over_a_Dynamically_Generated_Topology"></a>   
 ## Navigation over a Dynamically Generated Topology  
- In some applications, the sequence in which two or more pages are navigated can only be determined at run time, whether by the user, the application, or external data. The following figure illustrates a set of pages with an undetermined navigation sequence.  
+ In some applications, the sequence in which two or more pages are navigated can only be determined at run time, whether by the user, the application, or external data. The following figure illustrates a set of pages with an undetermined navigation sequence:  
   
- ![Navigation topology diagram](./media/navigationtopologyfigure4.png "NavigationTopologyFigure4")  
+ ![A set of pages with an undetermined navigation sequence.](./media/navigation-topologies-overview/navigation-topology-dynamically-generated.png)  
   
- The next figure illustrates a navigation sequence that was chosen by the user at run time.  
+ The next figure illustrates a navigation sequence that was chosen by the user at run time:  
   
- ![Navigation diagram](./media/navigationtopologyfigure5.png "NavigationTopologyFigure5")  
+ ![Diagram that shows a navigation sequence chosen at run time.](./media/navigation-topologies-overview/navigation-topology-sequence-chosen-run-time.png)  
   
  The navigation sequence is known as a dynamically generated topology. For the user, as with the other navigation topologies, the user experience is the same as it is for the previous topologies:  
   

@@ -49,7 +49,7 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 |`listenBacklog`|An integer that specifies the maximum outstanding connections that are accepted from the shared connection, but are not yet dispatched to Windows Communication Foundation (WCF) services. The default is 10.|  
 |`maxPendingAccepts`|An integer that specifies the maximum outstanding concurrent accepting threads on the listening endpoint for the sharing service. The default is 2.|  
 |`MaxPendingConnections`|The maximum number of connections that the listener can have waiting to be accepted by the application. When this quota value is exceeded, new incoming connections are dropped rather than waiting to be accepted. Connection features such as message security can cause a client to open more than one connection. Service administrators should account for these additional connections when setting this quota value. The default is 10.|  
-|`receiveTimeout`|A `TimeSpan` that specifies the timeout for reading the framing data and performing connection dispatching from the underlining connections. The default is "00:00:10".|  
+|`receiveTimeout`|A <xref:System.TimeSpan> that specifies the timeout for reading the framing data and performing connection dispatching from the underlining connections. The default is "00:00:10".|  
 |`teredoEnabled`|A Boolean value that indicates whether the port sharing service uses Microsoft Teredo service to listen on TCP ports on behalf of WCF services. The default is `false`.|  
   
 ### Child Elements  

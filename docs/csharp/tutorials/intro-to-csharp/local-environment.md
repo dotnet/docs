@@ -43,12 +43,6 @@ different actions.
 This tutorial assumes that you have finished the [Hello world](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp-local.md) lessons.
 
-## [String interpolation](interpolated-strings-local.md)
-
-The [String interpolation](interpolated-strings-local.md) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the formatting of the result string.
-
-This tutorial assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp-local.md), and [Branches and loops](branches-and-loops-local.md) lessons.
-
 ## [List collection](arrays-and-collections.md)
 
 The [List collection](arrays-and-collections.md) lesson gives you

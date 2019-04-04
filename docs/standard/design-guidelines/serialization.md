@@ -80,14 +80,16 @@ Serialization is the process of converting an object into a format that can be r
   
 ```csharp
 [Serializable]  
-public class Person : ISerializable {  
-    protected Person(SerializationInfo info, StreamingContext context) {  
-        ...  
+public class Person : ISerializable
+{  
+    protected Person(SerializationInfo info, StreamingContext context)
+    {  
+        // ...  
     }  
 }  
 ```
   
- **✓ DO** implement the `ISerializable` members explicitly.  
+ **✓ DO** implement the <xref:System.Runtime.Serialization.ISerializable> members explicitly.  
   
  **✓ DO** apply a link demand to <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> implementation. This ensures that only fully trusted core and the Runtime Serializer have access to the member.  
   

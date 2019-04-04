@@ -92,56 +92,9 @@ public class SentimentPrediction
 }
 ```
 
-## Create Prediction Service
+## Register PredictionEngine for Use in Application
 
-To organize and re-use the prediction logic throughout the entire application, create a prediction service.
-
-1. Create a directory named *Services* in your project to hold services to be used by the application:
-
-    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "Services" and hit **Enter**.
-
-1. In Solution Explorer, right-click the *Services* directory, and then select **Add > New Item**.
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *PredictionService.cs*. Then, select the **Add** button. The *PredictionService.cs* file opens in the code editor. Add the following using statement to the top of *PredictionService.cs*:
-
-```csharp
-using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.ML;
-using Microsoft.ML.Core.Data;
-using SentimentAnalysisWebAPI.DataModels;
-```
-
-Remove the existing class definition and add the following code to the *PredictionService.cs* file:
-
-```csharp
-public class PredictionService
-{
-    private readonly PredictionEngine<SentimentData, SentimentPrediction> _predictionEngine;
-    public PredictionService(PredictionEngine<SentimentData,SentimentPrediction> predictionEngine)
-    {
-        _predictionEngine = predictionEngine;
-    }
-
-    public string Predict(SentimentData input)
-    {
-        // Make a prediction
-        SentimentPrediction prediction = _predictionEngine.Predict(input);
-
-        //If prediction is true then it is toxic. If it is false, the it is not.
-        string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
-
-        return isToxic;
-
-    }
-}
-```
-
-## Register Predictions Service for Use in Application
-
-To use the prediction service in your application you will have to create it every time it is needed. In that case, a best practice to consider is ASP.NET Core dependency injection.
+To make a single prediction, you can use `PredictionEngine`. In order to use `PredictionEngine` in your application you will have to create it every time it is needed. In that case, a best practice to consider is ASP.NET Core dependency injection.
 
 The following link provides more information if you want to learn about [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1).
 
@@ -157,18 +110,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.ML;
 using Microsoft.ML.Core.Data;
 using SentimentAnalysisWebAPI.DataModels;
-using SentimentAnalysisWebAPI.Services;
 ```
 
-1. Add the following lines of code to the *ConfigureServices* method:
+2. Add the following lines of code to the *ConfigureServices* method:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-    services.AddSingleton<MLContext>();
-    services.AddSingleton<PredictionEngine<SentimentData, SentimentPrediction>>((ctx) =>
+    services.AddScoped<MLContext>();
+    services.AddScoped<PredictionEngine<SentimentData, SentimentPrediction>>((ctx) =>
     {
         MLContext mlContext = ctx.GetRequiredService<MLContext>();
         string modelFilePathName = "MLModels/sentiment_model.zip";
@@ -183,9 +135,11 @@ public void ConfigureServices(IServiceCollection services)
         // Return prediction engine
         return model.CreatePredictionEngine<SentimentData, SentimentPrediction>(mlContext);
     });
-    services.AddSingleton<PredictionService>();
 }
 ```
+
+> [!WARNING]
+> `PredictionEngine` is not thread-safe. A way that you can limit the cost of creating the object is by making its service lifetime *Scoped*. *Scoped* objects are the same within a request but different across requests. Visit the following link to learn more about [service lifetimes](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.1#service-lifetimes).
 
 At a high level, this code initializes the objects and services automatically when requested by the application instead of having to manually do it.
 
@@ -198,9 +152,10 @@ To process your incoming HTTP requests, you need to create a controller.
 1. In the prompt change the **Controller Name** field to *PredictController.cs*. Then, select the Add button. The *PredictController.cs* file opens in the code editor. Add the following using statement to the top of *PredictController.cs*:
 
 ```csharp
+using System;
 using Microsoft.AspNetCore.Mvc;
 using SentimentAnalysisWebAPI.DataModels;
-using SentimentAnalysisWebAPI.Services;
+using Microsoft.ML;
 ```
 
 Remove the existing class definition and add the following code to the *PredictController.cs* file:
@@ -208,12 +163,12 @@ Remove the existing class definition and add the following code to the *PredictC
 ```csharp
 public class PredictController : ControllerBase
 {
+    
+    private readonly PredictionEngine<SentimentData,SentimentPrediction> _predictionEngine;
 
-    private readonly PredictionService _predictionService;
-
-    public PredictController(PredictionService predictionService)
+    public PredictController(PredictionEngine<SentimentData, SentimentPrediction> predictionEngine)
     {
-        _predictionService = predictionService; //Define prediction service
+        _predictionEngine = predictionEngine; //Define prediction engine
     }
 
     [HttpPost]
@@ -223,13 +178,20 @@ public class PredictController : ControllerBase
         {
             return BadRequest();
         }
-        return Ok(_predictionService.Predict(input));
-    }
 
+        // Make a prediction
+        SentimentPrediction prediction = _predictionEngine.Predict(input);
+
+        //If prediction is true then it is toxic. If it is false, the it is not.
+        string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
+
+        return Ok(isToxic);
+    }
+    
 }
 ```
 
-This is assigning the Prediction service by passing it to the controller's constructor which you get via dependency injection. Then, in the POST method of this controller the Prediction service is being used to make predictions and return the results back to the user if successful.
+This is assigning the `PredictionEngine` by passing it to the controller's constructor which you get via dependency injection. Then, in the POST method of this controller the `PredictionEngine` is being used to make predictions and return the results back to the user if successful.
 
 ## Test Web API Locally
 

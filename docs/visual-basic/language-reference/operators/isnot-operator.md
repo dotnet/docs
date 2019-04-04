@@ -42,6 +42,7 @@ result = object1 IsNot object2
  [!code-vb[VbVbalrOperators#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#29)]  
   
 ## See also
+
 - [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
 - [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)
 - [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)

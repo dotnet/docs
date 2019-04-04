@@ -1,0 +1,337 @@
+- name: LINQ to SQL
+  href: index.md
+  items:
+  - name: Getting Started
+    href: getting-started.md
+    items:
+    - name: What You Can Do With LINQ to SQL
+      href: what-you-can-do-with-linq-to-sql.md
+    - name: Typical Steps for Using LINQ to SQL
+      href: typical-steps-for-using-linq-to-sql.md
+    - name: Download Sample Databases and Tools
+      href: downloading-sample-databases.md
+    - name: Learning by Walkthroughs
+      href: learning-by-walkthroughs.md
+      items:
+      - name: "Walkthrough: Simple Object Model and Query (Visual Basic)"
+        href: walkthrough-simple-object-model-and-query-visual-basic.md
+      - name: "Walkthrough: Querying Across Relationships (Visual Basic)"
+        href: walkthrough-querying-across-relationships-visual-basic.md
+      - name: "Walkthrough: Manipulating Data (Visual Basic)"
+        href: walkthrough-manipulating-data-visual-basic.md
+      - name: "Walkthrough: Using Only Stored Procedures (Visual Basic)"
+        href: walkthrough-using-only-stored-procedures-visual-basic.md
+      - name: "Walkthrough: Simple Object Model and Query (C#)"
+        href: walkthrough-simple-object-model-and-query-csharp.md
+      - name: "Walkthrough: Querying Across Relationships (C#)"
+        href: walkthrough-querying-across-relationships-csharp.md
+      - name: "Walkthrough: Manipulating Data (C#)"
+        href: walkthrough-manipulating-data-csharp.md
+      - name: "Walkthrough: Using Only Stored Procedures (C#)"
+        href: walkthrough-using-only-stored-procedures-csharp.md
+  - name: Programming Guide
+    href: programming-guide.md
+    items:
+    - name: Creating the Object Model
+      href: creating-the-object-model.md
+      items:
+      - name: "How to: Generate the Object Model in Visual Basic or C#"
+        href: how-to-generate-the-object-model-in-visual-basic-or-csharp.md
+      - name: "How to: Generate the Object Model as an External File"
+        href: how-to-generate-the-object-model-as-an-external-file.md
+      - name: "How to: Generate Customized Code by Modifying a DBML File"
+        href: how-to-generate-customized-code-by-modifying-a-dbml-file.md
+      - name: "How to: Validate DBML and External Mapping Files"
+        href: how-to-validate-dbml-and-external-mapping-files.md
+      - name: "How to: Make Entities Serializable"
+        href: how-to-make-entities-serializable.md
+      - name: "How to: Customize Entity Classes by Using the Code Editor"
+        href: how-to-customize-entity-classes-by-using-the-code-editor.md
+        items:
+        - name: "How to: Specify Database Names"
+          href: how-to-specify-database-names.md
+        - name: "How to: Represent Tables as Classes"
+          href: how-to-represent-tables-as-classes.md
+        - name: "How to: Represent Columns as Class Members"
+          href: how-to-represent-columns-as-class-members.md
+        - name: "How to: Represent Primary Keys"
+          href: how-to-represent-primary-keys.md
+        - name: "How to: Map Database Relationships"
+          href: how-to-map-database-relationships.md
+        - name: "How to: Represent Columns as Database-Generated"
+          href: how-to-represent-columns-as-database-generated.md
+        - name: "How to: Represent Columns as Timestamp or Version Columns"
+          href: how-to-represent-columns-as-timestamp-or-version-columns.md
+        - name: "How to: Specify Database Data Types"
+          href: how-to-specify-database-data-types.md
+        - name: "How to: Represent Computed Columns"
+          href: how-to-represent-computed-columns.md
+        - name: "How to: Specify Private Storage Fields"
+          href: how-to-specify-private-storage-fields.md
+        - name: "How to: Represent Columns as Allowing Null Values"
+          href: how-to-represent-columns-as-allowing-null-values.md
+        - name: "How to: Map Inheritance Hierarchies"
+          href: how-to-map-inheritance-hierarchies.md
+        - name: "How to: Specify Concurrency-Conflict Checking"
+          href: how-to-specify-concurrency-conflict-checking.md
+    - name: Communicating with the Database
+      href: communicating-with-the-database.md
+      items:
+      - name: "How to: Connect to a Database"
+        href: how-to-connect-to-a-database.md
+      - name: "How to: Directly Execute SQL Commands"
+        href: how-to-directly-execute-sql-commands.md
+      - name: "How to: Reuse a Connection Between an ADO.NET Command and a DataContext"
+        href: how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md
+    - name: Querying the Database
+      href: querying-the-database.md
+      items:
+      - name: "How to: Query for Information"
+        href: how-to-query-for-information.md
+      - name: "How to: Retrieve Information As Read-Only"
+        href: how-to-retrieve-information-as-read-only.md
+      - name: "How to: Control How Much Related Data Is Retrieved"
+        href: how-to-control-how-much-related-data-is-retrieved.md
+      - name: "How to: Filter Related Data"
+        href: how-to-filter-related-data.md
+      - name: "How to: Turn Off Deferred Loading"
+        href: how-to-turn-off-deferred-loading.md
+      - name: "How to: Directly Execute SQL Queries"
+        href: how-to-directly-execute-sql-queries.md
+      - name: "How to: Store and Reuse Queries"
+        href: how-to-store-and-reuse-queries.md
+      - name: "How to: Handle Composite Keys in Queries"
+        href: how-to-handle-composite-keys-in-queries.md
+      - name: "How to: Retrieve Many Objects At Once"
+        href: how-to-retrieve-many-objects-at-once.md
+      - name: "How to: Filter at the DataContext Level"
+        href: how-to-filter-at-the-datacontext-level.md
+      - name: Query Examples
+        href: query-examples.md
+        items:
+        - name: Aggregate Queries
+          href: aggregate-queries.md
+          items:
+          - name: Return the Average Value From a Numeric Sequence
+            href: return-the-average-value-from-a-numeric-sequence.md
+          - name: Count the Number of Elements in a Sequence
+            href: count-the-number-of-elements-in-a-sequence.md
+          - name: Find the Maximum Value in a Numeric Sequence
+            href: find-the-maximum-value-in-a-numeric-sequence.md
+          - name: Find the Minimum Value in a Numeric Sequence
+            href: find-the-minimum-value-in-a-numeric-sequence.md
+          - name: Compute the Sum of Values in a Numeric Sequence
+            href: compute-the-sum-of-values-in-a-numeric-sequence.md
+        - name: Return the First Element in a Sequence
+          href: return-the-first-element-in-a-sequence.md
+        - name: Return Or Skip Elements in a Sequence
+          href: return-or-skip-elements-in-a-sequence.md
+        - name: Sort Elements in a Sequence
+          href: sort-elements-in-a-sequence.md
+        - name: Group Elements in a Sequence
+          href: group-elements-in-a-sequence.md
+        - name: Eliminate Duplicate Elements from a Sequence
+          href: eliminate-duplicate-elements-from-a-sequence.md
+        - name: Determine if Any or All Elements in a Sequence Satisfy a Condition
+          href: determine-if-any-or-all-elements-in-a-sequence-satisfy-a-condition.md
+        - name: Concatenate Two Sequences
+          href: concatenate-two-sequences.md
+        - name: Return the Set Difference Between Two Sequences
+          href: return-the-set-difference-between-two-sequences.md
+        - name: Return the Set Intersection of Two Sequences
+          href: return-the-set-intersection-of-two-sequences.md
+        - name: Return the Set Union of Two Sequences
+          href: return-the-set-union-of-two-sequences.md
+        - name: Convert a Sequence to an Array
+          href: convert-a-sequence-to-an-array.md
+        - name: Convert a Sequence to a Generic List
+          href: convert-a-sequence-to-a-generic-list.md
+        - name: Convert a Type to a Generic IEnumerable
+          href: convert-a-type-to-a-generic-ienumerable.md
+        - name: Formulate Joins and Cross-Product Queries
+          href: formulate-joins-and-cross-product-queries.md
+        - name: Formulate Projections
+          href: formulate-projections.md
+    - name: Making and Submitting Data Changes
+      href: making-and-submitting-data-changes.md
+      items:
+      - name: "How to: Insert Rows Into the Database"
+        href: how-to-insert-rows-into-the-database.md
+      - name: "How to: Update Rows in the Database"
+        href: how-to-update-rows-in-the-database.md
+      - name: "How to: Delete Rows From the Database"
+        href: how-to-delete-rows-from-the-database.md
+      - name: "How to: Submit Changes to the Database"
+        href: how-to-submit-changes-to-the-database.md
+      - name: "How to: Bracket Data Submissions by Using Transactions"
+        href: how-to-bracket-data-submissions-by-using-transactions.md
+      - name: "How to: Dynamically Create a Database"
+        href: how-to-dynamically-create-a-database.md
+      - name: "How to: Manage Change Conflicts"
+        href: how-to-manage-change-conflicts.md
+        items:
+        - name: "How to: Detect and Resolve Conflicting Submissions"
+          href: how-to-detect-and-resolve-conflicting-submissions.md
+        - name: "How to: Specify When Concurrency Exceptions are Thrown"
+          href: how-to-specify-when-concurrency-exceptions-are-thrown.md
+        - name: "How to: Specify Which Members are Tested for Concurrency Conflicts"
+          href: how-to-specify-which-members-are-tested-for-concurrency-conflicts.md
+        - name: "How to: Retrieve Entity Conflict Information"
+          href: how-to-retrieve-entity-conflict-information.md
+        - name: "How to: Retrieve Member Conflict Information"
+          href: how-to-retrieve-member-conflict-information.md
+        - name: "How to: Resolve Conflicts by Retaining Database Values"
+          href: how-to-resolve-conflicts-by-retaining-database-values.md
+        - name: "How to: Resolve Conflicts by Overwriting Database Values"
+          href: how-to-resolve-conflicts-by-overwriting-database-values.md
+        - name: "How to: Resolve Conflicts by Merging with Database Values"
+          href: how-to-resolve-conflicts-by-merging-with-database-values.md
+    - name: Debugging Support
+      href: debugging-support.md
+      items:
+      - name: "How to: Display Generated SQL"
+        href: how-to-display-generated-sql.md
+      - name: "How to: Display a ChangeSet"
+        href: how-to-display-a-changeset.md
+      - name: "How to: Display LINQ to SQL Commands"
+        href: how-to-display-linq-to-sql-commands.md
+      - name: Troubleshooting
+        href: troubleshooting.md
+    - name: Background Information
+      href: background-information.md
+      items:
+      - name: ADO.NET and LINQ to SQL
+        href: ado-net-and-linq-to-sql.md
+      - name: Analyzing LINQ to SQL Source Code
+        href: analyzing-linq-to-sql-source-code.md
+      - name: Customizing Insert, Update, and Delete Operations
+        href: customizing-insert-update-and-delete-operations.md
+        items:
+        - name: "Customizing Operations: Overview"
+          href: customizing-operations-overview.md
+        - name: Insert, Update, and Delete Operations
+          href: insert-update-and-delete-operations.md
+        - name: Responsibilities of the Developer In Overriding Default Behavior
+          href: responsibilities-of-the-developer-in-overriding-default-behavior.md
+        - name: Adding Business Logic By Using Partial Methods
+          href: adding-business-logic-by-using-partial-methods.md
+      - name: Data Binding
+        href: data-binding.md
+      - name: Inheritance Support
+        href: inheritance-support.md
+      - name: Local Method Calls
+        href: local-method-calls.md
+      - name: N-Tier and Remote Applications with LINQ to SQL
+        href: n-tier-and-remote-applications-with-linq-to-sql.md
+        items:
+        - name: LINQ to SQL N-Tier with ASP.NET
+          href: linq-to-sql-n-tier-with-aspnet.md
+        - name: LINQ to SQL N-Tier with Web Services
+          href: linq-to-sql-n-tier-with-web-services.md
+        - name: Implementing N-Tier Business Logic
+          href: implementing-business-logic-linq-to-sql.md
+        - name: Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)
+          href: data-retrieval-and-cud-operations-in-n-tier-applications.md
+      - name: Object Identity
+        href: object-identity.md
+      - name: The LINQ to SQL Object Model
+        href: the-linq-to-sql-object-model.md
+      - name: Object States and Change-Tracking
+        href: object-states-and-change-tracking.md
+      - name: "Optimistic Concurrency: Overview"
+        href: optimistic-concurrency-overview.md
+      - name: Query Concepts
+        href: query-concepts.md
+        items:
+        - name: LINQ to SQL Queries
+          href: linq-to-sql-queries.md
+        - name: Querying Across Relationships
+          href: querying-across-relationships.md
+        - name: Remote vs. Local Execution
+          href: remote-vs-local-execution.md
+        - name: Deferred versus Immediate Loading
+          href: deferred-versus-immediate-loading.md
+      - name: Retrieving Objects from the Identity Cache
+        href: retrieving-objects-from-the-identity-cache.md
+      - name: Security in LINQ to SQL
+        href: security-in-linq-to-sql.md
+      - name: Serialization
+        href: serialization.md
+      - name: Stored Procedures
+        href: stored-procedures.md
+        items:
+        - name: "How to: Return Rowsets"
+          href: how-to-return-rowsets.md
+        - name: "How to: Use Stored Procedures that Take Parameters"
+          href: how-to-use-stored-procedures-that-take-parameters.md
+        - name: "How to: Use Stored Procedures Mapped for Multiple Result Shapes"
+          href: how-to-use-stored-procedures-mapped-for-multiple-result-shapes.md
+        - name: "How to: Use Stored Procedures Mapped for Sequential Result Shapes"
+          href: how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md
+        - name: Customizing Operations By Using Stored Procedures
+          href: customizing-operations-by-using-stored-procedures.md
+        - name: Customizing Operations by Using Stored Procedures Exclusively
+          href: customizing-operations-by-using-stored-procedures-exclusively.md
+      - name: Transaction Support
+        href: transaction-support.md
+      - name: SQL-CLR Type Mismatches
+        href: sql-clr-type-mismatches.md
+      - name: SQL-CLR Custom Type Mappings
+        href: sql-clr-custom-type-mappings.md
+      - name: User-Defined Functions
+        href: user-defined-functions.md
+        items:
+        - name: "How to: Use Scalar-Valued User-Defined Functions"
+          href: how-to-use-scalar-valued-user-defined-functions.md
+        - name: "How to: Use Table-Valued User-Defined Functions"
+          href: how-to-use-table-valued-user-defined-functions.md
+        - name: "How to: Call User-Defined Functions Inline"
+          href: how-to-call-user-defined-functions-inline.md
+  - name: Reference
+    href: reference.md
+    items:
+    - name: Data Types and Functions
+      href: data-types-and-functions.md
+      items:
+      - name: SQL-CLR Type Mapping
+        href: sql-clr-type-mapping.md
+      - name: Basic Data Types
+        href: basic-data-types.md
+      - name: Boolean Data Types
+        href: boolean-data-types.md
+      - name: Null Semantics
+        href: null-semantics.md
+      - name: Numeric and Comparison Operators
+        href: numeric-and-comparison-operators.md
+      - name: Sequence Operators
+        href: sequence-operators.md
+      - name: System.Convert Methods
+        href: system-convert-methods.md
+      - name: System.DateTime Methods
+        href: system-datetime-methods.md
+      - name: System.Math Methods
+        href: system-math-methods.md
+      - name: System.Object Methods
+        href: system-object-methods.md
+      - name: System.String Methods
+        href: system-string-methods.md
+      - name: System.TimeSpan Methods
+        href: system-timespan-methods.md
+      - name: Unsupported Functionality
+        href: unsupported-functionality.md
+      - name: System.DateTimeOffset Methods
+        href: system-datetimeoffset-methods.md
+    - name: Attribute-Based Mapping
+      href: attribute-based-mapping.md
+    - name: Code Generation in LINQ to SQL
+      href: code-generation-in-linq-to-sql.md
+    - name: External Mapping
+      href: external-mapping.md
+    - name: Frequently Asked Questions
+      href: frequently-asked-questions.md
+    - name: SQL Server Compact and LINQ to SQL
+      href: sql-server-compact-and-linq-to-sql.md
+    - name: Standard Query Operator Translation
+      href: standard-query-operator-translation.md
+  - name: Samples
+    href: samples.md

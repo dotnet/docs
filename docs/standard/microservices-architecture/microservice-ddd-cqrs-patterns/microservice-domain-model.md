@@ -52,13 +52,13 @@ Some people say that the anemic domain model is an anti-pattern. It really depen
 #### Additional resources
 
 - **DevIQ. Domain Entity** \
-  [*https://deviq.com/entity/*](https://deviq.com/entity/)
+  [https://deviq.com/entity/](https://deviq.com/entity/)
 
 - **Martin Fowler. The Domain Model** \
-  [*https://martinfowler.com/eaaCatalog/domainModel.html*](https://martinfowler.com/eaaCatalog/domainModel.html)
+  [https://martinfowler.com/eaaCatalog/domainModel.html](https://martinfowler.com/eaaCatalog/domainModel.html)
 
 - **Martin Fowler. The Anemic Domain Model** \
-  [*https://martinfowler.com/bliki/AnemicDomainModel.html*](https://martinfowler.com/bliki/AnemicDomainModel.html)
+  [https://martinfowler.com/bliki/AnemicDomainModel.html](https://martinfowler.com/bliki/AnemicDomainModel.html)
 
 ### The Value Object pattern
 
@@ -77,16 +77,16 @@ EF Core 2.0 includes the [Owned Entities](https://devblogs.microsoft.com/dotnet/
 #### Additional resources
 
 - **Martin Fowler. Value Object pattern** \
-  [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
+  [https://martinfowler.com/bliki/ValueObject.html](https://martinfowler.com/bliki/ValueObject.html)
 
 - **Value Object** \
-  [*https://deviq.com/value-object/*](https://deviq.com/value-object/)
+  [https://deviq.com/value-object/](https://deviq.com/value-object/)
 
 - **Value Objects in Test-Driven Development** \
-  [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
+  [https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
 
 - **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) \
-  [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+  [https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### The Aggregate pattern
 
@@ -139,13 +139,13 @@ Identifying and working with aggregates requires research and experience. For mo
   <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf>
 
 - **Sergey Grybniak. DDD Tactical Design Patterns** \
-  [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
+  [https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
 
 - **Chris Richardson. Developing Transactional Microservices Using Aggregates** \
-  [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
+  [https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
 
 - **DevIQ. The Aggregate pattern** \
-  [*https://deviq.com/aggregate-pattern/*](https://deviq.com/aggregate-pattern/)
+  [https://deviq.com/aggregate-pattern/](https://deviq.com/aggregate-pattern/)
 
 >[!div class="step-by-step"]
 >[Previous](ddd-oriented-microservice.md)

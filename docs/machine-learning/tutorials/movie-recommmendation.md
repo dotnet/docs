@@ -300,9 +300,11 @@ RSquared: 0.412556298844873
 
 In this output, there are 20 iterations. In each iteration, the measure of error decreases and converges closer and closer to 0.
 
-The `root of mean squared error` (RMS or RMSE) is frequently used to measure the differences between values predicted by a model and the values observed in a test dataset. Technically it's the square root of the average of the squares of the errors. You want your RMSE score to be as close to 1 as possible.
+The `root of mean squared error` (RMS or RMSE) is frequently used to measure the differences between values predicted by a model and the values observed in a test dataset. Technically it's the square root of the average of the squares of the errors. The lower it is, the better the model is.
 
-`R Squared` is the variation percentage in the predicted values explained by your model. It's a value between 0 and 1, and the closer the value is to 0, the better the model is.
+`R Squared` indicates how well data fits a model. Ranges from 0 to 1. A value of 0 means that the data is random or otherwise can't be fit to the model. A value of 1 means that the model exactly matches the data. You want your `R Squared` score to be as close to 1 as possible.
+
+Building successful models is an iterative process. This model has initial lower quality as the tutorial uses small datasets to provide quick model training. If you aren't satisfied with the model quality, you can try to improve it by providing larger training datasets or by choosing different training algorithms with different hyper-parameters for each algorithm. For more information, check out the [Improve your model](#improve-your-model) section below.
 
 ## Use your model
 

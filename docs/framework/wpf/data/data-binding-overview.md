@@ -27,7 +27,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  For an example of data binding, take a look at the following application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703):  
   
- ![Data binding sample screen shot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
+ ![Data binding sample screenshot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
   
  The above is the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] of an application that displays a list of auction items. The application demonstrates the following features of data binding:  
   

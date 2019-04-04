@@ -60,7 +60,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+    <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -70,7 +70,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -109,7 +109,7 @@
         <param name="value">The value for the new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure; either <see langword="true" /> or <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure using the supplied Boolean value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,7 +148,7 @@
         <param name="value">The integer whose value is to be used for the new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure using the specified integer value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="And">
@@ -193,7 +193,7 @@
         <summary>Computes the bitwise AND operation of two specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
         <returns>The result of the logical AND operation.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ByteValue">
@@ -239,7 +239,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -257,7 +257,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompareTo">
@@ -328,7 +328,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -403,7 +403,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -413,7 +413,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether they are equal.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -457,7 +457,7 @@
         <returns>
           <see langword="true" /> if object is an instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> and the two are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -503,7 +503,7 @@
         <returns>
           <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="False">
@@ -552,7 +552,7 @@
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsFalse" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsTrue" />
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.Null" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -592,7 +592,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -633,7 +633,7 @@
         <summary>Returns the XML Schema definition language (XSD) of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <returns>A <see langword="string" /> value that indicates the XSD of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -685,7 +685,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEquals">
@@ -737,7 +737,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsFalse">
@@ -787,7 +787,7 @@
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsTrue" />
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.True" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsNull" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -839,7 +839,7 @@
         </remarks>
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsTrue" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsFalse" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrue">
@@ -889,7 +889,7 @@
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsFalse" />
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.False" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsNull" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -941,7 +941,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEquals">
@@ -993,7 +993,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -1039,7 +1039,7 @@
         <returns>
           <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1087,7 +1087,7 @@
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsNull" />
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.True" />
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.False" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -1132,7 +1132,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="OnesComplement">
@@ -1175,7 +1175,7 @@
         <summary>Performs a one's complement operation on the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
         <returns>The one's complement of the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
@@ -1222,7 +1222,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.And(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
@@ -1269,7 +1269,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Or%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1317,7 +1317,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
@@ -1364,7 +1364,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Xor%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Explicit">
@@ -1374,7 +1374,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to a specified structure.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Explicit">
@@ -1417,7 +1417,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to a Boolean.</summary>
         <returns>A Boolean set to the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1462,7 +1462,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1507,7 +1507,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1552,7 +1552,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1597,7 +1597,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1642,7 +1642,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlBoolean?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1687,7 +1687,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1732,7 +1732,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1777,7 +1777,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1822,7 +1822,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.ToSqlBoolean?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_False">
@@ -1868,7 +1868,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.False?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1920,7 +1920,7 @@
   
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.GreaterThan%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1972,7 +1972,7 @@
   
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.GreaterThanOrEquals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2015,7 +2015,7 @@
         <summary>Converts the supplied byte value to a <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> value that contains 0 or 1.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2063,7 +2063,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -2115,7 +2115,7 @@
   
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.LessThan%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -2167,7 +2167,7 @@
   
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.LessThanOrEquals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LogicalNot">
@@ -2210,7 +2210,7 @@
         <summary>Performs a NOT operation on a <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> with the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if argument was true, <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" /> if argument was null, and <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> otherwise.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
@@ -2255,7 +2255,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.OnesComplement%28System.Data.SqlTypes.SqlBoolean%29?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_True">
@@ -2301,7 +2301,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.True?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Or">
@@ -2346,7 +2346,7 @@
         <summary>Performs a bitwise OR operation on the two specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure whose Value is the result of the bitwise OR operation.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -2389,7 +2389,7 @@
         <summary>Converts the specified <see cref="T:System.String" /> representation of a logical value to its <see cref="T:System.Data.SqlTypes.SqlBoolean" /> equivalent.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure that contains the parsed value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -2554,7 +2554,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDecimal">
@@ -2594,7 +2594,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDouble">
@@ -2634,7 +2634,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then the new <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt16">
@@ -2674,7 +2674,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt16" />.</summary>
         <returns>A new <see langword="SqlInt16" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then the new <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure's value is 1. Otherwise, the new <see langword="SqlInt16" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt32">
@@ -2714,7 +2714,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt32" />.</summary>
         <returns>A new <see langword="SqlInt32" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlInt32" /> structure's value is 1. Otherwise, the new <see langword="SqlInt32" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt64">
@@ -2754,7 +2754,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
         <returns>A new <see langword="SqlInt64" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure's value is 1. Otherwise, the new <see langword="SqlInt64" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlMoney">
@@ -2794,7 +2794,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlMoney" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlMoney" /> value is 1. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="false" />, the new <see cref="T:System.Data.SqlTypes.SqlMoney" /> value is 0. If <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value is neither 1 nor 0, the new <see cref="T:System.Data.SqlTypes.SqlMoney" /> value is <see cref="F:System.Data.SqlTypes.SqlMoney.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlSingle">
@@ -2836,7 +2836,7 @@
   
  If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals true, the new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure's value is 1; otherwise the new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlString">
@@ -2876,7 +2876,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then <see cref="T:System.Data.SqlTypes.SqlString" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2916,7 +2916,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to a string.</summary>
         <returns>A string that contains the value of the <see cref="T:System.Data.SqlTypes.SqlBoolean" />. If the value is null, the string will contain "null".</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -2965,7 +2965,7 @@
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsTrue" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsFalse" />
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.Null" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3010,7 +3010,7 @@
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsTrue" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsFalse" />
         <altmember cref="P:System.Data.SqlTypes.SqlBoolean.IsNull" />
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -3055,7 +3055,7 @@
         <summary>Performs a bitwise exclusive-OR operation on the supplied parameters.</summary>
         <returns>The result of the logical XOR operation.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -3100,7 +3100,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
   </Members>

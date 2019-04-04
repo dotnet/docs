@@ -51,7 +51,7 @@
   <Docs>
     <summary>Represents the date and time data ranging in value from January 1, 1753 to December 31, 9999 to an accuracy of 3.33 milliseconds to be stored in or retrieved from a database. The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure has a different underlying data structure from its corresponding .NET Framework type, <see cref="T:System.DateTime" />, which can represent any time between 12:00:00 AM 1/1/0001 and 11:59:59 PM 12/31/9999, to the accuracy of 100 nanoseconds. <see cref="T:System.Data.SqlTypes.SqlDateTime" /> actually stores the relative difference to 00:00:00 AM 1/1/1900. Therefore, a conversion from "00:00:00 AM 1/1/1900" to an integer will return 0.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+    <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -61,7 +61,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -100,7 +100,7 @@
         <param name="value">A <see langword="DateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the specified <see cref="T:System.DateTime" /> value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,7 +141,7 @@
         <param name="timeTicks">An integer value that represents the time as ticks.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -184,7 +184,7 @@
         <param name="day">An integer value representing the day number of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -233,7 +233,7 @@
         <param name="second">An integer value representing the second of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, and second of the new structure.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -284,7 +284,7 @@
         <param name="millisecond">An double value representing the millisecond of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and millisecond of the new structure.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -335,7 +335,7 @@
         <param name="bilisecond">An integer value representing the microsecond (thousandths of a millisecond) of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and microsecond of the new structure.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -379,7 +379,7 @@
         <summary>Adds a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to the specified <see langword="TimeSpan" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -389,7 +389,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to the supplied parameter and returns an indication of their relative values.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompareTo">
@@ -453,7 +453,7 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -521,7 +521,7 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="DayTicks">
@@ -570,7 +570,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structures to determine whether they are equal.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -614,7 +614,7 @@
         <returns>
           <see langword="true" /> if the object is an instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> and the two are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -660,7 +660,7 @@
         <returns>
           <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -700,7 +700,7 @@
         <summary>Gets the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -785,7 +785,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEqual">
@@ -830,7 +830,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -880,7 +880,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -925,7 +925,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqual">
@@ -970,7 +970,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -1015,7 +1015,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -1060,7 +1060,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -1105,7 +1105,7 @@
         <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1150,7 +1150,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1195,7 +1195,7 @@
         <summary>Adds the period of time indicated by the supplied <see cref="T:System.TimeSpan" /> parameter, <paramref name="t" />, to the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDateTime" />. If either argument is <see cref="F:System.Data.SqlTypes.SqlDateTime.Null" />, the new <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is <see cref="F:System.Data.SqlTypes.SqlDateTime.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1243,7 +1243,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.Equals%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Explicit">
@@ -1253,7 +1253,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a parameter to and from a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Explicit">
@@ -1298,7 +1298,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.Value?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1341,7 +1341,7 @@
         <summary>Converts the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter to a <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is equal to the date and time represented by the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter. If the <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see langword="Value" /> of the newly created <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure will be null.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1388,7 +1388,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.GreaterThan%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1435,7 +1435,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1478,7 +1478,7 @@
         <summary>Converts a <see cref="T:System.DateTime" /> structure to a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is equal to the combined <see cref="P:System.DateTime.Date" /> and <see cref="P:System.DateTime.TimeOfDay" /> properties of the supplied <see cref="T:System.DateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1523,7 +1523,7 @@
         <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -1570,7 +1570,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.LessThan%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -1617,7 +1617,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.LessThanOrEqual%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -1662,7 +1662,7 @@
         <summary>Subtracts the supplied <see cref="T:System.TimeSpan" /> structure, <paramref name="t" />, from the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure representing the results of the subtraction.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1705,7 +1705,7 @@
         <summary>Converts the specified <see cref="T:System.String" /> representation of a date and time to its <see cref="T:System.Data.SqlTypes.SqlDateTime" /> equivalent.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure equal to the date and time represented by the specified <see langword="string" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="SQLTicksPerHour">
@@ -1860,7 +1860,7 @@
         <summary>Subtracts the specified <see langword="Timespan" /> from this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> instance.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -2063,7 +2063,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A <see langword="SqlString" /> structure whose value is a string representing the date and time that is contained in this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2103,7 +2103,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to a <see cref="T:System.String" />.</summary>
         <returns>A <see langword="String" /> representing the <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> property of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -2143,7 +2143,7 @@
         <value>The value of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The exception that is thrown when the <see langword="Value" /> property of a <see cref="N:System.Data.SqlTypes" /> structure is set to null.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
   </Members>

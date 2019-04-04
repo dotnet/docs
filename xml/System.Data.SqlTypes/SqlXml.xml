@@ -55,7 +55,7 @@
  ]]></format>
     </remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+    <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -66,7 +66,7 @@
       <Docs>
         <summary>Creates a new <see cref="T:System.Data.SqlTypes.SqlXml" /> instance.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -101,7 +101,7 @@
         <summary>Creates a new <see cref="T:System.Data.SqlTypes.SqlXml" /> instance.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,7 +140,7 @@
         <summary>Creates a new <see cref="T:System.Data.SqlTypes.SqlXml" /> instance, supplying the XML value from the supplied <see cref="T:System.IO.Stream" />-derived instance.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -186,7 +186,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CreateReader">
@@ -234,7 +234,7 @@
         </remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">Attempt was made to access this property on a null instance of <see cref="T:System.Data.SqlTypes.SqlXml" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -276,7 +276,7 @@
         <returns>A string that indicates the XSD of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -320,7 +320,7 @@
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f18b288f-b265-4bbe-957f-c6833c0645ef">Handling Null Values</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -359,7 +359,7 @@
         <value>A null instance of the <see cref="T:System.Data.SqlTypes.SqlXml" /> type.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -547,7 +547,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d">Working with SQLXML</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
   </Members>

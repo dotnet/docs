@@ -41,21 +41,22 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.JapaneseLunisolarCalendar> class is derived from the <xref:System.Globalization.EastAsianLunisolarCalendar> class, which represents the lunisolar calendar. The <xref:System.Globalization.EastAsianLunisolarCalendar> class supports the sexagenary year cycle (which repeats every 60 years) in addition to solar years and lunar months. Each solar year in the calendar is associated with a Sexagenary Year, a Celestial Stem, and a Terrestrial Branch, and these calendars can have leap months after any month of the year.  
+ The <xref:System.Globalization.JapaneseLunisolarCalendar> class is derived from the <xref:System.Globalization.EastAsianLunisolarCalendar> class, which represents the lunisolar calendar. The <xref:System.Globalization.EastAsianLunisolarCalendar> class supports the sexagenary year cycle (which repeats every 60 years) in addition to solar years and lunar months. Each solar year in the calendar is associated with a Sexagenary Year, a Celestial Stem, and a Terrestrial Branch, and these calendars can have leap months after any month of the year. The <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.   
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.JapaneseLunisolarCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
+>  For information about using the <xref:System.Globalization.JapaneseLunisolarCalendar> class and the other calendar classes in the .NET Class Library, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
- For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
-
-The `JapaneseLuniSolarCalendar` class recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
+The `JapaneseLuniSolarCalendar` class recognizes one era for every emperor's reign. For example, the two most recent eras are the Heisei era, beginning in the Gregorian calendar year 1989, and the Reiwa era, beginning in the Gregorian calendar year 2019. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
+Unlike the <xref:System.Globalization.JapaneseCalendar> class, the `JapaneseLunisolarCalendar` class does not support dates in the range of the Meiji and Taisho eras.
 
  This class assigns numbers to the eras as follows:  
   
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
 |------------------|--------------|----------------------|---------------------|  
+|5|令和 (Reiwa)|令和 (R, r)|May 1, 2019 to present|
 |4|平成 (Heisei)|平 (H, h)|January 8, 1989 to present|  
 |3|昭和 (Showa)|昭 (S, s)|December 25, 1926 to January 7, 1989|  
 |2|大正 (Taisho)|大 (T, t)|July 30, 1912 to December 24, 1926|  
@@ -190,6 +191,8 @@ The `JapaneseLuniSolarCalendar` class recognizes one era for every emperor's rei
  The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element, and the smallest era number is returned in the last element.  
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
+While the <xref:System.Globalization.JapaneseLunisolarCalendar> defines the Meiji and Taisho eras (eras 1 and 2, respectively), the calendar does not support dates in their ranges. For example, a call to <xref:System.Globalization.JapaneseLunisolarCalendar.GetEra%2A> or <xref:System.Globalization.EastAsianLunisolarCalendar.ToDateTime%2A> with a date in those era ranges throws an <xref:System.ArgumentOutOfRangeException>.
 
  The <xref:System.Globalization.JapaneseLunisolarCalendar.Eras%2A?displayProperty=nameWithType> property returns the same values as the <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType> property.  
   

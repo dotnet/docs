@@ -52,7 +52,7 @@
  A calendar divides time into units, such as weeks, months, and years. The number, length, and start of the divisions vary in each calendar.  
   
 > [!NOTE]
->  For information about using the calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
+>  For information about using the calendar classes in .NET, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  Any moment in time can be represented as a set of numeric values using a particular calendar. For example, a vernal equinox occurred at (1999, 3, 20, 8, 46, 0, 0.0) in the Gregorian calendar, that is, March 20, 1999 C.E. at 8:46:00:0.0. An implementation of <xref:System.Globalization.Calendar> can map any date in the range of a specific calendar to a similar set of numeric values, and <xref:System.DateTime> can map such sets of numeric values to a textual representation using information from <xref:System.Globalization.Calendar> and <xref:System.Globalization.DateTimeFormatInfo>. The textual representation can be culture-sensitive, for example, "8:46 AM March 20th 1999 AD" for the en-US culture, or culture-insensitive, for example, "1999-03-20T08:46:00" in ISO 8601 format.  
   
@@ -705,7 +705,7 @@
   
  The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
   
- In all .NET Framework classes derived from the <xref:System.Globalization.Calendar> class, a week is defined as seven days.  
+ In all .NET classes derived from the <xref:System.Globalization.Calendar> class, a week is defined as seven days.  
   
  The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
@@ -861,7 +861,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
+ The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in .NET and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
   
  [!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
  [!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
@@ -1059,8 +1059,10 @@
   
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
 
+The <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes support multiple eras. Most calendar implementations, on the other hand, support a single era.
+ 
 ## Examples  
- The following code example displays the values contained in <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType>.  
+ The following example displays the values contained in <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType> when the Heisei era (1989-2019) was the current era.   
   
  [!code-cpp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CPP/yslin_japanesecalendar_eras.cpp#1)]
  [!code-csharp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CS/yslin_japanesecalendar_eras.cs#1)]
@@ -1607,8 +1609,8 @@
       </Parameters>
       <Docs>
         <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
-        <summary>When overridden in a derived class, returns the era in the specified <see cref="T:System.DateTime" />.</summary>
-        <returns>An integer that represents the era in <paramref name="time" />.</returns>
+        <summary>When overridden in a derived class, returns the era of the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer that represents the era of <paramref name="time" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 ## Remarks

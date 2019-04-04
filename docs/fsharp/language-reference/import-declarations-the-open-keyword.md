@@ -62,6 +62,6 @@ Some modules, records, or union types may specify the `RequireQualifiedAccess` a
 
 ## See also
 
-- [# Language Reference](index.md)
+- [F# Language Reference](index.md)
 - [Namespaces](namespaces.md)
 - [Modules](modules.md)

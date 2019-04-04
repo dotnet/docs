@@ -1,7 +1,7 @@
 ---
 title: "Get started with the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "04/10/2018"
+ms.date: "04/10/2019"
 helpviewer_keywords: 
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"
@@ -49,7 +49,7 @@ In general, you shouldn't uninstall versions of the .NET Framework that are inst
 
 - If an app that you use depends on a specific version of the .NET Framework, that app may break if that version is removed.
 
-- Some versions of the .NET Framework are in-place updates to earlier versions. For example, the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] is an in-place update to version 2.0, and the .NET Framework 4.7.2 is an in-place update to versions 4 through 4.7.1. For more information, see [.NET Framework Versions and Dependencies](../migration-guide/versions-and-dependencies.md).
+- Some versions of the .NET Framework are in-place updates to earlier versions. For example, .NET Framework 3.5 is an in-place update to version 2.0, and .NET Framework 4.8 is an in-place update to versions 4 through 4.7.2. For more information, see [.NET Framework Versions and Dependencies](../migration-guide/versions-and-dependencies.md).
 
 On Windows versions before Windows 8, if you do choose to remove the .NET Framework, always use **Programs and Features** from Control Panel to uninstall it. Never remove a version of the .NET Framework manually. On Windows 8 and above, the .NET Framework is an operating system component and cannot be independently uninstalled.
 
@@ -66,7 +66,7 @@ To develop .NET Framework apps or components, do the following:
 
 2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md), and [C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).)
 
-3. Select and install the development environment to use to create your apps and that supports your selected programming language or languages. The Microsoft integrated development environment (IDE) for .NET Framework apps is [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). It's available in a number of editions.
+3. Select and install the development environment to use to create your apps and that supports your selected programming language or languages. The Microsoft integrated development environment (IDE) for .NET Framework apps is [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019). It's available in a number of editions.
 
 For more information on developing apps that target the .NET Framework, see the [Development Guide](../development-guide.md).
 

@@ -87,7 +87,7 @@ The multiplication operator `*` computes the product of its operands:
 
 [!code-csharp-interactive[multiplication operator](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#Multiplication)]
 
-The unary `*` operator is a [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
+The unary `*` operator is the [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
 
 ## Division operator /
 
@@ -233,7 +233,7 @@ For more information, see remarks at [System.Double](/dotnet/api/system.double#r
 
 ## Operator overloadability
 
-User-defined types can [overload](../keywords/operator.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
+A user-defined type can [overload](../keywords/operator.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
 ## C# language specification
 

@@ -69,6 +69,7 @@ Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```  
   
 ## See also
+
 - <xref:System.DateTime?displayProperty=nameWithType>
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)
 - [Standard Date and Time Format Strings](../../../standard/base-types/standard-date-and-time-format-strings.md)

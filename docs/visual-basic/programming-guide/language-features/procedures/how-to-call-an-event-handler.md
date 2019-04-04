@@ -47,6 +47,7 @@ An *event* is an action or occurrence — such as a mouse click or a credit limi
      You can dissociate an event handler from an event by executing the [RemoveHandler Statement](../../../../visual-basic/language-reference/statements/removehandler-statement.md).  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Sub Procedures](./sub-procedures.md)
 - [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)

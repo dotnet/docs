@@ -24,9 +24,9 @@ open System.Diagnostics
 open System.Runtime.CompilerServices
 
 type Tracer() =
-    member __.DoTrace(msg: string,
+    member __.DoTrace(message: string,
                       [<CallerMemberName>] ?memberName: string,
-                      [<CallerFilePath>] ?path: string
+                      [<CallerFilePath>] ?path: string,
                       [<CallerLineNumber>] ?line: int) =
         Trace.WriteLine(sprintf "Message: %s" message)
         match (memberName, path, line) with

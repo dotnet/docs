@@ -41,6 +41,7 @@ variableorproperty *= expression
  [!code-vb[VbVbalrOperators#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#5)]  
   
 ## See also
+
 - [* Operator](../../../visual-basic/language-reference/operators/multiplication-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

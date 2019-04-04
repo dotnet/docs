@@ -2,6 +2,7 @@
 title: Port a Windows Forms app to .NET Core 3.0
 description: Teaches you how to port a .NET Framework Windows Forms application to .NET Core 3.0 for Windows.
 author: Thraka
+ms.author: adegeo
 ms.date: 03/01/2019
 ms.custom: 
 ---
@@ -218,7 +219,7 @@ Consider the differences between the `MyControlsCore.csproj` project and the pre
      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 -    <AssemblyName>MyCoreApp</AssemblyName>
 -    <RootNamespace>WindowsFormsApp1</RootNamespace>
-+    <AssemblyName>MyCoreControls</AssemblyName>
++    <AssemblyName>MyControlsCore</AssemblyName>
 +    <RootNamespace>WindowsFormsControlLibrary1</RootNamespace>
    </PropertyGroup>
 
@@ -260,14 +261,14 @@ As you can see, the `<OutputType>` node was removed, which defaults the compiler
 Next, in the main .NET Core **MyFormsCore.csproj** project add reference to the new .NET Core Windows Forms Control library. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
 
 ```cli
-dotnet add .\MyFormsAppCore\MyFormsCore.csproj reference .\MyFormsControlsCore\MyControlsCoreProject.csproj
+dotnet add .\MyFormsAppCore\MyFormsCore.csproj reference .\MyFormsControlsCore\MyControlsCore.csproj
 ```
 
 The previous command adds the following to the **MyFormsCore.csproj** project:
 
 ```xml
   <ItemGroup>
-    <ProjectReference Include="..\MyFormsControlsCore\MyControlsCoreProject.csproj" />
+    <ProjectReference Include="..\MyFormsControlsCore\MyControlsCore.csproj" />
   </ItemGroup>
 ```
 

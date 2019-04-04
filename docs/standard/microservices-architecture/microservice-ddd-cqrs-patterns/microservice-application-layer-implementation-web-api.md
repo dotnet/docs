@@ -107,10 +107,10 @@ When using DI in .NET Core, you might want to be able to scan an assembly and au
 #### Additional resources
 
 - **Matthew King. Registering services with Scrutor** \
-  [*https://www.mking.net/blog/registering-services-with-scrutor*](https://www.mking.net/blog/registering-services-with-scrutor)
+  [https://www.mking.net/blog/registering-services-with-scrutor](https://www.mking.net/blog/registering-services-with-scrutor)
 
 - **Kristian Hellang. Scrutor.** GitHub repo. \
-  [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
+  [https://github.com/khellang/Scrutor](https://github.com/khellang/Scrutor)
 
 #### Use Autofac as an IoC container
 
@@ -162,13 +162,13 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 - **Introduction to Dependency Injection in ASP.NET Core** \
-  [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
+  [https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
 - **Autofac.** Official documentation. \
-  [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)
+  [http://docs.autofac.org/en/latest/](http://docs.autofac.org/en/latest/)
 
 - **Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes - Cesar de la Torre.** \
-  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
+  [https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
 ## Implement the Command and Command Handler patterns
 
@@ -392,19 +392,19 @@ These are additional steps a command handler should take:
 #### Additional resources
 
 - **Mark Seemann. At the Boundaries, Applications are Not Object-Oriented** \
-  [*https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
+  [https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/](https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
 
 - **Commands and events** \
-  [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
+  [http://cqrs.nu/Faq/commands-and-events](http://cqrs.nu/Faq/commands-and-events)
 
 - **What does a command handler do?** \
-  [*http://cqrs.nu/Faq/command-handlers*](http://cqrs.nu/Faq/command-handlers)
+  [http://cqrs.nu/Faq/command-handlers](http://cqrs.nu/Faq/command-handlers)
 
 - **Jimmy Bogard. Domain Command Patterns – Handlers** \
-  [*https://jimmybogard.com/domain-command-patterns-handlers/*](https://jimmybogard.com/domain-command-patterns-handlers/)
+  [https://jimmybogard.com/domain-command-patterns-handlers/](https://jimmybogard.com/domain-command-patterns-handlers/)
 
 - **Jimmy Bogard. Domain Command Patterns – Validation** \
-  [*https://jimmybogard.com/domain-command-patterns-validation/*](https://jimmybogard.com/domain-command-patterns-validation/)
+  [https://jimmybogard.com/domain-command-patterns-validation/](https://jimmybogard.com/domain-command-patterns-validation/)
 
 ## The Command process pipeline: how to trigger a command handler
 
@@ -792,43 +792,43 @@ In a similar way, you could implement other behaviors for additional aspects or 
 ##### The mediator pattern
 
 - **Mediator pattern** \
-  [*https://en.wikipedia.org/wiki/Mediator\_pattern*](https://en.wikipedia.org/wiki/Mediator_pattern)
+  [https://en.wikipedia.org/wiki/Mediator\_pattern](https://en.wikipedia.org/wiki/Mediator_pattern)
 
 ##### The decorator pattern
 
 - **Decorator pattern** \
-  [*https://en.wikipedia.org/wiki/Decorator\_pattern*](https://en.wikipedia.org/wiki/Decorator_pattern)
+  [https://en.wikipedia.org/wiki/Decorator\_pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 ##### MediatR (Jimmy Bogard)
 
 - **MediatR.** GitHub repo. \
-  [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
+  [https://github.com/jbogard/MediatR](https://github.com/jbogard/MediatR)
 
 - **CQRS with MediatR and AutoMapper** \
-  [*https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/*](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
+  [https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
 
 - **Put your controllers on a diet: POSTs and commands.** \
-  [*https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/*](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
+  [https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
 
 - **Tackling cross-cutting concerns with a mediator pipeline** \
-  [*https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/*](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
+  [https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
 
 - **CQRS and REST: the perfect match** \
-  [*https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/*](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
+  [https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
 
 - **MediatR Pipeline Examples** \
-  [*https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/*](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
+  [https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
 
 - **Vertical Slice Test Fixtures for MediatR and ASP.NET Core** \
-  [*https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/*](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
+  [https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
 
 - **MediatR Extensions for Microsoft Dependency Injection Released** \
-  [*https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/*](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
+  [https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
 
 ##### Fluent validation
 
 - **Jeremy Skinner. FluentValidation.** GitHub repo. \
-  [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
+  [https://github.com/JeremySkinner/FluentValidation](https://github.com/JeremySkinner/FluentValidation)
 
 > [!div class="step-by-step"]
 > [Previous](microservice-application-layer-web-api-design.md)

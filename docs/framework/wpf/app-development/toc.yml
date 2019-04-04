@@ -1,0 +1,140 @@
+- name: Application Development
+  href: index.md
+  items:
+  - name: Application Management Overview
+    href: application-management-overview.md
+    items:
+    - name: WPF Application Resource, Content, and Data Files
+      href: wpf-application-resource-content-and-data-files.md
+    - name: Pack URIs in WPF
+      href: pack-uris-in-wpf.md
+    - name: Add a Splash Screen to a WPF Application
+      href: how-to-add-a-splash-screen-to-a-wpf-application.md
+    - name: Use an Application-Scope Resource Dictionary
+      href: how-to-use-an-application-scope-resource-dictionary.md
+    - name: Persist and Restore Application-Scope Properties Across Application Sessions
+      href: persist-and-restore-application-scope-properties.md
+  - name: Windows in WPF
+    href: windows-in-wpf-applications.md
+    items:
+    - name: WPF Windows Overview
+      href: wpf-windows-overview.md
+    - name: Dialog Boxes Overview
+      href: dialog-boxes-overview.md
+    - name: How-to Topics
+      href: window-management-how-to-topics.md
+      items:
+      - name: Automatically Size a Window to Fit Its Content
+        href: how-to-automatically-size-a-window-to-fit-its-content.md
+      - name: Get all Windows in an Application
+        href: how-to-get-all-windows-in-an-application.md
+      - name: Get and Set the Main Application Window
+        href: how-to-get-and-set-the-main-application-window.md
+      - name: Open a Dialog Box
+        href: how-to-open-a-dialog-box.md
+      - name: Open a Message Box
+        href: how-to-open-a-message-box.md
+      - name: Open a Window
+        href: how-to-open-a-window.md
+      - name: Return a Dialog Box Result
+        href: how-to-return-a-dialog-box-result.md
+  - name: Navigation Overview
+    href: navigation-overview.md
+    items:
+    - name: Structured Navigation Overview
+      href: structured-navigation-overview.md
+    - name: Navigation Topologies Overview
+      href: navigation-topologies-overview.md
+    - name: How-to Topics
+      href: navigation-how-to-topics.md
+      items:
+      - name: Call a Page Function
+        href: how-to-call-a-page-function.md
+      - name: Navigate to a Page
+        href: how-to-navigate-to-a-page.md
+      - name: Refresh a Page
+        href: how-to-refresh-a-page.md
+      - name: Stop a Page from Loading
+        href: how-to-stop-a-page-from-loading.md
+      - name: Navigate Back Through Navigation History
+        href: how-to-navigate-back-through-navigation-history.md
+      - name: Return from a Page Function
+        href: how-to-return-from-a-page-function.md
+      - name: Get the Return Value of a Page Function
+        href: how-to-get-the-return-value-of-a-page-function.md
+      - name: Navigate Forward or Back Through Navigation History
+        href: how-to-navigate-forward-or-back-through-navigation-history.md
+      - name: Determine If a Page is Browser Hosted
+        href: how-to-determine-if-a-page-is-browser-hosted.md
+      - name: "Use mailto: to Send Mail From a Page"
+        href: how-to-use-mailto-to-send-mail-from-a-page.md
+      - name: Set the Title of a Window from a Page
+        href: how-to-set-the-title-of-a-window-from-a-page.md
+      - name: Set the Width of a Window from a Page
+        href: how-to-set-the-width-of-a-window-from-a-page.md
+      - name: Set the Height of a Window from a Page
+        href: how-to-set-the-height-of-a-window-from-a-page.md
+  - name: WPF Add-Ins Overview
+    href: wpf-add-ins-overview.md
+    items:
+    - name: How-to Topics
+      href: how-to-topics.md
+      items:
+      - name: Create an Add-In That Returns a UI
+        href: how-to-create-an-add-in-that-returns-a-ui.md
+      - name: Create an Add-In That Is a UI
+        href: how-to-create-an-add-in-that-is-a-ui.md
+  - name: Hosting
+    href: hosting-wpf-applications.md
+    items:
+    - name: WPF XAML Browser Applications Overview
+      href: wpf-xaml-browser-applications-overview.md
+    - name: WPF Host (PresentationHost.exe)
+      href: wpf-host-presentationhost-exe.md
+    - name: Firefox Add-ons to Support .NET Application Deployment
+      href: firefox-add-ons-to-support-net-application-deployment.md
+    - name: Native WPF Browser Hosting Support APIs
+      href: native-wpf-browser-hosting-support-apis.md
+      items:
+      - name: IEnumRAWINPUTDEVICE
+        href: ienumrawinputdevice.md
+        items:
+        - name: "IEnumRAWINPUTDEVIC:Next"
+          href: ienumrawinputdevic-next.md
+        - name: "IEnumRAWINPUTDEVIC:Skip"
+          href: ienumrawinputdevic-skip.md
+        - name: "IEnumRAWINPUTDEVIC:Reset"
+          href: ienumrawinputdevic-reset.md
+        - name: "IEnumRAWINPUTDEVIC:Clone"
+          href: ienumrawinputdevic-clone.md
+      - name: IWpfHostSupport
+        href: iwpfhostsupport.md
+        items:
+        - name: GetRawInputDevices
+          href: getrawinputdevices.md
+        - name: FilterInputMessage
+          href: filterinputmessage.md
+        - name: GetCustomUI
+          href: getcustomui.md
+  - name: Build and Deploy
+    href: building-and-deploying-wpf-applications.md
+    items:
+    - name: Building a WPF Application
+      href: building-a-wpf-application-wpf.md
+    - name: Deploying a WPF Application
+      href: deploying-a-wpf-application-wpf.md
+    - name: How-to Topics
+      href: build-and-deploy-how-to-topics.md
+      items:
+      - name: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications
+        href: how-to-configure-iis-5-0-and-iis-6-0-to-deploy-wpf-applications.md
+      - name: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service
+        href: configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md
+      - name: Determine the Installed Version of WPF
+        href: how-to-determine-the-installed-version-of-wpf.md
+      - name: Detect Whether the .NET Framework 3.0 Is Installed
+        href: how-to-detect-whether-the-net-framework-3-0-is-installed.md
+      - name: Detect Whether the .NET Framework 3.5 Is Installed
+        href: how-to-detect-whether-the-net-framework-3-5-is-installed.md
+      - name: Detect Whether the WPF Plug-In for Firefox Is Installed
+        href: how-to-detect-whether-the-wpf-plug-in-for-firefox-is-installed.md

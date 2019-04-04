@@ -105,7 +105,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 7.  Click the **Define...** link in the <xref:System.ServiceModel.Activities.Receive> activity and make the following settings:  
   
-     ![Setting message settings for the Recieve activity](./media/flowing-transactions-into-and-out-of-workflow-services/receive-message-settings.jpg)  
+     ![Setting message settings for the Receive activity](./media/flowing-transactions-into-and-out-of-workflow-services/receive-message-settings.jpg)  
   
 8.  Drag and drop a <xref:System.Activities.Statements.Sequence> activity into the Body section of the <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Within the <xref:System.Activities.Statements.Sequence> activity drag and drop two <xref:System.Activities.Statements.WriteLine> activities and set the <xref:System.Activities.Statements.WriteLine.Text%2A> properties as shown in the following table.  
   
@@ -201,7 +201,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 15. Drag and drop a <xref:System.Activities.Statements.WriteLine> activity at the end of the workflow and set its <xref:System.Activities.Statements.WriteLine.Text%2A> property to "Client workflow ends." The completed client workflow should look like the following diagram.  
   
-     ![The completed client workfliow](./media/flowing-transactions-into-and-out-of-workflow-services/client-complete-workflow.jpg)  
+     ![The completed client workflow](./media/flowing-transactions-into-and-out-of-workflow-services/client-complete-workflow.jpg)  
   
 16. Build the solution.  
   

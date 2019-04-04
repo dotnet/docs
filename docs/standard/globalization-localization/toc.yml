@@ -1,0 +1,25 @@
+- name: Globalization and localization
+  href: index.md
+  items:
+  - name: Globalization
+    href: globalization.md
+  - name: Localizability review
+    href: localizability-review.md
+  - name: Localization
+    href: localization.md
+  - name: Culture-insensitive string operations
+    href: culture-insensitive-string-operations.md
+    items:
+    - name: Perform culture-insensitive string operations
+      href: performing-culture-insensitive-string-operations.md
+      items:
+      - name: String comparisons
+        href: performing-culture-insensitive-string-comparisons.md
+      - name: Case changes
+        href: performing-culture-insensitive-case-changes.md
+      - name: String operations in collections
+        href: performing-culture-insensitive-string-operations-in-collections.md
+      - name: String operations in arrays
+        href: performing-culture-insensitive-string-operations-in-arrays.md
+  - name: Best practices for developing world-ready apps
+    href: best-practices-for-developing-world-ready-apps.md

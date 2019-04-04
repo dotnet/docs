@@ -122,9 +122,9 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  [!code-xaml[SpanSnippets#_BlockUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_blockuixaml)]  
   
- The following figure shows how this example renders.  
+ The following figure shows how this example renders:  
   
- ![Screenshot: UIElement embedded in flow content](./media/blockuicontainer.png "BlockUIContainer")  
+ ![Screenshot that shows a UIElement embedded in flow content.](./media/flow-document-overview/embedded-blockuicontainer.png)  
   
  **List**  
   

@@ -54,7 +54,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The following illustration shows the flow of tracking data through the ETW tracking participant. Once the tracking data reaches the ETW session, it can be accessed in a number of ways. One of the most useful ways to access these events is through Event Viewer, a common Windows tool used for viewing logs and traces from applications and services.  
   
- ![The flow of Tracking and ETW Tracking Provider](./media/trackingdatathroughetwparticipant.gif "TrackingDatathroughETWParticipant")  
+ ![Flow of tracking data through the ETW tracking provider.](./media/tracking-participants/tracking-data-event-tracing-windows-provider.gif)  
   
 ## Tracking Participant Event Data  
  A tracking participant serializes tracked event data to an ETW session in the format of one event per tracking record.  An event is identified using an ID within the range of 100 through 199. For definitions of the tracking event records emitted by a tracking participant, see the [Tracking Events Reference](tracking-events-reference.md) topic.  

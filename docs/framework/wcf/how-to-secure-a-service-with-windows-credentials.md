@@ -46,7 +46,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 2.  Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using Visual Basic, use the `GetType` operator; when using C#, use the `typeof` keyword.  
   
-3.  Create a second `Type` variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
+3.  Create a second <xref:System.Type> variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
   
 4.  Create an instance of the <xref:System.Uri> class named `baseAddress` with the base address of the service. The base address must have a scheme that matches the transport. In this case, the transport scheme is HTTP, and the address includes the special Uniform Resource Identifier (URI) "localhost" and a port number (8036) as well as a base endpoint address ("serviceModelSamples/): `http://localhost:8036/serviceModelSamples/`.  
   

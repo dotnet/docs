@@ -25,10 +25,12 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 You need Visual Studio to complete this walkthrough.  
   
 ## Implementing the WPF Composite Control  
- The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control.  
+ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control. 
+
+ The following image shows a WPF composite control: 
+
   
- ![Simple WPF control](./media/avaloncontrol.png "AvalonControl")  
-WPF composite control  
+ ![Screenshot that shows a simple WPF control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-presentation-foundation-composite-control.png)  
   
 ### Creating the Project  
  To start the project:  
@@ -174,9 +176,10 @@ namespace MyControls
 <a name="winforms_host_section"></a>   
 ## Implementing the Windows Forms Host Application  
  The Windows Forms host application uses an <xref:System.Windows.Forms.Integration.ElementHost> object to host the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control. The application handles the `OnButtonClick` event to receive the data from the composite control. The application also has a set of option buttons that you can use to modify the control’s appearance. The following illustration shows the application.  
-  
- ![Windows Form Hosting Avalon Control](./media/wfhost.png "WFHost")  
-WPF composite control hosted in a Windows Forms application  
+
+The following image shows a WPF composite control hosted in a Windows Forms application"  
+
+ ![Scteenshot that shows a Windows Form Hosting Avalon control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-form-hosting-avalon-control.png)  
   
 ### Creating the Project  
  To start the project:  

@@ -28,7 +28,7 @@ There may be times when you want to create an off-screen bitmap that has the fol
   
  The following illustration shows the output of the code example. Note that the ellipses are blended with the background, but they are not blended with each other.  
   
- ![Source Copy](./media/sourcecopy.png "sourcecopy")  
+ ![Diagram showing ellipses blended with the background, not each other.](./media/how-to-use-compositing-mode-to-control-alpha-blending/ellipses-blended-background.png)  
   
  The code example contains this statement:  
   
@@ -42,7 +42,7 @@ There may be times when you want to create an off-screen bitmap that has the fol
   
  The following illustration shows the output of the revised code.  
   
- ![Source Over](./media/sourceover.png "sourceover")  
+ ![Diagram that shows ellipses blended together and with background.](./media/how-to-use-compositing-mode-to-control-alpha-blending/blend-ellipses-background.png)  
   
  [!code-csharp[System.Drawing.AlphaBlending#43](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#43)]
  [!code-vb[System.Drawing.AlphaBlending#43](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#43)]  

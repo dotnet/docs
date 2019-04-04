@@ -15,9 +15,9 @@ You can use the <xref:System.Drawing.Graphics.DrawBeziers%2A> method of the <xre
 ## Example  
  The following example draws a curve that consists of two connected Bézier splines. The endpoint of the first Bézier spline is the start point of the second Bézier spline.  
   
- The following illustration shows the connected splines along with the seven points.  
+ The following illustration shows the connected splines along with the seven points:  
   
- ![Bezier Spline](./media/bezierspline2.png "BezierSpline2")  
+ ![Graphic that shows the connected splines along with seven points.](./media/how-to-draw-a-sequence-of-bezier-splines/bezier-spline-seven-points.png)  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#11)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#11)]  

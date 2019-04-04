@@ -33,10 +33,9 @@ This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tl
   
  [!code-xaml[LocalizationBtn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn/CS/Pane1.xaml#1)]  
   
- The following graphic shows the output of the code samples.  
+ The following graphic shows the output of the code samples:  
   
- ![The same button with text in different languages](./media/globalizationbutton.png "GlobalizationButton")  
-Auto Resizable Button  
+ ![The same button with text in different languages](./media/use-automatic-layout-overview/auto-resizable-button.png)  
   
 <a name="autolayout_coding"></a>   
 ## Automatic Layout and Coding Standards  

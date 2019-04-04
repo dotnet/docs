@@ -27,10 +27,9 @@ All versioning of assemblies that use the common language runtime is done at the
   
 4.  Checks the global assembly cache, codebases specified in configuration files, and then checks the application's directory and subdirectories using the probing rules explained in [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
- The following illustration shows these steps.  
+ The following illustration shows these steps:  
   
- ![.assembly extern myAssembly](../../../docs/framework/app-domains/media/versioningover.gif "versioningover")  
-Resolving an assembly binding request  
+ ![Diagram that shows steps in assembly binding request resolution.](./media/assembly-versioning/resolve-assembly-binding-request.gif)
   
  For more information about configuring applications, see [Configuring Apps](../../../docs/framework/configure-apps/index.md). For more information about binding policy, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   

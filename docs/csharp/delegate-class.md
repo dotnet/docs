@@ -132,7 +132,7 @@ that can be used as a delegate invocation target, and attach that method as
 an invocation target.
 
 You could also have been explicit by declaring a variable of type
-'Comparison<string>` and doing an assignment:
+`Comparison<string>` and doing an assignment:
 
 ```csharp
 Comparison<string> comparer = CompareLength;

@@ -1,0 +1,228 @@
+- name: Network Programming in the .NET Framework
+  href: index.md
+  items:
+  - name: Network Programming How-to Topics
+    href: network-programming-how-to-topics.md
+  - name: Introducing Pluggable Protocols
+    href: introducing-pluggable-protocols.md
+  - name: Requesting Data
+    href: requesting-data.md
+    items:
+    - name: Creating Internet Requests
+      href: creating-internet-requests.md
+    - name: "How to: Request a Web Page and Retrieve the Results as a Stream"
+      href: how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md
+    - name: "How to: Request Data Using the WebRequest Class"
+      href: how-to-request-data-using-the-webrequest-class.md
+    - name: "How to: Send Data Using the WebRequest Class"
+      href: how-to-send-data-using-the-webrequest-class.md
+    - name: "How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest"
+      href: how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md
+    - name: Using Streams on the Network
+      href: using-streams-on-the-network.md
+    - name: Making Asynchronous Requests
+      href: making-asynchronous-requests.md
+    - name: Handling Errors
+      href: handling-errors.md
+  - name: Programming Pluggable Protocols
+    href: programming-pluggable-protocols.md
+    items:
+    - name: "How to: Register a Custom Protocol Using WebRequest"
+      href: how-to-register-a-custom-protocol-using-webrequest.md
+    - name: "How to: Typecast a WebRequest to Access Protocol Specific Properties"
+      href: how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md
+    - name: Deriving from WebRequest
+      href: deriving-from-webrequest.md
+    - name: Deriving from WebResponse
+      href: deriving-from-webresponse.md
+  - name: Using Application Protocols
+    href: using-application-protocols.md
+    items:
+    - name: HTTP
+      href: http.md
+      items:
+      - name: HttpListener
+        href: httplistener.md
+    - name: "How to: Access HTTP-Specific Properties"
+      href: how-to-access-http-specific-properties.md
+    - name: Managing Connections
+      href: managing-connections.md
+      items:
+      - name: Connection Grouping
+        href: connection-grouping.md
+      - name: "How to: Assign User Information to Group Connections"
+        href: how-to-assign-user-information-to-group-connections.md
+    - name: TCP-UDP
+      href: tcp-udp.md
+      items:
+      - name: Using TCP Services
+        href: using-tcp-services.md
+      - name: Using UDP Services
+        href: using-udp-services.md
+    - name: Sockets
+      href: sockets.md
+      items:
+      - name: "How to: Create a Socket"
+        href: how-to-create-a-socket.md
+      - name: Using Client Sockets
+        href: using-client-sockets.md
+        items:
+        - name: Using a Synchronous Client Socket
+          href: using-a-synchronous-client-socket.md
+        - name: Using an Asynchronous Client Socket
+          href: using-an-asynchronous-client-socket.md
+      - name: Listening with Sockets
+        href: listening-with-sockets.md
+        items:
+        - name: Using a Synchronous Server Socket
+          href: using-a-synchronous-server-socket.md
+        - name: Using an Asynchronous Server Socket
+          href: using-an-asynchronous-server-socket.md
+      - name: Socket Code Examples
+        href: socket-code-examples.md
+        items:
+        - name: Synchronous Client Socket Example
+          href: synchronous-client-socket-example.md
+        - name: Synchronous Server Socket Example
+          href: synchronous-server-socket-example.md
+        - name: Asynchronous Client Socket Example
+          href: asynchronous-client-socket-example.md
+        - name: Asynchronous Server Socket Example
+          href: asynchronous-server-socket-example.md
+    - name: FTP
+      href: ftp.md
+      items:
+      - name: "How to: Download Files with FTP"
+        href: how-to-download-files-with-ftp.md
+      - name: "How to: Upload Files with FTP"
+        href: how-to-upload-files-with-ftp.md
+      - name: "How to: List Directory Contents with FTP"
+        href: how-to-list-directory-contents-with-ftp.md
+    - name: Understanding WebRequest Problems and Exceptions
+      href: understanding-webrequest-problems-and-exceptions.md
+  - name: Internet Protocol Version 6
+    href: internet-protocol-version-6.md
+    items:
+    - name: IPv6 Addressing
+      href: ipv6-addressing.md
+    - name: IPv6 Routing
+      href: ipv6-routing.md
+    - name: IPv6 Auto-Configuration
+      href: ipv6-auto-configuration.md
+    - name: Enabling and Disabling IPv6
+      href: enabling-and-disabling-ipv6.md
+    - name: "How to: Modify the Computer Configuration File to Enable IPv6 Support"
+      href: how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md
+  - name: Configuring Internet Applications
+    href: configuring-internet-applications.md
+  - name: Network Tracing in the .NET Framework
+    href: network-tracing.md
+    items:
+    - name: Interpreting Network Tracing
+      href: interpreting-network-tracing.md
+    - name: Enabling Network Tracing
+      href: enabling-network-tracing.md
+    - name: "How to: Configure Network Tracing"
+      href: how-to-configure-network-tracing.md
+  - name: Cache Management for Network Applications
+    href: cache-management-for-network-applications.md
+    items:
+    - name: Cache Policy
+      href: cache-policy.md
+    - name: Location-Based Cache Policies
+      href: location-based-cache-policies.md
+    - name: Time-Based Cache Policies
+      href: time-based-cache-policies.md
+      items:
+      - name: Cache Policy Interaction—Maximum Age and Maximum Staleness
+        href: cache-policy-interaction-maximum-age-and-maximum-staleness.md
+      - name: Cache Policy Interaction—Maximum Age and Minimum Freshness
+        href: cache-policy-interaction-maximum-age-and-minimum-freshness.md
+    - name: Configuring Caching in Network Applications
+      href: configuring-caching-in-network-applications.md
+      items:
+      - name: "How to: Set a Location-Based Cache Policy for an Application"
+        href: how-to-set-a-location-based-cache-policy-for-an-application.md
+      - name: "How to: Set the Default Time-Based Cache Policy for an Application"
+        href: how-to-set-the-default-time-based-cache-policy-for-an-application.md
+      - name: "How to: Customize a Time-Based Cache Policy"
+        href: how-to-customize-a-time-based-cache-policy.md
+      - name: "How to: Set Cache Policy for a Request"
+        href: how-to-set-cache-policy-for-a-request.md
+  - name: Security in Network Programming
+    href: security-in-network-programming.md
+    items:
+    - name: Transport Layer Security (TLS) best practices
+      href: tls.md
+    - name: Using Secure Sockets Layer
+      href: using-secure-sockets-layer.md
+      items:
+      - name: Certificate Selection and Validation
+        href: certificate-selection-and-validation.md
+    - name: Internet Authentication
+      href: internet-authentication.md
+      items:
+      - name: Basic and Digest Authentication
+        href: basic-and-digest-authentication.md
+      - name: NTLM and Kerberos Authentication
+        href: ntlm-and-kerberos-authentication.md
+    - name: Web and Socket Permissions
+      href: web-and-socket-permissions.md
+  - name: Best Practices for System.Net Classes
+    href: best-practices-for-system-net-classes.md
+  - name: Accessing the Internet Through a Proxy
+    href: accessing-the-internet-through-a-proxy.md
+    items:
+    - name: Proxy Configuration
+      href: proxy-configuration.md
+    - name: Automatic Proxy Detection
+      href: automatic-proxy-detection.md
+    - name: "How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet"
+      href: how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md
+    - name: "How to: Override a Global Proxy Selection"
+      href: how-to-override-a-global-proxy-selection.md
+  - name: NetworkInformation
+    href: networkinformation.md
+    items:
+    - name: "How to: Detect Network Availability and Address Changes"
+      href: how-to-detect-network-availability-and-address-changes.md
+    - name: "How to: Get Interface and Protocol Information"
+      href: how-to-get-interface-and-protocol-information.md
+    - name: "How to: Ping a Host"
+      href: how-to-ping-a-host.md
+  - name: Changes to the System.Uri namespace in Version 2.0
+    href: changes-to-the-system-uri-namespace-in-version-2-0.md
+  - name: International Resource Identifier Support in System.Uri
+    href: international-resource-identifier-support-in-system-uri.md
+  - name: Socket Performance Enhancements in Version 3.5
+    href: socket-performance-enhancements-in-version-3-5.md
+  - name: Peer Name Resolution Protocol
+    href: peer-name-resolution-protocol.md
+    items:
+    - name: Peer Names and PNRP IDs
+      href: peer-names-and-pnrp-ids.md
+    - name: Peer Name Publication and Resolution
+      href: peer-name-publication-and-resolution.md
+    - name: PNRP Clouds
+      href: pnrp-clouds.md
+    - name: PNRP Caches
+      href: pnrp-caches.md
+    - name: PNRP in Application Development
+      href: pnrp-in-application-development.md
+  - name: Peer-to-Peer Collaboration
+    href: peer-to-peer-collaboration.md
+    items:
+    - name: About the System.Net.PeerToPeer.Collaboration Namespace
+      href: about-the-system-net-peertopeer-collaboration-namespace.md
+    - name: Peer-to-Peer Networking Scenarios
+      href: peer-to-peer-networking-scenarios.md
+  - name: Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1
+    href: changes-to-ntlm-authentication-for-httpwebrequest-in-version-3-5-sp1.md
+  - name: Integrated Windows Authentication with Extended Protection
+    href: integrated-windows-authentication-with-extended-protection.md
+  - name: NAT Traversal using IPv6 and Teredo
+    href: nat-traversal-using-ipv6-and-teredo.md
+  - name: Network Isolation for Windows Store Apps
+    href: network-isolation-for-windows-store-apps.md
+  - name: Network Programming Samples
+    href: network-programming-samples.md

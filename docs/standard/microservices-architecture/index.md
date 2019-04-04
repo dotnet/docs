@@ -52,7 +52,7 @@ This guide does not focus on the application lifecycle, DevOps, CI/CD pipelines,
 ### Additional resources
 
 -   **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book)  
-    [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+    [https://aka.ms/dockerlifecycleebook](https://aka.ms/dockerlifecycleebook)
 
 ## Who should use this guide
 

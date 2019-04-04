@@ -37,6 +37,7 @@ Collapses and hides sections of code in Visual Basic files.
  [!code-vb[VbVbalrConditionalComp#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#4)]  
   
 ## See also
+
 - [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
 - [Outlining](/visualstudio/ide/outlining)
 - [How to: Collapse and Hide Sections of Code](../../../visual-basic/programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)

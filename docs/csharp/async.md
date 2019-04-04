@@ -249,12 +249,12 @@ Blocking the current thread as a means to wait for a Task to complete can result
 
 Don’t depend on the state of global objects or the execution of certain methods. Instead, depend only on the return values of methods. Why?
 
-  * Code will be easier to reason about.
-  * Code will be easier to test.
-  * Mixing async and synchronous code is far simpler.
-  * Race conditions can typically be avoided altogether.
-  * Depending on return values makes coordinating async code simple.
-  * (Bonus) it works really well with dependency injection.
+* Code will be easier to reason about.
+* Code will be easier to test.
+* Mixing async and synchronous code is far simpler.
+* Race conditions can typically be avoided altogether.
+* Depending on return values makes coordinating async code simple.
+* (Bonus) it works really well with dependency injection.
 
 A recommended goal is to achieve complete or near-complete [Referential Transparency](https://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29) in your code. Doing so will result in an extremely predictable, testable, and maintainable codebase.
 

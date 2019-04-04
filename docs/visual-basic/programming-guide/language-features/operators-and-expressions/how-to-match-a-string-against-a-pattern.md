@@ -73,6 +73,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
      [!code-vb[VbVbalrOperators#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#74)]  
   
 ## See also
+
 - [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)
 - [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md)

@@ -1,0 +1,59 @@
+- name: Configuration File Schema
+  href: index.md
+  items:
+  - name: <configuration> Element
+    href: configuration-element.md
+  - name: <assemblyBinding> Element
+    href: assemblybinding-element-for-configuration.md
+  - name: <linkedConfiguration> Element
+    href: linkedconfiguration-element.md
+  - name: <configSections> Element
+    href: configsections-element-for-configuration.md
+  - name: <clear> Element for <configSections>
+    href: clear-element-for-configsections.md
+  - name: <remove> Element for <configSections>
+    href: remove-element-for-configsections.md
+  - name: <sectionGroup> Element
+    href: sectiongroup-element-for-configsections.md
+  - name: Custom Element for SingleTagSectionHandler
+    href: custom-element-1.md
+  - name: Custom Element for NameValueSectionHandler and DictionarySectionHandler
+    href: custom-element-2.md
+  - name: <add> Element
+    href: add-element-for-custom-2.md
+  - name: <clear> Element for NameValueSectionHandler and DictionarySectionHandler
+    href: clear-element-for-custom-2.md
+  - name: <remove> Element for NameValueSectionHandler and DictionarySectionHandler
+    href: remove-element-for-custom-2.md
+  - name: <section> Element
+    href: section-element.md
+  - name: App Settings Schema
+    href: appsettings/index.md
+  - name: Application Settings Schema
+    href: application-settings-schema.md
+  - name: Compiler and Language Provider Settings Schema
+    href: compiler/index.md
+  - name: Configuration Sections Schema
+    href: configuration-sections-schema.md
+  - name: Cryptography Settings Schema
+    href: cryptography/index.md
+  - name: Network Settings Schema
+    href: network/index.md
+  - name: Runtime Settings Schema
+    href: runtime/index.md
+  - name: Startup Settings Schema
+    href: startup/index.md
+  - name: Trace and Debug Settings Schema
+    href: trace-debug/index.md
+  - name: Web Settings Schema
+    href: web/index.md
+  - name: WCF Configuration Schema
+    href: wcf/index.md
+  - name: WCF Directive Syntax
+    href: wcf-directive/index.md
+  - name: WIF Configuration Schema
+    href: windows-identity-foundation/index.md
+  - name: Windows Forms Configuration Section
+    href: winforms/index.md
+  - name: Windows Workflow Foundation Configuration Schema
+    href: windows-workflow-foundation/index.md

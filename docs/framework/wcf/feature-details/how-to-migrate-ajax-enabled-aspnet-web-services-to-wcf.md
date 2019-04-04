@@ -107,7 +107,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 ## Example
  The code that results from the procedures outlined in this topic is provided in the following example.
 
-```
+```csharp
 //This is the ASP.NET code in the Service1.asmx.cs file.
 
 using System;

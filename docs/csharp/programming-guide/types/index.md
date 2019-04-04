@@ -66,10 +66,12 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
   
 -   Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET class library and also your own user-defined types. Types that you define by using the [struct](../../../csharp/language-reference/keywords/struct.md) keyword are value types; all the built-in numeric types are `structs`. Types that you define by using the [class](../../../csharp/language-reference/keywords/class.md) keyword are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.  
   
- The following illustration shows the relationship between value types and reference types in the CTS.  
+ The following illustration shows the relationship between value types and reference types in the CTS.
+
+ The following image shows value types and reference types in the CTS: 
   
- ![Value Types and Reference Types](../../../csharp/programming-guide/types/media/valuetypescts.png "ValueTypesCTS")  
-Value types and reference types in the CTS  
+  
+ ![Screenshot that shows CTS value types and reference types.](./media/index/value-reference-types-common-type-system.png)  
   
 > [!NOTE]
 >  You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it is a value type or reference type.  

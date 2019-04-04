@@ -38,7 +38,7 @@ In Windows Presentation Foundation (WPF), [!INCLUDE[TLA#tla_uri#plural](../../..
 ## The Pack URI Scheme  
  The pack [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] scheme is used by the [Open Packaging Conventions](https://go.microsoft.com/fwlink/?LinkID=71255) (OPC) specification, which describes a model for organizing and identifying content. The key elements of this model are packages and parts, where a *package* is a logical container for one or more logical *parts*. The following figure illustrates this concept.  
   
- ![Package and Parts diagram](./media/wpfpackurischemefigure1.PNG "WPFPackURISchemeFigure1")  
+ ![Package and Parts diagram](./media/pack-uris-in-wpf/wpf-package-parts-diagram.png)  
   
  To identify parts, the OPC specification leverages the extensibility of RFC 2396 (Uniform Resource Identifiers (URI): Generic Syntax) to define the pack [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] scheme.  
   
@@ -50,7 +50,7 @@ In Windows Presentation Foundation (WPF), [!INCLUDE[TLA#tla_uri#plural](../../..
   
  This concept is illustrated by the following figure:  
   
- ![Relationship among package, authority, and path](./media/wpfpackurischemefigure2.PNG "WPFPackURISchemeFigure2")  
+ ![Relationship among package, authority, and path](./media/pack-uris-in-wpf/wpf-relationship-diagram.png)  
   
  Packages and parts are analogous to applications and files, where an application (package) can include one or more files (parts), including:  
   
@@ -66,7 +66,7 @@ In Windows Presentation Foundation (WPF), [!INCLUDE[TLA#tla_uri#plural](../../..
   
  To access these types of files, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] supports two authorities: application:/// and siteoforigin:///. The application:/// authority identifies application data files that are known at compile time, including resource and content files. The siteoforigin:/// authority identifies site of origin files. The scope of each authority is shown in the following figure.  
   
- ![Pack URI diagram](./media/wpfpackurischemefigure4.png "WPFPackURISchemeFigure4")  
+ ![Pack URI diagram](./media/pack-uris-in-wpf/wpf-pack-uri-scheme.png)  
   
 > [!NOTE]
 >  The authority component of a pack [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] is an embedded [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] that points to a package and must conform to RFC 2396. Additionally, the "/" character must be replaced with the "," character, and reserved characters such as "%" and "?" must be escaped. See the OPC for details.  

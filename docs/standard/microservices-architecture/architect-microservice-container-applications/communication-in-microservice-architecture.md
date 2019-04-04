@@ -84,10 +84,10 @@ There's additional value when using HTTP REST services as your interface definit
 ### Additional resources
 
 - **Martin Fowler. Richardson Maturity Model** A description of the REST model. \
-  [*https://martinfowler.com/articles/richardsonMaturityModel.html*](https://martinfowler.com/articles/richardsonMaturityModel.html)
+  [https://martinfowler.com/articles/richardsonMaturityModel.html](https://martinfowler.com/articles/richardsonMaturityModel.html)
 
 - **Swagger** The official site. \
-  [*https://swagger.io/*](https://swagger.io/)
+  [https://swagger.io/](https://swagger.io/)
 
 ### Push and real-time communication based on HTTP
 

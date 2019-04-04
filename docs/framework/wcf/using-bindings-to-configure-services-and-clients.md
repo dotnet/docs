@@ -48,7 +48,7 @@ Bindings are objects that specify the communication details required to connect 
   
 -   [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md) provides an example of creating a binding in code.  
   
--   [How to: Configure a Client](../../../docs/framework/wcf/how-to-configure-a-basic-wcf-client.md) provides an example of creating a client using configuration.  
+-   [Tutorial: Create a Windows Communication Foundation client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md) provides an example of creating a client by using configuration.  
   
 ## See also
 - [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)

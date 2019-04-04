@@ -15,9 +15,11 @@ ms.author: "ronpet"
 The common language runtime exposes COM objects through a proxy called the runtime callable wrapper (RCW). Although the RCW appears to be an ordinary object to .NET clients, its primary function is to marshal calls between a .NET client and a COM object.  
   
  The runtime creates exactly one RCW for each COM object, regardless of the number of references that exist on that object. The runtime maintains a single RCW per process for each object.  If you create an RCW in one application domain or apartment, and then pass a reference to another application domain or apartment, a proxy to the first object will be used.  As the following illustration shows, any number of managed clients can hold a reference to the COM objects that expose INew and INewer interfaces.  
-  
- ![RCW](./media/rcw.gif "rcw")  
-Accessing COM objects through the runtime callable wrapper  
+
+The following image shows the process for accessing COM objects through the runtime callable wrapper:
+
+ ![Process for accessing COM objects throug the RCW.](./media/runtime-callable-wrapper/runtime-callable-wrapper.gif)  
+   
   
  Using metadata derived from a type library, the runtime creates both the COM object being called and a wrapper for that object. Each RCW maintains a cache of interface pointers on the COM object it wraps and releases its reference on the COM object when the RCW is no longer needed. The runtime performs garbage collection on the RCW.  
   
@@ -26,10 +28,11 @@ Accessing COM objects through the runtime callable wrapper
  The standard wrapper enforces built-in marshaling rules. For example, when a .NET client passes a String type as part of an argument to an unmanaged object, the wrapper converts the string to a BSTR type. Should the COM object return a BSTR to its managed caller, the caller receives a String. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.  
   
 ## Marshaling selected interfaces  
- The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.  
+ The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration. 
+
+ The following image shows COM interfaces and the runtime callable wrapper: 
   
- ![RCW With Interfaces](./media/rcwwithinterfaces.gif "rcwwithinterfaces")  
-COM interfaces and the runtime callable wrapper  
+ ![Screenshot of the runtime callable wrapper with interfaces.](./media/runtime-callable-wrapper/runtime-callable-wrapper-interfaces.gif)  
   
  When created as an early-bound object, the RCW is a specific type. It implements the interfaces that the COM object implements and exposes the methods, properties, and events from the object's interfaces. In the illustration, the RCW exposes the INew interface but consumes the **IUnknown** and **IDispatch** interfaces. Further, the RCW exposes all members of the INew interface to the .NET client.  
   

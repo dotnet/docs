@@ -39,7 +39,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  [!code-xaml[StylingIntroSample_snippet#TextBlocks](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#textblocks)]  
   
- ![Styling sample screen shot](./media/stylingintro-textblocksbefore.PNG "StylingIntro_TextBlocksBefore")  
+ ![Styling sample screenshot](./media/stylingintro-textblocksbefore.PNG "StylingIntro_TextBlocksBefore")  
   
  You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, as shown here:  
   
@@ -51,7 +51,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows:  
   
- ![Styling sample screen shot](./media/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")  
+ ![Styling sample screenshot](./media/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")  
   
 ### Extending Styles  
  Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to share some property values, such as the <xref:System.Windows.Controls.Control.FontFamily%2A> and the centered <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, but you also want the text "My Pictures" to have some additional properties. You can do that by creating a new style that is based on the first style, as shown here:  
@@ -159,7 +159,7 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
   
  In the following illustration, the mouse is pointing to the third item:  
   
- ![Styling sample screen shot](./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
+ ![Styling sample screenshot](./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
   
 ### MultiTriggers, DataTriggers, and MultiDataTriggers  
  In addition to <xref:System.Windows.Trigger> and <xref:System.Windows.EventTrigger>, there are other types of triggers. <xref:System.Windows.MultiTrigger> allows you to set property values based on multiple conditions. You use <xref:System.Windows.DataTrigger> and <xref:System.Windows.MultiDataTrigger> when the property of your condition is data-bound.  

@@ -50,7 +50,7 @@ Resource files play a central role in localized applications. They enable an app
  
  The following image shows the satellite assembly directory:
   
- ![Diagram that shows a satellite assembly directory.](./media/creating-satellite-assemblies-for-desktop-apps/satellite-assembly-directory.gif  
+ ![A satellite assembly directory with localized cultures subdirectories.](./media/creating-satellite-assemblies-for-desktop-apps/satellite-assembly-directory.gif)
   
 ## Compiling Satellite Assemblies  
  You use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile text files or XML (.resx) files that contain resources to binary .resources files. You then use [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to compile .resources files into satellite assemblies. Al.exe creates an assembly from the .resources files that you specify. Satellite assemblies can contain only resources; they cannot contain any executable code.  

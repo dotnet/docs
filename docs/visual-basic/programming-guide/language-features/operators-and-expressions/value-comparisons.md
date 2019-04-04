@@ -39,6 +39,7 @@ Comparison operators can be used to construct expressions that compare the value
  [!code-vb[VbVbalrOperators#86](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#86)]  
   
 ## See also
+
 - [Boolean Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
 - [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)

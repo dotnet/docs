@@ -23,6 +23,7 @@ A `Sub` procedure does not return a value to the calling code. You call it expli
      [!code-vb[VbVbalrCatRef#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#11)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Interaction.Shell%2A>
 - <xref:System.ArgumentException>
 - [Procedures](./index.md)

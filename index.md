@@ -7,6 +7,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
 ms.custom: "updateeachrelease"
 ms.date: "12/04/2018"
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">

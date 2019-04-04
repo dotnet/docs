@@ -51,6 +51,7 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
  [!code-vb[VbXMLSamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples11.vb#23)]  
   
 ## See also
+
 - <xref:System.Xml.Linq.XCData>
 - [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
 - [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)

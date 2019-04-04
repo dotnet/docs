@@ -287,4 +287,3 @@ static void DisplayIdentityInformation()
   
 1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
-## See also

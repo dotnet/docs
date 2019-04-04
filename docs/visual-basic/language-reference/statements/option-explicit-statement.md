@@ -61,6 +61,7 @@ Option Explicit { On | Off }
  [!code-vb[VbVbalrStatements#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#48)]  
   
 ## See also
+
 - [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
 - [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)

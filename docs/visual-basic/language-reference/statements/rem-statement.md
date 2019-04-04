@@ -42,5 +42,6 @@ REM comment
  [!code-vb[VbVbalrStatements#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#6)]  
   
 ## See also
+
 - [Comments in Code](../../../visual-basic/programming-guide/program-structure/comments-in-code.md)
 - [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

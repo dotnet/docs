@@ -46,7 +46,7 @@ Specifies configuration settings for the Named Pipe Activation Service, which ma
 |---------------|-----------------|  
 |`maxPendingAccepts`|An integer that specifies the maximum outstanding concurrent accepting threads on the listening endpoint for the sharing service. The default is 2.|  
 |`maxPendingConnections`|An integer that specifies the maximum number of connections that can wait for dispatch. The default is 100.|  
-|`receiveTimeout`|A `TimeSpan` that specifies the timeout for reading the framing data and performing connection dispatching from the underlining connections. The default is "00:00:10"|  
+|`receiveTimeout`|A <xref:System.TimeSpan> that specifies the timeout for reading the framing data and performing connection dispatching from the underlining connections. The default is "00:00:10"|  
   
 ### Child Elements  
   

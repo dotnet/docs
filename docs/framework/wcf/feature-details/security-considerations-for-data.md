@@ -274,7 +274,7 @@ This situation can be avoided by being aware of the following points:
 
 - Take care using legacy types marked with the <xref:System.SerializableAttribute> attribute. Many of them were designed to work with [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] remoting for use with trusted data only. Existing types marked with this attribute may not have been designed with state safety in mind.
 
-- Do not rely on the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of the `DataMemberAttribute` attribute to guarantee presence of data as far as state safety is concerned. Data could always be `null`, `zero`, or `invalid`.
+- Do not rely on the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to guarantee presence of data as far as state safety is concerned. Data could always be `null`, `zero`, or `invalid`.
 
 - Never trust an object graph deserialized from an untrusted data source without validating it first. Each individual object may be in a consistent state, but the object graph as a whole may not be. Furthermore, even if the object graph preservation mode is disabled, the deserialized graph may have multiple references to the same object or have circular references. For more information, see [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).
 
@@ -310,33 +310,33 @@ Note the following concerns regarding threats related to code running with parti
 
 - If you allow partially-trusted code access to your <xref:System.Runtime.Serialization.DataContractSerializer> instance or otherwise control the [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md), it may exercise a great deal of control over the serialization/deserialization process. For example, it may inject arbitrary types, lead to information disclosure, tamper with the resulting object graph or serialized data, or overflow the resultant serialized stream. An equivalent <xref:System.Runtime.Serialization.NetDataContractSerializer> threat is described in the "Using the NetDataContractSerializer Securely" section.
 
-- If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a type (or the type marked as `[Serializable]` but is not `ISerializable`), the deserializer can create an instance of such a type even if all constructors are non-public or protected by demands.
+- If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a type (or the type marked as <xref:System.SerializableAttribute> but is not <xref:System.Runtime.Serialization.ISerializable>), the deserializer can create an instance of such a type even if all constructors are non-public or protected by demands.
 
 - Never trust the result of deserialization unless the data to be deserialized is trusted and you are certain that all known types are types that you trust. Note that known types are not loaded from the application configuration file, (but are loaded from the computer configuration file) when running in partial trust.
 
-- If you pass a `DataContractSerializer` instance with a surrogate added to partially-trusted code, the code can change any modifiable settings on that surrogate.
+- If you pass a <xref:System.Runtime.Serialization.DataContractSerializer> instance with a surrogate added to partially-trusted code, the code can change any modifiable settings on that surrogate.
 
 - For a deserialized object, if the XML reader (or the data therein) comes from partially-trusted code, treat the resulting deserialized object as untrusted data.
 
 - The fact that the <xref:System.Runtime.Serialization.ExtensionDataObject> type has no public members does not mean that data within it is secure. For example, if you deserialize from a privileged data source into an object in which some data resides, then hand that object to partially-trusted code, the partially-trusted code can read the data in the `ExtensionDataObject` by serializing the object. Consider setting <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> to `true` when deserializing from a privileged data source into an object that is later passed to partially-trusted code.
 
-- <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> support the serialization of private, protected, internal, and public members in full trust. However, in partial trust, only public members can be serialized. A `SecurityException` is thrown if an application attempts to serialize a non-public member.
+- <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> support the serialization of private, protected, internal, and public members in full trust. However, in partial trust, only public members can be serialized. A <xref:System.Security.SecurityException> is thrown if an application attempts to serialize a non-public member.
 
-    To allow internal or protected internal members to be serialized in partial trust, use the `System.Runtime.CompilerServices.InternalsVisibleTo` assembly attribute. This attribute allows an assembly to declare that its internal members are visible to some other assembly. In this case, an assembly that wants to have its internal members serialized declares that its internal members are visible to System.Runtime.Serialization.dll.
+    To allow internal or protected internal members to be serialized in partial trust, use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> assembly attribute. This attribute allows an assembly to declare that its internal members are visible to some other assembly. In this case, an assembly that wants to have its internal members serialized declares that its internal members are visible to System.Runtime.Serialization.dll.
 
     The advantage of this approach is that it does not require an elevated code generation path.
 
     At the same time, there are two major disadvantages.
 
-    The first disadvantage is that the opt-in property of the `InternalsVisibleTo` attribute is assembly-wide. That is, you cannot specify that only a certain class can have its internal members serialized. Of course, you can still choose not to serialize a specific internal member, by simply not adding a `DataMember` attribute to that member. Similarly, a developer can also choose to make a member internal rather than private or protected, with slight visibility concerns.
+    The first disadvantage is that the opt-in property of the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute is assembly-wide. That is, you cannot specify that only a certain class can have its internal members serialized. Of course, you can still choose not to serialize a specific internal member, by simply not adding a <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to that member. Similarly, a developer can also choose to make a member internal rather than private or protected, with slight visibility concerns.
 
     The second disadvantage is that it still does not support private or protected members.
 
-    To illustrate the use of the `InternalsVisibleTo` attribute in partial trust, consider the following program:
+    To illustrate the use of the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in partial trust, consider the following program:
 
     [!code-csharp[CDF_WCF_SecurityConsiderationsForData#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/cdf_wcf_securityconsiderationsfordata/cs/program.cs#1)]
 
-    In the example above, `PermissionsHelper.InternetZone` corresponds to the `PermissionSet` for partial trust. Now, without `InternalsVisibleToAttribute`, the application will fail, throwing a `SecurityException` indicating that non-public members cannot be serialized in partial trust.
+    In the example above, `PermissionsHelper.InternetZone` corresponds to the <xref:System.Security.PermissionSet> for partial trust. Now, without the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, the application will fail, throwing a <xref:System.Security.SecurityException> indicating that non-public members cannot be serialized in partial trust.
 
     However, if we add the following line to the source file, the program runs successfully.
 

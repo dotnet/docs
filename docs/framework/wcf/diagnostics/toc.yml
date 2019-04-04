@@ -1,0 +1,31 @@
+- name: Administration and Diagnostics
+  href: index.md
+- name: Message Logging
+  href: message-logging.md
+  items:
+  - name: Message Flow Overview
+    href: message-flow-overview.md
+  - name: Configuring Message Logging
+    href: configuring-message-logging.md
+  - name: Viewing Message Logs
+    href: viewing-message-logs.md
+  - name: Security Concerns for Message Logging
+    href: security-concerns-for-message-logging.md
+  - name: Tracing
+    href: tracing/
+  - name: Analytic Tracing with ETW
+    href: etw/
+  - name: Performance Counters
+    href: performance-counters/
+  - name: Event Logging
+    href: event-logging/
+  - name: Using Windows Management Instrumentation for Diagnostics
+    href: wmi/
+  - name: Exceptions Reference
+    href: exceptions-reference/
+- name: Configuring Your Application
+  href: configuring-your-application.md
+- name: ServiceModel Registration Tool
+  href: servicemodel-registration-tool.md
+- name: Deploying Services
+  href: deploying-services.md

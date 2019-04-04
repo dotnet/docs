@@ -189,4 +189,3 @@ Symbols:
   
     8.  The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.  
   
-## See also

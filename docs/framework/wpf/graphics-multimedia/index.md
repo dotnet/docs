@@ -124,7 +124,7 @@ End Class
 ### Images  
  Images, which include icons, backgrounds, and even parts of animations, are a core part of most applications. Because you frequently need to use images, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] exposes the ability to work with them in a variety of ways. The following illustration shows just one of those ways.  
   
- ![Styling sample screen shot](../controls/./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
+ ![Styling sample screenshot](../controls/./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
   
  For more information, see [Imaging Overview](imaging-overview.md).  
   

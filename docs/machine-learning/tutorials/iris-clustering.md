@@ -132,7 +132,7 @@ Load the data using the generic `MLContext.Data.LoadFromTextFile` wrapper for th
 For this tutorial, the learning pipeline of the clustering task comprises two following steps:
 
 - concatenate loaded columns into one **Features** column, which is used by a clustering trainer;
-- use a <xref:Microsoft.ML.Trainers.KMeans.KMeansPlusPlusTrainer> trainer to train the model using the k-means++ clustering algorithm.
+- use a <xref:Microsoft.ML.Trainers.KMeansPlusPlusTrainer> trainer to train the model using the k-means++ clustering algorithm.
 
 Add the following code to the `Main` method:
 

@@ -28,8 +28,7 @@ This topic provides an overview of the sample [!INCLUDE[TLA#tla_opentype](../../
   
  The following illustration shows what the sample [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts look like.  
   
- ![List of font names in sample font pack](./media/samplefontpack01.gif "samplefontpack01")  
-Fonts in the OpenType Font Pack  
+ ![List of font names in sample font pack](./media/sample-opentype-font-pack/font-names-sample-pack.gif)  
   
  The sample fonts are supplied under license from Ascender Corporation. Ascender is a provider of advanced font products. To license extended or custom versions of the sample fonts, see [Ascender Corporation's Web site](https://go.microsoft.com/fwlink/?LinkId=182627).  
   

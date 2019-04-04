@@ -31,6 +31,7 @@ You use a `Function` procedure to return a value to the calling code.
      [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Sub Procedures](./sub-procedures.md)
 - [Property Procedures](./property-procedures.md)

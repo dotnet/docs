@@ -236,7 +236,7 @@ For SQL Server, all methods used to introduce synchronization or threading must 
 
 ### Do Not Block Indefinitely in Unmanaged Code
 
-Blocking in unmanaged code instead of in managed code can cause a denial of service attack because the CLR is not able to abort the thread.  A blocked thread prevents the CLR from unloading the <xref:System.AppDomain>, at least without doing some extremely unsafe operations.  Blocking using a Win32 synchronization primitive is a clear example of something we cannot allow.  Blocking in a call to `ReadFile` on a socket should be avoided if possible — ideally the Win32 API should provide a mechanism for an operation like this to time out.
+Blocking in unmanaged code instead of in managed code can cause a denial of service attack because the CLR is not able to abort the thread.  A blocked thread prevents the CLR from unloading the <xref:System.AppDomain>, at least without doing some extremely unsafe operations.  Blocking using a Windows synchronization primitive is a clear example of something we cannot allow.  Blocking in a call to `ReadFile` on a socket should be avoided if possible — ideally the Windows API should provide a mechanism for an operation like this to time out.
 
 Any method that calls into native should ideally use a Win32 call with a reasonable, finite timeout.  If the user is allowed to specify the timeout, the user should not be allowed to specify an infinite timeout without some specific security permission.  As a guideline, if a method will block for more than ~10 seconds, you need to be using a version that supports timeouts or you need additional CLR support.
 

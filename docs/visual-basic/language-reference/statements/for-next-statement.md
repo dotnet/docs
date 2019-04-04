@@ -167,6 +167,7 @@ Next [ counter ]
  [!code-vb[VbVbalrStatements#117](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#117)]  
   
 ## See also
+
 - <xref:System.Collections.Generic.List%601>
 - [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
 - [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

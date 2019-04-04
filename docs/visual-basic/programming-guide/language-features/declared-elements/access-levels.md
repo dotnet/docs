@@ -109,6 +109,7 @@ The keywords that specify access level are called *access modifiers*. The follow
 |`Private Protected`|Code in the class that declares a private protected element, or code in a derived class found in the same assembly as the bas class.|Interfaces<br /><br /> Classes<br /><br /> Structures<br /><br /> Procedures<br /><br /> Properties<br /><br /> Member variables<br /><br /> Constants<br /><br /> Enumerations<br /><br /> Events<br /><br /> External declarations<br /><br /> Delegates|Class|
   
 ## See also
+
 - [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
 - [Static](../../../../visual-basic/language-reference/modifiers/static.md)
 - [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)

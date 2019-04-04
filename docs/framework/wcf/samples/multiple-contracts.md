@@ -57,4 +57,3 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleContracts`  
   
-## See also

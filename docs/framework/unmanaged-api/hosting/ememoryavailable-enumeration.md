@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # EMemoryAvailable Enumeration
-Contains values that indicate the amount of free physical memory on the computer. These values logically map to the events for high and low memory returned from the `CreateMemoryResourceNotification` function in the Win32 API.  
+Contains values that indicate the amount of free physical memory on the computer. These values logically map to the events for high and low memory returned from the `CreateMemoryResourceNotification` function in the Windows API.  
   
 ## Syntax  
   

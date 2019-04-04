@@ -16,9 +16,9 @@ Instead of drawing a line with a solid color, you can draw a line with a texture
 ## Example  
  The following example creates a <xref:System.Drawing.Bitmap> object from the file `Texture1.jpg`. That bitmap is used to construct a <xref:System.Drawing.TextureBrush> object, and the <xref:System.Drawing.TextureBrush> object is used to construct a <xref:System.Drawing.Pen> object. The call to <xref:System.Drawing.Graphics.DrawImage%2A> draws the bitmap with its upper-left corner at (0, 0). The call to <xref:System.Drawing.Graphics.DrawEllipse%2A> uses the <xref:System.Drawing.Pen> object to draw a textured ellipse.  
   
- The following illustration shows the bitmap and the textured ellipse.  
+ The following illustration shows the bitmap and the textured ellipse:  
   
- ![Pens](./media/pens7.png "pens7")  
+ ![Screenshot that shows the bitmap and the textured ellipse.](./media/how-to-draw-a-line-filled-with-a-texture/bitmap-textured-ellipse.png)  
   
  [!code-csharp[System.Drawing.UsingAPen#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#61)]
  [!code-vb[System.Drawing.UsingAPen#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#61)]  

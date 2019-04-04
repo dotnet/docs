@@ -156,7 +156,7 @@ Don't forget that `GCHandle` needs to be explicitly freed to avoid memory leaks.
 
 ## Common Windows data types
 
-Here is a list of data types commonly used in Win32 APIs and which C# types to use when calling into the Win32 code.
+Here is a list of data types commonly used in Windows APIs and which C# types to use when calling into the Windows code.
 
 The following types are the same size on 32-bit and 64-bit Windows, despite their names.
 

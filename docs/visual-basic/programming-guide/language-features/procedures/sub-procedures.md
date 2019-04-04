@@ -67,6 +67,7 @@ A `Sub` procedure is a series of Visual Basic statements enclosed by the `Sub` a
  [!code-vb[VbVbcnProcedures#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#3)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Function Procedures](./function-procedures.md)
 - [Property Procedures](./property-procedures.md)

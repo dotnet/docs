@@ -3,8 +3,7 @@ title: SqlStreamChars.IsNull Property (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein
 ms.date: 12/19/2018
-ms.technology:
-  - "dotnet-data"
+ms.technology: "dotnet-data"
 topic_type:
   - "apiref"
 api_name:

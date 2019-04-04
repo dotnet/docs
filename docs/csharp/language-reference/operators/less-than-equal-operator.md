@@ -34,5 +34,5 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
 - [< Operator](less-than-operator.md)
-- [== Operator](equality-comparison-operator.md)
+- [== Operator](equality-operators.md#equality-operator-)
 - <xref:System.IComparable%601?displayProperty=nameWithType>

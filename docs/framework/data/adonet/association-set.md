@@ -19,11 +19,11 @@ An *association set* is a logical container for [association](../../../../docs/f
 ## Example  
  The diagram below shows a conceptual model with two associations: `PublishedBy`, and `WrittenBy`. Although information about association sets is not conveyed in the diagram, the next diagram shows an example of association sets and entity sets based on this model.  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/association-set/example-model-three-entity-types.gif)  
   
  The following example shows an association set (`PublishedBy`) and two entity sets (`Books` and `Publishers`) based on the conceptual model shown above. Bi in the `Books` entity set represents an instance of the `Book` entity type at run time. Similarly, Pj represents a `Publisher` instance in the `Publishers` entity set. BiPj represents an instance of the `PublishedBy` association in the `PublishedBy` association set.  
   
- ![Sets Example](../../../../docs/framework/data/adonet/media/setsexample.gif "SetsExample")  
+ ![Screenshot that shows a Sets example.](./media/association-set/sets-example-association.gif)  
   
  The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines an entity container with one association set for each association in the diagram above. Note that the name and association for each association set are defined using XML attributes.  
   

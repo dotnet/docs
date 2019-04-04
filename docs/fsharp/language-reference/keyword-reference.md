@@ -44,7 +44,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`inline`|[Functions](functions/index.md)<br /><br />[Inline Functions](functions/inline-functions.md)|Used to indicate a function that should be integrated directly into the caller's code.|
 |`interface`|[Interfaces](interfaces.md)|Used to declare and implement interfaces.|
 |`internal`|[Access Control](access-control.md)|Used to specify that a member is visible inside an assembly but not outside it.|
-|`lazy`|[Lazy Computations](lazy-computations.md)|Used to specify a computation that is to be performed only when a result is needed.|
+|`lazy`|[Lazy Expressions](lazy-expressions.md)|Used to specify an expression that is to be performed only when a result is needed.|
 |`let`|[`let` Bindings](functions/let-bindings.md)|Used to associate, or bind, a name to a value or function.|
 |`let!`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used in asynchronous workflows to bind a name to the result of an asynchronous computation, or, in other computation expressions, used to bind a name to a result, which is of the computation type.|
 |`match`|[Match Expressions](match-expressions.md)|Used to branch by comparing a value to a pattern.|

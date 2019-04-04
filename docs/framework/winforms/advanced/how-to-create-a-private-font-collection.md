@@ -31,9 +31,9 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
   
  If a given family/style combination is available, a <xref:System.Drawing.Font> object is constructed using that family and style. The first argument passed to the <xref:System.Drawing.Font.%23ctor%2A> constructor is the font family name (not a <xref:System.Drawing.FontFamily> object as is the case for other variations of the <xref:System.Drawing.Font.%23ctor%2A> constructor). After the <xref:System.Drawing.Font> object is constructed, it is passed to the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> class to display the family name along with the name of the style.  
   
- The output of the following code is similar to the output shown in the following illustration.  
+ The output of the following code is similar to the output shown in the following illustration:  
   
- ![Fonts Text](./media/csfontstext7.png "csfontstext7")  
+ ![Screenshot that shows text in various fonts.](./media/how-to-create-a-private-font-collection/various-fonts-text-output.png)  
   
  Arial.tff (which was added to the private font collection in the following code example) is the font file for the Arial regular style. Note, however, that the program output shows several available styles other than regular for the Arial font family. That is because [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can simulate the bold, italic, and bold italic styles from the regular style. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can also produce underlines and strikeouts from the regular style.  
   

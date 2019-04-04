@@ -30,6 +30,15 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/docker/docker-basics-dotnet-core.md",
+            "redirect_url": "/dotnet/core/docker/build-docker-netcore-container",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/docker/building-net-docker-images.md",
+            "redirect_url": "/dotnet/core/docker/intro-net-docker"
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -383,6 +392,10 @@
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
+            "source_path": "docs/csharp/lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
         },
@@ -427,16 +440,48 @@
             "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
         },
         {
+            "source_path":"docs/csharp/language-reference/operators/decrement-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/division-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/division-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#division-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/equality-comparison-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/equality-operators#equality-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/increment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/modulus-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/not-equal-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/equality-operators#inequality-operator-"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/null-conditional-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/null-coalescing-operator"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/remainder-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/remainder-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",
@@ -688,12 +733,12 @@
         },
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings-local",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings",
             "redirect_document_id": true
         },
         {
@@ -732,6 +777,14 @@
         {
             "source_path": "docs/csharp/roslyn/index.md",
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
         },
         {
             "source_path": "docs/csharp/tutorials/microservices.md",
@@ -956,6 +1009,11 @@
         {
             "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+
+        {
+            "source_path": "docs/framework/migration-guide/release-keys-and-os-versions.md",
+            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
@@ -1617,6 +1675,11 @@
         {
             "source_path": "docs/fsharp/language-reference/code-formatting-guidelines.md",
             "redirect_url": "/dotnet/fsharp/style-guide/formatting"
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/lazy-computations.md",
+            "redirect_url": "/dotnet/fsharp/language-reference/lazy-expressions",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/language-reference/primitive-types.md",

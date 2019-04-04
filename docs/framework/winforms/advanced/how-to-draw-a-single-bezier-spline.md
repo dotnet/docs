@@ -17,7 +17,7 @@ A Bézier spline is defined by four points: a start point, two control points, a
   
  The following illustration shows the resulting Bézier spline along with its start point, control points, and endpoint. The illustration also shows the spline's convex hull, which is a polygon formed by connecting the four points with straight lines.  
   
- ![Bezier Spline](./media/bezierspline1.png "BezierSpline1")  
+ ![Illustration of a Bezier Spline.](./media/how-to-draw-a-single-bezier-spline/bezier-spline-illustration.png)  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#31)]  

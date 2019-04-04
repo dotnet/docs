@@ -22,10 +22,9 @@ ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
   
 <a name="ToolBars_with_Overflow_Items"></a>   
 ## ToolBars with Overflow Items  
- Often <xref:System.Windows.Controls.ToolBar> controls contain more items than can fit into the toolbar's size. When this happens, the <xref:System.Windows.Controls.ToolBar> displays an overflow button. To see the overflow items, a user clicks the overflow button and the items are shown in a pop-up window below the <xref:System.Windows.Controls.ToolBar>. The following graphic shows a <xref:System.Windows.Controls.ToolBar> with overflow items.  
+ Often <xref:System.Windows.Controls.ToolBar> controls contain more items than can fit into the toolbar's size. When this happens, the <xref:System.Windows.Controls.ToolBar> displays an overflow button. To see the overflow items, a user clicks the overflow button and the items are shown in a pop-up window below the <xref:System.Windows.Controls.ToolBar>. The following graphic shows a <xref:System.Windows.Controls.ToolBar> with overflow items:  
   
- ![ToolBar with overflow](./media/toolbarwithoverflowitem.png "ToolbarWithOverflowItem")  
-Toolbar with Overflow Items  
+ ![Screenshot that shows a toolbar with overflow items.](./media/toolbar-overview/toolbar-overflow-items.png)  
   
  You can specify when an item on a toolbar is placed on the overflow panel by setting the <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=nameWithType> attached property to <xref:System.Windows.Controls.OverflowMode.Always?displayProperty=nameWithType>, <xref:System.Windows.Controls.OverflowMode.Never?displayProperty=nameWithType>, or <xref:System.Windows.Controls.OverflowMode.AsNeeded?displayProperty=nameWithType>. The following example specifies that the last four buttons on the toolbar should always be on the overflow panel.  
   

@@ -389,7 +389,7 @@ namespace StreamingToServer {
          }
       }
 
-      // Application transferring a large BLOB to SQL Server in .Net 4.5
+      // Application transferring a large BLOB to SQL Server in .NET 4.5
       private static async Task StreamBLOBToServer() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();
@@ -407,7 +407,7 @@ namespace StreamingToServer {
          }
       }
 
-      // Application transferring a large Text File to SQL Server in .Net 4.5
+      // Application transferring a large Text File to SQL Server in .NET 4.5
       private static async Task StreamTextToServer() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();

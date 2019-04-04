@@ -99,7 +99,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword.|
 |[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
-|-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|
+|-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|
 
 ## Obsolete Options
 

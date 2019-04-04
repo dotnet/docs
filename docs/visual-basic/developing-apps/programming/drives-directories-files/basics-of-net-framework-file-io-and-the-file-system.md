@@ -24,7 +24,7 @@ The <xref:System.IO> namespace contains the <xref:System.IO.File> and <xref:Syst
 
 The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] uses streams to support reading from and writing to files. You can think of a stream as a one-dimensional set of contiguous data, which has a beginning and an end, and where the cursor indicates the current position in the stream.
 
-![Cursor shows current position in the filestream.](../../../../visual-basic/developing-apps/programming/drives-directories-files/media/filestream.gif "FileStream")
+![Cursor shows current position in the filestream.](./media/basics-of-net-framework-file-io-and-the-file-system/filestream-cursor-position.gif)
 
 ## Stream Operations
 

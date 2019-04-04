@@ -14,7 +14,7 @@ The developer workflow when using the Docker Tools included in Visual Studio 201
 
 With the latest versions of Docker for Windows, it's easier than ever to develop Docker applications because the setup is straightforward, as explained in the following references.
 
-> [!INFORMATION]
+> [!TIP]
 > To learn more about installing Docker for Windows, go to (<https://docs.docker.com/docker-for-windows/>).
 
 ## Docker support in Visual Studio 2017
@@ -78,7 +78,7 @@ The following table might help you decide how to set these options.
 > [!WARNING]
 > If the localhost SSL certificate is not trusted, and you check the box to suppress prompting, then HTTPS web requests might fail at runtime in your app or service. In that case, uncheck the **Do not prompt** checkbox, run your project, and indicate trust at the prompt.
 
-> [!INFORMATION]
+> [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 >
 >Debugging apps in a local Docker container: <https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh>

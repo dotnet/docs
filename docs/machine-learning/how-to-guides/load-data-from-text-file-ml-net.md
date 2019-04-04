@@ -19,6 +19,7 @@ Note that it's perfectly acceptable to read some columns of a file, or read the 
 
 [Example file](https://github.com/dotnet/machinelearning/blob/master/test/data/adult.tiny.with-schema.txt):
 
+<!-- markdownlint-disable MD010 -->
 ```console
 Label	Workclass	education	marital-status
 0	Private	11th	Never-married
@@ -26,11 +27,12 @@ Label	Workclass	education	marital-status
 1	Local-gov	Assoc-acdm	Married-civ-spouse
 1	Private	Some-college	Married-civ-spouse
 ```
+<!-- markdownlint-enable MD010 -->
 
 To load the data from a text file:
 
 ```csharp
-// Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
+// Create a new context for ML.NET operations. It can be used for exception tracking and logging,
 // as a catalog of available operations and as the source of randomness.
 var mlContext = new MLContext();
 

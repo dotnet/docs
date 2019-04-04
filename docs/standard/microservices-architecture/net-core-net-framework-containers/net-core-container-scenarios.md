@@ -23,9 +23,9 @@ Clearly, if your goal is to have an application (web app or service) that can ru
 
 [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) is an IDE, evolution of Xamarin Studio, that runs on macOS and supports Docker-based application development. This should be the preferred choice for developers working in Mac machines who also want to use a powerful IDE.
 
-You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the [.NET Core command-line interface (CLI)](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x). You can also target .NET Core with most third-party editors like Sublime, Emacs, vi, and the open-source OmniSharp project, which also provides IntelliSense support.
+You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the [.NET Core command-line interface (CLI)](../../../core/tools/index.md). You can also target .NET Core with most third-party editors like Sublime, Emacs, vi, and the open-source OmniSharp project, which also provides IntelliSense support.
 
-In addition to the IDEs and editors, you can use the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x) tools for all supported platforms.
+In addition to the IDEs and editors, you can use the [.NET Core CLI](../../../core/tools/index.md) tools for all supported platforms.
 
 ## Using containers for new ("green-field") projects
 

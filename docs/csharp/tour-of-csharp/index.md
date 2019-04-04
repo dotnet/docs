@@ -5,7 +5,7 @@ ms.date: 08/10/2016
 ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
 ---
 
-# A Tour of the C# Language  
+# A Tour of the C# Language
 
 C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
 
@@ -52,23 +52,23 @@ There's a lot more to learn about C#.  The following topics provide an overview 
 * [Types and Variables](types-and-variables.md)
     - Learn about ***value types***, ***reference types***, and ***variables*** in the C# language.
 * [Expressions](expressions.md)
-	- ***Expressions*** are constructed from ***operands*** and ***operators***. Expressions produce a value.
+    - ***Expressions*** are constructed from ***operands*** and ***operators***. Expressions produce a value.
 * [Statements](statements.md)
-	- You use ***statements*** to express the actions of a program.
+    - You use ***statements*** to express the actions of a program.
 * [Classes and objects](classes-and-objects.md)
-	- ***Classes*** are the most fundamental of C#'s types. ***Objects*** are instances of a class. Classes are built using ***members***, which are also covered in this topic.
+    - ***Classes*** are the most fundamental of C#'s types. ***Objects*** are instances of a class. Classes are built using ***members***, which are also covered in this topic.
 * [Structs](structs.md)
-	- ***Structs*** are data structures that, unlike classes, are value types.
+    - ***Structs*** are data structures that, unlike classes, are value types.
 * [Arrays](arrays.md)
-	- An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
+    - An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
 * [Interfaces](interfaces.md)
-	- An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+    - An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 * [Enums](enums.md)
-	- An ***enum type*** is a distinct value type with a set of named constants.
+    - An ***enum type*** is a distinct value type with a set of named constants.
 * [Delegates](delegates.md)
-	- A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
+    - A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
 * [Attributes](attributes.md)
- 	* ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
+     * ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
 
->[!div class="step-by-step"]
->[Next](program-structure.md)
+> [!div class="step-by-step"]
+> [Next](program-structure.md)

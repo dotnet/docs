@@ -407,4 +407,3 @@ catch (Exception e)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageInspectors`  
   
-## See also

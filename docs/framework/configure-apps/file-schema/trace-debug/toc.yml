@@ -1,0 +1,56 @@
+- name: Trace and Debug Settings Schema
+  href: index.md
+  items:
+  - name: <system.diagnostics>
+    href: system-diagnostics-element.md
+    items:
+    - name: <assert>
+      href: assert-element.md
+    - name: <performanceCounters>
+      href: performancecounters-element.md
+    - name: <sharedListeners>
+      href: sharedlisteners-element.md
+      items:
+      - name: <add>
+        href: add-element-for-sharedlisteners.md
+        items:
+        - name: <filter>
+          href: filter-element-for-add-for-sharedlisteners.md
+    - name: <sources>
+      href: sources-element.md
+      items:
+      - name: <source>
+        href: source-element.md
+        items:
+        - name: <listeners>
+          href: listeners-element-for-source.md
+          items:
+          - name: <add>
+            href: add-element-for-listeners-for-source.md
+            items:
+            - name: <filter>
+              href: filter-element-for-add-for-listeners-for-source.md
+          - name: <clear>
+            href: clear-element-for-listeners-for-source.md
+          - name: <remove>
+            href: remove-element-for-listeners-for-source.md
+    - name: <switches>
+      href: switches-element.md
+      items:
+      - name: <add>
+        href: add-element-for-switches.md
+    - name: <trace>
+      href: trace-element.md
+      items:
+      - name: <listeners>
+        href: listeners-element-for-trace.md
+        items:
+        - name: <add>
+          href: add-element-for-listeners-for-trace.md
+          items:
+          - name: <filter>
+            href: filter-element-for-add-for-listeners-for-trace.md
+        - name: <clear>
+          href: clear-element-for-listeners-for-trace.md
+        - name: <remove>
+          href: remove-element-for-listeners-for-trace.md

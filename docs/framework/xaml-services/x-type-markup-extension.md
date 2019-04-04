@@ -55,7 +55,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 ## WPF Usage Notes  
   
 ### Default XAML Namespace and Type Mapping  
- The default XAML namespace for WPF programming contains most of the XAML types you need for typical XAML scenarios; therefore, you can often avoid prefixes when referencing XAML type values. You might need to map a prefix if you are referencing a type from a custom assembly or for types that exist in a WPF assembly but are from a CLR namespace that was not mapped to the default XAML namespace. For more information about prefixes, XAML namespaces, and mapping CLR namespaces, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ The default XAML namespace for WPF programming contains most of the XAML types you need for typical XAML scenarios; therefore, you can often avoid prefixes when referencing XAML type values. You might need to map a prefix if you are referencing a type from a custom assembly or for types that exist in a WPF assembly but are from a CLR namespace that was not mapped to the default XAML namespace. For more information about prefixes, XAML namespaces, and mapping CLR namespaces, see [XAML Namespaces and Namespace Mapping for WPF XAML](../wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 ### Type Properties That Support Typename-as-String  
  WPF supports techniques that enable specifying the value of some properties of type <xref:System.Type> without requiring an `x:Type` markup extension usage. Instead, you can specify the value as a string that names the type. Examples of this are <xref:System.Windows.Controls.ControlTemplate.TargetType%2A?displayProperty=nameWithType> and <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>. Support for this behavior is not provided through either type converters or markup extensions. Instead, this is a deferral behavior implemented through <xref:System.Windows.FrameworkElementFactory>.  
@@ -65,7 +65,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 ## XAML 2009  
  XAML 2009 provides additional support for generic types and modifies the feature behavior of `x:TypeArguments` and `x:Type` to provide this support.  
   
--   `x:TypeArguments` and the associated object element for a generic object instantiation can be on elements other than the root. For more information, see the "XAML 2009" section of [x:TypeArguments Directive](../../../docs/framework/xaml-services/x-typearguments-directive.md).  
+-   `x:TypeArguments` and the associated object element for a generic object instantiation can be on elements other than the root. For more information, see the "XAML 2009" section of [x:TypeArguments Directive](x-typearguments-directive.md).  
   
 -   XAML 2009 supports a syntax for specifying a generic type's constraint in markup. This can be used by `x:TypeArguments`, by `x:Type`, or by the two features in combination.  
   
@@ -75,6 +75,6 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
   
 ## See also
 - <xref:System.Windows.Style>
-- [Styling and Templating](../../../docs/framework/wpf/controls/styling-and-templating.md)
-- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
-- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Styling and Templating](../wpf/controls/styling-and-templating.md)
+- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)
+- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

@@ -18,7 +18,7 @@ When you perform custom drawing, you can draw text in a single horizontal line s
   
  The following illustration shows the output of text drawn at a specified point when you use the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method.  
   
- ![Fonts Text](./media/csfontstext1.png "csfontstext1")  
+ ![Screenshot that shows the output of text at a specified point.](./media/how-to-draw-text-at-a-specified-location/font-text-specified-point.png)  
   
 ### To draw a line of text with GDI+  
   

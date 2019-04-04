@@ -81,4 +81,3 @@ static void OnOfflineEvent(object sender, AnnouncementEventArgs e)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Announcements`  
   
-## See also

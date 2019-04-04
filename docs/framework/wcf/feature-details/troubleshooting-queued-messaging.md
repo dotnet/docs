@@ -180,7 +180,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
 -   If you are in domain mode, remote transacted receive requires Microsoft Distributed Transaction Coordinator (MSDTC) network access. You can enable this using **Add/Remove Components**.  
   
-     ![Enabling network DTC access](../../../../docs/framework/wcf/feature-details/media/applicationserveraddcomps.jpg "ApplicationServerAddComps")  
+     ![Screenshot that shows enabling network DTC access.](./media/troubleshooting-queued-messaging/enable-distributed-transaction-coordinator-access.jpg)  
   
 -   Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.  
   

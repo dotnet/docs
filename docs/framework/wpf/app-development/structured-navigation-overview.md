@@ -31,9 +31,9 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
 -   When the calling page returns to the called page, the called page is removed from navigation history to isolate one instance of a called page from another.  
   
- These behaviors are illustrated by the following figure.  
+ These behaviors are illustrated by the following figure:  
   
- ![Flow between calling page and called page](./media/structurednavigationoverviewfigure1.png "StructuredNavigationOverviewFigure1")  
+ ![Screenshot shows the flow between calling page and called page.](./media/structured-navigation-overview/flow-between-calling-page-called-page.png)  
   
  You can implement these behaviors by using a <xref:System.Windows.Navigation.PageFunction%601> as the called page.  
   

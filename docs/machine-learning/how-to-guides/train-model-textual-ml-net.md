@@ -5,6 +5,7 @@ ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to apply feature engineering for my model training on textual data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
+
 # Apply feature engineering for machine learning model training on textual data with ML.NET
 
 > [!NOTE]
@@ -26,6 +27,7 @@ To learn on textual data, you need to extract text features. ML.NET has some bas
 The following example demonstrates ML.NET text feature extraction mechanisms using the 
 [Wikipedia detox dataset](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv):
 
+<!-- markdownlint-disable MD010 -->
 ```console
 Sentiment   SentimentText
 1	Stop trolling, zapatancas, calling me a liar merely demonstartes that you arer Zapatancas. You may choose to chase every legitimate editor from this site and ignore me but I am an editor with a record that isnt 99% trolling and therefore my wishes are not to be completely ignored by a sockpuppet like yourself. The consensus is overwhelmingly against you and your trolling lover Zapatancas,  
@@ -33,6 +35,7 @@ Sentiment   SentimentText
 0	" *::Your POV and propaganda pushing is dully noted. However listing interesting facts in a netral and unacusitory tone is not POV. You seem to be confusing Censorship with POV monitoring. I see nothing POV expressed in the listing of intersting facts. If you want to contribute more facts or edit wording of the cited fact to make them sound more netral then go ahead. No need to CENSOR interesting factual information. "
 0	::::::::This is a gross exaggeration. Nobody is setting a kangaroo court. There was a simple addition concerning the airline. It is the only one disputed here.   
 ```
+<!-- markdownlint-enable MD010 -->
 
 ```csharp
 // Define the reader: specify the data columns and where to find them in the text file.

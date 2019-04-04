@@ -179,5 +179,3 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 ### To clean up after the sample
 
 -   Run Cleanup.bat in the samples folder after you have finished running the sample.
-
-## See also

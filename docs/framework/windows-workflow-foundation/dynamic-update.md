@@ -96,7 +96,7 @@ using (FileStream fs = System.IO.File.Open(@"C:\WorkflowDefinitions\MortgageWork
 }
 ```
 
-When <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> returns, the cloned workflow definition and other dynamic update information that was added in the call to <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType> is removed, and the modified workflow definition is ready to be saved so that it can be used later when resuming updated workflow instances. In the following example, the modified workflow definition is saved to `MortgageWorkflow_v2.xaml`.
+When <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> returns, the cloned workflow definition and other dynamic update information that was added in the call to <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType> is removed, and the modified workflow definition is ready to be saved so that it can be used later when resuming updated workflow instances. In the following example, the modified workflow definition is saved to `MortgageWorkflow_v1.1.xaml`.
 
 ```csharp
 // Save the modified workflow definition.

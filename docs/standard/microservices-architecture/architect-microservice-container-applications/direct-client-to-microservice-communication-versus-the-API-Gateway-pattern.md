@@ -167,25 +167,25 @@ After the initial architecture and patterns explanation sections, the next secti
 ## Additional resources
 
 - **Charles Richardson. Pattern: API Gateway / Backend for Front-End** \
-  [*https://microservices.io/patterns/apigateway.html*](https://microservices.io/patterns/apigateway.html)
+  [https://microservices.io/patterns/apigateway.html](https://microservices.io/patterns/apigateway.html)
 
 - **API Gateway pattern** \
-  [*https://docs.microsoft.com/azure/architecture/microservices/gateway*](https://docs.microsoft.com/azure/architecture/microservices/gateway)
+  [https://docs.microsoft.com/azure/architecture/microservices/gateway](https://docs.microsoft.com/azure/architecture/microservices/gateway)
 
 - **Aggregation and composition pattern** \
-  [*https://microservices.io/patterns/data/api-composition.html*](https://microservices.io/patterns/data/api-composition.html)
+  [https://microservices.io/patterns/data/api-composition.html](https://microservices.io/patterns/data/api-composition.html)
 
 - **Azure API Management** \
-  [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)
+  [https://azure.microsoft.com/services/api-management/](https://azure.microsoft.com/services/api-management/)
 
 - **Udi Dahan. Service Oriented Composition** \
-  [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
+  [http://udidahan.com/2014/07/30/service-oriented-composition-with-video/](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
 - **Clemens Vasters. Messaging and Microservices at GOTO 2016 (video)** \
-  [*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
+  [https://www.youtube.com/watch?v=rXi5CLjIQ9k](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
 
 - **API Gateway in a Nutshell** (ASP.net Core API Gateway Tutorial Series) \
-  [*https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
+  [https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
 
 >[!div class="step-by-step"]
 >[Previous](identify-microservice-domain-model-boundaries.md)

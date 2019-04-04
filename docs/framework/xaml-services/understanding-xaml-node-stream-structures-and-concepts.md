@@ -213,7 +213,7 @@ The following list notes all cases where a XAML reader is expected to introduce 
 
 - **Unknown content:** The name of this member node is `_UnknownContent`. Strictly speaking, it is a <xref:System.Xaml.XamlDirective>, and it is defined in the XAML language XAML namespace. This directive is used as a sentinel for cases where a XAML object element contains content in the source XAML but no content property can be determined under the currently available XAML schema context. You can detect this case in a XAML node stream by checking for members named `_UnknownContent`. If no other action is taken in a load path XAML node stream, the default <xref:System.Xaml.XamlObjectWriter> throws on attempted `WriteEndObject` when it encounters the `_UnknownContent` member on any object. The default <xref:System.Xaml.XamlXmlWriter> does not throw, and treats the member as implicit. You can get a static entity for `_UnknownContent` from <xref:System.Xaml.XamlLanguage.UnknownContent%2A>.
 
-- **Collection property of a collection:**Although the backing CLR type of a collection class that is used for XAML usually has a dedicated named property that holds the collection items, that property is not known to a XAML type system prior to backing type resolution. Instead, the XAML node stream introduces an `Items` placeholder as a member of the collection XAML type. In the .NET Framework XAML Services implementation the name of this directive / member in the node stream is `_Items`. A constant for this directive can be obtained from <xref:System.Xaml.XamlLanguage.Items%2A>.
+- **Collection property of a collection:** Although the backing CLR type of a collection class that is used for XAML usually has a dedicated named property that holds the collection items, that property is not known to a XAML type system prior to backing type resolution. Instead, the XAML node stream introduces an `Items` placeholder as a member of the collection XAML type. In the .NET Framework XAML Services implementation the name of this directive / member in the node stream is `_Items`. A constant for this directive can be obtained from <xref:System.Xaml.XamlLanguage.Items%2A>.
 
     Note that a XAML node stream might contain an Items property with items that turn out to not be parsable based on the backing type resolution and XAML schema context. For example,
 
@@ -227,7 +227,7 @@ Certain directives are intended specifically to provide more information for the
 
 ### XamlObjectWriter Behavior and Node Order
 
-`StartObject` to a <xref:System.Xaml.XamlObjectWriter> is not necessarily a signal to the XAML object writer to immediately construct the object instance. XAML includes several language features that make it possible to initialize an object with additional input, and to not rely entirely on invoking a default constructor to produce the initial object, and only then setting properties. These features include: <xref:System.Windows.Markup.XamlDeferLoadAttribute>; initialization text; [x:TypeArguments](../../../docs/framework/xaml-services/x-typearguments-directive.md); positional parameters of a markup extension; factory methods and associated [x:Arguments](../../../docs/framework/xaml-services/x-arguments-directive.md) nodes (XAML 2009). Each of these cases delay the actual object construction, and because the node stream is reordered, the XAML object writer can rely on a behavior of actually constructing the instance whenever a start member is encountered that is not specifically a construction directive for that object type.
+`StartObject` to a <xref:System.Xaml.XamlObjectWriter> is not necessarily a signal to the XAML object writer to immediately construct the object instance. XAML includes several language features that make it possible to initialize an object with additional input, and to not rely entirely on invoking a default constructor to produce the initial object, and only then setting properties. These features include: <xref:System.Windows.Markup.XamlDeferLoadAttribute>; initialization text; [x:TypeArguments](x-typearguments-directive.md); positional parameters of a markup extension; factory methods and associated [x:Arguments](x-arguments-directive.md) nodes (XAML 2009). Each of these cases delay the actual object construction, and because the node stream is reordered, the XAML object writer can rely on a behavior of actually constructing the instance whenever a start member is encountered that is not specifically a construction directive for that object type.
 
 ### GetObject
 
@@ -236,5 +236,5 @@ Certain directives are intended specifically to provide more information for the
 ## See also
 
 - <xref:System.Xaml.XamlObjectReader>
-- [XAML Services](../../../docs/framework/xaml-services/index.md)
-- [XAML Namespaces](../../../docs/framework/xaml-services/xaml-namespaces-for-net-framework-xaml-services.md)
+- [XAML Services](index.md)
+- [XAML Namespaces](xaml-namespaces-for-net-framework-xaml-services.md)

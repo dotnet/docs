@@ -47,7 +47,7 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
 ## Architecture Overview  
  The following diagram illustrates the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] architecture for exposing [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds and using these feeds in [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-enabled client libraries:  
   
- ![WCF Data Services architecture diagram](../../../../docs/framework/data/wcf/media/astoriaservicearch.gif "AstoriaServiceArch")  
+ ![Screenshot showing a WCF Data Services architecture diagram.](./media/wcf-data-services-overview/windows-communication-foundation-data-services-architecture.gif)  
   
 ## See also
 - [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)

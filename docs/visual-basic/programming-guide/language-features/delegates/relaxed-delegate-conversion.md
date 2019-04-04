@@ -77,6 +77,7 @@ End Sub
  [!code-vb[VbVbalrRelaxedDelegates#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#11)]  
   
 ## See also
+
 - [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)

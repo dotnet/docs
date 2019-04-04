@@ -2,7 +2,7 @@
 title: The .NET Security Analyzers - .NET
 description: Learn how to use the .NET Security Analyzers in the .NET Framework Analyzers package to find and address security risks
 author: billwagner
-ms.author: billwagner
+ms.author: wiwagn
 ms.date: 01/25/2018
 ms.technology: dotnet-standard
 ---

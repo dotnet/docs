@@ -21,7 +21,7 @@ This topic itemizes and discusses the components of the Windows Process Activati
   
  When WAS activates a worker process instance, it loads the process protocol handlers required into the worker process and uses the application manager to create an application domain to host the application. The application domain loads the application’s code as well as the AppDomain protocol handlers that the network protocols used by the application require.  
   
- ![WAS Architecture](../../../../docs/framework/wcf/feature-details/media/wasarchitecture.gif "WASArchitecture")  
+ ![Screenshot that shows the WAS architecture.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### Listener Adapters  
  Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for Windows Communication Foundation (WCF) protocols.  

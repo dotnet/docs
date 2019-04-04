@@ -123,7 +123,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Service API:**  <xref:System.Xaml.IXamlSchemaContextProvider.SchemaContext%2A>  
   
- XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](../../../docs/framework/xaml-services/index.md).  
+ XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](index.md).  
   
 ### IRootObjectProvider  
  **Reference documentation**: <xref:System.Xaml.IRootObjectProvider>  
@@ -183,5 +183,5 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
 ## See also
 - <xref:System.Windows.Markup.MarkupExtension>
 - <xref:System.Xaml.XamlObjectWriter>
-- [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)
-- [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md)
+- [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md)
+- [Type Converters for XAML Overview](type-converters-for-xaml-overview.md)

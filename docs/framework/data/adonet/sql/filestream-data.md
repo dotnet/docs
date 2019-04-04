@@ -175,7 +175,7 @@ The complete documentation for FILESTREAM is located in the following sections i
 |Topic|Description|
 |-----------|-----------------|
 |[FILESTREAM (SQL Server)](/sql/relational-databases/blob/filestream-sql-server)|Describes when to use FILESTREAM storage and how it integrates the SQL Server Database Engine with an NTFS file system.|
-|[Create Client Applications for FILESTREAM Data](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|Describes the Win32 API functions for working with FILESTREAM data.|
+|[Create Client Applications for FILESTREAM Data](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|Describes the Windows API functions for working with FILESTREAM data.|
 |[FILESTREAM and Other SQL Server Features](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|Provides considerations, guidelines and limitations for using FILESTREAM data with other features of SQL Server.|
 
 ## See also

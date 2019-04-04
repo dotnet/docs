@@ -73,8 +73,7 @@ Named arguments and optional arguments, introduced in [!INCLUDE[csharp_dev10_lon
   
 1.  Use the `ConvertToTable` method to enclose the text in a table. The method has sixteen optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration.  
   
-     ![List of parameters for ConvertToTable method.](../../../csharp/programming-guide/classes-and-structs/media/convert_tableparameters.png "Convert_TableParameters")  
-ConvertToTable parameters  
+     ![List of parameters for ConvertToTable method](./media/how-to-use-named-and-optional-arguments-in-office-programming/convert-table-parameters.png)  
   
      Named and optional arguments enable you to specify values for only the parameters that you want to change. Add the following code to the end of method `DisplayInWord` to create a simple table. The argument specifies that the commas in the text string in `range` separate the cells of the table.  
   

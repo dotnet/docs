@@ -59,7 +59,7 @@ In [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)] and [!INCLUDE[
 |<xref:System.Windows.Markup.StaticExtension>|`{x:Static ...}`|  
 |<xref:System.Windows.Markup.TypeExtension>|`{x:Type ...}`|  
   
- Although System.Xaml may not have specific support classes, the general logic for processing language features for the XAML language now resides in System.Xaml and its implemented XAML readers and XAML writers. For example, `x:TypeArguments` is an attribute that is processed by XAML readers and XAML writers from System.Xaml implementations; it can be noted in the XAML node stream, has handling in the default (CLR-based) XAML schema context, has a XAML type-system representation, and so on. As a result, the reference documentation for all XAML language-level features is a subtopic for [XAML Services](../../../docs/framework/xaml-services/index.md) and that general area of the .NET Framework documentation set, instead of being part of the WPF documentation set as a subtopic of [Advanced (Windows Presentation Foundation)](../../../docs/framework/wpf/advanced/index.md) (as is still the case in 3.5 documentation sets).  
+ Although System.Xaml may not have specific support classes, the general logic for processing language features for the XAML language now resides in System.Xaml and its implemented XAML readers and XAML writers. For example, `x:TypeArguments` is an attribute that is processed by XAML readers and XAML writers from System.Xaml implementations; it can be noted in the XAML node stream, has handling in the default (CLR-based) XAML schema context, has a XAML type-system representation, and so on. As a result, the reference documentation for all XAML language-level features is a subtopic for [XAML Services](index.md) and that general area of the .NET Framework documentation set, instead of being part of the WPF documentation set as a subtopic of [Advanced (Windows Presentation Foundation)](../wpf/advanced/index.md) (as is still the case in 3.5 documentation sets).  
   
 <a name="valueserializer_and_supporting_classes"></a>   
 ## ValueSerializer and Supporting Classes  
@@ -120,4 +120,4 @@ In [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)] and [!INCLUDE[
  If you are including references to both WPF assemblies and System.Xaml, and you also are using `include` statements for both the <xref:System.Windows.Markup> and <xref:System.Xaml> namespaces, you may need to fully qualify the calls to these APIs in order to resolve the types without ambiguity.  
   
 ## See also
-- [XAML Services](../../../docs/framework/xaml-services/index.md)
+- [XAML Services](index.md)

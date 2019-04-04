@@ -69,7 +69,6 @@ This section introduces the general and core concepts behind queued communicatio
   
 ## See also
 - [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
-- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
 - [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
 - [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)
 - [Volatile Queued Communication](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)

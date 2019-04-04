@@ -46,7 +46,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 |---------------|-----------------|  
 |authenticationType|A URI that specifies the authentication type. Sets the WS-Federation sign-in request wauth parameter. Optional. The default is an empty string, which specifies that the wauth parameter is not included in the request.|  
 |freshness|The desired maximum age of authentication requests, in minutes. Sets the WS-Federation sign-in request wfresh parameter. Optional. The default is zero. Optional. **Warning:**  In the next release of .NET Framework 4.5, the `freshness` attribute will be of type `xs:string` and its default value will be `null`.|  
-|homeRealm|The home realm of the identity provider (IP) to use for authentication. Sets the WS-Federation sign-in request whr parameter. Optional. The default is an empty string, which specifies that the whr parameter is not included in the request.|  
+|homeRealm|The home realm of the identity provider (IdP) to use for authentication. Sets the WS-Federation sign-in request whr parameter. Optional. The default is an empty string, which specifies that the whr parameter is not included in the request.|  
 |issuer|The URI of the intended token issuer. Sets the base URL of WS-Federation sign-in requests and sign-out requests Required.|  
 |persistentCookiesOnPassiveRedirects|Specifies whether persistent cookies are issued on authentication. Optional. The default is "false", cookies are not issued.|  
 |passiveRedirectEnabled|Specifies whether the WSFAM is enabled to automatically redirect unauthorized requests to an STS. Optional. The default is "true", unauthorized requests are automatically redirected.|  

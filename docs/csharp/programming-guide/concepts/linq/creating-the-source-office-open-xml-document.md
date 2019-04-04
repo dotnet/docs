@@ -1,19 +1,7 @@
 ---
 title: "Creating the Source Office Open XML Document (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 653c8cdb-73be-4dc2-927f-924cfb4ed9ed
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Creating the Source Office Open XML Document (C#)
 This topic shows how to create the Office Open XML WordprocessingML document that the other examples in this tutorial use. If you follow these instructions, your output will match the output provided in each example.  
@@ -59,5 +47,6 @@ This topic shows how to create the Office Open XML WordprocessingML document tha
     > [!NOTE]
     >  If you are using Microsoft Word 2003, select **Word 2007 Document** in the **Save as Type** drop-down list.  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

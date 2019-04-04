@@ -2,10 +2,6 @@
 title: QualifierSet_Next function (Unmanaged API Reference)
 description: The QualifierSet_Next function retrieves the next qualifier in an enumeration.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_Next"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_Next function
 Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.   
@@ -48,7 +41,7 @@ HRESULT QualifierSet_Next (
 [in] This parameter is unused.
 
 `ptr`   
-[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 `lFlags`   
 [in] Reserved. This parameter must be 0.
@@ -76,7 +69,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemQualifierSet::Next](https://msdn.microsoft.com/library/aa391870(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemQualifierSet::Next](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-next) method.
 
 You call the `QualifierSet_Next` function repeatedly to enumerate all the qualifiers until the function return `WBEM_S_NO_MORE_DATA`. To terminate the enumeration early, call the [QualifierSet_EndEnumeration](qualifierset-endenumeration.md) function.
 
@@ -89,5 +82,5 @@ The order of the qualifiers returned during the enumeration is undefined.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

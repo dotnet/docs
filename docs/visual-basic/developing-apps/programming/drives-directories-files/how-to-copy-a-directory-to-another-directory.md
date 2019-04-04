@@ -1,22 +1,12 @@
 ---
 title: "How to: Copy a Directory to Another Directory in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "I/O [Visual Basic], copying directories"
   - "I/O [Visual Basic], copying folders"
   - "folders [Visual Basic], copying"
   - "directories [Visual Basic], copying"
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Copy a Directory to Another Directory in Visual Basic
 Use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> method to copy a directory to another directory. This method copies the contents of the directory as well as the directory itself. If the target directory does not exist, it will be created. If a directory with the same name exists in the target location and `overwrite` is set to `False`, the contents of the two directories will be merged. You can specify a new name for the directory during the operation.  
@@ -27,7 +17,7 @@ Use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> method t
   
 -   Use the `CopyDirectory` method, specifying source and destination directory names. The following example copies the directory named `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
   
-     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-copy-a-directory-to-another-directory_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#16)]  
   
      This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **File system - Processing Drives, Folders, and Files**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
@@ -64,7 +54,8 @@ Use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> method t
   
 -   A destination file exists but cannot be accessed (<xref:System.UnauthorizedAccessException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>  
- [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)  
- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>
+- [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)
+- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)

@@ -1,23 +1,14 @@
 ---
-title: "Lambda expressions are not valid in the first expression of a &#39;Select Case&#39; statement"
+title: "Lambda expressions are not valid in the first expression of a 'Select Case' statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc36635"
   - "vbc36635"
 helpviewer_keywords: 
   - "BC36635"
 ms.assetid: 74609979-9c03-4864-bbce-f588aa2e0917
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# Lambda expressions are not valid in the first expression of a &#39;Select Case&#39; statement
+# Lambda expressions are not valid in the first expression of a 'Select Case' statement
 You cannot use a lambda expression for the test expression in a `Select Case` statement. Lambda expression definitions return functions, and the test expression of a `Select Case` statement must be an elementary data type.  
   
  The following code causes this error:  
@@ -43,7 +34,8 @@ Select Case ((Function(arg? As Integer) arg Is Nothing)(num))
 End Select  
 ```  
   
-## See Also  
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)
+## See also
+
+- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)

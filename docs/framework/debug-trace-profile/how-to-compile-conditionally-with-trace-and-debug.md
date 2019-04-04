@@ -1,14 +1,6 @@
 ---
 title: "How to: Compile Conditionally with Trace and Debug"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "trace compiler options"
   - "trace statements"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "TRACE directive"
   - "conditional compilation, tracing code"
 ms.assetid: 56d051c3-012c-42c1-9a58-7270edc624aa
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Compile Conditionally with Trace and Debug
 While you are debugging an application during development, both your tracing and debugging output go to the Output window in Visual Studio. However, to include tracing features in a deployed application, you must compile your instrumented applications with the **TRACE** compiler directive enabled. This allows tracing code to be compiled into the release version of your application. If you do not enable the **TRACE** directive, all tracing code is ignored during compilation and is not included in the executable code that you will deploy.  
@@ -101,11 +89,11 @@ Comment out the compiler directive.
 > [!NOTE]
 >  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
-## See Also  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)  
- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)  
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
- [How to: Set Environment Variables for the Visual Studio Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
- [How to: Invoke the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)
+## See also
+- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
+- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
+- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
+- [How to: Set Environment Variables for the Visual Studio Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to: Invoke the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

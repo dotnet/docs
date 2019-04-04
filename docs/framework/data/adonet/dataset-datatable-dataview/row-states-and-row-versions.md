@@ -1,24 +1,10 @@
 ---
 title: "Row States and Row Versions"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "07/19/2018"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Row States and Row Versions
 ADO.NET manages rows in tables using row states and versions. A row state indicates the status of a row; row versions maintain the values stored in a row as it is modified, including current, original, and default values. For example, after you have made a modification to a column in a row, the row will have a row state of `Modified`, and two row versions: `Current`, which contains the current row values, and `Original`, which contains the row values before the column was modified.  
@@ -52,7 +38,7 @@ string custID = custRow["CustomerID", DataRowVersion.Original].ToString();
 |DataRowVersion value|Description|  
 |--------------------------|-----------------|  
 |<xref:System.Data.DataRowVersion.Current>|The current values for the row. This row version does not exist for rows with a `RowState` of `Deleted`.|  
-|<xref:System.Data.DataRowVersion.Default>|The default row version for a particular row. The default row version for an `Added`, `Modified`, or `Unchanged` row is `Current`. The default row version for a `Deleted` row is `Original`. The default row version for a `Detached` row is `Proposed`.|  
+|<xref:System.Data.DataRowVersion.Default>|The default row version for a particular row. The default row version for an `Added`, `Modified`, or `Deleted` row is `Current`. The default row version for a `Detached` row is `Proposed`.|  
 |<xref:System.Data.DataRowVersion.Original>|The original values for the row. This row version does not exist for rows with a `RowState` of `Added`.|  
 |<xref:System.Data.DataRowVersion.Proposed>|The proposed values for the row. This row version exists during an edit operation on a row, or for a row that is not part of a `DataRowCollection`.|  
   
@@ -102,8 +88,8 @@ foreach (DataRow delRow in delRows)
 }  
 ```  
   
-## See Also  
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [DataAdapters and DataReaders](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
+- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [DataAdapters and DataReaders](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

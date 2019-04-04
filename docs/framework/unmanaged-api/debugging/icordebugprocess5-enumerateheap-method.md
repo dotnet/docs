@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess5::EnumerateHeap Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess5.EnumerateHeap"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess5::EnumerateHeap Method
 Gets an enumerator for the objects on the managed heap.  
@@ -41,7 +29,7 @@ HRESULT EnumerateHeap(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppObject`  
  [out] A pointer to the address of an [ICorDebugHeapEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md) interface object that is an enumerator for the objects that reside on the managed heap.  
   
@@ -59,6 +47,6 @@ HRESULT EnumerateHeap(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

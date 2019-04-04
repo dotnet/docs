@@ -1,13 +1,6 @@
 ---
 title: "Numeric Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "integral types [Visual Basic], Visual Basic"
   - "Short data type [Visual Basic], numeric data types"
@@ -30,14 +23,11 @@ helpviewer_keywords:
   - "Single data type [Visual Basic], numeric types"
   - "Decimal data type [Visual Basic], numeric data types"
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Numeric Data Types (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies several *numeric data types* for handling numbers in various representations. *Integral* types represent only whole numbers (positive, negative, and zero), and *nonintegral* types represent numbers with both integer and fractional parts.  
+Visual Basic supplies several *numeric data types* for handling numbers in various representations. *Integral* types represent only whole numbers (positive, negative, and zero), and *nonintegral* types represent numbers with both integer and fractional parts.  
   
- For a table showing a side-by-side comparison of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types, see [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md).  
+ For a table showing a side-by-side comparison of the Visual Basic data types, see [Data Types](../../../../visual-basic/language-reference/data-types/index.md).  
   
 ## Integral Numeric Types  
  *Integral data types* are those that represent only numbers without fractional parts.  
@@ -47,7 +37,7 @@ ms.author: dotnetcontent
  The *unsigned* integral types are [Byte Data Type](../../../../visual-basic/language-reference/data-types/byte-data-type.md) (8-bit), [UShort Data Type](../../../../visual-basic/language-reference/data-types/ushort-data-type.md) (16-bit), [UInteger Data Type](../../../../visual-basic/language-reference/data-types/uinteger-data-type.md) (32-bit), and [ULong Data Type](../../../../visual-basic/language-reference/data-types/ulong-data-type.md) (64-bit). If a variable contains binary data, or data of unknown nature, declare it as one of these types.  
   
 ### Performance  
- Arithmetic operations are faster with integral types than with other data types. They are fastest with the `Integer` and `UInteger` types in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Arithmetic operations are faster with integral types than with other data types. They are fastest with the `Integer` and `UInteger` types in Visual Basic.  
   
 ### Large Integers  
  If you need to hold an integer larger than the `Integer` data type can hold, you can use the `Long` data type instead. `Long` variables can hold numbers from -9,223,372,036,854,775,808 through 9,223,372,036,854,775,807. Operations with `Long` are slightly slower than with `Integer`.  
@@ -82,9 +72,10 @@ ms.author: dotnetcontent
 ### Small Fractional Numbers  
  If you do not need the full range of the `Double` data type, you can use the `Single` data type, which can hold floating-point numbers from -3.4028235E+38 through 3.4028235E+38. The smallest magnitudes for `Single` variables are -1.401298E-45 for negative values and 1.401298E-45 for positive values. If you have a very large number of variables that hold small floating-point numbers, the common language runtime can sometimes store your `Single` variables more efficiently and save memory consumption.  
   
-## See Also  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)  
- [Miscellaneous Data Types](../../../../visual-basic/programming-guide/language-features/data-types/miscellaneous-data-types.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [How to: Call a Windows Function that Takes Unsigned Types](../../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
+## See also
+
+- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)
+- [Miscellaneous Data Types](../../../../visual-basic/programming-guide/language-features/data-types/miscellaneous-data-types.md)
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [How to: Call a Windows Function that Takes Unsigned Types](../../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)

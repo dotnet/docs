@@ -1,24 +1,13 @@
 ---
 title: "XmlSchemaSet for Schema Compilation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 55c4b175-3170-4071-9d60-dd5a42f79b54
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XmlSchemaSet for Schema Compilation
 Describes the <xref:System.Xml.Schema.XmlSchemaSet>, a cache where XML Schema definition language (XSD) schemas can be stored and validated.  
@@ -256,13 +245,14 @@ foreach (XmlSchema schema in schemaSet.Schemas())
   
  For more information about validating XML documents using an <xref:System.Xml.Schema.XmlSchemaSet>, see [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md).  
   
-## See Also  
- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
- [XmlSchemaSet as a Schema Cache](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)
+## See also
+
+- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>
+- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>
+- [XmlSchemaSet as a Schema Cache](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+- [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)

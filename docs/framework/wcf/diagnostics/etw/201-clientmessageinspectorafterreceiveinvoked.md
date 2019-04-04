@@ -1,21 +1,7 @@
 ---
 title: "201 - ClientMessageInspectorAfterReceiveInvoked"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9ff637f1-cc26-4400-ab9b-546f70e5057d
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 201 - ClientMessageInspectorAfterReceiveInvoked
 ## Properties  

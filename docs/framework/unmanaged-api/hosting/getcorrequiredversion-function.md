@@ -1,14 +1,6 @@
 ---
 title: "GetCORRequiredVersion Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetCORRequiredVersion"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 1588fe7b-c378-4f4b-9c4b-48647f1119cc
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetCORRequiredVersion Function
 Gets the required common language runtime (CLR) version number.  
@@ -44,7 +32,7 @@ HRESULT GetCORRequiredVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  [out] A buffer containing a string that specifies the version number.  
   
@@ -63,5 +51,5 @@ HRESULT GetCORRequiredVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

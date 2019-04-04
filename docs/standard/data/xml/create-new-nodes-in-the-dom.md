@@ -1,21 +1,10 @@
 ---
 title: "Create New Nodes in the DOM"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6c2b9789-b61a-49f9-b33f-db01a945edf2
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Create New Nodes in the DOM
 The <xref:System.Xml.XmlDocument> has a create method for all of the node types. Supply the method with a name when required, and content or other parameters for those nodes that have content (for example, a text node), and the node is created. The following methods are ones that need a name and a few other parameters filled to create an appropriate node.  
@@ -56,5 +45,6 @@ The <xref:System.Xml.XmlDocument> has a create method for all of the node types.
 |<xref:System.Xml.XmlNode.PrependChild%2A>|Adds the node to the beginning of the list of child nodes of the given node. If the node being added is an <xref:System.Xml.XmlDocumentFragment>, the entire contents of the document fragment are moved into the child list of this node. For more information, see the <xref:System.Xml.XmlNode.PrependChild%2A> method.|  
 |<xref:System.Xml.XmlAttributeCollection.Append%2A>|Appends an <xref:System.Xml.XmlAttribute> node to the end of the attribute collection associated with an element. For more information, see the <xref:System.Xml.XmlAttributeCollection.Append%2A> method.|  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

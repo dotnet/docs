@@ -1,24 +1,10 @@
 ---
 title: "Copying DataSet Contents"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: cb846617-2b1a-44ff-bd7f-5835f5ea37fa
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Copying DataSet Contents
 You can create a copy of a <xref:System.Data.DataSet> so that you can work with data without affecting the original data, or work with a subset of the data from a **DataSet**. When copying a **DataSet**, you can:  
@@ -102,8 +88,8 @@ foreach (DataRow copyRow in copyRows)
   customerTable.ImportRow(copyRow);  
 ```  
   
-## See Also  
- <xref:System.Data.DataSet>  
- <xref:System.Data.DataTable>  
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataSet>
+- <xref:System.Data.DataTable>
+- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

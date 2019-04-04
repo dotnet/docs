@@ -1,18 +1,7 @@
 ---
 title: "How to: Group Files by Extension (LINQ) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 904dc6d7-7162-4655-a7f4-5785d669bc5a
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Group Files by Extension (LINQ) (Visual Basic)
 This example shows how LINQ can be used to perform advanced grouping and sorting operations on lists of files or folders. It also shows how to page output in the console window by using the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> methods.  
@@ -52,14 +41,14 @@ Module GroupByExtension
   
     End Sub  
   
-    ' Pages console diplay for large query results. No more than one group per page.  
+    ' Pages console display for large query results. No more than one group per page.  
     ' This sub specifically works with group queries of FileInfo objects  
     ' but can be modified for any type.  
     Sub PageOutput(ByVal groupQuery, ByVal charsToSkip)  
   
         ' "3" = 1 line for extension key + 1 for "Press any key" + 1 for input cursor.  
         Dim numLines As Integer = Console.WindowHeight - 3  
-        ' Flag to indicate whether there are more results to diplay  
+        ' Flag to indicate whether there are more results to display  
         Dim goAgain As Boolean = True  
   
         For Each fg As IEnumerable(Of System.IO.FileInfo) In groupQuery  
@@ -101,6 +90,7 @@ End Module
 ## Compiling the Code  
  Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a   `Imports` statement for the System.Linq namespace.  
   
-## See Also  
- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+## See also
+
+- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

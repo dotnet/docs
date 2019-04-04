@@ -1,13 +1,8 @@
 ---
-title: "Character Classes in Regular Expressions"
-ms.custom: ""
+title: Character Classes in .NET Regular Expressions
+description: Learn how to use character classes to represent a set of characters in .NET regular expressions.
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +12,9 @@ helpviewer_keywords:
   - "characters, matching syntax"
   - ".NET Framework regular expressions, character classes"
 ms.assetid: 0f8bffab-ee0d-4e0e-9a96-2b4a252bb7e4
-caps.latest.revision: 58
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+ms.custom: seodec18
 ---
 # Character Classes in Regular Expressions
 <a name="Top"></a> A character class defines a set of characters, any one of which can occur in an input string for a match to succeed. The regular expression language in .NET supports the following character classes:  
@@ -53,7 +44,7 @@ ms.workload:
  .NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character Class Subtraction](#CharacterClassSubtraction).  
   
 > [!NOTE]
->  Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories.  Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], character categories are based on [The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/). In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] through the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], they are based on [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).  
+>  Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories.  Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], character categories are based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] through the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], they are based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).  
   
 <a name="PositiveGroup"></a>   
 ## Positive Character Group: [ ]  
@@ -173,7 +164,7 @@ ms.workload:
 > [!NOTE]
 >  Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character, \u000D).  
   
--   In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of four punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
+-   In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
   
      [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/any1.cs#4)]
      [!code-vb[Conceptual.RegEx.Language.CharacterClasses#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any1.vb#4)]  
@@ -193,7 +184,7 @@ ms.workload:
   
  matches any character that belongs to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.  
   
- The following example uses the `\p{`*name*`}` construct to match both a Unicode general category (in this case, the `Pd`, or Punctuation,Dash category) and a named block (the `IsGreek` and `IsBasicLatin` named blocks).  
+ The following example uses the `\p{`*name*`}` construct to match both a Unicode general category (in this case, the `Pd`, or Punctuation, Dash category) and a named block (the `IsGreek` and `IsBasicLatin` named blocks).  
   
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/category1.cs#6)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/category1.vb#6)]  
@@ -403,7 +394,7 @@ ms.workload:
   
 <a name="SupportedUnicodeGeneralCategories"></a>   
 ## Supported Unicode General Categories  
- Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](http://www.unicode.org/reports/tr44/).  
+ Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://www.unicode.org/reports/tr44/).  
   
 |Category|Description|  
 |--------------|-----------------|  
@@ -595,7 +586,8 @@ ms.workload:
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/classsubtraction1.cs#15)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/classsubtraction1.vb#15)]  
   
-## See Also  
- <xref:System.Char.GetUnicodeCategory%2A>  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)
+## See also
+
+- <xref:System.Char.GetUnicodeCategory%2A>
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)

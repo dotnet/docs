@@ -1,13 +1,7 @@
 ---
 title: "Using objects that implement IDisposable"
-ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "try/finally block"
   - "garbage collection, encapsulating resources"
 ms.assetid: 81b2cdb5-c91a-4a31-9c83-eadc52da5cf0
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 
 # Using objects that implement IDisposable
@@ -68,6 +57,6 @@ You can follow this basic pattern if you choose to implement or must implement a
   
 ## See also
 
-[Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)   
-[using Statement (C# Reference)](~/docs/csharp/language-reference/keywords/using-statement.md)   
-[Using Statement (Visual Basic)](~/docs/visual-basic/language-reference/statements/using-statement.md)
+- [Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)
+- [using Statement (C# Reference)](~/docs/csharp/language-reference/keywords/using-statement.md)
+- [Using Statement (Visual Basic)](~/docs/visual-basic/language-reference/statements/using-statement.md)

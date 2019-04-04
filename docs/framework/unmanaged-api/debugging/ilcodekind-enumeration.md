@@ -1,14 +1,6 @@
 ---
 title: "ILCodeKind Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ILCodeKind Enumeration
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -60,7 +48,7 @@ typedef enum ILCodeKind {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
- [ICorDebugILFrame4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)  
- [ReJIT: A How-To Guide](http://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
+## See also
+- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [ICorDebugILFrame4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)
+- [ReJIT: A How-To Guide](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)

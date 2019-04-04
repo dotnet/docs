@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::EnumTypeDefs Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.EnumTypeDefs"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4e508711-da92-4381-aaf8-6803075cdaa2
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::EnumTypeDefs Method
 Enumerates TypeDef tokens representing all types within the current scope.  
@@ -44,7 +32,7 @@ HRESULT EnumTypeDefs (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [out] A pointer to the new enumerator. This must be NULL for the first call of this method.  
   
@@ -76,6 +64,6 @@ HRESULT EnumTypeDefs (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

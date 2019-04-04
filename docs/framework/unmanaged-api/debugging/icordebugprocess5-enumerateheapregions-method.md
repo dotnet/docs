@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess5::EnumerateHeapRegions Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess5.EnumerateHeapRegions"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b1edba68-9c36-4f69-be9f-678ce0b33480
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess5::EnumerateHeapRegions Method
 Gets an enumerator for the memory ranges of the managed heap.  
@@ -41,7 +29,7 @@ HRESULT EnumerateHeapRegions(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRegions`  
  [out] A pointer to the address of an [ICorDebugHeapSegmentEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md) interface object that is an enumerator for the ranges of memory in which objects reside in the managed heap.  
   
@@ -61,6 +49,6 @@ HRESULT EnumerateHeapRegions(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

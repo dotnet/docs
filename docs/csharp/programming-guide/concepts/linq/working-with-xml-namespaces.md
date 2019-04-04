@@ -1,17 +1,7 @@
 ---
 title: "Working with XML Namespaces (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 05cf4dc7-7b25-40f0-abc9-1bc35de4b48a
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Working with XML Namespaces (C#)
 The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] supports namespaces.  
@@ -26,5 +16,6 @@ The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[Scope of Default Namespaces in C#](../../../../csharp/programming-guide/concepts/linq/scope-of-default-namespaces.md)|Demonstrates the appropriate way to write queries for XML in the default namespace.|  
 |[How to: Write Queries on XML in Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in C# LINQ to XML queries.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

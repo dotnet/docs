@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugManagedCallback2::Exception Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugManagedCallback2.Exception"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 78b0f14f-2fae-4e63-8412-4df119ee8468
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugManagedCallback2::Exception Method
 Notifies the debugger that a search for an exception handler has started.  
@@ -46,7 +34,7 @@ HRESULT Exception (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the thread on which the exception was thrown.  
   
@@ -88,6 +76,6 @@ HRESULT Exception (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)  
- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## See also
+- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
+- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

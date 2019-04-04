@@ -1,23 +1,9 @@
 ---
-title: "&lt;callbackTimeouts&gt;"
-ms.custom: ""
+title: "<callbackTimeouts>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;callbackTimeouts&gt;
+# \<callbackTimeouts>
 Specifies the timeout value when flowing transactions from server to client.in a duplex callback contract scenario.  
   
  \<system.ServiceModel>  
@@ -29,7 +15,7 @@ Specifies the timeout value when flowing transactions from server to client.in a
 ## Syntax  
   
 ```xml  
-<callbackTimeOuts transactionTimeout="TimeSpan" />  
+<callbackTimeOuts transactionTimeout="TimeSpan" />
 ```  
   
 ## Type  
@@ -53,5 +39,5 @@ Specifies the timeout value when flowing transactions from server to client.in a
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CallbackTimeoutsElement>
+## See also
+- <xref:System.ServiceModel.Configuration.CallbackTimeoutsElement>

@@ -1,29 +1,15 @@
 ---
 title: "Using the Message Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: d1d62bfb-2aa3-4170-b6f8-c93d3afdbbed
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the Message Class
-The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  
+The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows Communication Foundation (WCF). All communication between clients and services ultimately results in <xref:System.ServiceModel.Channels.Message> instances being sent and received.  
   
- You would not usually interact with the <xref:System.ServiceModel.Channels.Message> class directly. Instead, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service model constructs, such as data contracts, message contracts, and operation contracts, are used to describe incoming and outgoing messages. However, in some advanced scenarios you can program using the <xref:System.ServiceModel.Channels.Message> class directly. For example, you might want to use the <xref:System.ServiceModel.Channels.Message> class:  
+ You would not usually interact with the <xref:System.ServiceModel.Channels.Message> class directly. Instead, WCF service model constructs, such as data contracts, message contracts, and operation contracts, are used to describe incoming and outgoing messages. However, in some advanced scenarios you can program using the <xref:System.ServiceModel.Channels.Message> class directly. For example, you might want to use the <xref:System.ServiceModel.Channels.Message> class:  
   
 -   When you need an alternative way of creating outgoing message contents (for example, creating a message directly from a file on disk) instead of serializing [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
   
@@ -31,7 +17,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
   
 -   When you need to deal with messages in a general way regardless of message contents (for example, when routing or forwarding messages when building a router, load-balancer, or a publish-subscribe system).  
   
- Before using the <xref:System.ServiceModel.Channels.Message> class, familiarize yourself with the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] data transfer architecture in [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
+ Before using the <xref:System.ServiceModel.Channels.Message> class, familiarize yourself with the WCF data transfer architecture in [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
   
  A <xref:System.ServiceModel.Channels.Message> is a general-purpose container for data, but its design closely follows the design of a message in the SOAP protocol. Just like in SOAP, a message has both a message body and headers. The message body contains the actual payload data, while the headers contain additional named data containers. The rules for reading and writing the body and the headers are different, for example, the headers are always buffered in memory and may be accessed in any order any number of times, while the body may be read only once and may be streamed. Normally, when using SOAP, the message body is mapped to the SOAP body and the message headers are mapped to the SOAP headers.  
   
@@ -95,7 +81,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
  You can access the body of a `Message` only once, regardless of how it is accessed. A message object has a `State` property, which is initially set to Created. The three access methods described in the preceding list set the state to Written, Read, and Copied, respectively. Additionally, a `Close` method can set the state to Closed when the message body contents are no longer required. The message body can be accessed only in the Created state, and there is no way to go back to the Created state after the state has changed.  
   
 ## Writing Messages  
- The <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method writes out the body contents of a given `Message` instance to a given XML writer. The <xref:System.ServiceModel.Channels.Message.WriteBody%2A> method does the same, except that it encloses the body contents in the appropriate wrapper element (for example, <`soap:body`>). Finally, <xref:System.ServiceModel.Channels.Message.WriteMessage%2A> writes out the entire message, including the wrapping SOAP envelope and the headers. If SOAP is turned off (Version is `MessageVersion.None`), all three methods do the same thing: they write out the message body contents.  
+ The <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method writes out the body contents of a given `Message` instance to a given XML writer. The <xref:System.ServiceModel.Channels.Message.WriteBody%2A> method does the same, except that it encloses the body contents in the appropriate wrapper element (for example, <`soap:body`>). Finally, <xref:System.ServiceModel.Channels.Message.WriteMessage%2A> writes out the entire message, including the wrapping SOAP envelope and the headers. If SOAP is turned off (<xref:System.ServiceModel.Channels.Message.Version> is <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>), all three methods do the same thing: they write out the message body contents.  
   
  For example, the following code writes out the body of an incoming message to a file.  
   
@@ -169,14 +155,14 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
   
  Retrieve a particular header using the <xref:System.ServiceModel.Channels.MessageHeaders.FindHeader%2A> method. This method takes the name and namespace of the header to find, and returns its index. If the header occurs more than once, an exception is thrown. If the header is not found, it returns -1.  
   
- In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the SOAP specification.  
+ In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. For more information, see the SOAP specification.  
   
  A <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> method is provided to copy headers from a <xref:System.ServiceModel.Channels.MessageHeaders> collection to an array of <xref:System.ServiceModel.Channels.MessageHeaderInfo> objects.  
   
  To access the XML data in a header, you can call <xref:System.ServiceModel.Channels.MessageHeaders.GetReaderAtHeader%2A> and return an XML reader for the specific header index. If you want to deserialize the header contents into an object, use <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.Int32%29> or one of the other overloads. The most basic overloads deserialize headers using the <xref:System.Runtime.Serialization.DataContractSerializer> configured in the default way. If you want to use a different serializer or a different configuration of the `DataContractSerializer`, use one of the overloads that take an `XmlObjectSerializer`. There are also overloads that take the header name, namespace, and optionally a list of `Actor` values instead of an index; this is a combination of `FindHeader` and `GetHeader`.  
   
 ## Working with Properties  
- A `Message` instance can contain an arbitrary number of named objects of arbitrary types. This collection is accessed through the `Properties` property of type `MessageProperties`. The collection implements the <xref:System.Collections.Generic.IDictionary%602> interface and acts as a mapping from <xref:System.String> to <xref:System.Object>. Normally, property values do not map directly to any part of the message on the wire, but rather provide various message processing hints to the various channels in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel stack or to the <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> service framework. For an example, see [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
+ A `Message` instance can contain an arbitrary number of named objects of arbitrary types. This collection is accessed through the `Properties` property of type `MessageProperties`. The collection implements the <xref:System.Collections.Generic.IDictionary%602> interface and acts as a mapping from <xref:System.String> to <xref:System.Object>. Normally, property values do not map directly to any part of the message on the wire, but rather provide various message processing hints to the various channels in the WCF channel stack or to the <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> service framework. For an example, see [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
   
 ## Inheriting from the Message Class  
  If the built-in message types created using `CreateMessage` do not meet your requirements, create a class that derives from the `Message` class.  
@@ -189,7 +175,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
  [!code-csharp[C_UsingTheMessageClass#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#9)]
  [!code-vb[C_UsingTheMessageClass#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#9)]  
   
- The `OnGetReaderAtBodyContents` and `OnCreateBufferedCopy` methods have default implementations that work for most cases. The default implementations call `OnWriteBodyContents`, buffer the results, and work with the resulting buffer. However, in some cases this may not be enough. In the preceding example, reading the message results in 100,000 XML elements being buffered, which might not be desirable. You might want to override `OnGetReaderAtBodyContents` to return a custom `XmlDictionaryReader` derived class that serves up random numbers. You can then override `OnWriteBodyContents` to use the reader that the `OnGetReaderAtBodyContents` property returns, as shown in the following example.  
+ The <xref:System.ServiceModel.Channels.Message.OnGetReaderAtBodyContents> and <xref:System.ServiceModel.Channels.Message.OnCreateBufferedCopy%2A> methods have default implementations that work for most cases. The default implementations call <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%2A>, buffer the results, and work with the resulting buffer. However, in some cases this may not be enough. In the preceding example, reading the message results in 100,000 XML elements being buffered, which might not be desirable. You might want to override <xref:System.ServiceModel.Channels.Message.OnGetReaderAtBodyContents> to return a custom <xref:System.Xml.XmlDictionaryReader> derived class that serves up random numbers. You can then override <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%2A> to use the reader that the <xref:System.ServiceModel.Channels.Message.OnGetReaderAtBodyContents> method returns, as shown in the following example.  
   
  [!code-csharp[C_UsingTheMessageClass#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#10)]
  [!code-vb[C_UsingTheMessageClass#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#10)]  
@@ -201,7 +187,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
  Note that if you create a copy of a message, the copy uses the message headers from the original.  
   
 ### Other Members that Can Be Overridden  
- You can override the <xref:System.ServiceModel.Channels.Message.OnWriteStartEnvelope%2A>, <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A>, and <xref:System.ServiceModel.Channels.Message.OnWriteStartBody%2A> methods to specify how the SOAP envelope, SOAP headers, and SOAP body element start tags are written out. These normally correspond to `<soap:Envelope>`, `<soap:Header>`, and `<soap:Body>`. These methods should normally not write anything out if the `Version` property returns `MessageVersion.None`.  
+ You can override the <xref:System.ServiceModel.Channels.Message.OnWriteStartEnvelope%2A>, <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A>, and <xref:System.ServiceModel.Channels.Message.OnWriteStartBody%2A> methods to specify how the SOAP envelope, SOAP headers, and SOAP body element start tags are written out. These normally correspond to `<soap:Envelope>`, `<soap:Header>`, and `<soap:Body>`. These methods should normally not write anything out if the <xref:System.ServiceModel.Channels.Message.Version> property returns <xref:System.ServiceModel.Channels.MessageVersion.None>.  
   
 > [!NOTE]
 >  The default implementation of `OnGetReaderAtBodyContents` calls `OnWriteStartEnvelope` and `OnWriteStartBody` before calling `OnWriteBodyContents` and buffering the results. Headers are not written out.  

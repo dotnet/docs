@@ -1,23 +1,9 @@
 ---
 title: "Service Contexts Available to Type Converters and Markup Extensions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], type converter services how-to"
 ms.assetid: b4dad00f-03da-4579-a4e9-d8d72d2ccbce
-caps.latest.revision: 13
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Contexts Available to Type Converters and Markup Extensions
 Authors of the types that support type converter and markup extension usages must often have contextual information about where a usage is located in the markup, or in surrounding object graph structure. Information might be needed so that the provided object is instantiated correctly or so that object references to existing objects in the object graph can be made. When using .NET Framework XAML Services, the context that might be required is exposed as a series of service interfaces. Type converter or markup extension support code can query for a service by using a service provider context that is available and passed through from <xref:System.Xaml.XamlObjectWriter> or related types. The XAML schema context is directly available through one such service. This topic describes how to access service contexts from a value converter implementation, and lists typically available services and their roles.  
@@ -137,7 +123,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Service API:**  <xref:System.Xaml.IXamlSchemaContextProvider.SchemaContext%2A>  
   
- XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](../../../docs/framework/xaml-services/index.md).  
+ XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](index.md).  
   
 ### IRootObjectProvider  
  **Reference documentation**: <xref:System.Xaml.IRootObjectProvider>  
@@ -194,8 +180,8 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  For more information, see <xref:System.Xaml.IDestinationTypeProvider>.  
   
-## See Also  
- <xref:System.Windows.Markup.MarkupExtension>  
- <xref:System.Xaml.XamlObjectWriter>  
- [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)  
- [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md)
+## See also
+- <xref:System.Windows.Markup.MarkupExtension>
+- <xref:System.Xaml.XamlObjectWriter>
+- [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md)
+- [Type Converters for XAML Overview](type-converters-for-xaml-overview.md)

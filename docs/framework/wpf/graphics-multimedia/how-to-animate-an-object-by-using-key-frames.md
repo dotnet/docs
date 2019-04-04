@@ -1,24 +1,10 @@
 ---
 title: "How to: Animate an Object by Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF], objects with key frames"
   - "key frames [WPF], animating objects with"
 ms.assetid: b1f15ba9-cac7-4cea-8699-5c6b55c05c5e
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate an Object by Using Key Frames
 This example shows how to animate an object, which in this example is the <xref:System.Windows.Controls.Page.Background%2A> property of a <xref:System.Windows.Controls.Page> control, by using key frames.  
@@ -37,17 +23,17 @@ This example shows how to animate an object, which in this example is the <xref:
 > [!NOTE]
 >  <xref:System.Windows.Media.Animation.DiscreteObjectKeyFrame> is the only type of key frame that you can use with the <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames> class. Key frames like <xref:System.Windows.Media.Animation.DiscreteObjectKeyFrame> create sudden changes in values, that is, the color changes in this example occur suddenly.  
   
- [!code-xaml[keyframes_snip#ObjectAnimationUsingKeyFramesWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_snip/XAML/ObjectAnimationUsingKeyFramesExample.xaml#objectanimationusingkeyframeswholepage)]  
+ [!code-xaml[keyframes_snip#ObjectAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_snip/XAML/ObjectAnimationUsingKeyFramesExample.xaml#objectanimationusingkeyframeswholepage)]  
   
- For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
+ For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
- <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames>  
- <xref:System.Windows.Controls.Page.Background%2A>  
- <xref:System.Windows.Controls.Page>  
- <xref:System.Windows.Media.Animation.DiscreteObjectKeyFrame>  
- <xref:System.Windows.Media.LinearGradientBrush>  
- <xref:System.Windows.Media.RadialGradientBrush>  
- <xref:System.Windows.Media.DrawingBrush>  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+## See also
+- <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames>
+- <xref:System.Windows.Controls.Page.Background%2A>
+- <xref:System.Windows.Controls.Page>
+- <xref:System.Windows.Media.Animation.DiscreteObjectKeyFrame>
+- <xref:System.Windows.Media.LinearGradientBrush>
+- <xref:System.Windows.Media.RadialGradientBrush>
+- <xref:System.Windows.Media.DrawingBrush>
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

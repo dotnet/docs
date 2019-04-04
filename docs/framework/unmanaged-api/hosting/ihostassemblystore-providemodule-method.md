@@ -1,14 +1,6 @@
 ---
 title: "IHostAssemblyStore::ProvideModule Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostAssemblyStore.ProvideModule"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostAssemblyStore::ProvideModule Method
 Resolves a module within an assembly or a linked (but not an embedded) resource file.  
@@ -44,7 +32,7 @@ HRESULT ProvideModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBindInfo`  
  [in] A pointer to a [ModuleBindInfo](../../../../docs/framework/unmanaged-api/hosting/modulebindinfo-structure.md) instance that describes the requested module's <xref:System.AppDomain>, assembly, and module name.  
   
@@ -82,7 +70,7 @@ HRESULT ProvideModule (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)  
- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)  
- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
+## See also
+- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
+- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
+- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)

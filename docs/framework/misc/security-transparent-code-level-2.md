@@ -1,26 +1,14 @@
 ---
 title: "Security-Transparent Code, Level 2"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "transparency"
   - "level 2 transparency"
   - "security-transparent code"
   - "security-critical code"
 ms.assetid: 4d05610a-0da6-4f08-acea-d54c9d6143c0
-caps.latest.revision: 37
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security-Transparent Code, Level 2
 <a name="top"></a>
@@ -197,6 +185,6 @@ ms.workload:
   
  The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> property is `false` by default, so the property must be set to `true` to skip verification. This should be done for optimization purposes only. You should ensure that the transparent code in the assembly is verifiable by using the `transparent` option in the [PEVerify tool](../../../docs/framework/tools/peverify-exe-peverify-tool.md).  
   
-## See Also  
- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)  
- [Security Changes](../../../docs/framework/security/security-changes.md)
+## See also
+- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)
+- [Security Changes](../../../docs/framework/security/security-changes.md)

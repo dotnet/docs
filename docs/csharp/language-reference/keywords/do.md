@@ -1,40 +1,39 @@
 ---
-title: "do (C# Reference)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+title: "do - C# Reference"
+ms.custom: seodec18
+
+ms.date: 05/28/2018
 f1_keywords: 
   - "do_CSharpKeyword"
   - "do"
 helpviewer_keywords: 
   - "do keyword [C#]"
 ms.assetid: 50725f79-9ba6-4898-aa78-6e331568a1bb
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # do (C# Reference)
-The `do` statement executes a statement or a block of statements repeatedly until a specified expression evaluates to `false`. The body of the loop must be enclosed in braces, `{}`, unless it consists of a single statement. In that case, the braces are optional.  
-  
-## Example  
- In the following example, the `do-while` loop statements execute as long as the variable `x` is less than 5.  
-  
- [!code-csharp[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/do_1.cs)]  
-  
- Unlike the [while](../../../csharp/language-reference/keywords/while.md) statement, a `do-while` loop is executed one time before the conditional expression is evaluated.  
-  
- At any point in the `do-while` block, you can break out of the loop using the [break](../../../csharp/language-reference/keywords/break.md) statement. You can step directly to the `while` expression evaluation statement by using the [continue](../../../csharp/language-reference/keywords/continue.md) statement. If the `while` expression evaluates to true, execution continues at the first statement in the loop. If the expression evaluates to false, execution continues at the first statement after the `do-while` loop.  
-  
- A `do-while` loop can also be exited by the [goto](../../../csharp/language-reference/keywords/goto.md), [return](../../../csharp/language-reference/keywords/return.md), or [throw](../../../csharp/language-reference/keywords/throw.md) statements.  
-  
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [do-while Statement (C++)](/cpp/cpp/do-while-statement-cpp)  
- [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)
+
+The `do` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated after each execution of the loop, a `do-while` loop executes one or more times. This differs from the [while](while.md) loop, which executes zero or more times.
+
+At any point within the `do` statement block, you can break out of the loop by using the [break](break.md) statement.
+
+You can step directly to the evaluation of the `while` expression by using the [continue](continue.md) statement. If the expression evaluates to `true`, execution continues at the first statement in the loop. Otherwise, execution continues at the first statement after the loop.
+
+You also can exit a `do-while` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
+
+## Example
+
+The following example shows the usage of the `do` statement. Select **Run** to run the example code. After that you can modify the code and run it again.
+
+[!code-csharp-interactive[do loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#4)]
+
+## C# language specification
+
+For more information, see [The do statement](~/_csharplang/spec/statements.md#the-do-statement) section of the [C# language specification](../language-specification/index.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Iteration Statements](iteration-statements.md)
+- [while statement](while.md)

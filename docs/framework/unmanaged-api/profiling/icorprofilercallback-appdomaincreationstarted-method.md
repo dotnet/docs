@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::AppDomainCreationStarted Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.AppDomainCreationStarted"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b2a8240b-07fe-4859-bb2b-7d3adbfa0a9f
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::AppDomainCreationStarted Method
 Notifies the profiler that an application domain is being created.  
@@ -40,7 +28,7 @@ HRESULT AppDomainCreationStarted(
     [in] AppDomainID appDomainId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `appDomainId`  
  [in] Identifies the domain which is being created.  
   
@@ -56,5 +44,5 @@ HRESULT AppDomainCreationStarted(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

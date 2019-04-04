@@ -1,23 +1,9 @@
 ---
-title: "&lt;netMsmqBinding&gt;"
-ms.custom: ""
+title: "<netMsmqBinding>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a68b44d7-7799-43a3-9e63-f07c782810a6
-caps.latest.revision: 35
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;netMsmqBinding&gt;
+# \<netMsmqBinding>
 Defines a queued binding suitable for cross-machine communication.  
   
  \<system.ServiceModel>  
@@ -27,40 +13,44 @@ Defines a queued binding suitable for cross-machine communication.
 ## Syntax  
   
 ```xml  
-<netMsmqBinding>  
-    <binding   
-       closeTimeout="TimeSpan"   
-       customDeadLetterQueue="Uri"  
-       deadLetterQueue="Uri"  
-       durable="Boolean"  
-       exactlyOnce="Boolean"   
-       maxBufferPoolSize="Integer"  
-       maxReceivedMessageSize"Integer"  
-       maxRetryCycles="Integer"   
-       name="string"   
-       openTimeout="TimeSpan"   
-       poisonMessageHandling="Disabled/EnabledIfSupported"   
-       queueTransferProtocol="Native/Srmp/SrmpSecure"  
-       receiveErrorHandling="Drop/Fault/Move/Reject"  
-       receiveTimeout="TimeSpan"   
-       receiveRetryCount="Integer"  
-       rejectAfterLastRetry="Boolean"   
-       retryCycleDelay="TimeSpan"    
-       sendTimeout="TimeSpan"   
-       timeToLive="TimeSpan"    
-       useActiveDirectory="Boolean"  
-       useMsmqTracing="Boolean  
-       useSourceJournal="Boolean"  
-          <security>  
-                  <message    
-                        algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-            clientCredentialType="None/Windows/UserName/Certificate/InfoCard "/>  
-                  <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-            msmqEncryptionAlgorithm="RC4Stream/AES"  
-            msmqProtectionLevel="None/Sign/EncryptAndSign"  
-            msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-          </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding></netMsmqBinding>  
+<netMsmqBinding>
+  <binding closeTimeout="TimeSpan"
+           customDeadLetterQueue="Uri"
+           deadLetterQueue="Uri"
+           durable="Boolean"
+           exactlyOnce="Boolean"
+           maxBufferPoolSize="Integer"
+           maxReceivedMessageSize="Integer"
+           maxRetryCycles="Integer"
+           name="String"
+           openTimeout="TimeSpan"
+           poisonMessageHandling="Disabled/EnabledIfSupported"
+           queueTransferProtocol="Native/Srmp/SrmpSecure"
+           receiveErrorHandling="Drop/Fault/Move/Reject"
+           receiveTimeout="TimeSpan"
+           receiveRetryCount="Integer"
+           rejectAfterLastRetry="Boolean"
+           retryCycleDelay="TimeSpan"
+           sendTimeout="TimeSpan"
+           timeToLive="TimeSpan"
+           useActiveDirectory="Boolean"
+           useMsmqTracing="Boolean"
+           useSourceJournal="Boolean">
+    <security>
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               clientCredentialType="None/Windows/UserName/Certificate/InfoCard" />
+      <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+                 msmqEncryptionAlgorithm="RC4Stream/AES"
+                 msmqProtectionLevel="None/Sign/EncryptAndSign"
+                 msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</netMsmqBinding>
 ```  
   
 ## Attributes and Elements  
@@ -80,14 +70,14 @@ Defines a queued binding suitable for cross-machine communication.
 |`maxRetryCycles`|An integer that indicates the number of retry cycles used by the poison-message detection feature. A message becomes a poison message when it fails all delivery attempts of all cycles. The default is 3. For more information, see <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A>.|  
 |`name`|Required attribute. A string that contains the configuration name of the binding. This value should be unique because it is used as an identification for the binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).|  
 |`openTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|`QueueTransferProtocol`|A valid <xref:System.ServiceModel.QueueTransferProtocol> value that specifies the queued communication channel transport that this binding uses. MSMQ does not support Active Directory addressing when using SOAP Reliable Messaging Protocol. Therefore, you should not set this attribute to `Srmp` or `Srmps` when the `u``seActiveDirectory` attribute is set to `true`.|  
+|`QueueTransferProtocol`|A valid <xref:System.ServiceModel.QueueTransferProtocol> value that specifies the queued communication channel transport that this binding uses. MSMQ does not support Active Directory addressing when using SOAP Reliable Messaging Protocol. Therefore, you should not set this attribute to `Srmp` or `Srmps` when the `useActiveDirectory` attribute is set to `true`.|  
 |`receiveErrorHandling`|A <xref:System.ServiceModel.ReceiveErrorHandling> value that specifies how poison and nondispatchable messages are handled.|  
 |`receiveRetryCount`|An integer that specifies the maximum number of times the queue manager should attempt to send a message before transferring it to the retry queue.|  
 |`receiveTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a receive operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:10:00.|  
 |`retryCycleDelay`|A TimeSpan value that specifies the time delay between retry cycles when attempting to deliver a message that could not be delivered immediately. The value defines only the minimum wait time because actual wait time can be longer. The default value is 00:10:00. For more information, see <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A>.|  
 |`sendTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
 |`timeToLive`|A TimeSpan value that specifies how long the messages are valid before they are expired and put into the dead-letter queue. The default is 1.00:00:00.<br /><br /> This attribute is set to ensure that time-sensitive messages do not become stale before they are processed by the receiving applications. A message in a queue that is not consumed by the receiving application within the time interval specified is said to be expired. Expired messages are sent to special queue called the dead letter queue. The location of the dead letter queue is set with the `DeadLetterQueue` attribute or to the appropriate default, based on assurances.|  
-|`usingActiveDirectory`|A Boolean value that specifies if queue addresses should be converted using Active Directory.<br /><br /> MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the computer name using DNS, NetBIOS or IP. With a path name, MSMQ resolves the computer name using Active Directory.<br /><br /> By default, [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the `UseActiveDirectory` property to true, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.|  
+|`usingActiveDirectory`|A Boolean value that specifies if queue addresses should be converted using Active Directory.<br /><br /> MSMQ queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the computer name using DNS, NetBIOS or IP. With a path name, MSMQ resolves the computer name using Active Directory.<br /><br /> By default, Windows Communication Foundation (WCF) queued transport converts the URI of a message queue to a direct format name. By setting the `UseActiveDirectory` property to true, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.|  
 |`useMsmqTracing`|A Boolean value that specifies whether messages processed by this binding should be traced. The default is `false`. When tracing is enabled, report messages are created and sent to the report queue each time the message leaves or arrives at a Message Queuing computer.|  
 |`useSourceJournal`|A Boolean value that specifies copies of messages processed by this binding should be stored in the source journal. The default is `false`.<br /><br /> Queued applications that want to keep a record of messages that have left the computer's outgoing queue can copy the messages to a journal queue. Once a message leaves the outgoing queue and an acknowledgment is received that the message was received on the destination computer, a copy of the message is kept in the sending computer's system journal queue.|  
   
@@ -95,7 +85,7 @@ Defines a queued binding suitable for cross-machine communication.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>.|  
   
 ### Parent Elements  
@@ -110,42 +100,42 @@ Defines a queued binding suitable for cross-machine communication.
 ## Example  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-    <bindings>  
-           <netMsmqBinding>  
-                <binding   
-                         closeTimeout="00:00:10"   
-                         openTimeout="00:00:20"   
-                         receiveTimeout="00:00:30"  
-                         sendTimeout="00:00:40"  
-                         deadLetterQueue="net.msmq://localhost/blah"   
-                         durable="true"   
-                         exactlyOnce="true"   
-                         maxReceivedMessageSize="1000"  
-                         maxRetries="11"  
-                         maxRetryCycles="12"   
-                         poisonMessageHandling="Disabled"   
-                         rejectAfterLastRetry="false"   
-                         retryCycleDelay="00:05:55"   
-                         timeToLive="00:11:11"   
-                         sourceJournal="true"  
-                         useMsmqTracing="true"  
-                         useActiveDirectory="true">  
-                         <security>  
-                             <message clientCredentialType="Windows" />  
-                         </security>  
-            </netMsmqBinding>  
-    </bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <netMsmqBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 deadLetterQueue="net.msmq://localhost/blah"
+                 durable="true"
+                 exactlyOnce="true"
+                 maxReceivedMessageSize="1000"
+                 maxRetries="11"
+                 maxRetryCycles="12"
+                 poisonMessageHandling="Disabled"
+                 rejectAfterLastRetry="false"
+                 retryCycleDelay="00:05:55"
+                 timeToLive="00:11:11"
+                 sourceJournal="true"
+                 useMsmqTracing="true"
+                 useActiveDirectory="true">
+          <security>
+            <message clientCredentialType="Windows" />
+          </security>
+        </binding>
+      </netMsmqBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.NetMsmqBinding>  
- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.NetMsmqBinding>
+- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

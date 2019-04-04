@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyEmit::DefineAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyEmit.DefineAssembly"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
 topic_type: 
   - "apiref"
-caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineAssembly Method
 Creates an `Assembly` structure containing metadata for the specified assembly and returns the associated metadata token.  
@@ -47,7 +35,7 @@ HRESULT DefineAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKey`  
  [in] The public key that identifies the publisher of the assembly, or NULL if the assembly is not strongly named.  
   
@@ -81,5 +69,5 @@ HRESULT DefineAssembly (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

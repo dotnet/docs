@@ -1,20 +1,11 @@
 ---
 title: "IsNot Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.isnot"
 helpviewer_keywords: 
   - "IsNot operator [Visual Basic]"
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # IsNot Operator (Visual Basic)
 Compares two object reference variables.  
@@ -48,10 +39,11 @@ result = object1 IsNot object2
 ## Example  
  The following code example uses both the `Is` operator and the `IsNot` operator to accomplish the same comparison.  
   
- [!code-vb[VbVbalrOperators#29](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isnot-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#29)]  
   
-## See Also  
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [How to: Test Whether Two Objects Are the Same](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-test-whether-two-objects-are-the-same.md)
+## See also
+
+- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
+- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [How to: Test Whether Two Objects Are the Same](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-test-whether-two-objects-are-the-same.md)

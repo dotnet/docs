@@ -1,14 +1,6 @@
 ---
 title: "COR_DEBUG_STEP_RANGE Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "COR_DEBUG_STEP_RANGE"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_DEBUG_STEP_RANGE Structure
 Contains the offset information for a range of code.  
@@ -59,7 +47,7 @@ typedef struct {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [StepRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [StepRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md)
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

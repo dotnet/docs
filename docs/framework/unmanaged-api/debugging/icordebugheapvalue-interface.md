@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugHeapValue Interface1"
-ms.custom: ""
+title: "ICorDebugHeapValue Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugHeapValue"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 1bca66db-0359-4ae8-846e-e35f7e547e8b
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugHeapValue Interface1
+# ICorDebugHeapValue Interface
+
 A subclass of "ICorDebugValue" that represents an object that has been collected by the common language runtime (CLR) garbage collector.  
   
 ## Methods  
@@ -53,8 +42,8 @@ A subclass of "ICorDebugValue" that represents an object that has been collected
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
-    
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+
+
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,14 +1,6 @@
 ---
 title: "IcorDebugVariableHome::GetLiveRange Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorDebugVariableHome.GetLiveRange"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 87277e1a-1595-4729-9e25-d1c3ac18ce5f
 topic_type: 
   - "apiref"
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IcorDebugVariableHome::GetLiveRange Method
 Gets the native range over which this variable is live.  
@@ -42,7 +30,7 @@ HRESULT GetLiveRange(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStartOffset`  
  [out] The logical offset at which the variable is first live.  
   
@@ -58,5 +46,5 @@ HRESULT GetLiveRange(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+## See also
+- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

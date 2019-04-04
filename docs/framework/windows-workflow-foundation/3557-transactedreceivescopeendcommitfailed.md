@@ -1,19 +1,7 @@
 ---
 title: "3557 - TransactedReceiveScopeEndCommitFailed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 079f0188-8146-49ee-b6ae-a08f4e4d2b9b
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3557 - TransactedReceiveScopeEndCommitFailed
 ## Properties  

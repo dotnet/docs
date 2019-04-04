@@ -1,23 +1,11 @@
 ---
-title: "&lt;Assembly&gt; Element (.NET Native)"
-ms.custom: ""
+title: "<Assembly> Element (.NET Native)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;Assembly&gt; Element (.NET Native)
+# \<Assembly> Element (.NET Native)
 Applies runtime reflection policy to all the types in a specified assembly.  
   
 ## Syntax  
@@ -27,7 +15,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
           Activate="policy_setting"  
           Browse="policy_setting"  
           Dynamic="policy_setting"  
-          Serialize="policy_setting" />  
+          Serialize="policy_setting"  
           DataContractSerializer="policy_setting"  
           DataContractJsonSerializer="policy_setting"  
           XmlSerializer="policy_setting"  
@@ -97,7 +85,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
   
  The `Activate`, `Browse`, `Dynamic`, and `Serialize` attributes are all optional. However, the `<Assembly>` element must contain at least one of these attributes.  
   
-## See Also  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

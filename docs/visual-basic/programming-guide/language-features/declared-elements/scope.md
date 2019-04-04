@@ -1,13 +1,6 @@
 ---
 title: "Scope in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "module scope [Visual Basic]"
   - "scope [Visual Basic], levels"
@@ -22,9 +15,6 @@ helpviewer_keywords:
   - "scope [Visual Basic], Visual Basic"
   - "procedure scope [Visual Basic]"
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Scope in Visual Basic
 The *scope* of a declared element is the set of all code that can refer to it without qualifying its name or making it available through an [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md). An element can have scope at one of the following levels:  
@@ -138,10 +128,11 @@ Public strMsg As String
 ### Minimizing Scope  
  In general, when declaring any variable or constant, it is good programming practice to make the scope as narrow as possible (block scope is the narrowest). This helps conserve memory and minimizes the chances of your code erroneously referring to the wrong variable. Similarly, you should declare a variable to be [Static](../../../../visual-basic/language-reference/modifiers/static.md) only when it is necessary to preserve its value between procedure calls.  
   
-## See Also  
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
- [How to: Control the Scope of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-scope-of-a-variable.md)  
- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+## See also
+
+- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
+- [How to: Control the Scope of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-scope-of-a-variable.md)
+- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)

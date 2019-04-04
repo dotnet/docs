@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::GetHashFromAssemblyFileW Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.GetHashFromAssemblyFileW"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5d0b44a2-5a14-44a2-9a0e-e8682fd4e106
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::GetHashFromAssemblyFileW Method
 Generates a hash over the contents of the file specified by a Unicode string.  
@@ -45,7 +33,7 @@ HRESULT GetHashFromAssemblyFileW (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file to be hashed. This parameter must be a Unicode string.  
   
@@ -62,7 +50,7 @@ HRESULT GetHashFromAssemblyFileW (
  [out] The returned size, in bytes, of `pbHash`.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -73,6 +61,6 @@ HRESULT GetHashFromAssemblyFileW (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [GetHashFromAssemblyFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfile-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [GetHashFromAssemblyFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfile-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

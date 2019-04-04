@@ -1,23 +1,10 @@
 ---
-title: "&lt;issuerTokenResolver&gt;"
-ms.custom: ""
+title: "<issuerTokenResolver>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65
-caps.latest.revision: 9
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;issuerTokenResolver&gt;
+# \<issuerTokenResolver>
 Registers the issuer token resolver that is used by handlers in the token handler collection. The issuer token resolver is used to resolve the signing token on incoming tokens and messages.  
   
  \<system.identityModel>  
@@ -94,5 +81,5 @@ public override void LoadCustomConfiguration(System.Xml.XmlNodeList nodelist)
 }  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.IssuerTokenResolver>
+## See also
+- <xref:System.IdentityModel.Tokens.IssuerTokenResolver>

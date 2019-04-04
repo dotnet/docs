@@ -1,14 +1,6 @@
 ---
 title: "ICLRSyncManager::DeleteRWLockOwnerIterator Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRSyncManager.DeleteRWLockOwnerIterator"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRSyncManager::DeleteRWLockOwnerIterator Method
 Requests that the common language runtime (CLR) destroy an iterator that was created by a call to [ICLRSyncManager::CreateRWLockOwnerIterator](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-createrwlockowneriterator-method.md).  
@@ -41,7 +29,7 @@ HRESULT DeleteRWLockOwnerIterator (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Iterator`  
  [in] The iterator that was created by using a call to `CreateRWLockOwnerIterator`.  
   
@@ -68,6 +56,6 @@ HRESULT DeleteRWLockOwnerIterator (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+## See also
+- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
+- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

@@ -1,14 +1,6 @@
 ---
 title: "Initialization for Object Elements Not in an Object Tree"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "elements [WPF], initializing"
   - "initializing elements [WPF]"
 ms.assetid: 7b8dfc9b-46ac-4ce8-b7bb-035734d688b7
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Initialization for Object Elements Not in an Object Tree
 Some aspects of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] initialization are deferred to processes that typically rely on that element being connected to either the logical tree or visual tree. This topic describes the steps that may be necessary in order to initialize an element that is not connected to either tree.  
@@ -47,10 +33,10 @@ Some aspects of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-wi
   
  The example illustrates the main function only. The functions `Rasterize` and `Save` (not shown) are utility functions that take care of image processing and IO.  
   
- [!code-csharp[InitializeElements#Main](../../../../samples/snippets/csharp/VS_Snippets_Wpf/InitializeElements/CSharp/initializeelements.cs#main)]
- [!code-vb[InitializeElements#Main](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InitializeElements/VisualBasic/initializeelements.vb#main)]  
+ [!code-csharp[InitializeElements#Main](~/samples/snippets/csharp/VS_Snippets_Wpf/InitializeElements/CSharp/initializeelements.cs#main)]
+ [!code-vb[InitializeElements#Main](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InitializeElements/VisualBasic/initializeelements.vb#main)]  
   
-## See Also  
- [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+## See also
+- [Trees in WPF](trees-in-wpf.md)
+- [WPF Graphics Rendering Overview](../graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [XAML Overview (WPF)](xaml-overview-wpf.md)

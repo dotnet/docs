@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess5::EnumerateHandles Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess5.EnumerateHandles"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7d7fa796-0dc6-4ee8-9d56-40166246d91d
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess5::EnumerateHandles Method
 Gets an enumerator for object handles in a process.  
@@ -40,7 +28,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
     [out] ICorDebugGCReferenceEnum **ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `types`  
  [in] A bitwise combination of [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) values that specifies the type of handles to include in the collection.  
   
@@ -67,6 +55,6 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

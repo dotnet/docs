@@ -1,20 +1,10 @@
 ---
 title: "Changing Where My.Application.Log Writes Information (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Application.Log object, walkthroughs"
   - "event logs, changing output location"
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Changing Where My.Application.Log Writes Information (Visual Basic)
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application. This walkthrough shows how to override the default settings and cause the `Log` object to write to other log listeners.  
@@ -179,16 +169,17 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 2.  This code example shows how to determine the strongly named type name for a fully qualified type—"System.Diagnostics.FileLogTraceListener" in this case.  
   
-     [!code-vb[VbVbalrMyApplicationLog#15](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-changing-where-my-application-log-writes-information_1.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#15)]  
   
      This is the output, and it can be used to uniquely reference a strongly named type, as in the "To add listeners" procedure above.  
   
      `Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType>  
- <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>  
- [How to: Write Event Information to a Text File](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)  
- [How to: Write to an Application Event Log](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType>
+- <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>
+- [How to: Write Event Information to a Text File](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)
+- [How to: Write to an Application Event Log](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)

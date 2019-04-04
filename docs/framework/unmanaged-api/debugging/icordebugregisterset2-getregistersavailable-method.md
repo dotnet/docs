@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugRegisterSet2::GetRegistersAvailable Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugRegisterSet2.GetRegistersAvailable"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugRegisterSet2::GetRegistersAvailable Method
 Gets an array of bytes that provides a bitmap of the available registers.  
@@ -42,7 +30,7 @@ HRESULT GetRegistersAvailable (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `numChunks`  
  [in] The size of the `availableRegChunks` array.  
   
@@ -69,6 +57,6 @@ HRESULT GetRegistersAvailable (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)  
- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
+## See also
+- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
+- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)

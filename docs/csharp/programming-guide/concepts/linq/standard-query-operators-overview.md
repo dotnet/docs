@@ -1,17 +1,7 @@
 ---
 title: "Standard Query Operators Overview (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 812fa119-5f65-4139-b4fa-55dccd8dc3ac
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Standard Query Operators Overview (C#)
 The *standard query operators* are the methods that form the LINQ pattern. Most of these methods operate on sequences, where a sequence is an object whose type implements the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The standard query operators provide query capabilities including filtering, projection, aggregation, sorting and more.  
@@ -107,10 +97,11 @@ foreach (var obj in query)
   
  [Aggregation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)  
   
-## See Also  
- <xref:System.Linq.Enumerable>  
- <xref:System.Linq.Queryable>  
- [Introduction to LINQ Queries (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
- [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)  
- [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)  
- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)
+## See also
+
+- <xref:System.Linq.Enumerable>
+- <xref:System.Linq.Queryable>
+- [Introduction to LINQ Queries (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
+- [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
+- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)

@@ -1,23 +1,10 @@
 ---
-title: "&lt;claimsAuthenticationManager&gt;"
-ms.custom: ""
+title: "<claimsAuthenticationManager>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6d30a450-6d13-4671-81a8-77e0204500c5
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;claimsAuthenticationManager&gt;
+# \<claimsAuthenticationManager>
 Registers a claims authentication manager for the incoming claims.  
   
  \<system.identityModel>  
@@ -66,5 +53,5 @@ Registers a claims authentication manager for the incoming claims.
     <identityConfiguration name="MyIdentity">  
       <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>          
     </identityConfiguration>  
-</microsoft.identityModel>  
+</system.identityModel>  
 ```

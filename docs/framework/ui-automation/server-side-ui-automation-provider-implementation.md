@@ -1,33 +1,19 @@
 ---
 title: "Server-Side UI Automation Provider Implementation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "server-side UI Automation provider implementation"
   - "UI Automation, server-side provider implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-caps.latest.revision: 39
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Server-Side UI Automation Provider Implementation
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This section describes how to implement a server-side UI Automation provider for a custom control.  
   
- The implementation for [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] elements and non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements (such as those designed for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) is fundamentally different. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support through implementations of provider interfaces.  
+ The implementation for Windows Presentation Foundation (WPF) elements and non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements (such as those designed for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) is fundamentally different. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support through implementations of provider interfaces.  
   
 <a name="Security_Considerations"></a>   
 ## Security Considerations  
@@ -177,12 +163,10 @@ ms.workload:
   
  To accomplish this, the fragment root provider for the rebar exposes a set of children representing the bands. Each band has a single provider that may expose properties and patterns. In its implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A>, the band provider returns the default window provider for the control HWND, which it obtains by calling <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>, passing in the control's window handle. Finally, the fragment root provider for the rebar implements the <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride> interface, and in its implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd%2A> it returns the appropriate band provider for the control contained in the specified HWND.  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Expose a Server-side UI Automation Provider](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)  
- [Return Properties from a UI Automation Provider](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)  
- [Raise Events from a UI Automation Provider](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)  
- [Enable Navigation in a UI Automation Fragment Provider](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)  
- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [Simple Provider Sample](http://msdn.microsoft.com/library/c10a6255-e8dc-494b-a051-15111b47984a)  
- [Fragment Provider Sample](http://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+## See also
+- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [Expose a Server-side UI Automation Provider](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)
+- [Return Properties from a UI Automation Provider](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)
+- [Raise Events from a UI Automation Provider](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)
+- [Enable Navigation in a UI Automation Fragment Provider](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)
+- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)

@@ -1,23 +1,10 @@
 ---
-title: "&lt;system.identityModel&gt;"
-ms.custom: ""
+title: "<system.identityModel>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 210ce7e9-d07b-400c-800f-5f525dcf95e8
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;system.identityModel&gt;
+# \<system.identityModel>
 Provides configuration for enabling Windows Identity Foundation (WIF) options in applications.  
   
  \<system.identityModel>  
@@ -82,5 +69,5 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Configuration.SystemIdentityModelSection>
+## See also
+- <xref:System.IdentityModel.Configuration.SystemIdentityModelSection>

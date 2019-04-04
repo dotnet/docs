@@ -1,10 +1,6 @@
 ---
 title: "-keycontainer (C# Compiler Options)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: 05/16/2018
 f1_keywords: 
   - "/keycontainer"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "keycontainer compiler option [C#]"
   - "-keycontainer compiler option [C#]"
 ms.assetid: b3982b6d-2382-4f7e-bebd-ce98eaa30763
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -keycontainer (C# Compiler Options)
 Specifies the name of the cryptographic key container.  
@@ -30,7 +23,7 @@ Specifies the name of the cryptographic key container.
  The name of the strong name key container.  
   
 ## Remarks  
- When the **-keycontainer** option is used, the compiler creates a sharable component by inserting a public key from the specified container into the assembly manifest and signing the final assembly with the private key. To generate a key file, type sn -k `file` at the command line. sn -i installs the key pair into a container.  
+ When the **-keycontainer** option is used, the compiler creates a sharable component. The compiler inserts a public key from the specified container into the assembly manifest and signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. `sn -i` installs the key pair into a container. This option is not supported when the compiler runs on CoreCLR. To sign an assembly when building on CoreCLR, use the [-keyfile](keyfile-compiler-option.md) option.
   
  If you compile with [-target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), the name of the key file is held in the module and incorporated into the assembly when you compile this module into an assembly with [-addmodule](../../../csharp/language-reference/compiler-options/addmodule-compiler-option.md).  
   
@@ -46,6 +39,8 @@ Specifies the name of the cryptographic key container.
   
  You can programmatically access this compiler option with <xref:VSLangProj.ProjectProperties.AssemblyKeyContainerName%2A>.  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler -keyfile option](keyfile-compiler-option.md)
+- [C# Compiler Options](index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

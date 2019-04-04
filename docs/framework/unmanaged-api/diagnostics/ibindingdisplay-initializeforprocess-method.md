@@ -1,14 +1,6 @@
 ---
 title: "IBindingDisplay::InitializeForProcess Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IBindingDisplay.InitializeForProcess"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 59417acb-4e59-46ad-acfe-d827e6ab6078
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IBindingDisplay::InitializeForProcess Method
 Initializes the [IBindingDisplay](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md) object.  
@@ -41,7 +29,7 @@ HRESULT InitializeForProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [in] The process identifier.  
   
@@ -57,5 +45,5 @@ HRESULT InitializeForProcess (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)
+## See also
+- [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)

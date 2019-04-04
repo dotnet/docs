@@ -1,21 +1,12 @@
 ---
 title: "Erase Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Erase"
 helpviewer_keywords: 
   - "Erase keyword [Visual Basic]"
   - "Erase statement [Visual Basic]"
 ms.assetid: 7a8133d7-b750-4d74-8b66-ba1dd9778d4b
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Erase Statement (Visual Basic)
 Used to release array variables and deallocate the memory used for their elements.  
@@ -38,8 +29,9 @@ Erase arraylist
 ## Example  
  The following example uses the `Erase` statement to clear two arrays and free their memory (1000 and 100 storage elements, respectively). The `ReDim` statement then assigns a new array instance to the three-dimensional array.  
   
- [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/erase-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#19)]  
   
-## See Also  
- [Nothing](../../../visual-basic/language-reference/nothing.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+## See also
+
+- [Nothing](../../../visual-basic/language-reference/nothing.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)

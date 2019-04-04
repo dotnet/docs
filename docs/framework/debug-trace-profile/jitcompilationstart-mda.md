@@ -1,26 +1,14 @@
 ---
 title: "jitCompilationStart MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "JIT compilation"
   - "MDAs (managed debugging assistants), JIT compilation"
   - "JitCompilationStart MDA"
   - "managed debugging assistants (MDAs), JIT compilation"
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # jitCompilationStart MDA
 The `jitCompilationStart` managed debugging assistant (MDA) is activated to report when the just-in-time (JIT) compiler starts to compile a function.  
@@ -45,7 +33,7 @@ method name="Test!ns2.C0::m"
 ```  
   
 ## Configuration  
- The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to *.  
+ The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to \*.  
   
 ```xml  
 <mdaConfig>  
@@ -68,7 +56,7 @@ method name="Test!ns2.C0::m"
 ## Example  
  The following code sample is intended to be used with the preceding configuration file.  
   
-```  
+```csharp
 using System;  
 using System.Reflection;  
 using System.Runtime.CompilerServices;  
@@ -163,7 +151,7 @@ namespace ns2
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

@@ -1,25 +1,14 @@
 ---
 title: "Validating an XML Document in the DOM"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 ms.assetid: 2c61c920-d0f8-4c72-bfcc-6524570f3060
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Validating an XML Document in the DOM
 The <xref:System.Xml.XmlDocument> class does not validate the XML in the Document Object Model (DOM) against an XML Schema definition language (XSD) schema or document type definition (DTD) by default; the XML is only verified to be well-formed.  
@@ -87,10 +76,11 @@ The <xref:System.Xml.XmlDocument> class does not validate the XML in the Documen
   
  For examples illustrating the <xref:System.Xml.Schema.ValidationEventHandler>, see "Validating an XML Document As It Is Loaded into the DOM" and "Validating an XML Document in the DOM" above.  
   
-## See Also  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XmlReader>  
- <xref:System.Xml.Schema.ValidationEventHandler>  
- <xref:System.Xml.XmlReaderSettings>  
- [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  
- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)
+## See also
+
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XmlReader>
+- <xref:System.Xml.Schema.ValidationEventHandler>
+- <xref:System.Xml.XmlReaderSettings>
+- [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)
+- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)

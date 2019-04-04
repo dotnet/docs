@@ -1,29 +1,17 @@
 ---
 title: "SignTool.exe (Sign Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Sign tool"
   - "SignTool.exe"
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SignTool.exe (Sign Tool)
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -33,7 +21,7 @@ Sign Tool is a command-line tool that digitally signs files, verifies signatures
 signtool [command] [options] [file_name | ...]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -103,7 +91,7 @@ signtool [command] [options] [file_name | ...]
 |`/u`  *Usage*|Specifies the enhanced key usage (EKU) that must be present in the signing certificate. The usage value can be specified by OID or string. The default usage is "Code Signing" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Specifies usage of "Windows System Component Verification" (1.3.6.1.4.1.311.10.3.6).|  
   
- For usage examples, see [Using SignTool to Sign a File](http://msdn.microsoft.com/library/windows/desktop/aa388170.aspx).  
+ For usage examples, see [Using SignTool to Sign a File](/windows/desktop/SecCrypto/using-signtool-to-sign-a-file).  
   
 <a name="TimeStamp"></a>   
 ## TimeStamp Command Options  
@@ -117,7 +105,7 @@ signtool [command] [options] [file_name | ...]
 |`/tp` *index*|Time stamps the signature at *index*.|  
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. The file being time stamped must have previously been signed. Either the `/tr` or the `/t` option is required.|  
   
- For a usage example, see [Adding Time Stamps to Previously Signed Files](http://msdn.microsoft.com/library/windows/desktop/aa375542.aspx).  
+ For a usage example, see [Adding Time Stamps to Previously Signed Files](/windows/desktop/SecCrypto/adding-time-stamps-to-previously-signed-files).  
   
 <a name="Verify"></a>   
 ## Verify Command Options  
@@ -134,7 +122,7 @@ signtool [command] [options] [file_name | ...]
 |`/ds`  *Index*|Verifies the signature at a specified position.|  
 |`/hash` (`SHA1`&#124;`SHA256`)|Specifies an optional hash algorithm to use when searching for a file in a catalog.|  
 |`/kp`|Specifies that verification should be performed with the kernel-mode driver signing policy.|  
-|`/ms`|Uses multiple verification semantics. This is the default behavior of a [WinVerifyTrust](http://msdn.microsoft.com/library/windows/desktop/aa388208.aspx) call on [!INCLUDE[win8](../../../includes/win8-md.md)] and above.|  
+|`/ms`|Uses multiple verification semantics. This is the default behavior of a [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on [!INCLUDE[win8](../../../includes/win8-md.md)] and above.|  
 |`/o` *Version*|Verifies the file by operating system version. *Version* has the following form: *PlatformID*:*VerMajor*.*VerMinor*.*BuildNumber*. *PlatformID* represents the underlying value of a <xref:System.PlatformID> enumeration member. **Important:**  The use of the `/o` switch is recommended. If `/o` is not specified, SignTool.exe may return unexpected results. For example, if you do not include the `/o` switch, system catalogs that validate correctly on an older operating system may not validate correctly on a newer operating system.|  
 |`/p7`|Verifies PKCS #7 files. No existing policies are used for PKCS #7 validation. The signature is checked and a chain is built for the signing certificate.|  
 |`/pa`|Specifies that the Default Authenticode Verification Policy should be used. If the `/pa` option is not specified, Sign Tool uses the Windows Driver Verification Policy. This option cannot be used with the `catdb` options.|  
@@ -143,7 +131,7 @@ signtool [command] [options] [file_name | ...]
 |`/r` *RootSubjectName*|Specifies the name of the subject of the root certificate that the signing certificate must chain to. This value can be a substring of the entire subject name of the root certificate.|  
 |`/tw`|Specifies that a warning should be generated if the signature is not time stamped.|  
   
- For usage examples, see [Using SignTool to Verify a File Signature](http://msdn.microsoft.com/library/windows/desktop/aa388171.aspx).  
+ For usage examples, see [Using SignTool to Verify a File Signature](/windows/desktop/SecCrypto/using-signtool-to-verify-a-file-signature).  
   
 ## Return Value  
  Sign Tool returns one of the following exit codes when it terminates.  
@@ -215,6 +203,6 @@ signtool verify /a SystemFile.dll
 signtool verify /c MyCatalog.cat SystemFile.dll  
 ```  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

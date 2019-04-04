@@ -1,21 +1,7 @@
 ---
 title: "Responsibilities of the Developer In Overriding Default Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c6909ddd-e053-46a8-980c-0e12a9797be1
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Responsibilities of the Developer In Overriding Default Behavior
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not enforce the following requirements, but behavior is undefined if these requirements are not satisfied.  
@@ -34,5 +20,5 @@ ms.workload:
   
 -   Finally, the overriding method is expected to perform the stated operation. The semantics of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] operations such as eager loading, deferred loading, and <xref:System.Data.Linq.DataContext.SubmitChanges%2A>) require the overrides to provide the stated service. For example, a load override that just returns an empty collection without checking the contents in the database will likely lead to inconsistent data.  
   
-## See Also  
- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+## See also
+- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)

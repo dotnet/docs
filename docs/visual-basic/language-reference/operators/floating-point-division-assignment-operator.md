@@ -1,12 +1,6 @@
 ---
 title: "/= Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb./="
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "operator /="
   - "compound assignment statements [Visual Basic]"
 ms.assetid: a1e22d0e-8380-4761-9da1-84fb51c34821
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # /= Operator (Visual Basic)
 Divides the value of a variable or property by the value of an expression and assigns the floating-point result to the variable or property.  
@@ -49,13 +40,14 @@ variableorproperty /= expression
 ## Example  
  The following example uses the `/=` operator to divide one `Integer` variable by a second and assign the quotient to the first variable.  
   
- [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#17)]  
   
-## See Also  
- [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)  
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+
+- [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)
+- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

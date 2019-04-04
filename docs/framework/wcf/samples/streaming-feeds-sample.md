@@ -1,21 +1,7 @@
 ---
 title: "Streaming Feeds Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1f1228c0-daaa-45f0-b93e-c4a158113744
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Streaming Feeds Sample
 This sample demonstrates how to manage syndication feeds that contain large numbers of items. On the server, the sample demonstrates how to delay the creation of individual <xref:System.ServiceModel.Syndication.SyndicationItem> objects within the feed until immediately before the item is written to the network stream.  
@@ -24,7 +10,7 @@ This sample demonstrates how to manage syndication feeds that contain large numb
   
  To best demonstrate the streaming capability of the syndication API, this sample uses a somewhat unlikely scenario in which the server exposes a feed that contains an infinite number of items. In this case, the server continues generating new items into the feed until it determines that the client has read a specified number of items from the feed (by default, 10). For simplicity, both the client and the server are implemented in the same process and use a shared `ItemCounter` object to keep track of how many items the client has produced. The `ItemCounter` type exists only for the purpose of allowing the sample scenario to terminate cleanly, and is not a core element of the pattern being demonstrated.  
   
- The demonstration makes use of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] iterators (using the `yield``return` keyword construct). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] iterators, see the "Using Iterators" topic on MSDN.  
+ The demonstration makes use of Visual C# iterators (using the `yield return` keyword construct). For more information about iterators, see the "Using Iterators" topic on MSDN.  
   
 ## Service  
  The service implements a basic <xref:System.ServiceModel.Web.WebGetAttribute> contract that consists of one operation, as shown in the following code.  
@@ -73,7 +59,7 @@ public Atom10FeedFormatter StreamedFeed()
 }  
 ```  
   
- As a result, the item stream is never fully buffered into memory. You can observe this behavior by setting a breakpoint on the `yield``return` statement inside of the `ItemGenerator.GenerateItems()` method and noting that this breakpoint is encountered for the first time after the service has returned the result of the `StreamedFeed()` method.  
+ As a result, the item stream is never fully buffered into memory. You can observe this behavior by setting a breakpoint on the `yield return` statement inside of the `ItemGenerator.GenerateItems()` method and noting that this breakpoint is encountered for the first time after the service has returned the result of the `StreamedFeed()` method.  
   
 ## Client  
  The client in this sample uses a custom <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> implementation that delays the materialization of individual items in the feed instead of buffering them into memory. The custom `StreamedAtom10FeedFormatter` instance is used as follows.  
@@ -105,7 +91,7 @@ private IEnumerable<SyndicationItem> DelayReadItems(XmlReader reader, Syndicatio
 }  
 ```  
   
- As a result, each item is not read from the network until the client application traversing the results of `ReadItems()` is ready to use it. You can observe this behavior by setting a breakpoint on the `yield``return` statement inside of `StreamedAtom10FeedFormatter.DelayReadItems()` and noticing that this breakpoint is encountered for the first time after the call to `ReadFrom()` completes.  
+ As a result, each item is not read from the network until the client application traversing the results of `ReadItems()` is ready to use it. You can observe this behavior by setting a breakpoint on the `yield return` statement inside of `StreamedAtom10FeedFormatter.DelayReadItems()` and noticing that this breakpoint is encountered for the first time after the call to `ReadFrom()` completes.  
   
  The following instructions show how to build and run the sample. Note that although the server stops generating items after the client has read 10 items, the output shows that the client reads significantly more than 10 items. This is because the networking binding used by the sample transmits data in four-kilobyte (KB) segments. As such, the client receives 4KB of item data before it has the opportunity to read even one item. This is normal behavior (sending streamed HTTP data in reasonably-sized segments increases performance).  
   
@@ -122,9 +108,9 @@ private IEnumerable<SyndicationItem> DelayReadItems(XmlReader reader, Syndicatio
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Syndication\StreamingFeeds`  
   
-## See Also  
- [Stand-Alone Diagnostics Feed](../../../../docs/framework/wcf/samples/stand-alone-diagnostics-feed-sample.md)
+## See also
+- [Stand-Alone Diagnostics Feed](../../../../docs/framework/wcf/samples/stand-alone-diagnostics-feed-sample.md)

@@ -1,25 +1,14 @@
 ---
 title: "Inferring Schemas from XML Documents"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Inferring Schemas from XML Documents
 This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> class to infer an XML Schema definition language (XSD) schema from the structure of an XML document.  
@@ -87,9 +76,10 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
 ## Schemas that Cannot be Refined  
  There are W3C XML Schema constructs that the XML Schema definition language (XSD) schema <xref:System.Xml.Schema.XmlSchemaInference> process cannot handle if given a type to refine and cause an exception to be thrown. Such as a complex type whose top-level compositor is anything other than a sequence. In the Schema Object Model (SOM), this corresponds to an <xref:System.Xml.Schema.XmlSchemaComplexType> whose <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> property is not an instance of <xref:System.Xml.Schema.XmlSchemaSequence>.  
   
-## See Also  
- <xref:System.Xml.Schema.XmlSchemaInference>  
- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
- [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)  
- [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)  
- [Rules for Inferring Simple Types](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)
+## See also
+
+- <xref:System.Xml.Schema.XmlSchemaInference>
+- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
+- [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)
+- [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)
+- [Rules for Inferring Simple Types](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)

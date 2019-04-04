@@ -1,14 +1,6 @@
 ---
 title: "GridView Column Header Styles and Templates Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "column headers [WPF], customizing"
   - "ListView controls [WPF], GridView column header styles"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "headers [WPF], customizing"
   - "GridView view mode [WPF], customizing column headers"
 ms.assetid: 74835674-a39e-4ab5-9418-ad7f6ab7b956
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # GridView Column Header Styles and Templates Overview
 This overview discusses the order of precedence for properties that you use to customize a column header in the <xref:System.Windows.Controls.GridView> view mode of a <xref:System.Windows.Controls.ListView> control.  
@@ -43,7 +29,7 @@ This overview discusses the order of precedence for properties that you use to c
   
  <sup>1</sup>For **Header Template Properties**, if you set both the template and template selector properties, the template property takes precedence. For example, if you set both the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> properties, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property takes precedence.  
   
-## See Also  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+## See also
+- [How-to Topics](listview-how-to-topics.md)
+- [ListView Overview](listview-overview.md)
+- [GridView Overview](gridview-overview.md)

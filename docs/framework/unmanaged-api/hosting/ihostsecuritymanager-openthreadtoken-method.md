@@ -1,14 +1,6 @@
 ---
 title: "IHostSecurityManager::OpenThreadToken Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostSecurityManager.OpenThreadToken"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostSecurityManager::OpenThreadToken Method
 Opens the discretionary access token associated with the currently executing thread.  
@@ -43,7 +31,7 @@ HRESULT OpenThreadToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwDesiredAccess`  
  [in] A mask of access values that specify the requested types of access to the thread token. These values are defined in the Win32 `OpenThreadToken` function. The requested access types are reconciled against the token's discretionary access control list (DACL) to determine which types of access to grant or deny.  
   
@@ -78,6 +66,6 @@ HRESULT OpenThreadToken (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)  
- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+## See also
+- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
+- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)

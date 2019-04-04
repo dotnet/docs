@@ -1,14 +1,6 @@
 ---
 title: "CorExitProcess Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorExitProcess"
 api_location: 
@@ -16,6 +8,7 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -25,12 +18,8 @@ helpviewer_keywords:
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
 topic_type: 
   - "apiref"
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorExitProcess Function
 Shuts down the current unmanaged process.  
@@ -45,7 +34,7 @@ void STDMETHODCALLTYPE CorExitProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `exitCode`  
  An integer that specifies the process exit code.  
   
@@ -63,5 +52,5 @@ void STDMETHODCALLTYPE CorExitProcess (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

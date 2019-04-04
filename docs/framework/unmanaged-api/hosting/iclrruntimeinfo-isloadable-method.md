@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeInfo::IsLoadable Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeInfo.IsLoadable"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 205ca53b-e78e-49b2-9a46-2a7823e96b8c
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeInfo::IsLoadable Method
 Indicates whether the runtime associated with this interface can be loaded into the current process, taking into account other runtimes that might already be loaded into the process.  
@@ -40,7 +28,7 @@ HRESULT IsLoadable(
         [out, retval] BOOL *pbLoadable);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbLoadable`  
  [out] `true` if this runtime could be loaded into the current process; otherwise, `false`.  
   
@@ -66,7 +54,7 @@ HRESULT IsLoadable(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

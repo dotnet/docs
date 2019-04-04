@@ -1,14 +1,6 @@
 ---
 title: "FUSION_INSTALL_REFERENCE Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "FUSION_INSTALL_REFERENCE"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: ae181ec8-36bf-4ed1-9a02-ca27d417c80b
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FUSION_INSTALL_REFERENCE Structure
 Represents a reference that an application makes to an assembly that the application has installed in the global assembly cache.  
@@ -61,6 +49,6 @@ typedef struct _FUSION_INSTALL_REFERENCE_ {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)  
- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+## See also
+- [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)
+- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)

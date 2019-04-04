@@ -1,24 +1,13 @@
 ---
 title: "Reading XML Data using XPathDocument and XmlDocument"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 5711b225-6aa2-4e4f-9898-19f2d518ad1a
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Reading XML Data using XPathDocument and XmlDocument
 There are two ways to read an XML document in the <xref:System.Xml.XPath?displayProperty=nameWithType> namespace. One is to read an XML document using the read-only <xref:System.Xml.XPath.XPathDocument> class and the other is to read an XML document using the editable <xref:System.Xml.XmlDocument> class in the <xref:System.Xml?displayProperty=nameWithType> namespace.  
@@ -77,11 +66,12 @@ document.Load("books.xml");
 |<xref:System.Xml.XPath.XPathDocument>|`false`|  
 |<xref:System.Xml.XmlDocument>|`true`|  
   
-## See Also  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [Accessing XML Data using XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)  
- [Editing XML Data using XPathNavigator](../../../../docs/standard/data/xml/editing-xml-data-using-xpathnavigator.md)  
- [Schema Validation using XPathNavigator](../../../../docs/standard/data/xml/schema-validation-using-xpathnavigator.md)
+## See also
+
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XPath.XPathDocument>
+- <xref:System.Xml.XPath.XPathNavigator>
+- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
+- [Accessing XML Data using XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)
+- [Editing XML Data using XPathNavigator](../../../../docs/standard/data/xml/editing-xml-data-using-xpathnavigator.md)
+- [Schema Validation using XPathNavigator](../../../../docs/standard/data/xml/schema-validation-using-xpathnavigator.md)

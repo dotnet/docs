@@ -1,27 +1,13 @@
 ---
 title: "Windows Communication Foundation Tools"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, tools"
   - "Windows Communication Foundation, tools"
 ms.assetid: 399a47b4-bfea-434b-8e83-f76b5063d79d
-caps.latest.revision: 34
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Communication Foundation Tools
-Microsoft [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] tools are designed to make it easier for you to create, deploy, and manage [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications. This section contains detailed information about the tools. Please note that the tools are not supported.  
+Microsoft Windows Communication Foundation (WCF) tools are designed to make it easier for you to create, deploy, and manage WCF applications. This section contains detailed information about the tools. Please note that the tools are not supported.  
   
  You can run all the tools from the command line.  
   
@@ -38,7 +24,7 @@ Microsoft [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] tools are designe
 |[WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)|Configures basic WS-AtomicTransaction support settings using a command line tool.|  
 |[WS-AtomicTransaction Configuration MMC Snap-in](../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md)|Configures basic WS-AtomicTransaction support settings using a MMC snap-in.|  
 |[WorkFlow Service Registration Tool (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md)|Registers a Windows Workflow service.|  
-|[WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)|Hosts [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services contained in libraries (*.dll) files|  
+|[WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)|Hosts WCF services contained in libraries (*.dll) files|  
 |[WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)|A GUI tool that allows you to input parameters of arbitrary types, submit that input to the service, and view the response the service sends back.|  
 |[Contract-First Tool](../../../docs/framework/wcf/contract-first-tool.md)|A Visual Studio build task that creates code classes from XSD data contracts.|  
   

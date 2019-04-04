@@ -1,14 +1,6 @@
 ---
 title: "Tracing and Instrumenting Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "performance monitoring, tracing code"
   - "Trace class, instrumentation for .NET applications"
 ms.assetid: 773b6fc4-9013-4322-b728-5dec7a72e743
-caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracing and Instrumenting Applications
 Tracing is a way for you to monitor the execution of your application while it is running. You can add tracing and debugging instrumentation to your .NET Framework application when you develop it, and you can use that instrumentation both while you are developing the application and after you have deployed it. You can use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes to record information about errors and application execution in logs, text files, or other devices for later analysis.  
@@ -147,15 +135,15 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 ## Security Concerns  
  If you do not disable tracing and debugging before deploying an ASP.NET application, your application may reveal information about itself that could be exploited by a malicious program. For more information, see [How to: Compile Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md), [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio), and [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md). Debugging is also configurable through Internet Information Services (IIS).  
   
-## See Also  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.TraceSource>  
- [Code Contracts](../../../docs/framework/debug-trace-profile/code-contracts.md)  
- [C#, F#, and Visual Basic Project Types](/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)  
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
- [How to: Compile Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)  
- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)  
- [How to: Create and Initialize Trace Sources](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources.md)  
- [How to: Use TraceSource and Filters with Trace Listeners](../../../docs/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md)  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)  
- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
+## See also
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.TraceSource>
+- [Code Contracts](../../../docs/framework/debug-trace-profile/code-contracts.md)
+- [C#, F#, and Visual Basic Project Types](/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)
+- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
+- [How to: Compile Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)
+- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
+- [How to: Create and Initialize Trace Sources](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources.md)
+- [How to: Use TraceSource and Filters with Trace Listeners](../../../docs/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md)
+- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)

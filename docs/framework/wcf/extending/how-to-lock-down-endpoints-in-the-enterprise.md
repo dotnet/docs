@@ -1,33 +1,19 @@
 ---
 title: "How to: Lock Down Endpoints in the Enterprise"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Lock Down Endpoints in the Enterprise
-Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications installed on computers.  
+Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all Windows Communication Foundation (WCF) client applications installed on computers.  
   
- In this case, the validator is a client validator because this endpoint behavior is added to the client [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section in the machine.config file. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] loads common endpoint behaviors only for client applications and loads common service behaviors only for service applications. To install this same validator for service applications, the validator must be a service behavior. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section.  
+ In this case, the validator is a client validator because this endpoint behavior is added to the client [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section in the machine.config file. WCF loads common endpoint behaviors only for client applications and loads common service behaviors only for service applications. To install this same validator for service applications, the validator must be a service behavior. For more information, see the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section.  
   
 > [!IMPORTANT]
 >  Service or endpoint behaviors not marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (APTCA) that are added to the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section of a configuration file are not run when the application runs in a partial trust environment, and no exception is thrown when this occurs. To enforce the running of common behaviors such as validators, you must either:  
 >   
 >  -- Mark your common behavior with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute so that it can run when deployed as a Partial Trust application. Note that a registry entry can be set on the computer to prevent APTCA-marked assemblies from running..  
 >   
->  -- Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a Partial Trust environment. If they can do so, the custom validator does not run and no exception is thrown. For one way to ensure this, see the `levelfinal` option using [Code Access Security Policy Tool (Caspol.exe)](http://go.microsoft.com/fwlink/?LinkId=248222).  
+>  -- Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a Partial Trust environment. If they can do so, the custom validator does not run and no exception is thrown. For one way to ensure this, see the `levelfinal` option using [Code Access Security Policy Tool (Caspol.exe)](https://go.microsoft.com/fwlink/?LinkId=248222).  
 >   
 >  For more information, see [Partial Trust Best Practices](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md) and [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md).  
   
@@ -41,13 +27,13 @@ Large enterprises often require that applications are developed in compliance wi
   
      [!code-csharp[LockdownValidation#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorelement.cs#3)]  
   
-3.  Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](http://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.  
+3.  Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](https://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.  
   
 ### To install the validator into the target computer  
   
 1.  Install the endpoint validator using the appropriate mechanism. In an enterprise, this can be using Group Policy and Systems Management Server (SMS).  
   
-2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](http://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx).  
+2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](../../../../docs/framework/tools/gacutil-exe-gac-tool.md).  
   
 3.  Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
   
@@ -71,6 +57,6 @@ Large enterprises often require that applications are developed in compliance wi
 ## .NET Framework Security  
  You may also want to encrypt the configuration file elements. For more information, see the See Also section.  
   
-## See Also  
- [Encrypting configuration file elements using DPAPI](http://go.microsoft.com/fwlink/?LinkId=94954)  
- [Encrypting configuration file elements using RSA](http://go.microsoft.com/fwlink/?LinkId=94955)
+## See also
+- [Encrypting configuration file elements using DPAPI](https://go.microsoft.com/fwlink/?LinkId=94954)
+- [Encrypting configuration file elements using RSA](https://go.microsoft.com/fwlink/?LinkId=94955)

@@ -1,21 +1,7 @@
 ---
 title: "3357 - SecurityIdentityVerificationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e5629542-9067-42ba-b1cc-e8af61484643
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3357 - SecurityIdentityVerificationFailure
 ## Properties  

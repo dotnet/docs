@@ -1,21 +1,7 @@
 ---
 title: "Inside the CustomPeerResolverService: Client Registrations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 40236953-a916-4236-84a6-928859e1331a
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Inside the CustomPeerResolverService: Client Registrations
 Each node in the mesh publishes its endpoint information to the resolver service through the `Register` function. The resolver service stores this information as a registration record. This record contains a unique identifier (RegistrationID) and endpoint information (PeerNodeAddress) for the node.  
@@ -41,5 +27,5 @@ Each node in the mesh publishes its endpoint information to the resolver service
 ## RegistrationLifetime and Refresh  
  When a node registers with a resolver service, it receives a <xref:System.ServiceModel.PeerResolvers.RegisterResponseInfo> object from the service. This object has a `RegistrationLifetime` property which indicates to the node how much time it has before the registration expires and is removed by the resolver service. If, for example, the `RegistrationLifetime` is 2 minutes, the node needs to call `Refresh` in under 2 minutes to ensure the record stays fresh and is not deleted. When the resolver service receives a `Refresh` request, it looks up the record and resets the expiration time. Refresh returns a <xref:System.ServiceModel.PeerResolvers.RefreshResponseInfo> object with a `RegistrationLifetime` property.  
   
-## See Also  
- [Peer Resolvers](../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
+## See also
+- [Peer Resolvers](../../../../docs/framework/wcf/feature-details/peer-resolvers.md)

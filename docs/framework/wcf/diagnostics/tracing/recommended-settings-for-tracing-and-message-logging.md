@@ -1,21 +1,7 @@
 ---
 title: "Recommended Settings for Tracing and Message Logging"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c6aca6e8-704e-4779-a9ef-50c46850249e
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Recommended Settings for Tracing and Message Logging
 This topic describes recommended tracing and message logging settings for different operating environments.  
@@ -120,5 +106,5 @@ logman start mytrace -pf logman.providers -o test.etl –ets
 logman stop mytrace -ets  
 ```  
   
-## See Also  
- [Using Windows Management Instrumentation for Diagnostics](../../../../../docs/framework/wcf/diagnostics/wmi/index.md)
+## See also
+- [Using Windows Management Instrumentation for Diagnostics](../../../../../docs/framework/wcf/diagnostics/wmi/index.md)

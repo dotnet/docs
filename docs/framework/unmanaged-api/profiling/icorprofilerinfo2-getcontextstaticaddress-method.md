@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::GetContextStaticAddress Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.GetContextStaticAddress"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2b374116-0972-416a-8cf5-79213129be9a
 topic_type: 
   - "apiref"
-caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::GetContextStaticAddress Method
 Gets the address for the specified context-static field that is in the scope of the specified context.  
@@ -43,7 +31,7 @@ HRESULT GetContextStaticAddress(
     [out] void **ppAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class that contains the requested context-static field.  
   
@@ -74,6 +62,6 @@ HRESULT GetContextStaticAddress(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugMutableDataTarget::WriteVirtual Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 80833648-58a7-491a-8dc8-9a48e9bb3adc
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugMutableDataTarget::WriteVirtual Method
 Writes memory into the target process address space.  
@@ -29,7 +17,7 @@ HRESULT WriteVirtual(
    [in] ULONG32 bytesRequested);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The address at which to write the contents of `pBuffer`.  
   
@@ -54,6 +42,6 @@ HRESULT WriteVirtual(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## See Also  
- [ICorDebugMutableDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugMutableDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

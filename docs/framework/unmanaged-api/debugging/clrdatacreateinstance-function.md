@@ -1,14 +1,6 @@
 ---
 title: "CLRDataCreateInstance Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CLRDataCreateInstance"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLRDataCreateInstance Function
 Creates an interface object for the specified target item.  
@@ -43,7 +31,7 @@ HRESULT CLRDataCreateInstance (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iid`  
  [in] The identifier of the interface to be instantiated.  
   
@@ -65,5 +53,5 @@ HRESULT CLRDataCreateInstance (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+## See also
+- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

@@ -1,18 +1,7 @@
 ---
 title: "Serializing with an XML Declaration (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8726f79e-2bb0-4ba0-969d-197cca591647
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Serializing with an XML Declaration (Visual Basic)
 This topic describes how to control whether serialization generates an XML declaration.  
@@ -66,5 +55,6 @@ Console.WriteLine(sb.ToString())
 <Root><Child>child content</Child></Root>  
 ```  
   
-## See Also  
- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+## See also
+
+- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)

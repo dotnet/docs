@@ -1,21 +1,7 @@
 ---
 title: "Distributed Transactions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 718b257c-bcb2-408e-b004-a7b0adb1c176
-caps.latest.revision: 7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Distributed Transactions
 A transaction is a set of related tasks that either succeeds (commit) or fails (abort) as a unit, among other things. A *distributed transaction* is a transaction that affects several resources. For a distributed transaction to commit, all participants must guarantee that any change to data will be permanent. Changes must persist despite system crashes or other unforeseen events. If even a single participant fails to make this guarantee, the entire transaction fails, and any changes to data within the scope of the transaction are rolled back.  
@@ -55,7 +41,7 @@ A transaction is a set of related tasks that either succeeds (commit) or fails (
 ## Configuring Distributed Transactions  
  You may need to enable the MS DTC over the network in order to use distributed transactions. If have the Windows Firewall enabled, you must allow the MS DTC service to use the network or open the MS DTC port.  
   
-## See Also  
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [System.Transactions Integration with SQL Server](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [System.Transactions Integration with SQL Server](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

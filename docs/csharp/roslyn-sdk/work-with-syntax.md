@@ -1,12 +1,7 @@
 ---
-title: Use the .NET Compiler Platform SDK syntax model 
+title: Use the .NET Compiler Platform SDK syntax model
 description: This overview provides an understanding of the types you use to understand and manipulate syntax nodes.
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/15/2017
-ms.topic: conceptual
-ms.prod: .net
-ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 

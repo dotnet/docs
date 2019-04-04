@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::GetHashFromFileW Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.GetHashFromFileW"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c6ff45fc-905d-4c6e-b00c-97c6c7c55d99
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::GetHashFromFileW Method
 Generates a hash over the contents of the file specified by a Unicode string.  
@@ -45,7 +33,7 @@ HRESULT GetHashFromFileW (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The Unicode name of the file to hash.  
   
@@ -62,7 +50,7 @@ HRESULT GetHashFromFileW (
  [out] The size, in bytes, of `pbHash`.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Remarks  
  This method is the same as the [ICLRStrongName::GetHashFromFile](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md) method, except that the file name specification is Unicode instead of ANSI.  
@@ -76,6 +64,6 @@ HRESULT GetHashFromFileW (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [GetHashFromFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [GetHashFromFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

@@ -1,17 +1,7 @@
 ---
 title: "XAttribute Class Overview (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 5a630f24-f9ad-400e-831e-c14ebfc9e142
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # XAttribute Class Overview (C#)
 Attributes are name/value pairs that are associated with an element. The <xref:System.Xml.Linq.XAttribute> class represents XML attributes.  
@@ -83,5 +73,6 @@ Console.WriteLine(c);
   
  This distinction is primarily important only to developers who are writing code that works with XML trees at the node level. Many developers will not be concerned with this distinction.  
   
-## See Also  
- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## See also
+
+- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

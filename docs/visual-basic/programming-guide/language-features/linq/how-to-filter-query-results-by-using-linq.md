@@ -1,13 +1,6 @@
 ---
 title: "How to: Filter Query Results by Using LINQ (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "filtering [Visual Basic]"
   - "filtering data [LINQ in Visual Basic]"
@@ -18,16 +11,13 @@ helpviewer_keywords:
   - "query samples [Visual Basic]"
   - "filtering data [Visual Basic]"
 ms.assetid: ef103092-9bed-4134-97f4-2db696e83c12
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Filter Query Results by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database and filters the results by a particular value by using the `Where` clause. For more information, see [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md).  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+ The examples in this topic use the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -73,16 +63,17 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      Add the following code to the `Load` event to query the tables that are exposed as properties of your data context. The query filters the results and returns only customers that are located in `London`.  
   
-     [!code-vb[VbLINQToSQLHowTos#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form5.vb#11)]  
   
 4.  Press F5 to run your project and view the results.  
   
 5.  Following are some other filters that you can try.  
   
-     [!code-vb[VbLINQToSQLHowTos#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_2.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form5.vb#12)]  
   
-## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+## See also
+
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

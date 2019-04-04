@@ -1,28 +1,14 @@
 ---
 title: "PeerTransportBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 40bf6be2-8087-4cb3-a66c-408d53eb9269
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PeerTransportBindingElement
 PeerTransportBindingElement  
   
 ## Syntax  
   
-```  
+```csharp
 class PeerTransportBindingElement : TransportBindingElement  
 {  
   string ListenIPAddress;  
@@ -64,5 +50,5 @@ class PeerTransportBindingElement : TransportBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.PeerTransportBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.PeerTransportBindingElement>

@@ -1,12 +1,6 @@
 ---
-title: "Imports Statement (.NET Namespace and Type)"
+title: "Imports Statement - .NET Namespace and Type (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Imports"
   - "imports"
@@ -22,9 +16,6 @@ helpviewer_keywords:
   - "aliases [Visual Basic], import"
   - "declared elements [Visual Basic], container elements"
 ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
-caps.latest.revision: 40
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Imports Statement (.NET Namespace and Type)
 Enables type names to be referenced without namespace qualification.  
@@ -78,32 +69,33 @@ Imports [ aliasname = ] namespace.element
   
  The code has no `Imports` statements at the top of the file. Therefore, the `DirectoryInfo`, <xref:System.Text.StringBuilder>, and <xref:Microsoft.VisualBasic.ControlChars.CrLf> references are all fully qualified with the namespaces.  
   
- [!code-vb[VbVbalrStatements#152](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_1.vb)]  
+ [!code-vb[VbVbalrStatements#152](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#152)]  
   
 ## Example  
  The following example includes `Imports` statements for the referenced namespaces. Therefore, the types do not have to be fully qualified with the namespaces.  
   
- [!code-vb[VbVbalrStatements#153](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_2.vb)]  
+ [!code-vb[VbVbalrStatements#153](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#153)]  
   
- [!code-vb[VbVbalrStatements#154](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_3.vb)]  
+ [!code-vb[VbVbalrStatements#154](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#154)]  
   
 ## Example  
  The following example includes `Imports` statements that create aliases for the referenced namespaces. The types are qualified with the aliases.  
   
- [!code-vb[VbVbalrStatements#155](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_4.vb)]  
+ [!code-vb[VbVbalrStatements#155](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#155)]  
   
- [!code-vb[VbVbalrStatements#156](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_5.vb)]  
+ [!code-vb[VbVbalrStatements#156](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#156)]  
   
 ## Example  
  The following example includes `Imports` statements that create aliases for the referenced types. Aliases are used to specify the types.  
   
- [!code-vb[VbVbalrStatements#157](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_6.vb)]  
+ [!code-vb[VbVbalrStatements#157](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#157)]  
   
- [!code-vb[VbVbalrStatements#158](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_7.vb)]  
+ [!code-vb[VbVbalrStatements#158](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#158)]  
   
-## See Also  
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)  
- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+## See also
+
+- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
+- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
+- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

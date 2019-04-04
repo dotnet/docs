@@ -1,23 +1,9 @@
 ---
-title: "&lt;serviceCredentials&gt;"
-ms.custom: ""
+title: "<serviceCredentials>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 96db336c-4f7a-4193-81a5-910b8ffd804f
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;serviceCredentials&gt;
+# \<serviceCredentials>
 Specifies the credential to be used in authenticating the service and the client credential validation-related settings.  
   
  \<system.ServiceModel>  
@@ -29,22 +15,22 @@ Specifies the credential to be used in authenticating the service and the client
 ## Syntax  
   
 ```xml  
-<serviceCredentials type="String">  
-   <clientCertificate>  
-   </clientCertificate>  
-   <issuedTokenAuthentication>  
-   </issuedTokenAuthentication>  
-   <peer>  
-   </peer>  
-   <secureConversationAuthentication>  
-   </secureConversationAuthentication>  
-   <serviceCertificate>  
-   </serviceCertificate>  
-   <userNameAuthentication>  
-   </userNameAuthentication>  
-   <windowsAuthentication>  
-   </windowsAuthentication>  
-</serviceCredentials>  
+<serviceCredentials type="String">
+  <clientCertificate>
+  </clientCertificate>
+  <issuedTokenAuthentication>
+  </issuedTokenAuthentication>
+  <peer>
+  </peer>
+  <secureConversationAuthentication>
+  </secureConversationAuthentication>
+  <serviceCertificate>
+  </serviceCertificate>
+  <userNameAuthentication>
+  </userNameAuthentication>
+  <windowsAuthentication>
+  </windowsAuthentication>
+</serviceCredentials>
 ```  
   
 ## Attributes and Elements  
@@ -74,7 +60,7 @@ Specifies the credential to be used in authenticating the service and the client
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

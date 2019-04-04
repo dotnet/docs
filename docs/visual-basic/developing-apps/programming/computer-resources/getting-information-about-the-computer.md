@@ -1,19 +1,9 @@
 ---
 title: "Getting Information about the Computer (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.Info object [Visual Basic], tasks"
 ms.assetid: 13c145bc-5c85-4fea-a5dd-2ca8681a0252
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Getting Information about the Computer (Visual Basic)
 The `My.Computer.Info` object provides properties for getting information about the computer's memory, loaded assemblies, name, and operating system.  
@@ -29,5 +19,6 @@ The `My.Computer.Info` object provides properties for getting information about 
 |Determine what service packs have been installed on the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion%2A>|  
 |Determine the installed `UICulture` on the computer on which the application is running.|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture%2A>|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>
+## See also
+
+- <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>

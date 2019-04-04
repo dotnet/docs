@@ -1,23 +1,9 @@
 ---
-title: "&lt;userNameAuthentication&gt;"
-ms.custom: ""
+title: "<userNameAuthentication>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;userNameAuthentication&gt;
+# \<userNameAuthentication>
 Specifies a service's credentials based on user name and password.  
   
  \<system.ServiceModel>  
@@ -30,14 +16,13 @@ Specifies a service's credentials based on user name and password.
 ## Syntax  
   
 ```xml  
-<userNameAuthentication  
-   cacheLogonTokenLifetime="TimeSpan"  
-   cacheLogonTokens="Boolean"   
-   customUserNamePasswordValidatorType="String"  
-   includeWindowsGroups="Boolean"   
-   maxCacheLogonTokens="Integer"  
-   membershipProviderName="String"  
-   userNamePasswordValidationMode="Windows/MembershipProvider/Custom" />  
+<userNameAuthentication cacheLogonTokenLifetime="TimeSpan"
+                        cacheLogonTokens="Boolean"
+                        customUserNamePasswordValidatorType="String"
+                        includeWindowsGroups="Boolean"
+                        maxCacheLogonTokens="Integer"
+                        membershipProviderName="String"
+                        userNamePasswordValidationMode="Windows/MembershipProvider/Custom" />
 ```  
   
 ## Attributes and Elements  
@@ -69,8 +54,8 @@ Specifies a service's credentials based on user name and password.
   
  If none of the bindings used by a service is configured to use Windows authentication for user name/password, the settings related to caching of logon tokens are ignored. These include the `cacheLogonTokenLifetime`, `cacheLogonTokens`, and `maxCacheLogonTokens`.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.UserNameServiceElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.UserNameAuthentication%2A>
+## See also
+- <xref:System.ServiceModel.Configuration.UserNameServiceElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.UserNameAuthentication%2A>

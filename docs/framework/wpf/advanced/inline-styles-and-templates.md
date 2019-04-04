@@ -1,26 +1,12 @@
 ---
 title: "Inline Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "inline templates [WPF]"
   - "styles [WPF], inline"
   - "templates [WPF], inline"
   - "inline styles [WPF]"
 ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Inline Styles and Templates
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides <xref:System.Windows.Style> objects and template objects (<xref:System.Windows.FrameworkTemplate> subclasses) as a way to define the visual appearance of an element in resources, so that they can be used multiple times. For this reason, attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that take the types <xref:System.Windows.Style> and <xref:System.Windows.FrameworkTemplate> almost always make resource references to existing styles and templates rather than define new ones inline.  
@@ -42,7 +28,7 @@ ms.workload:
   
  Usually there is no reason to set a style or template inline, even if you only intend to use that style or template in that location. Most elements that can take a style or template also support a content property and a content model. If you are only using whatever logical tree you create through styling or templating once, it would be even easier to just fill that content property with the equivalent child elements in direct markup. This would bypass the style and template mechanisms altogether.  
   
- Other syntaxes enabled by markup extensions that return an object are also possible for styles and templates. Two such extensions that have possible scenarios include [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md) and <xref:System.Windows.Data.Binding>.  
+ Other syntaxes enabled by markup extensions that return an object are also possible for styles and templates. Two such extensions that have possible scenarios include [TemplateBinding](templatebinding-markup-extension.md) and <xref:System.Windows.Data.Binding>.  
   
-## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- [Styling and Templating](../controls/styling-and-templating.md)

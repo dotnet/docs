@@ -1,14 +1,6 @@
 ---
 title: "CorSymVarFlag Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorSymVarFlag"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorSymVarFlag Enumeration
 Indicates whether a variable is compiler-generated.  
@@ -50,5 +38,5 @@ typedef enum CorSymVarFlag
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+## See also
+- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)

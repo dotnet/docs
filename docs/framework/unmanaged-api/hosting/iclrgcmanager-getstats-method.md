@@ -1,14 +1,6 @@
 ---
 title: "ICLRGCManager::GetStats Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRGCManager.GetStats"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ce259d1d-cd81-4490-a7a1-0d0ea0804872
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRGCManager::GetStats Method
 Gets a set of current statistics about the common language runtime's garbage collection system.  
@@ -41,7 +29,7 @@ HRESULT GetStats (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStats`  
  [in, out] A [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) instance that contains the requested statistics.  
   
@@ -78,13 +66,13 @@ pCLRGCManager->GetStats(&GCStats);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
- [COR_GC_STATS Structure](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md)  
- [COR_GC_STAT_TYPES Enumeration](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md)  
- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)  
- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
+- [COR_GC_STATS Structure](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md)
+- [COR_GC_STAT_TYPES Enumeration](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md)
+- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)
+- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

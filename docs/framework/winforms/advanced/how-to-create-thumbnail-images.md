@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Thumbnail Images"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "thumbnail images [Windows Forms], creating"
   - "images [Windows Forms], creating thumbnails"
 ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Thumbnail Images
 A thumbnail image is a small version of an image. You can create a thumbnail image by calling the <xref:System.Drawing.Image.GetThumbnailImage%2A> method of an <xref:System.Drawing.Image> object.  
@@ -31,13 +17,13 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
   
  The following illustration shows the thumbnail image.  
   
- ![Thumbnail Image](../../../../docs/framework/winforms/advanced/media/thumbnail1.png "Thumbnail1")  
+ ![Thumbnail Image](./media/thumbnail1.png "Thumbnail1")  
   
 > [!NOTE]
 >  In this example, a callback method is declared, but never used. This supports all versions of GDI+.  
   
- [!code-csharp[System.Drawing.WorkingWithImages#71](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#71)]
- [!code-vb[System.Drawing.WorkingWithImages#71](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#71)]  
+ [!code-csharp[System.Drawing.WorkingWithImages#71](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#71)]
+ [!code-vb[System.Drawing.WorkingWithImages#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#71)]  
   
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. To run the example, follow these steps:  
@@ -58,6 +44,6 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
   
      A 100 by 100 thumbnail image appears on the form.  
   
-## See Also  
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)  
- [Working with Images, Bitmaps, Icons, and Metafiles](../../../../docs/framework/winforms/advanced/working-with-images-bitmaps-icons-and-metafiles.md)
+## See also
+- [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)
+- [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

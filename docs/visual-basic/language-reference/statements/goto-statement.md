@@ -1,12 +1,6 @@
 ---
-title: "GoTo Statement"
+title: "GoTo Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.GoTo"
 helpviewer_keywords: 
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "conditional statements [Visual Basic], GoTo statement"
   - "GoTo statement [Visual Basic], syntax"
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # GoTo Statement
 Branches unconditionally to a specified line in a procedure.  
@@ -57,20 +48,20 @@ GoTo line
   
  The following illustration shows one `Try` construction nested within another. Various branches among the blocks of the two constructions are indicated as valid or invalid.  
   
- ![Graphic diagram of branching in Try constructions](../../../visual-basic/language-reference/statements/media/trybranching.gif "TryBranching")  
-Valid and invalid branches in Try constructions  
+ ![Graphic diagram of branching in Try constructions](./media/goto-statement/try-construction-branching.gif)  
   
 ## Example  
  The following example uses the `GoTo` statement to branch to line labels in a procedure.  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
-## See Also  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+## See also
+
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)

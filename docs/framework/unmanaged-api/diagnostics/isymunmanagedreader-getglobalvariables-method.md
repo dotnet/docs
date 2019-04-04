@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedReader::GetGlobalVariables Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedReader.GetGlobalVariables"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a2dd5098-3e58-4be5-b7a2-e4160b3b505a
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedReader::GetGlobalVariables Method
 Returns all global variables.  
@@ -43,7 +31,7 @@ HRESULT GetGlobalVariables(
         length_is(*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cVars`  
  [in] The length of the buffer pointed to by `pcVars`.  
   
@@ -59,5 +47,5 @@ HRESULT GetGlobalVariables(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

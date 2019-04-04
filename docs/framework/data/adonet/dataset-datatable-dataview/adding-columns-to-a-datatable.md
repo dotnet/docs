@@ -1,24 +1,10 @@
 ---
 title: "Adding Columns to a DataTable"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: e85c4a0e-4f3f-458c-b58b-0ddbc06bf974
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Adding Columns to a DataTable
 A <xref:System.Data.DataTable> contains a collection of <xref:System.Data.DataColumn> objects referenced by the **Columns** property of the table. This collection of columns, along with any constraints, defines the schema, or structure, of the table.  
@@ -59,10 +45,10 @@ workTable.Columns.Add("Purchases", typeof(Double));
   
  If you are using <xref:System.Xml.Linq.XElement> as the <xref:System.Data.DataColumn.DataType%2A> of a <xref:System.Data.DataColumn> in the <xref:System.Data.DataTable>, XML serialization will not work when you read in data. For example, if you write out a <xref:System.Xml.XmlDocument> by using the `DataTable.WriteXml` method, upon serialization to XML there is an additional parent node in the <xref:System.Xml.Linq.XElement>. To work around this problem, use the <xref:System.Data.SqlTypes.SqlXml> type instead of <xref:System.Xml.Linq.XElement>. `ReadXml` and `WriteXml` work correctly with <xref:System.Data.SqlTypes.SqlXml>.  
   
-## See Also  
- <xref:System.Data.DataColumn>  
- <xref:System.Data.DataColumnCollection>  
- <xref:System.Data.DataTable>  
- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)  
- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataColumn>
+- <xref:System.Data.DataColumnCollection>
+- <xref:System.Data.DataTable>
+- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)
+- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

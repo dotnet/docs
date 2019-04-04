@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::StrongNameCompareAssemblies Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.StrongNameCompareAssemblies"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b1fb356c-72cf-4aa4-8376-f291a6d97c01
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::StrongNameCompareAssemblies Method
 Determines whether two assemblies differ only by their strong name signatures.  
@@ -43,7 +31,7 @@ HRESULT StrongNameCompareAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssembly1`  
  [in] The path to the first assembly.  
   
@@ -60,7 +48,7 @@ HRESULT StrongNameCompareAssemblies (
 -   `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -74,5 +62,5 @@ HRESULT StrongNameCompareAssemblies (
 ## Remarks  
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
-## See Also  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

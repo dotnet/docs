@@ -1,17 +1,9 @@
 ---
-title: "My.Application Object"
+title: "My.Application Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Application object"
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Application Object
 Provides properties, methods, and events related to the current application.  
@@ -32,6 +24,7 @@ Provides properties, methods, and events related to the current application.
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Application.Info Object](../../../visual-basic/language-reference/objects/my-application-info-object.md)  
- [My.Application.Log Object](../../../visual-basic/language-reference/objects/my-application-log-object.md)
+## See also
+
+- [My.Application.Info Object](../../../visual-basic/language-reference/objects/my-application-info-object.md)
+- [My.Application.Log Object](../../../visual-basic/language-reference/objects/my-application-log-object.md)

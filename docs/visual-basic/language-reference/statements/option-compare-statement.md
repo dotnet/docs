@@ -1,12 +1,6 @@
 ---
-title: "Option Compare Statement"
+title: "Option Compare Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Compare"
   - "vb.OptionCompare"
@@ -24,9 +18,6 @@ helpviewer_keywords:
   - "Option Compare statement [Visual Basic]"
   - "text [Visual Basic], comparing"
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Compare Statement
 Declares the default comparison method to use when comparing string data.  
@@ -83,23 +74,24 @@ Option Compare { Binary | Text }
 ## Example  
  The following example uses the `Option Compare` statement to set the binary comparison as the default string comparison method. To use this code, uncomment the `Option Compare Binary` statement, and put it at the top of the source file.  
   
- [!code-vb[VbVbalrStatements#45](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#45)]  
   
 ## Example  
  The following example uses the `Option Compare` statement to set the case-insensitive text sort order as the default string comparison method. To use this code, uncomment the `Option Compare Text` statement, and put it at the top of the source file.  
   
- [!code-vb[VbVbalrStatements#46](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#46)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
- <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>  
- <xref:Microsoft.VisualBasic.Strings.Replace%2A>  
- <xref:Microsoft.VisualBasic.Strings.Split%2A>  
- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)  
- [String Functions](../../../visual-basic/language-reference/functions/string-functions.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Strings.InStr%2A>
+- <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>
+- <xref:Microsoft.VisualBasic.Strings.Replace%2A>
+- <xref:Microsoft.VisualBasic.Strings.Split%2A>
+- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>
+- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)
+- [String Functions](../../../visual-basic/language-reference/functions/string-functions.md)
+- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)

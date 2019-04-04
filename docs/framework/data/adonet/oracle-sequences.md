@@ -1,21 +1,7 @@
 ---
 title: "Oracle Sequences"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 27cd371d-8252-414d-b5b2-5d31fa44b585
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Oracle Sequences
 The .NET Framework Data Provider for Oracle provides support for retrieving the server-generated key Oracle Sequence values after performing inserts by using the <xref:System.Data.OracleClient.OracleDataAdapter>.  
@@ -106,6 +92,6 @@ public void OracleSequence(String connectionString)
 }  
 ```  
   
-## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

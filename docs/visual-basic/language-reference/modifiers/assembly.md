@@ -1,11 +1,6 @@
 ---
 title: "Assembly (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Assembly"
   - "vb.AssemblyAttribute"
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "Assembly keyword [Visual Basic]"
   - "attribute blocks, Assembly keyword"
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Assembly (Visual Basic)
 Specifies that an attribute at the beginning of a source file applies to the entire assembly.  
@@ -29,7 +21,7 @@ Specifies that an attribute at the beginning of a source file applies to the ent
   
  You can also apply an attribute to an assembly in the AssemblyInfo.vb file, in which case you do not have to use an attribute block in your main source-code file.  
   
-## See Also  
- [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+## See also
 
+- [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)
+- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)

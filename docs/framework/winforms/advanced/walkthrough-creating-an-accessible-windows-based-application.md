@@ -1,25 +1,11 @@
 ---
 title: "Walkthrough: Creating an Accessible Windows-based Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "accessibility [Windows Forms], Windows applications"
   - "Windows applications [Windows Forms], accessibility"
   - "applications [Windows Forms], accessibility"
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Walkthrough: Creating an Accessible Windows-based Application
 Creating an accessible application has important business implications. Many governments have accessibility regulations for software purchase. The Certified for Windows logo includes accessibility requirements. An estimated 30 million residents of the U.S. alone, many of them potential customers, are affected by the accessibility of software.  
@@ -38,7 +24,7 @@ Creating an accessible application has important business implications. Many gov
   
  For more information, see [Resources for Designing Accessible Applications](/visualstudio/ide/reference/resources-for-designing-accessible-applications).  
   
- For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
+ For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
   
 ## Creating the Project  
  This walkthrough creates the user interface for an application that takes pizza orders. It consists of a <xref:System.Windows.Forms.TextBox> for the customer's name, a <xref:System.Windows.Forms.RadioButton> group to select the pizza size, a <xref:System.Windows.Forms.CheckedListBox> for selecting the toppings, two Button controls labeled Order and Cancel, and a Menu with an Exit command.  
@@ -49,12 +35,12 @@ Creating an accessible application has important business implications. Many gov
   
 #### To begin making the application  
   
--   Create a new Windows Application in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)  
+-   Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)  
   
 ## Adding the Controls to the Form  
  When adding the controls to a form, keep in mind the following guidelines to make an accessible application:  
   
--   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../../../../docs/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
+-   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
   
 -   Set the font size to 10 points or larger.  
   
@@ -143,10 +129,12 @@ Creating an accessible application has important business implications. Many gov
     |MenuItem|Name|fileCommands|  
     ||Text|&File|  
     |MenuItem|Name|exitApp|  
-    ||Text|E&xit|  
-  
-     ![Pizza Order Form](../../../../docs/framework/winforms/advanced/media/vbpizzaorderform.gif "vbPizzaOrderForm")  
-Your form will look something like the following:  
+    ||Text|E&xit|
+    
+      Your form will look something like the following image:
+    
+      ![The pizza order form with a name textbox, and size and toppings selection.](./media/walkthrough-creating-an-accessible-windows-based-application/visual-basic-pizza-order-form.gif)  
+
   
 ## Supporting High Contrast Mode  
  High Contrast mode is a Windows system setting that improves readability by using contrasting colors and font sizes that are beneficial for visually impaired users. The <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> property is provided to determine whether the High Contrast mode is set.  
@@ -304,7 +292,7 @@ Your form will look something like the following:
   
 3.  Display a message box that acquires the keyboard focus. Avoid this method when the user may be typing.  
   
-4.  Display a status indicator in the status notification area of the taskbar. For details, see [Adding Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../../../../docs/framework/winforms/controls/app-icons-to-the-taskbar-with-wf-notifyicon.md).  
+4.  Display a status indicator in the status notification area of the taskbar. For details, see [Adding Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../controls/app-icons-to-the-taskbar-with-wf-notifyicon.md).  
   
 ## Testing the Application  
  Before deploying the application, you should test the accessibility features that you have implemented.  

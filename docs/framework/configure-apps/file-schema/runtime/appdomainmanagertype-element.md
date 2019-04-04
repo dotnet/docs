@@ -1,26 +1,14 @@
 ---
-title: "&lt;appDomainManagerType&gt; Element"
-ms.custom: ""
+title: "<appDomainManagerType> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "appDomainManagerType element"
   - "<appDomainManagerType> element"
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;appDomainManagerType&gt; Element
+# \<appDomainManagerType> Element
 Specifies the type that serves as the application domain manager for the default application domain.  
   
  \<configuration>  
@@ -79,10 +67,10 @@ Specifies the type that serves as the application domain manager for the default
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
- [\<appDomainManagerAssembly> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [SetAppDomainManagerType Method](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
+## See also
+- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
+- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
+- [\<appDomainManagerAssembly> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [SetAppDomainManagerType Method](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

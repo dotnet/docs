@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::StrongNameKeyGenEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.StrongNameKeyGenEx"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 1f8b59d0-5b72-45b8-ab74-c2b43ffc806e
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::StrongNameKeyGenEx Method
 Generates a new public/private key pair with the specified key size, for strong name use.  
@@ -45,7 +33,7 @@ HRESULT StrongNameKeyGenEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must either be a non-empty string or null to generate a temporary name.  
   
@@ -66,7 +54,7 @@ HRESULT StrongNameKeyGenEx (
  [out] The size, in bytes, of `ppbKeyBlob`.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Remarks  
  The .NET Framework versions 1.0 and 1.1 require a `dwKeySize` of 1024 bits to sign an assembly with a strong name; version 2.0 adds supports for 2048-bit keys.  
@@ -82,6 +70,6 @@ HRESULT StrongNameKeyGenEx (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [StrongNameKeyGen Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [StrongNameKeyGen Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

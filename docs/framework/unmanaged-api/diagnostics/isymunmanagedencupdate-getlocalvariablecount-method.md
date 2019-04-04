@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedENCUpdate::GetLocalVariableCount Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedENCUpdate.GetLocalVariableCount"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9777d8bb-4abc-4be8-aa7c-34f853eceb9c
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedENCUpdate::GetLocalVariableCount Method
 Gets the number of local variables.  
@@ -41,7 +29,7 @@ HRESULT GetLocalVariableCount(
     [out] ULONG        *pcLocals);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata token of methods.  
   
@@ -54,5 +42,5 @@ HRESULT GetLocalVariableCount(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+## See also
+- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

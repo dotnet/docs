@@ -1,17 +1,8 @@
 ---
-title: Results (F#)
+title: Results
 description: Learn how to use the F# 'Result' type to help you write error-tolerant code.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: a15b5cf1-9055-4481-918c-4c8a051b5829
 ---
-
 # Results
 
 Starting with F# 4.1, there is a `Result<'T,'TFailure>` type which you can use for writing error-tolerant code which can be composed.
@@ -85,8 +76,7 @@ test()
 
 As you can see, it's quite easy to chain together various validation functions if you force them all to return a `Result`.  This lets you break up functionality like this into small pieces which are as composable as you need them to be.  This also has the added value of *enforcing* the use of [pattern matching](pattern-matching.md) at the end of a round of validation, which in turns enforces a higher degree of program correctness.
 
-## See Also
+## See also
 
-[Discriminated Unions](discriminated-unions.md)
-
-[Pattern Matching](pattern-matching.md)
+- [Discriminated Unions](discriminated-unions.md)
+- [Pattern Matching](pattern-matching.md)

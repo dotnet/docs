@@ -1,18 +1,11 @@
 ---
 title: "-out (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/out compiler option [Visual Basic]"
   - "-out compiler option [Visual Basic]"
   - "out compiler option [Visual Basic]"
 ms.assetid: 9f148c15-0909-4cb8-a2db-777f8a8b45ae
-author: rpetrusha
-ms.author: ronpet
 ---
 # -out (Visual Basic)
 Specifies the name of the output file.  
@@ -45,7 +38,8 @@ Specifies the name of the output file.
 vbc t2.vb -out:t3.exe  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

@@ -1,14 +1,6 @@
 ---
 title: "dangerousThreadingAPI MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "suspending threads"
   - "DangerousThreadingAPI MDA"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "Suspend method"
   - "threading [.NET Framework], managed debugging assistants"
 ms.assetid: 3e5efbc5-92e4-4229-b31f-ce368a1adb96
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # dangerousThreadingAPI MDA
 The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> method is called on a thread other than the current thread.  
@@ -60,7 +48,7 @@ The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when 
 ## Example  
  The following code example demonstrates a call to the <xref:System.Threading.Thread.Suspend%2A> method that causes the activation of the `dangerousThreadingAPI`.  
   
-```  
+```csharp
 using System.Threading;  
 void FireMda()  
 {  
@@ -73,7 +61,7 @@ Thread t = new Thread(delegate() { Thread.Sleep(1000); });
 }  
 ```  
   
-## See Also  
- <xref:System.Threading.Thread>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)
+## See also
+- <xref:System.Threading.Thread>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)

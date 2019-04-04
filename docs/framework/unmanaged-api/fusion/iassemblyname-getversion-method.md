@@ -1,14 +1,6 @@
 ---
 title: "IAssemblyName::GetVersion Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAssemblyName.GetVersion"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 42230928-2c33-41fd-9519-d96efef6c7af
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAssemblyName::GetVersion Method
 Gets the version information for the assembly referenced by this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object.  
@@ -42,7 +30,7 @@ HRESULT GetVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwVersionHi`  
  [out] The high 32 bits of the version.  
   
@@ -56,5 +44,5 @@ HRESULT GetVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+## See also
+- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

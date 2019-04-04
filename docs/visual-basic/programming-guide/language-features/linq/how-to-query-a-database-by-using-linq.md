@@ -1,13 +1,6 @@
 ---
 title: "How to: Query a Database by Using LINQ (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "query samples [LINQ]"
   - "database querying [LINQ]"
@@ -16,16 +9,13 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
   - "query samples [Visual Basic]"
 ms.assetid: bcf5e9c3-a236-4399-9a7f-3991eca7cf56
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Query a Database by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database.  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+ The examples in this topic use the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -71,17 +61,18 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      Add the following code to the `Load` event to query the tables that are exposed as properties of your data context.  
   
-     [!code-vb[VbLINQToSQLHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-query-a-database-by-using-linq_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form2.vb#3)]  
   
 4.  Press F5 to run your project and view the results.  
   
 5.  Following are some additional queries that you can try:  
   
-     [!code-vb[VbLINQToSQLHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-query-a-database-by-using-linq_2.vb)]  
-    [!code-vb[VbLINQToSQLHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-query-a-database-by-using-linq_3.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form2.vb#4)]  
+    [!code-vb[VbLINQToSQLHowTos#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form2.vb#5)]  
   
-## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+## See also
+
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

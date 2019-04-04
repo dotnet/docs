@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::EnumMethodsWithName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.EnumMethodsWithName"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a8624913-2e23-46ad-a0c1-bb8eccbbf20f
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::EnumMethodsWithName Method
 Enumerates methods that have the specified name and that are defined by the type referenced by the specified TypeDef token.  
@@ -46,7 +34,7 @@ HRESULT EnumMethodsWithName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -84,6 +72,6 @@ HRESULT EnumMethodsWithName (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

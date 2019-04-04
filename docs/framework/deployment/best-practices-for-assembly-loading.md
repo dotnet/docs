@@ -1,14 +1,6 @@
 ---
 title: "Best Practices for Assembly Loading"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies,binding"
   - "LoadFrom method"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "LoadWithPartialName method"
   - "load-from context"
 ms.assetid: 68d1c539-6a47-4614-ab59-4b071c9d4b4c
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Best Practices for Assembly Loading
 This article discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors. The article discusses the following recommendations:  
@@ -160,7 +148,7 @@ This article discusses ways to avoid problems of type identity that can lead to 
  If it is not possible to put all your assemblies in the probing path, consider alternatives such as using the .NET Framework add-in model, placing assemblies into the global assembly cache, or creating application domains.  
   
 ### Consider Using the .NET Framework Add-In Model  
- If you are using the load-from context to implement add-ins, which typically are not installed in the application base, use the .NET Framework add-in model. This model provides isolation at the application domain or process level, without requiring you to manage application domains yourself. For information about the add-in model, see [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md).  
+ If you are using the load-from context to implement add-ins, which typically are not installed in the application base, use the .NET Framework add-in model. This model provides isolation at the application domain or process level, without requiring you to manage application domains yourself. For information about the add-in model, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).  
   
 ### Consider Using the Global Assembly Cache  
  Place assemblies in the global assembly cache to get the benefit of a shared assembly path that is outside the application base, without losing the advantages of the default load context or taking on the disadvantages of the other contexts.  
@@ -170,9 +158,9 @@ This article discusses ways to avoid problems of type identity that can lead to 
   
  Note that you can use the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method to load these assemblies. Because they are now in the probing path, they will be loaded into the default load context instead of the load-from context. However, we recommend that you switch to the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method and supply full assembly display names to ensure that correct versions are always used.  
   
-## See Also  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType>  
- <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>  
- [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)
+## See also
+
+- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType>
+- <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>

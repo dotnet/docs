@@ -1,14 +1,6 @@
 ---
-title: "&lt;add&gt; Element for authenticationModules (Network Settings)"
-ms.custom: ""
+title: "<add> Element for authenticationModules (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/add"
@@ -18,14 +10,8 @@ helpviewer_keywords:
   - "<authenticationModules>, add element"
   - "<add> element, authenticationModules"
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
-caps.latest.revision: 15
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;add&gt; Element for authenticationModules (Network Settings)
+# \<add> Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  
   
  \<configuration>  
@@ -89,7 +75,7 @@ Adds an authentication module to the application.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.IAuthenticationModule>  
- <xref:System.Net.AuthenticationManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedMethod::GetParameters Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedMethod.GetParameters"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3a8074f1-facc-4a3f-bb9b-d6574fc2fc74
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetParameters Method
 Gets the parameters for this method. The parameters are returned in the order in which they are defined within the method's signature.  
@@ -43,7 +31,7 @@ HRESULT GetParameters(
         length_is(*pcParams)] ISymUnmanagedVariable*  params[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cParams`  
  [in] The size of the `params` array.  
   
@@ -59,5 +47,5 @@ HRESULT GetParameters(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+## See also
+- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

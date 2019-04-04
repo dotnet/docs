@@ -1,21 +1,7 @@
 ---
 title: "Oracle LOBs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Oracle LOBs
 The .NET Framework Data Provider for Oracle includes the <xref:System.Data.OracleClient.OracleLob> class, which is used to work with Oracle **LOB** data types.  
@@ -98,10 +84,10 @@ public class LobExample
          // Note: You can read character data as raw Unicode bytes   
          // (using OracleLob.Read as in the above example).  
          // However, because the OracleLob object inherits directly   
-         // from the .Net stream object,   
+         // from the .NET stream object,   
          // all the existing classes that manipluate streams can   
          // also be used. For example, the   
-         // .Net StreamReader makes it easier to convert the raw bytes   
+         // .NET StreamReader makes it easier to convert the raw bytes   
          // into actual characters.  
          StreamReader streamreader =   
            new StreamReader(clob, Encoding.Unicode);  
@@ -255,6 +241,6 @@ cmd.ExecuteNonQuery();
 tx.Commit();  
 ```  
   
-## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

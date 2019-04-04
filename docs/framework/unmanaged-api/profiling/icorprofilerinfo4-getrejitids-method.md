@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo4::GetReJITIDs Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo4.GetReJITIDs"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 634ac28c-a5b7-4fc3-af84-256c24ca8177
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo4::GetReJITIDs Method
 Returns an array of IDs that identify all JIT-recompiled versions of the specified function that are still allocated. This includes JIT-recompiled versions of functions that have been subsequently reverted but not yet freed (for example, when the application domain that contains the reverted function is still in use).  
@@ -43,7 +31,7 @@ HRESULT GetReJITIDs (
      [out, size_is(cReJitIds), length_is(*pcReJitIds)]   ReJITID        reJitIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The `FunctionID` of the function instance for which to enumerate versions.  
   
@@ -68,7 +56,7 @@ HRESULT GetReJITIDs (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+- [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

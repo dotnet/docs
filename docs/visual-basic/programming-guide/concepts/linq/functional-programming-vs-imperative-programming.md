@@ -1,19 +1,7 @@
 ---
 title: "Functional Programming vs. Imperative Programming (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6a1f3b57-00e6-447d-9906-74c7c4d5d85c
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Functional Programming vs. Imperative Programming (Visual Basic)
 This topic compares and contrasts functional programming with more traditional imperative (procedural) programming.  
@@ -56,7 +44,8 @@ This topic compares and contrasts functional programming with more traditional i
   
  Fortunately, Visual Basic doesn't require the full leap to functional programming, because it supports both imperative and functional programming approaches. A developer can choose which approach is most appropriate for a particular scenario. In fact, programs often combine both approaches.  
   
-## See Also  
- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
- [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)  
- [Refactoring Into Pure Functions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+## See also
+
+- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+- [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)
+- [Refactoring Into Pure Functions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

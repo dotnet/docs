@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::UnmanagedToManagedTransition Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.UnmanagedToManagedTransition"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ade2cc01-9b81-4e09-a5f9-b3b9dda27e96
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::UnmanagedToManagedTransition Method
 Notifies the profiler that a transition from unmanaged code to managed code has occurred.  
@@ -41,7 +29,7 @@ HRESULT UnmanagedToManagedTransition(
     [in] COR_PRF_TRANSITION_REASON reason);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that is being called.  
   
@@ -62,8 +50,8 @@ HRESULT UnmanagedToManagedTransition(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ManagedToUnmanagedTransition Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-managedtounmanagedtransition-method.md)  
- [Using Explicit PInvoke in C++ (DllImport Attribute)](/cpp/dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute)  
- [Using C++ Interop (Implicit PInvoke)](/cpp/dotnet/using-cpp-interop-implicit-pinvoke)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ManagedToUnmanagedTransition Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-managedtounmanagedtransition-method.md)
+- [Using Explicit PInvoke in C++ (DllImport Attribute)](/cpp/dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute)
+- [Using C++ Interop (Implicit PInvoke)](/cpp/dotnet/using-cpp-interop-implicit-pinvoke)

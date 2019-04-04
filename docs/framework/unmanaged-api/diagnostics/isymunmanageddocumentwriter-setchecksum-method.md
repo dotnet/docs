@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedDocumentWriter::SetCheckSum Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedDocumentWriter.SetCheckSum"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c7e99879-421f-43ce-b193-34733cf30085
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedDocumentWriter::SetCheckSum Method
 Sets checksum information.  
@@ -42,7 +30,7 @@ HRESULT SetCheckSum(
     [in, size_is(checkSumSize)]  BYTE checkSum[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `algorithmId`  
  [in] The GUID that represents the algorithm identifier.  
   
@@ -58,5 +46,5 @@ HRESULT SetCheckSum(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedDocumentWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)
+## See also
+- [ISymUnmanagedDocumentWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)

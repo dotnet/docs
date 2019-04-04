@@ -1,23 +1,9 @@
 ---
-title: "&lt;host&gt;"
-ms.custom: ""
+title: "<host>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;host&gt;
+# \<host>
 Specifies settings for a service host.  
   
  \<system.ServiceModel>  
@@ -28,13 +14,13 @@ Specifies settings for a service host.
 ## Syntax  
   
 ```xml  
-<host>  
-      <baseAddresses>  
-         <baseAddress baseAddress="string" />  
-      </baseAddresses>  
-      <timeOuts closeTimeout="TimeSpan"  
-         openTimeout="TimeSpan" >  
-</host>  
+<host>
+  <baseAddresses>
+    <add baseAddress="string" />
+  </baseAddresses>
+  <timeOuts closeTimeout="TimeSpan"
+            openTimeout="TimeSpan" />
+</host>
 ```  
   
 ## Type  
@@ -57,9 +43,9 @@ Specifies settings for a service host.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service.|  
+|[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a Windows Communication Foundation (WCF) service.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.HostElement>  
- <xref:System.ServiceModel.ServiceHost>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.Configuration.HostElement>
+- <xref:System.ServiceModel.ServiceHost>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

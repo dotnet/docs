@@ -1,13 +1,6 @@
 ---
 title: "Partial Methods (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.PartialMethod"
   - "PartialMethod"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "methods [Visual Basic], partial methods"
   - "inserting custom logic into code"
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Partial Methods (Visual Basic)
 Partial methods enable developers to insert custom logic into code. Typically, the code is part of a designer-generated class. Partial methods are defined in a partial class that is created by a code generator, and they are commonly used to provide notification that something has been changed. They enable the developer to specify custom behavior in response to the change.  
@@ -60,24 +50,25 @@ End Sub
 ## Example  
  In a file named Product.Designer.vb, define a `Product` class that has a `Quantity` property.  
   
- [!code-vb[VbVbalrPartialMeths#4](./codesnippet/VisualBasic/partial-methods_1.vb)]  
+ [!code-vb[VbVbalrPartialMeths#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrPartialMeths/VB/Class1.vb#4)]  
   
  In a file named Product.vb, provide an implementation for `QuantityChanged`.  
   
- [!code-vb[VbVbalrPartialMeths#5](./codesnippet/VisualBasic/partial-methods_2.vb)]  
+ [!code-vb[VbVbalrPartialMeths#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrPartialMeths/VB/Class1.vb#5)]  
   
  Finally, in the Main method of a project, declare a `Product` instance and provide an initial value for its `Quantity` property.  
   
- [!code-vb[VbVbalrPartialMeths#6](./codesnippet/VisualBasic/partial-methods_3.vb)]  
+ [!code-vb[VbVbalrPartialMeths#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrPartialMeths/VB/Class1.vb#6)]  
   
  A message box should appear that displays this message:  
   
  `Quantity was changed to 100`  
   
-## See Also  
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Optional Parameters](./optional-parameters.md)  
- [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)  
- [Code Generation in LINQ to SQL](../../../../framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
- [Adding Business Logic By Using Partial Methods](../../../../framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md)
+## See also
+
+- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Optional Parameters](./optional-parameters.md)
+- [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)
+- [Code Generation in LINQ to SQL](../../../../framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+- [Adding Business Logic By Using Partial Methods](../../../../framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md)

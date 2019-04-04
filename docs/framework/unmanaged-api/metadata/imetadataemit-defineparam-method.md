@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit::DefineParam Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit.DefineParam"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d86a3d14-4796-4909-9591-dfafe3de5ce4
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit::DefineParam Method
 Creates a parameter definition with the specified signature for the method referenced by the specified token, and gets a token for that parameter definition.  
@@ -48,7 +36,7 @@ HRESULT DefineParam (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] The token for the method whose parameter is being defined.  
   
@@ -85,6 +73,6 @@ HRESULT DefineParam (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

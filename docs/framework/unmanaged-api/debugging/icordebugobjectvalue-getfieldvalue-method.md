@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugObjectValue::GetFieldValue Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugObjectValue.GetFieldValue"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c96770b0-3e09-47bb-bd29-20353b043459
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugObjectValue::GetFieldValue Method
 Gets the value of the specified field of the specified class for this object value.  
@@ -43,7 +31,7 @@ HRESULT GetFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] A pointer to an "ICorDebugClass" object that represents the class for which to get the field value.  
   
@@ -67,6 +55,6 @@ HRESULT GetFieldValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also
+
+

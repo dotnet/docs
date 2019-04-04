@@ -1,14 +1,6 @@
 ---
 title: "ICeeGen::EmitString Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICeeGen.EmitString"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICeeGen::EmitString Method
 Emits the specified string into the code base.  
@@ -44,7 +32,7 @@ HRESULT EmitString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpString`  
  [in] The string to emit.  
   
@@ -60,5 +48,5 @@ HRESULT EmitString (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

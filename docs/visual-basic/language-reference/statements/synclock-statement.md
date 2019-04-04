@@ -1,12 +1,6 @@
 ---
-title: "SyncLock Statement"
+title: "SyncLock Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.SyncLock"
   - "SyncLock"
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "SyncLock statement [Visual Basic]"
   - "locks, threads"
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # SyncLock Statement
 Acquires an exclusive lock for a statement block before executing the block.  
@@ -84,18 +75,18 @@ End SyncLock
  If the `simpleMessageList` class shared one list of messages among all its instances, the variables `messagesList` and `messagesLast` would be declared as `Shared`. In this case, the variable `messagesLock` should also be `Shared`, so that there would be a single lock object used by every instance.  
   
 ### Code  
- [!code-vb[VbVbalrThreading#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_1.vb)]  
+ [!code-vb[VbVbalrThreading#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrThreading/VB/Class1.vb#1)]  
   
 ### Description  
  The following example uses threads and `SyncLock`. As long as the `SyncLock` statement is present, the statement block is a critical section and `balance` never becomes a negative number. You can comment out the `SyncLock` and `End SyncLock` statements to see the effect of leaving out the `SyncLock` keyword.  
   
 ### Code  
- [!code-vb[VbVbalrThreading#21](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_2.vb)]  
+ [!code-vb[VbVbalrThreading#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrThreading/VB/class2.vb#21)]  
   
 ### Comments  
   
-## See Also  
- <xref:System.Threading>  
- <xref:System.Threading.Monitor>  
- [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)  
- [Threading](../../programming-guide/concepts/threading/index.md)
+## See also
+
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- <xref:System.Threading.Interlocked?displayProperty=nameWithType>
+- [Overview of synchronization primitives](../../../standard/threading/overview-of-synchronization-primitives.md)

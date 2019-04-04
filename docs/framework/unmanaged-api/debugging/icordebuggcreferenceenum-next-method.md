@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugGCReferenceEnum::Next Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugGCReferenceEnum.Next"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 91b1345c-a94f-4ef8-9696-3823d06c6d05
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugGCReferenceEnum::Next Method
 Gets the specified number of [COR_GC_REFERENCE](../../../../docs/framework/unmanaged-api/debugging/cor-gc-reference-structure.md) instances that contain information about objects that will be garbage-collected.  
@@ -42,7 +30,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  celt  
  [in] The number of roots to be retrieved.  
   
@@ -63,6 +51,6 @@ HRESULT Next(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugGCReferenceEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugGCReferenceEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

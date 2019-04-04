@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit::DefineMethod Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit.DefineMethod"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3e2102c5-48b7-4c0e-b805-7e2b5e156e3d
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit::DefineMethod Method
 Creates a definition for a method or global function with the specified signature, and returns a token to that method definition.  
@@ -48,7 +36,7 @@ HRESULT DefineMethod (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypedef` token of the parent class or parent interface of the method. Set `td` to `mdTokenNil`, if you are defining a global function.  
   
@@ -81,7 +69,7 @@ HRESULT DefineMethod (
 ## Slots in the V-table  
  The runtime uses method definitions to set up v-table slots. In the case where one or more slots need to be skipped, such as to preserve parity with a COM interface layout, a dummy method is defined to take up the slot or slots in the v-table; set the `dwMethodFlags` to the `mdRTSpecialName` value of the [CorMethodAttr](../../../../docs/framework/unmanaged-api/metadata/cormethodattr-enumeration.md) enumeration and specify the name as:  
   
- _VtblGap\<*SequenceNumber*>\<\_*CountOfSlots*>  
+ _VtblGap\<*SequenceNumber*>\<\_*CountOfSlots*>
   
  where *SequenceNumber* is the sequence number of the method and *CountOfSlots* is the number of slots to skip in the v-table. If *CountOfSlots* is omitted, 1 is assumed. These dummy methods are not callable from either managed or unmanaged code and any attempt to call them, from either managed or unmanaged code, generates an exception. Their only purpose is to take up space in the v-table that the runtime generates for COM integration.  
   
@@ -118,6 +106,6 @@ HRESULT DefineMethod (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

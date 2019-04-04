@@ -1,25 +1,16 @@
 ---
 title: Custom templates for dotnet new
 description: Learn about custom templates for any type of .NET project or files.
-keywords: dotnet new,CLI,CLI command,.NET Core,template,templating
 author: guardrex
-ms.author: mairaw
 ms.date: 08/11/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.workload: 
-  - dotnetcore
 ---
-
 # Custom templates for dotnet new
 
 The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed to use with the [`dotnet new` command](dotnet-new.md). Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
 
-The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. Visit the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) repo for samples of templates. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) on GitHub. For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
+The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. Visit the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) repo for samples of templates. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) on GitHub. For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
 
 To follow a walkthrough and create a template, see the [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md) tutorial.
 
@@ -131,7 +122,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### To uninstall a template from a local nupkg file
 
-When you wish to uninstall the template, don't attempt to use the path to the *nupkg* file. *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.* Reference the package by its `id`:
+To uninstall the template, don't attempt to use the path to the *nupkg* file. Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails. Reference the package by its `id`:
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
@@ -139,7 +130,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### To uninstall a template from a file system directory
 
-The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the *.template.config* folder:
+The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the *.template.config* folder. The path provided needs to be the absolute path. Attempting to uninstall a template using a relative path fails. For more information, see the [dotnet new](dotnet-new.md) article.
 
 ```console
 dotnet new -u <FILE_SYSTEM_DIRECTORY>
@@ -155,8 +146,8 @@ dotnet new <TEMPLATE>
 
 ## See also
 
-[Create a custom template for dotnet new (tutorial)](../tutorials/create-custom-template.md)  
-[dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)  
-[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
-[How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)  
-[*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)  
+- [Create a custom template for dotnet new (tutorial)](../tutorials/create-custom-template.md)
+- [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
+- [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+- [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
+- [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

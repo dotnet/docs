@@ -1,14 +1,6 @@
 ---
 title: "How to: Define and Execute Dynamic Methods"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,15 +9,11 @@ helpviewer_keywords:
   - "reflection emit, dynamic methods"
   - "dynamic methods"
 ms.assetid: 07d08a99-62c5-4254-bce2-2a75e55a18ab
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Define and Execute Dynamic Methods
-The following procedures show how to define and execute a simple dynamic method and a dynamic method bound to an instance of a class. For more information on dynamic methods, see the <xref:System.Reflection.Emit.DynamicMethod> class and [Reflection Emit Dynamic Method Scenarios](http://msdn.microsoft.com/library/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e).  
+The following procedures show how to define and execute a simple dynamic method and a dynamic method bound to an instance of a class. For more information on dynamic methods, see the <xref:System.Reflection.Emit.DynamicMethod> class and [Reflection Emit Dynamic Method Scenarios](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100)).  
   
 ### To define and execute a dynamic method  
   
@@ -128,7 +116,7 @@ The following procedures show how to define and execute a simple dynamic method 
   
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
-## See Also  
- <xref:System.Reflection.Emit.DynamicMethod>  
- [Using Reflection Emit](http://msdn.microsoft.com/library/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)  
- [Reflection Emit Dynamic Method Scenarios](http://msdn.microsoft.com/library/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e)
+## See also
+- <xref:System.Reflection.Emit.DynamicMethod>
+- [Using Reflection Emit](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
+- [Reflection Emit Dynamic Method Scenarios](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100))

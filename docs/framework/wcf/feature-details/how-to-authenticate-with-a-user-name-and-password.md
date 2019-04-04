@@ -1,22 +1,13 @@
 ---
 title: "How to: Authenticate with a User Name and Password"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "authentication [WCF], user name and password"
 ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Authenticate with a User Name and Password
 
-This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
+This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
   
  To configure a service to authenticate its clients using Windows Domain username and passwords use the <xref:System.ServiceModel.WSHttpBinding> and set its `Security.Mode` property to `Message`. In addition you must specify an X509 certificate that will be used to encrypt the username and password as they are sent from the client to the service.  
   
@@ -24,7 +15,7 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
   
 ## To configure a WCF service to authenticate using Windows domain username and password
   
-1.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding>, set the security mode of the binding to `SecurityMode.Message`, set the `ClientCredentialType` of the binding to `MessageCredentialType.UserName`, and add a service endpoint using the configured binding to the service host as shown in the following code:  
+1.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding>, set the security mode of the binding to <xref:System.ServiceModel.WSHttpSecurity.Message?displayProperty=nameWithType>, set the `ClientCredentialType` of the binding to <xref:System.ServiceModel.MessageCredentialType.UserName?displayProperty=nameWithType>, and add a service endpoint using the configured binding to the service host as shown in the following code:  
   
     ```  
     // ...  
@@ -85,15 +76,15 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
     // Call the service operation using the proxy  
     ```  
   
-## See Also  
- <xref:System.ServiceModel.WSHttpBinding>  
- <xref:System.ServiceModel.WSHttpSecurity>  
- <xref:System.ServiceModel.SecurityMode>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>  
- <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>  
- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>  
- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)  
- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)
+## See also
+- <xref:System.ServiceModel.WSHttpBinding>
+- <xref:System.ServiceModel.WSHttpSecurity>
+- <xref:System.ServiceModel.SecurityMode>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
+- <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>
+- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>
+- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)
+- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)
+- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

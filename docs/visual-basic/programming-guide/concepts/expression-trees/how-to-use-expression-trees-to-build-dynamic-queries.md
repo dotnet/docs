@@ -1,18 +1,7 @@
 ---
 title: "How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 16278787-7532-4b65-98b2-7a412406c4ee
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)
 In LINQ, expression trees are used to represent structured queries that target sources of data that implement <xref:System.Linq.IQueryable%601>. For example, the LINQ provider implements the <xref:System.Linq.IQueryable%601> interface for querying relational data stores. The Visual Basic compiler compiles queries that target such data sources into code that builds an expression tree at runtime. The query provider can then traverse the expression tree data structure and translate it into a query language appropriate for the data source.  
@@ -114,6 +103,7 @@ Next
   
 -   Copy the code from the example and paste it into the `Main` `Sub` procedure.  
   
-## See Also  
- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)  
- [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
+## See also
+
+- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
+- [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)

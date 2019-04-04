@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedReader::Initialize Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedReader.Initialize"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedReader::Initialize Method
 Initializes the symbol reader with the metadata importer interface that this reader will be associated with, along with the file name of the module.  
@@ -46,7 +34,7 @@ HRESULT Initialize (
     [in]  IStream      *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] The metadata importer interface with which this reader will be associated.  
   
@@ -68,5 +56,5 @@ HRESULT Initialize (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugVariableSymbol Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 0e58b85e-69bd-41ff-bedb-8cdc8be6a7a2
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVariableSymbol Interface
 Retrieves the debug symbol information for a variable.  
@@ -44,6 +32,6 @@ Retrieves the debug symbol information for a variable.
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

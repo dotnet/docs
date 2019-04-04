@@ -1,19 +1,7 @@
 ---
 title: "Pure Functional Transformations of XML (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 97e8e582-eb3d-4756-bbfb-0899eb688ae4
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Pure Functional Transformations of XML (C#)
 This section provides a functional transformation tutorial for XML. This includes explanations of the main concepts and language constructs that you must understand to use functional transformations, and examples of using functional transformations to manipulate an XML document. Although this tutorial provides LINQ to XML code examples, all of the underlying concepts also apply to other LINQ technologies.  
@@ -32,5 +20,6 @@ This section provides a functional transformation tutorial for XML. This include
 |[Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)|Describes lazy evaluation and deferred execution in detail.|  
 |[Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)|A tutorial that demonstrates a functional transformation.|  
   
-## See Also  
- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## See also
+
+- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

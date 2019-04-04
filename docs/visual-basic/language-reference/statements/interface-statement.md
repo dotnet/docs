@@ -1,19 +1,12 @@
 ---
 title: "Interface Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Interface"
 helpviewer_keywords: 
   - "interface statement [Visual Basic]"
   - "interfaces [Visual Basic], interface definition"
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Interface Statement (Visual Basic)
 Declares the name of an interface and introduces the definitions of the members that the interface comprises.  
@@ -39,7 +32,7 @@ End Interface
 |Term|Definition|  
 |---|---|  
 |`attributelist`|Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).|  
-|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-  [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br/>- [Private Protected](../../language-reference/modifiers/private-protected.md)<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).|  
 |`name`|Required. Name of this interface. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).|  
 |`Of`|Optional. Specifies that this is a generic interface.|  
@@ -96,7 +89,7 @@ End Interface
   
      If you assign a class instance to a variable, the access level of its members can depend on whether the data type of the variable is the underlying interface or the implementing class. The following example illustrates this.  
   
-     [!code-vb[VbVbalrStatements#39](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/interface-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#39)]  
   
      If you access class members through `varAsInterface`, they all have public access. However, if you access members through `varAsClass`, the `Sub` procedure `doSomething` has private access.  
   
@@ -109,19 +102,20 @@ End Interface
 ## Example  
  The following example uses the `Interface` statement to define an interface named `thisInterface`, which must be implemented with a `Property` statement and a `Function` statement.  
   
- [!code-vb[VbVbalrStatements#40](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/interface-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#40)]  
   
  Note that the `Property` and `Function` statements do not introduce blocks ending with `End Property` and `End Function` within the interface. The interface defines only the signatures of its members. The full `Property` and `Function` blocks appear in a class that implements `thisInterface`.  
   
-## See Also  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+## See also
+
+- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
+- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
+- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

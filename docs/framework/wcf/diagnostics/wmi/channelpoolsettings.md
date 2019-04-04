@@ -1,28 +1,14 @@
 ---
 title: "ChannelPoolSettings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d3f475bd-f780-4bbe-b291-339387322964
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ChannelPoolSettings
 ChannelPoolSettings  
   
 ## Syntax  
   
-```  
+```csharp
 class ChannelPoolSettings  
 {  
   datetime IdleTimeout;  
@@ -64,5 +50,5 @@ class ChannelPoolSettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.ChannelPoolSettings>
+## See also
+- <xref:System.ServiceModel.Channels.ChannelPoolSettings>

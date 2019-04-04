@@ -1,12 +1,6 @@
 ---
-title: "RaiseEvent Statement"
+title: "RaiseEvent Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.RaiseEventMethod"
   - "vb.RaiseEvent"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "RaiseEvent statement [Visual Basic]"
   - "event handlers, connecting events to"
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # RaiseEvent Statement
 Triggers an event declared at module level within a class, form, or document.  
@@ -41,7 +32,7 @@ RaiseEvent eventname[( argumentlist )]
   
  If the event has not been declared within the module in which it is raised, an error occurs. The following code fragment illustrates an event declaration and a procedure in which the event is raised.  
   
- [!code-vb[VbVbalrEvents#37](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_1.vb)]  
+ [!code-vb[VbVbalrEvents#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#37)]  
   
  You cannot use `RaiseEvent` to raise events that are not explicitly declared in the module. For example, all forms inherit a <xref:System.Windows.Forms.Control.Click> event from <xref:System.Windows.Forms.Form?displayProperty=nameWithType>, it cannot be raised using `RaiseEvent` in a derived form. If you declare a `Click` event in the form module, it shadows the form's own <xref:System.Windows.Forms.Control.Click> event. You can still invoke the form's <xref:System.Windows.Forms.Control.Click> event by calling the <xref:System.Windows.Forms.Control.OnClick%2A> method.  
   
@@ -66,21 +57,22 @@ RaiseEvent eventname[( argumentlist )]
   
  Add a `WithEvents` variable to the declarations section of the `Form1` class.  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_2.vb)]  
+ [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
 ## Example  
  Add the following code to the code for `Form1`. Replace any duplicate procedures that may exist, such as `Form_Load`, or `Button_Click`.  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_3.vb)]  
+ [!code-vb[VbVbalrEvents#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  
   
  Press F5 to run the preceding example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Threading](../../programming-guide/concepts/threading/index.md).  
+>  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../standard/threading/index.md).  
   
-## See Also  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+## See also
+
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
+- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)

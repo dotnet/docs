@@ -1,19 +1,7 @@
 ---
 title: "Using the ModelItem Editing Context"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7f9f1ea5-0147-4079-8eca-be94f00d3aa1
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the ModelItem Editing Context
 The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the object that the host application uses to communicate with the designer. <xref:System.Activities.Presentation.EditingContext> exposes two methods, <xref:System.Activities.Presentation.EditingContext.Items%2A> and <xref:System.Activities.Presentation.EditingContext.Services%2A>, which can be used  
@@ -101,7 +89,7 @@ protected override void OnModelItemChanged(object newItem)
  Using the Items collection is similar to using the Services collection, except that <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A> is used instead of Publish. This collection is more appropriate for sharing simple data between the designers and the host, rather than complex functionality.  
   
 ## EditingContext host items and services  
- The .Net Framework provides a number of built-in items and services accessed through the editing context.  
+ The .NET Framework provides a number of built-in items and services accessed through the editing context.  
   
  Items:  
   
@@ -133,7 +121,7 @@ protected override void OnModelItemChanged(object newItem)
   
 -   <xref:System.Activities.Presentation.Validation.IValidationErrorService>: Provides access to validation errors using <xref:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors%2A>.  
   
--   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .Net Framework, and is not intended for external use.  
+-   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .NET Framework, and is not intended for external use.  
   
 -   <xref:System.Activities.Presentation.IXamlLoadErrorService>: Provides access to the XAML load error collection using <xref:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors%2A>.  
   

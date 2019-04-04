@@ -1,30 +1,16 @@
 ---
 title: "Claims and Tokens"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "claims [WCF], and tokens"
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Claims and Tokens
-This topic describes the various claim types that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] creates from the default tokens that it supports.  
+This topic describes the various claim types that Windows Communication Foundation (WCF) creates from the default tokens that it supports.  
   
  You can examine the claims of a client credential by using the <xref:System.IdentityModel.Claims.ClaimSet> and <xref:System.IdentityModel.Claims.Claim> classes. The `ClaimSet` contains a collection of `Claim` objects. Each `Claim` has the following important members:  
   
--   The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property returns a Uniform Resource Identifier (URI) that specifies the type of claim being made. For example, a claim type may be a thumbprint of a certificate, in which case the URI is http:schemas.microsoft.com/ws/20005/05/identity/claims/thumprint.  
+-   The <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property returns a Uniform Resource Identifier (URI) that specifies the type of claim being made. For example, a claim type may be a thumbprint of a certificate, in which case the URI is `http://schemas.microsoft.com/ws/20005/05/identity/claims/thumprint`.  
   
 -   The <xref:System.IdentityModel.Claims.Claim.Right%2A> property returns a URI that specifies the right of the claim. Predefined rights are found in the <xref:System.IdentityModel.Claims.Rights> class (<xref:System.IdentityModel.Claims.Rights.Identity%2A>,  <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>).  
   
@@ -72,9 +58,9 @@ This topic describes the various claim types that [!INCLUDE[indigo1](../../../..
 ## Identity Claims and ServiceSecurityContext.IsAnonymous  
  If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity,` then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.  
   
-## See Also  
- <xref:System.IdentityModel.Claims.ClaimSet>  
- <xref:System.IdentityModel.Claims.Claim>  
- <xref:System.IdentityModel.Claims.Rights>  
- <xref:System.IdentityModel.Claims.ClaimTypes>  
- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+## See also
+- <xref:System.IdentityModel.Claims.ClaimSet>
+- <xref:System.IdentityModel.Claims.Claim>
+- <xref:System.IdentityModel.Claims.Rights>
+- <xref:System.IdentityModel.Claims.ClaimTypes>
+- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)

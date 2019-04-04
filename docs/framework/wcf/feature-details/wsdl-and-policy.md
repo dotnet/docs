@@ -1,26 +1,12 @@
 ---
 title: "WSDL and Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WSDL and Policy
-This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by WCF.  
   
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements WS-Policy and WS-PolicyAttachment specifications submitted to W3C with constraints and clarifications described in this document.  
+ WCF implements WS-Policy and WS-PolicyAttachment specifications submitted to W3C with constraints and clarifications described in this document.  
   
  This document uses the prefixes and namespaces shown in the following table.  
   
@@ -36,19 +22,19 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1
 |cdp|http://schemas.microsoft.com/net/2006/06/duplex|  
   
 ## WCF WSDL1.1 Extensions  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the following WSDL1.1 extensions to describe contract session requirements.  
+ WCF uses the following WSDL1.1 extensions to describe contract session requirements.  
   
  wsdl:portType/wsdl:operation/@msc:isInitiating  
- xs:boolean, indicates this operation initiates a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] session; the default value is `false`.  
+ xs:boolean, indicates this operation initiates a WCF session; the default value is `false`.  
   
  wsdl:portType/wsdl:operation/@msc:isTerminating  
- xs:boolean, indicates this operation terminates a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] session; the default value is `false`.  
+ xs:boolean, indicates this operation terminates a WCF session; the default value is `false`.  
   
  wsdl:portType/wsdl:operation/@msc:usingSession  
  xs:boolean, indicates this contract requires session to be established.  
   
 ### SOAP 1.x HTTP Binding Transport URIs  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the following URIs to indicate transports to be used for WSDL 1.1, SOAP 1.1, and SOAP 1.2 binding extension elements.  
+ WCF uses the following URIs to indicate transports to be used for WSDL 1.1, SOAP 1.1, and SOAP 1.2 binding extension elements.  
   
 |Transport|URI|  
 |---------------|---------|  
@@ -58,7 +44,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1
 |Named Pipes|http://schemas.microsoft.com/soap/named-pipe|  
   
 ## Policy Assertions Implemented by WCF  
- In addition to policy assertions introduced in the Web Services specifications (WS-*) and mentioned in other sections of this document, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implements the following policy assertions.  
+ In addition to policy assertions introduced in the Web Services specifications (WS-*) and mentioned in other sections of this document, WCF implements the following policy assertions.  
   
 |Policy assertion|Policy subject|Description|  
 |----------------------|--------------------|-----------------|  
@@ -80,7 +66,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] WSDL 1
 |mssp:MustNotSendCancel|Nested|Specifies a requirement that a request security token (RST) request messages [WS-Trust] using the Cancel binding [WS-Trust, WS-SC] not be sent to the issuer of a given SecurityContextToken. If this assertion is present, then such request messages must not be sent to the issuer. If this assertion is not present, then such request messages can be sent to the issuer.|  
 |mssp:RequireClientCertificate|Nested|This optional element specifies a requirement for a client certificate to be provided as part of the TLSNEGO protocol. If this assertion is present, then a client certificate must be provided. If this assertion is not present, then a client certificate must not be provided. This assertion must not be used outside of mssp:SslContextToken.|  
   
-## See Also  
- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)  
- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)  
- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+## See also
+- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)
+- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)
+- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)

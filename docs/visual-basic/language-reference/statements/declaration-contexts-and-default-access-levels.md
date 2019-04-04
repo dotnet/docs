@@ -1,12 +1,6 @@
 ---
 title: "Declaration Contexts and Default Access Levels (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "module level, defined"
   - "declaration contexts, Visual Basic"
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "access levels, Visual Basic"
   - "access levels, default levels"
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Declaration Contexts and Default Access Levels (Visual Basic)
 This topic describes which Visual Basic types can be declared within which other types, and what their access levels default to if not specified.  
@@ -54,7 +45,8 @@ This topic describes which Visual Basic types can be declared within which other
   
  For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
-## See Also  
- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
- [Private](../../../visual-basic/language-reference/modifiers/private.md)  
- [Public](../../../visual-basic/language-reference/modifiers/public.md)
+## See also
+
+- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
+- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Public](../../../visual-basic/language-reference/modifiers/public.md)

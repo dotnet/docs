@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback4::ReJITCompilationStarted Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback4.ReJITCompilationStarted"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 512fdd00-262a-4456-a075-365ef4133c4d
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback4::ReJITCompilationStarted Method
 Notifies the profiler that the just-in-time (JIT) compiler has started to recompile a function.  
@@ -36,12 +24,13 @@ Notifies the profiler that the just-in-time (JIT) compiler has started to recomp
 ## Syntax  
   
 ```  
-HRESULT ReJITCompilationStarted(    [in] FunctionID functionId,  
+HRESULT ReJITCompilationStarted(   
+    [in] FunctionID functionId,  
     [in] ReJITID    rejitId,  
     [in] BOOL       fIsSafeToBlock);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that the JIT compiler has started to recompile.  
   
@@ -65,8 +54,8 @@ HRESULT ReJITCompilationStarted(    [in] FunctionID functionId,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)  
- [JITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationfinished-method.md)  
- [ReJITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-rejitcompilationfinished-method.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)
+- [JITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationfinished-method.md)
+- [ReJITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-rejitcompilationfinished-method.md)

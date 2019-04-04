@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugReferenceValue::SetValue Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugReferenceValue.SetValue"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3d3f6eec-d772-401f-a028-1a2ecdc31e95
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugReferenceValue::SetValue Method
 Sets the specified memory address. That is, this method sets this ICorDebugReferenceValue to point to an object.  
@@ -41,7 +29,7 @@ HRESULT SetValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `value`  
  [in] A `CORDB_ADDRESS` value that specifies the address of the object to which this `ICorDebugReferenceValue` points.  
   

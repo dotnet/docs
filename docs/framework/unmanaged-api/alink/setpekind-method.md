@@ -1,14 +1,6 @@
 ---
 title: "SetPEKind Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink2.SetPEKind"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SetPEKind Method
 Determines the portable executable type, either machine-specific or machine-agnostic.  
@@ -43,7 +31,7 @@ HRESULT SetPEKind(
 ) PURE;   
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   
@@ -62,8 +50,8 @@ HRESULT SetPEKind(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [GetPEKind Method](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [GetPEKind Method](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

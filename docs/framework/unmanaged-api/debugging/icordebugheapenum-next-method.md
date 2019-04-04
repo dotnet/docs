@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugHeapEnum::Next Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugHeapEnum.Next"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2221fd06-9e27-4113-972e-2530db8c3594
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugHeapEnum::Next Method
 Gets the specified number of [COR_HEAPOBJECT](../../../../docs/framework/unmanaged-api/debugging/cor-heapobject-structure.md) instances that contain information about objects on the managed heap.  
@@ -42,7 +30,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  celt  
  [in] The number of objects to be retrieved.  
   
@@ -64,6 +52,6 @@ HRESULT Next(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugHeapEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugHeapEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

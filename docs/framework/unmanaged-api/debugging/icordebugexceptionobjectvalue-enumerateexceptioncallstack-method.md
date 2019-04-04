@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugExceptionObjectValue::EnumerateExceptionCallStack Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugExceptionObjectValue.EnumerateExceptionCallStack"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 00c64533-15dd-47f4-bb97-fe80a1ebadef
 topic_type: 
   - "apiref"
-caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugExceptionObjectValue::EnumerateExceptionCallStack Method
 Gets an enumerator to the call stack embedded in an exception object.  
@@ -41,7 +29,7 @@ HRESULT EnumerateExceptionCallStack(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  ppCallStackEnum  
  [out] A pointer to the address of an [ICorDebugExceptionObjectCallStackEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md) interface object that is a stack trace enumerator for a managed exception object.  
   
@@ -59,6 +47,6 @@ HRESULT EnumerateExceptionCallStack(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugExceptionObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugExceptionObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

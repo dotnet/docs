@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugStepper2 Interface1"
-ms.custom: ""
+title: "ICorDebugStepper2 Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStepper2"
 api_location: 
@@ -22,14 +14,10 @@ helpviewer_keywords:
 ms.assetid: 7a191c2a-95ea-4d47-83b0-44de2b632d63
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugStepper2 Interface1
+# ICorDebugStepper2 Interface
 Provides support for just my code (JMC) debugging.  
   
 ## Methods  
@@ -52,5 +40,5 @@ Provides support for just my code (JMC) debugging.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

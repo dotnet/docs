@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyEmit::DefineManifestResource Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyEmit.DefineManifestResource"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 27f6d295-0fe9-4cda-b77e-6e7d5c53df09
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineManifestResource Method
 Creates a `ManifestResource` structure containing metadata for the specified manifest resource, and returns the associated metadata token.  
@@ -45,7 +33,7 @@ HRESULT DefineManifestResource (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the resource.  
   
@@ -73,5 +61,5 @@ HRESULT DefineManifestResource (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

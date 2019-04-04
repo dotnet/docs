@@ -1,19 +1,7 @@
 ---
 title: "Workflow Execution Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a50e088e-3a45-4267-bd51-1a3e6c2d246d
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Workflow Execution Properties
 Through thread local storage (TLS), the CLR maintains an execution context for each thread. This execution context governs well-known thread properties such as the thread identity, the ambient transaction, and the current permission set in addition to user-defined thread properties like named slots.  
@@ -24,9 +12,6 @@ Through thread local storage (TLS), the CLR maintains an execution context for e
   
 ## Creating and Using Workflow Execution Properties  
  Workflow execution properties usually implement the <xref:System.Activities.IExecutionProperty> interface, though properties focused on messaging may implement <xref:System.ServiceModel.Activities.ISendMessageCallback> and <xref:System.ServiceModel.Activities.IReceiveMessageCallback> instead. To create a workflow execution property, create a class that implements the <xref:System.Activities.IExecutionProperty> interface and implement the members <xref:System.Activities.IExecutionProperty.SetupWorkflowThread%2A> and <xref:System.Activities.IExecutionProperty.CleanupWorkflowThread%2A>. These members provide the execution property with an opportunity to properly set up and tear down the thread local storage during each pulse of work of the activity that contains the property, including any child activities. In this example, a `ConsoleColorProperty` is created that sets the `Console.ForegroundColor`.  
-  
-> [!NOTE]
->  The following example code in this topic is based on the [Execution Properties](../../../docs/framework/windows-workflow-foundation/samples/execution-properties.md) sample.  
   
 ```csharp  
 class ConsoleColorProperty : IExecutionProperty  
@@ -170,7 +155,7 @@ End default text.
   
  Workflow execution properties can be used by custom activity authors, and they also provide the mechanism for handle management for activities such as the <xref:System.ServiceModel.Activities.CorrelationScope> and <xref:System.Activities.Statements.TransactionScope> activities.  
   
-## See Also  
- <xref:System.Activities.IExecutionProperty>  
- <xref:System.Activities.IPropertyRegistrationCallback>  
- <xref:System.Activities.RegistrationContext>
+## See also
+- <xref:System.Activities.IExecutionProperty>
+- <xref:System.Activities.IPropertyRegistrationCallback>
+- <xref:System.Activities.RegistrationContext>

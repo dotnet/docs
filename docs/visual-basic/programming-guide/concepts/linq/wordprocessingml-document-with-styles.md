@@ -1,19 +1,7 @@
 ---
 title: "WordprocessingML Document with Styles2"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a9136e4d-c368-4661-8049-7d45c679a236
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # WordprocessingML Document with Styles
 More complicated WordprocessingML documents have paragraphs that are formatted with styles.  
@@ -143,5 +131,6 @@ More complicated WordprocessingML documents have paragraphs that are formatted w
 </w:document>  
 ```  
   
-## See Also  
- [Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+## See also
+
+- [Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

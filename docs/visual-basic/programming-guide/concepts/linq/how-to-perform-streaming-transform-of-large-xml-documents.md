@@ -1,18 +1,7 @@
 ---
 title: "How to: Perform Streaming Transform of Large XML Documents (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3d954cc9-4b3c-4b47-8132-ff7541cff53b
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Perform Streaming Transform of Large XML Documents (Visual Basic)
 Sometimes you have to transform large XML files, and write your application so that the memory footprint of the application is predictable. If you try to populate an XML tree with a very large XML file, your memory usage will be proportional to the size of the file (that is, excessive). Therefore, you should use a streaming technique instead.  
@@ -444,5 +433,6 @@ End Class
 </Root>  
 ```  
   
-## See Also  
- [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+## See also
+
+- [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

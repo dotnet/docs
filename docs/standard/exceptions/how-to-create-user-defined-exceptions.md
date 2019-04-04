@@ -1,13 +1,7 @@
 ---
 title: "How to: Create User-Defined Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "exceptions, examples"
   - "exceptions, user-defined"
 ms.assetid: 25819a5a-f915-4fc8-b924-a76915674e04
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to create user-defined exceptions
 
@@ -38,5 +27,6 @@ When creating your own exceptions, end the class name of the user-defined except
 > [!NOTE]
 > In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller). For more information, see [Best practices for exceptions](best-practices-for-exceptions.md).
 
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugThread3::CreateStackWalk Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugThread3.CreateStackWalk Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c55e35d9-f9aa-4268-94b5-dce44c61acf2
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugThread3::CreateStackWalk Method
 Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
@@ -39,7 +27,7 @@ Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debuggi
 HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppStackWalk`  
  [out] A pointer to address of the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   
@@ -65,6 +53,6 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

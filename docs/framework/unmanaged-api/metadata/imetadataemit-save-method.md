@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit::Save Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit.Save"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c1de8400-adfe-4a71-b828-a1d0cc1ea505
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit::Save Method
 Saves all metadata in the current scope to the file at the specified address.  
@@ -42,7 +30,7 @@ HRESULT Save (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzFile`  
  [in] The name of the file to save to. If this value is null, the in-memory copy will be saved to the last location that was used.  
   
@@ -58,6 +46,6 @@ HRESULT Save (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

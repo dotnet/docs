@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugBlockingObjectEnum Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugBlockingObjectEnum"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 208e5c2d-3f3f-404e-8b3c-7cccc14ddb16
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugBlockingObjectEnum Interface
 Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structures. This interface is a subclass of the ICorDebugEnum interface.  
@@ -53,6 +41,6 @@ Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/f
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

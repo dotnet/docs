@@ -1,26 +1,14 @@
 ---
 title: "Lazy Initialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "lazy initialization in .NET, introduction"
 ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Lazy Initialization
 *Lazy initialization* of an object means that its creation is deferred until it is first used. (For this topic, the terms *lazy initialization* and *lazy instantiation* are synonymous.) Lazy initialization is primarily used to improve performance, avoid wasteful computation, and reduce program memory requirements. These are the most common scenarios:  
@@ -146,7 +134,7 @@ ms.workload:
  [!code-vb[Lazy#9](../../../samples/snippets/visualbasic/VS_Snippets_Misc/lazy/vb/lazy_vb.vb#9)]  
   
 ## Thread-Local Variables in Parallel.For and ForEach  
- When you use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method to iterate over data sources in parallel, you can use the overloads that have built-in support for thread-local data. In these methods, the thread-locality is achieved by using local delegates to create, access, and clean up the data. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md).  
+ When you use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method to iterate over data sources in parallel, you can use the overloads that have built-in support for thread-local data. In these methods, the thread-locality is achieved by using local delegates to create, access, and clean up the data. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Partition-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
   
 ## Using Lazy Initialization for Low-Overhead Scenarios  
  In scenarios where you have to lazy-initialize a large number of objects, you might decide that wrapping each object in a <xref:System.Lazy%601> requires too much memory or too many computing resources. Or, you might have stringent requirements about how lazy initialization is exposed. In such cases, you can use the `static` (`Shared` in Visual Basic) methods of the <xref:System.Threading.LazyInitializer?displayProperty=nameWithType> class to lazy-initialize each object without wrapping it in an instance of <xref:System.Lazy%601>.  
@@ -158,8 +146,8 @@ ms.workload:
   
  In this example, notice that the initialization procedure is invoked on every iteration of the loop. In multi-threaded scenarios, the first thread to invoke the initialization procedure is the one whose value is seen by all threads. Later threads also invoke the initialization procedure, but their results are not used. If this kind of potential race condition is not acceptable, use the overload of <xref:System.Threading.LazyInitializer.EnsureInitialized%2A?displayProperty=nameWithType> that takes a Boolean argument and a synchronization object.  
   
-## See Also  
- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)  
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
- [How to: Perform Lazy Initialization of Objects](../../../docs/framework/performance/how-to-perform-lazy-initialization-of-objects.md)
+## See also
+- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
+- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
+- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [How to: Perform Lazy Initialization of Objects](../../../docs/framework/performance/how-to-perform-lazy-initialization-of-objects.md)

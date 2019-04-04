@@ -1,12 +1,6 @@
 ---
 title: "While...End While Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.While"
   - "vb.While...EndWhile"
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "While statement [Visual Basic]"
   - "While...End While statements [Visual Basic]"
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # While...End While Statement (Visual Basic)
 Runs a series of statements as long as a given condition is `True`.  
@@ -72,23 +63,24 @@ End While
 ## Example  
  In the following example, the statements in the loop continue to run until the `index` variable is greater than 10.  
   
- [!code-vb[VbVbalrStatements#171](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#171](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]  
   
 ## Example  
  The following example illustrates the use of the `Continue While` and `Exit While` statements.  
   
- [!code-vb[VbVbalrStatements#172](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#172](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]  
   
 ## Example  
  The following example reads all lines in a text file. The <xref:System.IO.File.OpenText%2A> method opens the file and returns a <xref:System.IO.StreamReader> that reads the characters. In the `While` condition, the <xref:System.IO.StreamReader.Peek%2A> method of the `StreamReader` determines whether the file contains additional characters.  
   
- [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
-## See Also  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)
+## See also
+
+- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)
+- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)

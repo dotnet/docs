@@ -1,14 +1,6 @@
 ---
 title: "CorNotificationForTokenMovement Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorNotificationForTokenMovement"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorNotificationForTokenMovement Enumeration
 Specifies the notifications that will be sent to the metadata API client when a token remap occurs.  
@@ -105,5 +93,5 @@ typedef enum CorNotificationForTokenMovement {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

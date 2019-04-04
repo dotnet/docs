@@ -1,14 +1,6 @@
 ---
 title: "IHostIoCompletionManager::SetCLRIoCompletionManager Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostIoCompletionManager.SetCLRIoCompletionManager"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4254bb01-3a14-4f34-a3be-60ff1f5072b5
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostIoCompletionManager::SetCLRIoCompletionManager Method
 Provides the host with an interface pointer to the [ICLRIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md) instance implemented by the common language runtime (CLR).  
@@ -41,7 +29,7 @@ HRESULT SetCLRIoCompletionManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManager`  
  [in] An interface pointer to an `ICLRIoCompletionManager` instance provided by the CLR.  
   
@@ -68,6 +56,6 @@ HRESULT SetCLRIoCompletionManager (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)  
- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+## See also
+- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

@@ -1,24 +1,10 @@
 ---
 title: "Compute the Sum of Values in a Numeric Sequence"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 24e335b0-984e-4825-8721-0a91b533b7c3
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Compute the Sum of Values in a Numeric Sequence
 Use the <xref:System.Linq.Enumerable.Sum%2A> operator to compute the sum of numeric values in a sequence.  
@@ -47,6 +33,6 @@ Use the <xref:System.Linq.Enumerable.Sum%2A> operator to compute the sum of nume
  [!code-csharp[DLinqQueryExamples#13](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#13)]
  [!code-vb[DLinqQueryExamples#13](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#13)]  
   
-## See Also  
- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+## See also
+- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

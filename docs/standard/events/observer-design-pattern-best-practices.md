@@ -1,24 +1,13 @@
 ---
 title: "Observer Design Pattern Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "observer design pattern [.NET Framework], best practices"
   - "best practices [.NET Framework], observer design pattern"
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Observer Design Pattern Best Practices
 In the .NET Framework, the observer design pattern is implemented as a set of interfaces. The <xref:System.IObservable%601?displayProperty=nameWithType> interface represents the data provider, which is also responsible for providing an <xref:System.IDisposable> implementation that lets observers unsubscribe from notifications. The <xref:System.IObserver%601?displayProperty=nameWithType> interface represents the observer. This topic describes the best practices that developers should follow when implementing the observer design pattern using these interfaces.  
@@ -58,7 +47,8 @@ In the .NET Framework, the observer design pattern is implemented as a set of in
   
  Although it is possible to attach an observer to multiple providers, the recommended pattern is to attach an <xref:System.IObserver%601> instance to only one <xref:System.IObservable%601> instance.  
   
-## See Also  
- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)  
- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)  
- [How to: Implement a Provider](../../../docs/standard/events/how-to-implement-a-provider.md)
+## See also
+
+- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)
+- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)
+- [How to: Implement a Provider](../../../docs/standard/events/how-to-implement-a-provider.md)

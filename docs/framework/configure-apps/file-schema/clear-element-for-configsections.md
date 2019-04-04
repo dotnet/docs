@@ -1,10 +1,6 @@
 ---
-title: "&lt;clear&gt; element for &lt;configSections&gt;"
+title: "<clear> element for <configSections>"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/clear"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 77f1d761-ff45-4001-8f36-3a3e5c41fa63
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<clear> element for \<configSections>
@@ -44,7 +37,7 @@ Clears all previously defined sections and section groups.
 | --- | ----------- |
 | [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
-# Child elements
+## Child elements
 
 None
 
@@ -95,4 +88,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

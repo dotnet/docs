@@ -1,14 +1,6 @@
 ---
 title: "PublicKeyBlob Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "PublicKeyBlob"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # PublicKeyBlob Structure
 Represents, in binary format, the public key of a public/private key pair.  
@@ -64,7 +52,6 @@ typedef struct {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [StrongNameGetPublicKey Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)  
- [StrongNameSignatureGeneration Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)  
- [Strong Naming Structures](http://msdn.microsoft.com/library/4b041a2f-fd12-4b91-aacd-bc3b34a5124d)
+## See also
+- [StrongNameGetPublicKey Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)
+- [StrongNameSignatureGeneration Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)

@@ -1,13 +1,6 @@
 ---
 title: "Writing to Files in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "I/O [Visual Basic], writing to files"
   - "files [Visual Basic], writing to"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "writing to files [Visual Basic]"
   - "Visual Basic, writing to files"
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Writing to Files in Visual Basic
 This section explains how to perform tasks that involve writing to files.  

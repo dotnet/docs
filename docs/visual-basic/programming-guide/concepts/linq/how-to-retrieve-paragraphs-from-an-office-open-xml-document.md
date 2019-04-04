@@ -1,24 +1,12 @@
 ---
 title: "How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)
 This topic presents an example that opens an Office Open XML document, and retrieves a collection of all of the paragraphs in the document.  
   
- For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  
+ For more information on Office Open XML, see [Eric White's Blog](http://www.ericwhite.com).  
   
 ## Example  
  This example opens an Office Open XML package, uses the relationships within the Open XML package to find the document and the style parts. It then queries the document, projecting a collection of an anonymous type that contains the paragraph <xref:System.Xml.Linq.XElement> node, the style name of each paragraph, and the text of each paragraph.  
@@ -178,5 +166,6 @@ StyleName:Normal ><
 StyleName:Code >Hello World<  
 ```  
   
-## See Also  
- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

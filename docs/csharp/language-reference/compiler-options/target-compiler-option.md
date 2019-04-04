@@ -1,10 +1,6 @@
 ---
 title: "-target (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/target"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "assemblies [C#], compiling"
   - "-target compiler options [C#]"
 ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
-caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -target (C# Compiler Options)
 The **-target** compiler option can be specified in one of four forms:  
@@ -63,7 +56,8 @@ public class TestClass
   
  For more information about setting this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
- [-subsystemversion (C# Compiler Options)](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [-subsystemversion (C# Compiler Options)](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)

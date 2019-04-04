@@ -1,14 +1,6 @@
 ---
 title: "ICorPublishProcess::GetProcessID Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorPublishProcess.GetProcessID"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f31185e0-f01d-463a-b392-42163e39bfe9
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorPublishProcess::GetProcessID Method
 Gets the operating system identifier for this process.  
@@ -41,7 +29,7 @@ HRESULT GetProcessID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [out] A pointer to the identifier of the process represented by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) object.  
   
@@ -54,5 +42,5 @@ HRESULT GetProcessID (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+## See also
+- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)

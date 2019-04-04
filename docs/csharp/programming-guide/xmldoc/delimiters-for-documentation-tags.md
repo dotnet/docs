@@ -1,18 +1,12 @@
 ---
-title: "Delimiters for Documentation Tags (C# Programming Guide)"
+title: "Delimiters for Documentation Tags - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [C#], delimiters"
   - "/** */ delimiters for C# documentation tags"
   - "/// delimiter for C# documentation"
 ms.assetid: 9b2bdd18-4f5c-4c0b-988e-fb992e0d233e
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Delimiters for Documentation Tags (C# Programming Guide)
 The use of XML doc comments requires delimiters, which indicate to the compiler where a documentation comment begins and ends. You can use the following kinds of delimiters with the XML documentation tags:  
@@ -38,7 +32,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The only part of the following comment that will be processed is the line that begins with `<summary>`. The three tag formats produce the same comments.  
   
-    ```  
+    ```csharp  
     /** <summary>text</summary> */   
   
     /**   
@@ -52,7 +46,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The compiler identifies a common pattern of " * " at the beginning of the second and third lines. The pattern is not included in the output.  
   
-    ```  
+    ```csharp  
     /**   
      * <summary>   
      * text </summary>*/   
@@ -60,7 +54,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The compiler finds no common pattern in the following comment because the second character on the third line is not an asterisk. Therefore, all text on the second and third lines is processed as part of the comment.  
   
-    ```  
+    ```csharp  
     /**   
      * <summary>   
        text </summary>  
@@ -69,7 +63,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The compiler finds no pattern in the following comment for two reasons. First, the number of spaces before the asterisk is not consistent. Second, the fifth line begins with a tab, which does not match spaces. Therefore, all text from lines two through five is processed as part of the comment.  
   
-    ```  
+    ```csharp  
     /**   
       * <summary>   
       * text   
@@ -78,8 +72,9 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     */   
     ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

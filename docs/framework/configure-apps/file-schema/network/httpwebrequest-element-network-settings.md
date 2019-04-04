@@ -1,14 +1,6 @@
 ---
-title: "&lt;httpWebRequest&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<httpWebRequest> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/httpWebRequest"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#httpWebRequest"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "<httpWebRequest> element"
   - "httpWebRequest element"
 ms.assetid: 52acd9d2-5bdc-4dc4-9c2a-f0a476ccbb31
-caps.latest.revision: 18
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;httpWebRequest&gt; Element (Network Settings)
+# \<httpWebRequest> Element (Network Settings)
 Customizes Web request parameters.  
   
  \<configuration>  
@@ -84,6 +70,6 @@ Customizes Web request parameters.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

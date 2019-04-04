@@ -1,19 +1,7 @@
 ---
 title: "Workflow Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 18737989-0502-4367-b5f6-617ebfb77c96
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Workflow Tracing
 Workflow tracing offers a way to capture diagnostic information using .NET Framework trace listeners. Tracing can be enabled if a problem is detected with the application and then disabled again once the problem is resolved. There are two ways you could enable debug tracing for workflows. You can configure it using the Event Trace viewer or you can use <xref:System.Diagnostics> to send trace events to a file.  
@@ -47,7 +35,7 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 >  If you are using the .NET Framework 4 Client Profile, you must first register the ETW manifest by running the following command from the .NET Framework 4 directory: `ServiceModelReg.exe –i –c:etw`  
   
 ## Enabling Debug Tracing using System.Diagnostics  
- These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a [TextWriterTraceListener](http://go.microsoft.com/fwlink/?LinkId=165424) is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
+ These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a [TextWriterTraceListener](https://go.microsoft.com/fwlink/?LinkId=165424) is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
   
 ```xml  
 <configuration>  
@@ -75,6 +63,6 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 </configuration>  
 ```  
   
-## See Also  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)
+## See also
+- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
+- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

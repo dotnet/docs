@@ -1,26 +1,14 @@
 ---
-title: "&lt;disableFusionUpdatesFromADManager&gt; Element"
-ms.custom: ""
+title: "<disableFusionUpdatesFromADManager> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "disableFusionUpdatesFromADManager element"
   - "<disableFusionUpdatesFromADManager> element"
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;disableFusionUpdatesFromADManager&gt; Element
+# \<disableFusionUpdatesFromADManager> Element
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.  
   
  \<configuration> Element  
@@ -81,7 +69,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

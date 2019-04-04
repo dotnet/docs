@@ -1,19 +1,7 @@
 ---
 title: "Finding the Default Paragraph Style (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: be102177-8ab0-444a-b671-7023e555ffdb
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Finding the Default Paragraph Style (C#)
 The first task in the Manipulating Information in a WordprocessingML Document tutorial is to find the default style of paragraphs in the document.  
@@ -94,5 +82,6 @@ The default style is: Normal
   
 -   [Retrieving the Paragraphs and Their Styles (C#)](../../../../csharp/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document](http://msdn.microsoft.com/library/2696355e-4f83-4eaf-91b2-baa721f42fb4)
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

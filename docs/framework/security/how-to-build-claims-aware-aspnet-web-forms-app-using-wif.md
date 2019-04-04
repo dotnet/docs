@@ -1,21 +1,8 @@
 ---
 title: "How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: efb264dd-f47b-49a9-85ee-9f45d4425765
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF
 ## Applies To  
@@ -128,8 +115,8 @@ ms.workload:
     </system.identityModel>  
     <system.identityModel.services>  
         <federationConfiguration>  
-            <cookieHandler requireSsl="false" />  
-            <wsFederation passiveRedirectEnabled="true" issuer="http://localhost:13922/wsFederationSTS/Issue" realm="http://localhost:28503/" reply="http://localhost:28503/" requireHttps="false" />  
+            <cookieHandler requireSsl="true" />  
+            <wsFederation passiveRedirectEnabled="true" issuer="http://localhost:13922/wsFederationSTS/Issue" realm="http://localhost:28503/" reply="http://localhost:28503/" requireHttps="true" />  
         </federationConfiguration>  
     </system.identityModel.services>  
     ```  

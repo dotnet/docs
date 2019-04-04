@@ -1,20 +1,12 @@
 ---
-title: "My.Settings Object"
+title: "My.Settings Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "My.MySettingsProperty.Settings"
   - "My.Settings"
 helpviewer_keywords: 
   - "My.Settings object"
 ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Settings Object
 Provides properties and methods for accessing the application's settings.  
@@ -57,14 +49,15 @@ Provides properties and methods for accessing the application's settings.
 ## Example  
  This example displays the value of the `Nickname` setting.  
   
- [!code-vb[VbVbalrMyResources#14](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-settings-object_1.vb)]  
+ [!code-vb[VbVbalrMyResources#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#14)]  
   
  For this example to work, your application must have a `Nickname` setting, of type `String`.  
   
-## See Also  
- <xref:System.Configuration.ApplicationSettingsBase>  
- [How to: Read Application Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)  
- [How to: Change User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)  
- [How to: Persist User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)  
- [How to: Create Property Grids for User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)  
- [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)
+## See also
+
+- <xref:System.Configuration.ApplicationSettingsBase>
+- [How to: Read Application Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)
+- [How to: Change User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)
+- [How to: Persist User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)
+- [How to: Create Property Grids for User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)
+- [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)

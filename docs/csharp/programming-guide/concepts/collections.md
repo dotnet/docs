@@ -1,14 +1,7 @@
 ---
 title: "Collections (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "get-started-article"
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
-caps.latest.revision: 6
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Collections (C#)
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  
@@ -50,7 +43,7 @@ For many applications, you want to create and manage groups of related objects. 
 ## Using a Simple Collection  
  The examples in this section use the generic <xref:System.Collections.Generic.List%601> class, which enables you to work with a strongly typed list of objects.  
   
- The following example creates a list of strings and then iterates through the strings by using a or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.  
+ The following example creates a list of strings and then iterates through the strings by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.  
   
 ```csharp  
 // Create a list of strings.  
@@ -462,7 +455,7 @@ public class Car : IComparable<Car>
   
 <a name="BKMK_CustomCollection"></a>
 ## Defining a Custom Collection  
- You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [How to: Access a Collection Class with foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).  
+ You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface.  
   
  Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#BKMK_KindsOfCollections) earlier in this topic.  
   
@@ -542,7 +535,7 @@ public class Color
 ```  
 
 <a name="BKMK_Iterators"></a> 
-##  Iterators  
+## Iterators  
  An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element of the collection one at a time.  
   
  You call an iterator by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.  
@@ -576,15 +569,14 @@ private static IEnumerable<int> EvenSequence(
 }  
 ```  
   
-## See Also  
- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
- [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
- [Collections and Data Structures](../../../standard/collections/index.md)  
- [Creating and Manipulating Collections](http://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)  
- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
- [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)  
- [How to: Access a Collection Class with foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md)
+## See also
+
+- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Collections and Data Structures](../../../standard/collections/index.md)
+- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)
+- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)
+- [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)

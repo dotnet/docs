@@ -1,14 +1,6 @@
 ---
 title: "IHostSecurityManager::ImpersonateLoggedOnUser Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostSecurityManager.ImpersonateLoggedOnUser"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: acc49ba0-f1d9-45ad-871f-9d053a89dcbe
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostSecurityManager::ImpersonateLoggedOnUser Method
 Requests that code be executed using the credentials of the current user identity.  
@@ -41,7 +29,7 @@ HRESULT ImpersonateLoggedOnUser (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hToken`  
  [in] A token representing the credentials of the user to be impersonated.  
   
@@ -70,7 +58,7 @@ HRESULT ImpersonateLoggedOnUser (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)  
- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)  
- [RevertToSelf Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-reverttoself-method.md)
+## See also
+- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
+- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+- [RevertToSelf Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-reverttoself-method.md)

@@ -1,23 +1,9 @@
 ---
 title: "Claim Creation and Resource Values"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "claims [WCF], creation and resource values"
 ms.assetid: 30431f76-cbe7-4bad-bad7-8e43e23a82d4
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Claim Creation and Resource Values
 The <xref:System.IdentityModel.Claims.Claim> class provides several methods for creating instances of built-in claims types. Of these methods, the following perform no semantic or format checking on the supplied resource:  
@@ -50,7 +36,7 @@ The <xref:System.IdentityModel.Claims.Claim> class provides several methods for 
   
 -   <xref:System.IdentityModel.Claims.Claim.CreateX500DistinguishedNameClaim%2A>  
   
-## See Also  
- <xref:System.IdentityModel.Claims.Claim>  
- <xref:System.IdentityModel.Claims.ClaimSet>  
- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+## See also
+- <xref:System.IdentityModel.Claims.Claim>
+- <xref:System.IdentityModel.Claims.ClaimSet>
+- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)

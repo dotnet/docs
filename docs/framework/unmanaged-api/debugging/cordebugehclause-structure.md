@@ -1,14 +1,6 @@
 ---
 title: "CorDebugEHClause Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: 0e350a1b-6997-46d0-bfc5-962a5011ef43
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugEHClause Structure
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -61,7 +49,7 @@ typedef struct _CorDebugEHClause {
 ## Remarks  
  An array of `CoreDebugEHClause` values is returned by the [GetEHClauses](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md) method.  
   
- The EH clause information is defined by the CLI specification. For more information, see [Standard ECMA-355: Common Language Infrastructure (CLI), 6th Edition](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
+ The EH clause information is defined by the CLI specification. For more information, see [Standard ECMA-355: Common Language Infrastructure (CLI), 6th Edition](https://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
  The `flags` field can contain the following flags. Note that they are not defined in CorDebug.idl or CorDebug.h.  
   
@@ -81,6 +69,6 @@ typedef struct _CorDebugEHClause {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+## See also
+- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

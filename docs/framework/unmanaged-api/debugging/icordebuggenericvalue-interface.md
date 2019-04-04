@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugGenericValue Interface1"
-ms.custom: ""
+title: "ICorDebugGenericValue Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugGenericValue"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: bc14f408-b359-4c8c-ade2-888ccdf7261b
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugGenericValue Interface1
+# ICorDebugGenericValue Interface
+
 A subclass of "ICorDebugValue" that applies to all values. This interface provides Get and Set methods for the value.  
   
 ## Methods  
@@ -58,6 +47,6 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

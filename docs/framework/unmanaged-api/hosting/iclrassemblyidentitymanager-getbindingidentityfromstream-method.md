@@ -1,14 +1,6 @@
 ---
 title: "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAssemblyIdentityManager.GetBindingIdentityFromStream"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 40123b30-a589-46b3-95d3-af7b2b0baa05
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::GetBindingIdentityFromStream Method
 Gets the canonical assembly identity data for the assembly in the specified stream.  
@@ -44,7 +32,7 @@ HRESULT GetBindingIdentityFromStream (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStream`  
  [in] The assembly stream to be evaluated.  
   
@@ -79,6 +67,6 @@ HRESULT GetBindingIdentityFromStream (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
+## See also
+- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)

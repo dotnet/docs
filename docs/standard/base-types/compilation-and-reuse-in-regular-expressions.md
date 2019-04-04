@@ -1,13 +1,7 @@
 ---
 title: "Compilation and Reuse in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "parsing text with regular expressions, compilation"
   - "searching with regular expressions, compilation"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, compilation"
   - "regular expressions, engines"
 ms.assetid: 182ec76d-5a01-4d73-996c-0b0d14fcea18
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Compilation and Reuse in Regular Expressions
 You can optimize the performance of applications that make extensive use of regular expressions by understanding how the regular expression engine compiles expressions and by understanding how regular expressions are cached. This topic discusses both compilation and caching.  
@@ -51,5 +40,6 @@ However, generated MSIL cannot be unloaded. The only way to unload code is to un
   
  Because of the overhead of object instantiation and regular expression compilation, creating and rapidly destroying numerous <xref:System.Text.RegularExpressions.Regex> objects is a very expensive process. For applications that use a large number of different regular expressions, you can optimize performance by using calls to static `Regex` methods and possibly by increasing the size of the regular expression cache.  
   
-## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

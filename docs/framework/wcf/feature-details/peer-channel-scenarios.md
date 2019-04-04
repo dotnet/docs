@@ -1,21 +1,7 @@
 ---
 title: "Peer Channel Scenarios"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dae6e0f7-900c-45ee-8be9-3647698382fb
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Peer Channel Scenarios
 The Peer Channel APIs support the following development scenarios.  
@@ -32,5 +18,5 @@ The Peer Channel APIs support the following development scenarios.
 ## Gaming  
  Using Peer Channel, application developers can create server-less versions of their games where game moves get transmitted to and synchronized with other players by a peer-to-peer mechanism rather than through a central server. For small ISVs, this helps remove operational costs associated with deploying, maintaining, and servicing central servers. Games written using a peer-to-peer architecture can be played across the Internet, or in wired or wireless local networks. Secondary gaming activities, such as lobby and in-game chat can be developed using a peer-to-peer network.  
   
-## See Also  
- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
+## See also
+- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)

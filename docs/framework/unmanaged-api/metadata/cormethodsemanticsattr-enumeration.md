@@ -1,14 +1,6 @@
 ---
 title: "CorMethodSemanticsAttr Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorMethodSemanticsAttr"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorMethodSemanticsAttr Enumeration
 Contains values that describe the relationship between a method and an associated property or event.  
@@ -65,5 +53,5 @@ typedef enum CorMethodSemanticsAttr {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

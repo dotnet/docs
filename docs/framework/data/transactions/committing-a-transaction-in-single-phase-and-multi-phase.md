@@ -1,22 +1,10 @@
 ---
 title: "Committing a Transaction in Single-Phase and Multi-Phase"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 694ea153-e4db-41ae-96ac-9ac66dcb69a9
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Committing a Transaction in Single-Phase and Multi-Phase
 Each resource used in a transaction is managed by a resource manager (RM), whose actions are coordinated by a transaction manager (TM). The [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md) topic discusses how a resource (or multiple resources) can be enlisted in a transaction. This topic discusses how transaction commitment can be coordinated among enlisted resources.  
@@ -42,7 +30,7 @@ Each resource used in a transaction is managed by a resource manager (RM), whose
   
  Your resource manager that implements the <xref:System.Transactions.IEnlistmentNotification> interface should first implement the <xref:System.Transactions.IEnlistmentNotification.Prepare%28System.Transactions.PreparingEnlistment%29> method as the following simple example shows.  
   
-```  
+```csharp
 public void Prepare(PreparingEnlistment preparingEnlistment)  
 {  
      Console.WriteLine("Prepare notification received");  
@@ -81,7 +69,7 @@ public void Prepare(PreparingEnlistment preparingEnlistment)
   
  Thus, your resource manager should implement the following methods.  
   
-```  
+```csharp
 public void Commit (Enlistment enlistment)  
 {  
      // Do any work necessary when commit notification is received  
@@ -104,7 +92,7 @@ public void Rollback (Enlistment enlistment)
 ### Implementing InDoubt  
  Finally, you should implement the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> method for the volatile resource manager. This method is called if the transaction manager loses contact with one or more participants, so their status is unknown. If this occurs, you should log this fact so that you can investigate later whether any of the transaction participants has been left in an inconsistent state.  
   
-```  
+```csharp
 public void InDoubt (Enlistment enlistment)  
 {  
      // log this  
@@ -115,6 +103,6 @@ public void InDoubt (Enlistment enlistment)
 ## Single Phase Commit Optimization  
  The Single Phase Commit protocol is more efficient at run time because all updates are done without any explicit coordination. For more information on this protocol, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md).  
   
-## See Also  
- [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)  
- [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)
+## See also
+- [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)
+- [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)

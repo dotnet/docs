@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::GetFileProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.GetFileProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c5e6216f-ae3d-4697-9688-66b69c1251ec
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetFileProps Method
 Gets the properties of the file with the specified metadata signature.  
@@ -47,7 +35,7 @@ HRESULT GetFileProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdf`  
  [in] The `mdFile` metadata token that represents the file for which to get the properties.  
   
@@ -78,5 +66,5 @@ HRESULT GetFileProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

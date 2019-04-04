@@ -1,14 +1,6 @@
 ---
 title: "IHostMemoryManager::VirtualProtect Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostMemoryManager.VirtualProtect"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 13be0299-df0d-4951-aabf-0676a30b385f
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostMemoryManager::VirtualProtect Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualProtect` changes the protection on a region of committed pages in the virtual address space of the calling process.  
@@ -44,7 +32,7 @@ HRESULT VirtualProtect (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the base address of the virtual memory whose protection attributes are to be changed.  
   
@@ -80,5 +68,5 @@ HRESULT VirtualProtect (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+## See also
+- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

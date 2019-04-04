@@ -1,10 +1,8 @@
 ---
-title: "event (C# Reference)"
+title: "event - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "event"
   - "remove"
@@ -13,9 +11,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "event keyword [C#]"
 ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
-caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # event (C# Reference)
 The `event` keyword is used to declare an event in a publisher class.  
@@ -23,7 +18,7 @@ The `event` keyword is used to declare an event in a publisher class.
 ## Example  
  The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example that also shows how to use the generic <xref:System.EventHandler%601> delegate type and how to subscribe to an event and create an event handler method, see [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).  
   
- [!code-csharp[csrefKeywordsModifiers#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/event_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#7)]
   
  Events are a special kind of multicast delegate that can only be invoked from within the class or struct where they are declared (the publisher class). If other classes or structs subscribe to the event, their event handler methods will be called when the publisher class raises the event. For more information and code examples, see [Events](../../../csharp/programming-guide/events/index.md) and [Delegates](../../../csharp/programming-guide/delegates/index.md).  
   
@@ -46,11 +41,12 @@ The `event` keyword is used to declare an event in a publisher class.
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [add](../../../csharp/language-reference/keywords/add.md)  
- [remove](../../../csharp/language-reference/keywords/remove.md)  
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
- [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [add](../../../csharp/language-reference/keywords/add.md)
+- [remove](../../../csharp/language-reference/keywords/remove.md)
+- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)
+- [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

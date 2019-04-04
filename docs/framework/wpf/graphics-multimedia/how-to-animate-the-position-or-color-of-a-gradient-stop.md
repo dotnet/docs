@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate the Position or Color of a Gradient Stop"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "animation [WPF], color of GradientStop objects"
   - "GradientStop objects [WPF], animating position of"
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate the Position or Color of a Gradient Stop
 This example shows how to animate the <xref:System.Windows.Media.GradientStop.Color%2A> and <xref:System.Windows.Media.GradientStop.Offset%2A> of <xref:System.Windows.Media.GradientStop> objects.  
@@ -39,15 +25,15 @@ This example shows how to animate the <xref:System.Windows.Media.GradientStop.Co
   
 -   The third animation, another <xref:System.Windows.Media.Animation.ColorAnimation>, animates the opacity of the third gradient stop's <xref:System.Windows.Media.GradientStop.Color%2A> by -1 and then back. As a result, the third color in the gradient fades away and then becomes opaque again.  
   
- [!code-csharp[BrushesIntroduction_snip#GraphicsMMGradientAnimationExamplesWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BrushesIntroduction_snip/CSharp/GradientStopAnimationExample.cs#graphicsmmgradientanimationexampleswholepage)]
- [!code-vb[BrushesIntroduction_snip#GraphicsMMGradientAnimationExamplesWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesIntroduction_snip/visualbasic/gradientstopanimationexample.vb#graphicsmmgradientanimationexampleswholepage)]
- [!code-xaml[BrushesIntroduction_snip#GraphicsMMGradientAnimationExamplesWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/BrushesIntroduction_snip/XAML/GradientStopAnimationExample.xaml#graphicsmmgradientanimationexampleswholepage)]  
+ [!code-csharp[BrushesIntroduction_snip#GraphicsMMGradientAnimationExamplesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesIntroduction_snip/CSharp/GradientStopAnimationExample.cs#graphicsmmgradientanimationexampleswholepage)]
+ [!code-vb[BrushesIntroduction_snip#GraphicsMMGradientAnimationExamplesWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesIntroduction_snip/visualbasic/gradientstopanimationexample.vb#graphicsmmgradientanimationexampleswholepage)]
+ [!code-xaml[BrushesIntroduction_snip#GraphicsMMGradientAnimationExamplesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushesIntroduction_snip/XAML/GradientStopAnimationExample.xaml#graphicsmmgradientanimationexampleswholepage)]  
   
  Although this example uses a <xref:System.Windows.Media.LinearGradientBrush>, the process is the same for animating <xref:System.Windows.Media.GradientStop> objects inside a <xref:System.Windows.Media.RadialGradientBrush>.  
   
- For additional examples, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973).  
+ For additional examples, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).  
   
-## See Also  
- <xref:System.Windows.Media.GradientStop>  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+## See also
+- <xref:System.Windows.Media.GradientStop>
+- [Animation Overview](animation-overview.md)
+- [Storyboards Overview](storyboards-overview.md)

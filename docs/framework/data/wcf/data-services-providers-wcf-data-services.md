@@ -1,23 +1,9 @@
 ---
 title: "Data Services Providers (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, providers"
 ms.assetid: a0160b1b-3d9c-4cc8-8391-cb0986a60a41
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Services Providers (WCF Data Services)
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports multiple provider models for exposing data as an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed. This topic provides information to enable you to select the best [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] provider for your data source.  
@@ -38,7 +24,7 @@ ms.workload:
 |--------------|-----------------|  
 |Streaming provider|This provider enables you to expose binary large object data types by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]. A streaming provider is created by implementing the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> interface. This provider can be implemented together with any data source provider. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).|  
   
-## See Also  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md)  
- [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)
+## See also
+- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md)
+- [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)

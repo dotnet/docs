@@ -1,24 +1,10 @@
 ---
 title: "Defining Primary Keys"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 2ea85959-e763-4669-8bd9-46a9dab894bd
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Defining Primary Keys
 A database table commonly has a column or group of columns that uniquely identifies each row in the table. This identifying column or group of columns is called the primary key.  
@@ -73,8 +59,8 @@ keyColumn[1] = workTable.Columns["CustFName"];
 workTable.PrimaryKey = keyColumn;  
 ```  
   
-## See Also  
- <xref:System.Data.DataTable>  
- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)  
- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataTable>
+- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)
+- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,14 +1,6 @@
 ---
 title: "COR_IL_MAP Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "COR_IL_MAP"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 534ebc17-963d-4b26-8375-8cd940281db3
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_IL_MAP Structure
 Specifies changes in the relative offset of a function.  
@@ -96,6 +84,6 @@ typedef struct _COR_IL_MAP {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

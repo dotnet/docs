@@ -1,19 +1,7 @@
 ---
 title: "How to: Create Hierarchy Using Grouping (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Create Hierarchy Using Grouping (C#)
 This example shows how to group data, and then generate XML based on the grouping.  
@@ -80,5 +68,6 @@ Console.WriteLine(newData);
 </Root>  
 ```  
   
-## See Also  
- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

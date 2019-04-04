@@ -1,19 +1,7 @@
 ---
 title: "102 - WorkflowInstanceAbortedRecord"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 102 - WorkflowInstanceAbortedRecord
 ## Properties  

@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugStepperEnum Interface1"
-ms.custom: ""
+title: "ICorDebugStepperEnum Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStepperEnum"
 api_location: 
@@ -22,14 +14,10 @@ helpviewer_keywords:
 ms.assetid: 988718c1-1a4a-40f2-a04c-7d67e5cfe1e2
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugStepperEnum Interface1
+# ICorDebugStepperEnum Interface
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  
   
 ## Methods  
@@ -52,5 +40,5 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,14 +1,6 @@
 ---
 title: "COR_FIELD_OFFSET Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "COR_FIELD_OFFSET"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_FIELD_OFFSET Structure
 Stores the offset, within a class, of the specified field.  
@@ -58,7 +46,7 @@ typedef struct COR_FIELD_OFFSET {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+## See also
+- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

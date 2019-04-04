@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::IsGlobal Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.IsGlobal"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 44cf6908-f555-4ae8-b2cf-24bd974bf2fe
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::IsGlobal Method
 Gets a value indicating whether the field, method, or type represented by the specified metadata token has global scope.  
@@ -42,7 +30,7 @@ HRESULT IsGlobal (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pd`  
  [in] A metadata token that represents a type, field, or method.  
   
@@ -58,6 +46,6 @@ HRESULT IsGlobal (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

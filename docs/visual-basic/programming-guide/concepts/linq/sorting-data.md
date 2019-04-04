@@ -1,25 +1,14 @@
 ---
 title: "Sorting Data (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sorting Data (Visual Basic)
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
   
  The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
   
- ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_ordering.png "LINQ_Ordering")  
+ ![Graphic that shows an alphabetical sort operation.](./media/sorting-data/alphabetical-sort-operation.png)  
   
  The standard query operator methods that sort data are listed in the following section.  
   
@@ -147,9 +136,10 @@ MsgBox(sb.ToString())
 ' brown  
 ```  
   
-## See Also  
- <xref:System.Linq>  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [How to: Sort Query Results](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md)  
- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+## See also
+
+- <xref:System.Linq>
+- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [How to: Sort Query Results](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md)
+- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

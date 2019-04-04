@@ -1,17 +1,12 @@
 ---
-title: "Modifiers (C# Reference)"
+title: "Modifiers - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "keywords [C#], modifiers"
   - "modifiers [C#]"
 ms.assetid: c96691dd-b357-49ec-b5ae-03ca214fadfb
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Modifiers (C# Reference)
 Modifiers are used to modify declarations of types and type members. This section introduces the C# modifiers.  
@@ -34,7 +29,8 @@ Modifiers are used to modify declarations of types and type members. This sectio
 |[virtual](../../../csharp/language-reference/keywords/virtual.md)|Declares a method or an accessor whose implementation can be changed by an overriding member in a derived class.|  
 |[volatile](../../../csharp/language-reference/keywords/volatile.md)|Indicates that a field can be modified in the program by something such as the operating system, the hardware, or a concurrently executing thread.|  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)

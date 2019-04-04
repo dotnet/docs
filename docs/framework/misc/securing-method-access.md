@@ -1,14 +1,6 @@
 ---
 title: "Securing Method Access"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "security [.NET Framework], method access"
   - "method access security"
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing Method Access
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -36,7 +24,7 @@ ms.workload:
   
 -   Limit the scope of accessibility to the class, assembly, or derived classes, if they can be trusted. This is the simplest way to limit method access. Note that, in general, derived classes can be less trustworthy than the class they derive from, though in some cases they share the parent class's identity. In particular, do not infer trust from the keyword **protected**, which is not necessarily used in the security context.  
   
--   Limit the method access to callers of a specified identity--essentially, any particular [evidence](http://msdn.microsoft.com/library/64ceb7c8-a0b4-46c4-97dc-6c22da0539da) (strong name, publisher, zone, and so on) you choose.  
+-   Limit the method access to callers of a specified identity--essentially, any particular [evidence](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7y5x1hcd%28v=vs.100%29) (strong name, publisher, zone, and so on) you choose.  
   
 -   Limit the method access to callers having whatever permissions you select.  
   
@@ -116,7 +104,7 @@ End Class
 ```csharp  
 [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand, Name="FullTrust")]  
 [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name="FullTrust")]  
-public abstract class CannotCreateInstanceOfMe_CanCastToMe{}  
+public abstract class CannotCreateInstanceOfMe_CanCastToMe {}  
 ```  
   
  For public virtual functions:  
@@ -151,7 +139,7 @@ End Class 'Base2
 ```  
   
 ```csharp  
-abstract class Base2{  
+abstract class Base2 {  
 [System.Security.Permissions.PermissionSetAttribute(  
 System.Security.Permissions.SecurityAction.InheritanceDemand, Name = "FullTrust")]  
 [System.Security.Permissions.PermissionSetAttribute(  
@@ -240,11 +228,11 @@ class Implemented : ICanCastToMe
 ## Virtual Internal Overrides or Overloads Overridable Friend  
   
 > [!NOTE]
->  This section warns about a security issue when declaring a method as both `virtual` and `internal` (`Overloads``Overridable``Friend` in Visual Basic). This warning applies only to the .NET Framework versions 1.0 and 1.1, it does not apply to later versions.  
+>  This section warns about a security issue when declaring a method as both `virtual` and `internal` (`Overloads` `Overridable` `Friend` in Visual Basic). This warning applies only to the .NET Framework versions 1.0 and 1.1, it does not apply to later versions.  
   
  In the .NET Framework versions 1.0 and 1.1, you must be aware of a nuance of the type system accessibility when confirming that your code is unavailable to other assemblies. A method that is declared **virtual** and **internal** (**Overloads Overridable Friend** in Visual Basic) can override the parent class's vtable entry and can be used only from within the same assembly because it is internal. However, the accessibility for overriding is determined by the **virtual** keyword, and this can be overridden from another assembly as long as that code has access to the class itself. If the possibility of an override presents a problem, use declarative security to fix it, or remove the **virtual** keyword if it is not strictly required.  
   
  Note that even if a language compiler prevents these overrides with a compilation error, it is possible for code written with other compilers to override.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

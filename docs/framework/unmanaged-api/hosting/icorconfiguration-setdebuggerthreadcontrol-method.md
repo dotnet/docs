@@ -1,14 +1,6 @@
 ---
 title: "ICorConfiguration::SetDebuggerThreadControl Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorConfiguration.SetDebuggerThreadControl"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 1ded7639-dacb-4db1-961c-d1ceaec01959
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorConfiguration::SetDebuggerThreadControl Method
 Sets the callback interface that the debugging services will call as common language runtime (CLR) threads are blocked and unblocked for debugging.  
@@ -41,7 +29,7 @@ HRESULT SetDebuggerThreadControl (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDebuggerThreadControl`  
  [in] A pointer to an [IDebuggerThreadControl](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-interface.md) object that notifies the host about the blocking and unblocking of threads by the debugging services.  
   
@@ -54,5 +42,5 @@ HRESULT SetDebuggerThreadControl (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
+## See also
+- [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

@@ -1,25 +1,11 @@
 ---
 title: "x:FactoryMethod Directive"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML. x:FactoryMethod directive [XAML Services]"
   - "FactoryMethod directive in XAML [XAML Services]"
   - "x:FactoryMethod directive [XAML Services]"
 ms.assetid: 829bcbdf-5318-4afb-9a03-c310e0d2f23d
-caps.latest.revision: 8
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:FactoryMethod Directive
 Specifies a method other than a constructor that a XAML processor should use to initialize an object after resolving its backing type.  
@@ -52,7 +38,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 ## Remarks  
  If `methodname` is an instance method, it cannot be qualified.  
   
- Static methods as factory methods are supported. If `methodname` is a static method, `methodname` is provided as a *typeName*.*methodName* combination, where *typeName* names the class that defines the static factory method. *typeName* can be prefix-qualified if referring to a type in a mapped xmlns. *typeName* can be a different type than `typeof(``object``)`.  
+ Static methods as factory methods are supported. If `methodname` is a static method, `methodname` is provided as a *typeName*.*methodName* combination, where *typeName* names the class that defines the static factory method. *typeName* can be prefix-qualified if referring to a type in a mapped xmlns. *typeName* can be a different type than `typeof(object)`.  
   
  The factory method must be a declared public method of the type that backs the relevant object element.  
   
@@ -64,5 +50,5 @@ Specifies a method other than a constructor that a XAML processor should use to 
   
  `x:FactoryMethod` as an element must precede any other property elements, must precede any `x:Arguments` also provided as elements, and must precede any content/inner text/initialization text.  
   
-## See Also  
- [x:Arguments Directive](../../../docs/framework/xaml-services/x-arguments-directive.md)
+## See also
+- [x:Arguments Directive](x-arguments-directive.md)

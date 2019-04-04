@@ -1,13 +1,6 @@
 ---
 title: "Value Types and Reference Types"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "reference data types [Visual Basic]"
   - "reference types [Visual Basic]"
@@ -17,12 +10,9 @@ helpviewer_keywords:
   - "data types [Visual Basic], value types"
   - "data types [Visual Basic], reference types"
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Value Types and Reference Types
-In Visual Basic, data types are implemented based on their classification. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
+In Visual Basic, data types are implemented based on their classification. The Visual Basic data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
   
 ## Value Types  
  A data type is a *value type* if it holds the data within its own memory allocation. Value types include the following:  
@@ -76,10 +66,11 @@ Dim totals() As Single = New Single(8) {}
   
  You can find out whether an `Object` variable is acting as a reference type or a value type by passing it to the <xref:Microsoft.VisualBasic.Information.IsReference%2A> method in the <xref:Microsoft.VisualBasic.Information> class of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace. <xref:Microsoft.VisualBasic.Information.IsReference%2A?displayProperty=nameWithType> returns `True` if the content of the `Object` variable represents a reference type.  
   
-## See Also  
- [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+## See also
+
+- [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)

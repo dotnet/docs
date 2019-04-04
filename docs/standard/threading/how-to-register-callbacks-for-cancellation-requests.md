@@ -1,26 +1,15 @@
 ---
 title: "How to: Register Callbacks for Cancellation Requests"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "cancellation, how to register callbacks"
 ms.assetid: 8838dd75-18ed-4b8b-b322-cd4531faac64
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Register Callbacks for Cancellation Requests
 The following example shows how to register a delegate that will be invoked when a <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property becomes true due to a call to <xref:System.Threading.CancellationTokenSource.Cancel%2A> on the object that created the token. Use this technique for cancelling asynchronous operations that do not natively support the unified cancellation framework, and for unblocking methods that might be waiting for an asynchronous operation to finish.  
@@ -36,5 +25,6 @@ The following example shows how to register a delegate that will be invoked when
   
  If cancellation has already been requested when the callback is registered, the callback is still guaranteed to be called. In this particular case, the <xref:System.Net.WebClient.CancelAsync%2A> method will do nothing if no asynchronous operation is in progress, so it is always safe to call the method.  
   
-## See Also  
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## See also
+
+- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

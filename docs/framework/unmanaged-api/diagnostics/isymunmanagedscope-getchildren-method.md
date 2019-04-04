@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedScope::GetChildren Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedScope.GetChildren"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedScope::GetChildren Method
 Gets the children of this scope.  
@@ -43,7 +31,7 @@ HRESULT GetChildren(
         length_is(*pcChildren)] ISymUnmanagedScope* children[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cChildren`  
  [in] A `ULONG32` that indicates the size of the `children` array.  
   
@@ -59,6 +47,6 @@ HRESULT GetChildren(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)  
- [GetParent Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)
+## See also
+- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [GetParent Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)

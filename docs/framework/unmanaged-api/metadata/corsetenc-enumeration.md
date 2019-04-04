@@ -1,14 +1,6 @@
 ---
 title: "CorSetENC Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorSetENC"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorSetENC Enumeration
 Contains values used to influence behavior during the generation of metadata.  
@@ -70,5 +58,5 @@ typedef enum CorSetENC {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

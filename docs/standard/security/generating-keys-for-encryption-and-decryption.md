@@ -1,13 +1,7 @@
 ---
 title: "Generating Keys for Encryption and Decryption"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "asymmetric keys [.NET Framework]"
   - "cryptography [.NET Framework], keys"
 ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generating Keys for Encryption and Decryption
 Creating and managing keys is an important part of the cryptographic process. Symmetric algorithms require the creation of a key and an initialization vector (IV). The key must be kept secret from anyone who should not decrypt your data. The IV does not have to be secret, but should be changed for each session. Asymmetric algorithms require the creation of a public key and a private key. The public key can be made public to anyone, while the private key must known only by the party who will decrypt the data encrypted with the public key. This section describes how to generate and manage keys for both symmetric and asymmetric algorithms.  
@@ -39,27 +28,27 @@ Creating and managing keys is an important part of the cryptographic process. Sy
  The following example shows the creation of a new instance of the <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> class that implements the TripleDES algorithm.  
   
 ```vb  
-Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
+Dim tdes As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
 ```  
   
 ```csharp  
-TripleDESCryptoServiceProvider TDES = new TripleDESCryptoServiceProvider();  
+TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();  
 ```  
   
  When the previous code is executed, a new key and IV are generated and placed in the **Key** and **IV** properties, respectively.  
   
- Sometimes you might need to generate multiple keys. In this situation, you can create a new instance of a class that implements a symmetric algorithm and then create a new key and IV by calling the **GenerateKey** and **GenerateIV** methods. The following code example illustrates how to create new keys and IVs after a new instance of the asymmetric cryptographic class has been made.  
+ Sometimes you might need to generate multiple keys. In this situation, you can create a new instance of a class that implements a symmetric algorithm and then create a new key and IV by calling the **GenerateKey** and **GenerateIV** methods. The following code example illustrates how to create new keys and IVs after a new instance of the symmetric cryptographic class has been made.  
   
 ```vb  
-Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
-TDES.GenerateIV()  
-TDES.GenerateKey()  
+Dim tdes As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
+tdes.GenerateIV()  
+tdes.GenerateKey()  
 ```  
   
 ```csharp  
-TripleDESCryptoServiceProvider TDES = new TripleDESCryptoServiceProvider();  
-TDES.GenerateIV();  
-TDES.GenerateKey();  
+TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();  
+tdes.GenerateIV();  
+tdes.GenerateKey();  
 ```  
   
  When the previous code is executed, a key and IV are generated when the new instance of **TripleDESCryptoServiceProvider** is made. Another key and IV are created when the **GenerateKey** and **GenerateIV** methods are called.  
@@ -81,20 +70,21 @@ TDES.GenerateKey();
   
 ```vb  
 'Generate a public/private key pair.  
-Dim RSA as RSACryptoServiceProvider = new RSACryptoServiceProvider()  
+Dim rsa as RSACryptoServiceProvider = new RSACryptoServiceProvider()  
 'Save the public key information to an RSAParameters structure.  
-Dim RSAKeyInfo As RSAParameters = RSA.ExportParameters(false)  
+Dim rsaKeyInfo As RSAParameters = rsa.ExportParameters(false)  
 ```  
   
 ```csharp  
 //Generate a public/private key pair.  
-RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();  
+RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();  
 //Save the public key information to an RSAParameters structure.  
-RSAParameters RSAKeyInfo = RSA.ExportParameters(false);  
+RSAParameters rsaKeyInfo = rsa.ExportParameters(false);  
 ```  
   
-## See Also  
- [Encrypting Data](../../../docs/standard/security/encrypting-data.md)  
- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- [How to: Store Asymmetric Keys in a Key Container](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)
+## See also
+
+- [Encrypting Data](../../../docs/standard/security/encrypting-data.md)
+- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [How to: Store Asymmetric Keys in a Key Container](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)

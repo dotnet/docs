@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess::EnumerateAppDomains Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess.EnumerateAppDomains"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d508981f-e2b2-445b-a649-69951c22702d
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess::EnumerateAppDomains Method
 Enumerates all the application domains in this process.  
@@ -40,7 +28,7 @@ HRESULT EnumerateAppDomains(
     [out] ICorDebugAppDomainEnum **ppAppDomains);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAppDomains`  
  [out] A pointer to the address of an [ICorDebugAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomainenum-interface.md) that is an enumerator for the application domains in this process.  
   

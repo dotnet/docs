@@ -1,23 +1,14 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; cannot expose type &#39;&lt;typename&gt;&#39; outside the project through &lt;containertype&gt; &#39;&lt;containertypename&gt;&#39;"
+title: "'<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc30909"
   - "vbc30909"
 helpviewer_keywords: 
   - "BC30909"
 ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# &#39;&lt;membername&gt;&#39; cannot expose type &#39;&lt;typename&gt;&#39; outside the project through &lt;containertype&gt; &#39;&lt;containertypename&gt;&#39;
+# '\<membername>' cannot expose type '\<typename>' outside the project through \<containertype> '\<containertypename>'
 A variable, procedure parameter, or function return is exposed outside its container, but it is declared as a type that must not be exposed outside the container.  
   
  The following skeleton code shows a situation that generates this error.  
@@ -38,5 +29,6 @@ End Class
   
 -   Change the access level of the variable, procedure parameter, or function return to be at least as restrictive as the access level of its data type.  
   
-## See Also  
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+## See also
+
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)

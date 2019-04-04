@@ -1,14 +1,6 @@
 ---
 title: "ICLRDomainManager::SetPropertiesForDefaultAppDomain Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDomainManager.SetPropertiesForDefaultAppDomain"
 api_location: 
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
   - "SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
 ms.assetid: 43e61c4b-c435-45ec-9ef6-c68403aa4200
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDomainManager::SetPropertiesForDefaultAppDomain Method
 Sets properties that will be used to initialize the default application domain.  
@@ -41,7 +29,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nProperties`  
  [in] The number of entries in `pwszPropertyNames` and `pwszPropertyValues`.  
   
@@ -71,6 +59,6 @@ HRESULT SetPropertiesForDefaultAppDomain(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)
+## See also
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)

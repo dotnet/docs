@@ -1,14 +1,6 @@
 ---
 title: "GetResolutionScope Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink.GetResolutionScope"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetResolutionScope Method
 Retrieves the scope of a given type.  
@@ -43,7 +31,7 @@ HRESULT GetResolutionScope(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   
@@ -62,7 +50,7 @@ HRESULT GetResolutionScope(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

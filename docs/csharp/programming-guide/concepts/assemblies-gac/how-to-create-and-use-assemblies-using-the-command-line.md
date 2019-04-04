@@ -1,17 +1,7 @@
 ---
 title: "How to: Create and Use Assemblies Using the Command Line (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 408ddce3-89e3-4e12-8353-34a49beeb72b
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create and Use Assemblies Using the Command Line (C#)
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  
@@ -126,7 +116,8 @@ csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs
   
  For more information about building from the command line, see [Command-line Building With csc.exe](../../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
   
-## See Also  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)
+## See also
+
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)

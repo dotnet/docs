@@ -1,23 +1,9 @@
 ---
 title: "Filling a DataSet Using One or More REF CURSORs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 ms.assetid: 99863e79-5b00-467e-a105-4ffa42de3ff7
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Filling a DataSet Using One or More REF CURSORs
 This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.  
@@ -54,6 +40,6 @@ Private Sub Button1_Click(ByVal sender As Object, _
   End Using  
 ```  
   
-## See Also  
- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

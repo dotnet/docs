@@ -1,25 +1,11 @@
 ---
 title: "ClickOnce Deployment for Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ClickOnce deployment [Windows Forms]"
   - "Windows Forms, ClickOnce deployment"
   - "walkthroughs [Windows Forms], ClickOnce deployment"
 ms.assetid: 1451fce9-1965-4a03-b4d3-831b5fe4ad66
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ClickOnce Deployment for Windows Forms
 The following topics describe [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)], a technology used for easily deploying Windows Forms applications to client computers.  
@@ -70,10 +56,10 @@ The following topics describe [!INCLUDE[ndptecclick](../../../includes/ndpteccli
  [How to: Include a Data File in a ClickOnce Application](/visualstudio/deployment/how-to-include-a-data-file-in-a-clickonce-application)  
  Demonstrates how to mark a file so that it is available in the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] data directory.  
   
-## See Also  
- [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
- [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)  
- [Building ClickOnce Applications from the Command Line](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)  
- [Debugging ClickOnce Applications That Use System.Deployment.Application](http://msdn.microsoft.com/library/86f31948-2ca8-47c0-8e8b-c2b817bbf79f)  
- [Deploying COM Components with ClickOnce](/visualstudio/deployment/deploying-com-components-with-clickonce)  
- [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)
+## See also
+- [Application Settings Overview](./advanced/application-settings-overview.md)
+- [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)
+- [Building ClickOnce Applications from the Command Line](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)
+- [Debugging ClickOnce Applications That Use System.Deployment.Application](/visualstudio/deployment/debugging-clickonce-applications-that-use-system-deployment-application)
+- [Deploying COM Components with ClickOnce](/visualstudio/deployment/deploying-com-components-with-clickonce)
+- [How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)

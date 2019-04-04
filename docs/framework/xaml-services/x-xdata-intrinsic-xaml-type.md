@@ -1,14 +1,6 @@
 ---
 title: "x:XData Intrinsic XAML Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "x:XData"
   - "XData"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "XData in XAML [XAML Services]"
   - "x:XData XAML directive element [XAML Services]"
 ms.assetid: 7ce209c2-621b-4977-b643-565f7e663534
-caps.latest.revision: 17
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:XData Intrinsic XAML Type
 Enables placement of XML data islands within a XAML production. XML elements within `x:XData` should not be treated by XAML processors as if they are a part of the acting default XAML namespace or any other XAML namespace. `x:XData` can contain arbitrary well-formed XML.  
@@ -53,11 +39,11 @@ Enables placement of XML data islands within a XAML production. XML elements wit
 ## WPF Usage Notes  
  The `x:XData` object is primarily used as a child object of an <xref:System.Windows.Data.XmlDataProvider>, or alternatively, as the child object of the <xref:System.Windows.Data.XmlDataProvider.XmlSerializer%2A?displayProperty=nameWithType> property (in XAML, this is typically expressed in property element syntax).  
   
- The data should typically redefine the base XML namespace within the data island to be a new default XML namespace (set to an empty string). This is easiest for simple data islands because the <xref:System.Windows.Data.Binding.XPath%2A> expressions that are used to reference and bind to the data can avoid inclusion of prefixes. More complex data islands might define multiple prefixes for the data and use a specific prefix for the XML namespace at the root. In this case, all <xref:System.Windows.Data.Binding.XPath%2A> expression references should include the appropriate namespace-mapped prefix. For more information, see [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md).  
+ The data should typically redefine the base XML namespace within the data island to be a new default XML namespace (set to an empty string). This is easiest for simple data islands because the <xref:System.Windows.Data.Binding.XPath%2A> expressions that are used to reference and bind to the data can avoid inclusion of prefixes. More complex data islands might define multiple prefixes for the data and use a specific prefix for the XML namespace at the root. In this case, all <xref:System.Windows.Data.Binding.XPath%2A> expression references should include the appropriate namespace-mapped prefix. For more information, see [Data Binding Overview](../wpf/data/data-binding-overview.md).  
   
  Technically, `x:XData` can be used as the content of any property of type <xref:System.Xml.Serialization.IXmlSerializable>. However, <xref:System.Windows.Data.XmlDataProvider.XmlSerializer%2A?displayProperty=nameWithType> is the only prominent implementation.  
   
-## See Also  
- <xref:System.Windows.Data.XmlDataProvider>  
- [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Binding Markup Extension](../../../docs/framework/wpf/advanced/binding-markup-extension.md)
+## See also
+- <xref:System.Windows.Data.XmlDataProvider>
+- [Data Binding Overview](../wpf/data/data-binding-overview.md)
+- [Binding Markup Extension](../wpf/advanced/binding-markup-extension.md)

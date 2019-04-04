@@ -1,14 +1,6 @@
 ---
 title: "ICoreClrDebugTarget::FreeMemory Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICoreDebugTarget.FreeMemory"
 api_location: 
@@ -25,12 +17,8 @@ helpviewer_keywords:
 ms.assetid: 98f2a0db-a6ec-4f9b-861d-f82485237d08
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICoreClrDebugTarget::FreeMemory Method
 Frees the memory allocated by the [ICoreClrDebugTarget::EnumProcesses](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumprocesses-method.md) and [ICoreClrDebugTarget::EnumRuntimes](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumruntimes-method.md) methods.  
@@ -42,7 +30,7 @@ void FreeMemory (
      [in] void*pMemory);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMemory`  
  [in] A pointer to the array that is returned by either the [ICoreClrDebugTarget::EnumProcesses](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumprocesses-method.md) or the [ICoreClrDebugTarget::EnumRuntimes](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumruntimes-method.md) method.  
   
@@ -55,5 +43,5 @@ void FreeMemory (
   
  **.NET Framework Versions:** 3.5 SP1  
   
-## See Also  
- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)
+## See also
+- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

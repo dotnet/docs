@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugStackWalk::SetContext Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStackWalk.SetContext Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: bac0b156-31a3-4e7f-be4d-ab21789c81f1
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStackWalk::SetContext Method
 Sets the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object’s current context to a valid context for the thread.  
@@ -41,7 +29,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
                    [in, size_is(contextSize)] BYTE context[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `flag`  
  [in] A [CorDebugSetContextFlag](../../../../docs/framework/unmanaged-api/debugging/cordebugsetcontextflag-enumeration.md) flag that indicates whether the context is from the active frame on the stack, or a context obtained by unwinding the stack.  
   
@@ -79,6 +67,6 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

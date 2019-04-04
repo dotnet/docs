@@ -1,28 +1,14 @@
 ---
-title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
-ms.custom: ""
+title: "<remove> Element for <listeners> for <trace>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/remove"
 helpviewer_keywords: 
   - "remove element"
   - "<remove> element"
 ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
-caps.latest.revision: 12
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
+# \<remove> Element for \<listeners> for \<trace>
 Removes a listener from the **Listeners** collection.  
   
  \<configuration>  
@@ -78,9 +64,9 @@ Removes a listener from the **Listeners** collection.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

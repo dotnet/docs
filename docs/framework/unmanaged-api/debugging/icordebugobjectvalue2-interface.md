@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugObjectValue2 Interface1"
-ms.custom: ""
+title: "ICorDebugObjectValue2 Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugObjectValue2"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: f93cc2ec-0a12-4499-9bf6-405dc58c9a81
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugObjectValue2 Interface1
+# ICorDebugObjectValue2 Interface
+
 Extends the "ICorDebugObjectValue" interface to support inheritance and overrides.  
   
 ## Methods  
@@ -52,6 +41,6 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
   
  **NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- 
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+

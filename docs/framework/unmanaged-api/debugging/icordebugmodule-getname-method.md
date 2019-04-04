@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugModule::GetName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugModule.GetName"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: db499637-7ba9-421e-b8b1-35856995e80b
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugModule::GetName Method
 Gets the file name of the module.  
@@ -43,7 +31,7 @@ HRESULT GetName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchname`  
  [in] The size of the `szName` array.  
   
@@ -65,6 +53,6 @@ HRESULT GetName(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also
+
+

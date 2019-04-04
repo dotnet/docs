@@ -1,21 +1,7 @@
 ---
 title: "WS-AtomicTransaction Configuration Utility (wsatConfig.exe)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WS-AtomicTransaction Configuration Utility (wsatConfig.exe)
 The WS-AtomicTransaction Configuration Utility is used to configure basic WS-AtomicTransaction support settings.  
@@ -33,7 +19,7 @@ wsatConfig [Options]
   
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\wsatConfig.exe  
   
- If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Commerce Server 2007 (KB912817)](http://go.microsoft.com/fwlink/?LinkId=95340) and [Availability of Windows XP COM+ Hotfix Rollup Package 13](http://go.microsoft.com/fwlink/?LinkId=95341).  
+ If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Commerce Server 2007 (KB912817)](https://go.microsoft.com/fwlink/?LinkId=95340) and [Availability of Windows XP COM+ Hotfix Rollup Package 13](https://go.microsoft.com/fwlink/?LinkId=95341).  
   
  The following table shows the options that can be used with WS-AtomicTransaction Configuration Utility (wsatConfig.exe).  
   
@@ -57,6 +43,6 @@ wsatConfig [Options]
 |-show|Displays the current WS-AtomicTransaction protocol settings.|  
 |-virtualServer:\<virtualServer>|Specifies the DTC resource cluster name.|  
   
-## See Also  
- [Using WS-AtomicTransaction](../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)  
- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
+## See also
+- [Using WS-AtomicTransaction](../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)
+- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)

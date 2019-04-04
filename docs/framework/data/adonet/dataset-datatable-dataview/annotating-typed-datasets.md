@@ -1,24 +1,10 @@
 ---
 title: "Annotating Typed DataSets"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Annotating Typed DataSets
 Annotations enable you to modify the names of the elements in your typed <xref:System.Data.DataSet> without modifying the underlying schema. Modifying the names of the elements in your underlying schema would cause the typed **DataSet** to refer to objects that do not exist in the data source, as well as lose a reference to the objects that do exist in the data source.  
@@ -82,7 +68,7 @@ Annotations enable you to modify the names of the elements in your typed <xref:S
 |**Parent** Accessor|TableNameRow|typedParent|  
 |**DataSet** Events|TableNameRowChangeEvent<br /><br /> TableNameRowChangeEventHandler|typedName|  
   
- To use typed **DataSet** annotations, you must include the following **xmlns** reference in your XML Schema definition language (XSD) schema. (To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](http://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
+ To use typed **DataSet** annotations, you must include the following **xmlns** reference in your XML Schema definition language (XSD) schema. To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
 ```  
 xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  
@@ -167,7 +153,7 @@ AddHandler customers.Customers.CustomerChanged, &
   
 ' Add a strongly typed DataRow.  
 Dim newCustomer As CustomerDataSet.Customer = _  
-    customers.Customers.NewCustomeromer()  
+    customers.Customers.NewCustomer()  
 newCustomer.CustomerID = "NEW01"  
 newCustomer.CompanyName = "My New Company"  
 customers.Customers.AddCustomer(newCustomer)  
@@ -211,7 +197,7 @@ customers.Customers.CustomerChanged += new
   
 // Add a strongly typed DataRow.  
 CustomerDataSet.Customer newCustomer =   
-    customers.Customers.NewCustomeromer();  
+    customers.Customers.NewCustomer();  
 newCustomer.CustomerID = "NEW01";  
 newCustomer.CompanyName = "My New Company";  
 customers.Customers.AddCustomer(newCustomer);  
@@ -230,9 +216,9 @@ protected static void OnCustomerChanged(object sender, CustomerDataSet.CustomerC
     }  
 ```  
   
-## See Also  
- <xref:System.Data.DataColumnCollection>  
- <xref:System.Data.DataSet>  
- [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataColumnCollection>
+- <xref:System.Data.DataSet>
+- [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)
+- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

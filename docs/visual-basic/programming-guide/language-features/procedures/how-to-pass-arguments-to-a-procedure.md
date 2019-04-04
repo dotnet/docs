@@ -1,13 +1,6 @@
 ---
 title: "How to: Pass Arguments to a Procedure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing to procedures"
   - "procedures [Visual Basic], arguments"
@@ -18,9 +11,6 @@ helpviewer_keywords:
   - "procedures [Visual Basic], calling"
   - "argument passing [Visual Basic], procedures"
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Pass Arguments to a Procedure (Visual Basic)
 When you call a procedure, you follow the procedure name with an argument list in parentheses. You supply an argument corresponding to every required parameter the procedure defines, and you can optionally supply arguments to the `Optional` parameters. If you do not supply an `Optional` parameter in the call, you must include a comma to mark its place in the argument list if you are supplying any subsequent arguments.  
@@ -41,22 +31,23 @@ When you call a procedure, you follow the procedure name with an argument list i
   
 5.  If you omit an argument for an `Optional` parameter and there is another parameter after it in the parameter list, you can mark the place of the omitted argument by an extra comma in the argument list.  
   
-     The following example calls the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> function.  
+     The following example calls the Visual Basic <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> function.  
   
-     [!code-vb[VbVbcnProcedures#34](./codesnippet/VisualBasic/how-to-pass-arguments-to-a-procedure_1.vb)]  
+     [!code-vb[VbVbcnProcedures#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#34)]  
   
      The preceding example supplies the required first argument, which is the message string to be displayed. It omits an argument for the optional second parameter, which specifies the buttons to be displayed on the message box. Because the call does not supply a value, `MsgBox` uses the default value, `MsgBoxStyle.OKOnly`, which displays only an **OK** button.  
   
      The second comma in the argument list marks the place of the omitted second argument, and the last string is passed to the optional third parameter of `MsgBox`, which is the text to be displayed in the title bar.  
   
-## See Also  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)  
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
- [Recursive Procedures](./recursive-procedures.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+## See also
+
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)
+- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
+- [Recursive Procedures](./recursive-procedures.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)

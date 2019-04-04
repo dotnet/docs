@@ -1,21 +1,7 @@
 ---
 title: "LIMIT (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c22ffede-0a52-44d1-99b9-4a91e651e1b9
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # LIMIT (Entity SQL)
 Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. LIMIT can not be used separately from ORDER BY clause.  
@@ -44,8 +30,8 @@ Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. L
   
  [!code-csharp[DP EntityServices Concepts 2#LIMIT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#limit)]  
   
-## See Also  
- [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)  
- [How to: Page Through Query Results](http://msdn.microsoft.com/library/ffc0f920-e7de-42e0-9b12-ef356421d030)  
- [Paging](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)  
- [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)
+## See also
+- [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)
+- [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [Paging](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)
+- [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)

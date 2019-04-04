@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::UnloadDomain Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.UnloadDomain"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dd9e9204-a80d-44f3-8192-779224b35056
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorRuntimeHost::UnloadDomain Method
 Unloads the specified application domain from the current process.  
@@ -41,7 +29,7 @@ HRESULT UnloadDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the domain to be unloaded.  
   
@@ -63,7 +51,7 @@ HRESULT UnloadDomain (
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

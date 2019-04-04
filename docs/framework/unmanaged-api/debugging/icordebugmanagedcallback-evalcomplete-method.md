@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugManagedCallback::EvalComplete Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugManagedCallback.EvalComplete"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f74ab4eb-cd1b-407c-a66d-8ec0d85647f3
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugManagedCallback::EvalComplete Method
 Notifies the debugger that an evaluation has been completed.  
@@ -43,7 +31,7 @@ HRESULT EvalComplete (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain in which the evaluation was performed.  
   
@@ -62,5 +50,5 @@ HRESULT EvalComplete (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## See also
+- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

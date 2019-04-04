@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::RuntimeSuspendStarted Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.RuntimeSuspendStarted"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c8461cac-e31b-4efa-ad2c-26598173eb96
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::RuntimeSuspendStarted Method
 Notifies the profiler that the runtime is about to suspend all runtime threads.  
@@ -40,7 +28,7 @@ HRESULT RuntimeSuspendStarted(
     [in] COR_PRF_SUSPEND_REASON suspendReason);  
 ```  
   
-#### Parameters  
+## Parameters  
  `suspendReason`  
  [in] A value of the [COR_PRF_SUSPEND_REASON](../../../../docs/framework/unmanaged-api/profiling/cor-prf-suspend-reason-enumeration.md) enumeration that indicates the reason for the suspension.  
   
@@ -56,7 +44,7 @@ HRESULT RuntimeSuspendStarted(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [RuntimeSuspendAborted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendaborted-method.md)  
- [RuntimeSuspendFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendfinished-method.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [RuntimeSuspendAborted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendaborted-method.md)
+- [RuntimeSuspendFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendfinished-method.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "components [.NET Framework], manifest"
   - "application manifests [.NET Framework]"
@@ -16,12 +8,8 @@ helpviewer_keywords:
   - "registration-free COM interop, configuring .NET-based components"
   - "activation, registration-free"
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Configure .NET Framework-Based COM Components for Registration-Free Activation
 Registration-free activation for .NET Framework-based components is only slightly more complicated than it is for COM components. The setup requires two manifests:  
@@ -43,7 +31,7 @@ Registration-free activation for .NET Framework-based components is only slightl
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
     ```  
   
-     For information about manifest elements and their attributes, see [Application Manifests](https://msdn.microsoft.com/library/windows/desktop/aa374191.aspx).  
+     For information about manifest elements and their attributes, see [Application Manifests](/windows/desktop/SbsCs/application-manifests).  
   
 3.  Identify the owner of the manifest. In the following example, `myComApp` version 1 owns the manifest file.  
   
@@ -83,7 +71,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 5.  Save and name the manifest file. The name of an application manifest is the name of the assembly executable followed by the .manifest extension. For example, the application manifest file name for myComApp.exe is myComApp.exe.manifest.  
   
- You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](https://msdn.microsoft.com/library/windows/desktop/ff951640.aspx).  
+ You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
   
 #### To create a component manifest  
   
@@ -130,7 +118,7 @@ Registration-free activation for .NET Framework-based components is only slightl
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
            <assemblyIdentity  
                         name="myOrganization.myDivision.myManagedComp"  
-                        version="1.2.3.4" />  
+                        version="1.2.3.4"   
                         publicKeyToken="8275b28176rcbbef"  
            />  
            <clrClass  
@@ -178,8 +166,8 @@ Registration-free activation for .NET Framework-based components is only slightl
   
      Again, `myresource.res` is the name of the resource file containing embedded resource.  
   
-## See Also  
- [Registration-Free COM Interop](../../../docs/framework/interop/registration-free-com-interop.md)  
- [Requirements for Registration-Free COM Interop](http://msdn.microsoft.com/library/0c43bc57-eecf-4e6c-8114-490141cce4da)  
- [Configuring COM Components for Registration-Free Activation](http://msdn.microsoft.com/library/bfe9b02f-d964-4784-960e-a1f94692fbfe)  
- [Registration-Free Activation of .NET-Based Components: A Walkthrough](http://go.microsoft.com/fwlink/?LinkId=158812)
+## See also
+- [Registration-Free COM Interop](registration-free-com-interop.md)
+- [Requirements for Registration-Free COM Interop](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
+- [Configuring COM Components for Registration-Free Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))
+- [Registration-Free Activation of .NET-Based Components: A Walkthrough](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973915(v=msdn.10))

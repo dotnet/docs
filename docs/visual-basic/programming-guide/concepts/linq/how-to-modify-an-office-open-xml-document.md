@@ -1,24 +1,12 @@
 ---
 title: "How to: Modify an Office Open XML Document (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1cefd7f5-8e39-44c4-869c-f8021538a777
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Modify an Office Open XML Document (Visual Basic)
 This topic presents an example that opens an Office Open XML document, modifies it, and saves it.  
   
- For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  
+ For more information on Office Open XML, see [Eric White's Blog](http://www.ericwhite.com).  
   
 ## Example  
  This example finds the first paragraph element in the document. It retrieves the text from the paragraph, and then deletes all text runs in the paragraph. It creates a new text run that consists of the first paragraph text that has been converted to upper case. It then serializes the changed XML into the Open XML package and closes it.  
@@ -149,5 +137,6 @@ End Module
 New first paragraph: >PARSING WORDPROCESSINGML WITH LINQ TO XML<  
 ```  
   
-## See Also  
- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

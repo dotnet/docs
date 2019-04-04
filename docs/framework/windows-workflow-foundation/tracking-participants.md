@@ -1,19 +1,7 @@
 ---
 title: "Tracking Participants"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f13e360c-eeb7-4a49-98a0-8f6a52d64f68
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tracking Participants
 Tracking participants are extensibility points that allow a workflow developer to access <xref:System.Activities.Tracking.InteropTrackingRecord.TrackingRecord%2A> objects and process them. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] includes a standard tracking participant that writes tracking records as Event Tracing for Windows (ETW) events. If that does not meet your requirements, you can also write a custom tracking participant.  
@@ -21,7 +9,7 @@ Tracking participants are extensibility points that allow a workflow developer t
 ## Tracking Participants  
  The tracking infrastructure allows the application of a filter on the outgoing tracking records such that a participant can subscribe to a subset of the records. The mechanism to apply a filter is through a tracking profile.  
   
- [!INCLUDE[wf](../../../includes/wf-md.md)] in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] provides a tracking participant that writes the tracking records to an ETW session. The participant is configured on a workflow service by adding a tracking-specific behavior in a configuration file. Enabling an ETW tracking participant allows tracking records to be viewed in the event viewer. The SDK sample for ETW-based tracking is a good way to get familiar with WF tracking using the ETW-based tracking participant.  
+ Windows Workflow Foundation (WF) in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] provides a tracking participant that writes the tracking records to an ETW session. The participant is configured on a workflow service by adding a tracking-specific behavior in a configuration file. Enabling an ETW tracking participant allows tracking records to be viewed in the event viewer. The SDK sample for ETW-based tracking is a good way to get familiar with WF tracking using the ETW-based tracking participant.  
   
 ## ETW Tracking Participant  
  [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] includes an ETW Tracking Participant that writes the tracking records to an ETW session. This is done in a very efficient manner with minimal impact to the application’s performance or to the server’s throughput. An advantage of using the standard ETW tracking participant is that the tracking records it receives can be viewed with the other application and system logs in the Windows Event Viewer.  
@@ -66,14 +54,14 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The following illustration shows the flow of tracking data through the ETW tracking participant. Once the tracking data reaches the ETW session, it can be accessed in a number of ways. One of the most useful ways to access these events is through Event Viewer, a common Windows tool used for viewing logs and traces from applications and services.  
   
- ![The flow of Tracking and ETW Tracking Provider](../../../docs/framework/windows-workflow-foundation/media/trackingdatathroughetwparticipant.gif "TrackingDatathroughETWParticipant")  
+ ![Flow of tracking data through the ETW tracking provider.](./media/tracking-participants/tracking-data-event-tracing-windows-provider.gif)  
   
 ## Tracking Participant Event Data  
- A tracking participant serializes tracked event data to an ETW session in the format of one event per tracking record.  An event is identified using an ID within the range of 100 through 199. For definitions of the tracking event records emitted by a tracking participant, see the [Tracking Events Reference](../../../docs/framework/windows-workflow-foundation/tracking-events-reference.md) topic.  
+ A tracking participant serializes tracked event data to an ETW session in the format of one event per tracking record.  An event is identified using an ID within the range of 100 through 199. For definitions of the tracking event records emitted by a tracking participant, see the [Tracking Events Reference](tracking-events-reference.md) topic.  
   
  The size of an ETW event is limited by the ETW buffer size, or the by the maximum payload for an ETW event, whichever value is smaller. If the size of the event exceeds either of these ETW limits, the event is truncated and its content removed in an arbitrary manner. Variables, arguments, annotations and custom data are not selectively removed. In the case of truncation, all of these are truncated regardless of the value that caused the event size to exceed the ETW limit.  The removed data is replaced with `<item>..<item>`.  
   
- Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the [NetDataContractSerializer Class](http://go.microsoft.com/fwlink/?LinkId=177537). This class includes CLR-type information in the serialized XML steam.  
+ Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the [NetDataContractSerializer Class](https://go.microsoft.com/fwlink/?LinkId=177537). This class includes CLR-type information in the serialized XML steam.  
   
  Truncation of payload data due to ETW limits can result in duplicate tracking records being sent to an ETW session. This can occur if more than one session is listening for the events and the sessions have different payload limits for the events.  
   
@@ -146,6 +134,6 @@ instance.Extensions.Add(new ConsoleTrackingParticipant());
             Console.ReadLine();  
 ```  
   
-## See Also  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)
+## See also
+- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
+- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

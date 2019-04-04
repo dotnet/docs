@@ -1,23 +1,10 @@
 ---
-title: "&lt;serviceCertificate&gt;"
-ms.custom: ""
+title: "<serviceCertificate>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 42c7f291-2ec3-43c5-8872-35897ff3c660
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;serviceCertificate&gt;
+# \<serviceCertificate>
 Configures the X.509 certificate that is used to encrypt and decrypt tokens.  
   
  \<system.identityModel.services>  

@@ -1,19 +1,7 @@
 ---
 title: "Advanced LINQ to XML Programming (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 36018532-a55c-4538-8a27-98f475ea3415
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Advanced LINQ to XML Programming (Visual Basic)
 This section provides information that will only be applicable to advanced developers in certain [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] scenarios.  
@@ -34,5 +22,6 @@ This section provides information that will only be applicable to advanced devel
 |[Serializing Object Graphs that Contain XElement Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)|Describes how to serialize object graphs that contain <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> objects.|  
 |[WPF Data Binding with LINQ to XML](/visualstudio/designers/wpf-data-binding-with-linq-to-xml)|Describes how to use LINQ to XML as the data source for data binding in Windows Presentation Foundation applications.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

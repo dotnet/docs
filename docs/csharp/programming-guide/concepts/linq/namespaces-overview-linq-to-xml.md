@@ -1,17 +1,7 @@
 ---
 title: "Namespaces Overview (LINQ to XML)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 16283322-8238-4918-ab11-802ac6748eb7
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Namespaces Overview (LINQ to XML)
 This topic introduces namespaces, the <xref:System.Xml.Linq.XName> class, and the <xref:System.Xml.Linq.XNamespace> class.  
@@ -27,5 +17,6 @@ This topic introduces namespaces, the <xref:System.Xml.Linq.XName> class, and th
   
  For more information, see <xref:System.Xml.Linq.XNamespace> and <xref:System.Xml.Linq.XName>.  
   
-## See Also  
- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## See also
+
+- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

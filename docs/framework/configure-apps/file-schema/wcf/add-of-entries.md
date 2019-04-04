@@ -1,36 +1,33 @@
 ---
-title: "&lt;add&gt; of &lt;entries&gt;"
-ms.custom: ""
+title: "<add> of <entries>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;add&gt; of &lt;entries&gt;
+# \<add> of \<entries>
 Represents a routing entry that maps a filter to a client endpoint that was previously defined. Messages matching this filter will be sent to this destination.  
   
  \<system.serviceModel>  
 \<routing>  
-\<routingTables>  
-\<table>  
+\<filterTables>  
+\<filterTable>  
 \<entries>  
 \<add>  
   
 ## Syntax  
   
-```xml
-   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
+```xml  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
+      </entries>
+    </filterTable>
+  </filterTables>
+</routing>
 ```  
   
 ```csharp  
@@ -57,6 +54,6 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 |-------------|-----------------|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing mapping entries.|  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>      
- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType> 
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

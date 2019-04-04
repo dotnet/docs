@@ -1,28 +1,14 @@
 ---
 title: "DeliveryRequirementsAttribute"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 40c5435c-a325-4cf8-9dd0-d6e24b4a56a3
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # DeliveryRequirementsAttribute
 DeliveryRequirementsAttribute  
   
 ## Syntax  
   
-```  
+```csharp
 class DeliveryRequirementsAttribute : Behavior  
 {  
   string QueuedDeliveryRequirements;  
@@ -64,5 +50,5 @@ class DeliveryRequirementsAttribute : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.DeliveryRequirementsAttribute>
+## See also
+- <xref:System.ServiceModel.DeliveryRequirementsAttribute>

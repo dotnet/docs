@@ -1,14 +1,6 @@
 ---
 title: "ICorDebug::SetManagedHandler Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebug.SetManagedHandler"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebug::SetManagedHandler Method
 Specifies the event handler object for managed events.  
@@ -41,7 +29,7 @@ HRESULT SetManagedHandler (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallback`  
  [in] A pointer to an [ICorDebugManagedCallback](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md) object, which is the event handler object.  
   
@@ -59,5 +47,5 @@ HRESULT SetManagedHandler (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

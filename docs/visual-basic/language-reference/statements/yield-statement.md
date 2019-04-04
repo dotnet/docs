@@ -1,12 +1,6 @@
 ---
 title: "Yield Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Yield"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "iterators [Visual Basic]"
   - "Yield statement [Visual Basic]"
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Yield Statement (Visual Basic)
 Sends the next element of a collection to a `For Each...Next` statement.  
@@ -27,7 +18,7 @@ Sends the next element of a collection to a `For Each...Next` statement.
 Yield expression  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Term|Definition|  
 |---|---|  
@@ -87,14 +78,15 @@ Next
   
  The return type of the iterator method is <xref:System.Collections.Generic.IEnumerable%601>, an iterator interface type. When the iterator method is called, it returns an enumerable object that contains the powers of a number.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
  The following example demonstrates a `Get` accessor that is an iterator. The property declaration includes an `Iterator` modifier.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
  For additional examples, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
-## See Also  
- [Statements](../../../visual-basic/language-reference/statements/index.md)
+## See also
+
+- [Statements](../../../visual-basic/language-reference/statements/index.md)

@@ -1,21 +1,10 @@
 ---
-title: "&lt;workflowInstanceQueries&gt;"
-ms.custom: ""
+title: "<workflowInstanceQueries>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 4fe7ce85-cf9a-4dbf-a8f7-bc9b1fc2fe35
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;workflowInstanceQueries&gt;
+# \<workflowInstanceQueries>
 Represents a collection of configuration elements that track workflow instance life cycle changes such as a started or completed event.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
@@ -88,8 +77,8 @@ Represents a collection of configuration elements that track workflow instance l
 </workflowInstanceQueries>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>       
- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

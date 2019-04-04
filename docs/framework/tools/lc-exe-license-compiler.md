@@ -1,14 +1,6 @@
 ---
 title: "Lc.exe (License Compiler)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Lc.exe"
   - ".licx file"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "Windows Forms, control licenses"
   - "licensed controls [Windows Forms]"
 ms.assetid: 2de803b8-495e-4982-b209-19a72aba0460
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Lc.exe (License Compiler)
 The License Compiler reads text files that contain licensing information and produces a binary file that can be embedded in a common language runtime executable as a resource.  
@@ -34,7 +20,7 @@ The License Compiler reads text files that contain licensing information and pro
   
  Cross compilation between 32-bit and 64-bit is not supported when you use the License Compiler when building your project. This is because the License Compiler has to load assemblies, and loading 64-bit assemblies from a 32-bit application is not allowed, and vice versa. In this case, use the License Compiler from the command line to compile the license manually, and specify the corresponding architecture.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -100,7 +86,7 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 lc @response.rsp  
 ```  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

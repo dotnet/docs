@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit::SetRVA Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit.SetRVA"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4d69fb6d-ee35-4318-8224-5eea2bd16818
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit::SetRVA Method
 Sets the relative virtual address of the specified method.  
@@ -42,7 +30,7 @@ HRESULT SetRVA (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `md`  
  [in] The token for the target method or method implementation.  
   
@@ -58,6 +46,6 @@ HRESULT SetRVA (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

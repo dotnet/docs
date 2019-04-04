@@ -1,16 +1,10 @@
 ---
-title: "How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)"
+title: "How to: Publish Events that Conform to .NET Framework Guidelines - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "events [C#], implementation guidelines"
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
-caps.latest.revision: 31
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)
 The following procedure demonstrates how to add events that follow the standard [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] pattern to your classes and structs. All events in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:  
@@ -72,10 +66,11 @@ public delegate void EventHandler(object sender, EventArgs e);
 ## Example  
  The following example demonstrates the previous steps by using a custom EventArgs class and <xref:System.EventHandler%601> as the event type.  
   
- [!code-csharp[csProgGuideEvents#2](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-publish-events-that-conform-to-net-framework-guidelines_1.cs)]  
+ [!code-csharp[csProgGuideEvents#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#2)]  
   
-## See Also  
- <xref:System.Delegate>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+## See also
+
+- <xref:System.Delegate>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)

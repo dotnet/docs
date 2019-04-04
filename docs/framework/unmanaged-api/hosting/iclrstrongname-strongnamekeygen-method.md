@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::StrongNameKeyGen Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.StrongNameKeyGen"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ac5c1245-9acf-4271-9c08-3d9b7c670df3
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::StrongNameKeyGen Method
 Creates a new public/private key pair for strong name use.  
@@ -44,7 +32,7 @@ HRESULT StrongNameKeyGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must either be a non-empty string or null to generate a temporary name.  
   
@@ -62,7 +50,7 @@ HRESULT StrongNameKeyGen (
  [out] The size, in bytes, of `ppbKeyBlob`.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Remarks  
  The [ICLRStrongName::StrongNameKeyGen](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md) method creates a 1024-bit key. After the key is retrieved, you should call the [ICLRStrongName::StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) method to release the allocated memory.  
@@ -76,6 +64,6 @@ HRESULT StrongNameKeyGen (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [StrongNameKeyGenEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygenex-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [StrongNameKeyGenEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygenex-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

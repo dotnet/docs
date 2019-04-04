@@ -1,14 +1,6 @@
 ---
-title: "&lt;disableCommitThreadStack&gt; Element"
-ms.custom: ""
+title: "<disableCommitThreadStack> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCommitThreadStack"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCommitThreadStack"
@@ -16,14 +8,10 @@ helpviewer_keywords:
   - "<disableCommitThreadStack> element"
   - "disableCommitThreadStack element"
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;disableCommitThreadStack&gt; Element
+# \<disableCommitThreadStack> Element
 Specifies whether the full thread stack is committed when a thread is started.  
   
  \<configuration>  
@@ -79,6 +67,6 @@ Specifies whether the full thread stack is committed when a thread is started.
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

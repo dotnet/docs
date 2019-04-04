@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo3::RequestProfilerDetach Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo3.RequestProfilerDetach Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ea102e62-0454-4477-bcf3-126773acd184
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo3::RequestProfilerDetach Method
 Instructs the runtime to detach the profiler.  
@@ -40,7 +28,7 @@ HRESULT RequestProfilerDetach(
    [in] DWORD    dwExpectedCompletionMilliseconds);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwExpectedCompletionMilliseconds`  
  [in] The length of time, in milliseconds, the common language runtime (CLR) should wait before checking to see whether it is safe to unload the profiler.  
   
@@ -50,7 +38,7 @@ HRESULT RequestProfilerDetach(
 |HRESULT|Description|  
 |-------------|-----------------|  
 |S_OK|The detach request is valid, and the detach procedure is now continuing on another thread. When the detach is fully complete, a `ProfilerDetachSucceeded` event is issued.|  
-|E_ CORPROF_E_CALLBACK3_REQUIRED|The profiler failed an [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) attempt for the [ICorProfilerCallback3](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-interface.md) interface, which it must implement to support the detach operation. Detach was not attempted.|  
+|E_ CORPROF_E_CALLBACK3_REQUIRED|The profiler failed an [IUnknown::QueryInterface](https://go.microsoft.com/fwlink/?LinkID=144867) attempt for the [ICorProfilerCallback3](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-interface.md) interface, which it must implement to support the detach operation. Detach was not attempted.|  
 |CORPROF_E_IMMUTABLE_FLAGS_SET|Detachment is impossible because the profiler set immutable flags at startup. Detachment was not attempted; the profiler is still fully attached.|  
 |CORPROF_E_IRREVERSIBLE_INSTRUMENTATION_PRESENT|Detachment is impossible because the profiler used instrumented Microsoft intermediate language (MSIL) code, or inserted `enter`/`leave` hooks. Detachment was not attempted; the profiler is still fully attached.<br /><br /> **Note** Instrumented MSIL is code is code that is provided by the profiler using the [SetILFunctionBody](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setilfunctionbody-method.md) method.|  
 |CORPROF_E_RUNTIME_UNINITIALIZED|The runtime has not been initialized yet in the managed application. (That is, the runtime has not been fully loaded.) This error code may be returned when detachment is requested inside the profiler callback's [ICorProfilerCallback::Initialize](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md) method.|  
@@ -72,7 +60,7 @@ HRESULT RequestProfilerDetach(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+- [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

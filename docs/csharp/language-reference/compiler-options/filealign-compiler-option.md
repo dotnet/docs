@@ -1,10 +1,6 @@
 ---
 title: "-filealign (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/filealign"
 helpviewer_keywords: 
@@ -20,9 +16,6 @@ helpviewer_keywords:
   - "-alignment compiler option [C#]"
   - "section alignment [C#]"
 ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -filealign (C# Compiler Options)
 The **-filealign** option lets you specify the size of sections in your output file.  
@@ -56,6 +49,7 @@ The **-filealign** option lets you specify the size of sections in your output f
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.FileAlignment%2A>.  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

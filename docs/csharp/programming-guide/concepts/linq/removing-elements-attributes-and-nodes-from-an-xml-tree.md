@@ -1,14 +1,7 @@
 ---
 title: "Removing Elements, Attributes, and Nodes from an XML Tree (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 07dd06d6-1117-4077-bf98-9120cf51176e
-caps.latest.revision: 4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Removing Elements, Attributes, and Nodes from an XML Tree (C#)
 You can modify an XML tree, removing elements, attributes, and other types of nodes.  
@@ -79,5 +72,6 @@ Console.WriteLine(root);
   
  Notice that the first grandchild element has been removed from `Child1`. All grandchildren elements have been removed from `Child2` and from `Child3`.  
   
-## See Also  
- [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+## See also
+
+- [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

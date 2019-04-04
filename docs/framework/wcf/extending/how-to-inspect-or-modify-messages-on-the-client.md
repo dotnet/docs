@@ -1,24 +1,10 @@
 ---
 title: "How to: Inspect or Modify Messages on the Client"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b8256335-f1c2-419f-b862-9f220ccad84c
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Inspect or Modify Messages on the Client
-You can inspect or modify the incoming or outgoing messages across a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client by implementing a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> and inserting it into the client runtime. For more information, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>. For a complete code example see the [Message Inspectors](../../../../docs/framework/wcf/samples/message-inspectors.md) sample.  
+You can inspect or modify the incoming or outgoing messages across a WCF client by implementing a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> and inserting it into the client runtime. For more information, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>. For a complete code example see the [Message Inspectors](../../../../docs/framework/wcf/samples/message-inspectors.md) sample.  
   
 ### To inspect or modify messages  
   
@@ -110,7 +96,8 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
     <system.serviceModel>  
         <client>  
             <endpoint address="http://localhost:8080/SimpleService/"   
-                      binding="wsHttpBinding"  
+                      binding="wsHttpBinding"
+                      behaviorConfiguration="clientInspectorsAdded"
                       contract="ServiceReference1.IService1"  
                       name="WSHttpBinding_IService1"/>  
         </client>  
@@ -133,7 +120,7 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>  
- [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)
+## See also
+- <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>
+- [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

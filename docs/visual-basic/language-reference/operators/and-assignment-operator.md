@@ -1,12 +1,6 @@
 ---
 title: "&amp;= Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.&="
 helpviewer_keywords: 
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "&= operator [Visual Basic]"
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 0cf262fc-1a05-419a-a503-60013f111c8a
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # &amp;= Operator (Visual Basic)
 Concatenates a `String` expression to a `String` variable or property and assigns the result to the variable or property.  
@@ -45,13 +36,14 @@ variableorproperty &= expression
 ## Example  
  The following example uses the `&=` operator to concatenate two `String` variables and assign the result to the first variable.  
   
- [!code-vb[VbVbalrOperators#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#3)]  
   
-## See Also  
- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+
+- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)
+- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

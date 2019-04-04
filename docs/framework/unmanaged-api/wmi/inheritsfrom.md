@@ -2,10 +2,6 @@
 title: InheritsFrom function (Unmanaged API Reference)
 description: The InheritsFrom function determines whether a class or instance derives from a particular parent class.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "InheritsFrom"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # InheritsFrom function
 Determines whether the current class or instance derives from a specified parent class.
@@ -45,7 +38,7 @@ HRESULT InheritsFrom (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszAncestor`  
 [in] The name of the class. `wszAncestor` must point to a valid `LPCWSTR`.
@@ -62,7 +55,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::InheritsFrom](https://msdn.microsoft.com/library/aa391452(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::InheritsFrom](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-inheritsfrom) method.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -71,5 +64,5 @@ This function wraps a call to the [IWbemClassObject::InheritsFrom](https://msdn.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

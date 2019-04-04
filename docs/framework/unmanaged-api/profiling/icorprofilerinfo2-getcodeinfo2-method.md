@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::GetCodeInfo2 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.GetCodeInfo2"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 532da6ee-7f0a-401b-a61e-fc47ec235d2e
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::GetCodeInfo2 Method
 Gets the extents of native code associated with the specified `FunctionID`.  
@@ -44,7 +32,7 @@ HRESULT GetCodeInfo2(
     COR_PRF_CODE_INFO codeInfos[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionID`  
  [in] The ID of the function with which the native code is associated.  
   
@@ -73,8 +61,8 @@ HRESULT GetCodeInfo2(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetCodeInfo3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md)  
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+- [GetCodeInfo3 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getcodeinfo3-method.md)
+- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

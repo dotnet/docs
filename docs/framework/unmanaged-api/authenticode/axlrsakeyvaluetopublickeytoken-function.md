@@ -1,14 +1,6 @@
 ---
-title: "_AxlRSAKeyValueToPublicKeyToken Function"
-ms.custom: ""
+title: "_AxlRSAKeyValueToPublicKeyToken function"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "_AxlRSAKeyValueToPublicKeyToken"
 api_location: 
@@ -16,14 +8,11 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# _AxlRSAKeyValueToPublicKeyToken Function
+# \_AxlRSAKeyValueToPublicKeyToken function
+
 Converts a Modulus and Exponent to a strong name public key token.  
   
 ## Syntax  
@@ -36,12 +25,12 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pModulusBlob`  
- [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) structure.  
+ [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   
  `pExponentBlob`  
- [in] The base64-encoded Exponent blob (from the \<Exponent> element). See the [CRYPTOAPI_BLOB](http://msdn.microsoft.com/library/windows/desktop/aa380238.aspx) structure.  
+ [in] The base64-encoded Exponent blob (from the \<Exponent> element). See the [CRYPTOAPI_BLOB](/windows/desktop/api/dpapi/ns-dpapi-_cryptoapi_blob) structure.  
   
  `ppwszPublicKeyToken`  
  [out] A pointer to WCHAR * to receive the hex-encoded public key token.  
@@ -49,5 +38,5 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 ## Return Value  
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## See also
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

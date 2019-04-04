@@ -1,14 +1,6 @@
 ---
 title: "ICorPublish::EnumProcesses Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorPublish.EnumProcesses"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorPublish::EnumProcesses Method
 Gets an enumerator for the managed processes running on this computer.  
@@ -42,7 +30,7 @@ HRESULT EnumProcesses (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Type`  
  A value of the [COR_PUB_ENUMPROCESS](../../../../docs/framework/unmanaged-api/debugging/cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved. In the current version, only COR_PUB_MANAGEDONLY is valid.  
   
@@ -63,5 +51,5 @@ HRESULT EnumProcesses (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublish Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublish-interface.md)
+## See also
+- [ICorPublish Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublish-interface.md)

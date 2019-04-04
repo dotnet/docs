@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetModuleInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetModuleInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5a90d16f-7929-4987-8f83-a631becf564d
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetModuleInfo Method
 Given a module ID, returns the file name of the module and the ID of the module's parent assembly.  
@@ -46,7 +34,7 @@ HRESULT GetModuleInfo(
     [out] AssemblyID *pAssemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module for which information will be retrieved.  
   
@@ -83,8 +71,8 @@ HRESULT GetModuleInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)  
- [GetModuleInfo2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getmoduleinfo2-method.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+- [GetModuleInfo2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getmoduleinfo2-method.md)

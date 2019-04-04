@@ -1,14 +1,6 @@
 ---
 title: "IGCHost::Collect Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IGCHost.Collect"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fc7d9448-3186-494d-9f0d-ea39717e9a82
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IGCHost::Collect Method
 Forces a collection to occur for the given generation, regardless of the state of the current garbage collection.  
@@ -41,7 +29,7 @@ HRESULT Collect (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation on which to perform the garbage collection. A value of -1 indicates that all generations will undergo a garbage collection.  
   
@@ -54,5 +42,5 @@ HRESULT Collect (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+## See also
+- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

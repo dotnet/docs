@@ -1,19 +1,7 @@
 ---
 title: "Style Part of a WordprocessingML Document1"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 5458bccf-3898-4661-904b-7d280c9239a9
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Style Part of a WordprocessingML Document
 This topic shows an example of the style part of the Office Open XML WordprocessingML document.  
@@ -23,7 +11,7 @@ This topic shows an example of the style part of the Office Open XML Wordprocess
   
  The default paragraph style has an element with the following opening tag:  
   
-```  
+```xml
 <w:style w:type="paragraph" w:default="1" w:styleId="Normal">  
 ```  
   
@@ -146,5 +134,6 @@ This topic shows an example of the style part of the Office Open XML Wordprocess
 </w:styles>  
 ```  
   
-## See Also  
- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+## See also
+
+- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

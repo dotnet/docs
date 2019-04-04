@@ -1,11 +1,6 @@
 ---
-title: "Module &lt;keyword&gt; (Visual Basic)"
+title: "Module <keyword> (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ModuleAttribute"
 helpviewer_keywords: 
@@ -13,11 +8,8 @@ helpviewer_keywords:
   - "Module modifier"
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# Module &lt;keyword&gt; (Visual Basic)
+# Module \<keyword> (Visual Basic)
 Specifies that an attribute at the beginning of a source file applies to the current assembly module.  
   
 ## Remarks  
@@ -27,8 +19,8 @@ Specifies that an attribute at the beginning of a source file applies to the cur
   
  The `Module` modifier is not the same as the [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md).  
   
-## See Also  
- [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)  
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+## See also
 
+- [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)

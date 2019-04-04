@@ -1,14 +1,6 @@
 ---
 title: "How to: Define an Icon for a ToolBar Button"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,18 +13,12 @@ helpviewer_keywords:
   - "icons [Windows Forms], toolbar buttons"
   - "ToolBar control [Windows Forms], adding icons to buttons"
 ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Define an Icon for a ToolBar Button
 > [!NOTE]
 >  The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
- <xref:System.Windows.Forms.ToolBar> buttons are able to display icons within them for easy identification by users. This is achieved through adding images to the [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md) component and then associating the <xref:System.Windows.Forms.ImageList> component with the <xref:System.Windows.Forms.ToolBar> control.  
+ <xref:System.Windows.Forms.ToolBar> buttons are able to display icons within them for easy identification by users. This is achieved through adding images to the [ImageList Component](imagelist-component-windows-forms.md) component and then associating the <xref:System.Windows.Forms.ImageList> component with the <xref:System.Windows.Forms.ToolBar> control.  
   
 ### To set an icon for a toolbar button programmatically  
   
@@ -123,8 +109,8 @@ ms.workload:
        }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolBar>  
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ToolBar>
+- [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)
+- [ToolBar Control](toolbar-control-windows-forms.md)
+- [ImageList Component](imagelist-component-windows-forms.md)

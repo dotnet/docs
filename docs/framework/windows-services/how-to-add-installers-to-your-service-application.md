@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Installers to Your Service Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, deploying"
   - "installation components, adding to services"
@@ -18,12 +10,7 @@ helpviewer_keywords:
   - "ServiceInstaller class, adding installers to services"
   - "ServiceProcessInstaller class, adding installers to services"
 ms.assetid: 8b698e9a-b88e-4f44-ae45-e0c5ea0ae5a8
-caps.latest.revision: 14
 author: "ghogen"
-ms.author: "ghogen"
-manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Add Installers to Your Service Application
 Visual Studio ships installation components that can install resources associated with your service applications. Installation components register an individual service on the system to which it is being installed and let the Services Control Manager know that the service exists. When you work with a service application, you can select a link in the Properties window to automatically add the appropriate installers to your project.  
@@ -36,7 +23,7 @@ Visual Studio ships installation components that can install resources associate
  You do not need to do any special coding within the installers to make your services install correctly. However, you may occasionally need to modify the contents of the installers if you need to add special functionality to the installation process.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To add installers to your service application  
   
@@ -67,8 +54,8 @@ Visual Studio ships installation components that can install resources associate
     > [!NOTE]
     >  For each additional service in your project, you must add an additional <xref:System.ServiceProcess.ServiceInstaller> component to the project's `ProjectInstaller` class. The <xref:System.ServiceProcess.ServiceProcessInstaller> component added in step three works with all of the individual service installers in the project.  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)  
- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)  
- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)
+## See also
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
+- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)

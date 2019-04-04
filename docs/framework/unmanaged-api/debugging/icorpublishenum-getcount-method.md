@@ -1,14 +1,6 @@
 ---
 title: "ICorPublishEnum::GetCount Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorPublishEnum.GetCount"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d228f684-2be3-4029-93ae-31fe02213c1f
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorPublishEnum::GetCount Method
 Gets the number of items in the enumeration.  
@@ -41,7 +29,7 @@ HRESULT GetCount (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcelt`  
  [out] A pointer to the number of items in the enumeration.  
   
@@ -54,5 +42,5 @@ HRESULT GetCount (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+## See also
+- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)

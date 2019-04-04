@@ -1,14 +1,6 @@
 ---
 title: "GetHashFromAssemblyFile Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetHashFromAssemblyFile"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 751ed69f-b7ab-4e07-80de-e17ca9319b0c
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetHashFromAssemblyFile Function
 Gets a hash of the specified assembly file, using the specified hash algorithm.  
@@ -46,7 +34,7 @@ HRESULT GetHashFromAssemblyFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFilePath`  
  [in] The path to the file to be hashed.  
   
@@ -71,7 +59,7 @@ HRESULT GetHashFromAssemblyFile (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [GetHashFromAssemblyFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfile-method.md)  
- [GetHashFromAssemblyFileW Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfilew-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [GetHashFromAssemblyFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfile-method.md)
+- [GetHashFromAssemblyFileW Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfilew-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

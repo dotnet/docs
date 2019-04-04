@@ -1,14 +1,6 @@
 ---
 title: "Object Variable Declaration (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "early binding [Visual Basic]"
   - "declarations [Visual Basic], class"
@@ -20,9 +12,6 @@ helpviewer_keywords:
   - "declaring classes [Visual Basic]"
   - "late binding [Visual Basic]"
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
-caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Variable Declaration (Visual Basic)
 You use a normal declaration statement to declare an object variable. For the data type, you specify either `Object` (that is, the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)) or a more specific class from which the object is to be created.  
@@ -130,12 +119,13 @@ Dim anyForm As System.Windows.Forms.Form
   
  All the members of a base class are available to derived classes, but the additional members of a derived class are unavailable to the base class.  
   
-## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)  
- [How to: Access Members of an Object](../../../../visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
+- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
+- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
+- [How to: Access Members of an Object](../../../../visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugVariableHome Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVariableHome Interface
 Represents a local variable or argument of a function.  
@@ -97,6 +85,6 @@ for (int i = 0; i < celtFetched; i++)
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [ICorDebugVariableHomeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugVariableHomeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)

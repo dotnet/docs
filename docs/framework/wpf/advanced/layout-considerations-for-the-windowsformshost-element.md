@@ -1,14 +1,6 @@
 ---
 title: "Layout Considerations for the WindowsFormsHost Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
   - "Windows Forms [WPF], WPF interoperation"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "dynamic layout [WPF interoperability]"
   - "device-independent pixels"
 ms.assetid: 3c574597-bbde-440f-95cc-01371f1a5d9d
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Layout Considerations for the WindowsFormsHost Element
 This topic describes how the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element interacts with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout system.  
@@ -38,9 +24,9 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
   
 |Layout feature|Description|  
 |--------------------|-----------------|  
-|Autosizing|Some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls resize themselves to display their contents properly. For more information, see [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md).|  
+|Autosizing|Some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls resize themselves to display their contents properly. For more information, see [AutoSize Property Overview](../../winforms/controls/autosize-property-overview.md).|  
 |Anchoring and docking|[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls support positioning and sizing based on the parent container. For more information, see <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>.|  
-|Autoscaling|Container controls resize themselves and their children based on the resolution of the output device or the size, in pixels, of the default container font. For more information, see [Automatic Scaling in Windows Forms](../../../../docs/framework/winforms/automatic-scaling-in-windows-forms.md).|  
+|Autoscaling|Container controls resize themselves and their children based on the resolution of the output device or the size, in pixels, of the default container font. For more information, see [Automatic Scaling in Windows Forms](../../winforms/automatic-scaling-in-windows-forms.md).|  
 |Layout containers|The <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel> controls arrange their child controls and size themselves according to their contents.|  
   
 ## Layout Limitations  
@@ -71,7 +57,7 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
   
  All other cases require coordinate system scaling. The hosted control is not resized. Instead, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element attempts to scale the hosted control and all of its child controls. Because [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] does not fully support scaling, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element scales to the degree supported by particular controls.  
   
- Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control.  
+ Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted Windows Forms control.  
   
  In addition to scaling, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles rounding and overflow cases as described in the following table.  
   
@@ -81,7 +67,7 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 |Overflow|When the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element converts from `double` values to `int` values, overflow is possible. Values that are larger than <xref:System.Int32.MaxValue> are set to <xref:System.Int32.MaxValue>.|  
   
 ### Layout-related Properties  
- Properties that control layout behavior in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements are mapped appropriately by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ Properties that control layout behavior in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements are mapped appropriately by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Layout Changes in the Hosted Control  
  Layout changes in the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control are propagated to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to trigger layout updates. The <xref:System.Windows.UIElement.InvalidateMeasure%2A> method on <xref:System.Windows.Forms.Integration.WindowsFormsHost> ensures that layout changes in the hosted control cause the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout engine to run.  
@@ -106,10 +92,10 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
   
 -   If the <xref:System.Windows.Forms.Control.Size%2A> property returns a smaller size than the specified constraint, <xref:System.Windows.Forms.Integration.WindowsFormsHost> accepts this size value and returns the value to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout system.  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Walkthrough: Arranging Windows Forms Controls in WPF](../../../../docs/framework/wpf/advanced/walkthrough-arranging-windows-forms-controls-in-wpf.md)  
- [Arranging Windows Forms Controls in WPF Sample](http://go.microsoft.com/fwlink/?LinkID=159971)  
- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)  
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Walkthrough: Arranging Windows Forms Controls in WPF](walkthrough-arranging-windows-forms-controls-in-wpf.md)
+- [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971)
+- [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md)
+- [Migration and Interoperability](migration-and-interoperability.md)

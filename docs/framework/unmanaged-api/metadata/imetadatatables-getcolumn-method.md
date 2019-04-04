@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataTables::GetColumn Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataTables.GetColumn"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 1032055b-cabb-45c5-a50e-7e853201b175
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataTables::GetColumn Method
 Gets a pointer to the value contained in the cell of the specified column and row in the given table.  
@@ -44,7 +32,7 @@ HRESULT GetColumn (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The index of the table.  
   
@@ -66,6 +54,6 @@ HRESULT GetColumn (
   
  **.NET Framework Versions** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## See also
+- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

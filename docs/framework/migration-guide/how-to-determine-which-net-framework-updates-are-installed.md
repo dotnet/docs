@@ -2,10 +2,6 @@
 title: "How to: Determine which .NET Framework security updates and hotfixes are installed"
 description: "Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer."
 ms.date: "11/27/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,9 +11,6 @@ helpviewer_keywords:
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Determine which .NET Framework security updates and hotfixes are installed
 
@@ -109,6 +102,6 @@ KB2600217
 
 ## See also
 
-[How to: Determine which .NET Framework versions are installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)  
-[Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
-[Versions and dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+- [How to: Determine which .NET Framework versions are installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
+- [Versions and dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)

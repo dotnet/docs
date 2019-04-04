@@ -1,11 +1,6 @@
 ---
 title: "Optional (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Optional"
   - "vb.optional"
@@ -13,9 +8,6 @@ helpviewer_keywords:
   - "Optional keyword [Visual Basic], contexts"
   - "Optional keyword [Visual Basic]"
 ms.assetid: 4571ce88-a539-4115-b230-54eb277c6aa7
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Optional (Visual Basic)
 Specifies that a procedure argument can be omitted when the procedure is called.  
@@ -66,9 +58,10 @@ End Function
 ## Example  
  The following example demonstrates how to call a procedure with arguments passed by position and with arguments passed by name. The procedure has two optional parameters.  
   
- [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/VisualBasic/optional_1.vb)]  
+ [!code-vb[VbVbalrKeywords#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class8.vb#21)]  
   
-## See Also  
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

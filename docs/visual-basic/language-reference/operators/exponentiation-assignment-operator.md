@@ -1,12 +1,6 @@
 ---
 title: "^= Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.^="
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "^= operator [Visual Basic]"
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # ^= Operator (Visual Basic)
 Raises the value of a variable or property to the power of an expression and assigns the result back to the variable or property.  
@@ -50,12 +41,13 @@ variableorproperty ^= expression
 ## Example  
  The following example uses the `^=` operator to raise the value of one `Integer` variable to the power of a second variable and assign the result to the first variable.  
   
- [!code-vb[VbVbalrOperators#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#21)]  
   
-## See Also  
- [^ Operator](../../../visual-basic/language-reference/operators/exponentiation-operator.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+
+- [^ Operator](../../../visual-basic/language-reference/operators/exponentiation-operator.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

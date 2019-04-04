@@ -1,14 +1,6 @@
 ---
 title: "Tlbexp.exe (Type Library Exporter)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "exporting type library [.NET Framework]"
   - "exporter tool [.NET Framework]"
@@ -16,17 +8,13 @@ helpviewer_keywords:
   - "Type Library Exporter"
   - "type libraries [.NET Framework], exporting"
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Tlbexp.exe (Type Library Exporter)
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -36,7 +24,7 @@ The Type Library Exporter generates a type library that describes the types defi
 tlbexp assemblyName [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -96,7 +84,7 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
   
  Note that Tlbexp.exe ignores the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType> field.  
   
- Because type libraries cannot accommodate all the information found in assemblies, Tlbexp.exe might discard some data during the export process. For an explanation of the transformation process and identification of the source of each piece of information emitted to a type library, see the [Assembly to Type Library Conversion Summary](http://msdn.microsoft.com/library/3a37eefb-a76c-4000-9080-7dbbf66a4896).  
+ Because type libraries cannot accommodate all the information found in assemblies, Tlbexp.exe might discard some data during the export process. For an explanation of the transformation process and identification of the source of each piece of information emitted to a type library, see the [Assembly to Type Library Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
   
  Note that the Type Library Exporter exports methods that have <xref:System.TypedReference> parameters as `VARIANT`, even though the <xref:System.TypedReference> object has no meaning in unmanaged code. When you export methods that have <xref:System.TypedReference> parameters, the Type Library Exporter will not generate a warning or error and unmanaged code that uses the resulting type library will not run properly.  
   
@@ -135,10 +123,10 @@ CSC Sample.cs /reference:myLib.dll /out:Sample.dll
 tlbexp Sample.dll  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.TypeLibExporterFlags>  
- [Tools](../../../docs/framework/tools/index.md)  
- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)  
- [Assembly to Type Library Conversion Summary](http://msdn.microsoft.com/library/3a37eefb-a76c-4000-9080-7dbbf66a4896)  
- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- <xref:System.Runtime.InteropServices.TypeLibExporterFlags>
+- [Tools](../../../docs/framework/tools/index.md)
+- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)
+- [Assembly to Type Library Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
+- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

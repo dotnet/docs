@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::GetNameFromToken Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.GetNameFromToken"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 32114ecf-8916-4ab2-a201-179c017344f1
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::GetNameFromToken Method
 Gets the UTF-8 name of the object referenced by the specified metadata token. This method is obsolete.  
@@ -42,7 +30,7 @@ HRESULT GetNameFromToken (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token representing the object to return the name for.  
   
@@ -61,6 +49,6 @@ HRESULT GetNameFromToken (
   
  **.NET Framework Versions:** 1.0  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

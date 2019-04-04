@@ -1,14 +1,6 @@
 ---
 title: "Importing Schema to Generate Classes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,41 +8,35 @@ helpviewer_keywords:
   - "WCF, schema import and export"
   - "XsdDataContractImporter class"
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
-caps.latest.revision: 15
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Importing Schema to Generate Classes
-To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  
+To generate classes from schemas that are usable with Windows Communication Foundation (WCF), use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  
   
-## The Import Process  
+## The Import Process
  The schema import process starts with an <xref:System.Xml.Schema.XmlSchemaSet> and produces a <xref:System.CodeDom.CodeCompileUnit>.  
   
  The `XmlSchemaSet` is a part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]’s Schema Object Model (SOM) that represents a set of XML Schema definition language (XSD) schema documents. To create an `XmlSchemaSet` object from a set of XSD documents, deserialize each document into an <xref:System.Xml.Schema.XmlSchema> object (using the <xref:System.Xml.Serialization.XmlSerializer>) and add these objects to a new `XmlSchemaSet`.  
   
  The `CodeCompileUnit` is part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]’s Code Document Object Model (CodeDOM) that represents [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] code in an abstract way. To generate the actual code from a `CodeCompileUnit`, use a subclass of the <xref:System.CodeDom.Compiler.CodeDomProvider> class, such as the <xref:Microsoft.CSharp.CSharpCodeProvider> or <xref:Microsoft.VisualBasic.VBCodeProvider> class.  
   
-#### To import a schema  
+### To import a schema  
   
-1.  Create an instance of the <xref:System.Runtime.Serialization.XsdDataContractImporter>.  
+1. Create an instance of the <xref:System.Runtime.Serialization.XsdDataContractImporter>.  
   
-2.  Optional. Pass a `CodeCompileUnit` in the constructor. The types generated during schema import are added to this `CodeCompileUnit` instance instead of starting with a blank `CodeCompileUnit`.  
+2. Optional. Pass a `CodeCompileUnit` in the constructor. The types generated during schema import are added to this `CodeCompileUnit` instance instead of starting with a blank `CodeCompileUnit`.  
   
-3.  Optional. Call one of the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> methods. The method determines whether the given schema is a valid data contract schema and can be imported. The `CanImport` method has the same overloads as `Import` (the next step).  
+3. Optional. Call one of the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> methods. The method determines whether the given schema is a valid data contract schema and can be imported. The `CanImport` method has the same overloads as `Import` (the next step).  
   
-4.  Call one of the overloaded `Import` methods, for example, the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%28System.Xml.Schema.XmlSchemaSet%29> method.  
+4. Call one of the overloaded `Import` methods, for example, the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%28System.Xml.Schema.XmlSchemaSet%29> method.  
   
      The simplest overload takes an `XmlSchemaSet` and imports all types, including anonymous types, found in that schema set. Other overloads allow you to specify the XSD type or a list of types to import (in the form of an <xref:System.Xml.XmlQualifiedName> or a collection of `XmlQualifiedName` objects). In this case, only the specified types are imported. An overload takes an <xref:System.Xml.Schema.XmlSchemaElement> that imports a particular element out of the `XmlSchemaSet`, as well as its associated type (whether it is anonymous or not). This overload returns an `XmlQualifiedName`, which represents the data contract name of the type generated for this element.  
   
      Multiple calls of the `Import` method result in multiple items being added to the same `CodeCompileUnit`. A type is not generated into the `CodeCompileUnit` if it already exists there. Call `Import` multiple times on the same `XsdDataContractImporter` instead of using multiple `XsdDataContractImporter` objects. This is the recommended way to avoid duplicate types being generated.  
   
     > [!NOTE]
-    >  If there is a failure during import, the `CodeCompileUnit` will be in an unpredictable state. Using a `CodeCompileUnit` resulting from a failed import could expose you to security vulnerabilities.  
+    > If there is a failure during import, the `CodeCompileUnit` will be in an unpredictable state. Using a `CodeCompileUnit` resulting from a failed import could expose you to security vulnerabilities.  
   
-5.  Access the `CodeCompileUnit` through the <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A> property.  
+5. Access the `CodeCompileUnit` through the <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A> property.  
   
 ### Import Options: Customizing the Generated Types  
  You can set the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractImporter> to an instance of the <xref:System.Runtime.Serialization.ImportOptions> class to control various aspects of the import process. A number of options directly influence the types that are generated.  
@@ -74,7 +60,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
  [!code-xml[c_SchemaImportExport#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#10)]  
   
- The following example uses the `Namespaces` property to map the "http://schemas.contoso.com/carSchema" namespace to "Contoso.Cars".  
+ The following example uses the `Namespaces` property to map the `http://schemas.contoso.com/carSchema` namespace to "Contoso.Cars".  
   
  [!code-csharp[c_SchemaImportExport#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/cs/source.cs#8)]
  [!code-vb[c_SchemaImportExport#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#8)]  
@@ -92,7 +78,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
 #### Adding Data Binding Support (EnableDataBinding or the /enableDataBinding switch)  
  This corresponds to the **/enableDataBinding** switch on the Svcutil.exe tool.  
   
- Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as [!INCLUDE[avalon1](../../../../includes/avalon1-md.md)]), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> property to `true` to enable this feature.  
+ Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as Windows Presentation Foundation (WPF)), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> property to `true` to enable this feature.  
   
  The following example shows the `Vehicle` class generated with the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> set to `true`.  
   
@@ -109,7 +95,7 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
  [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  
   
 > [!NOTE]
->  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is present in the schema. The annotation indicates that a given pattern represents an association. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+>  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to WCF is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  Normally, a list is imported as a collection data contract that derives from a Generic List or as a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
   
@@ -149,14 +135,14 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
  The `ReferencedTypes` property corresponds to the **/reference** switch in certain modes of operation of the Svcutil.exe tool.  
   
 > [!NOTE]
->  When using the Svcutil.exe or (in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)]) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
+>  When using the Svcutil.exe or (in Visual Studio) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
   
 #### Import Options: Importing Non-DataContract Schema as IXmlSerializable types  
  The <xref:System.Runtime.Serialization.XsdDataContractImporter> supports a limited subset of the schema. If unsupported schema constructs are present (for example, XML attributes), the import attempt fails with an exception. However, setting the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property to `true` extends the range of schema supported. When set to `true`, the <xref:System.Runtime.Serialization.XsdDataContractImporter> generates types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. This enables direct access to the XML representation of these types.  
   
 ##### Design Considerations  
   
--   It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+-   It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. For more information, see [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
   
 -   Some schema constructs cannot be imported by the <xref:System.Runtime.Serialization.XsdDataContractImporter> even when the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property is set to `true`. Again, consider using the <xref:System.Xml.Serialization.XmlSerializer> for such cases.  
   
@@ -185,15 +171,15 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
 -   <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> property. Specify the <xref:System.CodeDom.Compiler.CodeDomProvider> to use to generate the code for the generated classes. The import mechanism attempts to avoid features that the <xref:System.CodeDom.Compiler.CodeDomProvider> does not support. If the <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> is not set, the full set of [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] features is used with no restrictions.  
   
--   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
+-   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- <xref:System.Runtime.Serialization.XsdDataContractExporter>  
- <xref:System.Runtime.Serialization.ImportOptions>  
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
- [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)  
- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)  
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- <xref:System.Runtime.Serialization.XsdDataContractExporter>
+- <xref:System.Runtime.Serialization.ImportOptions>
+- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+- [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)
+- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
+- [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)
+- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)

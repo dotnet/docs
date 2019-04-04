@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugManagedCallback Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugManagedCallback"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: b47f1d61-c7dc-4196-b926-0b08c94f7041
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugManagedCallback Interface
 Provides methods to process debugger callbacks.  
@@ -82,7 +70,7 @@ Provides methods to process debugger callbacks.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

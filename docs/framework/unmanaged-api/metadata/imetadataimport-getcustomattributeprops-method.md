@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::GetCustomAttributeProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.GetCustomAttributeProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 6eefb243-a281-41c1-bcdc-7e17513bc446
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::GetCustomAttributeProps Method
 Gets the value of the custom attribute, given its metadata token.  
@@ -45,7 +33,7 @@ HRESULT GetCustomAttributeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cv`  
  [in] A metadata token that represents the custom attribute to be retrieved.  
   
@@ -73,6 +61,6 @@ HRESULT GetCustomAttributeProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

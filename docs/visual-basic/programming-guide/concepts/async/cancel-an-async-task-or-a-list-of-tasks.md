@@ -1,18 +1,7 @@
 ---
 title: "Cancel an Async Task or a List of Tasks (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Cancel an Async Task or a List of Tasks (Visual Basic)
 You can set up a button that you can use to cancel an async application if you don't want to wait for it to finish. By following the examples in this topic, you can add a cancellation button to an application that downloads the contents of one website or a list of websites.  
@@ -22,11 +11,11 @@ You can set up a button that you can use to cancel an async application if you d
 > [!NOTE]
 >  To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-##  <a name="BKMK_CancelaTask"></a> Cancel a Task  
+## <a name="BKMK_CancelaTask"></a> Cancel a Task  
  The first example associates the **Cancel** button with a single download task. If you choose the button while the application is downloading content, the download is canceled.  
   
 ### Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -116,7 +105,7 @@ You can set up a button that you can use to cancel an async application if you d
   
         ' GetAsync returns a Task(Of HttpResponseMessage).   
         ' ***The ct argument carries the message if the Cancel button is chosen.  
-        Dim response As HttpResponseMessage = Await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct)  
+        Dim response As HttpResponseMessage = Await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct)  
   
         ' Retrieve the website contents from the HttpResponseMessage.  
         Dim urlContents As Byte() = Await response.Content.ReadAsByteArrayAsync()  
@@ -140,11 +129,11 @@ You can set up a button that you can use to cancel an async application if you d
     Download canceled.  
     ```  
   
-##  <a name="BKMK_CancelaListofTasks"></a> Cancel a List of Tasks  
+## <a name="BKMK_CancelaListofTasks"></a> Cancel a List of Tasks  
  You can extend the previous example to cancel many tasks by associating the same `CancellationTokenSource` instance with each task. If you choose the **Cancel** button, you cancel all tasks that aren’t yet complete.  
   
 ### Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -171,13 +160,13 @@ You can set up a button that you can use to cancel an async application if you d
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -252,10 +241,10 @@ You can set up a button that you can use to cancel an async application if you d
     Downloads canceled.  
     ```  
   
-##  <a name="BKMK_CompleteExamples"></a> Complete Examples  
+## <a name="BKMK_CompleteExamples"></a> Complete Examples  
  The following sections contain the code for each of the previous examples. Notice that you must add a reference for <xref:System.Net.Http>.  
   
- You can download the projects from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
+ You can download the projects from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
 ### Cancel a Task Example  
  The following code is the complete MainWindow.xaml.vb file for the example that cancels a single task.  
@@ -318,7 +307,7 @@ Class MainWindow
   
         ' GetAsync returns a Task(Of HttpResponseMessage).   
         ' ***The ct argument carries the message if the Cancel button is chosen.  
-        Dim response As HttpResponseMessage = Await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct)  
+        Dim response As HttpResponseMessage = Await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct)  
   
         ' Retrieve the website contents from the HttpResponseMessage.  
         Dim urlContents As Byte() = Await response.Content.ReadAsByteArrayAsync()  
@@ -417,13 +406,13 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -459,9 +448,10 @@ End Class
 ' Downloads canceled.  
 ```  
   
-## See Also  
- <xref:System.Threading.CancellationTokenSource>  
- <xref:System.Threading.CancellationToken>  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)
+## See also
+
+- <xref:System.Threading.CancellationTokenSource>
+- <xref:System.Threading.CancellationToken>
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

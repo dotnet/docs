@@ -4,12 +4,7 @@ description: Describes .NET architectural components such as the .NET Standard, 
 author: cartermp
 ms.author: mairaw
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # .NET architectural components
 
@@ -56,22 +51,22 @@ Historically, Mono implemented the larger API of the .NET Framework and emulated
 
 Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
 
-To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
+To learn more about Mono, see the [Mono documentation](https://www.mono-project.com/docs/).
 
 ### Universal Windows Platform (UWP)
 
 UWP is an implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, VB.NET, and JavaScript. When using C# and VB.NET, the .NET APIs are provided by .NET Core.
 
-To learn more about UWP, see [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
+To learn more about UWP, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide).
 
 ## .NET runtimes
 
 A runtime is the execution environment for a managed program. The OS is part of the runtime environment but is not part of the .NET runtime. Here are some examples of .NET runtimes:
- 
- - Common Language Runtime (CLR) for the .NET Framework
- - Core Common Language Runtime (CoreCLR) for .NET Core
- - .NET Native for Universal Windows Platform 
- - The Mono runtime for Xamarin.iOS, Xamarin.Android, Xamarin.Mac, and the Mono desktop framework
+
+- Common Language Runtime (CLR) for the .NET Framework
+- Core Common Language Runtime (CoreCLR) for .NET Core
+- .NET Native for Universal Windows Platform 
+- The Mono runtime for Xamarin.iOS, Xamarin.Android, Xamarin.Mac, and the Mono desktop framework
 
 ## .NET tooling and common infrastructure
 
@@ -81,14 +76,14 @@ You have access to an extensive set of tools and infrastructure components that 
 - The .NET project system (based on *.csproj*, *.vbproj*, and *.fsproj* files)
 - [MSBuild](/visualstudio/msbuild/msbuild), the build engine used to build projects
 - [NuGet](/nuget/), Microsoft's package manager for .NET
-- Open-source build orchestration tools, such as [CAKE](http://cakebuild.net/) and [FAKE](https://fake.build/)
+- Open-source build orchestration tools, such as [CAKE](https://cakebuild.net/) and [FAKE](https://fake.build/)
 
 ## See also
-[Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)   
-[.NET Standard](net-standard.md)  
-[.NET Core Guide](../core/index.md)  
-[.NET Framework Guide](../framework/index.md)  
-[C# Guide](../csharp/index.md)  
-[F# Guide](../fsharp/index.md)  
-[VB.NET Guide](../visual-basic/index.md)  
 
+- [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)
+- [.NET Standard](net-standard.md)
+- [.NET Core Guide](../core/index.md)
+- [.NET Framework Guide](../framework/index.md)
+- [C# Guide](../csharp/index.md)
+- [F# Guide](../fsharp/index.md)
+- [VB.NET Guide](../visual-basic/index.md)

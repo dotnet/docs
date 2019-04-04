@@ -1,24 +1,10 @@
 ---
-title: "&lt;udpDiscoveryEndpoint&gt;"
-ms.custom: ""
+title: "<udpDiscoveryEndpoint>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1f485329-2771-43bc-88de-df8f2faa3bb7
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;udpDiscoveryEndpoint&gt;
-This configuration element defines a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. This endpoint has a fixed contract and supports two WS-Discovery protocol versions. In addition, it has a fixed UDP binding and a default address as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery V1.1)..  
+# \<udpDiscoveryEndpoint>
+This configuration element defines a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. This endpoint has a fixed contract and supports two WS-Discovery protocol versions. In addition, it has a fixed UDP binding and a default address as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery V1.1).  
   
  \<system.ServiceModel>  
 \<standardEndpoints>  
@@ -26,9 +12,17 @@ This configuration element defines a standard endpoint that is pre-configured fo
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-    <standardEndpoints>       <discoveryEndpoint>           <standardEndpoint                  discoveryMode="Adhoc/Managed"                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxResponseDelay="Timespan"                  multicastAddress="Uri"                   name="String" />       </discoveryEndpoint>            </standardEndpoints>  
-</system.serviceModel>  
+<system.serviceModel>
+  <standardEndpoints>
+    <discoveryEndpoint>
+      <standardEndpoint discoveryMode="Adhoc/Managed"
+                        discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"
+                        maxResponseDelay="Timespan"
+                        multicastAddress="Uri"
+                        name="String" />
+    </discoveryEndpoint>
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -59,24 +53,24 @@ This configuration element defines a standard endpoint that is pre-configured fo
 ## Example  
  The following example demonstrates a service listening for discovery messages over a UDP multicast transport.  
   
-```xml
-<services>  
-  <service name="CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-    <endpoint binding="basicHttpBinding"   
-              address="calculator" 
-              contract="ICalculatorService" />  
-    <endpoint name="DiscoveryEndpoint"  
-              kind="udpDiscoveryEndpoint" />  
-  </service>  
-  <standardEndpoints>  
-    <udpDiscoveryEndpoint>  
-      <standardEndpoint name="DiscoveryEndpoint"                         
-                        version="WSDiscoveryApril2005" />  
-    </udpDiscoveryEndpoint>  
+```xml  
+<services>
+  <service name="CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    <endpoint binding="basicHttpBinding"
+              address="calculator"
+              contract="ICalculatorService" />
+    <endpoint name="DiscoveryEndpoint"
+              kind="udpDiscoveryEndpoint" />
+  </service>
+  <standardEndpoints>
+    <udpDiscoveryEndpoint>
+      <standardEndpoint name="DiscoveryEndpoint"
+                        version="WSDiscoveryApril2005" />
+    </udpDiscoveryEndpoint>
   </standardEndpoints>
 </services>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>
+## See also
+- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>

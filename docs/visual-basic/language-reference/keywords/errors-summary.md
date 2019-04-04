@@ -1,17 +1,9 @@
 ---
 title: "Errors Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic]"
 ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Errors Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
@@ -25,6 +17,7 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Provide line number of error.|<xref:Microsoft.VisualBasic.ErrObject.Erl%2A>|  
 |Provide system error code.|<xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

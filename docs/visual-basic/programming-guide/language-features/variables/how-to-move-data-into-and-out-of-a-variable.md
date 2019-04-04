@@ -1,21 +1,10 @@
 ---
 title: "How to: Move Data Into and Out of a Variable (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], retrieving values"
   - "variables [Visual Basic], storing data"
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Move Data Into and Out of a Variable (Visual Basic)
 You store a value in a variable by putting the variable name on the left side of an assignment statement.  
@@ -54,7 +43,8 @@ You store a value in a variable by putting the variable name on the left side of
   
      The value of the variable participates in the expression just as a constant would, and then it is stored in the variable or property on the left side of the assignment statement.  
   
-## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+## See also
+
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)

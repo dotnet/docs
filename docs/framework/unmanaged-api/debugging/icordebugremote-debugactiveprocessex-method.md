@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugRemote::DebugActiveProcessEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugRemote.DebugActiveProcessEx"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugRemote::DebugActiveProcessEx Method
 Launches a process on a remote machine under the debugger.  
@@ -44,7 +32,7 @@ HRESULT DebugActiveProcessEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRemoteTarget`  
  [in] Pointer to an [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md). This parameter is used to determine the machine on which the process is running.  
   
@@ -76,8 +64,8 @@ HRESULT DebugActiveProcessEx (
   
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
-## See Also  
- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

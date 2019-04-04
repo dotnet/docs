@@ -1,13 +1,6 @@
 ---
 title: "Structures and Other Programming Elements (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "structures [Visual Basic], arrays"
   - "procedures [Visual Basic], structures as arguments to"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "arrays [Visual Basic], structure elements"
   - "nested structures [Visual Basic]"
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Structures and Other Programming Elements (Visual Basic)
 You can use structures in conjunction with arrays, objects, and procedures, as well as with each other. The interactions use the same syntax as these elements use individually.  
@@ -126,14 +116,15 @@ allSystems(1).diskDrives(0).type = "Floppy"
   
  Structures can contain other structures to an arbitrary depth.  
   
-## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
- [Structure Variables](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)  
- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+## See also
+
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Structure Variables](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)
+- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)

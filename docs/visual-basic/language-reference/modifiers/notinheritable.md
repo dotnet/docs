@@ -1,11 +1,6 @@
 ---
 title: "NotInheritable (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "NotInheritable"
   - "vb.NotInheritable"
@@ -20,9 +15,6 @@ helpviewer_keywords:
   - "sealed classes [Visual Basic]"
   - "classes [Visual Basic], not inheritable"
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # NotInheritable (Visual Basic)
 Specifies that a class cannot be used as a base class.  
@@ -34,7 +26,8 @@ Specifies that a class cannot be used as a base class.
   
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
   
-## See Also  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

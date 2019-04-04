@@ -1,13 +1,7 @@
 ---
 title: "Managed Execution Process"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "source code language"
   - "code, managed execution process"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "managed execution process"
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  
@@ -112,13 +101,14 @@ ms.workload:
   
  [Back to top](#introduction)  
   
-## See Also  
- [Overview](../../docs/framework/get-started/overview.md)  
- [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)  
- [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)  
- [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)  
- [Security](../../docs/standard/security/index.md)  
- [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)  
- [Deployment](../../docs/framework/deployment/net-framework-applications.md)  
- [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [Application Domains](../../docs/framework/app-domains/application-domains.md)
+## See also
+
+- [Overview](../../docs/framework/get-started/overview.md)
+- [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)
+- [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)
+- [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)
+- [Security](../../docs/standard/security/index.md)
+- [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)
+- [Deployment](../../docs/framework/deployment/net-framework-applications.md)
+- [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Application Domains](../../docs/framework/app-domains/application-domains.md)

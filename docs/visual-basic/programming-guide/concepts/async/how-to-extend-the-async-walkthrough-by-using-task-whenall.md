@@ -1,18 +1,7 @@
 ---
 title: "How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c06d386d-e996-4da9-bf3d-05a3b6c0a258
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)
 You can improve the performance of the async solution in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.  
@@ -22,7 +11,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
  You apply the `Task.WhenAll` method to a collection of tasks. The application of `WhenAll` returns a single task that isn’t complete until every task in the collection is completed. The tasks appear to run in parallel, but no additional threads are created. The tasks can complete in any order.  
   
 > [!IMPORTANT]
->  The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the code from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191).  
+>  The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).  
 >   
 >  To run the example, you must have Visual Studio 2012 or later installed on your computer.  
   
@@ -30,7 +19,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 1.  Add the `ProcessURLAsync` method to the first application that's developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
-    -   If you downloaded the code from  [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191), open the AsyncWalkthrough project, and then add `ProcessURLAsync` to the MainWindow.xaml.vb file.  
+    -   If you downloaded the code from  [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough project, and then add `ProcessURLAsync` to the MainWindow.xaml.vb file.  
   
     -   If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that includes the `GetURLContentsAsync` method. The MainWindow.xaml.vb file for this application is the first example in the "Complete Code Examples from the Walkthrough" section.  
   
@@ -67,7 +56,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     'Next  
     ```  
   
-3.  Create a collection of tasks. The following code defines a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Create a collection of tasks. The following code defines a [query](../../../../visual-basic/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
@@ -103,7 +92,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 1.  Add the following version of `ProcessURLAsync` to the second application that's developed in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
-    -   If you downloaded the code from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191), open the AsyncWalkthrough_HttpClient project, and then add `ProcessURLAsync` to the MainWindow.xaml.vb file.  
+    -   If you downloaded the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough_HttpClient project, and then add `ProcessURLAsync` to the MainWindow.xaml.vb file.  
   
     -   If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that uses the `HttpClient.GetByteArrayAsync` method. The MainWindow.xaml.vb file for this application is the second example in the "Complete Code Examples from the Walkthrough" section.  
   
@@ -140,7 +129,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     'Next  
     ```  
   
-3.  Define a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Define a [query](../../../../visual-basic/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   
@@ -251,15 +240,15 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290136.aspx",  
+                "https://msdn.microsoft.com/library/ee256749.aspx",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -301,8 +290,8 @@ Class MainWindow
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
   
@@ -390,15 +379,15 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://www.msdn.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://www.msdn.com",  
+                "https://msdn.microsoft.com/library/hh290136.aspx",  
+                "https://msdn.microsoft.com/library/ee256749.aspx",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -416,14 +405,15 @@ Class MainWindow
         ' is designed to be used with a monospaced font, such as  
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
-        ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        ' Strip off the "https://".  
+        Dim displayURL = url.Replace("https://", "")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
   
 End Class  
 ```  
   
-## See Also  
- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>  
- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+## See also
+
+- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
+- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)

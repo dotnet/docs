@@ -1,12 +1,6 @@
 ---
-title: "Option Infer Statement"
+title: "Option Infer Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.OptionInfer"
   - "vb.Infer"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "declaring variables [Visual Basic], inferred"
   - "inferred variable declaration"
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
-caps.latest.revision: 72
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Infer Statement
 Enables the use of local type inference in declaring variables.  
@@ -42,18 +33,20 @@ Option Infer { On | Off }
   
  When you set `Option Infer` to `On`, you can declare local variables without explicitly stating a data type. The compiler infers the data type of a variable from the type of its initialization expression.  
   
- In the following illustration, `Option Infer` is turned on. The variable in the declaration `Dim someVar = 2` is declared as an integer by type inference.  
+ In the following illustration, `Option Infer` is turned on. The variable in the declaration `Dim someVar = 2` is declared as an integer by type inference.
+
+ The following screenshot shows IntelliSense when Option Infer is on: 
   
- ![IntelliSense view of the declaration.](../../../visual-basic/language-reference/statements/media/optioninferasinteger.png "optionInferAsInteger")  
-IntelliSense when Option Infer is on  
+ ![Screenshot showing IntelliSense view when Option Infer is on.](./media/option-infer-statement/option-infer-as-integer-on.png)  
   
  In the following illustration, `Option Infer` is turned off. The variable in the declaration `Dim someVar = 2` is declared as an `Object` by type inference. In this example, the **Option Strict** setting is set to **Off** on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
- ![IntelliSense view of the declaration.](../../../visual-basic/language-reference/statements/media/optioninferasobject.png "optionInferAsObject")  
-IntelliSense when Option Infer is off  
+ The following screenshot shows IntelliSense when Option Infer is off:
+ 
+ ![Screenshot showing IntelliSense view when Option Infer is off.](./media/option-infer-statement/option-infer-as-object-off.png)  
   
 > [!NOTE]
->  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).
+>  When a variable is declared as an `Object`, the run-time type can change while the program is running. Visual Basic performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](~/_vblang/spec/conversions.md#value-type-conversions).
   
  Type inference applies at the procedure level, and does not apply outside a procedure in a class, structure, module, or interface.  
   
@@ -89,19 +82,20 @@ IntelliSense when Option Infer is off
 ## Example  
  The following examples demonstrate how the `Option Infer` statement enables local type inference.  
   
- [!code-vb[VbVbalrTypeInference#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#6)]  
   
 ## Example  
  The following example demonstrates that the run-time type can differ when a variable is identified as an `Object`.  
   
- [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
+ [!code-vb[VbVbalrTypeInference#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]  
   
-## See Also  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)  
- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)
+## See also
+
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

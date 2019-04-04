@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::RootReferences Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.RootReferences"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dbdf853b-d1a4-4828-8ef7-53d121d8e6ae
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::RootReferences Method
 Notifies the profiler with information about root references after garbage collection.  
@@ -41,7 +29,7 @@ HRESULT RootReferences(
     [in, size_is(cRootRefs)] ObjectID rootRefIds[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRootRefs`  
  [in] The number of references in the `rootRefIds` array.  
   
@@ -64,5 +52,5 @@ HRESULT RootReferences(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

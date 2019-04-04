@@ -1,23 +1,12 @@
 ---
 title: "Using TPL with Other Asynchronous Patterns"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tasks and APM"
 ms.assetid: 7add905b-ff60-4353-af79-5089038d9a08
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using TPL with Other Asynchronous Patterns
 The Task Parallel Library can be used with traditional .NET Framework asynchronous programming patterns in various ways.  
@@ -29,5 +18,6 @@ The Task Parallel Library can be used with traditional .NET Framework asynchrono
  [How to: Wrap EAP Patterns in a Task](../../../docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md)  
  Shows how to use <xref:System.Threading.Tasks.Task> objects to encapsulate EAP patterns.  
   
-## See Also  
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## See also
+
+- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

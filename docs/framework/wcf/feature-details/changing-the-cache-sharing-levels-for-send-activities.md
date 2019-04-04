@@ -1,21 +1,7 @@
 ---
 title: "Changing the Cache Sharing Levels for Send Activities"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 03926a64-753d-460e-ac06-2a4ff8e1bbf5
-caps.latest.revision: 12
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Changing the Cache Sharing Levels for Send Activities
 The <xref:System.ServiceModel.Activities.SendMessageChannelCache> extension enables you to customize the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using <xref:System.ServiceModel.Activities.Send> messaging activities. These workflows are typically client workflows but could also be workflow services that are hosted in a <xref:System.ServiceModel.WorkflowServiceHost>. The channel factory cache contains cached <xref:System.ServiceModel.ChannelFactory%601> objects. The channel cache contains cached channels.  
@@ -39,7 +25,7 @@ The <xref:System.ServiceModel.Activities.SendMessageChannelCache> extension enab
   
  First, declare an instance of type <xref:System.ServiceModel.Activities.SendMessageChannelCache>.  
   
-```  
+```csharp  
 // Create an instance of SendMessageChannelCache with default cache settings.  
 static SendMessageChannelCache sharedChannelCacheExtension =  
     new SendMessageChannelCache();  
@@ -47,7 +33,7 @@ static SendMessageChannelCache sharedChannelCacheExtension =
   
  Next, add the cache extension to each client workflow instance.  
   
-```  
+```csharp 
 WorkflowApplication clientInstance1 = new WorkflowApplication(new clientWorkflow1());  
 WorkflowApplication clientInstance2 = new WorkflowApplication(new clientWorkflow2());  
   
@@ -62,7 +48,7 @@ clientInstance2.Extensions.Add(sharedChannelCacheExtension);
   
  First, declare an instance  of type <xref:System.ServiceModel.Activities.SendMessageChannelCache> at the class level.  
   
-```  
+```csharp  
 // Create static instance of SendMessageChannelCache with default cache settings.  
 static SendMessageChannelCache sharedChannelCacheExtension = new  
     SendMessageChannelCache();  
@@ -70,7 +56,7 @@ static SendMessageChannelCache sharedChannelCacheExtension = new
   
  Next, add the static cache extension to each workflow service host.  
   
-```  
+```csharp  
 WorkflowServiceHost host1 = new WorkflowServiceHost(new serviceWorkflow1(), new Uri(baseAddress1));  
 WorkflowServiceHost host2 = new WorkflowServiceHost(new serviceWorkflow2(), new Uri(baseAddress2));  
   
@@ -81,7 +67,7 @@ host2.WorkflowExtensions.Add(sharedChannelCacheExtension);
   
  To set the cache sharing in a hosted workflow service to the instance level, add a `Func<SendMessageChannelCache>` delegate as an extension to the workflow service host and assign this delegate to the code that instantiates a new instance of the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class. This results in a different cache for each individual workflow instance, instead of a single cache shared by all workflow instances in the workflow service host. The following code example shows how to achieve this by using a lambda expression to directly define the <xref:System.ServiceModel.Activities.SendMessageChannelCache> extension that the delegate points to.  
   
-```  
+```csharp 
 serviceHost.WorkflowExtensions.Add(() => new SendMessageChannelCache  
 {  
     // Use FactorySettings property to add custom factory cache settings.  
@@ -103,7 +89,7 @@ serviceHost.WorkflowExtensions.Add(() => new SendMessageChannelCache
   
  To customize the factory cache and channel cache settings, instantiate the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class using the parameterized constructor <xref:System.ServiceModel.Activities.SendMessageChannelCache.%23ctor%2A> and pass a new instance of the <xref:System.ServiceModel.Activities.ChannelCacheSettings> with custom values to each of the `factorySettings` and `channelSettings` parameters. Next, add the new instance of this class as an extension to a workflow service host or a workflow instance. The following code example shows how to perform these steps for a workflow instance.  
   
-```  
+```csharp  
 ChannelCacheSettings factorySettings = new ChannelCacheSettings{  
                         MaxItemsInCache = 5,   
                         IdleTimeout = TimeSpan.FromMinutes(5),   
@@ -122,7 +108,7 @@ clientInstance.Extensions.Add(customChannelCacheExtension);
   
  To enable caching when your workflow service has endpoints defined in configuration, instantiate the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class using the parameterized constructor <xref:System.ServiceModel.Activities.SendMessageChannelCache.%23ctor%2A> with the `allowUnsafeCaching` parameter set to `true`. Next, add the new instance of this class as an extension to a workflow service host or a workflow instance. The following code example shows how to enable caching for a workflow instance.  
   
-```  
+```csharp  
 SendMessageChannelCache customChannelCacheExtension =   
     new SendMessageChannelCache{ AllowUnsafeCaching = true };  
   
@@ -131,7 +117,7 @@ clientInstance.Extensions.Add(customChannelCacheExtension);
   
  To disable the cache completely for the channel factories and the channels, disable the channel factory cache. Doing so also turns off the channel cache as the channels are owned by their corresponding channel factories. To disable the channel factory cache, pass the `factorySettings` parameter to the <xref:System.ServiceModel.Activities.SendMessageChannelCache.%23ctor%2A> constructor initialized to a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance with a <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> value of 0. The following code example shows this.  
   
-```  
+```csharp  
 // Disable the factory cache. This results in the channel cache to be turned off as well.  
 ChannelCacheSettings factorySettings = new ChannelCacheSettings  
     { MaxItemsInCache = 0 };  
@@ -146,7 +132,7 @@ clientInstance.Extensions.Add(customChannelCacheExtension);
   
  You can choose to use only the channel factory cache and disable the channel cache by passing the `channelSettings` parameter to the <xref:System.ServiceModel.Activities.SendMessageChannelCache.%23ctor%2A> constructor initialized to a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance with a <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> value of 0. The following code example shows this.  
   
-```  
+```csharp  
 ChannelCacheSettings factorySettings = new ChannelCacheSettings();  
 // Disable only the channel cache.  
 ChannelCacheSettings channelSettings = new ChannelCacheSettings  

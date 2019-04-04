@@ -1,14 +1,6 @@
 ---
 title: "LoadLibraryShim Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "LoadLibraryShim"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # LoadLibraryShim Function
 Loads a specified version of a DLL that is included in the .NET Framework redistributable package.  
@@ -46,12 +34,12 @@ HRESULT LoadLibraryShim (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szDllName`  
  [in] A zero-terminated string that represents the name of the DLL to be loaded from the .NET Framework library.  
   
  `szVersion`  
- [in] A zero-terminated string that represents the version of the DLL to be loaded. If `szVersion` is null, the version selected for loading is the latest version of the specified DLL that is less than version 4. That is, all versions equal to or greater than version 4 are ignored if `szVersion` is null, and if no version less than version 4 is installed, the DLL fails to load. This is to ensure that installation of the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not affect pre-existing applications or components. See the entry [In-Proc SxS and Migration Quick Start](http://go.microsoft.com/fwlink/?LinkId=200329) in the CLR team blog.  
+ [in] A zero-terminated string that represents the version of the DLL to be loaded. If `szVersion` is null, the version selected for loading is the latest version of the specified DLL that is less than version 4. That is, all versions equal to or greater than version 4 are ignored if `szVersion` is null, and if no version less than version 4 is installed, the DLL fails to load. This is to ensure that installation of the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not affect pre-existing applications or components. See the entry [In-Proc SxS and Migration Quick Start](https://go.microsoft.com/fwlink/?LinkId=200329) in the CLR team blog.  
   
  `pvReserved`  
  Reserved for future use.  
@@ -80,5 +68,5 @@ HRESULT LoadLibraryShim (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

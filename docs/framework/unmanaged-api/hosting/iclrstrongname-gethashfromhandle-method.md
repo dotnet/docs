@@ -1,14 +1,6 @@
 ---
 title: "ICLRStrongName::GetHashFromHandle Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRStrongName.GetHashFromHandle"
   - "ICLRStrongName.StrongNameCompareAssemblies"
@@ -24,12 +16,8 @@ helpviewer_keywords:
 ms.assetid: 3bedbb7d-3cdd-4175-b370-10ae734062db
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRStrongName::GetHashFromHandle Method
 Generates a hash over the contents of the file that has the specified file handle, using the specified hash algorithm.  
@@ -46,7 +34,7 @@ HRESULT GetHashFromHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be hashed.  
   
@@ -63,7 +51,7 @@ HRESULT GetHashFromHandle (
  [out] The size, in bytes, of the returned `pbHash`.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](http://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -74,5 +62,5 @@ HRESULT GetHashFromHandle (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

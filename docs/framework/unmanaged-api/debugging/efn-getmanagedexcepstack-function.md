@@ -1,14 +1,6 @@
 ---
 title: "_EFN_GetManagedExcepStack Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "_EFN_GetManagedExcepStack"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # _EFN_GetManagedExcepStack Function
 Given a managed exception object address, returns a string version of the stack trace contained inside.  
@@ -43,7 +31,7 @@ HRESULT _EFN_GetManagedExcepStack(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   
@@ -66,5 +54,5 @@ HRESULT _EFN_GetManagedExcepStack(
   
  **.NET Framework Version:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+## See also
+- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

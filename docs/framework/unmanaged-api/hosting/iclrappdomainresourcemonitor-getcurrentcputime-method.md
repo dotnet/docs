@@ -1,14 +1,6 @@
 ---
 title: "ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAppDomainResourceMonitor.GetCurrentCpuTime"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method
 Gets the total processor time that has been used by all threads while executing in the current application domain, since the application domain was created.  
@@ -40,7 +28,7 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
                           [out] ULONGLONG* pMilliseconds);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainId`  
  [in] The ID of the requested application domain.  
   
@@ -67,8 +55,8 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

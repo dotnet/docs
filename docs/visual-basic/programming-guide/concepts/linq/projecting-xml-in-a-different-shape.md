@@ -1,19 +1,7 @@
 ---
 title: "Projecting XML in a Different Shape (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2da7ec97-34f7-443d-9a48-b162ac58236b
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Projecting XML in a Different Shape (Visual Basic)
 This topic shows an example of projecting XML that is in a different shape than the source XML.  
@@ -238,5 +226,6 @@ End Module
   
 -   [Finding Text in Word Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

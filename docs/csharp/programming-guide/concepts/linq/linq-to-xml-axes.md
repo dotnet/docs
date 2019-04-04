@@ -1,17 +1,7 @@
 ---
 title: "LINQ to XML Axes (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 3f7d54ff-b608-43a1-9e2d-e70668b72df8
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ to XML Axes (C#)
 After you have created an XML tree or loaded an XML document into an XML tree, you can query it to find elements and attributes and retrieve their values.  
@@ -33,6 +23,7 @@ After you have created an XML tree or loaded an XML document into an XML tree, y
 |[How to: Retrieve the Value of an Attribute (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md)|Shows how to get the values of attributes.|  
 |[How to: Retrieve the Shallow Value of an Element (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-retrieve-the-shallow-value-of-an-element.md)|Shows how to retrieve the shallow value of an element.|  
   
-## See Also  
- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

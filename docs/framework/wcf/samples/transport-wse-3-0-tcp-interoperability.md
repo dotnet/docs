@@ -1,24 +1,10 @@
 ---
 title: "Transport: WSE 3.0 TCP Interoperability"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport: WSE 3.0 TCP Interoperability
-The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement a TCP duplex session as a custom [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transport. It also demonstrates how you can use the extensibility of the channel layer to interface over the wire with existing deployed systems. The following steps show how to build this custom [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] transport:  
+The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement a TCP duplex session as a custom Windows Communication Foundation (WCF) transport. It also demonstrates how you can use the extensibility of the channel layer to interface over the wire with existing deployed systems. The following steps show how to build this custom WCF transport:  
   
 1.  Starting with a TCP socket, create client and server implementations of <xref:System.ServiceModel.Channels.IDuplexSessionChannel> that use DIME Framing to delineate message boundaries.  
   
@@ -28,7 +14,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
 4.  Ensure that any network-specific exceptions are normalized to the appropriate derived class of <xref:System.ServiceModel.CommunicationException>.  
   
-5.  Add a binding element that adds the custom transport to a channel stack. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Adding a Binding Element].  
+5.  Add a binding element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element].  
   
 ## Creating IDuplexSessionChannel  
  The first step in writing the WSE 3.0 TCP Interoperability Transport is to create an implementation of <xref:System.ServiceModel.Channels.IDuplexSessionChannel> on top of a <xref:System.Net.Sockets.Socket>. `WseTcpDuplexSessionChannel` derives from <xref:System.ServiceModel.Channels.ChannelBase>. The logic of sending a message consists of two main pieces: (1) Encoding the message into bytes, and (2) framing those bytes and sending them on the wire.  
@@ -45,7 +31,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `return encoder.WriteMessage(message, maxBufferSize, bufferManager);`  
   
- Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](http://go.microsoft.com/fwlink/?LinkId=94999) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
+ Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](https://go.microsoft.com/fwlink/?LinkId=94999) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
   
  The logic for receiving messages is very similar. The main complexity is handling the fact that a socket read can return less bytes than were requested. To receive a message, `WseTcpDuplexSessionChannel` reads bytes off the wire, decodes the DIME framing, and then uses the <xref:System.ServiceModel.Channels.MessageEncoder> for turning the byte[] into a <xref:System.ServiceModel.Channels.Message>.  
   
@@ -137,7 +123,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `binding.Elements.Add(new WseTcpTransportBindingElement());`  
   
- It consists of two tests—one test sets up a typed client using code generated from the WSE 3.0 WSDL. The second test uses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] as both the client and the server by sending messages directly on top of the channel APIs.  
+ It consists of two tests—one test sets up a typed client using code generated from the WSE 3.0 WSDL. The second test uses WCF as both the client and the server by sending messages directly on top of the channel APIs.  
   
  When running the sample, the following output is expected.  
   
@@ -180,7 +166,7 @@ Symbols:
   
 #### To set up, build, and run the sample  
   
-1.  To run this sample, you must have WSE 3.0 and the WSE `TcpSyncStockService` sample installed. You can download [WSE 3.0 from MSDN](http://go.microsoft.com/fwlink/?LinkId=95000).  
+1.  To run this sample, you must have WSE 3.0 and the WSE `TcpSyncStockService` sample installed. You can download [WSE 3.0 from MSDN](https://go.microsoft.com/fwlink/?LinkId=95000).  
   
 > [!NOTE]
 >  Because WSE 3.0 is not supported on [!INCLUDE[lserver](../../../../includes/lserver-md.md)], you cannot install or run the `TcpSyncStockService` sample on that operating system.  
@@ -191,7 +177,7 @@ Symbols:
   
     2.  Set the StockService project as the start up project.  
   
-    3.  Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
+    3.  Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
   
     4.  Press F5 to start the `TcpSyncStockService`. The service starts in a new console window.  
   
@@ -203,4 +189,3 @@ Symbols:
   
     8.  The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.  
   
-## See Also

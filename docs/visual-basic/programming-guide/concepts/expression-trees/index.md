@@ -1,18 +1,7 @@
 ---
 title: "Expression Trees (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8bbbb02d-7ffc-476b-8c25-118d82bf5d46
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Expression Trees (Visual Basic)
 Expression trees represent code in a tree-like data structure, where each node is an expression, for example, a method call or a binary operation such as `x < y`.  
@@ -90,7 +79,7 @@ Console.WriteLine(factorial)
 ' Prints 120.  
 ```
 
-For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010](http://go.microsoft.com/fwlink/p/?LinkId=169513), which also applies to later versions of Visual Studio.
+For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010](https://devblogs.microsoft.com/csharpfaq/generating-dynamic-methods-with-expression-trees-in-visual-studio-2010/), which also applies to later versions of Visual Studio.
   
 ## Parsing Expression Trees  
  The following code example demonstrates how the expression tree that represents the lambda expression `Function(num) num < 5` can be decomposed into its parts.  
@@ -146,10 +135,11 @@ Console.WriteLine(expr.Compile()(4))
   
  For more information, see [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md).  
   
-## See Also  
- <xref:System.Linq.Expressions>  
- [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)  
- [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)  
- [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [Dynamic Language Runtime Overview](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)  
- [Programming Concepts (Visual Basic)](../../../../visual-basic/programming-guide/concepts/index.md)
+## See also
+
+- <xref:System.Linq.Expressions>
+- [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
+- [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)
+- [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [Dynamic Language Runtime Overview](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)
+- [Programming Concepts (Visual Basic)](../../../../visual-basic/programming-guide/concepts/index.md)

@@ -1,13 +1,7 @@
 ---
 title: "Security and Race Conditions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "secure coding, race conditions"
   - "code security, race conditions"
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Security and Race Conditions
 Another area of concern is the potential for security holes exploited by race conditions. There are several ways in which this might happen. The subtopics that follow outline some of the major pitfalls that the developer must avoid.  
@@ -43,7 +32,7 @@ End Sub
 ```csharp  
 void Dispose()   
 {  
-    if( myObj != null )   
+    if (myObj != null)   
     {  
         Cleanup(myObj);  
         myObj = null;  
@@ -64,7 +53,7 @@ Sub SomeSecureFunction()
     If SomeDemandPasses() Then  
         fCallersOk = True  
         DoOtherWork()  
-        fCallersOk = False()  
+        fCallersOk = False  
     End If  
 End Sub  
   
@@ -81,16 +70,16 @@ End Sub
 ```csharp  
 void SomeSecureFunction()   
 {  
-    if(SomeDemandPasses())   
+    if (SomeDemandPasses())   
     {  
         fCallersOk = true;  
         DoOtherWork();  
-        fCallersOk = false();  
+        fCallersOk = false;  
     }  
 }  
 void DoOtherWork()   
 {  
-    if( fCallersOK )   
+    if (fCallersOK)   
     {  
         DoSomethingTrusted();  
     }  
@@ -109,5 +98,6 @@ void DoOtherWork()
 ## Race Conditions in Finalizers  
  Race conditions can also occur in an object that references a static or unmanaged resource that it then frees in its finalizer. If multiple objects share a resource that is manipulated in a class's finalizer, the objects must synchronize all access to that resource.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

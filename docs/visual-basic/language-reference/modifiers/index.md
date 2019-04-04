@@ -1,15 +1,7 @@
 ---
 title: "Modifiers (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Modifiers (Visual Basic)
 The topics in this section document Visual Basic run-time modifiers.  
@@ -65,7 +57,11 @@ The topics in this section document Visual Basic run-time modifiers.
   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
+ [Private Protected](../../../visual-basic/language-reference/modifiers/private-protected.md)  
+  
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+
+ [Protected Friend](../../../visual-basic/language-reference/modifiers/protected-friend.md)  
   
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  
   

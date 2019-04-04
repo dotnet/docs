@@ -1,14 +1,6 @@
 ---
 title: "How to: Move ToolStripMenuItems"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ToolStripMenuItems [Windows Forms], moving"
   - "menus [Windows Forms], arranging items"
@@ -19,18 +11,12 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], arranging items"
   - "ToolStripMenuItems [Windows Forms], cutting and pasting"
 ms.assetid: cab9e03e-4edd-4c25-b3e3-bd1edc602bd9
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Move ToolStripMenuItems
 At design time, you can move entire top-level menus and their menu items to a different place on the <xref:System.Windows.Forms.MenuStrip>. You can also move individual menu items between top-level menus or change the position of menu items within a menu.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To move a top-level menu and its menu items to another top-level location  
   
@@ -78,7 +64,7 @@ At design time, you can move entire top-level menus and their menu items to a di
   
      The menu item that you cut is inserted after the selected menu item.  
   
-## See Also  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStripMenuItem>  
- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStripMenuItem>
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

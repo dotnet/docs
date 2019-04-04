@@ -1,21 +1,7 @@
 ---
 title: "String Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 338f0c26-8aee-43eb-bd1a-ec0849a376b9
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # String Functions
 The .NET Framework Data Provider for SQL Server (SqlClient) provides `String` functions that perform operations on an input `String` and return a `String` or numeric value result. These functions are in the SqlServer namespace, which is available when you use SqlClient. A provider's namespace property allows the Entity Framework to discover which prefix is used by this provider for specific constructs, such as types and functions.  
@@ -52,8 +38,8 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides `String` fu
   
 |SQL Server 2000|SQL Server 2005|SQL Server 2008|  
 |---------------------|---------------------|---------------------|  
-|[String Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115915)|[String Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115916)|[String Functions (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=115914)|  
+|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115915)|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115916)|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115914)|  
   
-## See Also  
- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)  
- [Known Issues in SqlClient for Entity Framework](../../../../../docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md)
+## See also
+- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)
+- [Known Issues in SqlClient for Entity Framework](../../../../../docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md)

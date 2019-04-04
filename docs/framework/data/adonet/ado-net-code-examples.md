@@ -1,20 +1,10 @@
 ---
 title: "ADO.NET code examples"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-ado"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-caps.latest.revision: 7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # ADO.NET code examples
 The code listings in this topic demonstrate how to retrieve data from a database by using the following ADO.NET technologies:
@@ -43,7 +33,7 @@ The code listings in this topic demonstrate how to retrieve data from a database
 The following code listings demonstrate how to retrieve data from a database using ADO.NET data providers. The data is returned in a `DataReader`. For more information, see [Retrieving Data Using a DataReader](../../../../docs/framework/data/adonet/retrieving-data-using-a-datareader.md).
 
 ### SqlClient
-The code in this example assumes that you can connect to the `Northwind` sample database on Microsoft [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. The code creates a <xref:System.Data.SqlClient.SqlCommand> to select rows from the Products table, adding a <xref:System.Data.SqlClient.SqlParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.SqlClient.SqlConnection> is opened inside a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.SqlClient.SqlDataReader>, and displays the results in the console window.
+The code in this example assumes that you can connect to the `Northwind` sample database on Microsoft SQL Server. The code creates a <xref:System.Data.SqlClient.SqlCommand> to select rows from the Products table, adding a <xref:System.Data.SqlClient.SqlParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.SqlClient.SqlConnection> is opened inside a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.SqlClient.SqlDataReader>, and displays the results in the console window.
 
  [!code-csharp[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/CS/source.cs#1)]
  [!code-vb[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/VB/source.vb#1)]
@@ -67,10 +57,10 @@ The code in this example assumes a connection to DEMO.CUSTOMER on an Oracle serv
  [!code-vb[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Oracle/VB/source.vb#1)]
 
 ## Entity Framework examples
-The following code listings demonstrate how to retrieve data from a data source by querying entities in an Entity Data Model (EDM). These examples use the [Northwind model](http://msdn.microsoft.com/74521f8c-e974-48cb-8858-c08deff52638). For more information, see [Entity Framework Overview](../../../../docs/framework/data/adonet/ef/overview.md).
+The following code listings demonstrate how to retrieve data from a data source by querying entities in an Entity Data Model (EDM). These examples use a model based on the Northwind sample database. For more information about Entity Framework, see [Entity Framework Overview](../../../../docs/framework/data/adonet/ef/overview.md).
 
 ### LINQ to Entities
-The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. For more information, see [LINQ to Entities Overview](http://msdn.microsoft.com/86d87a27-c17a-45ac-b28d-72c8500333c6).
+The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. For more information, see [LINQ to Entities Overview](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).
 
 ```csharp
 using System;
@@ -141,7 +131,7 @@ End Class
 ```
 
 ### Typed ObjectQuery
-The code in this example uses an <xref:System.Data.Objects.ObjectQuery%601> to return data as Categories objects. For more information, see [Object Queries](http://msdn.microsoft.com/0768033c-876f-471d-85d5-264884349276).
+The code in this example uses an <xref:System.Data.Objects.ObjectQuery%601> to return data as Categories objects. For more information, see [Object Queries](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)).
 
 ```csharp
 using System;
@@ -348,9 +338,9 @@ End Class
 ```
 
 ## See also
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [Creating Data Applications](http://msdn.microsoft.com/library/ab334d5f-4f49-4346-bce0-3325d6130b3e)  
- [Querying an Entity Data Model (Entity Framework Tasks)](http://msdn.microsoft.com/187f1caa-e4d3-4e31-bd99-5d5c2b329c77)  
- [How to: Execute a Query that Returns Anonymous Type Objects](http://msdn.microsoft.com/3b264025-e911-4d73-90ce-992d2b9d189d)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)  
+- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Creating Data Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h0y4a0f6(v=vs.120))
+- [Querying an Entity Data Model (Entity Framework Tasks)](https://docs.microsoft.com/previous-versions/bb738455(v=vs.90))
+- [How to: Execute a Query that Returns Anonymous Type Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738512(v=vs.100))
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

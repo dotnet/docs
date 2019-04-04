@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::IsArrayClass Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.IsArrayClass"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7f230961-23a6-4d56-ad2d-7a876d65705f
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::IsArrayClass Method
 Determines whether the specified class is an array class.  
@@ -43,7 +31,7 @@ HRESULT IsArrayClass(
     [out] ULONG          *pcRank);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class to be examined.  
   
@@ -68,5 +56,5 @@ HRESULT IsArrayClass(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

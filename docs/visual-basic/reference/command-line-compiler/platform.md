@@ -1,18 +1,11 @@
 ---
 title: "-platform (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "platform compiler option [Visual Basic]"
   - "/platform compiler option [Visual Basic]"
   - "-platform compiler option [Visual Basic]"
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
-author: rpetrusha
-ms.author: ronpet
 ---
 # -platform (Visual Basic)
 Specifies which platform version of common language runtime (CLR) can run the output file.  
@@ -82,7 +75,8 @@ Specifies which platform version of common language runtime (CLR) can run the ou
 vbc -platform:x86 myFile.vb  
 ```  
   
-## See Also  
- [/target (Visual Basic)](target.md)  
- [Visual Basic Command-Line Compiler](index.md)  
- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+## See also
+
+- [/target (Visual Basic)](target.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

@@ -1,24 +1,12 @@
 ---
 title: "In-Process Side-by-Side Execution"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "in-process side-by-side execution"
   - "side-by-side execution, in-process"
 ms.assetid: 18019342-a810-4986-8ec2-b933a17c2267
-caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # In-Process Side-by-Side Execution
 Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use in-process side-by-side hosting to run multiple versions of the common language runtime (CLR) in a single process. By default, managed COM components run with the .NET Framework version they were built with, regardless of the .NET Framework version that is loaded for the process.  
@@ -96,7 +84,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  To run the following example, compile and register the following managed COM component using the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]. To register the component, on the **Project** menu, click **Properties**, click the **Build** tab, and then select the **Register for COM interop** check box.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -121,7 +109,7 @@ namespace BasicComObject
   
  Compile the following unmanaged C++ application, which activates the COM object that is created by the previous example.  
   
-```  
+```cpp
 #include "stdafx.h"  
 #include <string>  
 #include <iostream>  
@@ -179,6 +167,6 @@ int _tmain(int argc, _TCHAR* argv[])
 }  
 ```  
   
-## See Also  
- [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)  
- [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)
+## See also
+- [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)
+- [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

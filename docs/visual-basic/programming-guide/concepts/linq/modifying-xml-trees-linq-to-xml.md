@@ -1,19 +1,7 @@
 ---
 title: "Modifying XML Trees (LINQ to XML) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Modifying XML Trees (LINQ to XML) (Visual Basic)
 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is an in-memory store for an XML tree. After you load or parse an XML tree from a source, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] lets you modify that tree in place, and then serialize the tree, perhaps saving it to a file or sending it to a remote server.  
@@ -33,5 +21,6 @@ ms.author: dotnetcontent
 |[Maintaining Name/Value Pairs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/maintaining-name-value-pairs.md)|Describes how to maintain application information that is best kept as name/value pairs, such as configuration information or global settings.|  
 |[How to: Change the Namespace for an Entire XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md)|Shows how to move an XML tree from one namespace into another.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

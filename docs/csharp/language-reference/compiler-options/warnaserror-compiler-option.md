@@ -1,10 +1,6 @@
 ---
 title: "-warnaserror (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/warnaserror"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-warnaserror compiler option [C#]"
   - "warnaserror compiler option [C#]"
 ms.assetid: 04680ec3-08d6-4e2e-a274-38310e10e33c
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -warnaserror (C# Compiler Options)
 The **-warnaserror+** option treats all warnings as errors  
@@ -52,6 +45,7 @@ csc -warnaserror in.cs
 csc -warnaserror:642,649,652 in.cs  
 ```  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

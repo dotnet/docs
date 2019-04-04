@@ -1,24 +1,10 @@
 ---
 title: "Propagation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Propagation
-This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] tracing model.  
+This topic describes activity propagation in the Windows Communication Foundation (WCF) tracing model.  
   
 ## Using Propagation to Correlate Activities Across Endpoints  
  Propagation provides the user with direct correlation of error traces for the same unit of processing across application endpoints, for example, a request. Errors emitted at different endpoints for the same unit of processing are grouped in the same activity, even across application domains. This is done through propagation of the activity ID in the message headers. Therefore, if a client times out because of an internal error in the server, both errors appear in the same activity for direct correlation.  
@@ -29,7 +15,7 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity="true" >  
 ```  
   
- Activity propagation is a configurable capability that causes [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] to add a header to outbound messages, which includes the activity ID on the TLS. By including this on subsequent traces on the server side, we can correlate client and server activities.  
+ Activity propagation is a configurable capability that causes WCF to add a header to outbound messages, which includes the activity ID on the TLS. By including this on subsequent traces on the server side, we can correlate client and server activities.  
   
 ## Propagation Definition  
  Activity M’s gAId is propagated to activity N if all of the following conditions apply.  
@@ -52,21 +38,19 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
   
 ```xml  
 <MessageLogTraceRecord>  
-  <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"     
+  <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
                       xmlns:a="http://www.w3.org/2005/08/addressing">  
     <s:Header>  
       <a:Action s:mustUnderstand="1">http://Microsoft.ServiceModel.Samples/ICalculator/Subtract  
       </a:Action>  
       <a:MessageID>urn:uuid:f0091eae-d339-4c7e-9408-ece34602f1ce  
       </a:MessageID>  
-      <ActivityId CorrelationId="f94c6af1-7d5d-4295-b693-4670a8a0ce34"   
-  
+      <ActivityId CorrelationId="f94c6af1-7d5d-4295-b693-4670a8a0ce34"
                xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">  
         17f59a29-b435-4a15-bf7b-642ffc40eac8  
       </ActivityId>  
       <a:ReplyTo>  
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous  
-          </a:Address>  
+          <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>  
       </a:ReplyTo>  
       <a:To s:mustUnderstand="1">net.tcp://localhost/servicemodelsamples/service</a:To>  
    </s:Header>  
@@ -86,8 +70,8 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
 ## Synchronization  
  To synchronize events across endpoints that run on different machines, a CorrelationId is added to the ActivityId header that is propagated in messages. Tools can use this ID to synchronize events across machines with clock discrepancy. Specifically, the Service Trace Viewer tool uses this ID for showing message flows between endpoints.  
   
-## See Also  
- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+## See also
+- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)

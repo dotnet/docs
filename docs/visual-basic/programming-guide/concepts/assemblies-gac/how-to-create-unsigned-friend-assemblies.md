@@ -1,16 +1,7 @@
 ---
 title: "How to: Create Unsigned Friend Assemblies (Visual Basic)"
-ms.custom: ""
 ms.date: 03/14/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
-author: rpetrusha
-ms.author: ronpet
 ---
 # How to: Create Unsigned Friend Assemblies (Visual Basic)
 This example shows how to use friend assemblies with assemblies that are unsigned.  
@@ -87,9 +78,10 @@ This example shows how to use friend assemblies with assemblies that are unsigne
 ## .NET Framework Security  
  There are similarities between the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute and the <xref:System.Security.Permissions.StrongNameIdentityPermission> class. The main difference is that <xref:System.Security.Permissions.StrongNameIdentityPermission> can demand security permissions to run a particular section of code, whereas the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute controls the visibility of `Friend` types and members.  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
- [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)  
- [Programming Guide Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+## See also
+
+- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [Friend Assemblies](../../../../standard/assembly/friend-assemblies.md)
+- [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)
+- [Programming Guide Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

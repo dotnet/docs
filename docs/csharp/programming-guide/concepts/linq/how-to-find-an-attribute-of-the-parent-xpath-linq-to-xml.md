@@ -1,19 +1,7 @@
 ---
 title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: dbef9d89-a5c4-431f-80cc-7a2ebf323f86
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find an Attribute of the Parent (XPath-LINQ to XML) (C#)
 This topic shows how to navigate to the parent element and find an attribute of it.  
@@ -59,5 +47,6 @@ Results are identical
 id="bk101"  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

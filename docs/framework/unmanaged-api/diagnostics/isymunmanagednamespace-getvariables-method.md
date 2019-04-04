@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedNamespace::GetVariables Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedNamespace.GetVariables"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ea7c1617-f3ce-4220-8288-f2b50eaf0f0f
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedNamespace::GetVariables Method
 Returns all variables defined at global scope within this namespace.  
@@ -43,7 +31,7 @@ HRESULT GetVariables(
         ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cVars`  
  [in] A `ULONG32` that indicates the size of the `pVars` array.  
   
@@ -59,5 +47,5 @@ HRESULT GetVariables(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+## See also
+- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)

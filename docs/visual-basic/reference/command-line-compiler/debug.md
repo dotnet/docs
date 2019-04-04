@@ -1,20 +1,12 @@
 ---
 title: "/debug (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "debug compiler switches"
   - "/debug compiler option [Visual Basic]"
   - "-debug compiler option [Visual Basic]"
   - "debug compiler option [Visual Basic]"
 ms.assetid: c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2
-author: rpetrusha
-ms.author: ronpet
 ---
 # -debug (Visual Basic)
 Causes the compiler to generate debugging information and place it in the output file(s).  
@@ -52,7 +44,8 @@ Causes the compiler to generate debugging information and place it in the output
 vbc -debug -out:app.exe test.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

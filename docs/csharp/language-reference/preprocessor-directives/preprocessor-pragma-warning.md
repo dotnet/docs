@@ -1,18 +1,13 @@
 ---
-title: "#pragma warning (C# Reference)"
+title: "#pragma warning - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "#pragma warning"
 helpviewer_keywords: 
   - "#pragma warning [C#]"
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #pragma warning (C# Reference)
 `#pragma warning` can enable or disable certain warnings.  
@@ -24,7 +19,7 @@ ms.author: "wiwagn"
 #pragma warning restore warning-list  
 ```  
   
-#### Parameters  
+## Parameters  
  `warning-list`  
  A comma-separated list of warning numbers. The "CS" prefix is optional.  
   
@@ -59,8 +54,9 @@ public class D
 }  
 ```  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)  
- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)

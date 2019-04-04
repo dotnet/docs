@@ -1,23 +1,9 @@
 ---
 title: "REF CURSOR Parameters in an OracleDataReader"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 ms.assetid: 801dff0f-2508-45aa-9416-f45d6887740c
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # REF CURSOR Parameters in an OracleDataReader
 This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns a REF CURSOR parameter, and reads the value as an <xref:System.Data.OracleClient.OracleDataReader>.  
@@ -51,6 +37,6 @@ Private Sub Button1_Click(ByVal sender As Object, _
 End Sub  
 ```  
   
-## See Also  
- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

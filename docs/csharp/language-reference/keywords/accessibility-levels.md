@@ -1,16 +1,12 @@
 ---
-title: "Accessibility Levels (C# Reference)"
+title: "Accessibility Levels - C# Reference"
+ms.custom: seodec18
+
 ms.date: 12/06/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility levels"
   - "accessibility levels"
 ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Accessibility Levels (C# Reference)
 
@@ -47,15 +43,15 @@ Use the access modifiers, `public`, `protected`, `internal`, or `private`, to sp
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md)  
- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)  
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [public](../../../csharp/language-reference/keywords/public.md)  
- [private](../../../csharp/language-reference/keywords/private.md)  
- [protected](../../../csharp/language-reference/keywords/protected.md)  
- [internal](../../../csharp/language-reference/keywords/internal.md)
+## See also
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)
+- [Accessibility Domain](../../../csharp/language-reference/keywords/accessibility-domain.md)
+- [Restrictions on Using Accessibility Levels](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
+- [public](../../../csharp/language-reference/keywords/public.md)
+- [private](../../../csharp/language-reference/keywords/private.md)
+- [protected](../../../csharp/language-reference/keywords/protected.md)
+- [internal](../../../csharp/language-reference/keywords/internal.md)

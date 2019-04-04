@@ -1,10 +1,6 @@
 ---
-title: "&lt;section&gt; element"
+title: "<section> element"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/section"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup/section"
@@ -14,9 +10,6 @@ helpviewer_keywords:
 ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<section> element
@@ -100,4 +93,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

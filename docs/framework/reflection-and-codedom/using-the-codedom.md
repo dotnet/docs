@@ -1,14 +1,6 @@
 ---
 title: "Using the CodeDOM"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -28,12 +20,8 @@ helpviewer_keywords:
   - "code generators"
   - "CodeDOM, graphs"
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the CodeDOM
 The CodeDOM provides types that represent many common types of source code elements. You can design a program that builds a source code model using CodeDOM elements to assemble an object graph. This object graph can be rendered as source code using a CodeDOM code generator for a supported programming language. The CodeDOM can also be used to compile source code into a binary assembly.  
@@ -133,4 +121,4 @@ The CodeDOM provides types that represent many common types of source code eleme
   
  For documentation for the each of the CodeDOM types, see the reference documentation for the <xref:System.CodeDom> namespace.  
   
- For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).
+ For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)).

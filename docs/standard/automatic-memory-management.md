@@ -1,13 +1,7 @@
 ---
 title: "Automatic Memory Management"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, automatic memory management"
   - "memory, allocating"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "managed heap"
   - "runtime, automatic memory management"
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Automatic Memory Management
 Automatic memory management is one of the services that the Common Language Runtime provides during [Managed Execution](../../docs/standard/managed-execution-process.md). The Common Language Runtime's garbage collector manages the allocation and release of memory for an application. For developers, this means that you do not have to write code to perform memory management tasks when you develop managed applications. Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak, or attempting to access memory for an object that has already been freed. This section describes how the garbage collector allocates and releases memory.  
@@ -56,7 +45,8 @@ Automatic memory management is one of the services that the Common Language Runt
 ## Releasing Memory for Unmanaged Resources  
  For the majority of the objects that your application creates, you can rely on the garbage collector to automatically perform the necessary memory management tasks. However, unmanaged resources require explicit cleanup. The most common type of unmanaged resource is an object that wraps an operating system resource, such as a file handle, window handle, or network connection. Although the garbage collector is able to track the lifetime of a managed object that encapsulates an unmanaged resource, it does not have specific knowledge about how to clean up the resource. When you create an object that encapsulates an unmanaged resource, it is recommended that you provide the necessary code to clean up the unmanaged resource in a public **Dispose** method. By providing a **Dispose** method, you enable users of your object to explicitly free its memory when they are finished with the object. When you use an object that encapsulates an unmanaged resource, you should be aware of **Dispose** and call it as necessary. For more information about cleaning up unmanaged resources and an example of a design pattern for implementing **Dispose**, see [Garbage Collection](../../docs/standard/garbage-collection/index.md).  
   
-## See Also  
- <xref:System.GC>  
- [Garbage Collection](../../docs/standard/garbage-collection/index.md)  
- [Managed Execution Process](../../docs/standard/managed-execution-process.md)
+## See also
+
+- <xref:System.GC>
+- [Garbage Collection](../../docs/standard/garbage-collection/index.md)
+- [Managed Execution Process](../../docs/standard/managed-execution-process.md)

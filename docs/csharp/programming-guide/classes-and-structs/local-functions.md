@@ -1,10 +1,7 @@
 ---
-title: "Local functions (C# Programming Guide)"
+title: "Local functions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 06/14/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "local functions [C#]"
 author: "rpetrusha"
@@ -12,7 +9,7 @@ ms.author: "ronpet"
 ---
 # Local functions (C# Programming Guide)
 
-Starting with C# 7, C# supports *local functions*. Local functions are private methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
+Starting with C# 7.0, C# supports *local functions*. Local functions are private methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
 
 - Methods, especially iterator methods and async methods
 - Constructors
@@ -28,7 +25,7 @@ However, local functions can't be declared inside an expression-bodied member.
 > [!NOTE]
 > In some cases, you can use a lambda expression to implement functionality also supported by a local function. For a comparison, see [Local functions compared to Lambda expressions](../../local-functions-vs-lambdas.md).
 
-Local functions make the intent of your code clear. Anyone reading you code can see that the method is not callable except by the containing method. For team projects, they also make it impossible for another developer to mistakenly call the method directly from elsewhere in the class or stuct.
+Local functions make the intent of your code clear. Anyone reading you code can see that the method is not callable except by the containing method. For team projects, they also make it impossible for another developer to mistakenly call the method directly from elsewhere in the class or struct.
  
 ## Local function syntax
 
@@ -72,9 +69,10 @@ The following example uses an asynchronous method named `GetMultipleAsync` to pa
 
 [!code-csharp[LocalFunctionAsync`](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async1.cs)] 
 
-As we did with the method iterator, we can refactor the code from this example to perform the validation before calling the asynchronous method. As the output from the following example shows, the <xref:System.ArgumentOutOfRangeException> is not wrapped in a <x:System.AggregateException>.
+As we did with the method iterator, we can refactor the code from this example to perform the validation before calling the asynchronous method. As the output from the following example shows, the <xref:System.ArgumentOutOfRangeException> is not wrapped in a <xref:System.AggregateException>.
 
 [!code-csharp[LocalFunctionAsync`](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async2.cs)] 
 
 ## See also
-[Methods](methods.md)
+
+- [Methods](methods.md)

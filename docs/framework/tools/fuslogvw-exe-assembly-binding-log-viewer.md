@@ -1,14 +1,6 @@
 ---
 title: "Fuslogvw.exe (Assembly Binding Log Viewer)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "failed assembly binds"
   - "Fuslogvw.exe"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "locating assemblies"
   - "Assembly Binding Log Viewer"
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
-caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Fuslogvw.exe (Assembly Binding Log Viewer)
 The Assembly Binding Log Viewer displays details for assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at run time. These failures are usually the result of an assembly deployed to the wrong location, a native image that is no longer valid, or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <xref:System.TypeLoadException> in your application.  
@@ -30,7 +18,7 @@ The Assembly Binding Log Viewer displays details for assembly binds. This inform
 > [!IMPORTANT]
 >  You must run fuslogvw.exe with administrator privileges.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -234,9 +222,9 @@ Discarding native image.
     > [!NOTE]
     >  This box is enabled only on Windows 8 or later.  
   
-## See Also  
- <xref:System.TypeLoadException>  
- [Tools](../../../docs/framework/tools/index.md)  
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- <xref:System.TypeLoadException>
+- [Tools](../../../docs/framework/tools/index.md)
+- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

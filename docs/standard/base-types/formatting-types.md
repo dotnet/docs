@@ -1,13 +1,7 @@
 ---
 title: "Formatting Types in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -31,13 +25,8 @@ helpviewer_keywords:
   - "custom formatting [.NET Framework]"
   - "strings [.NET Framework], formatting"
 ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
-caps.latest.revision: 43
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Formatting Types in .NET
 <a name="Introduction"></a> Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:  
@@ -125,7 +114,7 @@ ms.workload:
  [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]  
   
 > [!WARNING]
->  Starting with [!INCLUDE[win81](../../../includes/win81-md.md)], the [!INCLUDE[wrt](../../../includes/wrt-md.md)] includes an [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) interface with a single method, [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The [!INCLUDE[wrt](../../../includes/wrt-md.md)] and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.  
+>  Starting with [!INCLUDE[win81](../../../includes/win81-md.md)], the [!INCLUDE[wrt](../../../includes/wrt-md.md)] includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The [!INCLUDE[wrt](../../../includes/wrt-md.md)] and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.  
   
  Because all types other than interfaces are derived from <xref:System.Object>, this functionality is automatically provided to your custom classes or structures. However, the functionality offered by the default `ToString` method, is limited: Although it identifies the type, it fails to provide any information about an instance of the type. To provide a string representation of an object that provides information about that object, you must override the `ToString` method.  
   

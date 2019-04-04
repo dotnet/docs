@@ -1,14 +1,6 @@
 ---
 title: "ICLRReferenceAssemblyEnum::Get Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRReferenceAssemblyEnum.Get"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f21c1612-9c5d-4abc-a337-577086d29c17
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRReferenceAssemblyEnum::Get Method
 Gets the assembly identity at the supplied index.  
@@ -43,7 +31,7 @@ HRESULT Get (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The zero-based index of the assembly identity to return.  
   
@@ -78,6 +66,6 @@ HRESULT Get (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)  
- [ICLRReferenceAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-interface.md)
+## See also
+- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
+- [ICLRReferenceAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-interface.md)

@@ -1,14 +1,6 @@
 ---
-title: "&lt;UseRandomizedStringHashAlgorithm&gt; Element"
-ms.custom: ""
+title: "<UseRandomizedStringHashAlgorithm> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,14 +8,10 @@ helpviewer_keywords:
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;UseRandomizedStringHashAlgorithm&gt; Element
+# \<UseRandomizedStringHashAlgorithm> Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
   
  \<configuration>  
@@ -101,7 +89,7 @@ String 'This is a string.' in domain 'PerDomain.exe': 5435776D
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
 ```  
   
-## See Also  
- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>  
- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>
+## See also
+- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

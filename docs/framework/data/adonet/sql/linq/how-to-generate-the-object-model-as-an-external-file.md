@@ -1,21 +1,7 @@
 ---
 title: "How to: Generate the Object Model as an External File"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2496fa06-3df4-4ecb-86c4-70a49ea08565
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Generate the Object Model as an External File
 As an alternative to attribute-based mapping, you can generate your object model as an external XML file by using the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). By using an external XML mapping file, you reduce clutter in your code. You can also change behavior by modifying the external file without recompiling the binaries of your application. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
@@ -56,7 +42,7 @@ sqlmetal /server:myserver /database:northwind /map:externalfile.xml
 </Database>  
 ```  
   
-## See Also  
- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)  
- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
- [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
+## See also
+- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
+- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)

@@ -1,23 +1,9 @@
 ---
-title: "&lt;clientCredentials&gt;"
-ms.custom: ""
+title: "<clientCredentials>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;clientCredentials&gt;
+# \<clientCredentials>
 Specifies the credentials used to authenticate the client to a service.  
   
  \<system.ServiceModel>  
@@ -29,21 +15,21 @@ Specifies the credentials used to authenticate the client to a service.
 ## Syntax  
   
 ```xml  
-<clientCredentials type="String"  
-      supportInteractive="Boolean" >  
-   <clientCertificate>  
-   </clientCertificate>  
-   <digest>  
-   </digest>  
-   <isuedToken>  
-   </isuedToken>  
-   <peer>  
-   </peer>  
-   <serviceCertificate>  
-   </serviceCertificate>  
-   <windowsAuthentication>  
-   </windowsAuthentication>  
-</clientCredentials>  
+<clientCredentials type="String"
+                   supportInteractive="Boolean" >
+  <clientCertificate>
+  </clientCertificate>
+  <digest>
+  </digest>
+  <isuedToken>
+  </isuedToken>
+  <peer>
+  </peer>
+  <serviceCertificate>
+  </serviceCertificate>
+  <windowsAuthentication>
+  </windowsAuthentication>
+</clientCredentials>
 ```  
   
 ## Attributes and Elements  
@@ -76,8 +62,8 @@ Specifies the credentials used to authenticate the client to a service.
 ## Remarks  
  Client credentials are used to authenticate the client to services in cases where mutual authentication is required. This configuration section can also be used to specify service certificates for scenarios where the client must secure messages to a service with the service's certificate.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)

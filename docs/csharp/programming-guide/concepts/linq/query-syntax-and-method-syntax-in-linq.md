@@ -1,20 +1,10 @@
 ---
 title: "Query Syntax and Method Syntax in LINQ (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "LINQ [C#], query syntax vs. method syntax"
   - "queries [LINQ in C#], syntax comparisons"
 ms.assetid: eedd6dd9-fec2-428c-9581-5b8783810ded
-caps.latest.revision: 30
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Query Syntax and Method Syntax in LINQ (C#)
 Most queries in the introductory Language Integrated Query ([!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]) documentation are written by using the LINQ declarative query syntax. However, the query syntax must be translated into method calls for the .NET common language runtime (CLR) when the code is compiled. These method calls invoke the standard query operators, which have names such as `Where`, `Select`, `GroupBy`, `Join`, `Max`, and `Average`. You can call them directly by using method syntax instead of query syntax.  
@@ -24,13 +14,13 @@ Most queries in the introductory Language Integrated Query ([!INCLUDE[vbteclinq]
 ## Standard Query Operator Extension Methods  
  The following example shows a simple *query expression* and the semantically equivalent query written as a *method-based query*.  
   
- [!code-csharp[csLINQGettingStarted#22](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/query-syntax-and-method-syntax-in-linq_1.cs)]  
+ [!code-csharp[csLINQGettingStarted#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#22)]  
   
  The output from the two examples is identical. You can see that the type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable%601>.  
   
  To understand the method-based query, let's examine it more closely. On the right side of the expression, notice that the `where` clause is now expressed as an instance method on the `numbers` object, which as you will recall has a type of `IEnumerable<int>`. If you are familiar with the generic <xref:System.Collections.Generic.IEnumerable%601> interface, you know that it does not have a `Where` method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you will see not only a `Where` method, but many other methods such as `Select`, `SelectMany`, `Join`, and `Orderby`. These are all the standard query operators.  
   
- ![Standard Query Operators in Intellisense](../../../../csharp/programming-guide/concepts/linq/media/standardqueryops.png "StandardQueryOps")  
+ ![Screenshot showing all the standard query operators in Intellisense.](./media/query-syntax-and-method-syntax-in-linq/standard-query-operators.png)  
   
  Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> has been redefined to include these additional methods, in fact this is not the case. The standard query operators are implemented as a new kind of method called *extension methods*. Extensions methods "extend" an existing type; they can be called as if they were instance methods on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601> and that is why you can write `numbers.Where(...)`.  
   
@@ -46,5 +36,6 @@ Most queries in the introductory Language Integrated Query ([!INCLUDE[vbteclinq]
 ## Composability of Queries  
  In the previous code example, note that the `OrderBy` method is invoked by using the dot operator on the call to `Where`. `Where` produces a filtered sequence, and then `Orderby` operates on that sequence by sorting it. Because queries return an `IEnumerable`, you compose them in method syntax by chaining the method calls together. This is what the compiler does behind the scenes when you write queries by using query syntax. And because a query variable does not store the results of the query, you can modify it or use it as the basis for a new query at any time, even after it has been executed.  
   
-## See Also  
- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+## See also
+
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

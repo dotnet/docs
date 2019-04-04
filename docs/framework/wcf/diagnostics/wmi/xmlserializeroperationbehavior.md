@@ -1,28 +1,14 @@
 ---
 title: "XmlSerializerOperationBehavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8911aa1b-e34b-4161-a3ae-7468d89a6861
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XmlSerializerOperationBehavior
 XmlSerializerOperationBehavior  
   
 ## Syntax  
   
-```  
+```csharp
 class XmlSerializerOperationBehavior : Behavior  
 {  
   string Style;  
@@ -56,5 +42,5 @@ class XmlSerializerOperationBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>
+## See also
+- <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>

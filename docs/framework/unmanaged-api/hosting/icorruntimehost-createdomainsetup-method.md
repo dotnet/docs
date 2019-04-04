@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::CreateDomainSetup Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.CreateDomainSetup"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c21dab60-fb65-47d9-8a94-7fd47ca53b48
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorRuntimeHost::CreateDomainSetup Method
 Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
@@ -41,7 +29,7 @@ HRESULT CreateDomainSetup (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomainSetup`  
  [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
   
@@ -66,9 +54,9 @@ HRESULT CreateDomainSetup (
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- <xref:System.AppDomainSetup>  
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- <xref:System.AppDomainSetup>
+- <xref:System.IAppDomainSetup?displayProperty=nameWithType>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

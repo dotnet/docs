@@ -1,21 +1,11 @@
 ---
-title: Statically Resolved Type Parameters (F#)
+title: Statically Resolved Type Parameters
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: b3797415-3e49-4f8a-a8ee-fa614c5721aa 
 ---
-
 # Statically Resolved Type Parameters
 
 A *statically resolved type parameter* is a type parameter that is replaced with an actual type at compile time instead of at run time. They are preceded by a caret (^) symbol.
-
 
 ## Syntax
 
@@ -24,6 +14,7 @@ A *statically resolved type parameter* is a type parameter that is replaced with
 ```
 
 ## Remarks
+
 In the F# language, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. These are indicated by an apostrophe ('), as in `'T` and `'U`. They are equivalent to generic type parameters in other .NET Framework languages. The other kind is statically resolved and is indicated by a caret symbol, as in `^T` and `^U`.
 
 Statically resolved type parameters are primarily useful in conjunction with member constraints, which are constraints that allow you to specify that a type argument must have a particular member or members in order to be used. There is no way to create this kind of constraint by using a regular generic type parameter.
@@ -63,36 +54,35 @@ The output is as follows.
 Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name could actually be inferred by the compiler, but could not actually be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
 
 ```fsharp
+let inline konst x _ = x
+
 type CFunctor() = 
-      static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
-      static member inline fmap (f: ^a -> ^b, a: ^a option) =
+    static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
+    static member inline fmap (f: ^a -> ^b, a: ^a option) =
         match a with
         | None -> None
         | Some x -> Some (f x)
 
-      // default implementation of replace
-      static member inline replace< ^a, ^b, ^c, ^d, ^e when ^a :> CFunctor and (^a or ^d): (static member fmap: (^b -> ^c) * ^d -> ^e) > (a, f) =
+    // default implementation of replace
+    static member inline replace< ^a, ^b, ^c, ^d, ^e when ^a :> CFunctor and (^a or ^d): (static member fmap: (^b -> ^c) * ^d -> ^e) > (a, f) =
         ((^a or ^d) : (static member fmap : (^b -> ^c) * ^d -> ^e) (konst a, f))
 
-      // call overridden replace if present
-      static member inline replace< ^a, ^b, ^c when ^b: (static member replace: ^a * ^b -> ^c)>(a: ^a, f: ^b) =
+    // call overridden replace if present
+    static member inline replace< ^a, ^b, ^c when ^b: (static member replace: ^a * ^b -> ^c)>(a: ^a, f: ^b) =
         (^b : (static member replace: ^a * ^b -> ^c) (a, f))
 
 let inline replace_instance< ^a, ^b, ^c, ^d when (^a or ^c): (static member replace: ^b * ^c -> ^d)> (a: ^b, f: ^c) =
-      ((^a or ^c): (static member replace: ^b * ^c -> ^d) (a, f))
+        ((^a or ^c): (static member replace: ^b * ^c -> ^d) (a, f))
 
 // Note the concrete type 'CFunctor' specified in the signature
 let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member replace: ^a *  ^b ->  ^a0) =
     replace_instance<CFunctor, _, _, _> (a, f)
 ```
 
-## See Also
-[Generics](index.md)
+## See also
 
-[Type Inference](../type-inference.md)
-
-[Automatic Generalization](automatic-generalization.md)
-
-[Constraints](constraints.md)
-
-[Inline Functions](../functions/inline-functions.md)
+- [Generics](index.md)
+- [Type Inference](../type-inference.md)
+- [Automatic Generalization](automatic-generalization.md)
+- [Constraints](constraints.md)
+- [Inline Functions](../functions/inline-functions.md)

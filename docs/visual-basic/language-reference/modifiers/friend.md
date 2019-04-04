@@ -1,11 +1,6 @@
 ---
 title: "Friend (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Friend"
 helpviewer_keywords: 
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "Protected Friend keyword combination"
   - "Friend keyword [Visual Basic], and Protected"
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Friend (Visual Basic)
 Specifies that one or more declared programming elements are accessible only from within the assembly that contains their declaration.  
@@ -30,18 +22,19 @@ Specifies that one or more declared programming elements are accessible only fro
  `Friend` access is often the preferred level for an application's programming elements, and `Friend` is the default access level of an interface, a module, a class, or a structure.  
   
  You can use `Friend` only at the module, interface, or namespace level. Therefore, the declaration context for a `Friend` element must be a source file, a namespace, an interface, a module, a class, or a structure; it can't be a procedure.  
-  
- You can use the `Friend` modifier in conjunction with the [Protected](../../../visual-basic/language-reference/modifiers/protected.md) modifier in the same declaration. This combination confers both `Friend` access and protected access on the declared elements, so they are accessible from anywhere in the same assembly, from their own class, and from derived classes. You can specify `Protected Friend` only on members of classes.  
-  
+
+> [!NOTE]
+> You can also use the [Protected Friend](protected-friend.md) access modifier, which makes a class member accessible from within that class, from derived classes, and from the same assembly in which the class is defined. To restrict access to a member from within its class and from derived classes in the same assembly, you use the [Private Protected](private-protected.md) access modifier.
+
  For a comparison of `Friend` and the other access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 > [!NOTE]
->  You can specify that another assembly is a friend assembly, which allows it to access all types and members that are marked as `Friend`. For more information, see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
+>  You can specify that another assembly is a friend assembly, which allows it to access all types and members that are marked as `Friend`. For more information, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
   
 ## Example  
  The following class uses the `Friend` modifier to allow other programming elements within the same assembly to access certain members.  
   
- [!code-vb[VbVbalrAccessModifiers#1](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/friend_1.vb)]  
+ [!code-vb[VbVbalrAccessModifiers#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalraccessmodifiers/vb/class1.vb#1)]  
   
 ## Usage  
  You can use the `Friend` modifier in these contexts:  
@@ -72,12 +65,15 @@ Specifies that one or more declared programming elements are accessible only fro
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
- [Public](../../../visual-basic/language-reference/modifiers/public.md)  
- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
- [Private](../../../visual-basic/language-reference/modifiers/private.md)  
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+## See also
+
+- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
+- [Public](../../../visual-basic/language-reference/modifiers/public.md)
+- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Private Protected](./private-protected.md)
+- [Protected Friend](./protected-friend.md)
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

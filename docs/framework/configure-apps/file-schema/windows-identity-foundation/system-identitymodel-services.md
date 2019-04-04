@@ -1,23 +1,10 @@
 ---
-title: "&lt;system.identityModel.services&gt;"
-ms.custom: ""
+title: "<system.identityModel.services>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;system.identityModel.services&gt;
+# \<system.identityModel.services>
 Configuration section for authentication using the WS-Federation protocol.  
   
  \<system.identityModel.services>  

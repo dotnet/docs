@@ -1,21 +1,12 @@
 ---
 title: "Because this call is not awaited, the current method continues to run before the call is completed"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc42358"
   - "vbc42358"
 helpviewer_keywords: 
   - "BC42358"
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Because this call is not awaited, the current method continues to run before the call is completed
 Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'Await' operator to the result of the call.  
@@ -120,7 +111,7 @@ Because this call is not awaited, execution of the current method continues befo
   
      A simple window that contains a button and a text box appears in the **Design** view of MainWindow.xaml.  
   
-     For more information about the XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](http://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042).  
+     For more information about the XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
 4.  Replace the code in MainWindow.xaml.vb with the following code.  
   
@@ -206,6 +197,7 @@ Because this call is not awaited, execution of the current method continues befo
   
      The expected output appears at the end of the code.  
   
-## See Also  
- [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)  
- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)
+## See also
+
+- [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)
+- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)

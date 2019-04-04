@@ -1,13 +1,7 @@
 ---
 title: "Using the StringBuilder Class in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,13 +16,8 @@ helpviewer_keywords:
   - "Insert method"
   - "strings [.NET Framework], StringBuilder object"
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Using the StringBuilder Class in .NET
 The <xref:System.String> object is immutable. Every time you use one of the methods in the <xref:System.String?displayProperty=nameWithType> class, you create a new string object in memory, which requires a new allocation of space for that new object. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a new <xref:System.String> object can be costly. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class can be used when you want to modify a string without creating a new object. For example, using the <xref:System.Text.StringBuilder> class can boost performance when concatenating many strings together in a loop.  
@@ -48,7 +37,7 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
  [!code-vb[Conceptual.StringBuilder#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#1)]  
   
 ## Setting the Capacity and Length  
- Although the <xref:System.Text.StringBuilder> is a dynamic object that allows you to expand the number of characters in the string that it encapsulates, you can specify a value for the maximum number of characters that it can hold. This value is called the capacity of the object and should not be confused with the length of the string that the current <xref:System.Text.StringBuilder> holds. For example, you might create a new instance of the <xref:System.Text.StringBuilder> class with the string "Hello", which has a length of 5, and you might specify that the object has a maximum capacity of 25. When you modify the <xref:System.Text.StringBuilder>, it does not reallocate size for itself until the capacity is reached. When this occurs, the new space is allocated automatically and the capacity is doubled. You can specify the capacity of the <xref:System.Text.StringBuilder> class using one of the overloaded constructors. The following example specifies that the `MyStringBuilder` object can be expanded to a maximum of 25 spaces.  
+ Although the <xref:System.Text.StringBuilder> is a dynamic object that allows you to expand the number of characters in the string that it encapsulates, you can specify a value for the maximum number of characters that it can hold. This value is called the capacity of the object and should not be confused with the length of the string that the current <xref:System.Text.StringBuilder> holds. For example, you might create a new instance of the <xref:System.Text.StringBuilder> class with the string "Hello", which has a length of 5, and you might specify that the object has a maximum capacity of 25. When you modify the <xref:System.Text.StringBuilder>, it does not reallocate size for itself until the capacity is reached. When this occurs, the new space is allocated automatically and the capacity is doubled. You can specify the capacity of the <xref:System.Text.StringBuilder> class using one of the overloaded constructors. The following example specifies that the `myStringBuilder` object can be expanded to a maximum of 25 spaces.  
   
  [!code-cpp[Conceptual.StringBuilder#2](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#2)]
  [!code-csharp[Conceptual.StringBuilder#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#2)]
@@ -116,7 +105,8 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
  [!code-csharp[Conceptual.StringBuilder#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/tostringexample1.cs#10)]
  [!code-vb[Conceptual.StringBuilder#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/tostringexample1.vb#10)]  
   
-## See Also  
- <xref:System.Text.StringBuilder?displayProperty=nameWithType>  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+## See also
+
+- <xref:System.Text.StringBuilder?displayProperty=nameWithType>
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

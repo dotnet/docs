@@ -1,11 +1,6 @@
 ---
 title: "Dates and Times Summary (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "dates [Visual Basic], Visual Basic data types"
   - "dates [Visual Basic], run-time library members"
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "time, Visual Basic keywords and run-time library members"
   - "time data types [Visual Basic]"
 ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Dates and Times Summary (Visual Basic)
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
@@ -31,6 +23,7 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Set the date or time.|<xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeString%2A>, <xref:Microsoft.VisualBasic.DateAndTime.Today%2A>|  
 |Time a process.|<xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

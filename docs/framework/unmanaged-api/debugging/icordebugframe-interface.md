@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugFrame Interface1"
-ms.custom: ""
+title: "ICorDebugFrame Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFrame"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 0c48f764-3c64-4602-b2f4-4ffc60eb2c65
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugFrame Interface1
+# ICorDebugFrame Interface
+
 Represents a frame on the current stack.  
   
 ## Methods  
@@ -59,5 +48,5 @@ Represents a frame on the current stack.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

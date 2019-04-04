@@ -1,12 +1,6 @@
 ---
 title: "Using Secure Sockets Layer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +15,6 @@ helpviewer_keywords:
   - "receiving data, Secure Sockets Layer"
   - "Internet, Secure Sockets Layer"
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
-caps.latest.revision: 14
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Secure Sockets Layer
 The <xref:System.Net> classes use the Secure Sockets Layer (SSL) to encrypt the connection for several network protocols.  
@@ -68,7 +56,7 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
   
 -   References to the **System.Net** namespace.  
   
-## See Also  
- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
- [Certificate Selection and Validation](../../../docs/framework/network-programming/certificate-selection-and-validation.md)
+## See also
+- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Certificate Selection and Validation](../../../docs/framework/network-programming/certificate-selection-and-validation.md)

@@ -1,14 +1,6 @@
 ---
 title: "FExecuteInAppDomainCallback Function Pointer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "FExecuteInAppDomainCallback"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 2709f18f-3eee-497f-bc33-3ab7a485599b
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FExecuteInAppDomainCallback Function Pointer
 Points to a function that is called by the common language runtime (CLR) to execute managed code.  
@@ -42,7 +30,7 @@ typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] A pointer to opaque caller-allocated memory that contains the managed code to be executed.  
   
@@ -57,5 +45,5 @@ typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

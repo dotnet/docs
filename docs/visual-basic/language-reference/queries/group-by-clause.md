@@ -1,12 +1,6 @@
 ---
 title: "Group By Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QueryGroupByInto"
   - "vb.QueryGroupBy"
@@ -18,9 +12,6 @@ helpviewer_keywords:
   - "Group By statement [Visual Basic]"
   - "Group By clause [Visual Basic]"
 ms.assetid: b1b5dcea-6654-473b-a2db-01f7e4c265d7
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Group By Clause (Visual Basic)
 Groups the elements of a query result. Can also be used to apply aggregate functions to each group. The grouping operation is based on one or more keys.  
@@ -70,13 +61,14 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
 ## Example  
  The following code example groups a list of customers based on their location (country) and provides a count of the customers in each group. The results are ordered by country name. The grouped results are ordered by city name.  
   
- [!code-vb[VbSimpleQuerySamples#11](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-by-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#11)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)
+## See also
+
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)
+- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICLRDataTarget::GetThreadContext Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDataTarget.GetThreadContext"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b9d8c3b5-3a2e-4225-95d4-dd052c4532c3
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDataTarget::GetThreadContext Method
 Gets the current execution context for the given thread in the target process. This method is called by the common language runtime data access services.  
@@ -45,7 +33,7 @@ HRESULT GetThreadContext (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   
@@ -72,5 +60,5 @@ HRESULT GetThreadContext (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## See also
+- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Choose Folders with the Windows Forms FolderBrowserDialog Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "folders [Windows Forms], choosing"
   - "directories [Windows Forms], selecting"
 ms.assetid: 4593670e-7c7d-4661-b46b-4ffb63258adb
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Choose Folders with the Windows Forms FolderBrowserDialog Component
 Often, within Windows applications you create, you will have to prompt users to select a folder, most frequently to save a set of files. The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component allows you to easily accomplish this task.  
@@ -70,11 +56,11 @@ Often, within Windows applications you create, you will have to prompt users to 
     ```  
   
     > [!IMPORTANT]
-    >  To use this class, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> property, which is part of the <xref:System.Security.Permissions.FileIOPermissionAccess> enumeration. If you are running in a partial-trust context, the process might throw an exception because of insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  To use this class, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> property, which is part of the <xref:System.Security.Permissions.FileIOPermissionAccess> enumeration. If you are running in a partial-trust context, the process might throw an exception because of insufficient privileges. For more information, see [Code Access Security Basics](../../misc/code-access-security-basics.md).  
   
- For information on how to save files, see [How to: Save Files Using the SaveFileDialog Component](../../../../docs/framework/winforms/controls/how-to-save-files-using-the-savefiledialog-component.md).  
+ For information on how to save files, see [How to: Save Files Using the SaveFileDialog Component](how-to-save-files-using-the-savefiledialog-component.md).  
   
-## See Also  
- <xref:System.Windows.Forms.FolderBrowserDialog>  
- [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
- [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.FolderBrowserDialog>
+- [FolderBrowserDialog Component Overview (Windows Forms)](folderbrowserdialog-component-overview-windows-forms.md)
+- [FolderBrowserDialog Component](folderbrowserdialog-component-windows-forms.md)

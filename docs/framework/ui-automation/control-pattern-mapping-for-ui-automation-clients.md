@@ -1,28 +1,14 @@
 ---
 title: "Control Pattern Mapping for UI Automation Clients"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control patterns, for UI Automation clients"
   - "UI Automation, clients, control patterns for"
 ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
-caps.latest.revision: 18
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Control Pattern Mapping for UI Automation Clients
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic lists control types and their associated control patterns.  
   
@@ -84,5 +70,5 @@ ms.workload:
 > [!NOTE]
 >  If a control type has no supported control patterns listed but has one or more conditionally-supported control patterns, then one of those conditional control patterns will be supported at all times.  
   
-## See Also  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

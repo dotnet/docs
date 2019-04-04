@@ -1,14 +1,6 @@
 ---
-title: "&lt;legacyImpersonationPolicy&gt; Element"
-ms.custom: ""
+title: "<legacyImpersonationPolicy> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#legacyImpersonationPolicy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/legacyImpersonationPolicy"
@@ -16,14 +8,10 @@ helpviewer_keywords:
   - "<legacyImpersonationPolicy> element"
   - "legacyImpersonationPolicy element"
 ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;legacyImpersonationPolicy&gt; Element
+# \<legacyImpersonationPolicy> Element
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
   
  \<configuration>  
@@ -121,7 +109,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<alwaysFlowImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/alwaysflowimpersonationpolicy-element.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<alwaysFlowImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/alwaysflowimpersonationpolicy-element.md)

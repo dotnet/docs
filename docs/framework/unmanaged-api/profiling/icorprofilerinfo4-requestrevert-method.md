@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo4::RequestRevert Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo4.RequestRevert"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 70261da5-5933-4e25-9de0-ddf51cba56cc
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo4::RequestRevert Method
 Reverts all instances of the specified functions to their original versions.  
@@ -43,7 +31,7 @@ HRESULT RequestRevert (
    [out, size_is(cFunctions)]  HRESULT status[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cFunctions`  
  [in] The number of functions to revert.  
   
@@ -90,7 +78,7 @@ HRESULT RequestRevert (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+- [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

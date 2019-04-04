@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedWriter2::DefineConstant2 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedWriter2.DefineConstant2"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dd2bc956-7dbe-49fc-a646-daa0d267f2df
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter2::DefineConstant2 Method
 Defines a name for a constant value.  
@@ -42,7 +30,7 @@ HRESULT DefineConstant2(
     [in] mdSignature  sigToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The constant name.  
   
@@ -58,6 +46,6 @@ HRESULT DefineConstant2(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)  
- [DefineConstant Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineconstant-method.md)
+## See also
+- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
+- [DefineConstant Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineconstant-method.md)

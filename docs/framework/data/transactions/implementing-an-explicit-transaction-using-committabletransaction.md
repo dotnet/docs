@@ -1,22 +1,10 @@
 ---
 title: "Implementing an Explicit Transaction using CommittableTransaction"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 29efe5e5-897b-46c2-a35f-e599a273acc8
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing an Explicit Transaction using CommittableTransaction
 The <xref:System.Transactions.CommittableTransaction> class provides an explicit way for applications to use a transaction, as opposed to using the <xref:System.Transactions.TransactionScope> class implicitly. It is useful for applications that want to use the same transaction across multiple function calls or multiple thread calls. Unlike the <xref:System.Transactions.TransactionScope> class, the application writer needs to specifically call the <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.Transaction.Rollback%2A> methods in order to commit or abort the transaction.  
@@ -91,6 +79,6 @@ void OnCommitted(IAsyncResult asyncResult)
 }  
 ```  
   
-## See Also  
- [Implementing an Implicit Transaction using Transaction Scope](../../../../docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md)  
- [Transaction Processing](../../../../docs/framework/data/transactions/index.md)
+## See also
+- [Implementing an Implicit Transaction using Transaction Scope](../../../../docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md)
+- [Transaction Processing](../../../../docs/framework/data/transactions/index.md)

@@ -1,14 +1,6 @@
 ---
 title: "Using Libraries from Partially Trusted Code"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [.NET Framework], partially trusted code"
   - "partially trusted code"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "code access security, partially trusted code"
   - "APTCA"
 ms.assetid: dd66cd4c-b087-415f-9c3e-94e3a1835f74
-caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using Libraries from Partially Trusted Code
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -57,5 +45,5 @@ ms.workload:
 > [!NOTE]
 >  Some classes in the .NET Framework class library do not have the **AllowPartiallyTrustedCallersAttribute** attribute and cannot be called by partially trusted code.  
   
-## See Also  
- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+## See also
+- [Code Access Security](../../../docs/framework/misc/code-access-security.md)

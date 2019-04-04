@@ -1,14 +1,7 @@
 ---
 title: C# Arrays - A tour of the C# language
 description: Arrays are the most basic collection type in the C# language
-keywords: .NET, csharp, array, collection
-author: BillWagner
-ms.author: wiwagn
 ms.date: 08/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: a440704c-9e88-4c75-97dd-bfe30ca0fb97
 ---
 
@@ -46,5 +39,5 @@ Both of the previous examples are equivalent to the following:
 [!code-csharp[ArrayAssignment](../../../samples/snippets/csharp/tour/arrays/Program.cs#L49-L53)]
 
 >[!div class="step-by-step"]
-[Previous](structs.md)
-[Next](interfaces.md)
+>[Previous](structs.md)
+>[Next](interfaces.md)

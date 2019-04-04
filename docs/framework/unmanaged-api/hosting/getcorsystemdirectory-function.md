@@ -1,14 +1,6 @@
 ---
 title: "GetCORSystemDirectory Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetCORSystemDirectory"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
 topic_type: 
   - "apiref"
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetCORSystemDirectory Function
 Returns the installation directory of the common language runtime (CLR) that is loaded into the process. The installation directory is fully qualified, for example, "c:\windows\microsoft.net\framework\v1.0.3705".  
@@ -45,7 +33,7 @@ HRESULT GetCORSystemDirectory (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  [out] A buffer in which the runtime returns a string that contains the fully qualified name of the installation directory for the runtime that is loaded into the process. If the runtime has not yet been loaded into the process, the function returns the appropriate directory information for the latest version of the runtime installed on the computer.  
   
@@ -69,5 +57,5 @@ HRESULT GetCORSystemDirectory (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

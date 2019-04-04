@@ -1,21 +1,7 @@
 ---
 title: "Securing ADO.NET Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Securing ADO.NET Applications
 Writing a secure ADO.NET application involves more than avoiding common coding pitfalls such as not validating user input. An application that accesses data has many potential points of failure that an attacker can exploit to retrieve, manipulate, or destroy sensitive data. It is therefore important to understand all aspects of security, from the process of threat modeling during the design phase of your application, to its eventual deployment and ongoing maintenance.  
@@ -48,17 +34,17 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  Describes security for Entity Framework applications.  
   
  [Security](../../../../docs/standard/security/index.md)  
- Contains links to topics describing all aspects of security in the .NET Framework.  
+ Contains links to topics describing all aspects of security in .NET.  
   
- [Security Tools](http://msdn.microsoft.com/library/2a3eb98a-2de6-4fba-b41c-01a74d354c11)  
+ [Security Tools](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
  .NET Framework tools for securing and administering security policy.  
   
- [Resources for Creating Secure Applications](http://msdn.microsoft.com/library/0ebf5f69-76f2-498a-a2df-83cf3443e132)  
+ [Resources for Creating Secure Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
  Provides links to topics for creating secure applications.  
   
  [Security Bibliography](/visualstudio/ide/security-bibliography)  
  Provides links to external resources available online and in print.  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

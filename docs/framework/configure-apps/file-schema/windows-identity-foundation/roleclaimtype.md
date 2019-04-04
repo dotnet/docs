@@ -1,23 +1,10 @@
 ---
-title: "&lt;roleClaimType&gt;"
-ms.custom: ""
+title: "<roleClaimType>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 69a49deb-6369-41ba-806b-ae8d21fac64b
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;roleClaimType&gt;
+# \<roleClaimType>
 Specifies the claim type that defines the role type claims in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method of the token handler.  
   
  \<system.identityModel>  
@@ -75,5 +62,5 @@ Specifies the claim type that defines the role type claims in the collection of 
 </add>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType%2A>
+## See also
+- <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType%2A>

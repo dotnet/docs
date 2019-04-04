@@ -1,14 +1,6 @@
 ---
 title: "INotifySink2::OnSyncCallReturn Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "INotifySink2.OnSyncCallReturn"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # INotifySink2::OnSyncCallReturn Method
 Gets invoked when a call returns.  
@@ -44,7 +32,7 @@ HRESULT OnSyncCallReturn
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_CallID`  
  [in] ID of the call being returned from. See [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).  
   
@@ -60,7 +48,7 @@ HRESULT OnSyncCallReturn
 ## Requirements  
  **Header:** ProtocolNotify2.idl  
   
-## See Also  
- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
+## See also
+- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
+- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
+- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)

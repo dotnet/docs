@@ -1,29 +1,15 @@
 ---
 title: "UI Automation Support for the Menu Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Menu"
   - "UI Automation, Menu control type"
   - "Menu control type"
 ms.assetid: 016323cb-f800-4938-b77b-2eb25d646090
-caps.latest.revision: 24
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Menu Control Type
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic provides information about [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] support for the Menu control type. It describes the control's [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] tree structure and provides the properties and control patterns for specific control scenarios.  
   
@@ -73,8 +59,8 @@ ms.workload:
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Menu>  
- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Menu>
+- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

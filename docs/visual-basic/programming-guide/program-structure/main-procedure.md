@@ -1,13 +1,6 @@
 ---
 title: "Main Procedure in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Main"
 helpviewer_keywords: 
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "Main method [Visual Basic]"
   - "main function"
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Main Procedure in Visual Basic
 Every Visual Basic application must contain a procedure called `Main`. This procedure serves as the starting point and overall control for your application. The .NET Framework calls your `Main` procedure when it has loaded your application and is ready to pass control to it. Unless you are creating a Windows Forms application, you must write the `Main` procedure for applications that run on their own.  
@@ -112,14 +102,15 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
     End Module  
     ```  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>  
- <xref:System.Array.Length%2A>  
- <xref:Microsoft.VisualBasic.Information.UBound%2A>  
- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)  
- [/main](../../../visual-basic/reference/command-line-compiler/main.md)  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
+- <xref:System.Array.Length%2A>
+- <xref:Microsoft.VisualBasic.Information.UBound%2A>
+- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)
+- [/main](../../../visual-basic/reference/command-line-compiler/main.md)
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)

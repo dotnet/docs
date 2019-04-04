@@ -1,11 +1,6 @@
 ---
 title: "Default (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Default"
 helpviewer_keywords: 
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "Default keyword [Visual Basic]"
   - "default properties"
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Default (Visual Basic)
 Identifies a property as the default property of its class, structure, or interface.  
@@ -37,6 +29,7 @@ Identifies a property as the default property of its class, structure, or interf
   
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
-## See Also  
- [How to: Declare and Call a Default Property in Visual Basic](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [How to: Declare and Call a Default Property in Visual Basic](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

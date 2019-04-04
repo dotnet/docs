@@ -1,14 +1,7 @@
 ---
 title: "-target:appcontainerexe (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: e7e62229-23ea-4e53-bef5-380d951bf95f
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -target:appcontainerexe (C# Compiler Options)
 If you use the **-target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [-target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) but is designed for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
@@ -20,7 +13,7 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
 ```  
   
 ## Remarks  
- To require the app to run in an app container, this option sets a bit in the [Portable Executable](https://msdn.microsoft.com/library/windows/desktop/ms680547(v=vs.85).aspx?id=19509) (PE) file. When that bit is set, an error occurs if the CreateProcess method tries to launch the executable file outside an app container.  
+ To require the app to run in an app container, this option sets a bit in the [Portable Executable](/windows/desktop/Debug/pe-format) (PE) file. When that bit is set, an error occurs if the CreateProcess method tries to launch the executable file outside an app container.  
   
  Unless you use the [-out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the input file that contains the [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method.  
   
@@ -43,7 +36,8 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
 csc -target:appcontainerexe filename.cs  
 ```  
   
-## See Also  
- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
- [-target:winexe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md)  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+## See also
+
+- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
+- [-target:winexe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md)
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

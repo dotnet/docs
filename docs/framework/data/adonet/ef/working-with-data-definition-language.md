@@ -1,24 +1,10 @@
 ---
 title: "Working with Data Definition Language"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Working with Data Definition Language
 Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] version 4, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports data definition language (DDL). This allows you to create or delete a database instance based on the connection string and the metadata of the storage (SSDL) model.  
@@ -48,11 +34,11 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
 2.  Add an existing model to your application.  
   
-    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](http://msdn.microsoft.com/library/beb8189e-e51c-4051-839c-9902c224abf2) topic.  
+    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
   
      The SchoolModel.edmx file is added to your project.  
   
-    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](http://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac) topic.  
+    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) topic.  
   
     2.  Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
   

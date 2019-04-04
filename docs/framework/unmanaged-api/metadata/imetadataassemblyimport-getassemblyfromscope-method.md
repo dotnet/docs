@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::GetAssemblyFromScope Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.GetAssemblyFromScope"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0b437f70-561d-48c7-abe0-0cb9ace10c08
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetAssemblyFromScope Method
 Gets a pointer to the assembly in the current scope.  
@@ -41,7 +29,7 @@ HRESULT GetAssemblyFromScope (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ptkAssembly`  
  [out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.  
   
@@ -54,5 +42,5 @@ HRESULT GetAssemblyFromScope (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

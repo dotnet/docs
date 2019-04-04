@@ -1,14 +1,6 @@
 ---
 title: "StrongNameSignatureGeneration Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "StrongNameSignatureGeneration"
 api_location: 
@@ -21,12 +13,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "StrongNameSignatureGeneration function [.NET Framework strong naming]"
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # StrongNameSignatureGeneration Function
 Generates a strong name signature for the specified assembly.  
@@ -46,7 +34,7 @@ BOOLEAN StrongNameSignatureGeneration (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -92,7 +80,7 @@ BOOLEAN StrongNameSignatureGeneration (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [StrongNameSignatureGeneration Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegeneration-method.md)  
- [StrongNameSignatureGenerationEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+- [StrongNameSignatureGeneration Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegeneration-method.md)
+- [StrongNameSignatureGenerationEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

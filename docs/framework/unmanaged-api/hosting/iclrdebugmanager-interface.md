@@ -1,14 +1,6 @@
 ---
 title: "ICLRDebugManager Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDebugManager"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: e835062c-c7d6-4945-8a44-2de7ebf3928e
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDebugManager Interface
 Provides methods that allow a host to associate a set of tasks with an identifier and a friendly name.  
@@ -61,5 +49,5 @@ Provides methods that allow a host to associate a set of tasks with an identifie
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

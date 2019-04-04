@@ -1,21 +1,7 @@
 ---
 title: "Channel Factory and Caching"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Channel Factory and Caching
 WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:  
@@ -46,7 +32,7 @@ WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> cl
   
  The following code snippets illustrate how to use the <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property.  
   
-```  
+```csharp  
 class Program   
 {   
    static void Main(string[] args)   
@@ -69,7 +55,7 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest { }
   
  In the above code, all instances of `TestClient` will use the same channel factory.  
   
-```  
+```csharp  
 class Program   
 {   
    static void Main(string[] args)   
@@ -97,7 +83,7 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
   
  In the example above, all instances of `TestClient` would use the same channel factory except instance #4. Instance #4 would use a channel factory that is created specifically for its use. This setting would work for scenarios where a particular endpoint needs different security settings from the other endpoints of the same channel factory type (in this case `ITest`).  
   
-```  
+```csharp  
 class Program   
 {   
    static void Main(string[] args)   
@@ -119,9 +105,9 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
   
  In the example above, all instances of `TestClient` would use different channel factories. This is useful when each endpoint has different security requirements and it makes no sense to cache.  
   
-## See Also  
- <xref:System.ServiceModel.ClientBase%601>  
- [Building Clients](../../../../docs/framework/wcf/building-clients.md)  
- [Clients](../../../../docs/framework/wcf/feature-details/clients.md)  
- [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+## See also
+- <xref:System.ServiceModel.ClientBase%601>
+- [Building Clients](../../../../docs/framework/wcf/building-clients.md)
+- [Clients](../../../../docs/framework/wcf/feature-details/clients.md)
+- [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
+- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)

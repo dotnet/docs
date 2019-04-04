@@ -1,19 +1,7 @@
 ---
 title: "39457 - TrackingRecordRaised"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5a2731d1-c731-4b79-bb69-016cb69ef481
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 39457 - TrackingRecordRaised
 ## Properties  

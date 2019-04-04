@@ -1,14 +1,7 @@
 ---
 title: Expression Trees Explained
 description: Learn about expression trees and how they're useful in translating algorithms for external execution and inspecting code before executing it.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: bbcdd339-86eb-4ae5-9911-4c214a39a92d
 ---
 

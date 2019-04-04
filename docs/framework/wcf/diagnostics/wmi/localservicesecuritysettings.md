@@ -1,28 +1,14 @@
 ---
 title: "LocalServiceSecuritySettings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 490aa0e5-5242-4f8d-b505-5ec6287633b4
-caps.latest.revision: 8
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # LocalServiceSecuritySettings
 LocalServiceSecuritySettings  
   
 ## Syntax  
   
-```  
+```csharp
 class LocalServiceSecuritySettings  
 {  
   boolean DetectReplays;  
@@ -152,5 +138,5 @@ class LocalServiceSecuritySettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
+## See also
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>

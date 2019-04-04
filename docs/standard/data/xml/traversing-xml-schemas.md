@@ -1,25 +1,14 @@
 ---
 title: "Traversing XML Schemas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 ms.assetid: cce69574-5861-4a30-b730-2e18d915d8ee
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Traversing XML Schemas
 Traversing an XML schema using the Schema Object Model (SOM) API provides access to the elements, attributes, and types stored in the SOM. Traversing an XML schema loaded into the SOM is also the first step in editing an XML schema using the SOM API.  
@@ -72,11 +61,12 @@ Traversing an XML schema using the Schema Object Model (SOM) API provides access
   
  The code example in the [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md) topic used the <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes%2A?displayProperty=nameWithType> collection to add the attribute `CustomerId` to the `Customer` element. This is a pre-schema-compilation property. The corresponding Post-Schema-Compilation-Infoset property is the <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses%2A?displayProperty=nameWithType> collection, which holds all the attributes of the complex type, including the ones that are inherited through type derivation.  
   
-## See Also  
- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)  
- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+## See also
+
+- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
+- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
+- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
+- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)
+- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

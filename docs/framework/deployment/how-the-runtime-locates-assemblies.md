@@ -1,14 +1,6 @@
 ---
 title: "How the Runtime Locates Assemblies"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "app.config files, assembly locations"
   - "deploying applications [.NET Framework], assembly locations"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 772ac6f4-64d2-4cfb-92fd-58096dcd6c34
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How the Runtime Locates Assemblies
 To successfully deploy your .NET Framework application, you must understand how the common language runtime locates and binds to the assemblies that make up your application. By default, the runtime attempts to bind with the exact version of an assembly that the application was built with. This default behavior can be overridden by configuration file settings.  
@@ -221,7 +209,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
 -   Referenced assembly name: myAssembly  
   
--   Application root directory: http://www.code.microsoft.com  
+-   Application root directory: `http://www.code.microsoft.com`  
   
 -   [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element in configuration file specifies: bin  
   
@@ -229,13 +217,13 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
  The runtime probes the following URLs:  
   
- http://www.code.microsoft.com/de/myAssembly.dll  
+ `http://www.code.microsoft.com/de/myAssembly.dll`
   
- http://www.code.microsoft.com/de/myAssembly/myAssembly.dll  
+ `http://www.code.microsoft.com/de/myAssembly/myAssembly.dll`
   
- http://www.code.microsoft.com/bin/de/myAssembly.dll  
+ `http://www.code.microsoft.com/bin/de/myAssembly.dll`
   
- http://www.code.microsoft.com/bin/de/myAssembly/myAssembly.dll  
+ `http://www.code.microsoft.com/bin/de/myAssembly/myAssembly.dll`
   
 ##### Multiple Assemblies with the Same Name  
  The following example shows how to configure multiple assemblies with the same name.  
@@ -243,16 +231,16 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 ```xml  
 <dependentAssembly>  
    <assemblyIdentity name="Server" publicKeyToken="c0305c36380ba429" />   
-      <codeBase version="1.0.0.0" href="v1/Server.dll"/>  
-      <codeBase version="2.0.0.0" href="v2/Server.dll"/>  
+   <codeBase version="1.0.0.0" href="v1/Server.dll" />  
+   <codeBase version="2.0.0.0" href="v2/Server.dll" />  
 </dependentAssembly>  
 ```  
   
 #### Other Locations Probed  
  Assembly location can also be determined using the current binding context. This most often occurs when the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method is used and in COM interop scenarios. If an assembly uses the <xref:System.Reflection.Assembly.LoadFrom%2A> method to reference another assembly, the calling assembly's location is considered to be a hint about where to find the referenced assembly. If a match is found, that assembly is loaded. If no match is found, the runtime continues with its search semantics and then queries the Windows Installer to provide the assembly. If no assembly is provided that matches the binding request, an exception is thrown. This exception is a <xref:System.TypeLoadException> in managed code if a type was referenced, or a <xref:System.IO.FileNotFoundException> if an assembly being loaded was not found.  
   
- For example, if Assembly1 references Assembly2 and Assembly1 was downloaded from http://www.code.microsoft.com/utils, that location is considered to be a hint about where to find Assembly2.dll. The runtime then probes for the assembly in http://www.code.microsoft.com/utils/Assembly2.dll and http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll. If Assembly2 is not found at either of those locations, the runtime queries the Windows Installer.  
+ For example, if Assembly1 references Assembly2 and Assembly1 was downloaded from `http://www.code.microsoft.com/utils`, that location is considered to be a hint about where to find Assembly2.dll. The runtime then probes for the assembly in `http://www.code.microsoft.com/utils/Assembly2.dll` and `http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll`. If Assembly2 is not found at either of those locations, the runtime queries the Windows Installer.  
   
-## See Also  
- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)  
- [Deployment](../../../docs/framework/deployment/index.md)
+## See also
+- [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)
+- [Deployment](../../../docs/framework/deployment/index.md)

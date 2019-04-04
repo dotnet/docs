@@ -1,30 +1,16 @@
 ---
 title: "Using the NetHttpBinding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Using the NetHttpBinding
-<xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply contracts and WebSockets for duplex contracts. This behavior can be overridden using the <!--zz <xref:System.ServiceModel.NetHttpBinding.WebSocketTransportUsage%2A> --> `WebSocketTransportUsage` setting:  
+<xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply contracts and WebSockets for duplex contracts. This behavior can be overridden using the <xref:System.ServiceModel.Channels.WebSocketTransportUsage> setting:  
   
-1.  Always - This forces WebSockets to be used even for request-reply contracts.  
+1. <xref:System.ServiceModel.Channels.WebSocketTransportUsage.Always> - This forces WebSockets to be used even for request-reply contracts.  
   
-2.  Never - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting will result in an exception.  
+2. <xref:System.ServiceModel.Channels.WebSocketTransportUsage.Never> - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting will result in an exception.  
   
-3.  WhenDuplex - This is the default value and behaves as described above.  
+3. <xref:System.ServiceModel.Channels.WebSocketTransportUsage.WhenDuplex> - This is the default value and behaves as described above.  
   
  <xref:System.ServiceModel.NetHttpBinding> supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.  
   
@@ -53,7 +39,7 @@ ms.workload:
         </binding>  
       </netHttpBinding>  
     </bindings>  
-    <!- ... -->   
+    ...
   </system.serviceModel>  
 ```  
   
@@ -66,8 +52,8 @@ ServiceHost svchost = new ServiceHost(typeof(Service1), baseAddress);
         }  
 ```  
   
-## See Also  
- [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)  
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)
+## See also
+- [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)
+- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)

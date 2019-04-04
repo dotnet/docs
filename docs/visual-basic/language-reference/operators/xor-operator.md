@@ -1,12 +1,6 @@
 ---
 title: "Xor Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Xor"
 helpviewer_keywords: 
@@ -20,9 +14,6 @@ helpviewer_keywords:
   - "Xor keyword [Visual Basic]"
   - "bitwise comparison [Visual Basic]"
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Xor Operator (Visual Basic)
 Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusion on two numeric expressions.  
@@ -81,19 +72,20 @@ result = expression1 Xor expression2
 ## Example  
  The following example uses the `Xor` operator to perform logical exclusion (exclusive logical disjunction) on two expressions. The result is a `Boolean` value that represents whether exactly one of the expressions is `True`.  
   
- [!code-vb[VbVbalrOperators#40](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xor-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#40)]  
   
  The previous example produces results of `False`, `True`, and `False`, respectively.  
   
 ## Example  
  The following example uses the `Xor` operator to perform logical exclusion (exclusive logical disjunction) on the individual bits of two numeric expressions. The bit in the result pattern is set if exactly one of the corresponding bits in the operands is set to 1.  
   
- [!code-vb[VbVbalrOperators#41](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xor-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#41)]  
   
  The previous example produces results of 2, 12, and 14, respectively.  
   
-## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+## See also
+
+- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

@@ -1,22 +1,12 @@
 ---
-title: "&lt;summary&gt; (Visual Basic)"
-ms.custom: ""
+title: "<summary> (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "<summary> XML tag"
   - "summary XML tag"
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# &lt;summary&gt; (Visual Basic)
+# \<summary> (Visual Basic)
 Specifies the summary of the member.  
   
 ## Syntax  
@@ -25,7 +15,7 @@ Specifies the summary of the member.
 <summary>description</summary>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A summary of the object.  
   
@@ -39,7 +29,8 @@ Specifies the summary of the member.
 ## Example  
  This example uses the `<summary>` tag to describe the `ResetCounter` method and `Counter` property.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/summary_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+## See also
+
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

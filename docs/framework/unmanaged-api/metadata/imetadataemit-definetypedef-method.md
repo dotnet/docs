@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit::DefineTypeDef Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit.DefineTypeDef"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dd11c485-be95-4b97-9cd8-68679a4fb432
 topic_type: 
   - "apiref"
-caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit::DefineTypeDef Method
 Creates a type definition for a common language runtime type, and gets a metadata token for that type definition.  
@@ -45,7 +33,7 @@ HRESULT DefineTypeDef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szTypeDef`  
  [in] The name of the type in Unicode.  
   
@@ -77,6 +65,6 @@ HRESULT DefineTypeDef (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

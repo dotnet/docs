@@ -1,26 +1,12 @@
 ---
-title: "&lt;client&gt;"
-ms.custom: ""
+title: "<client>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.ServiceModel/client"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#client"
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
-caps.latest.revision: 18
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;client&gt;
+# \<client>
 The `client` element defines a list of endpoints that a client can connect to.  
   
  \<system.ServiceModel>  
@@ -29,14 +15,14 @@ The `client` element defines a list of endpoints that a client can connect to.
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-    <client>  
-        <endpoint>  
-        </endpoint>  
-                <metadata>  
-        </metadata>  
-    </client>  
-</system.serviceModel>  
+<system.serviceModel>
+  <client>
+    <endpoint>
+    </endpoint>
+    <metadata>
+    </metadata>
+  </client>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -66,20 +52,22 @@ The `client` element defines a list of endpoints that a client can connect to.
 ## Example  
   
 ```xml  
-<client>  
-    <endpoint address="/HelloWorld/"  
-              bindingConfiguration="usingDefaults"  
-              name="MyBinding"  
-              binding="customBinding"  
-              contract="HelloWorld">  
-    <addressProperties actingAs="http://www.microsoft.com/TestActor"  
-             identityData="BasicReadWrite" identityType="Spn" isAddressPrivate="false">  
-    </endpoint>  
-</client>  
+<client>
+  <endpoint address="/HelloWorld/"
+            bindingConfiguration="usingDefaults"
+            name="MyBinding"
+            binding="customBinding"
+            contract="HelloWorld">
+    <addressProperties actingAs="http://www.microsoft.com/TestActor"
+                       identityData="BasicReadWrite"
+                       identityType="Spn"
+                       isAddressPrivate="false">
+  </endpoint>
+</client>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ClientSection>  
- <xref:System.ServiceModel.Configuration.MetadataElement>  
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ClientSection>
+- <xref:System.ServiceModel.Configuration.MetadataElement>
+- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

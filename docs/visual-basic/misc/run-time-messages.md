@@ -1,20 +1,13 @@
 ---
 title: "Visual Basic Run-Time Messages"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic], run-time"
   - "run-time errors [Visual Basic], Visual Basic"
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Run-Time Messages
-This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at run time.  
+This section contains the Visual Basic error messages that occur at run time.  
   
  [\<address> is not a valid remote file address](../../visual-basic/misc/address-is-not-a-valid-remote-file-address.md)  
   
@@ -454,7 +447,7 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
   
  [TargetFilePath specifies an existing folder](../../visual-basic/misc/targetfilepath-specifies-an-existing-folder.md)  
   
- [TextFieldParser does not support comment tokens that contain whitespace](../../visual-basic/misc/textfieldparser-does-not-support-comment-tokens-that-contain-whitespace.md)  
+ [TextFieldParser does not support comment tokens that contain white space](../../visual-basic/misc/textfieldparser-does-not-support-comment-tokens-that-contain-whitespace.md)  
   
  [TextFieldParser does not support delimiters that contain endline characters](../../visual-basic/misc/textfieldparser-does-not-support-delimiters-that-contain-endline-characters.md)  
   
@@ -554,6 +547,6 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
   
  [You must specify a path that is under the current folder or one of its sub-folders](../../visual-basic/misc/you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
-## See Also  
-   
- [Error Messages](../../visual-basic/language-reference/error-messages/index.md)
+## See also
+
+- [Error Messages](../../visual-basic/language-reference/error-messages/index.md)

@@ -1,28 +1,14 @@
 ---
 title: "UI Automation Tree Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "automation tree"
   - "UI Automation, tree"
 ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
-caps.latest.revision: 25
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Tree Overview
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  Assistive technology products and test scripts navigate the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree to gather information about the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] and its elements.  
   
@@ -62,6 +48,6 @@ ms.workload:
   
  The content view is obtained by searching for elements that have the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> property set to `true`, or by using the <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> to navigate the tree.  
   
-## See Also  
- <xref:System.Windows.Automation.AutomationElement>  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.AutomationElement>
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

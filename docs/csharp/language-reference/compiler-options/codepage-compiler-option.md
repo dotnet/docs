@@ -1,10 +1,6 @@
 ---
 title: "-codepage (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/codepage"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "codepage compiler option [C#]"
   - "-codepage compiler option [C#]"
 ms.assetid: 75942989-b69a-4308-90a0-840c73d2c478
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -codepage (C# Compiler Options)
 This option specifies which codepage to use during compilation if the required page is not the current default codepage for the system.  
@@ -34,10 +27,11 @@ This option specifies which codepage to use during compilation if the required p
   
  If the source code files were created with the same codepage that is in effect on your computer or if the source code files were created with UNICODE or UTF-8, you need not use **-codepage**.  
   
- See [GetCPInfo](https://msdn.microsoft.com/library/dd318078(VS.85).aspx) for information on how to find which code pages are supported on your system.  
+ See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.  
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

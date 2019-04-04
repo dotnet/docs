@@ -1,17 +1,7 @@
 ---
 title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 12a95902-a6b7-4a1e-ad52-04a518db226f
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)
 Annotations can be used to facilitate transforms of an XML tree.  
@@ -95,18 +85,12 @@ XElement data = new XElement("Root",
 );  
   
 // while adding annotations, you can query the source tree all you want,  
-// as the tree is not mutated while annotating.  
+// as the tree is not mutated while annotating.
+var avg = data.Elements("Data").Select(z => (Decimal)z).Average();
 data.AddAnnotation(  
     new XElement("Root",  
         new XElement(xf + "ApplyTransforms"),  
-        new XElement("Average",  
-            String.Format("{0:F4}",  
-                data  
-                .Elements("Data")  
-                .Select(z => (Decimal)z)  
-                .Average()  
-            )  
-        ),  
+        new XElement("Average", $"{avg:F4}"),
         new XElement("Sum",  
             data  
             .Elements("Data")  
@@ -435,5 +419,6 @@ After Transform
 </Root>  
 ```  
   
-## See Also  
- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+## See also
+
+- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

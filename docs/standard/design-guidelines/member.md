@@ -1,26 +1,14 @@
 ---
 title: "Member Design Guidelines"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "member design guidelines [.NET Framework], about member design guidelines"
   - "members [.NET Framework], design guidelines"
   - "class library design guidelines [.NET Framework], members"
   - "member design guidelines [.NET Framework]"
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
-caps.latest.revision: 14
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+author: "KrzysztofCwalina"
 ---
 # Member Design Guidelines
 Methods, properties, events, constructors, and fields are collectively referred to as members. Members are ultimately the means by which framework functionality is exposed to the end users of a framework.  
@@ -40,7 +28,8 @@ Methods, properties, events, constructors, and fields are collectively referred 
  [Parameter Design](../../../docs/standard/design-guidelines/parameter-design.md)  
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
- *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

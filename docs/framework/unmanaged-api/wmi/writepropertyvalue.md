@@ -2,10 +2,6 @@
 title: WritePropertyValue function (Unmanaged API Reference)
 description: The WritePropertyValue function writes bytes to a property.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "WritePropertyValue"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WritePropertyValue function
 Writes a specified number of bytes to a property identified by a property handle.
@@ -47,7 +40,7 @@ HRESULT WritePropertyValue (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemObjectAccess](https://msdn.microsoft.com/library/aa391770(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.
 
 `lHandle`  
 [in] An integer that contains the handle that identifies this property. The handle can be retrieved by calling the [GetPropertyHandle](getpropertyhandle.md) function.   
@@ -70,7 +63,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::WritePropertyValue](https://msdn.microsoft.com/library/aa391783(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::WritePropertyValue](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-writepropertyvalue) method.
 
 Use this function to set string and all other non-`DWORD` or non-`QWORD` data.
 
@@ -83,5 +76,5 @@ For nonstring property values, `lNumBytes` must be the correct data size of the 
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

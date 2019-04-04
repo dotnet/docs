@@ -1,28 +1,16 @@
 ---
-title: "&lt;enforceFIPSPolicy&gt; Element"
-ms.custom: ""
+title: "<enforceFIPSPolicy> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "enforceFIPSPolicy element"
   - "FIPS"
   - "<enforceFIPSPolicy> element"
   - "Federal Information Processing Standards (FIPS)"
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;enforceFIPSPolicy&gt; Element
+# \<enforceFIPSPolicy> Element
 Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).  
   
  \<configuration> Element  
@@ -77,7 +65,7 @@ Specifies whether to enforce a computer configuration requirement that cryptogra
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Cryptography Model](../../../../../docs/standard/security/cryptography-model.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Model](../../../../../docs/standard/security/cryptography-model.md)

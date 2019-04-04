@@ -1,21 +1,7 @@
 ---
 title: "One-Way"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-caps.latest.revision: 26
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # One-Way
 This sample demonstrates a service contact with one-way service operations. The client does not wait for service operations to complete as is the case with two-way service operations. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and uses the `wsHttpBinding` binding. The service in this sample is a self-hosted console application to enable you to observe the service that receives and processes requests. The client is also a console application.  
@@ -25,7 +11,7 @@ This sample demonstrates a service contact with one-way service operations. The 
   
  To create a one-way service contract, define your service contract, apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, and set <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` as shown in the following sample code:  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOneWayCalculator  
 {  
@@ -42,8 +28,8 @@ public interface IOneWayCalculator
   
  To demonstrate that the client does not wait for the service operations to complete, the service code in this sample implements a five-second delay, as shown in the following sample code:  
   
-```  
-/ This service class implements the service contract.  
+```csharp
+// This service class implements the service contract.  
 // This code writes output to the console window.  
  [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple,  
     InstanceContextMode = InstanceContextMode.PerCall)]  
@@ -66,7 +52,7 @@ public class CalculatorService : IOneWayCalculator
   
  The client finishes ahead of the service, demonstrating that a client does not wait for one-way service operations to complete. The client output is as follows:  
   
-```  
+```console  
 Add(100,15.99)  
 Subtract(145,76.54)  
 Multiply(9,81.25)  
@@ -77,7 +63,7 @@ Press <ENTER> to terminate client.
   
  The following service output is shown:  
   
-```  
+```console  
 The service is ready.  
 Press <ENTER> to terminate service.  
   
@@ -110,8 +96,7 @@ Processing Divide(22,7) - result: 3.14285714285714
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Oneway`  
   
-## See Also

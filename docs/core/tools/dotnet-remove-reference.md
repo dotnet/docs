@@ -1,15 +1,7 @@
 ---
-title: dotnet remove reference command - .NET Core CLI
+title: dotnet remove reference command
 description: The dotnet remove reference command provides a convenient option to remove project to project references.
-keywords: dotnet-remove, CLI, CLI command, .NET Core
-author: mairaw
-ms.author: mairaw
-ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
 ---
 # dotnet remove reference
 
@@ -35,7 +27,7 @@ Target project file. If not specified, the command searches the current director
 
 `PROJECT_REFERENCES`
 
-Project to project (P2P references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
+Project-to-project (P2P) references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 ## Options
 

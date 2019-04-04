@@ -1,21 +1,8 @@
 ---
 title: "How To: Transform Incoming Claims"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2831d514-d9d8-4200-9192-954bb6da1126
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Transform Incoming Claims
 ## Applies To  
@@ -180,4 +167,4 @@ ms.workload:
   
     ||||||  
     |-|-|-|-|-|  
-    |LOCAL AUTHORITY|LOCAL AUTHORITY|http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|http://www.w3.org/2001/XMLSchema#string|
+    |LOCAL AUTHORITY|LOCAL AUTHORITY|`http://schemas.microsoft.com/ws/2008/06/identity/claims/role`|Admin|<https://www.w3.org/2001/XMLSchema#string>|

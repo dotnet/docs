@@ -1,19 +1,7 @@
 ---
 title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: c3133d64-523f-422d-8838-73d36b945ca0
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)
 This topic shows how to find all attributes of the siblings of the context node. Only attributes with a specific name are returned in the collection.  
@@ -61,5 +49,6 @@ id="bk101"
 id="bk102"  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

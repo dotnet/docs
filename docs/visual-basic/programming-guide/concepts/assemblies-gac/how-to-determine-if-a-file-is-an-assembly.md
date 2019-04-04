@@ -1,25 +1,14 @@
 ---
 title: "How to: Determine If a File Is an Assembly (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: de26f410-9bd1-4b55-a343-cc82f81684be
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Determine If a File Is an Assembly (Visual Basic)
 A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../../../../framework/app-domains/assembly-manifest.md).  
   
 ## How to manually determine if a file is an assembly  
   
-1.  Start the [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1).  
+1.  Start the [Ildasm.exe (IL Disassembler)](../../../../framework/tools/ildasm-exe-il-disassembler.md).  
   
 2.  Load the file you wish to test.  
   
@@ -57,7 +46,8 @@ End Module
   
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
-## See Also  
- <xref:System.Reflection.AssemblyName>  
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
- [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)
+## See also
+
+- <xref:System.Reflection.AssemblyName>
+- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+- [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)

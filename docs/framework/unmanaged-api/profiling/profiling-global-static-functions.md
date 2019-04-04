@@ -1,25 +1,13 @@
 ---
 title: "Profiling Global Static Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "global static functions [.NET Framework profiling]"
   - "profiling global static functions [.NET Framework]"
   - "unmanaged global static functions [.NET Framework], profiling"
 ms.assetid: 08a13a57-dc49-488d-b937-31e3051fda97
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Profiling Global Static Functions
 This section describes the unmanaged API functions that the profiling API uses.  

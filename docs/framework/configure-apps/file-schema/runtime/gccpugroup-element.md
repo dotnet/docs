@@ -1,26 +1,14 @@
 ---
-title: "&lt;GCCpuGroup&gt; Element"
-ms.custom: ""
+title: "<GCCpuGroup> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "GCCpuGroup element"
   - "<GCCpuGroup> element"
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;GCCpuGroup&gt; Element
+# \<GCCpuGroup> Element
 Specifies whether garbage collection supports multiple CPU groups.  
   
  \<configuration>  
@@ -78,8 +66,8 @@ Specifies whether garbage collection supports multiple CPU groups.
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [How to: Disable Concurrent Garbage Collection](http://msdn.microsoft.com/library/ba2c6c67-5778-497c-9fac-5f793b5500c7)  
- [Workstation and server garbage collection](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [To disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)
+- [Workstation and server garbage collection](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)

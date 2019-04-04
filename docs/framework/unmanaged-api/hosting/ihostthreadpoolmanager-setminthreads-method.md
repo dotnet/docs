@@ -1,14 +1,6 @@
 ---
 title: "IHostThreadPoolManager::SetMinThreads Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostThreadPoolManager.SetMinThreads"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 10409db9-9fd2-4e4d-b8cd-cf6fec0afaa2
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostThreadPoolManager::SetMinThreads Method
 Sets the minimum number of idle threads that the host must maintain in anticipation of requests.  
@@ -41,7 +29,7 @@ HRESULT SetMinThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `MinThreads`  
  [in] The new minimum number of threads that the host must maintain.  
   
@@ -69,9 +57,9 @@ HRESULT SetMinThreads (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.ThreadPool.SetMinThreads%2A>  
- <xref:System.Threading.ThreadPool>  
- [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)  
- [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setmaxthreads-method.md)  
- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+## See also
+- <xref:System.Threading.ThreadPool.SetMinThreads%2A>
+- <xref:System.Threading.ThreadPool>
+- [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)
+- [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setmaxthreads-method.md)
+- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

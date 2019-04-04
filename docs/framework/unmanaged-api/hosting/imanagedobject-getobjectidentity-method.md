@@ -1,14 +1,6 @@
 ---
 title: "IManagedObject::GetObjectIdentity Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IManagedObject.GetObjectIdentity"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b862ff3e-e480-4cdf-84e2-e1013334a467
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IManagedObject::GetObjectIdentity Method
 Gets the identity of this managed object.  
@@ -43,7 +31,7 @@ HRESULT GetObjectIdentity (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBSTRGUID`  
  [out] A pointer to the GUID of the process in which the object resides.  
   
@@ -65,5 +53,5 @@ HRESULT GetObjectIdentity (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)
+## See also
+- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)

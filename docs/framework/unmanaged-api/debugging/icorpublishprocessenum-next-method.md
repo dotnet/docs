@@ -1,14 +1,6 @@
 ---
 title: "ICorPublishProcessEnum::Next Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorPublishProcessEnum.Next"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 6c399f37-1e38-4ca1-b70d-8ae41f7228b7
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorPublishProcessEnum::Next Method
 Gets the specified number of processes from the collection, starting at the current cursor position.  
@@ -44,7 +32,7 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of processes to be retrieved.  
   
@@ -63,5 +51,5 @@ HRESULT Next (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishProcessEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)
+## See also
+- [ICorPublishProcessEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)

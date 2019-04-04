@@ -1,0 +1,155 @@
+- name: DataSets, DataTables, and DataViews
+  href: index.md
+  items:
+  - name: Creating a DataSet
+    href: creating-a-dataset.md
+  - name: Adding a DataTable to a DataSet
+    href: adding-a-datatable-to-a-dataset.md
+  - name: Adding DataRelations
+    href: adding-datarelations.md
+  - name: Navigating DataRelations
+    href: navigating-datarelations.md
+  - name: Merging DataSet Contents
+    href: merging-dataset-contents.md
+  - name: Copying DataSet Contents
+    href: copying-dataset-contents.md
+  - name: Handling DataSet Events
+    href: handling-dataset-events.md
+  - name: Typed DataSets
+    href: typed-datasets.md
+    items:
+    - name: Generating Strongly Typed DataSets
+      href: generating-strongly-typed-datasets.md
+    - name: Annotating Typed DataSets
+      href: annotating-typed-datasets.md
+  - name: DataTables
+    href: datatables.md
+    items:
+    - name: Creating a DataTable
+      href: creating-a-datatable.md
+    - name: DataTable Schema Definition
+      href: datatable-schema-definition.md
+      items:
+      - name: Adding Columns to a DataTable
+        href: adding-columns-to-a-datatable.md
+      - name: Creating Expression Columns
+        href: creating-expression-columns.md
+      - name: Creating AutoIncrement Columns
+        href: creating-autoincrement-columns.md
+      - name: Defining Primary Keys
+        href: defining-primary-keys.md
+      - name: DataTable Constraints
+        href: datatable-constraints.md
+    - name: Manipulating Data in a DataTable
+      href: manipulating-data-in-a-datatable.md
+      items:
+      - name: Adding Data to a DataTable
+        href: adding-data-to-a-datatable.md
+      - name: Viewing Data in a DataTable
+        href: viewing-data-in-a-datatable.md
+      - name: The Load Method
+        href: the-load-method.md
+      - name: DataTable Edits
+        href: datatable-edits.md
+      - name: Row States and Row Versions
+        href: row-states-and-row-versions.md
+      - name: DataRow Deletion
+        href: datarow-deletion.md
+      - name: Row Error Information
+        href: row-error-information.md
+      - name: AcceptChanges and RejectChanges
+        href: acceptchanges-and-rejectchanges.md
+    - name: Handling DataTable Events
+      href: handling-datatable-events.md
+  - name: DataTableReaders
+    href: datatablereaders.md
+    items:
+    - name: Creating a DataReader
+      href: creating-a-datareader.md
+    - name: Navigating DataTables
+      href: navigating-datatables.md
+  - name: DataViews
+    href: dataviews.md
+    items:
+    - name: Creating a DataView
+      href: creating-a-dataview.md
+    - name: Sorting and Filtering Data
+      href: sorting-and-filtering-data.md
+    - name: DataRows and DataRowViews
+      href: datarows-and-datarowviews.md
+    - name: Finding Rows
+      href: finding-rows.md
+    - name: ChildViews and Relations
+      href: childviews-and-relations.md
+    - name: Modifying DataViews
+      href: modifying-dataviews.md
+    - name: Handling DataView Events
+      href: handling-dataview-events.md
+    - name: Managing DataViews
+      href: managing-dataviews.md
+    - name: Creating a DataTable from a DataView
+      href: creating-a-datatable-from-a-dataview.md
+  - name: Using XML in a DataSet
+    href: using-xml-in-a-dataset.md
+    items:
+    - name: DiffGrams
+      href: diffgrams.md
+    - name: Loading a DataSet from XML
+      href: loading-a-dataset-from-xml.md
+    - name: Writing DataSet Contents as XML Data
+      href: writing-dataset-contents-as-xml-data.md
+    - name: Loading DataSet Schema Information from XML
+      href: loading-dataset-schema-information-from-xml.md
+    - name: Writing DataSet Schema Information as XSD
+      href: writing-dataset-schema-information-as-xsd.md
+    - name: DataSet and XmlDataDocument Synchronization
+      href: dataset-and-xmldatadocument-synchronization.md
+      items:
+      - name: Synchronizing a DataSet with an XmlDataDocument
+        href: synchronizing-a-dataset-with-an-xmldatadocument.md
+      - name: Performing an XPath Query on a DataSet
+        href: performing-an-xpath-query-on-a-dataset.md
+      - name: Applying an XSLT Transform to a DataSet
+        href: applying-an-xslt-transform-to-a-dataset.md
+    - name: Nesting DataRelations
+      href: nesting-datarelations.md
+    - name: Deriving DataSet Relational Structure from XML Schema (XSD)
+      href: deriving-dataset-relational-structure-from-xml-schema-xsd.md
+      items:
+      - name: Mapping XML Schema (XSD) Constraints to DataSet Constraints
+        href: mapping-xml-schema-xsd-constraints-to-dataset-constraints.md
+        items:
+        - name: Map unique XML Schema (XSD) Constraints to DataSet Constraints
+          href: map-unique-xml-schema-xsd-constraints-to-dataset-constraints.md
+        - name: Map key XML Schema (XSD) Constraints to DataSet Constraints
+          href: map-key-xml-schema-xsd-constraints-to-dataset-constraints.md
+        - name: Map keyref XML Schema (XSD) Constraints to DataSet Constraints
+          href: map-keyref-xml-schema-xsd-constraints-to-dataset-constraints.md
+      - name: Generating DataSet Relations from XML Schema (XSD)
+        href: generating-dataset-relations-from-xml-schema-xsd.md
+        items:
+        - name: Map Implicit Relations Between Nested Schema Elements
+          href: map-implicit-relations-between-nested-schema-elements.md
+        - name: Map Relations Specified for Nested Elements
+          href: map-relations-specified-for-nested-elements.md
+        - name: Specify Relations Between Elements with No Nesting
+          href: specify-relations-between-elements-with-no-nesting.md
+      - name: XML Schema Constraints and Relationships
+        href: xml-schema-constraints-and-relationships.md
+    - name: Inferring DataSet Relational Structure from XML
+      href: inferring-dataset-relational-structure-from-xml.md
+      items:
+      - name: Summary of the DataSet Schema Inference Process
+        href: summary-of-the-dataset-schema-inference-process.md
+      - name: Inferring Tables
+        href: inferring-tables.md
+      - name: Inferring Columns
+        href: inferring-columns.md
+      - name: Inferring Relationships
+        href: inferring-relationships.md
+      - name: Inferring Element Text
+        href: inferring-element-text.md
+      - name: Inference Limitations
+        href: inference-limitations.md
+  - name: Consuming a DataSet from an XML Web Service
+    href: consuming-a-dataset-from-an-xml-web-service.md

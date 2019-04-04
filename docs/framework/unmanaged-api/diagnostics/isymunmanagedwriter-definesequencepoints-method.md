@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedWriter::DefineSequencePoints Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedWriter.DefineSequencePoints"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 64202baf-be6b-40ba-8162-8cc6c0c9b8e1
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter::DefineSequencePoints Method
 Defines a group of sequence points within the current method. Each starting line and starting column define the start of a statement within a method. Each ending line and ending column define the end of a statement within a method. The arrays should be sorted in increasing order of offsets. The offset is always measured from the start of the method, in bytes.  
@@ -46,12 +34,12 @@ HRESULT DefineSequencePoints(
     [in, size_is(spCount)] ULONG32     endColumns[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The document object for which the sequence points are being defined.  
   
  `spCount`  
- [in] A `ULONG32` that that indicates the size of each of the `offsets`, `lines`, `columns`, `endLines`, and `endColumns` buffers.  
+ [in] A `ULONG32` that indicates the size of each of the `offsets`, `lines`, `columns`, `endLines`, and `endColumns` buffers.  
   
  `offsets`  
  [in] The offset of the sequence points measured from the beginning of the method.  
@@ -74,5 +62,5 @@ HRESULT DefineSequencePoints(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

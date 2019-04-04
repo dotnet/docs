@@ -1,25 +1,13 @@
 ---
 title: "Debugging Enumerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "debugging enumerations [.NET Framework]"
   - "unmanaged enumerations [.NET Framework], debugging"
   - "enumerations [.NET Framework debugging]"
 ms.assetid: 3af9f584-f1b4-4154-aeaa-8fce7c9f8b50
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Debugging Enumerations
 This section describes the unmanaged enumerations that the debugging API uses.  
@@ -143,8 +131,11 @@ This section describes the unmanaged enumerations that the debugging API uses.
  Indicates the native location type of a variable.  
   
  [WriteableMetadataUpdateMode Enumeration](../../../../docs/framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md)  
- Provides values that specify whether in-memory updates to metadata are visible to a debugger.  
-  
+ Provides values that specify whether in-memory updates to metadata are visible to a debugger. 
+
+ [ClrDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
+ Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
+
 ## Related Sections  
  [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  
   

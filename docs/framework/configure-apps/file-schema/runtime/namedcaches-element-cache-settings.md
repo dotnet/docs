@@ -1,27 +1,13 @@
 ---
-title: "&lt;namedCaches&gt; Element (Cache Settings)"
-ms.custom: ""
+title: "<namedCaches> Element (Cache Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "namedCaches element"
   - "caching [.NET Framework], configuration"
   - "<namedCaches> element"
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-caps.latest.revision: 14
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;namedCaches&gt; Element (Cache Settings)
+# \<namedCaches> Element (Cache Settings)
 Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.  
   
  \<configuration>  
@@ -95,5 +81,5 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
 </configuration>  
 ```  
   
-## See Also  
- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+## See also
+- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

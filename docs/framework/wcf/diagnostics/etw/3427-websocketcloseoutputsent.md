@@ -1,21 +1,7 @@
 ---
 title: "3427 - WebSocketCloseOutputSent"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c9de20d8-9f53-432d-8100-c05387441f65
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3427 - WebSocketCloseOutputSent
 ## Properties  

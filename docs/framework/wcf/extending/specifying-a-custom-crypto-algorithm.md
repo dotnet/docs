@@ -1,21 +1,7 @@
 ---
 title: "Specifying a Custom Crypto Algorithm"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Specifying a Custom Crypto Algorithm
 WCF allows you to specify a custom crypto algorithm to use when encrypting data or computing digital signatures. This is done by the following steps:  
@@ -133,8 +119,8 @@ WSHttpBinding binding = new WSHttpBinding();
   
  For a complete code example, see the [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md) sample.  
   
-## See Also  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+## See also
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)

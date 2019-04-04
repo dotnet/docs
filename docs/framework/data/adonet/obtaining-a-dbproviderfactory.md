@@ -1,24 +1,10 @@
 ---
 title: "Obtaining a DbProviderFactory"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: a16e4a4d-6a5b-45db-8635-19570e4572ae
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Obtaining a DbProviderFactory
 The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves passing information about a data provider to the <xref:System.Data.Common.DbProviderFactories> class. Based on this information, the <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> method creates a strongly typed provider factory. For example, to create a <xref:System.Data.SqlClient.SqlClientFactory>, you can pass `GetFactory` a string with the provider name specified as "System.Data.SqlClient". The other overload of `GetFactory` takes a <xref:System.Data.DataRow>. Once you create the provider factory, you can then use its methods to create additional objects. Some of the methods of a `SqlClientFactory` include <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection%2A>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand%2A>, and <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter%2A>.  
@@ -103,8 +89,8 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
  [!code-csharp[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/CS/source.cs#1)]
  [!code-vb[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/VB/source.vb#1)]  
   
-## See Also  
- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
- [Using the Configuration Classes](http://msdn.microsoft.com/library/98d2b386-baf6-4a17-974b-76e3b4c87acc)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)
+- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
+- [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/aspnet/ms228063(v=vs.100))
+- [ADO.NET Overview](ado-net-overview.md)

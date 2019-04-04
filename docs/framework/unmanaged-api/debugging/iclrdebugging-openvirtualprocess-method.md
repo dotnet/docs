@@ -1,14 +1,6 @@
 ---
 title: "ICLRDebugging::OpenVirtualProcess Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDebugging.OpenVirtualProcess"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e8ab7c41-d508-4ed9-8a31-ead072b5a314
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDebugging::OpenVirtualProcess Method
 Gets the ICorDebugProcess interface that corresponds to a common language runtime (CLR) module loaded in the process.  
@@ -47,7 +35,7 @@ HRESULT OpenVirtualProcess(
     [out] CLR_DEBUGGING_PROCESS_FLAGS * pdwFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleBaseAddress`  
  [in] The base address of a module in the target process. COR_E_NOT_CLR will be returned if the specified module is not a CLR module.  
   
@@ -102,6 +90,6 @@ HRESULT OpenVirtualProcess(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

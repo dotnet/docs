@@ -1,28 +1,14 @@
 ---
 title: "ServiceBehaviorAttribute"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5faa266f-587f-4e03-828d-1c7dd5acfe65
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceBehaviorAttribute
 ServiceBehaviorAttribute  
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceBehaviorAttribute : Behavior  
 {  
   boolean AutomaticSessionShutdown;  
@@ -159,5 +145,5 @@ Access type: Read-only
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.ServiceBehaviorAttribute>
+## See also
+- <xref:System.ServiceModel.ServiceBehaviorAttribute>

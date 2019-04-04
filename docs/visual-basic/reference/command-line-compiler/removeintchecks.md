@@ -1,11 +1,6 @@
 ---
 title: "-removeintchecks"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "removeintchecks"
   - "-removeintchecks"
@@ -14,8 +9,6 @@ helpviewer_keywords:
   - "/removeintchecks compiler option [Visual Basic]"
   - "-removeintchecks compiler option [Visual Basic]"
 ms.assetid: c1835bd5-1e38-4fba-bd2f-6984774765d4
-author: rpetrusha
-ms.author: ronpet
 ---
 # -removeintchecks
 Turns overflow-error checking for integer operations on or off.  
@@ -43,6 +36,7 @@ Turns overflow-error checking for integer operations on or off.
 vbc -removeintchecks+ test.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

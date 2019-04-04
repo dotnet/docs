@@ -1,20 +1,12 @@
 ---
 title: "Static (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Static"
 helpviewer_keywords: 
   - "static modifier"
   - "Static keyword [Visual Basic]"
 ms.assetid: 19013910-4658-47b6-a22e-1744b527979e
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Static (Visual Basic)
 Specifies that one or more declared local variables are to continue to exist and retain their latest values after termination of the procedure in which they are declared.  
@@ -40,7 +32,7 @@ Specifies that one or more declared local variables are to continue to exist and
 ## Example  
  The following example demonstrates the use of `Static`.  
   
- [!code-vb[VbVbalrKeywords#5](../../../visual-basic/language-reference/codesnippet/VisualBasic/static_1.vb)]  
+ [!code-vb[VbVbalrKeywords#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#5)]  
   
  The `Static` variable `totalSales` is initialized to 0 only one time. Each time that you enter `updateSales`, `totalSales` still has the most recent value that you calculated for it.  
   
@@ -48,11 +40,12 @@ Specifies that one or more declared local variables are to continue to exist and
   
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
-## See Also  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+## See also
+
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

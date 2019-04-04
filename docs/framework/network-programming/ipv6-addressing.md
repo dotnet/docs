@@ -1,12 +1,6 @@
 ---
 title: "IPv6 Addressing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Internet Protocol version 6, addresses in"
   - "Neighbor Discovery"
@@ -32,12 +26,6 @@ helpviewer_keywords:
   - "IPv6, addresses in"
   - "IPv6, disabling"
 ms.assetid: 20a104ae-1649-4649-a005-531a5cf74c93
-caps.latest.revision: 10
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # IPv6 Addressing
 In the Internet Protocol version 6 (IPv6), addresses are 128 bits long. One reason for such a large address space is to subdivide the available addresses into a hierarchy of routing domains that reflect the Internet's topology. Another reason is to map the addresses of network adapters (or interfaces) that connect devices to the network. IPv6 features an inherent capability to resolve addresses at their lowest level, which is at the network interface level, and also has auto-configuration capabilities.  
@@ -78,6 +66,6 @@ In the Internet Protocol version 6 (IPv6), addresses are 128 bits long. One reas
   
  In general, a node always has a link-local address. It might have a site-local address and one or more global addresses.  
   
-## See Also  
- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
+- [Sockets](../../../docs/framework/network-programming/sockets.md)

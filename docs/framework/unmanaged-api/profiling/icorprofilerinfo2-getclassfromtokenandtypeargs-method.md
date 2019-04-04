@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::GetClassFromTokenAndTypeArgs Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.GetClassFromTokenAndTypeArgs"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b25c88f0-71b9-443b-8eea-1c94db0a44b9
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::GetClassFromTokenAndTypeArgs Method
 Gets the `ClassID` of a type by using the specified metadata token and the `ClassID` values of any type arguments.  
@@ -44,7 +32,7 @@ HRESULT GetClassFromTokenAndTypeArgs(
     [out] ClassID* pClassID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The ID of the module in which the type resides.  
   
@@ -76,6 +64,6 @@ HRESULT GetClassFromTokenAndTypeArgs(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

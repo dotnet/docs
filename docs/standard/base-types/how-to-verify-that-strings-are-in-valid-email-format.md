@@ -1,13 +1,7 @@
 ---
 title: "How to: Verify that Strings Are in Valid Email Format"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "12/10/2018"
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,17 +18,12 @@ helpviewer_keywords:
   - "email [.NET Framework], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
-caps.latest.revision: 30
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Verify that Strings Are in Valid Email Format
 The following example uses a regular expression to verify that a string is in valid email format.  
-  
+
 ## Example  
  The example defines an `IsValidEmail` method, which returns `true` if the string contains a valid email address and `false` if it does not, but takes no other action.  
   
@@ -64,8 +53,8 @@ The following example uses a regular expression to verify that a string is in va
 |`(?("")("".+?(?<!\\)""@)`|If the first character is a quotation mark, match a beginning quotation mark followed by at least one occurrence of any character, followed by an ending quotation mark. The ending quotation mark must not be preceded by a backslash character (\\). `(?<!` is the beginning of a zero-width negative lookbehind assertion. The string should conclude with an at sign (@).|  
 |<code>&#124;(([0-9a-z]</code>|If the first character is not a quotation mark, match any alphabetic character from a to z or A to Z (the comparison is case insensitive), or any numeric character from 0 to 9.|  
 |`(\.(?!\.))`|If the next character is a period, match it. If it is not a period, look ahead to the next character and continue the match. `(?!\.)` is a zero-width negative lookahead assertion that prevents two consecutive periods from appearing in the local part of an email address.|  
-|<code>&#124;[-!#\$%&'\*\+/=\?\^\`{}\&#124;~\w]</code>|If the next character is not a period, match any word character or one of the following characters: -!#$%'*+=?^\`{}&#124;~.|  
-|<code>((\.(?!\.))&#124;[-!#\$%'\*\+/=\?\^\`{}\&#124;~\w])*</code>|Match the alternation pattern (a period followed by a non-period, or one of a number of characters) zero or more times.|  
+|<code>&#124;[-!#\$%&'\*\+/=\?\^\`{}&#124;~\w]</code>|If the next character is not a period, match any word character or one of the following characters: -!#$%'*+=?^\`{}&#124;~.|  
+|<code>((\.(?!\.))&#124;[-!#\$%'\*\+/=\?\^\`{}&#124;~\w])*</code>|Match the alternation pattern (a period followed by a non-period, or one of a number of characters) zero or more times.|  
 |`@`|Match the @ character.|  
 |`(?<=[0-9a-z])`|Continue the match if the character that precedes the @ character is A through Z, a through z, or 0 through 9. The `(?<=[0-9a-z])` construct defines a zero-width positive lookbehind assertion.|  
 |`(?(\[)`|Check whether the character that follows @ is an opening bracket.|  
@@ -73,9 +62,6 @@ The following example uses a regular expression to verify that a string is in va
 |<code>&#124;(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+</code>|If the character that follows @ is not an opening bracket, match one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by zero or more occurrences of a hyphen, followed by zero or one alphanumeric character with a value of A-Z, a-z, or 0-9, followed by a period. This pattern can be repeated one or more times, and must be followed by the top-level domain name.|  
 |`[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))`|The top-level domain name must begin and end with an alphanumeric character (a-z, A-Z, and 0-9). It can also include from zero to 22 ASCII characters that are either alphanumeric or hyphens.|  
 |`$`|End the match at the end of the string.|  
-  
-> [!NOTE]
->  Instead of using a regular expression to validate an email address, you can use the <xref:System.Net.Mail.MailAddress?displayProperty=nameWithType> class. To determine whether an email address is valid, pass the email address to the <xref:System.Net.Mail.MailAddress.%23ctor%28System.String%29?displayProperty=nameWithType> class constructor.  
   
 ## Compiling the Code  
  The `IsValidEmail` and `DomainMapper` methods can be included in a library of regular expression utility methods, or they can be included as private static or instance methods in the application class.  
@@ -111,5 +97,6 @@ vbc /t:library RegexUtilities.vb
     vbc Example.vb /r:RegexUtilities.dll  
     ```  
   
-## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

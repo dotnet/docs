@@ -1,11 +1,6 @@
 ---
 title: "Passing Arguments by Position and by Name (Visual Basic)"
-ms.custom: ""
 ms.date: 02/01/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing by name"
   - "procedures [Visual Basic], arguments"
@@ -27,8 +22,6 @@ helpviewer_keywords:
   - "argument passing [Visual Basic], by position"
   - "arguments [Visual Basic], listing by name"
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
-author: rpetrusha
-ms.author: ronpet
 ---
 # Passing Arguments by Position and by Name (Visual Basic)
 When you call a `Sub` or `Function` procedure, you can pass arguments *by position* — in the order in which they appear in the procedure's definition — or you can pass them *by name*, without regard to position.  
@@ -87,18 +80,21 @@ To follow positional arguments with named arguments, you must add the following 
 </PropertyGroup>
 ```
 
+For more information see [setting the Visual Basic language version](../../../language-reference/configure-language-version.md).
+
 ## Restrictions on Supplying Arguments by Name  
 
 You cannot pass arguments by name to avoid entering required arguments. You can omit only the optional arguments.  
   
 You cannot pass a parameter array by name. This is because when you call the procedure, you supply an indefinite number of comma-separated arguments for the parameter array, and the compiler cannot associate more than one argument with a single name.  
   
-## See Also  
- [Procedures](./index.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
- [Optional Parameters](./optional-parameters.md)  
- [Parameter Arrays](./parameter-arrays.md)  
- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)  
- [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)
+## See also
+
+- [Procedures](./index.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)
+- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
+- [Optional Parameters](./optional-parameters.md)
+- [Parameter Arrays](./parameter-arrays.md)
+- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)
+- [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)

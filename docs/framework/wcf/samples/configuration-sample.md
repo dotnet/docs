@@ -1,21 +1,7 @@
 ---
 title: "Configuration Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuration Sample
 This sample demonstrates the use of a configuration file to make a service discoverable.  
@@ -28,7 +14,7 @@ This sample demonstrates the use of a configuration file to make a service disco
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
@@ -95,7 +81,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
         </endpointBehaviors>  
 ```  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
+ For more information about scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
   
  You can also control specific details of the discovery endpoint. This is done through the <xref:System.ServiceModel.Configuration.StandardEndpointsSection>. In this sample, the version of the protocol used is modified as well as adding a `maxResponseDelay` attribute as shown in the following code example.  
   
@@ -269,7 +255,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
 #### To use this sample  
   
-1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](http://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
 2.  Build the solution.  
   
@@ -277,4 +263,3 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
 4.  Run the client executable. Note that the client is able to locate the service.  
   
-## See Also

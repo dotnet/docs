@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::NextDomain Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.NextDomain"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fe07a05b-f6d6-44b5-ab01-b9a6eb15c350
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorRuntimeHost::NextDomain Method
 Gets an interface pointer to the next domain in the enumeration.  
@@ -42,7 +30,7 @@ HRESULT NextDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumerator that was obtained through a call to [EnumDomains](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-enumdomains-method.md).  
   
@@ -67,7 +55,7 @@ HRESULT NextDomain (
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

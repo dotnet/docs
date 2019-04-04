@@ -1,14 +1,6 @@
 ---
 title: "IHostMemoryManager::NeedsVirtualAddressSpace Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostMemoryManager.NeedsVirtualAddressSpace"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 71f0eab5-0170-46f8-9f88-1df5abdeb34a
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostMemoryManager::NeedsVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) is going to attempt to use the specified memory.  
@@ -42,7 +30,7 @@ HRESULT NeedsVirtualAddressSpace (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startAddress`  
  [in] The starting address of the memory.  
   
@@ -63,5 +51,5 @@ HRESULT NeedsVirtualAddressSpace (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+## See also
+- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

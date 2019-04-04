@@ -1,20 +1,12 @@
 ---
 title: "Visual Basic Compiler Options Listed by Category"
-ms.date: 03/09/2018
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
 ms.assetid: fbe36f7a-7cfa-4f77-a8d4-2be5958568e3
-author: rpetrusha
-ms.author: ronpet
 ---
 # Visual Basic compiler options listed by category
-The Visual Basic command-line compiler is provided as an alternative to compiling programs from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted by functional category.  
+The Visual Basic command-line compiler is provided as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted by functional category.  
 
 [!INCLUDE[compiler-options](~/includes/compiler-options.md)]
   
@@ -26,7 +18,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-utf8output](../../../visual-basic/reference/command-line-compiler/utf8output.md)|Displays compiler output using UTF-8 encoding.|  
 |[-verbose](../../../visual-basic/reference/command-line-compiler/verbose.md)|Outputs extra information during compilation.|  
 |`-modulename:<string>`|Specify the name of the source module|  
-|[-preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|  
+|[-preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|
   
 ## Optimization  
   
@@ -40,6 +32,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |Option|Purpose|  
 |---|---|  
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Process documentation comments to an XML file.|  
+|[-deterministic](../../../visual-basic/reference/command-line-compiler/deterministic.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
 |[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].|  
 |[-out](../../../visual-basic/reference/command-line-compiler/out.md)|Specifies an output file.|  
 |[-refonly](refonly-compiler-option.md)|Outputs only a reference assembly.|
@@ -127,8 +120,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |`-parallel[+&#124;-]`|Specifies whether to use concurrent build (+).|  
 |`-checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
   
-## See Also  
- [Visual Basic Compiler Options Listed Alphabetically](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md)  
- [Introduction to the Project Designer](https://msdn.microsoft.com/en-us/library/898dd854-c98d-430c-ba1b-a913ce3c73d7(v=vs.100))  
- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)
+## See also
+
+- [Visual Basic Compiler Options Listed Alphabetically](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md)
+- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)

@@ -1,13 +1,7 @@
 ---
 title: "Equality Operators"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], Equals method"
   - "class library design guidelines [.NET Framework], equality operator"
@@ -15,13 +9,7 @@ helpviewer_keywords:
   - "Equals method"
   - "== operator (equality) [.NET Framework]"
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
-caps.latest.revision: 13
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+author: "KrzysztofCwalina"
 ---
 # Equality Operators
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.  
@@ -52,8 +40,9 @@ This section discusses overloading equality operators and refers to `operator==`
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
- *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

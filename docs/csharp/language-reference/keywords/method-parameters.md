@@ -1,18 +1,13 @@
 ---
-title: "Method Parameters (C# Reference)"
+title: "Method Parameters - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "methods [C#], parameters"
   - "method parameters [C#]"
   - "parameters [C#]"
 ms.assetid: 680e39ff-775b-48b0-9f47-4186a5bfc4a1
-caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Method Parameters (C# Reference)
 
@@ -28,7 +23,8 @@ Parameters declared for a method without [in](../../../csharp/language-reference
   
 -   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) specifies that this parameter is passed by reference and is written by the called method.
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)

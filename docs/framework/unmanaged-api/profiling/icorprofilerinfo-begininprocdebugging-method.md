@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::BeginInprocDebugging Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.BeginInprocDebugging"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c5c82c69-99f8-4447-aee0-42cca0a5eb5c
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::BeginInprocDebugging Method
 Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.  
@@ -41,7 +29,7 @@ HRESULT BeginInprocDebugging(
     [out] DWORD *pdwProfilerContext);  
 ```  
   
-#### Parameters  
+## Parameters  
  `fThisThreadOnly`  
  [in] Set this value to `true` to initialize debugging support for only the current thread; set it to `false` to initialize debugging support for all threads.  
   
@@ -60,5 +48,5 @@ HRESULT BeginInprocDebugging(
   
  **.NET Framework Version:** 1.0  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

@@ -1,18 +1,7 @@
 ---
 title: "Cancel Remaining Async Tasks after One Is Complete (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c928b5a1-622f-4441-8baf-adca1dde197f
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Cancel Remaining Async Tasks after One Is Complete (Visual Basic)
 By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> method together with a <xref:System.Threading.CancellationToken>, you can cancel all remaining tasks when one task is complete. The `WhenAny` method takes an argument that’s a collection of tasks. The method starts all the tasks and returns a single task. The single task is complete when any task in the collection is complete.  
@@ -23,7 +12,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWi
 >  To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
 ## Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -42,7 +31,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWi
  If you don't want to download the project, you can review the MainWindow.xaml.vb file at the end of this topic.  
   
 ## Building the Example  
- The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks](http://msdn.microsoft.com/library/d6e4e801-df64-4705-98fc-df725a577fb0) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
+ The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks](../../../../visual-basic/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
   
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.  
   
@@ -112,7 +101,7 @@ resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:
   
  Notice that you must add a reference for <xref:System.Net.Http>.  
   
- You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
+ You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
 ```vb  
 ' Add an Imports directive and a reference for System.Net.Http.  
@@ -217,13 +206,13 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -237,8 +226,9 @@ End Class
 ' Download complete.  
 ```  
   
-## See Also  
- <xref:System.Threading.Tasks.Task.WhenAny%2A>  
- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)
+## See also
+
+- <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

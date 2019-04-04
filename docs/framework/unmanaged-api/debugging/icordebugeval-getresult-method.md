@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEval::GetResult Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEval.GetResult"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 50dbb9af-58a1-41f4-b56d-3da20011884f
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEval::GetResult Method
 Gets the results of this evaluation.  
@@ -41,7 +29,7 @@ HRESULT GetResult (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppResult`  
  [out] Pointer to the address of an ICorDebugValue object that represents the results of this evaluation, if the evaluation completes normally.  
   

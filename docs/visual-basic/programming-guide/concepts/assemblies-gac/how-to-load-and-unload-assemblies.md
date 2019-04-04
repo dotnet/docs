@@ -1,18 +1,7 @@
 ---
 title: "How to: Load and Unload Assemblies (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bbc84236-04b6-4c1b-9672-52773f65a5dc
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Load and Unload Assemblies (Visual Basic)
 The assemblies referenced by your program will automatically be loaded at build time, but it is also possible to load specific assemblies into the current application domain at runtime. For more information, see [How to: Load Assemblies into an Application Domain](../../../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md).  
@@ -29,7 +18,8 @@ The assemblies referenced by your program will automatically be loaded at build 
   
 1.  There is no way to unload an individual assembly without unloading all of the application domains that contain it. Use the `Unload` method from <xref:System.AppDomain> to unload the application domains. For more information, see [How to: Unload an Application Domain](../../../../framework/app-domains/how-to-unload-an-application-domain.md).  
   
-## See Also  
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [How to: Load Assemblies into an Application Domain](../../../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)
+## See also
+
+- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)
+- [How to: Load Assemblies into an Application Domain](../../../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)

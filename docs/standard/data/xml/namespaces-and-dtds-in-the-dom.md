@@ -1,21 +1,10 @@
 ---
 title: "Namespaces and DTDs in the DOM"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1e9b55c4-76ad-4f54-8d96-7ce4b4cf1e05
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Namespaces and DTDs in the DOM
 Document type definitions (DTDs) complicate namespace support. For example, the following XML contains default attributes containing colons in their names.  
@@ -38,5 +27,6 @@ Document type definitions (DTDs) complicate namespace support. For example, the 
   
  The XML in the Microsoft .NET Framework implements the second option for maximum W3C compatibility.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

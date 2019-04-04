@@ -1,19 +1,7 @@
 ---
 title: "Peer-to-Peer Networking Scenarios"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d23b1a64-2e08-4014-882a-c1dd766bdcc2
-caps.latest.revision: 4
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Peer-to-Peer Networking Scenarios
 Peer-to-peer networking enables or enhances the following scenarios:  
@@ -74,5 +62,5 @@ Peer-to-peer networking enables or enhances the following scenarios:
   
 -  
   
-## See Also  
- <xref:System.Net.PeerToPeer.Collaboration>
+## See also
+- <xref:System.Net.PeerToPeer.Collaboration>

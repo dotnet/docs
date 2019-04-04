@@ -1,18 +1,7 @@
 ---
 title: "Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 57ffb748-af40-4794-bedd-bdb7fea062de
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)
 By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, you can start multiple tasks at the same time and process them one by one as they’re completed rather than process them in the order in which they're started.  
@@ -23,7 +12,7 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithTy
 >  To run the examples, you must have Visual Studio 2012 or newer and  the .NET Framework 4.5 or newer installed on your computer.  
   
 ## Downloading the Example  
- You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) and then follow these steps.  
+ You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
 1.  Decompress the file that you downloaded, and then start Visual Studio.  
   
@@ -85,14 +74,14 @@ Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =
  You should run the project several times to verify that the downloaded lengths don't always appear in the same order.  
   
 > [!CAUTION]
->  You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing Tasks as they complete](http://go.microsoft.com/fwlink/?LinkId=260810).  
+>  You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing Tasks as they complete](https://blogs.msdn.microsoft.com/pfxteam/2012/08/02/processing-tasks-as-they-complete).  
   
 ## Complete Example  
  The following code is the complete text of the MainWindow.xaml.vb file for the example. Asterisks mark the elements that were added for this example.  
   
  Notice that you must add a reference for <xref:System.Net.Http>.  
   
- You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
+ You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
 ```vb  
 ' Add an Imports directive and a reference for System.Net.Http.  
@@ -185,13 +174,13 @@ Class MainWindow
   
         Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/hh290138.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/dd470362.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -210,8 +199,9 @@ End Class
 ' Downloads complete.  
 ```  
   
-## See Also  
- <xref:System.Threading.Tasks.Task.WhenAny%2A>  
- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)
+## See also
+
+- <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

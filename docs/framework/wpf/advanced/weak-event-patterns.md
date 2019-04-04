@@ -1,31 +1,17 @@
 ---
 title: "Weak Event Patterns"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "weak event pattern implementation [WPF]"
   - "event handlers [WPF], weak event pattern"
   - "IWeakEventListener interface [WPF]"
 ms.assetid: e7c62920-4812-4811-94d8-050a65c856f6
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Weak Event Patterns
 In applications, it is possible that handlers that are attached to event sources will not be destroyed in coordination with the listener object that attached the handler to the source. This situation can lead to memory leaks. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] introduces a design pattern that can be used to address this issue, by providing a dedicated manager class for particular events and implementing an interface on listeners for that event. This design pattern is known as the *weak event pattern*.  
   
 ## Why Implement the Weak Event Pattern?  
- Listening for events can lead to memory leaks. The typical technique for listening to an event is to use the language-specific syntax that attaches a handler to an event on a source. For example, in [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)], that syntax is: `source.SomeEvent += new SomeEventHandler(MyEventHandler)`.  
+ Listening for events can lead to memory leaks. The typical technique for listening to an event is to use the language-specific syntax that attaches a handler to an event on a source. For example, in C#, that syntax is: `source.SomeEvent += new SomeEventHandler(MyEventHandler)`.  
   
  This technique creates a strong reference from the event source to the event listener. Ordinarily, attaching an event handler for a listener causes the listener to have an object lifetime that is influenced by the object lifetime of the source (unless the event handler is explicitly removed). But in certain circumstances, you might want the object lifetime of the listener to be controlled by other factors, such as whether it currently belongs to the visual tree of the application, and not by the lifetime of the source. Whenever the source object lifetime extends beyond the object lifetime of the listener, the normal event pattern leads to a memory leak: the listener is kept alive longer than intended.  
   
@@ -41,10 +27,11 @@ In applications, it is possible that handlers that are attached to event sources
   
 |Approach|When to Implement|  
 |--------------|-----------------------|  
-|Use an existing weak event manager class|If the event you want to subscribe to has a corresponding <xref:System.Windows.WeakEventManager>, use the existing weak event manager. For a list of weak event managers that are included with WPF, see the inheritance hierarchy in the <xref:System.Windows.WeakEventManager> class. Note, however, that there are relatively few weak event managers that are included with WPF, so you will probably need to choose one of the other approaches.|  
+|Use an existing weak event manager class|If the event you want to subscribe to has a corresponding <xref:System.Windows.WeakEventManager>, use the existing weak event manager. For a list of weak event managers that are included with WPF, see the inheritance hierarchy in the <xref:System.Windows.WeakEventManager> class. Because the included weak event managers are limited, you will probably need to choose one of the other approaches.|  
 |Use a generic weak event manager class|Use a generic <xref:System.Windows.WeakEventManager%602> when an existing <xref:System.Windows.WeakEventManager> is not available, you want an easy way to implement, and you are not concerned about efficiency. The generic <xref:System.Windows.WeakEventManager%602> is less efficient than an existing or custom weak event manager. For example, the generic class does more reflection to discover the event given the event's name. Also, the code to register the event by using the generic <xref:System.Windows.WeakEventManager%602> is more verbose than using an existing or custom <xref:System.Windows.WeakEventManager>.|  
 |Create a custom weak event manager class|Create a custom <xref:System.Windows.WeakEventManager> when an existing <xref:System.Windows.WeakEventManager> is not available and you want the best efficiency. Using a custom <xref:System.Windows.WeakEventManager> to subscribe to an event will be more efficient, but you do incur the cost of writing more code at the beginning.|  
-  
+|Use a third-party weak event manager|NuGet has [several weak event managers](https://www.nuget.org/packages?q=weak+event+manager&prerel=false) and many WPF frameworks also support the pattern (for instance, see [Prism's documentation on loosely coupled event subscription](https://github.com/PrismLibrary/Prism-Documentation/blob/master/docs/wpf/Communication.md#subscribing-to-events)).|
+
  The following sections describe how to implement the weak event pattern.  For purposes of this discussion, the event to subscribe to has the following characteristics.  
   
 -   The event name is `SomeEvent`.  
@@ -75,7 +62,7 @@ In applications, it is possible that handlers that are attached to event sources
     SomeEventWeakEventManager.AddHandler(source, OnSomeEvent);  
     ```  
   
-     Similarly, if your code uses the following pattern to unsubscribe to an event:  
+     Similarly, if your code uses the following pattern to unsubscribe from an event:  
   
     ```  
     source.SomeEvent -= new SomeEventEventHandler(OnSome);  
@@ -103,7 +90,7 @@ In applications, it is possible that handlers that are attached to event sources
   
      This class inherits from the <xref:System.Windows.WeakEventManager> class.  
   
-     [!code-csharp[WeakEvents#WeakEventManagerTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WeakEvents/CSharp/WeakEventManagerTemplate.cs#weakeventmanagertemplate)]  
+     [!code-csharp[WeakEvents#WeakEventManagerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/WeakEvents/CSharp/WeakEventManagerTemplate.cs#weakeventmanagertemplate)]  
   
 2.  Replace the `SomeEventWeakEventManager` name with your own name.  
   
@@ -137,8 +124,8 @@ In applications, it is possible that handlers that are attached to event sources
     SomeEventWeakEventManager.RemoveHandler(source, OnSomeEvent);  
     ```  
   
-## See Also  
- <xref:System.Windows.WeakEventManager>  
- <xref:System.Windows.IWeakEventListener>  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+## See also
+- <xref:System.Windows.WeakEventManager>
+- <xref:System.Windows.IWeakEventListener>
+- [Routed Events Overview](routed-events-overview.md)
+- [Data Binding Overview](../data/data-binding-overview.md)

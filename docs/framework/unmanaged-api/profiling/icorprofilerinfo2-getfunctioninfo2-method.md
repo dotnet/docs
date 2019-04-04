@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo2::GetFunctionInfo2 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo2.GetFunctionInfo2"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
 topic_type: 
   - "apiref"
-caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo2::GetFunctionInfo2 Method
 Gets the parent class, the metadata token, and the `ClassID` of each type argument, if present, of a function.  
@@ -47,7 +35,7 @@ HRESULT GetFunctionInfo2(
     [out] ClassID typeArgs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The ID of the function for which to get the parent class and other information.  
   
@@ -96,8 +84,8 @@ HRESULT GetFunctionInfo2(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

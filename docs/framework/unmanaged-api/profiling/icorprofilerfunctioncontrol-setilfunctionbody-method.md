@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerFunctionControl::SetILFunctionBody Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerFunctionControl.SetILFunctionBody"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerFunctionControl::SetILFunctionBody Method
 Replaces the Common Intermediate Language (CIL) body of the method.  
@@ -41,7 +29,7 @@ HRESULT SetILFunctionBody(
     [in, size_is(cbNewILMethodHeader)] LPCBYTE pbNewILMethodHeader);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbNewILMethodHeader`  
  [in] The total size of the new CIL, including the header and any structures that come after the body.  
   
@@ -67,5 +55,5 @@ HRESULT SetILFunctionBody(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)
+## See also
+- [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)

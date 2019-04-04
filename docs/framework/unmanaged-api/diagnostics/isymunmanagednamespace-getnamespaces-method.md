@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedNamespace::GetNamespaces Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedNamespace.GetNamespaces"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0ea9d9af-8709-4a46-872b-f54d9e840088
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedNamespace::GetNamespaces Method
 Gets the children of this namespace.  
@@ -43,7 +31,7 @@ HRESULT GetNamespaces(
         ISymUnmanagedNamespace* namespaces[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cNameSpaces`  
  [in] A `ULONG32` that indicates the size of the `namespaces` array.  
   
@@ -59,5 +47,5 @@ HRESULT GetNamespaces(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+## See also
+- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)

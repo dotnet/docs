@@ -1,15 +1,11 @@
 ---
-title: "out parameter modifier (C# Reference)"
+title: "out parameter modifier - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/06/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "parameters [C#], out"
   - "out parameters [C#]"
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # out parameter modifier (C# Reference)
 The `out` keyword causes arguments to be passed by reference. It is like the [ref](ref.md) keyword, except that `ref` requires that the variable be initialized before it is passed. It is also like the [in](in-parameter-modifier.md) keyword, except that `in` does not allow the called method to modify the argument value. To use an `out` parameter, both the method definition and the calling method must explicitly use the `out` keyword. For example:  
@@ -41,9 +37,7 @@ The compiler chooses the best overload by matching the parameter modifiers at th
  
 Properties are not variables and therefore cannot be passed as `out` parameters.
   
- For information about passing arrays, see [Passing Arrays Using ref and out](../../../csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md).  
-  
- You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
+You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
 -   Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
   
@@ -55,7 +49,7 @@ Properties are not variables and therefore cannot be passed as `out` parameters.
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 
- The [Try pattern](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md) involves returning a `bool` to indicate whether an operation succeeded and failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) method, use this pattern.
+ The [Try pattern](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods) involves returning a `bool` to indicate whether an operation succeeded or failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the [DateTime.TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) method, use this pattern.
    
 ## Calling a method with an `out` argument
 
@@ -63,7 +57,7 @@ In C# 6 and earlier, you must declare a variable in a separate statement before 
 
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#4)]  
 
-Starting with C# 7, you can declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. This produces more compact, readable code, and also prevents you from inadvertently assigning a value to the variable before the method call. The following example is like the previous example, except that it defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
+Starting with C# 7.0, you can declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. This produces more compact, readable code, and also prevents you from inadvertently assigning a value to the variable before the method call. The following example is like the previous example, except that it defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
 
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#5)]  
    
@@ -74,8 +68,9 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
 ## C# Language Specification  
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)

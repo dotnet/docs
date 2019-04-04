@@ -1,21 +1,7 @@
 ---
 title: "SET (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 28b4deac-c7e4-4f09-b428-4d352ef2dc94
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SET (Entity SQL)
 The SET expression is used to convert a collection of objects into a set by yielding a new collection with all duplicate elements removed.  
@@ -48,5 +34,5 @@ SELECT VALUE DISTINCT c FROM c
   
  [!code-csharp[DP EntityServices Concepts 2#SET](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#set)]  
   
-## See Also  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## See also
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

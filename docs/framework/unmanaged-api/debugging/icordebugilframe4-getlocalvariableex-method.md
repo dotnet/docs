@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugILFrame4::GetLocalVariableEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: 0c8676f8-ca0d-4998-b64d-fefac7e38912
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugILFrame4::GetLocalVariableEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -42,7 +30,7 @@ HRESULT GetLocalVariableEx(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  [in] An [ILCodeKind](../../../../docs/framework/unmanaged-api/debugging/ilcodekind-enumeration.md) enumeration member that specifies whether a variable added in profiler ReJIT instrumentation is included in the frame.  
   
@@ -64,7 +52,7 @@ HRESULT GetLocalVariableEx(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [ICorDebugILFrame4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [ReJIT: A How-To Guide](http://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
+## See also
+- [ICorDebugILFrame4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ReJIT: A How-To Guide](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugBreakpoint::Activate Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugBreakpoint.Activate"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e30c29f7-3f19-4081-b572-a731aa14cd44
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugBreakpoint::Activate Method
 Sets the active state of this `ICorDebugBreakpoint`.  
@@ -41,7 +29,7 @@ HRESULT Activate (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bActive`  
  [in] Set this value to `true` to specify the state as active; otherwise, set this value to `false`.  
   

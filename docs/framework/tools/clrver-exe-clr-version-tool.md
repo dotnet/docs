@@ -1,29 +1,17 @@
 ---
 title: "Clrver.exe (CLR Version Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Clrver.exe"
   - "CLR Version tool"
 ms.assetid: cbc2ee86-bdc8-4a65-a8f1-ba23bce3a699
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Clrver.exe (CLR Version Tool)
 The CLR Version tool (Clrver.exe) reports all the installed versions of the common language runtime (CLR) on the computer.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -62,6 +50,6 @@ clrver [option]
   
  `Clrver -all`  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

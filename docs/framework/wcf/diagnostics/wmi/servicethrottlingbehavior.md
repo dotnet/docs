@@ -1,28 +1,14 @@
 ---
 title: "ServiceThrottlingBehavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 37b9e517-1f1f-4ec4-9fcb-2b8016794f5b
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceThrottlingBehavior
 ServiceThrottlingBehavior  
   
 ## Syntax  
   
-```  
+```csharp  
 class ServiceThrottlingBehavior : Behavior  
 {  
   sint32 MaxConcurrentCalls;  
@@ -64,5 +50,5 @@ class ServiceThrottlingBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
+## See also
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>

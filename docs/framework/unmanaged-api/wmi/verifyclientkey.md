@@ -2,10 +2,6 @@
 title: VerifyClientKey function (Unmanaged API Reference)
 description: The VerifyClientKey function ensures the client key has the correct security.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "VerifyClientKey"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # VerifyClientKey function
 Ensures that the client key has the correct security.  
@@ -48,5 +41,5 @@ If the function fails, the return value is a non-zero error code defined in *Win
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

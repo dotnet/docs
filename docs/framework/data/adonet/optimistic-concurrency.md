@@ -1,24 +1,10 @@
 ---
 title: "Optimistic Concurrency"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Optimistic Concurrency
 In a multiuser environment, there are two models for updating data in a database: optimistic concurrency and pessimistic concurrency. The <xref:System.Data.DataSet> object is designed to encourage the use of optimistic concurrency for long-running activities, such as remoting data and interacting with data.  
@@ -131,7 +117,7 @@ adapter.UpdateCommand.Parameters.Add( _
   "@CompanyName", SqlDbType.NVarChar, 30, "CompanyName")  
   
 ' Pass the original values to the WHERE clause parameters.  
-Dim parameter As SqlParameter = dataSet.UpdateCommand.Parameters.Add( _  
+Dim parameter As SqlParameter = adapter.UpdateCommand.Parameters.Add( _  
   "@oldCustomerID", SqlDbType.NChar, 5, "CustomerID")  
 parameter.SourceVersion = DataRowVersion.Original  
 parameter = adapter.UpdateCommand.Parameters.Add( _  
@@ -174,7 +160,7 @@ SqlDataAdapter adapter = new SqlDataAdapter(
 // The Update command checks for optimistic concurrency violations  
 // in the WHERE clause.  
 adapter.UpdateCommand = new SqlCommand("UPDATE Customers Set CustomerID = @CustomerID, CompanyName = @CompanyName " +  
-   "WHERE CustomerID = @oldCustomerID AND CompanyName = @oldCompanyName, connection);  
+   "WHERE CustomerID = @oldCustomerID AND CompanyName = @oldCompanyName", connection);  
 adapter.UpdateCommand.Parameters.Add(  
   "@CustomerID", SqlDbType.NChar, 5, "CustomerID");  
 adapter.UpdateCommand.Parameters.Add(  
@@ -214,9 +200,9 @@ protected static void OnRowUpdated(object sender, SqlRowUpdatedEventArgs args)
 }  
 ```  
   
-## See Also  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
- [Row Error Information](../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-error-information.md)  
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
+- [Row Error Information](../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-error-information.md)
+- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

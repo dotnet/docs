@@ -1,14 +1,6 @@
 ---
 title: "ICLRGCManager::SetGCStartupLimits Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRGCManager.SetGCStartupLimits"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 1c8d9959-95b5-4131-be4a-556d97774014
 topic_type: 
   - "apiref"
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRGCManager::SetGCStartupLimits Method
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  
@@ -45,7 +33,7 @@ HRESULT SetGCStartupLimits (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The specified size of a garbage collection segment.  
   
@@ -79,8 +67,8 @@ HRESULT SetGCStartupLimits (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)
+## See also
+- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
+- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetFunctionFromIP Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetFunctionFromIP"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f069802a-198f-46dd-9f09-4f77adffc9ba
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetFunctionFromIP Method
 Maps a managed code instruction pointer to a `FunctionID`.  
@@ -41,7 +29,7 @@ HRESULT GetFunctionFromIP(
     [out] FunctionID *pFunctionId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ip`  
  [in] The instruction pointer in managed code.  
   
@@ -57,5 +45,5 @@ HRESULT GetFunctionFromIP(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

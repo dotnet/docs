@@ -1,23 +1,10 @@
 ---
-title: "&lt;customCookieHandler&gt;"
-ms.custom: ""
+title: "<customCookieHandler>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a03b153d-5ec6-4915-9031-6f0c3fd348be
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;customCookieHandler&gt;
+# \<customCookieHandler>
 Sets the custom cookie handler type. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
  \<system.identityModel.services>  
@@ -70,5 +57,5 @@ Sets the custom cookie handler type. This element may only be present if the `mo
 </cookieHandler>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Services.CookieHandler>
+## See also
+- <xref:System.IdentityModel.Services.CookieHandler>

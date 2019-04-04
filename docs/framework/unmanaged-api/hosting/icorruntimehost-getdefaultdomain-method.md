@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::GetDefaultDomain Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.GetDefaultDomain"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5e17a6fc-f335-4aae-9bb0-c3e1271a9426
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorRuntimeHost::GetDefaultDomain Method
 Gets an interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the default domain for the current process.  
@@ -41,7 +29,7 @@ HRESULT GetDefaultDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [out] An interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> to the <xref:System.AppDomain> instance that represents the default application domain for the process.  
   
@@ -65,7 +53,7 @@ HRESULT GetDefaultDomain (
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

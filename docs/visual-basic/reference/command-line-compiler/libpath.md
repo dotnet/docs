@@ -1,18 +1,11 @@
 ---
 title: "-libpath"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "libpath compiler option [Visual Basic]"
   - "/libpath compiler option [Visual Basic]"
   - "-libpath compiler option [Visual Basic]"
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
-author: rpetrusha
-ms.author: ronpet
 ---
 # -libpath
 Specifies the location of referenced assemblies.  
@@ -57,7 +50,8 @@ Specifies the location of referenced assemblies.
 vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb  
 ```  
   
-## See Also  
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Assemblies in .NET](../../../standard/assembly/index.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

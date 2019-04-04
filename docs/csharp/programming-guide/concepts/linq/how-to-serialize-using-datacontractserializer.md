@@ -1,17 +1,7 @@
 ---
 title: "How to: Serialize Using DataContractSerializer (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Serialize Using DataContractSerializer (C#)
 This topic shows an example that serializes and deserializes using <xref:System.Runtime.Serialization.DataContractSerializer>.  
@@ -95,5 +85,6 @@ Testing for type: XElementNullContainer
   Deserialized type: XElementNullContainer  
 ```  
   
-## See Also  
- [Serializing Object Graphs that Contain XElement Objects (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)
+## See also
+
+- [Serializing Object Graphs that Contain XElement Objects (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)

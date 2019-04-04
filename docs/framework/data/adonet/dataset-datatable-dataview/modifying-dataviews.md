@@ -1,24 +1,10 @@
 ---
 title: "Modifying DataViews"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 697a3991-b660-4a5a-8a54-1a2304ff158e
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Modifying DataViews
 You can use the <xref:System.Data.DataView> to add, delete, or modify rows of data in the underlying table. The ability to use the **DataView** to modify data in the underlying table is controlled by setting one of three Boolean properties of the **DataView**. These properties are <xref:System.Data.DataView.AllowNew%2A>, <xref:System.Data.DataView.AllowEdit%2A>, and <xref:System.Data.DataView.AllowDelete%2A>. They are set to **true** by default.  
@@ -59,9 +45,9 @@ newDRV["CompanyName"] = "ABC Products";
 newDRV.EndEdit();  
 ```  
   
-## See Also  
- <xref:System.Data.DataTable>  
- <xref:System.Data.DataView>  
- <xref:System.Data.DataRowView>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataTable>
+- <xref:System.Data.DataView>
+- <xref:System.Data.DataRowView>
+- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedDocument::GetCheckSum Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedDocument.GetCheckSum"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9bc881b3-e2ce-48a7-ad69-17eaaa304120
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetCheckSum Method
 Gets the checksum.  
@@ -42,7 +30,7 @@ HRESULT GetCheckSum(
     [out, size_is(cData), length_is(*pcData)] BYTE data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cData`  
  [in] The length of the buffer provided by the `data` parameter  
   
@@ -55,5 +43,5 @@ HRESULT GetCheckSum(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

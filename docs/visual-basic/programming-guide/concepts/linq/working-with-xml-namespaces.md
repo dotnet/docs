@@ -1,18 +1,7 @@
 ---
 title: "Working with XML Namespaces (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 428bf4b0-e348-4ffd-986b-d905d5a0e7fa
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Working with XML Namespaces (Visual Basic)
 The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] supports namespaces.  
@@ -28,5 +17,6 @@ The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[Working with Global Namespaces (Visual Basic) (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/working-with-global-namespaces-linq-to-xml.md)|Explains the semantics of global namespaces in Visual Basic, and reasons for using them.|  
 |[How to: Write Queries on XML in Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in Visual Basic LINQ to XML queries.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

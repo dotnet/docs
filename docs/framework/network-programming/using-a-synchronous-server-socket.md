@@ -1,12 +1,6 @@
 ---
 title: "Using a Synchronous Server Socket"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +17,6 @@ helpviewer_keywords:
   - "sockets, synchronous server sockets"
   - "Internet, sockets"
 ms.assetid: d1ce882e-653e-41f5-9289-844ec855b804
-caps.latest.revision: 9
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Using a Synchronous Server Socket
 Synchronous server sockets suspend the execution of the application until a connection request is received on the socket. Synchronous server sockets are not suitable for applications that make heavy use of the network in their operation, but they can be suitable for simple network applications.  
@@ -81,7 +69,7 @@ handler.Shutdown(SocketShutdown.Both);
 handler.Close();  
 ```  
   
-## See Also  
- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)  
- [Synchronous Server Socket Example](../../../docs/framework/network-programming/synchronous-server-socket-example.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+## See also
+- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)
+- [Synchronous Server Socket Example](../../../docs/framework/network-programming/synchronous-server-socket-example.md)
+- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)

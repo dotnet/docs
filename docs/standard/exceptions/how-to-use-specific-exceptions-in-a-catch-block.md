@@ -1,13 +1,7 @@
 ---
 title: "How to: Use Specific Exceptions in a Catch Block"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "try/catch blocks"
   - "catch blocks"
 ms.assetid: 12af9ff3-8587-4f31-90cf-6c2244e0fdae
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to use specific exceptions in a catch block
 
@@ -37,5 +26,6 @@ The following code example uses a `try`/`catch` block to catch an <xref:System.I
 [!code-csharp[CatchException#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception1.cs#2)]
 [!code-vb[CatchException#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception1.vb#2)] 
 
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

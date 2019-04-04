@@ -1,13 +1,6 @@
 ---
 title: "Common Tasks Performed with Visual Basic Operators"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "operators [Visual Basic], logical"
   - "operators [Visual Basic], string concatenation"
@@ -20,9 +13,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], comparison"
   - "operators [Visual Basic], short-circuiting logical"
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Common Tasks Performed with Visual Basic Operators
 Operators perform many common tasks involving one or more expressions called *operands*.  
@@ -82,6 +72,7 @@ Operators perform many common tasks involving one or more expressions called *op
 |Perform bit-by-bit exclusive logical disjunction on two integral values|[Xor Operator](../../../../visual-basic/language-reference/operators/xor-operator.md)|  
 |Perform bit-by-bit logical negation on an integral value|[Not Operator](../../../../visual-basic/language-reference/operators/not-operator.md)|  
   
-## See Also  
- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Operators Listed by Functionality](../../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+## See also
+
+- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Operators Listed by Functionality](../../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

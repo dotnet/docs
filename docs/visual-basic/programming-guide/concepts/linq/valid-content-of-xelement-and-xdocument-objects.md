@@ -1,18 +1,7 @@
 ---
 title: "Valid Content of XElement and XDocument Objects2"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 400bb692-478a-40b6-ac1b-4ccbb4cbbd02
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Valid Content of XElement and XDocument Objects
 This topic describes the valid arguments that can be passed to constructors and methods that you use to add content to elements and documents.  
@@ -93,5 +82,6 @@ This topic describes the valid arguments that can be passed to constructors and 
 |<xref:System.Xml.Linq.XContainer.ReplaceNodes%2A>|Replaces the children nodes with new content.|  
 |<xref:System.Xml.Linq.XNode.ReplaceWith%2A>|Replaces a node with new content.|  
   
-## See Also  
- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+## See also
+
+- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

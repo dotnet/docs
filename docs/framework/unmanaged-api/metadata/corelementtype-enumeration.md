@@ -1,14 +1,6 @@
 ---
 title: "CorElementType Enumeration1"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorElementType"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: c3809c8f-1737-4f0f-9442-0c01ee689871
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorElementType Enumeration1
 Specifies a common language runtime <xref:System.Type>, a type modifier, or information about a type in a metadata type signature.  
@@ -127,7 +115,7 @@ typedef enum CorElementType {
  The type modifiers form the basis for representing more complex types. A `CorElementType` type modifier value is applied to the value that immediately follows it in the type signature. The value that follows the `CorElementType` type modifier value can be a `CorElementType` simple type value, a metadata token, or other value, as specified in the following table.  
   
 > [!NOTE]
->  All numbers (*number*, *argument Count*, *metadata token*, *rank*, *count*, and *bound*) are stored as compressed integers. See [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=116487) on the ECMA Web site for details.  
+>  All numbers (*number*, *argument Count*, *metadata token*, *rank*, *count*, and *bound*) are stored as compressed integers. See [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=116487) on the ECMA Web site for details.  
   
 |Type modifier|Format|  
 |-------------------|------------|  
@@ -151,5 +139,5 @@ typedef enum CorElementType {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -1,10 +1,6 @@
 ---
 title: "-lib (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/lib"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-lib compiler option [C#]"
   - "/lib compiler option [C#]"
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -lib (C# Compiler Options)
 The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
@@ -68,6 +61,7 @@ The **-lib** option specifies the location of assemblies referenced by means of 
 csc -lib:c:\ -reference:t2.dll t2.cs  
 ```  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

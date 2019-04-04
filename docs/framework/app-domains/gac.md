@@ -1,14 +1,6 @@
 ---
 title: "Global Assembly Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"
   - "GAC (global assembly cache)"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "global assembly cache, about"
   - "access control lists [.NET Framework]"
 ms.assetid: cf5eacd0-d3ec-4879-b6da-5fd5e4372202
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Global Assembly Cache
 Each computer where the Common Language Runtime is installed has a machine-wide code cache called the Global Assembly Cache. The Global Assembly Cache stores assemblies specifically designated to be shared by several applications on the computer.  
@@ -48,7 +36,7 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
   
  Assemblies deployed in the Global Assembly Cache must have a strong name. When an assembly is added to the Global Assembly Cache, integrity checks are performed on all files that make up the assembly. The cache performs these integrity checks to ensure that an assembly has not been tampered with, for example, when a file has changed but the manifest does not reflect the change.  
   
-## See Also  
- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)  
- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
+## See also
+- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)
+- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)

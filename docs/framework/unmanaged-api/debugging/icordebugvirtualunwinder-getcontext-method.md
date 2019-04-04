@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugVirtualUnwinder::GetContext Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: fe502a76-3068-47e5-a0a0-85ccb72dfac3
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVirtualUnwinder::GetContext Method
 Gets the current context of this unwinder.  
@@ -31,7 +19,7 @@ HRESULT GetContext(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextFlags`  
  [in] Flags that specify which parts of the context to return (defined in WinNT.h).  
   
@@ -64,6 +52,6 @@ HRESULT GetContext(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

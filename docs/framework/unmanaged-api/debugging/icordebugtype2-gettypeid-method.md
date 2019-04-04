@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugType2::GetTypeID Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorDebugType2.GetTypeID"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugType2::GetTypeID Method
 Gets a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this type.  
@@ -41,7 +29,7 @@ HRESULT GetTypeID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [out] A pointer to the [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this ICorDebugType.  
   
@@ -68,5 +56,5 @@ HRESULT GetTypeID(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)
+## See also
+- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)

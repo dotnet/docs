@@ -1,19 +1,7 @@
 ---
 title: "How to: Project an Anonymous Type (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 5cb9be13-5ac4-4373-a034-b3520a5b2dec
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Project an Anonymous Type (C#)
 In some cases you might want to project a query to a new type, even though you know you will only use this type for a short while. It is a lot of extra work to create a new type just to use in the projection. A more efficient approach in this case is to project to an anonymous type. Anonymous types allow you to define a class, then declare and initialize an object of that class, without giving the class a name.  
@@ -58,5 +46,6 @@ LAZYK:Lazy K Kountry Store:John Steel
 LETSS:Let's Stop N Shop:Jaime Yorres  
 ```  
   
-## See Also  
- [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+## See also
+
+- [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

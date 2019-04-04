@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugHeapValue3::GetThreadOwningMonitorLock Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugHeapValue3.GetThreadOwningMonitorLock"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e06fc19d-2cf4-4cad-81a3-137a68af8969
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugHeapValue3::GetThreadOwningMonitorLock Method
 Returns the managed thread that owns the monitor lock on this object.  
@@ -42,7 +30,7 @@ HRESULT GetThreadOwningMonitorLock (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThread`  
  [out] The managed thread that owns the monitor lock on this object.  
   
@@ -81,6 +69,6 @@ HRESULT GetThreadOwningMonitorLock (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "NotifyIcon component"
   - "taskbar [Windows Forms], adding icons"
 ms.assetid: d28c0fe6-aaf2-4df7-ad74-928d861a8510
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component
 The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a single icon in the status notification area of the taskbar. To display multiple icons in the status area, you must have multiple <xref:System.Windows.Forms.NotifyIcon> components on your form. To set the icon displayed for a control, use the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. You can also write code in the <xref:System.Windows.Forms.NotifyIcon.DoubleClick> event handler so that something happens when the user double-clicks the icon. For example, you could make a dialog box appear for the user to configure the background process represented by the icon.  
@@ -36,7 +22,7 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
   
 ### To set the icon  
   
-1.  Assign a value to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. The value must be of type `System.Drawing.Icon` and can be loaded from an .ico file. You can specify the icon file in code or by clicking the ellipsis button (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property in the **Properties** window, and then selecting the file in the **Open** dialog box that appears.  
+1.  Assign a value to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. The value must be of type `System.Drawing.Icon` and can be loaded from an .ico file. You can specify the icon file in code or by clicking the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property in the **Properties** window, and then selecting the file in the **Open** dialog box that appears.  
   
 2.  Set the <xref:System.Windows.Forms.NotifyIcon.Visible%2A> property to `true`.  
   
@@ -79,9 +65,9 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
     notifyIcon1->Text = "Antivirus program";  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.NotifyIcon>  
- <xref:System.Windows.Forms.NotifyIcon.Icon%2A>  
- [How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component](../../../../docs/framework/winforms/controls/how-to-associate-a-shortcut-menu-with-a-windows-forms-notifyicon-component.md)  
- [NotifyIcon Component](../../../../docs/framework/winforms/controls/notifyicon-component-windows-forms.md)  
- [NotifyIcon Component Overview](../../../../docs/framework/winforms/controls/notifyicon-component-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.NotifyIcon>
+- <xref:System.Windows.Forms.NotifyIcon.Icon%2A>
+- [How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component](how-to-associate-a-shortcut-menu-with-a-windows-forms-notifyicon-component.md)
+- [NotifyIcon Component](notifyicon-component-windows-forms.md)
+- [NotifyIcon Component Overview](notifyicon-component-overview-windows-forms.md)

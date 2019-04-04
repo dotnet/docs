@@ -1,12 +1,6 @@
 ---
 title: "Using Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.using"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "resources [Visual Basic], disposing"
   - "Using statement [Visual Basic]"
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
-caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Using Statement (Visual Basic)
 Declares the beginning of a `Using` block and optionally acquires the system resources that the block controls.  
@@ -110,9 +101,10 @@ End Try
   
  Because the <xref:System.IO.TextWriter> and <xref:System.IO.TextReader> classes implement the <xref:System.IDisposable> interface, the code can use `Using` statements to ensure that the file is correctly closed after the write and read operations.  
   
- [!code-vb[VbVbalrStatements#50](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/using-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#50](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#50)]  
   
-## See Also  
- <xref:System.IDisposable>  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [How to: Dispose of a System Resource](../../../visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md)
+## See also
+
+- <xref:System.IDisposable>
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [How to: Dispose of a System Resource](../../../visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md)

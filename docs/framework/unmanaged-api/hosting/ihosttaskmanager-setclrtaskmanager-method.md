@@ -1,14 +1,6 @@
 ---
 title: "IHostTaskManager::SetCLRTaskManager Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostTaskManager.SetCLRTaskManager"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ec90ee83-bd4b-408b-9274-62a923ab86a1
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostTaskManager::SetCLRTaskManager Method
 Provides the host with an interface pointer to an [ICLRTaskManager](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md) instance implemented by the common language runtime (CLR).  
@@ -41,7 +29,7 @@ HRESULT SetCLRTaskManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManager`  
  [in] A pointer to an `ICLRTaskManager` instance implemented by the common language runtime.  
   
@@ -68,8 +56,8 @@ HRESULT SetCLRTaskManager (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+## See also
+- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
+- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
+- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
+- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)

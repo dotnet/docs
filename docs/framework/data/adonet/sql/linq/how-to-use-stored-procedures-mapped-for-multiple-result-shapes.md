@@ -1,24 +1,10 @@
 ---
 title: "How to: Use Stored Procedures Mapped for Multiple Result Shapes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c2b84dfe-7fec-489a-92de-45215cec4518
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Use Stored Procedures Mapped for Multiple Result Shapes
 When a stored procedure can return multiple result shapes, the return type cannot be strongly typed to a single projection shape. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can generate all possible projection types, it cannot know the order in which they will be returned.  
@@ -51,5 +37,5 @@ else if(@shape = 2)
  [!code-csharp[DLinqSprox#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/Program.cs#5)]
  [!code-vb[DLinqSprox#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/Module1.vb#5)]  
   
-## See Also  
- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+## See also
+- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

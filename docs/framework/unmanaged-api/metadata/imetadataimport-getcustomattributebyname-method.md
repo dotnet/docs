@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::GetCustomAttributeByName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.GetCustomAttributeByName"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 909aa530-2e3b-4d0a-a38a-a2750e535d7d
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::GetCustomAttributeByName Method
 Gets the custom attribute, given its name and owner.  
@@ -44,7 +32,7 @@ HRESULT GetCustomAttributeByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] A metadata token representing the object that owns the custom attribute.  
   
@@ -69,6 +57,6 @@ HRESULT GetCustomAttributeByName (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

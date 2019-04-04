@@ -1,13 +1,7 @@
 ---
 title: "Generic Collections in .NET"
-ms.custom: ""
 ms.date: "02/15/2018"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +13,6 @@ helpviewer_keywords:
 ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generic Collections in .NET
 
@@ -54,9 +44,10 @@ ms.workload:
  [!code-csharp[Conceptual.Generics.Overview#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.generics.overview/cs/source2.cs#7)]
  [!code-vb[Conceptual.Generics.Overview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb/source2.vb#7)]  
   
-## See Also  
- <xref:System.Collections.Generic?displayProperty=nameWithType>  
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
- [Generics](../../../docs/standard/generics/index.md)  
- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
- [Generic Interfaces](../../../docs/standard/generics/interfaces.md)
+## See also
+
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [Generics](../../../docs/standard/generics/index.md)
+- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
+- [Generic Interfaces](../../../docs/standard/generics/interfaces.md)

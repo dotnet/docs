@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugValue::GetSize Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugValue.GetSize"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 445a9ee3-e050-4f3a-931a-96b0efb00110
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugValue::GetSize Method
 Gets the size, in bytes, of this "ICorDebugValue" object.  
@@ -41,7 +29,7 @@ HRESULT GetSize (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSize`  
  [out] The size, in bytes, of this value object.  
   
@@ -59,6 +47,6 @@ HRESULT GetSize (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- [GetSize64 Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-getsize64-method.md)
+## See also
+
+- [GetSize64 Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-getsize64-method.md)

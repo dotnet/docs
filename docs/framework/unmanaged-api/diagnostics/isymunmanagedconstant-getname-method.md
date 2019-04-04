@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedConstant::GetName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedConstant.GetName"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: cbaca4e1-4473-459b-ba34-f1f59ce7c0ba
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedConstant::GetName Method
 Gets the name of the constant.  
@@ -43,7 +31,7 @@ HRESULT GetName(
         length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The length of the buffer that the `szName` parameter points to.  
   
@@ -59,7 +47,7 @@ HRESULT GetName(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedConstant Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)  
- [GetSignature Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)  
- [GetValue Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getvalue-method.md)
+## See also
+- [ISymUnmanagedConstant Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)
+- [GetSignature Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)
+- [GetValue Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getvalue-method.md)

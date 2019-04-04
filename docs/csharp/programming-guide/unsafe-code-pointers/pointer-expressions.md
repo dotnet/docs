@@ -1,17 +1,11 @@
 ---
-title: "Pointer Expressions (C# Programming Guide)"
+title: "Pointer Expressions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "expressions [C#], pointer types"
   - "pointer expressions [C#]"
 ms.assetid: 3e7d9db3-20e9-4493-9c99-53c3214d19e5
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Pointer Expressions (C# Programming Guide)
 In this section, the following pointer expressions are discussed:  
@@ -26,11 +20,12 @@ In this section, the following pointer expressions are discussed:
   
  [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Pointer Conversions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md)  
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Pointer Conversions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md)
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Types](../../../csharp/language-reference/keywords/types.md)
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

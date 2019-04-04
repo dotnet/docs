@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess::ThreadForFiberCookie Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess.ThreadForFiberCookie"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: afe4e97f-bffc-47e1-adad-d6e842487f35
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess::ThreadForFiberCookie Method
 This method is not implemented.  

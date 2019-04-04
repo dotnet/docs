@@ -1,21 +1,7 @@
 ---
 title: "Using XML in a DataSet"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 35138159-e199-49ec-baf7-1ec6777e171e
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Using XML in a DataSet
 With ADO.NET you can fill a <xref:System.Data.DataSet> from an XML stream or document. You can use the XML stream or document to supply to the <xref:System.Data.DataSet> either data, schema information, or both. The information supplied from the XML stream or document can be combined with existing data or schema information already present in the <xref:System.Data.DataSet>.  
@@ -54,6 +40,6 @@ With ADO.NET you can fill a <xref:System.Data.DataSet> from an XML stream or doc
  [ADO.NET Overview](../../../../../docs/framework/data/adonet/ado-net-overview.md)  
  Describes the ADO.NET architecture and components, and how to use them to access existing data sources as well as to manage application data.  
   
-## See Also  
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

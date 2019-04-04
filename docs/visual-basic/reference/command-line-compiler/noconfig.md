@@ -1,18 +1,11 @@
 ---
 title: "-noconfig"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "noconfig compiler option [Visual Basic]"
   - "-noconfig compiler option [Visual Basic]"
   - "/noconfig compiler option [Visual Basic]"
 ms.assetid: a7405067-bd21-4171-adf4-a126fa3ad6c3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -noconfig
 Specifies that the compiler should not automatically reference the commonly used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies or import the `System` and `Microsoft.VisualBasic` namespaces.  
@@ -36,8 +29,9 @@ Specifies that the compiler should not automatically reference the commonly used
 > [!NOTE]
 >  The `-noconfig` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
-## See Also  
- [-nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)  
- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+## See also
+
+- [-nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)
+- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)

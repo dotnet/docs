@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugHandleValue Interface1"
-ms.custom: ""
+title: "ICorDebugHandleValue Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugHandleValue"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 66fcd2b8-ac66-414b-83a8-75a925e17772
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugHandleValue Interface1
+# ICorDebugHandleValue Interface
+
 A subclass of ICorDebugReferenceValue that represents a reference value to which the debugger has created a handle for garbage collection.  
   
 ## Methods  
@@ -54,5 +43,5 @@ A subclass of ICorDebugReferenceValue that represents a reference value to which
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

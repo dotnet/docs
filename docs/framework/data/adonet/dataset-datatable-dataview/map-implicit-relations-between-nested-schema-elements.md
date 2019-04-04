@@ -1,21 +1,7 @@
 ---
 title: "Map Implicit Relations Between Nested Schema Elements"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6b25002a-352e-4d9b-bae3-15129458a355
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Map Implicit Relations Between Nested Schema Elements
 An XML Schema definition language (XSD) schema can have complex types nested inside one another. In this case, the mapping process applies default mapping and creates the following in the <xref:System.Data.DataSet>:  
@@ -24,7 +10,7 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
   
 -   If no unique constraint exists on the parent, one additional primary key column per table definition named *TableName*_Id where *TableName* is the name of the parent table.  
   
--   A primary key constraint on the parent table identifying the additional column as the primary key (by setting the **IsPrimaryKey** property to **True**). The constraint is named Constraint*#* where *#* is 1, 2, 3, and so on. For example, the default name for the first constraint is Constraint1.  
+-   A primary key constraint on the parent table identifying the additional column as the primary key (by setting the **IsPrimaryKey** property to **True**). The constraint is named Constraint\# where \# is 1, 2, 3, and so on. For example, the default name for the first constraint is Constraint1.  
   
 -   A foreign key constraint on the child table identifying the additional column as the foreign key referring to the primary key of the parent table. The constraint is named *ParentTable_ChildTable* where *ParentTable* is the name of the parent table and *ChildTable* is the name of the child table.  
   
@@ -105,7 +91,7 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
     Nested: True  
     ```  
   
-## See Also  
- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)
+- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

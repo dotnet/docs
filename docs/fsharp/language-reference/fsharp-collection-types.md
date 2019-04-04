@@ -1,28 +1,17 @@
 ---
 title: F# Collection Types
 description: Learn about F# collection types and how they differ from collection types in the .NET Framework.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: cdf6a7e6-6b3d-4c44-b7b6-773a2b700331 
 ---
-
 # F# Collection Types
 
 By reviewing this topic, you can determine which F# collection type best suits a particular need. These collection types differ from the collection types in the .NET Framework, such as those in the `System.Collections.Generic` namespace, in that the F# collection types are designed from a functional programming perspective rather than an object-oriented perspective. More specifically, only the array collection has mutable elements. Therefore, when you modify a collection, you create an instance of the modified collection instead of altering the original collection.
 
 Collection types also differ in the type of data structure in which objects are stored. Data structures such as hash tables, linked lists, and arrays have different performance characteristics and a different set of available operations.
 
-
 ## F# Collection Types
+
 The following table shows F# collection types.
-
-
 
 |Type|Description|Related Links|
 |----|-----------|-------------|
@@ -33,9 +22,8 @@ The following table shows F# collection types.
 |[Set](https://msdn.microsoft.com/library/50cebdce-0cd7-4c5c-8ebc-f3a9e90b38d8)|An immutable set that's based on binary trees, where comparison is the F# structural comparison function, which potentially uses implementations of the `System.IComparable` interface on key values.|[Set Module](https://msdn.microsoft.com/library/61efa732-d55d-4c32-993f-628e2f98e6a0)|
 
 ### Table of Functions
+
 This section compares the functions that are available on F# collection types. The computational complexity of the function is given, where N is the size of the first collection, and M is the size of the second collection, if any. A dash (-) indicates that this function isn't available on the collection. Because sequences are lazily evaluated, a function such as Seq.distinct may be O(1) because it returns immediately, although it still affects the performance of the sequence when enumerated.
-
-
 
 |Function|Array|List|Sequence|Map|Set|Description|
 |--------|-----|----|--------|---|---|-----------|
@@ -149,8 +137,7 @@ This section compares the functions that are available on F# collection types. T
 |zip|O(N)|O(N)|O(N)|-|-|Combines the two collections into a list of pairs. The two lists must have equal lengths.|
 |zip3|O(N)|O(N)|O(N)|-|-|Combines the three collections into a list of triples. The lists must have equal lengths.|
 
-## See Also
-[F# Types](fsharp-types.md)
+## See also
 
-[F# Language Reference](index.md)
-
+- [F# Types](fsharp-types.md)
+- [F# Language Reference](index.md)

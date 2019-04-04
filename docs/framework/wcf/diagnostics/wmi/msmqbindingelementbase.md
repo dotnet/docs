@@ -1,28 +1,14 @@
 ---
 title: "MsmqBindingElementBase"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 210d41ab-a2a4-4d7a-afd2-0916c08a4015
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # MsmqBindingElementBase
 MsmqBindingElementBase  
   
 ## Syntax  
   
-```  
+```csharp  
 class MsmqBindingElementBase : TransportBindingElement  
 {  
   string CustomDeadLetterQueue;  
@@ -128,6 +114,6 @@ class MsmqBindingElementBase : TransportBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.NetMsmqBinding>  
- <xref:System.ServiceModel.MsmqBindingBase>
+## See also
+- <xref:System.ServiceModel.NetMsmqBinding>
+- <xref:System.ServiceModel.MsmqBindingBase>

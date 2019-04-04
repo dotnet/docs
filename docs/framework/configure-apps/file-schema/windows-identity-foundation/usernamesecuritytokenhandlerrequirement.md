@@ -1,23 +1,10 @@
 ---
-title: "&lt;userNameSecurityTokenHandlerRequirement&gt;"
-ms.custom: ""
+title: "<userNameSecurityTokenHandlerRequirement>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6ec3bac1-b014-49ae-843c-c54518cb709a
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;userNameSecurityTokenHandlerRequirement&gt;
+# \<userNameSecurityTokenHandlerRequirement>
 Provides configuration for the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> class or derived classes.  
   
  \<system.identityModel>  

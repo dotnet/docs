@@ -1,21 +1,7 @@
 ---
 title: "Generating DataSet Relations from XML Schema (XSD)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Generating DataSet Relations from XML Schema (XSD)
 In a <xref:System.Data.DataSet>, you form an association between two or more columns by creating a parent-child relation. There are three ways to represent a **DataSet** relation within an XML Schema definition language (XSD) schema:  
@@ -105,5 +91,5 @@ msdata:childkey="" />
  [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a **DataSet**.  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

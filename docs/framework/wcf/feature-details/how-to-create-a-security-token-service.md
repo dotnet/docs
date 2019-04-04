@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Security Token Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,29 +8,23 @@ helpviewer_keywords:
   - "WCF, federation"
   - "federation"
 ms.assetid: 98e82101-4cff-4bb8-a220-f7abed3556e5
-caps.latest.revision: 12
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Security Token Service
 A security token service implements the protocol defined in the WS-Trust specification. This protocol defines message formats and message exchange patterns for issuing, renewing, canceling, and validating security tokens. A given security token service provides one or more of these capabilities. This topic looks at the most common scenario: implementing token issuance.  
   
 ## Issuing Tokens  
- WS-Trust defines message formats, based on the `RequestSecurityToken` XML Schema definition language (XSD) schema element, and `RequestSecurityTokenResponse` XSD schema element for performing token issuance. In addition, it defines the associated Action Uniform Resource Identifiers (URIs). The action URI associated with the `RequestSecurityToken` message is http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue. The action URI associated with the `RequestSecurityTokenResponse` message is   http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue.  
+ WS-Trust defines message formats, based on the `RequestSecurityToken` XML Schema definition language (XSD) schema element, and `RequestSecurityTokenResponse` XSD schema element for performing token issuance. In addition, it defines the associated Action Uniform Resource Identifiers (URIs). The action URI associated with the `RequestSecurityToken` message is `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue`. The action URI associated with the `RequestSecurityTokenResponse` message is   `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue`.  
   
 ### Request Message Structure  
  The issue request message structure typically consists of the following items:  
   
--   A request type URI with a value of    http://schemas.xmlsoap.org/ws/2005/02/trust/Issue.  
+-   A request type URI with a value of `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue`.
   
--   A token type URI. For Security Assertions Markup Language (SAML) 1.1 tokens, the value of this URI is http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1.  
+-   A token type URI. For Security Assertions Markup Language (SAML) 1.1 tokens, the value of this URI is `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`.  
   
 -   A key size value that indicates the number of bits in the key to be associated with the issued token.  
   
--   A key type URI. For symmetric keys, the value of this URI is http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey.  
+-   A key type URI. For symmetric keys, the value of this URI is `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey`.  
   
  In addition, a couple of other items might be present:  
   
@@ -106,7 +92,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
  [!code-csharp[c_CreateSTS#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#4)]
  [!code-vb[c_CreateSTS#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#4)]  
   
- [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
+ For more information, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
 ## Creating Response Messages  
  Once the security token service processes the issue request and constructs the token to be issued along with the proof key, the response message needs to be constructed, including at least the requested token, the proof token, and the issued token references. The issued token is typically a <xref:System.IdentityModel.Tokens.SamlSecurityToken> created from the <xref:System.IdentityModel.Tokens.SamlAssertion>, as shown in the following example.  
@@ -119,7 +105,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
  [!code-csharp[c_CreateSTS#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#6)]
  [!code-vb[c_CreateSTS#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#6)]  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to construct the proof token when the client and the security token service both provide key material for the shared key, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
+ For more information about how to construct the proof token when the client and the security token service both provide key material for the shared key, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
  The issued token references are constructed by creating instances of the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> class.  
   
@@ -131,12 +117,12 @@ A security token service implements the protocol defined in the WS-Trust specifi
 ## Example  
  For full code for a security token service, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SigningCredentials>  
- <xref:System.IdentityModel.Tokens.SecurityKey>  
- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken>  
- <xref:System.IdentityModel.Tokens.SamlAssertion>  
- <xref:System.ServiceModel.Security.Tokens.BinarySecretSecurityToken>  
- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>  
- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)
+## See also
+- <xref:System.IdentityModel.Tokens.SigningCredentials>
+- <xref:System.IdentityModel.Tokens.SecurityKey>
+- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>
+- <xref:System.IdentityModel.Tokens.SamlSecurityToken>
+- <xref:System.IdentityModel.Tokens.SamlAssertion>
+- <xref:System.ServiceModel.Security.Tokens.BinarySecretSecurityToken>
+- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>
+- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)

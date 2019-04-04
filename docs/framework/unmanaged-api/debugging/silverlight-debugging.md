@@ -1,24 +1,12 @@
 ---
 title: "Silverlight Debugging"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "debugging API [Silverlight]"
   - "Silverlight, debugging"
 ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Silverlight Debugging
 The topics in this section describe the environment and interfaces that the common language runtime (CLR) provides to support debugging Silverlight-based applications that are running on the Windows operating system, or on the Macintosh platform.  
@@ -60,9 +48,9 @@ The topics in this section describe the environment and interfaces that the comm
  [ShutdownDbgTransportManager Function](../../../../docs/framework/unmanaged-api/debugging/shutdowndbgtransportmanager-function.md)  
  Shuts down the transport manager for a connection to a remote target machine.  
   
-## See Also  
- [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+## See also
+- [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

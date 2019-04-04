@@ -2,13 +2,7 @@
 title: Running Console applications in Docker
 description: Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.
 author: spboyer
-keywords: .NET, Container, Console, Applications
-
 ms.date: 09/28/2016
-ms.topic: article
-ms.prod: .net-framework
-ms.technology: vs-ide-deployment
-ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
 ---
 
@@ -55,25 +49,27 @@ Windows containers are supported on [Windows 10 Anniversary Update](https://www.
 [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server).
 
 > [!NOTE]
->If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instructions from the [Container Host Deployment](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment) article to install the containers and Docker features.
+>If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instructions from the [Container Host Deployment](/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server) article to install the containers and Docker features.
 
 You need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers. By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select **Switch to Windows containers**. Docker will run the process to change and a restart may be required.
 
-![Windows-Containers](./media/console/SwitchContainer.png)
+![Screenshot of the Windows container menu option.](./media/console/windows-container-option.png)
 
 ## Building the application
 Typically console applications are distributed through an installer, FTP, or File Share deployment. When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.
 
-In *build.ps1*, the script uses [MSBuild](/visualstudio/msbuild/msbuild) to compile the application to complete the task of building the assets. There are a few parameters passed to MSBuild to finalize the needed assets. The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).
+Here is the sample application: [ConsoleRandomAnswerGenerator](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator)
+
+In *build.ps1*<sup>[[source]](https://github.com/dotnet/samples/blob/master/framework/docker/ConsoleRandomAnswerGenerator/ConsoleRandomAnswerGenerator/build.ps1)</sup>, the script uses [MSBuild](/visualstudio/msbuild/msbuild) to compile the application to complete the task of building the assets. There are a few parameters passed to MSBuild to finalize the needed assets. The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).
 
 In the call to `Invoke-MSBuild` the `OutputPath` is set to **publish** and  `Configuration` set to **Release**. 
 
-```
+```powershell
 function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
     Invoke-Expression "$MSBuildPath $MSBuildParameters"
 }
 
-Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj /p:OutputPath=.\publish /p:Configuration=Release"
+Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj -p:OutputPath=.\publish -p:Configuration=Release"
 ```
 
 ## Creating the Dockerfile
@@ -142,7 +138,7 @@ In the sample project files there is also a *run.ps1* which is an example of how
 
 To run, open PowerShell and use the following command:
 
-```
+```powershell
 .\run.ps1 "Is this easy or what?"
 ```
 

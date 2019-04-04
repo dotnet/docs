@@ -1,9 +1,6 @@
 ---
 title: "Connection Class"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -15,9 +12,6 @@ api_type:
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Connection Class
@@ -31,7 +25,7 @@ internal class Connection : PooledStream
 ```
 
 > [!WARNING]
-> The `Connection` class is internal and not meant to be used directly in your code.
+> The `Connection` class is internal and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this class in a production application under any circumstance.
 

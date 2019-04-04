@@ -1,25 +1,13 @@
 ---
 title: "Fusion Global Static Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "unmanaged global static functions [.NET Framework], fusion"
   - "fusion global static functions [.NET Framework]"
   - "global static functions [.NET Framework fusion]"
 ms.assetid: 229b2188-9168-4b44-a987-e1f515494688
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Fusion Global Static Functions
 This section describes the unmanaged global static functions that the fusion API uses.  

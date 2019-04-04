@@ -1,19 +1,7 @@
 ---
 title: "Projections and Transformations (LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: bb0457ab-1823-47e6-9d2d-c93c958cc913
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Projections and Transformations (LINQ to XML) (C#)
 This section provides examples of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] projections and transformations.  
@@ -31,5 +19,6 @@ This section provides examples of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 |[How to: Generate Text Files from XML (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-text-files-from-xml.md)|Shows how to transform an XML file to a non-XML text file.|  
 |[How to: Generate XML from CSV Files (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)|Shows how to use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to parse a CSV file and generate XML from it.|  
   
-## See Also  
- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## See also
+
+- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

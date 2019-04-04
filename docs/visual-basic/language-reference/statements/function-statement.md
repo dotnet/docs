@@ -1,12 +1,6 @@
 ---
 title: "Function Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Function"
 helpviewer_keywords: 
@@ -34,9 +28,6 @@ helpviewer_keywords:
   - "End keyword [Visual Basic], Function statements"
   - "Handles keyword [Visual Basic], Function statements"
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-caps.latest.revision: 62
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Function Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Function` procedure.  
@@ -70,7 +61,9 @@ End Function
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-    -   `Protected Friend`  
+    -   [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)  
   
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
@@ -194,11 +187,11 @@ End Function
   
  The `Return` statement simultaneously assigns the return value and exits the function, as the following example shows.  
   
- [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#24)]  
   
  The following example assigns the return value to the function name `myFunction` and then uses the `Exit Function` statement to return.  
   
- [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#23)]  
   
  The `Exit Function` and `Return` statements cause an immediate exit from a `Function` procedure. Any number of `Exit Function` and `Return` statements can appear anywhere in the procedure, and you can mix `Exit Function` and `Return` statements.  
   
@@ -225,7 +218,7 @@ End Function
   
  An `Async` function cannot declare any [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) parameters.  
   
- A [Sub Statement](sub-statement.md) can also be marked with the `Async` modifier. This is primarily used for event handlers, where a value cannot be returned. An `Async``Sub` procedure can't be awaited, and the caller of an `Async``Sub` procedure can't catch exceptions that are thrown by the `Sub` procedure.  
+ A [Sub Statement](sub-statement.md) can also be marked with the `Async` modifier. This is primarily used for event handlers, where a value cannot be returned. An `Async` `Sub` procedure can't be awaited, and the caller of an `Async` `Sub` procedure can't catch exceptions that are thrown by the `Sub` procedure.  
   
  For more information about `Async` functions, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).  
   
@@ -241,29 +234,30 @@ End Function
 ## Example  
  The following example uses the `Function` statement to declare the name, parameters, and code that form the body of a `Function` procedure. The `ParamArray` modifier enables the function to accept a variable number of arguments.  
   
- [!code-vb[VbVbalrStatements#25](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#25)]  
   
 ## Example  
  The following example invokes the function declared in the preceding example.  
   
- [!code-vb[VbVbalrStatements#26](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
   
 ## Example  
- In the following example, `DelayAsync` is an `Async``Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore the function declaration of `DelayAsync` needs to have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer. This is demonstrated in this statement: `Dim result As Integer = Await delayTask`.  
+ In the following example, `DelayAsync` is an `Async` `Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore the function declaration of `DelayAsync` needs to have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer. This is demonstrated in this statement: `Dim result As Integer = Await delayTask`.  
   
- The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement demonstrates: `Await DoSomethingAsync()`. The `startButton_Click``Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
+ The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement demonstrates: `Await DoSomethingAsync()`. The `startButton_Click` `Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
+ [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]  
   
-## See Also  
- [Sub Statement](sub-statement.md)  
- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)  
- [Parameter List](parameter-list.md)  
- [Dim Statement](dim-statement.md)  
- [Call Statement](call-statement.md)  
- [Of](of-clause.md)  
- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md)
+## See also
+
+- [Sub Statement](sub-statement.md)
+- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)
+- [Parameter List](parameter-list.md)
+- [Dim Statement](dim-statement.md)
+- [Call Statement](call-statement.md)
+- [Of](of-clause.md)
+- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md)

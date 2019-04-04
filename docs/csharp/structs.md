@@ -1,14 +1,7 @@
 ---
 title: Structs - C# Guide
 description: Learn about the struct type and how you create them
-keywords: .NET, .NET Core, C#
-author: BillWagner
-ms.author: wiwagn
 ms.date: 10/12/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: a7094b8c-7229-4b6f-82fc-824d0ea0ec40
 ---
 
@@ -68,6 +61,6 @@ The second demonstrates *binary literals*, which allow you to specify bit patter
 Ordinary value types cannot have a value of [null](./language-reference/keywords/null.md). However, you can create nullable value types by affixing a **?** after the type. For example, **int?** is an **int** type that can also have the value [null](./language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type <xref:System.Nullable%601>. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types (C# Programming Guide)](./programming-guide/nullable-types/index.md).
 
 ## See also
-[Classes](classes.md)
 
-[Basic Types](basic-types.md)
+- [Classes](classes.md)
+- [Basic Types](basic-types.md)

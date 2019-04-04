@@ -1,14 +1,6 @@
 ---
 title: "Interfaces Related to Data Binding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data [Windows Forms], data-binding interfaces"
   - "INotifyPropertyChanged interface"
@@ -20,18 +12,12 @@ helpviewer_keywords:
   - "data binding [Windows Forms], interfaces"
   - "IDataErrorInfo interface [Windows Forms], Windows Forms data binding"
 ms.assetid: 14e49a2e-3e46-47ca-b491-70d546333277
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Interfaces Related to Data Binding
 With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many different data structures to suit the binding needs of your application and the data you are working with. You may want to create your own classes that provide or consume data in Windows Forms. These objects can offer varying levels of functionality and complexity, from basic data binding, to providing design-time support, error checking, change notification, or even support for a structured rollback of the changes made to the data itself.  
   
 ## Consumers of Data-Binding Interfaces  
- Following sections describe two groups of interface objects. The first group lists interfaces that are implemented on data sources by data source authors. These interfaces are designed to be consumed by data source consumers, which are in most cases Windows Forms controls or components. The second group lists interfaces designed for use by component authors. Component authors use these interfaces when they are creating a component that supports data binding to be consumed by the Windows Forms data-binding engine. You can implement these interfaces within classes associated with your form to enable data binding; each case presents a class that implements an interface that enables interaction with data. [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] rapid application development (RAD) data design experience tools already take advantage of this functionality.  
+ Following sections describe two groups of interface objects. The first group lists interfaces that are implemented on data sources by data source authors. These interfaces are designed to be consumed by data source consumers, which are in most cases Windows Forms controls or components. The second group lists interfaces designed for use by component authors. Component authors use these interfaces when they are creating a component that supports data binding to be consumed by the Windows Forms data-binding engine. You can implement these interfaces within classes associated with your form to enable data binding; each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.  
   
 ### Interfaces for Implementation by Data Source Authors  
  The following interfaces are designed to be consumed by Windows Forms controls:  
@@ -157,7 +143,7 @@ With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many
     > [!NOTE]
     >  A class that inherits from <xref:System.Windows.Forms.Control> manages bindings automatically through its <xref:System.Windows.Forms.Control.BindingContext%2A> property, so cases in which you need to implement the <xref:System.Windows.Forms.ICurrencyManagerProvider> are fairly rare.  
   
-## See Also  
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+## See also
+- [Data Binding and Windows Forms](data-binding-and-windows-forms.md)
+- [How to: Create a Simple-Bound Control on a Windows Form](how-to-create-a-simple-bound-control-on-a-windows-form.md)
+- [Windows Forms Data Binding](windows-forms-data-binding.md)

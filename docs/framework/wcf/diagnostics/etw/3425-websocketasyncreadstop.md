@@ -1,21 +1,7 @@
 ---
 title: "3425 - WebSocketAsyncReadStop"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6d86fd8f-d430-45c0-94ee-827f4fa5881a
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3425 - WebSocketAsyncReadStop
 ## Properties  

@@ -1,19 +1,9 @@
 ---
 title: Managing dependencies in .NET Core tooling
 description: Explains how to manage your dependencies with the .NET Core tools.
-keywords: CLI, extensibility, custom commands, .NET Core
-author: blackdwarf
-ms.author: mairaw
 ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
-ms.workload: 
-  - dotnetcore
+ms.custom: "seodec18"
 ---
-
 # Managing dependencies with .NET Core SDK 1.0
 
 With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of dependencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
@@ -35,7 +25,7 @@ If you are familiar with MSBuild, it will look familiar to the other reference t
 Adding a dependency that is available only in a specific target is done using conditions like in the following example:
 
 ```xml
-<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp1.0'" />
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
 The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is a MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
@@ -60,7 +50,7 @@ The full project looks like this:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

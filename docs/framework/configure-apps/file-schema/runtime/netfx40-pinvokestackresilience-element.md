@@ -1,26 +1,14 @@
 ---
-title: "&lt;NetFx40_PInvokeStackResilience&gt; Element"
-ms.custom: ""
+title: "<NetFx40_PInvokeStackResilience> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<NetFx40_PInvokeStackResilience> element"
   - "NetFx40_PInvokeStackResilience element"
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;NetFx40_PInvokeStackResilience&gt; Element
+# \<NetFx40_PInvokeStackResilience> Element
 Specifies whether the runtime automatically fixes incorrect platform invoke declarations at run time, at the cost of slower transitions between managed and unmanaged code.  
   
  \<configuration>  
@@ -82,7 +70,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md)

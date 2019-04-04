@@ -1,23 +1,9 @@
 ---
 title: "How to: Bind a TreeView to Data That Has an Indeterminable Depth"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TreeView control [WPF], binding to data of indeterminate depth"
 ms.assetid: daddcd74-1b0f-4ffd-baeb-ec934c5e0f53
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind a TreeView to Data That Has an Indeterminable Depth
 There might be times when you want to bind a <xref:System.Windows.Controls.TreeView> to a data source whose depth is not known.  This can occur when the data is recursive in nature, such as a file system, where folders can contain folders, or a company's organizational structure, where employees have other employees as direct reports.  
@@ -31,8 +17,8 @@ There might be times when you want to bind a <xref:System.Windows.Controls.TreeV
 ## Example  
  The following example demonstrates how to bind a <xref:System.Windows.Controls.TreeView> to hierarchical data and use a <xref:System.Windows.HierarchicalDataTemplate> to specify the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> for each <xref:System.Windows.Controls.TreeViewItem>.  The <xref:System.Windows.Controls.TreeView> binds to XML data that represents the employees in a company.  Each `Employee` element can contain other `Employee` elements to indicate who reports to whom. Because the data is recursive, the <xref:System.Windows.HierarchicalDataTemplate> can be applied to each level.  
   
- [!code-xaml[TreeViewWithUnknownDepth#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewWithUnknownDepth/CS/Window1.xaml#1)]  
+ [!code-xaml[TreeViewWithUnknownDepth#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewWithUnknownDepth/CS/Window1.xaml#1)]  
   
-## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+## See also
+- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Templating Overview](../data/data-templating-overview.md)

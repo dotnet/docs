@@ -1,14 +1,6 @@
 ---
 title: "How to: Add Enhancements to ToolStripMenuItems"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -32,12 +24,6 @@ helpviewer_keywords:
   - "images [Windows Forms], adding to menus"
   - "ToolStripMenuItems [Windows Forms], showing separator bars"
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Add Enhancements to ToolStripMenuItems
 You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> controls in the following ways:  
@@ -79,7 +65,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
   
 ### To display an access key for a menu command  
   
--   When you set the <xref:System.Windows.Forms.ToolStripItem.Text%2A> property for the menu command, enter an ampersand (&) before the letter you want to be underlined as the access key. For example, typing `&Open` as the <xref:System.Windows.Forms.ToolStripItem.Text%2A> property of a menu item will result in a menu command that appears as **O**pen.  
+-   When you set the <xref:System.Windows.Forms.ToolStripItem.Text%2A> property for the menu command, enter an ampersand (&) before the letter you want to be underlined as the access key. For example, typing `&Open` as the <xref:System.Windows.Forms.ToolStripItem.Text%2A> property of a menu item will result in a menu command that appears as <u>O</u>pen.
   
      To navigate to this menu command, press ALT to give focus to the <xref:System.Windows.Forms.MenuStrip>, and press the access key of the menu name. When the menu opens and shows items with access keys, you only need to press the access key to select the menu command.  
   
@@ -121,7 +107,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
     this.exitToolStripMenuItem});  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStripMenuItem>  
- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStripMenuItem>
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

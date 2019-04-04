@@ -1,18 +1,11 @@
 ---
 title: "-langversion (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/langversion compiler option [Visual Basic]"
   - "langversion compiler option [Visual Basic]"
   - "-langversion compiler option [Visual Basic]"
 ms.assetid: 59b7b0c8-2dde-4e9b-94e7-0237f7e0bafb
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -langversion (Visual Basic)
 Causes the compiler to accept only syntax that is included in the specified Visual Basic language version.  
@@ -25,7 +18,11 @@ Causes the compiler to accept only syntax that is included in the specified Visu
   
 ## Arguments  
  `version`  
- Required. The language version to be used during the compilation. Accepted values are `9`, `9.0`, `10`, and `10.0`.  
+ Required. The language version to be used during the compilation. Accepted values are `9`, `10`, `11`, `12`, `14`, `15`, `15.3`, `15.5`, `default` and `latest`.
+
+ Any of the whole numbers may also be specified using `.0` as the minor version, for example, `11.0`.
+
+ You can see the list of all possible values by specifying `-langversion:?` on the command line.  
   
 ## Remarks  
  The `-langversion` option specifies what syntax the compiler accepts. For example, if you specify that the language version is 9.0, the compiler generates errors for syntax that is valid only in version 10.0 and later.  
@@ -41,7 +38,8 @@ Causes the compiler to accept only syntax that is included in the specified Visu
 vbc -langversion:9.0 sample.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Targeting a Specific .NET Framework Version](/visualstudio/ide/targeting-a-specific-dotnet-framework-version)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Targeting a Specific .NET Framework Version](/visualstudio/ide/targeting-a-specific-dotnet-framework-version)

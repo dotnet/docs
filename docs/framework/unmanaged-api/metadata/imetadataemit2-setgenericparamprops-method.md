@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit2::SetGenericParamProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit2.SetGenericParamProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: cd93a48d-1fed-4706-bec6-a05dc3b64fbd
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit2::SetGenericParamProps Method
 Sets property values for the generic parameter definition referenced by the specified token.  
@@ -45,7 +33,7 @@ HRESULT SetGenericParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gp`  
  [in] The token for the generic parameter definition for which to set values.  
   
@@ -70,6 +58,6 @@ HRESULT SetGenericParamProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+## See also
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

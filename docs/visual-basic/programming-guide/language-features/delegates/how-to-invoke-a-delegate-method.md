@@ -1,17 +1,7 @@
 ---
 title: "How to: Invoke a Delegate Method (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Invoke a Delegate Method (Visual Basic)
 This example shows how to associate a method with a delegate and then invoke that method through the delegate.  
@@ -46,8 +36,9 @@ This example shows how to associate a method with a delegate and then invoke tha
     End Sub  
     ```  
   
-## See Also  
- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
- [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6)
+## See also
+
+- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Multithreaded Applications](../../../../standard/threading/using-threads-and-threading.md)

@@ -1,21 +1,7 @@
 ---
 title: "OVERLAPS (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 41743e89-79cb-4d7b-8a27-355b45024b61
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # OVERLAPS (Entity SQL)
 Determines whether two collections have common elements.  
@@ -34,7 +20,7 @@ expression OVERLAPS expression
  `true` if the two collections have common elements; otherwise, `false`.  
   
 ## Remarks  
- OVERLAPS provides functionally equivalent tothe following:  
+ OVERLAPS provides functionally equivalent to the following:  
   
  `EXISTS ( expression INTERSECT expression )`  
   
@@ -49,5 +35,5 @@ expression OVERLAPS expression
   
  [!code-csharp[DP EntityServices Concepts 2#OVERLAPS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#overlaps)]  
   
-## See Also  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## See also
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

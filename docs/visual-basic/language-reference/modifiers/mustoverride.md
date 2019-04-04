@@ -1,11 +1,6 @@
 ---
 title: "MustOverride (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.MustOverride"
   - "MustOverride"
@@ -20,9 +15,6 @@ helpviewer_keywords:
   - "MustOverride keyword [Visual Basic]"
   - "properties [Visual Basic], overriding"
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # MustOverride (Visual Basic)
 Specifies that a property or procedure is not implemented in this class and must be overridden in a derived class before it can be used.  
@@ -48,10 +40,11 @@ Specifies that a property or procedure is not implemented in this class and must
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+## See also
+
+- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
+- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)
+- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)
+- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)

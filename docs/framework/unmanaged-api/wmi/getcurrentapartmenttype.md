@@ -2,10 +2,6 @@
 title: GetCurrentApartmentType function (Unmanaged API Reference)
 description: The GetCurrentApartmentType function retrieves the type of apartment in which the caller is executing.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetCurrentApartmentType"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetCurrentApartmentType function
 Retrieves the type of apartment in which the caller is executing.   
@@ -45,10 +38,10 @@ HRESULT GetCurrentApartmentType (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IComThreadingInfo](https://msdn.microsoft.com/library/windows/desktop/ms694502(v=vs.85).aspx) instance.
+[in] A pointer to an [IComThreadingInfo](/windows/desktop/api/objidlbase/nn-objidlbase-icomthreadinginfo) instance.
 
 `aptType`  
-[out] A pointer to an [APTTYPE](https://msdn.microsoft.com/library/windows/desktop/ms693793(v=vs.85).aspx) enumeration value that indicates the caller's apartment.
+[out] A pointer to an [APTTYPE](/windows/desktop/api/objidlbase/ne-objidlbase-_apttype) enumeration value that indicates the caller's apartment.
 
 ## Return value
 
@@ -60,7 +53,7 @@ HRESULT GetCurrentApartmentType (
   
 ## Remarks
 
-This function wraps a call to the [IComThreadingInfo::GetCurrentApartmentType](https://msdn.microsoft.com/library/windows/desktop/ms683752(v=vs.85).aspx) method.
+This function wraps a call to the [IComThreadingInfo::GetCurrentApartmentType](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) method.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -69,5 +62,5 @@ This function wraps a call to the [IComThreadingInfo::GetCurrentApartmentType](h
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

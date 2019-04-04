@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ModuleUnloadFinished Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ModuleUnloadFinished"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 185e3327-9f9c-44bc-8a5c-febea9a6bb5b
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ModuleUnloadFinished Method
 Notifies the profiler that a module has finished unloading.  
@@ -41,7 +29,7 @@ HRESULT ModuleUnloadFinished(
     [in] HRESULT  hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module that was unloaded.  
   
@@ -62,5 +50,5 @@ HRESULT ModuleUnloadFinished(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

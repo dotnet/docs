@@ -1,18 +1,10 @@
 ---
 title: "My Reference (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My feature"
   - "My reference"
 ms.assetid: 6f803bd7-21ff-4569-b1fe-b00a6678b1e3
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My Reference (Visual Basic)
 The `My` feature makes programming faster and easier by giving you intuitive access to commonly used methods, properties, and events. This table lists the objects contained in `My`, and the actions that can be performed with each.  
@@ -30,6 +22,7 @@ The `My` feature makes programming faster and easier by giving you intuitive acc
 |Accessing the current user's security context.|`My.User` (<xref:Microsoft.VisualBasic.ApplicationServices.User>)|  
 |Accessing XML Web services referenced by the current project.|[My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)|  
   
-## See Also  
- [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
- [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md)
+## See also
+
+- [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)
+- [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md)

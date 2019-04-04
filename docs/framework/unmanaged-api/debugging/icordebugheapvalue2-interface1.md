@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugHeapValue2 Interface1"
-ms.custom: ""
+title: "ICorDebugHeapValue2 Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugHeapValue2"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 87360a52-90b1-4ada-80c0-589a556116d8
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugHeapValue2 Interface1
+# ICorDebugHeapValue2 Interface
+
 An extension of ICorDebugHeapValue that provides support for common language runtime (CLR) handles.  
   
 ## Methods  
@@ -52,5 +41,5 @@ An extension of ICorDebugHeapValue that provides support for common language run
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

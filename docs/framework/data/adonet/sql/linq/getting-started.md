@@ -1,24 +1,10 @@
 ---
 title: "Getting Started"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: db8a557a-fef8-4f4f-bb91-8cff7250ee25
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Getting Started
 By using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], you can use the [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technology to access SQL databases just as you would access an in-memory collection.  
@@ -37,7 +23,8 @@ By using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], yo
   
  Finally, learn how to get started on your own [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project by reading [Typical Steps for Using LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/typical-steps-for-using-linq-to-sql.md).  
   
-## See Also  
- [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
- [Introduction to LINQ](http://msdn.microsoft.com/library/24dddf19-12a0-4707-a4bc-eba4fa7f219e)  
- [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)
+## See also
+- [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [Introduction to LINQ (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq.md)
+- [Introduction to LINQ (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)
+- [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)

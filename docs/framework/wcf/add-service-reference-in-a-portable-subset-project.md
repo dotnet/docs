@@ -1,21 +1,7 @@
 ---
 title: "Add Service Reference in a Portable Subset Project"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Add Service Reference in a Portable Subset Project
 Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET implementations (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET implementation.  
@@ -51,6 +37,6 @@ Portable subset projects enable .NET assembly programmers to maintain a single s
   
 14. <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is not supported in portable subset projects.  
   
-## See Also  
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [Portable Class Library](http://msdn.microsoft.com/library/gg597391\(v=vs.110\))
+## See also
+- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
+- [Portable Class Library](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)

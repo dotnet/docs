@@ -1,11 +1,6 @@
 ---
 title: "WriteOnly (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "WriteOnly"
   - "vb.WriteOnly"
@@ -16,9 +11,6 @@ helpviewer_keywords:
   - "properties [Visual Basic], write-only"
   - "sensitive data"
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # WriteOnly (Visual Basic)
 Specifies that a property can be written but not read.  
@@ -50,7 +42,8 @@ Specifies that a property can be written but not read.
   
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
-## See Also  
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)  
- [Private](../../../visual-basic/language-reference/modifiers/private.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)
+- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

@@ -1,21 +1,7 @@
 ---
 title: "Programming Guide (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 977aedd7-0084-46a0-b56f-345787a55da1
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Programming Guide (LINQ to DataSet)
 This section provides conceptual information and examples for programming with [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)].  
@@ -60,7 +46,7 @@ This section provides conceptual information and examples for programming with [
   
  <xref:System.Data.DataView>  
   
-## See Also  
- [LINQ to ADO.NET](http://msdn.microsoft.com/library/be3297b9-1b54-4d4c-82a8-add0d79c2006)  
- [NOT IN BUILD: LINQ General Programming Guide](http://msdn.microsoft.com/library/609c7a6b-cbdd-429d-99f3-78d13d3bc049)  
- [LINQ Framework](http://msdn.microsoft.com/library/897ea0fc-40db-4694-bbe5-7dd339d5bf94)
+## See also
+
+- [LINQ and ADO.NET](linq-and-ado-net.md)
+- [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)

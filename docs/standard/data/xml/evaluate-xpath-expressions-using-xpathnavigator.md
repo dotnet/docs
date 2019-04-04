@@ -1,24 +1,13 @@
 ---
 title: "Evaluate XPath Expressions using XPathNavigator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 2913ccf3-f932-4363-8028-9e2d22ce6093
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Evaluate XPath Expressions using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides the <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> method to evaluate an XPath expression. The <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> method takes an XPath expression, evaluates it and returns a W3C XPath type of Boolean, Number, String, or Node Set based on the result of the XPath expression.  
@@ -51,13 +40,14 @@ Console.WriteLine(total);
 ### position and last Functions  
  The <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> method is overloaded. One of the <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> methods takes an <xref:System.Xml.XPath.XPathNodeIterator> object as a parameter. This particular <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> method is identical to the <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> method that takes only an <xref:System.Xml.XPath.XPathExpression> object as a parameter, except that it allows a node set argument to specify the current context to perform the evaluation on. This context is required for the XPath `position()` and `last()` functions as they are relative to the current context node. Unless used as a predicate in a location step, the `position()` and `last()` functions require a reference to a node set in order to be evaluated otherwise, the `position` and `last` functions return `0`.  
   
-## See Also  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [Select XML Data Using XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)  
- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
- [XPath Queries and Namespaces](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+## See also
+
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XPath.XPathDocument>
+- <xref:System.Xml.XPath.XPathNavigator>
+- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
+- [Select XML Data Using XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)
+- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
+- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)
+- [XPath Queries and Namespaces](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)
+- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)

@@ -1,23 +1,9 @@
 ---
-title: "&lt;routing&gt; of &lt;serviceBehavior&gt;"
-ms.custom: ""
+title: "<routing> of <serviceBehavior>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;routing&gt; of &lt;serviceBehavior&gt;
+# \<routing> of \<serviceBehavior>
 Provides run-time access to the routing service to allow dynamic modification of the routing configuration.  
   
  \<system.ServiceModel>  
@@ -32,12 +18,12 @@ Provides run-time access to the routing service to allow dynamic modification of
 <behaviors>
   <serviceBehaviors>
     <behavior name="String">
-      <routing filterTable="String" 
-               routeOnHeadersOnly="Boolean" 
+      <routing filterTable="String"
+               routeOnHeadersOnly="Boolean"
                SoapProcessingEnabled="Boolean" />
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  

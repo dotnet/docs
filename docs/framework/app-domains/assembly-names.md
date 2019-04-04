@@ -1,24 +1,12 @@
 ---
 title: "Assembly Names"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Assembly Names
 An assembly's name is stored in metadata and has a significant impact on the assembly's scope and use by an application. A strong-named assembly has a fully qualified name that includes the assembly's name, culture, public key, and version number. This is frequently referred to as the display name, and for loaded assemblies can be obtained by using the <xref:System.Reflection.Assembly.FullName%2A> property.  
@@ -56,17 +44,17 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
 ## Naming Application Components  
  The runtime does not consider the file name when determining an assembly's identity. The assembly identity, which consists of the assembly name, version, culture, and strong name, must be clear to the runtime.  
   
- For example, if you have an assembly called myAssembly.exe that references an assembly called myAssembly.dll, binding occurs correctly if you execute myAssembly.exe. However, if another application executes myAssembly.exe using the method <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType>, the runtime determines that "myAssembly" is already loaded when myAssembly.exe requests binding to "myAssembly." In this case, myAssembly.dll is never loaded. Because myAssembly.exe does not contain the requested type , a <xref:System.TypeLoadException> occurs.  
+ For example, if you have an assembly called myAssembly.exe that references an assembly called myAssembly.dll, binding occurs correctly if you execute myAssembly.exe. However, if another application executes myAssembly.exe using the method <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType>, the runtime determines that "myAssembly" is already loaded when myAssembly.exe requests binding to "myAssembly." In this case, myAssembly.dll is never loaded. Because myAssembly.exe does not contain the requested type, a <xref:System.TypeLoadException> occurs.  
   
  To avoid this problem, make sure the assemblies that make up your application do not have the same assembly name or place assemblies with the same name in different directories.  
   
 > [!NOTE]
 >  If you put a strong-named assembly in the global assembly cache, the assembly's file name must match the assembly name (not including the file name extension, such as .exe or .dll). For example, if the file name of an assembly is myAssembly.dll, the assembly name must be myAssembly. Private assemblies deployed only in the root application directory can have an assembly name that is different from the file name.  
   
-## See Also  
- [How to: Determine an Assembly's Fully Qualified Name](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)  
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+## See also
+- [How to: Determine an Assembly's Fully Qualified Name](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)
+- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
+- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
+- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

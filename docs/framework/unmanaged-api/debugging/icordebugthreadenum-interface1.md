@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugThreadEnum Interface1"
-ms.custom: ""
+title: "ICorDebugThreadEnum Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugThreadEnum"
 api_location: 
@@ -22,14 +14,10 @@ helpviewer_keywords:
 ms.assetid: 796de687-7dd4-4b7b-a10b-8bf22dc7779f
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugThreadEnum Interface1
+# ICorDebugThreadEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.  
   
 ## Methods  
@@ -52,5 +40,5 @@ Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

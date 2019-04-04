@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugNativeFrame2::IsMatchingParentFrame Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugNativeFrame2.IsMatchingParentFrame Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugNativeFrame2::IsMatchingParentFrame Method
 Determines whether the specified frame is the parent of the current frame.  
@@ -41,7 +29,7 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
                               [out] BOOL *pIsParent);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pPotentialParentFrame`  
  [in] A pointer to the frame object that you want to evaluate for parent status.  
   
@@ -71,7 +59,7 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -1,24 +1,10 @@
 ---
 title: "Executing a Command"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 40494916-c25a-4cb8-8f7c-fcb8d378464e
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Executing a Command
 Each .NET Framework data provider included with the .NET Framework has its own command object that inherits from <xref:System.Data.Common.DbCommand>. The .NET Framework Data Provider for OLE DB includes an <xref:System.Data.OleDb.OleDbCommand> object, the .NET Framework Data Provider for SQL Server includes a <xref:System.Data.SqlClient.SqlCommand> object, the .NET Framework Data Provider for ODBC includes an <xref:System.Data.Odbc.OdbcCommand> object, and the .NET Framework Data Provider for Oracle includes an <xref:System.Data.OracleClient.OracleCommand> object. Each of these objects exposes methods for executing commands based on the type of command and desired return value, as described in the following table.  
@@ -47,8 +33,7 @@ Each .NET Framework data provider included with the .NET Framework has its own c
 ### Troubleshooting Commands  
  The .NET Framework Data Provider for SQL Server adds performance counters to enable you to detect intermittent problems related to failed command executions. For more information see [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md).  
   
-## See Also  
- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [Working with DataReaders](http://msdn.microsoft.com/library/126a966a-d08d-4d22-a19f-f432908b2b54)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [ADO.NET Overview](ado-net-overview.md)

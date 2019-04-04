@@ -1,14 +1,6 @@
 ---
-title: "&lt;socket&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<socket> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/socket"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#socket"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "<socket> element"
   - "socket element"
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-caps.latest.revision: 21
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;socket&gt; Element (Network Settings)
+# \<socket> Element (Network Settings)
 Specifies whether socket operations use completion ports.  
   
  \<configuration>  
@@ -111,10 +97,10 @@ Specifies whether socket operations use completion ports.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>  
- <xref:System.Net.Sockets?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>
+- <xref:System.Net.Sockets?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

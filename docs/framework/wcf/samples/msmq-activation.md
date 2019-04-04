@@ -1,21 +1,7 @@
 ---
 title: "MSMQ Activation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-caps.latest.revision: 29
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # MSMQ Activation
 This sample demonstrates how to host applications in Windows Process Activation Service (WAS) that are read from a message queue. This sample uses the `netMsmqBinding` and is based on the [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) sample. The service in this case is a Web-hosted application and the client is self-hosted and outputs to the console to observe the status of purchase orders submitted.  
@@ -28,11 +14,11 @@ This sample demonstrates how to host applications in Windows Process Activation 
 >   
 >  \<InstallDrive>:\WF_WCF_Samples  
 >   
->  If this directory does not exist, go to [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] HYPERLINK "http://go.microsoft.com/fwlink/?LinkId=150780" \t "_blank"  and [!INCLUDE[wf](../../../../includes/wf-md.md)] Samples for [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] to download all [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.  
   
- Windows Process Activation Service (WAS), the new process activation mechanism for [!INCLUDE[lserver](../../../../includes/lserver-md.md)], provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.  
+ Windows Process Activation Service (WAS), the new process activation mechanism for [!INCLUDE[lserver](../../../../includes/lserver-md.md)], provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. Windows Communication Foundation (WCF) uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.  
   
  The Net.Msmq Listener Adapter service (NetMsmqActivator) activates queued applications based on messages in the queue.  
   
@@ -84,7 +70,8 @@ public class OrderProcessorService : IOrderProcessor
             client.OrderStatus(po.PONumber, po.Status);  
             scope.Complete();  
         }  
-    }  
+    }
+}
 ```  
   
  The client binding to use is specified using a configuration file.  
@@ -92,19 +79,19 @@ public class OrderProcessorService : IOrderProcessor
  The MSMQ queue name is specified in an appSettings section of the configuration file. The endpoint for the service is defined in the System.serviceModel section of the configuration file.  
   
 > [!NOTE]
->  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a net.msmq: scheme, uses "localhost" for the local computer, and uses forward slashes in its path. To read from a queue that is hosted on the remote computer, replace the "." and "localhost" to the remote computer name.  
+>  The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a net.msmq: scheme, uses "localhost" for the local computer, and uses forward slashes in its path. To read from a queue that is hosted on the remote computer, replace the "." and "localhost" to the remote computer name.  
   
  A .svc file with the name of the class is used to host the service code in WAS.  
   
  The Service.svc file itself contains a directive to create the `OrderProcessorService`.  
   
-```xml  
+```svc
 <%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>  
 ```  
   
  The Service.svc file also contains an assembly directive to ensure that System.Transactions.dll is loaded.  
   
-```xml  
+```svc  
 <%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>  
 ```  
   
@@ -181,7 +168,7 @@ public class OrderStatusService : IOrderStatus
   
  The order status queue is created in the `Main` method. The client configuration includes the order status service configuration to host the order status service, as shown in the following sample configuration.  
   
-```csharp  
+```xml  
 <appSettings>  
     <!-- use appSetting to configure MSMQ queue name -->  
     <add key="targetQueueName" value=".\private$\ServiceModelSamples/service.svc" />  
@@ -215,7 +202,7 @@ public class OrderStatusService : IOrderStatus
   
  The client displays the order status information sent by the server:  
   
-```Output  
+```console  
 Press <ENTER> to terminate client.  
 Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending  
 ```  
@@ -224,7 +211,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 1.  Ensure that [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is installed, as it is required for WAS activation.  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md). In addition, you must install the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] non-HTTP activation components:  
+2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md). In addition, you must install the WCF non-HTTP activation components:  
   
     1.  From the **Start** menu, choose **Control Panel**.  
   
@@ -258,7 +245,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  To support net.msmq activation, the default Web site must first be bound to the net.msmq protocol. This can be done using appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. From an elevated (administrator) command prompt, run the following command.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
         -+bindings.[protocol='net.msmq',bindingInformation='localhost']  
         ```  
@@ -270,20 +257,20 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     2.  Although all applications within a site share a common net.msmq binding, each application can enable net.msmq support individually. To enable net.msmq for the /servicemodelsamples application, run the following command from an elevated command prompt.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.msmq  
         ```  
   
         > [!NOTE]
         >  This command is a single line of text.  
   
-         This command enables the /servicemodelsamples application to be accessed using http://localhost/servicemodelsamples and net.msmq://localhost/servicemodelsamples.  
+         This command enables the /servicemodelsamples application to be accessed using `http://localhost/servicemodelsamples` and `net.msmq://localhost/servicemodelsamples`.
   
 7.  If you have not done so previously, ensure that the MSMQ activation service is enabled. From the **Start** menu, click **Run**, and type `Services.msc`. Search the list of services for the **Net.Msmq Listener Adapter**. Right-click and select **Properties**. Set the **Startup Type** to **Automatic**, click **Apply** and click the **Start** button. This step must only be done once prior to the first usage of the Net.Msmq Listener Adapter service.  
   
 8.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md). Additionally, change the code on the client that submits the purchase order to reflect the computer name in the URI of the queue when submitting the purchase order. Use the following code:  
   
-    ```  
+    ```csharp  
     client.SubmitPurchaseOrder(po, "net.msmq://localhost/private/ServiceModelSamples/OrderStatus");  
     ```  
   
@@ -293,7 +280,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     1.  Remove net.msmq from the list of enabled protocols by running the following command from an elevated command prompt.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http  
         ```  
   
@@ -302,7 +289,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
     2.  Remove the net.msmq site binding by running the following command from an elevated command prompt.  
   
-        ```  
+        ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.msmq',bindingInformation='localhost']  
         ```  
   
@@ -353,9 +340,9 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 5.  In workgroup, the service must also run using an unrestricted token. To do this, run the following in a command window:  
   
-    ```  
+    ```console  
     sc sidtype netmsmqactivator unrestricted  
     ```  
   
-## See Also  
- [AppFabric Hosting and Persistence Samples](http://go.microsoft.com/fwlink/?LinkId=193961)
+## See also
+- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)

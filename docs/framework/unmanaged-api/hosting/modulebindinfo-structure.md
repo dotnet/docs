@@ -1,14 +1,6 @@
 ---
 title: "ModuleBindInfo Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ModuleBindInfo"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 632d4adc-dbc9-4ce8-9397-abc3285c1c69
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ModuleBindInfo Structure
 Provides detailed information about the referenced module and the assembly that contains it.  
@@ -62,9 +50,9 @@ typedef struct _ModuleBindInfo {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
- [AssemblyBindInfo Structure](../../../../docs/framework/unmanaged-api/hosting/assemblybindinfo-structure.md)  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)  
- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
+## See also
+- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [AssemblyBindInfo Structure](../../../../docs/framework/unmanaged-api/hosting/assemblybindinfo-structure.md)
+- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
+- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)

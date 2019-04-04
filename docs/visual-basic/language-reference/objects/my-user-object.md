@@ -1,18 +1,10 @@
 ---
-title: "My.User Object"
+title: "My.User Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.User property"
   - "My.User object"
 ms.assetid: caa7462e-2149-4bdb-8850-802b80b93cbf
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.User Object
 Provides access to information about the current user.  
@@ -25,8 +17,9 @@ Provides access to information about the current user.
 ## Requirements  
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- <xref:System.Security.Principal.IPrincipal>  
- <xref:System.Threading.Thread.CurrentPrincipal%2A>  
- <xref:System.Web.HttpContext.User%2A>  
- <xref:System.Web.HttpContext.Current%2A>
+## See also
+
+- <xref:System.Security.Principal.IPrincipal>
+- <xref:System.Threading.Thread.CurrentPrincipal%2A>
+- <xref:System.Web.HttpContext.User%2A>
+- <xref:System.Web.HttpContext.Current%2A>

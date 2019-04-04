@@ -1,13 +1,6 @@
 ---
 title: "How to: Create a Procedure (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
@@ -15,9 +8,6 @@ helpviewer_keywords:
   - "procedure declarations"
   - "procedures [Visual Basic], about procedures"
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a Procedure (Visual Basic)
 You enclose a procedure between a starting declaration statement (`Sub` or `Function`) and an ending declaration statement (`End Sub` or `End Function`). All the procedure's code lies between these statements.  
@@ -55,16 +45,17 @@ You enclose a procedure between a starting declaration statement (`Sub` or `Func
 ## Example  
  The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, given the values for the other two sides.  
   
- [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Recursive Procedures](./recursive-procedures.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+## See also
+
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Recursive Procedures](./recursive-procedures.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)

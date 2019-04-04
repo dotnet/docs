@@ -1,19 +1,7 @@
 ---
 title: "How to: Write Queries with Complex Filtering (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bf286ffc-7990-4b00-a4eb-ee3d70129950
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Write Queries with Complex Filtering (Visual Basic)
 Sometimes you want to write LINQ to XML queries with complex filters. For example, you might have to find all elements that have a child element with a particular name and value. This topic gives an example of writing a query with complex filtering.  
@@ -82,12 +70,13 @@ End Module
 99505  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A>  
- <xref:System.Xml.Linq.XContainer.Elements%2A>  
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
- [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)  
- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)  
- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)  
- [Projection Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)  
- [Quantifier Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.Attribute%2A>
+- <xref:System.Xml.Linq.XContainer.Elements%2A>
+- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
+- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
+- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
+- [Projection Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)
+- [Quantifier Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md)

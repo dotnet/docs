@@ -1,23 +1,9 @@
 ---
 title: "NetNamedPipeBinding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Net Profile Named Pipe"
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
-caps.latest.revision: 34
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # NetNamedPipeBinding
 This sample demonstrates the `netNamedPipeBinding` binding, which provides cross-process communication on the same machine. Named pipes do not work across machines. This sample is based on The [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) calculator service.  
@@ -27,7 +13,7 @@ This sample demonstrates the `netNamedPipeBinding` binding, which provides cross
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the[\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following sample configuration:  
+ The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) or [\<endpoint> of \<client>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) element, as shown in the following sample configuration:  
   
 ```xml  
 <endpoint address="net.pipe://localhost/ServiceModelSamples/service"  
@@ -76,7 +62,7 @@ This sample demonstrates the `netNamedPipeBinding` binding, which provides cross
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -98,8 +84,7 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\NamedPipe`  
   
-## See Also

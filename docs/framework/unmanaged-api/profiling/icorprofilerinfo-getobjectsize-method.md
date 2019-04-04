@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetObjectSize Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetObjectSize"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9f02e763-73f7-42cb-a41c-f78499d9482c
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetObjectSize Method
 Gets the size of a specified object.  
@@ -41,7 +29,7 @@ HRESULT GetObjectSize(
     [out] ULONG  *pcSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object.  
   
@@ -70,5 +58,5 @@ HRESULT GetObjectSize(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

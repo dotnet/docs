@@ -1,17 +1,13 @@
 ---
-title: "#if preprocessor directive (C# Reference)"
-ms.date: "02/13/2017"
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+title: "#if preprocessor directive - C# Reference"
+ms.custom: seodec18
+
+ms.date: 06/30/2018
 f1_keywords: 
   - "#if"
 helpviewer_keywords: 
   - "#if directive [C#]"
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # #if (C# Reference)
 
@@ -23,7 +19,7 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
 #endif
 ```
 
-You can use the operators [==](../operators/equality-comparison-operator.md) (equality) and [!=](../operators/not-equal-operator.md) (inequality) only to test for [true](../keywords/true.md) or [false](../keywords/false.md). True means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the operators [&&](../operators/conditional-and-operator.md) (and), [&#124;&#124;](../operators/conditional-or-operator.md) (or), and [!](../operators/logical-negation-operator.md) (not) to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
+You can use the operators [==](../operators/equality-operators.md#equality-operator-) (equality) and [!=](../operators/equality-operators.md#inequality-operator-) (inequality) only to test for [true](../keywords/true.md) or [false](../keywords/false.md). True means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the operators [&&](../operators/conditional-and-operator.md) (and), [&#124;&#124;](../operators/conditional-or-operator.md) (or), and [!](../operators/logical-negation-operator.md) (not) to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
 
 ## Remarks
 
@@ -33,9 +29,9 @@ A conditional directive beginning with a `#if` directive must explicitly be term
 
 `#define` lets you define a symbol. By then using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`.
 
-You can also define a symbol with the [/define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
+You can also define a symbol with the [-define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
 
-A symbol that you define with `/define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
+A symbol that you define with `-define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
 
 The scope of a symbol created with `#define` is the file in which it was defined.
 
@@ -88,7 +84,7 @@ public class MyClass
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Preprocessor Directives](index.md)  
-[How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Preprocessor Directives](index.md)
+- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)

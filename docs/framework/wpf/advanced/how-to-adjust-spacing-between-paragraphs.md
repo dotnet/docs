@@ -1,25 +1,11 @@
 ---
 title: "How to: Adjust Spacing Between Paragraphs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "spacing between paragraphs [WPF]"
   - "paragraphs [WPF], spacing between"
   - "documents [WPF], adjusting spacing between paragraphs"
 ms.assetid: 7cd2f2ac-0e19-4587-bfb6-7f5b18c9536e
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Adjust Spacing Between Paragraphs
 This example shows how to adjust or eliminate spacing between paragraphs in flow content.  
@@ -31,4 +17,4 @@ This example shows how to adjust or eliminate spacing between paragraphs in flow
 ## Example  
  The following example uses styling to set the margin for all <xref:System.Windows.Documents.Paragraph> elements in a <xref:System.Windows.Documents.FlowDocument> to **0**, which effectively eliminates extra spacing between paragraphs in the <xref:System.Windows.Documents.FlowDocument>.  
   
- [!code-xaml[BlockSnippets#_ParagraphSpacingXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_paragraphspacingxaml)]
+ [!code-xaml[BlockSnippets#_ParagraphSpacingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_paragraphspacingxaml)]

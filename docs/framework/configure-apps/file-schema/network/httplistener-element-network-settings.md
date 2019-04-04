@@ -1,23 +1,9 @@
 ---
-title: "&lt;httpListener&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<httpListener> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-caps.latest.revision: 7
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;httpListener&gt; Element (Network Settings)
+# \<httpListener> Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
   
  \<configuration>  
@@ -145,8 +131,8 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
- <xref:System.Net.Configuration.HttpListenerElement>  
- <xref:System.Net.HttpListener>  
- <xref:System.Net.HttpListenerRequest.Url%2A>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.Configuration.HttpListenerElement>
+- <xref:System.Net.HttpListener>
+- <xref:System.Net.HttpListenerRequest.Url%2A>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

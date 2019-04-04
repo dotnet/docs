@@ -1,23 +1,10 @@
 ---
-title: "&lt;federationConfiguration&gt;"
-ms.custom: ""
+title: "<federationConfiguration>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8b14054c-6d07-46ab-ab58-03f14beac0f2
-caps.latest.revision: 9
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;federationConfiguration&gt;
+# \<federationConfiguration>
 Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) when using federated authentication through the WS-Federation protocol. Configures the <xref:System.Security.Claims.ClaimsAuthorizationManager> when using the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> or the <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> class to provide claims-based access control.  
   
  \<system.identityModel.services>  
@@ -98,8 +85,8 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
 </system.identityModel.services>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>  
- <xref:System.IdentityModel.Services.SessionAuthenticationModule>  
- <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>  
- [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)
+## See also
+- <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>
+- <xref:System.IdentityModel.Services.SessionAuthenticationModule>
+- <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>
+- [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)

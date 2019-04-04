@@ -1,21 +1,7 @@
 ---
 title: "Customizing Operations: Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a3546296-1443-4b88-aa6e-d41011041ba7
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Customizing Operations: Overview
 By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates dynamic SQL for insert, update, and delete operations based on mapping. However, in practice you typically want to add your own business logic to provide for security, validation, and so forth.  
@@ -31,5 +17,5 @@ By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 
 ## Stored Procedures and User-Defined Functions  
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the use of stored procedures and user-defined functions. Stored procedures are frequently used to customize operations. For more information, see [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md).  
   
-## See Also  
- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+## See also
+- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)

@@ -1,21 +1,7 @@
 ---
 title: "Bulk Copy Operations in SQL Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 83a7a0d2-8018-4354-97b9-0b1d99f8342b
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Bulk Copy Operations in SQL Server
 Microsoft SQL Server includes a popular command-line utility named **bcp** for quickly bulk copying large files into tables or views in SQL Server databases. The <xref:System.Data.SqlClient.SqlBulkCopy> class allows you to write managed code solutions that provide similar functionality. There are other ways to load data into a SQL Server table (INSERT statements, for example) but <xref:System.Data.SqlClient.SqlBulkCopy> offers a significant performance advantage over them.  
@@ -46,6 +32,6 @@ Microsoft SQL Server includes a popular command-line utility named **bcp** for q
  [Transaction and Bulk Copy Operations](../../../../../docs/framework/data/adonet/sql/transaction-and-bulk-copy-operations.md)  
  Describes how to perform a bulk copy operation within a transaction, including how to commit or rollback the transaction.  
   
-## See Also  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

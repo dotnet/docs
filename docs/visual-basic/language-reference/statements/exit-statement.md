@@ -1,12 +1,6 @@
 ---
 title: "Exit Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Exit"
 helpviewer_keywords: 
@@ -18,9 +12,6 @@ helpviewer_keywords:
   - "program termination"
   - "execution [Visual Basic], stopping"
 ms.assetid: 760bfb32-5c3f-4bdb-a432-9a6001c92db7
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Exit Statement (Visual Basic)
 Exits a procedure or block and transfers control immediately to the statement following the procedure call or the block definition.  
@@ -70,26 +61,27 @@ Exit { Do | For | Function | Property | Select | Sub | Try | While }
 ## Example  
  In the following example, the loop condition stops the loop when the `index` variable is greater than 100. The `If` statement in the loop, however, causes the `Exit Do` statement to stop the loop when the index variable is greater than 10.  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#133](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#133)]  
   
 ## Example  
  The following example assigns the return value to the function name `myFunction`, and then uses `Exit Function` to return from the function.  
   
- [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#23)]  
   
 ## Example  
  The following example uses the [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md) to assign the return value and exit the function.  
   
- [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#24)]  
   
-## See Also  
- [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md)  
- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## See also
+
+- [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md)
+- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

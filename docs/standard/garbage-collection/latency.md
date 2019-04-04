@@ -1,24 +1,13 @@
 ---
 title: "Latency Modes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, intrusiveness"
   - "garbage collection, latency modes"
 ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
-caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Latency Modes
 To reclaim objects, the garbage collector must stop all the executing threads in an application. In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> values.  
@@ -59,7 +48,8 @@ To reclaim objects, the garbage collector must stop all the executing threads in
   
 -   You can force generation 2 collections during a low latency period by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType> method.  
   
-## See Also  
- <xref:System.GC?displayProperty=nameWithType>  
- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- <xref:System.GC?displayProperty=nameWithType>
+- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

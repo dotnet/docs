@@ -1,14 +1,6 @@
 ---
 title: "Storeadm.exe (Isolated Storage Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Storeadm.exe"
   - "listing stores for current user"
@@ -16,17 +8,13 @@ helpviewer_keywords:
   - "stores, current user"
   - "removing stores"
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Storeadm.exe (Isolated Storage Tool)
 The Isolated Storage tool lists or removes all existing stores for the current user.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -36,7 +24,7 @@ The Isolated Storage tool lists or removes all existing stores for the current u
 storeadm [/list][/machine][/remove][/roaming][/quiet]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -66,7 +54,7 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
   
  Whether roaming is actually enabled for the user does not affect the administration of Storeadm.exe. Running the tool without any options applies all actions to the local store. Running the tool with the **/roaming** option applies all actions to the store that is able to roam. Running the tool with the **/machine** option applies all actions to the machine store.  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- [Tools](../../../docs/framework/tools/index.md)
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

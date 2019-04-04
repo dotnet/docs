@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyEmit::DefineAssemblyRef Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyEmit.DefineAssemblyRef"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0b284b18-0084-4b3a-912a-5ebe9f29c88b
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineAssemblyRef Method
 Creates an `AssemblyRef` structure containing metadata for the assembly that this assembly references, and returns the associated metadata token.  
@@ -48,7 +36,7 @@ HRESULT DefineAssemblyRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKeyOrToken`  
  [in] The public key of the publisher of the referenced assembly. The helper function [StrongNameTokenFromAssembly](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfromassembly-function.md) can be used to get the hash of the public key to pass as this parameter.  
   
@@ -87,5 +75,5 @@ HRESULT DefineAssemblyRef (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

@@ -1,18 +1,7 @@
 ---
 title: "Preserving White Space While Serializing2"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2d7abbd4-37f4-422b-89dd-0a694b5edc17
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Preserving White Space While Serializing
 This topic describes how to control white space when serializing an XML tree.  
@@ -28,13 +17,14 @@ This topic describes how to control white space when serializing an XML tree.
   
 -   <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XElement.ToString%2A?displayProperty=nameWithType>  
+-   [XElement.ToString()](xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType)
   
--   <xref:System.Xml.Linq.XDocument.ToString%2A?displayProperty=nameWithType>  
+-   [XDocument.ToString()](xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType)
   
  If the method does not take <xref:System.Xml.Linq.SaveOptions> as an argument, then the method will format (indent) the serialized XML. In this case, all insignificant white space in the XML tree is discarded.  
   
  If the method does take <xref:System.Xml.Linq.SaveOptions> as an argument, then you can specify that the method not format (indent) the serialized XML. In this case, all white space in the XML tree is preserved.  
   
-## See Also  
- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+## See also
+
+- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)

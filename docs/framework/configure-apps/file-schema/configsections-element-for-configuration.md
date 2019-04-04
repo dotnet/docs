@@ -1,10 +1,6 @@
 ---
-title: "&lt;configSections&gt; element for &lt;configuration&gt;"
+title: "<configSections> element for <configuration>"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<configSections> element for \<configuration>
@@ -70,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

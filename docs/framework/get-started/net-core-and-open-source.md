@@ -1,21 +1,9 @@
 ---
 title: ".NET Core and Open-Source"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # .NET Core and Open-Source
 This topic provides a brief overview  of what .NET Core is and shows how you can find more information. To find the complete list of topics for .NET Core, visit the [.NET Core Guide](../../core/index.md).
@@ -30,7 +18,7 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
   
 -   **Cross-platform:** .NET Core provides key functionality to implement the app features you need and reuse this code regardless of your platform target. It currently supports three main operating systems (OS): Windows, Linux and macOS. You can write apps and libraries that run unmodified across supported operating systems. To see the list of supported operating systems, visit [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md).
   
--   **Open source:** .NET Core is one of the many projects under the stewardship of the [.NET Foundation](http://www.dotnetfoundation.org/) and is available on [GitHub](https://github.com/).  Having .NET Core as an open source project promotes a more transparent development process and promotes an active and engaged community.  
+-   **Open source:** .NET Core is one of the many projects under the stewardship of the [.NET Foundation](https://www.dotnetfoundation.org/) and is available on [GitHub](https://github.com/).  Having .NET Core as an open source project promotes a more transparent development process and promotes an active and engaged community.  
   
 -   **Flexible deployment:** there are two main ways to deploy your app: framework-dependent deployment or self-contained deployment. With framework-dependent deployment, only your app and third-party dependencies are installed and your app depends on a system-wide version of .NET Core to be present.  With self-contained deployment, the .NET Core version used to build your application is also deployed along with your app and third-party dependencies and can run side-by-side with other versions.    For more information, see [.NET Core Application Deployment](../../core/deploying/index.md).
 
@@ -51,7 +39,7 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
   
 -   [ASP.NET Core](https://github.com/aspnet/home)  
   
-## See Also  
- [.NET Core homepage](https://www.microsoft.com/net/core)  
- [.NET Core Guide](../../core/index.md)  
- [ASP.NET Core Documentation](/aspnet/core/)
+## See also
+- [.NET Core homepage](https://www.microsoft.com/net/core)
+- [.NET Core Guide](../../core/index.md)
+- [ASP.NET Core Documentation](/aspnet/core/)

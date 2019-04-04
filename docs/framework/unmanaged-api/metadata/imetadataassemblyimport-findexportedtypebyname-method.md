@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::FindExportedTypeByName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.FindExportedTypeByName"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::FindExportedTypeByName Method
 Gets a pointer to an exported type, given its name and enclosing type.  
@@ -43,7 +31,7 @@ HRESULT FindExportedTypeByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the exported type.  
   
@@ -65,6 +53,6 @@ HRESULT FindExportedTypeByName (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)  
- [How the Runtime Locates Assemblies](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [How the Runtime Locates Assemblies](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

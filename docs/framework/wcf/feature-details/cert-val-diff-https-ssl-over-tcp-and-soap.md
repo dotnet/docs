@@ -1,32 +1,18 @@
 ---
 title: "Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "certificates [WCF], validation differences"
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6
-caps.latest.revision: 14
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security
-You can use certificates in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] with message-layer (SOAP) security in addition to transport-layer security (TLS) over HTTP (HTTPS) or TCP. This topic describes differences in the way such certificates are validated.  
+You can use certificates in Windows Communication Foundation (WCF) with message-layer (SOAP) security in addition to transport-layer security (TLS) over HTTP (HTTPS) or TCP. This topic describes differences in the way such certificates are validated.  
   
 ## Validation of HTTPS Client Certificates  
- When using HTTPS to communicate between a client and a service, the certificate that the client uses to authenticate to the service must support chain trust. That is, it must chain to a trusted root certificate authority. If not, the HTTP layer raises a <xref:System.Net.WebException> with the message "The remote server returned an error: (403) Forbidden." [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] surfaces this exception as a <xref:System.ServiceModel.Security.MessageSecurityException>.  
+ When using HTTPS to communicate between a client and a service, the certificate that the client uses to authenticate to the service must support chain trust. That is, it must chain to a trusted root certificate authority. If not, the HTTP layer raises a <xref:System.Net.WebException> with the message "The remote server returned an error: (403) Forbidden." WCF surfaces this exception as a <xref:System.ServiceModel.Security.MessageSecurityException>.  
   
 ## Validation of HTTPS Service Certificates  
  When using HTTPS to communicate between a client and a service, the certificate that the server authenticates with must support chain trust by default. That is, it must chain to a trusted root certificate authority. No online check is performed to see whether the certificate has been revoked. You can override this behavior by registering a <xref:System.Net.Security.RemoteCertificateValidationCallback> callback, as shown in the following code.  
@@ -55,6 +41,6 @@ You can use certificates in [!INCLUDE[indigo1](../../../../includes/indigo1-md.m
  [!code-csharp[c_CertificateValidationDifferences#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_certificatevalidationdifferences/cs/source.cs#4)]
  [!code-vb[c_CertificateValidationDifferences#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#4)]  
   
-## See Also  
- <xref:System.Net.Security.RemoteCertificateValidationCallback>  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+## See also
+- <xref:System.Net.Security.RemoteCertificateValidationCallback>
+- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

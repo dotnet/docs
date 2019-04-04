@@ -1,21 +1,7 @@
 ---
 title: "Security Concerns and Useful Tips for Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-caps.latest.revision: 11
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Concerns and Useful Tips for Tracing
 This topic describes how you can protect sensitive information from being exposed, as well as useful tips when using WebHost.  
@@ -94,9 +80,9 @@ This topic describes how you can protect sensitive information from being expose
   
  For more information on PII logging, see [PII Security Lockdown](../../../../../docs/framework/wcf/samples/pii-security-lockdown.md) sample.  
   
- The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](http://go.microsoft.com/fwlink/?LinkID=94647).  
+ The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](https://go.microsoft.com/fwlink/?LinkID=94647).  
   
  In addition, the IP address of the message sender is logged once per connection for connection-oriented transports, and once per message sent otherwise. This is done without the consent of the sender. However, this logging only occurs at the Information or Verbose tracing levels, which are not the default or recommended tracing levels in production, except for live debugging.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+## See also
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

@@ -1,9 +1,7 @@
 ---
 title: "Standard Numeric Format Strings"
-ms.date: "09/10/2017"
-ms.prod: ".net"
+ms.date: "06/10/2018"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,20 +18,19 @@ helpviewer_keywords:
   - "format specifiers, standard numeric format strings"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Standard Numeric Format Strings
+
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  
   
 -   `A` is a single alphabetic character called the *format specifier*. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md).  
   
 -   `xx` is an optional integer called the *precision specifier*. The precision specifier ranges from 0 to 99 and affects the number of digits in the result. Note that the precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the <xref:System.Math.Ceiling%2A?displayProperty=nameWithType>, <xref:System.Math.Floor%2A?displayProperty=nameWithType>, or <xref:System.Math.Round%2A?displayProperty=nameWithType> method.  
   
-     When *precision specifier* controls the number of fractional digits in the result string, the result strings reflect numbers that are rounded away from zero (that is, using <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType>).  
-  
+    When *precision specifier* controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result. If there are two equally near representable results:
+    - **On the .NET Framework and .NET Core up to .NET Core 2.0**, the runtime selects the result with the greater least significant digit (that is, using <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType>).
+    - **On .NET Core 2.1 and later**, the runtime selects the result with an even least significant digit (that is, using <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>). 
+
     > [!NOTE]
     >  The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces, use the [composite formatting](../../../docs/standard/base-types/composite-formatting.md) feature and define an *alignment component* in the format item.  
   
@@ -46,7 +43,7 @@ Standard numeric format strings are supported by:
 - [Interpolated strings](../../csharp/language-reference/tokens/interpolated.md) in C# and Visual Basic, which provide a simplified syntax when compared to composite format strings.
  
 > [!TIP]
->  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
+>  You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
   
 <a name="table"></a> The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#NotesStandardFormatting) section for additional information about using standard numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.  
   
@@ -54,35 +51,38 @@ Standard numeric format strings are supported by:
 |----------------------|----------|-----------------|--------------|  
 |"C" or "c"|Currency|Result: A currency value.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Currency ("C") Format Specifier](#CFormatString).|123.456 ("C", en-US) -> $123.46<br /><br /> 123.456 ("C", fr-FR) -> 123,46 €<br /><br /> 123.456 ("C", ja-JP) -> ¥123<br /><br /> -123.456 ("C3", en-US) -> ($123.456)<br /><br /> -123.456 ("C3", fr-FR) -> -123,456 €<br /><br /> -123.456 ("C3", ja-JP) -> -¥123.456|  
 |"D" or "d"|Decimal|Result: Integer digits with optional negative sign.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Minimum number of digits.<br /><br /> Default precision specifier: Minimum number of digits required.<br /><br /> More information: [The Decimal("D") Format Specifier](#DFormatString).|1234 ("D") -> 1234<br /><br /> -1234 ("D6") -> -001234|  
-|"E" or "e"|Exponential (scientific)|Result: Exponential notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: 6.<br /><br /> More information: [The Exponential ("E") Format Specifier](#EFormatString).|1052.0329112756 ("E", en-US) -> 1.052033E+003<br /><br /> 1052.0329112756 ("e", fr-FR) -> 1,052033e+003<br /><br /> -1052.0329112756 ("e2", en-US) -> -1.05e+003<br /><br /> -1052.0329112756 ("E2", fr_FR) -> -1,05E+003|  
+|"E" or "e"|Exponential (scientific)|Result: Exponential notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: 6.<br /><br /> More information: [The Exponential ("E") Format Specifier](#EFormatString).|1052.0329112756 ("E", en-US) -> 1.052033E+003<br /><br /> 1052.0329112756 ("e", fr-FR) -> 1,052033e+003<br /><br /> -1052.0329112756 ("e2", en-US) -> -1.05e+003<br /><br /> -1052.0329112756 ("E2", fr-FR) -> -1,05E+003|  
 |"F" or "f"|Fixed-point|Result: Integral and decimal digits with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Fixed-Point ("F") Format Specifier](#FFormatString).|1234.567 ("F", en-US) -> 1234.57<br /><br /> 1234.567 ("F", de-DE) -> 1234,57<br /><br /> 1234 ("F1", en-US) -> 1234.0<br /><br /> 1234 ("F1", de-DE) -> 1234,0<br /><br /> -1234.56 ("F4", en-US) -> -1234.5600<br /><br /> -1234.56 ("F4", de-DE) -> -1234,5600|  
 |"G" or "g"|General|Result: The more compact of either fixed-point or scientific notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of significant digits.<br /><br /> Default precision specifier: Depends on numeric type.<br /><br /> More information: [The General ("G") Format Specifier](#GFormatString).|-123.456 ("G", en-US) -> -123.456<br /><br /> -123.456 ("G", sv-SE) -> -123,456<br /><br /> 123.4546 ("G4", en-US) -> 123.5<br /><br /> 123.4546 ("G4", sv-SE) -> 123,5<br /><br /> -1.234567890e-25 ("G", en-US) -> -1.23456789E-25<br /><br /> -1.234567890e-25 ("G", sv-SE) -> -1,23456789E-25|  
 |"N" or "n"|Number|Result: Integral and decimal digits, group separators, and a decimal separator with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Numeric ("N") Format Specifier](#NFormatString).|1234.567 ("N", en-US) -> 1,234.57<br /><br /> 1234.567 ("N", ru-RU) -> 1 234,57<br /><br /> 1234 ("N1", en-US) -> 1,234.0<br /><br /> 1234 ("N1", ru-RU) -> 1 234,0<br /><br /> -1234.56 ("N3", en-US) -> -1,234.560<br /><br /> -1234.56 ("N3", ru-RU) -> -1 234,560|  
 |"P" or "p"|Percent|Result: Number multiplied by 100 and displayed with a percent symbol.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by  <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Percent ("P") Format Specifier](#PFormatString).|1 ("P", en-US) -> 100.00 %<br /><br /> 1 ("P", fr-FR) -> 100,00 %<br /><br /> -0.39678 ("P1", en-US) -> -39.7 %<br /><br /> -0.39678 ("P1", fr-FR) -> -39,7 %|  
-|"R" or "r"|Round-trip|Result: A string that can round-trip to an identical number.<br /><br /> Supported by: <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger>.<br /><br /> Note: Recommended for the <xref:System.Numerics.BigInteger> type only. For <xref:System.Double> types, use "G17"; for <xref:System.Single> types, use "G9". </br> Precision specifier: Ignored.<br /><br /> More information: [The Round-trip ("R") Format Specifier](#RFormatString).|123456789.12345678 ("R") -> 123456789.12345678<br /><br /> -1234567890.12345678 ("R") -> -1234567890.1234567|  
+|"R" or "r"|Round-trip|Result: A string that can round-trip to an identical number.<br /><br /> Supported by: <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger>.<br /><br /> Note: Recommended for the <xref:System.Numerics.BigInteger> type only. For <xref:System.Double> types, use "G17"; for <xref:System.Single> types, use "G9". <br> Precision specifier: Ignored.<br /><br /> More information: [The Round-trip ("R") Format Specifier](#RFormatString).|123456789.12345678 ("R") -> 123456789.12345678<br /><br /> -1234567890.12345678 ("R") -> -1234567890.1234567|  
 |"X" or "x"|Hexadecimal|Result: A hexadecimal string.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Number of digits in the result string.<br /><br /> More information: [The HexaDecimal ("X") Format Specifier](#XFormatString).|255 ("X") -> FF<br /><br /> -1 ("x") -> ff<br /><br /> 255 ("x4") -> 00ff<br /><br /> -1 ("X4") -> 00FF|  
 |Any other single character|Unknown specifier|Result: Throws a <xref:System.FormatException> at run time.||  
   
 <a name="Using"></a>   
 ## Using Standard Numeric Format Strings  
- A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
+A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:  
   
 -   It can be passed to an overload of the `ToString` method that has a `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).  
   
      [!code-cpp[Formatting.Numeric.Standard#10](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#10)]
-     [!code-csharp[Formatting.Numeric.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#10)]
+     [!code-csharp-interactive[Formatting.Numeric.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#10)]
      [!code-vb[Formatting.Numeric.Standard#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#10)]  
   
 -   It can be supplied as the `formatString` argument in a format item used with such methods as <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>. For more information, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example uses a format item to insert a currency value in a string.  
   
      [!code-cpp[Formatting.Numeric.Standard#11](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#11)]
-     [!code-csharp[Formatting.Numeric.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#11)]
+     [!code-csharp-interactive[Formatting.Numeric.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#11)]
      [!code-vb[Formatting.Numeric.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#11)]  
   
      Optionally, you can supply an `alignment` argument to specify the width of the numeric field and whether its value is right- or left-aligned. The following example left-aligns a currency value in a 28-character field, and it right-aligns a currency value in a 14-character field.  
   
      [!code-cpp[Formatting.Numeric.Standard#12](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#12)]
-     [!code-csharp[Formatting.Numeric.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#12)]
+     [!code-csharp-interactive[Formatting.Numeric.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#12)]
      [!code-vb[Formatting.Numeric.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#12)]  
   
 -   It can be supplied as the `formatString` argument in an interpolated expression item of an interpolated string. For more information, see the [String interpolation](../../csharp/language-reference/tokens/interpolated.md) topic in the C# reference or the [Interpolated strings](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) topic in the Visual Basic reference.  
@@ -131,7 +131,7 @@ Standard numeric format strings are supported by:
  The following example formats an <xref:System.Int32> value with the decimal format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#2](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#2)]
- [!code-csharp[Formatting.Numeric.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#2)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#2)]
  [!code-vb[Formatting.Numeric.Standard#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#2)]  
   
  [Back to table](#table)  
@@ -206,10 +206,10 @@ Standard numeric format strings are supported by:
  
 Note that, when used with a <xref:System.Double> value, the "G17" format specifier ensures that the original <xref:System.Double> value successfully round-trips. This is because <xref:System.Double> is an IEEE 754-2008-compliant double-precision (`binary64`) floating point number that gives up to 17 significant digits of precision. We recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip double-precision floating point values. The following example illustrates one such case.
 
-[!code-csharp[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/csharp/g17.cs)]   
+[!code-csharp-interactive[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/csharp/g17.cs)]   
 [!code-vb[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/vb/g17.vb)]   
 
-When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. We recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip single-precision floating point values.
+When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. For performance reasons, we recommend its use instead of the ["R" format specifier](#RFormatString).
 
  The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the result string.  
   
@@ -279,7 +279,7 @@ When used with a <xref:System.Single> value, the "G9" format specifier ensures t
 ## The Round-trip ("R") Format Specifier  
  The round-trip ("R") format specifier attempts to ensure that a numeric value that is converted to a string is parsed back into the same numeric value. This format is supported only for the <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.  
 
-For <xref:System.Double> and <xref:System.Single> values, the "R" format specifier in some cases fails to successfully round-trip the original value and also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
+For <xref:System.Double> values, the "R" format specifier in some cases fails to successfully round-trip the original value. For both <xref:System.Double> and <xref:System.Single> values, it also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
 
  When a <xref:System.Numerics.BigInteger> value is formatted using this specifier, its string representation contains all the significant digits in the <xref:System.Numerics.BigInteger> value.  
   
@@ -295,7 +295,7 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
  The following example formats a <xref:System.Numerics.BigInteger> value with the round-trip format specifier.  
   
  [!code-cpp[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cpp)]
- [!code-csharp[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cs)]
+ [!code-csharp-interactive[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cs)]
  [!code-vb[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.vb)]  
   
 > [!IMPORTANT]
@@ -319,7 +319,7 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
  The following example formats <xref:System.Int32> values with the hexadecimal format specifier.  
   
  [!code-cpp[Formatting.Numeric.Standard#9](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#9)]
- [!code-csharp[Formatting.Numeric.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#9)]
+ [!code-csharp-interactive[Formatting.Numeric.Standard#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#9)]
  [!code-vb[Formatting.Numeric.Standard#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#9)]  
   
  [Back to table](#table)  
@@ -344,17 +344,20 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
 ### Floating-Point Infinities and NaN  
  Regardless of the format string, if the value of a <xref:System.Single> or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.  
   
-<a name="example"></a>   
 ## Example  
+ 
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-partial-note.md)]
+ 
  The following example formats an integral and a floating-point numeric value using the en-US culture and all the standard numeric format specifiers. This example uses two particular numeric types (<xref:System.Double> and <xref:System.Int32>), but would yield similar results for any of the other numeric base types (<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Numerics.BigInteger>, <xref:System.Decimal>, and <xref:System.Single>).  
   
- [!code-csharp[system.x.tostring-and-culture#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs/xts.cs#1)]
+ [!code-csharp-interactive[system.x.tostring-and-culture#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs/xts.cs#1)]
  [!code-vb[system.x.tostring-and-culture#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.X.ToString-and-Culture/vb/xts.vb#1)]  
   
-## See Also  
- <xref:System.Globalization.NumberFormatInfo>  
- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
- [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)  
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)  
- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)
+## See also
+
+- <xref:System.Globalization.NumberFormatInfo>
+- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)
+- [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

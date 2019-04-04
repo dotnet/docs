@@ -1,24 +1,10 @@
 ---
 title: "Object Identity"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c788f2f9-65cc-4455-9907-e8388a268e00
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Object Identity
 Objects in the runtime have unique identities. Two variables that refer to the same object actually refer to the same instance of the object. Because of this fact, changes that you make by way of a path through one variable are immediately visible through the other.  
@@ -50,5 +36,5 @@ Objects in the runtime have unique identities. Two variables that refer to the s
  [!code-csharp[DLinqObjectIdentity#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs/Program.cs#2)]
  [!code-vb[DLinqObjectIdentity#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb/Module1.vb#2)]  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+## See also
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

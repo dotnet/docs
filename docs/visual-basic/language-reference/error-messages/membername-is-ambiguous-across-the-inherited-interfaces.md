@@ -1,23 +1,14 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; is ambiguous across the inherited interfaces &#39;&lt;interfacename1&gt;&#39; and &#39;&lt;interfacename2&gt;&#39;"
+title: "'<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbc30685"
   - "bc30685"
 helpviewer_keywords: 
   - "BC30685"
 ms.assetid: 756add7a-23d5-4b4f-a48d-8297d6459c73
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# &#39;&lt;membername&gt;&#39; is ambiguous across the inherited interfaces &#39;&lt;interfacename1&gt;&#39; and &#39;&lt;interfacename2&gt;&#39;
+# '\<membername>' is ambiguous across the inherited interfaces '\<interfacename1>' and '\<interfacename2>'
 The interface inherits two or more members with the same name from multiple interfaces.  
   
  **Error ID:** BC30685  
@@ -49,5 +40,6 @@ The interface inherits two or more members with the same name from multiple inte
     End Module  
     ```  
   
-## See Also  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## See also
+
+- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

@@ -1,21 +1,7 @@
 ---
 title: "System Requirements for the .NET Framework Data Provider for Oracle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 054f76b9-1737-43f0-8160-84a00a387217
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # System Requirements for the .NET Framework Data Provider for Oracle
 The .NET Framework Data Provider for Oracle requires Microsoft Data Access Components (MDAC) version 2.6 or later. MDAC 2.8 SP1 is recommended.  
@@ -45,6 +31,6 @@ Unicode=True
 ### OracleLob Can Only Update Full Characters.  
  For usability reasons, the <xref:System.Data.OracleClient.OracleLob> object inherits from the .NET Framework Stream class, and provides **ReadByte** and **WriteByte** methods. It also implements methods, such as **CopyTo** and **Erase**, that work on sections of Oracle **LOB** objects. In contrast, Oracle client software provides a number of APIs to work with character **LOB**s (**CLOB** and **NCLOB**). However, these APIs work on full characters only. Because of this difference, the Data Provider for Oracle implements support for **Read** and **ReadByte** to work with UTF-16 data in a byte-wise manner. However, the other methods of the **OracleLob** object only allow full-character operations.  
   
-## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

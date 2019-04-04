@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugStackWalk::GetFrame Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStackWalk.GetFrame Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4083b505-5b59-44fb-8c5d-129db6a96c10
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStackWalk::GetFrame Method
 Gets the current frame in the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object.  
@@ -39,7 +27,7 @@ Gets the current frame in the [ICorDebugStackWalk](../../../../docs/framework/un
 HRESULT GetFrame([out] ICorDebugFrame ** pFrame);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrame`  
  [in] A pointer to the address of the created frame object that represents the current frame in the stack.  
   
@@ -68,7 +56,7 @@ HRESULT GetFrame([out] ICorDebugFrame ** pFrame);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugStackWalk Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [ICorDebugStackWalk Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

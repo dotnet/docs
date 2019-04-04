@@ -1,24 +1,13 @@
 ---
 title: "XML Schema (XSD) Validation with XmlSchemaCollection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ad0b5717-3d32-41ad-a4d7-072c3e492b82
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XML Schema (XSD) Validation with XmlSchemaCollection
 You can use the <xref:System.Xml.Schema.XmlSchemaCollection> to validate an XML document against XML Schema definition language (XSD) schemas. The <xref:System.Xml.Schema.XmlSchemaCollection> improves performance by storing schemas in the collection so they are not loaded into memory each time validation occurs. If the schema exists in the schema collection, the `schemaLocation` attribute is used to look up the schema in the collection.  
@@ -213,8 +202,9 @@ while(vr.Read()) {
 </xs:schema>  
 ```  
   
-## See Also  
- <xref:System.Xml.XmlParserContext>  
- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>  
- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>  
- [XmlSchemaCollection Schema Compilation](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)
+## See also
+
+- <xref:System.Xml.XmlParserContext>
+- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>
+- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>
+- [XmlSchemaCollection Schema Compilation](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)

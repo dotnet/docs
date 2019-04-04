@@ -1,24 +1,10 @@
 ---
 title: "ADO.NET and LINQ to SQL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # ADO.NET and LINQ to SQL
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is part of the [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] family of technologies. It is based on services provided by the [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] provider model. You can therefore mix [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code with existing [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] applications and migrate current [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] solutions to [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. The following illustration provides a high-level view of the relationship.  
@@ -65,6 +51,6 @@ ms.workload:
 > [!NOTE]
 >  Parameters are expressed in the query text by using the same curly notation used by `Console.WriteLine()` and `String.Format()`. `String.Format()` takes the query string you provide and substitutes the curly-braced parameters with generated parameter names such as `@p0`, `@p1` …, `@p(n)`.  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [How to: Reuse a Connection Between an ADO.NET Command and a DataContext](../../../../../../docs/framework/data/adonet/sql/linq/how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md)
+## See also
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [How to: Reuse a Connection Between an ADO.NET Command and a DataContext](../../../../../../docs/framework/data/adonet/sql/linq/how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md)

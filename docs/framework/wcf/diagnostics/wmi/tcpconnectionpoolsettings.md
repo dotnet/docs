@@ -1,28 +1,14 @@
 ---
 title: "TcpConnectionPoolSettings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 19acfba3-c057-4dbc-bac7-8674d7844d83
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # TcpConnectionPoolSettings
 TcpConnectionPoolSettings  
   
 ## Syntax  
   
-```  
+```csharp
 class TcpConnectionPoolSettings  
 {  
   string GroupName;  
@@ -72,5 +58,5 @@ class TcpConnectionPoolSettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings>
+## See also
+- <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings>

@@ -1,18 +1,7 @@
 ---
 title: "Serialization (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 67379a76-5465-4af8-a781-0b0b25a62d9a
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Serialization (Visual Basic)
 Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.  
@@ -20,7 +9,7 @@ Serialization is the process of converting an object into a stream of bytes in o
 ## How Serialization Works  
  This illustration shows the overall process of serialization.  
   
- ![Serialization Graphic](../../../../csharp/programming-guide/concepts/serialization/media/serialization.gif "serialization")  
+![Serialization graphic](./media/index/serialization-process.gif)
   
  The object is serialized to a stream, which carries not just the data, but information about the object's type, such as its version, culture, and assembly name. From that stream, it can be stored in a database, a file, or memory.  
   
@@ -63,7 +52,7 @@ Serialization is the process of converting an object into a stream of bytes in o
 ## Designer Serialization  
  Designer serialization is a special form of serialization that involves the kind of object persistence usually associated with development tools. Designer serialization is the process of converting an object graph into a source file that can later be used to recover the object graph. A source file can contain code, markup, or even SQL table information.  
   
-##  <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
+## <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
  [Walkthrough: Persisting an Object in Visual Studio (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)  
  Demonstrates how serialization can be used to persist an object's data between instances, allowing you to store values and retrieve them the next time the object is instantiated.  
   

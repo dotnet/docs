@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataDispenserEx::GetOption Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataDispenserEx.GetOption"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d7f794e5-8e25-4d65-850a-7c34fbfce87d
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataDispenserEx::GetOption Method
 Gets the value of the specified option for the current metadata scope. The option controls how calls to the current metadata scope are handled.  
@@ -42,7 +30,7 @@ HRESULT GetOption (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `optionId`  
  [in] A pointer to a GUID that specifies the option to be retrieved. See the Remarks section for a list of supported GUIDs.  
   
@@ -75,6 +63,6 @@ HRESULT GetOption (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+## See also
+- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

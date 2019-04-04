@@ -1,21 +1,7 @@
 ---
 title: "Serializable Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Serializable Types
 By default, the <xref:System.Runtime.Serialization.DataContractSerializer> serializes all publicly visible types. All public read/write properties and fields of the type are serialized.  
@@ -46,9 +32,9 @@ By default, the <xref:System.Runtime.Serialization.DataContractSerializer> seria
 ## Inheritance  
  Unmarked types (types without the <xref:System.Runtime.Serialization.DataContractAttribute> attribute) can inherit from types that do have this attribute; however, the reverse is not permitted: types with the attribute cannot inherit from unmarked types. This rule is enforced primarily to ensure backward compatibility with code written in earlier versions of [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
   
-## See Also  
- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+## See also
+- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

@@ -1,12 +1,6 @@
 ---
-title: "Event Statement"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+title: "Event Statement (Visual Basic)"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Event"
   - "vb.Custom"
@@ -24,9 +18,6 @@ helpviewer_keywords:
   - "ByRef keyword [Visual Basic], Event statements"
   - "declaring user-defined events"
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Event Statement
 Declares a user-defined event.  
@@ -62,7 +53,7 @@ End Event
 |Part|Description|  
 |---|---|  
 |`attrlist`|Optional. List of attributes that apply to this event. Multiple attributes are separated by commas. You must enclose the [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets ("`<`" and "`>`").|  
-|`accessmodifier`|Optional. Specifies what code can access the event. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)—any code that can access the element that declares it can access it.<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)—only code within its class or a derived class can access it.<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)—only code in the same assembly can access it.<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)—only code in the element that declares it can access it.<br /><br /> You can specify `Protected Friend` to enable access from code in the event's class, a derived class, or the same assembly.|  
+|`accessmodifier`|Optional. Specifies what code can access the event. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)—any code that can access the element that declares it can access it.<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)—only code within its class or a derived class can access it.<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)—only code in the same assembly can access it.<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)—only code in the element that declares it can access it.<br /> -   [Protected Friend](../../language-reference/modifiers/protected-friend.md)-only code in the event's class, a derived class, or the same assembly can access it. <br />- [Private Protected](../../language-reference/modifiers/private-protected.md)-only code in the event's class or a derived class in the same assembly can access it.|  
 |`Shared`|Optional. Specifies that this event is not associated with a specific instance of a class or structure.|  
 |`Shadows`|Optional. Indicates that this event redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can shadow any kind of declared element with any other kind.<br /><br /> A shadowed element is unavailable from within the derived class that shadows it, except from where the shadowing element is inaccessible. For example, if a `Private` element shadows a base-class element, code that does not have permission to access the `Private` element accesses the base-class element instead.|  
 |`eventname`|Required. Name of the event; follows standard variable naming conventions.|  
@@ -85,7 +76,7 @@ End Event
 ## Remarks  
  Once the event has been declared, use the `RaiseEvent` statement to raise the event. A typical event might be declared and raised as shown in the following fragments:  
   
- [!code-vb[VbVbalrEvents#13](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_1.vb)]  
+ [!code-vb[VbVbalrEvents#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#13)]  
   
 > [!NOTE]
 >  You can declare event arguments just as you do arguments of procedures, with the following exceptions: events cannot have named arguments, `ParamArray` arguments, or `Optional` arguments. Events do not have return values.  
@@ -109,26 +100,27 @@ End Event
   
  Add a `WithEvents` variable to the declarations section of the `Form1` class:  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_2.vb)]  
+ [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
  Add the following code to the code for `Form1`. Replace any duplicate procedures that may exist, such as `Form_Load` or `Button_Click`.  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_3.vb)]  
+ [!code-vb[VbVbalrEvents#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  
   
  Press F5 to run the previous example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Threading](../../programming-guide/concepts/threading/index.md).  
+>  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../standard/threading/index.md).  
   
-## See Also  
- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [How to: Declare Custom Events To Conserve Memory](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)  
- [How to: Declare Custom Events To Avoid Blocking](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+## See also
+
+- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
+- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
+- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [How to: Declare Custom Events To Conserve Memory](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+- [How to: Declare Custom Events To Avoid Blocking](../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)

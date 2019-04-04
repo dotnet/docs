@@ -1,14 +1,6 @@
 ---
-title: "&lt;specifiedPickupDirectory&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<specifiedPickupDirectory> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#specifiedPickupDirectory"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp/specifiedPickupDirectory"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "specifiedPickupDirectory element"
   - "<specifiedPickupDirectory> element"
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
-caps.latest.revision: 8
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;specifiedPickupDirectory&gt; Element (Network Settings)
+# \<specifiedPickupDirectory> Element (Network Settings)
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
   
  \<configuration>  
@@ -68,7 +54,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 <configuration>  
   <system.net>  
     <mailSettings>  
-      <smtp deliveryMethod="specifiedPickupDirectory">  
+      <smtp deliveryMethod="SpecifiedPickupDirectory">  
         <specifiedPickupDirectory  
           pickupDirectoryLocation="c:\maildrop"  
         />  
@@ -78,8 +64,8 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

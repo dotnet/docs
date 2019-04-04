@@ -1,17 +1,11 @@
 ---
-title: "Generics and Reflection (C# Programming Guide)"
+title: "Generics and Reflection - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], reflection"
   - "reflection [C#], generic types"
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Generics and Reflection (C# Programming Guide)
 Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  
@@ -45,8 +39,9 @@ Because the Common Language Runtime (CLR) has access to generic type information
 |<xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A>|Returns true if the current <xref:System.Reflection.MethodInfo> represents the definition of a generic method.|  
 |<xref:System.Reflection.MethodInfo.MakeGenericMethod%2A>|Substitutes the elements of an array of types for the type parameters of the current generic method definition, and returns a <xref:System.Reflection.MethodInfo> object representing the resulting constructed method.|  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Generics](../../../csharp/programming-guide/generics/index.md)  
- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
- [Generics](~/docs/standard/generics/index.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Generics](../../../csharp/programming-guide/generics/index.md)
+- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
+- [Generics](~/docs/standard/generics/index.md)

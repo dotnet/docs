@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugInternalFrame Interface1"
-ms.custom: ""
+title: "ICorDebugInternalFrame Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugInternalFrame"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: bb4772ca-0d54-4185-b738-7a6ffe9ea85a
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugInternalFrame Interface1
+# ICorDebugInternalFrame Interface
+
 Represents a runtime-internal frame on the stack. This interface is a subclass of the ICorDebugFrame interface.  
   
 ## Methods  
@@ -52,5 +41,5 @@ Represents a runtime-internal frame on the stack. This interface is a subclass o
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

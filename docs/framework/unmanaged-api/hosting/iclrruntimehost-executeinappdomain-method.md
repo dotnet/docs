@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeHost::ExecuteInAppDomain Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeHost.ExecuteInAppDomain"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e2b0e2db-3fae-4b56-844e-d30a125a660c
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeHost::ExecuteInAppDomain Method
 Specifies the <xref:System.AppDomain> in which to execute the specified managed code.  
@@ -43,7 +31,7 @@ HRESULT ExecuteInAppDomain(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `AppDomainId`  
  [in] The numeric ID of the <xref:System.AppDomain> in which to execute the specified method.  
   
@@ -76,5 +64,5 @@ HRESULT ExecuteInAppDomain(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+## See also
+- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

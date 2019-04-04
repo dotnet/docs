@@ -1,10 +1,6 @@
 ---
 title: "-optimize (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/optimize"
 helpviewer_keywords: 
@@ -16,9 +12,6 @@ helpviewer_keywords:
   - "compiler optimization [C#]"
   - "o compiler option [C#]"
 ms.assetid: 6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -optimize (C# Compiler Options)
 The **-optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient.  
@@ -57,6 +50,7 @@ The **-optimize** option enables or disables optimizations performed by the comp
 csc t2.cs -optimize  
 ```  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

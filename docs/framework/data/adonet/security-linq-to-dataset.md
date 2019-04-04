@@ -1,21 +1,7 @@
 ---
 title: "Security (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6116b2b8-75f4-4d8b-aea6-c13e55cda50b
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Security (LINQ to DataSet)
 This topic discusses security issues in [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)].  
@@ -30,5 +16,5 @@ This topic discusses security issues in [!INCLUDE[linq_dataset](../../../../incl
   
  Any input directly or indirectly derived from the user or an external agent might have content that leverages the syntax of the target language in order to perform unauthorized actions. This is known as a SQL injection attack, named after an attack pattern where the target language is Transact-SQL. User input injected directly into the query is used to drop a database table, cause a denial of service, or otherwise change the nature of the operation being performed. Although query composition is possible in [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)], it is performed through the object model API. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] queries are not composed by using string manipulation or concatenation, as they are in Transact-SQL, and are not susceptible to SQL injection attacks in the traditional sense.  
   
-## See Also  
- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+## See also
+- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

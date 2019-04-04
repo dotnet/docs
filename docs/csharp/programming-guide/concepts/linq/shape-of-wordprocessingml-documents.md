@@ -1,19 +1,7 @@
 ---
 title: "Shape of WordprocessingML Documents (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Shape of WordprocessingML Documents (C#)
 This topic introduces the XML shape of a WordprocessingML document.  
@@ -94,11 +82,12 @@ using (Package wdPackage = Package.Open("SampleDoc.docx", FileMode.Open, FileAcc
 ```  
   
 ## External Resources  
- [Introducing the Office (2007) Open XML File Formats](https://msdn.microsoft.com/library/ms406049.aspx)  
- [Overview of WordprocessingML](https://msdn.microsoft.com/library/aa212812(office.11).aspx)  
+ [Introducing the Office (2007) Open XML File Formats](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205%28v=office.12%29)  
+ [Overview of WordprocessingML](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812%28v=office.11%29)  
  [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)  
- [Introduction to WordprocessingML](http://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
+ [Introduction to WordprocessingML](https://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
  [Office 2003: XML Reference Schemas Download page](https://www.microsoft.com/en-us/download/details.aspx?id=101)  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

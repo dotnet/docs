@@ -1,14 +1,6 @@
 ---
 title: "How to: Continue a Windows Service (Visual Basic)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 f1_keywords: 
@@ -17,12 +9,7 @@ helpviewer_keywords:
   - "Windows Service applications, pausing"
   - "pausing Windows Service applications"
 ms.assetid: e5d13760-4c83-4b0d-abef-39852677cd7a
-caps.latest.revision: 16
 author: "ghogen"
-ms.author: "ghogen"
-manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Continue a Windows Service (Visual Basic)
 This example uses the <xref:System.ServiceProcess.ServiceController> component to continue the IIS Admin service on the local computer.  
@@ -56,7 +43,7 @@ This example uses the <xref:System.ServiceProcess.ServiceController> component t
   
  Access to service information may be restricted by using the <xref:System.Security.Permissions.PermissionState> enumeration to set permissions in the <xref:System.Security.Permissions.SecurityPermission> class.  
   
-## See Also  
- <xref:System.ServiceProcess.ServiceController>  
- <xref:System.ServiceProcess.ServiceControllerStatus>  
- [How to: Pause a Windows Service (Visual Basic)](../../../docs/framework/windows-services/how-to-pause-a-windows-service-visual-basic.md)
+## See also
+- <xref:System.ServiceProcess.ServiceController>
+- <xref:System.ServiceProcess.ServiceControllerStatus>
+- [How to: Pause a Windows Service (Visual Basic)](../../../docs/framework/windows-services/how-to-pause-a-windows-service-visual-basic.md)

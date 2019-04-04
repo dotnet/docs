@@ -1,21 +1,10 @@
 ---
 title: "Removing Attributes from an Element Node in the DOM"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Removing Attributes from an Element Node in the DOM
 There are many ways to remove attributes. One technique is to remove them from the attribute collection. To do this, the following steps are performed:  
@@ -44,5 +33,6 @@ There are many ways to remove attributes. One technique is to remove them from t
   
  When called with an <xref:System.Xml.XmlAttribute>, the <xref:System.Xml.XmlAttributeCollection.RemoveAll%2A> method sets the value of the attribute to String.Empty, as an attribute cannot exist without a value.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

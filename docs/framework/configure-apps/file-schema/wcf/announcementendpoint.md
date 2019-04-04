@@ -1,24 +1,10 @@
 ---
-title: "&lt;announcementEndpoint&gt;"
-ms.custom: ""
+title: "<announcementEndpoint>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 034b7c69-a770-4502-8cef-38007bbcd025
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;announcementEndpoint&gt;
-This configuration element defines a standard endpoint with a fixed announcement contract. A service can optionally announce its availability by sending an online and offline announcement message when it is opened or closed respectively. A [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service specifies the announcement endpoints in the [\<serviceDiscovery>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicediscovery.md) element and uses the AnnouncementClient to perform the announcements. A client wishing to listen for the announcement from other service is actually acting as a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service; thus you have to configure the announcement endpoints for that client in the [\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md) section.  
+# \<announcementEndpoint>
+This configuration element defines a standard endpoint with a fixed announcement contract. A service can optionally announce its availability by sending an online and offline announcement message when it is opened or closed respectively. A Windows Communication Foundation (WCF) service specifies the announcement endpoints in the [\<serviceDiscovery>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicediscovery.md) element and uses the AnnouncementClient to perform the announcements. A client wishing to listen for the announcement from other service is actually acting as a WCF service; thus you have to configure the announcement endpoints for that client in the [\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md) section.  
   
 \<system.ServiceModel>  
 \<standardEndpoints>  
@@ -26,15 +12,15 @@ This configuration element defines a standard endpoint with a fixed announcement
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <announcementEndpoint>
-      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
-                        maxAnnouncementDelay="Timespan" 
+      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"
+                        maxAnnouncementDelay="Timespan"
                         name="String" />
     </announcementEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -61,30 +47,30 @@ This configuration element defines a standard endpoint with a fixed announcement
  The following example demonstrates a client listening for announcements messages over http and peernet.  
   
 ```xml  
-<services>  
-  <service name="ServiceAnnouncementListener">  
-    <endpoint name="httpAnnouncementEndpoint"  
-              kind="announcementEndpoint"  
-              binding="basicHttpBinding"  
-              address="announcements" />  
-    <endpoint name="peerNetAnnouncementEndpoint"  
-              kind="announcementEndpoint"  
-              binding="peerTcpBinding"  
-              address="net.p2p://discoveryMesh/multicast"  
-              bindingConfiguration="discoveryPeerTcpBindingConfig" />  
-  ...  
-  </service>  
-</services>  
-  
-<standardEndpoints>  
-  <announcementEndpoint>  
-    <standardEndpoint name="httpAnnouncementEndpoint"                         
-                      version="WSDiscoveryApril2005" />  
-    <standardEndpoint name="peerNetAnnouncementEndpoint"                         
-                      version="WSDiscoveryApril2005" />  
-   </announcementEndpoint>  
-</standardEndpoints>  
+<services>
+  <service name="ServiceAnnouncementListener">
+    <endpoint name="httpAnnouncementEndpoint"
+              kind="announcementEndpoint"
+              binding="basicHttpBinding"
+              address="announcements" />
+    <endpoint name="peerNetAnnouncementEndpoint"
+              kind="announcementEndpoint"
+              binding="peerTcpBinding"
+              address="net.p2p://discoveryMesh/multicast"
+              bindingConfiguration="discoveryPeerTcpBindingConfig" />
+  ...
+  </service>
+</services>
+
+<standardEndpoints>
+  <announcementEndpoint>
+    <standardEndpoint name="httpAnnouncementEndpoint"
+                      version="WSDiscoveryApril2005" />
+    <standardEndpoint name="peerNetAnnouncementEndpoint"
+                      version="WSDiscoveryApril2005" />
+  </announcementEndpoint>
+</standardEndpoints>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>
+## See also
+- <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>

@@ -1,13 +1,6 @@
 ---
 title: "Inheritance Basics (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "derived classes [Visual Basic], inheritance"
   - "MyClass keyword [Visual Basic], using"
@@ -27,21 +20,18 @@ helpviewer_keywords:
   - "abstract classes [Visual Basic], inheritance"
   - "overriding, Overrides keyword"
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Inheritance Basics (Visual Basic)
 The `Inherits` statement is used to declare a new class, called a *derived class*, based on an existing class, known as a *base class*. Derived classes inherit, and can extend, the properties, methods, events, fields, and constants defined in the base class. The following section describes some of the rules for inheritance, and the modifiers you can use to change the way classes inherit or are inherited:  
   
 -   By default, all classes are inheritable unless marked with the `NotInheritable` keyword. Classes can inherit from other classes in your project or from classes in other assemblies that your project references.  
   
--   Unlike languages that allow multiple inheritance, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] allows only single inheritance in classes; that is, derived classes can have only one base class. Although multiple inheritance is not allowed in classes, classes can implement multiple interfaces, which can effectively accomplish the same ends.  
+-   Unlike languages that allow multiple inheritance, Visual Basic allows only single inheritance in classes; that is, derived classes can have only one base class. Although multiple inheritance is not allowed in classes, classes can implement multiple interfaces, which can effectively accomplish the same ends.  
   
 -   To prevent exposing restricted items in a base class, the access type of a derived class must be equal to or more restrictive than its base class. For example, a `Public` class cannot inherit a `Friend` or a `Private` class, and a `Friend` class cannot inherit a `Private` class.  
   
 ## Inheritance Modifiers  
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] introduces the following class-level statements and modifiers to support inheritance:  
+ Visual Basic introduces the following class-level statements and modifiers to support inheritance:  
   
 -   `Inherits` statement — Specifies the base class.  
   
@@ -66,14 +56,14 @@ The `Inherits` statement is used to declare a new class, called a *derived class
   
  The following example defines a base class, `Payroll,` and a derived class, `BonusPayroll`, which overrides an inherited method, `PayEmployee`. A procedure, `RunPayroll`, creates and then passes a `Payroll` object and a `BonusPayroll` object to a function, `Pay`, that executes the `PayEmployee` method of both objects.  
   
- [!code-vb[VbVbalrOOP#28](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_1.vb)]  
+ [!code-vb[VbVbalrOOP#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#28)]  
   
 ## The MyBase Keyword  
  The `MyBase` keyword behaves like an object variable that refers to the base class of the current instance of a class. `MyBase` is frequently used to access base class members that are overridden or shadowed in a derived class. In particular, `MyBase.New` is used to explicitly call a base class constructor from a derived class constructor.  
   
  For example, suppose you are designing a derived class that overrides a method inherited from the base class. The overridden method can call the method in the base class and modify the return value as shown in the following code fragment:  
   
- [!code-vb[VbVbalrOOP#109](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_2.vb)]  
+ [!code-vb[VbVbalrOOP#109](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#109)]  
   
  The following list describes restrictions on using `MyBase`:  
   
@@ -146,6 +136,7 @@ End Class
   
  Even though `derivedClass` overrides `testMethod`, the `MyClass` keyword in `useMyClass` nullifies the effects of overriding, and the compiler resolves the call to the base class version of `testMethod`.  
   
-## See Also  
- [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+## See also
+
+- [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

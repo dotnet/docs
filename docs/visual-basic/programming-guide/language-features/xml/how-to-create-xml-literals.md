@@ -1,20 +1,9 @@
 ---
 title: "How to: Create XML Literals (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML literals [Visual Basic], creating"
 ms.assetid: 573a6db5-b14d-4e42-b356-8cc7e2d77745
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create XML Literals (Visual Basic)
 You can create an XML document, fragment, or element directly in code by using an XML literal. The examples in this topic demonstrate how to create an XML element that has three child elements, and how to create an XML document.  
@@ -25,7 +14,7 @@ You can create an XML document, fragment, or element directly in code by using a
   
 -   Create the XML inline by using the XML literal syntax, which is the same as the actual XML syntax.  
   
-     [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_1.vb)]  
+     [!code-vb[VbXMLSamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#5)]  
   
      Run the code. The output of this code is:  
   
@@ -43,7 +32,7 @@ You can create an XML document, fragment, or element directly in code by using a
   
 -   Create the XML document inline. The following code creates an XML document that has literal syntax, an XML declaration, a processing instruction, a comment, and an element that contains another element.  
   
-     [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_2.vb)]  
+     [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
      Run the code. The output of this code is:  
   
@@ -57,8 +46,9 @@ You can create an XML document, fragment, or element directly in code by using a
   
      `</books>`  
   
-## See Also  
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+## See also
+
+- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)

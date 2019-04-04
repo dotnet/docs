@@ -1,23 +1,10 @@
 ---
-title: "&lt;trustedIssuers&gt;"
-ms.custom: ""
+title: "<trustedIssuers>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d818c917-07b4-40db-9801-8676561859fd
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;trustedIssuers&gt;
+# \<trustedIssuers>
 Configures the list of trusted issuer certificates used by the configuration-based issuer name registry (<xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>).  
   
  \<system.identityModel>  
@@ -83,6 +70,6 @@ Configures the list of trusted issuer certificates used by the configuration-bas
 </issuerNameRegistry>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>  
- <xref:System.IdentityModel.Tokens.IssuerNameRegistry>
+## See also
+- <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>
+- <xref:System.IdentityModel.Tokens.IssuerNameRegistry>

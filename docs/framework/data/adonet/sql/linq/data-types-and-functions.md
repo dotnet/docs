@@ -1,21 +1,7 @@
 ---
 title: "Data Types and Functions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Types and Functions
 The topics listed in the following table describe LINQ to SQL support for members, constructs, and casts of the common language runtime (CLR). Supported members and constructs are available to use in your LINQ to SQL queries.  
@@ -39,7 +25,6 @@ The topics listed in the following table describe LINQ to SQL support for member
 |[System.TimeSpan Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-timespan-methods.md)|Describes LINQ to SQL support for members of the <xref:System.TimeSpan?displayProperty=nameWithType> structure.|  
 |[Unsupported Functionality](../../../../../../docs/framework/data/adonet/sql/linq/unsupported-functionality.md)|Describes functionality that is not supported in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|  
   
-## See Also  
- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
- [.NET Framework Class Library in Visual Studio](http://msdn.microsoft.com/library/a03e374c-3d5c-4169-937b-49857ab273ae)
+## See also
+- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

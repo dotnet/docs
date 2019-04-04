@@ -1,19 +1,12 @@
 ---
 title: "-nologo (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "-nologo compiler option [Visual Basic]"
   - "banners [Visual Basic], suppressing startup"
   - "nologo compiler option [Visual Basic]"
   - "/nologo compiler option [Visual Basic]"
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
-author: rpetrusha
-ms.author: ronpet
 ---
 # -nologo (Visual Basic)
 Suppresses display of the copyright banner and informational messages during compilation.  
@@ -37,6 +30,7 @@ Suppresses display of the copyright banner and informational messages during com
 vbc -nologo t2.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

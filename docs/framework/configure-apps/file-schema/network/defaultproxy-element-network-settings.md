@@ -1,14 +1,6 @@
 ---
-title: "&lt;defaultProxy&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<defaultProxy> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultProxy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "defaultProxy element"
   - "<defaultProxy> element"
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
-caps.latest.revision: 21
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;defaultProxy&gt; Element (Network Settings)
+# \<defaultProxy> Element (Network Settings)
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.  
   
  \<configuration>  
@@ -33,13 +19,13 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ## Syntax  
   
 ```xml  
-      <defaultProxy  
-        enabled="true|false"  
-        useDefaultCredentials="true|false">  
-           <bypasslist> … </bypasslist>  
-           <proxy> … </proxy>  
-           <module> … </module>  
-      </defaultProxy>
+<defaultProxy  
+  enabled="true|false"  
+  useDefaultCredentials="true|false">  
+    <bypasslist>...</bypasslist>  
+    <proxy>...</proxy>  
+    <module>...</module>  
+</defaultProxy>
 ```  
   
 ## Attributes and Elements  
@@ -87,13 +73,13 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
         bypassonlocal="true"  
       />  
       <bypasslist>  
-        <add address="[a-z]+\.contoso\.com" />  
+        <add address="[a-z]+\.contoso\.com$" />  
       </bypasslist>  
     </defaultProxy>  
   </system.net>  
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

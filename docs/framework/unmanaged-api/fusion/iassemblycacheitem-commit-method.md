@@ -1,14 +1,6 @@
 ---
 title: "IAssemblyCacheItem::Commit Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IAssemblyCacheItem.Commit"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c2321f17-f46f-4815-ae41-b28678753613
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IAssemblyCacheItem::Commit Method
 Commits the cached assembly reference to memory.  
@@ -42,7 +30,7 @@ HRESULT Commit (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwFlags`  
  [in] Flags defined in Fusion.idl.  
   
@@ -56,5 +44,5 @@ HRESULT Commit (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+## See also
+- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)

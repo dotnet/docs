@@ -1,25 +1,11 @@
 ---
 title: "x:Shared Attribute"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], x:Shared attribute"
   - "x:Shared attribute [XAML Services]"
   - "Shared attribute in XAML [XAML Services]"
 ms.assetid: c8cff434-2785-405f-9f95-16deb34c9e64
-caps.latest.revision: 16
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Shared Attribute
 When set to `false`, modifies WPF resource-retrieval behavior so that requests for the attributed resource create a new instance for each request instead of sharing the same instance for all requests.  
@@ -41,7 +27,7 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
  Modifying an object that is returned through a resource API, such as <xref:System.Windows.FrameworkElement.FindResource%2A>, or modifying an object directly within a <xref:System.Windows.ResourceDictionary>, changes the original resource. If references to that resource were dynamic resource references, the consumers of that resource get the changed resource.  
   
- If references to the resource were static resource references, changes to the resource after [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing time are irrelevant. For more information about static versus dynamic resource references, see [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md).  
+ If references to the resource were static resource references, changes to the resource after [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing time are irrelevant. For more information about static versus dynamic resource references, see [XAML Resources](../wpf/advanced/xaml-resources.md).  
   
  Explicitly specifying `x:Shared="true"` is rarely done, because that is already the default. There is no direct code equivalent for `x:Shared` in the WPF object model; it can only be specified in a XAML usage and must be processed either by the default WPF behavior or in an intermediate XAML node stream on the load path if processed using .NET Framework XAML Services and its XAML readers.  
   
@@ -57,7 +43,7 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
 -   The <xref:System.Windows.ResourceDictionary> that contains the items must not be nested within another <xref:System.Windows.ResourceDictionary>. For example, you cannot use `x:Shared` for items in a <xref:System.Windows.ResourceDictionary> that is within a <xref:System.Windows.Style> that is already a <xref:System.Windows.ResourceDictionary> item.  
   
-## See Also  
- <xref:System.Windows.ResourceDictionary>  
- [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Base Elements](../../../docs/framework/wpf/advanced/base-elements.md)
+## See also
+- <xref:System.Windows.ResourceDictionary>
+- [XAML Resources](../wpf/advanced/xaml-resources.md)
+- [Base Elements](../wpf/advanced/base-elements.md)

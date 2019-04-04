@@ -1,14 +1,6 @@
 ---
 title: "RunDll32ShimW Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "RunDll32ShimW"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 9ea07b57-96e2-44df-8711-8fe6c119087f
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # RunDll32ShimW Function
 Executes the specified command.  
@@ -45,7 +33,7 @@ HRESULT RunDll32ShimW (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hwnd`  
  [in] A handle to a window in which the command output will be displayed.  
   
@@ -67,5 +55,5 @@ HRESULT RunDll32ShimW (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

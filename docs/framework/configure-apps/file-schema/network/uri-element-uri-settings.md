@@ -1,23 +1,9 @@
 ---
-title: "&lt;Uri&gt; Element (Uri Settings)"
-ms.custom: ""
+title: "<Uri> Element (Uri Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
-caps.latest.revision: 11
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;Uri&gt; Element (Uri Settings)
+# \<Uri> Element (Uri Settings)
 Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).  
   
 ## Schema Hierarchy  
@@ -75,5 +61,5 @@ Contains settings that specify how the .NET Framework handles web addresses expr
 </configuration>  
 ```  
   
-## See Also  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -1,23 +1,9 @@
 ---
 title: "Service Transaction Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Service Transaction Behavior Sample [Windows Communication Foundation]"
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Service Transaction Behavior
 This sample demonstrates the use of a client-coordinated transaction and the settings of ServiceBehaviorAttribute and OperationBehaviorAttribute to control service transaction behavior. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service, but is extended to maintain a server log of the performed operations in a database table and a stateful running total for the calculator operations. Persisted writes to the server log table are dependent upon the outcome of a client coordinated transaction - if the client transaction does not complete, the Web service transaction ensures that the updates to the database are not committed.  
@@ -27,7 +13,7 @@ This sample demonstrates the use of a client-coordinated transaction and the set
   
  The contract for the service defines that all of the operations require a transaction to be flowed with requests:  
   
-```  
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples",  
                     SessionMode = SessionMode.Required)]  
 public interface ICalculator  
@@ -59,7 +45,7 @@ public interface ICalculator
   
  After initiating both a connection to the service and a transaction, the client accesses several service operations within the scope of that transaction and then completes the transaction and closes the connection:  
   
-```  
+```csharp
 // Create a client  
 CalculatorClient client = new CalculatorClient();  
   
@@ -108,7 +94,7 @@ client.Close();
   
     -   The `ReleaseServiceInstanceOnTransactionComplete` property specifies whether the service instance is recycled when a transaction completes. By setting it to `false`, the service maintains the same service instance across the operation requests. This is required to maintain the running total. If set to `true`, a new instance is generated after each completed action.  
   
-    -   The `TransactionAutoCompleteOnSessionClose` property specifies whether outstanding transactions are completed when the session closes. By setting it to `false`, the individual operations are required to either set the `OperationBehaviorAttribute``TransactionAutoComplete` property to `true` or to explicitly require a call to the `SetTransactionComplete` method to complete transactions. This sample demonstrates both approaches.  
+    -   The `TransactionAutoCompleteOnSessionClose` property specifies whether outstanding transactions are completed when the session closes. By setting it to `false`, the individual operations are required to either set the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete?displayProperty=nameWithType> property to `true` or to explicitly require a call to the <xref:System.ServiceModel.OperationContext.SetTransactionComplete?displayProperty=nameWithType> method to complete transactions. This sample demonstrates both approaches.  
   
 -   On the `ServiceContractAttribute`:  
   
@@ -122,7 +108,7 @@ client.Close();
   
  The attributed service implementation is as follows:  
   
-```  
+```csharp
 [ServiceBehavior(  
     TransactionIsolationLevel = System.Transactions.IsolationLevel.Serializable,  
     TransactionTimeout = "00:00:30",  
@@ -176,7 +162,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Starting transaction  
 Performing calculations...  
   Adding 100, running total=100  
@@ -190,7 +176,7 @@ Press <ENTER> to terminate client.
   
  The logging of the service operation requests are displayed in the service's console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Press <ENTER> to terminate service.  
 Creating new service instance...  
   Writing row 1 to database: Adding 100 to 0  
@@ -220,7 +206,7 @@ Creating new service instance...
   
 3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
- If you run the sample across machines, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transactions network support.  
+ If you run the sample across machines, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable Windows Communication Foundation (WCF) transactions network support.  
   
 ### To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample across machines  
   
@@ -269,8 +255,7 @@ Creating new service instance...
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Transactions`  
   
-## See Also

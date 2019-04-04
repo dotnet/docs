@@ -1,14 +1,6 @@
 ---
 title: "ISymENCUnmanagedMethod::GetDocumentsForMethod Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymENCUnmanagedMethod.GetDocumentsForMethod"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: bd6ccde5-d578-48d8-abed-b474fbd48d13
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymENCUnmanagedMethod::GetDocumentsForMethod Method
 Gets the documents that this method has lines in.  
@@ -42,7 +30,7 @@ HRESULT GetDocumentsForMethod(
     [in, size_is(cDocs)] ISymUnmanagedDocument* documents[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cDocs`  
  [in] The length of the buffer pointed to by `pcDocs`.  
   
@@ -58,5 +46,5 @@ HRESULT GetDocumentsForMethod(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

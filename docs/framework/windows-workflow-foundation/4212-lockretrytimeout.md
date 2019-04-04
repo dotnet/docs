@@ -1,19 +1,7 @@
 ---
 title: "4212 - LockRetryTimeout"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d4ad415a-9871-49fc-85b8-8ee2ea149b1d
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 4212 - LockRetryTimeout
 ## Properties  

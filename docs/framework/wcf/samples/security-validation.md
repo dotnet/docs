@@ -1,21 +1,7 @@
 ---
 title: "Security Validation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
-caps.latest.revision: 35
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Validation
 This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria. In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
@@ -26,12 +12,12 @@ This sample demonstrates how to use a custom behavior to validate services on a 
 ## Endpoint Validation Custom Behavior  
  By adding user code to the `Validate` method contained in the <xref:System.ServiceModel.Description.IServiceBehavior> interface, custom behavior can be given to a service or endpoint to perform user-defined actions. The following code is used to loop through each endpoint contained in a service, which searches through their binding collections for secure bindings.  
   
-```  
+```csharp
 public void Validate(ServiceDescription serviceDescription,   
                                        ServiceHostBase serviceHostBase)  
 {  
-    // Loop through each endpoint individually gathering their    
-       binding elements.  
+    // Loop through each endpoint individually, gathering their    
+    // binding elements.  
     foreach (ServiceEndpoint endpoint in serviceDescription.Endpoints)  
     {  
         secureElementFound = false;  
@@ -110,9 +96,9 @@ public void Validate(ServiceDescription serviceDescription,
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ServiceValidation`  
   
-## See Also  
- [AppFabric Monitoring Samples](http://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

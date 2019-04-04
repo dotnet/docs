@@ -1,13 +1,6 @@
 ---
 title: "Property Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Set statement [Visual Basic], Property procedures"
   - "Visual Basic code, procedures"
@@ -20,14 +13,11 @@ helpviewer_keywords:
   - "property procedures"
   - "Get statement [Visual Basic], property procedures"
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Property Procedures (Visual Basic)
-A property procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
+A property procedure is a series of Visual Basic statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides for the following property procedures:  
+ Visual Basic provides for the following property procedures:  
   
 -   A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
   
@@ -103,20 +93,21 @@ End Property
 ### Illustration of Declaration and Call  
  The following property stores a full name as two constituent names, the first name and the last name. When the calling code reads `fullName`, the `Get` procedure combines the two constituent names and returns the full name. When the calling code assigns a new full name, the `Set` procedure attempts to break it into two constituent names. If it does not find a space, it stores it all as the first name.  
   
- [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/property-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#8)]  
   
  The following example shows typical calls to the property procedures of `fullName`.  
   
- [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
-## See Also  
- [Procedures](./index.md)  
- [Function Procedures](./function-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
- [How to: Create a Property](./how-to-create-a-property.md)  
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)  
- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)
+## See also
+
+- [Procedures](./index.md)
+- [Function Procedures](./function-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
+- [How to: Create a Property](./how-to-create-a-property.md)
+- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)
+- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)
+- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Set Pictures at Run Time (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "images [Windows Forms], adding with PictureBox control [Windows Forms]"
   - "PictureBox control [Windows Forms], adding pictures"
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Pictures at Run Time (Windows Forms)
 You can programmatically set the image displayed by a Windows Forms <xref:System.Windows.Forms.PictureBox> control.  
@@ -101,14 +87,14 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
     ```  
   
     > [!NOTE]
-    >  For more information on why you should use the <xref:System.Drawing.Image.Dispose%2A> method in this way, see [Cleaning Up Unmanaged Resources](../../../../docs/standard/garbage-collection/unmanaged.md).  
+    >  For more information on why you should use the <xref:System.Drawing.Image.Dispose%2A> method in this way, see [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md).  
   
      This code will clear the image even if a graphic was loaded into the control at design time.  
   
-## See Also  
- <xref:System.Windows.Forms.PictureBox>  
- <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>  
- [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)  
- [How to: Load a Picture Using the Designer](../../../../docs/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms.md)  
- [How to: Modify the Size or Placement of a Picture at Run Time](../../../../docs/framework/winforms/controls/how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)  
- [PictureBox Control](../../../../docs/framework/winforms/controls/picturebox-control-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.PictureBox>
+- <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>
+- [PictureBox Control Overview](picturebox-control-overview-windows-forms.md)
+- [How to: Load a Picture Using the Designer](how-to-load-a-picture-using-the-designer-windows-forms.md)
+- [How to: Modify the Size or Placement of a Picture at Run Time](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)
+- [PictureBox Control](picturebox-control-windows-forms.md)

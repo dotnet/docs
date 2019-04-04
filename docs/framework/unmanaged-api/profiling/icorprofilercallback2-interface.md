@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback2 Interface"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback2"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 4a261dba-450d-4f1f-8d98-865b58bfc992
 topic_type: 
   - "apiref"
-caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback2 Interface
 Provides methods that are used by the common language runtime (CLR) to notify a code profiler when the events to which the profiler has subscribed occur. The `ICorProfilerCallback2` interface is an extension of the [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md) interface. That is, it provides new callbacks introduced in the .NET Framework version 2.0.  
@@ -67,8 +55,8 @@ Provides methods that are used by the common language runtime (CLR) to notify a 
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ICorProfilerCallback3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-interface.md)  
- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)
+## See also
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-interface.md)
+- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)

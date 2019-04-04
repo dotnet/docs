@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugCode::GetILToNativeMapping Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugCode.GetILToNativeMapping"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a8ecd8c8-9627-4356-9c6f-bd05e24637c0
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugCode::GetILToNativeMapping Method
 Gets an array of "COR_DEBUG_IL_TO_NATIVE_MAP" instances that represent mappings from Microsoft intermediate language (MSIL) offsets to native offsets.  
@@ -44,7 +32,7 @@ HRESULT GetILToNativeMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cMap`  
  [in] The size of the `map` array.  
   
@@ -52,7 +40,7 @@ HRESULT GetILToNativeMapping (
  [out] A pointer to the actual number of elements returned in the `map` array.  
   
  `map`  
- [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` stuctures, each of which represents a mapping from an MSIL offset to a native offset.  
+ [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which represents a mapping from an MSIL offset to a native offset.  
   
  There is no ordering to the array of elements returned.  
   
@@ -68,5 +56,5 @@ HRESULT GetILToNativeMapping (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugCode Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)
+## See also
+- [ICorDebugCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICeeGen::GetSectionDataLen Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICeeGen.GetSectionDataLen"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e2a06ee4-b8ee-49c7-935a-c1031a29eef2
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICeeGen::GetSectionDataLen Method
 Gets the length of the specified section.  
@@ -44,7 +32,7 @@ HRESULT GetSectionDataLen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The data section whose length will be retrieved.  
   
@@ -63,5 +51,5 @@ HRESULT GetSectionDataLen (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

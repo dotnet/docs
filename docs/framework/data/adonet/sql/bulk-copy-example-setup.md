@@ -1,21 +1,7 @@
 ---
 title: "Bulk Copy Example Setup"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d4dde6ac-b8b6-4593-965a-635c8fb2dadb
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Bulk Copy Example Setup
 The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data only to SQL Server tables. The code samples shown in this topic use the SQL Server sample database, **AdventureWorks**. To avoid altering the existing tables code samples write data to tables that you must create first.  
@@ -89,6 +75,6 @@ CREATE TABLE [dbo].[BulkCopyDemoOrderDetail]([SalesOrderID] [int] NOT NULL,
 ) ON [PRIMARY]) ON [PRIMARY]  
 ```  
   
-## See Also  
- [Bulk Copy Operations in SQL Server](../../../../../docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Bulk Copy Operations in SQL Server](../../../../../docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

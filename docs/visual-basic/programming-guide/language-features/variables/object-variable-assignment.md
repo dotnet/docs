@@ -1,14 +1,6 @@
 ---
 title: "Object Variable Assignment (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Nothing keyword [Visual Basic], object variable assignment"
   - "object variables [Visual Basic], initializing"
@@ -21,9 +13,6 @@ helpviewer_keywords:
   - "assignment statements [Visual Basic], object variable assignment"
   - "Me keyword [Visual Basic], as object variable"
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object Variable Assignment (Visual Basic)
 You use a normal assignment statement to assign an object to an object variable. You can assign an object expression or the [Nothing](../../../../visual-basic/language-reference/nothing.md) keyword, as the following example illustrates.  
@@ -44,7 +33,7 @@ thisObject = Nothing
  You can include initialization in your declaration by using the [New](../../../../visual-basic/language-reference/operators/new-operator.md) keyword. The following declaration statements declare object variables `testUri` and `ver` and assign specific objects to them. Each uses one of the overloaded constructors of the appropriate class to initialize the object.  
   
 ```  
-Dim testUri As New System.Uri("http://www.microsoft.com")  
+Dim testUri As New System.Uri("https://www.microsoft.com")  
 Dim ver As New System.Version(6, 1, 0)  
 ```  
   
@@ -80,10 +69,11 @@ End Sub
 addStandardText(Me)  
 ```  
   
-## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)  
- [How to: Make an Object Variable Not Refer to Any Instance](../../../../visual-basic/programming-guide/language-features/variables/how-to-make-an-object-variable-not-refer-to-any-instance.md)  
- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+## See also
+
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
+- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
+- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
+- [How to: Make an Object Variable Not Refer to Any Instance](../../../../visual-basic/programming-guide/language-features/variables/how-to-make-an-object-variable-not-refer-to-any-instance.md)
+- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

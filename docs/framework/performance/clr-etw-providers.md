@@ -1,24 +1,12 @@
 ---
 title: "CLR ETW Providers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ETW, CLR providers"
   - "CLR ETW providers"
 ms.assetid: 0beafad4-b2c8-47f4-b342-83411d57a51f
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR ETW Providers
 The common language runtime (CLR) has two providers: the runtime provider and the rundown provider.  
@@ -90,12 +78,12 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 4.  Merge the profiles to create one log file:  
   
     ```  
-    xperf -merge -d clr1.etl clr2.etl merged.etl  
+    xperf -merge clr1.etl clr2.etl merged.etl  
     ```  
   
      The merged.etl file will contain the events from the runtime and the rundown provider sessions.  
   
  A tool can execute steps 2 and 3 (starting a rundown session and then terminating profiling) instead of immediately turning off profiling when a user requests profiling to be stopped. A tool can also execute step 4.  
   
-## See Also  
- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+## See also
+- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

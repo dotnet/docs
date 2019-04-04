@@ -1,14 +1,6 @@
 ---
 title: "fatalExecutionEngineError MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "corrupted CLR"
   - "fatal execution error"
@@ -20,15 +12,11 @@ helpviewer_keywords:
   - "FatalExecutionEngineError MDA"
   - "managed debugging assistants (MDAs), fatal errors"
 ms.assetid: 8b559e44-2393-4e4e-8160-7558d37a4a89
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # fatalExecutionEngineError MDA
-The `fatalExecutionEngine``Error` managed debugging assistant (MDA) is activated when a fatal error in the common language runtime (CLR) has been detected. The process will be terminated.  
+The `fatalExecutionEngineError` managed debugging assistant (MDA) is activated when a fatal error in the common language runtime (CLR) has been detected. The process will be terminated.  
   
 ## Symptoms  
  Unexpected process termination. Other symptoms cannot be determined because a CLR failure can occur for a variety of reasons.  
@@ -79,7 +67,7 @@ The `fatalExecutionEngine``Error` managed debugging assistant (MDA) is activated
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>  
- <xref:System.Runtime.ConstrainedExecution.Cer>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
+- <xref:System.Runtime.ConstrainedExecution.Cer>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

@@ -1,10 +1,6 @@
 ---
 title: "Custom element for SingleTagSectionHandler"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName"
 helpviewer_keywords: 
@@ -12,14 +8,11 @@ helpviewer_keywords:
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Custom element for SingleTagSectionHandler
 
-Defines settings in a custom configuration section that is defined by a <section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
+Defines settings in a custom configuration section that is defined by a \<section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;*\<sectionName>*
@@ -70,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

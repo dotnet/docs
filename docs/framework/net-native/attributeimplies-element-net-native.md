@@ -1,23 +1,11 @@
 ---
-title: "&lt;AttributeImplies&gt; Element (.NET Native)"
-ms.custom: ""
+title: "<AttributeImplies> Element (.NET Native)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;AttributeImplies&gt; Element (.NET Native)
+# \<AttributeImplies> Element (.NET Native)
 Defines policy for code elements the containing attribute is applied to.  
   
 ## Syntax  
@@ -73,8 +61,8 @@ Defines policy for code elements the containing attribute is applied to.
   
  The reflection, serialization, and interop attributes are all optional, although at least one should be present.  
   
-## See Also  
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

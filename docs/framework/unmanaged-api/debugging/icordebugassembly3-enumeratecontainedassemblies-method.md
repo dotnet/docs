@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugAssembly3::EnumerateContainedAssemblies Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 98f15b05-afad-4616-9e2a-1a9af31948b6
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugAssembly3::EnumerateContainedAssemblies Method
 Gets an enumerator for the assemblies contained in this assembly.  
@@ -28,7 +16,7 @@ HRESULT EnumerateContainedAssemblies(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblies`  
  [out] A pointer to the address of an ICorDebugAssemblyEnum interface object that is the enumerator.  
   
@@ -50,6 +38,6 @@ HRESULT EnumerateContainedAssemblies(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

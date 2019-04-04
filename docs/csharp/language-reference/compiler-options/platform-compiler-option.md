@@ -1,10 +1,6 @@
 ---
 title: "-platform (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/platform"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "-platform compiler option [C#]"
   - "/platform compiler option [C#]"
 ms.assetid: c290ff5e-47f4-4a85-9bb3-9c2525b0be04
-caps.latest.revision: 46
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -platform (C# Compiler Options)
 Specifies which version of the Common Language Runtime (CLR) can run the assembly.  
@@ -25,7 +18,7 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
 -platform:string  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  anycpu (default), anycpu32bitpreferred, ARM, x64, x86, or Itanium.  
   
@@ -37,6 +30,8 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
   
 -   **ARM** compiles your assembly to run on a computer that has an Advanced RISC Machine (ARM) processor.  
   
+-   **ARM64** compiles your assembly to run by the 64-bit CLR on a computer that has an Advanced RISC Machine (ARM) processor that supports the A64 instruction set.  
+
 -   **x64** compiles your assembly to be run by the 64-bit CLR on a computer that supports the AMD64 or EM64T instruction set.  
   
 -   **x86** compiles your assembly to be run by the 32-bit, x86-compatible CLR.  
@@ -76,6 +71,7 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
 csc -platform:anycpu filename.cs  
 ```  
   
-## See Also  
- [C# Compiler Options](index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

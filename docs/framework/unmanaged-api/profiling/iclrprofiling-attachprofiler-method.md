@@ -1,14 +1,6 @@
 ---
 title: "ICLRProfiling::AttachProfiler Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IClrProfiling.AttachProfiler Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRProfiling::AttachProfiler Method
 Attaches the specified profiler to the specified process.  
@@ -45,7 +33,7 @@ HRESULT AttachProfiler(
   [in] UINT cbClientData);                          // optional  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwProfileeProcessID`  
  [in] The process ID of the process to which the profiler should be attached. On a 64-bit machine, the profiled process's bitness must match the bitness of the trigger process that is calling `AttachProfiler`. If the user account under which `AttachProfiler` is called has administrative privileges, the target process may be any process on the system. Otherwise, the target process must be owned by the same user account.  
   
@@ -96,8 +84,8 @@ HRESULT AttachProfiler(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
+- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

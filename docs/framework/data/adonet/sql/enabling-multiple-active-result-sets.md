@@ -1,24 +1,10 @@
 ---
 title: "Enabling Multiple Active Result Sets"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 576079e4-debe-4ab5-9204-fcbe2ca7a5e2
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Enabling Multiple Active Result Sets
 Multiple Active Result Sets (MARS) is a feature that works with SQL Server to allow the execution of multiple batches on a single connection. When MARS is enabled for use with SQL Server, each command object used adds a session to the connection.  
@@ -102,7 +88,7 @@ string connectionString = "Data Source=MSSQL1;" +
   
  Message: Transaction context in use by another session.  
   
- Source: .Net SqlClient Data Provider  
+ Source: .NET SqlClient Data Provider  
   
  Expected: (null)  
   
@@ -119,6 +105,6 @@ string connectionString = "Data Source=MSSQL1;" +
 ### Detecting MARS Support  
  An application can check for MARS support by reading the `SqlConnection.ServerVersion` value. The major number should be 9 for SQL Server 2005 and 10 for SQL Server 2008.  
   
-## See Also  
- [Multiple Active Result Sets (MARS)](../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Multiple Active Result Sets (MARS)](../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

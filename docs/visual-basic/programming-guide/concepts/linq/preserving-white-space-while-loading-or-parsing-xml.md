@@ -1,18 +1,7 @@
 ---
 title: "Preserving White Space while Loading or Parsing XML2"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef6518e0-2c8d-462c-8b92-a16e9dc737ad
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Preserving White Space while Loading or Parsing XML
 This topic describes how to control the white space behavior of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
@@ -42,5 +31,6 @@ This topic describes how to control the white space behavior of [!INCLUDE[sqltec
   
  You can create an XML tree by using an <xref:System.Xml.XmlWriter>. Nodes that are written to the <xref:System.Xml.XmlWriter> are populated in the tree. However, when you build an XML tree using this method, all nodes are preserved, regardless of whether the node is white space or not, or whether the white space is significant or not.  
   
-## See Also  
- [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)
+## See also
+
+- [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)

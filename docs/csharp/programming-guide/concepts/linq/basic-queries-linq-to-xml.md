@@ -1,19 +1,7 @@
 ---
 title: "Basic Queries (LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: d333bb7d-20c1-448a-95b7-e5ba07915744
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Basic Queries (LINQ to XML) (C#)
 This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  
@@ -36,5 +24,6 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[How to: Write a Query that Finds Elements Based on Context (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md)|Shows how to select elements based on other elements in the tree.|  
 |[How to: Debug Empty Query Results Sets (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
   
-## See Also  
- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## See also
+
+- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

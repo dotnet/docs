@@ -1,23 +1,12 @@
 ---
 title: "When to Use a Thread-Safe Collection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, when to upgrade"
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # When to Use a Thread-Safe Collection
 The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces five new collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
@@ -67,7 +56,8 @@ The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces
 ## BlockingCollection  
  When bounding and blocking semantics are required, <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> will probably perform faster than any custom implementation. It also supports rich cancellation, enumeration, and exception handling.  
   
-## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)  
- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)

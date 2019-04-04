@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugILCode::GetEHClauses Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: cf7a0e00-06ae-47a5-8037-598b26196802
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugILCode::GetEHClauses Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -41,7 +29,7 @@ HRESULT GetEHClauses(
    [out, size_is(cClauses), length_is(*pcClauses)] CorDebugEHClause clauses[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cClauses`  
  [in] The storage capacity of the `clauses` array. See the Remarks section for more information.  
   
@@ -63,7 +51,7 @@ HRESULT GetEHClauses(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [ICorDebugILCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md)  
- [CorDebugEHClause Structure](../../../../docs/framework/unmanaged-api/debugging/cordebugehclause-structure.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugILCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md)
+- [CorDebugEHClause Structure](../../../../docs/framework/unmanaged-api/debugging/cordebugehclause-structure.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,18 +1,7 @@
 ---
 title: "Introduction to LINQ (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c6339c12-9b2d-433e-961c-0d2b7f0091c2
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Introduction to LINQ (Visual Basic)
 Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framework version 3.5 that bridges the gap between the world of objects and the world of data.  
@@ -25,7 +14,7 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
   
  The following illustration from Visual Studio shows a partially-completed LINQ query against a SQL Server database in both C# and Visual Basic with full type checking and IntelliSense support.  
   
- ![LINQ query with Intellisense](../../../../csharp/programming-guide/concepts/linq/media/query_intell.png "Query_Intell")  
+ ![Diagram that shwos a LINQ query with Intellisense.](./media/introduction-to-linq/linq-query-intellisense.png)  
   
 ## Next Steps  
  To learn more details about LINQ, start by becoming familiar with some basic concepts in the Getting Started section [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md), and then read the documentation for the LINQ technology in which you are interested:  
@@ -38,5 +27,6 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
   
 -   .NET collections, files, strings and so on: [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
   
-## See Also  
- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+## See also
+
+- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)

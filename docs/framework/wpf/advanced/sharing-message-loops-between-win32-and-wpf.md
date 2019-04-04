@@ -1,26 +1,12 @@
 ---
 title: "Sharing Message Loops Between Win32 and WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Win32 code [WPF], sharing message loops"
   - "message loops [WPF]"
   - "sharing message loops [WPF]"
   - "interoperability [WPF], Win32"
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Sharing Message Loops Between Win32 and WPF
 This topic describes how to implement a message loop for interoperation with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], either by using existing message loop exposure in <xref:System.Windows.Threading.Dispatcher> or by creating a separate message loop on the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] side of your interoperation code.  
@@ -69,9 +55,9 @@ This topic describes how to implement a message loop for interoperation with [!I
   
  A message that goes to the keyboard sink might not be sent to the HWND if you added hooks for that message by using the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method. The message might have been handled at the message pump level directly and not submitted to the `DispatchMessage` function.  
   
-## See Also  
- <xref:System.Windows.Interop.ComponentDispatcher>  
- <xref:System.Windows.Interop.IKeyboardInputSink>  
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
- [Threading Model](../../../../docs/framework/wpf/advanced/threading-model.md)  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+## See also
+- <xref:System.Windows.Interop.ComponentDispatcher>
+- <xref:System.Windows.Interop.IKeyboardInputSink>
+- [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
+- [Threading Model](threading-model.md)
+- [Input Overview](input-overview.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICLRTaskManager::SetLocale Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRTaskManager.SetLocale"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ed16bb7f-4206-43a8-b9e9-c5737b69e3af
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRTaskManager::SetLocale Method
 Notifies the common language runtime (CLR) that the host has modified the value of the locale identifier (which maps to the geographical culture and language) on the currently executing task.  
@@ -41,7 +29,7 @@ HRESULT SetLocale (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] The locale identifier value that maps to the newly assigned geographical culture and language.  
   
@@ -68,8 +56,8 @@ HRESULT SetLocale (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+## See also
+- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
+- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
+- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
+- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)

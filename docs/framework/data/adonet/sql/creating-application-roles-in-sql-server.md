@@ -1,21 +1,7 @@
 ---
 title: "Creating Application Roles in SQL Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
-caps.latest.revision: 9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating Application Roles in SQL Server
 Application roles provide a way to assign permissions to an application instead of a database role or user. Users can connect to the database, activate the application role, and assume the permissions granted to the application. The permissions granted to the application role are in force for the duration of the connection.  
@@ -64,10 +50,10 @@ Application roles provide a way to assign permissions to an application instead 
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Application Roles](http://msdn.microsoft.com/library/ms190998.aspx) in SQL Server Books Online|Describes how to create and use application roles in SQL Server 2008.|  
+|[Application Roles](/sql/relational-databases/security/authentication-access/application-roles)|Describes how to create and use application roles in SQL Server 2008.|  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

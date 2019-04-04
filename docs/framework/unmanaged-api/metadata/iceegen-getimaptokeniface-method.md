@@ -1,14 +1,6 @@
 ---
 title: "ICeeGen::GetIMapTokenIface Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICeeGen.GetIMapTokenIface"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 847a5531-c37d-49cd-8844-9e54b5d86cf7
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICeeGen::GetIMapTokenIface Method
 Gets the interface referenced by the specified token.  
@@ -43,7 +31,7 @@ HRESULT GetIMapTokenIface (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIMapToken`  
  [in, out] The metadata token for the interface to be returned.  
   
@@ -56,5 +44,5 @@ HRESULT GetIMapTokenIface (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

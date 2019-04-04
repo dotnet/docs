@@ -1,23 +1,9 @@
 ---
-title: "&lt;add&gt; Element for schemeSettings (Uri Settings)"
-ms.custom: ""
+title: "<add> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
-caps.latest.revision: 7
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;add&gt; Element for schemeSettings (Uri Settings)
+# \<add> Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  
   
  \<configuration>  
@@ -89,11 +75,11 @@ Adds a scheme setting for a scheme name.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
- <xref:System.Uri?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
+- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

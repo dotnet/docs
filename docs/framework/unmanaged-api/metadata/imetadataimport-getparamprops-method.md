@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::GetParamProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.GetParamProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::GetParamProps Method
 Gets metadata values for the parameter referenced by the specified ParamDef token.  
@@ -50,7 +38,7 @@ HRESULT GetParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A ParamDef token that represents the parameter to return metadata for.  
   
@@ -70,7 +58,7 @@ HRESULT GetParamProps (
  [out] The returned size in wide characters of `szName`.  
   
  `pdwAttr`  
- [out] A pointer to any attribute flags associated with the parameter.  
+ [out] A pointer to any attribute flags associated with the parameter. This is a bitmask of `CorParamAttr` values.  
   
  `pdwCPlusTypeFlag`  
  [out] A pointer to a flag specifying that the parameter is a <xref:System.ValueType>.  
@@ -81,6 +69,10 @@ HRESULT GetParamProps (
  `pcchValue`  
  [out] The size of `ppValue` in wide characters, or zero if `ppValue` does not hold a string.  
   
+## Remarks
+
+The sequence values in `pulSequence` begin with 1 for parameters. A return value has a sequence number of 0.
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
@@ -90,6 +82,6 @@ HRESULT GetParamProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

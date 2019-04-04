@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugSymbolProvider::GetStaticFieldSymbols Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: b178367f-a6e4-413c-b06f-daf3804b456b
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugSymbolProvider::GetStaticFieldSymbols Method
 Gets the static field symbols that correspond to a typespec signature.  
@@ -32,7 +20,7 @@ HRESULT GetStaticFieldSymbols(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSignature`  
  [in] The number of bytes in the `typeSig` array.  
   
@@ -62,7 +50,7 @@ HRESULT GetStaticFieldSymbols(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [GetInstanceFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getinstancefieldsymbols-method.md)  
- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [GetInstanceFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getinstancefieldsymbols-method.md)
+- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,14 +1,6 @@
 ---
 title: "Security Considerations for Reflection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "permissions [.NET Framework], reflection"
   - "MethodInfo parameters"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "reflection,partial trust"
   - "link demands"
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Considerations for Reflection
 Reflection provides the ability to obtain information about types and members, and to access members (that is, to call methods and constructors, to get and set property values, to add and remove event handlers, and so on). The use of reflection to obtain information about types and members is not restricted. All code can use reflection to perform the following tasks:  
@@ -110,13 +98,13 @@ Reflection provides the ability to obtain information about types and members, a
   
 -   Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag is required.  
   
-## See Also  
- <xref:System.Security.Permissions.ReflectionPermissionFlag>  
- <xref:System.Security.Permissions.ReflectionPermission>  
- <xref:System.Security.Permissions.SecurityPermission>  
- [Security Changes](../../../docs/framework/security/security-changes.md)  
- [Code Access Security](../../../docs/framework/misc/code-access-security.md)  
- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
- [Applying Attributes](../../../docs/standard/attributes/applying-attributes.md)  
- [Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)
+## See also
+- <xref:System.Security.Permissions.ReflectionPermissionFlag>
+- <xref:System.Security.Permissions.ReflectionPermission>
+- <xref:System.Security.Permissions.SecurityPermission>
+- [Security Changes](../../../docs/framework/security/security-changes.md)
+- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)
+- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Applying Attributes](../../../docs/standard/attributes/applying-attributes.md)
+- [Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)

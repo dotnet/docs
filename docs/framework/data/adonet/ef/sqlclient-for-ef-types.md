@@ -1,21 +1,7 @@
 ---
 title: "SqlClient for Entity FrameworkTypes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f2a95ead-c845-4e97-9fb3-04b444f7ed81
-caps.latest.revision: 9
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SqlClient for Entity FrameworkTypes
 The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest file includes the list of the provider primitive types, facets for each type, the mappings between the conceptual and storage model primitive types, and the promotion and conversion rules between the conceptual and storage model primitive types.  
@@ -58,5 +44,5 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest fi
 |`Unique`<br /><br /> `identifier`|Equal comparable: True<br /><br /> Order comparable: True|`Edm.Guid`|n/a|  
 |`xml`|Equal comparable: False<br /><br /> Order comparable: False|`Edm.String`|MaxLength:<br /><br /> - Default: 1073741823<br /><br /> - Constant: True<br /><br /> Unicode:<br /><br /> - Default: True<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
   
-## See Also  
- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+## See also
+- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

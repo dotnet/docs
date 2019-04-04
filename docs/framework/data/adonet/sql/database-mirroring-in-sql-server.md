@@ -1,24 +1,10 @@
 ---
 title: "Database Mirroring in SQL Server"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 89befaff-bb46-4290-8382-e67cdb0e3de9
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Database Mirroring in SQL Server
 Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL Server database on a standby server. Mirroring ensures that two separate copies of the data exist at all times, providing high availability and complete data redundancy. The .NET Data Provider for SQL Server provides implicit support for database mirroring, so that the developer does not need to take any action or write any code once it has been configured for a SQL Server database. In addition, the <xref:System.Data.SqlClient.SqlConnection> object supports an explicit connection mode that allows supplying the name of a failover partner server in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
@@ -65,11 +51,11 @@ string activeServer = connection.DataSource;
 >  Mirroring support on the server is configured on a per-database basis. If data manipulation operations are executed against other databases not included in the principal/mirror set, either by using multipart names or by changing the current database, the changes to these other databases do not propagate in the event of failure. No error is generated when data is modified in a database that is not mirrored. The developer must evaluate the possible impact of such operations.  
   
 ## Database Mirroring Resources  
- For conceptual documentation and information on configuring, deploying and administering mirroring, see the following resources in SQL Server Books Online.  
+ For conceptual documentation and information on configuring, deploying and administering mirroring, see the following resources in SQL Server documentation.  
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Database Mirroring](http://msdn.microsoft.com/library/bb934127.aspx) in SQL Server Books Online|Describes how to set up and configure mirroring in SQL Server.|  
+|[Database Mirroring](/sql/database-engine/database-mirroring/database-mirroring-sql-server)|Describes how to set up and configure mirroring in SQL Server.|  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

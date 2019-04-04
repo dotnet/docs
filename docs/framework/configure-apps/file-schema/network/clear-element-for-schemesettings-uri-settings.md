@@ -1,23 +1,9 @@
 ---
-title: "&lt;clear&gt; Element for schemeSettings (Uri Settings)"
-ms.custom: ""
+title: "<clear> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
-caps.latest.revision: 7
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;clear&gt; Element for schemeSettings (Uri Settings)
+# \<clear> Element for schemeSettings (Uri Settings)
 Clears all existing scheme settings.  
   
  \<configuration>  
@@ -78,11 +64,11 @@ Clears all existing scheme settings.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
- <xref:System.Uri?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
+- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -1,23 +1,10 @@
 ---
-title: "&lt;chunkedCookieHandler&gt;"
-ms.custom: ""
+title: "<chunkedCookieHandler>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7220de45-1d14-4aec-a29e-4a2ea8ac861f
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;chunkedCookieHandler&gt;
+# \<chunkedCookieHandler>
 Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".  
   
  \<system.identityModel.services>  
@@ -70,5 +57,5 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
 </cookieHandler>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Services.ChunkedCookieHandler>
+## See also
+- <xref:System.IdentityModel.Services.ChunkedCookieHandler>

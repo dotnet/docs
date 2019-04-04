@@ -1,23 +1,9 @@
 ---
-title: "&lt;channelPoolSettings&gt;"
-ms.custom: ""
+title: "<channelPoolSettings>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4755f3d3-4213-4c68-ae7f-45b67d744459
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;channelPoolSettings&gt;
+# \<channelPoolSettings>
 Specifies the channel pool settings for a custom binding.  
   
  \<system.serviceModel>  
@@ -30,10 +16,9 @@ Specifies the channel pool settings for a custom binding.
 ## Syntax  
   
 ```xml  
-<channelPoolSettings  
-    idleTimeout"TimeSpan"  
-        leaseTimeout"TimeSpan"  
-    maxOutboundConnectionsPerEndpopint="Integer" />  
+<channelPoolSettings idleTimeout="TimeSpan"
+                     leaseTimeout="TimeSpan"
+                     maxOutboundConnectionsPerEndpopint="Integer" />
 ```  
   
 ## Attributes and Elements  
@@ -67,14 +52,14 @@ Specifies the channel pool settings for a custom binding.
   
 -   The `maxOutboundChannelsPerEndpoint` quota sets cache limits on both the server and the client and is used to improve reliability. The default value is based on a conservatively modest allocation of resources that is suitable for a development environment and small installation scenarios. Service administrators should review the value if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
   
-## See Also  
- <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings%2A>  
- <xref:System.ServiceModel.Channels.ChannelPoolSettings>  
- <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>  
- <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [\<oneWay>](../../../../../docs/framework/configure-apps/file-schema/wcf/oneway.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings%2A>
+- <xref:System.ServiceModel.Channels.ChannelPoolSettings>
+- <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>
+- <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [\<oneWay>](../../../../../docs/framework/configure-apps/file-schema/wcf/oneway.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -1,24 +1,10 @@
 ---
 title: "Windows Applications Using Callbacks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ae2ea457-0764-4b06-8977-713c77e85bd2
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Applications Using Callbacks
 In most asynchronous processing scenarios, you want to start a database operation and continue running other processes without waiting for the database operation to complete. However, many scenarios require doing something once the database operation has ended. In a Windows application, for example, you may want to delegate the long-running operation to a background thread while allowing the user interface thread to remain responsive. However, when the database operation is complete, you want to use the results to populate the form. This type of scenario is best implemented with a callback.  
@@ -135,9 +121,7 @@ Imports System.Data.SqlClient
   
             Catch ex As Exception  
                 isExecuting = False  
-                DisplayStatus( _  
-                    String.Format("Ready (last error: {0})", _  
-                    ex.Message))  
+                DisplayStatus($"Ready (last error: {ex.Message})")
                 If connection IsNot Nothing Then  
                     connection.Close()  
                 End If  
@@ -191,7 +175,7 @@ Imports System.Data.SqlClient
             ' invoke it, like this:  
             Me.Invoke(New _  
                 DisplayInfoDelegate(AddressOf DisplayStatus), _  
-                String.Format("Ready(last error: {0}", ex.Message))  
+                $"Ready (last error: {ex.Message}")
         Finally  
             isExecuting = False  
             If connection IsNot Nothing Then  
@@ -256,7 +240,7 @@ private void Form1_FormClosing(object sender, System.Windows.Forms.FormClosingEv
     {  
         MessageBox.Show(this, "Can't close the form until " +  
         "the pending asynchronous command has completed. Please " +  
-        wait...");  
+        "wait...");
         e.Cancel = true;  
     }  
 }  
@@ -309,8 +293,7 @@ private void button1_Click(object sender, System.EventArgs e)
         catch (Exception ex)  
         {  
             isExecuting = false;  
-            DisplayStatus(   
-             string.Format("Ready (last error: {0})", ex.Message));  
+            DisplayStatus($"Ready (last error: {ex.Message})");
             if (connection != null)  
             {  
                 connection.Close();  
@@ -366,7 +349,7 @@ private void HandleCallback(IAsyncResult result)
         // You can create the delegate instance as you   
         // invoke it, like this:  
         this.Invoke(new DisplayInfoDelegate(DisplayStatus),  
-        String.Format("Ready(last error: {0}", ex.Message));  
+            $"Ready (last error: {ex.Message}");
     }  
     finally  
     {  
@@ -386,6 +369,6 @@ private void Form1_Load(object sender, System.EventArgs e)
 }  
 ```  
   
-## See Also  
- [Asynchronous Operations](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Asynchronous Operations](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,17 +1,7 @@
 ---
 title: "How to: Use Expression Trees to Build Dynamic Queries (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Use Expression Trees to Build Dynamic Queries (C#)
 In LINQ, expression trees are used to represent structured queries that target sources of data that implement <xref:System.Linq.IQueryable%601>. For example, the LINQ provider implements the <xref:System.Linq.IQueryable%601> interface for querying relational data stores. The C# compiler compiles queries that target such data sources into code that builds an expression tree at runtime. The query provider can then traverse the expression tree data structure and translate it into a query language appropriate for the data source.  
@@ -112,7 +102,8 @@ foreach (string company in results)
   
 -   Copy the code from the example and paste it into the `Main` method.  
   
-## See Also  
- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)  
- [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)  
- [How to: Dynamically Specify Predicate Filters at Runtime](../../../../csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md)
+## See also
+
+- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
+- [How to: Dynamically Specify Predicate Filters at Runtime](../../../../csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md)

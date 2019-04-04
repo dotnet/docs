@@ -1,14 +1,6 @@
 ---
 title: "callbackOnCollectedDelegate MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "cpp"
 helpviewer_keywords: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
   - "garbage collection, run-time errors"
   - "delegates [.NET Framework], garbage collection"
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # callbackOnCollectedDelegate MDA
 The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated if a delegate is marshaled from managed to unmanaged code as a function pointer and a callback is placed on that function pointer after the delegate has been garbage collected.  
@@ -67,7 +55,7 @@ The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated
 ## Example  
  The following example demonstrates a situation that can activate this MDA:  
   
-```  
+```cpp
 // Library.cpp : Defines the unmanaged entry point for the DLL application.  
 #include "windows.h"  
 #include "stdio.h"  
@@ -82,8 +70,10 @@ void __stdcall Initialize(void __stdcall pfTarget())
 void __stdcall Callback()  
 {  
     g_pfTarget();  
-}  
-// ---------------------------------------------------  
+}
+```
+
+```csharp
 // C# Client  
 using System;  
 using System.Runtime.InteropServices;  
@@ -115,8 +105,8 @@ public class Entry
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)  
- [gcUnmanagedToManaged](../../../docs/framework/debug-trace-profile/gcunmanagedtomanaged-mda.md)
+## See also
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [gcUnmanagedToManaged](../../../docs/framework/debug-trace-profile/gcunmanagedtomanaged-mda.md)

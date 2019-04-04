@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::FindAssembliesByName Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.FindAssembliesByName"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4db97cf9-e4c1-4233-8efa-cbdc0e14a8e4
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::FindAssembliesByName Method
 Gets an array of assemblies with the specified `szAssemblyName` parameter, using the standard rules employed by the common language runtime (CLR) for resolving references.  
@@ -46,7 +34,7 @@ HRESULT FindAssembliesByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szAppBase`  
  [in] The root directory in which to search for the given assembly. If this value is set to `null`, `FindAssembliesByName` will look only in the global assembly cache for the assembly.  
   
@@ -57,7 +45,7 @@ HRESULT FindAssembliesByName (
  [in] The name of the assembly to find. The format of this string is defined in the class reference page for <xref:System.Reflection.AssemblyName>.  
   
  `ppIUnk`  
- [in] An array of type <<!--zzxref:IUnknown --> `IUnknown`> in which to put the `IMetadataAssemblyImport` interface pointers.  
+ [in] An array of type [IUnknown](/cpp/atl/iunknown) in which to put the `IMetadataAssemblyImport` interface pointers.  
   
  `cMax`  
  [out] The maximum number of interface pointers that can be placed in `ppIUnk`.  
@@ -90,6 +78,6 @@ HRESULT FindAssembliesByName (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [How the Runtime Locates Assemblies](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [How the Runtime Locates Assemblies](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

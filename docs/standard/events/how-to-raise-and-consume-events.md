@@ -1,13 +1,7 @@
 ---
 title: "How to: Raise and Consume Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +11,8 @@ helpviewer_keywords:
   - "raising events"
   - "events [.NET Framework], samples"
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Raise and Consume Events
 The examples in this topic show how to work with events. They include examples of the <xref:System.EventHandler> delegate, the <xref:System.EventHandler%601> delegate, and a custom delegate, to illustrate events with and without data.  
@@ -49,5 +38,6 @@ The examples in this topic show how to work with events. They include examples o
  [!code-csharp[EventsOverview#7](../../../samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programwithdelegate.cs#7)]
  [!code-vb[EventsOverview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1withdelegate.vb#7)]  
   
-## See Also  
- [Events](../../../docs/standard/events/index.md)
+## See also
+
+- [Events](../../../docs/standard/events/index.md)

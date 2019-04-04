@@ -1,12 +1,8 @@
 ---
-title: "Classes and Structs (C# Programming Guide)"
+title: "Classes and Structs - C# Programming Guide"
+ms.custom: seodec18
 description: Describes the use of classes and structures (structs) in C#.
-keywords: classes (C#), structs (C#), structures (structs) (C#), reference types (C#), value types (C#)
 ms.date: 01/17/2016
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "structs [C#], about structs"
   - "classes [C#], overview"
@@ -15,9 +11,6 @@ helpviewer_keywords:
   - "objects [C#]"
   - "C# language, classes"
 ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
-caps.latest.revision: 48
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Classes and Structs (C# Programming Guide)
 Classes and structs are two of the basic constructs of the common type system in the .NET Framework. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class or struct, and they include its methods, properties, and events, and so on, as listed later in this topic.  
@@ -103,5 +96,6 @@ Classes and structs are two of the basic constructs of the common type system in
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

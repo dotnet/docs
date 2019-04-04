@@ -1,24 +1,10 @@
 ---
 title: "Merging Menu Items in the Windows Forms MenuStrip Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MenuStrip [Windows Forms], merging"
   - "merging [Windows Forms], general concepts"
 ms.assetid: 95e113ba-f362-4dda-8a76-6d95ddc45cee
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Merging Menu Items in the Windows Forms MenuStrip Control
 If you have a multiple-document interface (MDI) application, you can merge menu items or whole menus from the child form into the menus of the parent form.  
@@ -61,9 +47,9 @@ If you have a multiple-document interface (MDI) application, you can merge menu 
   
  You can trigger automatic merging by activating the <xref:System.Windows.Forms.MenuStrip> on the MDI source. Upon activation, the source <xref:System.Windows.Forms.MenuStrip> is merged into the MDI target. When a new form becomes active, the merge is reverted on the last form and triggered on the new form. You can control this behavior by setting the <xref:System.Windows.Forms.ToolStripItem.MergeAction%2A> property as needed on each <xref:System.Windows.Forms.ToolStripItem>, and by setting the <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A> property on each <xref:System.Windows.Forms.MenuStrip>.  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStripManager>  
- <xref:System.Windows.Forms.MenuStrip>  
- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)  
- [How to: Create an MDI Window List with MenuStrip](../../../../docs/framework/winforms/controls/how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md)  
- [How to: Set Up Automatic Menu Merging for MDI Applications](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)
+## See also
+- <xref:System.Windows.Forms.ToolStripManager>
+- <xref:System.Windows.Forms.MenuStrip>
+- [MenuStrip Control](menustrip-control-windows-forms.md)
+- [How to: Create an MDI Window List with MenuStrip](how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md)
+- [How to: Set Up Automatic Menu Merging for MDI Applications](how-to-set-up-automatic-menu-merging-for-mdi-applications.md)

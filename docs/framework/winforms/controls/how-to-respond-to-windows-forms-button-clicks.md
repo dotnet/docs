@@ -1,14 +1,6 @@
 ---
 title: "How to: Respond to Windows Forms Button Clicks"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
   - "Click event [Windows Forms], responding to"
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Respond to Windows Forms Button Clicks
 The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control is to run some code when the button is clicked.  
@@ -39,7 +25,7 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
   
 ### To respond to a button click  
   
--   In the button's `Click` <xref:System.EventHandler> write the code to run. `Button1_Click` must be bound to the control. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../../../../docs/framework/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
+-   In the button's `Click` <xref:System.EventHandler> write the code to run. `Button1_Click` must be bound to the control. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -63,7 +49,7 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
        }  
     ```  
   
-## See Also  
- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
- [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  
- [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)
+## See also
+- [Button Control Overview](button-control-overview-windows-forms.md)
+- [Ways to Select a Windows Forms Button Control](ways-to-select-a-windows-forms-button-control.md)
+- [Button Control](button-control-windows-forms.md)

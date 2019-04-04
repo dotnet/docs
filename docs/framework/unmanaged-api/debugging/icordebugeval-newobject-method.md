@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugEval::NewObject Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEval.NewObject"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ce3025e8-defa-4c5e-8298-f49d71fa5736
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugEval::NewObject Method
 Allocates a new object instance and calls the specified constructor method.  
@@ -45,7 +33,7 @@ HRESULT NewObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConstructor`  
  [in] The constructor to be called.  
   
@@ -64,5 +52,5 @@ HRESULT NewObject (
   
  **.NET Framework Versions:** 1.1, 1.0  
   
-## See Also  
- [NewParameterizedObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)
+## See also
+- [NewParameterizedObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)

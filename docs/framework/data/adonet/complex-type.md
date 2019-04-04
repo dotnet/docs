@@ -1,21 +1,7 @@
 ---
 title: "complex type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 63efbd23-11d4-4871-bc88-ad01b9837553
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # complex type
 A *complex type* is a template for defining rich, structured properties on [entity types](../../../../docs/framework/data/adonet/entity-type.md) or on other complex types. Each template contains the following:  
@@ -45,6 +31,6 @@ A *complex type* is a template for defining rich, structured properties on [enti
   
  [!code-xml[EDM_Example_Model#EntityWithComplexType](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#entitywithcomplextype)]  
   
-## See Also  
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+## See also
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

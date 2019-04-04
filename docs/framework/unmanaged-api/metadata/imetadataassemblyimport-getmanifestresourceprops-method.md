@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::GetManifestResourceProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.GetManifestResourceProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 00be4789-ac63-4397-b2ec-1629a5c5a585
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetManifestResourceProps Method
 Gets the set of properties of the manifest resource with the specified metadata signature.  
@@ -47,7 +35,7 @@ HRESULT GetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdmr`  
  [in] An `mdManifestResource` token that represents the resource for which to get the properties.  
   
@@ -78,5 +66,5 @@ HRESULT GetManifestResourceProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

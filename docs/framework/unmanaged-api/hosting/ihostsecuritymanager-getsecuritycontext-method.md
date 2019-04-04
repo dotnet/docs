@@ -1,14 +1,6 @@
 ---
 title: "IHostSecurityManager::GetSecurityContext Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostSecurityManager.GetSecurityContext"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostSecurityManager::GetSecurityContext Method
 Gets the requested [IHostSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md) from the host.  
@@ -42,7 +30,7 @@ HRESULT GetSecurityContext (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `eContextType`  
  [in] One of the [EContextType](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md) values, indicating what type of security context to return.  
   
@@ -72,7 +60,7 @@ HRESULT GetSecurityContext (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [EContextType Enumeration](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md)  
- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)  
- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+## See also
+- [EContextType Enumeration](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md)
+- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
+- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)

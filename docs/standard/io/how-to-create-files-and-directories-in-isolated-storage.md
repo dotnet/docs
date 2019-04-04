@@ -1,13 +1,7 @@
 ---
 title: "How to: Create Files and Directories in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "stores, creating files and directories"
   - "storing data using isolated storage, creating files and directories"
 ms.assetid: 2ca4d2a4-809b-4f00-bc08-bf4a64d3a5c3
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Create Files and Directories in Isolated Storage
 After you have obtained an isolated store, you can create directories and files for storing data. Within a store, file and directory names are specified with respect to the root of the virtual file system.  
@@ -43,7 +32,8 @@ After you have obtained an isolated store, you can create directories and files 
  [!code-csharp[Conceptual.IsolatedStorage#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source.cs#1)]
  [!code-vb[Conceptual.IsolatedStorage#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source.vb#1)]  
   
-## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+## See also
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

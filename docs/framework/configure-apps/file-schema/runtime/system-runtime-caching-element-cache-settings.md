@@ -1,27 +1,15 @@
 ---
-title: "&lt;system.runtime.caching&gt; Element (Cache Settings)"
-ms.custom: ""
+title: "<system.runtime.caching> Element (Cache Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<system.runtime.caching> element"
   - "caching [.NET Framework], configuration"
   - "system.runtime.caching element"
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;system.runtime.caching&gt; Element (Cache Settings)
+# \<system.runtime.caching> Element (Cache Settings)
 Provides configuration for the default in-memory <xref:System.Runtime.Caching.ObjectCache> implementation through the `memoryCache` entry in the configuration file.  
   
  \<configuration>  
@@ -71,7 +59,7 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
       <namedCaches>  
           <add name="default"   
                cacheMemoryLimitMegabytes="0"   
-               physicalMemoryPercentage="0"  
+               physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  
     </memoryCache>  
@@ -79,5 +67,5 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
 </configuration>  
 ```  
   
-## See Also  
- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+## See also
+- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

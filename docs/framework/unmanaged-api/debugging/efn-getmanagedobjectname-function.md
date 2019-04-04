@@ -1,14 +1,6 @@
 ---
 title: "_EFN_GetManagedObjectName Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "_EFN_GetManagedObjectName"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 6e7c6bee-7ced-495f-bf6c-2a5f0c716f7e
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # _EFN_GetManagedObjectName Function
 Gets the name of a type using the provided managed object pointer.  
@@ -43,7 +31,7 @@ HRESULT _EFN_GetManagedObjectName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] A pointer to the debug client.  
   
@@ -66,5 +54,5 @@ HRESULT _EFN_GetManagedObjectName(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+## See also
+- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

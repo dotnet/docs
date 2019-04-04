@@ -1,21 +1,7 @@
 ---
 title: "How to: Import Custom WSDL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ddc3718d-ce60-44f6-92af-a5c67477dd99
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Import Custom WSDL
 This topic describes how to import custom WSDL. To handle the custom WSDL, you must implement the <xref:System.ServiceModel.Description.IWsdlImportExtension> interface.  
@@ -85,7 +71,7 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
     WsdlImporter importer = new WsdlImporter(metaDocs);          System.Collections.ObjectModel.Collection<ContractDescription> contracts  = importer.ImportAllContracts();  
     ```  
   
-## See Also  
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)  
- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)
+## See also
+- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)
+- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)

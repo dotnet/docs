@@ -1,13 +1,6 @@
 ---
 title: "Implicit and Explicit Conversions (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "conversions [Visual Basic], type"
   - "variables [Visual Basic], changing data type"
@@ -27,12 +20,9 @@ helpviewer_keywords:
   - "data type conversion [Visual Basic], implicit"
   - "implicit data type conversions [Visual Basic]"
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Implicit and Explicit Conversions (Visual Basic)
-An *implicit conversion* does not require any special syntax in the source code. In the following example, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  
+An *implicit conversion* does not require any special syntax in the source code. In the following example, Visual Basic implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  
   
 ```  
 Dim k As Integer  
@@ -42,7 +32,7 @@ k = 432
 q = k  
 ```  
   
- An *explicit conversion* uses a type conversion keyword. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several such keywords, which coerce an expression in parentheses to the desired data type. These keywords act like functions, but the compiler generates the code inline, so execution is slightly faster than with a function call.  
+ An *explicit conversion* uses a type conversion keyword. Visual Basic provides several such keywords, which coerce an expression in parentheses to the desired data type. These keywords act like functions, but the compiler generates the code inline, so execution is slightly faster than with a function call.  
   
  In the following extension of the preceding example, the `CInt` keyword converts the value of `q` back to an integer before assigning it to `k`.  
   
@@ -133,11 +123,12 @@ End If
   
  Performing an explicit conversion is also known as *casting* an expression to a given data type or object class.  
   
-## See Also  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
- [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+## See also
+
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)
+- [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)
+- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)

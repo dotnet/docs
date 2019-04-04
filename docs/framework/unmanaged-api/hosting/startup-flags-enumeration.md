@@ -1,14 +1,6 @@
 ---
 title: "STARTUP_FLAGS Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "STARTUP_FLAGS"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
 topic_type: 
   - "apiref"
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # STARTUP_FLAGS Enumeration
 Contains values that indicate the startup behavior of the common language runtime (CLR). By default, garbage collection is non-concurrent, and only the base class library is loaded into the domain-neutral area.  
@@ -63,7 +51,7 @@ typedef enum {
   
 |Member|Description|  
 |------------|-----------------|  
-|`STARTUP_CONCURRENT_GC`|Specifies that concurrent garbage collection should be used. If the caller asks for the server build and concurrent garbage collection on a single-processor machine, the workstation build and non-concurrent garbage collection are run instead. **Note:**  Concurrent garbage collection is not supported in applications that are running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](http://msdn.microsoft.com/library/windows/desktop/aa384249.aspx).|  
+|`STARTUP_CONCURRENT_GC`|Specifies that concurrent garbage collection should be used. If the caller asks for the server build and concurrent garbage collection on a single-processor machine, the workstation build and non-concurrent garbage collection are run instead. **Note:**  Concurrent garbage collection is not supported in applications that are running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications).|  
 |`STARTUP_LOADER_OPTIMIZATION_MASK`|Specifies that loader optimization shall occur.|  
 |`STARTUP_LOADER_OPTIMIZATION_SINGLE_DOMAIN`|Specifies that no assemblies are loaded as domain-neutral.|  
 |`STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN`|Specifies that all assemblies are loaded as domain-neutral.|  
@@ -89,5 +77,5 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

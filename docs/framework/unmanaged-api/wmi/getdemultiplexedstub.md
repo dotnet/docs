@@ -2,10 +2,6 @@
 title: GetDemultiplexedStub function (Unmanaged API Reference)
 description: The GetDemultiplexedStub function creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetDemultiplexedStub"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetDemultiplexedStub function
 Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.
@@ -42,7 +35,7 @@ HRESULT GetDemultiplexedStub (
 ## Parameters
 
 `pObject`  
-[in] A pointer to the client's in-process implementation of [IWbemObjectSink](https://msdn.microsoft.com/library/aa391787(v=vs.85).aspx).
+[in] A pointer to the client's in-process implementation of [IWbemObjectSink](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectsink).
 
 `isLocal`  
 [in] A flag that indicates whether the event is local (`true`); otherwise, `false`.
@@ -63,5 +56,5 @@ If the function fails, the return value is a non-zero error code. To get extende
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

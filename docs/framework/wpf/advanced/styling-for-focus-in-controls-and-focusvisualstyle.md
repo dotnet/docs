@@ -1,25 +1,11 @@
 ---
 title: "Styling for Focus in Controls, and FocusVisualStyle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "keyboard focus [WPF]"
   - "focus [WPF], visual styling"
   - "styles [WPF], focus visual style"
 ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Styling for Focus in Controls, and FocusVisualStyle
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides two parallel mechanisms for changing the visual appearance of a control when it receives keyboard focus. The first mechanism is to use property setters for properties such as <xref:System.Windows.UIElement.IsKeyboardFocused%2A> within the style or template that is applied to the control. The second mechanism is to provide a separate style as the value of the <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A> property; the "focus visual style" creates a separate visual tree for an adorner that draws on top of the control, rather than changing the visual tree of the control or other UI element by replacing it. This topic discusses the scenarios where each of these mechanisms is appropriate.  
@@ -33,13 +19,13 @@ ms.workload:
   
 <a name="Default"></a>   
 ## Default Focus Visual Style Behavior  
- Focus visual styles act only when the focus action was initiated by the keyboard. Any mouse action or programmatic focus change disables the mode for focus visual styles. For more information about the distinctions between focus modes, see [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md).  
+ Focus visual styles act only when the focus action was initiated by the keyboard. Any mouse action or programmatic focus change disables the mode for focus visual styles. For more information about the distinctions between focus modes, see [Focus Overview](focus-overview.md).  
   
  The themes for controls include a default focus visual style behavior that becomes the focus visual style for all controls in the theme. This theme style is identified by the value of the static key <xref:System.Windows.SystemParameters.FocusVisualStyleKey%2A>. When you declare your own focus visual style at the application level, you replace this default style behavior from the themes. Alternatively, if you define the entire theme, then you should use this same key to define the style for the default behavior for your entire theme.  
   
  In the themes, the default focus visual style is generally very simple. The following is a rough approximation:  
   
-```  
+```xaml  
 <Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}">  
   <Setter Property="Control.Template">  
     <Setter.Value>  
@@ -60,7 +46,7 @@ ms.workload:
   
  Setting <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A> on individual control styles that are not part of a theme is not the intended usage of focus visual styles. This is because an inconsistent visual behavior between controls can lead to a confusing user experience regarding keyboard focus. If you are intending control-specific behaviors for keyboard focus that are deliberately not coherent across a theme, a much better approach is to use triggers in styles for individual input state properties, such as <xref:System.Windows.UIElement.IsFocused%2A> or <xref:System.Windows.UIElement.IsKeyboardFocused%2A>.  
   
- Focus visual styles act exclusively for keyboard focus. As such, focus visual styles are a type of accessibility feature. If you want UI changes for any type of focus, whether via mouse, keyboard, or programmatically, then you should not use focus visual styles, and should instead use setters and triggers in styles or templates that are working from the value of general focus properties such as `IsFocused` or `IsFocusWithin`.  
+ Focus visual styles act exclusively for keyboard focus. As such, focus visual styles are a type of accessibility feature. If you want UI changes for any type of focus, whether via mouse, keyboard, or programmatically, then you should not use focus visual styles, and should instead use setters and triggers in styles or templates that are working from the value of general focus properties such as <xref:System.Windows.UIElement.IsFocused%2A> or <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A>.  
   
 <a name="How"></a>   
 ## How to Create a Focus Visual Style  
@@ -72,7 +58,7 @@ ms.workload:
 ## Alternatives to Using a Focus Visual Style  
  For situations where using a focus visual style is not appropriate, either because you are only styling single controls or because you want greater control over the control template, there are many other accessible properties and techniques that can create visual behavior in response to changes in focus.  
   
- Triggers, setters, and event setters are all discussed in detail in [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md). Routed event handling is discussed in [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).  
+ Triggers, setters, and event setters are all discussed in detail in [Styling and Templating](../controls/styling-and-templating.md). Routed event handling is discussed in [Routed Events Overview](routed-events-overview.md).  
   
 ### IsKeyboardFocused  
  If you are specifically interested in keyboard focus, the <xref:System.Windows.UIElement.IsKeyboardFocused%2A> dependency property can be used for a property <xref:System.Windows.Trigger>. A property trigger in either a style or template is a more appropriate technique for defining a keyboard focus behavior that is very specifically for a single control, and which might not visually match the keyboard focus behavior for other controls.  
@@ -84,8 +70,8 @@ ms.workload:
 ### Other Focus Properties  
  If you want all possible causes of changing focus to produce a visual behavior, you should base a setter or trigger on the <xref:System.Windows.UIElement.IsFocused%2A> dependency property, or alternatively on the <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus> events used for an <xref:System.Windows.EventSetter>.  
   
-## See Also  
- <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md)  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+## See also
+- <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>
+- [Styling and Templating](../controls/styling-and-templating.md)
+- [Focus Overview](focus-overview.md)
+- [Input Overview](input-overview.md)

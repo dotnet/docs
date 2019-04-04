@@ -1,19 +1,7 @@
 ---
 title: "Retrieving the Paragraphs and Their Styles (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Retrieving the Paragraphs and Their Styles (Visual Basic)
 In this example, we write a query that retrieves the paragraph nodes from a WordprocessingML document. It also identifies the style of each paragraph.  
@@ -140,5 +128,6 @@ StyleName:Code
 ## Next Steps  
  In the next topic, [Retrieving the Text of the Paragraphs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md), you'll create a query to retrieve the text of paragraphs.  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

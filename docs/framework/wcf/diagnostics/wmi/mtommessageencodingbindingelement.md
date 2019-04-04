@@ -1,28 +1,14 @@
 ---
 title: "MtomMessageEncodingBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4a9c6c3d-e561-4b2d-a693-7e84bdd3534a
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # MtomMessageEncodingBindingElement
 MtomMessageEncodingBindingElement  
   
 ## Syntax  
   
-```  
+```csharp
 class MtomMessageEncodingBindingElement : MessageEncodingBindingElement  
 {  
   string Encoding;  
@@ -72,5 +58,5 @@ class MtomMessageEncodingBindingElement : MessageEncodingBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>

@@ -1,28 +1,14 @@
 ---
 title: "UI Automation Providers Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UI Automation, providers"
   - "providers, UI Automation"
 ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
-caps.latest.revision: 38
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Providers Overview
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  UI Automation providers enable controls to communicate with UI Automation client applications. In general, each control or other distinct element in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] is represented by a provider. The provider exposes information about the element and optionally implements control patterns that enable the client application to interact with the control.  
   
@@ -35,12 +21,12 @@ ms.workload:
  UI Automation providers fall into two categories: client-side providers and server-side providers.  
   
 ### Client-side providers  
- Client-side providers are implemented by UI Automation clients to communicate with an application that does not support, or does not fully support, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]. Client-side providers usually communicate with the server across the process boundary by sending and receiving [!INCLUDE[TLA2#tla_win](../../../includes/tla2sharptla-win-md.md)] messages.  
+ Client-side providers are implemented by UI Automation clients to communicate with an application that does not support, or does not fully support, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]. Client-side providers usually communicate with the server across the process boundary by sending and receiving Windows messages.  
   
- Because UI Automation providers for controls in [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA2#tla_winforms](../../../includes/tla2sharptla-winforms-md.md)], or [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications are supplied as part of the operating system, client applications seldom have to implement their own providers, and this overview does not cover them further.  
+ Because UI Automation providers for controls in [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], Windows Forms, or [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications are supplied as part of the operating system, client applications seldom have to implement their own providers, and this overview does not cover them further.  
   
 ### Server-side providers  
- Server-side providers are implemented by custom controls or by applications that are based on a UI framework other than [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA2#tla_winforms](../../../includes/tla2sharptla-winforms-md.md)], or [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+ Server-side providers are implemented by custom controls or by applications that are based on a UI framework other than [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], Windows Forms, or [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
   
  Server-side providers communicate with client applications across the process boundary by exposing interfaces to the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core system, which in turn serves requests from clients.  
   
@@ -84,5 +70,5 @@ ms.workload:
   
  The host of a fragment plays an important role in providing [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] services. It enables navigation to the fragment root, and supplies some default properties so that the custom provider does not have to implement them.  
   
-## See Also  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

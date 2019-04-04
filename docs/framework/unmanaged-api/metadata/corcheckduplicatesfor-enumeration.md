@@ -1,14 +1,6 @@
 ---
 title: "CorCheckDuplicatesFor Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorCheckDuplicatesFor"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorCheckDuplicatesFor Enumeration
 Specifies the metadata tokens that will be checked for duplicates.  
@@ -111,5 +99,5 @@ typedef enum CorCheckDuplicatesFor {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

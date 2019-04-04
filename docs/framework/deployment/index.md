@@ -1,14 +1,6 @@
 ---
 title: "Deploying the .NET Framework and Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], packaging"
   - "deploying applications [.NET Framework]"
@@ -17,12 +9,8 @@ helpviewer_keywords:
   - ".NET Framework, deploying"
   - ".NET Framework application deployment"
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
-caps.latest.revision: 56
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Deploying the .NET Framework and Applications
 This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework](~/docs/framework/install/index.md).  
@@ -64,13 +52,13 @@ This article helps you get started deploying the .NET Framework with your applic
   
 -   Deploying the .NET Framework (for OEMs and administrators):  
   
-    -   [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkId=254976)  
+    -   [Windows Assessment and Deployment Kit (ADK)](https://go.microsoft.com/fwlink/p/?LinkId=254976)  
   
     -   [Administrator's guide](../../../docs/framework/deployment/guide-for-administrators.md)  
   
  **Servicing**  
   
--   For general information, see the [.NET Framework blog](http://go.microsoft.com/fwlink/p/?LinkId=254977)  
+-   For general information, see the [.NET Framework blog](https://go.microsoft.com/fwlink/p/?LinkId=254977)  
   
 -   [Detecting versions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)  
   
@@ -172,5 +160,5 @@ This article helps you get started deploying the .NET Framework with your applic
 |[Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)|Explains how to ship and install interop applications, which typically include a .NET Framework client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components.|  
 |[How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)|Describes how to silently launch and track the .NET Framework setup process while showing your own view of the setup progress.|  
   
-## See Also  
- [Development Guide](../../../docs/framework/development-guide.md)
+## See also
+- [Development Guide](../../../docs/framework/development-guide.md)

@@ -1,14 +1,6 @@
 ---
-title: "&lt;connectionManagement&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<connectionManagement> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#connectionManagement"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "<connectionManagement> element"
   - "connectionManagement element"
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
-caps.latest.revision: 14
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;connectionManagement&gt; Element (Network Settings)
+# \<connectionManagement> Element (Network Settings)
 Specifies the maximum number of connections to a network host.  
   
  \<configuration>  
@@ -64,7 +50,7 @@ Specifies the maximum number of connections to a network host.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following example configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
+ The following example configures an application to use four connections to the server `www.contoso.com` and two connections to all other servers.  
   
 ```xml  
 <configuration>  
@@ -77,7 +63,7 @@ Specifies the maximum number of connections to a network host.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.ServicePoint>
+- <xref:System.Net.ServicePointManager>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

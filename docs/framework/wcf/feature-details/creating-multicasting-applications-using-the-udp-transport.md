@@ -1,21 +1,7 @@
 ---
 title: "Creating Multicasting Applications using the UDP Transport"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7485154a-6e85-4a67-a9d4-9008e741d4df
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating Multicasting Applications using the UDP Transport
 Multicasting applications send small messages to a large number of recipients at the same time without the need to establish point to point connections. The emphasis of such applications is speed over reliability. In other words, it is more important to send timely data than to ensure any specific message is actually received. WCF now supports writing multicasting applications using the <xref:System.ServiceModel.UdpBinding>. This transport is useful in scenarios where a service needs to send out small messages to a number of clients simultaneously. A stock ticker application is an example of such a service.  
@@ -23,7 +9,7 @@ Multicasting applications send small messages to a large number of recipients at
 ## Implementing a Multicast Application  
  To implement a multicast application, define a service contract and for each software component that needs to respond to the multicast messages, implement the service contract. For example, a stock ticker application might define a service contract:  
   
-```  
+```csharp
 // Shared contracts between the client and the service  
 [ServiceContract]
 interface IStockTicker
@@ -51,7 +37,7 @@ class StockInfo
   
  Each application that wants to receive multicast messages must host a service that exposes this interface.  For example, here is a code sample that illustrates how to receive multicast messages:  
   
-```  
+```csharp
 // Service Address
 string serviceAddress = "soap.udp://224.0.0.1:40000";
 // Binding
@@ -71,7 +57,7 @@ Console.ReadLine();
   
  In this type of a scenario it is the client that actually sends out multicast messages. Each service that is listening at the correct UDP address will receive the multicast messages. Here is an example of a client that sends out multicast messages:  
   
-```  
+```csharp
 // Multicast Address
 string serviceAddress = "soap.udp://224.0.0.1:40000";
 
@@ -90,7 +76,7 @@ while (true)
 {
     // This will continue to mulicast stock information
     proxy.SendStockInfo(GetStockInfo());
-    Console.WriteLine(String.Format("sent stock info at {0}", DateTime.Now));
+    Console.WriteLine($"sent stock info at {DateTime.Now}");
     // Wait for one second before sending another update
     System.Threading.Thread.Sleep(new TimeSpan(0, 0, 1));
 }
@@ -99,12 +85,12 @@ while (true)
  This code generates stock information and then uses the service contract IStockTicker to send multicast messages to call services listening on the correct UDP address.  
   
 ### UDP and Reliable Messaging  
- The UDP binding does not support reliable messaging because of the lightweight nature of the UDP protocol. If you need to confirm that messages are received by a remote endpoint, use a transport that supports reliable messaging like  HTTP or TCP. For more information about reliable messaging see http://go.microsoft.com/fwlink/?LinkId=231830  
+ The UDP binding does not support reliable messaging because of the lightweight nature of the UDP protocol. If you need to confirm that messages are received by a remote endpoint, use a transport that supports reliable messaging like  HTTP or TCP. For more information about reliable messaging see https://go.microsoft.com/fwlink/?LinkId=231830  
   
 ### Two-way Multicast Messaging  
  While multicast messages are generally one-way, the UdpBinding does support request/reply message exchange. Messages sent using the UDP transport contain both a From and To address. Care must be taken when using the From address as it could be maliciously changed en-route.  The address can be checked using the following code:  
   
-```  
+```csharp
 if (address.AddressFamily == AddressFamily.InterNetwork)
 {
     // IPv4

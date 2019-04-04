@@ -1,14 +1,6 @@
 ---
-title: "&lt;clear&gt; Element for webRequestModules (Network Settings)"
-ms.custom: ""
+title: "<clear> Element for webRequestModules (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/clear"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#clear"
@@ -18,14 +10,8 @@ helpviewer_keywords:
   - "webRequestModules, clear element"
   - "clear element, webRequestModules"
 ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
-caps.latest.revision: 13
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;clear&gt; Element for webRequestModules (Network Settings)
+# \<clear> Element for webRequestModules (Network Settings)
 Removes all registered Web request modules from the application.  
   
  \<configuration>  
@@ -77,6 +63,6 @@ Removes all registered Web request modules from the application.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.WebRequest>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.WebRequest>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

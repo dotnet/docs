@@ -1,18 +1,7 @@
 ---
 title: "Join Operations (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Join Operations (Visual Basic)
 A *join* of two data sources is the association of objects in one data source with objects that share a common attribute in another data source.  
@@ -23,7 +12,7 @@ A *join* of two data sources is the association of objects in one data source wi
   
  The following illustration shows a conceptual view of two sets and the elements within those sets that are included in either an inner join or a left outer join.  
   
- ![Two overlapping circles showing inner&#47;outer.](../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "JoinCircles")  
+ ![Two overlapping circles showing inner&#47;outer.](./media/join-operations/join-method-overlapping-circles.png)  
   
 ## Methods  
   
@@ -32,11 +21,12 @@ A *join* of two data sources is the association of objects in one data source wi
 |Join|Joins two sequences based on key selector functions and extracts pairs of values.|`From x In …, y In … Where x.a = y.a`<br /><br /> -or-<br /><br /> `Join … [As …]In … On …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|  
 |GroupJoin|Joins two sequences based on key selector functions and groups the resulting matches for each element.|`Group Join … In … On …`|<xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=nameWithType>|  
   
-## See Also  
- <xref:System.Linq>  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Formulate Joins and Cross-Product Queries](http://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)  
- [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)  
- [How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)  
- [How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
+## See also
+
+- <xref:System.Linq>
+- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Formulate Joins and Cross-Product Queries](../../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
+- [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)
+- [How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)
+- [How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)

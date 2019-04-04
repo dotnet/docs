@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess::WriteMemory Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess.WriteMemory"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d5c07d86-045d-4391-893b-0bcd2959f90e
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess::WriteMemory Method
 Writes data to an area of memory in this process.  
@@ -43,7 +31,7 @@ HRESULT WriteMemory(
     [out] SIZE_T *written);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that is the base address of the memory area to which data is written. Before data transfer occurs, the system verifies that the memory area of the specified size, beginning at the base address, is accessible for writing. If it is not accessible, the method fails.  
   

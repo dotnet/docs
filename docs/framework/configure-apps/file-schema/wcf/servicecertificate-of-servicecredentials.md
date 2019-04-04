@@ -1,23 +1,9 @@
 ---
-title: "&lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;"
-ms.custom: ""
+title: "<serviceCertificate> of <serviceCredentials>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;
+# \<serviceCertificate> of \<serviceCredentials>
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  
   
  \<system.ServiceModel>  
@@ -30,11 +16,10 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 ## Syntax  
   
 ```xml  
-<serviceCertificate findValue="String"   
-    storeLocation="LocalMachine/CurrentUser"  
-    storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"  
-/>  
+<serviceCertificate findValue="String"
+                    storeLocation="LocalMachine/CurrentUser"
+                    storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                    x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />
 ```  
   
 ## Attributes and Elements  
@@ -61,12 +46,12 @@ x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/
 ## Remarks  
  Use this element to specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode. If you are using a certificate that will be periodically renewed, then its thumbprint will change. In that case, use the subject name as the `x509FindType` because the certificate can be reissued with the same subject name.  
   
- [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] using the element, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ For more information about using the element, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>  
- <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>  
- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
+- <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>
+- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

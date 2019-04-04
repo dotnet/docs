@@ -1,18 +1,7 @@
 ---
 title: "Query Expression Syntax for Standard Query Operators (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Query Expression Syntax for Standard Query Operators (Visual Basic)
 Some of the more frequently used standard query operators have dedicated Visual Basic language keyword syntax that enables them to be called as part of a *query expression*. A query expression is a different, more readable form of expressing a query than its *method-based*  equivalent. Query expression clauses are translated into calls to the query methods at compile time.  
@@ -47,8 +36,9 @@ Some of the more frequently used standard query operators have dedicated Visual 
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`Order By …, … Descending`<br /><br /> (For more information, see [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (For more information, see [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md).)|  
   
-## See Also  
- <xref:System.Linq.Enumerable>  
- <xref:System.Linq.Queryable>  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Classification of Standard Query Operators by Manner of Execution (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
+## See also
+
+- <xref:System.Linq.Enumerable>
+- <xref:System.Linq.Queryable>
+- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Classification of Standard Query Operators by Manner of Execution (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)

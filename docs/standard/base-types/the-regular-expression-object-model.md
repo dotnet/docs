@@ -1,13 +1,7 @@
 ---
 title: "The Regular Expression Object Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -41,13 +35,8 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, classes"
   - "GroupCollection class"
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  
@@ -174,7 +163,7 @@ ms.workload:
 ### The Match Collection  
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains <xref:System.Text.RegularExpressions.Match> objects that represent all the matches that the regular expression engine found, in the order in which they occur in the input string. If there are no matches, the method returns a <xref:System.Text.RegularExpressions.MatchCollection> object with no members. The <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> property lets you access individual members of the collection by index, from zero to one less than the value of the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> property. <xref:System.Text.RegularExpressions.MatchCollection.Item%2A> is the collection's indexer (in C#) and default property (in Visual Basic).  
   
- By default, the call to the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method uses lazy evaluation to populate the <xref:System.Text.RegularExpressions.MatchCollection> object. Access to properties that require a fully populated collection, such as the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> properties, may involve a performance penalty. As a result, we recommend that you access the collection by using the <xref:System.Collections.IEnumerator> object that is returned by the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A?displayProperty=nameWithType> method. Individual languages provide constructs, such as `For``Each` in Visual Basic and `foreach` in C#, that wrap the collection's <xref:System.Collections.IEnumerator> interface.  
+ By default, the call to the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method uses lazy evaluation to populate the <xref:System.Text.RegularExpressions.MatchCollection> object. Access to properties that require a fully populated collection, such as the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> properties, may involve a performance penalty. As a result, we recommend that you access the collection by using the <xref:System.Collections.IEnumerator> object that is returned by the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A?displayProperty=nameWithType> method. Individual languages provide constructs, such as `For Each` in Visual Basic and `foreach` in C#, that wrap the collection's <xref:System.Collections.IEnumerator> interface.  
   
  The following example uses the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%29?displayProperty=nameWithType> method to populate a <xref:System.Text.RegularExpressions.MatchCollection> object with all the matches found in an input string. The example enumerates the collection, copies the matches to a string array, and records the character positions in an integer array.  
   
@@ -268,7 +257,7 @@ ms.workload:
   
 <a name="the_captured_group"></a>   
 ## The Captured Group  
- The <xref:System.Text.RegularExpressions.Group> class represents the result from a single capturing group. Group objects that represent the capturing groups defined in a regular expression are returned by the <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property of the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property is the indexer (in C#) and the default property (in Visual Basic) of the <xref:System.Text.RegularExpressions.Group> class. You can also retrieve individual members by iterating the collection using the `foreach` or `For``Each` construct. For an example, see the previous section.  
+ The <xref:System.Text.RegularExpressions.Group> class represents the result from a single capturing group. Group objects that represent the capturing groups defined in a regular expression are returned by the <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property of the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property is the indexer (in C#) and the default property (in Visual Basic) of the <xref:System.Text.RegularExpressions.Group> class. You can also retrieve individual members by iterating the collection using the `foreach` or `For Each` construct. For an example, see the previous section.  
   
  The following example uses nested grouping constructs to capture substrings into groups. The regular expression pattern `(a(b))c` matches the string "abc". It assigns the substring "ab" to the first capturing group, and the substring "b" to the second capturing group.  
   
@@ -317,7 +306,7 @@ ms.workload:
 ## The Capture Collection  
  The <xref:System.Text.RegularExpressions.Group> object contains information only about the last capture. However, the entire set of captures made by a capturing group is still available from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property. Each member of the collection is a <xref:System.Text.RegularExpressions.Capture> object that represents a capture made by that capturing group, in the order in which they were captured (and, therefore, in the order in which the captured strings were matched from left to right in the input string). You can retrieve individual <xref:System.Text.RegularExpressions.Capture> objects from the collection in either of two ways:  
   
--   By iterating through the collection using a construct such as `foreach` (in C#) or `For``Each` (in Visual Basic).  
+-   By iterating through the collection using a construct such as `foreach` (in C#) or `For Each` (in Visual Basic).  
   
 -   By using the <xref:System.Text.RegularExpressions.CaptureCollection.Item%2A?displayProperty=nameWithType> property to retrieve a specific object by index. The <xref:System.Text.RegularExpressions.CaptureCollection.Item%2A> property is the <xref:System.Text.RegularExpressions.CaptureCollection> object's default property (in Visual Basic) or indexer (in C#).  
   
@@ -356,7 +345,8 @@ ms.workload:
 |`;`|Match a semicolon.|  
 |`((\w+(\s\w+)*),(\d+);)+`|Match the pattern of a word followed by any additional words followed by a comma, one or more digits, and a semicolon, one or more times. This is the first capturing group.|  
   
-## See Also  
- <xref:System.Text.RegularExpressions>  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- <xref:System.Text.RegularExpressions>
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

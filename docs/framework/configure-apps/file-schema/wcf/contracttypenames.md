@@ -1,24 +1,10 @@
 ---
-title: "&lt;contractTypeNames&gt;"
-ms.custom: ""
+title: "<contractTypeNames>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5ec5efc6-87f8-4160-9be0-dcd2e01df3df
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;contractTypeNames&gt;
-A configuration section that specifies a list of contract type names, which are the contract names of the services being searched for, and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts will reply. Note that in [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)], an endpoint can only support one contract.  
+# \<contractTypeNames>
+A configuration section that specifies a list of contract type names, which are the contract names of the services being searched for, and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts will reply. Note that in Windows Communication Foundation (WCF), an endpoint can only support one contract.  
   
  \<system.ServiceModel>  
 \<standardEndpoints>  
@@ -26,16 +12,17 @@ A configuration section that specifies a list of contract type names, which are 
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
         <discoveryClientSettings discoveryEndpoint="String">
-          <findCriteria duration="TimeSpan" 
-                        maxResults="Integer" 
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
                         scopeMatchBy="Uri">
             <contractTypeNames>
-              <add name="String" namespace="String" />
+              <add name="String"
+                   namespace="String" />
             <contractTypeNames>
             <extensions />
             <scopes>
@@ -45,8 +32,8 @@ A configuration section that specifies a list of contract type names, which are 
         </discoveryClientSettings>
       <standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -67,7 +54,7 @@ A configuration section that specifies a list of contract type names, which are 
 |-------------|-----------------|  
 |[\<findCriteria>](../../../../../docs/framework/configure-apps/file-schema/wcf/findcriteria.md)|A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.FindCriteria>  
- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>  
- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection>
+## See also
+- <xref:System.ServiceModel.Discovery.FindCriteria>
+- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
+- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection>

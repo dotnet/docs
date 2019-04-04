@@ -2,10 +2,6 @@
 title: QualifierSet_Get function (Unmanaged API Reference)
 description: The QualifierSet_Get function gets a named qualifier.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_Get"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_Get function
 Gets the specified named qualifier.  
@@ -48,7 +41,7 @@ HRESULT QualifierSet_Get (
 [in] This parameter is unused.
 
 `ptr`   
-[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 `wszName`   
 [in] The name of the qualifier whose value is requested.
@@ -74,7 +67,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemQualifierSet::Get](https://msdn.microsoft.com/library/aa391867(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemQualifierSet::Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) method.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -83,5 +76,5 @@ This function wraps a call to the [IWbemQualifierSet::Get](https://msdn.microsof
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

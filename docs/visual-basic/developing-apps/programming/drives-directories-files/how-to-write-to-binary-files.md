@@ -1,21 +1,11 @@
 ---
 title: "How to: Write to Binary Files in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "files [Visual Basic], binary access"
   - "WriteAllBytes method [Visual Basic]"
   - "binary files [Visual Basic], writing in Visual Basic"
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Write to Binary Files in Visual Basic
 The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method writes data to a binary file. If the `append` parameter is `True`, it will append the data to the file; otherwise data in the file is overwritten.  
@@ -26,7 +16,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method write
   
 -   Use the `WriteAllBytes` method, supplying the file path and name and the bytes to be written. This example appends the data array `CustomerData` to the file named `CollectedData.dat`.  
   
-     [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-to-binary-files_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#27)]  
   
 ## Robust Programming  
  The following conditions may create an exception:  
@@ -45,6 +35,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method write
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>  
- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
+- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugCode4::EnumerateVariableHomes Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorDebugCode4.EnumerateVariableHomes"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 802c01ff-8b80-4733-b6dd-03ab6ff7fa11
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugCode4::EnumerateVariableHomes Method
 Gets an enumerator to the local variables and arguments in a function.  
@@ -41,7 +29,7 @@ HRESULT EnumerateVariableHomes(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  A pointer to the address of an [ICorDebugVariableHomeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md) interface object that is an enumerator for the local variables and arguments in a function.  
   
@@ -57,6 +45,6 @@ HRESULT EnumerateVariableHomes(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugCode4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugCode4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

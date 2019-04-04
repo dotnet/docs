@@ -1,19 +1,7 @@
 ---
 title: "1035 - RuntimeTransactionSet"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 03b37de9-778c-4beb-b0e3-de73ece6088e
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1035 - RuntimeTransactionSet
 ## Properties  

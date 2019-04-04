@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::FunctionUnloadStarted Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.FunctionUnloadStarted"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d6a5fa8b-09c6-47a5-b60e-6cf2e355df30
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::FunctionUnloadStarted Method
 Notifies the profiler that the runtime has started to unload a function.  
@@ -40,7 +28,7 @@ HRESULT FunctionUnloadStarted(
     [in] FunctionID functionId);   
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that is being unloaded.  
   
@@ -56,5 +44,5 @@ HRESULT FunctionUnloadStarted(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

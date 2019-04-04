@@ -1,12 +1,6 @@
 ---
 title: "Where Clause (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.QueryWhere"
 helpviewer_keywords: 
@@ -14,9 +8,6 @@ helpviewer_keywords:
   - "queries [Visual Basic], Where"
   - "Where clause [Visual Basic]"
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Where Clause (Visual Basic)
 Specifies the filtering condition for a query.  
@@ -41,16 +32,17 @@ Where condition
 ## Example  
  The following query expression uses a `From` clause to declare a range variable `cust` for each `Customer` object in the `customers` collection. The `Where` clause uses the range variable to restrict the output to customers from the specified region. The `For Each` loop displays the company name for each customer in the query result.  
   
- [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  
   
 ## Example  
  The following example uses `And` and `Or` logical operators in the `Where` clause.  
   
- [!code-vb[VbSimpleQuerySamples#31](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_2.vb)]  
+ [!code-vb[VbSimpleQuerySamples#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#31)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+## See also
+
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

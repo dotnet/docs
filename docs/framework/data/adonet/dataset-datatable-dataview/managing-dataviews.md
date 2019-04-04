@@ -1,24 +1,10 @@
 ---
 title: "Managing DataViews"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0b67fab5-1722-4d2b-bfc1-247a75f0f1ee
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Managing DataViews
 You can use a <xref:System.Data.DataViewManager> to manage view settings for all the tables in a <xref:System.Data.DataView>. If you have a control that you want to bind to multiple tables, such as a grid that navigates relationships, a **DataViewManager** is ideal.  
@@ -127,10 +113,10 @@ System.Windows.Forms.DataGrid grid = new System.Windows.Forms.DataGrid();
 grid.SetDataBinding(viewManager, "Customers");  
 ```  
   
-## See Also  
- <xref:System.Data.DataSet>  
- <xref:System.Data.DataViewManager>  
- <xref:System.Data.DataViewSetting>  
- <xref:System.Data.DataViewSettingCollection>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataSet>
+- <xref:System.Data.DataViewManager>
+- <xref:System.Data.DataViewSetting>
+- <xref:System.Data.DataViewSettingCollection>
+- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugFunction::GetClass Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFunction.GetClass"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 27967230-144f-40d3-9e23-961d0241abd9
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugFunction::GetClass Method
 Gets an ICorDebugClass object that represents the class this function is a member of.  
@@ -41,7 +29,7 @@ HRESULT GetClass (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClass`  
  [out] A pointer to the address of the `ICorDebugClass` object that represents the class, or null, if this function is not a member of a class.  
   

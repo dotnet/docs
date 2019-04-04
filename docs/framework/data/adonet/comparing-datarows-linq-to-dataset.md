@@ -1,24 +1,10 @@
 ---
 title: "Comparing DataRows (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8fe0eadf-297b-487c-8d4b-7816753c2883
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Comparing DataRows (LINQ to DataSet)
 [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] defines various set operators to compare source elements to see if they are equal. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] provides the following set operators:  
@@ -46,7 +32,7 @@ ms.workload:
   
  [!code-vb[DP LINQ to DataSet Examples#CompareDifferentRows](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#comparedifferentrows)]  
   
-## See Also  
- <xref:System.Data.DataRowComparer>  
- [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)  
- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)
+## See also
+- <xref:System.Data.DataRowComparer>
+- [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)
+- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)

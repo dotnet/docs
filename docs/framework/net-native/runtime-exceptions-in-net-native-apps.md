@@ -1,21 +1,9 @@
 ---
 title: "Runtime Exceptions in .NET Native Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Runtime Exceptions in .NET Native Apps
 It is important to test the release builds of your Universal Windows Platform app on their target platforms because the debug and release configurations are completely different. By default, the debug configuration uses the .NET Core runtime to compile your app, but the release configuration uses .NET Native to compile your app to native code.  
@@ -65,6 +53,6 @@ Additional information: Value does not fall within the expected range.
   
  To get the full stack, run the debug build instead.  
   
-## See Also  
- [Debugging .NET Native Windows Universal Apps](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/29/debugging-net-native-windows-universal-apps.aspx)  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
+## See also
+- [Debugging .NET Native Windows Universal Apps](https://devblogs.microsoft.com/devops/debugging-net-native-windows-universal-apps/)
+- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)

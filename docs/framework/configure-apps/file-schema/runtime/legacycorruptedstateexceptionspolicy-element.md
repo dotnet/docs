@@ -1,26 +1,14 @@
 ---
-title: "&lt;legacyCorruptedStateExceptionsPolicy&gt; Element"
-ms.custom: ""
+title: "<legacyCorruptedStateExceptionsPolicy> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<legacyCorruptedStateExceptionsPolicy> element"
   - "legacyCorruptedStateExceptionsPolicy element"
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;legacyCorruptedStateExceptionsPolicy&gt; Element
+# \<legacyCorruptedStateExceptionsPolicy> Element
 Specifies whether the common language runtime allows managed code to catch access violations and other corrupted state exceptions.  
   
  \<configuration>  
@@ -83,7 +71,7 @@ Specifies whether the common language runtime allows managed code to catch acces
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

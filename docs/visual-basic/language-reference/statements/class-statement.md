@@ -1,12 +1,6 @@
 ---
 title: "Class Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Class"
 helpviewer_keywords: 
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "classes [Visual Basic], data members"
   - "data members [Visual Basic], of classes"
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Class Statement (Visual Basic)
 Declares the name of a class and introduces the definition of the variables, properties, events, and procedures that the class comprises.  
@@ -42,7 +33,7 @@ End Class
 |Term|Definition|  
 |---|---|  
 |`attributelist`|Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).|  
-|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-   [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br />- [Private Protected](../../language-reference/modifiers/private-protected.md)<br/><br/> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).|  
 |`MustInherit`|Optional. See [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md).|  
 |`NotInheritable`|Optional. See [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md).|  
@@ -108,14 +99,15 @@ End Class
 ## Example  
  The following example uses a `Class` statement to define a class and several members.  
   
- [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/class-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
-## See Also  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+## See also
+
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)

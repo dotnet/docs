@@ -1,16 +1,11 @@
 ---
-title: "Exception Handling Statements (C# Reference)"
+title: "Exception Handling Statements - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "keywords [C#], exception handling"
 ms.assetid: 6d0323a3-3164-411c-9b84-a3606bd0e13c
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Exception Handling Statements (C# Reference)
 C# provides built-in support for handling anomalous situations, known as exceptions, which may occur during the execution of your program. These exceptions are handled by code that is outside the normal flow of control.  
@@ -25,9 +20,10 @@ C# provides built-in support for handling anomalous situations, known as excepti
   
 -   [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)  
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)
+- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)

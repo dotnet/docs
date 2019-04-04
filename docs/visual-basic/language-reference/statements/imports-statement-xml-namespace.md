@@ -1,12 +1,6 @@
 ---
-title: "Imports Statement (XML Namespace)"
+title: "Imports Statement - XML Namespace (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ImportsXmlns"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "Imports statement [Visual Basic]"
   - "namespaces [Visual Basic], importing"
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Imports Statement (XML Namespace)
 Imports XML namespace prefixes for use in XML literals and XML axis properties.  
@@ -38,7 +29,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Remarks  
  You can use the `Imports` statement to define global XML namespaces that you can use with XML literals and XML axis properties, or as parameters passed to the `GetXmlNamespace` operator. (For information about using the `Imports` statement to import an alias that can be used where type names are used in your code, see [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).) The syntax for declaring an XML namespace by using the `Imports` statement is identical to the syntax used in XML. Therefore, you can copy a namespace declaration from an XML file and use it in an `Imports` statement.  
   
- XML namespace prefixes are useful when you want to repeatedly create XML elements that are from the same namespace. The XML namespace prefix declared with the `Imports` statement is global in the sense that it is available to all code in the file. You can use it when you create XML element literals and when you access XML axis properties. For more information, see [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) and [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md).  
+ XML namespace prefixes are useful when you want to repeatedly create XML elements that are from the same namespace. The XML namespace prefix declared with the `Imports` statement is global in the sense that it is available to all code in the file. You can use it when you create XML element literals and when you access XML axis properties. For more information, see [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) and [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md).  
   
  If you define a global XML namespace without a namespace prefix (for example, `Imports <xmlns="http://SomeNameSpace>"`), that namespace is considered the default XML namespace. The default XML namespace is used for any XML element literals or XML attribute axis properties that do not explicitly specify a namespace. The default namespace is also used if the specified namespace is the empty namespace (that is, `xmlns=""`). The default XML namespace does not apply to XML attributes in XML literals or to XML attribute axis properties that do not have a namespace.  
   
@@ -51,7 +42,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports a default XML namespace and an XML namespace identified with the prefix `ns`. It then creates XML literals that use both namespaces.  
   
- [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_1.vb)]  
+ [!code-vb[VbXMLSamples#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/Module1.vb#45)]  
   
  This code displays the following text:  
   
@@ -67,7 +58,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports the XML namespace prefix `ns`. It then creates an XML literal that uses the namespace prefix and displays the element's final form.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_2.vb)]  
+ [!code-vb[VbXMLSamples#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples10.vb#22)]  
   
  This code displays the following text:  
   
@@ -85,14 +76,15 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports the XML namespace prefix `ns`. It then uses the prefix of the namespace to create an XML literal and access the first child node with the qualified name `ns:name`.  
   
- [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_3.vb)]  
+ [!code-vb[VbXMLSamples#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples8.vb#19)]  
   
  This code displays the following text:  
   
  `Patrick Hines`  
   
-## See Also  
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
- [GetXmlNamespace Operator](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)
+## See also
+
+- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
+- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [GetXmlNamespace Operator](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)

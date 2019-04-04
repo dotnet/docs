@@ -1,24 +1,10 @@
 ---
 title: "Connection Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 5a29de74-acfc-4134-8616-829dd7ce0710
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Connection Events
 All of the .NET Framework data providers have **Connection** objects with two events that you can use to retrieve informational messages from a data source or to determine if the state of a **Connection** has changed. The following table describes the events of the **Connection** object.  
@@ -29,7 +15,7 @@ All of the .NET Framework data providers have **Connection** objects with two ev
 |**StateChange**|Occurs when the state of the **Connection** changes.|  
   
 ## Working with the InfoMessage Event  
- You can retrieve warnings and informational messages from a SQL Server data source using the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event of the <xref:System.Data.SqlClient.SqlConnection> object. Errors returned from the data source with a severity level of 11 through 16 cause an exception to be thrown. However, the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event can be used to obtain messages from the data source that are not associated with an error. In the case of Microsoft SQL Server, any error with a severity of 10 or less is considered to be an informational message, and can be captured by using the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event. For more information, see the "Error Message Severity Levels" topic in SQL Server Books Online.  
+ You can retrieve warnings and informational messages from a SQL Server data source using the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event of the <xref:System.Data.SqlClient.SqlConnection> object. Errors returned from the data source with a severity level of 11 through 16 cause an exception to be thrown. However, the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event can be used to obtain messages from the data source that are not associated with an error. In the case of Microsoft SQL Server, any error with a severity of 10 or less is considered to be an informational message, and can be captured by using the <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event. For more information, see the [Database Engine Error Severities](/sql/relational-databases/errors-events/database-engine-error-severities) article.
   
  The <xref:System.Data.SqlClient.SqlConnection.InfoMessage> event receives an <xref:System.Data.SqlClient.SqlInfoMessageEventArgs> object containing, in its **Errors** property, a collection of the messages from the data source. You can query the **Error** objects in this collection for the error number and message text, as well as the source of the error. The .NET Framework Data Provider for SQL Server also includes detail about the database, stored procedure, and line number that the message came from.  
   
@@ -113,6 +99,6 @@ protected static void OnStateChange(object sender,
 }  
 ```  
   
-## See Also  
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

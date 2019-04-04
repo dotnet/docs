@@ -1,21 +1,10 @@
 ---
 title: "XSLT Compiler (xsltc.exe)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # XSLT Compiler (xsltc.exe)
 The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.  
@@ -54,7 +43,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 > [!NOTE]
 >  You must also include the compiled assembly as a reference in your application.  
   
- The xsltc.exe tool does not validate the class (`/class:``name`) or assembly (`/out:``assemblyName`) names. Errors are thrown by the common language runtime if the names are not valid.  
+ The xsltc.exe tool does not validate the class (`/class:`*name*) or assembly (`/out:`*assemblyName*) names. Errors are thrown by the common language runtime if the names are not valid.  
   
 ## Examples  
  The following command compiles the style sheet and creates an assembly named booksort.dll.  
@@ -87,7 +76,8 @@ xsltc /settings:DTD+,script+ /out:myTest calc.xsl
 xsltc booksort.xsl output.xsl  
 ```  
   
-## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>
+- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

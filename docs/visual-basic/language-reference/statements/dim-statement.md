@@ -1,12 +1,6 @@
 ---
 title: "Dim Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Dim"
   - "Dim"
@@ -35,9 +29,6 @@ helpviewer_keywords:
   - "Dim statement [Visual Basic], syntax"
   - "variables [Visual Basic], member and local"
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
-caps.latest.revision: 72
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Dim Statement (Visual Basic)
 Declares and allocates storage space for one or more variables.  
@@ -67,8 +58,10 @@ Dim [ WithEvents ] variablelist
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-    -   `Protected Friend`  
-  
+    -   [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+    
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
+
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 -   `Shared`  
@@ -247,7 +240,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
   
  For more information about array literals, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
-##  <a name="default"></a> Default Data Types and Values  
+## <a name="default"></a> Default Data Types and Values  
  The following table describes the results of various combinations of specifying the data type and initializer in a `Dim` statement.  
   
 |Data type specified?|Initializer specified?|Example|Result|  
@@ -257,7 +250,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
 |Yes|No|`Dim qty As Integer`|The variable is initialized to the default value for the data type. See the table later in this section.|  
 |Yes|Yes|`Dim qty  As Integer = 5`|If the data type of the initializer is not convertible to the specified data type, a compile-time error occurs.|  
   
- If you specify a data type but do not specify an initializer, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] initializes the variable to the default value for its data type. The following table shows the default initialization values.  
+ If you specify a data type but do not specify an initializer, Visual Basic initializes the variable to the default value for its data type. The following table shows the default initialization values.  
   
 |Data type|Default value|  
 |---|---|  
@@ -300,31 +293,32 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
 ## Example  
  The following example declares variables by using the `Dim` statement with various options.  
   
- [!code-vb[VbVbalrStatements#141](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#141](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#141)]  
   
 ## Example  
  The following example lists the prime numbers between 1 and 30. The scope of local variables is described in code comments.  
   
- [!code-vb[VbVbalrStatements#142](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#142](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#142)]  
   
 ## Example  
  In the following example, the `speedValue` variable is declared at the class level. The `Private` keyword is used to declare the variable. The variable can be accessed by any procedure in the `Car` class.  
   
- [!code-vb[VbVbalrStatements#144](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#144](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#144)]  
   
- [!code-vb[VbVbalrStatements#145](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#145](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#145)]  
   
-## See Also  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)  
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)  
- [How to: Declare an Object by Using an Object Initializer](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
+- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [How to: Declare an Object by Using an Object Initializer](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

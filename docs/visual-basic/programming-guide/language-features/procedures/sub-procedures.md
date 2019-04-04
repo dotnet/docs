@@ -1,13 +1,6 @@
 ---
 title: "Sub Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Sub procedures [Visual Basic], about Sub procedures"
   - "statement blocks"
@@ -18,12 +11,9 @@ helpviewer_keywords:
   - "procedures [Visual Basic], Sub"
   - "syntax [Visual Basic], Sub procedures"
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sub Procedures (Visual Basic)
-A `Sub` procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements enclosed by the `Sub` and `End Sub` statements. The `Sub` procedure performs a task and then returns control to the calling code, but it does not return a value to the calling code.  
+A `Sub` procedure is a series of Visual Basic statements enclosed by the `Sub` and `End Sub` statements. The `Sub` procedure performs a task and then returns control to the calling code, but it does not return a value to the calling code.  
   
  Each time the procedure is called, its statements are executed, starting with the first executable statement after the `Sub` statement and ending with the first `End Sub`, `Exit Sub`, or `Return` statement encountered.  
   
@@ -70,18 +60,19 @@ A `Sub` procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] sta
 ### Illustration of Declaration and Call  
  The following `Sub` procedure tells the computer operator which task the application is about to perform, and also displays a time stamp. Instead of duplicating this code at the start of every task, the application just calls `tellOperator` from various locations. Each call passes a string in the `task` argument that identifies the task being started.  
   
- [!code-vb[VbVbcnProcedures#2](./codesnippet/VisualBasic/sub-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#2)]  
   
  The following example shows a typical call to `tellOperator`.  
   
- [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#3)]  
   
-## See Also  
- [Procedures](./index.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
- [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)  
- [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)
+## See also
+
+- [Procedures](./index.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
+- [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)
+- [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)

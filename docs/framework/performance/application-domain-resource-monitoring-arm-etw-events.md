@@ -1,24 +1,12 @@
 ---
 title: "Application Domain Resource Monitoring (ARM) ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ETW, application domain monitoring events"
   - "application domain monitoring events [.NET Framework]"
 ms.assetid: d38ff268-a2ee-434e-b504-d570880e0289
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Application Domain Resource Monitoring (ARM) ETW Events
 <a name="top"></a> These events provide detailed diagnostic information about the state of an application domain. You can use these events or use the application domain resource monitoring (ARM) feature to obtain the same information.  
@@ -162,5 +150,5 @@ ms.workload:
 |AppDomainID|win:UInt64|The application domain identifier.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

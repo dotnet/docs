@@ -1,14 +1,8 @@
 ---
-title: dotnet nuget locals command - .NET Core CLI
+title: dotnet nuget locals command
 description: The dotnet nuget locals command clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 author: karann-msft
-ms.author: mairaw
-ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 12/04/2018
 ---
 # dotnet nuget locals
 
@@ -20,7 +14,10 @@ ms.workload:
 
 ## Synopsis
 
-`dotnet nuget locals <CACHE_LOCATION> [(-c|--clear)|(-l|--list)] [--force-english-output] [-h|--help]`
+```
+dotnet nuget locals <CACHE_LOCATION> [(-c|--clear)|(-l|--list)] [--force-english-output]
+dotnet nuget locals [-h|--help]
+```
 
 ## Description
 
@@ -28,54 +25,64 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
 ## Arguments
 
-`CACHE_LOCATION`
+* **`CACHE_LOCATION`**
 
-One of the following values:
+  The cache location to list or clear. It accepts one of the following values:
 
-* `all` - Indicates that the specified operation is applied to all cache types: http-request cache, global packages cache, and the temporary cache.
-* `http-cache` - Indicates that the specified operation is applied only to the http-request cache. The other cache locations are not affected.
-* `global-packages` - Indicates that the specified operation is applied only to the global packages cache. The other cache locations are not affected.
-* `temp` - Indicates that the specified operation is applied only to the temporary cache. The other cache locations are not affected.
+  * `all` - Indicates that the specified operation is applied to all cache types: http-request cache, global packages cache, and the temporary cache.
+  * `http-cache` - Indicates that the specified operation is applied only to the http-request cache. The other cache locations aren't affected.
+  * `global-packages` - Indicates that the specified operation is applied only to the global packages cache. The other cache locations aren't affected.
+  * `temp` - Indicates that the specified operation is applied only to the temporary cache. The other cache locations aren't affected.
 
 ## Options
 
-`-h|--help`
+* **`--force-english-output`**
 
-Prints out a short help for the command.
+  Forces the application to run using an invariant, English-based culture.
 
-`-c|--clear`
+* **`-h|--help`**
 
-The clear option performs a clear operation on the specified cache type. The contents of the cache directories are deleted recursively. The executing user/group must have permission to the files in the cache directories. If not, an error is displayed indicating the files/folders which were not cleared.
+  Prints out a short help for the command.
 
-`-l|--list`
+* **`-c|--clear`**
 
-The list option is used to display the location of the specified cache type. 
+  The clear option executes a clear operation on the specified cache type. The contents of the cache directories are deleted recursively. The executing user/group must have permission to the files in the cache directories. If not, an error is displayed indicating the files/folders that weren't cleared.
 
-`--force-english-output`
+* **`-l|--list`**
 
-Forces command-line output in English.
+  The list option is used to display the location of the specified cache type.
 
 ## Examples
 
-Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
+* Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
 
-`dotnet nuget locals –l all`
+  ```console
+  dotnet nuget locals –l all
+  ```
 
-Displays the path for the local http-cache directory:
+* Displays the path for the local http-cache directory:
 
-`dotnet nuget locals --list http-cache`
+  ```console
+  dotnet nuget locals --list http-cache
+  ```
 
-Clears all files from all local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
+* Clears all files from all local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
 
-`dotnet nuget locals --clear all`
+  ```console
+  dotnet nuget locals --clear all
+  ```
 
-Clears all files in local global-packages cache directory:
+* Clears all files in local global-packages cache directory:
 
-`dotnet nuget locals -c global-packages`
+  ```console
+  dotnet nuget locals -c global-packages
+  ```
 
-Clears all files in local temporary cache directory:
+* Clears all files in local temporary cache directory:
 
-`dotnet nuget locals -c temp`
+  ```console
+  dotnet nuget locals -c temp
+  ```
 
 ## Troubleshooting
 

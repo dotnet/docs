@@ -1,14 +1,7 @@
 ---
 title: Building Expression Trees
 description: Learn about techniques for building expression trees.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 542754a9-7f40-4293-b299-b9f80241902c
 ---
 
@@ -58,10 +51,10 @@ Once you've got the addition expression, you can create the lambda
 expression:
 
 ```csharp
-var lamdba = Expression.Lambda(addition);
+var lambda = Expression.Lambda(addition);
 ```
 
-This is a very simple LambdaExpression, because it contains no arguments.
+This is a very simple lambda expression, because it contains no arguments.
 Later in this section, you'll see how to map arguments to parameters
 and build more complicated expressions.
 

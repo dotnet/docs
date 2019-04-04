@@ -1,13 +1,7 @@
 ---
 title: "How to: Listen for Multiple Cancellation Requests"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +9,8 @@ helpviewer_keywords:
   - "cancellation tokens, joining"
   - "LinkedTokenSource, how to"
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Listen for Multiple Cancellation Requests
 This example shows how to listen to two cancellation tokens simultaneously so that you can cancel an operation if either token requests it.  
@@ -37,7 +26,8 @@ This example shows how to listen to two cancellation tokens simultaneously so th
   
  When the linked token throws an <xref:System.OperationCanceledException>, the token that is passed to the exception is the linked token, not either of the predecessor tokens. To determine which of the tokens was canceled, check the status of the predecessor tokens directly.  
   
- In this example, <xref:System.AggregateException> should never be thrown, but it is caught here because in real-world scenarios any other exceptions besides <xref:System.OperationCanceledException> that are thrown from the task delegate are wrapped in a <xref:System.OperationCanceledException>.  
+ In this example, <xref:System.AggregateException> should never be thrown, but it is caught here because in real-world scenarios any other exceptions besides <xref:System.OperationCanceledException> that are thrown from the task delegate are wrapped in a <xref:System.AggregateException>.  
   
-## See Also  
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## See also
+
+- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

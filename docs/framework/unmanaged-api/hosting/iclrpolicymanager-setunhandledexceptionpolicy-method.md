@@ -1,14 +1,6 @@
 ---
 title: "ICLRPolicyManager::SetUnhandledExceptionPolicy Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRPolicyManager.SetUnhandledExceptionPolicy"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRPolicyManager::SetUnhandledExceptionPolicy Method
 Specifies the behavior of the common language runtime (CLR) when an unhandled exception occurs.  
@@ -41,7 +29,7 @@ HRESULT SetUnhandledExceptionPolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `policy`  
  [in] One of the [EClrUnhandledException](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md) values, indicating whether the behavior is set by the CLR or the host.  
   
@@ -68,8 +56,8 @@ HRESULT SetUnhandledExceptionPolicy (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [EClrUnhandledException Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)  
- [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)
+## See also
+- [EClrUnhandledException Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md)
+- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)
+- [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)

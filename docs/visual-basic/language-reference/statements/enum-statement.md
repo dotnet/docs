@@ -1,12 +1,6 @@
 ---
 title: "Enum Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Enum"
 helpviewer_keywords: 
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "variables [Visual Basic], enumeration"
   - "constants [Visual Basic], enumerated"
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
-caps.latest.revision: 44
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Enum Statement (Visual Basic)
 Declares an enumeration and defines the values of its members.  
@@ -53,8 +44,10 @@ End Enum
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-     You can specify `Protected``Friend` to allow access from code within the enumeration's class, a derived class, or the same assembly.  
-  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+    
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
+
 -   `Shadows`  
   
      Optional. Specifies that this enumeration redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can specify [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) only on the enumeration itself, not on any of its members.  
@@ -140,43 +133,44 @@ End Enum
 ## Example  
  The following example shows how to use the `Enum` statement. Note that the member is referred to as `EggSizeEnum.Medium`, and not as `Medium`.  
   
- [!code-vb[VbEnumsTask#41](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_1.vb)]  
+ [!code-vb[VbEnumsTask#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#41)]  
   
 ## Example  
  The method in the following example is outside the `Egg` class. Therefore, `EggSizeEnum` is fully qualified as `Egg.EggSizeEnum`.  
   
- [!code-vb[VbEnumsTask#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_2.vb)]  
+ [!code-vb[VbEnumsTask#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#42)]  
   
 ## Example  
  The following example uses the `Enum` statement to define a related set of named constant values. In this case, the values are colors you might choose to design data entry forms for a database.  
   
- [!code-vb[VbEnumsTask#30](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_3.vb)]  
+ [!code-vb[VbEnumsTask#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#30)]  
   
 ## Example  
  The following example shows values that include both positive and negative numbers.  
   
- [!code-vb[VbEnumsTask#31](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_4.vb)]  
+ [!code-vb[VbEnumsTask#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#31)]  
   
 ## Example  
  In the following example, an `As` clause is used to specify the `datatype` of an enumeration.  
   
- [!code-vb[VbEnumsTask#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_5.vb)]  
+ [!code-vb[VbEnumsTask#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#6)]  
   
 ## Example  
  The following example shows how to use a bitwise enumeration. Multiple values can be assigned to an instance of a bitwise enumeration. The `Enum` declaration includes the <xref:System.FlagsAttribute> attribute, which indicates that the enumeration can be treated as a set of flags.  
   
- [!code-vb[VbEnumsTask#61](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_6.vb)]  
+ [!code-vb[VbEnumsTask#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#61)]  
   
 ## Example  
  The following example iterates through an enumeration. It uses the <xref:System.Enum.GetNames%2A> method to retrieve an array of member names from the enumeration, and <xref:System.Enum.GetValues%2A> to retrieve an array of member values.  
   
- [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
+ [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]  
   
-## See Also  
- <xref:System.Enum>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+## See also
+
+- <xref:System.Enum>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)

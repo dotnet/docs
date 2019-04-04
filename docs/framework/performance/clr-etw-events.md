@@ -1,25 +1,13 @@
 ---
 title: "CLR ETW Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "CLR ETW events"
   - "ETW, common language runtime"
   - "ETW, CLR events"
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
-caps.latest.revision: 45
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR ETW Events
 The topics in this section describe event tracing for Windows (ETW) events. Each event has an associated keyword and level, which are described in the [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md) topic. The CLR has two providers for the events:  
@@ -67,10 +55,10 @@ The topics in this section describe event tracing for Windows (ETW) events. Each
  [Stack Event](../../../docs/framework/performance/stack-etw-event.md)  
  Captures information that is used with other events to generate stack traces after an event is raised.  
   
-## See Also  
- [Improve Debugging And Performance Tuning With ETW](http://go.microsoft.com/fwlink/?LinkId=179696)  
- [Windows Performance Blog](http://go.microsoft.com/fwlink/?LinkId=179509)  
- [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)  
- [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)  
- [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)  
- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+## See also
+- [Improve Debugging And Performance Tuning With ETW](https://go.microsoft.com/fwlink/?LinkId=179696)
+- [Windows Performance Blog](https://go.microsoft.com/fwlink/?LinkId=179509)
+- [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)
+- [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)
+- [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)
+- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

@@ -1,19 +1,9 @@
 ---
 title: "Classes Used in .NET Framework File I/O and the File System (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "file I/O classes"
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Classes Used in .NET Framework File I/O and the File System (Visual Basic)
 The following tables list the classes commonly used for .NET Framework file I/O, categorized into file I/O classes, classes used for creating streams, and classes used to read and write to streams.  
@@ -60,8 +50,9 @@ The following tables list the classes commonly used for .NET Framework file I/O,
 |<xref:System.IO.StringReader?displayProperty=nameWithType>|Reads characters from a `String`. Output can be either a stream in any encoding or a `String`.|  
 |<xref:System.IO.StringWriter?displayProperty=nameWithType>|Writes characters to a `String`. Output can be either a stream in any encoding or a `String`.|  
   
-## See Also  
- [Composing Streams](../../../../standard/io/composing-streams.md)  
- [File and Stream I/O](../../../../standard/io/index.md)  
- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  
- [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)
+## See also
+
+- [Composing Streams](../../../../standard/io/composing-streams.md)
+- [File and Stream I/O](../../../../standard/io/index.md)
+- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)
+- [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)

@@ -1,24 +1,10 @@
 ---
 title: "Modifying Data with a DbDataAdapter"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: e35c7f9e-648b-4fcc-9361-d365c3e42c9a
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Modifying Data with a DbDataAdapter
 The <xref:System.Data.Common.DbProviderFactory.CreateDataAdapter%2A> method of a <xref:System.Data.Common.DbProviderFactory> object gives you a <xref:System.Data.Common.DbDataAdapter> object that is strongly typed to the underlying data provider specified at the time you create the factory. You can then use a <xref:System.Data.Common.DbCommandBuilder> to create commands to insert, update, and delete data from a <xref:System.Data.DataSet> to a data source.  
@@ -50,8 +36,8 @@ The <xref:System.Data.Common.DbProviderFactory.CreateDataAdapter%2A> method of a
 > [!IMPORTANT]
 >  Avoiding provider-specific parameters altogether by using string concatenation to construct direct SQL statements is not recommended for security reasons. Using string concatenation instead of parameters leaves your application vulnerable to SQL injection attacks.  
   
-## See Also  
- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
- [Obtaining a DbProviderFactory](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)  
- [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)
+- [Obtaining a DbProviderFactory](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)
+- [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

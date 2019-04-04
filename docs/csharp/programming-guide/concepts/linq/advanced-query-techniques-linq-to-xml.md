@@ -1,19 +1,7 @@
 ---
 title: "Advanced Query Techniques (LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 028d978e-215b-4d50-ba70-adce0659386d
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Advanced Query Techniques (LINQ to XML) (C#)
 This section provides examples of more advanced [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query techniques.  
@@ -32,5 +20,6 @@ This section provides examples of more advanced [!INCLUDE[sqltecxlinq](~/include
 |[How to: Modify an Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-modify-an-office-open-xml-document.md)|Presents code that opens, modifies, and saves an Office Open XML Document.|  
 |[How to: Populate an XML Tree from the File System (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md)|Presents code that creates an XML tree from the file system.|  
   
-## See Also  
- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+## See also
+
+- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

@@ -1,19 +1,7 @@
 ---
 title: "How to: Write Queries with Complex Filtering (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Write Queries with Complex Filtering (C#)
 Sometimes you want to write LINQ to XML queries with complex filters. For example, you might have to find all elements that have a child element with a particular name and value. This topic gives an example of writing a query with complex filtering.  
@@ -75,9 +63,10 @@ foreach (XElement el in purchaseOrders)
 99505  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A>  
- <xref:System.Xml.Linq.XContainer.Elements%2A>  
- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)  
- [Quantifier Operations (C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.Attribute%2A>
+- <xref:System.Xml.Linq.XContainer.Elements%2A>
+- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Quantifier Operations (C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md)

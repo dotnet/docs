@@ -2,10 +2,6 @@
 title: BlessIWbemServices function (Unmanaged API Reference)
 description: The BlessIWbemServices function indicates whether user credentials permit access to an IWbemServices class.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "BlessIWbemServices"
 api_location: 
@@ -20,12 +16,9 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # BlessIWbemServices function
-Indicates whether the user credentials permit access to the specified [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) class.   
+Indicates whether the user credentials permit access to the specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) class.   
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -44,22 +37,22 @@ HRESULT BlessIWbemServices (
 
 ## Parameters
 
-`pIWbemServices`  
-[in] A pointer to the [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object for which permissions are required.
+`pIWbemServices`\
+[in] A pointer to the [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object for which permissions are required.
 
-`strUser`  
+`strUser`\
 [in] The user name.
 
-`strPassword`  
+`strPassword`\
 [in] The password associated with `strUser`.
 
-`strAuthority`
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`authnLevel`
+`authnLevel`\
 [in] The authorization level.
 
 ## Return value
@@ -75,11 +68,13 @@ The following values returned by this function are defined in the *WinError.h* h
 | `S_OK` | 0 | The function call was successful. | 
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

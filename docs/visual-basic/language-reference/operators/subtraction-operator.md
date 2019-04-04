@@ -1,12 +1,6 @@
 ---
 title: "- Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Negate"
   - "vb.-"
@@ -23,9 +17,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], negation"
   - "minus operator [Visual Basic]"
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # - Operator (Visual Basic)
 Returns the difference between two numeric expressions or the negative value of a numeric expression.  
@@ -66,13 +57,14 @@ Returns the difference between two numeric expressions or the negative value of 
 ## Example  
  The following example uses the `–` operator to calculate and return the difference between two numbers, and then to negate a number.  
   
- [!code-vb[VbVbalrOperators#10](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/subtraction-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#10)]  
   
  Following the execution of these statements, `binaryResult` contains 124.45 and `unaryResult` contains –334.90.  
   
-## See Also  
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+## See also
+
+- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)
+- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

@@ -1,37 +1,23 @@
 ---
 title: "Transaction Protocols"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-caps.latest.revision: 14
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transaction Protocols
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements WS-Atomic Transaction and WS-Coordination protocols.  
+Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-Coordination protocols.  
   
 |Specification/Document|Version|Link|  
 |-----------------------------|-------------|----------|  
-|WS-Coordination|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96104](http://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96079](http://go.microsoft.com/fwlink/?LinkId=96079)|  
-|WS-AtomicTransaction|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96080](http://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> http://go.microsoft.com/fwlink/?LinkId=96081|  
+|WS-Coordination|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96104](https://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|WS-AtomicTransaction|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081|  
   
  Interoperability on these protocol specifications is required at two levels: between applications and between transaction managers (see the following figure). Specifications describe in great detail the message formats and message exchange for both interoperability levels. Certain security, reliability, and encodings for application-to-application exchange apply as they do for regular application exchange. However, successful interoperability between transaction managers requires agreement on the particular binding, because it is usually not configured by the user.  
   
  This topic describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
   
- The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2.  
+ The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2:  
   
- ![Transaction Protocols](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
+ ![Screenshot that shows interaction between transaction managers.](./media/transaction-protocols/transaction-managers-flow.gif)  
   
  Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers, (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this topic.  
   
@@ -61,19 +47,19 @@ ms.workload:
   
 -   Application messages.  
   
- The first three message classes are considered Transaction Manager messages and their binding configuration is described in the "Application Message Exchange" later in this topic. The fourth class of message is application to application messages and is described in the "Message Examples" section later in this topic. This section describes the protocol bindings used for each of these classes by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ The first three message classes are considered Transaction Manager messages and their binding configuration is described in the "Application Message Exchange" later in this topic. The fourth class of message is application to application messages and is described in the "Message Examples" section later in this topic. This section describes the protocol bindings used for each of these classes by WCF.  
   
  The following XML Namespaces and associated prefixes are used throughout this document.  
   
 |Prefix|Version|Namespace URI|  
 |------------|-------------|-------------------|  
-|s11||[http://go.microsoft.com/fwlink/?LinkId=96014](http://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96022](http://go.microsoft.com/fwlink/?LinkId=96022)|  
-|wscoor|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96078](http://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96079](http://go.microsoft.com/fwlink/?LinkId=96079)|  
-|wsat|1.0<br /><br /> 1.1|[http://go.microsoft.com/fwlink/?LinkId=96080](http://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96081](http://go.microsoft.com/fwlink/?LinkId=96081)|  
-|t|Pre-1.3<br /><br /> 1.3|[http://go.microsoft.com/fwlink/?LinkId=96082](http://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [http://go.microsoft.com/fwlink/?LinkId=96100](http://go.microsoft.com/fwlink/?LinkId=96100)|  
-|o||[http://go.microsoft.com/fwlink/?LinkId=96101](http://go.microsoft.com/fwlink/?LinkId=96101)|  
-|xsd||[http://go.microsoft.com/fwlink/?LinkId=96102](http://go.microsoft.com/fwlink/?LinkId=96102)|  
+|s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
+|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
+|wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
+|t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
+|o||[https://go.microsoft.com/fwlink/?LinkId=96101](https://go.microsoft.com/fwlink/?LinkId=96101)|  
+|xsd||[https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)|  
   
 ## Transaction Manager Bindings  
  R1001: Transaction Managers participating in a WS-AT 1.0 transaction must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
@@ -93,12 +79,12 @@ ms.workload:
 -   B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
   
 #### Activation and Registration Binding Configuration  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
+ WCF requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
   
 #### 2PC Protocol Binding Configuration  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
+ WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
- B1131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s 2PC messages.  
+ B1131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ### Transaction Manager Mixed Security Binding  
  This is an alternate (mixed mode) binding that uses transport security combined with the WS-Coordination Issued Token model for identity establishment purposes. Activation and Registration are the only elements that differ between the two bindings.  
@@ -109,7 +95,7 @@ ms.workload:
 #### Activation Message Binding Configuration  
  Activation Messages usually do not participate in interoperability because they typically occur between an application and its local Transaction Manager.  
   
- B1221: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
+ B1221: WCF uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
   
  WS-Atomic Transaction specification, Section 8, describes further details about correlation and the message exchange patterns.  
   
@@ -120,18 +106,18 @@ ms.workload:
  A new `t:IssuedTokens` header should be generated for attaching to the outgoing `wscoor:CreateCoordinationContextResponse` message.  
   
 #### Registration Message Binding Configuration  
- B1231: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
+ B1231: WCF uses duplex HTTPS binding (described in [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
   
  WS-AtomicTransaction, Section 8, describes further details about correlation and descriptions of the message exchange patterns.  
   
  R1232: Outgoing `wscoor:Register` messages must use the `IssuedTokenOverTransport` authentication mode described in [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md).  
   
- The `wsse:Timestamp` element must be signed using the `SecurityContextToken``STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
+ The `wsse:Timestamp` element must be signed using the `SecurityContextToken STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
+ WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
- B1241: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s 2PC messages.  
+ B1241: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ## Application Message Exchange  
  Applications are free to use any particular binding for application-to-application messages, as long as the binding meets the following security requirements:  
@@ -140,9 +126,9 @@ ms.workload:
   
 -   R2002: Integrity and confidentiality of `t:IssuedToken` must be provided.  
   
- The `CoordinationContext` header contains `wscoor:Identifier`. While the definition of `xsd:AnyURI` allows the use of both absolute and relative URIs, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports only `wscoor:Identifiers`, which are absolute URIs.  
+ The `CoordinationContext` header contains `wscoor:Identifier`. While the definition of `xsd:AnyURI` allows the use of both absolute and relative URIs, WCF supports only `wscoor:Identifiers`, which are absolute URIs.  
   
- B2003: If the `wscoor:Identifier` of the `wscoor:CoordinationContext` is a relative URI, faults will be returned from transactional [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
+ B2003: If the `wscoor:Identifier` of the `wscoor:CoordinationContext` is a relative URI, faults will be returned from transactional WCF services.  
   
 ## Message Examples  
   
@@ -295,9 +281,9 @@ ms.workload:
 <t:IssuedTokens>   
 <wst:RequestSecurityTokenResponse   
 xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"   
-xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-     wssecurity-utility-1.0.xsd"   
-xmlns:wst=http://docs.oasis-open.org/ws-sx/ws-trust/200512  
-xmlns:wsc=http://schemas.xmlsoap.org/ws/2005/02/sc  
+xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"   
+xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"  
+xmlns:wsc="http://schemas.xmlsoap.org/ws/2005/02/sc"  
 xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">  
 <wst:TokenType>http://schemas.xmlsoap.org/ws/2005/02/sc/sct</wst:TokenType>  
 <wst:RequestedSecurityToken>   
@@ -310,14 +296,14 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 <wst:RequestedAttachedReference>   
 <wsse:SecurityTokenReference >   
 <wsse:Reference  
-  ValueType=http://schemas.xmlsoap.org/ws/2005/02/sc/sct  
+  ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"  
   URI="http://fabrikam123.com/SCTi"/>  
 </wsse:SecurityTokenReference>   
 </wst:RequestedAttachedReference>   
 <wst:RequestedUnattachedReference>   
 <wsse:SecurityTokenReference>   
 <wsse:Reference  
- ValueType=http://schemas.xmlsoap.org/ws/2005/02/sc/sct  
+ ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"  
  URI="http://fabrikam123.com/SCTi"/>  
 </wsse:SecurityTokenReference>   
 </wst:RequestedUnattachedReference>   

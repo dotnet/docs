@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugRemote::CreateProcessEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugRemote.CreateProcessEx"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugRemote::CreateProcessEx Method
 Launches a process on a remote machine under the debugger.  
@@ -53,7 +41,7 @@ HRESULT CreateProcessEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRemoteTarget`  
  [in] Pointer to an [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md). Used to determine the remote machine on which the process will be launched.  
   
@@ -112,8 +100,8 @@ HRESULT CreateProcessEx (
   
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
-## See Also  
- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,23 +1,9 @@
 ---
-title: "&lt;diagnostics&gt;"
-ms.custom: ""
+title: "<diagnostics>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;diagnostics&gt;
+# \<diagnostics>
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  
   
  \<system.ServiceModel>  
@@ -26,22 +12,25 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-   <diagnostics etwProviderId="String"       performanceCounters="Off/ServiceOnly/All/Default"              wmiProviderEnabled="Boolean" >       <endToEndTracing activityTracing="Boolean"  
-          messageFlowTracing="Boolean"  
-          propagateActivity="Boolean" />  
-       <messageLogging logEntireMessage="Boolean"  
-          logMalformedMessages="Boolean"  
-          logMessagesAtServiceLevel="Boolean"  
-          logMessagesAtTransportLevel="Boolean"  
-          maxMessagesToLog="Integer"  
-          maxSizeOfMessageToLog="Integer" >  
-          <filters>  
-             <clear />  
-          </filters>  
-       </messageLogging>  
-   </diagnostics>  
-</system.serviceModel>  
+<system.serviceModel>
+  <diagnostics etwProviderId="String"
+               performanceCounters="Off/ServiceOnly/All/Default"
+               wmiProviderEnabled="Boolean">
+    <endToEndTracing activityTracing="Boolean"
+                     messageFlowTracing="Boolean"
+                     propagateActivity="Boolean" />
+    <messageLogging logEntireMessage="Boolean"
+                    logMalformedMessages="Boolean"
+                    logMessagesAtServiceLevel="Boolean"
+                    logMessagesAtTransportLevel="Boolean"
+                    maxMessagesToLog="Integer"
+                    maxSizeOfMessageToLog="Integer">
+      <filters>
+        <clear />
+      </filters>
+    </messageLogging>
+  </diagnostics>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -74,21 +63,21 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ## Example  
   
 ```xml  
-<diagnostics wmiProviderEnabled="false"  
-       performanceCounters="all">  
-       <messageLogging logEntireMessage="true"  
-          logMalformedMessages="true"  
-          logMessagesAtServiceLevel="true"  
-          logMessagesAtTransportLevel="true"  
-          maxMessagesToLog="42"  
-          maxSizeOfMessageToLog="42">  
-         <filters>  
-         <clear />  
-    </filters>  
-       </messageLogging>  
-</diagnostics>  
+<diagnostics wmiProviderEnabled="false"
+             performanceCounters="all">
+  <messageLogging logEntireMessage="true"
+                  logMalformedMessages="true"
+                  logMessagesAtServiceLevel="true"
+                  logMessagesAtTransportLevel="true"
+                  maxMessagesToLog="42"
+                  maxSizeOfMessageToLog="42">
+    <filters>
+      <clear />
+    </filters>
+  </messageLogging>
+</diagnostics>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DiagnosticSection>  
- <xref:System.ServiceModel.Diagnostics>
+## See also
+- <xref:System.ServiceModel.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Diagnostics>

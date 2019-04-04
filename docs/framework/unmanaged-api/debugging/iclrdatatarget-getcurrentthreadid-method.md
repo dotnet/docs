@@ -1,14 +1,6 @@
 ---
 title: "ICLRDataTarget::GetCurrentThreadID Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRDataTarget.GetCurrentThreadID"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: dc9a0a6c-d592-4fb7-86ed-62684da3b0e1
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRDataTarget::GetCurrentThreadID Method
 Gets the operating system identifier for the current thread.  
@@ -41,7 +29,7 @@ HRESULT GetCurrentThreadID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [out] A pointer to the operating system identifier of the current thread for the target process.  
   
@@ -57,5 +45,5 @@ HRESULT GetCurrentThreadID (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## See also
+- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

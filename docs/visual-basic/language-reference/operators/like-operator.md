@@ -1,12 +1,6 @@
 ---
 title: "Like Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "Like"
   - "vb.Like"
@@ -28,13 +22,13 @@ helpviewer_keywords:
   - "data [Visual Basic], string comparisons"
   - "string comparison [Visual Basic], Like operators"
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Like Operator (Visual Basic)
 Compares a string against a pattern.  
-  
+
+> [!IMPORTANT]
+> The `Like` operator is currently not supported in .NET Core and .NET Standard projects.
+
 ## Syntax  
   
 ```  
@@ -90,7 +84,7 @@ result = string Like pattern
  A hyphen (`–`) can appear either at the beginning (after an exclamation point, if any) or at the end of `charlist` to match itself. In any other location, the hyphen identifies a range of characters delimited by the characters on either side of the hyphen.  
   
 ## Collating Sequence  
- The meaning of a specified range depends on the character ordering at run time, as determined by `Option``Compare` and the locale setting of the system the code is running on. With `Option``Compare``Binary`, the range `[A–E]` matches `A`, `B`, `C`, `D`, and `E`. With `Option``Compare``Text`, `[A–E]` matches `A`, `a`, `À`, `à`, `B`, `b`, `C`, `c`, `D`, `d`, `E`, and `e`. The range does not match `Ê` or `ê` because accented characters collate after unaccented characters in the sort order.  
+ The meaning of a specified range depends on the character ordering at run time, as determined by `Option Compare` and the locale setting of the system the code is running on. With `Option Compare Binary`, the range `[A–E]` matches `A`, `B`, `C`, `D`, and `E`. With `Option Compare Text`, `[A–E]` matches `A`, `a`, `À`, `à`, `B`, `b`, `C`, `c`, `D`, `d`, `E`, and `e`. The range does not match `Ê` or `ê` because accented characters collate after unaccented characters in the sort order.  
   
 ## Digraph Characters  
  In some languages, there are alphabetic characters that represent two separate characters. For example, several languages use the character `æ` to represent the characters `a` and `e` when they appear together. The `Like` operator recognizes that the single digraph character and the two individual characters are equivalent.  
@@ -103,14 +97,15 @@ result = string Like pattern
 ## Example  
  This example uses the `Like` operator to compare strings to various patterns. The results go into a `Boolean` variable indicating whether each string satisfies the pattern.  
   
- [!code-vb[VbVbalrOperators#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/like-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#30)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [How to: Match a String against a Pattern](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-match-a-string-against-a-pattern.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Strings.InStr%2A>
+- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>
+- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [How to: Match a String against a Pattern](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-match-a-string-against-a-pattern.md)

@@ -1,19 +1,7 @@
 ---
 title: "Retrieving the Paragraphs and Their Styles (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: c2f767f8-57b1-4b4b-af04-89ffb1f7067d
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Retrieving the Paragraphs and Their Styles (C#)
 In this example, we write a query that retrieves the paragraph nodes from a WordprocessingML document. It also identifies the style of each paragraph.  
@@ -138,5 +126,6 @@ StyleName:Code
 ## Next Steps  
  In the next topic, [Retrieving the Text of the Paragraphs (C#)](../../../../csharp/programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md), you'll create a query to retrieve the text of paragraphs.  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

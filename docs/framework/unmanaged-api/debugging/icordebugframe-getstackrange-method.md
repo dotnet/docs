@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugFrame::GetStackRange Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFrame.GetStackRange"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fab037cb-fda6-40fb-9367-921e435dd5a0
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugFrame::GetStackRange Method
 Gets the absolute address range of this stack frame.  
@@ -42,7 +30,7 @@ HRESULT GetStackRange (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStart`  
  [out] A pointer to a `CORDB_ADDRESS` that specifies the starting address of the stack frame represented by this `ICorDebugFrame` object.  
   

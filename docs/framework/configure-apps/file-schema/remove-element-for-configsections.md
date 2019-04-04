@@ -1,10 +1,6 @@
 ---
-title: "&lt;remove&gt; element for &lt;configSections&gt;"
+title: "<remove> element for <configSections>"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/remove"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
 ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # \<remove> element for \<configSections>
@@ -44,7 +37,7 @@ Removes a predefined section or section group.
 | --- | ----------- |
 | [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
-# Child elements
+## Child elements
 
 None
 
@@ -88,4 +81,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

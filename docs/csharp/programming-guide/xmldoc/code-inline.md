@@ -1,10 +1,7 @@
 ---
-title: "&lt;c&gt; (C# Programming Guide)"
+title: "<c> - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "c"
   - "<c>"
@@ -14,18 +11,15 @@ helpviewer_keywords:
   - "c C# XML tag"
   - "<c> C# XML tag"
 ms.assetid: aad5b16e-a29e-445e-bd0d-eea0b138d7b2
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
-# &lt;c&gt; (C# Programming Guide)
+# \<c> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
 <c>text</c>  
 ```  
   
-#### Parameters  
+## Parameters  
  `text`  
  The text you would like to indicate as code.  
   
@@ -35,8 +29,9 @@ ms.author: "wiwagn"
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#2](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/code-inline_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#2)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

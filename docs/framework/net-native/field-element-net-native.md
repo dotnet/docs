@@ -1,23 +1,11 @@
 ---
-title: "&lt;Field&gt; Element (.NET Native)"
-ms.custom: ""
+title: "<Field> Element (.NET Native)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;Field&gt; Element (.NET Native)
+# \<Field> Element (.NET Native)
 Applies runtime reflection policy to a field.  
   
 ## Syntax  
@@ -66,7 +54,7 @@ Applies runtime reflection policy to a field.
 ## Remarks  
  If a field's policy is not explicitly defined, it inherits the runtime policy of its parent element.  
   
-## See Also  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

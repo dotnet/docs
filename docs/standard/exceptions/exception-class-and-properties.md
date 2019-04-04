@@ -1,24 +1,13 @@
 ---
 title: "Exception Class and Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions, Exception class"
   - "Exception class"
 ms.assetid: e2e1f8c4-e7b4-467d-9a66-13c90861221d
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Exception class and properties
 
@@ -46,5 +35,6 @@ Most of the classes that inherit from <xref:System.Exception> do not implement a
 
 We recommend that you throw and catch only objects that derive from <xref:System.Exception>, but you can throw any object that derives from the <xref:System.Object> class as an exception. Note that not all languages support throwing and catching objects that do not derive from <xref:System.Exception>.
   
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

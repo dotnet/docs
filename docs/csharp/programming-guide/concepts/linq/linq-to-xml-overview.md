@@ -1,17 +1,7 @@
 ---
 title: "LINQ to XML Overview (C#)"
-ms.custom: ""
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: 10/30/2018
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ to XML Overview (C#)
 XML has been widely adopted as a way to format data in many contexts. For example, you can find XML on the Web, in configuration files, in Microsoft Office Word files, and in databases.  
@@ -32,28 +22,52 @@ XML has been widely adopted as a way to format data in many contexts. For exampl
   
  Another advantage of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is the ability to use query results as parameters to <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XAttribute> object constructors enables a powerful approach to creating XML trees. This approach, called *functional construction*, enables developers to easily transform XML trees from one shape to another.  
   
- For example, you might have a typical XML purchase order as described in [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348). By using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you could run the following query to obtain the part number attribute value for every item element in the purchase order:  
+ For example, you might have a typical XML purchase order as described in [Sample XML File: Typical Purchase Order (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml-1.md). By using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you could run the following query to obtain the part number attribute value for every item element in the purchase order:  
   
-```csharp  
-IEnumerable<string> partNos =  
-from item in purchaseOrder.Descendants("Item")  
-select (string) item.Attribute("PartNumber");  
+```csharp
+// Load the XML file from our project directory containing the purchase orders
+var filename = "PurchaseOrder.xml";
+var currentDirectory = Directory.GetCurrentDirectory();
+var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
+
+XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
+
+IEnumerable<string> partNos =  from item in purchaseOrder.Descendants("Item")  
+                               select (string) item.Attribute("PartNumber");  
+``` 
+This can be rewritten in method syntax form:
+
+```csharp
+IEnumerable<string> partNos = purchaseOrder.Descendants("Item").Select(x => (string) x.Attribute("PartNumber"));
+```
+
+As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  
+  
+```csharp 
+// Load the XML file from our project directory containing the purchase orders
+var filename = "PurchaseOrder.xml";
+var currentDirectory = Directory.GetCurrentDirectory();
+var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
+
+XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
+
+IEnumerable<XElement> pricesByPartNos =  from item in purchaseOrder.Descendants("Item")  
+                                 where (int) item.Element("Quantity") * (decimal) item.Element("USPrice") > 100  
+                                 orderby (string)item.Element("PartNumber")  
+                                 select item;  
 ```  
-  
- As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  
-  
-```csharp  
-IEnumerable<XElement> partNos =  
-from item in purchaseOrder.Descendants("Item")  
-where (int) item.Element("Quantity") *  
-    (decimal) item.Element("USPrice") > 100  
-orderby (string)item.Element("PartNumber")  
-select item;  
-```  
-  
+
+Again, this can be rewritten in method syntax form:
+
+```csharp
+IEnumerable<XElement> pricesByPartNos = purchaseOrder.Descendants("Item")
+                                        .Where(item => (int)item.Element("Quantity") * (decimal)item.Element("USPrice") > 100)
+                                        .OrderBy(order => order.Element("PartNumber"));
+```
+
  In addition to these [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] capabilities, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides an improved XML programming interface. Using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you can:  
   
--   Load XML from files or streams.  
+-   Load XML from [files](how-to-load-xml-from-a-file.md) or [streams](how-to-stream-xml-fragments-from-an-xmlreader.md).  
   
 -   Serialize XML to files or streams.  
   
@@ -91,6 +105,7 @@ new XElement("Contacts",
   
  For more information, see [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md).  
   
-## See Also  
- <xref:System.Xml.Linq>  
- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+## See also
+
+- <xref:System.Xml.Linq>
+- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

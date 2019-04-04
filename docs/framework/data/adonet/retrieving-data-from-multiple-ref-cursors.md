@@ -1,23 +1,9 @@
 ---
 title: "Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "vb"
 ms.assetid: 361e9bd4-447d-44b7-8629-3c11f1a7ffbb
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Retrieving Data from Multiple REF CURSORs Using an OracleDataReader
 This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an <xref:System.Data.OracleClient.OracleDataReader>.  
@@ -58,6 +44,6 @@ Private Sub Button1_Click( _
 End Sub   
 ```  
   
-## See Also  
- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

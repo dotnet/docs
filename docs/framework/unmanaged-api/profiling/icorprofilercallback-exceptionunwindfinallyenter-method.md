@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ExceptionUnwindFinallyEnter Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ExceptionUnwindFinallyEnter"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c7fab986-b69f-4ec8-b7b7-91dcfc239cd0
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionUnwindFinallyEnter Method
 Notifies the profiler that the unwind phase of exception handling is entering a `finally` clause contained in the specified function.  
@@ -40,7 +28,7 @@ HRESULT ExceptionUnwindFinallyEnter(
     [in] FunctionID functionId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that contains the `finally` clause.  
   
@@ -58,7 +46,7 @@ HRESULT ExceptionUnwindFinallyEnter(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [GetNotifiedExceptionClauseInfo Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)  
- [ExceptionUnwindFinallyLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyleave-method.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [GetNotifiedExceptionClauseInfo Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)
+- [ExceptionUnwindFinallyLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyleave-method.md)

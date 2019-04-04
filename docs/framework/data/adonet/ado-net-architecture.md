@@ -1,21 +1,7 @@
 ---
 title: "ADO.NET Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fcd45b99-ae8f-45ab-8b97-d887beda734e
-caps.latest.revision: 7
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # ADO.NET Architecture
 Data processing has traditionally relied primarily on a connection-based, two-tier model. As data processing increasingly uses multi-tier architectures, programmers are switching to a disconnected approach to provide better scalability for their applications.  
@@ -64,6 +50,6 @@ ADO.NET architecture
   
  [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] and the XML classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] converge in the `DataSet` object. The `DataSet` can be populated with data from an XML source, whether it is a file or an XML stream. The `DataSet` can be written as World-Wide Web Consortium (W3C) compliant XML that includes its schema as XML schema definition language (XSD) schema, regardless of the source of the data in the `DataSet`. Because of the native serialization format of the `DataSet` is XML, it is an excellent medium for moving data between tiers, making the `DataSet` an optimal choice for remoting data and schema context to and from an XML Web service. For more information, see [XML Documents and Data](../../../../docs/standard/data/xml/index.md).  
   
-## See Also  
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

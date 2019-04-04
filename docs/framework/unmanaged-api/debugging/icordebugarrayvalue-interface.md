@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugArrayValue Interface1"
-ms.custom: ""
+title: "ICorDebugArrayValue Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugArrayValue"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: dc437751-7093-44e2-bfdc-191d9ce3c192
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugArrayValue Interface1
+# ICorDebugArrayValue Interface
+
 A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-dimensional array.  
   
 ## Methods  
@@ -60,5 +49,5 @@ A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-d
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

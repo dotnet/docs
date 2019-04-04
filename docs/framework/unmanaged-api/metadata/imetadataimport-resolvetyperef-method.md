@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::ResolveTypeRef Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.ResolveTypeRef"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 556bccfb-61bc-4761-b1d5-de4b1c18a38f
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::ResolveTypeRef Method
 Resolves a <xref:System.Type> reference represented by the specified TypeRef token.  
@@ -44,7 +32,7 @@ HRESULT ResolveTypeRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tr`  
  [in] The TypeRef metadata token to return the referenced type information for.  
   
@@ -75,6 +63,6 @@ HRESULT ResolveTypeRef (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

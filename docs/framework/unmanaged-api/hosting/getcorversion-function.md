@@ -1,14 +1,6 @@
 ---
 title: "GetCORVersion Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetCORVersion"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetCORVersion Function
 Returns the version number of the common language runtime (CLR) that is running in the current process.  
@@ -45,7 +33,7 @@ HRESULT GetCORVersion (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  A pointer to a buffer in which the CLR returns a string specifying the version of the runtime that is currently loaded into the process. The returned string takes the same form as strings passed to [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md), for example, "v1.0.1216". If the runtime has not yet been loaded into the process, the function returns the appropriate directory information for the latest version of the runtime installed on the computer.  
   
@@ -64,5 +52,5 @@ HRESULT GetCORVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

@@ -1,14 +1,6 @@
 ---
-title: "&lt;mscorlib&gt; Element for Cryptography Settings"
-ms.custom: ""
+title: "<mscorlib> Element for Cryptography Settings"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mscorlib"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "mscorlib element"
   - "<mscorlib> element"
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
-caps.latest.revision: 13
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;mscorlib&gt; Element for Cryptography Settings
+# \<mscorlib> Element for Cryptography Settings
 Contains the [\<cryptographySettings> element](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md).  
   
  \<configuration>  
@@ -76,10 +62,10 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>  
- <xref:System.Security.Cryptography>  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+## See also
+- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>
+- <xref:System.Security.Cryptography>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

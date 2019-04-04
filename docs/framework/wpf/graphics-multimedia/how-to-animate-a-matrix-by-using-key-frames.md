@@ -1,25 +1,11 @@
 ---
 title: "How to: Animate a Matrix by Using Key Frames"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "animation [WPF], Matrix properties with key frames"
   - "Matrix properties [WPF], animating with key frames"
   - "key frames [WPF], animating Matrix properties with"
 ms.assetid: b851a4c7-ecb1-420e-9203-83e7afd037fd
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Animate a Matrix by Using Key Frames
 This example shows how to animate the <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property of a <xref:System.Windows.Media.MatrixTransform> by using key frames.  
@@ -38,12 +24,12 @@ This example shows how to animate the <xref:System.Windows.Media.MatrixTransform
 > [!NOTE]
 >  Key frames that derive from the <xref:System.Windows.Media.Animation.DiscreteMatrixKeyFrame> object create sudden jumps between values, that is, the movement of the animation is jerky.  
   
- [!code-xaml[keyframes_snip#MatrixAnimationUsingKeyFramesWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_snip/XAML/MatrixAnimationUsingKeyFramesExample.xaml#matrixanimationusingkeyframeswholepage)]  
+ [!code-xaml[keyframes_snip#MatrixAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_snip/XAML/MatrixAnimationUsingKeyFramesExample.xaml#matrixanimationusingkeyframeswholepage)]  
   
- For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
+ For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
- <xref:System.Windows.Media.MatrixTransform.Matrix%2A>  
- <xref:System.Windows.Media.MatrixTransform>  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+## See also
+- <xref:System.Windows.Media.MatrixTransform.Matrix%2A>
+- <xref:System.Windows.Media.MatrixTransform>
+- [Key-Frame Animations Overview](key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

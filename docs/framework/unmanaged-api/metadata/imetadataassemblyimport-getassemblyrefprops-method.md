@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::GetAssemblyRefProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.GetAssemblyRefProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5c6b7fb4-cbca-4479-b650-ab9a99732ea0
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::GetAssemblyRefProps Method
 Gets the set of properties for the assembly reference with the specified metadata signature.  
@@ -50,7 +38,7 @@ HRESULT GetAssemblyRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdar`  
  [in] The `mdAssemblyRef` metadata token that represents the assembly reference for which to get the properties.  
   
@@ -93,5 +81,5 @@ HRESULT GetAssemblyRefProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

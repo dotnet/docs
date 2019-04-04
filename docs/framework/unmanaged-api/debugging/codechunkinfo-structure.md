@@ -1,14 +1,6 @@
 ---
-title: "CodeChunkInfo Structure1"
-ms.custom: ""
+title: "CodeChunkInfo Structure"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CodeChunkInfo"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 0f482454-8517-48de-ba7a-d7aedab13bb5
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# CodeChunkInfo Structure1
+# CodeChunkInfo Structure
+
 Represents a single chunk of code in memory.  
   
 ## Syntax  
@@ -60,7 +49,7 @@ typedef struct _CodeChunkInfo {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

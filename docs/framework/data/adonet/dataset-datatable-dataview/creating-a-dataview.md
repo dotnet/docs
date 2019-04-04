@@ -1,24 +1,10 @@
 ---
 title: "Creating a DataView"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: b1cc02d1-23b1-4439-a998-0da1899f3442
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Creating a DataView
 There are two ways to create a <xref:System.Data.DataView>. You can use the **DataView** constructor, or you can create a reference to the <xref:System.Data.DataTable.DefaultView%2A> property of the <xref:System.Data.DataTable>. The **DataView** constructor can be empty, or it can take either a **DataTable** as a single argument, or a **DataTable** along with filter criteria, sort criteria, and a row state filter. For more information about the additional arguments available for use with the **DataView**, see [Sorting and Filtering Data](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md).  
@@ -53,10 +39,10 @@ Dim custDV As DataView = custDS.Tables("Customers").DefaultView
 DataView custDV = custDS.Tables["Customers"].DefaultView;  
 ```  
   
-## See Also  
- <xref:System.Data.DataTable>  
- <xref:System.Data.DataView>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [Sorting and Filtering Data](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)  
- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataTable>
+- <xref:System.Data.DataView>
+- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [Sorting and Filtering Data](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/sorting-and-filtering-data.md)
+- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

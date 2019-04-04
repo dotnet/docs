@@ -1,21 +1,7 @@
 ---
 title: "How To: Dynamic Update"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb
-caps.latest.revision: 4
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Dynamic Update
 This topic outlines the basic steps required to create and dynamically update the routing configuration. In this example, the initial routing configuration is obtained from the configuration file and routes all messages to the regularCalc calculator service; however, it is subsequently updated programmatically in order to change the destination endpoint the roundingCalc service.  
@@ -168,7 +154,7 @@ This topic outlines the basic steps required to create and dynamically update th
     ```  
   
     > [!NOTE]
-    >  Since the method for providing a new RoutingConfiguration is contained in the RoutingExtension service extension, new RoutingConfiguration objects can be provided anywhere in the WCF extensibility model that has or can obtain a reference to the ServiceHost or ServiceExtensions (such as in another ServiceExtension). For an example of dynamically updating the RoutingConfiguration in this manner, see [Dynamic Reconfiguration](../../../../docs/framework/wcf/samples/dynamic-reconfiguration.md).  
+    > Since the method for providing a new RoutingConfiguration is contained in the RoutingExtension service extension, new RoutingConfiguration objects can be provided anywhere in the WCF extensibility model that has or can obtain a reference to the ServiceHost or ServiceExtensions (such as in another ServiceExtension).
   
 ## Example  
  Following is a complete listing of the console application used in this example.  
@@ -304,5 +290,5 @@ namespace Microsoft.Samples.AdvancedFilters
 </configuration>  
 ```  
   
-## See Also  
- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+## See also
+- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

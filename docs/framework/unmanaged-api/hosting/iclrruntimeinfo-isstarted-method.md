@@ -1,14 +1,6 @@
 ---
 title: "ICLRRuntimeInfo::IsStarted Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRRuntimeInfo.IsStarted"
 api_location: 
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "IsStarted method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::IsStarted method [.NET Framework hosting]"
 ms.assetid: ef6f2662-323b-4534-aa82-6d1afb7b9309
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRRuntimeInfo::IsStarted Method
 Indicates whether the runtime has been started (that is, whether the [ICLRRuntimeHost::Start method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) has been called and has succeeded).  
@@ -39,7 +27,7 @@ HRESULT IsStarted(
         [out] DWORD    *pdwStartupFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbStarted`  
  [out] `true` if this runtime is started; otherwise, `false`.  
   
@@ -66,7 +54,7 @@ HRESULT IsStarted(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

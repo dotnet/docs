@@ -1,29 +1,15 @@
 ---
 title: "Data Contract Schema Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts [WCF], schema reference"
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-caps.latest.revision: 24
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Data Contract Schema Reference
 This topic describes the subset of the XML Schema (XSD) used by <xref:System.Runtime.Serialization.DataContractSerializer> to describe common language runtime (CLR) types for XML serialization.  
   
 ## DataContractSerializer Mappings  
- The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
+ The `DataContractSerializer` maps CLR types to XSD when metadata is exported from a Windows Communication Foundation (WCF) service using a metadata endpoint or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). For more information, see [Data Contract Serializer](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).  
   
  The `DataContractSerializer` also maps XSD to CLR types when Svcutil.exe is used to access Web Services Description Language (WSDL) or XSD documents and generate data contracts for services or clients.  
   
@@ -40,7 +26,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
 ## General Information  
   
--   The schema namespace is described at [XML Schema](http://go.microsoft.com/fwlink/?LinkId=95475). The prefix "xs" is used in this document.  
+-   The schema namespace is described at [XML Schema](https://go.microsoft.com/fwlink/?LinkId=95475). The prefix "xs" is used in this document.  
   
 -   Any attributes with a non-schema namespace are ignored.  
   
@@ -55,7 +41,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`elementFormDefault`|Must be qualified. All elements must be qualified for a schema to be supported by `DataContractSerializer`. This can be accomplished by either setting xs:schema/@elementFormDefault to "qualified" or by setting xs:element/@form to "qualified" on each individual element declaration.|  
 |`finalDefault`|Ignored.|  
 |`Id`|Ignored.|  
-|`targetNamespace`|Supported and mapped to the data contract namespace. If this attribute is not specified, the blank namespace is used. Cannot be the reserved namespace http://schemas.microsoft.com/2003/10/Serialization/.|  
+|`targetNamespace`|Supported and mapped to the data contract namespace. If this attribute is not specified, the blank namespace is used. Cannot be the reserved namespace `http://schemas.microsoft.com/2003/10/Serialization/`.|  
 |`version`|Ignored.|  
   
 ### \<xs:schema>: contents  
@@ -100,7 +86,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`choice`|Forbidden|  
 |`sequence`|Supported, maps to data members of a data contract.|  
 |`attribute`|Forbidden, even if use="prohibited" (with one exception). Only optional attributes from the Standard Serialization Schema namespace are supported. They do not map to data members in the data contract programming model. Currently, only one such attribute has meaning and is discussed in the ISerializable section. All others are ignored.|  
-|`attributeGroup`|Forbidden. In the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] v1 release, `DataContractSerializer` ignores the presence of `attributeGroup` inside `xs:complexType`.|  
+|`attributeGroup`|Forbidden. In the WCF v1 release, `DataContractSerializer` ignores the presence of `attributeGroup` inside `xs:complexType`.|  
 |`anyAttribute`|Forbidden.|  
 |(empty)|Maps to a data contract with no data members.|  
   
@@ -210,7 +196,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
  \* When using the `simpleType` and `complexType,` mapping for anonymous types is the same as for non-anonymous types, except that there is no anonymous data contracts, and so a named data contract is created, with a generated name derived from the element name. The rules for anonymous types are in the following list:  
   
--   [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
+-   WCF implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
   
 -   The generated data contract name of the inner type is the data contract name of the outer type followed by a period, the name of the element, and the string "Type".  
   
@@ -240,7 +226,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
 -   Simple type restrictions of `xs:string` that do not have any restriction facets other than `xs:enumeration` are mapped to enumeration data contracts.  
   
--   All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] primitive type mapping, see Type/primitive mapping.  
+-   All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. For more information about primitive type mapping, see Type/primitive mapping.  
   
 ### \<xs:restriction>: attributes  
   
@@ -298,15 +284,14 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
  The following code shows a C# enumeration class.  
   
-```  
+```csharp  
 public enum MyEnum  
 {  
-   first = 3,  
-   second = 4,  
-   third =5  
+  first = 3,  
+  second = 4,  
+  third =5  
+}  
 ```  
-  
- }  
   
  This class maps to the following schema by the `DataContractSerializer`. If enumeration values start from 1, `xs:annotation` blocks are not generated.  
   
@@ -357,7 +342,7 @@ public enum MyEnum
   
  For example, the following code flags an enumeration type.  
   
-```  
+```csharp  
 [Flags]  
 public enum AuthFlags  
 {    
@@ -410,7 +395,7 @@ rialization/">64</EnumerationValue>
   
  For example, the following code is a data contract.  
   
-```  
+```csharp  
 [DataContract]  
 public class Person  
 {  
@@ -532,7 +517,7 @@ public class Employee : Person
 |`positiveInteger`|<xref:System.Int64>.|  
   
 ## ISerializable types mapping  
- In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, `ISerializable` was introduced as a general mechanism to serialize objects for persistence or data transfer. There are many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types that implement `ISerializable` and that can be passed between applications. `DataContractSerializer` naturally provides support for `ISerializable` classes. The `DataContractSerializer` maps `ISerializable` implementation schema types that differ only by the QName (qualified name) of the type and are effectively property collections. For example, the `DataContractSerializer` maps <xref:System.Exception> to the following XSD type in the http://schemas.datacontract.org/2004/07/System namespace.  
+ In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, <xref:System.Runtime.Serialization.ISerializable> was introduced as a general mechanism to serialize objects for persistence or data transfer. There are many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types that implement `ISerializable` and that can be passed between applications. <xref:System.Runtime.Serialization.DataContractSerializer> naturally provides support for `ISerializable` classes. The `DataContractSerializer` maps `ISerializable` implementation schema types that differ only by the QName (qualified name) of the type and are effectively property collections. For example, the `DataContractSerializer` maps <xref:System.Exception> to the following XSD type in the `http://schemas.datacontract.org/2004/07/System` namespace.  
   
 ```xml  
 <xs:complexType name="Exception">  
@@ -544,12 +529,12 @@ public class Employee : Person
 </xs:complexType>  
 ```  
   
- The optional attribute `ser:FactoryType` declared in the Data Contract Serialization schema references a factory class that can deserialize the type. The factory class must be part of the known types collection of the `DataContractSerializer` instance being used. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ The optional attribute `ser:FactoryType` declared in the Data Contract Serialization schema references a factory class that can deserialize the type. The factory class must be part of the known types collection of the `DataContractSerializer` instance being used. For more information about known types, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
 ## DataContract Serialization Schema  
  A number of schemas exported by the `DataContractSerializer` use types, elements, and attributes from a special Data Contract Serialization namespace:  
   
- http://schemas.microsoft.com/2003/10/Serialization  
+ `http://schemas.microsoft.com/2003/10/Serialization`
   
  The following is a complete Data Contract Serialization schema declaration.  
   
@@ -627,7 +612,7 @@ public class Employee : Person
 ## Importing non-DataContract schemas  
  `DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).  
   
-```  
+```csharp  
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]  
 [System.Xml.Serialization.XmlSchemaProviderAttribute("ExportSchema")]  
 [System.Xml.Serialization.XmlRootAttribute(IsNullable=false)]  
@@ -683,16 +668,16 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
       <xs:sequence minOccurs="1" maxOccurs="1">  
          <xs:element name="DateTime" type="xs:dateTime"  
          minOccurs="1" maxOccurs="1" />  
-         <xs:elementname="OffsetMinutes" type="xs:short"  
+         <xs:element name="OffsetMinutes" type="xs:short"  
          minOccurs="1" maxOccurs="1" />  
       </xs:sequence>  
    </xs:complexType>  
 </xs:schema>  
 ```  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)

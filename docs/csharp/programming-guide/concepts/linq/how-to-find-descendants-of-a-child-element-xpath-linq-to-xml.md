@@ -1,19 +1,7 @@
 ---
 title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find Descendants of a Child Element (XPath-LINQ to XML) (C#)
 This topic shows how to get the descendant elements of a child element with a particular name.  
@@ -81,5 +69,6 @@ Results are identical
 This is the start of a sentence.  This is a second sentence.  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

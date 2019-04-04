@@ -1,17 +1,7 @@
 ---
 title: "How to: Query for Duplicate Files in a Directory Tree (LINQ) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 1ff5562b-0d30-46d1-b426-a04e8f78c840
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Query for Duplicate Files in a Directory Tree (LINQ) (C#)
 Sometimes files that have the same name may be located in more than one folder. For example, under the Visual Studio installation folder, several folders have a readme.htm file. This example shows how to query for such duplicate file names under a specified root folder. The second example shows how to query for files whose size and creation times also match.  
@@ -78,12 +68,12 @@ class QueryDuplicateFileNames
   
         public override int GetHashCode()  
         {  
-            string str = String.Format("{0}{1}{2}", this.CreationTime, this.Length, this.Name);  
+            string str = $"{this.CreationTime}{this.Length}{this.Name}";
             return str.GetHashCode();  
         }  
         public override string ToString()  
         {  
-            return String.Format("{0} {1} {2}", this.Name, this.Length, this.CreationTime);  
+            return $"{this.Name} {this.Length} {this.CreationTime}";
         }  
     }  
     static void QueryDuplicates2()  
@@ -176,6 +166,7 @@ class QueryDuplicateFileNames
 ## Compiling the Code  
  Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also  
- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+## See also
+
+- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)

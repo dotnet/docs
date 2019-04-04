@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetThreadInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetThreadInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fc994fef-65c9-432a-84cb-66c8141147e7
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetThreadInfo Method
 Gets the current Win32 thread identity for the specified thread.  
@@ -41,7 +29,7 @@ HRESULT GetThreadInfo(
     [out] DWORD    *pdwWin32ThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread for which to get the current Win32 ID.  
   
@@ -57,5 +45,5 @@ HRESULT GetThreadInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

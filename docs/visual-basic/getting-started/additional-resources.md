@@ -2,18 +2,12 @@
 title: "Additional resources for Visual Basic programmers"
 description: "Discover resources on the web for you to learn, ask questions and find out more information about Visual Basic."
 ms.date: 02/21/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, additional resources"
   - "resources [Visual Basic], additional"
   - "Help, Visual Basic Web sites"
   - "Visual Basic, videos"
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
-author: mairaw
-ms.author: mairaw
 ---
 # Additional resources
 
@@ -26,7 +20,7 @@ The following web sites provide guidance and can help you find answers to common
 |Term|Definition|
 |----------|----------------|
 |[Visual Basic .NET Language Design](https://github.com/dotnet/vblang)|Official repository on GitHub for Visual Basic .NET language design.|
-|[Microsoft Visual Basic Team Blog](https://blogs.msdn.microsoft.com/vbteam/)|Provides access to the Visual Basic team blog.|
+|[Microsoft Visual Basic Team Blog](https://devblogs.microsoft.com/vbteam/)|Provides access to the Visual Basic team blog.|
 
 ### Code samples
 
@@ -64,5 +58,5 @@ The following web sites provide guidance and can help you find answers to common
 
 ## See also
 
-[Get started with Visual Basic](../../visual-basic/getting-started/index.md)  
-[Talk to Us](/visualstudio/ide/talk-to-us)  
+- [Get started with Visual Basic](../../visual-basic/getting-started/index.md)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

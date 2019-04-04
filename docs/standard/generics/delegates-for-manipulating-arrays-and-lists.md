@@ -1,13 +1,7 @@
 ---
 title: "Generic Delegates for Manipulating Arrays and Lists"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [.NET Framework], generic delegates"
   - "chaining delegates"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "lists [.NET Framework], generic delegates"
   - "generics [.NET Framework], delegates"
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Generic Delegates for Manipulating Arrays and Lists
 This topic provides an overview of generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.  
@@ -46,10 +35,11 @@ This topic provides an overview of generic delegates for conversions, search pre
 ### Chaining Delegates  
  Many of the methods that use these delegates return an array or list, which can be passed to another method. For example, if you want to select certain elements of an array, convert those elements to a new type, and save them in a new array, you can pass the array returned by the <xref:System.Array.FindAll%2A> generic method to the <xref:System.Array.ConvertAll%2A> generic method. If the new element type lacks a natural sort order, you can pass the array returned by the <xref:System.Array.ConvertAll%2A> generic method to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Comparison%7B%60%600%7D%29> generic method.  
   
-## See Also  
- <xref:System.Collections.Generic?displayProperty=nameWithType>  
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
- [Generics](../../../docs/standard/generics/index.md)  
- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)  
- [Generic Interfaces](../../../docs/standard/generics/interfaces.md)  
- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)
+## See also
+
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [Generics](../../../docs/standard/generics/index.md)
+- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)
+- [Generic Interfaces](../../../docs/standard/generics/interfaces.md)
+- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)

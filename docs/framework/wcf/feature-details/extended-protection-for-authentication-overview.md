@@ -1,21 +1,7 @@
 ---
 title: "Extended Protection for Authentication Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3d2ceffe-a7bf-4bd9-a5a2-9406423bd7f8
-caps.latest.revision: 4
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Extended Protection for Authentication Overview
 Extended Protection for Authentication helps protect against man-in-the-middle (MITM) attacks, in which an attacker intercepts a client’s credentials and forwards them to a server.  
@@ -40,5 +26,5 @@ Extended Protection for Authentication helps protect against man-in-the-middle (
   
  For more information, see the Win7 CBT/Extended Protection sample.  
   
-## See Also  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

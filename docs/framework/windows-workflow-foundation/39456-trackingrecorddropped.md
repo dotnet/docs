@@ -1,19 +1,7 @@
 ---
 title: "39456 - TrackingRecordDropped"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: da13d5bc-1736-47a4-b3fd-064ca8040326
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 39456 - TrackingRecordDropped
 ## Properties  

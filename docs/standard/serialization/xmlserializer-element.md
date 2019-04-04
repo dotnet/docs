@@ -1,26 +1,13 @@
 ---
-title: "&lt;xmlSerializer&gt; Element"
-ms.custom: ""
+title: "<xmlSerializer> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "<xmlSerializer> element"
   - "XML serialization, configuration"
   - "xmlSerializer element"
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-# &lt;xmlSerializer&gt; Element
+# \<xmlSerializer> Element
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.  
   
  \<configuration>  
@@ -67,7 +54,8 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Xml.Serialization.XmlSerializer>  
- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+## See also
+
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::AppDomainShutdownFinished Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.AppDomainShutdownFinished"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 52794819-0a59-4bb1-a265-0f158cd5cd65
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::AppDomainShutdownFinished Method
 Notifies the profiler that an application domain has been unloaded from a process.  
@@ -41,7 +29,7 @@ HRESULT AppDomainShutdownFinished(
     [in] HRESULT     hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `appDomainId`  
  [in] Identifies the domain in which the application's assemblies are stored.  
   
@@ -62,5 +50,5 @@ HRESULT AppDomainShutdownFinished(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

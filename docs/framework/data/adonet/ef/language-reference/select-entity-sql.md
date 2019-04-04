@@ -1,21 +1,7 @@
 ---
 title: "SELECT (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9a33bd0d-ded1-41e7-ba3c-305502755e3b
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SELECT (Entity SQL)
 Specifies the elements returned by a query.  
@@ -40,7 +26,7 @@ SELECT VALUE [ ALL | DISTINCT ] [ topSubclause ] expr FROM fromClause [ WHERE wh
  Allows only one item to be specified, and does not add on a row wrapper.  
   
  `topSubclause`  
- Any valid expression that indicates the number of first results to return from the query, of the form `top (``expr``)`.  
+ Any valid expression that indicates the number of first results to return from the query, of the form `top(expr)`.  
   
  The LIMIT parameter of the [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) operator also lets you select the first n items in the result set.  
   
@@ -108,7 +94,7 @@ SELECT a1, a2 FROM T1 AS a1, T2 AS a2
   
  [!code-csharp[DP EntityServices Concepts 2#LESS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#less)]  
   
-## See Also  
- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)
+## See also
+- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)

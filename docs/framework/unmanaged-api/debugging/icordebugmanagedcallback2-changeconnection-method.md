@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugManagedCallback2::ChangeConnection Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugManagedCallback2.ChangeConnection"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7263f9a9-4c0b-4d82-a181-288873fb2b18
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugManagedCallback2::ChangeConnection Method
 Notifies the debugger that the set of tasks associated with the specified connection has changed.  
@@ -42,7 +30,7 @@ HRESULT ChangeConnection (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process containing the connection that changed.  
   
@@ -67,6 +55,6 @@ HRESULT ChangeConnection (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)  
- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## See also
+- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
+- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

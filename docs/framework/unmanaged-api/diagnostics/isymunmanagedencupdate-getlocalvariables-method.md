@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedENCUpdate::GetLocalVariables Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedENCUpdate.GetLocalVariables"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 5c8840be-ffea-447f-9c8d-178f1eaf8d06
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedENCUpdate::GetLocalVariables Method
 Gets the local variables.  
@@ -44,7 +32,7 @@ HRESULT GetLocalVariables(
     [out] ULONG        *pceltFetched);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata token of the method.  
   
@@ -52,7 +40,7 @@ HRESULT GetLocalVariables(
  [in] A `ULONG` that indicates the size of the `rgLocals` parameter.  
   
  `rgLocals`  
- [out] The returned array of <!--zz<xref:ISymUnmanagedVariable>--> `ISymUnmanagedVariable`  instances.  
+ [out] The returned array of [ISymUnmanagedVariable](isymunmanagedvariable-interface.md) instances.  
   
  `pceltFetched`  
  [out] A pointer to a `ULONG` that receives the size of the `rgLocals` buffer required to contain the locals.  
@@ -63,5 +51,5 @@ HRESULT GetLocalVariables(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+## See also
+- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

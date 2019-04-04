@@ -1,14 +1,6 @@
 ---
 title: "Documents in WPF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "documents [WPF], packaging"
   - "documents [WPF], text layout"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "documents [WPF], types of"
   - "documents [WPF], browser-viewable"
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
-caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Documents in WPF
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
@@ -35,11 +21,11 @@ ms.workload:
   
  Fixed documents are intended for applications that require a precise [!INCLUDE[TLA#tla_wys](../../../../includes/tlasharptla-wys-md.md)] presentation, independent of the display or printer hardware used. Typical uses for fixed documents include desktop publishing, word processing, and form layout, where adherence to the original page design is critical. As part of its layout, a fixed document maintains the precise positional placement of content elements independent of the display or print device in use. For example, a fixed document page viewed on 96 dpi display will appear exactly the same when it is output to a 600 dpi laser printer as when it is output to a 4800 dpi phototypesetter. The page layout remains the same in all cases, while the document quality maximizes to the capabilities of each device.  
   
- By comparison, flow documents are designed to optimize viewing and readability and are best utilized when ease of reading is the primary document consumption scenario. Rather than being set to one predefined layout, flow documents dynamically adjust and reflow their content based on run-time variables such as window size, device resolution, and optional user preferences. A Web page is a simple example of a flow document where the page content is dynamically formatted to fit the current window. Flow documents optimize the viewing and reading experience for the user, based on the runtime environment. For example, the same flow document will dynamically reformat for optimal readability on either high-resolution 19-inch display or a small 2x3-inch PDA screen. In addition, flow documents have a number of built in features including search, viewing modes that optimize readability, and the ability to change the size and appearance of fonts.  See [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md) for illustrations, examples, and in-depth information on flow documents.  
+ By comparison, flow documents are designed to optimize viewing and readability and are best utilized when ease of reading is the primary document consumption scenario. Rather than being set to one predefined layout, flow documents dynamically adjust and reflow their content based on run-time variables such as window size, device resolution, and optional user preferences. A Web page is a simple example of a flow document where the page content is dynamically formatted to fit the current window. Flow documents optimize the viewing and reading experience for the user, based on the runtime environment. For example, the same flow document will dynamically reformat for optimal readability on either high-resolution 19-inch display or a small 2x3-inch PDA screen. In addition, flow documents have a number of built in features including search, viewing modes that optimize readability, and the ability to change the size and appearance of fonts.  See [Flow Document Overview](flow-document-overview.md) for illustrations, examples, and in-depth information on flow documents.  
   
 <a name="document_viewer"></a>   
 ## Document Controls and Text Layout  
- The [!INCLUDE[TLA2#tla_avalonwinfx](../../../../includes/tla2sharptla-avalonwinfx-md.md)] provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
+ The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
   
 ### Fixed Document Control - DocumentViewer  
  The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  
@@ -48,7 +34,7 @@ ms.workload:
   
 <a name="flow_document"></a>   
 ### Flow Document Controls  
- **Note:** For more detailed information on flow document features and how to create them, see [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md).  
+ **Note:** For more detailed information on flow document features and how to create them, see [Flow Document Overview](flow-document-overview.md).  
   
  Display of flow document content is supported by three controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
@@ -62,7 +48,7 @@ ms.workload:
   
 <a name="text_in_the_user_interface"></a>   
 ### Text in the User Interface  
- Besides adding text to documents, text can obviously be used in application UI such as forms. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../../../../docs/framework/wpf/controls/textblock-overview.md).  
+ Besides adding text to documents, text can obviously be used in application UI such as forms. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).  
   
 <a name="packaging"></a>   
 ## Document Packaging  
@@ -142,15 +128,15 @@ ms.workload:
   
 -   Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
-## See Also  
- <xref:System.Windows.Documents.FixedDocument>  
- <xref:System.Windows.Documents.FlowDocument>  
- <xref:System.Windows.Xps.Packaging.XpsDocument>  
- <xref:System.IO.Packaging.ZipPackage>  
- <xref:System.IO.Packaging.ZipPackagePart>  
- <xref:System.IO.Packaging.PackageRelationship>  
- <xref:System.Windows.Controls.DocumentViewer>  
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)
+## See also
+- <xref:System.Windows.Documents.FixedDocument>
+- <xref:System.Windows.Documents.FlowDocument>
+- <xref:System.Windows.Xps.Packaging.XpsDocument>
+- <xref:System.IO.Packaging.ZipPackage>
+- <xref:System.IO.Packaging.ZipPackagePart>
+- <xref:System.IO.Packaging.PackageRelationship>
+- <xref:System.Windows.Controls.DocumentViewer>
+- [Text](optimizing-performance-text.md)
+- [Flow Document Overview](flow-document-overview.md)
+- [Printing Overview](printing-overview.md)
+- [Document Serialization and Storage](document-serialization-and-storage.md)

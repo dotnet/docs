@@ -2,9 +2,7 @@
 title: "How to: convert strings to DateTime"
 description: "Learn techniques to parse strings that represent dates and times to create a DateTime from the date and time string."
 ms.date: "02/15/2018"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +16,7 @@ helpviewer_keywords:
   - "time strings"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Parsing Date and Time Strings in .NET
 
 Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and the time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:
@@ -88,9 +81,10 @@ In the following example, the <xref:System.DateTime.ParseExact%2A?displayPropert
 
 Each overload of the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods also has an <xref:System.IFormatProvider> parameter that provides culture-specific information about the formatting of the string. This <xref:System.IFormatProvider> object is a <xref:System.Globalization.CultureInfo> object that represents a standard culture or a <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property.  <xref:System.DateTime.ParseExact%2A> also uses an additional string or string array argument that defines one or more custom date and time formats.  
 
-## See Also  
- [Parsing Strings](parsing-strings.md)  
- [Formatting Types](formatting-types.md)  
- [Type Conversion in .NET](type-conversion.md)  
- [Standard date and time formats](standard-date-and-time-format-strings.md)  
- [Custom date and time format strings](custom-date-and-time-format-strings.md)
+## See also
+
+- [Parsing Strings](parsing-strings.md)
+- [Formatting Types](formatting-types.md)
+- [Type Conversion in .NET](type-conversion.md)
+- [Standard date and time formats](standard-date-and-time-format-strings.md)
+- [Custom date and time format strings](custom-date-and-time-format-strings.md)

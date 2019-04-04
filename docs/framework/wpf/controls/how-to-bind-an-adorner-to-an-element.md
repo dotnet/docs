@@ -1,14 +1,6 @@
 ---
 title: "How to: Bind an Adorner to an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "UIElements [WPF], binding adorners to"
   - "adorners [WPF], binding to specified UIElements"
 ms.assetid: b2101611-a0ee-4137-bdb8-9b3673d2e6b9
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind an Adorner to an Element
 This example shows how to programmatically bind an adorner to a specified <xref:System.Windows.UIElement>.  
@@ -35,11 +21,11 @@ This example shows how to programmatically bind an adorner to a specified <xref:
   
  The following example binds a SimpleCircleAdorner (shown above) to a <xref:System.Windows.Controls.TextBox> named *myTextBox*.  
   
- [!code-csharp[Adorners_SimpleCircleAdorner#_AdornSingleElement](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/CSharp/Window1.xaml.cs#_adornsingleelement)]
- [!code-vb[Adorners_SimpleCircleAdorner#_AdornSingleElement](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_adornsingleelement)]  
+ [!code-csharp[Adorners_SimpleCircleAdorner#_AdornSingleElement](~/samples/snippets/csharp/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/CSharp/Window1.xaml.cs#_adornsingleelement)]
+ [!code-vb[Adorners_SimpleCircleAdorner#_AdornSingleElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_adornsingleelement)]  
   
 > [!NOTE]
 >  Using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] to bind an adorner to another element is currently not supported.  
   
-## See Also  
- [Adorners Overview](../../../../docs/framework/wpf/controls/adorners-overview.md)
+## See also
+- [Adorners Overview](adorners-overview.md)

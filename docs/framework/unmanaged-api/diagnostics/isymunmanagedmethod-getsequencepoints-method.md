@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedMethod::GetSequencePoints Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedMethod.GetSequencePoints"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f909ac48-3d8f-49fb-a369-e3d9959151cd
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetSequencePoints Method
 Gets all the sequence points within this method.  
@@ -47,7 +35,7 @@ HRESULT GetSequencePoints(
     [in, size_is(cPoints)] ULONG32  endColumns[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cPoints`  
  [in] A `ULONG32` that receives the size of the `offsets`, `documents`, `lines`, `columns`, `endLines`, and `endColumns` arrays.  
   
@@ -78,5 +66,5 @@ HRESULT GetSequencePoints(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+## See also
+- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

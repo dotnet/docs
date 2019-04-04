@@ -2,13 +2,8 @@
 title: dotnet store command
 description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
 author: bleroy
-ms.author: mairaw
-ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 05/29/2018
+ms.custom: "seodec18"
 ---
 # dotnet store
 
@@ -34,7 +29,7 @@ Specifies the [target framework](../../standard/frameworks.md).
 
 `-m|--manifest <PATH_TO_MANIFEST_FILE>`
 
-The *package store manifest file* is an XML file that contains the list of packages to store. The format of the manifest file is compatible with the *csproj* format. So, a *csproj* project file that references the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store. To specify multiple manifest files, repeat the option and path for each file: `--manifest packages1.csproj --manifest packages2.csproj`.
+The *package store manifest file* is an XML file that contains the list of packages to store. The format of the manifest file is compatible with the SDK-style project format. So, a project file that references the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store. To specify multiple manifest files, repeat the option and path for each file. For example: `--manifest packages1.csproj --manifest packages2.csproj`.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
@@ -82,4 +77,4 @@ Store the packages specified in the *packages.csproj* without optimization:
 
 ## See also
 
-[Runtime package store](../deploying/runtime-store.md)   
+- [Runtime package store](../deploying/runtime-store.md)

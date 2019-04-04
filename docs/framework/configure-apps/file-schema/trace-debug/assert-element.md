@@ -1,14 +1,6 @@
 ---
-title: "&lt;assert&gt; Element"
-ms.custom: ""
+title: "<assert> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/assert"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#assert"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "<assert> element"
   - "assert element"
 ms.assetid: ef4c3229-b151-4d85-8091-e6456af9b935
-caps.latest.revision: 9
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;assert&gt; Element
+# \<assert> Element
 Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method; also specifies the name of the file to write messages to.  
   
  \<configuration>  
@@ -77,6 +63,6 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Debug>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.Debug>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

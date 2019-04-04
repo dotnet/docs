@@ -1,13 +1,7 @@
 ---
 title: "Miscellaneous Constructs in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, miscellaneous constructs"
   - "regular expressions, miscellaneous constructs"
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Miscellaneous Constructs in Regular Expressions
 Regular expressions in .NET include three miscellaneous language constructs. One lets you enable or disable particular matching options in the middle of a regular expression pattern. The remaining two let you include comments in a regular expression.  
@@ -68,7 +57,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
 ## Inline Comment  
  The `(?#` *comment*`)` construct lets you include an inline comment in a regular expression. The regular expression engine does not use any part of the comment in pattern matching, although the comment is included in the string that is returned by the <xref:System.Text.RegularExpressions.Regex.ToString%2A?displayProperty=nameWithType> method. The comment ends at the first closing parenthesis.  
   
- The following example repeats the first regular expression pattern from the example in the previous section. It adds two inline comments to the regular expression to indicate whether the comparison is case-sensitive. The regular expression pattern, `\b((?# case-sensitive comparison)D\w+)\s((?#case-insensitive comparison)d\w+)\b`, is defined as follows.  
+ The following example repeats the first regular expression pattern from the example in the previous section. It adds two inline comments to the regular expression to indicate whether the comparison is case-sensitive. The regular expression pattern, `\b((?# case-sensitive comparison)D\w+)\s(?ixn)((?#case-insensitive comparison)d\w+)\b`, is defined as follows.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
@@ -97,7 +86,6 @@ Regular expressions in .NET include three miscellaneous language constructs. One
 |`\d+`|Match one or more decimal digits.|  
 |`(,-*\d+)*`|Match zero or one occurrence of a comma, followed by an optional minus sign, followed by one or more decimal digits.|  
 |`(\:\w{1,4}?)*`|Match zero or one occurrence of a colon, followed by one to four, but as few as possible, white-space characters.|  
-|`(?#case insensitive comparison)`|An inline comment. It has no effect on pattern-matching behavior.|  
 |`\}`|Match a closing brace.|  
 |`(?x)`|Enable the ignore pattern white-space option so that the end-of-line comment will be recognized.|  
 |`# Looks for a composite format item.`|An end-of-line comment.|  
@@ -107,5 +95,6 @@ Regular expressions in .NET include three miscellaneous language constructs. One
   
  Note that, instead of providing the `(?x)` construct in the regular expression, the comment could also have been recognized by calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method and passing it the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> enumeration value.  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

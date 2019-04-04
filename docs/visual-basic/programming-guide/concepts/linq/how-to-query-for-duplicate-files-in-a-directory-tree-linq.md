@@ -1,18 +1,7 @@
 ---
 title: "How to: Query for Duplicate Files in a Directory Tree (LINQ) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 387d7c97-95dd-4a50-9761-7e9cf8ae9e6a
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Query for Duplicate Files in a Directory Tree (LINQ) (Visual Basic)
 Sometimes files that have the same name may be located in more than one folder. For example, under the Visual Studio installation folder, several folders have a readme.htm file. This example shows how to query for such duplicate file names under a specified root folder. The second example shows how to query for files whose size and creation times also match.  
@@ -60,14 +49,14 @@ Module QueryDuplicateFileNames
         PageOutput(duplicates, trimLength)  
   
     End Sub  
-    ' Pages console diplay for large query results. No more than one group per page.  
+    ' Pages console display for large query results. No more than one group per page.  
     ' This sub specifically works with group queries of FileInfo objects  
     ' but can be modified for any type.  
     Sub PageOutput(ByVal groupQuery, ByVal charsToSkip)  
   
         ' "3" = 1 line for extension key + 1 for "Press any key" + 1 for input cursor.  
         Dim numLines As Integer = Console.WindowHeight - 3  
-        ' Flag to indicate whether there are more results to diplay  
+        ' Flag to indicate whether there are more results to display  
         Dim goAgain As Boolean = True  
   
         For Each fg As IEnumerable(Of System.IO.FileInfo) In groupQuery  
@@ -108,6 +97,7 @@ End Module
 ## Compiling the Code  
  Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a `Imports` statement for the System.Linq namespace.  
   
-## See Also  
- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+## See also
+
+- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

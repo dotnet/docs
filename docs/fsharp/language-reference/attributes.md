@@ -1,17 +1,8 @@
 ---
-title: Attributes (F#)
+title: Attributes
 description: Learn how F# Attributes enable metadata to be applied to a programming construct.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 95c001e6-3708-4d04-a850-d855f78eb51e 
 ---
-
 # Attributes
 
 Attributes enable metadata to be applied to a programming construct.
@@ -73,39 +64,39 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>assembly</td>
-    <td>`[<assembly: AssemblyVersionAttribute("1.0.0.0")>]`</td> 
+    <td><pre lang="fsharp"><code>[&lt;assembly: AssemblyVersionAttribute("1.0.0.0")&gt;]<code></pre></td> 
   </tr>
   <tr>
     <td>return</td>
-    <td>`let function1 x : [<return: Obsolete>] int = x + 1`</td> 
+    <td><pre lang="fsharp"><code>let function1 x : [&lt;return: Obsolete&gt;] int = x + 1<code></pre></td> 
   </tr>
   <tr>
     <td>field</td>
-    <td>`[<field: DefaultValue>] val mutable x: int`</td> 
+    <td><pre lang="fsharp"><code>[&lt;field: DefaultValue&gt;] val mutable x: int<code></pre></td> 
   </tr>
   <tr>
     <td>property</td>
-    <td>`[<property: Obsolete>] this.MyProperty = x`</td> 
+    <td><pre lang="fsharp"><code>[&lt;property: Obsolete&gt;] this.MyProperty = x<code></pre></td> 
   </tr>
   <tr>
     <td>param</td>
-    <td>`member this.MyMethod([<param: Out>] x : ref<int>) = x := 10`</td> 
+    <td><pre lang="fsharp"><code>member this.MyMethod([&lt;param: Out&gt;] x : ref&lt;int&gt;) = x := 10<code></pre></td> 
   </tr>
   <tr>
     <td>type</td>
     <td>
-        ```
-        [<type: StructLayout(Sequential)>] 
+        <pre lang="fsharp"><code>
+        [&lt;type: StructLayout(Sequential)&gt;] 
         type MyStruct = 
         struct 
         x : byte
         y : int
         end
-        ```
-    </td> 
+        <code></pre>
+    </td>
   </tr>
 </table>
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

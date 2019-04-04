@@ -1,17 +1,7 @@
 ---
 title: "LINQ to XML Classes Overview (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ to XML Classes Overview (C#)
 This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] classes in the <xref:System.Xml.Linq> namespace, and a short description of each.  
@@ -90,5 +80,6 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 ### XText Class  
  <xref:System.Xml.Linq.XText> represents a text node. In most cases, you do not have to use this class. This class is primarily used for mixed content.  
   
-## See Also  
- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## See also
+
+- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

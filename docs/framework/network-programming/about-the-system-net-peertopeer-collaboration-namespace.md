@@ -1,19 +1,7 @@
 ---
 title: "About the System.Net.PeerToPeer.Collaboration Namespace"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b5d8c1c1-6844-4947-9759-c7f1b564bded
-caps.latest.revision: 4
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # About the System.Net.PeerToPeer.Collaboration Namespace
 The <xref:System.Net.PeerToPeer.Collaboration> namespace provides classes and APIs that are used to implement peer collaboration activities using the Peer-to-Peer Collaboration Infrastructure.  
@@ -45,5 +33,5 @@ The <xref:System.Net.PeerToPeer.Collaboration> namespace provides classes and AP
   
  Typical P2P applications are: conference calls for collaborative note-taking or whiteboarding, serverless chat applications, interactive advertisements, and online gaming sessions.  
   
-## See Also  
- <xref:System.Net.PeerToPeer.Collaboration>
+## See also
+- <xref:System.Net.PeerToPeer.Collaboration>

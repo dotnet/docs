@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugProcess5::EnumerateGCReferences Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugProcess5.EnumerateGCReferences"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess5::EnumerateGCReferences Method
 Gets an enumerator for all objects that are to be garbage-collected in a process.  
@@ -42,7 +30,7 @@ HRESULT EnumerateGCReferences(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `enumerateWeakReferences`  
  [in] A Boolean value that indicates whether weak references are also to be enumerated. If `enumerateWeakReferences` is `true`, the `ppEnum` enumerator includes both strong references and weak references. If `enumerateWeakReferences` is `false`, the enumerator includes only strong references.  
   
@@ -61,6 +49,6 @@ HRESULT EnumerateGCReferences(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

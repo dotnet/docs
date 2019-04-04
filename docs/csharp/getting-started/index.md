@@ -1,20 +1,14 @@
 ---
-
 title: Get Started - C# Guide
 description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
-keywords: C#, Get Started, Acquisition, Install
 helpviewer_keywords: 
   - "Visual C#, getting started"
   - "getting started, Visual C#"
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ---
-# Get started with C# #
+# Get started with C\#
 
 This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. You can build either a simple Hello World application or, if you have Visual Studio 2017, a simple class library that can be used by other applications.
 
@@ -26,7 +20,7 @@ The following topics are available:
 
 * [Building a C# Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/with-visual-studio.md)
 
-   Visual Studio 2017, the latest release of Visual Studio, lets you code, compile, run, debug, profile, and publish your applications from a integrated development environment for Windows.
+   Visual Studio 2017, the latest release of Visual Studio, lets you code, compile, run, debug, profile, and publish your applications from an integrated development environment for Windows.
 
    The topic lets you create and run a simple Hello World application and then modify it to run a slightly more interactive Hello World application. Once you've finished building and running your application, you can also learn how to [debug it](../../core/tutorials/debugging-with-visual-studio.md) and how to [publish it](../../core/tutorials/publishing-with-visual-studio.md) so that it can be run on any platform supported by .NET Core.
 
@@ -40,11 +34,7 @@ The following topics are available:
 
    This topic shows you how to create and run a simple Hello World application with Visual Studio Code and .NET Core.
 
-## Related Sections
-
-* [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
-
-    Provides a guide to using the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] integrated development environment.
+## Related sections
 
 * [C# Programming Guide](../../csharp/programming-guide/index.md)
 
@@ -54,13 +44,10 @@ The following topics are available:
 
     Provides detailed reference information about C# keywords, operators, preprocessor directives, compiler options, and compiler errors and warnings.
 
-* [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)
-
-    Provides information about how you can access online samples.
-
 * [Walkthroughs](../../csharp/walkthroughs.md)
 
     Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
 
 ## See also
- [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+
+- * [C# Development with Visual Studio](/visualstudio/get-started/csharp/)

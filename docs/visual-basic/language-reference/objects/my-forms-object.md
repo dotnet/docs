@@ -1,20 +1,12 @@
 ---
-title: "My.Forms Object"
+title: "My.Forms Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "My.Forms"
   - "My.MyProject.Forms"
 helpviewer_keywords: 
   - "My.Forms object"
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Forms Object
 Provides properties for accessing an instance of each Windows form declared in the current project.  
@@ -48,7 +40,7 @@ Provides properties for accessing an instance of each Windows form declared in t
 ## Example  
  This example changes the title of the default `SidebarMenu` form.  
   
- [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
+ [!code-vb[VbVbalrMyForms#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyForms/VB/Class1.vb#2)]  
   
  For this example to work, your project must have a form named `SidebarMenu`.  
   
@@ -68,11 +60,12 @@ Provides properties for accessing an instance of each Windows form declared in t
 |Windows Service|No|  
 |Web Site|No|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>  
- <xref:System.Windows.Forms.Form>  
- <xref:System.Windows.Forms.Form.Close%2A>  
- [Objects](../../../visual-basic/language-reference/objects/index.md)  
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
- [Accessing Application Forms](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
+- <xref:System.Windows.Forms.Form>
+- <xref:System.Windows.Forms.Form.Close%2A>
+- [Objects](../../../visual-basic/language-reference/objects/index.md)
+- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
+- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [Accessing Application Forms](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)

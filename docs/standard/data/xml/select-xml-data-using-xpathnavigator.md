@@ -1,24 +1,13 @@
 ---
 title: "Select XML Data Using XPathNavigator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: c268c49e-32b9-4171-b782-dcb7b065fa73
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Select XML Data Using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used to select a set of nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object using an XPath expression. Once selected, you can iterate over the selected set of nodes.  
@@ -67,13 +56,14 @@ while(nodes.MoveNext())
 ### Optimized Selection Methods  
  The <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A>, <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A>, and <xref:System.Xml.XPath.XPathNavigator.SelectDescendants%2A> methods of the <xref:System.Xml.XPath.XPathNavigator> class represent XPath expressions commonly used to retrieve child, descendant, and ancestor nodes. These methods are optimized for performance and are faster than their corresponding XPath expressions. The <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A>, <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A>, and <xref:System.Xml.XPath.XPathNavigator.SelectDescendants%2A> methods selects ancestor, child, and descendant nodes based on an <xref:System.Xml.XPath.XPathNodeType> value or the local name and namespace URI of the nodes to select. The selected ancestor, child, and descendant nodes are returned in an <xref:System.Xml.XPath.XPathNodeIterator> object.  
   
-## See Also  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XPath.XPathDocument>  
- <xref:System.Xml.XPath.XPathNavigator>  
- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
- [Evaluate XPath Expressions using XPathNavigator](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
- [XPath Queries and Namespaces](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+## See also
+
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XPath.XPathDocument>
+- <xref:System.Xml.XPath.XPathNavigator>
+- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
+- [Evaluate XPath Expressions using XPathNavigator](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)
+- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
+- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)
+- [XPath Queries and Namespaces](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)
+- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)

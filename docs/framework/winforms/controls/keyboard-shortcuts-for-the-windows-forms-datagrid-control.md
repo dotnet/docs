@@ -1,28 +1,14 @@
 ---
 title: "Keyboard Shortcuts for the Windows Forms DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "keyboard shortcuts [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], navigation keys"
 ms.assetid: a01780f9-20d5-4f5f-808f-c790c9a007a5
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Keyboard Shortcuts for the Windows Forms DataGrid Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+>  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  The following table lists the keyboard shortcuts that can be used for navigation within the Windows Forms <xref:System.Windows.Forms.DataGrid> control:  
   
@@ -58,6 +44,6 @@ ms.workload:
 |Call the <xref:System.Windows.Forms.DataGrid.EndEdit%2A> method for the current row.|CTRL+ENTER|  
 |Enter a <xref:System.DBNull.Value?displayProperty=nameWithType> value into a cell when in edit mode.|CTRL+0|  
   
-## See Also  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+## See also
+- [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)
+- [DataGrid Control](datagrid-control-windows-forms.md)

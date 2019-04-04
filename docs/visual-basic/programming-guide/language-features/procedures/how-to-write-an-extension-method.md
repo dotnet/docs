@@ -1,21 +1,11 @@
 ---
 title: "How to: Write an Extension Method (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "extending data types [Visual Basic]"
   - "writing extension methods [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Write an Extension Method (Visual Basic)
 Extension methods enable you to add methods to an existing class. The extension method can be called as if it were an instance of that class.  
@@ -85,9 +75,10 @@ End Module
   
  `Hello!!!!`  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.ExtensionAttribute>  
- [Extension Methods](./extension-methods.md)  
- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+## See also
+
+- <xref:System.Runtime.CompilerServices.ExtensionAttribute>
+- [Extension Methods](./extension-methods.md)
+- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

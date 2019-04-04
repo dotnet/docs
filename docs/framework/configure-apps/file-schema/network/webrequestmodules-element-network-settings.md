@@ -1,14 +1,6 @@
 ---
-title: "&lt;webRequestModules&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<webRequestModules> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#webRequestModules"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "webRequestModules element"
   - "<webRequestModules> element"
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
-caps.latest.revision: 14
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;webRequestModules&gt; Element (Network Settings)
+# \<webRequestModules> Element (Network Settings)
 Specifies modules to use to request information from network hosts.  
   
  \<configuration>  
@@ -60,7 +46,7 @@ Specifies modules to use to request information from network hosts.
 ## Remarks  
  The `webRequestModules` element registers descendants of the <xref:System.Net.WebRequest> class to handle information requests to network hosts. Web request modules must implement the <xref:System.Net.IWebRequestCreate> interface.  
   
- The .NET Framework includes Web request modules for URIs that begin with http://, https://, and file://. You can override the default modules only by registering a custom module in the configuration file.  
+ The .NET Framework includes Web request modules for URIs that begin with `http://`, `https://`, and `file://`. You can override the default modules only by registering a custom module in the configuration file.  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -81,7 +67,7 @@ Specifies modules to use to request information from network hosts.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.IWebRequestCreate>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.WebRequest>
+- <xref:System.Net.IWebRequestCreate>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

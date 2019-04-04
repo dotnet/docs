@@ -1,21 +1,7 @@
 ---
 title: "Fault Contract"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b31b140e-dc3b-408b-b3c7-10b6fe769725
-caps.latest.revision: 16
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Fault Contract
 The Fault Contract sample demonstrates how to communicate error information from a service to a client. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), with some additional code added to the service to convert an internal exception to a fault. The client attempts to perform division by zero to force an error condition on the service.  
@@ -25,7 +11,7 @@ The Fault Contract sample demonstrates how to communicate error information from
   
  The calculator contract has been modified to include a <xref:System.ServiceModel.FaultContractAttribute> as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -43,7 +29,7 @@ public interface ICalculator
   
  The <xref:System.ServiceModel.FaultContractAttribute> attribute indicates that the `Divide` operation may return a fault of type `MathFault`. A fault can be of any type that can be serialized. In this case, the `MathFault` is a data contract, as follows:  
   
-```  
+```csharp
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public class MathFault  
 {      
@@ -68,7 +54,7 @@ public class MathFault
   
  The `Divide` method throws a <xref:System.ServiceModel.FaultException%601> exception when a divide by zero exception occurs as shown in the following sample code. This exception results in a fault being sent to the client.  
   
-```  
+```csharp
 public int Divide(int n1, int n2)  
 {  
     try  
@@ -87,7 +73,7 @@ public int Divide(int n1, int n2)
   
  The client code forces an error by requesting a division by zero. When you run the sample, the operation requests and responses are displayed in the client console window. You see the division by zero being reported as a fault. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  
@@ -98,7 +84,7 @@ Press <ENTER> to terminate client.
   
  The client does this by catching the appropriate `FaultException<MathFault>` exception:  
   
-```  
+```csharp
 catch (FaultException<MathFault> e)  
 {  
     Console.WriteLine("FaultException<MathFault>: Math fault while doing " + e.Detail.operation + ". Problem: " + e.Detail.problemType);  
@@ -140,8 +126,7 @@ catch (FaultException<MathFault> e)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Faults`  
   
-## See Also

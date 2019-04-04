@@ -1,24 +1,12 @@
 ---
 title: "Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f8028ba8-2dd1-4425-930c-8cc23176ebbc
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)
 This tutorial shows how to apply the functional transformational approach and LINQ to XML to manipulate XML documents. The Visual Basic examples query and manipulate information in Office Open XML WordprocessingML documents that are saved by Microsoft Word.  
   
- For more information, see the [OpenXML Developer](http://go.microsoft.com/fwlink/?LinkID=95573) Web site.  
+ For more information, see the [Eric White's Blog](http://www.ericwhite.com).  
   
 ## In This Section  
   
@@ -35,6 +23,7 @@ This tutorial shows how to apply the functional transformational approach and LI
 |[Finding Text in Word Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/finding-text-in-word-documents.md)|Uses the previous queries to find a specified text string in a document.|  
 |[Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)|Provides some details of Office Open XML WordprocessingML documents.|  
   
-## See Also  
- [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)  
- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+## See also
+
+- [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)
+- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)

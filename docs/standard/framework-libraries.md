@@ -1,20 +1,12 @@
 ---
 title: Framework Libraries
 description: Learn how libraries provide implementations for many general and app-specific types, algorithms, and utility functionality.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: ronpet
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Framework Libraries
 
 .NET has an expansive standard set of class libraries, referred to as either the base class libraries (core set) or framework class libraries (complete set). These libraries provide implementations for many general and app-specific types, algorithms and utility functionality. Both commercial and community libraries build on top of the framework class libraries, providing easy to use off-the-shelf libraries for a wide set of computing tasks.
@@ -55,10 +47,11 @@ The BCL provides the most foundational types and utility functionality and are t
 
 *   <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
 *   <xref:System.Xml.Linq.XDocument> - An API for loading, and querying XML documents with LINQ.
-*   <xref:System.IO.StreamReader> - An API for reading files (<xref:System.IO.StringWriter>) Can be used to write files.
+*   <xref:System.IO.StreamReader> - An API for reading files. 
+*   <xref:System.IO.StreamWriter> - An API for writing files.
 
 ## App-Model APIs
 
 There are many app-models that can be used with .NET, provided by several companies.
 
-*   [ASP.NET](http://asp.net) - Provides a web framework for building Web sites and services. Supported on Windows, Linux and macOS (depends on ASP.NET version).
+*   [ASP.NET](https://www.asp.net) - Provides a web framework for building Web sites and services. Supported on Windows, Linux and macOS (depends on ASP.NET version).

@@ -1,14 +1,6 @@
 ---
 title: "GetVersionFromProcess Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetVersionFromProcess"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetVersionFromProcess Function
 Gets the version number of the common language runtime (CLR) that is associated with the specified process handle.  
@@ -46,7 +34,7 @@ HRESULT GetVersionFromProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hProcess`  
  [in] A handle to a process.  
   
@@ -78,7 +66,7 @@ HRESULT GetVersionFromProcess (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetRequestedRuntimeInfo Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md)  
- [GetRequestedRuntimeVersion Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeversion-function.md)  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+- [GetRequestedRuntimeInfo Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md)
+- [GetRequestedRuntimeVersion Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeversion-function.md)
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

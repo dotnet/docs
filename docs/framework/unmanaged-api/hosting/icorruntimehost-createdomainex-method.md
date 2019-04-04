@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::CreateDomainEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.CreateDomainEx"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 1bdde382-f8ba-4cc8-94b2-d1ac919c585e
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorRuntimeHost::CreateDomainEx Method
 Creates an application domain. The caller receives an interface pointer, of type <xref:System._AppDomain>, to an instance of type <xref:System.AppDomain?displayProperty=nameWithType>. This method allows the caller to pass an IAppDomainSetup instance to configure additional features of the returned <xref:System._AppDomain> instance.  
@@ -44,7 +32,7 @@ HRESULT CreateDomainEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFriendlyName`  
  [in] An optional parameter used to give a friendly name to the domain. This friendly name can be displayed in user interfaces such as debuggers to identify the domain.  
   
@@ -78,9 +66,9 @@ HRESULT CreateDomainEx (
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
- [CreateDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md)  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- <xref:System.IAppDomainSetup?displayProperty=nameWithType>
+- [CreateDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md)
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

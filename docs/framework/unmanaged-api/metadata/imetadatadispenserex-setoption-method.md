@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataDispenserEx::SetOption Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataDispenserEx.SetOption"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9f1c7ccd-7fb2-41d8-aa00-24b823376527
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataDispenserEx::SetOption Method
 Sets the specified option to a given value for the current metadata scope. The option controls how calls to the current metadata scope are handled.  
@@ -42,7 +30,7 @@ HRESULT SetOption (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `optionId`  
  [in] A pointer to a GUID that specifies the option to be set.  
   
@@ -77,6 +65,6 @@ HRESULT SetOption (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+## See also
+- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

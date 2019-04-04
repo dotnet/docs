@@ -1,21 +1,9 @@
 ---
 title: "Authenticode (Unmanaged API Reference)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 7e8cc303-6e77-4116-aa8b-7ea297a3a467
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Authenticode (Unmanaged API Reference)
 Supports the Authenticode XrML license creation and verification module.  
@@ -48,5 +36,5 @@ Supports the Authenticode XrML license creation and verification module.
  [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md)  
  Defines the Authenticode time stamper information.  
   
-## See Also  
- [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)
+## See also
+- [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)

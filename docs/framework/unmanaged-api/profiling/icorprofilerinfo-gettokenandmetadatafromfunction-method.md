@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetTokenAndMetadataFromFunction Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetTokenAndMetadataFromFunction"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e525aa16-c923-4b16-833b-36f1f0dd70fc
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetTokenAndMetadataFromFunction Method
 Gets the metadata token and a metadata interface instance that can be used against the token for the specified function.  
@@ -43,7 +31,7 @@ HRESULT GetTokenAndMetaDataFromFunction(
     [out] mdToken    *pToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which to get the metadata token and metadata interface.  
   
@@ -65,5 +53,5 @@ HRESULT GetTokenAndMetaDataFromFunction(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

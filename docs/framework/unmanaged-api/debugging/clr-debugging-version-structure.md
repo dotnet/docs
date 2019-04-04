@@ -1,14 +1,6 @@
 ---
 title: "CLR_DEBUGGING_VERSION Structure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CLR_DEBUGGING_VERSION"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 4d821186-3ddf-405a-ac44-d79438a9f7f3
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CLR_DEBUGGING_VERSION Structure
 Defines the product version of the common language runtime (CLR) for debugging purposes.  
@@ -35,14 +23,14 @@ Defines the product version of the common language runtime (CLR) for debugging p
 ## Syntax  
   
 ```  
-Typedef struct _CLR_DEBUGGING_VERSION  
+typedef struct _CLR_DEBUGGING_VERSION  
 {  
-WORD wStructVersion;  
-WORD wMajor;   
-WORD wMinor;  
-WORD wBuild;  
-WORD wRevision;  
-}  CLR_DEBUGGING_VERSION;  
+    WORD wStructVersion;
+    WORD wMajor;
+    WORD wMinor;
+    WORD wBuild;
+    WORD wRevision;
+} CLR_DEBUGGING_VERSION;
 ```  
   
 ## Members  
@@ -67,6 +55,6 @@ WORD wRevision;
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

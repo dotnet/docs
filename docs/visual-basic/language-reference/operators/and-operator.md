@@ -1,12 +1,6 @@
 ---
 title: "And Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.And"
 helpviewer_keywords: 
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], conjunction"
   - "bitwise comparison [Visual Basic]"
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # And Operator (Visual Basic)
 Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjunction on two numeric expressions.  
@@ -78,20 +69,21 @@ result = expression1 And expression2
 ## Example  
  The following example uses the `And` operator to perform a logical conjunction on two expressions. The result is a `Boolean` value that represents whether both of the expressions are `True`.  
   
- [!code-vb[VbVbalrOperators#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#22)]  
   
  The preceding example produces results of `True` and `False`, respectively.  
   
 ## Example  
  The following example uses the `And` operator to perform logical conjunction on the individual bits of two numeric expressions. The bit in the result pattern is set if the corresponding bits in the operands are both set to 1.  
   
- [!code-vb[VbVbalrOperators#23](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#23)]  
   
  The preceding example produces results of 8, 2, and 0, respectively.  
   
-## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [AndAlso Operator](../../../visual-basic/language-reference/operators/andalso-operator.md)  
- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+## See also
+
+- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [AndAlso Operator](../../../visual-basic/language-reference/operators/andalso-operator.md)
+- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

@@ -1,14 +1,6 @@
 ---
 title: "Setting Up a Profiling Environment"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "environment variables, profiling API"
   - "profiling API [.NET Framework], setting up environment"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "COR_ENABLE_PROFILING environment variable"
   - "profiling API [.NET Framework], enabling"
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]
@@ -101,5 +89,5 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
   
  This technique also leads to every CLR process getting profiled. The profiler should add logic to its [ICorProfilerCallback::Initialize](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md) callback to detect whether the current process is of interest. If it is not, the profiler can fail the callback without performing the initialization.  
   
-## See Also  
- [Profiling Overview](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md)
+## See also
+- [Profiling Overview](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md)

@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedDocument::GetURL Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedDocument.GetURL"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetURL Method
 Returns the uniform resource locator (URL) for this document.  
@@ -42,7 +30,7 @@ HRESULT GetURL(
     [out, size_is(cchUrl), length_is(*pcchUrl)] WCHAR szUrl[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchUrl`  
  [in] The size, in characters, of the `szURL` buffer.  
   
@@ -55,5 +43,5 @@ HRESULT GetURL(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

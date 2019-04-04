@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugStringValue Interface1"
-ms.custom: ""
+title: "ICorDebugStringValue Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStringValue"
 api_location: 
@@ -22,14 +14,10 @@ helpviewer_keywords:
 ms.assetid: bf84d0af-53e1-4c04-bc5b-7e5f81ba2cc2
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugStringValue Interface1
+# ICorDebugStringValue Interface
 A subclass of ICorDebugHeapValue that applies to string values.  
   
 ## Methods  
@@ -53,5 +41,5 @@ A subclass of ICorDebugHeapValue that applies to string values.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

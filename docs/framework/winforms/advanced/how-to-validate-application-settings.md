@@ -1,14 +1,6 @@
 ---
 title: "How to: Validate Application Settings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "application settings [Windows Forms], Windows Forms"
   - "application settings [Windows Forms], validating"
 ms.assetid: 9f145ada-4267-436a-aa4c-c4dcffd0afb7
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Validate Application Settings
 This topic demonstrates how to validate application settings before they are persisted.  
@@ -48,9 +34,9 @@ This topic demonstrates how to validate application settings before they are per
   
 -   For events raised before their associated actions, such as <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>, uses the <xref:System.ComponentModel.CancelEventArgs> argument to cancel the operation.  
   
- For more information about event handling, see [Event Handlers Overview](../../../../docs/framework/winforms/event-handlers-overview-windows-forms.md).  
+ For more information about event handling, see [Event Handlers Overview](../event-handlers-overview-windows-forms.md).  
   
- The following procedures show how to test for a valid birth date using either the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> or the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event. The procedures were written under the assumption that you have already created your application settings; in this example, we will perform bounds checking on a setting named `DateOfBirth`. For more information about creating settings, see [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md).  
+ The following procedures show how to test for a valid birth date using either the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> or the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event. The procedures were written under the assumption that you have already created your application settings; in this example, we will perform bounds checking on a setting named `DateOfBirth`. For more information about creating settings, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
 ### To obtain the application settings object  
   
@@ -168,6 +154,6 @@ This topic demonstrates how to validate application settings before they are per
     End Sub  
     ```  
   
-## See Also  
- [Creating Event Handlers in Windows Forms](../../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
- [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md)
+## See also
+- [Creating Event Handlers in Windows Forms](../creating-event-handlers-in-windows-forms.md)
+- [How to: Create Application Settings](how-to-create-application-settings.md)

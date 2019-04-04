@@ -1,24 +1,13 @@
 ---
 title: "Conversion of XML Data Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Conversion of XML Data Types
 The majority of the methods found in an **XmlConvert** class are used to convert data between strings and strongly-typed formats. Methods are locale independent. This means that they do not take into account any locale settings when doing conversion.  
@@ -71,6 +60,7 @@ Int32 vInt32=-2147483648;
 writer.WriteElementString("TestInt32",XmlConvert.ToString(vInt32));  
 ```  
   
-## See Also  
- [Converting Strings to .NET Framework Data Types](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)  
- [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)
+## See also
+
+- [Converting Strings to .NET Framework Data Types](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)
+- [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)

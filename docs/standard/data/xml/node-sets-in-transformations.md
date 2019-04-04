@@ -1,21 +1,10 @@
 ---
 title: "Node Sets in Transformations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ad034f0e-ff8b-4a71-9a4c-528c754263c4
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Node Sets in Transformations
 Node sets are one of four basic data types that are returned from XML Path Language (XPath) expressions. A node set, which is an unordered collection of nodes without duplicates, created in document order, can be assigned to a variable in a style sheet.  
@@ -79,7 +68,8 @@ History of Trenton Vol 3
 ******  
 ```  
   
-## See Also  
- <xref:System.Xml.XPath.XPathNodeIterator>  
- [XSLT Transformations with the XslTransform Class](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+## See also
+
+- <xref:System.Xml.XPath.XPathNodeIterator>
+- [XSLT Transformations with the XslTransform Class](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)
+- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

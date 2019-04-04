@@ -1,21 +1,12 @@
 ---
 title: "IsTrue Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.istrue"
 helpviewer_keywords: 
   - "IsTrue operator [Visual Basic]"
   - "OrElse operator [Visual Basic]"
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # IsTrue Operator (Visual Basic)
 Determines whether an expression is `True`.  
@@ -25,7 +16,7 @@ Determines whether an expression is `True`.
  The compiler considers the `IsTrue` and `IsFalse` operators as a *matched pair*. This means that if you define one of them, you must also define the other one.  
   
 ## Compiler Use of IsTrue  
- When you have defined a class or structure, you can use a variable of that type in a `For`, `If`, `Else``If`, or `While` statement, or in a `When` clause. If you do this, the compiler requires an operator that converts your type into a `Boolean` value so it can test a condition. It searches for a suitable operator in the following order:  
+ When you have defined a class or structure, you can use a variable of that type in a `For`, `If`, `Else If`, or `While` statement, or in a `When` clause. If you do this, the compiler requires an operator that converts your type into a `Boolean` value so it can test a condition. It searches for a suitable operator in the following order:  
   
 1.  A widening conversion operator from your class or structure to `Boolean`.  
   
@@ -45,9 +36,10 @@ Determines whether an expression is `True`.
 ## Example  
  The following code example defines the outline of a structure that includes definitions for the `IsFalse` and `IsTrue` operators.  
   
- [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
-## See Also  
- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)
+## See also
+
+- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
+- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)

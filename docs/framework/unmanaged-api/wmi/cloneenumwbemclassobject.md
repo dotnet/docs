@@ -2,10 +2,6 @@
 title: CloneEnumWbemClassObject function (Unmanaged API Reference)
 description: The CloneEnumWbemClassObject function makes a logical copy of an enumerator.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "CloneEnumWbemClassObject"
 api_location: 
@@ -20,18 +16,15 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CloneEnumWbemClassObject function
-Makes a logical copy of an enumerator, retaining its current position in an enumeration.  
-  
+Makes a logical copy of an enumerator, retaining its current position in an enumeration.
+
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-  
-## Syntax  
-  
-```  
+
+## Syntax
+
+```
 HRESULT CloneEnumWbemClassObject (
    [out] IEnumWbemClassObject**  ppEnum, 
    [in] DWORD                    authLevel,
@@ -41,29 +34,29 @@ HRESULT CloneEnumWbemClassObject (
    [in] BSTR                     strPassword,
    [in BSTR]                     strAuthority 
 ); 
-```  
+```
 
 ## Parameters
 
-`ppEnum`  
-[out] Receives a pointer to a new [IEnumWbemClassObject](https://msdn.microsoft.com/library/aa390857(v=vs.85).aspx).
+`ppEnum`\
+[out] Receives a pointer to a new [IEnumWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-ienumwbemclassobject).
 
-`authLevel`  
+`authLevel`\
 [in] The authorization level.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`pCurrentEnumWbemClassObject`  
-[out] A pointer to the [IEnumWbemClassObject](https://msdn.microsoft.com/library/aa390857(v=vs.85).aspx) instance to be cloned.
+`pCurrentEnumWbemClassObject`\
+[out] A pointer to the [IEnumWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-ienumwbemclassobject) instance to be cloned.
 
-`strUser`   
+`strUser`\
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strPassword`   
+`strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`   
+`strAuthority`\ 
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value
@@ -77,25 +70,26 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available complete the operation. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | The remote procedure call (RPC) link between the current process and WMI has failed. |
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
-This function wraps a call to the [IEnumWbemClassObject::Clone](https://msdn.microsoft.com/library/aa390859(v=vs.85).aspx) method.
+This function wraps a call to the [IEnumWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-ienumwbemclassobject-clone) method.
 
-This method makes only a "best effort" copy. Due to the dynamic nature of many CIM objects, it is possible that the new enumerator does not enumerate the same set of objects as the source enumerator.  
+This method makes only a "best effort" copy. Due to the dynamic nature of many CIM objects, it is possible that the new enumerator does not enumerate the same set of objects as the source enumerator.
 
 If the function call fails, you can obtain additional error information by calling the [GetErrorInfo](geterrorinfo.md) function.
 
 ## Example
 
-For an example, see the [IEnumWbemClassObject::Clone](https://msdn.microsoft.com/library/aa390859(v=vs.85).aspx) method.
+For an example, see the [IEnumWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-ienumwbemclassobject-clone) method.
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## Requirements
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+
+ **Header:** WMINet_Utils.idl
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

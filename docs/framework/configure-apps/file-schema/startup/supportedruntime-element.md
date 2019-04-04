@@ -1,10 +1,6 @@
 ---
-title: "&lt;supportedRuntime&gt; Element"
-ms.date: "10/17/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
+title: "<supportedRuntime> Element"
+ms.date: "04/10/2018"
 ms.custom: "updateeachrelease"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime"
@@ -13,13 +9,8 @@ helpviewer_keywords:
   - "supportedRuntime element"
   - "<supportedRuntime> element"
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;supportedRuntime&gt; Element
+# \<supportedRuntime> Element
 
 Specifies which versions of the common language runtime the application supports. This element should be used by all applications built with version 1.1 or later of the .NET Framework.  
   
@@ -67,7 +58,7 @@ The `runtime` attribute specifies the Common Language Runtime (CLR) version that
 |2.0|"v2.0.50727"|  
 |3.0|"v2.0.50727"|  
 |3.5|"v2.0.50727"|  
-|4.0-4.7.1|"v4.0"|  
+|4.0-4.7.2|"v4.0"|  
 
 <a name="sku"></a>   
 ## "sku id" values
@@ -78,12 +69,12 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 |----------------------------|---------------------|  
 |4.0|".NETFramework,Version=v4.0"|  
 |4.0, Client Profile|".NETFramework,Version=v4.0,Profile=Client"|  
-|4.0, platform update 1|.NETFramework,Version=v4.0.1|  
-|4.0, Client Profile, update 1|.NETFramework,Version=v4.0.1,Profile=Client|  
-|4.0, platform update 2|.NETFramework,Version=v4.0.2|  
-|4.0, Client Profile, update 2|.NETFramework,Version=v4.0.2,Profile=Client|  
-|4.0, platform update 3|.NETFramework,Version=v4.0.3|  
-|4.0, Client Profile, update 3|.NETFramework,Version=v4.0.3,Profile=Client|  
+|4.0, platform update 1|".NETFramework,Version=v4.0.1"|  
+|4.0, Client Profile, update 1|".NETFramework,Version=v4.0.1,Profile=Client"|  
+|4.0, platform update 2|".NETFramework,Version=v4.0.2"|  
+|4.0, Client Profile, update 2|".NETFramework,Version=v4.0.2,Profile=Client"|  
+|4.0, platform update 3|".NETFramework,Version=v4.0.3"|  
+|4.0, Client Profile, update 3|".NETFramework,Version=v4.0.3,Profile=Client"|  
 |4.5|".NETFramework,Version=v4.5"|  
 |4.5.1|".NETFramework,Version=v4.5.1"|  
 |4.5.2|".NETFramework,Version=v4.5.2"|  
@@ -92,6 +83,7 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 |4.6.2|".NETFramework,Version=v4.6.2"|  
 |4.7|".NETFramework,Version=v4.7"|
 |4.7.1|".NETFramework,Version=v4.7.1"|
+|4.7.2|".NETFramework,Version=v4.7.2"|
 
 ## Example  
  The following example shows how to specify the supported runtime version in a configuration file. The configuration file indicates that the app targets the .NET Framework 4.7.  
@@ -110,6 +102,6 @@ This element can be used in the application configuration file.
 
 ## See also
 
- [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [In-Process Side-by-Side Execution](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)  
+- [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [In-Process Side-by-Side Execution](../../../../../docs/framework/deployment/in-process-side-by-side-execution.md)

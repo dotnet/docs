@@ -1,22 +1,10 @@
 ---
 title: "Implementing an Implicit Transaction using Transaction Scope"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 49d1706a-1e0c-4c85-9704-75c908372eb9
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Implementing an Implicit Transaction using Transaction Scope
 The <xref:System.Transactions.TransactionScope> class provides a simple way to mark a block of code as participating in a transaction, without requiring you to interact with the transaction itself. A transaction scope can select and manage the ambient transaction automatically. Due to its ease of use and efficiency, it is recommended that you use the <xref:System.Transactions.TransactionScope> class when developing a transaction application.  
@@ -47,7 +35,7 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
 ## Rolling back a transaction  
  If you want to rollback a transaction, you should not call the <xref:System.Transactions.TransactionScope.Complete%2A> method within the transaction scope. For example, you can throw an exception within the scope. The transaction in which it participates in will be rolled back.  
   
-##  <a name="ManageTxFlow"></a> Managing transaction flow using TransactionScopeOption  
+## <a name="ManageTxFlow"></a> Managing transaction flow using TransactionScopeOption  
  Transaction scope can be nested by calling a method that uses a <xref:System.Transactions.TransactionScope> from within a method that uses its own scope, as is the case with the `RootMethod` method in the following example,  
   
 ```csharp  
@@ -174,6 +162,6 @@ using(TransactionScope scope1 = new TransactionScope())
 ## Interop with COM+  
  When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](../../../../docs/framework/data/transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
   
-## See Also  
- <xref:System.Transactions.Transaction.Clone%2A>  
- <xref:System.Transactions.TransactionScope>
+## See also
+- <xref:System.Transactions.Transaction.Clone%2A>
+- <xref:System.Transactions.TransactionScope>

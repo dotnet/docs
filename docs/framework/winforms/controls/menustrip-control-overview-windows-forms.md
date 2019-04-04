@@ -1,26 +1,12 @@
 ---
 title: "MenuStrip Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "MenuStrip"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], about MenuStrip control"
   - "menus [Windows Forms], creating"
 ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # MenuStrip Control Overview (Windows Forms)
 Menus expose functionality to your users by holding commands that are grouped by a common theme.  
@@ -62,10 +48,10 @@ Menus expose functionality to your users by holding commands that are grouped by
 |<xref:System.Windows.Forms.ToolStripDropDown>|Represents a control that allows the user to select a single item from a list that is displayed when the user clicks a <xref:System.Windows.Forms.ToolStripDropDownButton> or a higher-level menu item.|  
 |<xref:System.Windows.Forms.ToolStripDropDownItem>|Provides basic functionality for controls derived from <xref:System.Windows.Forms.ToolStripItem> that display drop-down items when clicked.|  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ContextMenuStrip>  
- <xref:System.Windows.Forms.StatusStrip>  
- <xref:System.Windows.Forms.ToolStripItem>  
- <xref:System.Windows.Forms.ToolStripDropDown>
+## See also
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ContextMenuStrip>
+- <xref:System.Windows.Forms.StatusStrip>
+- <xref:System.Windows.Forms.ToolStripItem>
+- <xref:System.Windows.Forms.ToolStripDropDown>

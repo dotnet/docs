@@ -1,13 +1,7 @@
 ---
 title: "How to: Extract a Protocol and Port Number from a URL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: ab7f62b3-6d2c-4efb-8ac6-28600df5fd5c
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Extract a Protocol and Port Number from a URL
 The following example extracts a protocol and port number from a URL.  
@@ -54,5 +43,6 @@ The following example extracts a protocol and port number from a URL.
  [!code-csharp[RegularExpressions.Examples.Protocol#2](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.Protocol/cs/example2.cs#2)]
  [!code-vb[RegularExpressions.Examples.Protocol#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.Protocol/vb/example2.vb#2)]  
   
-## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

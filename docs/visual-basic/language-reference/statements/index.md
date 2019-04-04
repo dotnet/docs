@@ -1,18 +1,9 @@
 ---
 title: "Statements (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "statements [Visual Basic]"
 ms.assetid: 1cbd7703-8d3b-48fd-831e-14c9cc85675a
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Statements (Visual Basic)
 The topics in this section contain tables of the Visual Basic declaration and executable statements, and of important lists that apply to many statements.  

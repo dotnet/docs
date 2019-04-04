@@ -1,17 +1,11 @@
 ---
 title: Pattern Matching - C# Guide
 description: Learn about pattern matching expressions in C#
-keywords: .NET, .NET Core, C#
 ms.date: 01/24/2017
-ms.author: wiwagn
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 
-# Pattern Matching #
+# Pattern Matching
 
 Patterns test that a value has a certain *shape*, and can *extract*
 information from the value when it has the matching shape. Pattern
@@ -45,10 +39,7 @@ to those statements.
 In this topic, you'll build a method  that computes the area of
 different geometric shapes. But, you'll do it without resorting to object
 oriented techniques and building a class hierarchy for the different shapes.
-You'll use *pattern matching* instead. To further emphasize that we're not
-using inheritance, you'll make each shape a `struct` instead of a class. 
-Note that different `struct` types cannot specify a common user defined
-base type, so inheritance is not a possible design.
+You'll use *pattern matching* instead.
 As you go through this sample, contrast this code with how it would
 be structured as an object hierarchy. When the data you must
 query and manipulate is not a class hierarchy, pattern matching enables
@@ -65,7 +56,7 @@ of some shape.
 
 ## The `is` type pattern expression
 
-Before C# 7, you'd need to test each type in a series of `if` and `is`
+Before C# 7.0, you'd need to test each type in a series of `if` and `is`
 statements:
 
 [!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
@@ -91,7 +82,7 @@ variable in another location, your code generates compiler errors.
 
 Let's examine both of those rules in detail, beginning with scope. The variable
 `c` is in scope only in the `else` branch of the first `if` statement. The variable
-`s` is in scope in the method `ComputeArea`. That's because each 
+`s` is in scope in the method `ComputeAreaModernIs`. That's because each 
 branch of an `if` statement establishes a separate scope for variables. However, the `if` statement
 itself does not. That means variables declared in the `if` statement are in the
 same scope as the `if` statement (the method in this case.) This behavior is not
@@ -144,7 +135,7 @@ end with a `break`, `return`, or `goto`.
 
 > [!NOTE]
 > The `goto` statements to jump to another label are valid only
-> for the constant pattern, the classic switch statement.
+> for the constant pattern (the classic switch statement).
 
 There are important new rules governing the `switch` statement. The restrictions
 on the type of the variable in the `switch` expression have been removed.

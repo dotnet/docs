@@ -1,19 +1,7 @@
 ---
 title: "Applicability of Functional Transformation (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3b74e134-e19b-44bc-8d06-e26c48305040
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Applicability of Functional Transformation (Visual Basic)
 Pure functional transformations are applicable in a wide variety of situations.  
@@ -38,7 +26,8 @@ Pure functional transformations are applicable in a wide variety of situations.
   
  Again, remember that Visual Basic supports both imperative and functional approaches, so the best design for your application might incorporate elements of both.  
   
-## See Also  
- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
- [Functional Transformation of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)  
- [Refactoring Into Pure Functions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+## See also
+
+- [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+- [Functional Transformation of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)
+- [Refactoring Into Pure Functions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

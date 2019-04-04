@@ -1,19 +1,7 @@
 ---
 title: "How to: Find an Element with a Specific Child Element (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find an Element with a Specific Child Element (C#)
 This topic shows how to find a particular element that has a child element with a specific value.  
@@ -63,9 +51,10 @@ foreach (XElement el in tests)
 0006  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A>  
- <xref:System.Xml.Linq.XContainer.Elements%2A>  
- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.Attribute%2A>
+- <xref:System.Xml.Linq.XContainer.Elements%2A>
+- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)

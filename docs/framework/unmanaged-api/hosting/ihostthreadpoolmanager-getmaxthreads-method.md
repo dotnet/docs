@@ -1,14 +1,6 @@
 ---
 title: "IHostThreadPoolManager::GetMaxThreads Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostThreadPoolManager.GetMaxThreads"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IHostThreadPoolManager::GetMaxThreads Method
 Gets the maximum number of threads that the host maintains concurrently in the thread pool.  
@@ -41,7 +29,7 @@ HRESULT GetMaxThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxWorkerThreads`  
  [out] A pointer to the maximum number of threads that the host maintains in the thread pool.  
   
@@ -71,9 +59,9 @@ HRESULT GetMaxThreads (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.ThreadPool.GetMaxThreads%2A>  
- <xref:System.Threading.ThreadPool>  
- [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)  
- [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setmaxthreads-method.md)  
- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+## See also
+- <xref:System.Threading.ThreadPool.GetMaxThreads%2A>
+- <xref:System.Threading.ThreadPool>
+- [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)
+- [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setmaxthreads-method.md)
+- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

@@ -1,18 +1,9 @@
 ---
 title: "Object variable or With block variable not set"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID91"
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Object variable or With block variable not set
 An invalid object variable is being referenced.   This error can occur for several reasons:  
@@ -55,7 +46,8 @@ Option Strict On
   
 5.  Make sure your `With` block is initialized by executing the `With` statement entry point.  
   
-## See Also  
- [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+## See also
+
+- [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)

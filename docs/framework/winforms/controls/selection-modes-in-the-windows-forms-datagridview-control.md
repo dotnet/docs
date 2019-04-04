@@ -1,24 +1,10 @@
 ---
 title: "Selection Modes in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "selection [Windows Forms], modes in DataGridView control"
   - "DataGridView control [Windows Forms], selection mode"
 ms.assetid: a3ebfd3d-0525-479d-9d96-d9e017289b36
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Selection Modes in the Windows Forms DataGridView Control
 Sometimes you want your application to perform actions based on user selections within a <xref:System.Windows.Forms.DataGridView> control. Depending on the actions, you may want to restrict the kinds of selection that are possible. For example, suppose your application can print a report for the currently selected record. In this case, you may want to configure the <xref:System.Windows.Forms.DataGridView> control so that clicking anywhere within a row always selects the entire row, and so that only one row at a time can be selected.  
@@ -52,10 +38,10 @@ Sometimes you want your application to perform actions based on user selections 
 > [!TIP]
 >  Example code that demonstrates the programmatic use of selected cells can be found in the <xref:System.Windows.Forms.DataGridView> class overview.  
   
-## See Also  
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>  
- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>  
- <xref:System.Windows.Forms.DataGridViewSelectionMode>  
- [Selection and Clipboard Use with the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)  
- [How to: Set the Selection Mode of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)
+## See also
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>
+- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>
+- <xref:System.Windows.Forms.DataGridViewSelectionMode>
+- [Selection and Clipboard Use with the Windows Forms DataGridView Control](selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)
+- [How to: Set the Selection Mode of the Windows Forms DataGridView Control](how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)

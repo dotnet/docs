@@ -2,10 +2,6 @@
 title: Clone function (Unmanaged API Reference)
 description: The Clone function returns a new object that is a complete clone of the current one.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "Clone"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Clone function
 Returns a new object that is a complete clone of the current object.   
@@ -45,7 +38,7 @@ HRESULT Clone (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `ppCopy`  
 [out] A new object that is a complete lone of `ptr`. This argument cannot be `null` if it receives the copy of the current object.
@@ -63,7 +56,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::Clone](https://msdn.microsoft.com/library/aa391436(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-clone) method.
 
 The cloned object is a COM object that has a reference count of 1.
 
@@ -74,5 +67,5 @@ The cloned object is a COM object that has a reference count of 1.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

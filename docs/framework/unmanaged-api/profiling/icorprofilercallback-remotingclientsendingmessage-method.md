@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::RemotingClientSendingMessage Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.RemotingClientSendingMessage"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 54d9a5a5-3877-49c1-a503-ce7c7943bc2a
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingClientSendingMessage Method
 Notifies the profiler that the client is sending a request to the server.  
@@ -41,7 +29,7 @@ HRESULT RemotingClientSendingMessage(
     [in] BOOL fIsAsync);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCookie`  
  [in] A value that corresponds with the value provided in [ICorProfilerCallback::RemotingServerReceivingMessage](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingserverreceivingmessage-method.md) under these conditions:  
   
@@ -65,5 +53,5 @@ HRESULT RemotingClientSendingMessage(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

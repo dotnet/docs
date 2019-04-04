@@ -1,16 +1,9 @@
 ---
 title: "Out of memory (Visual Basic Run-Time Error)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID7"
 ms.assetid: 96cc12e1-d40a-425f-b365-1ac39e5ddcb0
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Out of memory (Visual Basic Run-Time Error)
 More memory was required than is available.  
@@ -27,5 +20,6 @@ More memory was required than is available.
   
 5.  Reduce the number of public variables.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

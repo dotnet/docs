@@ -1,13 +1,7 @@
 ---
 title: "Comparing Strings in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,13 +18,8 @@ helpviewer_keywords:
   - "Equals method"
   - "StartsWith method"
 ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Comparing Strings in .NET
 .NET provides several methods to compare the values of strings. The following table lists and describes the value-comparison methods.  
@@ -155,6 +144,9 @@ ms.workload:
   
  Both methods are useful when used in conjunction with the **String.Remove** method. You can use either the **IndexOf** or **LastIndexOf** methods to retrieve the position of a character, and then supply that position to the **Remove** method in order to remove a character or a word that begins with that character.  
   
-## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+## See also
+
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+- [Sorting Weight Tables (for .NET on Windows)](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
+- [Default Unicode Collation Element Table (for .NET Core on Linux and macOS)](https://www.unicode.org/Public/UCA/latest/allkeys.txt)

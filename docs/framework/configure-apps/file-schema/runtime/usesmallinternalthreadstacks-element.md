@@ -1,26 +1,14 @@
 ---
-title: "&lt;UseSmallInternalThreadStacks&gt; Element"
-ms.custom: ""
+title: "<UseSmallInternalThreadStacks> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "UseSmallInternalThreadStacks element"
   - "<UseSmallInternalThreadStacks> element"
 ms.assetid: 1e3f6ec0-1cac-4e1c-9c81-17d948ae5874
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;UseSmallInternalThreadStacks&gt; Element
+# \<UseSmallInternalThreadStacks> Element
 Requests that the common language runtime (CLR) reduce memory use by specifying explicit stack sizes when it creates certain threads that it uses internally, instead of using the default stack size for those threads.  
   
  \<configuration> Element  
@@ -78,6 +66,6 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

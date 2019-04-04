@@ -1,24 +1,10 @@
 ---
 title: "Handling DataAdapter Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Handling DataAdapter Events
 The ADO.NET <xref:System.Data.Common.DataAdapter> exposes three events that you can use to respond to changes made to data at the data source. The following table shows the `DataAdapter` events.  
@@ -163,7 +149,7 @@ Private Shared Sub FillError(sender As Object, _
     DataRow myRow = args.DataTable.Rows.Add(New Object() _  
       {args.Values(0), args.Values(1), DBNull.Value})  
     ' Set the RowError containing the value for the third column.  
-    args.RowError = _  
+    myRow.RowError = _  
       "OverflowException encountered. Value from data source: " & _  
       args.Values(2)  
     args.Continue = True  
@@ -186,7 +172,7 @@ protected static void FillError(object sender, FillErrorEventArgs args)
     DataRow myRow = args.DataTable.Rows.Add(new object[]  
        {args.Values[0], args.Values[1], DBNull.Value});  
     //Set the RowError containing the value for the third column.  
-    args.RowError =   
+    myRow.RowError =   
        "OverflowException Encountered. Value from data source: " +  
        args.Values[2];  
     args.Continue = true;  
@@ -194,9 +180,9 @@ protected static void FillError(object sender, FillErrorEventArgs args)
 }  
 ```  
   
-## See Also  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [Handling DataSet Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)  
- [Handling DataTable Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)  
- [Events](../../../../docs/standard/events/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [Handling DataSet Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)
+- [Handling DataTable Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)
+- [Events](../../../../docs/standard/events/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

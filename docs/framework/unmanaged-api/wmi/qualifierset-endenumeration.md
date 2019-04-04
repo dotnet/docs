@@ -2,10 +2,6 @@
 title: QualifierSet_EndEnumeration function (Unmanaged API Reference)
 description: The QualifierSet_EndEnumeration function terminates an enumeration.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_EndEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_EndEnumeration function
 Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.  
@@ -44,7 +37,7 @@ HRESULT QualifierSet_EndEnumeration (
 [in] This parameter is unused.
 
 `ptr`   
-[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 ## Return value
 
@@ -56,7 +49,7 @@ The following value returned by this function is defined in the *WbemCli.h* head
   
 ## Remarks
 
-This function wraps a call to the [IWbemQualifierSet::EndEnumeration](https://msdn.microsoft.com/library/aa391865(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemQualifierSet::EndEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration) method.
 
 This call is recommended, but not required. It immediately releases resources associated with the enumeration.
 
@@ -68,5 +61,5 @@ This call is recommended, but not required. It immediately releases resources as
   
 **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

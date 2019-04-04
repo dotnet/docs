@@ -2,10 +2,6 @@
 title: GetMethodOrigin function (Unmanaged API Reference)
 description: The GetMethodOrigin function determines the class in which a method is declared.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetMethodOrigin"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetMethodOrigin function
 Determines the class in which a method is declared.
@@ -46,7 +39,7 @@ HRESULT GetMethodOrigin (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszMethodName`  
 [in] The name of the method for the object whose owning class is being requested. 
@@ -66,7 +59,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetMethodOrigin](https://msdn.microsoft.com/library/aa391443(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetMethodOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) method.
 
 Because a class can inherit methods from one or more base classes, developers often want to determine the class in which a given method is defined.
 
@@ -79,5 +72,5 @@ The `pstrClassName` parameter must not point to a valid `BSTR` before the functi
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

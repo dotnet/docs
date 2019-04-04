@@ -1,14 +1,6 @@
 ---
 title: "ICLRMetadataLocator::GetMetadata Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRMetadataLocator.GetMetadata"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 704a8893-ac56-43b4-90ea-715f38ccb40e
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRMetadataLocator::GetMetadata Method
 Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.  
@@ -50,7 +38,7 @@ HRESULT GetMetadata(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imagePath`  
  [in] A string that specifies the path of the image file.  
   
@@ -90,5 +78,5 @@ HRESULT GetMetadata(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRMetadataLocator Interface](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)
+## See also
+- [ICLRMetadataLocator Interface](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)

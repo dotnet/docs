@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyEmit::SetManifestResourceProps Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyEmit.SetManifestResourceProps"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ef77efd1-849c-4e51-ba92-7ee3d2bf0339
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::SetManifestResourceProps Method
 Modifies the specified `ManifestResource` metadata structure.  
@@ -44,7 +32,7 @@ HRESULT SetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The token that specifies the `ManifestResource` metadata structure to be modified.  
   
@@ -69,5 +57,5 @@ HRESULT SetManifestResourceProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

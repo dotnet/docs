@@ -1,20 +1,11 @@
 ---
 title: "Sub Expression (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "lambda expressions [Visual Basic], sub expression"
   - "Sub Expression [Visual Basic]"
   - "subroutines [Visual Basic], sub expressions"
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Sub Expression (Visual Basic)
 Declares the parameters and code that define a subroutine lambda expression.  
@@ -58,11 +49,12 @@ End Sub
 ## Example  
  Following is an example of a lambda expression that writes a value to the console. The example shows both the single-line and multiline lambda expression syntax for a subroutine. For more examples, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- [!code-vb[VbVbalrLambdas#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/sub-expression_1.vb)]  
+ [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
-## See Also  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+## See also
+
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

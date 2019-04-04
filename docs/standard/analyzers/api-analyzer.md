@@ -3,9 +3,7 @@ title: .NET API analyzer
 description: Learn how the .NET API Analyzer can help detect deprecated APIs and platform compatibility issues.
 author: oliag
 ms.author: mairaw
-ms.date: 01/30/2018
-ms.topic: article
-ms.prod: .net
+ms.date: 05/31/2018
 ms.technology: dotnet-standard
 ---
 # .NET API analyzer
@@ -40,7 +38,7 @@ When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, A
 
 The **Error List** window contains warnings with a unique ID per deprecated API, as shown in the following example (`DE004`): 
 
-!["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings.jpg)
+!["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings-id-and-descriptions.jpg "Error List window that includes warnings.")
 
 By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and suggestions regarding alternative APIs that can be used.
 
@@ -68,11 +66,11 @@ Global suppression is the recommended way to ensure consistency of API usage acr
 
 ## Discovering cross-platform issues
 
-Similar to deprecated APIs, the analyzer identifies all APIs that are not cross-platform. For example, <xref:System.Console.WindowWidth?displayProperty=nameWithType> works on Windows but not on Linux and macOS. The diagnostic ID is shown in the **Error List** window. You can suppress that warning by right-clicking and selecting **Quick Actions and Refactorings**. Unlike deprecation cases where you have two options (either keep using the deprecated member and suppress warnings or not use it at all), here if you're developing your code only for certain platforms, you can suppress all warnings for all other platforms you don't plan to run your code on. To do so, you just need to edit your project file and add the `PlatformCompatIgnore` property that lists all platforms to be ignored. The accepted values are: `Linux`, `MacOSX`, and `Windows`.
+Similar to deprecated APIs, the analyzer identifies all APIs that are not cross-platform. For example, <xref:System.Console.WindowWidth?displayProperty=nameWithType> works on Windows but not on Linux and macOS. The diagnostic ID is shown in the **Error List** window. You can suppress that warning by right-clicking and selecting **Quick Actions and Refactorings**. Unlike deprecation cases where you have two options (either keep using the deprecated member and suppress warnings or not use it at all), here if you're developing your code only for certain platforms, you can suppress all warnings for all other platforms you don't plan to run your code on. To do so, you just need to edit your project file and add the `PlatformCompatIgnore` property that lists all platforms to be ignored. The accepted values are: `Linux`, `macOS`, and `Windows`.
 
 ```xml
 <PropertyGroup>
-    <PlatformCompatIgnore>Linux;MacOS</PlatformCompatIgnore>
+    <PlatformCompatIgnore>Linux;macOS</PlatformCompatIgnore>
 </PropertyGroup>
 ```
 
@@ -109,5 +107,5 @@ The user decides how the diagnostics should be treated: as warnings, errors, sug
 
 ## See also
 
-* [Introducing API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) blog post.
-* [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.
+- [Introducing API Analyzer](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/) blog post.
+- [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.

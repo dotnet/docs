@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugFunction::GetNativeCode Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFunction.GetNativeCode"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c8a34916-0eef-4987-8d29-c8bcb4be9cf6
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugFunction::GetNativeCode Method
 Gets the native code for the function that is represented by this ICorDebugFunction instance.  
@@ -41,7 +29,7 @@ HRESULT GetNativeCode (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCode`  
  [out] A pointer to the ICorDebugCode instance that represents the native code for this function, or null, if this function is Microsoft intermediate language (MSIL) code that has not been just-in-time (JIT) compiled.  
   

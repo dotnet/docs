@@ -1,21 +1,7 @@
 ---
 title: "ADO.NET Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # ADO.NET Overview
 ADO.NET provides consistent access to data sources such as SQL Server and XML, and to data sources exposed through OLE DB and ODBC. Data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.  
@@ -65,7 +51,7 @@ ADO.NET provides consistent access to data sources such as SQL Server and XML, a
  [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  Describes how to connect to a data source, retrieve data, and modify data. This includes `DataReaders` and `DataAdapters`.  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,14 +1,7 @@
 ---
 title: C# Program Structure - A Tour of the C# Language
 description: Learn the basic building blocks of a C# program
-keywords: .NET .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 08/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 984f0314-507f-47a0-af56-9011243f5e65
 ---
 
@@ -29,7 +22,7 @@ csc /t:library acme.cs
 compiles the example as a library (code without a `Main` entry point) and produces an assembly named `acme.dll`.
 
 > [!IMPORTANT]
-> The examples above use `csc` as the command line C# compiler. This compiler is a windows executable. To use C# across other platforms, you should use the tools for .NET Core. The .NET Core ecosystem uses the `dotnet` CLI to manage command line builds. This includes managing dependencies, and invoking the C# compiler. See [this tutorial](../../core/tutorials/using-with-xplat-cli.md) for a full description of those tools on the platforms supported by .NET Core.
+> The examples above use `csc` as the command line C# compiler. This compiler is a Windows executable. To use C# across other platforms, you should use the tools for .NET Core. The .NET Core ecosystem uses the `dotnet` CLI to manage command line builds. This includes managing dependencies, and invoking the C# compiler. See [this tutorial](../../core/tutorials/using-with-xplat-cli.md) for a full description of those tools on the platforms supported by .NET Core.
 
 Assemblies contain executable code in the form of Intermediate Language (IL) instructions, and symbolic information in the form of metadata. Before it is executed, the IL code in an assembly is automatically converted to processor-specific code by the Just-In-Time (JIT) compiler of .NET Common Language Runtime.
 
@@ -54,5 +47,5 @@ This creates an executable assembly named `example.exe`, which, when run, produc
 C# permits the source text of a program to be stored in several source files. When a multi-file C# program is compiled, all of the source files are processed together, and the source files can freely reference each other—conceptually, it is as if all the source files were concatenated into one large file before being processed. Forward declarations are never needed in C# because, with very few exceptions, declaration order is insignificant. C# does not limit a source file to declaring only one public type nor does it require the name of the source file to match a type declared in the source file.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](types-and-variables.md)
+>[Previous](index.md)
+>[Next](types-and-variables.md)

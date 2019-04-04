@@ -1,18 +1,12 @@
 ---
-title: "File System and the Registry (C# Programming Guide)"
+title: "File System and the Registry - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "file system [C#]"
   - "registry [C#]"
   - "files [C#]"
 ms.assetid: 0f2511cf-2b02-4b41-b001-b1754677c38f
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # File System and the Registry (C# Programming Guide)
 The following topics show how to use C# and the .NET Framework to perform various basic operations on files, folders, and the Registry.  
@@ -32,7 +26,7 @@ The following topics show how to use C# and the .NET Framework to perform variou
 |[How to: Create a Key In the Registry](../../../csharp/programming-guide/file-system/how-to-create-a-key-in-the-registry.md)|Shows how to write a key to the system registry.|  
   
 ## Related Sections  
- [File and Stream I/O](https://msdn.microsoft.com/library/k3352a4t)  
+ [File and Stream I/O](../../../standard/io/index.md)  
   
  [How to: Copy, Delete, and Move Files and Folders (C# Programming Guide)](../../../csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md)  
   

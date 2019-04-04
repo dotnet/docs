@@ -1,21 +1,7 @@
 ---
 title: "REF CURSOR Examples"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c257da03-c6c9-4cf8-b591-b7740a962c40
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # REF CURSOR Examples
 The REF CURSOR examples are comprised of the following three Microsoft Visual Basic examples that demonstrate using REF CURSORs.  
@@ -34,7 +20,7 @@ The REF CURSOR examples are comprised of the following three Microsoft Visual Ba
 ## Creating the Oracle Package and Package Body  
  These examples require the following PL/SQL package and package body on your server. Create the following Oracle package on the Oracle server.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE CURSPKG AS   
     TYPE T_CURSOR IS REF CURSOR;   
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
@@ -47,7 +33,7 @@ END CURSPKG;
   
  Create the following Oracle package body on the Oracle server.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS  
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,  
                                IO_CURSOR IN OUT T_CURSOR)  
@@ -87,6 +73,6 @@ END CURSPKG;
 /  
 ```  
   
-## See Also  
- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

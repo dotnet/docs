@@ -1,12 +1,6 @@
 ---
 title: "REM Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.'"
   - "vb.Rem"
@@ -19,9 +13,6 @@ helpviewer_keywords:
   - "Visual Basic code, comments"
   - "' comment marker character [Visual Basic]"
 ms.assetid: 34126d7f-e0f9-476d-91e6-b31b398615dc
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # REM Statement (Visual Basic)
 Used to include explanatory remarks in the source code of a program.  
@@ -48,8 +39,9 @@ REM comment
 ## Example  
  The following example illustrates the `REM` statement, which is used to include explanatory remarks in a program. It also shows the alternative of using the single quotation-mark character (`'`) instead of `REM`.  
   
- [!code-vb[VbVbalrStatements#6](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/rem-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#6)]  
   
-## See Also  
- [Comments in Code](../../../visual-basic/programming-guide/program-structure/comments-in-code.md)  
- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+## See also
+
+- [Comments in Code](../../../visual-basic/programming-guide/program-structure/comments-in-code.md)
+- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

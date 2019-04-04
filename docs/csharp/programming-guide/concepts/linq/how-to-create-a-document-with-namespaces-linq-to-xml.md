@@ -1,17 +1,7 @@
 ---
 title: "How to: Create a Document with Namespaces (C#) (LINQ to XML)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create a Document with Namespaces (C#) (LINQ to XML)
 This topic shows how to create documents with namespaces.  
@@ -62,7 +52,7 @@ Console.WriteLine(root);
 ## Example  
  The following example shows the creation of a document that contains two namespaces. One is the default namespace. Another is a namespace with a prefix.  
   
- By including namespace attributes in the root element, the namespaces are serialized so that http://www.adventure-works.com is the default namespace, and www.fourthcoffee.com is serialized with a prefix of "fc". To create an attribute that declares a default namespace, you create an attribute with the name "xmlns", without a namespace. The value of the attribute is the default namespace URI.  
+ By including namespace attributes in the root element, the namespaces are serialized so that `http://www.adventure-works.com` is the default namespace, and `www.fourthcoffee.com` is serialized with a prefix of "fc". To create an attribute that declares a default namespace, you create an attribute with the name "xmlns", without a namespace. The value of the attribute is the default namespace URI.  
   
 ```csharp  
 // The http://www.adventure-works.com namespace is forced to be the default namespace.  
@@ -146,5 +136,6 @@ Console.WriteLine(root);
 </aw:Root>  
 ```  
   
-## See Also  
- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## See also
+
+- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

@@ -1,26 +1,14 @@
 ---
 title: "Security and Remoting Considerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "code security, remoting"
   - "remoting, security"
   - "security [.NET Framework], remoting"
   - "secure coding, remoting"
 ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security and Remoting Considerations
 Remoting allows you to set up transparent calling between application domains, processes, or computers. However, the code access security stack walk cannot cross process or machine boundaries (it does apply between application domains of the same process).  
@@ -43,5 +31,5 @@ Remoting allows you to set up transparent calling between application domains, p
   
  Usually, the default application domain creates the child application domains with a control object in each one. The control object manages the new application domain and occasionally takes orders from the default application domain, but it cannot actually contact the domain directly. Occasionally, the default application domain calls its proxy to the control object. However, there might be cases in which it is necessary for the control object to call back to the default application domain. In these cases, the default application domain passes a marshal-by-reference callback object to the constructor of the control object. It is the responsibility of the control object to protect this proxy. If the control object were to place the proxy on a public static field of a public class, or otherwise publicly expose the proxy, this would open up a dangerous mechanism for other code to call back into the default application domain. For this reason, control objects are always implicitly trusted to keep the proxy private.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

@@ -1,18 +1,7 @@
 ---
 title: "How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bc367e46-f7cc-45f9-936f-754e661b7bb9
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)
 This example shows how to use a LINQ query to count the occurrences of a specified word in a string. Note that to perform the count, first the <xref:System.String.Split%2A> method is called to create an array of words. There is a performance cost to the <xref:System.String.Split%2A> method. If the only operation on the string is to count the words, you should consider using the <xref:System.Text.RegularExpressions.Regex.Matches%2A> or <xref:System.String.IndexOf%2A> methods instead. However, if performance is not a critical issue, or you have already split the sentence in order to perform other types of queries over it, then it makes sense to use LINQ to count the words or phrases as well.  
@@ -65,5 +54,6 @@ End Class
 ## Compiling the Code  
  Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a `Imports` statement for the System.Linq namespace.  
   
-## See Also  
- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+## See also
+
+- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)

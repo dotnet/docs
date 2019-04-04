@@ -1,13 +1,7 @@
 ---
 title: "Grouping Constructs in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Grouping Constructs in Regular Expressions
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  
@@ -173,7 +162,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |-------------|-----------------|  
 |`\D+`|Match one or more non-decimal digit characters.|  
 |`(?<digit>\d+)`|Match one or more decimal digit characters. Assign the match to the `digit` named group.|  
-|\D+|Match one or more non-decimal digit characters.|  
+|`\D+`|Match one or more non-decimal digit characters.|  
 |`(?<digit>\d+)?`|Match zero or one occurrence of one or more decimal digit characters. Assign the match to the `digit` named group.|  
   
 <a name="balancing_group_definition"></a>   
@@ -475,6 +464,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The first capturing group matches each word of the sentence. The second capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

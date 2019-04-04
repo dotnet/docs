@@ -1,30 +1,16 @@
 ---
 title: "UI Automation and Microsoft Active Accessibility"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Active Accessibility"
   - "UI Automation, Active Accessibility compared to"
   - "UI Automation, Microsoft Active Accessibility"
   - "Active Accessibility, UI Automation compared to"
 ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
-caps.latest.revision: 24
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation and Microsoft Active Accessibility
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] was the earlier solution for making applications accessible. [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] is the new accessibility model for [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] and is intended to address the needs of assistive technology products and automated testing tools. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] offers many improvements over [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)].  
   
@@ -32,11 +18,11 @@ ms.workload:
   
 <a name="Programming_Languages_compare"></a>   
 ## Programming Languages  
- [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] is based on the [!INCLUDE[TLA#tla_com](../../../includes/tlasharptla-com-md.md)] with support for dual interfaces, and is therefore programmable in C/C++, [!INCLUDE[TLA#tla_vb6](../../../includes/tlasharptla-vb6-md.md)], and scripting languages. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] (including the client-side provider library for standard controls) is written in managed code, and UI Automation client applications are most easily programmed using [!INCLUDE[TLA#tla_vcshrp](../../../includes/tlasharptla-vcshrp-md.md)] or [!INCLUDE[TLA#tla_visualbnet](../../../includes/tlasharptla-visualbnet-md.md)]. UI Automation providers, which are interface implementations, can be written in managed code or in C/C++.  
+<[!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] is based on the [!INCLUDE[TLA#tla_com](../../../includes/tlasharptla-com-md.md)] with support for dual interfaces, and is therefore programmable in C/C++, [!INCLUDE[TLA#tla_vb6](../../../includes/tlasharptla-vb6-md.md)], and scripting languages. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] (including the client-side provider library for standard controls) is written in managed code, and UI Automation client applications are most easily programmed using C# or Visual Basic .NET. UI Automation providers, which are interface implementations, can be written in managed code or in C/C++.  
   
 <a name="Support_in_Windows_Presentation_Foundation_"></a>   
 ## Support in Windows Presentation Foundation  
- [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)] is the new model for creating user interfaces. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements do not contain native support for [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]; however, they do support [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], which includes bridging support for [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] clients. Only clients written specifically for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] can take full advantage of the accessibility features of [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)], such as the rich support for text.  
+ Windows Presentation Foundation (WPF) is the new model for creating user interfaces. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements do not contain native support for [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)]; however, they do support [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], which includes bridging support for [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] clients. Only clients written specifically for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] can take full advantage of the accessibility features of [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)], such as the rich support for text.  
   
 <a name="Servers_and_Clients_compare"></a>   
 ## Servers and Clients  
@@ -257,5 +243,5 @@ ms.workload:
   
  The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] model removes the need for providers to call through to other provider code. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core service does all the necessary aggregation.  
   
-## See Also  
- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)
+## See also
+- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

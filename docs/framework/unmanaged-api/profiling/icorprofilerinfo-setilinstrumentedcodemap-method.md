@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::SetILInstrumentedCodeMap Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.SetILInstrumentedCodeMap"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: bce1dcf8-b4ec-4e73-a917-f2df1ad49c8a
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::SetILInstrumentedCodeMap Method
 Sets a code map for the specified function using the specified Microsoft intermediate language (MSIL) map entries.  
@@ -46,7 +34,7 @@ HRESULT SetILInstrumentedCodeMap(
     [in, size_is(cILMapEntries)] COR_IL_MAP rgILMapEntries[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which to set the code map.  
   
@@ -97,5 +85,5 @@ HRESULT SetILInstrumentedCodeMap(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

@@ -1,17 +1,11 @@
 ---
-title: "Processing the XML File (C# Programming Guide)"
+title: "Processing the XML File - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML processing [C#]"
   - "XML [C#], processing"
 ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Processing the XML File (C# Programming Guide)
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information about how to tag your code, see [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding .NET Framework metadata/reflection item that the documentation applies to.  
@@ -42,9 +36,9 @@ The compiler generates an ID string for each construct in your code that is tagg
   
     -   Intrinsic types (for example, ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF. and ELEMENT_TYPE_VOID) are represented as the fully qualified name of the corresponding full type. For example, System.Int32 or System.TypedReference.  
   
-    -   ELEMENT_TYPE_PTR is represented as a '*' following the modified type.  
+    -   ELEMENT_TYPE_PTR is represented as a '\*' following the modified type.  
   
-    -   ELEMENT_TYPE_BYREF is represented as a '@' following the modified type.  
+    -   ELEMENT_TYPE_BYREF is represented as a '\@' following the modified type.  
   
     -   ELEMENT_TYPE_PINNED is represented as a '^' following the modified type. The C# compiler never generates this.  
   
@@ -70,18 +64,19 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 -   For conversion operators only (op_Implicit and op_Explicit), the return value of the method is encoded as a '~' followed by the return type, as encoded above.  
   
--   For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters.  For example,  
+-   For generic types, the name of the type is followed by a backtick and then a number that indicates the number of generic type parameters. For example:
   
-     `<member name="T:SampleClass`2">` is the tag for a type that is defined as `public class SampleClass\<T, U>`.  
+     ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.  
   
-     For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with back ticks (for example \`0,`1).  Each number representing a zero-based array notation for the type's generic parameters.  
+     For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with backticks (for example \`0,\`1). Each number representing a zero-based array notation for the type's generic parameters.  
   
 ## Examples  
  The following examples show how the ID strings for a class and its members would be generated:  
   
- [!code-csharp[csProgGuidePointers#21](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/processing-the-xml-file_1.cs)]  
+ [!code-csharp[csProgGuidePointers#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#21)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

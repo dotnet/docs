@@ -1,14 +1,6 @@
 ---
 title: "IGCHost::SetGCStartupLimits Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IGCHost.SetGCStartupLimits"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: cae53926-82ac-4d1d-b297-0bde0bd1bebb
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IGCHost::SetGCStartupLimits Method
 Sets the segment size and the maximum size for generation 0.  
@@ -45,7 +33,7 @@ HRESULT SetGCStartupLimits (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The size of the segment used by the garbage collection system.  
   
@@ -64,5 +52,5 @@ HRESULT SetGCStartupLimits (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+## See also
+- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

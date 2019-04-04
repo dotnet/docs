@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback6::GetAssemblyReferences Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -21,12 +13,8 @@ api_type:
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback6::GetAssemblyReferences Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -41,7 +29,7 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssemblyPath`  
  [in] The path and name of the assembly whose metadata will be modified.  
   
@@ -69,8 +57,8 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-interface.md)  
- [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)  
- [COR_PRF_ASSEMBLY_REFERENCE_INFO Structure](../../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md)  
- [ICorProfilerAssemblyReferenceProvider Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-interface.md)
+## See also
+- [ICorProfilerCallback6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-interface.md)
+- [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)
+- [COR_PRF_ASSEMBLY_REFERENCE_INFO Structure](../../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md)
+- [ICorProfilerAssemblyReferenceProvider Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-interface.md)

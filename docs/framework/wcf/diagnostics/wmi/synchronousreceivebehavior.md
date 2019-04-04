@@ -1,28 +1,14 @@
 ---
 title: "SynchronousReceiveBehavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b31a26a9-ae96-4df0-8406-e07d6f59087c
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SynchronousReceiveBehavior
 SynchronousReceiveBehavior  
   
 ## Syntax  
   
-```  
+```csharp
 class SynchronousReceiveBehavior : Behavior  
 {  
 };  
@@ -37,5 +23,5 @@ class SynchronousReceiveBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>
+## See also
+- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

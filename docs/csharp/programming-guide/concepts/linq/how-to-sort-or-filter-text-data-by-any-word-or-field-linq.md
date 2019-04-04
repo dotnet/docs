@@ -1,17 +1,7 @@
 ---
 title: "How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 7c04d42f-4a78-42c8-9ec8-57ef18fe13a9
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)
 The following example shows how to sort lines of structured text, such as comma-separated values, by any field in the line. The field may be dynamically specified at runtime. Assume that the fields in scores.csv represent a student's ID number, followed by a series of four test scores.  
@@ -79,7 +69,9 @@ public class SortLines
  This example also demonstrates how to return a query variable from a method.  
   
 ## Compiling the Code  
+
  Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also  
- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+## See also
+
+- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)

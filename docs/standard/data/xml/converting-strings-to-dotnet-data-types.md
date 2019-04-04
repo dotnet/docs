@@ -1,24 +1,13 @@
 ---
 title: "Converting Strings to .NET Framework Data Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
-caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Converting Strings to .NET Framework Data Types
 If you want to convert a string to a .NET Framework data type, use the **XmlConvert** method that fits the application requirements. For a list of all conversion methods available in the **XmlConvert** class, see <xref:System.Xml.XmlConvert>.  
@@ -138,6 +127,7 @@ Double value = Double.PositiveInfinity;
 writer.WriteElementString("Infinity", XmlConvert.ToString(value));  
 ```  
   
-## See Also  
- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)  
- [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)
+## See also
+
+- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)
+- [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)

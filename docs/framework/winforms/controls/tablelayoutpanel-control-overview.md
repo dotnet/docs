@@ -1,14 +1,6 @@
 ---
 title: "TableLayoutPanel Control Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "TableLayoutPanel"
 helpviewer_keywords: 
@@ -19,12 +11,6 @@ helpviewer_keywords:
   - "layout [Windows Forms], TableLayoutPanel control"
   - "TableLayoutPanel control [Windows Forms], about TableLayoutPanel control"
 ms.assetid: 337661c8-61cb-44ee-93e0-3662bddec327
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # TableLayoutPanel Control Overview
 The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents in a grid. Because the layout is performed both at design time and run time, it can change dynamically as the application environment changes. This gives the controls in the panel the ability to proportionally resize, so they can respond to changes such as the parent control resizing or text length changing due to localization.  
@@ -41,17 +27,17 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
   
  You can merge cells in the <xref:System.Windows.Forms.TableLayoutPanel> control by setting the `ColumnSpan` or `RowSpan` properties on a child control.  
   
-1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171688\(v=vs.110\))  
+1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control.md)  
   
-2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171687\(v=vs.110\))  
+2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](how-to-span-rows-and-columns-in-a-tablelayoutpanel-control.md)  
   
-3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](http://msdn.microsoft.com/library/ms171686\(v=vs.110\))  
+3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control.md)  
   
-4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](http://msdn.microsoft.com/library/w4yc3e8c\(v=vs.110\))  
+4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
   
-## See Also  
- <xref:System.Windows.Forms.FlowLayoutPanel>  
- <xref:System.Windows.Forms.TableLayoutSettings>  
- [How to: Design a Windows Forms Layout that Responds Well to Localization](../../../../docs/framework/winforms/controls/how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)  
- [How to: Create a Resizable Windows Form for Data Entry](../../../../docs/framework/winforms/controls/how-to-create-a-resizable-windows-form-for-data-entry.md)  
- [Best Practices for the TableLayoutPanel Control](../../../../docs/framework/winforms/controls/best-practices-for-the-tablelayoutpanel-control.md)
+## See also
+- <xref:System.Windows.Forms.FlowLayoutPanel>
+- <xref:System.Windows.Forms.TableLayoutSettings>
+- [How to: Design a Windows Forms Layout that Responds Well to Localization](how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)
+- [How to: Create a Resizable Windows Form for Data Entry](how-to-create-a-resizable-windows-form-for-data-entry.md)
+- [Best Practices for the TableLayoutPanel Control](best-practices-for-the-tablelayoutpanel-control.md)

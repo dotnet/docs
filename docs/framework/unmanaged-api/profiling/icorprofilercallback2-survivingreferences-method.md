@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback2::SurvivingReferences Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback2.SurvivingReferences"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f165200e-3a91-47f7-88fc-13ff10c8babc
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback2::SurvivingReferences Method
 Reports the layout of objects in the heap as a result of a non-compacting garbage collection.  
@@ -44,7 +32,7 @@ HRESULT SurvivingReferences(
                 cObjectIDRangeLength[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSurvivingObjectIDRanges`  
  [in] The number of blocks of contiguous objects that survived as the result of the non-compacting garbage collection. That is, the value of `cSurvivingObjectIDRanges` is the size of the `objectIDRangeStart` and `cObjectIDRangeLength` arrays, which store an `ObjectID` and a length, respectively, for each block of objects.  
   
@@ -86,7 +74,7 @@ HRESULT SurvivingReferences(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)  
- [SurvivingReferences2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-survivingreferences2-method.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)
+- [SurvivingReferences2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-survivingreferences2-method.md)

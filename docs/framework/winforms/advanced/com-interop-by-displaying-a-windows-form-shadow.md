@@ -1,14 +1,6 @@
 ---
 title: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM [Windows Forms]"
   - "Windows Forms, unmanaged"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], COM interop"
   - "Windows Forms, interop"
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method
 You can resolve Component Object Model (COM) interoperability problems by displaying your Windows Form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
@@ -30,7 +16,7 @@ You can resolve Component Object Model (COM) interoperability problems by displa
   
 -   Use the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the Windows Form;  
   
--   Display each Windows Form on a separate thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](../../../../docs/framework/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).  
+-   Display each Windows Form on a separate thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).  
   
 ## Procedure  
  Using the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method can be the easiest way to display a form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop because, of all the approaches, it requires the least code to implement.  
@@ -45,7 +31,7 @@ You can resolve Component Object Model (COM) interoperability problems by displa
   
 -   Replace all calls to the <xref:System.Windows.Forms.Form.Show%2A?displayProperty=nameWithType> method with calls to the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method in your [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] component.  
   
-## See Also  
- [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](../../../../docs/framework/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)  
- [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)
+## See also
+- [Exposing .NET Framework Components to COM](../../interop/exposing-dotnet-components-to-com.md)
+- [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)
+- [Windows Forms and Unmanaged Applications](windows-forms-and-unmanaged-applications.md)

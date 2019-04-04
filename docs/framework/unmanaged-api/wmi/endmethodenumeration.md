@@ -2,10 +2,6 @@
 title: EndMethodEnumeration function (Unmanaged API Reference)
 description: The EndMethodEnumeration function terminates a method enumeration sequence.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "EndMethodEnumeration"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # EndMethodEnumeration function
 Terminates an enumeration sequence started with a call to the [BeginMethodEnumeration function](beginmethodenumeration.md).  
@@ -44,7 +37,7 @@ HRESULT EndMethodEnumeration (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 ## Return value
 
@@ -57,7 +50,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::EndMethodEnumeration](https://msdn.microsoft.com/library/aa391441(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::EndMethodEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-endmethodenumeration) method.
 
 The caller begins the enumeration sequence using [BeginMethodEnumeration function](beginmethodenumeration.md), and then calls the [NextMethod function](nextmethod.md )until the method  returns `WBEM_S_NO_MORE_DATA`. The caller optionally finishes the sequence by calling `EndMethodEnumeration`. The caller may terminate the enumeration early by calling `EndMethodEnumeration` at any time.
 
@@ -68,5 +61,5 @@ The caller begins the enumeration sequence using [BeginMethodEnumeration functio
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

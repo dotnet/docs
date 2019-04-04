@@ -1,24 +1,10 @@
 ---
 title: "Remote vs. Local Execution"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Remote vs. Local Execution
 You can decide to execute your queries either remotely (that is, the database engine executes the query against the database) or locally ([!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] executes the query against a local cache).  
@@ -55,5 +41,5 @@ You can decide to execute your queries either remotely (that is, the database en
 ### Queries Against Unordered Sets  
  Note the important difference between a local collection that implements <xref:System.Collections.Generic.List%601> and a collection that provides remote queries executed against *unordered sets* in a relational database. <xref:System.Collections.Generic.List%601> methods such as those that use index values require list semantics, which typically cannot be obtained through a remote query against an unordered set. For this reason, such methods implicitly load the <xref:System.Data.Linq.EntitySet%601> to allow local execution.  
   
-## See Also  
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+## See also
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

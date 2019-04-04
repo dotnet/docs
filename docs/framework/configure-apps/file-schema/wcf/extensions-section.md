@@ -1,23 +1,9 @@
 ---
-title: "&lt;extensions&gt; section"
-ms.custom: ""
+title: "<extensions> section"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;extensions&gt; section
+# \<extensions> section
 This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.  
   
 \<system.ServiceModel>  
@@ -25,18 +11,18 @@ This configuration section contains a collection of extensions, which enable the
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <extensions>  
-    <bindingExtensions>  
-    </bindingExtensions>  
-    <behaviorExtensions>  
-    </behaviorExtensions>  
-    <bindingElementExtensions>  
+<system.serviceModel>
+  <extensions>
+    <bindingExtensions>
+    </bindingExtensions>
+    <behaviorExtensions>
+    </behaviorExtensions>
+    <bindingElementExtensions>
     </bindingElementExtensions>
     <endpointExtensions>
     </endpointExtensions>
-  </extensions>  
-</system.serviceModel>  
+  </extensions>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

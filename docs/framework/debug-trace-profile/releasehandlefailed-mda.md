@@ -1,14 +1,6 @@
 ---
 title: "releaseHandleFailed MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), handles"
   - "release handle failed"
@@ -18,12 +10,8 @@ helpviewer_keywords:
   - "SafeHandle class, run-time errors"
   - "MDAs (managed debugging assistants), handles"
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # releaseHandleFailed MDA
 The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to notify developers when the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method of a class derived from <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle> returns `false`.  
@@ -82,7 +70,7 @@ and closing it directly or building another SafeHandle around it."
 ## Example  
  The following is a code example that can activate the `releaseHandleFailed` MDA.  
   
-```  
+```csharp
 bool ReleaseHandle()  
 {  
     // Calling the Win32 CloseHandle function to release the   
@@ -96,7 +84,7 @@ bool ReleaseHandle()
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

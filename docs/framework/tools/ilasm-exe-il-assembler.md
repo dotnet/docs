@@ -1,14 +1,6 @@
 ---
 title: "Ilasm.exe (IL Assembler)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MSIL generators"
   - "metadata, MSIL Assembler"
@@ -19,18 +11,14 @@ helpviewer_keywords:
   - "Ilasm.exe"
   - "verifying MSIL performance"
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
-caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Ilasm.exe (IL Assembler)
 
 The IL Assembler generates a portable executable (PE) file from intermediate language (IL). (For more information on IL, see [Managed Execution Process](../../../docs/standard/managed-execution-process.md).) You can run the resulting executable, which contains IL and the required metadata, to determine whether the IL performs as expected.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
@@ -40,7 +28,7 @@ At the command prompt, type the following:
 ilasm [options] filename [[options]filename...]
 ```
 
-#### Parameters
+## Parameters
 
 | Argument | Description |
 | -------- | ----------- |
@@ -235,7 +223,7 @@ The following IL code example corresponds to the previous C# code example. You c
 
 ## See also
 
-[Tools](../../../docs/framework/tools/index.md)  
-[*Ildasm.exe* (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)  
-[Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
-[Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [*Ildasm.exe* (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)
+- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

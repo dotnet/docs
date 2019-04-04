@@ -1,21 +1,7 @@
 ---
 title: "Oracle BFILEs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 341bbf84-4734-4d44-8723-ccedee954e21
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Oracle BFILEs
 The .NET Framework Data Provider for Oracle includes the <xref:System.Data.OracleClient.OracleBFile> class, which is used to work with the Oracle <xref:System.Data.OracleClient.OracleType.BFile> data type.  
@@ -94,6 +80,6 @@ public class Sample
 }  
 ```  
   
-## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

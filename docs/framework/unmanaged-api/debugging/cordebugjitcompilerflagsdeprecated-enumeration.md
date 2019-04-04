@@ -1,14 +1,6 @@
 ---
 title: "CorDebugJITCompilerFlagsDeprecated Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorDebugJITCompilerFlagsDeprecated"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorDebugJITCompilerFlagsDeprecated Enumeration
 This enumeration is obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration instead.  
@@ -55,5 +43,5 @@ typedef enum CorDebugJITCompilerFlagsDeprecated {
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+## See also
+- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

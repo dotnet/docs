@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugStepper::StepOut Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugStepper.StepOut"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: aae0f48c-4ede-4256-9251-a7fc85a229dc
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugStepper::StepOut Method
 Causes this ICorDebugStepper to single-step through its containing thread, and to complete when the current frame returns control to the calling frame.  

@@ -1,14 +1,6 @@
 ---
 title: "ICLRValidator::Validate Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRValidator.Validate"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRValidator::Validate Method
 Validates the portable executable (PE) or Microsoft intermediate language (MSIL) in the specified file.  
@@ -48,7 +36,7 @@ HRESULT Validate (
 );      
 ```  
   
-#### Parameters  
+## Parameters  
  `veh`  
  [in] A pointer to an `IVEHandler` instance that handles validation errors.  
   
@@ -93,5 +81,5 @@ HRESULT Validate (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)
+## See also
+- [ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)

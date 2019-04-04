@@ -1,28 +1,14 @@
 ---
 title: "SecurityBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ef93b6e6-3524-48a8-94d3-c8837f1872f9
-caps.latest.revision: 8
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # SecurityBindingElement
 SecurityBindingElement  
   
 ## Syntax  
   
-```  
+```csharp
 class SecurityBindingElement : BindingElement  
 {  
   string DefaultAlgorithmSuite;  
@@ -88,5 +74,5 @@ class SecurityBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.SecurityBindingElement>

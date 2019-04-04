@@ -1,13 +1,7 @@
 ---
 title: "Substitutions in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "constructs, substitutions"
   - "substitutions"
 ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Substitutions in Regular Expressions
 <a name="Top"></a> Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
@@ -38,7 +27,7 @@ ms.workload:
 |`${` *name* `}`|Includes the last substring matched by the named group that is designated by `(?<`*name*`> )` in the replacement string. For more information, see [Substituting a Named Group](#Named).|  
 |`$$`|Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#DollarSign).|  
 |`$&`|Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#EntireMatch).|  
-|<code>$\`</code>|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
+|``$` ``|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
 |`$'`|Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#AfterMatch).|  
 |`$+`|Includes the last group captured in the replacement string. For more information, see [Substituting the Last Captured Group](#LastGroup).|  
 |`$_`|Includes the entire input string in the replacement string. For more information, see [Substituting the Entire Input String](#EntireString).|  
@@ -147,14 +136,14 @@ ms.workload:
   
 <a name="BeforeMatch"></a>   
 ## Substituting the Text Before the Match  
- The <code>$\`</code> substitution replaces the matched string with the entire input string before the match. That is, it duplicates the input string up to the match while removing the matched text. Any text that follows the matched text is unchanged in the result string. If there are multiple matches in an input string, the replacement text is derived from the original input string, rather than from the string in which text has been replaced by earlier matches. \(The example provides an illustration.\) If there is no match, the <code>$\`</code> substitution has no effect.  
+ The ``$` `` substitution replaces the matched string with the entire input string before the match. That is, it duplicates the input string up to the match while removing the matched text. Any text that follows the matched text is unchanged in the result string. If there are multiple matches in an input string, the replacement text is derived from the original input string, rather than from the string in which text has been replaced by earlier matches. \(The example provides an illustration.\) If there is no match, the ``$` `` substitution has no effect.  
   
- The following example uses the regular expression pattern `\d+` to match a sequence of one or more decimal digits in the input string. The replacement string <code>$`</code> replaces these digits with the text that precedes the match.  
+ The following example uses the regular expression pattern `\d+` to match a sequence of one or more decimal digits in the input string. The replacement string ``$` `` replaces these digits with the text that precedes the match.  
   
  [!code-csharp[Conceptual.Regex.Language.Substitutions#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.substitutions/cs/before1.cs#4)]
  [!code-vb[Conceptual.Regex.Language.Substitutions#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.substitutions/vb/before1.vb#4)]  
   
- In this example, the input string `"aa1bb2cc3dd4ee5"` contains five matches. The following table illustrates how the <code>$`</code> substitution causes the regular expression engine to replace each match in the input string. Inserted text is shown in bold in the results column.  
+ In this example, the input string `"aa1bb2cc3dd4ee5"` contains five matches. The following table illustrates how the ``$` `` substitution causes the regular expression engine to replace each match in the input string. Inserted text is shown in bold in the results column.  
   
 |Match|Position|String before match|Result string|  
 |-----------|--------------|-------------------------|-------------------|  
@@ -224,5 +213,6 @@ ms.workload:
 |1|3|123|ABC**ABC123DEF456**DEF456|  
 |2|5|456|ABCABC123DEF456DEF**ABC123DEF456**|  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

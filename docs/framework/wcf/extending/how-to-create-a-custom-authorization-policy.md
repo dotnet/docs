@@ -1,27 +1,13 @@
 ---
 title: "How to: Create a Custom Authorization Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 05b0549b-882d-4660-b6f0-5678543e5475
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Custom Authorization Policy
-The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] supports a claim-based authorization model. Claims are extracted from tokens, optionally processed by custom authorization policy, and then placed into an <xref:System.IdentityModel.Policy.AuthorizationContext> that can then be examined to make authorization decisions. A custom policy can be used to transform claims from incoming tokens into claims expected by the application. In this way, the application layer can be insulated from the details on the differing claims served up by the different token types that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports. This topic shows how to implement a custom authorization policy and how to add that policy to the collection of policies used by a service.  
+The Identity Model infrastructure in Windows Communication Foundation (WCF) supports a claim-based authorization model. Claims are extracted from tokens, optionally processed by custom authorization policy, and then placed into an <xref:System.IdentityModel.Policy.AuthorizationContext> that can then be examined to make authorization decisions. A custom policy can be used to transform claims from incoming tokens into claims expected by the application. In this way, the application layer can be insulated from the details on the differing claims served up by the different token types that WCF supports. This topic shows how to implement a custom authorization policy and how to add that policy to the collection of policies used by a service.  
   
 ### To implement a custom authorization policy  
   
@@ -53,8 +39,8 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
       <behaviors>  
         <serviceAuthorization serviceAuthorizationManagerType=  
                   "Samples.MyServiceAuthorizationManager" >  
-          <authorizationPolicies>         
-            <add policyType="Samples.MyAuthorizationPolicy"  
+          <authorizationPolicies>  
+            <add policyType="Samples.MyAuthorizationPolicy" />  
           </authorizationPolicies>  
         </serviceAuthorization>  
       </behaviors>  
@@ -83,8 +69,8 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
  [!code-csharp[c_CustomAuthPol#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs/c_customauthpol.cs#5)]
  [!code-vb[c_CustomAuthPol#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#5)]  
   
-## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)  
- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)
+## See also
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)
+- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

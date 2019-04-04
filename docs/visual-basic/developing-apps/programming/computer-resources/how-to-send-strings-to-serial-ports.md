@@ -1,25 +1,15 @@
 ---
 title: "How to: Send Strings to Serial Ports in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "ports, sending strings to"
   - "strings [Visual Basic], sending to serial ports"
   - "My.Computer.Ports object"
   - "serial ports, sending strings to"
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Send Strings to Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to send strings to the computer's serial ports in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+This topic describes how to use `My.Computer.Ports` to send strings to the computer's serial ports in Visual Basic.  
   
 ## Example  
  This example sends a string to the COM1 serial port. You may need to use a different serial port on your computer.  
@@ -30,7 +20,7 @@ This topic describes how to use `My.Computer.Ports` to send strings to the compu
   
  The <xref:System.IO.Ports.SerialPort.WriteLine%2A> method sends the data to the serial port.  
   
- [!code-vb[VbVbalrMyComputer#33](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-send-strings-to-serial-ports_1.vb)]  
+ [!code-vb[VbVbalrMyComputer#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#33)]  
   
 ## Compiling the Code  
   
@@ -41,8 +31,9 @@ This topic describes how to use `My.Computer.Ports` to send strings to the compu
   
  This example uses a `Using` block to make sure that the application closes the port even if it throws an exception. For more information, see [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Ports>  
- <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>  
- [How to: Dial Modems Attached to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)  
- [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Devices.Ports>
+- <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>
+- [How to: Dial Modems Attached to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)
+- [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)

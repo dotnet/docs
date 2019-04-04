@@ -1,18 +1,12 @@
 ---
 title: "-refonly (Visual Basic)"
 ms.date: 03/16/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "-refonly"
 helpviewer_keywords: 
   - "/refonly compiler option [Visual Basic]"
   - "-refonly compiler option [Visual Basic]"
   - "refonly compiler option [Visual Basic]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # -refonly (Visual Basic)
@@ -38,6 +32,7 @@ Reference assemblies include an assembly-level [ReferenceAssembly](xref:System.R
 The `-refonly` and [`-refout`](refout-compiler-option.md) options are mutually exclusive.
 
 ## See also
-[-refout](refout-compiler-option.md)   
-[Visual Basic Command-Line Compiler](index.md)  
-[Sample Compilation Command Lines](sample-compilation-command-lines.md)   
+
+- [-refout](refout-compiler-option.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

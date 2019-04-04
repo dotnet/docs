@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback4::ReJITError Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback4.ReJITError"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: d7888aa9-dfaa-420f-9f99-e06ab35ca482
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback4::ReJITError Method
 Notifies the profiler that the just-in-time (JIT) compiler encountered an error in the recompilation process.  
@@ -43,7 +31,7 @@ HRESULT ReJITError(
     [in] HRESULT     hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The `ModuleID` in which the failed recompilation attempt was made.  
   
@@ -79,6 +67,6 @@ HRESULT ReJITError(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)

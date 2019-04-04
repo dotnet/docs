@@ -1,21 +1,7 @@
 ---
 title: "facet"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 91c4e6aa-3e54-4b6c-a38a-abf27808cc85
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # facet
 A *facet* is used to add detail to a primitive type property definition. A [property](../../../../docs/framework/data/adonet/property.md) definition contains information about the property type, but often more detail is necessary. For example, an entity type in a conceptual model might have a property of type `String` whose value cannot be set to null. Facets allow you to specify this level of detail.  
@@ -42,6 +28,6 @@ A *facet* is used to add detail to a primitive type property definition. A [prop
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
-## See Also  
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+## See also
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

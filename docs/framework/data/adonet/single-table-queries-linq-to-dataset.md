@@ -1,24 +1,10 @@
 ---
 title: "Single-Table Queries (LINQ to DataSet)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
-caps.latest.revision: 3
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Single-Table Queries (LINQ to DataSet)
 [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] queries work on data sources that implement the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The <xref:System.Data.DataTable> class does not implement either interface, so you must call the <xref:System.Data.DataTableExtensions.AsEnumerable%2A> method if you want to use the <xref:System.Data.DataTable> as a source in the `From` clause of a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query.  
@@ -38,7 +24,7 @@ ms.workload:
   
  Note that the data type specified in the generic parameter `T` of the <xref:System.Data.DataRowExtensions.Field%2A> method and <xref:System.Data.DataRowExtensions.SetField%2A> method must match the type of the underlying value or an <xref:System.InvalidCastException> will be thrown. The specified column name must also match the name of a column in the <xref:System.Data.DataSet> or an <xref:System.ArgumentException> will be thrown. In both cases, the exception is thrown at run time data enumeration when the query is executed.  
   
-## See Also  
- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)  
- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [Generic Field and SetField Methods](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)
+## See also
+- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)
+- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [Generic Field and SetField Methods](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)

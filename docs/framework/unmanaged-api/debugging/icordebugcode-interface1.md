@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugCode Interface1"
-ms.custom: ""
+title: "ICorDebugCode Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugCode"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 7bd14fb6-8b54-4484-a891-e3c21859c019
 topic_type: 
   - "apiref"
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugCode Interface1
+# ICorDebugCode Interface
+
 Represents a segment of either Microsoft intermediate language (MSIL) code or native code.  
   
 ## Methods  
@@ -61,7 +50,7 @@ Represents a segment of either Microsoft intermediate language (MSIL) code or na
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

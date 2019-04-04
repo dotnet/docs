@@ -1,25 +1,11 @@
 ---
 title: "Application Settings Attributes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application settings [Windows Forms], attributes"
   - "attributes [Windows Forms], application settings"
   - "wrapper classes [Windows Forms], application settings"
 ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Settings Attributes
 The Application Settings architecture provides many attributes that can be applied either to the applications settings wrapper class or its individual properties. These attributes are examined at run time by the application settings infrastructure, often specifically the settings provider, in order to tailor its functioning to the stated needs of the custom wrapper.  
@@ -45,8 +31,8 @@ The Application Settings architecture provides many attributes that can be appli
   
  *Class* indicates that the attribute can be applied only to an application settings wrapper class. *Property* indicates that the attribute can be applied only settings properties. *Both* indicates that the attribute can be applied at either level.  
   
-## See Also  
- <xref:System.Configuration.ApplicationSettingsBase>  
- <xref:System.Configuration.SettingsProvider>  
- [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)  
- [How to: Create Application Settings](http://msdn.microsoft.com/library/53b3af80-1c02-4e35-99c6-787663148945)
+## See also
+- <xref:System.Configuration.ApplicationSettingsBase>
+- <xref:System.Configuration.SettingsProvider>
+- [Application Settings Architecture](application-settings-architecture.md)
+- [How to: Create Application Settings](how-to-create-application-settings.md)

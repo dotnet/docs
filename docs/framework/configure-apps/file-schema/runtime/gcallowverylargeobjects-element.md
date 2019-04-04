@@ -1,26 +1,14 @@
 ---
-title: "&lt;gcAllowVeryLargeObjects&gt; Element"
-ms.custom: ""
+title: "<gcAllowVeryLargeObjects> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "gcAllowVeryLargeObjects element"
   - "<gcAllowVeryLargeObjects> element"
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;gcAllowVeryLargeObjects&gt; Element
+# \<gcAllowVeryLargeObjects> Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  
   
  \<configuration> Element  
@@ -83,6 +71,6 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

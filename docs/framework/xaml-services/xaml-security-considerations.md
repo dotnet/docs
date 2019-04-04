@@ -1,24 +1,10 @@
 ---
 title: "XAML Security Considerations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "security [XAML Services], .NET XAML services"
   - "XAML security [XAML Services]"
 ms.assetid: 544296d4-f38e-4498-af49-c9f4dad28964
-caps.latest.revision: 7
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XAML Security Considerations
 This topic describes best practices for security in applications when you use XAML and .NET Framework XAML Services API.  
@@ -26,7 +12,7 @@ This topic describes best practices for security in applications when you use XA
 ## Untrusted XAML in Applications  
  In the most general sense, untrusted XAML is any XAML source that your application did not specifically include or emit.  
   
- XAML that is compiled into or stored as a `resx`-type resource within a trusted and signed assembly is not inherently untrusted. You can trust the XAML as much as you trust the assembly as a whole. In most cases, you are only concerned with the trust aspects of loose XAML, which is a XAML source that you load from a stream or other IO. Loose XAML is not a specific component or feature of an application model with a deployment and packaging infrastructure. However, an assembly might implement a behavior that involves loading loose XAML.  
+ XAML that is compiled into or stored as a `resx`-type resource within a trusted and signed assembly is not inherently untrusted. You can trust the XAML as much as you trust the assembly as a whole. In most cases, you are only concerned with the trust aspects of loose XAML, which is a XAML source that you load from a stream or other I/O. Loose XAML is not a specific component or feature of an application model with a deployment and packaging infrastructure. However, an assembly might implement a behavior that involves loading loose XAML.  
   
  For untrusted XAML, you should treat it generally the same as if it were untrusted code. Use sandboxing or other metaphors to prevent possibly untrusted XAML from accessing your trusted code.  
   
@@ -49,5 +35,5 @@ This topic describes best practices for security in applications when you use XA
 ## XAML Type Mapping and Type System Access  
  XAML supports its own type system, which in many ways is a peer to how CLR implements the basic CLR type system. However, for certain aspects of type awareness where you are making trust decisions about a type based on its type information, you should defer to the type information in the CLR backing types. This is because some of the specific reporting capabilities of the XAML type system are left open as virtual methods and are therefore, not fully under the control of the original .NET Framework XAML Services implementations. These extensibility points exist because the XAML type system is extensible, to match the extensibility of XAML itself and its possible alternative type-mapping strategies versus the default CLR-backed implementation and default XAML schema context. For more information, see the specific notes on several of the properties of <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>.  
   
-## See Also  
- <xref:System.Xaml.Permissions.XamlAccessLevel>
+## See also
+- <xref:System.Xaml.Permissions.XamlAccessLevel>

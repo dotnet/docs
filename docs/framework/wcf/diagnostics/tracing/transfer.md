@@ -1,27 +1,13 @@
 ---
 title: "Transfer"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dfcfa36c-d3bb-44b4-aa15-1c922c6f73e6
-caps.latest.revision: 7
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Transfer
-This topic describes transfer in the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing model.  
+This topic describes transfer in the Windows Communication Foundation (WCF) activity tracing model.  
   
 ## Transfer Definition  
- Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)], when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md).  
+ Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In WCF, when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md).  
   
  To emit transfer traces, use the `ActivityTracing` setting on the trace source as demonstrated by the following configuration code.  
   
@@ -68,39 +54,50 @@ This topic describes transfer in the [!INCLUDE[indigo1](../../../../../includes/
   
  The following code example demonstrates how to do this. This sample assumes a blocking call is made when transferring to the new activity, and includes suspend/resume traces.  
   
-```  
+```csharp
 // 0. Create a trace source  
 TraceSource ts = new TraceSource("myTS");  
+
 // 1. remember existing ("ambient") activity for clean up  
 Guid oldGuid = Trace.CorrelationManager.ActivityId;  
 // this will be our new activity  
 Guid newGuid = Guid.NewGuid();   
+
 // 2. call transfer, indicating that we are switching to the new AID  
 ts.TraceTransfer(667, "Transferring.", newGuid);  
+
 // 3. Suspend the current activity.  
 ts.TraceEvent(TraceEventType.Suspend, 667, "Suspend: Activity " + i-1);  
+
 // 4. set the new AID in TLS  
 Trace.CorrelationManager.ActivityId = newGuid;  
+
 // 5. Emit the start trace  
 ts.TraceEvent(TraceEventType.Start, 667, "Boundary: Activity " + i);  
+
 // trace something  
 ts.TraceEvent(TraceEventType.Information, 667, "Hello from activity " + i);  
+
 // Perform Work  
 // some work.  
 // Return  
 ts.TraceEvent(TraceEventType.Information, 667, "Work complete on activity " + i);   
+
 // 6. Emit the transfer returning to the original activity  
 ts.TraceTransfer(667, "Transferring Back.", oldGuid);  
+
 // 7. Emit the End trace  
 ts.TraceEvent(TraceEventType.Stop, 667, "Boundary: Activity " + i);  
+
 // 8. Change the tls variable to the original AID  
 Trace.CorrelationManager.ActivityId = oldGuid;    
+
 // 9. Resume the old activity  
 ts.TraceEvent(TraceEventType.Resume, 667, "Resume: Activity " + i-1);  
 ```  
   
-## See Also  
- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+## See also
+- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)

@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugNativeFrame Interface1"
-ms.custom: ""
+title: "ICorDebugNativeFrame Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugNativeFrame"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 04819c58-7246-4b32-befb-680cf1dbc436
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugNativeFrame Interface1
+# ICorDebugNativeFrame Interface
+
 A specialized implementation of ICorDebugFrame used for native frames.  
   
 ## Methods  
@@ -60,5 +49,5 @@ A specialized implementation of ICorDebugFrame used for native frames.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

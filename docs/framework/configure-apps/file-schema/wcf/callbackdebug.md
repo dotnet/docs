@@ -1,24 +1,10 @@
 ---
-title: "&lt;callbackDebug&gt;"
-ms.custom: ""
+title: "<callbackDebug>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4073feda-1857-4be4-9947-227afb847ced
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;callbackDebug&gt;
-Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] callback object.  
+# \<callbackDebug>
+Specifies service debugging for a Windows Communication Foundation (WCF) callback object.  
   
  \<system.ServiceModel>  
 \<behaviors>  
@@ -29,7 +15,7 @@ Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/ind
 ## Syntax  
   
 ```xml  
-<callbackDebug  includeExceptionDetailInFaults="Boolean" />  
+<callbackDebug includeExceptionDetailInFaults="Boolean" />
 ```  
   
 ## Type  
@@ -53,6 +39,6 @@ Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/ind
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CallbackDebugElement>  
- <xref:System.ServiceModel.Description.CallbackDebugBehavior>
+## See also
+- <xref:System.ServiceModel.Configuration.CallbackDebugElement>
+- <xref:System.ServiceModel.Description.CallbackDebugBehavior>

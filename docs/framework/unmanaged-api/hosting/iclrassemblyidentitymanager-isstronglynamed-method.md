@@ -1,14 +1,6 @@
 ---
 title: "ICLRAssemblyIdentityManager::IsStronglyNamed Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRAssemblyIdentityManager.IsStronglyNamed"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 954bd386-2076-4d00-9d46-38c728aa9cab
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRAssemblyIdentityManager::IsStronglyNamed Method
 Gets a value that indicates whether the specified assembly is strongly named.  
@@ -42,7 +30,7 @@ RESULT IsStronglyNamed (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity`  
  [in] The opaque canonical assembly identity data of the assembly to be evaluated.  
   
@@ -69,5 +57,5 @@ RESULT IsStronglyNamed (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
+## See also
+- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)

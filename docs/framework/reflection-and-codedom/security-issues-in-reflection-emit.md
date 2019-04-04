@@ -1,14 +1,6 @@
 ---
 title: "Security Issues in Reflection Emit"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "partially trusted code"
   - "emitting dynamic assemblies, security"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "emitting dynamic assemblies,partial trust scenarios"
   - "dynamic assemblies, security"
 ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Security Issues in Reflection Emit
 The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:  
@@ -159,6 +147,6 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
 ### Obtaining Information on Types and Members  
  Starting with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
   
-## See Also  
- [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)  
- [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)
+## See also
+- [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)
+- [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)

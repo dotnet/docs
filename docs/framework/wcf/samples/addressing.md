@@ -1,21 +1,7 @@
 ---
 title: "Addressing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
-caps.latest.revision: 21
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Addressing
 The Addressing sample demonstrates various aspects and features of endpoint addresses. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In this sample the service is self-hosted. Both the service and the client are console applications. The service defines multiple endpoints using a combination of relative and absolute endpoint addresses.  
@@ -48,7 +34,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- In this case, the relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is http://localhost:8000/servicemodelsamples/service.  
+ In this case, the relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service`.
   
  The second endpoint definition also specifies a relative address, as shown in the following sample configuration.  
   
@@ -61,7 +47,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- The relative address, "test", is appended to the base address. The actual endpoint address is http://localhost:8000/servicemodelsamples/service/test.  
+ The relative address, "test", is appended to the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service/test`.
   
  The third endpoint definition specifies an absolute address, as shown in the following sample configuration.  
   
@@ -71,9 +57,9 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- The base address plays no role in the address. The actual endpoint address is http://localhost:8001/hello/servicemodelsamples.  
+ The base address plays no role in the address. The actual endpoint address is `http://localhost:8001/hello/servicemodelsamples`.
   
- The fourth endpoint address specifies an absolute address and a different transport—TCP. The base address plays no role in the address. The actual endpoint address is net.tcp://localhost:9000/servicemodelsamples/service.  
+ The fourth endpoint address specifies an absolute address and a different transport—TCP. The base address plays no role in the address. The actual endpoint address is `net.tcp://localhost:9000/servicemodelsamples/service`.
   
 ```xml  
 <!-- The absolute address specified, different transport: -->  
@@ -140,8 +126,7 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Addressing`  
   
-## See Also

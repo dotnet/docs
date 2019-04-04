@@ -1,14 +1,6 @@
 ---
-title: "&lt;network&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<network> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#network"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp/network"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "<network> element"
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
-caps.latest.revision: 13
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;network&gt; Element (Network Settings)
+# \<network> Element (Network Settings)
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  
   
  \<configuration>  
@@ -103,7 +89,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 <configuration>  
   <system.net>  
     <mailSettings>  
-      <smtp deliveryMethod="network">  
+      <smtp deliveryMethod="Network">  
         <network  
           clientDomain="www.contoso.com"  
           defaultCredentials="true"  
@@ -117,8 +103,8 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

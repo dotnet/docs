@@ -1,13 +1,7 @@
 ---
 title: "How to: Use Components That Support the Event-based Asynchronous Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,18 +18,11 @@ helpviewer_keywords:
   - "threading [Windows Forms], asynchronous features"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Use Components That Support the Event-based Asynchronous Pattern
 Many components provide you with the option of performing their work asynchronously. The <xref:System.Media.SoundPlayer> and <xref:System.Windows.Forms.PictureBox> components, for example, enable you to load sounds and images "in the background" while your main thread continues running without interruption.  
   
- Using asynchronous methods on a class that supports the [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md) can be as simple as attaching an event handler to the component's *MethodName***Completed** event, just as you would for any other event. When you call the *MethodName***Async** method, your application will continue running without interruption until the *MethodName***Completed** event is raised. In your event handler, you can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter to determine if the asynchronous operation successfully completed or if it was canceled.  
+ Using asynchronous methods on a class that supports the [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md) can be as simple as attaching an event handler to the component's _MethodName_**Completed** event, just as you would for any other event. When you call the _MethodName_**Async** method, your application will continue running without interruption until the _MethodName_**Completed** event is raised. In your event handler, you can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter to determine if the asynchronous operation successfully completed or if it was canceled.  
   
  For more information about using event handlers, see [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md).  
   
@@ -67,7 +54,7 @@ Many components provide you with the option of performing their work asynchronou
   
      As the image download proceeds, you can move the form freely, minimize it, and maximize it.  
   
-## See Also  
- [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
- [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)  
- [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)
+## See also
+
+- [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)

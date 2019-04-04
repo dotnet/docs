@@ -1,24 +1,10 @@
 ---
 title: "Sorting and Filtering Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Sorting and Filtering Data
 The <xref:System.Data.DataView> provides several ways of sorting and filtering data in a <xref:System.Data.DataTable>:  
@@ -64,10 +50,10 @@ DataView prodView = new DataView(prodDS.Tables["Products"],
    DataViewRowState.CurrentRows);  
 ```  
   
-## See Also  
- <xref:System.Data.DataViewRowState>  
- <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>  
- <xref:System.Data.DataTable>  
- <xref:System.Data.DataView>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataViewRowState>
+- <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>
+- <xref:System.Data.DataTable>
+- <xref:System.Data.DataView>
+- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,36 +1,22 @@
 ---
 title: "Transport Security with Windows Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
-caps.latest.revision: 17
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Transport Security with Windows Authentication
-The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service secured by Windows security. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] programming, see [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  
+The following scenario shows a Windows Communication Foundation (WCF) client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  
   
  An intranet Web service displays human resources information. The client is a Windows Form application. The application is deployed in a domain with a Kerberos controller securing the domain.  
   
- ![Transport security with Windows authentication](../../../../docs/framework/wcf/feature-details/media/securedbywindows.gif "SecuredByWindows")  
+ ![Transport security with Windows authentication](./media/transport-security-with-windows-authentication/secured-windows-authentication.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Transport|  
-|Interoperability|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] only|  
+|Interoperability|WCF only|  
 |Authentication (Server)<br /><br /> Authentication (Client)|Yes (using Windows integrated authentication)<br /><br /> Yes (using Windows integrated authentication)|  
 |Integrity|Yes|  
 |Confidentiality|Yes|  
@@ -125,7 +111,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 </configuration>  
 ```  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

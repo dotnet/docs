@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo5::SetEventMask2 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 dev_langs: 
   - "cpp"
 api_name: 
@@ -20,12 +12,8 @@ api_type:
 ms.assetid: 05dbbe2b-049c-4a60-be69-2ad7a949405e
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo5::SetEventMask2 Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -39,7 +27,7 @@ HRESULT SetEventMask2(        [in] DWORD dwEventsLow,        [in] DWORD dwEvents
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwEventsLow`  
  [in] A 4-byte value that specifies the categories of events. Each bit controls a different capability, behavior, or type of event. The bits are described in the [COR_PRF_MONITOR](../../../../docs/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration.md) enumeration.  
   
@@ -60,6 +48,6 @@ HRESULT SetEventMask2(        [in] DWORD dwEventsLow,        [in] DWORD dwEvents
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo5 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-interface.md)  
- [GetEventMask2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md)
+## See also
+- [ICorProfilerInfo5 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-interface.md)
+- [GetEventMask2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md)

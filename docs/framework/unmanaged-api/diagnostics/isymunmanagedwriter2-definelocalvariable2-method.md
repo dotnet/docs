@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedWriter2::DefineLocalVariable2 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedWriter2.DefineLocalVariable2"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: e774eefe-858c-4362-8d2d-28ebf2ba1a24
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedWriter2::DefineLocalVariable2 Method
 Defines a single variable in the current lexical scope. This method can be called multiple times for a variable of the same name that has multiple homes throughout a scope. In this case, however, the values of the `startOffset` and `endOffset` parameters must not overlap.  
@@ -48,7 +36,7 @@ HRESULT DefineLocalVariable2(
     [in] ULONG32      endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The local variable name.  
   
@@ -82,6 +70,6 @@ HRESULT DefineLocalVariable2(
 ## Requirements  
  **Header:** CorSym.idl  
   
-## See Also  
- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)  
- [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
+## See also
+- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
+- [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)

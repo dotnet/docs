@@ -1,10 +1,6 @@
 ---
 title: "WPF community feedback"
 ms.date: "03/01/2018"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-wpf"
-ms.topic: "article"
 helpviewer_keywords: 
   - "community resources [WPF]"
   - "forums [WPF]"
@@ -12,9 +8,6 @@ helpviewer_keywords:
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
 author: mairaw
 ms.author: mairaw
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF community feedback
 
@@ -121,4 +114,4 @@ Ordinarily, crash and data loss scenarios are high impact and, therefore, the ea
 
 ## See also
 
-[How to report a problem with Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [How to report a problem with Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

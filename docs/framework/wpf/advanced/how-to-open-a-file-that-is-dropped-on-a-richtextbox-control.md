@@ -1,14 +1,6 @@
 ---
 title: "How to: Open a File That is Dropped on a RichTextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "RichTextBox [WPF], drag-and-drop"
   - "drag-and-drop [WPF], open a dropped file"
 ms.assetid: 6bb8bb54-f576-41db-a9a7-24102ddeb490
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Open a File That is Dropped on a RichTextBox Control
 In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], the <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, and <xref:System.Windows.Documents.FlowDocument> controls all have built-in drag-and-drop functionality. The built-in functionality enables drag-and-drop of text within and between the controls. However, it does not enable opening a file by dropping the file on the control. These controls also mark the drag-and-drop events as handled. As a result, by default, you cannot add your own event handlers to provide functionality to open dropped files.  
@@ -37,7 +23,7 @@ In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md
   
  To test this example, drag a text file or a rich text format (RTF) file from Windows Explorer to the <xref:System.Windows.Controls.RichTextBox>. The file will be opened in the <xref:System.Windows.Controls.RichTextBox>. If you press the SHIFT key before the dropping the file, the file will be opened as plain text.  
   
- [!code-xaml[DragDropSnippets#RtbXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#rtbxaml)]  
+ [!code-xaml[DragDropSnippets#RtbXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#rtbxaml)]  
   
- [!code-csharp[DragDropSnippets#RtbHandlers](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#rtbhandlers)]
- [!code-vb[DragDropSnippets#RtbHandlers](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#rtbhandlers)]
+ [!code-csharp[DragDropSnippets#RtbHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#rtbhandlers)]
+ [!code-vb[DragDropSnippets#RtbHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#rtbhandlers)]

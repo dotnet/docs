@@ -1,11 +1,6 @@
 ---
 title: "MustInherit (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "MustInherit"
   - "vb.MustInherit"
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "abstract classes [Visual Basic], MustInherit class"
   - "MustInherit keyword [Visual Basic]"
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # MustInherit (Visual Basic)
 Specifies that a class can be used only as a base class and that you cannot create an object directly from it.  
@@ -38,7 +30,7 @@ Specifies that a class can be used only as a base class and that you cannot crea
 ## Example  
  The following example illustrates both forced inheritance and forced overriding. The base class `shape` defines a variable `acrossLine`. The classes `circle` and `square` derive from `shape`. They inherit the definition of `acrossLine`, but they must define the function `area` because that calculation is different for each kind of shape.  
   
- [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/VisualBasic/mustinherit_1.vb)]  
+ [!code-vb[VbVbalrKeywords#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#2)]  
   
  You can declare `shape1` and `shape2` to be of type `shape`. However, you cannot create an object from `shape` because it lacks the functionality of the function `area` and is marked `MustInherit`.  
   
@@ -49,8 +41,9 @@ Specifies that a class can be used only as a base class and that you cannot crea
   
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
   
-## See Also  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+## See also
+
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)

@@ -1,25 +1,11 @@
 ---
 title: "Type Converters for XAML Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], type converters"
   - "XAML [XAML Services], TypeConverter"
   - "type conversion for XAML [XAML Services]"
 ms.assetid: 51a65860-efcb-4fe0-95a0-1c679cde66b7
-caps.latest.revision: 14
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Type Converters for XAML Overview
 Type converters supply logic for an object writer that converts from a string in XAML markup into particular objects in an object graph. In .NET Framework XAML Services, the type converter must be a class that derives from <xref:System.ComponentModel.TypeConverter>. Some converters also support the XAML save path and can be used to serialize an object into a string form in serialization markup. This topic describes how and when type converters in XAML are invoked, and provides implementation advice for the method overrides of <xref:System.ComponentModel.TypeConverter>.  
@@ -37,7 +23,7 @@ Type converters supply logic for an object writer that converts from a string in
 >  XAML language directives do not use type converters.  
   
 ### Type Converters and Markup Extensions  
- Markup extension usages must be handled by a XAML processor before it checks for property type and other considerations. For example, if a property being set as an attribute normally has a type conversion, but in a particular case is set by a markup extension usage, then the markup extension behavior processes first. One common situation where a markup extension is necessary is to make a reference to an object that already exists. For this scenario, a stateless type converter can only generate a new instance, which might not be desirable. For more information about markup extensions, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+ Markup extension usages must be handled by a XAML processor before it checks for property type and other considerations. For example, if a property being set as an attribute normally has a type conversion, but in a particular case is set by a markup extension usage, then the markup extension behavior processes first. One common situation where a markup extension is necessary is to make a reference to an object that already exists. For this scenario, a stateless type converter can only generate a new instance, which might not be desirable. For more information about markup extensions, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
   
 ### Native Type Converters  
  In the WPF and .NET XAML services implementations, there are certain CLR types that have native type conversion handling, however, those CLR types are not conventionally thought of as primitives. An example of such a type is <xref:System.DateTime>. One reason for this is how the .NET Framework architecture works: the type <xref:System.DateTime> is defined in mscorlib, the most basic library in .NET. <xref:System.DateTime> is not permitted to be attributed with an attribute that comes from another assembly that introduces a dependency (<xref:System.ComponentModel.TypeConverterAttribute> is from System); therefore, the usual type converter discovery mechanism by attributing cannot be supported. Instead, the XAML parser has a list of types that need native processing, and it processes these types similar to how the true primitives are processed. In the case of <xref:System.DateTime>, this processing involves a call to <xref:System.DateTime.Parse%2A>.  
@@ -68,7 +54,7 @@ Type converters supply logic for an object writer that converts from a string in
  <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A> and <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> are support methods that are used when a service queries the capabilities of the <xref:System.ComponentModel.TypeConverter> implementation. You must implement these methods to return `true` for type-specific cases that the equivalent conversion methods of your converter support. For XAML purposes, this generally means the <xref:System.String> type.  
   
 ### Culture Information and Type Converters for XAML  
- Each <xref:System.ComponentModel.TypeConverter> implementation can uniquely interpret what is a valid string for a conversion, and it can also use or ignore the type description that is passed as parameters. An important consideration for culture and XAML type conversion is the following: although using localizable strings as attribute values is supported by XAML, you cannot use these localizable strings as type converter input with specific culture requirements. This limitation is because type converters for XAML attribute values involve a necessarily fixed-language XAML-processing behavior that uses `en-US` culture. For more information about the design reasons for this restriction, see the XAML language specification ([\[MS-XAML\]](http://go.microsoft.com/fwlink/?LinkId=114525)) or [WPF Globalization and Localization Overview](../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
+ Each <xref:System.ComponentModel.TypeConverter> implementation can uniquely interpret what is a valid string for a conversion, and it can also use or ignore the type description that is passed as parameters. An important consideration for culture and XAML type conversion is the following: although using localizable strings as attribute values is supported by XAML, you cannot use these localizable strings as type converter input with specific culture requirements. This limitation is because type converters for XAML attribute values involve a necessarily fixed-language XAML-processing behavior that uses `en-US` culture. For more information about the design reasons for this restriction, see the XAML language specification ([\[MS-XAML\]](https://go.microsoft.com/fwlink/?LinkId=114525)) or [WPF Globalization and Localization Overview](../wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
  As an example where culture can be an issue, some cultures use a comma instead of a period as the decimal point delimiter for numbers in string form. This use collides with the behavior that many existing type converters have, which is to use a comma as a delimiter. Passing a culture through `xml:lang` in the surrounding XAML does not solve the issue.  
   
@@ -103,19 +89,19 @@ Type converters supply logic for an object writer that converts from a string in
 ## Applying the TypeConverterAttribute  
  For your custom type converter to be used as the acting type converter for a custom class by .NET Framework XAML Services, you must apply the [!INCLUDE[TLA#tla_netframewkattr](../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> to your class definition. The <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> that you specify through the attribute must be the type name of your custom type converter. If you apply this attribute, when a XAML processor handles values where the property type uses your custom class type, it can input strings and return object instances.  
   
- You can also provide a type converter on a per-property basis. Instead of applying a [!INCLUDE[TLA#tla_netframewkattr](../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> to the class definition, apply it to a property definition (the main definition, not the `get`/`set` implementations within it). The type of the property must match the type that is processed by your custom type converter. With this attribute applied, when a XAML processor handles values of that property, it can process input strings and return object instances. The per-property type converter technique is particularly useful if you choose to use a property type from [!INCLUDE[TLA#tla_netframewk](../../../includes/tlasharptla-netframewk-md.md)] or from some other library where you cannot control the class definition and cannot apply a <xref:System.ComponentModel.TypeConverterAttribute> there.  
+ You can also provide a type converter on a per-property basis. Instead of applying a [!INCLUDE[TLA#tla_netframewkattr](../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> to the class definition, apply it to a property definition (the main definition, not the `get`/`set` implementations within it). The type of the property must match the type that is processed by your custom type converter. With this attribute applied, when a XAML processor handles values of that property, it can process input strings and return object instances. The per-property type converter technique is particularly useful if you choose to use a property type from Microsoft .NET Framework or from some other library where you cannot control the class definition and cannot apply a <xref:System.ComponentModel.TypeConverterAttribute> there.  
   
  To supply a type conversion behavior for a custom attached member, apply <xref:System.ComponentModel.TypeConverterAttribute> to the `Get` accessor method of the implementation pattern for the attached member.  
   
 <a name="accessing_service_provider_context_from_a_markup_extension_implementation"></a>   
 ## Accessing Service Provider Context from a Markup Extension Implementation  
- The available services are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
+ The available services are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
   
 <a name="type_converters_in_the_xaml_node_stream"></a>   
 ## Type Converters in the XAML Node Stream  
  If you are working with a XAML node stream, the action or end result of a type converter is not yet executed. In a load path, the attribute string that eventually needs to be type-converted in order to load remains as a text value within a start member and end member. The type converter that is eventually needed for this operation can be determined by using the <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> property. However, obtaining a valid value from <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> relies on having a XAML schema context, which can access such information through the underlying member, or the type of the object value that the member uses. Invoking the type conversion behavior also requires the XAML schema context because that requires type-mapping and creating a converter instance.  
   
-## See Also  
- <xref:System.ComponentModel.TypeConverterAttribute>  
- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+## See also
+- <xref:System.ComponentModel.TypeConverterAttribute>
+- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
+- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)

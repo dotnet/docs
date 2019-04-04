@@ -1,4 +1,4 @@
-### BlockingCollection&lt;T&gt;.TryTakeFromAny does not throw anymore
+### BlockingCollection\<T>.TryTakeFromAny does not throw anymore
 
 |   |   |
 |---|---|

@@ -1,21 +1,7 @@
 ---
 title: "Supported and Unsupported LINQ Methods (LINQ to Entities)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Supported and Unsupported LINQ Methods (LINQ to Entities)
 This section provides information about the Language-Integrated Query (LINQ) standard query operators that are supported or unsupported in [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries. Many of the LINQ standard query operators have an overloaded version that accepts an integer argument. The integer argument corresponds to a zero-based index in the sequence that is being operated on, an <xref:System.Collections.Generic.IEqualityComparer%601>, or <xref:System.Collections.Generic.IComparer%601>. Unless otherwise specified, these overloaded versions of the LINQ standard query operators are not supported, and attempting to use them will throw an exception.  
@@ -153,7 +139,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.Sum%2A>|Not supported|`Function Sum(Of TSource) ( _ source As IQueryable(Of TSource), _ selector As Expression(Of Func(Of TSource, Nullable(Of Decimal))) _ ) As Nullable(Of Decimal)`|`Nullable<decimal> Sum<TSource>( this IQueryable<TSource> source, Expression<Func<TSource, Nullable<decimal>>> selector )`|  
   
 ## Type Methods  
- The LINQ standard query operators that deal with CLR type conversion and testing are supported in the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. Only CLR types that map to conceptual model types are supported in LINQ to Entities. For a list of conceptual model types, see [Conceptual Model Types (CSDL)](http://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4). The following table lists the supported and unsupported type methods.  
+ The LINQ standard query operators that deal with CLR type conversion and testing are supported in the Entity Framework. Only CLR types that map to conceptual model types are supported in LINQ to Entities. For a list of conceptual model types, see [Conceptual Model Types (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl). The following table lists the supported and unsupported type methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  
@@ -186,5 +172,5 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.TakeWhile%2A>|Not supported|`Function TakeWhile(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> TakeWhile<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, bool>> predicate )`|  
 |<xref:System.Linq.Queryable.TakeWhile%2A>|Not supported|`Function TakeWhile(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Integer, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> TakeWhile<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, int, bool>> predicate )`|  
   
-## See Also  
- [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md)
+## See also
+- [Standard Query Operators in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md)

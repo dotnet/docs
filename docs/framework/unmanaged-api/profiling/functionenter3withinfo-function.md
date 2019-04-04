@@ -1,14 +1,6 @@
 ---
 title: "FunctionEnter3WithInfo Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "FunctionEnter3WithInfo"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 277c3344-d0cb-431e-beae-eb1eeeba8eea
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # FunctionEnter3WithInfo Function
 Notifies the profiler that control is being passed to a function, and provides a handle that can be passed to the [ICorProfilerInfo3::GetFunctionEnter3Info method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getfunctionenter3info-method.md) to retrieve the stack frame and function arguments.  
@@ -40,7 +28,7 @@ void __stdcall FunctionEnter3WithInfo(
                [in] COR_PRF_ELT_INFO eltInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionIDOrClientID`  
  [in] The identifier of the function to which control is passed.  
   
@@ -71,8 +59,8 @@ void __stdcall FunctionEnter3WithInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetFunctionEnter3Info](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getfunctionenter3info-method.md)  
- [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)  
- [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)  
- [Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)
+## See also
+- [GetFunctionEnter3Info](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getfunctionenter3info-method.md)
+- [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)
+- [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)
+- [Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)

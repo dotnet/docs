@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugModule::EnableClassLoadCallbacks Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugModule.EnableClassLoadCallbacks"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 78dad5e4-8e2e-400f-bec3-92ff0205cd82
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugModule::EnableClassLoadCallbacks Method
 Controls whether the [ICorDebugManagedCallback::LoadClass](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md) and [ICorDebugManagedCallback::UnloadClass](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadclass-method.md) callbacks are called for this module.  
@@ -41,7 +29,7 @@ HRESULT EnableClassLoadCallbacks(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bClassLoadCallbacks`  
  [in] Set this value to `true` to enable the common language runtime (CLR) to call the `ICorDebugManagedCallback::LoadClass` and `ICorDebugManagedCallback::UnloadClass` methods when their associated events occur.  
   
@@ -59,6 +47,6 @@ HRESULT EnableClassLoadCallbacks(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
-    
- 
+## See also
+
+

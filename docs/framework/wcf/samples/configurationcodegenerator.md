@@ -1,21 +1,7 @@
 ---
 title: "ConfigurationCodeGenerator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3913aae8-165f-4014-9262-7fe426f90cb2
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ConfigurationCodeGenerator
 The ConfigurationCodeGenerator is a tool that you can use to expose your custom channel implementations to the configuration system. This allows users of your custom channel to configure your channel by using a .config file just as they would configure a system-provided binding such as `NetTcpBinding` or a custom binding using the `TcpTransportBindingElement`.  
@@ -58,4 +44,3 @@ The ConfigurationCodeGenerator is a tool that you can use to expose your custom 
   
      The SampleConfig.xml file contains the configuration code that you must add to the configuration file that registers the handlers defined in the previous step 1 or 2.  
   
-## See Also

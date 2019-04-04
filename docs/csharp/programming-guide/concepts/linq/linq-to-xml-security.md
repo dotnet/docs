@@ -1,17 +1,7 @@
 ---
 title: "LINQ to XML Security (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: ef2c0dc9-ecf9-4c17-b24e-144184ab725f
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # LINQ to XML Security (C#)
 This topic describes security issues associated with LINQ to XML. In addition, it provides some guidance for mitigating security exposure.  
@@ -103,5 +93,6 @@ This topic describes security issues associated with LINQ to XML. In addition, i
   
  Some security is provided by the common language runtime (CLR). For example, a component that does not include a private class cannot access annotations keyed by that class. However, annotations can be deleted by components that cannot read them. This could be used as a tampering attack.  
   
-## See Also  
- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

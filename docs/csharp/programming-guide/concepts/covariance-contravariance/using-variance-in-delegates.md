@@ -1,17 +1,7 @@
 ---
 title: "Using Variance in Delegates (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 1638c95d-dc8b-40c1-972c-c2dcf84be55e
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Variance in Delegates (C#)
 When you assign a method to a delegate, *covariance* and *contravariance* provide flexibility for matching a delegate type with a method signature. Covariance permits a method to have return type that is more derived than that defined in the delegate. Contravariance permits a method that has parameter types that are less derived than those in the delegate type.  
@@ -24,8 +14,8 @@ When you assign a method to a delegate, *covariance* and *contravariance* provid
 ### Code  
   
 ```csharp  
-class Mammals{}  
-class Dogs : Mammals{}  
+class Mammals {}  
+class Dogs : Mammals {}  
   
 class Program  
 {  
@@ -81,6 +71,7 @@ public Form1()
 }  
 ```  
   
-## See Also  
- [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)  
- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+## See also
+
+- [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
+- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

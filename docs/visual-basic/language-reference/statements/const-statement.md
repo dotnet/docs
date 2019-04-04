@@ -1,20 +1,11 @@
 ---
 title: "Const Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Const"
 helpviewer_keywords: 
   - "Const statement [Visual Basic]"
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Const Statement (Visual Basic)
 Declares and defines one or more constants.  
@@ -31,7 +22,7 @@ Const constantlist
  Optional. List of attributes that apply to all the constants declared in this statement. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets ("`<`" and "`>`").  
   
  `accessmodifier`  
- Optional. Use this to specify what code can access these constants. Can be [Public](../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../visual-basic/language-reference/modifiers/friend.md), `Protected Friend`, or [Private](../../../visual-basic/language-reference/modifiers/private.md).  
+ Optional. Use this to specify what code can access these constants. Can be [Public](../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../visual-basic/language-reference/modifiers/friend.md), [Protected Friend](../modifiers/protected-friend.md), [Private](../../../visual-basic/language-reference/modifiers/private.md), or [Private Protected](../../language-reference/modifiers/private-protected.md).
   
  `Shadows`  
  Optional. Use this to redeclare and hide a programming element in a base class. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).  
@@ -93,23 +84,24 @@ Const constantlist
 ## Example  
  The following example uses the `Const` statement to declare constants for use in place of literal values.  
   
- [!code-vb[VbVbalrStatements#13](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/const-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#13)]  
   
 ## Example  
  If you define a constant with data type `Object`, the Visual Basic compiler gives it the type of `initializer`, instead of `Object`. In the following example, the constant `naturalLogBase` has the run-time type `Decimal`.  
   
- [!code-vb[VbVbalrStatements#87](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/const-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#87](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#87)]  
   
  The preceding example uses the <xref:System.Type.ToString%2A> method on the <xref:System.Type> object returned by the [GetType Operator](../../../visual-basic/language-reference/operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)
+- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

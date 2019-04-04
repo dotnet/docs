@@ -1,13 +1,8 @@
 ---
-title: "Anchors in Regular Expressions"
-ms.custom: ""
+title: "Anchors in .NET Regular Expressions"
+description: Learn how to use anchors in regular expression patterns.
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,21 +16,17 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, anchors"
   - ".NET Framework regular expressions, atomic zero-width assertions"
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+ms.custom: seodec18
 ---
 # Anchors in Regular Expressions
 <a name="top"></a> Anchors, or atomic zero-width assertions, specify a position in the string where a match must occur. When you use an anchor in your search expression, the regular expression engine does not advance through the string or consume characters; it looks for a match in the specified position only. For example, `^` specifies that the match must start at the beginning of a line or string. Therefore, the regular expression `^http:` matches "http:" only when it occurs at the beginning of a line. The following table lists the anchors supported by the regular expressions in .NET.  
   
 |Anchor|Description|  
 |------------|-----------------|  
-|`^`|The match must occur at the beginning of the string or line. For more information, see [Start of String or Line](#Start).|  
-|`$`|The match must occur at the end of the string or line, or before `\n` at the end of the string or line. For more information, see [End of String or Line](#End).|  
+|`^`|By default, the match must occur at the beginning of the string; in multiline mode, it must occur at the beginning of the line. For more information, see [Start of String or Line](#Start).|  
+|`$`|By default, the match must occur at the end of the string or before `\n` at the end of the string; in multiline mode, it must occur at the end of the line or before `\n` at the end of the line. For more information, see [End of String or Line](#End).|  
 |`\A`|The match must occur at the beginning of the string only (no multiline support). For more information, see [Start of String Only](#StartOnly).|  
 |`\Z`|The match must occur at the end of the string, or before `\n` at the end of the string. For more information, see [End of String or Before Ending Newline](#EndOrNOnly).|  
 |`\z`|The match must occur at the end of the string only. For more information, see [End of String Only](#EndOnly).|  
@@ -45,7 +36,7 @@ ms.workload:
   
 <a name="Start"></a>   
 ## Start of String or Line: ^  
- The `^` anchor specifies that the following pattern must begin at the first character position of the string. If you use `^` with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option (see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)), the match must occur at the beginning of each line.  
+ By default, the `^` anchor specifies that the following pattern must begin at the first character position of the string. If you use `^` with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option (see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)), the match must occur at the beginning of each line.  
   
  The following example uses the `^` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The example calls two overloads of the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method:  
   
@@ -179,6 +170,7 @@ ms.workload:
 |`qu`|Match the substring "qu".|  
 |`\w+`|Match one or more word characters.|  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)

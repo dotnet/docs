@@ -1,14 +1,6 @@
 ---
-title: "&lt;trace&gt; Element"
-ms.custom: ""
+title: "<trace> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#trace"
@@ -18,14 +10,8 @@ helpviewer_keywords:
   - "trace element"
   - "trace listener, <trace> element"
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
-caps.latest.revision: 13
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;trace&gt; Element
+# \<trace> Element
 Contains listeners that collect, store, and route tracing messages.  
   
  \<configuration>  
@@ -93,9 +79,9 @@ Contains listeners that collect, store, and route tracing messages.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

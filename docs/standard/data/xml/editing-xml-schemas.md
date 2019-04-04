@@ -1,25 +1,14 @@
 ---
 title: "Editing XML Schemas"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 ms.assetid: fa09c8e5-c2b9-49d2-bb0d-40330cd13e4d
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Editing XML Schemas
 Editing an XML schema is one of the most important features of the Schema Object Model (SOM). All of the pre-schema-compilation properties of the SOM can be used to change the existing values in an XML schema. The XML schema can then be recompiled to reflect the changes.  
@@ -140,11 +129,12 @@ Editing an XML schema is one of the most important features of the Schema Object
 </xs:schema>  
 ```  
   
-## See Also  
- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)  
- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+## See also
+
+- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
+- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
+- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
+- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
+- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)

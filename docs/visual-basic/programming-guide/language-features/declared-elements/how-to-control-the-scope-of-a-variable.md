@@ -1,13 +1,6 @@
 ---
 title: "How to: Control the Scope of a Variable (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "variables [Visual Basic], scope"
   - "declared elements [Visual Basic], scope"
@@ -19,9 +12,6 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], visibility"
   - "visibility [Visual Basic], variables"
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Control the Scope of a Variable (Visual Basic)
 Normally, a variable is in *scope*, or visible for reference, throughout the region in which you declare it. In some cases, the variable's *access level* can influence its scope.  
@@ -90,10 +80,11 @@ Public strMsg As String
 ## .NET Framework Security  
  The narrower the scope of a variable, the smaller the chances that malicious code can make improper use of it.  
   
-## See Also  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
+## See also
+
+- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)

@@ -1,18 +1,11 @@
 ---
 title: "-imports (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/imports compiler option [Visual Basic]"
   - "imports compiler option [Visual Basic]"
   - "-imports compiler option [Visual Basic]"
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -imports (Visual Basic)
 Imports namespaces from a specified assembly.  
@@ -39,11 +32,18 @@ Imports namespaces from a specified assembly.
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **References** tab.<br />3.  Enter the namespace name in the box beside the **Add User Import** button.<br />4.  Click the **Add User Import** button.|  
   
 ## Example  
- The following code compiles when `/imports:system.globalization` is specified. Without it, successful compilation requires either that an `Imports System.Globalization` statement be included at the beginning of the source code file, or that the property be fully qualified as `System.Globalization.CultureInfo.CurrentCulture.Name`. 
-  
- [!code-vb[imports example](codesnippet/VisualBasic/imports_2.vb)]  
-  
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+ The following code compiles when `/imports:system.globalization` is specified. Without it, successful compilation requires either that an `Imports System.Globalization` statement be included at the beginning of the source code file, or that the property be fully qualified as `System.Globalization.CultureInfo.CurrentCulture.Name`.
+
+```vb
+Module Example
+   Public Sub Main()
+      Console.WriteLine($"The current culture is {CultureInfo.CurrentCulture.Name}")
+   End Sub
+End Module
+```
+
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

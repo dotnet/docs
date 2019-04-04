@@ -1,19 +1,7 @@
 ---
 title: "Modifying Elements, Attributes, and Nodes in an XML Tree1"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 865cf54e-f8ac-4871-863b-a3e6fc61a4b9
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Modifying Elements, Attributes, and Nodes in an XML Tree
 The following table summarizes the methods and properties that you can use to modify an element, its child elements, or its attributes.  
@@ -51,5 +39,6 @@ The following table summarizes the methods and properties that you can use to mo
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XContainer.ReplaceNodes%2A?displayProperty=nameWithType>|Replaces the children nodes with new content.|  
   
-## See Also  
- [Modifying XML Trees (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+## See also
+
+- [Modifying XML Trees (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

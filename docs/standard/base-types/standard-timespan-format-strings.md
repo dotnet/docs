@@ -1,13 +1,7 @@
 ---
 title: "Standard TimeSpan Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,13 +17,8 @@ helpviewer_keywords:
   - "standard TimeSpan format strings"
   - "formatting [.NET Framework], time intervals"
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Standard TimeSpan Format Strings
 <a name="Top"></a> A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
@@ -48,9 +37,9 @@ ms.workload:
   
 |Format specifier|Name|Description|Examples|  
 |----------------------|----------|-----------------|--------------|  
-|"c"|Constant (invariant) format|This specifier is not culture-sensitive. It takes the form `[-][d’.’]hh’:’mm’:’ss[‘.’fffffff]`.<br /><br /> (The "t" and "T" format strings produce the same results.)<br /><br /> More information: [The Constant ("c") Format Specifier](#Constant).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
-|"g"|General short format|This specifier outputs only what is needed. It is culture-sensitive and takes the form `[-][d’:’]h’:’mm’:’ss[.FFFFFFF]`.<br /><br /> More information: [The General Short ("g") Format Specifier](#GeneralShort).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
-|"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d’:’hh’:’mm’:’ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#GeneralLong).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
+|"c"|Constant (invariant) format|This specifier is not culture-sensitive. It takes the form `[-][d'.']hh':'mm':'ss['.'fffffff]`.<br /><br /> (The "t" and "T" format strings produce the same results.)<br /><br /> More information: [The Constant ("c") Format Specifier](#Constant).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
+|"g"|General short format|This specifier outputs only what is needed. It is culture-sensitive and takes the form `[-][d':']h':'mm':'ss[.FFFFFFF]`.<br /><br /> More information: [The General Short ("g") Format Specifier](#GeneralShort).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
+|"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#GeneralLong).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
   
 <a name="Constant"></a>   
 ## The Constant ("c") Format Specifier  
@@ -135,7 +124,8 @@ ms.workload:
   
  [Back to table](#Top)  
   
-## See Also  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)
+## See also
+
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)
+- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)

@@ -1,19 +1,7 @@
 ---
 title: "1131 - InvokeMethodUseAsyncPattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: eca50fa7-5276-4759-ad1c-e490b9bd1f82
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1131 - InvokeMethodUseAsyncPattern
 ## Properties  

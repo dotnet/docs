@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugFunction2 Interface1"
-ms.custom: ""
+title: "ICorDebugFunction2 Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugFunction2"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 2b936bef-9b75-48bf-859f-42e419c65f1c
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugFunction2 Interface1
+# ICorDebugFunction2 Interface
+
 Logically extends the ICorDebugFunction interface to provide support for Just My Code step-through debugging, which skips non-user code.  
   
 ## Methods  
@@ -55,5 +44,5 @@ Logically extends the ICorDebugFunction interface to provide support for Just My
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

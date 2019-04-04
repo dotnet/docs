@@ -1,10 +1,6 @@
 ---
 title: "-win32res (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/win32res"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "-win32res compiler option [C#]"
   - "win32res compiler option [C#]"
 ms.assetid: 3c33f750-6948-4c7e-a27e-bef98f77255b
-caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -win32res (C# Compiler Options)
 The **-win32res** option inserts a Win32 resource in the output file.  
@@ -52,6 +45,7 @@ The **-win32res** option inserts a Win32 resource in the output file.
 csc -win32res:rf.res in.cs  
 ```  
   
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

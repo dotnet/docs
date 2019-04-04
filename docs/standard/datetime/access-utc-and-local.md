@@ -1,13 +1,7 @@
 ---
 title: "How to: Access the predefined UTC and local time zone objects"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,15 +13,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], retrieving"
   - "time zones [.NET Framework], UTC"
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Access the predefined UTC and local time zone objects
 
 The <xref:System.TimeZoneInfo> class provides two properties, <xref:System.TimeZoneInfo.Utc%2A> and <xref:System.TimeZoneInfo.Local%2A>, that give your code access to predefined time zone objects. This topic discusses how to access the <xref:System.TimeZoneInfo> objects returned by those properties.
@@ -63,6 +51,6 @@ This example requires:
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
-[How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
+- [How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md)

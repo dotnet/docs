@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataAssemblyImport::CloseEnum Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataAssemblyImport.CloseEnum"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: c9df4087-12b3-46d9-b075-9067dd7805df
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataAssemblyImport::CloseEnum Method
 Releases a reference to the specified enumeration instance.  
@@ -41,7 +29,7 @@ void CloseEnum (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumeration instance to be closed.  
   
@@ -54,5 +42,5 @@ void CloseEnum (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+## See also
+- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

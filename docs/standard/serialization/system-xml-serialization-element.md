@@ -1,26 +1,13 @@
 ---
-title: "&lt;system.xml.serialization&gt; Element"
-ms.custom: ""
+title: "<system.xml.serialization> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "system.xml.serialization element"
   - "XML serialization, configuration"
   - "<system.xml.serialization> element"
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-# &lt;system.xml.serialization&gt; Element
+# \<system.xml.serialization> Element
 The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
@@ -69,10 +56,11 @@ The top-level element for controlling XML serialization. For more information ab
 </system.sxml.serialization>  
 ```  
   
-## See Also  
- <xref:System.Xml.Serialization.XmlSchemaImporter>  
- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
- [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)
+## See also
+
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)
+- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)
+- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)

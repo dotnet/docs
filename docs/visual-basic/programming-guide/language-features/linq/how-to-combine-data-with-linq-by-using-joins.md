@@ -1,13 +1,6 @@
 ---
 title: "How to: Combine Data with LINQ by Using Joins (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], joins"
   - "joins [LINQ in Visual Basic]"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "joining [LINQ in Visual Basic]"
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Combine Data with LINQ by Using Joins (Visual Basic)
 Visual Basic provides the `Join` and `Group Join` query clauses to enable you to combine the contents of multiple collections based on common values between the collections. These values are known as *key* values. Developers familiar with relational database concepts will recognize the `Join` clause as an INNER JOIN and the `Group Join` clause as, effectively, a LEFT OUTER JOIN.  
@@ -33,8 +23,8 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 2.  The samples in this topic use the `Person` and `Pet` types and data from the following code example. Copy this code into the default `Module1` module created by Visual Basic.  
   
-     [!code-vb[VbLINQHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_1.vb)]  
-    [!code-vb[VbLINQHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_2.vb)]  
+     [!code-vb[VbLINQHowTos#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#1)]  
+    [!code-vb[VbLINQHowTos#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#2)]  
   
 ## Perform an Inner Join by Using the Join Clause  
  An INNER JOIN combines data from two collections. Items for which the specified key values match are included. Any items from either collection that do not have a matching item in the other collection are excluded.  
@@ -49,7 +39,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 1.  Add the following code to the `Module1` module in your project to see examples of both an implicit and explicit inner join.  
   
-     [!code-vb[VbLINQHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_3.vb)]  
+     [!code-vb[VbLINQHowTos#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#4)]  
   
 ## Perform a Left Outer Join by Using the Group Join Clause  
  A LEFT OUTER JOIN includes all the items from the left-side collection of the join and only matching values from the right-side collection of the join. Any items from the right-side collection of the join that do not have a matching item in the left-side collection are excluded from the query result.  
@@ -62,7 +52,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 1.  Add the following code to the `Module1` module in your project to see examples of both a grouped left outer join and an ungrouped left outer join.  
   
-     [!code-vb[VbLINQHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_4.vb)]  
+     [!code-vb[VbLINQHowTos#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#3)]  
   
 ## Perform a Join by Using a Composite Key  
  You can use the `And` keyword in a `Join` or `Group Join` clause to identify multiple key fields to use when matching values from the collections being joined. The `And` keyword specifies that all specified key fields must match for items to be joined.  
@@ -71,7 +61,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 1.  Add the following code to the `Module1` module in your project to see examples of a join that uses a composite key.  
   
-     [!code-vb[VbLINQHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_5.vb)]  
+     [!code-vb[VbLINQHowTos#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#5)]  
   
 ## Run the Code  
   
@@ -79,16 +69,17 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 1.  Replace the `Sub Main` in the `Module1` module in your project with the following code to run the examples in this topic.  
   
-     [!code-vb[VbLINQHowTos#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_6.vb)]  
+     [!code-vb[VbLINQHowTos#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#6)]  
   
 2.  Press F5 to run the examples.  
   
-## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)  
- [Group Join Clause](../../../../visual-basic/language-reference/queries/group-join-clause.md)  
- [From Clause](../../../../visual-basic/language-reference/queries/from-clause.md)  
- [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
- [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)
+## See also
+
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)
+- [Group Join Clause](../../../../visual-basic/language-reference/queries/group-join-clause.md)
+- [From Clause](../../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)
+- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)

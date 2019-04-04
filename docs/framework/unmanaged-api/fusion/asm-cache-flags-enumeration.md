@@ -1,14 +1,6 @@
 ---
 title: "ASM_CACHE_FLAGS Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ASM_CACHE_FLAGS"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 82e9a7da-321b-48b8-b239-52eaffda6be8
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ASM_CACHE_FLAGS Enumeration
 Indicates the source of an assembly that is represented by [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) in the global assembly cache.  
@@ -39,7 +27,7 @@ typedef enum {
     ASM_CACHE_ZAP       = 0x01,  
     ASM_CACHE_GAC       = 0x02,  
     ASM_CACHE_DOWNLOAD  = 0x04,  
-    ASM_CACHE_ROOT      = 0x08  
+    ASM_CACHE_ROOT      = 0x08,  
     ASM_CACHE_ROOT_EX   = 0x80  
 } ASM_CACHE_FLAGS;  
 ```  
@@ -63,7 +51,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetCachePath Function](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)  
- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)  
- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+## See also
+- [GetCachePath Function](../../../../docs/framework/unmanaged-api/fusion/getcachepath-function.md)
+- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)

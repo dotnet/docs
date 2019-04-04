@@ -1,14 +1,6 @@
 ---
 title: "DataGrid Styles and Templates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "states [WPF], DataGrid"
   - "ControlTemplate [WPF], DataGrid"
@@ -17,15 +9,9 @@ helpviewer_keywords:
   - "styles [WPF], DataGrid"
   - "parts [WPF], DataGrid"
 ms.assetid: 9cb31d63-f148-4d25-b079-816e73f988c7
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.DataGrid> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.DataGrid> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 ## DataGrid Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DataGrid> control.  
@@ -36,7 +22,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
  When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.DataGrid>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.DataGrid>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
- The default template for the <xref:System.Windows.Controls.DataGrid> contains a <xref:System.Windows.Controls.ScrollViewer> control. For more information about the parts defined by the <xref:System.Windows.Controls.ScrollViewer>, see [ScrollViewer Styles and Templates](../../../../docs/framework/wpf/controls/scrollviewer-styles-and-templates.md).  
+ The default template for the <xref:System.Windows.Controls.DataGrid> contains a <xref:System.Windows.Controls.ScrollViewer> control. For more information about the parts defined by the <xref:System.Windows.Controls.ScrollViewer>, see [ScrollViewer Styles and Templates](scrollviewer-styles-and-templates.md).  
   
 ## DataGrid States  
  The following table lists the visual states for the <xref:System.Windows.Controls.DataGrid> control.  
@@ -169,18 +155,18 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGrid ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.DataGrid> control and its associated types.  
   
- [!code-xaml[ControlTemplateExamples#DataGrid](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/datagrid.xaml#datagrid)]  
+ [!code-xaml[ControlTemplateExamples#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/datagrid.xaml#datagrid)]  
   
  The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+ [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
+ For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
-## See Also  
- <xref:System.Windows.FrameworkElement.Style%2A>  
- <xref:System.Windows.Controls.ControlTemplate>  
- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)  
- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)
+## See also
+- <xref:System.Windows.FrameworkElement.Style%2A>
+- <xref:System.Windows.Controls.ControlTemplate>
+- [Control Styles and Templates](control-styles-and-templates.md)
+- [Control Customization](control-customization.md)
+- [Styling and Templating](styling-and-templating.md)
+- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)

@@ -1,1 +1,0 @@
-                Dim Incoming As String = com1.ReadLine()

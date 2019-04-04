@@ -1,26 +1,14 @@
 ---
-title: "&lt;relativeBindForResources&gt; Element"
-ms.custom: ""
+title: "<relativeBindForResources> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "RelativeBindForResources element"
   - "<relativeBindForResources> element"
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;relativeBindForResources&gt; Element
+# \<relativeBindForResources> Element
 Optimizes the probe for satellite assemblies.  
   
  \<configuration> Element  
@@ -77,7 +65,7 @@ Optimizes the probe for satellite assemblies.
   
 -   It does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
-## See Also  
- [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+- [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

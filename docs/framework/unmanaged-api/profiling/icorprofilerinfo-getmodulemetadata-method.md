@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetModuleMetaData Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetModuleMetaData"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetModuleMetaData Method
 Gets a metadata interface instance that maps to the specified module.  
@@ -43,7 +31,7 @@ HRESULT GetModuleMetaData(
     [out] IUnknown **ppOut);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module to which the interface instance will be mapped.  
   
@@ -70,5 +58,5 @@ HRESULT GetModuleMetaData(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

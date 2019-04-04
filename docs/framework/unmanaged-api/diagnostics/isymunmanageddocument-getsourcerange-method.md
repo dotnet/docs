@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedDocument::GetSourceRange Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedDocument.GetSourceRange"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 20fefee7-1040-41ba-93dc-bd42f68b90c2
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetSourceRange Method
 Returns the specified range of the embedded source into the given buffer. The buffer must be large enough to hold the source.  
@@ -47,7 +35,7 @@ HRESULT GetSourceRange(
         length_is(*pcSourceBytes)] BYTE source[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startLine`  
  [in] The starting line in the current document.  
   
@@ -72,5 +60,5 @@ HRESULT GetSourceRange(
 ## Return Value  
  S_OK if the method succeeds.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

@@ -1,21 +1,9 @@
 ---
-title: "How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (Visual Basic)"
-ms.custom: ""
+title: "How to: Query An Assembly's Metadata with Reflection (LINQ) (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 53caa336-ab83-4181-b0f6-5c87c5f9e4ee
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
-# How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (Visual Basic)
+# How to: Query An Assembly's Metadata with Reflection (LINQ) (Visual Basic)
 The following example shows how LINQ can be used with reflection to retrieve specific metadata about methods that match a specified search criterion. In this case, the query will find the names of all the methods in the assembly that return enumerable types such as arrays.  
   
 ## Example  
@@ -57,5 +45,6 @@ End Module
 ## Compiling the Code  
  Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a `Imports` statement for the System.Linq namespace.  
   
-## See Also  
- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+## See also
+
+- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)

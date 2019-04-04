@@ -1,24 +1,13 @@
 ---
 title: "Resolving External Resources During XSLT Processing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Resolving External Resources During XSLT Processing
 There are several times during an XSLT transformation when you may need to resolve external resources.  
@@ -49,7 +38,8 @@ There are several times during an XSLT transformation when you may need to resol
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]
  [!code-vb[XslCompiledTransform.Load#11](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#11)]  
   
-## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- <xref:System.Xml.Xsl.XsltSettings>  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>
+- <xref:System.Xml.Xsl.XsltSettings>
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

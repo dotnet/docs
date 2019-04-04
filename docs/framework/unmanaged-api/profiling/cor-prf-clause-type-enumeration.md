@@ -1,14 +1,6 @@
 ---
 title: "COR_PRF_CLAUSE_TYPE Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "COR_PRF_CLAUSE_TYPE"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: f64c325a-ed3a-4aaf-b847-a88edbc4fefc
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # COR_PRF_CLAUSE_TYPE Enumeration
 Indicates the type of exception clause that the code has just entered or left.  
@@ -61,5 +49,5 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+## See also
+- [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

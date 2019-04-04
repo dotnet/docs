@@ -1,13 +1,6 @@
 ---
 title: "Type Relationships in LINQ Query Operations (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "inferring type information [LINQ in C#]"
   - "data sources [LINQ in C#], type relationships"
@@ -19,9 +12,6 @@ helpviewer_keywords:
   - "data transformations [LINQ in C#]"
   - "LINQ [C#], type relationships"
 ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
-caps.latest.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Type Relationships in LINQ Query Operations (C#)
 To write queries effectively, you should understand how types of the variables in a complete query operation all relate to each other. If you understand these relationships you will more easily comprehend the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] samples and code examples in the documentation. Furthermore, you will understand what occurs behind the scenes when variables are implicitly typed by using `var`.  
@@ -37,7 +27,7 @@ To write queries effectively, you should understand how types of the variables i
   
 1.  The type argument of the data source determines the type of the range variable.  
   
-2.  The type of the object that is selected determines the type of the query variable. Here `name` is a string. Therefore, the query variable is an `IEnumerable`\<string>.  
+2.  The type of the object that is selected determines the type of the query variable. Here `name` is a string. Therefore, the query variable is an `IEnumerable<string>`.  
   
 3.  The query variable is iterated over in the `foreach` statement. Because the query variable is a sequence of strings, the iteration variable is also a string.  
   
@@ -69,5 +59,6 @@ To write queries effectively, you should understand how types of the variables i
   
  For more information about `var`, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   
-## See Also  
- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+## See also
+
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataTables::GetTableInfo Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataTables.GetTableInfo"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 50cbe557-2322-41aa-8e0d-f967602eaa0f
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataTables::GetTableInfo Method
 Gets the name, row size, number of rows, number of columns, and key column index of the specified table.  
@@ -46,7 +34,7 @@ HRESULT GetTableInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The identifier of the table whose properties to return.  
   
@@ -74,6 +62,6 @@ HRESULT GetTableInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## See also
+- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

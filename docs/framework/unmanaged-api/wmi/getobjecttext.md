@@ -2,10 +2,6 @@
 title: GetObjectText function (Unmanaged API Reference)
 description: The GetObjectText function returns a textual rendering of an object in MOF syntax.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetObjectText"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetObjectText function
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.
@@ -46,7 +39,7 @@ HRESULT GetObjectText (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `lFlags`  
 [in] Normally 0. If `WBEM_FLAG_NO_FLAVORS` (or 0x1) is specified, qualifiers are included without propagation or flavor information.
@@ -67,7 +60,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetObjectText](https://msdn.microsoft.com/library/aa391448(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetObjectText](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getobjecttext) method.
 
 The MOF text returned does not contain all the information about the object, but only enough information for the MOF compiler to be able to recreate the original object. For instance, no propagated qualifiers or parent class properties are included.
 
@@ -85,5 +78,5 @@ The following algorithm is used to reconstruct the text of the parameters of a m
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

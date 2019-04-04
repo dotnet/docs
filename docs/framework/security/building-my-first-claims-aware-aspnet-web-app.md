@@ -1,21 +1,8 @@
 ---
 title: "Building My First Claims-Aware ASP.NET Web Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3ee8ee7f-caba-4267-9343-e313fae2876d
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Building My First Claims-Aware ASP.NET Web Application
 ## Applies To  
@@ -26,7 +13,7 @@ ms.workload:
   
  This topic outlines the scenario of building claims-aware ASP.NET web applications using WIF. There are usually three participants in a claims-aware application scenario: the application itself, the end user, and the Security Token Service (STS). The following figure describes this scenario:  
   
- ![WIF Basic Web App](../../../docs/framework/security/media/wifbasicwebapp.gif "WIFBasicWebApp")  
+ ![Diagram showing a WIF Basic Web App components.](./media/building-my-first-claims-aware-aspnet-web-app/windows-identity-foundation-basic-web-application.gif)  
   
 1.  The claims-aware application uses WIF to identify unauthenticated requests and to redirect them to the STS.  
   
@@ -40,11 +27,11 @@ ms.workload:
   
  STS is a service that issues tokens upon successful authentication. Microsoft offers two industry standard STS’s:  
   
--   [Active Directory Federation Services (AD FS) 2.0](http://go.microsoft.com/fwlink/?LinkID=247516) (http://go.microsoft.com/fwlink/?LinkID=247516)  
+-   [Active Directory Federation Services (AD FS) 2.0](https://go.microsoft.com/fwlink/?LinkID=247516)
   
--   [Windows Azure Access Control Service (ACS)](http://go.microsoft.com/fwlink/?LinkID=247517) (http://go.microsoft.com/fwlink/?LinkID=247517).  
+-   [Windows Azure Access Control Service (ACS)](https://go.microsoft.com/fwlink/?LinkID=247517)
   
- AD FS 2.0 is part of the Windows Server R2 and can be used as an STS for on-premise scenarios. ACS is a cloud service, offered as part of the Windows Azure Platform. For testing or educational purposes, you can also use other STS’s in order to build your claims-aware applications. For example, you can use the Local Development STS that is part of the [Identity and Access Tool for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=245849) (http://go.microsoft.com/fwlink/?LinkID=245849) which is freely available online.  
+ AD FS 2.0 is part of the Windows Server R2 and can be used as an STS for on-premise scenarios. ACS is a cloud service, offered as part of the Windows Azure Platform. For testing or educational purposes, you can also use other STS’s in order to build your claims-aware applications. For example, you can use the Local Development STS that is part of the [Identity and Access Tool for Visual Studio](https://go.microsoft.com/fwlink/?LinkID=245849) which is freely available online.  
   
  To build your first claims-aware ASP.NET application using WIF, follow the instructions in one of the following:  
   
@@ -54,5 +41,5 @@ ms.workload:
   
 -   [How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication](../../../docs/framework/security/claims-aware-aspnet-app-forms-authentication.md)  
   
-## See Also  
- [Getting Started With WIF](../../../docs/framework/security/getting-started-with-wif.md)
+## See also
+- [Getting Started With WIF](../../../docs/framework/security/getting-started-with-wif.md)

@@ -1,14 +1,6 @@
 ---
 title: "ExportType Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink.ExportType"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 91a7ce63-f5b8-4f16-b2c4-e1d0baa88944
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ExportType Method
 Specifies that a type is exportable.  
@@ -45,7 +33,7 @@ HRESULT ExportType(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly to export from.  
   
@@ -70,7 +58,7 @@ HRESULT ExportType(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

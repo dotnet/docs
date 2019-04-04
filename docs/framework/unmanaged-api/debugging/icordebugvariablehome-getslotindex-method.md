@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugVariableHome::GetSlotIndex Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorDebugVariableHome.GetSlotIndex"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVariableHome::GetSlotIndex Method
 Gets the managed slot-index of a local variable.  
@@ -41,7 +29,7 @@ HRESULT GetSlotIndex(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSlotIndex`  
  [out] A pointer to the slot-index of a local variable.  
   
@@ -65,5 +53,5 @@ HRESULT GetSlotIndex(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+## See also
+- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

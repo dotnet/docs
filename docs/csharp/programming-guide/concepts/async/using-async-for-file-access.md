@@ -1,17 +1,7 @@
 ---
 title: "Using Async for File Access (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: bb018fea-5313-4c80-ab3f-7c24b2145bd9
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Async for File Access (C#)
 You can use the async feature to access files. By using the async feature, you can call into asynchronous methods without using callbacks or splitting your code across multiple methods or lambda expressions. To make synchronous code asynchronous, you just call an asynchronous method instead of a synchronous method and add a few keywords to the code.  
@@ -178,7 +168,8 @@ public async void ProcessWriteMult()
   
  When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md) and [Cancellation in Managed Threads](../../../../standard/threading/cancellation-in-managed-threads.md).  
   
-## See Also  
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)  
- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)  
- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)
+## See also
+
+- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)
+- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)

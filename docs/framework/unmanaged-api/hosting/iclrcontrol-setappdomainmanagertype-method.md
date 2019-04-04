@@ -1,14 +1,6 @@
 ---
 title: "ICLRControl::SetAppDomainManagerType Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICLRControl.SetAppDomainManagerType"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: ec57828b-2aad-496d-a35a-e45d4bd7fe77
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICLRControl::SetAppDomainManagerType Method
 Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.  
@@ -42,7 +30,7 @@ HRESULT SetAppDomainManagerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppDomainManagerAssembly`  
  [in] The name of the assembly in which the requested type derived from <xref:System.AppDomainManager> is implemented.  
   
@@ -69,6 +57,6 @@ HRESULT SetAppDomainManagerType (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

@@ -1,23 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;wsHttpBinding&gt;"
-ms.custom: ""
+title: "<message> of <wsHttpBinding>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;message&gt; of &lt;wsHttpBinding&gt;
+# \<message> of \<wsHttpBinding>
 Defines settings for message-level security of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -30,11 +16,10 @@ Defines settings for message-level security of the [\<wsHttpBinding>](../../../.
 ## Syntax  
   
 ```xml  
-<message   
-   algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-   clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  
-   establishSecurityContext="Boolean"  
-   negotiateServiceCredential="Boolean" />  
+<message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+         clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"
+         establishSecurityContext="Boolean"
+         negotiateServiceCredential="Boolean" />
 ```  
   
 ## Type  
@@ -80,7 +65,7 @@ Defines settings for message-level security of the [\<wsHttpBinding>](../../../.
 |None|This allows the service to interact with anonymous clients. On the service side, this indicates that the service does not require any client credential. On the client, this indicates that the client does not provide any client credential.|  
 |Certificate|Allows the service to require that the client be authenticated using a certificate. If message security mode is used and the `negotiateServiceCredential` attribute is set to `false`, the client needs to be provisioned with the service certificate.|  
 |IssuedToken|Specifies a custom token, usually issued by a Security Token Service.|  
-|UserName|Allows the service to require that the client be authenticated using a UserName credential. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] does not support sending a password digest or deriving keys using password and using such keys for message security. As such, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] enforces that the transport is secured when using UserName credentials. This credential mode results in either an interoperable exchange or a non-interoperable negotiation based on the `negotiateServiceCredential` attribute.|  
+|UserName|Allows the service to require that the client be authenticated using a UserName credential. WCF does not support sending a password digest or deriving keys using password and using such keys for message security. As such, WCF enforces that the transport is secured when using UserName credentials. This credential mode results in either an interoperable exchange or a non-interoperable negotiation based on the `negotiateServiceCredential` attribute.|  
 |Windows|Allows the SOAP exchanges to be under the authenticated context of a Windows credential. If the `negotiateServiceCredential` attribute is set to `true`, this either performs an SSPI Negotiation or Kerberos (an interoperable standard).|  
   
 ### Child Elements  
@@ -92,13 +77,13 @@ Defines settings for message-level security of the [\<wsHttpBinding>](../../../.
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)|Defines the security settings for a [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).|  
   
-## See Also  
- <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.WSHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.WSHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

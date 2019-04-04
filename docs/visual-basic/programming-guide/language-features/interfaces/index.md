@@ -1,19 +1,12 @@
 ---
 title: "Interfaces (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, interfaces"
   - "interfaces [Visual Basic], Visual Basic"
   - "interfaces"
   - "interfaces [Visual Basic]"
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Interfaces (Visual Basic)
 *Interfaces* define the properties, methods, and events that classes can implement. Interfaces allow you to define features as small groups of closely related properties, methods, and events; this reduces compatibility problems because you can develop enhanced implementations for your interfaces without jeopardizing existing code. You can add new features at any time by developing additional interfaces and implementations.  
@@ -38,20 +31,20 @@ ms.author: dotnetcontent
   
  For example, the following code defines an interface with one function, one property, and one event.  
   
- [!code-vb[VbVbalrOOP#17](../../../../visual-basic/misc/codesnippet/VisualBasic/index_1.vb)]  
+ [!code-vb[VbVbalrOOP#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#17)]  
   
 ## Implementing Interfaces  
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] reserved word `Implements` is used in two ways. The `Implements` statement signifies that a class or structure implements an interface. The `Implements` keyword signifies that a class member or structure member implements a specific interface member.  
+ The Visual Basic reserved word `Implements` is used in two ways. The `Implements` statement signifies that a class or structure implements an interface. The `Implements` keyword signifies that a class member or structure member implements a specific interface member.  
   
 ### Implements Statement  
  If a class or structure implements one or more interfaces, it must include the `Implements` statement immediately after the `Class` or `Structure` statement. The `Implements` statement requires a comma-separated list of interfaces to be implemented by a class. The class or structure must implement all interface members using the `Implements` keyword.  
   
 ### Implements Keyword  
- The `Implements` keyword requires a comma-separated list of interface members to be implemented. Generally, only a single interface member is specified, but you can specify multiple members. The specification of an interface member consists of the interface name, which must be specified in an implements statement within the class; a period; and the name of the member function, property, or event to be implemented. The name of a member that implements an interface member can use any legal identifier, and it is not limited to the `InterfaceName_MethodName` convention used in earlier versions of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The `Implements` keyword requires a comma-separated list of interface members to be implemented. Generally, only a single interface member is specified, but you can specify multiple members. The specification of an interface member consists of the interface name, which must be specified in an implements statement within the class; a period; and the name of the member function, property, or event to be implemented. The name of a member that implements an interface member can use any legal identifier, and it is not limited to the `InterfaceName_MethodName` convention used in earlier versions of Visual Basic.  
   
  For example, the following code shows how to declare a subroutine named `Sub1` that implements a method of an interface:  
   
- [!code-vb[VbVbalrOOP#69](../../../../visual-basic/misc/codesnippet/VisualBasic/index_2.vb)]  
+ [!code-vb[VbVbalrOOP#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#69)]  
   
  The parameter types and return types of the implementing member must match the interface property or member declaration in the interface. The most common way to implement an element of an interface is with a member that has the same name as the interface, as shown in the previous example.  
   
@@ -59,7 +52,7 @@ ms.author: dotnetcontent
   
  Using `Implements`, you can also write a single method that implements multiple methods defined in an interface, as in the following example:  
   
- [!code-vb[VbVbalrOOP#70](../../../../visual-basic/misc/codesnippet/VisualBasic/index_3.vb)]  
+ [!code-vb[VbVbalrOOP#70](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#70)]  
   
  You can use a private member to implement an interface member. When a private member implements a member of an interface, that member becomes available by way of the interface even though it is not available directly on object variables for the class.  
   
@@ -68,15 +61,15 @@ ms.author: dotnetcontent
   
  The following example defines two interfaces. The second interface, `Interface2`, inherits `Interface1` and defines an additional property and method.  
   
- [!code-vb[VbVbalrOOP#39](../../../../visual-basic/misc/codesnippet/VisualBasic/index_4.vb)]  
+ [!code-vb[VbVbalrOOP#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#39)]  
   
  The next example implements `Interface1`, the interface defined in the previous example:  
   
- [!code-vb[VbVbalrOOP#40](../../../../visual-basic/misc/codesnippet/VisualBasic/index_5.vb)]  
+ [!code-vb[VbVbalrOOP#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#40)]  
   
  The final example implements `Interface2`, including a method inherited from `Interface1`:  
   
- [!code-vb[VbVbalrOOP#41](../../../../visual-basic/misc/codesnippet/VisualBasic/index_6.vb)]  
+ [!code-vb[VbVbalrOOP#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#41)]  
   
  You can implement a readonly property with a readwrite property (that is, you do not have to declare it readonly in the implementing class).  Implementing an interface promises to implement at least the members that the interface declares, but you can offer more functionality, such as allowing your property to be writable.  
   

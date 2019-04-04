@@ -1,22 +1,16 @@
 ---
-title: "How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)"
+title: "How to: Implement a Lightweight Class with Auto-Implemented Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)
 This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.  
   
- You can make an immutable property in two ways.  You can declare the [set](../../../csharp/language-reference/keywords/set.md) accessor.to be [private](../../../csharp/language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.  You can instead declare only the [get](../../../csharp/language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.  
+ You can make an immutable property in two ways.  You can declare the [set](../../../csharp/language-reference/keywords/set.md) accessor to be [private](../../../csharp/language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.  You can instead declare only the [get](../../../csharp/language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.  
   
  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.  
   
@@ -114,7 +108,8 @@ This example shows how to create an immutable lightweight class that serves only
   
  The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.  
   
-## See Also  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [struct](../../../csharp/language-reference/keywords/struct.md)  
- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+## See also
+
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [struct](../../../csharp/language-reference/keywords/struct.md)
+- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)

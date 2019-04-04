@@ -1,19 +1,7 @@
 ---
 title: "1103 - WorkflowActivitySuspend"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b64e15c2-cb2c-4314-9074-ce2c6717232e
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 1103 - WorkflowActivitySuspend
 ## Properties  

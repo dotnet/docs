@@ -1,12 +1,6 @@
 ---
 title: "Interpolated Strings (Visual Basic)"
 ms.date: "10/31/2017"
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Interpolated Strings (Visual Basic Reference)
 
@@ -36,7 +30,7 @@ where:
 - *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) such as "D" or "d".
 
 > [!IMPORTANT]
-> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compiler error.
+> You cannot have any white space between the `$` and the `"` that starts the string. Doing so causes a compiler error.
 
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   
@@ -76,8 +70,8 @@ There are three implicit type conversions from an interpolated string:
 
    [!code-vb[interpolated-strings3](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings3.vb)]  
 
-## See Also  
- <xref:System.IFormattable?displayProperty=nameWithType>  
- <xref:System.FormattableString?displayProperty=nameWithType>  
- [Visual Basic Language Reference](index.md)  
- 
+## See also
+
+- <xref:System.IFormattable?displayProperty=nameWithType>
+- <xref:System.FormattableString?displayProperty=nameWithType>
+- [Visual Basic Language Reference](index.md)

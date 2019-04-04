@@ -1,18 +1,10 @@
 ---
-title: "My.Application.Info Object"
+title: "My.Application.Info Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Application.Info object"
   - "My.Application.AssemblyInfo object"
 ms.assetid: 2f4782ed-3da2-4d88-b341-0c6f480fb7bb
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Application.Info Object
 Provides properties for getting the information about the application, such as the version number, description, loaded assemblies, and so on.  
@@ -30,5 +22,6 @@ Provides properties for getting the information about the application, such as t
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)
+## See also
+
+- [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)

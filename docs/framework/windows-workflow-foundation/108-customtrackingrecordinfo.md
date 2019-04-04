@@ -1,19 +1,7 @@
 ---
 title: "108 - CustomTrackingRecordInfo"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5bee501e-4e00-42cd-b949-e88009c3d4e8
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 108 - CustomTrackingRecordInfo
 ## Properties  

@@ -1,14 +1,6 @@
 ---
 title: "ICorDebug::DebugActiveProcess Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebug.DebugActiveProcess"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: fdab0ade-7f56-4fa2-b3ef-f7a1d2852bba
 topic_type: 
   - "apiref"
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebug::DebugActiveProcess Method
 Attaches the debugger to an existing process.  
@@ -43,7 +31,7 @@ HRESULT DebugActiveProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `id`  
  [in] The ID of the process to which the debugger is to be attached.  
   
@@ -65,5 +53,5 @@ HRESULT DebugActiveProcess (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## See also
+- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

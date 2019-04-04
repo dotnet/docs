@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugEval Interface1"
-ms.custom: ""
+title: "ICorDebugEval Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugEval"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 3a5c9815-832d-47e1-b7f7-bbba135d7cf1
 topic_type: 
   - "apiref"
-caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugEval Interface1
+# ICorDebugEval Interface
+
 Provides methods to enable the debugger to execute code within the context of the code being debugged.  
   
 ## Methods  
@@ -68,8 +57,8 @@ Provides methods to enable the debugger to execute code within the context of th
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
-    
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+
+
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

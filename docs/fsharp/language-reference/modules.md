@@ -1,17 +1,8 @@
 ---
-title: Modules (F#)
-description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program. 
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
+title: Modules
+description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program.
 ms.date: 04/24/2017
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 46de2d18-da51-40fa-a262-92edecada79d
 ---
-
 # Modules
 
 In the context of the F# language, a *module* is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.
@@ -28,6 +19,7 @@ module [accessibility-modifier] module-name =
 ```
 
 ## Remarks
+
 An F# module is a grouping of F# code constructs such as types, values, function values, and code in `do` bindings. It is implemented as a common language runtime (CLR) class that has only static members. There are two types of module declarations, depending on whether the whole file is included in the module: a top-level module declaration and a local module declaration. A top-level module declaration includes the whole file in the module. A top-level module declaration can appear only as the first declaration in a file.
 
 In the syntax for the top-level module declaration, the optional *qualified-namespace* is the sequence of nested namespace names that contains the module. The qualified namespace does not have to be previously declared.
@@ -50,8 +42,8 @@ If you have multiple files in a project or in a single compilation, or if you ar
 
 The *accessibility-modifier* can be one of the following: `public`, `private`, `internal`. For more information, see [Access Control](access-control.md). The default is public.
 
-
 ## Referencing Code in Modules
+
 When you reference functions, types, and values from another module, you must either use a qualified name or open the module. If you use a qualified name, you must specify the namespaces, the module, and the identifier for the program element you want. You separate each part of the qualified path with a dot (.), as follows.
 
 `Namespace1.Namespace2.ModuleName.Identifier`
@@ -67,6 +59,7 @@ To use this code from another file in the same project, you either use qualified
 [!code-fsharp[Main](../../../samples/snippets/fsharp/modules/snippet6605.fs)]
 
 ## Nested Modules
+
 Modules can be nested. Inner modules must be indented as far as outer module declarations to indicate that they are inner modules, not new modules. For example, compare the following two examples. Module `Z` is an inner module in the following code.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/modules/snippet6607.fs)]
@@ -105,23 +98,24 @@ module rec RecursiveModule =
         member val IsPeeled = false with get, set
         member val Orientation = orientation with get, set
         member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
-        
+
         member self.Peel() = BananaHelpers.peel self // Note the dependency on the BananaHelpers module.
         member self.SqueezeJuiceOut() = raise (DontSqueezeTheBananaException self) // This member depends on the exception above.
 
-    module private BananaHelpers =
-        let peel (b : Banana) =
-            let flip banana =
+    module BananaHelpers =
+        let peel (b: Banana) =
+            let flip (banana: Banana) =
                 match banana.Orientation with
                 | Up -> 
                     banana.Orientation <- Down
                     banana
                 | Down -> banana
 
-            let peelSides banana =
-                for side in banana.Sides do
-                    if side = Unpeeled then
-                        side <- Peeled
+            let peelSides (banana: Banana) =
+                banana.Sides
+                |> List.map (function
+                             | Unpeeled -> Peeled
+                             | Peeled -> Peeled)
 
             match b.Orientation with
             | Up ->   b |> flip |> peelSides
@@ -132,8 +126,8 @@ Note that the exception `DontSqueezeTheBananaException` and the class `Banana` b
 
 This capability is also possible in [Namespaces](namespaces.md) with F# 4.1.
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
-[Namespaces](namespaces.md)
-[F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)
+- [F# Language Reference](index.md)
+- [Namespaces](namespaces.md)
+- [F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

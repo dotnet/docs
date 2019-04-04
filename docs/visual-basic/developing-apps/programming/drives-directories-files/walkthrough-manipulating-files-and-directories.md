@@ -1,13 +1,6 @@
 ---
 title: "Manipulating Files and Directories in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "files [Visual Basic], reading text"
   - "reading files [Visual Basic], text"
@@ -22,14 +15,11 @@ helpviewer_keywords:
   - "writing to files [Visual Basic], walkthroughs"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
-caps.latest.revision: 49
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Manipulating Files and Directories in Visual Basic
-This walkthrough provides an introduction to the fundamentals of file I/O in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  
+This walkthrough provides an introduction to the fundamentals of file I/O in Visual Basic. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  
   
- This walkthrough uses members of the `My.Computer.FileSystem Object`, which are available in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. See <xref:Microsoft.VisualBasic.FileIO.FileSystem> for more information. At the end of the walkthrough, an equivalent example is provided that uses classes from the <xref:System.IO> namespace.  
+ This walkthrough uses members of the `My.Computer.FileSystem Object`, which are available in Visual Basic. See <xref:Microsoft.VisualBasic.FileIO.FileSystem> for more information. At the end of the walkthrough, an equivalent example is provided that uses classes from the <xref:System.IO> namespace.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -43,7 +33,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 3.  In the **Name** box, type `FileExplorer` to set the project name, and then click **OK**.  
   
-     [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
+     Visual Studio adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
   
 4.  Add the controls in the following table to the form, and set the corresponding values for their properties.  
   
@@ -61,13 +51,13 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 2.  Add the following code to the `Click` event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#103](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#103)]  
   
      The `FolderBrowserDialog1.ShowDialog` call opens the **Browse For Folder** dialog box. After the user clicks **OK**, the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property is sent as an argument to the `ListFiles` method, which is added in the next step.  
   
 3.  Add the following `ListFiles` method.  
   
-     [!code-vb[VbVbcnMyFileSystem#104](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#104](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#104)]  
   
      This code first clears the **ListBox**.  
   
@@ -87,7 +77,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 2.  Add the following code to the `Click` event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#105](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_3.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#105](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#105)]  
   
      The code verifies that an item is selected in the `ListBox`. It then obtains the file path entry from the `ListBox`. The <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists%2A> method is used to check whether the file still exists.  
   
@@ -95,7 +85,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 3.  Add the following `GetTextForOutput` method.  
   
-     [!code-vb[VbVbcnMyFileSystem#107](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_4.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#107](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#107)]  
   
      The code uses the <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A> method to obtain file parameters. The file parameters are added to a <xref:System.Text.StringBuilder>.  
   
@@ -111,7 +101,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 1.  Add the following code to the end of the `examineButton_Click` event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#106](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_5.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#106](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#106)]  
   
      The code sets the log file path to put the log file in the same directory as that of the selected file. The text of the log entry is set to the current date and time followed by the file information.  
   
@@ -127,7 +117,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 2.  Add the following code to the event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#102](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_6.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#102)]  
   
      This code sets the default directory of the folder browser to the current directory.  
   
@@ -139,7 +129,7 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
   
 1.  Add the following `SetEnabled` method.  
   
-     [!code-vb[VbVbcnMyFileSystem#108](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_7.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#108](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#108)]  
   
      The `SetEnabled` method enables or disables controls depending on whether an item is selected in the `ListBox`.  
   
@@ -156,15 +146,16 @@ This walkthrough provides an introduction to the fundamentals of file I/O in [!I
 ## Full example using My.Computer.FileSystem  
  Following is the complete example.  
   
- [!code-vb[VbVbcnMyFileSystem#101](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_8.vb)]  
+ [!code-vb[VbVbcnMyFileSystem#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#101)]  
   
 ## Full example using System.IO  
  The following equivalent example uses classes from the <xref:System.IO> namespace instead of using `My.Computer.FileSystem` objects.  
   
- [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_9.vb)]  
+ [!code-vb[VbVbcnMyFileSystem#111](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class3.vb#111)]  
   
-## See Also  
- <xref:System.IO>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>  
- [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)
+## See also
+
+- <xref:System.IO>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>
+- [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)

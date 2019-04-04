@@ -1,23 +1,9 @@
 ---
-title: "&lt;idn&gt; Element (Uri Settings)"
-ms.custom: ""
+title: "<idn> Element (Uri Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
-caps.latest.revision: 11
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;idn&gt; Element (Uri Settings)
+# \<idn> Element (Uri Settings)
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.  
   
 ## Schema Hierarchy  
@@ -101,7 +87,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

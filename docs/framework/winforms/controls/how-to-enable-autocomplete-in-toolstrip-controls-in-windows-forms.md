@@ -1,14 +1,6 @@
 ---
 title: "How to: Enable AutoComplete in ToolStrip Controls in Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "ToolStripComboBox class [Windows Forms], examples"
   - "ToolStrip control [Windows Forms], AutoComplete"
 ms.assetid: fd66d085-1af1-45d4-930a-cde944da2e16
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Enable AutoComplete in ToolStrip Controls in Windows Forms
 The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> with a <xref:System.Windows.Forms.ToolStripComboBox> that can be dropped down to show a list of items, such as recently visited Web sites. If the user types a character that matches the first character of one of the items in the list, the item is immediately displayed.  
@@ -97,12 +83,12 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.ToolStripLabel>  
- <xref:System.Windows.Forms.ToolStripComboBox>  
- <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A>  
- <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+## See also
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.ToolStripLabel>
+- <xref:System.Windows.Forms.ToolStripComboBox>
+- <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A>
+- <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A>
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

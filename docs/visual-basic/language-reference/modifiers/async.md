@@ -1,20 +1,12 @@
 ---
 title: "Async (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Async"
 helpviewer_keywords: 
   - "Async [Visual Basic]"
   - "Async keyword [Visual Basic]"
 ms.assetid: 1be8b4b5-9689-41b5-bd33-b906bfd53bc5
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Async (Visual Basic)
 The `Async` modifier indicates that the method or [lambda expression](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md) that it modifies is asynchronous. Such methods are referred to as *async methods*.  
@@ -58,7 +50,7 @@ End Function
  For more information and examples, see [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).  
   
 ## Example  
- The following examples show an async event handler, an async lambda expression, and an async method. For a full example that uses these elements, see [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the walkthrough code from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191).  
+ The following examples show an async event handler, an async lambda expression, and an async method. For a full example that uses these elements, see [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the walkthrough code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).  
   
 ```vb  
 ' An event handler must be a Sub procedure.  
@@ -105,8 +97,9 @@ Private Async Function GetURLContentsAsync(url As String) As Task(Of Byte())
 End Function  
 ```  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>  
- [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)  
- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+## See also
+
+- <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>
+- [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)
+- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)

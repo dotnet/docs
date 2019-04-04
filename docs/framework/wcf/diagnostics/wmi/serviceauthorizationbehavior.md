@@ -1,28 +1,14 @@
 ---
 title: "ServiceAuthorizationBehavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 77dad8e8-fea4-4d1c-b366-2f01a2a87f78
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ServiceAuthorizationBehavior
 ServiceAuthorizationBehavior  
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceAuthorizationBehavior : Behavior  
 {  
   boolean ImpersonateCallerForAllOperations;  
@@ -72,5 +58,5 @@ class ServiceAuthorizationBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
+## See also
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>

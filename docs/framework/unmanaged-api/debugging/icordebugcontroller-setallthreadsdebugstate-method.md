@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugController::SetAllThreadsDebugState Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugController.SetAllThreadsDebugState"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugController::SetAllThreadsDebugState Method
 Sets the debug state of all managed threads in the process.  
@@ -42,7 +30,7 @@ HRESULT SetAllThreadsDebugState (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `state`  
  [in] A value of the "CorDebugThreadState" enumeration that specifies the state of the thread for debugging.  
   
@@ -61,5 +49,5 @@ HRESULT SetAllThreadsDebugState (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also
+

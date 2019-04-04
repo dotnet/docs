@@ -1,14 +1,6 @@
 ---
 title: "GetTypeLibInfo Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "GetTypeLibInfo"
 api_location: 
@@ -22,15 +14,11 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type: 
   - "apiref"
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetTypeLibInfo Function
-Returns information about the specified type library by examining its [TLIBATTR](https://msdn.microsoft.com/library/ms221376\(v=vs.85\).aspx) structure.  
+Returns information about the specified type library by examining its [TLIBATTR](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagtlibattr) structure.  
   
 ## Syntax  
   
@@ -45,7 +33,7 @@ HRESULT GetTypeLibInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file name of the type library.  
   
@@ -56,7 +44,7 @@ HRESULT GetTypeLibInfo(
  [out] The localization ID of the type library.  
   
  `pTypeLibPlatform`  
- [out] A [SYSKIND](https://msdn.microsoft.com/library/ms221272\(v=vs.85\).aspx) flag that identifies the target operating system for the type library. Common values are SYS_WIN32 and SYS_WIN64.  
+ [out] A [SYSKIND](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ne-oaidl-tagsyskind) flag that identifies the target operating system for the type library. Common values are SYS_WIN32 and SYS_WIN64.  
   
  `pTypeLibMajorVer`  
  [out] The major version number of the type library. For example, for version *x.y*, the major version number is *x*.  
@@ -78,6 +66,6 @@ HRESULT GetTypeLibInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx Function](https://msdn.microsoft.com/library/ms221249\(v=vs.85\).aspx)
+## See also
+- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

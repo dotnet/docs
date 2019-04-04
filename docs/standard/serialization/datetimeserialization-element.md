@@ -1,26 +1,13 @@
 ---
-title: "&lt;dateTimeSerialization&gt; Element"
-ms.custom: ""
+title: "<dateTimeSerialization> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dateTimeSerialization element"
   - "XML serialization, configuration"
   - "<dateTimeSerialization> element"
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-# &lt;dateTimeSerialization&gt; Element
+# \<dateTimeSerialization> Element
 Determines the serialization mode of <xref:System.DateTime> objects.  
   
  \<configuration>  
@@ -57,11 +44,12 @@ Determines the serialization mode of <xref:System.DateTime> objects.
   
  In version 2.0 and later versions of the .NET Framework that have this property set to **Roundtrip**, <xref:System.DateTime> objects are examined to determine whether they are in the local, UTC, or an unspecified time zone. The <xref:System.DateTime> objects are then serialized in such a way that this information is preserved. This is the default behavior and is the recommended behavior for all new applications that do not communicate with older versions of the framework.  
   
-## See Also  
- <xref:System.DateTime>  
- <xref:System.Xml.Serialization.XmlSchemaImporter>  
- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
- [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)
+## See also
+
+- <xref:System.DateTime>
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)
+- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
+- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)

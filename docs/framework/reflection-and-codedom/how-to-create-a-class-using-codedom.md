@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Class Using CodeDOM"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "CodeDOM, creating classes"
   - "CodeDOM, graphs"
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create a Class Using CodeDOM
 The following procedures illustrate how to create and compile a CodeDOM graph that generates a class containing two fields, three properties, a method, a constructor, and an entry point.  
@@ -124,6 +112,6 @@ The object:
   
 -   This code example requires the `FullTrust` permission set to execute successfully.  
   
-## See Also  
- [Using the CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)  
- [Generating and Compiling Source Code from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)
+## See also
+- [Using the CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)
+- [Generating and Compiling Source Code from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)

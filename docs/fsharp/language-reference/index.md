@@ -1,26 +1,15 @@
 ---
 title: F# Language Reference
 description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: b1707be1-7b7c-4fdd-a717-d9c190bc5fb5 
 ---
-
 # F# Language Reference
 
 This section is a reference to the F# language, a multi-paradigm programming language targeting .NET. The F# language supports functional, object-oriented and imperative programming models.
 
-
 ## F# Tokens
+
 The following table shows reference topics that provide tables of keywords, symbols and literals used as tokens in F#.
-
-
 
 |Title|Description|
 |-----|-----------|
@@ -29,9 +18,8 @@ The following table shows reference topics that provide tables of keywords, symb
 |[Literals](literals.md)|Describes the syntax for literal values in F# and how to specify type information for F# literals.|
 
 ## F# Language Concepts
+
 The following table shows reference topics available that describe language concepts.
-
-
 
 |Title|Description|
 |-----|-----------|
@@ -41,7 +29,7 @@ The following table shows reference topics available that describe language conc
 |[Automatic Generalization](generics/automatic-generalization.md)|Describes generic constructs in F#.|
 |[Inheritance](inheritance.md)|Describes inheritance, which is used to model the "is-a" relationship, or subtyping, in object-oriented programming.|
 |[Members](members/index.md)|Describes members of F# object types.|
-|[Parameters and Arguments ](Parameters-and-Arguments.md)|Describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference.|
+|[Parameters and Arguments](Parameters-and-Arguments.md)|Describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference.|
 |[Operator Overloading](operator-overloading.md)|Describes how to overload arithmetic operators in a class or record type, and at the global level.|
 |[Casting and Conversions](casting-and-conversions.md)|Describes support for type conversions in F#.|
 |[Access Control](access-control.md)|Describes access control in F#. Access control means declaring what clients are able to use certain program elements, such as types, methods, functions and so on.|
@@ -59,14 +47,13 @@ The following table shows reference topics available that describe language conc
 |[Verbose Syntax](verbose-syntax.md)|Describes the syntax for F# constructs when lightweight syntax is not enabled. Verbose syntax is indicated by the `#light "off"` directive at the top of the code file.|
 
 ## F# Types
+
 The following table shows reference topics available that describe types supported by the F# language.
-
-
 
 |Title|Description|
 |-----|-----------|
 |[values](values/index.md)|Describes values, which are immutable quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.|
-|[Primitive Types](primitive-types.md)|Describes the fundamental primitive types that are used in the F# language. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
+|[Basic Types](basic-types.md)|Describes the fundamental basic types that are used in the F# language. It also provides the corresponding .NET types and the minimum and maximum values for each type.|
 |[Unit Type](unit-type.md)|Describes the `unit` type, which is a type that indicates the absence of a specific value; the `unit` type has only a single value, which acts as a placeholder when no other value exists or is needed.|
 |[Strings](strings.md)|Describes strings in F#. The `string` type represents immutable text, as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.|
 |[Tuples](tuples.md)|Describes tuples, which are groupings of unnamed but ordered values of possibly different types.|
@@ -91,6 +78,7 @@ The following table shows reference topics available that describe types support
 |[Type Providers](../tutorials/type-providers/index.md)|Describes type provides and provides links to walkthroughs on using the built-in type providers to access databases and web services.|
 
 ## F# Expressions
+
 The following table lists topics that describe F# expressions.
 
 |Title|Description|
@@ -101,13 +89,14 @@ The following table lists topics that describe F# expressions.
 |[Loops: `for...in` Expression](loops-for-in-expression.md)|Describes the `for...in` expression, a looping construct that is used to iterate over the matches of a pattern in an enumerable collection such as a range expression, sequence, list, array, or other construct that supports enumeration.|
 |[Loops: `while...do` Expression](loops-while-do-expression.md)|Describes the `while...do` expression, which is used to perform iterative execution (looping) while a specified test condition is true.|
 |[Object Expressions](object-expressions.md)|Describes object expressions, which are expressions that create new instances of a dynamically created, anonymous object type that is based on an existing base type, interface, or set of interfaces.|
-|[Lazy Computations](lazy-computations.md)|Describes lazy computations, which are computations that are not evaluated immediately, but are instead evaluated when the result is actually needed.|
+|[Lazy Expressions](lazy-expressions.md)|Describes lazy expressions, which are computations that are not evaluated immediately, but are instead evaluated when the result is actually needed.|
 |[Computation Expressions](computation-expressions.md)|Describes computation expressions in F#, which provide a convenient syntax for writing computations that can be sequenced and combined using control flow constructs and bindings. They can be used to provide a convenient syntax for *monads*, a functional programming feature that can be used to manage data, control and side effects in functional programs. One type of computation expression, the asynchronous workflow, provides support for asynchronous and parallel computations. For more information, see [Asynchronous Workflows](asynchronous-workflows.md).|
 |[Asynchronous Workflows](asynchronous-workflows.md)|Describes asynchronous workflows, a language feature that lets you write asynchronous code in a way that is very close to the way you would naturally write synchronous code.|
 |[Code Quotations](code-quotations.md)|Describes code quotations, a language feature that enables you to generate and work with F# code expressions programmatically.|
 |[Query Expressions](query-expressions.md)|Describes query expressions, a language feature that implements LINQ for F# and enables you to write queries against a data source or enumerable collection.|
 
 ## Compiler-supported Constructs
+
 The following table lists topics that describe special compiler-supported constructs.
 
 |Topic|Description|
@@ -116,5 +105,6 @@ The following table lists topics that describe special compiler-supported constr
 |[Compiler Directives](compiler-directives.md)|Describes processor directives and compiler directives.|
 |[Source Line, File, and Path Identifiers](source-line-file-path-identifiers.md)|Describes the identifiers `__LINE__`, `__SOURCE_DIRECTORY__` and `__SOURCE_FILE__`, which are built-in values that enable you to access the source line number, directory and file name in your code.|
 
-## See Also
-[Visual F#](../index.md)
+## See also
+
+- [Visual F#](../index.md)

@@ -1,14 +1,6 @@
 ---
 title: "CorSaveSize Enumeration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "CorSaveSize"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: eb95ce39-5688-43c1-a34d-578794b32faa
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # CorSaveSize Enumeration
 Contains values indicating the level of precision required when querying for the size of a save operation.  
@@ -59,5 +47,5 @@ typedef enum CorSaveSize {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

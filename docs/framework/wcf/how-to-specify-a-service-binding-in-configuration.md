@@ -1,24 +1,10 @@
 ---
 title: "How to: Specify a Service Binding in Configuration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Specify a Service Binding in Configuration
 In this example, an `ICalculator` contract is defined for a basic calculator service, the service is implemented in the `CalculatorService` class, and then its endpoint is configured in the Web.config file, where it is specified that the service uses the <xref:System.ServiceModel.BasicHttpBinding>. For a description of how to configure this service using code instead of a configuration, see [How to: Specify a Service Binding in Code](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md).  
@@ -53,18 +39,18 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
         <services>  
           <service name=" CalculatorService" >  
             <endpoint   
-            <-- Leave the address blank to be populated by default-->  
-            <--from the hosting environment,in this case IIS, so -->  
-            <-- the address will just be that of the IIS Virtual -->  
-            <--Directory.-->  
+            <!-- Leave the address blank to be populated by default -->  
+            <!-- from the hosting environment,in this case IIS, so -->  
+            <!-- the address will just be that of the IIS Virtual -->  
+            <!-- Directory. -->  
                 address=""   
-            <--Specify the binding type -->  
+            <!-- Specify the binding type -->  
                 binding="wsHttpBinding"  
-            <--Specify the binding configuration name for that -->  
-            <--binding type. This is optional but useful if you  -->  
-            <--want to modify the properties of the binding. -->  
-            <--The bindingConfiguration name Binding1 is defined  -->  
-            <--below in the bindings element.  -->  
+            <!-- Specify the binding configuration name for that -->  
+            <!-- binding type. This is optional but useful if you -->  
+            <!-- want to modify the properties of the binding. -->  
+            <!-- The bindingConfiguration name Binding1 is defined -->  
+            <!-- below in the bindings element. -->  
                 bindingConfiguration="Binding1"  
                 contract="ICalculator" />  
           </service>  
@@ -72,8 +58,8 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
         <bindings>  
           <wsHttpBinding>  
             <binding name="Binding1">  
-              <-- Binding property values can be modified here. -->  
-              <--See the next procedure. -->  
+              <!-- Binding property values can be modified here. -->  
+              <!-- See the next procedure. -->  
             </binding>  
           </wsHttpBinding>  
        </bindings>  
@@ -100,6 +86,6 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     </wsHttpBinding>  
     ```  
   
-## See Also  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)
+## See also
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)

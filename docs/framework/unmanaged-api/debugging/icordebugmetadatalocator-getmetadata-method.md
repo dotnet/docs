@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugMetaDataLocator::GetMetaData Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugMetaDataLocator.GetMetaData"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugMetaDataLocator::GetMetaData Method
 Asks the debugger to return the full path to a module whose metadata is needed to complete an operation the debugger requested.  
@@ -47,12 +35,12 @@ HRESULT GetMetaData(
       );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszImagePath`  
  [in] A null-terminated string that represents the full path to the file. If the full path is not available, the name and extension of the file (*filename*.*extension*).  
   
  `dwImageTimeStamp`  
- [in] The time stamp from the image's PE file headers. This parameter can potentially be used for a symbol server ([SymSrv](http://msdn.microsoft.com/library/cc266470.aspx)) lookup.  
+ [in] The time stamp from the image's PE file headers. This parameter can potentially be used for a symbol server ([SymSrv](/windows/desktop/debug/using-symsrv)) lookup.  
   
  `dwImageSize`  
  [in] The image size from PE file headers. This parameter can potentially be used for a SymSrv lookup.  
@@ -90,7 +78,7 @@ HRESULT GetMetaData(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugThread4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [ICorDebugThread4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

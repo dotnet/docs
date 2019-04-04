@@ -1,12 +1,6 @@
 ---
 title: "How to: Serialize an Object as a SOAP-Encoded XML Stream"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,13 +9,6 @@ helpviewer_keywords:
   - "XML serialization, SOAP"
   - "serialization, SOAP"
 ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Serialize an Object as a SOAP-Encoded XML Stream
   
@@ -77,10 +64,11 @@ XmlTypeMapping myTypeMapping =
 XmlSerializer mySerializer = new XmlSerializer(myTypeMapping);  
 ```  
   
-## See Also  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
- [XML Serialization with XML Web Services](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)
+## See also
+
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)
+- [XML Serialization with XML Web Services](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)

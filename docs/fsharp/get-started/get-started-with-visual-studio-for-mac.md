@@ -1,23 +1,11 @@
 ---
 title: Get started with F# in Visual Studio for Mac
 description: Learn how to use F# with Visual Studio for Mac.
-author: cartermp
-ms.author: phcart
-ms.date: 02/13/2017
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
+ms.date: 07/03/2018
 ---
 # Get started with F# in Visual Studio for Mac
 
-F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE.  To begin, you should [download Visual Studio for Mac](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), if you haven't already.  This article uses the Visual Studio Community 2017 for Mac, but you can use F# with the version of your choice.
-
-## Installing F# #
-
-After downloading Visual Studio for Mac, it will prompt you to choose what you want to install.  For the purposes of this article we will be leaving the defaults.  In contrast to Visual Studio for Windows, you do not need to specifically install F# support.  Press "Install" to proceed.
-
-After the install completes, choose "Start Visual Studio".  You can also launch it through Finder on macOS.
+F# and the Visual F# tooling are supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](install-fsharp.md#install-f-with-visual-studio-for-mac).
 
 ## Creating a console application
 
@@ -120,8 +108,9 @@ This is only a glimpse into what you can do with F# Interactive.  To learn more,
 If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio for Mac and run.  There are also some great external resources you can use, showcased in the [F# Guide](../index.md).
 
 ## See also
- [Visual F#](../index.md)  
- [Tour of F#](../tour.md)  
- [F# language reference](../language-reference/index.md)  
- [Type inference](../language-reference/type-inference.md)  
- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)  
+
+- [Visual F#](../index.md)
+- [Tour of F#](../tour.md)
+- [F# language reference](../language-reference/index.md)
+- [Type inference](../language-reference/type-inference.md)
+- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerInfo::GetInprocInspectionIThisThread Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerInfo.GetInprocInspectionIThisThread"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: badddccd-f85c-416e-9f0f-419eab2c9d42
 topic_type: 
   - "apiref"
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerInfo::GetInprocInspectionIThisThread Method
 Gets an object that can be queried for the ICorDebugThread interface. This method is obsolete in the .NET Framework version 2.0.  
@@ -40,7 +28,7 @@ HRESULT GetInprocInspectionIThisThread(
     [out] IUnknown **ppicd);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppicd`  
  [out](/cpp/atl/iunknown) object that can be queried for the `ICorDebugThread` interface.  
   
@@ -56,5 +44,5 @@ HRESULT GetInprocInspectionIThisThread(
   
  **.NET Framework Version:** 1.0  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

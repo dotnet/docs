@@ -1,28 +1,14 @@
 ---
 title: "Operation class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b19d1496-ef06-4d0c-b2ae-e728ec00cca0
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Operation class
 Operation  
   
 ## Syntax  
   
-```  
+```csharp
 class Operation  
 {  
   string Action;  
@@ -136,5 +122,5 @@ class Operation
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.OperationDescription>
+## See also
+- <xref:System.ServiceModel.Description.OperationDescription>

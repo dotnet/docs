@@ -1,13 +1,7 @@
 ---
 title: "How to: Convert Numeric User Input in Web Controls to Numbers"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "converting numeric user input to number"
   - "numbers [.NET Framework], converting numeric user input to number"
 ms.assetid: f27ddfb8-7479-4b79-8879-02a3bd8402d4
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Convert Numeric User Input in Web Controls to Numbers
 Because a Web page can be displayed anywhere in the world, users can input numeric data into a <xref:System.Web.UI.WebControls.TextBox> control in an almost unlimited number of formats. As a result, it is very important to determine the locale and culture of the Web page's user. When you parse user input, you can then apply the formatting conventions defined by the user's locale and culture.  
@@ -76,6 +65,7 @@ Because a Web page can be displayed anywhere in the world, users can input numer
 ## .NET Framework Security  
  To prevent a user from injecting script into the HTML stream, user input should never be directly echoed back in the server response. Instead, it should be encoded by using the <xref:System.Web.HttpServerUtility.HtmlEncode%2A?displayProperty=nameWithType> method.  
   
-## See Also  
- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
- [Parsing Numeric Strings](../../../docs/standard/base-types/parsing-numeric.md)
+## See also
+
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)
+- [Parsing Numeric Strings](../../../docs/standard/base-types/parsing-numeric.md)

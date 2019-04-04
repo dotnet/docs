@@ -2,10 +2,6 @@
 title: GetQualifierSet function (Unmanaged API Reference)
 description: The GetQualifierSet function retrieves the qualifier set for a class or instance.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetQualifierSet"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetQualifierSet function
 Retrieves the qualifier set for a class instance or a class definition.
@@ -45,7 +38,7 @@ HRESULT GetQualifierSet (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `ppQualSet`  
 [out] Receives the interface pointer that allows access to the qualifiers of the class object. `ppQualSet` cannot be `null`. If an error occurs, a new object is not returned, and the pointer is left unmodified. 
@@ -64,9 +57,9 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetQualifierSet](https://msdn.microsoft.com/library/aa391451(v=vs.85).aspx) method. 
+This function wraps a call to the [IWbemClassObject::GetQualifierSet](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getqualifierset) method. 
 
-The [IWbemQualifierSet pointer](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) lets the caller add, edit, or delete these qualifiers. Such added, edited, or deleted qualifiers apply to the entire instance or class definition.
+The [IWbemQualifierSet pointer](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) lets the caller add, edit, or delete these qualifiers. Such added, edited, or deleted qualifiers apply to the entire instance or class definition.
 
 ## Requirements  
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -75,5 +68,5 @@ The [IWbemQualifierSet pointer](https://msdn.microsoft.com/library/aa391860(v=vs
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

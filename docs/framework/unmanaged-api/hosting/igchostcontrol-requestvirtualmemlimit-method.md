@@ -1,14 +1,6 @@
 ---
 title: "IGCHostControl::RequestVirtualMemLimit Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IGCHostControl.RequestVirtualMemLimit"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f4984a8c-4c0e-4460-9aa1-d022b3621228
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IGCHostControl::RequestVirtualMemLimit Method
 Requests the host to change the limits of virtual memory.  
@@ -42,7 +30,7 @@ HRESULT RequestVirtualMemLimit (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `sztMaxVirtualMemMB`  
  [in] The requested size of memory to be allocated.  
   
@@ -58,5 +46,5 @@ HRESULT RequestVirtualMemLimit (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md)
+## See also
+- [IGCHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md)

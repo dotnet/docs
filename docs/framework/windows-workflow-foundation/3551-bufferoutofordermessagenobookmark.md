@@ -1,19 +1,7 @@
 ---
 title: "3551 - BufferOutOfOrderMessageNoBookmark"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7930d6c4-c843-4a83-933a-cecd71b80d1e
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # 3551 - BufferOutOfOrderMessageNoBookmark
 ## Properties  

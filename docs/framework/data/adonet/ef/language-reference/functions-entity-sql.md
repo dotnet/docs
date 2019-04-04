@@ -1,21 +1,7 @@
 ---
 title: "Functions (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 52b3d776-5acc-4f69-b614-5a43ce56ef9f
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Functions (Entity SQL)
 Entity SQL supports user-defined functions, canonical functions, and provider-specific functions. User-defined functions are specified in the conceptual model or inline in the query. For more information, see [User-Defined Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/user-defined-functions-entity-sql.md).  
@@ -31,5 +17,5 @@ Entity SQL supports user-defined functions, canonical functions, and provider-sp
   
  [Aggregate Functions](../../../../../../docs/framework/data/adonet/ef/aggregate-functions-sqlclient-for-entity-framework.md)  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## See also
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

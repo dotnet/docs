@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugModule2 Interface1"
-ms.custom: ""
+title: "ICorDebugModule2 Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugModule2"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 0847e64f-fdbe-4c96-8168-da20fdc84d80
 topic_type: 
   - "apiref"
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugModule2 Interface1
+# ICorDebugModule2 Interface
+
 Serves as a logical extension to the ICorDebugModule interface.  
   
 ## Methods  
@@ -56,5 +45,5 @@ Serves as a logical extension to the ICorDebugModule interface.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

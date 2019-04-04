@@ -1,14 +1,6 @@
 ---
 title: "How to: Use Compositing Mode to Control Alpha Blending"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "colors [Windows Forms], blending"
   - "colors [Windows Forms], controlling transparency"
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Compositing Mode to Control Alpha Blending
 There may be times when you want to create an off-screen bitmap that has the following characteristics:  
@@ -42,28 +28,28 @@ There may be times when you want to create an off-screen bitmap that has the fol
   
  The following illustration shows the output of the code example. Note that the ellipses are blended with the background, but they are not blended with each other.  
   
- ![Source Copy](../../../../docs/framework/winforms/advanced/media/sourcecopy.png "sourcecopy")  
+ ![Diagram showing ellipses blended with the background, not each other.](./media/how-to-use-compositing-mode-to-control-alpha-blending/ellipses-blended-background.png)  
   
  The code example contains this statement:  
   
- [!code-csharp[System.Drawing.AlphaBlending#41](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#41)]
- [!code-vb[System.Drawing.AlphaBlending#41](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#41)]  
+ [!code-csharp[System.Drawing.AlphaBlending#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#41)]
+ [!code-vb[System.Drawing.AlphaBlending#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#41)]  
   
  If you want the ellipses to be blended with each other as well as with the background, change that statement to the following:  
   
- [!code-csharp[System.Drawing.AlphaBlending#42](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#42)]
- [!code-vb[System.Drawing.AlphaBlending#42](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#42)]  
+ [!code-csharp[System.Drawing.AlphaBlending#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#42)]
+ [!code-vb[System.Drawing.AlphaBlending#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#42)]  
   
  The following illustration shows the output of the revised code.  
   
- ![Source Over](../../../../docs/framework/winforms/advanced/media/sourceover.png "sourceover")  
+ ![Diagram that shows ellipses blended together and with background.](./media/how-to-use-compositing-mode-to-control-alpha-blending/blend-ellipses-background.png)  
   
- [!code-csharp[System.Drawing.AlphaBlending#43](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#43)]
- [!code-vb[System.Drawing.AlphaBlending#43](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#43)]  
+ [!code-csharp[System.Drawing.AlphaBlending#43](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#43)]
+ [!code-vb[System.Drawing.AlphaBlending#43](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#43)]  
   
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
-## See Also  
- <xref:System.Drawing.Color.FromArgb%2A>  
- [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)
+## See also
+- <xref:System.Drawing.Color.FromArgb%2A>
+- [Alpha Blending Lines and Fills](alpha-blending-lines-and-fills.md)

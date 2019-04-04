@@ -1,10 +1,6 @@
 ---
 title: "-moduleassemblyname (C# Compiler Option)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/moduleassemblyname"
 helpviewer_keywords: 
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "/moduleassemblyname compiler option [C#]"
   - ".moduleassemblyname compiler option [C#]"
 ms.assetid: d464d9b9-f18d-423b-95e9-66c7878fd53a
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # -moduleassemblyname (C# Compiler Option)
 Specifies an assembly whose non-public types a .netmodule can access.  
@@ -40,7 +33,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
  For more information on building a .netmodule, see [-target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
   
- For more information on friend assemblies, see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
+ For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
   
  This option is not available from within the development environment; it is only available when compiling from the command line.  
   
@@ -94,7 +87,9 @@ class A {
 }  
 ```  
   
- **An_Internal_Class.Test called**  
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+**An_Internal_Class.Test called**
+
+## See also
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

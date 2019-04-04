@@ -1,28 +1,23 @@
 ---
-title: "false Literal (C# Reference)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+title: "false literal - C# Reference"
+ms.custom: seodec18
+
+ms.date: 12/03/2018
 helpviewer_keywords: 
   - "false literal keyword [C#]"
 ms.assetid: fcc1c1a5-0e42-4226-a128-81492a9bf719
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
-# false Literal (C# Reference)
-Represents the boolean value false.  
-  
-## Example  
- [!code-csharp[csrefKeywordsOperator#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/false-literal_1.cs)]  
-  
-## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [true](../../../csharp/language-reference/keywords/true.md)
+# false literal (C# Reference)
+
+Represents the [bool](bool.md) value `false`:
+
+[!code-csharp-interactive[false literal example](~/samples/snippets/csharp/keywords/TrueFalseLiteralsExamples.cs#FalseLiteral)]
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [true](true.md)
+- [true and false operators](true-false-operators.md)
+- [?: Operator](../operators/conditional-operator.md)

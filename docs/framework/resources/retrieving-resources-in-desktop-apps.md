@@ -1,14 +1,6 @@
 ---
 title: "Retrieving Resources in Desktop Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,15 +18,11 @@ helpviewer_keywords:
   - "translating resources into languages"
   - "localizing resources"
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Retrieving Resources in Desktop Apps
-When you work with localized resources in .NET Framework desktop apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](http://go.microsoft.com/fwlink/p/?LinkID=241674) in the Windows Dev Center.  
+When you work with localized resources in .NET Framework desktop apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674) in the Windows Dev Center.  
   
 <a name="from_assembly"></a>   
 ## Retrieving Resources from Assemblies  
@@ -155,16 +143,17 @@ GetObject.exe
  If you choose not to deploy resources in satellite assemblies, you can still use a <xref:System.Resources.ResourceManager> object to access resources from .resources files directly. To do this, you must deploy the .resources files correctly. Then you use the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A?displayProperty=nameWithType> method to instantiate a <xref:System.Resources.ResourceManager> object and specify the directory that contains the standalone .resources files.  
   
 ### Deploying .resources Files  
- When you embed .resources files in an application assembly and satellite assemblies, each satellite assembly has the same file name, but is placed in a subdirectory that reflects the satellite assembly's culture. In contrast, when you access resources from .resources files directly, you can place all the .resources files in a single directory, usually a subdirectory of the application directory. The name of the app's default .resources file consists of a root name only, with no indication of its culture (for example, strings.resources). The resources for each localized culture are stored in a file whose name consists of the root name followed by the culture (for example, strings.ja.resources or strings.de-DE.resources). The following illustration shows where resource files should be located in the directory structure.  
-  
- ![Main directory for your application](../../../docs/framework/resources/media/resappdir.gif "resappdir")  
-Directory structure and naming conventions for .resources files  
+ When you embed .resources files in an application assembly and satellite assemblies, each satellite assembly has the same file name, but is placed in a subdirectory that reflects the satellite assembly's culture. In contrast, when you access resources from .resources files directly, you can place all the .resources files in a single directory, usually a subdirectory of the application directory. The name of the app's default .resources file consists of a root name only, with no indication of its culture (for example, strings.resources). The resources for each localized culture are stored in a file whose name consists of the root name followed by the culture (for example, strings.ja.resources or strings.de-DE.resources). 
+ 
+ The following illustration shows where resource files should be located in the directory structure. It also gives the naming conventions for .resource files.  
+
+ ![Illustration that shows the main directory for your application.](./media/retrieving-resources-in-desktop-apps/resource-application-directory.gif)  
   
 ### Using the Resource Manager  
  After you have created your resources and placed them in the appropriate directory, you create a <xref:System.Resources.ResourceManager> object to use the resources by calling the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%28System.String%2CSystem.String%2CSystem.Type%29> method. The first parameter specifies the root name of the app's default .resources file (this would be "strings" for the example in the previous section). The second parameter specifies the location of the resources ("Resources" for the previous example). The third parameter specifies the <xref:System.Resources.ResourceSet> implementation to use. If the third parameter is `null`, the default runtime <xref:System.Resources.ResourceSet> is used.  
   
 > [!NOTE]
->  Do not deploy ASP.NET apps using standalone .resources files. This can cause locking issues and breaks XCOPY deployment. We recommend that you deploy ASP.NET resources in satellite assemblies. For more information, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
+>  Do not deploy ASP.NET apps using standalone .resources files. This can cause locking issues and breaks XCOPY deployment. We recommend that you deploy ASP.NET resources in satellite assemblies. For more information, see [ASP.NET Web Page Resources Overview](https://docs.microsoft.com/previous-versions/aspnet/ms227427(v=vs.100)).  
   
  After you instantiate the <xref:System.Resources.ResourceManager> object, you use the <xref:System.Resources.ResourceManager.GetString%2A>, <xref:System.Resources.ResourceManager.GetObject%2A>, and <xref:System.Resources.ResourceManager.GetStream%2A> methods as discussed earlier to retrieve the resources. However, the retrieval of resources directly from .resources files differs from the retrieval of embedded resources from assemblies. When you retrieve resources from .resources files, the <xref:System.Resources.ResourceManager.GetString%28System.String%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%29>, and <xref:System.Resources.ResourceManager.GetStream%28System.String%29> methods always retrieve the default culture's resources regardless of the current culture. To retrieve the resources of the either the app's current culture or a specific culture, you must call the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29>, or <xref:System.Resources.ResourceManager.GetStream%28System.String%2CSystem.Globalization.CultureInfo%29> method and specify the culture whose resources are to be retrieved. To retrieve the resources of the current culture, specify the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property as the `culture` argument. If the resource manager cannot retrieve the resources of `culture`, it uses the standard resource fallback rules to retrieve the appropriate resources.  
   
@@ -206,9 +195,9 @@ Resgen Strings.ru-RU.txt Resources\Strings.ru-RU.resources
 csc Example.cs  
 ```  
   
-## See Also  
- <xref:System.Resources.ResourceManager>  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Creating and retrieving resources in Windows Store apps](http://go.microsoft.com/fwlink/p/?LinkID=241674)
+## See also
+- <xref:System.Resources.ResourceManager>
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674)

@@ -1,14 +1,6 @@
 ---
-title: "&lt;assemblyBinding&gt; Element for &lt;runtime&gt;"
-ms.custom: ""
+title: "<assemblyBinding> Element for <runtime>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding"
 helpviewer_keywords: 
@@ -16,14 +8,10 @@ helpviewer_keywords:
   - "assemblyBinding element"
   - "container tags, <assemblyBinding> element"
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;assemblyBinding&gt; Element for &lt;runtime&gt;
+# \<assemblyBinding> Element for \<runtime>
 Contains information about assembly version redirection and the locations of assemblies.  
   
  \<configuration>  
@@ -98,7 +86,7 @@ Contains information about assembly version redirection and the locations of ass
 </runtime>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

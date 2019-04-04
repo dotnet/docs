@@ -1,14 +1,6 @@
 ---
 title: "_EFN_StackTrace Function"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "_EFN_StackTrace"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # _EFN_StackTrace Function
 Provides a text representation of a managed stack trace and an array of `CONTEXT` records, one for each transition between unmanaged and managed code.  
@@ -46,7 +34,7 @@ HRESULT CALLBACK _EFN_StackTrace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   
@@ -107,5 +95,5 @@ HRESULT CALLBACK _EFN_StackTrace(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+## See also
+- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

@@ -1,14 +1,6 @@
 ---
-title: "&lt;qualifyAssembly&gt; Element"
-ms.custom: ""
+title: "<qualifyAssembly> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#qualifyAssembly"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/qualifyAssembly"
@@ -17,14 +9,10 @@ helpviewer_keywords:
   - "<qualifyAssembly> element"
   - "qualifyAssembly element"
 ms.assetid: ad6442f6-1a9d-43b6-b733-04ac1b7f9b82
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;qualifyAssembly&gt; Element
+# \<qualifyAssembly> Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  
   
  \<configuration>  
@@ -81,7 +69,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [NIB: Partial Assembly References](http://msdn.microsoft.com/library/ec90f07a-398c-4306-9401-0fc5ff9cb59f)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Partial Assembly References](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0a7zy9z5(v=vs.100))

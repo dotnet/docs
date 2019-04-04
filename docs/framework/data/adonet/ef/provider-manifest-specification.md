@@ -1,21 +1,7 @@
 ---
 title: "Provider Manifest Specification"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bb450b47-8951-4f99-9350-26f05a4d4e46
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Provider Manifest Specification
 This section discusses how a data store provider can support the types and functions in the data store.  
@@ -99,7 +85,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ```  
   
 #### Using a Provider Manifest Token  
- For the offline scenario, the token is picked from SSDL representation. The SSDL allows you to specify a ProviderManifestToken (see [Schema Element (SSDL)](http://msdn.microsoft.com/library/fec75ae4-7f16-4421-9265-9dac61509222) for more information). For example, if a connection cannot be opened, the SSDL has a provider manifest token that specifies information about the manifest.  
+ For the offline scenario, the token is picked from SSDL representation. The SSDL allows you to specify a ProviderManifestToken (see [Schema Element (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#schema-element-ssdl) for more information). For example, if a connection cannot be opened, the SSDL has a provider manifest token that specifies information about the manifest.  
   
 ```  
 public DbProviderManifest GetProviderManifest(string manifestToken);  
@@ -287,5 +273,5 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ##### Namespace Attribute  
  Each data store provider must define a namespace or group of namespaces for information defined in the manifest. This namespace can be used in Entity SQL queries to resolve names of functions and types. For instance: SqlServer. That namespace must be different from the canonical namespace, EDM, defined by Entity Services for standard functions to be supported by Entity SQL queries.  
   
-## See Also  
- [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)
+## See also
+- [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)

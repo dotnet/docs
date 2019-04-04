@@ -1,18 +1,7 @@
 ---
 title: "Control Flow in Async Programs (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b0443af7-c586-4cb0-b476-742ae4098a96
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Control Flow in Async Programs (Visual Basic)
 You can write and maintain asynchronous programs more easily by using the `Async` and `Await` keywords. However, the results might surprise you if you don't understand how your program operates. This topic traces the flow of control through a simple async program to show you when control moves from one method to another and what information is transferred each time.  
@@ -54,7 +43,7 @@ Class MainWindow
         ' TWO  
         Dim client As HttpClient = New HttpClient()   
         Dim getStringTask As Task(Of String) =   
-            client.GetStringAsync("http://msdn.microsoft.com")  
+            client.GetStringAsync("https://msdn.microsoft.com")  
   
         ' THREE  
         Dim urlContents As String = Await getStringTask  
@@ -103,7 +92,7 @@ Length of the downloaded string: 33946.
 >  To run the example, you must have Visual Studio 2012 or newer and  the .NET Framework 4.5 or newer installed on your computer.  
   
 ### Download the Program  
- You can download the application for this topic from [Async Sample: Control Flow in Async Programs](http://go.microsoft.com/fwlink/?LinkId=255285). The following steps open and run the program.  
+ You can download the application for this topic from [Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0). The following steps open and run the program.  
   
 1.  Unzip the downloaded file, and then start Visual Studio.  
   
@@ -195,7 +184,7 @@ Length of the downloaded string: 33946.
             ResultsTextBox.Text &= vbCrLf & "           Calling HttpClient.GetStringAsync." & vbCrLf  
   
             ' GetStringAsync returns a Task(Of String).   
-            Dim getStringTask As Task(Of String) = client.GetStringAsync("http://msdn.microsoft.com")  
+            Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.microsoft.com")  
   
             ResultsTextBox.Text &= vbCrLf & "THREE: Back in AccessTheWebAsync." & vbCrLf &  
                 "           Task getStringTask is started."  
@@ -268,7 +257,7 @@ Length of the downloaded string: 33946.
  The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.  
   
 ```vb  
-Dim getStringTask As Task(Of String) = client.GetStringAsync("http://msdn.microsoft.com")  
+Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.microsoft.com")  
 ```  
   
  You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE," represent the opportunity to do independent work  
@@ -292,7 +281,7 @@ Dim urlContents As String = Await getStringTask
  The await expression suspends `AccessTheWebAsync` until `client.GetStringAsync` returns. In the meantime, control returns to the caller of `AccessTheWebAsync`, `startButton_Click`.  
   
 > [!NOTE]
->  Typically, you await the call to an asynchronous method immediately. For example, the following assignment could replace the previous code that creates and then awaits `getStringTask`: `Dim urlContents As String = Await client.GetStringAsync("http://msdn.microsoft.com")`  
+>  Typically, you await the call to an asynchronous method immediately. For example, the following assignment could replace the previous code that creates and then awaits `getStringTask`: `Dim urlContents As String = Await client.GetStringAsync("https://msdn.microsoft.com")`  
 >   
 >  In this topic, the await operator is applied later to accommodate the output lines that mark the flow of control through the program.  
   
@@ -363,8 +352,9 @@ Dim contentLength As Integer = Await getLengthTask
   
  ![Step SIX](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-SIX")  
   
-## See Also  
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)  
- [Async Return Types (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)  
- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Async Sample: Control Flow in Async Programs (C# and Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=255285)
+## See also
+
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
+- [Async Return Types (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)
+- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Async Sample: Control Flow in Async Programs (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)

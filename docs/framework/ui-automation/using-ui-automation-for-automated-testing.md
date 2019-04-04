@@ -1,29 +1,15 @@
 ---
 title: "Using UI Automation for Automated Testing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "automated testing"
   - "testing, UI Automation"
   - "UI Automation, automated testing"
 ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
-caps.latest.revision: 26
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # Using UI Automation for Automated Testing
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This overview describes how [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] can be useful as a framework for programmatic access in automated testing scenarios.  
   
@@ -47,7 +33,7 @@ ms.workload:
   
 <a name="Implementing_UI_Automation"></a>   
 ### Implementing UI Automation  
- As mentioned earlier, without the unified model provided by [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], test tools and developers are required to know framework-specific information in order to expose properties and behaviors of controls in that framework. Since there can be several different UI frameworks present at any single time within [!INCLUDE[TLA2#tla_win](../../../includes/tla2sharptla-win-md.md)] operating systems, including [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)], and [!INCLUDE[TLA#tla_wpf](../../../includes/tlasharptla-wpf-md.md)], it can be a daunting task to test multiple applications with controls that seem similar. For example, the following table outlines the framework-specific property names required to retrieve the name (or text) associated with a button control and shows the single equivalent [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property.  
+ As mentioned earlier, without the unified model provided by [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], test tools and developers are required to know framework-specific information in order to expose properties and behaviors of controls in that framework. Since there can be several different UI frameworks present at any single time within Windows operating systems, including [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)], [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)], and Windows Presentation Foundation (WPF), it can be a daunting task to test multiple applications with controls that seem similar. For example, the following table outlines the framework-specific property names required to retrieve the name (or text) associated with a button control and shows the single equivalent [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property.  
   
 |UI Automation Control Type|UI Framework|Framework Specific Property|UI Automation Property|  
 |--------------------------------|------------------|---------------------------------|----------------------------|  
@@ -119,5 +105,5 @@ ms.workload:
 ## Security  
  For security information, see [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md).  
   
-## See Also  
- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)
+## See also
+- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

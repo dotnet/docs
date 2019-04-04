@@ -1,13 +1,7 @@
 ---
 title: "General Naming Conventions"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "names [.NET Framework], conflicts"
   - "type names, conflicts"
@@ -20,13 +14,7 @@ helpviewer_keywords:
   - "names [.NET Framework], type names"
   - "names [.NET Framework], acronyms"
 ms.assetid: d3a77ea1-75d2-4969-a8c3-3e1e3e1aaedc
-caps.latest.revision: 18
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+author: "KrzysztofCwalina"
 ---
 # General Naming Conventions
 This section describes general naming conventions that relate to word choice, guidelines on using abbreviations and acronyms, and recommendations on how to avoid using language-specific names.  
@@ -90,7 +78,7 @@ This section describes general naming conventions that relate to word choice, gu
   
  **✓ DO** prefer adding a suffix rather than a prefix to indicate a new version of an existing API.  
   
- This will assist discovery when browsing documentation, or using Intellisense. The old version of the API will be organized close to the new APIs, because most browsers and Intellisense show identifiers in alphabetical order.  
+ This will assist discovery when browsing documentation, or using IntelliSense. The old version of the API will be organized close to the new APIs, because most browsers and IntelliSense show identifiers in alphabetical order.  
   
  **✓ CONSIDER** using a brand new, but meaningful identifier, instead of adding a suffix or a prefix.  
   
@@ -102,8 +90,9 @@ This section describes general naming conventions that relate to word choice, gu
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
- *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
+ *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

@@ -2,20 +2,12 @@
 title: Collectible assemblies for dynamic type generation
 description: 
 ms.date: "08/29/2017"
-ms.prod: ".net"
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "reflection, dynamic assembly"
   - "assemblies, collectible"
   - "collectible assemblies, retrieving"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Collectible assemblies for dynamic type generation
 
@@ -84,4 +76,4 @@ The following restrictions apply to collectible assemblies:
 
 ## See also
 
-[Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)
+- [Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)

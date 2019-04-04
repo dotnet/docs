@@ -1,24 +1,10 @@
 ---
 title: "How to: Directly Execute SQL Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: e491b9bf-741a-4296-9f51-76c25ddf6a82
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Directly Execute SQL Queries
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates the queries you write into parameterized SQL queries (in text form) and sends them to the SQL server for processing.  
@@ -43,6 +29,6 @@ ms.workload:
   
  The parameters are expressed in the query text by using the same curly notation used by `Console.WriteLine()` and `String.Format()`. In fact, `String.Format()` is actually called on the query string you provide, substituting the curly braced parameters with generated parameter names such as @p0, @p1 …, @p(n).  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+## See also
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

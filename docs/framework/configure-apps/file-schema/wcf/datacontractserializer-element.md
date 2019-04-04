@@ -1,28 +1,14 @@
 ---
-title: "&lt;dataContractSerializer&gt;"
-ms.custom: ""
+title: "<dataContractSerializer>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dataContractSerializer element"
   - "<dataContractSerializer> element"
   - "DataContractSerializer"
   - "KnownTypes"
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;dataContractSerializer&gt;
+# \<dataContractSerializer>
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>. This element occurs in two different hierarchies. One is listed the following Schema Hierarchy section and the other is listed in the Remarks section.  
   
  \<system.ServiceModel>  
@@ -34,8 +20,8 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ## Syntax  
   
 ```xml  
-<dataContractSerializer ignoreExtensionDataObject="Boolean"  
-   maxItemsInObjectGraph="Integer" />  
+<dataContractSerializer ignoreExtensionDataObject="Boolean"
+                        maxItemsInObjectGraph="Integer" />
 ```  
   
 ## Attributes and Elements  
@@ -67,9 +53,9 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
- <xref:System.ServiceModel.Configuration.DataContractSerializerElement>  
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [Data Transfer and Serialization](../../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
+- <xref:System.ServiceModel.Configuration.DataContractSerializerElement>
+- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [Data Transfer and Serialization](../../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)

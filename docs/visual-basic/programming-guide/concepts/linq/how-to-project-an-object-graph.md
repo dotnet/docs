@@ -1,19 +1,7 @@
 ---
 title: "How to: Project an Object Graph (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9451eb47-6a31-49d7-84df-73368c618422
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Project an Object Graph (Visual Basic)
 This topic illustrates how to project, or populate, an object graph from XML.  
@@ -343,7 +331,8 @@ USPrice: 39.98
 ShipDate: 5/21/1999  
 ```  
   
-## See Also  
- <xref:System.Linq.Enumerable.Select%2A>  
- <xref:System.Linq.Enumerable.ToList%2A>  
- [Projections and Transformations (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+## See also
+
+- <xref:System.Linq.Enumerable.Select%2A>
+- <xref:System.Linq.Enumerable.ToList%2A>
+- [Projections and Transformations (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

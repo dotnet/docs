@@ -1,14 +1,6 @@
 ---
 title: "Defining Default Values with the ShouldSerialize and Reset Methods"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], property methods"
   - "ShouldPersist method"
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Defining Default Values with the ShouldSerialize and Reset Methods
 `ShouldSerialize` and `Reset` are optional methods that you can provide for a property, if the property does not a have simple default value. If the property has a simple default value, you should apply the <xref:System.ComponentModel.DefaultValueAttribute> and supply the default value to the attribute class constructor instead. Either of these mechanisms enables the following features in the designer:  
@@ -50,9 +36,9 @@ public void ResetMyFont() {
 ```  
   
 > [!NOTE]
->  If a property does not have a `Reset` method, is not marked with a <xref:System.ComponentModel.DefaultValueAttribute>, and does not have a default value supplied in its declaration, the `Reset` option for that property is disabled in the shortcut menu of the **Properties** window of the Windows Forms Designer in [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
+>  If a property does not have a `Reset` method, is not marked with a <xref:System.ComponentModel.DefaultValueAttribute>, and does not have a default value supplied in its declaration, the `Reset` option for that property is disabled in the shortcut menu of the **Properties** window of the Windows Forms Designer in Visual Studio.  
   
- Designers such as [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] use the `ShouldSerialize`*PropertyName* method to check whether a property has changed from its default value and write code into the form only if a property is changed, thus allowing for more efficient code generation. For example:  
+ Designers such as Visual Studio use the `ShouldSerialize`*PropertyName* method to check whether a property has changed from its default value and write code into the form only if a property is changed, thus allowing for more efficient code generation. For example:  
   
 ```vb  
 'Returns true if the font has changed; otherwise, returns false.  
@@ -151,7 +137,7 @@ public class MyControl : Control {
   
  In this case, even when the value of the private variable accessed by the `MyFont` property is `null`, the property browser does not display `null`; instead, it displays the <xref:System.Windows.Forms.Control.Font%2A> property of the parent, if it is not `null`, or the default <xref:System.Windows.Forms.Control.Font%2A> value defined in <xref:System.Windows.Forms.Control>. Thus the default value for `MyFont` cannot be simply set, and a <xref:System.ComponentModel.DefaultValueAttribute> cannot be applied to this property. Instead, the `ShouldSerialize` and `Reset` methods must be implemented for the `MyFont` property.  
   
-## See Also  
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
- [Defining a Property](../../../../docs/framework/winforms/controls/defining-a-property-in-windows-forms-controls.md)  
- [Property-Changed Events](../../../../docs/framework/winforms/controls/property-changed-events.md)
+## See also
+- [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)
+- [Defining a Property](defining-a-property-in-windows-forms-controls.md)
+- [Property-Changed Events](property-changed-events.md)

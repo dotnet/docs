@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugVariableHomeEnum::Next Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 api_name: 
   - "ICorDebugVariableHomeEnum.Next"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: eb9ea96c-5b58-4655-8104-094fc8b393b8
 topic_type: 
   - "apiref"
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugVariableHomeEnum::Next Method
 Gets the specified number of [ICorDebugVariableHome](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md) instances that contain information about the local variables and arguments in a function.  
@@ -43,7 +31,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of objects to be retrieved.  
   
@@ -73,6 +61,6 @@ HRESULT Next(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugVariableHomeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+## See also
+- [ICorDebugVariableHomeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)
+- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

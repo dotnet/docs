@@ -1,12 +1,6 @@
 ---
-title: "Property Statement"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+title: "Property Statement (Visual Basic)"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.PropertySet"
   - "vb.Property"
@@ -17,16 +11,13 @@ helpviewer_keywords:
   - "property procedures [Visual Basic], Property statements"
   - "Property keyword [Visual Basic]"
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
-caps.latest.revision: 41
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Property Statement
 Declares the name of a property, and the property procedures used to store and retrieve the value of the property.  
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ Default ] [ accessmodifier ]   
 [ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ] [ Iterator ]  
 Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
@@ -65,7 +56,9 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-    -   `Protected Friend`  
+    - [Protected Friend](../../language-reference/modifiers/protected-friend.md) 
+
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)
   
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
@@ -117,7 +110,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   `returntype`  
   
-     Required if `Option``Strict` is `On`. Data type of the value returned by this property.  
+     Required if `Option Strict` is `On`. Data type of the value returned by this property.  
   
 -   `Implements`  
   
@@ -191,27 +184,28 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   **Return Value.** To return a value from a `Get` procedure, you can either assign the value to the property name or include it in a `Return` statement. The following example assigns the return value to the property name `quoteForTheDay` and then uses the `Exit Property` statement to return.  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#27)]  
   
-     [!code-vb[VbVbalrStatements#28](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_2.vb)]  
+     [!code-vb[VbVbalrStatements#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#28)]  
   
      If you use `Exit Property` without assigning a value to `name`, the `Get` procedure returns the default value for the property's data type.  
   
      The `Return` statement at the same time assigns the `Get` procedure return value and exits the procedure. The following example shows this.  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#27)]  
   
-     [!code-vb[VbVbalrStatements#29](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_3.vb)]  
+     [!code-vb[VbVbalrStatements#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#29)]  
   
 ## Example  
  The following example declares a property in a class.  
   
- [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#51)]  
   
-## See Also  
- [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Default](../../../visual-basic/language-reference/modifiers/default.md)
+## See also
+
+- [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Default](../../../visual-basic/language-reference/modifiers/default.md)

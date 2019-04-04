@@ -1,24 +1,12 @@
 ---
 title: "Configuring Assembly Binding Redirection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "side-by-side execution, assembly binding redirection"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: d266cbd8-bf91-41d1-baf0-afbc481a741f
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Configuring Assembly Binding Redirection
 By default, applications use the set of .NET Framework assemblies that shipped with the runtime version used to compile the application. You can use the **appliesTo** attribute on the [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an application configuration file to redirect assembly binding references to a specific version of the .NET Framework assemblies. This optional attribute uses a .NET Framework version number to indicate which version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework.  
@@ -46,15 +34,15 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
 ```xml  
 <assemblyBinding xmlns="..." appliesTo="v1.0.3705">   
-<! — .NET Framework version 1.0 redirects here. -->   
+  <!-- .NET Framework version 1.0 redirects here. -->   
 </assemblyBinding>   
   
 <assemblyBinding xmlns="..." appliesTo="v1.1.4322">   
-    <! — .NET Framework version 1.1 redirects here. -->   
+  <!-- .NET Framework version 1.1 redirects here. -->   
 </assemblyBinding>   
   
 <assemblyBinding xmlns="...">   
-<!-- Redirects meant for all versions of the .NET Framework. -->   
+  <!-- Redirects meant for all versions of the .NET Framework. -->   
 </assemblyBinding>  
 ```  
   
@@ -63,5 +51,5 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
  You can determine whether a configuration file is being used by determining whether assembly binding redirects are occurring. Use the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) to see which assemblies are being loaded. To see all assembly binds, you must set an entry for **ForceLog** in the registry.  
   
-## See Also  
- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+## See also
+- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

@@ -1,14 +1,7 @@
 ---
 title: C# Delegates - A tour of the C# language
 description: Learn late binding with C# delegates
-keywords: .NET, csharp, delegate, lambda, late binding
-author: BillWagner
-ms.author: wiwagn
 ms.date: 08/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884
 ---
 
@@ -31,5 +24,5 @@ Delegates can also be created using anonymous functions, which are "inline metho
 An interesting and useful property of a delegate is that it does not know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
 
 >[!div class="step-by-step"]
-[Previous](enums.md)
-[Next](attributes.md)
+>[Previous](enums.md)
+>[Next](attributes.md)

@@ -1,14 +1,6 @@
 ---
 title: "ToolStrip Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "Toolstrip"
 helpviewer_keywords: 
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "what's new [Windows Forms], toolbars"
 ms.assetid: 81d067ed-297c-4dad-90de-1bcac15336ec
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ToolStrip Control Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.ToolStrip> control and its associated classes provide a common framework for combining user interface elements into toolbars, status bars, and menus. <xref:System.Windows.Forms.ToolStrip> controls offer a rich design-time experience that includes in-place activation and editing, custom layout, and rafting, which is the ability of toolbars to share horizontal or vertical space.  
@@ -85,12 +71,12 @@ The Windows Forms <xref:System.Windows.Forms.ToolStrip> control and its associat
 |<xref:System.Windows.Forms.ToolStripControlHost>|Hosts other controls that are not specifically <xref:System.Windows.Forms.ToolStrip> controls but for which you want <xref:System.Windows.Forms.ToolStrip> functionality.|  
 |<xref:System.Windows.Forms.ToolStripItemPlacement>|Specifies whether a <xref:System.Windows.Forms.ToolStripItem> is to be laid out on the main <xref:System.Windows.Forms.ToolStrip>, on the overflow <xref:System.Windows.Forms.ToolStrip>, or neither.|  
   
- For more information, see [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md) and [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md).  
+ For more information, see [ToolStrip Technology Summary](toolstrip-technology-summary.md) and [ToolStrip Control Architecture](toolstrip-control-architecture.md).  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ContextMenuStrip>  
- <xref:System.Windows.Forms.StatusStrip>  
- <xref:System.Windows.Forms.ToolStripItem>  
- <xref:System.Windows.Forms.ToolStripDropDown>
+## See also
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ContextMenuStrip>
+- <xref:System.Windows.Forms.StatusStrip>
+- <xref:System.Windows.Forms.ToolStripItem>
+- <xref:System.Windows.Forms.ToolStripDropDown>

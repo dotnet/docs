@@ -1,21 +1,7 @@
 ---
 title: "KnownAssemblyAttribute"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b3bc7f31-95ff-46e1-8308-d206ec426f6e
-caps.latest.revision: 13
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # KnownAssemblyAttribute
 This sample demonstrates how the serialization and deserialization processes can be customized by using the <xref:System.Runtime.Serialization.DataContractResolver> class. This sample shows how to dynamically add known types during serialization and deserialization.  
@@ -23,7 +9,7 @@ This sample demonstrates how the serialization and deserialization processes can
 ## Sample Details  
  This sample is composed of four projects. One of them corresponds to the service, to be hosted by IIS, which defines the following service contract.  
   
-```  
+```csharp
 // Definition of a service contract.  
 [ServiceContract(Namespace = "http://Microsoft.Samples.KAA")]  
 [KnownAssembly("Types")]  
@@ -48,7 +34,7 @@ public interface IDataContractCalculator
   
  The service contract is implemented as shown in the following example.  
   
-```  
+```csharp
 // Service class that implements the service contract.  
  public class DataContractCalculatorService : IDataContractCalculator  
  {  
@@ -94,7 +80,7 @@ public interface IDataContractCalculator
   
  Another project corresponds to the client, which communicates with the server and invokes the methods that it exposes. The definition of the client is shown in the following example.  
   
-```  
+```csharp  
  // Client implementation code.  
  class Client  
  {  
@@ -201,7 +187,7 @@ public interface IDataContractCalculator
   
  The `DataContractResolver` defined for this sample is shown in the following example.  
   
-```  
+```csharp
 public class MyDataContractResolver : DataContractResolver  
     {  
        Dictionary<string, XmlDictionaryString> dictionary = new Dictionary<string, XmlDictionaryString>();  
@@ -285,7 +271,7 @@ public class MyDataContractResolver : DataContractResolver
   
  The library of types used in this sample is shown in the following example.  
   
-```  
+```csharp 
  [DataContract]  
  public class ComplexNumber  
  {  
@@ -332,7 +318,7 @@ public class ComplexNumberWithMagnitude : ComplexNumber
   
  When the sample is built and executed, this is the expected output obtained in the client:  
   
-```  
+```console  
 Add(1 + 2i, 3 + 4i) = 4 + 6i  
 Magnitude: 7.21110255092798  
   
@@ -364,19 +350,18 @@ Lists combined:
   
 5.  If the application does not run properly, follow these steps to make sure your environment has been properly set up:  
   
-6.  Ensure that you have performed the [One-Time Set Up Procedure for the Windows Communication Foundation Samples](http://go.microsoft.com/fwlink/?LinkId=150774).  
+6.  Ensure that you have performed the [One-Time Set Up Procedure for the Windows Communication Foundation Samples](https://go.microsoft.com/fwlink/?LinkId=150774).  
   
-7.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Sample](http://go.microsoft.com/fwlink/?LinkId=150775).  
+7.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Sample](https://go.microsoft.com/fwlink/?LinkId=150775).  
   
-8.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](http://go.microsoft.com/fwlink/?LinkId=150776).  
+8.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](https://go.microsoft.com/fwlink/?LinkId=150776).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\KnownAssemblyAttribute`  
   
-## See Also

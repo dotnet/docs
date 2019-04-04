@@ -1,22 +1,12 @@
 ---
-title: "&lt;value&gt; (Visual Basic)"
-ms.custom: ""
+title: "<value> (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "<value> XML tag"
   - "value XML tag"
 ms.assetid: 0b84b02e-9e6d-41b5-a926-0d5dc76dacb5
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# &lt;value&gt; (Visual Basic)
+# \<value> (Visual Basic)
 Specifies the description of a property.  
   
 ## Syntax  
@@ -25,7 +15,7 @@ Specifies the description of a property.
 <value>property-description</value>  
 ```  
   
-#### Parameters  
+## Parameters  
  `property-description`  
  A description for the property.  
   
@@ -37,7 +27,8 @@ Specifies the description of a property.
 ## Example  
  This example uses the `<value>` tag to describe what value the `Counter` property holds.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/value_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+## See also
+
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

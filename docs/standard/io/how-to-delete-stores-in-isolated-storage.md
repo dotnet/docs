@@ -1,13 +1,7 @@
 ---
 title: "How to: Delete Stores in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -21,13 +15,8 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting stores"
   - "data storage using isolated storage, deleting stores"
 ms.assetid: 3947e333-5af6-4601-b2f1-24d4d6129cf3
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Delete Stores in Isolated Storage
 The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two methods for deleting isolated storage files:  
@@ -43,6 +32,7 @@ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two meth
  [!code-csharp[Conceptual.IsolatedStorage#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source3.cs#3)]
  [!code-vb[Conceptual.IsolatedStorage#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source3.vb#3)]  
   
-## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+## See also
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

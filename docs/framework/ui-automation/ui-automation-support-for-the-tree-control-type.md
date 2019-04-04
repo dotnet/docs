@@ -1,29 +1,15 @@
 ---
 title: "UI Automation Support for the Tree Control Type"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "control types, Tree"
   - "Tree control type"
   - "UI Automation, Tree control type"
 ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
-caps.latest.revision: 20
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # UI Automation Support for the Tree Control Type
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic provides information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] support for the Tree control type. In [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], a control type is a set of conditions that a control must meet in order to use the <xref:System.Windows.Automation.AutomationElement.ControlTypeProperty> property. The conditions include specific guidelines for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property values, and control patterns.  
   
@@ -60,7 +46,7 @@ ms.workload:
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The tree control is always included in the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The tree control is always included in the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|See notes.|If the control can receive keyboard focus, it must support this property.|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|See notes.|If the tree control has a label associated with it, this property will return an <xref:System.Windows.Automation.AutomationElement> for that label. Otherwise, the property will return a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](../../../includes/tlasharptla-visualbnet-md.md)]).|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|See notes.|If the tree control has a label associated with it, this property will return an <xref:System.Windows.Automation.AutomationElement> for that label. Otherwise, the property will return a null reference (`Nothing` in Microsoft Visual Basic .NET).|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"tree"|Localized string corresponding to the List control type.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The value of a tree control's name property usually comes from text that labels the control. If there is no text label, then the application developer must provide a value for this property.|  
   
@@ -94,7 +80,7 @@ ms.workload:
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Tree>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+- <xref:System.Windows.Automation.ControlType.Tree>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

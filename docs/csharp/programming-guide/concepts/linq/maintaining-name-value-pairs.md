@@ -1,19 +1,7 @@
 ---
 title: "Maintaining Name-Value Pairs (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 7b04b0f1-af64-42eb-8737-83f8861b5915
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Maintaining Name/Value Pairs (C#)
 Many applications have to maintain information that is best kept as name/value pairs. This information might be configuration information or global settings. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] contains some methods that make it easy to keep a set of name/value pairs. You can either keep the information as attributes or as a set of child elements.  
@@ -124,7 +112,8 @@ Console.WriteLine(root);
 </Root>  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>  
- <xref:System.Xml.Linq.XElement.SetElementValue%2A>  
- [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>
+- <xref:System.Xml.Linq.XElement.SetElementValue%2A>
+- [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

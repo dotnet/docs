@@ -1,24 +1,10 @@
 ---
 title: "Calendar"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], Calendar"
   - "Calendar control [WPF]"
 ms.assetid: ee844e4a-eefe-48e2-bd0d-1d82cc5e960b
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Calendar
 A calendar enables a user to select a date by using a visual calendar display.  
@@ -27,7 +13,7 @@ A calendar enables a user to select a date by using a visual calendar display.
   
  The following illustration shows two <xref:System.Windows.Controls.Calendar> controls, one with selections and blackout dates and one without.  
   
- ![Calendar controls](../../../../docs/framework/wpf/controls/media/ndp-calendarcontrols.png "NDP_CalendarControls")  
+ ![Calendar controls](./media/ndp-calendarcontrols.png "NDP_CalendarControls")  
 Calendar controls  
   
  The following table provides information about tasks that are typically associated with the <xref:System.Windows.Controls.Calendar>.  
@@ -59,6 +45,6 @@ Calendar controls
 |CTRL+DOWN ARROW|Any|Switches to the next smaller <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode.Month>, no action.|  
 |SPACEBAR or ENTER|<xref:System.Windows.Controls.CalendarMode.Year> or <xref:System.Windows.Controls.CalendarMode.Decade>|Switches <xref:System.Windows.Controls.Calendar.DisplayMode%2A> to the <xref:System.Windows.Controls.CalendarMode.Month> or <xref:System.Windows.Controls.CalendarMode.Year> represented by focused item.|  
   
-## See Also  
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- [Controls](index.md)
+- [Styling and Templating](styling-and-templating.md)

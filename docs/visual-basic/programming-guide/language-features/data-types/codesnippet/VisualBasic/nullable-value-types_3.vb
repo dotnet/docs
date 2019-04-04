@@ -1,1 +1,0 @@
-        numberOfChildren = 2

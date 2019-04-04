@@ -1,19 +1,9 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
-author: tdykstra
-ms.author: tdykstra
-ms.date: 07/08/2017
-ms.topic: article
-ms.prod: .net
+ms.date: 01/22/2019
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # .NET Glossary
 
 The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the .NET documentation without definitions.
@@ -23,6 +13,8 @@ The primary goal of this glossary is to clarify meanings of selected terms and a
 Ahead-of-time compiler.
 
 Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at runtime, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
+
+See [CoreRT](#corert) and [.NET Native](#net-native).
 
 ## ASP.NET 
 
@@ -40,7 +32,7 @@ See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
 ## assembly
 
-A *.dll*/*.exe* file that can contain a collection of APIs that can be called by apps or other assemblies.
+A *.dll*/*.exe* file that can contain a collection of APIs that can be called by applications or other assemblies.
 
 An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
@@ -48,13 +40,13 @@ An assembly may include types such as interfaces, classes, structures, enumerati
 
 Common Language Runtime.
 
-The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
+The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a [JIT](#jit) compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
 .NET Core Common Language Runtime.
 
-This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
+This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 
 ## CoreFX
 
@@ -69,6 +61,10 @@ A set of libraries that comprise the System.* (and to a limited extent  Microsof
 In contrast to the CLR/CoreCLR, CoreRT is not a virtual machine, which means it doesn't include the facilities to generate and run code on-the-fly because it doesn't include a [JIT](#jit). It does, however, include the [GC](#gc) and the ability for runtime type identification (RTTI) and reflection. However, its type system is designed so that metadata for reflection isn't required. This enables having an [AOT](#aot) tool chain that can link away superfluous metadata and (more importantly) identify code that the app doesn't use. CoreRT is in development.
 
 See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md)
+
+## cross-platform
+
+The ability to develop and execute an application that can be used on multiple different operating systems, such as Linux, Windows and iOS, without having to re-write specifically for each one. This enables code re-use and consistency between applications on different platforms.
 
 ## ecosystem
 
@@ -138,7 +134,7 @@ See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
 
-Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
+Mono is an open source, [cross-platform](#cross-platform) .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
 
 It supports all of the currently published .NET Standard versions.
 
@@ -146,7 +142,7 @@ Historically, Mono implemented the larger API of the .NET Framework and emulated
 
 Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
 
-To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
+To learn more about Mono, see the [Mono documentation](https://www.mono-project.com/docs/).
 
 ## .NET
 
@@ -270,9 +266,8 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 ## See also
 
-[.NET Guide](index.md)  
-[.NET Framework Guide](../framework/index.md)  
-[.NET Core](../core/index.md)  
-[ASP.NET Overview](/aspnet/index#pivot=aspnet)  
-[ASP.NET Core Overview](/aspnet/index#pivot=core)  
-
+- [.NET Guide](index.md)
+- [.NET Framework Guide](../framework/index.md)
+- [.NET Core](../core/index.md)
+- [ASP.NET Overview](/aspnet/index#pivot=aspnet)
+- [ASP.NET Core Overview](/aspnet/index#pivot=core)

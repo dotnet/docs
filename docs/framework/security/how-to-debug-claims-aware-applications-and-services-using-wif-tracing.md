@@ -1,21 +1,8 @@
 ---
 title: "How To: Debug Claims-Aware Applications And Services Using WIF Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3d51ba59-3adb-4ca4-bd33-5027531af687
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # How To: Debug Claims-Aware Applications And Services Using WIF Tracing
 ## Applies To  
@@ -83,14 +70,14 @@ ms.workload:
     </system.diagnostics>  
     ```  
   
-3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](http://msdn.microsoft.com/library/ms733025.aspx).  
+3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](../wcf/diagnostics/tracing/configuring-tracing.md).  
   
 ## Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
  In this step, you will use the Trace Viewer Tool (SvcTraceViewer.exe) to analyze WIF trace logs.  
   
 #### To analyze WIF trace logs using Trace Viewer tool (SvcTraceViewer.exe)  
   
-1.  Trace Viewer tool (SvcTraceViewer.exe) ships as part of the Windows SDK. If you haven’t already installed the Windows SDK, you can download it here: [Windows SDK](http://www.microsoft.com/download/en/details.aspx?id=8279).  
+1.  Trace Viewer tool (SvcTraceViewer.exe) ships as part of the Windows SDK. If you haven’t already installed the Windows SDK, you can download it here: [Windows SDK](https://www.microsoft.com/download/en/details.aspx?id=8279).  
   
 2.  Run the Trace Viewer tool (SvcTraceViewer.exe). It is typically available in the **Bin** folder of the installation path.  
   
@@ -111,8 +98,8 @@ ms.workload:
   
 |**Error ID**|**Error Message**|**Action needed to fix the error**|  
 |-|-|-|  
-|ID4175|The issuer of the security token was not recognized by the IssuerNameRegistry.  To accept security tokens from this issuer, configure the IssuerNameRegistry to return a valid name for this issuer.|This error can be caused by copying a thumbprint from the MMC snap-in and pasting it into the *Web.config* file. Specifically, you can get an extra non-printable character in the text string when copying from the certificate properties window. This extra character causes the thumbprint match to fail.The procedure for correctly copying the thumbprint can be found here: [http://msdn.microsoft.com/library/ff359102.aspx](http://msdn.microsoft.com/library/ff359102.aspx)|  
+|ID4175|The issuer of the security token was not recognized by the IssuerNameRegistry.  To accept security tokens from this issuer, configure the IssuerNameRegistry to return a valid name for this issuer.|This error can be caused by copying a thumbprint from the MMC snap-in and pasting it into the *Web.config* file. Specifically, you can get an extra non-printable character in the text string when copying from the certificate properties window. This extra character causes the thumbprint match to fail.The procedure for correctly copying the thumbprint can be found at [Claims-Based Single Sign-On for the Web and Microsoft Azure](https://docs.microsoft.com/previous-versions/msp-n-p/ff359102%28v=pandp.10%29).|  
   
 ## Related Items  
   
--   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](http://msdn.microsoft.com/library/aa751795.aspx)
+-   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

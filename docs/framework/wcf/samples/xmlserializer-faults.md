@@ -1,21 +1,7 @@
 ---
 title: "XmlSerializer Faults"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c6b80f14-64f4-4162-ae76-71664cf42fd3
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XmlSerializer Faults
 The <xref:System.Xml.Serialization.XmlSerializer> fault contract sample demonstrates how to communicate error information from a service to a client using the <xref:System.Xml.Serialization.XmlSerializer>. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), with some additional code added to the service to convert an internal exception to a fault. The client attempts to perform division by zero to force an error condition on the service.  
@@ -25,7 +11,7 @@ The <xref:System.Xml.Serialization.XmlSerializer> fault contract sample demonstr
   
  The calculator contract has been modified to include a <xref:System.ServiceModel.FaultContractAttribute> as shown in the following sample code. Also, the <xref:System.ServiceModel.XmlSerializerFormatAttribute> is used to enable serialization using the <xref:System.Xml.Serialization.XmlSerializer>. The <xref:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults%2A> property is set to `true` on this attribute, which instructs the serializer to use the <xref:System.Xml.Serialization.XmlSerializer> for reading and writing faults.  
   
-```  
+```csharp
 [XmlSerializerFormat(SupportFaults=true)]  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
@@ -60,10 +46,10 @@ public interface ICalculator
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\XmlSerializerFaults`  
   
-## See Also  
- <xref:System.ServiceModel.XmlSerializerFormatAttribute>  
- <xref:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults%2A>
+## See also
+- <xref:System.ServiceModel.XmlSerializerFormatAttribute>
+- <xref:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults%2A>

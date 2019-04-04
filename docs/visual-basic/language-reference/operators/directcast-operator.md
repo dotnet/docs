@@ -1,21 +1,12 @@
 ---
 title: "DirectCast Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.directCast"
   - "directCast"
 helpviewer_keywords: 
   - "DirectCast keyword [Visual Basic]"
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # DirectCast Operator (Visual Basic)
 Introduces a type conversion operation based on inheritance or implementation.  
@@ -40,11 +31,12 @@ Introduces a type conversion operation based on inheritance or implementation.
 ## Example  
  The following example demonstrates two uses of `DirectCast`, one that fails at run time and one that succeeds.  
   
- [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/VisualBasic/directcast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#1)]  
   
  In the preceding example, the run-time type of `q` is `Double`. `CType` succeeds because `Double` can be converted to `Integer`. However, the first `DirectCast` fails at run time because the run-time type of `Double` has no inheritance relationship with `Integer`, even though a conversion exists. The second `DirectCast` succeeds because it converts from type <xref:System.Windows.Forms.Form> to type <xref:System.Windows.Forms.Control>, from which <xref:System.Windows.Forms.Form> inherits.  
   
-## See Also  
- <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType>  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+## See also
+
+- <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType>
+- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

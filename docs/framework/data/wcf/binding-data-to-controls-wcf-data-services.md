@@ -1,14 +1,6 @@
 ---
 title: "Binding Data to Controls (WCF Data Services)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-oob"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "WCF Data Services, client library"
   - "data binding, WCF Data Services"
 ms.assetid: b32e1d49-c214-4cb1-867e-88fbb3d08c8d
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Binding Data to Controls (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind controls such as the `ComboBox` and `ListView` controls to an instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class. This collection, which inherits from the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, contains the data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed. This class represents a dynamic data collection that provides notifications when items get added or removed. When you use an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> for data binding, the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client libraries handle these events to ensure that objects tracked by the <xref:System.Data.Services.Client.DataServiceContext> remain synchronized with the data in the bound UI element.  
@@ -30,7 +16,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind c
  The <xref:System.Data.Services.Client.DataServiceCollection%601> class (indirectly) implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface to alert the context when objects are added to or removed from the collection. Data service type objects used with a <xref:System.Data.Services.Client.DataServiceCollection%601> must also implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface to alert the <xref:System.Data.Services.Client.DataServiceCollection%601> when properties of objects in the binding collection have changed.  
   
 > [!NOTE]
->  When you use the **Add Service Reference** dialog or the[DataSvcUtil.exe](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md) tool with the `/dataservicecollection` option to generate the client data service classes, the generated data classes implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [How to: Manually Generate Client Data Service Classes](../../../../docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md).  
+>  When you use the **Add Service Reference** dialog or the [DataSvcUtil.exe](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md) tool with the `/dataservicecollection` option to generate the client data service classes, the generated data classes implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [How to: Manually Generate Client Data Service Classes](../../../../docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md).  
   
 ## Creating the Binding Collection  
  Create a new instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class by calling one of the class constructor methods with a supplied <xref:System.Data.Services.Client.DataServiceContext> instance and optionally a <xref:System.Data.Services.Client.DataServiceQuery%601> or LINQ query that, when it is executed, returns an <xref:System.Collections.Generic.IEnumerable%601> instance. This <xref:System.Collections.Generic.IEnumerable%601> provides the source of objects for the binding collection, which are materialized from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. For more information, see [Object Materialization](../../../../docs/framework/data/wcf/object-materialization-wcf-data-services.md). By default, changes made to bound objects and items inserted into the collection are automatically tracked by the <xref:System.Data.Services.Client.DataServiceContext>. If you need to manually track these changes, call one of the constructor methods that takes a `trackingMode` parameter and specify a value of <xref:System.Data.Services.Client.TrackingMode.None>.  
@@ -121,6 +107,6 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind c
   
  For more information, see [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md).  
   
-## See Also  
- [How to: Manually Generate Client Data Service Classes](../../../../docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md)  
- [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md)
+## See also
+- [How to: Manually Generate Client Data Service Classes](../../../../docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md)
+- [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md)

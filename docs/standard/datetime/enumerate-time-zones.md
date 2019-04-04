@@ -1,13 +1,7 @@
 ---
 title: "How to: Enumerate time zones present on a computer"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,15 +9,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], enumerating"
   - "enumerating time zones [.NET Framework]"
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # How to: Enumerate time zones present on a computer
 
 Successfully working with a designated time zone requires that information about that time zone be available to the system. The Windows XP and Windows Vista operating systems store this information in the registry. However, although the total number of time zones that exist throughout the world is large, the registry contains information about only a subset of them. In addition, the registry itself is a dynamic structure whose contents are subject to both deliberate and accidental change. As a result, an application cannot always assume that a particular time zone is defined and available on a system. The first step for many applications that use time zone information applications is to determine whether required time zones are available on the local system, or to give the user a list of time zones from which to select. This requires that an application enumerate the time zones defined on a local system.
@@ -79,6 +67,6 @@ This example requires:
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
-[How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
+- [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)

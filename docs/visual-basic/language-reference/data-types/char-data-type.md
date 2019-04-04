@@ -1,11 +1,6 @@
 ---
 title: "Char Data Type (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Char"
 helpviewer_keywords: 
@@ -15,9 +10,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], assigning"
   - "Char data type [Visual Basic], character literals"
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Char Data Type (Visual Basic)
 Holds unsigned 16-bit (2-byte) code points ranging in value from 0 through 65535. Each *code point*, or character code, represents a single Unicode character.  
@@ -59,15 +51,16 @@ charVar = "Z"C
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Char?displayProperty=nameWithType> structure.  
   
-## See Also  
- <xref:System.Char?displayProperty=nameWithType>  
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- <xref:Microsoft.VisualBasic.Strings.Chr%2A>  
- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
- [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## See also
+
+- <xref:System.Char?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Chr%2A>
+- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

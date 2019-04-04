@@ -1,14 +1,6 @@
 ---
-title: "&lt;clear&gt; Element for bypasslist (Network Settings)"
-ms.custom: ""
+title: "<clear> Element for bypasslist (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/clear"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#clear"
@@ -18,14 +10,8 @@ helpviewer_keywords:
   - "<bypasslist>, clear element"
   - "bypasslist, clear element"
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
-caps.latest.revision: 14
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;clear&gt; Element for bypasslist (Network Settings)
+# \<clear> Element for bypasslist (Network Settings)
 Clears the proxy bypass list.  
   
  \<configuration>  
@@ -78,6 +64,6 @@ Clears the proxy bypass list.
 </configuration>   
 ```  
   
-## See Also  
- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

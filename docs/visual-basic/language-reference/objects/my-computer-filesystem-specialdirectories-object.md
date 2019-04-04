@@ -1,18 +1,10 @@
 ---
-title: "My.Computer.FileSystem.SpecialDirectories Object"
+title: "My.Computer.FileSystem.SpecialDirectories Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.FileSystem.SpecialDirectories object"
   - "SpecialDirectories object"
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Computer.FileSystem.SpecialDirectories Object
 Provides properties for accessing commonly referenced directories.  
@@ -29,6 +21,7 @@ Provides properties for accessing commonly referenced directories.
   
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
-## See Also  
- [My.Computer.FileSystem Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+
+- [My.Computer.FileSystem Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Change the Appearance of the Windows Forms ColorDialog Component"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "ColorDialog component [Windows Forms], formatting appearance"
   - "color dialog box [Windows Forms], configuring appearance"
 ms.assetid: bba4e262-1cd7-4f63-89cf-330a36f7b539
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Change the Appearance of the Windows Forms ColorDialog Component
 You can configure the appearance of the Windows Forms <xref:System.Windows.Forms.ColorDialog> component with a number of its properties. The dialog box has two sections — one that shows basic colors and one that allows the user to define custom colors.  
@@ -57,7 +43,7 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     colorDialog1->ShowHelp = true;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ColorDialog>  
- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)  
- [ColorDialog Component Overview](../../../../docs/framework/winforms/controls/colordialog-component-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ColorDialog>
+- [ColorDialog Component](colordialog-component-windows-forms.md)
+- [ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)

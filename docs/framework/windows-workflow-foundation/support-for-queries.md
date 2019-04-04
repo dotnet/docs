@@ -1,19 +1,7 @@
 ---
 title: "Support for Queries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 093c22f5-3294-4642-857a-5252233d6796
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Support for Queries
 The SQL Workflow Instance Store records a set of well-known properties in the store. Users can query for instances based on these properties. The following list contains some of these well-known properties:  
@@ -37,10 +25,10 @@ The SQL Workflow Instance Store records a set of well-known properties in the st
   
  The workflow runtime supplies values for the first three properties. The workflow service host supplies the value for the **Suspend Reason** property. The SQL Workflow Instance Store itself supplies values for the **Last Updated Machine** property.  
   
- The SQL Workflow Instance Store feature also lets you specify the custom properties for which you want to store the values in the persistence database and that you want to use in queries. For more information about custom promotions, see [Store Extensibility](../../../docs/framework/windows-workflow-foundation/store-extensibility.md).  
+ The SQL Workflow Instance Store feature also lets you specify the custom properties for which you want to store the values in the persistence database and that you want to use in queries. For more information about custom promotions, see [Store Extensibility](store-extensibility.md).  
   
 ## Views  
- The instance store contains the following views. See [Persistence Database Schema](../../../docs/framework/windows-workflow-foundation/persistence-database-schema.md) for further details.  
+ The instance store contains the following views. See [Persistence Database Schema](persistence-database-schema.md) for further details.  
   
 ### The Instances View  
  The Instances view contains the following fields:  
@@ -97,7 +85,7 @@ The SQL Workflow Instance Store records a set of well-known properties in the st
 5.  **ServiceNamespace**  
   
 ### The InstancePromotedProperties view  
- The InstancePromotedProperties view contains the following fields. For details on promoted properties, see the [Store Extensibility](../../../docs/framework/windows-workflow-foundation/store-extensibility.md) topic.  
+ The InstancePromotedProperties view contains the following fields. For details on promoted properties, see the [Store Extensibility](store-extensibility.md) topic.  
   
 1.  **InstanceId**  
   

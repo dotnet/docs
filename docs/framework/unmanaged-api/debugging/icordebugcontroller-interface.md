@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugController Interface1"
-ms.custom: ""
+title: "ICorDebugController Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugController"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: dbb1c4dc-269a-459b-ab1d-6c70788782ce
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugController Interface1
+# ICorDebugController Interface
+
 Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:System.AppDomain>, in which code execution context can be controlled.  
   
 ## Methods  
@@ -62,5 +51,5 @@ Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:Syste
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

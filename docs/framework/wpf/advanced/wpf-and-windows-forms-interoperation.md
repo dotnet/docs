@@ -1,14 +1,6 @@
 ---
 title: "WPF and Windows Forms Interoperation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
   - "nester interoperation [WPF]"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "hybrid control [WPF interoperability]"
 ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
-caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF and Windows Forms Interoperation
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] present two different architectures for creating application interfaces. The <xref:System.Windows.Forms.Integration?displayProperty=nameWithType> namespace provides classes that enable common interoperation scenarios. The two key classes that implement interoperation capabilities are <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost>. This topic describes which interoperation scenarios are supported and which scenarios are not supported.  
@@ -32,7 +18,7 @@ ms.workload:
   
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
 ## Hosting Windows Forms Controls in WPF  
- The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control:  
+ The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a Windows Forms control:  
   
 -   The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control may host one or more [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls using XAML.  
   
@@ -68,7 +54,7 @@ ms.workload:
 ### Ambient Properties  
  Some of the ambient properties of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls have [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] equivalents. These ambient properties are propagated to the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> control translates each [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] ambient property into its [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] equivalent.  
   
- For more information, see [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
  The following table describes interoperation behavior.  
@@ -90,7 +76,7 @@ ms.workload:
   
 <a name="Windows_Forms_Application_Hosting_Windows"></a>   
 ## Hosting WPF Controls in Windows Forms  
- The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winforms](../../../../includes/tla2sharptla-winforms-md.md)] control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
+ The following interoperation scenarios are supported when a Windows Forms control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
   
 -   Hosting one or more [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls using code.  
   
@@ -111,7 +97,7 @@ ms.workload:
 ### Ambient Properties  
  Some of the ambient properties of [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] equivalents. These ambient properties are propagated to the hosted [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.ElementHost> control. The <xref:System.Windows.Forms.Integration.ElementHost> control translates each [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] ambient property to its [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] equivalent.  
   
- For more information, see [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
  The following table describes interoperation behavior.  
@@ -125,10 +111,10 @@ ms.workload:
 |Clipboard|All Clipboard operations work as usual. This includes cutting and pasting between [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
 |Drag-and-drop feature|All drag-and-drop operations work as usual. This includes operations between [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)  
- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)  
- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)  
- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Walkthrough: Hosting a Windows Forms Control in WPF](walkthrough-hosting-a-windows-forms-control-in-wpf.md)
+- [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
+- [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
+- [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md)

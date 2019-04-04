@@ -1,12 +1,6 @@
 ---
 title: "XML Document Literal (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralDocument"
 helpviewer_keywords: 
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "XML documents [Visual Basic], creating"
   - "document literal [Visual Basic]"
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # XML Document Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XDocument> object.  
@@ -49,23 +40,24 @@ rootElement
  An XML document literal cannot appear in an XML element.  
   
 > [!NOTE]
->  An XML literal can span multiple lines without using line continuation characters. This enables you to copy content from an XML document and paste it directly into a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program.  
+>  An XML literal can span multiple lines without using line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
   
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler converts the XML document literal into calls to the <xref:System.Xml.Linq.XDocument.%23ctor%2A> and <xref:System.Xml.Linq.XDeclaration.%23ctor%2A> constructors.  
+ The Visual Basic compiler converts the XML document literal into calls to the <xref:System.Xml.Linq.XDocument.%23ctor%2A> and <xref:System.Xml.Linq.XDeclaration.%23ctor%2A> constructors.  
   
 ## Example  
  The following example creates an XML document that has an XML declaration, a processing instruction, a comment, and an element that contains another element.  
   
- [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-document-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- <xref:System.Xml.Linq.XProcessingInstruction>  
- <xref:System.Xml.Linq.XComment>  
- <xref:System.Xml.Linq.XDocument>  
- [XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)  
- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)  
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement>
+- <xref:System.Xml.Linq.XProcessingInstruction>
+- <xref:System.Xml.Linq.XComment>
+- <xref:System.Xml.Linq.XDocument>
+- [XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)
+- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)
+- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)

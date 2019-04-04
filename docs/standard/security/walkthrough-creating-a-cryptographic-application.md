@@ -1,13 +1,7 @@
 ---
 title: "Walkthrough: Creating a Cryptographic Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "cryptography [NET Framework], cryptographic application example"
   - "cryptography [NET Framework], application example"
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Walkthrough: Creating a Cryptographic Application
 This walkthrough demonstrates how to encrypt and decrypt content. The code examples are designed for a Windows Forms application. This application does not demonstrate real world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.  
@@ -128,7 +117,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
  [!code-vb[CryptoWalkThru#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#5)]  
   
 ## Decrypting a File  
- This task involves two methods, the event handler method for the `Decrypt File` button (`buttonEncryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.  
+ This task involves two methods, the event handler method for the `Decrypt File` button (`buttonDecryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.  
   
  The `Decrypt` method does the following:  
   
@@ -215,5 +204,6 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 2.  Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+## See also
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

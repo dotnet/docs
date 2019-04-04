@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugNativeFrame2::GetStackParameterSize Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugNativeFrame2.GetStackParameterSize Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f6a449c8-a941-43ba-9a90-c98b29ae3c36
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugNativeFrame2::GetStackParameterSize Method
 Returns the cumulative size of the parameters on the stack on x86 operating systems.  
@@ -39,7 +27,7 @@ Returns the cumulative size of the parameters on the stack on x86 operating syst
 HRESULT GetStackParameterSize([out] ULONG32 * pSize)  
 ```  
   
-#### Parameters  
+## Parameters  
  `pSize`  
  [out] A pointer to the cumulative size of the parameters on the stack.  
   
@@ -67,7 +55,7 @@ HRESULT GetStackParameterSize([out] ULONG32 * pSize)
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

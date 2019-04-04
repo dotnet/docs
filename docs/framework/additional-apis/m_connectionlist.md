@@ -1,9 +1,6 @@
 ---
 title: "ConnectionGroup.m_ConnectionList Field"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name: 
@@ -15,9 +12,6 @@ api_type:
 ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # ConnectionGroup.m\_ConnectionList Field
@@ -31,7 +25,7 @@ private ArrayList m_ConnectionList
 ```
 
 > [!WARNING]
-> The `ConnectionGroup.m_ConnectionList` field is private and not meant to be used directly in your code.
+> The `ConnectionGroup.m_ConnectionList` field is private and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

@@ -1,13 +1,7 @@
 ---
 title: "Creating New Strings in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,13 +13,8 @@ helpviewer_keywords:
   - "strings [.NET Framework], creating"
   - "Insert method"
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Creating New Strings in .NET
 The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
@@ -85,6 +74,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
  [!code-csharp[Strings.Creating#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#5)]
  [!code-vb[Strings.Creating#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#5)]  
   
-## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)
+## See also
+
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

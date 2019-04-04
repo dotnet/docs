@@ -1,21 +1,7 @@
 ---
 title: "Object References"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
-caps.latest.revision: 10
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Object References
 This sample demonstrates how to pass objects by references between server and client. The sample uses simulated *social networks*. A social network consists of a `Person` class that contains a list of friends in which each friend is an instance of the `Person` class, with its own list of friends. This creates a graph of objects. The service exposes operations on these social networks.  
@@ -28,7 +14,7 @@ This sample demonstrates how to pass objects by references between server and cl
 ## Service  
  The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> field set to `true` to declare it as a reference type. All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.  
   
-```  
+```csharp
 [DataContract(IsReference=true)]  
 public class Person  
 {  
@@ -61,7 +47,7 @@ public class Person
   
  The `GetPeopleInNetwork` operation takes a parameter of type `Person` and returns all the people in the network; that is, all the people in the `friends` list, the friend's friends, and so on, without duplicates.  
   
-```  
+```csharp
 public List<Person> GetPeopleInNetwork(Person p)  
 {  
     List<Person> people = new List<Person>();  
@@ -73,7 +59,7 @@ public List<Person> GetPeopleInNetwork(Person p)
   
  The `GetMutualFriends` operation takes a parameter of type `Person` and returns all the friends in the list who also have this person in their `friends` list.  
   
-```  
+```csharp
 public List<Person> GetMutualFriends(Person p)  
 {  
     List<Person> mutual = new List<Person>();  
@@ -88,7 +74,7 @@ public List<Person> GetMutualFriends(Person p)
   
  The `GetCommonFriends` operation takes a list of type `Person`. The list is expected to have two `Person` objects in it. The operation returns a list of `Person` objects that are in the `friends` lists of both `Person` objects in the input list.  
   
-```  
+```csharp
 public List<Person> GetCommonFriends(List<Person> people)  
 {  
     List<Person> common = new List<Person>();  
@@ -100,7 +86,7 @@ public List<Person> GetCommonFriends(List<Person> people)
 ```  
   
 ## Client  
- The client proxy is created using the **Add Service Reference** feature of [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)].  
+ The client proxy is created using the **Add Service Reference** feature of Visual Studio.  
   
  A social network that consists of five `Person` objects is created. The client calls each of the three methods in the service.  
   
@@ -117,10 +103,10 @@ public List<Person> GetCommonFriends(List<Person> people)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\ObjectReferences`  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>  
- [Interoperable Object References](../../../../docs/framework/wcf/feature-details/interoperable-object-references.md)
+## See also
+- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
+- [Interoperable Object References](../../../../docs/framework/wcf/feature-details/interoperable-object-references.md)

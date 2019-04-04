@@ -1,24 +1,11 @@
 ---
 title: "How to: Create Windows Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, creating"
   - "templates, Windows Service"
 ms.assetid: 0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff
-caps.latest.revision: 18
 author: "ghogen"
-ms.author: "ghogen"
-manager: "douge"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Create Windows Services
 When you create a service, you can use a Visual Studio project template called **Windows Service**. This template automatically does much of the work for you by referencing the appropriate classes and namespaces, setting up the inheritance from the base class for services, and overriding several of the methods you're likely to want to override.  
@@ -74,12 +61,12 @@ When you create a service, you can use a Visual Studio project template called *
   
 8.  Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Write Services Programmatically](../../../docs/framework/windows-services/how-to-write-services-programmatically.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)  
- [How to: Log Information About Services](../../../docs/framework/windows-services/how-to-log-information-about-services.md)  
- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)  
- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)  
- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)  
- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+## See also
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Write Services Programmatically](../../../docs/framework/windows-services/how-to-write-services-programmatically.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+- [How to: Log Information About Services](../../../docs/framework/windows-services/how-to-log-information-about-services.md)
+- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)
+- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
+- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)

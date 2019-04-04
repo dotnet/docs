@@ -1,11 +1,6 @@
 ---
 title: "Shared (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Shared"
 helpviewer_keywords: 
@@ -16,9 +11,6 @@ helpviewer_keywords:
   - "shared [elements VB]"
   - "elements [Visual Basic], shared"
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Shared (Visual Basic)
 Specifies that one or more declared programming elements are associated with a class or structure at large, and not with a specific instance of the class or structure.  
@@ -52,7 +44,7 @@ Specifies that one or more declared programming elements are associated with a c
   
 -   **Accessing through an Instance Expression.** If you access a shared element through an expression that returns an instance of its class or structure, the compiler makes the access through the class or structure name instead of evaluating the expression. This produces unexpected results if you intended the expression to perform other actions as well as returning the instance. The following example illustrates this.  
   
-    ```  
+    ```vb
     Sub main()  
         shareTotal.total = 10  
         ' The preceding line is the preferred way to access total.  
@@ -94,10 +86,11 @@ Specifies that one or more declared programming elements are associated with a c
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Static](../../../visual-basic/language-reference/modifiers/static.md)  
- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+## See also
+
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Static](../../../visual-basic/language-reference/modifiers/static.md)
+- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

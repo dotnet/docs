@@ -1,14 +1,6 @@
 ---
 title: "GetFileDef Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IALink2.GetFileDef"
 api_location: 
@@ -22,12 +14,8 @@ helpviewer_keywords:
 ms.assetid: 4e3fbe6c-b82a-4181-ab17-7faa1263f5b3
 topic_type: 
   - "apiref"
-caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # GetFileDef Method
 Retrieves the actual FileDef token used in metadata (as opposed to the token assigned by ALink).  
@@ -42,7 +30,7 @@ HRESULT GetFileDef(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   
@@ -58,7 +46,7 @@ HRESULT GetFileDef(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

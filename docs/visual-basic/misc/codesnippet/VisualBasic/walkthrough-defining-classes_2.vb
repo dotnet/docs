@@ -1,1 +1,0 @@
-            Private userNameValue As String

@@ -1,24 +1,10 @@
 ---
 title: "Modifying Large-Value (max) Data in ADO.NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 8aca5f00-d80e-4320-81b3-016d0466f7ee
-caps.latest.revision: 6
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Modifying Large-Value (max) Data in ADO.NET
 Large object (LOB) data types are those that exceed the maximum row size of 8 kilobytes (KB). SQL Server provides a `max` specifier for `varchar`, `nvarchar`, and `varbinary` data types to allow storage of values as large as 2^32 bytes. Table columns and Transact-SQL variables may specify `varchar(max)`, `nvarchar(max)`, or `varbinary(max)` data types. In ADO.NET, the `max` data types can be fetched by a `DataReader`, and can also be specified as both input and output parameter values without any special handling. For large `varchar` data types, data can be retrieved and updated incrementally.  
@@ -29,7 +15,7 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  **SQL Server Books Online**  
   
-1.  [Using Large-Value Data Types](http://go.microsoft.com/fwlink/?LinkId=120498)  
+1.  [Using Large-Value Data Types](https://go.microsoft.com/fwlink/?LinkId=120498)  
   
 ## Large-Value Type Restrictions  
  The following restrictions apply to the `max` data types, which do not exist for smaller data types:  
@@ -45,9 +31,9 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  The `OPENROWSET` function includes the `BULK` rowset provider, which allows you to read data directly from a file without loading the data into a target table. This enables you to use `OPENROWSET` in a simple INSERT SELECT statement.  
   
- The `OPENROWSET``BULK` option arguments provide significant control over where to begin and end reading data, how to deal with errors, and how data is interpreted. For example, you can specify that the data file be read as a single-row, single-column rowset of type `varbinary`, `varchar`, or `nvarchar`. For the complete syntax and options, see SQL Server Books Online.  
+ The `OPENROWSET BULK` option arguments provide significant control over where to begin and end reading data, how to deal with errors, and how data is interpreted. For example, you can specify that the data file be read as a single-row, single-column rowset of type `varbinary`, `varchar`, or `nvarchar`. For the complete syntax and options, see SQL Server Books Online.  
   
- The following example inserts a photo into the ProductPhoto table in the AdventureWorks sample database. When using the `BULK``OPENROWSET` provider, you must supply the named list of columns even if you aren't inserting values into every column. The primary key in this case is defined as an identity column, and may be omitted from the column list. Note that you must also supply a correlation name at the end of the `OPENROWSET` statement, which in this case is ThumbnailPhoto. This correlates with the column in the `ProductPhoto` table into which the file is being loaded.  
+ The following example inserts a photo into the ProductPhoto table in the AdventureWorks sample database. When using the `BULK OPENROWSET` provider, you must supply the named list of columns even if you aren't inserting values into every column. The primary key in this case is defined as an identity column, and may be omitted from the column list. Note that you must also supply a correlation name at the end of the `OPENROWSET` statement, which in this case is ThumbnailPhoto. This correlates with the column in the `ProductPhoto` table into which the file is being loaded.  
   
 ```  
 INSERT Production.ProductPhoto (  
@@ -257,8 +243,8 @@ WHERE   DocumentID=@DocumentID
  [!code-csharp[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS/source.cs#1)]
  [!code-vb[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/VB/source.vb#1)]  
   
-## See Also  
- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
+- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
+- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,13 +1,6 @@
 ---
 title: "Function Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Function procedures"
   - "return values [Visual Basic], function procedures"
@@ -16,12 +9,9 @@ helpviewer_keywords:
   - "procedures [Visual Basic], Function procedures"
   - "syntax [Visual Basic], function procedures"
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Function Procedures (Visual Basic)
-A `Function` procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements enclosed by the `Function` and `End Function` statements. The `Function` procedure performs a task and then returns control to the calling code. When it returns control, it also returns a value to the calling code.  
+A `Function` procedure is a series of Visual Basic statements enclosed by the `Function` and `End Function` statements. The `Function` procedure performs a task and then returns control to the calling code. When it returns control, it also returns a value to the calling code.  
   
  Each time the procedure is called, its statements run, starting with the first executable statement after the `Function` statement and ending with the first `End Function`, `Exit Function`, or `Return` statement encountered.  
   
@@ -96,19 +86,20 @@ End Function
 ### Illustration of Declaration and Call  
  The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, given the values for the other two sides.  
   
- [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/function-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
  The following example shows a typical call to `hypotenuse`.  
   
- [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/function-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)  
- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)  
- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)
+## See also
+
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)
+- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)
+- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)

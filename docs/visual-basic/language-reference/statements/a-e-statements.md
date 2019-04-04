@@ -1,19 +1,10 @@
 ---
-title: "A-E Statements"
+title: "A-E Statements (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: af97c2bf-dddb-48a8-8eb6-798cd219430b
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # A-E Statements
-The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
+The following table contains a listing of Visual Basic language statements.  
   
 |||||  
 |---|---|---|---|  
@@ -23,7 +14,8 @@ The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md
 |[Enum](../../../visual-basic/language-reference/statements/enum-statement.md)|[Erase](../../../visual-basic/language-reference/statements/erase-statement.md)|[Error](../../../visual-basic/language-reference/statements/error-statement.md)|[Event](../../../visual-basic/language-reference/statements/event-statement.md)|  
 |[Exit](../../../visual-basic/language-reference/statements/exit-statement.md)||||  
   
-## See Also  
- [F-P Statements](../../../visual-basic/language-reference/statements/f-p-statements.md)  
- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
+## See also
+
+- [F-P Statements](../../../visual-basic/language-reference/statements/f-p-statements.md)
+- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)
+- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)

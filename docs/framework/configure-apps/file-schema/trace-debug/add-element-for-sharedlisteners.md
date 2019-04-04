@@ -1,14 +1,6 @@
 ---
-title: "&lt;add&gt; Element for &lt;sharedListeners&gt;"
-ms.custom: ""
+title: "<add> Element for <sharedListeners>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add"
 helpviewer_keywords: 
@@ -16,28 +8,24 @@ helpviewer_keywords:
   - "<add> element for <sharedListeners>"
   - "add element for <sharedListeners>"
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-caps.latest.revision: 13
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;add&gt; Element for &lt;sharedListeners&gt;
+# \<add> Element for \<sharedListeners>
 Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.  
   
  \<configuration>  
-\<system.diagnostics>  
-\<sharedListeners> Element  
-\<add>  
+&nbsp;&nbsp;\<system.diagnostics>  
+&nbsp;&nbsp;&nbsp;&nbsp;\<sharedListeners> Element  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<add>  
   
 ## Syntax  
   
 ```xml  
 <add name="name"   
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
-  initializeData="data"/>  
-```  
+  initializeData="data"
+  traceOutputOptions = "None"
+/>  
+```
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -49,7 +37,8 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 |`name`|Required attribute.<br /><br /> Specifies the name of the listener that is used to add the shared listener to a `Listeners` collection.|  
 |`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
-  
+|`traceOutputOptions`|Optional attribute.<br/><br/>The string representation of one or more <xref:System.Diagnostics.TraceOptions> enumeration members that indicates the data to be written to the trace output. Multiple items are separated by commas. The default value is "None".|
+
 ### Child Elements  
   
 |Element|Description|  
@@ -113,8 +102,8 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 </configuration>   
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

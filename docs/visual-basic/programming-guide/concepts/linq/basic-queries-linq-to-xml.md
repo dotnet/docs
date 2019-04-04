@@ -1,19 +1,7 @@
 ---
 title: "Basic Queries (LINQ to XML) (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: aec6ef60-f6f4-4548-b3db-cf6c94bb0008
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # Basic Queries (LINQ to XML) (Visual Basic)
 This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  
@@ -36,5 +24,6 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[How to: Write a Query that Finds Elements Based on Context (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md)|Shows how to select elements based on other elements in the tree.|  
 |[How to: Debug Empty Query Results Sets (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
   
-## See Also  
- [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)
+## See also
+
+- [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

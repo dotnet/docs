@@ -1,11 +1,6 @@
 ---
-title: "#Const Directive"
+title: "#Const Directive (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.#Const"
   - "#vb.Const"
@@ -20,9 +15,6 @@ helpviewer_keywords:
   - "Const statement [Visual Basic], directive (#Const)"
   - "declaring constants [Visual Basic], #const directive"
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # #Const Directive
 Defines conditional compiler constants for Visual Basic.  
@@ -48,11 +40,12 @@ Defines conditional compiler constants for Visual Basic.
 ## Example  
  This example uses the `#Const` directive.  
   
- [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/const-directive_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#3)]  
   
-## See Also  
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)  
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+## See also
+
+- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)

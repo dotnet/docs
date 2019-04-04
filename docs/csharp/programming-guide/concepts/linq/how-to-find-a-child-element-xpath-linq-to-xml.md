@@ -1,19 +1,7 @@
 ---
 title: "How to: Find a Child Element (XPath-LINQ to XML) (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 4fa6182d-6196-4ed1-9c9e-82949ff89c71
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Find a Child Element (XPath-LINQ to XML) (C#)
 This topic compares the XPath child element axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Element%2A> method.  
@@ -51,5 +39,6 @@ Results are identical
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

@@ -1,14 +1,6 @@
 ---
 title: "ISymUnmanagedReader::UpdateSymbolStore Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ISymUnmanagedReader.UpdateSymbolStore"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 4a17d723-86b9-4f27-bd0d-b70c3259011c
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ISymUnmanagedReader::UpdateSymbolStore Method
 Updates the existing symbol store with a delta symbol store. This method is used in edit-and-continue scenarios to update the symbol store to match deltas to the original portable executable (PE) file.  
@@ -44,7 +32,7 @@ HRESULT UpdateSymbolStore (
     [in] IStream *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  [in] The name of the file that contains the symbol store.  
   
@@ -57,5 +45,5 @@ HRESULT UpdateSymbolStore (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugObjectValue Interface1"
-ms.custom: ""
+title: "ICorDebugObjectValue Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugObjectValue"
 api_location: 
@@ -22,14 +14,11 @@ helpviewer_keywords:
 ms.assetid: 937de6a0-6fbf-4ddc-80ea-a6217b73e62b
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugObjectValue Interface1
+# ICorDebugObjectValue Interface
+
 A subclass of "ICorDebugValue" that represents a value that contains an object.  
   
 ## Methods  
@@ -59,6 +48,6 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- 
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+

@@ -1,14 +1,6 @@
 ---
 title: "How to: Reference a Strong-Named Assembly"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,12 +11,8 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], strong-named"
   - "assembly binding, strong-named"
 ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Reference a Strong-Named Assembly
 The process for referencing types or resources in a strong-named assembly is usually transparent. You can make the reference either at compile time (early binding) or at run time.  
@@ -74,7 +62,7 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
  If you have a public key file, you can use the following command instead (note the difference in case on the command-line option):  
   
- **sn -tp \<** *assembly* **>**  
+ **sn -tp \<** *public key file* **>**  
   
-## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
+## See also
+- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

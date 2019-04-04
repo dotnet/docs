@@ -1,12 +1,6 @@
 ---
-title: "AddHandler Statement"
+title: "AddHandler Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.AddHandlerMethod"
   - "addhandler"
@@ -14,9 +8,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "AddHandler statement [Visual Basic]"
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # AddHandler Statement
 Associates an event with an event handler at run time.  
@@ -28,11 +19,11 @@ AddHandler event, AddressOf eventhandler
 ```  
   
 ## Parts  
- `event`  
- The name of the event to handle.  
-  
- `eventhandler`  
- The name of a procedure that handles the event.  
+|||
+|---|---|
+|event|The name of the event to handle.|  
+|`eventhandler`|The name of a procedure that handles the event.|
+|||
   
 ## Remarks  
  The `AddHandler` and `RemoveHandler` statements allow you to start and stop event handling at any time during program execution.  
@@ -45,10 +36,11 @@ AddHandler event, AddressOf eventhandler
 >  For custom events, the `AddHandler` statement invokes the event's `AddHandler` accessor. For more information on custom events, see [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
 ## Example  
- [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
+ [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
-## See Also  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+
+- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

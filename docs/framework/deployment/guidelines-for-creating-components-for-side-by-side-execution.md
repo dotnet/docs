@@ -1,24 +1,12 @@
 ---
 title: "Guidelines for Creating Components for Side-by-Side Execution"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "side-by-side execution, multiple application versions"
   - "side-by-side execution, multiple component versions"
 ms.assetid: 5c540161-6e40-42e9-be92-6175aee2c46a
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Guidelines for Creating Components for Side-by-Side Execution
 Follow these general guidelines to create managed applications or components designed for side-by-side execution:  
@@ -68,6 +56,6 @@ Follow these general guidelines to create managed applications or components des
   
  The [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) allows you to replace an assembly when only the file version number is newer. The installer generally does not install over an assembly unless the assembly version number is greater.  
   
-## See Also  
- [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)  
- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+## See also
+- [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)
+- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

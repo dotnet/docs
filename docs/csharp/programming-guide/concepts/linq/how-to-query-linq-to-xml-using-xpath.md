@@ -1,19 +1,7 @@
 ---
 title: "How to: Query LINQ to XML Using XPath (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: ee5af263-4ab1-45e5-b792-33a3221b426d
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # How to: Query LINQ to XML Using XPath (C#)
 This topic introduces the extension methods that enable you to query an XML tree by using XPath. For detailed information about using these extension methods, see <xref:System.Xml.XPath.Extensions?displayProperty=nameWithType>.  
@@ -45,5 +33,6 @@ foreach (XElement el in list)
 <Child2>6</Child2>  
 ```  
   
-## See Also  
- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

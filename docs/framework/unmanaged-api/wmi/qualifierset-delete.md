@@ -2,10 +2,6 @@
 title: QualifierSet_Delete function (Unmanaged API Reference)
 description: The QualifierSet_Delete function deletes a qualifier by name.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_Delete"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # QualifierSet_Delete function
 Deletes a specified qualifier by name.  
@@ -45,7 +38,7 @@ HRESULT QualifierSet_Delete (
 [in] This parameter is unused.
 
 `ptr`   
-[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 `wszName`   
 [in] The name of the qualifier to delete.
@@ -64,7 +57,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 ## Remarks
 
-This function wraps a call to the [IWbemQualifierSet::Delete](https://msdn.microsoft.com/library/aa391864(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemQualifierSet::Delete](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-delete) method.
 
 Due to qualifier propagation rules, a particular qualifier may have been inherited from another object and merely overridden in the current class or instance. In this case, the `QualifierSet_Delete` method resets the qualifier to its original inherited value. The function in this case returns the status code `WBEM_S_RESET_TO_DEFAULT`.
 
@@ -75,5 +68,5 @@ Due to qualifier propagation rules, a particular qualifier may have been inherit
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

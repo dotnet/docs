@@ -1,21 +1,12 @@
 ---
 title: "Errors occurred while compiling the XML schemas in the project"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "bc36810"
   - "vbc36810"
 helpviewer_keywords: 
   - "BC36810"
 ms.assetid: 9323b5d2-ba14-4e49-91f1-9ad647162144
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Errors occurred while compiling the XML schemas in the project
 Errors occurred while compiling the XML schemas in the project. Because of this, XML IntelliSense is not available.  
@@ -34,6 +25,7 @@ Errors occurred while compiling the XML schemas in the project. Because of this,
   
 -   If no error is identified in your XSD schema, the XML compiler may not have enough information to provide a detailed error message. You may be able to get more detailed error information if you ensure that the XML namespaces for the .xsd files included in your project match the XML namespaces identified for the XML Schema set in Visual Studio.  
   
-## See Also  
- [Error List Window](/visualstudio/ide/reference/error-list-window)  
- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+## See also
+
+- [Error List Window](/visualstudio/ide/reference/error-list-window)
+- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

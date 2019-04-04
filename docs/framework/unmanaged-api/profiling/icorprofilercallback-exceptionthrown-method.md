@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ExceptionThrown Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ExceptionThrown"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: f1a23f3b-ac21-4905-8abf-8ea59f15af53
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionThrown Method
 Notifies the profiler that an exception has been thrown.  
@@ -43,7 +31,7 @@ HRESULT ExceptionThrown(
     [in] ObjectID thrownObjectId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `thrownObjectId`  
  [in] The ID of the object that caused the exception to be thrown.  
   
@@ -61,5 +49,5 @@ HRESULT ExceptionThrown(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

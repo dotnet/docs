@@ -1,23 +1,10 @@
 ---
-title: "WIF How-To&#39;s Index"
-ms.custom: ""
+title: "WIF How-To's Index"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4e8c6d04-fc2e-4b55-8717-c4cbaf681381
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# WIF How-To&#39;s Index
+# WIF How-To's Index
 -   [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  
   
 -   [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)  

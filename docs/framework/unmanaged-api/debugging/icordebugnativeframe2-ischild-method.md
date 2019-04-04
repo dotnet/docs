@@ -1,14 +1,6 @@
 ---
 title: "ICorDebugNativeFrame2::IsChild Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugNativeFrame2.IsChild Method"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 9e2aae09-49cb-4fbd-81e5-e29cd864a88b
 topic_type: 
   - "apiref"
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugNativeFrame2::IsChild Method
 Determines whether the current frame is a child frame.  
@@ -39,7 +27,7 @@ Determines whether the current frame is a child frame.
 HRESULT IsChild([out] BOOL * pIsChild);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIsChild`  
  [out] A Boolean value that specifies whether the current frame is a child frame.  
   
@@ -66,7 +54,7 @@ HRESULT IsChild([out] BOOL * pIsChild);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -1,11 +1,6 @@
 ---
 title: "-linkresource (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/linkresource compiler option [Visual Basic]"
   - "-linkresource compiler option [Visual Basic]"
@@ -14,8 +9,6 @@ helpviewer_keywords:
   - "linkres compiler option [Visual Basic]"
   - "-linkres compiler option [Visual Basic]"
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -linkresource (Visual Basic)
 Creates a link to a managed resource.  
@@ -40,7 +33,7 @@ Creates a link to a managed resource.
   
  The `-linkresource` option requires one of the `-target` options other than `-target:module`.  
   
- If `filename` is a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file created, for example, by the [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. (For more information, see <xref:System.Resources.ResourceManager>.) To access all other resources at run time, use the methods that begin with `GetManifestResource` in the <xref:System.Reflection.Assembly> class.  
+ If `filename` is a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file created, for example, by the [Resgen.exe (Resource File Generator)](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. (For more information, see <xref:System.Resources.ResourceManager>.) To access all other resources at run time, use the methods that begin with `GetManifestResource` in the <xref:System.Reflection.Assembly> class.  
   
  The file name can be any file format. For example, you may want to make a native DLL part of the assembly, so that it can be installed into the global assembly cache and accessed from managed code in the assembly.  
   
@@ -56,8 +49,9 @@ Creates a link to a managed resource.
 vbc -linkresource:rf.resource in.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

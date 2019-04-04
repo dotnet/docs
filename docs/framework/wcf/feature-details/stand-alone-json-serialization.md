@@ -1,24 +1,10 @@
 ---
 title: "Stand-Alone JSON Serialization"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
-caps.latest.revision: 32
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Stand-Alone JSON Serialization
-JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in Windows Communication Foundation (WCF).  
   
  This format can also be used when creating AJAX services without integrating with ASP.NET - in this case, XML is the default but JSON can be chosen.  
   
@@ -48,7 +34,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
 |`Null` value for any type|Null|Nullable types are also supported and map to JSON in the same way as non-nullable types.|  
   
 ### Enumerations and JSON  
- Enumeration member values are treated as numbers in JSON, which is different from how they are treated in data contracts, where they are included as member names. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the data contract treatment, see [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
+ Enumeration member values are treated as numbers in JSON, which is different from how they are treated in data contracts, where they are included as member names. For more information about the data contract treatment, see [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
   
 -   For example, if you have `public enum Color {red, green, blue, yellow, pink}`, serializing `yellow` produces the number 3 and not the string "yellow".  
   
@@ -82,7 +68,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
   
 -   Any customization that uses the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is ignored in the JSON representation.  
   
--   Dictionaries are not a way to work directly with JSON. Dictionary\<string,object> may not be supported in the same way in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] as expected from working with other JSON technologies. For example, if "abc" is mapped to "xyz" and "def" is mapped to 42 in a dictionary, the JSON representation is not {"abc":"xyz","def":42} but is [{"Key":"abc","Value":"xyz"},{"Key":"def","Value":42}] instead.  
+-   Dictionaries are not a way to work directly with JSON. Dictionary\<string,object> may not be supported in the same way in WCF as expected from working with other JSON technologies. For example, if "abc" is mapped to "xyz" and "def" is mapped to 42 in a dictionary, the JSON representation is not {"abc":"xyz","def":42} but is [{"Key":"abc","Value":"xyz"},{"Key":"def","Value":42}] instead.  
   
 -   If you would like to work with JSON directly (accessing keys and values dynamically, without pre-defining a rigid contract), you have several options:  
   
@@ -103,7 +89,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
  The JSON type does not have to match the preceding table on deserialization. For example, an `Int` normally maps to a JSON number, but it can also be successfully deserialized from a JSON string as long as that string contains a valid number. That is, both {"q":42} and {"q":"42"} are valid if there is an `Int` data member called "q".  
   
 ### Polymorphism  
- Polymorphic serialization consists of the ability to serialize a derived type where its base type is expected. This is supported for JSON serialization by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] comparable to the way XML serialization is supported. For example, you can serialize `MyDerivedType` where `MyBaseType` is expected, or serialize `Int` where `Object` is expected.  
+ Polymorphic serialization consists of the ability to serialize a derived type where its base type is expected. This is supported for JSON serialization by WCF comparable to the way XML serialization is supported. For example, you can serialize `MyDerivedType` where `MyBaseType` is expected, or serialize `Int` where `Object` is expected.  
   
  Type information may be lost when deserializing a derived type if the base type is expected, unless you are deserializing a complex type. For example, if <xref:System.Uri> is serialized where <xref:System.Object> is expected, it results in a JSON string. If this string is then deserialized back into <xref:System.Object>, a .NET <xref:System.String> is returned. The deserializer does not know that the string was initially of type <xref:System.Uri>. Generally, when expecting <xref:System.Object>, all JSON strings are deserialized as .NET strings, and all JSON arrays used to serialize .NET collections, dictionaries, and arrays are deserialized as .NET <xref:System.Array> of type <xref:System.Object>, regardless of what the actual original type had been. A JSON boolean maps to a .NET <xref:System.Boolean>. However when expecting an <xref:System.Object>, JSON numbers are deserialized as either .NET <xref:System.Int32>, <xref:System.Decimal> or <xref:System.Double>, where the most appropriate type is automatically picked.  
   
@@ -114,7 +100,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
  For details of how polymorphic serialization works and a discussion of some of the limitations that must be respected when using it, see the Advanced Information section later in this topic.  
   
 ### Versioning  
- The data contract versioning features, including the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, are fully supported in JSON. Furthermore, in most cases it is possible to deserialize a type in one format (for example, XML) and then serialize it into another format (for example, JSON) and still preserve the data in <xref:System.Runtime.Serialization.IExtensibleDataObject>. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). Remember that JSON is unordered so any order information is lost. Furthermore, JSON does not support multiple key/value pairs with the same key name. Finally, all operations on <xref:System.Runtime.Serialization.IExtensibleDataObject> are inherently polymorphic - that is their derived type are assigned to <xref:System.Object>, the base type for all types.  
+ The data contract versioning features, including the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, are fully supported in JSON. Furthermore, in most cases it is possible to deserialize a type in one format (for example, XML) and then serialize it into another format (for example, JSON) and still preserve the data in <xref:System.Runtime.Serialization.IExtensibleDataObject>. For more information, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). Remember that JSON is unordered so any order information is lost. Furthermore, JSON does not support multiple key/value pairs with the same key name. Finally, all operations on <xref:System.Runtime.Serialization.IExtensibleDataObject> are inherently polymorphic - that is their derived type are assigned to <xref:System.Object>, the base type for all types.  
   
 ## JSON in URLs  
  When using ASP.NET AJAX endpoints with the HTTP GET verb (using the <xref:System.ServiceModel.Web.WebGetAttribute> attribute), incoming parameters appear in the request URL instead of the message body. JSON is supported even in the request URL, so if you have an operation that takes an `Int` called "number" and a `Person` complex type called "p", the URL may resemble the following URL.  
@@ -146,7 +132,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  The ASP.NET AJAX client JavaScript code automatically converts such strings into JavaScript `DateTime` instances. If there are other strings that have a similar form that are not of type <xref:System.DateTime> in .NET, they are converted as well.  
   
- The conversion only takes place if the "/" characters are escaped (that is, the JSON looks like "\\/Date(700000+0500)\\/"), and for this reason [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]'s JSON encoder (enabled by the <xref:System.ServiceModel.WebHttpBinding>) always escapes the "/" character.  
+ The conversion only takes place if the "/" characters are escaped (that is, the JSON looks like "\\/Date(700000+0500)\\/"), and for this reason WCF's JSON encoder (enabled by the <xref:System.ServiceModel.WebHttpBinding>) always escapes the "/" character.  
   
 ### XML in JSON Strings  
   
@@ -178,7 +164,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Preserving Type Information  
  As stated earlier, polymorphism is supported in JSON with some limitations. JavaScript is a weakly-typed language and type identity is normally not an issue. However, when using JSON to communicate between a strongly-typed system (.NET) and a weakly-typed system (JavaScript), it is useful to preserve type identity. For example, types with data contract names "Square" and "Circle" derive from a type with a data contract name of "Shape". If "Circle" is sent from .NET to JavaScript and is later returned to a .NET method that expects "Shape", it is useful for the .NET side to know that the object in question was originally a "Circle" - otherwise any information specific to the derived type (for example, "radius" data member on "Circle") may be lost.  
   
- To preserve type identity, when serializing complex types to JSON a "type hint" can be added, and the deserializer recognizes the hint and acts appropriately. The "type hint" is a JSON key/value pair with the key name of "__type" (two underscores followed by the word "type"). The value is a JSON string of the form "DataContractName:DataContractNamespace" (anything up to the first colon is the name). Using the earlier example, "Circle" can be serialized as follows.  
+ To preserve type identity, when serializing complex types to JSON a "type hint" can be added, and the deserializer recognizes the hint and acts appropriately. The "type hint" is a JSON key/value pair with the key name of "\_\_type" (two underscores followed by the word "type"). The value is a JSON string of the form "DataContractName:DataContractNamespace" (anything up to the first colon is the name). Using the earlier example, "Circle" can be serialized as follows.  
   
 ```json  
 {"__type":"Circle:http://example.com/myNamespace","x":50,"y":70,"radius":10}  
@@ -186,10 +172,10 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  The type hint is very similar to the `xsi:type` attribute defined by the XML Schema Instance standard and used when serializing/deserializing XML.  
   
- Data members called "__type" are forbidden due to potential conflict with the type hint.  
+ Data members called "\_\_type" are forbidden due to potential conflict with the type hint.  
   
 #### Reducing the Size of Type Hints  
- To reduce the size of JSON messages, the default data contract namespace prefix (http://schemas.datacontract.org/2004/07/) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is http://schemas.datacontract.org/2004/07/MyApp. Shapes and the JSON representation is as follows.  
+ To reduce the size of JSON messages, the default data contract namespace prefix (`http://schemas.datacontract.org/2004/07/`) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is `http://schemas.datacontract.org/2004/07/MyApp`. Shapes and the JSON representation is as follows.  
   
 ```json  
 {"__type":"Circle:#MyApp.Shapes","x":50,"y":70,"radius":10}  
@@ -204,7 +190,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 {"x":50,"y":70,"radius":10,"__type":"Circle:#MyApp.Shapes"}  
 ```  
   
- Both the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> used by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] and ASP.NET AJAX client pages always emit the type hint first.  
+ Both the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> used by WCF and ASP.NET AJAX client pages always emit the type hint first.  
   
 #### Type Hints Apply Only to Complex Types  
  There is no way to emit a type hint for non-complex types. For example, if an operation has an <xref:System.Object> return type but returns a Circle, the JSON representation can be as shown earlier and the type information is preserved. However, if Uri is returned, the JSON representation is a string and the fact that the string used to represent a Uri is lost. This applies not only to primitive types but also to collections and arrays.  
@@ -266,7 +252,8 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
  When serializing dictionary types, the JSON object that contains the "Key" and "Value" members is unaffected by the `alwaysEmitTypeInformation` setting and only contains a type hint when the preceding collection rules require it.  
   
 ### Valid JSON Key Names  
- The serializer XML-encodes key names that are not valid XML names. For example, a data member with the name of "123" would have an encoded name such as "_x0031\__x0032\__x0033\_" because "123" is an invalid XML element name (starts with a digit). A similar situation may arise with some international character sets not valid in XML names. For an explanation of this effect of XML on JSON processing, see [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
+ The serializer XML-encodes key names that are not valid XML names. For example, a data member with the name of "123" would have an encoded name such as "\_x0031\_\_x0032\_\_x0033\_" because "123" is an invalid XML element name (starts with a digit). A similar situation may arise with some international character sets not valid in XML names. For an explanation of this effect of XML on JSON processing, see [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
   
-## See Also  
- [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)
+## See also
+
+- [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)

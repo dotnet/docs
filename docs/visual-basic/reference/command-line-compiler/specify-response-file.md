@@ -1,16 +1,9 @@
 ---
 title: "@ (Specify Response File) (Visual Basic)"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "@ (Specify Response File) compiler option [Visual Basic]"
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca
-author: rpetrusha
-ms.author: ronpet
 ---
 # @ (Specify Response File) (Visual Basic)
 Specifies a file that contains compiler options and source-code files to compile.  
@@ -61,7 +54,8 @@ source2.vb
 vbc @file1.rsp  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

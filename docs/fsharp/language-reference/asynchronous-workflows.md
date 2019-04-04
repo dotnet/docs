@@ -1,21 +1,12 @@
 ---
-title: Asynchronous Workflows (F#)
+title: Asynchronous Workflows
 description: Learn about support in the F# programming language for performing computations asynchronously, which execute without blocking execution of other work.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: ee2bb9bf-e04a-4fbe-bf58-46d07229e981 
 ---
-
 # Asynchronous Workflows
 
 > [!NOTE]
-The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 This topic describes support in F# for performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write applications that have UIs that remain responsive to users as the application performs other work.
 
@@ -52,7 +43,7 @@ A method that performs a single asynchronous task and returns the result is call
 
 Several primitives for asynchronous I/O operations are included in the [`Microsoft.FSharp.Control.CommonExtensions`](https://msdn.microsoft.com/library/2edb67cb-6814-4a30-849f-b6dbdd042396) module. These extension methods of the `System.IO.Stream` class are [`Stream.AsyncRead`](https://msdn.microsoft.com/library/85698aaa-bdda-47e6-abed-3730f59fda5e) and [`Stream.AsyncWrite`](https://msdn.microsoft.com/library/1b0a2751-e42a-47e1-bd27-020224adc618).
 
-Additional asynchronous primitives are available in the [F# PowerTools](https://fsprojects.github.io/VisualFSharpPowerTools/). You can also write your own asynchronous primitives by defining a function whose complete body is enclosed in an async block.
+You can also write your own asynchronous primitives by defining a function whose complete body is enclosed in an async block.
 
 To use asynchronous methods in the .NET Framework that are designed for other asynchronous models with the F# asynchronous programming model, you create a function that returns an F# `Async` object. The F# library has functions that make this easy to do.
 
@@ -68,10 +59,8 @@ The `runAll` function launches three asynchronous workflows in parallel and wait
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet8003.fs)]
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
-
-[Computation Expressions](computation-expressions.md)
-
-[Control.Async Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.async-class-%5bfsharp%5d)
+- [F# Language Reference](index.md)
+- [Computation Expressions](computation-expressions.md)
+- [Control.Async Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.async-class-%5bfsharp%5d)

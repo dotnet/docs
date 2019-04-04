@@ -1,14 +1,6 @@
 ---
-title: "ICorDebugType Interface1"
-ms.custom: ""
+title: "ICorDebugType Interface"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorDebugType"
 api_location: 
@@ -22,14 +14,10 @@ helpviewer_keywords:
 ms.assetid: 94e02e31-67ea-4b00-8148-a46740a4571d
 topic_type: 
   - "apiref"
-caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# ICorDebugType Interface1
+# ICorDebugType Interface
 Represents a type, either basic or complex (that is, user-defined). If the type is generic, `ICorDebugType` represents the instantiated generic type.  
   
 ## Methods  
@@ -61,5 +49,5 @@ Represents a type, either basic or complex (that is, user-defined). If the type 
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

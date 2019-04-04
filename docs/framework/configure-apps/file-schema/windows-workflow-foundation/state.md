@@ -1,21 +1,10 @@
 ---
-title: "&lt;state&gt;"
-ms.custom: ""
+title: "<state>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 619414f2-61c2-4427-9977-d05009e343db
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;state&gt;
+# \<state>
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
@@ -99,9 +88,9 @@ Represents a collection of subscribed states from the tracked workflow instance 
 </workflowInstanceQueries>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>       
- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>       
- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>      
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

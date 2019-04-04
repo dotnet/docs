@@ -1,26 +1,13 @@
 ---
 title: Application Compatibility in the .NET Framework
-ms.custom: ""
 ms.date: "05/19/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-  - "app-compat"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "application compatibility"
   - ".NET Framework application compatibility"
   - ".NET Framework changes"
-caps.latest.revision: 19
 ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 
 # Application Compatibility in the .NET Framework
@@ -46,7 +33,12 @@ When running on a newer version than what was targeted, the .NET Framework will
 use quirked behavior to mimic the older targeted version. In other words, the
 app will run on the newer version of the Framework, but act as if it's running
 on the older version. Many of the compatibility issues between versions of the .NET
-Framework are mitigated through this quirking model.
+Framework are mitigated through this quirking model. The version of the .NET Framework 
+that an application targets is determined by the target version of the entry assembly 
+for the application domain that the code is running in. All additional assemblies 
+loaded in that application domain target that .NET Framework version. For example, 
+in the case of an executable, the framework the executable targets is the compatibility
+mode all assemblies in that AppDomain will run under.
 
 ## Runtime changes
 
@@ -108,8 +100,8 @@ To begin, select the type of compatibility change below:
 * [Runtime Changes](./runtime/index.md)
 
 
-## See Also
+## See also
 
-* [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
-* [What's New](../../../docs/framework/whats-new/index.md)
-* [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+- [What's New](../../../docs/framework/whats-new/index.md)
+- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)

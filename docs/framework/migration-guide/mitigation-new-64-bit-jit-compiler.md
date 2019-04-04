@@ -1,26 +1,13 @@
 ---
 title: "Mitigation: New 64-bit JIT Compiler"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "JIT compiler, 64-bit"
   - "JIT compilation, 64-bit"
   - "RyuJIT compiler"
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Mitigation: New 64-bit JIT Compiler
 Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the  32-bit JIT compiler.  
@@ -76,6 +63,6 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
  You can also let us know about the problem by reporting a bug on [Microsoft Connect](https://connect.microsoft.com/VisualStudio).  
   
-## See Also  
- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)  
- [\<useLegacyJit> Element](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)
+## See also
+- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
+- [\<useLegacyJit> Element](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)

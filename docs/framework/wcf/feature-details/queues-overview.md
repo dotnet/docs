@@ -1,26 +1,12 @@
 ---
 title: "Queues Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "queues [WCF], MSMQ integration"
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Queues Overview
-This section introduces the general and core concepts behind queued communication. Subsequent sections go into details about how the queuing concepts described here are manifested in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
+This section introduces the general and core concepts behind queued communication. Subsequent sections go into details about how the queuing concepts described here are manifested in Windows Communication Foundation (WCF).  
   
 ## Basic Queuing Concepts  
  When designing a distributed application, choosing the right transport for communication between services and clients is important. Several factors affect the kind of transport to use. One important factor—isolation between the service, the client, and the transport—determines use of a queued transport or a direct transport, such as TCP or HTTP. Due to the nature of direct transports such as TCP and HTTP, communication stops altogether if the service or the client stop functioning or if the network fails. The service, the client, and the network must be running at the same time for the application to work. Queued transports provide isolation, which means that if the service or client fail or if communication links between them fail, the client and service can continue to function.  
@@ -81,14 +67,12 @@ This section introduces the general and core concepts behind queued communicatio
 ## Poison Message Queue Programming  
  After a message makes it to the target queue, the service may repeatedly fail to process the message. For example, an application reading a message from the queue under a transaction and updating a database may find the database temporarily disconnected. In this case, the transaction is rolled back, a new transaction is created, and the message is reread from the queue. A second attempt may succeed or fail. In some cases, depending on the cause of the error, the message may repeatedly fail delivery to the application. In this case, the message is deemed as "poison." Such messages are moved to a poison queue that can be read by a poison-handling application.  
   
-## See Also  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
- [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)  
- [Volatile Queued Communication](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)  
- [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  
- [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
- [Message Queuing Integration Binding Samples](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a)  
- [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)  
- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
+## See also
+- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
+- [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)
+- [Volatile Queued Communication](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)
+- [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)
+- [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)
+- [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)
+- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)

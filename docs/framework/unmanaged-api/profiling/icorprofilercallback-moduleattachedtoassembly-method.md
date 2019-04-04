@@ -1,14 +1,6 @@
 ---
 title: "ICorProfilerCallback::ModuleAttachedToAssembly Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorProfilerCallback.ModuleAttachedToAssembly"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b595798a-5d40-4cac-ab4f-911c61d2c5d2
 topic_type: 
   - "apiref"
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorProfilerCallback::ModuleAttachedToAssembly Method
 Notifies the profiler that a module is being attached to its parent assembly.  
@@ -41,7 +29,7 @@ HRESULT ModuleAttachedToAssembly(
     [in] AssemblyID AssemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module that is being attached.  
   
@@ -60,5 +48,5 @@ HRESULT ModuleAttachedToAssembly(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

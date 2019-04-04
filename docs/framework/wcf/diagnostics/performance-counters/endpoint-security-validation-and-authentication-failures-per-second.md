@@ -1,21 +1,7 @@
 ---
 title: "Endpoint: Security Validation and Authentication Failures Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 89a70b90-d7e4-4b03-9b84-4dc88ce3d605
-caps.latest.revision: 8
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # Endpoint: Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second  
@@ -37,6 +23,6 @@ Counter name: Security Validation and Authentication Failures Per Second
   
 -   Errors have occurred during TLSNEGO/SPNEGO handshake.  
   
- This counter is of performance counter type [PERF_COUNTER_COUNTER](http://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula:  
+ This counter is of performance counter type [PERF_COUNTER_COUNTER](https://go.microsoft.com/fwlink/?LinkID=94649), whose value is calculated using the following formula:  
   
  (N1-N0)/((D1-D0)/F)

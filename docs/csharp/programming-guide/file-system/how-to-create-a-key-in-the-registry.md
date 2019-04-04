@@ -1,25 +1,18 @@
 ---
 title: "How to: Create a Key In the Registry (Visual C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "registry, adding keys and values [C#]"
   - "registry keys, creating [C#]"
   - "keys, creating in registry"
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Create a Key In the Registry (Visual C#)
 This example adds the value pair, "Name" and "Isabella", to the current user's registry, under the key "Names".  
   
 ## Example  
   
-```  
+```csharp  
 Microsoft.Win32.RegistryKey key;  
 key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey("Names");  
 key.SetValue("Name", "Isabella");  
@@ -56,8 +49,9 @@ key.Close();
   
  It is not secure to store secrets, such as passwords, in the registry as plain text, even if the registry key is protected by access control lists (ACL).  
   
-## See Also  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)  
- [Read, write and delete from the registry with C#](http://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)
+## See also
+
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [Read, write and delete from the registry with C#](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

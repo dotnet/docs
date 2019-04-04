@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugExceptionDebugEvent::GetNativeIP Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: 12e6a262-d9ac-49b8-9b80-1e653a2a3819
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugExceptionDebugEvent::GetNativeIP Method
 Gets the native instruction pointer for this exception debug event.  
@@ -28,7 +16,7 @@ HRESULT GetNativeIP(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIP`  
  [out] A pointer to the instruction pointer for this exception debug event. See the Remarks section for more information.  
   
@@ -56,6 +44,6 @@ HRESULT GetNativeIP(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

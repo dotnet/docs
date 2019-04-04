@@ -1,24 +1,10 @@
 ---
 title: "Application Settings for Custom Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], application settings"
   - "application settings [Windows Forms], custom controls"
 ms.assetid: f44afb74-76cc-44f2-890a-44b7cdc211a1
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Application Settings for Custom Controls
 You must complete certain tasks to give your custom controls the ability to persist application settings when the controls are hosted in third-party applications.  
@@ -34,7 +20,7 @@ You must complete certain tasks to give your custom controls the ability to pers
   
 2.  Create this custom settings class after the control has been created and placed on a form, such as in the form's <xref:System.Windows.Forms.Form.Load> event handler.  
   
- For instructions on creating a custom settings class, see [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md).  
+ For instructions on creating a custom settings class, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
 ## Settings Keys and Shared Settings  
  Some controls can be used multiple times within the same form. Most of the time, you will want these controls to persist their own individual settings. With the <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A> property on <xref:System.Configuration.IPersistComponentSettings>, you can supply a unique string that acts to disambiguate multiple versions of a control on a form.  
@@ -53,7 +39,7 @@ You must complete certain tasks to give your custom controls the ability to pers
   
  Any instances of a control that do not supply a value for <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> will share the same settings.  
   
-## See Also  
- <xref:System.Configuration.ApplicationSettingsBase>  
- <xref:System.Configuration.IPersistComponentSettings>  
- [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)
+## See also
+- <xref:System.Configuration.ApplicationSettingsBase>
+- <xref:System.Configuration.IPersistComponentSettings>
+- [Application Settings Architecture](application-settings-architecture.md)

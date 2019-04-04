@@ -1,24 +1,10 @@
 ---
 title: "How to: Set Up Automatic Menu Merging for MDI Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MenuStrip [Windows Forms], merging"
   - "Merging [Windows Forms], automatic menu"
 ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Up Automatic Menu Merging for MDI Applications
 The following procedure gives the basic steps for setting up automatic merging in a multiple-document interface (MDI) application with <xref:System.Windows.Forms.MenuStrip>.  
@@ -39,7 +25,7 @@ The following procedure gives the basic steps for setting up automatic merging i
   
 7.  Use the <xref:System.Windows.Forms.ToolStripItem.MergeAction%2A> property on the menu items in the child form's <xref:System.Windows.Forms.MenuStrip> to control how they merge into the parent form.  
   
-## See Also  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStripMenuItem>  
- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStripMenuItem>
+- [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

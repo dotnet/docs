@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataImport::GetPinvokeMap Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataImport.GetPinvokeMap"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: b8685c1e-b80c-4198-8eb3-748d6f48a99e
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataImport::GetPinvokeMap Method
 Gets a ModuleRef token to represent the target assembly of a PInvoke call.  
@@ -46,7 +34,7 @@ HRESULT GetPinvokeMap (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A FieldDef or MethodDef token to get the PInvoke mapping metadata for.  
   
@@ -74,6 +62,6 @@ HRESULT GetPinvokeMap (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

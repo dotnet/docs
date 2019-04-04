@@ -1,23 +1,9 @@
 ---
-title: "&lt;message&gt; element of &lt;netTcpBinding&gt;"
-ms.custom: ""
+title: "<message> element of <netTcpBinding>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
-caps.latest.revision: 20
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;message&gt; element of &lt;netTcpBinding&gt;
+# \<message> element of \<netTcpBinding>
 Defines the type of message-level security requirements for an endpoint configured with the [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).  
   
  \<system.ServiceModel>  
@@ -30,9 +16,8 @@ Defines the type of message-level security requirements for an endpoint configur
 ## Syntax  
   
 ```xml  
-<message   
-      algorithmSuite=System.Servicemodel.Security.SecurityAlgorithmsuite  
-    clientCredentialType="None/Windows/UserName/Certificate/IssuedToken"/>  
+<message algorithmSuite="System.Servicemodel.Security.SecurityAlgorithmsuite"
+         clientCredentialType="None/Windows/UserName/Certificate/IssuedToken" />
 ```  
   
 ## Attributes and Elements  
@@ -72,7 +57,7 @@ Defines the type of message-level security requirements for an endpoint configur
 |-----------|-----------------|  
 |None|This allows the service to interact with anonymous clients. On the service, this indicates that the service does not require any client credential. On the client, this indicates that the client does not provide any client credential.|  
 |Windows|Allows the SOAP exchanges to be under the authenticated context of a Windows credential.|  
-|UserName|Allows the service to require that the client be authenticated using a UserName credential. [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] does not support sending a password digest or deriving keys using password and using such keys for message security. As such, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] enforces that the transport is secured when using UserName credentials. This credential mode results in either an interoperable exchange or a non-interoperable negotiation based on the `negotiateServiceCredential` attribute.|  
+|UserName|Allows the service to require that the client be authenticated using a UserName credential. WCF does not support sending a password digest or deriving keys using password and using such keys for message security. As such, WCF enforces that the transport is secured when using UserName credentials. This credential mode results in either an interoperable exchange or a non-interoperable negotiation based on the `negotiateServiceCredential` attribute.|  
 |Certificate|Allows the service to require that the client be authenticated using a certificate. If message security mode is used and the `negotiateServiceCredential` attribute is set to `false`, the client must be provisioned with the service certificate.|  
 |IssuedToken|Specifies a custom token, usually issued by a Security Token Service (STS).|  
   
@@ -88,13 +73,13 @@ Defines the type of message-level security requirements for an endpoint configur
 ## Remarks  
  Message uses message-level security for the integrity and confidentiality of the SOAP message, and for mutual authentication of the communication peers. If this security mode is selected on a binding, the channel stack is configured with message security binding elements and the SOAP messages are secured in compliance with WS-Security* standards.  
   
-## See Also  
- <xref:System.ServiceModel.MessageSecurityOverTcp>  
- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.NetTcpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.MessageSecurityOverTcp>
+- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.NetTcpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

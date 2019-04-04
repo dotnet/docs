@@ -1,21 +1,7 @@
 ---
 title: "SQL-CLR Custom Type Mappings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d916c7fb-4b56-4214-acbe-5e23365047b2
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SQL-CLR Custom Type Mappings
 Type mapping between SQL Server and the common language runtime (CLR) is automatically specified when you use the SQLMetal command-line tool, Object Relational Designer (O/R Designer).  
@@ -39,6 +25,6 @@ Type mapping between SQL Server and the common language runtime (CLR) is automat
 ## Incorporating Database Changes  
  When your database changes, you will need to update your DBML file to reflect those changes. One way to do this is to automatically create a new DBML file and then re-do your type mapping customizations. Alternatively, you could compare the differences between your new DBML file and your customized DBML file and update your custom DBML file manually to reflect the database change.  
   
-## See Also  
- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)  
- [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+## See also
+- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)
+- [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)

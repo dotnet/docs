@@ -1,24 +1,10 @@
 ---
 title: "Adding Data to a DataTable"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: d6aa8474-7bde-48f7-949d-20dc38a1625b
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Adding Data to a DataTable
 After you create a <xref:System.Data.DataTable> and define its structure using columns and constraints, you can add new rows of data to the table. To add a new row, declare a new variable as type <xref:System.Data.DataRow>. A new **DataRow** object is returned when you call the <xref:System.Data.DataTable.NewRow%2A> method. The **DataTable** then creates the **DataRow** object based on the structure of the table, as defined by the <xref:System.Data.DataColumnCollection>.  
@@ -93,10 +79,10 @@ for (int i = 0; i <= 9; i++)
 }  
 ```  
   
-## See Also  
- <xref:System.Data.DataColumnCollection>  
- <xref:System.Data.DataRow>  
- <xref:System.Data.DataRowCollection>  
- <xref:System.Data.DataTable>  
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- <xref:System.Data.DataColumnCollection>
+- <xref:System.Data.DataRow>
+- <xref:System.Data.DataRowCollection>
+- <xref:System.Data.DataTable>
+- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

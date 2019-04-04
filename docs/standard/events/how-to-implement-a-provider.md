@@ -1,13 +1,7 @@
 ---
 title: "How to: Implement a Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,13 +10,8 @@ helpviewer_keywords:
   - "providers [.NET Framework], in observer design pattern"
   - "observables [.NET Framework], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # How to: Implement a Provider
 The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This topic discusses how to create a provider. A related topic, [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md), discusses how to create an observer.  
@@ -65,8 +54,9 @@ The observer design pattern requires a division between a provider, which monito
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#7)]  
   
-## See Also  
- <xref:System.IObservable%601>  
- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)  
- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)  
- [Observer Design Pattern Best Practices](../../../docs/standard/events/observer-design-pattern-best-practices.md)
+## See also
+
+- <xref:System.IObservable%601>
+- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)
+- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)
+- [Observer Design Pattern Best Practices](../../../docs/standard/events/observer-design-pattern-best-practices.md)

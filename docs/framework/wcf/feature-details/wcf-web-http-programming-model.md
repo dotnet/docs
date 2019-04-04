@@ -1,35 +1,21 @@
 ---
 title: "WCF Web HTTP Programming Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "web services programming model [WCF]"
   - "POX"
   - "REST"
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
-caps.latest.revision: 17
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # WCF Web HTTP Programming Model
-The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model allows developers to expose [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
+The Windows Communication Foundation (WCF) Web HTTP Programming Model allows developers to expose WCF service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
   
 ## In This Section  
  [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)  
- Provides an overview of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model.  
+ Provides an overview of the Windows Communication Foundation (WCF) Web HTTP Programming Model.  
   
  [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)  
- Discusses the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model and how it works.  
+ Discusses the Windows Communication Foundation (WCF) Web HTTP Programming Model and how it works.  
   
  [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)  
  Describes how to write a basic service that exposes a non-SOAP endpoint.  

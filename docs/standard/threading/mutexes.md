@@ -1,26 +1,15 @@
 ---
 title: "Mutexes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "wait handles"
   - "threading [.NET Framework], Mutex class"
   - "Mutex class, about Mutex class"
   - "threading [.NET Framework], cross-process synchronization"
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Mutexes
 You can use a <xref:System.Threading.Mutex> object to provide exclusive access to a resource. The <xref:System.Threading.Mutex> class uses more system resources than the <xref:System.Threading.Monitor> class, but it can be marshaled across application domain boundaries, it can be used with multiple waits, and it can be used to synchronize threads in different processes. For a comparison of managed synchronization mechanisms, see [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
@@ -54,12 +43,13 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
   
  For information on access control security for mutexes, see the <xref:System.Security.AccessControl.MutexSecurity> and <xref:System.Security.AccessControl.MutexAccessRule> classes, the <xref:System.Security.AccessControl.MutexRights> enumeration, the <xref:System.Threading.Mutex.GetAccessControl%2A>, <xref:System.Threading.Mutex.SetAccessControl%2A>, and <xref:System.Threading.Mutex.OpenExisting%2A> methods of the <xref:System.Threading.Mutex> class, and the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.MutexSecurity%29> constructor.  
   
-## See Also  
- <xref:System.Threading.Mutex>  
- <xref:System.Threading.Mutex.%23ctor%2A>  
- <xref:System.Security.AccessControl.MutexSecurity>  
- <xref:System.Security.AccessControl.MutexAccessRule>  
- [Threading](../../../docs/standard/threading/index.md)  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
- [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
+## See also
+
+- <xref:System.Threading.Mutex?displayProperty=nameWithType>
+- <xref:System.Threading.Mutex.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>
+- <xref:System.Security.AccessControl.MutexAccessRule?displayProperty=nameWithType>
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- [Threading objects and features](threading-objects-and-features.md)
+- [Threads and threading](threads-and-threading.md)
+- [Threading](index.md)

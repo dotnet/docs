@@ -1,21 +1,7 @@
 ---
 title: "Literals (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 092ef693-6e5f-41b4-b868-5b9e82928abf
-caps.latest.revision: 4
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Literals (Entity SQL)
 This topic describes [!INCLUDE[esql](../../../../../../includes/esql-md.md)] support for literals.  
@@ -109,5 +95,5 @@ Guid'1afc7f5c-ffa0-4741-81cf-f12eAAb822bf'
 GUID  '1AFC7F5C-FFA0-4741-81CF-F12EAAB822BF'  
 ```  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## See also
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

@@ -1,21 +1,9 @@
 ---
 title: "ICorDebugProcess6::EnableVirtualModuleSplitting Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 ms.assetid: e7733bd3-68da-47f9-82ef-477db5f2e32d
-caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ICorDebugProcess6::EnableVirtualModuleSplitting Method
 Enables or disables virtual module splitting.  
@@ -28,7 +16,7 @@ HRESULT EnableVirtualModuleSplitting(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `enableSplitting`  
  `true` to enable virtual module splitting; `false` to disable it.  
   
@@ -118,6 +106,6 @@ HRESULT EnableVirtualModuleSplitting(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

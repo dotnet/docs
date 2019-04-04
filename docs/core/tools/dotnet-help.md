@@ -1,14 +1,7 @@
 ---
-title: dotnet help command - .NET Core CLI
+title: dotnet help command
 description: The dotnet help command shows more detailed documentation online for the specified command.
-author: mairaw
-ms.author: mairaw
-ms.date: 08/17/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.workload: 
-  - dotnetcore
+ms.date: 12/04/2018
 ---
 # dotnet help reference
 
@@ -28,18 +21,20 @@ The `dotnet help` command opens up the reference page for more detailed informat
 
 ## Arguments
 
-`COMMAND_NAME`
+* **`COMMAND_NAME`**
 
-Name of the .NET Core CLI command. For a list of the valid CLI commands, see [CLI commands](index.md#cli-commands).
+  Name of the .NET Core CLI command. For a list of the valid CLI commands, see [CLI commands](index.md#cli-commands).
 
 ## Options
 
-`-h|--help`
+* **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
 ## Examples
 
-Opens the documentation page for the [dotnet new](dotnet-new.md) command:
+* Opens the documentation page for the [dotnet new](dotnet-new.md) command:
 
-`dotnet help new`
+  ```console
+  dotnet help new
+  ```

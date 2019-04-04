@@ -1,19 +1,7 @@
 ---
 title: "Functional Programming vs. Imperative Programming (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
-ms.topic: "article"
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-
 ---
 # Functional Programming vs. Imperative Programming (C#)
 This topic compares and contrasts functional programming with more traditional imperative (procedural) programming.  
@@ -56,7 +44,8 @@ This topic compares and contrasts functional programming with more traditional i
   
  Fortunately, C# doesn't require the full leap to functional programming, because it supports both imperative and functional programming approaches. A developer can choose which approach is most appropriate for a particular scenario. In fact, programs often combine both approaches.  
   
-## See Also  
- [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
- [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)  
- [Refactoring Into Pure Functions (C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+## See also
+
+- [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+- [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)
+- [Refactoring Into Pure Functions (C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

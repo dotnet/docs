@@ -1,14 +1,6 @@
 ---
 title: "reentrancy MDA"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "unmanaged code, debugging"
   - "transitioning threads unmanaged to managed code"
@@ -21,12 +13,8 @@ helpviewer_keywords:
   - "managed code, debugging"
   - "native debugging, MDAs"
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
-caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # reentrancy MDA
 The `reentrancy` managed debugging assistant (MDA) is activated when an attempt is made to transition from native to managed code in cases where a prior switch from managed to native code was not performed through an orderly transition.  
@@ -75,7 +63,7 @@ ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.
 ## Example  
  The following code example causes an <xref:System.AccessViolationException> to be thrown.  On versions of Windows that support vectored exception handling, this will cause the managed vectored exception handler to be called.  If the `reentrancy` MDA is enabled, the MDA will activate during the attempted call to `MyHandler` from the operating system's vectored exception handling support code.  
   
-```  
+```csharp
 using System;  
 public delegate int ExceptionHandler(IntPtr ptrExceptionInfo);  
   
@@ -110,5 +98,5 @@ public class Reenter
 }  
 ```  
   
-## See Also  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

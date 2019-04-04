@@ -1,21 +1,7 @@
 ---
 title: "SKIP (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # SKIP (Entity SQL)
 You can perform physical paging by using the SKIP sub-clause in the ORDER BY clause. SKIP cannot be used separately from the ORDER BY clause.  
@@ -41,10 +27,10 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
 >   
 >  `SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L`  
   
- The  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [this](https://msdn.microsoft.com/library/bb738702\(v=vs.100\).aspx#_ESQL) example uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.  
+ The  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.  
   
-## See Also  
- [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)  
- [How to: Page Through Query Results](http://msdn.microsoft.com/library/ffc0f920-e7de-42e0-9b12-ef356421d030)  
- [Paging](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)  
- [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)
+## See also
+- [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)
+- [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [Paging](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)
+- [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)

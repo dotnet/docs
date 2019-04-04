@@ -1,14 +1,6 @@
 ---
 title: "Trace Switches"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,8 @@ helpviewer_keywords:
   - "trace switches"
   - "trace switches, creating custom"
 ms.assetid: 8ab913aa-f400-4406-9436-f45bc6e54fbe
-caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output. They are objects that exist in your code and can be configured externally through the .config file. There are three types of trace switches provided in the .NET Framework: the <xref:System.Diagnostics.BooleanSwitch> class, the <xref:System.Diagnostics.TraceSwitch> class, and the <xref:System.Diagnostics.SourceSwitch> class. The <xref:System.Diagnostics.BooleanSwitch> class acts as a toggle switch, either enabling or disabling a variety of trace statements. The <xref:System.Diagnostics.TraceSwitch> and <xref:System.Diagnostics.SourceSwitch> classes allow you to enable a trace switch for a particular tracing level so that the <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.TraceSource> messages specified for that level and all levels below it appear. If you disable the switch, the trace messages will not appear. All these classes derive from the abstract (**MustInherit**) class **Switch**, as should any user-developed switches.  
@@ -89,7 +77,7 @@ MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());
 ## Developer-Defined Switches  
  In addition to providing **BooleanSwitch** and **TraceSwitch**, you can define your own switches by inheriting from the **Switch** class and overriding the base class methods with customized methods. For more information about creating developer-defined switches, see the <xref:System.Diagnostics.Switch> class in the .NET Framework reference.  
   
-## See Also  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)  
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+## See also
+- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
+- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

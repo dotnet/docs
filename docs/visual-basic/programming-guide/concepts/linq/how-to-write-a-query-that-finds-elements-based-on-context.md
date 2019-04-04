@@ -1,19 +1,7 @@
 ---
 title: "How to: Write a Query that Finds Elements Based on Context (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0b085290-ddc1-4126-aaa0-e4c95a3d9a09
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
 ---
 # How to: Write a Query that Finds Elements Based on Context (Visual Basic)
 Sometimes you might have to write a query that selects elements based on their context. You might want to filter based on preceding or following sibling elements. You might want to filter based on child or ancestor elements.  
@@ -112,9 +100,10 @@ id = 3
 id = 6  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.Parse%2A>  
- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>  
- <xref:System.Linq.Enumerable.FirstOrDefault%2A>  
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.Parse%2A>
+- <xref:System.Xml.Linq.XContainer.Descendants%2A>
+- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
+- <xref:System.Linq.Enumerable.FirstOrDefault%2A>
+- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

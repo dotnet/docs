@@ -1,27 +1,13 @@
 ---
 title: "How to: Specify Client Credential Values"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 82293d7f-471a-4549-8f19-0be890e7b074
-caps.latest.revision: 28
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Specify Client Credential Values
-Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can specify how a client is authenticated to the service. For example, a service can stipulate that the client be authenticated with a certificate.  
+Using Windows Communication Foundation (WCF), the service can specify how a client is authenticated to the service. For example, a service can stipulate that the client be authenticated with a certificate.  
   
 ### To determine the client credential type  
   
@@ -47,13 +33,13 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
 ```  
   
 ## Example: TCP Transport Mode with Certificate as Client Credential  
- This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+ This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
 #### To specify the client credential value on the client in code  
   
 1.  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate code and configuration from the service.  
   
-2.  Create an instance of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client using the generated code.  
+2.  Create an instance of the WCF client using the generated code.  
   
 3.  On the client class, set the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class to an appropriate value. This example sets the property to an X.509 certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.  
   
@@ -70,7 +56,7 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
   
 3.  Add a [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md) element to the [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element.  
   
-4.  Set the following attributes to appropriate values: `storeLocation`, `storeName`, `x509FindType`, and `findValue`, as shown in the following code. [!INCLUDE[crabout](../../../includes/crabout-md.md)] certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+4.  Set the following attributes to appropriate values: `storeLocation`, `storeName`, `x509FindType`, and `findValue`, as shown in the following code. For more information about certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
     ```xml  
     <behaviors>  
@@ -99,21 +85,21 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
     </client>  
     ```  
   
-## See Also  
- <xref:System.ServiceModel.NetTcpBinding>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>  
- <xref:System.ServiceModel.ClientBase%601>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>  
- [Programming WCF Security](../../../docs/framework/wcf/feature-details/programming-wcf-security.md)  
- [Selecting a Credential Type](../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
- [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
- [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)  
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)  
- [\<message>](../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)  
- [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)  
- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
- [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)  
- [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)
+## See also
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
+- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
+- [Programming WCF Security](../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
+- [Selecting a Credential Type](../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)
+- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
+- [\<message>](../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)
+- [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)
+- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+- [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)
+- [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)

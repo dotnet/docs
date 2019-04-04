@@ -1,21 +1,7 @@
 ---
 title: "Asynchronous Operations"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e7d32c3c-bf78-4bfc-a357-c9e82e4a4b3c
-caps.latest.revision: 5
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Asynchronous Operations
 Some database operations, such as command executions, can take significant time to complete. In such a case, single-threaded applications must block other operations and wait for the command to finish before they can continue their own operations. In contrast, being able to assign the long-running operation to a background thread allows the foreground thread to remain active throughout the operation. In a Windows application, for example, delegating the long-running operation to a background thread allows the user interface thread to remain responsive while the operation is executing.  
@@ -37,7 +23,7 @@ Some database operations, such as command executions, can take significant time 
  [Polling in Console Applications](../../../../../docs/framework/data/adonet/sql/polling-in-console-applications.md)  
  Provides an example demonstrating the use of polling to wait for the completion of an asynchronous command execution from a console application. This technique is also valid in a class library or other application without a user interface.  
   
-## See Also  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [Calling Synchronous Methods Asynchronously](../../../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [Calling Synchronous Methods Asynchronously](../../../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

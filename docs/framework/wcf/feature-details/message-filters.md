@@ -1,23 +1,9 @@
 ---
 title: "Message Filters"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "routing [WCF], message filters"
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
-caps.latest.revision: 8
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Message Filters
 To implement content-based routing, the Routing Service uses <xref:System.ServiceModel.Dispatcher.MessageFilter> implementations that inspect specific sections of a message, such as the address, endpoint name, or a specific XPath statement. If none of the message filters provided with [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] meet your needs, you can create a custom filter by creating a new implementation of the base <xref:System.ServiceModel.Dispatcher.MessageFilter> class.  
@@ -71,15 +57,15 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
   
 |Prefix|Namespace|  
 |------------|---------------|  
-|s11|http://schemas.xmlsoap.org/soap/envelope|  
-|s12|http://www.w3.org/2003/05/soap-envelope|  
-|wsaAugust2004|http://schemas.xmlsoap.org/ws/2004/08/addressing|  
-|wsa10|http://www.w3.org/2005/08/addressing|  
-|sm|http://schemas.microsoft.com/serviceModel/2004/05/xpathfunctions|  
-|tempuri|http://tempuri.org|  
-|ser|http://schemas.microsoft.com/2003/10/Serialization|  
+|s11|`http://schemas.xmlsoap.org/soap/envelope`|  
+|s12|`http://www.w3.org/2003/05/soap-envelope`|  
+|wsaAugust2004|`http://schemas.xmlsoap.org/ws/2004/08/addressing`|  
+|wsa10|`http://www.w3.org/2005/08/addressing`|  
+|sm|`http://schemas.microsoft.com/serviceModel/2004/05/xpathfunctions`|  
+|tempuri|`http://tempuri.org`|  
+|ser|`http://schemas.microsoft.com/2003/10/Serialization`|  
   
- When you know that you will be using a specific namespace in your XPath queries, you can add it to the namespace table along with a unique namespace prefix and use the prefix in any XPath query instead of the full namespace. The following example defines a prefix of "custom" for the namespace "http://my.custom.namespace", which is then used in the XPath query contained in filterData.  
+ When you know that you will be using a specific namespace in your XPath queries, you can add it to the namespace table along with a unique namespace prefix and use the prefix in any XPath query instead of the full namespace. The following example defines a prefix of "custom" for the namespace `"http://my.custom.namespace"`, which is then used in the XPath query contained in filterData.  
   
 ```xml  
 <namespaceTable>  

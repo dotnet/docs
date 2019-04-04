@@ -2,10 +2,6 @@
 title: SpawnInstance function (Unmanaged API Reference)
 description: The SpawnInstance function creates a new instance of a class.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "SpawnInstance"
 api_location: 
@@ -20,9 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # SpawnInstance function
 Creates a new instance of a class.    
@@ -45,7 +38,7 @@ HRESULT SpawnInstance (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `lFlags`  
 [in] Reserved. This parameter must be 0.
@@ -66,7 +59,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::SpawnInstance](https://msdn.microsoft.com/library/aa391458(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::SpawnInstance](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-spawninstance) method.
 
 `ptr` must be a class definition obtained from Windows Management. (Note that spawning an instance from an instance is supported but the returned instance is empty.) You then use this class definition to create new instances. A call to the [PutInstanceWmi](putinstancewmi.md) function is required if you intend to write the instance to Windows Management.
 
@@ -82,5 +75,5 @@ The new object returned in `ppNewClass` automatically becomes a subclass of the 
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

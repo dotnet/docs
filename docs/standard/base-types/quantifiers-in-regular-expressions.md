@@ -1,13 +1,7 @@
 ---
 title: "Quantifiers in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,13 +14,8 @@ helpviewer_keywords:
   - "quantifiers"
   - "lazy quantifiers"
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Quantifiers in Regular Expressions
 Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.  The following table lists the quantifiers supported by .NET.  
@@ -54,7 +43,7 @@ Quantifiers specify how many instances of a character, group, or character class
 ### Match Zero or More Times: *  
  The `*` quantifier matches the preceding element zero or more times. It is equivalent to the `{0,}` quantifier. `*` is a greedy quantifier whose lazy equivalent is `*?`.  
   
- The following example illustrates this regular expression. Of the nine digits in the input string, five match the pattern and four (`95`, `929`, `9129`, and `9919`) do not.  
+ The following example illustrates this regular expression. Of the nine digits in the input string, five match the pattern and four (`95`, `929`, `9219`, and `9919`) do not.  
   
  [!code-csharp[RegularExpressions.Quantifiers#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#1)]
  [!code-vb[RegularExpressions.Quantifiers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#1)]  
@@ -120,7 +109,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End at a word boundary.|  
   
 ### Match at Least n Times: {n,}  
- The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`}?`.  
+ The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`,}?`.  
   
  For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and a non-digit character. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrases `"10 weeks and 300 years"`.  
   
@@ -276,6 +265,7 @@ Quantifiers specify how many instances of a character, group, or character class
  [!code-csharp[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/cs/emptymatch4.cs#2)]
  [!code-vb[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/vb/emptymatch4.vb#2)]  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

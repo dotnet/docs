@@ -1,26 +1,15 @@
 ---
 title: "TPL and Traditional .NET Framework Asynchronous Programming"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "tasks, with other asynchronous models"
 ms.assetid: e7b31170-a156-433f-9f26-b1fc7cd1776f
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # TPL and Traditional .NET Framework Asynchronous Programming
 The .NET Framework provides the following two standard patterns for performing I/O-bound and compute-bound asynchronous operations:  
@@ -124,5 +113,6 @@ The .NET Framework provides the following two standard patterns for performing I
 ## Using the StreamExtensions Sample Code  
  The Streamextensions.cs file, in [Samples for Parallel Programming with the .NET Framework 4](https://code.msdn.microsoft.com/ParExtSamples), contains several reference implementations that use Task objects for asynchronous file and network I/O.  
   
-## See Also  
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## See also
+
+- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

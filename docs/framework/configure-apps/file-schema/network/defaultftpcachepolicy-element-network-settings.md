@@ -1,14 +1,6 @@
 ---
-title: "&lt;defaultFtpCachePolicy&gt; Element (Network Settings)"
-ms.custom: ""
+title: "<defaultFtpCachePolicy> Element (Network Settings)"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultFtpCachePolicy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching/defaultFtpCachePolicy"
@@ -16,14 +8,8 @@ helpviewer_keywords:
   - "<defaultFtpCachePolicy> element"
   - "defaultFtpCachePolicy element"
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
-caps.latest.revision: 13
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;defaultFtpCachePolicy&gt; Element (Network Settings)
+# \<defaultFtpCachePolicy> Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  
   
  \<configuration>  
@@ -87,8 +73,8 @@ Describes whether FTP caching is active and describes the default caching policy
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Net.Cache>  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.Cache.RequestCacheLevel>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+- <xref:System.Net.Cache>
+- <xref:System.Net.WebRequest>
+- <xref:System.Net.Cache.RequestCacheLevel>
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

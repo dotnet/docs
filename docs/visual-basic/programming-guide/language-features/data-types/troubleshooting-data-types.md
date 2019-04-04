@@ -1,13 +1,6 @@
 ---
 title: "Troubleshooting Data Types (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Char data type [Visual Basic], converting"
   - "Decimal data type [Visual Basic], conversions"
@@ -26,9 +19,6 @@ helpviewer_keywords:
   - "floating-point numbers [Visual Basic], comparison"
   - "floating-point numbers"
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
-caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Troubleshooting Data Types (Visual Basic)
 This page lists some common problems that can occur when you perform operations on intrinsic data types.  
@@ -44,7 +34,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates both incorrect and correct comparison of two `Double` values.  
   
- [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#10)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better  precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -59,7 +49,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates the potential imprecision of floating-point operands.  
   
- [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#11)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -70,7 +60,7 @@ This page lists some common problems that can occur when you perform operations 
  Note that it is not sufficient to declare `decimalRemainder` as `Decimal`. You must also force the literals to `Decimal`, or they use `Double` by default and `decimalRemainder` receives the same inaccurate value as `doubleRemainder`.  
   
 ## Boolean Type Does Not Convert to Numeric Type Accurately  
- [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides conversion keywords ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods.  
+ [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, Visual Basic provides conversion keywords ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods.  
   
  You should never write code that relies on equivalent numeric values for `True` and `False`. Whenever possible, you should restrict usage of `Boolean` variables to the logical values for which they are designed. If you must mix `Boolean` and numeric values, make sure that you understand the conversion method that you select.  
   
@@ -83,7 +73,7 @@ This page lists some common problems that can occur when you perform operations 
  If you must convert a `Boolean` value to a numeric data type, be careful about which conversion method you use.  
   
 ## Character Literal Generates Compiler Error  
- In the absence of any type characters, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] assumes default data types for literals. The default type for a character literal — enclosed in quotation marks (`" "`) — is `String`.  
+ In the absence of any type characters, Visual Basic assumes default data types for literals. The default type for a character literal — enclosed in quotation marks (`" "`) — is `String`.  
   
  The `String` data type does not widen to the [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md). This means that if you want to assign a literal to a `Char` variable, you must either make a narrowing conversion or force the literal to the `Char` type.  
 
@@ -93,7 +83,7 @@ This page lists some common problems that can occur when you perform operations 
   
  The following example demonstrates both unsuccessful and successful assignments of a literal to a `Char` variable.  
   
- [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#12)]  
   
  There is always a risk in using narrowing conversions, because they can fail at run time. For example, a conversion from `String` to `Char` can fail if the `String` value contains more than one character. Therefore, it is better programming to use the `C` type character.  
   
@@ -116,11 +106,12 @@ This page lists some common problems that can occur when you perform operations 
 ### Meaningless Values  
  In general, `String` values are not meaningful in other data types, and conversion is highly artificial and dangerous. Whenever possible, you should restrict usage of `String` variables to the character sequences for which they are designed. You should never write code that relies on equivalent values in other types.  
   
-## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+## See also
+
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

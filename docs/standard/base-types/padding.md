@@ -1,12 +1,7 @@
 ---
 title: "Padding Strings in .NET"
-ms.custom: ""
 ms.date: "03/15/2018"
-ms.prod: ".net"
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +15,6 @@ helpviewer_keywords:
 ms.assetid: 84a9f142-3244-4c90-ba02-21af9bbaff71
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Padding Strings in .NET
 
@@ -52,5 +43,6 @@ Use one of the following <xref:System.String> methods to create a new string tha
  [!code-csharp[Conceptual.String.BasicOps#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/padding.cs#4)]
  [!code-vb[Conceptual.String.BasicOps#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/padding.vb#4)]  
   
-## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+## See also
+
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)

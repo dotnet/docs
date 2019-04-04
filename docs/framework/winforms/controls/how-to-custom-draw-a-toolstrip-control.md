@@ -1,14 +1,6 @@
 ---
 title: "How to: Custom Draw a ToolStrip Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,12 +16,6 @@ helpviewer_keywords:
   - "custom drawing"
   - "owner drawing"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Custom Draw a ToolStrip Control
 The <xref:System.Windows.Forms.ToolStrip> controls have the following associated rendering (painting) classes:  
@@ -141,10 +127,10 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
     toolStrip.Renderer = new ToolStripProfessionalRenderer(colorTable);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStripSystemRenderer>  
- <xref:System.Windows.Forms.ToolStripProfessionalRenderer>  
- <xref:System.Windows.Forms.ToolStripRenderer>  
- [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)  
- [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.ToolStripSystemRenderer>
+- <xref:System.Windows.Forms.ToolStripProfessionalRenderer>
+- <xref:System.Windows.Forms.ToolStripRenderer>
+- [Controls with Built-In Owner-Drawing Support](controls-with-built-in-owner-drawing-support.md)
+- [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

@@ -1,28 +1,14 @@
 ---
 title: "ReliableSessionBindingElement"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: effda125-b8d3-4de6-8c0e-f59f5ea8f6eb
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # ReliableSessionBindingElement
 ReliableSessionBindingElement  
   
 ## Syntax  
   
-```  
+```csharp
 class ReliableSessionBindingElement : BindingElement  
 {  
   datetime AcknowledgementInterval;  
@@ -104,5 +90,5 @@ class ReliableSessionBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>

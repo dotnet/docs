@@ -1,17 +1,9 @@
 ---
-title: "My.Computer.Mouse Object"
+title: "My.Computer.Mouse Object (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "My.Computer.Mouse object"
 ms.assetid: da473357-2120-47dd-bd42-c63d695157eb
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Computer.Mouse Object
 Provides properties for getting information about the format and configuration of the mouse installed on the local computer.  
@@ -28,5 +20,6 @@ Provides properties for getting information about the format and configuration o
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

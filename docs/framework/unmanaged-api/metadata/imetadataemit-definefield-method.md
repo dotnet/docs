@@ -1,14 +1,6 @@
 ---
 title: "IMetaDataEmit::DefineField Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMetaDataEmit.DefineField"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 6b5be4fc-2e86-499c-8b09-833160bca767
 topic_type: 
   - "apiref"
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMetaDataEmit::DefineField Method
 Creates a definition for a field with the specified metadata signature, and gets a token to that field definition.  
@@ -49,7 +37,7 @@ HRESULT DefineField (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypeDef` token for the enclosing class or interface.  
   
@@ -65,7 +53,7 @@ HRESULT DefineField (
  `cbSigBlob`  
  [in] The count of bytes in `pvSigBlob`.  
   
- `dwCPlusTypeFlage`  
+ `dwCPlusTypeFlag`  
  [in] The `ELEMENT_TYPE_`*\** for the constant value. This is a `CorElementType` value. If not defining a constant value for the field, use `ELEMENT_TYPE_END`.  
   
  `pValue`  
@@ -86,6 +74,6 @@ HRESULT DefineField (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

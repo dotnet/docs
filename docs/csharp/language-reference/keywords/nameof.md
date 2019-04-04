@@ -1,17 +1,12 @@
 ---
-title: "nameof  (C# Reference)"
+title: "nameof  - C# Reference"
+ms.custom: seodec18
+
 ms.date: 06/16/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "nameof_CSharpKeyword"
   - "nameof"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # nameof (C# Reference)
 
@@ -86,18 +81,22 @@ class C {
   
 var c = new C()  
   
-nameof(C) -> "C"  
-nameof(C.Method1) -> "Method1"   
-nameof(C.Method2) -> "Method2"  
-nameof(c.Method1) -> "Method1"   
-nameof(c.Method2) -> "Method2"  
-nameof(z) -> "z" // inside of Method2 ok, inside Method1 is a compiler error  
-nameof(Stuff) = "Stuff"  
-nameof(T) -> "T" // works inside of method but not in attributes on the method  
-nameof(f) -> "f"  
-nameof(f<T>) -> syntax error  
-nameof(f<>) -> syntax error  
-nameof(Method2()) -> error "This expression does not have a name"  
+class Test {  
+    static void Main (string[] args) {  
+        Console.WriteLine(nameof(C)); // -> "C"  
+        Console.WriteLine(nameof(C.Method1)); // -> "Method1"   
+        Console.WriteLine(nameof(C.Method2)); // -> "Method2"  
+        Console.WriteLine(nameof(c.Method1)); // -> "Method1"   
+        Console.WriteLine(nameof(c.Method2)); // -> "Method2"  
+        // Console.WriteLine(nameof(z)); -> "z" [inside of Method2 ok, inside Method1 is a compiler error]  
+        Console.WriteLine(nameof(Stuff)); // -> "Stuff"  
+        // Console.WriteLine(nameof(T)); -> "T" [works inside of method but not in attributes on the method]  
+        Console.WriteLine(nameof(f)); // -> "f"  
+        // Console.WriteLine(nameof(f<T>)); -> [syntax error]  
+        // Console.WriteLine(nameof(f<>)); -> [syntax error]  
+        // Console.WriteLine(nameof(Method2())); -> [error "This expression does not have a name"]  
+    }
+}
 ```  
   
 ## Remarks  
@@ -128,10 +127,11 @@ class C {
  There is no way to get a signatures information such as "`Method1 (str, str)`".  One way to do that is to use an Expression, `Expression e = () => A.B.Method1("s1", "s2")`, and pull the MemberInfo from the resulting expression tree.  
   
 ## Language Specifications  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
+
+For more information, see [Nameof expressions](~/_csharplang/spec/expressions.md#nameof-expressions) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
  
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)

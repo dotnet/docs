@@ -1,23 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;claimTypeRequirements&gt; element"
-ms.custom: ""
+title: "<add> of <claimTypeRequirements> element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 3234cd45-1478-468e-8b19-5c50815c4786
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;add&gt; of &lt;claimTypeRequirements&gt; element
+# \<add> of \<claimTypeRequirements> element
 Specifies the types of required and optional claims expected to appear in the federated credential. For example, services state the requirements on incoming credentials, which must possess a certain set of claim types.  
   
  \<system.ServiceModel>  
@@ -31,10 +17,10 @@ Specifies the types of required and optional claims expected to appear in the fe
 ## Syntax  
   
 ```xml  
-<claimTypeRequirements>  
-      <add claimType="URI"  
-        isOptional="Boolean" />  
-</claimTypeRequirements>  
+<claimTypeRequirements>
+  <add claimType="URI"
+       isOptional="Boolean" />
+</claimTypeRequirements>
 ```  
   
 ## Attributes and Elements  
@@ -63,28 +49,26 @@ Specifies the types of required and optional claims expected to appear in the fe
  The following configuration adds two claim type requirements to a security binding.  
   
 ```xml  
-<bindings>  
-    <wsFederationHttpBinding>  
-      <binding name="myFederatedBinding">  
-        <security mode="Message">  
-          <message issuedTokenType="urn:oasis:names:tc:SAML:1.0:assertion">  
-            <claimTypeRequirements>  
-              <add claimType=  
-"http://schemas.microsoft.com/ws/2005/05/identity/claims/EmailAddress"/>  
-              <add claimType=  
-"http://schemas.microsoft.com/ws/2005/05/identity/claims/UserName"    
-optional="true" />  
-            </claims>  
-          </message>  
-        </security>  
-      </binding>  
-    </wsFederationHttpBinding>  
-</bindings>  
+<bindings>
+  <wsFederationHttpBinding>
+    <binding name="myFederatedBinding">
+      <security mode="Message">
+        <message issuedTokenType="urn:oasis:names:tc:SAML:1.0:assertion">
+          <claimTypeRequirements>
+            <add claimType="http://schemas.microsoft.com/ws/2005/05/identity/claims/EmailAddress" />
+            <add claimType="http://schemas.microsoft.com/ws/2005/05/identity/claims/UserName"
+                 optional="true" />
+          </claimTypeRequirements>
+        </message>
+      </security>
+    </binding>
+  </wsFederationHttpBinding>
+</bindings>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>  
- <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>  
- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>  
- <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>  
- <xref:System.ServiceModel.Configuration.ClaimTypeElement>
+## See also
+- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>
+- <xref:System.ServiceModel.Configuration.ClaimTypeElement>

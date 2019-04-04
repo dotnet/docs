@@ -1,28 +1,14 @@
 ---
 title: "PeerSecuritySettings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
-caps.latest.revision: 7
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
 # PeerSecuritySettings
 PeerSecuritySettings  
   
 ## Syntax  
   
-```  
+```csharp
 class PeerSecuritySettings  
 {  
   string Mode;  
@@ -56,5 +42,5 @@ class PeerSecuritySettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.PeerSecuritySettings>
+## See also
+- <xref:System.ServiceModel.PeerSecuritySettings>

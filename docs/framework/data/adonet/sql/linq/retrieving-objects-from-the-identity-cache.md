@@ -1,24 +1,10 @@
 ---
 title: "Retrieving Objects from the Identity Cache"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 96c13903-ccb6-4a0e-ab6a-8ca955ca314d
-caps.latest.revision: 2
-author: "douglaslMS"
-ms.author: "douglasl"
-manager: "craigg"
-ms.workload: 
-  - "dotnet"
 ---
 # Retrieving Objects from the Identity Cache
 This topic describes the types of LINQ to SQL queries that return an object from the identity cache that is managed by the <xref:System.Data.Linq.DataContext>.  
@@ -72,8 +58,8 @@ This topic describes the types of LINQ to SQL queries that return an object from
  [!code-csharp[L2S_QueryCache#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs/program.cs#1)]
  [!code-vb[L2S_QueryCache#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/l2s_querycache/vb/module1.vb#1)]  
   
-## See Also  
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
- [Object Identity](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [Object Identity](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)
+## See also
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Object Identity](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Object Identity](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)

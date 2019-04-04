@@ -45,7 +45,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- Any <xref:System.Workflow.ComponentModel.Activity> that implements <xref:System.Workflow.ComponentModel.ICompensatableActivity> is compensateable. A compensatable activity is a valid target of a <xref:System.Workflow.ComponentModel.CompensateActivity>, as long as that activity is a child <xref:System.Workflow.ComponentModel.Activity> of the <xref:System.Workflow.ComponentModel.CompositeActivity> associated with the <xref:System.Workflow.ComponentModel.CompensateActivity>.  
+ Any <xref:System.Workflow.ComponentModel.Activity> that implements <xref:System.Workflow.ComponentModel.ICompensatableActivity> is compensatable. A compensatable activity is a valid target of a <xref:System.Workflow.ComponentModel.CompensateActivity>, as long as that activity is a child <xref:System.Workflow.ComponentModel.Activity> of the <xref:System.Workflow.ComponentModel.CompositeActivity> associated with the <xref:System.Workflow.ComponentModel.CompensateActivity>.  
   
  ]]></format>
     </remarks>

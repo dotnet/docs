@@ -251,7 +251,7 @@
   
  For any other type of node such as a comment, whitespace node, or CDATA node, use the <xref:System.Xml.XmlDocument.CreateNode%2A> method.  
   
- This example creates a book node, adds attrubutes to that node, and then adds that node to the document.  
+ This example creates a book node, adds attributes to that node, and then adds that node to the document.  
   
  [!code-cpp[XMLProcessingApp#5](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#5)]
  [!code-csharp[XMLProcessingApp#5](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#5)]
@@ -1081,7 +1081,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the element. If the name contains a colon then the <see cref="P:System.Xml.XmlNode.Prefix" /> property reflects the part of the name preceding the colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property reflects the part of the name after the colon. The qualified name cannot include a prefix of'xmlns'.</param>
+        <param name="name">The qualified name of the element. If the name contains a colon then the <see cref="P:System.Xml.XmlNode.Prefix" /> property reflects the part of the name preceding the colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property reflects the part of the name after the colon. The qualified name cannot include a prefix of 'xmlns'.</param>
         <summary>Creates an element with the specified name.</summary>
         <returns>The new <see langword="XmlElement" />.</returns>
         <remarks>
@@ -1145,7 +1145,7 @@
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="qualifiedName">The qualified name of the element. If the name contains a colon then the <see cref="P:System.Xml.XmlNode.Prefix" /> property will reflect the part of the name preceding the colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property will reflect the part of the name after the colon. The qualified name cannot include a prefix of'xmlns'.</param>
+        <param name="qualifiedName">The qualified name of the element. If the name contains a colon then the <see cref="P:System.Xml.XmlNode.Prefix" /> property will reflect the part of the name preceding the colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property will reflect the part of the name after the colon. The qualified name cannot include a prefix of 'xmlns'.</param>
         <param name="namespaceURI">The namespace URI of the element.</param>
         <summary>Creates an <see cref="T:System.Xml.XmlElement" /> with the qualified name and <see cref="P:System.Xml.XmlNode.NamespaceURI" />.</summary>
         <returns>The new <see langword="XmlElement" />.</returns>
@@ -2660,7 +2660,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
     </xsl:template>  
 ```  
   
- Notice the additional xmlns:xsl namespace declaration which is used to preserve the node identity. If you re-insert this inner XML string, you will get back your original document. In other words, `InnerXml` recognizes that the xmlns:xsl namespace declaration is redundant, given that the parent xsl:stylesheet element already has the xmlns:xsl namespace delcaration, and therefore removes it.  
+ Notice the additional xmlns:xsl namespace declaration which is used to preserve the node identity. If you re-insert this inner XML string, you will get back your original document. In other words, `InnerXml` recognizes that the xmlns:xsl namespace declaration is redundant, given that the parent xsl:stylesheet element already has the xmlns:xsl namespace declaration, and therefore removes it.  
   
  If you move `InnerXml` from a document with no default namespace to a document with a default namespace, the behavior is a little different. Consider the following XML string:  
   

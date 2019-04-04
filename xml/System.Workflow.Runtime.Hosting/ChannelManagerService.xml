@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `SequentialWorklowService` SDK sample.  
+ The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `SequentialWorkflowService` SDK sample.  
   
  [!code-csharp[ChannelManagerService#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#0)]
  [!code-vb[ChannelManagerService#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#0)]  

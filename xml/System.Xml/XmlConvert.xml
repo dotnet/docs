@@ -2991,7 +2991,7 @@ catch(Exception e) {
 ## Remarks  
  No other values than the passed in argument should be returned. The characters valid for public id do not vary between XML editions, so no `XmlVersion` overload is required.  
   
- See [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkID=147985) production [13] `PublidChar` for details on the allowed characters  
+ See [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkID=147985) production [13] `PubidChar` for details on the allowed characters  
   
  If the parameter is null, an `ArgumentNullException` will be thrown. If any of the characters are not valid public id characters, an `XmlException` is thrown with information about the first invalid character encountered.  
   

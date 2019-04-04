@@ -1,6 +1,6 @@
 <Namespace Name="System.Runtime.Remoting.Channels.Ipc">
   <Docs>
-    <summary>The <see cref="N:System.Runtime.Remoting.Channels.Ipc" /> namespace defines a communication channel for remoting that uses the interprocess cmmunication (IPC) system of the Windows operating system. Because it does not use network communication, the IPC channel is much faster than the HTTP and TCP channels, but it can only be used for communication between application domains on the same physical computer.</summary>
+    <summary>The <see cref="N:System.Runtime.Remoting.Channels.Ipc" /> namespace defines a communication channel for remoting that uses the interprocess communication (IPC) system of the Windows operating system. Because it does not use network communication, the IPC channel is much faster than the HTTP and TCP channels, but it can only be used for communication between application domains on the same physical computer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

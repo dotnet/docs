@@ -3199,7 +3199,7 @@ public class Sample
   
 ```xml  
 <?xml version="1.0"><!DOCTYPE price SYSTEM "abc"  
-  [<!ENTTIY p  
+  [<!ENTITY p  
   "123.4">]><price>&p;</price>  
 ```  
   
@@ -3972,7 +3972,7 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
 ## Remarks  
  This method reads the text content at the current reader position and converts it to the requested return type. Text, white space, significant white space and CDATA sections are concatenated. Comments and processing instructions are skipped and entity references are automatically resolved.  
   
- This method is used to read, convert if necessary, and return atomic value items from the current node content. If the input type is a valid mappings for the type of the current node then an instance of the target type containing the value of the current node is returned. See the Remarks section in the <xref:System.Xml.XmlReader> referencepage for a list of the default mappings.  
+ This method is used to read, convert if necessary, and return atomic value items from the current node content. If the input type is a valid mappings for the type of the current node then an instance of the target type containing the value of the current node is returned. See the Remarks section in the <xref:System.Xml.XmlReader> reference page for a list of the default mappings.  
   
  For example, if you had the following XML text:  
   
@@ -4415,7 +4415,7 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
    
   
 ## Examples  
- The following example uses the <xref:System.Xml.XmlReader.ReadContentAsBoolean%2A> method to read the attribute as a B`oolean` value.  
+ The following example uses the <xref:System.Xml.XmlReader.ReadContentAsBoolean%2A> method to read the attribute as a `Boolean` value.  
   
  [!code-csharp[XmlReader.ReadContentAs#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader.ReadContentAs/CS/readContentAs.cs#1)]
  [!code-vb[XmlReader.ReadContentAs#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReader.ReadContentAs/VB/readContentAs.vb#1)]  
@@ -7817,12 +7817,12 @@ An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Xml.XmlReader.ReadSubtree%2A> can be called only on element nodes. When the entire sub-tree has been read, calls to the <xref:System.Xml.XmlReader.Read%2A> method returns `false`. When the new XML reader has been closed, the original readeris positioned on the `EndElement` node of the sub-tree. Thus, if you called the <xref:System.Xml.XmlReader.ReadSubtree%2A> method on the start tag of the book element, after the sub-tree has been read and the new XML reader has been closed, the original XML reader is positioned on the end tag of the book element.  
+ <xref:System.Xml.XmlReader.ReadSubtree%2A> can be called only on element nodes. When the entire sub-tree has been read, calls to the <xref:System.Xml.XmlReader.Read%2A> method returns `false`. When the new XML reader has been closed, the original reader is positioned on the `EndElement` node of the sub-tree. Thus, if you called the <xref:System.Xml.XmlReader.ReadSubtree%2A> method on the start tag of the book element, after the sub-tree has been read and the new XML reader has been closed, the original XML reader is positioned on the end tag of the book element.  
   
  You should not perform any operations on the original reader until the new reader has been closed. This action is not supported and can result in unpredictable behavior.  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlReader.ReadSubtree%2A> method isn't intended for creatingcopies of the XML data that you can work with independently. It's designedto create a boundary around an XML element. This is useful if you want to pass data to another component for processing and you wish to limit how much of your data the component can access. When you pass an XML reader returned by the <xref:System.Xml.XmlReader.ReadSubtree%2A> method to another application, the application can access only that XML element, not the entire XML document.  
+>  The <xref:System.Xml.XmlReader.ReadSubtree%2A> method isn't intended for creating copies of the XML data that you can work with independently. It's designed to create a boundary around an XML element. This is useful if you want to pass data to another component for processing and you wish to limit how much of your data the component can access. When you pass an XML reader returned by the <xref:System.Xml.XmlReader.ReadSubtree%2A> method to another application, the application can access only that XML element, not the entire XML document.  
   
    
   
@@ -8047,7 +8047,7 @@ An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asy
   
 ```xml  
 <!--"sample.xml"-->  
-<?xmlversion="1.0">  
+<?xml version="1.0">  
    <items>  
       <item xmls="urn:1"/>  
    </items>  
@@ -8118,7 +8118,7 @@ reader.ReadToFollowing("item");
   
 ```xml  
 <!--"sample.xml"-->  
-<?xmlversion="1.0">  
+<?xml version="1.0">  
    <items>  
       <item xmls="urn:1"/>  
    </items>  

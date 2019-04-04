@@ -50,7 +50,7 @@
       <typeFilter name="ExtensionAttribute" expose="true" />
       <typeFilter name="*" expose="false" />
     </namespaceFilter>
-    <!-- Attributes in System.Runtime.ConstrinedExecution control obscure details of compilation. Don't show them. -->
+    <!-- Attributes in System.Runtime.ConstrainedExecution control obscure details of compilation. Don't show them. -->
     <namespaceFilter name="System.Runtime.ConstrainedExecution">
       <typeFilter name="*" expose="false" />
     </namespaceFilter>

@@ -1988,7 +1988,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gest or sets an application specific context value to be included in the wctx parameter in WS-Federation sign-in requests.</summary>
+        <summary>Gets or sets an application specific context value to be included in the wctx parameter in WS-Federation sign-in requests.</summary>
         <value>The application specific context value to be included in the wctx parameter for sign-in requests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

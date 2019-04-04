@@ -710,7 +710,7 @@
 |-----------|--------------|----------|-----------|  
 |1|Text||A 123|  
   
- When `EntityHandling` is set to `ExpandCharEntites`, and <xref:System.Xml.XmlTextReader.WhitespaceHandling%2A> is set to Significant or All, the "doc" element expands the character entity and returns the general entity as a node:  
+ When `EntityHandling` is set to `ExpandCharEntities`, and <xref:System.Xml.XmlTextReader.WhitespaceHandling%2A> is set to Significant or All, the "doc" element expands the character entity and returns the general entity as a node:  
   
 |Depth|NodeType|Name|Value|  
 |-----------|--------------|----------|-----------|  

@@ -135,7 +135,7 @@
       <Docs>
         <param name="toCompare">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</param>
         <summary>Compares the current <see cref="T:System.Workflow.Activities.EventQueueName" /> to the specified <see cref="T:System.Workflow.Activities.EventQueueName" />.</summary>
-        <returns>A 32-bit signed integer that indicates the whether the comprarands match. -1 indicates that the current <see cref="T:System.Workflow.Activities.EventQueueName" /> and the specified object do not match; 0 indicates that the <see cref="T:System.Workflow.Activities.EventQueueName" /> and the specified object match.</returns>
+        <returns>A 32-bit signed integer that indicates the whether the comparands match. -1 indicates that the current <see cref="T:System.Workflow.Activities.EventQueueName" /> and the specified object do not match; 0 indicates that the <see cref="T:System.Workflow.Activities.EventQueueName" /> and the specified object match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -167,7 +167,7 @@
       <Docs>
         <param name="eventQueueName">The <see cref="T:System.Workflow.Activities.EventQueueName" /> to compare with the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</param>
         <summary>Compares the current <see cref="T:System.Workflow.Activities.EventQueueName" /> to the specified <see cref="T:System.Workflow.Activities.EventQueueName" />.</summary>
-        <returns>A 32-bit signed integer that indicates the whether the comprarands match. -1 indicates that the two <see cref="T:System.Workflow.Activities.EventQueueName" /> objects do not match; 0 indicates that the two <see cref="T:System.Workflow.Activities.EventQueueName" /> objects match.</returns>
+        <returns>A 32-bit signed integer that indicates the whether the comparands match. -1 indicates that the two <see cref="T:System.Workflow.Activities.EventQueueName" /> objects do not match; 0 indicates that the two <see cref="T:System.Workflow.Activities.EventQueueName" /> objects match.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

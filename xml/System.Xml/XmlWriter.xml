@@ -3176,7 +3176,7 @@ An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without 
  If the element contains no content, a short end tag "/>" is written; otherwise, a full end tag is written.  
   
 > [!NOTE]
->  When you use the <xref:System.Xml.XmlWriter> methods to output XML, the elements and attributes will not be written until you call the <xref:System.Xml.XmlWriter.Close%2A> method. For example, if you are using the XmlWwriter to populate an <xref:System.Xml.XmlDocument>, until you close the <xref:System.Xml.XmlWriter>, you will not be able to observe the written elements and attributes in the target document.  
+>  When you use the <xref:System.Xml.XmlWriter> methods to output XML, the elements and attributes will not be written until you call the <xref:System.Xml.XmlWriter.Close%2A> method. For example, if you are using the XmlWriter to populate an <xref:System.Xml.XmlDocument>, until you close the <xref:System.Xml.XmlWriter>, you will not be able to observe the written elements and attributes in the target document.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteEndElementAsync%2A>.  
   

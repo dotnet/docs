@@ -146,7 +146,7 @@ Starting with .NET Framework 2.0, this field is obsolete. It applies only to the
       <Docs>
         <summary>No validation is performed, and no validation errors are thrown. This setting creates an XML 1.0 compliant non-validating parser.
         
-Calls to <see cref="M:System.Xml.XmlReader.ResolveEntity" /> report default attributes and resolve general enttities. The DOCTYPE is not used for validation purposes.
+Calls to <see cref="M:System.Xml.XmlReader.ResolveEntity" /> report default attributes and resolve general entities. The DOCTYPE is not used for validation purposes.
         </summary>
       </Docs>
     </Member>

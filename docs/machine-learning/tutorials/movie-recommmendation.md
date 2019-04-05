@@ -29,6 +29,7 @@ This tutorial and related sample are currently using **ML.NET version 0.11**. Fo
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.
 
 ## Machine learning workflow
+
 You will use the following steps to accomplish your task, as well as any other ML.NET task:
 
 1. [Load your data](#load-your-data)
@@ -58,19 +59,19 @@ There are several ways to approach recommendation problems, such as recommending
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
-  > [!NOTE]
-  > This tutorial uses **Microsoft.ML v0.11.0** and **Microsoft.ML.Recommender v0.11.0**.
-    
+    > [!NOTE]
+    > This tutorial uses **Microsoft.ML v0.11.0** and **Microsoft.ML.Recommender v0.11.0**.
+
 4. Add the following `using` statements at the top of your *Program.cs* file:
-    
+
     [!code-csharp[UsingStatements](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#UsingStatements "Add necessary usings")]
 
 ### Download your data
 
 1. Download the two datasets and save them to the *Data* folder you previously created:
 
-*   Right click on [*recommendation-ratings-train.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) and select "Save Link (or Target) As..."
-*   Right click on [*recommendation-ratings-test.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) and select "Save Link (or Target) As..."
+   * Right click on [*recommendation-ratings-train.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-train.csv) and select "Save Link (or Target) As..."
+   * Right click on [*recommendation-ratings-test.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation/Data/recommendation-ratings-test.csv) and select "Save Link (or Target) As..."
 
      Make sure you either save the \*.csv files to the *Data* folder, or after you save it elsewhere, move the \*.csv files to the *Data* folder.
 
@@ -145,6 +146,7 @@ In *Program.cs*, replace the `Console.WriteLine("Hello World!")` with the follow
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations, and initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
 After `Main()`, create a method called `LoadData()`:
+
 ```csharp
 public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
 {
@@ -184,12 +186,14 @@ The recommendation training algorithm you will use for training your model is an
 Build an `Estimator` with the following steps:
 
 Create the `BuildAndTrainModel()` method, just after the `LoadData()` method, using the following code:
+
 ```csharp
 public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
 {
 
 }
 ```
+
 > [!NOTE]
 > This method will give you an error until you add a return statement in the following steps.
 
@@ -237,6 +241,7 @@ Add the following as the next line of code in the `Main()` method to call your `
 Once you have trained your model, use your test data to evaluate how your model is performing. 
 
 Create the `EvaluateModel()` method, just after the `BuildAndTrainModel()` method, using the following code:
+
 ```csharp
 public static void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model)
 {
@@ -343,9 +348,11 @@ Movie 10 is recommended for user 6
 ```
 
 ### Save your model
+
 To use your model to make predictions in end-user applications, you must first save the model.
 
 Create the `SaveModel()` method, just after the `UseModelForSinglePrediction()` method, using the following code:
+
 ```csharp
 public static void SaveModel(MLContext mlContext, ITransformer model)
 {
@@ -364,6 +371,7 @@ Add the following as the next line of code in the `Main()` method to call your `
 [!code-csharp[SaveModelMain](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#SaveModelMain "Create SaveModel method in Main")]
 
 ### Use your saved model
+
 Once you have saved your trained model, you can consume the model in different environments (see the ["How-to guide"](../how-to-guides/consuming-model-ml-net.md) to learn how to operationalize a trained machine learning model in apps).
 
 ## Results
@@ -407,7 +415,7 @@ Congratulations! You've now successfully built a machine learning model for reco
 
 There are several ways that you can improve the performance of your model so that you can get more accurate predictions.
 
-### Data 
+### Data
 
 Adding more training data that has enough samples for each user and movie id can help improve the quality of the recommendation model.
 
@@ -441,6 +449,7 @@ var options = new MatrixFactorizationTrainer.Options
 ```
 
 ### Other Recommendation Algorithms
+
 The matrix factorization algorithm with collaborative filtering is only one approach for performing movie recommendations. In many cases, you may not have the ratings data available and only have movie history available from users. In other cases, you may have more than just the user’s rating data.
 
 | Algorithm       | Scenario           | Sample  |
@@ -449,12 +458,15 @@ The matrix factorization algorithm with collaborative filtering is only one appr
 | Field Aware Factorization Machines | Use this to make recommendations when you have more Features beyond userId, productId, and rating (such as product description or product price). This method also uses a collaborative filtering approach. | [>Try it out](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender) |
 
 ### New user scenario
+
 One common problem in collaborative filtering is the cold start problem, which is when you have a new user with no previous data to draw inferences from. This problem is often solved by asking new users to create a profile and, for instance, rate movies they have seen in the past. While this method puts some burden on the user, it provides some starting data for new users with no rating history.
 
 ## Resources
+
 The data used in this tutorial is derived from [MovieLens Dataset](http://files.grouplens.org/datasets/movielens/).
 
 ## Next steps
+
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]

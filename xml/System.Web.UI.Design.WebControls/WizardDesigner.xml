@@ -19,7 +19,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.WebControls.Wizard" />
     <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AddDesignerRegions">
@@ -99,7 +99,7 @@
         <summary>Adds the provided designer region collection to the current designer regions.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -123,7 +123,7 @@
         <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertToCustomNavigationTemplate">
@@ -147,7 +147,7 @@
         <summary>Creates a navigation template from the active step and saves it in the <see cref="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" /> property of the active step.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertToTemplate">
@@ -180,7 +180,7 @@
         <summary>Converts a selection of controls to a template in the associated control.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -204,7 +204,7 @@
         <summary>Creates the child controls of the associated control.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -230,7 +230,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDesignTimeHtml">
@@ -241,7 +241,7 @@
       <Docs>
         <summary>Gets the markup that is used to represent the control at design time.</summary>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDesignTimeHtml">
@@ -267,7 +267,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -296,7 +296,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -328,7 +328,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="region" /> is not an object of type <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -355,7 +355,7 @@
         <summary>Initializes the designer with the specified <see cref="T:System.ComponentModel.IComponent" /> object.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -382,7 +382,7 @@
         <summary>Called by the design host when the user clicks the associated control at design time.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -448,7 +448,7 @@
         <summary>Adds properties to or removes properties from the Properties grid in a design host, or provides new design-time settings or properties that correspond to properties on the associated control.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ResetTemplate">
@@ -479,7 +479,7 @@
         <summary>Resets the specified template to its default value.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -512,7 +512,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="region" /> is not an object of type <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -536,7 +536,7 @@
         <value>A <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -561,7 +561,7 @@
           <see langword="true" /> to use a preview control; <see langword="false" /> to use the associated control.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

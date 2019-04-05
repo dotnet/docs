@@ -23,7 +23,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
     <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
@@ -60,7 +60,7 @@
         </block>
         <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -96,7 +96,7 @@
         </block>
         <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -123,7 +123,7 @@
           <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and you do not provide configuration functionality, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
         </block>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -149,7 +149,7 @@
           <para>Typically, when you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface, the <see cref="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged" /> event handler calls the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method. If the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property is <see langword="true" />, recreate any sample data, and then raise the event again to allow each data-bound control to refresh its markup.</para>
         </block>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -177,7 +177,7 @@
         <returns>The named data source view that is associated with the data source control.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -210,7 +210,7 @@
  Typically, if the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> is called by the design host as a result of user action, the <paramref name="preferSilent" /> parameter would be <see langword="false" />, because the user would expect to be notified of any problems with refreshing the schema. But, if the schema is refreshed implicitly, such as after a call to the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method, or if the refreshing process involves a number of steps, <paramref name="preferSilent" /> should be set to <see langword="true" />.</para>
         </block>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ResumeDataSourceEvents">
@@ -235,7 +235,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="SchemaRefreshed">
@@ -258,7 +258,7 @@
         <summary>Occurs when the fields or data of the underlying data source have changed.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="SuppressDataSourceEvents">
@@ -293,7 +293,7 @@
         </block>
         <altmember cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

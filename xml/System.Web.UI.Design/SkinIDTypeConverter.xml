@@ -17,7 +17,7 @@
   <Docs>
     <summary>Provides a list of valid skin IDs for a control at design time, based on the currently applicable theme.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.SkinIDTypeConverter" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
         <returns>
           <see langword="true" />, if the conversion can be made; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
@@ -104,7 +104,7 @@
         <returns>
           <see langword="true" />, if a conversion can be made; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
         <summary>Converts the given string to a <see cref="P:System.Web.UI.Control.SkinID" /> object using the specified context and culture information.</summary>
         <returns>An object that can be cast as a <see cref="P:System.Web.UI.DataSourceControl.SkinID" /> object, if the conversion can be made; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
@@ -170,7 +170,7 @@
         <summary>Converts the given <see cref="P:System.Web.UI.Control.SkinID" /> object to a string using the specified context and culture information.</summary>
         <returns>An object that represents the converted value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
         <summary>Returns a set of <see cref="P:System.Web.UI.Control.SkinID" /> objects that can be applied to the control that is represented by the given format context.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a set of <see cref="P:System.Web.UI.Control.SkinID" /> objects; otherwise, <see langword="null" />, if the control does not support skins.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
@@ -227,7 +227,7 @@
         <returns>
           <see langword="true" />, if <see cref="Overload:System.Web.UI.Design.SkinIDTypeConverter.GetStandardValues" /> should be called to find a common set of values the object supports; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>

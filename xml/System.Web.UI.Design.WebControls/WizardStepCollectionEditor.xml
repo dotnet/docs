@@ -17,7 +17,7 @@
   <Docs>
     <summary>Provides a design-time editor in a design host such as Visual Studio 2005 for a <see cref="T:System.Web.UI.WebControls.WizardStepCollection" />.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <param name="type">The <see cref="T:System.Type" /> of items in the collection.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardStepCollectionEditor" /> class using the given <see cref="T:System.Type" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <returns>
           <see langword="true" /> if multiple items can be selected at once; otherwise, <see langword="false" />. This implementation always returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -96,7 +96,7 @@
         <summary>Creates a new form to display and edit the current collection.</summary>
         <returns>A <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> to provide as the user interface for editing the collection.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -124,7 +124,7 @@
         <summary>Creates an instance of the collection of the specified <see cref="T:System.Type" />.</summary>
         <returns>A collection of the specified <paramref name="itemType" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>

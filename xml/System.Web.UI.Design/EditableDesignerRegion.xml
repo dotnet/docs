@@ -39,7 +39,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
     <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </MemberGroup>
@@ -81,7 +81,7 @@
         <param name="name">The name of the region.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
           <see langword="true" /> to have the region accept only Web server controls for content; otherwise, <see langword="false" />.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name and the initial value of the <see cref="P:System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly" /> property.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
         <summary>Gets or sets the HTML markup for the content of the region.</summary>
         <value>HTML markup representing the content of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@
         <summary>Returns a <see cref="T:System.Web.UI.Design.ViewRendering" /> object containing the design-time HTML markup for the given control.</summary>
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
         <value>
           <see langword="true" /> if the region can contain only Web server controls; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -232,7 +232,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> content supports binding to a data source; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>

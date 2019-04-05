@@ -45,7 +45,7 @@
   
  <xref:System.ComponentModel.Design.ComponentDesigner> provides an empty <xref:System.ComponentModel.Design.IDesignerFilter> interface implementation, whose methods can be overridden to adjust the attributes, properties and events of the associated component at design time.  
   
- You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design-time behavior, see [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design-time behavior, see [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)).  
   
  The <xref:System.ComponentModel.Design.ComponentDesigner> class implements a special behavior for the property descriptors of inherited components. An internal type named `InheritedPropertyDescriptor` is used by the default <xref:System.ComponentModel.Design.ComponentDesigner> implementation to stand in for properties that are inherited from a base class. There are two cases in which these property descriptors are added.  
   
@@ -69,7 +69,7 @@
     <altmember cref="T:System.ComponentModel.Design.IDesigner" />
     <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
     <altmember cref="T:System.ComponentModel.DesignerAttribute" />
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://msdn.microsoft.com/library/c186c4b6-076c-438d-9ed3-f13da29c8c1f">How to: Access Design-time Services</related>
   </Docs>
   <Members>

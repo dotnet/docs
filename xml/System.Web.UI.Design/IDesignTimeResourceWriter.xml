@@ -22,7 +22,7 @@
     <summary>Used by the <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class to localize data at design time.</summary>
     <remarks>To be added.</remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/fb71af46-bf58-47bc-8e22-6f02c9fe903e">Localizing ASP.NET Web Pages Using Resources</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="CreateResourceKey">
@@ -52,7 +52,7 @@
         <returns>The key used to write or retrieve <paramref name="obj" /> from <paramref name="resourceName" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/fb71af46-bf58-47bc-8e22-6f02c9fe903e">Localizing ASP.NET Web Pages Using Resources</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

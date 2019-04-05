@@ -25,13 +25,13 @@
   
  In most cases, implement your custom designer for a data source by deriving it from the <xref:System.Web.UI.Design.DataSourceDesigner> class. Data sources whose associated designer does not derive from <xref:System.Web.UI.Design.DataSourceDesigner> are displayed in the component tray. The <xref:System.Web.UI.Design.DataSourceDesigner> class implements the <xref:System.Web.UI.Design.IDataSourceDesigner> interface and provides additional design-time support that may be of use to authors of designers. For more information, see the reference documentation for these classes.  
   
- For an overview of creating design components, see [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ For an overview of creating design components, see [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
     <altmember cref="T:System.ComponentModel.DesignerAttribute" />
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="CanConfigure">

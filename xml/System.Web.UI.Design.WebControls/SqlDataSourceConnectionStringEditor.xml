@@ -30,7 +30,7 @@
     </remarks>
     <altmember cref="T:System.ComponentModel.Design.Data.IDataEnvironment" />
     <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -83,7 +83,7 @@
         <summary>Returns the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object.</summary>
         <returns>The <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />, if the <paramref name="instance" /> is not <see langword="null" />; otherwise, an empty string ("").</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
@@ -112,7 +112,7 @@
         <param name="connection">The <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> associated with the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</param>
         <summary>Sets the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>

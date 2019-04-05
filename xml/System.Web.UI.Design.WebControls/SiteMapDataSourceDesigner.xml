@@ -23,7 +23,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.Design.HierarchicalDataSourceDesigner" />
     <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
-    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
     <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
@@ -50,7 +50,7 @@
         <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -77,7 +77,7 @@
         <value>This implementation always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -106,7 +106,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -141,7 +141,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -168,7 +168,7 @@
         <summary>Initializes the designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -203,7 +203,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
       </Docs>
     </Member>
@@ -235,7 +235,7 @@
         <summary>Called by the designer host to refresh the schema of the underlying data source.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanConfigure">
@@ -270,7 +270,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema">
@@ -304,7 +304,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.Configure">
@@ -337,7 +337,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged">
@@ -367,7 +367,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
       </Docs>
     </Member>
@@ -405,7 +405,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetViewNames">
@@ -445,7 +445,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.RefreshSchema">
@@ -483,7 +483,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents">
@@ -517,7 +517,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed">
@@ -548,7 +548,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents">
@@ -582,7 +582,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
         <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

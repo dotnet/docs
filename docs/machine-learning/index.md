@@ -29,6 +29,8 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 [Classify iris flowers by features](./tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set.
 
+[Create a Movie Recommender with ML.NET](./tutorials/movie-recommmendation.md) shows you how to build a recommendation app to recommend movies to users based on their history.
+
 [Build an ML.NET custom image classifier with TensorFlow](image-classification.md): demonstrates how to retrain an existing Tensorflow model to create a custom image classifier using ML.NET.
 
 ## How to guide

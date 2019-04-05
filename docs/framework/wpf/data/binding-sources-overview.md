@@ -9,9 +9,7 @@ ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 ---
 # Binding Sources Overview
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.  
-  
-  
-  
+
 <a name="binding_sources"></a>   
 ## Binding Source Types  
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding supports the following binding source types:  

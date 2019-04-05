@@ -13,8 +13,7 @@ ms.assetid: d10150ec-90c5-4571-8d35-84bafa2429a4
 ---
 # Dependency Property Security
 Dependency properties should generally be considered to be public properties. The nature of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system prevents the ability to make security guarantees about a dependency property value.  
-  
-  
+
 <a name="AccessSecurity"></a>   
 ## Access and Security of Wrappers and Dependency Properties  
  Typically, dependency properties are implemented along with "wrapper" [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] properties that simplify getting or setting the property from an instance. But the wrappers are really just convenience methods that implement the underlying <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> static calls that are used when interacting with dependency properties. Thinking of it in another way, the properties are exposed as [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] properties that happen to be backed by a dependency property rather than by a private field. Security mechanisms applied to the wrappers do not parallel the property system behavior and access of the underlying dependency property. Placing a security demand on the wrapper will only prevent the usage of the convenience method but will not prevent calls to <xref:System.Windows.DependencyObject.GetValue%2A> or <xref:System.Windows.DependencyObject.SetValue%2A>. Similarly, placing protected or private access level on the wrappers does not provide any effective security.  

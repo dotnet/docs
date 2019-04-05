@@ -151,7 +151,6 @@ You need Visual Studio to complete this walkthrough.
 
 2.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is painted over the label element.
 
-
 ## Docking
  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element supports [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] docking. Set the <xref:System.Windows.Controls.DockPanel.Dock%2A> attached property to dock the hosted control in a <xref:System.Windows.Controls.DockPanel> element.
 
@@ -217,7 +216,6 @@ You need Visual Studio to complete this walkthrough.
      [!code-xaml[WpfLayoutHostingWfWithXaml#13](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#13)]
 
 2.  Press F5 to build and run the application. The hosted control is not rotated, but its surrounding elements are rotated by an angle of 180 degrees. You may have to resize the window to see the elements.
-
 
 ## Setting Padding and Margins
  Padding and margins in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout are similar to padding and margins in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]. Simply set the <xref:System.Windows.Controls.Control.Padding%2A> and <xref:System.Windows.FrameworkElement.Margin%2A> properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.

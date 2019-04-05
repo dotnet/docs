@@ -15,9 +15,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 ---
 # WPF Add-Ins Overview
 <a name="Introduction"></a> The .NET Framework includes an add-in model that developers can use to create applications that support add-in extensibility. This add-in model allows the creation of add-ins that integrate with and extend application functionality. In some scenarios, applications also need to display user interfaces that are provided by add-ins. This topic shows how WPF augments the .NET Framework add-in model to enable these scenarios, the architecture behind it, its benefits, and its limitations.  
-  
 
-  
 <a name="Requirements"></a>   
 ## Prerequisites  
  Familiarity with the .NET Framework add-in model is required. For more information, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).  

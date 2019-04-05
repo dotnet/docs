@@ -29,7 +29,6 @@ You need Visual Studio to complete this walkthrough.
 
  The following image shows a WPF composite control: 
 
-  
  ![Screenshot that shows a simple WPF control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-presentation-foundation-composite-control.png)  
   
 ### Creating the Project  

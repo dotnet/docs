@@ -59,13 +59,9 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 ### To specify user name and password  
   
 1.  Modify the Service App.config file to use the `wsHttpBinding`. This is required for user name and password validation:  
-  
-  
-  
+
 2.  Set the `clientCredentialType` to UserName:  
-  
-  
-  
+
 3.  Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
     ```  
@@ -90,9 +86,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 ### To specify Windows Credentials  
   
 1.  Set `clientCredentialType` to Windows in the Service App.config file:  
-  
-  
-  
+
 2.  Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
     ```  

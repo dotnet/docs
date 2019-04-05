@@ -32,8 +32,7 @@ Windows Presentation Foundation (WPF) supports browser-style navigation that can
   
 > [!NOTE]
 >  In this topic, the term "browser" refers only to browsers that can host [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, which currently includes [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] and Firefox. Where specific [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features are supported only by a particular browser, the browser version is referred to.  
-   
-     
+
 ## Navigation in WPF Applications  
  This topic provides an overview of the key navigation capabilities in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. These capabilities are available to both standalone applications and [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)], although this topic presents them within the context of an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)].  
   

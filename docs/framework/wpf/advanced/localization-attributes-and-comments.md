@@ -8,9 +8,7 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 ---
 # Localization Attributes and Comments
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments are properties, inside [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] source code, supplied by developers to provide rules and hints for localization. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments contain two sets of information: localizability attributes and free-form localization comments. Localizability attributes are used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
-  
 
-  
 <a name="Localizer_Comments_"></a>   
 ## Localization Comments  
  If markup application authors have requirements for specific elements in [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)], such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] code. The process for adding comments to source code is as follows:  

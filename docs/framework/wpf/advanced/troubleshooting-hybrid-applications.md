@@ -12,9 +12,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 ---
 # Troubleshooting Hybrid Applications
 <a name="introduction"></a> This topic lists some common problems that can occur when authoring hybrid applications, which use both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] technologies.  
-  
 
-  
 <a name="overlapping_controls"></a>   
 ## Overlapping Controls  
  Controls may not overlap as you would expect. [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] uses a separate HWND for each control. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses one HWND for all content on a page. This implementation difference causes unexpected overlapping behaviors.  

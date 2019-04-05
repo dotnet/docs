@@ -8,9 +8,7 @@ ms.assetid: 774f53ca-bff8-470e-9ce9-3928b4cf3d4c
 ---
 # Popup Overview
 The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to display content in a separate window that floats over the current application window relative to a designated element or screen coordinate. This topic introduces the <xref:System.Windows.Controls.Primitives.Popup> control and provides information about its use.  
-  
- 
-  
+
 <a name="What_Is_a_Popup_"></a>   
 ## What Is a Popup?  
  A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a separate window relative to an element or point on the screen. When the <xref:System.Windows.Controls.Primitives.Popup> is visible, the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property is set to `true`.  

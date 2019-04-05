@@ -35,4 +35,3 @@ HRESULT GetFunctionFromRVA(
   
 ## See also
 
-

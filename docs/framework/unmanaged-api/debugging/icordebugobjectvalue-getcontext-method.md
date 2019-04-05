@@ -34,4 +34,3 @@ HRESULT GetContext (
   
 ## See also
 
-

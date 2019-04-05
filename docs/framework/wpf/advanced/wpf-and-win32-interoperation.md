@@ -10,9 +10,7 @@ ms.assetid: 0ffbde0d-701d-45a3-a6fa-dd71f4d9772e
 ---
 # WPF and Win32 Interoperation
 This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] code, it might be more effective to reuse some of that code.  
-  
 
-  
 <a name="basics"></a>   
 ## WPF and Win32 Interoperation Basics  
  There are two basic techniques for interoperation between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code.  

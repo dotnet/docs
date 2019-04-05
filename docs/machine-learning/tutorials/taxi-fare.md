@@ -269,7 +269,6 @@ Console.WriteLine($"*------------------------------------------------");
 
 ## Use the model for predictions
 
-
 ## Predict the test data outcome with the model and a single comment
 
 Create the `TestSinglePrediction` method, just after the `Evaluate` method, using the following code:

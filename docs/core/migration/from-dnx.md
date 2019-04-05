@@ -50,7 +50,6 @@ commands change, some are not available and some are the same but have slightly 
 
 The table below shows the mapping between the DNX/DNU commands and their CLI counterparts.
 
-
 | DNX command                    | CLI command    | Description                                                                                                     |
 |--------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------|
 | dnx run                        | dotnet run     | Run code from source.                                                                                           |

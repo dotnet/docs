@@ -35,4 +35,3 @@ HRESULT GetVirtualMethod (
   
 ## See also
 
-

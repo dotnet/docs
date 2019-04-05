@@ -474,8 +474,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
         $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
 }  
 ```  
-  
-   
+
 #### Points of Interest  
  The information lines that start with a pound sign (#) in the output clarify how this example works.  
   

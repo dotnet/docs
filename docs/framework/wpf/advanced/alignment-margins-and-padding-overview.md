@@ -13,8 +13,7 @@ ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 ---
 # Alignment, Margins, and Padding Overview
 The <xref:System.Windows.FrameworkElement> class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
-  
-  
+
 <a name="wcpsdk_layout_amp_introduction"></a>   
 ## Introduction to Element Positioning  
  There are numerous ways to position elements using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  

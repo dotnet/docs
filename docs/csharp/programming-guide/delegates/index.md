@@ -51,8 +51,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
 -   [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
   
 -   [How to: Declare, Instantiate, and Use a Delegate](../../../csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md)  
-  
-  
+
 ## C# Language Specification  
 
 For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.

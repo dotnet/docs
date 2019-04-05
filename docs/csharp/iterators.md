@@ -282,4 +282,3 @@ Thankfully, you don't need to remember all these details. The `foreach` statemen
 handles all those nuances for you. The compiler will generate the correct code for
 any of these constructs. 
 
-

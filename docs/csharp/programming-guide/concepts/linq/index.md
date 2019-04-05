@@ -45,5 +45,3 @@ To gain a deeper understanding of LINQ in general, see [LINQ in C#](../../../lin
 
 To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../tutorials/working-with-linq.md).
 
-
-

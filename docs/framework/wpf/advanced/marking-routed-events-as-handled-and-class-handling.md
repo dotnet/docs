@@ -20,9 +20,7 @@ ms.assetid: 5e745508-4861-4b48-b5f6-5fc7ce5289d2
 ---
 # Marking Routed Events as Handled, and Class Handling
 Handlers for a routed event can mark the event handled within the event data. Handling the event will effectively shorten the route. Class handling is a programming concept that is supported by routed events. A class handler has the opportunity to handle a particular routed event at a class level with a handler that is invoked before any instance handler on any instance of the class.  
-  
 
-  
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic elaborates on concepts introduced in the [Routed Events Overview](routed-events-overview.md).  

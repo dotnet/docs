@@ -14,9 +14,7 @@ ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
 ---
 # Dependency Property Callbacks and Validation
 This topic describes how to create dependency properties using alternative custom implementations for property-related features such as validation determination, callbacks that are invoked whenever the property's effective value is changed, and overriding possible outside influences on value determination. This topic also discusses scenarios where expanding on the default property system behaviors by using these techniques is appropriate.  
-  
-  
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand the basic scenarios of implementing a dependency property, and how metadata is applied to a custom dependency property. See [Custom Dependency Properties](custom-dependency-properties.md) and [Dependency Property Metadata](dependency-property-metadata.md) for context.  

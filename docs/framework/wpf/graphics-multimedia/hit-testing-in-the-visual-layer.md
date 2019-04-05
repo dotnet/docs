@@ -11,9 +11,7 @@ ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
 ---
 # Hit Testing in the Visual Layer
 This topic provides an overview of hit testing functionality provided by the visual layer. Hit testing support allows you to determine whether a geometry or point value falls within the rendered content of a <xref:System.Windows.Media.Visual>, allowing you to implement user interface behavior such as a selection rectangle to select multiple objects.  
-  
- 
-  
+
 <a name="hit_testing_scenarios"></a>   
 ## Hit Testing Scenarios  
  The <xref:System.Windows.UIElement> class provides the <xref:System.Windows.UIElement.InputHitTest%2A> method, which allows you to hit test against an element using a given coordinate value. In many cases, the <xref:System.Windows.UIElement.InputHitTest%2A> method provides the desired functionality for implementing hit testing of elements. However, there are several scenarios in which you may need to implement hit testing at the visual layer.  

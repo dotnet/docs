@@ -49,7 +49,6 @@ struct MSLAYOUT DacpReJitData
 | `flags`          | A flag indicating the current state of the method's ReJit instrumentation for the given version. |
 | `NativeCodeAddr` | The base address of the method's rejitted implementation.                                         |
 
-
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above. The structure must also be defined using `ms_struct` packing if not using the Microsoft compilers.

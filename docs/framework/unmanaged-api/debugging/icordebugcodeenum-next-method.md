@@ -53,4 +53,3 @@ HRESULT Next (
   
 ## See also
 
-

@@ -14,8 +14,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
   
 > [!NOTE]
 >  Special consideration is given to the *hybrid control* scenario. A hybrid control has a control from one technology nested in a control from the other technology. This is also called a *nested interoperation*. A *multilevel hybrid control* has more than one level of hybrid control nesting. An example of a multilevel nested interoperation is a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that contains a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control, which contains another [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control. Multilevel hybrid controls are not supported.  
-  
-  
+
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
 ## Hosting Windows Forms Controls in WPF  
  The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a Windows Forms control:  

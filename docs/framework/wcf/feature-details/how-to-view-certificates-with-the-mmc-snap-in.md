@@ -16,7 +16,6 @@ There are three different types of certificate stores that you can examine with 
 
 - Service account: The store is local to a particular service on the device.
 
-  
 ## View certificates in the MMC snap-in 
 
 The following procedure demonstrates how to examine the stores on your local device to find an appropriate certificate: 
@@ -51,7 +50,6 @@ The following procedure demonstrates how to examine the stores on your local dev
 8. To view your certificates in the MMC snap-in, select **Console Root** in the left pane, then expand **Certificates (Local Computer)**.
 
     A list of directories for each type of certificate appears. From each certificate directory, you can view, export, import, and delete its certificates.
-  
 
 ## View certificates with the Certificate Manager tool
 
@@ -73,7 +71,6 @@ You can also view, export, import, and delete certificates by using the Certific
   
 2. To view your certificates, under **Certificates - Current User** in the left pane, expand the directory for the type of certificate you want to view.
 
-  
 ## See also
 - [Working with certificates](working-with-certificates.md)
 - [How to: Create temporary certificates for use during development](how-to-create-temporary-certificates-for-use-during-development.md)

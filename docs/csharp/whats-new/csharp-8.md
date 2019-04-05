@@ -214,7 +214,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 
 In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
 
-
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)
 {

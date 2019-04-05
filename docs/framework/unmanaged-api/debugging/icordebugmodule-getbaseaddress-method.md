@@ -47,4 +47,3 @@ HRESULT GetBaseAddress(
   
 ## See also
 
-

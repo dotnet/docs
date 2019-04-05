@@ -34,9 +34,7 @@ A duplex service contract is a message exchange pattern in which both endpoints 
  The configuration for the service must be set up to provide a binding that supports both session communication and duplex communication. The `wsDualHttpBinding` element supports session communication and allows duplex communication by providing dual HTTP connections, one for each direction.  
   
  On the client, you must configure an address that the server can use to connect to the client, as shown in the following sample configuration.  
-  
-  
-  
+
 > [!NOTE]
 >  Non-duplex clients that fail to authenticate using a secure conversation typically throw a <xref:System.ServiceModel.Security.MessageSecurityException>. However, if a duplex client that uses a secure conversation fails to authenticate, the client receives a <xref:System.TimeoutException> instead.  
   

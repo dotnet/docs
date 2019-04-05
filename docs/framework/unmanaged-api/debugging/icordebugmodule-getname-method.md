@@ -55,4 +55,3 @@ HRESULT GetName(
   
 ## See also
 
-

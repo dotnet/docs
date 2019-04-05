@@ -284,7 +284,6 @@ You will need to ensure the license file is packed by adding it explicitly to th
 
 An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
 
-
 ### PackageIconUrl
 
 A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.

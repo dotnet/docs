@@ -44,4 +44,3 @@ HRESULT IsValueClass (
   
 ## See also
 
-

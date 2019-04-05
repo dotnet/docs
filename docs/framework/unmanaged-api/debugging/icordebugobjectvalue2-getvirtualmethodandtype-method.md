@@ -36,4 +36,3 @@ HRESULT GetVirtualMethodAndType (
   
 ## See also
 
-

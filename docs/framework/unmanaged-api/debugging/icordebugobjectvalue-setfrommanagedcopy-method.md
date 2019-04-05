@@ -34,4 +34,3 @@ HRESULT SetFromManagedCopy (
   
 ## See also
 
-

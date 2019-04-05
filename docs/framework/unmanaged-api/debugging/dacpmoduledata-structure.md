@@ -43,7 +43,6 @@ struct DacpModuleData
 | `ilBase`  | The address of the loaded image's base.                                 |
 | `payLoad` | A payload buffer for additional module information used by the runtime. |
 
-
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above.

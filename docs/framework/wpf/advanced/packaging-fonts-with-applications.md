@@ -16,9 +16,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   
 > [!NOTE]
 >  As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts [!INCLUDE[TLA#tla_ms#initcap](../../../../includes/tlasharptla-mssharpinitcap-md.md)] supplies with applications and [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)], do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
-  
 
-  
 <a name="introduction_to_packaging_fonts"></a>   
 ## Introduction to Packaging Fonts  
  You can easily package fonts as resources within your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications to display user interface text and other types of text based content. The fonts can be separate from or embedded within the application's assembly files. You can also create a resource-only font library, which your application can reference.  

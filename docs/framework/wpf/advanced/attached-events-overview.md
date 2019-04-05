@@ -15,9 +15,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
 ---
 # Attached Events Overview
 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] defines a language component and type of event called an *attached event*. The concept of an attached event enables you to add a handler for a particular event to an arbitrary element rather than to an element that actually defines or inherits the event. In this case, neither the object potentially raising the event nor the destination handling instance defines or otherwise "owns" the event.  
-  
- 
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you have read [Routed Events Overview](routed-events-overview.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).  

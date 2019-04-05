@@ -8,8 +8,7 @@ ms.assetid: 67df6de5-db96-4c71-b752-af90729a6537
 ---
 # Menu Overview
 The <xref:System.Windows.Controls.Menu> class enables you to organize elements associated with commands and event handlers in a hierarchical order. Each <xref:System.Windows.Controls.Menu> element contains a collection of <xref:System.Windows.Controls.MenuItem> elements.  
-  
-  
+
 <a name="menu_control"></a>   
 ## Menu Control  
  The <xref:System.Windows.Controls.Menu> control presents a list of items that specify commands or options for an application. Typically, clicking a <xref:System.Windows.Controls.MenuItem> opens a submenu or causes an application to carry out a command.  

@@ -154,7 +154,6 @@ You must use the following switches with the `dotnet publish` command to publish
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)
 
-
 ## See also
 
 - [.NET Core Application Deployment Overview](index.md)

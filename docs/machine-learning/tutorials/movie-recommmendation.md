@@ -149,7 +149,6 @@ After `Main()`, create a method called `LoadData()`:
 public static (IDataView training, IDataView test) LoadData(MLContext mlContext)
 {
 
-
 }
 ```
 
@@ -167,7 +166,6 @@ The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFi
 Add the following as the next two lines of code in the `Main()` method to call your `LoadData()` method and return the `Train` and `Test` data:
 
 [!code-csharp[LoadDataMain](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#LoadDataMain "Add LoadData method to Main")]
-
 
 ## Build and train your model
 
@@ -190,7 +188,6 @@ Create the `BuildAndTrainModel()` method, just after the `LoadData()` method, us
 public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView trainingDataView)
 {
 
-
 }
 ```
 > [!NOTE]
@@ -207,7 +204,6 @@ Since `userId` and `movieId` represent users and movie titles, not real values, 
 | 1 | 1 | 4 | userKey1 | movieKey1 |
 | 1 | 3 | 4 | userKey1 | movieKey2 |
 | 1 | 6 | 4 | userKey1 | movieKey3 |
-
 
 Choose the machine learning algorithm and append it to the data transformation definitions by adding the following as the next line of code in `BuildAndTrainModel()`:
 
@@ -244,7 +240,6 @@ Create the `EvaluateModel()` method, just after the `BuildAndTrainModel()` metho
 ```csharp
 public static void EvaluateModel(MLContext mlContext, IDataView testDataView, ITransformer model)
 {
-
 
 }
 ```
@@ -313,7 +308,6 @@ Create the `UseModelForSinglePrediction()` method, just after the `EvaluateModel
 public static void UseModelForSinglePrediction(MLContext mlContext, ITransformer model)
 {
 
-
 }
 ```
 
@@ -353,7 +347,6 @@ Create the `SaveModel()` method, just after the `UseModelForSinglePrediction()` 
 ```csharp
 public static void SaveModel(MLContext mlContext, ITransformer model)
 {
-
 
 }
 ```

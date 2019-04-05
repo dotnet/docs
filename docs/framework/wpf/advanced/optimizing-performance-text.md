@@ -22,8 +22,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 3.  Using high-level controls, such as the <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects.  
   
  This topic provides text rendering performance recommendations.  
-  
-  
+
 <a name="Glyph_Level"></a>   
 ## Rendering Text at the Glyph Level  
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  

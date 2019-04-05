@@ -25,8 +25,7 @@ A button that uses a custom control template
   
  ![A button with a red border.](./media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 A button that uses a custom control template and has the mouse pointer over it  
-  
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand how to create and use controls and styles as discussed in [Controls](index.md). The concepts discussed in this topic apply to elements that inherit from the <xref:System.Windows.Controls.Control> class, except for the <xref:System.Windows.Controls.UserControl>. You cannot apply a <xref:System.Windows.Controls.ControlTemplate> to a <xref:System.Windows.Controls.UserControl>.  

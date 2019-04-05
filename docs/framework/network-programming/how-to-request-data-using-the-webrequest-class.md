@@ -90,7 +90,6 @@ The following code example shows how to create a request to a web server and rea
 [!code-csharp[RequestDataUsingWebRequest](../../../samples/snippets/csharp/VS_Snippets_Network/RequestDataUsingWebRequest/cs/WebRequestGetExample.cs)]
 [!code-vb[RequestDataUsingWebRequest](../../../samples/snippets/visualbasic/VS_Snippets_Network/RequestDataUsingWebRequest/vb/WebRequestGetExample.vb)]
 
-  
 ## See also
 - [Creating internet requests](creating-internet-requests.md)
 - [Using Streams on the network](using-streams-on-the-network.md)

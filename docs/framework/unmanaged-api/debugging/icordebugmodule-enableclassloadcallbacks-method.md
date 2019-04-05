@@ -49,4 +49,3 @@ HRESULT EnableClassLoadCallbacks(
   
 ## See also
 
-

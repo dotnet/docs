@@ -10,8 +10,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ---
 # Dependency Property Value Precedence
 <a name="introduction"></a> This topic explains how the workings of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
-    
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] classes, and have read [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  

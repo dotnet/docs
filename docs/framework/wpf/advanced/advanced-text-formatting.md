@@ -17,9 +17,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
 > [!NOTE]
 >  All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
-  
 
-  
 <a name="prereq"></a>   
 ## Prerequisites  
  This topic assumes that you are familiar with the higher level [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] used for text presentation. Most user scenarios will not require the advanced text formatting [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] discussed in this topic. For an introduction to the different text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see [Documents in WPF](documents-in-wpf.md).  

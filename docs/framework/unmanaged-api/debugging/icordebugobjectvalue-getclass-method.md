@@ -47,4 +47,3 @@ HRESULT GetClass (
   
 ## See also
 
-

@@ -36,8 +36,7 @@ ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
 -   UIAutomationTypes.dll  
   
 -   WindowsBase.dll  
-  
-  
+
 <a name="Provider_Interfaces"></a>   
 ### Provider Interfaces  
  Every [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] provider must implement one of the following interfaces.  

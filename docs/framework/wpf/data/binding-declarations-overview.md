@@ -15,9 +15,7 @@ ms.assetid: b97fd626-4c0d-4761-872a-2bca5820da2c
 ---
 # Binding Declarations Overview
 This topic discusses the different ways you can declare a binding.  
-  
- 
-  
+
 <a name="Prereq"></a>   
 ## Prerequisites  
  Before reading this topic, it is important that you are familiar with the concept and usage of markup extensions. For more information about markup extensions, see [Markup Extensions and WPF XAML](../advanced/markup-extensions-and-wpf-xaml.md).  

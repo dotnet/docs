@@ -25,7 +25,6 @@ In this tutorial, you learn how to:
 > - Create and configure a console app project for the WCF client.
 > - Add a service reference to the WCF service to generate the proxy class and configuration files.
 
-
 ## Create a Windows Communication Foundation client
 
 1. Create a console app project in Visual Studio: 
@@ -61,7 +60,6 @@ In this tutorial, you learn how to:
    3. Select **CalculatorService** to expand it and display the service contracts implemented by the service. Leave the default **Namespace** and choose **OK**.
 
       Visual Studio adds a new item under the **Connected Services** folder in the **GettingStartedClient** project. 
-
 
 ### ServiceModel Metadata Utility tool
 
@@ -123,5 +121,4 @@ Advance to the next tutorial to learn how to use the generated client.
 
 > [!div class="nextstepaction"]
 > [Tutorial: Use a WCF client](how-to-use-a-wcf-client.md)
-
 

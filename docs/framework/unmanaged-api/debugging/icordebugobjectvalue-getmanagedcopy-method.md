@@ -34,4 +34,3 @@ HRESULT GetManagedCopy (
   
 ## See also
 
-

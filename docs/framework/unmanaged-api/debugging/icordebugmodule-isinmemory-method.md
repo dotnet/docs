@@ -47,4 +47,3 @@ HRESULT IsInMemory(
   
 ## See also
 
-

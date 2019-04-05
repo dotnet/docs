@@ -41,7 +41,6 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 [Data transforms](./resources/transforms.md) describes data preparation capabilities in ML.NET.
 
-
 ## API reference
 
 [ML.NET API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet) describes the breadth of APIs available.

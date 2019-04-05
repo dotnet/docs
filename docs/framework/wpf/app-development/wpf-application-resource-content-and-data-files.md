@@ -32,8 +32,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
  To reference application data files, Windows Presentation Foundation (WPF) uses the Pack [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] Scheme, which is described in detail in [Pack URIs in WPF](pack-uris-in-wpf.md)).  
   
  This topic describes how to configure and use application data files.  
-  
-  
+
 <a name="Resource_Files"></a>   
 ## Resource Files  
  If an application data file must always be available to an application, the only way to guarantee availability is to compile it into an application's main executable assembly or one of its referenced assemblies. This type of application data file is known as a *resource file*.  

@@ -18,8 +18,7 @@ ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
 ---
 # Markup Extensions and WPF XAML
 This topic introduces the concept of markup extensions for XAML, including their syntax rules, purpose, and the class object model that underlies them. Markup extensions are a general feature of the XAML language and of the .NET implementation of XAML services. This topic specifically details markup extensions for use in WPF XAML.  
-  
-  
+
 <a name="XAML_Processors_and_Markup_Extensions"></a>   
 ## XAML Processors and Markup Extensions  
  Generally speaking, a XAML parser can either interpret an attribute value as a literal string that can be converted to a primitive, or convert it to an object by some means. One such means is by referencing a type converter; this is documented in the topic [TypeConverters and XAML](typeconverters-and-xaml.md). However, there are scenarios where different behavior is required. For example, a XAML processor can be instructed that a value of an attribute should not result in a new object in the object graph. Instead, the attribute should result in an object graph that makes a reference to an already constructed object in another part of the graph, or a static object. Another scenario is that a XAML processor can be instructed to use a syntax that provides non-default arguments to the constructor of an object. These are the types of scenarios where a markup extension can provide the solution.  

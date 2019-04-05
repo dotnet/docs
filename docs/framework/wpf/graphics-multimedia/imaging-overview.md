@@ -24,8 +24,7 @@ ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 ---
 # Imaging Overview
 This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../includes/tlasharptla-wic-md.md)]. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] enables developers to display, transform, and format images.  
-  
-  
+
 <a name="_wpfImaging"></a>   
 ## WPF Imaging Component  
  [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] provides significant enhancements in imaging capabilities within [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the [!INCLUDE[TLA#tla_gdi](../../../../includes/tlasharptla-gdi-md.md)] or [!INCLUDE[TLA#tla_gdiplus](../../../../includes/tlasharptla-gdiplus-md.md)] libraries. These [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is designed to overcome the shortcomings of [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] and [!INCLUDE[TLA2#tla_gdiplus](../../../../includes/tla2sharptla-gdiplus-md.md)] and provide a new set of [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] to display and use images within your applications.  

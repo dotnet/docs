@@ -34,8 +34,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 > [!NOTE]
 >  Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, including [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] and loose [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by [!INCLUDE[TLA#tla_iegeneric](../../../../includes/tlasharptla-iegeneric-md.md)]. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
-  
-  
+
 <a name="TheWindowClass"></a>   
 ## The Window Class  
  The following figure illustrates the constituent parts of a window:  
@@ -124,8 +123,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 <a name="WindowLifetime"></a>   
 ## Window Lifetime  
  As with any class, a window has a lifetime that begins when it is first instantiated, after which it is opened, activated and deactivated, and eventually closed.  
-  
-  
+
 <a name="Opening_a_Window"></a>   
 ### Opening a Window  
  To open a window, you first create an instance of it, which is demonstrated in the following example.  
@@ -252,8 +250,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  [!code-csharp[WindowClosingSnippets](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml.cs)]
  [!code-vb[WindowClosingSnippets](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic/datawindow.xaml.vb)]  
- 
-  
+
  The <xref:System.Windows.Window.Closing> event handler is passed a <xref:System.ComponentModel.CancelEventArgs>, which implements the `Boolean`<xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property that you set to `true` to prevent a window from closing.  
   
  If <xref:System.Windows.Window.Closing> is not handled, or it is handled but not canceled, the window will close. Just before a window actually closes, <xref:System.Windows.Window.Closed> is raised. At this point, a window cannot be prevented from closing.  
@@ -395,8 +392,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  You change the appearance of the client area of a window by adding window-specific content to it, such as buttons, labels, and text boxes. To configure the non-client area, <xref:System.Windows.Window> provides several properties, which include <xref:System.Windows.Window.Icon%2A> to set a window's icon and <xref:System.Windows.Window.Title%2A> to set its title.  
   
  You can also change the appearance and behavior of non-client area border by configuring a window's resize mode, window style, and whether it appears as a button in the desktop task bar.  
-  
-  
+
 <a name="Resize_Mode"></a>   
 ### Resize Mode  
  Depending on the <xref:System.Windows.Window.WindowStyle%2A> property, you can control how (and if) users can resize the window. The choice of window style affects whether a user can resize the window by dragging its border with the mouse, whether the **Minimize**, **Maximize**, and **Resize** buttons appear on the non-client area, and, if they do appear, whether they are enabled.  

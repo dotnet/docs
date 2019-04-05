@@ -11,9 +11,7 @@ ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 ---
 # Graphics Rendering Registry Settings
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics rendering registry settings that affect [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
-  
 
-  
 <a name="overview"></a>   
 ## When to Use Graphics Rendering Registry Settings  
  These registry settings are provided for troubleshooting, debugging, and product support purposes. Because changes to the registry affect all [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, your application should never alter these registry keys automatically, or during installation.  

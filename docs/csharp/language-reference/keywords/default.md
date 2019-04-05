@@ -13,11 +13,7 @@ ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
 
 # default (C# Reference)
 
-The `default` keyword can be used in the `switch` statement or in a default value expression:
-
-- [The switch statement](switch.md): Specifies the default label.
-
-- [Default value expressions](../../programming-guide/statements-expressions-operators/default-value-expressions.md): Produces the default value of a type.
+The `default` keyword can be used in the [`switch` statement](switch.md) to specify the default label,  or in a [default value expression](../../programming-guide/statements-expressions-operators/default-value-expressions.md) to produce the default value of a type.
 
 ## See also
 

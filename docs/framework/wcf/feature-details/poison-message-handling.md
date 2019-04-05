@@ -71,9 +71,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
      [!code-csharp[S_UE_MSMQ_Poison#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/poisonbehaviorattribute.cs#3)]  
   
 4.  Ensure that your service is annotated with the poison behavior attribute.  
-  
-  
-  
+
  In addition, if the `ReceiveErrorHandling` is set to `Fault`, the `ServiceHost` faults when encountering the poison message. You can hook up to the faulted event and shut down the service, take corrective actions, and restart. For example, the `LookupId` in the <xref:System.ServiceModel.MsmqPoisonMessageException> propagated to the `IErrorHandler` can be noted and when the service host faults, you could use the `System.Messaging` API to receive the message from the queue using the `LookupId` to remove the message from the queue and store the message in some external store or another queue. You can then restart `ServiceHost` to resume normal processing. The [Poison Message Handling in MSMQ 4.0](../../../../docs/framework/wcf/samples/poison-message-handling-in-msmq-4-0.md) demonstrates this behavior.  
   
 ## Transaction Time-Out and Poison Messages  

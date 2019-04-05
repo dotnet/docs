@@ -10,9 +10,7 @@ ms.assetid: 33d4c5c2-2daf-4e45-ba9a-5b673e2b8280
 ---
 # Adorners Overview
 Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to provide visual cues to a user. Among other uses, Adorners can be used to add functional handles to elements or provide state information about a control.  
-  
-  
-  
+
 <a name="about_Adorners"></a>   
 ## About Adorners  
  An <xref:System.Windows.Documents.Adorner> is a custom <xref:System.Windows.FrameworkElement> that is bound to a <xref:System.Windows.UIElement>. Adorners are rendered in an <xref:System.Windows.Documents.AdornerLayer>, which is a rendering surface that is always on top of the adorned element or a collection of adorned elements. Rendering of an adorner is independent from rendering of the <xref:System.Windows.UIElement> that the adorner is bound to. An adorner is typically positioned relative to the element to which it is bound, using the standard 2-D coordinate origin located at the upper-left of the adorned element.  

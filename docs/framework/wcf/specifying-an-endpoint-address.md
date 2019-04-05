@@ -50,9 +50,7 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
 ## Endpoint Address in Metadata  
  An endpoint address is represented in Web Services Description Language (WSDL) as a WS-Addressing `EndpointReference` (EPR) element inside the corresponding endpoint's `wsdl:port` element. The EPR contains the endpoint's address as well as any address properties. Note that the EPR inside `wsdl:port` replaces `soap:Address` as seen in the following example.  
-  
-  
-  
+
 ## Defining Endpoint Addresses in Code  
  An endpoint address can be created in code with the <xref:System.ServiceModel.EndpointAddress> class. The URI specified for the endpoint address can be a fully-qualified path or a path that is relative to the service's base address. The following code illustrates how to create an instance of the <xref:System.ServiceModel.EndpointAddress> class and add it to the <xref:System.ServiceModel.ServiceHost> instance that is hosting the service.  
   

@@ -9,8 +9,7 @@ ms.assetid: 62212512-5a5c-4864-949e-b6a6a3a52c02
 ---
 # TreeView Overview
 The <xref:System.Windows.Controls.TreeView> control provides a way to display information in a hierarchical structure by using collapsible nodes. This topic introduces the <xref:System.Windows.Controls.TreeView> and <xref:System.Windows.Controls.TreeViewItem> controls, and provides simple examples of their use.  
-  
-  
+
 <a name="Simple_TreeView_Control"></a>   
 ## What Is a TreeView?  
  <xref:System.Windows.Controls.TreeView> is an <xref:System.Windows.Controls.ItemsControl> that nests the items by using <xref:System.Windows.Controls.TreeViewItem> controls. The following example creates a <xref:System.Windows.Controls.TreeView>.  

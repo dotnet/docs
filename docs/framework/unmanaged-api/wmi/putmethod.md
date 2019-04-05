@@ -54,7 +54,6 @@ HRESULT PutMethod (
 
 `pSignatureOut`  
 [in]  A pointer to a copy of the [__Parameters system class](/windows/desktop/WmiSdk/--parameters) that contains the `out` parameters for the method. This parameter is ignored if set to `null`.
- 
 
 ## Return value
 

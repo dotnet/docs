@@ -36,9 +36,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
      [!code-vb[S_Msmq_Transacted#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/hostapp.vb#4)]  
   
 5.  Define a <xref:System.ServiceModel.Description.ServiceEndpoint> in configuration that specifies the service address and uses the standard <xref:System.ServiceModel.NetMsmqBinding> binding. For more information about using WCF configuration, see [Configuring WCF services](../configuring-services.md).  
-  
-  
-  
+
 6.  Create a host for the `OrderProcessing` service using <xref:System.ServiceModel.ServiceHost> that reads messages from the queue and processes them. Open the service host to make the service available. Display a message that tells the user to press any key to terminate the service. Call `ReadLine` to wait for the key to be pressed and then close the service.  
   
      [!code-csharp[S_Msmq_Transacted#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/hostapp.cs#6)]
@@ -53,9 +51,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
     ```  
   
 2.  Define a <xref:System.ServiceModel.Description.ServiceEndpoint> in configuration that specifies the address and uses the standard <xref:System.ServiceModel.NetMsmqBinding> binding, as shown in the following example.  
-  
-  
-  
+
 3.  Create a transaction scope to write to the transactional queue, call the `SubmitPurchaseOrder` operation and close the WCF client, as shown in the following example.  
   
      [!code-csharp[S_Msmq_Transacted#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#8)]
@@ -69,14 +65,10 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
   
  [!code-csharp[S_Msmq_Transacted#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/hostapp.cs#10)]
  [!code-vb[S_Msmq_Transacted#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/hostapp.vb#10)]  
-  
-  
-  
+
  [!code-csharp[S_Msmq_Transacted#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#12)]
  [!code-vb[S_Msmq_Transacted#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#12)]  
-  
-  
-  
+
 ## See also
 - <xref:System.ServiceModel.NetMsmqBinding>
 - [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)

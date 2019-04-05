@@ -30,7 +30,6 @@ For more information about what was released with each version, see the followin
 - [Take C# 8.0 for a spin](https://devblogs.microsoft.com/dotnet/take-c-8-0-for-a-spin/)
 - [Building C# 8.0](https://devblogs.microsoft.com/dotnet/building-c-8-0/)
 
-
 ### Ranges and indices
 
 The new `Index` type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
@@ -165,7 +164,6 @@ During `dotnet build` or `dotnet publish`, an executable is created provided tha
 `dotnet build` now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`. 
 
 There are some operations, like linking and razor page publishing that will still require publishing.
-
 
 ## Local dotnet tools
 
@@ -479,7 +477,6 @@ Windows offers a rich native API, in the form of flat C APIs, COM, and WinRT. Si
 
 You can see an example of using COM with the [Excel Demo source code](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo).
 
-
 ## Type: SequenceReader
 
 In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers. 
@@ -768,7 +765,6 @@ Two new packages have been released to NuGet that you can use for GPIO programmi
 The GPIO Packages includes APIs for GPIO, SPI, I2C and PWM devices. The IoT bindings package includes [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) for various chips and sensors, the same ones available at [dotnet/iot - src/devices](https://github.com/dotnet/iot/tree/master/src/devices).
 
 The updated serial port APIs that were announced as part of .NET Core 3.0 Preview 1 are not part of these packages but are available as part of the .NET Core platform.
-
 
 ## Platform Support
 

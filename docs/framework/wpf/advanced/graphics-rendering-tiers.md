@@ -11,9 +11,7 @@ ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
 ---
 # Graphics Rendering Tiers
 A rendering tier defines a level of graphics hardware capability and performance for a device that runs a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
-  
 
-  
 <a name="graphics_hardware"></a>   
 ## Graphics Hardware  
  The features of the graphics hardware that most impact the rendering tier levels are:  

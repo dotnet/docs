@@ -13,9 +13,7 @@ ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
 ---
 # Collection-Type Dependency Properties
 This topic provides guidance and suggested patterns for how to implement a dependency property where the type of the property is a collection type.  
-  
- 
-  
+
 <a name="implementing"></a>   
 ## Implementing a Collection-Type Dependency Property  
  For a dependency property in general, the implementation pattern that you follow is that you define a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property wrapper, where that property is backed by a <xref:System.Windows.DependencyProperty> identifier rather than a field or other construct. You follow this same pattern when you implement a collection-type property. However, a collection-type property introduces some complexity to the pattern whenever the type that is contained within the collection is itself a <xref:System.Windows.DependencyObject> or <xref:System.Windows.Freezable> derived class.  

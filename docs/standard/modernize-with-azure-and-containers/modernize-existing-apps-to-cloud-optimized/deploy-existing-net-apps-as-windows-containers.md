@@ -129,7 +129,6 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
     [https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf](https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf)
 
-
 ## The container ecosystem in Azure
 
 In previous sections, it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.

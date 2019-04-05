@@ -45,7 +45,6 @@ HRESULT GetCurrentApartmentType (
 
 ## Return value
 
-
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `S_OK` | 0 | The function completed successfully. |

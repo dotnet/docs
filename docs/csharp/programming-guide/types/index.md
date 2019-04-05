@@ -69,8 +69,7 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
  The following illustration shows the relationship between value types and reference types in the CTS.
 
  The following image shows value types and reference types in the CTS: 
-  
-  
+
  ![Screenshot that shows CTS value types and reference types.](./media/index/value-reference-types-common-type-system.png)  
   
 > [!NOTE]

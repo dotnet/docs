@@ -8,8 +8,7 @@ ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 ---
 # Deploying a WPF Application (WPF)
 After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application type.  
-  
-   
+
 <a name="Deployment_Technologies"></a>   
 ## Deployment Technologies  
  [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and the .NET Framework include several deployment technologies, including:  

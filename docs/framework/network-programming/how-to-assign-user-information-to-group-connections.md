@@ -8,7 +8,6 @@ ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
 ---
 # How to: Assign User Information to Group Connections
 
-  
  The following example demonstrates how to assign user information to group connections, assuming that the application sets the variables *UserName*, *SecurelyStoredPassword*, and *Domain* before this section of code is called and that *UserName* is unique.  
   
 ### To assign user information to a group connection  

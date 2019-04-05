@@ -64,4 +64,3 @@ HRESULT GetCode (
   
 ## See also
 - [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
-

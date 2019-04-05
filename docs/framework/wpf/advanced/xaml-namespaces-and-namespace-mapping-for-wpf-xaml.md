@@ -17,8 +17,7 @@ ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
 ---
 # XAML Namespaces and Namespace Mapping for WPF XAML
 This topic further explains the presence and purpose of the two XAML namespace mappings as often found in the root tag of a WPF XAML file. It also describes how to produce similar mappings for using elements that are defined in your own code, and/or within separate assemblies.  
-  
-  
+
 ## What is a XAML Namespace?  
  A XAML namespace is really an extension of the concept of an XML namespace. The techniques of specifying a XAML namespace rely on the XML namespace syntax, the convention of using URIs as namespace identifiers, using prefixes to provide a means to reference multiple namespaces from the same markup source, and so on. The primary concept that is added to the XAML definition of the XML namespace is that a XAML namespace implies both a scope of uniqueness for the markup usages, and also influences how markup entities are potentially backed by specific CLR namespaces and referenced assemblies. This latter consideration is also influenced by the concept of a XAML schema context. But for purposes of how WPF works with XAML namespaces, you can generally think of XAML namespaces in terms of a default XAML namespace, the XAML language namespace, and any further XAML namespaces as mapped by your XAML markup directly to specific backing CLR namespaces and referenced assemblies.  
   

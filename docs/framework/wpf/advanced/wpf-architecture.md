@@ -19,8 +19,7 @@ ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
 ---
 # WPF Architecture
 This topic provides a guided tour of the Windows Presentation Foundation (WPF) class hierarchy. It covers most of the major subsystems of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], and describes how they interact. It also details some of the choices made by the architects of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].  
-  
-  
+
 <a name="System_Object"></a>   
 ## System.Object  
  The primary [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] programming model is exposed through managed code. Early in the design phase of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] there were a number of debates about where the line should be drawn between the managed components of the system and the unmanaged ones. The [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] provides a number of features that make development more productive and robust (including memory management, error handling, common type system, etc.) but they come at a cost.  

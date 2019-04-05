@@ -62,7 +62,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Text.WordHashBagProducingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. It does so by hashing each ngram and using the hash value as the index in the bag. |
 | <xref:Microsoft.ML.Transforms.Text.WordTokenizingTransformer> | Splits the text into words using the separator character(s). |
 
-
 ## Image model featurizers
 
 | Transform | Definition |
@@ -120,7 +119,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.SkipFilter> | Allows limiting input to a subset of rows by skipping a number of rows. |
 | <xref:Microsoft.ML.Transforms.SkipTakeFilter> | Allows limiting input to a subset of rows at an optional offset. Can be used to implement data paging. When created with SkipTakeFilter.SkipArguments behaves as `SkipFilter`.
 | <xref:Microsoft.ML.Transforms.TakeFilter> | Allows limiting input to a subset of rows by taking N first rows. |
-
 
 ## Schema
 

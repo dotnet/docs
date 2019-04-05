@@ -8,8 +8,7 @@ ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 ---
 # PropertyPath XAML Syntax
 The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.  
-    
-  
+
 <a name="where"></a>   
 ## Where PropertyPath Is Used  
  <xref:System.Windows.PropertyPath> is a common object that is used in several [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] features. Despite using the common <xref:System.Windows.PropertyPath> to convey property path information, the usages for each feature area where <xref:System.Windows.PropertyPath> is used as a type vary. Therefore, it is more practical to document the syntaxes on a per-feature basis.  

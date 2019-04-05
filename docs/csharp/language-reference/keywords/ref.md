@@ -19,7 +19,6 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. For more information, see [Ref locals](#ref-locals).
 - In a `struct` declaration to declare a `ref struct` or a `ref readonly struct`. For more information, see [ref struct types](#ref-struct-types).
 
-
 ## Passing an argument by reference
 
 When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.

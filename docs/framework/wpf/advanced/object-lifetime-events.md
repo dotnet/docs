@@ -27,9 +27,7 @@ ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
 ---
 # Object Lifetime Events
 This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events that signify stages in an object lifetime of creation, use, and destruction.  
-  
 
-  
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] (see [XAML Overview (WPF)](xaml-overview-wpf.md)) and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  

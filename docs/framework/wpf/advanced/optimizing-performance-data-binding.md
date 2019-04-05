@@ -10,9 +10,7 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] objects and [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)].  
   
  This topic provides data binding performance recommendations.  
-  
 
-  
 <a name="HowDataBindingReferencesAreResolved"></a>   
 ## How Data Binding References are Resolved  
  Before discussing data binding performance issues, it is worthwhile to explore how the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding engine resolves object references for binding.  

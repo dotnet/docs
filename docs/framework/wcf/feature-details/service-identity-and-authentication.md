@@ -48,13 +48,9 @@ A service's *endpoint identity* is a value generated from the service Web Servic
   
 ## Using the \<identity> Element in Configuration  
  If you change the client credential type in the binding previously shown to `Certificate,` then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
-  
-  
-  
+
  You can change the value of the default service identity or change the type of the identity by using the `<identity>` element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.  
-  
-  
-  
+
 ## Setting Identity Programmatically  
  Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
   
@@ -63,16 +59,12 @@ A service's *endpoint identity* is a value generated from the service Web Servic
   
 ## Specifying Identity at the Client  
  At design time, a client developer typically uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate client configuration. The generated configuration file (intended for use by the client) contains the server's identity. For example, the following code is generated from a service that specifies a DNS identity, as shown in the preceding example. Note that the client's endpoint identity value matches that of the service. In this case, when the client receives the Windows (Kerberos) credentials for the service, it expects the value to be `contoso.com`.  
-  
-  
-  
+
  If, instead of Windows, the service specifies a certificate as the client credential type, then the certificate's DNS property is expected to be the value `contoso.com`. (Or if the DNS property is `null`, the certificate's subject name must be `contoso.com`.)  
   
 #### Using a Specific Value for Identity  
  The following client configuration file shows how the service's identity is expected to be a specific value. In the following example, the client can communicate with two endpoints. The first is identified with a certificate thumbprint and the second with a certificate RSA key. That is, a certificate that contains only a public key/private key pair, but is not issued by a trusted authority.  
-  
-  
-  
+
 ## Identity Checking at Run Time  
  At design time, a client developer determines the server's identity through its metadata. At runtime, the identity check is performed before calling any endpoints on the service.  
   

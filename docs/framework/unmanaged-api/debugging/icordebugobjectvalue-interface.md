@@ -50,4 +50,3 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
   
 ## See also
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-

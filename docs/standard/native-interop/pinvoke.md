@@ -233,7 +233,6 @@ namespace PInvokeSamples {
 
 Both of the previous examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Learn about how types are marshalled to native code in our page on [Type marshalling](type-marshalling.md).
 
-
 ## More resources
 
 *   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Windows APIs and how to call them.

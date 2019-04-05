@@ -41,4 +41,3 @@ Extends the "ICorDebugObjectValue" interface to provide stack trace information 
 ## See also
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-

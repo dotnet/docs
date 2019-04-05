@@ -15,8 +15,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 ---
 # Optimizing Performance: 2D Graphics and Imaging
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a wide range of 2D graphics and imaging functionality that can be optimized for your application requirements. This topic provides information about performance optimization in those areas.  
-  
-  
+
 <a name="Drawing_and_Shapes"></a>   
 ## Drawing and Shapes  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides both <xref:System.Windows.Media.Drawing> and <xref:System.Windows.Shapes.Shape> objects to represent graphical drawing content. However, <xref:System.Windows.Media.Drawing> objects are simpler constructs than <xref:System.Windows.Shapes.Shape> objects and provide better performance characteristics.  

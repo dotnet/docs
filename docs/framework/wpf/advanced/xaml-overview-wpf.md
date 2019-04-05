@@ -22,9 +22,7 @@ ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
 ---
 # XAML overview (WPF)
 This topic describes the features of the XAML language and demonstrates how you can use XAML to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic specifically describes XAML as implemented by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. XAML itself is a larger language concept than [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
-  
-  
-  
+
 <a name="what_is_xaml"></a>   
 ## What is XAML?  
  XAML is a declarative markup language. As applied to the .NET Framework programming model, XAML simplifies creating a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] for a .NET Framework application. You can create visible [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements in the declarative XAML markup, and then separate the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] definition from the run-time logic by using code-behind files, joined to the markup through partial class definitions. XAML directly represents the instantiation of objects in a specific set of backing types defined in assemblies. This is unlike most other markup languages, which are typically an interpreted language without such a direct tie to a backing type system. XAML enables a workflow where separate parties can work on the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] and the logic of an application, using potentially different tools.  

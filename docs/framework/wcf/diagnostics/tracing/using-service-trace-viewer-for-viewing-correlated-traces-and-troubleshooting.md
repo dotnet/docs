@@ -163,8 +163,7 @@ The following image shows WCF client activities listed by creation time (left pa
  The following image shows a graph view of WCF service activities:   
 
  ![Screenshot of Trace Viewer showing a list of WCF service activities](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-service-activities.gif)  
-  
-  
+
  The following screenshot shows the activities for both the client and service, and highlights the Process Action Add activity across processes (orange). Arrows relate the request and response messages sent and received by the client and service. The traces of Process Action are separated across processes in the graph, but shown as part of the same activity in the upper-right panel. In this panel, we can see client traces for sent messages followed by service traces for received and processed messages.  
   
  The following images shows a graph view of both WCF client and service activities  
@@ -183,8 +182,7 @@ Error correlation across the service and client
   
   The following image shows how to select a red or yellow activity to locate the root of a problem.   
  ![Screenshot of red or yellow activities for locating the root of a problem.](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/service-trace-viewer.gif)  
- 
-  
+
  On the upper right panel, you can examine traces for the activity you selected on the left. You can then examine red or yellow traces in that panel and see how they are correlated. In the preceding graph, we see warning traces both for the client and service in the same Process Action activity.  
   
  If these traces do not provide you with the root cause of the error, you can utilize the graph by double-clicking the selected activity on the left panel (here Process action). The graph with related activities is then displayed. You can then expand related activities (by clicking the "+" signs) to find the first emitted trace in red or yellow in a related activity. Keep expanding the activities that happened just before the red or yellow trace of interest, following transfers to related activities or message flows across endpoints, until you track the root cause of the problem.  

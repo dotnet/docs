@@ -9,9 +9,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 ---
 # GridView Overview
 <xref:System.Windows.Controls.GridView> view mode is one of the view modes for a <xref:System.Windows.Controls.ListView> control. The <xref:System.Windows.Controls.GridView> class and its supporting classes enable you and your users to view item collections in a table that typically uses buttons as interactive column headers. This topic introduces the <xref:System.Windows.Controls.GridView> class and outlines its use.  
-  
-  
-  
+
 <a name="DefiningaListViewthatusesGridViewView"></a>   
 ## What Is a GridView View?  
  The <xref:System.Windows.Controls.GridView> view mode displays a list of data items by binding data fields to columns and by displaying a column header to identify the field. The default <xref:System.Windows.Controls.GridView> style implements buttons as column headers. By using buttons for column headers, you can implement important user interaction capabilities; for example, users can click the column header to sort <xref:System.Windows.Controls.GridView> data according to the contents of a specific column.  

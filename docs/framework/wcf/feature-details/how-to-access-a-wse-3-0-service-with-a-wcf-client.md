@@ -53,9 +53,7 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
   
 ## Example  
  The following code example defines a custom binding that exposes properties that correspond to the properties of a WSE 3.0 turnkey security assertion. That custom binding, which is named `WseHttpBinding`, is then used to specify the binding properties for a WCF client that communicates with the WSSecurityAnonymous WSE 3.0 QuickStart sample.  
-  
-  
-  
+
 ## See also
 - <xref:System.ServiceModel.Channels.Binding>
 - [Interoperating with WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

@@ -89,7 +89,6 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
 -   <xref:System.Windows.Controls.HeaderedItemsControl>--Some examples of classes that inherit from this class are <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Controls.TreeViewItem>, and <xref:System.Windows.Controls.ToolBar>.  
 
-  
  For more information about these base classes, see [WPF Content Model](wpf-content-model.md).  
   
 ## See also

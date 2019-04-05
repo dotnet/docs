@@ -8,9 +8,7 @@ ms.assetid: 1ba6dc5b-11a7-4247-9213-36c6729ee35f
 ---
 # TextBox Overview
 The <xref:System.Windows.Controls.TextBox> class enables you to display or edit unformatted text. A common use of a <xref:System.Windows.Controls.TextBox> is editing unformatted text in a form. For example, a form asking for the user's name, phone number, etc would use <xref:System.Windows.Controls.TextBox> controls for text input. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and C#.  
-  
- 
-  
+
 <a name="textbox_or_richtextbox"></a>   
 ## TextBox or RichTextBox?  
  Both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> allow users to input text but the two controls are used for different scenarios. A <xref:System.Windows.Controls.TextBox> requires less system resources then a <xref:System.Windows.Controls.RichTextBox> so it is ideal when only plain text needs to be edited (i.e., usage in a form). A <xref:System.Windows.Controls.RichTextBox> is a better choice when it is necessary for the user to edit formatted text, images, tables, or other supported content. For example, editing a document, article, or blog that requires formatting, images, etc is best accomplished using a <xref:System.Windows.Controls.RichTextBox>. The table below summarizes the primary features of <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.TextBox>.  

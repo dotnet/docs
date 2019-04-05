@@ -8,9 +8,7 @@ ms.assetid: f23d6ec9-3780-4c09-a2ff-b2f0a2deddf1
 ---
 # Read-Only Dependency Properties
 This topic describes read-only dependency properties, including existing read-only dependency properties and the scenarios and techniques for creating a custom read-only dependency property.  
-  
 
-  
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand the basic scenarios of implementing a dependency property, and how metadata is applied to a custom dependency property. See [Custom Dependency Properties](custom-dependency-properties.md) and [Dependency Property Metadata](dependency-property-metadata.md) for context.  

@@ -21,7 +21,6 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 For download links and more information, see [.NET Core 2.2 downloads](https://www.microsoft.com/net/download/dotnet-core/2.2) or [.NET Core 2.1 downloads](https://www.microsoft.com/net/download/dotnet-core/2.1).
 
-
 # [.NET Core 1.x](#tab/netcore1x)
 
 .NET Core 1.x is supported on the following versions of macOS:

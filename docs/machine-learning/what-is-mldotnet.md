@@ -19,7 +19,6 @@ Machine learning is a data science technique that allows computers to use existi
 
 Forecasts or predictions from machine learning can make apps and devices smarter. When you shop online, machine learning helps recommend other products you might like based on what you've purchased. When your credit card is swiped, machine learning compares the transaction to a database of transactions and helps detect fraud. When your robot vacuum cleaner vacuums a room, machine learning helps it decide whether the job is done.
 
-
 ## Short videos on data science 
 
 Get a quick introduction to the basics of machine learning and data science from *Data Science for Beginners* in five short videos from a top data scientist. These videos are basic but useful, whether you're interested in doing data science or you work with data scientists.

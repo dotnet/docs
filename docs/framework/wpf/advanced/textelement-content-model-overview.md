@@ -12,8 +12,7 @@ ms.assetid: d0a7791c-b090-438c-812f-b9d009d83ee9
 ---
 # TextElement Content Model Overview
 This content model overview describes the supported content for a <xref:System.Windows.Documents.TextElement>. The <xref:System.Windows.Documents.Paragraph> class is a type of <xref:System.Windows.Documents.TextElement>. A content model describes what objects/elements can be contained in others. This overview summarizes the content model used for objects derived from <xref:System.Windows.Documents.TextElement>. For more information, see [Flow Document Overview](flow-document-overview.md).  
-  
-  
+
 <a name="text_element_classes"></a>   
 ## Content Model Diagram  
  The following diagram summarizes the content model for classes derived from <xref:System.Windows.Documents.TextElement> as well as how other non- `TextElement` classes fit into this model.  

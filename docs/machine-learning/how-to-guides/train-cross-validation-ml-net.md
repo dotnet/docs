@@ -42,7 +42,6 @@ var reader = mlContext.Data.CreateTextLoader(
     hasHeader: true
 );
 
-
 // Read the data.
 var data = reader.Read(dataPath);
 

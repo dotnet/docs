@@ -81,8 +81,6 @@ See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 For more information about how to install .NET Core 3.0 on ARM64, see [Installing .NET Core 3.0 on Linux ARM64](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213).
 
-
-
 ---
 
 ## Linux distribution dependencies

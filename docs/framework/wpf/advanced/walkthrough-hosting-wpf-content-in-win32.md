@@ -11,9 +11,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] code, it might be more effective to add [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] functionality to your application rather than rewriting your original code. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a straightforward mechanism for hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window.  
   
  This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](https://go.microsoft.com/fwlink/?LinkID=160004), that hosts [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. You can extend this sample to host any [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. Because it involves mixing managed and unmanaged code, the application is written in [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)].  
-  
- 
-  
+
 <a name="requirements"></a>   
 ## Requirements  
  This tutorial assumes a basic familiarity with both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming. For a basic introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming, see [Getting Started](../getting-started/index.md). For an introduction to [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  

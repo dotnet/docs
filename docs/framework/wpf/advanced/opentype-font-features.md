@@ -155,8 +155,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
  Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
   
  ![Text using OpenType standard and swash glyphs](./media/opentype-font-features/opentype-standard-swash-glyphs.gif "Text using OpenType standard and swash glyphs")  
-  
-  
+
  Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
   
  ![Text using OpenType swashes](./media/opentype-font-features/opentype-swashes.gif "Text using OpenType swashes")  
@@ -179,8 +178,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
  Alternates are glyphs that can be substituted for a standard glyph. [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts, such as the Pericles font used in the following examples, can contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
   
  ![Text using OpenType standard glyphs](./media/opentype-font-features/opentype-standard-glyphs.gif "Text using OpenType standard glyphs")  
-  
-  
+
  The Pericles [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
   
  ![Text using OpenType stylistic alternate glyphs](./media/opentype-font-features/opentype-stylistic-alternate-glyphs.gif "Text using OpenType stylistic alternate glyphs")  

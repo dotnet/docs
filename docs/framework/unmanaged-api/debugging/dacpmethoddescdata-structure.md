@@ -67,7 +67,6 @@ struct DacpMethodDescData
 | `rejitDataRequested`         | Rejit information for the requested native address.                                             |
 | `cJittedRejitVersions`       | Number of times the method has been rejitted through instrumentation.                           |
 
-
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above.

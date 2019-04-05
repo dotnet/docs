@@ -11,9 +11,7 @@ ms.assetid: 16909c42-799a-4561-91e0-7d69dcfeea91
 ---
 # ContextMenu Overview
 The <xref:System.Windows.Controls.ContextMenu> class represents the element that exposes functionality by using a context-specific <xref:System.Windows.Controls.Menu>. Typically, a user exposes the <xref:System.Windows.Controls.ContextMenu> in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] by right-clicking the mouse button. This topic introduces the <xref:System.Windows.Controls.ContextMenu> element and provides examples of how to use it in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and code.  
-  
-  
-  
+
 <a name="contextmenu_control"></a>   
 ## ContextMenu Control  
  A <xref:System.Windows.Controls.ContextMenu> is attached to a specific control. The <xref:System.Windows.Controls.ContextMenu> element enables you to present users with a list of items that specify commands or options that are associated with a particular control, for example, a <xref:System.Windows.Controls.Button>. Users right-click the control to make the menu appear. Typically, clicking a <xref:System.Windows.Controls.MenuItem> opens a submenu or causes an application to carry out a command.  

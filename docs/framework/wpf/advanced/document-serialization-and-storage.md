@@ -9,9 +9,7 @@ ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 ---
 # Document Serialization and Storage
 Microsoft .NET Framework provides a powerful environment for creating and displaying high quality documents.  Enhanced features that support both fixed-documents and flow-documents, advanced viewing controls, combined with powerful 2D and 3D graphic capabilities take .NET Framework applications to a new level of quality and user experience.  Being able to flexibly manage an in-memory representation of a document is a key feature of .NET Framework, and being able to efficiently save and load documents from a data store is a need of almost every application.  The process of converting a document from an internal in-memory representation to an external data store is termed serialization.  The reverse process of reading a data store and recreating the original in-memory instance is termed deserialization.  
-  
- 
-  
+
 <a name="AboutSerialization"></a>   
 ## About Document Serialization  
  Ideally the process of serializing and deserializing a document from and then back into memory is transparent to the application.  The application calls a serializer "write" method to save the document, while a deserializer "read" method accesses the data store and recreates the original instance in memory.  The specific format that the data is stored in is generally not a concern of the application as long as the serialize and deserialize process recreates the document back to its original form.  

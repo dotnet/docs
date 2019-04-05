@@ -32,9 +32,7 @@ ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 ---
 # XAML Syntax In Detail
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](xaml-overview-wpf.md).  
-  
 
-  
 <a name="the_xaml_language_specification"></a>   
 ## The XAML Language Specification  
  The XAML syntax terminology defined here is also defined or referenced within the XAML language specification. XAML is a language based on XML and follows or expands upon XML structural rules. Some of the terminology is shared from or is based on the terminology commonly used when describing the XML language or the XML document object model.  

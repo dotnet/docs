@@ -11,8 +11,7 @@ ms.assetid: 989e12b0-260e-4570-95c6-489284003ce2
 ---
 # ListView Overview
 The <xref:System.Windows.Controls.ListView> control provides the infrastructure to display a set of data items in different layouts or views. For example, a user may want to display data items in a table and also to sort its columns.  
-  
-  
+
 <a name="WhatisaListView"></a>   
 ## What Is a ListView?  
  The <xref:System.Windows.Controls.ListView> control is an <xref:System.Windows.Controls.ItemsControl> that is derived from <xref:System.Windows.Controls.ListBox>. Typically, its items are members of a data collection and are represented as <xref:System.Windows.Controls.ListViewItem> objects. A <xref:System.Windows.Controls.ListViewItem> is a <xref:System.Windows.Controls.ContentControl> and can contain only a single child element. However, that child element can be any visual element.  

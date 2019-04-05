@@ -15,7 +15,6 @@ The `in` keyword causes arguments to be passed by reference. It makes the formal
 
 The preceding example demonstrates that the `in` modifier is usually unnecessary at the call site. It is only required in the method declaration.
 
-
 > [!NOTE] 
 > The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query. For more information on the use of the `in` keyword in these contexts, see [in](in.md), which provides links to all those uses.
   

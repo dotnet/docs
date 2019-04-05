@@ -217,8 +217,7 @@ Asynchronous APIs in Windows Runtime programming have one of the following retur
 -   <xref:Windows.Foundation.IAsyncActionWithProgress%601>  
   
 -   <xref:Windows.Foundation.IAsyncOperationWithProgress%602>  
-   
-  
+
 ## <a name="BKMK_NamingConvention"></a> Naming convention  
 By convention, methods that return commonly awaitable types (e.g. `Task`, `Task<T>`, `ValueTask`, `ValueTask<T>`) should have names that end with "Async". Methods that start an asynchronous operation but do not return an awaitable type should not have names that end with "Async", but may start with "Begin", "Start", or some other verb to suggest this method does not return or throw the result of the operation.
   

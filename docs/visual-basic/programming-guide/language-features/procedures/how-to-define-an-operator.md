@@ -29,8 +29,7 @@ If you have defined a class or structure, you can define the behavior of a stand
  You can test the structure `height` with the following code.  
   
  [!code-vb[VbVbcnProcedures#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#26)]  
-  
-  
+
 ## See also
 
 - [Operator Procedures](./operator-procedures.md)

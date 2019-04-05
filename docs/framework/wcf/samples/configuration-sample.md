@@ -262,4 +262,3 @@ behaviorConfiguration="endpointBehaviorConfiguration"
 3.  Run the service executable from the build directory.  
   
 4.  Run the client executable. Note that the client is able to locate the service.  
-  

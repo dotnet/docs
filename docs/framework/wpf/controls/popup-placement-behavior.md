@@ -13,9 +13,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
   
 > [!NOTE]
 >  The <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ContextMenu> classes also define these five properties and behave similarly.  
-  
 
-  
 <a name="Positioning"></a>   
 ## Positioning the Popup  
  The placement of a <xref:System.Windows.Controls.Primitives.Popup> can be relative to a <xref:System.Windows.UIElement> or to the entire screen.  The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to a <xref:System.Windows.UIElement>—in this case, an image. All of the <xref:System.Windows.Controls.Primitives.Popup> controls have the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> property set to `image1`, but each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
@@ -52,8 +50,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
  The following illustration shows that the <xref:System.Windows.Controls.Primitives.Popup> is positioned relative to the <xref:System.Windows.Controls.Canvas>.  
   
  ![Popup control with no PlacementTarget](./media/popup-placement-behavior/popup-placement-no-placement-target.png "Popup with no PlacementTarget.")  
-  
-  
+
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>, but this time the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> is set to `ellipse1`, so the popup appears below the <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-xaml[PopupPositionSnippet#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#2)]  
@@ -75,8 +72,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
  The following illustration shows the result of the preceding example.  
   
  ![Popup with and without PlacementRectangle](./media/popup-placement-behavior/popup-placement-placement-rectangle.png "Popup with and without PlacementRectangle.")  
-  
-  
+
 ### Target Origin and Popup Alignment Point  
  The *target origin* and *popup alignment point* are reference points on the target area and popup, respectively, that are used for positioning. You can use the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to offset the popup from the target area.  The <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> are relative to the target origin and the popup alignment point. The value of the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property determines where the target origin and popup alignment point are located.  
   
@@ -168,8 +164,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
  The following illustration demonstrates that when the bottom screen edge hides all or part of the <xref:System.Windows.Controls.Primitives.Popup>, the popup alignment point is the bottom-left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
  ![New alignment point due to bottom screen edge](./media/popup-placement-behavior/popup-placement-relative-point-screen-edge.png "Popup encounters bottom edge of the screen and changes the popup alignment point.")  
- 
-  
+
  The following illustration demonstrates that when the <xref:System.Windows.Controls.Primitives.Popup> is hidden by the right screen edge, the popup alignment point is the top-right corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
  ![New popup alignment point due to screen edge](./media/popup-placement-behavior/popup-placement-relative-point-right-screen-edge.png "Popup encounters right edge of the screen and changes the popup alignment point.")    
@@ -190,8 +185,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
  The following illustration demonstrates that when <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Right> and the <xref:System.Windows.Controls.Primitives.Popup> encounters the right screen edge, the target origin is the top-left corner of the target area and the popup alignment point is the top-right corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
  ![New alignment point due to right screen edge](./media/popup-placement-behavior/popup-placement-right-screen-edge.png "Placement is Right and the popup encounters the right edge of the screen.")  
-  
-  
+
  The following illustration demonstrates that when <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Top> and the <xref:System.Windows.Controls.Primitives.Popup> encounters the top screen edge, the target origin is the bottom-left corner of the target area and the popup alignment point is the top-left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
  ![New alignment point due to top screen edge](./media/popup-placement-behavior/popup-placement-top-screen-edge.png "Placement is Top and the popup encounters the top edge of the screen.")  

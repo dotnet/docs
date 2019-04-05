@@ -24,9 +24,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
  ![WPF security illustration](./media/windowplatformsecurity.PNG "windowplatformsecurity")  
   
  The remainder of this topic discusses the features in each of these layers that pertain to [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] specifically.  
-  
 
-  
 <a name="Operating_System_Security"></a>   
 ## Operating System Security  
  The minimum level of operating system that is required by [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] is [!INCLUDE[TLA2#tla_winxpsp2](../../../includes/tla2sharptla-winxpsp2-md.md)]. The core of [!INCLUDE[TLA2#tla_winxpsp2](../../../includes/tla2sharptla-winxpsp2-md.md)] provides several security features that form the security foundation for all Windows applications, including those built with [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] incorporates the security features of [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] and extends them further. This topic discusses the breadth of these security features that are important to [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)], as well as how [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] integrates with them to provide further defense-in-depth.  

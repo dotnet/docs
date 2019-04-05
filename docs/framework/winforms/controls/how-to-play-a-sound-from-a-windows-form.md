@@ -61,4 +61,3 @@ private void playSimpleSound()
 ## See also
 - <xref:System.Media.SoundPlayer>
 - [How to: Load a Sound Asynchronously within a Windows Form](how-to-load-a-sound-asynchronously-within-a-windows-form.md)
-

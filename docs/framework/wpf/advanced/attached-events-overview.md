@@ -58,9 +58,9 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  The pattern is as follows:  
   
--   A method **Add*EventName*Handler** with two parameters. The first parameter must identify the event, and the identified event must match names with the ***EventName*** in the method name. The second parameter is the handler to add. The method must be `public` and `static`, with no return value.  
+-   A method **Add*EventName*Handler** with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
   
--   A method **Remove*EventName*Handler** with two parameters. The first parameter must identify the event, and the identified event must match names with the ***EventName*** in the method name. The second parameter is the handler to remove. The method must be `public` and `static`, with no return value.  
+-   A method **Remove*EventName*Handler** with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
   
  The **Add*EventName*Handler** accessor method facilitates the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processing when attached event handler attributes are declared on an element. The **Add*EventName*Handler** and **Remove*EventName*Handler** methods also enable code access to the event handler store for the attached event.  
   

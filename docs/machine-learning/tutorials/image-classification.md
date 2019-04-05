@@ -1,7 +1,7 @@
 ---
 title: Build an ML.NET custom image classifier with TensorFlow
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
-ms.date: 04/06/2019
+ms.date: 04/05/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
@@ -39,7 +39,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 * Microsoft.ML.ImageAnalytics 0.10.0 Nuget package
 * Microsoft.ML.TensorFlow 0.10.0 Nuget package
 
-* The tutorial assets .ZIP file - TODO: add the final download URL once assigned
+* [The tutorial assets directory .ZIP file](http://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
 
 * [The InceptionV3 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -131,7 +131,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Prepare your data
 
-1. Download TODO: add the final download URL once assigned [The project assets zip file](), and unzip.
+1. Download [The project assets directory zip file](http://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip), and unzip.
 
 2. Copy the `assets` directory into your *TransferLearningTF* project directory. This directory and its subdirectories contain the data and support files (except for the Inception model, which you'll download and add in the next step) needed for this tutorial.
 

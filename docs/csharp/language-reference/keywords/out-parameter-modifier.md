@@ -17,7 +17,7 @@ The `out` keyword makes the formal parameter an alias for the argument, which mu
   
 Variables passed as `out` arguments do not have to be initialized before being passed in a method call. However, the called method is required to assign a value before the method returns.  
   
-Any distinction between the `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
+The `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
   
 ```csharp
 class CS0663_Example
@@ -45,7 +45,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 
 ## Declaring `out` parameters   
 
-Declaring a method with `out` arguments is the classic way to return multiple values. Beginning with C# 7.0 [tuples](../../tuples.md) are preferred. The following example uses `out` to return three variables with a single method call. Note that the third argument is assigned to null. This enables methods to return values optionally.  
+Declaring a method with `out` arguments is a classic workaround to return multiple values. Beginning with C# 7.0 [tuples](../../tuples.md) are preferred. The following example uses `out` to return three variables with a single method call. Note that the third argument is assigned to null. This enables methods to return values optionally.  
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 

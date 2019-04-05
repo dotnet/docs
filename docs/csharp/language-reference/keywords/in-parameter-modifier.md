@@ -23,7 +23,7 @@ Variables passed as `in` arguments must be initialized before being passed in a 
 
 The `in` parameter modifier is available in C# 7.2 and later. Previous versions generate compiler error `CS8107` ("Feature 'readonly references' is not available in C# 7.0. Please use language version 7.2 or greater.") To configure the compiler language version, see [Select the C# language version](../configure-language-version.md).
 
-Any distinction between the `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
+The `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
   
 ```csharp
 class CS0663_Example

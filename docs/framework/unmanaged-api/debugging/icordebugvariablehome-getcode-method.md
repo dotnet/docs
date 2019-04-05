@@ -44,4 +44,3 @@ HRESULT GetCode(
   
 ## See also
 - [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
-

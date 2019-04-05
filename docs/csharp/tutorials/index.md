@@ -74,4 +74,3 @@ The following tutorials enable you to build C# programs using [.NET Core](../../
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
 * [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.
 * [String interpolation](exploration/interpolated-strings.yml) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the text appearance of the expression results in the result string. This tutorial is also available [to run locally on your machine](exploration/interpolated-strings-local.md).
-

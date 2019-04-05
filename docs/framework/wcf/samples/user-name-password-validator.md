@@ -314,4 +314,3 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 #### To clean up after the sample  
   
 1.  Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server certificate from the certificate store.  
-  

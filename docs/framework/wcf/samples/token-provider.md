@@ -286,4 +286,3 @@ static void DisplayIdentityInformation()
 #### To clean up after the sample  
   
 1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  

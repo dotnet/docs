@@ -148,4 +148,3 @@ An attack making it computationally feasible to break this algorithm exists. Thi
 **Severity:** Warning
 
 Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms)
-

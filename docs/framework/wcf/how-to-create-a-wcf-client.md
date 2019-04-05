@@ -121,4 +121,3 @@ Advance to the next tutorial to learn how to use the generated client.
 
 > [!div class="nextstepaction"]
 > [Tutorial: Use a WCF client](how-to-use-a-wcf-client.md)
-

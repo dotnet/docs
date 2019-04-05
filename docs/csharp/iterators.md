@@ -281,4 +281,3 @@ finally
 Thankfully, you don't need to remember all these details. The `foreach` statement
 handles all those nuances for you. The compiler will generate the correct code for
 any of these constructs. 
-

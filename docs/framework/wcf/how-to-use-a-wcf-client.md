@@ -187,4 +187,3 @@ If you have problems or errors in any of the steps, follow the steps in the trou
 
 > [!div class="nextstepaction"]
 > [Troubleshoot the Get started with WCF tutorials](troubleshooting-the-getting-started-tutorial.md)
-

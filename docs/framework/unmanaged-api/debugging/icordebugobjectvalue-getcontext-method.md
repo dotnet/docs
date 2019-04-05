@@ -33,4 +33,3 @@ HRESULT GetContext (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-

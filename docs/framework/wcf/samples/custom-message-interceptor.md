@@ -154,4 +154,3 @@ Dangerous wind detected! Reported speed (70) is greater than 64 kph.
 4.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 5.  Run Service.exe first then run Client.exe and watch both console windows for output.  
-  

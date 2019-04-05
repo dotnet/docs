@@ -1,7 +1,7 @@
 ---
 title: ML.NET Content Guide
 description: Learn how to build custom AI solutions and integrate them into your .NET applications using ML.NET.
-ms.date: 01/18/2019
+ms.date: 04/05/2019
 ms.custom: seodec18
 ---
 # ML.NET Content Guide
@@ -27,7 +27,11 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 [Predict prices using a regression model](./tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
-[Classify iris flowers by features](./tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
+[Classify iris flowers by features](./tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set.
+
+[Create a Movie Recommender with ML.NET](./tutorials/movie-recommmendation.md) shows you how to build a recommendation app to recommend movies to users based on their history.
+
+[Build an ML.NET custom image classifier with TensorFlow](./tutorials/image-classification.md): demonstrates how to retrain an existing Tensorflow model to create a custom image classifier using ML.NET.
 
 ## How to guide
 

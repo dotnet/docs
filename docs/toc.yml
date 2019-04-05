@@ -2381,7 +2381,6 @@
     - name: Model training concepts
       href: machine-learning/basic-concepts-model-training-in-mldotnet.md
   - name: Tutorials
-    href: machine-learning/tutorials/index.md
     items:
     - name: Sentiment analysis (binary classification)
       href: machine-learning/tutorials/sentiment-analysis.md
@@ -2393,8 +2392,9 @@
       href: machine-learning/tutorials/iris-clustering.md
     - name: Movie recommendation (recommendation)
       href: machine-learning/tutorials/movie-recommmendation.md
+    - name: Image Classification (transfer learning)
+      href: machine-learning/tutorials/image-classification.md
   - name: How-to guides
-    href: machine-learning/how-to-guides/index.md
     items:
     - name: Prepare data
       items:
@@ -2441,7 +2441,6 @@
     - name: API Reference
       href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
   - name: Resources
-    href: machine-learning/resources/index.md
     items:
     - name: Machine learning glossary
       href: machine-learning/resources/glossary.md

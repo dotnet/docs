@@ -434,6 +434,7 @@ The model is saved to C:\Tutorials\SentimentAnalysis\bin\Debug\netcoreapp2.1\Dat
 Sentiment: This was a very bad steak | Prediction: Negative | Probability: 0.4641322
 =============== End of Predictions ===============
 
+
 =============== Prediction Test of loaded model with a multiple samples ===============
 
 Sentiment: This was a horrible meal | Prediction: Negative | Probability: 0.1391833

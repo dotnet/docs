@@ -55,14 +55,14 @@ public class CalculatorService : ICalculatorDuplex
   
     public void Clear()  
     {  
-        Callback.Equation(equation + " = " + result.ToString());  
+        Callback.Equation($"{equation} = {result}");  
         equation = result.ToString();  
     }  
   
     public void AddTo(double n)  
     {  
         result += n;  
-        equation += " + " + n.ToString();  
+        equation += $" + {n}";  
         Callback.Result(result);  
     }  
     

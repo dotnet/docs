@@ -149,7 +149,7 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a * y_t + (1-a) * ExpAvg(y_(t-1)). |
+| <xref:Microsoft.ML.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a \* y_t + (1-a) \* ExpAvg(y_(t-1)). |
 | <xref:Microsoft.ML.TimeSeriesProcessing.IidChangePointDetector> | Implements the change point detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation and martingales. |
 | <xref:Microsoft.ML.TimeSeriesProcessing.IidSpikeDetector> | Implements the spike detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation. |
 | <xref:Microsoft.ML.TimeSeriesProcessing.MovingAverageTransform> | Provides a weighted average of the sliding window values. |

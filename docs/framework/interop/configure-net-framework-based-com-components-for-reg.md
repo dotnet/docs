@@ -167,6 +167,7 @@ Registration-free activation for .NET Framework-based components is only slightl
      Again, `myresource.res` is the name of the resource file containing embedded resource.  
   
 ## See also
+
 - [Registration-Free COM Interop](registration-free-com-interop.md)
 - [Requirements for Registration-Free COM Interop](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
 - [Configuring COM Components for Registration-Free Activation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))

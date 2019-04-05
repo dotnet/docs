@@ -38,6 +38,7 @@ If you want to create a completely custom control to use on a Windows Form, you 
 8.  Save and test your control.  
   
 ## See also
+
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 - [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)

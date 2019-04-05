@@ -91,6 +91,7 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
  You can retrieve an <xref:System.Windows.Automation.AutomationElement> that represents the focused control from the static <xref:System.Windows.Automation.AutomationElement.FocusedElement%2A> property.  
   
 ## See also
+
 - [Find a UI Automation Element Based on a Property Condition](../../../docs/framework/ui-automation/find-a-ui-automation-element-based-on-a-property-condition.md)
 - [Navigate Among UI Automation Elements with TreeWalker](../../../docs/framework/ui-automation/navigate-among-ui-automation-elements-with-treewalker.md)
 - [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)

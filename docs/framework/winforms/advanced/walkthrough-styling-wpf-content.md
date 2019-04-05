@@ -144,6 +144,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 5.  Click the OK and Cancel buttons and view the differences.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)

@@ -155,5 +155,6 @@ This topic demonstrates how to validate application settings before they are per
     ```  
   
 ## See also
+
 - [Creating Event Handlers in Windows Forms](../creating-event-handlers-in-windows-forms.md)
 - [How to: Create Application Settings](how-to-create-application-settings.md)

@@ -46,6 +46,7 @@ A control represents a graphical link between the user and the program. A contro
 10. Package and deploy your control. For details, see [First look at deployment in Visual Studio](/visualstudio/deployment/deploying-applications-services-and-components).  
   
 ## See also
+
 - [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
 - [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)

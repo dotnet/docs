@@ -79,6 +79,7 @@ In many technologies, elements and components are organized in a tree structure 
  However, resource lookup can also extend beyond the immediate logical tree. For application markup, the resource lookup can then continue onward to application-level resource dictionaries and then to theme support and system values that are referenced as static properties or keys. Themes themselves can also reference system values outside of the theme logical tree if the resource references are dynamic. For more information on resource dictionaries and the lookup logic, see [XAML Resources](xaml-resources.md).  
   
 ## See also
+
 - [Input Overview](input-overview.md)
 - [WPF Graphics Rendering Overview](../graphics-multimedia/wpf-graphics-rendering-overview.md)
 - [Routed Events Overview](routed-events-overview.md)

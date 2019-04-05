@@ -22,6 +22,7 @@ The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to displa
 2.  Draw the control on the tab page.  
   
 ## See also
+
 - [TabControl Control](tabcontrol-control-windows-forms.md)
 - [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)
 - [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)

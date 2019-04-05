@@ -28,4 +28,5 @@ This example shows how to programmatically bind an adorner to the children of a 
 >  Using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] to bind an adorner to another element is currently not supported.  
   
 ## See also
+
 - [Adorners Overview](adorners-overview.md)

@@ -40,6 +40,7 @@ The grouping feature of the <xref:System.Windows.Forms.ListView> control enables
 3.  Select the <xref:System.Windows.Forms.ListViewItem.Group%2A> property and choose a group from the drop-down list.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView>
 - <xref:System.Windows.Forms.ListView.Groups%2A>
 - <xref:System.Windows.Forms.ListViewGroup>

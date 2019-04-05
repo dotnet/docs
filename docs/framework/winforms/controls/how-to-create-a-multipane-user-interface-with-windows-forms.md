@@ -171,6 +171,7 @@ In the following procedure, you will create a multipane user interface that is s
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.SplitContainer>
 - [SplitContainer Control](splitcontainer-control-windows-forms.md)
 - [How to: Create a Multipane User Interface with Windows Forms Using the Designer](create-a-multipane-user-interface-with-wf-using-the-designer.md)

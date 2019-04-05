@@ -35,5 +35,6 @@ The following example uses the <xref:System.Windows.Forms.Button> control's <xre
  [!code-vb[OpenFileDialog#2](~/samples/snippets/winforms/open-files/example2/vb/Form1.vb)]  
 
 ## See also
+
 - <xref:System.Windows.Forms.OpenFileDialog>
 - [OpenFileDialog component](openfiledialog-component-windows-forms.md)

@@ -244,4 +244,5 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
 -   Compile the application.  
   
 ## See also
+
 - [Walkthrough: Working with the MaskedTextBox Control](walkthrough-working-with-the-maskedtextbox-control.md)

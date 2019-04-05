@@ -24,6 +24,7 @@ By using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], yo
  Finally, learn how to get started on your own [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project by reading [Typical Steps for Using LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/typical-steps-for-using-linq-to-sql.md).  
   
 ## See also
+
 - [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
 - [Introduction to LINQ (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq.md)
 - [Introduction to LINQ (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)

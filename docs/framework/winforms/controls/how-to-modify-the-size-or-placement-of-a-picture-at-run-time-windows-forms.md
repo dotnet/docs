@@ -77,6 +77,7 @@ If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.PictureBox>
 - [How to: Load a Picture Using the Designer](how-to-load-a-picture-using-the-designer-windows-forms.md)
 - [PictureBox Control Overview](picturebox-control-overview-windows-forms.md)

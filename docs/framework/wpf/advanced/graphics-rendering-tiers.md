@@ -122,6 +122,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 DirectX Diagnostic Tool main window  
   
 ## See also
+
 - <xref:System.Windows.Media.RenderCapability>
 - <xref:System.Windows.Media.RenderOptions>
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)

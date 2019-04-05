@@ -78,6 +78,7 @@ If you want to extend the functionality of an existing control, you can create a
 11. Save and test your control.  
   
 ## See also
+
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)

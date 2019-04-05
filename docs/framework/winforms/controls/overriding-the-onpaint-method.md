@@ -81,6 +81,7 @@ public class PaintEventArgs : EventArgs {
  A control invokes its <xref:System.Windows.Forms.Control.OnPaint%2A> method whenever it needs to change its visual display. This method in turn raises the <xref:System.Windows.Forms.Control.Paint> event.  
   
 ## See also
+
 - [Events](../../../standard/events/index.md)
 - [Rendering a Windows Forms Control](rendering-a-windows-forms-control.md)
 - [Defining an Event](defining-an-event-in-windows-forms-controls.md)

@@ -105,6 +105,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
  For certain scenarios, such as if you are a control author, you may also want to assure that any object representation that can be instantiated in XAML can also be serialized back to equivalent XAML markup. Serialization requirements are not described in this topic. See [Control Authoring Overview](../controls/control-authoring-overview.md) and [Element Tree and Serialization](element-tree-and-serialization.md).  
   
 ## See also
+
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Control Authoring Overview](../controls/control-authoring-overview.md)

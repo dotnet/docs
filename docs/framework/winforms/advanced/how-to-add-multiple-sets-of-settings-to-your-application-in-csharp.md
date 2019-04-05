@@ -20,5 +20,6 @@ In some cases, you might want to have multiple sets of settings in an applicatio
 4.  Add and use settings in this file as you would any other settings file. You can access this group of settings via the Properties.Settings object.  
   
 ## See also
+
 - [Using Application Settings and User Settings](using-application-settings-and-user-settings.md)
 - [Application Settings Overview](application-settings-overview.md)

@@ -320,6 +320,7 @@ This topic describes the features of the XAML language and demonstrates how you 
  [Dependency Properties Overview](dependency-properties-overview.md) gives more information about the versatility of properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], and introduces the concept of dependency properties.  
   
 ## See also
+
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
 - [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)

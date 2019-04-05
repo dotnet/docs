@@ -115,5 +115,6 @@ class MsmqBindingElementBase : TransportBindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.NetMsmqBinding>
 - <xref:System.ServiceModel.MsmqBindingBase>

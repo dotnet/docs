@@ -266,6 +266,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](wpf-partial-trust-security.md)|  
   
 ## See also
+
 - [WPF Partial Trust Security](wpf-partial-trust-security.md)
 - [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)
 - [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)

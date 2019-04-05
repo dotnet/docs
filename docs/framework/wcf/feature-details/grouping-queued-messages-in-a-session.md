@@ -76,5 +76,6 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
  [!code-vb[S_Msmq_Session#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/client.vb#3)]  
 
 ## See also
+
 - [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)

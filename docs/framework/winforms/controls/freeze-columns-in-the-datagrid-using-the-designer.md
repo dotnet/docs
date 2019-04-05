@@ -30,6 +30,7 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
     >  You can also freeze a column when adding it by selecting the **Frozen** box in the **Add Column** dialog box.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType>
 - [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](add-and-remove-columns-in-the-datagrid-using-the-designer.md)

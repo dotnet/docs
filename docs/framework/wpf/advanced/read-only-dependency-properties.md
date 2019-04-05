@@ -36,6 +36,7 @@ This topic describes read-only dependency properties, including existing read-on
  Because the <xref:System.Windows.DependencyPropertyKey> is private, and is not propagated by the property system outside of your code, a read-only dependency property does have better setting security than a read-write dependency property. For a read-write dependency property, the identifying field is explicitly or implicitly public and thus the property is widely settable. For more specifics, see [Dependency Property Security](dependency-property-security.md).  
   
 ## See also
+
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Styling and Templating](../controls/styling-and-templating.md)

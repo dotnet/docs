@@ -48,6 +48,7 @@ If you are designing a form that the user can resize at run time, the controls o
  Inherited controls must be `Protected` to be able to be anchored. To change the access level of a control, set its `Modifiers` property in the **Properties** window.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [AutoSize Property Overview](autosize-property-overview.md)

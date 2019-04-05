@@ -65,6 +65,7 @@ A XPath filter that specifies the kind of message to be logged.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
 - <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>

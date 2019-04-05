@@ -74,6 +74,7 @@ The Windows Forms <xref:System.Windows.Forms.ToolStrip> control and its associat
  For more information, see [ToolStrip Technology Summary](toolstrip-technology-summary.md) and [ToolStrip Control Architecture](toolstrip-control-architecture.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ContextMenuStrip>

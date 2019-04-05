@@ -97,6 +97,7 @@ A replay attack occurs when an attacker copies a stream of messages between two 
 -   <xref:System.ServiceModel.Channels>  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)

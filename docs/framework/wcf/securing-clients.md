@@ -139,6 +139,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
 - <xref:System.ServiceModel.ClientBase%601>
 - <xref:System.ServiceModel.Description.ClientCredentials>

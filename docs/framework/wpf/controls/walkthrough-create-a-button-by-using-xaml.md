@@ -426,6 +426,7 @@ The objective of this walkthrough is to learn how to create an animated button f
 -   Customized behavior for the buttons in response to user actions (such as <xref:System.Windows.UIElement.MouseEnter>, <xref:System.Windows.UIElement.MouseLeave>, and <xref:System.Windows.Controls.Primitives.ButtonBase.Click>) that included animation effects.  
   
 ## See also
+
 - [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md)
 - [Styling and Templating](styling-and-templating.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)

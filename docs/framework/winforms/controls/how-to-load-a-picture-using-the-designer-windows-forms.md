@@ -38,6 +38,7 @@ With the Windows Forms <xref:System.Windows.Forms.PictureBox> control, you can l
 1.  On the **Properties** window, select the <xref:System.Windows.Forms.PictureBox.Image%2A> property and right-click the small thumbnail image that appears to the left of the name of the image object. Choose **Reset**.  
   
 ## See also
+
 - <xref:System.Windows.Forms.PictureBox>
 - [PictureBox Control Overview](picturebox-control-overview-windows-forms.md)
 - [How to: Modify the Size or Placement of a Picture at Run Time](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)

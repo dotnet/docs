@@ -88,6 +88,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
  [!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   
 ## See also
+
 - [Typography in WPF](typography-in-wpf.md)
 - [Documents in WPF](documents-in-wpf.md)
 - [Text](optimizing-performance-text.md)

@@ -78,6 +78,7 @@ On occasion, you will want to provide a command that operates on the control tha
     ```  
   
 ## See also
+
 - [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
 - [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)
 - [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)

@@ -23,5 +23,6 @@ In the following example, <xref:System.Windows.Media.Animation.Point3DAnimationU
  [!code-xaml[Animation3DGallery_snip#PointVector3DAnimationUsingKeyFramesExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/PointVector3DAnimationUsingKeyFramesExample.xaml#pointvector3danimationusingkeyframesexamplewholepage)]  
   
 ## See also
+
 - [Animate Camera Position and Direction in a 3D Scene](how-to-animate-camera-position-and-direction-in-a-3d-scene.md)
 - [3-D Graphics Overview](3-d-graphics-overview.md)

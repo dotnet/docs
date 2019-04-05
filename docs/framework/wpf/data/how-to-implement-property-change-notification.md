@@ -23,6 +23,7 @@ To support <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows
  To see an example of how the `Person` class can be used to support <xref:System.Windows.Data.BindingMode.TwoWay> binding, see [Control When the TextBox Text Updates the Source](how-to-control-when-the-textbox-text-updates-the-source.md).  
   
 ## See also
+
 - [Binding Sources Overview](binding-sources-overview.md)
 - [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

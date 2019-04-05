@@ -66,6 +66,7 @@ A password box is a Windows Forms text box that displays placeholder characters 
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
 - [TextBox Control Overview](textbox-control-overview-windows-forms.md)
 - [How to: Control the Insertion Point in a Windows Forms TextBox Control](how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)

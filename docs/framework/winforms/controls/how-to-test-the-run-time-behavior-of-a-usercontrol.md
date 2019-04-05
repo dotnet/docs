@@ -61,6 +61,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 6.  Use the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.  
   
 ## See also
+
 - <xref:System.Windows.Forms.UserControl>
 - [How to: Author Composite Controls](how-to-author-composite-controls.md)
 - [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)

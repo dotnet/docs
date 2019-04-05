@@ -164,6 +164,7 @@ Embedding connection strings in your application's code can lead to security vul
  For more information about securing ASP.NET applications, see [Securing ASP.NET web sites](https://docs.microsoft.com/previous-versions/aspnet/91f66yxt(v=vs.100)).  
   
 ## See also
+
 - [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)
 - [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
 - [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms228063(v=vs.90))

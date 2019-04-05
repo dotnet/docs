@@ -32,6 +32,7 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control can display icons
      [!code-vb[System.Windows.Forms.ListViewLegacyTopics#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/VB/Class1.vb#42)]  
   
 ## See also
+
 - [ListView Control Overview](listview-control-overview-windows-forms.md)
 - [How to: Add and Remove Items with the Windows Forms ListView Control](how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)
 - [How to: Add Columns to the Windows Forms ListView Control](how-to-add-columns-to-the-windows-forms-listview-control.md)

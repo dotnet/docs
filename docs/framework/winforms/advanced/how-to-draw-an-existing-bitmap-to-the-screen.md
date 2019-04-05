@@ -27,5 +27,6 @@ You can easily draw an existing image on the screen. First you need to create a 
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

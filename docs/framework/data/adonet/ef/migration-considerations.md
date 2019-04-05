@@ -97,5 +97,6 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
   
 ## See also
+
 - [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
 - [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)

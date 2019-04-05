@@ -57,6 +57,7 @@ cmd.CommandText = @"SELECT VALUE p
  [How to: Navigate Relationships with the Navigate Operator](../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
 ## See also
+
 - [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
 - [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

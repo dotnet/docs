@@ -19,6 +19,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.PointAnim
  [!code-vb[BasicAnimations_snip#PointAnimationWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/PointAnimationExample.vb#pointanimationwholepage)]  
   
 ## See also
+
 - <xref:System.Windows.Media.Animation.PointAnimation>
 - <xref:System.Windows.Shapes.Path>
 - <xref:System.Windows.Media.EllipseGeometry>

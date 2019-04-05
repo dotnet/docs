@@ -30,5 +30,6 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
 2.  In the **Properties** window, select the <xref:System.Windows.Forms.ListView.View%2A> property and choose **Tile**.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView.TileSize%2A>
 - [ListView Control Overview](listview-control-overview-windows-forms.md)

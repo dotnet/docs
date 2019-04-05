@@ -27,5 +27,6 @@ Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group ot
 3.  Set the <xref:System.Windows.Forms.GroupBox.Text%2A> property of the group box to an appropriate caption.  
   
 ## See also
+
 - <xref:System.Windows.Forms.GroupBox>
 - [GroupBox Control](groupbox-control-windows-forms.md)

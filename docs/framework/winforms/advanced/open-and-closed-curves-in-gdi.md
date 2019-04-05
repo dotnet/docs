@@ -43,6 +43,7 @@ The following illustration shows two curves: one open and one closed.
  ![String in a path](./media/aboutgdip02-art26.gif "Aboutgdip02_art26")  
   
 ## See also
+
 - <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
 - <xref:System.Drawing.Point?displayProperty=nameWithType>

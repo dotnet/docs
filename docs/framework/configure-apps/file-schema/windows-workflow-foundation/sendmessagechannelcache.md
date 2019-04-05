@@ -87,6 +87,7 @@ A service behavior that enables the customization of the cache sharing levels, t
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.SendMessageChannelCache>
 - <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>
 - <xref:System.ServiceModel.Activities.Send>

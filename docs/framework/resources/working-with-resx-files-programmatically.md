@@ -80,6 +80,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
  **al** *resourcesFilename* **-out:** *assemblyFilename*
 
 ## See also
+
 - [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
 - [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)

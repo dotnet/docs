@@ -70,6 +70,7 @@ You can control whether text and images are displayed on a <xref:System.Windows.
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip Control Architecture](toolstrip-control-architecture.md)

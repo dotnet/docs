@@ -35,6 +35,7 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
  [!code-vb[WPFAquariumSln#AGWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
   
 ## See also
+
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [Dependency Property Metadata](dependency-property-metadata.md)

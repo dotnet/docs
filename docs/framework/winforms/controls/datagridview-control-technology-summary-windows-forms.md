@@ -55,6 +55,7 @@ This topic summarizes information about the `DataGridView` control and the class
  The <xref:System.Windows.Forms.DataGridView> control can work in close conjunction with the <xref:System.Windows.Forms.BindingSource> component. This component is designed to be the primary data source of a form. It can manage the interaction between a <xref:System.Windows.Forms.DataGridView> control and its data source, regardless of the data source type.  
   
 ## See also
+
 - [DataGridView Control Overview](datagridview-control-overview-windows-forms.md)
 - [DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)
 - [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)

@@ -86,6 +86,7 @@ Using Windows Communication Foundation (WCF), the service can specify how a clie
     ```  
   
 ## See also
+
 - <xref:System.ServiceModel.NetTcpBinding>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>

@@ -18,6 +18,7 @@ You can transform an editable Windows Forms text box into a read-only control. F
     >  The <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property only affects user interaction at run time. You can still change text box contents programmatically at run time by changing the <xref:System.Windows.Forms.TextBox.Text%2A> property of the text box.  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
 - [TextBox Control Overview](textbox-control-overview-windows-forms.md)
 - [How to: Control the Insertion Point in a Windows Forms TextBox Control](how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)

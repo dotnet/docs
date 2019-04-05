@@ -116,6 +116,7 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.LinkLabel.LinkArea%2A>
 - <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>
 - <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>

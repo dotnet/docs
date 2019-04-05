@@ -34,6 +34,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
     |`true` (default)|Text in the control is automatically adjusted to fit the width of the control. The horizontal scrollbar will not appear. Use this value if you chose vertical scroll bars or none, above, to display one or more paragraphs.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBoxScrollBars>
 - <xref:System.Windows.Forms.RichTextBox>
 - [RichTextBox Control](richtextbox-control-windows-forms.md)

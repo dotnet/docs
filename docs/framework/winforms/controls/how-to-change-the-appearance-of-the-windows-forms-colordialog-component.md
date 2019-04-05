@@ -44,6 +44,7 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ColorDialog>
 - [ColorDialog Component](colordialog-component-windows-forms.md)
 - [ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)

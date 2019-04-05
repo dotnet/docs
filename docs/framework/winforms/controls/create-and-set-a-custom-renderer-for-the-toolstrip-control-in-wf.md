@@ -76,6 +76,7 @@ ms.assetid: 88a804ba-679f-4ba3-938a-0dc396199c5b
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripManager.Renderer%2A>
 - <xref:System.Windows.Forms.ToolStripRenderer>
 - <xref:System.Windows.Forms.ToolStrip.RenderMode%2A>

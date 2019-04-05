@@ -50,6 +50,7 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
  ![Screenshot showing a WCF Data Services architecture diagram.](./media/wcf-data-services-overview/windows-communication-foundation-data-services-architecture.gif)  
   
 ## See also
+
 - [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
 - [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

@@ -70,6 +70,7 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
  If you want all possible causes of changing focus to produce a visual behavior, you should base a setter or trigger on the <xref:System.Windows.UIElement.IsFocused%2A> dependency property, or alternatively on the <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus> events used for an <xref:System.Windows.EventSetter>.  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>
 - [Styling and Templating](../controls/styling-and-templating.md)
 - [Focus Overview](focus-overview.md)

@@ -27,5 +27,6 @@ This example shows how to back a [!INCLUDE[TLA#tla_clr](../../../../includes/tla
  For more information about how and why to implement a dependency property, as opposed to just backing a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property with a private field, see [Dependency Properties Overview](dependency-properties-overview.md).  
   
 ## See also
+
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [How-to Topics](properties-how-to-topics.md)

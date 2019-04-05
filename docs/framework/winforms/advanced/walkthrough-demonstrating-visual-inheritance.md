@@ -158,6 +158,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
  Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in Visual C#) statement. For more information, see [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md).  
   
 ## See also
+
 - [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)
 - [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)
 - [Windows Forms](../index.md)

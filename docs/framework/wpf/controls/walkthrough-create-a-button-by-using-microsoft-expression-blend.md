@@ -242,6 +242,7 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
 -   Miscellaneous: create gradients, add BitmapEffects, use transforms, and set basic properties of objects.  
   
 ## See also
+
 - [Create a Button by Using XAML](walkthrough-create-a-button-by-using-xaml.md)
 - [Styling and Templating](styling-and-templating.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)

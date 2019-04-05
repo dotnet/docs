@@ -188,6 +188,7 @@ This concludes our discussion of this example. For the complete sample, see [Int
  ![HierarchicalDataTemplate sample screenshot](./media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
   
 ## See also
+
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)
 - [Find DataTemplate-Generated Elements](how-to-find-datatemplate-generated-elements.md)
 - [Styling and Templating](../controls/styling-and-templating.md)

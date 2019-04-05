@@ -41,5 +41,6 @@ The following example shows how to hook up a <xref:System.Windows.Input.RoutedCo
  [!code-vb[CommandHandlerProcedural#CommandHandlerBindingInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandHandlerProcedural/visualbasic/window1.xaml.vb#commandhandlerbindinginit)]  
   
 ## See also
+
 - [Commanding Overview](commanding-overview.md)
 - [Hook Up a Command to a Control with Command Support](how-to-hook-up-a-command-to-a-control-with-command-support.md)

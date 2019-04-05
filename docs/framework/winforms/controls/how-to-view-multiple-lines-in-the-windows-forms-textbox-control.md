@@ -41,6 +41,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
     |`true` (default)|The horizontal scrollbar will not appear. Use this value if you chose <xref:System.Windows.Forms.ScrollBars.Vertical> scroll bars or <xref:System.Windows.Forms.ScrollBars.None>, above, to display one or more paragraphs.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
 - [TextBox Control Overview](textbox-control-overview-windows-forms.md)
 - [How to: Control the Insertion Point in a Windows Forms TextBox Control](how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)

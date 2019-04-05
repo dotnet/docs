@@ -57,5 +57,6 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     ```  
   
 ## See also
+
 - [ErrorProvider Component Overview](errorprovider-component-overview-windows-forms.md)
 - [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](display-error-icons-for-form-validation-with-wf-errorprovider.md)

@@ -147,5 +147,6 @@ HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
  Shorthand for the growing set of Web Service (WS) specifications, such as WS-Security, WS-ReliableMessaging, and so on, that are implemented in WCF.  
   
 ## See also
+
 - [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)
 - [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)

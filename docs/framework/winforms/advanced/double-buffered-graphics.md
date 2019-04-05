@@ -27,6 +27,7 @@ Flicker is a common problem when programming graphics. Graphics operations that 
  For more information on using the <xref:System.Drawing.BufferedGraphics> class, see [Manually Rendering Buffered Graphics](how-to-manually-render-buffered-graphics.md). For more information on rendering graphics, see [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)  
   
 ## See also
+
 - <xref:System.Drawing.BufferedGraphics>
 - <xref:System.Drawing.BufferedGraphicsContext>
 - <xref:System.Drawing.BufferedGraphicsManager>

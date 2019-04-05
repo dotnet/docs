@@ -87,6 +87,7 @@ Metadata for a service can contain sensitive information about your application 
 -   <xref:System.ServiceModel.Description?displayProperty=nameWithType>  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>

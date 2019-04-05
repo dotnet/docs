@@ -26,6 +26,7 @@ This topic shows the basic steps to create methods that use a one-way contract. 
  [!code-vb[S_Service_Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_service_session/vb/service.vb#1)]  
   
 ## See also
+
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
 - [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)

@@ -92,6 +92,7 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
  Localization.Comments contains free-form strings concerning the targeted value. Application developers can add information to give localizers hints about how the applications text should be translated. The format of the comments can be any string surrounded by "()". Use '\\' to escape characters.  
   
 ## See also
+
 - [Globalization for WPF](globalization-for-wpf.md)
 - [Use Automatic Layout to Create a Button](how-to-use-automatic-layout-to-create-a-button.md)
 - [Use a Grid for Automatic Layout](how-to-use-a-grid-for-automatic-layout.md)

@@ -1,7 +1,7 @@
 ---
 title: Data transformations | ML.NET
 description: Explore the feature engineering components supported in ML.NET.
-author: nakersha
+author: nake
 ms.date: 04/02/2019
 ---
 
@@ -11,7 +11,7 @@ Chain data transformations together to prepare data for model training. All of t
 
 Some data transformations require training data to calculate their parameters. For example: the <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> transformer calculates the mean and variance of the training data during the `Fit()` operation, and uses those parameters in the `Transform()` operation. 
 
-Some data transformations do not require training data. For example: the <xref:microsoft.ml.imageestimatorscatalog.converttograyscale> transformation can perform the `Transform()` operation without having seen any training data during the `Fit()` operation.
+Some data transformations do not require training data. For example: the <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToGrayscale*> transformation can perform the `Transform()` operation without having seen any training data during the `Fit()` operation.
 
 ## Column mapping and grouping
 
@@ -54,8 +54,7 @@ The normalization transformations fit input float data to a normal distribution.
 | --- | --- |
 | <xref:Microsoft.ML.TextCatalog.FeaturizeText*> | Transform a text column into a float array of normalized ngrams and char-grams counts | 
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoWords*> | Split one or more text columns into individual words |
-| <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys*> | Split one or more text columns into individual characters |
-floats over a set of topics |
+| <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys*> | Split one or more text columns into individual characters floats over a set of topics |
 | <xref:Microsoft.ML.TextCatalog.NormalizeText*> | Change case, remove diacritical marks, punctuation marks and numbers |
 | <xref:Microsoft.ML.TextCatalog.ProduceNgrams*> | Transform text column into a bag of counts of ngrams (sequences of consecutive words)|
 | <xref:Microsoft.ML.TextCatalog.ProduceWordBags*> | Transform text column into a bag of counts of ngrams vector |
@@ -70,7 +69,7 @@ floats over a set of topics |
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToGrayscale* | Convert an image to grayscale |
+| <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToGrayscale*> | Convert an image to grayscale |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToImage*> | Convert a vector of pixels to ImageType |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels*> | Convert pixels from input image into a vector of numbers |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*> | Load images from a folder into memory |
@@ -81,7 +80,7 @@ floats over a set of topics |
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding*> | Convert one or more text columns into one-hot encoded vectors |
-| <xref:Microsoft.ML.CategoricalCatalog.OneHotHashEncoding*> Convert one more text columns into hash-based one-hot encoded vectors |
+| <xref:Microsoft.ML.CategoricalCatalog.OneHotHashEncoding*> | Convert one more text columns into hash-based one-hot encoded vectors |
 
 ## Missing values
 
@@ -101,4 +100,4 @@ floats over a set of topics |
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Transforms.CustomMappingTransformer> | Transform existing columns onto new ones with a user-defined mapping |
+| <xref:Microsoft.ML.CustomMappingCatalog.CustomMapping*> | Transform existing columns onto new ones with a user-defined mapping |

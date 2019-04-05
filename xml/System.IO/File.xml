@@ -936,7 +936,7 @@
 ## Remarks  
  The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.None>; no other process or code can access the created file until the original file handle is closed.  
   
- This method is equivalent to the <xref:System.IO.File.Create%28System.String%2CSystem.Int32%29> method overload using the default buffer size.  
+ This method is equivalent to the <xref:System.IO.File.Create%28System.String%2CSystem.Int32%29> method overload using the default buffer size of 4,096 bytes.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   

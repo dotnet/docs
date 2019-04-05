@@ -216,13 +216,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that increases the time-out period for queries that would otherwise time out during the default time-out period.</summary>
-        <value>An integer value that increases the time-out period for queries that would otherwise time out during the default time-out period.</value>
+        <summary>Gets or sets a value that increases the time-out period (in seconds) for queries that would otherwise time out during the default time-out period.</summary>
+        <value>An integer value that increases the time-out period (in seconds) for queries that would otherwise time out during the default time-out period.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property gets or sets the command time-out used to execute generated commands (`IDbCommands`). For more information, see <xref:System.Data.IDbCommand.CommandTimeout%2A>.  
+ This property gets or sets the command time-out (in seconds) used to execute generated commands (`IDbCommands`). For more information, see <xref:System.Data.IDbCommand.CommandTimeout%2A>.  
   
  When this property is not set, the default value of <xref:System.Data.IDbCommand.CommandTimeout%2A> is used for query command execution. This default value is set by the storage provider. Note that some providers may throw exceptions if this value is set to a non-zero value.  
   

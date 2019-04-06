@@ -59,7 +59,7 @@ The `&` operator evaluates both operands even if the first operand evaluates to 
 
 [!code-csharp-interactive[logical AND](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#And)]
 
-The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but evaluates the second operand only if the first operand evaluates to `true`.
+The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the second operand if the first operand evaluates to `false`.
 
 For the operands of integral types, the `&` operator computes [bitwise logical AND](and-operator.md#integer-logical-bitwise-and-operator) of its operands. The unary `&` operator is the [address-of operator](and-operator.md#unary-address-of-operator).
 
@@ -79,13 +79,13 @@ The `|` operator evaluates both operands even if the first operand evaluates to 
 
 [!code-csharp-interactive[logical OR](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#Or)]
 
-The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but evaluates the second operand only if the first operand evaluates to `false`.
+The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but doesn't evaluate the second operand if the first operand evaluates to `true`.
 
 For the operands of integral types, the `|` operator computes [bitwise logical OR](or-operator.md) of its operands.
 
 ## Conditional logical AND operator &amp;&amp;
 
-The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If the first operand evaluates to `false`, the second operand is not evaluated and the result of operation is `false`. The following example demonstrates that behavior:
+The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If the first operand evaluates to `false`, the second operand is not evaluated. The following example demonstrates that behavior:
 
 [!code-csharp-interactive[conditional logical AND](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#ConditionalAnd)]
 
@@ -93,7 +93,7 @@ The [logical AND operator](#logical-and-operator-) `&` also computes the logical
 
 ## Conditional logical OR operator ||
 
-The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If the first operand evaluates to `true`, the second operand is not evaluated and the result of operation is `true`. The following example demonstrates that behavior:
+The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If the first operand evaluates to `true`, the second operand is not evaluated. The following example demonstrates that behavior:
 
 [!code-csharp-interactive[conditional logical OR](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#ConditionalOr)]
 

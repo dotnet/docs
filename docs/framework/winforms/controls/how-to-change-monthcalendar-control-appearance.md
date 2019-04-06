@@ -98,6 +98,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
     ```  
   
 ## See also
+
 - [MonthCalendar Control](monthcalendar-control-windows-forms.md)
 - [How to: Select a Range of Dates in the Windows Forms MonthCalendar Control](how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)
 - [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](display-specific-days-in-bold-with-wf-monthcalendar-control.md)

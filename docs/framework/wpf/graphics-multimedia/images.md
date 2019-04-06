@@ -25,5 +25,6 @@ ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See also
+
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
 - [Graphics and Multimedia](index.md)

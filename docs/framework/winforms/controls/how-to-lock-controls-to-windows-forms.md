@@ -41,6 +41,7 @@ When you design the user interface (UI) of your Windows application, you can loc
 1.  In the **Properties** window, click the **Locked** property and select `false`. (Double-clicking the name toggles the property setting.)  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

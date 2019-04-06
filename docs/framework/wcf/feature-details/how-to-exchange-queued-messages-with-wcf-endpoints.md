@@ -70,6 +70,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
  [!code-vb[S_Msmq_Transacted#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#12)]  
 
 ## See also
+
 - <xref:System.ServiceModel.NetMsmqBinding>
 - [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)
 - [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

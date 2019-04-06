@@ -38,6 +38,7 @@ You can assign controls that exist on your form to a new container control.
      The three <xref:System.Windows.Forms.Button> controls are now inserted into the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
 ## See also
+
 - <xref:System.Windows.Forms.FlowLayoutPanel>
 - <xref:System.Windows.Forms.TableLayoutPanel>
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)

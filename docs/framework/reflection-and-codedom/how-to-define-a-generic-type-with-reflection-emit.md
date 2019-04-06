@@ -130,6 +130,7 @@ This topic shows how to create a simple generic type with two type parameters, h
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See also
+
 - <xref:System.Reflection.Emit.GenericTypeParameterBuilder>
 - [Using Reflection Emit](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
 - [Reflection Emit Dynamic Assembly Scenarios](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tt9483fk(v=vs.100))

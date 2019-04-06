@@ -110,6 +110,7 @@ ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolBar>
 - [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)
 - [ToolBar Control](toolbar-control-windows-forms.md)

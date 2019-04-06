@@ -341,6 +341,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
  See [Typography in WPF](typography-in-wpf.md) for more information on typography.  
   
 ## See also
+
 - [Text](optimizing-performance-text.md)
 - [Typography in WPF](typography-in-wpf.md)
 - [How-to Topics](flow-content-elements-how-to-topics.md)

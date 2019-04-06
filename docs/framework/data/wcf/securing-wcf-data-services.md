@@ -106,5 +106,6 @@ OData is based on the HTTP protocol. In an HTTP message, the header may contain 
 -   We recommend that client applications always validate user input as well as data accepted from untrusted services.  
   
 ## See also
+
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
 - [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

@@ -26,6 +26,7 @@ The <xref:System.Windows.Documents.Hyperlink> object is an inline-level flow con
  [!code-vb[Performance#PerformanceSnippet15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/hyperlink.xaml.vb#performancesnippet15)]  
   
 ## See also
+
 - <xref:System.Windows.TextDecoration>
 - <xref:System.Windows.Documents.Hyperlink>
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)

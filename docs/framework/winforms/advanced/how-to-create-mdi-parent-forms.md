@@ -30,6 +30,7 @@ ms.assetid: 12c71221-2377-4bb6-b10b-7b4b300fd462
 4.  Press **F5** to run the application. For information about creating MDI child windows that operate within the MDI parent form, see [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md).  
   
 ## See also
+
 - [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
 - [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)
 - [How to: Determine the Active MDI Child](how-to-determine-the-active-mdi-child.md)

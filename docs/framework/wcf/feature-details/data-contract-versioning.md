@@ -110,6 +110,7 @@ As applications evolve, you may also have to change the data contracts the servi
 Naturally, changing the data contract of contents of a collection (for example, changing from a list of integers to a list of strings) is a breaking change.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>

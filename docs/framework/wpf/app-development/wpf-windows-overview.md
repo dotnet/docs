@@ -474,6 +474,7 @@ The default appearance of a window includes a taskbar button, like the one shown
  Dialog boxes are windows that are often used to gather information from a user to complete a function. For example, when a user wants to open a file, the **Open File** dialog box is usually displayed by an application to get the file name from the user. For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Window>
 - <xref:System.Windows.MessageBox>
 - <xref:System.Windows.Navigation.NavigationWindow>

@@ -105,6 +105,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
  See the [Drawing Objects Overview](drawing-objects-overview.md) for more information about <xref:System.Windows.Media.Drawing> objects.  
   
 ## See also
+
 - <xref:System.Windows.Media.DrawingGroup>
 - [Layout](../advanced/layout.md)
 - [How-to Topics](audio-and-video-how-to-topics.md)

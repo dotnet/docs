@@ -210,6 +210,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  [!code-vb[DragDropSnippets#Drop](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#drop)]  
   
 ## See also
+
 - <xref:System.Windows.Clipboard>
 - [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md)
 - [How-to Topics](drag-and-drop-how-to-topics.md)

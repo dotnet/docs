@@ -29,6 +29,7 @@ This example shows how bubbling events work and how to write a handler that can 
  [!code-vb[RoutedEventHandle#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventHandle/VisualBasic/MainWindow.xaml.vb#handler)]  
   
 ## See also
+
 - <xref:System.Windows.RoutedEvent>
 - [Input Overview](input-overview.md)
 - [Routed Events Overview](routed-events-overview.md)

@@ -387,6 +387,7 @@ Touch and manipulation events
  Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] framework elements and event routing in more detail. See the following overviews for more information, [Commanding Overview](commanding-overview.md), [Focus Overview](focus-overview.md), [Base Elements Overview](base-elements-overview.md), [Trees in WPF](trees-in-wpf.md), and [Routed Events Overview](routed-events-overview.md).
 
 ## See also
+
 - [Focus Overview](focus-overview.md)
 - [Commanding Overview](commanding-overview.md)
 - [Routed Events Overview](routed-events-overview.md)

@@ -106,4 +106,5 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
  For security information, see [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md).  
   
 ## See also
+
 - [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

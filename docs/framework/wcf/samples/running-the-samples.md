@@ -74,5 +74,6 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
 -   If the service is hosted in IIS for security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
   
 ## See also
+
 - [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)
 - [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

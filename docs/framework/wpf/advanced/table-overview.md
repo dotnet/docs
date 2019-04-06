@@ -170,6 +170,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
  [!code-vb[TableSnippets#_TableAddFooterRow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tableaddfooterrow)]  
   
 ## See also
+
 - [Flow Document Overview](flow-document-overview.md)
 - [Define a Table with XAML](how-to-define-a-table-with-xaml.md)
 - [Documents in WPF](documents-in-wpf.md)

@@ -18,5 +18,6 @@ This example makes the splitter that divides the <xref:System.Windows.Forms.Spli
 1.  In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.SplitContainer>
 - [SplitContainer Control](splitcontainer-control-windows-forms.md)

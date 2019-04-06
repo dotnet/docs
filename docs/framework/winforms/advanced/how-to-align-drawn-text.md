@@ -30,6 +30,7 @@ When you perform custom drawing, you may often want to center drawn text on a fo
  The preceding code examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
+
 - [How to: Draw Text with GDI](how-to-draw-text-with-gdi.md)
 - [Using Fonts and Text](using-fonts-and-text.md)
 - [How to: Construct Font Families and Fonts](how-to-construct-font-families-and-fonts.md)

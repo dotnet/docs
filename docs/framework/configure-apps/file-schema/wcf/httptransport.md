@@ -62,6 +62,7 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
  The `httpTransport` element is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other non-WCF Web services stacks.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.HttpTransportElement>
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

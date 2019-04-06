@@ -47,6 +47,7 @@ Receiving and handling mouse input is an important part of every Windows applica
 |<xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A>|Gets the number of lines to scroll when the mouse wheel is rotated.|  
   
 ## See also
+
 - [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)
 - [Mouse Capture in Windows Forms](mouse-capture-in-windows-forms.md)
 - [Mouse Pointers in Windows Forms](mouse-pointers-in-windows-forms.md)

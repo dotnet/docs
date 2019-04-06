@@ -143,6 +143,7 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolBar>
 - [How to: Define an Icon for a ToolBar Button](how-to-define-an-icon-for-a-toolbar-button.md)
 - [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)

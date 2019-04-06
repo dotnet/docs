@@ -71,5 +71,6 @@ The [ColorDialog](colordialog-component-windows-forms.md) component displays a p
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ColorDialog>
 - [ColorDialog Component](colordialog-component-windows-forms.md)

@@ -60,6 +60,7 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.CheckBox>
 - [CheckBox Control Overview](checkbox-control-overview-windows-forms.md)
 - [How to: Respond to Windows Forms CheckBox Clicks](how-to-respond-to-windows-forms-checkbox-clicks.md)

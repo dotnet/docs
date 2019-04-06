@@ -40,4 +40,5 @@ This topic describes how to use the <xref:System.Windows.Data.Binding.UpdateSour
 >  The <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property deals with source updates and therefore is only relevant for <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings. For <xref:System.Windows.Data.BindingMode.TwoWay> and <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings to work, the source object needs to provide property change notifications. You can refer to the samples cited in this topic for more information. In addition, you can look at [Implement Property Change Notification](how-to-implement-property-change-notification.md).  
   
 ## See also
+
 - [How-to Topics](data-binding-how-to-topics.md)

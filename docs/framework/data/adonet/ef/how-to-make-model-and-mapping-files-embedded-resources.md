@@ -31,6 +31,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
  The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). This connection string is stored in the project's App.config file.  
 
 ## See also
+
 - [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)
 - [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)
 - [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)

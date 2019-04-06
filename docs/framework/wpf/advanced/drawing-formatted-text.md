@@ -110,6 +110,7 @@ Sphere following the path geometry of text
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.WordEllipsis>.|  
   
 ## See also
+
 - <xref:System.Windows.Media.FormattedText>
 - [Documents in WPF](documents-in-wpf.md)
 - [Typography in WPF](typography-in-wpf.md)

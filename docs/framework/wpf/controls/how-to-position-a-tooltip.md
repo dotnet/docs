@@ -56,6 +56,7 @@ This example shows how to specify the position of a tooltip on the screen.
  [!code-vb[ToolTipService#NoToolTipCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#notooltipcode)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipService>
 - [How-to Topics](tooltip-how-to-topics.md)

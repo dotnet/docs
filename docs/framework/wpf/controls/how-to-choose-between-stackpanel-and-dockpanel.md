@@ -26,6 +26,7 @@ This example shows how to choose between using a <xref:System.Windows.Controls.S
  [!code-xaml[StackPanelOvw4#1](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanelOvw4/XAML/default.xaml#1)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.StackPanel>
 - <xref:System.Windows.Controls.DockPanel>
 - [Panels Overview](panels-overview.md)

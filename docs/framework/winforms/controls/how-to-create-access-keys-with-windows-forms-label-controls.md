@@ -58,6 +58,7 @@ Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define a
     ```  
   
 ## See also
+
 - [How to: Size a Windows Forms Label Control to Fit Its Contents](how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)
 - [Label Control Overview](label-control-overview-windows-forms.md)
 - [Label Control](label-control-windows-forms.md)

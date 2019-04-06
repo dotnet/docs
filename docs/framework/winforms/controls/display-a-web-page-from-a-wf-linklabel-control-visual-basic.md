@@ -44,5 +44,6 @@ End Sub
  The call to the <xref:System.Diagnostics.Process.Start%2A> method requires full trust. For more information, see <xref:System.Security.SecurityException>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.LinkLabel>
 - [LinkLabel Control](linklabel-control-windows-forms.md)

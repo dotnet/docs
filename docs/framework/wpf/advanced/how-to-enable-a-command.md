@@ -34,4 +34,5 @@ The following example demonstrates how to use commanding in [!INCLUDE[TLA#tla_wi
  [!code-vb[EnableCloseCommand#CloseCommandHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EnableCloseCommand/VisualBasic/Window1.xaml.vb#closecommandhandler)]  
   
 ## See also
+
 - [Commanding Overview](commanding-overview.md)

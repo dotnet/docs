@@ -103,6 +103,7 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
 |<xref:System.Windows.Controls.VirtualizingStackPanel>|46|  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)

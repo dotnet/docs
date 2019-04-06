@@ -165,6 +165,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     |Images|[How to: Render Images with GDI+](how-to-render-images-with-gdi.md)|  
   
 ## See also
+
 - [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)

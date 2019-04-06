@@ -38,5 +38,6 @@ You can use the collection editor of the <xref:System.Windows.Forms.TableLayoutP
 8.  To remove a row or column, click the **Remove** button to delete the currently selected item in the **Member** list.  
   
 ## See also
+
 - <xref:System.Windows.Forms.SizeType>
 - [TableLayoutPanel Control](tablelayoutpanel-control-windows-forms.md)

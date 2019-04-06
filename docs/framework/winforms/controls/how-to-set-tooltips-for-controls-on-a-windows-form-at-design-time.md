@@ -71,6 +71,7 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
 2.  In the **Properties** window, delete the text in the **ToolTip on ToolTip1**.  
 
 ## See also
+
 - [ToolTip Component Overview](tooltip-component-overview-windows-forms.md)
 - [How to: Change the Delay of the Windows Forms ToolTip Component](how-to-change-the-delay-of-the-windows-forms-tooltip-component.md)
 - [ToolTip Component](tooltip-component-windows-forms.md)

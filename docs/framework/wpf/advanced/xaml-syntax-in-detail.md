@@ -308,6 +308,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
  But just like *typeName*.*memberName* form for attributes, *baseTypeName*.*memberName* is poor style in markup, and you should avoid it.  
   
 ## See also
+
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)

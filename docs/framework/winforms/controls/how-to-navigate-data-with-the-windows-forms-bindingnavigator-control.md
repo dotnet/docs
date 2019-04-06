@@ -48,6 +48,7 @@ The advent of the <xref:System.Windows.Forms.BindingNavigator> control in Window
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - <xref:System.Windows.Forms.BindingNavigator>
 - [BindingNavigator Control](bindingnavigator-control-windows-forms.md)
 - [ToolStrip Control](toolstrip-control-windows-forms.md)

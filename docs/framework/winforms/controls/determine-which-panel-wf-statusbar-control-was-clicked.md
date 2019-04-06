@@ -88,6 +88,7 @@ ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
 - [How to: Set the Size of Status-Bar Panels](how-to-set-the-size-of-status-bar-panels.md)

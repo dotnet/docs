@@ -50,5 +50,6 @@ The following code example makes the splitter that divides the <xref:System.Wind
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.SplitContainer>
 - [SplitContainer Control](splitcontainer-control-windows-forms.md)

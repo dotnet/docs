@@ -61,4 +61,5 @@ function onSuccess(mathResult){
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Ajax\ComplexTypeAjaxService`  
   
 ## See also
+
 - [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md)

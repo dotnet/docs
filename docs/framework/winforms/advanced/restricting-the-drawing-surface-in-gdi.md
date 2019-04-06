@@ -26,6 +26,7 @@ Clipping involves restricting drawing to a certain rectangle or region. The foll
  [!code-vb[LinesCurvesAndShapes#91](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#91)]  
   
 ## See also
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Region?displayProperty=nameWithType>
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)

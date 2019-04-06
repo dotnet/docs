@@ -160,4 +160,5 @@ class MyDataContractResolver : DataContractResolver
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\DataContractResolver`  
   
 ## See also
+
 - [Using a Data Contract Resolver](../../../../docs/framework/wcf/feature-details/using-a-data-contract-resolver.md)

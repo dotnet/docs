@@ -26,6 +26,7 @@ This example shows how to access and use the properties of <xref:System.Windows.
  [!code-vb[SystemRes_snip#ParameterResourcesCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SystemRes_snip/VisualBasic/Pane1.xaml.vb#parameterresourcescode)]  
   
 ## See also
+
 - <xref:System.Windows.SystemParameters>
 - [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
 - [Use SystemFonts](how-to-use-systemfonts.md)

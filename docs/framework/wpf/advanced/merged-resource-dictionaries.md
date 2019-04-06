@@ -46,6 +46,7 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
  If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these files can be localized separately. This technique is a lightweight alternative to localizing  the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.ResourceDictionary>
 - [XAML Resources](xaml-resources.md)
 - [Resources and Code](resources-and-code.md)

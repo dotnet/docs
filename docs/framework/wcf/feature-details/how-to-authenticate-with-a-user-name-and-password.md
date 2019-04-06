@@ -77,6 +77,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
     ```  
   
 ## See also
+
 - <xref:System.ServiceModel.WSHttpBinding>
 - <xref:System.ServiceModel.WSHttpSecurity>
 - <xref:System.ServiceModel.SecurityMode>

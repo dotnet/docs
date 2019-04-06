@@ -72,6 +72,7 @@ You can also view, export, import, and delete certificates by using the Certific
 2. To view your certificates, under **Certificates - Current User** in the left pane, expand the directory for the type of certificate you want to view.
 
 ## See also
+
 - [Working with certificates](working-with-certificates.md)
 - [How to: Create temporary certificates for use during development](how-to-create-temporary-certificates-for-use-during-development.md)
 - [How to: Retrieve the thumbprint of a certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md)

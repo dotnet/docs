@@ -25,6 +25,7 @@ Use the following procedure to move a <xref:System.Windows.Forms.ToolStrip> out 
 5.  Set the <xref:System.Windows.Forms.ToolStrip.Dock%2A> property of the <xref:System.Windows.Forms.ToolStrip> to **Top**.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.ToolStripContainer>
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

@@ -107,6 +107,7 @@ public MyClass : SomeBaseClass {
  These same patterns apply if you are setting a property that does not have a wrapper for property setting convenience, and set values with <xref:System.Windows.DependencyObject.SetValue%2A>. Your calls to <xref:System.Windows.DependencyObject.SetValue%2A> that pass through constructor parameters should also call the class' default constructor for initialization.  
   
 ## See also
+
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Dependency Property Security](dependency-property-security.md)

@@ -60,6 +60,7 @@ ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
 - [Walkthrough: Updating Status Bar Information at Run Time](walkthrough-updating-status-bar-information-at-run-time.md)

@@ -115,6 +115,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
 - [Collection Editor Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xc4yyekt(v=vs.100))

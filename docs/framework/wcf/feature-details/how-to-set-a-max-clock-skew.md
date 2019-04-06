@@ -79,6 +79,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
     ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>

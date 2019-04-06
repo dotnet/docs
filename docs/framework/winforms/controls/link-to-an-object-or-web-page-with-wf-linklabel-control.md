@@ -173,6 +173,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
     ```  
   
 ## See also
+
 - <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>
 - [LinkLabel Control Overview](linklabel-control-overview-windows-forms.md)
 - [How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)

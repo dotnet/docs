@@ -85,6 +85,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
  [!code-xaml[DataGrid_Validation#FullXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#fullxaml)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.DataGrid>
 - [DataGrid](datagrid.md)
 - [Data Binding](../data/data-binding-wpf.md)

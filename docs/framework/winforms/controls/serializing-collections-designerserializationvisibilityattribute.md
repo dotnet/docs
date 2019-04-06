@@ -132,6 +132,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
 -   [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md)  
   
 ## See also
+
 - <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>
 - [Designer Serialization Overview](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171834(v=vs.120))
 - [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120))

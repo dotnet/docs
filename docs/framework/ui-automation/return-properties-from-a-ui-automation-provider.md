@@ -23,5 +23,6 @@ ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
  [!code-vb[UIAFragmentProvider_snip#117](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#117)]  
   
 ## See also
+
 - [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
 - [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

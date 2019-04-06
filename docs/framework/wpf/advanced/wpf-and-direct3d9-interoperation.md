@@ -142,6 +142,7 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
 >  If WPF is rendering completely in software, <xref:System.Windows.Interop.D3DImage> is not shown because WPF does not have a front buffer.  
   
 ## See also
+
 - <xref:System.Windows.Interop.D3DImage>
 - [Performance Considerations for Direct3D9 and WPF Interoperability](performance-considerations-for-direct3d9-and-wpf-interoperability.md)
 - [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md)

@@ -116,6 +116,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
 10. See [Task 3: Create the Toolbox and PropertyGrid Panes](task-3-create-the-toolbox-and-propertygrid-panes.md) to learn how to add **Toolbox** and **PropertyGrid** support to your rehosted workflow designer.  
   
 ## See also
+
 - [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md)
 - [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md)
 - [Task 3: Create the Toolbox and PropertyGrid Panes](task-3-create-the-toolbox-and-propertygrid-panes.md)

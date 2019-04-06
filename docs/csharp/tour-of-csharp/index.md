@@ -1,13 +1,13 @@
 ---
 title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
-ms.date: 08/10/2016
-ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
+ms.date: 04/05/2019
+ms.custom: seoapril2019
 ---
 
 # A Tour of the C# Language
 
-C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
+C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language. If you want to explore the language through interactive examples, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
 
 C# is an object-oriented language, but C# further includes support for ***component-oriented*** programming. Contemporary software design increasingly relies on software components in the form of self-contained and self-describing packages of functionality. Key to such components is that they present a programming model with properties, methods, and events; they have attributes that provide declarative information about the component; and they incorporate their own documentation. C# provides language constructs to support directly these concepts, making C# a very natural language in which to create and use software components.
 

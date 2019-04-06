@@ -28,8 +28,7 @@ Looking for some quick help on using the CLI? The following table shows some exa
 |                                | 2.2 | `dotnet publish -c Release -r <RID> --self-contained true` |
 |                                | 3.0 | `dotnet publish -c Release -r <RID> --self-contained true` |
 
-> [!IMPORTANT]
-> \*When using SDK version 3.0, framework-dependent executable is the default publishing mode when running the basic `dotnet publish` command. This only applies when the project targets either **.NET Core 2.1** or **.NET Core 3.0**.
+\* When using SDK version 3.0, framework-dependent executable is the default publishing mode when running the basic `dotnet publish` command. This only applies when the project targets either **.NET Core 2.1** or **.NET Core 3.0**.
 
 ## Publishing basics
 

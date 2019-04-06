@@ -17,7 +17,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
   
 ### To add nodes programmatically  
   
-1.  Use the <xref:System.Windows.Forms.TreeNodeCollection.Add%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
+1. Use the <xref:System.Windows.Forms.TreeNodeCollection.Add%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
   
     ```vb  
     ' Adds new node as a child node of the currently selected node.  
@@ -39,7 +39,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
   
 ### To remove nodes programmatically  
   
-1.  Use the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property to remove a single node, or the <xref:System.Windows.Forms.TreeNodeCollection.Clear%2A> method to clear all nodes.  
+1. Use the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property to remove a single node, or the <xref:System.Windows.Forms.TreeNodeCollection.Clear%2A> method to clear all nodes.  
   
     ```vb  
     ' Removes currently selected node, or root if nothing is selected.  

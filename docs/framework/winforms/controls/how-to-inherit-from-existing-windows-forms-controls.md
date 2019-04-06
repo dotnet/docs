@@ -17,23 +17,23 @@ If you want to extend the functionality of an existing control, you can create a
   
 ### To create an inherited control  
   
-1.  Create a new **Windows Forms Application** project.  
+1. Create a new **Windows Forms Application** project.  
   
-2.  From the **Project** menu, choose **Add New Item**.  
+2. From the **Project** menu, choose **Add New Item**.  
   
      The **Add New Item** dialog box appears.  
   
-3.  In the **Add New Item** dialog box, double-click **Custom Control**.  
+3. In the **Add New Item** dialog box, double-click **Custom Control**.  
   
      A new custom control is added to your project.  
   
-4.  If you using Visual Basic, at the top of **Solution Explorer**, click **Show All Files**. Expand CustomControl1.vb and then open CustomControl1.Designer.vb in the Code Editor.  
+4. If you using Visual Basic, at the top of **Solution Explorer**, click **Show All Files**. Expand CustomControl1.vb and then open CustomControl1.Designer.vb in the Code Editor.  
   
-5.  If you are using C#, open CustomControl1.cs in the Code Editor.  
+5. If you are using C#, open CustomControl1.cs in the Code Editor.  
   
-6.  Locate the class declaration, which inherits from <xref:System.Windows.Forms.Control>.  
+6. Locate the class declaration, which inherits from <xref:System.Windows.Forms.Control>.  
   
-7.  Change the base class to the control that you want to inherit from.  
+7. Change the base class to the control that you want to inherit from.  
   
      For example, if you want to inherit from <xref:System.Windows.Forms.Button>, change the class declaration to the following:  
   
@@ -46,7 +46,7 @@ If you want to extend the functionality of an existing control, you can create a
     public partial class CustomControl1 : System.Windows.Forms.Button  
     ```  
   
-8.  If you are using Visual Basic, save and close CustomControl1.Designer.vb. Open CustomControl1.vb in the Code Editor.  
+8. If you are using Visual Basic, save and close CustomControl1.Designer.vb. Open CustomControl1.vb in the Code Editor.  
   
 9. Implement any custom methods or properties that your control will incorporate.  
   

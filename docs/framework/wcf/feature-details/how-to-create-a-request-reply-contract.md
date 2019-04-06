@@ -8,13 +8,13 @@ A request-reply contract specifies a method that returns a reply. The reply must
   
 ### To create a request-reply contract  
   
-1.  Create an interface in the programming language of your choice.  
+1. Create an interface in the programming language of your choice.  
   
-2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute to the interface.  
+2. Apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute to the interface.  
   
-3.  Apply the <xref:System.ServiceModel.OperationContractAttribute> attribute to each method that clients can invoke.  
+3. Apply the <xref:System.ServiceModel.OperationContractAttribute> attribute to each method that clients can invoke.  
   
-4.  Optional. Set the value of the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true` to prevent the sending of an empty reply message. By default, all operations are request-reply contracts.  
+4. Optional. Set the value of the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true` to prevent the sending of an empty reply message. By default, all operations are request-reply contracts.  
   
 ## Example  
  The following sample defines a contract for a calculator service that provides `Add` and `Subtract` methods. The `Multiply` method is not part of the contract because it is not marked by the <xref:System.ServiceModel.OperationContractAttribute> class and so it is not accessible to clients.  

@@ -16,17 +16,17 @@ To combine the functionality of one or more Windows Forms controls with custom c
   
 ### To create a user control  
   
-1.  Create a new **Windows Control Library** project.  
+1. Create a new **Windows Control Library** project.  
   
      A new project is created with a blank user control.  
   
-2.  Drag controls from the **Windows Forms** tab of the **Toolbox** onto your designer.  
+2. Drag controls from the **Windows Forms** tab of the **Toolbox** onto your designer.  
   
-3.  These controls should be positioned and designed as you want them to appear in the final user control. If you want to allow developers to access the constituent controls, you must declare them as public, or selectively expose properties of the constituent control. For details, see [How to: Expose Properties of Constituent Controls](how-to-expose-properties-of-constituent-controls.md).  
+3. These controls should be positioned and designed as you want them to appear in the final user control. If you want to allow developers to access the constituent controls, you must declare them as public, or selectively expose properties of the constituent control. For details, see [How to: Expose Properties of Constituent Controls](how-to-expose-properties-of-constituent-controls.md).  
   
-4.  Implement any custom methods or properties that your control will incorporate.  
+4. Implement any custom methods or properties that your control will incorporate.  
   
-5.  Press F5 to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
+5. Press F5 to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
   
 ## See also
 

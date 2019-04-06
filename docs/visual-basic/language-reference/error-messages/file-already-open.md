@@ -14,7 +14,7 @@ Sometimes a file must be closed before another `FileOpen` or other operation can
   
 ## To correct this error  
   
-1.  Close the file before executing the statement.  
+1. Close the file before executing the statement.  
   
 ## See also
 

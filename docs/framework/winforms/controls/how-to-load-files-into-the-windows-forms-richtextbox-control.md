@@ -21,9 +21,9 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
   
 ### To load a file into the RichTextBox control  
   
-1.  Determine the path of the file to be opened using the <xref:System.Windows.Forms.OpenFileDialog> component. For an overview, see [OpenFileDialog Component Overview](openfiledialog-component-overview-windows-forms.md).  
+1. Determine the path of the file to be opened using the <xref:System.Windows.Forms.OpenFileDialog> component. For an overview, see [OpenFileDialog Component Overview](openfiledialog-component-overview-windows-forms.md).  
   
-2.  Call the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> method of the <xref:System.Windows.Forms.RichTextBox> control, specifying the file to load and optionally a file type. In the example below, the file to load is taken from the <xref:System.Windows.Forms.OpenFileDialog> component's <xref:System.Windows.Forms.FileDialog.FileName%2A> property. If you call the method with a file name as its only argument, the file type will be assumed to be RTF. To specify another file type, call the method with a value of the <xref:System.Windows.Forms.RichTextBoxStreamType> enumeration as its second argument.  
+2. Call the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> method of the <xref:System.Windows.Forms.RichTextBox> control, specifying the file to load and optionally a file type. In the example below, the file to load is taken from the <xref:System.Windows.Forms.OpenFileDialog> component's <xref:System.Windows.Forms.FileDialog.FileName%2A> property. If you call the method with a file name as its only argument, the file type will be assumed to be RTF. To specify another file type, call the method with a value of the <xref:System.Windows.Forms.RichTextBoxStreamType> enumeration as its second argument.  
   
      In the example below, the <xref:System.Windows.Forms.OpenFileDialog> component is shown when a button is clicked. The file selected is then opened and displayed in the <xref:System.Windows.Forms.RichTextBox> control. This example assumes a form has a button,`btnOpenFile`.  
   

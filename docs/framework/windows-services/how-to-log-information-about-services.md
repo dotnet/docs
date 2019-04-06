@@ -40,18 +40,18 @@ By default, all Windows Service projects have the ability to interact with the A
   
 ### To set up logging to a custom log  
   
-1.  Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`.  
+1. Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`.  
   
     > [!NOTE]
     >  You must set <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> to false in order to use a custom log.  
   
-2.  Set up an instance of an <xref:System.Diagnostics.EventLog> component in your Windows Service application.  
+2. Set up an instance of an <xref:System.Diagnostics.EventLog> component in your Windows Service application.  
   
-3.  Create a custom log by calling the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method and specifying the source string and the name of the log file you want to create.  
+3. Create a custom log by calling the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method and specifying the source string and the name of the log file you want to create.  
   
-4.  Set the <xref:System.Diagnostics.EventLog.Source%2A> property on the <xref:System.Diagnostics.EventLog> component instance to the source string you created in step 3.  
+4. Set the <xref:System.Diagnostics.EventLog.Source%2A> property on the <xref:System.Diagnostics.EventLog> component instance to the source string you created in step 3.  
   
-5.  Write your entries by accessing the <xref:System.Diagnostics.EventLog.WriteEntry%2A> method on the <xref:System.Diagnostics.EventLog> component instance.  
+5. Write your entries by accessing the <xref:System.Diagnostics.EventLog.WriteEntry%2A> method on the <xref:System.Diagnostics.EventLog> component instance.  
   
      The following code shows how to set up logging to a custom log.  
   

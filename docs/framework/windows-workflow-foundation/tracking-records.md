@@ -44,15 +44,15 @@ The workflow runtime is instrumented to emit tracking records to follow the exec
   
  For example, there could be a simple <xref:System.Activities.Statements.Sequence> activity that contains a <xref:System.Activities.Statements.WriteLine> operation with tracking records emitted in the following order:  
   
-1.  <xref:System.Activities.Tracking.WorkflowInstanceRecord> indicates that the workflow is starting.  
+1. <xref:System.Activities.Tracking.WorkflowInstanceRecord> indicates that the workflow is starting.  
   
-2.  <xref:System.Activities.Tracking.ActivityScheduledRecord> indicates that an activity has been scheduled. In this case it is a <xref:System.Activities.Statements.Sequence> activity.  
+2. <xref:System.Activities.Tracking.ActivityScheduledRecord> indicates that an activity has been scheduled. In this case it is a <xref:System.Activities.Statements.Sequence> activity.  
   
-3.  <xref:System.Activities.Tracking.ActivityScheduledRecord> represents the <xref:System.Activities.Statements.WriteLine> activity.  
+3. <xref:System.Activities.Tracking.ActivityScheduledRecord> represents the <xref:System.Activities.Statements.WriteLine> activity.  
   
-4.  There are two <xref:System.Activities.Tracking.ActivityStateRecord> records that represent the two activities completing.  
+4. There are two <xref:System.Activities.Tracking.ActivityStateRecord> records that represent the two activities completing.  
   
-5.  <xref:System.Activities.Tracking.WorkflowInstanceRecord> indicates that the workflow is completing.  
+5. <xref:System.Activities.Tracking.WorkflowInstanceRecord> indicates that the workflow is completing.  
   
 ## See also
 

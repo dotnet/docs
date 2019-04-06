@@ -43,23 +43,23 @@ Binding a data source to a control is essential for providing users with access 
   
 #### To create and set up the project  
   
-1.  Create a WPF Application project named `WPFWithWFAndDatabinding`.  
+1. Create a WPF Application project named `WPFWithWFAndDatabinding`.  
   
-2.  In Solution Explorer, add references to the following assemblies.  
+2. In Solution Explorer, add references to the following assemblies.  
   
     -   WindowsFormsIntegration  
   
     -   System.Windows.Forms  
   
-3.  Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
+3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
-4.  In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespaces mapping.  
+4. In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespaces mapping.  
   
     ```xaml  
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
     ```  
   
-5.  Name the default <xref:System.Windows.Controls.Grid> element `mainGrid` by assigning the <xref:System.Windows.FrameworkElement.Name%2A> property.  
+5. Name the default <xref:System.Windows.Controls.Grid> element `mainGrid` by assigning the <xref:System.Windows.FrameworkElement.Name%2A> property.  
   
      [!code-xaml[WPFWithWFAndDatabinding#8](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#8)]  
   
@@ -114,44 +114,44 @@ Binding a data source to a control is essential for providing users with access 
   
 #### To add the data source  
   
-1.  From the **Data** menu, select **Add New Data Source**.  
+1. From the **Data** menu, select **Add New Data Source**.  
   
-2.  In the **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see [How to: Connect to Data in a Database](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fxk9yw1t(v=vs.120)).  
+2. In the **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see [How to: Connect to Data in a Database](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fxk9yw1t(v=vs.120)).  
   
-3.  When you are prompted by the **Data Source Configuration Wizard**, save the connection string as `NorthwindConnectionString`.  
+3. When you are prompted by the **Data Source Configuration Wizard**, save the connection string as `NorthwindConnectionString`.  
   
-4.  When you are prompted to choose your database objects, select the `Customers` and `Orders` tables, and name the generated data set `NorthwindDataSet`.  
+4. When you are prompted to choose your database objects, select the `Customers` and `Orders` tables, and name the generated data set `NorthwindDataSet`.  
   
 ## Binding to the Data Source  
  The <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType> component provides a uniform interface for the application's data source. Binding to the data source is implemented in the code-behind file.  
   
 #### To bind to the data source  
   
-1.  Open the code-behind file, which is named MainWindow.xaml.vb or MainWindow.xaml.cs.  
+1. Open the code-behind file, which is named MainWindow.xaml.vb or MainWindow.xaml.cs.  
   
-2.  Copy the following code into the `MainWindow` class definition.  
+2. Copy the following code into the `MainWindow` class definition.  
   
      This code declares the <xref:System.Windows.Forms.BindingSource> component and associated helper classes that connect to the database.  
   
      [!code-csharp[WPFWithWFAndDatabinding#11](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#11)]
      [!code-vb[WPFWithWFAndDatabinding#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#11)]
 
-3.  Copy the following code into the constructor.
+3. Copy the following code into the constructor.
 
      This code creates and initializes the <xref:System.Windows.Forms.BindingSource> component.
 
      [!code-csharp[WPFWithWFAndDatabinding#12](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml.cs#12)]
      [!code-vb[WPFWithWFAndDatabinding#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding/Window1.xaml.vb#12)]
 
-4.  Open MainWindow.xaml.
+4. Open MainWindow.xaml.
 
-5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.
+5. In Design view or XAML view, select the <xref:System.Windows.Window> element.
 
-6.  In the Properties window, click the **Events** tab.
+6. In the Properties window, click the **Events** tab.
 
-7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
+7. Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
 
-8.  Copy the following code into the <xref:System.Windows.FrameworkElement.Loaded> event handler.
+8. Copy the following code into the <xref:System.Windows.FrameworkElement.Loaded> event handler.
 
      This code assigns the <xref:System.Windows.Forms.BindingSource> component as the data context and populates the `Customers` and `Orders` adapter objects.
 

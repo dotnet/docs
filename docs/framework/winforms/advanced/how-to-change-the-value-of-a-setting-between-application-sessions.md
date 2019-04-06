@@ -11,9 +11,9 @@ At times, you might want to change the value of a setting between application se
   
 ### To Change the Value of a Setting Between Application Sessions  
   
-1.  Using Microsoft Notepad or some other text or XML editor, open the .config file associated with your application.  
+1. Using Microsoft Notepad or some other text or XML editor, open the .config file associated with your application.  
   
-2.  Locate the entry for the setting you want to change. It should look similar to the example presented below.  
+2. Locate the entry for the setting you want to change. It should look similar to the example presented below.  
   
     ```xml  
     <setting name="Setting1" serializeAs="String" >  
@@ -21,7 +21,7 @@ At times, you might want to change the value of a setting between application se
     </setting>  
     ```  
   
-3.  Type a new value for your setting and save the file.  
+3. Type a new value for your setting and save the file.  
   
 ## See also
 

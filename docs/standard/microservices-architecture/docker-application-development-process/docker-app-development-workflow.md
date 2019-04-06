@@ -200,13 +200,13 @@ The initial Dockerfile might look something like this:
 
 And these are the details, line by line:
 
-1.  Begin a stage with a "small" runtime-only base image, call it **base** for reference.
-2.  Create **/app** directory in the image.
-3.  Expose port **80**.
+1. Begin a stage with a "small" runtime-only base image, call it **base** for reference.
+2. Create **/app** directory in the image.
+3. Expose port **80**.
 <!-- skip -->
-5.  Begin a new stage with "large" image for building/publishing, call it **build** for reference.
-6.  Create directory **/src** in the image.
-7.  Up to line 16, copy referenced projects **.csproj** files, to be able to restore packages later.
+5. Begin a new stage with "large" image for building/publishing, call it **build** for reference.
+6. Create directory **/src** in the image.
+7. Up to line 16, copy referenced projects **.csproj** files, to be able to restore packages later.
 <!-- skip -->
 17. Restore packages for the **Catalog.API** project and the referenced projects.
 18. Copy **all directory tree for the solution** (except the files/directories included in the **.dockerignore** file) from to the **/src** directory in the image.

@@ -23,21 +23,21 @@ The grouping feature of the <xref:System.Windows.Forms.ListView> control enables
   
 ### To add or remove groups in the designer  
   
-1.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.ListView.Groups%2A> property.  
+1. In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.ListView.Groups%2A> property.  
   
      The **ListViewGroup Collection Editor** appears.  
   
-2.  To add a group, click the **Add** button. You can then set properties of the new group, such as the <xref:System.Windows.Forms.ListViewGroup.Header%2A> and <xref:System.Windows.Forms.ListViewGroup.HeaderAlignment%2A> properties. To remove a group, select it and click the **Remove** button.  
+2. To add a group, click the **Add** button. You can then set properties of the new group, such as the <xref:System.Windows.Forms.ListViewGroup.Header%2A> and <xref:System.Windows.Forms.ListViewGroup.HeaderAlignment%2A> properties. To remove a group, select it and click the **Remove** button.  
   
 ### To assign items to groups in the designer  
   
-1.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.ListView.Items%2A> property.  
+1. In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.ListView.Items%2A> property.  
   
      The **ListViewItem Collection Editor** appears.  
   
-2.  To add a new item, click the **Add** button. You can then set properties of the new item, such as the <xref:System.Windows.Forms.ListViewItem.Text%2A> and <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> properties.  
+2. To add a new item, click the **Add** button. You can then set properties of the new item, such as the <xref:System.Windows.Forms.ListViewItem.Text%2A> and <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> properties.  
   
-3.  Select the <xref:System.Windows.Forms.ListViewItem.Group%2A> property and choose a group from the drop-down list.  
+3. Select the <xref:System.Windows.Forms.ListViewItem.Group%2A> property and choose a group from the drop-down list.  
   
 ## See also
 

@@ -20,29 +20,29 @@ You need Visual Studio to complete this walkthrough.
   
 #### To host the MaskedTextBox control  
   
-1.  Create a WPF Application project named `HostingWfInWpfWithXaml`.  
+1. Create a WPF Application project named `HostingWfInWpfWithXaml`.  
   
-2.  Add references to the following assemblies.  
+2. Add references to the following assemblies.  
   
     -   WindowsFormsIntegration  
   
     -   System.Windows.Forms  
   
-3.  Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
+3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
-4.  In the <xref:System.Windows.Window> element, add the following namespace mapping. The `wf` namespace mapping establishes a reference to the assembly that contains the Windows Forms control.  
+4. In the <xref:System.Windows.Window> element, add the following namespace mapping. The `wf` namespace mapping establishes a reference to the assembly that contains the Windows Forms control.  
   
     ```xaml  
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
     ```  
   
-5.  In the <xref:System.Windows.Controls.Grid> element add the following XAML.  
+5. In the <xref:System.Windows.Controls.Grid> element add the following XAML.  
   
      The <xref:System.Windows.Forms.MaskedTextBox> control is created as a child of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
      [!code-xaml[HostingWfInWpfWithXaml#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#3)]  
   
-6.  Press F5 to build and run the application.  
+6. Press F5 to build and run the application.  
   
 ## See also
 

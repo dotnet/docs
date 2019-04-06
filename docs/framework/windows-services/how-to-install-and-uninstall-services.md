@@ -28,13 +28,13 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
 ### Install your service manually  
   
-1.  From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
+1. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
   
      The Developer Command Prompt for Visual Studio appears. 
   
-2.  Access the directory where your project's compiled executable file is located.  
+2. Access the directory where your project's compiled executable file is located.  
   
-3.  Run *InstallUtil.exe* from the command prompt with your project's executable as a parameter:  
+3. Run *InstallUtil.exe* from the command prompt with your project's executable as a parameter:  
   
     ```console
     installutil <yourproject>.exe  
@@ -52,7 +52,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
      The Developer Command Prompt for Visual Studio appears.  
   
-2.  Run *InstallUtil.exe* from the command prompt with your project's output as a parameter:  
+2. Run *InstallUtil.exe* from the command prompt with your project's output as a parameter:  
   
     ```console  
     installutil /u <yourproject>.exe  

@@ -27,13 +27,13 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
   
  The key to hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content on a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window, allowing it to be incorporated into your [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] as a child window. The following approach combines the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in a single application.  
   
-1.  Implement your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content as a managed class.  
+1. Implement your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content as a managed class.  
   
-2.  Implement a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application with [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)]. If you are starting with an existing application and unmanaged [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] code, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag.  
+2. Implement a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application with [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)]. If you are starting with an existing application and unmanaged [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] code, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag.  
   
-3.  Set the threading model to single-threaded apartment (STA).  
+3. Set the threading model to single-threaded apartment (STA).  
   
-4.  Handle the [WM_CREATE](/windows/desktop/winmsg/wm-create)notification in your window procedure and do the following:  
+4. Handle the [WM_CREATE](/windows/desktop/winmsg/wm-create)notification in your window procedure and do the following:  
   
     1.  Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window as its `parent` parameter.  
   
@@ -43,13 +43,13 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
   
     4.  Get the HWND for the content. The <xref:System.Windows.Interop.HwndSource.Handle%2A> property of the <xref:System.Windows.Interop.HwndSource> object contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
   
-5.  Implement a managed class that contains a static field to hold a reference to your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. This class allows you to get a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code.  
+5. Implement a managed class that contains a static field to hold a reference to your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. This class allows you to get a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code.  
   
-6.  Assign the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content to the static field.  
+6. Assign the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content to the static field.  
   
-7.  Receive notifications from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content by attaching a handler to one or more of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events.  
+7. Receive notifications from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content by attaching a handler to one or more of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events.  
   
-8.  Communicate with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content by using the reference that you stored in the static field to set properties, and so on.  
+8. Communicate with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content by using the reference that you stored in the static field to set properties, and so on.  
   
 > [!NOTE]
 >  You can also use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] to implement your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. However, you will have to compile it separately as a [!INCLUDE[TLA#tla_dll](../../../../includes/tlasharptla-dll-md.md)] and reference that [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application. The remainder of the procedure is similar to that outlined above.
@@ -71,13 +71,13 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 ### The Basic Application
  The starting point for the host application was to create a Visual Studio 2005 template.
 
-1.  Open Visual Studio 2005, and select **New Project** from the **File** menu.
+1. Open Visual Studio 2005, and select **New Project** from the **File** menu.
 
-2.  Select **Win32** from the list of [!INCLUDE[TLA2#tla_visualcpp](../../../../includes/tla2sharptla-visualcpp-md.md)] project types. If your default language is not [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)], you will find these project types under **Other Languages**.
+2. Select **Win32** from the list of [!INCLUDE[TLA2#tla_visualcpp](../../../../includes/tla2sharptla-visualcpp-md.md)] project types. If your default language is not [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)], you will find these project types under **Other Languages**.
 
-3.  Select a **Win32 Project** template, assign a name to the project and click **OK** to launch the **Win32 Application Wizard**.
+3. Select a **Win32 Project** template, assign a name to the project and click **OK** to launch the **Win32 Application Wizard**.
 
-4.  Accept the wizard's default settings and click **Finish** to start the project.
+4. Accept the wizard's default settings and click **Finish** to start the project.
 
  The template creates a basic [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application, including:
 
@@ -91,13 +91,13 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
  The first is to compile the project as managed code. By default, the project compiles as unmanaged code. However, because [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is implemented in managed code, the project must be compiled accordingly.
 
-1.  Right-click the project name in **Solution Explorer** and select **Properties** from the context menu to launch the **Property Pages** dialog box.
+1. Right-click the project name in **Solution Explorer** and select **Properties** from the context menu to launch the **Property Pages** dialog box.
 
-2.  Select **Configuration Properties** from the tree view in the left pane.
+2. Select **Configuration Properties** from the tree view in the left pane.
 
-3.  Select **Common Language Runtime** support from the **Project Defaults** list in the right pane.
+3. Select **Common Language Runtime** support from the **Project Defaults** list in the right pane.
 
-4.  Select **Common Language Runtime Support (/clr)** from the drop-down list box.
+4. Select **Common Language Runtime Support (/clr)** from the drop-down list box.
 
 > [!NOTE]
 >  This compiler flag allows you to use managed code in your application, but your unmanaged code will still compile as before.

@@ -89,13 +89,13 @@ public sealed class ForEachWithBodyFactory : IActivityTemplateFactory
   
 #### To run this sample  
   
-1.  Set the project of your choice as the start-up project of the solution:  
+1. Set the project of your choice as the start-up project of the solution:  
   
     1.  **CodeTestClient** shows how to use the activity using code.  
   
     2.  **DesignerTestClient** shows how to use the activity within the designer.  
   
-2.  Build and run the project.  
+2. Build and run the project.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

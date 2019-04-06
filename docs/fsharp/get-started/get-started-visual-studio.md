@@ -15,7 +15,7 @@ One of the most basic projects in Visual Studio is the Console Application.  Her
 
 1. On the **File** menu, point to **New**, and then choose **Project**.
 
-2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
+2. In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
 3. Select either **.NET Core Console app** or **Console app**.
 

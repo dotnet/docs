@@ -142,13 +142,13 @@ ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
   
  To reparent a pop-up window:  
   
-1.  Create a provider for the pop-up window. This requires that the class of the pop-up window is known in advance.  
+1. Create a provider for the pop-up window. This requires that the class of the pop-up window is known in advance.  
   
-2.  Implement all properties and patterns as usual for that pop-up, as though it were a control in its own right.  
+2. Implement all properties and patterns as usual for that pop-up, as though it were a control in its own right.  
   
-3.  Implement the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A> property so that it returns the value obtained from <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>, where the parameter is the window handle of the pop-up window.  
+3. Implement the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A> property so that it returns the value obtained from <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>, where the parameter is the window handle of the pop-up window.  
   
-4.  Implement <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.Navigate%2A> for the pop-up window and its parent so that navigation is handled properly from the logical parent to the logical children, and between sibling children.  
+4. Implement <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.Navigate%2A> for the pop-up window and its parent so that navigation is handled properly from the logical parent to the logical children, and between sibling children.  
   
  When [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] encounters the pop-up window, it recognizes that navigation is being overridden from the default, and skips over the pop-up window when it is encountered as a child of the desktop. Instead, the node will only be reachable through the fragment.  
   

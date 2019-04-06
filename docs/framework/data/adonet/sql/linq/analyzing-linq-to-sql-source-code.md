@@ -9,9 +9,9 @@ By using the following steps, you can produce [!INCLUDE[vbtecdlinq](../../../../
 > [!NOTE]
 >  Developers using Visual Studio can use the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] to produce this code.  
   
-1.  If you do not already have the Northwind sample database on your development computer, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+1. If you do not already have the Northwind sample database on your development computer, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
-2.  Use the SqlMetal command-line tool to generate a Visual Basic or C# source file. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). By typing the following commands at a command prompt, you can generate Visual Basic and C# source files that include stored procedures and functions:  
+2. Use the SqlMetal command-line tool to generate a Visual Basic or C# source file. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). By typing the following commands at a command prompt, you can generate Visual Basic and C# source files that include stored procedures and functions:  
   
     -   `sqlmetal /code:northwind.vb /language:vb "c:\northwnd.mdf" /sprocs /functions /pluralize`  
   

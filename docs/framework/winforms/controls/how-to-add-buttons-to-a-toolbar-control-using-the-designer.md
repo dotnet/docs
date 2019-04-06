@@ -22,13 +22,13 @@ ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
   
 ### To add buttons at design time  
   
-1.  Select the <xref:System.Windows.Forms.ToolBar> control.  
+1. Select the <xref:System.Windows.Forms.ToolBar> control.  
   
-2.  In the **Properties** window, click the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property to select it and click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to open the **ToolBarButton Collection Editor**.  
+2. In the **Properties** window, click the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property to select it and click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to open the **ToolBarButton Collection Editor**.  
   
-3.  Use the **Add** and **Remove** buttons to add and remove buttons from the <xref:System.Windows.Forms.ToolBar> control.  
+3. Use the **Add** and **Remove** buttons to add and remove buttons from the <xref:System.Windows.Forms.ToolBar> control.  
   
-4.  Configure the properties of the individual buttons in the **Properties** window that appears in the pane on the right side of the editor. The following table shows some important properties to consider.  
+4. Configure the properties of the individual buttons in the **Properties** window that appears in the pane on the right side of the editor. The following table shows some important properties to consider.  
   
     |Property|Description|  
     |--------------|-----------------|  
@@ -39,7 +39,7 @@ ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
     |<xref:System.Windows.Forms.ToolBarButton.Text%2A>|The text string displayed by the button.|  
     |<xref:System.Windows.Forms.ToolBarButton.ToolTipText%2A>|The text that appears as a ToolTip for the button.|  
   
-5.  Click **OK** to close the dialog box and create the panels you specified.  
+5. Click **OK** to close the dialog box and create the panels you specified.  
   
 ## See also
 

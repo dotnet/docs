@@ -18,9 +18,9 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
   
 ### To control the insertion point in a TextBox control  
   
-1.  Set the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> property to an appropriate value. Zero places the insertion point immediately to the left of the first character.  
+1. Set the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> property to an appropriate value. Zero places the insertion point immediately to the left of the first character.  
   
-2.  (Optional) Set the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property to the length of the text you want to select.  
+2. (Optional) Set the <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> property to the length of the text you want to select.  
   
      The code below always returns the insertion point to 0. The `TextBox1_Enter` event handler must be bound to the control; for more information, see [Creating Event Handlers in Windows Forms](../creating-event-handlers-in-windows-forms.md).  
   

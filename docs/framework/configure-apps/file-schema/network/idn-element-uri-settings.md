@@ -44,13 +44,13 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
   
  To enable support for IRI, the following two changes are required:  
   
-1.  Add the following line to the machine.config file under the .NET Framework 2.0 directory  
+1. Add the following line to the machine.config file under the .NET Framework 2.0 directory  
   
     ```xml  
     <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
     ```  
   
-2.  Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.  
+2. Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.  
   
  There are three possible values for IDN depending on the DNS servers that are used:  
   

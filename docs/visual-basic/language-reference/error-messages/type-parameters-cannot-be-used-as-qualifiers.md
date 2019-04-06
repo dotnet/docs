@@ -28,9 +28,9 @@ End Function
   
 ## To correct this error  
   
-1.  Remove the type parameter from the qualification string, or replace it with a defined type.  
+1. Remove the type parameter from the qualification string, or replace it with a defined type.  
   
-2.  If you need to use a constructed type to locate the programming element being qualified, you must use additional program logic.  
+2. If you need to use a constructed type to locate the programming element being qualified, you must use additional program logic.  
   
 ## See also
 

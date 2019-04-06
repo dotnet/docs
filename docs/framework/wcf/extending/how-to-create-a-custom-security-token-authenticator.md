@@ -17,11 +17,11 @@ This topic shows how to create a custom security token authenticator and how to 
   
 #### To create a custom security token authenticator  
   
-1.  Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> class.  
+1. Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> class.  
   
-2.  Override the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateTokenCore%2A> method. The method returns `true` or `false` depending on whether the custom authenticator can validate the incoming token type or not.  
+2. Override the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateTokenCore%2A> method. The method returns `true` or `false` depending on whether the custom authenticator can validate the incoming token type or not.  
   
-3.  Override the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method. This method needs to validate the token contents appropriately. If the token passes the validation step, it returns a collection of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> instances. The following example uses a custom authorization policy implementation that will be created in the next procedure.  
+3. Override the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore%2A> method. This method needs to validate the token contents appropriately. If the token passes the validation step, it returns a collection of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> instances. The following example uses a custom authorization policy implementation that will be created in the next procedure.  
   
      [!code-csharp[C_CustomTokenAuthenticator#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenauthenticator/cs/source.cs#1)]
      [!code-vb[C_CustomTokenAuthenticator#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenauthenticator/vb/source.vb#1)]  
@@ -30,13 +30,13 @@ This topic shows how to create a custom security token authenticator and how to 
   
 #### To create a custom authorization policy  
   
-1.  Define a new class implementing the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface.  
+1. Define a new class implementing the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface.  
   
-2.  Implement the <xref:System.IdentityModel.Policy.IAuthorizationComponent.Id%2A> read-only property. One way to implement this property is to generate a globally unique identifier (GUID) in the class constructor and return it every time the value for this property is requested.  
+2. Implement the <xref:System.IdentityModel.Policy.IAuthorizationComponent.Id%2A> read-only property. One way to implement this property is to generate a globally unique identifier (GUID) in the class constructor and return it every time the value for this property is requested.  
   
-3.  Implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Issuer%2A> read-only property. This property needs to return an issuer of the claim sets that are obtained from the token. This issuer should correspond to the issuer of the token or an authority that is responsible for validating the token contents. The following example uses the issuer claim that passed to this class from the custom security token authenticator created in the previous procedure. The custom security token authenticator uses the system-provided claim set (returned by the <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property) to represent the issuer of the username token.  
+3. Implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Issuer%2A> read-only property. This property needs to return an issuer of the claim sets that are obtained from the token. This issuer should correspond to the issuer of the token or an authority that is responsible for validating the token contents. The following example uses the issuer claim that passed to this class from the custom security token authenticator created in the previous procedure. The custom security token authenticator uses the system-provided claim set (returned by the <xref:System.IdentityModel.Claims.ClaimSet.System%2A> property) to represent the issuer of the username token.  
   
-4.  Implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method. This method populates an instance of the <xref:System.IdentityModel.Policy.EvaluationContext> class (passed in as an argument) with claims that are based on the incoming security token content. The method returns `true` when it is done with the evaluation. In cases when the implementation relies on the presence of other authorization policies that provide additional information to the evaluation context, this method can return `false` if the required information is not present yet in the evaluation context. In that case, WCF will call the method again after evaluating all other authorization policies generated for the incoming message if at least one of those authorization policies modified the evaluation context.  
+4. Implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method. This method populates an instance of the <xref:System.IdentityModel.Policy.EvaluationContext> class (passed in as an argument) with claims that are based on the incoming security token content. The method returns `true` when it is done with the evaluation. In cases when the implementation relies on the presence of other authorization policies that provide additional information to the evaluation context, this method can return `false` if the required information is not present yet in the evaluation context. In that case, WCF will call the method again after evaluating all other authorization policies generated for the incoming message if at least one of those authorization policies modified the evaluation context.  
   
      [!code-csharp[c_CustomTokenAuthenticator#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenauthenticator/cs/source.cs#3)]
      [!code-vb[c_CustomTokenAuthenticator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenauthenticator/vb/source.vb#3)]  
@@ -45,9 +45,9 @@ This topic shows how to create a custom security token authenticator and how to 
   
 #### To integrate a custom security token authenticator with a custom security token manager  
   
-1.  Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%2A> method in your custom security token manager implementation.  
+1. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%2A> method in your custom security token manager implementation.  
   
-2.  Add logic to the method to enable it to return your custom security token authenticator based on the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter. The following example returns a custom security token authenticator if the token requirements token type is a user name (represented by the <xref:System.IdentityModel.Tokens.SecurityTokenTypes.UserName%2A> property) and the message direction for which the security token authenticator is being requested is input (represented by the <xref:System.ServiceModel.Description.MessageDirection.Input> field).  
+2. Add logic to the method to enable it to return your custom security token authenticator based on the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter. The following example returns a custom security token authenticator if the token requirements token type is a user name (represented by the <xref:System.IdentityModel.Tokens.SecurityTokenTypes.UserName%2A> property) and the message direction for which the security token authenticator is being requested is input (represented by the <xref:System.ServiceModel.Description.MessageDirection.Input> field).  
   
      [!code-csharp[c_CustomTokenAuthenticator#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenauthenticator/cs/source.cs#2)]
      [!code-vb[c_CustomTokenAuthenticator#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenauthenticator/vb/source.vb#2)]  

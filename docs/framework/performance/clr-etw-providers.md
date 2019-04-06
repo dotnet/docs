@@ -52,7 +52,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 ## ETW Data Collection Using Runtime and Rundown Providers  
  The following example demonstrates how to use the CLR rundown provider in a way that allows symbol resolution of managed processes with minimal impact, regardless of whether the processes start or end inside or outside the profiled window.  
   
-1.  Turn on ETW logging by using the CLR runtime provider:  
+1. Turn on ETW logging by using the CLR runtime provider:  
   
     ```  
     xperf -start clr -on e13c0d23-ccbc-4e12-931b-d9cc2eee27e4:0x1CCBD:0x5 -f clr1.etl      
@@ -60,7 +60,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
      The log will be saved to the clr1.etl file.  
   
-2.  To stop profiling while the process continues to execute, start the rundown provider to capture the `DCEnd` events:  
+2. To stop profiling while the process continues to execute, start the rundown provider to capture the `DCEnd` events:  
   
     ```  
     xperf -start clrRundown -on A669021C-C450-4609-A035-5AF59AF4DF18:0xB8:0x5 -f clr2.etl      
@@ -68,14 +68,14 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
      This enables the collection of `DCEnd` events to start a rundown session. You may need to wait 30 to 60 seconds for all events to be collected. The log will be saved to the clr1.et2 file.  
   
-3.  Turn off all ETW profiling:  
+3. Turn off all ETW profiling:  
   
     ```  
     xperf -stop clrRundown   
     xperf -stop clr  
     ```  
   
-4.  Merge the profiles to create one log file:  
+4. Merge the profiles to create one log file:  
   
     ```  
     xperf -merge clr1.etl clr2.etl merged.etl  

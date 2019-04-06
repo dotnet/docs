@@ -25,9 +25,9 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
   
 ### To generate the School model for a Visual Basic project using EdmGen.exe  
   
-1.  Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
-2.  At the command prompt, execute the following command without line breaks:  
+2. At the command prompt, execute the following command without line breaks:  
   
     ```  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
@@ -37,9 +37,9 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
   
 ### To generate the School model for a C# project using EdmGen.exe  
   
-1.  Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
-2.  At the command prompt, execute the following command without line breaks:  
+2. At the command prompt, execute the following command without line breaks:  
   
     ```  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   

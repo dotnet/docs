@@ -77,9 +77,9 @@ A *generic type* is a single programming element that adapts to perform the same
 ## Advantages of Generic Types  
  A generic type serves as a basis for declaring several different programming elements, each of which operates on a specific data type. The alternatives to a generic type are:  
   
-1.  A single type operating on the `Object` data type.  
+1. A single type operating on the `Object` data type.  
   
-2.  A set of *type-specific* versions of the type, each version individually coded and operating on one specific data type such as `String`, `Integer`, or a user-defined type such as `customer`.  
+2. A set of *type-specific* versions of the type, each version individually coded and operating on one specific data type such as `String`, `Integer`, or a user-defined type such as `customer`.  
   
  A generic type has the following advantages over these alternatives:  
   

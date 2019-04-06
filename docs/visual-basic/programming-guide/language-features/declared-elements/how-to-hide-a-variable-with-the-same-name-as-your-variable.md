@@ -24,7 +24,7 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
   
 #### To hide a variable by shadowing it through scope  
   
-1.  Determine the region defining the variable you want to hide, and determine a subregion in which to redefine it with your variable.  
+1. Determine the region defining the variable you want to hide, and determine a subregion in which to redefine it with your variable.  
   
     |Variable's region|Allowable subregion for redefining it|  
     |-----------------------|-------------------------------------------|  
@@ -33,9 +33,9 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
   
      You cannot redefine a procedure variable in a block within that procedure, for example in an `If`...`End If` construction or a `For` loop.  
   
-2.  Create the subregion if it does not already exist.  
+2. Create the subregion if it does not already exist.  
   
-3.  Within the subregion, write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) declaring the shadowing variable.  
+3. Within the subregion, write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) declaring the shadowing variable.  
   
      When code inside the subregion refers to the variable name, the compiler resolves the reference to the shadowing variable.  
   
@@ -67,11 +67,11 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
   
 #### To hide a variable by shadowing it through inheritance  
   
-1.  Be sure the variable you want to hide is declared in a class, and at class level (outside any procedure). Otherwise you cannot shadow it through inheritance.  
+1. Be sure the variable you want to hide is declared in a class, and at class level (outside any procedure). Otherwise you cannot shadow it through inheritance.  
   
-2.  Define a class derived from the variable's class if one does not already exist.  
+2. Define a class derived from the variable's class if one does not already exist.  
   
-3.  Inside the derived class, write a `Dim` statement declaring your variable. Include the [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) keyword in the declaration.  
+3. Inside the derived class, write a `Dim` statement declaring your variable. Include the [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) keyword in the declaration.  
   
      When code in the derived class refers to the variable name, the compiler resolves the reference to your variable.  
   

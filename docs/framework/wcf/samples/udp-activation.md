@@ -69,13 +69,13 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 #### To set up this sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Build the project on Windows Vista. After compilation, it also performs the following operations in the post-build phase:  
+2. Build the project on Windows Vista. After compilation, it also performs the following operations in the post-build phase:  
   
     -   Installs the UDP binding to the site "Default Web Site".  
   
@@ -83,13 +83,13 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
     -   It also enables "net.udp" protocol for this virtual application.  
   
-3.  Start the user interface application "WasNetActivator.exe". Click the **Setup** tab, check the following check boxes and then click **Install** to install them:  
+3. Start the user interface application "WasNetActivator.exe". Click the **Setup** tab, check the following check boxes and then click **Install** to install them:  
   
     -   UDP Listener Adapter  
   
     -   UDP Protocol Handlers  
   
-4.  Click the **Activation** tab of the user interface application "WasNetActivator.exe". Click the **Start** button to start the listener adapter. Now you are ready to run the program.  
+4. Click the **Activation** tab of the user interface application "WasNetActivator.exe". Click the **Start** button to start the listener adapter. Now you are ready to run the program.  
   
     > [!NOTE]
     >  When you are finished with this sample, you must run Cleanup.bat to remove the net.udp binding from the "Default Web Site".  
@@ -107,15 +107,15 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 -   Ensure that all of the required pieces are installed correctly. The following steps show how to run the sample:  
   
-1.  Ensure that the following Windows services have been started:  
+1. Ensure that the following Windows services have been started:  
   
     -   Windows Process Activation Service (WAS).  
   
     -   Internet Information Services (IIS): W3SVC.  
   
-2.  Then start the activator, WasNetActivator.exe. Under the **Activation** tab, the only protocol, **UDP**, is selected in the drop down list. Click the **Start** button to start the activator.  
+2. Then start the activator, WasNetActivator.exe. Under the **Activation** tab, the only protocol, **UDP**, is selected in the drop down list. Click the **Start** button to start the activator.  
   
-3.  Once the activator is started, you can run the client code by running Client.exe from a command window. The following is the sample output:  
+3. Once the activator is started, you can run the client code by running Client.exe from a command window. The following is the sample output:  
   
     ```  
     Testing Udp Activation.  

@@ -20,22 +20,22 @@ This topic shows how to create new token types with a custom security token prov
   
 ### To create a custom security token provider  
   
-1.  Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class.  
+1. Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class.  
   
-2.  Implement the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%28System.TimeSpan%29> method. The method is responsible for creating and returning an instance of the security token. The following example creates a class named `MySecurityTokenProvider`, and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%28System.TimeSpan%29> method to return an instance of the <xref:System.IdentityModel.Tokens.X509SecurityToken> class. The class constructor requires an instance of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class.  
+2. Implement the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%28System.TimeSpan%29> method. The method is responsible for creating and returning an instance of the security token. The following example creates a class named `MySecurityTokenProvider`, and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%28System.TimeSpan%29> method to return an instance of the <xref:System.IdentityModel.Tokens.X509SecurityToken> class. The class constructor requires an instance of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class.  
   
      [!code-csharp[c_CustomTokenProvider#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenprovider/cs/source.cs#1)]
      [!code-vb[c_CustomTokenProvider#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenprovider/vb/source.vb#1)]  
   
 ### To integrate a custom security token provider with a custom security token manager  
   
-1.  Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenManager> class. (The example below derives from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class, which derives from the <xref:System.IdentityModel.Selectors.SecurityTokenManager> class.)  
+1. Define a new class derived from the <xref:System.IdentityModel.Selectors.SecurityTokenManager> class. (The example below derives from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class, which derives from the <xref:System.IdentityModel.Selectors.SecurityTokenManager> class.)  
   
-2.  Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method if is not already overridden.  
+2. Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method if is not already overridden.  
   
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method is responsible for returning an instance of the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class appropriate to the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter passed to the method by the WCF security framework. Modify the method to return the custom security token provider implementation (created in the previous procedure) when the method is called with an appropriate security token parameter. For more information about the security token manager, see the [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md).  
   
-3.  Add custom logic to the method to enable it to return your custom security token provider based on the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter. The following sample returns the custom security token provider if the token requirements are met. The requirements include an X.509 security token and the message direction (that the token is used for message output). For all other cases, the code calls the base class to maintain the system-provided behavior for other security token requirements.  
+3. Add custom logic to the method to enable it to return your custom security token provider based on the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter. The following sample returns the custom security token provider if the token requirements are met. The requirements include an X.509 security token and the message direction (that the token is used for message output). For all other cases, the code calls the base class to maintain the system-provided behavior for other security token requirements.  
   
  [!code-csharp[c_CustomTokenProvider#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenprovider/cs/source.cs#2)]
  [!code-vb[c_CustomTokenProvider#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenprovider/vb/source.vb#2)]  

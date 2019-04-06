@@ -34,16 +34,16 @@ To successfully deploy your .NET Framework application, you must understand how 
   
  The runtime uses the following steps to resolve an assembly reference:  
   
-1.  [Determines the correct assembly version](#step1) by examining applicable configuration files, including the application configuration file, publisher policy file, and machine configuration file. If the configuration file is located on a remote machine, the runtime must locate and download the application configuration file first.  
+1. [Determines the correct assembly version](#step1) by examining applicable configuration files, including the application configuration file, publisher policy file, and machine configuration file. If the configuration file is located on a remote machine, the runtime must locate and download the application configuration file first.  
   
-2.  [Checks whether the assembly name has been bound to before](#step2) and, if so, uses the previously loaded assembly. If a previous request to load the assembly failed, the request is failed immediately without attempting to load the assembly.  
+2. [Checks whether the assembly name has been bound to before](#step2) and, if so, uses the previously loaded assembly. If a previous request to load the assembly failed, the request is failed immediately without attempting to load the assembly.  
   
     > [!NOTE]
     >  The caching of assembly binding failures is new in the .NET Framework version 2.0.  
   
-3.  [Checks the global assembly cache](#step3). If the assembly is found there, the runtime uses this assembly.  
+3. [Checks the global assembly cache](#step3). If the assembly is found there, the runtime uses this assembly.  
   
-4.  [Probes for the assembly](#step4) using the following steps:  
+4. [Probes for the assembly](#step4) using the following steps:  
   
     1.  If configuration and publisher policy do not affect the original reference and if the bind request was created using the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method, the runtime checks for location hints.  
   
@@ -148,9 +148,9 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 ## Step 4: Locating the Assembly through Codebases or Probing  
  After the correct assembly version has been determined by using the information in the calling assembly's reference and in the configuration files, and after it has checked in the global assembly cache (only for strong-named assemblies), the common language runtime attempts to find the assembly. The process of locating an assembly involves the following steps:  
   
-1.  If a [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element is found in the application configuration file, the runtime checks the specified location. If a match is found, that assembly is used and no probing occurs. If the assembly is not found there, the binding request fails.  
+1. If a [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element is found in the application configuration file, the runtime checks the specified location. If a match is found, that assembly is used and no probing occurs. If the assembly is not found there, the binding request fails.  
   
-2.  The runtime then probes for the referenced assembly using the rules specified later in this section.  
+2. The runtime then probes for the referenced assembly using the rules specified later in this section.  
   
 > [!NOTE]
 >  If you have multiple versions of an assembly in a directory and you want to reference a particular version of that assembly, you must use the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element instead of the `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element. If you use the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, the runtime stops probing the first time it finds an assembly that matches the simple assembly name referenced, whether it is a correct match or not. If it is a correct match, that assembly is used. If it is not a correct match, probing stops and binding fails.  

@@ -42,9 +42,9 @@ Framework property metadata options are reported for the properties of object el
   
  If you are creating a <xref:System.Windows.FrameworkPropertyMetadata> instance, there are two ways to populate that metadata with values for the specific properties that communicate the framework property characteristics:  
   
-1.  Use the <xref:System.Windows.FrameworkPropertyMetadata> constructor signature that allows a `flags` parameter. This parameter should be filled with all desired combined values of the <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration flags.  
+1. Use the <xref:System.Windows.FrameworkPropertyMetadata> constructor signature that allows a `flags` parameter. This parameter should be filled with all desired combined values of the <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration flags.  
   
-2.  Use one of the signatures without a `flags` parameter, and then set each reporting Boolean property on <xref:System.Windows.FrameworkPropertyMetadata> to `true` for each desired characteristic change. If you do this, you must set these properties before any elements with this dependency property are constructed; the Boolean properties are read-write in order to allow this behavior of avoiding the `flags` parameter and still populate the metadata, but the metadata must become effectively sealed before property use. Thus, attempting to set the properties after metadata is requested will be an invalid operation.  
+2. Use one of the signatures without a `flags` parameter, and then set each reporting Boolean property on <xref:System.Windows.FrameworkPropertyMetadata> to `true` for each desired characteristic change. If you do this, you must set these properties before any elements with this dependency property are constructed; the Boolean properties are read-write in order to allow this behavior of avoiding the `flags` parameter and still populate the metadata, but the metadata must become effectively sealed before property use. Thus, attempting to set the properties after metadata is requested will be an invalid operation.  
   
 <a name="Framework_Property_Metadata_Merge_Behavior"></a>   
 ## Framework Property Metadata Merge Behavior  

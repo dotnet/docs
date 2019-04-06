@@ -23,21 +23,21 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 ### To test the run-time behavior of a UserControl  
   
-1.  Create a Windows control library project called **TestContainerExample**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).  
+1. Create a Windows control library project called **TestContainerExample**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).  
   
-2.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.  
+2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.  
   
-3.  Press F5 to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.  
+3. Press F5 to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.  
   
-4.  Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to `ControlDark`. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.  
+4. Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to `ControlDark`. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.  
   
-5.  Click the **Dock Fill User Control** check box below the **Preview** pane. Observe that the control is resized to fill the pane. Resize the test container and observe that the control is resized with the pane.  
+5. Click the **Dock Fill User Control** check box below the **Preview** pane. Observe that the control is resized to fill the pane. Resize the test container and observe that the control is resized with the pane.  
   
-6.  Close the test container.  
+6. Close the test container.  
   
-7.  Add another user control to the **TestContainerExample** project. For details, see [How to: Add Existing Items to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/9f4t9t92(v=vs.100)).  
+7. Add another user control to the **TestContainerExample** project. For details, see [How to: Add Existing Items to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/9f4t9t92(v=vs.100)).  
   
-8.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.  
+8. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.  
   
 9. Press F5 to build the project and run the test container.  
   
@@ -48,17 +48,17 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 #### To test user controls from another project  
   
-1.  Create a Windows control library project called **TestContainerExample2**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).  
+1. Create a Windows control library project called **TestContainerExample2**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).  
   
-2.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.  
+2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.  
   
-3.  Press F5 to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.  
+3. Press F5 to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.  
   
-4.  Click the **Load** button.  
+4. Click the **Load** button.  
   
-5.  In the **Open** dialog box, navigate to **TestContainerExample**.dll, which you built in the previous procedure. Select **TestContainerExample**.dll and click the **Open** button to load the user controls  
+5. In the **Open** dialog box, navigate to **TestContainerExample**.dll, which you built in the previous procedure. Select **TestContainerExample**.dll and click the **Open** button to load the user controls  
   
-6.  Use the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.  
+6. Use the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.  
   
 ## See also
 

@@ -56,9 +56,9 @@ GROUP BY 1   -- BAD, a constant is not allowed
 ## Example  
  The following Entity SQL query uses the GROUP BY operator to specify groups into which objects are returned by a query. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
  [!code-csharp[DP EntityServices Concepts 2#GROUPBY](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#groupby)]  
   

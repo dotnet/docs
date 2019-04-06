@@ -16,9 +16,9 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
  There are two steps in working with graphics:  
   
-1.  Creating a <xref:System.Drawing.Graphics> object.  
+1. Creating a <xref:System.Drawing.Graphics> object.  
   
-2.  Using the <xref:System.Drawing.Graphics> object to draw lines and shapes, render text, or display and manipulate images.  
+2. Using the <xref:System.Drawing.Graphics> object to draw lines and shapes, render text, or display and manipulate images.  
   
 ## Creating a Graphics Object  
  A graphics object can be created in a variety of ways.  
@@ -42,11 +42,11 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 #### To obtain a reference to a Graphics object from the PaintEventArgs in the Paint event  
   
-1.  Declare the <xref:System.Drawing.Graphics> object.  
+1. Declare the <xref:System.Drawing.Graphics> object.  
   
-2.  Assign the variable to refer to the <xref:System.Drawing.Graphics> object passed as part of the <xref:System.Windows.Forms.PaintEventArgs>.  
+2. Assign the variable to refer to the <xref:System.Drawing.Graphics> object passed as part of the <xref:System.Windows.Forms.PaintEventArgs>.  
   
-3.  Insert code to paint the form or control.  
+3. Insert code to paint the form or control.  
   
      The following example shows how to reference a <xref:System.Drawing.Graphics> object from the <xref:System.Windows.Forms.PaintEventArgs> in the <xref:System.Windows.Forms.Control.Paint> event:  
   

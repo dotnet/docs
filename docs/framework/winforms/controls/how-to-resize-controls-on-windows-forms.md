@@ -15,16 +15,16 @@ You can resize individual controls, and you can resize multiple controls of the 
   
 ### To resize a control  
   
-1.  Click the control to be resized and drag one of the eight sizing handles.  
+1. Click the control to be resized and drag one of the eight sizing handles.  
   
     > [!NOTE]
     >  Select the control and press the ARROW keys while holding down the SHIFT key to resize the control one pixel at a time. Press the DOWN or RIGHT arrow keys while holding down the SHIFT and CTRL keys to resize the control in large increments.  
   
 ### To resize multiple controls on a form  
   
-1.  Hold down the CTRL or SHIFT key and select the controls you want to resize. The size of the first control you select is used for the other controls.  
+1. Hold down the CTRL or SHIFT key and select the controls you want to resize. The size of the first control you select is used for the other controls.  
   
-2.  On the **Format** menu, choose **Make Same Size**, and select one of the four options. The first three commands change the dimensions of the controls to match the first-selected control.  
+2. On the **Format** menu, choose **Make Same Size**, and select one of the four options. The first three commands change the dimensions of the controls to match the first-selected control.  
   
 ## See also
 

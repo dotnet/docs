@@ -13,21 +13,21 @@ ms.assetid: fd16272e-36f2-415e-850e-8a81f2b17525
   
 ### To manually modify the Northwind.edmx file to add feed customization attributes  
   
-1.  In **Solution Explorer**, right-click the `Northwind.edmx` file, and then click **Open with**.  
+1. In **Solution Explorer**, right-click the `Northwind.edmx` file, and then click **Open with**.  
   
-2.  In the **Open With - Northwind.edmx** dialog box, select **XML Editor**, and then click **OK**.  
+2. In the **Open With - Northwind.edmx** dialog box, select **XML Editor**, and then click **OK**.  
   
-3.  Locate the `ConceptualModels` element and replace the existing `Customers` entity type with the following element that contains feed customization mapping attributes:  
+3. Locate the `ConceptualModels` element and replace the existing `Customers` entity type with the following element that contains feed customization mapping attributes:  
   
      [!code-xml[Astoria Custom Feeds#EdmFeedCustomers](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedcustomers)]  
   
-4.  Save changes and close the Northwind.edmx file.  
+4. Save changes and close the Northwind.edmx file.  
   
-5.  (Optional) Right-click the Northwind.edmx file and then click **Run Custom Tool**.  
+5. (Optional) Right-click the Northwind.edmx file and then click **Run Custom Tool**.  
   
      This regenerates the object layer file, which may be required.  
   
-6.  Recompile the project.  
+6. Recompile the project.  
   
 ## Example  
  The previous example returns the following result for the URI `http://myservice/Northwind.svc/Customers('ALFKI')`.  

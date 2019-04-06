@@ -8,11 +8,11 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](../../../../../docs
   
 ### To validate the School model using EdmGen.exe  
   
-1.  Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
-2.  Generate the School model. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).  
+2. Generate the School model. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).  
   
-3.  At the command prompt, execute the following command without line breaks:  
+3. At the command prompt, execute the following command without line breaks:  
   
     ```console
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:ValidateArtifacts /inssdl:.\School.ssdl /inmsl:.\School.msl /incsdl:.\School.csdl  

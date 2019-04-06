@@ -27,11 +27,11 @@ Windows Forms controls usually display some text that is related to the primary 
   
 ### To set the text displayed by a control programmatically  
   
-1.  Set the <xref:System.Windows.Forms.Control.Text%2A> property to a string.  
+1. Set the <xref:System.Windows.Forms.Control.Text%2A> property to a string.  
   
      To create an underlined access key, includes an ampersand (&) before the letter that will be the access key.  
   
-2.  Set the <xref:System.Windows.Forms.Control.Font%2A> property to an object of type <xref:System.Drawing.Font>.  
+2. Set the <xref:System.Windows.Forms.Control.Font%2A> property to an object of type <xref:System.Drawing.Font>.  
   
     ```vb  
     Button1.Text = "Click here to save changes"  

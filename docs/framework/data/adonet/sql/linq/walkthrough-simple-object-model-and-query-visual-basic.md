@@ -40,32 +40,32 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To create a LINQ to SQL solution  
   
-1.  On the **File** menu, click **New Project**.  
+1. On the **File** menu, click **New Project**.  
   
-2.  In the **Project types** pane of the **New Project** dialog box, click **Visual Basic**.  
+2. In the **Project types** pane of the **New Project** dialog box, click **Visual Basic**.  
   
-3.  In the **Templates** pane, click **Console Application**.  
+3. In the **Templates** pane, click **Console Application**.  
   
-4.  In the **Name** box, type **LinqConsoleApp**.  
+4. In the **Name** box, type **LinqConsoleApp**.  
   
-5.  Click **OK**.  
+5. Click **OK**.  
   
 ## Adding LINQ References and Directives  
  This walkthrough uses assemblies that might not be installed by default in your project. If `System.Data.Linq` is not listed as a reference in your project (click **Show All Files** in **Solution Explorer** and expand the **References** node), add it, as explained in the following steps.  
   
 #### To add System.Data.Linq  
   
-1.  In **Solution Explorer**, right-click **References**, and then click **Add Reference**.  
+1. In **Solution Explorer**, right-click **References**, and then click **Add Reference**.  
   
-2.  In the **Add Reference** dialog box, click **.NET**, click the System.Data.Linq assembly, and then click **OK**.  
+2. In the **Add Reference** dialog box, click **.NET**, click the System.Data.Linq assembly, and then click **OK**.  
   
      The assembly is added to the project.  
   
-3.  Also in the **Add Reference** dialog box, click **.NET**, scroll to and click System.Windows.Forms, and then click **OK**.  
+3. Also in the **Add Reference** dialog box, click **.NET**, scroll to and click System.Windows.Forms, and then click **OK**.  
   
      This assembly, which supports the message box in the walkthrough, is added to the project.  
   
-4.  Add the following directives above `Module1`:  
+4. Add the following directives above `Module1`:  
   
      [!code-vb[DLinqWalk1VB#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1VB/vb/Module1.vb#1)]  
   
@@ -122,22 +122,22 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To execute the query  
   
-1.  Type or paste the following code at the end of the `Sub Main` method (after the query description):  
+1. Type or paste the following code at the end of the `Sub Main` method (after the query description):  
   
      [!code-vb[DLinqWalk1AVB#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1AVB/vb/Module1.vb#6)]  
   
-2.  Press F5 to debug the application.  
+2. Press F5 to debug the application.  
   
     > [!NOTE]
     >  If your application generates a run-time error, see the Troubleshooting section of [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).  
   
      The message box displays a list of six customers. The Console window displays the generated SQL code.  
   
-3.  Click **OK** to dismiss the message box.  
+3. Click **OK** to dismiss the message box.  
   
      The application closes.  
   
-4.  On the **File** menu, click **Save All**.  
+4. On the **File** menu, click **Save All**.  
   
      You will need this application if you continue with the next walkthrough.  
   

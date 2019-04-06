@@ -17,31 +17,31 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 ## To create the workflow  
   
-1.  Right-click **NumberGuessWorkflowActivities** in **Solution Explorer** and select **Add**, **New Item**.  
+1. Right-click **NumberGuessWorkflowActivities** in **Solution Explorer** and select **Add**, **New Item**.  
   
-2.  In the **Installed**, **Common Items** node, select **Workflow**. Select **Activity** from the **Workflow** list.  
+2. In the **Installed**, **Common Items** node, select **Workflow**. Select **Activity** from the **Workflow** list.  
   
-3.  Type `SequentialNumberGuessWorkflow` into the **Name** box and click **Add**.  
+3. Type `SequentialNumberGuessWorkflow` into the **Name** box and click **Add**.  
   
-4.  Drag a **Sequence** activity from the **Control Flow** section of the **Toolbox** and drop it onto the **Drop activity here** label on the workflow design surface.  
+4. Drag a **Sequence** activity from the **Control Flow** section of the **Toolbox** and drop it onto the **Drop activity here** label on the workflow design surface.  
   
 ## To create the workflow variables and arguments  
   
-1.  Double-click **SequentialNumberGuessWorkflow.xaml** in **Solution Explorer** to display the workflow in the designer, if it is not already displayed.  
+1. Double-click **SequentialNumberGuessWorkflow.xaml** in **Solution Explorer** to display the workflow in the designer, if it is not already displayed.  
   
-2.  Click **Arguments** in the lower-left side of the workflow designer to display the **Arguments** pane.  
+2. Click **Arguments** in the lower-left side of the workflow designer to display the **Arguments** pane.  
   
-3.  Click **Create Argument**.  
+3. Click **Create Argument**.  
   
-4.  Type `MaxNumber` into the **Name** box, select **In** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER to save the argument.  
+4. Type `MaxNumber` into the **Name** box, select **In** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER to save the argument.  
   
-5.  Click **Create Argument**.  
+5. Click **Create Argument**.  
   
-6.  Type `Turns` into the **Name** box that is below the newly added `MaxNumber` argument, select **Out** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER.  
+6. Type `Turns` into the **Name** box that is below the newly added `MaxNumber` argument, select **Out** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER.  
   
-7.  Click **Arguments** in the lower-left side of the activity designer to close the **Arguments** pane.  
+7. Click **Arguments** in the lower-left side of the activity designer to close the **Arguments** pane.  
   
-8.  Click **Variables** in the lower-left side of the workflow designer to display the **Variables** pane.  
+8. Click **Variables** in the lower-left side of the workflow designer to display the **Variables** pane.  
   
 9. Click **Create Variable**.  
   
@@ -58,7 +58,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 ## To add the workflow activities  
   
-1.  Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Sequence** activity. Type `Target` into the **To** box and the following expression into the **Enter a C# expression** or **Enter a VB expression** box.  
+1. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Sequence** activity. Type `Target` into the **To** box and the following expression into the **Enter a C# expression** or **Enter a VB expression** box.  
   
     ```vb  
     New System.Random().Next(1, MaxNumber + 1)  
@@ -71,9 +71,9 @@ Workflows can be constructed from built-in activities as well as from custom act
     > [!TIP]
     >  If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
   
-2.  Drag a **DoWhile** activity from the **Control Flow** section of the **Toolbox** and drop it on the workflow so that it is below the **Assign** activity.  
+2. Drag a **DoWhile** activity from the **Control Flow** section of the **Toolbox** and drop it on the workflow so that it is below the **Assign** activity.  
   
-3.  Type the following expression into the **DoWhile** activity’s **Condition** property value box.  
+3. Type the following expression into the **DoWhile** activity’s **Condition** property value box.  
   
     ```vb  
     Guess <> Target  
@@ -85,9 +85,9 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      A <xref:System.Activities.Statements.DoWhile> activity executes its child activities and then evaluates its <xref:System.Activities.Statements.DoWhile.Condition%2A>. If the <xref:System.Activities.Statements.DoWhile.Condition%2A> evaluates to `True`, then the activities in the <xref:System.Activities.Statements.DoWhile> execute again. In this example, the user’s guess is evaluated and the <xref:System.Activities.Statements.DoWhile> continues until the guess is correct.  
   
-4.  Drag a **Prompt** activity from the **NumberGuessWorkflowActivities** section of the **Toolbox** and drop it in the **DoWhile** activity from the previous step.  
+4. Drag a **Prompt** activity from the **NumberGuessWorkflowActivities** section of the **Toolbox** and drop it in the **DoWhile** activity from the previous step.  
   
-5.  In the **Properties Window**, type `"EnterGuess"` including the quotes into the **BookmarkName** property value box for the **Prompt** activity. Type `Guess` into the **Result** property value box, and type the following expression into the **Text** property box.  
+5. In the **Properties Window**, type `"EnterGuess"` including the quotes into the **BookmarkName** property value box for the **Prompt** activity. Type `Guess` into the **Result** property value box, and type the following expression into the **Text** property box.  
   
     ```vb  
     "Please enter a number between 1 and " & MaxNumber  
@@ -100,14 +100,14 @@ Workflows can be constructed from built-in activities as well as from custom act
     > [!TIP]
     >  If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
   
-6.  Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it in the **DoWhile** activity so that it follows the **Prompt** activity.  
+6. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it in the **DoWhile** activity so that it follows the **Prompt** activity.  
   
     > [!NOTE]
     >  When you drop the **Assign** activity, note how the workflow designer automatically adds a **Sequence** activity to contain both the **Prompt** activity and the newly added **Assign** activity.  
   
-7.  Type `Turns` into the **To** box and `Turns + 1` into the **Enter a C# expression** or **Enter a VB expression** box.  
+7. Type `Turns` into the **To** box and `Turns + 1` into the **Enter a C# expression** or **Enter a VB expression** box.  
   
-8.  Drag an **If** activity from the **Control Flow** section of the **Toolbox** and drop it in the **Sequence** activity so that it follows the newly added **Assign** activity.  
+8. Drag an **If** activity from the **Control Flow** section of the **Toolbox** and drop it in the **Sequence** activity so that it follows the newly added **Assign** activity.  
   
 9. Type the following expression into the **If** activity’s **Condition** property value box.  
   
@@ -147,7 +147,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 ## To build the workflow  
   
-1.  Press CTRL+SHIFT+B to build the solution.  
+1. Press CTRL+SHIFT+B to build the solution.  
   
      For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the sequential workflow from this step, skip ahead to the [To build and run the application](how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](how-to-run-a-workflow.md).  
   

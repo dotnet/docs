@@ -146,9 +146,9 @@ class MyDataContractResolver : DataContractResolver
 
 #### To use this sample
 
-1.  Using Visual Studio 2012, open the DCRSample.sln solution file.
+1. Using Visual Studio 2012, open the DCRSample.sln solution file.
 
-2.  To run the solution, press F5
+2. To run the solution, press F5
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

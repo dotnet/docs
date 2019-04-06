@@ -19,7 +19,7 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
   
 ### To declare a structure  
   
-1.  Create the beginning and ending statements for the structure.  
+1. Create the beginning and ending statements for the structure.  
   
      You can specify the access level of a structure using the [Public](../../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../../visual-basic/language-reference/modifiers/friend.md), or [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword, or you can let it default to `Public`.  
   
@@ -28,7 +28,7 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
     End Structure  
     ```  
   
-2.  Add elements to the body of the structure.  
+2. Add elements to the body of the structure.  
   
      A structure must have at least one element. You must declare every element and specify an access level for it. If you use the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) without any keywords, the accessibility defaults to `Public`.  
   

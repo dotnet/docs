@@ -10,9 +10,9 @@ You tried to set or change a property whose value can only be set at design time
   
 ## To correct this error  
   
-1.  Remove the reference to the property from your code.  
+1. Remove the reference to the property from your code.  
   
-2.  Change the reference to only return the value of the property at run time.  
+2. Change the reference to only return the value of the property at run time.  
   
 ## See also
 

@@ -25,9 +25,9 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
   
 ### To set tile view in the designer  
   
-1.  Select the <xref:System.Windows.Forms.ListView> control on your form.  
+1. Select the <xref:System.Windows.Forms.ListView> control on your form.  
   
-2.  In the **Properties** window, select the <xref:System.Windows.Forms.ListView.View%2A> property and choose **Tile**.  
+2. In the **Properties** window, select the <xref:System.Windows.Forms.ListView.View%2A> property and choose **Tile**.  
   
 ## See also
 

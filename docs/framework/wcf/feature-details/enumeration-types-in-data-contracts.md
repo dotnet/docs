@@ -73,11 +73,11 @@ Enumerations can be expressed in the data contract model. This topic walks throu
   
  The following steps apply to sending a flag's enumeration value:  
   
-1.  Attempt to find an enumeration member (with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute applied) that maps to the numeric value. If found, send a list that contains just that member.  
+1. Attempt to find an enumeration member (with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute applied) that maps to the numeric value. If found, send a list that contains just that member.  
   
-2.  Attempt to break the numeric value into a sum such that there are enumeration members (each with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute applied) that map to each part of the sum. Send the list of all these members. Note that the *greedy algorithm* is used to find such a sum, and thus there is no guarantee that such a sum is found even if it is present. To avoid this problem, make sure that the numeric values of the enumeration members are powers of two.  
+2. Attempt to break the numeric value into a sum such that there are enumeration members (each with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute applied) that map to each part of the sum. Send the list of all these members. Note that the *greedy algorithm* is used to find such a sum, and thus there is no guarantee that such a sum is found even if it is present. To avoid this problem, make sure that the numeric values of the enumeration members are powers of two.  
   
-3.  If the preceding two steps fail, and the numeric value is nonzero, throw a <xref:System.Runtime.Serialization.SerializationException>. If the numeric value is zero, send the empty list.  
+3. If the preceding two steps fail, and the numeric value is nonzero, throw a <xref:System.Runtime.Serialization.SerializationException>. If the numeric value is zero, send the empty list.  
   
 ### Example  
  The following enumeration example can be used in a flag operation.  

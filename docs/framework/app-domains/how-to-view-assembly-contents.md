@@ -22,7 +22,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
 ### To display the contents of an assembly using Ildasm.exe  
   
-1.  Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
+1. Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
   
     ```  
     ildasm Hello.exe  
@@ -30,7 +30,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
 ### To view assembly manifest information  
   
-1.  Double-click the MANIFEST icon in the MSIL Disassembler window.  
+1. Double-click the MANIFEST icon in the MSIL Disassembler window.  
   
 ## Example  
  The following example starts with a basic "Hello, World" program. After compiling the program, use Ildasm.exe to disassemble the Hello.exe assembly and view the assembly manifest.  

@@ -18,13 +18,13 @@ Several Windows Forms controls can display images. The image can be an icon that
   
 ### To set the image displayed by a control  
   
-1.  In the **Properties** window, select the **Image** or **BackgroundImage** property of the control, then click the ellipsis button (  
+1. In the **Properties** window, select the **Image** or **BackgroundImage** property of the control, then click the ellipsis button (  
   
      ![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")  
   
      ) to display the **Select Resource** dialog box.  
   
-2.  Select the image you want to display.  
+2. Select the image you want to display.  
   
 ## See also
 

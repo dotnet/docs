@@ -198,17 +198,17 @@ Input Event Bubbling and Tunneling
   
  The order of event processing is as follows:  
   
-1.  `PreviewMouseDown` (tunnel) on root element.  
+1. `PreviewMouseDown` (tunnel) on root element.  
   
-2.  `PreviewMouseDown` (tunnel) on intermediate element #1.  
+2. `PreviewMouseDown` (tunnel) on intermediate element #1.  
   
-3.  `PreviewMouseDown` (tunnel) on source element #2.  
+3. `PreviewMouseDown` (tunnel) on source element #2.  
   
-4.  `MouseDown` (bubble) on source element #2.  
+4. `MouseDown` (bubble) on source element #2.  
   
-5.  `MouseDown` (bubble) on intermediate element #1.  
+5. `MouseDown` (bubble) on intermediate element #1.  
   
-6.  `MouseDown` (bubble) on root element.  
+6. `MouseDown` (bubble) on root element.  
   
  A routed event handler delegate provides references to two objects: the object that raised the event and the object where the handler was invoked. The object where the handler was invoked is the object reported by the `sender` parameter. The object where the event was first raised is reported by the <xref:System.Windows.RoutedEventArgs.Source%2A> property in the event data. A routed event can still be raised and handled by the same object, in which case `sender` and <xref:System.Windows.RoutedEventArgs.Source%2A> are identical (this is the case with Steps 3 and 4 in the event processing example list).  
   

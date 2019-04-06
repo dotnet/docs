@@ -19,20 +19,20 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
   
 #### To export schemas  
   
-1.  Create an instance of the <xref:System.Runtime.Serialization.XsdDataContractExporter>.  
+1. Create an instance of the <xref:System.Runtime.Serialization.XsdDataContractExporter>.  
   
-2.  Optional. Pass an <xref:System.Xml.Schema.XmlSchemaSet> in the constructor. In this case, the schema generated during the schema export is added to this <xref:System.Xml.Schema.XmlSchemaSet> instance instead of starting with a blank <xref:System.Xml.Schema.XmlSchemaSet>.  
+2. Optional. Pass an <xref:System.Xml.Schema.XmlSchemaSet> in the constructor. In this case, the schema generated during the schema export is added to this <xref:System.Xml.Schema.XmlSchemaSet> instance instead of starting with a blank <xref:System.Xml.Schema.XmlSchemaSet>.  
   
-3.  Optional. Call one of the <xref:System.Runtime.Serialization.XsdDataContractExporter.CanExport%2A> methods. The method determines whether the specified type can be exported. The method has the same overloads as the `Export` method in the next step.  
+3. Optional. Call one of the <xref:System.Runtime.Serialization.XsdDataContractExporter.CanExport%2A> methods. The method determines whether the specified type can be exported. The method has the same overloads as the `Export` method in the next step.  
   
-4.  Call one of the <xref:System.Runtime.Serialization.XsdDataContractExporter.Export%2A> methods. There are three overloads taking a <xref:System.Type>, a <xref:System.Collections.Generic.List%601> of `Type` objects, or a <xref:System.Collections.Generic.List%601> of <xref:System.Reflection.Assembly> objects. In the last case, all types in all the given assemblies are exported.  
+4. Call one of the <xref:System.Runtime.Serialization.XsdDataContractExporter.Export%2A> methods. There are three overloads taking a <xref:System.Type>, a <xref:System.Collections.Generic.List%601> of `Type` objects, or a <xref:System.Collections.Generic.List%601> of <xref:System.Reflection.Assembly> objects. In the last case, all types in all the given assemblies are exported.  
   
      Multiple calls to the `Export` method results in multiple items being added to the same `XmlSchemaSet`. A type is not generated into the `XmlSchemaSet` if it already exists there. Therefore, calling `Export` multiple times on the same `XsdDataContractExporter` is preferable to creating multiple instances of the `XsdDataContractExporter` class. This avoids duplicate schema types from being generated.  
   
     > [!NOTE]
     >  If there is a failure during export, the `XmlSchemaSet` will be in an unpredictable state.  
   
-5.  Access the <xref:System.Xml.Schema.XmlSchemaSet> through the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A> property.  
+5. Access the <xref:System.Xml.Schema.XmlSchemaSet> through the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A> property.  
   
 ## Export Options  
  You can set the <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractExporter> to an instance of the <xref:System.Runtime.Serialization.ExportOptions> class to control various aspects of the export process. Specifically, you can set the following options:  

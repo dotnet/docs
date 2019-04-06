@@ -21,9 +21,9 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  You can programmatically modify these connection string keywords with:  
   
-1.  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>  
+1. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent%2A>  
   
-2.  <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
+2. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
 >  Setting `MultiSubnetFailover` to `true` isn't required with [!INCLUDE[net_v461](../../../../../includes/net-v461-md.md)] or later versions.
@@ -53,9 +53,9 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  If read-only routing is not in effect, connecting to a secondary replica location will fail in the following situations:  
   
-1.  If the secondary replica location is not configured to accept connections.  
+1. If the secondary replica location is not configured to accept connections.  
   
-2.  If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.  
+2. If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.  
   
  <xref:System.Data.SqlClient.SqlDependency> is not supported on read-only secondary replicas.  
   
@@ -80,11 +80,11 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
 ## Read-Only Routing  
  Read-only routing is a feature that can ensure the availability of a read only replica of a database. To enable read-only routing:  
   
-1.  You must connect to an Always On Availability Group availability group listener.  
+1. You must connect to an Always On Availability Group availability group listener.  
   
-2.  The `ApplicationIntent` connection string keyword must be set to `ReadOnly`.  
+2. The `ApplicationIntent` connection string keyword must be set to `ReadOnly`.  
   
-3.  The Availability Group must be configured by the database administrator to enable read-only routing.  
+3. The Availability Group must be configured by the database administrator to enable read-only routing.  
   
  It is possible that multiple connections using read-only routing will not all connect to the same read-only replica. Changes in database synchronization or changes in the server's routing configuration can result in client connections to different read-only replicas. To ensure that all read-only requests connect to the same read-only replica, do not pass an availability group listener to the `Data Source` connection string keyword. Instead, specify the name of the read-only instance.  
   

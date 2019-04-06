@@ -8,7 +8,7 @@ The file you are attempting to write to is write-protected and therefore cannot 
   
 ## To correct this error  
   
-1.  Change permissions on the file to read/write, or write to a different file.  
+1. Change permissions on the file to read/write, or write to a different file.  
   
 ## See also
 

@@ -21,9 +21,9 @@ When you create a complex user interface, or work with a multiple document inter
   
 ### To layer controls at design time  
   
-1.  Select a control that you want to layer.  
+1. Select a control that you want to layer.  
   
-2.  On the **Format** menu, point to **Order**, and then click **Bring To Front** or **Send To Back**.  
+2. On the **Format** menu, point to **Order**, and then click **Bring To Front** or **Send To Back**.  
   
 ### To layer controls programmatically  
   

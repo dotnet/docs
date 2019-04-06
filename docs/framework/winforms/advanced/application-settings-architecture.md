@@ -94,11 +94,11 @@ This topic describes how the Application Settings architecture works, and explor
 ### Settings Serialization  
  When <xref:System.Configuration.LocalFileSettingsProvider> must save settings to disk, it performs the following actions:  
   
-1.  Uses reflection to examine all of the properties defined on your <xref:System.Configuration.ApplicationSettingsBase> derived class, finding those that are applied with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>.  
+1. Uses reflection to examine all of the properties defined on your <xref:System.Configuration.ApplicationSettingsBase> derived class, finding those that are applied with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>.  
   
-2.  Serializes the property to disk. It first attempts to call the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> or <xref:System.ComponentModel.TypeConverter.ConvertFromString%2A> on the type's associated <xref:System.ComponentModel.TypeConverter>. If this does not succeed, it uses XML serialization instead.  
+2. Serializes the property to disk. It first attempts to call the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> or <xref:System.ComponentModel.TypeConverter.ConvertFromString%2A> on the type's associated <xref:System.ComponentModel.TypeConverter>. If this does not succeed, it uses XML serialization instead.  
   
-3.  Determines which settings go in which files, based on the setting's attribute.  
+3. Determines which settings go in which files, based on the setting's attribute.  
   
  If you implement your own settings class, you can use the <xref:System.Configuration.SettingsSerializeAsAttribute> to mark a setting for either binary or custom serialization using the <xref:System.Configuration.SettingsSerializeAs> enumeration. For more information on creating your own settings class in code, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   

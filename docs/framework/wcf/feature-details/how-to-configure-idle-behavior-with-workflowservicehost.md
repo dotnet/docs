@@ -11,7 +11,7 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
   
 ### To configure WorkflowIdleBehavior  
   
-1.  Add a <`workflowIdle`> element to the <`behavior`> element within the <`serviceBehaviors`> element as shown in the following example.  
+1. Add a <`workflowIdle`> element to the <`behavior`> element within the <`serviceBehaviors`> element as shown in the following example.  
   
     ```xml  
     <behaviors>  

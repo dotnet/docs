@@ -49,13 +49,13 @@ Attribute syntax is the most common syntax used with this markup extension. The 
 
 There are two other XAML usages that are technically possible. However, these usages are less common because they are unnecessarily verbose:  
 
-1.  Object element syntax.
+1. Object element syntax.
 
     ```xaml
     <x:Static Member="prefix:typeName.staticMemberName" ... />
     ```
 
-2.  Attribute syntax with explicit Member property for initialization string.
+2. Attribute syntax with explicit Member property for initialization string.
 
     ```xaml
     <object property="{x:Static Member=prefix:typeName.staticMemberName}" ... />

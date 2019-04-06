@@ -74,22 +74,22 @@ Logman stop Wcf
   
 ### To set up, build, and run the sample  
   
-1.  Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
     > [!NOTE]
     >  To use the RegisterProvider.bat, SetupETW.bat and CleanupETW.bat commands, you must run under a local administrator account. If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)] or later, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, then click **Run as administrator**.  
   
-3.  Before running the sample, run RegisterProvider.bat on the client and server. This sets up the resulting ETWTracingSampleLog.etl file to generate traces that can be read by the Service Trace Viewer. This file can be found in the C:\logs folder. If this folder does not exist, it must be created or no traces are generated. Then, run SetupETW.bat on the client and server computers to begin the ETW Trace Session. The SetupETW.bat file can be found under the CS\Client folder.  
+3. Before running the sample, run RegisterProvider.bat on the client and server. This sets up the resulting ETWTracingSampleLog.etl file to generate traces that can be read by the Service Trace Viewer. This file can be found in the C:\logs folder. If this folder does not exist, it must be created or no traces are generated. Then, run SetupETW.bat on the client and server computers to begin the ETW Trace Session. The SetupETW.bat file can be found under the CS\Client folder.  
   
-4.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-5.  When the sample is completed, run CleanupETW.bat to complete the creation of the ETWTracingSampleLog.etl file.  
+5. When the sample is completed, run CleanupETW.bat to complete the creation of the ETWTracingSampleLog.etl file.  
   
-6.  Open the ETWTracingSampleLog.etl file from within the Service Trace Viewer. You will be prompted to save the binary formatted file as a .svclog file.  
+6. Open the ETWTracingSampleLog.etl file from within the Service Trace Viewer. You will be prompted to save the binary formatted file as a .svclog file.  
   
-7.  Open the newly created .svclog file from within the Service Trace Viewer to view the ETW and ServiceModel traces.  
+7. Open the newly created .svclog file from within the Service Trace Viewer to view the ETW and ServiceModel traces.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

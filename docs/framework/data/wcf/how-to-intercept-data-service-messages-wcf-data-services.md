@@ -16,23 +16,23 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can interc
   
 ### To define a query interceptor for the Orders entity set  
   
-1.  In the Northwind data service project, open the Northwind.svc file.  
+1. In the Northwind data service project, open the Northwind.svc file.  
   
-2.  In the code page for the `Northwind` class, add the following `using` statement (`Imports` in Visual Basic).  
+2. In the code page for the `Northwind` class, add the following `using` statement (`Imports` in Visual Basic).  
   
      [!code-csharp[Astoria Northwind Service#UsingLinqExpressions](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#usinglinqexpressions)]
      [!code-vb[Astoria Northwind Service#UsingLinqExpressions](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#usinglinqexpressions)]  
   
-3.  In the `Northwind` class, define a service operation method named `OnQueryOrders` as follows:  
+3. In the `Northwind` class, define a service operation method named `OnQueryOrders` as follows:  
   
      [!code-csharp[Astoria Northwind Service#QueryInterceptorDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#queryinterceptordef)]
      [!code-vb[Astoria Northwind Service#QueryInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#queryinterceptordef)]  
   
 ### To define a change interceptor for the Products entity set  
   
-1.  In the Northwind data service project, open the Northwind.svc file.  
+1. In the Northwind data service project, open the Northwind.svc file.  
   
-2.  In the `Northwind` class, define a service operation method named `OnChangeProducts` as follows:  
+2. In the `Northwind` class, define a service operation method named `OnChangeProducts` as follows:  
   
      [!code-csharp[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#changeinterceptordef)]
      [!code-vb[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#changeinterceptordef)]  

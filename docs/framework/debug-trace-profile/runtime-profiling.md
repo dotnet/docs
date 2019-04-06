@@ -22,19 +22,19 @@ Profiling is a method of gathering performance data in any development or deploy
   
 #### To run Perfmon.exe on Windows Vista and later versions  
   
-1.  At the command prompt, type **perfmon**. The **Performance Monitor** console appears.  
+1. At the command prompt, type **perfmon**. The **Performance Monitor** console appears.  
   
-2.  In the **Monitoring Tools** folder, click **Performance Monitor**.  
+2. In the **Monitoring Tools** folder, click **Performance Monitor**.  
   
-3.  In the Performance Monitor toolbar, click the **Add** icon (the plus sign), if it is present. If it is not present, right-click in the monitor window and select the **Add Counters** option.  
+3. In the Performance Monitor toolbar, click the **Add** icon (the plus sign), if it is present. If it is not present, right-click in the monitor window and select the **Add Counters** option.  
   
      This opens the **Add Counters** dialog box. The **Available counters** list box displays the available performance objects. There are a number of predefined objects for .NET Framework applications, including those for memory management (**.NET CLR Memory**), interoperability (**.NET CLR Interop**), exception handling (**.NET CLR Exceptions**), and multithreading (**.NET CLR LocksAndThreads**). Each performance object includes a number of individual performance counters. For a list of the performance counters available in Performance Monitor, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
   
-4.  Select the check box next to a performance object's name to view the list of individual performance counters that it supports.  
+4. Select the check box next to a performance object's name to view the list of individual performance counters that it supports.  
   
-5.  Click the performance counter you want to view.  
+5. Click the performance counter you want to view.  
   
-6.  In the **Instances of selected object** list box, click **\<All instances>** to specify that you want to monitor the performance counter for the common language runtime globally (that is, on a system-wide basis).  
+6. In the **Instances of selected object** list box, click **\<All instances>** to specify that you want to monitor the performance counter for the common language runtime globally (that is, on a system-wide basis).  
   
      -or-  
   

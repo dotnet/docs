@@ -26,7 +26,7 @@ With the tile view feature of the <xref:System.Windows.Forms.ListView> control, 
   
 ### To set tile view programmatically  
   
-1.  Use the <xref:System.Windows.Forms.View> enumeration of the <xref:System.Windows.Forms.ListView> control.  
+1. Use the <xref:System.Windows.Forms.View> enumeration of the <xref:System.Windows.Forms.ListView> control.  
   
     ```vb  
     ListView1.View = View.Tile  

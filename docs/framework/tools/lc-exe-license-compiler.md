@@ -46,19 +46,19 @@ The License Compiler reads text files that contain licensing information and pro
   
 ## Example  
   
-1.  If you are using a licensed control `MyCompany.Samples.LicControl1` contained in `Samples.DLL` in an application called `HostApp.exe`*,* you can create `HostAppLic.txt` that contains the following.  
+1. If you are using a licensed control `MyCompany.Samples.LicControl1` contained in `Samples.DLL` in an application called `HostApp.exe`*,* you can create `HostAppLic.txt` that contains the following.  
   
     ```  
     MyCompany.Samples.LicControl1, Samples.DLL  
     ```  
   
-2.  Create the .licenses file called `HostApp.exe.licenses` using the following command.  
+2. Create the .licenses file called `HostApp.exe.licenses` using the following command.  
   
     ```  
     lc /target:HostApp.exe /complist:hostapplic.txt /i:Samples.DLL /outdir:c:\bindir  
     ```  
   
-3.  Build `HostApp.exe` including the .licenses file as a resource. If you were building a C# application you would use the following command to build your application.  
+3. Build `HostApp.exe` including the .licenses file as a resource. If you were building a C# application you would use the following command to build your application.  
   
     ```  
     csc /res:HostApp.exe.licenses /out:HostApp.exe *.cs  

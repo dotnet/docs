@@ -23,22 +23,22 @@ If you are designing a form that the user can resize at run time, the controls o
   
 ### To anchor a control on a form  
   
-1.  Select the control you want to anchor.  
+1. Select the control you want to anchor.  
   
     > [!NOTE]
     >  You can anchor multiple controls simultaneously by pressing the CTRL key, clicking each control to select it, and then following the rest of this procedure.  
   
-2.  In the **Properties** window, click the arrow to the right of the <xref:System.Windows.Forms.Control.Anchor%2A> property.  
+2. In the **Properties** window, click the arrow to the right of the <xref:System.Windows.Forms.Control.Anchor%2A> property.  
   
      An editor is displayed that shows a cross.  
   
-3.  To set an anchor, click the top, left, right, or bottom section of the cross.  
+3. To set an anchor, click the top, left, right, or bottom section of the cross.  
   
      Controls are anchored to the top and left by default.  
   
-4.  To clear a side of the control that has been anchored, click that arm of the cross.  
+4. To clear a side of the control that has been anchored, click that arm of the cross.  
   
-5.  To close the <xref:System.Windows.Forms.Control.Anchor%2A> property editor, click the <xref:System.Windows.Forms.Control.Anchor%2A> property name again.  
+5. To close the <xref:System.Windows.Forms.Control.Anchor%2A> property editor, click the <xref:System.Windows.Forms.Control.Anchor%2A> property name again.  
   
  When your form is displayed at run time, the control resizes to remain positioned at the same distance from the edge of the form. The distance from the anchored edge always remains the same as the distance defined when the control is positioned in the Windows Forms Designer.  
   

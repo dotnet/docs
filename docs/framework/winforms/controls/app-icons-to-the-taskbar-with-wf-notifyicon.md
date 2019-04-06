@@ -22,11 +22,11 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
   
 ### To set the icon  
   
-1.  Assign a value to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. The value must be of type `System.Drawing.Icon` and can be loaded from an .ico file. You can specify the icon file in code or by clicking the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property in the **Properties** window, and then selecting the file in the **Open** dialog box that appears.  
+1. Assign a value to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. The value must be of type `System.Drawing.Icon` and can be loaded from an .ico file. You can specify the icon file in code or by clicking the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property in the **Properties** window, and then selecting the file in the **Open** dialog box that appears.  
   
-2.  Set the <xref:System.Windows.Forms.NotifyIcon.Visible%2A> property to `true`.  
+2. Set the <xref:System.Windows.Forms.NotifyIcon.Visible%2A> property to `true`.  
   
-3.  Set the <xref:System.Windows.Forms.NotifyIcon.Text%2A> property to an appropriate ToolTip string.  
+3. Set the <xref:System.Windows.Forms.NotifyIcon.Text%2A> property to an appropriate ToolTip string.  
   
      In the following code example, the path set for the location of the icon is the **My Documents** folder. This location is used because you can assume that most computers running the Windows operating system will include this folder. Choosing this location also enables users with minimal system access levels to safely run the application. The following example requires a form with a <xref:System.Windows.Forms.NotifyIcon> control already added. It also requires an icon file named `Icon.ico`.  
   

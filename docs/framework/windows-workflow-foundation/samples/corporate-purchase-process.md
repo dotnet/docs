@@ -44,25 +44,25 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 ## Description of the Process  
  This sample shows an implementation of a Windows Workflow Foundation (WF) program to gather proposals from vendors for a generic company.  
   
-1.  An employee of Company X creates a Request for Proposal (RFP).  
+1. An employee of Company X creates a Request for Proposal (RFP).  
   
     1.  The employee types in the RFP title and description.  
   
     2.  The employee selects the vendors that he wants to invite to submit proposals.  
   
-2.  The employee submits the proposal.  
+2. The employee submits the proposal.  
   
     1.  An instance of the workflow is created.  
   
     2.  The workflow is waiting for all vendors to submit their proposals.  
   
-3.  After all proposals are received, the workflow iterates through all the received proposals and selects the best one.  
+3. After all proposals are received, the workflow iterates through all the received proposals and selects the best one.  
   
     1.  Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
   
     2.  The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
   
-4.  The original requester can see all the submitted proposals. The best proposal is presented in a special section in the report.  
+4. The original requester can see all the submitted proposals. The best proposal is presented in a special section in the report.  
   
 ## Process Definition  
  The core logic of the sample uses a <xref:System.Activities.Statements.ParallelForEach%601> activity that waits for the offers from each vendor (using a custom activity that creates a bookmark), and registers the vendor proposal as an RFP (using an <xref:System.Activities.Statements.InvokeMethod> activity).  
@@ -137,15 +137,15 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 #### To use this sample  
   
-1.  Using Visual Studio 2010, open the PurchaseProcess.sln solution file.  
+1. Using Visual Studio 2010, open the PurchaseProcess.sln solution file.  
   
-2.  To execute the Web Client project, open **Solution Explorer** and right-click the **Web Client** project. Select **Set as Startup Project**.  
+2. To execute the Web Client project, open **Solution Explorer** and right-click the **Web Client** project. Select **Set as Startup Project**.  
   
-3.  To execute the WinForms Client project, open **Solution Explorer** and right-click the **WinForms Client** project. Select **Set as Startup Project**.  
+3. To execute the WinForms Client project, open **Solution Explorer** and right-click the **WinForms Client** project. Select **Set as Startup Project**.  
   
-4.  To build the solution, press CTRL+SHIFT+B.  
+4. To build the solution, press CTRL+SHIFT+B.  
   
-5.  To run the solution, press CTRL+F5.  
+5. To run the solution, press CTRL+F5.  
   
 ### Web Client Options  
   

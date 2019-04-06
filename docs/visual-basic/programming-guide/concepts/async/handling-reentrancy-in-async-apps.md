@@ -130,7 +130,7 @@ End Sub
   
  To set up this scenario, make the following changes to the basic code that is provided in [Reviewing and Running the Example App](#BKMD_SettingUpTheExample). You also can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06). The name of this project is CancelAndRestart.  
   
-1.  Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.  
+1. Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.  
   
     ```vb  
     Class MainWindow // Or Class MainPage  
@@ -139,7 +139,7 @@ End Sub
         Dim cts As CancellationTokenSource  
     ```  
   
-2.  In `StartButton_Click`, determine whether an operation is already underway. If the value of `cts` is `Nothing`, no operation is already active. If the value isn't `Nothing`, the operation that is already running is canceled.  
+2. In `StartButton_Click`, determine whether an operation is already underway. If the value of `cts` is `Nothing`, no operation is already active. If the value isn't `Nothing`, the operation that is already running is canceled.  
   
     ```vb  
     ' *** If a download process is already underway, cancel it.  
@@ -148,7 +148,7 @@ End Sub
     End If  
     ```  
   
-3.  Set `cts` to a different value that represents the current process.  
+3. Set `cts` to a different value that represents the current process.  
   
     ```vb  
     ' *** Now set cts to cancel the current process if the button is chosen again.  
@@ -156,7 +156,7 @@ End Sub
     cts = newCTS  
     ```  
   
-4.  At the end of `StartButton_Click`, the current process is complete, so set the value of `cts` back to `Nothing`.  
+4. At the end of `StartButton_Click`, the current process is complete, so set the value of `cts` back to `Nothing`.  
   
     ```vb  
     ' *** When the process completes, signal that another process can proceed.  
@@ -529,42 +529,42 @@ End Function
   
 ### <a name="BKMK_DownloadingTheApp"></a> Downloading the App  
   
-1.  Download the compressed file from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06).  
+1. Download the compressed file from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06).  
   
-2.  Decompress the file that you downloaded, and then start Visual Studio.  
+2. Decompress the file that you downloaded, and then start Visual Studio.  
   
-3.  On the menu bar, choose **File**, **Open**, **Project/Solution**.  
+3. On the menu bar, choose **File**, **Open**, **Project/Solution**.  
   
-4.  Navigate to the folder that holds the decompressed sample code, and then open the solution (.sln) file.  
+4. Navigate to the folder that holds the decompressed sample code, and then open the solution (.sln) file.  
   
-5.  In **Solution Explorer**, open the shortcut menu for the project that you want to run, and then choose **Set as StartUpProject**.  
+5. In **Solution Explorer**, open the shortcut menu for the project that you want to run, and then choose **Set as StartUpProject**.  
   
-6.  Choose the CTRL+F5 keys to build and run the project.  
+6. Choose the CTRL+F5 keys to build and run the project.  
   
 ### <a name="BKMK_BuildingTheApp"></a> Building the App  
  The following section provides the code to build the example as a WPF app.  
   
 ##### To build a WPF app  
   
-1.  Start Visual Studio.  
+1. Start Visual Studio.  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2. On the menu bar, choose **File**, **New**, **Project**.  
   
      The **New Project** dialog box opens.  
   
-3.  In the **Installed Templates** pane, expand **Visual Basic**, and then expand **Windows**.  
+3. In the **Installed Templates** pane, expand **Visual Basic**, and then expand **Windows**.  
   
-4.  In the list of project types, choose **WPF Application**.  
+4. In the list of project types, choose **WPF Application**.  
   
-5.  Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.  
+5. Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.  
   
      The new project appears in **Solution Explorer**.  
   
-6.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
+6. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
   
      If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **View Code**.  
   
-7.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
+7. In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
   
     ```vb  
     <Window x:Class="MainWindow"  
@@ -584,7 +584,7 @@ End Function
   
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.  
   
-8.  Add a reference for <xref:System.Net.Http>.  
+8. Add a reference for <xref:System.Net.Http>.  
   
 9. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.  
   

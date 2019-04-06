@@ -106,42 +106,42 @@ Press <ENTER> to terminate client.
   
 ### To set up and build the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
 ### To run the sample on the same machine  
   
-1.  Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
+1. Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
   
     > [!NOTE]
     >  The Setup.bat batch file is designed to be run from a Windows SDK Command Prompt. It requires that the MSSDK environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Windows SDK Command Prompt.  
   
-2.  Run the service application from \service\bin.  
+2. Run the service application from \service\bin.  
   
-3.  Run the client application from \client\bin. Client activity is displayed on the client console application.  
+3. Run the client application from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
-5.  Remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.  
+5. Remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.  
   
 ### To run the sample across machines  
   
-1.  Create a directory on the service machine for the service binaries.  
+1. Create a directory on the service machine for the service binaries.  
   
-2.  Copy the service program files to the service directory on the server. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the server.  
+2. Copy the service program files to the service directory on the server. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the server.  
   
-3.  Create a directory on the client machine for the client binaries.  
+3. Create a directory on the client machine for the client binaries.  
   
-4.  Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+4. Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
+5. On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
-6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) element) which is the same as the fully-qualified domain name of the machine. Also change the value of the base address to specify a fully-qualified machine name instead of localhost`.`  
+6. Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) element) which is the same as the fully-qualified domain name of the machine. Also change the value of the base address to specify a fully-qualified machine name instead of localhost`.`  
   
-7.  Copy the Service.cer file from the service directory to the client directory on the client machine.  
+7. Copy the Service.cer file from the service directory to the client directory on the client machine.  
   
-8.  On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+8. On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
 9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Also change the `findValue` attribute of the [\<defaultCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md) to the new service certificate name which is the fully-qualified domain name of the server.  
   

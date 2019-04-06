@@ -11,7 +11,7 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) prov
   
 ### To create a custom claim that is based on a primitive data type  
   
-1.  Create a custom claim by passing the claim type, resource value and right to the <xref:System.IdentityModel.Claims.Claim.%23ctor%28System.String%2CSystem.Object%2CSystem.String%29> constructor.  
+1. Create a custom claim by passing the claim type, resource value and right to the <xref:System.IdentityModel.Claims.Claim.%23ctor%28System.String%2CSystem.Object%2CSystem.String%29> constructor.  
   
     1.  Decide on a unique value for the claim type.  
   
@@ -34,7 +34,7 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) prov
   
 ### To create a custom claim that is based on a non-primitive data type  
   
-1.  Create a custom claim by passing the claim type, resource value and right to the <xref:System.IdentityModel.Claims.Claim.%23ctor%28System.String%2CSystem.Object%2CSystem.String%29> constructor.  
+1. Create a custom claim by passing the claim type, resource value and right to the <xref:System.IdentityModel.Claims.Claim.%23ctor%28System.String%2CSystem.Object%2CSystem.String%29> constructor.  
   
     1.  Decide on a unique value for the claim type.  
   

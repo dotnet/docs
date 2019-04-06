@@ -15,9 +15,9 @@ In Windows Communication Foundation (WCF), metadata import is the process of gen
   
  This section describes:  
   
-1.  How to implement and use the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> interface, which exposes the WSDL data to custom importers prior to the generation of descriptions and the generation of code. You can use this interface to examine or modify the description types and code compilation performed using a given set of metadata.  
+1. How to implement and use the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> interface, which exposes the WSDL data to custom importers prior to the generation of descriptions and the generation of code. You can use this interface to examine or modify the description types and code compilation performed using a given set of metadata.  
   
-2.  How to implement and use the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface, which exposes policy assertions to importers prior to the generation of description objects. You can use this interface to examine or modify the binding or contract based on the downloaded policies.  
+2. How to implement and use the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface, which exposes policy assertions to importers prior to the generation of description objects. You can use this interface to examine or modify the binding or contract based on the downloaded policies.  
   
  For more information about exporting custom WSDL and policy assertions, see [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md).  
   

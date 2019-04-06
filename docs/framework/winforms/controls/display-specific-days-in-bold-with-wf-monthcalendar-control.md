@@ -19,7 +19,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
 ### To make a date appear in bold type  
   
-1.  Create the <xref:System.DateTime> objects.  
+1. Create the <xref:System.DateTime> objects.  
   
     ```vb  
     Dim myVacation1 As Date = New DateTime(2001, 6, 10)  
@@ -36,7 +36,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     DateTime myVacation2 = DateTime(2001, 6, 17);  
     ```  
   
-2.  Make a single date bold by calling the <xref:System.Windows.Forms.MonthCalendar.AddBoldedDate%2A>, <xref:System.Windows.Forms.MonthCalendar.AddAnnuallyBoldedDate%2A>, or <xref:System.Windows.Forms.MonthCalendar.AddMonthlyBoldedDate%2A> method of the <xref:System.Windows.Forms.MonthCalendar> control.  
+2. Make a single date bold by calling the <xref:System.Windows.Forms.MonthCalendar.AddBoldedDate%2A>, <xref:System.Windows.Forms.MonthCalendar.AddAnnuallyBoldedDate%2A>, or <xref:System.Windows.Forms.MonthCalendar.AddMonthlyBoldedDate%2A> method of the <xref:System.Windows.Forms.MonthCalendar> control.  
   
     ```vb  
     MonthCalendar1.AddBoldedDate(myVacation1)  
@@ -74,7 +74,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
 ### To make a date appear in the regular font  
   
-1.  Make a single bolded date appear in the regular font by calling the <xref:System.Windows.Forms.MonthCalendar.RemoveBoldedDate%2A>, <xref:System.Windows.Forms.MonthCalendar.RemoveAnnuallyBoldedDate%2A>, or <xref:System.Windows.Forms.MonthCalendar.RemoveMonthlyBoldedDate%2A> method.  
+1. Make a single bolded date appear in the regular font by calling the <xref:System.Windows.Forms.MonthCalendar.RemoveBoldedDate%2A>, <xref:System.Windows.Forms.MonthCalendar.RemoveAnnuallyBoldedDate%2A>, or <xref:System.Windows.Forms.MonthCalendar.RemoveMonthlyBoldedDate%2A> method.  
   
     ```vb  
     MonthCalendar1.RemoveBoldedDate(myVacation1)  
@@ -107,7 +107,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     monthCalendar1->RemoveAllBoldedDates();  
     ```  
   
-2.  Update the appearance of the font by calling the <xref:System.Windows.Forms.MonthCalendar.UpdateBoldedDates%2A> method.  
+2. Update the appearance of the font by calling the <xref:System.Windows.Forms.MonthCalendar.UpdateBoldedDates%2A> method.  
   
     ```vb  
     MonthCalendar1.UpdateBoldedDates()  

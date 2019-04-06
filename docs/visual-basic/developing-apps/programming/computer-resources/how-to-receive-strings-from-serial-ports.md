@@ -12,35 +12,35 @@ This topic describes how to use `My.Computer.Ports` to receive strings from the 
   
 ### To receive strings from the serial port  
   
-1.  Initialize the return string.  
+1. Initialize the return string.  
   
      [!code-vb[VbVbalrMyComputer#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#38)]  
   
-2.  Determine which serial port should provide the strings. This example assumes it is `COM1`.  
+2. Determine which serial port should provide the strings. This example assumes it is `COM1`.  
   
-3.  Use the `My.Computer.Ports.OpenSerialPort` method to obtain a reference to the port. For more information, see <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>.  
+3. Use the `My.Computer.Ports.OpenSerialPort` method to obtain a reference to the port. For more information, see <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>.  
   
      The `Try...Catch...Finally` block allows the application to close the serial port even if it generates an exception. All code that manipulates the serial port should appear within this block.  
   
      [!code-vb[VbVbalrMyComputer#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#39)]  
   
-4.  Create a `Do` loop for reading lines of text until no more lines are available.  
+4. Create a `Do` loop for reading lines of text until no more lines are available.  
   
      [!code-vb[VbVbalrMyComputer#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#40)]  
   
-5.  Use the <xref:System.IO.Ports.SerialPort.ReadLine> method to read the next available line of text from the serial port.  
+5. Use the <xref:System.IO.Ports.SerialPort.ReadLine> method to read the next available line of text from the serial port.  
   
      [!code-vb[VbVbalrMyComputer#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#41)]  
   
-6.  Use an `If` statement to determine if the <xref:System.IO.Ports.SerialPort.ReadLine> method returns `Nothing` (which means no more text is available). If it does return `Nothing`, exit the `Do` loop.  
+6. Use an `If` statement to determine if the <xref:System.IO.Ports.SerialPort.ReadLine> method returns `Nothing` (which means no more text is available). If it does return `Nothing`, exit the `Do` loop.  
   
      [!code-vb[VbVbalrMyComputer#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#42)]  
   
-7.  Add an `Else` block to the `If` statement to handle the case if the string is actually read. The block appends the string from the serial port to the return string.  
+7. Add an `Else` block to the `If` statement to handle the case if the string is actually read. The block appends the string from the serial port to the return string.  
   
      [!code-vb[VbVbalrMyComputer#43](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#43)]  
   
-8.  Return the string.  
+8. Return the string.  
   
      [!code-vb[VbVbalrMyComputer#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#44)]  
   

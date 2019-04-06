@@ -144,23 +144,23 @@ End Sub
   
  To run the project, perform the following steps:  
   
-1.  Start Visual Studio.  
+1. Start Visual Studio.  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2. On the menu bar, choose **File**, **New**, **Project**.  
   
      The **New Project** dialog box opens.  
   
-3.  In the **Installed**, **Templates** category, choose **Visual Basic**, and then choose **Windows**. Choose **WPF Application** from the list of project types.  
+3. In the **Installed**, **Templates** category, choose **Visual Basic**, and then choose **Windows**. Choose **WPF Application** from the list of project types.  
   
-4.  Enter `AsyncReturnTypes` as the name of the project, and then choose the **OK** button.  
+4. Enter `AsyncReturnTypes` as the name of the project, and then choose the **OK** button.  
   
      The new project appears in **Solution Explorer**.  
   
-5.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
+5. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
   
      If the tab is not visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **Open**.  
   
-6.  In the **XAML** window of MainWindow.xaml, replace the code with the following code.  
+6. In the **XAML** window of MainWindow.xaml, replace the code with the following code.  
   
     ```vb  
     <Window x:Class="MainWindow"  
@@ -177,9 +177,9 @@ End Sub
   
      A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  
   
-7.  In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.  
+7. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.  
   
-8.  Replace the code in MainWindow.xaml.vb with the following code.  
+8. Replace the code in MainWindow.xaml.vb with the following code.  
   
     ```vb  
     Class MainWindow  

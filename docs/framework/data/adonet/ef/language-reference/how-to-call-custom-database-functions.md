@@ -15,17 +15,17 @@ This topic describes how to call custom functions that are defined in the databa
   
 ### To call custom functions that are defined in the database  
   
-1.  Create a custom function in your database.  
+1. Create a custom function in your database.  
   
      For more information about creating custom functions in SQL Server, see [CREATE FUNCTION (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkID=139871).  
   
-2.  Declare a function in the store schema definition language (SSDL) of your .edmx file. The name of the function must be the same as the name of the function declared in the database.  
+2. Declare a function in the store schema definition language (SSDL) of your .edmx file. The name of the function must be the same as the name of the function declared in the database.  
   
      For more information, see [Function Element (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#function-element-ssdl).  
   
-3.  Add a corresponding method to a class in your application code and apply a <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model respectively. Function name resolution for LINQ is case sensitive.  
+3. Add a corresponding method to a class in your application code and apply a <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model respectively. Function name resolution for LINQ is case sensitive.  
   
-4.  Call the method in a LINQ to Entities query.  
+4. Call the method in a LINQ to Entities query.  
   
 ## Example  
  The following example demonstrates how to call a custom database function from within a LINQ to Entities query. The example uses the School model. For information about the School model, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) and [Generating the School .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).  

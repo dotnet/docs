@@ -53,7 +53,9 @@ The unary `!` operator computes logical negation of its operand. That is, it pro
 
 The `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`.
 
-The `&` operator evaluates both operands even if the first operand evaluates to `false`, so that the result must be `false` regardless of the value of the second operand. The following example demonstrates that behavior:
+The `&` operator evaluates both operands even if the first operand evaluates to `false`, so that the result must be `false` regardless of the value of the second operand.
+
+In the following example, the second operand of the `&` operator is a method call, which is performed regardless of the value of the first operand:
 
 [!code-csharp-interactive[logical AND](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#And)]
 
@@ -73,7 +75,9 @@ For the operands of integral types, the `^` operator computes [bitwise logical e
 
 The `|` operator computes the logical OR of its operands. The result of `x | y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`.
 
-The `|` operator evaluates both operands even if the first operand evaluates to `true`, so that the result must be `true` regardless of the value of the second operand. The following example demonstrates that behavior:
+The `|` operator evaluates both operands even if the first operand evaluates to `true`, so that the result must be `true` regardless of the value of the second operand.
+
+In the following example, the second operand of the `|` operator is a method call, which is performed regardless of the value of the first operand:
 
 [!code-csharp-interactive[logical OR](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#Or)]
 
@@ -83,7 +87,9 @@ For the operands of integral types, the `|` operator computes [bitwise logical O
 
 ## Conditional logical AND operator &amp;&amp;
 
-The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If the first operand evaluates to `false`, the second operand is not evaluated. The following example demonstrates that behavior:
+The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If the first operand evaluates to `false`, the second operand is not evaluated.
+
+In the following example, the second operand of the `&&` operator is a method call, which isn't performed if the first operand evaluates to `false`:
 
 [!code-csharp-interactive[conditional logical AND](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#ConditionalAnd)]
 
@@ -91,7 +97,9 @@ The [logical AND operator](#logical-and-operator-) `&` also computes the logical
 
 ## Conditional logical OR operator ||
 
-The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If the first operand evaluates to `true`, the second operand is not evaluated. The following example demonstrates that behavior:
+The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If the first operand evaluates to `true`, the second operand is not evaluated.
+
+In the following example, the second operand of the `||` operator is a method call, which isn't performed if the first operand evaluates to `true`:
 
 [!code-csharp-interactive[conditional logical OR](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#ConditionalOr)]
 
@@ -115,7 +123,7 @@ For operands of the `bool?` type, the `&` and `|` operators support the three-va
 
 The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands is null. For more information, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 
-The following example shows that you can use the `!` and `^` operators with `bool?` operands as well:
+You can also use the `!` and `^` operators with operands of the `bool?` type, as the following example shows:
 
 [!code-csharp-interactive[lifted negation and xor](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#WithNullableBoolean)]
 

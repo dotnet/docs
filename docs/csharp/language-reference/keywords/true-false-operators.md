@@ -1,7 +1,6 @@
 ---
 title: "true and false operators - C# Reference"
 ms.custom: seodec18
-
 ms.date: 12/10/2018
 helpviewer_keywords: 
   - "false operator [C#]"
@@ -17,7 +16,7 @@ If a type with the defined `true` and `false` operators [overloads](operator.md)
 A type with the defined `true` operator can be the type of a result of a controlling conditional expression in the [if](if-else.md), [do](do.md), [while](while.md), and [for](for.md) statements and in the [conditional operator `?:`](../operators/conditional-operator.md). For more information, see the [Boolean expressions](~/_csharplang/spec/expressions.md#boolean-expressions) section of the [C# language specification](../language-specification/index.md).
 
 > [!TIP]
-> Use the `bool?` type, if you need to support the three-valued logic, for example, when you work with databases that support a three-valued logical type. For more information, see [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+> Use the `bool?` type, if you need to support the three-valued logic, for example, when you work with databases that support a three-valued Boolean type. C# provides the `&` and `|` operators that support the three-valued logic with `bool?` operands. For more information, see the [Nullable Boolean logical operators](../operators/boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](../operators/boolean-logical-operators.md) article.
 
 The following example presents the type that defines both `true` and `false` operators. Moreover, it overloads the logical AND operator `&` in such a way that the operator `&&` also can be evaluated for the operands of that type.
 

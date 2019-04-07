@@ -41,8 +41,6 @@ The following operators perform logical operations with [bool](../keywords/bool.
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.
 - Binary [`&&` (conditional logical AND)](#conditional-logical-and-operator-) and [`||` (conditional logical OR)](#conditional-logical-or-operator-) operators. Those operators evaluate the second operand only if it's necessary.
 
-The `&` and `|` operators are also defined for `bool?` operands. For more information, see [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
-
 For the operands of [integral](../keywords/integral-types-table.md) types, the `&`, `|`, and `^` operators perform bitwise logical operations.
 
 ## Logical negation operator !
@@ -99,6 +97,30 @@ The conditional logical OR operator `||`, also known as the "short-circuiting" l
 
 The [logical OR operator](#logical-or-operator-) `|` also computes the logical OR of its operands, but always evaluates both operands.
 
+## Nullable Boolean logical operators
+
+For operands of the `bool?` type, the `&` and `|` operators support the three-valued logic. The semantics of these operators is defined by the following table:  
+  
+|x|y|x&y|x&#124;y|  
+|----|----|----|----|  
+|true|true|true|true|  
+|true|false|false|true|  
+|true|null|null|true|  
+|false|true|false|true|  
+|false|false|false|false|  
+|false|null|false|null|  
+|null|true|null|true|  
+|null|false|false|null|  
+|null|null|null|null|  
+
+The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands is null. For more information, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+
+The following example shows that you can use the `!` and `^` operators with `bool?` operands as well:
+
+[!code-csharp-interactive[lifted negation and xor](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#WithNullableBoolean)]
+
+The conditional logical operators `&&` and `||` don't support operands of the `bool?` type.
+
 ## Compound assignment
 
 For a binary operator `op`, a compound assignment expression of the form
@@ -142,7 +164,7 @@ For the complete list of C# operators ordered by precedence level, see [C# opera
 
 A user-defined type can [overload](../keywords/operator.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
-A user-defined type cannot overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](../keywords/true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+A user-defined type cannot overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](../keywords/true-false-operators.md) and the `|` or `&` operator in a certain way, the `||` or `&&` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## C# language specification
 

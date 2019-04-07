@@ -43,7 +43,7 @@ The `&` operator evaluates both operands even if the first operand evaluates to 
 
 The [conditional AND operator](boolean-logical-operators.md#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the second operand if the first operand evaluates to `false`.
 
-For nullable bool operands, the behavior of the `&` operator is consistent with SQL's three-valued logic. For more information, see the [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+For nullable bool operands, the behavior of the `&` operator is consistent with SQL's three-valued logic. For more information, see the [Nullable Boolean logical operators](boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](boolean-logical-operators.md) article.
 
 ## Operator overloadability
 

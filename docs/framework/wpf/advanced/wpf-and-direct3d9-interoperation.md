@@ -106,13 +106,13 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
   
  To avoid the performance penalty, write code specifically for the multi-monitor case. The following list shows one way to write multi-monitor code.  
   
-1.  Find a point of the <xref:System.Windows.Interop.D3DImage> in screen space with the `Visual.ProjectToScreen` method.  
+1. Find a point of the <xref:System.Windows.Interop.D3DImage> in screen space with the `Visual.ProjectToScreen` method.  
   
-2.  Use the `MonitorFromPoint` GDI method to find the monitor that is displaying the point.  
+2. Use the `MonitorFromPoint` GDI method to find the monitor that is displaying the point.  
   
-3.  Use the `IDirect3D9::GetAdapterMonitor` method to find which Direct3D9 adapter the monitor is on.  
+3. Use the `IDirect3D9::GetAdapterMonitor` method to find which Direct3D9 adapter the monitor is on.  
   
-4.  If the adapter is not the same as the adapter with the back buffer, create a new back buffer on the new monitor and assign it to the <xref:System.Windows.Interop.D3DImage> back buffer.  
+4. If the adapter is not the same as the adapter with the back buffer, create a new back buffer on the new monitor and assign it to the <xref:System.Windows.Interop.D3DImage> back buffer.  
   
 > [!NOTE]
 >  If the <xref:System.Windows.Interop.D3DImage> straddles monitors, performance will be slow, except in the case of WDDM and `IDirect3D9Ex` on the same adapter. There is no way to improve performance in this situation.  

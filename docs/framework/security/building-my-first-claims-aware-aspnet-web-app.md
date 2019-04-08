@@ -15,13 +15,13 @@ author: "BrucePerlerMS"
   
  ![Diagram showing a WIF Basic Web App components.](./media/building-my-first-claims-aware-aspnet-web-app/windows-identity-foundation-basic-web-application.gif)  
   
-1.  The claims-aware application uses WIF to identify unauthenticated requests and to redirect them to the STS.  
+1. The claims-aware application uses WIF to identify unauthenticated requests and to redirect them to the STS.  
   
-2.  The end user provides credentials to the STS and upon successful authentication the user is issued a token by the STS.  
+2. The end user provides credentials to the STS and upon successful authentication the user is issued a token by the STS.  
   
-3.  The user is redirected from the STS to the claims-aware application with the STS-issued token in the request.  
+3. The user is redirected from the STS to the claims-aware application with the STS-issued token in the request.  
   
-4.  The claims-aware application is configured to trust the STS and the tokens it issues. The claims-aware application uses WIF to validate the token and to parse it. Developers use the appropriate WIF API and types, for example, **ClaimsPrincpal** for the application’s needs, such as implementing authorization for it.  
+4. The claims-aware application is configured to trust the STS and the tokens it issues. The claims-aware application uses WIF to validate the token and to parse it. Developers use the appropriate WIF API and types, for example, **ClaimsPrincpal** for the application’s needs, such as implementing authorization for it.  
   
  Starting from .NET 4.5, WIF is part of the .NET Framework package. Having the WIF classes directly available in the framework allows a much deeper integration of claims-based identity in .NET, making it easier to use claims. With WIF 4.5, you do not need to install any out-of-band components in order to start developing claims-aware web applications. WIF classes are now spread across various assemblies, the main ones being System.Security.Claims, System.IdentityModel and System.IdentityModel.Services.  
   

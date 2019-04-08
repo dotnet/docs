@@ -38,26 +38,26 @@ As you construct forms and controls for your Windows Forms application, there ar
   
 #### To create the project  
   
-1.  Create a Windows-based application project called "SmartTagsExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
+1. Create a Windows-based application project called "SmartTagsExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
-2.  Select the form in the **Windows Forms Designer**.  
+2. Select the form in the **Windows Forms Designer**.  
   
 ## Using Smart Tags  
  Smart tags are always available at design time on controls that offer them.  
   
 #### To use smart tags  
   
-1.  Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the smart-tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) that appears on the side of the <xref:System.Windows.Forms.TabControl>.  
+1. Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the smart-tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) that appears on the side of the <xref:System.Windows.Forms.TabControl>.  
   
-2.  Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Add Tab** item. Observe that a new tab page is added to the <xref:System.Windows.Forms.TabControl>.  
+2. Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Add Tab** item. Observe that a new tab page is added to the <xref:System.Windows.Forms.TabControl>.  
   
-3.  Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
+3. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
   
-4.  Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Add Column** item. Observe that a new column is added to the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+4. Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Add Column** item. Observe that a new column is added to the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-5.  Drag a <xref:System.Windows.Forms.SplitContainer> control from the **Toolbox** onto your form.  
+5. Drag a <xref:System.Windows.Forms.SplitContainer> control from the **Toolbox** onto your form.  
   
-6.  Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Horizontal splitter orientation** item. Observe that the <xref:System.Windows.Forms.SplitContainer> control's splitter bar is now oriented horizontally.  
+6. Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Horizontal splitter orientation** item. Observe that the <xref:System.Windows.Forms.SplitContainer> control's splitter bar is now oriented horizontally.  
   
 ## See also
 

@@ -18,11 +18,11 @@ When you bind a Windows Forms <xref:System.Windows.Forms.DataGridView> control t
   
 ### To change the column order using the designer  
   
-1.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.  
+1. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.  
   
-2.  Select a column from the **Selected Columns** list.  
+2. Select a column from the **Selected Columns** list.  
   
-3.  Click the up or down arrow to the right of the **Selected Columns** list until the selected column is in the position you want.  
+3. Click the up or down arrow to the right of the **Selected Columns** list until the selected column is in the position you want.  
   
 ## See also
 

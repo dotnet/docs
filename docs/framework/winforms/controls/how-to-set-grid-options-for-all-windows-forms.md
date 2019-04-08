@@ -17,9 +17,9 @@ As you become used to working in the Visual Studio development environment, you 
   
 ### To set global Windows Forms options  
   
-1.  From the **Tools** menu, select **Options**.  
+1. From the **Tools** menu, select **Options**.  
   
-2.  In the left pane of the **Options** dialog box, click **Windows Forms Designer**.  
+2. In the left pane of the **Options** dialog box, click **Windows Forms Designer**.  
   
      In the right pane, under the **Layout Settings** heading, you can set the default grid settings for all the new forms you create. These settings include the grid size, whether controls snap to it, and whether it is on by default. In addition, you can select between **SnapToGrid** and **SnapLines** layout modes. For more information on snaplines, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).  
   

@@ -10,7 +10,7 @@ The specified `For...Next` control values have different types, and therefore ar
   
 ## To correct this error  
   
-1.  Change the type of one or more of the values so all can be converted to a common type.  
+1. Change the type of one or more of the values so all can be converted to a common type.  
   
 ## See also
 

@@ -32,13 +32,13 @@ This section shows you how to define and implement WCF contracts. A service cont
   
  For example, a purchase order contract might have a `CreateOrder` operation that accepts an input of order information types and returns success or failure information, including an order identifier. It might also have a `GetOrderStatus` operation that accepts an order identifier and returns order status information. A service contract of this sort would specify:  
   
-1.  That the purchase order contract consisted of `CreateOrder` and `GetOrderStatus` operations.  
+1. That the purchase order contract consisted of `CreateOrder` and `GetOrderStatus` operations.  
   
-2.  That the operations have specified input messages and output messages.  
+2. That the operations have specified input messages and output messages.  
   
-3.  The data that these messages can carry.  
+3. The data that these messages can carry.  
   
-4.  Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
+4. Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
   
  To convey this kind of information to other applications on many platforms (including non-Microsoft platforms), XML service contracts are publicly expressed in standard XML formats, such as [Web Services Description Language](https://go.microsoft.com/fwlink/?LinkId=94952) (WSDL) and [XML Schema](https://go.microsoft.com/fwlink/?LinkId=94953) (XSD), among others. Developers for many platforms can use this public contract information to create applications that can communicate with the service, both because they understand the language of the specification and because those languages are designed to enable interoperation by describing the public forms, formats, and protocols that the service supports. For more information about how WCF handles this kind of information, see [Metadata](../../../docs/framework/wcf/feature-details/metadata.md).  
   

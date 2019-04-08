@@ -39,7 +39,7 @@ GO
   
  **SQL Server Books Online**  
   
-1.  [Deploying CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115232)  
+1. [Deploying CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115232)  
   
 ## CLR Integration Security  
  The security model of the Microsoft SQL Server integration with the Microsoft .NET Framework common language runtime (CLR) manages and secures access between different types of CLR and non-CLR objects running within SQL Server. These objects may be called by a Transact-SQL statement or another CLR object running in the server.  

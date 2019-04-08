@@ -23,9 +23,9 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
   
 ### To view multiple lines in the TextBox control  
   
-1.  Set the <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`. If <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> is `true` (the default), then the text in the control will appear as one or more paragraphs; otherwise it will appear as a list, in which some lines may be clipped at the edge of the control.  
+1. Set the <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`. If <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> is `true` (the default), then the text in the control will appear as one or more paragraphs; otherwise it will appear as a list, in which some lines may be clipped at the edge of the control.  
   
-2.  Set the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property to an appropriate value.  
+2. Set the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property to an appropriate value.  
   
     |Value|Description|  
     |-----------|-----------------|  
@@ -33,7 +33,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
     |<xref:System.Windows.Forms.ScrollBars.Horizontal>|Use this value if you want to display a list of lines, some of which may be longer than the width of the <xref:System.Windows.Forms.TextBox> control.|  
     |<xref:System.Windows.Forms.ScrollBars.Both>|Use this value if the list may be longer than the height of the control.|  
   
-3.  Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
+3. Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
   
     |Value|Description|  
     |-----------|-----------------|  

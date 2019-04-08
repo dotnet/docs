@@ -19,15 +19,15 @@ The language rules for XAML state that significant white space must be processed
 ## White-space normalization  
  By default the following white-space normalization occurs when a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor processes a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file:  
   
-1.  Linefeed characters between East Asian characters are removed. See the "East Asian Characters" section later in this topic for a definition of this term.  
+1. Linefeed characters between East Asian characters are removed. See the "East Asian Characters" section later in this topic for a definition of this term.  
   
-2.  All white-space characters (space, linefeed, tab) are converted into spaces.  
+2. All white-space characters (space, linefeed, tab) are converted into spaces.  
   
-3.  All consecutive spaces are deleted and replaced by one space.  
+3. All consecutive spaces are deleted and replaced by one space.  
   
-4.  A space immediately following the start tag is deleted.  
+4. A space immediately following the start tag is deleted.  
   
-5.  A space immediately before the end tag is deleted.  
+5. A space immediately before the end tag is deleted.  
   
  "Default" corresponds to the state denoted by the default value of the [xml:space](xml-space-handling-in-xaml.md) attribute.  
   

@@ -8,28 +8,28 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
 
 #### To use this sample
 
-1.  Verify you have SQL Server 2008, SQL Server 2008 Express or newer installed. The scripts packaged with the sample assume the use of a SQL Express instance on your local computer. If you have a different instance please modify the database-related scripts before running the sample.
+1. Verify you have SQL Server 2008, SQL Server 2008 Express or newer installed. The scripts packaged with the sample assume the use of a SQL Express instance on your local computer. If you have a different instance please modify the database-related scripts before running the sample.
 
-2.  Create the SQL Server tracking database by running Trackingsetup.cmd in the scripts directory (\WF\Basic\Tracking\SqlTracking\CS\Scripts). This creates a database called TrackingSample.
+2. Create the SQL Server tracking database by running Trackingsetup.cmd in the scripts directory (\WF\Basic\Tracking\SqlTracking\CS\Scripts). This creates a database called TrackingSample.
 
     > [!NOTE]
     >  The script creates the database on the default instance of SQL Express. If you want to install it on a different database instance, edit the Trackingsetup.cmd script.  
   
-3.  Open SqlTrackingSample.sln in Visual Studio 2010.  
+3. Open SqlTrackingSample.sln in Visual Studio 2010.  
   
-4.  Press CTRL+SHIFT+B to build the solution.  
+4. Press CTRL+SHIFT+B to build the solution.  
   
-5.  Press F5 to run the application.  
+5. Press F5 to run the application.  
   
      The browser window opens and shows the directory listing for the application.  
   
-6.  In the browser, click StockPriceService.xamlx.  
+6. In the browser, click StockPriceService.xamlx.  
   
-7.  The browser displays the StockPriceService page, which contains the local service WSDL address. Copy this address.  
+7. The browser displays the StockPriceService page, which contains the local service WSDL address. Copy this address.  
   
      An example of the local service WSDL address is `http://localhost:65193/StockPriceService.xamlx?wsdl`.  
   
-8.  Using [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], run the WCF test client (WcfTestClient.exe). It is located in the Microsoft Visual Studio 10.0\Common7\IDE directory.  
+8. Using [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], run the WCF test client (WcfTestClient.exe). It is located in the Microsoft Visual Studio 10.0\Common7\IDE directory.  
   
 9. In the WCF test client, click the **File** menu and select **Add Service**. Paste the local service address in the textbox. Click **OK** to close the dialog.  
   
@@ -39,7 +39,7 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
   
 #### To uninstall the sample  
   
-1.  Run theTrackingcleanup.cmd script in the sample directory (\WF\Basic\Tracking\SqlTracking).  
+1. Run theTrackingcleanup.cmd script in the sample directory (\WF\Basic\Tracking\SqlTracking).  
   
     > [!NOTE]
     >  The Trackingcleanup.cmd attempts to delete the database in your local computer SQL Express. If you are using another SQL server instance, edit Trackingcleanup.cmd.

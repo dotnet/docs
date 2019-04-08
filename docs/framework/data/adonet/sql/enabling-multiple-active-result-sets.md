@@ -96,11 +96,11 @@ string connectionString = "Data Source=MSSQL1;" +
   
  There are three options for handling this scenario:  
   
-1.  Start the transaction after the reader is created, so that it is not part of the transaction. Every update then becomes its own transaction.  
+1. Start the transaction after the reader is created, so that it is not part of the transaction. Every update then becomes its own transaction.  
   
-2.  Commit all work after the reader is closed. This has the potential for a substantial batch of updates.  
+2. Commit all work after the reader is closed. This has the potential for a substantial batch of updates.  
   
-3.  Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
+3. Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
   
 ### Detecting MARS Support  
  An application can check for MARS support by reading the `SqlConnection.ServerVersion` value. The major number should be 9 for SQL Server 2005 and 10 for SQL Server 2008.  

@@ -16,7 +16,7 @@ This topic outlines the basic steps required to create a routing configuration t
   
 ### Implement Error Handling  
   
-1.  Create the basic Routing Service configuration by specifying the service endpoint exposed by the service. The following example defines a single service endpoint, which is used to receive messages. It also defines the client endpoints that are used to send messages; deadDestination and realDestination. The deadDestination endpoint contains an address that does not reference a running service and is used to simulate a network failure when sending messages to this endpoint.  
+1. Create the basic Routing Service configuration by specifying the service endpoint exposed by the service. The following example defines a single service endpoint, which is used to receive messages. It also defines the client endpoints that are used to send messages; deadDestination and realDestination. The deadDestination endpoint contains an address that does not reference a running service and is used to simulate a network failure when sending messages to this endpoint.  
   
     ```xml  
     <services>  
@@ -51,7 +51,7 @@ This topic outlines the basic steps required to create a routing configuration t
     </client>  
     ```  
   
-2.  Define the filters used to route messages to the destination endpoints.  For this example, a MatchAll filter is used to match all messages received by the Routing Service.  
+2. Define the filters used to route messages to the destination endpoints.  For this example, a MatchAll filter is used to match all messages received by the Routing Service.  
   
     ```xml  
     <filters>  
@@ -60,7 +60,7 @@ This topic outlines the basic steps required to create a routing configuration t
     </filters>  
     ```  
   
-3.  Define the backup endpoint list, which contains the endpoints that a message is sent to in the event of a network or communications failure when sending to the primary destination endpoint. The following example defines a backup list that contains one endpoint; however, multiple endpoints can be specified in a backup list.  
+3. Define the backup endpoint list, which contains the endpoints that a message is sent to in the event of a network or communications failure when sending to the primary destination endpoint. The following example defines a backup list that contains one endpoint; however, multiple endpoints can be specified in a backup list.  
   
      If the backup list contains multiple endpoints, when a network or communications failure occurs the Routing Service attempts to send the message to the first endpoint in the list. If a network or communications failure occurs when sending to this endpoint, the Routing Service attempts to send the message to the next endpoint contained in the list. The service continues sending the message to each endpoint in the backup endpoint list until the message is successfully sent, all backup endpoints return a network or communications-related error, or the message is sent and the endpoint returns a non-network, non-communications-related error.  
   
@@ -72,7 +72,7 @@ This topic outlines the basic steps required to create a routing configuration t
     </backupLists>  
     ```  
   
-4.  Define the filter table, which associates the filter with the deadDestination endpoint and the backup endpoint list.  The Routing Service first attempts to send the message to the destination endpoint associated with the filter. Since the deadDestination contains an address that does not refer to a running service, this results in a network error. The Routing Service then attempts to send the message to the endpoint specified in the backupEndpointlist.  
+4. Define the filter table, which associates the filter with the deadDestination endpoint and the backup endpoint list.  The Routing Service first attempts to send the message to the destination endpoint associated with the filter. Since the deadDestination contains an address that does not refer to a running service, this results in a network error. The Routing Service then attempts to send the message to the endpoint specified in the backupEndpointlist.  
   
     ```xml  
     <filterTables>  
@@ -86,7 +86,7 @@ This topic outlines the basic steps required to create a routing configuration t
           </filterTables>  
     ```  
   
-5.  To evaluate incoming messages against the filter contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints.  
+5. To evaluate incoming messages against the filter contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints.  
   
     ```xml  
     <behaviors>  

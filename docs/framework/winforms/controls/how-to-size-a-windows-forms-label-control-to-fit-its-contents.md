@@ -14,7 +14,7 @@ The Windows Forms <xref:System.Windows.Forms.Label> control can be single-line o
   
 ### To make a label control resize dynamically to fit its contents  
   
-1.  Set its <xref:System.Windows.Forms.Label.AutoSize%2A> property to `true`.  
+1. Set its <xref:System.Windows.Forms.Label.AutoSize%2A> property to `true`.  
   
  If <xref:System.Windows.Forms.Label.AutoSize%2A> is set to `false`, the words specified in the <xref:System.Windows.Forms.Label.Text%2A> property will wrap to the next line if possible, but the control will not grow.  
   

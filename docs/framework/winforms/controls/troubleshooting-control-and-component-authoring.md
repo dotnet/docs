@@ -32,9 +32,9 @@ This topic lists the following common problems that arise when developing compon
   
 #### To add a control to the Toolbox  
   
-1.  Right-click the **Toolbox** and from the shortcut menu, select **Choose Items**.  
+1. Right-click the **Toolbox** and from the shortcut menu, select **Choose Items**.  
   
-2.  In the **Choose Toolbox Items** dialog box, add the component:  
+2. In the **Choose Toolbox Items** dialog box, add the component:  
   
     -   If you want to add a .NET Framework component or control, click the **.NET Framework Components** tab.  
   
@@ -42,11 +42,11 @@ This topic lists the following common problems that arise when developing compon
   
     -   If you want to add a COM component or ActiveX control, click the **COM Components** tab.  
   
-3.  If your control is listed in the dialog box, confirm it is selected, and then click **OK**.  
+3. If your control is listed in the dialog box, confirm it is selected, and then click **OK**.  
   
      The control is added to the **Toolbox**.  
   
-4.  If your control is not listed in the dialog box, do the following:  
+4. If your control is not listed in the dialog box, do the following:  
   
     1.  Click the **Browse** button.  
   
@@ -67,15 +67,15 @@ This topic lists the following common problems that arise when developing compon
   
 #### To debug a control or component  
   
-1.  From the **Build** menu, click **Build Solution** to build your solution.  
+1. From the **Build** menu, click **Build Solution** to build your solution.  
   
-2.  From the **File** menu, choose **Add**, and then **New Project** to add a test project to your application.  
+2. From the **File** menu, choose **Add**, and then **New Project** to add a test project to your application.  
   
-3.  In the **Add New Project** dialog box choose **Windows Application** for the type of project.  
+3. In the **Add New Project** dialog box choose **Windows Application** for the type of project.  
   
-4.  In **Solution Explorer**, right-click the **References** node for the new project. On the shortcut menu, click **Add Reference** to add a reference to the project containing the control or component.  
+4. In **Solution Explorer**, right-click the **References** node for the new project. On the shortcut menu, click **Add Reference** to add a reference to the project containing the control or component.  
   
-5.  Create an instance of your control or component in the test project. If your component is in the **Toolbox**, you can drag it to your designer surface, or you can create the instance programmatically, as shown in the following code example.  
+5. Create an instance of your control or component in the test project. If your component is in the **Toolbox**, you can drag it to your designer surface, or you can create the instance programmatically, as shown in the following code example.  
   
     ```vb  
     Dim Component1 As New MyNeatComponent()  

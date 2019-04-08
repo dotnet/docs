@@ -81,15 +81,15 @@ WHERE TerritoryID IN (1, 2, 3)
   
  In addition, the following rules apply for an instance of `DataRow.["columnName"]` null assignments:  
   
-1.  The default *default* value is `DbNull.Value` for all except the strongly typed null columns where it is the appropriate strongly typed null value.  
+1. The default *default* value is `DbNull.Value` for all except the strongly typed null columns where it is the appropriate strongly typed null value.  
   
-2.  Null values are never written out during serialization to XML files (as in "xsi:nil").  
+2. Null values are never written out during serialization to XML files (as in "xsi:nil").  
   
-3.  All non-null values, including defaults, are always written out while serializing to XML. This is unlike XSD/XML semantics where a null value (xsi:nil) is explicit and the default value is implicit (if not present in XML, a validating parser can get it from an associated XSD schema). The opposite is true for a `DataTable`: a null value is implicit and the default value is explicit.  
+3. All non-null values, including defaults, are always written out while serializing to XML. This is unlike XSD/XML semantics where a null value (xsi:nil) is explicit and the default value is implicit (if not present in XML, a validating parser can get it from an associated XSD schema). The opposite is true for a `DataTable`: a null value is implicit and the default value is explicit.  
   
-4.  All missing column values for rows read from XML input are assigned NULL. Rows created using <xref:System.Data.DataTable.NewRow%2A> or similar methods are assigned the DataColumn's default value.  
+4. All missing column values for rows read from XML input are assigned NULL. Rows created using <xref:System.Data.DataTable.NewRow%2A> or similar methods are assigned the DataColumn's default value.  
   
-5.  The <xref:System.Data.DataRow.IsNull%2A> method returns `true` for both `DbNull.Value` and `INullable.Null`.  
+5. The <xref:System.Data.DataRow.IsNull%2A> method returns `true` for both `DbNull.Value` and `INullable.Null`.  
   
 ## Assigning Null Values  
  The default value for any <xref:System.Data.SqlTypes> instance is null.  

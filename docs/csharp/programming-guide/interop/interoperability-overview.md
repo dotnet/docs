@@ -27,26 +27,26 @@ The topic describes methods to enable interoperability between C# managed code a
 ## Exposing COM Components to C\#
  You can consume a COM component from a C# project. The general steps are as follows:  
   
-1.  Locate a COM component to use and register it. Use regsvr32.exe to register or un–register a COM DLL.  
+1. Locate a COM component to use and register it. Use regsvr32.exe to register or un–register a COM DLL.  
   
-2.  Add to the project a reference to the COM component or type library.  
+2. Add to the project a reference to the COM component or type library.  
   
      When you add the reference, Visual Studio uses the [Tlbimp.exe (Type Library Importer)](../../../../docs/framework/tools/tlbimp-exe-type-library-importer.md), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. Visual Studio adds to the project a reference to the generated assembly.  
   
-3.  Create an instance of a class that is defined in the RCW. This, in turn, creates an instance of the COM object.  
+3. Create an instance of a class that is defined in the RCW. This, in turn, creates an instance of the COM object.  
   
-4.  Use the object just as you use other managed objects. When the object is reclaimed by garbage collection, the instance of the COM object is also released from memory.  
+4. Use the object just as you use other managed objects. When the object is reclaimed by garbage collection, the instance of the COM object is also released from memory.  
   
  For more information, see [Exposing COM Components to the .NET Framework](../../../../docs/framework/interop/exposing-com-components.md).  
   
 ## Exposing C# to COM  
  COM clients can consume C# types that have been correctly exposed. The basic steps to expose C# types are as follows:  
   
-1.  Add interop attributes in the C# project.  
+1. Add interop attributes in the C# project.  
   
      You can make an assembly COM visible by modifying Visual C# project properties. For more information, see [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box).  
   
-2.  Generate a COM type library and register it for COM usage.  
+2. Generate a COM type library and register it for COM usage.  
   
      You can modify Visual C# project properties to automatically register the C# assembly for COM interop. Visual Studio uses the [Regasm.exe (Assembly Registration Tool)](../../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
   

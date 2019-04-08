@@ -47,24 +47,24 @@ author: "BrucePerlerMS"
   
 #### To create simple ASP.NET MVC application  
   
-1.  Start Visual Studio and click **File**, **New**, and then **Project**.  
+1. Start Visual Studio and click **File**, **New**, and then **Project**.  
   
-2.  In the **New Project** window, click **ASP.NET MVC 3 Web Application**.  
+2. In the **New Project** window, click **ASP.NET MVC 3 Web Application**.  
   
-3.  In **Name**, enter `TestApp` and press **OK**.  
+3. In **Name**, enter `TestApp` and press **OK**.  
   
-4.  In the **New ASP.NET MVC 3 Project** dialog, select **Internet Application** from the available templates, ensure **View Engine** is set to **Razor**, and then click **OK**.  
+4. In the **New ASP.NET MVC 3 Project** dialog, select **Internet Application** from the available templates, ensure **View Engine** is set to **Razor**, and then click **OK**.  
   
-5.  When the new project opens, right-click the **TestApp** project in **Solution Explorer** and select the **Properties** option.  
+5. When the new project opens, right-click the **TestApp** project in **Solution Explorer** and select the **Properties** option.  
   
-6.  On the project’s properties page, click on the **Web** tab on the left and ensure that the **Use Local IIS Web Server** option is selected.  
+6. On the project’s properties page, click on the **Web** tab on the left and ensure that the **Use Local IIS Web Server** option is selected.  
   
 ## Step 2 – Configure ASP.NET MVC Application for Claims-Based Authentication  
  In this step you will add configuration entries to the *Web.config* configuration file of your ASP.NET MVC web application to make it claims-aware.  
   
 #### To configure ASP.NET MVC application for claims-based authentication  
   
-1.  Add the following configuration section definitions to the *Web.config* configuration file. These define configuration sections required by Windows Identity Foundation. Add the definitions immediately after the **\<configuration>** opening element:  
+1. Add the following configuration section definitions to the *Web.config* configuration file. These define configuration sections required by Windows Identity Foundation. Add the definitions immediately after the **\<configuration>** opening element:  
   
     ```xml  
     <configSections>  
@@ -73,7 +73,7 @@ author: "BrucePerlerMS"
     </configSections>  
     ```  
   
-2.  Add a **\<location>** element that enables access to the application’s federation metadata:  
+2. Add a **\<location>** element that enables access to the application’s federation metadata:  
   
     ```xml  
     <location path="FederationMetadata">  
@@ -85,7 +85,7 @@ author: "BrucePerlerMS"
     </location>  
     ```  
   
-3.  Add the following configuration entries within the **\<system.web>** elements to deny users, disable native authentication, and enable WIF to manage authentication.  
+3. Add the following configuration entries within the **\<system.web>** elements to deny users, disable native authentication, and enable WIF to manage authentication.  
   
     ```xml  
     <authorization>  
@@ -94,7 +94,7 @@ author: "BrucePerlerMS"
     <authentication mode="None" />  
     ```  
   
-4.  Add the following Windows Identity Foundation related configuration entries and ensure that your ASP.NET application’s URL and port number match the values in the **\<audienceUris>** entry, **realm** attribute of the **\<wsFederation>** element, and the **reply** attribute of the **\<wsFederation>** element. Also ensure that the **issuer** value fits your Security Token Service (STS) URL.  
+4. Add the following Windows Identity Foundation related configuration entries and ensure that your ASP.NET application’s URL and port number match the values in the **\<audienceUris>** entry, **realm** attribute of the **\<wsFederation>** element, and the **reply** attribute of the **\<wsFederation>** element. Also ensure that the **issuer** value fits your Security Token Service (STS) URL.  
   
     ```xml  
     <system.identityModel>  
@@ -118,16 +118,16 @@ author: "BrucePerlerMS"
     </system.identityModel.services>  
     ```  
   
-5.  Add reference to the <xref:System.IdentityModel> assembly.  
+5. Add reference to the <xref:System.IdentityModel> assembly.  
   
-6.  Compile the solution to make sure there are errors.  
+6. Compile the solution to make sure there are errors.  
   
 ## Step 3 – Test Your Solution  
  In this step you will test your ASP.NET MVC web application configured for claims-based authentication. To perform basic test you will add simple code that displays claims in the token issued by the Security Token Service (STS).  
   
 #### To test your ASP.NET MVC application for claims-based authentication  
   
-1.  In the **Solution Explorer**, expand the **Controllers** folder and open *HomeController.cs* file in the editor. Add the following code to the **Index** method:  
+1. In the **Solution Explorer**, expand the **Controllers** folder and open *HomeController.cs* file in the editor. Add the following code to the **Index** method:  
   
     ```csharp  
     public ActionResult Index()  
@@ -138,7 +138,7 @@ author: "BrucePerlerMS"
     }  
     ```  
   
-2.  In the **Solution Explorer** expand **Views** and then **Home** folders and open *Index.cshtml* file in the editor. Delete its contents and add the following markup:  
+2. In the **Solution Explorer** expand **Views** and then **Home** folders and open *Index.cshtml* file in the editor. Delete its contents and add the following markup:  
   
     ```html  
     @{  
@@ -206,9 +206,9 @@ author: "BrucePerlerMS"
     </table>  
     ```  
   
-3.  Run the solution by pressing the **F5** key.  
+3. Run the solution by pressing the **F5** key.  
   
-4.  You should be presented with the page that displays the claims in the token that was issued to you by Security Token Service.  
+4. You should be presented with the page that displays the claims in the token that was issued to you by Security Token Service.  
   
 ## Related Items  
   

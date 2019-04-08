@@ -19,11 +19,11 @@ When using Windows authentication as a security mechanism, the Security Support 
 ## Debugging Methodology  
  The basic method is as follows:  
   
-1.  Determine whether you are using Windows authentication. If you are using any other scheme, this topic does not apply.  
+1. Determine whether you are using Windows authentication. If you are using any other scheme, this topic does not apply.  
   
-2.  If you are sure you are using Windows authentication, determine whether your WCF configuration uses Kerberos direct or Negotiate.  
+2. If you are sure you are using Windows authentication, determine whether your WCF configuration uses Kerberos direct or Negotiate.  
   
-3.  Once you have determined whether your configuration is using the Kerberos protocol or NTLM, you can understand error messages in the correct context.  
+3. Once you have determined whether your configuration is using the Kerberos protocol or NTLM, you can understand error messages in the correct context.  
   
 ### Availability of the Kerberos Protocol and NTLM  
  The Kerberos SSP requires a domain controller to act as the Kerberos Key Distribution Center (KDC). The Kerberos protocol is available only when both the client and service are using domain identities. In other account combinations, NTLM is used, as summarized in the following table.  
@@ -75,15 +75,15 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  To implement Kerberos with credential negotiation, do the following steps:  
   
-1.  Implement delegation by setting <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> to <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>.  
+1. Implement delegation by setting <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> to <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>.  
   
-2.  Require SSPI negotiation:  
+2. Require SSPI negotiation:  
   
     1.  If you are using standard bindings, set the `NegotiateServiceCredential` property to `true`.  
   
     2.  If you are using custom bindings, set the `AuthenticationMode` attribute of the `Security` element to `SspiNegotiated`.  
   
-3.  Require the SSPI negotiation to use Kerberos by disallowing the use of NTLM:  
+3. Require the SSPI negotiation to use Kerberos by disallowing the use of NTLM:  
   
     1.  Do this in code, with the following statement: `ChannelFactory.Credentials.Windows.AllowNtlm = false`  
   

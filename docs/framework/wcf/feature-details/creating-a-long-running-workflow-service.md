@@ -9,33 +9,33 @@ This topic describes how to create a long-running workflow service. Long running
 ## Prerequisites
  You must have the following software installed to use this walkthrough:
 
-1.  Microsoft SQL Server 2008
+1. Microsoft SQL Server 2008
 
-2.  Visual Studio 2012
+2. Visual Studio 2012
 
-3.  Microsoft  [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]
+3. Microsoft  [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]
 
-4.  You are familiar with WCF and Visual Studio 2012 and know how to create projects/solutions.
+4. You are familiar with WCF and Visual Studio 2012 and know how to create projects/solutions.
 
 ### To Setup the SQL Database
 
-1.  In order for workflow service instances to be persisted you must have Microsoft SQL Server installed and you must configure a database to store the persisted workflow instances. Run Microsoft SQL Management Studio by clicking the **Start** button, selecting **All Programs**, **Microsoft SQL Server 2008**, and **Microsoft SQL Management Studio**.
+1. In order for workflow service instances to be persisted you must have Microsoft SQL Server installed and you must configure a database to store the persisted workflow instances. Run Microsoft SQL Management Studio by clicking the **Start** button, selecting **All Programs**, **Microsoft SQL Server 2008**, and **Microsoft SQL Management Studio**.
 
-2.  Click the **Connect** button to log on to the SQL Server instance
+2. Click the **Connect** button to log on to the SQL Server instance
 
-3.  Right click **Databases** in the tree view and select **New Database..** to create a new database called `SQLPersistenceStore`.
+3. Right click **Databases** in the tree view and select **New Database..** to create a new database called `SQLPersistenceStore`.
 
-4.  Run the SqlWorkflowInstanceStoreSchema.sql script file located in the C:\Windows\Microsoft.NET\Framework\v4.0\SQL\en directory on the SQLPersistenceStore database to set up the needed database schemas.
+4. Run the SqlWorkflowInstanceStoreSchema.sql script file located in the C:\Windows\Microsoft.NET\Framework\v4.0\SQL\en directory on the SQLPersistenceStore database to set up the needed database schemas.
 
-5.  Run the SqlWorkflowInstanceStoreLogic.sql script file located in the C:\Windows\Microsoft.NET\Framework\v4.0\SQL\en directory on the SQLPersistenceStore database to set up the needed database logic.
+5. Run the SqlWorkflowInstanceStoreLogic.sql script file located in the C:\Windows\Microsoft.NET\Framework\v4.0\SQL\en directory on the SQLPersistenceStore database to set up the needed database logic.
 
 ### To Create the Web Hosted Workflow Service
 
-1.  Create an empty Visual Studio 2012 solution, name it `OrderProcessing`.
+1. Create an empty Visual Studio 2012 solution, name it `OrderProcessing`.
 
-2.  Add a new WCF Workflow Service Application project called `OrderService` to the solution.
+2. Add a new WCF Workflow Service Application project called `OrderService` to the solution.
 
-3.  In the project properties dialog, select the **Web** tab.
+3. In the project properties dialog, select the **Web** tab.
 
     1.  Under **Start Action** select **Specific Page** and specify `Service1.xamlx`.
 
@@ -50,16 +50,16 @@ This topic describes how to create a long-running workflow service. Long running
 
          These two steps configure the workflow service project to be hosted by IIS.
 
-4.  Open `Service1.xamlx` if it is not open already and delete the existing **ReceiveRequest** and **SendResponse** activities.
+4. Open `Service1.xamlx` if it is not open already and delete the existing **ReceiveRequest** and **SendResponse** activities.
 
-5.  Select the **Sequential Service** activity and click the **Variables** link and add the variables shown in the following illustration. Doing this adds some variables that will be used later on in the workflow service.
+5. Select the **Sequential Service** activity and click the **Variables** link and add the variables shown in the following illustration. Doing this adds some variables that will be used later on in the workflow service.
 
     > [!NOTE]
     >  If CorrelationHandle is not in the Variable Type drop-down, select **Browse for types** from the drop-down. Type CorrelationHandle in the **Type name** box, select CorrelationHandle from the listbox and click **OK**.
 
      ![Add Variables](./media/creating-a-long-running-workflow-service/add-variables-sequential-service-activity.gif "Add variables to the Sequential Service activity.")
 
-6.  Drag and drop a **ReceiveAndSendReply** activity template into the **Sequential Service** activity. This set of activities will receive a message from a client and send a reply back.
+6. Drag and drop a **ReceiveAndSendReply** activity template into the **Sequential Service** activity. This set of activities will receive a message from a client and send a reply back.
 
     1.  Select the **Receive** activity and set the properties highlighted in the following illustration.
 
@@ -89,7 +89,7 @@ This topic describes how to create a long-running workflow service. Long running
 
          ![Adding a correlation initializer](./media/creating-a-long-running-workflow-service/add-correlationinitializers.png "Add a correlation initializer.")
 
-7.  Drag and drop another **ReceiveAndSendReply** activity to the end of the workflow (outside the **Sequence** containing the first **Receive** and **SendReply** activities). This will receive the second message sent by the client and respond to it.
+7. Drag and drop another **ReceiveAndSendReply** activity to the end of the workflow (outside the **Sequence** containing the first **Receive** and **SendReply** activities). This will receive the second message sent by the client and respond to it.
 
     1.  Select the **Sequence** that contains the newly added **Receive** and **SendReply** activities and click the **Variables** button. Add the variable highlighted in the following illustration:
 
@@ -125,7 +125,7 @@ This topic describes how to create a long-running workflow service. Long running
 
              ![Setting the data binding for the SendReply activity](./media/creating-a-long-running-workflow-service/set-property-for-sendreplytoadditem.gif "Set property for SendReplyToAddItem activity.")
 
-8.  Open the web.config file and add the following elements in the \<behavior> section to enable workflow persistence.
+8. Open the web.config file and add the following elements in the \<behavior> section to enable workflow persistence.
 
     ```xml
     <sqlWorkflowInstanceStore connectionString="Data Source=your-machine\SQLExpress;Initial Catalog=SQLPersistenceStore;Integrated Security=True;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />
@@ -139,17 +139,17 @@ This topic describes how to create a long-running workflow service. Long running
 
 ### To Create a Client Application to Call the Workflow Service
 
-1.  Add a new Console application project called `OrderClient` to the solution.
+1. Add a new Console application project called `OrderClient` to the solution.
 
-2.  Add references to the following assemblies to the `OrderClient` project
+2. Add references to the following assemblies to the `OrderClient` project
 
     1.  System.ServiceModel.dll
 
     2.  System.ServiceModel.Activities.dll
 
-3.  Add a service reference to the workflow service and specify `OrderService` as the namespace.
+3. Add a service reference to the workflow service and specify `OrderService` as the namespace.
 
-4.  In the `Main()` method of the client project add the following code:
+4. In the `Main()` method of the client project add the following code:
 
     ```
     static void Main(string[] args)
@@ -176,17 +176,17 @@ This topic describes how to create a long-running workflow service. Long running
     }
     ```
 
-5.  Build the solution and run the `OrderClient` application. The client will display the following text:
+5. Build the solution and run the `OrderClient` application. The client will display the following text:
 
     ```Output
     Sending start messageWorkflow service is idle...Press [ENTER] to send an add item message to reactivate the workflow service...
     ```
 
-6.  To verify that the workflow service has been persisted, start the SQL Server Management Studio by going to the **Start** menu, Selecting **All Programs**, **Microsoft SQL Server 2008**, **SQL Server Management Studio**.
+6. To verify that the workflow service has been persisted, start the SQL Server Management Studio by going to the **Start** menu, Selecting **All Programs**, **Microsoft SQL Server 2008**, **SQL Server Management Studio**.
 
     1.  In the left hand pane expand, **Databases**, **SQLPersistenceStore**, **Views** and right click **System.Activities.DurableInstancing.Instances** and select **Select Top 1000 Rows**. In the **Results** pane verify you see at least one instance listed. There may be other instances from prior runs if an exception occurred while running. You can delete existing rows by right clicking **System.Activities.DurableInstancing.Instances** and selecting **Edit Top 200 rows**, pressing the **Execute** button, selecting all rows in the results pane and selecting **delete**.  To verify the instance displayed in the database is the instance your application created, verify the instances view is empty prior to running the client. Once the client is running re-run the query (Select Top 1000 Rows) and verify a new instance has been added.
 
-7.  Press enter to send the add item message to the workflow service. The client will display the following text:
+7. Press enter to send the add item message to the workflow service. The client will display the following text:
 
     ```Output
     Sending add item messageService returned: Item added to orderPress any key to continue . . .

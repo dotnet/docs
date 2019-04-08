@@ -43,11 +43,11 @@ This topic discusses implementing and calling asynchronous service operations.
 ### Implementing an Asynchronous Service Operation  
  Asynchronous operations can be implemented by using one of the three following methods:  
   
-1.  The task-based asynchronous pattern  
+1. The task-based asynchronous pattern  
   
-2.  The event-based asynchronous pattern  
+2. The event-based asynchronous pattern  
   
-3.  The IAsyncResult asynchronous pattern  
+3. The IAsyncResult asynchronous pattern  
   
 #### Task-Based Asynchronous Pattern  
  The task-based asynchronous pattern is the preferred way to implement asynchronous operations because it is the easiest and most straight forward. To use this method simply implement your service operation and specify a return type of Task\<T>, where T is the type returned by the logical operation. For example:  

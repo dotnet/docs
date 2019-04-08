@@ -23,7 +23,7 @@ There are two ways to remove an assembly from the global assembly cache (GAC):
   
 ### Removing an assembly with Gacutil.exe  
   
-1.  At the command prompt, type the following command:  
+1. At the command prompt, type the following command:  
   
      **gacutil –u** \<*assembly name*>  
   
@@ -40,7 +40,7 @@ gacutil -u hello
   
 ### Removing an assembly with Windows Installer  
   
-1.  From the **Programs and Features** app in **Control Panel**, select the app that you want to uninstall. If the installation package placed assemblies in the GAC, Windows Installer will remove them if they are not used by another application.  
+1. From the **Programs and Features** app in **Control Panel**, select the app that you want to uninstall. If the installation package placed assemblies in the GAC, Windows Installer will remove them if they are not used by another application.  
   
     > [!NOTE]
     >  Windows Installer maintains a reference count for assemblies installed in the GAC. An assembly is removed from the GAC only when its reference count reaches zero, which indicates that it is not used by any application installed by a Windows Installer package.  

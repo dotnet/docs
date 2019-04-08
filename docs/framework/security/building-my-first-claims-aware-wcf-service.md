@@ -16,11 +16,11 @@ author: "BrucePerlerMS"
   
  ![Diagram showing WIF Basic Claims Aware WCF Service components.](./media/building-my-first-claims-aware-wcf-service/windows-identify-foundation-basic-claims-aware-windows-communication-foundation-service.gif)  
   
-1.  The WCF service client (sometimes called agent) uses WIF to send credentials to the STS and upon successful authentication, the agent is issued a token by the STS.  
+1. The WCF service client (sometimes called agent) uses WIF to send credentials to the STS and upon successful authentication, the agent is issued a token by the STS.  
   
-2.  The agent sends this STS-issued token to the WCF service.  
+2. The agent sends this STS-issued token to the WCF service.  
   
-3.  The claims-aware WCF service is configured to trust the STS and the tokens it issues. The claims-aware WCF service uses WIF to validate the token and to parse it. Developers use the appropriate WIF API and types, for example, **ClaimsPrincipal** for the application’s needs, such as implementing authorization for it.  
+3. The claims-aware WCF service is configured to trust the STS and the tokens it issues. The claims-aware WCF service uses WIF to validate the token and to parse it. Developers use the appropriate WIF API and types, for example, **ClaimsPrincipal** for the application’s needs, such as implementing authorization for it.  
   
  Starting from .NET 4.5, WIF is part of the .NET Framework package. Having the WIF classes directly available in the framework allows a much deeper integration of claims-based identity in .NET, making it easier to use claims. With WIF 4.5, you do not need to install any out-of-band components in order to start developing claims-aware web applications. WIF classes are now spread across various assemblies, the main ones being System.Security.Claims, System.IdentityModel and System.IdentityModel.Services.  
   

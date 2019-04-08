@@ -17,17 +17,17 @@ You can use of the <xref:System.Windows.Forms.HelpProvider> component to attach 
   
 ### To provide Help  
   
-1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.HelpProvider> component to your form.  
+1. From the **Toolbox**, drag a <xref:System.Windows.Forms.HelpProvider> component to your form.  
   
      The component will reside in the tray at the bottom of the Windows Forms Designer.  
   
-2.  In the **Properties** window, set the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property to the .chm, .col, or .htm Help file.  
+2. In the **Properties** window, set the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property to the .chm, .col, or .htm Help file.  
   
-3.  Select another control you have on your form, and in the **Properties** window, set the <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> property.  
+3. Select another control you have on your form, and in the **Properties** window, set the <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> property.  
   
      This is the string passed through the <xref:System.Windows.Forms.HelpProvider> component to your Help file to summon the appropriate Help topic.  
   
-4.  In the **Properties** window, set the <xref:System.Windows.Forms.HelpProvider.SetHelpNavigator%2A> property to a value of the <xref:System.Windows.Forms.HelpNavigator> enumeration.  
+4. In the **Properties** window, set the <xref:System.Windows.Forms.HelpProvider.SetHelpNavigator%2A> property to a value of the <xref:System.Windows.Forms.HelpNavigator> enumeration.  
   
      This determines the way in which the **HelpKeyword** property is passed to the Help system. The following table shows the possible settings and their descriptions.  
   

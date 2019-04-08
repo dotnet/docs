@@ -18,13 +18,13 @@ Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group ot
   
 ### To create a group of controls  
   
-1.  Draw a <xref:System.Windows.Forms.GroupBox> control on a form.  
+1. Draw a <xref:System.Windows.Forms.GroupBox> control on a form.  
   
-2.  Add other controls to the group box, drawing each inside the group box.  
+2. Add other controls to the group box, drawing each inside the group box.  
   
      If you have existing controls that you want to enclose in a group box, you can select all the controls, cut them to the Clipboard, select the <xref:System.Windows.Forms.GroupBox> control, and then paste them into the group box. You can also drag them into the group box.  
   
-3.  Set the <xref:System.Windows.Forms.GroupBox.Text%2A> property of the group box to an appropriate caption.  
+3. Set the <xref:System.Windows.Forms.GroupBox.Text%2A> property of the group box to an appropriate caption.  
   
 ## See also
 

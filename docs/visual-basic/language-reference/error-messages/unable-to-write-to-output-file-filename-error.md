@@ -25,31 +25,31 @@ There was a problem creating the file.
   
 ## To correct this error  
   
-1.  Compile the program again to see if the error recurs.  
+1. Compile the program again to see if the error recurs.  
   
-2.  If the error continues, save your work and restart Visual Studio.  
+2. If the error continues, save your work and restart Visual Studio.  
   
-3.  If the error continues, restart the computer.  
+3. If the error continues, restart the computer.  
   
-4.  If the error recurs, reinstall Visual Basic.  
+4. If the error recurs, reinstall Visual Basic.  
   
-5.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
+5. If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ### To check file attributes in File Explorer  
   
-1.  Open the folder you are interested in.  
+1. Open the folder you are interested in.  
   
-2.  Click the **Views** icon and choose **Details**.  
+2. Click the **Views** icon and choose **Details**.  
   
-3.  Right-click the column header, and choose **Attributes** from the drop-down list.  
+3. Right-click the column header, and choose **Attributes** from the drop-down list.  
   
 ### To change the attributes of a file or folder  
   
-1.  In **File Explorer**, right-click the file or folder and choose **Properties**.  
+1. In **File Explorer**, right-click the file or folder and choose **Properties**.  
   
-2.  In the **Attributes** section of the **General** tab, clear the **Read-only** box.  
+2. In the **Attributes** section of the **General** tab, clear the **Read-only** box.  
   
-3.  Press **OK**.  
+3. Press **OK**.  
   
 ## See also
 

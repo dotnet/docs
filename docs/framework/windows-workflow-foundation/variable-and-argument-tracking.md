@@ -34,11 +34,11 @@ When tracking the execution of a workflow, it is often useful to extract data. T
 ## Protecting Information Stored Within Variables and Arguments  
  A tracked variable or argument is by default made visible by the WF runtime. A workflow developer can protect it from being accessed by taking the following steps:  
   
-1.  Encrypt the value of a variable.  
+1. Encrypt the value of a variable.  
   
-2.  Control the authoring of a tracking profile to prevent the extraction of a variable or argument.  
+2. Control the authoring of a tracking profile to prevent the extraction of a variable or argument.  
   
-3.  For custom tracking participants ensure that the WF code does not disclose sensitive information that is stored in variables or arguments.  
+3. For custom tracking participants ensure that the WF code does not disclose sensitive information that is stored in variables or arguments.  
   
 ## See also
 

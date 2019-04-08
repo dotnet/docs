@@ -17,9 +17,9 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ### To set a location-based cache policy for an application  
   
-1.  Create a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
+1. Create a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
   
-2.  Set the policy object as the default for the application domain.  
+2. Set the policy object as the default for the application domain.  
   
 ### To set a policy that takes requested resources from a cache  
   

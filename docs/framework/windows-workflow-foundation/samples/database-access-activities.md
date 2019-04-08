@@ -293,26 +293,26 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 
 ##### To run Setup.cmd
 
-1.  Open a command prompt.
+1. Open a command prompt.
 
-2.  Go to the DbActivities sample folder.
+2. Go to the DbActivities sample folder.
 
-3.  Type "setup.cmd" and press ENTER.
+3. Type "setup.cmd" and press ENTER.
 
     > [!NOTE]
     >  Setup.cmd attempts to install the sample in your local machine SqlExpress instance. If you want to install it in other SQL server instance, edit Setup.cmd with the new instance name.
 
 ##### To uninstall the sample database
 
-1.  Run Cleanup.cmd from the sample folder in a command prompt.
+1. Run Cleanup.cmd from the sample folder in a command prompt.
 
 ##### To run the sample
 
-1.  Open the solution in Visual Studio 2010
+1. Open the solution in Visual Studio 2010
 
-2.  To compile the solution, press CTRL+SHIFT+B.
+2. To compile the solution, press CTRL+SHIFT+B.
 
-3.  To run the sample without debugging, press CTRL+F5.
+3. To run the sample without debugging, press CTRL+F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

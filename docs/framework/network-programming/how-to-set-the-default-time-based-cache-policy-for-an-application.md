@@ -15,9 +15,9 @@ The default time-based cache policy allows an application to have its cache beha
   
 ### To set the default automatic policy for an application  
   
-1.  Create a default time-based policy object.  
+1. Create a default time-based policy object.  
   
-2.  Set the policy object as the default for the application domain.  
+2. Set the policy object as the default for the application domain.  
   
 ## Example  
  The two examples in this section produce identical policies.  

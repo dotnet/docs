@@ -30,18 +30,18 @@ fuslogvw
   
 ### To change the log location view  
   
-1.  Select the **Default** option button to view bind failures for all application types. By default, log entries are stored in per-user directories on disk in the wininet cache.  
+1. Select the **Default** option button to view bind failures for all application types. By default, log entries are stored in per-user directories on disk in the wininet cache.  
   
-2.  Select the **Custom** option button to view bind failures in a custom directory that you specify. You must specify the custom location where you want the runtime to store the logs by setting the custom log location in the **Log Settings** dialog to a valid directory name. This directory should be clean, and only contain files that the runtime generates. If it contains an executable that generates a failure to be logged, the failure will not be logged because the tool tries to create a directory with the same name as the executable. In addition, an attempt to run an executable from the log location will fail.  
+2. Select the **Custom** option button to view bind failures in a custom directory that you specify. You must specify the custom location where you want the runtime to store the logs by setting the custom log location in the **Log Settings** dialog to a valid directory name. This directory should be clean, and only contain files that the runtime generates. If it contains an executable that generates a failure to be logged, the failure will not be logged because the tool tries to create a directory with the same name as the executable. In addition, an attempt to run an executable from the log location will fail.  
   
     > [!NOTE]
     >  The default bind location is preferable to the custom bind location. The runtime stores the default bind location in the wininet cache, and therefore automatically cleans it out. If you specify a custom bind location, you are responsible for cleaning it out.  
   
 ### To view details about a specific failure  
   
-1.  Select the application name of the desired entry in the viewer.  
+1. Select the application name of the desired entry in the viewer.  
   
-2.  Click the **View Log** button. Alternately, you can double-click the selected entry.  
+2. Click the **View Log** button. Alternately, you can double-click the selected entry.  
   
      The tool displays the following details about the selected bind failure:  
   
@@ -93,9 +93,9 @@ LOG: All probing URLs attempted and failed.
   
 ### To delete a single entry from the log  
   
-1.  Select an entry in the viewer.  
+1. Select an entry in the viewer.  
   
-2.  Click the **Delete Entry** button.  
+2. Click the **Delete Entry** button.  
   
 ### To delete all entries from the log  
   
@@ -204,9 +204,9 @@ Discarding native image.
   
 #### To enable a custom log path  
   
-1.  Select the **Enable custom log path** option button.  
+1. Select the **Enable custom log path** option button.  
   
-2.  Enter the path into the **Custom log path** text box.  
+2. Enter the path into the **Custom log path** text box.  
   
 > [!NOTE]
 >  The [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) uses the Internet Explorer (IE) cache to store its binding log. Due to occasional corruption in the IE cache, the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) can sometimes stop showing new binding logs in the viewing window. As a result of this corruption, the .NET binding infrastructure (fusion) cannot write to or read from the binding log. (This issue is not encountered if you use a custom log path.)  To fix the corruption and allow fusion to show binding logs again, clear the IE cache by deleting temporary internet files from within the IE Internet Options dialog.  
@@ -215,9 +215,9 @@ Discarding native image.
   
 #### To enable logging for apps running in the Windows app container  
   
-1.  Enable a custom log path, as described in the previous procedure. By default, apps that are running in the Windows app container have limited access to the hard disk. The directory you specify will have read/write access for all apps in the app container.  
+1. Enable a custom log path, as described in the previous procedure. By default, apps that are running in the Windows app container have limited access to the hard disk. The directory you specify will have read/write access for all apps in the app container.  
   
-2.  Select the **Enable immersive logging** check box.  
+2. Select the **Enable immersive logging** check box.  
   
     > [!NOTE]
     >  This box is enabled only on Windows 8 or later.  

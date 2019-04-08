@@ -44,13 +44,13 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
   
  To enable support for IRI, the following two changes are required:  
   
-1.  Add the following line to the machine.config file under the .NET Framework 2.0 directory  
+1. Add the following line to the machine.config file under the .NET Framework 2.0 directory  
   
     ```xml  
     <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
     ```  
   
-2.  Specify whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.  
+2. Specify whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.  
   
  Enabling IRI parsing (iriParsing enabled = `true`) will do normalization and character checking according to the latest IRI rules in RFC 3987. The default value is `false` and will do normalization and character checking according to RFC 2396 and RFC 3986 (for IPv6 literals).  
   

@@ -127,11 +127,11 @@ context.Track(customRecord);
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
+1. Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press CTRL+F5.
+3. To run the solution, press CTRL+F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

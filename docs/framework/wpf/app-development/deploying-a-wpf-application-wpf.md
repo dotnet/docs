@@ -96,9 +96,9 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be deployed to clients using any of the deployment techniques. However, [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] is recommended since it provides the following capabilities:  
   
-1.  Automatic updates when a new version is published.  
+1. Automatic updates when a new version is published.  
   
-2.  Elevation privileges for the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] running with full trust.  
+2. Elevation privileges for the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] running with full trust.  
   
  By default, ClickOnce publishes application files with the .deploy extension. This can be problematic, but can be disabled. For more information, see [Server and Client Configuration Issues in ClickOnce Deployments](/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
   

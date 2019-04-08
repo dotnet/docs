@@ -34,11 +34,11 @@ OData Actions provide a way to implement a behavior that acts upon a resource re
 ### IDataServiceInvokable  
  This interface provides a way to execute a WCF Data Service Action. When implementing IDataServiceInvokable you are responsible for 3 things:  
   
-1.  Capturing and potentially marshaling the parameters  
+1. Capturing and potentially marshaling the parameters  
   
-2.  Dispatching the parameters to the code that actually implements the Action when Invoke() is called  
+2. Dispatching the parameters to the code that actually implements the Action when Invoke() is called  
   
-3.  Storing any results from Invoke() so they can be retrieved using GetResult()  
+3. Storing any results from Invoke() so they can be retrieved using GetResult()  
   
  The parameters may be passed as tokens. This is because it is possible to write a Data Service Provider that works with tokens that represent resources, if this is the case you may need to convert (marshal) these tokens into actual resources before dispatching to the actual action. After the parameter has been marshalled, it must be in an editable state so that any changes to the resource that occur when the action is invoked will be saved and written to disk.  
   

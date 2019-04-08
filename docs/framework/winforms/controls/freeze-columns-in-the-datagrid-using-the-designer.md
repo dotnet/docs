@@ -20,11 +20,11 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
   
 ### To freeze a column using the designer  
   
-1.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.  
+1. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.  
   
-2.  Select a column from the **Selected Columns** list.  
+2. Select a column from the **Selected Columns** list.  
   
-3.  In the **Column Properties** grid, set the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property to `true`.  
+3. In the **Column Properties** grid, set the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property to `true`.  
   
     > [!NOTE]
     >  You can also freeze a column when adding it by selecting the **Frozen** box in the **Add Column** dialog box.  

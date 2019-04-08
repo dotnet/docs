@@ -30,11 +30,11 @@ This option specifies the class that contains the entry point to the program, if
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Modify the **Startup object** property.  
+3. Modify the **Startup object** property.  
   
      To set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.StartupObject%2A>.  
   

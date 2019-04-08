@@ -33,25 +33,25 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ## Dependency Property Setting Precedence List  
  The following is the definitive order that the property system uses when assigning the run-time values of dependency properties. Highest precedence is listed first. This list expands on some of the generalizations made in the [Dependency Properties Overview](dependency-properties-overview.md).  
   
-1.  **Property system coercion.** For details on coercion, see [Coercion, Animation, and Base Value](#animations) later in this topic.  
+1. **Property system coercion.** For details on coercion, see [Coercion, Animation, and Base Value](#animations) later in this topic.  
   
-2.  **Active animations, or animations with a Hold behavior.** In order to have any practical effect, an animation of a property must be able to have precedence over the base (unanimated) value, even if that value was set locally. For details, see [Coercion, Animation, and Base Value](#animations) later in this topic.  
+2. **Active animations, or animations with a Hold behavior.** In order to have any practical effect, an animation of a property must be able to have precedence over the base (unanimated) value, even if that value was set locally. For details, see [Coercion, Animation, and Base Value](#animations) later in this topic.  
   
-3.  **Local value.** A local value might be set through the convenience of the "wrapper" property, which also equates to setting as an attribute or property element in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] using a property of a specific instance. If you set a local value by using a binding or a resource, these each act in the precedence as if a direct value was set.  
+3. **Local value.** A local value might be set through the convenience of the "wrapper" property, which also equates to setting as an attribute or property element in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] using a property of a specific instance. If you set a local value by using a binding or a resource, these each act in the precedence as if a direct value was set.  
   
-4.  **TemplatedParent template properties.** An element has a <xref:System.Windows.FrameworkElement.TemplatedParent%2A> if it was created as part of a template (a <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>). For details on when this applies, see [TemplatedParent](#templatedparent) later in this topic. Within the template, the following precedence applies:  
+4. **TemplatedParent template properties.** An element has a <xref:System.Windows.FrameworkElement.TemplatedParent%2A> if it was created as part of a template (a <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>). For details on when this applies, see [TemplatedParent](#templatedparent) later in this topic. Within the template, the following precedence applies:  
   
     1.  Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
     2.  Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
-5.  **Implicit style.** Applies only to the `Style` property. The `Style` property is filled by any style resource with a key that matches the type of that element. That style resource must exist either in the page or the application; lookup for an implicit style resource does not proceed into the themes.  
+5. **Implicit style.** Applies only to the `Style` property. The `Style` property is filled by any style resource with a key that matches the type of that element. That style resource must exist either in the page or the application; lookup for an implicit style resource does not proceed into the themes.  
   
-6.  **Style triggers.** The triggers within styles from page or application (these styles might be either explicit or implicit styles, but not from the default styles, which have lower precedence).  
+6. **Style triggers.** The triggers within styles from page or application (these styles might be either explicit or implicit styles, but not from the default styles, which have lower precedence).  
   
-7.  **Template triggers.** Any trigger from a template within a style, or a directly applied template.  
+7. **Template triggers.** Any trigger from a template within a style, or a directly applied template.  
   
-8.  **Style setters.** Values from a <xref:System.Windows.Setter> within styles from page or application.  
+8. **Style setters.** Values from a <xref:System.Windows.Setter> within styles from page or application.  
   
 9. **Default (theme) style.** For details on when this applies, and how theme styles relate to the templates within theme styles, see [Default (Theme) Styles](#themestyles) later in this topic. Within a default style, the following order of precedence applies:  
   

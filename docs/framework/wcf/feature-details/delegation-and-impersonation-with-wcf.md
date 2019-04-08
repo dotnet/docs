@@ -185,13 +185,13 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 ### How to Configure an Application to Use Constrained Delegation  
  Before you can use constrained delegation, the sender, receiver, and the domain controller must be configured to do so. The following procedure lists the steps that enable constrained delegation. For details about the differences between delegation and constrained delegation, see the portion of [Windows Server 2003 Kerberos Extensions](https://go.microsoft.com/fwlink/?LinkId=100194) that discusses constrained discussion.  
   
-1.  On the domain controller, clear the **Account is sensitive and cannot be delegated** check box for the account under which the client application is running.  
+1. On the domain controller, clear the **Account is sensitive and cannot be delegated** check box for the account under which the client application is running.  
   
-2.  On the domain controller, select the **Account is trusted for delegation** check box for the account under which the client application is running.  
+2. On the domain controller, select the **Account is trusted for delegation** check box for the account under which the client application is running.  
   
-3.  On the domain controller, configure the middle tier computer so that it is trusted for delegation, by clicking the **Trust computer for delegation** option.  
+3. On the domain controller, configure the middle tier computer so that it is trusted for delegation, by clicking the **Trust computer for delegation** option.  
   
-4.  On the domain controller, configure the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option.  
+4. On the domain controller, configure the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option.  
   
  For more detailed instructions about configuring constrained delegation, see the following topics on MSDN:  
   

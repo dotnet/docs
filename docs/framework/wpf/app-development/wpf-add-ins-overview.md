@@ -67,7 +67,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 ## WPF Add-Ins  
  WPF, in conjunction with the .NET Framework add-in model, allows you to address a wide variety of scenarios that require host applications to display user interfaces from add-ins. In particular, these scenarios are addressed by WPF with the following two programming models:  
   
-1.  **The add-in returns a UI**. An add-in returns a UI to the host application via a method call, as defined by the contract. This scenario is used in the following cases:  
+1. **The add-in returns a UI**. An add-in returns a UI to the host application via a method call, as defined by the contract. This scenario is used in the following cases:  
   
     -   The appearance of a UI that is returned by an add-in is dependent on either data or conditions that exist only at run time, such as dynamically generated reports.  
   
@@ -75,7 +75,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
     -   The add-in primarily performs a service for the host application, and reports status to the host application with a UI.  
   
-2.  **The add-in is a UI**. An add-in is a UI, as defined by the contract. This scenario is used in the following cases:  
+2. **The add-in is a UI**. An add-in is a UI, as defined by the contract. This scenario is used in the following cases:  
   
     -   An add-in doesn't provide services other than being displayed, such as an advertisement.  
   
@@ -96,13 +96,13 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
  The WPF UI types are not remotable. To solve the problem, WPF extends the .NET Framework add-in model to enable WPF UI created by add-ins to be displayed from host applications. This support is provided by WPF by two types: the <xref:System.AddIn.Contract.INativeHandleContract> interface and two static methods implemented by the <xref:System.AddIn.Pipeline.FrameworkElementAdapters> class: <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> and <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>. At a high level, these types and methods are used in the following manner:  
   
-1.  WPF requires that user interfaces provided by add-ins are classes that derive directly or indirectly from <xref:System.Windows.FrameworkElement>, such as shapes, controls, user controls, layout panels, and pages.  
+1. WPF requires that user interfaces provided by add-ins are classes that derive directly or indirectly from <xref:System.Windows.FrameworkElement>, such as shapes, controls, user controls, layout panels, and pages.  
   
-2.  Wherever the contract declares that a UI will be passed between the add-in and the host application, it must be declared as an <xref:System.AddIn.Contract.INativeHandleContract> (not a <xref:System.Windows.FrameworkElement>); <xref:System.AddIn.Contract.INativeHandleContract> is a remotable representation of the add-in UI that can be passed across isolation boundaries.  
+2. Wherever the contract declares that a UI will be passed between the add-in and the host application, it must be declared as an <xref:System.AddIn.Contract.INativeHandleContract> (not a <xref:System.Windows.FrameworkElement>); <xref:System.AddIn.Contract.INativeHandleContract> is a remotable representation of the add-in UI that can be passed across isolation boundaries.  
   
-3.  Before being passed from the add-in's application domain, a <xref:System.Windows.FrameworkElement> is packaged as an <xref:System.AddIn.Contract.INativeHandleContract> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>.  
+3. Before being passed from the add-in's application domain, a <xref:System.Windows.FrameworkElement> is packaged as an <xref:System.AddIn.Contract.INativeHandleContract> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>.  
   
-4.  After being passed to the host application's application domain, the <xref:System.AddIn.Contract.INativeHandleContract> must be repackaged as a <xref:System.Windows.FrameworkElement> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A>.  
+4. After being passed to the host application's application domain, the <xref:System.AddIn.Contract.INativeHandleContract> must be repackaged as a <xref:System.Windows.FrameworkElement> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A>.  
   
  How <xref:System.AddIn.Contract.INativeHandleContract>, <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A>, and <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A> are used depends on the specific scenario. The following sections provide details for each programming model.  
   
@@ -110,17 +110,17 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 ## Add-In Returns a User Interface  
  For an add-in to return a UI to a host application, the following are required:  
   
-1.  The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.  
+1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.  
   
-2.  The contract must implement <xref:System.AddIn.Contract.IContract> and, to return a UI, the contract must declare a method with a return value of type <xref:System.AddIn.Contract.INativeHandleContract>.  
+2. The contract must implement <xref:System.AddIn.Contract.IContract> and, to return a UI, the contract must declare a method with a return value of type <xref:System.AddIn.Contract.INativeHandleContract>.  
   
-3.  The UI that is passed between the add-in and the host application must directly or indirectly derive from <xref:System.Windows.FrameworkElement>.  
+3. The UI that is passed between the add-in and the host application must directly or indirectly derive from <xref:System.Windows.FrameworkElement>.  
   
-4.  The UI that is returned by the add-in must be converted from a <xref:System.Windows.FrameworkElement> to an <xref:System.AddIn.Contract.INativeHandleContract> before crossing the isolation boundary.  
+4. The UI that is returned by the add-in must be converted from a <xref:System.Windows.FrameworkElement> to an <xref:System.AddIn.Contract.INativeHandleContract> before crossing the isolation boundary.  
   
-5.  The UI that is returned must be converted from an <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement> after crossing the isolation boundary.  
+5. The UI that is returned must be converted from an <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement> after crossing the isolation boundary.  
   
-6.  The host application displays the returned <xref:System.Windows.FrameworkElement>.  
+6. The host application displays the returned <xref:System.Windows.FrameworkElement>.  
   
  For an example that demonstrates how to implement an add-in that returns a UI, see [Create an Add-In That Returns a UI](how-to-create-an-add-in-that-returns-a-ui.md).  
   
@@ -128,17 +128,17 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 ## Add-In Is a User Interface  
  When an add-in is a UI, the following are required:  
   
-1.  The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.  
+1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.  
   
-2.  The contract interface for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>.  
+2. The contract interface for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>.  
   
-3.  The add-in that is passed to the host application must directly or indirectly derive from <xref:System.Windows.FrameworkElement>.  
+3. The add-in that is passed to the host application must directly or indirectly derive from <xref:System.Windows.FrameworkElement>.  
   
-4.  The add-in must be converted from a <xref:System.Windows.FrameworkElement> to an <xref:System.AddIn.Contract.INativeHandleContract> before crossing the isolation boundary.  
+4. The add-in must be converted from a <xref:System.Windows.FrameworkElement> to an <xref:System.AddIn.Contract.INativeHandleContract> before crossing the isolation boundary.  
   
-5.  The add-in must be converted from an <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement> after crossing the isolation boundary.  
+5. The add-in must be converted from an <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement> after crossing the isolation boundary.  
   
-6.  The host application displays the returned <xref:System.Windows.FrameworkElement>.  
+6. The host application displays the returned <xref:System.Windows.FrameworkElement>.  
   
  For an example that demonstrates how to implement an add-in that is a UI, see [Create an Add-In That Is a UI](how-to-create-an-add-in-that-is-a-ui.md).  
   
@@ -175,15 +175,15 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
   
  The next step is to specify the pipeline assemblies and add-in assembly as the [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] content files in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] by doing the following:  
   
-1.  Including the pipeline and add-in assembly in the project by right-clicking each pipeline folder in Solution Explorer and choosing **Include In Project**.  
+1. Including the pipeline and add-in assembly in the project by right-clicking each pipeline folder in Solution Explorer and choosing **Include In Project**.  
   
-2.  Setting the **Build Action** of each pipeline assembly and add-in assembly to **Content** from the **Properties** window.  
+2. Setting the **Build Action** of each pipeline assembly and add-in assembly to **Content** from the **Properties** window.  
   
  The final step is to configure the application manifest to include the pipeline assembly files and add-in assembly file for download. The files should be located in folders at the root of the folder in the [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] cache that the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application occupies. The configuration can be achieved in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] by doing the following:  
   
-1.  Right-click the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project, click **Properties**, click **Publish**, and then click the **Application Files** button.  
+1. Right-click the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project, click **Properties**, click **Publish**, and then click the **Application Files** button.  
   
-2.  In the **Application Files** dialog, set the **Publish Status** of each pipeline and add-in DLL to **Include (Auto)**, and set the **Download Group** for each pipeline and add-in DLL to **(Required)**.  
+2. In the **Application Files** dialog, set the **Publish Status** of each pipeline and add-in DLL to **Include (Auto)**, and set the **Download Group** for each pipeline and add-in DLL to **(Required)**.  
   
 ### Using the Pipeline and Add-In from the Application Base  
  When the pipeline and add-in are configured for [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] deployment, they are downloaded to the same [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] cache folder as the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]. To use the pipeline and add-in from the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)], the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] code must get them from the application base. The various types and members of the .NET Framework add-in model for using pipelines and add-ins provide special support for this scenario. Firstly, the path is identified by the <xref:System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase> enumeration value. You use this value with overloads of the pertinent add-in members for using pipelines that include the following:  

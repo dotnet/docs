@@ -16,9 +16,9 @@ Polymorphism is often referred to as the third pillar of object-oriented program
   
  Virtual methods enable you to work with groups of related objects in a uniform way. For example, suppose you have a drawing application that enables a user to create various kinds of shapes on a drawing surface. You do not know at compile time which specific types of shapes the user will create. However, the application has to keep track of all the various types of shapes that are created, and it has to update them in response to user mouse actions. You can use polymorphism to solve this problem in two basic steps:  
   
-1.  Create a class hierarchy in which each specific shape class derives from a common base class.  
+1. Create a class hierarchy in which each specific shape class derives from a common base class.  
   
-2.  Use a virtual method to invoke the appropriate method on any derived class through a single call to the base class method.  
+2. Use a virtual method to invoke the appropriate method on any derived class through a single call to the base class method.  
   
  First, create a base class called `Shape`, and derived classes such as `Rectangle`, `Circle`, and `Triangle`. Give the `Shape` class a virtual method called `Draw`, and override it in each derived class to draw the particular shape that the class represents. Create a `List<Shape>` object and add a Circle, Triangle and Rectangle to it. To update the drawing surface, use a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) loop to iterate through the list and call the `Draw` method on each `Shape` object in the list. Even though each object in the list has a declared type of `Shape`, it is the run-time type (the overridden version of the method in each derived class) that will be invoked.  
   

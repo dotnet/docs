@@ -25,15 +25,15 @@ The following C# code example illustrates how to use platform invoke services to
   
 ### To compile the code  
   
-1.  Create a new C# Windows Application project in Visual Studio and name it **WinSound**.  
+1. Create a new C# Windows Application project in Visual Studio and name it **WinSound**.  
   
-2.  Copy the code above, and paste it over the contents of the `Form1.cs` file.  
+2. Copy the code above, and paste it over the contents of the `Form1.cs` file.  
   
-3.  Copy the following code, and paste it in the `Form1.Designer.cs` file, in the `InitializeComponent()` method, after any existing code.  
+3. Copy the following code, and paste it in the `Form1.Designer.cs` file, in the `InitializeComponent()` method, after any existing code.  
   
      [!code-csharp[csProgGuideInterop#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#4)]  
   
-4.  Compile and run the code.  
+4. Compile and run the code.  
   
 ## .NET Framework Security  
  For more information, see [Security in .NET](../../../standard/security/index.md).  

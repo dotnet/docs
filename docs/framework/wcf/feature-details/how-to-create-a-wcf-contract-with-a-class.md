@@ -16,13 +16,13 @@ The preferred way of creating a Windows Communication Foundation (WCF) contract 
   
 ### Creating a Windows Communication Foundation contract with a class  
   
-1.  Create a new class using Visual Basic, C#, or any other common language runtime language.  
+1. Create a new class using Visual Basic, C#, or any other common language runtime language.  
   
-2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the class.  
+2. Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the class.  
   
-3.  Create methods in the class.  
+3. Create methods in the class.  
   
-4.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
+4. Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
   
 ## Example  
  The following code example shows a class that defines a service contract.  

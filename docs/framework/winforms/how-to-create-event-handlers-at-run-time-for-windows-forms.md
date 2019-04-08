@@ -18,9 +18,9 @@ In addition to creating events using the Windows Forms Designer, you can also cr
   
 ### To create an event handler at run time  
   
-1.  Open the form in the Code Editor that you want to add an event handler to.  
+1. Open the form in the Code Editor that you want to add an event handler to.  
   
-2.  Add a method to your form with the method signature for the event that you want to handle.  
+2. Add a method to your form with the method signature for the event that you want to handle.  
   
      For example, if you were handling the <xref:System.Windows.Forms.Control.Click> event of a <xref:System.Windows.Forms.Button> control, you would create a method such as the following:  
   
@@ -46,11 +46,11 @@ In addition to creating events using the Windows Forms Designer, you can also cr
        }  
     ```  
   
-3.  Add code to the event handler as appropriate to your application.  
+3. Add code to the event handler as appropriate to your application.  
   
-4.  Determine which form or control you want to create an event handler for.  
+4. Determine which form or control you want to create an event handler for.  
   
-5.  In a method within your form's class, add code that specifies the event handler to handle the event. For example, the following code specifies the event handler `button1_Click` handles the <xref:System.Windows.Forms.Control.Click> event of a <xref:System.Windows.Forms.Button> control:  
+5. In a method within your form's class, add code that specifies the event handler to handle the event. For example, the following code specifies the event handler `button1_Click` handles the <xref:System.Windows.Forms.Control.Click> event of a <xref:System.Windows.Forms.Button> control:  
   
     ```vb  
     AddHandler Button1.Click, AddressOf Button1_Click  

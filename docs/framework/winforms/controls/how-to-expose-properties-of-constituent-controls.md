@@ -45,11 +45,11 @@ public Color ButtonColor
   
 ### To expose a property of a constituent control  
   
-1.  Create a public property for your user control.  
+1. Create a public property for your user control.  
   
-2.  In the `get` section of the property, write code that retrieves the value of the property you want to expose.  
+2. In the `get` section of the property, write code that retrieves the value of the property you want to expose.  
   
-3.  In the `set` section of the property, write code that passes the value of the property to the exposed property of the constituent control.  
+3. In the `set` section of the property, write code that passes the value of the property to the exposed property of the constituent control.  
   
 ## See also
 

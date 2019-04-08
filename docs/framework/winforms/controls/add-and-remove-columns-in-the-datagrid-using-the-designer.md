@@ -18,22 +18,22 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control must contain 
   
 ### To add a column using the designer  
   
-1.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Add Column**.  
+1. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Add Column**.  
   
-2.  In the **Add Column** dialog box, choose the **Databound Column** option and select a column from the data source, or choose the **Unbound Column** option and define the column using the fields provided.  
+2. In the **Add Column** dialog box, choose the **Databound Column** option and select a column from the data source, or choose the **Unbound Column** option and define the column using the fields provided.  
   
-3.  Click the **Add** button to add the column, causing it to appear in the designer if the existing columns do not already fill the control display area.  
+3. Click the **Add** button to add the column, causing it to appear in the designer if the existing columns do not already fill the control display area.  
   
     > [!NOTE]
     >  You can modify column properties in the **Edit Columns** dialog box, which you can access from the control's smart tag.  
   
 ### To remove a column using the designer  
   
-1.  Choose **Edit Columns** from the control's smart tag.  
+1. Choose **Edit Columns** from the control's smart tag.  
   
-2.  Select a column from the **Selected Columns** list.  
+2. Select a column from the **Selected Columns** list.  
   
-3.  Click the **Remove** button to delete the column, causing it to disappear from the designer.  
+3. Click the **Remove** button to delete the column, causing it to disappear from the designer.  
   
 ## See also
 

@@ -16,11 +16,11 @@ This error has the following possible causes:
   
 ## To correct this error  
   
-1.  Make the original array dynamic rather than fixed by declaring it with `ReDim` (if the array is declared within a procedure), or by declaring it without specifying the number of elements (if the array is declared at the module level.  
+1. Make the original array dynamic rather than fixed by declaring it with `ReDim` (if the array is declared within a procedure), or by declaring it without specifying the number of elements (if the array is declared at the module level.  
   
-2.  Determine whether you really need to pass the element, since it is visible within all procedures in the module.  
+2. Determine whether you really need to pass the element, since it is visible within all procedures in the module.  
   
-3.  Determine what is locking the `Variant` and remedy it.  
+3. Determine what is locking the `Variant` and remedy it.  
   
 ## See also
 

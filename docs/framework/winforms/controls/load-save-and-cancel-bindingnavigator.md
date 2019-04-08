@@ -18,21 +18,21 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
   
 ### To add load, save, and cancel buttons to the BindingNavigator component  
   
-1.  Add a <xref:System.Windows.Forms.TextBox> control to your form.  
+1. Add a <xref:System.Windows.Forms.TextBox> control to your form.  
   
-2.  Bind it to a <xref:System.Windows.Forms.BindingSource>, which is bound to a data source. For this example, the <xref:System.Windows.Forms.BindingSource> is bound to a database.  
+2. Bind it to a <xref:System.Windows.Forms.BindingSource>, which is bound to a data source. For this example, the <xref:System.Windows.Forms.BindingSource> is bound to a database.  
   
-3.  After the dataset and table adapter are generated, drag a <xref:System.Windows.Forms.BindingNavigator> control to the form.  
+3. After the dataset and table adapter are generated, drag a <xref:System.Windows.Forms.BindingNavigator> control to the form.  
   
-4.  Set the <xref:System.Windows.Forms.BindingNavigator> control's <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to the <xref:System.Windows.Forms.BindingSource> on the form that is bound to the controls.  
+4. Set the <xref:System.Windows.Forms.BindingNavigator> control's <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to the <xref:System.Windows.Forms.BindingSource> on the form that is bound to the controls.  
   
-5.  Select the <xref:System.Windows.Forms.BindingNavigator> control.  
+5. Select the <xref:System.Windows.Forms.BindingNavigator> control.  
   
-6.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.  
+6. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.  
   
      The **Items Collection Editor** appears.  
   
-7.  In the **Items Collection Editor**, complete the following:  
+7. In the **Items Collection Editor**, complete the following:  
   
     1.  Add a <xref:System.Windows.Forms.ToolStripSeparator> and three <xref:System.Windows.Forms.ToolStripButton> items by selecting the appropriate type of <xref:System.Windows.Forms.ToolStripItem> and clicking the **Add** button.  
   
@@ -44,7 +44,7 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
   
     5.  Click **OK** to close the dialog box.The buttons are added to the <xref:System.Windows.Forms.ToolStrip>.  
   
-8.  Right-click the form and choose **View Code**.  
+8. Right-click the form and choose **View Code**.  
   
 9. In the Code Editor, find the line of code that loads data into the table adapter. This code was generated when you set up the data binding in step 2. The code should be similar to the following: `TableAdapterName.Fill(DataSetName.TableName)`. It will most likely be in the form's <xref:System.Windows.Forms.Form.Load> event.  
   

@@ -17,7 +17,7 @@ Often, users want to choose a printer other than the default printer to print to
   
 ### To choose a printer and then print a file  
   
-1.  Select the printer to be used using the <xref:System.Windows.Forms.PrintDialog> component.  
+1. Select the printer to be used using the <xref:System.Windows.Forms.PrintDialog> component.  
   
      In the following code example, there are two events being handled. In the first, a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event, the <xref:System.Windows.Forms.PrintDialog> class is instantiated and the printer selected by the user is captured in the <xref:System.Windows.Forms.DialogResult> property.  
   

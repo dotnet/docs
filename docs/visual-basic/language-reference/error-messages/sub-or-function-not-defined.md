@@ -18,11 +18,11 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 ## To correct this error  
   
-1.  Make sure that the procedure name is spelled correctly.  
+1. Make sure that the procedure name is spelled correctly.  
   
-2.  Find the name of the project containing the procedure you want to call in the **References** dialog box. If it does not appear, click the **Browse** button to search for it. Select the check box to the left of the project name, and then click **OK**.  
+2. Find the name of the project containing the procedure you want to call in the **References** dialog box. If it does not appear, click the **Browse** button to search for it. Select the check box to the left of the project name, and then click **OK**.  
   
-3.  Check the name of the routine.  
+3. Check the name of the routine.  
   
 ## See also
 

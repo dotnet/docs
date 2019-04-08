@@ -21,26 +21,26 @@ ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
   
 ### To create a master-details list in the designer  
   
-1.  Add two <xref:System.Windows.Forms.DataGrid> controls to the form. For more information, see [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).  
+1. Add two <xref:System.Windows.Forms.DataGrid> controls to the form. For more information, see [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md). In Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).  
   
     > [!NOTE]
     >  The following steps are not applicable to Visual Studio 2005, which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) and [How to: Display Related Data in a Windows Forms Application](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120)).  
   
-2.  Drag two or more tables from **Server Explorer** to the form.  
+2. Drag two or more tables from **Server Explorer** to the form.  
   
-3.  From the **Data** menu, select **Generate DataSet**.  
+3. From the **Data** menu, select **Generate DataSet**.  
   
-4.  Set the relationships between the tables using the XML Designer. For details, see "How to: Create One-to-Many Relationships in XML Schemas and Datasets" on MSDN.  
+4. Set the relationships between the tables using the XML Designer. For details, see "How to: Create One-to-Many Relationships in XML Schemas and Datasets" on MSDN.  
   
-5.  Save the relationships by selecting **Save All** from the **File** menu.  
+5. Save the relationships by selecting **Save All** from the **File** menu.  
   
-6.  Configure the <xref:System.Windows.Forms.DataGrid> control that you want to designate the master grid, as follows:  
+6. Configure the <xref:System.Windows.Forms.DataGrid> control that you want to designate the master grid, as follows:  
   
     1.  Select the <xref:System.Data.DataSet> from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property.  
   
     2.  Select the master table (for example, "Customers") from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property.  
   
-7.  Configure the <xref:System.Windows.Forms.DataGrid> control that you want to designate the details grid, as follows:  
+7. Configure the <xref:System.Windows.Forms.DataGrid> control that you want to designate the details grid, as follows:  
   
     1.  Select the <xref:System.Data.DataSet> from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property.  
   

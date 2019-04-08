@@ -26,11 +26,11 @@ You can delete rows in a database by removing the corresponding [!INCLUDE[vbtecd
   
 ### To delete a row in the database  
   
-1.  Query the database for the row to be deleted.  
+1. Query the database for the row to be deleted.  
   
-2.  Call the <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> method.  
+2. Call the <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> method.  
   
-3.  Submit the change to the database.  
+3. Submit the change to the database.  
   
 ## Example  
  This first code example queries the database for order details that belong to Order #11000, marks these order details for deletion, and submits these changes to the database.  

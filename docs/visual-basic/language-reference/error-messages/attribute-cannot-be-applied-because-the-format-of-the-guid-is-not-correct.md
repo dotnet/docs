@@ -17,9 +17,9 @@ A `COMClassAttribute` attribute block specifies a globally unique identifier (GU
   
 ## To correct this error  
   
-1.  Determine the correct GUID or GUIDs necessary to identify the COM object.  
+1. Determine the correct GUID or GUIDs necessary to identify the COM object.  
   
-2.  Ensure that the GUID strings presented to the `COMClassAttribute` attribute block are copied correctly.  
+2. Ensure that the GUID strings presented to the `COMClassAttribute` attribute block are copied correctly.  
   
 ## See also
 

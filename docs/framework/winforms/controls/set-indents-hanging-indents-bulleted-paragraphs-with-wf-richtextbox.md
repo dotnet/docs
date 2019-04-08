@@ -19,7 +19,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
   
 ### To format a paragraph as a bulleted list  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property to `true`.  
+1. Set the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property to `true`.  
   
     ```vb  
     RichTextBox1.SelectionBullet = True  
@@ -35,11 +35,11 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
   
 ### To indent a paragraph  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionIndent%2A> property to an integer representing the distance in pixels between the left edge of the control and the left edge of the text.  
+1. Set the <xref:System.Windows.Forms.RichTextBox.SelectionIndent%2A> property to an integer representing the distance in pixels between the left edge of the control and the left edge of the text.  
   
-2.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property to an integer representing the distance in pixels between the left edge of the first line of text in the paragraph and the left edge of subsequent lines in the same paragraph. The value of the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property only applies to lines in a paragraph that have wrapped below the first line.  
+2. Set the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property to an integer representing the distance in pixels between the left edge of the first line of text in the paragraph and the left edge of subsequent lines in the same paragraph. The value of the <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> property only applies to lines in a paragraph that have wrapped below the first line.  
   
-3.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionRightIndent%2A> property to an integer representing the distance in pixels between the right edge of the control and the right edge of the text.  
+3. Set the <xref:System.Windows.Forms.RichTextBox.SelectionRightIndent%2A> property to an integer representing the distance in pixels between the right edge of the control and the right edge of the text.  
   
     ```vb  
     RichTextBox1.SelectionIndent = 8  

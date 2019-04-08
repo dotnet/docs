@@ -51,13 +51,13 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
 ### Surrogate Windows Forms Message Loop  
  By default, the <xref:System.Windows.Forms.Application?displayProperty=nameWithType> class contains the primary message loop for [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications. During interoperation, the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] message loop does not process messages. Therefore, this logic must be reproduced. The handler for the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage?displayProperty=nameWithType> event performs the following steps:  
   
-1.  Filters the message using the <xref:System.Windows.Forms.IMessageFilter> interface.  
+1. Filters the message using the <xref:System.Windows.Forms.IMessageFilter> interface.  
   
-2.  Calls the <xref:System.Windows.Forms.Control.PreProcessMessage%2A?displayProperty=nameWithType> method.  
+2. Calls the <xref:System.Windows.Forms.Control.PreProcessMessage%2A?displayProperty=nameWithType> method.  
   
-3.  Translates and dispatches the message, if it is required.  
+3. Translates and dispatches the message, if it is required.  
   
-4.  Passes the message to the hosting control, if no other controls process the message.  
+4. Passes the message to the hosting control, if no other controls process the message.  
   
 ### IKeyboardInputSink Implementation  
  The surrogate message loop handles keyboard management. Therefore, the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A?displayProperty=nameWithType> method is the only <xref:System.Windows.Interop.IKeyboardInputSink> member that requires an implementation in the <xref:System.Windows.Forms.Integration.WindowsFormsHost> class.  
@@ -66,11 +66,11 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
   
  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> implementation of the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A?displayProperty=nameWithType> method performs the following steps:  
   
-1.  Finds the first or last [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that is contained by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control and that can receive focus. The control choice depends on traversal information.  
+1. Finds the first or last [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control that is contained by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control and that can receive focus. The control choice depends on traversal information.  
   
-2.  Sets focus to the control and returns `true`.  
+2. Sets focus to the control and returns `true`.  
   
-3.  If no control can receive focus, returns `false`.  
+3. If no control can receive focus, returns `false`.  
   
 ### WindowsFormsHost Registration  
  When the window handle to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is created, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control calls an internal static method that registers its presence for the message loop.  

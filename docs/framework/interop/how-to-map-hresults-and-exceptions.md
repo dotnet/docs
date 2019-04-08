@@ -25,7 +25,7 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
   
 ### To create a new exception class and map it to an HRESULT  
   
-1.  Use the following code to create a new exception class called `NoAccessException` and map it to the HRESULT `E_ACCESSDENIED`.  
+1. Use the following code to create a new exception class called `NoAccessException` and map it to the HRESULT `E_ACCESSDENIED`.  
   
     ```cpp  
     Class NoAccessException : public ApplicationException  

@@ -23,9 +23,9 @@ A nonvisual control (or component) provides functionality to your application. U
   
 ### To add a component to a Windows Form  
   
-1.  Open the form. For details, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
+1. Open the form. For details, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
   
-2.  In the **Toolbox**, click a component and drag it to your form.  
+2. In the **Toolbox**, click a component and drag it to your form.  
   
      Your component appears in the component tray.  
   
@@ -36,11 +36,11 @@ A nonvisual control (or component) provides functionality to your application. U
   
 #### To add a component to a Windows Form programmatically  
   
-1.  Create an instance of the <xref:System.Windows.Forms.Timer> class in code.  
+1. Create an instance of the <xref:System.Windows.Forms.Timer> class in code.  
   
-2.  Set the `Interval` property to determine the time between ticks of the timer.  
+2. Set the `Interval` property to determine the time between ticks of the timer.  
   
-3.  Configure any other necessary properties for your component.  
+3. Configure any other necessary properties for your component.  
   
      The following code shows the creation of a <xref:System.Windows.Forms.Timer> with its `Interval` property set.  
   

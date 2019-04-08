@@ -12,7 +12,7 @@ You can transform an editable Windows Forms text box into a read-only control. F
   
 ### To create a read-only text box  
   
-1.  Set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property to `true`. With the property set to `true`, users can still scroll and highlight text in a text box without allowing changes. A **Copy** command is functional in a text box, but **Cut** and **Paste** commands are not.  
+1. Set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property to `true`. With the property set to `true`, users can still scroll and highlight text in a text box without allowing changes. A **Copy** command is functional in a text box, but **Cut** and **Paste** commands are not.  
   
     > [!NOTE]
     >  The <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property only affects user interaction at run time. You can still change text box contents programmatically at run time by changing the <xref:System.Windows.Forms.TextBox.Text%2A> property of the text box.  

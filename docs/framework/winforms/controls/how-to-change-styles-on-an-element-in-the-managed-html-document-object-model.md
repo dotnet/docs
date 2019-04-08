@@ -63,7 +63,7 @@ The following procedure contains code that you can use to easily manipulate styl
      [!code-csharp[ManagedDOMStyles#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ManagedDOMStyles/CS/Form1.cs#2)]
      [!code-vb[ManagedDOMStyles#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ManagedDOMStyles/VB/Form1.vb#2)]  
   
-7.  Run the project. Run your cursor over the first `DIV` to observe the effects of the code.  
+7. Run the project. Run your cursor over the first `DIV` to observe the effects of the code.  
   
 ## Example  
  The following code example shows the full code for the `StyleGenerator` class, which parses an existing style value, supports adding, changing, and removing styles, and returns a new style value with the requested changes.  

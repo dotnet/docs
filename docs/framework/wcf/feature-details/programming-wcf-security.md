@@ -19,11 +19,11 @@ This topic describes the fundamental programming tasks used to create a secure W
 ## Setting the Security Mode  
  The following explains the general steps for programming with the security mode in WCF:  
   
-1.  Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)).  
+1. Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)).  
   
      The binding you select determines the transport. For example, <xref:System.ServiceModel.WSHttpBinding> uses HTTP as the transport; <xref:System.ServiceModel.NetTcpBinding> uses TCP.  
   
-2.  Select one of the security modes for the binding. Note that the binding you select determines the available mode choices. For example, the <xref:System.ServiceModel.WSDualHttpBinding> does not allow transport security (it is not an option). Similarly, neither the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> nor the <xref:System.ServiceModel.NetNamedPipeBinding> allows message security.  
+2. Select one of the security modes for the binding. Note that the binding you select determines the available mode choices. For example, the <xref:System.ServiceModel.WSDualHttpBinding> does not allow transport security (it is not an option). Similarly, neither the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> nor the <xref:System.ServiceModel.NetNamedPipeBinding> allows message security.  
   
      You have three choices:  
   
@@ -41,9 +41,9 @@ This topic describes the fundamental programming tasks used to create a secure W
   
          This choice uses the transport layer to secure the message transfer, while every message includes the rich credentials other services need. This combines the performance advantage of transport security with the rich credentials advantage of message security. This is available with the following bindings: <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSFederationHttpBinding>, <xref:System.ServiceModel.NetPeerTcpBinding>, and <xref:System.ServiceModel.WSHttpBinding>.  
   
-3.  If you decide to use transport security for HTTP (in other words, HTTPS), you must also configure the host with an SSL certificate and enable SSL on a port. For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+3. If you decide to use transport security for HTTP (in other words, HTTPS), you must also configure the host with an SSL certificate and enable SSL on a port. For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
-4.  If you are using the <xref:System.ServiceModel.WSHttpBinding> and do not need to establish a secure session, set the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property to `false`.  
+4. If you are using the <xref:System.ServiceModel.WSHttpBinding> and do not need to establish a secure session, set the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property to `false`.  
   
      A secure session occurs when a client and service create a channel using a symmetric key (both client and server use the same key for the length of a conversation, until the dialog is closed).  
   

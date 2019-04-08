@@ -8,9 +8,9 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
 
 ### To use this sample
 
-1.  Using Visual Studio 2012, open HelloRoutingService.sln.
+1. Using Visual Studio 2012, open HelloRoutingService.sln.
 
-2.  Press F5 or CTRL+SHIFT+B.
+2. Press F5 or CTRL+SHIFT+B.
 
     > [!NOTE]
     >  If you press F5, the Calculator Client automatically starts. If you press CTRL+SHIFT+B (build), you must start following applications yourself.
@@ -19,7 +19,7 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
     > 2.  Calculator service (./CalculatorService/bin/service.exe)
     > 3.  Routing service (./RoutingService/bin/RoutingService.exe)
 
-3.  Press ENTER to start the client.
+3. Press ENTER to start the client.
 
      You should see the following output:
 

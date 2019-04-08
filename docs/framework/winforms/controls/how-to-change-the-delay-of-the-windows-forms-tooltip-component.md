@@ -16,7 +16,7 @@ There are multiple delay values that you can set for a Windows Forms <xref:Syste
   
 ### To set the delay  
   
-1.  Set the following properties as shown in this example.  
+1. Set the following properties as shown in this example.  
   
     ```vb  
     ToolTip1.InitialDelay = 500  

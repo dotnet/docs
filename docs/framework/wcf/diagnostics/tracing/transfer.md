@@ -36,21 +36,21 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
 ## Activity Transfer Sequence  
  A well-formed activity transfer sequence includes the following steps.  
   
-1.  Begin a new activity, which consists of selecting a new gAId.  
+1. Begin a new activity, which consists of selecting a new gAId.  
   
-2.  Emit a transfer trace to that new gAId from the current activity ID  
+2. Emit a transfer trace to that new gAId from the current activity ID  
   
-3.  Set the new ID in TLS  
+3. Set the new ID in TLS  
   
-4.  Emit a start trace to indicate the beginning of the new activity by.  
+4. Emit a start trace to indicate the beginning of the new activity by.  
   
-5.  Return to the original activity consists of the following:  
+5. Return to the original activity consists of the following:  
   
-6.  Emit a transfer trace to the original gAId  
+6. Emit a transfer trace to the original gAId  
   
-7.  Emit a Stop trace to indicate the end of the new activity  
+7. Emit a Stop trace to indicate the end of the new activity  
   
-8.  Set TLS to the old gAId.  
+8. Set TLS to the old gAId.  
   
  The following code example demonstrates how to do this. This sample assumes a blocking call is made when transferring to the new activity, and includes suspend/resume traces.  
   

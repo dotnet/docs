@@ -15,23 +15,23 @@ To configure a Windows Communication Foundation (WCF) service endpoint to be int
   
 ### To add a WCF endpoint that is compatible with ASP.NET Web service clients in code  
   
-1.  Create a new <xref:System.ServiceModel.BasicHttpBinding> instance  
+1. Create a new <xref:System.ServiceModel.BasicHttpBinding> instance  
   
-2.  Optionally enable transport security for this service endpoint binding by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. For details, please see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
+2. Optionally enable transport security for this service endpoint binding by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. For details, please see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
   
-3.  Add a new application endpoint to your service host using the binding instance that you just created. For details about how to add a service endpoint in code, see the [How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md).  
+3. Add a new application endpoint to your service host using the binding instance that you just created. For details about how to add a service endpoint in code, see the [How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md).  
   
-4.  Enable an HTTP/GET metadata endpoint for your service. For details see [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md).  
+4. Enable an HTTP/GET metadata endpoint for your service. For details see [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md).  
   
 ### To add a WCF endpoint that is compatible with ASP.NET Web service clients in a configuration file  
   
-1.  Create a new <xref:System.ServiceModel.BasicHttpBinding> binding configuration. For details, see the [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
+1. Create a new <xref:System.ServiceModel.BasicHttpBinding> binding configuration. For details, see the [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
   
-2.  Optionally enable transport security for this service endpoint binding configuration by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. For details, see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
+2. Optionally enable transport security for this service endpoint binding configuration by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. For details, see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
   
-3.  Configure a new application endpoint for your service using the binding configuration that you just created. For details about how to add a service endpoint in a configuration file, see the [How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md).  
+3. Configure a new application endpoint for your service using the binding configuration that you just created. For details about how to add a service endpoint in a configuration file, see the [How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md).  
   
-4.  Enable an HTTP/GET metadata endpoint for your service. For details see the [How to: Publish Metadata for a Service Using a Configuration File](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md).  
+4. Enable an HTTP/GET metadata endpoint for your service. For details see the [How to: Publish Metadata for a Service Using a Configuration File](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md).  
   
 ## Example  
  The following example code demonstrates how to add a WCF endpoint that is compatible with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service clients in code and alternatively in configuration files.  

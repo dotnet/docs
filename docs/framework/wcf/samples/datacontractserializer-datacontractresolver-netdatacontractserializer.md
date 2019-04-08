@@ -51,21 +51,21 @@ class MyDataContractResolver : DataContractResolver
 
 #### To use this sample
 
-1.  Using Visual Studio 2012, open the DCRSample.sln solution file.
+1. Using Visual Studio 2012, open the DCRSample.sln solution file.
 
-2.  Right-click the solution file and choose **Properties**.
+2. Right-click the solution file and choose **Properties**.
 
-3.  In the **Solution Property Pages** dialog, under **Common Properties**, **Startup Project**, select **Multiple startup projects:**.
+3. In the **Solution Property Pages** dialog, under **Common Properties**, **Startup Project**, select **Multiple startup projects:**.
 
-4.  Next to the **DCSwithDCR** project, select **Start** from the **Action** dropdown.
+4. Next to the **DCSwithDCR** project, select **Start** from the **Action** dropdown.
 
-5.  Next to the **NetDCS** project, select **Start** from the **Action** dropdown.
+5. Next to the **NetDCS** project, select **Start** from the **Action** dropdown.
 
-6.  Click **OK** to close the dialog.
+6. Click **OK** to close the dialog.
 
-7.  To build the solution, press CTRL+SHIFT+B.
+7. To build the solution, press CTRL+SHIFT+B.
 
-8.  To run the solution, press CTRL+F5.
+8. To run the solution, press CTRL+F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

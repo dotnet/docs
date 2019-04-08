@@ -48,38 +48,38 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 #### To create WPF controls  
   
-1.  Add a new WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
+1. Add a new WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
-2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
+2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
   
-3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
+3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  Set the value of the <xref:System.Windows.Controls.Control.Background%2A> property to `Blue`.  
+4. Set the value of the <xref:System.Windows.Controls.Control.Background%2A> property to `Blue`.  
   
-5.  Build the project.  
+5. Build the project.  
   
 ## Hosting WPF Controls in a Layout Panel  
  You can use WPF controls in layout panels in the same way you use other Windows Forms controls.  
   
 #### To host WPF controls in a layout panel  
   
-1.  Open `Form1` in the Windows Forms Designer.  
+1. Open `Form1` in the Windows Forms Designer.  
   
-2.  In the **Toolbox**, drag a <xref:System.Windows.Forms.TableLayoutPanel> control onto the form.  
+2. In the **Toolbox**, drag a <xref:System.Windows.Forms.TableLayoutPanel> control onto the form.  
   
-3.  On the <xref:System.Windows.Forms.TableLayoutPanel> control's smart tag panel, select **Remove Last Row**.  
+3. On the <xref:System.Windows.Forms.TableLayoutPanel> control's smart tag panel, select **Remove Last Row**.  
   
-4.  Resize the <xref:System.Windows.Forms.TableLayoutPanel> control to a larger width and height.  
+4. Resize the <xref:System.Windows.Forms.TableLayoutPanel> control to a larger width and height.  
   
-5.  In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` in the first cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+5. In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` in the first cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
      The instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.  
   
-6.  In the **Toolbox**, double-click `UserControl1` to create another instance in the second cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+6. In the **Toolbox**, double-click `UserControl1` to create another instance in the second cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-7.  In the **Document Outline** window, select `tableLayoutPanel1`. For more information, see [Document Outline Window](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/46xf4h0w(v=vs.100)#using-the-document-outline-window-for-silverlight-and-wpf).  
+7. In the **Document Outline** window, select `tableLayoutPanel1`. For more information, see [Document Outline Window](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/46xf4h0w(v=vs.100)#using-the-document-outline-window-for-silverlight-and-wpf).  
   
-8.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Padding%2A> property to `10, 10, 10, 10`.  
+8. In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Padding%2A> property to `10, 10, 10, 10`.  
   
      Both <xref:System.Windows.Forms.Integration.ElementHost> controls are resized to fit into the new layout.  
   
@@ -88,48 +88,48 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 #### To use snaplines to align WPF controls  
   
-1.  From the **Toolbox**, drag an instance of `UserControl1` onto the form and place it in the space beneath the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+1. From the **Toolbox**, drag an instance of `UserControl1` onto the form and place it in the space beneath the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
      The instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost3`.  
   
-2.  Using snaplines, align the left edge of `elementHost3` with the left edge of <xref:System.Windows.Forms.TableLayoutPanel> control.  
+2. Using snaplines, align the left edge of `elementHost3` with the left edge of <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-3.  Using snaplines, size `elementHost3` to the same width as the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+3. Using snaplines, size `elementHost3` to the same width as the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-4.  Move `elementHost3` toward the <xref:System.Windows.Forms.TableLayoutPanel> control until a center snapline appears between the controls.  
+4. Move `elementHost3` toward the <xref:System.Windows.Forms.TableLayoutPanel> control until a center snapline appears between the controls.  
   
-5.  In the **Properties** window, set the value of the Margin property to `20, 20, 20, 20`.  
+5. In the **Properties** window, set the value of the Margin property to `20, 20, 20, 20`.  
   
-6.  Move the `elementHost3` away from the <xref:System.Windows.Forms.TableLayoutPanel> control until the center snapline appears again. The center snapline now indicates a margin of 20.  
+6. Move the `elementHost3` away from the <xref:System.Windows.Forms.TableLayoutPanel> control until the center snapline appears again. The center snapline now indicates a margin of 20.  
   
-7.  Move `elementHost3` to the right, until its left edge aligns with the left edge of `elementHost1`.  
+7. Move `elementHost3` to the right, until its left edge aligns with the left edge of `elementHost1`.  
   
-8.  Change the width of `elementHost3` until its right edge aligns with the right edge of `elementHost2`.  
+8. Change the width of `elementHost3` until its right edge aligns with the right edge of `elementHost2`.  
   
 ## Anchoring and Docking WPF Controls  
  A WPF control hosted on a form has the same anchoring and docking behavior as other Windows Forms controls.  
   
 #### To anchor and dock WPF controls  
   
-1.  Select `elementHost1`.  
+1. Select `elementHost1`.  
   
-2.  In the **Properties** window, set the <xref:System.Windows.Forms.Control.Anchor%2A> property to **Top, Bottom, Left, Right**.  
+2. In the **Properties** window, set the <xref:System.Windows.Forms.Control.Anchor%2A> property to **Top, Bottom, Left, Right**.  
   
-3.  Resize the <xref:System.Windows.Forms.TableLayoutPanel> control to a larger size.  
+3. Resize the <xref:System.Windows.Forms.TableLayoutPanel> control to a larger size.  
   
      The `elementHost1` control resizes to fill the cell.  
   
-4.  Select `elementHost2`.  
+4. Select `elementHost2`.  
   
-5.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
+5. In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
      The `elementHost2` control resizes to fill the cell.  
   
-6.  Select the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+6. Select the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-7.  Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Top>.  
+7. Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Top>.  
   
-8.  Select `elementHost3`.  
+8. Select `elementHost3`.  
   
 9. Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   

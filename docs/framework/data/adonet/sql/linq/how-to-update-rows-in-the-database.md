@@ -18,11 +18,11 @@ You can update rows in a database by modifying member values of the objects asso
   
 ### To update a row in the database  
   
-1.  Query the database for the row to be updated.  
+1. Query the database for the row to be updated.  
   
-2.  Make desired changes to member values in the resulting [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object.  
+2. Make desired changes to member values in the resulting [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object.  
   
-3.  Submit the changes to the database.  
+3. Submit the changes to the database.  
   
 ## Example  
  The following example queries the database for order #11000, and then changes the values of `ShipName` and `ShipVia` in the resulting `Order` object. Finally, the changes to these member values are submitted to the database as changes in the `ShipName` and `ShipVia` columns.  

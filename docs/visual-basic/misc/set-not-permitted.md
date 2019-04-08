@@ -10,7 +10,7 @@ You attempted to change a property whose settings either cannot be set at run ti
   
 ## To correct this error  
   
-1.  Check the property and determine under what conditions it can be set.  
+1. Check the property and determine under what conditions it can be set.  
   
 ## See also
 

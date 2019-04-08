@@ -18,11 +18,11 @@ You insert rows into a database by adding objects to the associated [!INCLUDE[vb
   
 ### To insert a row into the database  
   
-1.  Create a new object that includes the column data to be submitted.  
+1. Create a new object that includes the column data to be submitted.  
   
-2.  Add the new object to the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] `Table` collection associated with the target table in the database.  
+2. Add the new object to the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] `Table` collection associated with the target table in the database.  
   
-3.  Submit the change to the database.  
+3. Submit the change to the database.  
   
 ## Example  
  The following code example creates a new object of type `Order` and populates it with appropriate values. It then adds the new object to the `Order` collection. Finally, it submits the change to the database as a new row in the `Orders` table.  

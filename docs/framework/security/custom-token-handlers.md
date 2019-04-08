@@ -36,9 +36,9 @@ This topic discusses token handlers in WIF and how they are used to process toke
   
 #### Adding a custom token handler  
   
-1.  Create a new class that derives from <xref:System.IdentityModel.Tokens.SecurityTokenHandler>.  
+1. Create a new class that derives from <xref:System.IdentityModel.Tokens.SecurityTokenHandler>.  
   
-2.  Override the following methods and provide your own implementation:  
+2. Override the following methods and provide your own implementation:  
   
     -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A>  
   
@@ -52,7 +52,7 @@ This topic discusses token handlers in WIF and how they are used to process toke
   
     -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A>  
   
-3.  Add a reference to the new custom token handler in the *Web.config* or *App.config* file, within the **\<system.identityModel>** section that applies to WIF. For example, the following configuration markup specifies a new token handler named **MyCustomTokenHandler** that resides in the **CustomToken** namespace.  
+3. Add a reference to the new custom token handler in the *Web.config* or *App.config* file, within the **\<system.identityModel>** section that applies to WIF. For example, the following configuration markup specifies a new token handler named **MyCustomTokenHandler** that resides in the **CustomToken** namespace.  
   
     ```xml  
     <system.identityModel>  

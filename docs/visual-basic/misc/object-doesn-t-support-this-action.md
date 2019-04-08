@@ -10,9 +10,9 @@ You referenced a method or property that is not supported by this object.
   
 ## To correct this error  
   
-1.  Read the object's documentation for more information on the object.  
+1. Read the object's documentation for more information on the object.  
   
-2.  Ensure that the names of properties and methods are spelled correctly.  
+2. Ensure that the names of properties and methods are spelled correctly.  
   
 ## See also
 

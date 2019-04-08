@@ -10,7 +10,7 @@ The topics in this section discuss features in SQL Server that are targeted at d
   
  **SQL Server Books Online**  
   
-1.  [Development (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=115245)  
+1. [Development (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=115245)  
   
 ## In This Section  
  [Enumerating Instances of SQL Server (ADO.NET)](../../../../../docs/framework/data/adonet/sql/enumerating-instances-of-sql-server.md)  

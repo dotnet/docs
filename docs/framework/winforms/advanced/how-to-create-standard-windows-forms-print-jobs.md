@@ -16,9 +16,9 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
   
 ### To create a print job  
   
-1.  Add a <xref:System.Drawing.Printing.PrintDocument> component to your form.  
+1. Add a <xref:System.Drawing.Printing.PrintDocument> component to your form.  
   
-2.  Write code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+2. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
   
      You will have to code your own printing logic. Additionally, you will have to specify the material to be printed.  
   

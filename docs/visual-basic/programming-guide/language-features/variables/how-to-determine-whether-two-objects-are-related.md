@@ -12,11 +12,11 @@ You can compare two objects to determine the relationship, if any, between the c
   
 ### To determine if one object inherits from another object's class or interface  
   
-1.  On the object you think might be of the base type, invoke the <xref:System.Object.GetType%2A> method.  
+1. On the object you think might be of the base type, invoke the <xref:System.Object.GetType%2A> method.  
   
-2.  On the <xref:System.Type?displayProperty=nameWithType> object returned by <xref:System.Object.GetType%2A>, invoke the <xref:System.Type.IsInstanceOfType%2A> method.  
+2. On the <xref:System.Type?displayProperty=nameWithType> object returned by <xref:System.Object.GetType%2A>, invoke the <xref:System.Type.IsInstanceOfType%2A> method.  
   
-3.  In the argument list for <xref:System.Type.IsInstanceOfType%2A>, specify the object you think might be of the derived type.  
+3. In the argument list for <xref:System.Type.IsInstanceOfType%2A>, specify the object you think might be of the derived type.  
   
      <xref:System.Type.IsInstanceOfType%2A> returns `True` if its argument type inherits from the <xref:System.Type?displayProperty=nameWithType> object type.  
   

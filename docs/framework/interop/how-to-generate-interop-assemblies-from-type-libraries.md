@@ -16,7 +16,7 @@ The [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-ex
   
 ### To generate an interop assembly from a type library  
   
-1.  Use the following command:  
+1. Use the following command:  
   
      **tlbimp** \<*type-library-file*>  
   

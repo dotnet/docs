@@ -23,15 +23,15 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  When you apply a transform to a brush's <xref:System.Windows.Media.Brush.RelativeTransform%2A> property, that transform is applied to the brush before its output is mapped to the painted area. The following list describes the order in which a brush’s contents are processed and transformed.  
   
-1.  Process the brush’s contents. For a <xref:System.Windows.Media.GradientBrush>, this means determining the gradient area. For a <xref:System.Windows.Media.TileBrush>, the <xref:System.Windows.Media.TileBrush.Viewbox%2A> is mapped to the <xref:System.Windows.Media.TileBrush.Viewport%2A>. This becomes the brush’s output.  
+1. Process the brush’s contents. For a <xref:System.Windows.Media.GradientBrush>, this means determining the gradient area. For a <xref:System.Windows.Media.TileBrush>, the <xref:System.Windows.Media.TileBrush.Viewbox%2A> is mapped to the <xref:System.Windows.Media.TileBrush.Viewport%2A>. This becomes the brush’s output.  
   
-2.  Project the brush’s output onto the 1 x 1 transformation rectangle.  
+2. Project the brush’s output onto the 1 x 1 transformation rectangle.  
   
-3.  Apply the brush’s <xref:System.Windows.Media.Brush.RelativeTransform%2A>, if it has one.  
+3. Apply the brush’s <xref:System.Windows.Media.Brush.RelativeTransform%2A>, if it has one.  
   
-4.  Project the transformed output onto the area to paint.  
+4. Project the transformed output onto the area to paint.  
   
-5.  Apply the brush’s <xref:System.Windows.Media.Transform>, if it has one.  
+5. Apply the brush’s <xref:System.Windows.Media.Transform>, if it has one.  
   
  Because the <xref:System.Windows.Media.Brush.RelativeTransform%2A> is applied while the brush’s output is mapped to a 1 x 1 rectangle, transform center and offset values appear to be relative. For example, if you used a <xref:System.Windows.Media.RotateTransform> to rotate the brush's output 45 degrees about its center, you'd give the <xref:System.Windows.Media.RotateTransform> a <xref:System.Windows.Media.RotateTransform.CenterX%2A> of 0.5 and a <xref:System.Windows.Media.RotateTransform.CenterY%2A> of 0.5.  
   
@@ -55,19 +55,19 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  Notice that the image is distorted, even though the brush's <xref:System.Windows.Media.TileBrush.Stretch%2A> was set to <xref:System.Windows.Media.Stretch.UniformToFill>. That's because the relative transform is applied after the brush's <xref:System.Windows.Media.TileBrush.Viewbox%2A> is mapped to its <xref:System.Windows.Media.TileBrush.Viewport%2A>. The following list describes each step of the process:  
   
-1.  Project the brush's contents (<xref:System.Windows.Media.TileBrush.Viewbox%2A>) onto its base tile (<xref:System.Windows.Media.TileBrush.Viewport%2A>) using the brush's <xref:System.Windows.Media.TileBrush.Stretch%2A> setting.  
+1. Project the brush's contents (<xref:System.Windows.Media.TileBrush.Viewbox%2A>) onto its base tile (<xref:System.Windows.Media.TileBrush.Viewport%2A>) using the brush's <xref:System.Windows.Media.TileBrush.Stretch%2A> setting.  
   
      ![Stretch the Viewbox to fit the Viewport](./media/graphicsmm-reltransform-2-viewbox-to-viewport.png "graphicsmm_reltransform_2_viewbox_to_viewport")  
   
-2.  Project the base tile onto the 1 x 1 transformation rectangle.  
+2. Project the base tile onto the 1 x 1 transformation rectangle.  
   
      ![Map the Viewport to the transformation rectangle](./media/graphicsmm-reltransform-3-output-to-transform.png "graphicsmm_reltransform_3_output_to_transform")  
   
-3.  Apply the <xref:System.Windows.Media.RotateTransform>.  
+3. Apply the <xref:System.Windows.Media.RotateTransform>.  
   
      ![Apply the relative transform](./media/graphicsmm-reltransform-4-transform-rotate.png "graphicsmm_reltransform_4_transform_rotate")  
   
-4.  Project the transformed base tile onto the area to paint.  
+4. Project the transformed base tile onto the area to paint.  
   
      ![Project the transformed brush onto the output area](./media/graphicsmm-reltransform-5-transform-to-output.png "graphicsmm_reltransform_5_transform_to_output")  
   

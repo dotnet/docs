@@ -13,13 +13,13 @@ The preferred way to create a Windows Communication Foundation (WCF) contract is
   
 ### Creating a WCF contract with an interface  
   
-1.  Create a new interface using Visual Basic, C#, or any other common language runtime language.  
+1. Create a new interface using Visual Basic, C#, or any other common language runtime language.  
   
-2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
+2. Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
   
-3.  Define the methods in the interface.  
+3. Define the methods in the interface.  
   
-4.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
+4. Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
   
 ## Example  
  The following code example shows an interface that defines a service contract.  

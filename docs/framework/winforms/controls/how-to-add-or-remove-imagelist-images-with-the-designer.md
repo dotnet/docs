@@ -15,21 +15,21 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
   
 ### To add or remove images by using the Properties window  
   
-1.  Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
+1. Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
   
-2.  In the Properties window, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.ImageList.Images%2A> property.  
+2. In the Properties window, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.ImageList.Images%2A> property.  
   
-3.  In the **Image Collection Editor**, click **Add** or **Remove** to add or remove images from the list.  
+3. In the **Image Collection Editor**, click **Add** or **Remove** to add or remove images from the list.  
   
 ### To add or remove images using the smart tag  
   
-1.  Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
+1. Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
   
-2.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))  
+2. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))  
   
-3.  In the **ImageList Tasks** dialog box, select **Choose Images**.  
+3. In the **ImageList Tasks** dialog box, select **Choose Images**.  
   
-4.  In the **Images Collection Editor** click **Add** or **Remove** to add or remove images from the list.  
+4. In the **Images Collection Editor** click **Add** or **Remove** to add or remove images from the list.  
   
 ## See also
 

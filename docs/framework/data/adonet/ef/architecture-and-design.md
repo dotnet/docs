@@ -246,13 +246,13 @@ private bool IsParentAJoin{get}
   
  Visiting these nodes follows the following pattern:  
   
-1.  Visit the relational input and get the resulting SqlSelectStatement. The input to a relational node could be one of the following:  
+1. Visit the relational input and get the resulting SqlSelectStatement. The input to a relational node could be one of the following:  
   
     -   A relational node, including an extent (a DbScanExpression, for example). Visiting such a node returns a SqlSelectStatement.  
   
     -   A set operation expression (UNION ALL, for example). The result has to be wrapped in brackets and put in the FROM clause of a new SqlSelectStatement.  
   
-2.  Check whether the current node can be added to the SqlSelectStatement produced by the input. The section titled Grouping Expressions into SQL Statements describes this. If not,  
+2. Check whether the current node can be added to the SqlSelectStatement produced by the input. The section titled Grouping Expressions into SQL Statements describes this. If not,  
   
     -   Pop the current SqlSelectStatement object.  
   
@@ -260,13 +260,13 @@ private bool IsParentAJoin{get}
   
     -   Put the new object on top of the stack.  
   
-3.  Redirect the input expression binding to the correct symbol from the input. This information is maintained in the SqlSelectStatement object.  
+3. Redirect the input expression binding to the correct symbol from the input. This information is maintained in the SqlSelectStatement object.  
   
-4.  Add a new SymbolTable scope.  
+4. Add a new SymbolTable scope.  
   
-5.  Visit the non-input part of the expression (for example, Projection and Predicate).  
+5. Visit the non-input part of the expression (for example, Projection and Predicate).  
   
-6.  Pop all the objects added to the global stacks.  
+6. Pop all the objects added to the global stacks.  
   
  DbSkipExpression not have a direct equivalent in SQL. Logically, it is translated into:  
   
@@ -295,9 +295,9 @@ ORDER BY sk1, sk2, ...
   
  Second, process the inputs one at a time. For each input:  
   
-1.  Visit the input.  
+1. Visit the input.  
   
-2.  Post process the result of visiting the input by invoking ProcessJoinInputResult, which is responsible for maintaining the symbol table after visiting a child of a join expression and possibly finishing the SqlSelectStatement produced by the child. The child's result could be one of the following:  
+2. Post process the result of visiting the input by invoking ProcessJoinInputResult, which is responsible for maintaining the symbol table after visiting a child of a join expression and possibly finishing the SqlSelectStatement produced by the child. The child's result could be one of the following:  
   
     -   A SqlSelectStatement different from the one to which the parent will be added. In such case, it may need to be completed by adding default columns. If the input was a Join, you need to create a new join symbol. Otherwise, create a normal symbol.  
   

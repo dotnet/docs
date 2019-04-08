@@ -8,7 +8,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
 ### Configure Tracking in Configuration  
   
-1.  Add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <`behavior`> element in a configuration file, as shown in the following example.  
+1. Add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <`behavior`> element in a configuration file, as shown in the following example.  
   
     ```xml  
     <behaviors>  
@@ -50,7 +50,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
 ### Configure Tracking in Code  
   
-1.  Add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior> behavior in code, as shown in the following example.  
+1. Add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior> behavior in code, as shown in the following example.  
   
     ```csharp  
     host.Description.Behaviors.Add(new EtwTrackingBehavior { ProfileName = "Sample Tracking Profile" });  

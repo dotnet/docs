@@ -20,9 +20,9 @@ The .NET Framework Data Provider for Oracle includes the <xref:System.Data.Oracl
   
  Each non-NULL **OracleBFile** object is associated with two entities that define the location of the underlying physical file:  
   
-1.  An Oracle DIRECTORY object, which is a database alias for a directory in the file system, and  
+1. An Oracle DIRECTORY object, which is a database alias for a directory in the file system, and  
   
-2.  The file name of the underlying physical file, which is located in the directory associated with the DIRECTORY object.  
+2. The file name of the underlying physical file, which is located in the directory associated with the DIRECTORY object.  
   
 ## Example  
  The following C# example demonstrates how you can create a **BFILE** in an Oracle table and then retrieve it in the form of an **OracleBFile** object. The example demonstrates using the <xref:System.Data.OracleClient.OracleDataReader> object and the **OracleBFile** **Seek** and **Read** methods. Note that in order to use this sample, you must first create a directory named "c:\\\bfiles" and file named "MyFile.jpg" on the Oracle server.  

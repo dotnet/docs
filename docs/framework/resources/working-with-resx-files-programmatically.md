@@ -23,11 +23,11 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
 
 You can use the <xref:System.Resources.ResXResourceWriter?displayProperty=nameWithType> class to create a .resx file programmatically, by following these steps:
 
-1.  Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29?displayProperty=nameWithType> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
+1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29?displayProperty=nameWithType> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
 
-2.  Call the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each resource you want to add to the file. Use the overloads of this method to add string, object, and binary (byte array) data. If the resource is an object, it must be serializable.
+2. Call the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each resource you want to add to the file. Use the overloads of this method to add string, object, and binary (byte array) data. If the resource is an object, it must be serializable.
 
-3.  Call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method to generate the resource file and to release all resources. If the <xref:System.Resources.ResXResourceWriter> object was created within a `using` block, resources are written to the .resx file and the resources used by the <xref:System.Resources.ResXResourceWriter> object are released at the end of the `using` block.
+3. Call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method to generate the resource file and to release all resources. If the <xref:System.Resources.ResXResourceWriter> object was created within a `using` block, resources are written to the .resx file and the resources used by the <xref:System.Resources.ResXResourceWriter> object are released at the end of the `using` block.
 
 The resulting .resx file has the appropriate header and a `data` tag for each resource added by the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method.
 

@@ -18,15 +18,15 @@ Determines whether an expression is `True`.
 ## Compiler Use of IsTrue  
  When you have defined a class or structure, you can use a variable of that type in a `For`, `If`, `Else If`, or `While` statement, or in a `When` clause. If you do this, the compiler requires an operator that converts your type into a `Boolean` value so it can test a condition. It searches for a suitable operator in the following order:  
   
-1.  A widening conversion operator from your class or structure to `Boolean`.  
+1. A widening conversion operator from your class or structure to `Boolean`.  
   
-2.  A widening conversion operator from your class or structure to `Boolean?`.  
+2. A widening conversion operator from your class or structure to `Boolean?`.  
   
-3.  The `IsTrue` operator on your class or structure.  
+3. The `IsTrue` operator on your class or structure.  
   
-4.  A narrowing conversion to `Boolean?` that does not involve a conversion from `Boolean` to `Boolean?`.  
+4. A narrowing conversion to `Boolean?` that does not involve a conversion from `Boolean` to `Boolean?`.  
   
-5.  A narrowing conversion operator from your class or structure to `Boolean`.  
+5. A narrowing conversion operator from your class or structure to `Boolean`.  
   
  If you have not defined any conversion to `Boolean` or an `IsTrue` operator, the compiler signals an error.  
   

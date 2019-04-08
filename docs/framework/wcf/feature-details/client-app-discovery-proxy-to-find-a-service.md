@@ -8,20 +8,20 @@ This topic is the third of three topics that discusses how to implement a discov
   
 ### Implement the client  
   
-1.  Add a new console application project to the `DiscoveryProxyExample` solution called `Client`.  
+1. Add a new console application project to the `DiscoveryProxyExample` solution called `Client`.  
   
-2.  Add references to the following assemblies:  
+2. Add references to the following assemblies:  
   
     1.  System.ServiceModel  
   
     2.  System.ServiceModel.Discovery  
   
-3.  Add the GeneratedClient.cs found at the bottom of this topic to the project.  
+3. Add the GeneratedClient.cs found at the bottom of this topic to the project.  
   
     > [!NOTE]
     >  This file is usually generated using a tool such as Svcutil.exe. It is provided in this topic to simplify the task.  
   
-4.  Open the Program.cs file and add the following method. This method takes an endpoint address and uses it to initialize the service client (proxy).  
+4. Open the Program.cs file and add the following method. This method takes an endpoint address and uses it to initialize the service client (proxy).  
   
     ```csharp  
     static void InvokeCalculatorService(EndpointAddress endpointAddress)  
@@ -56,7 +56,7 @@ This topic is the third of three topics that discusses how to implement a discov
     }  
     ```  
   
-5.  Add the following code to the `Main` method.  
+5. Add the following code to the `Main` method.  
   
     ```csharp  
     public static void Main()  

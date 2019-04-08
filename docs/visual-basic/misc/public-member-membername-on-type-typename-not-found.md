@@ -10,7 +10,7 @@ The member you are trying to access cannot be found. This error can occur when a
   
 ## To correct this error  
   
-1.  If the member exists, ensure that it is declared as `Public`.  
+1. If the member exists, ensure that it is declared as `Public`.  
   
 ## See also
 

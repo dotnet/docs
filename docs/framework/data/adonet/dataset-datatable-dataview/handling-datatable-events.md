@@ -41,21 +41,21 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 ## Sequence of Operations  
  Here is the sequence of operations that occur when a `DataRow` is added, modified, or deleted:  
   
-1.  Create the proposed record and apply any changes.  
+1. Create the proposed record and apply any changes.  
   
-2.  Check constraints for non-expression columns.  
+2. Check constraints for non-expression columns.  
   
-3.  Raise the `RowChanging` or `RowDeleting` events as applicable.  
+3. Raise the `RowChanging` or `RowDeleting` events as applicable.  
   
-4.  Set the proposed record to be the current record.  
+4. Set the proposed record to be the current record.  
   
-5.  Update any associated indexes.  
+5. Update any associated indexes.  
   
-6.  Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects.  
+6. Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects.  
   
-7.  Evaluate all expression columns, but delay checking any constraints on these columns.  
+7. Evaluate all expression columns, but delay checking any constraints on these columns.  
   
-8.  Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects affected by the expression column evaluations.  
+8. Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects affected by the expression column evaluations.  
   
 9. Raise `RowChanged` or `RowDeleted` events as applicable.  
   

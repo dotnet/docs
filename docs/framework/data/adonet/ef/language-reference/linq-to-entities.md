@@ -6,15 +6,15 @@ ms.assetid: 641f9b68-9046-47a1-abb0-1c8eaeda0e2d
 # LINQ to Entities
 LINQ to Entities provides Language-Integrated Query (LINQ) support that enables developers to write queries against the Entity Framework conceptual model using Visual Basic or Visual C#. Queries against the Entity Framework are represented by command tree queries, which execute against the object context. LINQ to Entities converts Language-Integrated Queries (LINQ) queries to command tree queries, executes the queries against the Entity Framework, and returns objects that can be used by both the Entity Framework and LINQ. The following is the process for creating and executing a LINQ to Entities query:  
   
-1.  Construct an <xref:System.Data.Objects.ObjectQuery%601> instance from <xref:System.Data.Objects.ObjectContext>.  
+1. Construct an <xref:System.Data.Objects.ObjectQuery%601> instance from <xref:System.Data.Objects.ObjectContext>.  
   
-2.  Compose a LINQ to Entities query in C# or Visual Basic by using the <xref:System.Data.Objects.ObjectQuery%601> instance.  
+2. Compose a LINQ to Entities query in C# or Visual Basic by using the <xref:System.Data.Objects.ObjectQuery%601> instance.  
   
-3.  Convert LINQ standard query operators and expressions to command trees.  
+3. Convert LINQ standard query operators and expressions to command trees.  
   
-4.  Execute the query, in command tree representation, against the data source. Any exceptions thrown on the data source during execution are passed directly up to the client.  
+4. Execute the query, in command tree representation, against the data source. Any exceptions thrown on the data source during execution are passed directly up to the client.  
   
-5.  Return query results back to the client.  
+5. Return query results back to the client.  
   
 ## Constructing an ObjectQuery Instance  
  The <xref:System.Data.Objects.ObjectQuery%601> generic class represents a query that returns a collection of zero or more typed entities. An object query is typically constructed from an existing object context, instead of being manually constructed, and always belongs to that object context. This context provides the connection and metadata information that is required to compose and execute the query. The <xref:System.Data.Objects.ObjectQuery%601> generic class implements the <xref:System.Linq.IQueryable%601> generic interface, whose builder methods enable LINQ queries to be incrementally built. You can also let the compiler infer the type of entities by using the C# `var` keyword (`Dim` in Visual Basic, with local type inference enabled).  

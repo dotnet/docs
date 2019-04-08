@@ -10,11 +10,11 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
   
 ### To create the Toolbox and add it to the grid  
   
-1.  Open the HostingApplication project you obtained by following the procedure described in [Task 2: Host the Workflow Designer](task-2-host-the-workflow-designer.md).  
+1. Open the HostingApplication project you obtained by following the procedure described in [Task 2: Host the Workflow Designer](task-2-host-the-workflow-designer.md).  
   
-2.  In the **Solution Explorer** pane, right-click the MainWindow.xaml file and select **View Code**.  
+2. In the **Solution Explorer** pane, right-click the MainWindow.xaml file and select **View Code**.  
   
-3.  Add a `GetToolboxControl` method to the `MainWindow` class that creates a <xref:System.Activities.Presentation.Toolbox.ToolboxControl>, adds a new **Toolbox** category to the **Toolbox**, and assigns the <xref:System.Activities.Statements.Assign> and <xref:System.Activities.Statements.Sequence> activity types to that category.  
+3. Add a `GetToolboxControl` method to the `MainWindow` class that creates a <xref:System.Activities.Presentation.Toolbox.ToolboxControl>, adds a new **Toolbox** category to the **Toolbox**, and assigns the <xref:System.Activities.Statements.Assign> and <xref:System.Activities.Statements.Sequence> activity types to that category.  
   
     ```csharp  
     private ToolboxControl GetToolboxControl()  
@@ -43,7 +43,7 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
     }  
     ```  
   
-4.  Add a private `AddToolbox` method to the `MainWindow` class that places the **Toolbox** in the left column on the grid.  
+4. Add a private `AddToolbox` method to the `MainWindow` class that places the **Toolbox** in the left column on the grid.  
   
     ```csharp  
     private void AddToolBox()  
@@ -54,7 +54,7 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
     }  
     ```  
   
-5.  Add a call to the `AddToolBox` method in the `MainWindow()` class constructor as shown in the following code.  
+5. Add a call to the `AddToolBox` method in the `MainWindow()` class constructor as shown in the following code.  
   
     ```csharp  
     public MainWindow()  
@@ -67,13 +67,13 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
     }  
     ```  
   
-6.  Press F5 to build and run your solution. The **Toolbox** containing the <xref:System.Activities.Statements.Assign> and <xref:System.Activities.Statements.Sequence> activities should be displayed.  
+6. Press F5 to build and run your solution. The **Toolbox** containing the <xref:System.Activities.Statements.Assign> and <xref:System.Activities.Statements.Sequence> activities should be displayed.  
   
 ### To create the PropertyGrid  
   
-1.  In the **Solution Explorer** pane, right-click the MainWindow.xaml file and select **View Code**.  
+1. In the **Solution Explorer** pane, right-click the MainWindow.xaml file and select **View Code**.  
   
-2.  Add the `AddPropertyInspector` method to the `MainWindow` class to place the **PropertyGrid** pane in the rightmost column on the grid.  
+2. Add the `AddPropertyInspector` method to the `MainWindow` class to place the **PropertyGrid** pane in the rightmost column on the grid.  
   
     ```csharp  
     private void AddPropertyInspector()  
@@ -83,7 +83,7 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
     }  
     ```  
   
-3.  Add a call to the `AddPropertyInspector` method in the `MainWindow()` class constructor as shown in the following code.  
+3. Add a call to the `AddPropertyInspector` method in the `MainWindow()` class constructor as shown in the following code.  
   
     ```csharp  
     public MainWindow()  
@@ -97,7 +97,7 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
     }  
     ```  
   
-4.  Press F5 to build and run the solution. The **Toolbox**, workflow design canvas, and **PropertyGrid** panes should all be displayed, and when you drag an <xref:System.Activities.Statements.Assign> activity or a <xref:System.Activities.Statements.Sequence> activity onto the design canvas, the property grid should update depending on the highlighted activity.  
+4. Press F5 to build and run the solution. The **Toolbox**, workflow design canvas, and **PropertyGrid** panes should all be displayed, and when you drag an <xref:System.Activities.Statements.Assign> activity or a <xref:System.Activities.Statements.Sequence> activity onto the design canvas, the property grid should update depending on the highlighted activity.  
   
 ## Example  
  The MainWindow.xaml.cs file should now contain the following code.  

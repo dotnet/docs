@@ -18,7 +18,7 @@ Among the possible causes of this error are:
   
 ## To correct this error  
   
-1.  Remove the reference.  
+1. Remove the reference.  
   
 ## See also
 

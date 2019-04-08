@@ -10,7 +10,7 @@ To use any of the Windows Communication Foundation (WCF) features of that use X.
   
 ### To obtain an X.509 certificate  
   
-1.  Choose one of the following:  
+1. Choose one of the following:  
   
     -   Purchase a certificate from a certification authority, such as VeriSign, Inc.  
   

@@ -62,15 +62,15 @@ static void OnOfflineEvent(object sender, AnnouncementEventArgs e)
   
 #### To use this sample  
   
-1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1. This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2.  Build the solution.  
+2. Build the solution.  
   
-3.  Run the client.exe application.  
+3. Run the client.exe application.  
   
-4.  Run the service.exe application. Note the client receives an online announcement.  
+4. Run the service.exe application. Note the client receives an online announcement.  
   
-5.  Close the service.exe application. Note the client receives an offline announcement.  
+5. Close the service.exe application. Note the client receives an offline announcement.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

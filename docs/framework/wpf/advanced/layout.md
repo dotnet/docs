@@ -58,17 +58,17 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  Each time that a child <xref:System.Windows.UIElement> changes its position, it has the potential to trigger a new pass by the layout system. Therefore, it is important to understand the events that can invoke the layout system, as unnecessary invocation can lead to poor application performance. The following describes the process that occurs when the layout system is invoked.  
   
-1.  A child <xref:System.Windows.UIElement> begins the layout process by first having its core properties measured.  
+1. A child <xref:System.Windows.UIElement> begins the layout process by first having its core properties measured.  
   
-2.  Sizing properties defined on <xref:System.Windows.FrameworkElement> are evaluated, such as <xref:System.Windows.FrameworkElement.Width%2A>, <xref:System.Windows.FrameworkElement.Height%2A>, and <xref:System.Windows.FrameworkElement.Margin%2A>.  
+2. Sizing properties defined on <xref:System.Windows.FrameworkElement> are evaluated, such as <xref:System.Windows.FrameworkElement.Width%2A>, <xref:System.Windows.FrameworkElement.Height%2A>, and <xref:System.Windows.FrameworkElement.Margin%2A>.  
   
-3.  <xref:System.Windows.Controls.Panel>-specific logic is applied, such as <xref:System.Windows.Controls.Dock> direction or stacking <xref:System.Windows.Controls.StackPanel.Orientation%2A>.  
+3. <xref:System.Windows.Controls.Panel>-specific logic is applied, such as <xref:System.Windows.Controls.Dock> direction or stacking <xref:System.Windows.Controls.StackPanel.Orientation%2A>.  
   
-4.  Content is arranged after all children have been measured.  
+4. Content is arranged after all children have been measured.  
   
-5.  The <xref:System.Windows.Controls.Panel.Children%2A> collection is drawn on the screen.  
+5. The <xref:System.Windows.Controls.Panel.Children%2A> collection is drawn on the screen.  
   
-6.  The process is invoked again if additional <xref:System.Windows.Controls.Panel.Children%2A> are added to the collection, a <xref:System.Windows.FrameworkElement.LayoutTransform%2A> is applied, or the <xref:System.Windows.UIElement.UpdateLayout%2A> method is called.  
+6. The process is invoked again if additional <xref:System.Windows.Controls.Panel.Children%2A> are added to the collection, a <xref:System.Windows.FrameworkElement.LayoutTransform%2A> is applied, or the <xref:System.Windows.UIElement.UpdateLayout%2A> method is called.  
   
  This process and how it is invoked are defined in more detail in the following sections.  
   

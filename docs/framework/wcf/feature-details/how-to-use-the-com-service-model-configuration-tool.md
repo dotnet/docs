@@ -13,11 +13,11 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
  When using ComSvcConfig.exe on a Windows 7 machine to configure a web service to use the latest service model version (currently v4.5), perform the following steps:  
   
-1.  Set the registry key  `[HKEY_LOCAL_COMPUTER\SOFTWARE\Microsoft\.NETFramework]\OnlyUseLatestCLR` to a DWORD value of 0x00000001  
+1. Set the registry key  `[HKEY_LOCAL_COMPUTER\SOFTWARE\Microsoft\.NETFramework]\OnlyUseLatestCLR` to a DWORD value of 0x00000001  
   
-2.  Run comsvcconfig.exe  
+2. Run comsvcconfig.exe  
   
-3.  Revert the registry key added in step 1 back to its original value, or delete it if did not exist.  
+3. Revert the registry key added in step 1 back to its original value, or delete it if did not exist.  
   
 > [!IMPORTANT]
 >  Reverting this registry key is important. This is a compatibility key. Not reverting this change may cause issues with other .NET applications running on the machine).  

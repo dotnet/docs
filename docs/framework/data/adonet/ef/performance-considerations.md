@@ -76,11 +76,11 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 ### Query Paths  
  By default, when you execute an <xref:System.Data.Objects.ObjectQuery%601>, related objects are not returned (although objects that represent the relationships themselves are). You can load related objects in one of three ways:  
   
-1.  Set the query path before the <xref:System.Data.Objects.ObjectQuery%601> is executed.  
+1. Set the query path before the <xref:System.Data.Objects.ObjectQuery%601> is executed.  
   
-2.  Call the `Load` method on the navigation property that the object exposes.  
+2. Call the `Load` method on the navigation property that the object exposes.  
   
-3.  Set the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> option on the <xref:System.Data.Objects.ObjectContext> to `true`. Note that this is done automatically when you generate object-layer code with the [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)). For more information see [Generated Code Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982041(v=vs.100)).  
+3. Set the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> option on the <xref:System.Data.Objects.ObjectContext> to `true`. Note that this is done automatically when you generate object-layer code with the [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)). For more information see [Generated Code Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982041(v=vs.100)).  
   
  When you consider which option to use, be aware that there is a tradeoff between the number of requests against the database and the amount of data returned in a single query. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   

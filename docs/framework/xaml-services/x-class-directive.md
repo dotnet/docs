@@ -55,6 +55,7 @@ Configures XAML markup compilation to join partial classes between markup and co
  `x:Class` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081).  
   
 ## See also
+
 - [x:Subclass Directive](x-subclass-directive.md)
 - [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [x:ClassModifier Directive](x-classmodifier-directive.md)

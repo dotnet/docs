@@ -22,8 +22,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 3.  Using high-level controls, such as the <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects.  
   
  This topic provides text rendering performance recommendations.  
-  
-  
+
 <a name="Glyph_Level"></a>   
 ## Rendering Text at the Glyph Level  
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  
@@ -156,6 +155,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
  The optimal paragraph feature of the <xref:System.Windows.Documents.FlowDocument> object lays out paragraphs so that white space is distributed as evenly as possible. By default, the optimal paragraph feature is disabled. You can enable this feature by setting the object's <xref:System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabled%2A> property to `true`. However, enabling this feature impacts application performance. It is recommended that you do not use the optimal paragraph feature unless you need it.  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)

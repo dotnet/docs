@@ -283,6 +283,7 @@ typedef struct _MYSTRSTRUCT2
  [!code-vb[Conceptual.Interop.Marshaling#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/outarrayofstructs.vb#21)]  
   
 ## See also
+
 - [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
 - [Marshaling Strings](marshaling-strings.md)
 - [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)

@@ -104,4 +104,5 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
     ```  
   
 ## See also
+
 - [Integrating with COM+ Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)

@@ -56,6 +56,7 @@ You can also localize your app's resources for specific cultures. This enables y
 -   The <xref:System.Resources.ResXResourceSet> class, which enables you to retrieve all the items in an XML resource file into memory.  
   
 ## See also
+
 - <xref:System.Globalization.CultureInfo>
 - <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>
 - [Application Essentials](../../../docs/standard/application-essentials.md)

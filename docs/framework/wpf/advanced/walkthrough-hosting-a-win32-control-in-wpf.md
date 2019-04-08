@@ -13,8 +13,7 @@ ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it may be more effective to reuse at least some of that code in your WPF application rather than rewrite it completely. WPF provides a straightforward mechanism for hosting a Win32 window, on a WPF page.  
   
  This topic walks you through an application, [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control), that hosts a Win32 list box control. This general procedure can be extended to hosting any Win32 window.  
-  
-  
+
 <a name="requirements"></a>   
 ## Requirements  
  This topic assumes a basic familiarity with both WPF and Windows API programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Windows API programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
@@ -148,6 +147,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  Finally, set `handled` to `true` to indicate that the message has been handled.  
   
 ## See also
+
 - <xref:System.Windows.Interop.HwndHost>
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)

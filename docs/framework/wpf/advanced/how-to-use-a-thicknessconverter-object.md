@@ -21,6 +21,7 @@ ms.assetid: 52682194-d7fd-499c-8005-73fcc84e7b2c
  [!code-vb[ThicknessConverter#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessConverter/VisualBasic/Window1.xaml.vb#1)]  
   
 ## See also
+
 - <xref:System.Windows.Thickness>
 - <xref:System.Windows.ThicknessConverter>
 - <xref:System.Windows.Controls.Border>

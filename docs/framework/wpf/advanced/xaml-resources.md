@@ -13,8 +13,7 @@ A resource is an object that can be reused in different places in your applicati
   
 > [!NOTE]
 >  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
-  
-  
+
 <a name="usingresources"></a>   
 ## Using Resources in XAML  
  The following example defines a <xref:System.Windows.Media.SolidColorBrush> as a resource on the root element of a page. The example then references the resource and uses it to set properties of several child elements, including an <xref:System.Windows.Shapes.Ellipse>, a <xref:System.Windows.Controls.TextBlock>, and a <xref:System.Windows.Controls.Button>.  
@@ -148,6 +147,7 @@ A resource is an object that can be reused in different places in your applicati
  <xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../xaml-services/x-type-markup-extension.md). For details, see [Data Templating Overview](../data/data-templating-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.ResourceDictionary>
 - [Application Resources](optimizing-performance-application-resources.md)
 - [Resources and Code](resources-and-code.md)

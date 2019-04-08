@@ -135,4 +135,3 @@ public class StreamedEchoService : IStreamedEchoService
 // not recommended for production code.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
 ```  
-  

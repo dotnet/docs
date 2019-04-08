@@ -21,5 +21,6 @@ The following diagram shows a conceptual model with four entity types: `Book`, `
  [!code-xml[EDM_Example_Model#DerivedType](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books5.edmx#derivedtype)]  
   
 ## See also
+
 - [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

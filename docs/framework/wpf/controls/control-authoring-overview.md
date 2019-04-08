@@ -11,9 +11,7 @@ ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 ---
 # Control Authoring Overview
 The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] control model greatly reduces the need to create a new control. However, in certain cases you may still need to create a custom control. This topic discusses the features that minimize your need to create a custom control and the different control authoring models in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. This topic also demonstrates how to create a new control.  
-  
- 
-  
+
 <a name="when_to_write_a_new_control"></a>   
 ## Alternatives to Writing a New Control  
  Historically, if you wanted to get a customized experience from an existing control, you were limited to changing the standard properties of the control, such as background color, border width, and font size. If you wished to extend the appearance or behavior of a control beyond these predefined parameters, you would need to create a new control, usually by inheriting from an existing control and overriding the method responsible for drawing the control.  Although that is still an option, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] enables to you customize existing controls by using its rich content model, styles, templates, and triggers. The following list gives examples of how these features can be used to create custom and consistent experiences without having to create a new control.  
@@ -263,6 +261,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  [!code-vb[CustomControlNumericUpDown#ThemesSection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  
   
 ## See also
+
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
 - [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)
 - [Control Customization](control-customization.md)

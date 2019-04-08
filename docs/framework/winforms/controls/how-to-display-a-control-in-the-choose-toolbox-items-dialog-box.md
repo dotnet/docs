@@ -21,6 +21,7 @@ As you develop and distribute controls, you may want those controls to appear in
 -   Register your control and its associated design-time assemblies by using the AssemblyFoldersEx registration procedure. AssemblyFoldersEx is a registry location where third-party vendors store paths for each version of the framework that they support. Design-time resolution can look in this registry location to find reference assemblies. The registry script can specify the controls you want to appear in the Toolbox. For more information, see [Deploying a Custom Control and Design-time Assemblies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee849818(v=vs.100)).  
   
 ## See also
+
 - [Choose Toolbox Items Dialog Box (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))
 - [Deploying a Custom Control and Design-time Assemblies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee849818(v=vs.100))
 - [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)

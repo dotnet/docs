@@ -95,6 +95,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
  A state which represents the completion of the state machine.  
   
 ## See also
+
 - [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md)
 - [StateMachine Activity Designer](/visualstudio/workflow-designer/statemachine-activity-designer)
 - [State Activity Designer](/visualstudio/workflow-designer/state-activity-designer)

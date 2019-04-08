@@ -69,6 +69,7 @@ An important feature of the Windows Forms <xref:System.Windows.Forms.MonthCalend
     ```  
   
 ## See also
+
 - [MonthCalendar Control](monthcalendar-control-windows-forms.md)
 - [How to: Change the Windows Forms MonthCalendar Control's Appearance](how-to-change-monthcalendar-control-appearance.md)
 - [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](display-specific-days-in-bold-with-wf-monthcalendar-control.md)

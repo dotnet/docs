@@ -48,6 +48,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     >  These properties only affect selected text, or, if no text is selected, the text that is typed at the current location of the insertion point. For information on selecting text programmatically, see <xref:System.Windows.Forms.TextBoxBase.Select%2A>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBox>
 - [RichTextBox Control](richtextbox-control-windows-forms.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

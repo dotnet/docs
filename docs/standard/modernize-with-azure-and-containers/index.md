@@ -151,7 +151,6 @@ Next, as the ideal scenario for many existing .NET Framework applications to mig
 
 Going even further, you could extend your existing Cloud-Optimized application by adding a few microservices for specific scenarios. This would move you partially to the level of Cloud-Native model, which is not the main focus of the present guidance.
 
-
 ## What this guide does not cover
 
 This guide covers a specific subset of the example scenarios, as shown in Figure 1-7. This guide focuses only on lift and shift scenarios, and ultimately, on the Cloud-Optimized model. In the Cloud-Optimized model, a .NET Framework application is modernized by using Windows Containers, plus additional components like monitoring and CI/CD pipelines. Each component is fundamental to deploying applications to the cloud, faster, and with agility.

@@ -34,9 +34,7 @@ A duplex service contract is a message exchange pattern in which both endpoints 
  The configuration for the service must be set up to provide a binding that supports both session communication and duplex communication. The `wsDualHttpBinding` element supports session communication and allows duplex communication by providing dual HTTP connections, one for each direction.  
   
  On the client, you must configure an address that the server can use to connect to the client, as shown in the following sample configuration.  
-  
-  
-  
+
 > [!NOTE]
 >  Non-duplex clients that fail to authenticate using a secure conversation typically throw a <xref:System.ServiceModel.Security.MessageSecurityException>. However, if a duplex client that uses a secure conversation fails to authenticate, the client receives a <xref:System.TimeoutException> instead.  
   
@@ -84,6 +82,7 @@ binding.ClientBaseAddress = New Uri("http://localhost:8000/DuplexTestUsingCode/C
 >  The duplex model does not automatically detect when a service or client closes its channel. So if a client unexpectedly terminates, by default the service will not be notified, or if a client unexpectedly terminates, the service will not be notified. Clients and services can implement their own protocol to notify each other if they so choose.  
   
 ## See also
+
 - [Duplex](../../../../docs/framework/wcf/samples/duplex.md)
 - [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
 - [How to: Create a Channel Factory and Use it to Create and Manage Channels](../../../../docs/framework/wcf/feature-details/how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md)

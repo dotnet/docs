@@ -184,7 +184,6 @@ The following types are the same size on 32-bit and 64-bit Windows, despite thei
 | 32    | `HRESULT`        | `long`               | `int`    |                                      |
 | 32    | `NTSTATUS`       | `long`               | `int`    |                                      |
 
-
 The following types, being pointers, do follow the width of the platform. Use `IntPtr`/`UIntPtr` for these.
 
 | Signed Pointer Types (use `IntPtr`) | Unsigned Pointer Types (use `UIntPtr`) |

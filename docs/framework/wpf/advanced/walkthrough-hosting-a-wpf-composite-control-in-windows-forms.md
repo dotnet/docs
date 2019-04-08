@@ -29,7 +29,6 @@ You need Visual Studio to complete this walkthrough.
 
  The following image shows a WPF composite control: 
 
-  
  ![Screenshot that shows a simple WPF control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-presentation-foundation-composite-control.png)  
   
 ### Creating the Project  
@@ -318,6 +317,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
  Build and run the application. Click the different radio buttons to see the effect on the WPF composite control.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

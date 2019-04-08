@@ -147,8 +147,8 @@ The following code example shows how to send data to a web server and read the d
 [!code-csharp[SendDataUsingWebRequest](../../../samples/snippets/csharp/VS_Snippets_Network/SendDataUsingWebRequest/cs/WebRequestPostExample.cs)]
 [!code-vb[SendDataUsingWebRequest](../../../samples/snippets/visualbasic/VS_Snippets_Network/SendDataUsingWebRequest/vb/WebRequestPostExample.vb)]
 
-  
 ## See also
+
 - [Creating internet requests](creating-internet-requests.md)
 - [Using streams on the network](using-streams-on-the-network.md)
 - [Accessing the internet through a proxy](accessing-the-internet-through-a-proxy.md)

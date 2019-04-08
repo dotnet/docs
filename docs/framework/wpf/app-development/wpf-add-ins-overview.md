@@ -15,9 +15,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 ---
 # WPF Add-Ins Overview
 <a name="Introduction"></a> The .NET Framework includes an add-in model that developers can use to create applications that support add-in extensibility. This add-in model allows the creation of add-ins that integrate with and extend application functionality. In some scenarios, applications also need to display user interfaces that are provided by add-ins. This topic shows how WPF augments the .NET Framework add-in model to enable these scenarios, the architecture behind it, its benefits, and its limitations.  
-  
 
-  
 <a name="Requirements"></a>   
 ## Prerequisites  
  Familiarity with the .NET Framework add-in model is required. For more information, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).  
@@ -277,6 +275,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
  By default, when multiple application domains are used, the various .NET Framework assemblies required by each application are all loaded into that application's domain. As a result, the time required for creating new application domains and starting applications in them might affect performance. However, the .NET Framework provides a way for you to reduce start times by instructing applications to share assemblies across application domains if they are already loaded. You do this by using the <xref:System.LoaderOptimizationAttribute> attribute, which must be applied to the entry point method (`Main`). In this case, you must use only code to implement your application definition (see [Application Management Overview](application-management-overview.md)).  
   
 ## See also
+
 - <xref:System.LoaderOptimizationAttribute>
 - [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [Application Domains](../../app-domains/application-domains.md)

@@ -287,7 +287,6 @@ In addition, you can define your own binding elements and insert them between an
 
 For a discussion on how to use a custom binding to modify a system-provided binding, see [How to: Customize a System-Provided Binding](../../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md).
 
-
 ## See also
 
 - <xref:System.ServiceModel.Channels.Binding>

@@ -105,6 +105,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
 - <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

@@ -125,6 +125,7 @@ In applications, it is possible that handlers that are attached to event sources
     ```  
   
 ## See also
+
 - <xref:System.Windows.WeakEventManager>
 - <xref:System.Windows.IWeakEventListener>
 - [Routed Events Overview](routed-events-overview.md)

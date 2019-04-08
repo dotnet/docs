@@ -45,5 +45,6 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
      A 100 by 100 thumbnail image appears on the form.  
   
 ## See also
+
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)
 - [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

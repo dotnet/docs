@@ -62,6 +62,7 @@ ms.assetid: 3b7a4e13-0305-45d5-bc33-1f4133c50782
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.TitleBar>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

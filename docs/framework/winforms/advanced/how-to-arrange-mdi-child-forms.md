@@ -42,6 +42,7 @@ Often, applications will have menu commands for actions such as Tile, Cascade, a
     ```  
   
 ## See also
+
 - [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
 - [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)
 - [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)

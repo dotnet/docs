@@ -308,6 +308,7 @@ Variants passed by value and by reference
 |**Variant**  *v* **(VT_BYREF** *&#124;* **VT_)**|**Ref Object**  *o*|Only if the type has not changed.|  
   
 ## See also
+
 - [Default Marshaling Behavior](default-marshaling-behavior.md)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))

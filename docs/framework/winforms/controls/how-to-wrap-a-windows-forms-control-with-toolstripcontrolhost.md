@@ -60,6 +60,7 @@ ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripControlHost>
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip Control Architecture](toolstrip-control-architecture.md)

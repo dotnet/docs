@@ -32,6 +32,7 @@ A Bézier spline is a curve specified by four points: two end points (p1 and p2)
  ![Paths](./media/aboutgdip02-art13.gif "Aboutgdip02_art13")  
   
 ## See also
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)

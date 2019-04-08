@@ -8,4 +8,3 @@
 |Version|4.5.1|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Data.Common.DbParameter.Precision?displayProperty=nameWithType></li><li><xref:System.Data.Common.DbParameter.Scale?displayProperty=nameWithType></li></ul>|
-

@@ -20,6 +20,7 @@ To round the corners of a <xref:System.Windows.Media.RectangleGeometry>, set its
 Rectangles with Rounded Corners  
   
 ## See also
+
 - [Geometry Overview](geometry-overview.md)
 - [Create a Composite Shape](how-to-create-a-composite-shape.md)
 - [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md)

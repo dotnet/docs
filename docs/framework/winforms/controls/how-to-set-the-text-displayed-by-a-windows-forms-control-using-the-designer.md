@@ -20,6 +20,7 @@ Windows Forms controls typically display some text that is related to the primar
      In the standard font dialog box, select the font, font style, size, effects (such as strikeout or underline), and script that you want.  
   
 ## See also
+
 - [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
 - [Using Fonts and Text](../advanced/using-fonts-and-text.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

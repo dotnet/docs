@@ -12,8 +12,7 @@ ms.assetid: 746ca769-a331-4435-9b95-f72a883b67c1
 ---
 # Introduction to the GlyphRun Object and Glyphs Element
 This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xref:System.Windows.Documents.Glyphs> element.  
-  
-  
+
 <a name="text_glyphrunovw_intro"></a>   
 ## Introduction to GlyphRun  
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  
@@ -89,6 +88,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
  [!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   
 ## See also
+
 - [Typography in WPF](typography-in-wpf.md)
 - [Documents in WPF](documents-in-wpf.md)
 - [Text](optimizing-performance-text.md)

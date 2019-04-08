@@ -61,6 +61,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
 3. After the executable for a service is deleted, the service might still be present in the registry. If that's the case, use the command [sc delete](/windows-server/administration/windows-commands/sc-delete) to remove the entry for the service from the registry.  
   
 ## See also
+
 - [Introduction to Windows service applications](../windows-services/introduction-to-windows-service-applications.md)
 - [How to: Create Windows services](../windows-services/how-to-create-windows-services.md)
 - [How to: Add installers to your service application](../windows-services/how-to-add-installers-to-your-service-application.md)

@@ -12,9 +12,7 @@ ms.assetid: 9b5ce5c0-e204-4320-a7a8-0b2210d62f88
 ---
 # Drawing Objects Overview
 This topic introduces <xref:System.Windows.Media.Drawing> objects and describes how to use them to efficiently draw shapes, bitmaps, text, and media. Use <xref:System.Windows.Media.Drawing> objects when you create clip art, paint with a <xref:System.Windows.Media.DrawingBrush>, or use <xref:System.Windows.Media.Visual> objects.  
-  
- 
-  
+
 <a name="whatisadrawingsection"></a>   
 ## What Is a Drawing Object?  
  A <xref:System.Windows.Media.Drawing> object describes visible content, such as a shape, bitmap, video, or a line of text. Different types of drawings describe different types of content. The following is a list of the different types of drawing objects.  
@@ -228,6 +226,7 @@ A GeometryDrawing used with a DrawingBrush
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMRetrieveDrawings](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/EnumerateDrawingsExample.xaml.cs#graphicsmmretrievedrawings)]  
   
 ## See also
+
 - <xref:System.Windows.Media.Drawing>
 - <xref:System.Windows.Media.DrawingGroup>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)

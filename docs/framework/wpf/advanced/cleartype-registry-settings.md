@@ -8,8 +8,7 @@ ms.assetid: 56f314bb-b30b-4f67-8492-8b8a9fa432ae
 ---
 # ClearType Registry Settings
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)][!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] registry settings that are used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
-  
-  
+
 <a name="overview"></a>   
 ## Technology Overview  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications that render text to a display device use [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] features to provide an enhanced reading experience. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. For more information on [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], see [ClearType Overview](cleartype-overview.md).  
@@ -109,5 +108,6 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
  ![ClearType settings in the Registry Editor.](./media/cleartype-registry-settings/cleartype-settings-registry-editor.png)  
   
 ## See also
+
 - [ClearType Overview](cleartype-overview.md)
 - [ClearType Antialiasing](/windows/desktop/gdi/cleartype-antialiasing)

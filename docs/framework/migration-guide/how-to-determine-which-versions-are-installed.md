@@ -31,7 +31,6 @@ The .NET Framework consists of two main components, which are versioned separate
 >
 > For more information about versions, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
 
-
 To get a list of the .NET Framework versions installed on a computer, you access the registry. You can either use the Registry Editor to view the registry or use code to query it:
  
 - Find newer .NET Framework versions (4.5 and later): 
@@ -48,7 +47,6 @@ To get a list of the CLR versions installed on a computer, use a tool or code:
 - [Use code to query the Environment class](#clr_b)  
 
 For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md). 
-  
 
 ## Find newer .NET Framework versions (4.5 and later)
 
@@ -165,7 +163,6 @@ The following example finds the .NET Framework 1&#8211;4 versions that are insta
 [!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed1.cs)]
 [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
 
-
 ## Find CLR versions
   
 <a name="clr_a"></a> 
@@ -202,8 +199,6 @@ Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md)
    - For the minor release identifier (for example, *0* for version 4.0), use the <xref:System.Version.Minor%2A?displayProperty=nameWithType> property.
 
    - For the entire version string (for example, *4.0.30319.18010*), use the <xref:System.Version.ToString%2A?displayProperty=nameWithType> method. This method returns a single value that reflects the version of the runtime that's executing the code. It doesn't return assembly versions or other runtime versions that may be installed on the computer.
-
-
 
 The following example uses the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to retrieve CLR version information:
 

@@ -19,6 +19,7 @@ System resources expose a number of system metrics as resources to help develope
  [!code-xaml[SystemRes_snip#FontDynamicResources](~/samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#fontdynamicresources)]  
   
 ## See also
+
 - [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
 - [Use SystemParameters](how-to-use-systemparameters.md)
 - [Use SystemFonts](how-to-use-systemfonts.md)

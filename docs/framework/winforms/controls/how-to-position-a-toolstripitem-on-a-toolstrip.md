@@ -18,6 +18,7 @@ You can move or add a <xref:System.Windows.Forms.ToolStripItem> to the left or r
 1.  Set the <xref:System.Windows.Forms.ToolStripItemAlignment> property of the <xref:System.Windows.Forms.ToolStripItem> to <xref:System.Windows.Forms.ToolStripItemAlignment.Right>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripItem>
 - <xref:System.Windows.Forms.ToolStripItemAlignment>
 - <xref:System.Windows.Forms.ToolStripItemAlignment.Left>

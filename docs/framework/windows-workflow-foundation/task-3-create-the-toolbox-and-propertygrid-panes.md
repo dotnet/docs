@@ -207,6 +207,7 @@ namespace HostingApplication
 ```  
   
 ## See also
+
 - [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md)
 - [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md)
 - [Task 2: Host the Workflow Designer](task-2-host-the-workflow-designer.md)

@@ -66,5 +66,3 @@ The next two tutorials describe how to create, configure, and use a client appli
 - [Getting started sample](samples/getting-started-sample.md)
 - [Windows Communication Foundation samples](samples/index.md)
 - [Self-Host](samples/self-host.md)
-
-

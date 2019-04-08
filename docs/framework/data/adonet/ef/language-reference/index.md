@@ -19,6 +19,7 @@ This section provides detailed documentation [!INCLUDE[linq_entities](../../../.
  [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))  
   
 ## See also
+
 - [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
 - [Getting Started](../../../../../../docs/framework/data/adonet/ef/getting-started.md)
 - [Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738547(v=vs.100))

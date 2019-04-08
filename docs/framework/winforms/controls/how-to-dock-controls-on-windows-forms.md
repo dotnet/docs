@@ -31,6 +31,7 @@ You can dock controls to the edges of your form or have them fill the control's 
     >  Inherited controls must be `Protected` to be able to be docked. To change the access level of a control, set its **Modifier** property in the Properties window.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

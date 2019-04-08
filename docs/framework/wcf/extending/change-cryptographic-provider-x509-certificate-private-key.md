@@ -71,6 +71,7 @@ This topic shows how to change the cryptographic provider used to provide an X.5
      [!code-vb[c_CustomX509Token#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#7)]  
   
 ## See also
+
 - <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>
 - <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>
 - <xref:System.IdentityModel.Tokens.SecurityKey>

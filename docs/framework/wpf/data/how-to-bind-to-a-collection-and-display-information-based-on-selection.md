@@ -40,6 +40,7 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
  [!code-vb[CollectionBinding#ToString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionBinding/VisualBasic/Person.vb#tostring)]  
   
 ## See also
+
 - [Use the Master-Detail Pattern with Hierarchical Data](how-to-use-the-master-detail-pattern-with-hierarchical-data.md)
 - [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
 - [Data Binding Overview](data-binding-overview.md)

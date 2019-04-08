@@ -20,7 +20,6 @@ Azure supports a wide range of virtual machine (VM) configurations, see [Linux a
 
 To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](https://fsharp.org/use/linux) and [Using F# on Windows](https://fsharp.org/use/windows).
 
-
 ## Using Azure Functions with F\#
 
 [Azure Functions](https://azure.microsoft.com/services/functions/) is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Your functions are connected to events in Azure storage and other cloud-hosted resources. Data flows into your F# functions via function arguments. You can use your development language of choice, trusting Azure to scale as needed.
@@ -84,7 +83,6 @@ Azure Notification Hubs can be used with F# in two ways:
 
 1. Through the creation of F# Azure Functions which send results to a notification hub. See [Azure Function output triggers for Notification Hubs](/azure/azure-functions/functions-bindings-notification-hubs), or
 2. By using the [.NET SDK for Azure](https://blogs.msdn.microsoft.com/azuremobile/2014/04/08/push-notifications-using-notification-hub-and-net-backend/). Note these examples are in C#.
-
 
 ## Implementing WebHooks on Azure with F\#
 

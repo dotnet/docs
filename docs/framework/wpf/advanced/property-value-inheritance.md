@@ -9,9 +9,7 @@ ms.assetid: d7c338f9-f2bf-48ed-832c-7be58ac390e4
 ---
 # Property Value Inheritance
 Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system. Property value inheritance enables child elements in a tree of elements to obtain the value of a particular property from parent elements, inheriting that value as it was set anywhere in the nearest parent element. The parent element might also have obtained its value through property value inheritance, so the system potentially recurses all the way to the page root. Property value inheritance is not the default property system behavior; a property must be established with a particular metadata setting in order to cause that property to initiate property value inheritance on child elements.  
-  
 
-  
 <a name="Property_Value_Inheritance_is_Containment_Inheritance"></a>   
 ## Property Value Inheritance Is Containment Inheritance  
  "Inheritance" as a term here is not quite the same concept as inheritance in the context of types and general object-oriented programming, where derived classes inherit member definitions from their base classes. That meaning of inheritance is also active in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]: properties defined in various base classes are exposed as attributes for derived [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] classes when used as elements, and exposed as members for code. Property value inheritance is particularly about how property values can inherit from one element to another on the basis of the parent-child relationships within a tree of elements. That tree of elements is most directly visible when nesting elements inside other elements as you define applications in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup. Trees of objects can also be created programmatically by adding objects to designated collections of other objects, and property value inheritance works the same way in the finished tree at run time.  
@@ -36,6 +34,7 @@ Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../.
  Property inheritance works by traversing a tree of elements. This tree is often parallel to the logical tree. However, whenever you include a WPF core-level object in the markup that defines an element tree, such as a <xref:System.Windows.Media.Brush>, you have created a discontinuous logical tree. A true logical tree does not conceptually extend through the <xref:System.Windows.Media.Brush>, because the logical tree is a WPF framework-level concept. You can see this reflected in the results when using the methods of <xref:System.Windows.LogicalTreeHelper>. However, property value inheritance can bridge this gap in the logical tree and can still pass inherited values through, so long as the inheritable property was registered as an attached property and no deliberate inheritance-blocking boundary (such as a <xref:System.Windows.Controls.Frame>) is encountered.  
   
 ## See also
+
 - [Dependency Property Metadata](dependency-property-metadata.md)
 - [Attached Properties Overview](attached-properties-overview.md)
 - [Dependency Property Value Precedence](dependency-property-value-precedence.md)

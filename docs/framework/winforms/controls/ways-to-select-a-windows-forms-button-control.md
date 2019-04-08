@@ -23,6 +23,7 @@ A Windows Forms button can be selected in the following ways:
 -   Call the <xref:System.Windows.Forms.Button.PerformClick%2A> method to select the button programmatically.  
   
 ## See also
+
 - [Button Control Overview](button-control-overview-windows-forms.md)
 - [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
 - [Button Control](button-control-windows-forms.md)

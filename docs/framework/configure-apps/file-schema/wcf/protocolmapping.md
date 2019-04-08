@@ -54,5 +54,6 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>

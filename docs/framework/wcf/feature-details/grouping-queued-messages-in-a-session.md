@@ -70,15 +70,12 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
 ### Code for the Service  
  [!code-csharp[S_Msmq_Session#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_session/cs/service.cs#1)]
  [!code-vb[S_Msmq_Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/service.vb#1)]  
-  
-  
-  
+
 ### Code for the Client  
  [!code-csharp[S_Msmq_Session#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_session/cs/client.cs#3)]
  [!code-vb[S_Msmq_Session#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/client.vb#3)]  
-  
-  
-  
+
 ## See also
+
 - [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)

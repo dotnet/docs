@@ -27,6 +27,7 @@ You can resize individual controls, and you can resize multiple controls of the 
 2.  On the **Format** menu, choose **Make Same Size**, and select one of the four options. The first three commands change the dimensions of the controls to match the first-selected control.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

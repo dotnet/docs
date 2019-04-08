@@ -116,6 +116,7 @@ This topic describes the different approaches for animating properties: storyboa
  For more information, see the <xref:System.Windows.Media.CompositionTarget.Rendering> page.  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Storyboards Overview](storyboards-overview.md)
 - [Animation and Timing System Overview](animation-and-timing-system-overview.md)

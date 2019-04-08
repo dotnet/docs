@@ -26,6 +26,7 @@ This example shows how to override default dependency property metadata that com
 [!code-vb[PropertySystemEsoterics#MyAdvancedStateControl](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/sdksamplelibrary/class1.vb#myadvancedstatecontrol)]  
   
 ## See also
+
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)

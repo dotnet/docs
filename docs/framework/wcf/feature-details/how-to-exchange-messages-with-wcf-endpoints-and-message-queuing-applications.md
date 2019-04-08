@@ -28,13 +28,9 @@ You can integrate existing Message Queuing (MSMQ) applications with Windows Comm
      [!code-vb[S_MsmqToWcf#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmqtowcf/vb/service.vb#2)]  
   
 3.  Create a configuration file that specifies the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>.  
-  
-  
-  
+
 4.  Instantiate a <xref:System.ServiceModel.ServiceHost> object that uses the configured binding.  
-  
-  
-  
+
 ### To create a WCF client that sends messages to a MSMQ receiver application  
   
 1.  Define an interface that defines the service contract for the WCF client that sends queued messages to the MSMQ receiver, as shown in the following example code.  
@@ -57,6 +53,7 @@ You can integrate existing Message Queuing (MSMQ) applications with Windows Comm
      [!code-csharp[S_WcfToMsmq#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/client.cs#4)]  
   
 ## See also
+
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
 - [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)
 - [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)

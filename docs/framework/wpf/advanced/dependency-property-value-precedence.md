@@ -10,8 +10,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ---
 # Dependency Property Value Precedence
 <a name="introduction"></a> This topic explains how the workings of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
-    
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] classes, and have read [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
@@ -121,6 +120,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
  The <xref:System.Windows.DependencyObject.ClearValue%2A> method provides an expedient means to clear any locally applied value from a dependency property that is set on an element. However, calling <xref:System.Windows.DependencyObject.ClearValue%2A> is not a guarantee that the default as established in metadata during property registration is the new effective value. All of the other participants in value precedence are still active. Only the locally set value has been removed from the precedence sequence. For example, if you call <xref:System.Windows.DependencyObject.ClearValue%2A> on a property where that property is also set by a theme style, then the theme value is applied as the new value rather than the metadata-based default. If you want to take all property value participants out of the process and set the value to the registered metadata default, you can obtain that default value definitively by querying the dependency property metadata, and then you can use the default value to locally set the property with a call to <xref:System.Windows.DependencyObject.SetValue%2A>.  
   
 ## See also
+
 - <xref:System.Windows.DependencyObject>
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](dependency-properties-overview.md)

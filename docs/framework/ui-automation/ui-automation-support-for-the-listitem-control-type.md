@@ -83,6 +83,7 @@ ms.assetid: 34f533bf-fc14-4e78-8fee-fb7107345fab
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.ListItem>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

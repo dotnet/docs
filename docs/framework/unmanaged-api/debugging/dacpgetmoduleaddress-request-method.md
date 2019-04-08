@@ -41,7 +41,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 - Return the value obtained from calling the `Request` method on the `IXCLRDataModule*` parameter with the following parameters: `((uint32) 0xf0000000, 0, 0, (uint32) sizeof(*this), (uint8*) this)`
 
-
 ## Requirements
 
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

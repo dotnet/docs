@@ -31,6 +31,7 @@ This example shows how to use <xref:System.Windows.Media.Animation.Clock> object
  For an example showing how to interactively control a <xref:System.Windows.Media.Animation.Clock> after it starts, see [Interactively Control a Clock](how-to-interactively-control-a-clock.md).  
   
 ## See also
+
 - [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)
 - [Animate a Property Without Using a Storyboard](how-to-animate-a-property-without-using-a-storyboard.md)
 - [Property Animation Techniques Overview](property-animation-techniques-overview.md)

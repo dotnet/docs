@@ -86,6 +86,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>
 - <xref:System.IdentityModel.Services.SessionAuthenticationModule>
 - <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>

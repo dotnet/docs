@@ -230,4 +230,3 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
 #### To clean up after the sample  
   
 -   For security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
-  

@@ -23,6 +23,7 @@ To standardize the layout of the user interface (UI) of your Windows-based appli
 3.  On the **Format** menu, point to **Align**, and then click one of the seven choices available.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)

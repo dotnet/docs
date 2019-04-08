@@ -76,6 +76,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     ```  
   
 ## See also
+
 - [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
 - [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md)
 - [Pens, Lines, and Rectangles in GDI+](pens-lines-and-rectangles-in-gdi.md)

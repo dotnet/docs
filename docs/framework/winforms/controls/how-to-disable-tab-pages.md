@@ -96,6 +96,7 @@ On some occasions, you will want to restrict access to data that is available wi
     ```  
   
 ## See also
+
 - [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)
 - [How to: Add a Control to a Tab Page](how-to-add-a-control-to-a-tab-page.md)
 - [How to: Add and Remove Tabs with the Windows Forms TabControl](how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)

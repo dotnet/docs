@@ -74,6 +74,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.Control.Layout>
 - <xref:System.Windows.Forms.ToolStrip.LayoutCompleted>

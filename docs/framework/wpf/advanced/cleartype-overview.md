@@ -8,8 +8,7 @@ ms.assetid: 7e2392e0-75dc-463d-a716-908772782431
 ---
 # ClearType Overview
 This topic provides an overview of the [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] technology found in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
-  
-  
+
 <a name="overview"></a>   
 ## Technology Overview  
  [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors.  [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. Before [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], the smallest level of detail that a computer could display was a single pixel, but with [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] running on an LCD monitor, we can now display features of text as small as a fraction of a pixel in width. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations.  
@@ -61,4 +60,5 @@ Text with ClearType y-direction antialiasing
  [ClearType Tuner PowerToy](https://www.microsoft.com/typography/ClearTypePowerToy.mspx)  
   
 ## See also
+
 - [ClearType Registry Settings](cleartype-registry-settings.md)

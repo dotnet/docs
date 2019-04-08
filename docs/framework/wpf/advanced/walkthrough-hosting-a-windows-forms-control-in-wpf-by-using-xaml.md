@@ -10,7 +10,7 @@ ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7
   
  This walkthrough shows you how to host a Windows Forms <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page by using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
- For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF by Using XAML Sample](https://go.microsoft.com/fwlink/?LinkID=160000).  
+ For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF by Using XAML Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/HostingWfInWpfWithXaml).
   
 ## Prerequisites  
 
@@ -45,6 +45,7 @@ You need Visual Studio to complete this walkthrough.
 6.  Press F5 to build and run the application.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

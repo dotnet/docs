@@ -28,6 +28,7 @@ Sometimes you will want to display only some of the columns that are available i
     >  You can also hide a column when adding it by clearing the **Visible** check box in the **Add Column** dialog box.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=nameWithType>
 - [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](add-and-remove-columns-in-the-datagrid-using-the-designer.md)

@@ -67,6 +67,7 @@ ms.assetid: 110cceea-5932-4955-a1a6-13afc51422b2
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.Hyperlink>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

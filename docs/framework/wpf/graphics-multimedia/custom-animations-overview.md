@@ -118,6 +118,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
  For more information, see the <xref:System.Windows.Media.CompositionTarget.Rendering> page.  
   
 ## See also
+
 - <xref:System.Windows.Media.Animation.AnimationTimeline>
 - <xref:System.Windows.Media.Animation.IKeyFrame>
 - [Property Animation Techniques Overview](property-animation-techniques-overview.md)

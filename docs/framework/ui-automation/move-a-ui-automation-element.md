@@ -25,4 +25,5 @@ ms.assetid: 4042cb44-e27e-4a03-ac36-9be1eed65b47
 [!code-vb[WindowMove#1300](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic/windowmove.vb#1300)]  
   
 ## See also
+
 - [WindowPattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/WindowMove)

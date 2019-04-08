@@ -99,4 +99,5 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

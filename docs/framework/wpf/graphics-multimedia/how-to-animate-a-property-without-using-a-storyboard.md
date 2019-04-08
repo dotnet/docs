@@ -31,6 +31,7 @@ This example shows one way to apply an animation to a property without using a <
  There are other ways to animate without using <xref:System.Windows.Media.Animation.Storyboard> objects; for more information, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.Animation.AnimationTimeline>
 - <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>
 - <xref:System.Windows.Media.Animation>

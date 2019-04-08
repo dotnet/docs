@@ -101,6 +101,7 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 - <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>

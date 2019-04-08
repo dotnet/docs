@@ -38,4 +38,3 @@ This section registers a new standard endpoint in the extensions section in a ma
   </standardEndpoints>
 </system.serviceModel>
 ```  
-  

@@ -8,9 +8,7 @@ ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 ---
 # Multimedia Overview
 The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enable you to integrate audio and video into your applications to enhance the user experience. This topic introduces the multimedia features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
-  
- 
-  
+
 <a name="mediaapi"></a>   
 ## Media API  
  The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] 10 control for media playback. Which class you use, depends on the scenario.  
@@ -107,6 +105,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
  See the [Drawing Objects Overview](drawing-objects-overview.md) for more information about <xref:System.Windows.Media.Drawing> objects.  
   
 ## See also
+
 - <xref:System.Windows.Media.DrawingGroup>
 - [Layout](../advanced/layout.md)
 - [How-to Topics](audio-and-video-how-to-topics.md)

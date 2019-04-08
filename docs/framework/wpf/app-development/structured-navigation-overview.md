@@ -14,9 +14,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
  However, other types of applications have pages that do need to know when they have been navigated between. For example, consider a human resources application that has one page to list all the employees in an organization—the "List Employees" page. This page could also allow users to add a new employee by clicking a hyperlink. When clicked, the page navigates to an "Add an Employee" page to gather the new employee's details and return them to the "List Employees" page to create the new employee and update the list. This style of navigation is similar to calling a method to perform some processing and return a value, which is known as structured programming. As such, this style of navigation is known as *structured navigation*.  
   
  The <xref:System.Windows.Controls.Page> class doesn't implement support for structured navigation. Instead, the <xref:System.Windows.Navigation.PageFunction%601> class derives from <xref:System.Windows.Controls.Page> and extends it with the basic constructs required for structured navigation. This topic shows how to establish structured navigation using <xref:System.Windows.Navigation.PageFunction%601>.  
-  
- 
-  
+
 <a name="Structured_Navigation"></a>   
 ## Structured Navigation  
  When one page calls another page in a structured navigation, some or all of the following behaviors are required:  
@@ -164,6 +162,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
  In other cases, applications may have complex navigation topologies that depend on structured navigation to operate effectively. For more information, see [Navigation Topologies Overview](navigation-topologies-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Navigation.PageFunction%601>
 - <xref:System.Windows.Navigation.NavigationService>
 - [Navigation Topologies Overview](navigation-topologies-overview.md)

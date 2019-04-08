@@ -28,6 +28,7 @@ This example shows how to implement the master-detail scenario.
  The technique is slightly different when you are using [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data. For an example, see [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md).  
   
 ## See also
+
 - <xref:System.Windows.HierarchicalDataTemplate>
 - [Bind to a Collection and Display Information Based on Selection](how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
 - [Data Binding Overview](data-binding-overview.md)

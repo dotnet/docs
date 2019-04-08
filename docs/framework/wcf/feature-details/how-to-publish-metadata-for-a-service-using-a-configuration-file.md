@@ -87,21 +87,13 @@ namespace Metadata.Samples
 ### To publish metadata for a WCF service using an application configuration file  
   
 1.  Within the App.config file, after the closing `</services>` element, create a `<behaviors>` element.  
-  
-  
-  
+
 2.  Within the `<behaviors>` element, add a `<serviceBehaviors>` element.  
-  
-  
-  
+
 3.  Add a `<behavior>` element to the `<serviceBehaviors>` element and specify a value for the `name` attribute of the `<behavior>` element.  
-  
-  
-  
+
 4.  Add a `<serviceMetadata>` element to the `<behavior>` element. Set the `httpGetEnabled` attribute to `true` and the `policyVersion` attribute to Policy15. `httpGetEnabled` allows the service to respond to metadata requests made by an HTTP GET request. `policyVersion` tells the service to conform to WS-Policy 1.5 when generating metadata.  
-  
-  
-  
+
 5.  Add a `behaviorConfiguration` attribute to the `<service>` element and specify the `name` attribute of the `<behavior>` element added in step 1, as shown in the following code example.  
   
     ```xml  
@@ -256,6 +248,7 @@ namespace Metadata.Samples
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)
 - [Self-Host](../../../../docs/framework/wcf/samples/self-host.md)

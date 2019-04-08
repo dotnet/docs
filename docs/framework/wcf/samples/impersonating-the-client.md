@@ -118,4 +118,3 @@ client.ClientCredentials.Windows.AllowedImpersonationLevel = TokenImpersonationL
      You are then prompted for a password. Enter the password for the account you previously specified.  
   
 5.  When you run the client, note the identity before and after running it with different credentials.  
-  

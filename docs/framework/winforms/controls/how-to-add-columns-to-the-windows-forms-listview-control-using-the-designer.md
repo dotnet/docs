@@ -25,6 +25,7 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control can display multi
 3.  Use the **Add** button to add new columns. You can then select the column header and set its text (the caption of the column), text alignment, and width.  
   
 ## See also
+
 - [ListView Control Overview](listview-control-overview-windows-forms.md)
 - [How to: Add and Remove Items with the Windows Forms ListView Control](how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)
 - [How to: Display Subitems in Columns with the Windows Forms ListView Control](how-to-display-subitems-in-columns-with-the-windows-forms-listview-control.md)

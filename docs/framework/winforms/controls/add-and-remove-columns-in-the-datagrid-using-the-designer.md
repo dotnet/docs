@@ -36,6 +36,7 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control must contain 
 3.  Click the **Remove** button to delete the column, causing it to disappear from the designer.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project)
 - [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)

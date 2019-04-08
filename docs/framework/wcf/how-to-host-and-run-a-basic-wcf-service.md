@@ -25,7 +25,6 @@ In this tutorial, you learn how to:
 > - Update the configuration file.
 > - Start the WCF service and verify it's running.
 
-
 ## Create and configure a console app project for hosting the service
 
 1. Create a console app project in Visual Studio: 
@@ -170,7 +169,6 @@ Make the following changes to the code:
     
     For information about how this code works, see [Service hosting program steps](#service-hosting-program-steps).
 
-
 2. Update the project properties:
 
    1. In the **Solution Explorer** window, select the **GettingStartedHost** folder, and then select **Properties** from the shortcut menu.
@@ -183,7 +181,6 @@ Make the following changes to the code:
 
    3. From the **File** menu, select **Save All**.
 
-
 ## Verify the service is working
 
 1. Build the solution, and then run the **GettingStartedHost** console application from inside Visual Studio. 
@@ -194,7 +191,6 @@ Make the following changes to the code:
    
    > [!NOTE]
    > Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). 
-
 
 ## Service hosting program steps
 
@@ -217,7 +213,6 @@ The steps in the code you added to host the service are described as follows:
 > When you add a WCF service library, Visual Studio hosts it for you if you debug it by starting a service host. To avoid conflicts, you can prevent Visual Studio from hosting the WCF service library. 
 > 1. Select the **GettingStartedLib** project in **Solution Explorer** and choose **Properties** from the shortcut menu.
 > 2. Select **WCF Options** and uncheck **Start WCF Service Host when debugging another project in the same solution**.
-
 
 ## Next steps
 

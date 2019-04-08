@@ -10,8 +10,7 @@ ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
 ---
 # Application Management Overview
 All applications tend to share a common set of functionality that applies to application implementation and management. This topic provides an overview of the functionality in the <xref:System.Windows.Application> class for creating and managing applications.  
-   
-  
+
 ## The Application Class  
  In WPF, common application-scoped functionality is encapsulated in the <xref:System.Windows.Application> class. The <xref:System.Windows.Application> class includes the following functionality:  
   
@@ -119,8 +118,7 @@ All applications tend to share a common set of functionality that applies to app
 <a name="Application_Lifetime"></a>   
 ## Application Lifetime  
  The lifetime of a WPF application is marked by several events that are raised by <xref:System.Windows.Application> to let you know when your application has started, has been activated and deactivated, and has been shut down.  
-  
-  
+
 <a name="Splash_Screen"></a>   
 ### Splash Screen  
  Starting in the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], you can specify an image to be used in a startup window, or *splash screen*. The <xref:System.Windows.SplashScreen> class makes it easy to display a startup window while your application is loading. The <xref:System.Windows.SplashScreen> window is created and shown before <xref:System.Windows.Application.Run%2A> is called. For more information, see [Application Startup Time](../advanced/application-startup-time.md) and [Add a Splash Screen to a WPF Application](how-to-add-a-splash-screen-to-a-wpf-application.md).  
@@ -351,6 +349,7 @@ All applications tend to share a common set of functionality that applies to app
  ![XBAP &#45; Application Object Events](./media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
   
 ## See also
+
 - <xref:System.Windows.Application>
 - [WPF Windows Overview](wpf-windows-overview.md)
 - [Navigation Overview](navigation-overview.md)

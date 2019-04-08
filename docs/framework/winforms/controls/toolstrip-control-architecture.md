@@ -371,6 +371,7 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 -   <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
   
 ## See also
+
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip Technology Summary](toolstrip-technology-summary.md)
 - [ToolStrip Control](toolstrip-control-windows-forms.md)

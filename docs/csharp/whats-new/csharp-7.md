@@ -205,7 +205,7 @@ characteristics. The following method returns a **reference** to that storage in
 
 You can declare the return value as a `ref` and modify that value in the matrix, as shown in the following code:
 
-[!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/program.cs#AssignRefReturn "Assign ref return")]
+[!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/Program.cs#AssignRefReturn "Assign ref return")]
 
 The C# language has several rules that protect you from misusing
 the `ref` locals and returns:

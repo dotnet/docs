@@ -33,7 +33,7 @@ See [.NET Core 1.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 For download links and more information, see [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).
 
-# [.NET Core 3.0 Preview 3](#tab/netcore30)
+# [.NET Core 3.0](#tab/netcore30)
 
 .NET Core 3.0 Preview 3 is supported on the following versions of macOS:
 
@@ -65,7 +65,7 @@ ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 
 Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [1.0.0 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0-known-issues.md) and [1.0.1 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.1-known-issues.md) topics.
 
-# [.NET Core 3.0 Preview 3](#tab/netcore30)
+# [.NET Core 3.0](#tab/netcore30)
 
 Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Release notes](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) topic for the version you have installed.
 

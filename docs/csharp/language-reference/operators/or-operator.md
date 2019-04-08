@@ -16,7 +16,7 @@ Binary `|` operators are predefined for the integral types and `bool`. For integ
 
 ## Remarks
 
-The binary `|` operator evaluates both operands regardless of the first one's value, in contrast to the [conditional-OR operator](conditional-or-operator.md) `||`.
+The binary `|` operator evaluates both operands regardless of the first one's value, in contrast to the [conditional-OR operator](boolean-logical-operators.md#conditional-logical-or-operator-) `||`.
 
 User-defined types can overload the `|` operator (see [operator](../keywords/operator.md)).
 

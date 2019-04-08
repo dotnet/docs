@@ -163,9 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%28System.Boolean%29?displayProperty=nameWithType> method and passes it a `true` value.  
-  
- Flushing the text reader will not flush its underlying encoder unless you explicitly call `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
+ This implementation of `Close` calls the <xref:System.IO.TextReader.Dispose%28System.Boolean%29?displayProperty=nameWithType> method and passes it a `true` value.  
   
 > [!NOTE]
 >  In derived classes, do not override the <xref:System.IO.TextReader.Close%2A> method. Instead, override the <xref:System.IO.TextReader.Dispose%28System.Boolean%29?displayProperty=nameWithType> method to add code for releasing resources.  

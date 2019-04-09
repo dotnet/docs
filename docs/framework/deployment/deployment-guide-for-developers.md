@@ -37,7 +37,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
  Important notes:
 
 > [!NOTE]
-> The phrase ".NET Framework 4.5 and its point releases"  refers to .NET Framework 4.5 and all later versions.
+> The phrase ".NET Framework 4.5 and its point releases" refers to .NET Framework 4.5 and all later versions.
 
 - Versions of the .NET Framework from .NET Framework 4.5.1 through [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to .NET Framework 4.5, which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 

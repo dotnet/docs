@@ -31,7 +31,7 @@ Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicit
 * When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file.
 * If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
     * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
-* If you need a specific version of the `NetStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
+* If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
 * Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage in .NET Framework projects. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
 
 ## Implicit version for some package references
@@ -48,10 +48,10 @@ When referencing Microsoft.AspNetCore.App or .All, do not specify the version of
 </ItemGroup>
 ```
 
-These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. Applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the  metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application&mdash;the ASP.NET Core shared framework contains these assets. The assets in the shared framework are precompiled to improve application startup time. For more information, see "shared framework" in [.NET Core distribution packaging](/dotnet/core/build/distribution-packaging).
+These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. Applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the  metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application&mdash;the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information, see "shared framework" in [.NET Core distribution packaging](/dotnet/core/build/distribution-packaging).
 
 If a version *is* specified, it is treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as a *maximum* version for self-contained deployments. This can have the following consequences:
-* If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process will fail to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause an application deployment failure.
+* If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process will fail to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
 * If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version is not specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
 
 ## Default compilation includes in .NET Core projects

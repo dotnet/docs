@@ -20,6 +20,9 @@ The following tables contain information about all of the data transforms suppor
 
 <xref:Microsoft.ML.LightGbmExtensions.LightGbm(Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Int32)?text=LightGbm(Options)>
 
+
+[LghtGbmAsALink](<xref:Microsoft.ML.LightGbmExtensions.LightGbm(Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Int32)>)
+
 ## Combiners and segregators
 
 | Transform | Definition |

@@ -238,14 +238,14 @@
 ## Remarks  
  You set this field to one of the <xref:System.Runtime.InteropServices.CallingConvention> enumeration members. The default value for the <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention> field is <xref:System.Runtime.InteropServices.CallingConvention.Winapi>, which in turn defaults to <xref:System.Runtime.InteropServices.CallingConvention.StdCall> convention.  
   
- For more information, see Calling Convention in the MSDN library.  
-  
    
   
 ## Examples  
  In some cases, Visual Basic developers use the <xref:System.Runtime.InteropServices.DllImportAttribute>, instead of the `Declare` statement, to define a DLL function in managed code. Setting the <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention> field is one of those cases.  
   
- System.Runtime.InteropServices.DllImportAttribute#1  
+ [!code-cpp[System.Runtime.InteropServices.DllImportAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.runtime.interopservices.dllimportattribute/cpp/source.cpp#1)]
+ [!code-csharp[System.Runtime.InteropServices.DllImportAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.dllimportattribute/cs/source.cs#1)]
+ [!code-vb[System.Runtime.InteropServices.DllImportAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.dllimportattribute/vb/source.vb#1)]  
   
  ]]></format>
         </remarks>

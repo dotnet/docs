@@ -83,7 +83,7 @@ End Class
   
  The following illustration shows the output for the preceding [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup and code-behind.  
   
- ![Screenshot that shows the message from the preceding code example.](./media/index/messagebox-text-output.png)  
+ ![A message box saying "You clicked the ellipse!"](./media/index/messagebox-text-output.png)  
   
  For more information, see [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md). For an introductory sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   

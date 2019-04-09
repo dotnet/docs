@@ -29,6 +29,7 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A>
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

@@ -47,13 +47,13 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 ##### To verify or change the database log on  
   
-1.  On the Windows **Start** menu, point to **All Programs**, **Microsoft SQL Server 2005**, point to **Configuration Tools**, and then click **SQL Server Configuration Manager**.  
+1. On the Windows **Start** menu, point to **All Programs**, **Microsoft SQL Server 2005**, point to **Configuration Tools**, and then click **SQL Server Configuration Manager**.  
   
-2.  In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
+2. In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
   
-3.  In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Properties**.  
+3. In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Properties**.  
   
-4.  Click the **Log On** tab and verify how you are trying to log on to the server.  
+4. Click the **Log On** tab and verify how you are trying to log on to the server.  
   
      In most cases, **Local System** works.  
   
@@ -64,9 +64,9 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 ##### To enable the Named Pipes protocol  
   
-1.  In the left pane of the **SQL Server Configuration Manager**, expand **SQL Server 2005 Network Configuration**, and then click **Protocols for SQLEXPRESS**.  
+1. In the left pane of the **SQL Server Configuration Manager**, expand **SQL Server 2005 Network Configuration**, and then click **Protocols for SQLEXPRESS**.  
   
-2.  In the right pane, make sure that the **Named Pipes** protocol is enabled. If it is not, right-click **Name Pipes** and then click **Enable**.  
+2. In the right pane, make sure that the **Named Pipes** protocol is enabled. If it is not, right-click **Name Pipes** and then click **Enable**.  
   
      You will have to stop and restart the service. Follow the steps in the next block.  
   
@@ -75,11 +75,12 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 ##### To stop and restart the service  
   
-1.  In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
+1. In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
   
-2.  In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Stop**.  
+2. In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Stop**.  
   
-3.  Right-click **SQL Server (SQLEXPRESS)**, and then click **Restart**.  
+3. Right-click **SQL Server (SQLEXPRESS)**, and then click **Restart**.  
   
 ## See also
+
 - [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

@@ -54,6 +54,7 @@ Specifies that one or more declared programming elements are accessible only fro
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See also
+
 - [Public](../../../visual-basic/language-reference/modifiers/public.md)
 - [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
 - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)

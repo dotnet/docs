@@ -93,7 +93,6 @@ An uppercase `L` indicates that `endPoint` is an absolute value; a lowercase `l`
 ### Horizontal Line Command  
  Creates a horizontal line between the current point and the specified x-coordinate. `H 90` is an example of a valid horizontal line command.
 
-  
 |Syntax|  
 |------------|  
 |`H`  *x*<br /><br /> - or -<br /><br /> `h`  *x*|  
@@ -107,7 +106,6 @@ An uppercase `H` indicates that `x` is an absolute value; a lowercase `h` indica
 ### Vertical Line Command  
  Creates a vertical line between the current point and the specified y-coordinate. `v 90` is an example of a valid vertical line command.
 
-  
 |Syntax|  
 |------------|  
 |`V`  *y*<br /><br /> - or -<br /><br /> `v`  *y*|  
@@ -219,6 +217,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
  You may also use scientific notation. For example, `+1.e17` is a valid value.  
   
 ## See also
+
 - <xref:System.Windows.Shapes.Path>
 - <xref:System.Windows.Media.StreamGeometry>
 - <xref:System.Windows.Media.PathGeometry>

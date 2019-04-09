@@ -105,7 +105,11 @@ End Class
 ## 3-D Rendering  
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides a set of [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] rendering capabilities that integrate with [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] graphics support in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] in order for you to create more exciting layout, [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], and data visualization. At one end of the spectrum, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] enables you to render [!INCLUDE[TLA2#tla_2d](../../../../includes/tla2sharptla-2d-md.md)] images onto the surfaces of [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] shapes, which the following illustration demonstrates.  
   
+<<<<<<< HEAD
  ![Screenshot showing a visual 3-D sample.](./media/index/visual-three-dimensional-shape.png)  
+=======
+ ![Visual3D sample screenshot](./media/wpfintrofigure13.png "WPFIntroFigure13")  
+>>>>>>> 4407f2aabcdb297d2163eca051ac95b8eed0d9b4
   
  For more information, see [3-D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3-D Solids Sample](https://go.microsoft.com/fwlink/?LinkID=159964).  
   
@@ -124,7 +128,7 @@ End Class
 ### Images  
  Images, which include icons, backgrounds, and even parts of animations, are a core part of most applications. Because you frequently need to use images, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] exposes the ability to work with them in a variety of ways. The following illustration shows just one of those ways.  
   
- ![Styling sample screen shot](../controls/./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
+ ![Styling sample screenshot](../controls/./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")  
   
  For more information, see [Imaging Overview](imaging-overview.md).  
   
@@ -140,6 +144,7 @@ End Class
  For more information, see the [Multimedia Overview](multimedia-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Media>
 - <xref:System.Windows.Media.Animation>
 - <xref:System.Windows.Media.Media3D>

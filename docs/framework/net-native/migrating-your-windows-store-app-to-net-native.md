@@ -569,13 +569,9 @@ Other unsupported interop features include:
      Type `InnerType` isn't known to the serializer, because the members of the base class aren't traversed during serialization.  
   
 -   <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> fail to serialize a class or structure that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, the following types fail to serialize or deserialize:  
-  
-  
-  
+
 -   <xref:System.Xml.Serialization.XmlSerializer> fails to serialize the following object value, because it doesn't know the exact type of the object to be serialized:  
-  
-  
-  
+
 -   <xref:System.Xml.Serialization.XmlSerializer> fails to serialize or deserialize if the type of the serialized object is <xref:System.Xml.XmlQualifiedName>.  
   
 -   All serializers (<xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, and <xref:System.Xml.Serialization.XmlSerializer>) fail to generate serialization code for type <xref:System.Xml.Linq.XElement?displayProperty=nameWithType> or for a type that contains <xref:System.Xml.Linq.XElement>. They display build-time errors instead.  
@@ -645,6 +641,7 @@ Other unsupported interop features include:
  Enabling .NET Native on a Unit Test Library for a Windows Store apps project isn't supported and causes the project to fail to build.  
   
 ## See also
+
 - [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [.NET For Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)

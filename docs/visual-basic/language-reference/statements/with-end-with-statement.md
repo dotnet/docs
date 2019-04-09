@@ -74,6 +74,7 @@ End With
  [!code-vb[VbVbalrWithStatement#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#1)]  
   
 ## See also
+
 - <xref:System.Collections.Generic.List%601>
 - [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
 - [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)

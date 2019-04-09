@@ -15,5 +15,6 @@ This example shows how to get a collection of lines of text from a <xref:System.
  [!code-csharp[TextBox_MiscCode#_TextBox_GetLines](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml.cs#_textbox_getlines)]  
   
 ## See also
+
 - [TextBox Overview](textbox-overview.md)
 - [RichTextBox Overview](richtextbox-overview.md)

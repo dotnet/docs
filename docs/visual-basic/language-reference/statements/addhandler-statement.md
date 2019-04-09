@@ -39,6 +39,7 @@ AddHandler event, AddressOf eventhandler
  [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
 ## See also
+
 - [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
 - [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
 - [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)

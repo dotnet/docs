@@ -38,21 +38,21 @@ This sample demonstrates how to utilize the ASP.NET output cache with the WCF WE
   
 #### To run the sample  
   
-1.  Open the solution for the ASP.NET Caching Integration Sample.  
+1. Open the solution for the ASP.NET Caching Integration Sample.  
   
-2.  Press CTRL+SHIFT+B to build the solution.  
+2. Press CTRL+SHIFT+B to build the solution.  
   
-3.  If the **Solution Explorer** window is not already open, press CTRL+W+S.  
+3. If the **Solution Explorer** window is not already open, press CTRL+W+S.  
   
-4.  From the **Solution Explorer** window, right click the **Service** project and select **Start New Instance**. This launches the ASP.NET development server, which hosts the service.  
+4. From the **Solution Explorer** window, right click the **Service** project and select **Start New Instance**. This launches the ASP.NET development server, which hosts the service.  
   
-5.  From the **Solution Explorer** window, right click the **Client** project and select **Start New Instance**.  
+5. From the **Solution Explorer** window, right click the **Client** project and select **Start New Instance**.  
   
-6.  The client console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser.  
+6. The client console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser.  
   
-7.  As the sample runs, the client writes the status of the current activity.  
+7. As the sample runs, the client writes the status of the current activity.  
   
-8.  Press any key to terminate the client console application.  
+8. Press any key to terminate the client console application.  
   
 9. Press SHIFT+F5 to stop debugging the service.  
   

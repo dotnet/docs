@@ -47,4 +47,5 @@ public static void DisableWPFTabletSupport()
 ```  
   
 ## See also
+
 - [Intercepting Input from the Stylus](intercepting-input-from-the-stylus.md)

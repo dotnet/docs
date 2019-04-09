@@ -21,6 +21,7 @@ This example shows how to find the source element in an event handler.
  [!code-vb[RoutedEventSource#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventSource/VisualBasic/default.xaml.vb#handler)]  
   
 ## See also
+
 - <xref:System.Windows.RoutedEventArgs>
 - [Routed Events Overview](routed-events-overview.md)
 - [How-to Topics](events-how-to-topics.md)

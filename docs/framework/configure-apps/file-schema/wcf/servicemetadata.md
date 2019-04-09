@@ -111,6 +111,7 @@ Specifies the publication of service metadata and associated information.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

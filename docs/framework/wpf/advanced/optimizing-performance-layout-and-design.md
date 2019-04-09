@@ -64,6 +64,7 @@ The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharpt
  For more information on the logical tree, see [Trees in WPF](trees-in-wpf.md).  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)

@@ -25,7 +25,7 @@ Workflow components in the host process
 ## Interaction between Workflow Components  
  The following diagram demonstrates how workflow components interact with one another.  
   
- ![Workflow interaction](./media/workflowinteraction.gif "WorkflowInteraction")  
+ ![Diagram that shows how workflow components interact.](./media/overview/workflow-component-interatction.gif)  
   
  In the preceding diagram, the <xref:System.Activities.WorkflowInvoker.Invoke%2A> method of the <xref:System.Activities.WorkflowInvoker> class is used to invoke several workflow instances. <xref:System.Activities.WorkflowInvoker> is used for lightweight workflows that do not need management from the host; workflows that need management from the host (such as <xref:System.Activities.Bookmark> resumption) must be executed using <xref:System.Activities.WorkflowApplication.Run%2A> instead. It isn’t required to wait for one workflow instance to complete before invoking another; the runtime engine supports running multiple workflow instances simultaneously.  The workflows invoked are as follows:  
   
@@ -36,4 +36,5 @@ Workflow components in the host process
 -   A custom activity that derives from the <xref:System.Activities.CodeActivity> abstract class. The <xref:System.Activities.CodeActivity> can access run-time features (such as tracking and properties) using the <xref:System.Activities.CodeActivityContext> that is available as a parameter of the <xref:System.Activities.CodeActivity.Execute%2A> method. For more information about these run-time features, see [Workflow Tracking and Tracing](workflow-tracking-and-tracing.md) and [Workflow Execution Properties](workflow-execution-properties.md).  
   
 ## See also
+
 - [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://go.microsoft.com/fwlink/?LinkId=154901)

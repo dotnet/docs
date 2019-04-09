@@ -56,6 +56,7 @@ This topic discusses criteria for choosing among the three main transports that 
 |Tooling|Tooling represents third-party application support for a protocol for development, diagnosis, hosting, and other activities. Developing tools and software to work with the HTTP protocol signifies a particularly large investment.|HTTP|  
   
 ## See also
+
 - <xref:System.ServiceModel.BasicHttpBinding>
 - <xref:System.ServiceModel.WSHttpBinding>
 - <xref:System.ServiceModel.WSDualHttpBinding>

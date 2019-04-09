@@ -175,11 +175,11 @@ public override bool OnTryCreateFaultMessage(Exception exception,
 ### Fault Categories  
  There are generally three categories of faults:  
   
-1.  Faults that are pervasive throughout the entire stack. These faults could be encountered at any layer in the channel stack, for example InvalidCardinalityAddressingException.  
+1. Faults that are pervasive throughout the entire stack. These faults could be encountered at any layer in the channel stack, for example InvalidCardinalityAddressingException.  
   
-2.  Faults that can be encountered anywhere above a certain layer in the stack for example some errors that pertain to a flowed transaction or to security roles.  
+2. Faults that can be encountered anywhere above a certain layer in the stack for example some errors that pertain to a flowed transaction or to security roles.  
   
-3.  Faults that are directed at a single layer in the stack, for example errors like WS-RM sequence number faults.  
+3. Faults that are directed at a single layer in the stack, for example errors like WS-RM sequence number faults.  
   
  Category 1. Faults are generally WS-Addressing and SOAP faults. The base `FaultConverter` class provided by WCF converts errors corresponding to fault messages specified by WS-Addressing and SOAP so you do not have to handle conversion of these exceptions yourself.  
   
@@ -190,11 +190,11 @@ public override bool OnTryCreateFaultMessage(Exception exception,
 ### Interpreting Received Faults  
  This section provides guidance for generating the appropriate exception when receiving a fault message. The decision tree for processing a message at every layer in the stack is as follows:  
   
-1.  If the layer considers the message to be invalid, the layer should do its ‘invalid message’ processing. Such processing is specific to the layer but could include dropping the message, tracing, or throwing an exception that gets converted to a fault. Examples include security receiving a message that is not secured properly, or RM receiving a message with a bad sequence number.  
+1. If the layer considers the message to be invalid, the layer should do its ‘invalid message’ processing. Such processing is specific to the layer but could include dropping the message, tracing, or throwing an exception that gets converted to a fault. Examples include security receiving a message that is not secured properly, or RM receiving a message with a bad sequence number.  
   
-2.  Otherwise, if the message is a fault message that applies specifically to the layer, and the message is not meaningful outside the layer’s interaction, the layer should handle the error condition. An example of this is an RM Sequence Refused fault that is meaningless to layers above the RM channel and that implies faulting the RM channel and throwing from pending operations.  
+2. Otherwise, if the message is a fault message that applies specifically to the layer, and the message is not meaningful outside the layer’s interaction, the layer should handle the error condition. An example of this is an RM Sequence Refused fault that is meaningless to layers above the RM channel and that implies faulting the RM channel and throwing from pending operations.  
   
-3.  Otherwise, the message should be returned from Request() or Receive(). This includes cases where the layer recognizes the fault, but the fault just indicates that a request failed and does not imply faulting the channel and throwing from pending operations. To improve usability in such a case, the layer should implement `GetProperty<FaultConverter>` and return a `FaultConverter` derived class that can convert the fault to an exception by overriding `OnTryCreateException`.  
+3. Otherwise, the message should be returned from Request() or Receive(). This includes cases where the layer recognizes the fault, but the fault just indicates that a request failed and does not imply faulting the channel and throwing from pending operations. To improve usability in such a case, the layer should implement `GetProperty<FaultConverter>` and return a `FaultConverter` derived class that can convert the fault to an exception by overriding `OnTryCreateException`.  
   
  The following object model supports converting messages to exceptions:  
   

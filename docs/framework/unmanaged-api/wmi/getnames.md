@@ -74,7 +74,6 @@ The named returned are controlled by a combination of flags and parameters. For 
 
 The flag values in `lFlags` are bit fields
 
-
 The flags that can be passed as the `lEnumFlags` argument are bit fields that are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
 
 | Group 1 flags |Value  |Description  |
@@ -106,4 +105,5 @@ The function always allocates a new `SAFEARRAY` if it returns `WBEM_S_NO_ERROR`,
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

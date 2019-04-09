@@ -20,4 +20,5 @@ The following sections provide guidance on developing Peer Channel applications.
  Discusses transport-based and message-based security, and best practices for securing Peer Channel applications.  
   
 ## See also
+
 - [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)

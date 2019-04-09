@@ -15,8 +15,7 @@ ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
 ---
 # Painting with Images, Drawings, and Visuals
 This topic describes how to use <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, and <xref:System.Windows.Media.VisualBrush> objects to paint an area with an image, a <xref:System.Windows.Media.Drawing>, or a <xref:System.Windows.Media.Visual>.  
-    
-  
+
 <a name="prereqs"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with the different types of brushes [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides and their basic features. For an introduction, see the [WPF Brushes Overview](wpf-brushes-overview.md).  
@@ -129,6 +128,7 @@ Components of a TileBrush with multiple tiles
  For more information about the tiling features of <xref:System.Windows.Media.TileBrush> objects, see the [TileBrush Overview](tilebrush-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.ImageBrush>
 - <xref:System.Windows.Media.DrawingBrush>
 - <xref:System.Windows.Media.VisualBrush>

@@ -61,7 +61,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
   
 |Encoder binding element|Description|  
 |-----------------------------|-----------------|  
-|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|The text message encoder is the default encoder for all HTTP-based bindings and the appropriate choice for all custom bindings where interoperability is the highest concern. This encoder reads and writes standard SOAP 1.1/SOAP 1.2 text messages with no special handling for binary data. If the <xref:System.ServiceModel.Channels.MessageVersion> of a message is set to `None`, the SOAP envelope wrapper is omitted from the output and only the message body content is serialized.|  
+|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|The text message encoder is the default encoder for all HTTP-based bindings and the appropriate choice for all custom bindings where interoperability is the highest concern. This encoder reads and writes standard SOAP 1.1/SOAP 1.2 text messages with no special handling for binary data. If the <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> property of a message is set to <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>, the SOAP envelope wrapper is omitted from the output and only the message body content is serialized.|  
 |<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>|The MTOM message encoder is a text encoder that implements special handling for binary data and is not used by default in any of the standard bindings because it is strictly a case-by-case optimization utility. If the message contains binary data that exceeds a threshold where MTOM encoding yields a benefit, the data is externalized into a MIME part following the message envelope. See Enabling MTOM later in this section.|  
 |<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|The binary message encoder is the default encoder for the Net* bindings and the appropriate choice whenever both communicating parties are based on WCF. The binary message encoder uses the .NET Binary XML Format, a Microsoft-specific binary representation for XML Information Sets (Infosets) that generally yields a smaller footprint than the equivalent XML 1.0 representation and encodes binary data as a byte stream.|  
   
@@ -167,7 +167,7 @@ class MyData
      …  
     <bindings>  
       <basicHttpBinding>  
-        <binding name="ExampleBinding" transferMode="Streaming"/>  
+        <binding name="ExampleBinding" transferMode="Streamed"/>  
       </basicHttpBinding>  
     </bindings>  
      …  
@@ -233,4 +233,5 @@ public class UploadStreamMessage
 >  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
 ## See also
+
 - [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)

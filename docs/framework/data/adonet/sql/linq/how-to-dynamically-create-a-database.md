@@ -43,6 +43,7 @@ In LINQ to SQL, an object model is mapped to a relational database. Mapping is e
  [!code-vb[DLinqSubmittingChanges#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#7)]  
   
 ## See also
+
 - [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)
 - [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
 - [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)

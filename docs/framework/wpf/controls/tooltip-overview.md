@@ -11,9 +11,7 @@ ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7
 ---
 # ToolTip Overview
 A tooltip is a small pop-up window that appears when a user pauses the mouse pointer over an element, such as over a <xref:System.Windows.Controls.Button>. This topic introduces the tooltip and discusses how to create and customize tooltip content.  
-  
- 
-  
+
 <a name="what_is_a_tooltip"></a>   
 ## What Is a Tooltip?  
  When a user moves the mouse pointer over an element that has a tooltip, a window that contains tooltip content (for example, text content that describes the function of a control) appears for a specified amount of time. If the user moves the mouse pointer away from the control, the window disappears because the tooltip content cannot receive focus.  
@@ -70,6 +68,7 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
  [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.ToolTipService>
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipEventArgs>

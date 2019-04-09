@@ -68,5 +68,6 @@ HRESULT GetFileMapping (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [IMetaDataInfo Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-interface.md)
 - [CorFileMapping Enumeration](../../../../docs/framework/unmanaged-api/metadata/corfilemapping-enumeration.md)

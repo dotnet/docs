@@ -15,7 +15,7 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
   
 ### To make X.509 certificates accessible to WCF  
   
-1.  Give the account under which WCF is running read access to the file that contains the private key associated with the X.509 certificate.  
+1. Give the account under which WCF is running read access to the file that contains the private key associated with the X.509 certificate.  
   
     1.  Determine whether WCF requires read access to the private key for the X.509 certificate.  
   
@@ -65,6 +65,7 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         ```  
   
 ## See also
+
 - [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md)
 - [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

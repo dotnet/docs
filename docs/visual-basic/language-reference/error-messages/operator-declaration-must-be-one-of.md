@@ -23,11 +23,12 @@ You can declare only an operator that is eligible for overloading. The following
   
 ## To correct this error  
   
-1.  Select an operator from the set of overloadable operators.  
+1. Select an operator from the set of overloadable operators.  
   
-2.  If you need the functionality of overloading an operator that you cannot overload directly, create a `Function` procedure that takes the appropriate parameters and returns the appropriate value.  
+2. If you need the functionality of overloading an operator that you cannot overload directly, create a `Function` procedure that takes the appropriate parameters and returns the appropriate value.  
   
 ## See also
+
 - [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
 - [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
 - [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)

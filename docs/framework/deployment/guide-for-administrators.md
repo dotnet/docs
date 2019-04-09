@@ -46,13 +46,13 @@ This step-by-step article describes how a system administrator can deploy the [!
 ## Deploying the .NET Framework  
  You can use System Center 2012 Configuration Manager to deploy a silent installation of the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], where the users do not interact with the installation process. Follow these steps:  
   
-1.  [Create a collection](#creating_a_collection).  
+1. [Create a collection](#creating_a_collection).  
   
-2.  [Create a package and program for the .NET Framework redistributable](#creating_a_package).  
+2. [Create a package and program for the .NET Framework redistributable](#creating_a_package).  
   
-3.  [Select a distribution point](#select_dist_point).  
+3. [Select a distribution point](#select_dist_point).  
   
-4.  [Deploy the package](#deploying_package).  
+4. [Deploy the package](#deploying_package).  
   
 <a name="creating_a_collection"></a>   
 ### Create a collection  
@@ -60,21 +60,21 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  To create a collection:  
   
-1.  In the Configuration Manager console, choose **Assets and Compliance**.  
+1. In the Configuration Manager console, choose **Assets and Compliance**.  
   
-2.  In the **Assets and Compliance** workspace, choose **Device Collections**.  
+2. In the **Assets and Compliance** workspace, choose **Device Collections**.  
   
-3.  On the **Home** tab in the **Create** group, choose **Create Device Collection**.  
+3. On the **Home** tab in the **Create** group, choose **Create Device Collection**.  
   
-4.  On the **General** page of the **Create Device Collection Wizard**, enter a name for the collection.  
+4. On the **General** page of the **Create Device Collection Wizard**, enter a name for the collection.  
   
-5.  Choose **Browse** to specify a limiting collection.  
+5. Choose **Browse** to specify a limiting collection.  
   
-6.  On the **Membership Rules** page, choose **Add Rule**, and then choose **Direct Rule** to open the **Create Direct Membership Rule Wizard**. Choose **Next**.  
+6. On the **Membership Rules** page, choose **Add Rule**, and then choose **Direct Rule** to open the **Create Direct Membership Rule Wizard**. Choose **Next**.  
   
-7.  On the **Search for Resources** page, in the **Resource class** list, choose **System Resource**. In the **Attribute name** list, choose **Name**. In the **Value** field, enter `%`, and then choose **Next**.  
+7. On the **Search for Resources** page, in the **Resource class** list, choose **System Resource**. In the **Attribute name** list, choose **Name**. In the **Value** field, enter `%`, and then choose **Next**.  
   
-8.  On the **Select Resources** page, select the check box for each computer that you want to deploy the .NET Framework to. Choose **Next**, and then complete the wizard.  
+8. On the **Select Resources** page, select the check box for each computer that you want to deploy the .NET Framework to. Choose **Next**, and then complete the wizard.  
   
 9. On the **Membership Rules** page of the **Create Device Collection Wizard**, choose **Next**, and then complete the wizard.  
   
@@ -84,13 +84,13 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  To create a package:  
   
-1.  In the Configuration Manager console, choose **Software Library**.  
+1. In the Configuration Manager console, choose **Software Library**.  
   
-2.  In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
+2. In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
   
-3.  On the **Home** tab, in the **Create** group, choose **Create Package**.  
+3. On the **Home** tab, in the **Create** group, choose **Create Package**.  
   
-4.  On the **Package** page of the **Create Package and Program Wizard**, enter the following information:  
+4. On the **Package** page of the **Create Package and Program Wizard**, enter the following information:  
   
     -   Name: `.NET Framework 4.5`  
   
@@ -98,11 +98,11 @@ This step-by-step article describes how a system administrator can deploy the [!
   
     -   Language. `English (US)`  
   
-5.  Choose **This package contains source files**, and then choose **Browse** to select the local or network folder that contains the .NET Framework installation files. When you have selected the folder, choose **OK**, and then choose **Next**.  
+5. Choose **This package contains source files**, and then choose **Browse** to select the local or network folder that contains the .NET Framework installation files. When you have selected the folder, choose **OK**, and then choose **Next**.  
   
-6.  On the **Program Type** page of the wizard, choose **Standard Program**, and then choose **Next**.  
+6. On the **Program Type** page of the wizard, choose **Standard Program**, and then choose **Next**.  
   
-7.  On the **Program** page of the **Create Package and Program Wizard**, enter the following information:  
+7. On the **Program** page of the **Create Package and Program Wizard**, enter the following information:  
   
     1.  **Name:** `.NET Framework 4.5`  
   
@@ -112,7 +112,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
     4.  **Program can run:** Choose the option that specifies that the program can run regardless of whether a user is logged on.  
   
-8.  On the **Requirements** page, choose **Next** to accept the default values, and then complete the wizard.  
+8. On the **Requirements** page, choose **Next** to accept the default values, and then complete the wizard.  
   
  The following table describes the command-line options specified in step 7.  
   
@@ -130,21 +130,21 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  Use the following steps to select a distribution point for the .NET Framework 4.5 package you created in the previous section:  
   
-1.  In the Configuration Manager console, choose **Software Library**.  
+1. In the Configuration Manager console, choose **Software Library**.  
   
-2.  In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
+2. In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
   
-3.  From the list of packages, select the package **.NET Framework 4.5** that you created in the previous section.  
+3. From the list of packages, select the package **.NET Framework 4.5** that you created in the previous section.  
   
-4.  On the **Home** tab, in the **Deployment** group, choose **Distribute Content**.  
+4. On the **Home** tab, in the **Deployment** group, choose **Distribute Content**.  
   
-5.  On the **General** tab of the **Distribute Content Wizard**, choose **Next**.  
+5. On the **General** tab of the **Distribute Content Wizard**, choose **Next**.  
   
-6.  On the **Content Destination** page of the wizard, choose **Add**, and then choose **Distribution Point**.  
+6. On the **Content Destination** page of the wizard, choose **Add**, and then choose **Distribution Point**.  
   
-7.  In the **Add Distribution Points** dialog box, select the distribution point(s) that will host the package and program, and then choose **OK**.  
+7. In the **Add Distribution Points** dialog box, select the distribution point(s) that will host the package and program, and then choose **OK**.  
   
-8.  Complete the wizard.  
+8. Complete the wizard.  
   
  The package now contains all the information you need to silently deploy the .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Monitor Content" section of [Monitor content you have distributed with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed) in the Configuration Manager Documentation Library.  
   
@@ -152,21 +152,21 @@ This step-by-step article describes how a system administrator can deploy the [!
 ### Deploy the package  
  To deploy the .NET Framework 4.5 package and program:  
   
-1.  In the Configuration Manager console, choose **Software Library**.  
+1. In the Configuration Manager console, choose **Software Library**.  
   
-2.  In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
+2. In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
   
-3.  From the list of packages, select the package you created named **.NET Framework 4.5**.  
+3. From the list of packages, select the package you created named **.NET Framework 4.5**.  
   
-4.  On the **Home** tab, in the **Deployment** group, choose **Deploy**.  
+4. On the **Home** tab, in the **Deployment** group, choose **Deploy**.  
   
-5.  On the **General** page of the **Deploy Software Wizard**, choose **Browse**, and then select the collection that you created earlier. Choose **Next**.  
+5. On the **General** page of the **Deploy Software Wizard**, choose **Browse**, and then select the collection that you created earlier. Choose **Next**.  
   
-6.  On the **Content** page of the wizard, verify that the point from which you want to distribute the software is displayed, and then choose **Next**.  
+6. On the **Content** page of the wizard, verify that the point from which you want to distribute the software is displayed, and then choose **Next**.  
   
-7.  On the **Deployment Settings** page of the wizard, confirm that **Action** is set to **Install**, and **Purpose** is set to **Required**. This ensures that the software package will be a mandatory installation on the targeted computers. Choose **Next**.  
+7. On the **Deployment Settings** page of the wizard, confirm that **Action** is set to **Install**, and **Purpose** is set to **Required**. This ensures that the software package will be a mandatory installation on the targeted computers. Choose **Next**.  
   
-8.  On the **Scheduling** page of the wizard, specify when you want the .NET Framework to be installed. You can choose **New** to assign an installation time, or instruct the software to install when the user logs on or off, or as soon as possible. Choose **Next**.  
+8. On the **Scheduling** page of the wizard, specify when you want the .NET Framework to be installed. You can choose **New** to assign an installation time, or instruct the software to install when the user logs on or off, or as soon as possible. Choose **Next**.  
   
 9. On the **User Experience** page of the wizard, use the default values and choose **Next**.  
   
@@ -193,7 +193,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  **SQL Server 2008:**  
   
--   [Installing SQL Server 2008 (SQL Server Video)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/dd299415%28v=sql.100%29)  
+-   [Installing SQL Server 2008 (SQL Server Video)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/dd299415(v=sql.100))  
   
 -   [SQL Server 2008 Security Overview for Database Administrators](https://download.microsoft.com/download/a/c/d/acd8e043-d69b-4f09-bc9e-4168b65aaa71/SQL2008SecurityOverviewforAdmins.docx)  
   

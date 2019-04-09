@@ -27,6 +27,7 @@ This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../in
  [!code-vb[GridRunDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.Grid>
 - <xref:System.Windows.GridUnitType>
 - [Panels Overview](panels-overview.md)

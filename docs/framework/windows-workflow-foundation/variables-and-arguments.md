@@ -57,11 +57,11 @@ Variable<string> var = new Variable<string>
   
  The workflow runtime makes the following guarantees about the timing of data movement into and out of activities:  
   
-1.  When an activity starts executing, the values of all of its input and input/output arguments are calculated. For example, regardless of when <xref:System.Activities.Argument.Get%2A> is called, the value returned is the one calculated by the runtime prior to its invocation of `Execute`.  
+1. When an activity starts executing, the values of all of its input and input/output arguments are calculated. For example, regardless of when <xref:System.Activities.Argument.Get%2A> is called, the value returned is the one calculated by the runtime prior to its invocation of `Execute`.  
   
-2.  When <xref:System.Activities.InOutArgument%601.Set%2A> is called, the runtime sets the value immediately.  
+2. When <xref:System.Activities.InOutArgument%601.Set%2A> is called, the runtime sets the value immediately.  
   
-3.  Arguments can optionally have their <xref:System.Activities.Argument.EvaluationOrder%2A> specified. <xref:System.Activities.Argument.EvaluationOrder%2A> is a zero-based value that specifies the order in which the argument is evaluated. By default, the evaluation order of the argument is unspecified and is equal to the <xref:System.Activities.Argument.UnspecifiedEvaluationOrder> value. Set <xref:System.Activities.Argument.EvaluationOrder%2A> to a value greater or equal to zero to specify an evaluation order for this argument. Windows Workflow Foundation evaluates arguments with a specified evaluation order in ascending order. Note that arguments with an unspecified evaluation order are evaluated before those with a specified evaluation order.  
+3. Arguments can optionally have their <xref:System.Activities.Argument.EvaluationOrder%2A> specified. <xref:System.Activities.Argument.EvaluationOrder%2A> is a zero-based value that specifies the order in which the argument is evaluated. By default, the evaluation order of the argument is unspecified and is equal to the <xref:System.Activities.Argument.UnspecifiedEvaluationOrder> value. Set <xref:System.Activities.Argument.EvaluationOrder%2A> to a value greater or equal to zero to specify an evaluation order for this argument. Windows Workflow Foundation evaluates arguments with a specified evaluation order in ascending order. Note that arguments with an unspecified evaluation order are evaluated before those with a specified evaluation order.  
   
  An activity author can use a strongly-typed mechanism for exposing its arguments. This is accomplished by declaring properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. This allows an activity author to establish a specific contract about the data going into and out of an activity.  
   

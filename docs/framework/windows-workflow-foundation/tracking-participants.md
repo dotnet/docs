@@ -54,7 +54,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The following illustration shows the flow of tracking data through the ETW tracking participant. Once the tracking data reaches the ETW session, it can be accessed in a number of ways. One of the most useful ways to access these events is through Event Viewer, a common Windows tool used for viewing logs and traces from applications and services.  
   
- ![The flow of Tracking and ETW Tracking Provider](./media/trackingdatathroughetwparticipant.gif "TrackingDatathroughETWParticipant")  
+ ![Flow of tracking data through the ETW tracking provider.](./media/tracking-participants/tracking-data-event-tracing-windows-provider.gif)  
   
 ## Tracking Participant Event Data  
  A tracking participant serializes tracked event data to an ETW session in the format of one event per tracking record.  An event is identified using an ID within the range of 100 through 199. For definitions of the tracking event records emitted by a tracking participant, see the [Tracking Events Reference](tracking-events-reference.md) topic.  
@@ -75,13 +75,13 @@ Tracking participants are extensibility points that allow a workflow developer t
   
 #### To enable viewing the Tracking Records in Event Viewer  
   
-1.  Start the Event Viewer (EVENTVWR.EXE)  
+1. Start the Event Viewer (EVENTVWR.EXE)  
   
-2.  Select **Event Viewer, Applications and Services Logs, Microsoft, Windows, Application Server-Applications**.  
+2. Select **Event Viewer, Applications and Services Logs, Microsoft, Windows, Application Server-Applications**.  
   
-3.  Right-click and ensure that **View, Show Analytic and Debug logs** is selected. If not, select it so the check mark appears next to it. This displays the **Analytic**, **Perf**, and **Debug** logs.  
+3. Right-click and ensure that **View, Show Analytic and Debug logs** is selected. If not, select it so the check mark appears next to it. This displays the **Analytic**, **Perf**, and **Debug** logs.  
   
-4.  Right-click the **Analytic** log and then select **Enable Log**. The log will exist in the %SystemRoot%\System32\Winevt\Logs\Microsoft-Windows-Application Server-Applications%4Analytic.etl file.  
+4. Right-click the **Analytic** log and then select **Enable Log**. The log will exist in the %SystemRoot%\System32\Winevt\Logs\Microsoft-Windows-Application Server-Applications%4Analytic.etl file.  
   
 ## Custom Tracking Participant  
  The tracking participant API allows extension of the tracking runtime with a user-provided tracking participant that can include custom logic to handle tracking records emitted by the workflow runtime. To write a custom tracking participant, the developer must implement the `Track` method on the <xref:System.Activities.Tracking.TrackingParticipant> class. This method is called when a tracking record is emitted by the workflow runtime.  
@@ -135,5 +135,6 @@ instance.Extensions.Add(new ConsoleTrackingParticipant());
 ```  
   
 ## See also
+
 - [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
 - [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

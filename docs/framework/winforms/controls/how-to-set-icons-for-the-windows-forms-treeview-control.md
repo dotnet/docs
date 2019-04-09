@@ -21,7 +21,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
   
 ### To display images in a tree view  
   
-1.  Set the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.TreeView.ImageList%2A> property to the existing <xref:System.Windows.Forms.ImageList> control you wish to use.  
+1. Set the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.TreeView.ImageList%2A> property to the existing <xref:System.Windows.Forms.ImageList> control you wish to use.  
   
      These properties can be set in the designer with the Properties window, or in code.  
   
@@ -37,7 +37,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
     treeView1->ImageList = imageList1;  
     ```  
   
-2.  Set the node's <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> and <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> properties. The <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property determines the image displayed for the node's normal and expanded states, and the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property determines the image displayed for the node's selected state.  
+2. Set the node's <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> and <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> properties. The <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property determines the image displayed for the node's normal and expanded states, and the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property determines the image displayed for the node's selected state.  
   
      These properties can be set in code, or within the TreeNode Editor. To open the TreeNode Editor, click the ellipsis button ( ![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property on the Properties window.  
   
@@ -63,6 +63,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
     ```  
   
 ## See also
+
 - [TreeView Control Overview](treeview-control-overview-windows-forms.md)
 - [How to: Add and Remove Nodes with the Windows Forms TreeView Control](how-to-add-and-remove-nodes-with-the-windows-forms-treeview-control.md)
 - [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)

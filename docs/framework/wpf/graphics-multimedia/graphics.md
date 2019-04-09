@@ -23,6 +23,7 @@ ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
  [How-to Topics](graphics-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Shapes.Shape>
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Imaging.BitmapImage>

@@ -19,7 +19,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
   
 ### To add panels to a status bar  
   
-1.  In a procedure, create status-bar panels by adding them to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>. Specify property settings for individual panels by using its index passed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property.  
+1. In a procedure, create status-bar panels by adding them to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>. Specify property settings for individual panels by using its index passed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property.  
   
      In the following code example, the path set for the location of the icon is the **My Documents** folder. This location is used because you can assume that most computers running the Windows operating system will include this folder. Choosing this location also allows users with minimal system access levels to safely run the application. The following example requires a form with a <xref:System.Windows.Forms.StatusBar> control already added.  
   
@@ -115,6 +115,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
 - [Collection Editor Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xc4yyekt(v=vs.100))

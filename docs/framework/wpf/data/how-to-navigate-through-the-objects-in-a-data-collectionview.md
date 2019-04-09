@@ -24,6 +24,7 @@ Views allow the same data collection to be viewed in different ways, depending o
  [!code-vb[CollectionView#OnButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionView/VisualBasic/Page1.xaml.vb#onbutton)]  
   
 ## See also
+
 - [Data Binding Overview](data-binding-overview.md)
 - [Sort Data in a View](how-to-sort-data-in-a-view.md)
 - [Filter Data in a View](how-to-filter-data-in-a-view.md)

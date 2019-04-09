@@ -52,6 +52,7 @@ End Sub
  [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
 ## See also
+
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
 - [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

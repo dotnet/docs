@@ -24,28 +24,28 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
   
 ### To Cache the Current Child Position  
   
-1.  Declare an integer variable to store the child list position and a Boolean variable to store whether to cache the child position.  
+1. Declare an integer variable to store the child list position and a Boolean variable to store whether to cache the child position.  
   
      [!code-csharp[System.Windows.Forms.CurrencyManagerReset#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#4)]
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#4)]  
   
-2.  Handle the <xref:System.Windows.Forms.CurrencyManager.ListChanged> event for the binding's <xref:System.Windows.Forms.CurrencyManager> and check for a <xref:System.ComponentModel.ListChangedType> of <xref:System.ComponentModel.ListChangedType.Reset>.  
+2. Handle the <xref:System.Windows.Forms.CurrencyManager.ListChanged> event for the binding's <xref:System.Windows.Forms.CurrencyManager> and check for a <xref:System.ComponentModel.ListChangedType> of <xref:System.ComponentModel.ListChangedType.Reset>.  
   
-3.  Check the current position of the <xref:System.Windows.Forms.CurrencyManager>. If it is greater than first entry in the list (typically 0), save it to a variable.  
+3. Check the current position of the <xref:System.Windows.Forms.CurrencyManager>. If it is greater than first entry in the list (typically 0), save it to a variable.  
   
      [!code-csharp[System.Windows.Forms.CurrencyManagerReset#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#2)]
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#2)]  
   
-4.  Handle the parent list's <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event for the parent currency manager. In the handler, set the Boolean value to indicate it is not a caching scenario. If the <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> occurs, the change to the parent is a list position change and not an item value change.  
+4. Handle the parent list's <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event for the parent currency manager. In the handler, set the Boolean value to indicate it is not a caching scenario. If the <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> occurs, the change to the parent is a list position change and not an item value change.  
   
      [!code-csharp[System.Windows.Forms.CurrencyManagerReset#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#5)]
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#5)]  
   
 ### To Reset the Child Position  
   
-1.  Handle the <xref:System.Windows.Forms.BindingManagerBase.PositionChanged> event for the child binding's <xref:System.Windows.Forms.CurrencyManager>.  
+1. Handle the <xref:System.Windows.Forms.BindingManagerBase.PositionChanged> event for the child binding's <xref:System.Windows.Forms.CurrencyManager>.  
   
-2.  Reset the child table position to the cached position saved in the previous procedure.  
+2. Reset the child table position to the cached position saved in the previous procedure.  
   
      [!code-csharp[System.Windows.Forms.CurrencyManagerReset#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#3)]
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#3)]  
@@ -58,17 +58,17 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
   
  To test the code example, perform the following steps:  
   
-1.  Run the example.  
+1. Run the example.  
   
-2.  Make sure the **Cache and reset position** check box is selected.  
+2. Make sure the **Cache and reset position** check box is selected.  
   
-3.  Click the **Clear parent field** button to cause a change in a field of the parent table. Notice that the selected row in the child table does not change.  
+3. Click the **Clear parent field** button to cause a change in a field of the parent table. Notice that the selected row in the child table does not change.  
   
-4.  Close and run the example again. You need to do this because the reset behavior occurs only on the first change in the parent row.  
+4. Close and run the example again. You need to do this because the reset behavior occurs only on the first change in the parent row.  
   
-5.  Clear the **Cache and reset position** check box.  
+5. Clear the **Cache and reset position** check box.  
   
-6.  Click the **Clear parent field** button. Notice that the selected row in the child table changes to the first row.  
+6. Click the **Clear parent field** button. Notice that the selected row in the child table changes to the first row.  
   
 ## Compiling the Code  
  This example requires:  
@@ -78,6 +78,7 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
  For information about how to build this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](multiple-controls-bound-to-data-source-synchronized.md)
 - [BindingSource Component](./controls/bindingsource-component.md)
 - [Data Binding and Windows Forms](data-binding-and-windows-forms.md)

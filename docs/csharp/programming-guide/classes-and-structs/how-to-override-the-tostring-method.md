@@ -21,13 +21,13 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
 ### To override the ToString method in your class or struct  
   
-1.  Declare a `ToString` method with the following modifiers and return type:  
+1. Declare a `ToString` method with the following modifiers and return type:  
   
     ```csharp  
     public override string ToString(){}  
     ```  
   
-2.  Implement the method so that it returns a string.  
+2. Implement the method so that it returns a string.  
   
      The following example returns the name of the class in addition to the data specific to a particular instance of the class.  
   

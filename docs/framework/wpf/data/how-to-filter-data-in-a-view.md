@@ -42,6 +42,7 @@ This example shows how to filter data in a view.
  [!code-vb[DataBindingLab#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#5)]  
   
 ## See also
+
 - <xref:System.Windows.Data.CollectionView.CanFilter%2A>
 - <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>
 - [Data Binding Overview](data-binding-overview.md)

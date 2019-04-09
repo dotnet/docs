@@ -19,4 +19,5 @@ The following examples demonstrate how to accomplish common tasks using the [!IN
  [Store Multiple Data Formats in a Data Object](how-to-store-multiple-data-formats-in-a-data-object.md)  
   
 ## See also
+
 - [Drag and Drop Overview](drag-and-drop-overview.md)

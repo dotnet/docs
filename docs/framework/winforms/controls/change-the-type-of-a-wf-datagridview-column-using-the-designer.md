@@ -18,16 +18,17 @@ Sometimes you will want to change the type of a column that has already been add
   
 ### To change the type of a column using the designer  
   
-1.  Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.  
+1. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.  
   
-2.  Select a column from the **Selected Columns** list.  
+2. Select a column from the **Selected Columns** list.  
   
-3.  In the **Column Properties** grid, set the `ColumnType` property to the new column type.  
+3. In the **Column Properties** grid, set the `ColumnType` property to the new column type.  
   
     > [!NOTE]
     >  The `ColumnType` property is a design-time-only property that indicates the class representing the column type. It is not an actual property defined in a column class.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewColumn>
 - [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project)

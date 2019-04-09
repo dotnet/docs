@@ -36,10 +36,11 @@ A memory-mapped file contains the contents of a file in virtual memory. This map
   
  Memory-mapped files are accessed through the operating system’s memory manager, so the file is automatically partitioned into a number of pages and accessed as needed. You do not have to handle the memory management yourself.  
   
- The following illustration shows how multiple processes can have multiple and overlapping views to the same memory-mapped file at the same time.  
+ The following illustration shows how multiple processes can have multiple and overlapping views to the same memory-mapped file at the same time.
+
+ The following image shows multiple and overlapped views to a memory-mapped file:  
   
- ![Shows views to a memory&#45;mapped file.](../../../docs/standard/io/media/memmappersisted.png "MemMapPersisted")  
-Multiple and overlapped views to a memory-mapped file  
+ ![Screenshot that shows views to a memory&#45;mapped file.](./media/memory-mapped-files/memory-map-persist-file.png)  
   
 ## Programming with Memory-Mapped Files  
  The following table provides a guide for using memory-mapped file objects and their members.  
@@ -89,29 +90,29 @@ Multiple and overlapped views to a memory-mapped file
   
  The following example consists of three separate processes (console applications) that write Boolean values to a memory-mapped file. The following sequence of actions occur:  
   
-1.  `Process A` creates the memory-mapped file and writes a value to it.  
+1. `Process A` creates the memory-mapped file and writes a value to it.  
   
-2.  `Process B` opens the memory-mapped file and writes a value to it.  
+2. `Process B` opens the memory-mapped file and writes a value to it.  
   
-3.  `Process C` opens the memory-mapped file and writes a value to it.  
+3. `Process C` opens the memory-mapped file and writes a value to it.  
   
-4.  `Process A` reads and displays the values from the memory-mapped file.  
+4. `Process A` reads and displays the values from the memory-mapped file.  
   
-5.  After `Process A` is finished with the memory-mapped file, the file is immediately reclaimed by garbage collection.  
+5. After `Process A` is finished with the memory-mapped file, the file is immediately reclaimed by garbage collection.  
   
  To run this example, do the following:  
   
-1.  Compile the applications and open three Command Prompt windows.  
+1. Compile the applications and open three Command Prompt windows.  
   
-2.  In the first Command Prompt window, run `Process A`.  
+2. In the first Command Prompt window, run `Process A`.  
   
-3.  In the second Command Prompt window, run `Process B`.  
+3. In the second Command Prompt window, run `Process B`.  
   
-4.  Return to `Process A` and press ENTER.  
+4. Return to `Process A` and press ENTER.  
   
-5.  In the third Command Prompt window, run `Process C`.  
+5. In the third Command Prompt window, run `Process C`.  
   
-6.  Return to `Process A` and press ENTER.  
+6. Return to `Process A` and press ENTER.  
   
  The output of `Process A` is as follows:  
   

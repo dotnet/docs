@@ -15,5 +15,6 @@ This example shows how to enable the acceptance of tab characters as normal inpu
  [!code-xaml[TextBox_EnablingTab#_AcceptsTab](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_EnablingTab/CS/Window1.xaml#_acceptstab)]  
   
 ## See also
+
 - [TextBox Overview](textbox-overview.md)
 - [RichTextBox Overview](richtextbox-overview.md)

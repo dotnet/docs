@@ -49,6 +49,7 @@ An *XML literal* allows you to incorporate XML directly into your Visual Basic c
  [!code-vb[VbXMLSamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#6)]  
   
 ## See also
+
 - <xref:System.Xml.Linq.XElement>
 - [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
 - [Embedded Expressions in XML](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)

@@ -107,7 +107,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 
  The following steps show how to develop a custom SAML token provider and integrate it with WCF: security framework:
 
-1.  Write a custom SAML token provider.
+1. Write a custom SAML token provider.
 
      The sample implements a custom SAML token provider that returns a security token based on a SAML assertion that is provided at construction time.
 
@@ -150,7 +150,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     }
     ```
 
-2.  Write custom security token manager.
+2. Write custom security token manager.
 
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager> class is used to create <xref:System.IdentityModel.Selectors.SecurityTokenProvider> for specific <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> that is passed to it in `CreateSecurityTokenProvider` method. A security token manager is also used to create token authenticators and token serializer, but those are not covered by this sample. In this sample the custom security token manager inherits from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class and overrides the `CreateSecurityTokenProvider` method to return the custom SAML token provider when the passed token requirements indicate that the SAML token is requested. If the client credentials class (see step 3) has not specified an assertion, the security token manager creates an appropriate instance.
 
@@ -222,7 +222,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     }
     ```
 
-3.  Write a custom client credential.
+3. Write a custom client credential.
 
      Client credentials class is used to represent the credentials that are configured for the client proxy and creates a security token manager that is used to obtain token authenticators, token providers and token serializer.
 
@@ -265,7 +265,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
     }
     ```
 
-4.  Configure the client to use the custom client credential.
+4. Configure the client to use the custom client credential.
 
      The sample deletes the default client credential class and supplies the new client credential class so the client can use the custom client credential.
 
@@ -347,43 +347,43 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 
 #### To set up and build the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
 > [!NOTE]
 >  If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
 
 #### To run the sample on the same computer
 
-1.  Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
     >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
-2.  Launch Service.exe from service\bin.  
+2. Launch Service.exe from service\bin.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
-1.  Create a directory on the service computer for the service binaries.  
+1. Create a directory on the service computer for the service binaries.  
   
-2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+2. Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run in a Developer Command Prompt for Visual Studio window opened with administrator privileges. You must set the `%SERVER_NAME%` variable to the fully-qualified host name of the computer that is used to host the service.  
+3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run in a Developer Command Prompt for Visual Studio window opened with administrator privileges. You must set the `%SERVER_NAME%` variable to the fully-qualified host name of the computer that is used to host the service.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. This step is not necessary when the server certificate is issued by a client trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. This step is not necessary when the server certificate is issued by a client trusted issuer.  
   
-5.  In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
+5. In the Service.exe.config file on the service computer, change the value of the base address to specify a fully-qualified computer name instead of localhost.  
   
-6.  On the service computer, run Service.exe from a command prompt.  
+6. On the service computer, run Service.exe from a command prompt.  
   
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
   
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
   
 9. On the client computer, launch `Client.exe` from a command prompt window.  
   
@@ -391,6 +391,4 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
-## See also
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.  

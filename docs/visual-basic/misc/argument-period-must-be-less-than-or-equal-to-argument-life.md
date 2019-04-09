@@ -14,5 +14,4 @@ The value of the `Period` argument, which specifies the period for which asset d
   
 ## See also
 
-
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

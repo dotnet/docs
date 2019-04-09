@@ -27,11 +27,11 @@ If the current version of Visual Studio is installed on a computer that also has
   
 ### To run VsDevCmd.BAT  
   
-1.  From the **Start** menu, open the **Developer Command Prompt for VS 2017**.  It's in the **Visual Studio 2017** folder.
+1. From the **Start** menu, open the **Developer Command Prompt for VS 2017**.  It's in the **Visual Studio 2017** folder.
   
-2.  Change to the \Program Files\Microsoft Visual Studio\\*Version*\\*Offering*\Common7\Tools or \Program Files (x86)\Microsoft Visual Studio\\*Version*\\*Offering*\Common7\Tools subdirectory of your installation.  (*Version* is *2017* for the current version. *Offering* is one of *Enterprise*, *Professional* or *Community*.)
+2. Change to the \Program Files\Microsoft Visual Studio\\*Version*\\*Offering*\Common7\Tools or \Program Files (x86)\Microsoft Visual Studio\\*Version*\\*Offering*\Common7\Tools subdirectory of your installation.  (*Version* is *2017* for the current version. *Offering* is one of *Enterprise*, *Professional* or *Community*.)
   
-3.  Run VsDevCmd.bat by typing **VsDevCmd**.  
+3. Run VsDevCmd.bat by typing **VsDevCmd**.  
   
     > [!CAUTION]
     >  VsDevCmd.bat can vary from computer to computer. Do not replace a missing or damaged VsDevCmd.bat file with a VsDevCmd.bat from another computer. Instead, rerun setup to replace the missing file.  

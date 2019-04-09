@@ -1,0 +1,35 @@
+- name: Declared Elements
+  href: index.md
+  items:
+  - name: Declared Element Names
+    href: declared-element-names.md
+  - name: Declared Element Characteristics
+    href: declared-element-characteristics.md
+    items:
+    - name: Lifetime
+      href: lifetime.md
+    - name: Scope
+      href: scope.md
+      items:
+      - name: "How to: Control the Scope of a Variable"
+        href: how-to-control-the-scope-of-a-variable.md
+      - name: Type Promotion
+        href: type-promotion.md
+    - name: Access Levels
+      href: access-levels.md
+      items:
+      - name: "How to: Control the Availability of a Variable"
+        href: how-to-control-the-availability-of-a-variable.md
+    - name: References to Declared Elements
+      href: references-to-declared-elements.md
+    - name: Shadowing
+      href: shadowing.md
+      items:
+      - name: Differences Between Shadowing and Overriding
+        href: differences-between-shadowing-and-overriding.md
+      - name: "How to: Hide a Variable with the Same Name as Your Variable"
+        href: how-to-hide-a-variable-with-the-same-name-as-your-variable.md
+      - name: "How to: Hide an Inherited Variable"
+        href: how-to-hide-an-inherited-variable.md
+      - name: "How to: Access a Variable Hidden by a Derived Class"
+        href: how-to-access-a-variable-hidden-by-a-derived-class.md

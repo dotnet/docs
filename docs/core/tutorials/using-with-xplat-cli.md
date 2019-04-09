@@ -113,7 +113,7 @@ And that's it!  You can augment `Program.cs` any way you like.
 
 ## Working with multiple files
 
-Single files are fine for simple one-off programs, but if you're building a more complex app, you're probably going to have multiple source files on your project
+Single files are fine for simple one-off programs, but if you're building a more complex app, you're probably going to have multiple source files on your project.
 Let's build off of the previous Fibonacci example by caching some Fibonacci values and add some recursive features.
 
 1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:

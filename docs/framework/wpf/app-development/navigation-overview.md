@@ -32,8 +32,7 @@ Windows Presentation Foundation (WPF) supports browser-style navigation that can
   
 > [!NOTE]
 >  In this topic, the term "browser" refers only to browsers that can host [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, which currently includes [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] and Firefox. Where specific [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features are supported only by a particular browser, the browser version is referred to.  
-   
-     
+
 ## Navigation in WPF Applications  
  This topic provides an overview of the key navigation capabilities in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]. These capabilities are available to both standalone applications and [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)], although this topic presents them within the context of an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)].  
   
@@ -348,13 +347,13 @@ Windows Presentation Foundation (WPF) supports browser-style navigation that can
   
  By default, the text for each <xref:System.Windows.Controls.Page> that appears in the **Recent Pages** list of [!INCLUDE[TLA2#tla_ie](../../../../includes/tla2sharptla-ie-md.md)] is the [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] for the <xref:System.Windows.Controls.Page>. In many cases, this is not particularly meaningful to the user. Fortunately, you can change the text using one the following options:  
   
-1.  The attached `JournalEntry.Name` attribute value.  
+1. The attached `JournalEntry.Name` attribute value.  
   
-2.  The `Page.Title` attribute value.  
+2. The `Page.Title` attribute value.  
   
-3.  The `Page.WindowTitle` attribute value and the [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] for the current <xref:System.Windows.Controls.Page>.  
+3. The `Page.WindowTitle` attribute value and the [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] for the current <xref:System.Windows.Controls.Page>.  
   
-4.  The [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] for the current <xref:System.Windows.Controls.Page>. (Default)  
+4. The [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] for the current <xref:System.Windows.Controls.Page>. (Default)  
   
  The order in which the options are listed matches the order of precedence for finding the text. For example, if `JournalEntry.Name` is set, the other values are ignored.  
   
@@ -424,19 +423,19 @@ Windows Presentation Foundation (WPF) supports browser-style navigation that can
   
  Fortunately, the journal provides support for remembering data across <xref:System.Windows.Controls.Page> navigations, including control data. Specifically, the journal entry for each <xref:System.Windows.Controls.Page> acts as a temporary container for the associated <xref:System.Windows.Controls.Page> state. The following steps outline how this support is used when a <xref:System.Windows.Controls.Page> is navigated from:  
   
-1.  An entry for the current <xref:System.Windows.Controls.Page> is added to the journal.  
+1. An entry for the current <xref:System.Windows.Controls.Page> is added to the journal.  
   
-2.  The state of the <xref:System.Windows.Controls.Page> is stored with the journal entry for that page, which is added to the back stack.  
+2. The state of the <xref:System.Windows.Controls.Page> is stored with the journal entry for that page, which is added to the back stack.  
   
-3.  The new <xref:System.Windows.Controls.Page> is navigated to.  
+3. The new <xref:System.Windows.Controls.Page> is navigated to.  
   
  When the page <xref:System.Windows.Controls.Page> is navigated back to, using the journal, the following steps take place:  
   
-1.  The <xref:System.Windows.Controls.Page> (the top journal entry on the back stack) is instantiated.  
+1. The <xref:System.Windows.Controls.Page> (the top journal entry on the back stack) is instantiated.  
   
-2.  The <xref:System.Windows.Controls.Page> is refreshed with the state that was stored with the journal entry for the <xref:System.Windows.Controls.Page>.  
+2. The <xref:System.Windows.Controls.Page> is refreshed with the state that was stored with the journal entry for the <xref:System.Windows.Controls.Page>.  
   
-3.  The <xref:System.Windows.Controls.Page> is navigated back to.  
+3. The <xref:System.Windows.Controls.Page> is navigated back to.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] automatically uses this support when the following controls are used on a <xref:System.Windows.Controls.Page>:  
   
@@ -724,6 +723,7 @@ Windows Presentation Foundation (WPF) supports browser-style navigation that can
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] navigation support allows [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] to be navigated to across the Internet, and it allows applications to host third-party content. To protect both applications and users from harmful behavior, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides a variety of security features that are discussed in [Security](../security-wpf.md) and [WPF Partial Trust Security](../wpf-partial-trust-security.md).  
   
 ## See also
+
 - <xref:System.Windows.Application.SetCookie%2A>
 - <xref:System.Windows.Application.GetCookie%2A>
 - [Application Management Overview](application-management-overview.md)

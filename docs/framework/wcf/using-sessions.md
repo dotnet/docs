@@ -47,9 +47,9 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
  When a WCF service accepts a client session, the following features are enabled by default:  
   
-1.  All calls between a WCF client object are handled by the same service instance.  
+1. All calls between a WCF client object are handled by the same service instance.  
   
-2.  Different session-based bindings provide additional features.  
+2. Different session-based bindings provide additional features.  
   
 ## System-Provided Session Types  
  A session-based binding supports the default association of a service instance with a particular session. However, different session-based bindings support different features in addition to enabling the session-based instancing control previously described.  
@@ -140,5 +140,6 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 >  MaxConcurrentSessions have no effect in this case because there is only one "session" available.  
   
 ## See also
+
 - <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>
 - <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>

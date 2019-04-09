@@ -14,7 +14,7 @@ Constraint type 'type' is not CLS-compliant.
   
 ### To eliminate this warning  
   
-1.  Use a CLS-compliant type for the type constraint.  
+1. Use a CLS-compliant type for the type constraint.  
   
 ## Example  
  The following example generates CS3024 in several locations:  

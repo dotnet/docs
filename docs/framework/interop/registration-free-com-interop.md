@@ -26,7 +26,7 @@ Registration-free COM interop activates a component without using the Windows re
   
 ### Requirements for registration-free COM interop  
   
-1.  Support for registration-free COM interop varies slightly depending on the type of library assembly; specifically, whether the assembly is unmanaged (COM side-by-side) or managed (.NET-based). The following table shows the operating system and .NET Framework version requirements for each assembly type.  
+1. Support for registration-free COM interop varies slightly depending on the type of library assembly; specifically, whether the assembly is unmanaged (COM side-by-side) or managed (.NET-based). The following table shows the operating system and .NET Framework version requirements for each assembly type.  
   
     |Assembly type|Operating system|.NET Framework version|  
     |-------------------|----------------------|----------------------------|  
@@ -39,7 +39,7 @@ Registration-free COM interop activates a component without using the Windows re
   
 ### Configuring COM components for registration-free activation  
   
-1.  For a COM component to participate in registration-free activation, it must be deployed as a side-by-side assembly. Side-by-side assemblies are unmanaged assemblies.  For more information, see [Using Side-by-side Assemblies](/windows/desktop/SbsCs/using-side-by-side-assemblies).  
+1. For a COM component to participate in registration-free activation, it must be deployed as a side-by-side assembly. Side-by-side assemblies are unmanaged assemblies.  For more information, see [Using Side-by-side Assemblies](/windows/desktop/SbsCs/using-side-by-side-assemblies).  
   
      To use COM side-by-side assemblies, a .NET-based application developer must provide an application manifest, which contains the binding and activation information. Support for unmanaged side-by-side assemblies is built into the Windows XP operating system. The COM runtime, supported by the operating system, scans an application manifest for activation information when the component being activated is not in the registry.  
   
@@ -49,4 +49,5 @@ Registration-free COM interop activates a component without using the Windows re
     >  Side-by-side execution is a .NET Framework feature that enables multiple versions of the runtime, and multiple versions of applications and components that use a version of the runtime, to run on the same computer at the same time. Side-by-side execution and side-by-side assemblies are different mechanisms for providing side-by-side functionality.  
   
 ## See also
+
 - [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](../../../docs/framework/interop/configure-net-framework-based-com-components-for-reg.md)

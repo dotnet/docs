@@ -44,6 +44,7 @@ The <xref:System.Security.Permissions.PrincipalPermissionAttribute> is a declara
 -   <xref:System.IdentityModel.Policy>  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.PrincipalPermissionMode>
 - <xref:System.ServiceModel.Description.PrincipalPermissionMode>
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>

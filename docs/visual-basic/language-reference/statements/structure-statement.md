@@ -99,6 +99,7 @@ End Structure
  [!code-vb[VbVbalrStatements#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#57)]  
   
 ## See also
+
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

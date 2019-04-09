@@ -31,11 +31,12 @@ End Class
   
 ## To correct this error  
   
-1.  Decide whether you want the member to be shared among all instances of the class, or kept individual for each instance.  
+1. Decide whether you want the member to be shared among all instances of the class, or kept individual for each instance.  
   
-2.  If you want a single copy of the member to be shared among all instances, add the `Shared` keyword to the member declaration. Retain the `Shared` keyword in the procedure declaration.  
+2. If you want a single copy of the member to be shared among all instances, add the `Shared` keyword to the member declaration. Retain the `Shared` keyword in the procedure declaration.  
   
-3.  If you want each instance to have its own individual copy of the member, do not specify `Shared` for the member declaration. Remove the `Shared` keyword from the procedure declaration.  
+3. If you want each instance to have its own individual copy of the member, do not specify `Shared` for the member declaration. Remove the `Shared` keyword from the procedure declaration.  
   
 ## See also
+
 - [Shared](../../../visual-basic/language-reference/modifiers/shared.md)

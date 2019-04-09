@@ -14,11 +14,11 @@ After you create a service, the next step is to create a WCF client proxy. A cli
 
  The basic steps for creating a WCF client include the following:
 
-1.  Compile the service code.
+1. Compile the service code.
 
-2.  Generate the WCF client proxy.
+2. Generate the WCF client proxy.
 
-3.  Instantiate the WCF client proxy.
+3. Instantiate the WCF client proxy.
 
 The WCF client proxy can be generated manually by using the Service Model Metadata Utility Tool (SvcUtil.exe) for more information see, [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). The WCF client proxy can also be generated within Visual Studio using the **Add Service Reference**  feature. To generate the WCF client proxy using either method the service must be running. If the service is self-hosted you must run the host. If the service is hosted in IIS/WAS you do not need to do anything else.
 

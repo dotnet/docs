@@ -247,6 +247,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
   
 ## See also
+
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
 - [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)
 - [Layout](../advanced/layout.md)

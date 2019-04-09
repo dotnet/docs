@@ -276,40 +276,40 @@ Press <ENTER> to terminate client.
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
 ### To run the sample on the same computer  
   
-1.  Open a Developer Command Prompt for Visual Studio  with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
+1. Open a Developer Command Prompt for Visual Studio  with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
   
     > [!NOTE]
     >  The Setup.bat batch file is designed to be run from a Developer Command Prompt for Visual Studio. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Developer Command Prompt for Visual Studio (2010).  
   
-2.  Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
+2. Verify access to the service using a browser by entering the address `http://localhost/servicemodelsamples/service.svc`.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across computers  
   
-1.  Create a directory on the service computer. Create a virtual application named servicemodelsamples for this directory by using the Internet Information Services (IIS) management tool.  
+1. Create a directory on the service computer. Create a virtual application named servicemodelsamples for this directory by using the Internet Information Services (IIS) management tool.  
   
-2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service computer.  
+2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service computer.  
   
-3.  Create a directory on the client computer for the client binaries.  
+3. Create a directory on the client computer for the client binaries.  
   
-4.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+4. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, run **setup.bat service** in a Developer Command Prompt for Visual Studio with administrator privileges. Running **setup.bat** with the **service** argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
+5. On the server, run **setup.bat service** in a Developer Command Prompt for Visual Studio with administrator privileges. Running **setup.bat** with the **service** argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
-6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
+6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
   
-7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
+7. Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
-8.  On the client, run **setup.bat client** in a Developer Command Prompt for Visual Studio with administrator privileges. Running **setup.bat** with the **client** argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+8. On the client, run **setup.bat client** in a Developer Command Prompt for Visual Studio with administrator privileges. Running **setup.bat** with the **client** argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
 9. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
   
@@ -327,5 +327,3 @@ Press <ENTER> to terminate client.
   
     > [!NOTE]
     >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
-  
-## See also

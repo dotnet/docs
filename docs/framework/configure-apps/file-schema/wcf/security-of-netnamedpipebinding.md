@@ -46,6 +46,7 @@ Defines the security settings for a binding.
 |binding|The binding element of the [\<netNamedPipeBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md).|  
   
 ## See also
+
 - <xref:System.ServiceModel.NetNamedPipeSecurity>
 - <xref:System.ServiceModel.NetNamedPipeBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security%2A>

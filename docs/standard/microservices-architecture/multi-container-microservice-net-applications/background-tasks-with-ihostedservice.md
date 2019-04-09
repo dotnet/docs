@@ -234,13 +234,13 @@ The `IHostedService` interface provides a convenient way to start background tas
 #### Additional resources
 
 -   **Building a scheduled task in ASP.NET Core/Standard 2.0** <br/>
-    [*https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html*](https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html)
+    [https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html](https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html)
 
 -   **Implementing IHostedService in ASP.NET Core 2.0** <br/>
-    [*https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice*](https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice)
+    [https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice](https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice)
 
 -   **GenericHost Sample using ASP.NET Core 2.1** <br/>
-    [*https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
+    [https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
 
 >[!div class="step-by-step"]
 >[Previous](test-aspnet-core-services-web-apps.md)

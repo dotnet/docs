@@ -80,6 +80,7 @@ Various options are available to control how the <xref:System.Windows.Controls.D
  Users can resize <xref:System.Windows.Controls.DataGrid> rows and columns by dragging the row or column header dividers. The <xref:System.Windows.Controls.DataGrid> also supports automatic resizing of rows and columns by double-clicking the row or column header divider. To prevent a user from resizing particular columns, set the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=nameWithType> property to `false` for the individual columns. To prevent users from resizing all columns, set the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=nameWithType> property to `false`. To prevent users from resizing all rows, set the <xref:System.Windows.Controls.DataGrid.CanUserResizeRows%2A?displayProperty=nameWithType> property to `false`.  
   
 ## See also
+
 - <xref:System.Windows.Controls.DataGrid>
 - <xref:System.Windows.Controls.DataGridColumn>
 - <xref:System.Windows.Controls.DataGridLength>

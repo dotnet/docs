@@ -75,6 +75,7 @@ ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 |<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty> property-changed event.|Never|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.Document>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

@@ -10,7 +10,7 @@ An attempt to convert a variable from one type to another is not valid.
   
 ## To correct this error  
   
-1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
+1. Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   
 ## See also
 

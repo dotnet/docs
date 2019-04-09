@@ -30,7 +30,7 @@ There are two ways to generate a primary interop assembly:
   
 ### To generate a primary interop assembly using Tlbimp.exe  
   
-1.  At the command prompt, type:  
+1. At the command prompt, type:  
   
      **tlbimp** *tlbfile*  **/primary /keyfile:** *filename* **/out:** *assemblyname*  
   
@@ -62,4 +62,5 @@ tlbimp MyLib.tlb /primary /keyfile:CompanyB.snk /namespace:CompanyB.MyLib /refer
 ```  
   
 ## See also
+
 - [How to: Register Primary Interop Assemblies](../../../docs/framework/interop/how-to-register-primary-interop-assemblies.md)

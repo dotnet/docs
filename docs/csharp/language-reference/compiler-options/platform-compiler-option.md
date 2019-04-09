@@ -54,11 +54,11 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the **Properties** page for the project.  
+1. Open the **Properties** page for the project.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Modify the **Platform target** property and, for projects that target the .NET Framework 4.5, select or clear the **Prefer 32-bit** check box.  
+3. Modify the **Platform target** property and, for projects that target the .NET Framework 4.5, select or clear the **Prefer 32-bit** check box.  
   
  **Note -platform** is not available in the development environment in Visual C# Express.  
   

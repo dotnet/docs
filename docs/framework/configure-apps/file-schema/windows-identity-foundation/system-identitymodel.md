@@ -70,4 +70,5 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Configuration.SystemIdentityModelSection>

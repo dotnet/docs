@@ -29,6 +29,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAni
  For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028). For more information about geometric paths, see the [Geometry Overview](geometry-overview.md).  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)

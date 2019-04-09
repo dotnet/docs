@@ -30,6 +30,7 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
  The  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.  
   
 ## See also
+
 - [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md)
 - [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
 - [Paging](../../../../../../docs/framework/data/adonet/ef/language-reference/paging-entity-sql.md)

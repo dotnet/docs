@@ -86,23 +86,15 @@ namespace Metadata.Samples
   
 ### To publish metadata for a WCF service using an application configuration file  
   
-1.  Within the App.config file, after the closing `</services>` element, create a `<behaviors>` element.  
-  
-  
-  
-2.  Within the `<behaviors>` element, add a `<serviceBehaviors>` element.  
-  
-  
-  
-3.  Add a `<behavior>` element to the `<serviceBehaviors>` element and specify a value for the `name` attribute of the `<behavior>` element.  
-  
-  
-  
-4.  Add a `<serviceMetadata>` element to the `<behavior>` element. Set the `httpGetEnabled` attribute to `true` and the `policyVersion` attribute to Policy15. `httpGetEnabled` allows the service to respond to metadata requests made by an HTTP GET request. `policyVersion` tells the service to conform to WS-Policy 1.5 when generating metadata.  
-  
-  
-  
-5.  Add a `behaviorConfiguration` attribute to the `<service>` element and specify the `name` attribute of the `<behavior>` element added in step 1, as shown in the following code example.  
+1. Within the App.config file, after the closing `</services>` element, create a `<behaviors>` element.  
+
+2. Within the `<behaviors>` element, add a `<serviceBehaviors>` element.  
+
+3. Add a `<behavior>` element to the `<serviceBehaviors>` element and specify a value for the `name` attribute of the `<behavior>` element.  
+
+4. Add a `<serviceMetadata>` element to the `<behavior>` element. Set the `httpGetEnabled` attribute to `true` and the `policyVersion` attribute to Policy15. `httpGetEnabled` allows the service to respond to metadata requests made by an HTTP GET request. `policyVersion` tells the service to conform to WS-Policy 1.5 when generating metadata.  
+
+5. Add a `behaviorConfiguration` attribute to the `<service>` element and specify the `name` attribute of the `<behavior>` element added in step 1, as shown in the following code example.  
   
     ```xml  
     <services>  
@@ -121,7 +113,7 @@ namespace Metadata.Samples
     </behaviors>  
     ```  
   
-6.  Add one or more `<endpoint>` elements with the contract set to `IMetadataExchange`, as shown in the following code example.  
+6. Add one or more `<endpoint>` elements with the contract set to `IMetadataExchange`, as shown in the following code example.  
   
     ```xml  
     <services>  
@@ -140,7 +132,7 @@ namespace Metadata.Samples
     </services>  
     ```  
   
-7.  For the metadata endpoints added in the previous step, set the `binding` attribute to one of the following:  
+7. For the metadata endpoints added in the previous step, set the `binding` attribute to one of the following:  
   
     -   `mexHttpBinding` for HTTP publication.  
   
@@ -150,7 +142,7 @@ namespace Metadata.Samples
   
     -   `mexTcpBinding` for TCP publication.  
   
-8.  For the metadata endpoints added in a previous step, set the address equal to:  
+8. For the metadata endpoints added in a previous step, set the address equal to:  
   
     -   An empty string to use the host application's base address as the publication point if the base address is the same as the metadata binding.  
   
@@ -164,7 +156,7 @@ namespace Metadata.Samples
   
 ### To use default endpoints  
   
-1.  To configure metadata on a service that uses default endpoints, specify the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file as in the previous example, but do not specify any endpoints. The configuration file would then look like this.  
+1. To configure metadata on a service that uses default endpoints, specify the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file as in the previous example, but do not specify any endpoints. The configuration file would then look like this.  
   
     ```xml  
     <configuration>  
@@ -256,6 +248,7 @@ namespace Metadata.Samples
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)
 - [Self-Host](../../../../docs/framework/wcf/samples/self-host.md)

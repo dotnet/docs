@@ -18,6 +18,7 @@ Use the following procedure to detect when the mouse pointer is over a <xref:Sys
      This will prevent you from having to synchronize the <xref:System.Windows.Forms.ToolStripItem.MouseEnter> and <xref:System.Windows.Forms.ToolStripItem.MouseLeave> events.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripItem>
 - <xref:System.Windows.Forms.ToolStripItem.Selected%2A>
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

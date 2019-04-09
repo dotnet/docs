@@ -12,9 +12,9 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
   
  [Locking Configuration Settings](https://go.microsoft.com/fwlink/?LinkId=95338)  
   
- This section describes all possible values of each configuration item, and how it interacts with other WCF configuration elements. The following map illustrates the WCF configuration schema.  
+ This section describes all possible values of each configuration item, and how it interacts with other WCF configuration elements. The following map illustrates the WCF configuration schema:  
   
- ![WCF Configuration Schema](../../../../../docs/framework/configure-apps/file-schema/wcf/media/orcasconfigschema.gif "OrcasConfigSchema")  
+ ![Diagram that shows the WCF configuration schema.](./media/index/windows-communication-foundation-configuration-schema.gif)  
   
 > [!CAUTION]
 >  You should protect WCF configuration sections in your application configuration files (app.config) with appropriate Access Control Lists (ACL) to prevent any potential security threats.  For example, you should make sure that only the appropriate people can access or modify the security settings on application bindings, or the service model section of the configuration file for a service.  

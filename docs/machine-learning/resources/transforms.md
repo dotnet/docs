@@ -13,6 +13,13 @@ The following tables contain information about all of the data transforms suppor
 > [!NOTE]
 > ML.NET is currently in Preview. Not all data transforms are currently supported. To submit a request for a certain transform, open an issue in the [dotnet/machinelearning](https://github.com/dotnet/machinelearning/issues) GitHub repository.
 
+
+## Test
+
+<xref:Microsoft.ML.LightGbmExtensions.LightGbm*>
+
+<xref:Microsoft.ML.LightGbmExtensions.LightGbm(Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Int32)>
+
 ## Combiners and segregators
 
 | Transform | Definition |

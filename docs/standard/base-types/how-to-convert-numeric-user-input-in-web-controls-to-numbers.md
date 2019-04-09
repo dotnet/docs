@@ -21,21 +21,21 @@ Because a Web page can be displayed anywhere in the world, users can input numer
   
 ### To convert numeric input from a Web TextBox control to a number  
   
-1.  Determine whether the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property is populated. If it is not, continue to step 6.  
+1. Determine whether the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property is populated. If it is not, continue to step 6.  
   
-2.  If the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property is populated, retrieve its first element. The first element indicates the user's default or preferred language and region.  
+2. If the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property is populated, retrieve its first element. The first element indicates the user's default or preferred language and region.  
   
-3.  Instantiate a <xref:System.Globalization.CultureInfo> object that represents the user's preferred culture by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor.  
+3. Instantiate a <xref:System.Globalization.CultureInfo> object that represents the user's preferred culture by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor.  
   
-4.  Call either the `TryParse` or the `Parse` method of the numeric type that you want to convert the user's input to. Use an overload of the `TryParse` or the `Parse` method with a `provider` parameter, and pass it either of the following:  
+4. Call either the `TryParse` or the `Parse` method of the numeric type that you want to convert the user's input to. Use an overload of the `TryParse` or the `Parse` method with a `provider` parameter, and pass it either of the following:  
   
     -   The <xref:System.Globalization.CultureInfo> object created in step 3.  
   
     -   The <xref:System.Globalization.NumberFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 3.  
   
-5.  If the conversion fails, repeat steps 2 through 4 for each remaining element in the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property.  
+5. If the conversion fails, repeat steps 2 through 4 for each remaining element in the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property.  
   
-6.  If the conversion still fails or if the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property is empty, parse the string by using the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.  
+6. If the conversion still fails or if the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property is empty, parse the string by using the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.  
   
 ## Example  
  The following example is the complete code-behind page for a Web form that asks the user to enter a numeric value in a <xref:System.Web.UI.WebControls.TextBox> control and converts it to a number. That number is then doubled and displayed by using the same formatting rules as the original input.  

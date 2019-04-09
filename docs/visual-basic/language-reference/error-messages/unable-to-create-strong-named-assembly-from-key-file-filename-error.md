@@ -15,7 +15,7 @@ A strong-named assembly could not be created from the specified key file.
   
 ## To correct this error  
   
-1.  Verify that the correct key file has been specified, and that it is not locked by another application.  
+1. Verify that the correct key file has been specified, and that it is not locked by another application.  
   
 ## See also
 

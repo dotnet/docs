@@ -15,9 +15,9 @@ The attribute can only be applied once. The `AttributeUsage` attribute determine
   
 ## To correct this error  
   
-1.  Make sure the attribute is only applied once.  
+1. Make sure the attribute is only applied once.  
   
-2.  If you are using custom attributes you developed, consider changing their `AttributeUsage` attribute to allow multiple attribute usage, as with the following example.  
+2. If you are using custom attributes you developed, consider changing their `AttributeUsage` attribute to allow multiple attribute usage, as with the following example.  
   
 ```vb  
 <AttributeUsage(AllowMultiple := True)>  

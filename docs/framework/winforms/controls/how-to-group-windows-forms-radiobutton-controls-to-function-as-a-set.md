@@ -15,11 +15,12 @@ Windows Forms <xref:System.Windows.Forms.RadioButton> controls are designed to g
   
 ### To group RadioButton controls as a set to function independently of other sets  
   
-1.  Drag a <xref:System.Windows.Forms.GroupBox> or <xref:System.Windows.Forms.Panel> control from the **Windows Forms** tab on the **Toolbox** onto the form.  
+1. Drag a <xref:System.Windows.Forms.GroupBox> or <xref:System.Windows.Forms.Panel> control from the **Windows Forms** tab on the **Toolbox** onto the form.  
   
-2.  Draw <xref:System.Windows.Forms.RadioButton> controls on the <xref:System.Windows.Forms.GroupBox> or <xref:System.Windows.Forms.Panel> control.  
+2. Draw <xref:System.Windows.Forms.RadioButton> controls on the <xref:System.Windows.Forms.GroupBox> or <xref:System.Windows.Forms.Panel> control.  
   
 ## See also
+
 - <xref:System.Windows.Forms.RadioButton>
 - [RadioButton Control Overview](radiobutton-control-overview-windows-forms.md)
 - [Panel Control Overview](panel-control-overview-windows-forms.md)

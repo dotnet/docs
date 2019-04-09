@@ -257,6 +257,7 @@ For more information about configuring services and clients, see [Configuring WC
  If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be "true".  
   
 ## See also
+
 - [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
 - [Configuring WCF services](configuring-services.md)
 - [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)

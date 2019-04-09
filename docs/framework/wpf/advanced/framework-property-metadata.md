@@ -8,9 +8,7 @@ ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
 ---
 # Framework Property Metadata
 Framework property metadata options are reported for the properties of object elements considered to be at the WPF framework level in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] architecture. In general the WPF framework-level designation entails that features such as rendering, data binding, and property system refinements are handled by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] and executables. Framework property metadata is queried by these systems to determine feature-specific characteristics of particular element properties.  
-  
- 
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). You should also have read [Dependency Property Metadata](dependency-property-metadata.md).  
@@ -44,9 +42,9 @@ Framework property metadata options are reported for the properties of object el
   
  If you are creating a <xref:System.Windows.FrameworkPropertyMetadata> instance, there are two ways to populate that metadata with values for the specific properties that communicate the framework property characteristics:  
   
-1.  Use the <xref:System.Windows.FrameworkPropertyMetadata> constructor signature that allows a `flags` parameter. This parameter should be filled with all desired combined values of the <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration flags.  
+1. Use the <xref:System.Windows.FrameworkPropertyMetadata> constructor signature that allows a `flags` parameter. This parameter should be filled with all desired combined values of the <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration flags.  
   
-2.  Use one of the signatures without a `flags` parameter, and then set each reporting Boolean property on <xref:System.Windows.FrameworkPropertyMetadata> to `true` for each desired characteristic change. If you do this, you must set these properties before any elements with this dependency property are constructed; the Boolean properties are read-write in order to allow this behavior of avoiding the `flags` parameter and still populate the metadata, but the metadata must become effectively sealed before property use. Thus, attempting to set the properties after metadata is requested will be an invalid operation.  
+2. Use one of the signatures without a `flags` parameter, and then set each reporting Boolean property on <xref:System.Windows.FrameworkPropertyMetadata> to `true` for each desired characteristic change. If you do this, you must set these properties before any elements with this dependency property are constructed; the Boolean properties are read-write in order to allow this behavior of avoiding the `flags` parameter and still populate the metadata, but the metadata must become effectively sealed before property use. Thus, attempting to set the properties after metadata is requested will be an invalid operation.  
   
 <a name="Framework_Property_Metadata_Merge_Behavior"></a>   
 ## Framework Property Metadata Merge Behavior  
@@ -67,6 +65,7 @@ Framework property metadata options are reported for the properties of object el
  This behavior is implemented by <xref:System.Windows.FrameworkPropertyMetadata.Merge%2A>, and can be overridden on derived metadata classes.  
   
 ## See also
+
 - <xref:System.Windows.DependencyProperty.GetMetadata%2A>
 - [Dependency Property Metadata](dependency-property-metadata.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)

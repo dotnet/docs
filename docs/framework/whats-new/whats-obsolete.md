@@ -39,9 +39,9 @@ When you upgrade and recompile existing code, using an obsolete type or member t
 
 You may choose not to recompile existing code against a later version of the .NET Framework. Instead, you can specify the version of the .NET Framework against which your existing compiled code runs. For example, suppose that you have an application named app1.exe that was compiled against the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], but you want the application to run against the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. This requires the following steps:
 
-1.  Create a configuration file for your main executable and name it *appName*.exe.config, where *appName* is the name of the application executable. For the application named app1.exe in our example, you would create a configuration file named app1.exe.config.
+1. Create a configuration file for your main executable and name it *appName*.exe.config, where *appName* is the name of the application executable. For the application named app1.exe in our example, you would create a configuration file named app1.exe.config.
 
-2.  Add the following to the configuration file.
+2. Add the following to the configuration file.
 
     ```xml
     <configuration>

@@ -17,9 +17,9 @@ This sample demonstrates how to customize the Windows Communication Foundation (
   
  By the previous description, two steps can easily be distinguished to achieve the goal:  
   
-1.  Change the message that goes on the wire to carry the context ID.  
+1. Change the message that goes on the wire to carry the context ID.  
   
-2.  Change the service local behavior to implement custom instancing logic.  
+2. Change the service local behavior to implement custom instancing logic.  
   
  Because the first one in the list affects the messages on the wire it should be implemented as a custom channel and be hooked up to the channel layer. The latter only affects the service local behavior and therefore can be implemented by extending several service extensibility points. In the next few sections, each of these extensions are discussed.  
   
@@ -436,11 +436,11 @@ Press ENTER to shut down client
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!NOTE]
 >  You must be running SQL Server 2005 or SQL Express 2005 to run this sample. If you are running SQL Server 2005, you must modify the configuration of the service's connection string. When running cross-machine, SQL Server is only required on the server machine.  
@@ -453,4 +453,3 @@ Press ENTER to shut down client
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`  
-  

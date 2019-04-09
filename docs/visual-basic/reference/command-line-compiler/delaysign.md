@@ -31,11 +31,11 @@ Specifies whether the assembly will be fully or partially signed.
   
 ### To set -delaysign in the Visual Studio integrated development environment  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
-2.  Click the **Signing** tab.  
+2. Click the **Signing** tab.  
   
-3.  Set the value in the **Delay sign only** box.  
+3. Set the value in the **Delay sign only** box.  
   
 ## See also
 

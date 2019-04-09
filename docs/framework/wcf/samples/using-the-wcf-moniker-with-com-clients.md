@@ -178,46 +178,46 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 #### To set up and build the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  From a Developer Command Prompt for Visual Studio, open the \client\bin folder, under the language-specific folder.  
+3. From a Developer Command Prompt for Visual Studio, open the \client\bin folder, under the language-specific folder.  
   
     > [!NOTE]
     >  If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  
   
-4.  Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
+4. Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
   
-5.  Type in `regasm.exe /tlb:CalcProxy.tlb client.dll` to register the types with COM. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
+5. Type in `regasm.exe /tlb:CalcProxy.tlb client.dll` to register the types with COM. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
   
-6.  Type in `gacutil.exe /i client.dll` to add the assembly to the Global Assembly Cache.  
+6. Type in `gacutil.exe /i client.dll` to add the assembly to the Global Assembly Cache.  
   
 #### To run the sample on the same computer  
   
-1.  Test that you can access the service using a browser by typing in the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response.  
+1. Test that you can access the service using a browser by typing in the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response.  
   
-2.  Run ComCalcClient.vbs from \client, from under the language-specific folder. Client activity is displayed in message box windows.  
+2. Run ComCalcClient.vbs from \client, from under the language-specific folder. Client activity is displayed in message box windows.  
   
-3.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+3. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
-1.  On the service computer, create a virtual directory named ServiceModelSamples. The Setupvroot.bat script included with the sample can be used to create the disk directory and virtual directory.  
+1. On the service computer, create a virtual directory named ServiceModelSamples. The Setupvroot.bat script included with the sample can be used to create the disk directory and virtual directory.  
   
-2.  Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service computer. Be sure to include the files in the \bin directory.  
+2. Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service computer. Be sure to include the files in the \bin directory.  
   
-3.  Copy the client script file from the \client folder, under the language-specific folder, to the client computer.  
+3. Copy the client script file from the \client folder, under the language-specific folder, to the client computer.  
   
-4.  In the script file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
+4. In the script file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
   
-5.  Copy the WSDL file to the client computer. In the WSDL file, serviceWsdl.xml, replace any references to "localhost" with a fully-qualified domain name in the address.  
+5. Copy the WSDL file to the client computer. In the WSDL file, serviceWsdl.xml, replace any references to "localhost" with a fully-qualified domain name in the address.  
   
-6.  Copy the Client.dll library from the \client\bin folder, under the language-specific folder, to a directory on the client computer.  
+6. Copy the Client.dll library from the \client\bin folder, under the language-specific folder, to a directory on the client computer.  
   
-7.  From a command prompt, navigate to that destination directory on the client computer. If using [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], make sure to run the command prompt as Administrator.  
+7. From a command prompt, navigate to that destination directory on the client computer. If using [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], make sure to run the command prompt as Administrator.  
   
-8.  Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
+8. Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
   
 9. Type in `regasm.exe /tlb:CalcProxy.tlb client.dll` to register the types with COM. Ensure that path has been set to the folder that contains `regasm.exe` before you run the command.  
   
@@ -230,4 +230,3 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
 #### To clean up after the sample  
   
 -   For security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
-  

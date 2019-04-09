@@ -84,13 +84,13 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
 #### To build a chain of trust with the New-SelfSignedCertificate cmdlet  
   
-1.  Create a temporary root authority (self-signed) certificate using the New-SelfSignedCertificate cmdlet. Save the private key to the disk.  
+1. Create a temporary root authority (self-signed) certificate using the New-SelfSignedCertificate cmdlet. Save the private key to the disk.  
   
-2.  Use the new certificate to issue another certificate that contains the public key.  
+2. Use the new certificate to issue another certificate that contains the public key.  
   
-3.  Import the root authority certificate into the Trusted Root Certification Authorities store.  
+3. Import the root authority certificate into the Trusted Root Certification Authorities store.  
   
-4.  For step-by-step instructions, see [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md).  
+4. For step-by-step instructions, see [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md).  
   
 ## Which Certificate to Use?  
  Common questions about certificates are which certificate to use, and why. The answer depends on whether you are programming a client or service. The following information provides a general guideline and is not an exhaustive answer to these questions.  
@@ -165,6 +165,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
  In the first release of WCF, mapping is done without consulting the domain policy. Therefore it is possible that older applications that used to work when running under the first release, fails if the mapping is enabled and the X.509 certificate does not satisfy the domain policy.  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels>
 - <xref:System.ServiceModel.Security>
 - <xref:System.ServiceModel>

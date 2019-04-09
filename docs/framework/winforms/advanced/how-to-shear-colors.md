@@ -35,6 +35,7 @@ Shearing increases or decreases a color component by an amount proportional to a
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `ColorBars.bmp` with an image name and path valid on your system.  
   
 ## See also
+
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)

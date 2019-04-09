@@ -24,7 +24,7 @@ In the following procedure, you will create a multipane user interface that is s
   
 ### To create an Outlook-style user interface programmatically  
   
-1.  Within a form, declare each control that comprises your user interface. For this example, use the <xref:System.Windows.Forms.TreeView>, <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.SplitContainer>, and <xref:System.Windows.Forms.RichTextBox> controls to mimic the Microsoft Outlook user interface.  
+1. Within a form, declare each control that comprises your user interface. For this example, use the <xref:System.Windows.Forms.TreeView>, <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.SplitContainer>, and <xref:System.Windows.Forms.RichTextBox> controls to mimic the Microsoft Outlook user interface.  
   
     ```vb  
     Private WithEvents treeView1 As System.Windows.Forms.TreeView  
@@ -44,7 +44,7 @@ In the following procedure, you will create a multipane user interface that is s
     private System.Windows.Forms. SplitContainer splitContainer1;  
     ```  
   
-2.  Create a procedure that defines your user interface. The following code sets the properties so that the form will resemble the user interface in Microsoft Outlook. However, by using other controls or docking them differently, it is just as easy to create other user interfaces that are equally flexible.  
+2. Create a procedure that defines your user interface. The following code sets the properties so that the form will resemble the user interface in Microsoft Outlook. However, by using other controls or docking them differently, it is just as easy to create other user interfaces that are equally flexible.  
   
     ```vb  
     Public Sub CreateOutlookUI()  
@@ -158,7 +158,7 @@ In the following procedure, you will create a multipane user interface that is s
     }  
     ```  
   
-3.  In Visual Basic, add a call to the procedure you just created in the `New()` procedure. In Visual C#, add this line of code to the constructor for the form class.  
+3. In Visual Basic, add a call to the procedure you just created in the `New()` procedure. In Visual C#, add this line of code to the constructor for the form class.  
   
     ```vb  
     ' Add this to the New procedure.  
@@ -171,6 +171,7 @@ In the following procedure, you will create a multipane user interface that is s
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.SplitContainer>
 - [SplitContainer Control](splitcontainer-control-windows-forms.md)
 - [How to: Create a Multipane User Interface with Windows Forms Using the Designer](create-a-multipane-user-interface-with-wf-using-the-designer.md)

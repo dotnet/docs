@@ -44,11 +44,11 @@ In applications, it is possible that handlers that are attached to event sources
   
 ### Using an Existing Weak Event Manager Class  
   
-1.  Find an existing weak event manager.  
+1. Find an existing weak event manager.  
   
      For a list of weak event managers that are included with WPF, see the inheritance hierarchy in the <xref:System.Windows.WeakEventManager> class.  
   
-2.  Use the new weak event manager instead of the normal event hookup.  
+2. Use the new weak event manager instead of the normal event hookup.  
   
      For example, if your code uses the following pattern to subscribe to an event:  
   
@@ -76,7 +76,7 @@ In applications, it is possible that handlers that are attached to event sources
   
 ### Using the Generic Weak Event Manager Class  
   
-1.  Use the generic <xref:System.Windows.WeakEventManager%602> class instead of the normal event hookup.  
+1. Use the generic <xref:System.Windows.WeakEventManager%602> class instead of the normal event hookup.  
   
      When you use <xref:System.Windows.WeakEventManager%602> to register event listeners, you supply the event source and <xref:System.EventArgs> type as the type parameters to the class and call <xref:System.Windows.WeakEventManager%602.AddHandler%2A> as shown in the following code:  
   
@@ -86,19 +86,19 @@ In applications, it is possible that handlers that are attached to event sources
   
 ### Creating a Custom Weak Event Manager Class  
   
-1.  Copy the following class template to your project.  
+1. Copy the following class template to your project.  
   
      This class inherits from the <xref:System.Windows.WeakEventManager> class.  
   
      [!code-csharp[WeakEvents#WeakEventManagerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/WeakEvents/CSharp/WeakEventManagerTemplate.cs#weakeventmanagertemplate)]  
   
-2.  Replace the `SomeEventWeakEventManager` name with your own name.  
+2. Replace the `SomeEventWeakEventManager` name with your own name.  
   
-3.  Replace the three names described previously with the corresponding names for your event. (`SomeEvent`, `EventSource`, and `SomeEventEventArgs`)  
+3. Replace the three names described previously with the corresponding names for your event. (`SomeEvent`, `EventSource`, and `SomeEventEventArgs`)  
   
-4.  Set the visibility (public / internal / private) of the weak event manager class to the same visibility as event it manages.  
+4. Set the visibility (public / internal / private) of the weak event manager class to the same visibility as event it manages.  
   
-5.  Use the new weak event manager instead of the normal event hookup.  
+5. Use the new weak event manager instead of the normal event hookup.  
   
      For example, if your code uses the following pattern to subscribe to an event:  
   
@@ -125,6 +125,7 @@ In applications, it is possible that handlers that are attached to event sources
     ```  
   
 ## See also
+
 - <xref:System.Windows.WeakEventManager>
 - <xref:System.Windows.IWeakEventListener>
 - [Routed Events Overview](routed-events-overview.md)

@@ -52,13 +52,13 @@ author: "BrucePerlerMS"
   
 #### To create a simple ASP.NET application  
   
-1.  Start Visual Studio, then click **File**, **New**, and then **Project**.  
+1. Start Visual Studio, then click **File**, **New**, and then **Project**.  
   
-2.  In the **New Project** window, click **ASP.NET Web Forms Application**.  
+2. In the **New Project** window, click **ASP.NET Web Forms Application**.  
   
-3.  In **Name**, enter `TestApp` and press **OK**.  
+3. In **Name**, enter `TestApp` and press **OK**.  
   
-4.  After the **TestApp** project has been created, click on it in **Solution Explorer**. The project’s properties will appear in the **Properties** pane below **Solution Explorer**. Set the **Windows Authentication** property to **Enabled**.  
+4. After the **TestApp** project has been created, click on it in **Solution Explorer**. The project’s properties will appear in the **Properties** pane below **Solution Explorer**. Set the **Windows Authentication** property to **Enabled**.  
   
     > [!WARNING]
     >  Windows authentication is disabled by default in new ASP.NET applications, so you must manually enable it.  
@@ -68,7 +68,7 @@ author: "BrucePerlerMS"
   
 #### To configure ASP.NET application for claims using Windows authentication  
   
-1.  In the **TestApp** project’s *Default.aspx* file, replace the existing markup with the following:  
+1. In the **TestApp** project’s *Default.aspx* file, replace the existing markup with the following:  
   
     ```  
     <%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"  
@@ -90,7 +90,7 @@ author: "BrucePerlerMS"
   
      This step adds a GridView control to your *Default.aspx* page that will be populated with the claims retrieved from Windows authentication.  
   
-2.  Save the *Default.aspx* file, then open its code-behind file named *Default.aspx.cs*. Replace the existing code with the following:  
+2. Save the *Default.aspx* file, then open its code-behind file named *Default.aspx.cs*. Replace the existing code with the following:  
   
     ```csharp  
     using System;  
@@ -113,13 +113,13 @@ author: "BrucePerlerMS"
   
      The above code will display claims about an authenticated user.  
   
-3.  To change the application’s authentication type, modify the **\<authentication>** block in the **\<system.web>** section of the project’s root *Web.config* file so that it only includes the following configuration entry:  
+3. To change the application’s authentication type, modify the **\<authentication>** block in the **\<system.web>** section of the project’s root *Web.config* file so that it only includes the following configuration entry:  
   
     ```xml  
     <authentication mode="Windows" />  
     ```  
   
-4.  Finally, modify the **\<authorization>** block in the **\<system.web>** section of the same *Web.config* file to force authentication:  
+4. Finally, modify the **\<authorization>** block in the **\<system.web>** section of the same *Web.config* file to force authentication:  
   
     ```xml  
     <authorization>  
@@ -132,4 +132,4 @@ author: "BrucePerlerMS"
   
 #### To test your ASP.NET Web Forms application for claims using Windows authentication  
   
-1.  Press **F5** to build and run the application. You should be presented with *Default.aspx*, and your Windows account name (including domain name) should already appear as the authenticated user in the top right of the page. The page’s content should include a table filled with claims retrieved from your Windows account.
+1. Press **F5** to build and run the application. You should be presented with *Default.aspx*, and your Windows account name (including domain name) should already appear as the authenticated user in the top right of the page. The page’s content should include a table filled with claims retrieved from your Windows account.

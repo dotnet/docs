@@ -14,11 +14,11 @@ The advantage of overloading a procedure is in the flexibility of the call. The 
   
 ### To call a procedure that has more than one version defined  
   
-1.  In the calling code, determine which data to pass to the procedure.  
+1. In the calling code, determine which data to pass to the procedure.  
   
-2.  Write the procedure call in the normal way, presenting the data in the argument list. Be sure the arguments match the parameter list in one of the versions defined for the procedure.  
+2. Write the procedure call in the normal way, presenting the data in the argument list. Be sure the arguments match the parameter list in one of the versions defined for the procedure.  
   
-3.  You do not have to determine which version of the procedure to call. Visual Basic passes control to the version matching your argument list.  
+3. You do not have to determine which version of the procedure to call. Visual Basic passes control to the version matching your argument list.  
   
      The following example calls the `post` procedure declared in [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md). It obtains the customer identification, determines whether it is a `String` or an `Integer`, and then in either case calls the same procedure.  
   

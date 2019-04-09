@@ -25,8 +25,7 @@ This example shows how to create an add-in that returns a Windows Presentation F
   
 ## Example  
  To create an add-in that returns a WPF UI requires specific code for each pipeline segment, the add-in, and the host application.  
-    
-  
+
 <a name="Contract"></a>   
 ## Implementing the Contract Pipeline Segment  
  A method must be defined by the contract for returning a UI, and its return value must be of type <xref:System.AddIn.Contract.INativeHandleContract>. This is demonstrated by the `GetAddInUI` method of the `IWPFAddInContract` contract in the following code.  
@@ -84,5 +83,6 @@ This example shows how to create an add-in that returns a Windows Presentation F
  [!code-vb[SimpleAddInReturnsAUISample#GetUICode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/VisualBasic/Host/MainWindow.xaml.vb#getuicode)]  
   
 ## See also
+
 - [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [WPF Add-Ins Overview](wpf-add-ins-overview.md)

@@ -16,11 +16,11 @@ ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
   
 ### To serialize an object as a SOAP-encoded XML stream  
   
-1.  Create the class using the [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md).  
+1. Create the class using the [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md).  
   
-2.  Apply one or more of the special attributes found in `System.Xml.Serialization`. See the list in "Attributes That Control Encoded SOAP Serialization."  
+2. Apply one or more of the special attributes found in `System.Xml.Serialization`. See the list in "Attributes That Control Encoded SOAP Serialization."  
   
-3.  Create an `XmlTypeMapping` by creating a new `SoapReflectionImporter`, and invoking the `ImportTypeMapping` method with the type of the serialized class.  
+3. Create an `XmlTypeMapping` by creating a new `SoapReflectionImporter`, and invoking the `ImportTypeMapping` method with the type of the serialized class.  
   
      The following code example calls the `ImportTypeMapping` method of the `SoapReflectionImporter` class to create an `XmlTypeMapping`.  
   
@@ -36,7 +36,7 @@ ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
         new SoapReflectionImporter().ImportTypeMapping(typeof(Group));
     ```  
   
-4.  Create an instance of the `XmlSerializer` class by passing the `XmlTypeMapping` to the <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Xml.Serialization.XmlTypeMapping%29> constructor.  
+4. Create an instance of the `XmlSerializer` class by passing the `XmlTypeMapping` to the <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Xml.Serialization.XmlTypeMapping%29> constructor.  
   
     ```vb  
     Dim mySerializer As XmlSerializer = New XmlSerializer(myTypeMapping)  
@@ -46,7 +46,7 @@ ms.assetid: af406e0a-fa3a-46dd-a7ba-c80731eba3a0
     XmlSerializer mySerializer = new XmlSerializer(myTypeMapping);  
     ```  
   
-5.  Call the `Serialize` or `Deserialize` method.  
+5. Call the `Serialize` or `Deserialize` method.  
   
 ## Example  
   

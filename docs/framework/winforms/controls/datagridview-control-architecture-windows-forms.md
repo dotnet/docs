@@ -131,6 +131,7 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
  If you enable the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property, a special row for adding new rows appears as the last row. This row is part of the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection, but it has special functionality that may require your attention. For more information, see [Using the Row for New Records in the Windows Forms DataGridView Control](using-the-row-for-new-records-in-the-windows-forms-datagridview-control.md).  
   
 ## See also
+
 - [DataGridView Control Overview](datagridview-control-overview-windows-forms.md)
 - [Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)
 - [Using the Row for New Records in the Windows Forms DataGridView Control](using-the-row-for-new-records-in-the-windows-forms-datagridview-control.md)

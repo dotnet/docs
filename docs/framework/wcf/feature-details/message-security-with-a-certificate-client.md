@@ -12,8 +12,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
  ![Screenshot that shows a client with certificate.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
   
  For a sample application, see [Message Security Certificate](../../../../docs/framework/wcf/samples/message-security-certificate.md).  
-  
-  
+
 |Characteristic|Description|  
 |--------------------|-----------------|  
 |Security Mode|Message|  
@@ -139,6 +138,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ```  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

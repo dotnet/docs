@@ -18,17 +18,17 @@ Although you can use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Rec
 
  This document demonstrates a dataflow pipeline that downloads the book *The Iliad of Homer* from a website and searches the text to match individual words with words that reverse the first word's characters. The formation of the dataflow pipeline in this document consists of the following steps:  
   
-1.  Create the dataflow blocks that participate in the pipeline.  
+1. Create the dataflow blocks that participate in the pipeline.  
   
-2.  Connect each dataflow block to the next block in the pipeline. Each block receives as input the output of the previous block in the pipeline.  
+2. Connect each dataflow block to the next block in the pipeline. Each block receives as input the output of the previous block in the pipeline.  
   
-3.  For each dataflow block, create a continuation task that sets the next block to the completed state after the previous block finishes.  
+3. For each dataflow block, create a continuation task that sets the next block to the completed state after the previous block finishes.  
   
-4.  Post data to the head of the pipeline.  
+4. Post data to the head of the pipeline.  
   
-5.  Mark the head of the pipeline as completed.  
+5. Mark the head of the pipeline as completed.  
   
-6.  Wait for the pipeline to complete all work.  
+6. Wait for the pipeline to complete all work.  
   
 ## Prerequisites  
  Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you start this walkthrough.  

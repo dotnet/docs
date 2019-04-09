@@ -44,13 +44,13 @@ Embeds the specified resource into the output file.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Add a resource file to your project.  
+1. Add a resource file to your project.  
   
-2.  Select the file that you want to embed in **Solution Explorer**.  
+2. Select the file that you want to embed in **Solution Explorer**.  
   
-3.  Select **Build Action** for the file in the **Properties** window.  
+3. Select **Build Action** for the file in the **Properties** window.  
   
-4.  Set **Build Action** to **Embedded Resource**.  
+4. Set **Build Action** to **Embedded Resource**.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.FileProperties2.BuildAction%2A>.  
   

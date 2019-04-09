@@ -16,11 +16,11 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
   
 ### To dispose of a database connection when your code is finished with it  
   
-1.  Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).  
+1. Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).  
   
-2.  Create a `Using` block with the `Using` and `End Using` statements. Inside the block, put the code that deals with the database connection.  
+2. Create a `Using` block with the `Using` and `End Using` statements. Inside the block, put the code that deals with the database connection.  
   
-3.  Declare the connection and create an instance of it as part of the `Using` statement.  
+3. Declare the connection and create an instance of it as part of the `Using` statement.  
   
     ```  
     ' Insert the following line at the beginning of your source file.  

@@ -33,11 +33,11 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
   
 ### To save the contents of the control to a file  
   
-1.  Determine the path of the file to be saved.  
+1. Determine the path of the file to be saved.  
   
      To do this in a real-world application, you would typically use the <xref:System.Windows.Forms.SaveFileDialog> component. For an overview, see [SaveFileDialog Component Overview](savefiledialog-component-overview-windows-forms.md).  
   
-2.  Call the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> method of the <xref:System.Windows.Forms.RichTextBox> control, specifying the file to save and optionally a file type. If you call the method with a file name as its only argument, the file will be saved as RTF. To specify another file type, call the method with a value of the <xref:System.Windows.Forms.RichTextBoxStreamType> enumeration as its second argument.  
+2. Call the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> method of the <xref:System.Windows.Forms.RichTextBox> control, specifying the file to save and optionally a file type. If you call the method with a file name as its only argument, the file will be saved as RTF. To specify another file type, call the method with a value of the <xref:System.Windows.Forms.RichTextBoxStreamType> enumeration as its second argument.  
   
      In the example below, the path set for the location of the rich-text file is the **My Documents** folder. This location is used because you can assume that most computers running the Windows operating system will include this folder. Choosing this location also allows users with minimal system access levels to safely run the application. The example below assumes a form with a <xref:System.Windows.Forms.RichTextBox> control already added.  
   
@@ -82,6 +82,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
     >  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs Create access for the folder. Permissions are set using access control lists. If the file already exists, the application needs only Write access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant Read access to a single file, rather than Create access for a folder. Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.RichTextBox>
 - [RichTextBox Control](richtextbox-control-windows-forms.md)

@@ -198,17 +198,17 @@ Input Event Bubbling and Tunneling
   
  The order of event processing is as follows:  
   
-1.  `PreviewMouseDown` (tunnel) on root element.  
+1. `PreviewMouseDown` (tunnel) on root element.  
   
-2.  `PreviewMouseDown` (tunnel) on intermediate element #1.  
+2. `PreviewMouseDown` (tunnel) on intermediate element #1.  
   
-3.  `PreviewMouseDown` (tunnel) on source element #2.  
+3. `PreviewMouseDown` (tunnel) on source element #2.  
   
-4.  `MouseDown` (bubble) on source element #2.  
+4. `MouseDown` (bubble) on source element #2.  
   
-5.  `MouseDown` (bubble) on intermediate element #1.  
+5. `MouseDown` (bubble) on intermediate element #1.  
   
-6.  `MouseDown` (bubble) on root element.  
+6. `MouseDown` (bubble) on root element.  
   
  A routed event handler delegate provides references to two objects: the object that raised the event and the object where the handler was invoked. The object where the handler was invoked is the object reported by the `sender` parameter. The object where the event was first raised is reported by the <xref:System.Windows.RoutedEventArgs.Source%2A> property in the event data. A routed event can still be raised and handled by the same object, in which case `sender` and <xref:System.Windows.RoutedEventArgs.Source%2A> are identical (this is the case with Steps 3 and 4 in the event processing example list).  
   
@@ -239,6 +239,7 @@ Input Event Bubbling and Tunneling
  This topic mainly discusses routed events from the perspective of describing the basic concepts and offering guidance on how and when to respond to the routed events that are already present in the various base elements and controls. However, you can create your own routed event on your custom class along with all the necessary support, such as specialized event data classes and delegates. The routed event owner can be any class, but routed events must be raised by and handled by <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> derived classes in order to be useful. For more information about custom events, see [Create a Custom Routed Event](how-to-create-a-custom-routed-event.md).  
   
 ## See also
+
 - <xref:System.Windows.EventManager>
 - <xref:System.Windows.RoutedEvent>
 - <xref:System.Windows.RoutedEventArgs>

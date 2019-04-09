@@ -13,11 +13,11 @@ You subscribe to an event that is published by another class when you want to wr
   
 ### To subscribe to events by using the Visual Studio IDE  
   
-1.  If you cannot see the **Properties** window, in **Design** view, right-click the form or control for which you want to create an event handler, and select **Properties**.  
+1. If you cannot see the **Properties** window, in **Design** view, right-click the form or control for which you want to create an event handler, and select **Properties**.  
   
-2.  On top of the **Properties** window, click the **Events** icon.  
+2. On top of the **Properties** window, click the **Events** icon.  
   
-3.  Double-click the event that you want to create, for example the `Load` event.  
+3. Double-click the event that you want to create, for example the `Load` event.  
   
      Visual C# creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
   
@@ -31,7 +31,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 ### To subscribe to events programmatically  
   
-1.  Define an event handler method whose signature matches the delegate signature for the event. For example, if the event is based on the <xref:System.EventHandler> delegate type, the following code represents the method stub:  
+1. Define an event handler method whose signature matches the delegate signature for the event. For example, if the event is based on the <xref:System.EventHandler> delegate type, the following code represents the method stub:  
   
     ```csharp
     void HandleCustomEvent(object sender, CustomEventArgs a)  
@@ -40,7 +40,7 @@ You subscribe to an event that is published by another class when you want to wr
     }  
     ```  
   
-2.  Use the addition assignment operator (`+=`) to attach your event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
+2. Use the addition assignment operator (`+=`) to attach your event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
   
     ```csharp
     publisher.RaiseCustomEvent += HandleCustomEvent;  

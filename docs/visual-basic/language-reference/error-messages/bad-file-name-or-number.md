@@ -16,11 +16,11 @@ An error occurred while trying to access the specified file. Among the possible 
   
 ## To correct this error  
   
-1.  Make sure the file name is specified in a `FileOpen` statement. Note that if you invoked the `FileClose` statement without arguments, you may have inadvertently closed all open files.  
+1. Make sure the file name is specified in a `FileOpen` statement. Note that if you invoked the `FileClose` statement without arguments, you may have inadvertently closed all open files.  
   
-2.  If your code is generating file numbers algorithmically, make sure the numbers are valid.  
+2. If your code is generating file numbers algorithmically, make sure the numbers are valid.  
   
-3.  Check the file names to make sure they conform to operating system conventions.  
+3. Check the file names to make sure they conform to operating system conventions.  
   
 ## See also
 

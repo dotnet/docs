@@ -158,6 +158,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
  Alternatively, you can use the ClickOnce Trusted Deployment model for full trust deployment from any security zone. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Security](security-wpf.md).  
   
 ## See also
+
 - [Security](security-wpf.md)
 - [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)
 - [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)

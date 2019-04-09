@@ -20,7 +20,6 @@ To publish and run your application:
 
    ![Visual Studio Publish context menu](media/publishing-with-visual-studio/publish-context-menu.png)
 
-
    ![Visual Studio Publish window](media/publishing-with-visual-studio/publish-settings-window.png)
 
 1. Open a console window. For example in the **Type here to search** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.

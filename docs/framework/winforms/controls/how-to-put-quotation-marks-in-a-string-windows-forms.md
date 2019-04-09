@@ -20,7 +20,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
 ### To place quotation marks in a string in your code  
   
-1.  In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)], insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
+1. In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)], insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
   
     ```vb  
     Private Sub InsertQuote()  
@@ -44,7 +44,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
      -or-  
   
-2.  Insert the ASCII or Unicode character for a quotation mark. In Visual Basic, use the ASCII character (34). In Visual C#, use the Unicode character (\u0022).  
+2. Insert the ASCII or Unicode character for a quotation mark. In Visual Basic, use the ASCII character (34). In Visual C#, use the Unicode character (\u0022).  
   
     ```vb  
     Private Sub InsertAscii()  
@@ -63,7 +63,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
      -or-  
   
-3.  You can also define a constant for the character, and use it where needed.  
+3. You can also define a constant for the character, and use it where needed.  
   
     ```vb  
     Const quote As String = """"  
@@ -83,6 +83,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
 - <xref:Microsoft.VisualBasic.ControlChars.Quote>
 - [TextBox Control Overview](textbox-control-overview-windows-forms.md)

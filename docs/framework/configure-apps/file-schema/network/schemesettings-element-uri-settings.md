@@ -78,6 +78,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |Can be Empty||  
   
 ## See also
+
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

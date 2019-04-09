@@ -72,7 +72,7 @@ This topic demonstrates how to validate application settings before they are per
   
 ### To validate Application Settings when a setting is changing  
   
-1.  If you are a C# developer, in your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event.  
+1. If you are a C# developer, in your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event.  
   
      -or-  
   
@@ -91,7 +91,7 @@ This topic demonstrates how to validate application settings before they are per
     End Sub   
     ```  
   
-2.  Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
+2. Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
   
     ```csharp  
     private void MyCustomSettings_SettingChanging(Object sender, SettingChangingEventArgs e)  
@@ -120,7 +120,7 @@ This topic demonstrates how to validate application settings before they are per
   
 ### To validate Application Settings when a Save occurs  
   
-1.  In your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event.  
+1. In your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event.  
   
     ```csharp  
     public void Form1_Load(Object sender, EventArgs e)   
@@ -135,7 +135,7 @@ This topic demonstrates how to validate application settings before they are per
     End Sub  
     ```  
   
-2.  Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
+2. Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
   
     ```csharp  
     private void MyCustomSettings_SettingsSaving(Object sender, SettingsSavingEventArgs e)  
@@ -155,5 +155,6 @@ This topic demonstrates how to validate application settings before they are per
     ```  
   
 ## See also
+
 - [Creating Event Handlers in Windows Forms](../creating-event-handlers-in-windows-forms.md)
 - [How to: Create Application Settings](how-to-create-application-settings.md)

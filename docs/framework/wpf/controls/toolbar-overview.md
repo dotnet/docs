@@ -8,8 +8,7 @@ ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 ---
 # ToolBar Overview
 <xref:System.Windows.Controls.ToolBar> controls are containers for a group of commands or controls which are typically related in their function. A <xref:System.Windows.Controls.ToolBar> usually contains buttons which invoke commands.  
-  
-  
+
 <a name="ToolBarControl"></a>   
 ## ToolBar Control  
  The <xref:System.Windows.Controls.ToolBar> control takes its name from the bar-like arrangement of buttons or other controls into a single row or column. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.ToolBar> controls provide an overflow mechanism which places any items that do not fit naturally within a size-constrained <xref:System.Windows.Controls.ToolBar> into a special overflow area. Also, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.ToolBar> controls are usually used with the related <xref:System.Windows.Controls.ToolBarTray> control, which provides special layout behavior as well as support for user-initiated sizing and arranging of toolbars.  
@@ -35,6 +34,7 @@ ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
  [ToolBar Styles and Templates](toolbar-styles-and-templates.md).  
   
 ## See also
+
 - <xref:System.Windows.Controls.Primitives.ToolBarPanel>
 - <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>
 - [Style Controls on a ToolBar](how-to-style-controls-on-a-toolbar.md)

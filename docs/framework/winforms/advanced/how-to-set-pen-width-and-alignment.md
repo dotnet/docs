@@ -52,5 +52,6 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
      ![A rectangle drawn with black lines with the wide green line inside.](./media/how-to-set-pen-width-and-alignment/green-pixels-inside-rectangle.gif)  
   
 ## See also
+
 - [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)

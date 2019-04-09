@@ -67,5 +67,6 @@ The `DataGridView` control is used to display data from a variety of external da
  Provides topics that describe how to change the way users add and modify data in the control.  
   
 ## See also
+
 - [DataGridView Control](datagridview-control-windows-forms.md)
 - [Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)

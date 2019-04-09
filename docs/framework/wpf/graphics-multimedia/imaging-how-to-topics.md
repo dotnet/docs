@@ -38,4 +38,5 @@ The topics in this section demonstrate how to use [!INCLUDE[TLA#tla_winclient](.
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See also
+
 - [Imaging Overview](imaging-overview.md)

@@ -145,9 +145,9 @@ class Client
 ## Discovery and Web Hosted Services  
  In order for WCF services to be discoverable they must be running. WCF services hosted under IIS or WAS do not run until IIS/WAS receives a message bound for the service, so they cannot be discoverable by default.  There are two options for making Web-Hosted services discoverable:  
   
-1.  Use the Windows Server AppFabric Auto-Start feature  
+1. Use the Windows Server AppFabric Auto-Start feature  
   
-2.  Use a discovery proxy to communicate on behalf of the service  
+2. Use a discovery proxy to communicate on behalf of the service  
   
  Windows Server AppFabric has an Auto-Start feature that will allow a service to be started before receiving any messages. With this Auto-Start set, an IIS/WAS hosted service can be configured to be discoverable. For more information about the Auto-Start feature see, [Windows Server AppFabric Auto-Start Feature](https://go.microsoft.com/fwlink/?LinkId=205545). Along with turning on the Auto-Start feature, you must configure the service for discovery. For more information, see [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[Configuring Discovery in a Configuration File](../../../../docs/framework/wcf/feature-details/configuring-discovery-in-a-configuration-file.md).  
   

@@ -25,5 +25,6 @@ The <xref:System.Windows.Controls.TextBox> control provides support for basic te
  <xref:System.Windows.Controls.PasswordBox>  
   
 ## See also
+
 - [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
 - [TextBox Styles and Templates](textbox-styles-and-templates.md)

@@ -19,9 +19,9 @@ The <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=
 
 ### To set up, build, and run the sample
 
-1.  Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for VB in Visual Studio 2010.
+1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for VB in Visual Studio 2010.
 
-2.  Build and run the solution. A rehosted workflow designer application should open, and you can drag activities onto the canvas.
+2. Build and run the solution. A rehosted workflow designer application should open, and you can drag activities onto the canvas.
 
 ## Sample Highlights
  The code for this sample shows the following:
@@ -152,5 +152,6 @@ End Sub
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`  
   
 ## See also
+
 - <xref:System.Activities.Presentation.WorkflowItemsPresenter>
 - [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

@@ -65,9 +65,9 @@ When working with animations in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla
   
  If you click the second button while the first <xref:System.Windows.Media.Animation.Storyboard> is playing, you might expect the following behavior:  
   
-1.  The first storyboard ends and sends the rectangle back to its original position, because the animation has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior.Stop>.  
+1. The first storyboard ends and sends the rectangle back to its original position, because the animation has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior.Stop>.  
   
-2.  The second storyboard takes effect and animates from the current position, which is now 0, to 500.  
+2. The second storyboard takes effect and animates from the current position, which is now 0, to 500.  
   
  **But that's not what happens.** Instead, the rectangle does not jump back; it continues moving to the right. That's because the second animation uses the current value of the first animation as its starting value and animates from that value to 500. When the second animation replaces the first because the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace><xref:System.Windows.Media.Animation.HandoffBehavior> is used, the <xref:System.Windows.Media.Animation.FillBehavior> of the first animation does not matter.  
   
@@ -123,4 +123,5 @@ When working with animations in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla
  For more information about clock objects, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)

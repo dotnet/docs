@@ -16,6 +16,7 @@ The <xref:System.Windows.Controls.RichTextBox> element defines an editing contro
  [How-to Topics](richtextbox-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Controls.TextBox>
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 - [Flow Document Overview](../advanced/flow-document-overview.md)

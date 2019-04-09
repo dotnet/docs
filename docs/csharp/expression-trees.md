@@ -66,4 +66,3 @@ structures to create rich adaptive algorithms.
 7. [Summing up](expression-trees-summary.md)
 
     Review the information on expression trees.
-    

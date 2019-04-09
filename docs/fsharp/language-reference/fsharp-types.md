@@ -7,7 +7,6 @@ ms.date: 05/16/2016
 
 This topic describes the types that are used in F# and how F# types are named and described.
 
-
 ## Summary of F# Types
 Some types are considered *primitive types*, such as the Boolean type `bool` and integral and floating point types of various sizes, which include types for bytes and characters. These types are described in [Primitive Types](primitive-types.md).
 
@@ -21,13 +20,10 @@ Also, F# code can define aliases, which are named *type abbreviations*, that are
 
 F# provides useful collection types that are designed with functional programming in mind. Using these collection types helps you write code that is more functional in style. For more information, see [F# Collection Types](fsharp-collection-types.md).
 
-
 ## Syntax for Types
 In F# code, you often have to write out the names of types. Every type has a syntactic form, and you use these syntactic forms in type annotations, abstract method declarations, delegate declarations, signatures, and other constructs. Whenever you declare a new program construct in the interpreter, the interpreter prints the name of the construct and the syntax for its type. This syntax might be just an identifier for a user-defined type or a built-in identifier such as for `int` or `string`, but for more complex types, the syntax is more complex.
 
 The following table shows aspects of the type syntax for F# types.
-
-
 
 |Type|Type syntax|Examples|
 |----|-----------|--------|
@@ -48,7 +44,6 @@ The following table shows aspects of the type syntax for F# types.
 |flexible type|#*type-name*|`#System.Windows.Forms.Control`<br /><br />`#seq<int>`|
 
 ## Related Topics
-
 
 |Topic|Description|
 |-----|-----------|

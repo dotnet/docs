@@ -53,9 +53,9 @@ author: "BrucePerlerMS"
   
 #### To configure WIF tracing using Web.config configuration file  
   
-1.  Open the root **Web.config** or **App.config** configuration file in the Visual Studio editor by double clicking on it in **Solution Explorer**. If your solution does not have **Web.config** or **App.config** configuration file, add it by right clicking on the solution in the **Solution Explorer** and clicking **Add**, then clicking **New Item…**. On the **New Item** dialog, Select **Application Configuration File** for **App.config** or **Web Configuration File** for **Web.config** from the list and click **OK**.  
+1. Open the root **Web.config** or **App.config** configuration file in the Visual Studio editor by double clicking on it in **Solution Explorer**. If your solution does not have **Web.config** or **App.config** configuration file, add it by right clicking on the solution in the **Solution Explorer** and clicking **Add**, then clicking **New Item…**. On the **New Item** dialog, Select **Application Configuration File** for **App.config** or **Web Configuration File** for **Web.config** from the list and click **OK**.  
   
-2.  Add the configuration entries similar to the following to the configuration file inside **\<configuration>** node at the end of the configuration file:  
+2. Add the configuration entries similar to the following to the configuration file inside **\<configuration>** node at the end of the configuration file:  
   
     ```xml  
     <system.diagnostics>  
@@ -70,31 +70,31 @@ author: "BrucePerlerMS"
     </system.diagnostics>  
     ```  
   
-3.  The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](../wcf/diagnostics/tracing/configuring-tracing.md).  
+3. The above configuration instructs WIF to generate verbose trace events and log them into *WIFTrace.e2e* file. For a complete list of values for the **switchValue** switch, refer to the Trace Level table found in the following topic: [Configuring Tracing](../wcf/diagnostics/tracing/configuring-tracing.md).  
   
 ## Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
  In this step, you will use the Trace Viewer Tool (SvcTraceViewer.exe) to analyze WIF trace logs.  
   
 #### To analyze WIF trace logs using Trace Viewer tool (SvcTraceViewer.exe)  
   
-1.  Trace Viewer tool (SvcTraceViewer.exe) ships as part of the Windows SDK. If you haven’t already installed the Windows SDK, you can download it here: [Windows SDK](https://www.microsoft.com/download/en/details.aspx?id=8279).  
+1. Trace Viewer tool (SvcTraceViewer.exe) ships as part of the Windows SDK. If you haven’t already installed the Windows SDK, you can download it here: [Windows SDK](https://www.microsoft.com/download/en/details.aspx?id=8279).  
   
-2.  Run the Trace Viewer tool (SvcTraceViewer.exe). It is typically available in the **Bin** folder of the installation path.  
+2. Run the Trace Viewer tool (SvcTraceViewer.exe). It is typically available in the **Bin** folder of the installation path.  
   
-3.  Open the WIF trace log file, for example, WIFTrace.e2e by selecting **File**, **Open…** option in the menu or using the **Ctrl+O** shortcut. The trace log file opens in the Trace Viewer tool.  
+3. Open the WIF trace log file, for example, WIFTrace.e2e by selecting **File**, **Open…** option in the menu or using the **Ctrl+O** shortcut. The trace log file opens in the Trace Viewer tool.  
   
-4.  Review entries in the **Activity** tab. Each entry should contain an activity number, the number of traces that were logged, duration of the activity and its start and end timestamps.  
+4. Review entries in the **Activity** tab. Each entry should contain an activity number, the number of traces that were logged, duration of the activity and its start and end timestamps.  
   
-5.  Click on the **Activity** tab. You should see detailed trace entries in the main area of the tool. Use the **Level** dropdown list on the menu to filter specific level of traces, for example: **All**, **Warning**, **Errors**, **Information**, etc.  
+5. Click on the **Activity** tab. You should see detailed trace entries in the main area of the tool. Use the **Level** dropdown list on the menu to filter specific level of traces, for example: **All**, **Warning**, **Errors**, **Information**, etc.  
   
-6.  Click on specific trace entries to review the details in the lower area of the tool. The details can be viewed using **Formatted** and **XML** view by choosing corresponding tabs.  
+6. Click on specific trace entries to review the details in the lower area of the tool. The details can be viewed using **Formatted** and **XML** view by choosing corresponding tabs.  
   
 ## Step 3 – Identify Solutions to Fix WIF Related Issues  
  In this step, you can identify solutions for WIF-related issues identified by using the WIF trace log and Trace Viewer tool. It outlines general mapping of WIF related exceptions to potential solutions or required actions to troubleshoot the issue.  
   
 #### To identify solutions to fix WIF related issues  
   
-1.  Review the following table of WIF exceptions and the required actions to correct the issues.  
+1. Review the following table of WIF exceptions and the required actions to correct the issues.  
   
 |**Error ID**|**Error Message**|**Action needed to fix the error**|  
 |-|-|-|  

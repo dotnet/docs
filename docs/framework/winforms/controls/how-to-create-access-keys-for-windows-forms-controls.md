@@ -26,7 +26,7 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
   
 ### To create an access key for a control  
   
-1.  Set the `Text` property to a string that includes an ampersand (&) before the letter that will be the shortcut.  
+1. Set the `Text` property to a string that includes an ampersand (&) before the letter that will be the shortcut.  
   
     ```vb  
     ' Set the letter "P" as an access key.  
@@ -47,6 +47,7 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
     >  To include an ampersand in a caption without creating an access key, include two ampersands (&&). A single ampersand is displayed in the caption and no characters are underlined.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Button>
 - [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
 - [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)

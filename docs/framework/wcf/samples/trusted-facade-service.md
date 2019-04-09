@@ -254,27 +254,27 @@ Press <ENTER> to terminate client.
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
 #### To run the sample on the same machine  
   
-1.  Ensure that the path includes the folder where Makecert.exe is located.  
+1. Ensure that the path includes the folder where Makecert.exe is located.  
   
-2.  Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
+2. Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
   
-3.  Launch the BackendService.exe from \BackendService\bin directory in a separate console window  
+3. Launch the BackendService.exe from \BackendService\bin directory in a separate console window  
   
-4.  Launch the FacadeService.exe from \FacadeService\bin directory in a separate console window  
+4. Launch the FacadeService.exe from \FacadeService\bin directory in a separate console window  
   
-5.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+5. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-6.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+6. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -284,4 +284,3 @@ Press <ENTER> to terminate client.
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
-  

@@ -217,11 +217,11 @@ Press <ENTER> to terminate the service.
   
 ### To set up, build, and run the sample  
   
-1.  To build the C# or Visual Basic .NET version of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+1. To build the C# or Visual Basic .NET version of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)  
   
-2.  Ensure that you have installed SQL Server Express Edition or SQL Server, and that the connection string has been correctly set in the service’s application configuration file. To run the sample without using a database, set the `usingSql` value in the service’s application configuration file to `false`  
+2. Ensure that you have installed SQL Server Express Edition or SQL Server, and that the connection string has been correctly set in the service’s application configuration file. To run the sample without using a database, set the `usingSql` value in the service’s application configuration file to `false`  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
     > [!NOTE]
     >  For cross-machine configuration, enable the Distributed Transaction Coordinator using the instructions below, and use the WsatConfig.exe tool from the Windows SDK to enable WCF Transactions network support. See [Configuring WS-Atomic Transaction Support](https://go.microsoft.com/fwlink/?LinkId=190370) for information on setting up WsatConfig.exe.  
@@ -230,7 +230,7 @@ Press <ENTER> to terminate the service.
   
 ### To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample  
   
-1.  On a service machine running Windows Server 2003 or Windows XP, configure MSDTC to allow incoming network transactions by following these instructions.  
+1. On a service machine running Windows Server 2003 or Windows XP, configure MSDTC to allow incoming network transactions by following these instructions.  
   
     1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
@@ -246,7 +246,7 @@ Press <ENTER> to terminate the service.
   
     7.  Click **OK** to close the dialog box.  
   
-2.  On a service machine running Windows Server 2008 or Windows Vista, configure MSDTC to allow incoming network transactions by following these instructions.  
+2. On a service machine running Windows Server 2008 or Windows Vista, configure MSDTC to allow incoming network transactions by following these instructions.  
   
     1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
@@ -260,7 +260,7 @@ Press <ENTER> to terminate the service.
   
     6.  Click **OK** to close the dialog box.  
   
-3.  On the client machine, configure MSDTC to allow outgoing network transactions:  
+3. On the client machine, configure MSDTC to allow outgoing network transactions:  
   
     1.  From the **Start** menu, navigate to `Control Panel`, then **Administrative Tools**, and then **Component Services**.  
   

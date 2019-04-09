@@ -71,6 +71,7 @@ A closed shape, such as a rectangle or an ellipse, consists of an outline and an
  ![Filled Shape](./media/aboutgdip02-art23.gif "AboutGdip02_Art23")  
   
 ## See also
+
 - <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>
 - <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>
 - <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>

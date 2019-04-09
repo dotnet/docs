@@ -56,5 +56,6 @@ ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
  To learn more about property triggers, see [Styling and Templating](../controls/styling-and-templating.md).  
   
 ## See also
+
 - [Routed Events Overview](routed-events-overview.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)

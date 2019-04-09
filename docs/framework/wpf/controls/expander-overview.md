@@ -11,8 +11,7 @@ ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb
 ---
 # Expander Overview
 An <xref:System.Windows.Controls.Expander> control provides a way to provide content in an expandable area that resembles a window and includes a header.  
-  
-  
+
 <a name="CreatinganExpanderinXAML"></a>   
 ## Creating a Simple Expander  
  The following example shows how to create a simple <xref:System.Windows.Controls.Expander> control. This example creates an <xref:System.Windows.Controls.Expander> that looks like the previous illustration.  
@@ -54,6 +53,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
  You can align content by setting the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties on the <xref:System.Windows.Controls.Expander> control. When you set these properties, the alignment applies to the header and also to the expanded content.  
   
 ## See also
+
 - <xref:System.Windows.Controls.Expander>
 - <xref:System.Windows.Controls.ExpandDirection>
 - [How-to Topics](expander-how-to-topics.md)

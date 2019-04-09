@@ -44,5 +44,6 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
  The preceding examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)
 - [Constructing and Drawing Curves](constructing-and-drawing-curves.md)

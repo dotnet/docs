@@ -272,40 +272,40 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 
 #### To set up and build the sample
 
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-2.  To run the sample in a single- or cross-machine configuration, use the following instructions.
+2. To run the sample in a single- or cross-machine configuration, use the following instructions.
 
 #### To run the sample on the same machine
 
-1.  Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt. This installs all the certificates required for running the sample.
 
     > [!NOTE]
     >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
-2.  Launch Service.exe from service\bin.  
+2. Launch Service.exe from service\bin.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across machines  
   
-1.  Create a directory on the service machine for the service binaries.  
+1. Create a directory on the service machine for the service binaries.  
   
-2.  Copy the service program files the service directory on the service machine. Also copy the Setup.bat and Cleanup.bat files to the service machine.  
+2. Copy the service program files the service directory on the service machine. Also copy the Setup.bat and Cleanup.bat files to the service machine.  
   
-3.  You need a server certificate with the subject name that contains the fully-qualified domain name of the machine. The configuration file for the server must be updated to reflect this new certificate name.  
+3. You need a server certificate with the subject name that contains the fully-qualified domain name of the machine. The configuration file for the server must be updated to reflect this new certificate name.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You need to do this only if the server certificate is not issued by a trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You need to do this only if the server certificate is not issued by a trusted issuer.  
   
-5.  In the App.config file on the service machine, change the value of the base address to specify a fully-qualified machine name instead of localhost.  
+5. In the App.config file on the service machine, change the value of the base address to specify a fully-qualified machine name instead of localhost.  
   
-6.  On the service machine, launch Service.exe from a command prompt window.  
+6. On the service machine, launch Service.exe from a command prompt window.  
   
-7.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machine.  
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machine.  
   
-8.  In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service.  
+8. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service.  
   
 9. On the client machine, launch Client.exe from a command prompt window.  
   
@@ -313,5 +313,4 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server certificate from the certificate store.  
-  
+1. Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server certificate from the certificate store.  

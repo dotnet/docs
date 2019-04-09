@@ -60,7 +60,6 @@ private DamageResult CalculateDamageDone()
     // the result of that calculation.
 }
 
-
 calculateButton.Clicked += async (o, e) =>
 {
     // This line will yield control to the UI while CalculateDamageDone()

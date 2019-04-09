@@ -31,4 +31,5 @@ Animations can alter the display and appearance of text in your application. The
  [!code-xaml[TextAnimationSample#TextAnimationSample4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextAnimationSample/CS/Window1.xaml#textanimationsample4)]  
   
 ## See also
+
 - [Animation Overview](../graphics-multimedia/animation-overview.md)

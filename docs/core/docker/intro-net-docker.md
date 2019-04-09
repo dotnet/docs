@@ -53,6 +53,9 @@ Scale and orchestrate Linux containers using Kubernetes.
 * [Azure App Service](https://azure.microsoft.com/services/app-service/containers/)\
 Deploy web apps or APIs using Linux containers in a PaaS environment.
 
+* [Azure Container Instances](https://azure.microsoft.com/services/container-instances/)\
+Develop apps fast without managing virtual machines or having to learn new tools—it's just your application, in a container, running in the cloud.
+
 * [Azure Batch](https://azure.microsoft.com/services/batch/)\
 Run repetitive compute jobs using containers.
 

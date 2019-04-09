@@ -171,7 +171,7 @@ There are two ways to find the UID:
 - View the source for the API page you want to link to and find the ms.assetid value. Note that individual overload values are not shown in the source.
 - Use the following tool to search for UIDs: https://xref.docs.microsoft.com/autocomplete?text=tostring (replace tostring with parts of the API name you're trying to find). The tool searches for the provided `text` query parameter in any part of the UID. For example, you can search for member name (ToString), partial member name (ToStri), type and member name (Double.ToString), etc.
 
-When the UID contains the special characters \`, \# or \*, the UID value needs to be HTML encoded as `%60`, `%23` and `%2A` respectively. You'll sometimes see parentheses encoded but it's not a requirement.
+When the UID contains the special characters \`, \#, \*, or \@, the UID value needs to be HTML encoded as `%60`, `%23`, `%2A`, and `%40`, respectively. You'll sometimes see parentheses encoded but it's not a requirement.
 
 Examples:
 

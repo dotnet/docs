@@ -161,7 +161,7 @@ FROM mcr.microsoft.com/dotnet/core/runtime:2.2
 
 The `FROM` command tells Docker to pull down the image tagged **2.2** from the **mcr.microsoft.com/dotnet/core/runtime** repository. Make sure that you pull the .NET Core runtime that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 2.2 SDK and created an app that targeted .NET Core 2.2. So the base image referred to in the *Dockerfile* is tagged with **2.2**.
 
-Save the file. From your terminal, run `docker build -t myimage .` and Docker will process each line in the *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
+Save the file. From your terminal, run `docker build -t myimage .` and Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells docker to use the current directory to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
 ```console
 > docker images

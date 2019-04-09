@@ -21,7 +21,7 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
   
  ![A circle made up of a series concentric rings with alternating colors.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-evenodd-property.png)  
   
- In the illustration above, notice that the center and 3rd ring are not filled. This is because a ray drawn from any point within either of those two rings passes through an even number of segments. See illustration below:  
+ In the previous illustration, notice that the center and third ring are not filled. This is because a ray drawn from any point within either of those two rings passes through an even number of segments. See the following illustration:  
   
  ![Diagram showing the EvenOdd rays drawn in the circle.](./media/how-to-control-the-fill-of-a-composite-shape/fillrule-evenodd-rays.png)  
   

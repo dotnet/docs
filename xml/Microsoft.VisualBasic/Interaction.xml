@@ -1331,7 +1331,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <param name="Wait">Optional. <see langword="Boolean" />. A value indicating whether the <see langword="Shell" /> function should wait for completion of the program. If <paramref name="Wait" /> is omitted, <see langword="Shell" /> uses <see langword="False" />.</param>
         <param name="Timeout">Optional. <see langword="Integer" />. The number of milliseconds to wait for completion if <paramref name="Wait" /> is <see langword="True" />. If <paramref name="Timeout" /> is omitted, <see langword="Shell" /> uses -1, which means there is no timeout and <see langword="Shell" /> does not return until the program finishes. Therefore, if you omit <paramref name="Timeout" /> or set it to -1, it is possible that <see langword="Shell" /> might never return control to your program.</param>
         <summary>Runs an executable program and returns an integer containing the program's process ID if it is still running.</summary>
-        <returns>Runs an executable program and returns an integer containing the program's process ID if it is still running.</returns>
+        <returns>An integer containing the program's process ID if it is still running. 0 if the program already finished executing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

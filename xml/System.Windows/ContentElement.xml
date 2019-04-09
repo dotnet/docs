@@ -38,12 +38,13 @@
  <xref:System.Windows.ContentElement> shares many common [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] with <xref:System.Windows.UIElement>. These common [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] do not come from a shared class inheritance. But they do share common naming, similar behavior, and similar internal implementation of [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] in each class. The similarity is because <xref:System.Windows.ContentElement> and <xref:System.Windows.UIElement> are each classes that are an element base, although each has different intentions for its markup object model behavior.  
   
  In particular, <xref:System.Windows.UIElement> descends from <xref:System.Windows.Media.Visual>, which provides the lower-level graphics support for rendering a <xref:System.Windows.ContentElement> to a rectangular region within a composited window, whereas <xref:System.Windows.ContentElement> defers rendering so that concepts more common to document scenarios, such as flow and wrapping, are more easily supported. These two related classes also implement the common interfaces <xref:System.Windows.IInputElement> and <xref:System.Windows.Media.Animation.IAnimatable>.  
-  
+
+ ## Notes to inheritors
+
+ The <xref:System.Windows.ContentElement> class does not yet define all aspects of a complete content element for flow-style presentation. <xref:System.Windows.FrameworkContentElement> is an immediately derived class of <xref:System.Windows.ContentElement>. <xref:System.Windows.FrameworkContentElement> includes a more complete set of additional members that support rendering a <xref:System.Windows.FrameworkContentElement> within a content host and using the WPF framework-level layout system.
+
  ]]></format>
     </remarks>
-    <block subset="none" type="overrides">
-      <para>The <see cref="T:System.Windows.ContentElement" /> class does not yet define all aspects of a complete content element for flow-style presentation. <see cref="T:System.Windows.FrameworkContentElement" /> is an immediately derived class of <see cref="T:System.Windows.ContentElement" />. <see cref="T:System.Windows.FrameworkContentElement" /> includes a more complete set of additional members that support rendering a <see cref="T:System.Windows.FrameworkContentElement" /> within a content host and using the WPF framework-level layout system.</para>
-    </block>
     <altmember cref="T:System.Windows.UIElement" />
     <altmember cref="T:System.Windows.FrameworkContentElement" />
   </Docs>
@@ -1206,15 +1207,21 @@
   
  When inherited by <xref:System.Windows.Documents.Hyperlink> or its derived classes, <xref:System.Windows.Documents.Hyperlink> overrides the metadata for this dependency property and redefines the default value of this property to be `true`.  
   
-<a name="dependencyPropertyInfo_Focusable"></a>   
-## Dependency Property Information  
+### Dependency property information
   
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.ContentElement.FocusableProperty>|  
 |Metadata properties set to `true`|None|  
   
-   
+## Notes to inheritors
+
+When you derive from <xref:System.Windows.ContentElement>, consider whether you want your element to be focusable, because by default it will not be focusable. If you want your element to be focusable, override the metadata for this property in your derived class static constructor as follows:  
+
+[!code-csharp[CorePseudocode#UIElementShortOverride](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/corepseudocode.cs#uielementshortoverride)]
+[!code-vb[CorePseudocode#UIElementShortOverride](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CorePseudocode/visualbasic/corepseudocode.vb#uielementshortoverride)]  
+  
+where `myElement` is the class name of the type that you are overriding the metadata value on.
   
 ## Examples  
  The following example creates a style that makes a <xref:System.Windows.Documents.Paragraph> focusable by default and gives it a visual behavior when it receives focus.  
@@ -1223,14 +1230,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="overrides">
-          <para>When you derive from <see cref="T:System.Windows.ContentElement" />, consider whether you want your element to be focusable, because by default it will not be focusable. If you want your element to be focusable, override the metadata for this property in your derived class static constructor as follows:  
-  
- [!code-csharp[CorePseudocode#UIElementShortOverride](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/corepseudocode.cs#uielementshortoverride)]
- [!code-vb[CorePseudocode#UIElementShortOverride](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CorePseudocode/visualbasic/corepseudocode.vb#uielementshortoverride)]  
-  
- where <paramref name="myElement" /> is the class name of the type that you are overriding the metadata value on.</para>
-        </block>
         <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
         <altmember cref="E:System.Windows.UIElement.GotKeyboardFocus" />
         <altmember cref="E:System.Windows.UIElement.LostKeyboardFocus" />
@@ -1977,10 +1976,15 @@
         <summary>Gets a value that becomes the return value of <see cref="P:System.Windows.ContentElement.IsEnabled" /> in derived classes.</summary>
         <value>
           <see langword="true" /> if the element is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-        <block subset="none" type="overrides">
-          <para>The default implementation of this property caches the value and also calculates whether the parent element of this element is enabled. (If the parent is not enabled, the child element cannot be effectively enabled in practical [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].) If you choose to override this implementation, make certain that you call the base implementation to preserve this behavior.</para>
-        </block>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Notes to inheritors
+
+The default implementation of this property caches the value and also calculates whether the parent element of this element is enabled. If the parent is not enabled, the child element cannot be effectively enabled in practical user interface. If you choose to override this implementation, make certain that you call the base implementation to preserve this behavior.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -4379,12 +4383,17 @@
       <Docs>
         <summary>Returns class-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementations for the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure.</summary>
         <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
-        <remarks>To be added.</remarks>
-        <block subset="none" type="overrides">
-          <para>The implementation of this method is typically to call the constructor of a specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation, and return it as the return value.  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
- All <see cref="T:System.Windows.ContentElement" /> derived classes should implement this method in order to provide their own specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementations to the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure. For details on implementing this pattern, see <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</para>
-        </block>
+## Notes to inheritors
+
+The implementation of this method is typically to call the constructor of a specific <xref:System.Windows.Automation.Peers.AutomationPeer" /> implementation, and return it as the return value.  
+  
+ All <xref:System.Windows.ContentElement> derived classes should implement this method in order to provide their own specific <xref:System.Windows.Automation.Peers.AutomationPeer> implementations to the WPF infrastructure. For details on implementing this pattern, see <xref:System.Windows.Automation.Peers.AutomationPeer>.
+
+ ]]></format>
+        </remarks>        
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -4607,11 +4616,13 @@
   
  This On* method implementation is intended to raise the event, and this same method implementation is invoked internally to raise the event when the <xref:System.Windows.ContentElement.IsFocused%2A> property value changes. The <xref:System.Windows.ContentElement.OnGotFocus%2A> implementation differs from some other [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] On* implementations, which only provide a convenient way to add class handling for that event.  
   
+## Notes to inheritors
+
+Unless you have a deliberate and unusual need to not raise the focus events, make sure that your implementation calls the base implementation. Otherwise, the <xref:System.Windows.ContentElement.GotFocus> event is not raised during typical user operations that ordinarily set focus to this element. If you do not intend your element to be focusable, you can prevent the element from being focusable by setting <xref:System.Windows.ContentElement.Focusable> to `false`.
+Note that by default a <xref:System.Windows.ContentElement.Focusable> is not focusable, therefore setting <xref:System.Windows.ContentElement.Focusable> deliberately might not be necessary.
+
  ]]></format>
         </remarks>
-        <block subset="none" type="overrides">
-          <para>Unless you have a deliberate and unusual need to not raise the focus events, make sure that your implementation calls the base implementation. Otherwise, the <see cref="E:System.Windows.ContentElement.GotFocus" /> event is not raised during typical user operations that ordinarily set focus to this element. If you do not intend your element to be focusable, you can prevent the element from being focusable by setting <see cref="P:System.Windows.ContentElement.Focusable" /> to <see langword="false" />. Note that by default a <see cref="P:System.Windows.ContentElement.Focusable" /> is not focusable, therefore setting <see cref="P:System.Windows.ContentElement.Focusable" /> deliberately might not be necessary.</para>
-        </block>
         <altmember cref="P:System.Windows.ContentElement.Focusable" />
         <altmember cref="E:System.Windows.ContentElement.GotFocus" />
       </Docs>

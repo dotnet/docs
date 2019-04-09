@@ -36,11 +36,11 @@ Specifies the format of compiler output.
   
 ### To set -target in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
-2.  Click the **Application** tab.  
+2. Click the **Application** tab.  
   
-3.  Modify the value in the **Application Type** box.  
+3. Modify the value in the **Application Type** box.  
   
 ## Example  
  The following code compiles `in.vb`, creating `in.dll`:  

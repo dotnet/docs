@@ -23,9 +23,9 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
   
 #### To link to another form with a LinkLabel control  
   
-1.  Set the <xref:System.Windows.Forms.LinkLabel.Text%2A> property to an appropriate caption.  
+1. Set the <xref:System.Windows.Forms.LinkLabel.Text%2A> property to an appropriate caption.  
   
-2.  Set the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property to determine which part of the caption will be indicated as a link. How it is indicated depends on the appearance-related properties of the link label. The <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> value is represented by a <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> object containing two numbers, the starting character position and the number of characters. The <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property can be set in the Properties window or in code in a manner similar to the following:  
+2. Set the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property to determine which part of the caption will be indicated as a link. How it is indicated depends on the appearance-related properties of the link label. The <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> value is represented by a <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> object containing two numbers, the starting character position and the number of characters. The <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property can be set in the Properties window or in code in a manner similar to the following:  
   
     ```vb  
     ' In this code example, the link area has been set to begin  
@@ -48,7 +48,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
     linkLabel1->LinkArea = LinkArea(0,8);  
     ```  
   
-3.  In the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event handler, invoke the <xref:System.Windows.Forms.Form.Show%2A> method to open another form in the project, and set the <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> property to `true`.  
+3. In the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event handler, invoke the <xref:System.Windows.Forms.Form.Show%2A> method to open another form in the project, and set the <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> property to `true`.  
   
     > [!NOTE]
     >  An instance of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> class carries a reference to the <xref:System.Windows.Forms.LinkLabel> control that was clicked, so there is no need to cast the `sender` object.  
@@ -91,11 +91,11 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
   
 #### To start Internet Explorer and link to a Web page with a LinkLabel control  
   
-1.  Set the <xref:System.Windows.Forms.LinkLabel.Text%2A> property to an appropriate caption.  
+1. Set the <xref:System.Windows.Forms.LinkLabel.Text%2A> property to an appropriate caption.  
   
-2.  Set the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property to determine which part of the caption will be indicated as a link.  
+2. Set the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property to determine which part of the caption will be indicated as a link.  
   
-3.  In the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event handler, in the midst of an exception-handling block, call a second procedure that sets the <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> property to `true` and uses the <xref:System.Diagnostics.Process.Start%2A> method to start the default browser with a URL. To use the <xref:System.Diagnostics.Process.Start%2A> method you need to add a reference to the <xref:System.Diagnostics?displayProperty=nameWithType> namespace.  
+3. In the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event handler, in the midst of an exception-handling block, call a second procedure that sets the <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> property to `true` and uses the <xref:System.Diagnostics.Process.Start%2A> method to start the default browser with a URL. To use the <xref:System.Diagnostics.Process.Start%2A> method you need to add a reference to the <xref:System.Diagnostics?displayProperty=nameWithType> namespace.  
   
     > [!IMPORTANT]
     >  If the code below is run in a partial-trust environment (such as on a shared drive), the JIT compiler fails when the `VisitLink` method is called. The `System.Diagnostics.Process.Start` statement causes a link demand that fails. By catching the exception when the `VisitLink` method is called, the code below ensures that if the JIT compiler fails, the error is handled gracefully.  
@@ -173,6 +173,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
     ```  
   
 ## See also
+
 - <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>
 - [LinkLabel Control Overview](linklabel-control-overview-windows-forms.md)
 - [How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)

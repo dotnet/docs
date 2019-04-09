@@ -16,11 +16,12 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
   
 ### To designate the accept button  
   
-1.  Select the form on which the button resides.  
+1. Select the form on which the button resides.  
   
-2.  In the **Properties** window, set the form's <xref:System.Windows.Forms.Form.AcceptButton%2A> property to the <xref:System.Windows.Forms.Button> control's name.  
+2. In the **Properties** window, set the form's <xref:System.Windows.Forms.Form.AcceptButton%2A> property to the <xref:System.Windows.Forms.Button> control's name.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Form.AcceptButton%2A>
 - [Button Control Overview](button-control-overview-windows-forms.md)
 - [Ways to Select a Windows Forms Button Control](ways-to-select-a-windows-forms-button-control.md)

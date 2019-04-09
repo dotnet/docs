@@ -23,4 +23,5 @@ The <xref:System.Windows.Forms.ToolStripProgressBar> combines <xref:System.Windo
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
 ## See also
+
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

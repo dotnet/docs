@@ -17,7 +17,7 @@ Frequently, word processors and other applications that involve printing will pr
   
 ### To complete a print job  
   
-1.  Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.  
+1. Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
     ```vb  
     PrintDocument1.DocumentName = "MyTextFile"  
@@ -31,7 +31,7 @@ Frequently, word processors and other applications that involve printing will pr
     printDocument1->DocumentName = "MyTextFile";  
     ```  
   
-2.  Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
+2. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
   
      In the following code example, a message box is displayed, indicating that the document has finished printing.  
   
@@ -75,5 +75,6 @@ Frequently, word processors and other applications that involve printing will pr
     ```  
   
 ## See also
+
 - <xref:System.Drawing.Printing.PrintDocument>
 - [Windows Forms Print Support](windows-forms-print-support.md)

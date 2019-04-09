@@ -46,11 +46,11 @@ The **-doc** option allows you to place documentation comments in an XML file.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** tab.  
+2. Click the **Build** tab.  
   
-3.  Modify the **XML documentation file** property.  
+3. Modify the **XML documentation file** property.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
   

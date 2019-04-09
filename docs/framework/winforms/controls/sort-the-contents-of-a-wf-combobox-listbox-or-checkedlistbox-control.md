@@ -16,11 +16,12 @@ Windows Forms controls do not sort when they are data-bound. To display sorted d
   
 ### To sort the list  
   
-1.  Set the `Sorted` property to `true`.  
+1. Set the `Sorted` property to `true`.  
   
      This setting repositions all existing list items in sorted order.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ComboBox>
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms.CheckedListBox>

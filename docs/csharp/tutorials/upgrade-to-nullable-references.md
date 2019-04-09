@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019 preview 2 and later](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+preview), or [.NET Core 3.0 preview 2](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -75,7 +75,7 @@ These two properties cause `CS8618`, "Non-nullable property is uninitialized". T
 
 [!code-csharp[StarterCreateNewsItem](~/samples/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader/Services/NewsService.cs#CreateNewsItem)]
 
-There's quite a bit going on in the preceding block of code. This application uses the [AutoMapper](http://automapper.org/) NuGet package to construct a news item from an `ISyndicationItem`. You've discovered that the news story items are constructed and the properties are set in that one statement. That means the design for the `NewsStoryViewModel` indicates that these properties should never have the `null` value. These properties should be **nonnullable reference types**. That best expresses the original design intent. In fact, any `NewsStoryViewModel` *is* correctly instantiated with non-null values. That makes the following initialization code a valid fix:
+There's quite a bit going on in the preceding block of code. This application uses the [AutoMapper](https://automapper.org/) NuGet package to construct a news item from an `ISyndicationItem`. You've discovered that the news story items are constructed and the properties are set in that one statement. That means the design for the `NewsStoryViewModel` indicates that these properties should never have the `null` value. These properties should be **nonnullable reference types**. That best expresses the original design intent. In fact, any `NewsStoryViewModel` *is* correctly instantiated with non-null values. That makes the following initialization code a valid fix:
 
 ```csharp
 public class NewsStoryViewModel

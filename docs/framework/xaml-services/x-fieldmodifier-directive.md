@@ -45,6 +45,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
  By default, the partial class for the root element is public; however, you can make it nonpublic by using the [x:ClassModifier Directive](x-classmodifier-directive.md). The [x:ClassModifier Directive](x-classmodifier-directive.md) also affects the access level of the instance of the root element class. You can put both `x:Name` and `x:FieldModifier` on the root element, but this only makes a public field copy of the root element, with the true root element class access level still controlled by [x:ClassModifier Directive](x-classmodifier-directive.md).  
   
 ## See also
+
 - [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:Name Directive](x-name-directive.md)

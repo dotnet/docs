@@ -23,15 +23,15 @@ justAdded.Properties["DisplayName"].SetValue("new name");
 
 #### To use this sample
 
-1.  Open the ProgrammingModelItemTree.sln solution in Visual Studio 2010.
+1. Open the ProgrammingModelItemTree.sln solution in Visual Studio 2010.
 
-2.  Build the solution by selecting **Build Solution** from the **Build** menu.
+2. Build the solution by selecting **Build Solution** from the **Build** menu.
 
-3.  Press F5 to run the application. The [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] form is then displayed.
+3. Press F5 to run the application. The [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] form is then displayed.
 
-4.  Click the **Load WF** button to load the <xref:System.Activities.Presentation.Model.ModelItem> and bind it to the tree view.
+4. Click the **Load WF** button to load the <xref:System.Activities.Presentation.Model.ModelItem> and bind it to the tree view.
 
-5.  Clicking the **Change Model Item Tree** button executes the preceding code to add an item into the tree and set a property.
+5. Clicking the **Change Model Item Tree** button executes the preceding code to add an item into the tree and set a property.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -43,4 +43,5 @@ justAdded.Properties["DisplayName"].SetValue("new name");
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ProgrammingModelItemTree`  
   
 ## See also
+
 - <xref:System.Windows.Data.IValueConverter>

@@ -17,28 +17,28 @@ Activities created by inheriting from <xref:System.Activities.CodeActivity> can 
 
 #### To create a custom activity that inherits from CodeActivity
 
-1.  Open Visual Studio 2010.
+1. Open Visual Studio 2010.
 
-2.  Select **File**, **New**, and then **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Activity Library** in the **Templates** window. Name the new project HelloActivity.
+2. Select **File**, **New**, and then **Project**. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Activity Library** in the **Templates** window. Name the new project HelloActivity.
 
-3.  Right-click Activity1.xaml in the HelloActivity project and select **Delete**.
+3. Right-click Activity1.xaml in the HelloActivity project and select **Delete**.
 
-4.  Right-click the HelloActivity project and select **Add** , and then **Class**. Name the new class HelloActivity.cs.
+4. Right-click the HelloActivity project and select **Add** , and then **Class**. Name the new class HelloActivity.cs.
 
-5.  In the HelloActivity.cs file, add the following `using` directives.
+5. In the HelloActivity.cs file, add the following `using` directives.
 
     ```csharp
     using System.Activities;
     using System.Activities.Statements;
     ```
 
-6.  Make the new class inherit from <xref:System.Activities.CodeActivity> by adding a base class to the class declaration.
+6. Make the new class inherit from <xref:System.Activities.CodeActivity> by adding a base class to the class declaration.
 
     ```csharp
     class HelloActivity : CodeActivity
     ```
 
-7.  Add functionality to the class by adding an <xref:System.Activities.CodeActivity.Execute%2A> method.
+7. Add functionality to the class by adding an <xref:System.Activities.CodeActivity.Execute%2A> method.
 
     ```csharp
     protected override void Execute(CodeActivityContext context)
@@ -47,7 +47,7 @@ Activities created by inheriting from <xref:System.Activities.CodeActivity> can 
     }
     ```
 
-8.  Use the <xref:System.Activities.CodeActivityContext> to create a tracking record.
+8. Use the <xref:System.Activities.CodeActivityContext> to create a tracking record.
 
     ```csharp
     protected override void Execute(CodeActivityContext context)

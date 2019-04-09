@@ -17,27 +17,27 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
   
 ### To create the workflow host project  
   
-1.  Open the solution from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic by using Visual Studio 2012.  
+1. Open the solution from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic by using Visual Studio 2012.  
   
-2.  Right-click the **WF45GettingStartedTutorial** solution in **Solution Explorer** and select **Add**, **New Project**.  
+2. Right-click the **WF45GettingStartedTutorial** solution in **Solution Explorer** and select **Add**, **New Project**.  
   
     > [!TIP]
     >  If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
 
-3.  In the **Installed** node, select **Visual C#**, **Workflow** (or **Visual Basic**, **Workflow**).
+3. In the **Installed** node, select **Visual C#**, **Workflow** (or **Visual Basic**, **Workflow**).
 
     > [!NOTE]
     >  Depending on which programming language is configured as the primary language in Visual Studio, the **Visual C#** or **Visual Basic** node may be under the **Other Languages** node in the **Installed** node.
 
      Ensure that **.NET Framework 4.5** is selected in the .NET Framework version drop-down list. Select **Workflow Console Application** from the **Workflow** list. Type `NumberGuessWorkflowHost` into the **Name** box and click **OK**. This creates a starter workflow application with basic workflow hosting support. This basic hosting code is modified and used to run the workflow application.
 
-4.  Right-click the newly added **NumberGuessWorkflowHost** project in **Solution Explorer** and select **Add Reference**. Select **Solution** from the **Add Reference** list, check the checkbox beside **NumberGuessWorkflowActivities**, and then click **OK**.
+4. Right-click the newly added **NumberGuessWorkflowHost** project in **Solution Explorer** and select **Add Reference**. Select **Solution** from the **Add Reference** list, check the checkbox beside **NumberGuessWorkflowActivities**, and then click **OK**.
 
-5.  Right-click **Workflow1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.
+5. Right-click **Workflow1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.
 
 ### To modify the workflow hosting code
 
-1.  Double-click **Program.cs** or **Module1.vb** in **Solution Explorer** to display the code.
+1. Double-click **Program.cs** or **Module1.vb** in **Solution Explorer** to display the code.
 
     > [!TIP]
     >  If the **Solution Explorer** window is not displayed, select **Solution Explorer** from the **View** menu.
@@ -80,12 +80,12 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 
 ### To set input arguments of a workflow
 
-1.  Add the following statement at the top of **Program.cs** or **Module1.vb** below the existing `using` or `Imports` statements.
+1. Add the following statement at the top of **Program.cs** or **Module1.vb** below the existing `using` or `Imports` statements.
 
      [!code-csharp[CFX_WF_GettingStarted#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#5)]
      [!code-vb[CFX_WF_GettingStarted#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#5)]
 
-2.  Replace the line of code that creates the new <xref:System.Activities.WorkflowApplication> with the following code that creates and passes a dictionary of parameters to the workflow when it is created.
+2. Replace the line of code that creates the new <xref:System.Activities.WorkflowApplication> with the following code that creates and passes a dictionary of parameters to the workflow when it is created.
 
     > [!NOTE]
     >  Please replace `Workflow1` in these examples with `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`, or `StateMachineNumberGuessWorkflow`, depending on which workflow you completed in the previous [How to: Create a Workflow](how-to-create-a-workflow.md) step. If you do not replace `Workflow1` then you will get build errors when you try and build or run the workflow.
@@ -97,19 +97,19 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 
 ### To retrieve output arguments of a workflow
 
-1.  Modify the <xref:System.Activities.WorkflowApplication.Completed%2A> handler to retrieve and display the number of turns used by the workflow.
+1. Modify the <xref:System.Activities.WorkflowApplication.Completed%2A> handler to retrieve and display the number of turns used by the workflow.
 
      [!code-csharp[CFX_WF_GettingStarted#7](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#7)]
      [!code-vb[CFX_WF_GettingStarted#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#7)]
 
 ### To resume a bookmark
 
-1.  Add the following code at the top of the `Main` method just after the existing <xref:System.Threading.AutoResetEvent> declaration.
+1. Add the following code at the top of the `Main` method just after the existing <xref:System.Threading.AutoResetEvent> declaration.
 
      [!code-csharp[CFX_WF_GettingStarted#8](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#8)]
      [!code-vb[CFX_WF_GettingStarted#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#8)]
 
-2.  Add the following <xref:System.Activities.WorkflowApplication.Idle%2A> handler just below the existing three workflow life-cycle handlers in `Main`.
+2. Add the following <xref:System.Activities.WorkflowApplication.Idle%2A> handler just below the existing three workflow life-cycle handlers in `Main`.
 
      [!code-csharp[CFX_WF_GettingStarted#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#9)]
      [!code-vb[CFX_WF_GettingStarted#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#9)]
@@ -119,7 +119,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
     > [!NOTE]
     >  In this example, the host application uses auto-reset events in the <xref:System.Activities.WorkflowApplication.Completed%2A> and <xref:System.Activities.WorkflowApplication.Idle%2A> handlers to synchronize the host application with the progress of the workflow. It is not necessary to block and wait for the workflow to become idle before resuming a bookmark, but in this example the synchronization events are required so the host knows whether the workflow is complete or whether it is waiting on more user input by using the <xref:System.Activities.Bookmark>. For more information, see [Bookmarks](bookmarks.md).
 
-3.  Remove the call to `WaitOne`, and replace it with code to gather input from the user and resume the <xref:System.Activities.Bookmark>.
+3. Remove the call to `WaitOne`, and replace it with code to gather input from the user and resume the <xref:System.Activities.Bookmark>.
 
      Remove the following line of code.
 
@@ -133,9 +133,9 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
 
 ## <a name="BKMK_ToRunTheApplication"></a> To build and run the application
 
-1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and select **Set as StartUp Project**.
+1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and select **Set as StartUp Project**.
 
-2.  Press CTRL+F5 to build and run the application. Try to guess the number in as few turns as possible.
+2. Press CTRL+F5 to build and run the application. Try to guess the number in as few turns as possible.
 
      To try the application with one of the other styles of workflow, replace `Workflow1` in the code that creates the <xref:System.Activities.WorkflowApplication> with `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`, or `StateMachineNumberGuessWorkflow`, depending on which workflow style you desire.
 

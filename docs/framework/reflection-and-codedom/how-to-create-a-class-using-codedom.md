@@ -17,17 +17,17 @@ ms.author: "ronpet"
 # How to: Create a Class Using CodeDOM
 The following procedures illustrate how to create and compile a CodeDOM graph that generates a class containing two fields, three properties, a method, a constructor, and an entry point.  
   
-1.  Create a console application that will use CodeDOM code to generate the source code for a class.  
+1. Create a console application that will use CodeDOM code to generate the source code for a class.  
   
      In this example, the generating class is named `Sample`, and the generated code is a class named `CodeDOMCreatedClass` in a file named SampleCode.  
   
-2.  In the generating class, initialize the CodeDOM graph and use CodeDOM methods to define the members, constructor, and entry point (`Main` method) of the generated class.  
+2. In the generating class, initialize the CodeDOM graph and use CodeDOM methods to define the members, constructor, and entry point (`Main` method) of the generated class.  
   
      In this example, the generated class has two fields, three properties, a constructor, a method, and a `Main` method.  
   
-3.  In the generating class, create a language-specific code provider and call its <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit%2A> method to generate the code from the graph.  
+3. In the generating class, create a language-specific code provider and call its <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit%2A> method to generate the code from the graph.  
   
-4.  Compile and execute the application to generate the code.  
+4. Compile and execute the application to generate the code.  
   
      In this example, the generated code is in a file named SampleCode. Compile and execute that code to see the sample output.  
   
@@ -81,12 +81,12 @@ The following procedures illustrate how to create and compile a CodeDOM graph th
   
 ### To create the graph and generate the code  
   
-1.  Add the methods created in the preceding steps to the `Main` method defined in the first step.  
+1. Add the methods created in the preceding steps to the `Main` method defined in the first step.  
   
      [!code-csharp[CodeDOM Class Sample#9](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDOM Class Sample/CS/program.cs#9)]
      [!code-vb[CodeDOM Class Sample#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDOM Class Sample/VB/program.vb#9)]  
   
-2.  Compile and execute the generating class.  
+2. Compile and execute the generating class.  
   
 ## Example  
  The following code example shows the code from the preceding steps.  
@@ -113,5 +113,6 @@ The object:
 -   This code example requires the `FullTrust` permission set to execute successfully.  
   
 ## See also
+
 - [Using the CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)
 - [Generating and Compiling Source Code from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)

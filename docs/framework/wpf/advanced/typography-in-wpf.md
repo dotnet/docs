@@ -143,6 +143,7 @@ Text with ClearType y-direction antialiasing
  For more details on creating custom text layout, see [Advanced Text Formatting](advanced-text-formatting.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.FormattedText>
 - <xref:System.Windows.Media.TextFormatting.TextFormatter>
 - [ClearType Overview](cleartype-overview.md)

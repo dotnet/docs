@@ -130,6 +130,7 @@ The <xref:System.Windows.Forms.DataGridView> control is designed to provide maxi
 -   Do not call the `Sort(IComparer)` overload of the <xref:System.Windows.Forms.DataGridView.Sort%2A> method. Sorting with a custom comparer causes all rows to become unshared.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - [Performance Tuning in the Windows Forms DataGridView Control](performance-tuning-in-the-windows-forms-datagridview-control.md)
 - [Virtual Mode in the Windows Forms DataGridView Control](virtual-mode-in-the-windows-forms-datagridview-control.md)

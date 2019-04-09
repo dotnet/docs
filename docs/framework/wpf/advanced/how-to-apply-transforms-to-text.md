@@ -59,4 +59,5 @@ Transforms can alter the display of text in your application. The following exam
 >  The <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> provides a rich set of features for providing shadow effects. For more information, see [Create Text with a Shadow](how-to-create-text-with-a-shadow.md).  
   
 ## See also
+
 - [Apply Animations to Text](how-to-apply-animations-to-text.md)

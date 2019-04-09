@@ -29,5 +29,6 @@ This example shows how to use the <xref:System.Windows.Media.Animation.DoubleAni
  Another way to move an object using a geometric path is to use a <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> object. For an example, see [Animate an Object Along a Path (Matrix Animation)](how-to-animate-an-object-along-a-path-matrix-animation.md).  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)

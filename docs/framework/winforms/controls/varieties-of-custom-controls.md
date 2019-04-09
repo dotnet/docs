@@ -101,6 +101,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
  Use the <xref:System.ComponentModel.DesignerAttribute> to associate your control with your designer. For more information, see [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) and [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).  
   
 ## See also
+
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
 - [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md)
 - [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md)

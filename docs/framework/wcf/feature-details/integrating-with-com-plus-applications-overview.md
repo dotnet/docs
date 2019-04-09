@@ -30,13 +30,13 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
  The following steps are required to expose a COM+ component's interface as a Web service without modifying the component:  
   
-1.  Determine whether the COM+ component's interface can be exposed as a Web service.  
+1. Determine whether the COM+ component's interface can be exposed as a Web service.  
   
-2.  Select an appropriate hosting mode.  
+2. Select an appropriate hosting mode.  
   
-3.  Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
+3. Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
   
-4.  Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
+4. Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
   
 ## Supported Interfaces  
  There are some restrictions on the type of interfaces that can be exposed as a Web service. The following types of interfaces are not supported:  
@@ -96,4 +96,5 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  The COM+ process recycling features cannot be used on integrated applications. If the application is configured to use process recycling and the components are running in a COM+ hosted process, the service fails to start. This requirement does not include services using the Web-hosted in-process mode because the process recycling settings are not applied.  
   
 ## See also
+
 - [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)

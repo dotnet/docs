@@ -19,9 +19,9 @@ The TPL Dataflow Library provides the <xref:System.Threading.Tasks.Dataflow.Batc
 
 ## Prerequisites  
   
-1.  Read the Join Blocks section in the [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) document before you start this walkthrough.  
+1. Read the Join Blocks section in the [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) document before you start this walkthrough.  
   
-2.  Ensure that you have a copy of the Northwind database, Northwind.sdf, available on your computer. This file is typically located in the folder %Program Files%\Microsoft SQL Server Compact Edition\v3.5\Samples\\.  
+2. Ensure that you have a copy of the Northwind database, Northwind.sdf, available on your computer. This file is typically located in the folder %Program Files%\Microsoft SQL Server Compact Edition\v3.5\Samples\\.  
   
     > [!IMPORTANT]
     >  In some versions of Windows, you cannot connect to Northwind.sdf if Visual Studio is running in a non-administrator mode. To connect to Northwind.sdf, start Visual Studio or a Developer Command Prompt for Visual Studio in the **Run as administrator** mode.  
@@ -46,16 +46,16 @@ The TPL Dataflow Library provides the <xref:System.Threading.Tasks.Dataflow.Batc
 ## Creating the Console Application  
   
 <a name="consoleApp"></a>   
-1.  In Visual Studio, create a Visual C# or Visual Basic **Console Application** project. In this document, the project is named `DataflowBatchDatabase`.  
+1. In Visual Studio, create a Visual C# or Visual Basic **Console Application** project. In this document, the project is named `DataflowBatchDatabase`.  
   
-2.  In your project, add a reference to System.Data.SqlServerCe.dll and a reference to System.Threading.Tasks.Dataflow.dll.  
+2. In your project, add a reference to System.Data.SqlServerCe.dll and a reference to System.Threading.Tasks.Dataflow.dll.  
   
-3.  Ensure that Form1.cs (Form1.vb for Visual Basic) contains the following `using` (`Imports` in Visual Basic) statements.  
+3. Ensure that Form1.cs (Form1.vb for Visual Basic) contains the following `using` (`Imports` in Visual Basic) statements.  
   
      [!code-csharp[TPLDataflow_BatchDatabase#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_batchdatabase/cs/dataflowbatchdatabase.cs#1)]
      [!code-vb[TPLDataflow_BatchDatabase#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_batchdatabase/vb/dataflowbatchdatabase.vb#1)]  
   
-4.  Add the following data members to the `Program` class.  
+4. Add the following data members to the `Program` class.  
   
      [!code-csharp[TPLDataflow_BatchDatabase#2](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_batchdatabase/cs/dataflowbatchdatabase.cs#2)]
      [!code-vb[TPLDataflow_BatchDatabase#2](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_batchdatabase/vb/dataflowbatchdatabase.vb#2)]  

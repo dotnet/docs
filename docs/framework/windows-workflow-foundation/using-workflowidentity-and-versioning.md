@@ -140,14 +140,14 @@ wfApp.Load(instance);
  **The SqlWorkflowInstanceStore has a database version of '4.0.0.0'. InstancePersistenceCommand 'System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand' cannot be run against this database version.  Please upgrade the database to '4.5.0.0'.**  
 ### <a name="ToUpgrade"></a> To upgrade the database schema  
   
-1.  Open SQL Server Management Studio and connect to the persistence database server, for example **.\SQLEXPRESS**.  
+1. Open SQL Server Management Studio and connect to the persistence database server, for example **.\SQLEXPRESS**.  
   
-2.  Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\4.0.30319\sql\en`  
+2. Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\4.0.30319\sql\en`  
   
-3.  Select **SqlWorkflowInstanceStoreSchemaUpgrade.sql** and click **Open**.  
+3. Select **SqlWorkflowInstanceStoreSchemaUpgrade.sql** and click **Open**.  
   
-4.  Select the name of the persistence database in the **Available Databases** drop-down.  
+4. Select the name of the persistence database in the **Available Databases** drop-down.  
   
-5.  Choose **Execute** from the **Query** menu.  
+5. Choose **Execute** from the **Query** menu.  
   
  When the query completes, the database schema is upgraded, and if desired, you can view the default workflow identity that was assigned to the persisted workflow instances. Expand your persistence database in the **Databases** node of the **Object Explorer**, and then expand the **Views** node. Right-click **System.Activities.DurableInstancing.Instances** and choose **Select Top 1000 Rows**. Scroll to end of the columns and note that there are six additional columns added to the view: **IdentityName**, **IdentityPackage**, **Build**, **Major**, **Minor**, and **Revision**. Any persisted workflows will have a value of **NULL** for these fields, representing a null workflow identity.

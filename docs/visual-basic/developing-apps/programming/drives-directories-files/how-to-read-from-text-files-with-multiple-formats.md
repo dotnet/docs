@@ -17,7 +17,7 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
   
 ### To parse a text file with multiple formats  
   
-1.  Add a text file named testfile.txt to your project. Add the following content to the text file.  
+1. Add a text file named testfile.txt to your project. Add the following content to the text file.  
   
     ```  
     Err  1001 Cannot access resource.  
@@ -28,19 +28,19 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
     Acc  10/04/2009User2      Standard user.  
     ```  
   
-2.  Define the expected format and the format used when an error is reported. The last entry in each array is -1, therefore the last field is assumed to be of variable width. This occurs when the last entry in the array is less than or equal to 0.  
+2. Define the expected format and the format used when an error is reported. The last entry in each array is -1, therefore the last field is assumed to be of variable width. This occurs when the last entry in the array is less than or equal to 0.  
   
      [!code-vb[VbFileIORead#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#4)]  
   
-3.  Create a new <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object, defining the width and format.  
+3. Create a new <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object, defining the width and format.  
   
      [!code-vb[VbFileIORead#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#5)]  
   
-4.  Loop through the rows, testing for format before reading.  
+4. Loop through the rows, testing for format before reading.  
   
      [!code-vb[VbFileIORead#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#6)]  
   
-5.  Write errors to the console.  
+5. Write errors to the console.  
   
      [!code-vb[VbFileIORead#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#7)]  
   
@@ -63,6 +63,7 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
 -   The user does not have sufficient permissions to access the file (<xref:System.UnauthorizedAccessException>).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>
 - <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>

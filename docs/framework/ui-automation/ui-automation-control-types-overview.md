@@ -107,4 +107,5 @@ ms.assetid: 75159ef8-bd43-4d13-acb7-1f1fe9253160
 -   [UI Automation Support for the Window Control Type](../../../docs/framework/ui-automation/ui-automation-support-for-the-window-control-type.md)  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType>

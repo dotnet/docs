@@ -27,6 +27,7 @@ This example shows how to specify a custom position for a <xref:System.Windows.C
  For the complete sample, see [Popup Placement Sample](https://go.microsoft.com/fwlink/?LinkID=160032).  
   
 ## See also
+
 - <xref:System.Windows.Controls.Primitives.Popup>
 - [Popup Overview](popup-overview.md)
 - [How-to Topics](popup-how-to-topics.md)

@@ -1,7 +1,7 @@
 ---
 title: ML.NET Content Guide
 description: Learn how to build custom AI solutions and integrate them into your .NET applications using ML.NET.
-ms.date: 01/18/2019
+ms.date: 04/05/2019
 ms.custom: seodec18
 ---
 # ML.NET Content Guide
@@ -21,26 +21,29 @@ To understand basics, see [Basic concepts for model training in ML.NET](basic-co
 
 ## Tutorials
 
-[Analyze sentiment using a binary classification model](tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.
+[Analyze sentiment using a binary classification model](./tutorials/sentiment-analysis.md) shows you how to build an app that determines whether sentiment is positive or negative.
 
-[Classify GitHub issues using a multiclass classification model](tutorials/github-issue-classification.md) shows you how to build an app that determines the Area label for a GitHub issue.
+[Classify GitHub issues using a multiclass classification model](./tutorials/github-issue-classification.md) shows you how to build an app that determines the Area label for a GitHub issue.
 
-[Predict prices using a regression model](tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
+[Predict prices using a regression model](./tutorials/taxi-fare.md) shows you how to build a predictive app that uses many factors from historical data to determine the answer.
 
-[Classify iris flowers by features](tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set. 
+[Classify iris flowers by features](./tutorials/iris-clustering.md) shows you how to use a clustering model to analyze the iris data set.
+
+[Create a Movie Recommender with ML.NET](./tutorials/movie-recommmendation.md) shows you how to build a recommendation app to recommend movies to users based on their history.
+
+[Build an ML.NET custom image classifier with TensorFlow](./tutorials/image-classification.md): demonstrates how to retrain an existing Tensorflow model to create a custom image classifier using ML.NET.
 
 ## How to guide
 
-[Build a game match-up list app with Infer.NET and probabilistic programming](how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.
+[Build a game match-up list app with Infer.NET and probabilistic programming](./how-to-guides/matchup-app-infer-net.md) shows you how to build a simplified version of a match-up app like you'd see in an Xbox game.
 
 ## Resources
 
-[Machine learning glossary](resources/glossary.md) defines key terminology.
+[Machine learning glossary](./resources/glossary.md) defines key terminology.
 
-[Machine learning tasks](resources/tasks.md) describes tasks, such as classification and anomaly detection. 
+[Machine learning tasks](./resources/tasks.md) describes tasks, such as classification and anomaly detection. 
 
-[Data transforms](resources/transforms.md) describes data preparation capabilities in ML.NET.
-
+[Data transforms](./resources/transforms.md) describes data preparation capabilities in ML.NET.
 
 ## API reference
 

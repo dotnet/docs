@@ -31,9 +31,9 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
   
 ### To position a control using the Properties window  
   
-1.  Click the control you want to position.  
+1. Click the control you want to position.  
   
-2.  In the **Properties** window, type values for the <xref:System.Windows.Forms.Control.Location%2A> property, separated by a comma, to position the control within its container.  
+2. In the **Properties** window, type values for the <xref:System.Windows.Forms.Control.Location%2A> property, separated by a comma, to position the control within its container.  
   
      The first number (X) is the distance from the left border of the container; the second number (Y) is the distance from the upper border of the container area, measured in pixels.  
   
@@ -42,7 +42,7 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
   
 ### To position a control programmatically  
   
-1.  Set the <xref:System.Windows.Forms.Control.Location%2A> property of the control to a <xref:System.Drawing.Point>.  
+1. Set the <xref:System.Windows.Forms.Control.Location%2A> property of the control to a <xref:System.Drawing.Point>.  
   
     ```vb  
     Button1.Location = New Point(100, 100)  
@@ -56,7 +56,7 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
     button1->Location = Point(100, 100);  
     ```  
   
-2.  Change the X coordinate of the control's location using the <xref:System.Windows.Forms.Control.Left%2A> subproperty.  
+2. Change the X coordinate of the control's location using the <xref:System.Windows.Forms.Control.Left%2A> subproperty.  
   
     ```vb  
     Button1.Left = 300  
@@ -72,7 +72,7 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
   
 ### To increment a control's location programmatically  
   
-1.  Set the <xref:System.Windows.Forms.Control.Left%2A> subproperty to increment the X coordinate of the control.  
+1. Set the <xref:System.Windows.Forms.Control.Left%2A> subproperty to increment the X coordinate of the control.  
   
     ```vb  
     Button1.Left += 200  
@@ -90,6 +90,7 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
     >  Use the <xref:System.Windows.Forms.Control.Location%2A> property to set a control's X and Y positions simultaneously. To set a position individually, use the control's <xref:System.Windows.Forms.Control.Left%2A> (**X**) or <xref:System.Windows.Forms.Control.Top%2A> (**Y**) subproperty. Do not try to implicitly set the X and Y coordinates of the <xref:System.Drawing.Point> structure that represents the button's location, because this structure contains a copy of the button's coordinates.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)

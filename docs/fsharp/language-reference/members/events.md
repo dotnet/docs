@@ -91,7 +91,6 @@ type AppForm() as this =
     [<CLIEvent>]
     member this.PropertyChanged = propertyChanged.Publish
 
-
     // Define the add and remove methods to implement this interface.
     interface INotifyPropertyChanged with
         member this.add_PropertyChanged(handler) = propertyChanged.Publish.AddHandler(handler)
@@ -132,7 +131,6 @@ type AppForm private (dummy) as this =
         this.Click |> Event.add(fun evArgs -> this.Property1 <- "text2"
         this.Property2 <- "text3")
 
-
     // This property does not have the property changed event set.
     member val Property1 : string = "text" with get, set
 
@@ -162,7 +160,6 @@ type AppForm private (dummy) as this =
         then
             let inpc = this :> INotifyPropertyChanged
             inpc.PropertyChanged.Add(this.OnPropertyChanged)
-
 
 // Create a form, hook up the event handler, and start the application.
 let appForm = new AppForm()

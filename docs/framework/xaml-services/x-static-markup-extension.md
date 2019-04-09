@@ -49,13 +49,13 @@ Attribute syntax is the most common syntax used with this markup extension. The 
 
 There are two other XAML usages that are technically possible. However, these usages are less common because they are unnecessarily verbose:  
 
-1.  Object element syntax.
+1. Object element syntax.
 
     ```xaml
     <x:Static Member="prefix:typeName.staticMemberName" ... />
     ```
 
-2.  Attribute syntax with explicit Member property for initialization string.
+2. Attribute syntax with explicit Member property for initialization string.
 
     ```xaml
     <object property="{x:Static Member=prefix:typeName.staticMemberName}" ... />
@@ -77,5 +77,6 @@ In the .NET Framework XAML Services implementation, the handling for this markup
  For more information on how to use prefixes and XAML namespaces for WPF, see [XAML Namespaces and Namespace Mapping for WPF XAML](../wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 ## See also
+
 - [x:Type Markup Extension](x-type-markup-extension.md)
 - [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

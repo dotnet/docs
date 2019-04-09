@@ -13,8 +13,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
-  
-  
+
 <a name="types_of_documents"></a>   
 ## Types of Documents  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] divides documents into two broad categories based on their intended use; these document categories are termed "fixed documents" and "flow documents."  
@@ -84,9 +83,9 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 #### PackageDigitalSignatures  
  For security, a <xref:System.IO.Packaging.PackageDigitalSignature> ("digital signature") can be associated with parts within a package. A <xref:System.IO.Packaging.PackageDigitalSignature> incorporates a [509] that provides two features:  
   
-1.  Identifies and authenticates the originator of the part.  
+1. Identifies and authenticates the originator of the part.  
   
-2.  Validates that the part has not been modified.  
+2. Validates that the part has not been modified.  
   
  The digital signature does not preclude a part from being modified, but a validation check against the digital signature will fail if the part is altered in any way. The application can then take appropriate action—for example, block opening the part or notify the user that the part has been modified and is not secure.  
   
@@ -102,9 +101,9 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
  Package relationships provide a discoverable means for adding and associating additional information with individual parts or with the entire package. Package relationships are used for two primary functions:  
   
-1.  Defining dependency relationships from one part to another part.  
+1. Defining dependency relationships from one part to another part.  
   
-2.  Defining information relationships that add notes or other data related to the part.  
+2. Defining information relationships that add notes or other data related to the part.  
   
  A <xref:System.IO.Packaging.PackageRelationship> provides a quick, discoverable means to define dependencies and add other information associated with a part of the package or the package as a whole.  
   
@@ -129,6 +128,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 -   Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
 ## See also
+
 - <xref:System.Windows.Documents.FixedDocument>
 - <xref:System.Windows.Documents.FlowDocument>
 - <xref:System.Windows.Xps.Packaging.XpsDocument>

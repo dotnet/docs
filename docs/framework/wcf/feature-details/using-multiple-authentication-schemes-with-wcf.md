@@ -114,6 +114,7 @@ else
 ```  
   
 ## See also
+
 - [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
 - [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
 - [Configuring System-Provided Bindings](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)

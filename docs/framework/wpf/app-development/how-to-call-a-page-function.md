@@ -27,4 +27,5 @@ This example shows how to call a page function from a [!INCLUDE[TLA#tla_xaml](..
  [!code-vb[HOWTOPageFunctionSnippets#CallAPageFunctionCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/VisualBasic/CallingPage.xaml.vb#callapagefunctioncodebehind)]  
   
 ## See also
+
 - <xref:System.Windows.Navigation.PageFunction%601>

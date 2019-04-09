@@ -41,53 +41,53 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
   
 #### To create the project  
   
-1.  Create a Windows application project called **StandardMenuForm** (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
+1. Create a Windows application project called **StandardMenuForm** (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
-2.  In the Windows Forms Designer, select the form.  
+2. In the Windows Forms Designer, select the form.  
   
 ## Creating a Standard Menu  
  The Windows Forms Designer can automatically populate a <xref:System.Windows.Forms.MenuStrip> control with standard menu items.  
   
 #### To create a standard menu  
   
-1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto your form.  
+1. From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto your form.  
   
-2.  Click the <xref:System.Windows.Forms.MenuStrip> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) and select **Insert Standard Items**.  
+2. Click the <xref:System.Windows.Forms.MenuStrip> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) and select **Insert Standard Items**.  
   
      The <xref:System.Windows.Forms.MenuStrip> control is populated with the standard menu items.  
   
-3.  Click the **File** menu item to see its default menu items and corresponding icons.  
+3. Click the **File** menu item to see its default menu items and corresponding icons.  
   
 ## Creating a StatusStrip Control  
  Use the <xref:System.Windows.Forms.StatusStrip> control to display status for your Windows Forms applications. In the current example, menu items selected by the user are displayed in a <xref:System.Windows.Forms.StatusStrip> control.  
   
 #### To create a StatusStrip control  
   
-1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.StatusStrip> control onto your form.  
+1. From the **Toolbox**, drag a <xref:System.Windows.Forms.StatusStrip> control onto your form.  
   
      The <xref:System.Windows.Forms.StatusStrip> control automatically docks to the bottom of the form.  
   
-2.  Click the <xref:System.Windows.Forms.StatusStrip> control's drop-down button and select **StatusLabel** to add a <xref:System.Windows.Forms.ToolStripStatusLabel> control to the <xref:System.Windows.Forms.StatusStrip> control.  
+2. Click the <xref:System.Windows.Forms.StatusStrip> control's drop-down button and select **StatusLabel** to add a <xref:System.Windows.Forms.ToolStripStatusLabel> control to the <xref:System.Windows.Forms.StatusStrip> control.  
   
 ## Handling Item Selection  
  Handle the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked> event to respond when the user selects a menu item.  
   
 #### To handle item selection  
   
-1.  Click the **File** menu item that you created in the Creating a Standard Menu section.  
+1. Click the **File** menu item that you created in the Creating a Standard Menu section.  
   
-2.  In the **Properties** window, click **Events**.  
+2. In the **Properties** window, click **Events**.  
   
-3.  Double-click the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked> event.  
+3. Double-click the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked> event.  
   
      The Windows Forms Designer generates an event handler for the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked> event.  
   
-4.  Insert the following code into the event handler.  
+4. Insert the following code into the event handler.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StandardMenu#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StandardMenu/CS/Form1.cs#3)]
      [!code-vb[System.Windows.Forms.ToolStrip.StandardMenu#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StandardMenu/VB/Form1.vb#3)]  
   
-5.  Insert the `UpdateStatus` utility method definition into the form.  
+5. Insert the `UpdateStatus` utility method definition into the form.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.StandardMenu#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StandardMenu/CS/Form1.cs#2)]
      [!code-vb[System.Windows.Forms.ToolStrip.StandardMenu#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StandardMenu/VB/Form1.vb#2)]  
@@ -96,11 +96,11 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
   
 #### To test your form  
   
-1.  Press F5 to compile and run your form.  
+1. Press F5 to compile and run your form.  
   
-2.  Click the **File** menu item to open the menu.  
+2. Click the **File** menu item to open the menu.  
   
-3.  On the **File** menu, click one of the items to select it.  
+3. On the **File** menu, click one of the items to select it.  
   
      The <xref:System.Windows.Forms.StatusStrip> control displays the selected item.  
   
@@ -114,6 +114,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
 -   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.StatusStrip>

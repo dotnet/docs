@@ -20,6 +20,7 @@ The <xref:System.Windows.Media.Visual> object is a core [!INCLUDE[TLA2#tla_wincl
  [How-to Topics](visual-layer-programming-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Visual>
 - <xref:System.Windows.Media.VisualTreeHelper>
 - <xref:System.Windows.Media.DrawingVisual>

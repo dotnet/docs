@@ -82,15 +82,15 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
  The `EncryptFile` method does the following:  
   
-1.  Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to encrypt the content.  
+1. Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to encrypt the content.  
   
-2.  Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
+2. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
   
-3.  Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and encrypt the <xref:System.IO.FileStream> of the source file, in blocks of bytes, into a destination <xref:System.IO.FileStream> object for the encrypted file.  
+3. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and encrypt the <xref:System.IO.FileStream> of the source file, in blocks of bytes, into a destination <xref:System.IO.FileStream> object for the encrypted file.  
   
-4.  Determines the lengths of the encrypted key and IV, and creates byte arrays of their length values.  
+4. Determines the lengths of the encrypted key and IV, and creates byte arrays of their length values.  
   
-5.  Writes the Key, IV, and their length values to the encrypted package.  
+5. Writes the Key, IV, and their length values to the encrypted package.  
   
  The encryption package uses the following format:  
   
@@ -121,15 +121,15 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
  The `Decrypt` method does the following:  
   
-1.  Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to decrypt the content.  
+1. Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to decrypt the content.  
   
-2.  Reads the first eight bytes of the <xref:System.IO.FileStream> of the encrypted package into byte arrays to obtain the lengths of the encrypted key and the IV.  
+2. Reads the first eight bytes of the <xref:System.IO.FileStream> of the encrypted package into byte arrays to obtain the lengths of the encrypted key and the IV.  
   
-3.  Extracts the key and IV from the encryption package into byte arrays.  
+3. Extracts the key and IV from the encryption package into byte arrays.  
   
-4.  Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
+4. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
   
-5.  Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and decrypt the cipher text section of the <xref:System.IO.FileStream> encryption package, in blocks of bytes, into the <xref:System.IO.FileStream> object for the decrypted file. When this is finished, the decryption is completed.  
+5. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and decrypt the cipher text section of the <xref:System.IO.FileStream> encryption package, in blocks of bytes, into the <xref:System.IO.FileStream> object for the decrypted file. When this is finished, the decryption is completed.  
   
  Add the following code as the `Click` event handler for the `Decrypt File` button.  
   
@@ -176,33 +176,33 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 #### To create keys, encrypt, and decrypt  
   
-1.  Click the `Create Keys` button. The label displays the key name and shows that it is a full key pair.  
+1. Click the `Create Keys` button. The label displays the key name and shows that it is a full key pair.  
   
-2.  Click the `Export Public Key` button. Note that exporting the public key parameters does not change the current key.  
+2. Click the `Export Public Key` button. Note that exporting the public key parameters does not change the current key.  
   
-3.  Click the `Encrypt File` button and select a file.  
+3. Click the `Encrypt File` button and select a file.  
   
-4.  Click the `Decrypt File` button and select the file just encrypted.  
+4. Click the `Decrypt File` button and select the file just encrypted.  
   
-5.  Examine the file just decrypted.  
+5. Examine the file just decrypted.  
   
-6.  Close the application and restart it to test retrieving persisted key containers in the next scenario.  
+6. Close the application and restart it to test retrieving persisted key containers in the next scenario.  
   
 #### To encrypt using the public key  
   
-1.  Click the `Import Public Key` button. The label displays the key name and shows that it is public only.  
+1. Click the `Import Public Key` button. The label displays the key name and shows that it is public only.  
   
-2.  Click the `Encrypt File` button and select a file.  
+2. Click the `Encrypt File` button and select a file.  
   
-3.  Click the `Decrypt File` button and select the file just encrypted. This will fail because you must have the private key to decrypt.  
+3. Click the `Decrypt File` button and select the file just encrypted. This will fail because you must have the private key to decrypt.  
   
  This scenario demonstrates having only the public key to encrypt a file for another person. Typically that person would give you only the public key and withhold the private key for decryption.  
   
 #### To decrypt using the private key  
   
-1.  Click the `Get Private Key` button. The label displays the key name and shows whether it is the full key pair.  
+1. Click the `Get Private Key` button. The label displays the key name and shows whether it is the full key pair.  
   
-2.  Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
+2. Click the `Decrypt File` button and select the file just encrypted. This will be successful because you have the full key pair to decrypt.  
   
 ## See also
 

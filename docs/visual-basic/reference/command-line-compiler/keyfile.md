@@ -46,6 +46,7 @@ vbc -keyfile:myfile.sn input.vb
 ```  
   
 ## See also
+
 - [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)

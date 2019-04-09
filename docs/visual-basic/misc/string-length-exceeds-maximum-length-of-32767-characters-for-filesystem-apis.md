@@ -10,7 +10,7 @@ A string's length exceeds the maximum length of 32767 characters.
   
 ## To correct this error  
   
-1.  Shorten the string.  
+1. Shorten the string.  
   
 ## See also
 

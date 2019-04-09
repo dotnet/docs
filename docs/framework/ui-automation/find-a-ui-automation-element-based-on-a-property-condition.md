@@ -25,6 +25,7 @@ ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
  [!code-vb[InvokePatternApp#1100](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1100)]  
   
 ## See also
+
 - [InvokePattern and ExpandCollapsePattern Menu Item Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90))
 - [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
 - [Use the AutomationID Property](../../../docs/framework/ui-automation/use-the-automationid-property.md)

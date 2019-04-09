@@ -12,7 +12,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 ### To add and configure the file log listener  
   
-1.  Right-click app.config in **Solution Explorer** and choose **Open**.  
+1. Right-click app.config in **Solution Explorer** and choose **Open**.  
   
      \- or -  
   
@@ -24,19 +24,19 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
     3.  Click **Add**.  
   
-2.  Locate the `<listeners>` section in the application configuration file.  
+2. Locate the `<listeners>` section in the application configuration file.  
   
      You will find the \<listeners> section in the \<source> section with the name attribute "DefaultSource", which is nested under the \<system.diagnostics> section, which is nested under the top-level \<configuration> section.  
   
-3.  Add this element to that `<listeners>` section:  
+3. Add this element to that `<listeners>` section:  
   
     ```xml  
     <add name="FileLogListener" />  
     ```  
   
-4.  Locate the `<sharedListeners>` section in the `<system.diagnostics>` section, nested under the top-level `<configuration>` section.  
+4. Locate the `<sharedListeners>` section in the `<system.diagnostics>` section, nested under the top-level `<configuration>` section.  
   
-5.  Add this element to that `<sharedListeners>` section:  
+5. Add this element to that `<sharedListeners>` section:  
   
     ```xml  
     <add name="FileLogListener"   
@@ -60,6 +60,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
      After you configure the file log listener for an assembly, it receives all messages that `My.Application.Log` writes from that assembly.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>

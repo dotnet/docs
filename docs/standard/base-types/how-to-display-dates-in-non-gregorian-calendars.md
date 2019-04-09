@@ -24,26 +24,26 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
   
 ### To display the date for a culture's default calendar  
   
-1.  Instantiate a calendar object derived from the <xref:System.Globalization.Calendar> class that represents the calendar to be used.  
+1. Instantiate a calendar object derived from the <xref:System.Globalization.Calendar> class that represents the calendar to be used.  
   
-2.  Instantiate a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting will be used to display the date.  
+2. Instantiate a <xref:System.Globalization.CultureInfo> object representing the culture whose formatting will be used to display the date.  
   
-3.  Call the <xref:System.Array.Exists%2A?displayProperty=nameWithType> method to determine whether the calendar object is a member of the array returned by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property. This indicates that the calendar can serve as the default calendar for the <xref:System.Globalization.CultureInfo> object. If it is not a member of the array, follow the instructions in the "To Display the Date in Any Calendar" section.  
+3. Call the <xref:System.Array.Exists%2A?displayProperty=nameWithType> method to determine whether the calendar object is a member of the array returned by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property. This indicates that the calendar can serve as the default calendar for the <xref:System.Globalization.CultureInfo> object. If it is not a member of the array, follow the instructions in the "To Display the Date in Any Calendar" section.  
   
-4.  Assign the calendar object to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property.  
+4. Assign the calendar object to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property.  
   
     > [!NOTE]
     >  The <xref:System.Globalization.CultureInfo> class also has a <xref:System.Globalization.CultureInfo.Calendar%2A> property. However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property.  
   
-5.  Call either the <xref:System.DateTime.ToString%2A> or the <xref:System.DateTime.ToString%2A> method, and pass it the <xref:System.Globalization.CultureInfo> object whose default calendar was modified in the previous step.  
+5. Call either the <xref:System.DateTime.ToString%2A> or the <xref:System.DateTime.ToString%2A> method, and pass it the <xref:System.Globalization.CultureInfo> object whose default calendar was modified in the previous step.  
   
 ### To display the date in any calendar  
   
-1.  Instantiate a calendar object derived from the <xref:System.Globalization.Calendar> class that represents the calendar to be used.  
+1. Instantiate a calendar object derived from the <xref:System.Globalization.Calendar> class that represents the calendar to be used.  
   
-2.  Determine which date and time elements should appear in the string representation of the date and time value.  
+2. Determine which date and time elements should appear in the string representation of the date and time value.  
   
-3.  For each date and time element that you want to display, call the calendar object's `Get`… method. The following methods are available:  
+3. For each date and time element that you want to display, call the calendar object's `Get`… method. The following methods are available:  
   
     -   <xref:System.Globalization.Calendar.GetYear%2A>, to display the year in the appropriate calendar.  
   

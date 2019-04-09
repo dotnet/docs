@@ -38,30 +38,30 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To create a LINQ to SQL solution  
   
-1.  On the Visual Studio **File** menu, point to **New**, and then click **Project**.  
+1. On the Visual Studio **File** menu, point to **New**, and then click **Project**.  
   
-2.  In the **Project types** pane of the **New Project** dialog box, click **Visual C#**.  
+2. In the **Project types** pane of the **New Project** dialog box, click **Visual C#**.  
   
-3.  In the **Templates** pane, click **Console Application**.  
+3. In the **Templates** pane, click **Console Application**.  
   
-4.  In the **Name** box, type **LinqConsoleApp**.  
+4. In the **Name** box, type **LinqConsoleApp**.  
   
-5.  In the **Location** box, verify where you want to store your project files.  
+5. In the **Location** box, verify where you want to store your project files.  
   
-6.  Click **OK**.  
+6. Click **OK**.  
   
 ## Adding LINQ References and Directives  
  This walkthrough uses assemblies that might not be installed by default in your project. If System.Data.Linq is not listed as a reference in your project (expand the **References** node in **Solution Explorer**), add it, as explained in the following steps.  
   
 #### To add System.Data.Linq  
   
-1.  In **Solution Explorer**, right-click **References**, and then click **Add Reference**.  
+1. In **Solution Explorer**, right-click **References**, and then click **Add Reference**.  
   
-2.  In the **Add Reference** dialog box, click **.NET**, click the System.Data.Linq assembly, and then click **OK**.  
+2. In the **Add Reference** dialog box, click **.NET**, click the System.Data.Linq assembly, and then click **OK**.  
   
      The assembly is added to the project.  
   
-3.  Add the following directives at the top of **Program.cs**:  
+3. Add the following directives at the top of **Program.cs**:  
   
      [!code-csharp[DLinqWalk1CS#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1CS/cs/Program.cs#1)]  
   
@@ -118,11 +118,11 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To execute the query  
   
-1.  Type or paste the following code at the end of the `Main` method (after the query description).  
+1. Type or paste the following code at the end of the `Main` method (after the query description).  
   
      [!code-csharp[DLinqWalk1ACS#6](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1ACS/cs/Program.cs#6)]  
   
-2.  Press F5 to debug the application.  
+2. Press F5 to debug the application.  
   
     > [!NOTE]
     >  If your application generates a run-time error, see the Troubleshooting section of [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md).  
@@ -141,7 +141,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
      `ID=SEVES, City=London`  
   
-3.  Press Enter in the console window to close the application.  
+3. Press Enter in the console window to close the application.  
   
 ## Next Steps  
  The [Walkthrough: Querying Across Relationships (C#)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp.md) topic continues where this walkthrough ends. The Query Across Relationships walkthrough demonstrates how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can query across tables, similar to *joins* in a relational database.  
@@ -149,4 +149,5 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
  If you want to do the Query Across Relationships walkthrough, make sure to save the solution for the walkthrough you have just completed, which is a prerequisite.  
   
 ## See also
+
 - [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

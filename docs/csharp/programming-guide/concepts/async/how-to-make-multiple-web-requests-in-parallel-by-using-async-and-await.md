@@ -37,7 +37,7 @@ var result = await myTask;
   
 ### To set up the project  
   
-1.  To set up a WPF application, complete the following steps. You can find detailed instructions for these steps in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
+1. To set up a WPF application, complete the following steps. You can find detailed instructions for these steps in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
     -   Create a WPF application that contains a text box and a button. Name the button `startButton`, and name the text box `resultsTextBox`.  
   
@@ -47,9 +47,9 @@ var result = await myTask;
   
 ### To add the code  
   
-1.  In the design window, MainWindow.xaml, double-click the button to create the `startButton_Click` event handler in MainWindow.xaml.cs.  
+1. In the design window, MainWindow.xaml, double-click the button to create the `startButton_Click` event handler in MainWindow.xaml.cs.  
   
-2.  Copy the following code, and paste it into the body of `startButton_Click` in MainWindow.xaml.cs.  
+2. Copy the following code, and paste it into the body of `startButton_Click` in MainWindow.xaml.cs.  
   
     ```csharp  
     resultsTextBox.Clear();  
@@ -59,7 +59,7 @@ var result = await myTask;
   
      The code calls an asynchronous method, `CreateMultipleTasksAsync`, which drives the application.  
   
-3.  Add the following support methods to the project:  
+3. Add the following support methods to the project:  
   
     -   `ProcessURLAsync` uses an <xref:System.Net.Http.HttpClient> method to download the contents of a website as a byte array. The support method, `ProcessURLAsync` then displays and returns the length of the array.  
   
@@ -87,7 +87,7 @@ var result = await myTask;
     }  
     ```  
   
-4.  Finally, define method `CreateMultipleTasksAsync`, which performs the following steps.  
+4. Finally, define method `CreateMultipleTasksAsync`, which performs the following steps.  
   
     -   The method declares an `HttpClient` object,which you need  to access method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> in `ProcessURLAsync`.  
   
@@ -128,7 +128,7 @@ var result = await myTask;
     }  
     ```  
   
-5.  Choose the F5 key to run the program, and then choose the **Start** button.  
+5. Choose the F5 key to run the program, and then choose the **Start** button.  
   
      Run the program several times to verify that the three tasks don’t always finish in the same order and that the order in which they finish isn't necessarily the order in which they’re created and awaited.  
   

@@ -35,7 +35,7 @@ Specifies the name of the cryptographic key container.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  This compiler option is not available in the Visual Studio development environment.  
+1. This compiler option is not available in the Visual Studio development environment.  
   
  You can programmatically access this compiler option with <xref:VSLangProj.ProjectProperties.AssemblyKeyContainerName%2A>.  
   

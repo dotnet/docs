@@ -9,9 +9,7 @@ ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 ---
 # Binding Sources Overview
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.  
-  
-  
-  
+
 <a name="binding_sources"></a>   
 ## Binding Source Types  
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding supports the following binding source types:  
@@ -89,6 +87,7 @@ In data binding, the binding source object refers to the object you obtain data 
  For more information about partial-trust security, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).  
   
 ## See also
+
 - <xref:System.Windows.Data.ObjectDataProvider>
 - <xref:System.Windows.Data.XmlDataProvider>
 - [Specify the Binding Source](how-to-specify-the-binding-source.md)

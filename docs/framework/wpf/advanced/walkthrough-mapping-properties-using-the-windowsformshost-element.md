@@ -39,11 +39,11 @@ You need the following components to complete this walkthrough:
 
 ## Create and set up the project
 
-1.  Create a **WPF App** project named `PropertyMappingWithWfhSample`.
+1. Create a **WPF App** project named `PropertyMappingWithWfhSample`.
 
-2.  In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
+2. In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
-3.  In **Solution Explorer**, add references to the System.Drawing and System.Windows.Forms assemblies.
+3. In **Solution Explorer**, add references to the System.Drawing and System.Windows.Forms assemblies.
 
 ## Defining the Application Layout
 
@@ -51,15 +51,15 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
 
 ### To define the application layout
 
-1.  Open Window1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+1. Open Window1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
 
-2.  Replace the existing code with the following code.
+2. Replace the existing code with the following code.
 
      [!code-xaml[PropertyMappingWithWfhSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml#1)]
 
-3.  Open Window1.xaml.cs in the Code Editor.
+3. Open Window1.xaml.cs in the Code Editor.
 
-4.  At the top of the file, import the following namespaces.
+4. At the top of the file, import the following namespaces.
 
      [!code-csharp[PropertyMappingWithWfhSample#20](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#20)]
      [!code-vb[PropertyMappingWithWfhSample#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#20)]
@@ -132,7 +132,7 @@ Set up your property mappings by calling the previously described methods in the
 
 ### To initialize your property mappings
 
-1.  Copy the following code into the definition for the `Window1` class.
+1. Copy the following code into the definition for the `Window1` class.
 
      [!code-csharp[PropertyMappingWithWfhSample#11](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#11)]
      [!code-vb[PropertyMappingWithWfhSample#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#11)]
@@ -145,7 +145,7 @@ Set up your property mappings by calling the previously described methods in the
 
     -   Assigns initial values to the mapped properties.
 
-2.  Press **F5** to build and run the application. Click the check box to see the effect of the <xref:System.Windows.FrameworkElement.FlowDirection%2A> mapping. When you click the check box, the layout reverses its left-right orientation.
+2. Press **F5** to build and run the application. Click the check box to see the effect of the <xref:System.Windows.FrameworkElement.FlowDirection%2A> mapping. When you click the check box, the layout reverses its left-right orientation.
 
 ## See also
 

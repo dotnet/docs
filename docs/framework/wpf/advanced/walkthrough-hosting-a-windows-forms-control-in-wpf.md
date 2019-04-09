@@ -24,27 +24,27 @@ You need Visual Studio to complete this walkthrough.
 
 ### To host the MaskedTextBox control
 
-1.  Create a WPF Application project named `HostingWfInWpf`.
+1. Create a WPF Application project named `HostingWfInWpf`.
 
-2.  Add references to the following assemblies.
+2. Add references to the following assemblies.
 
     -   WindowsFormsIntegration
 
     -   System.Windows.Forms
 
-3.  Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
 
-4.  Name the <xref:System.Windows.Controls.Grid> element `grid1`.
+4. Name the <xref:System.Windows.Controls.Grid> element `grid1`.
 
      [!code-xaml[HostingWfInWPF#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml#1)]
 
-5.  In Design view or XAML view, select the <xref:System.Windows.Window> element.
+5. In Design view or XAML view, select the <xref:System.Windows.Window> element.
 
-6.  In the Properties window, click the **Events** tab.
+6. In the Properties window, click the **Events** tab.
 
-7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
+7. Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
 
-8.  Insert the following code to handle the <xref:System.Windows.FrameworkElement.Loaded> event.
+8. Insert the following code to handle the <xref:System.Windows.FrameworkElement.Loaded> event.
 
      [!code-csharp[HostingWfInWPF#10](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml.cs#10)]
      [!code-vb[HostingWfInWPF#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWfInWPF/VisualBasic/HostingWfInWpf/Window1.xaml.vb#10)]

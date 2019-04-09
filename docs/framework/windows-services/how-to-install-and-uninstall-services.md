@@ -28,13 +28,13 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
 ### Install your service manually  
   
-1.  From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
+1. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
   
      The Developer Command Prompt for Visual Studio appears. 
   
-2.  Access the directory where your project's compiled executable file is located.  
+2. Access the directory where your project's compiled executable file is located.  
   
-3.  Run *InstallUtil.exe* from the command prompt with your project's executable as a parameter:  
+3. Run *InstallUtil.exe* from the command prompt with your project's executable as a parameter:  
   
     ```console
     installutil <yourproject>.exe  
@@ -52,7 +52,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
      The Developer Command Prompt for Visual Studio appears.  
   
-2.  Run *InstallUtil.exe* from the command prompt with your project's output as a parameter:  
+2. Run *InstallUtil.exe* from the command prompt with your project's output as a parameter:  
   
     ```console  
     installutil /u <yourproject>.exe  
@@ -61,6 +61,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
 3. After the executable for a service is deleted, the service might still be present in the registry. If that's the case, use the command [sc delete](/windows-server/administration/windows-commands/sc-delete) to remove the entry for the service from the registry.  
   
 ## See also
+
 - [Introduction to Windows service applications](../windows-services/introduction-to-windows-service-applications.md)
 - [How to: Create Windows services](../windows-services/how-to-create-windows-services.md)
 - [How to: Add installers to your service application](../windows-services/how-to-add-installers-to-your-service-application.md)

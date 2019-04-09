@@ -36,9 +36,9 @@ When you interoperate between COM and the managed code of the [!INCLUDE[dnprdnsh
   
  The renaming can cause two problems for consumers of the COM object.  
   
-1.  Clients might not expect the generated method names.  
+1. Clients might not expect the generated method names.  
   
-2.  The generated method names in the class exposed as a COM object can change when new overloads are added to the class or its base class. This can cause versioning problems.  
+2. The generated method names in the class exposed as a COM object can change when new overloads are added to the class or its base class. This can cause versioning problems.  
   
  To solve both problems, give each method a unique name, instead of using overloading, when you develop objects that will be exposed as COM objects.  
   

@@ -20,9 +20,9 @@ Local Channel is a Windows Communication Foundation (WCF) transport channel that
   
 #### To set up, build, and run the sample  
   
-1.  Build and run the LocalChannel solution.  
+1. Build and run the LocalChannel solution.  
   
-2.  The service host is started and the client calls the service using the local channel. A console window appears to display the results of the service call.  
+2. The service host is started and the client calls the service using the local channel. A console window appears to display the results of the service call.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

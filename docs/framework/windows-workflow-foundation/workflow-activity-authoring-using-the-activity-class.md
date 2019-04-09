@@ -8,12 +8,12 @@ The most basic way to create an activity using Windows Workflow Foundation (WF) 
 
 ### To create a custom Activity using the activity designer
 
-1.  Open Visual Studio 2012.
+1. Open Visual Studio 2012.
 
-2.  Select File, New, Project. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Activity Library** in the **Templates** window. Name the new project HelloActivity.
+2. Select File, New, Project. Select **Workflow 4.0** under **Visual C#** in the **Project Types** window, and select the **v2010** node. Select **Activity Library** in the **Templates** window. Name the new project HelloActivity.
 
-3.  Open the new activity.  Drag a <xref:System.Activities.Statements.Sequence> activity from the toolbox onto the designer surface.
+3. Open the new activity.  Drag a <xref:System.Activities.Statements.Sequence> activity from the toolbox onto the designer surface.
 
-4.  Drag a <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity. Enter `"Hello World"` (with quotes) into the **Text** field.
+4. Drag a <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity. Enter `"Hello World"` (with quotes) into the **Text** field.
 
-5.  Drag a second <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity, below the first one. Enter `"Goodbye"` (with quotes) into the **Text** field.
+5. Drag a second <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity, below the first one. Enter `"Goodbye"` (with quotes) into the **Text** field.

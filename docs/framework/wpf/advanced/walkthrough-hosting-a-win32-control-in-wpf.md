@@ -13,8 +13,7 @@ ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it may be more effective to reuse at least some of that code in your WPF application rather than rewrite it completely. WPF provides a straightforward mechanism for hosting a Win32 window, on a WPF page.  
   
  This topic walks you through an application, [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control), that hosts a Win32 list box control. This general procedure can be extended to hosting any Win32 window.  
-  
-  
+
 <a name="requirements"></a>   
 ## Requirements  
  This topic assumes a basic familiarity with both WPF and Windows API programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Windows API programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
@@ -30,25 +29,25 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
  The basic hosting procedure is:  
   
-1.  Implement a WPF page to host the window. One technique is to create a <xref:System.Windows.Controls.Border> element to reserve a section of the page for the hosted window.  
+1. Implement a WPF page to host the window. One technique is to create a <xref:System.Windows.Controls.Border> element to reserve a section of the page for the hosted window.  
   
-2.  Implement a class to host the control that inherits from <xref:System.Windows.Interop.HwndHost>.  
+2. Implement a class to host the control that inherits from <xref:System.Windows.Interop.HwndHost>.  
   
-3.  In that class, override the <xref:System.Windows.Interop.HwndHost> class member <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>.  
+3. In that class, override the <xref:System.Windows.Interop.HwndHost> class member <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>.  
   
-4.  Create the hosted window as a child of the window that contains the WPF page. Although conventional WPF programming does not need to explicitly make use of it, the hosting page is a window with a handle (HWND). You receive the page HWND through the `hwndParent` parameter of the <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A> method. The hosted window should be created as a child of this HWND.  
+4. Create the hosted window as a child of the window that contains the WPF page. Although conventional WPF programming does not need to explicitly make use of it, the hosting page is a window with a handle (HWND). You receive the page HWND through the `hwndParent` parameter of the <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A> method. The hosted window should be created as a child of this HWND.  
   
-5.  Once you have created the host window, return the HWND of the hosted window. If you want to host one or more Win32 controls, you typically create a host window as a child of the HWND and make the controls children of that host window. Wrapping the controls in a host window provides a simple way for your WPF page to receive notifications from the controls, which deals with some particular Win32 issues with notifications across the HWND boundary.  
+5. Once you have created the host window, return the HWND of the hosted window. If you want to host one or more Win32 controls, you typically create a host window as a child of the HWND and make the controls children of that host window. Wrapping the controls in a host window provides a simple way for your WPF page to receive notifications from the controls, which deals with some particular Win32 issues with notifications across the HWND boundary.  
   
-6.  Handle selected messages sent to the host window, such as notifications from child controls. There are two ways to do this.  
+6. Handle selected messages sent to the host window, such as notifications from child controls. There are two ways to do this.  
   
     -   If you prefer to handle messages in your hosting class, override the <xref:System.Windows.Interop.HwndHost.WndProc%2A> method of the <xref:System.Windows.Interop.HwndHost> class.  
   
     -   If you prefer to have the WPF handle the messages, handle the <xref:System.Windows.Interop.HwndHost> class <xref:System.Windows.Interop.HwndHost.MessageHook> event in your code-behind. This event occurs for every message that is received by the hosted window. If you choose this option, you must still override <xref:System.Windows.Interop.HwndHost.WndProc%2A>, but you only need a minimal implementation.  
   
-7.  Override the <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A> and <xref:System.Windows.Interop.HwndHost.WndProc%2A> methods of <xref:System.Windows.Interop.HwndHost>. You must override these methods to satisfy the <xref:System.Windows.Interop.HwndHost> contract, but you may only need to provide a minimal implementation.  
+7. Override the <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A> and <xref:System.Windows.Interop.HwndHost.WndProc%2A> methods of <xref:System.Windows.Interop.HwndHost>. You must override these methods to satisfy the <xref:System.Windows.Interop.HwndHost> contract, but you may only need to provide a minimal implementation.  
   
-8.  In your code-behind file, create an instance of the control hosting class and make it a child of the <xref:System.Windows.Controls.Border> element that is intended to host the window.  
+8. In your code-behind file, create an instance of the control hosting class and make it a child of the <xref:System.Windows.Controls.Border> element that is intended to host the window.  
   
 9. Communicate with the hosted window by sending it [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] messages and handling messages from its child windows, such as notifications sent by controls.  
   
@@ -148,6 +147,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  Finally, set `handled` to `true` to indicate that the message has been handled.  
   
 ## See also
+
 - <xref:System.Windows.Interop.HwndHost>
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)

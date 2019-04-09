@@ -34,9 +34,9 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
   
 ### To establish a default style for the DataGrid control  
   
-1.  Select the <xref:System.Windows.Forms.DataGrid> control.  
+1. Select the <xref:System.Windows.Forms.DataGrid> control.  
   
-2.  In the **Properties** window, set the following properties, as appropriate.  
+2. In the **Properties** window, set the following properties, as appropriate.  
   
     |Property|Description|  
     |--------------|-----------------|  
@@ -71,21 +71,21 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
 
 ### To set the table and column style of a data table at design time
 
-1.  Select the <xref:System.Windows.Forms.DataGrid> control on your form.
+1. Select the <xref:System.Windows.Forms.DataGrid> control on your form.
 
-2.  In the **Properties** window, select the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property and click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button.
+2. In the **Properties** window, select the <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property and click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button.
 
-3.  In the **DataGridTableStyle Collection Editor** dialog box, click **Add** to add a table style to the collection.
+3. In the **DataGridTableStyle Collection Editor** dialog box, click **Add** to add a table style to the collection.
 
      With the **DataGridTableStyle Collection Editor**, you can add and remove table styles, set display and layout properties, and set the mapping name for the table styles.
 
-4.  Set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property to the mapping name for each table style.
+4. Set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property to the mapping name for each table style.
 
      The mapping name is used to specify which table style should be used with which table.
 
-5.  In the **DataGridTableStyle Collection Editor**, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property and click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")).
+5. In the **DataGridTableStyle Collection Editor**, select the <xref:System.Windows.Forms.DataGridTableStyle.GridColumnStyles%2A> property and click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")).
 
-6.  In the **DataGridColumnStyle Collection Editor** dialog box, add column styles to the table style you created.
+6. In the **DataGridColumnStyle Collection Editor** dialog box, add column styles to the table style you created.
 
      With the **DataGridColumnStyle Collection Editor**, you can add and remove column styles, set display and layout properties, and set the mapping name and formatting strings for the data columns.
 

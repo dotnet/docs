@@ -10,7 +10,7 @@ A conversion operation attempts to convert an argument to an incompatible type.
   
 ## To correct this error  
   
-1.  Ensure that the type to which you are trying to convert the argument is valid.  
+1. Ensure that the type to which you are trying to convert the argument is valid.  
   
 ## See also
 

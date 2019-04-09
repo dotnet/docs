@@ -28,6 +28,7 @@ This example draws a filled rectangle on a form.
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Brush> and <xref:System.Drawing.Graphics> objects.  
   
 ## See also
+
 - <xref:System.Drawing.Graphics.FillRectangle%2A>
 - <xref:System.Windows.Forms.Control.OnPaint%2A>
 - [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)

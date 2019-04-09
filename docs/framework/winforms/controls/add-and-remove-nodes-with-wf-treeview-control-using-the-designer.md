@@ -18,17 +18,18 @@ Because the Windows Forms <xref:System.Windows.Forms.TreeView> control displays 
   
 ### To add or remove nodes in the designer  
   
-1.  Select the <xref:System.Windows.Forms.TreeView> control.  
+1. Select the <xref:System.Windows.Forms.TreeView> control.  
   
-2.  In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
+2. In the **Properties** window, click the **Ellipsis** (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button next to the <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
   
      The **TreeNode Editor** appears.  
   
-3.  To add nodes, a root node must exist; if one does not exist, you must first add a root by clicking the **Add Root** button. You can then add child nodes by selecting the root or any other node and clicking the **Add Child** button.  
+3. To add nodes, a root node must exist; if one does not exist, you must first add a root by clicking the **Add Root** button. You can then add child nodes by selecting the root or any other node and clicking the **Add Child** button.  
   
-4.  To delete nodes, select the node to delete and then click the **Delete** button.  
+4. To delete nodes, select the node to delete and then click the **Delete** button.  
   
 ## See also
+
 - [TreeView Control](treeview-control-windows-forms.md)
 - [TreeView Control Overview](treeview-control-overview-windows-forms.md)
 - [How to: Set Icons for the Windows Forms TreeView Control](how-to-set-icons-for-the-windows-forms-treeview-control.md)

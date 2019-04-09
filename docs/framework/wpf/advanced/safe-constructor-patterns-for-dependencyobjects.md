@@ -9,9 +9,7 @@ ms.assetid: f704b81c-449a-47a4-ace1-9332e3cc6d60
 ---
 # Safe Constructor Patterns for DependencyObjects
 Generally, class constructors should not call callbacks such as virtual methods or delegates, because constructors can be called as base initialization of constructors for a derived class. Entering the virtual might be done at an incomplete initialization state of any given object. However, the property system itself calls and exposes callbacks internally, as part of the dependency property system. As simple an operation as setting a dependency property value with <xref:System.Windows.DependencyObject.SetValue%2A> call potentially includes a callback somewhere in the determination. For this reason, you should be careful when setting dependency property values within the body of a constructor, which can become problematic if your type is used as a base class. There is a particular pattern for implementing <xref:System.Windows.DependencyObject> constructors that avoids specific problems with dependency property states and the inherent callbacks, which is documented here.  
-  
- 
-  
+
 <a name="Property_System_Virtual_Methods"></a>   
 ## Property System Virtual Methods  
  The following virtual methods or callbacks are potentially called during the computations of the <xref:System.Windows.DependencyObject.SetValue%2A> call that sets a dependency property value: <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.PropertyChangedCallback>, <xref:System.Windows.CoerceValueCallback>, <xref:System.Windows.DependencyObject.OnPropertyChanged%2A>. Each of these virtual methods or callbacks serves a particular purpose in expanding the versatility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system and dependency properties. For more information on how to use these virtuals to customize property value determination, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
@@ -109,6 +107,7 @@ public MyClass : SomeBaseClass {
  These same patterns apply if you are setting a property that does not have a wrapper for property setting convenience, and set values with <xref:System.Windows.DependencyObject.SetValue%2A>. Your calls to <xref:System.Windows.DependencyObject.SetValue%2A> that pass through constructor parameters should also call the class' default constructor for initialization.  
   
 ## See also
+
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Dependency Property Security](dependency-property-security.md)

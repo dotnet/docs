@@ -22,11 +22,11 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
 #### To build the code example for this topic  
   
-1.  Open a new Visual Basic Windows Application project and create a form named `Form1`.  
+1. Open a new Visual Basic Windows Application project and create a form named `Form1`.  
   
-2.  Add two buttons and a label to `Form1`.  
+2. Add two buttons and a label to `Form1`.  
   
-3.  Name the objects as shown in the following table.  
+3. Name the objects as shown in the following table.  
   
     |Object|Property|Setting|  
     |------------|--------------|-------------|  
@@ -34,7 +34,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
     |`Button2`|`Text`|Cancel|  
     |`Label`|`(Name)`, `Text`|lblPercentDone, 0|  
   
-4.  On the **Project** menu, choose **Add Class** to add a class named `Widget.vb` to the project.  
+4. On the **Project** menu, choose **Add Class** to add a class named `Widget.vb` to the project.  
   
 #### To declare an event for the Widget class  
   
@@ -51,11 +51,11 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
 #### To raise the PercentDone event  
   
-1.  To simplify access to the `Timer` property used by this class, add an `Imports` statement to the top of the declarations section of your class module, above the `Class Widget` statement.  
+1. To simplify access to the `Timer` property used by this class, add an `Imports` statement to the top of the declarations section of your class module, above the `Class Widget` statement.  
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#2)]  
   
-2.  Add the following code to the `Widget` class:  
+2. Add the following code to the `Widget` class:  
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#3)]  
   
@@ -68,6 +68,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
  Now that the `Widget` class can raise events, you can move to the next walkthrough. [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md) demonstrates how to use `WithEvents` to associate an event handler with the `PercentDone` event.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
 - <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>
 - [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)

@@ -93,5 +93,6 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>
 - <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>

@@ -22,15 +22,15 @@ A data service can expose large object binary data. This binary data might repre
   
  Configuring a data service to support the streaming of binary data requires the following steps:  
   
-1.  Attribute one or more entities in the data model as a media link entry. These entities should not include the binary data to be streamed. Any binary properties of an entity are always returned in the entry as base-64 encoded binary.  
+1. Attribute one or more entities in the data model as a media link entry. These entities should not include the binary data to be streamed. Any binary properties of an entity are always returned in the entry as base-64 encoded binary.  
   
-2.  Implement the T:System.Data.Services.Providers.IDataServiceStreamProvider interface.  
+2. Implement the T:System.Data.Services.Providers.IDataServiceStreamProvider interface.  
   
-3.  Define a data service that implements the <xref:System.IServiceProvider> interface. The data service uses the <xref:System.IServiceProvider.GetService%2A> implementation to access the streaming data provider implementation. This method returns the appropriate streaming provider implementation.  
+3. Define a data service that implements the <xref:System.IServiceProvider> interface. The data service uses the <xref:System.IServiceProvider.GetService%2A> implementation to access the streaming data provider implementation. This method returns the appropriate streaming provider implementation.  
   
-4.  Enable large message streams in the Web application configuration.  
+4. Enable large message streams in the Web application configuration.  
   
-5.  Enable access to binary resources on the server or in a data source.  
+5. Enable access to binary resources on the server or in a data source.  
   
  The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989). The source code for this sample service is available on the [Streaming Photo Data Service Sample page](https://go.microsoft.com/fwlink/?LinkID=198988) on MSDN Code Gallery.  
   
@@ -75,18 +75,14 @@ A data service can expose large object binary data. This binary data might repre
   
 ## Enabling Large Binary Streams in the Hosting Environment  
  When you create a data service in an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web application, Windows Communication Foundation (WCF) is used to provide the HTTP protocol implementation. By default, WCF limits the size of HTTP messages to only 65K bytes. To be able to stream large binary data to and from the data service, you must also configure the Web application to enable large binary files and to use streams for transfer. To do this, add the following in the `<configuration />` element of the application's Web.config file:  
-  
-  
-  
+
 > [!NOTE]
 >  You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by WCF.  
   
  For more information, see [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   
  By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:  
-  
-  
-  
+
 ## Using Data Streams in a Client Application  
  The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to both retrieve and update these exposed resources as binary streams on the client. For more information, see [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md).  
   
@@ -124,6 +120,7 @@ A data service can expose large object binary data. This binary data might repre
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See also
+
 - [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
 - [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
 - [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)

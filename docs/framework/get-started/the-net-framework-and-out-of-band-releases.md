@@ -17,26 +17,26 @@ The .NET Framework is evolving to accommodate different platforms such as Window
 ## How OOB packages are distributed
 OOB releases for core common language runtime (CLR) components are delivered through the [NuGet](https://www.nuget.org/), which is a package manager for .NET. NuGet enables you to browse and add libraries to your .NET Framework projects easily from the Solution Explorer in Visual Studio. NuGet is included with all editions of Visual Studio starting with Visual Studio 2012. To see if NuGet is installed, look for **NuGet Package Manager** on the Visual Studio **Tools** menu. If it’s not installed:
 
-1.  On the Visual Studio menu bar, choose **Tools**, **Extensions and Updates** (in Visual Studio 2010, choose **Extension Manager**).
+1. On the Visual Studio menu bar, choose **Tools**, **Extensions and Updates** (in Visual Studio 2010, choose **Extension Manager**).
 
      The **Extensions and Updates** dialog box opens.
 
-2.  Choose **Online**, **NuGet Package Manager**, and then choose **Download**.
+2. Choose **Online**, **NuGet Package Manager**, and then choose **Download**.
 
-3.  After the download completes, restart Visual Studio.
+3. After the download completes, restart Visual Studio.
 
  For detailed installation instructions, see [Installing NuGet](/nuget/install-nuget-client-tools) on the NuGet Docs website. For more information about NuGet, see the [NuGet documentation](/nuget).
 
 ## Using a NuGet OOB package
  After you install NuGet, you can browse and add references to NuGet packages by using Solution Explorer in Visual Studio:
 
-1.  Open the shortcut menu for your project in Visual Studio, and then choose **Manage NuGet Packages**. (This option is also available from the **Project** menu.)
+1. Open the shortcut menu for your project in Visual Studio, and then choose **Manage NuGet Packages**. (This option is also available from the **Project** menu.)
 
-2.  In the left pane, choose **Online**.
+2. In the left pane, choose **Online**.
 
-3.  If you want to use prerelease packages, in the drop-down list box in the middle pane, choose **Include Prerelease** instead of **Stable Only**.
+3. If you want to use prerelease packages, in the drop-down list box in the middle pane, choose **Include Prerelease** instead of **Stable Only**.
 
-4.  In the right pane, use the **Search** box to locate the package you would like to use. Some Microsoft packages are identified by the Microsoft .NET Framework logo, and all identify Microsoft as the publisher.
+4. In the right pane, use the **Search** box to locate the package you would like to use. Some Microsoft packages are identified by the Microsoft .NET Framework logo, and all identify Microsoft as the publisher.
 
  ![Screenshot that shows the NuGet Package Manager.](./media/the-net-framework-and-out-of-band-releases/nuget-package-manager-dialog.png)
 

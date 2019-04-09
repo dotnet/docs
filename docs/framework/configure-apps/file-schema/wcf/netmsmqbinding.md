@@ -132,6 +132,7 @@ Defines a queued binding suitable for cross-machine communication.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.NetMsmqBinding>
 - <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>
 - [\<binding>](../../../../../docs/framework/misc/binding.md)

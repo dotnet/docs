@@ -78,4 +78,5 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
      [!code-vb[c_CreateSecureSession#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#2)]  
   
 ## See also
+
 - [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md)

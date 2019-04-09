@@ -31,6 +31,7 @@ This example draws a filled ellipse on a form.
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Brush> and <xref:System.Drawing.Graphics> objects.  
   
 ## See also
+
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
 - [Alpha Blending Lines and Fills](alpha-blending-lines-and-fills.md)

@@ -23,7 +23,6 @@ In this tutorial, you learn how to:
 > - Create a **WCF Service Library** project.
 > - Define a service contract interface.
 
-
 ## Create a WCF Service Library project and define a service contract interface
 
 1. Open Visual Studio as an administrator. To do so, select the Visual Studio program in the **Start** menu, and then select **More** > **Run as administrator** from the shortcut menu.
@@ -48,7 +47,6 @@ In this tutorial, you learn how to:
 
       > [!NOTE]
       > If you installed Visual Studio with Visual Basic developer environment settings, the solution might be hidden. If this is the case, select **Options** from the **Tools** menu, then select **Projects and Solutions** > **General** in the **Options** window. Select **Always show solution**. Also, verify that **Save new projects when created** is selected.
-
 
 3. From **Solution Explorer**, open the **IService1.cs** or **IService1.vb** file, and replace its code with the following code:
 

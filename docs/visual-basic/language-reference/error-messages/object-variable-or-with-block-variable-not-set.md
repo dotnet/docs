@@ -30,7 +30,7 @@ An invalid object variable is being referenced.   This error can occur for sever
   
 ## To correct this error  
   
-1.  Set `Option Strict` to `On` by adding the following code to the beginning of the file:  
+1. Set `Option Strict` to `On` by adding the following code to the beginning of the file:  
   
 ```vb  
 Option Strict On  
@@ -38,15 +38,16 @@ Option Strict On
 
      When you run the project, a compiler error will appear in the **Error List** for any variable that was specified without a type.  
   
-2.  If you don't want to enable `Option Strict`, search your code for any variables that were specified without a type (`Dim x` instead of `Dim x As String`) and add the intended type to the declaration.  
+2. If you don't want to enable `Option Strict`, search your code for any variables that were specified without a type (`Dim x` instead of `Dim x As String`) and add the intended type to the declaration.  
   
-3.  Make sure you aren't referring to  an object variable that has been set to `Nothing`.  Search your code for the keyword `Nothing`, and revise your code so that the object isn't set to `Nothing` until after you have referenced it.  
+3. Make sure you aren't referring to  an object variable that has been set to `Nothing`.  Search your code for the keyword `Nothing`, and revise your code so that the object isn't set to `Nothing` until after you have referenced it.  
   
-4.  Make sure that any array  variables are dimensioned before you access them. You can either assign a dimension when you first create the array (`Dim x(5) As String` instead of `Dim x() As String`), or use the `ReDim` keyword to set the dimensions of the array before you first access it.  
+4. Make sure that any array  variables are dimensioned before you access them. You can either assign a dimension when you first create the array (`Dim x(5) As String` instead of `Dim x() As String`), or use the `ReDim` keyword to set the dimensions of the array before you first access it.  
   
-5.  Make sure your `With` block is initialized by executing the `With` statement entry point.  
+5. Make sure your `With` block is initialized by executing the `With` statement entry point.  
   
 ## See also
+
 - [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
 - [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)

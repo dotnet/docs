@@ -20,7 +20,7 @@ public delegate void EventHandler(object sender, EventArgs e);
   
 ### To publish events based on the EventHandler pattern  
   
-1.  (Skip this step and go to Step 3a if you do not have to send custom data with your event.) Declare the class for your custom data at a scope that is visible to both your publisher and subscriber classes. Then add the required members to hold your custom event data. In this example, a simple string is returned.  
+1. (Skip this step and go to Step 3a if you do not have to send custom data with your event.) Declare the class for your custom data at a scope that is visible to both your publisher and subscriber classes. Then add the required members to hold your custom event data. In this example, a simple string is returned.  
   
     ```csharp  
     public class CustomEventArgs : EventArgs  
@@ -37,13 +37,13 @@ public delegate void EventHandler(object sender, EventArgs e);
     }  
     ```  
   
-2.  (Skip this step if you are using the generic version of <xref:System.EventHandler%601> .) Declare a delegate in your publishing class. Give it a name that ends with *EventHandler*. The second parameter specifies your custom EventArgs type.  
+2. (Skip this step if you are using the generic version of <xref:System.EventHandler%601> .) Declare a delegate in your publishing class. Give it a name that ends with *EventHandler*. The second parameter specifies your custom EventArgs type.  
   
     ```csharp  
     public delegate void CustomEventHandler(object sender, CustomEventArgs a);  
     ```  
   
-3.  Declare the event in your publishing class by using one of the following steps.  
+3. Declare the event in your publishing class by using one of the following steps.  
   
     1.  If you have no custom EventArgs class, your Event type will be the non-generic EventHandler delegate. You do not have to declare the delegate because it is already declared in the <xref:System> namespace that is included when you create your C# project. Add the following code to your publisher class.  
   

@@ -251,9 +251,7 @@
     - name: Introduction to .NET and Docker
       href: core/docker/intro-net-docker.md
     - name: Containerize a .NET Core app
-      href: core/docker/docker-basics-dotnet-core.md
-    - name: Work with Docker base images
-      href: core/docker/building-net-docker-images.md
+      href: core/docker/build-docker-netcore-container.md
     - name: Visual Studio Tools for Docker
       href: /aspnet/core/publishing/visual-studio-tools-for-docker
   - name: Unit Testing
@@ -510,8 +508,6 @@
         href: csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml
       - name: Branches and loops
         href: csharp/tutorials/intro-to-csharp/branches-and-loops.yml
-      - name: String interpolation
-        href: csharp/tutorials/intro-to-csharp/interpolated-strings.yml
       - name: List collections
         href: csharp/tutorials/intro-to-csharp/list-collection.yml
       - name: Work in your local environment
@@ -521,8 +517,6 @@
           href: csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md
         - name: Branches and loops
           href: csharp/tutorials/intro-to-csharp/branches-and-loops-local.md
-        - name: String interpolation
-          href: csharp/tutorials/intro-to-csharp/interpolated-strings-local.md
         - name: List collections
           href: csharp/tutorials/intro-to-csharp/arrays-and-collections.md
         - name: Introduction to classes
@@ -531,6 +525,12 @@
       href: csharp/tutorials/exploration/csharp-6.yml
     - name: Explore C# 7.0
       href: csharp/tutorials/exploration/csharp-7.yml
+    - name: Explore string interpolation - interactive
+      href: csharp/tutorials/exploration/interpolated-strings.yml
+    - name: Explore string interpolation - in your environment
+      href: csharp/tutorials/exploration/interpolated-strings-local.md
+    - name: Advanced scenarios for string Interpolation
+      href: csharp/tutorials/string-interpolation.md
     - name: Work with nullable reference types
       href: csharp/tutorials/nullable-reference-types.md
     - name: Upgrade an app to nullable reference types
@@ -547,8 +547,6 @@
       href: csharp/tutorials/inheritance.md
     - name: Working with LINQ
       href: csharp/tutorials/working-with-linq.md
-    - name: String Interpolation
-      href: csharp/tutorials/string-interpolation.md
     - name: Using Attributes
       href: csharp/tutorials/attributes.md
   - name: Tour of C#
@@ -2383,7 +2381,6 @@
     - name: Model training concepts
       href: machine-learning/basic-concepts-model-training-in-mldotnet.md
   - name: Tutorials
-    href: machine-learning/tutorials/index.md
     items:
     - name: Sentiment analysis (binary classification)
       href: machine-learning/tutorials/sentiment-analysis.md
@@ -2395,8 +2392,9 @@
       href: machine-learning/tutorials/iris-clustering.md
     - name: Movie recommendation (recommendation)
       href: machine-learning/tutorials/movie-recommmendation.md
+    - name: Image Classification (transfer learning)
+      href: machine-learning/tutorials/image-classification.md
   - name: How-to guides
-    href: machine-learning/how-to-guides/index.md
     items:
     - name: Prepare data
       items:
@@ -2443,7 +2441,6 @@
     - name: API Reference
       href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
   - name: Resources
-    href: machine-learning/resources/index.md
     items:
     - name: Machine learning glossary
       href: machine-learning/resources/glossary.md

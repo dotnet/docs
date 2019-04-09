@@ -135,6 +135,7 @@ End Class
  For more information, see the Binding to Collections section in the [Data Binding Overview](data-binding-overview.md).  
   
 ## See also
+
 - [Sort Data in a View](how-to-sort-data-in-a-view.md)
 - [Filter Data in a View](how-to-filter-data-in-a-view.md)
 - [Sort and Group Data Using a View in XAML](how-to-sort-and-group-data-using-a-view-in-xaml.md)

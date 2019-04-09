@@ -226,7 +226,6 @@ struct UnicodeString
 
 If you want to marshal your strings using the UTF-8 encoding, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.LPUTF8Str?displayProperty=nameWithType> value in your <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
 
-
 ```csharp
 public struct UTF8String
 {

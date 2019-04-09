@@ -50,6 +50,7 @@ You can get the selected cells, rows, or columns from a <xref:System.Windows.For
  The collections described in this topic do not perform efficiently when large numbers of cells, rows, or columns are selected. For more information about using these collections with large amounts of data, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>
 - <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A>

@@ -35,6 +35,7 @@ The <xref:System.Windows.Forms.WebBrowser> control provides a managed wrapper fo
 |<xref:System.Windows.Forms.WebBrowser.Url%2A> property|Gets or sets the URL of the current Web page. Setting this property navigates the control to the new URL.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.WebBrowser>
 - <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs>
 - <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventHandler>

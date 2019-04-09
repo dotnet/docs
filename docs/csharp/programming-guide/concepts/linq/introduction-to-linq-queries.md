@@ -14,11 +14,11 @@ A *query* is an expression that retrieves data from a data source. Queries are u
 ## Three Parts of a Query Operation  
  All [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query operations consist of three distinct actions:  
   
-1.  Obtain the data source.  
+1. Obtain the data source.  
   
-2.  Create the query.  
+2. Create the query.  
   
-3.  Execute the query.  
+3. Execute the query.  
   
  The following example shows how the three parts of a query operation are expressed in source code. The example uses an integer array as a data source for convenience; however, the same concepts apply to other data sources also. This example is referred to throughout the rest of this topic.  
   

@@ -130,6 +130,7 @@ Defines an interoperable binding that provides support for the correct versions 
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.WS2007HttpBinding>
 - <xref:System.ServiceModel.Configuration.WS2007HttpBindingElement>
 - [Bindings](../../../../../docs/framework/wcf/bindings.md)

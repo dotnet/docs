@@ -27,6 +27,7 @@ Routed events can be handled either by class handlers or instance handlers on an
  [!code-vb[ClassHandling#StaticAndRegisterClassHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClassHandling/visualbasic/sdksamplelibrary/class1.vb#staticandregisterclasshandler)]  
   
 ## See also
+
 - <xref:System.Windows.EventManager>
 - [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md)
 - [Handle a Routed Event](how-to-handle-a-routed-event.md)

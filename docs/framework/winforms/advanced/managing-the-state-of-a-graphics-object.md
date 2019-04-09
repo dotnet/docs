@@ -145,5 +145,6 @@ graphics.DrawLine(pen, 40, 20, 190, 150);
  ![Diagram that shows the limited clip region.](./media/managing-the-state-of-a-graphics-object/set-clipping-region-setclip-method.png)  
   
 ## See also
+
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Using Nested Graphics Containers](using-nested-graphics-containers.md)

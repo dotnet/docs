@@ -13,8 +13,7 @@ ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
 ---
 # Drawing Formatted Text
 This topic provides an overview of the features of the <xref:System.Windows.Media.FormattedText> object. This object provides low-level control for drawing text in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
-  
-  
+
 ## Technology Overview  
  The <xref:System.Windows.Media.FormattedText> object allows you to draw multi-line text, in which each character in the text can be individually formatted. The following example shows text that has several formats applied to it.  
   
@@ -111,6 +110,7 @@ Sphere following the path geometry of text
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.WordEllipsis>.|  
   
 ## See also
+
 - <xref:System.Windows.Media.FormattedText>
 - [Documents in WPF](documents-in-wpf.md)
 - [Typography in WPF](typography-in-wpf.md)

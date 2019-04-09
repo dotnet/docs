@@ -88,15 +88,15 @@ A custom NumericUpDown control
   
  The following practices will ensure that your control responds properly to missing <xref:System.Windows.FrameworkElement> objects:  
   
-1.  Set the `x:Name` attribute for each <xref:System.Windows.FrameworkElement> that you need to reference in code.  
+1. Set the `x:Name` attribute for each <xref:System.Windows.FrameworkElement> that you need to reference in code.  
   
-2.  Define private properties for each <xref:System.Windows.FrameworkElement> that you need to interact with.  
+2. Define private properties for each <xref:System.Windows.FrameworkElement> that you need to interact with.  
   
-3.  Subscribe to and unsubscribe from any events that your control handles in the <xref:System.Windows.FrameworkElement> property's set accessor.  
+3. Subscribe to and unsubscribe from any events that your control handles in the <xref:System.Windows.FrameworkElement> property's set accessor.  
   
-4.  Set the <xref:System.Windows.FrameworkElement> properties that you defined in step 2 in the <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> method. This is the earliest that the <xref:System.Windows.FrameworkElement> in the <xref:System.Windows.Controls.ControlTemplate> is available to the control. Use the `x:Name` of the <xref:System.Windows.FrameworkElement> to get it from the <xref:System.Windows.Controls.ControlTemplate>.  
+4. Set the <xref:System.Windows.FrameworkElement> properties that you defined in step 2 in the <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> method. This is the earliest that the <xref:System.Windows.FrameworkElement> in the <xref:System.Windows.Controls.ControlTemplate> is available to the control. Use the `x:Name` of the <xref:System.Windows.FrameworkElement> to get it from the <xref:System.Windows.Controls.ControlTemplate>.  
   
-5.  Check that the <xref:System.Windows.FrameworkElement> is not `null` before accessing its members.  If it is `null`, do not report an error.  
+5. Check that the <xref:System.Windows.FrameworkElement> is not `null` before accessing its members.  If it is `null`, do not report an error.  
   
  The following examples show how the `NumericUpDown` control interacts with <xref:System.Windows.FrameworkElement> objects in accordance with the recommendations in the preceding list.  
   
@@ -232,5 +232,6 @@ A custom NumericUpDown control
  [!code-vb[VSMCustomControl#ControlLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
   
 ## See also
+
 - [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
 - [Control Customization](control-customization.md)

@@ -15,7 +15,7 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  **SQL Server Books Online**  
   
-1.  [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
+1. [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
  The following table describes the new date and time data types.  
@@ -234,6 +234,7 @@ command.Parameters.AddWithValue( _
 |[Data Types (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98362)|Describes system data types in SQL Server 2008.|  
   
 ## See also
+
 - [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
 - [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
 - [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)

@@ -58,6 +58,7 @@ End Class
 -   Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
   
 ## See also
+
 - [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
 - [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
 - [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)

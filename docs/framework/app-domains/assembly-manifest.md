@@ -48,6 +48,7 @@ Every assembly, whether static or dynamic, contains a collection of data that de
  You can add or change some information in the assembly manifest by using assembly attributes in your code. You can change version information and informational attributes, including Trademark, Copyright, Product, Company, and Informational Version. For a complete list of assembly attributes, see [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md).  
   
 ## See also
+
 - [Assembly Contents](../../../docs/framework/app-domains/assembly-contents.md)
 - [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)
 - [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

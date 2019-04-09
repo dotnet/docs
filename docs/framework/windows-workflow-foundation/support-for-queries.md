@@ -33,21 +33,21 @@ The SQL Workflow Instance Store records a set of well-known properties in the st
 ### The Instances View  
  The Instances view contains the following fields:  
   
-1.  **Id**  
+1. **Id**  
   
-2.  **PendingTimer**  
+2. **PendingTimer**  
   
-3.  **CreationTime**  
+3. **CreationTime**  
   
-4.  **LastUpdatedTime**  
+4. **LastUpdatedTime**  
   
-5.  **ServiceDeploymentId**  
+5. **ServiceDeploymentId**  
   
-6.  **SuspensionExceptionName**  
+6. **SuspensionExceptionName**  
   
-7.  **SuspensionReason**  
+7. **SuspensionReason**  
   
-8.  **ActiveBookmarks**  
+8. **ActiveBookmarks**  
   
 9. **CurrentMachine**  
   
@@ -74,23 +74,23 @@ The SQL Workflow Instance Store records a set of well-known properties in the st
 ### The ServiceDeployments view  
  The ServiceDeployments view contains the following fields:  
   
-1.  **SiteName**  
+1. **SiteName**  
   
-2.  **RelativeServicePath**  
+2. **RelativeServicePath**  
   
-3.  **RelativeApplicationPath**  
+3. **RelativeApplicationPath**  
   
-4.  **ServiceName**  
+4. **ServiceName**  
   
-5.  **ServiceNamespace**  
+5. **ServiceNamespace**  
   
 ### The InstancePromotedProperties view  
  The InstancePromotedProperties view contains the following fields. For details on promoted properties, see the [Store Extensibility](store-extensibility.md) topic.  
   
-1.  **InstanceId**  
+1. **InstanceId**  
   
-2.  **EncodingOption**  
+2. **EncodingOption**  
   
-3.  **PromotionName**  
+3. **PromotionName**  
   
-4.  **Value#** (a range of fields from **Value1** to **Value64**).
+4. **Value#** (a range of fields from **Value1** to **Value64**).

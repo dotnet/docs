@@ -156,6 +156,7 @@ mc:Ignorable="PresentationOptions"
  For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   
 ## See also
+
 - <xref:System.Windows.Freezable>
 - [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
 - [Dependency Properties Overview](dependency-properties-overview.md)

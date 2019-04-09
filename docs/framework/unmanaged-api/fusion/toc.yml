@@ -1,0 +1,145 @@
+- name: Fusion
+  href: index.md
+  items:
+  - name: Fusion Interfaces
+    href: fusion-interfaces.md
+    items:
+    - name: IAppIdAuthority Interface
+      href: iappidauthority-interface.md
+    - name: IAssemblyCache Interface
+      href: iassemblycache-interface.md
+      items:
+      - name: CreateAssemblyCacheItem Method
+        href: iassemblycache-createassemblycacheitem-method.md
+      - name: CreateAssemblyScavenger Method
+        href: iassemblycache-createassemblyscavenger-method.md
+      - name: InstallAssembly Method
+        href: iassemblycache-installassembly-method.md
+      - name: QueryAssemblyInfo Method
+        href: iassemblycache-queryassemblyinfo-method.md
+      - name: UninstallAssembly Method
+        href: iassemblycache-uninstallassembly-method.md
+    - name: IAssemblyCacheItem Interface
+      href: iassemblycacheitem-interface.md
+      items:
+      - name: AbortItem Method
+        href: iassemblycacheitem-abortitem-method.md
+      - name: Commit Method
+        href: iassemblycacheitem-commit-method.md
+      - name: CreateStream Method
+        href: iassemblycacheitem-createstream-method.md
+    - name: IAssemblyEnum Interface
+      href: iassemblyenum-interface.md
+      items:
+      - name: Clone Method
+        href: iassemblyenum-clone-method.md
+      - name: GetNextAssembly Method
+        href: iassemblyenum-getnextassembly-method.md
+      - name: Reset Method
+        href: iassemblyenum-reset-method.md
+    - name: IAssemblyName Interface
+      href: iassemblyname-interface.md
+      items:
+      - name: Clone Method
+        href: iassemblyname-clone-method.md
+      - name: Finalize Method
+        href: iassemblyname-finalize-method.md
+      - name: GetDisplayName Method
+        href: iassemblyname-getdisplayname-method.md
+      - name: GetName Method
+        href: iassemblyname-getname-method.md
+      - name: GetProperty Method
+        href: iassemblyname-getproperty-method.md
+      - name: GetVersion Method
+        href: iassemblyname-getversion-method.md
+      - name: IsEqual Method
+        href: iassemblyname-isequal-method.md
+      - name: SetProperty Method
+        href: iassemblyname-setproperty-method.md
+    - name: IDefinitionAppId Interface
+      href: idefinitionappid-interface.md
+    - name: IDefinitionIdentity Interface
+      href: idefinitionidentity-interface.md
+    - name: IEnumDefinitionIdentity Interface
+      href: ienumdefinitionidentity-interface.md
+    - name: IEnumIDENTITY_ATTRIBUTE Interface
+      href: ienumidentity-attribute-interface.md
+    - name: IEnumReferenceIdentity Interface
+      href: ienumreferenceidentity-interface.md
+    - name: IIdentityAuthority Interface
+      href: iidentityauthority-interface.md
+    - name: IInstallReferenceEnum Interface
+      href: iinstallreferenceenum-interface.md
+      items:
+      - name: GetNextInstallReferenceItem Method
+        href: iinstallreferenceenum-getnextinstallreferenceitem-method.md
+    - name: IInstallReferenceItem Interface
+      href: iinstallreferenceitem-interface.md
+      items:
+      - name: GetReference Method
+        href: iinstallreferenceitem-getreference-method.md
+    - name: IReferenceAppId Interface
+      href: ireferenceappid-interface.md
+    - name: IReferenceIdentity Interface
+      href: ireferenceidentity-interface.md
+  - name: Fusion Global Static Functions
+    href: fusion-global-static-functions.md
+    items:
+    - name: ClearDownloadCache Function
+      href: cleardownloadcache-function.md
+    - name: CompareAssemblyIdentity Function
+      href: compareassemblyidentity-function.md
+    - name: CreateApplicationContext Function
+      href: createapplicationcontext-function.md
+    - name: CreateAssemblyCache Function
+      href: createassemblycache-function.md
+    - name: CreateAssemblyEnum Function
+      href: createassemblyenum-function.md
+    - name: CreateAssemblyNameObject Function
+      href: createassemblynameobject-function.md
+    - name: CreateHistoryReader Function
+      href: createhistoryreader-function.md
+    - name: CreateInstallReferenceEnum Function
+      href: createinstallreferenceenum-function.md
+    - name: GetAppIdAuthority Function
+      href: getappidauthority-function.md
+    - name: GetAssemblyIdentityFromFile Function
+      href: getassemblyidentityfromfile-function.md
+    - name: GetCachePath Function
+      href: getcachepath-function.md
+    - name: GetHistoryFileDirectory Function
+      href: gethistoryfiledirectory-function.md
+    - name: GetIdentityAuthority Function
+      href: getidentityauthority-function.md
+    - name: IsFrameworkAssembly Function
+      href: isframeworkassembly-function.md
+    - name: NukeDownloadedCache Function
+      href: nukedownloadedcache-function.md
+    - name: PreBindAssemblyEx Function
+      href: prebindassemblyex-function.md
+  - name: Fusion Enumerations
+    href: fusion-enumerations.md
+    items:
+    - name: ASM_CACHE_FLAGS Enumeration
+      href: asm-cache-flags-enumeration.md
+    - name: ASM_CMP_FLAGS Enumeration
+      href: asm-cmp-flags-enumeration.md
+    - name: ASM_DISPLAY_FLAGS Enumeration
+      href: asm-display-flags-enumeration.md
+    - name: ASM_NAME Enumeration
+      href: asm-name-enumeration.md
+    - name: AssemblyComparisonResult Enumeration
+      href: assemblycomparisonresult-enumeration.md
+    - name: CREATE_ASM_NAME_OBJ_FLAGS Enumeration
+      href: create-asm-name-obj-flags-enumeration.md
+  - name: Fusion Structures
+    href: fusion-structures.md
+    items:
+    - name: ASSEMBLY_INFO Structure
+      href: assembly-info-structure.md
+    - name: FUSION_INSTALL_REFERENCE Structure
+      href: fusion-install-reference-structure.md
+    - name: IDENTITY_ATTRIBUTE Structure
+      href: identity-attribute-structure.md
+    - name: IDENTITY_ATTRIBUTE_BLOB Structure
+      href: identity-attribute-blob-structure.md

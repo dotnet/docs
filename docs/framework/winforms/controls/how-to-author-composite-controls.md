@@ -18,21 +18,21 @@ Composite controls can be employed in many ways. You can author them as part of 
   
 ### To author a composite control  
   
-1.  Open a new **Windows Application** project called `DemoControlHost`.  
+1. Open a new **Windows Application** project called `DemoControlHost`.  
   
-2.  On the **Project** menu, click **Add User Control**.  
+2. On the **Project** menu, click **Add User Control**.  
   
-3.  In the **Add New Item** dialog box, give the class file (.vb or .cs file) the name you want the composite control to have.  
+3. In the **Add New Item** dialog box, give the class file (.vb or .cs file) the name you want the composite control to have.  
   
-4.  Select the **Add** button to create the class file for the composite control.  
+4. Select the **Add** button to create the class file for the composite control.  
   
-5.  Add controls from the **Toolbox** to the composite control surface.  
+5. Add controls from the **Toolbox** to the composite control surface.  
   
-6.  Place code in event procedures, to handle events raised by the composite control or by its constituent controls.  
+6. Place code in event procedures, to handle events raised by the composite control or by its constituent controls.  
   
-7.  Close the designer for the composite control, and save the file when you are prompted.  
+7. Close the designer for the composite control, and save the file when you are prompted.  
   
-8.  On the **Build** menu, click **Build Solution**.  
+8. On the **Build** menu, click **Build Solution**.  
   
      The project must be built in order for custom controls to appear in the **Toolbox**.  
   
@@ -40,39 +40,40 @@ Composite controls can be employed in many ways. You can author them as part of 
   
 ### To author a control class library  
   
-1.  Open a new **Windows Control Library** project.  
+1. Open a new **Windows Control Library** project.  
   
      By default, the project contains a composite control.  
   
-2.  Add controls and code as described in the procedure above.  
+2. Add controls and code as described in the procedure above.  
   
-3.  Choose a control you do not want inheriting classes to change, and set the **Modifiers** property of this control to **Private**.  
+3. Choose a control you do not want inheriting classes to change, and set the **Modifiers** property of this control to **Private**.  
   
-4.  Build the DLL.  
+4. Build the DLL.  
   
 ### To inherit from a composite control in a control class library  
   
-1.  On the **File** menu, point to **Add** and select **New Project** to add a new **Windows Application** project to the solution.  
+1. On the **File** menu, point to **Add** and select **New Project** to add a new **Windows Application** project to the solution.  
   
-2.  In **Solution Explorer**, right-click the **References** folder for the new project and choose **Add Reference** to open the **Add Reference** dialog box.  
+2. In **Solution Explorer**, right-click the **References** folder for the new project and choose **Add Reference** to open the **Add Reference** dialog box.  
   
-3.  Select the **Projects** tab and double-click your control library project.  
+3. Select the **Projects** tab and double-click your control library project.  
   
-4.  On the **Build** menu, click **Build Solution**.  
+4. On the **Build** menu, click **Build Solution**.  
   
-5.  In **Solution Explorer**, right-click your control library project and select **Add New Item** from the shortcut menu.  
+5. In **Solution Explorer**, right-click your control library project and select **Add New Item** from the shortcut menu.  
   
-6.  Select the **Inherited User Control** template from the **Add New Item** dialog box.  
+6. Select the **Inherited User Control** template from the **Add New Item** dialog box.  
   
-7.  In the **Inheritance Picker** dialog box, double-click the control you want to inherit from.  
+7. In the **Inheritance Picker** dialog box, double-click the control you want to inherit from.  
   
      A new control is added to your project.  
   
-8.  Open the visual designer for the new control and add additional constituent controls.  
+8. Open the visual designer for the new control and add additional constituent controls.  
   
      You can see the constituent controls that were inherited from the composite control in your DLL, and you can alter the properties of controls whose **Modifiers** property is **Public**. You cannot change the properties of the control whose **Modifiers** property is **Private**.  
   
 ## See also
+
 - [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
 - [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
 - [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md)

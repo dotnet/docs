@@ -13,21 +13,21 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 ### To log a handled exception  
   
-1.  Create the method that will generate the exception information.  
+1. Create the method that will generate the exception information.  
   
      [!code-vb[VbVbalrMyApplicationLog#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#9)]  
   
-2.  Use a `Try...Catch` block to catch the exception.  
+2. Use a `Try...Catch` block to catch the exception.  
   
      [!code-vb[VbVbalrMyApplicationLog#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#6)]  
   
-3.  Put the code that could generate an exception in the `Try` block.  
+3. Put the code that could generate an exception in the `Try` block.  
   
      Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception.  
   
      [!code-vb[VbVbalrMyApplicationLog#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#7)]  
   
-4.  In the `Catch` block, use the `My.Application.Log.WriteException` method to write the exception information.  
+4. In the `Catch` block, use the `My.Application.Log.WriteException` method to write the exception information.  
   
      [!code-vb[VbVbalrMyApplicationLog#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#8)]  
   
@@ -37,21 +37,21 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 ### To log an unhandled exception  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**.  
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**.  
   
-2.  Click the **Application** tab.  
+2. Click the **Application** tab.  
   
-3.  Click the **View Application Events** button to open the Code Editor.  
+3. Click the **View Application Events** button to open the Code Editor.  
   
      This opens the ApplicationEvents.vb file.  
   
-4.  Have the ApplicationEvents.vb file open in the Code Editor. On the **General** menu, choose **MyApplication Events**.  
+4. Have the ApplicationEvents.vb file open in the Code Editor. On the **General** menu, choose **MyApplication Events**.  
   
-5.  On the **Declarations** menu, choose **UnhandledException**.  
+5. On the **Declarations** menu, choose **UnhandledException**.  
   
      The application raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event before the main application runs.  
   
-6.  Add the `My.Application.Log.WriteException` method to the `UnhandledException` event handler.  
+6. Add the `My.Application.Log.WriteException` method to the `UnhandledException` event handler.  
   
      [!code-vb[VbVbalrMyApplicationLog#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/MyEventsFake.vb#4)]  
   
@@ -60,6 +60,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
      [!code-vb[VbVbalrMyApplicationLog#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/MyEventsFake.vb#5)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>

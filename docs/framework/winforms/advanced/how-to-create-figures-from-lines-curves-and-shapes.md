@@ -29,6 +29,7 @@ To create a figure, construct a <xref:System.Drawing.Drawing2D.GraphicsPath>, an
  The previous examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - <xref:System.Drawing.Drawing2D.GraphicsPath>
 - [Constructing and Drawing Paths](constructing-and-drawing-paths.md)
 - [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)

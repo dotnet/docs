@@ -41,4 +41,5 @@ typedef struct _SYMLINEDELTA
  **Header:** CorSym.idl  
   
 ## See also
+
 - [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)

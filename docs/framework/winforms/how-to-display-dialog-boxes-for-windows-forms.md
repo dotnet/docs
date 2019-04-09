@@ -17,9 +17,9 @@ You display a dialog box in the same way you display any other form in an applic
   
 ### To display a dialog box  
   
-1.  Navigate to the event handler with which you want to open the dialog box. This can happen when a menu command is selected, when a button is clicked, or when any other event occurs.  
+1. Navigate to the event handler with which you want to open the dialog box. This can happen when a menu command is selected, when a button is clicked, or when any other event occurs.  
   
-2.  In the event handler, add code to open the dialog box. In this example, a button-click event is used to show the dialog box:  
+2. In the event handler, add code to open the dialog box. In this example, a button-click event is used to show the dialog box:  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  

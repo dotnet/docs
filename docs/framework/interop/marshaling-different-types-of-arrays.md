@@ -23,7 +23,7 @@ An array is a reference type in managed code that contains one or more elements 
 |Of integers by value (two-dimensional).|Passes a matrix of integers as an In parameter.|  
 |Of strings by value.|Passes an array of strings as an In parameter.|  
 |Of structures with integers.|Passes an array of structures that contain integers as an In parameter.|  
-|Of structures with strings.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|  
+|Of structures with strings.|Passes an array of structures that contain only strings as an In/Out parameter. Members of the array can be changed.|  
   
 ## Example  
  This sample demonstrates how to pass the following types of arrays:  
@@ -80,7 +80,7 @@ An array is a reference type in managed code that contains one or more elements 
     int TestArrayOfStructs2 (MYPERSON* pPersonArray, int size);  
     ```  
   
- [PinvokeLib.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as6wyhwt(v=vs.100)) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
+ [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains implementations for the previously listed functions and two structure variables, **MYPOINT** and **MYPERSON**. The structures contain the following elements:  
   
 ```  
 typedef struct _MYPOINT  
@@ -109,5 +109,6 @@ typedef struct _MYPERSON
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   
 ## See also
+
 - [Platform invoke data types](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)

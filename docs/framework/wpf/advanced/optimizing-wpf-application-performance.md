@@ -38,6 +38,7 @@ This section is intended as a reference for [!INCLUDE[TLA#tla_winclient](../../.
  [Application Startup Time](application-startup-time.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.RenderOptions>
 - <xref:System.Windows.Media.RenderCapability>
 - [Graphics Rendering Tiers](graphics-rendering-tiers.md)

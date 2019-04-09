@@ -32,4 +32,5 @@ The following examples show how to decode and encode a [!INCLUDE[TLA#tla_tiff](.
  [!code-vb[TiffBitmapDecoderEncoder#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#4)]  
   
 ## See also
+
 - [Imaging Overview](imaging-overview.md)

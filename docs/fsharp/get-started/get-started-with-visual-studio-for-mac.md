@@ -13,7 +13,7 @@ One of the most basic projects in Visual Studio for Mac is the Console Applicati
 
 1. On the **File** menu, point to **New Solution**.
 
-2.  In the New Project dialog, there are 2 different templates for Console Application.  There is one under Other -> .NET which targets the .NET Framework.  The other template is under .NET Core -> App which targets .NET Core.  Either template should work for the purpose of this article.
+2. In the New Project dialog, there are 2 different templates for Console Application.  There is one under Other -> .NET which targets the .NET Framework.  The other template is under .NET Core -> App which targets .NET Core.  Either template should work for the purpose of this article.
 
 3. Under console app, change C# to F# if needed.  Choose the **Next** button to move forward!  
 

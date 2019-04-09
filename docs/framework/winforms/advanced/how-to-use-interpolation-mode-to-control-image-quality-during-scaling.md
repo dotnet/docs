@@ -32,7 +32,7 @@ The interpolation mode of a <xref:System.Drawing.Graphics> object influences the
   
  The following illustration shows the original image and the three smaller images.  
   
- ![Image with Varied Interpolation Settings](./media/csgrapes1.png "csgrapes1")  
+ ![Screenshot that shows an image with varied interpolation settings.](./media/how-to-use-interpolation-mode-to-control-image-quality-during-scaling/varied-interpolation-settings.png)  
   
  [!code-csharp[System.Drawing.WorkingWithImages#81](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#81)]
  [!code-vb[System.Drawing.WorkingWithImages#81](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#81)]  
@@ -41,5 +41,6 @@ The interpolation mode of a <xref:System.Drawing.Graphics> object influences the
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)
 - [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

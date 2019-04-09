@@ -32,7 +32,7 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
  ![Threading model while drawing a stroke.](./media/inkthreading-drawingink.png "InkThreading_DrawingInk")  
   
-1.  Actions occurring while the user draws the stroke  
+1. Actions occurring while the user draws the stroke  
   
     1.  When the user draws a stroke, the stylus points come in on the pen thread.  Stylus plug-ins, including the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, accept the stylus points on the pen thread and have the chance to modify them before the <xref:System.Windows.Controls.InkCanvas> receives them.  
   
@@ -40,7 +40,7 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
     3.  The <xref:System.Windows.Controls.InkCanvas> receives the stylus points on the UI thread.  
   
-2.  Actions occurring after the user ends the stroke  
+2. Actions occurring after the user ends the stroke  
   
     1.  When the user finishes drawing the stroke, the <xref:System.Windows.Controls.InkCanvas> creates a <xref:System.Windows.Ink.Stroke> object and adds it to the <xref:System.Windows.Controls.InkPresenter>, which statically renders it.  
   
@@ -55,13 +55,13 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
  In the previous diagram, the following behavior takes place:  
   
-1.  `StylusPlugin1` modifies the values for x and y.  
+1. `StylusPlugin1` modifies the values for x and y.  
   
-2.  <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> receives the modified stylus points and renders them on the dynamic rendering thread.  
+2. <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> receives the modified stylus points and renders them on the dynamic rendering thread.  
   
-3.  `StylusPlugin2` receives the modified stylus points and further modifies the values for x and y.  
+3. `StylusPlugin2` receives the modified stylus points and further modifies the values for x and y.  
   
-4.  The application collects the stylus points, and, when the user finishes the stroke, statically renders the stroke.  
+4. The application collects the stylus points, and, when the user finishes the stroke, statically renders the stroke.  
   
  Suppose that `stylusPlugin1` restricts the stylus points to a rectangle and `stylusPlugin2` translates the stylus points to the right.  In the previous scenario, the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> receives the restricted stylus points, but not the translated stylus points.  When the user draws the stroke, the stroke is rendered within the bounds of the rectangle, but the stroke doesn't appear to be translated until the user lifts the pen.  
   
@@ -77,15 +77,15 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
  ![Ink threading diagram](./media/inkthreading-visualtree.png "InkThreading_VisualTree")  
   
-1.  The user begins the stroke.  
+1. The user begins the stroke.  
   
     1.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> creates the visual tree.  
   
-2.  The user is drawing the stroke.  
+2. The user is drawing the stroke.  
   
     1.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> builds the visual tree.  
   
-3.  The user ends the stroke.  
+3. The user ends the stroke.  
   
     1.  The <xref:System.Windows.Controls.InkPresenter> adds the stroke to its visual tree.  
   

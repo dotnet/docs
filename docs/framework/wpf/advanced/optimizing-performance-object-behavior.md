@@ -14,9 +14,7 @@ ms.assetid: 73aa2f47-1d73-439a-be1f-78dc4ba2b5bd
 ---
 # Optimizing Performance: Object Behavior
 Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects will help you make the right tradeoffs between functionality and performance.  
-  
 
-  
 <a name="Not_Removing_Event_Handlers"></a>   
 ## Not Removing Event Handlers on Objects may Keep Objects Alive  
  The delegate that an object passes to its event is effectively a reference to that object. Therefore, event handlers can keep objects alive longer than expected. When performing clean up of an object that has registered to listen to an object's event, it is essential to remove that delegate before releasing the object. Keeping unneeded objects alive increases the application's memory usage. This is especially true when the object is the root of a logical tree or a visual tree.  
@@ -105,6 +103,7 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
 |<xref:System.Windows.Controls.VirtualizingStackPanel>|46|  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)

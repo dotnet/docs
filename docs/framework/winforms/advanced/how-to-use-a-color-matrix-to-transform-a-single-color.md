@@ -20,9 +20,9 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
   
  For example, suppose you want to start with the color (0.2, 0.0, 0.4, 1.0) and apply the following transformations:  
   
-1.  Double the red component  
+1. Double the red component  
   
-2.  Add 0.2 to the red, green, and blue components  
+2. Add 0.2 to the red, green, and blue components  
   
  The following matrix multiplication will perform the pair of transformations in the order listed.  
   
@@ -45,11 +45,11 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
   
  The code in the following example uses the following steps to perform the recoloring:  
   
-1.  Initialize a <xref:System.Drawing.Imaging.ColorMatrix> object.  
+1. Initialize a <xref:System.Drawing.Imaging.ColorMatrix> object.  
   
-2.  Create an <xref:System.Drawing.Imaging.ImageAttributes> object and pass the <xref:System.Drawing.Imaging.ColorMatrix> object to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+2. Create an <xref:System.Drawing.Imaging.ImageAttributes> object and pass the <xref:System.Drawing.Imaging.ColorMatrix> object to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
-3.  Pass the <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method of a <xref:System.Drawing.Graphics> object.  
+3. Pass the <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method of a <xref:System.Drawing.Graphics> object.  
   
  [!code-csharp[System.Drawing.RecoloringImages#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#21)]
  [!code-vb[System.Drawing.RecoloringImages#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#21)]  
@@ -58,5 +58,6 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Recoloring Images](recoloring-images.md)
 - [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md)

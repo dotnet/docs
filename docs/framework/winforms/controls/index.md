@@ -32,4 +32,3 @@ As you design and modify the user interface of your Windows Forms applications, 
 ## Related Sections  
  [Client Applications](../../develop-client-apps.md)  
  Provides an overview of developing Windows-based applications.  
-  

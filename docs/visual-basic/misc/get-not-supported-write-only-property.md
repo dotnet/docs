@@ -10,9 +10,9 @@ A property cannot be read because it is write only.
   
 ## To correct this error  
   
-1.  Check the property and determine under what conditions it can be set.  
+1. Check the property and determine under what conditions it can be set.  
   
-2.  Remove the reference to the property.  
+2. Remove the reference to the property.  
   
 ## See also
 

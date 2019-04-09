@@ -20,7 +20,7 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
   
  The following image shows an insertion mark:  
   
- ![A ListView Insertion Mark](./media/listviewinsertion.gif "ListViewInsertion")  
+ ![Screenshot that shows a ListView insertion mark.](./media/how-to-display-an-insertion-mark-in-a-windows-forms-listview-control/listview-insertion-mark.gif "ListViewInsertion")  
   
  The following code example demonstrates how to use this feature.  
   
@@ -37,6 +37,7 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView>
 - <xref:System.Windows.Forms.ListView.InsertionMark%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ListViewInsertionMark>

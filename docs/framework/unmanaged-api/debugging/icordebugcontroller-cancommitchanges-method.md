@@ -22,4 +22,3 @@ ms.author: "ronpet"
 `CanCommitChanges` is obsolete. Do not call this method.  
   
 ## See also
-

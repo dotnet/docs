@@ -17,7 +17,7 @@ There are times when you might want to create a user control that is invisible a
   
 ### To make your control invisible at run time  
   
-1.  Set the <xref:System.Windows.Forms.Control.Visible%2A> property to `false`.  
+1. Set the <xref:System.Windows.Forms.Control.Visible%2A> property to `false`.  
   
     ```vb  
     ' To set the Visible property from within your object's own code.  
@@ -34,6 +34,7 @@ There are times when you might want to create a user control that is invisible a
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.Control.Visible%2A>
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
 - [How to: Give Your Control a Transparent Background](how-to-give-your-control-a-transparent-background.md)

@@ -15,10 +15,11 @@ The `System.MarshalByRefObject` class enables applications that support remote a
   
 ## To correct this error  
   
-1.  Check the reference to make sure the member being referred to is valid.  
+1. Check the reference to make sure the member being referred to is valid.  
   
-2.  Explicitly qualify the member with the `Me` keyword.  
+2. Explicitly qualify the member with the `Me` keyword.  
   
 ## See also
+
 - <xref:System.MarshalByRefObject>
 - [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)

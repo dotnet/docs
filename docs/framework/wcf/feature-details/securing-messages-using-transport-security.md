@@ -91,6 +91,7 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
  The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.  
   
 ## See also
+
 - [Queues Overview](queues-overview.md)
 - [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
 - [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

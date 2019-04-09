@@ -45,5 +45,6 @@ ms.assetid: a01780f9-20d5-4f5f-808f-c790c9a007a5
 |Enter a <xref:System.DBNull.Value?displayProperty=nameWithType> value into a cell when in edit mode.|CTRL+0|  
   
 ## See also
+
 - [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)
 - [DataGrid Control](datagrid-control-windows-forms.md)

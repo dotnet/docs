@@ -12,9 +12,7 @@ ms.assetid: f5b182f3-c5c7-4cbe-9f2f-65e690d08255
 ---
 # Painting with Solid Colors and Gradients Overview
 This topic describes how to use <xref:System.Windows.Media.SolidColorBrush>, <xref:System.Windows.Media.LinearGradientBrush>, and <xref:System.Windows.Media.RadialGradientBrush> objects to paint with solid colors, linear gradients, and radial gradients.  
-  
 
-  
 <a name="solidcolor"></a>   
 ## Painting an Area with a Solid Color  
  One of the most common operations in any platform is to paint an area with a solid <xref:System.Windows.Media.Color>. To accomplish this task, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides the <xref:System.Windows.Media.SolidColorBrush> class. The following sections describe the different ways to paint with a <xref:System.Windows.Media.SolidColorBrush>.  
@@ -163,6 +161,7 @@ RadialGradientBrushes with different GradientOrigin, Center, RadiusX, and Radius
  <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, and <xref:System.Windows.Media.VisualBrush> classes enable you to paint an area with images, drawings, or visuals. For information about painting with images, drawings, and patterns, see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.Brush>
 - <xref:System.Windows.Media.SolidColorBrush>
 - <xref:System.Windows.Media.LinearGradientBrush>

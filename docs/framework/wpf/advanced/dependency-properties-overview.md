@@ -191,6 +191,7 @@ Typically, you would not want styles to always apply and to obscure even a local
 - Dependency properties should generally be considered to be public properties, accessible or at least discoverable by any caller that has access to an instance. For more information, see [Dependency Property Security](dependency-property-security.md).
 
 ## See also
+
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Read-Only Dependency Properties](read-only-dependency-properties.md)
 - [XAML Overview (WPF)](xaml-overview-wpf.md)

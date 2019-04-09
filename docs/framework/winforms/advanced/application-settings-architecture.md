@@ -94,11 +94,11 @@ This topic describes how the Application Settings architecture works, and explor
 ### Settings Serialization  
  When <xref:System.Configuration.LocalFileSettingsProvider> must save settings to disk, it performs the following actions:  
   
-1.  Uses reflection to examine all of the properties defined on your <xref:System.Configuration.ApplicationSettingsBase> derived class, finding those that are applied with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>.  
+1. Uses reflection to examine all of the properties defined on your <xref:System.Configuration.ApplicationSettingsBase> derived class, finding those that are applied with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>.  
   
-2.  Serializes the property to disk. It first attempts to call the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> or <xref:System.ComponentModel.TypeConverter.ConvertFromString%2A> on the type's associated <xref:System.ComponentModel.TypeConverter>. If this does not succeed, it uses XML serialization instead.  
+2. Serializes the property to disk. It first attempts to call the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> or <xref:System.ComponentModel.TypeConverter.ConvertFromString%2A> on the type's associated <xref:System.ComponentModel.TypeConverter>. If this does not succeed, it uses XML serialization instead.  
   
-3.  Determines which settings go in which files, based on the setting's attribute.  
+3. Determines which settings go in which files, based on the setting's attribute.  
   
  If you implement your own settings class, you can use the <xref:System.Configuration.SettingsSerializeAsAttribute> to mark a setting for either binary or custom serialization using the <xref:System.Configuration.SettingsSerializeAs> enumeration. For more information on creating your own settings class in code, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
@@ -141,6 +141,7 @@ This topic describes how the Application Settings architecture works, and explor
  Your provider does not need to support all of the settings attributes defined in the <xref:System.Configuration?displayProperty=nameWithType> namespace, though it must at a minimum support <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>, and should also support <xref:System.Configuration.DefaultSettingValueAttribute>. For those attributes that it does not support, your provider should just fail without notification; it should not throw an exception. If the settings class uses an invalid combination of attributes, however — such as applying <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute> to the same setting — your provider should throw an exception and cease operation.  
   
 ## See also
+
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
 - <xref:System.Configuration.LocalFileSettingsProvider>

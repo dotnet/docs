@@ -125,6 +125,7 @@ public static byte[] GetPhoto(string filePath)
 ```  
   
 ## See also
+
 - [Using Commands to Modify Data](../../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)
 - [Retrieving Binary Data](../../../../../docs/framework/data/adonet/retrieving-binary-data.md)
 - [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)

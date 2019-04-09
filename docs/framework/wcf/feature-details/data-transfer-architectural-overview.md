@@ -101,15 +101,15 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
   
  For this to be possible, a mapping must be defined between the entire `Message` instance and an XML Infoset. Such a mapping, in fact, exists: WCF uses the SOAP standard to define this mapping. When a `Message` instance is written out as an XML Infoset, the resulting Infoset is the valid SOAP envelope that contains the message. Thus, `WriteMessage` would normally perform the following steps:  
   
-1.  Write the SOAP envelope element opening tag.  
+1. Write the SOAP envelope element opening tag.  
   
-2.  Write the SOAP header element opening tag, write out all of the headers, and close the header element.  
+2. Write the SOAP header element opening tag, write out all of the headers, and close the header element.  
   
-3.  Write the SOAP body element opening tag.  
+3. Write the SOAP body element opening tag.  
   
-4.  Call `WriteBodyContents` or an equivalent method to write out the body.  
+4. Call `WriteBodyContents` or an equivalent method to write out the body.  
   
-5.  Close the body and envelope elements.  
+5. Close the body and envelope elements.  
   
  The preceding steps are closely tied to the SOAP standard. This is complicated by the fact that multiple versions of SOAP exist, for example, it is impossible to write out the SOAP envelope element correctly without knowing the SOAP version in use. Also, in some cases, it may be desirable to turn off this complex SOAP-specific mapping completely.  
   
@@ -164,11 +164,11 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
   
  For this purpose, the <xref:System.Xml.IStreamProvider> interface is used. The interface has a <xref:System.Xml.IStreamProvider.GetStream> method that returns the stream to be written. The correct way to write out a streamed message body in <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> is as follows:  
   
-1.  Write any necessary information preceding the stream (for example, the opening XML tag).  
+1. Write any necessary information preceding the stream (for example, the opening XML tag).  
   
-2.  Call the `WriteValue` overload on the <xref:System.Xml.XmlDictionaryWriter> that takes an <xref:System.Xml.IStreamProvider>, with an `IStreamProvider` implementation that returns the stream to be written.  
+2. Call the `WriteValue` overload on the <xref:System.Xml.XmlDictionaryWriter> that takes an <xref:System.Xml.IStreamProvider>, with an `IStreamProvider` implementation that returns the stream to be written.  
   
-3.  Write any information following the stream (for example, the closing XML tag).  
+3. Write any information following the stream (for example, the closing XML tag).  
   
  With this approach, the XML writer has a choice of when to call <xref:System.Xml.IStreamProvider.GetStream> and write out the streamed data. For example, the textual and binary XML writers will call it immediately and write out the streamed contents in-between the start and end tags. The MTOM writer may decide to call <xref:System.Xml.IStreamProvider.GetStream> later, when it is ready to write the appropriate part of the message.  
   
@@ -267,4 +267,5 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> and <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> are the operation behaviors responsible for plugging in the message formatters for the `DataContractSerializer` and the `XmlSerializer`, respectively. The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> behavior can actually operate with any serializer that derives from <xref:System.Runtime.Serialization.XmlObjectSerializer>, including the <xref:System.Runtime.Serialization.NetDataContractSerializer> (described in detail in Using Stand-Alone Serialization). The behavior calls one of the `CreateSerializer` virtual method overloads to obtain the serializer. To plug in a different serializer, create a new <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> subclass and override both `CreateSerializer` overloads.  
   
 ## See also
+
 - [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

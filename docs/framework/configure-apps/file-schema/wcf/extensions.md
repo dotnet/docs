@@ -40,4 +40,5 @@ This configuration element contains a collection of XML elements that contain cu
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

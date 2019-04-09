@@ -17,6 +17,7 @@ This example demonstrates how to apply a <xref:System.Windows.Media.Transform> t
  [!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmapinline1)]  
   
 ## See also
+
 - <xref:System.Windows.Media.Imaging.BitmapSource>
 - [Imaging Overview](imaging-overview.md)
 - [Rotate an Image](../controls/how-to-rotate-an-image.md)

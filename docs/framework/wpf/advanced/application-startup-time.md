@@ -117,6 +117,7 @@ The amount of time that is required for a WPF application to start can vary grea
  Instead of using XAML to set the <xref:System.Windows.FrameworkElement.DataContext%2A> declaratively for the main window, consider setting it programmatically in the <xref:System.Windows.Application.OnActivated%2A> method.  
   
 ## See also
+
 - <xref:System.Windows.SplashScreen>
 - <xref:System.AppDomain>
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>

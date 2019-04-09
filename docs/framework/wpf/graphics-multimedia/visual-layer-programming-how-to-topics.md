@@ -21,6 +21,7 @@ The topics in this section demonstrate how to use the visual layer for hit-testi
  [Render on a Per Frame Interval Using CompositionTarget](how-to-render-on-a-per-frame-interval-using-compositiontarget.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Visual>
 - <xref:System.Windows.Media.VisualTreeHelper>
 - <xref:System.Windows.Media.DrawingVisual>

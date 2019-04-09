@@ -46,6 +46,7 @@ If the switch is not present or if it is set to any other value, the optimizatio
 If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify printer settings, the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> control will not improve even if an optimization configuration switch is set.  
 
 ## See also
+
 - <xref:System.Windows.Forms.PrintPreviewDialog>
 - [PrintPreviewControl Control Overview](printpreviewcontrol-control-overview-windows-forms.md)
 - [PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)

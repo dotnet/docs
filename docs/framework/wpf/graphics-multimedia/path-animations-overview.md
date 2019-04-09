@@ -84,6 +84,7 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
  For more information about the path syntax that is used in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example, see the [Path Markup Syntax](path-markup-syntax.md) overview.  
   
 ## See also
+
 - [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
 - [Path Markup Syntax](path-markup-syntax.md)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)

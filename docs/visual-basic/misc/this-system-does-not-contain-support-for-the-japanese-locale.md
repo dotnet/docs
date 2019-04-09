@@ -10,7 +10,7 @@ You are attempting to use the `VbStrConv.Japanese` enumeration member, but your 
   
 ## To correct this error  
   
-1.  Upgrade the machine to support the Japanese locale, or run the application on a machine that supports the locale.  
+1. Upgrade the machine to support the Japanese locale, or run the application on a machine that supports the locale.  
   
 ## See also
 

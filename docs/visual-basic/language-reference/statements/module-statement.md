@@ -91,6 +91,7 @@ End Module
  [!code-vb[VbVbalrStatements#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#69)]  
   
 ## See also
+
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
 - [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)

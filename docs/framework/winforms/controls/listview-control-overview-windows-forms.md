@@ -42,6 +42,7 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list o
  The <xref:System.Windows.Forms.ListView> control also supports the visual styles and other features available on the Windows XP platform, including grouping, tile view, and insertion marks.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView>
 - [ListView Control](listview-control-windows-forms.md)
 - [How to: Add and Remove Items with the Windows Forms ListView Control](how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)

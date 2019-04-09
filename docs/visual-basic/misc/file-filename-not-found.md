@@ -10,7 +10,7 @@ A file name is incorrect or the file does not exist.
   
 ## To correct this error  
   
-1.  Ensure that the file name is correct and that it exists.  
+1. Ensure that the file name is correct and that it exists.  
   
 ## See also
 

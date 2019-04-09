@@ -16,4 +16,5 @@ This example shows how to use <xref:System.Windows.Documents.Hyperlink> in conju
  [!code-xaml[HOWTONavigationMailToSnippet#MailToMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
   
 ## See also
+
 - [Pack URIs in WPF](pack-uris-in-wpf.md)

@@ -49,5 +49,6 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
+
 - [Debugging](index.md)
 - [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)

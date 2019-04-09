@@ -30,7 +30,6 @@ This tutorial shows how to write F# code to do some common tasks using Azure Tab
 
 To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account) or [Azure Cosmos DB account](https://azure.microsoft.com/try/cosmosdb/).
 
-
 ## Create an F# Script and Start F# Interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `tables.fsx`, in your F# development environment.
@@ -122,7 +121,6 @@ You now print the results:
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L84-L85)]
 
-
 ### Retrieve a range of entities in a partition
 
 If you don't want to query all the entities in a partition, you can specify a range by combining the partition key filter with a row key filter. Here, you use two filters to get all entities in the "Smith" partition where the row key (first name) starts with a letter earlier than "M" in the alphabet.
@@ -142,7 +140,6 @@ You can write a query to retrieve a single, specific entity. Here, you use a `Ta
 You now print the results:
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L113-L115)]
-
 
 ### Replace an entity
 

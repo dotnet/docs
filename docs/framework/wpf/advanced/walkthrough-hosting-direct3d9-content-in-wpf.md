@@ -42,9 +42,9 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 #### To import Direct3D9 content  
   
-1.  Open MainWindow.xaml.cs in the Code Editor.  
+1. Open MainWindow.xaml.cs in the Code Editor.  
   
-2.  Replace the automatically generated code with the following code.  
+2. Replace the automatically generated code with the following code.  
   
      [!code-csharp[System.Windows.Interop.D3DImage#1](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#1)]  
   
@@ -53,18 +53,19 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 #### To host the Direct3D9 content  
   
-1.  In MainWindow.xaml, replace the automatically generated XAML with the following XAML.  
+1. In MainWindow.xaml, replace the automatically generated XAML with the following XAML.  
   
      [!code-xaml[System.Windows.Interop.D3DImage#10](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml#10)]  
   
-2.  Build the project.  
+2. Build the project.  
   
-3.  Copy the DLL that contains the Direct3D9 content to the bin/Debug folder.  
+3. Copy the DLL that contains the Direct3D9 content to the bin/Debug folder.  
   
-4.  Press F5 to run the project.  
+4. Press F5 to run the project.  
   
      The Direct3D9 content appears within the WPF application.  
   
 ## See also
+
 - <xref:System.Windows.Interop.D3DImage>
 - [Performance Considerations for Direct3D9 and WPF Interoperability](performance-considerations-for-direct3d9-and-wpf-interoperability.md)

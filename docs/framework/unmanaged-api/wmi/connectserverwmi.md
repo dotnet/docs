@@ -100,7 +100,6 @@ For local access to the default namespace, `strNetworkResource` can be a simple 
 
 `strUser` cannot be an empty string. If the domain is specified in `strAuthority`, it must not also be included in `strUser`, or the function returns `WBEM_E_INVALID_PARAMETER`.
 
-
 ## Requirements
 
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).

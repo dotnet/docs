@@ -112,9 +112,9 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
 ### To set up, build, and run the sample  
   
-1.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+1. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-2.  Ensure that you have configured the [ASP.NET Application Services Database](https://go.microsoft.com/fwlink/?LinkId=94997).  
+2. Ensure that you have configured the [ASP.NET Application Services Database](https://go.microsoft.com/fwlink/?LinkId=94997).  
   
     > [!NOTE]
     >  If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Application Services Database as well as in the Web.config connection string.  
@@ -122,35 +122,35 @@ The Membership and Role Provider sample demonstrates how a service can use the [
     > [!NOTE]
     >  The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] worker process account must have permissions on the database that is created in this step. Use the sqlcmd utility or SQL Server Management Studio to do this.  
   
-3.  To run the sample in a single- or cross-computer configuration, use the following instructions.  
+3. To run the sample in a single- or cross-computer configuration, use the following instructions.  
   
 ### To run the sample on the same computer  
   
-1.  Make sure that the path includes the folder where Makecert.exe is located.  
+1. Make sure that the path includes the folder where Makecert.exe is located.  
   
-2.  Run Setup.bat from the sample install folder in a Developer Command Prompt for Visual Studio run with administrator privileges. This installs the service certificates required for running the sample.  
+2. Run Setup.bat from the sample install folder in a Developer Command Prompt for Visual Studio run with administrator privileges. This installs the service certificates required for running the sample.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across computers  
   
-1.  Create a directory on the service computer. Create a virtual application named servicemodelsamples for this directory by using the Internet Information Services (IIS) management tool.  
+1. Create a directory on the service computer. Create a virtual application named servicemodelsamples for this directory by using the Internet Information Services (IIS) management tool.  
   
-2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, GetComputerName.vbs, and Cleanup.bat files to the service computer.  
+2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, GetComputerName.vbs, and Cleanup.bat files to the service computer.  
   
-3.  Create a directory on the client computer for the client binaries.  
+3. Create a directory on the client computer for the client binaries.  
   
-4.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+4. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, open a Developer Command Prompt for Visual Studio with administrative privileges and run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
+5. On the server, open a Developer Command Prompt for Visual Studio with administrative privileges and run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
-6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), which is the same as the fully-qualified domain name of the computer.  
+6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), which is the same as the fully-qualified domain name of the computer.  
   
-7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
+7. Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service.  
   
 9. On the client, open a Developer Command Prompt for Visual Studio with administrative privileges and run ImportServiceCert.bat. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
   
@@ -191,5 +191,3 @@ The Membership and Role Provider sample demonstrates how a service can use the [
     ```  
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople  
     ```  
-  
-## See also

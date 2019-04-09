@@ -60,21 +60,21 @@ This sample contains two client applications: ImperativeCodeClientSample and Des
 
 ### Run the ImperativeCodeClientSample application
 
-1.  Using Visual Studio, open the *Policy4sample.sln* solution file.
+1. Using Visual Studio, open the *Policy4sample.sln* solution file.
 
-2.  In **Solution Explorer**, right-click the **ImperativeCodeClientSample** project and then select **Set as startup project**.
+2. In **Solution Explorer**, right-click the **ImperativeCodeClientSample** project and then select **Set as startup project**.
 
-3.  To run the project, press **Ctrl**+**F5**.
+3. To run the project, press **Ctrl**+**F5**.
 
 ### Run the DesignerClientSample application
 
-1.  Using Visual Studio, open the *Policy4sample.sln* solution file.
+1. Using Visual Studio, open the *Policy4sample.sln* solution file.
 
-2.  In **Solution Explorer**, right-click the **DesignerClientSample** project and then select **Set as startup project**.
+2. In **Solution Explorer**, right-click the **DesignerClientSample** project and then select **Set as startup project**.
 
-3.  Press **Ctrl**+**Shift**+**B** to compile the project.
+3. Press **Ctrl**+**Shift**+**B** to compile the project.
 
-4.  Press **Ctrl**+**F5** to run the project.
+4. Press **Ctrl**+**F5** to run the project.
 
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.

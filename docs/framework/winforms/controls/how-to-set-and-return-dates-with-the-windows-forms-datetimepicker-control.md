@@ -67,5 +67,6 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
     ```  
   
 ## See also
+
 - [DateTimePicker Control](datetimepicker-control-windows-forms.md)
 - [How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control](display-a-date-in-a-custom-format-with-wf-datetimepicker-control.md)

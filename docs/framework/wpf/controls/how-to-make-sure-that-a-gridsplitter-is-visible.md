@@ -26,5 +26,6 @@ This example shows how to make sure a <xref:System.Windows.Controls.GridSplitter
  [!code-xaml[GridSplitterSnips#GridSplitterMargin](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#gridsplittermargin)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.GridSplitter>
 - [How-to Topics](gridsplitter-how-to-topics.md)

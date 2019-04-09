@@ -10,7 +10,7 @@ A conversion attempted to convert a variable, such as a string, to a numeric val
   
 ## To correct this error  
   
-1.  Find a conversion that is meaningful.  
+1. Find a conversion that is meaningful.  
   
 ## See also
 

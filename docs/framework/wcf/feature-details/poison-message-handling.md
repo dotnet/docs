@@ -60,20 +60,18 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
  The application may require some kind of automated handling of poison messages that moves the poison messages to a poison message queue so that the service can access the rest of the messages in the queue. The only scenario for using the error-handler mechanism to listen for poison-message exceptions is when the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling%2A> setting is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>. The poison-message sample for Message Queuing 3.0 demonstrates this behavior. The following outlines the steps to take to handle poison messages, including best practices:  
   
-1.  Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+1. Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
-2.  If required, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
+2. If required, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
   
      [!code-csharp[S_UE_MSMQ_Poison#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/poisonerrorhandler.cs#2)]  
   
-3.  Create a `PoisonBehaviorAttribute` that the service behavior can use. The behavior installs the `IErrorHandler` on the dispatcher. See the following code example.  
+3. Create a `PoisonBehaviorAttribute` that the service behavior can use. The behavior installs the `IErrorHandler` on the dispatcher. See the following code example.  
   
      [!code-csharp[S_UE_MSMQ_Poison#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/poisonbehaviorattribute.cs#3)]  
   
-4.  Ensure that your service is annotated with the poison behavior attribute.  
-  
-  
-  
+4. Ensure that your service is annotated with the poison behavior attribute.  
+
  In addition, if the `ReceiveErrorHandling` is set to `Fault`, the `ServiceHost` faults when encountering the poison message. You can hook up to the faulted event and shut down the service, take corrective actions, and restart. For example, the `LookupId` in the <xref:System.ServiceModel.MsmqPoisonMessageException> propagated to the `IErrorHandler` can be noted and when the service host faults, you could use the `System.Messaging` API to receive the message from the queue using the `LookupId` to remove the message from the queue and store the message in some external store or another queue. You can then restart `ServiceHost` to resume normal processing. The [Poison Message Handling in MSMQ 4.0](../../../../docs/framework/wcf/samples/poison-message-handling-in-msmq-4-0.md) demonstrates this behavior.  
   
 ## Transaction Time-Out and Poison Messages  
@@ -100,6 +98,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 -   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
   
 ## See also
+
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
 - [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)
 - [Specifying and Handling Faults in Contracts and Services](../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)

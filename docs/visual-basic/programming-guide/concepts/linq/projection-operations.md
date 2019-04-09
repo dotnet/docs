@@ -79,11 +79,11 @@ MsgBox(sb.ToString())
   
  This illustration depicts how `Select()` returns a collection that has the same number of elements as the source collection.  
   
- ![Conceptual illustration of the action of Select&#40;&#41;](../../../../csharp/programming-guide/concepts/linq/media/selectaction.png "SelectAction")  
+ ![Graphic that shows the action of Select&#40;&#41;](./media/projection-operations/select-action-graphic.png)  
   
  This illustration depicts how `SelectMany()` concatenates the intermediate sequence of arrays into one final result value that contains each value from each intermediate array.  
   
- ![Graphic showing the action of SelectMany&#40;&#41;.](../../../../csharp/programming-guide/concepts/linq/media/selectmany.png "SelectMany")  
+ ![Graphic showing the action of SelectMany&#40;&#41;.](./media/projection-operations/select-many-action-graphic.png )  
   
 ### Code Example  
  The following example compares the behavior of `Select()` and `SelectMany()`. The code creates a "bouquet" of flowers by taking the first two items from each list of flower names in the source collection. In this example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is itself a collection of values. This requires the extra `For Each` loop in order to enumerate each string in each sub-sequence.  
@@ -165,6 +165,7 @@ End Sub
 ```  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Select Clause](../../../../visual-basic/language-reference/queries/select-clause.md)

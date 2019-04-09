@@ -21,11 +21,11 @@ The [FontDialog](fontdialog-component-windows-forms.md) component allows users t
   
 ### To select font properties using the FontDialog Component  
   
-1.  Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
+1. Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
   
-2.  Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
+2. Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
   
-3.  Use the <xref:System.Windows.Forms.FontDialog.Font%2A> property to set the desired font.  
+3. Use the <xref:System.Windows.Forms.FontDialog.Font%2A> property to set the desired font.  
   
      In the example below, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens a <xref:System.Windows.Forms.FontDialog> component. When a font is chosen and the user clicks **OK**, the <xref:System.Windows.Forms.FontDialog.Font%2A> property of a <xref:System.Windows.Forms.TextBox> control that is on the form is set to the chosen font. The example assumes your form has a <xref:System.Windows.Forms.Button> control, a  <xref:System.Windows.Forms.TextBox> control, and a <xref:System.Windows.Forms.FontDialog> component.  
   
@@ -71,5 +71,6 @@ The [FontDialog](fontdialog-component-windows-forms.md) component allows users t
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.FontDialog>
 - [FontDialog Component](fontdialog-component-windows-forms.md)

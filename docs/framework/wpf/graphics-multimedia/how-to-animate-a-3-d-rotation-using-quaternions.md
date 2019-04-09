@@ -24,6 +24,7 @@ This example shows how to animate a rotation of a 3-D object using quaternions.
  [!code-xaml[Animation3DGallery_snip#QuaternionAnimationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationExample.xaml#quaternionanimationexamplewholepage)]  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Create a 3-D Scene](how-to-create-a-3-d-scene.md)
 - [3-D Graphics Overview](3-d-graphics-overview.md)

@@ -25,13 +25,14 @@ Namespace or type specified in the project-level Imports '\<qualifiedelementname
   
 ## To correct this error  
   
-1.  Open the **Project Designer** and switch to the **Reference** page.  
+1. Open the **Project Designer** and switch to the **Reference** page.  
   
-2.  In the **Imported namespaces** section, verify that the containing element is accessible from your project.  
+2. In the **Imported namespaces** section, verify that the containing element is accessible from your project.  
   
-3.  Verify that the containing element exposes at least one `Public` member.  
+3. Verify that the containing element exposes at least one `Public` member.  
   
 ## See also
+
 - [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
 - [Public](../../../visual-basic/language-reference/modifiers/public.md)

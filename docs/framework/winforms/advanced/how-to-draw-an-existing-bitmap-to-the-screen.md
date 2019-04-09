@@ -16,9 +16,9 @@ You can easily draw an existing image on the screen. First you need to create a 
 ## Example  
  This example creates a <xref:System.Drawing.Bitmap> object from a JPEG file and then draws the bitmap with its upper-left corner at (60, 10).  
   
- The following illustration shows the bitmap drawn at the specified location.  
+ The following illustration shows the bitmap drawn at the specified location:  
   
- ![Image Position](./media/csimageposition1.png "csimageposition1")  
+ ![Screenshot that shows an image at a specified position.](./media/how-to-draw-an-existing-bitmap-to-the-screen/bitmap-specified-position.png)  
   
  [!code-csharp[System.Drawing.WorkingWithImages#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#21)]
  [!code-vb[System.Drawing.WorkingWithImages#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#21)]  
@@ -27,5 +27,6 @@ You can easily draw an existing image on the screen. First you need to create a 
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

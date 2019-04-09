@@ -28,13 +28,13 @@ The **-lib** option specifies the location of assemblies referenced by means of 
 ## Remarks  
  The compiler searches for assembly references that are not fully qualified in the following order:  
   
-1.  Current working directory. This is the directory from which the compiler is invoked.  
+1. Current working directory. This is the directory from which the compiler is invoked.  
   
-2.  The common language runtime system directory.  
+2. The common language runtime system directory.  
   
-3.  Directories specified by **-lib**.  
+3. Directories specified by **-lib**.  
   
-4.  Directories specified by the LIB environment variable.  
+4. Directories specified by the LIB environment variable.  
   
  Use **-reference** to specify an assembly reference.  
   
@@ -46,11 +46,11 @@ The **-lib** option specifies the location of assemblies referenced by means of 
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box.  
+1. Open the project's **Property Pages** dialog box.  
   
-2.  Click the **References Path** property page.  
+2. Click the **References Path** property page.  
   
-3.  Modify the contents of the list box.  
+3. Modify the contents of the list box.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
   

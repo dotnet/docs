@@ -16,7 +16,7 @@ There are multiple delay values that you can set for a Windows Forms <xref:Syste
   
 ### To set the delay  
   
-1.  Set the following properties as shown in this example.  
+1. Set the following properties as shown in this example.  
   
     ```vb  
     ToolTip1.InitialDelay = 500  
@@ -37,6 +37,7 @@ There are multiple delay values that you can set for a Windows Forms <xref:Syste
     ```  
   
 ## See also
+
 - [ToolTip Component Overview](tooltip-component-overview-windows-forms.md)
 - [How to: Set ToolTips for Controls on a Windows Form at Design Time](how-to-set-tooltips-for-controls-on-a-windows-form-at-design-time.md)
 - [ToolTip Component](tooltip-component-windows-forms.md)

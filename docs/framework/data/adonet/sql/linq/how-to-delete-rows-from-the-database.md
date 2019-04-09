@@ -26,11 +26,11 @@ You can delete rows in a database by removing the corresponding [!INCLUDE[vbtecd
   
 ### To delete a row in the database  
   
-1.  Query the database for the row to be deleted.  
+1. Query the database for the row to be deleted.  
   
-2.  Call the <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> method.  
+2. Call the <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> method.  
   
-3.  Submit the change to the database.  
+3. Submit the change to the database.  
   
 ## Example  
  This first code example queries the database for order details that belong to Order #11000, marks these order details for deletion, and submits these changes to the database.  
@@ -45,6 +45,7 @@ You can delete rows in a database by removing the corresponding [!INCLUDE[vbtecd
  [!code-vb[DLinqCascadeWorkaround#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCascadeWorkaround/vb/Module1.vb#1)]  
   
 ## See also
+
 - [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
 - [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)
 - [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)

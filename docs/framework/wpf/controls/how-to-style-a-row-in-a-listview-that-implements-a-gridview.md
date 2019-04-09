@@ -28,6 +28,7 @@ This example shows how to style a row in a <xref:System.Windows.Controls.ListVie
  [!code-xaml[ListViewItemStyleSnippet#GridView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyleSnippet/CS/Window1.xaml#gridview)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
 - [How-to Topics](listview-how-to-topics.md)

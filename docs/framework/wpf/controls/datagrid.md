@@ -51,6 +51,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to display and e
 |[Sizing Options in the DataGrid Control](sizing-options-in-the-datagrid-control.md)|Describes how to control absolute and automatic sizing in the <xref:System.Windows.Controls.DataGrid>.|  
   
 ## See also
+
 - <xref:System.Windows.Controls.DataGrid>
 - [Styling and Templating](styling-and-templating.md)
 - [Data Binding Overview](../data/data-binding-overview.md)

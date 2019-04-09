@@ -131,7 +131,6 @@ Runs the tests in an isolated process. This makes *vstest.console.exe* process l
 
 Reads response file for more options.
 
-
 `args`
 
 Specifies extra arguments to pass to the adapter. Arguments are specified as name-value pairs of the form `<n>=<v>`, where `<n>` is the argument name and `<v>` is the argument value. Use a space to separate multiple arguments.

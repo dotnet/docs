@@ -79,6 +79,7 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.Description.ServiceEndpoint>

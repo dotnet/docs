@@ -22,5 +22,6 @@ A <xref:System.Windows.Media.Animation.Clock> object's <xref:System.Windows.Medi
  [!code-vb[timingbehaviors_procedural_snip#GraphicsMMClockControllerExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/timingbehaviors_procedural_snip/visualbasic/clockcontrollerexample.vb#graphicsmmclockcontrollerexample)]  
   
 ## See also
+
 - [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)
 - [Animation Overview](animation-overview.md)

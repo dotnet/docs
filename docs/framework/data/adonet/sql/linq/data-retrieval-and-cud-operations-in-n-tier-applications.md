@@ -388,11 +388,11 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 ### State  
  After an entity object is attached to the <xref:System.Data.Linq.DataContext> instance, the object is considered to be in the `PossiblyModified` state. There are three ways to force an attached object to be considered `Modified`.  
   
-1.  Attach it as unmodified, and then directly modify the fields.  
+1. Attach it as unmodified, and then directly modify the fields.  
   
-2.  Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes current and original object instances. This supplies the change tracker with old and new values so that it will automatically know which fields have changed.  
+2. Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes current and original object instances. This supplies the change tracker with old and new values so that it will automatically know which fields have changed.  
   
-3.  Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes a second Boolean parameter (set to true). This will tell the change tracker to consider the object modified without having to supply any original values. In this approach, the object must have a version/timestamp field.  
+3. Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes a second Boolean parameter (set to true). This will tell the change tracker to consider the object modified without having to supply any original values. In this approach, the object must have a version/timestamp field.  
   
  For more information, see [Object States and Change-Tracking](../../../../../../docs/framework/data/adonet/sql/linq/object-states-and-change-tracking.md).  
   
@@ -401,5 +401,6 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
  When you attach with an `IEnumerable` set of objects, a <xref:System.Data.Linq.DuplicateKeyException> is thrown when an already existing key is present. Remaining objects are not attached.  
   
 ## See also
+
 - [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)
 - [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

@@ -12,9 +12,7 @@ ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
 ---
 # Flow Document Overview
 Flow documents are designed to optimize viewing and readability. Rather than being set to one predefined layout, flow documents dynamically adjust and reflow their content based on run-time variables such as window size, device resolution, and optional user preferences. In addition, flow documents offer advanced document features, such as pagination and columns. This topic provides an overview of flow documents and how to create them.  
-  
 
-  
 <a name="what_is_a_flow_document"></a>   
 ## What is a Flow Document  
  A flow document is designed to "reflow content" depending on window size, device resolution, and other environment variables. In addition, flow documents have a number of built in features including search, viewing modes that optimize readability, and the ability to change the size and appearance of fonts. Flow Documents are best utilized when ease of reading is the primary document consumption scenario. In contrast, Fixed Documents are designed to have a static presentation. Fixed Documents are useful when fidelity of the source content is essential. See [Documents in WPF](documents-in-wpf.md) for more information on different types of documents.  
@@ -85,9 +83,9 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  For the purposes of flow content, there are two important categories:  
   
-1.  **Block-derived classes**: Also called "Block content elements" or just "Block Elements". Elements that inherit from <xref:System.Windows.Documents.Block> can be used to group elements under a common parent or to apply common attributes to a group.  
+1. **Block-derived classes**: Also called "Block content elements" or just "Block Elements". Elements that inherit from <xref:System.Windows.Documents.Block> can be used to group elements under a common parent or to apply common attributes to a group.  
   
-2.  **Inline-derived classes**: Also called "Inline content elements" or just "Inline Elements". Elements that inherit from <xref:System.Windows.Documents.Inline> are either contained within a Block Element or another Inline Element. Inline Elements are often used as the direct container of content that is rendered to the screen. For example, a <xref:System.Windows.Documents.Paragraph> (Block Element) can contain a <xref:System.Windows.Documents.Run> (Inline Element) but the <xref:System.Windows.Documents.Run> actually contains the text that is rendered on the screen.  
+2. **Inline-derived classes**: Also called "Inline content elements" or just "Inline Elements". Elements that inherit from <xref:System.Windows.Documents.Inline> are either contained within a Block Element or another Inline Element. Inline Elements are often used as the direct container of content that is rendered to the screen. For example, a <xref:System.Windows.Documents.Paragraph> (Block Element) can contain a <xref:System.Windows.Documents.Run> (Inline Element) but the <xref:System.Windows.Documents.Run> actually contains the text that is rendered on the screen.  
   
  Each class in these two categories is briefly described below.  
   
@@ -122,9 +120,9 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  [!code-xaml[SpanSnippets#_BlockUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_blockuixaml)]  
   
- The following figure shows how this example renders.  
+ The following figure shows how this example renders:  
   
- ![Screenshot: UIElement embedded in flow content](./media/blockuicontainer.png "BlockUIContainer")  
+ ![Screenshot that shows a UIElement embedded in flow content.](./media/flow-document-overview/embedded-blockuicontainer.png)  
   
  **List**  
   
@@ -343,6 +341,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
  See [Typography in WPF](typography-in-wpf.md) for more information on typography.  
   
 ## See also
+
 - [Text](optimizing-performance-text.md)
 - [Typography in WPF](typography-in-wpf.md)
 - [How-to Topics](flow-content-elements-how-to-topics.md)

@@ -47,5 +47,6 @@ This section provides LINQ to DataSet programming examples that use the standard
  Contains examples that demonstrate how to use the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method and the <xref:System.Data.DataRowComparer> class.  
   
 ## See also
+
 - [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
 - [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)

@@ -77,6 +77,7 @@ A composition chain
  When you animate a property, the <xref:System.Windows.Media.Animation.AnimationClock> sets the property's *current* value. Retrieving the property's value through its CLR accessor or the <xref:System.Windows.DependencyObject.GetValue%2A> method returns the output of the <xref:System.Windows.Media.Animation.AnimationClock> when the <xref:System.Windows.Media.Animation.AnimationClock> is <xref:System.Windows.Media.Animation.ClockState.Active> or <xref:System.Windows.Media.Animation.ClockState.Filling>. You can retrieve the property's base value by using the <xref:System.Windows.Media.Animation.IAnimatable.GetAnimationBaseValue%2A> method.  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Timing Events Overview](timing-events-overview.md)
 - [Timing Behaviors Overview](timing-behaviors-overview.md)

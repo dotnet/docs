@@ -6,11 +6,11 @@ ms.assetid: 1e4b1e0f-9598-449d-9d73-90bda62305b8
 # WCF Error Handling
 The errors encountered by a WCF application belong to one of three groups:  
   
-1.  Communication Errors  
+1. Communication Errors  
   
-2.  Proxy/Channel Errors  
+2. Proxy/Channel Errors  
   
-3.  Application Errors  
+3. Application Errors  
   
  Communication errors occur when a network is unavailable, a client uses an incorrect address, or the service host is not listening for incoming messages. Errors of this type are returned to the client as <xref:System.ServiceModel.CommunicationException> or <xref:System.ServiceModel.CommunicationException>-derived classes.  
   

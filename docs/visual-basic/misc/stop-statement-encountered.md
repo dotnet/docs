@@ -10,7 +10,7 @@ A `Stop` statement, which suspends execution, was encountered.
   
 ## To correct this error  
   
-1.  Remove the `Stop` statement.  
+1. Remove the `Stop` statement.  
   
 ## See also
 

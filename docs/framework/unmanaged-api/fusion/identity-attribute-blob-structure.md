@@ -43,13 +43,13 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
 ## Sample  
  The following example illustrates several basic steps, which eventually result in a populated `IDENTITY_ATTRIBUTE_BLOB` structure:  
   
-1.  Obtain an [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) for the assembly.  
+1. Obtain an [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) for the assembly.  
   
-2.  Call the `IReferenceIdentity::EnumAttributes` method, and obtain an [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md).  
+2. Call the `IReferenceIdentity::EnumAttributes` method, and obtain an [IEnumIDENTITY_ATTRIBUTE](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md).  
   
-3.  Create a character buffer, and cast it as an `IDENTITY_ATTRIBUTE_BLOB` structure.  
+3. Create a character buffer, and cast it as an `IDENTITY_ATTRIBUTE_BLOB` structure.  
   
-4.  Call the `CurrentIntoBuffer` method of the `IEnumIDENTITY_ATTRIBUTE` interface. This method copies the attributes `Namespace`, `Name`, and `Value` into the character buffer. The three offsets to those strings will become available in the `IDENTITY_ATTRIBUTE_BLOB` structure.  
+4. Call the `CurrentIntoBuffer` method of the `IEnumIDENTITY_ATTRIBUTE` interface. This method copies the attributes `Namespace`, `Name`, and `Value` into the character buffer. The three offsets to those strings will become available in the `IDENTITY_ATTRIBUTE_BLOB` structure.  
   
 ```  
 // EnumAssemblyAttributes.cpp : main project file.  
@@ -237,6 +237,7 @@ Exit:
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
 - [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)
 - [IDENTITY_ATTRIBUTE Structure](../../../../docs/framework/unmanaged-api/fusion/identity-attribute-structure.md)

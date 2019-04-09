@@ -15,12 +15,12 @@ By default, when a user name and password is used for authentication, Windows Co
   
 ### To create a custom user name and password validator  
   
-1.  Create a class that derives from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>.  
+1. Create a class that derives from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>.  
   
      [!code-csharp[C_CustomUsernameAndPasswordValidator#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customusernameandpasswordvalidator/cs/service.cs#3)]
      [!code-vb[C_CustomUsernameAndPasswordValidator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customusernameandpasswordvalidator/vb/service.vb#3)]  
   
-2.  Implement the custom authentication scheme by overriding the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method.  
+2. Implement the custom authentication scheme by overriding the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method.  
   
      Do not use the code in the following example that overrides the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method in a production environment. Replace the code with your custom user name and password validation scheme, which might involve retrieving user name and password pairs from a database.  
   
@@ -31,7 +31,7 @@ By default, when a user name and password is used for authentication, Windows Co
   
 ### To configure a service to use a custom user name and password validator  
   
-1.  Configure a binding that uses message security over any transport or transport-level security over HTTP(S).  
+1. Configure a binding that uses message security over any transport or transport-level security over HTTP(S).  
   
      When using message security, add one of the system-provided bindings, such as a  [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), or a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) that supports message security and the `UserName` credential type.  
   
@@ -76,7 +76,7 @@ By default, when a user name and password is used for authentication, Windows Co
     </system.serviceModel>  
     ```  
   
-2.  Configure a behavior that specifies that a custom user name and password validator is used to validate user name and password pairs for incoming <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens.  
+2. Configure a behavior that specifies that a custom user name and password validator is used to validate user name and password pairs for incoming <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens.  
   
     1.  As a child to the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element.  
   
@@ -112,6 +112,7 @@ By default, when a user name and password is used for authentication, Windows Co
 [!code-vb[C_CustomUsernameAndPasswordValidator#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customusernameandpasswordvalidator/vb/service.vb#2)]  
   
 ## See also
+
 - <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>
 - [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)
 - [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)

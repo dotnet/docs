@@ -15,8 +15,7 @@ ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
 # Type Relationships in Query Operations (Visual Basic)
 Variables used in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query operations are strongly typed and must be compatible with each other. Strong typing is used in the data source, in the query itself, and in the query execution. The following illustration identifies terms used to describe a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query. For more information about the parts of a query, see [Basic Query Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).  
   
- ![Pseudocode query with elements highlighted.](../../../../visual-basic/programming-guide/concepts/linq/media/sjltyperels.png "SJLtypeRels")  
-Parts of a LINQ query  
+ ![Screenshot showing a pseudocode query with elements highlighted.](./media/type-relationships-in-query-operations/linq-query-description-terms.png)  
   
  The type of the range variable in the query must be compatible with the type of the elements in the data source. The type of the query variable must be compatible with the sequence element defined in the `Select` clause. Finally, the type of the sequence elements also must be compatible with the type of the loop control variable that is used in the `For Each` statement that executes the query. This strong typing facilitates identification of type errors at compile time.  
   
@@ -44,11 +43,11 @@ Parts of a LINQ query
   
  The following relationships exist in both of the previous code examples, whether the types are determined implicitly or explicitly.  
   
-1.  The type of the elements in the data source, `names`, is the type of the range variable, `name`, in the query.  
+1. The type of the elements in the data source, `names`, is the type of the range variable, `name`, in the query.  
   
-2.  The type of the object that is selected, `name`, determines the type of the query variable, `mNames`. Here `name` is a string, so the query variable is IEnumerable(Of String) in Visual Basic.  
+2. The type of the object that is selected, `name`, determines the type of the query variable, `mNames`. Here `name` is a string, so the query variable is IEnumerable(Of String) in Visual Basic.  
   
-3.  The query defined in `mNames` is executed in the `For Each` loop. The loop iterates over the result of executing the query. Because `mNames`, when it is executed, will return a sequence of strings, the loop iteration variable, `nm`, also is a string.  
+3. The query defined in `mNames` is executed in the `For Each` loop. The loop iterates over the result of executing the query. Because `mNames`, when it is executed, will return a sequence of strings, the loop iteration variable, `nm`, also is a string.  
   
 ## Queries That Return One Field from Selected Elements  
  The following example shows a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] query operation that returns a sequence containing only one part of each element selected from the data source. The query takes a collection of `Customer` objects as its data source and projects only the `Name` property in the result. Because the customer name is a string, the query produces a sequence of strings as output.  
@@ -67,11 +66,11 @@ Next
   
  The relationships between variables are like those in the simpler example.  
   
-1.  The type of the elements in the data source, `customers`, is the type of the range variable, `cust`, in the query. In this example, that type is `Customer`.  
+1. The type of the elements in the data source, `customers`, is the type of the range variable, `cust`, in the query. In this example, that type is `Customer`.  
   
-2.  The `Select` statement returns the `Name` property of each `Customer` object instead of the whole object. Because `Name` is a string, the query variable, `custNames`, will again be IEnumerable(Of String), not of `Customer`.  
+2. The `Select` statement returns the `Name` property of each `Customer` object instead of the whole object. Because `Name` is a string, the query variable, `custNames`, will again be IEnumerable(Of String), not of `Customer`.  
   
-3.  Because `custNames` represents a sequence of strings, the `For Each` loop's iteration variable, `custName`, must be a string.  
+3. Because `custNames` represents a sequence of strings, the `For Each` loop's iteration variable, `custName`, must be a string.  
   
  Without local type inference, the previous example would be more cumbersome to write and to understand, as the following example shows.  
   
@@ -105,13 +104,14 @@ Next
   
  Although it is not possible to specify types for all the variables in the previous example, the relationships remain the same.  
   
-1.  The type of the elements in the data source is again the type of the range variable in the query. In this example, `cust` is an instance of `Customer`.  
+1. The type of the elements in the data source is again the type of the range variable in the query. In this example, `cust` is an instance of `Customer`.  
   
-2.  Because the `Select` statement produces an anonymous type, the query variable, `nameCityQuery`, must be implicitly typed as an anonymous type. An anonymous type has no usable name, and therefore cannot be specified explicitly.  
+2. Because the `Select` statement produces an anonymous type, the query variable, `nameCityQuery`, must be implicitly typed as an anonymous type. An anonymous type has no usable name, and therefore cannot be specified explicitly.  
   
-3.  The type of the iteration variable in the `For Each` loop is the anonymous type created in step 2. Because the type has no usable name, the type of the loop iteration variable must be determined implicitly.  
+3. The type of the iteration variable in the `For Each` loop is the anonymous type created in step 2. Because the type has no usable name, the type of the loop iteration variable must be determined implicitly.  
   
 ## See also
+
 - [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 - [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

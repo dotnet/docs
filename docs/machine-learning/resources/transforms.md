@@ -18,7 +18,7 @@ The following tables contain information about all of the data transforms suppor
 
 <xref:Microsoft.ML.LightGbmExtensions.LightGbm*>
 
-<xref:Microsoft.ML.LightGbmExtensions.LightGbm(Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Int32)>
+<xref:Microsoft.ML.LightGbmExtensions.LightGbm(Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Int32)?displayProperty=LightGbmExtensions(Options)>
 
 ## Combiners and segregators
 

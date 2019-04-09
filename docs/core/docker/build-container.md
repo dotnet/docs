@@ -101,7 +101,7 @@ Counter: 4
 
 If you pass a number on the command line to the app, it will only count up to that amount and then exit. Try it with `dotnet run -- 5` to count to five.
 
-> ![NOTE]
+> [!NOTE]
 > Any parameters after `--` are passed to your application.
 
 ### Using a newer SDK

@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes) GitHub repository.
 
 ## Image classification sample overview
 
@@ -39,7 +39,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 * Microsoft.ML.ImageAnalytics 0.10.0 Nuget package
 * Microsoft.ML.TensorFlow 0.10.0 Nuget package
 
-* [The tutorial assets directory .ZIP file](http://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
+* [The tutorial assets directory .ZIP file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
 
 * [The InceptionV3 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -131,7 +131,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Prepare your data
 
-1. Download [The project assets directory zip file](http://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip), and unzip.
+1. Download [The project assets directory zip file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip), and unzip.
 
 2. Copy the `assets` directory into your *TransferLearningTF* project directory. This directory and its subdirectories contain the data and support files (except for the Inception model, which you'll download and add in the next step) needed for this tutorial.
 
@@ -504,4 +504,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore an expanded image classification sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning/)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/)

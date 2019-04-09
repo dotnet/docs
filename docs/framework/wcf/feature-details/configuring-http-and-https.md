@@ -17,13 +17,13 @@ Namespace reservation assigns the rights for a portion of the HTTP URL namespace
 
 A running application can create a similar request to add namespace registrations. Registrations and reservations compete for portions of the namespace. A reservation may have precedence over a registration according to the order of resolution given in the [order of resolution between namespace claims that involve wildcards](/windows/desktop/Http/routing-incoming-requests). In this case, the reservation blocks the running application from receiving requests.
 
-The following shows an example of using the Netsh.exe tool:
+The following example uses the Netsh.exe tool:
 
 ```console
 netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
 ```
 
-This command adds a URL reservation for the specified URL namespace for the DOMAIN\user account. For more information on using the netsh command, type `netsh http add urlacl` in a command-prompt and press enter.
+This command adds a URL reservation for the specified URL namespace for the DOMAIN\user account. For more information on using the netsh command, type `netsh http add urlacl /?` in a command-prompt and press Enter.
 
 ## Configuring a firewall exception
 

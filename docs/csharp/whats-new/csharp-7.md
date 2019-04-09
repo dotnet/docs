@@ -175,7 +175,7 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
             case int n when n > 0: 
                 sum += n; 
                 break;
-            null:
+            case null:
                 throw new NullReferenceException("Null found in sequence");
             default:
                 throw new InvalidOperationException("Unrecognized type");

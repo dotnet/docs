@@ -1,6 +1,6 @@
 ---
 title: "Configuring HTTP and HTTPS - WCF"
-ms.date: "03/30/2017"
+ms.date: "04/08/2019"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4

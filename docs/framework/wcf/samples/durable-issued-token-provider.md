@@ -108,7 +108,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 #### To develop a custom token provider  
   
-1.  Write a custom token provider.  
+1. Write a custom token provider.  
   
      The sample implements a custom token provider that returns a security token retrieved from a cache.  
   
@@ -127,7 +127,7 @@ This sample demonstrates how to implement a custom client issued token provider.
     }  
     ```  
   
-2.  Write custom security token manager.  
+2. Write custom security token manager.  
   
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager> is used to create a <xref:System.IdentityModel.Selectors.SecurityTokenProvider> for a specific <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> that is passed to it in the `CreateSecurityTokenProvider` method. Security token manager is also used to create token authenticators and token serializers, but those are not covered by this sample. In this sample, the custom security token manager inherits from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class and overrides the `CreateSecurityTokenProvider` method to return the custom token provider when the passed token requirements indicate that an issued token is requested.  
   
@@ -156,7 +156,7 @@ This sample demonstrates how to implement a custom client issued token provider.
     }  
     ```  
   
-3.  Write a custom client credential.  
+3. Write a custom client credential.  
   
      A client credentials class is used to represent the credentials that are configured for the client proxy and creates the security token manager that is used to obtain token authenticators, token providers and token serializers.  
   
@@ -198,7 +198,7 @@ This sample demonstrates how to implement a custom client issued token provider.
     }  
     ```  
   
-4.  Implement the token cache. The sample implementation uses an abstract base class through which consumers of a given token cache interact with the cache.  
+4. Implement the token cache. The sample implementation uses an abstract base class through which consumers of a given token cache interact with the cache.  
   
     ```  
     public abstract class IssuedTokenCache  
@@ -227,17 +227,17 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 #### To set up, build, and run the sample  
   
-1.  Run the Setup.cmd file to create the required certificates.  
+1. Run the Setup.cmd file to create the required certificates.  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md). Ensure that all the projects in the solution are built (Shared, RSTRSTR, Service, SecurityTokenService, and Client).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md). Ensure that all the projects in the solution are built (Shared, RSTRSTR, Service, SecurityTokenService, and Client).  
   
-3.  Ensure that Service.exe and SecurityTokenService.exe are both running with administrator privileges.  
+3. Ensure that Service.exe and SecurityTokenService.exe are both running with administrator privileges.  
   
-4.  Run Client.exe.  
+4. Run Client.exe.  
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.cmd in the samples folder once you have finished running the sample.  
+1. Run Cleanup.cmd in the samples folder once you have finished running the sample.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

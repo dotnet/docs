@@ -18,26 +18,26 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
   
 ### To access DOM from a Windows Forms application  
   
-1.  Host a <xref:System.Windows.Forms.WebBrowser> control within your Windows Forms application and monitor for the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For details on hosting controls and monitoring for events, see [Events](../../../standard/events/index.md).  
+1. Host a <xref:System.Windows.Forms.WebBrowser> control within your Windows Forms application and monitor for the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For details on hosting controls and monitoring for events, see [Events](../../../standard/events/index.md).  
   
-2.  Retrieve the <xref:System.Windows.Forms.HtmlDocument> for the current page by accessing the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control.  
+2. Retrieve the <xref:System.Windows.Forms.HtmlDocument> for the current page by accessing the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control.  
 
 ### To access DOM from a UserControl hosted in Internet Explorer  
   
-1.  Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](how-to-author-composite-controls.md).  
+1. Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](how-to-author-composite-controls.md).  
   
-2.  Place the following code inside of your Load event handler for your <xref:System.Windows.Forms.UserControl>:  
+2. Place the following code inside of your Load event handler for your <xref:System.Windows.Forms.UserControl>:  
   
  [!code-csharp[AccessHTMLDOMControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AccessHTMLDOMControl/cs/UserControl1.cs#1)]
  [!code-vb[AccessHTMLDOMControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AccessHTMLDOMControl/vb/UserControl1.vb#1)]  
   
 ## Robust Programming  
   
-1.  When using the DOM through the <xref:System.Windows.Forms.WebBrowser> control, you should always wait until the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event occurs before attempting to access the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control. The <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event is raised after the entire document has loaded; if you use the DOM before then, you risk causing a run-time exception in your application.  
+1. When using the DOM through the <xref:System.Windows.Forms.WebBrowser> control, you should always wait until the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event occurs before attempting to access the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control. The <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event is raised after the entire document has loaded; if you use the DOM before then, you risk causing a run-time exception in your application.  
   
 ## .NET Framework Security  
   
-1.  Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications) for details.  
+1. Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications) for details.  
   
 ## See also
 

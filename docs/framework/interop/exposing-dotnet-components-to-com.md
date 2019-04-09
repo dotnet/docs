@@ -28,19 +28,19 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
   
 #### To consume a managed type from COM  
   
-1.  [Register assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md).  
+1. [Register assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md).  
   
      Types in an assembly (and type libraries) must be registered at design time. If an installer does not register the assembly, instruct COM developers to use Regasm.exe.  
   
-2.  [Reference .NET types from COM](../../../docs/framework/interop/how-to-reference-net-types-from-com.md).  
+2. [Reference .NET types from COM](../../../docs/framework/interop/how-to-reference-net-types-from-com.md).  
   
      COM developers can reference types in an assembly using the same tools and techniques they use today.  
   
-3.  [Call a .NET object](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100)).  
+3. [Call a .NET object](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100)).  
   
      COM developers can call methods on the .NET object the same way they call methods on any unmanaged type. For example, the COM **CoCreateInstance** API activates .NET objects.  
   
-4.  [Deploy an application for COM access](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100)).  
+4. [Deploy an application for COM access](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100)).  
   
      A strong-named assembly can be installed in the global assembly cache and requires a signature from its publisher. Assemblies that are not strong named must be installed in the application directory of the client.  
   

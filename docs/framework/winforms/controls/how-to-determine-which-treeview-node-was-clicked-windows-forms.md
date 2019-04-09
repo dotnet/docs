@@ -18,9 +18,9 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
   
 ### To determine which TreeView node was clicked  
   
-1.  Use the <xref:System.EventArgs> object to return a reference to the clicked node object.  
+1. Use the <xref:System.EventArgs> object to return a reference to the clicked node object.  
   
-2.  Determine which node was clicked by checking the <xref:System.Windows.Forms.TreeViewEventArgs> class, which contains data related to the event.  
+2. Determine which node was clicked by checking the <xref:System.Windows.Forms.TreeViewEventArgs> class, which contains data related to the event.  
   
     ```vb  
     Private Sub TreeView1_AfterSelect(ByVal sender As System.Object, _  

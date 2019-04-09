@@ -83,9 +83,9 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 #### PackageDigitalSignatures  
  For security, a <xref:System.IO.Packaging.PackageDigitalSignature> ("digital signature") can be associated with parts within a package. A <xref:System.IO.Packaging.PackageDigitalSignature> incorporates a [509] that provides two features:  
   
-1.  Identifies and authenticates the originator of the part.  
+1. Identifies and authenticates the originator of the part.  
   
-2.  Validates that the part has not been modified.  
+2. Validates that the part has not been modified.  
   
  The digital signature does not preclude a part from being modified, but a validation check against the digital signature will fail if the part is altered in any way. The application can then take appropriate action—for example, block opening the part or notify the user that the part has been modified and is not secure.  
   
@@ -101,9 +101,9 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
  Package relationships provide a discoverable means for adding and associating additional information with individual parts or with the entire package. Package relationships are used for two primary functions:  
   
-1.  Defining dependency relationships from one part to another part.  
+1. Defining dependency relationships from one part to another part.  
   
-2.  Defining information relationships that add notes or other data related to the part.  
+2. Defining information relationships that add notes or other data related to the part.  
   
  A <xref:System.IO.Packaging.PackageRelationship> provides a quick, discoverable means to define dependencies and add other information associated with a part of the package or the package as a whole.  
   

@@ -22,15 +22,15 @@ A data service can expose large object binary data. This binary data might repre
   
  Configuring a data service to support the streaming of binary data requires the following steps:  
   
-1.  Attribute one or more entities in the data model as a media link entry. These entities should not include the binary data to be streamed. Any binary properties of an entity are always returned in the entry as base-64 encoded binary.  
+1. Attribute one or more entities in the data model as a media link entry. These entities should not include the binary data to be streamed. Any binary properties of an entity are always returned in the entry as base-64 encoded binary.  
   
-2.  Implement the T:System.Data.Services.Providers.IDataServiceStreamProvider interface.  
+2. Implement the T:System.Data.Services.Providers.IDataServiceStreamProvider interface.  
   
-3.  Define a data service that implements the <xref:System.IServiceProvider> interface. The data service uses the <xref:System.IServiceProvider.GetService%2A> implementation to access the streaming data provider implementation. This method returns the appropriate streaming provider implementation.  
+3. Define a data service that implements the <xref:System.IServiceProvider> interface. The data service uses the <xref:System.IServiceProvider.GetService%2A> implementation to access the streaming data provider implementation. This method returns the appropriate streaming provider implementation.  
   
-4.  Enable large message streams in the Web application configuration.  
+4. Enable large message streams in the Web application configuration.  
   
-5.  Enable access to binary resources on the server or in a data source.  
+5. Enable access to binary resources on the server or in a data source.  
   
  The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989). The source code for this sample service is available on the [Streaming Photo Data Service Sample page](https://go.microsoft.com/fwlink/?LinkID=198988) on MSDN Code Gallery.  
   

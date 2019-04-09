@@ -15,25 +15,25 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
   
 ### To bind a control and format the displayed data  
   
-1.  Connect to a data source.  
+1. Connect to a data source.  
   
      For more information, see [Connecting to a Data Source](../data/adonet/connecting-to-a-data-source.md).  
   
-2.  In the form, select the control, and then open the Properties window.  
+2. In the form, select the control, and then open the Properties window.  
   
-3.  Expand the **(DataBindings)** property, and then in the **(Advanced)** box, click the ellipsis button (![VisualStudioEllipsesButton screenshot](./media/vbellipsesbutton.png "vbEllipsesButton")) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.  
+3. Expand the **(DataBindings)** property, and then in the **(Advanced)** box, click the ellipsis button (![VisualStudioEllipsesButton screenshot](./media/vbellipsesbutton.png "vbEllipsesButton")) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.  
   
-4.  Select the property you want to bind, and then click the **Binding** arrow.  
+4. Select the property you want to bind, and then click the **Binding** arrow.  
   
      A list of available data sources is displayed.  
   
-5.  Expand the data source you want to bind to until you find the single data element you want.  
+5. Expand the data source you want to bind to until you find the single data element you want.  
   
      For example, if you are binding to a column value in a dataset's table, expand the name of the dataset, and then expand the table name to display column names.  
   
-6.  Click the name of an element to bind to.  
+6. Click the name of an element to bind to.  
   
-7.  In the **Format type** box, click the format you want to apply to the data displayed in the control.  
+7. In the **Format type** box, click the format you want to apply to the data displayed in the control.  
   
      In every case, you can specify the value displayed in the control if the data source contains <xref:System.DBNull>. Otherwise, the options vary slightly, depending on the format type you choose. The following table shows the format types and options.  
   
@@ -46,7 +46,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
     |Scientific|Specify number of decimal places by using **Decimal places** up-down control.|  
     |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](../../standard/base-types/formatting-types.md). **Note:**  Custom format strings are not guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|  
   
-8.  Click **OK** to close the **Formatting and Advanced Binding** dialog box and return to the Properties window.  
+8. Click **OK** to close the **Formatting and Advanced Binding** dialog box and return to the Properties window.  
   
 ## See also
 

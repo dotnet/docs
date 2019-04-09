@@ -19,9 +19,9 @@ The `AddressOf` operator creates a procedure delegate instance that references a
   
 ## To correct this error  
   
-1.  Remove the parentheses around the argument following `AddressOf`.  
+1. Remove the parentheses around the argument following `AddressOf`.  
   
-2.  Make sure the argument is a method name.  
+2. Make sure the argument is a method name.  
   
 ## See also
 

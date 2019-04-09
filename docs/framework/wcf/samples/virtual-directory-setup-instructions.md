@@ -15,19 +15,19 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 #### To create a virtual directory in IIS 7.0 or 7.5  
   
-1.  From the **Start** menu, click **Run**, then type **inetmgr** to open the Internet Information Services (IIS) MMC snap-in.  
+1. From the **Start** menu, click **Run**, then type **inetmgr** to open the Internet Information Services (IIS) MMC snap-in.  
   
-2.  In the left pane, expand the node with the computer's name, and then expand the **Sites** node.  
+2. In the left pane, expand the node with the computer's name, and then expand the **Sites** node.  
   
-3.  Right-click **Default Web Site**, and then select **Add Application** to open the **Add Application window**.  
+3. Right-click **Default Web Site**, and then select **Add Application** to open the **Add Application window**.  
   
-4.  In the window, type `servicemodelsamples` as the alias for the virtual directory that you are creating.  
+4. In the window, type `servicemodelsamples` as the alias for the virtual directory that you are creating.  
   
-5.  Create the following directory: %SystemDrive%\inetpub\wwwroot\servicemodelsamples  
+5. Create the following directory: %SystemDrive%\inetpub\wwwroot\servicemodelsamples  
   
-6.  Set the physical path to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  Most of the WCF samples copy service executable files to this location when built.  
+6. Set the physical path to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  Most of the WCF samples copy service executable files to this location when built.  
   
-7.  Click **OK**. The Web application is now created for the WCF samples.  
+7. Click **OK**. The Web application is now created for the WCF samples.  
   
     > [!NOTE]
     >  This task must be performed only once, because all of the WCF samples use the same servicemodelsamples Web application.  
@@ -39,44 +39,44 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 #### To create a virtual directory in IIS 5.1 or 6.0  
   
-1.  Open a command prompt window and type `start inetmgr` to open the Internet Information Services (IIS) MMC snap-in.  
+1. Open a command prompt window and type `start inetmgr` to open the Internet Information Services (IIS) MMC snap-in.  
   
-2.  In the left pane, expand the node with the computer's name, and then expand the **Web Sites** node.  
+2. In the left pane, expand the node with the computer's name, and then expand the **Web Sites** node.  
   
-3.  Right-click **Default Web Site** and select **New, Virtual Directory** to open the Virtual Directory Creation wizard.  
+3. Right-click **Default Web Site** and select **New, Virtual Directory** to open the Virtual Directory Creation wizard.  
   
-4.  In the wizard, type `servicemodelsamples` as the alias for the virtual directory that you are creating.  
+4. In the wizard, type `servicemodelsamples` as the alias for the virtual directory that you are creating.  
   
-5.  Set the path to %SystemDrive%\inetpub\wwwroot\servicemodelsamples. Most of the WCF samples copy service executable files to this location when built.  
+5. Set the path to %SystemDrive%\inetpub\wwwroot\servicemodelsamples. Most of the WCF samples copy service executable files to this location when built.  
   
-6.  Click **Next**.  
+6. Click **Next**.  
   
-7.  By default, the following check boxes are selected:  
+7. By default, the following check boxes are selected:  
   
     -   **Read**  
   
     -   **Run scripts (such as ASP)**  
   
-8.  Click **Next**, and then click **Finish** to complete the wizard.  
+8. Click **Next**, and then click **Finish** to complete the wizard.  
   
     > [!NOTE]
     >  This task must be performed only once because all of the WCF samples use the same servicemodelsamples virtual directory.  
   
 #### To set additional virtual directory properties in IIS 7.0 or 7.5  
   
-1.  Click the servicemodelsamples node. Along the bottom of the window, two views are listed. Select **Features View** if it isn’t already selected.  
+1. Click the servicemodelsamples node. Along the bottom of the window, two views are listed. Select **Features View** if it isn’t already selected.  
   
-2.  Double-click the entry for **Directory Browsing**.  
+2. Double-click the entry for **Directory Browsing**.  
   
-3.  In the Actions pane, select the **Enable** option. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.  
+3. In the Actions pane, select the **Enable** option. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.  
   
  Finally, you must set the security properties of the servicemodelsamples folder to allow it to be accessed by others. See below for details.  
   
 #### To set additional virtual directory properties in IIS 5.1 or 6.0  
   
-1.  Right-click the servicemodelsamples node and then click **Properties**.  
+1. Right-click the servicemodelsamples node and then click **Properties**.  
   
-2.  By default, the following check boxes are selected:  
+2. By default, the following check boxes are selected:  
   
     -   **Read**  
   
@@ -84,25 +84,25 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
     -   **Index this resource**  
   
-3.  Select the **Directory browsing** check box. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.  
+3. Select the **Directory browsing** check box. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.  
   
 #### To set security properties of the folder in IIS 7.0 or 7.5  
   
-1.  Navigate to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  
+1. Navigate to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  
   
-2.  Right-click the servicemodelsamples folder and click **Share** or **Share With**.  
+2. Right-click the servicemodelsamples folder and click **Share** or **Share With**.  
   
-3.  Click the down arrow to the left of the **Add** button.  
+3. Click the down arrow to the left of the **Add** button.  
   
-4.  Select the **Find** entry. The **Select Users or Groups** window opens.  
+4. Select the **Find** entry. The **Select Users or Groups** window opens.  
   
-5.  Click **Advanced**.  
+5. Click **Advanced**.  
   
-6.  Click **Locations**. The **Locations** window is now open.  
+6. Click **Locations**. The **Locations** window is now open.  
   
-7.  Select the entry for the computer being used. It is important to select the local computer and not an entry for any domains or networks that are listed. After you have selected the computer, click **OK**.  
+7. Select the entry for the computer being used. It is important to select the local computer and not an entry for any domains or networks that are listed. After you have selected the computer, click **OK**.  
   
-8.  Click **Find Now**. This populates the search results with objects associated with the local computer.  
+8. Click **Find Now**. This populates the search results with objects associated with the local computer.  
   
 9. Find the **IIS_IUSRS** entry in the **Name (Relative Distinguished Name)** column. Select that entry and click **OK** to close the search results window.  
   
@@ -114,13 +114,13 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 #### To set security properties of the folder in IIS 5.1 or 6.0  
   
-1.  Navigate to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  
+1. Navigate to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  
   
-2.  Right-click the **servicemodelsamples** folder and then click **Sharing and Security.**  
+2. Right-click the **servicemodelsamples** folder and then click **Sharing and Security.**  
   
-3.  Click the **Security** tab.  
+3. Click the **Security** tab.  
   
-4.  If you are using IIS 6.0, in the **Group or user names** box, check whether **Internet Guest Account** is listed.  
+4. If you are using IIS 6.0, in the **Group or user names** box, check whether **Internet Guest Account** is listed.  
   
      If it is not listed:  
   
@@ -156,7 +156,7 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
     16. Click **Check Names** to verify the addition. If it is valid, the name is in all capital letters and is underlined.  
   
-5.  For IIS 6.0, also check that NETWORK SERVICE is listed in the **Group or user names** box.  
+5. For IIS 6.0, also check that NETWORK SERVICE is listed in the **Group or user names** box.  
   
      If NETWORK SERVICE is not listed:  
   
@@ -172,7 +172,7 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
     6.  Click **OK** to close the **Select Users or Groups** dialog box.  
   
-6.  If you are using Windows XP SP2 with IIS 5.1, check that both Internet Guest Account and ASPNET are listed in the **Group or user names** box.  
+6. If you are using Windows XP SP2 with IIS 5.1, check that both Internet Guest Account and ASPNET are listed in the **Group or user names** box.  
   
      Note that the ASPNET user may be a member of the built-in **Users** security group. If so, then if the **Users** group is listed in the dialog box, you do not need to add it as a separate item to the list of permitted users.  
   

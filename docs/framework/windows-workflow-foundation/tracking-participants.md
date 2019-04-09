@@ -75,13 +75,13 @@ Tracking participants are extensibility points that allow a workflow developer t
   
 #### To enable viewing the Tracking Records in Event Viewer  
   
-1.  Start the Event Viewer (EVENTVWR.EXE)  
+1. Start the Event Viewer (EVENTVWR.EXE)  
   
-2.  Select **Event Viewer, Applications and Services Logs, Microsoft, Windows, Application Server-Applications**.  
+2. Select **Event Viewer, Applications and Services Logs, Microsoft, Windows, Application Server-Applications**.  
   
-3.  Right-click and ensure that **View, Show Analytic and Debug logs** is selected. If not, select it so the check mark appears next to it. This displays the **Analytic**, **Perf**, and **Debug** logs.  
+3. Right-click and ensure that **View, Show Analytic and Debug logs** is selected. If not, select it so the check mark appears next to it. This displays the **Analytic**, **Perf**, and **Debug** logs.  
   
-4.  Right-click the **Analytic** log and then select **Enable Log**. The log will exist in the %SystemRoot%\System32\Winevt\Logs\Microsoft-Windows-Application Server-Applications%4Analytic.etl file.  
+4. Right-click the **Analytic** log and then select **Enable Log**. The log will exist in the %SystemRoot%\System32\Winevt\Logs\Microsoft-Windows-Application Server-Applications%4Analytic.etl file.  
   
 ## Custom Tracking Participant  
  The tracking participant API allows extension of the tracking runtime with a user-provided tracking participant that can include custom logic to handle tracking records emitted by the workflow runtime. To write a custom tracking participant, the developer must implement the `Track` method on the <xref:System.Activities.Tracking.TrackingParticipant> class. This method is called when a tracking record is emitted by the workflow runtime.  

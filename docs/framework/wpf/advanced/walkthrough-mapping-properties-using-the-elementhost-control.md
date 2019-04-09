@@ -37,9 +37,9 @@ You need the following components to complete this walkthrough:
 
 ### To create the project
 
-1.  Create a **Windows Forms App** project named `PropertyMappingWithElementHost`.
+1. Create a **Windows Forms App** project named `PropertyMappingWithElementHost`.
 
-2.  In **Solution Explorer**, add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies.
+2. In **Solution Explorer**, add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies.
 
     -   PresentationCore
 
@@ -49,16 +49,16 @@ You need the following components to complete this walkthrough:
 
     -   WindowsFormsIntegration
 
-3.  Copy the following code into the top of the `Form1` code file.
+3. Copy the following code into the top of the `Form1` code file.
 
      [!code-csharp[PropertyMappingWithElementHost#10](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#10)]
      [!code-vb[PropertyMappingWithElementHost#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#10)]
 
-4.  Open `Form1` in the Windows Forms Designer. Double-click the form to add an event handler for the <xref:System.Windows.Forms.Form.Load> event.
+4. Open `Form1` in the Windows Forms Designer. Double-click the form to add an event handler for the <xref:System.Windows.Forms.Form.Load> event.
 
-5.  Return to the Windows Forms Designer and add an event handler for the form's <xref:System.Windows.Forms.Control.Resize> event. For more information, see [How to: Create Event Handlers Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
+5. Return to the Windows Forms Designer and add an event handler for the form's <xref:System.Windows.Forms.Control.Resize> event. For more information, see [How to: Create Event Handlers Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
 
-6.  Declare an <xref:System.Windows.Forms.Integration.ElementHost> field in the `Form1` class.
+6. Declare an <xref:System.Windows.Forms.Integration.ElementHost> field in the `Form1` class.
 
      [!code-csharp[PropertyMappingWithElementHost#16](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#16)]
      [!code-vb[PropertyMappingWithElementHost#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#16)]
@@ -69,7 +69,7 @@ The <xref:System.Windows.Forms.Integration.ElementHost> control provides several
 
 ### To define new property mappings
 
-1.  Copy the following code into the definition for the `Form1` class.
+1. Copy the following code into the definition for the `Form1` class.
 
      [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
      [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]
@@ -78,7 +78,7 @@ The <xref:System.Windows.Forms.Integration.ElementHost> control provides several
 
      The `OnMarginChange` method translates the <xref:System.Windows.Forms.Control.Margin%2A> property to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.FrameworkElement.Margin%2A> property.
 
-2.  Copy the following code into the definition for the `Form1` class.
+2. Copy the following code into the definition for the `Form1` class.
 
      [!code-csharp[PropertyMappingWithElementHost#14](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#14)]
      [!code-vb[PropertyMappingWithElementHost#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#14)]
@@ -119,7 +119,7 @@ You can use a default property mapping and also extend it with your own mapping.
 
 ## Initialize your property mappings
 
-1.  Copy the following code into the definition for the `Form1` class.
+1. Copy the following code into the definition for the `Form1` class.
 
      [!code-csharp[PropertyMappingWithElementHost#11](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#11)]
      [!code-vb[PropertyMappingWithElementHost#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#11)]
@@ -132,7 +132,7 @@ You can use a default property mapping and also extend it with your own mapping.
 
     -   Assigns initial values to the mapped properties.
 
-2.  Press F5 to build and run the application.
+2. Press F5 to build and run the application.
 
 ## See also
 

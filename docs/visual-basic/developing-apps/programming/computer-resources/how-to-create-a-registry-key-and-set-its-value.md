@@ -25,11 +25,11 @@ The `CreateSubKey` method of the `My.Computer.Registry` object can be used to cr
   
 #### To create a registry key and set a value in it  
   
-1.  Use the `CreateSubkey` method, specifying which hive to place the key under as well as the name of the key. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
+1. Use the `CreateSubkey` method, specifying which hive to place the key under as well as the name of the key. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
   
      [!code-vb[VbResourceTasks#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#17)]  
   
-2.  Set the value with the `SetValue` method. This example sets the string value. "MyTestKeyValue" to "This is a test value".  
+2. Set the value with the `SetValue` method. This example sets the string value. "MyTestKeyValue" to "This is a test value".  
   
      [!code-vb[VbResourceTasks#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#14)]  
   

@@ -31,29 +31,29 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 #### To create the Direct3D9 project
 
-1.  Create a new Win32 Project in C++ named `D3DContent`.
+1. Create a new Win32 Project in C++ named `D3DContent`.
 
      The Win32 Application Wizard opens and displays the Welcome screen.
 
-2.  Click **Next**.
+2. Click **Next**.
 
      The Application Settings screen appears.
 
-3.  In the **Application type:** section, select the **DLL** option.
+3. In the **Application type:** section, select the **DLL** option.
 
-4.  Click **Finish**.
+4. Click **Finish**.
 
      The D3DContent project is generated.
 
-5.  In Solution Explorer, right-click the D3DContent project and select **Properties**.
+5. In Solution Explorer, right-click the D3DContent project and select **Properties**.
 
      The **D3DContent Property Pages** dialog box opens.
 
-6.  Select the **C/C++** node.
+6. Select the **C/C++** node.
 
-7.  In the **Additional Include Directories** field, specify the location of the DirectX include folder. The default location for this folder is %ProgramFiles%\Microsoft DirectX SDK (*version*)\Include.
+7. In the **Additional Include Directories** field, specify the location of the DirectX include folder. The default location for this folder is %ProgramFiles%\Microsoft DirectX SDK (*version*)\Include.
 
-8.  Double-click the **Linker** node to expand it.
+8. Double-click the **Linker** node to expand it.
 
 9. In the **Additional Library Directories** field, specify the location of the DirectX libraries folder. The default location for this folder is %ProgramFiles%\Microsoft DirectX SDK (*version*)\Lib\x86.
 
@@ -68,7 +68,7 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 #### To create the Direct3D9 content
 
-1.  Using Solution Explorer, add three C++ classes to the project named the following.
+1. Using Solution Explorer, add three C++ classes to the project named the following.
 
      `CRenderer` (with virtual destructor)
 
@@ -76,31 +76,31 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
      `CTriangleRenderer`
 
-2.  Open Renderer.h in the Code Editor and replace the automatically generated code with the following code.
+2. Open Renderer.h in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#RendererH](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/renderer.h#rendererh)]
 
-3.  Open Renderer.cpp in the Code Editor and replace the automatically generated code with the following code.
+3. Open Renderer.cpp in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#RendererCPP](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/renderer.cpp#renderercpp)]
 
-4.  Open RendererManager.h in the Code Editor and replace the automatically generated code with the following code.
+4. Open RendererManager.h in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#RendererManagerH](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/renderermanager.h#renderermanagerh)]
 
-5.  Open RendererManager.cpp in the Code Editor and replace the automatically generated code with the following code.
+5. Open RendererManager.cpp in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#RendererManagerCPP](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/renderermanager.cpp#renderermanagercpp)]
 
-6.  Open TriangleRenderer.h in the Code Editor and replace the automatically generated code with the following code.
+6. Open TriangleRenderer.h in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#TriangleRendererH](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/trianglerenderer.h#trianglerendererh)]
 
-7.  Open TriangleRenderer.cpp in the Code Editor and replace the automatically generated code with the following code.
+7. Open TriangleRenderer.cpp in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#TriangleRendererCPP](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/trianglerenderer.cpp#trianglerenderercpp)]
 
-8.  Open stdafx.h in the Code Editor and replace the automatically generated code with the following code.
+8. Open stdafx.h in the Code Editor and replace the automatically generated code with the following code.
 
      [!code-cpp[System.Windows.Interop.D3DImage#StdafxH](~/samples/snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp/stdafx.h#stdafxh)]
 

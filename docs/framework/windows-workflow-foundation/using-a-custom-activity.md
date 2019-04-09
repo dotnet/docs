@@ -11,10 +11,10 @@ Activities that derive from <xref:System.Activities.Activity> or its subclasses 
   
 #### Using a custom activity to a workflow project  
   
-1.  Add a reference from the host project to the activity library project containing the custom activity.  
+1. Add a reference from the host project to the activity library project containing the custom activity.  
   
-2.  Build the solution.  
+2. Build the solution.  
   
-3.  To use the custom activity in the designer, locate the custom activity in the toolbox, and drag the activity onto the designer surface.  
+3. To use the custom activity in the designer, locate the custom activity in the toolbox, and drag the activity onto the designer surface.  
   
-4.  To use the custom activity in code, add a Using statement that refers to the custom activity project, and pass a new instance of the activity to <xref:System.Activities.WorkflowInvoker.Invoke%2A>.
+4. To use the custom activity in code, add a Using statement that refers to the custom activity project, and pass a new instance of the activity to <xref:System.Activities.WorkflowInvoker.Invoke%2A>.

@@ -16,13 +16,13 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
   
 #### To set the authentication mode in configuration  
   
-1.  To the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element, add a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+1. To the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element, add a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
-2.  As a child element, add a [\<binding>](../../../../docs/framework/misc/binding.md) element to the `<customBinding>` element.  
+2. As a child element, add a [\<binding>](../../../../docs/framework/misc/binding.md) element to the `<customBinding>` element.  
   
-3.  Add a `<security>` element to the `<binding>` element.  
+3. Add a `<security>` element to the `<binding>` element.  
   
-4.  Set the `authenticationMode` attribute to one of the values described below. For example, the following code sets the mode to `AnonymousForCertificate`.  
+4. Set the `authenticationMode` attribute to one of the values described below. For example, the following code sets the mode to `AnonymousForCertificate`.  
   
     ```xml  
     <bindings>  
@@ -36,14 +36,14 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
   
 #### To set the mode programmatically  
   
-1.  Determine the return type, which can be one of the following: <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>, <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>, <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>, or <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
+1. Determine the return type, which can be one of the following: <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>, <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>, <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>, or <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
   
-2.  Call the appropriate static method of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. For example, the following code calls the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateAnonymousForCertificateBindingElement%2A> method.  
+2. Call the appropriate static method of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. For example, the following code calls the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateAnonymousForCertificateBindingElement%2A> method.  
   
      [!code-csharp[c_CustomBindingsAuthMode#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombindingsauthmode/cs/source.cs#3)]
      [!code-vb[c_CustomBindingsAuthMode#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombindingsauthmode/vb/source.vb#3)]  
   
-3.  Use the binding element to create the custom binding. For more information, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
+3. Use the binding element to create the custom binding. For more information, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
 ## Mode Descriptions  
   

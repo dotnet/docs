@@ -69,7 +69,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [-x](subtraction-operator.md) – numeric negation.
 
-[\!x](logical-negation-operator.md) – logical negation.
+[\!x](boolean-logical-operators.md#logical-negation-operator-) – logical negation.
 
 [~x](bitwise-complement-operator.md) – bitwise complement.
 
@@ -157,13 +157,13 @@ This operator has higher precedence than the next section and lower precedence t
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x && y](conditional-and-operator.md) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
+[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
 
 ## Conditional OR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x &#124;&#124; y](conditional-or-operator.md) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
+[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
 
 ## Null-coalescing operator
 

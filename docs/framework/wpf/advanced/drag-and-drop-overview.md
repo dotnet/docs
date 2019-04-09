@@ -175,11 +175,11 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
  To specify that an element is a drop target, you set its <xref:System.Windows.UIElement.AllowDrop%2A> property to `true`. The drop target events will then be raised on the element so that you can handle them. During a drag-and-drop operation, the following sequence of events occurs on the drop target:  
   
-1.  <xref:System.Windows.DragDrop.DragEnter>  
+1. <xref:System.Windows.DragDrop.DragEnter>  
   
-2.  <xref:System.Windows.DragDrop.DragOver>  
+2. <xref:System.Windows.DragDrop.DragOver>  
   
-3.  <xref:System.Windows.DragDrop.DragLeave> or <xref:System.Windows.DragDrop.Drop>  
+3. <xref:System.Windows.DragDrop.DragLeave> or <xref:System.Windows.DragDrop.Drop>  
   
  The <xref:System.Windows.DragDrop.DragEnter> event occurs when the data is dragged into the drop target's boundary. You typically handle this event to provide a preview of the effects of the drag-and-drop operation, if appropriate for your application. Do not set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property in the <xref:System.Windows.DragDrop.DragEnter> event, as it will be overwritten in the <xref:System.Windows.DragDrop.DragOver> event.  
   

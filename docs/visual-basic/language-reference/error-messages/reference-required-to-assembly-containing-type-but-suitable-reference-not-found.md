@@ -19,9 +19,9 @@ An expression uses a type, such as a class, structure, interface, enumeration, o
   
 ## To correct this error  
   
-1.  Determine which project produces the best assembly for your project to reference. For this decision, you might use criteria such as ease of file access and frequency of updates.  
+1. Determine which project produces the best assembly for your project to reference. For this decision, you might use criteria such as ease of file access and frequency of updates.  
   
-2.  In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
+2. In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
   
 ## See also
 

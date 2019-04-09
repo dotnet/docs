@@ -10,11 +10,11 @@ Use the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property on a 
   
 ### To specify the name of the database  
   
-1.  Add the <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute to the class declaration for the database.  
+1. Add the <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute to the class declaration for the database.  
   
-2.  Add the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property to the <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute.  
+2. Add the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property to the <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute.  
   
-3.  Set the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property value to the name that you want to specify.  
+3. Set the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property value to the name that you want to specify.  
   
 ## See also
 

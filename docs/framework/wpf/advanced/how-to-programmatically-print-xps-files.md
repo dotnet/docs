@@ -19,13 +19,13 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
 ## Example  
  The main steps to using the three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method are as follows. The example below gives details.  
   
-1.  Determine if the printer is an XPSDrv printer. (See [Printing Overview](printing-overview.md) for more about XPSDrv.)  
+1. Determine if the printer is an XPSDrv printer. (See [Printing Overview](printing-overview.md) for more about XPSDrv.)  
   
-2.  If the printer is not an XPSDrv printer, set the thread's apartment to single thread.  
+2. If the printer is not an XPSDrv printer, set the thread's apartment to single thread.  
   
-3.  Instantiate a print server and print queue object.  
+3. Instantiate a print server and print queue object.  
   
-4.  Call the method, specifying a job name, the file to be printed, and a <xref:System.Boolean> flag indicating whether or not the printer is an XPSDrv printer.  
+4. Call the method, specifying a job name, the file to be printed, and a <xref:System.Boolean> flag indicating whether or not the printer is an XPSDrv printer.  
   
  The example below shows how to batch print all [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files in a directory. Although the application prompts the user to specify the directory, the three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method does not require a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. It can be used in any code path where you have an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] file name and path that you can pass to it.  
   

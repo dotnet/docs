@@ -15,7 +15,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
   
 ### To render an image with GDI+  
   
-1.  Create an object representing the image you want to display. This object must be a member of a class that inherits from <xref:System.Drawing.Image>, such as <xref:System.Drawing.Bitmap> or <xref:System.Drawing.Imaging.Metafile>. An example is shown:  
+1. Create an object representing the image you want to display. This object must be a member of a class that inherits from <xref:System.Drawing.Image>, such as <xref:System.Drawing.Bitmap> or <xref:System.Drawing.Imaging.Metafile>. An example is shown:  
   
     ```vb  
     ' Uses the System.Environment.GetFolderPath to get the path to the   
@@ -41,7 +41,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
           (System::Environment::SpecialFolder::MyPictures));  
     ```  
   
-2.  Create a <xref:System.Drawing.Graphics> object that represents the drawing surface you want to use. For more information, see [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md).  
+2. Create a <xref:System.Drawing.Graphics> object that represents the drawing surface you want to use. For more information, see [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md).  
   
     ```vb  
     ' Creates a Graphics object that represents the drawing surface of   
@@ -61,7 +61,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     Graphics^ g = button1->CreateGraphics();  
     ```  
   
-3.  Call the <xref:System.Drawing.Graphics.DrawImage%2A> of your graphics object to render the image. You must specify both the image to be drawn, and the coordinates where it is to be drawn.  
+3. Call the <xref:System.Drawing.Graphics.DrawImage%2A> of your graphics object to render the image. You must specify both the image to be drawn, and the coordinates where it is to be drawn.  
   
     ```vb  
     g.DrawImage(myBitmap, 1, 1)  

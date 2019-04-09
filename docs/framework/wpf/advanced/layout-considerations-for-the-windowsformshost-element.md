@@ -78,13 +78,13 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 ### Sizing Algorithm  
  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element uses the following procedure to size the hosted control:  
   
-1.  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element overrides the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods.  
+1. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element overrides the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods.  
   
-2.  To determine the size of the hosted control, the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method calls the hosted control's <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method with a constraint translated from the constraint passed to the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method.  
+2. To determine the size of the hosted control, the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method calls the hosted control's <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method with a constraint translated from the constraint passed to the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method.  
   
-3.  The <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> method attempts to set the hosted control to the given size constraint.  
+3. The <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> method attempts to set the hosted control to the given size constraint.  
   
-4.  If the hosted control's <xref:System.Windows.Forms.Control.Size%2A> property matches the specified constraint, the hosted control is sized to the constraint.  
+4. If the hosted control's <xref:System.Windows.Forms.Control.Size%2A> property matches the specified constraint, the hosted control is sized to the constraint.  
   
  If the <xref:System.Windows.Forms.Control.Size%2A> property does not match the specified constraint, the hosted control does not support continuous sizing. For example, the <xref:System.Windows.Forms.MonthCalendar> control allows only discrete sizes. The permitted sizes for this control consist of integers (representing the number of months) for both height and width. In cases such as this, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element behaves as follows:  
   

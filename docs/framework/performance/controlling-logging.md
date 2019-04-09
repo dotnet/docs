@@ -39,7 +39,7 @@ Provider                                 GUID
   
 #### To capture CLR ETW events using Logman  
   
-1.  At the command prompt, type:  
+1. At the command prompt, type:  
   
      `logman start clrevents -p {e13c0d23-ccbc-4e12-931b-d9cc2eee27e4} 0x1CCBD 0x5 -ets -ct perf`  
   
@@ -55,7 +55,7 @@ Provider                                 GUID
   
     -   The `-ct perf` parameter specifies that the `QueryPerformanceCounter` function will be used to log the time stamp for each event.  
   
-2.  To stop logging the events, type:  
+2. To stop logging the events, type:  
   
      `logman stop clrevents -ets`  
   
@@ -63,13 +63,13 @@ Provider                                 GUID
   
 #### To capture CLR ETW events using Xperf  
   
-1.  At the command prompt, type:  
+1. At the command prompt, type:  
   
      `xperf -start clr -on e13c0d23-ccbc-4e12-931b-d9cc2eee27e4:0x1CCBD:5 -f clrevents.etl`  
   
      where the GUID is the CLR ETW provider GUID, and `0x1CCBD:5` traces everything at and below level 5 (verbose).  
   
-2.  To stop tracing, type:  
+2. To stop tracing, type:  
   
      `Xperf -stop clr`  
   

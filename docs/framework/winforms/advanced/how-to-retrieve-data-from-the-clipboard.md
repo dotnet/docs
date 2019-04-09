@@ -25,14 +25,14 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
   
 ### To retrieve data from the Clipboard in a single, common format  
   
-1.  Use the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A>, <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.GetImage%2A>, or <xref:System.Windows.Forms.Clipboard.GetText%2A> method. Optionally, use the corresponding `Contains`*Format* methods first to determine whether data is available in a particular format. These methods are available only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)].  
+1. Use the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A>, <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.GetImage%2A>, or <xref:System.Windows.Forms.Clipboard.GetText%2A> method. Optionally, use the corresponding `Contains`*Format* methods first to determine whether data is available in a particular format. These methods are available only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)].  
   
      [!code-csharp[System.Windows.Forms.Clipboard#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#2)]
      [!code-vb[System.Windows.Forms.Clipboard#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#2)]  
   
 ### To retrieve data from the Clipboard in a custom format  
   
-1.  Use the <xref:System.Windows.Forms.Clipboard.GetData%2A> method with a custom format name. This method is available only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)].  
+1. Use the <xref:System.Windows.Forms.Clipboard.GetData%2A> method with a custom format name. This method is available only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)].  
   
      You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.  
   
@@ -43,7 +43,7 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
   
 ### To retrieve data from the Clipboard in multiple formats  
   
-1.  Use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method. You must use this method to retrieve data from the Clipboard on versions earlier than [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)].  
+1. Use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method. You must use this method to retrieve data from the Clipboard on versions earlier than [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)].  
   
      [!code-csharp[System.Windows.Forms.Clipboard#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#4)]
      [!code-vb[System.Windows.Forms.Clipboard#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#4)]  

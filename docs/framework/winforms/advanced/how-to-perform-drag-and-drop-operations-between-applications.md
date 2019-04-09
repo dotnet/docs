@@ -12,21 +12,21 @@ Performing drag-and-drop operations between applications is no different than en
   
 ### To perform a drag-and-drop procedure between applications  
   
-1.  Create a new Windows Forms application.  
+1. Create a new Windows Forms application.  
   
-2.  Add a <xref:System.Windows.Forms.TextBox> control to your form.  
+2. Add a <xref:System.Windows.Forms.TextBox> control to your form.  
   
-3.  Configure the <xref:System.Windows.Forms.TextBox> control to receive dropped data.  
+3. Configure the <xref:System.Windows.Forms.TextBox> control to receive dropped data.  
   
      For more information, see [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md).  
   
-4.  Run your Windows-based application, and while the application is running, run WordPad.  
+4. Run your Windows-based application, and while the application is running, run WordPad.  
   
      WordPad is a text editor installed by Windows that allows drag-and-drop operations. It is accessible by pressing the **Start** button, selecting **Run**, and then typing `WordPad` into the text box of the **Run** dialog box and clicking **OK**.  
   
-5.  Once WordPad is open, type a string of text into it.  
+5. Once WordPad is open, type a string of text into it.  
   
-6.  Using the mouse, select the text, and then drag the selected text over to the <xref:System.Windows.Forms.TextBox> control in your Windows-based application.  
+6. Using the mouse, select the text, and then drag the selected text over to the <xref:System.Windows.Forms.TextBox> control in your Windows-based application.  
   
      Observe that when you mouse over the <xref:System.Windows.Forms.TextBox> control (and, consequently, raise the <xref:System.Windows.Forms.Control.DragEnter> event), the cursor changes, and you can drop the selected text into the <xref:System.Windows.Forms.TextBox> control.  
   

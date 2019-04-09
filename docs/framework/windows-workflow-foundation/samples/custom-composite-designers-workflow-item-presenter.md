@@ -61,9 +61,9 @@ The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in
 
 #### To setup, build, and run the sample
 
-1.  Open the solution in Visual Studio 2010.
+1. Open the solution in Visual Studio 2010.
 
-2.  Press F5 to compile and run the application.
+2. Press F5 to compile and run the application.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

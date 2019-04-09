@@ -23,9 +23,9 @@ Print queues are not always available for 24 hours a day. They have start and en
   
  There are two major steps for this kind of function as follows.  
   
-1.  Read the <xref:System.Printing.PrintQueue.StartTimeOfDay%2A> and <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A> properties of the <xref:System.Printing.PrintQueue> to determine whether the current time is between them.  
+1. Read the <xref:System.Printing.PrintQueue.StartTimeOfDay%2A> and <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A> properties of the <xref:System.Printing.PrintQueue> to determine whether the current time is between them.  
   
-2.  Read the <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A> and <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A> properties of the <xref:System.Printing.PrintSystemJobInfo> to determine whether the current time is between them.  
+2. Read the <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A> and <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A> properties of the <xref:System.Printing.PrintSystemJobInfo> to determine whether the current time is between them.  
   
  But complications arise from the fact that these properties are not <xref:System.DateTime> objects. Instead they are <xref:System.Int32> objects that express the time of day as the number of minutes since midnight. Moreover, this is not midnight in the current time zone, but midnight UTC (Coordinated Universal Time).  
   

@@ -90,29 +90,29 @@ A memory-mapped file contains the contents of a file in virtual memory. This map
   
  The following example consists of three separate processes (console applications) that write Boolean values to a memory-mapped file. The following sequence of actions occur:  
   
-1.  `Process A` creates the memory-mapped file and writes a value to it.  
+1. `Process A` creates the memory-mapped file and writes a value to it.  
   
-2.  `Process B` opens the memory-mapped file and writes a value to it.  
+2. `Process B` opens the memory-mapped file and writes a value to it.  
   
-3.  `Process C` opens the memory-mapped file and writes a value to it.  
+3. `Process C` opens the memory-mapped file and writes a value to it.  
   
-4.  `Process A` reads and displays the values from the memory-mapped file.  
+4. `Process A` reads and displays the values from the memory-mapped file.  
   
-5.  After `Process A` is finished with the memory-mapped file, the file is immediately reclaimed by garbage collection.  
+5. After `Process A` is finished with the memory-mapped file, the file is immediately reclaimed by garbage collection.  
   
  To run this example, do the following:  
   
-1.  Compile the applications and open three Command Prompt windows.  
+1. Compile the applications and open three Command Prompt windows.  
   
-2.  In the first Command Prompt window, run `Process A`.  
+2. In the first Command Prompt window, run `Process A`.  
   
-3.  In the second Command Prompt window, run `Process B`.  
+3. In the second Command Prompt window, run `Process B`.  
   
-4.  Return to `Process A` and press ENTER.  
+4. Return to `Process A` and press ENTER.  
   
-5.  In the third Command Prompt window, run `Process C`.  
+5. In the third Command Prompt window, run `Process C`.  
   
-6.  Return to `Process A` and press ENTER.  
+6. Return to `Process A` and press ENTER.  
   
  The output of `Process A` is as follows:  
   

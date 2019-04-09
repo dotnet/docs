@@ -25,11 +25,11 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
 > [!NOTE]
 >  All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
-1.  Upgrade the application.  
+1. Upgrade the application.  
   
      A project created by using an earlier version of Visual Studio and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] must be upgraded to use Visual Studio 2008 SP1 and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1.  
   
-2.  Define the models and mapping.  
+2. Define the models and mapping.  
   
      The model and mapping files define entities in the conceptual model; structures in the data source, such as tables, stored procedures, and views; and the mapping between the entities and data source structures. For more information, see [How to: Manually Define the Model and Mapping Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399785(v=vs.100)).  
   
@@ -38,11 +38,11 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
     > [!NOTE]
     >  The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)).  
   
-3.  Define the connection string.  
+3. Define the connection string.  
   
      The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses a specially formatted connection string when executing queries against a conceptual model. This connection string encapsulates information about the model and mapping files and the connection to the data source. For more information, see [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md).  
   
-4.  Configure the Visual Studio project.  
+4. Configure the Visual Studio project.  
   
      References to [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] assemblies and the model and mapping files must be added to the Visual Studio project. You can add these mapping files to the project to ensure that they are deployed with the application in the location that is indicated in the connection string. For more information, see [How to: Manually Configure an Entity Framework Project](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).  
   

@@ -8,7 +8,7 @@ Windows Communication Foundation (WCF) services are wire-level compatible with W
   
 ### To enable a WCF service to interoperate with WSE 3.0 clients  
   
-1.  Define a custom binding for the WCF service.  
+1. Define a custom binding for the WCF service.  
   
      To specify that the August 2004 version of the WS-Addressing specification is used for message encoding, a custom binding must be created.  
   
@@ -38,7 +38,7 @@ Windows Communication Foundation (WCF) services are wire-level compatible with W
         > [!NOTE]
         >  When you are using SOAP 1.2, set the `messageVersion` attribute to <xref:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004%2A>.  
   
-2.  Specify that the service uses the custom binding.  
+2. Specify that the service uses the custom binding.  
   
     1.  Set the `binding` attribute of the [\<endpoint>](../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element to `customBinding`.  
   

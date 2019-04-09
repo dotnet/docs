@@ -12,11 +12,11 @@ A custom expression editor can be implemented to provide a richer or simpler exp
   
  Three basic steps are needed to implement a custom expression editor:  
   
-1.  Implement the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface. This interface manages the creation and destruction of expression editors.  
+1. Implement the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface. This interface manages the creation and destruction of expression editors.  
   
-2.  Implement the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> interface. This interface implements the UI for expression editing UI.  
+2. Implement the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> interface. This interface implements the UI for expression editing UI.  
   
-3.  Publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> in your rehosted workflow application.  
+3. Publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> in your rehosted workflow application.  
   
 ## Implementing a Custom Expression Editor in a Class Library  
  Here is a sample of code for a (proof of concept) `MyEditorService` class that implements the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface is contained in a MyExpressionEditorService library project.  

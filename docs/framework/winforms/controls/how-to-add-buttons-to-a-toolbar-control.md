@@ -23,9 +23,9 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
   
 ### To add buttons programmatically  
   
-1.  In a procedure, create toolbar buttons by adding them to the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection.  
+1. In a procedure, create toolbar buttons by adding them to the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection.  
   
-2.  Specify property settings for an individual button by passing the button's index via the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property.  
+2. Specify property settings for an individual button by passing the button's index via the <xref:System.Windows.Forms.ToolBar.Buttons%2A> property.  
   
      The example below assumes a form with a <xref:System.Windows.Forms.ToolBar> control already added.  
   

@@ -21,9 +21,9 @@ After you have added controls to your form and determined the user interface for
   
 ### To bind a control at design time  
   
-1.  Drag a <xref:System.Windows.Forms.TextBox> control on to the form.  
+1. Drag a <xref:System.Windows.Forms.TextBox> control on to the form.  
   
-2.  In the **Properties** window:  
+2. In the **Properties** window:  
   
     1.  Expand the **(DataBindings)** node.  
   
@@ -33,17 +33,17 @@ After you have added controls to your form and determined the user interface for
   
          If a data source has previously been configured for the project or form, it will appear.  
   
-3.  Click **Add Project Data Source** to connect to data and create a data source.  
+3. Click **Add Project Data Source** to connect to data and create a data source.  
   
-4.  On the **Data Source Configuration Wizard** welcome page, click **Next**.  
+4. On the **Data Source Configuration Wizard** welcome page, click **Next**.  
   
-5.  On the **Choose a Data Source Type** page, select **Database**.  
+5. On the **Choose a Data Source Type** page, select **Database**.  
   
-6.  On the **Choose Your Data Connection** page, select a data connection from the list of available connections. If your desired data connection is not available select **New Connection** to create a new data connection.  
+6. On the **Choose Your Data Connection** page, select a data connection from the list of available connections. If your desired data connection is not available select **New Connection** to create a new data connection.  
   
-7.  Select **Yes, save the connection** to save the connection string in the application configuration file.  
+7. Select **Yes, save the connection** to save the connection string in the application configuration file.  
   
-8.  Select the database objects to bring into your application. In this case, select a field in a table that you would like the <xref:System.Windows.Forms.TextBox> to display.  
+8. Select the database objects to bring into your application. In this case, select a field in a table that you would like the <xref:System.Windows.Forms.TextBox> to display.  
   
 9. Replace the default dataset name if you want.  
   

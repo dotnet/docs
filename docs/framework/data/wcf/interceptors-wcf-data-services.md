@@ -21,9 +21,9 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
   
  Change interceptors, which are called when processing non-query operations, must return `void` (`Nothing` in Visual Basic). Change interceptor methods must accept the following two parameters:  
   
-1.  A parameter of a type that is compatible with the entity type of the entity set. When the data service invokes the change interceptor, the value of this parameter will reflect the entity information that is sent by the request.  
+1. A parameter of a type that is compatible with the entity type of the entity set. When the data service invokes the change interceptor, the value of this parameter will reflect the entity information that is sent by the request.  
   
-2.  A parameter of type <xref:System.Data.Services.UpdateOperations>. When the data service invokes the change interceptor, the value of this parameter will reflect the operation that the request is trying to perform.  
+2. A parameter of type <xref:System.Data.Services.UpdateOperations>. When the data service invokes the change interceptor, the value of this parameter will reflect the operation that the request is trying to perform.  
   
  The following is an example definition of a change interceptor.  
   

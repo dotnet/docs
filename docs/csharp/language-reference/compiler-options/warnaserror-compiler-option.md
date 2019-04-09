@@ -29,11 +29,11 @@ The **-warnaserror+** option treats all warnings as errors
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Modify the **Treat Warnings As Errors** property.  
+3. Modify the **Treat Warnings As Errors** property.  
   
  To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.TreatWarningsAsErrors>.  
   

@@ -10,4 +10,4 @@ You have attempted to use `StrConv.LinguisticCasing`, which is only valid in com
   
 ## To correct this error  
   
-1.  Use `StrConv.LowerCase` or `StrConv.UpperCase` in conjunction with `StrConv.LinguisticCasing`.  
+1. Use `StrConv.LowerCase` or `StrConv.UpperCase` in conjunction with `StrConv.LinguisticCasing`.  

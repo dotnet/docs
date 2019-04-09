@@ -25,15 +25,15 @@ You can make your control align to the edge of your forms by setting the <xref:S
   
 ### To set the Dock property for your control at design time  
   
-1.  In the Windows Forms Designer, select your control.  
+1. In the Windows Forms Designer, select your control.  
   
-2.  In the **Properties** window, click the drop-down box next to the <xref:System.Windows.Forms.Control.Dock%2A> property.  
+2. In the **Properties** window, click the drop-down box next to the <xref:System.Windows.Forms.Control.Dock%2A> property.  
   
      A graphical interface representing the six possible <xref:System.Windows.Forms.Control.Dock%2A> settings is displayed.  
   
-3.  Choose the appropriate setting.  
+3. Choose the appropriate setting.  
   
-4.  Your control will now dock in the manner specified by the setting.  
+4. Your control will now dock in the manner specified by the setting.  
   
 ## See also
 

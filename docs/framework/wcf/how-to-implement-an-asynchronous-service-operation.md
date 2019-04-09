@@ -11,14 +11,14 @@ In Windows Communication Foundation (WCF) applications, a service operation can 
   
 ### Implement a service operation asynchronously  
   
-1.  In your service contract, declare an asynchronous method pair according to the .NET asynchronous design guidelines. The `Begin` method takes a parameter, a callback object, and a state object, and returns a <xref:System.IAsyncResult?displayProperty=nameWithType> and a matching `End` method that takes a <xref:System.IAsyncResult?displayProperty=nameWithType> and returns the return value. For more information about asynchronous calls, see [Asynchronous Programming Design Patterns](https://go.microsoft.com/fwlink/?LinkId=248221).  
+1. In your service contract, declare an asynchronous method pair according to the .NET asynchronous design guidelines. The `Begin` method takes a parameter, a callback object, and a state object, and returns a <xref:System.IAsyncResult?displayProperty=nameWithType> and a matching `End` method that takes a <xref:System.IAsyncResult?displayProperty=nameWithType> and returns the return value. For more information about asynchronous calls, see [Asynchronous Programming Design Patterns](https://go.microsoft.com/fwlink/?LinkId=248221).  
   
-2.  Mark the `Begin` method of the asynchronous method pair with the <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> attribute and set the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A?displayProperty=nameWithType> property to `true`. For example, the following code performs steps 1 and 2.  
+2. Mark the `Begin` method of the asynchronous method pair with the <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> attribute and set the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A?displayProperty=nameWithType> property to `true`. For example, the following code performs steps 1 and 2.  
   
      [!code-csharp[C_SyncAsyncClient#6](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#6)]
      [!code-vb[C_SyncAsyncClient#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#6)]  
   
-3.  Implement the `Begin/End` method pair in your service class according to the asynchronous design guidelines. For example, the following code example shows an implementation in which a string is written to the console in both the `Begin` and `End` portions of the asynchronous service operation, and the return value of the `End` operation is returned to the client. For the complete code example, see the Example section.  
+3. Implement the `Begin/End` method pair in your service class according to the asynchronous design guidelines. For example, the following code example shows an implementation in which a string is written to the console in both the `Begin` and `End` portions of the asynchronous service operation, and the return value of the `End` operation is returned to the client. For the complete code example, see the Example section.  
   
      [!code-csharp[C_SyncAsyncClient#3](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#3)]
      [!code-vb[C_SyncAsyncClient#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#3)]  
@@ -26,7 +26,7 @@ In Windows Communication Foundation (WCF) applications, a service operation can 
 ## Example  
  The following code examples show:  
   
-1.  A service contract interface with:  
+1. A service contract interface with:  
   
     1.  A synchronous `SampleMethod` operation.  
   
@@ -34,7 +34,7 @@ In Windows Communication Foundation (WCF) applications, a service operation can 
   
     3.  An asynchronous `BeginServiceAsyncMethod`/`EndServiceAsyncMethod` operation pair.  
   
-2.  A service implementation using a <xref:System.IAsyncResult?displayProperty=nameWithType> object.  
+2. A service implementation using a <xref:System.IAsyncResult?displayProperty=nameWithType> object.  
   
  [!code-csharp[C_SyncAsyncClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#1)]
  [!code-vb[C_SyncAsyncClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#1)]  

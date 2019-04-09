@@ -128,9 +128,9 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
 ### Returning Task Result and Task Data from a Task to a Calling Page  
  Once the user has finished using the called page, signified in this example by pressing either the OK or Cancel buttons, the called page needs to return. Since the calling page used the called page to collect data from the user, the calling page requires two types of information:  
   
-1.  Whether the user canceled the called page (by pressing either the OK button or the Cancel button in this example). This allows the calling page to determine whether to process the data that the calling page gathered from the user.  
+1. Whether the user canceled the called page (by pressing either the OK button or the Cancel button in this example). This allows the calling page to determine whether to process the data that the calling page gathered from the user.  
   
-2.  The data that was provided by the user.  
+2. The data that was provided by the user.  
   
  To return information, <xref:System.Windows.Navigation.PageFunction%601> implements the <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> method. The following code shows how to call it.  
   

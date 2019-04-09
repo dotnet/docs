@@ -52,13 +52,13 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
   
  Regardless of the scenario, the runtime loads the default federation configuration. The behavior is defined as follows:  
   
-1.  If there is no `<federationConfiguration>` element present, the runtime creates a federation configuration and populates it with default values. This default federation configuration will reference the default identity configuration.  
+1. If there is no `<federationConfiguration>` element present, the runtime creates a federation configuration and populates it with default values. This default federation configuration will reference the default identity configuration.  
   
-2.  If a single `<federationConfiguration>` element is present, it is the default federation configuration regardless of whether it is named or unnamed. If its `identityConfiguration` attribute is specified, the named identity configuration is referenced; otherwise, the default identity configuration is referenced.  
+2. If a single `<federationConfiguration>` element is present, it is the default federation configuration regardless of whether it is named or unnamed. If its `identityConfiguration` attribute is specified, the named identity configuration is referenced; otherwise, the default identity configuration is referenced.  
   
-3.  If an unnamed `<federationConfiguration>` element is present, it is the default federation configuration. If its `identityConfiguration` attribute is specified, the named identity configuration is referenced; otherwise, the default identity configuration is referenced.  
+3. If an unnamed `<federationConfiguration>` element is present, it is the default federation configuration. If its `identityConfiguration` attribute is specified, the named identity configuration is referenced; otherwise, the default identity configuration is referenced.  
   
-4.  If multiple named `<federationConfiguration>` elements are present and no unnamed `<federationConfiguration>` element is present, an exception is thrown.  
+4. If multiple named `<federationConfiguration>` elements are present and no unnamed `<federationConfiguration>` element is present, an exception is thrown.  
   
  Typically, only a single `<federationConfiguration>` section is defined. This section is the default federation configuration. You may specify multiple, uniquely-named `<federationConfiguration>` elements; however, in this case, if you want to load a federation configuration other than the unnamed one, you must provide a handler for the. <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated> event and set the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=nameWithType> property inside the handler to a <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object initialized with values from the appropriate `<federationConfiguration>` element in the configuration file.  
   

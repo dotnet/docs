@@ -14,7 +14,7 @@ When the <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.For
   
 ### To opt out of file dialog box automatic upgrade  
   
-1.  Set the <xref:System.Windows.Forms.FileDialog.AutoUpgradeEnabled%2A> property of <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog> to `false` before you display the dialog box.  
+1. Set the <xref:System.Windows.Forms.FileDialog.AutoUpgradeEnabled%2A> property of <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog> to `false` before you display the dialog box.  
   
 ## See also
 

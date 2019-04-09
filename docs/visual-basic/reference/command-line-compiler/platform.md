@@ -62,9 +62,9 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 ### To set -platform in the Visual Studio IDE  
   
-1.  In **Solution Explorer**, choose the project, open the **Project** menu, and then click **Properties**.  
+1. In **Solution Explorer**, choose the project, open the **Project** menu, and then click **Properties**.  
   
-2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
+2. On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   
      For more information, see [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   

@@ -26,7 +26,7 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
   
 ### To create an access key for a control  
   
-1.  Set the `Text` property to a string that includes an ampersand (&) before the letter that will be the shortcut.  
+1. Set the `Text` property to a string that includes an ampersand (&) before the letter that will be the shortcut.  
   
     ```vb  
     ' Set the letter "P" as an access key.  

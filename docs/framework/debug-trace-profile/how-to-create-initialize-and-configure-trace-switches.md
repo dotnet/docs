@@ -25,9 +25,9 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 #### To create and initialize a trace switch  
   
-1.  Define a switch as either type <xref:System.Diagnostics.BooleanSwitch?displayProperty=nameWithType> or type <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType> and set the name and description of the switch.  
+1. Define a switch as either type <xref:System.Diagnostics.BooleanSwitch?displayProperty=nameWithType> or type <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType> and set the name and description of the switch.  
   
-2.  Configure your trace switch. For more information, see [Configuring trace switches](#configure).  
+2. Configure your trace switch. For more information, see [Configuring trace switches](#configure).  
   
      The following code creates two switches, one of each type:  
   
@@ -65,9 +65,9 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 #### To configure trace switches  
   
-1.  In order to use trace switches, you must first create them and place them in your code as described in the section [Creating and initializing a trace switch](#create).  
+1. In order to use trace switches, you must first create them and place them in your code as described in the section [Creating and initializing a trace switch](#create).  
   
-2.  If your project does not contain a configuration file (app.config or Web.config), then from the **Project** menu, select **Add New Item**.  
+2. If your project does not contain a configuration file (app.config or Web.config), then from the **Project** menu, select **Add New Item**.  
   
     -   **Visual Basic:** In the **Add New Item** dialog box, choose **Application Configuration File**.  
   
@@ -82,7 +82,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
          When your project is compiled, the app.config file is copied to the project output folder and is renamed *applicationname*.exe.config.  
   
-3.  After the `<configuration>` tag but before the `</configuration>` tag, add the appropriate XML to configure your switches. The following examples demonstrate a **BooleanSwitch** with a **DisplayName** property of `DataMessageSwitch` and a **TraceSwitch** with a **DisplayName** property of `TraceLevelSwitch`.  
+3. After the `<configuration>` tag but before the `</configuration>` tag, add the appropriate XML to configure your switches. The following examples demonstrate a **BooleanSwitch** with a **DisplayName** property of `DataMessageSwitch` and a **TraceSwitch** with a **DisplayName** property of `TraceLevelSwitch`.  
   
     ```xml  
     <system.diagnostics>  
@@ -95,11 +95,11 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
      In this configuration, both switches are off.  
   
-4.  If you need to turn on a **BooleanSwitch**, such as `DataMessagesSwitch` shown in the previous example, change the **Value** to any integer other than 0.  
+4. If you need to turn on a **BooleanSwitch**, such as `DataMessagesSwitch` shown in the previous example, change the **Value** to any integer other than 0.  
   
-5.  If you need to turn on a **TraceSwitch**, such as `TraceLevelSwitch` shown in the previous example, change the **Value** to the appropriate level setting (1 to 4).  
+5. If you need to turn on a **TraceSwitch**, such as `TraceLevelSwitch` shown in the previous example, change the **Value** to the appropriate level setting (1 to 4).  
   
-6.  Add comments to the .config file so the end user has a clear understanding of what values to change to configure the switches appropriately.  
+6. Add comments to the .config file so the end user has a clear understanding of what values to change to configure the switches appropriately.  
   
      The following example shows how the final code, including comments, might look:  
   

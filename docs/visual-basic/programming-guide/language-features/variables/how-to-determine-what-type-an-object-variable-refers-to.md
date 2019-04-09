@@ -12,14 +12,14 @@ An object variable contains a pointer to data that is stored elsewhere. The type
   
 ### To determine the exact type an object variable currently refers to  
   
-1.  On the object variable, call the <xref:System.Object.GetType%2A> method to retrieve a <xref:System.Type?displayProperty=nameWithType> object.  
+1. On the object variable, call the <xref:System.Object.GetType%2A> method to retrieve a <xref:System.Type?displayProperty=nameWithType> object.  
   
     ```  
     Dim myObject As Object  
     myObject.GetType()  
     ```  
   
-2.  On the <xref:System.Type?displayProperty=nameWithType> class, call the shared method <xref:System.Type.GetTypeCode%2A> to retrieve the <xref:System.TypeCode> enumeration value for the object's type.  
+2. On the <xref:System.Type?displayProperty=nameWithType> class, call the shared method <xref:System.Type.GetTypeCode%2A> to retrieve the <xref:System.TypeCode> enumeration value for the object's type.  
   
     ```  
     Dim myObject As Object  

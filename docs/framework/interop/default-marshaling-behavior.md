@@ -58,11 +58,11 @@ BSTR MethodOne (BSTR b) {
   
  If an interface is not from a known object, the marshaler does the following:  
   
-1.  The marshaler queries the object for the **IProvideClassInfo2** interface. If provided, the marshaler uses the CLSID returned from **IProvideClassInfo2.GetGUID** to identify the coclass providing the interface. With the CLSID, the marshaler can locate the wrapper from the registry if the assembly has previously been registered.  
+1. The marshaler queries the object for the **IProvideClassInfo2** interface. If provided, the marshaler uses the CLSID returned from **IProvideClassInfo2.GetGUID** to identify the coclass providing the interface. With the CLSID, the marshaler can locate the wrapper from the registry if the assembly has previously been registered.  
   
-2.  The marshaler queries the interface for the **IProvideClassInfo** interface. If provided, the marshaler uses the **ITypeInfo** returned from **IProvideClassInfo.GetClassinfo** to determine the CLSID of the class exposing the interface. The marshaler can use the CLSID to locate the metadata for the wrapper.  
+2. The marshaler queries the interface for the **IProvideClassInfo** interface. If provided, the marshaler uses the **ITypeInfo** returned from **IProvideClassInfo.GetClassinfo** to determine the CLSID of the class exposing the interface. The marshaler can use the CLSID to locate the metadata for the wrapper.  
   
-3.  If the marshaler still cannot identify the class, it wraps the interface with a generic wrapper class called **System.__ComObject**.  
+3. If the marshaler still cannot identify the class, it wraps the interface with a generic wrapper class called **System.__ComObject**.  
   
 ## Default marshaling for delegates  
  A managed delegate is marshaled as a COM interface or as a function pointer, based on the calling mechanism:  

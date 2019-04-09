@@ -41,11 +41,11 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
  At a high level, threat modeling involves the following key steps by using a grocery store as an example:  
   
-1.  **Identifying Assets**. A grocery store's assets might include employees, a safe, cash registers, and inventory.  
+1. **Identifying Assets**. A grocery store's assets might include employees, a safe, cash registers, and inventory.  
   
-2.  **Enumerating Entry Points**. A grocery store's entry points might include the front and back doors, windows, the loading dock, and air conditioning units.  
+2. **Enumerating Entry Points**. A grocery store's entry points might include the front and back doors, windows, the loading dock, and air conditioning units.  
   
-3.  **Investigating Attacks against Assets using Entry Points**. One possible attack could target a grocery store's *safe* asset through the *air conditioning* entry point; the air conditioning unit could be unscrewed to allow the safe to be pulled up through it and out of the store.  
+3. **Investigating Attacks against Assets using Entry Points**. One possible attack could target a grocery store's *safe* asset through the *air conditioning* entry point; the air conditioning unit could be unscrewed to allow the safe to be pulled up through it and out of the store.  
   
  Threat modeling is applied throughout [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and includes the following:  
   

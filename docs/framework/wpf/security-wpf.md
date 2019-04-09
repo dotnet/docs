@@ -97,15 +97,15 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  The collection of functionality that can be secured in this way is configured on a per-zone basis for the **Internet**, **Intranet**, **Trusted Sites**, and **Restricted Sites** zones. The following steps describe how to configure your security settings:  
   
-1.  Open **Control Panel**.  
+1. Open **Control Panel**.  
   
-2.  Click **Network and Internet** and then click **Internet Options**.  
+2. Click **Network and Internet** and then click **Internet Options**.  
   
      The Internet Options dialog box appears.  
   
-3.  On the **Security** tab, select the zone to configure the security settings for.  
+3. On the **Security** tab, select the zone to configure the security settings for.  
   
-4.  Click the **Custom Level** button.  
+4. Click the **Custom Level** button.  
   
      The **Security Settings** dialog box appears and you can configure the security settings for the selected zone.  
   

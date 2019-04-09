@@ -15,11 +15,11 @@ The `My.Computer.FileSystem.SpecialDirectories` object allows you to access spec
   
 #### To write new text files in the My Documents directory  
   
-1.  Use the `My.Computer.FileSystem.SpecialDirectories.MyDocuments` property to supply the path.  
+1. Use the `My.Computer.FileSystem.SpecialDirectories.MyDocuments` property to supply the path.  
   
      [!code-vb[VbFileIOWrite#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOWrite/VB/Class1.vb#1)]  
   
-2.  Use the `WriteAllText` method to write text to the specified file.  
+2. Use the `WriteAllText` method to write text to the specified file.  
   
      [!code-vb[VbVbcnMyFileSystem#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#14)]  
   

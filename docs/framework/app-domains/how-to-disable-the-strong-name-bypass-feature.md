@@ -28,11 +28,11 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
   
 ### To disable the strong-name bypass feature for a single application  
   
-1.  Open or create the application configuration file.  
+1. Open or create the application configuration file.  
   
      For more information about this file, see the Application Configuration Files section in [Configuring Apps](../../../docs/framework/configure-apps/index.md).  
   
-2.  Add the following entry:  
+2. Add the following entry:  
   
     ```xml  
     <configuration>  

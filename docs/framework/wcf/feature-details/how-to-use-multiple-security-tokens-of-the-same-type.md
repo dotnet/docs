@@ -10,31 +10,31 @@ ms.assetid: cf179f48-4ed4-4caa-86a5-ef8eecc231cd
   
 ### To use multiple security tokens of the same type  
   
-1.  Create an empty binding element collection to be populated.  
+1. Create an empty binding element collection to be populated.  
   
      [!code-csharp[C_CustomBinding#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#9)]  
   
-2.  Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> by calling <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement%2A>.  
+2. Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> by calling <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement%2A>.  
   
      [!code-csharp[C_CustomBinding#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#10)]  
   
-3.  Create a <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters> collection.  
+3. Create a <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters> collection.  
   
      [!code-csharp[C_CustomBinding#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#11)]  
   
-4.  Add SAML tokens to the collection.  
+4. Add SAML tokens to the collection.  
   
      [!code-csharp[C_CustomBinding#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#12)]  
   
-5.  Add the collection to the <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
+5. Add the collection to the <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
   
      [!code-csharp[C_CustomBinding#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#13)]  
   
-6.  Add binding elements to the binding element collection.  
+6. Add binding elements to the binding element collection.  
   
      [!code-csharp[C_CustomBinding#14](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#14)]  
   
-7.  Return a new custom binding created from the binding element collection.  
+7. Return a new custom binding created from the binding element collection.  
   
      [!code-csharp[C_CustomBinding#15](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#15)]  
   

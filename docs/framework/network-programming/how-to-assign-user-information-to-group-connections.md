@@ -12,7 +12,7 @@ ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
   
 ### To assign user information to a group connection  
   
-1.  Create a connection group name.  
+1. Create a connection group name.  
   
     ```csharp  
     SHA1Managed Sha1 = new SHA1Managed();  
@@ -26,7 +26,7 @@ ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
     Dim secureGroupName As [String] = Encoding.Default.GetString(updHash)  
     ```  
   
-2.  Create a request for a specific URL. For example, the following code creates a request for the URL `http://www.contoso.com.`  
+2. Create a request for a specific URL. For example, the following code creates a request for the URL `http://www.contoso.com.`  
   
     ```csharp  
     WebRequest myWebRequest=WebRequest.Create("http://www.contoso.com");  
@@ -36,7 +36,7 @@ ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
     Dim myWebRequest As WebRequest = WebRequest.Create("http://www.contoso.com")  
     ```  
   
-3.  Set the credentials and Connection GroupName for the Web request, and call **GetResponse** to retrieve a **WebResponse** object.  
+3. Set the credentials and Connection GroupName for the Web request, and call **GetResponse** to retrieve a **WebResponse** object.  
   
     ```csharp  
     myWebRequest.Credentials = new NetworkCredential(UserName, SecurelyStoredPassword, Domain);   
@@ -52,7 +52,7 @@ ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
     Dim myWebResponse As WebResponse = myWebRequest.GetResponse()  
     ```  
   
-4.  Close the response stream after using the WebRespose object.  
+4. Close the response stream after using the WebRespose object.  
   
     ```csharp  
     MyWebResponse.Close();  

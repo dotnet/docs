@@ -25,17 +25,17 @@ With the Windows Forms <xref:System.Windows.Forms.PictureBox> control, you can l
   
 ### To display a picture at design time  
   
-1.  Draw a <xref:System.Windows.Forms.PictureBox> control on a form.  
+1. Draw a <xref:System.Windows.Forms.PictureBox> control on a form.  
   
-2.  On the Properties window, select the <xref:System.Windows.Forms.PictureBox.Image%2A> property, then click the ellipsis button to display the **Open** dialog box.  
+2. On the Properties window, select the <xref:System.Windows.Forms.PictureBox.Image%2A> property, then click the ellipsis button to display the **Open** dialog box.  
   
-3.  If you are looking for a specific file type (for example, .gif files), select it in the **Files of type** box.  
+3. If you are looking for a specific file type (for example, .gif files), select it in the **Files of type** box.  
   
-4.  Select the file you want to display.  
+4. Select the file you want to display.  
   
 ### To clear the picture at design time  
   
-1.  On the **Properties** window, select the <xref:System.Windows.Forms.PictureBox.Image%2A> property and right-click the small thumbnail image that appears to the left of the name of the image object. Choose **Reset**.  
+1. On the **Properties** window, select the <xref:System.Windows.Forms.PictureBox.Image%2A> property and right-click the small thumbnail image that appears to the left of the name of the image object. Choose **Reset**.  
   
 ## See also
 

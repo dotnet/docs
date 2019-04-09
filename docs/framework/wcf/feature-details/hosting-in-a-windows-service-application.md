@@ -18,9 +18,9 @@ Windows services (formerly known as Windows NT services) provide a process model
   
 ### To host WCF inside of a Windows service application  
   
-1.  Create a Windows service application. You can write Windows service applications in managed code using the classes in the <xref:System.ServiceProcess> namespace. This application must include one class that inherits from <xref:System.ServiceProcess.ServiceBase>.  
+1. Create a Windows service application. You can write Windows service applications in managed code using the classes in the <xref:System.ServiceProcess> namespace. This application must include one class that inherits from <xref:System.ServiceProcess.ServiceBase>.  
   
-2.  Link the lifetime of the WCF services to the lifetime of the Windows service application. Typically, you want WCF services hosted in a Windows service application to become active when the hosting service starts, stop listening for messages when the hosting service is stopped, and shut down the hosting process when the WCF service encounters an error. This can be accomplished as follows:  
+2. Link the lifetime of the WCF services to the lifetime of the Windows service application. Typically, you want WCF services hosted in a Windows service application to become active when the hosting service starts, stop listening for messages when the hosting service is stopped, and shut down the hosting process when the WCF service encounters an error. This can be accomplished as follows:  
   
     -   Override <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> to open one or more instances of <xref:System.ServiceModel.ServiceHost>. A single Windows service application can host multiple WCF services that start and stop as a group.  
   

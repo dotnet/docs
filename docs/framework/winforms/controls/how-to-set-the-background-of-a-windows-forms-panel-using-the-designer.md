@@ -18,17 +18,17 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
   
 ### To set the background in the Windows Forms Designer  
   
-1.  Select the <xref:System.Windows.Forms.Panel> control.  
+1. Select the <xref:System.Windows.Forms.Panel> control.  
   
-2.  In the **Properties** window, click the arrow button next to the <xref:System.Windows.Forms.Control.BackColor%2A> property to display a window with three tabs.  
+2. In the **Properties** window, click the arrow button next to the <xref:System.Windows.Forms.Control.BackColor%2A> property to display a window with three tabs.  
   
-3.  Select the **Custom** tab to display a palette of colors.  
+3. Select the **Custom** tab to display a palette of colors.  
   
-4.  Select the **Web** or **System** tab to display a list of predefined names for colors, and then select a color.  
+4. Select the **Web** or **System** tab to display a list of predefined names for colors, and then select a color.  
   
-5.  In the **Properties** window, click the arrow button next to the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property.  
+5. In the **Properties** window, click the arrow button next to the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property.  
   
-6.  In the **Open** dialog box, select the file that you want to display.  
+6. In the **Open** dialog box, select the file that you want to display.  
   
 ## See also
 

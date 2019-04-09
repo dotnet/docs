@@ -12,15 +12,15 @@ This topic describes how to write a Windows Communication Foundation (WCF) clien
 ## Sending Messages  
  To be ready to send messages and receive and process replies, the following steps are required:  
   
-1.  Create a binding.  
+1. Create a binding.  
   
-2.  Build a channel factory.  
+2. Build a channel factory.  
   
-3.  Create a channel.  
+3. Create a channel.  
   
-4.  Send a request and read the reply.  
+4. Send a request and read the reply.  
   
-5.  Close all channel objects.  
+5. Close all channel objects.  
   
 #### Creating a Binding  
  Similar to the receiving case (see [Service Channel-Level Programming](../../../../docs/framework/wcf/extending/service-channel-level-programming.md)), sending messages starts by creating a binding. This example creates a new <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> and adds an <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType> to its Elements collection.  

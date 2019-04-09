@@ -18,9 +18,9 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
   
 ### To set a ToolTip programmatically  
   
-1.  Add the control that will display the ToolTip.  
+1. Add the control that will display the ToolTip.  
   
-2.  Use the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> method of the <xref:System.Windows.Forms.ToolTip> component.  
+2. Use the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> method of the <xref:System.Windows.Forms.ToolTip> component.  
   
     ```vb  
     ' In this example, Button1 is the control to display the ToolTip.  
@@ -39,15 +39,15 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
   
 ### To set a ToolTip in the designer  
   
-1.  Add a <xref:System.Windows.Forms.ToolTip> component to the form.  
+1. Add a <xref:System.Windows.Forms.ToolTip> component to the form.  
   
-2.  Select the control that will display the ToolTip, or add it to the form.  
+2. Select the control that will display the ToolTip, or add it to the form.  
   
-3.  In the **Properties** window, set the **ToolTip on ToolTip1** value to an appropriate string of text.  
+3. In the **Properties** window, set the **ToolTip on ToolTip1** value to an appropriate string of text.  
 
 ### To remove a ToolTip programmatically  
   
-1.  Use the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> method of the <xref:System.Windows.Forms.ToolTip> component.  
+1. Use the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> method of the <xref:System.Windows.Forms.ToolTip> component.  
   
     ```vb  
     ' In this example, Button1 is the control displaying the ToolTip.  
@@ -66,9 +66,9 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
   
 ### To remove a ToolTip in the designer  
   
-1.  Select the control that is displaying the ToolTip.  
+1. Select the control that is displaying the ToolTip.  
   
-2.  In the **Properties** window, delete the text in the **ToolTip on ToolTip1**.  
+2. In the **Properties** window, delete the text in the **ToolTip on ToolTip1**.  
 
 ## See also
 

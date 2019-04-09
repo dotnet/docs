@@ -12,16 +12,16 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 ## To request the default service document by using Internet Explorer
 
-1.  In Internet Explorer, from the **Tools** menu, select **Internet Options**, click the **Content** tab, click **Settings**, and clear **Turn on feed viewing**.
+1. In Internet Explorer, from the **Tools** menu, select **Internet Options**, click the **Content** tab, click **Settings**, and clear **Turn on feed viewing**.
 
      This makes sure that feed reading is disabled. If you do not disable this functionality, then the Web browser will treat the returned AtomPub encoded document as an XML feed instead of displaying the raw XML data.
 
     > [!NOTE]
     > If your browser cannot display the feed as raw XML data, you should still be able to view the feed as the source code for the page.
 
-2.  In Visual Studio, press the **F5** key to start debugging the application.
+2. In Visual Studio, press the **F5** key to start debugging the application.
 
-3.  Open a Web browser on the local computer. In the address bar, enter the following URI:
+3. Open a Web browser on the local computer. In the address bar, enter the following URI:
 
     ```
     http://localhost:12345/northwind.svc
@@ -31,7 +31,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 ## To access entity set resources from a Web browser
 
-1.  In the address bar of your Web browser, enter the following URI:
+1. In the address bar of your Web browser, enter the following URI:
 
     ```
     http://localhost:12345/northwind.svc/Customers
@@ -39,7 +39,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
      This returns a set of all customers in the Northwind sample database.
 
-2.  In the address bar of your Web browser, enter the following URI:
+2. In the address bar of your Web browser, enter the following URI:
 
     ```
     http://localhost:12345/northwind.svc/Customers('ALFKI')
@@ -47,7 +47,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
      This returns an entity instance for the specific customer, `ALFKI`.
 
-3.  In the address bar of your Web browser, enter the following URI:
+3. In the address bar of your Web browser, enter the following URI:
 
     ```
     http://localhost:12345/northwind.svc/Customers('ALFKI')/Orders
@@ -55,7 +55,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
      This traverses the relationship between customers and orders to return a set of all orders for the specific customer `ALFKI`.
 
-4.  In the address bar of your Web browser, enter the following URI:
+4. In the address bar of your Web browser, enter the following URI:
 
     ```
     http://localhost:12345/northwind.svc/Customers('ALFKI')/Orders?$filter=OrderID eq 10643

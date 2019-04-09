@@ -18,10 +18,10 @@ This sample shows how to use the <xref:System.Runtime.Serialization.Serializatio
   
 #### To set up, build and run the sample  
   
-1.  To execute the client, right-click the solution, SBGenericsVTS (6 projects) and then select **Properties**.  
+1. To execute the client, right-click the solution, SBGenericsVTS (6 projects) and then select **Properties**.  
   
-2.  In **Common Properties**, select **Startup Project**, then select **Multiple Startup Projects**.  
+2. In **Common Properties**, select **Startup Project**, then select **Multiple Startup Projects**.  
   
-3.  Select **Server** first, then **Client20** and then **Client40**. Select the **Start** action to these three projects and leave the rest set to **None**.  
+3. Select **Server** first, then **Client20** and then **Client40**. Select the **Start** action to these three projects and leave the rest set to **None**.  
   
-4.  Click **OK** and then press F5 to run the sample.
+4. Click **OK** and then press F5 to run the sample.

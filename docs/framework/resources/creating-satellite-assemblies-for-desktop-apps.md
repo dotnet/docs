@@ -46,10 +46,11 @@ Resource files play a central role in localized applications. They enable an app
   
 -   Information about the culture of the satellite assembly must be included in the assembly's metadata. To store the culture name in the satellite assembly's metadata, you specify the `/culture` option when you use [Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md) to embed resources in the satellite assembly.  
   
- The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+ The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). 
+ 
+ The following image shows the satellite assembly directory:
   
- ![Satellite assemblies](../../../docs/framework/resources/media/satelliteassemblydir.gif "satelliteassemblydir")  
-Satellite assembly directory  
+ ![A satellite assembly directory with localized cultures subdirectories.](./media/creating-satellite-assemblies-for-desktop-apps/satellite-assembly-directory.gif)
   
 ## Compiling Satellite Assemblies  
  You use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile text files or XML (.resx) files that contain resources to binary .resources files. You then use [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to compile .resources files into satellite assemblies. Al.exe creates an assembly from the .resources files that you specify. Satellite assemblies can contain only resources; they cannot contain any executable code.  
@@ -81,14 +82,14 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
 ## Satellite Assemblies: An Example  
  The following is a simple "Hello world" example that displays a message box containing a localized greeting. The example includes resources for the English (United States), French (France), and Russian (Russia) cultures, and its fallback culture is English. To create the example, do the following:  
   
-1.  Create a resource file named Greeting.resx or Greeting.txt to contain the resource for the default culture. Store a single string named `HelloString` whose value is "Hello world!" in this file.  
+1. Create a resource file named Greeting.resx or Greeting.txt to contain the resource for the default culture. Store a single string named `HelloString` whose value is "Hello world!" in this file.  
   
-2.  To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.  
+2. To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.  
   
      [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
      [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
   
-3.  Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:  
+3. Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:  
   
     -   To support the en-US or English (United States) culture, create a resource file named Greeting.en-US.resx or Greeting.en-US.txt, and store in it a single string named `HelloString` whose value is "Hi world!"  
   
@@ -96,7 +97,7 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
   
     -   To support the ru-RU or Russian (Russia) culture, create a resource file named Greeting.ru-RU.resx or Greeting.ru-RU.txt, and store in it a single string named `HelloString` whose value is "Всем привет!"  
   
-4.  Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following commands to compile the .resx files into .resources files:  
+4. Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following commands to compile the .resx files into .resources files:  
   
     ```console
     resgen Greeting.resx  
@@ -107,7 +108,7 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
   
      If your resources are in text files instead of XML files, replace the .resx extension with .txt.  
   
-5.  Compile the following source code along with the resources for the default culture into the application's main assembly:  
+5. Compile the following source code along with the resources for the default culture into the application's main assembly:  
   
     > [!IMPORTANT]
     >  If you are using the command line rather than Visual Studio to create the example, you should modify the call to the <xref:System.Resources.ResourceManager> class constructor to the following: `ResourceManager rm = new ResourceManager("Greetings", typeof(Example).Assembly);`  
@@ -127,9 +128,9 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
     vbc Example.vb -res:Greeting.resources  
     ```  
   
-6.  Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an en-US, an fr-FR, and an ru-RU subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process.  
+6. Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an en-US, an fr-FR, and an ru-RU subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process.  
   
-7.  Embed the individual culture-specific .resources files into satellite assemblies and save them to the appropriate directory. The command to do this for each .resources file is:  
+7. Embed the individual culture-specific .resources files into satellite assemblies and save them to the appropriate directory. The command to do this for each .resources file is:  
   
     ```console
     al -target:lib -embed:Greeting.culture.resources -culture:culture -out:culture\Example.resources.dll  
@@ -196,7 +197,7 @@ gacutil -i:StringLibrary.resources.dll
 ### Resources in the Global Assembly Cache: An Example  
  The following example uses a method in a .NET Framework class library to extract and return a localized greeting from a resource file. The library and its resources are registered in the global assembly cache. The example includes resources for the English (United States), French (France), Russian (Russia), and English cultures. English is the default culture; its resources are stored in the main assembly. The example initially delay signs the library and its satellite assemblies with a public key, then re-signs them with a public/private key pair. To create the example, do the following:  
   
-1.  If you are not using Visual Studio, use the following [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) command to create a public/private key pair named ResKey.snk:  
+1. If you are not using Visual Studio, use the following [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) command to create a public/private key pair named ResKey.snk:  
   
     ```console
     sn –k ResKey.snk  
@@ -204,20 +205,20 @@ gacutil -i:StringLibrary.resources.dll
   
      If you are using Visual Studio, use the **Signing** tab of the project **Properties** dialog box to generate the key file.  
   
-2.  Use the following [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) command to create a public key file named PublicKey.snk:  
+2. Use the following [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) command to create a public key file named PublicKey.snk:  
   
     ```console
     sn –p ResKey.snk PublicKey.snk  
     ```  
   
-3.  Create a resource file named Strings.resx to contain the resource for the default culture. Store a single string named `Greeting` whose value is "How do you do?" in that file.  
+3. Create a resource file named Strings.resx to contain the resource for the default culture. Store a single string named `Greeting` whose value is "How do you do?" in that file.  
   
-4.  To indicate that "en" is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly:  
+4. To indicate that "en" is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly:  
   
      [!code-csharp[Conceptual.Resources.Satellites#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#2)]
      [!code-vb[Conceptual.Resources.Satellites#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#2)]  
   
-5.  Add support for additional cultures (the en-US, fr-FR, and ru-RU cultures) to the application as follows:  
+5. Add support for additional cultures (the en-US, fr-FR, and ru-RU cultures) to the application as follows:  
   
     -   To support the "en-US" or English (United States) culture, create a resource file named Strings.en-US.resx or Strings.en-US.txt, and store in it a single string named `Greeting` whose value is "Hello!".  
   
@@ -225,7 +226,7 @@ gacutil -i:StringLibrary.resources.dll
   
     -   To support the "ru-RU" or Russian (Russia) culture, create a resource file named Strings.ru-RU.resx or Strings.ru-RU.txt and store in it a single string named `Greeting` whose value is "Привет!"  
   
-6.  Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following command to compile the .resx files into .resources files:  
+6. Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following command to compile the .resx files into .resources files:  
   
     ```console
     resgen filename  
@@ -233,7 +234,7 @@ gacutil -i:StringLibrary.resources.dll
   
      where *filename* is the optional path, file name, and extension of the .resx or text file.  
   
-7.  Compile the following source code for StringLibrary.vb or StringLibrary.cs along with the resources for the default culture into a delay signed library assembly named StringLibrary.dll:  
+7. Compile the following source code for StringLibrary.vb or StringLibrary.cs along with the resources for the default culture into a delay signed library assembly named StringLibrary.dll:  
   
     > [!IMPORTANT]
     >  If you are using the command line rather than Visual Studio to create the example, you should modify the call to the <xref:System.Resources.ResourceManager> class constructor to `ResourceManager rm = new ResourceManager("Strings",` `typeof(Example).Assembly);`.  
@@ -253,7 +254,7 @@ gacutil -i:StringLibrary.resources.dll
     vbc -t:library -resource:Strings.resources -delaysign+ -keyfile:publickey.snk StringLibrary.vb  
     ```  
   
-8.  Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an en-US, an fr-FR, and an ru-RU subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process. Because all satellite assemblies have the same file name, the subdirectories are used to store individual culture-specific satellite assemblies until they are signed with a public/private key pair.  
+8. Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an en-US, an fr-FR, and an ru-RU subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process. Because all satellite assemblies have the same file name, the subdirectories are used to store individual culture-specific satellite assemblies until they are signed with a public/private key pair.  
   
 9. Embed the individual culture-specific .resources files into delay signed satellite assemblies and save them to the appropriate directory. The command to do this for each .resources file is:  
   

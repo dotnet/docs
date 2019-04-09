@@ -16,9 +16,9 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
 ### To display a custom format  
   
-1.  Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to `DateTimePickerFormat.Custom`.  
+1. Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to `DateTimePickerFormat.Custom`.  
   
-2.  Set the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to a format string.  
+2. Set the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to a format string.  
   
     ```vb  
     DateTimePicker1.Format = DateTimePickerFormat.Custom  
@@ -40,7 +40,7 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
 ### To add text to the formatted value  
   
-1.  Use single quotation marks to enclose any character that is not a format character like "M" or a delimiter like ":". For example, the format string below displays the current date with the format "Today is: 05:30:31 Friday March 02, 2012" in the English (United States) culture.  
+1. Use single quotation marks to enclose any character that is not a format character like "M" or a delimiter like ":". For example, the format string below displays the current date with the format "Today is: 05:30:31 Friday March 02, 2012" in the English (United States) culture.  
   
     ```vb  
     DateTimePicker1.CustomFormat = "'Today is:' hh:mm:ss dddd MMMM dd, yyyy"  

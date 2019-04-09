@@ -19,9 +19,9 @@ Windows Explorer is a common user-interface choice for applications because of i
   
 ### To create a Windows Explorer-style Windows Form  
   
-1.  Create a new Windows Application project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
+1. Create a new Windows Application project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
-2.  From the **Toolbox**:  
+2. From the **Toolbox**:  
   
     1.  Drag a <xref:System.Windows.Forms.SplitContainer> control onto your form.  
   
@@ -29,14 +29,14 @@ Windows Explorer is a common user-interface choice for applications because of i
   
     3.  Drag a <xref:System.Windows.Forms.ListView> control into **SplitterPanel2** (the panel of the <xref:System.Windows.Forms.SplitContainer> control marked **Panel2**).  
   
-3.  Select all three controls by pressing the CTRL key and clicking them in turn. When you select the <xref:System.Windows.Forms.SplitContainer> control, click the splitter bar, rather than the panels.  
+3. Select all three controls by pressing the CTRL key and clicking them in turn. When you select the <xref:System.Windows.Forms.SplitContainer> control, click the splitter bar, rather than the panels.  
   
     > [!NOTE]
     >  Do not use the **Select All** command on the **Edit** menu. If you do so, the property needed in the next step will not appear in the **Properties** window.  
   
-4.  In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
+4. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-5.  Press F5 to run the application.  
+5. Press F5 to run the application.  
   
      The form displays a two-part user interface, similar to that of the Windows Explorer.  
   

@@ -24,7 +24,7 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
   
 ### To handle the Click event on a toolbar  
   
-1.  In a procedure, add toolbar buttons to the <xref:System.Windows.Forms.ToolBar> control.  
+1. In a procedure, add toolbar buttons to the <xref:System.Windows.Forms.ToolBar> control.  
   
     ```vb  
     Public Sub ToolBarConfig()  
@@ -64,7 +64,7 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
        }  
     ```  
   
-2.  Add an event handler for the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.ButtonClick> event. Use a case switching statement and the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class to determine the toolbar button that was clicked. Based on this, show an appropriate message box.  
+2. Add an event handler for the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.ButtonClick> event. Use a case switching statement and the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class to determine the toolbar button that was clicked. Based on this, show an appropriate message box.  
   
     > [!NOTE]
     >  A message box is being used solely as a placeholder in this example. Feel free to add other code to execute when the toolbar buttons are clicked.  

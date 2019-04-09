@@ -8,13 +8,13 @@ ms.author: "ronpet"
 # Getting Started with .NET Native
 Whether you are writing a new Windows app for Windows 10 or you are migrating an existing Windows Store app, you can follow the same set of procedures. To create a [!INCLUDE[net_native](../../../includes/net-native-md.md)] app, follow these steps:  
   
-1.  [Develop a Universal Windows Platform (UWP) app that targets Windows 10](#Step1), and test the debug builds of your app to ensure that it works properly.  
+1. [Develop a Universal Windows Platform (UWP) app that targets Windows 10](#Step1), and test the debug builds of your app to ensure that it works properly.  
   
-2.  [Handle additional reflection and serialization usage](#Step2).  
+2. [Handle additional reflection and serialization usage](#Step2).  
   
-3.  [Deploy and test the release builds of your app](#Step3).  
+3. [Deploy and test the release builds of your app](#Step3).  
   
-4.  [Manually resolve missing metadata](#Step4), and repeat [step 3](#Step3) until all issues are resolved.  
+4. [Manually resolve missing metadata](#Step4), and repeat [step 3](#Step3) until all issues are resolved.  
   
 > [!NOTE]
 >  If you are migrating an existing Windows Store app to [!INCLUDE[net_native](../../../includes/net-native-md.md)], be sure to review [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md).  
@@ -23,9 +23,9 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
 ## Step 1: Develop and test debug builds of your UWP app  
  Whether you are developing a new app or migrating an existing one, you follow the same process as for any Windows app.  
   
-1.  Create a new UWP project in Visual Studio by using the Universal Windows app template for Visual C# or Visual Basic. By default, all UWP applications target the CoreCLR and their release builds are compiled by using the .NET Native tool chain.  
+1. Create a new UWP project in Visual Studio by using the Universal Windows app template for Visual C# or Visual Basic. By default, all UWP applications target the CoreCLR and their release builds are compiled by using the .NET Native tool chain.  
   
-2.  Note that there are some known compatibility issues between compiling UWP app projects with the .NET Native tool chain and without it. Refer to the [migration guide](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md) for more information.  
+2. Note that there are some known compatibility issues between compiling UWP app projects with the .NET Native tool chain and without it. Refer to the [migration guide](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md) for more information.  
   
  You can now write C# or Visual Basic code against the [!INCLUDE[net_native](../../../includes/net-native-md.md)] surface area that runs on the local system (or in the simulator).  
   

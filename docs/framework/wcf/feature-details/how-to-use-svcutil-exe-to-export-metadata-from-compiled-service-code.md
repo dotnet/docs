@@ -17,9 +17,9 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
   
 ### To export metadata for compiled service contracts  
   
-1.  Compile your service contract implementations into one or more class libraries.1  
+1. Compile your service contract implementations into one or more class libraries.1  
   
-2.  Run Svcutil.exe on the compiled assemblies.  
+2. Run Svcutil.exe on the compiled assemblies.  
   
     > [!NOTE]
     >  You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
@@ -30,9 +30,9 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
   
 ### To export metadata for a compiled service  
   
-1.  Compile your service implementation into an executable assembly.  
+1. Compile your service implementation into an executable assembly.  
   
-2.  Create a configuration file for your service executable and add a service configuration.  
+2. Create a configuration file for your service executable and add a service configuration.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -47,7 +47,7 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
     </configuration>  
     ```  
   
-3.  Run Svcutil.exe on the compiled service executable using the `/serviceName` switch to specify the configuration name of the service.  
+3. Run Svcutil.exe on the compiled service executable using the `/serviceName` switch to specify the configuration name of the service.  
   
     > [!NOTE]
     >  You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  
@@ -58,9 +58,9 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
   
 ### To export metadata for compiled data contracts  
   
-1.  Compile your data contract implementations into one or more class libraries.  
+1. Compile your data contract implementations into one or more class libraries.  
   
-2.  Run Svcutil.exe on the compiled assemblies using the `/dataContract` switch to specify that only metadata for data contracts should be generated.  
+2. Run Svcutil.exe on the compiled assemblies using the `/dataContract` switch to specify that only metadata for data contracts should be generated.  
   
     > [!NOTE]
     >  You might need to use the `/reference` switch to specify the file path to any dependent assemblies.  

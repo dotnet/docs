@@ -19,9 +19,9 @@ PNRP version 2 nodes do not publish PNRP IDs if they are only resolving other P2
 
  Locating other peers in a PNRP network or cloud is a process comprised of two phases:  
   
-1.  Endpoint Determination  
+1. Endpoint Determination  
   
-2.  PNRP ID Resolution  
+2. PNRP ID Resolution  
   
  In the endpoint determination phase, a peer that is attempting to resolve the PNRP ID of a service on another computer determines the IPv6 address of that remote peer.  The remote peer is the one that published, or is associated with, the PNRP ID of the computer or service.  
   

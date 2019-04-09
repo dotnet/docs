@@ -53,12 +53,12 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 ##### To create an application domain with partial trust  
   
-1.  Create a permission set to grant to the assemblies in the sandboxed application domain. In this case, the permission set of the Internet zone is used.  
+1. Create a permission set to grant to the assemblies in the sandboxed application domain. In this case, the permission set of the Internet zone is used.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#2](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#2)]
      [!code-vb[HowToEmitCodeInPartialTrust#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#2)]  
   
-2.  Create an <xref:System.AppDomainSetup> object to initialize the application domain with an application path.  
+2. Create an <xref:System.AppDomainSetup> object to initialize the application domain with an application path.  
   
     > [!IMPORTANT]
     >  For simplicity, this code example uses the current folder. To run code that actually comes from the Internet, use a separate folder for the untrusted code, as described in [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
@@ -66,7 +66,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
      [!code-csharp[HowToEmitCodeInPartialTrust#3](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#3)]
      [!code-vb[HowToEmitCodeInPartialTrust#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#3)]  
   
-3.  Create the application domain, specifying the application domain setup information and the grant set for all assemblies that execute in the application domain.  
+3. Create the application domain, specifying the application domain setup information and the grant set for all assemblies that execute in the application domain.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#5](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#5)]
      [!code-vb[HowToEmitCodeInPartialTrust#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#5)]  
@@ -83,7 +83,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 ##### To create an application domain with partial trust plus RMA  
   
-1.  Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission%2A?displayProperty=nameWithType> method to add the permission to the grant set.  
+1. Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission%2A?displayProperty=nameWithType> method to add the permission to the grant set.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#7](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#7)]
      [!code-vb[HowToEmitCodeInPartialTrust#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#7)]  
@@ -93,7 +93,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
     > [!NOTE]
     >  RMA is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, the emitted code requires full trust.  
   
-2.  Create the application domain, specifying the application domain setup information and the grant set.  
+2. Create the application domain, specifying the application domain setup information and the grant set.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#8](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#8)]
      [!code-vb[HowToEmitCodeInPartialTrust#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#8)]  
@@ -104,24 +104,24 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 #### To define and execute a method in an application domain  
   
-1.  Define a class that derives from <xref:System.MarshalByRefObject>. This enables you to create instances of the class in other application domains and to make method calls across application domain boundaries. The class in this example is named `Worker`.  
+1. Define a class that derives from <xref:System.MarshalByRefObject>. This enables you to create instances of the class in other application domains and to make method calls across application domain boundaries. The class in this example is named `Worker`.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#10](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#10)]
      [!code-vb[HowToEmitCodeInPartialTrust#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#10)]  
   
-2.  Define a public method that contains the code you want to execute. In this example, the code emits a simple dynamic method, creates a delegate to execute the method, and invokes the delegate.  
+2. Define a public method that contains the code you want to execute. In this example, the code emits a simple dynamic method, creates a delegate to execute the method, and invokes the delegate.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#11](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#11)]
      [!code-vb[HowToEmitCodeInPartialTrust#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#11)]  
   
-3.  In your main program, get the display name of your assembly. This name is used when you create instances of the `Worker` class in the sandboxed application domain.  
+3. In your main program, get the display name of your assembly. This name is used when you create instances of the `Worker` class in the sandboxed application domain.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#14](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#14)]
      [!code-vb[HowToEmitCodeInPartialTrust#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#14)]  
   
-4.  In your main program, create a sandboxed application domain, as described in [the first procedure](#Setting_up) in this walkthrough. You do not have to add any permissions to the `Internet` permission set, because the `SimpleEmitDemo` method uses only public methods.  
+4. In your main program, create a sandboxed application domain, as described in [the first procedure](#Setting_up) in this walkthrough. You do not have to add any permissions to the `Internet` permission set, because the `SimpleEmitDemo` method uses only public methods.  
   
-5.  In your main program, create an instance of the `Worker` class in the sandboxed application domain.  
+5. In your main program, create an instance of the `Worker` class in the sandboxed application domain.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#12](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#12)]
      [!code-vb[HowToEmitCodeInPartialTrust#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#12)]  
@@ -131,7 +131,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
     > [!NOTE]
     >  If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
-6.  Add code to call the `SimpleEmitDemo` method. The call is marshaled across the application domain boundary, and the code is executed in the sandboxed application domain.  
+6. Add code to call the `SimpleEmitDemo` method. The call is marshaled across the application domain boundary, and the code is executed in the sandboxed application domain.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#13](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#13)]
      [!code-vb[HowToEmitCodeInPartialTrust#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#13)]  

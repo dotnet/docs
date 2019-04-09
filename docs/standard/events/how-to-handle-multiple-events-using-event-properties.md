@@ -24,15 +24,15 @@ To use event properties, you define the event properties in the class that raise
   
 ### To handle multiple events using event properties  
   
-1.  Define a delegate collection within the class that raises the events.  
+1. Define a delegate collection within the class that raises the events.  
   
-2.  Define a key for each event.  
+2. Define a key for each event.  
   
-3.  Define the event properties in the class that raises the events.  
+3. Define the event properties in the class that raises the events.  
   
-4.  Use the delegate collection to implement the add and remove accessor methods for the event properties.  
+4. Use the delegate collection to implement the add and remove accessor methods for the event properties.  
   
-5.  Use the public event properties to add and remove event handler delegates in the classes that handle the events.  
+5. Use the public event properties to add and remove event handler delegates in the classes that handle the events.  
   
 ## Example  
  The following C# example implements the event properties `MouseDown` and `MouseUp`, using an <xref:System.ComponentModel.EventHandlerList> to store each event's delegate. The keywords of the event property constructs are in bold type.  

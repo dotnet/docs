@@ -23,7 +23,7 @@ The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:Syste
   
 ### To create and use a trace listener by using a configuration file  
   
-1.  Declare your trace listener in your application configuration file. If the listener you are creating requires any other objects, declare them as well. The following example shows how to create a listener called `myListener` that writes to the text file `TextWriterOutput.log`.  
+1. Declare your trace listener in your application configuration file. If the listener you are creating requires any other objects, declare them as well. The following example shows how to create a listener called `myListener` that writes to the text file `TextWriterOutput.log`.  
   
     ```xml  
     <configuration>  
@@ -38,7 +38,7 @@ The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:Syste
     </configuration>  
     ```  
   
-2.  Use the <xref:System.Diagnostics.Trace> class in your code to write a message to the trace listeners.  
+2. Use the <xref:System.Diagnostics.Trace> class in your code to write a message to the trace listeners.  
   
     ```vb  
     Trace.TraceInformation("Test message.")  

@@ -16,15 +16,15 @@ This topic provides information about developing and deploying WCF Data Services
 
 When you use WCF Data Services to create a data service that supports the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)], you must perform the following basic tasks during development:
 
-1.  **Define the data model**
+1. **Define the data model**
 
      WCF Data Services supports a variety of data service providers that enable you to define a data model based on data from a variety of data sources, from relational databases to late-bound data types. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).
 
-2.  **Create the data service**
+2. **Create the data service**
 
      The most basic data service exposes a class that inherits from the <xref:System.Data.Services.DataService%601> class, with a type `T` that is the namespace-qualified name of the entity container. For more information, see [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md).
 
-3.  **Configure the data service**
+3. **Configure the data service**
 
      By default, WCF Data Services disables access to resources that are exposed by an entity container. The <xref:System.Data.Services.DataServiceConfiguration> interface enables you to configure access to resources and service operations, specify the supported version of OData, and to define other service-wide behaviors, such as batching behaviors or the maximum number of entities that can be returned in a single response feed. For more information, see [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md).
 
@@ -34,14 +34,14 @@ This topic covers primarily the development and deployment of data services by u
 
 When you develop a WCF Data Service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application or [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site by using Visual Studio 2015, you have a choice of Web servers on which to run the data service during development. The following Web servers integrate with Visual Studio to make it easier to test and debug your data services on the local computer.
 
-1.  **Local IIS Server**
+1. **Local IIS Server**
 
      When you create a data service that is an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application or [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, you must makes sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md).
 
     > [!NOTE]
     > You must run Visual Studio with administrator rights to enable the develop environment to configure the local IIS server.
 
-2.  **Visual Studio Development Server**
+2. **Visual Studio Development Server**
 
      Visual Studio includes a built-in Web server, the Visual Studio Development Server, which is the default Web server for [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] projects. This Web server is designed to run [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] projects on the local computer during development. The [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) shows how to create a data service that runs in the Visual Studio Development Server.
 
@@ -62,7 +62,7 @@ When you develop a WCF Data Service as an [!INCLUDE[vstecasp](../../../../includ
     > [!TIP]
     > Even though you can use the Visual Studio Development Server to test your data services during development, you should test them again after deploying to a Web server that is running IIS.
 
-3.  **Windows Azure Development Environment**
+3. **Windows Azure Development Environment**
 
      Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://go.microsoft.com/fwlink/?LinkId=201847).
 

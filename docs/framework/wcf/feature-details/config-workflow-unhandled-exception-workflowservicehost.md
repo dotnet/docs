@@ -8,7 +8,7 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
   
 ### To configure WorkflowUnhandledExceptionBehavior  
   
-1.  Add a <`workflowUnhandledException`> element in a <`behavior`> element within a <`serviceBehaviors`> element, using the `action` attribute to specify the action to take when an unhandled exception occurs as shown in the following example.  
+1. Add a <`workflowUnhandledException`> element in a <`behavior`> element within a <`serviceBehaviors`> element, using the `action` attribute to specify the action to take when an unhandled exception occurs as shown in the following example.  
   
     ```xml  
     <behaviors>  

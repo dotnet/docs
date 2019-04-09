@@ -44,14 +44,14 @@ In a relying party application, authorization determines what resources an authe
 ## Claims-based Authorization  
  Claims-based authorization is an approach where the authorization decision to grant or deny access is based on arbitrary logic that uses data available in claims to make the decision. Recall that in the case of RBAC, the only claim used was role type claim. A role type claim was used to check if the user belongs to specific role or not. To illustrate the process of making the authorization decisions using claims-based authorization approach, consider the following steps:  
   
-1.  The application receives a request that requires the user is authenticated.  
+1. The application receives a request that requires the user is authenticated.  
   
-2.  WIF redirects the user to their identity provider, after they are authenticated the application request is made with an associated security token representing the user containing claims about them. WIF associates those claims with the principal that represents the user.  
+2. WIF redirects the user to their identity provider, after they are authenticated the application request is made with an associated security token representing the user containing claims about them. WIF associates those claims with the principal that represents the user.  
   
-3.  The application passes the claims to the decision logic mechanism. It can be in-memory code, a call to a web service, a query to a database, a sophisticated rules engine, or using the ClaimsAuthorizationManager.  
+3. The application passes the claims to the decision logic mechanism. It can be in-memory code, a call to a web service, a query to a database, a sophisticated rules engine, or using the ClaimsAuthorizationManager.  
   
-4.  The decision mechanism calculates the outcome based on the claims.  
+4. The decision mechanism calculates the outcome based on the claims.  
   
-5.  Access is granted if the outcome is true and denied if it is false. For example, the rule might be that the user is of age 21 or above and lives in Washington State.  
+5. Access is granted if the outcome is true and denied if it is false. For example, the rule might be that the user is of age 21 or above and lives in Washington State.  
   
  <xref:System.Security.Claims.ClaimsAuthorizationManager> is useful for externalizing the decision logic for  claims-based authorization in your applications. ClaimsAuthorizationManager is a WIF component that ships as part of .NET 4.5. ClaimsAuthorizationManager allows you to intercept incoming requests and implement any logic of your choice to make authorization decisions based on the incoming claims. This becomes important when authorization logic needs to be changed. In that case, using ClaimsAuthorizationManager will not affect the application’s integrity, thereby reducing the likelihood of an application error as a result of the change. To learn more about how to use ClaimsAuthorizationManager to implement claims-based access control, see [How To: Implement Claims Authorization in a Claims Aware ASP.NET Application Using WIF and ACS](https://go.microsoft.com/fwlink/?LinkID=247446).

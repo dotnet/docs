@@ -23,7 +23,7 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
   
 ### To data-bind the DataGrid control programmatically  
   
-1.  Write code to fill the dataset.  
+1. Write code to fill the dataset.  
   
      If the data source is a dataset or a data view based on a dataset table, add code to the form to fill the dataset.  
   
@@ -62,7 +62,7 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
     dsCategories1->Merge(ws->GetCategories());  
     ```  
   
-2.  Call the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method, passing it the data source and a data member. If you do not need to explicitly pass a data member, pass an empty string.  
+2. Call the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method, passing it the data source and a data member. If you do not need to explicitly pass a data member, pass an empty string.  
   
     > [!NOTE]
     >  If you are binding the grid for the first time, you can set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties. However, you cannot reset these properties once they have been set. Therefore, it is recommended that you always use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method.  
@@ -95,7 +95,7 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
     dataGrid1->SetDataBinding(dsCustomers1, "");  
     ```  
   
-3.  (Optional) Add the appropriate table styles and column styles to the grid. If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.  
+3. (Optional) Add the appropriate table styles and column styles to the grid. If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.  
   
 ## See also
 

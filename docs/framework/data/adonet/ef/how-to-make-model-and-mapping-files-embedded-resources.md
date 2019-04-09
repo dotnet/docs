@@ -11,13 +11,13 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
   
 ### To embed model and mapping files  
   
-1.  In **Solution Explorer**, select the conceptual (.csdl) file.  
+1. In **Solution Explorer**, select the conceptual (.csdl) file.  
   
-2.  In the **Properties** pane, set **Build Action** to **Embedded Resource**.  
+2. In the **Properties** pane, set **Build Action** to **Embedded Resource**.  
   
-3.  Repeat steps 1 and 2 for the storage (.ssdl) file and the mapping (.msl) file.  
+3. Repeat steps 1 and 2 for the storage (.ssdl) file and the mapping (.msl) file.  
   
-4.  In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:  
+4. In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:  
   
     -   `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
   

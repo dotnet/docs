@@ -26,7 +26,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
  If the application is a normal application (multiple-instance application), or the first instance of a single-instance application, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method executes the `Overridable` methods in the following order:  
   
-1.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A>. By default, this method sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and calls `ShowSplashScreen` if neither `/nosplash` nor `-nosplash` is used as a command-line argument.  
+1. <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A>. By default, this method sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and calls `ShowSplashScreen` if neither `/nosplash` nor `-nosplash` is used as a command-line argument.  
   
      The application startup sequence is canceled if this function returns `False`. This can be useful if there are circumstances in which the application should not run.  
   
@@ -40,11 +40,11 @@ You can add functionality to the application model by overriding the `Overridabl
   
          By default, this method does nothing. If you select a splash screen for your application in the Visual Basic **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
   
-2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
+2. <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
   
      By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the <xref:System.ComponentModel.CancelEventArgs.Cancel> property of the event argument to `True`, the method returns `False` to cancel the application startup.  
   
-3.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A>. Provides the starting point for when the main application is ready to start running, after the initialization is done.  
+3. <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A>. Provides the starting point for when the main application is ready to start running, after the initialization is done.  
   
      By default, before it enters the Windows Forms message loop, this method calls the `OnCreateMainForm` (to create the application's main form) and `HideSplashScreen` (to close the splash screen) methods:  
   
@@ -56,15 +56,15 @@ You can add functionality to the application model by overriding the `Overridabl
   
          By default, this method closes the splash screen.  
   
-4.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A>. Provides a way to customize how a single-instance application behaves when another instance of the application starts.  
+4. <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A>. Provides a way to customize how a single-instance application behaves when another instance of the application starts.  
   
      By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event.  
   
-5.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A>. Provides an extensibility point for raising the `Shutdown` event. This method does not run if an unhandled exception occurs in the main application.  
+5. <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A>. Provides an extensibility point for raising the `Shutdown` event. This method does not run if an unhandled exception occurs in the main application.  
   
      By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown> event.  
   
-6.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A>. Executed if an unhandled exception occurs in any of the above listed methods.  
+6. <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A>. Executed if an unhandled exception occurs in any of the above listed methods.  
   
      By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event as long as a debugger is not attached and the application is handling the `UnhandledException` event.  
   

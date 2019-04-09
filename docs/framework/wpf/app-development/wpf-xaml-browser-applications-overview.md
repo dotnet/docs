@@ -94,25 +94,25 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ### Debugging XBAPs that Use HostScript  
  If your XBAP uses the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object to communicate with the HTML window, there are two settings that you must specify to run and debug the application in Visual Studio. The application must have access to its site of origin and you must start the application with the HTML page that contains the XBAP. The following steps describe how to check these two settings:  
   
-1.  In Visual Studio, open the project properties.  
+1. In Visual Studio, open the project properties.  
   
-2.  On the **Security** tab, click **Advanced**.  
+2. On the **Security** tab, click **Advanced**.  
   
      The Advanced Security Settings dialog box appears.  
   
-3.  Make sure that the **Grant the application access to its site of origin** check box is checked and then click **OK**.  
+3. Make sure that the **Grant the application access to its site of origin** check box is checked and then click **OK**.  
   
-4.  On the **Debug** tab, select the **Start browser with URL** option and specify the URL for the HTML page that contains the XBAP.  
+4. On the **Debug** tab, select the **Start browser with URL** option and specify the URL for the HTML page that contains the XBAP.  
   
-5.  In Internet Explorer, click the **Tools** button and then select **Internet Options**.  
+5. In Internet Explorer, click the **Tools** button and then select **Internet Options**.  
   
      The Internet Options dialog box appears.  
   
-6.  Click the **Advanced** tab.  
+6. Click the **Advanced** tab.  
   
-7.  In the **Settings** list under **Security**, check the **Allow active content to run in files on My Computer** check box.  
+7. In the **Settings** list under **Security**, check the **Allow active content to run in files on My Computer** check box.  
   
-8.  Click **OK**.  
+8. Click **OK**.  
   
      The changes will take effect after you restart Internet Explorer.  
   
@@ -140,9 +140,9 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ### Creating a Full-Trust XBAP  
  If your XBAP requires full trust, you can change your project to enable this permission. The following steps describe how to enable full trust:  
   
-1.  In Visual Studio, open the project properties.  
+1. In Visual Studio, open the project properties.  
   
-2.  On the **Security** tab, select the **This is a full trust application** option.  
+2. On the **Security** tab, select the **This is a full trust application** option.  
   
  This setting makes the following changes:  
   

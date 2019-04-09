@@ -9,13 +9,13 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 ## Enabling Debug Tracing in ETW  
  To enable tracing using ETW, enable the Debug channel in Event Viewer:  
   
-1.  Navigate to analytic and debug logs node in Event Viewer.  
+1. Navigate to analytic and debug logs node in Event Viewer.  
   
-2.  In the tree view in Event Viewer, navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Application Server-Applications** and select **View->Show Analytic and Debug Logs**. Right-click **Debug** and select **Enable Log**.  
+2. In the tree view in Event Viewer, navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Application Server-Applications** and select **View->Show Analytic and Debug Logs**. Right-click **Debug** and select **Enable Log**.  
   
-3.  When a workflow runs the debug and traces are emitted to ETW debug channel, they can be viewed in the Event Viewer. Navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Debug** and select **Refresh**.  
+3. When a workflow runs the debug and traces are emitted to ETW debug channel, they can be viewed in the Event Viewer. Navigate to **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications**. Right-click **Debug** and select **Refresh**.  
   
-4.  The default analytic trace buffer size is only 4 kilobytes (KB); it is recommended to increase the size to 32 KB. To do this, perform the following steps.  
+4. The default analytic trace buffer size is only 4 kilobytes (KB); it is recommended to increase the size to 32 KB. To do this, perform the following steps.  
   
     1.  Execute the following command in the current framework directory (for example, C:\Windows\Microsoft.NET\Framework\v4.0.21203): `wevtutil um Microsoft.Windows.ApplicationServer.Applications.man`  
   

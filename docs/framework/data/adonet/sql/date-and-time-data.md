@@ -15,7 +15,7 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  **SQL Server Books Online**  
   
-1.  [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
+1. [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
  The following table describes the new date and time data types.  

@@ -18,7 +18,7 @@ ms.date: 08/01/2018
 
 ## Languages
 
-C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages are or can be integrated into your favorite text editors and IDEs, including [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim. This integration is provided, in part, by the good folks from the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
+C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages are or can be integrated into your favorite text editors and IDEs, including [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim. This integration is provided, in part, by the good folks from the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
 
 ## APIs
 

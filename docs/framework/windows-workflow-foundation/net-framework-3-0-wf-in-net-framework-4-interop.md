@@ -28,22 +28,22 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
 ## Limitations of Using a WF 3 Activity Within an Interop Activity  
  The WF 3 system-provided activities cannot be directly wrapped in an <xref:System.Activities.Statements.Interop> activity. For some WF 3 activities, such as <xref:System.Workflow.Activities.DelayActivity>, this is because there is an analogous WF 4.5 activity. For others, this is because the functionality of the activity is not supported. Many WF 3 system-provided activities can be used within workflows wrapped by the <xref:System.Activities.Statements.Interop> activity, subject to the following restrictions:  
   
-1.  <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.Receive> cannot be used in an <xref:System.Activities.Statements.Interop> activity.  
+1. <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.Receive> cannot be used in an <xref:System.Activities.Statements.Interop> activity.  
   
-2.  <xref:System.Workflow.Activities.WebServiceInputActivity>, <xref:System.Workflow.Activities.WebServiceOutputActivity>, and <xref:System.Workflow.Activities.WebServiceFaultActivity> cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
+2. <xref:System.Workflow.Activities.WebServiceInputActivity>, <xref:System.Workflow.Activities.WebServiceOutputActivity>, and <xref:System.Workflow.Activities.WebServiceFaultActivity> cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
   
-3.  <xref:System.Workflow.Activities.InvokeWorkflowActivity> cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
+3. <xref:System.Workflow.Activities.InvokeWorkflowActivity> cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
   
-4.  <xref:System.Workflow.ComponentModel.SuspendActivity> cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
+4. <xref:System.Workflow.ComponentModel.SuspendActivity> cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
   
-5.  Compensation-related activities cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
+5. Compensation-related activities cannot be used within an <xref:System.Activities.Statements.Interop> activity.  
   
  There are also some behavioral specifics to understand regarding the use of WF 3 activities within the <xref:System.Activities.Statements.Interop> activity:  
   
-1.  WF 3 activities contained within an <xref:System.Activities.Statements.Interop> activity are initialized when the <xref:System.Activities.Statements.Interop> activity is executed. In WF 4.5 there is no initialization phase for a workflow instance prior to its execution.  
+1. WF 3 activities contained within an <xref:System.Activities.Statements.Interop> activity are initialized when the <xref:System.Activities.Statements.Interop> activity is executed. In WF 4.5 there is no initialization phase for a workflow instance prior to its execution.  
   
-2.  The WF 4.5 runtime does not checkpoint workflow instance state when a transaction begins, regardless of where that transaction begins (within or outside of an <xref:System.Activities.Statements.Interop> activity).  
+2. The WF 4.5 runtime does not checkpoint workflow instance state when a transaction begins, regardless of where that transaction begins (within or outside of an <xref:System.Activities.Statements.Interop> activity).  
   
-3.  WF 3 tracking records for activities within an <xref:System.Activities.Statements.Interop> activity are provided to WF 4.5 tracking participants as <xref:System.Activities.Tracking.InteropTrackingRecord> objects. <xref:System.Activities.Tracking.InteropTrackingRecord> is a derivative of <xref:System.Activities.Tracking.CustomTrackingRecord>.  
+3. WF 3 tracking records for activities within an <xref:System.Activities.Statements.Interop> activity are provided to WF 4.5 tracking participants as <xref:System.Activities.Tracking.InteropTrackingRecord> objects. <xref:System.Activities.Tracking.InteropTrackingRecord> is a derivative of <xref:System.Activities.Tracking.CustomTrackingRecord>.  
   
-4.  A WF 3 custom activity can access data using workflow queues within the interoperation environment in exactly the same way as within the WF 3 workflow runtime. No custom activity code changes are required. On the host, data is enqueued to a WF 3 workflow queue by resuming a <xref:System.Activities.Bookmark>. The name of the bookmark is the string form of the <xref:System.IComparable> workflow queue name.
+4. A WF 3 custom activity can access data using workflow queues within the interoperation environment in exactly the same way as within the WF 3 workflow runtime. No custom activity code changes are required. On the host, data is enqueued to a WF 3 workflow queue by resuming a <xref:System.Activities.Bookmark>. The name of the bookmark is the string form of the <xref:System.IComparable> workflow queue name.

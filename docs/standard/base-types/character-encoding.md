@@ -209,11 +209,11 @@ Characters are abstract entities that can be represented in many different ways.
   
  In addition, you can implement a custom solution that uses best-fit fallback, replacement fallback, or exception fallback, by following these steps:  
   
-1.  Derive a class from <xref:System.Text.EncoderFallback> for encoding operations, and from <xref:System.Text.DecoderFallback> for decoding operations.  
+1. Derive a class from <xref:System.Text.EncoderFallback> for encoding operations, and from <xref:System.Text.DecoderFallback> for decoding operations.  
   
-2.  Derive a class from <xref:System.Text.EncoderFallbackBuffer> for encoding operations, and from <xref:System.Text.DecoderFallbackBuffer> for decoding operations.  
+2. Derive a class from <xref:System.Text.EncoderFallbackBuffer> for encoding operations, and from <xref:System.Text.DecoderFallbackBuffer> for decoding operations.  
   
-3.  For exception fallback, if the predefined <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> classes do not meet your needs, derive a class from an exception object such as <xref:System.Exception> or <xref:System.ArgumentException>.  
+3. For exception fallback, if the predefined <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> classes do not meet your needs, derive a class from an exception object such as <xref:System.Exception> or <xref:System.ArgumentException>.  
   
 ### Deriving from EncoderFallback or DecoderFallback  
  To implement a custom fallback solution, you must create a class that inherits from <xref:System.Text.EncoderFallback> for encoding operations, and from <xref:System.Text.DecoderFallback> for decoding operations. Instances of these classes are passed to the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> method and serve as the intermediary between the encoding class and the fallback implementation.  

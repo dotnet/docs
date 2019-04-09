@@ -19,12 +19,12 @@ The conditional operator `?:`, commonly known as the ternary conditional operato
 The syntax for the conditional operator is as follows:
 
 ```csharp
-condition ? consequence : alternative
+condition ? consequent : alternative
 ```
 
-The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequence` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequence` or `alternative` is evaluated.
+The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated.
 
-The type of `consequence` and `alternative` must be the same, or there must be an implicit conversion from one type to the other.
+The type of `consequent` and `alternative` must be the same, or there must be an implicit conversion from one type to the other.
 
 The conditional operator is right-associative, that is, an expression of the form
 
@@ -49,12 +49,12 @@ Beginning with C# 7.2, you can use the conditional ref expression to return the 
 The syntax for the conditional ref expression is as follows:
 
 ```csharp
-condition ? ref consequence : ref alternative
+condition ? ref consequent : ref alternative
 ```
 
-Like the original conditional operator, the conditional ref expression evaluates only one of the two expressions: either `consequence` or `alternative`.
+Like the original conditional operator, the conditional ref expression evaluates only one of the two expressions: either `consequent` or `alternative`.
 
-In the case of the conditional ref expression, the type of `consequence` and `alternative` must be the same.
+In the case of the conditional ref expression, the type of `consequent` and `alternative` must be the same.
 
 The following example demonstrates the usage of the conditional ref expression:
 

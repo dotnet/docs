@@ -52,7 +52,7 @@ public enum Rainbow
 }
 ```
 
-You could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
+If your application defined an `RGBColor` type that is constructed from the `R`, `G` and `B` components, you could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
 
 ```csharp
 public static RGBColor FromRainbow(Rainbow colorBand) =>

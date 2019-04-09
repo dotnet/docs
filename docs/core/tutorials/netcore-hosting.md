@@ -113,7 +113,7 @@ Finally, when the host is done running managed code, the .NET Core runtime is sh
 
 [!code-cpp[CoreClrHost#6](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#6)]
 
-Remember to unload the CoreCLR library using `FreeLibrary` (on Windows) or `dlclose` (on Linux/Mac).
+CoreCLR does not support reinitialization or unloading. Do not call `coreclr_initialize` again or unload the CoreCLR library.
 
 ## Create a host using Mscoree.h
 
@@ -206,6 +206,8 @@ hr = runtimeHost->CreateDelegate(
 Finally, the host should clean up after itself by unloading AppDomains, stopping the runtime, and releasing the `ICLRRuntimeHost4` reference.
 
 [!code-cpp[NetCoreHost#9](~/samples/core/hosting/HostWithMscoree/host.cpp#9)]
+
+CoreCLR does not support unloading. Do not unload the CoreCLR library.
 
 ## Conclusion
 Once your host is built, it can be tested by running it from the command line and passing any arguments the host expects (like the managed app to run for the mscoree example host). When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables (.exe files) produced by `dotnet publish` for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.

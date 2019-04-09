@@ -32,4 +32,5 @@ ms.assetid: 51da872c-c783-440f-8bf6-1e580a966c31
  [!code-vb[System.Drawing.ImagesBitmapsMetafiles#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImagesBitmapsMetafiles/VB/Class1.vb#21)]  
   
 ## See also
+
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)

@@ -15,11 +15,11 @@ This example shows how to animate the <xref:System.Windows.Media.MatrixTransform
   
  This animation uses the <xref:System.Windows.Media.Animation.DiscreteMatrixKeyFrame> class to create two key frames and does the following with them:  
   
-1.  Animates the first <xref:System.Windows.Media.Matrix> during the first 0.2 seconds. The example changes the <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M12%2A> properties of the <xref:System.Windows.Media.Matrix>. This change causes the button to stretch and become skewed. The example also changes the <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A> properties so that the button changes position.  
+1. Animates the first <xref:System.Windows.Media.Matrix> during the first 0.2 seconds. The example changes the <xref:System.Windows.Media.Matrix.M11%2A> and <xref:System.Windows.Media.Matrix.M12%2A> properties of the <xref:System.Windows.Media.Matrix>. This change causes the button to stretch and become skewed. The example also changes the <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A> properties so that the button changes position.  
   
-2.  Animates the second <xref:System.Windows.Media.Matrix> at 1.0 seconds. The button moves to another position while the button is no longer skewed or stretched.  
+2. Animates the second <xref:System.Windows.Media.Matrix> at 1.0 seconds. The button moves to another position while the button is no longer skewed or stretched.  
   
-3.  Repeats the animation indefinitely.  
+3. Repeats the animation indefinitely.  
   
 > [!NOTE]
 >  Key frames that derive from the <xref:System.Windows.Media.Animation.DiscreteMatrixKeyFrame> object create sudden jumps between values, that is, the movement of the animation is jerky.  
@@ -29,6 +29,7 @@ This example shows how to animate the <xref:System.Windows.Media.MatrixTransform
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See also
+
 - <xref:System.Windows.Media.MatrixTransform.Matrix%2A>
 - <xref:System.Windows.Media.MatrixTransform>
 - [Key-Frame Animations Overview](key-frame-animations-overview.md)

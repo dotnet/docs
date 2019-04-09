@@ -19,18 +19,17 @@ All versioning of assemblies that use the common language runtime is done at the
   
  The runtime performs several steps to resolve an assembly binding request:  
   
-1.  Checks the original assembly reference to determine the version of the assembly to be bound.  
+1. Checks the original assembly reference to determine the version of the assembly to be bound.  
   
-2.  Checks for all applicable configuration files to apply version policy.  
+2. Checks for all applicable configuration files to apply version policy.  
   
-3.  Determines the correct assembly from the original assembly reference and any redirection specified in the configuration files, and determines the version that should be bound to the calling assembly.  
+3. Determines the correct assembly from the original assembly reference and any redirection specified in the configuration files, and determines the version that should be bound to the calling assembly.  
   
-4.  Checks the global assembly cache, codebases specified in configuration files, and then checks the application's directory and subdirectories using the probing rules explained in [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
+4. Checks the global assembly cache, codebases specified in configuration files, and then checks the application's directory and subdirectories using the probing rules explained in [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
- The following illustration shows these steps.  
+ The following illustration shows these steps:  
   
- ![.assembly extern myAssembly](../../../docs/framework/app-domains/media/versioningover.gif "versioningover")  
-Resolving an assembly binding request  
+ ![Diagram that shows steps in assembly binding request resolution.](./media/assembly-versioning/resolve-assembly-binding-request.gif)
   
  For more information about configuring applications, see [Configuring Apps](../../../docs/framework/configure-apps/index.md). For more information about binding policy, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
@@ -65,6 +64,7 @@ Resolving an assembly binding request
  The informational version is represented using the custom attribute <xref:System.Reflection.AssemblyInformationalVersionAttribute?displayProperty=nameWithType>. For more information about the informational version attribute, see [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md).  
   
 ## See also
+
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)
 - [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md)

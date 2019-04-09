@@ -16,19 +16,19 @@ ms.author: "ronpet"
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  
   
-1.  [Choosing a compiler](#choosing_a_compiler).  
+1. [Choosing a compiler](#choosing_a_compiler).  
   
      To obtain the benefits provided by the common language runtime, you must use one or more language compilers that target the runtime.  
   
-2.  [Compiling your code to MSIL](#compiling_to_msil).  
+2. [Compiling your code to MSIL](#compiling_to_msil).  
   
      Compiling translates your source code into Microsoft intermediate language (MSIL) and generates the required metadata.  
   
-3.  [Compiling MSIL to native code](#compiling_msil_to_native_code).  
+3. [Compiling MSIL to native code](#compiling_msil_to_native_code).  
   
      At execution time, a just-in-time (JIT) compiler translates the MSIL into native code. During this compilation, code must pass a verification process that examines the MSIL and metadata to find out whether the code can be determined to be type safe.  
   
-4.  [Running code](#running_code).  
+4. [Running code](#running_code).  
   
      The common language runtime provides the infrastructure that enables execution to take place and services that can be used during execution.  
   
@@ -93,9 +93,9 @@ ms.author: "ronpet"
   
  In Microsoft [!INCLUDE[winxp](../../includes/winxp-md.md)] and [!INCLUDE[windowsver](../../includes/windowsver-md.md)], the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
   
-1.  Ensures that the code is valid managed code.  
+1. Ensures that the code is valid managed code.  
   
-2.  Changes the entry point in the image to an entry point in the runtime.  
+2. Changes the entry point in the image to an entry point in the runtime.  
   
  On 64-bit Windows, `_CorValidateImage` modifies the image that is in memory by transforming it from PE32 to PE32+ format.  
   

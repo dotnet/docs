@@ -82,6 +82,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|
 
 ## See also
+
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
 - [Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))

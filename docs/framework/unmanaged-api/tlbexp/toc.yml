@@ -1,0 +1,12 @@
+- name: Tlbexp Helper Functions
+  href: index.md
+  items:
+  - name: GetTypeLibInfo Function
+    href: gettypelibinfo-function.md
+  - name: LoadTypeLibWithResolver Function
+    href: loadtypelibwithresolver-function.md
+  - name: ITypeLibResolver Interface
+    href: itypelibresolver-interface.md
+    items:
+    - name: ResolveTypeLib Method
+      href: resolvetypelib-method.md

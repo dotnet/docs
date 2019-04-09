@@ -33,4 +33,3 @@ HRESULT GetEnCRemapSequencePoints(
 ```  
   
 ## See also
-

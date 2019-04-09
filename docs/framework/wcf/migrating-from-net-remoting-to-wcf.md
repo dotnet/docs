@@ -143,11 +143,11 @@ Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received
 ### Serialization Usage  
  Both .NET Remoting and WCF use serialization to send objects between client and server, but they differ in these important ways:  
   
-1.  They use different serializers and conventions to indicate what to serialize.  
+1. They use different serializers and conventions to indicate what to serialize.  
   
-2.  .NET Remoting supports "by reference" serialization that allows method or property access on one tier to execute code on the other tier, which is across security boundaries. This capability exposes security vulnerabilities and is one of the main reasons why Remoting endpoints should never be exposed to untrusted clients.  
+2. .NET Remoting supports "by reference" serialization that allows method or property access on one tier to execute code on the other tier, which is across security boundaries. This capability exposes security vulnerabilities and is one of the main reasons why Remoting endpoints should never be exposed to untrusted clients.  
   
-3.  Serialization used by Remoting is opt-out (explicitly exclude what not to serialize) and WCF serialization is opt-in (explicitly mark which members to serialize).  
+3. Serialization used by Remoting is opt-out (explicitly exclude what not to serialize) and WCF serialization is opt-in (explicitly mark which members to serialize).  
   
 #### Serialization in .NET Remoting  
  .NET Remoting supports two ways to serialize and deserialize objects between the client and server:  
@@ -304,11 +304,11 @@ catch (FaultException<CustomerServiceFault> fault)
 ### Migration Scenarios  
  Now let’s see how to accomplish the following common Remoting scenarios in WCF:  
   
-1.  Server returns an object by-value to the client  
+1. Server returns an object by-value to the client  
   
-2.  Server returns an object by-reference to the client  
+2. Server returns an object by-reference to the client  
   
-3.  Client sends an object by-value to the server  
+3. Client sends an object by-value to the server  
   
 > [!NOTE]
 >  Sending an object by-reference from the client to the server is not allowed in WCF.  
@@ -332,7 +332,7 @@ public class RemotingServer : MarshalByRefObject
 #### Scenario 1: Service Returns an Object by Value  
  This scenario demonstrates a server returning an object to the client by value. WCF always returns objects from the server by value, so the following steps simply describe how to build a normal WCF service.  
   
-1.  Start by defining a public interface for the WCF service and mark it with the [ServiceContract] attribute. We use [OperationContract] to identify the server-side methods our client will call.  
+1. Start by defining a public interface for the WCF service and mark it with the [ServiceContract] attribute. We use [OperationContract] to identify the server-side methods our client will call.  
   
    ```csharp
    [ServiceContract]  
@@ -346,7 +346,7 @@ public class RemotingServer : MarshalByRefObject
    }  
    ```  
   
-2.  The next step is to create the data contract for this service. We do this by creating classes (not interfaces) marked with the [DataContract] attribute. The individual properties or fields we want visible to both client and server are marked with [DataMember]. If we want derived types to be allowed, we must use the [KnownType] attribute to identify them. The only types WCF will allow to be serialized or deserialized for this service are those in the service interface and these "known types". Attempting to exchange any other type not in this list will be rejected.  
+2. The next step is to create the data contract for this service. We do this by creating classes (not interfaces) marked with the [DataContract] attribute. The individual properties or fields we want visible to both client and server are marked with [DataMember]. If we want derived types to be allowed, we must use the [KnownType] attribute to identify them. The only types WCF will allow to be serialized or deserialized for this service are those in the service interface and these "known types". Attempting to exchange any other type not in this list will be rejected.  
   
    ```csharp
    [DataContract]  
@@ -371,7 +371,7 @@ public class RemotingServer : MarshalByRefObject
    }  
    ```  
   
-3.  Next, we provide the implementation for the service interface.  
+3. Next, we provide the implementation for the service interface.  
   
    ```csharp  
    public class CustomerService : ICustomerService  
@@ -388,7 +388,7 @@ public class RemotingServer : MarshalByRefObject
    }  
    ```  
   
-4.  To run the WCF service, we need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. This is typically done by adding the following sections to the server project’s web.config file.  
+4. To run the WCF service, we need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. This is typically done by adding the following sections to the server project’s web.config file.  
   
     ```xml  
     <configuration>  
@@ -404,7 +404,7 @@ public class RemotingServer : MarshalByRefObject
     </configuration>  
     ```  
   
-5.  The WCF service can then be started with the following code:  
+5. The WCF service can then be started with the following code:  
   
    ```csharp
    ServiceHost customerServiceHost = new ServiceHost(typeof(CustomerService));  
@@ -413,7 +413,7 @@ public class RemotingServer : MarshalByRefObject
   
      When this ServiceHost is started, it uses the web.config file to establish the proper contract, binding and endpoint. For more information about configuration files, see [Configuring Services Using Configuration Files](./configuring-services-using-configuration-files.md). This style of starting the server is known as self-hosting. To learn more about other choices for hosting WCF services, see [Hosting Services](./hosting-services.md).  
   
-6.  The client project’s app.config must declare matching binding information for the service’s endpoint. The easiest way to do this in Visual Studio is to use **Add Service Reference**, which will automatically update the app.config file. Alternatively, these same changes can be added manually.  
+6. The client project’s app.config must declare matching binding information for the service’s endpoint. The easiest way to do this in Visual Studio is to use **Add Service Reference**, which will automatically update the app.config file. Alternatively, these same changes can be added manually.  
   
     ```xml  
     <configuration>  
@@ -430,7 +430,7 @@ public class RemotingServer : MarshalByRefObject
   
      For more information about using **Add Service Reference**, see [How to: Add, Update, or Remove a Service Reference](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference).  
   
-7.  Now we can call the WCF service from the client. We do this by creating a channel factory for that service, asking it for a channel, and directly calling the method we want on that channel. We can do this because the channel implements the service’s interface and handles the underlying request/reply logic for us. The return value from that method call is the deserialized copy of the server’s response.  
+7. Now we can call the WCF service from the client. We do this by creating a channel factory for that service, asking it for a channel, and directly calling the method we want on that channel. We can do this because the channel implements the service’s interface and handles the underlying request/reply logic for us. The return value from that method call is the deserialized copy of the server’s response.  
   
    ```csharp
    ChannelFactory<ICustomerService> factory =  
@@ -445,7 +445,7 @@ public class RemotingServer : MarshalByRefObject
 #### Scenario 2: Server Returns an Object By Reference  
  This scenario demonstrates the server providing an object to the client by reference. In .NET Remoting, this is handled automatically for any type derived from MarshalByRefObject, which is serialized by-reference. An example of this scenario is allowing multiple clients to have independent sessionful server-side objects. As previously mentioned, objects returned by a WCF service are always by value, so there is no direct equivalent of a by-reference object, but it is possible to achieve something similar to by-reference semantics using an <xref:System.ServiceModel.EndpointAddress10> object. This is a serializable by-value object that can be used by the client to obtain a sessionful by-reference object on the server. This enables the scenario of having multiple clients with independent sessionful server-side objects.  
   
-1.  First, we need to define a WCF service contract that corresponds to the sessionful object itself.  
+1. First, we need to define a WCF service contract that corresponds to the sessionful object itself.  
   
    ```csharp
    [ServiceContract(SessionMode = SessionMode.Allowed)]  
@@ -462,7 +462,7 @@ public class RemotingServer : MarshalByRefObject
     > [!TIP]
     >  Notice that the sessionful object is marked with [ServiceContract], making it a normal WCF service interface. Setting the SessionMode property indicates it will be a sessionful service. In WCF, a session is a way of correlating multiple messages sent between two endpoints. This means that once a client obtains a connection to this service, a session will be established between the client and the server. The client will use a single unique instance of the server-side object for all its interactions within this single session.  
   
-2.  Next, we need to provide the implementation of this service interface. By denoting it with [ServiceBehavior] and setting the InstanceContextMode, we tell WCF we want to use a unique instance of this type for an each session.  
+2. Next, we need to provide the implementation of this service interface. By denoting it with [ServiceBehavior] and setting the InstanceContextMode, we tell WCF we want to use a unique instance of this type for an each session.  
   
    ```csharp
    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
@@ -483,7 +483,7 @@ public class RemotingServer : MarshalByRefObject
        }  
    ```  
   
-3.  Now we need a way to obtain an instance of this sessionful object. We do this by creating another WCF service interface that returns an EndpointAddress10 object. This is a serializable form of an endpoint that the client can use to create the sessionful object.  
+3. Now we need a way to obtain an instance of this sessionful object. We do this by creating another WCF service interface that returns an EndpointAddress10 object. This is a serializable form of an endpoint that the client can use to create the sessionful object.  
   
    ```csharp
    [ServiceContract]  
@@ -516,7 +516,7 @@ public class RemotingServer : MarshalByRefObject
   
      This implementation maintains a singleton channel factory to create sessionful objects. When GetInstanceAddress() is called, it creates a channel and creates an EndpointAddress10 object that effectively points to the remote address associated with this channel. EndpointAddress10 is simply a data type that can be returned to the client by-value.  
   
-4.  We need to modify the server’s configuration file by doing the following two things as shown in the example below:  
+4. We need to modify the server’s configuration file by doing the following two things as shown in the example below:  
   
     1.  Declare a \<client> section that describes the endpoint for the sessionful object. This is necessary because the server also acts as a client in this situation.  
   
@@ -562,7 +562,7 @@ public class RemotingServer : MarshalByRefObject
    sessionHost.Open();  
    ```  
   
-5.  We configure the client by declaring these same endpoints in its project’s app.config file.  
+5. We configure the client by declaring these same endpoints in its project’s app.config file.  
   
     ```xml  
     <configuration>  
@@ -585,7 +585,7 @@ public class RemotingServer : MarshalByRefObject
     </configuration>  
     ```  
   
-6.  In order to create and use this sessionful object, the client must do the following steps:  
+6. In order to create and use this sessionful object, the client must do the following steps:  
   
     1.  Create a channel to the ISessionBoundFactory service.  
   
@@ -628,9 +628,9 @@ public class RemotingServer : MarshalByRefObject
 #### Scenario 3: Client Sends Server a By-Value Instance  
  This scenario demonstrates the client sending a non-primitive object instance to the server by value. Because WCF only sends objects by value, this scenario demonstrates normal WCF usage.  
   
-1.  Use the same WCF Service from Scenario 1.  
+1. Use the same WCF Service from Scenario 1.  
   
-2.  Use the client to create a new by-value object (Customer), create a channel to communicate with the ICustomerService service, and send the object to it.  
+2. Use the client to create a new by-value object (Customer), create a channel to communicate with the ICustomerService service, and send the object to it.  
   
    ```csharp
    ChannelFactory<ICustomerService> factory =  

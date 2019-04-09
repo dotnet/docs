@@ -20,25 +20,25 @@ This topic shows how to enable [!INCLUDE[TLA#tla_winxp](../../../../includes/tla
   
 #### To enable Windows Forms visual styles  
   
-1.  Create a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Application project named `HostingWfWithVisualStyles`.  
+1. Create a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Application project named `HostingWfWithVisualStyles`.  
   
-2.  In Solution Explorer, add references to the following assemblies.  
+2. In Solution Explorer, add references to the following assemblies.  
   
     -   WindowsFormsIntegration  
   
     -   System.Windows.Forms  
   
-3.  In the Toolbox, double-click the <xref:System.Windows.Controls.Grid> icon to place a <xref:System.Windows.Controls.Grid> element on the design surface.  
+3. In the Toolbox, double-click the <xref:System.Windows.Controls.Grid> icon to place a <xref:System.Windows.Controls.Grid> element on the design surface.  
   
-4.  In the Properties window, set the values of the <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties to **Auto**.  
+4. In the Properties window, set the values of the <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties to **Auto**.  
   
-5.  In Design view or XAML view, select the <xref:System.Windows.Window>.  
+5. In Design view or XAML view, select the <xref:System.Windows.Window>.  
   
-6.  In the Properties window, click the **Events** tab.  
+6. In the Properties window, click the **Events** tab.  
   
-7.  Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
+7. Double-click the <xref:System.Windows.FrameworkElement.Loaded> event.
   
-8.  In MainWindow.xaml.vb or MainWindow.xaml.cs, insert the following code to handle the <xref:System.Windows.FrameworkElement.Loaded> event.  
+8. In MainWindow.xaml.vb or MainWindow.xaml.cs, insert the following code to handle the <xref:System.Windows.FrameworkElement.Loaded> event.  
   
      [!code-csharp[HostingWfWithVisualStyles#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfWithVisualStyles/CSharp/HostingWfWithVisualStyles/Window1.xaml.cs#11)]
      [!code-vb[HostingWfWithVisualStyles#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWfWithVisualStyles/VisualBasic/HostingWfWithVisualStyles/Window1.xaml.vb#11)]  
@@ -52,15 +52,16 @@ This topic shows how to enable [!INCLUDE[TLA#tla_winxp](../../../../includes/tla
   
 #### To disable Windows Forms visual styles  
   
-1.  Open MainWindow.xaml.vb or MainWindow.xaml.cs in the Code Editor.  
+1. Open MainWindow.xaml.vb or MainWindow.xaml.cs in the Code Editor.  
   
-2.  Comment out the call to the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.  
+2. Comment out the call to the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.  
   
-3.  Press F5 to build and run the application.  
+3. Press F5 to build and run the application.  
   
      The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is painted with the default system style.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Application.EnableVisualStyles%2A>
 - <xref:System.Windows.Forms.VisualStyles>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

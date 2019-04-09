@@ -17,11 +17,11 @@ You can use Svcutil.exe to download metadata from running services and to save t
   
 ## To download metadata using Svcutil.exe  
   
-1.  Locate the Svcutil.exe tool at the following location:  
+1. Locate the Svcutil.exe tool at the following location:  
   
      C:\Program Files\Microsoft SDKs\Windows\v1.0.\bin  
   
-2.  At the command prompt, launch the tool using the following format.  
+2. At the command prompt, launch the tool using the following format.  
   
     ```  
     svcutil.exe /t:metadata  <url>* | <epr>  
@@ -29,7 +29,7 @@ You can use Svcutil.exe to download metadata from running services and to save t
   
      You must specify the `/t:metadata` option to download metadata. Otherwise, client code and configuration are generated.  
   
-3.  The <`url`>argument specifies the URL to a service endpoint that provides metadata or to a metadata document hosted online. The <`epr`> argument specifies the path to an XML file that contains a WS-Addressing `EndpointAddress` for a service endpoint that supports WS-MetadataExchange.  
+3. The <`url`>argument specifies the URL to a service endpoint that provides metadata or to a metadata document hosted online. The <`epr`> argument specifies the path to an XML file that contains a WS-Addressing `EndpointAddress` for a service endpoint that supports WS-MetadataExchange.  
   
  For more options about using this tool for metadata download, see [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
@@ -41,4 +41,5 @@ svcutil /t:metadata http://service/metadataEndpoint
 ```  
   
 ## See also
+
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

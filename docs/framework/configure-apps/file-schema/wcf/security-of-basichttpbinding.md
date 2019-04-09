@@ -60,6 +60,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
  By default, the SOAP message is not secured and the client is not authenticated. This element enables you to configure additional security settings for the `basicHttpBinding` element.  
   
 ## See also
+
 - <xref:System.ServiceModel.BasicHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.BasicHttpBindingElement.Security%2A>
 - <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement>

@@ -114,7 +114,6 @@ The downside of embedding symbol files is that they increase the package size by
 >
 > The caveat is that they would need to find and configure the NuGet symbol server in their IDE (as a one-time setup) to get symbol files. Visual Studio 2019 plans to provide the NuGet.org symbol server as one of the options out of the box. 
 
-
 >[!div class="step-by-step"]
 >[Previous](strong-naming.md)
 >[Next](dependencies.md)

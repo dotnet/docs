@@ -8,19 +8,19 @@ A persistence participant can participate in a persistence operation (Save or Lo
   
  The following list describes the tasks performed by the persistence subsystem in different stages of the Persist (Save) operation. The persistence participants are used in the third and fourth stages. If the participant is an I/O participant (a persistence participant that also participates in I/O operations), the participant is also used in the sixth stage.  
   
-1.  Gathers built-in values, including workflow state, bookmarks, mapped variables, and timestamp.  
+1. Gathers built-in values, including workflow state, bookmarks, mapped variables, and timestamp.  
   
-2.  Gathers all persistence participants that were added to the extension collection associated with the workflow instance.  
+2. Gathers all persistence participants that were added to the extension collection associated with the workflow instance.  
   
-3.  Invokes the <xref:System.Activities.Persistence.PersistenceParticipant.CollectValues%2A> method implemented by all persistence participants.  
+3. Invokes the <xref:System.Activities.Persistence.PersistenceParticipant.CollectValues%2A> method implemented by all persistence participants.  
   
-4.  Invokes the <xref:System.Activities.Persistence.PersistenceParticipant.MapValues%2A> method implemented by all persistence participants.  
+4. Invokes the <xref:System.Activities.Persistence.PersistenceParticipant.MapValues%2A> method implemented by all persistence participants.  
   
-5.  Persist or save the workflow into the persistence store.  
+5. Persist or save the workflow into the persistence store.  
   
-6.  Invokes the <xref:System.Activities.Persistence.PersistenceIOParticipant.BeginOnSave%2A> method on all of the persistence I/O participants. If the participant is not an I/O participant, this task is skipped. If the persistence episode is transactional, the transaction is provided in Transaction.Current property.  
+6. Invokes the <xref:System.Activities.Persistence.PersistenceIOParticipant.BeginOnSave%2A> method on all of the persistence I/O participants. If the participant is not an I/O participant, this task is skipped. If the persistence episode is transactional, the transaction is provided in Transaction.Current property.  
   
-7.  Waits for all persistence participants to complete. If all the participants succeed in persisting instance data, commits the transaction.  
+7. Waits for all persistence participants to complete. If all the participants succeed in persisting instance data, commits the transaction.  
   
  A persistence participant derives from the **PersistenceParticipant** class and may implement the **CollectValues** and **MapValues** methods. A persistence I/O participant derives from the **PersistenceIOParticipant** class and may implement the **BeginOnSave** method in addition to implementing the **CollectValues** and **MapValues** methods.  
   
@@ -28,15 +28,15 @@ A persistence participant can participate in a persistence operation (Save or Lo
   
  The following list describes the tasks performed by the persistence subsystem in different stages of the Load operation. The persistence participants are used in the fourth stage. The persistence I/O participants (persistence participants that also participate in I/O operations) are also used in the third stage.  
   
-1.  Gathers all persistence participants that were added to the extension collection associated with the workflow instance.  
+1. Gathers all persistence participants that were added to the extension collection associated with the workflow instance.  
   
-2.  Loads the workflow from the persistence store.  
+2. Loads the workflow from the persistence store.  
   
-3.  Invokes the <xref:System.Activities.Persistence.PersistenceIOParticipant.BeginOnLoad%2A> on all persistence I/O participants and waits for all the persistence participants to complete. If the persistence episode is transactional, the transaction is provided in Transaction.Current.  
+3. Invokes the <xref:System.Activities.Persistence.PersistenceIOParticipant.BeginOnLoad%2A> on all persistence I/O participants and waits for all the persistence participants to complete. If the persistence episode is transactional, the transaction is provided in Transaction.Current.  
   
-4.  Loads the workflow instance in memory based on the data retrieved from the persistence store.  
+4. Loads the workflow instance in memory based on the data retrieved from the persistence store.  
   
-5.  Invokes <xref:System.Activities.Persistence.PersistenceParticipant.PublishValues%2A> on each persistence participant.  
+5. Invokes <xref:System.Activities.Persistence.PersistenceParticipant.PublishValues%2A> on each persistence participant.  
   
  A persistence participant derives from the **PersistenceParticipant** class and may implement the **PublishValues** method. A persistence I/O participant derives from the **PersistenceIOParticipant** class and may implement the **BeginOnLoad** method in addition to implementing the **PublishValues** method.  
   
@@ -55,4 +55,5 @@ A persistence participant can participate in a persistence operation (Save or Lo
 -   [How to: Create a Custom Persistence Participant](how-to-create-a-custom-persistence-participant.md)  
   
 ## See also
+
 - [Store Extensibility](store-extensibility.md)

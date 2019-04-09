@@ -29,7 +29,6 @@ Cases not supported in Windows Containers, as of May 2018:
 
 -   Windows infrastructure roles (DNS, DHCP, DC, NTP, PRINT, File server, IAM etc.) are not supported scenarios.
 
-
 For additional not-supported scenarios and requests from the community, see the UserVoice forum for Windows Containers: <https://windowsserver.uservoice.com/forums/304624-containers>.
 
 ### Additional resources

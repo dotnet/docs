@@ -11,19 +11,19 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
   
 ### To register the required attributed types with COM  
   
-1.  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool to retrieve the metadata contract from the WCF service. This generates the source code for a WCF client assembly and a client application configuration file.  
+1. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool to retrieve the metadata contract from the WCF service. This generates the source code for a WCF client assembly and a client application configuration file.  
   
-2.  Ensure that the types in the assembly are marked as `ComVisible`. To do so, add the following attribute to the AssemblyInfo.cs file in your Visual Studio project.  
+2. Ensure that the types in the assembly are marked as `ComVisible`. To do so, add the following attribute to the AssemblyInfo.cs file in your Visual Studio project.  
   
     ```  
     [assembly: ComVisible(true)]  
     ```  
   
-3.  Compile the managed WCF client as a strong-named assembly. This requires signing with a cryptographic key pair. For more information, see [Signing an Assembly with a Strong Name](https://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
+3. Compile the managed WCF client as a strong-named assembly. This requires signing with a cryptographic key pair. For more information, see [Signing an Assembly with a Strong Name](https://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
   
-4.  Use the Assembly Registration (Regasm.exe) tool with the `/tlb` option to register the types in the assembly with COM.  
+4. Use the Assembly Registration (Regasm.exe) tool with the `/tlb` option to register the types in the assembly with COM.  
   
-5.  Use the Global Assembly Cache (Gacutil.exe) tool to add the assembly to the global assembly cache.  
+5. Use the Global Assembly Cache (Gacutil.exe) tool to add the assembly to the global assembly cache.  
   
     > [!NOTE]
     >  Signing the assembly and adding it to the Global Assembly Cache are optional steps, but they can simplify the process of loading the assembly from the correct location at runtime.  
@@ -92,4 +92,5 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
      This modifies the imported interface definitions so that all methods return an `HResult`. Any other return values are converted into out parameters. The overall execution of the methods remains the same. This allows you to determine the cause of an exception when calling a method on the proxy. This functionality is only available from C++ code.  
   
 ## See also
+
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

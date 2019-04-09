@@ -26,6 +26,7 @@ A polygon is a closed shape with three or more straight sides. For example, a tr
  ![Polygon](./media/aboutgdip02-art08.gif "Aboutgdip02_art08")  
   
 ## See also
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)

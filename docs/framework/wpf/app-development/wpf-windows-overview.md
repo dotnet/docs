@@ -34,13 +34,12 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 > [!NOTE]
 >  Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, including [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] and loose [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by [!INCLUDE[TLA#tla_iegeneric](../../../../includes/tlasharptla-iegeneric-md.md)]. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
-  
-  
+
 <a name="TheWindowClass"></a>   
 ## The Window Class  
- The following figure illustrates the constituent parts of a window.  
+ The following figure illustrates the constituent parts of a window:  
   
- ![Window elements](./media/windowoverviewfigure1.PNG "WindowOverviewFigure1")  
+ ![Screenshot that shows window elements.](./media/wpf-windows-overview/window-constituent-elements.png)  
   
  A window is divided into two areas: the non-client area and client area.  
   
@@ -124,8 +123,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 <a name="WindowLifetime"></a>   
 ## Window Lifetime  
  As with any class, a window has a lifetime that begins when it is first instantiated, after which it is opened, activated and deactivated, and eventually closed.  
-  
-  
+
 <a name="Opening_a_Window"></a>   
 ### Opening a Window  
  To open a window, you first create an instance of it, which is demonstrated in the following example.  
@@ -140,7 +138,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  The window is finally opened by calling the <xref:System.Windows.Window.Show%2A> method; the result is shown in the following figure.  
   
- ![A Window Opened by Calling Window.Show](./media/windowoverviewfigure8.png "WindowOverviewFigure8")  
+ ![A Window Opened by calling Window.Show](./media/wpf-windows-overview//window-opened-show-method.png)  
   
  A window that is opened by calling <xref:System.Windows.Window.Show%2A> is a modeless window, which means that the application operates in a mode that allows users to activate other windows in the same application.  
   
@@ -252,8 +250,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  [!code-csharp[WindowClosingSnippets](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml.cs)]
  [!code-vb[WindowClosingSnippets](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic/datawindow.xaml.vb)]  
- 
-  
+
  The <xref:System.Windows.Window.Closing> event handler is passed a <xref:System.ComponentModel.CancelEventArgs>, which implements the `Boolean`<xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property that you set to `true` to prevent a window from closing.  
   
  If <xref:System.Windows.Window.Closing> is not handled, or it is handled but not canceled, the window will close. Just before a window actually closes, <xref:System.Windows.Window.Closed> is raised. At this point, a window cannot be prevented from closing.  
@@ -276,13 +273,13 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="Window_Lifetime_Events"></a>   
 ### Window Lifetime Events  
- The following illustration shows the sequence of the principal events in the lifetime of a window.  
+ The following illustration shows the sequence of the principal events in the lifetime of a window:  
   
- ![Window Lifetime](./media/windowlifetimeevents.png "WindowLifetimeEvents")  
+ ![Diagram that shows events in a window's lifetime.](./media/wpf-windows-overview/window-lifetime-events.png)  
   
- The following illustration shows the sequence of the principal events in the lifetime of a window that is shown without activation (<xref:System.Windows.Window.ShowActivated%2A> is set to `false` before the window is shown).  
+ The following illustration shows the sequence of the principal events in the lifetime of a window that is shown without activation (<xref:System.Windows.Window.ShowActivated%2A> is set to `false` before the window is shown):  
   
- ![Window Lifetime &#40;Window.ShowActivated &#61; False&#41;](./media/windowlifetimenoact.png "WindowLifetimeNoAct")  
+ ![Diagram that shows events in a window's lifetime without activation.](./media/wpf-windows-overview/window-lifetime-no-activation.png)  
   
 <a name="WindowLocation"></a>   
 ## Window Location  
@@ -345,23 +342,23 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  **For Height Properties:**  
   
-1.  <xref:System.Windows.FrameworkElement.MinHeight%2A?displayProperty=nameWithType> >  
+1. <xref:System.Windows.FrameworkElement.MinHeight%2A?displayProperty=nameWithType>
   
-2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=nameWithType> >  
+2. <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=nameWithType>
   
-3.  <xref:System.Windows.SizeToContent.Height?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType> >  
+3. <xref:System.Windows.SizeToContent.Height?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType>
   
-4.  <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=nameWithType>  
+4. <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=nameWithType>  
   
  **For Width Properties:**  
   
-1.  <xref:System.Windows.FrameworkElement.MinWidth%2A?displayProperty=nameWithType> >  
+1. <xref:System.Windows.FrameworkElement.MinWidth%2A?displayProperty=nameWithType>
   
-2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=nameWithType> >  
+2. <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=nameWithType>
   
-3.  <xref:System.Windows.SizeToContent.Width?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType> >  
+3. <xref:System.Windows.SizeToContent.Width?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType>
   
-4.  <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=nameWithType>  
+4. <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=nameWithType>  
   
  The order of precedence can also determine the size of a window when it is maximized, which is managed with the <xref:System.Windows.Window.WindowState%2A> property.  
   
@@ -395,8 +392,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  You change the appearance of the client area of a window by adding window-specific content to it, such as buttons, labels, and text boxes. To configure the non-client area, <xref:System.Windows.Window> provides several properties, which include <xref:System.Windows.Window.Icon%2A> to set a window's icon and <xref:System.Windows.Window.Title%2A> to set its title.  
   
  You can also change the appearance and behavior of non-client area border by configuring a window's resize mode, window style, and whether it appears as a button in the desktop task bar.  
-  
-  
+
 <a name="Resize_Mode"></a>   
 ### Resize Mode  
  Depending on the <xref:System.Windows.Window.WindowStyle%2A> property, you can control how (and if) users can resize the window. The choice of window style affects whether a user can resize the window by dragging its border with the mouse, whether the **Minimize**, **Maximize**, and **Resize** buttons appear on the non-client area, and, if they do appear, whether they are enabled.  
@@ -431,9 +427,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 -   <xref:System.Windows.WindowStyle.ToolWindow>  
   
- The effect of these window styles are illustrated in the following figure.  
+ The effect of these window styles are illustrated in the following figure:  
   
- ![Window styles](./media/windowoverviewfigure6.PNG "WindowOverviewFigure6")  
+ ![Illustration of window border styles.](./media/wpf-windows-overview/window-border-styles.png)  
   
  You can set <xref:System.Windows.Window.WindowStyle%2A> using either [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup or code; because it is unlikely to change during the lifetime of a window, you will most likely configure it using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup.  
   
@@ -442,9 +438,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 #### Non-Rectangular Window Style  
  There are also situations where the border styles that <xref:System.Windows.Window.WindowStyle%2A> allows you to have are not sufficient. For example, you may want to create an application with a non-rectangular border, like [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] uses.  
   
- For example, consider the speech bubble window shown in the following figure.  
+ For example, consider the speech bubble window shown in the following figure:  
   
- ![Nonrectangular window](./media/nonrectangularwindowfigure.PNG "NonRectangularWindowFigure")  
+ ![A speech bubble window that says Drag Me.](./media/wpf-windows-overview/non-rectangular-window-figure.png)  
   
  This type of window can be created by setting the <xref:System.Windows.Window.WindowStyle%2A> property to <xref:System.Windows.WindowStyle.None>, and by using special support that <xref:System.Windows.Window> has for transparency.  
   
@@ -454,9 +450,10 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="Task_Bar_Presence"></a>   
 ### Task Bar Presence  
- The default appearance of a window includes a task bar button, like the one shown in the following figure.  
-  
- ![Window with a task bar button](./media/windowoverviewfigure7.PNG "WindowOverviewFigure7")  
+
+The default appearance of a window includes a taskbar button, like the one shown in the following figure:
+
+ ![Screenshot that shows a window with a taskbar button.](./media/wpf-windows-overview/window-taskbar-button.png)  
   
  Some types of windows don't have a task bar button, such as message boxes and dialog boxes (see [Dialog Boxes Overview](dialog-boxes-overview.md)). You can control whether the task bar button for a window is shown by setting the <xref:System.Windows.Window.ShowInTaskbar%2A> property (`true` by default).  
   
@@ -477,6 +474,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  Dialog boxes are windows that are often used to gather information from a user to complete a function. For example, when a user wants to open a file, the **Open File** dialog box is usually displayed by an application to get the file name from the user. For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Window>
 - <xref:System.Windows.MessageBox>
 - <xref:System.Windows.Navigation.NavigationWindow>

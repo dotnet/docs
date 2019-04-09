@@ -11,14 +11,15 @@ In some cases, you might want to have multiple sets of settings in an applicatio
   
 ### To Add an Additional Set of Setting to your Application  
   
-1.  From the **Project** menu, choose **Add New Item**. The **Add New Item** dialog box opens.  
+1. From the **Project** menu, choose **Add New Item**. The **Add New Item** dialog box opens.  
   
-2.  In the **Add New Item** dialog box, select **Settings File**, type in a name for the file, and click **Add** to add a new settings file to your solution.  
+2. In the **Add New Item** dialog box, select **Settings File**, type in a name for the file, and click **Add** to add a new settings file to your solution.  
   
-3.  In **Solution Explorer**, drag the new Settings file into the **Properties** folder. This allows your new settings to be available in code.  
+3. In **Solution Explorer**, drag the new Settings file into the **Properties** folder. This allows your new settings to be available in code.  
   
-4.  Add and use settings in this file as you would any other settings file. You can access this group of settings via the Properties.Settings object.  
+4. Add and use settings in this file as you would any other settings file. You can access this group of settings via the Properties.Settings object.  
   
 ## See also
+
 - [Using Application Settings and User Settings](using-application-settings-and-user-settings.md)
 - [Application Settings Overview](application-settings-overview.md)

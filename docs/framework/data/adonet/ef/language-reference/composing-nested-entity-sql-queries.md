@@ -70,4 +70,5 @@ SELECT C2.FirstName, C2.LastName
 ```  
   
 ## See also
+
 - [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

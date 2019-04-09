@@ -11,8 +11,6 @@ ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
 # Globalization for WPF
 This topic introduces issues that you should be aware of when writing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications for the global market. The globalization programming elements are defined in [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] in `System.Globalization`.
 
-
-
 <a name="xaml_globalization"></a>
 ## XAML Globalization
  [!INCLUDE[TLA#tla_xaml#initcap](../../../../includes/tlasharptla-xamlsharpinitcap-md.md)] is based on [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] and takes advantage of the globalization support defined in the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] specification. The following sections describe some [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] features that you should be aware of.
@@ -175,4 +173,5 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ```
 
 ## See also
+
 - [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)

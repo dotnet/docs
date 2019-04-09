@@ -61,6 +61,7 @@ A *data contract* is a formal agreement between a service and a client that abst
  For a complete code sample of a WCF service that defines a data contract see the [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md) sample.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)

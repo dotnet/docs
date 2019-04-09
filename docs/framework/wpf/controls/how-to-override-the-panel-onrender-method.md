@@ -25,6 +25,7 @@ This example shows how to override the <xref:System.Windows.Controls.Panel.OnRen
  [!code-vb[LightWeightCustomPanel#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LightWeightCustomPanel/visualbasic/offsetpanel.vb#1)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.Panel>
 - [Panels Overview](panels-overview.md)
 - [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982)

@@ -16,4 +16,5 @@ The [Entity Framework Sample Provider](https://code.msdn.microsoft.com/windowsde
  [Walkthrough: SQL Generation](../../../../../docs/framework/data/adonet/ef/walkthrough-sql-generation.md)  
   
 ## See also
+
 - [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)

@@ -9,7 +9,7 @@ ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
 # Transport Security with Basic Authentication
 The following illustration shows a Windows Communication Foundation (WCF) service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. For more information about enabling basic authentication on Internet Information Services (IIS), see [https://go.microsoft.com/fwlink/?LinkId=83822](https://go.microsoft.com/fwlink/?LinkId=83822).  
   
- ![Transport security with basic authentication](../../../../docs/framework/wcf/feature-details/media/securedbyusername.gif "SecuredbyUsername")  
+ ![Screenshot that shows transport security with basic authentication.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -105,6 +105,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
 - <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

@@ -24,5 +24,6 @@ This example shows how to programmatically change the current selection in a <xr
  [!code-vb[RichTextBoxMiscSnippets_snip#ChangeSelectionProgrammaticalyCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/ChangeSelectionProgrammaticaly.xaml.vb#changeselectionprogrammaticalycodeexamplewholepage)]  
   
 ## See also
+
 - [RichTextBox Overview](richtextbox-overview.md)
 - [TextBox Overview](textbox-overview.md)

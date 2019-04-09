@@ -24,6 +24,7 @@ This example shows how to clear bindings from an object.
  To clear bindings from all possible properties on an object, use <xref:System.Windows.Data.BindingOperations.ClearAllBindings%2A>.  
   
 ## See also
+
 - <xref:System.Windows.Data.BindingOperations>
 - [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

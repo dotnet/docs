@@ -13,9 +13,9 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
   
  This section describes:  
   
-1.  How to implement and use the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> interface, which exposes the WSDL generation data to you prior to publishing the WSDL.  
+1. How to implement and use the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> interface, which exposes the WSDL generation data to you prior to publishing the WSDL.  
   
-2.  How to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> interface, which exposes the policy data to you prior to exporting the policy assertions in WSDL data.  
+2. How to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> interface, which exposes the policy data to you prior to exporting the policy assertions in WSDL data.  
   
  For more information about importing custom WSDL and policy assertions, see [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md).  
   
@@ -36,6 +36,7 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
  For more information, see [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md).  
   
 ## See also
+
 - [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)
 - [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md)
 - [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)

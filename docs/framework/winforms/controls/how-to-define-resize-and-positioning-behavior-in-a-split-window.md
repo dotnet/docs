@@ -25,7 +25,7 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
   
 ### To define SplitContainer resize behavior  
   
-1.  In a procedure, set the <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property to the desired size, so that the 'snapping' behavior of the splitter is achieved.  
+1. In a procedure, set the <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property to the desired size, so that the 'snapping' behavior of the splitter is achieved.  
   
      In the following code example, within the form's <xref:System.Windows.Forms.Form.Load> event, the splitter within the <xref:System.Windows.Forms.SplitContainer> control is set to jump 10 pixels when dragged.  
   
@@ -58,5 +58,6 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
      Moving the splitter slightly to the left or right will have no discernible effect; however, when the mouse pointer goes 10 pixels in either direction, the splitter will snap to the new position.  
   
 ## See also
+
 - <xref:System.Windows.Forms.SplitContainer>
 - <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A>

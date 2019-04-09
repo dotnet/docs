@@ -47,34 +47,34 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To create the project  
   
-1.  Create a Windows Application project called **MdiForm** (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
+1. Create a Windows Application project called **MdiForm** (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
-2.  In the Windows Forms Designer, select the form.  
+2. In the Windows Forms Designer, select the form.  
   
-3.  In the Properties window, set the value of the <xref:System.Windows.Forms.Form.IsMdiContainer%2A> to `true`.  
+3. In the Properties window, set the value of the <xref:System.Windows.Forms.Form.IsMdiContainer%2A> to `true`.  
   
 ## Creating the Main Menu  
  The parent MDI form contains the main menu. The main menu has one menu item named **Window**. With the **Window** menu item, you can create child forms. Menu items from child forms are merged into the main menu.  
   
 #### To create the Main menu  
   
-1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto the form.  
+1. From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto the form.  
   
-2.  Add a <xref:System.Windows.Forms.ToolStripMenuItem> to the <xref:System.Windows.Forms.MenuStrip> control and name it **Window**.  
+2. Add a <xref:System.Windows.Forms.ToolStripMenuItem> to the <xref:System.Windows.Forms.MenuStrip> control and name it **Window**.  
   
-3.  Select the <xref:System.Windows.Forms.MenuStrip> control.  
+3. Select the <xref:System.Windows.Forms.MenuStrip> control.  
   
-4.  In the Properties window, set the value of the <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property to `ToolStripMenuItem1`.  
+4. In the Properties window, set the value of the <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property to `ToolStripMenuItem1`.  
   
-5.  Add a subitem to the **Window** menu item, and then name the subitem **New**.  
+5. Add a subitem to the **Window** menu item, and then name the subitem **New**.  
   
-6.  In the Properties window, click **Events**.  
+6. In the Properties window, click **Events**.  
   
-7.  Double-click the <xref:System.Windows.Forms.ToolStripItem.Click> event.  
+7. Double-click the <xref:System.Windows.Forms.ToolStripItem.Click> event.  
   
      The Windows Forms Designer generates an event handler for the <xref:System.Windows.Forms.ToolStripItem.Click> event.  
   
-8.  Insert the following code into the event handler.  
+8. Insert the following code into the event handler.  
   
      [!code-csharp[System.Windows.Forms.ToolStrip.MdiForm#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.MdiForm/CS/Form1.cs#2)]
      [!code-vb[System.Windows.Forms.ToolStrip.MdiForm#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.MdiForm/VB/Form1.vb#2)]  
@@ -84,13 +84,13 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To add the ToolStripPanel control to the Toolbox  
   
-1.  Open the **Toolbox**, and then click the **All Windows Forms** tab to show the available Windows Forms controls.  
+1. Open the **Toolbox**, and then click the **All Windows Forms** tab to show the available Windows Forms controls.  
   
-2.  Right-click to open the shortcut menu, and select **Choose Items**.  
+2. Right-click to open the shortcut menu, and select **Choose Items**.  
   
-3.  In the **Choose Toolbox Items** dialog box, scroll down the **Name** column until you find **ToolStripPanel**.  
+3. In the **Choose Toolbox Items** dialog box, scroll down the **Name** column until you find **ToolStripPanel**.  
   
-4.  Select the check box by **ToolStripPanel**, and then click **OK**.  
+4. Select the check box by **ToolStripPanel**, and then click **OK**.  
   
      The <xref:System.Windows.Forms.ToolStripPanel> control appears in the **Toolbox**.  
   
@@ -99,15 +99,15 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To define a child form  
   
-1.  Add a new form named `ChildForm` to the project.  
+1. Add a new form named `ChildForm` to the project.  
   
      For more information, see [How to: Add Windows Forms to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y2xxdce3(v=vs.100)).  
   
-2.  From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto the child form.  
+2. From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto the child form.  
   
-3.  Click the <xref:System.Windows.Forms.MenuStrip> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")), and then select **Edit Items**.  
+3. Click the <xref:System.Windows.Forms.MenuStrip> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")), and then select **Edit Items**.  
   
-4.  In the **Items Collection Editor** dialog box, add a new <xref:System.Windows.Forms.ToolStripMenuItem> named **ChildMenuItem** to the child menu.  
+4. In the **Items Collection Editor** dialog box, add a new <xref:System.Windows.Forms.ToolStripMenuItem> named **ChildMenuItem** to the child menu.  
   
      For more information, see [ToolStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100)).  
   
@@ -115,17 +115,17 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To test your form  
   
-1.  Press F5 to compile and run your form.  
+1. Press F5 to compile and run your form.  
   
-2.  Click the **Window** menu item to open the menu, and then click **New**.  
+2. Click the **Window** menu item to open the menu, and then click **New**.  
   
      A new child form is created in the form's MDI client area. The child form's menu is merged with the main menu.  
   
-3.  Close the child form.  
+3. Close the child form.  
   
      The child form's menu is removed from the main menu.  
   
-4.  Click **New** several times.  
+4. Click **New** several times.  
   
      The child forms are automatically listed under the **Window** menu item because the <xref:System.Windows.Forms.MenuStrip> control's <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property is assigned.  
   
@@ -134,25 +134,25 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To add ToolStrip controls to the MDI parent form  
   
-1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.ToolStripPanel> control onto the form.  
+1. From the **Toolbox**, drag a <xref:System.Windows.Forms.ToolStripPanel> control onto the form.  
   
-2.  With the <xref:System.Windows.Forms.ToolStripPanel> control selected, double-click the <xref:System.Windows.Forms.ToolStrip> control in the **Toolbox**.  
+2. With the <xref:System.Windows.Forms.ToolStripPanel> control selected, double-click the <xref:System.Windows.Forms.ToolStrip> control in the **Toolbox**.  
   
      A <xref:System.Windows.Forms.ToolStrip> control is created in the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
-3.  Select the <xref:System.Windows.Forms.ToolStripPanel> control.  
+3. Select the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
-4.  In the Properties window, change the value of the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left>.  
+4. In the Properties window, change the value of the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left>.  
   
      The <xref:System.Windows.Forms.ToolStripPanel> control docks to the left side of the form, underneath the main menu. The MDI client area resizes to fit the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
-5.  Repeat steps 1 through 4.  
+5. Repeat steps 1 through 4.  
   
      Dock the new <xref:System.Windows.Forms.ToolStripPanel> control to the top of the form.  
   
      The <xref:System.Windows.Forms.ToolStripPanel> control is docked underneath the main menu, but to the right of the first <xref:System.Windows.Forms.ToolStripPanel> control. This step illustrates the importance of z-order in correctly positioning <xref:System.Windows.Forms.ToolStripPanel> controls.  
   
-6.  Repeat steps 1 through 4 for two more <xref:System.Windows.Forms.ToolStripPanel> controls.  
+6. Repeat steps 1 through 4 for two more <xref:System.Windows.Forms.ToolStripPanel> controls.  
   
      Dock the new <xref:System.Windows.Forms.ToolStripPanel> controls to the right and bottom of the form.  
   
@@ -161,31 +161,31 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
 #### To arrange ToolStripPanel controls by Z-order  
   
-1.  In the **View** menu, click **Other Windows**, and then click **Document Outline**.  
+1. In the **View** menu, click **Other Windows**, and then click **Document Outline**.  
   
      The arrangement of your <xref:System.Windows.Forms.ToolStripPanel> controls from the previous procedure is nonstandard. This is because the z-order is not correct. Use the Document Outline window to change the z-order of the controls.  
   
-2.  In the Document Outline window, select **ToolStripPanel4**.  
+2. In the Document Outline window, select **ToolStripPanel4**.  
   
-3.  Click the down-arrow button repeatedly, until **ToolStripPanel4** is at the bottom of the list.  
+3. Click the down-arrow button repeatedly, until **ToolStripPanel4** is at the bottom of the list.  
   
      The **ToolStripPanel4** control is docked to the bottom of the form, underneath the other controls.  
   
-4.  Select **ToolStripPanel2**.  
+4. Select **ToolStripPanel2**.  
   
-5.  Click the down-arrow button one time to position the control third in the list.  
+5. Click the down-arrow button one time to position the control third in the list.  
   
      The **ToolStripPanel2** control is docked to the top of the form, underneath the main menu and above the other controls.  
   
-6.  Select various controls in the **Document Outline** window and move them to different positions in the z-order. Note the effect of the z-order on the placement of docked controls. Use CTRL-Z or **Undo** on the **Edit** menu to undo your changes.  
+6. Select various controls in the **Document Outline** window and move them to different positions in the z-order. Note the effect of the z-order on the placement of docked controls. Use CTRL-Z or **Undo** on the **Edit** menu to undo your changes.  
   
 ## Checkpoint  
   
 #### To test your form  
   
-1.  Press F5 to compile and run your form.  
+1. Press F5 to compile and run your form.  
   
-2.  Click the grip of a <xref:System.Windows.Forms.ToolStrip> control and drag the control to different positions on the form.  
+2. Click the grip of a <xref:System.Windows.Forms.ToolStrip> control and drag the control to different positions on the form.  
   
      You can drag a <xref:System.Windows.Forms.ToolStrip> control from one <xref:System.Windows.Forms.ToolStripPanel> control to another.  
   
@@ -199,6 +199,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
 -   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.StatusStrip>

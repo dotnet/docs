@@ -200,4 +200,5 @@ Microsoft develops samples and documentation that follow the guidelines in this 
      [!code-vb[VbVbalrGuidelines#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#34)]  
   
 ## See also
+
 - [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

@@ -27,7 +27,7 @@ We recommend you use Visual Studio 2017 (or later) with the built-in Docker Tool
 
 ### Visual Studio for Mac (Mac development machine)
 
-You can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) when developing Docker-based applications. Visual Studio for Mac offers a richer IDE when compared to Visual Studio Code for Mac.
+You can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) when developing Docker-based applications. Visual Studio for Mac offers a richer IDE when compared to Visual Studio Code for Mac.
 
 ## Language and framework choices
 

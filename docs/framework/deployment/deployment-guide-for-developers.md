@@ -111,23 +111,23 @@ If you use ClickOnce, InstallAware, InstallShield, or WiX to deploy your app, yo
 
  In Visual Studio, to choose ClickOnce deployment and add a dependency on the .NET Framework:
 
-1.  Open the app project you want to publish.
+1. Open the app project you want to publish.
 
-2.  In Solution Explorer, open the shortcut menu for your project, and then choose **Properties**.
+2. In Solution Explorer, open the shortcut menu for your project, and then choose **Properties**.
 
-3.  Choose the **Publish** pane.
+3. Choose the **Publish** pane.
 
-4.  Choose the **Prerequisites** button.
+4. Choose the **Prerequisites** button.
 
-5.  In the **Prerequisites** dialog box, make sure that the **Create setup program to install prerequisite components** check box is selected.
+5. In the **Prerequisites** dialog box, make sure that the **Create setup program to install prerequisite components** check box is selected.
 
-6.  In the prerequisites list, locate and select the version of the .NET Framework that you've used to build your project.
+6. In the prerequisites list, locate and select the version of the .NET Framework that you've used to build your project.
 
-7.  Choose an option to specify the source location for the prerequisites, and then choose **OK**.
+7. Choose an option to specify the source location for the prerequisites, and then choose **OK**.
 
      If you supply a URL for the .NET Framework download location, you can specify either the Microsoft Download Center site or a site of your own. If you are placing the redistributable package on your own server, it must be the offline installer and not the web installer. You can only link to the web installer on the Microsoft Download Center. The URL can also specify a disc on which your own app is being distributed.
 
-8.  In the **Property Pages** dialog box, choose **OK**.
+8. In the **Property Pages** dialog box, choose **OK**.
 
 <a name="installaware"></a> 
 ### InstallAware deployment
@@ -136,19 +136,19 @@ InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EX
 ### InstallShield deployment
  In Visual Studio, to choose InstallShield deployment and add a dependency on the .NET Framework:
 
-1.  On the Visual Studio menu bar, choose **File**, **New**, **Project**.
+1. On the Visual Studio menu bar, choose **File**, **New**, **Project**.
 
-2.  In the left pane of the **New Project** dialog box, choose **Other Project Types**, **Setup and Deployment**, **InstallShield LE**.
+2. In the left pane of the **New Project** dialog box, choose **Other Project Types**, **Setup and Deployment**, **InstallShield LE**.
 
-3.  In the **Name** box, type a name for your project, and then choose **OK**.
+3. In the **Name** box, type a name for your project, and then choose **OK**.
 
-4.  If you are creating a setup and deployment project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio. Restart Visual Studio.
+4. If you are creating a setup and deployment project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio. Restart Visual Studio.
 
-5.  Go to **Project Assistant** wizard and choose **Application Files** to add the Project Output. You can configure other project attributes by using this wizard.
+5. Go to **Project Assistant** wizard and choose **Application Files** to add the Project Output. You can configure other project attributes by using this wizard.
 
-6.  Go to **Installation Requirements** and select the operating systems and the version of the .NET Framework you want to install.
+6. Go to **Installation Requirements** and select the operating systems and the version of the .NET Framework you want to install.
 
-7.  Open the shortcut menu for your setup project and choose **Build**.
+7. Open the shortcut menu for your setup project and choose **Build**.
  
 <a name="wix"></a> 
 ### Windows Installer XML (WiX) deployment
@@ -301,7 +301,7 @@ Type: DWORD
  To install a language pack with the .NET Framework offline installer, you must chain it to your app's setup. For example, to deploy the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] offline installer with the Japanese language pack, use the following command:
 
 ```
-NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductName>
+NDP451-KB2858728-x86-x64-AllOS-JPN.exe /q /norestart /ChainingPackage <ProductName>
 ```
 
  You do not have to chain the language packs if you use the web installer; setup will install the language pack that matches the user's MUI setting. If you want to install a different language, you can use the `/LCID` option to specify a language pack.
@@ -397,6 +397,7 @@ The following table lists .NET Framework language packs that are available for t
 |3082|Spanish - Spain (Modern Sort)|es|
 
 ## See also
+
 - [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)
 - [System Requirements](../../../docs/framework/get-started/system-requirements.md)
 - [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)

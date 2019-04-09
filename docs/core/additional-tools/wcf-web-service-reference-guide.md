@@ -49,7 +49,6 @@ The **Connected Services** page appears as shown in the following image:
     
     3c. Click the **Next** button to open the **Data Type Options** and the **Client Options** pages. Alternatively, click the **Finish** button to use the default options.
 
-
 4. The **Data Type Options** form enables you to refine the generated service reference configuration settings:
 
 ![Visual Studio Data type options tab for .NET Core](./media/wcf-web-service-reference-guide/wcfcs-DataTypesPage.png)
@@ -60,7 +59,6 @@ The **Connected Services** page appears as shown in the following image:
 There may be a delay while type information is loaded, depending on the number of project dependencies and other system performance factors. The **Finish** button is disabled during loading unless the **Reuse types in referenced assemblies** check box is unchecked.
 
 5. Click **Finish** when you are done.
-
 
 While displaying progress, the tool:
 

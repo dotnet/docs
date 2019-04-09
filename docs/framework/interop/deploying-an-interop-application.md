@@ -40,6 +40,7 @@ An interop application typically includes a .NET client assembly, one or more in
  Assemblies that are shared by multiple applications should be installed in a centralized repository called the global assembly cache. .NET clients can access the same copy of the interop assembly, which is signed and installed in the global assembly cache. For more information about producing and using primary interop assemblies, see [Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).  
   
 ## See also
+
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
 - [Using COM Types in Managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))

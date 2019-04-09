@@ -32,6 +32,7 @@ Implement the <xref:System.ComponentModel.ITypedList> interface to enable discov
 -   References to the System.Drawing and System.Windows.Forms assemblies.  
   
 ## See also
+
 - <xref:System.ComponentModel.ITypedList>
 - <xref:System.ComponentModel.BindingList%601>
 - <xref:System.ComponentModel.IBindingList>

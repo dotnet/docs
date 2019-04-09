@@ -17,7 +17,7 @@ Network administrators often field complaints from users about print jobs that d
 ## Example  
  The major steps for creating this kind of utility are as follows.  
   
-1.  Identify the print job that the user is complaining about. Users often cannot do this precisely. They may not know the names of the print servers or printers. They may describe the location of the printer in different terminology than was used in setting its <xref:System.Printing.PrintQueue.Location%2A> property. Accordingly, it is a good idea to generate a list of the user's currently submitted jobs. If there is more than one, then communication between the user and the print system administrator can be used to pinpoint the job that is having problems. The substeps are as follows.  
+1. Identify the print job that the user is complaining about. Users often cannot do this precisely. They may not know the names of the print servers or printers. They may describe the location of the printer in different terminology than was used in setting its <xref:System.Printing.PrintQueue.Location%2A> property. Accordingly, it is a good idea to generate a list of the user's currently submitted jobs. If there is more than one, then communication between the user and the print system administrator can be used to pinpoint the job that is having problems. The substeps are as follows.  
   
     1.  Obtain a list of all print servers.  
   
@@ -27,7 +27,7 @@ Network administrators often field complaints from users about print jobs that d
   
     4.  Within each pass of the queue loop, loop through its jobs and gather identifying information about those that were submitted by the complaining user.  
   
-2.  When the problematic print job has been identified, examine relevant properties to see what might be the problem. For example, is job in an error state or did the printer servicing the queue go offline before the job could print?  
+2. When the problematic print job has been identified, examine relevant properties to see what might be the problem. For example, is job in an error state or did the printer servicing the queue go offline before the job could print?  
   
  The code below is series of code examples. The first code example contains the loop through the print queues. (Step 1c above.) The variable `myPrintQueues` is the <xref:System.Printing.PrintQueueCollection> object for the current print server.  
   
@@ -76,6 +76,7 @@ Network administrators often field complaints from users about print jobs that d
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
 ## See also
+
 - <xref:System.Printing.PrintJobStatus>
 - <xref:System.Printing.PrintSystemJobInfo>
 - <xref:System.FlagsAttribute>

@@ -76,15 +76,15 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
   
 #### To use this sample  
   
-1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. For more information, see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353). Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1. This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. For more information, see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353). Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2.  Using Visual Studio 2012, open the Basic.sln and build the sample.  
+2. Using Visual Studio 2012, open the Basic.sln and build the sample.  
   
-3.  Run the service.exe application.  
+3. Run the service.exe application.  
   
-4.  After the service has started, run the client.exe.  
+4. After the service has started, run the client.exe.  
   
-5.  Observe that the client was able to find the service without knowing its address.  
+5. Observe that the client was able to find the service without knowing its address.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -94,5 +94,3 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Basic`  
-  
-## See also

@@ -324,6 +324,7 @@ resgen StringResources.txt /str:vb,,StringResources
 ```  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
 - [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)

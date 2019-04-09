@@ -24,4 +24,5 @@ class TransportSecurityBindingElement : SecurityBindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>

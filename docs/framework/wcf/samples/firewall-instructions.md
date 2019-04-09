@@ -19,32 +19,32 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
 ### To enable samples programs in advance  
   
-1.  Build the sample.  
+1. Build the sample.  
   
-2.  Click **Start**, click **Run**, and type `firewall.cpl`. This opens the **Windows Firewall Control Panel** applet.  
+2. Click **Start**, click **Run**, and type `firewall.cpl`. This opens the **Windows Firewall Control Panel** applet.  
   
     > [!NOTE]
     >  You must have permission to change the Firewall settings to run samples that require the ability to communicate through the Windows Firewall. If some firewall settings are unavailable and your computer is connected to a domain, your system administrator might be controlling these settings through Group Policy.  
   
-3.  Complete one of the following operating specific steps to allow a program through the Windows Firewall:  
+3. Complete one of the following operating specific steps to allow a program through the Windows Firewall:  
   
     -   On Windows 7 or Windows Server 2008 r2, click **Allow a program or feature through Windows Firewall**. Click **Change Settings**, Allow **Another Program…**.  
   
     -   On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], click **Allow a program through Windows Firewall**.  
   
-4.  On the **Exceptions** tab, click **Add Program**.  
+4. On the **Exceptions** tab, click **Add Program**.  
   
-5.  Click the **Browse** button and select the executable file of the sample you plan to run.  
+5. Click the **Browse** button and select the executable file of the sample you plan to run.  
   
-6.  Repeat steps 4 and 5 until you have added the executable files of all the samples you plan to run.  
+6. Repeat steps 4 and 5 until you have added the executable files of all the samples you plan to run.  
   
-7.  Click **OK** to close the firewall applet.  
+7. Click **OK** to close the firewall applet.  
   
 ### To enable a port range in advance  
   
-1.  Click **Start**, click **Run**, and type `firewall.cpl`. This opens the **Windows Firewall Control Panel** applet.  
+1. Click **Start**, click **Run**, and type `firewall.cpl`. This opens the **Windows Firewall Control Panel** applet.  
   
-2.  On Windows 7 or Windows Server 2008 R2, follow these steps.  
+2. On Windows 7 or Windows Server 2008 R2, follow these steps.  
   
     1.  Click **Advanced settings** in the left column of the Windows Firewall window.  
   
@@ -66,7 +66,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
     10. Click **Outbound Rules** and repeat steps c to h.  
   
-3.  On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], follow these steps.  
+3. On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], follow these steps.  
   
     1.  Click **Allow a program through Windows Firewall**.  
   
@@ -78,7 +78,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
     5.  Repeat steps b to d for ports 8001, 8002, 8003, 9000, 80, and 443.  
   
-4.  Click **OK** to close the firewall applet.  
+4. Click **OK** to close the firewall applet.  
   
 > [!NOTE]
 >  Remove any firewall exceptions when you are finished working with the samples. To do so, open the **Windows Firewall Control Panel** applet and remove any programs or port entries that were added by the previous procedures.

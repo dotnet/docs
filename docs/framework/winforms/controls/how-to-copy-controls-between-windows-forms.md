@@ -11,11 +11,12 @@ A control may be copied onto the same form, onto another form within the project
   
 ### To copy a control  
   
-1.  Select the control, and from the **Edit** menu choose **Copy**.  
+1. Select the control, and from the **Edit** menu choose **Copy**.  
   
  This control can now be pasted to any form that accepts that type of control. Additionally, the control has been added to the Clipboard.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
 - [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md)

@@ -30,6 +30,7 @@ This example shows how to apply a <xref:System.Windows.Media.ScaleTransform> whe
  [!code-vb[ButtonTransform#1cb](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ButtonTransform/VisualBasic/ButtonTransformExample.xaml.vb#1cb)]  
   
 ## See also
+
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.ScaleTransform>
 - [Transforms Overview](transforms-overview.md)

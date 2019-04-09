@@ -10,11 +10,11 @@ The topics in this section describe how to call functions in LINQ to Entities qu
   
  The process for calling a custom function requires three basic steps:  
   
-1.  Define a function in your conceptual model or declare a function in your storage model.  
+1. Define a function in your conceptual model or declare a function in your storage model.  
   
-2.  Add a method to your application and map it to the function in the model with an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>.  
+2. Add a method to your application and map it to the function in the model with an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>.  
   
-3.  Call the function in a LINQ to Entities query.  
+3. Call the function in a LINQ to Entities query.  
   
  For more information, see the topics in this section.  
   
@@ -30,6 +30,7 @@ The topics in this section describe how to call functions in LINQ to Entities qu
  [How to: Call Model-Defined Functions as Object Methods](../../../../../../docs/framework/data/adonet/ef/language-reference/how-to-call-model-defined-functions-as-object-methods.md)  
   
 ## See also
+
 - [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
 - [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)
 - [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))

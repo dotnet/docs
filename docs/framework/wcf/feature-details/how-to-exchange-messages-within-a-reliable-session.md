@@ -32,7 +32,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
 
-1.  Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
+1. Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
 
 ### Configure the client with a WSHttpBinding to use a reliable session
 

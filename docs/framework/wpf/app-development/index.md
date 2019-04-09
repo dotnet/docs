@@ -22,9 +22,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 >  Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
   
  To build this set of applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements a host of services. This topic provides an overview of these services and where to find more information.  
-  
 
-  
 <a name="Application_Management"></a>   
 ## Application Management  
  Executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications commonly require a core set of functionality that includes the following:  

@@ -64,6 +64,7 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 ```  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
 - [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)

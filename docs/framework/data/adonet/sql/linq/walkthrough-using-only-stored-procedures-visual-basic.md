@@ -56,15 +56,15 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
 #### To create a LINQ to SQL solution  
   
-1.  On the Visual Studio **File** menu, click **New Project**.  
+1. On the Visual Studio **File** menu, click **New Project**.  
   
-2.  In the **Project types** pane in the **New Project** dialog box, expand **Visual Basic**, and then click **Windows**.  
+2. In the **Project types** pane in the **New Project** dialog box, expand **Visual Basic**, and then click **Windows**.  
   
-3.  In the **Templates** pane, click **Windows Forms Application**.  
+3. In the **Templates** pane, click **Windows Forms Application**.  
   
-4.  In the **Name** box, type **SprocOnlyApp**.  
+4. In the **Name** box, type **SprocOnlyApp**.  
   
-5.  Click **OK**.  
+5. Click **OK**.  
   
      The Windows Forms Designer opens.  
   
@@ -73,11 +73,11 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
 #### To add System.Data.Linq.dll  
   
-1.  In **Solution Explorer**, click **Show All Files**.  
+1. In **Solution Explorer**, click **Show All Files**.  
   
-2.  In **Solution Explorer**, right-click **References**, and then click **Add Reference**.  
+2. In **Solution Explorer**, right-click **References**, and then click **Add Reference**.  
   
-3.  In the **Add Reference** dialog box, click **.NET**, click the System.Data.Linq assembly, and then click **OK**.  
+3. In the **Add Reference** dialog box, click **.NET**, click the System.Data.Linq assembly, and then click **OK**.  
   
      The assembly is added to the project.  
   
@@ -86,9 +86,9 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
 #### To add the northwind code file to the project  
   
-1.  On the **Project** menu, click **Add Existing Item**.  
+1. On the **Project** menu, click **Add Existing Item**.  
   
-2.  In the **Add Existing Item** dialog box, move to c:\linqtest3\northwind.vb, and then click **Add**.  
+2. In the **Add Existing Item** dialog box, move to c:\linqtest3\northwind.vb, and then click **Add**.  
   
      The northwind.vb file is added to the project.  
   
@@ -97,11 +97,11 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
 #### To create the database connection  
   
-1.  In **Solution Explorer**, right-click **Form1.vb**, and then click **View Code**.  
+1. In **Solution Explorer**, right-click **Form1.vb**, and then click **View Code**.  
   
      `Class Form1` appears in the code editor.  
   
-2.  Type the following code into the `Form1` code block:  
+2. Type the following code into the `Form1` code block:  
   
      [!code-vb[DLinqWalk4VB#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb/Form1.vb#1)]  
   
@@ -110,42 +110,42 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
 #### To set up the user interface  
   
-1.  Return to the Windows Forms Designer (**Form1.vb[Design]**).  
+1. Return to the Windows Forms Designer (**Form1.vb[Design]**).  
   
-2.  On the **View** menu, click **Toolbox**.  
+2. On the **View** menu, click **Toolbox**.  
   
      The toolbox opens.  
   
     > [!NOTE]
     >  Click the **AutoHide** pushpin to keep the toolbox open while you perform the remaining steps in this section.  
   
-3.  Drag two buttons, two text boxes, and two labels from the toolbox onto **Form1**.  
+3. Drag two buttons, two text boxes, and two labels from the toolbox onto **Form1**.  
   
      Arrange the controls as in the accompanying illustration. Expand **Form1** so that the controls fit easily.  
   
-4.  Right-click **Label1**, and then click **Properties**.  
+4. Right-click **Label1**, and then click **Properties**.  
   
-5.  Change the **Text** property from **Label1** to **Enter OrderID:**.  
+5. Change the **Text** property from **Label1** to **Enter OrderID:**.  
   
-6.  In the same way for **Label2**, change the **Text** property from **Label2** to **Enter CustomerID:**.  
+6. In the same way for **Label2**, change the **Text** property from **Label2** to **Enter CustomerID:**.  
   
-7.  In the same way, change the **Text** property for **Button1** to **Order Details**.  
+7. In the same way, change the **Text** property for **Button1** to **Order Details**.  
   
-8.  Change the **Text** property for **Button2** to **Order History**.  
+8. Change the **Text** property for **Button2** to **Order History**.  
   
      Widen the button controls so that all the text is visible.  
   
 #### To handle button clicks  
   
-1.  Double-click **Order Details** on **Form1** to create the `Button1` event handler and open the code editor.  
+1. Double-click **Order Details** on **Form1** to create the `Button1` event handler and open the code editor.  
   
-2.  Type the following code into the `Button1` handler:  
+2. Type the following code into the `Button1` handler:  
   
      [!code-vb[DLinqWalk4VB#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb/Form1.vb#2)]  
   
-3.  Now double-click **Button2** on Form1 to create the `Button2` event handler and open the code editor.  
+3. Now double-click **Button2** on Form1 to create the `Button2` event handler and open the code editor.  
   
-4.  Type the following code into the `Button2` handler:  
+4. Type the following code into the `Button2` handler:  
   
      [!code-vb[DLinqWalk4VB#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb/Form1.vb#3)]  
   
@@ -154,37 +154,38 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
   
 #### To test the application  
   
-1.  Press F5 to start debugging.  
+1. Press F5 to start debugging.  
   
      Form1 appears.  
   
-2.  In the **Enter OrderID** box, type **10249** and then click **Order Details**.  
+2. In the **Enter OrderID** box, type **10249** and then click **Order Details**.  
   
      A message box lists the products included in order 10249.  
   
      Click **OK** to close the message box.  
   
-3.  In the **Enter CustomerID** box, type `ALFKI`, and then click **Order History**.  
+3. In the **Enter CustomerID** box, type `ALFKI`, and then click **Order History**.  
   
      A message box lists the order history for customer ALFKI.  
   
      Click **OK** to close the message box.  
   
-4.  In the **Enter OrderID** box, type `123`, and then click **Order Details**.  
+4. In the **Enter OrderID** box, type `123`, and then click **Order Details**.  
   
      A message box displays "No results."  
   
      Click **OK** to close the message box.  
   
-5.  On the **Debug** menu, click **Stop debugging**.  
+5. On the **Debug** menu, click **Stop debugging**.  
   
      The debug session closes.  
   
-6.  If you have finished experimenting, you can click **Close Project** on the **File** menu, and save your project when you are prompted.  
+6. If you have finished experimenting, you can click **Close Project** on the **File** menu, and save your project when you are prompted.  
   
 ## Next Steps  
  You can enhance this project by making some changes. For example, you could list available stored procedures in a list box and have the user select which procedures to execute. You could also stream the output of the reports to a text file.  
   
 ## See also
+
 - [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
 - [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

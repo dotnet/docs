@@ -26,4 +26,5 @@ The Windows Forms `StatusStrip` control is used on forms as an area, usually dis
  Provides reference information on the class and its members.  
   
 ## See also
+
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

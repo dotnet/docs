@@ -19,10 +19,10 @@ A class constructor does not explicitly call a base class constructor, and the i
   
 ## To correct this error  
   
-1.  Examine the quoted error message and take appropriate action.  
+1. Examine the quoted error message and take appropriate action.  
   
-2.  Include a call to `MyBase.New()` or `MyClass.New()` as the first statement of the `Sub New` in the derived class.  
+2. Include a call to `MyBase.New()` or `MyClass.New()` as the first statement of the `Sub New` in the derived class.  
   
 ## See also
-- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
 
+- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)

@@ -31,5 +31,6 @@ Use the <xref:System.Linq.Enumerable.First%2A> operator to return the first elem
  [!code-vb[DLinqQueryExamples#15](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#15)]  
   
 ## See also
+
 - [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
 - [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

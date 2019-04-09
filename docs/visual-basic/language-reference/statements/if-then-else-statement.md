@@ -116,6 +116,7 @@ This article includes several examples that illustrate uses of the `If`...`Then`
  [!code-vb[VbVbalrStatements#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#103)]
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - <xref:Microsoft.VisualBasic.Interaction.Switch%2A>
 - [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)

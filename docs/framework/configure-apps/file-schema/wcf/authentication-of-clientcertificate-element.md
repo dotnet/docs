@@ -99,6 +99,7 @@ Specifies authentication behaviors for client certificates used by a service.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>
 - <xref:System.ServiceModel.Security.X509CertificateValidationMode>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>

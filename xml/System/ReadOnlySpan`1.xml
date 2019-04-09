@@ -102,9 +102,9 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointer">A pointer to the starting address of a specified number of <paramref name="T" /> objects in memory.</param>
-        <param name="length">The number of <paramref name="T" /> objects to be included.</param>
-        <summary>Creates a new <see cref="T:System.ReadOnlySpan`1" /> from a specified number of bytes starting at a specified memory address.</summary>
+        <param name="pointer">A pointer to the starting address of a specified number of <typeparamref name="T" /> elements in memory.</param>
+        <param name="length">The number of <typeparamref name="T" /> elements to be included in the <see cref="T:System.ReadOnlySpan`1" />.</param>
+        <summary>Creates a new <see cref="T:System.ReadOnlySpan`1" /> from a specified number of <typeparamref name="T" /> elements starting at a specified memory address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[This constructor should be used with care, since it creates arbitrarily typed `T`s from a block of memory.]]></format>
         </remarks>

@@ -154,9 +154,9 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointer">A pointer to the starting address of a specified number of bytes in memory.</param>
-        <param name="length">The number of bytes to be included in the <see cref="T:System.Span`1" />.</param>
-        <summary>Creates a new <see cref="T:System.Span`1" /> object  from a specified number of bytes starting at a specified memory address.</summary>
+        <param name="pointer">A pointer to the starting address of a specified number of <typeparamref name="T" /> elements in memory.</param>
+        <param name="length">The number of <typeparamref name="T" /> elements to be included in the <see cref="T:System.Span`1" />.</param>
+        <summary>Creates a new <see cref="T:System.Span`1" /> object  from a specified number of <typeparamref name="T" /> elements starting at a specified memory address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 

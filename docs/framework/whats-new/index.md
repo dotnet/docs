@@ -52,6 +52,38 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 
 ### What's new in .NET Framework 4.8
 
+.NET Framework 4.8 introduces new features in the following areas:
+
+[Core](#core48)
+[Common language runtime](#clr48)
+
+Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technolog, continues to be a major focus of .NET Framework 4.8. For information on accessibility improvements in .NET Framework 4.8, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
+
+<a name="core48" />
+
+#### Core
+
+**Reduced FIPS impact on Cryptography**. In previous versions of the .NET Framework, managed cryptographic provider classes such as <xref:System.Security.Cryptography.SHA256Managed> throw a <xref:System.Security.Cryptography.CryptographicException> when the system cryptographic libraries are configured in “FIPS mode”. These exceptions are thrown because the managed versions of the cryptographic provider classes, unlike the system cryptographic libraries, have not undergone FIPS (Federal Information Processing Standards) 140-2 certification. Because few developers have their development machines in FIPS mode, the exceptions are commonly thrown in production systems.
+
+By default, applications that target .NET Framework 4.8 no longer throw a <xref:System.Security.Cryptography.CryptographicException> in this case. Instead, the <xref:System.Security.Cryptography.SHA256Managed> class and the other managed cryptography classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy.
+
+Applications targeting .NET Framework 4.8 will automatically switch to the newer, relaxed policy and will no longer see exceptions being thrown from MD5Cng, MD5CryptoServiceProvider, RC2CryptoServiceProvider, RIPEMD160Managed, and RijndaelManaged when in “FIPS mode”. Applications which depend on the exceptions from previous versions can return to the previous behavior by setting the AppContext switch “Switch.System.Security.Cryptography.UseLegacyFipsThrow” to “true”.
+
+
+**Use of updated ZLib**.
+
+
+<a name="clr48" />
+
+#### Common language runtime
+
+The runtime in .NET Framework 4.8 includes the following changes and improvements:
+
+**Improvements to the JIT compiler**. The Just-in-time (JIT) compiler in .NET Framework 4.8 is based on the JIT compiler in .NET Core 2.1. Many of the optimizations and all of the bug fixes made to the .NET Core 2.1 JIT compiler are included in the .NET Framework 4.8 JIT compiler. 
+
+**NGEN improvements**. The runtime has improved its memory management for [Native Image Generator](../tools/ngen-exe-native-image-generator.md) (NGEN) images so that data mapped from NGEN images are not memory-resident. This reduces the surface area available to attacks that attempt to execute arbitrary code by modifying memory that will be executed.
+
+**Antimalware scanning for all assemblies**. In previous versions of the .NET Framework, the runtime scans all assemblies loaded from disk using either Windows Defender or third-party antimalware software. However, assemblies loaded from other sources, such as by the <xref:System.Reflection.Assembly.Load(System.Byte[])?displayProperty=nameWithType> method, are not scanned and can potentially contrain undetected malware. Starting with .NET Framework 4.8 running on Windows 10, the runtime triggers a scan by antimalware solutions that implement the [Antimalware Scan Interface (AMSI)](/windows/desktop/AMSI/antimalware-scan-interface-portal).  
 
 <a name="v472" />
 
@@ -66,7 +98,7 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 - [WPF](#wpf472)
 - [ClickOnce](#clickonce)
 
-A continuing focus in .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvement in .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
+A continuing focus in .NET Framework 4.7.2 is improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology. For information on accessibility improvements in .NET Framework 4.7.2, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
 
 <a name="core-472" />
 

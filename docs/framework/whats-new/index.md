@@ -55,6 +55,7 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 .NET Framework 4.8 introduces new features in the following areas:
 
 [Core](#core48)
+[Windows Communication Foundation (WCF)](#wcf48)
 [Common language runtime](#clr48)
 
 Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technolog, continues to be a major focus of .NET Framework 4.8. For information on accessibility improvements in .NET Framework 4.8, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
@@ -65,12 +66,86 @@ Improved accessibility, which allows an application to provide an appropriate ex
 
 **Reduced FIPS impact on Cryptography**. In previous versions of the .NET Framework, managed cryptographic provider classes such as <xref:System.Security.Cryptography.SHA256Managed> throw a <xref:System.Security.Cryptography.CryptographicException> when the system cryptographic libraries are configured in “FIPS mode”. These exceptions are thrown because the managed versions of the cryptographic provider classes, unlike the system cryptographic libraries, have not undergone FIPS (Federal Information Processing Standards) 140-2 certification. Because few developers have their development machines in FIPS mode, the exceptions are commonly thrown in production systems.
 
-By default, applications that target .NET Framework 4.8 no longer throw a <xref:System.Security.Cryptography.CryptographicException> in this case. Instead, the <xref:System.Security.Cryptography.SHA256Managed> class and the other managed cryptography classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy.
+By default in applications that target .NET Framework 4.8, the following managed cryptography classes no longer throw a <xref:System.Security.Cryptography.CryptographicException> in this case:
 
-Applications targeting .NET Framework 4.8 will automatically switch to the newer, relaxed policy and will no longer see exceptions being thrown from MD5Cng, MD5CryptoServiceProvider, RC2CryptoServiceProvider, RIPEMD160Managed, and RijndaelManaged when in “FIPS mode”. Applications which depend on the exceptions from previous versions can return to the previous behavior by setting the AppContext switch “Switch.System.Security.Cryptography.UseLegacyFipsThrow” to “true”.
+- <xref:System.Security.Cryptography.MD5Cng>
+- <xref:System.Security.Cryptography.MD5CryptoServiceProvider>
+- <xref:System.Security.Cryptography.RC2CryptoServiceProvider>
+- <xref:System.Security.Cryptography.RijndaelManaged>
+- <xref:System.Security.Cryptography.RIPEMD160Managed>
+- <xref:System.Security.Cryptography.SHA256Managed> 
 
+Instead, these classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy. Applications that depend on these exceptions can restore the previous behavior by setting the AppContext switch `Switch.System.Security.Cryptography.UseLegacyFipsThrow` to `true`. For more information, see [](..//migration-guide/retargeting/4.7.2-4.8.md#managed-cryptography-classes-do-not-throw-a-cryptographyexception-in-fips-mode).
 
-**Use of updated ZLib**.
+**Use of updated version of ZLib**
+
+Starting with .NET Framework 4.5, the clrcompression.dll assembly uses [ZLib](https://www.zlib.net), a native external library for data compression, in order to provide an implementation for the deflate algorithm. The .NET Framework 4.8, clrcompression.dll is updated to use ZLib Version 1.2.11, which includes several key improvements and fixes.
+
+<a name="wcf48" />
+
+#### Windows Communication Foundation (WCF)
+
+**Introduction of ServiceHealthBehavior**
+
+Health endpoints are widely used by orchestration tools to manage services based on their health status. Health checks can also be used by monitoring tools to track and provide notifications about the availability and performance of a service. 
+
+**ServiceHealthBehavior** is a WCF service behavior that extends <xref:System.ServiceModel.Desription.IServiceBehavior>.  When added to the <xref:System.ServiceModel.ServiceDescription.Behaviors?displayProperty=nameWithType> collection, a service behavior does the following:
+
+- Returns service health status with HTTP response codes. You can specify in a query string the HTTP status code for a HTTP/GET health probe request.
+
+- Publishes information about service health. Service-specific details, including service state, throttle counts, and capacity can be displayed by using an HTTP/GET request with the `?health` query string. Ease of access to such information is important when troubleshooting a misbehaving WCF service.
+
+There are two ways to expose the health endpoint and publish WCF service health information:
+
+- Through code. For example:
+
+  ```csharp
+  ServiceHost host = new ServiceHost(typeof(Service1), 
+                     new Uri("http://contoso:81/Service1")); 
+  ServiceHealthBehavior healthBehavior =
+      host.Description.Behaviors.Find<ServiceHealthBehavior>(); 
+  if (healthBehavior == null)
+  { 
+     healthBehavior = new ServiceHealthBehavior(); 
+  } 
+   host.Description.Behaviors.Add(healthBehavior); 
+  ```
+
+- By using a configuration file. For example:
+
+  ```xml
+  <behaviors>
+    <serviceBehaviors>
+      <behavior name="DefaultBehavior">
+        <serviceHealth httpsGetEnabled="true"/>
+      </behavior>
+    </serviceBehaviors>
+  </behaviors>
+  ```
+
+A service's health status can be queried by using query parameters such as `OnServiceFailure`, `OnDispatcherFailure`, `OnListenerFailure`, `OnThrottlePercentExceeded`), and an HTTP response code can be specified for each query parameter. If the HTTP response code is omitted for a query parameter, a 503 HTTP response code is used by default. For example:
+
+- OnServiceFailure: `https://contoso:81/Service1?health&OnServiceFailure=450`
+
+  A 450 HTTP response status code is returned when [ServiceHost.State](xref:System.ServiceModel.Channels.CommunicationObject.State) is greater than <xref:System.ServiceModel.CommunicationState.Opened?displayProperty=nameWithType>.
+Query parameters and examples:
+
+- OnDispatcherFailure: `https://contoso:81/Service1?health&OnDispatcherFailure=455`
+  
+  A 455 HTTP response status code is returned when the state of any of the channel dispatchers is greater than <xref:System.ServiceModel.CommunicationState.Opened?displayProperty=nameWithType>.
+
+- OnListenerFailure: `https://contoso:81/Service1?health&OnListenerFailure=465`
+
+  A 465 HTTP response status code is returned when the state of any of the channel listeners is greater than <xref:System.ServiceModel.CommunicationState.Opened?displayProperty=nameWithType>.
+
+- OnThrottlePercentExceeded: Specifies the percentage {1 – 100} that triggers the response and its HTTP response code {200 – 599}.
+•	Example: by querying https://contoso:81/Service1?health&OnThrottlePercentExceeded= 70:350,95:500, when the throttle percentage is equal or larger than 95%, 500 the HTTP response code is returned; when the percentage is equal or larger than 70% and less then 95%,   350 is returned; otherwise, 200 is returned.
+Publication of service health:
+After enabling the health endpoint, the service health status can be displayed either in html (by specifying the query string: https://contoso:81/Service1?health) or xml (by specifying the query string: https://contoso:81/Service1?health&Xml) formats. https://contoso:81/Service1?health&NoContent returns empty html page.
+Note:
+It’s best practice to always limit access to the service health endpoint. You can restrict access by using the following mechanisms:
+1.	Use a different port for the health endpoint than what’s used for the other services as well as use a firewall rule to control access.
+2.	Add the desirable authentication and authorization to the health endpoint binding.
 
 
 <a name="clr48" />

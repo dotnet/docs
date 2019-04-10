@@ -29,7 +29,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | --- | --- |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> | Subtract the mean (of the training data) and divide by the variance (of the training data) |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeLogMeanVariance%2A> | Normalize based on the logarithm of the training data |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeLpNorm%2A> | Scale input vectors by the [lp-norm](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions), where p is 1, 2 or infinity. Defaults to the L-2 (Euclidean distance) norm |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeLpNorm%2A> | Scale input vectors by their [lp-norm](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions), where p is 1, 2 or infinity. Defaults to the l2 (Euclidean distance) norm |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeGlobalContrast%2A> | Normalize based on the global contrast of the training data |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning%2A> | Assign the input value to a bin index and divide by the number of bins to produce a float value between 0 and 1. The bin boundaries are calculated to evenly distribute the training data across bins |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeSupervisedBinning%2A> | Assign the input value to a bin based on its correlation with label column |

@@ -29,12 +29,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines the kinds of <see cref="T:System.Uri" />s for the <see cref="M:System.Uri.IsWellFormedUriString(System.String,System.UriKind)" /> and several <see cref="Overload:System.Uri.#ctor" /> methods.</summary>
+    <summary>Defines the different kinds of URIs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Absolute URIs are characterized by a complete reference to the resource (example: http://www.contoso.com/index.html), while a relative Uri depends on a previously defined base URI (example: /index.html).  
+## Remarks
+
+Absolute URIs are characterized by a complete reference to the resource (example: `http://www.contoso.com/index.html`), while a relative URI depends on a previously defined base URI (example: `/index.html`).
+
+The following list shows some APIs that use the `UriKind` enum:
+
+* <xref:System.Uri.%23ctor(System.String,System.UriKind)?displayProperty=nameWithType>
+* <xref:System.Uri.IsWellFormedUriString(System.String,System.UriKind)?displayProperty=nameWithType>
+* <xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri%40)?displayProperty=nameWithType>
   
  ]]></format>
     </remarks>
@@ -73,7 +80,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The Uri is an absolute Uri.</summary>
+        <summary>The URI is absolute.</summary>
       </Docs>
     </Member>
     <Member MemberName="Relative">
@@ -109,7 +116,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The Uri is a relative Uri.</summary>
+        <summary>The URI is relative.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelativeOrAbsolute">
@@ -145,7 +152,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The kind of the Uri is indeterminate.</summary>
+        <summary>The URI kind is indeterminate.</summary>
       </Docs>
     </Member>
   </Members>

@@ -56,6 +56,7 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 
 [Core](#core48)
 [Windows Communication Foundation (WCF)](#wcf48)
+[Windows Presentation Foundation (WPF)](#wpf48)
 [Common language runtime](#clr48)
 
 Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technolog, continues to be a major focus of .NET Framework 4.8. For information on accessibility improvements in .NET Framework 4.8, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
@@ -138,15 +139,35 @@ Query parameters and examples:
 
   A 465 HTTP response status code is returned when the state of any of the channel listeners is greater than <xref:System.ServiceModel.CommunicationState.Opened?displayProperty=nameWithType>.
 
-- OnThrottlePercentExceeded: Specifies the percentage {1 – 100} that triggers the response and its HTTP response code {200 – 599}.
-•	Example: by querying https://contoso:81/Service1?health&OnThrottlePercentExceeded= 70:350,95:500, when the throttle percentage is equal or larger than 95%, 500 the HTTP response code is returned; when the percentage is equal or larger than 70% and less then 95%,   350 is returned; otherwise, 200 is returned.
-Publication of service health:
-After enabling the health endpoint, the service health status can be displayed either in html (by specifying the query string: https://contoso:81/Service1?health) or xml (by specifying the query string: https://contoso:81/Service1?health&Xml) formats. https://contoso:81/Service1?health&NoContent returns empty html page.
-Note:
-It’s best practice to always limit access to the service health endpoint. You can restrict access by using the following mechanisms:
-1.	Use a different port for the health endpoint than what’s used for the other services as well as use a firewall rule to control access.
-2.	Add the desirable authentication and authorization to the health endpoint binding.
+- OnThrottlePercentExceeded: `https://contoso:81/Service1?health&OnThrottlePercentExceeded= 70:350,95:500`
 
+  Specifies the percentage {1 – 100} that triggers the response and its HTTP response code {200 – 599}. In this example:
+  
+    - If the percentage is greater than 95, a 500 HTTP response code is returned.
+    
+    - If the percentage or between 70 and 95, 350 is returned.
+    
+    - Otherwise, 200 is returned.
+
+The service health status can be displayed either in HTML by specifying a query string like `https://contoso:81/Service1?health` or in XML by specifying a query string like `https://contoso:81/Service1?health&Xml`. A query string like `https://contoso:81/Service1?health&NoContent` returns an empty HTML page.
+
+<a name="wpf48" />
+
+#### Windows Presentation Foundation (WPF)
+
+**High DPI enhancements**
+
+In .NET Framework 4.8, WPF adds support for Per-Monitor V2 DPI Awareness and Mixed-Mode DPI scaling. See [High DPI Desktop Application Development on Windows](~/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) for additional information about high DPI development. 
+
+.NET Framework 4.8 improves support for hosted HWNDs and Windows Forms interoperation in High-DPI WPF applications on platforms that support Mixed-Mode DPI scaling (starting with Windows 10 April 2018 Update). When hosted HWNDs or Windows Forms controls are created as Mixed-Mode DPI-scaled windows by calling [SetThreadDpiHostingBehavior](~/windows/desktop/api/winuser/nf-winuser-setthreaddpihostingbehavior) and [SetThreadDpiAwarenessContext](~/windows/desktop/api/winuser/nf-winuser-setthreaddpiawarenesscontext), they can be hosted in a Per-Monitor V2 WPF application and are sized and scaled appropriately. Such hosted content is not rendered at the native DPI; instead, the operating system scales the hosted content to the appropriate size. The support for Per-Monitor v2 DPI awareness mode also allows WPF controls to be hosted (i.e., parented) in a native window in a high-DPI application. 
+
+To enable support for Mixed-Mode High DPI scaling, you can set the following [AppContext](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) switches the application configuration file:
+
+```xml
+<runtime>
+   <AppContextSwitchOverrides value = "Switch.System.Windows.DoNotScaleForDpiChanges=false; Switch.System.Windows.DoNotUsePresentationDpiCapabilityTier2OrGreater=false"/>
+</runtime>
+```
 
 <a name="clr48" />
 

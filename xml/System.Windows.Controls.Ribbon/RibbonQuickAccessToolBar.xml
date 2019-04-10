@@ -380,8 +380,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether an item in the Quick Access Toolbar is shown in the overflow menu.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks  
+ This property can be attached to items in the Quick Access Toolbar.  
+  
+<a name="dependencyPropertyInfo_IsOverflowItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.GetIsOverflowItem(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="IsOverflowItemProperty">

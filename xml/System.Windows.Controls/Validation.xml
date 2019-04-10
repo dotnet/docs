@@ -169,8 +169,44 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of all active <see cref="T:System.Windows.Controls.ValidationError" /> objects on the bound element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks  
+ The application cannot modify the content of this collection. See the Example section for an example of how to use this attached property.  
+  
+ The WPF data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> object. Validation occurs during binding target-to-binding source value transfer before the converter is called. The following describes the validation process:  
+  
+1.  When a value is being transferred from the target property to the source property, the data binding engine first removes any <xref:System.Windows.Controls.ValidationError> that may have been added to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> attached property of the bound element. It then checks if there are any custom <xref:System.Windows.Controls.ValidationRule>s defined for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each of the <xref:System.Windows.Controls.ValidationRule>s until one of them runs into an error or until all of them pass.  
+  
+2.  Once there is a custom rule that does not pass, the binding engine creates a <xref:System.Windows.Controls.ValidationError> object and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. When <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> is not empty, the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property of the element is set to `true`. Also, if the <xref:System.Windows.Data.Binding.NotifyOnValidationError%2A> property of the <xref:System.Windows.Data.Binding> is set to `true`, then the binding engine raises the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> attached event on the element.  
+  
+3.  If all of the rules pass, the binding engine then calls the converter, if one exists.  
+  
+4.  If the converter passes, the binding engine calls the setter of the source property.  
+  
+5.  If the binding has an <xref:System.Windows.Controls.ExceptionValidationRule> associated with it and an exception is thrown during step 4, the binding engine checks to see if there is a <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A>. You have the option to use the <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> callback to provide a custom handler for handling exceptions. If an <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> is not specified on the <xref:System.Windows.Data.Binding>, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element.  
+  
+ Also note that a valid value transfer in either direction (target-to-source or source-to-target) clears the <xref:System.Windows.Controls.Validation>.<xref:System.Windows.Controls.Validation.Errors%2A>attached property.  
+  
+ For information about the behavior of this property in <xref:System.Windows.Data.MultiBinding> scenarios, see <xref:System.Windows.Data.MultiBindingExpression.ValidationError%2A>.  
+  
+ For more information, see "Data Validation" in [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview).  
+  
+<a name="xamlTextUsage_Errors"></a>   
+## XAML Text Usage  
+ See Remarks. The <xref:System.Windows.Controls.Validation.Errors%2A> collection itself is not user settable, but you can use it in a control template definition in XAML.  
+  
+<a name="dependencyPropertyInfo_Errors"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Validation.ErrorsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorsProperty">
@@ -411,8 +447,27 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether any binding on the binding target element has a <see cref="T:System.Windows.Controls.ValidationError" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+ 
+## Remarks  
+ For information about the behavior of this property in <xref:System.Windows.Data.MultiBinding> scenarios, see <xref:System.Windows.Data.MultiBindingExpression.HasError%2A>.  
+  
+ For a detailed discussion of validation, see the Data Validation section of the [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview).  
+  
+<a name="dependencyPropertyInfo_HasError"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Validation.HasErrorProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.ValidationRules" />
+        <altmember cref="P:System.Windows.Data.MultiBinding.ValidationRules" />
       </Docs>
     </Member>
     <Member MemberName="HasErrorProperty">

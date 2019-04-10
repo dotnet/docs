@@ -55,13 +55,13 @@ The Docker client can be installed in:
 
 * Linux distributions
 
-   * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
+  * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-   * [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
+  * [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
 
-   * [Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
+  * [Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
 
-   * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+  * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 * [macOS](https://docs.docker.com/docker-for-mac/install/)
 

@@ -271,7 +271,7 @@ Counter: 19
 
 ### Delete a container
 
-The the purposes of this article you don't want containers just hanging around doing nothing. Delete the container you previously created. If the container is running, stop it.
+For the purposes of this article you don't want containers just hanging around doing nothing. Delete the container you previously created. If the container is running, stop it.
 
 ```console
 > docker stop boring_matsumoto

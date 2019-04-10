@@ -11,7 +11,7 @@ ms.custom: "mvc, seodec18"
 
 This tutorial teaches you how to build a Docker image that contains your .NET Core application. The image can be used to create containers for your local development environment, private cloud, or public cloud.
 
-In this tutorial you'll learn how to:
+You'll learn to:
 
 > [!div class="checklist"]
 > * Create and publish a simple .NET Core app
@@ -19,11 +19,11 @@ In this tutorial you'll learn how to:
 > * Build a Docker image
 > * Create and run a Docker container
 
-This tutorial teaches the Docker container build and deploy tasks for a .NET Core application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
+You'll understand the Docker container build and deploy tasks for a .NET Core application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
 
 ## Prerequisites
 
-To complete this tutorial, install the following prerequisites:
+Install the following prerequisites:
 
 - [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download)\
 If you have .NET Core installed, use the `dotnet --info` command to determine which SDK you're using.
@@ -120,7 +120,7 @@ If you pass a number on the command line to the app, it will only count up to th
 
 ## Publish .NET Core app
 
-Before you add your .NET Core app to the Docker image, publish it. The published version of the app is what the container will execute when it's started.
+Before you add your .NET Core app to the Docker image, publish it. The container will execute the published version of the app when it's started.
 
 From the working directory, enter the **app** directory with the example source code and run the following command:
 
@@ -149,7 +149,7 @@ me@DESKTOP:/path-to-working-dir/app$ ls bin/Release/netcoreapp2.2/publish
 myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 ```
 
-In your terminal, go back a directory to the working directory.
+In your terminal, go up a directory to the working directory.
 
 ## Create the Dockerfile
 
@@ -170,7 +170,7 @@ mcr.microsoft.com/dotnet/core/runtime   2.2                 d51bb4452469        
 myimage                                 latest              d51bb4452469        2 days ago          314MB
 ```
 
-Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Comparing the two images, they're exactly the same. Let's add two commands to the *Dockerfile*. Each command will create a new image layer with the final command representing the image the **myimage** repository will point to.
+Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add two commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the image the **myimage** repository will point to.
 
 
 ```dockerfile
@@ -271,7 +271,7 @@ Counter: 19
 
 ### Delete a container
 
-The the purposes of this article you don't want containers just hanging around doing nothing. Delete the container you previously created. If the container is running, stop it.
+For the purposes of this article you don't want containers just hanging around doing nothing. Delete the container you previously created. If the container is running, stop it.
 
 ```console
 > docker stop boring_matsumoto

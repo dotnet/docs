@@ -11,7 +11,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 ## My in Windows Applications and Web Sites  
  `My` exposes only objects that are useful in the current project type; it suppresses objects that are not applicable. For example, the following image shows the `My` object model in a Windows Forms project.  
   
- ![Diagram that shows the shape of My in a Windows Forms application.](./media/how-my-depends-on-project-type/my-shape-windows-forms-application.png)  
+ ![Diagram that shows the My object model in a Windows Forms application.](./media/how-my-depends-on-project-type/my-object-model-windows-forms.png)  
   
  In a Web site project, `My` exposes objects that are relevant to a Web developer (such as the `My.Request` and `My.Response` objects) while suppressing objects that are not relevant (such as the `My.Forms` object). The following image shows the `My` object model in a Web site project:  
   

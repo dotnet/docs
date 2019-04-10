@@ -47,17 +47,17 @@ When you develop a WCF Data Service as an [!INCLUDE[vstecasp](../../../../includ
 
      You should be aware of the following limitations when you use the Visual Studio Development Server to develop the data service:
 
-    -   This server can only be accessed on the local computer.
+    - This server can only be accessed on the local computer.
 
-    -   This server listens on `localhost` and on a specific port, not on port 80, which is the default port for HTTP messages. For more information, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
+    - This server listens on `localhost` and on a specific port, not on port 80, which is the default port for HTTP messages. For more information, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
 
-    -   This server runs the data service in the context of your current user account. For example, if you are running as an administrator-level user, a data service running in the Visual Studio Development Server will have administrator-level privileges. This can cause the data service to be able to access resources that it does not have the rights to access when deployed to an IIS server.
+    - This server runs the data service in the context of your current user account. For example, if you are running as an administrator-level user, a data service running in the Visual Studio Development Server will have administrator-level privileges. This can cause the data service to be able to access resources that it does not have the rights to access when deployed to an IIS server.
 
-    -   This server does not include the extra facilities of IIS, such as authentication.
+    - This server does not include the extra facilities of IIS, such as authentication.
 
-    -   This server cannot handle chunked HTTP streams, which are sent be default by the WCF Data Services client when accessing large binary data from the data service. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).
+    - This server cannot handle chunked HTTP streams, which are sent be default by the WCF Data Services client when accessing large binary data from the data service. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md).
 
-    -   This server has issues with processing the period (`.`) character in a URL, even though this character is supported by WCF Data Services in key values.
+    - This server has issues with processing the period (`.`) character in a URL, even though this character is supported by WCF Data Services in key values.
 
     > [!TIP]
     > Even though you can use the Visual Studio Development Server to test your data services during development, you should test them again after deploying to a Web server that is running IIS.
@@ -70,44 +70,44 @@ When you develop a WCF Data Service as an [!INCLUDE[vstecasp](../../../../includ
 
 You should consider the following when you develop a data service:
 
--   Determine the security requirements of your data service, if you plan authenticate users or restrict access for specific users. For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md).
+- Determine the security requirements of your data service, if you plan authenticate users or restrict access for specific users. For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md).
 
--   An HTTP inspection program can be very helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
+- An HTTP inspection program can be very helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
 
--   When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=201868). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).
+- When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=201868). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).
 
--   A data service is usually developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application project, but you can also create you data service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site project in Visual Studio. For information about the differences between the two types of projects, see [Web Application Projects versus Web Site Projects in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd547590(v=vs.110)).
+- A data service is usually developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application project, but you can also create you data service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site project in Visual Studio. For information about the differences between the two types of projects, see [Web Application Projects versus Web Site Projects in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd547590(v=vs.110)).
 
--   When you create a data service by using the **Add New Item** dialog box in Visual Studio, the data service is hosted by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] in IIS. While [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and IIS is the default host for a data service, other hosting options are supported. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md).
+- When you create a data service by using the **Add New Item** dialog box in Visual Studio, the data service is hosted by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] in IIS. While [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and IIS is the default host for a data service, other hosting options are supported. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md).
 
 ## Deploy WCF Data Services
 
 WCF Data Service provides flexibility in choosing the process that hosts the data service. You can use Visual Studio to deploy a data service to the following platforms:
 
--   **IIS-Hosted Web Server**
+- **IIS-Hosted Web Server**
 
-     When a data service is developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project, it can be deployed to an IIS Web server by using the standard [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] deployment processes.  Visual Studio provides the following deployment technologies for [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], depending on the kind of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project that hosts the data service that you are deploying.
+    When a data service is developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project, it can be deployed to an IIS Web server by using the standard [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] deployment processes.  Visual Studio provides the following deployment technologies for [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], depending on the kind of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project that hosts the data service that you are deploying.
 
-    -   **Deployment Technologies for ASP.NET Web Applications**
+  - **Deployment Technologies for ASP.NET Web Applications**
 
-        -   [How to: Create a Web Deployment Package in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd465323(v=vs.110))
+    - [How to: Create a Web Deployment Package in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd465323(v=vs.110))
 
-        -   [How to: Deploy a Web Project Using One-Click Publish in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd465337(v=vs.110))
+    - [How to: Deploy a Web Project Using One-Click Publish in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd465337(v=vs.110))
 
-    -   **Deployment Technologies for ASP.NET Web Sites**
+  - **Deployment Technologies for ASP.NET Web Sites**
 
-        -   [How to: Copy Web Site Files with the Copy Web Site Tool](https://docs.microsoft.com/previous-versions/aspnet/c95809c0(v=vs.100))
+    - [How to: Copy Web Site Files with the Copy Web Site Tool](https://docs.microsoft.com/previous-versions/aspnet/c95809c0(v=vs.100))
 
-        -   [How to: Publish Web Sites](https://docs.microsoft.com/previous-versions/aspnet/20yh9f1b(v=vs.100))
+    - [How to: Publish Web Sites](https://docs.microsoft.com/previous-versions/aspnet/20yh9f1b(v=vs.100))
 
-        -   [Walkthrough: Deploying an ASP.NET Web Application Using XCOPY](https://docs.microsoft.com/previous-versions/aspnet/f735abw9(v=vs.100))
+    - [Walkthrough: Deploying an ASP.NET Web Application Using XCOPY](https://docs.microsoft.com/previous-versions/aspnet/f735abw9(v=vs.100))
 
      For more information about the deployment options for an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, see [Web Deployment Overview for Visual Studio and ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/dd394698(v=vs.110)).
 
     > [!TIP]
     > Before you attempt to deploy the data service to IIS, make sure that you have tested the deployment to a Web server that is running IIS. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md).
 
--   **Windows Azure**
+- **Windows Azure**
 
      You can deploy a data service to Windows Azure by using Windows Azure Tools for Visual Studio. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://go.microsoft.com/fwlink/?LinkId=201847).
 
@@ -115,9 +115,9 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 You should consider the following when deploying a data service:
 
--   When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
+- When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
 
--   Because WCF Data Services includes a basic WCF implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. For more information about using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkID=202005).
+- Because WCF Data Services includes a basic WCF implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. For more information about using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkID=202005).
 
 ## See also
 

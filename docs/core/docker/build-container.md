@@ -23,7 +23,7 @@ You'll understand the Docker container build and deploy tasks for a .NET Core ap
 
 ## Prerequisites
 
-To complete this tutorial, install the following prerequisites:
+Install the following prerequisites:
 
 - [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download)\
 If you have .NET Core installed, use the `dotnet --info` command to determine which SDK you're using.

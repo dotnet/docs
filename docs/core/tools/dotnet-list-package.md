@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 01/30/2019
+ms.date: 04/09/2019
 ---
 # dotnet list package
 
@@ -27,7 +27,7 @@ The `dotnet list package` command provides a convenient option to list all NuGet
 Project 'SentimentAnalysis' has the following package references
    [netcoreapp2.1]:
    Top-level Package               Requested   Resolved
-   > Microsoft.ML                  0.9.0       0.9.0
+   > Microsoft.ML                  0.11.0      0.11.0
    > Microsoft.NETCore.App   (A)   [2.1.0, )   2.1.0
 
 (A) : Auto-referenced package.
@@ -35,7 +35,33 @@ Project 'SentimentAnalysis' has the following package references
 
 The **Requested** column refers to the package version specified in the project file and can be a range. The **Resolved** column lists the version that the project is currently using and is always a single value. The packages displaying an `(A)` right next to their names represent [implicit package references](csproj.md#implicit-package-references) that are inferred from your project settings (`Sdk` type, `<TargetFramework>` or `<TargetFrameworks>` property, etc.)
 
-Use the `--outdated` option to find out if there are newer versions available of the packages you're using in your projects. By default, `--outdated` lists the latest stable packages unless the resolved version is also a prerelease version. To include prerelease versions when listing newer versions, also specify the `--include-prerelease` option.
+Use the `--outdated` option to find out if there are newer versions available of the packages you're using in your projects. By default, `--outdated` lists the latest stable packages unless the resolved version is also a prerelease version. To include prerelease versions when listing newer versions, also specify the `--include-prerelease` option. The following examples shows the output of the `dotnet list package --outdated --include-prerelease` command for the same project as the previous example:
+
+```output
+The following sources were used:
+   https://api.nuget.org/v3/index.json
+
+Project `SentimentAnalysis` has the following updates to its packages
+   [netcoreapp2.1]:
+   Top-level Package      Requested   Resolved   Latest
+   > Microsoft.ML         0.11.0      0.11.0     1.0.0-preview
+```
+
+If you need to find out whether your project has transitive dependencies, use the `--include-transitive` option. Transitive dependencies occur when you add a package to your project that in turn relies on another package. The following example shows the output from running the `dotnet list package --include-transitive` command for the [HelloPlugin](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin/HelloPlugin) project, which displays top-level packages and the packages they depend on:
+
+```output
+Project 'HelloPlugin' has the following package references
+   [netcoreapp3.0]:
+   Top-level Package                      Requested                    Resolved
+   > Microsoft.NETCore.Platforms    (A)   [3.0.0-preview3.19128.7, )   3.0.0-preview3.19128.7
+   > Microsoft.WindowsDesktop.App   (A)   [3.0.0-preview3-27504-2, )   3.0.0-preview3-27504-2
+
+   Transitive Package               Resolved
+   > Microsoft.NETCore.Targets      2.0.0
+   > PluginBase                     1.0.0
+
+(A) : Auto-referenced package.
+```
 
 ## Arguments
 
@@ -49,9 +75,9 @@ The project or solution file to operate on. If not specified, the command search
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
 
-* **`--framework <FRAMEWORK | FRAMEWORK/RID>`**
+* **`--framework <FRAMEWORK>`**
 
-  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md) or [Runtime Identifier (RID)](../rid-catalog.md) to list the packages for. To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
+  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
 
 * **`-h|--help`**
 
@@ -95,8 +121,8 @@ The project or solution file to operate on. If not specified, the command search
   dotnet list package --outdated --include-prerelease
   ```
 
-* List package references for a specific RID:
+* List package references for a specific target framework:
 
   ```console
-  dotnet list package netstandard2.0/win-x64
+  dotnet list package netcoreapp3.0
   ```

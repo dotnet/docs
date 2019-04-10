@@ -120,7 +120,7 @@ Save this file. The presence of file will force .NET Core to use version 2.2 for
 
 ## Publish .NET Core app
 
-Before you add your .NET Core app to the Docker image, publish it. The published version of the app is what the container will execute when it's started.
+Before you add your .NET Core app to the Docker image, publish it. The container will execute the published version of the app when it's started.
 
 From the working directory, enter the **app** directory with the example source code and run the following command:
 

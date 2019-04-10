@@ -2383,10 +2383,16 @@ public class A {
   
  Although the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> returns no rows, any output parameters or return values mapped to parameters are populated with data.  
   
- For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. When a trigger exists on a table being inserted or updated, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers. For all other types of statements, the return value is -1. If a rollback occurs, the return value is also -1.  
-  
-   
-  
+ For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.
+
+When a trigger exists on a table being inserted or updated, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers.
+
+When SET NOCOUNT ON is set on the connection (before or as part of executing the command, or as part of a trigger initiated by the execution of the command) the rows affected by individual statements stop contributing to the count of rows affected that is returned by this method.
+
+If no statements are detected that contribute to the count, the return value is -1. If a rollback occurs, the return value is also -1.
+
+
+
 ## Examples  
  The following example creates a <xref:System.Data.SqlClient.SqlCommand> and then executes it using <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>. The example is passed a string that is a Transact-SQL statement (such as UPDATE, INSERT, or DELETE) and a string to use to connect to the data source.  
   

@@ -149,7 +149,7 @@ me@DESKTOP:/path-to-working-dir/app$ ls bin/Release/netcoreapp2.2/publish
 myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 ```
 
-In your terminal, go back a directory to the working directory.
+In your terminal, go up a directory to the working directory.
 
 ## Create the Dockerfile
 

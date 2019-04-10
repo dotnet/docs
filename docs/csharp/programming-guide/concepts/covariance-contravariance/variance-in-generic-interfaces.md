@@ -24,7 +24,7 @@ Staring with .NET Framework 4, the following interfaces are variant:
 
 - <xref:System.IComparable%601> (T is contravariant)
 
-The following variant interfaces were added in .NET Framework 4.5:
+Starting with .NET Framework 4.5, the following interfaces are variant:
 
 - <xref:System.Collections.Generic.IReadOnlyList%601> (T is contravariant)
 

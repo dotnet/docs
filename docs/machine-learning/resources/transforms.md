@@ -2,16 +2,17 @@
 title: Data transformations | ML.NET
 description: Explore the feature engineering components supported in ML.NET.
 author: natke
+ms.author: nakersha
 ms.date: 04/02/2019
 ---
 
 # Data transformations
 
-You can use a single data transformation, or chain data transformations together to prepare data for model training. All of the transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator`1) interface. The specific implementation determines the type and format of data that the transformer expects from the previous element in the chain, and also the type and format of data that is produced by the transformation.
+Data transformations are used to prepare data for model training. The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator`1) interface. Data transformations may also be chained together. When chained, the specific data transformation class determines the data type and format the transformer expects from the previous element in the chain, and also the data type and format the transformation produces.
 
 Some data transformations require training data to calculate their parameters. For example: the <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> transformer calculates the mean and variance of the training data during the `Fit()` operation, and uses those parameters in the `Transform()` operation. 
 
-Some data transformations do not require training data. For example: the <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToGrayscale*> transformation can perform the `Transform()` operation without having seen any training data during the `Fit()` operation.
+Other data transformations don't require training data. For example: the <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToGrayscale*> transformation can perform the `Transform()` operation without having seen any training data during the `Fit()` operation.
 
 ## Column mapping and grouping
 

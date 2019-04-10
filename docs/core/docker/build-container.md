@@ -181,7 +181,7 @@ ENTRYPOINT ["dotnet" "app/myapp.dll"]
 
 The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the **publish** folder is copied to a folder named **app** in the container.
 
-The next command, `ENTRYPOINT`, tells docker to configure the container to run as an executable. After you start a container based on this image, it will automatically stop when the process identified from the `ENTRYPOINT` command ends.
+The next command, `ENTRYPOINT`, tells docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 Save the file. From your terminal, run `docker build -t myimage .` and when that command finishes, run `docker images`.
 
@@ -217,7 +217,7 @@ Now that you have an image that contains your app, you can create a container. Y
 0e8f3c2ca32ce773712a5cca38750f41259a4e54e04bdf0946087e230ad7066c
 ```
 
-The `docker create` command from above will create a container based on the **myimage** image. The output of that command shows you the **CONTAINER ID** of the created container. To see a list of *all* containers, use the `docker ps -a` command:
+The `docker create` command from above will create a container based on the **myimage** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container. To see a list of *all* containers, use the `docker ps -a` command:
 
 ```console
 > docker ps -a
@@ -227,7 +227,9 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 ### Manage the container
 
-Each container is assigned a random name that you can use to refer to that container instance. For example, the container that was created automatically chose the name **boring_matsumoto** and that name can be used to start the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
+Each container is assigned a random name that you can use to refer to that container instance. For example, the container that was created automatically chose the name **boring_matsumoto** (yours will be different) and that name can be used to start the container. You override the automatic name with a specific one by using the `docker create --name` parameter.
+
+The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
 
 ```console
 > docker start boring_matsumoto
@@ -383,6 +385,9 @@ docker rmi mcr.microsoft.com/dotnet/core/runtime:2.2
 ```
 
 Use the `docker images` command to see a list of images installed.
+
+> [!NOTE]
+> Image files can be large. Typically, you would remove temporary containers you created while testing and developing your app. You usually keep the base images with the runtime installed if you plan on building other images based on that runtime.
 
 ## Next steps
 

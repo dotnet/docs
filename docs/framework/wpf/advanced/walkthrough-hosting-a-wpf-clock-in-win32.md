@@ -26,7 +26,7 @@ The following graphic shows the intended end product of this tutorial:
 
 ![Screenshot that shows the Date and Time Properties dialog box.](./media/walkthrough-hosting-a-wpf-clock-in-win32/date-time-properties-dialog.png)
 
-You can recreate this dialog by creating C++ [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] project in [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and using the dialog editor to create the following:
+You can recreate this dialog by creating a C++ Win32 project in Visual Studio, and using the dialog editor to create the following:
 
 ![Recreated Date and Time Properties dialog box](./media/walkthrough-hosting-a-wpf-clock-in-win32/recreated-date-time-properties-dialog.png)
 

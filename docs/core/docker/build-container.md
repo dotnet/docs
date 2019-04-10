@@ -11,7 +11,7 @@ ms.custom: "mvc, seodec18"
 
 This tutorial teaches you how to build a Docker image that contains your .NET Core application. The image can be used to create containers for your local development environment, private cloud, or public cloud.
 
-In this tutorial you'll learn how to:
+You'll learn to:
 
 > [!div class="checklist"]
 > * Create and publish a simple .NET Core app

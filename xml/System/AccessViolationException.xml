@@ -55,7 +55,7 @@
  Make sure that the memory that you are attempting to access has been allocated.  
  An <xref:System.AccessViolationException> exception is always thrown by an attempt to access protected memory -- that is, to access memory that is not allocated or that is not owned by a process.  
   
- Automatic memory management is one of the services that the common language runtime provides. If managed code provides the same functionality as your unmanagede code, you may wish to move to managed code to take advantage of this functionality. For more information, see [Automatic Memory Management](~/docs/standard/automatic-memory-management.md).  
+ Automatic memory management is one of the services that the common language runtime provides. If managed code provides the same functionality as your unmanaged code, you may wish to move to managed code to take advantage of this functionality. For more information, see [Automatic Memory Management](~/docs/standard/automatic-memory-management.md).  
   
  Make sure that the memory that you are attempting to access has not been corrupted.  
  If several read or write operations have occurred through bad pointers, memory may be corrupted. This typically occurs when reading or writing to addresses outside of a predefined buffer.  

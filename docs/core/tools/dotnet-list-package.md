@@ -124,5 +124,5 @@ The project or solution file to operate on. If not specified, the command search
 * List package references for a specific target framework:
 
   ```console
-  dotnet list package netcoreapp3.0
+  dotnet list package --framework netcoreapp3.0
   ```

@@ -959,7 +959,7 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.StreamWriter" /> and optionally releases the managed resources.</summary>
+        <summary>Causes any buffered data to be written to the underlying stream, releases the unmanaged resources used by the <see cref="T:System.IO.StreamWriter" />, and optionally the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

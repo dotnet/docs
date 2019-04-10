@@ -174,9 +174,9 @@ Notice that the two images share the same **IMAGE ID** value. The value is the s
 
 
 ```dockerfile
-COPY app\bin\Release\netcoreapp2.2\publish\ .\app
+COPY app/bin/Release/netcoreapp2.2/publish/ app/
 
-ENTRYPOINT ["dotnet" "app/myapp.dll"]
+ENTRYPOINT ["dotnet", "app/myapp.dll"]
 ```
 
 The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the **publish** folder is copied to a folder named **app** in the container.
@@ -252,19 +252,21 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ### Connect to a container
 
-After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>CTRL + C</kbd> command is used to detach from the running container. Reattach to the container to verify that it's still running and counting.
+After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>CTRL + C</kbd> command is used to detach from the running container. This may actually end the process in the container, which will stop the container. The `--sig-proxy=false` parameter ensures that <kbd>CTRL + C</kbd> will not stop the process in the container. 
+
+After you detach from the container, reattach to verify that it's still running and counting.
 
 ```console
 > docker start boring_matsumoto
 boring_matsumoto
 
-> docker attach boring_matsumoto
+> docker attach --sig-proxy=false boring_matsumoto
 Counter: 7
 Counter: 8
 Counter: 9
 ^C
 
-> docker attach boring_matsumoto
+> docker attach --sig-proxy=false boring_matsumoto
 Counter: 17
 Counter: 18
 Counter: 19
@@ -318,6 +320,10 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 The `docker run` command also lets you modify the `ENTRYPOINT` command from the *Dockerfile* and run something else, but only for that container. For example, use the following command to run `bash` or `cmd.exe`. Edit the command as necessary. 
 
+
+#### Windows
+In this example the `ENTRYPOINT` is changed to `cmd.exe`. <kbd>CTRL + C</kbd> is pressed to end the process and stop the container.
+
 ```console
 > docker run -it --rm --entrypoint "cmd.exe" myimage
 
@@ -341,7 +347,17 @@ C:\>dir
 C:\>^C
 ```
 
-This example runs `cmd.exe` inside the container and gets a directory list. <kbd>CTRL + C</kbd> is then pressed to stop the process and exit the container.
+#### Linux
+
+In this example the `ENTRYPOINT` is changed to `bash`. The `quit` command is run which ends the process and stop the container.
+
+```bash
+root@user:~# docker run -it --rm --entrypoint "bash" myimage
+root@8515e897c893:/# ls app
+myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
+root@8515e897c893:/# exit
+exit
+```
 
 ## Essential commands
 

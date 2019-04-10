@@ -9,25 +9,25 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 
 C# 7.0 adds a number of new features to the C# language:
 * [`out` variables](#out-variables)
-    - You can declare `out` values inline as arguments to the method where they're used.
+  - You can declare `out` values inline as arguments to the method where they're used.
 * [Tuples](#tuples)
-    - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
+  - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
 * [Discards](#discards)
-    - Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They're most useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
+  - Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They're most useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
 * [Pattern Matching](#pattern-matching)
-    - You can create branching logic based on arbitrary types and values of the members of those types.
+  - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
-    - Method local variables and return values can be references to other storage.
+  - Method local variables and return values can be references to other storage.
 * [Local Functions](#local-functions)
-    - You can nest functions inside other functions to limit their scope and visibility.
+  - You can nest functions inside other functions to limit their scope and visibility.
 * [More expression-bodied members](#more-expression-bodied-members)
-    - The list of members that can be authored using expressions has grown.
+  - The list of members that can be authored using expressions has grown.
 * [`throw` Expressions](#throw-expressions)
-    - You can throw exceptions in code constructs that previously weren't allowed because `throw` was a statement. 
+  - You can throw exceptions in code constructs that previously weren't allowed because `throw` was a statement.
 * [Generalized async return types](#generalized-async-return-types)
-    - Methods declared with the `async` modifier can return other types in addition to `Task` and `Task<T>`.
+  - Methods declared with the `async` modifier can return other types in addition to `Task` and `Task<T>`.
 * [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
-    - New tokens improve readability for numeric constants.
+  - New tokens improve readability for numeric constants.
 
 The remainder of this article provides an overview of each feature. For each feature,
 you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in our [interactive exploration](../tutorials/exploration/csharp-7.yml) of these features.
@@ -46,10 +46,10 @@ typed local variable:
 
 [!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
 
-* The code is easier to read. 
-    - You declare the out variable where you use it, not on another line above.
+* The code is easier to read.
+  - You declare the out variable where you use it, not on another line above.
 * No need to assign an initial value.
-    - By declaring the `out` variable where it's used in a method call, you can't accidentally use it before it is assigned.
+  - By declaring the `out` variable where it's used in a method call, you can't accidentally use it before it is assigned.
 
 ## Tuples
 
@@ -96,7 +96,7 @@ this `Point` class that provides a deconstructor method that extracts
 the `X` and `Y` coordinates:
 
 [!code-csharp[PointWithDeconstruction](~/samples/snippets/csharp/new-in-7/point.cs#PointWithDeconstruction "Point with deconstruction method")]
- 
+
 You can extract the individual fields by assigning a `Point` to a tuple:
 
 [!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#DeconstructPoint "Deconstruct a point")]
@@ -127,10 +127,10 @@ For more information, see [Discards](../discards.md).
 properties other than the type of an object. You're probably already familiar
 with method dispatch based on the type of an object. In object-oriented programming,
 virtual and override methods provide language syntax to implement method dispatching
-based on an object's type. Base and Derived classes provide different implementations. 
+based on an object's type. Base and Derived classes provide different implementations.
 Pattern matching expressions extend this concept so that you can easily
 implement similar dispatch patterns for types and data elements that aren't
-related through an inheritance hierarchy. 
+related through an inheritance hierarchy.
 
 Pattern matching supports `is` expressions and `switch` expressions. Each
 enables inspecting an object and its properties to determine if that object
@@ -164,7 +164,7 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
     {
         switch (i)
         {
-            case 0: 
+            case 0:
                 break;
             case IEnumerable<int> childSequence:
             {
@@ -172,8 +172,8 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
                     sum += (item > 0) ? item : 0;
                 break;
             }
-            case int n when n > 0: 
-                sum += n; 
+            case int n when n > 0:
+                sum += n;
                 break;
             null:
                 throw new NullReferenceException("Null found in sequence");
@@ -185,7 +185,7 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 }
 ```
 
-- `case 0:` is the familiar constant pattern. 
+- `case 0:` is the familiar constant pattern.
 - `case IEnumerable<int> childSequence:` is a type pattern.
 - `case int n when n > 0:` is a type pattern with an additional `when` condition.
 - `case null:` is the null pattern.
@@ -211,15 +211,15 @@ The C# language has several rules that protect you from misusing
 the `ref` locals and returns:
 
 * You must add the `ref` keyword to the method signature and to all `return` statements in a method.
-    - That makes it clear the method returns by reference throughout the method.
+  - That makes it clear the method returns by reference throughout the method.
 * A `ref return` may be assigned to a value variable, or a `ref` variable.
-    - The caller controls whether the return value is copied or not. Omitting the `ref` modifier when assigning the return value indicates that the caller wants a copy of the value, not a reference to the storage.
+  - The caller controls whether the return value is copied or not. Omitting the `ref` modifier when assigning the return value indicates that the caller wants a copy of the value, not a reference to the storage.
 * You can't assign a standard method return value to a `ref` local variable.
-    - That disallows statements like `ref int i = sequence.Count();`
+  - That disallows statements like `ref int i = sequence.Count();`
 * You can't return a `ref` to a variable whose lifetime doesn't extend beyond the execution of the method.
-    - That means you can't return a reference to a local variable or a variable with a similar scope.
+  - That means you can't return a reference to a local variable or a variable with a similar scope.
 * `ref` locals and returns can't be used with async methods.
-    - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
+  - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
 
 The addition of ref locals and ref returns enables algorithms that are more
 efficient by avoiding copying values, or performing dereferencing operations
@@ -291,7 +291,7 @@ not an expression, there were C# constructs where you couldn't use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
-constructs, C# 7.0 introduces *throw expressions*. 
+constructs, C# 7.0 introduces *throw expressions*.
 
 This addition makes it easier to write more expression-based code. You don't need additional statements for error checking.
 
@@ -309,7 +309,7 @@ The new language feature means that async method return types aren't limited to 
 must still satisfy the async pattern, meaning a `GetAwaiter` method
 must be accessible. As one concrete example, the `ValueTask` type
 has been added to the .NET framework to make use of this new language
-feature: 
+feature:
 
 [!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]
 

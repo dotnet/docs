@@ -169,7 +169,7 @@ The following example uses the type pattern to provide information about various
 
 Instead of `object`, you could make a generic method, using the type of the collection as the type parameter, as shown in the following code:
 
-[!code-csharp[type-pattern#1](~/samples/snippets/csharp/language-reference/keywords/switch/type-pattern3.cs#3)]
+[!code-csharp[type-pattern#3](~/samples/snippets/csharp/language-reference/keywords/switch/type-pattern3.cs#1)]
 
 The generic version is different than the first sample in two ways. First, you can't use the `null` case. You can't use any constant case because the compiler can't convert any arbitrary type `T` to any type other than `object`. What had been the `default` case now tests for a non-null `object`. That means the `default` case tests only for `null`.
 

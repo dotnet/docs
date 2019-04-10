@@ -61,7 +61,7 @@ Starting with C# 7.0, the `is` and [switch](../../../csharp/language-reference/k
 
 - [var pattern](#var), a match that always succeeds and binds the value of an expression to a new local variable. 
 
-### <a name="type" /> Type pattern </a>
+### <a name="type" />Type pattern
 
 When using the type pattern to perform pattern matching, `is` tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type. It's a straightforward extension of the `is` statement that enables concise type evaluation and conversion. The general form of the `is` type pattern is:
 
@@ -139,13 +139,13 @@ The following example shows a comparison of `null` checks:
  
 ### <a name="var" /> var pattern </a>
 
-A pattern match with the var pattern always succeeds. Its syntax is
+A pattern match with the var pattern always succeeds for non-null expressions. The non-null value of *expr* is always assigned to a local variable the same type as the runtime time type of *expr*.  Its syntax is:
 
 ```csharp 
    expr is var varname
 ```
 
-where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a static variable of the same type as *expr*. The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
+The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
 
 [!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
 

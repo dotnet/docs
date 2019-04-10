@@ -139,7 +139,7 @@ The following example shows a comparison of `null` checks:
  
 ### <a name="var" /> var pattern </a>
 
-A pattern match with the var pattern always succeeds for non-null expressions. The non-null value of *expr* is always assigned to a local variable the same type as the runtime time type of *expr*.  Its syntax is:
+A pattern match with the var pattern always succeeds for non-null expressions; if *expr* is `null`, the `is` expression is `false`. The non-null value of *expr* is always assigned to a local variable the same type as the runtime time type of *expr*.  Its syntax is:
 
 ```csharp 
    expr is var varname
@@ -148,8 +148,6 @@ A pattern match with the var pattern always succeeds for non-null expressions. T
 The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
 
 [!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
-
-Note that if *expr* is `null`, the `is` expression is `false`. 
 
 ## C# Language Specification
   

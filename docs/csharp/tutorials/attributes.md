@@ -162,4 +162,4 @@ In the above code, you don't have to have a literal `"Name"` string. This can he
 
 ## Summary
 
-Attributes bring declarative power to C#, but they are a meta-date form of code and don't act by themselves.
+Attributes bring declarative power to C#, but they are a meta-data form of code and don't act by themselves.

@@ -15,11 +15,12 @@ The specified file cannot be opened for writing, perhaps because it has already 
   
 ## To correct this error  
   
-1.  Close the file and reopen it.  
+1. Close the file and reopen it.  
   
-2.  Check the file's permissions.  
+2. Check the file's permissions.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
 - [Writing to Files](../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

@@ -25,31 +25,31 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 #### To create the ctlClockLib control library and the ctlClock control  
   
-1.  On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.  
+1. On the **File** menu, point to **New**, and then click **Project** to open the **New Project** dialog box.  
   
-2.  From the list of Visual Basic projects, select the **Windows Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.  
+2. From the list of Visual Basic projects, select the **Windows Control Library** project template, type `ctlClockLib` in the **Name** box, and then click **OK**.  
   
      The project name, `ctlClockLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ctlClock`, you can specify your `ctlClock` component using `ctlClockLib.ctlClock.`  
   
-3.  In Solution Explorer, right-click **UserControl1.vb**, and then click **Rename**. Change the file name to `ctlClock.vb`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".  
+3. In Solution Explorer, right-click **UserControl1.vb**, and then click **Rename**. Change the file name to `ctlClock.vb`. Click the **Yes** button when you are asked if you want to rename all references to the code element "UserControl1".  
   
     > [!NOTE]
     >  By default, a composite control inherits from the <xref:System.Windows.Forms.UserControl> class provided by the system. The <xref:System.Windows.Forms.UserControl> class provides functionality required by all composite controls, and implements standard methods and properties.  
   
-4.  On the **File** menu, click **Save All** to save the project.  
+4. On the **File** menu, click **Save All** to save the project.  
   
 ## Adding Windows Controls and Components to the Composite Control  
  A visual interface is an essential part of your composite control. This visual interface is implemented by the addition of one or more Windows controls to the designer surface. In the following demonstration, you will incorporate Windows controls into your composite control and write code to implement functionality.  
   
 #### To add a Label and a Timer to your composite control  
   
-1.  In Solution Explorer, right-click **ctlClock.vb**, and then click **View Designer**.  
+1. In Solution Explorer, right-click **ctlClock.vb**, and then click **View Designer**.  
   
-2.  In the Toolbox, expand the **Common Controls** node, and then double-click **Label**.  
+2. In the Toolbox, expand the **Common Controls** node, and then double-click **Label**.  
   
      A <xref:System.Windows.Forms.Label> control named `Label1` is added to your control on the designer surface.  
   
-3.  In the designer, click **Label1**. In the Properties window, set the following properties.  
+3. In the designer, click **Label1**. In the Properties window, set the following properties.  
   
     |Property|Change to|  
     |--------------|---------------|  
@@ -58,17 +58,17 @@ Composite controls provide a means by which custom graphical interfaces can be c
     |**TextAlign**|`MiddleCenter`|  
     |**Font.Size**|`14`|  
   
-4.  In the **Toolbox**, expand the **Components** node, and then double-click **Timer**.  
+4. In the **Toolbox**, expand the **Components** node, and then double-click **Timer**.  
   
      Because a <xref:System.Windows.Forms.Timer> is a component, it has no visual representation at run time. Therefore, it does not appear with the controls on the designer surface, but rather in the Component Designer (a tray at the bottom of the designer surface).  
   
-5.  In the Component Designer, click **Timer1**, and then set the <xref:System.Windows.Forms.Timer.Interval%2A> property to `1000` and the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `True`.  
+5. In the Component Designer, click **Timer1**, and then set the <xref:System.Windows.Forms.Timer.Interval%2A> property to `1000` and the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `True`.  
   
      The <xref:System.Windows.Forms.Timer.Interval%2A> property controls the frequency with which the timer component ticks. Each time `Timer1` ticks, it runs the code in the `Timer1_Tick` event. The interval represents the number of milliseconds between ticks.  
   
-6.  In the Component Designer, double-click **Timer1** to go to the `Timer1_Tick` event for `ctlClock`.  
+6. In the Component Designer, double-click **Timer1** to go to the `Timer1_Tick` event for `ctlClock`.  
   
-7.  Modify the code so that it resembles the following code sample. Be sure to change the access modifier from `Private` to `Protected`.  
+7. Modify the code so that it resembles the following code sample. Be sure to change the access modifier from `Private` to `Protected`.  
   
     ```vb  
     Protected Sub Timer1_Tick(ByVal sender As Object, ByVal e As _  
@@ -80,7 +80,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
      This code will cause the current time to be shown in `lblDisplay`. Because the interval of `Timer1` was set to `1000`, this event will occur every thousand milliseconds, thus updating the current time every second.  
   
-8.  Modify the method to be overridable. For more information, see the "Inheriting from a User Control" section below.  
+8. Modify the method to be overridable. For more information, see the "Inheriting from a User Control" section below.  
   
     ```vb  
     Protected Overridable Sub Timer1_Tick(ByVal sender As Object, ByVal _  
@@ -94,11 +94,11 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 #### To add a property to your composite control  
   
-1.  In Solution Explorer, right-click **ctlClock.vb**, and then click **View Code**.  
+1. In Solution Explorer, right-click **ctlClock.vb**, and then click **View Code**.  
   
      The Code Editor for your control opens.  
   
-2.  Locate the `Public Class ctlClock` statement. Beneath it, type the following code.  
+2. Locate the `Public Class ctlClock` statement. Beneath it, type the following code.  
   
     ```vb  
     Private colFColor as Color  
@@ -107,7 +107,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
      These statements create the private variables that you will use to store the values for the properties you are about to create.  
   
-3.  Insert the following code beneath the variable declarations from step 2.  
+3. Insert the following code beneath the variable declarations from step 2.  
   
     ```vb  
     ' Declares the name and type of the property.  
@@ -138,24 +138,24 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
      The preceding code makes two custom properties, `ClockForeColor` and `ClockBackColor`, available to subsequent users of this control by invoking the `Property` statement. The `Get` and `Set` statements provide for storage and retrieval of the property value, as well as code to implement functionality appropriate to the property.  
   
-4.  On the **File** menu, click **Save All** to save the project.  
+4. On the **File** menu, click **Save All** to save the project.  
   
 ## Testing the Control  
  Controls are not stand-alone projects; they must be hosted in a container. Test your control's run-time behavior and exercise its properties with the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
   
 #### To test your control  
   
-1.  Press F5 to build the project and run your control in the **UserControl Test Container**.  
+1. Press F5 to build the project and run your control in the **UserControl Test Container**.  
   
-2.  In the test container's property grid, select the `ClockBackColor` property, and then click the drop-down arrow to display the color palette.  
+2. In the test container's property grid, select the `ClockBackColor` property, and then click the drop-down arrow to display the color palette.  
   
-3.  Choose a color by clicking it.  
+3. Choose a color by clicking it.  
   
      The background color of your control changes to the color you selected.  
   
-4.  Use a similar sequence of events to verify that the `ClockForeColor` property is functioning as expected.  
+4. Use a similar sequence of events to verify that the `ClockForeColor` property is functioning as expected.  
   
-5.  Click **Close** to close the **UserControl Test Container**.  
+5. Click **Close** to close the **UserControl Test Container**.  
   
      In this section and the preceding sections, you have seen how components and Windows controls can be combined with code and packaging to provide custom functionality in the form of a composite control. You have learned to expose properties in your composite control, and how to test your control after it is complete. In the next section you will learn how to construct an inherited composite control using `ctlClock` as a base.  
   
@@ -166,19 +166,19 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 #### To create the inherited control  
   
-1.  In Solution Explorer, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.  
+1. In Solution Explorer, right-click **ctlClockLib**, point to **Add**, and then click **User Control**.  
   
      The **Add New Item** dialog box opens.  
   
-2.  Select the **Inherited User Control** template.  
+2. Select the **Inherited User Control** template.  
   
-3.  In the **Name** box, type `ctlAlarmClock.vb`, and then click **Add**.  
+3. In the **Name** box, type `ctlAlarmClock.vb`, and then click **Add**.  
   
      The **Inheritance Picker** dialog box appears.  
   
-4.  Under **Component Name**, double-click **ctlClock**.  
+4. Under **Component Name**, double-click **ctlClock**.  
   
-5.  In Solution Explorer, browse through the current projects.  
+5. In Solution Explorer, browse through the current projects.  
   
     > [!NOTE]
     >  A file called **ctlAlarmClock.vb** has been added to the current project.  
@@ -188,9 +188,9 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 ##### To add properties to your composite control  
   
-1.  In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Code**.  
+1. In Solution Explorer, right-click **ctlAlarmClock**, and then click **View Code**.  
   
-2.  Locate the class declaration for the ctlAlarmClock control, which appears as `Public Class ctlAlarmClock`.  In the class declaration, insert the following code.  
+2. Locate the class declaration for the ctlAlarmClock control, which appears as `Public Class ctlAlarmClock`.  In the class declaration, insert the following code.  
   
     ```vb  
     Private dteAlarmTime As Date  
@@ -220,11 +220,11 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 ##### To add the label control  
   
-1.  In Solution Explorer, right-click **ctlAlarmClock**, and click **View Designer**.  
+1. In Solution Explorer, right-click **ctlAlarmClock**, and click **View Designer**.  
   
      The designer for `ctlAlarmClock` opens in the main window.  
   
-2.  Click `lblDisplay` (the display portion of the control), and view the Properties window.  
+2. Click `lblDisplay` (the display portion of the control), and view the Properties window.  
   
     > [!NOTE]
     >  While all the properties are displayed, they are dimmed. This indicates that these properties are native to `lblDisplay` and cannot be modified or accessed in the Properties window. By default, controls contained in a composite control are `Private`, and their properties are not accessible by any means.  
@@ -232,9 +232,9 @@ Composite controls provide a means by which custom graphical interfaces can be c
     > [!NOTE]
     >  If you want subsequent users of your composite control to have access to its internal controls, declare them as `Public` or `Protected`. This will allow you to set and modify properties of controls contained within your composite control by using the appropriate code.  
   
-3.  Add a <xref:System.Windows.Forms.Label> control to your composite control.  
+3. Add a <xref:System.Windows.Forms.Label> control to your composite control.  
   
-4.  Using the mouse, drag the <xref:System.Windows.Forms.Label> control immediately beneath the display box. In the Properties window, set the following properties.  
+4. Using the mouse, drag the <xref:System.Windows.Forms.Label> control immediately beneath the display box. In the Properties window, set the following properties.  
   
     |Property|Setting|  
     |--------------|-------------|  
@@ -248,15 +248,15 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 ##### To override the Timer1_Tick method of ctlClock  
   
-1.  In Solution Explorer, right-click **ctlAlarmClock.vb**, and then click **View Code**.  
+1. In Solution Explorer, right-click **ctlAlarmClock.vb**, and then click **View Code**.  
   
-2.  Locate the `Private blnAlarmSet As Boolean` statement. Immediately beneath it, add the following statement.  
+2. Locate the `Private blnAlarmSet As Boolean` statement. Immediately beneath it, add the following statement.  
   
     ```vb  
     Dim blnColorTicker as Boolean  
     ```  
   
-3.  Locate the `End Class` statement at the bottom of the page. Just before the `End Class` statement, add the following code.  
+3. Locate the `End Class` statement at the bottom of the page. Just before the `End Class` statement, add the following code.  
   
     ```vb  
     Protected Overrides Sub Timer1_Tick(ByVal sender As Object, ByVal e _  
@@ -301,11 +301,11 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 ##### To implement the shutoff method  
   
-1.  In Solution Explorer, right-click **ctlAlarmClock.vb**, and then click **View Designer**.  
+1. In Solution Explorer, right-click **ctlAlarmClock.vb**, and then click **View Designer**.  
   
-2.  In the designer, double-click **lblAlarm**. The **Code Editor** opens to the `Private Sub lblAlarm_Click` line.  
+2. In the designer, double-click **lblAlarm**. The **Code Editor** opens to the `Private Sub lblAlarm_Click` line.  
   
-3.  Modify this method so that it resembles the following code.  
+3. Modify this method so that it resembles the following code.  
   
     ```vb  
     Private Sub lblAlarm_Click(ByVal sender As Object, ByVal e As _  
@@ -317,7 +317,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
     End Sub  
     ```  
   
-4.  On the **File** menu, click **Save All** to save the project.  
+4. On the **File** menu, click **Save All** to save the project.  
   
 ### Using the Inherited Control on a Form  
  You can test your inherited control the same way you tested the base class control, `ctlClock`: Press F5 to build the project and run your control in the **UserControl Test Container**. For more information, see [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).  
@@ -326,23 +326,23 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 ##### To build and add your control to a test form  
   
-1.  In Solution Explorer, right-click **ctlClockLib**, and then click **Build**.  
+1. In Solution Explorer, right-click **ctlClockLib**, and then click **Build**.  
   
-2.  On the **File** menu, point to **Add**, and then click **New Project**.  
+2. On the **File** menu, point to **Add**, and then click **New Project**.  
   
-3.  Add a new **Windows Application** project to the solution, and name it `Test`.  
+3. Add a new **Windows Application** project to the solution, and name it `Test`.  
   
      The **Test** project is added to Solution Explorer.  
   
-4.  In Solution Explorer, right-click the `Test` project node, and then click **Add Reference** to display the **Add Reference** dialog box.  
+4. In Solution Explorer, right-click the `Test` project node, and then click **Add Reference** to display the **Add Reference** dialog box.  
   
-5.  Click the tab labeled **Projects**. The project **ctlClockLib** will be listed under **Project Name**. Double-click **ctlClockLib** to add the reference to the test project.  
+5. Click the tab labeled **Projects**. The project **ctlClockLib** will be listed under **Project Name**. Double-click **ctlClockLib** to add the reference to the test project.  
   
-6.  In Solution Explorer, right-click **Test**, and then click **Build**.  
+6. In Solution Explorer, right-click **Test**, and then click **Build**.  
   
-7.  In the **Toolbox**, expand the **ctlClockLib Components** node.  
+7. In the **Toolbox**, expand the **ctlClockLib Components** node.  
   
-8.  Double-click **ctlAlarmClock** to add an instance of `ctlAlarmClock` to your form.  
+8. Double-click **ctlAlarmClock** to add an instance of `ctlAlarmClock` to your form.  
   
 9. In the **Toolbox**, locate and double-click **DateTimePicker** to add a <xref:System.Windows.Forms.DateTimePicker> control to your form, and then add a <xref:System.Windows.Forms.Label> control by double-clicking **Label**.  
   
@@ -390,6 +390,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
      This walkthrough has covered a number of key concepts. You have learned to create a composite control by combining controls and components into a composite control container. You have learned to add properties to your control, and to write code to implement custom functionality. In the last section, you learned to extend the functionality of a given composite control through inheritance, and to alter the functionality of host methods by overriding those methods.  
   
 ## See also
+
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)
 - [How to: Author Composite Controls](how-to-author-composite-controls.md)
 - [How to: Display a Control in the Choose Toolbox Items Dialog Box](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)

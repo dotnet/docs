@@ -20,5 +20,6 @@ This example shows how to simplify animations by using child <xref:System.Window
  [!code-xaml[Timelines_snip#ParallelTimelineWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Timelines_snip/CS/ParallelTimelineExample.xaml#paralleltimelinewholepage)]  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Specify HandoffBehavior Between Storyboard Animations](how-to-specify-handoffbehavior-between-storyboard-animations.md)

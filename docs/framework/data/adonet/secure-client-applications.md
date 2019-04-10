@@ -60,6 +60,7 @@ Applications typically consist of many parts that must all be protected from vul
 |[Security and Remoting Considerations](../../../../docs/framework/misc/security-and-remoting-considerations.md)|Describes security issues with protected objects and application domain crossing.|  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
 - [Securing Applications](/visualstudio/ide/securing-applications)

@@ -16,29 +16,29 @@ ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
   
 ### To enable signature confirmation in code  
   
-1.  Create an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class.  
+1. Create an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class.  
   
-2.  Create an instance of the  <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.  
+2. Create an instance of the  <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.  
   
-3.  Set the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> to `true`.  
+3. Set the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> to `true`.  
   
-4.  Add the security element to the binding collection.  
+4. Add the security element to the binding collection.  
   
-5.  Create a custom binding, as specified in [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
+5. Create a custom binding, as specified in [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
   
 ### To enable signature confirmation in configuration  
   
-1.  Add a `<customBinding>` element to the `<bindings>` section of the configuration file.  
+1. Add a `<customBinding>` element to the `<bindings>` section of the configuration file.  
   
-2.  Add a `<binding>` element and set the name attribute to an appropriate value.  
+2. Add a `<binding>` element and set the name attribute to an appropriate value.  
   
-3.  Add an appropriate encoding element. The following example adds a `<TextMessageEncoding>` element.  
+3. Add an appropriate encoding element. The following example adds a `<TextMessageEncoding>` element.  
   
-4.  Add a `<security>` child element and set the `requireSignatureConfirmation` attribute to `true`.  
+4. Add a `<security>` child element and set the `requireSignatureConfirmation` attribute to `true`.  
   
-5.  Optional. To enable signature confirmation during the bootstrap, add a [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) child element and set the `equireSignatureConfirmation` attribute to `true`.  
+5. Optional. To enable signature confirmation during the bootstrap, add a [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) child element and set the `equireSignatureConfirmation` attribute to `true`.  
   
-6.  Add an appropriate transport element. The following example adds an [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md):  
+6. Add an appropriate transport element. The following example adds an [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md):  
   
     ```xml  
     <bindings>  
@@ -61,6 +61,7 @@ ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
  [!code-vb[c_SignatureConfirmation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_signatureconfirmation/vb/source.vb#1)]  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement%2A>

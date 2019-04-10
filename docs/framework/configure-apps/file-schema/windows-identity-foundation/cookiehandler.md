@@ -78,6 +78,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.CookieHandler>
 - <xref:System.IdentityModel.Services.ChunkedCookieHandler>
 - <xref:System.IdentityModel.Services.SessionAuthenticationModule>

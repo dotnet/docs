@@ -30,21 +30,21 @@ This sample demonstrates how to implement an RPC-based service and expose it in 
   
 #### To run the sample  
   
-1.  Open the solution for the SOAP and HTTP Endpoints Sample.  
+1. Open the solution for the SOAP and HTTP Endpoints Sample.  
   
-2.  Press CTRL+SHIFT+B to build the solution.  
+2. Press CTRL+SHIFT+B to build the solution.  
   
-3.  If it is not already open, press CTRL+W, S to open the **Solution Explorer** window.  
+3. If it is not already open, press CTRL+W, S to open the **Solution Explorer** window.  
   
-4.  From the **Solution Explorer** window, right-click the **Service** project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**. This launches the ASP.NET development server, which hosts the service.  
+4. From the **Solution Explorer** window, right-click the **Service** project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**. This launches the ASP.NET development server, which hosts the service.  
   
-5.  From the Solution Explorer windows, right-click the Client project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**.  
+5. From the Solution Explorer windows, right-click the Client project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears. Click **Start New Instance**.  
   
-6.  The client console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser.  
+6. The client console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser.  
   
-7.  As the sample runs, the client writes the status of the current activity.  
+7. As the sample runs, the client writes the status of the current activity.  
   
-8.  Press any key to terminate the client console application.  
+8. Press any key to terminate the client console application.  
   
 9. Press SHIFT+F5 to stop debugging the service.  
   

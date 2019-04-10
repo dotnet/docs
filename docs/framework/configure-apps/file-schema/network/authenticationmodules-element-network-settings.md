@@ -64,6 +64,7 @@ Specifies modules used to authenticate network requests.
 ```  
   
 ## See also
+
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

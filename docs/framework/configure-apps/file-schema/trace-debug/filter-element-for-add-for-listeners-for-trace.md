@@ -76,6 +76,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.TraceListener>
 - <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>

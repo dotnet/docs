@@ -23,7 +23,7 @@ The data type of a navigation property is determined by the [multiplicity](assoc
 
 The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. Navigation properties, `Publisher` and `Authors`, are defined on the Book entity type. Navigation property `Books` is defined on both the Publisher entity type and the `Author` entity type.
 
-![Model with Navigation Properties](/media/modelwithnavprops.gif "ModelWithNavProps")
+ ![Diagram showing a conceptual model with three entity types.](./media/navigation-property/conceptual-model-entity-types-associations.gif)  
 
 The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines the `Book` entity type shown in the diagram above:
 

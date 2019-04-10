@@ -42,8 +42,7 @@ A *generic type* is a single programming element that adapts to perform the same
   
  An analogy is a screwdriver set with removable heads. You inspect the screw you need to turn and select the correct head for that screw (slotted, crossed, starred). Once you insert the correct head in the screwdriver handle, you perform the exact same function with the screwdriver, namely turning the screw.  
   
- ![Diagram of a screwdriver set as a generic tool](../../../../visual-basic/programming-guide/language-features/data-types/media/genericscrewdriver.gif "GenericScrewDriver")  
-Screwdriver set as a generic tool  
+ ![Diagram of a screwdriver set with different heads.](./media/generic-types/generic-screwdriver-set.gif)  
   
  When you define a generic type, you parameterize it with one or more data types. This allows the using code to tailor the data types to its requirements. Your code can declare several different programming elements from the generic element, each one acting on a different set of data types. But the declared elements all perform the identical logic, no matter what data types they are using.  
   
@@ -78,9 +77,9 @@ Screwdriver set as a generic tool
 ## Advantages of Generic Types  
  A generic type serves as a basis for declaring several different programming elements, each of which operates on a specific data type. The alternatives to a generic type are:  
   
-1.  A single type operating on the `Object` data type.  
+1. A single type operating on the `Object` data type.  
   
-2.  A set of *type-specific* versions of the type, each version individually coded and operating on one specific data type such as `String`, `Integer`, or a user-defined type such as `customer`.  
+2. A set of *type-specific* versions of the type, each version individually coded and operating on one specific data type such as `String`, `Integer`, or a user-defined type such as `customer`.  
   
  A generic type has the following advantages over these alternatives:  
   

@@ -582,38 +582,38 @@ string GetCallerCreditCardNumber()
 
 #### To set up and build the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
 #### To run the sample on the same computer
 
-1.  Open a Visual Studio 2012 Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.Make sure that the path includes the folder where Makecert.exe is located.
+1. Open a Visual Studio 2012 Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.Make sure that the path includes the folder where Makecert.exe is located.
 
 > [!NOTE]
 >  Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
   
-1.  Launch Client.exe from client\bin directory. Client activity is displayed on the client console application.  
+1. Launch Client.exe from client\bin directory. Client activity is displayed on the client console application.  
   
-2.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+2. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computer  
   
-1.  Create a directory on the service computer for the service binaries.  
+1. Create a directory on the service computer for the service binaries.  
   
-2.  Copy the service program files into the service directory on the service computer. Do not forget to copy CreditCardFile.txt; otherwise the credit card authenticator cannot validate credit card information sent from the client. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+2. Copy the service program files into the service directory on the service computer. Do not forget to copy CreditCardFile.txt; otherwise the credit card authenticator cannot validate credit card information sent from the client. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. You can create one using the Setup.bat if you change the `%SERVER_NAME%` variable to fully-qualified name of the computer where the service is hosted. Note that the Setup.bat file must be run in a Developer Command Prompt for Visual Studio opened with administrator privileges.  
+3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. You can create one using the Setup.bat if you change the `%SERVER_NAME%` variable to fully-qualified name of the computer where the service is hosted. Note that the Setup.bat file must be run in a Developer Command Prompt for Visual Studio opened with administrator privileges.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store on the client. You must do this only if the server certificate is not issued by a trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store on the client. You must do this only if the server certificate is not issued by a trusted issuer.  
   
-5.  In the EchoServiceHost.cs file, change the value of the certificate subject name to specify a fully-qualified computer name instead of localhost.  
+5. In the EchoServiceHost.cs file, change the value of the certificate subject name to specify a fully-qualified computer name instead of localhost.  
   
-6.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+6. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
   
-7.  In the Client.cs file, change the address value of the endpoint to match the new address of your service.  
+7. In the Client.cs file, change the address value of the endpoint to match the new address of your service.  
   
-8.  In the Client.cs file change the subject name of the service X.509 certificate to match the fully-qualified computer name of the remote host instead of localhost.  
+8. In the Client.cs file change the subject name of the service X.509 certificate to match the fully-qualified computer name of the remote host instead of localhost.  
   
 9. On the client computer, launch Client.exe from a command prompt window.  
   
@@ -621,6 +621,4 @@ string GetCallerCreditCardNumber()
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
-## See also
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.  

@@ -38,4 +38,3 @@ code that is represented as a data structure. It's a powerful
 tool, and it's one of the features of the .NET ecosystem that
 enables rich libraries such as Entity Framework to accomplish
 what they do.
-

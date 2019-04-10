@@ -154,21 +154,22 @@ End Module
 ## Extension Method Precedence  
  When two extension methods that have identical signatures are in scope and accessible, the one with higher precedence will be invoked. An extension method's precedence is based on the mechanism used to bring the method into scope. The following list shows the precedence hierarchy, from highest to lowest.  
   
-1.  Extension methods defined inside the current module.  
+1. Extension methods defined inside the current module.  
   
-2.  Extension methods defined inside data types in the current namespace or any one of its parents, with child namespaces having higher precedence than parent namespaces.  
+2. Extension methods defined inside data types in the current namespace or any one of its parents, with child namespaces having higher precedence than parent namespaces.  
   
-3.  Extension methods defined inside any type imports in the current file.  
+3. Extension methods defined inside any type imports in the current file.  
   
-4.  Extension methods defined inside any namespace imports in the current file.  
+4. Extension methods defined inside any namespace imports in the current file.  
   
-5.  Extension methods defined inside any project-level type imports.  
+5. Extension methods defined inside any project-level type imports.  
   
-6.  Extension methods defined inside any project-level namespace imports.  
+6. Extension methods defined inside any project-level namespace imports.  
   
  If precedence does not resolve the ambiguity, you can use the fully qualified name to specify the method that you are calling. If the `Print` method in the earlier example is defined in a module named `StringExtensions`, the fully qualified name is `StringExtensions.Print(example)` instead of `example.Print()`.  
   
 ## See also
+
 - <xref:System.Runtime.CompilerServices>
 - <xref:System.Runtime.CompilerServices.ExtensionAttribute>
 - [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)

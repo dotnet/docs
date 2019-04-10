@@ -19,15 +19,16 @@ Controls in a <xref:System.Windows.Forms.TableLayoutPanel> control can span adja
   
 ### To span columns and rows  
   
-1.  Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
+1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
   
-2.  Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the upper-left cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+2. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the upper-left cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-3.  Set the <xref:System.Windows.Forms.Button> control's **ColumnSpan** property to **2**. Note that the <xref:System.Windows.Forms.Button> control spans the first and second columns.  
+3. Set the <xref:System.Windows.Forms.Button> control's **ColumnSpan** property to **2**. Note that the <xref:System.Windows.Forms.Button> control spans the first and second columns.  
   
-4.  Set the <xref:System.Windows.Forms.Button> control's **RowSpan** property to **2**. Note that the <xref:System.Windows.Forms.Button> control spans the first and second rows.  
+4. Set the <xref:System.Windows.Forms.Button> control's **RowSpan** property to **2**. Note that the <xref:System.Windows.Forms.Button> control spans the first and second rows.  
   
-5.  Set the <xref:System.Windows.Forms.Button> control's **ColumnSpan** property to **1**. Note that the <xref:System.Windows.Forms.Button> control moves into the first column and spans the first and second rows.  
+5. Set the <xref:System.Windows.Forms.Button> control's **ColumnSpan** property to **1**. Note that the <xref:System.Windows.Forms.Button> control moves into the first column and spans the first and second rows.  
   
 ## See also
+
 - [TableLayoutPanel Control](tablelayoutpanel-control-windows-forms.md)

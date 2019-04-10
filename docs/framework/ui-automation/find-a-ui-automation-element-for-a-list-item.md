@@ -25,4 +25,5 @@ ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
  [!code-vb[UIAClient_snip#184](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#184)]  
   
 ## See also
+
 - [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)

@@ -19,11 +19,11 @@ A checksum value contains invalid hexadecimal digits or has an odd number of dig
   
 ## To correct this error  
   
-1.  If ASP.NET is generating the Visual Basic source file, restart the project build.  
+1. If ASP.NET is generating the Visual Basic source file, restart the project build.  
   
-2.  If this warning persists after restarting, reinstall ASP.NET and try the build again.  
+2. If this warning persists after restarting, reinstall ASP.NET and try the build again.  
   
-3.  If the warning still persists, or if you are not using ASP.NET, gather information about the circumstances and notify Microsoft Product Support Services.  
+3. If the warning still persists, or if you are not using ASP.NET, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See also
 

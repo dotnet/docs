@@ -22,4 +22,5 @@ This example shows how to create multiple subpaths in a <xref:System.Windows.Med
  (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)  
   
 ## See also
+
 - [Geometry Overview](geometry-overview.md)

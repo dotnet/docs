@@ -19,21 +19,21 @@ Using the <xref:System.Xml.Serialization.XmlSerializer>, you can generate more t
   
 ## To create an XML stream with an alternate element name  
   
-1.  Create an instance of the <xref:System.Xml.Serialization.XmlElementAttribute> class.  
+1. Create an instance of the <xref:System.Xml.Serialization.XmlElementAttribute> class.  
   
-2.  Set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> of the <xref:System.Xml.Serialization.XmlElementAttribute> to "BookID".  
+2. Set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> of the <xref:System.Xml.Serialization.XmlElementAttribute> to "BookID".  
   
-3.  Create an instance of the <xref:System.Xml.Serialization.XmlAttributes> class.  
+3. Create an instance of the <xref:System.Xml.Serialization.XmlAttributes> class.  
   
-4.  Add the `XmlElementAttribute` object to the collection accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of <xref:System.Xml.Serialization.XmlAttributes> .  
+4. Add the `XmlElementAttribute` object to the collection accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of <xref:System.Xml.Serialization.XmlAttributes> .  
   
-5.  Create an instance of the <xref:System.Xml.Serialization.XmlAttributeOverrides> class.  
+5. Create an instance of the <xref:System.Xml.Serialization.XmlAttributeOverrides> class.  
   
-6.  Add the `XmlAttributes` to the <xref:System.Xml.Serialization.XmlAttributeOverrides>, passing the type of the object to override and the name of the member being overridden.  
+6. Add the `XmlAttributes` to the <xref:System.Xml.Serialization.XmlAttributeOverrides>, passing the type of the object to override and the name of the member being overridden.  
   
-7.  Create an instance of the `XmlSerializer` class with `XmlAttributeOverrides`.  
+7. Create an instance of the `XmlSerializer` class with `XmlAttributeOverrides`.  
   
-8.  Create an instance of the `Book` class, and serialize or deserialize it.  
+8. Create an instance of the `Book` class, and serialize or deserialize it.  
   
 ## Example  
   
@@ -93,5 +93,4 @@ public class SerializeOverride()
 - [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

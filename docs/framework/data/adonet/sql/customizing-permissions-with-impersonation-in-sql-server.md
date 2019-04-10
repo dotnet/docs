@@ -28,15 +28,15 @@ EXECUTE AS USER = 'userName';
   
  There are three steps involved in using the EXECUTE AS clause in a procedure.  
   
-1.  Create a proxy user in the database that is not mapped to a login. This is not required, but it helps when managing permissions.  
+1. Create a proxy user in the database that is not mapped to a login. This is not required, but it helps when managing permissions.  
   
 ```  
 CREATE USER proxyUser WITHOUT LOGIN  
 ```  
   
-1.  Grant the proxy user the necessary permissions.  
+1. Grant the proxy user the necessary permissions.  
   
-2.  Add the EXECUTE AS clause to the stored procedure or user-defined function.  
+2. Add the EXECUTE AS clause to the stored procedure or user-defined function.  
   
 ```  
 CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...  
@@ -60,6 +60,7 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
 -   SELF. Executing as SELF executes in the security context of the creator of the stored procedure. This is equivalent to executing as a specified user, where the specified user is the person creating or altering the procedure.  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
 - [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)

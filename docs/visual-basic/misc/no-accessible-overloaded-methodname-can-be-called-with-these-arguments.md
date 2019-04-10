@@ -10,9 +10,9 @@ An overloaded method was called, but no method was matched with the list of prov
   
 ## To correct this error  
   
-1.  Specify `Option Strict Off`.  
+1. Specify `Option Strict Off`.  
   
-2.  Change the arguments to match one of the signatures of the overloaded method.  
+2. Change the arguments to match one of the signatures of the overloaded method.  
   
 ## See also
 

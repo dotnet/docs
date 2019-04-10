@@ -1,0 +1,552 @@
+- name: Windows Workflow Foundation
+  href: index.md
+  items:
+  - name: Guide to the Windows Workflow Documentation
+    href: guide-to-the-documentation.md
+  - name: What's New in Windows Workflow Foundation
+    href: whats-new.md
+  - name: What's New in Windows Workflow Foundation in .NET 4.5
+    href: whats-new-in-wf-in-dotnet.md
+  - name: Deprecated types in Windows Workflow Foundation
+    href: deprecated-types.md
+  - name: Windows Workflow Foundation Feature Specifics
+    href: feature-specifics.md
+  - name: Windows Workflow Conceptual Overview
+    href: conceptual-overview.md
+    items:
+    - name: Windows Workflow Overview
+      href: overview.md
+    - name: Fundamental Windows Workflow Concepts
+      href: fundamental-concepts.md
+    - name: Windows Workflow Architecture
+      href: architecture.md
+  - name: Getting Started Tutorial
+    href: getting-started-tutorial.md
+    items:
+    - name: "How to: Create an Activity"
+      href: how-to-create-an-activity.md
+    - name: "How to: Create a Workflow"
+      href: how-to-create-a-workflow.md
+      items:
+      - name: "How to: Create a Flowchart Workflow"
+        href: how-to-create-a-flowchart-workflow.md
+      - name: "How to: Create a Sequential Workflow"
+        href: how-to-create-a-sequential-workflow.md
+      - name: "How to: Create a State Machine Workflow"
+        href: how-to-create-a-state-machine-workflow.md
+    - name: "How to: Run a Workflow"
+      href: how-to-run-a-workflow.md
+    - name: "How to: Create and Run a Long Running Workflow"
+      href: how-to-create-and-run-a-long-running-workflow.md
+    - name: "How to: Create a Custom Tracking Participant"
+      href: how-to-create-a-custom-tracking-participant.md
+    - name: "How to: Host Multiple Versions of a Workflow Side-by-Side"
+      href: how-to-host-multiple-versions-of-a-workflow-side-by-side.md
+    - name: "How to: Update the Definition of a Running Workflow Instance"
+      href: how-to-update-the-definition-of-a-running-workflow-instance.md
+  - name: Windows Workflow Foundation Programming
+    href: programming.md
+    items:
+    - name: Designing Workflows
+      href: designing-workflows.md
+      items:
+      - name: Flowchart Workflows
+        href: flowchart-workflows.md
+      - name: Procedural Workflows
+        href: procedural-workflows.md
+      - name: State Machine Workflows
+        href: state-machine-workflows.md
+      - name: Authoring Workflows, Activities, and Expressions Using Imperative Code
+        href: authoring-workflows-activities-and-expressions-using-imperative-code.md
+    - name: Using and Creating Activities
+      href: using-and-creating-activities.md
+      items:
+      - name: Built-In Activity Library
+        href: net-framework-4-5-built-in-activity-library.md
+        items:
+        - name: Control Flow
+          href: control-flow-activities-in-wf.md
+          items:
+          - name: Pick Activity
+            href: pick-activity.md
+        - name: Flowchart
+          href: flowchart-activities-in-wf.md
+        - name: State Machine
+          href: state-machine-activities-in-wf.md
+        - name: Runtime
+          href: runtime-activities-in-wf.md
+        - name: Primitives
+          href: primitives-activities-in-wf.md
+        - name: Transaction
+          href: transaction-activities-in-wf.md
+        - name: Collection
+          href: collection-activities-in-wf.md
+        - name: Error Handling
+          href: error-handling-activities-in-wf.md
+        - name: Migration
+          href: migration-activity-in-wf.md
+      - name: Designing and Implementing Custom Activities
+        href: designing-and-implementing-custom-activities.md
+        items:
+        - name: Activity Authoring Options
+          href: activity-authoring-options-in-wf.md
+          items:
+          - name: Activity Base Class
+            href: workflow-activity-authoring-using-the-activity-class.md
+          - name: CodeActivity Base Class
+            href: workflow-activity-authoring-using-the-codeactivity-class.md
+          - name: NativeActivity Base Class
+            href: nativeactivity-base-class.md
+        - name: Using a custom activity
+          href: using-a-custom-activity.md
+        - name: Creating Asynchronous Activities
+          href: creating-asynchronous-activities-in-wf.md
+          items:
+          - name: Error handling in asynchronous activities
+            href: error-handling-in-asynchronous-activities.md
+        - name: Configuring Activity Validation
+          href: configuring-activity-validation.md
+          items:
+          - name: Required Arguments and Overload Groups
+            href: required-arguments-and-overload-groups.md
+          - name: Imperative Code-Based Validation
+            href: imperative-code-based-validation.md
+          - name: Declarative Constraints
+            href: declarative-constraints.md
+          - name: Invoking Activity Validation
+            href: invoking-activity-validation.md
+        - name: Creating an Activity at Runtime
+          href: creating-an-activity-at-runtime-with-dynamicactivity.md
+        - name: Workflow Execution Properties
+          href: workflow-execution-properties.md
+        - name: Using Activity Delegates
+          href: using-activity-delegates.md
+        - name: Using Activity Extensions
+          href: using-activity-extensions.md
+        - name: Consuming OData Feeds from a Workflow
+          href: consuming-odata-feeds-from-a-workflow.md
+        - name: Activity Definition Scoping and Visibility
+          href: activity-definition-scoping-and-visibility.md
+        - name: Creating custom flow control activities
+          href: creating-custom-flow-control-activities.md
+    - name: Windows Workflow Foundation Data Model
+      href: data-model.md
+      items:
+      - name: Variables and Arguments
+        href: variables-and-arguments.md
+      - name: Expressions
+        href: expressions.md
+      - name: C# Expressions
+        href: csharp-expressions.md
+      - name: Properties vs. Arguments
+        href: properties-vs-arguments.md
+      - name: Exposing data with CacheMetadata
+        href: exposing-data-with-cachemetadata.md
+    - name: Waiting for Input in a Workflow
+      href: waiting-for-input-in-a-workflow.md
+      items:
+      - name: Bookmarks
+        href: bookmarks.md
+    - name: Exceptions, Transactions, and Compensation
+      href: exceptions-transactions-and-compensation.md
+      items:
+      - name: Exceptions
+        href: exceptions.md
+      - name: Transactions
+        href: workflow-transactions.md
+      - name: Compensation
+        href: compensation.md
+      - name: Cancellation
+        href: modeling-cancellation-behavior-in-workflows.md
+      - name: Debugging Workflows
+        href: debugging-workflows.md
+    - name: Hosting Workflows
+      href: hosting-workflows.md
+      items:
+      - name: Workflow Hosting Options
+        href: workflow-hosting-options.md
+      - name: Using WorkflowInvoker and WorkflowApplication
+        href: using-workflowinvoker-and-workflowapplication.md
+      - name: Activity Tree Inspection
+        href: activity-tree-inspection.md
+      - name: Serializing Workflows and Activities to and from XAML
+        href: serializing-workflows-and-activities-to-and-from-xaml.md
+      - name: Using WorkflowIdentity and Versioning
+        href: using-workflowidentity-and-versioning.md
+    - name: Dynamic Update
+      href: dynamic-update.md
+    - name: Contract First Workflow Service Development
+      href: contract-first-workflow-service-development.md
+    - name: "How to: Create a workflow service that consumes an existing service contract"
+      href: how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md
+    - name: Workflow Persistence
+      href: workflow-persistence.md
+      items:
+      - name: SQL Workflow Instance Store
+        href: sql-workflow-instance-store.md
+        items:
+        - name: Properties of SQL Workflow Instance Store
+          href: properties-of-sql-workflow-instance-store.md
+          items:
+          - name: Instance Encoding Option
+            href: instance-encoding-option.md
+          - name: Instance Completion Action
+            href: instance-completion-action.md
+          - name: Instance Locked Exception Action
+            href: instance-locked-exception-action.md
+          - name: Host Lock Renewal Period
+            href: host-lock-renewal-period.md
+          - name: Runnable Instances Detection Period
+            href: runnable-instances-detection-period.md
+          - name: Connection String and Connection String Name
+            href: connection-string-and-connection-string-name.md
+        - name: "How to: Enable SQL Persistence for Workflows and Workflow Services"
+          href: how-to-enable-sql-persistence-for-workflows-and-workflow-services.md
+        - name: Instance Activation
+          href: instance-activation.md
+        - name: Support for Queries
+          href: support-for-queries.md
+        - name: Store Extensibility
+          href: store-extensibility.md
+        - name: Security
+          href: security.md
+        - name: SQL Server Persistence Database
+          href: sql-server-persistence-database.md
+          items:
+          - name: Persistence Database Schema
+            href: persistence-database-schema.md
+          - name: "How to: Deserialize Instance Data Properties"
+            href: how-to-deserialize-instance-data-properties.md
+          - name: "How to: Query for Non-persisted Instances"
+            href: how-to-query-for-non-persisted-instances.md
+      - name: Instance Stores
+        href: instance-stores.md
+        items:
+        - name: "How to: Enable Persistence for Workflows and Workflow Services"
+          href: how-to-enable-persistence-for-workflows-and-workflow-services.md
+        - name: "How to: Create a Custom Instance Store"
+          href: how-to-create-a-custom-instance-store.md
+      - name: Persistence Participants
+        href: persistence-participants.md
+        items:
+        - name: "How to: Create a Custom Persistence Participant"
+          href: how-to-create-a-custom-persistence-participant.md
+      - name: Persistence Best Practices
+        href: persistence-best-practices.md
+      - name: Non-Persisted Workflow Instances
+        href: non-persisted-workflow-instances.md
+      - name: Pausing and Resuming a Workflow
+        href: pausing-and-resuming-a-workflow.md
+    - name: Migration Guidance
+      href: wf-migration-guidance.md
+      items:
+      - name: Migration Guidance
+        href: migration-guidance.md
+      - name: Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity
+        href: net-framework-3-0-wf-in-net-framework-4-interop.md
+    - name: Workflow Tracking and Tracing
+      href: workflow-tracking-and-tracing.md
+      items:
+      - name: Tracking Records
+        href: tracking-records.md
+      - name: Tracking Profiles
+        href: tracking-profiles.md
+      - name: Tracking Participants
+        href: tracking-participants.md
+      - name: Configuring Tracking for a Workflow
+        href: configuring-tracking-for-a-workflow.md
+      - name: Using Tracking to Troubleshoot Applications
+        href: using-tracking-to-troubleshoot-applications.md
+      - name: Workflow Tracing
+        href: workflow-tracing.md
+      - name: Tracking Events Reference
+        href: tracking-events-reference.md
+        items:
+        - name: 100 - WorkflowInstanceRecord
+          href: 100-workflowinstancerecord.md
+        - name: 101 - WorkflowInstanceUnhandledExceptionRecord
+          href: 101-workflowinstanceunhandledexceptionrecord.md
+        - name: 102 - WorkflowInstanceAbortedRecord
+          href: 102-workflowinstanceabortedrecord.md
+        - name: 103 - ActivityStateRecord
+          href: 103-activitystaterecord.md
+        - name: 104 - ActivityScheduledRecord
+          href: 104-activityscheduledrecord.md
+        - name: 105 - FaultPropagationRecord
+          href: 105-faultpropagationrecord.md
+        - name: 106 - CancelRequestRecord
+          href: 106-cancelrequestrecord.md
+        - name: 107 -- BookmarkResumptionRecord
+          href: 107-bookmarkresumptionrecord.md
+        - name: 108 - CustomTrackingRecordInfo
+          href: 108-customtrackingrecordinfo.md
+        - name: 110 - CustomTrackingRecordWarning
+          href: 110-customtrackingrecordwarning.md
+        - name: 111 - CustomTrackingRecordError
+          href: 111-customtrackingrecorderror.md
+        - name: 112 - WorkflowInstanceSuspendedRecord
+          href: 112-workflowinstancesuspendedrecord.md
+        - name: 113 - WorkflowInstanceTerminatedRecord
+          href: 113-workflowinstanceterminatedrecord.md
+        - name: 114 - WorkflowInstanceRecordWithId
+          href: 114-workflowinstancerecordwithid.md
+        - name: 115 - WorkflowInstanceAbortedRecordWithId
+          href: 115-workflowinstanceabortedrecordwithid.md
+        - name: 116 - WorkflowInstanceSuspendedRecordWithId
+          href: 116-workflowinstancesuspendedrecordwithid.md
+        - name: 117 - WorkflowInstanceTerminatedRecordWithId
+          href: 117-workflowinstanceterminatedrecordwithid.md
+        - name: 118 - WorkflowInstanceUnhandledExceptionRecordWithId
+          href: 118-workflowinstanceunhandledexceptionrecordwithid.md
+        - name: 119 - WorkflowInstanceUpdatedRecord
+          href: 119-workflowinstanceupdatedrecord.md
+        - name: 225 - TraceCorrelationKeys
+          href: 225-tracecorrelationkeys.md
+        - name: 440 - StartSignpostEvent1
+          href: 440-startsignpostevent.md
+        - name: 441- StopSignpostEvent1
+          href: 441-stopsignpostevent.md
+        - name: 1001 - WorkflowApplicationCompleted
+          href: 1001-workflowapplicationcompleted.md
+        - name: 1002 - WorkflowApplicationTerminated
+          href: 1002-workflowapplicationterminated.md
+        - name: 1003 - WorkflowInstanceCanceled
+          href: 1003-workflowinstancecanceled.md
+        - name: 1004 - WorkflowInstanceAborted
+          href: 1004-workflowinstanceaborted.md
+        - name: 1005 - WorkflowApplicationIdled
+          href: 1005-workflowapplicationidled.md
+        - name: 1006 - WorkflowApplicationUnhandledException
+          href: 1006-workflowapplicationunhandledexception.md
+        - name: 1007 - WorkflowApplicationPersisted
+          href: 1007-workflowapplicationpersisted.md
+        - name: 1008 - WorkflowApplicationUnloaded
+          href: 1008-workflowapplicationunloaded.md
+        - name: 1009 - ActivityScheduled
+          href: 1009-activityscheduled.md
+        - name: 1010 - ActivityCompleted
+          href: 1010-activitycompleted.md
+        - name: 1011 - ScheduleExecuteActivityWorkItem
+          href: 1011-scheduleexecuteactivityworkitem.md
+        - name: 1012 - StartExecuteActivityWorkItem
+          href: 1012-startexecuteactivityworkitem.md
+        - name: 1013 - CompleteExecuteActivityWorkItem
+          href: 1013-completeexecuteactivityworkitem.md
+        - name: 1014 - ScheduleCompletionWorkItem
+          href: 1014-schedulecompletionworkitem.md
+        - name: 1015 - StartCompletionWorkItem
+          href: 1015-startcompletionworkitem.md
+        - name: 1016 - CompleteCompletionWorkItem
+          href: 1016-completecompletionworkitem.md
+        - name: 1017 - ScheduleCancelActivityWorkItem
+          href: 1017-schedulecancelactivityworkitem.md
+        - name: 1018 - StartCancelActivityWorkItem
+          href: 1018-startcancelactivityworkitem.md
+        - name: 1019 - CompleteCancelActivityWorkItem
+          href: 1019-completecancelactivityworkitem.md
+        - name: 1020 - CreateBookmark
+          href: 1020-createbookmark.md
+        - name: 1021 - ScheduleBookmarkWorkItem
+          href: 1021-schedulebookmarkworkitem.md
+        - name: 1022 - StartBookmarkWorkItem
+          href: 1022-startbookmarkworkitem.md
+        - name: 1023 - CompleteBookmarkWorkItem
+          href: 1023-completebookmarkworkitem.md
+        - name: 1024 - CreateBookmarkScope
+          href: 1024-createbookmarkscope.md
+        - name: 1025 - BookmarkScopeInitialized
+          href: 1025-bookmarkscopeinitialized.md
+        - name: 1026 - ScheduleTransactionContextWorkItem
+          href: 1026-scheduletransactioncontextworkitem.md
+        - name: 1027 - StartTransactionContextWorkItem
+          href: 1027-starttransactioncontextworkitem.md
+        - name: 1028 - CompleteTransactionContextWorkItem
+          href: 1028-completetransactioncontextworkitem.md
+        - name: 1029 - ScheduleFaultWorkItem
+          href: 1029-schedulefaultworkitem.md
+        - name: 1030 - StartFaultWorkItem
+          href: 1030-startfaultworkitem.md
+        - name: 1031 - CompleteFaultWorkItem
+          href: 1031-completefaultworkitem.md
+        - name: 1032 - ScheduleRuntimeWorkItem
+          href: 1032-scheduleruntimeworkitem.md
+        - name: 1033 - StartRuntimeWorkItem
+          href: 1033-startruntimeworkitem.md
+        - name: 1034 - CompleteRuntimeWorkItem
+          href: 1034-completeruntimeworkitem.md
+        - name: 1035 - RuntimeTransactionSet
+          href: 1035-runtimetransactionset.md
+        - name: 1036 - RuntimeTransactionCompletionRequested
+          href: 1036-runtimetransactioncompletionrequested.md
+        - name: 1037 - RuntimeTransactionComplete
+          href: 1037-runtimetransactioncomplete.md
+        - name: 1038 - EnterNoPersistBlock
+          href: 1038-enternopersistblock.md
+        - name: 1039 - ExitNoPersistBlock
+          href: 1039-exitnopersistblock.md
+        - name: 1040 - InArgumentBound
+          href: 1040-inargumentbound.md
+        - name: 1041 - WorkflowApplicationPersistableIdle
+          href: 1041-workflowapplicationpersistableidle.md
+        - name: 1101 - WorkflowActivityStart
+          href: 1101-workflowactivitystart.md
+        - name: 1102 - WorkflowActivityStop
+          href: 1102-workflowactivitystop.md
+        - name: 1103 - WorkflowActivitySuspend
+          href: 1103-workflowactivitysuspend.md
+        - name: 1104 - WorkflowActivityResume
+          href: 1104-workflowactivityresume.md
+        - name: 1124 - InvokeMethodIsStatic
+          href: 1124-invokemethodisstatic.md
+        - name: 1125 - InvokeMethodIsNotStatic
+          href: 1125-invokemethodisnotstatic.md
+        - name: 1126 - InvokedMethodThrewException
+          href: 1126-invokedmethodthrewexception.md
+        - name: 1131 - InvokeMethodUseAsyncPattern
+          href: 1131-invokemethoduseasyncpattern.md
+        - name: 1132 - InvokeMethodDoesNotUseAsyncPattern
+          href: 1132-invokemethoddoesnotuseasyncpattern.md
+        - name: 1140 - FlowchartStart
+          href: 1140-flowchartstart.md
+        - name: 1141 - FlowchartEmpty
+          href: 1141-flowchartempty.md
+        - name: 1143 - FlowchartNextNull
+          href: 1143-flowchartnextnull.md
+        - name: 1146 - FlowchartSwitchCase
+          href: 1146-flowchartswitchcase.md
+        - name: 1147 - FlowchartSwitchDefault
+          href: 1147-flowchartswitchdefault.md
+        - name: 1148 - FlowchartSwitchCaseNotFound
+          href: 1148-flowchartswitchcasenotfound.md
+        - name: 1150 - CompensationState
+          href: 1150-compensationstate.md
+        - name: 1223 - SwitchCaseNotFound
+          href: 1223-switchcasenotfound.md
+        - name: 1449 - WfMessageReceived
+          href: 1449-wfmessagereceived.md
+        - name: 1450 - WfMessageSent
+          href: 1450-wfmessagesent.md
+        - name: 2021 - ExecuteWorkItemStart
+          href: 2021-executeworkitemstart.md
+        - name: 2022 - ExecuteWorkItemStop
+          href: 2022-executeworkitemstop.md
+        - name: 2023 - SendMessageChannelCacheMiss
+          href: 2023-sendmessagechannelcachemiss.md
+        - name: 2024 - InternalCacheMetadataStart
+          href: 2024-internalcachemetadatastart.md
+        - name: 2025 - InternalCacheMetadataStop
+          href: 2025-internalcachemetadatastop.md
+        - name: 2026 - CompileVbExpressionStart
+          href: 2026-compilevbexpressionstart.md
+        - name: 2027 - CacheRootMetadataStart
+          href: 2027-cacherootmetadatastart.md
+        - name: 2028 - CacheRootMetadataStop
+          href: 2028-cacherootmetadatastop.md
+        - name: 2029 - CompileVbExpressionStop
+          href: 2029-compilevbexpressionstop.md
+        - name: 2576 - TryCatchExceptionFromTry
+          href: 2576-trycatchexceptionfromtry.md
+        - name: 2577 - TryCatchExceptionDuringCancelation
+          href: 2577-trycatchexceptionduringcancelation.md
+        - name: 2578 - TryCatchExceptionFromCatchOrFinally
+          href: 2578-trycatchexceptionfromcatchorfinally.md
+        - name: 3501 - InferredContractDescription
+          href: 3501-inferredcontractdescription.md
+        - name: 3502 - InferredOperationDescription
+          href: 3502-inferredoperationdescription.md
+        - name: 3503 - DuplicateCorrelationQuery
+          href: 3503-duplicatecorrelationquery.md
+        - name: 3507 - ServiceEndpointAdded
+          href: 3507-serviceendpointadded.md
+        - name: 3508 - TrackingProfileNotFound
+          href: 3508-trackingprofilenotfound.md
+        - name: 3550 - BufferOutOfOrderMessageNoInstance
+          href: 3550-bufferoutofordermessagenoinstance.md
+        - name: 3551 - BufferOutOfOrderMessageNoBookmark
+          href: 3551-bufferoutofordermessagenobookmark.md
+        - name: 3552 - MaxPendingMessagesPerChannelExceeded
+          href: 3552-maxpendingmessagesperchannelexceeded.md
+        - name: 3557 - TransactedReceiveScopeEndCommitFailed
+          href: 3557-transactedreceivescopeendcommitfailed.md
+        - name: 4201 - EndSqlCommandExecute
+          href: 4201-endsqlcommandexecute.md
+        - name: 4202 - StartSqlCommandExecute
+          href: 4202-startsqlcommandexecute.md
+        - name: 4203 - RenewLockSystemError
+          href: 4203-renewlocksystemerror.md
+        - name: 4205 - FoundProcessingError
+          href: 4205-foundprocessingerror.md
+        - name: 4206 - UnlockInstanceException
+          href: 4206-unlockinstanceexception.md
+        - name: 4207 - MaximumRetriesExceededForSqlCommand
+          href: 4207-maximumretriesexceededforsqlcommand.md
+        - name: 4208 - RetryingSqlCommandDueToSqlError
+          href: 4208-retryingsqlcommandduetosqlerror.md
+        - name: 4209 - TimeoutOpeningSqlConnection
+          href: 4209-timeoutopeningsqlconnection.md
+        - name: 4210 - SqlExceptionCaught
+          href: 4210-sqlexceptioncaught.md
+        - name: 4211 - QueuingSqlRetry
+          href: 4211-queuingsqlretry.md
+        - name: 4212 - LockRetryTimeout
+          href: 4212-lockretrytimeout.md
+        - name: 4213 - RunnableInstancesDetectionError
+          href: 4213-runnableinstancesdetectionerror.md
+        - name: 4214 - InstanceLocksRecoveryError
+          href: 4214-instancelocksrecoveryerror.md
+        - name: 39456 - TrackingRecordDropped
+          href: 39456-trackingrecorddropped.md
+        - name: 39457 - TrackingRecordRaised
+          href: 39457-trackingrecordraised.md
+        - name: 39458 - TrackingRecordTruncated
+          href: 39458-trackingrecordtruncated.md
+        - name: 39459 - TrackingDataExtracted
+          href: 39459-trackingdataextracted.md
+        - name: 39460 - TrackingValueNotSerializable
+          href: 39460-trackingvaluenotserializable.md
+        - name: 57398 - MaxInstancesExceeded
+          href: 57398-maxinstancesexceeded.md
+      - name: Custom Tracking Records
+        href: custom-tracking-records.md
+      - name: Variable and Argument Tracking
+        href: variable-and-argument-tracking.md
+    - name: Workflow Security
+      href: workflow-security.md
+    - name: Windows Workflow Foundation 4 Performance
+      href: performance.md
+  - name: Extending Windows Workflow Foundation
+    href: extend.md
+    items:
+    - name: Customizing the Workflow Design Experience
+      href: customizing-the-workflow-design-experience.md
+      items:
+      - name: Using Custom Activity Designers and Templates
+        href: using-custom-activity-designers-and-templates.md
+        items:
+        - name: "How to: Create a Custom Activity Designer"
+          href: how-to-create-a-custom-activity-designer.md
+        - name: "How to: Create a Custom Activity Template"
+          href: how-to-create-a-custom-activity-template.md
+        - name: Using the ModelItem Editing Context
+          href: using-the-modelitem-editing-context.md
+        - name: Binding a custom activity property to a designer control
+          href: binding-a-custom-activity-property-to-a-designer-control.md
+      - name: Rehosting the Workflow Designer
+        href: rehosting-the-workflow-designer.md
+        items:
+        - name: "Task 1: Create a New Windows Presentation Foundation Application"
+          href: task-1-create-a-new-wpf-app.md
+        - name: "Task 2: Host the Workflow Designer"
+          href: task-2-host-the-workflow-designer.md
+        - name: "Task 3: Create the Toolbox and PropertyGrid Panes"
+          href: task-3-create-the-toolbox-and-propertygrid-panes.md
+        - name: "How to: Display Validation Errors in a Rehosted Designer"
+          href: how-to-display-validation-errors-in-a-rehosted-designer.md
+        - name: Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer
+          href: wf-features-in-the-rehosted-workflow-designer.md
+      - name: Using a Custom Expression Editor
+        href: using-a-custom-expression-editor.md
+  - name: Windows Workflow Foundation Glossary
+    href: glossary.md
+  - name: Windows Workflow Samples
+    href: ./samples/

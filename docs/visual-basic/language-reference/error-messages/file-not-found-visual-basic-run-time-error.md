@@ -16,7 +16,8 @@ The file was not found where specified. The error has the following possible cau
   
 ## To correct this error  
   
-1.  Check the spelling of the file name and the path specification.  
+1. Check the spelling of the file name and the path specification.  
   
 ## See also
+
 - [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)

@@ -32,6 +32,7 @@ This section provides LINQ to DataSet programming examples in method-based query
  The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.GroupJoin%2A> and <xref:System.Linq.Enumerable.Join%2A> methods to query a <xref:System.Data.DataSet>.  
   
 ## See also
+
 - [Query Expression Examples](../../../../docs/framework/data/adonet/query-expression-examples-linq-to-dataset.md)
 - [DataSet-Specific Operator Examples](../../../../docs/framework/data/adonet/dataset-specific-operator-examples-linq-to-dataset.md)
 - [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)

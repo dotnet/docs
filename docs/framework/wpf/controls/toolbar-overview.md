@@ -8,8 +8,7 @@ ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 ---
 # ToolBar Overview
 <xref:System.Windows.Controls.ToolBar> controls are containers for a group of commands or controls which are typically related in their function. A <xref:System.Windows.Controls.ToolBar> usually contains buttons which invoke commands.  
-  
-  
+
 <a name="ToolBarControl"></a>   
 ## ToolBar Control  
  The <xref:System.Windows.Controls.ToolBar> control takes its name from the bar-like arrangement of buttons or other controls into a single row or column. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.ToolBar> controls provide an overflow mechanism which places any items that do not fit naturally within a size-constrained <xref:System.Windows.Controls.ToolBar> into a special overflow area. Also, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.ToolBar> controls are usually used with the related <xref:System.Windows.Controls.ToolBarTray> control, which provides special layout behavior as well as support for user-initiated sizing and arranging of toolbars.  
@@ -22,10 +21,9 @@ ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
   
 <a name="ToolBars_with_Overflow_Items"></a>   
 ## ToolBars with Overflow Items  
- Often <xref:System.Windows.Controls.ToolBar> controls contain more items than can fit into the toolbar's size. When this happens, the <xref:System.Windows.Controls.ToolBar> displays an overflow button. To see the overflow items, a user clicks the overflow button and the items are shown in a pop-up window below the <xref:System.Windows.Controls.ToolBar>. The following graphic shows a <xref:System.Windows.Controls.ToolBar> with overflow items.  
+ Often <xref:System.Windows.Controls.ToolBar> controls contain more items than can fit into the toolbar's size. When this happens, the <xref:System.Windows.Controls.ToolBar> displays an overflow button. To see the overflow items, a user clicks the overflow button and the items are shown in a pop-up window below the <xref:System.Windows.Controls.ToolBar>. The following graphic shows a <xref:System.Windows.Controls.ToolBar> with overflow items:  
   
- ![ToolBar with overflow](./media/toolbarwithoverflowitem.png "ToolbarWithOverflowItem")  
-Toolbar with Overflow Items  
+ ![Screenshot that shows a toolbar with overflow items.](./media/toolbar-overview/toolbar-overflow-items.png)  
   
  You can specify when an item on a toolbar is placed on the overflow panel by setting the <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=nameWithType> attached property to <xref:System.Windows.Controls.OverflowMode.Always?displayProperty=nameWithType>, <xref:System.Windows.Controls.OverflowMode.Never?displayProperty=nameWithType>, or <xref:System.Windows.Controls.OverflowMode.AsNeeded?displayProperty=nameWithType>. The following example specifies that the last four buttons on the toolbar should always be on the overflow panel.  
   
@@ -36,6 +34,7 @@ Toolbar with Overflow Items
  [ToolBar Styles and Templates](toolbar-styles-and-templates.md).  
   
 ## See also
+
 - <xref:System.Windows.Controls.Primitives.ToolBarPanel>
 - <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>
 - [Style Controls on a ToolBar](how-to-style-controls-on-a-toolbar.md)

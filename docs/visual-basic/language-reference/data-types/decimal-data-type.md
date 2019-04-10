@@ -73,6 +73,7 @@ Dim bigDec3 As Decimal = 9223372036854775808D  ' No overflow.
  For `bigDec3`, the literal type character `D` solves the problem by forcing the compiler to interpret the literal as a `Decimal` instead of as a `Long`.  
   
 ## See also
+
 - <xref:System.Decimal?displayProperty=nameWithType>
 - <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>
 - <xref:System.Math.Round%2A?displayProperty=nameWithType>

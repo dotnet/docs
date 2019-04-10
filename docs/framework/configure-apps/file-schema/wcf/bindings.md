@@ -24,15 +24,15 @@ You can use the `bindings` element to configure a collection of standard and cus
   
  The order in which elements appear in the stack matters, because it is the order in which operations are applied to the message. The required order of stack elements is the following:  
   
-1.  Transactions (optional)  
+1. Transactions (optional)  
   
-2.  Reliable messaging (optional)  
+2. Reliable messaging (optional)  
   
-3.  Security (optional)  
+3. Security (optional)  
   
-4.  Encoder  
+4. Encoder  
   
-5.  Transport  
+5. Transport  
   
  Custom bindings are identified by their `name` attribute. For more information on custom bindings, see [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md).  
   

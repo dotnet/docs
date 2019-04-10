@@ -13,8 +13,7 @@ A resource is an object that can be reused in different places in your applicati
   
 > [!NOTE]
 >  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
-  
-  
+
 <a name="usingresources"></a>   
 ## Using Resources in XAML  
  The following example defines a <xref:System.Windows.Media.SolidColorBrush> as a resource on the root element of a page. The example then references the resource and uses it to set properties of several child elements, including an <xref:System.Windows.Shapes.Ellipse>, a <xref:System.Windows.Controls.TextBlock>, and a <xref:System.Windows.Controls.Button>.  
@@ -64,11 +63,11 @@ A resource is an object that can be reused in different places in your applicati
   
 #### Static resource lookup behavior  
   
-1.  The lookup process checks for the requested key within the resource dictionary defined by the element that sets the property.  
+1. The lookup process checks for the requested key within the resource dictionary defined by the element that sets the property.  
   
-2.  The lookup process then traverses the logical tree upward, to the parent element and its resource dictionary. This continues until the root element is reached.  
+2. The lookup process then traverses the logical tree upward, to the parent element and its resource dictionary. This continues until the root element is reached.  
   
-3.  Next, application resources are checked. Application resources are those resources within the resource dictionary that is defined by the <xref:System.Windows.Application> object for your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
+3. Next, application resources are checked. Application resources are those resources within the resource dictionary that is defined by the <xref:System.Windows.Application> object for your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
   
  Static resource references from within a resource dictionary must reference a resource that has already been defined lexically before the resource reference. Forward references cannot be resolved by a static resource reference. For this reason, if you use static resource references, you must design your resource dictionary structure such that resources intended for by-resource use are defined at or near the beginning of each respective resource dictionary.  
   
@@ -96,19 +95,19 @@ A resource is an object that can be reused in different places in your applicati
 #### Dynamic resource lookup behavior  
  Resource lookup behavior for a dynamic resource reference parallels the lookup behavior in your code if you call <xref:System.Windows.FrameworkElement.FindResource%2A> or <xref:System.Windows.FrameworkElement.SetResourceReference%2A>.  
   
-1.  The lookup process checks for the requested key within the resource dictionary defined by the element that sets the property.  
+1. The lookup process checks for the requested key within the resource dictionary defined by the element that sets the property.  
   
     -   If the element defines a <xref:System.Windows.FrameworkElement.Style%2A> property, the <xref:System.Windows.Style.Resources%2A> dictionary within the <xref:System.Windows.Style> is checked.  
   
     -   If the element defines a <xref:System.Windows.Controls.Control.Template%2A> property, the <xref:System.Windows.FrameworkTemplate.Resources%2A> dictionary within the <xref:System.Windows.FrameworkTemplate> is checked.  
   
-2.  The lookup process then traverses the logical tree upward, to the parent element and its resource dictionary. This continues until the root element is reached.  
+2. The lookup process then traverses the logical tree upward, to the parent element and its resource dictionary. This continues until the root element is reached.  
   
-3.  Next, application resources are checked. Application resources are those resources within the resource dictionary that is defined by the <xref:System.Windows.Application> object for your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
+3. Next, application resources are checked. Application resources are those resources within the resource dictionary that is defined by the <xref:System.Windows.Application> object for your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
   
-4.  Theme resource dictionary is checked, for the currently active theme. If the theme changes at runtime, the value is reevaluated.  
+4. Theme resource dictionary is checked, for the currently active theme. If the theme changes at runtime, the value is reevaluated.  
   
-5.  System resources are checked.  
+5. System resources are checked.  
   
  Exception behavior (if any) varies:  
   
@@ -148,6 +147,7 @@ A resource is an object that can be reused in different places in your applicati
  <xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../xaml-services/x-type-markup-extension.md). For details, see [Data Templating Overview](../data/data-templating-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.ResourceDictionary>
 - [Application Resources](optimizing-performance-application-resources.md)
 - [Resources and Code](resources-and-code.md)

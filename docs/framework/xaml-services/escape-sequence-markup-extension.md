@@ -53,5 +53,6 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
  [!code-xaml[XLINQExample#StackPanelResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
   
 ## See also
+
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
 - [XML Character Entities and XAML](xml-character-entities-and-xaml.md)

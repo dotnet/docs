@@ -30,24 +30,25 @@ You need Visual Studio to complete this walkthrough.
   
 ## Implementing the Windows Forms Composite Control  
  The Windows Forms composite control used in this example is a simple data-entry form. This form takes the user's name and address and then uses a custom event to return that information to the host. The following illustration shows the rendered control.  
-  
- ![Simple Windows Forms control](./media/wfcontrol.gif "WFControl")  
-Windows Forms composite control  
+
+ The following image shows a Windows Forms composite control:  
+
+ ![Screenshot that shows a simple Windows Forms control.](./media/walkthrough-hosting-a-windows-forms-composite-control-in-wpf/windows-forms-control.gif)  
   
 ### Creating the Project  
  To start the project:  
   
-1.  Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
   
-2.  In the Window category, select the **Windows Forms Control Library** template.  
+2. In the Window category, select the **Windows Forms Control Library** template.  
   
-3.  Name the new project `MyControls`.  
+3. Name the new project `MyControls`.  
   
-4.  For the location, specify a conveniently named top-level folder, such as `WpfHostingWindowsFormsControl`. Later, you will put the host application in this folder.  
+4. For the location, specify a conveniently named top-level folder, such as `WpfHostingWindowsFormsControl`. Later, you will put the host application in this folder.  
   
-5.  Click **OK** to create the project. The default project contains a single control named `UserControl1`.  
+5. Click **OK** to create the project. The default project contains a single control named `UserControl1`.  
   
-6.  In Solution Explorer, rename `UserControl1` to `MyControl1`.  
+6. In Solution Explorer, rename `UserControl1` to `MyControl1`.  
   
  Your project should have references to the following system DLLs. If any of these DLLs are not included by default, add them to the project.  
   
@@ -105,48 +106,49 @@ Windows Forms composite control
 ### Giving the Assembly a Strong Name and Building the Assembly
  For this assembly to be referenced by a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, it must have a strong name. To create a strong name, create a key file with Sn.exe and add it to your project.
 
-1.  Open a [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] command prompt. To do so, click the **Start** menu, and then select **All Programs/Microsoft Visual Studio 2010/Visual Studio Tools/Visual Studio Command Prompt**. This launches a console window with customized environment variables.
+1. Open a [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] command prompt. To do so, click the **Start** menu, and then select **All Programs/Microsoft Visual Studio 2010/Visual Studio Tools/Visual Studio Command Prompt**. This launches a console window with customized environment variables.
 
-2.  At the command prompt, use the `cd` command to go to your project folder.
+2. At the command prompt, use the `cd` command to go to your project folder.
 
-3.  Generate a key file named MyControls.snk by running the following command.
+3. Generate a key file named MyControls.snk by running the following command.
 
     ```
     Sn.exe -k MyControls.snk
     ```
 
-4.  To include the key file in your project, right-click the project name in Solution Explorer and then click **Properties**. In the Project Designer, click the **Signing** tab, select the **Sign the assembly** check box and then browse to your key file.
+4. To include the key file in your project, right-click the project name in Solution Explorer and then click **Properties**. In the Project Designer, click the **Signing** tab, select the **Sign the assembly** check box and then browse to your key file.
 
-5.  Build the solution. The build will produce a DLL named MyControls.dll.
+5. Build the solution. The build will produce a DLL named MyControls.dll.
 
 ## Implementing the WPF Host Application
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] host application uses the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control to host `MyControl1`. The application handles the `OnButtonClick` event to receive the data from the control. It also has a collection of option buttons that enable you to change some of the control's properties from the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The following illustration shows the finished application.
 
- ![A control embedded in a WPF page](./media/avalonhost.gif "AvalonHost")
-The complete application, showing the control embedded in the WPF application
+The following image shows the complete application, including the control embedded in the WPF application:
+
+ ![Screenshot that shows a control embedded in a WPF page.](./media/walkthrough-hosting-a-windows-forms-composite-control-in-wpf/windows-presentation-foundation-page-control.gif)
 
 ### Creating the Project
  To start the project:
 
-1.  Open [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and select **New Project**.
+1. Open [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and select **New Project**.
 
-2.  In the Window category, select the **WPF Application** template.
+2. In the Window category, select the **WPF Application** template.
 
-3.  Name the new project `WpfHost`.
+3. Name the new project `WpfHost`.
 
-4.  For the location, specify the same top-level folder that contains the MyControls project.
+4. For the location, specify the same top-level folder that contains the MyControls project.
 
-5.  Click **OK** to create the project.
+5. Click **OK** to create the project.
 
  You also need to add references to the DLL that contains `MyControl1` and other assemblies.
 
-1.  Right-click the project name in Solution Explorer and select **Add Reference**.
+1. Right-click the project name in Solution Explorer and select **Add Reference**.
 
-2.  Click the **Browse** tab, and browse to the folder that contains MyControls.dll. For this walkthrough, this folder is MyControls\bin\Debug.
+2. Click the **Browse** tab, and browse to the folder that contains MyControls.dll. For this walkthrough, this folder is MyControls\bin\Debug.
 
-3.  Select MyControls.dll, and then click **OK**.
+3. Select MyControls.dll, and then click **OK**.
 
-4.  Add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
+4. Add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
 ### Implementing the Basic Layout
  The [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] of the host application is implemented in MainWindow.xaml. This file contains [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] markup that defines the layout, and hosts the Windows Forms control. The application is divided into three regions:
@@ -231,6 +233,7 @@ using MyControls;
  Build and run the application. Add some text in the Windows Forms composite control and then click **OK**. The text appears in the labels. Click the different radio buttons to see the effect on the control.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

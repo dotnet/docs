@@ -17,19 +17,19 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the ExpressionTextBoxSample.sln file.
+1. Using Visual Studio 2010, open the ExpressionTextBoxSample.sln file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
 #### To run this sample
 
-1.  Add a new Workflow Console Application to the solution.
+1. Add a new Workflow Console Application to the solution.
 
-2.  Add a reference to the **ExpressionTextBoxSample** project from the new Workflow Console Application project.
+2. Add a reference to the **ExpressionTextBoxSample** project from the new Workflow Console Application project.
 
-3.  Build the solution.
+3. Build the solution.
 
-4.  Drag the **MultiAssign** activity from the toolbox and drop it into the workflow.
+4. Drag the **MultiAssign** activity from the toolbox and drop it into the workflow.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -41,5 +41,6 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\ExpressionTextBox`  
   
 ## See also
+
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>
 - [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

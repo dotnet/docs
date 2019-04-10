@@ -10,4 +10,4 @@ The supplied index value falls outside the valid range, which is 1 to the size o
   
 ## To correct this error  
   
-1.  Change the supplied value to a valid one.  
+1. Change the supplied value to a valid one.  

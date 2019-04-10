@@ -49,6 +49,7 @@ The internal architecture of [!INCLUDE[TLA2#tla_winclient](../../../../includes/
  For more information on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering tiers, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Layout and Design](optimizing-performance-layout-and-design.md)

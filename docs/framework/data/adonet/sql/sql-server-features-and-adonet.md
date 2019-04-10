@@ -10,7 +10,7 @@ The topics in this section discuss features in SQL Server that are targeted at d
   
  **SQL Server Books Online**  
   
-1.  [Development (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=115245)  
+1. [Development (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=115245)  
   
 ## In This Section  
  [Enumerating Instances of SQL Server (ADO.NET)](../../../../../docs/framework/data/adonet/sql/enumerating-instances-of-sql-server.md)  
@@ -41,6 +41,7 @@ The topics in this section discuss features in SQL Server that are targeted at d
  Describes SqlClient support for LocalDB databases.  
   
 ## See also
+
 - [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
 - [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
 - [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)

@@ -27,6 +27,7 @@ One of the most important concepts of Windows Forms data binding is *change noti
  Finally, from the control side you must expose a *PropertyName*Changed event for each property designed to be bound to data. The changes to the control property are then propagated to the bound data source. For more information, see [How to: Apply the PropertyNameChanged Pattern](how-to-apply-the-propertynamechanged-pattern.md)  
   
 ## See also
+
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.ComponentModel.INotifyPropertyChanged>
 - <xref:System.ComponentModel.BindingList%601>

@@ -23,9 +23,9 @@ A translation adds a value to one or more of the four color components. The colo
 ## Example  
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars.bmp. Then the code adds 0.75 to the red component of each pixel in the image. The original image is drawn alongside the transformed image.  
   
- The following illustration shows the original image on the left and the transformed image on the right.  
+ The following illustration shows the original image on the left and the transformed image on the right:  
   
- ![Translate Colors](./media/colortrans2.png "colortrans2")  
+ ![Screenshot of the original and transformed image.](./media/how-to-translate-image-colors/original-image-translate-colors.png)  
   
  The following table lists the color vectors for the four bars before and after the red translation. Note that because the maximum value for a color component is 1, the red component in the second row does not change. (Similarly, the minimum value for a color component is 0.)  
   
@@ -43,6 +43,7 @@ A translation adds a value to one or more of the four color components. The colo
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `ColorBars.bmp` with an image file name and path that are valid on your system.  
   
 ## See also
+
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)

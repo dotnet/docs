@@ -88,5 +88,6 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
  The [\<metadata>](../../../../docs/framework/configure-apps/file-schema/wcf/metadata.md) element is used to specify settings used to register metadata import extensions. For more information about extending the metadata system, see [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md).  
   
 ## See also
+
 - [Endpoints: Addresses, Bindings, and Contracts](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
 - [Configuring Client Behaviors](../../../../docs/framework/wcf/configuring-client-behaviors.md)

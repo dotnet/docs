@@ -15,7 +15,7 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
   
 ### To implement the custom CopyToDataTable\<T> methods in your application  
   
-1.  Implement the `ObjectShredder<T>` class to create a <xref:System.Data.DataTable> from an <xref:System.Collections.Generic.IEnumerable%601> source:  
+1. Implement the `ObjectShredder<T>` class to create a <xref:System.Data.DataTable> from an <xref:System.Collections.Generic.IEnumerable%601> source:  
   
      [!code-csharp[DP Custom CopyToDataTable Examples#ObjectShredderClass](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#objectshredderclass)]
      [!code-vb[DP Custom CopyToDataTable Examples#ObjectShredderClass](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#objectshredderclass)]  
@@ -26,12 +26,12 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
     DataColumn dc = table.Columns.Contains(p.Name) ? table.Columns[p.Name] : table.Columns.Add(p.Name, Nullable.GetUnderlyingType(p.PropertyType) ?? p.PropertyType);
     ```
 
-2.  Implement the custom `CopyToDataTable<T>` extension methods in a class:  
+2. Implement the custom `CopyToDataTable<T>` extension methods in a class:  
   
      [!code-csharp[DP Custom CopyToDataTable Examples#CustomCopyToDataTableMethods](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#customcopytodatatablemethods)]
      [!code-vb[DP Custom CopyToDataTable Examples#CustomCopyToDataTableMethods](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#customcopytodatatablemethods)]  
   
-3.  Add the `ObjectShredder<T>` class and `CopyToDataTable<T>` extension methods to your application.  
+3. Add the `ObjectShredder<T>` class and `CopyToDataTable<T>` extension methods to your application.  
   
 ```vb  
 Module Module1  
@@ -68,5 +68,6 @@ public class ObjectShredder<T>
 ```
   
 ## See also
+
 - [Creating a DataTable From a Query](../../../../docs/framework/data/adonet/creating-a-datatable-from-a-query-linq-to-dataset.md)
 - [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

@@ -33,5 +33,3 @@ HRESULT SetFromManagedCopy (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

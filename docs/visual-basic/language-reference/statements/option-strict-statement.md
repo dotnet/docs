@@ -103,9 +103,9 @@ Option Strict { On | Off }
 ### To set Option Strict in the IDE  
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
+1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
-2.  On the **Compile** tab, set the value in the **Option Strict** box.  
+2. On the **Compile** tab, set the value in the **Option Strict** box.  
   
 ### <a name="conditions"></a> To set warning configurations in the IDE  
  When you use the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) instead of an `Option Strict` statement, you have additional control over the conditions that generate errors. The **Warning configurations** section of the **Compile Page** has settings that correspond to the three conditions that cause a compile-time error when `Option Strict` is on. Following are these settings:  

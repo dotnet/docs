@@ -53,6 +53,7 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
 ```  
   
 ## See also
+
 - <xref:System.Windows.Data.ObjectDataProvider>
 - [Bind to XDocument, XElement, or LINQ for XML Query Results](how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)
 - [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)

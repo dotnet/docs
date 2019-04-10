@@ -41,5 +41,6 @@ You can use the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:
  ![Cropping and Scaling](./media/aboutgdip03-art07.gif "AboutGdip03_Art07")  
   
 ## See also
+
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)
 - [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

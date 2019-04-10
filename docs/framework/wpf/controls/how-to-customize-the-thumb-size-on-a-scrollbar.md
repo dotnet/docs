@@ -25,4 +25,5 @@ This topic explains how to set the <xref:System.Windows.Controls.Primitives.Thum
  [!code-xaml[ScrollBarCustomThumbSize#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarCustomThumbSize/CS/Window1.xaml#2)]  
   
 ## See also
+
 - [ScrollBar Styles and Templates](scrollbar-styles-and-templates.md)

@@ -48,6 +48,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>

@@ -41,6 +41,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
  For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)

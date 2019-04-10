@@ -44,11 +44,11 @@ The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet 
   
 #### To use the XSLT parameter, the user needs to do the following:  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the objects using <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A>.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the objects using <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A>.  
   
-2.  Call the parameters from the style sheet.  
+2. Call the parameters from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
 ### Example  
  The following example uses the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method to create a parameter to hold a calculated discount date. The discount date is calculated to be 20 days from the order date.  
@@ -185,11 +185,11 @@ public class Sample
   
 #### To use the XSLT extension object, the user needs to do the following:  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>.  
   
-2.  Invoke the extension object from the style sheet.  
+2. Invoke the extension object from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
 ### Example  
  The following example calculates the circumference of a circle given its radius.  

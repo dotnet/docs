@@ -209,7 +209,7 @@ Set a breakpoint at the `WriteLine` statement in the `Main` method. Do this by e
 
 Open the debugger tab by selecting the Debug icon in the Visual Studio Code toolbar, selecting **View > Debug** from the menu bar, or using the keyboard shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd>:
 
-![Visual Studio Code Debugger](./media/using-on-macos/vscodedebugger.png)
+![Visual Studio Code Debugger](./media/using-on-macos/visual-studio-code-debugger.png)
 
 Press the Play button to start the application under the debugger. The app begins execution and runs to the breakpoint, where it stops. Step into the `Get` method and make sure that you have passed in the correct arguments. Confirm that the answer is 42.
 

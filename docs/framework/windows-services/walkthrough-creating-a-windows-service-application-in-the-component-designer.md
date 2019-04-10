@@ -53,7 +53,6 @@ Rename the service from **Service1** to **MyNewService**.
 
 3. Select **Save All** from the **File** menu.
 
-
 ## Add features to the service
 
 In this section, you add a custom event log to the Windows service. The <xref:System.Diagnostics.EventLog> component is an example of the type of component you can add to a Windows service.
@@ -135,7 +134,6 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
 
 2. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
 
-
    ```csharp
    using System.Timers;
    ```
@@ -143,7 +141,6 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    ```vb
    Imports System.Timers
    ```
-
 
 3. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
 
@@ -194,13 +191,11 @@ The following code shows how you to override the <xref:System.ServiceProcess.Ser
 [!code-csharp[VbRadconService#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#5)]
 [!code-vb[VbRadconService#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#5)]
 
-
 ## Set service status
 
 Services report their status to the [Service Control Manager](/windows/desktop/Services/service-control-manager) so that a user can tell whether a service is functioning correctly. By default, a service that inherits from <xref:System.ServiceProcess.ServiceBase> reports a limited set of status settings, which include SERVICE_STOPPED, SERVICE_PAUSED, and SERVICE_RUNNING. If a service takes a while to start up, it's useful to report a SERVICE_START_PENDING status. 
 
 You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status settings by adding code that calls the Windows [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) function.
-
 
 ### Implement service pending status
 
@@ -487,7 +482,6 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    ```
 
    Typically, this value contains the full path to the executable for the Windows service. For the service to start up correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** registry entry to change the startup parameters for the Windows service. However, a better way is to change the value programmatically and expose the functionality in a user-friendly way, such as by using a management or configuration utility.
-
 
 ## Build the service
 

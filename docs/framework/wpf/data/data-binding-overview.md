@@ -17,8 +17,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
  The data binding functionality in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] has several advantages over traditional models, including a broad range of properties that inherently support data binding, flexible [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] representation of data, and clean separation of business logic from [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)].  
   
  This topic first discusses concepts fundamental to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] data binding and then goes into the usage of the <xref:System.Windows.Data.Binding> class and other features of data binding.  
-  
-  
+
 <a name="what_is_data_binding"></a>   
 ## What Is Data Binding?  
  Data binding is the process that establishes a connection between the application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] and business logic. If the binding has the correct settings and the data provides the proper notifications, then, when the data changes its value, the elements that are bound to the data reflect changes automatically. Data binding can also mean that if an outer representation of the data in an element changes, then the underlying data can be automatically updated to reflect the change. For example, if the user edits the value in a <xref:System.Windows.Controls.TextBox> element, the underlying data value is automatically updated to reflect that change.  
@@ -27,7 +26,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  For an example of data binding, take a look at the following application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703):  
   
- ![Data binding sample screen shot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
+ ![Data binding sample screenshot](./media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
   
  The above is the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] of an application that displays a list of auction items. The application demonstrates the following features of data binding:  
   
@@ -55,7 +54,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  Regardless of what element you are binding and the nature of your data source, each binding always follows the model illustrated by the following figure:  
   
- ![Basic data binding diagram](./media/databindingmostbasic.png "DataBindingMostBasic")  
+ ![Diagram that shows the basic data binding model.](./media/data-binding-overview/basic-data-binding-diagram.png)  
   
  As illustrated by the above figure, data binding is essentially the bridge between your binding target and your binding source. The figure demonstrates the following fundamental [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] data binding concepts:  
   
@@ -95,7 +94,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  However, does your source value get updated while you are editing the text or after you finish editing the text and point your mouse away from the TextBox? The <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property of the binding determines what triggers the update of the source. The dots of the right arrows in the following figure illustrate the role of the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property:  
   
- ![UpdateSourceTrigger diagram](./media/databindingupdatesourcetrigger.png "DataBindingUpdateSourceTrigger")  
+ ![Diagram that shows the role of the UpdateSourceTrigger property.](./media/data-binding-overview/data-binding-updatesource-trigger.png)  
   
  If the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, then the value pointed to by the right arrow of <xref:System.Windows.Data.BindingMode.TwoWay> or the <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings gets updated as soon as the target property changes. However, if the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>, then that value only gets updated with the new value when the target property loses focus.  
   
@@ -126,7 +125,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  If we apply this example to our basic diagram, the resulting figure looks like the following. This is a <xref:System.Windows.Data.BindingMode.OneWay> binding because the Background property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.  
   
- ![Data binding diagram](./media/databindingbuttonbackgroundexample.png "DataBindingButtonBackgroundExample")  
+ ![Diagram that shows the data binding Background property.](./media/data-binding-overview/data-binding-button-background-example.png)  
   
  You may wonder why this works even though the *ColorName* property is of type string while the <xref:System.Windows.Controls.Control.Background%2A> property is of type <xref:System.Windows.Media.Brush>. This is default type conversion at work and is discussed in the [Data Conversion](#data_conversion) section.  
   
@@ -179,7 +178,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  To add this information to the figure in the [Creating a Binding](#creating_a_binding) section, the diagram looks like the following:  
   
- ![Data binding diagram](./media/databindingbuttondefaultconversion.png "DataBindingButtonDefaultConversion")  
+ ![Diagram that shows the data binding Default property.](./media/data-binding-overview/data-binding-button-default-conversion.png)  
   
  However, what if instead of having a property of type string your binding source object has a *Color* property of type <xref:System.Windows.Media.Color>? In that case, in order for the binding to work you would need to first turn the *Color* property value into something that the <xref:System.Windows.Controls.Control.Background%2A> property accepts. You would need to create a custom converter by implementing the <xref:System.Windows.Data.IValueConverter> interface, as in the following example:  
   
@@ -190,7 +189,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  Now the custom converter is used instead of default conversion, and our diagram looks like this:  
   
- ![Data binding diagram](./media/databindingconvertercolorexample.png "DataBindingConverterColorExample")  
+ ![Diagram that shows the data binding custom converter.](./media/data-binding-overview/data-binding-converter-color-example.png)  
   
  To reiterate, default conversions may be available because of type converters that are present in the type being bound to. This behavior will depend on which type converters are available in the target. If in doubt, create your own converter.  
   
@@ -211,7 +210,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  Fortunately, our basic diagram still applies. If you are binding an <xref:System.Windows.Controls.ItemsControl> to a collection, the diagram looks like this:  
   
- ![Data binding ItemsControl diagram](./media/databindingitemscontrol.png "DataBindingItemsControl")  
+ ![Diagram that shows the data binding ItemsControl object.](./media/data-binding-overview/data-binding-itemscontrol.png)  
   
  As shown in this diagram, to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is the property to use. You can think of <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property as the content of the <xref:System.Windows.Controls.ItemsControl>. Note that the binding is <xref:System.Windows.Data.BindingMode.OneWay> because the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.  
   
@@ -226,8 +225,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
 <a name="collection_views"></a>   
 ### Collection Views  
  Once your <xref:System.Windows.Controls.ItemsControl> is bound to a data collection, you may want to sort, filter, or group the data. To do that, you use collection views, which are classes that implement the <xref:System.ComponentModel.ICollectionView> interface.  
-  
-  
+
 #### What Are Collection Views?  
  A collection view is a layer on top of a binding source collection that allows you to navigate and display the source collection based on sort, filter, and group queries, without having to change the underlying source collection itself. A collection view also maintains a pointer to the current item in the collection. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes raised by the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
   
@@ -334,7 +332,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
 ## Data Templating  
  Without the use of data templates, our application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] in the [What Is Data Binding?](#what_is_data_binding) section would look like the following:  
   
- ![Data Binding Demo without Data Templates](./media/databindingdemotemplates.png "DataBindingDemoTemplates")  
+ ![Data Binding Demo without Data Templates](./media/data-binding-overview/data-binding-demo-templates.png)  
   
  As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> is displaying a string representation of each object in the underlying collection and the <xref:System.Windows.Controls.ContentControl> is displaying a string representation of the object it is bound to.  
   
@@ -400,17 +398,17 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
   
  The following describes the *validation* process. Note that if a validation error or other type of error occurs at any time during this process, the process is halted.  
   
-1.  The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> until one of them runs into an error or until all of them pass.  
+1. The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> until one of them runs into an error or until all of them pass.  
   
-2.  The binding engine then calls the converter, if one exists.  
+2. The binding engine then calls the converter, if one exists.  
   
-3.  If the converter succeeds, the binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue> until one of them runs into an error or until all of them pass.  
+3. If the converter succeeds, the binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue> until one of them runs into an error or until all of them pass.  
   
-4.  The binding engine sets the source property.  
+4. The binding engine sets the source property.  
   
-5.  The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> until one of them runs into an error or until all of them pass. If a <xref:System.Windows.Controls.DataErrorValidationRule> is associated with a binding and its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to the default, <xref:System.Windows.Controls.ValidationStep.UpdatedValue>, the <xref:System.Windows.Controls.DataErrorValidationRule> is checked at this point. This is also the point when bindings that have the <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> set to `true` are checked.  
+5. The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> until one of them runs into an error or until all of them pass. If a <xref:System.Windows.Controls.DataErrorValidationRule> is associated with a binding and its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to the default, <xref:System.Windows.Controls.ValidationStep.UpdatedValue>, the <xref:System.Windows.Controls.DataErrorValidationRule> is checked at this point. This is also the point when bindings that have the <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> set to `true` are checked.  
   
-6.  The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.CommittedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.CommittedValue> until one of them runs into an error or until all of them pass.  
+6. The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.CommittedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.CommittedValue> until one of them runs into an error or until all of them pass.  
   
  If a <xref:System.Windows.Controls.ValidationRule> does not pass at any time throughout this process, the binding engine creates a <xref:System.Windows.Controls.ValidationError> object and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element. Before the binding engine runs the <xref:System.Windows.Controls.ValidationRule> objects at any given step, it removes any <xref:System.Windows.Controls.ValidationError> that was added to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> attached property of the bound element during that step. For example, if a <xref:System.Windows.Controls.ValidationRule> whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> failed, the next time the validation process occurs, the binding engine removes that <xref:System.Windows.Controls.ValidationError> immediately before it calls any <xref:System.Windows.Controls.ValidationRule> that has <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue>.  
   
@@ -424,6 +422,7 @@ ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
  You can set the attached property <xref:System.Diagnostics.PresentationTraceSources.TraceLevel%2A?displayProperty=nameWithType> on a binding-related object to receive information about the status of a specific binding.  
   
 ## See also
+
 - <xref:System.Windows.Controls.DataErrorValidationRule>
 - [What's New in WPF Version 4.5](../getting-started/whats-new.md)
 - [Bind to the Results of a LINQ Query](how-to-bind-to-the-results-of-a-linq-query.md)

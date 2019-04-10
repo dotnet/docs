@@ -319,68 +319,68 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 ### Additional resources
 
-- **Forked eShopOnContainers using NServiceBus (Particular Software)** <br/>
-    [*https://go.particular.net/eShopOnContainers*](https://go.particular.net/eShopOnContainers)
+- **Forked eShopOnContainers using NServiceBus (Particular Software)** \
+    [https://go.particular.net/eShopOnContainers](https://go.particular.net/eShopOnContainers)
 
-- **Event Driven Messaging** <br/>
-    [*http://soapatterns.org/design\_patterns/event\_driven\_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
+- **Event Driven Messaging** \
+    [http://soapatterns.org/design\_patterns/event\_driven\_messaging](http://soapatterns.org/design_patterns/event_driven_messaging)
 
-- **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling** <br/>
-    [*https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
+- **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling** \
+    [https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
 
-- **Publish-Subscribe channel** <br/>
-    [*https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
+- **Publish-Subscribe channel** \
+    [https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
 
-- **Communicating Between Bounded Contexts** <br/>
+- **Communicating Between Bounded Contexts** \
     <https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)>
 
-- **Eventual Consistency** <br/>
-    [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
+- **Eventual Consistency** \
+    [https://en.wikipedia.org/wiki/Eventual\_consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
 
-- **Philip Brown. Strategies for Integrating Bounded Contexts** <br/>
-    [*https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/*](https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/)
+- **Philip Brown. Strategies for Integrating Bounded Contexts** \
+    [https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/](https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/)
 
-- **Chris Richardson. Developing Transactional Microservices Using Aggregates, Event Sourcing and CQRS - Part 2** <br/>
-    [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson)
+- **Chris Richardson. Developing Transactional Microservices Using Aggregates, Event Sourcing and CQRS - Part 2** \
+    [https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-2-richardson)
 
-- **Chris Richardson. Event Sourcing pattern** <br/>
-    [*https://microservices.io/patterns/data/event-sourcing.html*](https://microservices.io/patterns/data/event-sourcing.html)
+- **Chris Richardson. Event Sourcing pattern** \
+    [https://microservices.io/patterns/data/event-sourcing.html](https://microservices.io/patterns/data/event-sourcing.html)
 
-- **Introducing Event Sourcing** <br/>
+- **Introducing Event Sourcing** \
     <https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)>
 
-- **Event Store database**. Official site. <br/>
-    [*https://geteventstore.com/*](https://geteventstore.com/)
+- **Event Store database**. Official site. \
+    [https://geteventstore.com/](https://geteventstore.com/)
 
-- **Patrick Nommensen. Event-Driven Data Management for Microservices** <br/>
-    *<https://dzone.com/articles/event-driven-data-management-for-microservices-1> *
+- **Patrick Nommensen. Event-Driven Data Management for Microservices** \
+    <https://dzone.com/articles/event-driven-data-management-for-microservices-1>
 
-- **The CAP Theorem** <br/>
-    [*https://en.wikipedia.org/wiki/CAP\_theorem*](https://en.wikipedia.org/wiki/CAP_theorem)
+- **The CAP Theorem** \
+    [https://en.wikipedia.org/wiki/CAP\_theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 
-- **What is CAP Theorem?** <br/>
-    [*https://www.quora.com/What-Is-CAP-Theorem-1*](https://www.quora.com/What-Is-CAP-Theorem-1)
+- **What is CAP Theorem?** \
+    [https://www.quora.com/What-Is-CAP-Theorem-1](https://www.quora.com/What-Is-CAP-Theorem-1)
 
-- **Data Consistency Primer** <br/>
+- **Data Consistency Primer** \
     <https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)>
 
-- **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet** <br/>
-    [*https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/*](https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
+- **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet** \
+    [https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/](https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
 
-- **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** <br/>
-    [*https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed*](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
+- **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
+    [https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 
-- **Azure Service Bus. Brokered Messaging: Duplicate Detection**  <br/>
-    [*https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25*](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
+- **Azure Service Bus. Brokered Messaging: Duplicate Detection**  \
+    [https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
 
-- **Reliability Guide** (RabbitMQ documentation)* <br/>
-    [*https://www.rabbitmq.com/reliability.html\#consumer*](https://www.rabbitmq.com/reliability.html#consumer)
+- **Reliability Guide** (RabbitMQ documentation) \
+    [https://www.rabbitmq.com/reliability.html\#consumer](https://www.rabbitmq.com/reliability.html#consumer)
 
-- **Azure Service Bus. Brokered Messaging: Duplicate Detection** <br/>
-    [*https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25*](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
+- **Azure Service Bus. Brokered Messaging: Duplicate Detection** \
+    [https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25](https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25)
 
-- **Reliability Guide** (RabbitMQ documentation) <br/>
-    [*https://www.rabbitmq.com/reliability.html\#consumer*](https://www.rabbitmq.com/reliability.html%23consumer)
+- **Reliability Guide** (RabbitMQ documentation) \
+    [https://www.rabbitmq.com/reliability.html\#consumer](https://www.rabbitmq.com/reliability.html%23consumer)
 
 > [!div class="step-by-step"]
 > [Previous](rabbitmq-event-bus-development-test-environment.md)

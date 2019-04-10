@@ -19,7 +19,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
   
 ### To change data programmatically  
   
-1.  Specify the desired table from the <xref:System.Data.DataSet> object and the desired row and field from the table and set the cell equal to the new value.  
+1. Specify the desired table from the <xref:System.Data.DataSet> object and the desired row and field from the table and set the cell equal to the new value.  
   
     > [!NOTE]
     >  To specify the first table of the <xref:System.Data.DataSet> or the first row of the table, use 0.  
@@ -62,7 +62,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
   
 ### To change the DataSource programmatically  
   
-1.  Set the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to the name of the data source and table you want to bind to.  
+1. Set the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to the name of the data source and table you want to bind to.  
   
      The following example shows how to change the date source using the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method to an [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] data control (adoPubsAuthors) that is connected to the Authors table in the Pubs database.  
   
@@ -88,6 +88,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
     ```  
   
 ## See also
+
 - [ADO.NET DataSets](../../data/adonet/ado-net-datasets.md)
 - [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
 - [How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)

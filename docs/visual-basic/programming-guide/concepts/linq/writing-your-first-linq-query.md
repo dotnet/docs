@@ -15,11 +15,11 @@ A *query* is an expression that retrieves data from a data source. Queries are e
 ## Three Stages of a Query Operation  
  [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query operations consist of three actions:  
   
-1.  Obtain the data source or sources.  
+1. Obtain the data source or sources.  
   
-2.  Create the query.  
+2. Create the query.  
   
-3.  Execute the query.  
+3. Execute the query.  
   
  In [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], the execution of a query is distinct from the creation of the query. You do not retrieve any data just by creating a query. This point is discussed in more detail later in this topic.  
   

@@ -77,6 +77,7 @@ End Get
  [!code-vb[VbVbalrStatements#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#30)]  
   
 ## See also
+
 - [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
 - [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
 - [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)

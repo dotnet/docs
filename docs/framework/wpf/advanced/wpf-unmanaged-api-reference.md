@@ -17,4 +17,5 @@ Windows Presentation Foundation (WPF) libraries expose a number of unmanaged fun
  [SetFakeActiveWindow Function](setfakeactivewindow-function-wpf-unmanaged-api-reference.md)  
   
 ## See also
+
 - [Advanced](index.md)

@@ -80,4 +80,5 @@ Specifies the discoverability of service endpoints.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>

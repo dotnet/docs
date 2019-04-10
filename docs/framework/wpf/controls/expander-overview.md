@@ -11,8 +11,7 @@ ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb
 ---
 # Expander Overview
 An <xref:System.Windows.Controls.Expander> control provides a way to provide content in an expandable area that resembles a window and includes a header.  
-  
-  
+
 <a name="CreatinganExpanderinXAML"></a>   
 ## Creating a Simple Expander  
  The following example shows how to create a simple <xref:System.Windows.Controls.Expander> control. This example creates an <xref:System.Windows.Controls.Expander> that looks like the previous illustration.  
@@ -39,7 +38,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
   
  **Expander in a ScrollViewer**  
   
- ![Expander with ScrollBar](./media/expanderwithscrollbar.JPG "ExpanderWithScrollBar")  
+ ![Screenshot that shows an expander with ScrollBar.](./media/expander-overview/expander-scrollbar-control.jpg)  
   
  When you place an <xref:System.Windows.Controls.Expander> control in a <xref:System.Windows.Controls.ScrollViewer>, set the <xref:System.Windows.Controls.ScrollViewer> dimension property that corresponds to the direction in which the <xref:System.Windows.Controls.Expander> content opens to the size of the <xref:System.Windows.Controls.Expander> content area. For example, if you set the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property on the <xref:System.Windows.Controls.Expander> to <xref:System.Windows.Controls.ExpandDirection.Down> (the content area opens down), set the <xref:System.Windows.FrameworkElement.Height%2A> property on the <xref:System.Windows.Controls.ScrollViewer> control to the required height for the content area. If you instead set the height dimension on the content itself, <xref:System.Windows.Controls.ScrollViewer> does not recognize this setting and therefore, does not provide scrollable content.  
   
@@ -54,6 +53,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
  You can align content by setting the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties on the <xref:System.Windows.Controls.Expander> control. When you set these properties, the alignment applies to the header and also to the expanded content.  
   
 ## See also
+
 - <xref:System.Windows.Controls.Expander>
 - <xref:System.Windows.Controls.ExpandDirection>
 - [How-to Topics](expander-how-to-topics.md)

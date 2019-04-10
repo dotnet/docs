@@ -19,9 +19,9 @@ PNRP version 2 nodes do not publish PNRP IDs if they are only resolving other P2
 
  Locating other peers in a PNRP network or cloud is a process comprised of two phases:  
   
-1.  Endpoint Determination  
+1. Endpoint Determination  
   
-2.  PNRP ID Resolution  
+2. PNRP ID Resolution  
   
  In the endpoint determination phase, a peer that is attempting to resolve the PNRP ID of a service on another computer determines the IPv6 address of that remote peer.  The remote peer is the one that published, or is associated with, the PNRP ID of the computer or service.  
   
@@ -42,4 +42,5 @@ The requesting peer continues this process with successive iterations, eventuall
  Within the <xref:System.Net.PeerToPeer> namespace, there is a many-to-many relationship between the <xref:System.Net.PeerToPeer.PeerName> records that contain endpoints and PNRP clouds or meshes in which they communicate. When there are duplicate or stale entries, or multiple nodes with the same peer name, PNRP nodes can obtain current information using the <xref:System.Net.PeerToPeer.PeerNameResolver> class. The <xref:System.Net.PeerToPeer.PeerNameResolver> methods use a single peer name to simplify the perspective to one peer-to-many peer name records and the same one peer to many clouds. This is similar to a query performed using a relational-table join. Upon successful completion, the Resolver object returns a <xref:System.Net.PeerToPeer.PeerNameRecordCollection> for the specified peer name.  For example, a peer name would occur in all the peer name records in the collection, ordered by cloud. These are the instances of the peer name whose supporting data may be requested by a PNRP-based application.  
   
 ## See also
+
 - <xref:System.Net.PeerToPeer>

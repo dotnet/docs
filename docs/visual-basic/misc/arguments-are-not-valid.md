@@ -10,9 +10,9 @@ Arguments that are not valid are being passed to a function or subroutine.
   
 ## To correct this error  
   
-1.  Check the arguments to determine why they are invalid.  
+1. Check the arguments to determine why they are invalid.  
   
-2.  If the arguments are supplied by calculations, check the values that the calculations process.  
+2. If the arguments are supplied by calculations, check the values that the calculations process.  
   
 ## See also
 

@@ -23,17 +23,17 @@ You can create a property grid for user settings by populating a <xref:System.Wi
   
 ### To add a user setting property grid  
   
-1.  Add the **PropertyGrid** control from the **Toolbox** to the design surface for your application, assumed here to be `Form1`.  
+1. Add the **PropertyGrid** control from the **Toolbox** to the design surface for your application, assumed here to be `Form1`.  
   
      The default name of the property-grid control is `PropertyGrid1`.  
   
-2.  Double-click the design surface for `Form1` to open the code for the form-load event handler.  
+2. Double-click the design surface for `Form1` to open the code for the form-load event handler.  
   
-3.  Set the `My.Settings` object as the selected object for the property grid.  
+3. Set the `My.Settings` object as the selected object for the property grid.  
   
      [!code-vb[VbVbalrMyResources#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#11)]  
   
-4.  Configure the property grid to show only the user settings.  
+4. Configure the property grid to show only the user settings.  
   
      [!code-vb[VbVbalrMyResources#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#12)]  
   
@@ -44,6 +44,7 @@ You can create a property grid for user settings by populating a <xref:System.Wi
  The application saves the user settings when the application shuts down. To save the settings immediately, call the `My.Settings.Save` method. For more information, see [How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md).  
   
 ## See also
+
 - [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)
 - [How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)
 - [How to: Change User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)

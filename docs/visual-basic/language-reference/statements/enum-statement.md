@@ -166,6 +166,7 @@ End Enum
  [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]  
   
 ## See also
+
 - <xref:System.Enum>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>
 - [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)

@@ -165,6 +165,7 @@ End Operator
  [!code-vb[VbVbalrStatements#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#44)]  
   
 ## See also
+
 - [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
 - [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
 - [Widening](../../../visual-basic/language-reference/modifiers/widening.md)

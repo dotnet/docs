@@ -39,7 +39,6 @@ HRESULT GetModuleData(
 `data`\
 [out] The [DacpModuleData structure](dacpmoduledata-structure.md) to hold the information of the loaded module.
 
-
 ## Remarks
 
 The provided method is part of the `ISOSDacInterface` interface and corresponds to the 13th slot of the virtual method table.

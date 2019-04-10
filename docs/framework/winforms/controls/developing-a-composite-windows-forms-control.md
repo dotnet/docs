@@ -48,6 +48,7 @@ You can develop a composite Windows Forms control by combining other Windows For
 -   [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))  
   
 ## See also
+
 - [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md)
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)

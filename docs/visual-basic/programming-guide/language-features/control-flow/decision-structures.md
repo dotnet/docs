@@ -15,8 +15,7 @@ Visual Basic lets you test conditions and perform different operations depending
   
  The following illustration shows a decision structure that tests for a condition being true and takes different actions depending on whether it is true or false.  
   
- ![Flow chart of an If...Then...Else construction](../../../../visual-basic/programming-guide/language-features/control-flow/media/ifthenelse.gif "IfThenElse")  
-Taking different actions when a condition is true and when it is false  
+ ![A flow chart of an If...Then...Else construction.](./media/decision-structures/if-then-else-construction.gif)  
   
 ## If...Then...Else Construction  
  `If...Then...Else` constructions let you test for one or more conditions and run one or more statements depending on each condition. You can test conditions and take actions in the following ways:  
@@ -41,6 +40,7 @@ Taking different actions when a condition is true and when it is false
 >  For many control structures, when you click a keyword, all of the keywords in the structure are highlighted. For instance, when you click `If` in an `If...Then...Else` construction, all instances of `If`, `Then`, `ElseIf`, `Else`, and `End If` in the construction are highlighted. To move to the next or previous highlighted keyword, press CTRL+SHIFT+DOWN ARROW or CTRL+SHIFT+UP ARROW.  
   
 ## See also
+
 - [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
 - [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

@@ -10,7 +10,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio
 
-If you're downloading [Visual Studio](https://visualstudio.microsoft.com/) for the first time, it will first install the Visual Studio installer. Install the appropriate SKU of Visual Studio from the installer. If you already have it installed, click **Modify**.
+If you're downloading [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) for the first time, it will first install the Visual Studio installer. Install the appropriate SKU of Visual Studio from the installer. If you already have it installed, click **Modify**.
 
 You'll next see a list of Workloads. Select **ASP.NET and web development** which will install F# support and .NET Core support for ASP.NET Core projects.
 
@@ -18,7 +18,7 @@ Next, click **Modify** in the lower right-hand side.  This will install everythi
 
 ## Install F# with Visual Studio for Mac
 
-F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/), no matter which configuration you choose.
+F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link), no matter which configuration you choose.
 
 After the install completes, choose "Start Visual Studio". You can also launch it through Finder on macOS.
 

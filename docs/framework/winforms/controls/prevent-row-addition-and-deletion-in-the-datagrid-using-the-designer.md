@@ -21,6 +21,7 @@ Sometimes you will want to prevent users from entering new rows of data or delet
     >  To make the control entirely read-only, clear the **Enable Editing** check box as well.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A?displayProperty=nameWithType>
 - [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project)

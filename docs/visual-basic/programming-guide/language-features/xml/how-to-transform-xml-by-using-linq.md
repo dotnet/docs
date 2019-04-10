@@ -15,9 +15,9 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
   
 ### To transform an XML document  
   
-1.  In Visual Studio, create a new Visual Basic project in the **Console Application** project template.  
+1. In Visual Studio, create a new Visual Basic project in the **Console Application** project template.  
   
-2.  Double-click the Module1.vb file created in the project to modify the Visual Basic code. Add the following code to the `Sub Main` of the `Module1` module. This code creates the source XML document as an <xref:System.Xml.Linq.XDocument> object.  
+2. Double-click the Module1.vb file created in the project to modify the Visual Basic code. Add the following code to the `Sub Main` of the `Module1` module. This code creates the source XML document as an <xref:System.Xml.Linq.XDocument> object.  
   
     ```vb  
     Dim catalog =   
@@ -53,7 +53,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
   
      [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md).  
   
-3.  After the code to create the source XML document, add the following code to retrieve all the \<Book> elements from the object and transform them into an HTML document. The list of \<Book> elements is created by using a LINQ query that returns a collection of <xref:System.Xml.Linq.XElement> objects that contain the transformed HTML. You can use embedded expressions to put the values from the source document in the new XML format.  
+3. After the code to create the source XML document, add the following code to retrieve all the \<Book> elements from the object and transform them into an HTML document. The list of \<Book> elements is created by using a LINQ query that returns a collection of <xref:System.Xml.Linq.XElement> objects that contain the transformed HTML. You can use embedded expressions to put the values from the source document in the new XML format.  
   
      The resulting HTML document is written to a file by using the <xref:System.Xml.Linq.XElement.Save%2A> method.  
   
@@ -76,7 +76,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
     htmlOutput.Save("BookDescription.html")  
     ```  
   
-4.  After `Sub Main` of `Module1`, add a new method (`Sub`) to transform a \<Description> node into the specified HTML format. This method is called by the code in the previous step and is used to preserve the format of the \<Description> elements.  
+4. After `Sub Main` of `Module1`, add a new method (`Sub`) to transform a \<Description> node into the specified HTML format. This method is called by the code in the previous step and is used to preserve the format of the \<Description> elements.  
   
      This method replaces sub-elements of the \<Description> element with HTML. The `ReplaceWith` method is used to preserve the location of the sub-elements. The transformed content of the \<Description> element is included in an HTML paragraph (\<p>) element. The <xref:System.Xml.Linq.XContainer.Nodes%2A> property is used to retrieve the transformed content of the \<Description> element. This ensures that sub-elements are included in the transformed content.  
   
@@ -108,9 +108,9 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
     End Function  
     ```  
   
-5.  Save your changes.  
+5. Save your changes.  
   
-6.  Press F5 to run the code. The resulting saved document will resemble the following:  
+6. Press F5 to run the code. The resulting saved document will resemble the following:  
   
     ```  
     <?xml version="1.0"?>  
@@ -150,6 +150,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
     ```  
   
 ## See also
+
 - [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)
 - [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

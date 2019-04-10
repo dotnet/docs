@@ -42,6 +42,7 @@ You can easily draw ellipses and arcs using the <xref:System.Drawing.Graphics.Dr
  ![Ellipses and arcs](./media/aboutgdip02-art06.gif "Aboutgdip02_art06")  
   
 ## See also
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)

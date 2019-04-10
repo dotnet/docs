@@ -10,31 +10,31 @@ External mapping files and .dbml files that you modify must be validated against
   
 ### To validate a .dbml or XML file  
   
-1.  On the Visual Studio **File** menu, point to **Open**, and then click **File**.  
+1. On the Visual Studio **File** menu, point to **Open**, and then click **File**.  
   
-2.  In the **Open File** dialog box, click the .dbml or XML mapping file that you want to validate.  
+2. In the **Open File** dialog box, click the .dbml or XML mapping file that you want to validate.  
   
      The file opens in the **XML Editor**.  
   
-3.  Right-click the window, and then click **Properties**.  
+3. Right-click the window, and then click **Properties**.  
   
-4.  In the **Properties** window, click the ellipsis for the **Schemas** property.  
+4. In the **Properties** window, click the ellipsis for the **Schemas** property.  
   
      The **XML Schemas** dialog box opens.  
   
-5.  Note the appropriate schema definition for your purpose.  
+5. Note the appropriate schema definition for your purpose.  
   
     -   DbmlSchema.xsd is the schema definition for validating a .dbml file. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
   
     -   LinqToSqlMapping.xsd is the schema definition for validating an external XML mapping file. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
   
-6.  In the **Use** column of the desired schema definition row, click to open the drop-down box, and then click **Use this schema**.  
+6. In the **Use** column of the desired schema definition row, click to open the drop-down box, and then click **Use this schema**.  
   
      The schema definition file is now associated with your DBML or XML mapping file.  
   
      Make sure no other schema definitions are selected.  
   
-7.  On the **View** menu, click **Error List**.  
+7. On the **View** menu, click **Error List**.  
   
      Determine whether errors, warnings, or messages have been generated. If not, the XML file is valid against the schema definition.  
   
@@ -43,26 +43,27 @@ External mapping files and .dbml files that you modify must be validated against
   
 #### To copy a schema definition file from a Help topic  
   
-1.  Locate the Help topic that contains the schema definition as described earlier in this topic.  
+1. Locate the Help topic that contains the schema definition as described earlier in this topic.  
   
     -   For .dbml files, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
   
     -   For external mapping files, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
   
-2.  Click **Copy Code** to copy the code file to the Clipboard.  
+2. Click **Copy Code** to copy the code file to the Clipboard.  
   
-3.  Start Notepad to create a new file.  
+3. Start Notepad to create a new file.  
   
-4.  Paste the code from the clipboard into Notepad file.  
+4. Paste the code from the clipboard into Notepad file.  
   
-5.  On the Notepad **File** menu, click **Save As**.  
+5. On the Notepad **File** menu, click **Save As**.  
   
-6.  In the **Encoding** box, select **Unicode**.  
+6. In the **Encoding** box, select **Unicode**.  
   
     > [!IMPORTANT]
     >  This selection guarantees that the Unicode-16 byte-order marker (`FFFE`) is prepended to the text file.  
   
-7.  In the **File name** box, create a file name with an .xsd extension.  
+7. In the **File name** box, create a file name with an .xsd extension.  
   
 ## See also
+
 - [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

@@ -9,8 +9,7 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
 ---
 # Styling for Focus in Controls, and FocusVisualStyle
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides two parallel mechanisms for changing the visual appearance of a control when it receives keyboard focus. The first mechanism is to use property setters for properties such as <xref:System.Windows.UIElement.IsKeyboardFocused%2A> within the style or template that is applied to the control. The second mechanism is to provide a separate style as the value of the <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A> property; the "focus visual style" creates a separate visual tree for an adorner that draws on top of the control, rather than changing the visual tree of the control or other UI element by replacing it. This topic discusses the scenarios where each of these mechanisms is appropriate.  
-   
-  
+
 <a name="Purpose"></a>   
 ## The Purpose of Focus Visual Style  
  The focus visual style feature provides a common "object model" for introducing visual user feedback based on keyboard navigation to any UI element. This is possible without applying a new template to the control, or knowing the specific template composition.  
@@ -71,6 +70,7 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
  If you want all possible causes of changing focus to produce a visual behavior, you should base a setter or trigger on the <xref:System.Windows.UIElement.IsFocused%2A> dependency property, or alternatively on the <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus> events used for an <xref:System.Windows.EventSetter>.  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>
 - [Styling and Templating](../controls/styling-and-templating.md)
 - [Focus Overview](focus-overview.md)

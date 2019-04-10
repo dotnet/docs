@@ -49,19 +49,19 @@ author: "BrucePerlerMS"
   
 #### To create a simple ASP.NET application  
   
-1.  Start Visual Studio and click **File**, **New**, and then **Project**.  
+1. Start Visual Studio and click **File**, **New**, and then **Project**.  
   
-2.  In the **New Project** window, click **ASP.NET Web Forms Application**.  
+2. In the **New Project** window, click **ASP.NET Web Forms Application**.  
   
-3.  In **Name**, enter `TestApp` and press **OK**.  
+3. In **Name**, enter `TestApp` and press **OK**.  
   
-4.  Right-click the **TestApp** project under **Solution Explorer**, then select **Identity and Access**.  
+4. Right-click the **TestApp** project under **Solution Explorer**, then select **Identity and Access**.  
   
-5.  The **Identity and Access** window appears. Under **Providers**, select **Test your application with the Local Development STS**, then click **Apply**.  
+5. The **Identity and Access** window appears. Under **Providers**, select **Test your application with the Local Development STS**, then click **Apply**.  
   
-6.  Create a new folder in named **logs** in the root of the **C:** drive, like shown: **C:\logs**  
+6. Create a new folder in named **logs** in the root of the **C:** drive, like shown: **C:\logs**  
   
-7.  Add the following **\<system.diagnostics>** element to the *Web.config* configuration file immediately following the closing **\</configSections>** element, like shown:  
+7. Add the following **\<system.diagnostics>** element to the *Web.config* configuration file immediately following the closing **\</configSections>** element, like shown:  
   
     ```xml  
     <configuration>  
@@ -90,8 +90,8 @@ author: "BrucePerlerMS"
   
 #### To test your WIF-enabled ASP.NET application for successful tracing  
   
-1.  Run the solution by pressing the **F5** key. You should be presented with the default ASP.NET Home Page and automatically authenticated with the username *Terry*, which is the default user that is returned by the Development STS.  
+1. Run the solution by pressing the **F5** key. You should be presented with the default ASP.NET Home Page and automatically authenticated with the username *Terry*, which is the default user that is returned by the Development STS.  
   
-2.  Close the browser window and then navigate to the **C:\logs** folder. Open the **C:\logs\WIF.xml** file using a text editor.  
+2. Close the browser window and then navigate to the **C:\logs** folder. Open the **C:\logs\WIF.xml** file using a text editor.  
   
-3.  Inspect the **WIF.xml** file and verify that it contains entries starting with **\<E2ETraceEvent>**. These traces will contain **\<TraceRecord>** elements with descriptions for the traced activity, such as **Validating SecurityToken**.
+3. Inspect the **WIF.xml** file and verify that it contains entries starting with **\<E2ETraceEvent>**. These traces will contain **\<TraceRecord>** elements with descriptions for the traced activity, such as **Validating SecurityToken**.

@@ -37,6 +37,7 @@ Represents a binding element that specifies policy assertion. This element has n
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Bindings](../../../../../docs/framework/wcf/bindings.md)
 - [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)

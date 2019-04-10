@@ -21,6 +21,7 @@ This example shows how to create an <xref:System.Windows.Controls.Expander> cont
  [!code-csharp[ExpanderRichContent#CreateExpanderCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml.cs#createexpandercode)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.Expander>
 - [Expander Overview](expander-overview.md)
 - [How-to Topics](expander-how-to-topics.md)

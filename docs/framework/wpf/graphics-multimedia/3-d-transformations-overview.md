@@ -11,9 +11,7 @@ ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
 ---
 # 3-D Transformations Overview
 This topic describes how to apply transformations to 3-D models in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] graphics system. Transformations allow the developer to reposition, resize, and reorient models without changing the base values that define them.  
-  
 
-  
 ## 3-D Coordinate Space  
  3-D graphics content in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is encapsulated in an element, <xref:System.Windows.Controls.Viewport3D>, that can participate in the two-dimensional element structure. The graphics system treats Viewport3D as a two-dimensional visual element like many others in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. Viewport3D functions as a window—a viewport—into a three-dimensional scene. More accurately, it is a surface on which a 3-D scene is projected.  Although you can use Viewport3D with other 2-D drawing objects in the same scene graph, you cannot interpenetrate 2-D and 3-D objects within a Viewport3D. In the following discussion, the coordinate space described is contained by the Viewport3D element.  
   
@@ -100,6 +98,7 @@ Rotation Example
  Because cameras are also models, it’s possible to transform camera properties as well.  While you can certainly change the appearance of the scene by transforming the camera location or plane distances—in effect, transforming the entire scene projection—note that many of the effects you achieve this way may not make as much "visual sense" to the viewer as transformations applied to the location or position of the models in the scene.  
   
 ## See also
+
 - [3-D Graphics Overview](3-d-graphics-overview.md)
 - [Transforms Overview](transforms-overview.md)
 - [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)

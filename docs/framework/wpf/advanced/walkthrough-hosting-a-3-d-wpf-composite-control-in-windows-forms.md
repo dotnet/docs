@@ -32,11 +32,11 @@ You need the following components to complete this walkthrough:
 <a name="To_Create_the_UserControl"></a>
 ## Create the UserControl
 
-1.  Create a **WPF User Control Library** project named `HostingWpfUserControlInWf`.
+1. Create a **WPF User Control Library** project named `HostingWpfUserControlInWf`.
 
-2.  Open UserControl1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+2. Open UserControl1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
 
-3.  Replace the generated code with the following code:
+3. Replace the generated code with the following code:
 
      [!code-xaml[HostingWpfUserControlInWf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]
 
@@ -45,11 +45,11 @@ You need the following components to complete this walkthrough:
 <a name="To_Create_the_Windows_Forms_Host_Project"></a>
 ## Create the host project
 
-1.  Add a **WPF App (.NET Framework)** project named `WpfUserControlHost` to the solution. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
+1. Add a **WPF App (.NET Framework)** project named `WpfUserControlHost` to the solution. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
-2.  In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
+2. In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
-3.  Add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies:
+3. Add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies:
 
     -   PresentationCore
 
@@ -57,27 +57,27 @@ You need the following components to complete this walkthrough:
 
     -   WindowsBase
 
-4.  Add a reference to the `HostingWpfUserControlInWf` project.
+4. Add a reference to the `HostingWpfUserControlInWf` project.
 
-5.  In Solution Explorer, set the `WpfUserControlHost` project to be the startup project.
+5. In Solution Explorer, set the `WpfUserControlHost` project to be the startup project.
 
 <a name="To_Host_the_Windows_Presentation_Foundation"></a>
 ## Host the UserControl
 
-1.  In the Windows Forms Designer, open Form1.
+1. In the Windows Forms Designer, open Form1.
 
-2.  In the Properties window, click **Events**, and then double-click the <xref:System.Windows.Forms.Form.Load> event to create an event handler.
+2. In the Properties window, click **Events**, and then double-click the <xref:System.Windows.Forms.Form.Load> event to create an event handler.
 
      The Code Editor opens to the newly generated `Form1_Load` event handler.
 
-3.  Replace the code in Form1.cs with the following code.
+3. Replace the code in Form1.cs with the following code.
 
      The `Form1_Load` event handler creates an instance of `UserControl1` and adds itto the <xref:System.Windows.Forms.Integration.ElementHost> control's collection of child controls. The <xref:System.Windows.Forms.Integration.ElementHost> control is added to the form's collection of child controls.
 
      [!code-csharp[HostingWpfUserControlInWf#10](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/WpfUserControlHost/Form1.cs#10)]
      [!code-vb[HostingWpfUserControlInWf#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWpfUserControlInWf/VisualBasic/WpfUserControlHost/Form1.vb#10)]
 
-4.  Press **F5** to build and run the application.
+4. Press **F5** to build and run the application.
 
 ## See also
 

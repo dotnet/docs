@@ -1,0 +1,34 @@
+- name: Windows Service Applications
+  href: index.md
+  items:
+  - name: Introduction to Windows Service Applications
+    href: introduction-to-windows-service-applications.md
+  - name: "Walkthrough: Create a Windows Service App"
+    href: walkthrough-creating-a-windows-service-application-in-the-component-designer.md
+  - name: Service Application Programming Architecture
+    href: service-application-programming-architecture.md
+  - name: "How to: Create Windows Services"
+    href: how-to-create-windows-services.md
+    items:
+    - name: "How to: Write Services Programmatically"
+      href: how-to-write-services-programmatically.md
+    - name: "How to: Add Installers to Your Service Application"
+      href: how-to-add-installers-to-your-service-application.md
+    - name: "How to: Specify the Security Context for Services"
+      href: how-to-specify-the-security-context-for-services.md
+    - name: "How to: Install and Uninstall Services"
+      href: how-to-install-and-uninstall-services.md
+    - name: "How to: Start Services"
+      href: how-to-start-services.md
+    - name: "How to: Pause a Windows Service (Visual Basic)"
+      href: how-to-pause-a-windows-service-visual-basic.md
+    - name: "How to: Continue a Windows Service (Visual Basic)"
+      href: how-to-continue-a-windows-service-visual-basic.md
+    - name: "How to: Debug Windows Service Applications"
+      href: how-to-debug-windows-service-applications.md
+    - name: "How to: Log Information About Services"
+      href: how-to-log-information-about-services.md
+    - name: "Troubleshooting: Debug Windows Services"
+      href: troubleshooting-debugging-windows-services.md
+    - name: "Troubleshooting: Service Application Won't Install"
+      href: troubleshooting-service-application-wont-install.md

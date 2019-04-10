@@ -1,8 +1,7 @@
 ---
 title: "DataMemberListEditor Class"
 ms.date: "03/30/2017"
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: "dotnet-winforms"
 api_name: 
   - "System.Windows.Forms.Design.DataMemberListEditor"
 api_location: 

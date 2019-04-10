@@ -11,19 +11,19 @@ This topic describes how to enable persistence for workflows and workflow servic
   
  The **Persist** method performs the following steps:  
   
-1.  Pauses the workflow scheduler and waits until the workflow enters the idle state.  
+1. Pauses the workflow scheduler and waits until the workflow enters the idle state.  
   
-2.  Persists or saves the workflow into the persistence store.  
+2. Persists or saves the workflow into the persistence store.  
   
-3.  Resumes the workflow scheduler.  
+3. Resumes the workflow scheduler.  
   
  The **Unload** method performs the following steps:  
   
-1.  Pauses the workflow scheduler and waits until the workflow enters the idle state.  
+1. Pauses the workflow scheduler and waits until the workflow enters the idle state.  
   
-2.  Persists or saves the workflow into the persistence store.  
+2. Persists or saves the workflow into the persistence store.  
   
-3.  Disposes the workflow instance in the memory.  
+3. Disposes the workflow instance in the memory.  
   
  Both the **Persist** and **Unload** methods will block while a workflow is in a no-persist zone until the workflow exits the no-persist zone. The method continues with the persist or unload operation after the no-persist zone completes. If the no-persist zone does not complete before the time-out elapses, or if the persistence process takes too long, a TimeoutException will be thrown.  
   

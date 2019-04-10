@@ -32,9 +32,9 @@ Enables the use of local type inference in variable declarations.
   
 ### To set -optioninfer in the Visual Studio IDE  
   
-1.  Select a project in **Solution Explorer**. On the **Project** menu, click **Properties**.  
+1. Select a project in **Solution Explorer**. On the **Project** menu, click **Properties**.  
   
-2.  On the **Compile** tab, modify the value in the **Option infer** box.  
+2. On the **Compile** tab, modify the value in the **Option infer** box.  
   
 ## Example  
  The following code compiles `test.vb` with local type inference enabled.  
@@ -44,6 +44,7 @@ vbc -optioninfer+ test.vb
 ```  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
 - [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)

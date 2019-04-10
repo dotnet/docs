@@ -18,6 +18,7 @@ The Windows Forms <xref:System.Windows.Forms.ComboBox> control is used to displa
  To add or delete items in a <xref:System.Windows.Forms.ComboBox> control, use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A>, <xref:System.Windows.Forms.ComboBox.ObjectCollection.Insert%2A>, <xref:System.Windows.Forms.ComboBox.ObjectCollection.Clear%2A> or <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method. Alternatively, you can add items to the list by using the <xref:System.Windows.Forms.ComboBox.Items%2A> property in the designer.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ComboBox>
 - [ListBox Control Overview](listbox-control-overview-windows-forms.md)
 - [When to Use a Windows Forms ComboBox Instead of a ListBox](when-to-use-a-windows-forms-combobox-instead-of-a-listbox.md)

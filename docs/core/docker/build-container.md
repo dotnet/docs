@@ -170,7 +170,7 @@ mcr.microsoft.com/dotnet/core/runtime   2.2                 d51bb4452469        
 myimage                                 latest              d51bb4452469        2 days ago          314MB
 ```
 
-Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Comparing the two images, they're exactly the same. Let's add two commands to the *Dockerfile*. Each command will create a new image layer with the final command representing the image the **myimage** repository will point to.
+Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add two commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the image the **myimage** repository will point to.
 
 
 ```dockerfile

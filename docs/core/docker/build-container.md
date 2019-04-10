@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you will learn how to containerize a .NET Core application with Docker.
-ms.date: 03/20/2019
+ms.date: 04/10/2019
 ms.topic: tutorial
 ms.custom: "mvc, seodec18"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
@@ -31,6 +31,20 @@ If you have .NET Core installed, use the `dotnet --info` command to determine wh
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop)
 
 - A temporary working directory for the *Dockerfile* and .NET Core example app.
+
+### Use SDK version 2.2
+
+If you're using an SDK that is newer, like 3.0, make sure that your app is forced to use the 2.2 SDK. Create a file named `global.json` in your working directory and paste in the following json code:
+
+```json
+{                                             
+  "sdk": {                                    
+    "version": "2.2.100"                      
+  }                                           
+}                                             
+```
+
+Save this file. The presence of file will force .NET Core to use version 2.2 for any `dotnet` command called from this directory and below.
 
 ## Create .NET Core app
 
@@ -103,20 +117,6 @@ If you pass a number on the command line to the app, it will only count up to th
 
 > [!NOTE]
 > Any parameters after `--` are passed to your application.
-
-### Using a newer SDK
-
-If you're using an SDK that is newer, like a 3.0 preview, make sure that your app is forced to use the 2.2 SDK. Create a file named `global.json` in your working directory and paste in the following json code:
-
-```json
-{                                             
-  "sdk": {                                    
-    "version": "2.2.100"                      
-  }                                           
-}                                             
-```
-
-Save this file. The presence of file will force .NET Core to use version 2.2 for any `dotnet` command called from this directory and below.
 
 ## Publish .NET Core app
 

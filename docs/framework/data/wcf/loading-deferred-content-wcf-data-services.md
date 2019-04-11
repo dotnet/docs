@@ -38,8 +38,8 @@ By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits t
   
  When a query requests that related entities are returned in a single response together with the requested entity set, paging limits may affect nested feeds that are included inline with the response. For example, when a paging limit is set in the Northwind sample data service for the `Customers` entity set, an independent paging limit can also be set for the related `Orders` entity set, as in the following example from the Northwind.svc.cs file that defines the Northwind sample data service.  
   
- [!code-csharp[Astoria Northwind Service#DataServiceConfigPaging](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind.svc.cs#dataserviceconfigpaging)]
- [!code-vb[Astoria Northwind Service#DataServiceConfigPaging](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind.svc.vb#dataserviceconfigpaging)]  
+ [!code-csharp[Astoria Northwind Service#DataServiceConfigPaging](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind.svc.cs#dataserviceconfigpaging)]
+ [!code-vb[Astoria Northwind Service#DataServiceConfigPaging](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind.svc.vb#dataserviceconfigpaging)]  
   
  In this case, you must implement paging for both the top-level `Customers` and the nested `Orders` entity feeds. The following example shows the `while` loop used to load pages of `Orders` entities related to a selected `Customers` entity.  
   

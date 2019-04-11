@@ -43,8 +43,8 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 ### Downloading the Binary Resource Stream  
  When retrieving a binary resource stream, you must call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance that is tracking the media link entry. This method sends a request to the data service that returns a <xref:System.Data.Services.Client.DataServiceStreamResponse> object, which has a reference to the stream that contains the resource. Use this method when your application requires the binary resource as a <xref:System.IO.Stream>. The following example shows how to call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method to retrieve a stream that is used to create a new image on the client:  
   
- [!code-csharp[Astoria Streaming Client#GetReadStreamClient](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria streaming client/cs/customerphotowindow.xaml.cs#getreadstreamclient)]
- [!code-vb[Astoria Streaming Client#GetReadStreamClient](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria streaming client/vb/customerphotowindow.xaml.vb#getreadstreamclient)]  
+ [!code-csharp[Astoria Streaming Client#GetReadStreamClient](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_streaming_client/cs/customerphotowindow.xaml.cs#getreadstreamclient)]
+ [!code-vb[Astoria Streaming Client#GetReadStreamClient](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_streaming_client/vb/customerphotowindow.xaml.vb#getreadstreamclient)]  
   
 > [!NOTE]
 >  The Content-Length header in the response message that contains the binary steam is not set by the data service. This value may not reflect the actual length of the binary data stream.  

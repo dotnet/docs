@@ -14,8 +14,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an opaque type that holds and saves all the relevant state information, which must be provided to the <see cref="T:System.Text.Json.Utf8JsonReader" /> to continue reading after processing incomplete data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+`JsonReaderState` is required to support reentrancy when reading incomplete data, and to continue reading once more data is available. 
+Unlike the <xref:System.Text.Json.Utf8JsonReader> struct, which is a ref struct,
+this type can survive across async/await boundaries, and hence it's required to provide support for reading more data asynchronously before continuing with a new instance of the <xref:System.Text.Json.Utf8JsonReader>.
+
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +44,22 @@
         <Parameter Name="options" Type="System.Text.Json.JsonReaderOptions" />
       </Parameters>
       <Docs>
-        <param name="maxDepth">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="maxDepth">The maximum depth allowed when reading JSON. This is an optional parameter, and its default value is 64. Reading past this depth throws a <see cref="T:System.Text.Json.JsonReaderException" /></param>
+        <param name="options">The customized behavior of the <see cref="T:System.Text.Json.Utf8JsonReader" /> that is different from the JSON RFC (for example, how to handle comments).
+            This is an optional parameter and, by default, the <see cref="T:System.Text.Json.Utf8JsonReader" /> struct follows the JSON RFC strictly (that is, comments within the JSON are invalid).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.Json.JsonReaderState" /> struct.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+A <xref:System.Text.Json.JsonReaderState> instance must be passed to the <xref:System.Text.Json.Utf8JsonReader> constructor with the JSON data.
+Unlike the <xref:System.Text.Json.Utf8JsonReader>, which is a ref struct, the state can survive across async/await boundaries, and hence this type is required to provide support for reading more data asynchronously before continuing with a new instance of the <xref:System.Text.Json.Utf8JsonReader> class.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="maxDepth" /> is less than or equal to 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="BytesConsumed">
@@ -56,8 +78,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of bytes consumed by the <see cref="T:System.Text.Json.Utf8JsonReader" /> so far for the given UTF-8 encoded input text.</summary>
+        <value>The total number of bytes consumed by the <see cref="T:System.Text.Json.Utf8JsonReader" /> so far.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +99,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the maximum depth allowed when reading JSON.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+        
+Reading past `MaxDepth` throws a <xref:System.Text.Json.JsonReaderException>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -98,8 +128,8 @@
         <ReturnType>System.Text.Json.JsonReaderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the custom behavior to use when reading JSON data using the <see cref="T:System.Text.Json.Utf8JsonReader" /> struct that may deviate from strict adherence to the JSON specification, which is the default behavior.</summary>
+        <value>The custom behavior to use when reading JSON data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +149,9 @@
         <ReturnType>System.SequencePosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current <see cref="T:System.SequencePosition" /> within the provided UTF-8 encoded input ReadOnlySequence&lt;byte&gt;. If the <see cref="T:System.Text.Json.Utf8JsonReader" /> struct was constructed
+            with a ReadOnlySpan&lt;byte&gt; instead, this will always return a default <see cref="T:System.SequencePosition" />.</summary>
+        <value>The current <see cref="T:System.SequencePosition" /> within the provided UTF-8 encoded input ReadOnlySequence&lt;byte&gt;.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

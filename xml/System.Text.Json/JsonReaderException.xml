@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The exception that is thrown when <see cref="T:System.Text.Json.Utf8JsonReader" /> encounters invalid data or data disallowed by any of its options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,11 +36,19 @@
         <Parameter Name="bytePositionInLine" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="bytePositionInLine">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The context-specific error message.</param>
+        <param name="lineNumber">The line number (starting at 0) at which the invalid JSON was encountered.</param>
+        <param name="bytePositionInLine">The byte count (starting at 0) in the current line where the invalid JSON was encountered.</param>
+        <summary>Creates a new exception object to relay error information to the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+        
+Note that the `bytePositionInLine` counts the number of bytes (that is, UTF-8 code units) and not characters or scalars.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BytePositionInLine">
@@ -59,8 +67,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bytes read within the current line (starting at 0) before the exception.</summary>
+        <value>The number of bytes read within the current line (starting at 0) before the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +92,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +114,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of lines read (starting at 0) before the exception.</summary>
+        <value>The number of lines read (starting at 0) before the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

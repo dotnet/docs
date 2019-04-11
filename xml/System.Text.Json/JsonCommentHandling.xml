@@ -13,7 +13,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines how the <see cref="T:System.Text.Json.Utf8JsonReader" /> struct handles comments.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows comments within the JSON input and treats them as valid tokens. While reading, the caller can to access the comment values.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disallow">
@@ -54,7 +54,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Doesn't allow comments within the JSON input. Comments are treated as invalid JSON if found, and a <see cref="T:System.Text.Json.JsonReaderException" /> is thrown. This is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -74,7 +74,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows comments within the JSON input and ignores them. The <see cref="T:System.Text.Json.Utf8JsonReader" /> behaves as if no comments are present.</summary>
       </Docs>
     </Member>
   </Members>

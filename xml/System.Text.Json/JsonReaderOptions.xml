@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the ability for the user to define custom behavior when reading JSON.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,17 @@
         <ReturnType>System.Text.Json.JsonCommentHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets how the <see cref="T:System.Text.Json.Utf8JsonReader" /> struct handles comments when reading through the JSON data.</summary>
+        <value>One of the enumeration values that indicates how comments are handled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+By default, the reader throws a <xref:System.Text.Json.JsonReaderException> if it encounters a comment.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

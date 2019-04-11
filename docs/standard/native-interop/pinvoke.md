@@ -13,6 +13,7 @@ P/Invoke is a technology that allows you to access structs, callbacks, and funct
 Let’s start from the most common example, and that is calling unmanaged functions in your managed code. Let’s show a message box from a command-line application:
 
 ```csharp
+using System;
 using System.Runtime.InteropServices;
 
 public class Program
@@ -20,7 +21,7 @@ public class Program
     // Import user32.dll (containing the function we need) and define
     // the method corresponding to the native function.
     [DllImport("user32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
-    public static extern int MessageBox(IntPtr hWnd, String text, String caption, int options);
+    public static extern int MessageBox(IntPtr hWnd, string lpText, string lpCaption, uint uType);
 
     public static void Main(string[] args)
     {

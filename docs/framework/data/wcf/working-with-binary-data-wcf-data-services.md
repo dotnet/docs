@@ -24,7 +24,7 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 ## Entity Metadata  
  An entity that has a related media resource stream is indicated in the data service metadata by the `HasStream` attribute applied to an entity type that is the media link entry. In the following example, the `PhotoInfo` entity is a media link entry that has a related media resource, indicated by the `HasStream` attribute.  
   
- [!code-xml[Astoria Photo Streaming Service#HasStream](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria photo streaming service/xml/photodata.edmx#hasstream)]  
+ [!code-xml[Astoria Photo Streaming Service#HasStream](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_photo_streaming_service/xml/photodata.edmx#hasstream)]  
   
  The remaining examples in this topic show how to access and change the media resource stream. For a complete example of how to consume a media resource stream in a .NET Framework client application by using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library, see the post [Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkID=201637).  
   

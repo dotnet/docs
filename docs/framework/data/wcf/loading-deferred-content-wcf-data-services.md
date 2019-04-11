@@ -18,23 +18,23 @@ By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits t
   
 -   **Eager loading**: You can use the `$expand` query option to request that the query return entities that are related by an association to the entity set that the query requested. Use the <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method on the <xref:System.Data.Services.Client.DataServiceQuery%601> to add the `$expand` option to the query that is sent to the data service. You can request multiple related entity sets by separating them by a comma, as in the following example. All entities requested by the query are returned in a single response. The following example returns `Order_Details` and `Customers` together with the `Orders` entity set:  
   
-     [!code-csharp[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#expandorderdetailsspecific)]
-     [!code-vb[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#expandorderdetailsspecific)]  
+     [!code-csharp[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#expandorderdetailsspecific)]
+     [!code-vb[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#expandorderdetailsspecific)]  
   
      [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits to 12 the number of entity sets that can be included in a single query by using the `$expand` query option.  
   
 -   **Explicit loading**: You can call the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance to explicitly load related entities. Each call to the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method creates a separate request to the data service. The following example explicitly loads `Order_Details` for an `Orders` entity:  
   
-     [!code-csharp[Astoria Northwind Client#LoadRelatedOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#loadrelatedorderdetailsspecific)]
-     [!code-vb[Astoria Northwind Client#LoadRelatedOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#loadrelatedorderdetailsspecific)]  
+     [!code-csharp[Astoria Northwind Client#LoadRelatedOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#loadrelatedorderdetailsspecific)]
+     [!code-vb[Astoria Northwind Client#LoadRelatedOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#loadrelatedorderdetailsspecific)]  
   
  When you consider which option to use, realize that there is a tradeoff between the number of requests to the data service and the amount of data that is returned in a single response. Use eager loading when your application requires associated objects and you want to avoid the added latency of additional requests to explicitly retrieve them. However, if there are cases when the application only needs the data for specific related entity instances, you should consider explicitly loading those entities by calling the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method. For more information, see [How to: Load Related Entities](../../../../docs/framework/data/wcf/how-to-load-related-entities-wcf-data-services.md).  
   
 ## Paged Content  
  When paging is enabled in the data service, the number of entries in the feed that the data service returns is limited by the configuration of the data service. Page limits can be set separately for each entity set. For more information, see [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md). When paging is enabled, the final entry in the feed contains a link to the next page of data. This link is contained in a <xref:System.Data.Services.Client.DataServiceQueryContinuation%601> object. You obtain the URI to the next page of data by calling the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method on the <xref:System.Data.Services.Client.QueryOperationResponse%601> returned when the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed. The returned <xref:System.Data.Services.Client.DataServiceQueryContinuation%601> object is then used to load the next page of results. You must enumerate the query result before you call the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method. Consider using a `do…while` loop to first enumerate the query result and then check for a `non-null` next link value. When the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method returns `null` (`Nothing` in Visual Basic), there are no additional result pages for the original query. The following example shows a `do…while` loop that loads paged customer data from the Northwind sample data service.  
   
- [!code-csharp[Astoria Northwind Client#LoadNextLink](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#loadnextlink)]
- [!code-vb[Astoria Northwind Client#LoadNextLink](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#loadnextlink)]  
+ [!code-csharp[Astoria Northwind Client#LoadNextLink](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#loadnextlink)]
+ [!code-vb[Astoria Northwind Client#LoadNextLink](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#loadnextlink)]  
   
  When a query requests that related entities are returned in a single response together with the requested entity set, paging limits may affect nested feeds that are included inline with the response. For example, when a paging limit is set in the Northwind sample data service for the `Customers` entity set, an independent paging limit can also be set for the related `Orders` entity set, as in the following example from the Northwind.svc.cs file that defines the Northwind sample data service.  
   
@@ -43,8 +43,8 @@ By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits t
   
  In this case, you must implement paging for both the top-level `Customers` and the nested `Orders` entity feeds. The following example shows the `while` loop used to load pages of `Orders` entities related to a selected `Customers` entity.  
   
- [!code-csharp[Astoria Northwind Client#LoadNextOrdersLink](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#loadnextorderslink)]
- [!code-vb[Astoria Northwind Client#LoadNextOrdersLink](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#loadnextorderslink)]  
+ [!code-csharp[Astoria Northwind Client#LoadNextOrdersLink](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#loadnextorderslink)]
+ [!code-vb[Astoria Northwind Client#LoadNextOrdersLink](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#loadnextorderslink)]  
   
  For more information, see [How to: Load Paged Results](../../../../docs/framework/data/wcf/how-to-load-paged-results-wcf-data-services.md).  
   

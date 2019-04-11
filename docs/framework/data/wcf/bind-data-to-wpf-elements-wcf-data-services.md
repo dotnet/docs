@@ -17,21 +17,21 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind W
 ## Example  
  The following example is from the code-behind page for an Extensible Application Markup Language (XAML) page that defines the `SalesOrders` window in WPF. When the window is loaded, a <xref:System.Data.Services.Client.DataServiceCollection%601> is created based on the result of a query that returns customers, filtered by country. All of the pages of this paged result are loaded, along with the related orders, and are bound to the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the <xref:System.Windows.Controls.StackPanel> that is the root layout control for the WPF window. For more information, see [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md).  
   
- [!code-csharp[Astoria Northwind Client#BindPagedData](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf3.xaml.cs#bindpageddata)]
- [!code-vb[Astoria Northwind Client#BindPagedData](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf3.xaml.vb#bindpageddata)]  
+ [!code-csharp[Astoria Northwind Client#BindPagedData](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderswpf3.xaml.cs#bindpageddata)]
+ [!code-vb[Astoria Northwind Client#BindPagedData](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderswpf3.xaml.vb#bindpageddata)]  
   
 ## Example  
  The following XAML defines the `SalesOrders` window in WPF for the previous example.  
   
- [!code-xaml[Astoria Northwind Client#BindPagedDataXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf3.xaml#bindpageddataxaml)]  
+ [!code-xaml[Astoria Northwind Client#BindPagedDataXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderswpf3.xaml#bindpageddataxaml)]  
   
 ## Example  
  The following example is from the code-behind page for an Extensible Application Markup Language (XAML) page that defines the `SalesOrders` window in WPF. When the window is loaded, a <xref:System.Data.Services.Client.DataServiceCollection%601> is created based on the result of a query that returns customers with related objects, filtered by country. This result is bound to the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the <xref:System.Windows.Controls.StackPanel> that is the root layout control for the WPF window.  
   
- [!code-csharp[Astoria Northwind Client#WpfDataBinding](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf.xaml.cs#wpfdatabinding)]
- [!code-vb[Astoria Northwind Client#WpfDataBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf.xaml.vb#wpfdatabinding)]  
+ [!code-csharp[Astoria Northwind Client#WpfDataBinding](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderswpf.xaml.cs#wpfdatabinding)]
+ [!code-vb[Astoria Northwind Client#WpfDataBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderswpf.xaml.vb#wpfdatabinding)]  
   
 ## Example  
  The following XAML defines the `SalesOrders` window in WPF for the previous example.  
   
- [!code-xaml[Astoria Northwind Client#WpfDataBindingXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf.xaml#wpfdatabindingxaml)]
+ [!code-xaml[Astoria Northwind Client#WpfDataBindingXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderswpf.xaml#wpfdatabindingxaml)]

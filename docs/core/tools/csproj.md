@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages and frameworks](/dotnet/core/packages). 
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages and frameworks](../packages.md). 
 
 ```xml
  <PropertyGroup>
@@ -36,11 +36,11 @@ Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicit
 
 ## Implicit version for some package references
 
-Most usages of [`<PackageReference>`](#packagereference) require setting the `Version` attribute to specify the NuGet package version to be used. When referencing [Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage-app) or [Microsoft.AspNetCore.All](/aspnet/core/fundamentals/metapackage), however, the  attribute is unnecessary. The .NET Core SDK can automatically select the version of these packages which should be used.
+Most usages of [`<PackageReference>`](#packagereference) require setting the `Version` attribute to specify the NuGet package version to be used. When referencing [Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage-app) or [Microsoft.AspNetCore.All](/aspnet/core/fundamentals/metapackage), however, the  attribute is unnecessary. The .NET Core SDK can automatically select the version of these packages that should be used.
 
 ### Recommendation
 
-When referencing Microsoft.AspNetCore.App or .All, do not specify the version of this package. If a version is specified, the SDK may produce warning NETSDK1071. To fix this warning, the recommended usage is:
+When referencing the `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` packages, do not specify their version. If a version is specified, the SDK may produce warning NETSDK1071. To fix this warning, remove the package version like in the following example:
 
 ```xml
 <ItemGroup>
@@ -48,11 +48,12 @@ When referencing Microsoft.AspNetCore.App or .All, do not specify the version of
 </ItemGroup>
 ```
 
-These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. Applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the  metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application&mdash;the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information, see "shared framework" in [.NET Core distribution packaging](/dotnet/core/build/distribution-packaging).
+These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. Applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../build/distribution-packaging.md).
 
-If a version *is* specified, it is treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as a *maximum* version for self-contained deployments. This can have the following consequences:
-* If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process will fail to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
-* If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version is not specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
+If a version *is* specified, it's treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as a *maximum* version for self-contained deployments. This can have the following consequences:
+
+* If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process fails to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
+* If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version isn't specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
 
 ## Default compilation includes in .NET Core projects
 

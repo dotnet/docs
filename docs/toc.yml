@@ -2375,12 +2375,13 @@
     href: visual-basic/walkthroughs.md
 - name: ML.NET
   items:
+  - name: Welcome to ML.NET
+    href: machine-learning/welcome.md
   - name: What is ML.NET?
-    href: machine-learning/index.md
+    href: machine-learning/what-is-mlnet.md
   - name: How does ML.NET work?
     href: machine-learning/basic-concepts-model-training-in-mldotnet.md
   - name: Tutorials
-    href: machine-learning/tutorials/index.md
     items:
     - name: Overview
       href: machine-learning/tutorials/index.md
@@ -2399,7 +2400,7 @@
   - name: How-to guides
     items:
     - name: Overview
-      href: machine-learning/howto-guides/index.md
+      href: machine-learning/how-to-guides/index.md
     - name: Load data
       href: machine-learning/how-to-guides/load-data.md
     - name: Prepare data
@@ -2426,10 +2427,10 @@
         href: machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md
       - name: Serve Model in Web API
         href: machine-learning/how-to-guides/serve-model-web-api-ml-net.md
-    - name: Infer.NET
-      items:
-      - name: Probabilistic programming with Infer.NET
-        href: machine-learning/how-to-guides/matchup-app-infer-net.md
+    - name: Write an ML.NET application in F#
+      href: machine-learning/how-to-guides/howto-fsharp-app.md    
+    - name: Create a probabilistic application with Infer.NET
+      href: machine-learning/how-to-guides/matchup-app-infer-net.md
   - name: Reference
     items:
     - name: API Reference

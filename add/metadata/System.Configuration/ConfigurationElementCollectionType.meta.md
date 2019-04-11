@@ -1,3 +1,0 @@
----
-uid: System.Configuration.ConfigurationElementCollectionType
----

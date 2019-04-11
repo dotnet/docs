@@ -1,3 +1,0 @@
----
-uid: Microsoft.JScript.AST
----

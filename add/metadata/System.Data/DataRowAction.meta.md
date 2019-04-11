@@ -1,3 +1,0 @@
----
-uid: System.Data.DataRowAction
----

@@ -1,3 +1,0 @@
----
-uid: System.Windows.DragEventHandler
----

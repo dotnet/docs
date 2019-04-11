@@ -1,3 +1,0 @@
----
-uid: System.Security.Claims
----

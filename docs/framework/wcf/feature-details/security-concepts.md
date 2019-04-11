@@ -31,6 +31,7 @@ This section briefly explains the concepts associated with Windows Communication
  [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)  
   
 ## See also
+
 - [Security](../../../../docs/framework/wcf/feature-details/security.md)
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

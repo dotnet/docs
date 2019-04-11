@@ -20,13 +20,13 @@ In many applications, a date and time value is intended to unambiguously identif
   
 ### To round-trip a DateTime value  
   
-1.  Convert the <xref:System.DateTime> value to its string representation by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method with the "o" format specifier.  
+1. Convert the <xref:System.DateTime> value to its string representation by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method with the "o" format specifier.  
   
-2.  Save the string representation of the <xref:System.DateTime> value to a file, or pass it across a process, application domain, or machine boundary.  
+2. Save the string representation of the <xref:System.DateTime> value to a file, or pass it across a process, application domain, or machine boundary.  
   
-3.  Retrieve the string that represents the <xref:System.DateTime> value.  
+3. Retrieve the string that represents the <xref:System.DateTime> value.  
   
-4.  Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> as the value of the `styles` parameter.  
+4. Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> as the value of the `styles` parameter.  
   
  The following example illustrates how to round-trip a <xref:System.DateTime> value.  
   
@@ -37,13 +37,13 @@ In many applications, a date and time value is intended to unambiguously identif
   
 ### To round-trip a DateTimeOffset value  
   
-1.  Convert the <xref:System.DateTimeOffset> value to its string representation by calling the <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> method with the "o" format specifier.  
+1. Convert the <xref:System.DateTimeOffset> value to its string representation by calling the <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> method with the "o" format specifier.  
   
-2.  Save the string representation of the <xref:System.DateTimeOffset> value to a file, or pass it across a process, application domain, or machine boundary.  
+2. Save the string representation of the <xref:System.DateTimeOffset> value to a file, or pass it across a process, application domain, or machine boundary.  
   
-3.  Retrieve the string that represents the <xref:System.DateTimeOffset> value.  
+3. Retrieve the string that represents the <xref:System.DateTimeOffset> value.  
   
-4.  Call the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> as the value of the `styles` parameter.  
+4. Call the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> as the value of the `styles` parameter.  
   
  The following example illustrates how to round-trip a <xref:System.DateTimeOffset> value.  
   
@@ -54,18 +54,18 @@ In many applications, a date and time value is intended to unambiguously identif
   
 ### To round-trip a date and time value with its time zone  
   
-1.  Define a class or a structure with two fields. The first field is either a <xref:System.DateTime> or a <xref:System.DateTimeOffset> object, and the second is a <xref:System.TimeZoneInfo> object. The following example is a simple version of such a type.  
+1. Define a class or a structure with two fields. The first field is either a <xref:System.DateTime> or a <xref:System.DateTimeOffset> object, and the second is a <xref:System.TimeZoneInfo> object. The following example is a simple version of such a type.  
   
      [!code-csharp[Formatting.HowTo.RoundTrip#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.RoundTrip/cs/RoundTrip.cs#3)]
      [!code-vb[Formatting.HowTo.RoundTrip#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.RoundTrip/vb/RoundTrip.vb#3)]  
   
-2.  Mark the class with the <xref:System.SerializableAttribute> attribute.  
+2. Mark the class with the <xref:System.SerializableAttribute> attribute.  
   
-3.  Serialize the object using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> method.  
+3. Serialize the object using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> method.  
   
-4.  Restore the object using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> method.  
+4. Restore the object using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> method.  
   
-5.  Cast (in C#) or convert (in Visual Basic) the deserialized object to an object of the appropriate type.  
+5. Cast (in C#) or convert (in Visual Basic) the deserialized object to an object of the appropriate type.  
   
  The following example illustrates how to round-trip an object that stores both date and time and time zone information.  
   

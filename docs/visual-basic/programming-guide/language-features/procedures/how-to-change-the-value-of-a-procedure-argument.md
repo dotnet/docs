@@ -25,13 +25,13 @@ When you call a procedure, each argument you supply corresponds to one of the pa
   
 #### To change the underlying value of a procedure argument in the calling code  
   
-1.  In the procedure declaration, specify [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) for the parameter corresponding to the argument.  
+1. In the procedure declaration, specify [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) for the parameter corresponding to the argument.  
   
-2.  In the calling code, pass a modifiable programming element as the argument.  
+2. In the calling code, pass a modifiable programming element as the argument.  
   
-3.  In the calling code, do not enclose the argument in parentheses in the argument list.  
+3. In the calling code, do not enclose the argument in parentheses in the argument list.  
   
-4.  In the procedure code, use the parameter name to assign a value to the underlying element in the calling code.  
+4. In the procedure code, use the parameter name to assign a value to the underlying element in the calling code.  
   
  See the example further down for a demonstration.  
   
@@ -40,13 +40,13 @@ When you call a procedure, each argument you supply corresponds to one of the pa
   
 #### To change the copy of a procedure argument in the procedure code  
   
-1.  In the procedure declaration, specify [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) for the parameter corresponding to the argument.  
+1. In the procedure declaration, specify [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) for the parameter corresponding to the argument.  
   
      -or-  
   
      In the calling code, enclose the argument in parentheses in the argument list. This forces Visual Basic to pass the argument by value, even if the corresponding parameter specifies `ByRef`.  
   
-2.  In the procedure code, use the parameter name to assign a value to the local copy of the argument. The underlying value in the calling code is not changed.  
+2. In the procedure code, use the parameter name to assign a value to the local copy of the argument. The underlying value in the calling code is not changed.  
   
 ## Example  
  The following example shows two procedures that take an array variable and operate on its elements. The `increase` procedure simply adds one to each element. The `replace` procedure assigns a new array to the parameter `a()` and then adds one to each element.  
@@ -72,6 +72,7 @@ When you call a procedure, each argument you supply corresponds to one of the pa
  There is always a potential risk in allowing a procedure to change the value underlying an argument in the calling code. Make sure you expect this value to be changed, and be prepared to check it for validity before using it.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)

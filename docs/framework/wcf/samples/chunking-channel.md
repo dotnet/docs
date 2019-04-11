@@ -197,11 +197,11 @@ as the ChunkingStart message.
   
  At the next level down, `ChunkingChannel` relies on several components to implement the chunking protocol. On the send side, the channel uses a custom <xref:System.Xml.XmlDictionaryWriter> called `ChunkingWriter` that does the actual chunking. `ChunkingWriter` uses the inner channel directly to send chunks. Using a custom `XmlDictionaryWriter` allows us to send out chunks as the large body of the original message is being written. This means we do not buffer the entire original message.  
   
- ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel1.gif "ChunkingChannel1")  
+ ![Diagram that shows the chunking channel send architecture.](./media/chunking-channel/chunking-channel-send.gif)  
   
  On the receive side, `ChunkingChannel` pulls messages from the inner channel and hands them to a custom <xref:System.Xml.XmlDictionaryReader> called `ChunkingReader`, which reconstitutes the original message from the incoming chunks. `ChunkingChannel` wraps this `ChunkingReader` in a custom `Message` implementation called `ChunkingMessage` and returns this message to the layer above. This combination of `ChunkingReader` and `ChunkingMessage` allows us to de-chunk the original message body as it is being read by the layer above instead of having to buffer the entire original message body. `ChunkingReader` has a queue where it buffers incoming chunks up to a maximum configurable number of buffered chunks. When this maximum limit is reached, the reader waits for messages to be drained from the queue by the layer above (that is, by just reading from the original message body) or until the maximum receive timeout is reached.  
   
- ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel2.gif "ChunkingChannel2")  
+ ![Diagram that shows the chunking channel receive architecture.](./media/chunking-channel/chunking-channel-receive.gif)  
   
 ## Chunking Programming Model  
  Service developers can specify which messages are to be chunked by applying the `ChunkingBehavior` attribute to operations within the contract. The attribute exposes an `AppliesTo` property that allows the developer to specify whether chunking applies to the input message, the output message or both. The following example shows the usage of `ChunkingBehavior` attribute:  
@@ -303,19 +303,19 @@ interface ITestService
   
 #### To set up, build, and run the sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-5.  Run Service.exe first, then run Client.exe and watch both console windows for output.  
+5. Run Service.exe first, then run Client.exe and watch both console windows for output.  
   
  When running the sample, the following output is expected.  
   
@@ -371,5 +371,3 @@ Service started, press enter to exit
  > Sent chunk 9 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
  > Sent chunk 10 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
 ```  
-  
-## See also

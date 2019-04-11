@@ -17,15 +17,15 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method r
   
 ### To copy files with a specific pattern to a directory  
   
-1.  Use the `GetFiles` method to return the list of files. This example returns all .rtf files in the specified directory.  
+1. Use the `GetFiles` method to return the list of files. This example returns all .rtf files in the specified directory.  
   
      [!code-vb[VbFileIOMisc#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#36)]  
   
-2.  Use the `CopyFile` method to copy the files. This example copies the files to the directory named `testdirectory`.  
+2. Use the `CopyFile` method to copy the files. This example copies the files to the directory named `testdirectory`.  
   
      [!code-vb[VbVbcnMyFileSystem#88](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#88)]  
   
-3.  Close the `For` statement with a `Next` statement.  
+3. Close the `For` statement with a `Next` statement.  
   
      [!code-vb[VbVbcnMyFileSystem#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#89)]  
   
@@ -52,6 +52,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method r
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>). The user lacks necessary permissions (<xref:System.UnauthorizedAccessException>).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>
 - <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A>
 - [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)

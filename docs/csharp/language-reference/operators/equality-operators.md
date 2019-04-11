@@ -62,7 +62,7 @@ The following example demonstrates the usage of the `!=` operator:
 
 ## Operator overloadability
 
-User-defined types can [overload](../keywords/operator.md) the `==` and `!=` operators. If a type overloads one of the two operators, it must also overload another one.
+A user-defined type can [overload](../keywords/operator.md) the `==` and `!=` operators. If a type overloads one of the two operators, it must also overload another one.
 
 ## C# language specification
 

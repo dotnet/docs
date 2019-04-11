@@ -13,5 +13,6 @@ This topic describes some of the issues that developers frequently encounter whe
  To work around problems with equality comparison, consider coding your application so that variations in the least significant digits are ignored. For example, instead of comparing to see whether two numbers are equal, subtract one number from the other number. If the difference is within an acceptable margin of rounding, your application can treat the numbers as if they are the same.  
   
 ## See also
+
 - [Why Floating-Point Numbers May Lose Precision](/cpp/build/reference/why-floating-point-numbers-may-lose-precision)
 - [ADO.NET Overview](ado-net-overview.md)

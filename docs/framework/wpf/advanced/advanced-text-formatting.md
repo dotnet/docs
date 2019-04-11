@@ -17,9 +17,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
 > [!NOTE]
 >  All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
-  
 
-  
 <a name="prereq"></a>   
 ## Prerequisites  
  This topic assumes that you are familiar with the higher level [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] used for text presentation. Most user scenarios will not require the advanced text formatting [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] discussed in this topic. For an introduction to the different text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see [Documents in WPF](documents-in-wpf.md).  
@@ -88,5 +86,6 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
  <xref:System.Windows.Media.TextFormatting.TextRun> objects are formatted by using properties provided by the text store. These properties come in two types, <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties>. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> handle paragraph inclusive properties such as <xref:System.Windows.TextAlignment> and <xref:System.Windows.FlowDirection>. <xref:System.Windows.Media.TextFormatting.TextRunProperties> are properties that can be different for each text run within a paragraph, such as foreground brush, <xref:System.Windows.Media.Typeface>, and font size. To implement custom paragraph and custom text run property types, your application must create classes that derive from <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties> respectively.  
   
 ## See also
+
 - [Typography in WPF](typography-in-wpf.md)
 - [Documents in WPF](documents-in-wpf.md)

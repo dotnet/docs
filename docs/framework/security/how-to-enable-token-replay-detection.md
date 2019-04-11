@@ -48,17 +48,17 @@ author: "BrucePerlerMS"
   
 #### To create a simple ASP.NET application  
   
-1.  Start Visual Studio and click **File**, **New**, and then **Project**.  
+1. Start Visual Studio and click **File**, **New**, and then **Project**.  
   
-2.  In the **New Project** window, click **ASP.NET Web Forms Application**.  
+2. In the **New Project** window, click **ASP.NET Web Forms Application**.  
   
-3.  In **Name**, enter `TestApp` and press **OK**.  
+3. In **Name**, enter `TestApp` and press **OK**.  
   
-4.  Right-click the **TestApp** project under **Solution Explorer**, then select **Identity and Access**.  
+4. Right-click the **TestApp** project under **Solution Explorer**, then select **Identity and Access**.  
   
-5.  The **Identity and Access** window appears. Under **Providers**, select **Test your application with the Local Development STS**, then click **Apply**.  
+5. The **Identity and Access** window appears. Under **Providers**, select **Test your application with the Local Development STS**, then click **Apply**.  
   
-6.  Add the following **\<tokenReplayDetection>** element to the *Web.config* configuration file immediately following the **\<system.identityModel>** and **\<identityConfiguration>** elements, like shown:  
+6. Add the following **\<tokenReplayDetection>** element to the *Web.config* configuration file immediately following the **\<system.identityModel>** and **\<identityConfiguration>** elements, like shown:  
   
     ```xml  
     <system.identityModel>  
@@ -71,8 +71,8 @@ author: "BrucePerlerMS"
   
 #### To test your WIF-enabled ASP.NET application for replay detection  
   
-1.  Run the solution by pressing the **F5** key. You should be presented with the default ASP.NET Home Page and automatically authenticated with the username *Terry*, which is the default user that is returned by the Development STS.  
+1. Run the solution by pressing the **F5** key. You should be presented with the default ASP.NET Home Page and automatically authenticated with the username *Terry*, which is the default user that is returned by the Development STS.  
   
-2.  Press the browser’s **Back** button. You should be presented with a **Server Error in ‘/’ Application** page with the following description: *ID1062: Replay has been detected for: Token: 'System.IdentityModel.Tokens.SamlSecurityToken'*, followed by an *AssertionId* and an *Issuer*.  
+2. Press the browser’s **Back** button. You should be presented with a **Server Error in ‘/’ Application** page with the following description: *ID1062: Replay has been detected for: Token: 'System.IdentityModel.Tokens.SamlSecurityToken'*, followed by an *AssertionId* and an *Issuer*.  
   
      You are seeing this error page because an exception of type <xref:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException> was thrown when the token replay was detected. This error occurs because you are attempting to re-send the initial POST request when the token was first presented. The **Back** button will not cause this behavior on subsequent requests to the server.

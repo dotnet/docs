@@ -15,7 +15,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
   
 ### To designate the cancel button  
   
-1.  Set the form's <xref:System.Windows.Forms.Form.CancelButton%2A> property to the appropriate <xref:System.Windows.Forms.Button> control.  
+1. Set the form's <xref:System.Windows.Forms.Form.CancelButton%2A> property to the appropriate <xref:System.Windows.Forms.Button> control.  
   
     ```vb  
     Private Sub SetCancelButton(ByVal myCancelBtn As Button)  
@@ -39,6 +39,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.Form.CancelButton%2A>
 - [Button Control Overview](button-control-overview-windows-forms.md)
 - [Ways to Select a Windows Forms Button Control](ways-to-select-a-windows-forms-button-control.md)

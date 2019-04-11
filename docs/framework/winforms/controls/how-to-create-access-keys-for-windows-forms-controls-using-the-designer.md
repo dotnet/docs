@@ -24,9 +24,10 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
   
 ### To create an access key for a control  
   
-1.  In the **Properties** window, set the `Text` property to a string that includes an ampersand (&) before the letter that will be the access key. For example, to set the letter "P" as the access key, type **&Print** into the grid.  
+1. In the **Properties** window, set the `Text` property to a string that includes an ampersand (&) before the letter that will be the access key. For example, to set the letter "P" as the access key, type **&Print** into the grid.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Button>
 - [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
 - [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)

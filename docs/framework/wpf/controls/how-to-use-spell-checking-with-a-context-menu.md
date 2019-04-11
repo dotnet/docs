@@ -33,6 +33,7 @@ By default, when you enable spell checking in an editing control like <xref:Syst
  `spellingError = myRichTextBox.GetSpellingError(myRichTextBox.CaretPosition);`  
   
 ## See also
+
 - [TextBox Overview](textbox-overview.md)
 - [RichTextBox Overview](richtextbox-overview.md)
 - [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md)

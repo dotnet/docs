@@ -14,10 +14,9 @@ ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
 # Loop Structures (Visual Basic)
 Visual Basic loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
   
- The following illustration shows a loop structure that runs a set of statements until a condition becomes true.  
+ The following illustration shows a loop structure that runs a set of statements until a condition becomes true:  
   
- ![Flow chart of a Do...Until loop](../../../../visual-basic/programming-guide/language-features/control-flow/media/dountilloop.gif "DoUntilLoop")  
-Running a set of statements until a condition becomes true  
+ ![Flow chart that shows a Do...Until loop.](./media/loop-structures/do-until-loop-true-condition.gif)  
   
 ## While Loops  
  The `While`...`End While` construction runs a set of statements as long as the condition specified in the `While` statement is `True`. For more information, see [While...End While Statement](../../../../visual-basic/language-reference/statements/while-end-while-statement.md).  
@@ -32,6 +31,7 @@ Running a set of statements until a condition becomes true
  The `For Each`...`Next` construction runs a set of statements once for each element in a collection. You specify the loop control variable, but you do not have to determine starting or ending values for it. For more information, see [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
   
 ## See also
+
 - [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
 - [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

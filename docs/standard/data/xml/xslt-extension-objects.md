@@ -26,11 +26,11 @@ Extension objects are used to extend the functionality of style sheets. Extensio
   
 ### To use an XSLT extension object  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> object and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> object and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method.  
   
-2.  Call the extension object from the style sheet.  
+2. Call the extension object from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
   
 ## See also
 

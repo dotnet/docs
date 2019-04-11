@@ -26,6 +26,7 @@ Oftentimes, you will want to convert from one image file format to another. You 
 -   A reference to the `System.Drawing.Imaging` namespace.  
   
 ## See also
+
 - [How to: List Installed Encoders](how-to-list-installed-encoders.md)
 - [Using Image Encoders and Decoders in Managed GDI+](using-image-encoders-and-decoders-in-managed-gdi.md)
 - [Types of Bitmaps](types-of-bitmaps.md)

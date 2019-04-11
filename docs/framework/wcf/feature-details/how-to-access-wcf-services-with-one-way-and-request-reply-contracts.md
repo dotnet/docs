@@ -8,7 +8,7 @@ The following procedures describe how to access a Windows Communication Foundati
   
 ### To define the service  
   
-1.  Declare the service contract. The operations that are to be one-way must have `IsOneWay` set to `true` within the <xref:System.ServiceModel.OperationContractAttribute>. The following code declares the `IOneWayCalculator` contract that has one-way operations for `Add`, `Subtract`, `Multiply`, and `Divide`. It also defines a request response operation called `SayHello`.  
+1. Declare the service contract. The operations that are to be one-way must have `IsOneWay` set to `true` within the <xref:System.ServiceModel.OperationContractAttribute>. The following code declares the `IOneWayCalculator` contract that has one-way operations for `Add`, `Subtract`, `Multiply`, and `Divide`. It also defines a request response operation called `SayHello`.  
   
     ```csharp  
     [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
@@ -27,7 +27,7 @@ The following procedures describe how to access a Windows Communication Foundati
     }  
     ```  
   
-2.  Implement the service contract. The following code implements the `IOnewayCalculator` interface.  
+2. Implement the service contract. The following code implements the `IOnewayCalculator` interface.  
   
     ```csharp  
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.PerCall)]  
@@ -65,7 +65,7 @@ The following procedures describe how to access a Windows Communication Foundati
     }  
     ```  
   
-3.  Host the service in a console application. The following code shows how to host the service.  
+3. Host the service in a console application. The following code shows how to host the service.  
   
     ```csharp  
     // Host the service within this EXE console application.  
@@ -103,7 +103,7 @@ The following procedures describe how to access a Windows Communication Foundati
   
 ### To access the service  
   
-1.  Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) using the metadata exchange endpoint address to create the client class for the service using the following command line: `Svcutil http://localhost:8000/Service` The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) generates a set of interfaces and classes, as shown in the following sample code.  
+1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) using the metadata exchange endpoint address to create the client class for the service using the following command line: `Svcutil http://localhost:8000/Service` The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) generates a set of interfaces and classes, as shown in the following sample code.  
   
     ```csharp  
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -190,7 +190,7 @@ The following procedures describe how to access a Windows Communication Foundati
   
      Notice in the `IOneWayCalculator` interface that the one-way service operations have the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> attribute set to `true` and the request-reply service operation has the attribute set to the default value, `false`. Also notice the `OneWayCalculatorClient` class. This is the class that you will use to call the service.  
   
-2.  Create the client object.  
+2. Create the client object.  
   
     ```csharp  
     // Create a client  
@@ -199,7 +199,7 @@ The following procedures describe how to access a Windows Communication Foundati
     OneWayCalculatorClient client = new OneWayCalculatorClient(binding, epAddress);  
     ```  
   
-3.  Call service operations.  
+3. Call service operations.  
   
     ```csharp  
     // Call the Add service operation.  
@@ -233,7 +233,7 @@ The following procedures describe how to access a Windows Communication Foundati
     Console.WriteLine("SayHello() returned: " + response);  
     ```  
   
-4.  Close the client to close connections and clean up resources.  
+4. Close the client to close connections and clean up resources.  
   
     ```csharp  
     //Closing the client gracefully closes the connection and cleans up resources  
@@ -395,4 +395,5 @@ namespace Microsoft.ServiceModel.Samples
 ```  
   
 ## See also
+
 - [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)

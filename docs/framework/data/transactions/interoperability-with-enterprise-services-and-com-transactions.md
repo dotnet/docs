@@ -31,7 +31,7 @@ The <xref:System.Transactions> namespace supports interoperability between trans
   
  In summary, the following rules apply when creating a new transaction scope:  
   
-1.  <xref:System.Transactions.Transaction.Current%2A> is checked to see if there is a transaction. This check results in:  
+1. <xref:System.Transactions.Transaction.Current%2A> is checked to see if there is a transaction. This check results in:  
   
     -   A check to see if there is a scope.  
   
@@ -43,9 +43,9 @@ The <xref:System.Transactions> namespace supports interoperability between trans
   
          If the value is <xref:System.Transactions.EnterpriseServicesInteropOption.Full>, there is only one transaction and it is a COM+ transaction.  
   
-2.  The value of the <xref:System.Transactions.TransactionScopeOption> enumeration passed in by the <xref:System.Transactions.TransactionScope> constructor is checked. This determines if a new transaction must be created.  
+2. The value of the <xref:System.Transactions.TransactionScopeOption> enumeration passed in by the <xref:System.Transactions.TransactionScope> constructor is checked. This determines if a new transaction must be created.  
   
-3.  If a new transaction is to be created, the following values of <xref:System.Transactions.EnterpriseServicesInteropOption> result in:  
+3. If a new transaction is to be created, the following values of <xref:System.Transactions.EnterpriseServicesInteropOption> result in:  
   
     -   <xref:System.Transactions.EnterpriseServicesInteropOption.Full>:  a transaction associated with a COM+ context is created.  
   

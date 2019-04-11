@@ -93,7 +93,6 @@ There is a two-way relationship between frameworks and packages. The first part 
 
 The second part of the relationship is asset selection. Packages can contain assets for multiple frameworks. Given a reference to a set of packages and/or metapackages, the framework is needed to determine which asset should be selected, for example `net46` or `netstandard1.3`. It is important to select the correct asset. For example, a `net46` asset is not likely to be compatible with .NET Framework 4.0 or .NET Core 1.0.
 
-
 You can see this relationship in the following image. The *API* targets and defines the *framework*. The *framework* is used for *asset selection*. The *asset* gives you the API.
 
 ![Package-based Framework Composition](./media/packages/package-framework.png)

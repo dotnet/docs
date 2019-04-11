@@ -200,17 +200,17 @@ Creating new service instance...
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have installed SQL Server 2005 Express Edition or SQL Server 2005. In the service's App.config file, the database `connectionString` may be set or the database interactions may be disabled by setting the appSettings `usingSql` value to `false`.  
+1. Ensure that you have installed SQL Server 2005 Express Edition or SQL Server 2005. In the service's App.config file, the database `connectionString` may be set or the database interactions may be disabled by setting the appSettings `usingSql` value to `false`.  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
  If you run the sample across machines, you must configure the Microsoft Distributed Transaction Coordinator (MSDTC) to enable network transaction flow and use the WsatConfig.exe tool to enable Windows Communication Foundation (WCF) transactions network support.  
   
 ### To configure the Microsoft Distributed Transaction Coordinator (MSDTC) to support running the sample across machines  
   
-1.  On the service machine, configure MSDTC to allow incoming network transactions.  
+1. On the service machine, configure MSDTC to allow incoming network transactions.  
   
     1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
@@ -224,7 +224,7 @@ Creating new service instance...
   
     6.  Click **OK** to close the dialog box.  
   
-2.  On the service machine and the client machine, configure the Windows Firewall to include the Microsoft Distributed Transaction Coordinator (MSDTC) to the list of excepted applications:  
+2. On the service machine and the client machine, configure the Windows Firewall to include the Microsoft Distributed Transaction Coordinator (MSDTC) to the list of excepted applications:  
   
     1.  Run the Windows Firewall application from Control Panel.  
   
@@ -236,7 +236,7 @@ Creating new service instance...
   
     5.  Click **OK** to close the **Add Program** dialog box, and click **OK** again to close the Windows Firewall applet.  
   
-3.  On the client machine, configure MSDTC to allow outgoing network transactions:  
+3. On the client machine, configure MSDTC to allow outgoing network transactions:  
   
     1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
@@ -258,5 +258,3 @@ Creating new service instance...
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Transactions`  
-  
-## See also

@@ -244,4 +244,5 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
  The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] model removes the need for providers to call through to other provider code. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core service does all the necessary aggregation.  
   
 ## See also
+
 - [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

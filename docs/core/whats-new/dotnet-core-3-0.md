@@ -30,7 +30,6 @@ For more information about what was released with each version, see the followin
 - [Take C# 8.0 for a spin](https://devblogs.microsoft.com/dotnet/take-c-8-0-for-a-spin/)
 - [Building C# 8.0](https://devblogs.microsoft.com/dotnet/building-c-8-0/)
 
-
 ### Ranges and indices
 
 The new `Index` type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
@@ -66,8 +65,8 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
->[!NOTE]
->You need .NET Core 3.0 Preview 2 to use async streams if you want to develop with either Visual Studio 2019 Preview 2 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2 at the command line, then everything will work as expected.
+> [!NOTE]
+> You need .NET Core 3.0 Preview 2 to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2 at the command line, then everything will work as expected.
 
 ### Using Declarations
 
@@ -166,7 +165,6 @@ During `dotnet build` or `dotnet publish`, an executable is created provided tha
 
 There are some operations, like linking and razor page publishing that will still require publishing.
 
-
 ## Local dotnet tools
 
 >[!WARNING]
@@ -264,7 +262,7 @@ dotnet new wpf
 dotnet new winforms
 ```
 
-Visual Studio 2019 Preview 2 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF. Designers are still not yet supported. And you can open, launch, and debug these projects in Visual Studio 2019.
+Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF. Designers are still not yet supported. And you can open, launch, and debug these projects in Visual Studio 2019.
 
 Visual Studio 2017 15.9 adds the ability to [enable .NET Core previews](https://devblogs.microsoft.com/dotnet/net-core-tooling-update-for-visual-studio-2017-version-15-9/), but you need to turn that feature on, and it's not a supported scenario.
 
@@ -304,7 +302,7 @@ Please share your feedback on the [dotnet/winforms](https://github.com/dotnet/wi
 
 [MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows app package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
 
-The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019 Preview 2, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
+The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
 
 >Note: The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
 ```xml
@@ -478,7 +476,6 @@ Assembly unloadability was provided in the .NET Framework by Application Domains
 Windows offers a rich native API, in the form of flat C APIs, COM, and WinRT. Since .NET Core 1.0, **P/Invoke** has been supported. Now with .NET Core 3.0, support for the ability to **CoCreate COM APIs** and **Activate WinRT APIs** has been added.
 
 You can see an example of using COM with the [Excel Demo source code](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo).
-
 
 ## Type: SequenceReader
 
@@ -768,7 +765,6 @@ Two new packages have been released to NuGet that you can use for GPIO programmi
 The GPIO Packages includes APIs for GPIO, SPI, I2C and PWM devices. The IoT bindings package includes [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) for various chips and sensors, the same ones available at [dotnet/iot - src/devices](https://github.com/dotnet/iot/tree/master/src/devices).
 
 The updated serial port APIs that were announced as part of .NET Core 3.0 Preview 1 are not part of these packages but are available as part of the .NET Core platform.
-
 
 ## Platform Support
 

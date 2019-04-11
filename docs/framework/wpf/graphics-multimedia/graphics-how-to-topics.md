@@ -21,6 +21,7 @@ The following topics demonstrate how to use the graphic capabilities of the [!IN
  [How to: Use a Cached Element as a Brush](how-to-use-a-cached-element-as-a-brush.md)  
   
 ## See also
+
 - <xref:System.Windows.Shapes.Shape>
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Imaging.BitmapImage>

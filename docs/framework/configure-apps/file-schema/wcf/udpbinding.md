@@ -98,6 +98,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.Binding>
 - <xref:System.ServiceModel.Channels.BindingElement>
 - <xref:System.ServiceModel.BasicHttpBinding>

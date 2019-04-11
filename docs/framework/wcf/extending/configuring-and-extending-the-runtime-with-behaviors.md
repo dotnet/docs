@@ -48,16 +48,16 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 #### Service Behaviors  
  Service behaviors, which implement <xref:System.ServiceModel.Description.IServiceBehavior>, are the primary mechanism by which you modify the entire service runtime. There are three mechanisms for adding service behaviors to a service.  
   
-1.  Using an attribute on the service class.  When a <xref:System.ServiceModel.ServiceHost> is constructed, the <xref:System.ServiceModel.ServiceHost> implementation uses reflection to discover the set of attributes on the type of the service. If any of those attributes are implementations of <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This allows those behaviors to participate in the construction of the service run time.  
+1. Using an attribute on the service class.  When a <xref:System.ServiceModel.ServiceHost> is constructed, the <xref:System.ServiceModel.ServiceHost> implementation uses reflection to discover the set of attributes on the type of the service. If any of those attributes are implementations of <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This allows those behaviors to participate in the construction of the service run time.  
   
-2.  Programmatically adding the behavior to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This can be accomplished with the following lines of code:  
+2. Programmatically adding the behavior to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>. This can be accomplished with the following lines of code:  
   
     ```csharp
     ServiceHost host = new ServiceHost(/* Parameters */);  
     host.Description.Behaviors.Add(/* Service Behavior */);  
     ```  
   
-3.  Implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration. This enables the use of the service behavior from application configuration files.  
+3. Implementing a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration. This enables the use of the service behavior from application configuration files.  
   
  Examples of service behaviors in WCF include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>, and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
   
@@ -83,9 +83,9 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
  There are two mechanisms for adding endpoint behaviors to a service.  
   
-1.  Add the behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
+1. Add the behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property.  
   
-2.  Implement a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration.  
+2. Implement a custom <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that extends configuration.  
   
  For more information and an example, see the reference topic.  
   
@@ -182,23 +182,23 @@ protected override object CreateBehavior()
   
  The <xref:System.ServiceModel.ServiceHost> applies behaviors in the following order:  
   
-1.  Service  
+1. Service  
   
-2.  Contract  
+2. Contract  
   
-3.  Endpoint  
+3. Endpoint  
   
-4.  Operation  
+4. Operation  
   
  Within any collection of behaviors, no order is guaranteed.  
   
  The <xref:System.ServiceModel.ChannelFactory%601> applies behaviors in the following order:  
   
-1.  Contract  
+1. Contract  
   
-2.  Endpoint  
+2. Endpoint  
   
-3.  Operation  
+3. Operation  
   
  Within any collection of behaviors, again, no order is guaranteed.  
   

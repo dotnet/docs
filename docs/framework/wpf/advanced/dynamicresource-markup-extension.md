@@ -67,6 +67,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
  `DynamicResource` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   
 ## See also
+
 - [XAML Resources](xaml-resources.md)
 - [Resources and Code](resources-and-code.md)
 - [x:Key Directive](../../xaml-services/x-key-directive.md)

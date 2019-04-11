@@ -10,7 +10,7 @@ Parameter arrays must be passed by value.
   
 ## To correct this error  
   
-1.  Pass the arguments `ByVal`, rather than by naming them.  
+1. Pass the arguments `ByVal`, rather than by naming them.  
   
 ## See also
 

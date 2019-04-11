@@ -9,9 +9,7 @@ ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 ---
 # Document Serialization and Storage
 Microsoft .NET Framework provides a powerful environment for creating and displaying high quality documents.  Enhanced features that support both fixed-documents and flow-documents, advanced viewing controls, combined with powerful 2D and 3D graphic capabilities take .NET Framework applications to a new level of quality and user experience.  Being able to flexibly manage an in-memory representation of a document is a key feature of .NET Framework, and being able to efficiently save and load documents from a data store is a need of almost every application.  The process of converting a document from an internal in-memory representation to an external data store is termed serialization.  The reverse process of reading a data store and recreating the original in-memory instance is termed deserialization.  
-  
- 
-  
+
 <a name="AboutSerialization"></a>   
 ## About Document Serialization  
  Ideally the process of serializing and deserializing a document from and then back into memory is transparent to the application.  The application calls a serializer "write" method to save the document, while a deserializer "read" method accesses the data store and recreates the original instance in memory.  The specific format that the data is stored in is generally not a concern of the application as long as the serialize and deserialize process recreates the document back to its original form.  
@@ -61,13 +59,14 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
 ### Creating a Plug-in Serializer  
  Both plug-in serializers and linked serializers use the same exposed public methods and events, and similarly can be designed to operate either synchronously or asynchronously.  There are three basic steps normally followed to create a plug-in serializer:  
   
-1.  Implement and debug the serializer first as a linked serializer.  Initially creating the serializer compiled and linked directly in a test application provides full access to breakpoints and other debug services helpful for testing.  
+1. Implement and debug the serializer first as a linked serializer.  Initially creating the serializer compiled and linked directly in a test application provides full access to breakpoints and other debug services helpful for testing.  
   
-2.  After the serializer is fully tested, an <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface is added to create a plug-in.  The <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface permits full access to all .NET Framework objects which includes the logical tree, <xref:System.Windows.UIElement> objects, <xref:System.Windows.Documents.IDocumentPaginatorSource>, and <xref:System.Windows.Media.Visual> elements.  Additionally <xref:System.Windows.Documents.Serialization.ISerializerFactory> provides the same synchronous and asynchronous methods and events used by linked serializers.  Since large documents can take time to output, asynchronous operations are recommended to maintain responsive user interaction and offer a "Cancel" option if some problem occurs with the data store.  
+2. After the serializer is fully tested, an <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface is added to create a plug-in.  The <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface permits full access to all .NET Framework objects which includes the logical tree, <xref:System.Windows.UIElement> objects, <xref:System.Windows.Documents.IDocumentPaginatorSource>, and <xref:System.Windows.Media.Visual> elements.  Additionally <xref:System.Windows.Documents.Serialization.ISerializerFactory> provides the same synchronous and asynchronous methods and events used by linked serializers.  Since large documents can take time to output, asynchronous operations are recommended to maintain responsive user interaction and offer a "Cancel" option if some problem occurs with the data store.  
   
-3.  After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
+3. After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
   
 ## See also
+
 - <xref:System.Windows.Documents.Serialization>
 - <xref:System.Windows.Xps.XpsDocumentWriter>
 - <xref:System.Windows.Xps.Packaging.XpsDocument>

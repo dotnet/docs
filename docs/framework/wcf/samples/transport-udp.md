@@ -6,21 +6,21 @@ ms.assetid: 738705de-ad3e-40e0-b363-90305bddb140
 # Transport: UDP
 The UDP Transport sample demonstrates how to implement UDP unicast and multicast as a custom Windows Communication Foundation (WCF) transport. The sample describes the recommended procedure for creating a custom transport in WCF, by using the channel framework and following WCF best practices. The steps to create a custom transport are as follows:  
   
-1.  Decide which of the channel [Message Exchange Patterns](#MessageExchangePatterns) (IOutputChannel, IInputChannel, IDuplexChannel, IRequestChannel, or IReplyChannel) your ChannelFactory and ChannelListener will support. Then decide whether you will support the sessionful variations of these interfaces.  
+1. Decide which of the channel [Message Exchange Patterns](#MessageExchangePatterns) (IOutputChannel, IInputChannel, IDuplexChannel, IRequestChannel, or IReplyChannel) your ChannelFactory and ChannelListener will support. Then decide whether you will support the sessionful variations of these interfaces.  
   
-2.  Create a channel factory and listener that support your Message Exchange Pattern.  
+2. Create a channel factory and listener that support your Message Exchange Pattern.  
   
-3.  Ensure that any network-specific exceptions are normalized to the appropriate derived class of <xref:System.ServiceModel.CommunicationException>.  
+3. Ensure that any network-specific exceptions are normalized to the appropriate derived class of <xref:System.ServiceModel.CommunicationException>.  
   
-4.  Add a [\<binding>](../../../../docs/framework/misc/binding.md) element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element](#AddingABindingElement).  
+4. Add a [\<binding>](../../../../docs/framework/misc/binding.md) element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element](#AddingABindingElement).  
   
-5.  Add a binding element extension section to expose the new binding element to the configuration system.  
+5. Add a binding element extension section to expose the new binding element to the configuration system.  
   
-6.  Add metadata extensions to communicate capabilities to other endpoints.  
+6. Add metadata extensions to communicate capabilities to other endpoints.  
   
-7.  Add a binding that pre-configures a stack of binding elements according to a well-defined profile. For more information, see [Adding a Standard Binding](#AddingAStandardBinding).  
+7. Add a binding that pre-configures a stack of binding elements according to a well-defined profile. For more information, see [Adding a Standard Binding](#AddingAStandardBinding).  
   
-8.  Add a binding section and binding configuration element to expose the binding to the configuration system. For more information, see [Adding Configuration Support](#AddingConfigurationSupport).  
+8. Add a binding section and binding configuration element to expose the binding to the configuration system. For more information, see [Adding Configuration Support](#AddingConfigurationSupport).  
   
 <a name="MessageExchangePatterns"></a>   
 ## Message Exchange Patterns  
@@ -179,9 +179,9 @@ if (soapBinding != null)
   
  When running Svcutil.exe, there are two options for getting Svcutil.exe to load the WSDL import extensions:  
   
-1.  Point Svcutil.exe to our configuration file using the /SvcutilConfig:\<file>.  
+1. Point Svcutil.exe to our configuration file using the /SvcutilConfig:\<file>.  
   
-2.  Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
+2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
  The `UdpBindingElementImporter` type implements the `IWsdlImportExtension` interface. The `ImportEndpoint` method imports the address from the WSDL port.  
   
@@ -241,9 +241,9 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
   
  Then we implement `IPolicyImporterExtension` from our registered class (`UdpBindingElementImporter`). In `ImportPolicy()`, we look through the assertions in our namespace, and process the ones for generating the transport and check whether it is multicast. We also must remove the assertions we handle from the list of binding assertions. Again, when running Svcutil.exe, there are two options for integration:  
   
-1.  Point Svcutil.exe to our configuration file using the /SvcutilConfig:\<file>.  
+1. Point Svcutil.exe to our configuration file using the /SvcutilConfig:\<file>.  
   
-2.  Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
+2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
 <a name="AddingAStandardBinding"></a>   
 ## Adding a Standard Binding  
@@ -460,11 +460,11 @@ svcutil http://localhost:8000/udpsample/ /reference:UdpTranport\bin\UdpTransport
   
 #### To set up, build, and run the sample  
   
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-2.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+2. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-3.  Refer to the preceding "The UDP Test Service and Client" section.  
+3. Refer to the preceding "The UDP Test Service and Client" section.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

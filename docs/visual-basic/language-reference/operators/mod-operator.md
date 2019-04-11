@@ -95,6 +95,7 @@ End Module
  [!code-vb[VbVbalrOperators#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#32)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Conversion.Int%2A>
 - <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
 - [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

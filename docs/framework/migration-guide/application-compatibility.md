@@ -99,7 +99,6 @@ To begin, select the type of compatibility change below:
 * [Retargeting Changes](./retargeting/index.md)
 * [Runtime Changes](./runtime/index.md)
 
-
 ## See also
 
 - [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)

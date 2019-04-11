@@ -47,6 +47,7 @@ This topic explains the meaning and use of the design-time error list that appea
  You can choose to ignore the error condition and continue loading the designer. Choosing this action may result in unexpected behavior. For example, controls may not appear on the design surface.  
   
 ## See also
+
 - [Troubleshooting Design-Time Development](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171843(v=vs.120))
 - [Troubleshooting Control and Component Authoring](troubleshooting-control-and-component-authoring.md)
 - [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)

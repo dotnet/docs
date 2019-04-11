@@ -16,6 +16,7 @@ This example shows how to bind to an enumeration by binding to the enumeration's
  [!code-xaml[BindToEnum#BindToEnum](~/samples/snippets/csharp/VS_Snippets_Wpf/BindToEnum/CS/Window1.xaml#bindtoenum)]  
   
 ## See also
+
 - [Bind to a Method](how-to-bind-to-a-method.md)
 - [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

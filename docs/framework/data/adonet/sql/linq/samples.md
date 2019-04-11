@@ -22,5 +22,6 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
 -   Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](https://go.microsoft.com/fwlink/?LinkId=93205).  
   
 ## See also
+
 - [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
 - [LINQ to SQL Walkthroughs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))

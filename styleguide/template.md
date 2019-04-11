@@ -179,7 +179,6 @@ Examples:
 - System.Exception.\#ctor becomes `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-
 ## Lists
 
 ### Ordered lists

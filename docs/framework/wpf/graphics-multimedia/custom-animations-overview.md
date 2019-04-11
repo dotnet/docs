@@ -93,9 +93,9 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  The recommended paradigm (used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations) is to use two inheritance levels:  
   
-1.  Create an abstract *\<Type>*AnimationBase class that derives from <xref:System.Windows.Media.Animation.AnimationTimeline>. This class should override the <xref:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType%2A> method. It should also introduce a new abstract method, GetCurrentValueCore, and override <xref:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue%2A> so that it validates the types of the default origin value and default destination value parameters, then calls GetCurrentValueCore.  
+1. Create an abstract *\<Type>*AnimationBase class that derives from <xref:System.Windows.Media.Animation.AnimationTimeline>. This class should override the <xref:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType%2A> method. It should also introduce a new abstract method, GetCurrentValueCore, and override <xref:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue%2A> so that it validates the types of the default origin value and default destination value parameters, then calls GetCurrentValueCore.  
   
-2.  Create another class that inherits from your new *\<Type>*AnimationBase class and overrides the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method, the GetCurrentValueCore method that you introduced, and the <xref:System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault%2A> property.  
+2. Create another class that inherits from your new *\<Type>*AnimationBase class and overrides the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method, the GetCurrentValueCore method that you introduced, and the <xref:System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault%2A> property.  
   
  **Alternative Approaches**  
   
@@ -118,6 +118,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
  For more information, see the <xref:System.Windows.Media.CompositionTarget.Rendering> page.  
   
 ## See also
+
 - <xref:System.Windows.Media.Animation.AnimationTimeline>
 - <xref:System.Windows.Media.Animation.IKeyFrame>
 - [Property Animation Techniques Overview](property-animation-techniques-overview.md)

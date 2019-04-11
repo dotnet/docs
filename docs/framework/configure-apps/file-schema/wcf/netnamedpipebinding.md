@@ -138,6 +138,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>
 - <xref:System.ServiceModel.NetNamedPipeBinding>
 - [\<binding>](../../../../../docs/framework/misc/binding.md)

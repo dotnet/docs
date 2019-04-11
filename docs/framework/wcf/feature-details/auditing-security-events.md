@@ -93,6 +93,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |Default user experience|All authenticated users can write to the Application log, so no additional permission step is needed for application processes.|The application process (context) must have `SeAuditPrivilege`.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)

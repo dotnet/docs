@@ -19,17 +19,17 @@ You can download the complete Windows Presentation Foundation (WPF) project from
 > [!TIP]
 > If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic instead.
 
-1.  Extract the files that you downloaded from the .zip file, and then start Visual Studio.
+1. Extract the files that you downloaded from the .zip file, and then start Visual Studio.
 
-2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
+2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  In the **Open Project** dialog box, open the folder that holds the sample code you downloaded, and then open the solution (.sln) file for AsyncFineTuningCS.
+3. In the **Open Project** dialog box, open the folder that holds the sample code you downloaded, and then open the solution (.sln) file for AsyncFineTuningCS.
 
-4.  In **Solution Explorer**, open the shortcut menu for the **ProcessTasksAsTheyFinish** project, and then choose **Set as StartUp Project**.
+4. In **Solution Explorer**, open the shortcut menu for the **ProcessTasksAsTheyFinish** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the **F5** key to run the program (or, press **Ctrl**+**F5** keys to run the program without debugging it).
+5. Choose the **F5** key to run the program (or, press **Ctrl**+**F5** keys to run the program without debugging it).
 
-6.  Run the project several times to verify that the downloaded lengths don't always appear in the same order.
+6. Run the project several times to verify that the downloaded lengths don't always appear in the same order.
 
 ## Create the program yourself
 

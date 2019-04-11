@@ -52,6 +52,7 @@ Defines a peer transport for a custom binding.
  This transport cannot be used with contracts that have request/reply operations.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.PeerTransportElement>
 - <xref:System.ServiceModel.Channels.PeerTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

@@ -54,9 +54,9 @@ This topic describes the public views supported by the SQL Workflow Instance Sto
   
  The ServiceDeployments View also contains a Delete trigger. Users with the appropriate permissions can execute delete statements against this view to remove ServiceDeployment entries from the Database. Note that:  
   
-1.  Deleting entries from this view is costly since the entire Database must be locked prior to performing this operation. This is necessary to avoid the scenario where a workflow Instance could refer to a non-existent ServiceDeployment entry. Delete from this view only during down times / maintenance windows.  
+1. Deleting entries from this view is costly since the entire Database must be locked prior to performing this operation. This is necessary to avoid the scenario where a workflow Instance could refer to a non-existent ServiceDeployment entry. Delete from this view only during down times / maintenance windows.  
   
-2.  Any attempt to delete a ServiceDeployment row which is referenced to by entries in the **Instances** view will result in a no-op. You can only delete ServiceDeployment rows with zero references.  
+2. Any attempt to delete a ServiceDeployment row which is referenced to by entries in the **Instances** view will result in a no-op. You can only delete ServiceDeployment rows with zero references.  
   
 ## InstancePromotedProperties view  
  The **InstancePromotedProperties** view contains information for all the promoted properties that are specified by the user. A promoted property functions as a first-class property, which a user can use in queries to retrieve instances.  For example, a user could add a PurchaseOrder promotion which always stores the cost of an order in the **Value1** column. This would enable a user to query for all purchase orders whose cost exceeds a certain value.  

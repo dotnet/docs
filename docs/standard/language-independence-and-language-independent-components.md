@@ -511,13 +511,13 @@ The .NET Framework is language independent. This means that, as a developer, you
   
  To create CLS-compliant components:  
   
-1.  Use the <xref:System.CLSCompliantAttribute> to mark you assembly as CLS-compliant.  
+1. Use the <xref:System.CLSCompliantAttribute> to mark you assembly as CLS-compliant.  
   
-2.  Mark any publicly exposed types in the assembly that are not CLS-compliant as non-compliant.  
+2. Mark any publicly exposed types in the assembly that are not CLS-compliant as non-compliant.  
   
-3.  Mark any publicly exposed members in CLS-compliant types as non-compliant.  
+3. Mark any publicly exposed members in CLS-compliant types as non-compliant.  
   
-4.  Provide a CLS-compliant alternative for non-CLS-compliant members.  
+4. Provide a CLS-compliant alternative for non-CLS-compliant members.  
   
  If you've successfully marked all your non-compliant types and members, your compiler should not emit any non-compliance warnings. However, you should indicate which members are not CLS-compliant and list their CLS-compliant alternatives in your product documentation.  
   

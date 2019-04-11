@@ -25,11 +25,11 @@ Queued applications use transactions to ensure correctness and reliable delivery
 ## Leaving Batching Mode  
  If a message in a batch causes the transaction to abort, the following steps occur:  
   
-1.  The entire batch of messages is rolled back.  
+1. The entire batch of messages is rolled back.  
   
-2.  Messages are read one at a time until the number of messages read exceeds twice the maximum batch size.  
+2. Messages are read one at a time until the number of messages read exceeds twice the maximum batch size.  
   
-3.  Batch mode is re-entered.  
+3. Batch mode is re-entered.  
   
 ## Choosing the Batch Size  
  The size of a batch is application-dependent. The empirical method is the best way to arrive at an optimal batch size for the application. It is important to remember when choosing a batch size to choose the size according to your application's actual deployment model. For example, when deploying the application, if you need an SQL server on a remote machine and a transaction that spans the queue and the SQL server, then the batch size is best determined by running this exact configuration.  
@@ -77,5 +77,6 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 ```  
   
 ## See also
+
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
 - [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

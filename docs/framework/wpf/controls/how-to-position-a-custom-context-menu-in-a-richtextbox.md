@@ -29,5 +29,6 @@ This example shows how to position a custom context menu for a <xref:System.Wind
  [!code-vb[RichTextBox_ContextMenu#_ListenerBody](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBox_ContextMenu/VisualBasic/app.xaml.vb#_listenerbody)]  
   
 ## See also
+
 - [RichTextBox Overview](richtextbox-overview.md)
 - [TextBox Overview](textbox-overview.md)

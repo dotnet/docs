@@ -20,6 +20,7 @@ A DrawingImage
  [!code-xaml[DrawingMiscSnippets_snip#DrawingImageExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/DrawingImageExample.xaml#drawingimageexamplewholepage)]  
   
 ## See also
+
 - <xref:System.Windows.Freezable.Freeze%2A>
 - [Draw an Image Using ImageDrawing](how-to-draw-an-image-using-imagedrawing.md)
 - [Drawing Objects Overview](drawing-objects-overview.md)

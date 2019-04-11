@@ -52,9 +52,6 @@ There is only one application architecture: the architecture of the system or en
 - **Udi Dahan. Clarified CQRS** \
   [http://udidahan.com/2009/12/09/clarified-cqrs/](http://udidahan.com/2009/12/09/clarified-cqrs/)
 
-- **CQRS** \
-  [http://udidahan.com/2009/12/09/clarified-cqrs/](http://udidahan.com/2009/12/09/clarified-cqrs/)
-
 - **Event-Sourcing (ES)** \
   [http://codebetter.com/gregyoung/2010/02/20/why-use-event-sourcing/](http://codebetter.com/gregyoung/2010/02/20/why-use-event-sourcing/)
 

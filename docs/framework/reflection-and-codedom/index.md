@@ -26,4 +26,3 @@ This section of the documentation provides information about dynamic programming
   
 ## Related Sections  
  [Development Guide](../../../docs/framework/development-guide.md)  
-  

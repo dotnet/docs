@@ -83,6 +83,7 @@ Specifies the settings of the channel cache.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.SendMessageChannelCache>
 - <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>
 - <xref:System.ServiceModel.Activities.Send>

@@ -9,4 +9,5 @@ In [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)] applications 
  For more information about `LINQDataSource`, see [LinqDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)).  
   
 ## See also
+
 - [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)

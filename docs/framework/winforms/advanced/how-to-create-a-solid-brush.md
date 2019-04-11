@@ -23,6 +23,7 @@ This example creates a <xref:System.Drawing.SolidBrush> object that can be used 
  After you have finished using them, you should call <xref:System.IDisposable.Dispose%2A> on objects that consume system resources, such as brush objects.  
   
 ## See also
+
 - <xref:System.Drawing.SolidBrush>
 - <xref:System.Drawing.Brush>
 - [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)

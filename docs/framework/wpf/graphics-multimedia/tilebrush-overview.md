@@ -11,8 +11,7 @@ ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
 ---
 # TileBrush Overview
 <xref:System.Windows.Media.TileBrush> objects provide you with a great deal of control over how an area is painted with an image, <xref:System.Windows.Media.Drawing>, or <xref:System.Windows.Media.Visual>. This topic describes how to use <xref:System.Windows.Media.TileBrush> features to gain more control over how an <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, or <xref:System.Windows.Media.VisualBrush> paints an area.  
-  
-  
+
 <a name="prerequisite"></a>   
 ## Prerequisites  
  To understand this topic, it's helpful to understand how to use the basic features of the <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, or <xref:System.Windows.Media.VisualBrush> class. For an introduction to these types, see the [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
@@ -116,6 +115,7 @@ Components of a TileBrush with a TileMode of Tile
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMFlipXYExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/tilingexample.vb#graphicsmmflipxyexample)]  
   
 ## See also
+
 - <xref:System.Windows.Media.ImageBrush>
 - <xref:System.Windows.Media.DrawingBrush>
 - <xref:System.Windows.Media.VisualBrush>

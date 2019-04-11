@@ -27,5 +27,6 @@ This example shows one way to use the <xref:System.Windows.Controls.TextBox.Sele
  [!code-vb[TextBox_MiscCode#_SelectText](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBox_MiscCode/VisualBasic/Window1.xaml.vb#_selecttext)]  
   
 ## See also
+
 - [TextBox Overview](textbox-overview.md)
 - [RichTextBox Overview](richtextbox-overview.md)

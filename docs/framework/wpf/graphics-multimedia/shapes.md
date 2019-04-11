@@ -23,6 +23,7 @@ ms.assetid: 893253b8-c2df-4f22-961d-cbc533d64c79
  [How-to Topics](shapes-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Shapes.Shape>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
 - [Graphics and Multimedia](index.md)

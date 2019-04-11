@@ -22,8 +22,7 @@ Bindings are collections of special configuration elements, called *binding elem
 -   To establish corporate standard bindings that expose only specific configuration options. For example, to create for your company a variant of the <xref:System.ServiceModel.WSHttpBinding> for your company in which security cannot be disabled, create a new binding that behaves like the <xref:System.ServiceModel.WSHttpBinding>, but with security always on. For details, see [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md).  
   
 -   To perform some customization of metadata, typically but not necessarily to configure or use some custom binding element. For more information about providing metadata support to bindings and binding elements, see [Configuration and Metadata Support](../../../../docs/framework/wcf/extending/configuration-and-metadata-support.md).  
-  
-  
+
 ## Channels, Bindings, and Binding Elements  
  Bindings and binding elements are the connection between the application programming model, which includes the attributes and behaviors, and the channel model, which includes the factories and listeners, message encoders, and transport and protocol implementations. Typically, binding elements and bindings are implemented to enable channels to be used by the application layer.  
   

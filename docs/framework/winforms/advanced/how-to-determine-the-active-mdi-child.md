@@ -21,7 +21,7 @@ On occasion, you will want to provide a command that operates on the control tha
   
 ### To determine the active MDI child (to copy its text to the Clipboard)  
   
-1.  Within a method, copy the text of the active control of the active child form to the Clipboard.  
+1. Within a method, copy the text of the active control of the active child form to the Clipboard.  
   
     > [!NOTE]
     >  This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
@@ -78,6 +78,7 @@ On occasion, you will want to provide a command that operates on the control tha
     ```  
   
 ## See also
+
 - [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
 - [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)
 - [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)

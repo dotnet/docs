@@ -46,6 +46,7 @@ You can use the <xref:System.Drawing.Bitmap> class to load and display raster im
  ![Cropping](./media/aboutgdip03-art05.gif "AboutGdip03_Art05")  
   
 ## See also
+
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)
 - [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md)
 - [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)

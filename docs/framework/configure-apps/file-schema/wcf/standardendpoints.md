@@ -44,4 +44,5 @@ This configuration section allows you to define a collection of standard endpoin
 |\<system.ServiceModel>|The root element of all WCF configuration elements.|  
   
 ## See also
+
 - [Standard Endpoints](../../../../../docs/framework/wcf/feature-details/standard-endpoints.md)

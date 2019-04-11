@@ -133,9 +133,9 @@ public class CustomEndpoint : ServiceEndpoint
 
 #### To use this sample
 
-1.  Using Visual Studio 2012, open the StandardEndpoints.sln file.
+1. Using Visual Studio 2012, open the StandardEndpoints.sln file.
 
-2.  Enable multiple projects to start up.
+2. Enable multiple projects to start up.
 
     1.  In **Solution Explorer**, right-click the Standard Endpoints solution and then select **Properties**.
 
@@ -147,7 +147,7 @@ public class CustomEndpoint : ServiceEndpoint
 
          This specifies that the Client project is executed after the Service project.
 
-3.  To run the solution, press F5.
+3. To run the solution, press F5.
 
 > [!NOTE]
 > If these steps don't work, then make sure that your environment has been properly set up, using the following steps:

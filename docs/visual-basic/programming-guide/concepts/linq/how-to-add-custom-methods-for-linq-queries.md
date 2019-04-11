@@ -62,7 +62,6 @@ Console.WriteLine("Double: Median = " & query1)
 '  
 ' Double: Median = 4.85  
 ```  
-  
 
 ### Overloading an Aggregate Method to Accept Various Types  
  You can overload your aggregate method so that it accepts sequences of various types. The standard approach is to create an overload for each type. Another approach is to create an overload that will take a generic type and convert it to a specific type by using a delegate. You can also combine both approaches.  
@@ -102,8 +101,7 @@ Console.WriteLine("Integer: Median = " & query2)
 ' Double: Median = 4.85  
 ' Integer: Median = 3  
 ```  
-  
- 
+
 #### To create a generic overload  
  You can also create an overload that accepts a sequence of generic objects. This overload takes a delegate as a parameter and uses it to convert a sequence of objects of a generic type to a specific type.  
   
@@ -192,5 +190,6 @@ Next
 ```  
   
 ## See also
+
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)

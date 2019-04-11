@@ -30,11 +30,12 @@ Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicit
 
 * When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via a `<PackageReference>` item in your project file.
 * If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
-    * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
+  * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
 * If you need a specific version of the `NetStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
 * Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NetStandard.Library` metapackage in .NET Framework projects. If any version of `NetStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
 
 ## Default compilation includes in .NET Core projects
+
 With the move to the *csproj* format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files. This means that you no longer need to specify these items in your project file.
 
 The main reason for doing this is to reduce the clutter in your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed.
@@ -66,7 +67,13 @@ Setting this property to `false` will disable implicit inclusion, reverting to t
 
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
-`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob, which also applies to \*.cs items. Because of that, **Solution Explorer** will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can use `<EnableDefaultNoneItems>` to disable the implicit `None` glob.
+`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob, which also applies to \*.cs items. Because of that, **Solution Explorer** will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can set `<EnableDefaultNoneItems>` to false to disable the implicit `None` glob, like this:
+
+```xml
+<PropertyGroup>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+</PropertyGroup>
+```
 
 To disable **all implicit globs**, you can set the `<EnableDefaultItems>` property to `false` as in the following example:
 
@@ -89,6 +96,7 @@ If the project has multiple target frameworks, the results of the command should
 ## Additions
 
 ### Sdk attribute
+
 The root `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship three main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
@@ -277,7 +285,6 @@ You will need to ensure the license file is packed by adding it explicitly to th
 ### PackageLicenseUrl
 
 An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
-
 
 ### PackageIconUrl
 

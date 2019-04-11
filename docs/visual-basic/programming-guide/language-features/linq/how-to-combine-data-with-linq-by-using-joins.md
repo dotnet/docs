@@ -19,9 +19,9 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 #### To create a project that contains sample data and types  
   
-1.  To run the samples in this topic, open Visual Studio and add a new Visual Basic Console Application project. Double-click the Module1.vb file created by Visual Basic.  
+1. To run the samples in this topic, open Visual Studio and add a new Visual Basic Console Application project. Double-click the Module1.vb file created by Visual Basic.  
   
-2.  The samples in this topic use the `Person` and `Pet` types and data from the following code example. Copy this code into the default `Module1` module created by Visual Basic.  
+2. The samples in this topic use the `Person` and `Pet` types and data from the following code example. Copy this code into the default `Module1` module created by Visual Basic.  
   
      [!code-vb[VbLINQHowTos#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#1)]  
     [!code-vb[VbLINQHowTos#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#2)]  
@@ -37,7 +37,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 #### To perform an Inner Join by using the Join clause  
   
-1.  Add the following code to the `Module1` module in your project to see examples of both an implicit and explicit inner join.  
+1. Add the following code to the `Module1` module in your project to see examples of both an implicit and explicit inner join.  
   
      [!code-vb[VbLINQHowTos#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#4)]  
   
@@ -50,7 +50,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 #### To perform a Left Outer Join by using the Group Join clause  
   
-1.  Add the following code to the `Module1` module in your project to see examples of both a grouped left outer join and an ungrouped left outer join.  
+1. Add the following code to the `Module1` module in your project to see examples of both a grouped left outer join and an ungrouped left outer join.  
   
      [!code-vb[VbLINQHowTos#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#3)]  
   
@@ -59,7 +59,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 #### To perform a Join by using a composite key  
   
-1.  Add the following code to the `Module1` module in your project to see examples of a join that uses a composite key.  
+1. Add the following code to the `Module1` module in your project to see examples of a join that uses a composite key.  
   
      [!code-vb[VbLINQHowTos#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#5)]  
   
@@ -67,13 +67,14 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
   
 #### To add code to run the examples  
   
-1.  Replace the `Sub Main` in the `Module1` module in your project with the following code to run the examples in this topic.  
+1. Replace the `Sub Main` in the `Module1` module in your project with the following code to run the examples in this topic.  
   
      [!code-vb[VbLINQHowTos#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#6)]  
   
-2.  Press F5 to run the examples.  
+2. Press F5 to run the examples.  
   
 ## See also
+
 - [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)

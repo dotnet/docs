@@ -15,9 +15,10 @@ Visual Basic could not determine the path where temporary files are stored.
   
 ## To correct this error  
   
-1.  Restart Visual Studio.  
+1. Restart Visual Studio.  
   
-2.  If the problem persists, reinstall Visual Studio.  
+2. If the problem persists, reinstall Visual Studio.  
   
 ## See also
+
 - [Talk to Us](/visualstudio/ide/talk-to-us)

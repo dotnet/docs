@@ -23,11 +23,11 @@ The <xref:System.Net> classes support several ways to select and validate <xref:
 ## Client Certificate Selection  
  The .NET Framework selects the client certificate to present to the server in the following manner:  
   
-1.  If a client certificate was presented previously to the server, the certificate is cached when first presented and is reused for subsequent client certificate requests.  
+1. If a client certificate was presented previously to the server, the certificate is cached when first presented and is reused for subsequent client certificate requests.  
   
-2.  If a delegate is present, always use the result from the delegate as the client certificate to select. Try to use a cached certificate when possible, but do not use cached anonymous credentials if the delegate has returned null and the certificate collection is not empty.  
+2. If a delegate is present, always use the result from the delegate as the client certificate to select. Try to use a cached certificate when possible, but do not use cached anonymous credentials if the delegate has returned null and the certificate collection is not empty.  
   
-3.  If this is the first challenge for a client certificate, the Framework enumerates the certificates in <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class objects associated with the connection, looking for a match between the list of certificate issuers provided by the server and the client certificate issuer name. The first certificate that matches is sent to the server. If no certificate matches or the certificate collection is empty, then an anonymous credential is sent to the server.  
+3. If this is the first challenge for a client certificate, the Framework enumerates the certificates in <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class objects associated with the connection, looking for a match between the list of certificate issuers provided by the server and the client certificate issuer name. The first certificate that matches is sent to the server. If no certificate matches or the certificate collection is empty, then an anonymous credential is sent to the server.  
   
 ## Tools for Certificate Configuration  
  A number of tools are available for client and server certificate configuration.  
@@ -47,5 +47,6 @@ The *HttpCfg.exe* tool can be used to configure server certificates for the <xre
  In addition to these tools, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> classes provides methods for loading a certificate from the file system.  
   
 ## See also
+
 - [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
 - [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

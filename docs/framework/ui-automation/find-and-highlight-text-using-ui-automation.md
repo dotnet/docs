@@ -30,4 +30,5 @@ ms.assetid: b77693f5-87bb-4b29-a297-05ff882e2044
 [!code-vb[FindText#SearchTarget](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#searchtarget)]  
   
 ## See also
+
 - [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)

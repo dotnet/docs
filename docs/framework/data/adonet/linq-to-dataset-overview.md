@@ -23,6 +23,7 @@ The <xref:System.Data.DataSet> is one of the more widely used components of [!IN
  In N-tier applications, the <xref:System.Data.DataSet> is often used in the middle-tier to cache information for a Web application. The [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] querying functionality is implemented through extension methods and extends the existing ADO.NET 2.0 <xref:System.Data.DataSet>.  
   
 ## See also
+
 - [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
 - [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)
 - [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)

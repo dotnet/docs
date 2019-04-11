@@ -57,7 +57,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |----------------|-----------------|  
 |[+](../../../csharp/language-reference/operators/addition-operator.md)x|Identity|  
 |[-](../../../csharp/language-reference/operators/subtraction-operator.md)x|Negation|  
-|[\!](../../../csharp/language-reference/operators/logical-negation-operator.md)x|Logical negation|  
+|[\!](../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-negation-operator-)x|Logical negation|  
 |[~](../../../csharp/language-reference/operators/bitwise-complement-operator.md)x|Bitwise negation|  
 |[++](../../../csharp/language-reference/operators/arithmetic-operators.md#increment-operator-)x|Pre-increment|  
 |[--](../../../csharp/language-reference/operators/arithmetic-operators.md#decrement-operator---)x|Pre-decrement|  
@@ -110,8 +110,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Logical AND|x [&](../../../csharp/language-reference/operators/and-operator.md) y|Integer bitwise AND, Boolean logical AND|  
 |Logical XOR|x [^](../../../csharp/language-reference/operators/xor-operator.md) y|Integer bitwise XOR, Boolean logical XOR|  
 |Logical OR|x [&#124;](../../../csharp/language-reference/operators/or-operator.md) y|Integer bitwise OR, Boolean logical OR|  
-|Conditional AND|x [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) y|Evaluates y only if x is true|  
-|Conditional OR|x [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md) y|Evaluates y only if x is false|  
+|Conditional AND|x [&&](../../../csharp/language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-) y|Evaluates y only if x is true|  
+|Conditional OR|x [&#124;&#124;](../../../csharp/language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-) y|Evaluates y only if x is false|  
 |Null coalescing|x [??](../../../csharp/language-reference/operators/null-coalescing-operator.md) y|Evaluates to y if x is null, to x otherwise|  
 |Conditional|x [?](../../../csharp/language-reference/operators/conditional-operator.md) y : z|Evaluates to y if x is true, z if x is false|  
   

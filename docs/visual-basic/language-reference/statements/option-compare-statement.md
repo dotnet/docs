@@ -59,11 +59,11 @@ Option Compare { Binary | Text }
   
 #### To set Option Compare in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
+1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Set the value in the **Option Compare** box.  
+3. Set the value in the **Option Compare** box.  
   
  When you create a project, the **Option Compare** setting on the **Compile** tab is set to the **Option Compare** setting in the **Options** dialog box. To change this setting, on the **Tools** menu, click **Options**. In the **Options** dialog box, expand **Projects and Solutions**, and then click **VB Defaults**. The initial default setting in **VB Defaults** is **Binary**.  
   
@@ -82,6 +82,7 @@ Option Compare { Binary | Text }
  [!code-vb[VbVbalrStatements#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#46)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Strings.InStr%2A>
 - <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>
 - <xref:Microsoft.VisualBasic.Strings.Replace%2A>

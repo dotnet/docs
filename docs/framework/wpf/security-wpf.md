@@ -43,7 +43,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  *Application navigation* is navigation between items of content within an application that is hosted by a browser. *Browser navigation* is navigation that changes the content and location URL of a browser itself. The relationship between application navigation (typically XAML) and browser navigation (typically HTML) is shown in the following illustration:
   
- ![Navigation diagram](./media/safetoplevelnavigationfigure.png "SafeTopLevelNavigationFigure")  
+ ![Relationship between application navigation and browser navigation.](./media/security-wpf/application-browser-navigation-relationship.png)  
   
  The type of content that is considered safe for an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] to navigate to is primarily determined by whether application navigation or browser navigation is used.  
   
@@ -97,19 +97,19 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  The collection of functionality that can be secured in this way is configured on a per-zone basis for the **Internet**, **Intranet**, **Trusted Sites**, and **Restricted Sites** zones. The following steps describe how to configure your security settings:  
   
-1.  Open **Control Panel**.  
+1. Open **Control Panel**.  
   
-2.  Click **Network and Internet** and then click **Internet Options**.  
+2. Click **Network and Internet** and then click **Internet Options**.  
   
      The Internet Options dialog box appears.  
   
-3.  On the **Security** tab, select the zone to configure the security settings for.  
+3. On the **Security** tab, select the zone to configure the security settings for.  
   
-4.  Click the **Custom Level** button.  
+4. Click the **Custom Level** button.  
   
      The **Security Settings** dialog box appears and you can configure the security settings for the selected zone.  
   
-     ![Security Settings dialog box](./media/wpfsecurityfigure1.PNG "WPFSecurityFigure1")  
+     ![Screenshot that shows the Security Settings dialog box.](./media/security-wpf/windows-presentation-foundation-security-settings.png)  
   
 > [!NOTE]
 >  You can also get to the Internet Options dialog box from Internet Explorer. Click **Tools** and then click **Internet Options**.  
@@ -266,6 +266,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](wpf-partial-trust-security.md)|  
   
 ## See also
+
 - [WPF Partial Trust Security](wpf-partial-trust-security.md)
 - [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)
 - [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)

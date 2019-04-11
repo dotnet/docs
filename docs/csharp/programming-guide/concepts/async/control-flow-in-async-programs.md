@@ -93,11 +93,11 @@ You can download the code that this topic uses from MSDN, or you can build it yo
 
 You can download the application for this topic from [Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0). The following steps open and run the program.
 
-1.  Unzip the downloaded file, and then start Visual Studio.
+1. Unzip the downloaded file, and then start Visual Studio.
 
-2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
+2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  Navigate to the folder that holds the unzipped sample code, open the solution (.sln) file, and then choose the **F5** key to build and run the project.
+3. Navigate to the folder that holds the unzipped sample code, open the solution (.sln) file, and then choose the **F5** key to build and run the project.
 
 ### Create the program Yourself
 
@@ -105,23 +105,23 @@ The following Windows Presentation Foundation (WPF) project contains the code ex
 
 To run the project, perform the following steps:
 
-1.  Start Visual Studio.
+1. Start Visual Studio.
 
-2.  On the menu bar, choose **File** > **New** > **Project**.
+2. On the menu bar, choose **File** > **New** > **Project**.
 
      The **New Project** dialog box opens.
 
-3.  Choose the **Installed** > **Visual C#** > **Windows Desktop** category, and then choose **WPF App** from the list of project templates.
+3. Choose the **Installed** > **Visual C#** > **Windows Desktop** category, and then choose **WPF App** from the list of project templates.
 
-4.  Enter `AsyncTracer` as the name of the project, and then choose the **OK** button.
+4. Enter `AsyncTracer` as the name of the project, and then choose the **OK** button.
 
      The new project appears in **Solution Explorer**.
 
-5.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.
+5. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.
 
      If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **View Code**.
 
-6.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.
+6. In the **XAML** view of MainWindow.xaml, replace the code with the following code.
 
     ```csharp
     <Window
@@ -139,9 +139,9 @@ To run the project, perform the following steps:
 
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.
 
-7.  Add a reference for <xref:System.Net.Http>.
+7. Add a reference for <xref:System.Net.Http>.
 
-8.  In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.cs, and then choose **View Code**.
+8. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.cs, and then choose **View Code**.
 
 9. In MainWindow.xaml.cs, replace the code with the following code.
 

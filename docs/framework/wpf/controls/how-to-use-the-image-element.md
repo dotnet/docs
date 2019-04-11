@@ -36,4 +36,5 @@ This example shows how to include images in an application by using the <xref:Sy
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
   
 ## See also
+
 - [Imaging Overview](../graphics-multimedia/imaging-overview.md)

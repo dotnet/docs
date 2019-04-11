@@ -27,9 +27,7 @@ Standalone applications typically have a main window that both displays the main
  A *modeless* dialog box, on the other hand, does not prevent a user from activating other windows while it is open. For example, if a user wants to find occurrences of a particular word in a document, a main window will often open a dialog box to ask a user what word they are looking for. Since finding a word doesn't prevent a user from editing the document, however, the dialog box doesn't need to be modal. A modeless dialog box at least provides a **Close** button to close the dialog box, and may provide additional buttons to execute specific functions, such as a **Find Next** button to find the next word that matches the find criteria of a word search.  
   
  Windows Presentation Foundation (WPF) allows you to create several types of dialog boxes, including message boxes, common dialog boxes, and custom dialog boxes. This topic discusses each, and the [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984) provides matching examples.  
-  
- 
-  
+
 <a name="Message_Boxes"></a>   
 ## Message Boxes  
  A *message box* is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that displays textual information, asks a question, and provides the user with three buttons to answer the question.  
@@ -339,6 +337,7 @@ Standalone applications typically have a main window that both displays the main
 [!code-vb[DialogBoxSample#FindDialogCloseCODEBEHIND2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/FindDialogBox.xaml.vb#finddialogclosecodebehind2)]  
   
 ## See also
+
 - [Popup Overview](../controls/popup-overview.md)
 - [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)
 - [ColorPicker Custom Control Sample](https://go.microsoft.com/fwlink/?LinkID=159977)

@@ -62,7 +62,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Text.WordHashBagProducingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. It does so by hashing each ngram and using the hash value as the index in the bag. |
 | <xref:Microsoft.ML.Transforms.Text.WordTokenizingTransformer> | Splits the text into words using the separator character(s). |
 
-
 ## Image model featurizers
 
 | Transform | Definition |
@@ -121,7 +120,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.SkipTakeFilter> | Allows limiting input to a subset of rows at an optional offset. Can be used to implement data paging. When created with SkipTakeFilter.SkipArguments behaves as `SkipFilter`.
 | <xref:Microsoft.ML.Transforms.TakeFilter> | Allows limiting input to a subset of rows by taking N first rows. |
 
-
 ## Schema
 
 | Transform | Definition |
@@ -149,7 +147,7 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a * y_t + (1-a) * ExpAvg(y_(t-1)). |
+| <xref:Microsoft.ML.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a \* y_t + (1-a) \* ExpAvg(y_(t-1)). |
 | <xref:Microsoft.ML.TimeSeriesProcessing.IidChangePointDetector> | Implements the change point detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation and martingales. |
 | <xref:Microsoft.ML.TimeSeriesProcessing.IidSpikeDetector> | Implements the spike detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation. |
 | <xref:Microsoft.ML.TimeSeriesProcessing.MovingAverageTransform> | Provides a weighted average of the sliding window values. |

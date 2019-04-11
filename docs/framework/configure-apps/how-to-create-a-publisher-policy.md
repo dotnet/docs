@@ -13,11 +13,11 @@ Vendors of assemblies can state that applications should use a newer version of 
   
  There are three steps involved in creating a publisher policy:  
   
-1.  Create a publisher policy file.  
+1. Create a publisher policy file.  
   
-2.  Create a publisher policy assembly.  
+2. Create a publisher policy assembly.  
   
-3.  Add the publisher policy assembly to the global assembly cache.  
+3. Add the publisher policy assembly to the global assembly cache.  
   
  The schema for publisher policy is described in [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md). The following example shows a publisher policy file that redirects one version of `myAssembly` to another.  
   
@@ -45,7 +45,7 @@ Vendors of assemblies can state that applications should use a newer version of 
   
 #### To create a publisher policy assembly  
   
-1.  Type the following command at the command prompt:  
+1. Type the following command at the command prompt:  
   
      **al /link:** *publisherPolicyFile* **/out:** *publisherPolicyAssemblyFile* **/keyfile:** *keyPairFile* **/platform:** *processorArchitecture*  
   
@@ -81,7 +81,7 @@ Vendors of assemblies can state that applications should use a newer version of 
   
 #### To add the publisher policy assembly to the global assembly cache  
   
-1.  Type the following command at the command prompt:  
+1. Type the following command at the command prompt:  
   
      **gacutil /i**  *publisherPolicyAssemblyFile*  
   
@@ -95,6 +95,7 @@ Vendors of assemblies can state that applications should use a newer version of 
     >  The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.  
   
 ## See also
+
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps by using Configuration Files](../../../docs/framework/configure-apps/index.md)

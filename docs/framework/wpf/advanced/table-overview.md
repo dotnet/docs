@@ -102,15 +102,15 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
 ### Background Rendering Precedence  
  Table elements render in the following order (z-order from lowest to highest). This order cannot be changed. For example, there is no "Z-order" property for these elements that you can use to override this established order.  
   
-1.  <xref:System.Windows.Documents.Table>  
+1. <xref:System.Windows.Documents.Table>  
   
-2.  <xref:System.Windows.Documents.TableColumn>  
+2. <xref:System.Windows.Documents.TableColumn>  
   
-3.  <xref:System.Windows.Documents.TableRowGroup>  
+3. <xref:System.Windows.Documents.TableRowGroup>  
   
-4.  <xref:System.Windows.Documents.TableRow>  
+4. <xref:System.Windows.Documents.TableRow>  
   
-5.  <xref:System.Windows.Documents.TableCell>  
+5. <xref:System.Windows.Documents.TableCell>  
   
  Consider the following example, which defines background colors for each of these elements within a table.  
   
@@ -170,6 +170,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
  [!code-vb[TableSnippets#_TableAddFooterRow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tableaddfooterrow)]  
   
 ## See also
+
 - [Flow Document Overview](flow-document-overview.md)
 - [Define a Table with XAML](how-to-define-a-table-with-xaml.md)
 - [Documents in WPF](documents-in-wpf.md)

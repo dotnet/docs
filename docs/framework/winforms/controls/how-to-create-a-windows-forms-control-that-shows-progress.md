@@ -87,5 +87,6 @@ The following code example shows a custom control called `FlashTrackBar` that ca
  [!code-vb[System.Windows.Forms.FlashTrackBar#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/HostApp.vb#30)]  
   
 ## See also
+
 - [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
 - [Windows Forms Control Development Basics](windows-forms-control-development-basics.md)

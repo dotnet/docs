@@ -21,7 +21,7 @@ If you choose not to use the Windows Service project template, you can write you
   
 ### To write a service programmatically  
   
-1.  Create an empty project and create a reference to the necessary namespaces by following these steps:  
+1. Create an empty project and create a reference to the necessary namespaces by following these steps:  
   
     1.  In **Solution Explorer**, right-click the **References** node and click **Add Reference**.  
   
@@ -31,31 +31,31 @@ If you choose not to use the Windows Service project template, you can write you
   
     4.  Click **OK**.  
   
-2.  Add a class and configure it to inherit from <xref:System.ServiceProcess.ServiceBase>:  
+2. Add a class and configure it to inherit from <xref:System.ServiceProcess.ServiceBase>:  
   
      [!code-csharp[VbRadconService#7](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#7)]
      [!code-vb[VbRadconService#7](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#7)]  
   
-3.  Add the following code to configure your service class:  
+3. Add the following code to configure your service class:  
   
      [!code-csharp[VbRadconService#8](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#8)]
      [!code-vb[VbRadconService#8](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#8)]  
   
-4.  Create a `Main` method for your class, and use it to define the service your class will contain; `userService1` is the name of the class:  
+4. Create a `Main` method for your class, and use it to define the service your class will contain; `userService1` is the name of the class:  
   
      [!code-csharp[VbRadconService#9](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#9)]
      [!code-vb[VbRadconService#9](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#9)]  
   
-5.  Override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, and define any processing you want to occur when your service is started.  
+5. Override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, and define any processing you want to occur when your service is started.  
   
      [!code-csharp[VbRadconService#10](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#10)]
      [!code-vb[VbRadconService#10](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#10)]  
   
-6.  Override any other methods you want to define custom processing for, and write code to determine the actions the service should take in each case.  
+6. Override any other methods you want to define custom processing for, and write code to determine the actions the service should take in each case.  
   
-7.  Add the necessary installers for your service application. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+7. Add the necessary installers for your service application. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
   
-8.  Build your project by selecting **Build Solution** from the **Build** menu.  
+8. Build your project by selecting **Build Solution** from the **Build** menu.  
   
     > [!NOTE]
     >  Do not press F5 to run your project — you cannot run a service project in this way.  
@@ -65,6 +65,7 @@ If you choose not to use the Windows Service project template, you can write you
 10. Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
 ## See also
+
 - [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
 - [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
 - [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)

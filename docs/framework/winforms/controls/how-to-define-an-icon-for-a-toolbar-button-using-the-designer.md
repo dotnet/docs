@@ -23,19 +23,20 @@ ms.assetid: d848f38e-67f2-49d4-8e88-01c845c06c02
   
 ### To set an icon for a toolbar button at design time  
   
-1.  Add images to the <xref:System.Windows.Forms.ImageList> component. For more information, see [How to: Add or Remove ImageList Images with the Designer](how-to-add-or-remove-imagelist-images-with-the-designer.md).  
+1. Add images to the <xref:System.Windows.Forms.ImageList> component. For more information, see [How to: Add or Remove ImageList Images with the Designer](how-to-add-or-remove-imagelist-images-with-the-designer.md).  
   
-2.  Select the <xref:System.Windows.Forms.ToolBar> control on your form.  
+2. Select the <xref:System.Windows.Forms.ToolBar> control on your form.  
   
-3.  In the **Properties** window, set the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.ImageList%2A> property to the <xref:System.Windows.Forms.ImageList> component.  
+3. In the **Properties** window, set the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.ImageList%2A> property to the <xref:System.Windows.Forms.ImageList> component.  
   
-4.  Click the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.Buttons%2A> property to select it, and click the ellipsis (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to open the **ToolBarButton Collection Editor**.  
+4. Click the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.Buttons%2A> property to select it, and click the ellipsis (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to open the **ToolBarButton Collection Editor**.  
   
-5.  Use the **Add** button to add buttons to the <xref:System.Windows.Forms.ToolBar> control.  
+5. Use the **Add** button to add buttons to the <xref:System.Windows.Forms.ToolBar> control.  
   
-6.  In the **Properties** window that appears in the pane on the right side of the **ToolBarButton Collection Editor**, set the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property of each toolbar button to one of the values in the list, which is drawn from the images you added to the <xref:System.Windows.Forms.ImageList> component.  
+6. In the **Properties** window that appears in the pane on the right side of the **ToolBarButton Collection Editor**, set the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property of each toolbar button to one of the values in the list, which is drawn from the images you added to the <xref:System.Windows.Forms.ImageList> component.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolBar>
 - [How to: Trigger Menu Events for Toolbar Buttons](how-to-trigger-menu-events-for-toolbar-buttons.md)
 - [ToolBar Control](toolbar-control-windows-forms.md)

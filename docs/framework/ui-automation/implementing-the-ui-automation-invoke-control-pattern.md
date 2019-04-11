@@ -61,6 +61,7 @@ ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
 |<xref:System.Windows.Automation.ElementNotEnabledException>|If the control is not enabled.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

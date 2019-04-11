@@ -43,11 +43,11 @@ The **-warn** option specifies the warning level for the compiler to display.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Modify the **Warning Level** property.  
+3. Modify the **Warning Level** property.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.WarningLevel%2A>.  
   

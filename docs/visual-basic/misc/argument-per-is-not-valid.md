@@ -14,5 +14,4 @@ An argument supplied for `Per`, which must be a `Double` specifying payment peri
   
 ## See also
 
-
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

@@ -31,11 +31,11 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
   
 ### To data-bind the DataGrid control to a single table in the designer  
   
-1.  Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.  
+1. Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.  
   
-2.  If the data source is a dataset, set the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property to the name of the table to bind to.  
+2. If the data source is a dataset, set the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property to the name of the table to bind to.  
   
-3.  If the data source is a dataset or a data view based on a dataset table, add code to the form to fill the dataset.  
+3. If the data source is a dataset or a data view based on a dataset table, add code to the form to fill the dataset.  
   
      The exact code you use depends on where the dataset is getting data. If the dataset is being populated directly from a database, you typically call the `Fill` method of a data adapter, as in the following code example, which populates a dataset called `DsCategories1`:  
   
@@ -51,19 +51,20 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
     sqlDataAdapter1->Fill(dsCategories1);  
     ```  
   
-4.  (Optional) Add the appropriate table styles and column styles to the grid.  
+4. (Optional) Add the appropriate table styles and column styles to the grid.  
   
      If there are no table styles, you will see the table, but with minimal formatting and with all columns visible.  
   
 ### To data-bind the DataGrid control to multiple tables in a dataset in the designer  
   
-1.  Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.  
+1. Set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to the object containing the data items you want to bind to.  
   
-2.  If the dataset contains related tables (that is, if it contains a relation object), set the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property to the name of the parent table.  
+2. If the dataset contains related tables (that is, if it contains a relation object), set the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property to the name of the parent table.  
   
-3.  Write code to fill the dataset.  
+3. Write code to fill the dataset.  
   
 ## See also
+
 - [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)
 - [How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
 - [DataGrid Control](datagrid-control-windows-forms.md)

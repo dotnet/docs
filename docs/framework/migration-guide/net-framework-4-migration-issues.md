@@ -80,7 +80,6 @@ Namespace: <xref:System>; assembly: mscorlib (in mscorlib.dll)
 | **Daylight savings** | To be consistent with the system clock, time properties (such as <xref:System.TimeZoneInfo.Local> and <xref:System.DateTime.Now>) now use operating system rules instead of other .NET Framework data for daylight saving time operations. | None. |
 | **Formatting strings** | To support culture-sensitive formatting, the <xref:System.TimeSpan> structure includes new overloads of the `ToString`, `Parse`, and `TryParse` methods in addition to new `ParseExact` and `TryParseExact` methods. | None. |
 
-
 ### Globalization
 
 For a list of new neutral and specific cultures, see [What's New in Globalization and Localization](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd997383%28v=vs.100%29).

@@ -17,27 +17,28 @@ If you want to create a completely custom control to use on a Windows Form, you 
   
 ### To create a custom control  
   
-1.  Create a new **Windows Application** or **Windows Control Library** project.  
+1. Create a new **Windows Application** or **Windows Control Library** project.  
   
-2.  From the **Project** menu, choose **Add Class**.  
+2. From the **Project** menu, choose **Add Class**.  
   
-3.  In the **Add New Item** dialog box, click **Custom Control**.  
+3. In the **Add New Item** dialog box, click **Custom Control**.  
   
      A new custom control is added to your project.  
   
-4.  Press F7 to open the **Code Editor** for your custom control.  
+4. Press F7 to open the **Code Editor** for your custom control.  
   
-5.  Locate the <xref:System.Windows.Forms.Control.OnPaint%2A> method, which will be empty except for a call to the <xref:System.Windows.Forms.Control.OnPaint%2A> method of the base class.  
+5. Locate the <xref:System.Windows.Forms.Control.OnPaint%2A> method, which will be empty except for a call to the <xref:System.Windows.Forms.Control.OnPaint%2A> method of the base class.  
   
-6.  Modify the code to incorporate any custom painting you want for your control.  
+6. Modify the code to incorporate any custom painting you want for your control.  
   
      For information about writing code to render graphics for controls, see [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md).  
   
-7.  Implement any custom methods, properties, or events that your control will incorporate.  
+7. Implement any custom methods, properties, or events that your control will incorporate.  
   
-8.  Save and test your control.  
+8. Save and test your control.  
   
 ## See also
+
 - [Varieties of Custom Controls](varieties-of-custom-controls.md)
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 - [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)

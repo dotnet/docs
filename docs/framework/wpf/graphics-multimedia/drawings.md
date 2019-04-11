@@ -22,6 +22,7 @@ ms.assetid: 6ab1fe6b-3eed-4432-a248-b487e7234e5b
   [How-to Topics](drawings-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Drawing>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
 - [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

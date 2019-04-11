@@ -16,17 +16,17 @@ If a procedure has a [ParamArray](../../../../visual-basic/language-reference/mo
   
 ### To overload a procedure that takes a variable number of parameters  
   
-1.  Ascertain that the procedure and calling code logic benefits from overloaded versions more than from a `ParamArray` parameter. See "Overloads and ParamArrays" in [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
+1. Ascertain that the procedure and calling code logic benefits from overloaded versions more than from a `ParamArray` parameter. See "Overloads and ParamArrays" in [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
   
-2.  Determine which numbers of supplied values the procedure should accept in the variable part of the parameter list. This might include the case of no value, and it might include the case of a single one-dimensional array.  
+2. Determine which numbers of supplied values the procedure should accept in the variable part of the parameter list. This might include the case of no value, and it might include the case of a single one-dimensional array.  
   
-3.  For each acceptable number of supplied values, write a `Sub` or `Function` declaration statement that defines the corresponding parameter list. Do not use either the `Optional` or the `ParamArray` keyword in this overloaded version.  
+3. For each acceptable number of supplied values, write a `Sub` or `Function` declaration statement that defines the corresponding parameter list. Do not use either the `Optional` or the `ParamArray` keyword in this overloaded version.  
   
-4.  In each declaration, precede the `Sub` or `Function` keyword with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword.  
+4. In each declaration, precede the `Sub` or `Function` keyword with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword.  
   
-5.  Following each declaration, write the procedure code that should execute when the calling code supplies values corresponding to that declaration's parameter list.  
+5. Following each declaration, write the procedure code that should execute when the calling code supplies values corresponding to that declaration's parameter list.  
   
-6.  Terminate each procedure with the `End Sub` or `End Function` statement as appropriate.  
+6. Terminate each procedure with the `End Sub` or `End Function` statement as appropriate.  
   
 ## Example  
  The following example shows a procedure defined with a [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) parameter, and then an equivalent set of overloaded procedures.  
@@ -48,6 +48,7 @@ If a procedure has a [ParamArray](../../../../visual-basic/language-reference/mo
  Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the length of the array the calling code passed to it, and take appropriate steps if it is too large for your application.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Optional Parameters](./optional-parameters.md)

@@ -57,6 +57,7 @@ With virtual mode, you can manage the interaction between the <xref:System.Windo
  If you are implementing virtual mode in order to work efficiently with large amounts of data, you will also want to ensure that you are working efficiently with the <xref:System.Windows.Forms.DataGridView> control itself. For more information about the efficient use of cell styles, automatic sizing, selections, and row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>
 - [Performance Tuning in the Windows Forms DataGridView Control](performance-tuning-in-the-windows-forms-datagridview-control.md)

@@ -20,6 +20,7 @@ This example shows how to convert an image to grayscale using <xref:System.Windo
  [!code-vb[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/FormatConvertedBitmapExample.vb#formatconvertedbitmapcodeexamplewholepage)]  
   
 ## See also
+
 - [Use the Image Element](how-to-use-the-image-element.md)
 - [Crop an Image](how-to-crop-an-image.md)
 - [Rotate an Image](how-to-rotate-an-image.md)

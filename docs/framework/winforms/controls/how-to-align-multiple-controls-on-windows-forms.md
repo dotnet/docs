@@ -16,13 +16,14 @@ To standardize the layout of the user interface (UI) of your Windows-based appli
   
 ### To align multiple controls on a form  
   
-1.  Open the form containing the controls you want to position in the **Windows Forms Designer**.  
+1. Open the form containing the controls you want to position in the **Windows Forms Designer**.  
   
-2.  Select the controls you want to align so that the first control you select is the primary control to which the others should be aligned.  
+2. Select the controls you want to align so that the first control you select is the primary control to which the others should be aligned.  
   
-3.  On the **Format** menu, point to **Align**, and then click one of the seven choices available.  
+3. On the **Format** menu, point to **Align**, and then click one of the seven choices available.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)

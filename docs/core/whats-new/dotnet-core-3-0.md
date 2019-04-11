@@ -6,25 +6,34 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 12/31/2018
+ms.date: 04/11/2018
 ---
 
-# What's new in .NET Core 3.0 (Preview 2)
+# What's new in .NET Core 3.0 (Preview 3)
 
-This article describes what is new in .NET Core 3.0 (preview 2). One of the biggest enhancements is support for Windows desktop applications (Windows only). By utilizing a .NET Core 3.0 SDK component called Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the section [Windows desktop](#windows-desktop) below.
+This article describes what is new in .NET Core 3.0 (preview 3). One of the biggest enhancements is support for Windows desktop applications (Windows only). By utilizing a .NET Core 3.0 SDK component called Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the section [Windows desktop](#windows-desktop) below.
 
 .NET Core 3.0 adds support for C# 8.0.
 
-[Download and get started with .NET Core 3.0 Preview 2](https://aka.ms/netcore3download) right now on Windows, Mac and Linux. You can see complete details of the release in the [.NET Core 3.0 Preview 2 release notes](https://aka.ms/netcore3releasenotes).
+[Download and get started with .NET Core 3.0 Preview 3](https://aka.ms/netcore3download) right now on Windows, Mac and Linux. You can see complete details of the release in the [.NET Core 3.0 Preview 3 release notes](https://aka.ms/netcore3releasenotes).
 
 For more information about what was released with each version, see the following announcements:
 
-- [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
+- [.NET Core 3.0 Preview 3 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-3/)
 - [.NET Core 3.0 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
+- [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
+
+## .NET Core SDK Windows Installer
+
+The MSI installer for Windows has changed with .NET Core 3.0 Preview 3. The SDK installers will now upgrade in place.
+
+The upgrade policy will specifically target .NET Core SDK feature bands. Feature bands are defined in hundreds groups in the patch section of the version number. For example, **3.0.101** and **3.0.201** are versions in two different feature bands while **3.0.101** and **3.0.199** are in the same feature band.
+
+This means when .NET Core SDK **3.0.101** becomes available and is installed, .NET Core SDK **3.0.100** will be removed from the machine if it exists. When .NET Core SDK **3.0.200** becomes available and is installed on the same machine, .NET Core SDK **3.0.101** will not be removed. In that situation, .NET Core SDK **3.0.200** will still be used by default, but .NET Core SDK **3.0.101** (or higher **.1xx** versions) will still be usable if it is configured for use via [global.json](../tools/global-json.md).
 
 ## C# 8
 
-.NET Core 3.0 supports C# 8, and as of .NET Core 3.0 Preview 2, supports these new features. For more information about C# 8.0 features, see the following blog posts:
+.NET Core 3.0 supports C# 8. For more information about C# 8.0 features, see the following blog posts:
 
 - [Do more with patterns in C# 8.0](https://devblogs.microsoft.com/dotnet/do-more-with-patterns-in-c-8-0/)
 - [Take C# 8.0 for a spin](https://devblogs.microsoft.com/dotnet/take-c-8-0-for-a-spin/)
@@ -47,6 +56,15 @@ There is also a `Range` type, which consists of two `Index` values, one for the 
 var slice = a[i1..i2]; // { 3, 4, 5 }
 ```
 
+For example, use the range syntax with a string to create a substring.
+
+```csharp
+string myString = "0123456789ABCDEF";
+string substring = myString[0..5]; // "01234"
+```
+
+The new `Range` and `Index` types support various APIs by default, such as `Span<T>` and `Array`.
+
 ### Async streams
 
 The `IAsyncEnumerable<T>` type is a new asynchronous version of `IEnumerable<T>`. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
@@ -66,7 +84,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
 > [!NOTE]
-> You need .NET Core 3.0 Preview 2 to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2 at the command line, then everything will work as expected.
+> You need .NET Core 3.0 Preview 2+ to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2+ at the command line, then everything will work as expected.
 
 ### Using Declarations
 
@@ -104,9 +122,25 @@ There will still be cases where *switch statements* will be a better choice than
 
 For more information, see [Do more with patterns in C# 8.0](https://devblogs.microsoft.com/dotnet/do-more-with-patterns-in-c-8-0/).
 
+## .NET Standard 2.1
+
+Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet new classlib` template will generate a project that targets **.NET Standard 2.0**. In order to target **.NET Standard 2.1**, you’ll have to edit your project file and change the `TargetFramework` property to `netstandard2.1`:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+ 
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+ 
+</Project>
+```
+
+If you are using Visual Studio, you will need Visual Studio 2019 as Visual Studio 2017 will not support **.NET Standard 2.1**.
+
 ## IEEE Floating-point improvements
 
-Floating point APIs are in the process of being updated to comply with [IEEE 754-2008 revision](https://en.wikipedia.org/wiki/IEEE_754-2008_revision). The goal of these changes is to expose all "required" operations and ensure that they are behaviorally compliant with the IEEE spec.
+Floating point APIs are in the process of being updated to comply with [IEEE 754-2008 revision](https://en.wikipedia.org/wiki/IEEE_754-2008_revision). The goal of these changes is to expose all "required" operations and ensure that they are behaviorally compliant with the IEEE spec. For more information about floating-point improvements, see the [blog post](https://devblogs.microsoft.com/dotnet/floating-point-parsing-and-formatting-improvements-in-net-core-3-0/).
 
 Parsing and formatting fixes:
 
@@ -308,6 +342,20 @@ The [Windows Application Packaging Project](https://docs.microsoft.com/windows/u
 ```xml
 <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
 ```
+
+## WinForms HighDPI
+
+.NET Core Windows Forms applications can set High DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)>. The `SetHighDpiMode` method will set the corresponding High DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
+
+The possible `HighDPIMode` values, as expressed by the `HighDpiMode` enum are:
+
+* `DpiUnaware`
+* `SystemAware`
+* `PerMonitor`
+* `PerMonitorV2`
+* `DpiUnawareGdiScaled`
+
+For more information about High DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
 
 ## Fast built-in JSON support
 
@@ -541,6 +589,16 @@ The `MetadataLoadContext` has a resolver class passed to its constructor. The re
 
 The [MetadataLoadContext tests](https://github.com/dotnet/corefx/tree/master/src/System.Reflection.MetadataLoadContext/tests/src/Tests) demonstrate many use cases. The [Assembly tests](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.MetadataLoadContext/tests/src/Tests/Assembly/AssemblyTests.cs) are a good place to start.
 
+
+## Type: AssemblyDependencyResolver
+
+Loading dependent assemblies from a given path was not supported in .NET Core. Now with the <xref:System.Runtime.Loader.AssemblyDependencyResolver> type, you can help `AssemblyLoadContext` resolve paths to dependent assemblies. For code examples, see the [AppWithPlugin Demo](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin).
+
+## Type: NativeLibrary
+
+<xref:System.Runtime.InteropServices.NativeLibrary> provides an encapsulation for loading a native library (using the same load logic as .NET Core P/Invoke) and providing the relevant helper functions such as `getSymbol`. For a code example, see the [DLLMap Demo](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin).
+https://github.com/dotnet/samples/tree/master/core/extensions/DllMapDemo
+
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 
 .NET Core will now take advantage of [TLS 1.3 support in OpenSSL 1.1.1](https://www.openssl.org/blog/blog/2018/09/11/release111/), when it is available in a given environment. There are multiple benefits of TLS 1.3, per the [OpenSSL team](https://www.openssl.org/blog/blog/2018/09/11/release111/):
@@ -754,6 +812,16 @@ sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
 Some distros require an additional step to enable access to the SSL certificate. See our [Linux Setup](https://github.com/dotnet/core/blob/master/Documentation/linux-setup.md) for details.
+
+## Docker and cgroup memory Limits
+
+As of Preview 3, Running .NET Core 3.0 on Linux with Docker works better with cgroup memory limits. Running a Docker container with memory limits, such as with `docker run -m`, will change how .NET Core behaves.
+
+* Default GC heap size: maximum of 20mb or 75% of the memory limit on the container.
+* Explicit size can be set as an absolute number or percentage of cgroup limit.
+* Minimum reserved segment size per GC heap is 16mb, which will reduce the number of heaps created on machines with a large number of cores and small memory limits.
+
+The GC change is the most critical part of our memory limits solution. It is also important to [update BCL APIs to honor cgroup settings](https://github.com/dotnet/corefx/issues/35638). Those changes are not included in Preview 3 but will come later. We’d appreciate feedback on which BCL APIs are most important to update first ([another example](https://github.com/dotnet/corefx/issues/32748)).
 
 ## GPIO Support for Raspberry Pi
 

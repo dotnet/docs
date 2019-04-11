@@ -2373,15 +2373,12 @@
     href: visual-basic/sample-applications.md
   - name: Walkthroughs
     href: visual-basic/walkthroughs.md
-- name: ML.NET Guide
-  href: machine-learning/index.md
+- name: ML.NET
   items:
-  - name: Overview
-    items:
-    - name: What is ML.NET?
-      href: machine-learning/what-is-mldotnet.md
-    - name: How does ML.NET work?
-      href: machine-learning/basic-concepts-model-training-in-mldotnet.md
+  - name: What is ML.NET?
+    href: machine-learning/index.md
+  - name: How does ML.NET work?
+    href: machine-learning/basic-concepts-model-training-in-mldotnet.md
   - name: Tutorials
     href: machine-learning/tutorials/index.md
     items:
@@ -2438,8 +2435,9 @@
     - name: API Reference
       href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
   - name: Resources
-    href: machine-learning/resources/index.md
     items:
+    - name: Overview
+      href: machine-learning/resources/index.md
     - name: Machine learning glossary
       href: machine-learning/resources/glossary.md
     - name: Machine learning tasks

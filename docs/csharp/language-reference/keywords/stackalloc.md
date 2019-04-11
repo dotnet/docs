@@ -61,7 +61,7 @@ The following example initializes a `stackalloc` array of integers to a bit mask
 
 ## Security
 
-You should use <xref:System.Span%601> or <xref:System.ReadonlySpan%601> when possible because unsafe code is less secure than safe alternatives. Even when used with pointers, the use of `stackalloc` automatically enables buffer overrun detection features in the common language runtime (CLR). If a buffer overrun is detected, the process is terminated as quickly as possible to minimize the chance that malicious code is executed.
+You should use <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> when possible because unsafe code is less secure than safe alternatives. Even when used with pointers, the use of `stackalloc` automatically enables buffer overrun detection features in the common language runtime (CLR). If a buffer overrun is detected, the process is terminated as quickly as possible to minimize the chance that malicious code is executed.
 
 ## C# language specification
 

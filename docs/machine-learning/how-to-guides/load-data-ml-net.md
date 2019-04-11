@@ -48,12 +48,12 @@ The [`LoadColumn`](xref:Microsoft.ML.Data.LoadColumnAttribute) attribute specifi
 > [`LoadColumn`](xref:Microsoft.ML.Data.LoadColumnAttribute) is only required when loading data from a file.
 
 Load columns as: 
-- Individual columns like `Size` and `CurrentPrices` in the previous `HousingData` class example.
-- Multiple columns at a time in the form of a vector like `HistoricalPrices` in the previous `HousingData` class example.
+- Individual columns like `Size` and `CurrentPrices` in the `HousingData` class.
+- Multiple columns at a time in the form of a vector like `HistoricalPrices` in the `HousingData` class.
 
 If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type.
 
-By default, ML.NET uses the property names as the column names. However, if you want to change the name of a column to something other than the property name, use the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute.#ctor*) attribute. When creating in-memory objects, you still create objects using the property name. However, for data processing and building machine learning models, ML.NET overrides and references the property with the value provided in the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute.#ctor*) attribute.
+ML.NET Operates through column names. If you want to change the name of a column to something other than the property name, use the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute.#ctor*) attribute. When creating in-memory objects, you still create objects using the property name. However, for data processing and building machine learning models, ML.NET overrides and references the property with the value provided in the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute.#ctor*) attribute.
 
 ## Load data from a single file
 
@@ -69,7 +69,7 @@ IDataView data = mlContext.Data.LoadFromTextFile<HousingData>("my-data-file.csv"
 
 ## Load data from multiple files
 
-In the event that your data is stored in multiple files, as long as the data model is the same, ML.NET allows you to load data from multiple files that are either in the same directory or multiple directories.
+In the event that your data is stored in multiple files, as long as the data schema is the same, ML.NET allows you to load data from multiple files that are either in the same directory or multiple directories.
 
 ### Load from files in a single directory
 
@@ -91,7 +91,7 @@ To load data from multiple directories, use the [`CreateTextLoader`](xref:Micros
 //Create MLContext
 MLContext mlContext = new MLContext();
 
-// Create Data Loader
+// Create TextLoader
 TextLoader textLoader = mlContext.Data.CreateTextLoader<HousingData>(separatorChar: ',', hasHeader: true);
 
 // Load Data

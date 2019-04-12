@@ -37,8 +37,8 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 ### Getting the URI of the Binary Stream  
  When retrieving certain types of media resources, such as images and other media files, it is often easier to use the URI of the media resource in your application than handling the binary data stream itself. To get the URI of a resource stream associated with a give media link entry, you must call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStreamUri%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance that is tracking the entity. The following example shows how to call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStreamUri%2A> method to get the URI of a media resource stream that is used to create a new image on the client:  
   
- [!code-csharp[Astoria Photo Streaming Client#GetReadStreamUri](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming client/cs/photowindow.xaml.cs#getreadstreamuri)]
- [!code-vb[Astoria Photo Streaming Client#GetReadStreamUri](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming client/vb/photowindow.xaml.vb#getreadstreamuri)]  
+ [!code-csharp[Astoria Photo Streaming Client#GetReadStreamUri](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_client/cs/photowindow.xaml.cs#getreadstreamuri)]
+ [!code-vb[Astoria Photo Streaming Client#GetReadStreamUri](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_client/vb/photowindow.xaml.vb#getreadstreamuri)]  
   
 ### Downloading the Binary Resource Stream  
  When retrieving a binary resource stream, you must call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance that is tracking the media link entry. This method sends a request to the data service that returns a <xref:System.Data.Services.Client.DataServiceStreamResponse> object, which has a reference to the stream that contains the resource. Use this method when your application requires the binary resource as a <xref:System.IO.Stream>. The following example shows how to call the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method to retrieve a stream that is used to create a new image on the client:  
@@ -52,8 +52,8 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 ### Uploading a Media Resource as a Stream  
  To insert or update a media resource, call the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance that is tracking the entity. This method sends a request to the data service that contains the media resource read from the supplied stream. The following example shows how to call the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method to send an image to the data service:  
   
- [!code-csharp[Astoria Photo Streaming Client#SetSaveStream](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming client/cs/photodetailswindow.xaml.cs#setsavestream)]
- [!code-vb[Astoria Photo Streaming Client#SetSaveStream](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming client/vb/photodetailswindow.xaml.vb#setsavestream)]  
+ [!code-csharp[Astoria Photo Streaming Client#SetSaveStream](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_client/cs/photodetailswindow.xaml.cs#setsavestream)]
+ [!code-vb[Astoria Photo Streaming Client#SetSaveStream](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_client/vb/photodetailswindow.xaml.vb#setsavestream)]  
   
  In this example, the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method is called by supplying a value of `true` for the `closeStream` parameter. This guarantees that the <xref:System.Data.Services.Client.DataServiceContext> closes the stream after the binary data is uploaded to the data service.  
   

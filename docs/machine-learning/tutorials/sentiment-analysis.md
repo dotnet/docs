@@ -50,8 +50,8 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 2. Copy the `yelp_labelled.txt` file into the *Data* directory you created.
 
-> [!NOTE]
-> The datasets this tutorial uses are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+    > [!NOTE]
+    > The datasets this tutorial uses are from the 'From Group to Individual Labels using Deep Features', Kotzias et. al,. KDD 2015, and hosted at the UCI Machine Learning Repository - Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 3. In Solution Explorer, right-click the `yelp_labeled.txt` file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -118,7 +118,7 @@ The `LoadData` method executes the following tasks:
 Create the `LoadData` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static TrainCatalogBase.TrainTestData LoadData(MLContext mlContext)
+public static TrainTestData LoadData(MLContext mlContext)
 {
 
 }

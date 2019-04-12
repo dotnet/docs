@@ -83,9 +83,11 @@
 -   `NoOptimization`  
   
 -   `MaxMethodImplVal`  
-  
+
+- `SecurityMitigations` (Available starting with .NET Framework 4.8.)
+    
 > [!NOTE]
->  Locking on the instance or on the type, as with the Synchronized flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
+>  Locking on the instance or on the type, as with the `Synchronized` flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
   
  ]]></format>
     </remarks>
@@ -681,7 +683,7 @@
       </ReturnValue>
       <MemberValue>1024</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the JIT compiler should look for security mitigation attributes, such as the user-defined <see langword="System.Runtime.CompilerServices.SecurityMitigationsAttribute" />. If found, the JIT compiler applies any related security mitigations. Available starting with .NET Framework 4.8.</summary>
       </Docs>
     </Member>
     <Member MemberName="Synchronized">

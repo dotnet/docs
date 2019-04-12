@@ -100,7 +100,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The file is a candidate for backup or removal.</summary>
+        <summary>This file is marked to be included in incremental backup operation. Windows sets this attribute whenever the file is modified, and backup software should clear it when processing the file during incremental backup.</summary>
       </Docs>
     </Member>
     <Member MemberName="Compressed">

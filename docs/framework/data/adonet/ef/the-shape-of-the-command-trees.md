@@ -80,9 +80,9 @@ DbNewInstanceExpression can only occur in the following two cases:
 
 - As the Projection property of DbProjectExpression.  When used as such the following restrictions apply:
 
-    - The result type must be a row type.
+  - The result type must be a row type.
 
-    - Each of its arguments is an expression that produces a result with a primitive type. Typically, each argument is a scalar expression, like a PropertyExpression over a DbVariableReferenceExpression, a function invocation, or an arithmetic computation of the DbPropertyExpression over a DbVariableReferenceExpression or a function invocation. However, an expression representing a scalar subquery can also occur in the list of arguments for a DbNewInstanceExpression. An expression that represents a scalar subquery is an expression tree that represents a subquery that returns exactly one row and one column of a primitive type with a DbElementExpression object root
+  - Each of its arguments is an expression that produces a result with a primitive type. Typically, each argument is a scalar expression, like a PropertyExpression over a DbVariableReferenceExpression, a function invocation, or an arithmetic computation of the DbPropertyExpression over a DbVariableReferenceExpression or a function invocation. However, an expression representing a scalar subquery can also occur in the list of arguments for a DbNewInstanceExpression. An expression that represents a scalar subquery is an expression tree that represents a subquery that returns exactly one row and one column of a primitive type with a DbElementExpression object root
 
 - With a collection return type, in which case it defines a new collection of the expressions provided as arguments.
 

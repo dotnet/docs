@@ -33,12 +33,12 @@
 ## Examples  
  In the following example, both properties of the `Order` type are mapped to existing feed elements. The `Product` property of the `Item` type is mapped to a custom feed attribute in a separate namespace.  
   
- [!code-csharp[Astoria Custom Feeds#CustomIQueryableFeeds](~/samples/snippets/csharp/VS_Snippets_Misc/astoria custom feeds/cs/orderitems.svc.cs#customiqueryablefeeds)]
- [!code-vb[Astoria Custom Feeds#CustomIQueryableFeeds](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria custom feeds/vb/orderitems.svc.vb#customiqueryablefeeds)]  
+ [!code-csharp[Astoria Custom Feeds#CustomIQueryableFeeds](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_custom_feeds/cs/orderitems.svc.cs#customiqueryablefeeds)]
+ [!code-vb[Astoria Custom Feeds#CustomIQueryableFeeds](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_custom_feeds/vb/orderitems.svc.vb#customiqueryablefeeds)]  
   
  The previous example returns the following result for the URI `http://myservice/OrderItems.svc/Orders(0)?$expand=Items`.  
   
- [!code-xml[Astoria Custom Feeds#IQueryableFeedResultInline](~/samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/iqueryablefeedresultinline.xml#iqueryablefeedresultinline)]  
+ [!code-xml[Astoria Custom Feeds#IQueryableFeedResultInline](~/samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/iqueryablefeedresultinline.xml#iqueryablefeedresultinline)]  
   
  ]]></format>
     </remarks>
@@ -305,7 +305,7 @@
   
  <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> must be a path expression in which nested elements are separated by a backslash (`/`) and attributes are specified by an ampersand (`@`). In the following example, the string `UnitsInStock/@ReorderLevel` maps a property value to an attribute named `ReorderLevel` on a child element named `UnitsInStock` of the root entry element.  
   
- [!code-xml[Astoria Custom Feeds#EdmFeedMappedToAttributeSpecific](~/samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedmappedtoattributespecific)]  
+ [!code-xml[Astoria Custom Feeds#EdmFeedMappedToAttributeSpecific](~/samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/northwind.csdl#edmfeedmappedtoattributespecific)]  
   
  The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property cannot contain white space.  
   

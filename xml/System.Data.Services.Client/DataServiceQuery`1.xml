@@ -86,13 +86,13 @@
 ## Examples  
  The following example shows a <xref:System.Data.Services.Client.DataServiceQuery%601> that is used with sequential <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method calls to only return orders with a freight cost of more than $30 and to order the results by the ship date in descending order.  
   
- [!code-csharp[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addqueryoptions)]
- [!code-vb[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addqueryoptions)]  
+ [!code-csharp[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addqueryoptions)]
+ [!code-vb[Astoria Northwind Client#AddQueryOptions](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addqueryoptions)]  
   
  The following example shows how to compose a LINQ query that is equivalent to the previous query that used <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A>.  
   
- [!code-csharp[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addqueryoptionslinq)]
- [!code-vb[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addqueryoptionslinq)]  
+ [!code-csharp[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addqueryoptionslinq)]
+ [!code-vb[Astoria Northwind Client#AddQueryOptionsLinq](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addqueryoptionslinq)]  
   
  ]]></format>
         </remarks>
@@ -344,8 +344,8 @@
 ## Examples  
  This example executes a query after it calls the <xref:System.Data.Services.Client.DataServiceQuery%601.IncludeTotalCount%2A> method. The <xref:System.Data.Services.Client.QueryOperationResponse%601.TotalCount%2A> property is used to determine number of entities returned by the query.  
   
- [!code-csharp[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#countallcustomers)]
- [!code-vb[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#countallcustomers)]  
+ [!code-csharp[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#countallcustomers)]
+ [!code-vb[Astoria Northwind Client#CountAllCustomers](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#countallcustomers)]  
   
  ]]></format>
         </remarks>

@@ -21,7 +21,7 @@ ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
  cref = " `member`"  
  A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within double quotation marks (" ").  
   
- For more information on how to create a cref reference to a generic type, see [\<see>](../../../csharp/programming-guide/xmldoc/see.md).  
+ For more information on how to create a cref reference to a generic type, see [\<see>](processing-the-xml-file.md).  
   
  `description`  
  A description of the exception.  

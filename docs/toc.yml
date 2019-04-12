@@ -2373,17 +2373,17 @@
     href: visual-basic/sample-applications.md
   - name: Walkthroughs
     href: visual-basic/walkthroughs.md
-- name: ML.NET
+- name: ML.NET Guide  
   items:
-  - name: Welcome to ML.NET
+  - name: Overview
     href: machine-learning/index.md
   - name: What is ML.NET?
     href: machine-learning/what-is-mldotnet.md
-  - name: How does ML.NET work?
+  - name: Model training concepts
     href: machine-learning/basic-concepts-model-training-in-mldotnet.md
-  - name: Tutorials
+  - name: Tutorials    
     items:
-    - name: Overview
+    - name: Overview  
       href: machine-learning/tutorials/index.md
     - name: Sentiment analysis (binary classification)
       href: machine-learning/tutorials/sentiment-analysis.md
@@ -2399,13 +2399,23 @@
       href: machine-learning/tutorials/image-classification.md
   - name: How-to guides
     items:
-    - name: Overview
+    - name: Overview  
       href: machine-learning/how-to-guides/index.md
-    - name: Load data
-      href: machine-learning/how-to-guides/load-data.md
-    - name: Prepare data
-      href: machine-learning/how-to-guides/prepare-data.md
-    - name: Train models  
+    - name: Prepare data      
+      items:
+      - name: Apply categorical feature engineering
+        href: machine-learning/how-to-guides/train-model-categorical-ml-net.md
+      - name: Apply textual feature engineering
+        href: machine-learning/how-to-guides/train-model-textual-ml-net.md
+      - name: Load data with many columns
+        href: machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md
+      - name: Load data from multiple files
+        href: machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md
+      - name: Load data from text file
+        href: machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD
+      - name: Preprocess data with normalizers
+        href: machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md
+    - name: Train, evaluate, and explain the model
       items:
       - name: Train model with real-time data sources
         href: machine-learning/how-to-guides/load-non-file-training-data-ml-net.md
@@ -2417,7 +2427,7 @@
         href: machine-learning/how-to-guides/train-regression-model-ml-net.md
       - name: Determine model feature importance with PFI
         href: machine-learning/how-to-guides/determine-global-feature-importance-in-model.md
-    - name: Use a trained model
+    - name: Use the trained model
       items:
       - name: One prediction at a time with PredictionEngine
         href: machine-learning/how-to-guides/single-predict-model-ml-net.md
@@ -2427,8 +2437,10 @@
         href: machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md
       - name: Serve Model in Web API
         href: machine-learning/how-to-guides/serve-model-web-api-ml-net.md
-    - name: Create a probabilistic application with ML.NET Probabilistic
-      href: machine-learning/how-to-guides/matchup-app-infer-net.md
+    - name: Infer.NET
+      items:
+      - name: Probabilistic programming with Infer.NET
+        href: machine-learning/how-to-guides/matchup-app-infer-net.md
   - name: Reference
     items:
     - name: API Reference
@@ -2436,7 +2448,7 @@
   - name: Resources
     items:
     - name: Overview
-      href: machine-learning/resources/index.md
+      href: machine-learning/resources/index.md         
     - name: Machine learning glossary
       href: machine-learning/resources/glossary.md
     - name: Machine learning tasks

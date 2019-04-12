@@ -68,7 +68,7 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
+      <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />. It is similar to the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property, except that `Entry` returns a <see cref="T:System.Collections.DictionaryEntry" /> rather than an <see cref="T:System.Object" />.</para>
     </block>
     <altmember cref="T:System.Collections.IDictionary" />
     <altmember cref="T:System.Collections.IEnumerator" />
@@ -128,7 +128,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
+          <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />. It is similar to the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property, except that `Entry` returns a <see cref="T:System.Collections.DictionaryEntry" /> rather than an <see cref="System.Object" />.</para>
         </block>
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />

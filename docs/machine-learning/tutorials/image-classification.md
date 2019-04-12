@@ -99,6 +99,7 @@ Your layer uses a [multinomial logistic regression algorithm](https://en.wikiped
 
 There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
+<!-- markdownlint-disable MD010 -->
 ```tsv
 broccoli.jpg	food
 pizza.jpg	food
@@ -109,6 +110,7 @@ teddy4.jpg	toy
 toaster.jpg	appliance
 toaster2.png	appliance
 ```
+<!-- markdownlint-enable MD010 -->
 
 The training and testing images are located in the assets folders that you'll download in a zip file. These images belong to Wikimedia Commons.
 > *[Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=Main_Page&oldid=313158208), the free media repository.* Retrieved 10:48, October 17, 2018 from:  

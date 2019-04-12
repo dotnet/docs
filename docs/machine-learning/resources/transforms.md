@@ -40,8 +40,8 @@ Other data transformations don't require training data. For example: the <xref:M
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.ConversionsExtensionsCatalog.ConvertType%2A> | Convert the type of an input column to a new type |
-| <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValue*> | Create a dictionary of key to value mappings |
-| <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey*> | Map values to keys (categories), either by creating the mapping from the data of the input column, or by using a given dictionary of values |
+| <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValue*> | Map values to keys (categories) based on the supplied dictionary of mappings |
+| <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey*> | Map values to keys (categories) by creating the mapping from the input data |
 | <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapKeyToValue*> | Convert keys back to their original values |
 | <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapKeyToVector*> | Convert keys back to vectors of original values |
 | <xref:Microsoft.ML.ConversionsCatalog.MapKeyToBinaryVector*> | Convert keys back to a binary vector of original values |

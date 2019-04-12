@@ -42,10 +42,10 @@ Having SQL Server running as a container is not just useful for a demo where you
 #### Additional resources
 
 - **Run the SQL Server Docker image on Linux, Mac, or Windows** \
-    [https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker](https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker)
+    <https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker>
 
 - **Connect and query SQL Server on Linux with sqlcmd** \
-    [https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd](https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
+    <https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd>
 
 ### Seeding with test data on Web application startup
 
@@ -159,7 +159,7 @@ However, when you run Redis in production, it is better to look for a high-avail
 
 Redis provides a Docker image with Redis. That image is available from Docker Hub at this URL:
 
-[https://hub.docker.com/_/redis/](https://hub.docker.com/_/redis/)
+<https://hub.docker.com/_/redis/>
 
 You can directly run a Docker Redis container by executing the following Docker CLI command in your command prompt:
 

@@ -25,7 +25,7 @@ If you wish to use the downloaded sample with file system distribution, do the f
 ## Prerequisites
 
 - Install the [.NET Core 2.0 SDK](https://www.microsoft.com/net/core) or later versions.
-- Install the [nuget.exe CLI](https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools#nugetexe-cli)
+- Install the [nuget.exe CLI](https://docs.microsoft.com/nuget/install-nuget-client-tools#nugetexe-cli)
 - Read the reference topic [Custom templates for dotnet new](../tools/custom-templates.md).
 
 ## Create a template from a project

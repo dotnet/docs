@@ -39,7 +39,7 @@ The following provides an overview of C#’s type system.
   - Delegate types
     * User-defined types of the form `delegate int D(...)`
 
-[ValueTypes]: (../language-reference/keywords/value-types-table)
+[ValueTypes]: ../language-reference/keywords/value-types-table
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
 
 The two floating-point types, `float` and `double`, are represented using the 32-bit single-precision and 64-bit double-precision IEC-60559 formats, respectively.

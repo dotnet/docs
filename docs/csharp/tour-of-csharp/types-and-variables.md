@@ -13,7 +13,7 @@ C#’s value types are further divided into *simple types*, *enum types*, *struc
 
 The following provides an overview of C#’s type system.
 
-* Value types
+* [Value types][ValueTypes]
   - Simple Types
     * Signed integral: `sbyte`, `short`, `int`, `long`
     * Unsigned integral: `byte`, `ushort`, `uint`, `ulong`
@@ -39,6 +39,7 @@ The following provides an overview of C#’s type system.
   - Delegate types
     * User-defined types of the form `delegate int D(...)`
 
+[ValueTypes]: (../language-reference/keywords/value-types-table)
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
 
 The two floating-point types, `float` and `double`, are represented using the 32-bit single-precision and 64-bit double-precision IEC-60559 formats, respectively.

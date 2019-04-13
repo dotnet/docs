@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Sentiment analysis sample overview
 
-The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. The Yelp sentiment dataset is from University of California, Irvine (UCI), which is split into a train dataset and a test dataset. The sample evaluates the model with the test dataset for quality analysis. 
+The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. The Yelp sentiment dataset is from University of California, Irvine (UCI), which is split into a train dataset and a test dataset. The sample evaluates the model with the test dataset for quality analysis.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
 
@@ -48,7 +48,7 @@ The workflow phases are as follows:
 2. **Prepare your data**
    * **Load the data**
    * **Extract features (Transform your data)**
-3. **Build and train** 
+3. **Build and train**
    * **Train the model**
    * **Evaluate the model**
 4. **Deploy Model**
@@ -91,7 +91,7 @@ Classification algorithms are frequently one of the following types:
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
 
-Because the website comments need to be classified as either positive or negative, you use the Binary Classification algorithm. 
+Because the website comments need to be classified as either positive or negative, you use the Binary Classification algorithm.
 
 ## Create a console application
 
@@ -173,22 +173,23 @@ public static TrainCatalogBase.TrainTestData LoadData(MLContext mlContext)
 
 }
 ```
+
 ## Load the data
 
 Since your previously created `SentimentData` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code using the `MLContext.Data.LoadFromTextFile` wrapper for the [LoadFromTextFile method](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29). It returns a
-<xref:Microsoft.Data.DataView.IDataView>. 
+<xref:Microsoft.Data.DataView.IDataView>.
 
- As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
+As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
 In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with comments and corresponding toxic or non toxic sentiment. This is used to create the model, and train it.
 
- Add the following code as the first line of the `LoadData` method:
+Add the following code as the first line of the `LoadData` method:
 
 [!code-csharp[LoadData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#LoadData "loading dataset")]
 
 ### Split the dataset for model training and testing
 
-Next, you need both a training dataset to train the model and a test dataset to evaluate the model. Use the `MLContext.BinaryClassification.TrainTestSplit` which wraps <xref:Microsoft.ML.StaticPipe.TrainingStaticExtensions.TrainTestSplit%2A> to split the loaded dataset into train and test datasets and return them inside of a <xref:Microsoft.ML.TrainCatalogBase.TrainTestData>. You can specify the fraction of data for the test set with the `testFraction`parameter. The default is 10% but you use 20% in this case to use more data for the evaluation.  
+Next, you need both a training dataset to train the model and a test dataset to evaluate the model. Use the `MLContext.BinaryClassification.TrainTestSplit` which wraps <xref:Microsoft.ML.StaticPipe.TrainingStaticExtensions.TrainTestSplit%2A> to split the loaded dataset into train and test datasets and return them inside of a <xref:Microsoft.ML.TrainCatalogBase.TrainTestData>. You can specify the fraction of data for the test set with the `testFraction`parameter. The default is 10% but you use 20% in this case to use more data for the evaluation.
 
 To split the loaded data into the needed datasets, add the following code as the next line in the `LoadData` method:
 
@@ -220,7 +221,7 @@ public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView spl
 }
 ```
 
-Notice that two parameters are passed into the Train method; a `MLContext` for the context (`mlContext`), and an `IDataView`for the training dataset (`splitTrainSet`). 
+Notice that two parameters are passed into the Train method; a `MLContext` for the context (`mlContext`), and an `IDataView`for the training dataset (`splitTrainSet`).
 
 ## Extract and transform the data
 
@@ -349,7 +350,7 @@ Add a call to the new method from the `Main` method, right under the `Evaluate` 
 While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the first line in the `Predict` Method:
 
 [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreatePredictionEngine1 "Create the PredictionEngine")]
-  
+
 Add a comment to test the trained model's prediction in the `Predict` method by creating an instance of `SentimentData`:
 
 [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssue1 "Create test data for single prediction")]
@@ -446,7 +447,7 @@ Press any key to continue . . .
 
 ```
 
-Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment. 
+Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment.
 
 Building successful models is an iterative process. This model has initial lower quality as the tutorial uses small datasets to provide quick model training. If you aren't satisfied with the model quality, you can try to improve it by providing larger training datasets or by choosing different training algorithms with different hyper-parameters for each algorithm.
 
@@ -455,6 +456,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 ## Next steps
 
 In this tutorial, you learned how to:
+
 > [!div class="checklist"]
 > * Understand the problem
 > * Select the appropriate machine learning algorithm
@@ -466,5 +468,6 @@ In this tutorial, you learned how to:
 > * Deploy and Predict with a loaded model
 
 Advance to the next tutorial to learn more
+
 > [!div class="nextstepaction"]
 > [Issue Classification](github-issue-classification.md)

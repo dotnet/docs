@@ -14,17 +14,21 @@ ms.date: 12/04/2018
 ## Synopsis
 
 # [.NET Core 2.x](#tab/netcore2x)
+
 ```
 dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
 ```
 dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output]
     [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
+
 ---
 
 ## Description
@@ -103,6 +107,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 > [!NOTE]
 > Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
+>
 > ```xml
 > <PropertyGroup>
 >    <IsPackable>true</IsPackable>

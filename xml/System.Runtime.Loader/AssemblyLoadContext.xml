@@ -220,7 +220,7 @@ This constructor is protected. It can only be called from the <xref:System.Runti
       <Docs>
         <param name="assembly">An assembly.</param>
         <summary>Gets the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> containing the specified <see cref="T:System.Reflection.Assembly" />.</summary>
-        <returns>The assembly load context containing the <paramref name="assembly" />.</returns>
+        <returns>The assembly load context containing the <paramref name="assembly" />. If the <paramref name="assembly" /> is not provided by the runtime, this method returns null.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="assembly" /> is <see langword="null" />.</exception>

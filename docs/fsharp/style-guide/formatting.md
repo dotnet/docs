@@ -68,7 +68,7 @@ let ( !> ) x f = f x
 let (!>) x f = f x
 ```
 
-For any custom operator that starts with `*`, you'll need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, it's recommended that you simply surround the definitions of all operators with a single white-space character.
+For any custom operator that starts with `*` and that has more than one character, you need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, we recommend that you simply surround the definitions of all operators with a single white-space character.
 
 ### Surround function parameter arrows with white space
 

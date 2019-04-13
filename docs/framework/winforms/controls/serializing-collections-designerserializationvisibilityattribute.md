@@ -29,7 +29,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
 ## Creating a Control That Has a Serializable Collection
  The first step is to create a control that has a serializable collection as a property. You can edit the contents of this collection using the **Collection Editor**, which you can access from the **Properties** window.
 
-#### To create a control with a serializable collection
+### To create a control with a serializable collection
 
 1. Create a Windows Control Library project called `SerializationDemoControlLib`. For more information, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
 
@@ -76,7 +76,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
 
 To test the serialization behavior of your control, you will place it on a form and change the contents of the collection with the **Collection Editor**. You can see the serialized collection state by looking at a special designer file, into which the **Windows Forms Designer** emits code.
 
-#### To serialize a collection
+### To serialize a collection
 
 1. Add a Windows Application project to the solution. Name the project `SerializationDemoControlTest`.
 

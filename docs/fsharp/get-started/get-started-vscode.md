@@ -147,6 +147,7 @@ Next, open the `Script.fsx` file again, and delete the entire `toPigLatin` funct
 #load "ClassLibraryDemo.fs"
 open ClassLibraryDemo
 ```
+
 Select both lines of text and press Alt+Enter to execute these lines in FSI. These will load the contents of the Pig Latin library into the FSI process and `open` the `ClassLibraryDemo` namespace so that you have access to the functionality.
 
 Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:

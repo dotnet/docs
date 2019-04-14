@@ -32,8 +32,8 @@ helpviewer_keywords:
 
 The following operators perform arithmetic operations with numeric types:
 
-- Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators.
-- Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators.
+- Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators
+- Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators
 
 Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
 
@@ -161,10 +161,10 @@ You also can use the `-` operator for delegate removal. For more information, se
 
 The following list orders arithmetic operators starting from the highest precedence to the lowest:
 
-- Postfix increment `x++` and decrement `x--` operators.
-- Prefix increment `++x` and decrement `--x` and unary `+` and `-` operators.
-- Multiplicative `*`, `/`, and `%` operators.
-- Additive `+` and `-` operators.
+- Postfix increment `x++` and decrement `x--` operators
+- Prefix increment `++x` and decrement `--x` and unary `+` and `-` operators
+- Multiplicative `*`, `/`, and `%` operators
+- Additive `+` and `-` operators
 
 Binary arithmetic operators are left-associative. That is, operators with the same precedence level are evaluated from left to right.
 

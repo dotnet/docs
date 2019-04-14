@@ -41,7 +41,7 @@ The following operators perform logical operations with the [bool](../keywords/b
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.
 - Binary [`&&` (conditional logical AND)](#conditional-logical-and-operator-) and [`||` (conditional logical OR)](#conditional-logical-or-operator-) operators. Those operators evaluate the second operand only if it's necessary.
 
-For the operands of [integral](../keywords/integral-types-table.md) types, the `&`, `|`, and `^` operators perform bitwise logical operations.
+For the operands of the [integral](../keywords/integral-types-table.md) types, the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
 
 ## Logical negation operator !
 
@@ -61,7 +61,7 @@ In the following example, the second operand of the `&` operator is a method cal
 
 The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the second operand if the first operand evaluates to `false`.
 
-For the operands of integral types, the `&` operator computes [bitwise logical AND](and-operator.md#integer-logical-bitwise-and-operator) of its operands. The unary `&` operator is the [address-of operator](and-operator.md#unary-address-of-operator).
+For the operands of integral types, the `&` operator computes the [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) of its operands. The unary `&` operator is the [address-of operator](and-operator.md#unary-address-of-operator).
 
 ## Logical exclusive OR operator ^
 
@@ -69,7 +69,7 @@ The `^` operator computes the logical exclusive OR, also known as the logical XO
 
 [!code-csharp-interactive[logical exclusive OR](~/samples/snippets/csharp/language-reference/operators/LogicalOperators.cs#Xor)]
 
-For the operands of integral types, the `^` operator computes [bitwise logical exclusive OR](xor-operator.md) of its operands.
+For the operands of integral types, the `^` operator computes the [bitwise logical exclusive OR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) of its operands.
 
 ## Logical OR operator |
 
@@ -83,7 +83,7 @@ In the following example, the second operand of the `|` operator is a method cal
 
 The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but doesn't evaluate the second operand if the first operand evaluates to `true`.
 
-For the operands of integral types, the `|` operator computes [bitwise logical OR](or-operator.md) of its operands.
+For the operands of integral types, the `|` operator computes the [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) of its operands.
 
 ## Conditional logical AND operator &amp;&amp;
 
@@ -187,3 +187,4 @@ For more information, see the following sections of the [C# language specificati
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
+- [Bitwise and shift operators](bitwise-and-shift-operators.md)

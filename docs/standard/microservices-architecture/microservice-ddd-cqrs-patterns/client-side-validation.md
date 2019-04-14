@@ -40,7 +40,7 @@ The implementation of client-side validation depends on what kind of client appl
   <https://scotch.io/tutorials/angular-2-form-validation>
 
 - **Form Validation** \
-  <https://angular.io/docs/ts/latest/cookbook/form-validation.html>
+  <https://angular.io/guide/form-validation>
 
 - **Validation.** Breeze documentation. \
   <https://breeze.github.io/doc-js/validation.html>

@@ -287,7 +287,7 @@ You can create your own Docker base image from scratch. This scenario is not rec
   <https://github.com/dotnet/announcements/issues/14>
 
 - **Create a base image**. Official Docker documentation.\
-  <https://docs.docker.com/engine/userguide/eng-image/baseimages/>
+  <https://docs.docker.com/develop/develop-images/baseimages/>
 
 ![3 - Create images defined at Dockerfiles](./media/image7.png)
 
@@ -516,7 +516,7 @@ If you're developing using the editor/CLI approach, debugging containers is more
 ### Additional resources
 
 - **Debugging apps in a local Docker container** \
-  <https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh>
+  [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
 
 - **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video. \
   <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115>

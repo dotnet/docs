@@ -362,7 +362,7 @@ As stated, use domain events to explicitly implement side effects of changes wit
   <http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
 - **Udi Dahan. Domain Events – Take 2** \
-  [http://udidahan.com/2008/08/25/domain-events-take-2/](http://udidahan.com/2008/08/25/domain-events-take-2/%20)
+  <http://udidahan.com/2008/08/25/domain-events-take-2/>
 
 - **Udi Dahan. Domain Events – Salvation** \
   <http://udidahan.com/2009/06/14/domain-events-salvation/>

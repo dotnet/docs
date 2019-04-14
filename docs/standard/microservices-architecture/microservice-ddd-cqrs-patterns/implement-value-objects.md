@@ -314,7 +314,7 @@ public class Address
   <https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/>
 
 - **Shadow Properties** \
-  <https://docs.microsoft.com/ef/core/modeling/shadow-properties>
+  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
 
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/aspnet/EntityFramework/issues/246>

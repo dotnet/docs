@@ -162,13 +162,13 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 - **Introduction to Dependency Injection in ASP.NET Core** \
-  <https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection>
+  [https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
 
 - **Autofac.** Official documentation. \
-  <http://docs.autofac.org/en/latest/>
+  <https://docs.autofac.org/en/latest/>
 
 - **Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes - Cesar de la Torre.** \
-  <https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/>
+  <https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/>
 
 ## Implement the Command and Command Handler patterns
 

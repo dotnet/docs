@@ -83,7 +83,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
 **Example 3 - A text range that partially spans the content of a text container. The text container has an embedded text hyperlink that is not part of the text range.**  
   
-`{The URL} <https://www.microsoft.com> is embedded in text.`
+`{The URL} [https://www.microsoft.com](https://www.microsoft.com) is embedded in text.`
   
 |Method called|Result|  
 |-------------------|------------|  

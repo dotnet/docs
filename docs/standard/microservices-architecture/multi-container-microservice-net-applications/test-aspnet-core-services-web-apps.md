@@ -99,10 +99,10 @@ public class PrimeWebDefaultRequestShould
 #### Additional resources
 
 - **Steve Smith. Testing controllers** (ASP.NET Core) \
-    <https://docs.microsoft.com/aspnet/core/mvc/controllers/testing>
+    [https://docs.microsoft.com/aspnet/core/mvc/controllers/testing](/aspnet/core/mvc/controllers/testing)
 
 - **Steve Smith. Integration testing** (ASP.NET Core) \
-    <https://docs.microsoft.com/aspnet/core/test/integration-tests>
+    [https://docs.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
 - **Unit testing in .NET Core using dotnet test** \
     [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)

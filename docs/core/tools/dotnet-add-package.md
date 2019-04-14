@@ -1,11 +1,15 @@
 ---
 title: dotnet add package command
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 12/04/2018
+ms.date: 04/14/2019
 ---
 # dotnet add package
 
+**This topic applies to: ✓** .NET Core 1.x SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+-->
 
 ## Name
 
@@ -72,11 +76,11 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 * **`--package-directory <PACKAGE_DIRECTORY>`**
 
-  Restores the package to the specified directory.
+  The directory where to restore the packages.
 
 * **`-s|--source <SOURCE>`**
 
-  Uses a specific NuGet package source during the restore operation.
+  The NuGet package source to use during the restore operation.
 
 * **`-v|--version <VERSION>`**
 

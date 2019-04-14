@@ -1,7 +1,7 @@
 ---
 title: dotnet build-server command
 description: The dotnet build-server command interacts with servers started by a build.
-ms.date: 12/04/2018
+ms.date: 04/14/2019
 ---
 # dotnet build-server
 

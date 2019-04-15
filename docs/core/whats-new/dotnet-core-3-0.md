@@ -72,10 +72,10 @@ Corresponds to the `nextUp` and `nextDown` IEEE operations. They return the smal
 Corresponds to the `maxNumMag` and `minNumMag` IEEE operations, they return the value that is greater or lesser in magnitude of the two inputs (respectively). For example, `Math.MaxMagnitude(2.0, -3.0)` would return `-3.0`.
 
 * `ILogB`\
-Corresponds to the `logB` IEEE operation which returns an integral value, it returns the integral base-2 log of the input parameter. This is effectively the same as `floor(log2(x))`, but done with minimal rounding error.
+Corresponds to the `logB` IEEE operation that returns an integral value, it returns the integral base-2 log of the input parameter. This is effectively the same as `floor(log2(x))`, but done with minimal rounding error.
 
 * `ScaleB`\
-Corresponds to the `scaleB` IEEE operation which takes an integral value, it returns effectively `x * pow(2, n)`, but is done with minimal rounding error.
+Corresponds to the `scaleB` IEEE operation that takes an integral value, it returns effectively `x * pow(2, n)`, but is done with minimal rounding error.
 
 * `Log2`\
 Corresponds to the `log2` IEEE operation, it returns the base-2 logarithm. It minimizes rounding error.
@@ -86,9 +86,9 @@ Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That 
 * `CopySign`\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
-## .NET Platform Dependent Intrinsics
+## .NET Platform-Dependent Intrinsics
 
-APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve big performance improvements in certain scenarios, such as processing data efficiently in parallel. In addition to exposing the APIs for your programs to use, the .NET libraries have begun using these instructions to improve performance.
+APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel. In addition to exposing the APIs for your programs to use, the .NET libraries have begun using these instructions to improve performance.
 
 The following CoreCLR PRs demonstrate a few of the intrinsics, either via implementation or use:
 
@@ -213,8 +213,6 @@ dotnet new winforms
 
 Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF. Designers are still not yet supported. And you can open, launch, and debug these projects in Visual Studio 2019.
 
-Visual Studio 2017 15.9 adds the ability to [enable .NET Core previews](https://devblogs.microsoft.com/dotnet/net-core-tooling-update-for-visual-studio-2017-version-15-9/), but you need to turn that feature on, and it's not a supported scenario.
-
 The new projects are the same as existing .NET Core projects, with a couple additions. Here is the comparison of the basic .NET Core console project and a basic Windows Forms and WPF project.
 
 In a .NET Core console project, the project uses the `Microsoft.NET.Sdk` SDK and declares a dependency on .NET Core 3.0 via the `netcoreapp3.0` target framework. To create a Windows Desktop app, use the `Microsoft.NET.Sdk.WindowsDesktop` SDK and choose which UI framework to use:
@@ -245,7 +243,7 @@ To choose Windows Forms over WPF, set `UseWindowsForms` instead of `UseWPF`:
 
 Both `UseWPF` and `UseWindowsForms` can be set to `true` if the app uses both frameworks, for example when a Windows Forms dialog is hosting a WPF control.
 
-Please share your feedback on the [dotnet/winforms](https://github.com/dotnet/winforms/issues),  [dotnet/wpf](https://github.com/dotnet/wpf/issues) and [dotnet/core](https://github.com/dotnet/core/issues) repos.
+Share your feedback on the [dotnet/winforms](https://github.com/dotnet/winforms/issues),  [dotnet/wpf](https://github.com/dotnet/wpf/issues) and [dotnet/core](https://github.com/dotnet/core/issues) repos.
 
 ## MSIX Deployment for Windows Desktop
 
@@ -262,7 +260,7 @@ The [Windows Application Packaging Project](https://docs.microsoft.com/windows/u
 
 .NET Core Windows Forms applications can set High DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)>. The `SetHighDpiMode` method sets the corresponding High DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
 
-The possible `HighDPIMode` values, as expressed by the `HighDpiMode` enum are:
+The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Forms.HighDpiMode> enum are:
 
 * `DpiUnaware`
 * `SystemAware`
@@ -274,7 +272,7 @@ For more information about High DPI modes, see [High DPI Desktop Application Dev
 
 ## Fast built-in JSON support
 
-The .NET ecosystem has relied on [**Json.NET**](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. **Json.NET** uses .NET strings as its base datatype, which are UTF-16 under the hood.
+The .NET ecosystem has relied on [**Json.NET**](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. **Json.NET** uses .NET strings as its base datatype, which is UTF-16 under the hood.
 
 The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. Three new main JSON-related types have been added to .NET Core 3.0 the `System.Text.Json` namespace.
 
@@ -383,7 +381,7 @@ The `Utf8JsonWriter` accepts `IBufferWriter<byte>` as the output location to syn
 
 ### JsonDocument
 
-`System.Text.Json.JsonDocument` is built on top of the `Utf8JsonReader`. The `JsonDocument` provides the ability to parse JSON data and build a read-only Document Object Model (DOM) that can be queried to support random access and enumeration. The JSON elements that compose the data can be accessed via the `JsonElement` type which is exposed by the `JsonDocument` as a property called `RootElement`. The `JsonElement` contains the JSON array and object enumerators along with APIs to convert JSON text to common .NET types. Parsing a typical JSON payload and accessing all its members using the `JsonDocument` is 2-3x faster than **Json.NET** with very little allocations for data that is reasonably sized (i.e. < 1 MB).
+`System.Text.Json.JsonDocument` is built on top of the `Utf8JsonReader`. The `JsonDocument` provides the ability to parse JSON data and build a read-only Document Object Model (DOM) that can be queried to support random access and enumeration. The JSON elements that compose the data can be accessed via the `JsonElement` type that is exposed by the `JsonDocument` as a property called `RootElement`. The `JsonElement` contains the JSON array and object enumerators along with APIs to convert JSON text to common .NET types. Parsing a typical JSON payload and accessing all its members using the `JsonDocument` is 2-3x faster than **Json.NET** with little allocations for data that is reasonably sized (that is, < 1 MB).
 
 Here is a sample usage of the `JsonDocument` and `JsonElement` that can be used as a starting point:
 
@@ -745,7 +743,7 @@ Two new packages have been released to NuGet that you can use for GPIO programmi
 * [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/0.1.0-prerelease.19078.2)
 * [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/0.1.0-prerelease.19078.2)
 
-The GPIO Packages includes APIs for GPIO, SPI, I2C and PWM devices. The IoT bindings package includes [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) for various chips and sensors, the same ones available at [dotnet/iot - src/devices](https://github.com/dotnet/iot/tree/master/src/devices).
+The GPIO packages include APIs for GPIO, SPI, I2C, and PWM devices. The IoT bindings package includes [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) for various chips and sensors, the same ones available at [dotnet/iot - src/devices](https://github.com/dotnet/iot/tree/master/src/devices).
 
 The updated serial port APIs that were announced as part of .NET Core 3.0 Preview 1 are not part of these packages but are available as part of the .NET Core platform.
 

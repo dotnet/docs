@@ -815,7 +815,7 @@ Some distros require an additional step to enable access to the SSL certificate.
 
 ## Docker and cgroup memory Limits
 
-As of Preview 3, Running .NET Core 3.0 on Linux with Docker works better with cgroup memory limits. Running a Docker container with memory limits, such as with `docker run -m`, will change how .NET Core behaves.
+As of Preview 3, running .NET Core 3.0 on Linux with Docker works better with cgroup memory limits. Running a Docker container with memory limits, such as with `docker run -m`, changes how .NET Core behaves.
 
 * Default GC heap size: maximum of 20mb or 75% of the memory limit on the container.
 * Explicit size can be set as an absolute number or percentage of cgroup limit.

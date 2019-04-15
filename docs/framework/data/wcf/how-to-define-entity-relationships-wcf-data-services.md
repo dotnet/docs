@@ -16,14 +16,14 @@ When you add a new entity in [!INCLUDE[ssAstoria](../../../../includes/ssastoria
 ## Example  
  The following example creates a new object instance and then calls the <xref:System.Data.Services.Client.DataServiceContext.AddRelatedObject%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> to create the item in the context along with the link to the related order. An HTTP POST message is sent to the data service when the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method is called.  
   
- [!code-csharp[Astoria Northwind Client#AddOrderDetailToOrderAuto](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addorderdetailtoorderauto)]
- [!code-vb[Astoria Northwind Client#AddOrderDetailToOrderAuto](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addorderdetailtoorderauto)]  
+ [!code-csharp[Astoria Northwind Client#AddOrderDetailToOrderAuto](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addorderdetailtoorderauto)]
+ [!code-vb[Astoria Northwind Client#AddOrderDetailToOrderAuto](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addorderdetailtoorderauto)]  
   
 ## Example  
  The following example shows how to use the <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> method to add an `Order_Details` object to a related `Orders` object with a reference to a specific `Products` object. The <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A> and <xref:System.Data.Services.Client.DataServiceContext.SetLink%2A> methods define the relationships. In this example, the navigation properties on the `Order_Details` object are also explicitly set.  
   
- [!code-csharp[Astoria Northwind Client#AddOrderDetailToOrder](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addorderdetailtoorder)]
- [!code-vb[Astoria Northwind Client#AddOrderDetailToOrder](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addorderdetailtoorder)]  
+ [!code-csharp[Astoria Northwind Client#AddOrderDetailToOrder](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addorderdetailtoorder)]
+ [!code-vb[Astoria Northwind Client#AddOrderDetailToOrder](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addorderdetailtoorder)]  
   
 ## See also
 

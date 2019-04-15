@@ -128,7 +128,6 @@ public static TrainTestData LoadData(MLContext mlContext)
 
 There are three major concepts in ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 Add the following code as the first line of the `LoadData` method:
 
 [!code-csharp[LoadData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#LoadData "loading dataset")]
@@ -301,7 +300,7 @@ Add a call to the new method from the `Main` method, right under the `Evaluate` 
 The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data. add the following code to create as the first line in the `Predict` Method:
 
 [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreatePredictionEngine1 "Create the PredictionEngine")]
-  
+
 Add a comment to test the trained model's prediction in the `Predict` method by creating an instance of `SentimentData`:
 
 [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssue1 "Create test data for single prediction")]
@@ -411,6 +410,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 ## Next steps
 
 In this tutorial, you learned how to:
+
 > [!div class="checklist"]
 > * Understand the problem
 > * Select the appropriate machine learning algorithm
@@ -422,5 +422,6 @@ In this tutorial, you learned how to:
 > * Deploy and Predict with a loaded model
 
 Advance to the next tutorial to learn more
+
 > [!div class="nextstepaction"]
 > [Issue Classification](github-issue-classification.md)

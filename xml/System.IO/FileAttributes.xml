@@ -47,18 +47,32 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can get attributes for files and directories by calling the <xref:System.IO.File.GetAttributes%2A> method, and you can set them by calling the <xref:System.IO.File.SetAttributes%2A> method.  
+ You can get attributes for files and directories by calling the <xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType> method, and you can set them by calling the <xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType> method.  
   
- It is not possible to change the compression status of a <xref:System.IO.File> object by using the <xref:System.IO.File.SetAttributes%2A> method. Instead, you must actually compress the file using either a compression tool or one of the classes in the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.  
+ It is not possible to change the compression status of a <xref:System.IO.File> object by using the <xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType> method. Instead, you must actually compress the file using either a compression tool or one of the classes in the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.  
   
-   
-  
+The following attributes are not supported by .NET Core on Linux and macOS:
+
+- <xref:System.IO.FileAttributes.Archive?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Compressed?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Device?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Encrypted?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.IntegrityStream?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.NoScrubData?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.NotContentIndexed?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Offline?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.SparseFile?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.System?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Temporary?displayProperty=nameWithType>
+
+On Unix systems, the value returned by <xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType> includes `Hidden` for a file whose name begins with a period ("."). On macOS, you can get or set the hidden flag.
+
 ## Examples  
  The following example shows how to retrieve the attributes for a file and check if the file is read-only.  
   
  [!code-csharp[System.IO.FileAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.fileattributes/cs/example.cs#1)]
- [!code-vb[System.IO.FileAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.fileattributes/vb/example.vb#1)]  
-  
+ [!code-vb[System.IO.FileAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.fileattributes/vb/example.vb#1)] 
+
  ]]></format>
     </remarks>
     <altmember cref="M:System.IO.File.GetAttributes(System.String)" />
@@ -214,7 +228,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The file is a directory.</summary>
+        <summary>The file is a directory. <see langword="Directory" /> is supported on Windows, Linux, and macOS.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encrypted">
@@ -290,7 +304,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The file is hidden, and thus is not included in an ordinary directory listing.</summary>
+        <summary>The file is hidden, and thus is not included in an ordinary directory listing. <see langword="Hidden" /> is supported on Windows, Linux, and macOS.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntegrityStream">
@@ -369,7 +383,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone.</summary>
+        <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone. <see langword="Normal" /> is supported on Windows, Linux, and macOS.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoScrubData">
@@ -524,7 +538,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The file is read-only.</summary>
+        <summary>The file is read-only. <see langword="ReadOnly" /> is supported on Windows, Linux, and macOS. On Linux and macOS, changing the <see langword="ReadOnly" /> flag is a permissions operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReparsePoint">
@@ -562,7 +576,7 @@
       </ReturnValue>
       <MemberValue>1024</MemberValue>
       <Docs>
-        <summary>The file contains a reparse point, which is a block of user-defined data associated with a file or a directory.</summary>
+        <summary>The file contains a reparse point, which is a block of user-defined data associated with a file or a directory. <see langword="ReparsePoint" /> is supported on Windows, Linux, and macOS. </summary>
       </Docs>
     </Member>
     <Member MemberName="SparseFile">

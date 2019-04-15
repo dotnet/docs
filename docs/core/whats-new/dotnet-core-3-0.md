@@ -601,7 +601,7 @@ https://github.com/dotnet/samples/tree/master/core/extensions/DllMapDemo
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 
-.NET Core will now take advantage of [TLS 1.3 support in OpenSSL 1.1.1](https://www.openssl.org/blog/blog/2018/09/11/release111/), when it is available in a given environment. There are multiple benefits of TLS 1.3, per the [OpenSSL team](https://www.openssl.org/blog/blog/2018/09/11/release111/):
+.NET Core now takes advantage of [TLS 1.3 support in OpenSSL 1.1.1](https://www.openssl.org/blog/blog/2018/09/11/release111/), when it's available in a given environment. There are multiple benefits of TLS 1.3, per the [OpenSSL team](https://www.openssl.org/blog/blog/2018/09/11/release111/):
 
 * Improved connection times due to a reduction in the number of round trips required between the client and server.
 

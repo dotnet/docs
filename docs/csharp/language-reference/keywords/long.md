@@ -60,6 +60,7 @@ The `L` suffix guarantees that the correct overload is called:
 SampleMethod(5);    // Calls the method with the int parameter
 SampleMethod(5L);   // Calls the method with the long parameter
 ```
+
 If an integer literal has no suffix, its type is the first of the following types in which its value can be represented:
 
 1. [int](int.md)

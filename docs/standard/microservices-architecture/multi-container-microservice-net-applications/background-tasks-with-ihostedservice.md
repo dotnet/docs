@@ -17,35 +17,35 @@ Since .NET Core 2.0, the framework provides a new interface named <xref:Microsof
 
 **Figure 6-26**. Using IHostedService in a WebHost vs. a Host
 
-Note the difference made between `WebHost` and `Host`. 
+Note the difference made between `WebHost` and `Host`.
 
 A `WebHost` (base class implementing `IWebHost`) in ASP.NET Core 2.0 is the infrastructure artifact you use to provide HTTP server features to your process, such as if you are implementing an MVC web app or Web API service. It provides all the new infrastructure goodness in ASP.NET Core, enabling you to use dependency injection, insert middlewares in the request pipeline, etc. and precisely use these `IHostedServices` for background tasks.
 
 A `Host` (base class implementing `IHost`) was introduced in .NET Core 2.1. Basically, a `Host` allows you to have a similar infrastructure than what you have with `WebHost` (dependency injection, hosted services, etc.), but in this case, you just want to have a simple and lighter process as the host, with nothing related to MVC, Web API or HTTP server features.
 
-Therefore, you can choose and either create a specialized host-process with IHost to handle the hosted services and nothing else, such a microservice made just for hosting the `IHostedServices`, or you can alternatively extend an existing ASP.NET Core `WebHost`, such as an existing ASP.NET Core Web API or MVC app. 
+Therefore, you can choose and either create a specialized host-process with IHost to handle the hosted services and nothing else, such a microservice made just for hosting the `IHostedServices`, or you can alternatively extend an existing ASP.NET Core `WebHost`, such as an existing ASP.NET Core Web API or MVC app.
 
 Each approach has pros and cons depending on your business and scalability needs. The bottom line is basically that if your background tasks have nothing to do with HTTP (IWebHost) you should use IHost.
 
 ## Registering hosted services in your WebHost or Host
 
-Let’s drill down further on the `IHostedService` interface since its usage is pretty similar in a `WebHost` or in a `Host`. 
+Let’s drill down further on the `IHostedService` interface since its usage is pretty similar in a `WebHost` or in a `Host`.
 
 SignalR is one example of an artifact using hosted services, but you can also use it for much simpler things like:
 
--   A background task polling a database looking for changes.
--   A scheduled task updating some cache periodically.
--   An implementation of QueueBackgroundWorkItem that allows a task to be executed on a background thread.
--   Processing messages from a message queue in the background of a web app while sharing common services such as `ILogger`.
--   A background task started with `Task.Run()`.
+- A background task polling a database looking for changes.
+- A scheduled task updating some cache periodically.
+- An implementation of QueueBackgroundWorkItem that allows a task to be executed on a background thread.
+- Processing messages from a message queue in the background of a web app while sharing common services such as `ILogger`.
+- A background task started with `Task.Run()`.
 
 You can basically offload any of those actions to a background task based on IHostedService.
 
-The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the standard DI (dependency injection) in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost. 
+The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the standard DI (dependency injection) in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost.
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
-{            
+{
     //Other DI registrations;
 
     // Register Hosted Services
@@ -87,13 +87,14 @@ namespace Microsoft.Extensions.Hosting
     }
 }
 ```
+
 As you can imagine, you can create multiple implementations of IHostedService and register them at the `ConfigureService()` method into the DI container, as shown previously. All those hosted services will be started and stopped along with the application/microservice.
 
 As a developer, you are responsible for handling the stopping action or your services when `StopAsync()` method is triggered by the host.
 
 ## Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class
 
-You could go ahead and create your custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0. 
+You could go ahead and create your custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0.
 
 However, since most background tasks will have similar needs in regard to the cancellation tokens management and other typical operations, there is a convenient abstract base class you can derive from, named `BackgroundService` (available since .NET Core 2.1).
 
@@ -102,14 +103,14 @@ That class provides the main work needed to set up the background task.
 The next code is the abstract BackgroundService base class as implemented in .NET Core.
 
 ```csharp
-// Copyright (c) .NET Foundation. Licensed under the Apache License, Version 2.0. 
+// Copyright (c) .NET Foundation. Licensed under the Apache License, Version 2.0.
 /// <summary>
 /// Base class for implementing a long running <see cref="IHostedService"/>.
 /// </summary>
 public abstract class BackgroundService : IHostedService, IDisposable
 {
     private Task _executingTask;
-    private readonly CancellationTokenSource _stoppingCts = 
+    private readonly CancellationTokenSource _stoppingCts =
                                                    new CancellationTokenSource();
 
     protected abstract Task ExecuteAsync(CancellationToken stoppingToken);
@@ -119,7 +120,7 @@ public abstract class BackgroundService : IHostedService, IDisposable
         // Store the task we're executing
         _executingTask = ExecuteAsync(_stoppingCts.Token);
 
-        // If the task is completed then return it, 
+        // If the task is completed then return it,
         // this will bubble cancellation and failure to the caller
         if (_executingTask.IsCompleted)
         {
@@ -129,7 +130,7 @@ public abstract class BackgroundService : IHostedService, IDisposable
         // Otherwise it's running
         return Task.CompletedTask;
     }
-    
+
     public virtual async Task StopAsync(CancellationToken cancellationToken)
     {
         // Stop called without start
@@ -163,7 +164,7 @@ When deriving from the previous abstract base class, thanks to that inherited im
 
 ```csharp
 public class GracePeriodManagerService : BackgroundService
-{        
+{
     private readonly ILogger<GracePeriodManagerService> _logger;
     private readonly OrderingBackgroundSettings _settings;
 
@@ -173,27 +174,27 @@ public class GracePeriodManagerService : BackgroundService
                                      IEventBus eventBus,
                                      ILogger<GracePeriodManagerService> logger)
     {
-        //Constructor’s parameters validations...       
+        //Constructor’s parameters validations...
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         _logger.LogDebug($"GracePeriodManagerService is starting.");
 
-        stoppingToken.Register(() => 
+        stoppingToken.Register(() =>
             _logger.LogDebug($" GracePeriod background task is stopping."));
 
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogDebug($"GracePeriod task doing background work.");
 
-            // This eShopOnContainers method is querying a database table 
+            // This eShopOnContainers method is querying a database table
             // and publishing events into the Event Bus (RabbitMS / ServiceBus)
             CheckConfirmedGracePeriodOrders();
 
             await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
         }
-            
+
         _logger.LogDebug($"GracePeriod background task is stopping.");
     }
 
@@ -218,7 +219,7 @@ WebHost.CreateDefaultBuilder(args)
 ### Summary class diagram
 
 The following image shows a visual summary of the classes and interfaced involved when implementing IHostedServices.
- 
+
 ![Class diagram: IWebHost and IHost can host many services, which inherit from BackgroundService, which implements IHostedService.](./media/image27.png)
 
 **Figure 6-27**. Class diagram showing the multiple classes and interfaces related to IHostedService
@@ -233,13 +234,13 @@ The `IHostedService` interface provides a convenient way to start background tas
 
 #### Additional resources
 
--   **Building a scheduled task in ASP.NET Core/Standard 2.0** <br/>
+- **Building a scheduled task in ASP.NET Core/Standard 2.0** <br/>
     <https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html>
 
--   **Implementing IHostedService in ASP.NET Core 2.0** <br/>
+- **Implementing IHostedService in ASP.NET Core 2.0** <br/>
     <https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice>
 
--   **GenericHost Sample using ASP.NET Core 2.1** <br/>
+- **GenericHost Sample using ASP.NET Core 2.1** <br/>
     <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
 
 >[!div class="step-by-step"]

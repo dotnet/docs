@@ -60,6 +60,7 @@ dotnet new web
 
 3. Install the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool:
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
+
 ```console
 dotnet tool install --global dotnet-svcutil
 ```
@@ -83,14 +84,17 @@ dotnet restore
 
 4. Run the _dotnet-svcutil_ command to generate the web service reference file as follows:
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
+
 ```console
 dotnet-svcutil http://contoso.com/SayHello.svc
 ```
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
+
 ```console
 dotnet svcutil http://contoso.com/SayHello.svc
 ```
+
 ---
 
 The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The _dotnet-svcutil_ tool also adds to the project the appropriate WCF packages required by the proxy code as package references.
@@ -144,14 +148,17 @@ You should see the following output:
 
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
+
 ```console
 dotnet-svcutil --help
 ```
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
+
 ```console
 dotnet svcutil --help
 ```
+
 ---
 
 ## Feedback & questions

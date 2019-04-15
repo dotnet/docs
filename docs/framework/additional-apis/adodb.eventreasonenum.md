@@ -16,6 +16,7 @@ api_type:
 [GuidAttribute("00000531-0000-0010-8000-00AA006D2EA4")]
 public enum EventReasonEnum
 ```
+
 ## Members
 
 | Member name  | Description  |

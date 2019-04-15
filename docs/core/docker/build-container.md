@@ -37,11 +37,11 @@ If you have .NET Core installed, use the `dotnet --info` command to determine wh
 If you're using an SDK that is newer, like 3.0, make sure that your app is forced to use the 2.2 SDK. Create a file named `global.json` in your working directory and paste in the following json code:
 
 ```json
-{                                             
-  "sdk": {                                    
-    "version": "2.2.100"                      
-  }                                           
-}                                             
+{
+  "sdk": {
+    "version": "2.2.100"
+  }
+}
 ```
 
 Save this file. The presence of file will force .NET Core to use version 2.2 for any `dotnet` command called from this directory and below.
@@ -172,7 +172,6 @@ myimage                                 latest              d51bb4452469        
 
 Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add two commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the image the **myimage** repository will point to.
 
-
 ```dockerfile
 COPY app/bin/Release/netcoreapp2.2/publish/ app/
 
@@ -252,7 +251,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ### Connect to a container
 
-After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>CTRL + C</kbd> command is used to detach from the running container. This may actually end the process in the container, which will stop the container. The `--sig-proxy=false` parameter ensures that <kbd>CTRL + C</kbd> will not stop the process in the container. 
+After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>CTRL + C</kbd> command is used to detach from the running container. This may actually end the process in the container, which will stop the container. The `--sig-proxy=false` parameter ensures that <kbd>CTRL + C</kbd> will not stop the process in the container.
 
 After you detach from the container, reattach to verify that it's still running and counting.
 
@@ -318,8 +317,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 ### Change the ENTRYPOINT
 
-The `docker run` command also lets you modify the `ENTRYPOINT` command from the *Dockerfile* and run something else, but only for that container. For example, use the following command to run `bash` or `cmd.exe`. Edit the command as necessary. 
-
+The `docker run` command also lets you modify the `ENTRYPOINT` command from the *Dockerfile* and run something else, but only for that container. For example, use the following command to run `bash` or `cmd.exe`. Edit the command as necessary.
 
 #### Windows
 In this example the `ENTRYPOINT` is changed to `cmd.exe`. <kbd>CTRL + C</kbd> is pressed to end the process and stop the container.

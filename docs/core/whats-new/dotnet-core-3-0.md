@@ -124,7 +124,7 @@ For more information, see [Do more with patterns in C# 8.0](https://devblogs.mic
 
 ## .NET Standard 2.1
 
-Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet new classlib` template will generate a project that targets **.NET Standard 2.0**. In order to target **.NET Standard 2.1**, you’ll have to edit your project file and change the `TargetFramework` property to `netstandard2.1`:
+Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet new classlib` template generates a project that targets **.NET Standard 2.0**. In order to target **.NET Standard 2.1**, edit your project file and change the `TargetFramework` property to `netstandard2.1`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

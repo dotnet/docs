@@ -13,7 +13,7 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
 
 1. Register your application as an Azure AD application. (Access to key vaults is managed by Azure AD.) This can be done through the Azure management portal.\
 
-   Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](/powershell/module/az.resources/new-azadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. Your application will use the private key.
+   Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzADApplication](/powershell/module/az.resources/new-azadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. Your application will use the private key.
 
 2. Give the registered application access to the key vault by creating a new service principal. You can do this using the following PowerShell commands:
 

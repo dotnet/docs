@@ -84,7 +84,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
 > [!NOTE]
-> You need .NET Core 3.0 Preview 2+ to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2+ at the command line, then everything will work as expected.
+> You need .NET Core 3.0 Preview 2 or later versions to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you're using .NET Core 3.0 Preview 2 and later versions at the command line, then everything works as expected.
 
 ### Using Declarations
 

@@ -31,96 +31,11 @@ The upgrade policy specifically targets .NET Core SDK feature bands. Feature ban
 
 This means when .NET Core SDK **3.0.101** becomes available and is installed, .NET Core SDK **3.0.100** will be removed from the machine if it exists. When .NET Core SDK **3.0.200** becomes available and is installed on the same machine, .NET Core SDK **3.0.101** will not be removed. In that situation, .NET Core SDK **3.0.200** will still be used by default, but .NET Core SDK **3.0.101** (or higher **.1xx** versions) will still be usable if it is configured for use via [global.json](../tools/global-json.md).
 
+For more information about versioning, see [Overview of how .NET Core is versioned](../versions/index.md).
+
 ## C# 8
 
-.NET Core 3.0 supports C# 8. For more information about C# 8.0 features, see the following blog posts:
-
-- [Do more with patterns in C# 8.0](https://devblogs.microsoft.com/dotnet/do-more-with-patterns-in-c-8-0/)
-- [Take C# 8.0 for a spin](https://devblogs.microsoft.com/dotnet/take-c-8-0-for-a-spin/)
-- [Building C# 8.0](https://devblogs.microsoft.com/dotnet/building-c-8-0/)
-
-### Ranges and indices
-
-The new `Index` type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
-
-```csharp
-Index i1 = 3;  // number 3 from beginning
-Index i2 = ^4; // number 4 from end
-int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
-```
-
-There is also a `Range` type, which consists of two `Index` values, one for the start and one for the end, and can be written with a `x..y` range expression (C#). You can then index with a `Range` in order to produce a slice:
-
-```csharp
-var slice = a[i1..i2]; // { 3, 4, 5 }
-```
-
-For example, use the range syntax with a string to create a substring.
-
-```csharp
-string myString = "0123456789ABCDEF";
-string substring = myString[0..5]; // "01234"
-```
-
-The new `Range` and `Index` types support various APIs by default, such as `Span<T>` and `Array`.
-
-### Async streams
-
-The `IAsyncEnumerable<T>` type is a new asynchronous version of `IEnumerable<T>`. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
-
-The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
-
-```csharp
-async IAsyncEnumerable<int> GetBigResultsAsync()
-{
-    await foreach (var result in GetResultsAsync())
-    {
-        if (result > 20) yield return result; 
-    }
-}
-```
-
-In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
-
-> [!NOTE]
-> You need .NET Core 3.0 Preview 2 or later versions to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you're using .NET Core 3.0 Preview 2 and later versions at the command line, then everything works as expected.
-
-### Using Declarations
-
-*Using declarations* are a new way to ensure your object is properly disposed. A *using declaration* keeps the object alive while it is still in scope. Once the object becomes out of scope, it is automatically disposed. This will reduce nested *using statements* and make your code cleaner.
-
-```csharp
-static void Main(string[] args)
-{
-    using var options = Parse(args);
-    if (options["verbose"]) { WriteLine("Logging..."); }
-
-} // options disposed here
-```
-
-### Switch Expressions
-
-*Switch expressions* are a cleaner way of doing a *switch statement* but, since it's an expression, returns a value. *Switch expressions* are also fully integrated with pattern matching, and use the discard pattern, `_`, to represent the `default` value.
-
-You can see the syntax for *switch expressions* in the following example:
-
-```csharp
-static string Display(object o) => o switch
-{
-    Point { X: 0, Y: 0 }         => "origin",
-    Point { X: var x, Y: var y } => $"({x}, {y})",
-    _                            => "unknown"
-};
-```
-
-There are two patterns at play in this example. `o` first matches with the `Point` *type pattern* and then with the *property pattern* inside the *{curly braces}*. The `_` describes the `discard pattern`, which is the same as `default` for *switch statements*.
-
-Patterns enable you to write declarative code that captures your intent instead of procedural code that implements tests for it. The compiler becomes responsible for implementing that boring procedural code and is guaranteed to always do it correctly.
-
-There will still be cases where *switch statements* will be a better choice than *switch expressions* and patterns can be used with both syntax styles.
-
-For more information, see [Do more with patterns in C# 8.0](https://devblogs.microsoft.com/dotnet/do-more-with-patterns-in-c-8-0/).
+.NET Core 3.0 supports C# 8. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
 
 ## .NET Standard 2.1
 
@@ -136,7 +51,7 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 </Project>
 ```
 
-If you are using Visual Studio, you will need Visual Studio 2019 as Visual Studio 2017 will not support **.NET Standard 2.1**.
+If you're using Visual Studio, you need Visual Studio 2019 as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
 
 ## IEEE Floating-point improvements
 

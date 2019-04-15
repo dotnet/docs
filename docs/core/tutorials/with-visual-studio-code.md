@@ -87,6 +87,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 1. To add a new class right-click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
 2. Name your file `MyClass.cs`. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
 3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your `Program.cs` file.
+
 ``` csharp
 using System;
 
@@ -121,6 +122,7 @@ namespace HelloWorld
 ```
 
 5. Save your changes and run your program again. The new message should appear with the appended string.
+
 ```console
 > dotnet run
 Hello World! Happy coding!

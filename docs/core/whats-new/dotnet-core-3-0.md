@@ -819,7 +819,7 @@ As of Preview 3, running .NET Core 3.0 on Linux with Docker works better with cg
 
 * Default GC heap size: maximum of 20mb or 75% of the memory limit on the container.
 * Explicit size can be set as an absolute number or percentage of cgroup limit.
-* Minimum reserved segment size per GC heap is 16mb, which will reduce the number of heaps created on machines with a large number of cores and small memory limits.
+* Minimum reserved segment size per GC heap is 16mb, which reduces the number of heaps created on machines with a large number of cores and small memory limits.
 
 The GC change is the most critical part of our memory limits solution. It is also important to [update BCL APIs to honor cgroup settings](https://github.com/dotnet/corefx/issues/35638). Those changes are not included in Preview 3 but will come later. We’d appreciate feedback on which BCL APIs are most important to update first ([another example](https://github.com/dotnet/corefx/issues/32748)).
 

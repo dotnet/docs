@@ -23,7 +23,7 @@ When you include asynchronous code in your app, you should consider and possibly
 > [!NOTE]
 >  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-##  <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy  
+## <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy  
  In the example in this topic, users choose a **Start** button to initiate an asynchronous app that downloads a series of websites and calculates the total number of bytes that are downloaded. A synchronous version of the example would respond the same way regardless of how many times a user chooses the button because, after the first time, the UI thread ignores those events until the app finishes running. In an asynchronous app, however, the UI thread continues to respond, and you might reenter the asynchronous operation before it has completed.  
   
  The following example shows the expected output if the user chooses the **Start** button only once. A list of the downloaded websites appears with the size, in bytes, of each site. The total number of bytes appears at the end.  
@@ -80,7 +80,7 @@ TOTAL bytes returned:  890591
   
  You can review the code that produces this output by scrolling to the end of this topic. You can experiment with the code by downloading the solution to your local computer and then running the WebsiteDownload project or by using the code at the end of this topic to create your own project For more information and instructions, see [Reviewing and Running the Example App](#BKMD_SettingUpTheExample).  
   
-##  <a name="BKMK_HandlingReentrancy"></a> Handling Reentrancy  
+## <a name="BKMK_HandlingReentrancy"></a> Handling Reentrancy  
  You can handle reentrancy in a variety of ways, depending on what you want your app to do. This topic presents the following examples:  
   
 -   [Disable the Start Button](#BKMK_DisableTheStartButton)  
@@ -95,7 +95,7 @@ TOTAL bytes returned:  890591
   
      Allow all requested operations to run asynchronously, but coordinate the display of output so that the results from each operation appear together and in order.  
   
-###  <a name="BKMK_DisableTheStartButton"></a> Disable the Start Button  
+### <a name="BKMK_DisableTheStartButton"></a> Disable the Start Button  
  You can block the **Start** button while an operation is running by disabling the button at the top of the `StartButton_Click` event handler. You can then reenable the button from within a  `Finally` block when the operation finishes so that users can run the app again.  
   
  The following code shows these changes, which are marked with asterisks. You can add the changes to the code at the end of this topic, or you can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06). The project name is DisableStartButton.  
@@ -123,14 +123,14 @@ End Sub
   
  As a result of the changes, the button doesn't respond while `AccessTheWebAsync` is downloading the websites, so the process can’t be reentered.  
   
-###  <a name="BKMK_CancelAndRestart"></a> Cancel and Restart the Operation  
+### <a name="BKMK_CancelAndRestart"></a> Cancel and Restart the Operation  
  Instead of disabling the **Start** button, you can keep the button active but, if the user chooses that button again, cancel the operation that's already running and let the most recently started operation continue.  
   
  For more information about cancellation, see [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md).  
   
  To set up this scenario, make the following changes to the basic code that is provided in [Reviewing and Running the Example App](#BKMD_SettingUpTheExample). You also can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06). The name of this project is CancelAndRestart.  
   
-1.  Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.  
+1. Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.  
   
     ```vb  
     Class MainWindow // Or Class MainPage  
@@ -139,7 +139,7 @@ End Sub
         Dim cts As CancellationTokenSource  
     ```  
   
-2.  In `StartButton_Click`, determine whether an operation is already underway. If the value of `cts` is `Nothing`, no operation is already active. If the value isn't `Nothing`, the operation that is already running is canceled.  
+2. In `StartButton_Click`, determine whether an operation is already underway. If the value of `cts` is `Nothing`, no operation is already active. If the value isn't `Nothing`, the operation that is already running is canceled.  
   
     ```vb  
     ' *** If a download process is already underway, cancel it.  
@@ -148,7 +148,7 @@ End Sub
     End If  
     ```  
   
-3.  Set `cts` to a different value that represents the current process.  
+3. Set `cts` to a different value that represents the current process.  
   
     ```vb  
     ' *** Now set cts to cancel the current process if the button is chosen again.  
@@ -156,7 +156,7 @@ End Sub
     cts = newCTS  
     ```  
   
-4.  At the end of `StartButton_Click`, the current process is complete, so set the value of `cts` back to `Nothing`.  
+4. At the end of `StartButton_Click`, the current process is complete, so set the value of `cts` back to `Nothing`.  
   
     ```vb  
     ' *** When the process completes, signal that another process can proceed.  
@@ -278,7 +278,7 @@ TOTAL bytes returned:  890591
   
  To eliminate the partial lists, uncomment the first line of code in `StartButton_Click` to clear the text box each time the user restarts the operation.  
   
-###  <a name="BKMK_RunMultipleOperations"></a> Run Multiple Operations and Queue the Output  
+### <a name="BKMK_RunMultipleOperations"></a> Run Multiple Operations and Queue the Output  
  This third example is the most complicated in that the app starts another asynchronous operation each time that the user chooses the **Start** button, and all the operations run to completion. All the requested operations download websites from the list asynchronously, but the output from the operations is presented sequentially. That is, the actual downloading activity is interleaved, as the output in [Recognizing Reentrancy](#BKMK_RecognizingReentrancy) shows, but the list of results for each group is presented separately.  
   
  The operations share a global <xref:System.Threading.Tasks.Task>, `pendingWork`, which serves as a gatekeeper for the display process.  
@@ -521,50 +521,50 @@ End Function
   
      After a group enters `StartButton_Click`, the operation doesn't complete an await expression until the operation enters `FinishOneGroupAsync`. Therefore, no other operation can gain control during that segment of code.  
   
-##  <a name="BKMD_SettingUpTheExample"></a> Reviewing and Running the Example App  
+## <a name="BKMD_SettingUpTheExample"></a> Reviewing and Running the Example App  
  To better understand the example app, you can download it, build it yourself, or review the code at the end of this topic without implementing the app.  
   
 > [!NOTE]
 >  To run the example as a Windows Presentation Foundation (WPF) desktop app, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
-###  <a name="BKMK_DownloadingTheApp"></a> Downloading the App  
+### <a name="BKMK_DownloadingTheApp"></a> Downloading the App  
   
-1.  Download the compressed file from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06).  
+1. Download the compressed file from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06).  
   
-2.  Decompress the file that you downloaded, and then start Visual Studio.  
+2. Decompress the file that you downloaded, and then start Visual Studio.  
   
-3.  On the menu bar, choose **File**, **Open**, **Project/Solution**.  
+3. On the menu bar, choose **File**, **Open**, **Project/Solution**.  
   
-4.  Navigate to the folder that holds the decompressed sample code, and then open the solution (.sln) file.  
+4. Navigate to the folder that holds the decompressed sample code, and then open the solution (.sln) file.  
   
-5.  In **Solution Explorer**, open the shortcut menu for the project that you want to run, and then choose **Set as StartUpProject**.  
+5. In **Solution Explorer**, open the shortcut menu for the project that you want to run, and then choose **Set as StartUpProject**.  
   
-6.  Choose the CTRL+F5 keys to build and run the project.  
+6. Choose the CTRL+F5 keys to build and run the project.  
   
-###  <a name="BKMK_BuildingTheApp"></a> Building the App  
+### <a name="BKMK_BuildingTheApp"></a> Building the App  
  The following section provides the code to build the example as a WPF app.  
   
 ##### To build a WPF app  
   
-1.  Start Visual Studio.  
+1. Start Visual Studio.  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2. On the menu bar, choose **File**, **New**, **Project**.  
   
      The **New Project** dialog box opens.  
   
-3.  In the **Installed Templates** pane, expand **Visual Basic**, and then expand **Windows**.  
+3. In the **Installed Templates** pane, expand **Visual Basic**, and then expand **Windows**.  
   
-4.  In the list of project types, choose **WPF Application**.  
+4. In the list of project types, choose **WPF Application**.  
   
-5.  Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.  
+5. Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.  
   
      The new project appears in **Solution Explorer**.  
   
-6.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
+6. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
   
      If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **View Code**.  
   
-7.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
+7. In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
   
     ```vb  
     <Window x:Class="MainWindow"  
@@ -584,7 +584,7 @@ End Function
   
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.  
   
-8.  Add a reference for <xref:System.Net.Http>.  
+8. Add a reference for <xref:System.Net.Http>.  
   
 9. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.  
   

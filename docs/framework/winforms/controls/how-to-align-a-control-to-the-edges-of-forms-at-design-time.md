@@ -18,31 +18,32 @@ You can make your control align to the edge of your forms by setting the <xref:S
 |<xref:System.Windows.Forms.DockStyle.Right>|Docks to the right side of the form.|  
 |<xref:System.Windows.Forms.DockStyle.Top>|Docks to the top of the form.|  
   
- These values can also be set in code. For more information, see [How to: Align a Control to the Edges of Forms](../../../../docs/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms.md).  
+ These values can also be set in code. For more information, see [How to: Align a Control to the Edges of Forms](how-to-align-a-control-to-the-edges-of-forms.md).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To set the Dock property for your control at design time  
   
-1.  In the Windows Forms Designer, select your control.  
+1. In the Windows Forms Designer, select your control.  
   
-2.  In the **Properties** window, click the drop-down box next to the <xref:System.Windows.Forms.Control.Dock%2A> property.  
+2. In the **Properties** window, click the drop-down box next to the <xref:System.Windows.Forms.Control.Dock%2A> property.  
   
      A graphical interface representing the six possible <xref:System.Windows.Forms.Control.Dock%2A> settings is displayed.  
   
-3.  Choose the appropriate setting.  
+3. Choose the appropriate setting.  
   
-4.  Your control will now dock in the manner specified by the setting.  
+4. Your control will now dock in the manner specified by the setting.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=nameWithType>
-- [How to: Align a Control to the Edges of Forms](../../../../docs/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [How to: Anchor Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-anchor-controls-on-windows-forms.md)
-- [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
-- [How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
-- [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
+- [How to: Align a Control to the Edges of Forms](how-to-align-a-control-to-the-edges-of-forms.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
+- [How to: Anchor Controls on Windows Forms](how-to-anchor-controls-on-windows-forms.md)
+- [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
+- [How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control](how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
+- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)

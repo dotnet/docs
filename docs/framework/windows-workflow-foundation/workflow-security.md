@@ -10,15 +10,15 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 
 ## Persistence Security Concerns
 
-1.  Workflows that use a <xref:System.Activities.Statements.Delay> activity and persistence need to be reactivated by a service. Windows AppFabric uses the Workflow Management Service (WMS) to reactivate workflows with expired timers. WMS creates a <xref:System.ServiceModel.WorkflowServiceHost> to host the reactivated workflow. If the WMS service is stopped, persisted workflows will not be reactivated when their timers expire.
+1. Workflows that use a <xref:System.Activities.Statements.Delay> activity and persistence need to be reactivated by a service. Windows AppFabric uses the Workflow Management Service (WMS) to reactivate workflows with expired timers. WMS creates a <xref:System.ServiceModel.WorkflowServiceHost> to host the reactivated workflow. If the WMS service is stopped, persisted workflows will not be reactivated when their timers expire.
 
-2.  Access to durable instancing should be protected against malicious entities external to the application domain. In addition, developers should ensure that malicious code can't be executed in the same application domain as the durable instancing code.
+2. Access to durable instancing should be protected against malicious entities external to the application domain. In addition, developers should ensure that malicious code can't be executed in the same application domain as the durable instancing code.
 
-3.  Durable instancing should not be run with elevated (Administrator) permissions.
+3. Durable instancing should not be run with elevated (Administrator) permissions.
 
-4.  Data being processed outside the application domain should be protected.
+4. Data being processed outside the application domain should be protected.
 
-5.  Applications that require security isolation should not share the same instance of the schema abstraction. Such applications should use different store providers, or store providers configured to use different store instantiations.
+5. Applications that require security isolation should not share the same instance of the schema abstraction. Such applications should use different store providers, or store providers configured to use different store instantiations.
 
 ## SQL Server Security Concerns
 
@@ -39,14 +39,14 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 -   The ServiceSecurityContext for the incoming message is also available from within workflow by accessing OperationContext.
 
 ## WF Security Pack CTP
- The Microsoft WF Security Pack CTP 1 is the first community technology preview (CTP) release of a set of activities and their implementation based on [Windows Workflow Foundation](https://msdn.microsoft.com/netframework/aa663328.aspx)in [.NET Framework 4](https://msdn.microsoft.com/netframework/default.aspx) (WF 4) and the [Windows Identity Foundation (WIF)](https://msdn.microsoft.com/security/aa570351.aspx).  The Microsoft WF Security Pack CTP 1 contains both activities and their designers which illustrate how to easily enable various security-related scenarios using workflow, including:
+ The Microsoft WF Security Pack CTP 1 is the first community technology preview (CTP) release of a set of activities and their implementation based on [Windows Workflow Foundation](index.md) in [.NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) and the [Windows Identity Foundation (WIF)](../security/index.md).  The Microsoft WF Security Pack CTP 1 contains both activities and their designers which illustrate how to easily enable various security-related scenarios using workflow, including:
 
-1.  Impersonating a client identity in the workflow
+1. Impersonating a client identity in the workflow
 
-2.  In-workflow authorization, such as PrincipalPermission and validation of Claims
+2. In-workflow authorization, such as PrincipalPermission and validation of Claims
 
-3.  Authenticated messaging using ClientCredentials specified in the workflow, such as username/password or a token retrieved from a Security Token Service (STS)
+3. Authenticated messaging using ClientCredentials specified in the workflow, such as username/password or a token retrieved from a Security Token Service (STS)
 
-4.  Flowing a client security token to a back-end service (claims-based delegation) using WS-Trust ActAs
+4. Flowing a client security token to a back-end service (claims-based delegation) using WS-Trust ActAs
 
-For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](https://wf.codeplex.com/releases/view/48114)
+For more information and to download the WF Security Pack CTP, see: [WF Security Pack CTP](https://archive.codeplex.com/?p=wf)

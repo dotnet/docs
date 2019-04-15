@@ -40,6 +40,7 @@ Specify Windows stream security settings of the custom binding.
  Transports that use a stream-oriented protocol such as TCP and named pipes support stream-based transport upgrades. Specifically, WCF provides security upgrades. The configuration of this transport security is encapsulated by this configuration element  as well as by [\<sslStreamSecurity>](../../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md), which can be configured and added to a custom binding  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Configuration.WindowsStreamSecurityElement>
 - <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>

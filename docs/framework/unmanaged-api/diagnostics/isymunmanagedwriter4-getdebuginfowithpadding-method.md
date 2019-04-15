@@ -16,7 +16,7 @@ Functions the same as [GetDebugInfo Method](../../../../docs/framework/unmanaged
 HRESULT GetDebugInfoWithPadding(    [in, out] IMAGE_DEBUG_DIRECTORY *pIDD,    [in] DWORD cData,    [out] DWORD *pcData,    [out, size_is(cData), length_is(*pcData)] BYTE data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -32,4 +32,5 @@ HRESULT GetDebugInfoWithPadding(    [in, out] IMAGE_DEBUG_DIRECTORY *pIDD,    [i
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter4 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-interface.md)

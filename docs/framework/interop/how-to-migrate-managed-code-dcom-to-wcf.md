@@ -319,9 +319,9 @@ public class SessionBoundFactory : ISessionBoundFactory
 ### Step 3: Configure and start the WCF services  
  To host these services, you will need to make the following additions to the server’s configuration file (web.config).  
   
-1.  Add a `<client>` section that describes the endpoint for the sessionful object.  In this scenario, the server also acts as a client and must be configured to enable this.  
+1. Add a `<client>` section that describes the endpoint for the sessionful object.  In this scenario, the server also acts as a client and must be configured to enable this.  
   
-2.  In the `<services>` section, declare service endpoints for the factory and sessionful object.  This enables the client to communicate with the service endpoints, acquire the <xref:System.ServiceModel.EndpointAddress10> and create the sessionful channel.  
+2. In the `<services>` section, declare service endpoints for the factory and sessionful object.  This enables the client to communicate with the service endpoints, acquire the <xref:System.ServiceModel.EndpointAddress10> and create the sessionful channel.  
   
  Following is an example configuration file with these settings:  
   
@@ -384,13 +384,13 @@ sessionBoundServiceHost.Open();
   
  To call the service, add the code to the client to do the following:  
   
-1.  Create a channel to the `ISessionBoundFactory` service.  
+1. Create a channel to the `ISessionBoundFactory` service.  
   
-2.  Use the channel to invoke the `ISessionBoundFactory` service an obtain an <xref:System.ServiceModel.EndpointAddress10> object.  
+2. Use the channel to invoke the `ISessionBoundFactory` service an obtain an <xref:System.ServiceModel.EndpointAddress10> object.  
   
-3.  Use the <xref:System.ServiceModel.EndpointAddress10> to create a channel to obtain a sessionful object.  
+3. Use the <xref:System.ServiceModel.EndpointAddress10> to create a channel to obtain a sessionful object.  
   
-4.  Call the `SetCurrentValue` and `GetCurrentValue` methods to demonstrate it remains the same object instance is used across multiple calls.  
+4. Call the `SetCurrentValue` and `GetCurrentValue` methods to demonstrate it remains the same object instance is used across multiple calls.  
   
 ```csharp  
 ChannelFactory<ISessionBoundFactory> factory =  
@@ -416,6 +416,7 @@ if (sessionBoundObject.GetCurrentValue() == "Hello")
 ```  
   
 ## See also
+
 - [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
 - [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)
 - [Building Clients](../../../docs/framework/wcf/building-clients.md)

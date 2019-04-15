@@ -13,13 +13,13 @@ ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is a Graphics Device Interface that enables programmers to write device-independent applications. The services of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] are exposed through a set of managed classes.  
   
 ## In This Section  
- [Overview of Graphics](../../../../docs/framework/winforms/advanced/overview-of-graphics.md)  
+ [Overview of Graphics](overview-of-graphics.md)  
  Provides a general introduction to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)].  
   
- [Three Categories of Graphics Services](../../../../docs/framework/winforms/advanced/three-categories-of-graphics-services.md)  
+ [Three Categories of Graphics Services](three-categories-of-graphics-services.md)  
  Describes the three categories that make up programming with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)].  
   
- [Structure of the Graphics Interface](../../../../docs/framework/winforms/advanced/structure-of-the-graphics-interface.md)  
+ [Structure of the Graphics Interface](structure-of-the-graphics-interface.md)  
  Describes the managed class interface of [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)].  
   
 ## Reference  

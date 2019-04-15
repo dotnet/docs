@@ -29,11 +29,11 @@ The **-target:library** option causes the compiler to create a dynamic-link libr
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Modify the **Output type** property.  
+3. Modify the **Output type** property.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   

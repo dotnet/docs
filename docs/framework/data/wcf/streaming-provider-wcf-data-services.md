@@ -22,15 +22,15 @@ A data service can expose large object binary data. This binary data might repre
   
  Configuring a data service to support the streaming of binary data requires the following steps:  
   
-1.  Attribute one or more entities in the data model as a media link entry. These entities should not include the binary data to be streamed. Any binary properties of an entity are always returned in the entry as base-64 encoded binary.  
+1. Attribute one or more entities in the data model as a media link entry. These entities should not include the binary data to be streamed. Any binary properties of an entity are always returned in the entry as base-64 encoded binary.  
   
-2.  Implement the T:System.Data.Services.Providers.IDataServiceStreamProvider interface.  
+2. Implement the T:System.Data.Services.Providers.IDataServiceStreamProvider interface.  
   
-3.  Define a data service that implements the <xref:System.IServiceProvider> interface. The data service uses the <xref:System.IServiceProvider.GetService%2A> implementation to access the streaming data provider implementation. This method returns the appropriate streaming provider implementation.  
+3. Define a data service that implements the <xref:System.IServiceProvider> interface. The data service uses the <xref:System.IServiceProvider.GetService%2A> implementation to access the streaming data provider implementation. This method returns the appropriate streaming provider implementation.  
   
-4.  Enable large message streams in the Web application configuration.  
+4. Enable large message streams in the Web application configuration.  
   
-5.  Enable access to binary resources on the server or in a data source.  
+5. Enable access to binary resources on the server or in a data source.  
   
  The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989). The source code for this sample service is available on the [Streaming Photo Data Service Sample page](https://go.microsoft.com/fwlink/?LinkID=198988) on MSDN Code Gallery.  
   
@@ -40,7 +40,7 @@ A data service can expose large object binary data. This binary data might repre
  **Entity Framework Provider**  
  To indicate that an entity is a media link entry, add the `HasStream` attribute to the entity type definition in the conceptual model, as in the following example:  
   
- [!code-xml[Astoria Photo Streaming Service#HasStream](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria photo streaming service/xml/photodata.edmx#hasstream)]  
+ [!code-xml[Astoria Photo Streaming Service#HasStream](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_photo_streaming_service/xml/photodata.edmx#hasstream)]  
   
  You must also add the namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` either to the entity or to the root of the .edmx or .csdl file that defines the data model.  
   
@@ -68,25 +68,21 @@ A data service can expose large object binary data. This binary data might repre
 ## Creating the Streaming Data Service  
  To provide the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] runtime with access to the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> implementation, the data service that you create must also implement the <xref:System.IServiceProvider> interface. The following example shows how to implement the <xref:System.IServiceProvider.GetService%2A> method to return an instance of the `PhotoServiceStreamProvider` class that implements <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.  
   
- [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria photo streaming service/cs/photodata.svc.cs#photoservicestreamingprovider)]
- [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria photo streaming service/vb/photodata.svc.vb#photoservicestreamingprovider)]  
+ [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
+ [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]  
   
  For general information about how to create a data service, see [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md).  
   
 ## Enabling Large Binary Streams in the Hosting Environment  
  When you create a data service in an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web application, Windows Communication Foundation (WCF) is used to provide the HTTP protocol implementation. By default, WCF limits the size of HTTP messages to only 65K bytes. To be able to stream large binary data to and from the data service, you must also configure the Web application to enable large binary files and to use streams for transfer. To do this, add the following in the `<configuration />` element of the application's Web.config file:  
-  
-  
-  
+
 > [!NOTE]
 >  You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by WCF.  
   
  For more information, see [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   
- By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) in the `<system.web />` configuration section, as shown in the following example:  
-  
-  
-  
+ By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:  
+
 ## Using Data Streams in a Client Application  
  The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to both retrieve and update these exposed resources as binary streams on the client. For more information, see [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md).  
   
@@ -113,7 +109,7 @@ A data service can expose large object binary data. This binary data might repre
   
 -   When you implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>, or <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> methods, you must use the eTag and Content-Type values that are supplied as method parameters. Do not set eTag or Content-Type headers in your <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider implementation.  
   
--   By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://msdn.microsoft.com/library/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+-   By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).  
   
 <a name="versioning"></a>   
 ## Versioning Requirements  
@@ -124,6 +120,7 @@ A data service can expose large object binary data. This binary data might repre
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See also
+
 - [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
 - [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
 - [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)

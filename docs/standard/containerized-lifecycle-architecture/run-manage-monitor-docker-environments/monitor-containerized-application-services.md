@@ -1,13 +1,13 @@
 ---
 title: Monitor containerized application services
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn some key aspects of monitoring container architectures
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 02/15/2019
 ---
 # Monitor containerized application services
 
-It is critical for applications split into multiple containers and microservices to have a way to monitor and analyze the behavior of the application.
+It's critical for applications split into multiple containers and microservices to have a way to monitor and analyze the behavior of the whole application.
 
 ## Microsoft Application Insights
 
@@ -19,76 +19,56 @@ As it pertains to Docker, you can chart life-cycle events and performance counte
 
 ![example](./media/image1.png)
 
-Figure 6-1: Application Insights monitoring Docker hosts and containers
+**Figure 6-1**. Application Insights monitoring Docker hosts and containers
 
 When you run the [Application Insights Docker image](https://hub.docker.com/r/microsoft/applicationinsights/) on your Docker host, you benefit from the following:
 
--   Life-cycle telemetry about all the containers running on the host—start, stop, and so on.
+- Life-cycle telemetry about all the containers running on the host—start, stop, and so on.
 
--   Performance counters for all the containers: CPU, memory, network usage, and more.
+- Performance counters for all the containers: CPU, memory, network usage, and more.
 
--   If you also installed [Application Insights SDK](https://docs.microsoft.com/azure/application-insights/app-insights-asp-net) in the apps running in the containers, all the telemetry of those apps will have additional properties identifying the container and host machine. So, for example, if you have instances of an app running in more than one host, you'll easily be able to filter your app telemetry by host.
+- If you also installed [Application Insights SDK](https://docs.microsoft.com/azure/application-insights/app-insights-asp-net) in the apps running in the containers, all the telemetry of those apps will have additional properties identifying the container and host machine. So, for example, if you have instances of an app running in more than one host, you'll easily be able to filter your app telemetry by host.
 
 ### Setting up Application Insights to monitor Docker applications and Docker hosts
 
-To create an Application Insights resource, follow the instructions in the articles presented in the list that follows. Azure Portal will create the necessary script for you.
+To create an Application Insights resource, follow the instructions in the articles presented in the list that follows. Azure portal will create the necessary script for you.
 
--   **Monitor Docker applications in Application Insights:**  [https://docs.microsoft.com/azure/application-insights/app-insights-docker](https://docs.microsoft.com/azure/application-insights/app-insights-docker)
+- **Monitor Docker applications in Application Insights:** \
+  <https://docs.microsoft.com/azure/application-insights/app-insights-docker>
 
--   **Application Insights Docker image at Docker Hub and Github:**  
-[https://hub.docker.com/r/microsoft/applicationinsights/](https://hub.docker.com/r/microsoft/applicationinsights/) and <https://github.com/Microsoft/ApplicationInsights-Docker>
+- **Application Insights Docker image at Docker Hub and GitHub:** \
+  <https://hub.docker.com/r/microsoft/applicationinsights/> and \
+  <https://github.com/Microsoft/ApplicationInsights-Docker>
 
--   **Set up Application Insights for ASP.NET:**  
-[https://docs.microsoft.com/azure/application-insights/app-insights-asp-net](https://docs.microsoft.com/azure/application-insights/app-insights-asp-net)
+- **Set up Application Insights for ASP.NET web apps and ASP.NET Core:** \
+  <https://docs.microsoft.com/azure/application-insights/app-insights-asp-net>
 
--   **Application Insights for web pages:**  
-<https://docs.microsoft.com/azure/application-insights/app-insights-javascript>
+- **Application Insights for web pages:**  
+  <https://docs.microsoft.com/azure/application-insights/app-insights-javascript>
 
-## Microsoft Operations Management Suite
+## Security, backup, and monitoring services
 
-[Operations Management Suite](https://microsoft.com/oms) is a simplified IT management solution that provides log analytics, automation, backup, and site recovery. Based on [queries](https://blogs.technet.microsoft.com/msoms/2016/01/21/easy-microsoft-operations-management-suite-search-queries/) in Operations Management Suite, you can raise [alerts](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-monitoring-alerts) and set remediation via [Azure Automation](https://docs.microsoft.com/azure/automation/). It also seamlessly integrates with your existing management solutions to provide a single pane-of-glass view. Operations Management Suite helps you to manage and protect your on-premises and cloud infrastructure.
+There are many support chores with lots of details that you have to handle to ensure your applications and infrastructure are in top notch condition to support business needs, and the situation becomes more complicated in the microservices realm, so you need a way to have both high-level and detailed views when you need to take action.
 
-### [Operations Management Suite](https://microsoft.com/oms) Container Solution for Docker
+Azure has the tools to manage and provide a unified view of four critical aspects of both your cloud and on-premises resources:
 
-In addition to providing valuable services on its own, the Operations Management Suite Container Solution can manage and monitor Docker hosts and containers by showing information about where your containers and container hosts are, which containers are running or failed, and Docker daemon and container logs sent to *stdout* and *stderr*. It also shows performance metrics such as CPU, memory, network, and storage for the container and hosts to help you troubleshoot and find noisy neighbor containers.
+- **Security**. With [Azure Security Center](https://azure.microsoft.com/services/security-center/).
+  - Get full visibility and control over the security of your virtual machines, apps, and workloads.
+  - Centralize the management of your security policies and integrate existing processes and tools.
+  - Detect real threats with advanced analytics.
 
-![](./media/image2.png)
+- **Backup**. With [Azure Backup](https://azure.microsoft.com/services/backup/).
+  - Avoid costly business disruptions, meet compliance goals, and protect your data against ransomware and human errors.
+  - Keep your backup data encrypted in transit and at rest.
+  - Ensure access based on multifactor authentication to prevent unauthorized use.
 
-Figure 6-2: Information about Docker containers shown by Operations Management Suite
+- **Monitoring**. With [Azure monitoring](https://azure.microsoft.com/solutions/monitoring/), [Log Analytics](https://azure.microsoft.com/services/log-analytics/), and [Application Insights](https://azure.microsoft.com/services/application-insights/).
+  - Get full visibility into the health and performance of your Azure workloads, apps, and infrastructure.
+  - Collect data from any source and get rich insights into your virtual machines, containers, and applications.
+  - Find the information you need using interactive queries and full-text search. 
+  - Perform root-cause analysis with advanced analytics, including machine learning algorithms.
 
-Application Insights and Operations Management Suite both focus on monitoring activities; however, Application Insights focuses more on monitoring the apps themselves thanks to its SDK running within the app. However, Operations Management Suite focuses much more on the infrastructure around the hosts, plus it offers deep analysis on logs at scale while providing a very flexible data-driven search/query system.
-
-Because Operations Management Suite is implemented as a cloud-based service, you can have it up and running quickly with minimal investment in infrastructure services. New features are delivered automatically, saving you from ongoing maintenance and upgrade costs.
-
-Using Operations Management Suite Container Solution, you can do the following:
-
--   Centralize and correlate millions of logs from Docker containers at scale
-
--   See information about all container hosts in a single location
-
--   Know which containers are running, what image they're running, and where they're running
-
--   Quickly diagnose "noisy neighbor" containers that can cause problems on container hosts
-
--   See an audit trail for actions on containers
-
--   Troubleshoot by viewing and searching centralized logs without remoting to the Docker hosts
-
--   Find containers that might be "noisy neighbors" and consuming excess resources on a host
-
--   View centralized CPU, memory, storage, and network usage and performance information for containers
-
--   Generate test Docker containers with Azure Automation
-
-You can see performance information by running queries like Type=Perf, as shown in Figure 6-3.
-
-![DockerPerfMetricsView](./media/image3.png){width="5.78625in" height="3.25in"}
-
-Figure 6-3: Performance metrics of Docker hosts shown by Operations Management Suite
-
-Saving queries is also a standard feature in Operations Management Suite and can help you keep queries you've found useful and discover trends in your system.
-
-**More info** To find information on installing and configuring the Docker container solution in [Operations Management Suite](https://microsoft.com/oms), go to <https://docs.microsoft.com/azure/log-analytics/log-analytics-containers>.
+- **On-premises resources**. With [a truly consistent hybrid cloud](https://azure.microsoft.com/resources/truly-consistent-hybrid-cloud-with-microsoft-azure/).
 
 >[!div class="step-by-step"]
 >[Previous](manage-production-docker-environments.md)

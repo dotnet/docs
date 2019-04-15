@@ -8,4 +8,3 @@
 |Version|4.7.1|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})?displayProperty=nameWithType></li></ul>|
-

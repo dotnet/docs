@@ -29,7 +29,7 @@ HRESULT GetScopeFromOffset(
     [out, retval] ISymUnmanagedScope**  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] A `ULONG` that contains the offset.  
   
@@ -43,4 +43,5 @@ HRESULT GetScopeFromOffset(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

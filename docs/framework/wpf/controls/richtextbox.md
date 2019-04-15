@@ -12,10 +12,11 @@ ms.assetid: a177374d-ee54-4d00-aaae-c983481cae9b
 The <xref:System.Windows.Controls.RichTextBox> element defines an editing control with built-in support for features such as cut and paste, rich document presentation, and content selection.  
   
 ## In This Section  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/richtextbox-how-to-topics.md)  
+ [RichTextBox Overview](richtextbox-overview.md)  
+ [How-to Topics](richtextbox-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Controls.TextBox>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
+- [Flow Document Overview](../advanced/flow-document-overview.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<add> of <participants>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
@@ -82,6 +82,7 @@ Configure a tracking participant that listens to the tracking records being emit
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>

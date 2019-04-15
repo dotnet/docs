@@ -29,13 +29,13 @@ There are a number of ways to sign an assembly with a strong name:
   
 ### To create and sign an assembly with a strong name by using Visual Studio  
   
-1.  In **Solution Explorer**, open the shortcut menu for the project, and then choose **Properties**.  
+1. In **Solution Explorer**, open the shortcut menu for the project, and then choose **Properties**.  
   
-2.  Choose the **Signing** tab.  
+2. Choose the **Signing** tab.  
   
-3.  Select the **Sign the assembly** box.  
+3. Select the **Sign the assembly** box.  
   
-4.  In the **Choose a strong name key file** box, choose **\<Browse…>**, and then navigate to the key file. To create a new key file, choose **\<New…>** and enter its name in the **Create Strong Name Key** dialog box.  
+4. In the **Choose a strong name key file** box, choose **\<Browse…>**, and then navigate to the key file. To create a new key file, choose **\<New…>** and enter its name in the **Create Strong Name Key** dialog box.  
   
 > [!NOTE]
 >  In order to [delay sign an assembly](../../../docs/framework/app-domains/delay-sign-assembly.md), choose a public key file.  
@@ -67,9 +67,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
   
 #### To sign an assembly with a strong name by using attributes  
   
-1.  Add the <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=nameWithType> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute to your source code file, and specify the name of the file or container that contains the key pair to use when signing the assembly with a strong name.  
+1. Add the <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=nameWithType> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute to your source code file, and specify the name of the file or container that contains the key pair to use when signing the assembly with a strong name.  
   
-2.  Compile the source code file normally.  
+2. Compile the source code file normally.  
   
 > [!NOTE]
 >  The C# and Visual Basic compilers issue compiler warnings (CS1699 and BC41008, respectively) when they encounter the <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute in source code. You can ignore the warnings.  
@@ -95,6 +95,7 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
     ```  
   
 ## See also
+
 - [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
 - [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)

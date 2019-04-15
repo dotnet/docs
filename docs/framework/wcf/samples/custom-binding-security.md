@@ -99,28 +99,28 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
 ### To set up, build, and run the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+3. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
 
 ### To run the sample on the same computer
 
-1.  Open a Developer Command Prompt for Visual Studio window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
+1. Open a Developer Command Prompt for Visual Studio window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
     >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
-2.  Launch Service.exe from \service\bin.  
+2. Launch Service.exe from \service\bin.  
   
-3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across computers  
   
-1.  On the service computer:  
+1. On the service computer:  
   
     1.  Create a virtual directory named servicemodelsamples on the service computer.  
   
@@ -137,7 +137,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
     6.  Run Service.exe from a command prompt.
 
-2.  On the client computer:
+2. On the client computer:
 
     1.  Copy the client program files from the \client\bin\ folder to the client computer. Also copy the Cleanup.bat file.
 
@@ -179,5 +179,3 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 ### To clean up after the sample
 
 -   Run Cleanup.bat in the samples folder after you have finished running the sample.
-
-## See also

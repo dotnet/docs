@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "control patterns, Toggle"
   - "UI Automation, Toggle control pattern"
 ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Toggle Control Pattern
 > [!NOTE]
@@ -45,6 +43,7 @@ ms.author: "mhopkins"
  This control pattern has no associated exceptions.  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

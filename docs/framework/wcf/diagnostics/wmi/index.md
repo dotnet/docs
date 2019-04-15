@@ -50,26 +50,26 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
   
  To modify user privilege levels, use the following steps.  
   
-1.  Click Start and then Run and type **compmgmt.msc**.  
+1. Click Start and then Run and type **compmgmt.msc**.  
   
-2.  Right-click **Services and Application/WMI Controls** to select **Properties**.  
+2. Right-click **Services and Application/WMI Controls** to select **Properties**.  
   
-3.  Select the **Security** Tab, and navigate to the **Root/ServiceModel** namespace. Click the **Security** button.  
+3. Select the **Security** Tab, and navigate to the **Root/ServiceModel** namespace. Click the **Security** button.  
   
-4.  Select the specific group or user that you want to control access and use the **Allow** or **Deny** checkbox to configure permissions.  
+4. Select the specific group or user that you want to control access and use the **Allow** or **Deny** checkbox to configure permissions.  
   
 ## Granting WCF WMI Registration Permissions to Additional Users  
  WCF exposes management data to WMI. It does so by hosting an in-process WMI provider, sometimes called a "decoupled provider". For the management data to be exposed, the account that registers this provider must have the appropriate permissions. In Windows, only a small set of privileged accounts can register decoupled providers by default. This is a problem because users commonly want to expose WMI data from a WCF service running under an account that is not in the default set.  
   
  To provide this access, an administrator must grant the following permissions to the additional account in the following order:  
   
-1.  Permission to access to the WCF WMI Namespace.  
+1. Permission to access to the WCF WMI Namespace.  
   
-2.  Permission to register the WCF Decoupled WMI Provider.  
+2. Permission to register the WCF Decoupled WMI Provider.  
   
 #### To grant WMI namespace access permission  
   
-1.  Run the following PowerShell script.  
+1. Run the following PowerShell script.  
   
     ```powershell  
     write-host ""  
@@ -116,7 +116,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
   
 #### To grant provider registration access  
   
-1.  Run the following PowerShell script.  
+1. Run the following PowerShell script.  
   
     ```powershell  
     write-host ""  
@@ -151,16 +151,16 @@ Whoami /user
   
  **%windir%\Program Files\WMI Tools\\**  
   
-1.  In the **Connect to namespace:** window, type **root\ServiceModel** and click **OK.**  
+1. In the **Connect to namespace:** window, type **root\ServiceModel** and click **OK.**  
   
-2.  In the **WMI CIM Studio Login** window, click the **Options >>** button to expand the window. Select **Packet privacy** for **Authentication level**, and click **OK**.  
+2. In the **WMI CIM Studio Login** window, click the **Options >>** button to expand the window. Select **Packet privacy** for **Authentication level**, and click **OK**.  
   
 ### Windows Management Instrumentation Tester  
  This tool is installed by Windows. To run it, launch a command console by typing **cmd.exe** in the **Start/Run** dialog box and click **OK**. Then, type **wbemtest.exe** in the command window. The Windows Management Instrumentation Tester tool is then launched.  
   
-1.  Click the **Connect** button on the top right corner of the window.  
+1. Click the **Connect** button on the top right corner of the window.  
   
-2.  In the new window, enter **root\ServiceModel** for the **Namespace** field, and select **Packet privacy** for **Authentication level**. Click **Connect**.  
+2. In the new window, enter **root\ServiceModel** for the **Namespace** field, and select **Packet privacy** for **Authentication level**. Click **Connect**.  
   
 ### Using Managed Code  
  You can also access remote WMI instances programmatically by using classes provided by the <xref:System.Management> namespace. The following code sample demonstrates how to do this.  

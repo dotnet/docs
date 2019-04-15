@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Tree control type"
   - "UI Automation, Tree control type"
 ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Tree Control Type
 > [!NOTE]
@@ -83,6 +81,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.Tree>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

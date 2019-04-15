@@ -29,7 +29,7 @@ HRESULT GetCurrentVersionNumber (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnCurrentVersion`  
  [out] A pointer to an integer value that is the version number of the latest edit made to this function.  
   

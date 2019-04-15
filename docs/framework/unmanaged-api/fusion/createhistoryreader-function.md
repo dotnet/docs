@@ -29,7 +29,7 @@ HRESULT CreateHistoryReader (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzFilePath`  
  [in] The file path.  
   
@@ -52,4 +52,5 @@ HRESULT CreateHistoryReader (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

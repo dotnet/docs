@@ -16,13 +16,13 @@ By default, when you enable spell checking in an editing control like <xref:Syst
 ## Example  
  The following example shows the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] that creates a <xref:System.Windows.Controls.TextBox> with some events that are used to implement the context menu.  
   
- [!code-xaml[TextBoxMiscSnippets_snip#SpellerCustomContextMenuExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml#spellercustomcontextmenuexamplewholepage)]  
+ [!code-xaml[TextBoxMiscSnippets_snip#SpellerCustomContextMenuExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml#spellercustomcontextmenuexamplewholepage)]  
   
 ## Example  
  The following example shows the code that implements the context menu.  
   
- [!code-csharp[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml.cs#spellercustomcontextmenucodeexamplewholepage)]
- [!code-vb[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/speller_custom_context_menu.xaml.vb#spellercustomcontextmenucodeexamplewholepage)]  
+ [!code-csharp[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml.cs#spellercustomcontextmenucodeexamplewholepage)]
+ [!code-vb[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/speller_custom_context_menu.xaml.vb#spellercustomcontextmenucodeexamplewholepage)]  
   
  The code used for doing this with a <xref:System.Windows.Controls.RichTextBox> is similar. The main difference is in the parameter passed to the `GetSpellingError` method. For a <xref:System.Windows.Controls.TextBox>, pass the integer index of the caret position:  
   
@@ -33,7 +33,8 @@ By default, when you enable spell checking in an editing control like <xref:Syst
  `spellingError = myRichTextBox.GetSpellingError(myRichTextBox.CaretPosition);`  
   
 ## See also
-- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
-- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
-- [Enable Spell Checking in a Text Editing Control](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md)
-- [Use a Custom Context Menu with a TextBox](../../../../docs/framework/wpf/controls/how-to-use-a-custom-context-menu-with-a-textbox.md)
+
+- [TextBox Overview](textbox-overview.md)
+- [RichTextBox Overview](richtextbox-overview.md)
+- [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md)
+- [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md)

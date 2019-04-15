@@ -29,7 +29,7 @@ HRESULT ModifyLogSwitch(
     [in] LONG  lLevel);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLogSwitchName`  
  [in] A pointer to a string that specifies the name of the log switch.  
   

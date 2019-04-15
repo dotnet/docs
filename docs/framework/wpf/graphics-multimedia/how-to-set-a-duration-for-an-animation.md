@@ -15,8 +15,9 @@ A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time an
  In the following example, the width, height and fill color of a <xref:System.Windows.Shapes.Rectangle> is animated. Durations are set on animation and container timelines resulting in animation effects including controlling the perceived speed of an animation and overriding the duration of child timelines with the duration of a container timeline.  
   
 ## Example  
- [!code-xaml[timingbehaviors_snip#DurationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DurationExample.xaml#durationexamplewholepage)]  
+ [!code-xaml[timingbehaviors_snip#DurationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DurationExample.xaml#durationexamplewholepage)]  
   
 ## See also
+
 - <xref:System.Windows.Duration>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation Overview](animation-overview.md)

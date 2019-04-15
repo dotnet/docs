@@ -12,17 +12,17 @@ When you are building controls that interact with data, you sometimes need to bi
   
 ### To bind the BindingSource to a type  
   
-1.  Create a Windows Forms project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
+1. Create a Windows Forms project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
-2.  In **Design** view, drag a <xref:System.Windows.Forms.BindingSource> component onto the form.  
+2. In **Design** view, drag a <xref:System.Windows.Forms.BindingSource> component onto the form.  
   
-3.  In the **Properties** window, click the arrow for the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property.  
+3. In the **Properties** window, click the arrow for the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property.  
   
-4.  In the **DataSource UI Type Editor**, click **Add Project Data Source**.  
+4. In the **DataSource UI Type Editor**, click **Add Project Data Source**.  
   
-5.  On the **Choose a Data Source Type** page, select **Object** and click **Next**.  
+5. On the **Choose a Data Source Type** page, select **Object** and click **Next**.  
   
-6.  Select the type to bind to:  
+6. Select the type to bind to:  
   
     -   If the type you want to bind to is in the current project, or the assembly that contains the type is already added as a reference, expand the nodes to find the type you want, and then select it.  
   
@@ -33,19 +33,20 @@ When you are building controls that interact with data, you sometimes need to bi
         > [!NOTE]
         >  If you want to bind to a type in a framework or Microsoft assembly, clear the **Hide assemblies that begin with Microsoft or System** check box.  
   
-7.  Click **Next**, and then click **Finish**.  
+7. Click **Next**, and then click **Finish**.  
   
 ### To bind the control to the BindingSource  
   
-1.  Add a <xref:System.Windows.Forms.TextBox> to the form.  
+1. Add a <xref:System.Windows.Forms.TextBox> to the form.  
   
-2.  In the **Properties** window, expand the **(DataBindings)** node.  
+2. In the **Properties** window, expand the **(DataBindings)** node.  
   
-3.  Click the arrow next to the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
+3. Click the arrow next to the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
   
-4.  In the **DataSource UI Type Editor**, expand the node for the <xref:System.Windows.Forms.BindingSource> added previously, and select the property of the bound type you want to bind to the <xref:System.Windows.Forms.TextBox.Text%2A> property of the <xref:System.Windows.Forms.TextBox>.  
+4. In the **DataSource UI Type Editor**, expand the node for the <xref:System.Windows.Forms.BindingSource> added previously, and select the property of the bound type you want to bind to the <xref:System.Windows.Forms.TextBox.Text%2A> property of the <xref:System.Windows.Forms.TextBox>.  
   
 ## See also
-- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
-- [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)
+
+- [BindingSource Component](bindingsource-component.md)
+- [How to: Bind a Windows Forms Control to a Type](how-to-bind-a-windows-forms-control-to-a-type.md)
 - [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

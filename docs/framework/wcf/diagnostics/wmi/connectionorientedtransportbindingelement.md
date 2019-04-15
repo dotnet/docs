@@ -91,4 +91,5 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>

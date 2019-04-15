@@ -1,1 +1,0 @@
-      My.User.CurrentPrincipal = CustomPrincipal

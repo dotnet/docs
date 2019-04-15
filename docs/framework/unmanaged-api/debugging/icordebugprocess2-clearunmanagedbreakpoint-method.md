@@ -29,7 +29,7 @@ HRESULT ClearUnmanagedBreakpoint (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the address at which the breakpoint was set.  
   

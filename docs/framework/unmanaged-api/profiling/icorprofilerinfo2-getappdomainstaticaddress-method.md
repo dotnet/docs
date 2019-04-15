@@ -31,7 +31,7 @@ RESULT GetAppDomainStaticAddress(
     [out] void **ppAddress);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The class ID of the class that contains the requested application domain-static field.  
   
@@ -63,5 +63,6 @@ RESULT GetAppDomainStaticAddress(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

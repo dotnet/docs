@@ -34,7 +34,7 @@ HRESULT GetHashFromHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hFile`  
  [in] The handle of the file to be hashed.  
   
@@ -60,5 +60,6 @@ HRESULT GetHashFromHandle (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [GetHashFromHandle Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

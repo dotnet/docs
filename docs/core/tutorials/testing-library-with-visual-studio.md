@@ -144,11 +144,13 @@ Your test run had no failures, but change it slightly so that one of the test me
    string[] words = { "alphabet", "Error", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
                       "1234", ".", ";", " " };
    ```
+
    ```vb
    Dim words() As String = { "alphabet", "Error", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
                       "1234", ".", ";", " " }
 
    ```
+
 1. Run the test by selecting **Test** > **Run** > **All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
    ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
@@ -157,7 +159,7 @@ Your test run had no failures, but change it slightly so that one of the test me
 
    ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
 
-1. Remove the code that you added (`"Error", `) and rerun the test. The tests will pass.
+1. Undo the modification you did in step 1 and remove the string "Error". Rerun the test and the tests will pass.
 
 ## Testing the Release version of the library
 

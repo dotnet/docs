@@ -17,14 +17,15 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can supply
 ## Example  
  The following code-behind page for the XAML file creates a <xref:System.Data.Services.Client.DataServiceCollection%601> with custom methods that are called when changes occur to data that is bound to the binding collection. When the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event occurs, the supplied method prevents an item that has been removed from the binding collection from being deleted from the data service. When the <xref:System.Collections.ObjectModel.ObservableCollection%601.PropertyChanged> event occurs, the `ShipDate` value is validated to ensure that changes are not made to orders that have already shipped.  
   
- [!code-csharp[Astoria Northwind Client#WpfDataBindingCustom](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderscustom.xaml.cs#wpfdatabindingcustom)]
- [!code-vb[Astoria Northwind Client#WpfDataBindingCustom](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom.xaml.vb#wpfdatabindingcustom)]
- [!code-vb[Astoria Northwind Client#WpfDataBindingCustom](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom2.xaml.vb#wpfdatabindingcustom)]  
+ [!code-csharp[Astoria Northwind Client#WpfDataBindingCustom](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderscustom.xaml.cs#wpfdatabindingcustom)]
+ [!code-vb[Astoria Northwind Client#WpfDataBindingCustom](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderscustom.xaml.vb#wpfdatabindingcustom)]
+ [!code-vb[Astoria Northwind Client#WpfDataBindingCustom](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderscustom2.xaml.vb#wpfdatabindingcustom)]  
   
 ## Example  
  The following XAML defines the window for the previous example.  
   
- [!code-xaml[Astoria Northwind Client#WpfDataBindingCustomXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom.xaml#wpfdatabindingcustomxaml)]  
+ [!code-xaml[Astoria Northwind Client#WpfDataBindingCustomXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderscustom.xaml#wpfdatabindingcustomxaml)]  
   
 ## See also
+
 - [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

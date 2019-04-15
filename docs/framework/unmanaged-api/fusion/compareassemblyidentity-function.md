@@ -34,7 +34,7 @@ STDAPI CompareAssemblyIdentity (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity1`  
  [in] The textual identity of the first assembly in the comparison.  
   
@@ -79,5 +79,6 @@ STDAPI CompareAssemblyIdentity (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
 - [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)

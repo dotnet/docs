@@ -7,14 +7,15 @@ ms.assetid: 2a2e8274-6556-46a2-80d3-a1812903cbcf
 Windows Presentation Foundation (WPF) libraries expose a number of unmanaged functions that are intended for internal use only. They should not be called from user code.  
   
 ## In This Section  
- [Activate Function](../../../../docs/framework/wpf/advanced/activate-function-wpf-unmanaged-api-reference.md)  
- [CreateIDispatchSTAForwarder Function](../../../../docs/framework/wpf/advanced/createidispatchstaforwarder-function-wpf-unmanaged-api-reference.md)  
- [Deactivate Function](../../../../docs/framework/wpf/advanced/deactivate-function-wpf-unmanaged-api-reference.md)  
- [ForwardTranslateAccelerator Function](../../../../docs/framework/wpf/advanced/forwardtranslateaccelerator-function-wpf-unmanaged-api-reference.md)  
- [LoadFromHistory Function](../../../../docs/framework/wpf/advanced/loadfromhistory-function-wpf-unmanaged-api-reference.md)  
- [ProcessUnhandledException Function](../../../../docs/framework/wpf/advanced/processunhandledexception-function-wpf-unmanaged-api-reference.md)  
- [SaveToHistory Function](../../../../docs/framework/wpf/advanced/savetohistory-function-wpf-unmanaged-api-reference.md)  
- [SetFakeActiveWindow Function](../../../../docs/framework/wpf/advanced/setfakeactivewindow-function-wpf-unmanaged-api-reference.md)  
+ [Activate Function](activate-function-wpf-unmanaged-api-reference.md)  
+ [CreateIDispatchSTAForwarder Function](createidispatchstaforwarder-function-wpf-unmanaged-api-reference.md)  
+ [Deactivate Function](deactivate-function-wpf-unmanaged-api-reference.md)  
+ [ForwardTranslateAccelerator Function](forwardtranslateaccelerator-function-wpf-unmanaged-api-reference.md)  
+ [LoadFromHistory Function](loadfromhistory-function-wpf-unmanaged-api-reference.md)  
+ [ProcessUnhandledException Function](processunhandledexception-function-wpf-unmanaged-api-reference.md)  
+ [SaveToHistory Function](savetohistory-function-wpf-unmanaged-api-reference.md)  
+ [SetFakeActiveWindow Function](setfakeactivewindow-function-wpf-unmanaged-api-reference.md)  
   
 ## See also
-- [Advanced](../../../../docs/framework/wpf/advanced/index.md)
+
+- [Advanced](index.md)

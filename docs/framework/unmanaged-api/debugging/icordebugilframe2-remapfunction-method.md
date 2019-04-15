@@ -29,7 +29,7 @@ HRESULT RemapFunction (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `newILOffset`  
  [in] The stack frame's new MSIL offset at which the instruction pointer should be placed. This value must be a sequence point.  
   

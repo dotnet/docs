@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET Core 3.0
 description: Learn about the new features found in .NET Core 3.0.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 author: thraka
@@ -19,17 +19,16 @@ This article describes what is new in .NET Core 3.0 (preview 2). One of the bigg
 
 For more information about what was released with each version, see the following announcements:
 
-- [.NET Core 3.0 Preview 1 announcement](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
-- [.NET Core 3.0 Preview 2 announcement](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)
+- [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
+- [.NET Core 3.0 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
 
 ## C# 8
 
 .NET Core 3.0 supports C# 8, and as of .NET Core 3.0 Preview 2, supports these new features. For more information about C# 8.0 features, see the following blog posts:
 
-- [Do more with patterns in C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/)
-- [Take C# 8.0 for a spin](https://blogs.msdn.microsoft.com/dotnet/2018/12/05/take-c-8-0-for-a-spin/)
-- [Building C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/)
-
+- [Do more with patterns in C# 8.0](https://devblogs.microsoft.com/dotnet/do-more-with-patterns-in-c-8-0/)
+- [Take C# 8.0 for a spin](https://devblogs.microsoft.com/dotnet/take-c-8-0-for-a-spin/)
+- [Building C# 8.0](https://devblogs.microsoft.com/dotnet/building-c-8-0/)
 
 ### Ranges and indices
 
@@ -59,15 +58,15 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 {
     await foreach (var result in GetResultsAsync())
     {
-        if (result > 20) yield return result; 
+        if (result > 20) yield return result;
     }
 }
 ```
 
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
->[!NOTE]
->You need .NET Core 3.0 Preview 2 to use async streams if you want to develop with either Visual Studio 2019 Preview 2 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2 at the command line, then everything will work as expected.
+> [!NOTE]
+> You need .NET Core 3.0 Preview 2 to use async streams if you want to develop with either Visual Studio 2019 or the latest preview of the [C# extension for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode/releases/tag/v1.18.0-beta5). If you are using .NET Core 3.0 Preview 2 at the command line, then everything will work as expected.
 
 ### Using Declarations
 
@@ -103,7 +102,7 @@ Patterns enable you to write declarative code that captures your intent instead 
 
 There will still be cases where *switch statements* will be a better choice than *switch expressions* and patterns can be used with both syntax styles.
 
-For more information, see [Do more with patterns in C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/).
+For more information, see [Do more with patterns in C# 8.0](https://devblogs.microsoft.com/dotnet/do-more-with-patterns-in-c-8-0/).
 
 ## IEEE Floating-point improvements
 
@@ -162,21 +161,20 @@ During `dotnet build` or `dotnet publish`, an executable is created provided tha
 
 ## Build copies dependencies
 
-`dotnet build` now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`. 
+`dotnet build` now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
 
 There are some operations, like linking and razor page publishing that will still require publishing.
 
-
 ## Local dotnet tools
 
->[!WARNING]
->There was a change in .NET Core Local Tools between .NET Core 3.0 Preview 1 and .NET Core 3.0 Preview 2.  If you tried out local tools in Preview 1 by running a command like `dotnet tool restore` or `dotnet tool install`, you need to delete your local tools cache folder before local tools will work correctly in Preview 2. This folder is located at:
+> [!WARNING]
+> There was a change in .NET Core Local Tools between .NET Core 3.0 Preview 1 and .NET Core 3.0 Preview 2.  If you tried out local tools in Preview 1 by running a command like `dotnet tool restore` or `dotnet tool install`, you need to delete your local tools cache folder before local tools will work correctly in Preview 2. This folder is located at:
 >
->On mac, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
+> On mac, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
 >
->On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
+> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
 >
->If you do not delete this folder, you will receive an error.
+> If you do not delete this folder, you will receive an error.
 
 While .NET Core 2.1 supported global tools, .NET Core 3.0 now has local tools. Local tools are similar to global tools but are associated with a particular location on disk. This enables per-project and per-repository tooling. Any tool installed locally isn't available globally. Tools are distributed as NuGet packages.
 
@@ -264,9 +262,9 @@ dotnet new wpf
 dotnet new winforms
 ```
 
-Visual Studio 2019 Preview 2 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF. Designers are still not yet supported. And you can open, launch, and debug these projects in Visual Studio 2019.
+Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF. Designers are still not yet supported. And you can open, launch, and debug these projects in Visual Studio 2019.
 
-Visual Studio 2017 15.9 adds the ability to [enable .NET Core previews](https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/), but you need to turn that feature on, and it's not a supported scenario.
+Visual Studio 2017 15.9 adds the ability to [enable .NET Core previews](https://devblogs.microsoft.com/dotnet/net-core-tooling-update-for-visual-studio-2017-version-15-9/), but you need to turn that feature on, and it's not a supported scenario.
 
 The new projects are the same as existing .NET Core projects, with a couple additions. Here is the comparison of the basic .NET Core console project and a basic Windows Forms and WPF project.
 
@@ -304,12 +302,14 @@ Please share your feedback on the [dotnet/winforms](https://github.com/dotnet/wi
 
 [MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows app package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
 
-The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019 Preview 2, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
+The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
 
->Note: The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
-```xml
-<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
-```
+> [!NOTE]
+> The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
+>
+> ```xml
+> <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+> ```
 
 ## Fast built-in JSON support
 
@@ -463,7 +463,7 @@ Assembly unloadability is a new capability of `AssemblyLoadContext`. This new fe
 
 This new capability can be used for scenarios similar to:
 
-* Plugin scenarios where dynamic plugin loading and unloading is required. 
+* Plugin scenarios where dynamic plugin loading and unloading is required.
 * Dynamically compiling, running and then flushing code. Useful for web sites, scripting engines, etc.
 * Loading assemblies for introspection (like ReflectionOnlyLoad), although [MetadataLoadContext](#type-metadataloadcontext) (released in Preview 1) will be a better choice in many cases.
 
@@ -479,10 +479,9 @@ Windows offers a rich native API, in the form of flat C APIs, COM, and WinRT. Si
 
 You can see an example of using COM with the [Excel Demo source code](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo).
 
-
 ## Type: SequenceReader
 
-In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers. 
+In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers.
 
 The following example breaks an input `Sequence` into valid `CR/LF` delimited lines:
 
@@ -661,7 +660,7 @@ namespace rsakeyprint
             {
                 byte[] keyBytes = File.ReadAllBytes(args[0]);
                 rsa.ImportRSAPrivateKey(keyBytes, out int bytesRead);
- 
+
                 Console.WriteLine($"Read {bytesRead} bytes, {keyBytes.Length-bytesRead} extra byte(s) in file.");
                 RSAParameters rsaParameters = rsa.ExportParameters(true);
                 Console.WriteLine(BitConverter.ToString(rsaParameters.D));
@@ -707,7 +706,7 @@ Previously, .NET Core only supported using the `SerialPort` type on Windows.
 
 ## More BCL Improvements
 
-The `Span<T>`, `Memory<T>`, and related types that were introduced in .NET Core 2.1, have been optimized in .NET Core 3.0. Common operations such as span construction, slicing, parsing, and formatting now perform better. 
+The `Span<T>`, `Memory<T>`, and related types that were introduced in .NET Core 2.1, have been optimized in .NET Core 3.0. Common operations such as span construction, slicing, parsing, and formatting now perform better.
 
 Additionally, types like `String` have seen under-the-cover improvements to make them more efficient when used as keys with `Dictionary<TKey, TValue>` and other collections. No code changes are required to benefit from these improvements.
 
@@ -725,9 +724,9 @@ The following improvements are also new in .NET Core 3 Preview 1:
 
 ## Tiered compilation
 
-[Tiered compilation](https://blogs.msdn.microsoft.com/dotnet/2018/08/02/tiered-compilation-preview-in-net-core-2-1/) is on by default with .NET Core 3.0. It is a feature that enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance, both at startup and to maximize throughput.
+[Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) is on by default with .NET Core 3.0. It is a feature that enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance, both at startup and to maximize throughput.
 
-This feature was added as an opt-in feature in [.NET Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/09/12/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt in with the .NET Core 2.2 release.
+This feature was added as an opt-in feature in [.NET Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt in with the .NET Core 2.2 release.
 
 ## ARM64 Linux support
 
@@ -749,7 +748,7 @@ After configuring Snap on your system, run the following command to install the 
 ```console
 sudo snap install dotnet-sdk --beta --classic
 ```
- 
+
 When .NET Core in installed using the Snap package, the default .NET Core command is `dotnet-sdk.dotnet`, as opposed to just `dotnet`. The benefit of the namespaced command is that it will not conflict with a globally installed .NET Core version you may have. This command can be aliased to `dotnet` with:
 
 ```console
@@ -769,13 +768,12 @@ The GPIO Packages includes APIs for GPIO, SPI, I2C and PWM devices. The IoT bind
 
 The updated serial port APIs that were announced as part of .NET Core 3.0 Preview 1 are not part of these packages but are available as part of the .NET Core platform.
 
-
 ## Platform Support
 
 .NET Core 3 will be supported on the following operating systems:
 
 * Windows Client: 7, 8.1, 10 (1607+)
-* Windows Server: 20012 R2 SP1+
+* Windows Server: 2012 R2 SP1+
 * macOS: 10.12+
 * RHEL: 6+
 * Fedora: 26+

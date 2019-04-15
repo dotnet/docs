@@ -9,24 +9,24 @@ The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the
 ## The Items collection  
  The <xref:System.Activities.Presentation.EditingContext.Items%2A> collection is used to access data that is shared between the host and the designer, or data that is available to all designers. This collection has the following capabilities, accessed via the <xref:System.Activities.Presentation.ContextItemManager> class:  
   
-1.  <xref:System.Activities.Presentation.ContextItemManager.GetValue%2A>  
+1. <xref:System.Activities.Presentation.ContextItemManager.GetValue%2A>  
   
-2.  <xref:System.Activities.Presentation.ContextItemManager.Subscribe%2A>  
+2. <xref:System.Activities.Presentation.ContextItemManager.Subscribe%2A>  
   
-3.  <xref:System.Activities.Presentation.ContextItemManager.Unsubscribe%2A>  
+3. <xref:System.Activities.Presentation.ContextItemManager.Unsubscribe%2A>  
   
-4.  <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A>  
+4. <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A>  
   
 ## The Services collection  
  The <xref:System.Activities.Presentation.EditingContext.Services%2A> collection is used to access services that the designer uses to interact with the host, or services that all designers use. This collection has the following methods of note:  
   
-1.  <xref:System.Activities.Presentation.ServiceManager.Publish%2A>  
+1. <xref:System.Activities.Presentation.ServiceManager.Publish%2A>  
   
-2.  <xref:System.Activities.Presentation.ServiceManager.Subscribe%2A>  
+2. <xref:System.Activities.Presentation.ServiceManager.Subscribe%2A>  
   
-3.  <xref:System.Activities.Presentation.ServiceManager.Unsubscribe%2A>  
+3. <xref:System.Activities.Presentation.ServiceManager.Unsubscribe%2A>  
   
-4.  <xref:System.Activities.Presentation.ServiceManager.GetService%2A>  
+4. <xref:System.Activities.Presentation.ServiceManager.GetService%2A>  
   
 ## Assigning a designer an activity  
  To specify which designer an activity uses, the Designer attribute is used.  
@@ -89,7 +89,7 @@ protected override void OnModelItemChanged(object newItem)
  Using the Items collection is similar to using the Services collection, except that <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A> is used instead of Publish. This collection is more appropriate for sharing simple data between the designers and the host, rather than complex functionality.  
   
 ## EditingContext host items and services  
- The .Net Framework provides a number of built-in items and services accessed through the editing context.  
+ The .NET Framework provides a number of built-in items and services accessed through the editing context.  
   
  Items:  
   
@@ -121,7 +121,7 @@ protected override void OnModelItemChanged(object newItem)
   
 -   <xref:System.Activities.Presentation.Validation.IValidationErrorService>: Provides access to validation errors using <xref:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors%2A>.  
   
--   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .Net Framework, and is not intended for external use.  
+-   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .NET Framework, and is not intended for external use.  
   
 -   <xref:System.Activities.Presentation.IXamlLoadErrorService>: Provides access to the XAML load error collection using <xref:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors%2A>.  
   

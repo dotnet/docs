@@ -31,7 +31,7 @@ HRESULT GetFunctionPointerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nTypeArgs`  
  [in] The number of type arguments for the function.  
   

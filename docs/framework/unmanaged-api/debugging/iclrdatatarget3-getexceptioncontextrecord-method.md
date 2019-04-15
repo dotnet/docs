@@ -28,7 +28,7 @@ HRESULT GetExceptionContextRecord(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bufferSize`  
  [in] The input buffer size, in bytes. This must be large enough to accommodate the context record.  
   
@@ -62,6 +62,7 @@ HRESULT GetExceptionContextRecord(
  **.NET Framework Versions:** [!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
 ## See also
+
 - [ICLRDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-interface.md)
 - [GetExceptionRecord Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-getexceptionrecord-method.md)
 - [GetExceptionThreadID Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-getexceptionthreadid-method.md)

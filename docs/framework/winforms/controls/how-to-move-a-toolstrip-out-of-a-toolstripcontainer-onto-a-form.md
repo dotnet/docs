@@ -14,17 +14,18 @@ Use the following procedure to move a <xref:System.Windows.Forms.ToolStrip> out 
   
 ### To move a ToolStrip out of a ToolStripContainer onto a form  
   
-1.  Select the <xref:System.Windows.Forms.ToolStrip>.  
+1. Select the <xref:System.Windows.Forms.ToolStrip>.  
   
-2.  Cut the <xref:System.Windows.Forms.ToolStrip> by pressing CTRL+X, or right-click the <xref:System.Windows.Forms.ToolStrip> and choose **Cut** from the context menu.  
+2. Cut the <xref:System.Windows.Forms.ToolStrip> by pressing CTRL+X, or right-click the <xref:System.Windows.Forms.ToolStrip> and choose **Cut** from the context menu.  
   
-3.  Select the form.  
+3. Select the form.  
   
-4.  Paste the <xref:System.Windows.Forms.ToolStrip> by pressing CTRL+V, or choose **Paste** from the **Edit** menu.  
+4. Paste the <xref:System.Windows.Forms.ToolStrip> by pressing CTRL+V, or choose **Paste** from the **Edit** menu.  
   
-5.  Set the <xref:System.Windows.Forms.ToolStrip.Dock%2A> property of the <xref:System.Windows.Forms.ToolStrip> to **Top**.  
+5. Set the <xref:System.Windows.Forms.ToolStrip.Dock%2A> property of the <xref:System.Windows.Forms.ToolStrip> to **Top**.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.ToolStripContainer>
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)

@@ -32,11 +32,11 @@ The **-win32res** option inserts a Win32 resource in the output file.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Click on the **Resource File** button and choose a file by using the combo box.  
+3. Click on the **Resource File** button and choose a file by using the combo box.  
   
 ## Example  
  Compile `in.cs` and attach a Win32 resource file `rf.res` to produce `in.exe`:  

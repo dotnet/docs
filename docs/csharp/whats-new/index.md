@@ -1,4 +1,4 @@
 ---
-redirect_url: csharp-7-3
+redirect_url: csharp-8
 ms.custom: "updateeachrelease"
 ---

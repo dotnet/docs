@@ -11,7 +11,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 ### Using a configuration file  
   
-1.  In the service's configuration file, add a service behavior that contains the `serviceMetadata` tag:  
+1. In the service's configuration file, add a service behavior that contains the `serviceMetadata` tag:  
   
     ```xml  
     <behaviors>  
@@ -23,14 +23,14 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     </behaviors>  
     ```  
   
-2.  Add a `behaviorConfiguration` attribute to the service tag that references this new behavior:  
+2. Add a `behaviorConfiguration` attribute to the service tag that references this new behavior:  
   
     ```xml  
     <service        name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">   
     ```  
   
-3.  Add a metadata endpoint specifying mex as the address, `wsHttpBinding` as the binding, and <xref:System.ServiceModel.Description.IMetadataExchange> as the contract:  
+3. Add a metadata endpoint specifying mex as the address, `wsHttpBinding` as the binding, and <xref:System.ServiceModel.Description.IMetadataExchange> as the contract:  
   
     ```xml  
     <endpoint address="mex"  
@@ -38,7 +38,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
               contract="IMetadataExchange" />  
     ```  
   
-4.  To verify the metadata exchange endpoint is working correctly add an endpoint tag in the client configuration file:  
+4. To verify the metadata exchange endpoint is working correctly add an endpoint tag in the client configuration file:  
   
     ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  
@@ -46,7 +46,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
               contract="IMetadataExchange"/>  
     ```  
   
-5.  In the client's Main() method, create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> instance, set its <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `true`, call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> and then iterate through the collection of metadata returned:  
+5. In the client's Main() method, create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> instance, set its <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `true`, call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> and then iterate through the collection of metadata returned:  
   
     ```  
     string mexAddress = "http://localhost:8000/servicemodelsamples/service/mex";  
@@ -60,19 +60,19 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 ### Configuring by code  
   
-1.  Create a <xref:System.ServiceModel.WSHttpBinding> binding instance:  
+1. Create a <xref:System.ServiceModel.WSHttpBinding> binding instance:  
   
     ```  
     WSHttpBinding binding = new WSHttpBinding();  
     ```  
   
-2.  Create a <xref:System.ServiceModel.ServiceHost> instance:  
+2. Create a <xref:System.ServiceModel.ServiceHost> instance:  
   
     ```  
     ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress);  
     ```  
   
-3.  Add a service endpoint and add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance:  
+3. Add a service endpoint and add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance:  
   
     ```  
     serviceHost.AddServiceEndpoint(typeof(ICalculator), binding, baseAddress);  
@@ -81,13 +81,13 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     serviceHost.Description.Behaviors.Add(smb);  
     ```  
   
-4.  Add a metadata exchange endpoint, specifying the <xref:System.ServiceModel.WSHttpBinding> created earlier:  
+4. Add a metadata exchange endpoint, specifying the <xref:System.ServiceModel.WSHttpBinding> created earlier:  
   
     ```  
     serviceHost.AddServiceEndpoint(typeof(IMetadataExchange), binding, mexAddress);  
     ```  
   
-5.  To verify that the metadata exchange endpoint is working correctly, add an endpoint tag in the client configuration file:  
+5. To verify that the metadata exchange endpoint is working correctly, add an endpoint tag in the client configuration file:  
   
     ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  
@@ -95,7 +95,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
               contract="IMetadataExchange"/>  
     ```  
   
-6.  In the client's Main() method, create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> instance, set the <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `true`, call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> and then iterate through the collection of metadata returned:  
+6. In the client's Main() method, create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> instance, set the <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `true`, call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> and then iterate through the collection of metadata returned:  
   
     ```  
     string mexAddress = "http://localhost:8000/servicemodelsamples/service/mex";  
@@ -108,6 +108,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     ```  
   
 ## See also
+
 - [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)
 - [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)
 - [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

@@ -24,9 +24,9 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
   
 |Layout feature|Description|  
 |--------------------|-----------------|  
-|Autosizing|Some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls resize themselves to display their contents properly. For more information, see [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md).|  
+|Autosizing|Some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls resize themselves to display their contents properly. For more information, see [AutoSize Property Overview](../../winforms/controls/autosize-property-overview.md).|  
 |Anchoring and docking|[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls support positioning and sizing based on the parent container. For more information, see <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>.|  
-|Autoscaling|Container controls resize themselves and their children based on the resolution of the output device or the size, in pixels, of the default container font. For more information, see [Automatic Scaling in Windows Forms](../../../../docs/framework/winforms/automatic-scaling-in-windows-forms.md).|  
+|Autoscaling|Container controls resize themselves and their children based on the resolution of the output device or the size, in pixels, of the default container font. For more information, see [Automatic Scaling in Windows Forms](../../winforms/automatic-scaling-in-windows-forms.md).|  
 |Layout containers|The <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel> controls arrange their child controls and size themselves according to their contents.|  
   
 ## Layout Limitations  
@@ -67,7 +67,7 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 |Overflow|When the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element converts from `double` values to `int` values, overflow is possible. Values that are larger than <xref:System.Int32.MaxValue> are set to <xref:System.Int32.MaxValue>.|  
   
 ### Layout-related Properties  
- Properties that control layout behavior in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements are mapped appropriately by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ Properties that control layout behavior in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements are mapped appropriately by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Layout Changes in the Hosted Control  
  Layout changes in the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control are propagated to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to trigger layout updates. The <xref:System.Windows.UIElement.InvalidateMeasure%2A> method on <xref:System.Windows.Forms.Integration.WindowsFormsHost> ensures that layout changes in the hosted control cause the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout engine to run.  
@@ -78,13 +78,13 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 ### Sizing Algorithm  
  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element uses the following procedure to size the hosted control:  
   
-1.  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element overrides the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods.  
+1. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element overrides the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods.  
   
-2.  To determine the size of the hosted control, the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method calls the hosted control's <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method with a constraint translated from the constraint passed to the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method.  
+2. To determine the size of the hosted control, the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method calls the hosted control's <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method with a constraint translated from the constraint passed to the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> method.  
   
-3.  The <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> method attempts to set the hosted control to the given size constraint.  
+3. The <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> method attempts to set the hosted control to the given size constraint.  
   
-4.  If the hosted control's <xref:System.Windows.Forms.Control.Size%2A> property matches the specified constraint, the hosted control is sized to the constraint.  
+4. If the hosted control's <xref:System.Windows.Forms.Control.Size%2A> property matches the specified constraint, the hosted control is sized to the constraint.  
   
  If the <xref:System.Windows.Forms.Control.Size%2A> property does not match the specified constraint, the hosted control does not support continuous sizing. For example, the <xref:System.Windows.Forms.MonthCalendar> control allows only discrete sizes. The permitted sizes for this control consist of integers (representing the number of months) for both height and width. In cases such as this, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element behaves as follows:  
   
@@ -93,9 +93,10 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 -   If the <xref:System.Windows.Forms.Control.Size%2A> property returns a smaller size than the specified constraint, <xref:System.Windows.Forms.Integration.WindowsFormsHost> accepts this size value and returns the value to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout system.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Walkthrough: Arranging Windows Forms Controls in WPF](../../../../docs/framework/wpf/advanced/walkthrough-arranging-windows-forms-controls-in-wpf.md)
+- [Walkthrough: Arranging Windows Forms Controls in WPF](walkthrough-arranging-windows-forms-controls-in-wpf.md)
 - [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971)
-- [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)
-- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
+- [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md)
+- [Migration and Interoperability](migration-and-interoperability.md)

@@ -36,7 +36,7 @@ HRESULT DefineField(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata type or method token.  
   
@@ -71,4 +71,5 @@ HRESULT DefineField(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

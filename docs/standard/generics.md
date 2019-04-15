@@ -7,7 +7,7 @@ ms.date: 10/09/2018
 ---
 # Generic types overview
 
-Developers use generics all the time in .NET, whether implicitly or explicitly. When you use LINQ in .NET, did you ever notice that you're working with <xref:System.Collections.Generic.IEnumerable%601>? Or if you ever saw an online sample of a "generic repository" for talking to databases using Entity Framework, did you see that most methods return IQueryable<T>? You may have wondered what the **T** is in these examples and why it's in there.
+Developers use generics all the time in .NET, whether implicitly or explicitly. When you use LINQ in .NET, did you ever notice that you're working with <xref:System.Collections.Generic.IEnumerable%601>? Or if you ever saw an online sample of a "generic repository" for talking to databases using Entity Framework, did you see that most methods return IQueryable\<T>? You may have wondered what the **T** is in these examples and why it's in there.
 
 First introduced in the .NET Framework 2.0, **generics** are essentially a "code template" that allows developers to define [type-safe](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hbzz1a9a(v=vs.100)) data structures without committing to an actual data type. For example, <xref:System.Collections.Generic.List%601> is a [generic collection](xref:System.Collections.Generic) that can be declared and used with any type, such as `List<int>`, `List<string>`, or `List<Person>`.
 
@@ -62,5 +62,4 @@ An additional advantage of the runtime knowing the type of your generic is a bet
 
 ## See also
 
-- [An Introduction to C# Generics](https://msdn.microsoft.com/library/ms379564.aspx)
 - [C# Programming Guide - Generics](../../docs/csharp/programming-guide/generics/index.md)

@@ -299,7 +299,7 @@ The .NET Framework is language independent. This means that, as a developer, you
   
      Because of this rule, CLS-compliant types are not required to implement non-CLS-compliant members. If a CLS-compliant framework does expose a class that implements a non-CLS compliant interface, it should also provide concrete implementations of all non-CLS-compliant members.  
   
- CLS-compliant language compilers must also allow a class to provide separate implementations of members that have the same name and signature in multiple interfaces.  Both C# and Visual Basic support [explicit interface implementations](~/docs/csharp/programming-guide/interfaces/explicit-interface-implementation.md) to provide different implementations of identically named methods. Visual Basic also supports the `Implements` keyword, which enables you to explicitly designate which interface and member a particular member implements. The following example illustrates this scenario by defining a `Temperature` class that implements the `ICelsius` and `IFahrenheit` interfaces as explicit interface implementations.  
+ CLS-compliant language compilers must also allow a class to provide separate implementations of members that have the same name and signature in multiple interfaces.  Both C# and Visual Basic support [explicit interface implementations](../csharp/programming-guide/interfaces/explicit-interface-implementation.md) to provide different implementations of identically named methods. Visual Basic also supports the `Implements` keyword, which enables you to explicitly designate which interface and member a particular member implements. The following example illustrates this scenario by defining a `Temperature` class that implements the `ICelsius` and `IFahrenheit` interfaces as explicit interface implementations.  
   
  [!code-csharp[Conceptual.CLSCompliant#24](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/eii1.cs#24)]
  [!code-vb[Conceptual.CLSCompliant#24](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/eii1.vb#24)]  
@@ -337,7 +337,7 @@ The .NET Framework is language independent. This means that, as a developer, you
 ### Member accessibility  
  Overriding an inherited member cannot change the accessibility of that member. For example, a public method in a base class cannot be overridden by a private method in a derived class. There is one exception: a `protected internal` (in C#) or `Protected Friend` (in Visual Basic) member in one assembly that is overridden by a type in a different assembly. In that case, the accessibility of the override is `Protected`.  
   
- The following example illustrates the error that is generated when the <xref:System.CLSCompliantAttribute> attribute is set to `true`, and `Person`, which is a class derived from `Animal`, tries to change the accessibility of the `Species` property from public to private. The example compiles successfully if its accessibility is changed to public.  
+ The following example illustrates the error that is generated when the <xref:System.CLSCompliantAttribute> attribute is set to `true`, and `Human`, which is a class derived from `Animal`, tries to change the accessibility of the `Species` property from public to private. The example compiles successfully if its accessibility is changed to public.  
   
  [!code-csharp[Conceptual.CLSCompliant#28](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/accessibility1.cs#28)]
  [!code-vb[Conceptual.CLSCompliant#28](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/accessibility1.vb#28)]  
@@ -511,13 +511,13 @@ The .NET Framework is language independent. This means that, as a developer, you
   
  To create CLS-compliant components:  
   
-1.  Use the <xref:System.CLSCompliantAttribute> to mark you assembly as CLS-compliant.  
+1. Use the <xref:System.CLSCompliantAttribute> to mark you assembly as CLS-compliant.  
   
-2.  Mark any publicly exposed types in the assembly that are not CLS-compliant as non-compliant.  
+2. Mark any publicly exposed types in the assembly that are not CLS-compliant as non-compliant.  
   
-3.  Mark any publicly exposed members in CLS-compliant types as non-compliant.  
+3. Mark any publicly exposed members in CLS-compliant types as non-compliant.  
   
-4.  Provide a CLS-compliant alternative for non-CLS-compliant members.  
+4. Provide a CLS-compliant alternative for non-CLS-compliant members.  
   
  If you've successfully marked all your non-compliant types and members, your compiler should not emit any non-compliance warnings. However, you should indicate which members are not CLS-compliant and list their CLS-compliant alternatives in your product documentation.  
   
@@ -542,23 +542,23 @@ The .NET Framework is language independent. This means that, as a developer, you
   
  To package the two classes in a single assembly, you must compile them into modules. To compile the Visual Basic source code file into a module, use this command:  
   
-```  
+```console  
 vbc /t:module StringUtil.vb   
 ```  
   
- For more information about the command-line syntax of the Visual Basic compiler, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
+ For more information about the command-line syntax of the Visual Basic compiler, see [Building from the Command Line](../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
  To compile the C# source code file into a module, use this command:  
   
-```  
+```console  
 csc /t:module NumberUtil.cs  
 ```  
   
- For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
+ For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
   
- You then use the [Link tool (Link.exe)](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129) to compile the two modules into an assembly:  
+ You then use the [Linker options](/cpp/build/reference/linker-options) to compile the two modules into an assembly:  
   
-```  
+```console  
 link numberutil.netmodule stringutil.netmodule /out:UtilityLib.dll /dll   
 ```  
   
@@ -569,13 +569,13 @@ link numberutil.netmodule stringutil.netmodule /out:UtilityLib.dll /dll
   
  To compile the Visual Basic code, use this command:  
   
-```  
+```console  
 vbc example.vb /r:UtilityLib.dll  
 ```  
   
  To compile with C#, change the name of the compiler from **vbc** to **csc**, and change the file extension from .vb to .cs:  
   
-```  
+```console  
 csc example.cs /r:UtilityLib.dll  
 ```  
   

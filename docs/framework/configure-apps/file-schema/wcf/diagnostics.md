@@ -79,5 +79,6 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>

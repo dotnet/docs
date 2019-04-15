@@ -16,13 +16,13 @@ If you frequently access an object that requires a qualification path of several
   
 ### To speed up access to a heavily qualified object by assigning it to a variable  
   
-1.  Declare a variable of the type of the object that you are accessing frequently. Specify the qualification path in the initialization part of the declaration.  
+1. Declare a variable of the type of the object that you are accessing frequently. Specify the qualification path in the initialization part of the declaration.  
   
     ```  
     Dim ctrlActv As Control = someForm.ActiveForm.ActiveControl  
     ```  
   
-2.  Use the variable to access the object's members.  
+2. Use the variable to access the object's members.  
   
     ```  
     ctrlActv.Text = "Test"  
@@ -32,13 +32,13 @@ If you frequently access an object that requires a qualification path of several
   
 ### To speed up access to a heavily qualified object by using a With...End With block  
   
-1.  Put the qualification path in a `With` statement.  
+1. Put the qualification path in a `With` statement.  
   
     ```  
     With someForm.ActiveForm.ActiveControl  
     ```  
   
-2.  Access the object's members inside the `With` block, before the `End With` statement.  
+2. Access the object's members inside the `With` block, before the `End With` statement.  
   
     ```  
         .Text = "Test"  
@@ -48,5 +48,6 @@ If you frequently access an object that requires a qualification path of several
     ```  
   
 ## See also
+
 - [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)

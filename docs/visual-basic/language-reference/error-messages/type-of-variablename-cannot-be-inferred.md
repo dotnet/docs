@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Type of '<variablename>' cannot be inferred because the loop bounds and the step variable do not widen to the same type"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -57,6 +57,7 @@ Dim n = 20
     ```  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Conversion.Val%2A>
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

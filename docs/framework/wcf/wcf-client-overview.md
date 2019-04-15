@@ -14,13 +14,13 @@ This section describes what client applications do, how to configure, create, an
 ## Using WCF Client Objects  
  A client application is a managed application that uses a WCF client to communicate with another application. To create a client application for a WCF service requires the following steps:  
   
-1.  Obtain the service contract, bindings, and address information for a service endpoint.  
+1. Obtain the service contract, bindings, and address information for a service endpoint.  
   
-2.  Create a WCF client using that information.  
+2. Create a WCF client using that information.  
   
-3.  Call operations.  
+3. Call operations.  
   
-4.  Close the WCF client object.  
+4. Close the WCF client object.  
   
  The following sections discuss these steps and provide brief introductions to the following issues:  
   
@@ -166,5 +166,6 @@ End Interface
  WCF client types extend <xref:System.ServiceModel.ClientBase%601>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. For details, see [WCF Client Architecture](../../../docs/framework/wcf/feature-details/client-architecture.md).  
   
 ## See also
+
 - <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>
 - <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>

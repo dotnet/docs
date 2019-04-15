@@ -30,7 +30,7 @@ HRESULT GetHostManager (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] The `IID` of the interface that the common language runtime (CLR) is querying for.  
   
@@ -85,4 +85,5 @@ HRESULT GetHostManager (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

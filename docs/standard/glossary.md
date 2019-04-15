@@ -1,8 +1,6 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-author: tdykstra
-ms.author: tdykstra
 ms.date: 01/22/2019
 ms.technology: dotnet-standard
 ---

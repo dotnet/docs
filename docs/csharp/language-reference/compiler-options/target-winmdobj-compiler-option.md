@@ -23,11 +23,11 @@ If you use the **-target:winmdobj** compiler option, the compiler creates an int
   
 ### To set this compiler option in the Visual Studio IDE for a Windows Store app  
   
-1.  In **Solution Explorer**, open the shortcut menu for your project, and then choose **Properties**.  
+1. In **Solution Explorer**, open the shortcut menu for your project, and then choose **Properties**.  
   
-2.  Choose the **Application** tab.  
+2. Choose the **Application** tab.  
   
-3.  In the **Output type** list, choose **WinMD File**.  
+3. In the **Output type** list, choose **WinMD File**.  
   
      The **WinMD File** option is available only for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app templates.  
   

@@ -143,7 +143,7 @@ ms.author: "ronpet"
   
  **Miscellaneous APIs**  
   
--   The <xref:System.Reflection.TypeInfo.GUID%2A?displayProperty=nameWithType> property throws a <xref:System.PlatformNotSupportedException> exception if a <xref:System.Runtime.InteropServices.GuidAttribute> attribute isn't applied to the type. The GUID is used primarily for COM support.  
+-   The [TypeInfo.GUID](xref:System.Type.GUID) property throws a <xref:System.PlatformNotSupportedException> exception if a <xref:System.Runtime.InteropServices.GuidAttribute> attribute isn't applied to the type. The GUID is used primarily for COM support.  
   
 -   The <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method correctly parses strings that contain short dates in .NET Native. However, it doesn't maintain compatibility with the changes in date and time parsing described in the Microsoft Knowledge Base articles [KB2803771](https://support.microsoft.com/kb/2803771) and [KB2803755](https://support.microsoft.com/kb/2803755).  
   
@@ -569,13 +569,9 @@ Other unsupported interop features include:
      Type `InnerType` isn't known to the serializer, because the members of the base class aren't traversed during serialization.  
   
 -   <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> fail to serialize a class or structure that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, the following types fail to serialize or deserialize:  
-  
-  
-  
+
 -   <xref:System.Xml.Serialization.XmlSerializer> fails to serialize the following object value, because it doesn't know the exact type of the object to be serialized:  
-  
-  
-  
+
 -   <xref:System.Xml.Serialization.XmlSerializer> fails to serialize or deserialize if the type of the serialized object is <xref:System.Xml.XmlQualifiedName>.  
   
 -   All serializers (<xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, and <xref:System.Xml.Serialization.XmlSerializer>) fail to generate serialization code for type <xref:System.Xml.Linq.XElement?displayProperty=nameWithType> or for a type that contains <xref:System.Xml.Linq.XElement>. They display build-time errors instead.  
@@ -616,10 +612,8 @@ Other unsupported interop features include:
   
 -   <xref:System.Xml.Serialization.XmlSerializer> doesn't honor the <xref:System.Xml.Serialization.IXmlSerializable> custom serialization interface. If you have a class that implements this interface, <xref:System.Xml.Serialization.XmlSerializer> considers the type a plain old CLR object (POCO) type and serializes only its public properties.  
   
--   Serializing a plain <xref:System.Exception> object, such as the following, doesn't work well with <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>:  
-  
-  
-  
+-   Serializing a plain <xref:System.Exception> object doesn't work well with <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.
+
 <a name="VS"></a>   
 ## Visual Studio differences  
  **Exceptions and debugging**  
@@ -647,6 +641,7 @@ Other unsupported interop features include:
  Enabling .NET Native on a Unit Test Library for a Windows Store apps project isn't supported and causes the project to fail to build.  
   
 ## See also
+
 - [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [.NET For Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)

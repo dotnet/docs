@@ -32,7 +32,7 @@ HRESULT GetMethodBuffer (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `RVA`  
  [in] The relative virtual address of the method for which to return a buffer.  
   
@@ -49,4 +49,5 @@ HRESULT GetMethodBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

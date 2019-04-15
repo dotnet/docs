@@ -31,7 +31,7 @@ HRESULT SetProperty (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `PropertyId`  
  [in] The unique identifier of the property whose value will be set.  
   
@@ -49,4 +49,5 @@ HRESULT SetProperty (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)

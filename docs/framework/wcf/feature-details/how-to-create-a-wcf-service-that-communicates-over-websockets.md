@@ -8,7 +8,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
 ### Define the Service  
   
-1.  Define a callback contract  
+1. Define a callback contract  
   
     ```csharp  
     [ServiceContract]  
@@ -21,7 +21,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
      This contract will be implemented by the client application to allow the service to send messages back to the client.  
   
-2.  Define the service contract and specify the `IStockQuoteCallback` interface as the callback contract.  
+2. Define the service contract and specify the `IStockQuoteCallback` interface as the callback contract.  
   
     ```csharp  
     [ServiceContract(CallbackContract = typeof(IStockQuoteCallback))]  
@@ -32,7 +32,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
         }  
     ```  
   
-3.  Implement the service contract.  
+3. Implement the service contract.  
   
     ```  
     public class StockQuoteService : IStockQuoteService  
@@ -55,7 +55,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
      The service operation `StartSendingQuotes` is implemented as an asynchronous call. We retrieve the callback channel using the `OperationContext` and if the channel is open, we make an async call on the callback channel.  
   
-4.  Configure the service  
+4. Configure the service  
   
     ```xml  
     <configuration>  
@@ -88,7 +88,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
 ### Define the Client  
   
-1.  Implement the callback contract.  
+1. Implement the callback contract.  
   
     ```csharp  
     private class CallbackHandler : StockQuoteServiceReference.IStockQuoteServiceCallback  
@@ -313,5 +313,6 @@ namespace Client
 ```  
   
 ## See also
+
 - [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
 - [Using the NetHttpBinding](../../../../docs/framework/wcf/feature-details/using-the-nethttpbinding.md)

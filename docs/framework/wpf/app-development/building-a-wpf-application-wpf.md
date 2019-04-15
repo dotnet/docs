@@ -10,8 +10,7 @@ ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
 ---
 # Building a WPF Application (WPF)
 Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] executables (.exe), libraries (.dll), or a combination of both types of assemblies. This topic introduces how to build [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications and describes the key steps in the build process.  
-  
-  
+
 <a name="Building_a_WPF_Application_using_Command_Line"></a>   
 ## Building a WPF Application  
  A WPF application can be compiled in the following ways:  
@@ -20,13 +19,13 @@ Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnp
   
 -   Microsoft Build Engine (MSBuild). In addition to the code and XAML files, the application must contain an MSBuild project file. For more information, see "MSBuild".  
   
--   Visual Studio. Visual Studio is an integrated development environment that compiles WPF applications with MSBuild and includes a visual designer for creating UI. For more information, see [Application Development in Visual Studio](https://msdn.microsoft.com/library/97490c1b-a247-41fb-8f2c-bc4c201eff68) and [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).  
+-   Visual Studio. Visual Studio is an integrated development environment that compiles WPF applications with MSBuild and includes a visual designer for creating UI. For more information, see [Write and manage code using Visual Studio](/visualstudio/ide/index-writing-code) and [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).  
   
 <a name="The_Windows_Presentation_Foundation_Build_Pipeline"></a>   
 ## WPF Build Pipeline  
  When a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] project is built, the combination of language-specific and [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]-specific targets are invoked. The process of executing these targets is called the build pipeline, and the key steps are illustrated by the following figure.  
   
- ![WPF build process](../../../../docs/framework/wpf/app-development/media/wpfbuildsystem-figure1.png "WPFBuildSystem_Figure1")  
+ ![WPF build process](./media/wpfbuildsystem-figure1.png "WPFBuildSystem_Figure1")  
   
 <a name="Pre_Build_Initializations"></a>   
 ### Pre-Build Initializations  
@@ -52,11 +51,11 @@ Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnp
   
  During this step, the following activities take place for every [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file that is a `Page` build item:  
   
-1.  The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is parsed by the markup compiler.  
+1. The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is parsed by the markup compiler.  
   
-2.  A compiled representation is created for that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and copied to the obj\Release folder.  
+2. A compiled representation is created for that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and copied to the obj\Release folder.  
   
-3.  A CodeDOM representation of a new partial class is created and copied to the obj\Release folder.  
+3. A CodeDOM representation of a new partial class is created and copied to the obj\Release folder.  
   
  In addition, a language-specific code file is generated for every [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file. For example, for a Page1.xaml page in a Visual Basic project, a Page1.g.vb is generated; for a Page1.xaml page in a C# project, a Page1.g.cs is generated. The ".g" in the file name indicates the file is generated code that has a partial class declaration for the top-level element of the markup file (such as `Page` or `Window`). The class is declared with the `partial` modifier in C# (`Extends` in Visual Basic) to indicate there is another declaration for the class elsewhere, usually in the code-behind file Page1.xaml.cs.  
   
@@ -161,7 +160,8 @@ End Sub
 -   Nothing is recompiled (if nothing in the project has changed).  
   
 ## See also
-- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)
+
+- [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
 - [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)
-- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
-- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
+- [Pack URIs in WPF](pack-uris-in-wpf.md)
+- [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md)

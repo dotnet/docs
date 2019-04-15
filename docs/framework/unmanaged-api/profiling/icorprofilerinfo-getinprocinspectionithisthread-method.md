@@ -28,7 +28,7 @@ HRESULT GetInprocInspectionIThisThread(
     [out] IUnknown **ppicd);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppicd`  
  [out](/cpp/atl/iunknown) object that can be queried for the `ICorDebugThread` interface.  
   
@@ -45,4 +45,5 @@ HRESULT GetInprocInspectionIThisThread(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

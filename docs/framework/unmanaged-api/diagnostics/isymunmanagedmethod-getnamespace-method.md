@@ -28,7 +28,7 @@ HRESULT GetNamespace(
    [out] ISymUnmanagedNamespace  **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer that is set to the returned [ISymUnmanagedNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md) interface.  
   
@@ -39,4 +39,5 @@ HRESULT GetNamespace(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

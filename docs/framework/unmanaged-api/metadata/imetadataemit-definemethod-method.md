@@ -36,7 +36,7 @@ HRESULT DefineMethod (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypedef` token of the parent class or parent interface of the method. Set `td` to `mdTokenNil`, if you are defining a global function.  
   
@@ -107,5 +107,6 @@ HRESULT DefineMethod (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

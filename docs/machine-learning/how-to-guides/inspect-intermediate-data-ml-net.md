@@ -1,11 +1,17 @@
 ---
 title: Inspect intermediate data values during ML.NET pipeline processing
 description: Learn how to inspect actual intermediate data values during ML.NET machine learning pipeline processing
-ms.date: 01/30/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to inspect actual intermediate data values during ML.NET machine learning pipeline processing so that I can make sure that I'm getting the results I expect.
 ---
+
 # Inspect intermediate data values during ML.NET pipeline processing
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 During the experiment, you may want to observe and validate the data processing results at a given point. This isn't easy since ML.NET operations are lazy, constructing objects that are 'promises' of data.
 
@@ -14,6 +20,8 @@ The `GetColumn<T>` extension method lets you inspect the intermediate data. It r
 The following example shows how to use the `GetColumn<T>` extension method:
 
 [Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/adult.tiny.with-schema.txt):
+
+<!-- markdownlint-disable MD010 -->
 ```
 Label	Workclass	education	marital-status
 0	Private	11th	Never-married
@@ -22,6 +30,7 @@ Label	Workclass	education	marital-status
 1	Private	Some-college	Married-civ-spouse
 
 ```
+<!-- markdownlint-enable MD010 -->
 
 Our class is defined as follows:
 
@@ -40,7 +49,7 @@ public class InspectedRow
 ```
 
 ```csharp
-// Create a new context for ML.NET operations. It can be used for exception tracking and logging, 
+// Create a new context for ML.NET operations. It can be used for exception tracking and logging,
 // as a catalog of available operations and as the source of randomness.
 var mlContext = new MLContext();
 

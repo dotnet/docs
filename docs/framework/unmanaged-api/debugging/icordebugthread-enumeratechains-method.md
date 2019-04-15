@@ -29,7 +29,7 @@ HRESULT EnumerateChains (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChains`  
  [out] A pointer to the address of an `ICorDebugChainEnum` object that allows enumeration of all the stack chains in this thread, starting at the active (that is, the most recent) chain.  
   

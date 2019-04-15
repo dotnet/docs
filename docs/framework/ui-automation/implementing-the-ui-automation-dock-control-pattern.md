@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "dock control pattern"
   - "UI Automation, dock control pattern"
 ms.assetid: ea3d2212-7c8e-4dd7-bf08-73141ca2d4fb
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Dock Control Pattern
 > [!NOTE]
@@ -52,6 +50,7 @@ Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Rig
 |<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IDockProvider.SetDockPosition%2A><br /><br /> -   When a control is not able to execute the requested dock style.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

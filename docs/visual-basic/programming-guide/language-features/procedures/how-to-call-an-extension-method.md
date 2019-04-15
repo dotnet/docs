@@ -28,13 +28,13 @@ End Module
   
 ### To call an extension method  
   
-1.  Declare a variable that has the data type of the first parameter of the extension method. For `PrintAndPunctuate`, you need a <xref:System.String> variable:  
+1. Declare a variable that has the data type of the first parameter of the extension method. For `PrintAndPunctuate`, you need a <xref:System.String> variable:  
   
     ```  
     Dim example = "Ready"  
     ```  
   
-2.  That variable will invoke the extension method, and its value is bound to the first parameter, `aString`. The following calling statement will display `Ready?`.  
+2. That variable will invoke the extension method, and its value is bound to the first parameter, `aString`. The following calling statement will display `Ready?`.  
   
     ```  
     example.PrintAndPunctuate("?")  
@@ -47,7 +47,7 @@ End Module
     example.IndexOf("R")  
     ```  
   
-3.  Declare another string variable and call the method again to see that it works with any string.  
+3. Declare another string variable and call the method again to see that it works with any string.  
   
     ```  
     Dim example2 = " or not"  
@@ -89,6 +89,7 @@ End Module
 ```  
   
 ## See also
+
 - [How to: Write an Extension Method](./how-to-write-an-extension-method.md)
 - [Extension Methods](./extension-methods.md)
 - [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

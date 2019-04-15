@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "grid control pattern"
   - "UI Automation, grid control pattern"
 ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Grid Control Pattern
 > [!NOTE]
@@ -60,6 +58,7 @@ Example of a Grid Control with Empty Coordinates
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -   If either of the requested row or column coordinates is less than zero.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

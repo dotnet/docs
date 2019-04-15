@@ -31,12 +31,12 @@ HRESULT EnumInstance(
 );
 ```
 
-### Parameters
+## Parameters
 
-`handle`
+`handle`\
 [in, out] A handle for enumerating the instances.
 
-`instance`
+`instance`\
 [out] The enumerated instance.
 
 ## Remarks

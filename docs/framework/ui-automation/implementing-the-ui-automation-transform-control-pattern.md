@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Transform control pattern"
   - "UI Automation, Transform control pattern"
 ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Transform Control Pattern
 > [!NOTE]
@@ -55,6 +53,7 @@ ms.author: "mhopkins"
 |<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate%2A><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanRotateProperty> is false.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

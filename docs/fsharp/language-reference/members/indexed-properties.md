@@ -3,6 +3,7 @@ title: Indexed Properties
 description: Learn about indexed properties in F#, which allow for array-like access to ordered data.
 ms.date: 10/17/2018
 ---
+
 # Indexed Properties
 
 When defining a class that abstracts over ordered data, it can sometimes be helpful to provide indexed access to that data without exposing the underlying implementation. This is done with the `Index` member.
@@ -61,7 +62,7 @@ The following code demonstrates the use of an indexed property with multiple ind
 ```fsharp
 open System.Collections.Generic
 
-/// Basic implementation of a sparse matrix basedon a dictionary
+/// Basic implementation of a sparse matrix based on a dictionary
 type SparseMatrix() =
     let table = new Dictionary<(int * int), float>()
     member __.Item

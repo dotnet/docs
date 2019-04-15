@@ -12,8 +12,8 @@ ms.assetid: 2512a277-e9d8-4de8-a12f-2bd95e8e7b60
 The <xref:System.Windows.Controls.TextBox> control provides support for basic text input in WPF applications.  
   
 ## In This Section  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/textbox-how-to-topics.md)  
+ [TextBox Overview](textbox-overview.md)  
+ [How-to Topics](textbox-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.TextBox>  
@@ -25,5 +25,6 @@ The <xref:System.Windows.Controls.TextBox> control provides support for basic te
  <xref:System.Windows.Controls.PasswordBox>  
   
 ## See also
+
 - [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
-- [TextBox Styles and Templates](../../../../docs/framework/wpf/controls/textbox-styles-and-templates.md)
+- [TextBox Styles and Templates](textbox-styles-and-templates.md)

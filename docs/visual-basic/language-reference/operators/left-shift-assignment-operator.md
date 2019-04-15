@@ -41,9 +41,10 @@ variableorproperty <<= amount
 ## Example  
  The following example uses the `<<=` operator to shift the bit pattern of an `Integer` variable left by the specified amount and assign the result to the variable.  
   
- [!code-vb[VbVbalrOperators#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/left-shift-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#13)]  
   
 ## See also
+
 - [<< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Window control pattern"
   - "Window control pattern"
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Window Control Pattern
 > [!NOTE]
@@ -60,6 +58,7 @@ ms.author: "mhopkins"
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A><br /><br /> -   When the parameter is not a valid number.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

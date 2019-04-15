@@ -24,7 +24,7 @@ Creating an accessible application has important business implications. Many gov
   
  For more information, see [Resources for Designing Accessible Applications](/visualstudio/ide/reference/resources-for-designing-accessible-applications).  
   
- For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
+ For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
   
 ## Creating the Project  
  This walkthrough creates the user interface for an application that takes pizza orders. It consists of a <xref:System.Windows.Forms.TextBox> for the customer's name, a <xref:System.Windows.Forms.RadioButton> group to select the pizza size, a <xref:System.Windows.Forms.CheckedListBox> for selecting the toppings, two Button controls labeled Order and Cancel, and a Menu with an Exit command.  
@@ -40,7 +40,7 @@ Creating an accessible application has important business implications. Many gov
 ## Adding the Controls to the Form  
  When adding the controls to a form, keep in mind the following guidelines to make an accessible application:  
   
--   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../../../../docs/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
+-   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
   
 -   Set the font size to 10 points or larger.  
   
@@ -129,11 +129,12 @@ Creating an accessible application has important business implications. Many gov
     |MenuItem|Name|fileCommands|  
     ||Text|&File|  
     |MenuItem|Name|exitApp|  
-    ||Text|E&xit|  
-  
-     ![Pizza Order Form](../../../../docs/framework/winforms/advanced/media/vbpizzaorderform.gif "vbPizzaOrderForm")  
-Your form will look something like the following:  
-  
+    ||Text|E&xit|
+    
+      Your form will look something like the following image:
+    
+      ![The pizza order form with a name textbox, and size and toppings selection.](./media/walkthrough-creating-an-accessible-windows-based-application/visual-basic-pizza-order-form.gif)  
+
 ## Supporting High Contrast Mode  
  High Contrast mode is a Windows system setting that improves readability by using contrasting colors and font sizes that are beneficial for visually impaired users. The <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> property is provided to determine whether the High Contrast mode is set.  
   
@@ -151,7 +152,7 @@ Your form will look something like the following:
   
 #### To enable High Contrast mode in an effective way  
   
-1.  Create a method to set the colors of the label to the system colors.  
+1. Create a method to set the colors of the label to the system colors.  
   
     ```  
     ' Visual Basic  
@@ -181,7 +182,7 @@ Your form will look something like the following:
     }  
     ```  
   
-2.  Call the `SetColorScheme` procedure in the form constructor (`Public Sub New()` in Visual Basic and `public class Form1` in Visual C#). To access the constructor in Visual Basic, you will need to expand the region labeled **Windows Form Designer generated code**.  
+2. Call the `SetColorScheme` procedure in the form constructor (`Public Sub New()` in Visual Basic and `public class Form1` in Visual C#). To access the constructor in Visual Basic, you will need to expand the region labeled **Windows Form Designer generated code**.  
   
     ```  
     ' Visual Basic   
@@ -199,7 +200,7 @@ Your form will look something like the following:
     }  
     ```  
   
-3.  Create an event procedure, with the appropriate signature, to respond to the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event.  
+3. Create an event procedure, with the appropriate signature, to respond to the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event.  
   
     ```  
     ' Visual Basic  
@@ -216,7 +217,7 @@ Your form will look something like the following:
     }  
     ```  
   
-4.  Add code to the form constructor, after the call to `InitializeComponents`, to hook up the event procedure to the system event. This method calls the `SetColorScheme` procedure.  
+4. Add code to the form constructor, after the call to `InitializeComponents`, to hook up the event procedure to the system event. This method calls the `SetColorScheme` procedure.  
   
     ```  
     ' Visual Basic  
@@ -239,7 +240,7 @@ Your form will look something like the following:
     }  
     ```  
   
-5.  Add code to the form <xref:System.Windows.Forms.Control.Dispose%2A> method, before the call to the <xref:System.Windows.Forms.Control.Dispose%2A> method of the base class, to release the event when the application closes. To access the <xref:System.Windows.Forms.Control.Dispose%2A> method in Visual Basic, you will need to expand the region labeled Windows Form Designer generated code.  
+5. Add code to the form <xref:System.Windows.Forms.Control.Dispose%2A> method, before the call to the <xref:System.Windows.Forms.Control.Dispose%2A> method of the base class, to release the event when the application closes. To access the <xref:System.Windows.Forms.Control.Dispose%2A> method in Visual Basic, you will need to expand the region labeled Windows Form Designer generated code.  
   
     > [!NOTE]
     >  The system event code runs a thread separate from the main application. If you do not release the event, the code that you hook up to the event will run even after the program is closed.  
@@ -274,38 +275,38 @@ Your form will look something like the following:
     }  
     ```  
   
-6.  Press F5 to run the application.  
+6. Press F5 to run the application.  
   
 ## Conveying Important Information by Means Other Than Sound  
  In this application, no information is conveyed by sound alone. If you use sound in your application, then you should supply the information by some other means as well.  
   
 #### To supply information by some other means than sound  
   
-1.  Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
+1. Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
   
     > [!NOTE]
     >  The user may have the Windows SoundSentry service enabled, which will also cause the window to flash when the system sounds are played through the computer's built-in speaker.  
   
-2.  Display the important information in a non-modal window so that the user may respond to it.  
+2. Display the important information in a non-modal window so that the user may respond to it.  
   
-3.  Display a message box that acquires the keyboard focus. Avoid this method when the user may be typing.  
+3. Display a message box that acquires the keyboard focus. Avoid this method when the user may be typing.  
   
-4.  Display a status indicator in the status notification area of the taskbar. For details, see [Adding Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../../../../docs/framework/winforms/controls/app-icons-to-the-taskbar-with-wf-notifyicon.md).  
+4. Display a status indicator in the status notification area of the taskbar. For details, see [Adding Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../controls/app-icons-to-the-taskbar-with-wf-notifyicon.md).  
   
 ## Testing the Application  
  Before deploying the application, you should test the accessibility features that you have implemented.  
   
 #### To test accessibility features  
   
-1.  To test keyboard access, unplug the mouse and navigate the user interface for each feature using only the keyboard. Ensure that all tasks may be performed using the keyboard only.  
+1. To test keyboard access, unplug the mouse and navigate the user interface for each feature using only the keyboard. Ensure that all tasks may be performed using the keyboard only.  
   
-2.  To test support of High Contrast, choose the Accessibility Options icon in Control Panel. Click the Display tab and select the Use High Contrast check box. Navigate through all user interface elements to ensure that the color and font changes are reflected. Also, ensure that images or patterns drawn behind text are omitted.  
+2. To test support of High Contrast, choose the Accessibility Options icon in Control Panel. Click the Display tab and select the Use High Contrast check box. Navigate through all user interface elements to ensure that the color and font changes are reflected. Also, ensure that images or patterns drawn behind text are omitted.  
   
     > [!NOTE]
     >  Windows NT 4 does not have an Accessibility Options icon in Control Panel. Thus, this procedure for changing the SystemInformation.HighContrast setting does not work in Windows NT 4.  
   
-3.  Other tools are readily available for testing the accessibility of an application.  
+3. Other tools are readily available for testing the accessibility of an application.  
   
-4.  To test exposing the keyboard focus, run Magnifier. (To open it, click the **Start** menu, point to **Programs**, point to **Accessories**, point to **Accessibility**, and then click **Magnifier**). Navigate the user interface using both keyboard tabbing and the mouse. Ensure that all navigation is tracked properly in **Magnifier**.  
+4. To test exposing the keyboard focus, run Magnifier. (To open it, click the **Start** menu, point to **Programs**, point to **Accessories**, point to **Accessibility**, and then click **Magnifier**). Navigate the user interface using both keyboard tabbing and the mouse. Ensure that all navigation is tracked properly in **Magnifier**.  
   
-5.  To test exposing screen elements, run Inspect, and use both the mouse and the TAB key to reach each element. Ensure that the information presented in the Name, State, Role, Location, and Value fields of the Inspect window is meaningful to the user for each object in the UI.
+5. To test exposing screen elements, run Inspect, and use both the mouse and the TAB key to reach each element. Ensure that the information presented in the Name, State, Role, Location, and Value fields of the Inspect window is meaningful to the user for each object in the UI.

@@ -10,9 +10,9 @@ This sample demonstrates how to implement an application that uses WS-Security w
 
 ### To set up, build, and run the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
+2. If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
 
     1.  Open Server Manager in Visual Studio 2012.
 
@@ -24,40 +24,40 @@ This sample demonstrates how to implement an application that uses WS-Security w
 
     5.  Enter `ServiceModelSamplesTransacted` as the name of the new queue.
 
-3.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
 ### To run the sample on the same computer
 
-1.  Ensure that the path includes the folder that contains Makecert.exe and FindPrivateKey.exe.
+1. Ensure that the path includes the folder that contains Makecert.exe and FindPrivateKey.exe.
 
-2.  Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
+2. Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
     >  Ensure that you remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.  
   
-3.  Launch Service.exe from \service\bin.  
+3. Launch Service.exe from \service\bin.  
   
-4.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+4. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-5.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+5. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across computers  
   
-1.  Copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service computer.  
+1. Copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service computer.  
   
-2.  Create a directory on the client computer for the client binaries.  
+2. Create a directory on the client computer for the client binaries.  
   
-3.  Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+3. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-4.  On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
+4. On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
-5.  Edit service's service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
+5. Edit service's service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
   
-6.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
+6. Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
-7.  On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+7. On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
-8.  In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  You must also change the certificate name of the service to be the same as the fully-qualified domain name of the service computer (in the `findValue` attribute in the `defaultCertificate` element of `serviceCertificate` under `clientCredentials`).  
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  You must also change the certificate name of the service to be the same as the fully-qualified domain name of the service computer (in the `findValue` attribute in the `defaultCertificate` element of `serviceCertificate` under `clientCredentials`).  
   
 9. Copy the Client.cer file from the client directory to the service directory on the server.  
   
@@ -67,7 +67,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
 12. On the service computer, launch Service.exe from the command prompt.  
   
-13. On the client computer, launch Client.exe from the command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+13. On the client computer, launch Client.exe from the command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   
@@ -338,5 +338,3 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\MessageSecurity`  
-  
-## See also

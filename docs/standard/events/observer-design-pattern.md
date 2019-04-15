@@ -40,7 +40,7 @@ The observer design pattern enables a subscriber to register with and receive no
 -   An object that contains the data that the provider sends to its observers. The type of this object corresponds to the generic type parameter of the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. Although this object can be the same as the <xref:System.IObservable%601> implementation, most commonly it is a separate type.  
   
 > [!NOTE]
->  In addition to implementing the observer design pattern, you may be interested in exploring libraries that are built using the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. For example, [Reactive Extensions for .NET (Rx)](https://msdn.microsoft.com/library/hh242985.aspx) consist of a set of extension methods and LINQ standard sequence operators to support asynchronous programming.  
+>  In addition to implementing the observer design pattern, you may be interested in exploring libraries that are built using the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. For example, [Reactive Extensions for .NET (Rx)](https://docs.microsoft.com/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)) consist of a set of extension methods and LINQ standard sequence operators to support asynchronous programming.  
   
 ## Implementing the Pattern  
  The following example uses the observer design pattern to implement an airport baggage claim information system. A `BaggageInfo` class provides information about arriving flights and the carousels where baggage from each flight is available for pickup. It is shown in the following example.  

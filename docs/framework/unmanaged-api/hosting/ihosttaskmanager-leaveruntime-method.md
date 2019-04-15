@@ -32,7 +32,7 @@ HRESULT LeaveRuntime (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `target`  
  [in] The address within the mapped portable executable file of the unmanaged function to be called.  
   
@@ -70,6 +70,7 @@ HRESULT LeaveRuntime (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

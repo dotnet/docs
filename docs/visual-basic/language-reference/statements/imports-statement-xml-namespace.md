@@ -42,7 +42,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports a default XML namespace and an XML namespace identified with the prefix `ns`. It then creates XML literals that use both namespaces.  
   
- [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_1.vb)]  
+ [!code-vb[VbXMLSamples#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/Module1.vb#45)]  
   
  This code displays the following text:  
   
@@ -58,7 +58,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports the XML namespace prefix `ns`. It then creates an XML literal that uses the namespace prefix and displays the element's final form.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_2.vb)]  
+ [!code-vb[VbXMLSamples#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples10.vb#22)]  
   
  This code displays the following text:  
   
@@ -76,13 +76,14 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports the XML namespace prefix `ns`. It then uses the prefix of the namespace to create an XML literal and access the first child node with the qualified name `ns:name`.  
   
- [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_3.vb)]  
+ [!code-vb[VbXMLSamples#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples8.vb#19)]  
   
  This code displays the following text:  
   
  `Patrick Hines`  
   
 ## See also
+
 - [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
 - [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
 - [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

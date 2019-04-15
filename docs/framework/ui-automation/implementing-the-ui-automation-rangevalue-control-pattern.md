@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Range Value control pattern"
   - "UI Automation, Range Value control pattern"
 ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation RangeValue Control Pattern
 > [!NOTE]
@@ -52,6 +50,7 @@ Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.RangeValuePattern.SetValue%2A> is called with a value that is either greater than <xref:System.Windows.Automation.RangeValuePattern.MaximumProperty> or less than <xref:System.Windows.Automation.RangeValuePattern.MinimumProperty>.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

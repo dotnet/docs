@@ -15,7 +15,7 @@ The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its param
   
 -   Use the `CopyFile` method to copy a file, specifying a source file and the target directory. The `overwrite` parameter allows you to specify whether or not to overwrite existing files. The following code examples demonstrate how to use `CopyFile`.  
   
-     [!code-vb[VbFileIOMisc#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-a-different-directory_1.vb)]  
+     [!code-vb[VbFileIOMisc#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#24)]  
   
 ## Robust Programming  
  The following conditions may cause an exception to be thrown:  
@@ -49,6 +49,7 @@ The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its param
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>
 - <xref:Microsoft.VisualBasic.FileIO.UICancelOption>

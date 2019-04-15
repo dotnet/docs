@@ -1,11 +1,10 @@
 ---
 title: "How to: Use the Try-Catch Block to Catch Exceptions"
-ms.date: "03/30/2017"
+ms.date: "02/06/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords: 
   - "exceptions, try/catch blocks"
   - "try blocks"
@@ -17,19 +16,23 @@ ms.author: "mairaw"
 ---
 # How to use the try/catch block to catch exceptions
 
-Place the sections of code that might throw exceptions in a `try` block and place code that handles exceptions in a `catch` block. The `catch` block is a series of statements beginning with the keyword `catch`, followed by an exception type and an action to be taken.
+Place any code statements that might raise or throw an exception in a `try` block, and place statements used to handle the exception or exceptions in one or more `catch` blocks below the `try` block. Each `catch` block includes the exception type and can contain additional statements needed to handle that exception type.
 
-The following code example uses a `try`/`catch` block to catch a possible exception. The `Main` method contains a `try` block with a <xref:System.IO.StreamReader> statement that opens a data file called `data.txt` and writes a string from the file. Following the `try` block is a `catch` block that catches any exception that results from the `try` block.
+In the following example, a <xref:System.IO.StreamReader> opens a file called *data.txt* and retrieves a line from the file. Since the code might throw any of three exceptions, it's placed in a `try` block. Three `catch` blocks catch the exceptions and handle them by displaying the results to the console.
 
- [!code-cpp[CatchException#3](../../../samples/snippets/cpp/VS_Snippets_CLR/CatchException/CPP/catchexception2.cpp#3)]
- [!code-csharp[CatchException#3](../../../samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception2.cs#3)]
- [!code-vb[CatchException#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception2.vb#3)]  
+[!code-csharp[CatchException#3](~/samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception2.cs#3)]
+[!code-vb[CatchException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception2.vb#3)]  
 
-The common language runtime catches exceptions that are not caught by a catch block. Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.
+The Common Language Runtime (CLR) catches exceptions not handled by `catch` blocks. If an exception is caught by the CLR, one of the following results may occur depending on your CLR configuration:
 
-> [!NOTE] 
-> Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as <xref:System.OutOfMemoryException>. Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others. For suggestions on when to set code in a Try block, see [Best Practices for Exceptions](best-practices-for-exceptions.md).
+- A **Debug** dialog box appears.
+- The program stops execution and a dialog box with exception information appears.
+- An error prints out to the [standard error output stream](xref:System.Console.Error).
+
+> [!NOTE]
+> Most code can throw an exception, and some exceptions, like <xref:System.OutOfMemoryException>, can be thrown by the CLR itself at any time. While applications aren't required to deal with these exceptions, be aware of the possibility when writing libraries to be used by others. For suggestions on when to set code in a `try` block, see [Best Practices for Exceptions](best-practices-for-exceptions.md).
 
 ## See also
 
-- [Exceptions](index.md)
+[Exceptions](index.md)  
+[Handling I/O errors in .NET](../io/handling-io-errors.md)

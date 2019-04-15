@@ -4,42 +4,42 @@ ms.date: "03/30/2017"
 ms.assetid: e5dbaa7b-005f-4330-848d-58ac4f42f093
 ---
 # Contract First Workflow Service Development
-Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Workflow Foundation (WF) features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract. This topic provides an overview of how the activities and properties in a workflow service map to the attributes of a service contract. For a step-by-step example of creating a contract-first workflow service, see [How to: Create a workflow service that consumes an existing service contract](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md).  
+Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Workflow Foundation (WF) features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract. This topic provides an overview of how the activities and properties in a workflow service map to the attributes of a service contract. For a step-by-step example of creating a contract-first workflow service, see [How to: Create a workflow service that consumes an existing service contract](how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md).  
   
 ## In this topic  
   
--   [Mapping service contract attributes to workflow attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#MappingAttributes)  
+-   [Mapping service contract attributes to workflow attributes](contract-first-workflow-service-development.md#MappingAttributes)  
   
-    -   [Service Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ServiceContract)  
+    -   [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
   
-    -   [Operation Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#OperationContract)  
+    -   [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
   
-    -   [Message Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#MessageContract)  
+    -   [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
   
-    -   [Data Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#DataContract)  
+    -   [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
   
-    -   [Fault Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#FaultContract)  
+    -   [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
   
--   [Additional Support and Implementation Information](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#AdditionalSupport)  
+-   [Additional Support and Implementation Information](contract-first-workflow-service-development.md#AdditionalSupport)  
   
-    -   [Unsupported service contract features](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#UnsupportedFeatures)  
+    -   [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
-    -   [Generation of configured messaging activities](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ActivityGeneration)  
+    -   [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
   
-##  <a name="MappingAttributes"></a> Mapping service contract attributes to workflow attributes  
+## <a name="MappingAttributes"></a> Mapping service contract attributes to workflow attributes  
  The tables in the following sections specify the different WCF attributes and properties and how they are mapped to the messaging activities and properties in a contract-first workflow.  
   
--   [Service Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ServiceContract)  
+-   [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
   
--   [Operation Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#OperationContract)  
+-   [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
   
--   [Message Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#MessageContract)  
+-   [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
   
--   [Data Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#DataContract)  
+-   [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
   
--   [Fault Contract Attributes](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#FaultContract)  
+-   [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
   
-###  <a name="ServiceContract"></a> Service Contract Attributes  
+### <a name="ServiceContract"></a> Service Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -54,7 +54,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
  Insert subsection body here.  
   
-###  <a name="OperationContract"></a> Operation Contract Attributes  
+### <a name="OperationContract"></a> Operation Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -69,7 +69,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |ReplyAction|Yes|Gets or sets the value of the SOAP action for the reply message of the operation.|SendReply.Action should match.|  
 |TypeId|No|When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)|(N/A)|  
   
-###  <a name="MessageContract"></a> Message Contract Attributes  
+### <a name="MessageContract"></a> Message Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -80,7 +80,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |WrapperName|Yes|Gets or sets the name of the wrapper element of the message body.|No validation (Receive.Content and SendReply.Content must match the message contract type).|  
 |WrapperNamespace|No|Gets or sets the namespace of the message body wrapper element.|(N/A)|  
   
-###  <a name="DataContract"></a> Data Contract Attributes  
+### <a name="DataContract"></a> Data Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -89,7 +89,7 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |Namespace|Yes|Gets or sets the namespace for the data contract for the type.|No validation (Receive.Content and SendReply.Content must match the message contract type).|  
 |TypeId|No|When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)|(N/A)|  
   
-###  <a name="FaultContract"></a> Fault Contract Attributes  
+### <a name="FaultContract"></a> Fault Contract Attributes  
   
 |Property Name|Supported|Description|WF Validation|  
 |-------------------|---------------|-----------------|-------------------|  
@@ -101,19 +101,19 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
 |ProtectionLevel|No|Specifies the level of protection the SOAP fault requires from the binding.|(N/A)|  
 |TypeId|No|When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)|(N/A)|  
   
-##  <a name="AdditionalSupport"></a> Additional Support and Implementation Information  
+## <a name="AdditionalSupport"></a> Additional Support and Implementation Information  
   
--   [Unsupported service contract features](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#UnsupportedFeatures)  
+-   [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
--   [Generation of configured messaging activities](../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md#ActivityGeneration)  
+-   [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
   
-###  <a name="UnsupportedFeatures"></a> Unsupported service contract features  
+### <a name="UnsupportedFeatures"></a> Unsupported service contract features  
   
 -   Use of TPL (Task Parallel Library) Tasks in contracts is not supported.  
   
 -   Inheritance in Service Contracts is not supported.  
   
-###  <a name="ActivityGeneration"></a> Generation of configured messaging activities  
+### <a name="ActivityGeneration"></a> Generation of configured messaging activities  
  Two public static methods are added to the <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> activities to support the generation of pre-configured message activities when using contract-first workflow services.  
   
 -   <xref:System.ServiceModel.Activities.Receive.FromOperationDescription%2A?displayProperty=nameWithType>  

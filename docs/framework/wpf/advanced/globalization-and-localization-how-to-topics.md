@@ -12,11 +12,11 @@ ms.assetid: c4b484fb-bc90-4186-a08d-f081e7109cad
 The topics in this section describe how to develop world-ready applications.  
   
 ## In This Section  
- [Localize an Application](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md)  
- [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)  
- [Use a Grid for Automatic Layout](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)  
- [Use a ResourceDictionary to Manage Localizable String Resources](../../../../docs/framework/wpf/advanced/how-to-use-a-resourcedictionary-to-manage-localizable-string-resources.md)  
- [Use Resources in Localizable Applications](../../../../docs/framework/wpf/advanced/how-to-use-resources-in-localizable-applications.md)  
+ [Localize an Application](how-to-localize-an-application.md)  
+ [Use Automatic Layout to Create a Button](how-to-use-automatic-layout-to-create-a-button.md)  
+ [Use a Grid for Automatic Layout](how-to-use-a-grid-for-automatic-layout.md)  
+ [Use a ResourceDictionary to Manage Localizable String Resources](how-to-use-a-resourcedictionary-to-manage-localizable-string-resources.md)  
+ [Use Resources in Localizable Applications](how-to-use-resources-in-localizable-applications.md)  
   
 ## Reference  
  <xref:System.Globalization>  
@@ -25,6 +25,6 @@ The topics in this section describe how to develop world-ready applications.
   
  <xref:System.Resources.NeutralResourcesLanguageAttribute>  
   
- [xml:lang Handling in XAML](../../../../docs/framework/xaml-services/xml-lang-handling-in-xaml.md)  
+ [xml:lang Handling in XAML](../../xaml-services/xml-lang-handling-in-xaml.md)  
   
 ## Related Sections

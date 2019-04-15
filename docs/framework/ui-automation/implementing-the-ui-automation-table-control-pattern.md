@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "control patterns, Table"
   - "TableControl pattern"
 ms.assetid: 880cd85c-aa8c-4fb5-9369-45491d34bb78
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Table Control Pattern
 > [!NOTE]
@@ -55,6 +53,7 @@ Example of a Table with Ambiguous RowOrColumnMajor Property
  This control pattern has no associated exceptions.  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

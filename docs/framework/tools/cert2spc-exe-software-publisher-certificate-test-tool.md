@@ -24,7 +24,7 @@ The Software Publisher Certificate Test tool creates a Software Publisher's Cert
 cert2spc cert1.cer | crl1.crl [... certN.cer | crlN.crl] outputSPCfile.spc  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -50,6 +50,7 @@ cert2spc oneCertificate.cer twoCertificate.cer mySPCFile.spc
 ```  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

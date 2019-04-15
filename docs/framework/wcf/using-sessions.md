@@ -47,9 +47,9 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
  When a WCF service accepts a client session, the following features are enabled by default:  
   
-1.  All calls between a WCF client object are handled by the same service instance.  
+1. All calls between a WCF client object are handled by the same service instance.  
   
-2.  Different session-based bindings provide additional features.  
+2. Different session-based bindings provide additional features.  
   
 ## System-Provided Session Types  
  A session-based binding supports the default association of a service instance with a particular session. However, different session-based bindings support different features in addition to enabling the session-based instancing control previously described.  
@@ -131,7 +131,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
  There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. For more information, see [Sessions, Instancing, and Concurrency](../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
 ### Sharing InstanceContext Objects  
- You can also control which session-based channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself. For a complete example, see [InstanceContextSharing](https://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230).  
+ You can also control which session-based channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself. 
   
 ## Sessions and Streaming  
  When you have a large amount of data to transfer, the streaming transfer mode in WCF is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety. You may get unexpected behavior when streaming calls with a session-based binding. All streaming calls are made through a single channel (the datagram channel) that does not support sessions even if the binding being used is configured to use sessions. If multiple clients make streaming calls to the same service object over a session-based binding, and the service object's concurrency mode is set to single and its instance context mode is set to `PerSession`, all calls must go through the datagram channel and so only one call is processed at a time. One or more clients may then time out. You can work around this issue by either setting the service object's `InstanceContextMode` to `PerCall` or Concurrency to multiple.  
@@ -140,5 +140,6 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 >  MaxConcurrentSessions have no effect in this case because there is only one "session" available.  
   
 ## See also
+
 - <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>
 - <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>

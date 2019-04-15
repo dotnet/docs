@@ -55,7 +55,7 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
 ## Automatic Sizing  
  There are two kinds of automatic sizing in the <xref:System.Windows.Forms.DataGridView> control: column fill mode and content-based automatic sizing.  
   
- Column fill mode causes the visible columns in the control to fill the width of the control's display area. For more information about this mode, see [Column Fill Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
+ Column fill mode causes the visible columns in the control to fill the width of the control's display area. For more information about this mode, see [Column Fill Mode in the Windows Forms DataGridView Control](column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
  You can also configure rows, columns, and headers to automatically adjust their sizes to fit their cell contents. In this case, size adjustment occurs whenever cell contents change.  
   
@@ -122,6 +122,7 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
  The enumerations used by sizing properties and methods have similar values for content-based sizing. With these values, you can limit which cells are used to calculate the preferred sizes. For all sizing enumerations, values with names that refer to displayed cells limit their calculations to cells in displayed rows. Excluding rows is useful to avoid a performance penalty when you are working with a large quantity of rows. You can also restrict calculations to cell values in header or nonheader cells.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=nameWithType>
@@ -148,6 +149,6 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
 - <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode>
 - <xref:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode>
 - <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode>
-- [Resizing Columns and Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)
-- [Column Fill Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md)
-- [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md)
+- [Resizing Columns and Rows in the Windows Forms DataGridView Control](resizing-columns-and-rows-in-the-windows-forms-datagridview-control.md)
+- [Column Fill Mode in the Windows Forms DataGridView Control](column-fill-mode-in-the-windows-forms-datagridview-control.md)
+- [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md)

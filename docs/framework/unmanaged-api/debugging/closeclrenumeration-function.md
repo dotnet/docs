@@ -32,7 +32,7 @@ HRESULT CloseCLREnumeration (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pHandleArray`  
  [in] Pointer to the array of event handles returned from the [EnumerateCLRs function](../../../../docs/framework/unmanaged-api/debugging/enumerateclrs-function.md).  
   

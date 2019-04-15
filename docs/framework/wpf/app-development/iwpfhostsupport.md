@@ -26,6 +26,6 @@ Applications that host [!INCLUDE[TLA#tla_winclient](../../../../includes/tlashar
   
 |Member|Description|  
 |------------|-----------------|  
-|[GetRawInputDevices](../../../../docs/framework/wpf/app-development/getrawinputdevices.md)|Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.|  
-|[FilterInputMessage](../../../../docs/framework/wpf/app-development/filterinputmessage.md)|Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.|  
-|[GetCustomUI](../../../../docs/framework/wpf/app-development/getcustomui.md)|By default, PresentationHost.exe provides its own deployment progress and deployment error user interfaces that are displayed when WPF content is deployed.|
+|[GetRawInputDevices](getrawinputdevices.md)|Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.|  
+|[FilterInputMessage](filterinputmessage.md)|Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.|  
+|[GetCustomUI](getcustomui.md)|By default, PresentationHost.exe provides its own deployment progress and deployment error user interfaces that are displayed when WPF content is deployed.|

@@ -34,7 +34,7 @@ HRESULT ExecuteApplication(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppFullName`  
  [in] The full name of the application, as defined for <xref:System.ApplicationIdentity>.  
   
@@ -82,6 +82,7 @@ HRESULT ExecuteApplication(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.ActivationContext>
 - <xref:System.AppDomainManager>
 - <xref:System.ApplicationIdentity>

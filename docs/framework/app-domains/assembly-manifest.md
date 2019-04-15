@@ -16,8 +16,7 @@ Every assembly, whether static or dynamic, contains a collection of data that de
   
  The following illustration shows the different ways the manifest can be stored.  
   
- ![A single&#45;file assembly](../../../docs/framework/app-domains/media/assemblytypes.gif "assemblytypes")  
-Types of assemblies  
+ ![Diagram that shows the manifest in a single-file assembly and multifile assembly configuration.](./media/assembly-manifest/assembly-types-diagram.gif)  
   
  For an assembly with one associated file, the manifest is incorporated into the PE file to form a single-file assembly. You can create a multifile assembly with a standalone manifest file or with the manifest incorporated into one of the PE files in the assembly.  
   
@@ -49,6 +48,7 @@ Types of assemblies
  You can add or change some information in the assembly manifest by using assembly attributes in your code. You can change version information and informational attributes, including Trademark, Copyright, Product, Company, and Informational Version. For a complete list of assembly attributes, see [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md).  
   
 ## See also
+
 - [Assembly Contents](../../../docs/framework/app-domains/assembly-contents.md)
 - [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)
 - [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

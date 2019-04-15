@@ -26,5 +26,3 @@ This section of the documentation provides information about dynamic programming
   
 ## Related Sections  
  [Development Guide](../../../docs/framework/development-guide.md)  
-  
- [Advanced Reading for the .NET Framework](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)

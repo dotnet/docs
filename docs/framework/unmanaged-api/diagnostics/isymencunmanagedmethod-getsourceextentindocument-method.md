@@ -30,7 +30,7 @@ HRESULT GetSourceExtentInDocument(
     [out] ULONG32* pendLine);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] A pointer to the document.  
   
@@ -47,4 +47,5 @@ HRESULT GetSourceExtentInDocument(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

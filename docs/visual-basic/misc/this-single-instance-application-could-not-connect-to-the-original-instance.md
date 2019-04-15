@@ -16,16 +16,16 @@ This single-instance application could not connect to the original instance. Som
   
 ## To correct this error when developing the application  
   
-1.  Check that the application does not go into an unresponsive state.  
+1. Check that the application does not go into an unresponsive state.  
   
-2.  Check that the application has sufficient permissions to create kernel objects.  
+2. Check that the application has sufficient permissions to create kernel objects.  
   
-3.  Restart the original instance of the application.  
+3. Restart the original instance of the application.  
   
-4.  Restart the computer to clear any process that may be using the resource that is required to connect to the original instance application.  
+4. Restart the computer to clear any process that may be using the resource that is required to connect to the original instance application.  
   
-5.  Note the circumstances under which the error occurred, and telephone Microsoft Product Support Services.  
+5. Note the circumstances under which the error occurred, and telephone Microsoft Product Support Services.  
   
 ## See also
-- [Debugger Basics](/visualstudio/debugger/debugger-basics)
 
+- [Debugger Basics](/visualstudio/debugger/debugger-basics)

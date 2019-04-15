@@ -9,7 +9,7 @@ ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
 ---
 # .NET class libraries
 
-Class libraries are the [shared library](https://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) concept for .NET. They enable you to componentize useful functionality into modules that can be used by multiple applications. They can also be used as a means of loading functionality that is not needed or not known at application startup. Class libraries are described using the [.NET Assembly file format](assembly-format.md).
+Class libraries are the [shared library](https://en.wikipedia.org/wiki/Library_%28computing%29#Shared_libraries) concept for .NET. They enable you to componentize useful functionality into modules that can be used by multiple applications. They can also be used as a means of loading functionality that is not needed or not known at application startup. Class libraries are described using the [.NET Assembly file format](assembly/file-format.md).
 
 There are three types of class libraries that you can use:
 

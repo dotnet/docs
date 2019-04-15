@@ -29,7 +29,7 @@ HRESULT GetConnectionID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwConnectionId`  
  [out] A `CONNID` that represents the connection identifier.  
   

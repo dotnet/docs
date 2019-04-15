@@ -29,7 +29,7 @@ HRESULT IsStringAssemblyReferenceInList (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyName`  
  [in] The name of the assembly for which to search.  
   
@@ -51,6 +51,7 @@ HRESULT IsStringAssemblyReferenceInList (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)

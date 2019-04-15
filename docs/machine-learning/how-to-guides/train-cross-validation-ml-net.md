@@ -1,11 +1,16 @@
 ---
 title: Train a machine learning model using cross-validation - ML.NET
 description: Discover how to train a machine learning model using cross-validation with ML.NET to have a greater level of accuracy for the model's predictions
-ms.date: 02/01/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model using cross-validation with ML.NET so that I can have a greater level of accuracy for my model's predictions.
 ---
 # Train a machine learning model using cross-validation - ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 [Cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) is a useful technique for ML applications. It helps estimate the variance of the model quality from one run to another and also eliminates the need to extract a separate test set for evaluation.
 
@@ -20,7 +25,7 @@ var mlContext = new MLContext();
 
 // Step one: read the data as an IDataView.
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // The four features of the Iris dataset will be grouped together as one Features column.
@@ -36,7 +41,6 @@ var reader = mlContext.Data.CreateTextReader(
     // First line of the file is a header, not a data row.
     hasHeader: true
 );
-
 
 // Read the data.
 var data = reader.Read(dataPath);

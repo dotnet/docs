@@ -29,7 +29,7 @@ HRESULT GetValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTo`  
  [out] A pointer to the value that is represented by this ICorDebugGenericValue object. The value may be a simple type or a reference type (that is, a pointer).  
   

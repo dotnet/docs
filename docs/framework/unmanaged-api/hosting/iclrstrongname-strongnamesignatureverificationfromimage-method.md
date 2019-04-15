@@ -32,7 +32,7 @@ HRESULT StrongNameSignatureVerificationFromImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBase`  
  [in] The relative virtual address of the mapped assembly manifest.  
   
@@ -72,4 +72,5 @@ HRESULT StrongNameSignatureVerificationFromImage (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

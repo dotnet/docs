@@ -78,9 +78,10 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 ## Example  
  The following example shows a `Function` procedure that defines two parameters.  
   
- [!code-vb[VbVbalrStatements#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#2)]  
   
 ## See also
+
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)

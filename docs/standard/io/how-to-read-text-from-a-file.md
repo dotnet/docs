@@ -45,7 +45,7 @@ The following example shows a synchronous read operation within a console app. T
 - <xref:System.IO.File.OpenText%2A?displayProperty=nameWithType>  
 - <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
 - [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [How to: Create a directory listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
+- [How to: Create a directory listing](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))  
 - [Quickstart: Reading and writing files](https://docs.microsoft.com/previous-versions/windows/apps/hh758325%28v=win.10%29)  
 - [How to: Convert between .NET Framework streams and Windows Runtime streams](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)  
 - [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  

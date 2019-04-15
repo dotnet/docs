@@ -31,7 +31,7 @@ HRESULT GetScope2(
 ) PURE;   
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of target assembly.  
   
@@ -51,6 +51,7 @@ HRESULT GetScope2(
  Requires alink.h.  
   
 ## See also
+
 - [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

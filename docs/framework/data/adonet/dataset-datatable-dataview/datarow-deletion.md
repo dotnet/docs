@@ -39,6 +39,7 @@ workRow.Delete();
 >  If the **RowState** of a **DataRow** is **Added**, meaning it has just been added to the table, and it is then marked as **Deleted**, it is removed from the table.  
   
 ## See also
+
 - <xref:System.Data.DataRow>
 - <xref:System.Data.DataRowCollection>
 - <xref:System.Data.DataTable>

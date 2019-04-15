@@ -29,7 +29,7 @@ HRESULT CanSetIP (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nOffset`  
  [in] The desired setting for the instruction pointer.  
   

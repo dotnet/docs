@@ -29,8 +29,9 @@ Erase arraylist
 ## Example  
  The following example uses the `Erase` statement to clear two arrays and free their memory (1000 and 100 storage elements, respectively). The `ReDim` statement then assigns a new array instance to the three-dimensional array.  
   
- [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/erase-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#19)]  
   
 ## See also
+
 - [Nothing](../../../visual-basic/language-reference/nothing.md)
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)

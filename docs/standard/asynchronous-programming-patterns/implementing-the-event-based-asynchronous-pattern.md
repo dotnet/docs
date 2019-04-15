@@ -69,7 +69,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
  For each separate _MethodName_**Async** method signature:  
   
-1.  Define the following event in the same class as the method:  
+1. Define the following event in the same class as the method:  
   
     ```vb  
     Public Event MethodNameCompleted As MethodNameCompletedEventHandler  
@@ -79,7 +79,7 @@ If you are writing a class with some operations that may incur noticeable delays
     public event MethodNameCompletedEventHandler MethodNameCompleted;  
     ```  
   
-2.  Define the following delegate and <xref:System.ComponentModel.AsyncCompletedEventArgs>. These will likely be defined outside of the class itself, but in the same namespace.  
+2. Define the following delegate and <xref:System.ComponentModel.AsyncCompletedEventArgs>. These will likely be defined outside of the class itself, but in the same namespace.  
   
     ```vb  
     Public Delegate Sub MethodNameCompletedEventHandler( _  
@@ -125,7 +125,7 @@ If you are writing a class with some operations that may incur noticeable delays
 |One Async Operation in entire class|`Sub MethodNameAsyncCancel(ByVal userState As Object)`|`Sub MethodNameAsyncCancel()`|  
 |Multiple Async Operations in class|`Sub CancelAsync(ByVal userState As Object)`|`Sub CancelAsync()`|  
   
-### C#  
+### C\#
   
 ||Multiple Simultaneous Operations Supported|Only One Operation at a Time|  
 |------|------------------------------------------------|----------------------------------|  

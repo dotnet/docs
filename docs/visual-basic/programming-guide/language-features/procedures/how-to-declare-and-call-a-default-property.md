@@ -20,49 +20,49 @@ A *default property* is a class or structure property that your code can access 
   
 ### To declare a default property  
   
-1.  Declare the property in the normal way. Do not specify the `Shared` or `Private` keyword.  
+1. Declare the property in the normal way. Do not specify the `Shared` or `Private` keyword.  
   
-2.  Include the `Default` keyword in the property declaration.  
+2. Include the `Default` keyword in the property declaration.  
   
-3.  Specify at least one parameter for the property. You cannot define a default property that does not take at least one argument.  
+3. Specify at least one parameter for the property. You cannot define a default property that does not take at least one argument.  
   
-     [!code-vb[VbVbcnProcedures#17](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_1.vb)]  
+     [!code-vb[VbVbcnProcedures#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#17)]  
   
 ### To call a default property  
   
-1.  Declare a variable of the containing class or structure type.  
+1. Declare a variable of the containing class or structure type.  
   
-     [!code-vb[VbVbcnProcedures#16](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_2.vb)]  
+     [!code-vb[VbVbcnProcedures#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#16)]  
   
-2.  Use the variable name alone in an expression where you would normally include the property name.  
+2. Use the variable name alone in an expression where you would normally include the property name.  
   
-     [!code-vb[VbVbcnProcedures#21](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_3.vb)]  
+     [!code-vb[VbVbcnProcedures#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#21)]  
   
-3.  Follow the variable name with an argument list in parentheses. A default property must take at least one argument.  
+3. Follow the variable name with an argument list in parentheses. A default property must take at least one argument.  
   
-     [!code-vb[VbVbcnProcedures#20](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_4.vb)]  
+     [!code-vb[VbVbcnProcedures#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#20)]  
   
-4.  To retrieve the default property value, use the variable name, with an argument list, in an expression or following the equal (`=`) sign in an assignment statement.  
+4. To retrieve the default property value, use the variable name, with an argument list, in an expression or following the equal (`=`) sign in an assignment statement.  
   
-     [!code-vb[VbVbcnProcedures#15](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_5.vb)]  
+     [!code-vb[VbVbcnProcedures#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#15)]  
   
-5.  To set the default property value, use the variable name, with an argument list, on the left side of an assignment statement.  
+5. To set the default property value, use the variable name, with an argument list, on the left side of an assignment statement.  
   
-     [!code-vb[VbVbcnProcedures#14](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_6.vb)]  
+     [!code-vb[VbVbcnProcedures#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#14)]  
   
-6.  You can always specify the default property name together with the variable name, just as you would do to access any other property.  
+6. You can always specify the default property name together with the variable name, just as you would do to access any other property.  
   
-     [!code-vb[VbVbcnProcedures#19](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_7.vb)]  
+     [!code-vb[VbVbcnProcedures#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#19)]  
   
 ## Example  
  The following example declares a default property on a class.  
   
- [!code-vb[VbVbcnProcedures#12](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_8.vb)]  
+ [!code-vb[VbVbcnProcedures#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#12)]  
   
 ## Example  
  The following example demonstrates how to call the default property `myProperty` on class `class1`. The three assignment statements store values in `myProperty`, and the <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> call reads the values.  
   
- [!code-vb[VbVbcnProcedures#13](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_9.vb)]  
+ [!code-vb[VbVbcnProcedures#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#13)]  
   
  The most common use of a default property is the <xref:Microsoft.VisualBasic.Collection.Item%2A> property on various collection classes.  
   
@@ -76,6 +76,7 @@ A *default property* is a class or structure property that your code can access 
  Because of these disadvantages, you should consider not defining default properties. For code readability, you should also consider always referring to all properties explicitly, even default properties.  
   
 ## See also
+
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)

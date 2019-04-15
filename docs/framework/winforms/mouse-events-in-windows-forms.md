@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
 ---
 # Mouse Events in Windows Forms
-When you handle mouse input, you usually want to know the location of the mouse pointer and the state of the mouse buttons. This topic provides details on how to get this information from mouse events, and explains the order in which mouse click events are raised in Windows Forms controls. For a list and description of all of the mouse events, see [How Mouse Input Works in Windows Forms](../../../docs/framework/winforms/how-mouse-input-works-in-windows-forms.md).  Also see [Event Handlers Overview (Windows Forms)](https://msdn.microsoft.com/library/be6fx1bb\(v=vs.110\)), [Events Overview (Windows Forms)](https://msdn.microsoft.com/library/1h12f09z\(v=vs.110\))  
+When you handle mouse input, you usually want to know the location of the mouse pointer and the state of the mouse buttons. This topic provides details on how to get this information from mouse events, and explains the order in which mouse click events are raised in Windows Forms controls. For a list and description of all of the mouse events, see [How Mouse Input Works in Windows Forms](how-mouse-input-works-in-windows-forms.md).  Also see [Event Handlers Overview (Windows Forms)](event-handlers-overview-windows-forms.md) and [Events Overview (Windows Forms)](events-overview-windows-forms.md).  
   
 ## Mouse Information  
  A <xref:System.Windows.Forms.MouseEventArgs> is sent to the handlers of mouse events related to clicking a mouse button and tracking mouse movements. <xref:System.Windows.Forms.MouseEventArgs> provides information about the current state of the mouse, including the location of the mouse pointer in client coordinates, which mouse buttons are pressed, and whether the mouse wheel has scrolled. Several mouse events, such as those that simply notify when the mouse pointer has entered or left the bounds of a control, send an <xref:System.EventArgs> to the event handler with no further information.  
@@ -30,33 +30,33 @@ When you handle mouse input, you usually want to know the location of the mouse 
 ## Standard Click Event Behavior  
  If you want to handle mouse click events in the proper order, you need to know the order in which click events are raised in Windows Forms controls. All Windows Forms controls raise click events in the same order when a mouse button is pressed and released (regardless of which mouse button), except where noted in the following list for individual controls. The following list shows the order of events raised for a single mouse-button click:  
   
-1.  <xref:System.Windows.Forms.Control.MouseDown> event.  
+1. <xref:System.Windows.Forms.Control.MouseDown> event.  
   
-2.  <xref:System.Windows.Forms.Control.Click> event.  
+2. <xref:System.Windows.Forms.Control.Click> event.  
   
-3.  <xref:System.Windows.Forms.Control.MouseClick> event.  
+3. <xref:System.Windows.Forms.Control.MouseClick> event.  
   
-4.  <xref:System.Windows.Forms.Control.MouseUp> event.  
+4. <xref:System.Windows.Forms.Control.MouseUp> event.  
   
  Following is the order of events raised for a double mouse-button click:  
   
-1.  <xref:System.Windows.Forms.Control.MouseDown> event.  
+1. <xref:System.Windows.Forms.Control.MouseDown> event.  
   
-2.  <xref:System.Windows.Forms.Control.Click> event.  
+2. <xref:System.Windows.Forms.Control.Click> event.  
   
-3.  <xref:System.Windows.Forms.Control.MouseClick> event.  
+3. <xref:System.Windows.Forms.Control.MouseClick> event.  
   
-4.  <xref:System.Windows.Forms.Control.MouseUp> event.  
+4. <xref:System.Windows.Forms.Control.MouseUp> event.  
   
-5.  <xref:System.Windows.Forms.Control.MouseDown> event.  
+5. <xref:System.Windows.Forms.Control.MouseDown> event.  
   
-6.  <xref:System.Windows.Forms.Control.DoubleClick> event. (This can vary, depending on whether the control in question has the <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick> style bit set to `true`. For more information about how to set a <xref:System.Windows.Forms.ControlStyles> bit, see the <xref:System.Windows.Forms.Control.SetStyle%2A> method.)  
+6. <xref:System.Windows.Forms.Control.DoubleClick> event. (This can vary, depending on whether the control in question has the <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick> style bit set to `true`. For more information about how to set a <xref:System.Windows.Forms.ControlStyles> bit, see the <xref:System.Windows.Forms.Control.SetStyle%2A> method.)  
   
-7.  <xref:System.Windows.Forms.Control.MouseDoubleClick> event.  
+7. <xref:System.Windows.Forms.Control.MouseDoubleClick> event.  
   
-8.  <xref:System.Windows.Forms.Control.MouseUp> event.  
+8. <xref:System.Windows.Forms.Control.MouseUp> event.  
   
- For a code example that demonstrates the order of the mouse click events, see [How to: Handle User Input Events in Windows Forms Controls](../../../docs/framework/winforms/how-to-handle-user-input-events-in-windows-forms-controls.md).  
+ For a code example that demonstrates the order of the mouse click events, see [How to: Handle User Input Events in Windows Forms Controls](how-to-handle-user-input-events-in-windows-forms-controls.md).  
   
 ### Individual Controls  
  The following controls do not conform to the standard mouse click event behavior:  
@@ -116,24 +116,25 @@ When you handle mouse input, you usually want to know the location of the mouse 
 ### Painting Behavior of Toggle Controls  
  Toggle controls, such as the controls deriving from the <xref:System.Windows.Forms.ButtonBase> class, have the following distinctive painting behavior in combination with mouse click events:  
   
-1.  The user presses the mouse button.  
+1. The user presses the mouse button.  
   
-2.  The control paints in the pressed state.  
+2. The control paints in the pressed state.  
   
-3.  The <xref:System.Windows.Forms.Control.MouseDown> event is raised.  
+3. The <xref:System.Windows.Forms.Control.MouseDown> event is raised.  
   
-4.  The user releases the mouse button.  
+4. The user releases the mouse button.  
   
-5.  The control paints in the raised state.  
+5. The control paints in the raised state.  
   
-6.  The <xref:System.Windows.Forms.Control.Click> event is raised.  
+6. The <xref:System.Windows.Forms.Control.Click> event is raised.  
   
-7.  The <xref:System.Windows.Forms.Control.MouseClick> event is raised.  
+7. The <xref:System.Windows.Forms.Control.MouseClick> event is raised.  
   
-8.  The <xref:System.Windows.Forms.Control.MouseUp> event is raised.  
+8. The <xref:System.Windows.Forms.Control.MouseUp> event is raised.  
   
     > [!NOTE]
     >  If the user moves the pointer out of the toggle control while the mouse button is down (such as moving the mouse off the <xref:System.Windows.Forms.Button> control while it is pressed), the toggle control will paint in the raised state and only the <xref:System.Windows.Forms.Control.MouseUp> event occurs. The <xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.MouseClick> events will not occur in this situation.  
   
 ## See also
-- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
+
+- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)

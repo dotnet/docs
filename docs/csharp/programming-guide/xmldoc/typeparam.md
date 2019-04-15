@@ -16,7 +16,7 @@ ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
 <typeparam name="name">description</typeparam>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of the type parameter. Enclose the name in double quotation marks (" ").  
   
@@ -33,7 +33,7 @@ ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#13](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/typeparam_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#13)]  
   
 ## See also
 

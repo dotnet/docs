@@ -15,9 +15,10 @@ This example shows how to translate (move) an element by using a <xref:System.Wi
  The following example uses a <xref:System.Windows.Media.TranslateTransform> to move an element 50 pixels to the right and 50 pixels down.  
   
 ## Example  
- [!code-xaml[transformsSample#53](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/TranslateTransformExample.xaml#53)]  
+ [!code-xaml[transformsSample#53](~/samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/TranslateTransformExample.xaml#53)]  
   
  For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 ## See also
-- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+
+- [Transforms Overview](transforms-overview.md)

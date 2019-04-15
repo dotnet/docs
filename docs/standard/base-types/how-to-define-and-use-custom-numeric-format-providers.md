@@ -31,9 +31,9 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
   
 ### To define a custom format provider  
   
-1.  Define a class that implements the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces.  
+1. Define a class that implements the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces.  
   
-2.  Implement the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. <xref:System.IFormatProvider.GetFormat%2A> is a callback method that the formatting method (such as the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method) invokes to retrieve the object that is actually responsible for performing custom formatting. A typical implementation of <xref:System.IFormatProvider.GetFormat%2A> does the following:  
+2. Implement the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. <xref:System.IFormatProvider.GetFormat%2A> is a callback method that the formatting method (such as the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method) invokes to retrieve the object that is actually responsible for performing custom formatting. A typical implementation of <xref:System.IFormatProvider.GetFormat%2A> does the following:  
   
     1.  Determines whether the <xref:System.Type> object passed as a method parameter represents an <xref:System.ICustomFormatter> interface.  
   
@@ -41,7 +41,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
   
     3.  If the parameter does not represent the <xref:System.ICustomFormatter> interface, <xref:System.IFormatProvider.GetFormat%2A> returns `null`.  
   
-3.  Implement the <xref:System.ICustomFormatter.Format%2A> method. This method is called by the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method and is responsible for returning the string representation of a number. Implementing the method typically involves the following:  
+3. Implement the <xref:System.ICustomFormatter.Format%2A> method. This method is called by the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method and is responsible for returning the string representation of a number. Implementing the method typically involves the following:  
   
     1.  Optionally, make sure that the method is legitimately intended to provide formatting services by examining the `provider` parameter. For formatting objects that implement both <xref:System.IFormatProvider> and <xref:System.ICustomFormatter>, this involves testing the `provider` parameter for equality with the current formatting object.  
   
@@ -53,9 +53,9 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
   
 ### To use a custom numeric formatting object  
   
-1.  Create a new instance of the custom formatting class.  
+1. Create a new instance of the custom formatting class.  
   
-2.  Call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> formatting method, passing it the custom formatting object, the formatting specifier (or <xref:System.String.Empty?displayProperty=nameWithType>, if one is not used), and the numeric value to be formatted.  
+2. Call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> formatting method, passing it the custom formatting object, the formatting specifier (or <xref:System.String.Empty?displayProperty=nameWithType>, if one is not used), and the numeric value to be formatted.  
   
 ## Example  
  The following example defines a custom numeric format provider named `TelephoneFormatter` that converts a number that represents a U.S. telephone number to its NANP or E.123 format. The method handles two format specifiers, "N" (which outputs the NANP format) and "I" (which outputs the international E.123 format).  

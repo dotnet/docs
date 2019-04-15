@@ -21,16 +21,17 @@ This example shows how bubbling events work and how to write a handler that can 
   
  Note that on the parent <xref:System.Windows.Controls.StackPanel> element, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event name specified as the attribute is partially qualified by naming the <xref:System.Windows.Controls.Button> class. The <xref:System.Windows.Controls.Button> class is a <xref:System.Windows.Controls.Primitives.ButtonBase> derived class that has the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event in its members listing. This partial qualification technique for attaching an event handler is necessary if the event that is being handled does not exist in the members listing of the element where the routed event handler is attached.  
   
- [!code-xaml[RoutedEventHandle#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml#xaml)]  
+ [!code-xaml[RoutedEventHandle#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml#xaml)]  
   
  The following example handles the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  The example reports which element handles the event and which element raises the event. The event handler is executed when the user clicks either button.  
   
- [!code-csharp[RoutedEventHandle#Handler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml.cs#handler)]
- [!code-vb[RoutedEventHandle#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventHandle/VisualBasic/MainWindow.xaml.vb#handler)]  
+ [!code-csharp[RoutedEventHandle#Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml.cs#handler)]
+ [!code-vb[RoutedEventHandle#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventHandle/VisualBasic/MainWindow.xaml.vb#handler)]  
   
 ## See also
+
 - <xref:System.Windows.RoutedEvent>
-- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)
-- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)
+- [Input Overview](input-overview.md)
+- [Routed Events Overview](routed-events-overview.md)
+- [How-to Topics](events-how-to-topics.md)
+- [XAML Syntax In Detail](xaml-syntax-in-detail.md)

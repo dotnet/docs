@@ -26,7 +26,7 @@ Notifies the profiler that the currently executing function is about to perform 
 void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionOrRemappedID`  
  [in] The identifier of the currently executing function that is about to make a tail call.  
   
@@ -55,6 +55,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)
 - [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)
 - [FunctionEnter3WithInfo](../../../../docs/framework/unmanaged-api/profiling/functionenter3withinfo-function.md)

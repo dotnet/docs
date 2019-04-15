@@ -8,8 +8,7 @@ ms.assetid: 7e2392e0-75dc-463d-a716-908772782431
 ---
 # ClearType Overview
 This topic provides an overview of the [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] technology found in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
-  
-  
+
 <a name="overview"></a>   
 ## Technology Overview  
  [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] is a software technology developed by [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors.  [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. Before [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)], the smallest level of detail that a computer could display was a single pixel, but with [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] running on an LCD monitor, we can now display features of text as small as a fraction of a pixel in width. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations.  
@@ -22,12 +21,12 @@ This topic provides an overview of the [!INCLUDE[TLA#tla_ct](../../../../include
   
  The following two examples show how glyphs may begin on any sub-pixel boundary when sub-pixel positioning is used. The example on the left is rendered using the earlier version of the [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] renderer, which did not employ sub-pixel positioning. The example on the right is rendered using the new version of the [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] renderer, using sub-pixel positioning. Note how each **e** and **l** in the right-hand image is rendered slightly differently because each starts on a different sub-pixel. When viewing the text at its normal size on the screen, this difference is not noticeable because of the high contrast of the glyph image. This is only possible because of sophisticated color filtering that is incorporated in [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)].  
   
- ![Text displayed with two versions of ClearType](../../../../docs/framework/wpf/advanced/media/wcpsdk-mmgraphics-text-cleartype-overview-01.png "wcpsdk_mmgraphics_text_cleartype_overview_01")  
+ ![Text displayed with two versions of ClearType](./media/wcpsdk-mmgraphics-text-cleartype-overview-01.png "wcpsdk_mmgraphics_text_cleartype_overview_01")  
 Text displayed with earlier and later versions of ClearType  
   
  The following two examples compare output from the earlier [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] renderer with the new version of the [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] renderer. The subpixel positioning, shown on the right, greatly improves the spacing of type on screen, especially at small sizes where the difference between a sub-pixel and a whole pixel represents a significant proportion of glyph width. Note that spacing between the letters is more even in the second image. The cumulative benefit of sub-pixel positioning to the overall appearance of a screen of text is greatly increased, and represents a significant evolution in [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] technology.  
   
- ![Text displayed with earlier version of ClearType](../../../../docs/framework/wpf/advanced/media/wcpsdk-mmgraphics-text-cleartype-overview-02.png "wcpsdk_mmgraphics_text_cleartype_overview_02")  
+ ![Text displayed with earlier version of ClearType](./media/wcpsdk-mmgraphics-text-cleartype-overview-02.png "wcpsdk_mmgraphics_text_cleartype_overview_02")  
 Text with earlier and later versions of ClearType  
   
 <a name="y-direction_antialiasing"></a>   
@@ -36,14 +35,14 @@ Text with earlier and later versions of ClearType
   
  The following example shows the effect of having no y-direction antialiasing. In this case, the jagged edges on the top and bottom of the letter are apparent.  
   
- ![Text with jagged edges on shallow curves](../../../../docs/framework/wpf/advanced/media/wcpsdk-mmgraphics-text-cleartype-overview-03.png "wcpsdk_mmgraphics_text_cleartype_overview_03")  
+ ![Text with jagged edges on shallow curves](./media/wcpsdk-mmgraphics-text-cleartype-overview-03.png "wcpsdk_mmgraphics_text_cleartype_overview_03")  
 Text with jagged edges on shallow curves  
   
  [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides antialiasing on the y-direction level to smooth out any jagged edges. This is particularly important for improving the readability of East Asian languages where ideographs have an almost equal amount of horizontal and vertical shallow curves.  
   
  The following example shows the effect of y-direction antialiasing. In this case, the top and bottom of the letter show a smooth curve.  
   
- ![Text with ClearType y&#45;direction anti&#45;aliasing](../../../../docs/framework/wpf/advanced/media/wcpsdk-mmgraphics-text-cleartype-overview-04.png "wcpsdk_mmgraphics_text_cleartype_overview_04")  
+ ![Text with ClearType y&#45;direction anti&#45;aliasing](./media/wcpsdk-mmgraphics-text-cleartype-overview-04.png "wcpsdk_mmgraphics_text_cleartype_overview_04")  
 Text with ClearType y-direction antialiasing  
   
 <a name="hardware_acceleration"></a>   
@@ -61,4 +60,5 @@ Text with ClearType y-direction antialiasing
  [ClearType Tuner PowerToy](https://www.microsoft.com/typography/ClearTypePowerToy.mspx)  
   
 ## See also
-- [ClearType Registry Settings](../../../../docs/framework/wpf/advanced/cleartype-registry-settings.md)
+
+- [ClearType Registry Settings](cleartype-registry-settings.md)

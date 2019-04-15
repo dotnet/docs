@@ -35,7 +35,7 @@ For [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app
 mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>  
 ```  
   
-#### Parameters  
+## Parameters  
  All arguments to Mpgo.exe are case-insensitive. Commands are prefixed with a dash.  
   
 > [!NOTE]
@@ -73,23 +73,23 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
 ## To Use Mpgo.exe  
   
-1.  Use a computer that has the Visual Studio Ultimate 2012 and your application installed.  
+1. Use a computer that has the Visual Studio Ultimate 2012 and your application installed.  
   
-2.  Run Mpgo.exe as an administrator with the necessary parameters.  See the next section for sample commands.  
+2. Run Mpgo.exe as an administrator with the necessary parameters.  See the next section for sample commands.  
   
      The optimized intermediate language (IL) assemblies are created in the folder specified by the `–OutDir` parameter (in the examples, this is the `C:\Optimized` folder).  
   
-3.  Replace the IL assemblies you used for Ngen.exe  with the new IL assemblies that contain the profile information from the directory specified by `–OutDir`.  
+3. Replace the IL assemblies you used for Ngen.exe  with the new IL assemblies that contain the profile information from the directory specified by `–OutDir`.  
   
-4.  The application setup (using the images provided by Mpgo.exe) will install optimized native images.  
+4. The application setup (using the images provided by Mpgo.exe) will install optimized native images.  
   
 ## Suggested Workflow  
   
-1.  Create a set of optimized IL assemblies by using Mpgo.exe with the `–Scenario` parameter.  
+1. Create a set of optimized IL assemblies by using Mpgo.exe with the `–Scenario` parameter.  
   
-2.  Check the optimized IL assemblies into source control.  
+2. Check the optimized IL assemblies into source control.  
   
-3.  In the build process, call Mpgo.exe with the `–Import` parameter as a post-build step to generate optimized IL images to pass to Ngen.exe.  
+3. In the build process, call Mpgo.exe with the `–Import` parameter as a post-build step to generate optimized IL images to pass to Ngen.exe.  
   
  This process ensures that all assemblies have optimization data. If you check in updated optimized assemblies (steps 1 and 2) more frequently, the performance numbers will be more consistent throughout product development.  
   
@@ -121,6 +121,7 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 ```  
   
 ## See also
+
 - [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
 - [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943)

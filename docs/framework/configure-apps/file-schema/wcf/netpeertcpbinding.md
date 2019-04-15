@@ -95,6 +95,7 @@ Defines a binding for peer channel specific TCP messaging.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.NetPeerTcpBinding>
 - <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>
 - [Bindings](../../../../../docs/framework/wcf/bindings.md)

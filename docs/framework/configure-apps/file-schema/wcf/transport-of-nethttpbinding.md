@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<transport> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
@@ -112,6 +112,7 @@ Defines properties that control authentication parameters for the HTTP transport
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - <xref:System.ServiceModel.HttpTransportSecurity>

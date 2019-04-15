@@ -16,7 +16,7 @@ HRESULT EnableVirtualModuleSplitting(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `enableSplitting`  
  `true` to enable virtual module splitting; `false` to disable it.  
   
@@ -107,5 +107,6 @@ HRESULT EnableVirtualModuleSplitting(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

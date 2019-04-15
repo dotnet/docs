@@ -35,7 +35,7 @@ BOOLEAN StrongNameGetPublicKey (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szKeyContainer`  
  [in] The name of the key container that contains the public/private key pair. If `pbKeyBlob` is null, `szKeyContainer` must specify a valid container within the CSP. In this case, `StrongNameGetPublicKey` extracts the public key from the key pair stored in the container.  
   
@@ -73,6 +73,7 @@ BOOLEAN StrongNameGetPublicKey (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [StrongNameGetPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md)
 - [StrongNameTokenFromPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

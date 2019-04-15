@@ -19,9 +19,10 @@ There are several circumstances when it is important that one event handler not 
   
  When code raises the `Click` event, the `RaiseEvent` accessor invokes all the event handler delegates asynchronously using the <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A> method. That method invokes each handler on a worker thread and returns immediately, so handlers cannot block one another.  
   
- [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-avoid-blocking_1.vb)]  
+ [!code-vb[VbVbalrEvents#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#27)]  
   
 ## See also
+
 - <xref:System.Collections.ArrayList>
 - <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>
 - [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

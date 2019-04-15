@@ -1,11 +1,16 @@
 ---
 title: Determine the feature importance of models with Permutation Feature Importance in ML.NET
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 02/01/2019
+ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use Permutation Feature Importance in ML.NET to determine the feature importance of my models so that I can understand how my machine learning models make decisions and which features contribute to their performance.
 ---
 # Determine the feature importance of models with Permutation Feature Importance in ML.NET
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 When creating machine learning models, it is often not enough to simply make predictions. Often, machine learning developers, decision makers, and those affected by the models need to understand how machine learning models make decisions and which features contribute to their performance. `Permutation Feature Importance` (PFI) is a model explainability tool that is used internally at Microsoft to help machine learning developers better understand the feature importance of models.
 

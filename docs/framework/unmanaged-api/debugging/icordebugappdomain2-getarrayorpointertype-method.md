@@ -32,7 +32,7 @@ HRESULT GetArrayOrPointerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the underlying native type (an array, pointer, or reference) to be created.  
   

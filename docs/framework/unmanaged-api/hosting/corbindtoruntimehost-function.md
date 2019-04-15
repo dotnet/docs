@@ -37,7 +37,7 @@ HRESULT CorBindToRuntimeHost (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszVersion`  
  [in] A string that describes the version of the CLR you want to load.  
   
@@ -83,6 +83,7 @@ HRESULT CorBindToRuntimeHost (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)
 - [CorBindToRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)
 - [CorBindToRuntimeByCfg Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)

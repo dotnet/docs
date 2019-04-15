@@ -1,6 +1,7 @@
 ---
-title: "Fundamentals of Garbage Collection"
-ms.date: "03/30/2017"
+title: "Fundamentals of garbage collection"
+description: "Learn how the garbage collector works and how it can be configured for optimum performance."
+ms.date: "03/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "garbage collection, generations"
@@ -13,7 +14,7 @@ ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Fundamentals of Garbage Collection
+# Fundamentals of garbage collection
 <a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:  
   
 -   Enables you to develop your application without having to free memory.  
@@ -24,28 +25,8 @@ ms.author: "ronpet"
   
 -   Provides memory safety by making sure that an object cannot use the content of another object.  
   
- This topic describes the core concepts of garbage collection. It contains the following sections:  
-  
--   [Fundamentals of memory](#fundamentals_of_memory)  
-  
--   [Conditions for a garbage collection](#conditions_for_a_garbage_collection)  
-  
--   [The managed heap](#the_managed_heap)  
-  
--   [Generations](#generations)  
-  
--   [What happens during a garbage collection](#what_happens_during_a_garbage_collection)  
-  
--   [Manipulating unmanaged resources](#manipulating_unmanaged_resources)  
-  
--   [Workstation and server garbage collection](#workstation_and_server_garbage_collection)  
-  
--   [Concurrent garbage collection](#concurrent_garbage_collection)  
-  
--   [Background workstation garbage collection](#background_garbage_collection)  
-  
--   [Background server garbage collection](#background_server_garbage_collection)  
-  
+ This topic describes the core concepts of garbage collection. 
+ 
 <a name="fundamentals_of_memory"></a>   
 ## Fundamentals of memory  
  The following list summarizes important CLR memory concepts.  
@@ -103,9 +84,9 @@ ms.author: "ronpet"
   
  The intrusiveness (frequency and duration) of garbage collections is the result of the volume of allocations and the amount of survived memory on the managed heap.  
   
- The heap can be considered as the accumulation of two heaps: the large object heap and the small object heap.  
+ The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap.  
   
- The large object heap contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.  
+ The [large object heap](large-object-heap.md) contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.  
   
  [Back to top](#top)  
   
@@ -274,21 +255,19 @@ Concurrent garbage collection
   
  Background garbage collection removes allocation restrictions imposed by concurrent garbage collection, because ephemeral garbage collections can occur during background garbage collection. This means that background garbage collection can remove dead objects in ephemeral generations and can also expand the heap if needed during a generation 1 garbage collection.  
   
- The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation.  
+The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation:
   
- ![Background workstation garbage collection](../../../docs/standard/garbage-collection/media/backgroundworkstn.png "BackgroundWorkstn")  
-Background workstation garbage collection  
-  
+ ![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png)
+   
  [Back to top](#top)  
   
 <a name="background_server_garbage_collection"></a>   
 ## Background server garbage collection  
  Starting with the .NET Framework 4.5, background server garbage collection is the default mode for server garbage collection. To choose this mode, set the `enabled` attribute of the [\<gcServer> element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) to `true` in the runtime configuration schema. This mode functions similarly to background workstation garbage collection, described in the previous section, but there are a few differences. Background workstation garbage collection uses one dedicated background garbage collection thread, whereas background server garbage collection uses multiple threads, typically a dedicated thread for each logical processor. Unlike the workstation background garbage collection thread, these threads do not time out.  
   
- The following illustration shows background garbage collection performed on a separate dedicated thread on a server.  
+ The following illustration shows background garbage collection performed on a separate dedicated thread on a server:  
   
- ![Background server garbage collection](../../../docs/standard/garbage-collection/media/backgroundserver.png "BackgroundServer")  
-Background server garbage collection  
+ ![Diagram that shows background server garbage collection.](./media/fundamentals/background-server-garbage-collection.png)  
   
 ## See also
 

@@ -27,7 +27,7 @@ Enables and disables the transmission of log messages to the debugger.
 HRESULT EnableLogMessages([in]BOOL fOnOff);  
 ```  
   
-#### Parameters  
+## Parameters  
  `fOnOff`  
  [in] `true` enables the transmission of log messages; `false` disables the transmission.  
   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<transport> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6
@@ -74,6 +74,7 @@ Defines the type of message-level security requirements for an endpoint configur
  Use Transport security for integrity and confidentiality of the SOAP message and for mutual authentication. If this security mode is selected on a binding, the channel stack is configured using a secure transport and the SOAP messages are secured using transport security such as Windows (Negotiate) or SSL over TCP.  
   
 ## See also
+
 - <xref:System.ServiceModel.TcpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Transport%2A>
 - <xref:System.ServiceModel.NetTcpSecurity.Transport%2A>

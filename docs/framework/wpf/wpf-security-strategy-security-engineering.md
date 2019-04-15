@@ -41,11 +41,11 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
  At a high level, threat modeling involves the following key steps by using a grocery store as an example:  
   
-1.  **Identifying Assets**. A grocery store's assets might include employees, a safe, cash registers, and inventory.  
+1. **Identifying Assets**. A grocery store's assets might include employees, a safe, cash registers, and inventory.  
   
-2.  **Enumerating Entry Points**. A grocery store's entry points might include the front and back doors, windows, the loading dock, and air conditioning units.  
+2. **Enumerating Entry Points**. A grocery store's entry points might include the front and back doors, windows, the loading dock, and air conditioning units.  
   
-3.  **Investigating Attacks against Assets using Entry Points**. One possible attack could target a grocery store's *safe* asset through the *air conditioning* entry point; the air conditioning unit could be unscrewed to allow the safe to be pulled up through it and out of the store.  
+3. **Investigating Attacks against Assets using Entry Points**. One possible attack could target a grocery store's *safe* asset through the *air conditioning* entry point; the air conditioning unit could be unscrewed to allow the safe to be pulled up through it and out of the store.  
   
  Threat modeling is applied throughout [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and includes the following:  
   
@@ -81,12 +81,12 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
 <a name="critical_code"></a>   
 ### Critical Code Management  
- For [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)], [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] sandbox code.  
+ For [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)], [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] sandbox code.  
   
 ## See also
-- [Security](../../../docs/framework/wpf/security-wpf.md)
-- [WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)
-- [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)
+
+- [Security](security-wpf.md)
+- [WPF Partial Trust Security](wpf-partial-trust-security.md)
+- [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)
 - [Trustworthy Computing](https://www.microsoft.com/mscorp/twc/default.mspx)
-- [Application Threat Modeling](https://msdn.microsoft.com/security/securecode/threatmodeling/acetm/)
-- [Security Guidelines: .NET Framework 2.0](https://msdn.microsoft.com/library/default.asp?url=/library/dnpag2/html/PAGGuidelines0003.asp)
+- [Security in .NET](../../standard/security/index.md)

@@ -16,9 +16,9 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
 ### To display a custom format  
   
-1.  Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to `DateTimePickerFormat.Custom`.  
+1. Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to `DateTimePickerFormat.Custom`.  
   
-2.  Set the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to a format string.  
+2. Set the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to a format string.  
   
     ```vb  
     DateTimePicker1.Format = DateTimePickerFormat.Custom  
@@ -40,7 +40,7 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
 ### To add text to the formatted value  
   
-1.  Use single quotation marks to enclose any character that is not a format character like "M" or a delimiter like ":". For example, the format string below displays the current date with the format "Today is: 05:30:31 Friday March 02, 2012" in the English (United States) culture.  
+1. Use single quotation marks to enclose any character that is not a format character like "M" or a delimiter like ":". For example, the format string below displays the current date with the format "Today is: 05:30:31 Friday March 02, 2012" in the English (United States) culture.  
   
     ```vb  
     DateTimePicker1.CustomFormat = "'Today is:' hh:mm:ss dddd MMMM dd, yyyy"  
@@ -58,5 +58,6 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
      Depending on the culture setting, any characters not enclosed in single quotation marks may be changed. For example, the format string above displays the current date with the format "Today is: 05:30:31 Friday March 02, 2012" in the English (United States) culture. Note that the first colon is enclosed in single quotation marks, because it is not intended to be a delimiting character as it is in "hh:mm:ss". In another culture, the format might appear as "Today is: 05.30.31 Friday March 02, 2012".  
   
 ## See also
-- [DateTimePicker Control](../../../../docs/framework/winforms/controls/datetimepicker-control-windows-forms.md)
-- [How to: Set and Return Dates with the Windows Forms DateTimePicker Control](../../../../docs/framework/winforms/controls/how-to-set-and-return-dates-with-the-windows-forms-datetimepicker-control.md)
+
+- [DateTimePicker Control](datetimepicker-control-windows-forms.md)
+- [How to: Set and Return Dates with the Windows Forms DateTimePicker Control](how-to-set-and-return-dates-with-the-windows-forms-datetimepicker-control.md)

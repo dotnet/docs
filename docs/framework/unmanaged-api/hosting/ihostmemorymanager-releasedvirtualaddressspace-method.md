@@ -29,7 +29,7 @@ HRESULT ReleasedVirtualAddressSpace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startAddress`  
  [in] Pointer to the starting address of the memory to be released.  
   
@@ -46,4 +46,5 @@ HRESULT ReleasedVirtualAddressSpace(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

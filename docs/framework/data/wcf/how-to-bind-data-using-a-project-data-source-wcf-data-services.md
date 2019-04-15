@@ -17,11 +17,11 @@ You can create data sources that are based on the generated data objects in an W
 
 ## Use a project data source in a WPF window
 
-1.  In Visual Studio, in a WPF project, add a reference to the Northwind data service. For more information, see [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md).
+1. In Visual Studio, in a WPF project, add a reference to the Northwind data service. For more information, see [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md).
 
-2.  In the **Data Sources** window, expand the `Customers` node in the **NorthwindEntities** project data source.
+2. In the **Data Sources** window, expand the `Customers` node in the **NorthwindEntities** project data source.
 
-3.  Click the **CustomerID** item, select **ComboBox** from the list, and drag the **CustomerID** item from the **Customers** node to the designer.
+3. Click the **CustomerID** item, select **ComboBox** from the list, and drag the **CustomerID** item from the **Customers** node to the designer.
 
      This creates the following object elements in the XAML file for the window:
 
@@ -31,7 +31,7 @@ You can create data sources that are based on the generated data objects in an W
 
     -   A <xref:System.Windows.Controls.Label>.
 
-4.  Drag the **Orders** navigation property to the designer.
+4. Drag the **Orders** navigation property to the designer.
 
      This creates the following additional object elements in the XAML file for the window:
 
@@ -39,18 +39,18 @@ You can create data sources that are based on the generated data objects in an W
 
     -   A data-bound <xref:System.Windows.Controls.DataGrid> control named `ordersDataGrid`.
 
-5.  (Optional) Drag additional items from the **Customers** node to the designer.
+5. (Optional) Drag additional items from the **Customers** node to the designer.
 
-6.  Open the code page for the form and add the following `using` statements (`Imports` in Visual Basic):
+6. Open the code page for the form and add the following `using` statements (`Imports` in Visual Basic):
 
-     [!code-csharp[Astoria Northwind Client#CustomersOrdersUsingWpf](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf2.xaml.cs#customersordersusingwpf)]
+     [!code-csharp[Astoria Northwind Client#CustomersOrdersUsingWpf](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderswpf2.xaml.cs#customersordersusingwpf)]
 
-7.  In the partial class that defines the form, add the following code that creates an <xref:System.Data.Objects.ObjectContext> instance and defines the `customerID` constant.
+7. In the partial class that defines the form, add the following code that creates an <xref:System.Data.Objects.ObjectContext> instance and defines the `customerID` constant.
 
-     [!code-csharp[Astoria Northwind Client#CustomersOrdersDefinitionWpf](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf2.xaml.cs#customersordersdefinitionwpf)]
-     [!code-vb[Astoria Northwind Client#CustomersOrdersDefinitionWpf](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf2.xaml.vb#customersordersdefinitionwpf)]
+     [!code-csharp[Astoria Northwind Client#CustomersOrdersDefinitionWpf](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderswpf2.xaml.cs#customersordersdefinitionwpf)]
+     [!code-vb[Astoria Northwind Client#CustomersOrdersDefinitionWpf](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderswpf2.xaml.vb#customersordersdefinitionwpf)]
 
-8.  In the designer, select the window.
+8. In the designer, select the window.
 
     > [!NOTE]
     > Make sure that you select the window itself, rather than selecting content that is within the window. If the window is selected, the **Name** text box near the top of the **Properties** window should contain the name of the window.
@@ -63,16 +63,16 @@ You can create data sources that are based on the generated data objects in an W
 
 11. In the newly created <xref:System.Windows.FrameworkElement.Loaded> event handler, copy and paste the following code.
 
-     [!code-csharp[Astoria Northwind Client#CustomersOrdersDataBindingWpf](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf2.xaml.cs#customersordersdatabindingwpf)]
-     [!code-vb[Astoria Northwind Client#CustomersOrdersDataBindingWpf](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf2.xaml.vb#customersordersdatabindingwpf)]
+     [!code-csharp[Astoria Northwind Client#CustomersOrdersDataBindingWpf](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderswpf2.xaml.cs#customersordersdatabindingwpf)]
+     [!code-vb[Astoria Northwind Client#CustomersOrdersDataBindingWpf](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderswpf2.xaml.vb#customersordersdatabindingwpf)]
 
 12. This code creates an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> for the `Customers` type based on the execution of a LINQ query that returns an <xref:System.Collections.Generic.IEnumerable%601> of `Customers` along with related `Orders` objects from the Northwind data service and binds it to the `customersViewSource`.
 
 ## Use a project data source in a Windows form
 
-1.  In the **Data Sources** window, expand the **Customers** node in the **NorthwindEntities** project data source.
+1. In the **Data Sources** window, expand the **Customers** node in the **NorthwindEntities** project data source.
 
-2.  Click the **CustomerID** item, select **ComboBox** from the list, and drag the **CustomerID** item from the **Customers** node to the designer.
+2. Click the **CustomerID** item, select **ComboBox** from the list, and drag the **CustomerID** item from the **Customers** node to the designer.
 
      This creates the following controls on the form:
 
@@ -84,30 +84,30 @@ You can create data sources that are based on the generated data objects in an W
 
     -   A <xref:System.Windows.Forms.Label>.
 
-3.  Drag the **Orders** navigation property to the form.
+3. Drag the **Orders** navigation property to the form.
 
-4.  This creates the `ordersBindingSource` control with the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property of the control set to the `customersBindingSource` and the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property set to `Customers`. It also creates the `ordersDataGridView` data-bound control on the form, accompanied by an appropriately titled label control.
+4. This creates the `ordersBindingSource` control with the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property of the control set to the `customersBindingSource` and the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property set to `Customers`. It also creates the `ordersDataGridView` data-bound control on the form, accompanied by an appropriately titled label control.
 
-5.  (Optional) Drag additional items from the **Customers** node to the designer.
+5. (Optional) Drag additional items from the **Customers** node to the designer.
 
-6.  Open the code page for the form and add the following `using` statements (`Imports` in Visual Basic):
+6. Open the code page for the form and add the following `using` statements (`Imports` in Visual Basic):
 
-     [!code-csharp[Astoria Northwind Client#CustomersOrdersUsing](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorders.cs#customersordersusing)]
-     [!code-vb[Astoria Northwind Client#CustomersOrdersUsing](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorders.vb#customersordersusing)]
+     [!code-csharp[Astoria Northwind Client#CustomersOrdersUsing](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorders.cs#customersordersusing)]
+     [!code-vb[Astoria Northwind Client#CustomersOrdersUsing](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorders.vb#customersordersusing)]
 
-7.  In the partial class that defines the form, add the following code that creates an <xref:System.Data.Objects.ObjectContext> instance and defines the `customerID` constant.
+7. In the partial class that defines the form, add the following code that creates an <xref:System.Data.Objects.ObjectContext> instance and defines the `customerID` constant.
 
-     [!code-csharp[Astoria Northwind Client#CustomersOrdersDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorders.cs#customersordersdefinition)]
-     [!code-vb[Astoria Northwind Client#CustomersOrdersDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorders.vb#customersordersdefinition)]
+     [!code-csharp[Astoria Northwind Client#CustomersOrdersDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorders.cs#customersordersdefinition)]
+     [!code-vb[Astoria Northwind Client#CustomersOrdersDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorders.vb#customersordersdefinition)]
 
-8.  In the form designer, double-click the form.
+8. In the form designer, double-click the form.
 
      This opens the code page for the form and creates the method that handles the `Load` event for the form.
 
 9. In the `Load` event handler, copy and paste the following code.
 
-     [!code-csharp[Astoria Northwind Client#CustomersOrdersDataBinding](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorders.cs#customersordersdatabinding)]
-     [!code-vb[Astoria Northwind Client#CustomersOrdersDataBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorders.vb#customersordersdatabinding)]
+     [!code-csharp[Astoria Northwind Client#CustomersOrdersDataBinding](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorders.cs#customersordersdatabinding)]
+     [!code-vb[Astoria Northwind Client#CustomersOrdersDataBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorders.vb#customersordersdatabinding)]
 
 10. This code creates an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> for the `Customers` type based on the execution of a <xref:System.Data.Services.Client.DataServiceQuery%601> that returns an <xref:System.Collections.Generic.IEnumerable%601> of `Customers` from the Northwind data service and binds it to the `customersBindingSource`.
 

@@ -10,7 +10,7 @@ ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
 This example creates the string "abcd" from individual characters.  
   
 ## Example  
- [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-a-string-from-an-array-of-char-values_1.vb)]  
+ [!code-vb[VbVbalrStrings#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#61)]  
   
 ## Compiling the Code  
  This method has no special requirements.  
@@ -21,6 +21,7 @@ This example creates the string "abcd" from individual characters.
  Null characters (equivalent to `Chr(0)`) in the string lead to unexpected results when using the string. The null character will be included with the string, but characters following the null character will not be displayed in some situations.  
   
 ## See also
+
 - <xref:System.String>
 - [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)

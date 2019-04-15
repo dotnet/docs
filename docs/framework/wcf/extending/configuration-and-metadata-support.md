@@ -157,9 +157,9 @@ if (soapBinding != null)
   
  When running Svcutil.exe, there are two options for getting Svcutil.exe to load the WSDL import extensions:  
   
-1.  Point Svcutil.exe to the configuration file using the /SvcutilConfig:\<file>.  
+1. Point Svcutil.exe to the configuration file using the /SvcutilConfig:\<file>.  
   
-2.  Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
+2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
  The `UdpBindingElementImporter` type implements the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> interface. The `ImportEndpoint` method imports the address from the WSDL port:  
   
@@ -217,9 +217,9 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
   
  Then we implement <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> from our registered class (`UdpBindingElementImporter`). In <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A?displayProperty=nameWithType>, examine the assertions in the appropriate namespace and process the ones for generating the transport and checking if it is multicast. In addition, remove the assertions that the importer handles from the list of binding assertions. Again, when running Svcutil.exe, there are two options for integration:  
   
-1.  Point Svcutil.exe to our configuration file using the /SvcutilConfig:\<file>.  
+1. Point Svcutil.exe to our configuration file using the /SvcutilConfig:\<file>.  
   
-2.  Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
+2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
 ### Adding a Custom Standard Binding Importer  
  Svcutil.exe and the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type, by default, recognize and import system-provided bindings. Otherwise, the binding gets imported as a <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> instance. To enable Svcutil.exe and the <xref:System.ServiceModel.Description.WsdlImporter> to import the `SampleProfileUdpBinding` the `UdpBindingElementImporter` also acts as a custom standard binding importer.  

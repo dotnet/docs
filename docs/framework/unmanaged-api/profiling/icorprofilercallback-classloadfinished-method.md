@@ -29,7 +29,7 @@ HRESULT ClassLoadFinished(
     [in] HRESULT hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] Identifies the class that was loaded.  
   
@@ -51,5 +51,6 @@ HRESULT ClassLoadFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)

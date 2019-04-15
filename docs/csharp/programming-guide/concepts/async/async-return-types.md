@@ -18,7 +18,7 @@ For more information about async methods, see [Asynchronous Programming with asy
   
 Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
-##  <a name="BKMK_TaskTReturnType"></a> Task\<TResult\> Return Type  
+## <a name="BKMK_TaskTReturnType"></a> Task\<TResult\> Return Type  
 The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
   
 In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a string.
@@ -34,7 +34,7 @@ You can better understand how this happens by separating the call to `GetLeisure
 
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns1a.cs#1)]
   
-##  <a name="BKMK_TaskReturnType"></a> Task Return Type  
+## <a name="BKMK_TaskReturnType"></a> Task Return Type  
 Async methods that don't contain a `return` statement or that contain a `return` statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods return `void` if they run synchronously. If you use a <xref:System.Threading.Tasks.Task> return type for an async method, a calling method can use an `await` operator to suspend the caller's completion until the called async method has finished.  
   
 In the following example, the `WaitAndApologize` async method doesn't contain a `return` statement, so the method returns a <xref:System.Threading.Tasks.Task> object. This enables `WaitAndApologize` to be awaited. Note that the <xref:System.Threading.Tasks.Task> type doesn't include a `Result` property because it has no return value.  
@@ -49,7 +49,7 @@ The following code separates calling the `WaitAndApologize` method from awaiting
  
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns2a.cs#1)]  
  
-##  <a name="BKMK_VoidReturnType"></a> Void return type
+## <a name="BKMK_VoidReturnType"></a> Void return type
 
 You use the `void` return type in asynchronous event handlers, which require a `void` return type. For methods other than event handlers that don't return a value, you should return a <xref:System.Threading.Tasks.Task> instead, because an async method that returns `void` can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   

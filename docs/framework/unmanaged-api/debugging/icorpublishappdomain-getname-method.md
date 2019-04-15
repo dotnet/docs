@@ -32,7 +32,7 @@ HRESULT GetName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -57,4 +57,5 @@ HRESULT GetName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishAppDomain Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md)

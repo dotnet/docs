@@ -29,7 +29,7 @@ HRESULT GetClassFromObject(
     [out] ClassID *pClassId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object for which to get the `ClassID`.  
   
@@ -49,4 +49,5 @@ HRESULT GetClassFromObject(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

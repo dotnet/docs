@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 342d1f17-c406-4f94-8f55-867c5f3ea511
 ---
 # ContextMenu Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.ContextMenu> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.ContextMenu> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
   
 ## ContextMenu Parts  
  The <xref:System.Windows.Controls.ContextMenu> control does not have any named parts.  
@@ -30,18 +30,19 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ContextMenu ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ContextMenu> control.  
   
- [!code-xaml[ControlTemplateExamples#ContextMenu](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/menu.xaml#contextmenu)]  
+ [!code-xaml[ControlTemplateExamples#ContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/menu.xaml#contextmenu)]  
   
  The <xref:System.Windows.Controls.ControlTemplate> uses the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+ [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
  For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)
-- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)
+- [Control Styles and Templates](control-styles-and-templates.md)
+- [Control Customization](control-customization.md)
+- [Styling and Templating](styling-and-templating.md)
+- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)

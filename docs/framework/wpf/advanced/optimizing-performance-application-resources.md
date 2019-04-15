@@ -13,7 +13,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
 # Optimizing Performance: Application Resources
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to share application resources so that you can support a consistent look or behavior across similar-typed elements. This topic provides a few recommendations in this area that can help you improve the performance of your applications.  
   
- For more information on resources, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
+ For more information on resources, see [XAML Resources](xaml-resources.md).  
   
 ## Sharing resources  
  If your application uses custom controls and defines resources in a <xref:System.Windows.ResourceDictionary> (or XAML Resources node), it is recommended that you either define the resources at the <xref:System.Windows.Application> or <xref:System.Windows.Window> object level, or define them in the default theme for the custom controls. Defining resources in a custom control's <xref:System.Windows.ResourceDictionary> imposes a performance impact for every instance of that control. For example, if you have performance-intensive brush operations defined as part of the resource definition of a custom control and many instances of the custom control, the application's working set will increase significantly.  
@@ -25,7 +25,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
   
  The following markup sample illustrates this point:  
   
- [!code-xaml[Performance#PerformanceSnippet7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/BrushResource.xaml#performancesnippet7)]  
+ [!code-xaml[Performance#PerformanceSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/BrushResource.xaml#performancesnippet7)]  
   
 ## Use Static Resources when Possible  
  A static resource provides a value for any XAML property attribute by looking up a reference to an already defined resource. Lookup behavior for that resource is analogous to compile-time lookup.  
@@ -34,15 +34,16 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
   
  The following markup sample shows the use of both types of resources:  
   
- [!code-xaml[Performance#PerformanceSnippet8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/DynamicResource.xaml#performancesnippet8)]  
+ [!code-xaml[Performance#PerformanceSnippet8](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/DynamicResource.xaml#performancesnippet8)]  
   
 ## See also
-- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)
-- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)
-- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)
-- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
-- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
-- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
+
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [Planning for Application Performance](planning-for-application-performance.md)
+- [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)
+- [Layout and Design](optimizing-performance-layout-and-design.md)
+- [2D Graphics and Imaging](optimizing-performance-2d-graphics-and-imaging.md)
+- [Object Behavior](optimizing-performance-object-behavior.md)
+- [Text](optimizing-performance-text.md)
+- [Data Binding](optimizing-performance-data-binding.md)
+- [Other Performance Recommendations](optimizing-performance-other-recommendations.md)

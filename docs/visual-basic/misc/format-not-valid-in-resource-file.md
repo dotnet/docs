@@ -10,9 +10,10 @@ A resource file in your project does not follow the standard format for a Window
   
 ## To correct this error  
   
-1.  Recreate the resource source and resource files and adhere to the syntax documented in the Windows Software Development Kit.  
+1. Recreate the resource source and resource files and adhere to the syntax documented in the Windows Software Development Kit.  
   
-2.  Remove the invalid resource file from the project.  
+2. Remove the invalid resource file from the project.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

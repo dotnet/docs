@@ -19,7 +19,7 @@ HRESULT GetVersion(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMajor`  
  [out] A pointer to the major version number.  
   
@@ -48,5 +48,6 @@ HRESULT GetVersion(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

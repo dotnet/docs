@@ -5,6 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
 ---
+
 # Implement the microservice application layer using the Web API
 
 ## Use Dependency Injection to inject infrastructure objects into your application layer
@@ -32,15 +33,15 @@ public class CreateOrderCommandHandler
     private readonly IMediator _mediator;
 
     // Using DI to inject infrastructure persistence Repositories
-    public CreateOrderCommandHandler(IMediator mediator, 
-                                     IOrderRepository orderRepository, 
+    public CreateOrderCommandHandler(IMediator mediator,
+                                     IOrderRepository orderRepository,
                                      IIdentityService identityService)
     {
-        _orderRepository = orderRepository ?? 
+        _orderRepository = orderRepository ??
                           throw new ArgumentNullException(nameof(orderRepository));
-        _identityService = identityService ?? 
+        _identityService = identityService ??
                           throw new ArgumentNullException(nameof(identityService));
-        _mediator = mediator ?? 
+        _mediator = mediator ??
                                  throw new ArgumentNullException(nameof(mediator));
     }
 
@@ -48,14 +49,14 @@ public class CreateOrderCommandHandler
     {
         // Create the Order AggregateRoot
         // Add child entities and value objects through the Order aggregate root
-        // methods and constructor so validations, invariants, and business logic 
+        // methods and constructor so validations, invariants, and business logic
         // make sure that consistency is preserved across the whole aggregate
-        var address = new Address(message.Street, message.City, message.State, 
+        var address = new Address(message.Street, message.City, message.State,
                                   message.Country, message.ZipCode);
-        var order = new Order(message.UserId, address, message.CardTypeId, 
-                              message.CardNumber, message.CardSecurityNumber, 
+        var order = new Order(message.UserId, address, message.CardTypeId,
+                              message.CardNumber, message.CardSecurityNumber,
                               message.CardHolderName, message.CardExpiration);
-            
+
         foreach (var item in message.OrderItems)
         {
             order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
@@ -106,10 +107,10 @@ When using DI in .NET Core, you might want to be able to scan an assembly and au
 #### Additional resources
 
 - **Matthew King. Registering services with Scrutor** \
-  [*https://www.mking.net/blog/registering-services-with-scrutor*](https://www.mking.net/blog/registering-services-with-scrutor)
+  [https://www.mking.net/blog/registering-services-with-scrutor](https://www.mking.net/blog/registering-services-with-scrutor)
 
 - **Kristian Hellang. Scrutor.** GitHub repo. \
-  [*https://github.com/khellang/Scrutor*](https://github.com/khellang/Scrutor)
+  [https://github.com/khellang/Scrutor](https://github.com/khellang/Scrutor)
 
 #### Use Autofac as an IoC container
 
@@ -161,13 +162,13 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 - **Introduction to Dependency Injection in ASP.NET Core** \
-  [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
+  [https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
 - **Autofac.** Official documentation. \
-  [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)
+  [http://docs.autofac.org/en/latest/](http://docs.autofac.org/en/latest/)
 
 - **Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes - Cesar de la Torre.** \
-  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
+  [https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
 ## Implement the Command and Command Handler patterns
 
@@ -277,11 +278,11 @@ public class CreateOrderCommand
 }
 ```
 
-Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command’s name indicates its purpose. In many languages like C\#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
+Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command’s name indicates its purpose. In many languages like C#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
 
-As an additional characteristic, commands are immutable, because the expected usage is that they are processed directly by the domain model. They do not need to change during their projected lifetime. In a C\# class, immutability can be achieved by not having any setters or other methods that change internal state.
+As an additional characteristic, commands are immutable, because the expected usage is that they are processed directly by the domain model. They do not need to change during their projected lifetime. In a C# class, immutability can be achieved by not having any setters or other methods that change internal state.
 
-Bear in mind that if you intend or expect commands will be going through a serializing/deserializing process, the properties must have private setter, and the `[DataMemeber]` (or `[JsonProperty]`) attribute, otherwise the deserializer will not be able to reconstruct the object at destination with the required values.
+Bear in mind that if you intend or expect commands will be going through a serializing/deserializing process, the properties must have private setter, and the `[DataMember]` (or `[JsonProperty]`) attribute, otherwise the deserializer will not be able to reconstruct the object at destination with the required values.
 
 For example, the command class for creating an order is probably similar in terms of data to the order you want to create, but you probably do not need the same attributes. For instance, CreateOrderCommand does not have an order ID, because the order has not been created yet.
 
@@ -309,7 +310,7 @@ Some developers make their UI request objects separate from their command DTOs, 
 
 You should implement a specific command handler class for each command. That is how the pattern works, and it is where you will use the command object, the domain objects, and the infrastructure repository objects. The command handler is in fact the heart of the application layer in terms of CQRS and DDD. However, all the domain logic should be contained within the domain classes—within the aggregate roots (root entities), child entities, or [domain services](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/), but not within the command handler, which is a class from the application layer.
 
-The command handler class offers a strong stepping stone in the way to achieve the Single Resposibility Principle (SRP) mentioned in a previous section.
+The command handler class offers a strong stepping stone in the way to achieve the Single Responsibility Principle (SRP) mentioned in a previous section.
 
 A command handler receives a command and obtains a result from the aggregate that is used. The result should be either successful execution of the command, or an exception. In the case of an exception, the system state should be unchanged.
 
@@ -342,15 +343,15 @@ public class CreateOrderCommandHandler
     private readonly IMediator _mediator;
 
     // Using DI to inject infrastructure persistence Repositories
-    public CreateOrderCommandHandler(IMediator mediator, 
-                                     IOrderRepository orderRepository, 
+    public CreateOrderCommandHandler(IMediator mediator,
+                                     IOrderRepository orderRepository,
                                      IIdentityService identityService)
     {
-        _orderRepository = orderRepository ?? 
+        _orderRepository = orderRepository ??
                           throw new ArgumentNullException(nameof(orderRepository));
-        _identityService = identityService ?? 
+        _identityService = identityService ??
                           throw new ArgumentNullException(nameof(identityService));
-        _mediator = mediator ?? 
+        _mediator = mediator ??
                                  throw new ArgumentNullException(nameof(mediator));
     }
 
@@ -358,14 +359,14 @@ public class CreateOrderCommandHandler
     {
         // Create the Order AggregateRoot
         // Add child entities and value objects through the Order aggregate root
-        // methods and constructor so validations, invariants, and business logic 
+        // methods and constructor so validations, invariants, and business logic
         // make sure that consistency is preserved across the whole aggregate
-        var address = new Address(message.Street, message.City, message.State, 
+        var address = new Address(message.Street, message.City, message.State,
                                   message.Country, message.ZipCode);
-        var order = new Order(message.UserId, address, message.CardTypeId, 
-                              message.CardNumber, message.CardSecurityNumber, 
+        var order = new Order(message.UserId, address, message.CardTypeId,
+                              message.CardNumber, message.CardSecurityNumber,
                               message.CardHolderName, message.CardExpiration);
-            
+
         foreach (var item in message.OrderItems)
         {
             order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
@@ -391,19 +392,19 @@ These are additional steps a command handler should take:
 #### Additional resources
 
 - **Mark Seemann. At the Boundaries, Applications are Not Object-Oriented** \
-  [*https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/*](https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
+  [https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/](https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/)
 
 - **Commands and events** \
-  [*http://cqrs.nu/Faq/commands-and-events*](http://cqrs.nu/Faq/commands-and-events)
+  [http://cqrs.nu/Faq/commands-and-events](http://cqrs.nu/Faq/commands-and-events)
 
 - **What does a command handler do?** \
-  [*http://cqrs.nu/Faq/command-handlers*](http://cqrs.nu/Faq/command-handlers)
+  [http://cqrs.nu/Faq/command-handlers](http://cqrs.nu/Faq/command-handlers)
 
 - **Jimmy Bogard. Domain Command Patterns – Handlers** \
-  [*https://jimmybogard.com/domain-command-patterns-handlers/*](https://jimmybogard.com/domain-command-patterns-handlers/)
+  [https://jimmybogard.com/domain-command-patterns-handlers/](https://jimmybogard.com/domain-command-patterns-handlers/)
 
 - **Jimmy Bogard. Domain Command Patterns – Validation** \
-  [*https://jimmybogard.com/domain-command-patterns-validation/*](https://jimmybogard.com/domain-command-patterns-validation/)
+  [https://jimmybogard.com/domain-command-patterns-validation/](https://jimmybogard.com/domain-command-patterns-validation/)
 
 ## The Command process pipeline: how to trigger a command handler
 
@@ -474,7 +475,7 @@ First, let’s look at a sample WebAPI controller where you actually would use t
 ```csharp
 public class MyMicroserviceController : Controller
 {
-    public MyMicroserviceController(IMediator mediator, 
+    public MyMicroserviceController(IMediator mediator,
                                     IMyMicroserviceQueries microserviceQueries)
     // ...
 ```
@@ -483,11 +484,11 @@ You can see that the mediator provides a clean and lean Web API controller const
 
 ```csharp
 [Route("new")]
-[HttpPost] 
-public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand 
-                                                               runOperationCommand) 
+[HttpPost]
+public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand
+                                                               runOperationCommand)
 {
-    var commandResult = await _mediator.SendAsync(runOperationCommand); 
+    var commandResult = await _mediator.SendAsync(runOperationCommand);
 
     return commandResult ? (IActionResult)Ok() : (IActionResult)BadRequest();
 }
@@ -500,17 +501,17 @@ In **eShopOnContainers**, a more advanced example than the above is submitting a
 Nevertheless, the action of submitting the Command to MediatR is pretty similar, as shown in the following code.
 
 ```csharp
-var createOrderCommand = new CreateOrderCommand(eventMsg.Basket.Items,     
-                                                eventMsg.UserId, eventMsg.City, 
+var createOrderCommand = new CreateOrderCommand(eventMsg.Basket.Items,
+                                                eventMsg.UserId, eventMsg.City,
                                                 eventMsg.Street, eventMsg.State,
                                                 eventMsg.Country, eventMsg.ZipCode,
-                                                eventMsg.CardNumber, 
-                                                eventMsg.CardHolderName, 
+                                                eventMsg.CardNumber,
+                                                eventMsg.CardHolderName,
                                                 eventMsg.CardExpiration,
-                                                eventMsg.CardSecurityNumber,  
+                                                eventMsg.CardSecurityNumber,
                                                 eventMsg.CardTypeId);
 
-var requestCreateOrder = new IdentifiedCommand<CreateOrderCommand,bool>(createOrderCommand, 
+var requestCreateOrder = new IdentifiedCommand<CreateOrderCommand,bool>(createOrderCommand,
                                                                         eventMsg.RequestId);
 result = await _mediator.Send(requestCreateOrder);
 ```
@@ -539,14 +540,14 @@ Then the CommandHandler for the IdentifiedCommand named [IdentifiedCommandHandle
 
 ```csharp
 // IdentifiedCommandHandler.cs
-public class IdentifiedCommandHandler<T, R> : 
+public class IdentifiedCommandHandler<T, R> :
                                    IAsyncRequestHandler<IdentifiedCommand<T, R>, R>
                                    where T : IRequest<R>
 {
     private readonly IMediator _mediator;
     private readonly IRequestManager _requestManager;
 
-    public IdentifiedCommandHandler(IMediator mediator, 
+    public IdentifiedCommandHandler(IMediator mediator,
                                     IRequestManager requestManager)
     {
         _mediator = mediator;
@@ -569,10 +570,10 @@ public class IdentifiedCommandHandler<T, R> :
         {
             await _requestManager.CreateRequestForCommandAsync<T>(message.Id);
 
-            // Send the embeded business command to mediator 
-            // so it runs its related CommandHandler 
+            // Send the embedded business command to mediator
+            // so it runs its related CommandHandler
             var result = await _mediator.Send(message.Command);
-                
+
             return result;
         }
     }
@@ -593,15 +594,15 @@ public class CreateOrderCommandHandler
     private readonly IMediator _mediator;
 
     // Using DI to inject infrastructure persistence Repositories
-    public CreateOrderCommandHandler(IMediator mediator, 
-                                     IOrderRepository orderRepository, 
+    public CreateOrderCommandHandler(IMediator mediator,
+                                     IOrderRepository orderRepository,
                                      IIdentityService identityService)
     {
-        _orderRepository = orderRepository ?? 
+        _orderRepository = orderRepository ??
                           throw new ArgumentNullException(nameof(orderRepository));
-        _identityService = identityService ?? 
+        _identityService = identityService ??
                           throw new ArgumentNullException(nameof(identityService));
-        _mediator = mediator ?? 
+        _mediator = mediator ??
                                  throw new ArgumentNullException(nameof(mediator));
     }
 
@@ -610,10 +611,10 @@ public class CreateOrderCommandHandler
         // Add/Update the Buyer AggregateRoot
         var address = new Address(message.Street, message.City, message.State,
                                   message.Country, message.ZipCode);
-        var order = new Order(message.UserId, address, message.CardTypeId,  
-                              message.CardNumber, message.CardSecurityNumber, 
+        var order = new Order(message.UserId, address, message.CardTypeId,
+                              message.CardNumber, message.CardSecurityNumber,
                               message.CardHolderName, message.CardExpiration);
-            
+
         foreach (var item in message.OrderItems)
         {
             order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
@@ -683,7 +684,7 @@ public class MediatorModule : Autofac.Module
                               typeof(CreateOrderCommand).GetTypeInfo().Assembly).
                                    AsClosedTypesOf(typeof(IAsyncRequestHandler<,>));
         // Other types registration
-        //...        
+        //...
         builder.RegisterGeneric(typeof(LoggingBehavior<,>)).
                                                    As(typeof(IPipelineBehavior<,>));
         builder.RegisterGeneric(typeof(ValidatorBehavior<,>)).
@@ -695,7 +696,7 @@ public class MediatorModule : Autofac.Module
 That [LoggingBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/LoggingBehavior.cs) class can be implemented as the following code, which logs information about the command handler being executed and whether it was successful or not.
 
 ```csharp
-public class LoggingBehavior<TRequest, TResponse> 
+public class LoggingBehavior<TRequest, TResponse>
          : IPipelineBehavior<TRequest, TResponse>
 {
     private readonly ILogger<LoggingBehavior<TRequest, TResponse>> _logger;
@@ -718,7 +719,7 @@ Just by implementing this behavior class and by registering it in the pipeline (
 The eShopOnContainers ordering microservice also applies a second behavior for basic validations, the [ValidatorBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/ValidatorBehavior.cs) class that relies on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, as shown in the following code:
 
 ```csharp
-public class ValidatorBehavior<TRequest, TResponse> 
+public class ValidatorBehavior<TRequest, TResponse>
          : IPipelineBehavior<TRequest, TResponse>
 {
     private readonly IValidator<TRequest>[] _validators;
@@ -761,12 +762,12 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
         RuleFor(command => command.State).NotEmpty();
         RuleFor(command => command.Country).NotEmpty();
         RuleFor(command => command.ZipCode).NotEmpty();
-        RuleFor(command => command.CardNumber).NotEmpty().Length(12, 19); 
+        RuleFor(command => command.CardNumber).NotEmpty().Length(12, 19);
         RuleFor(command => command.CardHolderName).NotEmpty();
-        RuleFor(command => command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).WithMessage("Please specify a valid card expiration date"); 
-        RuleFor(command => command.CardSecurityNumber).NotEmpty().Length(3); 
+        RuleFor(command => command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).WithMessage("Please specify a valid card expiration date");
+        RuleFor(command => command.CardSecurityNumber).NotEmpty().Length(3);
         RuleFor(command => command.CardTypeId).NotEmpty();
-        RuleFor(command => command.OrderItems).Must(ContainOrderItems).WithMessage("No order items found"); 
+        RuleFor(command => command.OrderItems).Must(ContainOrderItems).WithMessage("No order items found");
     }
 
     private bool BeValidExpirationDate(DateTime dateTime)
@@ -791,44 +792,44 @@ In a similar way, you could implement other behaviors for additional aspects or 
 ##### The mediator pattern
 
 - **Mediator pattern** \
-  [*https://en.wikipedia.org/wiki/Mediator\_pattern*](https://en.wikipedia.org/wiki/Mediator_pattern)
+  [https://en.wikipedia.org/wiki/Mediator\_pattern](https://en.wikipedia.org/wiki/Mediator_pattern)
 
 ##### The decorator pattern
 
 - **Decorator pattern** \
-  [*https://en.wikipedia.org/wiki/Decorator\_pattern*](https://en.wikipedia.org/wiki/Decorator_pattern)
+  [https://en.wikipedia.org/wiki/Decorator\_pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 ##### MediatR (Jimmy Bogard)
 
 - **MediatR.** GitHub repo. \
-  [*https://github.com/jbogard/MediatR*](https://github.com/jbogard/MediatR)
+  [https://github.com/jbogard/MediatR](https://github.com/jbogard/MediatR)
 
 - **CQRS with MediatR and AutoMapper** \
-  [*https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/*](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
+  [https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
 
 - **Put your controllers on a diet: POSTs and commands.** \
-  [*https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/*](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
+  [https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
 
 - **Tackling cross-cutting concerns with a mediator pipeline** \
-  [*https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/*](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
+  [https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
 
 - **CQRS and REST: the perfect match** \
-  [*https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/*](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
+  [https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/](https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/)
 
 - **MediatR Pipeline Examples** \
-  [*https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/*](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
+  [https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/](https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/)
 
 - **Vertical Slice Test Fixtures for MediatR and ASP.NET Core** \
-  [*https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/*](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
+  [https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
 
 - **MediatR Extensions for Microsoft Dependency Injection Released** \
-  [*https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/*](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
+  [https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
 
 ##### Fluent validation
 
 - **Jeremy Skinner. FluentValidation.** GitHub repo. \
-  [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
+  [https://github.com/JeremySkinner/FluentValidation](https://github.com/JeremySkinner/FluentValidation)
 
->[!div class="step-by-step"]
->[Previous](microservice-application-layer-web-api-design.md)
->[Next](../implement-resilient-applications/index.md)
+> [!div class="step-by-step"]
+> [Previous](microservice-application-layer-web-api-design.md)
+> [Next](../implement-resilient-applications/index.md)

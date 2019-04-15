@@ -31,7 +31,7 @@ HRESULT CreateAssemblyCache (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAsmCache`  
  [out] The returned `IAssemblyCache` pointer.  
   
@@ -48,6 +48,7 @@ HRESULT CreateAssemblyCache (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
 - [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)

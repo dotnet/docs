@@ -32,7 +32,7 @@ HRESULT ReplaceSymbolStore (
     [in] IStream *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  [in] The name of the file containing the symbol store.  
   
@@ -46,4 +46,5 @@ HRESULT ReplaceSymbolStore (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

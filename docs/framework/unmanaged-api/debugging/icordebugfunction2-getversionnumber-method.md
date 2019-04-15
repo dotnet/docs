@@ -29,7 +29,7 @@ HRESULT GetVersionNumber (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnVersion`  
  [out] A pointer to an integer that is the version number of the function that is represented by this ICorDebugFunction2 object.  
   

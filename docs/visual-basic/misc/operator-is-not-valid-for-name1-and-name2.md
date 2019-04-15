@@ -10,7 +10,8 @@ An operator is not appropriate for the types being operated on.
   
 ## To correct this error  
   
-1.  Ensure that the operator is appropriate for the types being operated on.  
+1. Ensure that the operator is appropriate for the types being operated on.  
   
 ## See also
+
 - [Operators](../../visual-basic/language-reference/operators/index.md)

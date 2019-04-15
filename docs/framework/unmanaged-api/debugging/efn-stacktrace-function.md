@@ -34,7 +34,7 @@ HRESULT CALLBACK _EFN_StackTrace(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   
@@ -96,4 +96,5 @@ HRESULT CALLBACK _EFN_StackTrace(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

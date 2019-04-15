@@ -31,7 +31,7 @@ HRESULT GetVariables(
         ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cVars`  
  [in] A `ULONG32` that indicates the size of the `pVars` array.  
   
@@ -48,4 +48,5 @@ HRESULT GetVariables(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)

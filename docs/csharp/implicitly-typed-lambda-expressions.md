@@ -7,8 +7,7 @@ ms.assetid: a3851da9-e018-4389-9922-233db7d0f841
 
 # Implicitly typed lambda expressions
 
-I'm not using `var` to declare this expression tree. You can't use
-an implicitly typed variable declaration to declare a lambda expression.
+You can't use an implicitly typed variable declaration to declare a lambda expression.
 It creates a circular logic problem for the compiler. The `var` declaration
 tells the compiler to figure out the type of the variable from the type
 of expression on the right hand side of the assignment operator. A lambda
@@ -26,5 +25,3 @@ matches.
 
 You can get even more details on why the C# language specifies that behavior
 by reading [this article](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/type-inference.pdf) (PDF Download)
-
-

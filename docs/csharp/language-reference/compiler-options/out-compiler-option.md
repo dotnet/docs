@@ -39,15 +39,15 @@ The **-out** option specifies the name of the output file.
   
  Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](../../../framework/tools/ildasm-exe-il-disassembler.md) to view the assembly manifest to see the associated files.  
   
- The -out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
+ The -out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Modify the **Assembly name** property.  
+3. Modify the **Assembly name** property.  
   
      To set this compiler option programmatically: the <xref:VSLangProj80.ProjectProperties3.OutputFileName%2A> is a read-only property, which is determined by a combination of the project type (exe, library, and so forth) and the assembly name. Modifying one or both of these properties will be necessary to set the output file name.  
   
@@ -61,5 +61,5 @@ csc t.cs -out:mymodule.netmodule -target:module t2.cs
 ## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
-- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+- [Friend Assemblies](../../../standard/assembly/friend-assemblies.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -33,7 +33,7 @@ HRESULT LockClrVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hostCallback`  
  [in] The function to be called by the CLR upon initialization.  
   
@@ -60,11 +60,11 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
  The following steps occur upon initialization of the runtime:  
   
-1.  The host calls [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or one of the other runtime initialization functions. Alternatively, the host could initialize the runtime using COM object activation.  
+1. The host calls [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or one of the other runtime initialization functions. Alternatively, the host could initialize the runtime using COM object activation.  
   
-2.  The runtime calls the function specified by the `hostCallback` parameter.  
+2. The runtime calls the function specified by the `hostCallback` parameter.  
   
-3.  The function specified by `hostCallback` then makes the following sequence of calls:  
+3. The function specified by `hostCallback` then makes the following sequence of calls:  
   
     -   The function specified by the `pBeginHostSetup` parameter.  
   
@@ -88,4 +88,5 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

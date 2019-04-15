@@ -39,7 +39,7 @@ Use the following table for quick links, or read further for details. To view th
 |**4.6**|Included in Visual Studio 2015.<br /><br /> [Microsoft .NET Framework 4.6 targeting pack](https://go.microsoft.com/fwlink/?LinkId=528261)|[Download page for 4.6 web installer](https://go.microsoft.com/fwlink/?LinkId=528259)<br /><br /> [Download page for 4.6 offline installer](https://go.microsoft.com/fwlink/?LinkId=528233)|**Included in:** <br/><br /> Windows 10 <br />[Visual Studio 2015](https://my.visualstudio.com/Downloads?q=visual%20studio%202015)<br /><br /> **You can also install on:**<br /><br/> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
 |**4.5.2**|[Microsoft .NET Framework 4.5.2 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=397702)<br /><br /> For use with Visual Studio 2013, Visual Studio 2012, or other IDEs|[Download page for 4.5.2 web installer](https://go.microsoft.com/fwlink/p/?LinkId=397703)<br /><br /> [Download page for 4.5.2 offline installer](https://go.microsoft.com/fwlink/p/?LinkId=397706)|**You can install on:**<br /><br/> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
 |**4.5.1**|[Microsoft .NET Framework 4.5.1 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=324213)<br /><br /> For use with Visual Studio 2013, Visual Studio 2012 or other IDEs|[Download page for 4.5.1 web installer](https://go.microsoft.com/fwlink/p/?LinkId=310158)<br /><br /> [Download page for 4.5.1 offline installer](https://go.microsoft.com/fwlink/p/?LinkId=310159)|**Included in:**<br /> <br/>[!INCLUDE[win81](../../../includes/win81-md.md)]<br /> Windows Server 2012 R2<br /> [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)<br /><br /> **You can also install on:**<br /><br/> [!INCLUDE[win8](../../../includes/win8-md.md)] and earlier<br /> [!INCLUDE[winserver8](../../../includes/winserver8-md.md)] and earlier<br />(for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
-|**4.5**|Included in Visual Studio 2012<br /><br /> Also available as part of the [Windows 8 SDK](https://msdn.microsoft.com/windows/hardware/hh852363)|[Download page for 4.5 web installer](https://go.microsoft.com/fwlink/p/?LinkId=245484)|**Included in:** <br/><br /> [!INCLUDE[win8](../../../includes/win8-md.md)]<br /> [!INCLUDE[winserver8](../../../includes/winserver8-md.md)]<br /> [Visual Studio 2012](https://my.visualstudio.com/Downloads?q=visual%20studio%202012)<br /><br /> **You can also install on:**<br/><br /> Windows 7 and earlier<br /> Windows Server 2008 SP2 and earlier<br />(for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
+|**4.5**|Included in Visual Studio 2012<br /><br /> Also available as part of the Windows 8 SDK|[Download page for 4.5 web installer](https://go.microsoft.com/fwlink/p/?LinkId=245484)|**Included in:** <br/><br /> [!INCLUDE[win8](../../../includes/win8-md.md)]<br /> [!INCLUDE[winserver8](../../../includes/winserver8-md.md)]<br /> [Visual Studio 2012](https://my.visualstudio.com/Downloads?q=visual%20studio%202012)<br /><br /> **You can also install on:**<br/><br /> Windows 7 and earlier<br /> Windows Server 2008 SP2 and earlier<br />(for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
 
 You can install the **Developer Pack** for a specific version of the .NET Framework, if one is available, on all supported platforms.
 
@@ -101,7 +101,7 @@ Two types of redistributable installers are available:
 
 Both web and offline installers are designed for x86-based and x64-based computers (see [system requirements](~/docs/framework/get-started/system-requirements.md)), but do not support Itanium-based computers.
 
-1.  Open the download page for the .NET Framework version you want to install:
+1. Open the download page for the .NET Framework version you want to install:
 
     - .NET Framework 4.7.2 ([web installer](https://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=863265))
 
@@ -157,7 +157,7 @@ Language packs are executable files that contain the localized resources (such a
 > [!IMPORTANT]
 > The language packs don't contain the .NET Framework components that are required to run an app, so you must run the web or offline installer before you install a language pack. If you have already installed a language pack, uninstall it, install the .NET Framework, and then reinstall the language pack.
 
-1.  Open the language pack download page for the .NET Framework version you've installed:
+1. Open the language pack download page for the .NET Framework version you've installed:
 
     - [.NET Framework 4.7.2 language packs](https://go.microsoft.com/fwlink/?LinkID=863258)
 
@@ -177,9 +177,9 @@ Language packs are executable files that contain the localized resources (such a
 
     - [.NET Framework 4.5 language packs](https://go.microsoft.com/fwlink/p/?LinkId=245451)
 
-2.  In the language list, choose the language you want to download, and wait a few seconds for the page to reload in that language.
+2. In the language list, choose the language you want to download, and wait a few seconds for the page to reload in that language.
 
-3.  Choose **Download**.
+3. Choose **Download**.
 
 The following table lists the supported languages.
 
@@ -222,7 +222,7 @@ The following table lists the supported languages.
 
 - For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](~/docs/framework/migration-guide/index.md).
 
-- See the [.NET Framework Reference Source](https://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [GitHub](https://github.com/Microsoft/referencesource). You can [download the reference source](https://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://blogs.msdn.com/b/dotnet/archive/2014/02/24/a-new-look-for-net-reference-source.aspx).
+- See the [.NET Framework Reference Source](https://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [GitHub](https://github.com/Microsoft/referencesource). You can [download the reference source](https://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://devblogs.microsoft.com/dotnet/a-new-look-for-net-reference-source/).
 
 ## See also
 

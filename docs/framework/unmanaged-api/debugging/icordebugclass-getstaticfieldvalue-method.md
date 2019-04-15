@@ -31,7 +31,7 @@ HRESULT GetStaticFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] A field `Def` token that references the field to be retrieved.  
   

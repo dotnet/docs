@@ -10,11 +10,11 @@ You can analyze the structure and content of expression trees when you debug you
   
 ### To open a visualizer for an expression tree  
   
-1.  Click the magnifying glass icon that appears next to the `DebugView` property of an expression tree in **DataTips**, a **Watch** window, the **Autos** window, or the **Locals** window.  
+1. Click the magnifying glass icon that appears next to the `DebugView` property of an expression tree in **DataTips**, a **Watch** window, the **Autos** window, or the **Locals** window.  
   
      A list of visualizers is displayed.  
   
-2.  Click the visualizer you want to use.  
+2. Click the visualizer you want to use.  
   
  Each expression type is displayed in the visualizer as described in the following sections.  
   

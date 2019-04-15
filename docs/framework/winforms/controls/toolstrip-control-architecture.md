@@ -13,8 +13,7 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
   
  <xref:System.Windows.Forms.ToolStrip> is the abstract base class for <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.StatusStrip>, and <xref:System.Windows.Forms.ContextMenuStrip>. The following object model shows the <xref:System.Windows.Forms.ToolStrip> inheritance hierarchy.  
   
- ![ToolStrip Object Model](../../../../docs/framework/winforms/controls/media/toolstripobjectmodel.gif "ToolStripObjectModel")  
-ToolStrip object model  
+ ![Diagram that shows the ToolStrip object model.](./media/toolstrip-control-architecture/toolstrip-object-model.gif)  
   
  You can access all the items in a <xref:System.Windows.Forms.ToolStrip> through the <xref:System.Windows.Forms.ToolStrip.Items%2A> collection. You can access all the items in a <xref:System.Windows.Forms.ToolStripDropDownItem> through the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A> collection. In a class derived from <xref:System.Windows.Forms.ToolStrip>, you can also use the <xref:System.Windows.Forms.ToolStrip.DisplayedItems%2A> property to access only those items that are currently displayed. These are the items that are not currently in an overflow menu.  
   
@@ -116,19 +115,19 @@ ToolStrip object model
 #### ToolStripContainer Support of Inheritance  
  The <xref:System.Windows.Forms.ToolStripContainer> control supports limited inherited scenarios, similar to the following example:  
   
-1.  Create a new Windows Forms application.  
+1. Create a new Windows Forms application.  
   
-2.  Add a <xref:System.Windows.Forms.ToolStripContainer> to the form.  
+2. Add a <xref:System.Windows.Forms.ToolStripContainer> to the form.  
   
-3.  Set the access modifier of the <xref:System.Windows.Forms.ToolStripContainer> to `public` or `protected`.  
+3. Set the access modifier of the <xref:System.Windows.Forms.ToolStripContainer> to `public` or `protected`.  
   
-4.  Add any combination of <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.ContextMenuStrip> controls to the <xref:System.Windows.Forms.ToolStripPanel> regions of the <xref:System.Windows.Forms.ToolStripContainer>.  
+4. Add any combination of <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.ContextMenuStrip> controls to the <xref:System.Windows.Forms.ToolStripPanel> regions of the <xref:System.Windows.Forms.ToolStripContainer>.  
   
-5.  Build the project.  
+5. Build the project.  
   
-6.  Add a form that inherits from the first form.  
+6. Add a form that inherits from the first form.  
   
-7.  Select the inherited <xref:System.Windows.Forms.ToolStripContainer> on the form.  
+7. Select the inherited <xref:System.Windows.Forms.ToolStripContainer> on the form.  
   
 #### Inherited Behavior of Child Controls  
  After you complete the previous steps, the following inherited behavior occurs:  
@@ -245,8 +244,7 @@ ToolStrip object model
   
  <xref:System.Windows.Forms.ToolStripItem> is the abstract base class for all the items that go into a <xref:System.Windows.Forms.ToolStrip>. The following object model shows the <xref:System.Windows.Forms.ToolStripItem> inheritance hierarchy.  
   
- ![ToolStripItem Object Model](../../../../docs/framework/winforms/controls/media/toolstripitemobjectmodel.gif "ToolStripItemObjectModel")  
-ToolStripItem object model  
+ ![Diagram that shows the ToolStripItem object model.](./media/toolstrip-control-architecture/toolstripitem-object-model.gif)  
   
  <xref:System.Windows.Forms.ToolStripItem> classes either inherit directly from <xref:System.Windows.Forms.ToolStripItem>, or they inherit indirectly from <xref:System.Windows.Forms.ToolStripItem> through <xref:System.Windows.Forms.ToolStripControlHost> or <xref:System.Windows.Forms.ToolStripDropDownItem>.  
   
@@ -373,10 +371,11 @@ ToolStripItem object model
 -   <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
   
 ## See also
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
-- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
-- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
-- [StatusStrip Control](../../../../docs/framework/winforms/controls/statusstrip-control.md)
-- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)
-- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)
+- [MenuStrip Control](menustrip-control-windows-forms.md)
+- [StatusStrip Control](statusstrip-control.md)
+- [ContextMenuStrip Control](contextmenustrip-control.md)
+- [BindingNavigator Control](bindingnavigator-control-windows-forms.md)

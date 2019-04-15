@@ -127,11 +127,11 @@ context.Track(customRecord);
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
+1. Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press CTRL+F5.
+3. To run the solution, press CTRL+F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -143,4 +143,5 @@ context.Track(customRecord);
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
 ## See also
+
 - [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

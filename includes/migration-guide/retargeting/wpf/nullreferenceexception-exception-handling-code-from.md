@@ -8,4 +8,3 @@
 |Version|4.7|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Windows.Media.ImageSourceConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)?displayProperty=nameWithType></li></ul>|
-

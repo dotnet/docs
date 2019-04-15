@@ -27,7 +27,7 @@ For more information about what was released with each version, see the followin
 
 The MSI installer for Windows has changed with .NET Core 3.0 Preview 3. The SDK installers will now upgrade in place.
 
-The upgrade policy will specifically target .NET Core SDK feature bands. Feature bands are defined in hundreds groups in the patch section of the version number. For example, **3.0.101** and **3.0.201** are versions in two different feature bands while **3.0.101** and **3.0.199** are in the same feature band.
+The upgrade policy specifically targets .NET Core SDK feature bands. Feature bands are defined in the hundreds groups in the patch section of the version number. For example, **3.0.101** and **3.0.201** are versions in two different feature bands while **3.0.101** and **3.0.199** are in the same feature band.
 
 This means when .NET Core SDK **3.0.101** becomes available and is installed, .NET Core SDK **3.0.100** will be removed from the machine if it exists. When .NET Core SDK **3.0.200** becomes available and is installed on the same machine, .NET Core SDK **3.0.101** will not be removed. In that situation, .NET Core SDK **3.0.200** will still be used by default, but .NET Core SDK **3.0.101** (or higher **.1xx** versions) will still be usable if it is configured for use via [global.json](../tools/global-json.md).
 

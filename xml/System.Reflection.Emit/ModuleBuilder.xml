@@ -794,7 +794,7 @@
    
   
 ## Examples  
- The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
+ The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Windows API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
   
 > [!IMPORTANT]
 >  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
@@ -884,7 +884,7 @@
    
   
 ## Examples  
- The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
+ The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Windows API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
   
 > [!IMPORTANT]
 >  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  

@@ -123,7 +123,7 @@
 |<xref:System.Security.Principal.WindowsIdentity.IsAuthenticated%2A>|`false`|  
   
 > [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
  ]]></format>
         </remarks>
@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A UPN has the format *username*@*domainname*.com, in other words, an email address. The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
+ A UPN has the format *username*@*domainname*.com, in other words, an email address. The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Windows API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
   
 > [!NOTE]
 >  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](https://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
@@ -281,7 +281,7 @@
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
 > [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -396,7 +396,7 @@
 ## Remarks  
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
- The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
+ The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Windows API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
   
 > [!NOTE]
 >  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](https://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
@@ -468,7 +468,7 @@
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
 > [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -538,7 +538,7 @@
 ## Remarks  
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
- You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+ You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -1276,7 +1276,7 @@ Application code does not call this method; it is automatically invoked during g
         <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="userToken">The handle of a Windows account token. This token is usually retrieved through a call to unmanaged code, such as a call to the Win32 API <see langword="LogonUser" /> function.</param>
+        <param name="userToken">The handle of a Windows account token. This token is usually retrieved through a call to unmanaged code, such as a call to the Windows API <see langword="LogonUser" /> function.</param>
         <summary>Impersonates the user represented by the specified user token.</summary>
         <returns>An object that represents the Windows user prior to impersonation; this object can be used to revert to the original user's context.</returns>
         <remarks>

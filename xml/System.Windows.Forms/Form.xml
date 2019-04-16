@@ -5542,7 +5542,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
   
  Owner draw is not supported when <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> is set to `Yes`. The owner draw events will still occur, but the behavior of any code you author in these events is not defined. Additionally, <xref:System.Windows.Forms.Control.BackgroundImage%2A>, <xref:System.Windows.Forms.Form.Opacity%2A>, <xref:System.Windows.Forms.Form.TransparencyKey%2A>, and the painting events are not supported.  
   
- The <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> and <xref:System.Windows.Forms.Control.RightToLeft%2A> properties cause the following Win32 API window styles to be set:  
+ The <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> and <xref:System.Windows.Forms.Control.RightToLeft%2A> properties cause the following Windows API window styles to be set:  
   
 -   When <xref:System.Windows.Forms.Control.RightToLeft%2A> is set to `Yes` and <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> is set to `true`, Windows Forms sets the `WS_EX_LAYOUTRTL` window style, and removes the `WS_EX_RIGHT` and `WS_EX_RTLREADING` styles.  
   

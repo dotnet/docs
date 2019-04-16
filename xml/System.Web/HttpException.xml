@@ -418,8 +418,8 @@
       </Parameters>
       <Docs>
         <param name="message">The error message displayed to the client when the exception is thrown.</param>
-        <summary>Creates a new <see cref="T:System.Web.HttpException" /> exception based on the error code that is returned from the Win32 API <see langword="GetLastError()" /> method.</summary>
-        <returns>An <see cref="T:System.Web.HttpException" /> based on the error code that is returned from a call to the Win32 API <see langword="GetLastError()" /> method.</returns>
+        <summary>Creates a new <see cref="T:System.Web.HttpException" /> exception based on the error code that is returned from the Windows API <see langword="GetLastError()" /> method.</summary>
+        <returns>An <see cref="T:System.Web.HttpException" /> based on the error code that is returned from a call to the Windows API <see langword="GetLastError()" /> method.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Exception.InnerException" />
       </Docs>

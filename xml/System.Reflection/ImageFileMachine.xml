@@ -41,7 +41,7 @@
  To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  The values in this enumeration correspond to the constants IMAGE_FILE_MACHINE_I386, IMAGE_FILE_MACHINE_IA64, and IMAGE_FILE_MACHINE_AMD64 in the unmanaged Win32 API, which are accessed by the unmanaged `GetPEKind` function.  
+>  The values in this enumeration correspond to the constants IMAGE_FILE_MACHINE_I386, IMAGE_FILE_MACHINE_IA64, and IMAGE_FILE_MACHINE_AMD64 in the unmanaged Windows API, which are accessed by the unmanaged `GetPEKind` function.  
   
  ]]></format>
     </remarks>

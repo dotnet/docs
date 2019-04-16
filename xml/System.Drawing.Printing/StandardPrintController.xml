@@ -164,7 +164,7 @@
   
  -or-  
   
- The native Win32 API could not delete the specified device context (DC).</exception>
+ The native Windows API could not delete the specified device context (DC).</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for controlling access to printers. Related enumeration: <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" />.</permission>
         <altmember cref="M:System.Drawing.Printing.StandardPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
         <altmember cref="M:System.Drawing.Printing.StandardPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
@@ -219,7 +219,7 @@
   
  -or-  
   
- The native Win32 API could not update the specified printer or plotter device context (DC) using the specified information.</exception>
+ The native Windows API could not update the specified printer or plotter device context (DC) using the specified information.</exception>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for controlling access to printers. Related enumeration: <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" />.</permission>
         <altmember cref="M:System.Drawing.Printing.StandardPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
         <altmember cref="M:System.Drawing.Printing.StandardPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />

@@ -665,7 +665,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When using this method, you must dispose of the original icon by using the `DestroyIcon` method in the Win32 API to ensure that the resources are released.  
+ When using this method, you must dispose of the original icon by using the `DestroyIcon` method in the Windows API to ensure that the resources are released.  
   
    
   
@@ -680,7 +680,7 @@
   
 -   Sets the <xref:System.Windows.Forms.Form.Icon%2A?displayProperty=nameWithType> attribute of the form to an icon created from the handle.  
   
--   Calls the Win32 API function `DestroyIcon` to release resources.  
+-   Calls the Windows API function `DestroyIcon` to release resources.  
   
  [!code-cpp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CPP/form1.cpp#6)]
  [!code-csharp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CS/form1.cs#6)]

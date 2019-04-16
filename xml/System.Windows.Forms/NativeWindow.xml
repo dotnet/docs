@@ -204,7 +204,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OutOfMemoryException">The operating system ran out of resources when trying to create the native window.</exception>
-        <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 API could not create the specified window.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">The native Windows API could not create the specified window.</exception>
         <exception cref="T:System.InvalidOperationException">The handle of the current native window is already assigned; in explanation, the <see cref="P:System.Windows.Forms.NativeWindow.Handle" /> property is not equal to <see cref="F:System.IntPtr.Zero" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">to create a top-level window. This permission is only demanded if the window style is not a child or if the window does not have a parent. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
         <altmember cref="T:System.Windows.Forms.CreateParams" />

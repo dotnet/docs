@@ -991,7 +991,7 @@ This method is most useful in monitoring scenarios for measuring the difference 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The purpose of the <xref:System.GC.KeepAlive%2A> method is to ensure the existence of a reference to an object that is at risk of being prematurely reclaimed by the garbage collector. A common scenario where this might happen is when there are no references to the object in managed code or data, but the object is still in use in unmanaged code such as Win32 APIs, unmanaged DLLs, or methods using COM.  
+ The purpose of the <xref:System.GC.KeepAlive%2A> method is to ensure the existence of a reference to an object that is at risk of being prematurely reclaimed by the garbage collector. A common scenario where this might happen is when there are no references to the object in managed code or data, but the object is still in use in unmanaged code such as Windows APIs, unmanaged DLLs, or methods using COM.  
   
  This method references the `obj` parameter, making that object ineligible for garbage collection from the start of the routine to the point, in execution order, where this method is called. Code this method at the end, not the beginning, of the range of instructions where `obj` must be available.  
   

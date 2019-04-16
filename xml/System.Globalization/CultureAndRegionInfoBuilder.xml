@@ -1453,7 +1453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method does the reverse of the <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 API [GetWindowsDirectory](https://go.microsoft.com/fwlink/?LinkId=191561) function. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method deletes the persisted custom culture file from the computer. After the file is deleted, existing instances of the custom culture in computer memory continue to work, but new instances of the custom culture cannot be created.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method does the reverse of the <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Windows API [GetWindowsDirectory](https://go.microsoft.com/fwlink/?LinkId=191561) function. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method deletes the persisted custom culture file from the computer. After the file is deleted, existing instances of the custom culture in computer memory continue to work, but new instances of the custom culture cannot be created.  
   
    
   

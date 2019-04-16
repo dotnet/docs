@@ -47,7 +47,7 @@
   
 -   Call the <xref:System.Windows.Forms.Control.IsKeyLocked%2A> method of the <xref:System.Windows.Forms.Control> class.  
   
--   For finer control, use the Win32 API functions `GetKeyState`, `GetAsyncKeyState`, or `GetKeyboardState` defined in user32.dll, to do this. For more information about calling native functions, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+-   For finer control, use the Windows API functions `GetKeyState`, `GetAsyncKeyState`, or `GetKeyboardState` defined in user32.dll, to do this. For more information about calling native functions, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
  The following table shows the key code values represented by two enumerated values, representing both the general original equipment manufacturer (OEM) keys and the more specific U.S.-keyboard associations.  
   

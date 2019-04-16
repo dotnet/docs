@@ -514,7 +514,7 @@
  This method is used to access a configuration file using impersonation.  
   
 > [!NOTE]
->  The account token is usually retrieved from an instance of the <xref:System.Security.Principal.WindowsIdentity> class or through a call to unmanaged code, such as a call to the Win32 API `LogonUser`. For more information about calls to unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  The account token is usually retrieved from an instance of the <xref:System.Security.Principal.WindowsIdentity> class or through a call to unmanaged code, such as a call to the Windows API `LogonUser`. For more information about calls to unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -1074,7 +1074,7 @@
  This method is used to access a configuration file using impersonation.  
   
 > [!NOTE]
->  The account token is usually retrieved from an instance of the <xref:System.Security.Principal.WindowsIdentity> class or through a call to unmanaged code, such as a call to the Win32 API `LogonUser`. For more information about calls to unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  The account token is usually retrieved from an instance of the <xref:System.Security.Principal.WindowsIdentity> class or through a call to unmanaged code, such as a call to the Windows API `LogonUser`. For more information about calls to unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
  To obtain the <xref:System.Configuration.Configuration> object for a remote resource, your code must have administrative privileges on the remote computer.  
   

@@ -524,7 +524,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the callee calls the <see langword="SetLastError" /> Win32 API function before returning from the attributed method.</summary>
+        <summary>Indicates whether the callee calls the <see langword="SetLastError" /> Windows API function before returning from the attributed method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

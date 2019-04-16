@@ -10,10 +10,13 @@ ms.date: 04/02/2019
 
 ML.NET is a free, open-source and cross-platform machine learning framework for .NET developers.
  
-**ML.NET aims to make machine learning approachable and accessible to .NET developers,** without requiring a data science background (though data scientists are welcomed and encouraged to use ML.NET too!).
+ML.NET aims to make machine learning **approachable** and **accessible** to .NET developers, without requiring a data science background (though data scientists are welcomed and encouraged to use ML.NET too!).
 
 > [!div class="nextstepaction"]
 > [Learn the basics of ML.NET](what-is-mldotnet.md)
 
 > [!div class="nextstepaction"]
-> [Get started by creating your first ML.NET app](github-issue-classification.md)
+> [Get started by creating your first ML.NET app](https://dotnet.microsoft.com/learn/machinelearning-ai/ml-dotnet-get-started-tutorial/intro)
+
+
+

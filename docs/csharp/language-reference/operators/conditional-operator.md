@@ -38,7 +38,11 @@ is evaluated as
 a ? b : (c ? d : e)
 ```
 
-A handy mnemonic device you can use to remember how this operator evaluates is by asking: `is this cond true ? yes : no`, with the ? part of the operator acting as a question mark for the previous statement, and the consequent acting as the logical response to this question.
+A handy mnemonic device you can use to remember how this operator evaluates is by asking: 
+```
+is this condition true ? yes : no
+```
+with the ? part of the operator acting as a question mark for the previous statement, and the consequent acting as the logical response to this question.
 
 The following example demonstrates the usage of the conditional operator:
 

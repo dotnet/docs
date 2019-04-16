@@ -11,7 +11,7 @@ ms.date: 02/15/2019
 
 Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by the type of work delivered by multiple teams (app-development, DevOps infrastructure processes, and IT management and operations). Usually, in the enterprise, the profiles of "the persona" responsible for each area are different. So are their skills.
 
-![Microsoft tools. For the Develop/Design workload: Docker engine for Windows, VS and VS Code, .NET Core, Azure Kubernetes Service. For the Build/Test/Ship workload: Azure DevOps, Team Foundation Server, Docker CLI, Azure Kubernetes Service. For the Run/Monitor/Manage workload: Application Insights, Azure Portal Azure Kubernetes Services, Service Fabric, other orchestrators.](./media/image1.png)
+![Microsoft tools. For the Develop/Design workload: Docker engine for Windows, VS and VS Code, .NET Core, Azure Kubernetes Service. For the Build/Test/Ship workload: Azure DevOps, Team Foundation Server, Docker CLI, Azure Kubernetes Service. For the Run/Monitor/Manage workload: Azure Monitor, Azure Portal Azure Kubernetes Services, Service Fabric, other orchestrators.](./media/image1.png)
 
 **Figure 3-1.** Main pillars in the life cycle for containerized Docker applications with Microsoft platform and tools
 
@@ -45,7 +45,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
   - **Open-source tools** Because AKS exposes the standard API endpoints for the orchestration engine, the most popular tools are compatible with AKS and, in most cases, will work out of the box—including visualizers, monitoring, command-line tools, and even future tools as they become available.
 
-  - **Application Insights** Is Azure's soution to monitor every angle of your production evironment. You can monitor production Docker applications by just setting up its SDK into your services so that you can get system-generated log data from the applications.
+  - **Azure Monitor** Is Azure's solution to monitor every angle of your production environment. You can monitor production Docker applications by just setting up its SDK into your services so that you can get system-generated log data from the applications.
 
 Thus, Microsoft offers a complete foundation for an end-to-end containerized Docker application life cycle. However, it's *a collection of products and technologies that allow you to optionally select and integrate with existing tools and processes*. The flexibility in a broad approach along with the strength in the depth of capabilities place Microsoft in a strong position for containerized Docker application development.
 

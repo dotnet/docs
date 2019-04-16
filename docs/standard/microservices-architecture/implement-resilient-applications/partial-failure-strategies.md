@@ -30,7 +30,7 @@ Strategies for dealing with partial failures include the following.
   <https://docs.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10)>
 
 - **Bulkhead.** GitHub repo. Implementation with Polly policy.\
-  [https://github.com/App-vNext/Polly/wiki/Bulkhead](https://github.com/App-vNext/Polly/wiki/Bulkhead)
+  <https://github.com/App-vNext/Polly/wiki/Bulkhead>
 
 - **Designing resilient applications for Azure**\
   [https://docs.microsoft.com/azure/architecture/resiliency/](/azure/architecture/resiliency/)

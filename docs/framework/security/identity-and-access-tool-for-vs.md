@@ -5,7 +5,7 @@ ms.assetid: 87b8f8f2-4074-44fd-9fd6-08278e877390
 author: "BrucePerlerMS"
 ---
 # Identity and Access Tool for Visual Studio 2012
-This topic describes the new Identity and Access Tool for Visual Studio 11. You can download this tool from the following URL: [https://go.microsoft.com/fwlink/?LinkID=245849](https://go.microsoft.com/fwlink/?LinkID=245849) or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager.  
+This topic describes the new Identity and Access Tool for Visual Studio 11. You can download this tool from the following URL: <https://go.microsoft.com/fwlink/?LinkID=245849> or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager.  
   
  The Identity and Access Tool for Visual Studio 11 delivers a dramatically simplified development-time experience with the following highlights:  
   

@@ -35,7 +35,7 @@ For additional not-supported scenarios and requests from the community, see the 
 
 -   **Virtual machines and containers in Azure**
 
-    [https://docs.microsoft.com/azure/virtual-machines/windows/containers](https://docs.microsoft.com/azure/virtual-machines/windows/containers)
+    <https://azure.microsoft.com/overview/containers/>
 
 >[!div class="step-by-step"]
 >[Previous](deploy-existing-net-apps-as-windows-containers.md)

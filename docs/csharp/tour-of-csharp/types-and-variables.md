@@ -39,16 +39,16 @@ The following provides an overview of C#’s type system.
   - [Delegate types][DelegateTypes]
     * User-defined types of the form `delegate int D(...)`
 
-[ValueTypes]: ../../language-reference/keywords/value-types-table.md
-[SimpleTypes]: ../../language-reference/keywords/value-types.md#simple-types
-[EnumTypes]: ../../language-reference/keywords/enum.md
-[StructTypes]: ../../language-reference/keywords/struct.md
-[NullableTypes]: ../../programming-guide/nullable-types/index.md
-[ReferenceTypes]: ../../language-reference/keywords/reference-types.md
-[ClassTypes]: ../../language-reference/keywords/class.md
-[InterfaceTypes]: ../../language-reference/keywords/interface.md
-[DelegateTypes]: ../../language-reference/keywords/delegate.md
-[ArrayTypes]: ../../language-reference/arrays/index.md
+[ValueTypes]: ../language-reference/keywords/value-types-table.md
+[SimpleTypes]: ../language-reference/keywords/value-types.md#simple-types
+[EnumTypes]: ../language-reference/keywords/enum.md
+[StructTypes]: ../language-reference/keywords/struct.md
+[NullableTypes]: ../programming-guide/nullable-types/index.md
+[ReferenceTypes]: ../language-reference/keywords/reference-types.md
+[ClassTypes]: ../language-reference/keywords/class.md
+[InterfaceTypes]: ../language-reference/keywords/interface.md
+[DelegateTypes]: ../language-reference/keywords/delegate.md
+[ArrayTypes]: ../language-reference/arrays/index.md
 
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
 

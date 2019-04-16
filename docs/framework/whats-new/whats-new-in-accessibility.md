@@ -200,6 +200,7 @@ var peer = FrameworkElementAutomationPeer.FromElement(myTextBlock);
 
 peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged);
 ```
+
 ```vb
 Dim peer = FrameworkElementAutomationPeer.FromElement(myTextBlock)
 peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)

@@ -38,13 +38,13 @@ There is only one application architecture: the architecture of the system or en
 ### Additional resources
 
 - **Martin Fowler. CQRS** \
-  [https://martinfowler.com/bliki/CQRS.html](https://martinfowler.com/bliki/CQRS.html)
+  <https://martinfowler.com/bliki/CQRS.html>
 
 - **Greg Young. CQRS Documents** \
-  [https://cqrs.files.wordpress.com/2010/11/cqrs\_documents.pdf](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf)
+  <https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf>
 
 - **Udi Dahan. Clarified CQRS** \
-  [http://udidahan.com/2009/12/09/clarified-cqrs/](http://udidahan.com/2009/12/09/clarified-cqrs/)
+  <http://udidahan.com/2009/12/09/clarified-cqrs/>
 
 >[!div class="step-by-step"]
 >[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)

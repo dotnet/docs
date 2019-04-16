@@ -98,7 +98,7 @@ application, you'll read information from the
 about the projects under the
 [.NET Foundation](https://www.dotnetfoundation.org/) umbrella. You'll
 start by making the request to the GitHub API to retrieve information
-on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
+on the projects. The endpoint you'll use is: <https://api.github.com/orgs/dotnet/repos>. You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.
 Your browser also uses HTTP GET requests, so you can paste that URL into
 your browser to see what information you'll be receiving and processing.

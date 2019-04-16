@@ -26,6 +26,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
     ```csharp
     using System;
+    using System.IO;
     using Microsoft.Data.DataView;
     using Microsoft.ML;
     using Microsoft.ML.Data;
@@ -48,22 +49,22 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
         {
             MLContext mlContext = new MLContext();
     
-            // 1. Training data
+            // 1. Import or create training data
             HouseData[] houseData = {
-                new HouseData() { Size = 1.1F, Price = 0.98F },
-                new HouseData() { Size = 1.9F, Price = 2.1F },
-                new HouseData() { Size = 2.8F, Price = 2.9F },
-                new HouseData() { Size = 3.4F, Price = 3.6F } };
+                new HouseData() { Size = 1.1F, Price = 1.2F },
+                new HouseData() { Size = 1.9F, Price = 2.3F },
+                new HouseData() { Size = 2.8F, Price = 3.0F },
+                new HouseData() { Size = 3.4F, Price = 3.7F } };
             IDataView trainingData = mlContext.Data.LoadFromEnumerable(houseData);
 
-            // 2. Data processing and model training pipeline    
+            // 2. Specify data preparation and model training pipeline
             var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
                 .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
     
-            // 3. Trained model
+            // 3. Train model
             var model = pipeline.Fit(trainingData);
     
-            // 4. New prediction
+            // 4. Make a prediction
             var size = new HouseData() { Size = 2.5F };
             var predEngine = model.CreatePredictionEngine<HouseData, Prediction>(mlContext);
             var price = predEngine.Predict(size);
@@ -77,8 +78,8 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
 Even though this is the simplest of code examples, there are elements that are common to every ML.NET application:
 
-    1. Provide some data to train your model
-    1. Create a data processing and model training pipeline
+    1. Provide training data
+    1. Create a data preparation and model training pipeline
     1. Train the model
     1. Make predictions with new data
 
@@ -96,25 +97,17 @@ An ML.NET model is an encapsulation of the transformations to perform on your in
 
 The very simplest example of this is two dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above. 
 
-**Diagram**
+![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.png)
 
 The model is simply: `Price = b * Size + w`. The parameters `b` and `w` are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, `Size` is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the `Price` values in the training data set is the label. 
 
-### Medium complexity
+### More complex
 
 A more complex model classifies financial transactions into categories using the text description of the transaction.
 
-**Diagram**
+Each transaction description is broken down into a set of features by removing redundant words and characters, counting word and character combinations, then training a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category. 
 
-The description is broken down into a set of features by removing redundant words and characters, and counting word and character combinations, then training a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category. 
-
-Explain weights and score.
-
-**Diagram**
-
-### Neural network
-
-More complex again.
+![Text Classification Model](./media/text-classification-model.png)
 
 ## Data preparation
 
@@ -212,7 +205,6 @@ You can transform input data into predictions in bulk, or one input at a time. I
  
 The `CreatePredictionEngine()` method takes an input class and a output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about this in [??](??).
 
-
 ### Data models and schema
 
 At the core of an ML.NET machine learning pipeline are [DataView](xref:Microsoft.ML.Data.IDateView) objects.
@@ -221,17 +213,15 @@ Each transformation in the pipeline has an input schema (data names, types and s
 
 If the output schema from one transform in the pipeline does not match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type <xref:System.Single> and they have length 1, that is they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type <xref:System.Single> and they are scalar quantities rather than vector ones.
 
-**Diagram**
+![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 
 All ML.NET algorithms look for an input column that is a vector. By default this vector column is called **Features**. This is why we concatenated the **Size** column into a new column called **Features** in our house price example.
 
     ```csharp
     var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
     ```
-
-**Diagram: features --> prediction**
 
 All algorithms also create new columns after they have performed a prediction. The fixed names of these new columns depend on the type of machine learning algorithm. For the regression task, one of the new columns is called **Score**. This is why we attributed our price data with this name.
 
@@ -243,28 +233,30 @@ All algorithms also create new columns after they have performed a prediction. T
     }
     ```    
 
-You can find out more about output columns of different machine learning tasks [here](here).
+You can find out more about output columns of different machine learning tasks in the [Machine Learning Tasks](resources/tasks.md) guide.
 
-One very important fact about DataView objects is that they are evaluated **lazily**. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.Data.DataView.Preview) method.
+A very important property of DataView objects is that they are evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.Data.DataView.Preview) method.
 
     ```csharp
     var debug = testPriceDataView.Preview();
     ```
 
-You can watch the `debug` variable in the debugger and examine its contents.
-
+You can watch the `debug` variable in the debugger and examine its contents. Do not use the Preview method in production code, as it significantly degrades performance.
 
 ### Model Deployment
 
 In real-life applications, your model training and evaluation code will be separate from your prediction. In fact, these two activities are often performed by separate teams. Your model development team can save the model for use in the prediction application.
 
-   ```csharp
+   ```csharp   
+   using (var fs = new FileStream("model.zip", FileMode.Create, FileAccess.Write, FileShare.Write))
+        mlContext.Model.Save(model, trainingData.Schema, fs);
+
    ```
 
 ## Where to now?
 
-If you're still reading, and you want to know more, you can learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](tutorials)
+You can learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](tutorials).
 
+Or you can learn about specific topics in more depth in the [How To Guides](how-to-guides).
 
-   
-   
+And if you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)!

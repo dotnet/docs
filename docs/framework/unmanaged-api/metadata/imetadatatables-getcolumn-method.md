@@ -47,7 +47,7 @@ HRESULT GetColumn (
  
 ## Remarks
 
-The interpretion of the value returned through `pVal` depends on the column's type. The column type can be determined by calling **IMetaDataTables.GetColumnInfo**.
+The interpretion of the value returned through `pVal` depends on the column's type. The column type can be determined by calling [IMetaDataTables.GetColumnInfo](imetadatatables-getcolumninfo-method.md).
 
 - The **GetColumn** method automatically converts columns of type **Rid** or **CodedToken** to full 32-bit `mdToken` values.
 - It also automatically converts 8-bit or 16-bit values to full 32-bit values. 

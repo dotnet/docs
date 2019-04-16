@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis binary classification scenario
 description: Discover how to use ML.NET in a binary classification scenario to understand how to use sentiment prediction to take the appropriate action.
-ms.date: 04/12/2019
+ms.date: 04/17/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
@@ -99,11 +99,9 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 ### Initialize variables in Main
 
-Replace the `Console.WriteLine("Hello World!")` line with the following code in the `Main` method:
+Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
 
 [!code-csharp[CreateMLContext](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateMLContext "Create the ML Context")]
-
-The previous code creates a variable called `mlContext` and initializes it with a new instance of `MLContext`.
 
 Add the following as the next line of code in the `Main` method:
 
@@ -186,9 +184,6 @@ The `FeaturizeText()` method in the previous code converts the text column (`Sen
 |Wow... Loved this place.              |    1     |[0.35, 0.73, 0.46, …] |
 |Service was very prompt.              |    1     |[0.39, 0, 0.75, …]    |
 
->[!WARNING]
-> ML.NET Version 0.10 changed the order of the Transform parameters. This will not error out until you run the application and build the model. Use the parameter names for Transforms as illustrated in the previous code snippet.
-
 ## Add a learning algorithm
 
 ### About the classification task
@@ -202,9 +197,9 @@ Classification is a machine learning algorithm that uses data to **determine** t
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
 
-Because the website comments need to be classified as either positive or negative, you use the Binary Classification algorithm.
+Because the website comments need to be classified as either positive or negative, you use the Binary Classification task.
 
-Append the machine learning algorithm to the data transformation definitions by adding the following as the next line of code in `BuildAndTrainModel()`:
+Append the machine learning task to the data transformation definitions by adding the following as the next line of code in `BuildAndTrainModel()`:
 
 [!code-csharp[SdcaLogisticRegressionBinaryTrainer](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#AddTrainer "Add a SdcaLogisticRegressionBinaryTrainer")]
 
@@ -216,7 +211,7 @@ Fit the model to the `Train` data and return the trained model by adding the fol
 
 [!code-csharp[TrainModel](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#TrainModel "Train the model")]
 
-The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.ML.IDataView,Microsoft.ML.IDataView%29) method trains your model with the provided training dataset. It executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
+The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.ML.IDataView,Microsoft.ML.IDataView%29) method trains your model by transforming the dataset and applying the training.
 
 ### Return the model trained to use for evaluation
 
@@ -367,9 +362,6 @@ Before displaying the predicted results, combine the original comment with its p
 Now that `SentimentText` and `Sentiment` are combined in a class, display the results:
 
 [!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#DisplayResults "Display the predictions")]
-
-Because inferred tuple element names are a new feature in C# 7.1 and the default language version of the project is C# 7.0, you need to change the language version to C# 7.1 or higher.
-To do that, right-click on the project node in **Solution Explorer** and select **Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown, select  **C# 7.1** (or a higher version). Select the **OK** button.
 
 ## Results
 

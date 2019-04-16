@@ -85,9 +85,9 @@
   
 <a name="updatepanel_usage"></a>   
 ## UpdatePanel Usage  
- You can use multiple <xref:System.Web.UI.UpdatePanel> controls to update different page regions independently. When the page that contains one or more <xref:System.Web.UI.UpdatePanel> controls is first rendered, all the content of all <xref:System.Web.UI.UpdatePanel> controls are rendered and sent to the browser. On subsequent asynchronous postbacks, the content of each <xref:System.Web.UI.UpdatePanel> control might not be updated depending on the panel settings and on client or server logic for individual panels.  
+ You can use multiple <xref:System.Web.UI.UpdatePanel> controls to update multiple page regions independently. When the page that contains one or more <xref:System.Web.UI.UpdatePanel> controls is first rendered, all the content of all <xref:System.Web.UI.UpdatePanel> controls are rendered and sent to the browser. On subsequent asynchronous postbacks, the content of each <xref:System.Web.UI.UpdatePanel> control might not be updated depending on the panel settings and on client or server logic for individual panels.  
   
- You can also use <xref:System.Web.UI.UpdatePanel> controls in the following scenarios:  
+ You can also use <xref:System.Web.UI.UpdatePanel> controls for the following:
   
 -   In user controls.  
   
@@ -156,7 +156,7 @@
    
   
 ## Examples  
- The following examples show different uses of the <xref:System.Web.UI.UpdatePanel> control.  
+ The following examples show various uses of the <xref:System.Web.UI.UpdatePanel> control.  
   
  **Controls Inside an UpdatePanel Control**  
   
@@ -503,7 +503,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the collection of all controls that are contained in the <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
+        <summary>Returns the collection of all controls contained in the <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> object that consists of all controls that define the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -546,7 +546,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When you override the <see cref="M:System.Web.UI.UpdatePanel.Initialize" /> method, make sure to call the base class so that triggers are registered if partial-page rendering is enabled.</para>
+          <para>When you override the <see cref="M:System.Web.UI.UpdatePanel.Initialize" /> method, be sure to call the base class so that triggers are registered if partial-page rendering is enabled.</para>
         </block>
         <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
         <altmember cref="P:System.Web.UI.ScriptManager.SupportsPartialRendering" />
@@ -625,7 +625,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.UpdatePanel.ContentTemplate" /> property is being defined when the <see cref="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" /> property has already been created.</exception>
         <block subset="none" type="overrides">
-          <para>When you override the <see cref="M:System.Web.UI.UpdatePanel.OnInit(System.EventArgs)" /> method in a derived class, make sure to call the <see cref="M:System.Web.UI.UpdatePanel.OnInit(System.EventArgs)" /> method of the base class so that registered delegates can receive the event.</para>
+          <para>When you override the <see cref="M:System.Web.UI.UpdatePanel.OnInit(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.UpdatePanel.OnInit(System.EventArgs)" /> method of the base class so that registered delegates can receive the event.</para>
         </block>
         <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
@@ -654,7 +654,7 @@
         <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event for the <see cref="T:System.Web.UI.UpdatePanel" /> control and invokes the <see cref="M:System.Web.UI.UpdatePanel.Initialize" /> method when partial-page rendering is not enabled.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>If you override the <see cref="M:System.Web.UI.UpdatePanel.OnLoad(System.EventArgs)" /> method, make sure to call the base class so that the <see cref="E:System.Web.UI.Control.Load" /> event will be raised.</para>
+          <para>If you override the <see cref="M:System.Web.UI.UpdatePanel.OnLoad(System.EventArgs)" /> method, be sure to call the base class so that the <see cref="E:System.Web.UI.Control.Load" /> event will be raised.</para>
         </block>
         <altmember cref="M:System.Web.UI.UpdatePanel.Initialize" />
         <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
@@ -756,7 +756,7 @@
 ## Remarks  
  The <xref:System.Web.UI.UpdatePanel.Render%2A> method is used by control developers to extend the functionality of the <xref:System.Web.UI.UpdatePanel> control.  
   
- The <xref:System.Web.UI.UpdatePanel.Render%2A> method writes the rendered content of the <xref:System.Web.UI.UpdatePanel> control to the browser by using the supplied <xref:System.Web.UI.HtmlTextWriter> object. When you override the <xref:System.Web.UI.UpdatePanel.Render%2A> method in a derived class, make sure to call the <xref:System.Web.UI.UpdatePanel.Render%2A> method of the base class so that the child controls of the <xref:System.Web.UI.UpdatePanel> control are rendered.  
+ The <xref:System.Web.UI.UpdatePanel.Render%2A> method writes the rendered content of the <xref:System.Web.UI.UpdatePanel> control to the browser by using the supplied <xref:System.Web.UI.HtmlTextWriter> object. When you override the <xref:System.Web.UI.UpdatePanel.Render%2A> method in a derived class, be sure to call the <xref:System.Web.UI.UpdatePanel.Render%2A> method of the base class so that the child controls of the <xref:System.Web.UI.UpdatePanel> control are rendered.  
   
  ]]></format>
         </remarks>
@@ -1029,7 +1029,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the page is enabled for partial-page rendering, when you invoke the <xref:System.Web.UI.UpdatePanel.Update%2A> method, the <xref:System.Web.UI.UpdatePanel> control's content is updated in the browser. Call the <xref:System.Web.UI.UpdatePanel.Update%2A> method if you have server code that must execute to determine whether an <xref:System.Web.UI.UpdatePanel> control should be updated. If you plan to use the <xref:System.Web.UI.UpdatePanel.Update%2A> method, set the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property to <xref:System.Web.UI.UpdatePanelUpdateMode.Conditional>. If you want the decision to update the panel in server logic, make sure that the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `false` and that no explicit triggers are defined for the panel.  
+ If the page is enabled for partial-page rendering, when you invoke the <xref:System.Web.UI.UpdatePanel.Update%2A> method, the <xref:System.Web.UI.UpdatePanel> control's content is updated in the browser. Call the <xref:System.Web.UI.UpdatePanel.Update%2A> method if you have server code that must execute to determine whether an <xref:System.Web.UI.UpdatePanel> control should be updated. If you plan to use the <xref:System.Web.UI.UpdatePanel.Update%2A> method, set the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property to <xref:System.Web.UI.UpdatePanelUpdateMode.Conditional>. If you want the decision to update the panel in server logic, ensure that the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `false` and that no explicit triggers are defined for the panel.  
   
  In a typical page development scenario, if you define triggers or if the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `true` for the <xref:System.Web.UI.UpdatePanel> control, the <xref:System.Web.UI.UpdatePanel.Update%2A> method is automatically called during the page life cycle.  
   
@@ -1088,11 +1088,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an <xref:System.Web.UI.UpdatePanel> control is not inside another <xref:System.Web.UI.UpdatePanel> control, the panel is updated according to the settings of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> and <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> properties, together with the collection of triggers. When an <xref:System.Web.UI.UpdatePanel> control is inside another <xref:System.Web.UI.UpdatePanel> control, the child panel is automatically updated when the parent panel is updated.  
+ When an <xref:System.Web.UI.UpdatePanel> control is not inside another <xref:System.Web.UI.UpdatePanel> control, the panel is updated as determined by the settings of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> and <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> properties, together with the collection of triggers. When an <xref:System.Web.UI.UpdatePanel> control is inside another <xref:System.Web.UI.UpdatePanel> control, the child panel is automatically updated when the parent panel is updated.  
   
  The content of an <xref:System.Web.UI.UpdatePanel> control is updated in the following circumstances:  
   
--   If the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Always>, the <xref:System.Web.UI.UpdatePanel> control's content is updated on every postback that originates from anywhere on the page. This includes asynchronous postbacks from controls that are inside other <xref:System.Web.UI.UpdatePanel> controls and postbacks from controls that are not inside <xref:System.Web.UI.UpdatePanel> controls.  
+-   If the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Always>, the <xref:System.Web.UI.UpdatePanel> control's content is updated on every postback that originates from anywhere on the page. This includes asynchronous postbacks from controls inside other <xref:System.Web.UI.UpdatePanel> controls and postbacks from controls that are not inside <xref:System.Web.UI.UpdatePanel> controls.  
   
 -   If the <xref:System.Web.UI.UpdatePanel> control is nested inside another <xref:System.Web.UI.UpdatePanel> control and the parent update panel is updated.  
   
@@ -1100,14 +1100,14 @@
   
     -   You call the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the <xref:System.Web.UI.UpdatePanel> control explicitly.  
   
-    -   The postback is caused by a control that is defined as a trigger by using the <xref:System.Web.UI.UpdatePanel.Triggers%2A> property of the <xref:System.Web.UI.UpdatePanel> control. In this scenario, the control explicitly triggers an update of the panel content. The control can be either inside or outside the <xref:System.Web.UI.UpdatePanel> control that defines the trigger.  
+    -   The postback is caused by a control defined as a trigger by using the <xref:System.Web.UI.UpdatePanel.Triggers%2A> property of the <xref:System.Web.UI.UpdatePanel> control. In this scenario, the control explicitly triggers an update of the panel content. The control can be either inside or outside the <xref:System.Web.UI.UpdatePanel> control that defines the trigger.  
   
     -   The <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is set to `true` and a child control of the <xref:System.Web.UI.UpdatePanel> control causes a postback. A child control of a nested <xref:System.Web.UI.UpdatePanel> control does not cause an update to the outer <xref:System.Web.UI.UpdatePanel> control unless it is explicitly defined as a trigger.  
   
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property. The example declares two <xref:System.Web.UI.UpdatePanel> controls. In the first panel, the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Conditional>. In the second panel, <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Always>. A button outside both panels is registered as an asynchronous postback control by calling the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control. In the button's `Click` event handler, the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the first panel is called if more than five seconds have elapsed since its last update. In this scenario, the panel's content is updated only if the last panel refresh was more than five seconds ago. The content of the second panel is always updated.  
+ The following example declares two <xref:System.Web.UI.UpdatePanel> controls. In the first panel, the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Conditional>. In the second panel, <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> is set to <xref:System.Web.UI.UpdatePanelUpdateMode.Always>. A button outside both panels is registered as an asynchronous postback control by calling the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control. In the button's `Click` event handler, the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the first panel is called if more than five seconds have elapsed since its last update. In this scenario, the panel's content is updated only if the last panel refresh was more than five seconds ago. The content of the second panel is always updated.  
   
  [!code-aspx-csharp[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/CS/UpdatePanelUpdateModeCS.aspx#1)]
  [!code-aspx-vb[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/VB/UpdatePanelUpdateModeVB.aspx#1)]  

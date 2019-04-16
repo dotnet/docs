@@ -2,7 +2,7 @@
 documentType: LandingData
 title: ML.NET Documentation
 metadata:
-  document_id: 
+  document_id: na
   title: ML.NET Documentation - Tutorials, API Reference
   meta.description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework you can use to build custom machine learning solutions and integrate them into .NET applications. Incorporate AI into your apps using the .NET skills you already have and without leaving .NET.
   ms.prod: dotnet
@@ -19,9 +19,9 @@ sections:
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: 'Learn how to create these common solutions with ML.NET:'
+    text: 'Learn how to create common solutions with ML.NET:'
   - type: list
-    style: ordered
+    style: unordered
     items:
     - html: <a href="/machine-learning/tutorials/sentiment-analysis">Analyze sentiment using binary classification</a>
     - html: <a href="/machine-learning/tutorials/github-issue-classification">Categorize GitHub issues using multiclass classification</a></li>

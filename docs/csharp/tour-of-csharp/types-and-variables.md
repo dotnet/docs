@@ -48,7 +48,7 @@ The following provides an overview of C#’s type system.
 [ClassTypes]: ../language-reference/keywords/class.md
 [InterfaceTypes]: ../language-reference/keywords/interface.md
 [DelegateTypes]: ../language-reference/keywords/delegate.md
-[ArrayTypes]: ../language-reference/arrays/index.md
+[ArrayTypes]: ../programming-guide/arrays/index.md
 
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
 

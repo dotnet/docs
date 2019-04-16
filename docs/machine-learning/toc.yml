@@ -8,8 +8,10 @@
     - name: Model training concepts
       href: basic-concepts-model-training-in-mldotnet.md
   - name: Tutorials
-    href: tutorials/index.md
+    href: 
     items:
+    - name: Overview
+      href: tutorials/index.md
     - name: Sentiment analysis (binary classification)
       href: tutorials/sentiment-analysis.md
     - name: Issue classification (multiclass classification)

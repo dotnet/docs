@@ -203,7 +203,7 @@ You can transform input data into predictions in bulk, or one input at a time. I
     var price = predEngine.Predict(size);
     ```
  
-The `CreatePredictionEngine()` method takes an input class and a output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about this in [??](??).
+The `CreatePredictionEngine()` method takes an input class and a output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about this in [How to make a single prediction](how-to-guides/single-predict-model-ml-net).
 
 ### Data models and schema
 
@@ -215,7 +215,7 @@ If the output schema from one transform in the pipeline does not match the input
 
 A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type <xref:System.Single> and they are scalar quantities rather than vector ones.
 
-![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
+   ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 
 All ML.NET algorithms look for an input column that is a vector. By default this vector column is called **Features**. This is why we concatenated the **Size** column into a new column called **Features** in our house price example.
 

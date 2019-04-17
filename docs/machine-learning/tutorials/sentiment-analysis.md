@@ -124,8 +124,6 @@ public static TrainTestData LoadData(MLContext mlContext)
 
 ## Load the data
 
-There are three major concepts in ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
-
 Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 Add the following code as the first line of the `LoadData` method:
 
@@ -259,19 +257,7 @@ Use the following code to display the metrics:
 
 [!code-csharp[DisplayMetrics](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#DisplayMetrics "Display selected metrics")]
 
-## Save model as .zip file
-
-To save your model to a .zip file, create the `FileStream` immediately before calling the [Save()](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) method. Add the following code as the next line:
-
-[!code-csharp[SaveMethod](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#SaveModel "Add the Save Method")]
-
-Display the file location as a console message with the `_modelPath`, using the following code:
-
-```csharp
-Console.WriteLine("The model is saved to {0}", _modelPath);
-```
-
-## Predict the test data outcome with the saved model
+## Predict the test data outcome
 
 Create the `UseModelWithSingleItem` method, just after the `Evaluate` method, using the following code:
 
@@ -313,18 +299,17 @@ Display `SentimentText` and corresponding sentiment prediction using the followi
 
 [!code-csharp[OutputPrediction](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#OutputPrediction "Display prediction output")]
 
-## Deploy and Predict with a loaded model
-
-Create the `UseLoadedModelWithBatchItems` method, just before the `SaveModelAsFile` method, using the following code:
+## Deploy and predict batch items
+Create the `UseModelWithBatchItems` method, just before the `SaveModelAsFile` method, using the following code:
 
 ```csharp
-public static void UseLoadedModelWithBatchItems(MLContext mlContext)
+public static void UseModelWithBatchItems(MLContext mlContext)
 {
 
 }
 ```
 
-The `UseLoadedModelWithBatchItems` method executes the following tasks:
+The `UseModelWithBatchItems` method executes the following tasks:
 
 * Creates batch test data.
 * Predicts sentiment based on test data.
@@ -333,17 +318,13 @@ The `UseLoadedModelWithBatchItems` method executes the following tasks:
 
 Add a call to the new method from the `Main` method, right under the `UseModelWithSingleItem` method call, using the following code:
 
-[!code-csharp[CallPredictModelLoaded](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallUseLoadedModelWithBatchItems "Call the CallUseLoadedModelWithBatchItems method")]
+[!code-csharp[CallPredictModelBatchItems](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallUseModelWithBatchItems "Call the CallUseModelWithBatchItems method")]
 
-Add some comments to test the trained model's predictions in the `UseLoadedModelWithBatchItems` method:
+Add some comments to test the trained model's predictions in the `UseModelWithBatchItems` method:
 
 [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssues "Create test data for predictions")]
 
-### Load the model
-
-[!code-csharp[LoadTheModel](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#LoadModel "Load the model")]
-
-### Use the loaded model for prediction
+### Use the model for prediction
 
 Use the model to predict the comment data sentiment using the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method:
 
@@ -372,21 +353,20 @@ Model quality metrics evaluation
 --------------------------------
 Accuracy: 83.96%
 Auc: 90.51%
-F1Score: 84.21%
+F1Score: 84.04%
 
 =============== End of model evaluation ===============
-The model is saved to C:\Tutorials\SentimentAnalysis\bin\Debug\netcoreapp2.1\Data\Model.zip
 
 =============== Prediction Test of model with a single sample and test dataset ===============
 
-Sentiment: This was a very bad steak | Prediction: Negative | Probability: 0.1136748
+Sentiment: This was a very bad steak | Prediction: Negative | Probability: 0.1027377
 =============== End of Predictions ===============
 
 
 =============== Prediction Test of loaded model with a multiple samples ===============
 
-Sentiment: This was a horrible meal | Prediction: Negative | Probability: 0.1468145
-Sentiment: I love this spaghetti. | Prediction: Positive | Probability: 0.9963465
+Sentiment: This was a horrible meal | Prediction: Negative | Probability: 0.1369192
+Sentiment: I love this spaghetti. | Prediction: Positive | Probability: 0.9960636
 =============== End of predictions ===============
 
 =============== End of process ===============

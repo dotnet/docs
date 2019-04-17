@@ -6,7 +6,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
 
-So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application. 
 
 ## Debugging in Debug mode
 

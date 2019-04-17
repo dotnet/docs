@@ -1,7 +1,7 @@
 ---
 title: "How-To: Learn how to train and evaluate a machine learning model using cross validation in ML.NET"
 description: Learn how to train and evaluate a machine learning model using cross validation in ML.NET
-ms.date: 04/11/2019
+ms.date: 04/17/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 # How-To: Learn how to train and evaluate a machine learning model using cross validation in ML.NET
 
-This how-to shows you how to use cross validation to build more robust machine learning models in ML.NET. Although this sample uses a regression model, it is applicable to other algorithms in ML.NET.
+Learn how to use cross validation to build more robust machine learning models in ML.NET. Although this sample uses a regression model, it is applicable to other algorithms in ML.NET.
 
 ## The data and data model
 
@@ -24,7 +24,7 @@ Size (Sq. ft.), HistoricalPrice1 ($), HistoricalPrice2 ($), HistoricalPrice3 ($)
 1120.00, 47504.98, 45129.73, 43775.84, 46792.41
 ```
 
-The data can be represented by data model like `HousingData`:
+The data can be modeled by a class like `HousingData`:
 
 ```csharp
 public class HousingData
@@ -46,7 +46,7 @@ Load the data in into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ## Prepare the data
 
-Pre-process the data before using it to build the machine learning model. In this sample, the `Size` and `HistoricalPrices` columns are combined into a single feature vector which is output to a new column called `Features` using the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*) method. Then, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) is applied to the `Features` column to get `Size` and `HistoricalPrices` in the same range between 0-1.
+Pre-process the data before using it to build the machine learning model. In this sample, the `Size` and `HistoricalPrices` columns are combined into a single feature vector,  which is output to a new column called `Features` using the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*) method. Then, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) is applied to the `Features` column to get `Size` and `HistoricalPrices` in the same range between 0-1.
 
 ```csharp
 // Define data prep estimator
@@ -63,7 +63,7 @@ IDataView transformedData = dataPrepTransformer.Transform(data);
 
 ## Train model with cross validation
 
-Once the data has been pre-processed, it's time to train the model. First, select the algorithm that most closely aligns with the machine learning task to be performed. In this case, the [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm is used. To train the model with cross-validation use the [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) method.
+Once the data has been pre-processed, it's time to train the model. First, select the algorithm that most closely aligns with the machine learning task to be performed. Because the predicted value is a numerically continuous value, the task is regression. One of the regression algorithms implemented by ML.NET is the [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) algorithm. To train the model with cross-validation use the [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) method.
 
 > [!NOTE]
 > CrossValidate is also available for clustering, binary classification and multiclass classification algorithms.

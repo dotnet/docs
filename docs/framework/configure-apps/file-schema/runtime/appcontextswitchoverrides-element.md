@@ -1,7 +1,7 @@
 ---
 title: "<AppContextSwitchOverrides> Element"
 ms.custom: "updateeachrelease"
-ms.date: "03/07/2019"
+ms.date: "04/18/2019"
 helpviewer_keywords: 
   - "AppContextSwitchOverrides"
   - "compatibility switches"
@@ -104,6 +104,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.ServiceModel.`<br/>`UseSha1InPipeConnectionGetHashAlgorithm`|Controls whether WCF uses a SHA1 or a SHA256 hash to generate random names for named pipes.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|.NET Framework 4.7.1|
 |`Switch.System.ServiceModel.Internals`<br/>`IncludeNullExceptionMessageInETWTrace`|Controls whether to throw a [NullReferenceException](xref:System.NullReferenceException) when the exception message is null.|.NET Framework 4.7|  
 |`Switch.System.ServiceProcess.`<br/>`DontThrowExceptionsOnStart`|Controls whether exceptions thrown on service startup are propagated to the caller of the <xref:System.ServiceProcess.ServiceBase.Run%2A?displayProperty=nameWithType> method.|.NET Framework 4.7.1|
+|`Switch.System.Threading.UseNetCoreTimer`|Controls whether <xref:System.Threading.Timer> instances take advantage of performance improvements for high-scale environments. If `true`, the performance improvements are enabled; if `false` (the default value), they are disabled.|.NET Framework 4.8|
 |`Switch.System.Uri.`<br/>`DontEnableStrictRFC3986ReservedCharacterSets`|Determines whether certain percent-encoded characters that were sometimes decoded are now consistently left encoded. If `true`, they are decoded; otherwise, `false`.|.NET Framework 4.7.2|
 |`Switch.System.Uri.`<br/>`DontKeepUnicodeBidiFormattingCharacters`|Determines the handling of Unicode bidirectional characters in URIs. `true` to strip them from URIs; `false` to preserve and percent-encode them.|.NET Framework 4.7.2|
 |`Switch.System.Windows.Controls.Grid.`<br/>`StarDefinitionsCanExceedAvailableSpace` |Determines whether Windows Presentation Foundation applies an old algorithm (`true`) or a new algorithm (`false`) in allocating space to \*-columns. For more information, see [Mitigation: Grid Control's Space Allocation to Star-columns](../../../migration-guide/retargeting/4.6.2-4.7.md#wpf-grid-allocation-of-space-to-star-columns). |.NET Framework 4.7 |

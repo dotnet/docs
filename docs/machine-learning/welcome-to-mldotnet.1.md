@@ -17,12 +17,11 @@ ML.NET aims to make machine learning **approachable** and **accessible** to .NET
 
 ## ML.NET Scenarios
 
-You can use ML.NET for a variety of scenarios and app types.
-
-Try out the following tutorials to understand how to use ML.NET to build custom machine learning solutions and integrate them into your .NET applications:
+You can use ML.NET for a variety of machine learning scenarios and app types. Try out one of the tutorials below to understand how to use ML.NET to build custom machine learning solutions and integrate them into your .NET applications:
 
 | | | |
 | ------------- |:-------------:| -----:|
-| [![sentiment analysis](../images/sentiment-analysis-198x66.png)](./tutorials/sentiment-analysis) | [![github labeler](../images/github-labeler-198x66.png)](./tutorials/github-issue-classification) | [![price prediction](../images/price-prediction-198x66.png)](./tutorials/taxi-fare) |
-| [![iris flower segmentation](../images/iris-flower-segmentation-198x66.png)](./tutorials/iris-clustering) | [![movie recommendation](../images/movie-recommendation-198x66.png)](./tutorials/movie-recommendation) | [![image classification](../images/image-classification-198x66.png)](./tutorials/image-classification)  |
+| [![sentiment analysis](../images/sentiment-analysis-300x100.png)](./tutorials/sentiment-analysis) | [![github labeler](../images/github-labeler-300x100.png)](./tutorials/github-issue-classification) | [![price prediction](../images/price-prediction-300x100.png)](./tutorials/taxi-fare) |
+| [![iris flower segmentation](../images/iris-flower-segmentation-300x100.png)](./tutorials/iris-clustering) | [![movie recommendation](../images/movie-recommendation-300x100.png)](./tutorials/movie-recommendation) | [![image classification](../images/image-classification-300x100.png)](./tutorials/image-classification)  |
+| | |
  

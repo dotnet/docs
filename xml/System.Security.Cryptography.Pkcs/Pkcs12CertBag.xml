@@ -37,9 +37,9 @@
         <Parameter Name="encodedCertificate" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="certificateType">To be added.</param>
-        <param name="encodedCertificate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="certificateType">The Object Identifier (OID) for the certificate type.</param>
+        <param name="encodedCertificate">The encoded certificate value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs12CertBag" /> class using the specified certificate type and encoding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

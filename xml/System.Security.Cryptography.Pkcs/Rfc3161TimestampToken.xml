@@ -41,8 +41,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a Signed Cryptographic Message Syntax (CMS) representation of the RFC3161 timestamp token.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> representation of the <see cref="T:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

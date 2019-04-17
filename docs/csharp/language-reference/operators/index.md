@@ -153,6 +153,14 @@ This operator has higher precedence than the next section and lower precedence t
 
 [x &#124; y](or-operator.md) – logical or bitwise OR. You can generally use this with integer types and `enum` types.
 
+## True operator
+
+The [true](../keywords/true-false-operators.md) operator returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true. 
+
+## False operator
+
+The [false](../keywords/true-false-operators.md) operator returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false. 
+
 ## Conditional AND operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.

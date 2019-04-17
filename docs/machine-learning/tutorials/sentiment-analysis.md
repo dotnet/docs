@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis binary classification scenario
 description: Discover how to use ML.NET in a binary classification scenario to understand how to use sentiment prediction to take the appropriate action.
-ms.date: 04/17/2019
+ms.date: 04/18/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
@@ -103,17 +103,17 @@ Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with t
 
 [!code-csharp[CreateMLContext](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateMLContext "Create the ML Context")]
 
-Add the following as the next line of code in the `Main` method:
+Add the following as the next line of code in the `Main()` method:
 
 [!code-csharp[CallLoadData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallLoadData)]
 
-The `LoadData` method executes the following tasks:
+The `LoadData()` method executes the following tasks:
 
 * Loads the data.
 * Splits the loaded dataset into train and test datasets.
 * Returns the split train and test datasets.
 
-Create the `LoadData` method, just after the `Main` method, using the following code:
+Create the `LoadData()` method, just after the `Main()` method, using the following code:
 
 ```csharp
 public static TrainTestData LoadData(MLContext mlContext)
@@ -125,7 +125,7 @@ public static TrainTestData LoadData(MLContext mlContext)
 ## Load the data
 
 Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
-Add the following code as the first line of the `LoadData` method:
+Add the following code as the first line of the `LoadData()` method:
 
 [!code-csharp[LoadData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#LoadData "loading dataset")]
 
@@ -135,30 +135,30 @@ The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFi
 
 Next, you need both a training dataset to train the model and a test dataset to evaluate the model.
 
-To split the loaded data into the needed datasets, add the following code as the next line in the `LoadData` method:
+To split the loaded data into the needed datasets, add the following code as the next line in the `LoadData()` method:
 
 [!code-csharp[SplitData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#SplitData "Split the Data")]
 
 The previous code uses the [TrainTestSplit()](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A) method to split the loaded dataset into train and test datasets and return them in the [TrainTestData](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) class. Specify the test set percentage of data with the `testFraction`parameter. The default is 10% but you use 20% in this case to evaluate more data.  
 
-Return the `splitDataView` at the end of the `LoadData` method:
+Return the `splitDataView` at the end of the `LoadData()` method:
 
 [!code-csharp[ReturnSplitData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#ReturnSplitData)]
 
 ## Build and train the model
 
-Add the following call to the `BuildAndTrainModel`method as the next line of code in the `Main` method:
+Add the following call to the `BuildAndTrainModel`method as the next line of code in the `Main()` method:
 
 [!code-csharp[CallBuildAndTrainModel](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallBuildAndTrainModel)]
 
-The `BuildAndTrainModel` method executes the following tasks:
+The `BuildAndTrainModel()` method executes the following tasks:
 
 * Extracts and transforms the data.
 * Trains the model.
 * Predicts sentiment based on test data.
 * Returns the model.
 
-Create the `BuildAndTrainModel` method, just after the `Main` method, using the following code:
+Create the `BuildAndTrainModel()` method, just after the `Main()` method, using the following code:
 
 ```csharp
 public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet)
@@ -213,13 +213,13 @@ The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsof
 
 ### Return the model trained to use for evaluation
 
- Return the model at the end of the `BuildAndTrainModel` method:
+ Return the model at the end of the `BuildAndTrainModel()` method:
 
 [!code-csharp[ReturnModel](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#ReturnModel "Return the model")]
 
 ## Evaluate the model
 
-After your model is trained, use your test data to evaluate how your model is performing for quality assurance and validation. Create the `Evaluate` method, just after `BuildAndTrainModel`, with the following code:
+After your model is trained, use your test data to evaluate how your model is performing for quality assurance and validation. Create the `Evaluate()` method, just after `BuildAndTrainModel()`, with the following code:
 
 ```csharp
 public static void Evaluate(MLContext mlContext, ITransformer model, IDataView splitTestSet)
@@ -228,14 +228,14 @@ public static void Evaluate(MLContext mlContext, ITransformer model, IDataView s
 }
 ```
 
-The `Evaluate` method executes the following tasks:
+The `Evaluate()` method executes the following tasks:
 
 * Loads the test dataset.
 * Creates the BinaryClassification evaluator.
 * Evaluates the model and creates metrics.
 * Displays the metrics.
 
-Add a call to the new method from the `Main` method, right under the `Train` method call, using the following code:
+Add a call to the new method from the `Main()` method, right under the `BuildAndTrainModel()` method call, using the following code:
 
 [!code-csharp[CallEvaluate](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallEvaluate "Call the Evaluate method")]
 
@@ -259,7 +259,7 @@ Use the following code to display the metrics:
 
 ## Predict the test data outcome
 
-Create the `UseModelWithSingleItem` method, just after the `Evaluate` method, using the following code:
+Create the `UseModelWithSingleItem()` method, just after the `Evaluate()` method, using the following code:
 
 ```csharp
 private static void UseModelWithSingleItem(MLContext mlContext, ITransformer model)
@@ -268,26 +268,26 @@ private static void UseModelWithSingleItem(MLContext mlContext, ITransformer mod
 }
 ```
 
-The `UseModelWithSingleItem` method executes the following tasks:
+The `UseModelWithSingleItem()` method executes the following tasks:
 
 * Creates a single comment of test data.
 * Predicts sentiment based on test data.
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
-Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
+Add a call to the new method from the `Main()` method, right under the `Evaluate()` method call, using the following code:
 
 [!code-csharp[CallUseModelWithSingleItem](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallUseModelWithSingleItem "Call the UseModelWithSingleItem method")]
 
-The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data. add the following code to create as the first line in the `Predict` Method:
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data. add the following code to create as the first line in the `Predict()` Method:
 
 [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreatePredictionEngine1 "Create the PredictionEngine")]
   
-Add a comment to test the trained model's prediction in the `Predict` method by creating an instance of `SentimentData`:
+Add a comment to test the trained model's prediction in the `Predict()` method by creating an instance of `SentimentData`:
 
 [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssue1 "Create test data for single prediction")]
 
-Pass the test comment data to the `Prediction Engine` by adding the following as the next lines of code in the `CallUseModelWithSingleItem()` method:
+Pass the test comment data to the `Prediction Engine` by adding the following as the next lines of code in the `UseModelWithSingleItem()` method:
 
 [!code-csharp[Predict](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#Predict "Create a prediction of sentiment")]
 
@@ -301,7 +301,7 @@ Display `SentimentText` and corresponding sentiment prediction using the followi
 
 ## Deploy and predict batch items
 
-Create the `UseModelWithBatchItems` method, just before the `SaveModelAsFile` method, using the following code:
+Create the `UseModelWithBatchItems()` method, just after the `UseModelWithSingleItem()` method, using the following code:
 
 ```csharp
 public static void UseModelWithBatchItems(MLContext mlContext)
@@ -310,18 +310,18 @@ public static void UseModelWithBatchItems(MLContext mlContext)
 }
 ```
 
-The `UseModelWithBatchItems` method executes the following tasks:
+The `UseModelWithBatchItems()` method executes the following tasks:
 
 * Creates batch test data.
 * Predicts sentiment based on test data.
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
-Add a call to the new method from the `Main` method, right under the `UseModelWithSingleItem` method call, using the following code:
+Add a call to the new method from the `Main` method, right under the `UseModelWithSingleItem()` method call, using the following code:
 
 [!code-csharp[CallPredictModelBatchItems](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallUseModelWithBatchItems "Call the CallUseModelWithBatchItems method")]
 
-Add some comments to test the trained model's predictions in the `UseModelWithBatchItems` method:
+Add some comments to test the trained model's predictions in the `UseModelWithBatchItems()` method:
 
 [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssues "Create test data for predictions")]
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET Core 3.0
 description: Learn about the new features found in .NET Core 3.0.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 author: thraka
@@ -58,7 +58,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 {
     await foreach (var result in GetResultsAsync())
     {
-        if (result > 20) yield return result; 
+        if (result > 20) yield return result;
     }
 }
 ```
@@ -161,20 +161,20 @@ During `dotnet build` or `dotnet publish`, an executable is created provided tha
 
 ## Build copies dependencies
 
-`dotnet build` now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`. 
+`dotnet build` now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
 
 There are some operations, like linking and razor page publishing that will still require publishing.
 
 ## Local dotnet tools
 
->[!WARNING]
->There was a change in .NET Core Local Tools between .NET Core 3.0 Preview 1 and .NET Core 3.0 Preview 2.  If you tried out local tools in Preview 1 by running a command like `dotnet tool restore` or `dotnet tool install`, you need to delete your local tools cache folder before local tools will work correctly in Preview 2. This folder is located at:
+> [!WARNING]
+> There was a change in .NET Core Local Tools between .NET Core 3.0 Preview 1 and .NET Core 3.0 Preview 2.  If you tried out local tools in Preview 1 by running a command like `dotnet tool restore` or `dotnet tool install`, you need to delete your local tools cache folder before local tools will work correctly in Preview 2. This folder is located at:
 >
->On mac, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
+> On mac, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
 >
->On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
+> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
 >
->If you do not delete this folder, you will receive an error.
+> If you do not delete this folder, you will receive an error.
 
 While .NET Core 2.1 supported global tools, .NET Core 3.0 now has local tools. Local tools are similar to global tools but are associated with a particular location on disk. This enables per-project and per-repository tooling. Any tool installed locally isn't available globally. Tools are distributed as NuGet packages.
 
@@ -304,10 +304,12 @@ Please share your feedback on the [dotnet/winforms](https://github.com/dotnet/wi
 
 The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
 
->Note: The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
-```xml
-<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
-```
+> [!NOTE]
+> The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
+>
+> ```xml
+> <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+> ```
 
 ## Fast built-in JSON support
 
@@ -416,7 +418,7 @@ static int WriteJson(IBufferWriter<byte> output, long[] extraData)
 }
 ```
 
-The `Utf8JsonWriter` accepts `IBufferWriter<byte>` as the output location to synchronously write the json data into, and you as the caller need to provide a concrete implementation. The platform does not currently include an implementation of this interface. For an example of `IBufferWriter<byte>`, see [https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35](https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35)
+The `Utf8JsonWriter` accepts `IBufferWriter<byte>` as the output location to synchronously write the json data into, and you as the caller need to provide a concrete implementation. The platform does not currently include an implementation of this interface. For an example of `IBufferWriter<byte>`, see <https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35>.
 
 ### JsonDocument
 
@@ -461,7 +463,7 @@ Assembly unloadability is a new capability of `AssemblyLoadContext`. This new fe
 
 This new capability can be used for scenarios similar to:
 
-* Plugin scenarios where dynamic plugin loading and unloading is required. 
+* Plugin scenarios where dynamic plugin loading and unloading is required.
 * Dynamically compiling, running and then flushing code. Useful for web sites, scripting engines, etc.
 * Loading assemblies for introspection (like ReflectionOnlyLoad), although [MetadataLoadContext](#type-metadataloadcontext) (released in Preview 1) will be a better choice in many cases.
 
@@ -479,7 +481,7 @@ You can see an example of using COM with the [Excel Demo source code](https://gi
 
 ## Type: SequenceReader
 
-In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers. 
+In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers.
 
 The following example breaks an input `Sequence` into valid `CR/LF` delimited lines:
 
@@ -658,7 +660,7 @@ namespace rsakeyprint
             {
                 byte[] keyBytes = File.ReadAllBytes(args[0]);
                 rsa.ImportRSAPrivateKey(keyBytes, out int bytesRead);
- 
+
                 Console.WriteLine($"Read {bytesRead} bytes, {keyBytes.Length-bytesRead} extra byte(s) in file.");
                 RSAParameters rsaParameters = rsa.ExportParameters(true);
                 Console.WriteLine(BitConverter.ToString(rsaParameters.D));
@@ -704,7 +706,7 @@ Previously, .NET Core only supported using the `SerialPort` type on Windows.
 
 ## More BCL Improvements
 
-The `Span<T>`, `Memory<T>`, and related types that were introduced in .NET Core 2.1, have been optimized in .NET Core 3.0. Common operations such as span construction, slicing, parsing, and formatting now perform better. 
+The `Span<T>`, `Memory<T>`, and related types that were introduced in .NET Core 2.1, have been optimized in .NET Core 3.0. Common operations such as span construction, slicing, parsing, and formatting now perform better.
 
 Additionally, types like `String` have seen under-the-cover improvements to make them more efficient when used as keys with `Dictionary<TKey, TValue>` and other collections. No code changes are required to benefit from these improvements.
 
@@ -746,7 +748,7 @@ After configuring Snap on your system, run the following command to install the 
 ```console
 sudo snap install dotnet-sdk --beta --classic
 ```
- 
+
 When .NET Core in installed using the Snap package, the default .NET Core command is `dotnet-sdk.dotnet`, as opposed to just `dotnet`. The benefit of the namespaced command is that it will not conflict with a globally installed .NET Core version you may have. This command can be aliased to `dotnet` with:
 
 ```console

@@ -14,19 +14,23 @@ ms.date: 12/04/2018
 ## Synopsis
 
 # [.NET Core 2.x](#tab/netcore2x)
+
 ```
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--force] [--no-dependencies] [--no-incremental]
     [--no-restore] [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
 
 dotnet build [-h|--help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
 ```
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--no-dependencies] [--no-incremental] [-o|--output]
     [-r|--runtime] [-v|--verbosity] [--version-suffix]
 
 dotnet build [-h|--help]
 ```
+
 ---
 
 ## Description

@@ -13,31 +13,42 @@ C#’s value types are further divided into *simple types*, *enum types*, *struc
 
 The following provides an overview of C#’s type system.
 
-* Value types
-  - Simple Types
+* [Value types][ValueTypes]
+  - [Simple types][SimpleTypes]
     * Signed integral: `sbyte`, `short`, `int`, `long`
     * Unsigned integral: `byte`, `ushort`, `uint`, `ulong`
     * Unicode characters: `char`
     * IEEE floating point: `float`, `double`
     * High-precision decimal: `decimal`
     * Boolean: `bool`
-  - Enum types
+  - [Enum types][EnumTypes]
     * User-defined types of the form `enum E {...}`
-  - Struct types
+  - [Struct types][StructTypes]
     * User-defined types of the form `struct S {...}`
-  - Nullable value types
+  - [Nullable value types][NullableTypes]
     * Extensions of all other value types with a `null` value
-* Reference types
-  - Class types
+* [Reference types][ReferenceTypes]
+  - [Class types][ClassTypes]
     * Ultimate base class of all other types: `object`
     * Unicode strings: `string`
     * User-defined types of the form `class C {...}`
-  - Interface types
+  - [Interface types][InterfaceTypes]
     * User-defined types of the form `interface I {...}`
-  - Array types
+  - [Array types][ArrayTypes]
     * Single- and multi-dimensional, for example, `int[]` and `int[,]`
-  - Delegate types
+  - [Delegate types][DelegateTypes]
     * User-defined types of the form `delegate int D(...)`
+
+[ValueTypes]: ../language-reference/keywords/value-types-table.md
+[SimpleTypes]: ../language-reference/keywords/value-types.md#simple-types
+[EnumTypes]: ../language-reference/keywords/enum.md
+[StructTypes]: ../language-reference/keywords/struct.md
+[NullableTypes]: ../programming-guide/nullable-types/index.md
+[ReferenceTypes]: ../language-reference/keywords/reference-types.md
+[ClassTypes]: ../language-reference/keywords/class.md
+[InterfaceTypes]: ../language-reference/keywords/interface.md
+[DelegateTypes]: ../language-reference/keywords/delegate.md
+[ArrayTypes]: ../programming-guide/arrays/index.md
 
 The eight integral types provide support for 8-bit, 16-bit, 32-bit, and 64-bit values in signed or unsigned form.
 

@@ -35,7 +35,6 @@ You can install the [.NET Framework 4.8](https://dotnet.microsoft.com/download/d
 * Windows Server 2019
 * Windows Server, version 1809
 * Windows Server, version 1803
-* Windows Server, version 1709
 * Windows Server 2016
 
 The .NET Framework 4.8 is not supported on:

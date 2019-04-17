@@ -181,6 +181,7 @@ For more information, see the following sections of the [C# language specificati
 - [Logical negation operator](~/_csharplang/spec/expressions.md#logical-negation-operator)
 - [Logical operators](~/_csharplang/spec/expressions.md#logical-operators)
 - [Conditional logical operators](~/_csharplang/spec/expressions.md#conditional-logical-operators)
+- [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
 
 ## See also
 

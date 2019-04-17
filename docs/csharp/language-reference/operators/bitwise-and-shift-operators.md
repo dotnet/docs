@@ -32,11 +32,13 @@ helpviewer_keywords:
 ---
 # Bitwise and shift operators (C# Reference)
 
-The following operators perform bitwise or shift operations with the operands of the [integral types](../keywords/integral-types-table.md):
+The following operators perform bitwise or shift operations with operands of the [integral types](../keywords/integral-types-table.md):
 
 - Unary [`~` (bitwise complement)](#bitwise-complement-operator-) operator
 - Binary [`<<` (left shift)](#left-shift-operator-) and [`>>` (right shift)](#right-shift-operator-) shift operators
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
+
+Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 The `&`, `|`, and `^` operators are also defined for the operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
@@ -57,6 +59,10 @@ The `<<` operator shifts its first operand left by the number of bits defined by
 The left-shift operation discards the high-order bits that are outside the range of the result type and sets the low-order empty bit positions to zero, as the following example shows:
 
 [!code-csharp-interactive[left shift](~/samples/snippets/csharp/language-reference/operators/BitwiseAndShiftOperators.cs#LeftShift)]
+
+Because the shift operators are defined only for the `int`, `uint`, `long`, and `ulong` types, the result of an operation always contains at least 32 bits. If the first operand is of another integral type (`sbyte`, `byte`, `short`, `ushort`, or `char`), its value is converted to the `int` type, as the following example shows:
+
+[!code-csharp-interactive[left shift with promotion](~/samples/snippets/csharp/language-reference/operators/BitwiseAndShiftOperators.cs#LeftShiftPromoted)]
 
 For information about how the second operand of the `<<` operator defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
@@ -124,6 +130,10 @@ The following example demonstrates the usage of compound assignment with bitwise
 
 [!code-csharp-interactive[compound assignment](~/samples/snippets/csharp/language-reference/operators/BitwiseAndShiftOperators.cs#CompoundAssignment)]
 
+Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
+
+[!code-csharp-interactive[compound assignment with cast](~/samples/snippets/csharp/language-reference/operators/BitwiseAndShiftOperators.cs#CompoundAssignmentWithCast)]
+
 ## Operator precedence
 
 The following list orders bitwise and shift operators starting from the highest precedence to the lowest:
@@ -173,6 +183,7 @@ For more information, see the following sections of the [C# language specificati
 - [Bitwise complement operator](~/_csharplang/spec/expressions.md#bitwise-complement-operator)
 - [Shift operators](~/_csharplang/spec/expressions.md#shift-operators)
 - [Logical operators](~/_csharplang/spec/expressions.md#logical-operators)
+- [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
 
 ## See also
 

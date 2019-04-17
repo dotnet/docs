@@ -443,6 +443,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
         },
         {
+            "source_path":"docs/csharp/language-reference/operators/bitwise-complement-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#bitwise-complement-operator-"
+        },
+        {
             "source_path":"docs/csharp/language-reference/operators/conditional-and-operator.md",
             "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#conditional-logical-and-operator-"
         },
@@ -471,6 +475,14 @@
             "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-"
         },
         {
+            "source_path":"docs/csharp/language-reference/operators/left-shift-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/left-shift-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#left-shift-operator-"
+        },
+        {
             "source_path":"docs/csharp/language-reference/operators/logical-negation-operator.md",
             "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-negation-operator-"
         },
@@ -491,12 +503,36 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/null-coalescing-operator"
         },
         {
+            "source_path":"docs/csharp/language-reference/operators/or-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/or-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-or-operator-"
+        },
+        {
             "source_path":"docs/csharp/language-reference/operators/remainder-assignment-operator.md",
             "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
         },
         {
             "source_path":"docs/csharp/language-reference/operators/remainder-operator.md",
             "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/right-shift-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/right-shift-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#right-shift-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/xor-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/xor-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",

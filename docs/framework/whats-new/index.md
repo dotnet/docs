@@ -42,9 +42,9 @@ This article does not provide comprehensive information about each new feature a
 
 You can download .NET Framework 4.8  from the following locations:
 
-- [.NET Framework 4.7.2 Web Installer](https://go.microsoft.com/fwlink/?LinkId=2085155)
+- [.NET Framework 4.8 Web Installer](https://go.microsoft.com/fwlink/?LinkId=2085155)
 
-- [NET Framework 4.7.2 Offline Installer](https://go.microsoft.com/fwlink/?LinkId=2053984)
+- [NET Framework 4.8 Offline Installer](https://go.microsoft.com/fwlink/?LinkId=2053984)
 
 .NET Framework 4.8 can be installed on Windows 10, Windows 8.1, Windows 7 SP1, and the corresponding server platforms starting with Windows Server 2008 R2 SP1. You can install .NET Framework 4.8 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
 
@@ -54,12 +54,12 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 
 .NET Framework 4.8 introduces new features in the following areas:
 
-[Core](#core48)
-[Windows Communication Foundation (WCF)](#wcf48)
-[Windows Presentation Foundation (WPF)](#wpf48)
-[Common language runtime](#clr48)
+- [Core](#core48)
+- [Windows Communication Foundation (WCF)](#wcf48)
+- [Windows Presentation Foundation (WPF)](#wpf48)
+- [Common language runtime](#clr48) 
 
-Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technolog, continues to be a major focus of .NET Framework 4.8. For information on accessibility improvements in .NET Framework 4.8, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
+Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology, continues to be a major focus of .NET Framework 4.8. For information on accessibility improvements in .NET Framework 4.8, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
 
 <a name="core48" />
 
@@ -183,7 +183,7 @@ The runtime in .NET Framework 4.8 includes the following changes and improvement
 
 <a name="v472" />
 
-### What's new in .NET Framework 4.7.2
+## What's new in .NET Framework 4.7.2
 
 .NET Framework 4.7.2 includes new features in the following areas:
 

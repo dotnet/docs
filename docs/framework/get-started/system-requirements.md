@@ -83,7 +83,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 | Windows Server 2019 | 64-bit | .NET Framework 4.7.2 | .NET Framework 4.8 |
 | Windows Server, version 1809 | 64-bit | .NET Framework 4.7.2 | .NET Framework 4.8 |
 | Windows Server, version 1803 | 64-bit | .NET Framework 4.7.2 | .NET Framework 4.8 |
-| Windows Server, version 1709 | 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2<br/><br/>.NET Framework 4.8 | 
+| Windows Server, version 1709 | 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2|
 | Windows Server 2016 | 64-bit | .NET Framework 4.6.2 | .NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
 | Windows Server 2012 R2 | 64-bit | .NET Framework 4.5.1 | .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
 | Windows Server 2012 (64-bit edition) | 64-bit| .NET Framework 4.5 | .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |

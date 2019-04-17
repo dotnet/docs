@@ -12,7 +12,7 @@ ML.NET is a free, open-source and cross-platform machine learning framework for 
  
 ML.NET aims to make machine learning **approachable** and **accessible** to .NET developers, without requiring a data science background (though data scientists are welcomed and encouraged to use ML.NET too!).
 
-| ![what is ml.net](../images/what-is-mlnet.png) | ![get started ml.net](../images/get-started-mlnet.png)|
+| [![what is ml.net](../images/what-is-mlnet.png)](./basic-concepts-model-training-in-mldotnet) | [![get started ml.net](../images/get-started-mlnet.png)](https://dotnet.microsoft.com/learn/machinelearning-ai/ml-dotnet-get-started-tutorial/intro) |
 | ------------- |:-------------:| -----:|
 
 ## ML.NET Scenarios
@@ -23,6 +23,6 @@ Try out the following tutorials to understand how to use ML.NET to build custom 
 
 | | | |
 | ------------- |:-------------:| -----:|
-| ![sentiment analysis](../images/sentiment-analysis.png) | ![github labeler](../images/github-labeler.png)| ![price prediction](../images/price-prediction.png) |
-| ![iris flower segmentation](../images/iris-flower-segmentation.png)| ![movie recommendation](../images/movie-recommendation.png) | ![image classification](../images/image-classification.png)  |
+| [![sentiment analysis](../images/sentiment-analysis-198x66.png)](./tutorials/sentiment-analysis) | [![github labeler](../images/github-labeler-198x66.png)](./tutorials/github-issue-classification) | [![price prediction](../images/price-prediction-198x66.png)](./tutorials/taxi-fare) |
+| [![iris flower segmentation](../images/iris-flower-segmentation-198x66.png)](./tutorials/iris-clustering) | [![movie recommendation](../images/movie-recommendation-198x66.png)](./tutorials/movie-recommendation) | [![image classification](../images/image-classification-198x66.png)](./tutorials/image-classification)  |
  

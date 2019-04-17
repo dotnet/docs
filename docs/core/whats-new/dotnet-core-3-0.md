@@ -117,7 +117,7 @@ There are some operations, like linking and razor page publishing that will stil
 ## Local dotnet tools
 
 > [!WARNING]
-> There was a change in .NET Core Local Tools between .NET Core 3.0 Preview 1 and .NET Core 3.0 Preview 2.  If you tried out local tools in Preview 1 by running a command like `dotnet tool restore` or `dotnet tool install`, you need to delete your local tools cache folder before local tools will work correctly in Preview 2. This folder is located at:
+> There was a change in .NET Core Local Tools between .NET Core 3.0 Preview 1 and .NET Core 3.0 Preview 2. If you tried out local tools in Preview 1 by running a command like `dotnet tool restore` or `dotnet tool install`, you need to delete your local tools cache folder before local tools will work correctly in Preview 2. This folder is located at:
 >
 > On mac, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
 >
@@ -200,7 +200,7 @@ For both global and local tools, a compatible version of the runtime is required
 
 ## Windows desktop
 
-Starting with .NET Core 3.0 Preview 1, you can build Windows desktop applications using WPF and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
+Starting with .NET Core 3.0 you can build Windows desktop applications using WPF and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
 
 The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
 
@@ -276,16 +276,11 @@ For more information about High DPI modes, see [High DPI Desktop Application Dev
 
 The .NET ecosystem has relied on [**Json.NET**](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. **Json.NET** uses .NET strings as its base datatype, which is UTF-16 under the hood.
 
-The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. Three new main JSON-related types have been added to .NET Core 3.0 the <xref:System.Text.Json> namespace.
+The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. Three new main JSON-related types have been added to .NET Core 3.0 the <xref:System.Text.Json?displayProperty=nameWithType> namespace. These types do not *yet* support plain old CLR object (POCO) serialization and deserialization.
 
 ### Utf8JsonReader
 
 `System.Text.Json.Utf8JsonReader` is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a foundational, low-level type, that can be leveraged to build custom parsers and deserializers. Reading through a JSON payload using the new `Utf8JsonReader` is 2x faster than using the reader from **Json.NET**. It does not allocate until you need to actualize JSON tokens as (UTF-16) strings.
-
-This new API will include the following components:
-
-* In Preview 1: JSON reader (sequential access)
-* Coming next: JSON writer, DOM (random access), poco serializer, poco deserializer
 
 Here is the basic reader loop for the `Utf8JsonReader` that can be used as a starting point:
 
@@ -379,7 +374,7 @@ static int WriteJson(IBufferWriter<byte> output, long[] extraData)
 }
 ```
 
-The `Utf8JsonWriter` accepts `IBufferWriter<byte>` as the output location to synchronously write the json data into, and you as the caller need to provide a concrete implementation. The platform does not currently include an implementation of this interface. For an example of `IBufferWriter<byte>`, see [https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35](https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35)
+The `Utf8JsonWriter` accepts `IBufferWriter<byte>` as the output location to synchronously write the json data into, and you as the caller need to provide a concrete implementation. The platform does not currently include an implementation of this interface. For an example of `IBufferWriter<byte>`, see [https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35](https://gist.github.com/ahsonkhan/c76a1cc4dc7107537c3fdc0079a68b35).
 
 ### JsonDocument
 
@@ -426,7 +421,7 @@ This new capability can be used for scenarios similar to:
 
 * Plugin scenarios where dynamic plugin loading and unloading is required.
 * Dynamically compiling, running and then flushing code. Useful for web sites, scripting engines, etc.
-* Loading assemblies for introspection (like ReflectionOnlyLoad), although [MetadataLoadContext](#type-metadataloadcontext) (released in Preview 1) will be a better choice in many cases.
+* Loading assemblies for introspection (like ReflectionOnlyLoad), although [MetadataLoadContext](#type-metadataloadcontext) will be a better choice in many cases.
 
 For more information, see the [Using Unloadability](https://github.com/dotnet/coreclr/pull/22221) document.
 
@@ -521,9 +516,9 @@ Loading dependent assemblies from a given path was not supported in .NET Core. N
 
 * Improved security due to the removal of various obsolete and insecure cryptographic algorithms and encryption of more of the connection handshake.
 
-.NET Core 3.0 Preview 1 is capable of utilizing **OpenSSL 1.1.1**, **OpenSSL 1.1.0**, or **OpenSSL 1.0.2** (whatever the best version found is, on a Linux system).  When **OpenSSL 1.1.1** is available the SslStream and HttpClient types will use **TLS 1.3** when using `SslProtocols.None` (system default protocols), assuming both the client and server support **TLS 1.3**.
+.NET Core 3.0 is capable of utilizing **OpenSSL 1.1.1**, **OpenSSL 1.1.0**, or **OpenSSL 1.0.2** (whatever the best version found is, on a Linux system).  When **OpenSSL 1.1.1** is available the SslStream and HttpClient types will use **TLS 1.3** when using `SslProtocols.None` (system default protocols), assuming both the client and server support **TLS 1.3**.
 
-The following sample demonstrates .NET Core 3.0 Preview 1 on Ubuntu 18.10 connecting to <https://www.cloudflare.com>:
+The following sample demonstrates .NET Core 3.0 on Ubuntu 18.10 connecting to <https://www.cloudflare.com>:
 
 ```csharp
 using System;
@@ -611,7 +606,7 @@ Console.WriteLine($"AES-GCM: Decrypted data is{(dataToEncrypt.SequenceEqual(decr
 
 ## Cryptographic Key Import/Export
 
-.NET Core 3.0 Preview 1 supports the import and export of asymmetric public and private keys from standard formats, without needing to use an X.509 certificate.
+.NET Core 3.0 supports the import and export of asymmetric public and private keys from standard formats, without needing to use an X.509 certificate.
 
 All key types (RSA, DSA, ECDsa, ECDiffieHellman) support the **X.509 SubjectPublicKeyInfo** format for public keys, and the **PKCS#8 PrivateKeyInfo** and **PKCS#8 EncryptedPrivateKeyInfo** formats for private keys. RSA additionally supports **PKCS#1 RSAPublicKey** and **PKCS#1 RSAPrivateKey**. The export methods all produce DER-encoded binary data, and the import methods expect the same. If a key is stored in the text-friendly PEM format, the caller will need to base64-decode the content before calling an import method.
 
@@ -680,7 +675,7 @@ The `Span<T>`, `Memory<T>`, and related types that were introduced in .NET Core 
 
 Additionally, types like `String` have seen under-the-cover improvements to make them more efficient when used as keys with `Dictionary<TKey, TValue>` and other collections. No code changes are required to benefit from these improvements.
 
-The following improvements are also new in .NET Core 3 Preview 1:
+The following improvements are also new in .NET Core 3.0:
 
 * Brotli support built in to HttpClient
 * ThreadPool.UnsafeQueueWorkItem(IThreadPoolWorkItem)

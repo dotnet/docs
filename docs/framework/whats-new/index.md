@@ -90,7 +90,7 @@ Starting with .NET Framework 4.5, the clrcompression.dll assembly uses [ZLib](ht
 
 Health endpoints are widely used by orchestration tools to manage services based on their health status. Health checks can also be used by monitoring tools to track and provide notifications about the availability and performance of a service. 
 
-**ServiceHealthBehavior** is a WCF service behavior that extends <xref:System.ServiceModel.Desription.IServiceBehavior>.  When added to the <xref:System.ServiceModel.ServiceDescription.Behaviors?displayProperty=nameWithType> collection, a service behavior does the following:
+**ServiceHealthBehavior** is a WCF service behavior that extends <xref:System.ServiceModel.Description.IServiceBehavior>.  When added to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors?displayProperty=nameWithType> collection, a service behavior does the following:
 
 - Returns service health status with HTTP response codes. You can specify in a query string the HTTP status code for a HTTP/GET health probe request.
 
@@ -1707,7 +1707,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 <a name="v452" />
 
-## What's new in the .NET Framework 4.5.2
+## What's new in .NET Framework 4.5.2
 
 - **New APIs for ASP.NET apps.** The new <xref:System.Web.HttpResponse.AddOnSendingHeaders%2A?displayProperty=nameWithType> and <xref:System.Web.HttpResponseBase.AddOnSendingHeaders%2A?displayProperty=nameWithType> methods let you inspect and modify response headers and status code as the response is being flushed to the client app. Consider using these methods instead of the <xref:System.Web.HttpApplication.PreSendRequestHeaders> and <xref:System.Web.HttpApplication.PreSendRequestContent> events; they are more efficient and reliable.
 
@@ -1840,7 +1840,7 @@ For new features in ASP.NET 4.5.1, see [ASP.NET and Web Tools for Visual Studio 
 
 <a name="v45" />
 
-## What's new in the .NET Framework 4.5
+## What's new in .NET Framework 4.5
 
 ### Core new features and improvements
 

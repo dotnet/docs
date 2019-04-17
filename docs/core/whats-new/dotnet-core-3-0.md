@@ -6,7 +6,7 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 04/11/2018
+ms.date: 04/11/2019
 ---
 
 # What's new in .NET Core 3.0 (Preview 3)
@@ -90,7 +90,7 @@ Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but w
 
 APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel. In addition to exposing the APIs for your programs to use, the .NET libraries have begun using these instructions to improve performance.
 
-The following CoreCLR PRs demonstrate a few of the intrinsics, either via implementation or use:
+The following CoreCLR pull requests demonstrate a few of the intrinsics, either via implementation or use:
 
 * [Implement simple SSE2 hardware intrinsics](https://github.com/dotnet/coreclr/pull/15585)
 * [Implement the SSE hardware intrinsics](https://github.com/dotnet/coreclr/pull/15538)
@@ -276,7 +276,7 @@ For more information about High DPI modes, see [High DPI Desktop Application Dev
 
 The .NET ecosystem has relied on [**Json.NET**](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. **Json.NET** uses .NET strings as its base datatype, which is UTF-16 under the hood.
 
-The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. Three new main JSON-related types have been added to .NET Core 3.0 the `System.Text.Json` namespace.
+The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. Three new main JSON-related types have been added to .NET Core 3.0 the <xref:System.Text.Json> namespace.
 
 ### Utf8JsonReader
 
@@ -512,7 +512,6 @@ Loading dependent assemblies from a given path was not supported in .NET Core. N
 ## Type: NativeLibrary
 
 <xref:System.Runtime.InteropServices.NativeLibrary> provides an encapsulation for loading a native library (using the same load logic as .NET Core P/Invoke) and providing the relevant helper functions such as `getSymbol`. For a code example, see the [DLLMap Demo](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin).
-https://github.com/dotnet/samples/tree/master/core/extensions/DllMapDemo
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 
@@ -726,11 +725,11 @@ When .NET Core in installed using the Snap package, the default .NET Core comman
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
-Some distros require an additional step to enable access to the SSL certificate. See our [Linux Setup](https://github.com/dotnet/core/blob/master/Documentation/linux-setup.md) for details.
+Some distributions require an additional step to enable access to the SSL certificate. For more information, see [Linux Setup](https://github.com/dotnet/core/blob/master/Documentation/linux-setup.md).
 
 ## Docker and cgroup memory Limits
 
-As of Preview 3, running .NET Core 3.0 on Linux with Docker works better with cgroup memory limits. Running a Docker container with memory limits, such as with `docker run -m`, changes how .NET Core behaves.
+Starting with Preview 3, running .NET Core 3.0 on Linux with Docker works better with cgroup memory limits. Running a Docker container with memory limits, such as with `docker run -m`, changes how .NET Core behaves.
 
 * Default GC heap size: maximum of 20mb or 75% of the memory limit on the container.
 * Explicit size can be set as an absolute number or percentage of cgroup limit.
@@ -747,7 +746,7 @@ Two new packages have been released to NuGet that you can use for GPIO programmi
 
 The GPIO packages include APIs for GPIO, SPI, I2C, and PWM devices. The IoT bindings package includes [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) for various chips and sensors, the same ones available at [dotnet/iot - src/devices](https://github.com/dotnet/iot/tree/master/src/devices).
 
-The updated serial port APIs that were announced as part of .NET Core 3.0 Preview 1 are not part of these packages but are available as part of the .NET Core platform.
+The updated serial port APIs are not part of these packages but are available as part of the .NET Core platform.
 
 ## Platform Support
 

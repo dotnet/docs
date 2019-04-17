@@ -1,7 +1,7 @@
 ---
 title: "Bitwise and shift operators - C# Reference"
-description: "Learn about C# operators that perform bitwise logical or shift operations with the operands of the integral types."
-ms.date: 04/16/2019
+description: "Learn about C# operators that perform bitwise logical or shift operations with operands of integral types."
+ms.date: 04/18/2019
 author: pkulikov
 f1_keywords: 
   - "~_CSharpKeyword"
@@ -120,13 +120,13 @@ x = x op y
 
 except that `x` is only evaluated once.
 
-The following example demonstrates the usage of compound assignment with the bitwise and shift operators:
+The following example demonstrates the usage of compound assignment with bitwise and shift operators:
 
 [!code-csharp-interactive[compound assignment](~/samples/snippets/csharp/language-reference/operators/BitwiseAndShiftOperators.cs#CompoundAssignment)]
 
 ## Operator precedence
 
-The following list orders the bitwise and shift operators starting from the highest precedence to the lowest:
+The following list orders bitwise and shift operators starting from the highest precedence to the lowest:
 
 - Bitwise complement operator `~`
 - Shift operators `<<` and `>>`

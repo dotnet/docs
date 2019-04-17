@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 # Inspect intermediate data values during processing
 
-This how-to shows you how to inspect values during loading, processing and training steps in ML.NET.
+Learn how to inspect values during loading, processing and training steps in ML.NET.
 
 Data like the one represented below which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView) can be inspected in various ways in ML.NET.
  
@@ -110,6 +110,8 @@ using (DataViewRowCursor cursor = data.GetRowCursor(columns))
 
 The model building process is experimental and iterative. To preview what data would look like after pre-processing or training a machine learning model on a subset of the data, use the [`Preview`](xref:Microsoft.ML.DebuggerExtensions.Preview*) method which returns a [`DataDebuggerPreview`](xref:Microsoft.ML.Data.DataDebuggerPreview). The result is an object with `ColumnView` and `RowView` properties which are both an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable`1) and contain the values in a particular column or row. Specify the number of rows to apply the transformation to with the `maxRows` parameter.
 
+![Data Debugger Preview Object](./media/inspect-intermediate-data-ml-net/data-debugger-preview-01.png)
+
 ### Preview contents of an IDataView
 
 The snippet below takes an [`IDataView`](xref:Microsoft.ML.IDataView) inspects the contents of the rows and columns.
@@ -118,6 +120,8 @@ The snippet below takes an [`IDataView`](xref:Microsoft.ML.IDataView) inspects t
 // Preview IDataView
 DataDebuggerPreview dataPreview = data.Preview(maxRows:5);
 ```
+
+![Data Debugger Preview Row View](./media/inspect-intermediate-data-ml-net/data-debugger-preview-02.png)
 
 ### Preview results after applying data pre-processing transformations
 

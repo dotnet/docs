@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # -refonly (C# Compiler Options)
 
-The **-refonly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The `-refonly` parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
+The **-refonly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The `-refonly` parameter silently disables outputting PDBs, as reference assemblies cannot be executed. This option corresponds to the [ProduceOnlyReferenceAssembly](/visualstudio/msbuild/common-msbuild-project-properties) project property of MSBuild.
 
 ## Syntax
 

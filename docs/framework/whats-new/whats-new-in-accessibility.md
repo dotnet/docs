@@ -178,7 +178,7 @@ Elements with collapsed or hidden visibility are no longer announced by screen r
 
 **SelectionTextBrush property for use with non-Adorner based text selection**
 
-In the .NET Framework 4.7.2, WPF added the ability to draw <xref:Systemn.Windows.Controls.TextBox> and <xref:System.Windows.Controls.PasswordBox> text selection without using the Adorner layer. The foreground color of the selected text in this scenario was dictated by <xref:System.Windows.SystemColors.HighlightTextBrush?displayProperty=nameWithType>.
+In the .NET Framework 4.7.2, WPF added the ability to draw <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.PasswordBox> text selection without using the Adorner layer. The foreground color of the selected text in this scenario was dictated by <xref:System.Windows.SystemColors.HighlightTextBrush?displayProperty=nameWithType>.
 
 .NET Framework 4.8 adds a new property, `SelectionTextBrush`, that allows developers to select the specific brush for the selected text when using non-Adorner based text selection. This property works only on <xref:System.Windows.Controls.Primitives.TextBoxBase>-derived controls and the <xref:System.Windows.Controls.PasswordBox> control in WPF applications with non-Adorner-based text selection enabled. It does not work on the <xref:System.Windows.Controls.RichTextBox> control. If non-Adorner-based text selection is not enabled, this property is ignored.
 
@@ -242,7 +242,7 @@ To enable this feature, an application needs to target .NET Framework 4.8 or opt
 Once enabled, all controls that contain a tooltip display it once the control receives keyboard focus. The tooltip can be dismissed over time or when the keyboard focus changes. Users can also dismiss the tooltip manually by using a new keyboard shortcut, Ctrl + Shift + F10. Once the tooltip has been dismissed it can be displayed again by using the same keyboard shortcut.
 
 > [!NOTE]
-> [Ribbon tooltips](xref:System.Windows.Controls.Ribbon.RibbonToolTips> on <xref:System.Windodws.Controls.Ribbon.Ribbon> controls won’t show on keyboard focus; they only show via the keyboard shortcut.
+> [Ribbon tooltips](xref:System.Windows.Controls.Ribbon.RibbonToolTips> on <xref:System.Windows.Controls.Ribbon.Ribbon> controls won’t show on keyboard focus; they only show via the keyboard shortcut.
 
 **Added Support for SizeOfSet and PositionInSet UIAutomation properties**
 
@@ -304,7 +304,7 @@ Automatic values are only provided if the application targets .NET Framework 4.8
 
 <a name="wf48" />
 
-## Windows Workflow Foundation (WF) workflow designer
+### Windows Workflow Foundation (WF) workflow designer
 
 The workflow designer includes the following changes in .NET Framework 4.8:
 

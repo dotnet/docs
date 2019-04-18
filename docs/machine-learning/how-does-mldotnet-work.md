@@ -78,8 +78,8 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
 The following diagram shows this flow in visual form, with a couple of additions, which we talk about later in this article:
 
-    - Evaluate the model and iterate to improve
-    - Separate model development and model usage (deployment)
+- Evaluate the model and iterate to improve
+- Separate model development and model usage (deployment)
     
 ![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png) 
 

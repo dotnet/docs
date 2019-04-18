@@ -171,7 +171,7 @@ Add the following as the next two lines of code in the `Main()` method to call y
 
 ## Build and train your model
 
-There are three major concepts in ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
+There are three major concepts in ML.NET: [Data](../resources/glossary.md#data), [Transformers](../resources/glossary.md#transformer), and [Estimators](../resources/glossary.md#estimator).
 
 Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
 

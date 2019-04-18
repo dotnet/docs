@@ -78,8 +78,8 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
 The following diagram shows this flow in visual form, with a couple of additions, which we talk about later in this article:
 
-   1. Addition of an evalution and improvement step
-   1. Indication that model development and usage are often separate
+    - Evaluate the model and iterate to improve
+    - Separate model development and model usage (deployment)
     
 ![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png) 
 
@@ -223,13 +223,13 @@ All ML.NET algorithms look for an input column that is a vector. By default this
 
 All algorithms also create new columns after they have performed a prediction. The fixed names of these new columns depend on the type of machine learning algorithm. For the regression task, one of the new columns is called **Score**. This is why we attributed our price data with this name.
 
-    ```csharp
+```csharp
     public class Prediction
     {
         [ColumnName("Score")]
         public float Price { get; set; }
     }
-    ```    
+```    
 
 You can find out more about output columns of different machine learning tasks in the [Machine Learning Tasks](resources/tasks.md) guide.
 

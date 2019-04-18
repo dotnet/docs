@@ -54,7 +54,7 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 
 .NET Framework 4.8 introduces new features in the following areas:
 
-- [Core](#core48)
+- [Base classes](#core48)
 - [Windows Communication Foundation (WCF)](#wcf48)
 - [Windows Presentation Foundation (WPF)](#wpf48)
 - [Common language runtime](#clr48) 
@@ -187,7 +187,7 @@ The runtime in .NET Framework 4.8 includes the following changes and improvement
 
 .NET Framework 4.7.2 includes new features in the following areas:
 
-- [Core](#core-472)
+- [Base classes](#core-472)
 - [ASP.NET](#asp-net472)
 - [Networking](#net472)
 - [SQL](#sql472)
@@ -198,7 +198,7 @@ A continuing focus in .NET Framework 4.7.2 is improved accessibility, which allo
 
 <a name="core-472" />
 
-#### Core
+#### Base classes
 
 .NET Framework 4.7.2 features a large number of cryptographic enhancements, better decompression support for ZIP archives, and additional collection APIs.
 
@@ -566,7 +566,7 @@ For Windows Forms application, the previous workaround of setting DPI awareness 
 
 .NET Framework 4.7.1 includes new features in the following areas:
 
-- [Core](#core471)
+- [Base classes](#core471)
 - [Common language runtime (CLR)](#clr)
 - [Networking](#net471)
 - [ASP.NET](#asp-net471)
@@ -575,7 +575,7 @@ In addition, a major focus in .NET Framework 4.7.1 is improved accessibility, wh
 
 <a name="core471" />
 
-#### Core
+#### Base classes
 
 **Support for .NET Standard 2.0**
 
@@ -649,7 +649,7 @@ In .NET Framework 4.7 and earlier versions, ASP.NET allowed developers to store 
 
 .NET Framework 4.7 includes new features in the following areas:
 
-- [Core](#Core47)
+- [Base classes](#Core47)
 - [Networking](#net47)
 - [ASP.NET](#ASP-NET47)
 - [Windows Communication Foundation (WCF)](#wcf47)
@@ -660,7 +660,7 @@ For a list of new APIs added to .NET Framework 4.7, see [.NET Framework 4.7 API 
 
 <a name="Core47" />
 
-#### Core
+#### Base classes
 
 .NET Framework 4.7 improves serialization by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>:
 
@@ -1803,7 +1803,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 - The [.NET Framework Reference Source](https://referencesource.microsoft.com/) provides a new browsing experience and enhanced functionality. You can now browse through the .NET Framework source code online, [download the reference](https://referencesource.microsoft.com/download.html) for offline viewing, and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://devblogs.microsoft.com/dotnet/a-new-look-for-net-reference-source/).
 
-Core new features and enhancements in .NET Framework 4.5.1 include:
+New features and enhancements in the base classes in .NET Framework 4.5.1 include:
 
 - Automatic binding redirection for assemblies. Starting with Visual Studio 2013, when you compile an app that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
 
@@ -1847,7 +1847,7 @@ For new features in ASP.NET 4.5.1, see [ASP.NET and Web Tools for Visual Studio 
 
 ## What's new in .NET Framework 4.5
 
-### Core new features and improvements
+### Base classes
 
 - Ability to reduce system restarts by detecting and closing .NET Framework 4 applications during deployment. See [Reducing System Restarts During .NET Framework 4.5 Installations](../deployment/reducing-system-restarts.md).
 

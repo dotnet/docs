@@ -6,7 +6,7 @@ ms.date: 04/05/2019
 ---
 # .NET Machine learning tutorials - ML.NET
 
-The following tutorials enable you to understand how to use [ML.NET](../index.md) to build custom machine learning solutions and integrate them into your .NET applications:
+The following tutorials enable you to understand how to use [ML.NET](../index.yml) to build custom machine learning solutions and integrate them into your .NET applications:
 
 - [Sentiment analysis](sentiment-analysis.md): demonstrates how to apply a **binary classification** task using ML.NET.
 - [GitHub issue classification](github-issue-classification.md): demonstrates how to apply a **multiclass classification** task using ML.NET.

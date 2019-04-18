@@ -1,7 +1,6 @@
 ---
 title: "Implicit numeric conversions table - C# Reference"
 ms.custom: seodec18
-
 ms.date: 09/05/2018
 helpviewer_keywords: 
   - "conversions [C#], implicit numeric"

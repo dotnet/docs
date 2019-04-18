@@ -154,15 +154,15 @@ In this section, we go through the architectural patterns of ML.NET. If you are 
 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains properties, which are **catalogs** for:
 
-- data loading and saving <xref:Microsoft.ML.Data>
-- data preparation <xref:Microsoft.ML.TransformsCatalog>
+- data loading and saving: <xref:Microsoft.ML.Data>
+- data preparation :<xref:Microsoft.ML.TransformsCatalog>
 - algorithms for model training
-    - binary classification model training <xref:Microsoft.ML.BinaryClassificationCatalog>
-    - multiclass classification model training <xref:Microsoft.ML.MulticlassClassificationCatalog>
-    - anomaly detection model training <xref:Microsoft.ML.AnomalyDetectionCatalog>
-    - ranking model training <xref:Microsoft.ML.RankingCatalog>
-    - regression model training <xref:Microsoft.ML.RegressionCatalog>
-- model loading, saving, and creating prediction engines <xref:Microsoft.ML.ModelOperationsCatalog>
+    - binary classification model training: <xref:Microsoft.ML.BinaryClassificationCatalog>
+    - multiclass classification model training: <xref:Microsoft.ML.MulticlassClassificationCatalog>
+    - anomaly detection model training: <xref:Microsoft.ML.AnomalyDetectionCatalog>
+    - ranking model training: <xref:Microsoft.ML.RankingCatalog>
+    - regression model training: <xref:Microsoft.ML.RegressionCatalog>
+- model loading, saving, and creating prediction engines: <xref:Microsoft.ML.ModelOperationsCatalog>
 
 The catalogs are a convenience to help you navigate the available operations in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense. 
 
@@ -177,7 +177,7 @@ Inside each catalog is a set of extension functions. Let's look at how extension
         .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
 ```
 
-In the snippet, `Concatenate` and `Sdca` are both extension functions. They each create an object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
+In the snippet, `Concatenate` and `Sdca` are both extension functions. They each create an <xref:Microsoft.ML.IEstimator`1> object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
 
 ### Fit the model
 
@@ -190,6 +190,8 @@ Once the objects in the pipeline have been created, data can be used to train or
 Calling `Fit()` uses the input training data to estimate the parameters of the model. Remember in our linear regression model above, we had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
 You can learn more about model training in [How to train your model](./how-to-guides/train-model.md)
+
+The resulting model object implements the <xref:Microsoft.ML.ITransformer> interface. That is, the model transforms transforms input data into predictions. 
 
 ### Transform data
 

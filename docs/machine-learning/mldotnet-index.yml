@@ -27,7 +27,7 @@ sections:
     - href: https://dotnet.microsoft.com/images/redesign/learn/apps/ml-dotnet/made-for-dotnet.svg?v=UfmC3z46a4NhDPAzqF5oZklm_cerTMWbBdD1vlfXvh0
       html: <p>Create your first ML.NET app.</p>
       image:
-        src: https://github.com/dotnet/machinelearning-samples/raw/master/images/app-type-getting-started.png
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: Get started
 - title: ML.NET scenarios and tutorials
   items:
@@ -72,16 +72,11 @@ sections:
     style: unordered
     items:
     - html: <a href="https://github.com/dotnet/machinelearning-samples">Find more scenarios in the ML.NET samples repo in GitHub</a>
-  - type: paragraph
-    html: <a href="https://github.com/dotnet/machinelearning-samples">Find more scenarios in the ML.NET samples repo in GitHub</a>
-  - type: paragraph
-    items:
-    - html: <p>Find more scenarios in the<a href="https://github.com/dotnet/machinelearning-samples">ML.NET samples repo in GitHub</a>.</p>
 - title: Videos
   items:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/cCsOvzB3rK8]"
-- title: Reference and resources
+- title: Reference and resources (icon list)
   items:
   - type: list
     style: icon48
@@ -98,7 +93,7 @@ sections:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
       text: Data transformations
       href: transforms.md
-  - title: Reference and resources
+  - title: Reference and resources (text list)
     items:
     - type: list
       style: unordered

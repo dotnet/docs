@@ -1,5 +1,5 @@
 ---
-title: Welcome to ML.NET
+title: ML.NET Documentation
 description: Learn about ML.NET, a free, open-source, and cross-platform machine learning framework that enables you to build custom AI solutions and integrate them into your .NET applications.
 author: briacht
 ms.custom: seodec18

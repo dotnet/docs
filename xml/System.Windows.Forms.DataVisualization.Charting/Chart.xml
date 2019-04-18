@@ -2589,9 +2589,15 @@ These data point properties are:
         <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event. </summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Raising the <xref:System.Windows.Forms.Control.GotFocus> event invokes the event handler through a delegate. For more information, see [Handling and raising events](~/docs/standard/events/index.md).
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLocationChanged">
@@ -2637,9 +2643,15 @@ These data point properties are:
         <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event. </summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Raising the <xref:System.Windows.Forms.Control.LostFocus> event invokes the event handler through a delegate. For more information, see [Handling and raising events](~/docs/standard/events/index.md).
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">

@@ -399,7 +399,7 @@
         <param name="switchMap">The switch map.</param>
         <param name="value">The value of the property.</param>
         <summary>Checks the value a property is set to, and finds the corresponding switch.</summary>
-        <returns>To be added.</returns>
+        <returns>The switch that \<paramref name="value" /> is mapped to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -135,7 +135,7 @@
         <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
         <param name="sequence">The read-only sequence to convert to an array.</param>
         <summary>Converts the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to an array.</summary>
-        <returns>To be added.</returns>
+        <returns>An array containing the data in the current read-only sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

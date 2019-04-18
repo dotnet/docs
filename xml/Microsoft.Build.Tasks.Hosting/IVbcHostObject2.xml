@@ -112,9 +112,10 @@
         <Parameter Name="win32Manifest" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="win32Manifest">The win32 manifest</param>
+        <param name="win32Manifest">The Win32 manifest.</param>
         <summary>Sets a Win32 manifest to use.</summary>
-        <returns>To be added.</returns>
+        <returns>
+          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

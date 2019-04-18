@@ -20,5 +20,6 @@ The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a 
  <xref:System.Printing.PrintQueue>  
   
 ## See also
+
 - [Printing Overview](../advanced/printing-overview.md)
 - [Documents in WPF](../advanced/documents-in-wpf.md)

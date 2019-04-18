@@ -68,7 +68,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 ### Part 1: Create a DoubleAnimation  
  One way to make an element fade in and out of view is to animate its <xref:System.Windows.UIElement.Opacity%2A> property. Because the <xref:System.Windows.UIElement.Opacity%2A> property is of type <xref:System.Double>, you need an animation that produces double values. A <xref:System.Windows.Media.Animation.DoubleAnimation> is one such animation. A <xref:System.Windows.Media.Animation.DoubleAnimation> creates a transition between two double values. To specify its starting value, you set its <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property. To specify its ending value, you set its <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property.  
   
-1.  An opacity value of `1.0` makes the object completely opaque, and an opacity value of `0.0` makes it completely invisible. To make the animation transition from `1.0` to `0.0` you set its <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property to `1.0` and its <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property to `0.0`. The following shows how to create a <xref:System.Windows.Media.Animation.DoubleAnimation> in XAML.  
+1. An opacity value of `1.0` makes the object completely opaque, and an opacity value of `0.0` makes it completely invisible. To make the animation transition from `1.0` to `0.0` you set its <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property to `1.0` and its <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property to `0.0`. The following shows how to create a <xref:System.Windows.Media.Animation.DoubleAnimation> in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_2](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_2)]  
   
@@ -77,7 +77,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_2](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Class1.cs#rectangleopacityfadeexamplecode_2)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/Class1.vb#rectangleopacityfadeexamplecode_2)]  
   
-2.  Next, you must specify a <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. The <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of an animation specifies how long it takes to go from its starting value to its destination value. The following shows how to set the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> to five seconds in XAML.  
+2. Next, you must specify a <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. The <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of an animation specifies how long it takes to go from its starting value to its destination value. The following shows how to set the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> to five seconds in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_3](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_3)]  
   
@@ -86,7 +86,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_3](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Class1.cs#rectangleopacityfadeexamplecode_3)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/Class1.vb#rectangleopacityfadeexamplecode_3)]  
   
-3.  The previous code showed an animation that transitions from `1.0` to `0.0`, which causes the target element to fade from completely opaque to completely invisible. To make the element fade back into view after it vanishes, set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of the animation to `true`. To make the animation repeat indefinitely, set its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>.The following shows how to set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> and <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> properties in XAML.  
+3. The previous code showed an animation that transitions from `1.0` to `0.0`, which causes the target element to fade from completely opaque to completely invisible. To make the element fade back into view after it vanishes, set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of the animation to `true`. To make the animation repeat indefinitely, set its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>.The following shows how to set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> and <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> properties in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_4](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_4)]  
   
@@ -99,7 +99,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 ### Part 2: Create a Storyboard  
  To apply an animation to an object, you create a <xref:System.Windows.Media.Animation.Storyboard> and use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached properties to specify the object and property to animate.  
   
-1.  Create the <xref:System.Windows.Media.Animation.Storyboard> and add the animation as its child. The following shows how to create the <xref:System.Windows.Media.Animation.Storyboard> in XAML.  
+1. Create the <xref:System.Windows.Media.Animation.Storyboard> and add the animation as its child. The following shows how to create the <xref:System.Windows.Media.Animation.Storyboard> in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_5](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_5)]    
   
@@ -113,7 +113,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_101](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_101)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_101)]  
   
-2.  The <xref:System.Windows.Media.Animation.Storyboard> has to know where to apply the animation. Use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> attached property to specify the object to animate. The following shows how to set the target name of the <xref:System.Windows.Media.Animation.DoubleAnimation> to `MyRectangle` in XAML.  
+2. The <xref:System.Windows.Media.Animation.Storyboard> has to know where to apply the animation. Use the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> attached property to specify the object to animate. The following shows how to set the target name of the <xref:System.Windows.Media.Animation.DoubleAnimation> to `MyRectangle` in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_6](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_6)]  
   
@@ -122,7 +122,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_102](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_102)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_102)]  
   
-3.  Use the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached property to specify the property to animate. The following shows how the animation is configured to target the <xref:System.Windows.UIElement.Opacity%2A> property of the <xref:System.Windows.Shapes.Rectangle> in XAML.
+3. Use the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached property to specify the property to animate. The following shows how the animation is configured to target the <xref:System.Windows.UIElement.Opacity%2A> property of the <xref:System.Windows.Shapes.Rectangle> in XAML.
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_7](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_7)]  
   
@@ -137,15 +137,15 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 ### Part 3 (XAML): Associate the Storyboard with a Trigger  
  The easiest way to apply and start a <xref:System.Windows.Media.Animation.Storyboard> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is to use an event trigger. This section shows how to associate the <xref:System.Windows.Media.Animation.Storyboard> with a trigger in XAML.  
   
-1.  Create a <xref:System.Windows.Media.Animation.BeginStoryboard> object and associate your storyboard with it. A <xref:System.Windows.Media.Animation.BeginStoryboard> is a type of <xref:System.Windows.TriggerAction> that applies and starts a <xref:System.Windows.Media.Animation.Storyboard>.  
+1. Create a <xref:System.Windows.Media.Animation.BeginStoryboard> object and associate your storyboard with it. A <xref:System.Windows.Media.Animation.BeginStoryboard> is a type of <xref:System.Windows.TriggerAction> that applies and starts a <xref:System.Windows.Media.Animation.Storyboard>.  
   
      [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_3](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_3)]  
   
-2.  Create an <xref:System.Windows.EventTrigger> and add the <xref:System.Windows.Media.Animation.BeginStoryboard> to its <xref:System.Windows.EventTrigger.Actions%2A> collection. Set the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of the <xref:System.Windows.EventTrigger> to the routed event that you want to start the <xref:System.Windows.Media.Animation.Storyboard>. (For more information about routed events, see the [Routed Events Overview](../advanced/routed-events-overview.md).)  
+2. Create an <xref:System.Windows.EventTrigger> and add the <xref:System.Windows.Media.Animation.BeginStoryboard> to its <xref:System.Windows.EventTrigger.Actions%2A> collection. Set the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of the <xref:System.Windows.EventTrigger> to the routed event that you want to start the <xref:System.Windows.Media.Animation.Storyboard>. (For more information about routed events, see the [Routed Events Overview](../advanced/routed-events-overview.md).)  
   
      [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_2](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_2)]  
   
-3.  Add the <xref:System.Windows.EventTrigger> to the <xref:System.Windows.FrameworkElement.Triggers%2A> collection of the Rectangle.  
+3. Add the <xref:System.Windows.EventTrigger> to the <xref:System.Windows.FrameworkElement.Triggers%2A> collection of the Rectangle.  
   
      [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_1](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_1)]  
   
@@ -153,12 +153,12 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 ### Part 3 (Code): Associate the Storyboard with an Event Handler  
  The easiest way to apply and start a <xref:System.Windows.Media.Animation.Storyboard> in code is to use an event handler. This section shows how to associate the <xref:System.Windows.Media.Animation.Storyboard> with an event handler in code.  
   
-1.  Register for the <xref:System.Windows.FrameworkElement.Loaded> event of the rectangle.  
+1. Register for the <xref:System.Windows.FrameworkElement.Loaded> event of the rectangle.  
   
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_104](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_104)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_104)]  
   
-2.  Declare the event handler. In the event handler, use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method to apply the storyboard.  
+2. Declare the event handler. In the event handler, use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method to apply the storyboard.  
   
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_105](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_105)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_105)]  

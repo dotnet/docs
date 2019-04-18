@@ -19,7 +19,7 @@ The notion of a variable that does not change its value might appear to be contr
   
 ### To create a variable that does not change in value  
   
-1.  At module level, declare a member variable with the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md), and include the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
+1. At module level, declare a member variable with the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md), and include the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
   
     ```  
     Dim ReadOnly timeStarted  
@@ -27,7 +27,7 @@ The notion of a variable that does not change its value might appear to be contr
   
      You can specify `ReadOnly` only on a member variable. This means you must define the variable at module level, outside of any procedure.  
   
-2.  If you can compute the value in a single statement at compile time, use an initialization clause in the `Dim` statement. Follow the [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause with an equal sign (`=`), followed by an expression. Be sure the compiler can evaluate this expression to a constant value.  
+2. If you can compute the value in a single statement at compile time, use an initialization clause in the `Dim` statement. Follow the [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause with an equal sign (`=`), followed by an expression. Be sure the compiler can evaluate this expression to a constant value.  
   
     ```  
     Dim ReadOnly timeStarted As Date = Now  

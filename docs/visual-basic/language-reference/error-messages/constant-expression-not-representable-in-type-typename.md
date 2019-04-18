@@ -15,7 +15,7 @@ You are trying to evaluate a constant that will not fit into the target type, us
   
 ## To correct this error  
   
-1.  Change the target type to one that can handle the constant.  
+1. Change the target type to one that can handle the constant.  
   
 ## See also
 

@@ -19,11 +19,11 @@ A derived class inherits all the definitions of its base class. If you want to d
   
 ### To hide an inherited variable  
   
-1.  Be sure the variable you want to hide is declared at class level (outside any procedure). Otherwise you do not need to hide it.  
+1. Be sure the variable you want to hide is declared at class level (outside any procedure). Otherwise you do not need to hide it.  
   
-2.  Inside your derived class, write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) declaring your variable. Use the same name as that of the inherited variable.  
+2. Inside your derived class, write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) declaring your variable. Use the same name as that of the inherited variable.  
   
-3.  Include the [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) keyword in the declaration.  
+3. Include the [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) keyword in the declaration.  
   
      When code in the derived class refers to the variable name, the compiler resolves the reference to your variable.  
   

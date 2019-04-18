@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)
+This tutorial and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes) GitHub repository.
 
 ## Image classification sample overview
 
@@ -33,13 +33,13 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 * Microsoft.ML 0.10.0 Nuget package
 * Microsoft.ML.ImageAnalytics 0.10.0 Nuget package
 * Microsoft.ML.TensorFlow 0.10.0 Nuget package
 
-* [The tutorial assets directory .ZIP file](http://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
+* [The tutorial assets directory .ZIP file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
 
 * [The InceptionV3 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -99,6 +99,7 @@ Your layer uses a [multinomial logistic regression algorithm](https://en.wikiped
 
 There are two data sources: the `.tsv` file, and the image files.  The `tags.tsv` file contains two columns: the first one is defined as `ImagePath` and the second one is the `Label` corresponding to the image. The following example file doesn't have a header row, and looks like this:
 
+<!-- markdownlint-disable MD010 -->
 ```tsv
 broccoli.jpg	food
 pizza.jpg	food
@@ -109,6 +110,7 @@ teddy4.jpg	toy
 toaster.jpg	appliance
 toaster2.png	appliance
 ```
+<!-- markdownlint-enable MD010 -->
 
 The training and testing images are located in the assets folders that you'll download in a zip file. These images belong to Wikimedia Commons.
 > *[Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=Main_Page&oldid=313158208), the free media repository.* Retrieved 10:48, October 17, 2018 from:  
@@ -131,7 +133,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Prepare your data
 
-1. Download [The project assets directory zip file](http://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip), and unzip.
+1. Download [The project assets directory zip file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip), and unzip.
 
 2. Copy the `assets` directory into your *TransferLearningTF* project directory. This directory and its subdirectories contain the data and support files (except for the Inception model, which you'll download and add in the next step) needed for this tutorial.
 
@@ -504,4 +506,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore an expanded image classification sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning/)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/)

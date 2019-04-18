@@ -15,11 +15,11 @@ The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and e
   
 ## To correct this error  
   
-1.  Declare parameters of the specific type you want to use; for example.  
+1. Declare parameters of the specific type you want to use; for example.  
   
      [!code-vb[VbVbalrStatements#95](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class5.vb#95)]  
   
-2.  Use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify `As Any` when `Void*` is expected by the procedure being called.  
+2. Use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify `As Any` when `Void*` is expected by the procedure being called.  
   
      [!code-vb[VbVbalrStatements#96](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class5.vb#96)]  
   

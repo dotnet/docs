@@ -22,7 +22,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
 ### To display the contents of an assembly using Ildasm.exe  
   
-1.  Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
+1. Type **ildasm** \<*assembly name*> at the command prompt. For example, the following command disassembles the `Hello.exe` assembly.  
   
     ```  
     ildasm Hello.exe  
@@ -30,7 +30,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
   
 ### To view assembly manifest information  
   
-1.  Double-click the MANIFEST icon in the MSIL Disassembler window.  
+1. Double-click the MANIFEST icon in the MSIL Disassembler window.  
   
 ## Example  
  The following example starts with a basic "Hello, World" program. After compiling the program, use Ildasm.exe to disassemble the Hello.exe assembly and view the assembly manifest.  
@@ -83,6 +83,7 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
  An assembly manifest can contain a number of different directives, depending on the contents of the assembly. For an extensive list of the directives in the assembly manifest, see the ECMA documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
 ## See also
+
 - [Application domains and assemblies](application-domains.md#application-domains-and-assemblies)
 - [Application Domains and Assemblies How-to Topics](../../../docs/framework/app-domains/application-domains-and-assemblies-how-to-topics.md)
 - [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)

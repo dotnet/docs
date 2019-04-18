@@ -77,6 +77,7 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
  If you have deployed your Windows Forms application by using Visual Studio, you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions).  
   
 ## See also
+
 - [Windows Forms Security](windows-forms-security.md)
 - [Code Access Security Basics](../misc/code-access-security-basics.md)
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

@@ -1,6 +1,6 @@
 ---
 title: "namespace keyword - C# Reference"
-ms.custom: seodec18
+ms.custom: seoapril2019
 
 ms.date: 07/20/2015
 f1_keywords: 
@@ -67,4 +67,5 @@ For more information about using namespaces, see the following topics:
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Namespace Keywords](namespace-keywords.md)
-- [using](using.md)
+- [using](using-directive.md)
+- [using static](using-static.md)

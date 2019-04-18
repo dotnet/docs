@@ -25,11 +25,11 @@ Namespace or type specified in the project-level Imports '\<qualifiedelementname
   
 ## To correct this error  
   
-1.  Open the **Project Designer** and switch to the **Reference** page.  
+1. Open the **Project Designer** and switch to the **Reference** page.  
   
-2.  In the **Imported namespaces** section, verify that the containing element is accessible from your project.  
+2. In the **Imported namespaces** section, verify that the containing element is accessible from your project.  
   
-3.  Verify that the containing element exposes at least one `Public` member.  
+3. Verify that the containing element exposes at least one `Public` member.  
   
 ## See also
 

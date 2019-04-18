@@ -41,6 +41,7 @@ In general, a static assembly can consist of four elements:
  As you currently design your source code, you make explicit decisions about how to partition the functionality of your application into one or more files. When designing .NET Framework code, you will make similar decisions about how to partition the functionality into one or more assemblies.  
   
 ## See also
+
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [Assembly Manifest](../../../docs/framework/app-domains/assembly-manifest.md)
 - [Assembly Security Considerations](../../../docs/framework/app-domains/assembly-security-considerations.md)

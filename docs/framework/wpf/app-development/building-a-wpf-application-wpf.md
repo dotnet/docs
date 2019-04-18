@@ -51,11 +51,11 @@ Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnp
   
  During this step, the following activities take place for every [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file that is a `Page` build item:  
   
-1.  The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is parsed by the markup compiler.  
+1. The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is parsed by the markup compiler.  
   
-2.  A compiled representation is created for that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and copied to the obj\Release folder.  
+2. A compiled representation is created for that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and copied to the obj\Release folder.  
   
-3.  A CodeDOM representation of a new partial class is created and copied to the obj\Release folder.  
+3. A CodeDOM representation of a new partial class is created and copied to the obj\Release folder.  
   
  In addition, a language-specific code file is generated for every [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file. For example, for a Page1.xaml page in a Visual Basic project, a Page1.g.vb is generated; for a Page1.xaml page in a C# project, a Page1.g.cs is generated. The ".g" in the file name indicates the file is generated code that has a partial class declaration for the top-level element of the markup file (such as `Page` or `Window`). The class is declared with the `partial` modifier in C# (`Extends` in Visual Basic) to indicate there is another declaration for the class elsewhere, usually in the code-behind file Page1.xaml.cs.  
   
@@ -160,6 +160,7 @@ End Sub
 -   Nothing is recompiled (if nothing in the project has changed).  
   
 ## See also
+
 - [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
 - [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)
 - [Pack URIs in WPF](pack-uris-in-wpf.md)

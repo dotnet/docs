@@ -62,11 +62,11 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
 #### To match a character in the string expression against a list of characters or no character  
   
-1.  Call the `Like` operator twice on the same string expression, and connect the two calls with either the [Or Operator](../../../../visual-basic/language-reference/operators/or-operator.md) or the [OrElse Operator](../../../../visual-basic/language-reference/operators/orelse-operator.md).  
+1. Call the `Like` operator twice on the same string expression, and connect the two calls with either the [Or Operator](../../../../visual-basic/language-reference/operators/or-operator.md) or the [OrElse Operator](../../../../visual-basic/language-reference/operators/orelse-operator.md).  
   
-2.  In the pattern string for the first `Like` clause, include the character list, enclosed in brackets (`[ ]`).  
+2. In the pattern string for the first `Like` clause, include the character list, enclosed in brackets (`[ ]`).  
   
-3.  In the pattern string for the second `Like` clause, do not put any character at the position in question.  
+3. In the pattern string for the second `Like` clause, do not put any character at the position in question.  
   
      The following example tests the seven-digit telephone number `phoneNum` for exactly three numeric digits, followed by a space, a hyphen (`–`), a period (`.`), or no character at all, followed by exactly four numeric digits.  
   

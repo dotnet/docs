@@ -12,9 +12,9 @@ Because arrays are objects, you can use them in assignment statements like other
   
 ### To assign one array to another array  
   
-1.  Ensure that the two arrays have the same rank (number of dimensions) and compatible element data types.  
+1. Ensure that the two arrays have the same rank (number of dimensions) and compatible element data types.  
   
-2.  Use a standard assignment statement to assign the source array to the destination array. Do not follow either array name with parentheses.  
+2. Use a standard assignment statement to assign the source array to the destination array. Do not follow either array name with parentheses.  
   
     ```  
     Dim formArray() As System.Windows.Forms.Form  

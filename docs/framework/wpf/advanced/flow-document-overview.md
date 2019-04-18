@@ -83,9 +83,9 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
   
  For the purposes of flow content, there are two important categories:  
   
-1.  **Block-derived classes**: Also called "Block content elements" or just "Block Elements". Elements that inherit from <xref:System.Windows.Documents.Block> can be used to group elements under a common parent or to apply common attributes to a group.  
+1. **Block-derived classes**: Also called "Block content elements" or just "Block Elements". Elements that inherit from <xref:System.Windows.Documents.Block> can be used to group elements under a common parent or to apply common attributes to a group.  
   
-2.  **Inline-derived classes**: Also called "Inline content elements" or just "Inline Elements". Elements that inherit from <xref:System.Windows.Documents.Inline> are either contained within a Block Element or another Inline Element. Inline Elements are often used as the direct container of content that is rendered to the screen. For example, a <xref:System.Windows.Documents.Paragraph> (Block Element) can contain a <xref:System.Windows.Documents.Run> (Inline Element) but the <xref:System.Windows.Documents.Run> actually contains the text that is rendered on the screen.  
+2. **Inline-derived classes**: Also called "Inline content elements" or just "Inline Elements". Elements that inherit from <xref:System.Windows.Documents.Inline> are either contained within a Block Element or another Inline Element. Inline Elements are often used as the direct container of content that is rendered to the screen. For example, a <xref:System.Windows.Documents.Paragraph> (Block Element) can contain a <xref:System.Windows.Documents.Run> (Inline Element) but the <xref:System.Windows.Documents.Run> actually contains the text that is rendered on the screen.  
   
  Each class in these two categories is briefly described below.  
   
@@ -341,6 +341,7 @@ Flow documents are designed to optimize viewing and readability. Rather than bei
  See [Typography in WPF](typography-in-wpf.md) for more information on typography.  
   
 ## See also
+
 - [Text](optimizing-performance-text.md)
 - [Typography in WPF](typography-in-wpf.md)
 - [How-to Topics](flow-content-elements-how-to-topics.md)

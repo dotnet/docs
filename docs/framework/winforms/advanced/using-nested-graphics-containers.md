@@ -51,5 +51,6 @@ ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
  ![Illustration that shows the strings drawn from nested containers.](./media/using-nested-graphics-containers/nested-containers-three-strings.png)  
   
 ## See also
+
 - <xref:System.Drawing.Graphics>
 - [Managing the State of a Graphics Object](managing-the-state-of-a-graphics-object.md)

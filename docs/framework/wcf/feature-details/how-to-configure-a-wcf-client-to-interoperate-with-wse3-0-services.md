@@ -11,13 +11,13 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
   
 ### To configure a WCF client to interoperate with a WSE 3.0 Web service  
   
-1.  Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to create a WCF client for the WSE 3.0 Web service.  
+1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to create a WCF client for the WSE 3.0 Web service.  
   
      For a WSE Web service, a WCF client class is created.  
   
      For details about creating a WCF client, see the [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
-2.  Create a class that represents a binding that can communicate with WSE 3.0 Web services.  
+2. Create a class that represents a binding that can communicate with WSE 3.0 Web services.  
   
      The following class is part of the [Interoperating with WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29) sample.  
   
@@ -42,7 +42,7 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
          [!code-csharp[c_WCFClientToWSEService#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/wsehttpbinding.cs#2)]
          [!code-vb[c_WCFClientToWSEService#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/wsehttpbinding.vb#2)]  
   
-3.  In the client application code, add code to set the binding properties.  
+3. In the client application code, add code to set the binding properties.  
   
      The following code example specifies that the WCF client must use message protection and authentication as defined by the WSE 3.0 `AnonymousForCertificate` turnkey security assertion. Additionally, secure sessions and derived keys are required.  
   
@@ -56,5 +56,6 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
 [!code-vb[c_WCFClientToWSEService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#0)]  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.Binding>
 - [Interoperating with WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

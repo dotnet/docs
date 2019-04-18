@@ -13,6 +13,7 @@ The WS-AT protocol service failed to send a Register message to its coordinator
  Inspect the trace message for the exception causing the message send failure  
   
 ## See also
+
 - [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

@@ -626,7 +626,7 @@ The following characters in a custom date and time format string are reserved an
 |F|H|K|M|d|
 |f|g|h|m|s|
 |t|y|z|%|:|
-|/|"|'|\||
+|/|"|'|&#92;||
 
 All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.  In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
 

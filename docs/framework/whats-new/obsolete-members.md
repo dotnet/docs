@@ -794,5 +794,6 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|The `DynData` registry key works only on Win9x, which isn't supported by this version of the .NET Framework. Use the `PerformanceData` registry key instead. This property will be removed from a future version of the Framework.|  
   
 ## See also
+
 - [What's Obsolete in the Class Library](whats-obsolete.md)
 - [Obsolete Types](obsolete-types.md)

@@ -51,7 +51,7 @@ Additionally, normal `let`, `use`, and `do` keywords can be used alongside the a
 
 As mentioned earlier, async code is a specification of work to be done in another context which needs to be explicitly started. Here are two primary ways to accomplish this:
 
-1.  `Async.RunSynchronously` will start an async workflow on another thread and await its result.
+1. `Async.RunSynchronously` will start an async workflow on another thread and await its result.
 
 ```fsharp
 open System
@@ -72,7 +72,7 @@ let fetchHtmlAsync url =
  printfn "%s" html
  ```
 
-2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
+2. `Async.Start` will start an async workflow on another thread, and will **not** await its result.
 
 ```fsharp
 open System
@@ -178,9 +178,9 @@ There are a few other similarities and differences worth noting.
 
 In contrast, F# async workflows are more naturally cancellable. Cancellation is a simple three-step process.
 
-1.  Create a new `CancellationTokenSource`.
-2.  Pass it into a starting function.
-3.  Call `Cancel` on the token.
+1. Create a new `CancellationTokenSource`.
+2. Pass it into a starting function.
+3. Call `Cancel` on the token.
 
 Example:
 

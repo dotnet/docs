@@ -23,4 +23,5 @@ Workflows can be constructed from built-in activities as well as from custom act
  Describes how to create a state machine workflow using the <xref:System.Activities.Statements.StateMachine> activity.  
   
 ## See also
+
 - [Windows Workflow Foundation Programming](programming.md)

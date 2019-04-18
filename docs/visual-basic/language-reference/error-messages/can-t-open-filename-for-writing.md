@@ -15,9 +15,9 @@ The specified file cannot be opened for writing, perhaps because it has already 
   
 ## To correct this error  
   
-1.  Close the file and reopen it.  
+1. Close the file and reopen it.  
   
-2.  Check the file's permissions.  
+2. Check the file's permissions.  
   
 ## See also
 

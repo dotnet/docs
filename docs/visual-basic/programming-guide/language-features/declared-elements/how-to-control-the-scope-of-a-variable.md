@@ -37,19 +37,19 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
   
 #### To make a variable visible throughout a module, class, or structure  
   
-1.  Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
+1. Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
   
-2.  Include the [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword in the `Dim` statement.  
+2. Include the [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword in the `Dim` statement.  
   
-3.  You can refer to the variable from anywhere within the module, class, or structure, but not from outside it.  
+3. You can refer to the variable from anywhere within the module, class, or structure, but not from outside it.  
   
 #### To make a variable visible throughout a namespace  
   
-1.  Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
+1. Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
   
-2.  Include the [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) or [Public](../../../../visual-basic/language-reference/modifiers/public.md) keyword in the `Dim` statement.  
+2. Include the [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) or [Public](../../../../visual-basic/language-reference/modifiers/public.md) keyword in the `Dim` statement.  
   
-3.  You can refer to the variable from anywhere within the namespace containing the module, class, or structure.  
+3. You can refer to the variable from anywhere within the namespace containing the module, class, or structure.  
   
 ## Example  
  The following example declares a variable at module level and limits its visibility to code within the module.  

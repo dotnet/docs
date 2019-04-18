@@ -23,7 +23,8 @@ Requests to populate the buffer given with the module's data.
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
 ## Syntax
-```
+
+```cpp
 HRESULT Request([in] ULONG32 reqCode,
     [in] ULONG32 inBufferSize,
     [in, size_is(inBufferSize)] BYTE* inBuffer,
@@ -54,11 +55,12 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-**Header:** None   
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
+
 - [Debugging](index.md)
 - [IXCLRDataModule Interface](ixclrdatamodule-interface.md)

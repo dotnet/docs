@@ -31,7 +31,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 ## Understand the problem
 
@@ -144,7 +144,7 @@ We are passing two parameters into the `Train` method; an `MLContext` for the co
 ## Load and transform data
 
 Load the data using the `MLContext.Data.LoadFromTextFile` wrapper for the [LoadFromTextFile method](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29). It returns a
-<xref:Microsoft.Data.DataView.IDataView>. 
+<xref:Microsoft.Data.DataView.IDataView>.
 
 As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
@@ -227,6 +227,7 @@ private static void Evaluate(MLContext mlContext, ITransformer model)
 
 }
 ```
+
 The `Evaluate` method executes the following tasks:
 
 * Loads the test dataset.
@@ -298,12 +299,12 @@ Since we want to load the model from the zip file we saved, we'll create the `Fi
 While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the next line in the `TestSinglePrediction` Method:
 
 [!code-csharp[MakePredictionEngine](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#22 "Create the PredictionFunction")]
-  
+
 This tutorial uses one test trip within this class. Later you can add other scenarios to experiment with the model. Add a trip to test the trained model's prediction of cost in the `TestSinglePrediction` method by creating an instance of `TaxiTrip`:
 
 [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#23 "Create test data for single prediction")]
 
- We can use that to predict the fare based on a single instance of the taxi trip data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
+We can use that to predict the fare based on a single instance of the taxi trip data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
 [!code-csharp[Predict](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#24 "Create a prediction of taxi fare")]
 
@@ -318,6 +319,7 @@ Congratulations! You've now successfully built a machine learning model for pred
 ## Next steps
 
 In this tutorial, you learned how to:
+
 > [!div class="checklist"]
 > * Understand the problem
 > * Select the appropriate machine learning task
@@ -330,5 +332,6 @@ In this tutorial, you learned how to:
 > * Use the model for predictions
 
 Advance to the next tutorial to learn more.
+
 > [!div class="nextstepaction"]
 > [Iris clustering](iris-clustering.md)

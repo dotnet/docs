@@ -83,6 +83,7 @@ ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
  Permission to call unmanaged code allows an application to perform most anything. Therefore, permission to call unmanaged code should only be granted for applications that come from a trusted source. Alternatively, depending on the application, the piece of application functionality that makes the call to unmanaged code could be optional, or enabled in the full trust environment only. For more information about dangerous permissions, see [Dangerous Permissions and Policy Administration](../misc/dangerous-permissions-and-policy-administration.md). For more information about elevating permissions, see [General Security Policy Administration](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100)).  
   
 ## See also
+
 - [More Secure File and Data Access in Windows Forms](more-secure-file-and-data-access-in-windows-forms.md)
 - [More Secure Printing in Windows Forms](more-secure-printing-in-windows-forms.md)
 - [Security in Windows Forms Overview](security-in-windows-forms-overview.md)

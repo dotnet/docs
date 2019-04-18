@@ -14,7 +14,7 @@ The following procedure describes the steps to send data to a server. This proce
   
 ## To send data to a host server  
   
-1.  Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> with the URI of a resource, such as a script or ASP.NET page, that accepts data. For example: 
+1. Create a <xref:System.Net.WebRequest> instance by calling <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> with the URI of a resource, such as a script or ASP.NET page, that accepts data. For example: 
   
     ```csharp  
     WebRequest request = WebRequest.Create("http://www.contoso.com/PostAccepter.aspx");  
@@ -28,7 +28,7 @@ The following procedure describes the steps to send data to a server. This proce
     > The .NET Framework provides protocol-specific classes derived from the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes for URIs that begin with *http:*, *https:*, *ftp:*, and *file:*.
     If you need to set or read protocol-specific properties, you must cast your <xref:System.Net.WebRequest> or <xref:System.Net.WebResponse> object to a protocol-specific object type. For more information, see [Programming pluggable protocols](programming-pluggable-protocols.md). 
   
-2.  Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the <xref:System.Net.WebRequest.Credentials%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Net.NetworkCredential> class:
+2. Set any property values that you need in your `WebRequest` object. For example, to enable authentication, set the <xref:System.Net.WebRequest.Credentials%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Net.NetworkCredential> class:
   
     ```csharp  
     request.Credentials = CredentialCache.DefaultCredentials;  
@@ -38,7 +38,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.Credentials = CredentialCache.DefaultCredentials  
     ```  
   
-3.  Specify a protocol method that permits data to be sent with a request, such as the HTTP `POST` method:  
+3. Specify a protocol method that permits data to be sent with a request, such as the HTTP `POST` method:  
   
     ```csharp  
     request.Method = "POST";  
@@ -48,7 +48,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.Method = "POST"  
     ```  
   
-4.  Set the <xref:System.Web.HttpRequest.ContentLength> property to the number of bytes you're including with your request. For example: 
+4. Set the <xref:System.Web.HttpRequest.ContentLength> property to the number of bytes you're including with your request. For example: 
   
     ```csharp  
     request.ContentLength = byteArray.Length;  
@@ -58,7 +58,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.ContentLength = byteArray.Length  
     ```  
   
-5.  Set the <xref:System.Web.HttpRequest.ContentType> property to an appropriate value. For example:
+5. Set the <xref:System.Web.HttpRequest.ContentType> property to an appropriate value. For example:
   
     ```csharp  
     request.ContentType = "application/x-www-form-urlencoded";  
@@ -68,7 +68,7 @@ The following procedure describes the steps to send data to a server. This proce
     request.ContentType = "application/x-www-form-urlencoded"  
     ```  
   
-6.  Get the stream that holds request data by calling the <xref:System.Net.WebRequest.GetRequestStream%2A> method. For example:
+6. Get the stream that holds request data by calling the <xref:System.Net.WebRequest.GetRequestStream%2A> method. For example:
   
     ```csharp  
     Stream dataStream = request.GetRequestStream();  
@@ -78,7 +78,7 @@ The following procedure describes the steps to send data to a server. This proce
     Stream dataStream = request.GetRequestStream()  
     ```  
   
-7.  Write the data to the <xref:System.IO.Stream> object returned by the `GetRequestStream` method. For example:
+7. Write the data to the <xref:System.IO.Stream> object returned by the `GetRequestStream` method. For example:
   
     ```csharp  
     dataStream.Write(byteArray, 0, byteArray.Length);  
@@ -88,7 +88,7 @@ The following procedure describes the steps to send data to a server. This proce
     dataStream.Write(byteArray, 0, byteArray.Length)  
     ```  
   
-8.  Close the request stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. For example:
+8. Close the request stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. For example:
   
     ```csharp  
     dataStream.Close();  
@@ -148,6 +148,7 @@ The following code example shows how to send data to a web server and read the d
 [!code-vb[SendDataUsingWebRequest](../../../samples/snippets/visualbasic/VS_Snippets_Network/SendDataUsingWebRequest/vb/WebRequestPostExample.vb)]
 
 ## See also
+
 - [Creating internet requests](creating-internet-requests.md)
 - [Using streams on the network](using-streams-on-the-network.md)
 - [Accessing the internet through a proxy](accessing-the-internet-through-a-proxy.md)

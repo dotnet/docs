@@ -19,7 +19,7 @@ ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
   
 ### To set the size of a panel  
   
-1.  In a procedure, set the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Width%2A> properties (or any subset therein) for the status-bar panels using their index passed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> collection.  
+1. In a procedure, set the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Width%2A> properties (or any subset therein) for the status-bar panels using their index passed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> collection.  
   
     ```vb  
     Public Sub SetStatusBarPanelSize()  
@@ -60,6 +60,7 @@ ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
 - [Walkthrough: Updating Status Bar Information at Run Time](walkthrough-updating-status-bar-information-at-run-time.md)

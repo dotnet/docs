@@ -173,4 +173,5 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ```
 
 ## See also
+
 - [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)

@@ -18,11 +18,11 @@ At any given time at medium and large companies there may be multiple printers t
 ## Example  
  The major steps for creating this kind of utility are as follows.  
   
-1.  Obtain a list of all print servers.  
+1. Obtain a list of all print servers.  
   
-2.  Loop through the servers to query their print queues.  
+2. Loop through the servers to query their print queues.  
   
-3.  Within each pass of the server loop, loop through all the server's queues and read each property that might indicate that the queue is not currently working.  
+3. Within each pass of the server loop, loop through all the server's queues and read each property that might indicate that the queue is not currently working.  
   
  The code below is a series of snippets. For simplicity, this example assumes that there is a CRLF-delimited list of print servers. The variable `fileOfPrintServers` is a <xref:System.IO.StreamReader> object for this file. Since each server name is on its own line, any call of <xref:System.IO.StreamReader.ReadLine%2A> gets the name of the next server and moves the <xref:System.IO.StreamReader>'s cursor to the beginning of the next line.  
   
@@ -68,6 +68,7 @@ At any given time at medium and large companies there may be multiple printers t
  [!code-vb[PrinterStatusSurvey#UsingStartAndUntilTimes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#usingstartanduntiltimes)]  
   
 ## See also
+
 - <xref:System.Printing.PrintQueue.StartTimeOfDay%2A>
 - <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A>
 - <xref:System.DateTime>

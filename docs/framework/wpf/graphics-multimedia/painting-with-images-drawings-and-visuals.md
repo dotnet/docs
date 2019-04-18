@@ -128,6 +128,7 @@ Components of a TileBrush with multiple tiles
  For more information about the tiling features of <xref:System.Windows.Media.TileBrush> objects, see the [TileBrush Overview](tilebrush-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.ImageBrush>
 - <xref:System.Windows.Media.DrawingBrush>
 - <xref:System.Windows.Media.VisualBrush>

@@ -22,24 +22,22 @@ The following example shows how you might use these attributes to trace a caller
 ```fsharp
 open System.Diagnostics
 open System.Runtime.CompilerServices
+open System.Runtime.InteropServices
 
 type Tracer() =
     member __.DoTrace(message: string,
-                      [<CallerMemberName>] ?memberName: string,
-                      [<CallerFilePath>] ?path: string,
-                      [<CallerLineNumber>] ?line: int) =
+                      [<CallerMemberName; Optional; DefaultParameterValue("")>] memberName: string,
+                      [<CallerFilePath; Optional; DefaultParameterValue("")>] path: string,
+                      [<CallerLineNumber; Optional; DefaultParameterValue(0)>] line: int) =
         Trace.WriteLine(sprintf "Message: %s" message)
-        match (memberName, path, line) with
-        | Some m, Some p, Some l ->
-            Trace.WriteLine(sprintf "Member name: %s" m)
-            Trace.WriteLine(sprintf "Source file path: %s" p)
-            Trace.WriteLine(sprintf "Source line number: %d" l)
-        | _,_,_ -> ()
+        Trace.WriteLine(sprintf "Member name: %s" memberName)
+        Trace.WriteLine(sprintf "Source file path: %s" path)
+        Trace.WriteLine(sprintf "Source line number: %d" line)
 ```
 
 ## Remarks
 
-Caller Info attributes can only be applied to optional parameters. You must supply an explicit value for each optional parameter. The Caller Info attributes cause the compiler to write the proper value for each optional parameter decorated with a Caller Info attribute.
+Caller Info attributes can only be applied to optional parameters. The Caller Info attributes cause the compiler to write the proper value for each optional parameter decorated with a Caller Info attribute.
 
 Caller Info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the [StackTrace](/dotnet/api/system.diagnostics.stacktrace) property for exceptions, the results aren't affected by obfuscation.
 

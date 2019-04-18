@@ -22,33 +22,33 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
   
 ### To delete the WCF URL reservation  
   
-1.  Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
+1. Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
-2.  Type in **netsh http delete urlacl url=http://+:80/Temporary_Listen_Addresses/** in the command prompt window.  
+2. Type in **netsh http delete urlacl url=http://+:80/Temporary_Listen_Addresses/** in the command prompt window.  
   
-3.  If the reservation is deleted successfully, the following message is displayed. **URL reservation successfully deleted**  
+3. If the reservation is deleted successfully, the following message is displayed. **URL reservation successfully deleted**  
   
 ## Creating a New Security Group and New Restricted URL Reservation  
  To replace the WCF URL reservation with a restricted reservation you must first create a new security group. You can do this in one of two ways: from a command prompt or from the computer management console. You only have to do one.  
   
 #### To create a new security group from a command prompt  
   
-1.  Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
+1. Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
-2.  Type in **net localgroup "\<security group name>" /comment:"\<security group description>" /add** at the command prompt. Replacing **\<security group name>** with the name of the security group you want to create and **\<security group description>** with a suitable description for the security group.  
+2. Type in **net localgroup "\<security group name>" /comment:"\<security group description>" /add** at the command prompt. Replacing **\<security group name>** with the name of the security group you want to create and **\<security group description>** with a suitable description for the security group.  
   
-3.  If the security group is created successfully, the following message is displayed. **The command completed successfully.**  
+3. If the security group is created successfully, the following message is displayed. **The command completed successfully.**  
   
 #### To create a new security group from the computer management console  
   
-1.  Click **Start**, click **Control Panel**, click **Administrative Tools**, and click **Computer Management** to open up the Computer Management Console. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
+1. Click **Start**, click **Control Panel**, click **Administrative Tools**, and click **Computer Management** to open up the Computer Management Console. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
-2.  Click **System Tools**, click **Local Users and Groups**, right-click **Groups** folder and click **New Group** on the context menu that comes up. Type in the desired **Group Name**, **Description** and other details of this new security group and click the **Create** button to create the security group.  
+2. Click **System Tools**, click **Local Users and Groups**, right-click **Groups** folder and click **New Group** on the context menu that comes up. Type in the desired **Group Name**, **Description** and other details of this new security group and click the **Create** button to create the security group.  
   
 #### To create the restricted URL reservation  
   
-1.  Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
+1. Click **Start**, point to **All Programs**, click **Accessories**, right-click **Command Prompt** and click **Run as Administrator** on the context menu that comes up. Click **Continue** on the User Account Control (UAC) window that might ask permissions to continue.  
   
-2.  Type in **netsh http add urlacl url=http://+:80/Temporary_Listen_Addresses/ user="\<machine name>\\<security group name\>** at the command prompt. Replacing **\<machine name>** with the computer name on which the group must be created and **\<security group name>** with the name of the security group you created previously.  
+2. Type in **netsh http add urlacl url=http://+:80/Temporary_Listen_Addresses/ user="\<machine name>\\<security group name\>** at the command prompt. Replacing **\<machine name>** with the computer name on which the group must be created and **\<security group name>** with the name of the security group you created previously.  
   
-3.  If the reservation is created successfully, the following message is displayed. **URL reservation successfully added**.
+3. If the reservation is created successfully, the following message is displayed. **URL reservation successfully added**.

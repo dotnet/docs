@@ -13,13 +13,13 @@ The preferred way to create a Windows Communication Foundation (WCF) contract is
   
 ### Creating a WCF contract with an interface  
   
-1.  Create a new interface using Visual Basic, C#, or any other common language runtime language.  
+1. Create a new interface using Visual Basic, C#, or any other common language runtime language.  
   
-2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
+2. Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
   
-3.  Define the methods in the interface.  
+3. Define the methods in the interface.  
   
-4.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
+4. Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
   
 ## Example  
  The following code example shows an interface that defines a service contract.  
@@ -30,5 +30,6 @@ The preferred way to create a Windows Communication Foundation (WCF) contract is
  The methods that have the <xref:System.ServiceModel.OperationContractAttribute> class applied use a request-reply message pattern by default. For more information about this message pattern, see [How to: Create a Request-Reply Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md). You can also create and use other message patterns by setting properties of the attribute. For more examples, see [How to: Create a One-Way Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md) and [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 ## See also
+
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>

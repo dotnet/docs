@@ -16,11 +16,11 @@ A Visual Basic program is built up from standard building blocks. A *solution* c
 ## File-Level Programming Elements  
  When you start a project or file and open the code editor, you see some code already in place and in the correct order. Any code that you write should follow the following sequence:  
   
-1.  `Option` statements  
+1. `Option` statements  
   
-2.  `Imports` statements  
+2. `Imports` statements  
   
-3.  `Namespace` statements and namespace-level elements  
+3. `Namespace` statements and namespace-level elements  
   
  If you enter statements in a different order, compilation errors can result.  
   

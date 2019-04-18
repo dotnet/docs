@@ -103,6 +103,7 @@ The output shows that the subarray starts at element 5 and contains 10 elements.
 ```
 [|5; 6; 7; 8; 9; 10; 11; 12; 13; 14|]
 ```
+
 [`Array.append`](https://msdn.microsoft.com/library/08836310-5036-4474-b9a2-2c73e2293911) creates a new array by combining two existing arrays.
 
 The following code demonstrates **Array.append**.
@@ -158,7 +159,7 @@ The output of the preceding code is as follows.
 
 [`Array.rev`](https://msdn.microsoft.com/library/1bbf822c-763b-4794-af21-97d2e48ef709) generates a new array by reversing the order of an existing array. The following code demonstrates `Array.rev`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet18.fs)]  
+[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet18.fs)]
 
 The output of the preceding code is as follows.
 
@@ -199,7 +200,7 @@ Only a subset of the functions available for one-dimensional arrays is also avai
 In a two-dimensional array (a matrix), you can extract a sub-matrix by specifying ranges and using a wildcard (`*`) character to specify whole rows or columns.
 
 ```fsharp
-/ Get rows 1 to N from an NxM matrix (returns a matrix):
+// Get rows 1 to N from an NxM matrix (returns a matrix):
 matrix.[1.., *]
 
 // Get rows 1 to 3 from a matrix (returns a matrix):
@@ -233,7 +234,7 @@ type Matrix<'T>(N: int, M: int) =
         and set(a: int, b: int) (value:'T) = internalArray.[a, b] <- value
 
     member this.GetSlice(rowStart: int option, rowFinish : int option, colStart: int option, colFinish : int option) =
-        let rowStart = 
+        let rowStart =
             match rowStart with
             | Some(v) -> v
             | None -> 0
@@ -241,33 +242,33 @@ type Matrix<'T>(N: int, M: int) =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
-        let colStart = 
+        let colStart =
             match colStart with
             | Some(v) -> v
             | None -> 0
-        let colFinish = 
+        let colFinish =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
         internalArray.[rowStart..rowFinish, colStart..colFinish]
 
     member this.GetSlice(row: int, colStart: int option, colFinish: int option) =
-        let colStart = 
+        let colStart =
             match colStart with
             | Some(v) -> v
             | None -> 0
-        let colFinish = 
+        let colFinish =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
         internalArray.[row, colStart..colFinish]
 
     member this.GetSlice(rowStart: int option, rowFinish: int option, col: int) =
-        let rowStart = 
+        let rowStart =
             match rowStart with
             | Some(v) -> v
             | None -> 0
-        let rowFinish = 
+        let rowFinish =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1

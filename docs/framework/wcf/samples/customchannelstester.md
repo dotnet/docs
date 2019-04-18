@@ -8,9 +8,9 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
   
 ### To build the tool  
   
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-2.  Building the solution generates three files: CustomChannelsTester.exe, TestSpec.xml and SampleRun.cmd. The file SampleRun.cmd has a sample command line that shows how to use this tool to test the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
+2. Building the solution generates three files: CustomChannelsTester.exe, TestSpec.xml and SampleRun.cmd. The file SampleRun.cmd has a sample command line that shows how to use this tool to test the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
   
 ### To run the tool  
   

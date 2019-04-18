@@ -15,11 +15,11 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 # Optimizing Performance: Text
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes support for the presentation of text content through the use of feature-rich [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] controls. In general you can divide text rendering in three layers:  
   
-1.  Using the <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> objects directly.  
+1. Using the <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> objects directly.  
   
-2.  Using the <xref:System.Windows.Media.FormattedText> object.  
+2. Using the <xref:System.Windows.Media.FormattedText> object.  
   
-3.  Using high-level controls, such as the <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects.  
+3. Using high-level controls, such as the <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects.  
   
  This topic provides text rendering performance recommendations.  
 
@@ -155,6 +155,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
  The optimal paragraph feature of the <xref:System.Windows.Documents.FlowDocument> object lays out paragraphs so that white space is distributed as evenly as possible. By default, the optimal paragraph feature is disabled. You can enable this feature by setting the object's <xref:System.Windows.Documents.FlowDocument.IsOptimalParagraphEnabled%2A> property to `true`. However, enabling this feature impacts application performance. It is recommended that you do not use the optimal paragraph feature unless you need it.  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)

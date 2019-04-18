@@ -104,7 +104,7 @@ Two types of redistributable installers are available:
 
 Both web and offline installers are designed for x86-based and x64-based computers (see [system requirements](~/docs/framework/get-started/system-requirements.md)), but do not support Itanium-based computers.
 
-1.  Open the download page for the .NET Framework version you want to install:
+1. Open the download page for the .NET Framework version you want to install:
 
    - .NET Framework 4.8 ([web installer](https://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=2053984))
 
@@ -162,7 +162,7 @@ Language packs are executable files that contain the localized resources (such a
 > [!IMPORTANT]
 > The language packs don't contain the .NET Framework components that are required to run an app, so you must run the web or offline installer before you install a language pack. If you have already installed a language pack, uninstall it, install the .NET Framework, and then reinstall the language pack.
 
-1.  Open the language pack download page for the .NET Framework version you've installed:
+1. Open the language pack download page for the .NET Framework version you've installed:
 
     - [.NET Framework 4.8 language packs](http://go.microsoft.com/fwlink/?LinkId=2053984)
 
@@ -184,9 +184,9 @@ Language packs are executable files that contain the localized resources (such a
 
     - [.NET Framework 4.5 language packs](https://go.microsoft.com/fwlink/p/?LinkId=245451)
 
-2.  In the language list, choose the language you want to download, and wait a few seconds for the page to reload in that language.
+2. In the language list, choose the language you want to download, and wait a few seconds for the page to reload in that language.
 
-3.  Choose **Download**.
+3. Choose **Download**.
 
 The following table lists the supported languages.
 

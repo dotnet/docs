@@ -32,8 +32,8 @@ helpviewer_keywords:
 
 The following operators perform arithmetic operations with numeric types:
 
-- Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators.
-- Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators.
+- Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators
+- Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators
 
 Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
 
@@ -87,7 +87,7 @@ The multiplication operator `*` computes the product of its operands:
 
 [!code-csharp-interactive[multiplication operator](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#Multiplication)]
 
-The unary `*` operator is a [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
+The unary `*` operator is the [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
 
 ## Division operator /
 
@@ -161,10 +161,10 @@ You also can use the `-` operator for delegate removal. For more information, se
 
 The following list orders arithmetic operators starting from the highest precedence to the lowest:
 
-- Postfix increment `x++` and decrement `x--` operators.
-- Prefix increment `++x` and decrement `--x` and unary `+` and `-` operators.
-- Multiplicative `*`, `/`, and `%` operators.
-- Additive `+` and `-` operators.
+- Postfix increment `x++` and decrement `x--` operators
+- Prefix increment `++x` and decrement `--x` and unary `+` and `-` operators
+- Multiplicative `*`, `/`, and `%` operators
+- Additive `+` and `-` operators
 
 Binary arithmetic operators are left-associative. That is, operators with the same precedence level are evaluated from left to right.
 
@@ -193,6 +193,10 @@ except that `x` is only evaluated once.
 The following example demonstrates the usage of compound assignment with arithmetic operators:
 
 [!code-csharp-interactive[compound assignment](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignment)]
+
+Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
+
+[!code-csharp-interactive[compound assignment with cast](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignmentWithCast)]
 
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from [events](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -233,7 +237,7 @@ For more information, see remarks at [System.Double](/dotnet/api/system.double#r
 
 ## Operator overloadability
 
-User-defined types can [overload](../keywords/operator.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
+A user-defined type can [overload](../keywords/operator.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
 ## C# language specification
 
@@ -250,6 +254,7 @@ For more information, see the following sections of the [C# language specificati
 - [Subtraction operator](~/_csharplang/spec/expressions.md#subtraction-operator)
 - [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
 - [The checked and unchecked operators](~/_csharplang/spec/expressions.md#the-checked-and-unchecked-operators)
+- [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions)
 
 ## See also
 

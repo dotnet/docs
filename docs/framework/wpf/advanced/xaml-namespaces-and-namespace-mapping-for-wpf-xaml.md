@@ -113,15 +113,15 @@ End Namespace
 ## WPF and Assembly Loading  
  The XAML schema context for WPF integrates with the WPF application model, which in turn uses the CLR-defined concept of <xref:System.AppDomain>. The following sequence describes how XAML schema context interprets how to either load assemblies or find types at run time or design time, based on the WPF use of <xref:System.AppDomain> and other factors.  
   
-1.  Iterate through the <xref:System.AppDomain>, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly.  
+1. Iterate through the <xref:System.AppDomain>, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly.  
   
-2.  If the name is qualified, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
+2. If the name is qualified, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-3.  If the short name + public key token of a qualified name matches the assembly that the markup was loaded from, return that assembly.  
+3. If the short name + public key token of a qualified name matches the assembly that the markup was loaded from, return that assembly.  
   
-4.  Use the short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+4. Use the short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
-5.  If the name is unqualified, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
+5. If the name is unqualified, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
  Loose XAML does not use Step 3; there is no loaded-from assembly.  
   
@@ -130,5 +130,6 @@ End Namespace
  Compiled BAML (generated via PresentationBuildTask) uses all steps, although BAML also should not contain unqualified assembly names.  
   
 ## See also
+
 - [Understanding XML Namespaces](https://go.microsoft.com/fwlink/?LinkId=98069)
 - [XAML Overview (WPF)](xaml-overview-wpf.md)

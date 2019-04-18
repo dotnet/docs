@@ -16,13 +16,13 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 ## Order of Keyboard Events  
  As listed previously, there are 3 keyboard related events that can occur on a control. The following sequence shows the general order of the events:  
   
-1.  The user pushes the "a" key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyDown> event occurs.  
+1. The user pushes the "a" key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyDown> event occurs.  
   
-2.  The user holds the "a" key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyPress> event occurs.  
+2. The user holds the "a" key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyPress> event occurs.  
   
      This event occurs multiple times as the user holds a key.  
   
-3.  The user releases the "a" key, the key is preprocessed, dispatched and a <xref:System.Windows.Forms.Control.KeyUp> event occurs.  
+3. The user releases the "a" key, the key is preprocessed, dispatched and a <xref:System.Windows.Forms.Control.KeyUp> event occurs.  
   
 ## Preprocessing Keys  
  Like other messages, keyboard messages are processed in the <xref:System.Windows.Forms.Control.WndProc%2A> method of a form or control. However, before keyboard messages are processed, the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method calls one or more methods that can be overridden to handle special character keys and physical keys. You can override these methods to detect and filter certain keys before the messages are processed by the control. The following table shows the action that is being performed and the related method that occurs, in the order that the method occurs.  
@@ -63,6 +63,7 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |Perform custom mnemonic handling; for example, you want to handle mnemonics on owner-drawn buttons contained in a toolbar.|Override <xref:System.Windows.Forms.Control.ProcessMnemonic%2A>.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.WndProc%2A>
 - <xref:System.Windows.Forms.Control.PreProcessMessage%2A>

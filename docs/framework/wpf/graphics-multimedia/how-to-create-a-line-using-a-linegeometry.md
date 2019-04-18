@@ -25,6 +25,7 @@ A LineGeometry drawn from (10,20) to (100,130)
  Other simple geometry classes include <xref:System.Windows.Media.LineGeometry> and <xref:System.Windows.Media.EllipseGeometry>. These geometries, as well as more complex ones, can also be created using a <xref:System.Windows.Media.PathGeometry> or <xref:System.Windows.Media.StreamGeometry>. For more information, see the [Geometry Overview](geometry-overview.md).  
   
 ## See also
+
 - [Geometry Overview](geometry-overview.md)
 - [Create a Composite Shape](how-to-create-a-composite-shape.md)
 - [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md)

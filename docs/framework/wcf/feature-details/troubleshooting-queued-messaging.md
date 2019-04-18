@@ -90,9 +90,9 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** The most common reason is permissions.  
   
-1.  Ensure that the `NetMsmqActivator` process is running and the identity of the `NetMsmqActivator` process is given read and seek permission on the queue.  
+1. Ensure that the `NetMsmqActivator` process is running and the identity of the `NetMsmqActivator` process is given read and seek permission on the queue.  
   
-2.  If the `NetMsmqActivator` is monitoring queues on a remote machine, ensure that `NetMsmqActivator` does not run under a restricted token. To run the `NetMsmqActivator` with an unrestricted token:  
+2. If the `NetMsmqActivator` is monitoring queues on a remote machine, ensure that `NetMsmqActivator` does not run under a restricted token. To run the `NetMsmqActivator` with an unrestricted token:  
   
     ```  
     sc sidtype NetMsmqActivator unrestricted  
@@ -151,19 +151,19 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **A:** You cannot use a local machine certificate store with certificate mode. You have to copy the certificate from the machine certificate store to the current user store using the Certificate snap-in. To get the Certificate snap-in:  
   
-1.  Click **Start**, select **Run**, type `mmc`, and click **OK**.  
+1. Click **Start**, select **Run**, type `mmc`, and click **OK**.  
   
-2.  In the **Microsoft Management Console**, open the **File** menu and select **Add/Remove Snap-in**.  
+2. In the **Microsoft Management Console**, open the **File** menu and select **Add/Remove Snap-in**.  
   
-3.  In the **Add/Remove Snap-in** dialog box, click the **Add** button.  
+3. In the **Add/Remove Snap-in** dialog box, click the **Add** button.  
   
-4.  In the **Add Standalone Snap-in** dialog box, select Certificates and click **Add**.  
+4. In the **Add Standalone Snap-in** dialog box, select Certificates and click **Add**.  
   
-5.  In the **Certificates** snap-in dialog box, select **My user account,** and click **Finish**.  
+5. In the **Certificates** snap-in dialog box, select **My user account,** and click **Finish**.  
   
-6.  Next, add a second Certificates snap-in using the previous steps, but this time select **Computer account** and click **Next**.  
+6. Next, add a second Certificates snap-in using the previous steps, but this time select **Computer account** and click **Next**.  
   
-7.  Select **Local Computer** and click **Finish**. You can now drag and drop certificates from the machine certificate store to the current user store.  
+7. Select **Local Computer** and click **Finish**. You can now drag and drop certificates from the machine certificate store to the current user store.  
   
  **Q:** When my service reads from a queue on another computer in workgroup mode, I get an "access denied" exception.  
   

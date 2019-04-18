@@ -15,11 +15,11 @@ Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to d
   
 ### To use MetadataExchangeClient to obtain metadata  
   
-1.  Create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> object by explicitly specifying a binding, an endpoint configuration name, or the address of the metadata.  
+1. Create a new <xref:System.ServiceModel.Description.MetadataExchangeClient> object by explicitly specifying a binding, an endpoint configuration name, or the address of the metadata.  
   
-2.  Configure the <xref:System.ServiceModel.Description.MetadataExchangeClient> to suit your needs. For example, you can specify credentials to use when requesting metadata, control how metadata references are resolved, and set the <xref:System.ServiceModel.Description.MetadataExchangeClient.OperationTimeout%2A> property to control how long the metadata request has to return before it times out.  
+2. Configure the <xref:System.ServiceModel.Description.MetadataExchangeClient> to suit your needs. For example, you can specify credentials to use when requesting metadata, control how metadata references are resolved, and set the <xref:System.ServiceModel.Description.MetadataExchangeClient.OperationTimeout%2A> property to control how long the metadata request has to return before it times out.  
   
-3.  Obtain the <xref:System.ServiceModel.Description.MetadataSet> object that contains the retrieved metadata by calling one of the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> methods. Note that you can only use the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> overload that takes no arguments if you explicitly specified an address when constructing the <xref:System.ServiceModel.Description.MetadataExchangeClient>.  
+3. Obtain the <xref:System.ServiceModel.Description.MetadataSet> object that contains the retrieved metadata by calling one of the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> methods. Note that you can only use the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> overload that takes no arguments if you explicitly specified an address when constructing the <xref:System.ServiceModel.Description.MetadataExchangeClient>.  
   
 ## Example  
  The following code example shows how to use <xref:System.ServiceModel.Description.MetadataExchangeClient> to download and enumerate metadata files.  
@@ -30,6 +30,7 @@ Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to d
  To compile this code example, you must reference the System.ServiceModel.dll assembly and import the <xref:System.ServiceModel.Description> namespace.  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.MetadataResolver>
 - <xref:System.ServiceModel.Description.MetadataExchangeClient>
 - <xref:System.ServiceModel.Description.WsdlImporter>

@@ -10,7 +10,7 @@ The operating system is unable to find the path specified path during a file-acc
   
 ## To correct this error  
   
-1.  Ensure that the path includes the required elements.  
+1. Ensure that the path includes the required elements.  
   
 ## See also
 

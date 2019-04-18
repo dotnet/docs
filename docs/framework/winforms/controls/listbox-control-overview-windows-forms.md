@@ -17,6 +17,7 @@ A Windows Forms <xref:System.Windows.Forms.ListBox> control displays a list from
  To add or delete items in a <xref:System.Windows.Forms.ListBox> control, use the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A>, <xref:System.Windows.Forms.ListBox.ObjectCollection.Insert%2A>, <xref:System.Windows.Forms.ListBox.ObjectCollection.Clear%2A> or <xref:System.Windows.Forms.ListBox.ObjectCollection.Remove%2A> method. Alternatively, you can add items to the list by using the <xref:System.Windows.Forms.ListBox.Items%2A> property at design time.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListBox>
 - [How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control](add-and-remove-items-from-a-wf-combobox.md)
 - [How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control](sort-the-contents-of-a-wf-combobox-listbox-or-checkedlistbox-control.md)

@@ -44,6 +44,7 @@ static Activity ScenarioOne()
 For more information, see about using <xref:System.ServiceModel.Activities.TransactedReceiveScope>, see [Flowing Transactions into and out of Workflow Services](../wcf/feature-details/flowing-transactions-into-and-out-of-workflow-services.md).  
   
 ## See also
+
 - <xref:System.Activities.Statements.TransactionScope>
 - <xref:System.Transactions.TransactionScope>
 - <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType>

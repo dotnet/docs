@@ -33,9 +33,9 @@ This sample demonstrates how to implement a custom encoder using the Windows Com
   
  As indicated previously, there are several layers that are implemented in a custom encoder. To better illustrate the relationship between each of these layers, a simplified order of events for service start-up is in the following list:  
   
-1.  The server starts.  
+1. The server starts.  
   
-2.  The configuration information is read.  
+2. The configuration information is read.  
   
     1.  The service configuration registers the custom configuration handler.  
   
@@ -45,11 +45,11 @@ This sample demonstrates how to implement a custom encoder using the Windows Com
   
     4.  The custom binding element creates and returns a message encoder factory.  
   
-3.  A message is received.  
+3. A message is received.  
   
-4.  The message encoder factory returns a message encoder for reading in the message and writing out the response.  
+4. The message encoder factory returns a message encoder for reading in the message and writing out the response.  
   
-5.  The encoder layer is implemented as a class factory. Only the encoder class factory must be publicly exposed for the custom encoder. The factory object is returned by the binding element when the <xref:System.ServiceModel.ServiceHost> or <xref:System.ServiceModel.ChannelFactory%601> object is created. Message encoders can operate in a buffered or streaming mode. This sample demonstrates both buffered mode and streaming mode.  
+5. The encoder layer is implemented as a class factory. Only the encoder class factory must be publicly exposed for the custom encoder. The factory object is returned by the binding element when the <xref:System.ServiceModel.ServiceHost> or <xref:System.ServiceModel.ChannelFactory%601> object is created. Message encoders can operate in a buffered or streaming mode. This sample demonstrates both buffered mode and streaming mode.  
   
  For each mode there is an accompanying `ReadMessage` and `WriteMessage` method on the abstract `MessageEncoder` class. A majority of the encoding work takes place in these methods. The sample wraps the existing text and binary message encoders. This allows the sample to delegate the reading and writing of the wire representation of messages to the inner encoder and allows the compression encoder to compress or decompress the results. Because there is no pipeline for message encoding, this is the only model for using multiple encoders in WCF. Once the message has been decompressed, the resulting message is passed up the stack for the channel stack to handle. During compression, the resulting compressed message is written directly to the stream provided.  
   
@@ -328,17 +328,17 @@ Press <ENTER> to terminate client.
   
 #### To set up, build, and run the sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command:  
+1. Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command:  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

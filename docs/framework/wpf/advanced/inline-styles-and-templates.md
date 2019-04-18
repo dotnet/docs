@@ -31,4 +31,5 @@ ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
  Other syntaxes enabled by markup extensions that return an object are also possible for styles and templates. Two such extensions that have possible scenarios include [TemplateBinding](templatebinding-markup-extension.md) and <xref:System.Windows.Data.Binding>.  
   
 ## See also
+
 - [Styling and Templating](../controls/styling-and-templating.md)

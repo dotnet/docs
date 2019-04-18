@@ -22,5 +22,6 @@ ms.assetid: d91edaf2-be28-41ec-a508-af421cb43c3d
  [!code-vb[UIAClientSideProvider_snip#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/csproviderprogram.vb#101)]  
   
 ## See also
+
 - [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
 - [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)

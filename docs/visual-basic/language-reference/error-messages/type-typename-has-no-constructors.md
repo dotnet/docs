@@ -15,13 +15,13 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
   
 ## To correct this error  
   
-1.  If the type is in a different project or in a referenced file, reinstall the project or file.  
+1. If the type is in a different project or in a referenced file, reinstall the project or file.  
   
-2.  If the type is in the same project, recompile the assembly containing the type.  
+2. If the type is in the same project, recompile the assembly containing the type.  
   
-3.  If the error recurs, reinstall the Visual Basic compiler.  
+3. If the error recurs, reinstall the Visual Basic compiler.  
   
-4.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
+4. If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See also
 

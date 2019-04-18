@@ -20,4 +20,5 @@ This topic explains how to use the low-level <xref:System.Windows.Documents.Glyp
  [!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   
 ## See also
+
 - [Typography in WPF](typography-in-wpf.md)

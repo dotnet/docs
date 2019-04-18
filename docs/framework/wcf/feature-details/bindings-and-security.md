@@ -33,7 +33,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
 -   Web Service Enhancements (WSE) applications.  
   
--   Basic Profile as defined in the Web Services Interoperability (WS-I) specification ([https://go.microsoft.com/fwlink/?LinkId=38955](https://go.microsoft.com/fwlink/?LinkId=38955)).  
+-   Basic Profile as defined in the Web Services Interoperability (WS-I) specification (<https://go.microsoft.com/fwlink/?LinkId=38955>).  
   
 -   Basic security profile as defined in WS-I.  
   
@@ -199,8 +199,8 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |Type|Description|  
 |----------|-----------------|  
 |None|Specifies that the client does not need to present any credential. This translates to an anonymous client.|  
-|Basic|Basic authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [https://go.microsoft.com/fwlink/?LinkId=84023](https://go.microsoft.com/fwlink/?LinkId=84023).|  
-|Digest|Digest authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [https://go.microsoft.com/fwlink/?LinkId=84023](https://go.microsoft.com/fwlink/?LinkId=84023).|  
+|Basic|Basic authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at <https://go.microsoft.com/fwlink/?LinkId=84023>.|  
+|Digest|Digest authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at <https://go.microsoft.com/fwlink/?LinkId=84023>.|  
 |NTLM|NT LAN Manager (NTLM) authentication.|  
 |Windows|Windows authentication.|  
 |Certificate|Authentication performed using a certificate.|  
@@ -218,6 +218,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |IssuedToken|Allows the service to use a security token service to supply a custom token.|  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
 - [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)

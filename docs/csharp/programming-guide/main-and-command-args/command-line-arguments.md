@@ -45,23 +45,23 @@ long num = Convert.ToInt64(s);
   
  To compile and run the application from a command prompt, follow these steps:  
   
-1.  Paste the following code into any text editor, and then save the file as  a text file with the name `Factorial.cs`.  
+1. Paste the following code into any text editor, and then save the file as  a text file with the name `Factorial.cs`.  
   
      [!code-csharp[csProgGuideMain#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#16)]  
   
-2.  From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you just created.  
+2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you just created.  
   
-3.  Enter the following command to compile the application.  
+3. Enter the following command to compile the application.  
   
      `csc Factorial.cs`  
   
      If your application has no compilation errors, an executable file that's named `Factorial.exe` is created.  
   
-4.  Enter the following command to calculate the factorial of 3:  
+4. Enter the following command to calculate the factorial of 3:  
   
      `Factorial 3`  
   
-5.  The command produces this output: `The factorial of 3 is 6.`  
+5. The command produces this output: `The factorial of 3 is 6.`  
   
 > [!NOTE]
 >  When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  

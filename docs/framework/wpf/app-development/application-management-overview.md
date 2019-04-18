@@ -349,6 +349,7 @@ All applications tend to share a common set of functionality that applies to app
  ![XBAP &#45; Application Object Events](./media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
   
 ## See also
+
 - <xref:System.Windows.Application>
 - [WPF Windows Overview](wpf-windows-overview.md)
 - [Navigation Overview](navigation-overview.md)

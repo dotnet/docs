@@ -60,4 +60,5 @@ Text with ClearType y-direction antialiasing
  [ClearType Tuner PowerToy](https://www.microsoft.com/typography/ClearTypePowerToy.mspx)  
   
 ## See also
+
 - [ClearType Registry Settings](cleartype-registry-settings.md)

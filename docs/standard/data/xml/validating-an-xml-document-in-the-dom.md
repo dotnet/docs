@@ -23,15 +23,15 @@ The <xref:System.Xml.XmlDocument> class does not validate the XML in the Documen
 ### Creating an XML Schema-Validating XmlReader  
  To create an XML schema-validating <xref:System.Xml.XmlReader>, follow these steps.  
   
-1.  Construct a new <xref:System.Xml.XmlReaderSettings> instance.  
+1. Construct a new <xref:System.Xml.XmlReaderSettings> instance.  
   
-2.  Add an XML schema to the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property of the <xref:System.Xml.XmlReaderSettings> instance.  
+2. Add an XML schema to the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property of the <xref:System.Xml.XmlReaderSettings> instance.  
   
-3.  Specify `Schema` as the <xref:System.Xml.XmlReaderSettings.ValidationType%2A>.  
+3. Specify `Schema` as the <xref:System.Xml.XmlReaderSettings.ValidationType%2A>.  
   
-4.  Optionally specify <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> and a <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> to handle schema validation errors and warnings encountered during validation.  
+4. Optionally specify <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> and a <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> to handle schema validation errors and warnings encountered during validation.  
   
-5.  Finally, pass the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class along with the XML document, creating a schema-validating <xref:System.Xml.XmlReader>.  
+5. Finally, pass the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class along with the XML document, creating a schema-validating <xref:System.Xml.XmlReader>.  
   
 ### Example  
  In the code example that follows, a schema-validating <xref:System.Xml.XmlReader> validates the XML data loaded into the DOM. Invalid modifications are made to the XML document and the document is then revalidated, causing schema validation errors. Finally, one of the errors is corrected, and then part of the XML document is partially validated.  

@@ -1,15 +1,18 @@
 ---
 title: Disable DPI-awareness in Visual Studio
-description: Discusses the limitations of Windows Forms Designer on HDPI monitors, and how to run Visual Studio as a DPI-unaware process.
-ms.date: 03/19/2019
+description: Discusses the limitations of Windows Forms Designer on HDPI monitors and how to run Visual Studio as a DPI-unaware process.
+ms.date: 04/05/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-designers
 author: gewarren
 ms.author: gewarren
+ms.custom: seoapril2019
 ---
 # Disable DPI-awareness in Visual Studio
 
 Visual Studio is a dots per inch (DPI) aware application, which means the display scales automatically. If an application states that it's not DPI-aware, the operating system scales the application as a bitmap. This behavior is also called DPI virtualization. The application still thinks that it's running at 100% scaling, or 96 dpi.
+
+This article discusses the limitations of Windows Forms Designer on HDPI monitors and how to run Visual Studio as a DPI-unaware process.
 
 ## Windows Forms Designer on HDPI monitors
 
@@ -26,11 +29,15 @@ The message reads **Scaling on your main display is set to 200% (192 dpi). This 
 > [!NOTE]
 > This informational bar was introduced in Visual Studio 2017 version 15.8.
 
-If you aren't working in the designer and don't need to adjust the layout of your form, you can ignore the informational bar and continue working in the code editor or in other types of designers. (You can also [disable notifications](#disable-notifications) so that the informational bar doesn't continue to appear.) Only the **Windows Forms Designer** is affected. If you do need to work in the **Windows Forms Designer**, the next section helps you [resolve the problem](#to-resolve-the-problem).
+If you aren't working in the designer and don't need to adjust the layout of your form, you can ignore the informational bar and continue working in the code editor or in other types of designers. (You can also [disable notifications](#disable-notifications) so that the informational bar doesn't continue to appear.) Only the **Windows Forms Designer** is affected. If you do need to work in the **Windows Forms Designer**, the next section helps you [resolve the problem](#to-resolve-the-display-problem).
 
-## To resolve the problem
+## To resolve the display problem
 
-There are three options to resolve the display problem.
+There are three options to resolve the display problem:
+
+1. [Restart Visual Studio as a DPI-unaware process](#restart-visual-studio-as-a-dpi-unaware-process)
+2. [Add a registry entry](#add-a-registry-entry)
+3. [Set your display scaling setting to 100%](#set-your-display-scaling-setting-to-100)
 
 ### Restart Visual Studio as a DPI-unaware process
 

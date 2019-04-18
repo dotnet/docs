@@ -77,19 +77,19 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
   
 #### To create a custom binding that uses a SymmetricSecurityBindingElement  
   
-1.  Create an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class with the name `outputBec`.  
+1. Create an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class with the name `outputBec`.  
   
-2.  Call the static method `M:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement(true)`, which returns an instance of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.  
+2. Call the static method `M:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement(true)`, which returns an instance of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.  
   
-3.  Add the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> to the collection (`outputBec`) by calling the `Add` method of the <xref:System.Collections.ObjectModel.Collection%601> of <xref:System.ServiceModel.Channels.BindingElement> class.  
+3. Add the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> to the collection (`outputBec`) by calling the `Add` method of the <xref:System.Collections.ObjectModel.Collection%601> of <xref:System.ServiceModel.Channels.BindingElement> class.  
   
-4.  Create an instance of the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> class and add it to the collection (`outputBec`). This specifies the encoding used by the binding.  
+4. Create an instance of the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> class and add it to the collection (`outputBec`). This specifies the encoding used by the binding.  
   
-5.  Create a <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and add it to the collection (`outputBec`). This specifies that the binding uses the HTTP transport.  
+5. Create a <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and add it to the collection (`outputBec`). This specifies that the binding uses the HTTP transport.  
   
-6.  Create a new custom binding by creating an instance of the <xref:System.ServiceModel.Channels.CustomBinding> class and passing the collection `outputBec` to the constructor.  
+6. Create a new custom binding by creating an instance of the <xref:System.ServiceModel.Channels.CustomBinding> class and passing the collection `outputBec` to the constructor.  
   
-7.  The resulting custom binding shares many of the same characteristics as the standard <xref:System.ServiceModel.WSHttpBinding>. It specifies message-level security and Windows credentials but disables secure sessions, requires that the service credential be specified out-of-band, and does not encrypt signatures. The last can be controlled only by setting the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A> property as shown in step 4. The other two can be controlled using settings on the standard binding.  
+7. The resulting custom binding shares many of the same characteristics as the standard <xref:System.ServiceModel.WSHttpBinding>. It specifies message-level security and Windows credentials but disables secure sessions, requires that the service credential be specified out-of-band, and does not encrypt signatures. The last can be controlled only by setting the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A> property as shown in step 4. The other two can be controlled using settings on the standard binding.  
   
 ## Example  
   
@@ -101,6 +101,7 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 - <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>

@@ -1,7 +1,7 @@
 ---
 title: "What's new in the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "04/16/2019"
+ms.date: "04/18/2019"
 dev_langs:
   - "csharp"
   - "vb"

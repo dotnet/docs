@@ -257,6 +257,12 @@ Use the following code to display the metrics:
 
 [!code-csharp[DisplayMetrics](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#DisplayMetrics "Display selected metrics")]
 
+* The `Accuracy` metric gets the accuracy of a model, which is the proportion of correct predictions in the test set.
+
+* The `AreaUnderRocCurve` metric indicates how confident the model is correctly classifying the positive and negative classes. You want the `AreaUnderRocCurve` to be as close to one as possible.
+
+* The `F1Score` metric gets the model's F1 score, which is a measure of balance between [precision](../resources/glossary.md#precision) and [recall](../resources/glossary.md#recall).  You want the `F1Score` to be as close to one as possible.
+
 ## Predict the test data outcome
 
 Create the `UseModelWithSingleItem()` method, just after the `Evaluate()` method, using the following code:

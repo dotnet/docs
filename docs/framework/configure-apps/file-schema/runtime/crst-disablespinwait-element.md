@@ -36,8 +36,8 @@ The following sections describe attributes, child elements, and parent elements.
   
 |Value|Description|  
 |-----------|-----------------|  
-|"1"|Spin-waiting is enabled.|  
-|"0"|Spin-waiting is disabled. This is the default|  
+|1|Spin-waiting is enabled.|  
+|0|Spin-waiting is disabled. This is the default|  
   
 ### Child Elements  
  None.  

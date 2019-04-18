@@ -9,7 +9,7 @@ author: natke
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
 ---
 
-# Machine Learning with ML.NET
+# How does ML.NET work?
 
 ML.NET gives you the ability to add machine learning to your .NET application. With this capability, you can make automatic predictions using the data available to your application.
 

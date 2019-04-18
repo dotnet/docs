@@ -105,15 +105,17 @@ Each transaction description is broken down into a set of features by removing r
 
 ![Text Classification Model](./media/text-classification-model.png)
 
+Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models and others. You can find out more about the models in [How to choose an ML.NET model](./resources/tasks.md).
+
 ## Data preparation
 
 In most cases, the data that you have available in your application is not suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled. 
 
-The [ML.NET tutorials](tutorials) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
+The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
-To see how data processing is applied more generally, see [How to prepare your data](how-to-guides/how-to-prepare-data).
+To see how data processing is applied more generally, see [How to prepare your data](./how-to-guides/how-to-prepare-data.md).
 
-You can find an appendix of all of the [available transformations](resources/transforms.md) in the resources section.
+You can find an appendix of all of the [available transformations](./resources/transforms.md) in the resources section.
 
 ## Model evaluation
 
@@ -187,7 +189,7 @@ Once the objects in the pipeline have been created, data can be used to train or
 
 Calling `Fit()` uses the input training data to estimate the parameters of the model. Remember in our linear regression model above, we had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
-You can learn more about model training in [How to train your model](how-to-guides/train-model)
+You can learn more about model training in [How to train your model](./how-to-guides/train-model.md)
 
 ### Transform data
 
@@ -199,11 +201,11 @@ You can transform input data into predictions in bulk, or one input at a time. I
     var price = predEngine.Predict(size);
 ```
  
-The `CreatePredictionEngine()` method takes an input class and an output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about  [How to make a single prediction](how-to-guides/single-predict-model-ml-net) in the How-to section.
+The `CreatePredictionEngine()` method takes an input class and an output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about  [How to make a single prediction](./how-to-guides/single-predict-model-ml-net.md) in the How-to section.
 
 ### Data models and schema
 
-At the core of an ML.NET machine learning pipeline are [DataView](xref:Microsoft.ML.Data.IDateView) objects.
+At the core of an ML.NET machine learning pipeline are [DataView](xref:Microsoft.ML.IDataView) objects.
 
 Each transformation in the pipeline has an input schema (data names, types, and sizes that the transform expects to see on its input); and an output schema (data names, types, and sizes that the transform produces after the transformation). 
 
@@ -251,8 +253,8 @@ In real-life applications, your model training and evaluation code will be separ
 
 ## Where to now?
 
-You can learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](tutorials).
+You can learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
 
-Or you can learn about specific topics in more depth in the [How To Guides](how-to-guides).
+Or you can learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 
 And if you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)!

@@ -184,6 +184,7 @@ For more information, see the following sections of the [C# language specificati
 - [Shift operators](~/_csharplang/spec/expressions.md#shift-operators)
 - [Logical operators](~/_csharplang/spec/expressions.md#logical-operators)
 - [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
+- [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions)
 
 ## See also
 

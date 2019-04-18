@@ -33,25 +33,6 @@ sections:
   - type: paragraph
     text: 'You can use ML.NET for a variety of machine learning scenarios and app types. Try out one of the tutorials below to understand how to use ML.NET to build custom machine learning solutions and integrate them into your .NET applications:'
   - type: list
-    style: icon48
-    items: 
-    - image: 
-        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/cli.svg
-      text: Sentiment analysis
-      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-cli?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
-    - image: 
-        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/portal.svg
-      text: GitHub labeler
-      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-portal?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
-    - image: 
-        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/logo_powershell.svg
-      text: Price prediction
-      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-powershell?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
-- title: ML.NET Scenarios and Tutorials
-  items:
-  - type: paragraph
-    text: 'You can use ML.NET for a variety of machine learning scenarios and app types. Try out one of the tutorials below to understand how to use ML.NET to build custom machine learning solutions and integrate them into your .NET applications:'
-  - type: list
     style: cards
     className: cardsM
     columns: 3
@@ -65,24 +46,44 @@ sections:
       html: <p>Suggest the GitHub label for new issues using a multi-class classification algorithm.</p>
       title: GitHub Labeler
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/issue-labeler.png?raw=true
     - href: tutorials/taxi-fare.md
       html: <p>Predict taxi fares based on distance traveled etc. using a regression algorithm.</p>
       title: Price prediction
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/price-prediction.png?raw=true
     - href: tutorials/iris-clustering.md
       html: <p>Divide iris flowers into groups based on flower features using a clustering algorithm.</p>
       title: Iris flowers segmentation
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/clustering.png?raw=true
     - href: tutorials/movie-recommendation.md
       html: <p>Recommend movies based on watch history using a matrix factorization algorithm</p>
       title: Movie Recommendation
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/movie-recommendation.png?raw=true
     - href: tutorials/image-classification.md
       html: <p>Classify images (e.g. broccoli vs pizza) using a TensorFlow deep learning algorithm.</p>
       title: Image classification
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/image-classification.png?raw=true
+  - type: paragraph
+    text: 'You can find more scenarios in the ML.NET samples repo on GitHub.'
+    source: "www.google.com"
+- title: Reference and Resources
+  items:
+  - type: list
+    style: icon48
+    items: 
+    - image: 
+        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/cli.svg
+      text: ML.NET API
+      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-cli?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
+    - image: 
+        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/portal.svg
+      text: GitHub labeler
+      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-portal?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
+    - image: 
+        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/logo_powershell.svg
+      text: Price prediction
+      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-powershell?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json

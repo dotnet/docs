@@ -27,7 +27,7 @@ A [classification](#classification) case where the [label](#label) is only one o
 
 In ML.NET, a catalog is a collection of extension functions, grouped by a common purpose.
 
-For example, each machine learning task (binary classification, regression, ranking etc) has a catalog of available machine learning algorithms (trainers). The catalog for the binary classification trainers is: <xref:microsoft.ml.binaryclassificationcatalog.binaryclassificationtrainers>.
+For example, each machine learning task (binary classification, regression, ranking etc) has a catalog of available machine learning algorithms (trainers). The catalog for the binary classification trainers is: <xref:Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers>.
 
 ## Classification
 
@@ -41,7 +41,7 @@ In [regression](#regression), an evaluation metric that indicates how well data 
 
 A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator`1> interface.
 
-An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transform](#transform).
+An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transformer](#transformer).
 
 ## Extension method
 

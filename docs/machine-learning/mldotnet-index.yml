@@ -11,7 +11,7 @@ metadata:
 sections:
 - items:
   - type: markdown
-    text: ML.NET is a free, open-source and cross-platform machine learning framework that aims to make machine learning approachable and accessible for .NET developers. Using ML.NET, developers can leverage their existing tools and skillsets to develop and infuse custom AI into their .NET applications by creating custom machine learning models.
+    text: ML.NET is a free, open-source and cross-platform machine learning framework that aims to make machine learning approachable and accessible for .NET developers. Using ML.NET, developers can leverage their existing tools and skillsets to create custom machine learning models and use those trained models in their .NET applications.
 - items:
   - type: list
     style: cards
@@ -68,20 +68,13 @@ sections:
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/image-classification.png?raw=true
   - type: paragraph
-    html: <p>You can find more scenarios in the <a href="https://github.com/dotnet/machinelearning-samples">ML.NET samples repo on GitHub</a></p>
+    items:
+    - href: https://github.com/dotnet/machinelearning-samples
+      html: <p>Find more scenarios in the ML.NET samples repo in GitHub</p>
 - title: Videos
   items:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/cCsOvzB3rK8]"
-- title: How-to guides
-  items:
-    - type: list
-      style: unordered
-      items:
-      - html: <a href="/how-to-guides/load-data-from-text-file-ml-net">Load your data</a>
-      - html: <a href="/how-to-guides/train-regression-model-ml-net">Train your model</a>
-      - html: <a href="/how-to-guides/consuming-model-ml-net">Save your model</a>
-      - html: <a href="/how-to-guides/single-predict-model-ml-net">Use your model</a>
 - title: Reference and Resources
   items:
   - type: list

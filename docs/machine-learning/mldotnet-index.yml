@@ -71,8 +71,12 @@ sections:
   - type: list
     style: unordered
     items:
-    - href: https://github.com/dotnet/machinelearning-samples
-      html: <p>Find more scenarios in the ML.NET samples repo in GitHub</p>
+    - html: <a href="https://github.com/dotnet/machinelearning-samples">Find more scenarios in the ML.NET samples repo in GitHub</a>
+  - type: paragraph
+    html: <a href="https://github.com/dotnet/machinelearning-samples">Find more scenarios in the ML.NET samples repo in GitHub</a>
+  - type: paragraph
+    items:
+    - html: <p>Find more scenarios in the<a href="https://github.com/dotnet/machinelearning-samples">ML.NET samples repo in GitHub</a>.</p>
 - title: Videos
   items:
   - type: markdown

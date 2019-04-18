@@ -20,8 +20,8 @@ By using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client 
 ## Example  
  The following example shows how to execute an asynchronous query by calling the <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> method to start the query. The inline delegate calls the <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> method to display the query results.  
   
- [!code-csharp[Astoria Northwind Client#ExecuteQueryAsync](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#executequeryasync)]
- [!code-vb[Astoria Northwind Client#ExecuteQueryAsync](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#executequeryasync)]  
+ [!code-csharp[Astoria Northwind Client#ExecuteQueryAsync](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#executequeryasync)]
+ [!code-vb[Astoria Northwind Client#ExecuteQueryAsync](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#executequeryasync)]  
   
 ## See also
 

@@ -3,11 +3,11 @@ title: "?: Operator - C# Reference"
 ms.custom: seodec18
 
 ms.date: "11/20/2018"
-f1_keywords: 
+f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
   - ":_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
@@ -37,6 +37,14 @@ is evaluated as
 ```csharp
 a ? b : (c ? d : e)
 ```
+
+A handy mnemonic device you can use to remember how this operator evaluates is by asking:
+
+```
+is this condition true ? yes : no
+```
+
+with the ? part of the operator acting as a question mark for the previous statement, and the consequent acting as the logical response to this question.
 
 The following example demonstrates the usage of the conditional operator:
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 7.1
 description: An overview of new features in C# 7.1.
-ms.date: 08/16/2017
+ms.date: 04/09/2019
 ---
 # What's new in C# 7.1
 
@@ -13,7 +13,7 @@ separate the decision to upgrade tools from the decision to upgrade language
 versions.
 
 C# 7.1 adds the [language version selection](../language-reference/configure-language-version.md)
-configuration element, three new language features and new compiler behavior.
+configuration element, three new language features, and new compiler behavior.
 
 The new language features in this release are:
 
@@ -23,6 +23,8 @@ The new language features in this release are:
   - You can use default literal expressions in default value expressions when the target type can be inferred.
 * [Inferred tuple element names](#inferred-tuple-element-names)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
+* [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
+  - You can use pattern match expressions on variables whose type is a generic type parameter.
 
 Finally, the compiler has two options `/refout` and `/refonly` that
 control [reference assembly generation](#reference-assembly-generation).
@@ -63,7 +65,7 @@ static async Task Main()
 ```
 
 You can read more about the details in the
-[async main](../programming-guide/main-and-command-args/index.md) topic
+[async main](../programming-guide/main-and-command-args/index.md) article
 in the programming guide.
 
 ## Default literal expressions
@@ -82,7 +84,7 @@ You can now omit the type on the right-hand side of the initialization:
 Func<string, bool> whereClause = default;
 ```
 
-You can learn more about this enhancement in the C# Programming Guide topic
+You can learn more about this enhancement in the C# Programming Guide article
 on [default value expressions](../programming-guide/statements-expressions-operators/default-value-expressions.md).
 
 This enhancement also changes some of the parsing rules for the [default keyword](../language-reference/keywords/default.md).
@@ -109,11 +111,15 @@ string label = "Colors used in the map";
 var pair = (count, label); // element names are "count" and "label"
 ```
 
-You can learn more about this feature in the [Tuples](../tuples.md) topic.
+You can learn more about this feature in the [Tuples](../tuples.md) article.
+
+## Pattern matching on generic type parameters
+
+Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.
 
 ## Reference assembly generation
 
 There are two new compiler options that generate *reference-only assemblies*:
 [/refout](../language-reference/compiler-options/refout-compiler-option.md)
 and [/refonly](../language-reference/compiler-options/refonly-compiler-option.md).
-The linked topics explain these options and reference assemblies in more detail.
+The linked articles explain these options and reference assemblies in more detail.

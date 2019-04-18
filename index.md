@@ -225,8 +225,8 @@ ms.date: "12/04/2018"
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/machine-learning">ML.NET Guide</a></h3>
-                                                <p><a href="/dotnet/machine-learning/index#tutorials">Tutorials</a></p>
-                                                <p><a href="/dotnet/machine-learning/index#resources">Resources</a></p>
+                                                <p><a href="/dotnet/machine-learning/tutorials">Tutorials</a></p>
+                                                <p><a href="/dotnet/machine-learning/resources">Resources</a></p>
                                                 <p><a href="/dotnet/machine-learning/resources/glossary">Glossary</a></p>
                                                 <p><a href="/dotnet/api?view=ml-dotnet">ML.NET API reference</a></p>
                                             </div>

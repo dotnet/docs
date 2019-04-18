@@ -219,9 +219,9 @@ A data view object has columns and rows. Each column has a name and a type and a
 
 All ML.NET algorithms look for an input column that is a vector. By default this vector column is called **Features**. This is why we concatenated the **Size** column into a new column called **Features** in our house price example.
 
-    ```csharp
+ ```csharp
     var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
-    ```
+ ```
 
 All algorithms also create new columns after they have performed a prediction. The fixed names of these new columns depend on the type of machine learning algorithm. For the regression task, one of the new columns is called **Score**. This is why we attributed our price data with this name.
 

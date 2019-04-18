@@ -78,8 +78,8 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
 The following diagram shows this flow in visual form, with a couple of additions, which we talk about later in this article:
 
-    1. Addition of an evalution and improvement step
-    1. Indication that model development and usage are often separate
+   1. Addition of an evalution and improvement step
+   1. Indication that model development and usage are often separate
     
 ![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png) 
 
@@ -93,7 +93,7 @@ An ML.NET model is an encapsulation of the transformations to perform on your in
 
 The simplest model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above. 
 
-![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.png)
+![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.svg)
 
 The model is simply: `Price = b * Size + w`. The parameters `b` and `w` are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, `Size` is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the `Price` values in the training data set are the labels. 
 
@@ -185,7 +185,7 @@ Once the objects in the pipeline have been created, data can be used to train or
     var model = pipeline.Fit(trainingData);
 ```
 
-Calling `Fit()` uses the input training data to estimate the parameters of the model. Remember in our linear regression model above, we had two model parameters: **bias** and **weight**. After the `Fit()` call, the value of the parameters are known. Most models will have many more parameters than this.
+Calling `Fit()` uses the input training data to estimate the parameters of the model. Remember in our linear regression model above, we had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
 You can learn more about model training in [How to train your model](how-to-guides/train-model)
 
@@ -231,7 +231,7 @@ All algorithms also create new columns after they have performed a prediction. T
 
 You can find out more about output columns of different machine learning tasks in the [Machine Learning Tasks](resources/tasks.md) guide.
 
-A very important property of DataView objects is that they are evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.Data.DataView.Preview) method.
+An important property of DataView objects is that they are evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.Data.DataView.Preview) method.
 
 ```csharp
     var debug = testPriceDataView.Preview();

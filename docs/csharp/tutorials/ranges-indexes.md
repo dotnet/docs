@@ -4,11 +4,22 @@ description: This advanced tutorial teach you to explore data using indexes and 
 ms.date: 03/13/2019
 ms.custom: mvc
 ---
-
-
 # Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, `Span<T>`, or `ReadOnlySpan<T>`.
+Ranges and indices provide a succinct syntax for accessing single elements or ranges in an <xref:System.Array>, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. These features enable more concise, clear syntax to access single elements or ranges of elements in a sequence.
+
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+> * Use the syntax for ranges in a sequence.
+> * Understand the design decisions for the start and end of each sequence.
+> * Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.
+
+## Prerequisites
+
+You'll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available with the latest [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+
+This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
 ## Language support for indices and ranges
 
@@ -18,7 +29,7 @@ You can specify a **range** with the **range operator**: `..`. For example, `0..
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Initialization)]
+[!code-csharp[Initialization](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Initialization)]
 
 The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
 

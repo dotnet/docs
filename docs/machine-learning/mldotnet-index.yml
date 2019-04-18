@@ -93,13 +93,13 @@ sections:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
       text: Data transformations
       href: transforms.md
-  - title: Reference and resources (text list)
+- title: Reference and resources (text list)
+  items:
+  - type: list
+    style: unordered
     items:
-    - type: list
-      style: unordered
-      items:
-      - html: <a href="https://docs.microsoft.com/dotnet/api/?view=ml-dotnet">ML.NET API</a>
-      - html: <a href="tasks.md">Machine learning tasks</a>
-      - html: <a href="transforms.md">Data transformations</a>
+    - html: <a href="https://docs.microsoft.com/dotnet/api/?view=ml-dotnet">ML.NET API</a>
+    - html: <a href="tasks.md">Machine learning tasks</a>
+    - html: <a href="transforms.md">Data transformations</a>
 
 

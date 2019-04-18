@@ -68,8 +68,20 @@ sections:
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/image-classification.png?raw=true
   - type: paragraph
-    text: 'You can find more scenarios in the ML.NET samples repo on GitHub.'
-    source: "www.google.com"
+    html: <p>You can find more scenarios in the <a href="https://github.com/dotnet/machinelearning-samples">ML.NET samples repo on GitHub</a></p>
+- title: Videos
+  items:
+  - type: markdown
+    text: ">[!VIDEO https://www.youtube.com/embed/cCsOvzB3rK8]"
+- title: How-to guides
+  items:
+    - type: list
+      style: unordered
+      items:
+      - html: <a href="/how-to-guides/load-data-from-text-file-ml-net">Load your data</a>
+      - html: <a href="/how-to-guides/train-regression-model-ml-net">Train your model</a>
+      - html: <a href="/how-to-guides/consuming-model-ml-net">Save your model</a>
+      - html: <a href="/how-to-guides/single-predict-model-ml-net">Use your model</a>
 - title: Reference and Resources
   items:
   - type: list
@@ -78,12 +90,9 @@ sections:
     - image: 
         src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/cli.svg
       text: ML.NET API
-      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-cli?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
+      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
     - image: 
         src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/portal.svg
       text: GitHub labeler
       href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-portal?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
-    - image: 
-        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/logo_powershell.svg
-      text: Price prediction
-      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-powershell?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
+

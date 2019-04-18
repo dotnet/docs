@@ -9,6 +9,7 @@ metadata:
   ms.topic: landing-page
   ms.date: 04/02/2019
 sections:
+- title: Machine learning for .NET developers
 - items:
   - type: markdown
     text: ML.NET is a free, open-source and cross-platform machine learning framework that aims to make machine learning approachable and accessible for .NET developers. Using ML.NET, developers can leverage their existing tools and skillsets to create custom machine learning models and use those trained models in their .NET applications.
@@ -23,12 +24,12 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
       title: What is ML.NET?
-    - href: https://dotnet.microsoft.com/learn/machinelearning-ai/ml-dotnet-get-started-tutorial/intro
+    - href: https://dotnet.microsoft.com/images/redesign/learn/apps/ml-dotnet/made-for-dotnet.svg?v=UfmC3z46a4NhDPAzqF5oZklm_cerTMWbBdD1vlfXvh0
       html: <p>Create your first ML.NET app.</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+        src: https://github.com/dotnet/machinelearning-samples/raw/master/images/app-type-getting-started.png
       title: Get started
-- title: ML.NET Scenarios and Tutorials
+- title: ML.NET scenarios and tutorials
   items:
   - type: paragraph
     text: 'You can use ML.NET for a variety of machine learning scenarios and app types. Try out one of the tutorials below to understand how to use ML.NET to build custom machine learning solutions and integrate them into your .NET applications:'
@@ -67,7 +68,8 @@ sections:
       title: Image classification
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/image-classification.png?raw=true
-  - type: paragraph
+  - type: list
+    style: unordered
     items:
     - href: https://github.com/dotnet/machinelearning-samples
       html: <p>Find more scenarios in the ML.NET samples repo in GitHub</p>
@@ -75,7 +77,7 @@ sections:
   items:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/cCsOvzB3rK8]"
-- title: Reference and Resources
+- title: Reference and resources
   items:
   - type: list
     style: icon48
@@ -86,6 +88,6 @@ sections:
       href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
     - image: 
         src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/portal.svg
-      text: GitHub labeler
-      href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-portal?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
+      text: Machine learning tasks
+      href: tasks.md
 

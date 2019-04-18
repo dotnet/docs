@@ -1099,11 +1099,39 @@
         <Parameter Name="box" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="box">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type to be unboxed.</typeparam>
+        <param name="box">The value to unbox.</param>
+        <summary>Returns a <see langword="mutable ref" /> to a boxed value.</summary>
+        <returns>A <see langword="mutable ref" /> to the boxed value <paramref name="box" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `Unbox<T>` method is simply a wrapper for the IL [unbox](xref:System.Reflection.Emit.OpCodes.Unbox) instruction. It is useful as a performance optimization. Whenever an API that takes an <xref:System.Object> needs to be called repeatedly with different values of a value type, the same box object can be reused rather than a new one created each time.
+
+The `Unbox<T>` method has an important usage constraint that is not enforced by language compilers and that is the responsibility of the caller. The IL `unbox` instruction returns a controlled-mutability managed pointer. Because .NET and .NET language compilers cannot represent this constraint, the `Unbox<T>` method returns a normal mutable `ref T`. However developers **must not** mutate the returned reference unless they are certain that `T` is a mutable struct type. For example, because the numeric primitives such as <xref:System.Int32> are not mutable struct types, the following code is not suppported:
+
+```csharp
+Unsafe.Box<int>(obj) = 30;
+```
+
+In contrast, a type such as <xref:System.Drawing.Point?<displayProperty=nameWithType> is a mutable struct with public property setters, so the following code is supported:
+
+```csharp
+Unsafe.Unbox<System.Drawing.Point>(obj).X = 50;
+```
+
+For more information, see sections III.1.8.1.2.2 ("Controlled-muttability managed pointers") and III.4.32 ("unbox -- convert boxed value type to its raw form") in [ECMA-335: Common Language Infrastructure (CLI) Partitions I to VI](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf).
+
+         ]]></format>
+         </remarks>       
+        <exception cref="T:System.NullReferenceException"><paramref name="box" /> is <see langword="null" />, and <typeparamref name="T" /> is a non-nullable value type.</exception>
+         <exception cref="T:System.InvalidCastException"><paramref name="box" /> is not a boxed value type.
+         
+-or-
+
+<paramref name="box" /> is not a boxed <typeparamref name="T" />.
+         </exception>
+        <exception cref="T:System.TypeLoadException"><typeparamref name="T" /> cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write&lt;T&gt;">

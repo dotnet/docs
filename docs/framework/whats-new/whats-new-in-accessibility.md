@@ -1,7 +1,7 @@
 ---
 title: "What's new in accessibility in the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "04/18/2018"
+ms.date: "04/18/2019"
 dev_langs:
   - "csharp"
   - "vb"
@@ -83,7 +83,7 @@ In .NET Framework 4.8, Windows Forms adds support for LiveRegions and Notificati
 
 **UIA LiveRegions Support in Labels and StatusStrips**
 
-UIA LiveRegions allow application developers to notify screen readers of a text change in a control that is located apart from the location where the user is working. This is useful, for example,for a <xref:System.Windows.Forms.StatusStrip> control that shows a connection status. If the connection is dropped and the status changes, the developer might want to notify the screen reader.
+UIA LiveRegions allow application developers to notify screen readers of a text change in a control that is located apart from the location where the user is working. This is useful, for example, for a <xref:System.Windows.Forms.StatusStrip> control that shows a connection status. If the connection is dropped and the status changes, the developer might want to notify the screen reader.
 
 Starting with .NET Framework 4.8, Windows Forms implements UIA LiveRegions for both the <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.StatusStrip> controls. For example, the following code uses the LiveRegion in a <xref:System.Windows.Forms.Label> control named `label1`:
 
@@ -100,7 +100,7 @@ Label1.Text = “Ready!”;
 
 Narrator announces “Ready” regardless of where the user is interacting with the application.
 
-You can also implement your <xref:System.Windows.Forms.UserControl> as a LiveRregion:
+You can also implement your <xref:System.Windows.Forms.UserControl> as a LiveRegion:
 
 ```csharp
 using System;
@@ -133,7 +133,7 @@ namespace WindowsFormsApplication
 
 **UIA notification events**
 
-The UIA Notification event, introduced in Windows 10 Fall Creators Update, allows your app to raise a UIA event, which leads to Narrator simply making an announcement based on text you supply with the event, without the need to have a corresponding control in the UI. In some scenarios, this is a straightforward way to dramatically improve the accessibility of your app. In can also be useful to notify of the progress of some process that may take a long tinme. For more information about UIA Notification Events, see [Can your desktop app leverage the new UI Notification event?](https://blogs.msdn.microsoft.com/winuiautomation/2017/11/08/can-your-desktop-app-leverage-the-new-uia-notification-event-in-order-to-have-narrator-say-exactly-what-your-customers-need/).
+The UIA Notification event, introduced in Windows 10 Fall Creators Update, allows your app to raise a UIA event, which leads to Narrator simply making an announcement based on text you supply with the event, without the need to have a corresponding control in the UI. In some scenarios, this is a straightforward way to dramatically improve the accessibility of your app. In can also be useful to notify of the progress of some process that may take a long time. For more information about UIA Notification Events, see [Can your desktop app leverage the new UI Notification event?](https://blogs.msdn.microsoft.com/winuiautomation/2017/11/08/can-your-desktop-app-leverage-the-new-uia-notification-event-in-order-to-have-narrator-say-exactly-what-your-customers-need/).
 
 The following example raises the [Notification event](xref:System.Windows.Forms.AccessibleObject.RaiseAutomationNotification%2A):
 
@@ -252,7 +252,7 @@ Starting with .NET Framework 4.8, WPF  exposes these two properties to UIAutomat
 
 - By using dependency properties.
 
-   WPF adds two new dependecy properties, <xref:System.Windows.Automation.AutomationProperties.SizeOfSet?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationProperties.PositionInSet?displayProperty=nameWithType>. A developer can use XAML to set their values:
+   WPF adds two new dependency properties, <xref:System.Windows.Automation.AutomationProperties.SizeOfSet?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationProperties.PositionInSet?displayProperty=nameWithType>. A developer can use XAML to set their values:
 
    ```xaml
    <Button AutomationProperties.SizeOfSet="3" 	
@@ -314,7 +314,7 @@ The workflow designer includes the following changes in .NET Framework 4.8:
 
 - Users who choose High Contrast themes will see improvements in the visibility of the Workflow Designer and its controls, like better contrast ratios between elements and more noticeable selection boxes used for focus elements.
 
-If your application targets .NET Framework 4.7.2 or an earlier version, you can opt into these changes by setting the `Switch.UseLegacyAccessibilityFeatures.3` [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) to `false` in your application configuration file. For more information, see the [Taking advantage of accessibility enhancements](#taking-advantage-of-accessibility-enhancements) section in this acticle.
+If your application targets .NET Framework 4.7.2 or an earlier version, you can opt into these changes by setting the `Switch.UseLegacyAccessibilityFeatures.3` [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) to `false` in your application configuration file. For more information, see the [Taking advantage of accessibility enhancements](#taking-advantage-of-accessibility-enhancements) section in this article.
 
 ## What's new in accessibility in .NET Framework 4.7.2
 

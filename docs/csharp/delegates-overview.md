@@ -39,16 +39,16 @@ any late binding algorithms. That enables developers to learn one
 concept, and use that same concept across many different software
 problems.
 
-Second, the team wanted to support both single and multi-cast method
+Second, the team wanted to support both single and multicast method
 calls. (Multicast delegates are delegates where multiple methods have
 been chained together. You'll see examples
-[later in this series](delegate-class.md). 
+[later in this series](delegate-class.md).) 
 
 The team wanted delegates to support the same type safety that developers
 expect from all C# constructs. 
 
 Finally, the team recognized that an event pattern is one specific pattern
-where delegates, or any late binding algorithm) is very useful. The team
+where delegates, or any late binding algorithm, is very useful. The team
 wanted to ensure that the code for delegates could provide the basis for
 the .NET event pattern.
 

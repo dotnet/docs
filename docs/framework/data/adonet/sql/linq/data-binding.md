@@ -37,9 +37,9 @@ Collection generations are implemented by generic <xref:System.Data.Linq.Table%6
 
 - The data source is an <xref:System.Linq.IQueryable%601>. There are two scenarios:
 
-    - If [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] finds the underlying <xref:System.Data.Linq.Table%601> from the <xref:System.Linq.IQueryable%601>, the source allows for edition and the situation is the same as in the first bullet point.
+  - If [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] finds the underlying <xref:System.Data.Linq.Table%601> from the <xref:System.Linq.IQueryable%601>, the source allows for edition and the situation is the same as in the first bullet point.
 
-    - If [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] cannot find the underlying <xref:System.Data.Linq.Table%601>, the source does not allow for edition (for example, `groupby`). [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] browses the query to fill a generic `SortableBindingList`, which is a simple <xref:System.ComponentModel.BindingList%601> that implements the sorting feature for T entities for a given property.
+  - If [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] cannot find the underlying <xref:System.Data.Linq.Table%601>, the source does not allow for edition (for example, `groupby`). [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] browses the query to fill a generic `SortableBindingList`, which is a simple <xref:System.ComponentModel.BindingList%601> that implements the sorting feature for T entities for a given property.
 
 ## Specialized Collections
 

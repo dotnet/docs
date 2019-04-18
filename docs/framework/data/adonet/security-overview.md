@@ -96,6 +96,7 @@ Securing an application is an ongoing process. There will never be a point where
 |[Security Policy Best Practices](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|Provides links describing how to administer security policy.|  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Security in .NET](../../../standard/security/index.md)
 - [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)

@@ -29,14 +29,13 @@ Cases not supported in Windows Containers, as of May 2018:
 
 -   Windows infrastructure roles (DNS, DHCP, DC, NTP, PRINT, File server, IAM etc.) are not supported scenarios.
 
-
 For additional not-supported scenarios and requests from the community, see the UserVoice forum for Windows Containers: <https://windowsserver.uservoice.com/forums/304624-containers>.
 
 ### Additional resources
 
 -   **Virtual machines and containers in Azure**
 
-    [https://docs.microsoft.com/azure/virtual-machines/windows/containers](https://docs.microsoft.com/azure/virtual-machines/windows/containers)
+    <https://azure.microsoft.com/overview/containers/>
 
 >[!div class="step-by-step"]
 >[Previous](deploy-existing-net-apps-as-windows-containers.md)

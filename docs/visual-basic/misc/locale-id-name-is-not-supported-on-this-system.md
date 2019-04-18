@@ -10,7 +10,7 @@ You are attempting to use `VbStrConv`, but your system does not support the spec
   
 ## To correct this error  
   
-1.  Upgrade the machine to support the locale, or run the application on a machine that supports the specified locale.  
+1. Upgrade the machine to support the locale, or run the application on a machine that supports the specified locale.  
   
 ## See also
 

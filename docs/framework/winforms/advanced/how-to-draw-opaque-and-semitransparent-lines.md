@@ -30,6 +30,7 @@ When you draw a line, you must pass a <xref:System.Drawing.Pen> object to the <x
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Alpha Blending Lines and Fills](alpha-blending-lines-and-fills.md)
 - [How to: Give Your Control a Transparent Background](../controls/how-to-give-your-control-a-transparent-background.md)
 - [How to: Draw with Opaque and Semitransparent Brushes](how-to-draw-with-opaque-and-semitransparent-brushes.md)

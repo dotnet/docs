@@ -178,6 +178,7 @@ partial class Customer
  [Walkthrough: Adding Validation to Entity Classes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb629301(v=vs.120))  
   
 ## See also
+
 - [Partial Classes and Methods](../../../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
 - [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)
 - [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)

@@ -9,9 +9,7 @@ ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
 ---
 # XAML and Custom Classes for WPF
 XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] frameworks supports the ability to define a custom class or structure in any [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] language, and then access that class using XAML markup. You can use a mixture of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
-  
- 
-  
+
 <a name="Custom_Classes_in_Applications_vs__in_Assemblies"></a>   
 ## Custom Classes in Applications or Assemblies  
  Custom classes that are used in XAML can be defined in two distinct ways: within the code-behind or other code that produces the primary [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application, or as a class in a separate assembly, such as an executable or DLL used as a class library. Each of these approaches has particular advantages and disadvantages.  
@@ -107,6 +105,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
  For certain scenarios, such as if you are a control author, you may also want to assure that any object representation that can be instantiated in XAML can also be serialized back to equivalent XAML markup. Serialization requirements are not described in this topic. See [Control Authoring Overview](../controls/control-authoring-overview.md) and [Element Tree and Serialization](element-tree-and-serialization.md).  
   
 ## See also
+
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Control Authoring Overview](../controls/control-authoring-overview.md)

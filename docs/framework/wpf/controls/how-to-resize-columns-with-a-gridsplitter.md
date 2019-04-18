@@ -29,5 +29,6 @@ This example shows how to create a vertical <xref:System.Windows.Controls.GridSp
 [!code-xaml[GridSplitterRowColumn#GridSplitterEntireColumnPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart2)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.GridSplitter>
 - [How-to Topics](gridsplitter-how-to-topics.md)

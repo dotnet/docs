@@ -21,11 +21,11 @@ Common tasks in application development are adding controls to and removing cont
   
 ### To add a control to a collection programmatically  
   
-1.  Create an instance of the control to be added.  
+1. Create an instance of the control to be added.  
   
-2.  Set properties of the new control.  
+2. Set properties of the new control.  
   
-3.  Add the control to the `Controls` collection of the parent control.  
+3. Add the control to the `Controls` collection of the parent control.  
   
      The following code example shows how to create an instance of the <xref:System.Windows.Forms.Button> control. It requires a form with a <xref:System.Windows.Forms.Panel> control and that the event-handling method for the button being created, `NewPanelButton_Click`, already exists.  
   
@@ -60,11 +60,11 @@ Common tasks in application development are adding controls to and removing cont
   
 ### To remove controls from a collection programmatically  
   
-1.  Remove the event handler from the event. In Visual Basic, use the [RemoveHandler Statement](~/docs/visual-basic/language-reference/statements/removehandler-statement.md) keyword; in Visual C#, use the [-= Operator (C# Reference)](~/docs/csharp/language-reference/operators/subtraction-assignment-operator.md).  
+1. Remove the event handler from the event. In Visual Basic, use the [RemoveHandler Statement](~/docs/visual-basic/language-reference/statements/removehandler-statement.md) keyword; in Visual C#, use the [-= Operator (C# Reference)](~/docs/csharp/language-reference/operators/subtraction-assignment-operator.md).  
   
-2.  Use the `Remove` method to delete the desired control from the panel's `Controls` collection.  
+2. Use the `Remove` method to delete the desired control from the panel's `Controls` collection.  
   
-3.  Call the <xref:System.Windows.Forms.Control.Dispose%2A> method to release all the resources used by the control.  
+3. Call the <xref:System.Windows.Forms.Control.Dispose%2A> method to release all the resources used by the control.  
   
     ```vb  
     Public Sub RemoveControl()  
@@ -95,5 +95,6 @@ Common tasks in application development are adding controls to and removing cont
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.Panel>
 - [Panel Control](panel-control-windows-forms.md)

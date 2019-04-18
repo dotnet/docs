@@ -10,7 +10,7 @@ The application is attempting to use the `VbStrConv` enumeration members `Wide` 
   
 ## To correct this error  
   
-1.  Remove either `VbStrConv.Wide` or `VbStrConv.Narrow`.  
+1. Remove either `VbStrConv.Wide` or `VbStrConv.Narrow`.  
   
 ## See also
 

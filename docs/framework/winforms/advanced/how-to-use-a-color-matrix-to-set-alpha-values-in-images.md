@@ -30,5 +30,6 @@ The <xref:System.Drawing.Bitmap> class (which inherits from the <xref:System.Dra
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
+
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Alpha Blending Lines and Fills](alpha-blending-lines-and-fills.md)

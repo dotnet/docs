@@ -16,9 +16,9 @@ In Visual Basic, two variable references are considered identical if their point
   
 #### To determine if two objects are identical  
   
-1.  Set up a `Boolean` expression to test the two objects.  
+1. Set up a `Boolean` expression to test the two objects.  
   
-2.  In your testing expression, use the `Is` operator with the two objects as operands.  
+2. In your testing expression, use the `Is` operator with the two objects as operands.  
   
      `Is` returns `True` if the objects point to the same class instance.  
   
@@ -27,9 +27,9 @@ In Visual Basic, two variable references are considered identical if their point
   
 #### To determine if two objects are not identical  
   
-1.  Set up a `Boolean` expression to test the two objects.  
+1. Set up a `Boolean` expression to test the two objects.  
   
-2.  In your testing expression, use the `IsNot` operator with the two objects as operands.  
+2. In your testing expression, use the `IsNot` operator with the two objects as operands.  
   
      `IsNot` returns `True` if the objects do not point to the same class instance.  
   

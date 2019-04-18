@@ -83,6 +83,7 @@ pictureBox1->AccessibleRole = AccessibleRole::Chart;
 ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.AccessibleObject>
 - <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>

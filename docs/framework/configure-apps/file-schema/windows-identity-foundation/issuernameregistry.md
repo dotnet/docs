@@ -72,5 +72,6 @@ Configures the issuer name registry that is used by handlers in the token handle
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Tokens.IssuerNameRegistry>
 - <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>

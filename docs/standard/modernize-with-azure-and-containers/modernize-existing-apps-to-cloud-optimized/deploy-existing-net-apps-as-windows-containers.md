@@ -119,16 +119,15 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 -   **Windows Containers documentation**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/](https://docs.microsoft.com/virtualization/windowscontainers/)
+    <https://docs.microsoft.com/virtualization/windowscontainers/>
 
 -   **Windows Containers fundamentals**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/about/](https://docs.microsoft.com/virtualization/windowscontainers/about/)
+    <https://docs.microsoft.com/virtualization/windowscontainers/about/>
 
 -   **Infographic: Microsoft and containers**
 
-    [https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf](https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf)
-
+    <https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf>
 
 ## The container ecosystem in Azure
 

@@ -22,6 +22,7 @@ Four ImageDrawing objects
  For an example showing a simple way to display an image without using <xref:System.Windows.Media.ImageDrawing>, see [Use the Image Element](../controls/how-to-use-the-image-element.md).  
   
 ## See also
+
 - <xref:System.Windows.Freezable.Freeze%2A>
 - <xref:System.Windows.Controls.Image>
 - [Drawing Objects Overview](drawing-objects-overview.md)

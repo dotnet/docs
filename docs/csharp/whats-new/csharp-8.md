@@ -52,7 +52,7 @@ public enum Rainbow
 }
 ```
 
-You could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
+If your application defined an `RGBColor` type that is constructed from the `R`, `G` and `B` components, you could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
 
 ```csharp
 public static RGBColor FromRainbow(Rainbow colorBand) =>
@@ -213,7 +213,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 ```
 
 In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
-
 
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)

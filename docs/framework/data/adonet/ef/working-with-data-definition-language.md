@@ -30,9 +30,9 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
 #### To define a database based on the existing model  
   
-1.  Create a console application.  
+1. Create a console application.  
   
-2.  Add an existing model to your application.  
+2. Add an existing model to your application.  
   
     1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
   
@@ -42,7 +42,7 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
     2.  Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
   
-3.  Add the following code to your main function. The code initializes the connection string to your database server, views the DDL script, creates the database, adds a new entity to the context, and saves the changes to the database.  
+3. Add the following code to your main function. The code initializes the connection string to your database server, views the DDL script, creates the database, adds a new entity to the context, and saves the changes to the database.  
   
      [!code-csharp[DP ObjectServices Concepts#DDL](../../../../../samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#ddl)]
      [!code-vb[DP ObjectServices Concepts#DDL](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#ddl)]

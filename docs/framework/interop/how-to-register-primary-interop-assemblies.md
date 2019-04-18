@@ -30,7 +30,7 @@ Use the [Assembly Registration Tool (Regasm.exe)](../../../docs/framework/tools/
 
 ## To register a primary interop assembly
 
-1.  At the command prompt, type:
+1. At the command prompt, type:
 
      **regasm** *assemblyname*
 

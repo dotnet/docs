@@ -159,9 +159,7 @@ The common type system defines how types are declared, used, and managed in the 
   
 > [!NOTE]
 >  It is not necessary to use these methods for event-handler delegates in C#, C++, and Visual Basic, because these languages provide syntax for adding and removing event handlers.  
-  
- 
-  
+
 <a name="type_definitions"></a>   
 ## Type Definitions  
  A type definition includes the following:  
@@ -220,9 +218,7 @@ The common type system defines how types are declared, used, and managed in the 
  A type can inherit values and behaviors from another type. The common type system does not allow types to inherit from more than one base type.  
   
  A type can implement any number of interfaces. To implement an interface, a type must implement all the virtual members of that interface. A virtual method can be implemented by a derived type and can be invoked either statically or dynamically.  
-  
-  
-  
+
 <a name="type_members"></a>   
 ## Type Members  
  The runtime enables you to define members of your type, which specifies the behavior and state of a type. Type members include the following:  
@@ -284,9 +280,7 @@ The common type system defines how types are declared, used, and managed in the 
  A nested type is a type that is a member of some other type. Nested types should be tightly coupled to their containing type and must not be useful as a general-purpose type. Nested types are useful when the declaring type uses and creates instances of the nested type, and use of the nested type is not exposed in public members.  
   
  Nested types are confusing to some developers and should not be publicly visible unless there is a compelling reason for visibility. In a well-designed library, developers should rarely have to use nested types to instantiate objects or declare variables.  
-  
-  
-  
+
 <a name="characteristics_of_type_members"></a>   
 ## Characteristics of Type Members  
  The common type system allows type members to have a variety of characteristics; however, languages are not required to support all these characteristics. The following table describes member characteristics.  

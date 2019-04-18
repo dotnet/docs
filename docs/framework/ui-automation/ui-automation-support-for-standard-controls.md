@@ -162,4 +162,5 @@ ms.assetid: 3770ea8a-2655-4add-9c59-fe0610ad5084
 |StatusStrip|  
   
 ## See also
+
 - [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)

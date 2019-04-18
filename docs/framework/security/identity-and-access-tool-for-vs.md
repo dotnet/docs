@@ -5,7 +5,7 @@ ms.assetid: 87b8f8f2-4074-44fd-9fd6-08278e877390
 author: "BrucePerlerMS"
 ---
 # Identity and Access Tool for Visual Studio 2012
-This topic describes the new Identity and Access Tool for Visual Studio 11. You can download this tool from the following URL: [https://go.microsoft.com/fwlink/?LinkID=245849](https://go.microsoft.com/fwlink/?LinkID=245849) or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager.  
+This topic describes the new Identity and Access Tool for Visual Studio 11. You can download this tool from the following URL: <https://go.microsoft.com/fwlink/?LinkID=245849> or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager.  
   
  The Identity and Access Tool for Visual Studio 11 delivers a dramatically simplified development-time experience with the following highlights:  
   
@@ -22,4 +22,5 @@ This topic describes the new Identity and Access Tool for Visual Studio 11. You 
 -   The tool leverages Windows Azure Access Control Service (ACS) capabilities with a simple list of checkboxes for all the identity providers that you want to use: Facebook, Google, Live ID, Yahoo!, any OpenID provider, and any WS-Federation provider. Select your identity providers, click OK, then F5, and both your application and ACS will be automatically configured and your test application will be ACS-aware.  
   
 ## See also
+
 - [WIF Features](../../../docs/framework/security/wif-features.md)

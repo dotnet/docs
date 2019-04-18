@@ -13,21 +13,22 @@ The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been
   
  The pattern for performing an asynchronous socket operation with this class consists of the following steps:  
   
-1.  Allocate a new <xref:System.Net.Sockets.SocketAsyncEventArgs> context object, or get a free one from an application pool.  
+1. Allocate a new <xref:System.Net.Sockets.SocketAsyncEventArgs> context object, or get a free one from an application pool.  
   
-2.  Set properties on the context object to the operation about to be performed (the callback delegate method and data buffer, for example).  
+2. Set properties on the context object to the operation about to be performed (the callback delegate method and data buffer, for example).  
   
-3.  Call the appropriate socket method (xxxAsync) to initiate the asynchronous operation.  
+3. Call the appropriate socket method (xxxAsync) to initiate the asynchronous operation.  
   
-4.  If the asynchronous socket method (xxxAsync) returns true in the callback, query the context properties for completion status.  
+4. If the asynchronous socket method (xxxAsync) returns true in the callback, query the context properties for completion status.  
   
-5.  If the asynchronous socket method (xxxAsync) returns false in the callback, the operation completed synchronously. The context properties may be queried for the operation result.  
+5. If the asynchronous socket method (xxxAsync) returns false in the callback, the operation completed synchronously. The context properties may be queried for the operation result.  
   
-6.  Reuse the context for another operation, put it back in the pool, or discard it.  
+6. Reuse the context for another operation, put it back in the pool, or discard it.  
   
  The lifetime of the new asynchronous socket operation context object is determined by references in the application code and asynchronous I/O references. It is not necessary for the application to retain a reference to an asynchronous socket operation context object after it is submitted as a parameter to one of the asynchronous socket operation methods. It will remain referenced until the completion callback returns. However it is advantageous for the application to retain the reference to the context object so that it can be reused for a future asynchronous socket operation.  
   
 ## See also
+
 - <xref:System.Net.Sockets.Socket?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SendPacketsElement?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType>

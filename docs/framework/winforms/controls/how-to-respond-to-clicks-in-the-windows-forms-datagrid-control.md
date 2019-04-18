@@ -135,5 +135,6 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
     ```  
   
 ## See also
+
 - [DataGrid Control](datagrid-control-windows-forms.md)
 - [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](change-displayed-data-at-run-time-wf-datagrid-control.md)

@@ -64,6 +64,7 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
  [!code-vb[DrawingVisualSample#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#103)]  
   
 ## See also
+
 - <xref:System.Windows.Media.DrawingVisual>
 - <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>
 - [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

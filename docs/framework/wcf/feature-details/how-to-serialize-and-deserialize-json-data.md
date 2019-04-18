@@ -17,7 +17,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ## To define the data contract for a Person type 
   
-1.  Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing service contracts](../designing-service-contracts.md).  
+1. Define the data contract for `Person` by attaching the <xref:System.Runtime.Serialization.DataContractAttribute> to the class and <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to the members you want to serialize. For more information about data contracts, see [Designing service contracts](../designing-service-contracts.md).  
   
     ```csharp  
     [DataContract]  
@@ -33,7 +33,7 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ## To serialize an instance of type Person to JSON  
   
-1.  Create an instance of the `Person` type.  
+1. Create an instance of the `Person` type.  
   
     ```csharp  
     Person p = new Person();  
@@ -41,20 +41,20 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
     p.age = 42;  
     ```  
   
-2.  Serialize the `Person` object to a memory stream by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
+2. Serialize the `Person` object to a memory stream by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
     ```csharp  
     MemoryStream stream1 = new MemoryStream();  
     DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(Person));  
     ```  
   
-3.  Use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A> method to write JSON data to the stream.  
+3. Use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A> method to write JSON data to the stream.  
   
     ```csharp  
     ser.WriteObject(stream1, p);  
     ```  
   
-4.  Show the JSON output.  
+4. Show the JSON output.  
   
     ```csharp  
     stream1.Position = 0;  
@@ -65,14 +65,14 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ## To deserialize an instance of type Person from JSON  
   
-1.  Deserialize the JSON-encoded data into a new instance of `Person` by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject%2A> method of the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
+1. Deserialize the JSON-encoded data into a new instance of `Person` by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject%2A> method of the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
     ```csharp  
     stream1.Position = 0;  
     Person p2 = (Person)ser.ReadObject(stream1);  
     ```  
   
-2.  Show the results.  
+2. Show the results.  
   
     ```csharp  
     Console.WriteLine($"Deserialized back, got name={p2.name}, age={p2.age}");  
@@ -130,5 +130,6 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
 ```  
   
 ## See also
+
 - [Stand-alone JSON serialization](stand-alone-json-serialization.md)
 - [Support for JSON and other data transfer formats](support-for-json-and-other-data-transfer-formats.md)

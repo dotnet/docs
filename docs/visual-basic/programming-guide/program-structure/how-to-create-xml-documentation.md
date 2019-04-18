@@ -13,22 +13,22 @@ This example shows how to add XML documentation comments to your code.
   
 ### To create XML documentation for a type or member  
   
-1.  In the **Code Editor**, position your cursor on the line above the type or member for which you want to create documentation.  
+1. In the **Code Editor**, position your cursor on the line above the type or member for which you want to create documentation.  
   
-2.  Type `'''` (three single-quotation marks).  
+2. Type `'''` (three single-quotation marks).  
   
      An XML skeleton for the type or member is added in the **Code Editor**.  
   
-3.  Add descriptive information between the appropriate tags.  
+3. Add descriptive information between the appropriate tags.  
   
     > [!NOTE]
     >  If you add additional lines within the XML documentation block, each line must begin with `'''`.  
   
-4.  Add additional code that uses the type or member with the new XML documentation comments.  
+4. Add additional code that uses the type or member with the new XML documentation comments.  
   
      IntelliSense displays the text from the \<summary> tag for the type or member.  
   
-5.  Compile the code to generate an XML file containing the documentation comments. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
+5. Compile the code to generate an XML file containing the documentation comments. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
   
 ## See also
 

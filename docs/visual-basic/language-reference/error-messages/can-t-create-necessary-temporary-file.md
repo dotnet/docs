@@ -10,13 +10,13 @@ Either the drive is full that contains the directory specified by the TEMP envir
   
 ## To correct this error  
   
-1.  Delete files from the drive, if full.  
+1. Delete files from the drive, if full.  
   
-2.  Specify a different drive in the TEMP environment variable.  
+2. Specify a different drive in the TEMP environment variable.  
   
-3.  Specify a valid drive for the TEMP environment variable.  
+3. Specify a valid drive for the TEMP environment variable.  
   
-4.  Remove the read-only restriction from the currently specified drive or directory.  
+4. Remove the read-only restriction from the currently specified drive or directory.  
   
 ## See also
 

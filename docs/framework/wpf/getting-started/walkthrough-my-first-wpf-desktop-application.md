@@ -210,7 +210,7 @@ In this section, you'll add two pages and an image to the application.
 
     The following illustration shows the application with the <xref:System.Windows.Navigation.NavigationWindow> buttons:
 
-    ![ExpenseIt sample screen shot](./media/gettingstartedfigure1.png)
+    ![ExpenseIt sample screenshot](./media/gettingstartedfigure1.png)
 
 2. Close the application to return to Visual Studio.
 
@@ -280,7 +280,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
 The following illustration shows the controls you just created:
 
-![ExpenseIt sample screen shot](./media/gettingstartedfigure2.png)
+![ExpenseIt sample screenshot](./media/gettingstartedfigure2.png)
 
 ## Add an image and a title
 
@@ -316,7 +316,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](./media/gettingstartedfigure3.png)
+![ExpenseIt sample screenshot](./media/gettingstartedfigure3.png)
 
 ## Add code to handle events
 
@@ -356,7 +356,7 @@ The following illustration shows the results of what you just added:
 
 The following illustration shows the UI elements added to *ExpenseReportPage.xaml*.
 
-![ExpenseIt sample screen shot](./media/gettingstartedfigure4.png)
+![ExpenseIt sample screenshot](./media/gettingstartedfigure4.png)
 
 ## Style controls
 
@@ -470,7 +470,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
-![ExpenseIt sample screen shots](./media/gettingstartedfigure5.png)
+![ExpenseIt sample screenshots](./media/gettingstartedfigure5.png)
 
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET Framework application development best practices, see the following topics:

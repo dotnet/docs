@@ -11,8 +11,7 @@ ms.assetid: c94548b2-c1e9-4b62-b10c-dd8740eb23d8
 ---
 # RichTextBox Overview
 The <xref:System.Windows.Controls.RichTextBox> control enables you to display or edit flow content including paragraphs, images, tables, and more. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and C#.  
-  
-  
+
 <a name="textbox_or_richtextbox"></a>   
 ## TextBox or RichTextBox?  
  Both <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox> allow users to edit text, however, the two controls are used in different scenarios. A <xref:System.Windows.Controls.RichTextBox> is a better choice when it is necessary for the user to edit formatted text, images, tables, or other rich content. For example, editing a document, article, or blog that requires formatting, images, etc is best accomplished using a <xref:System.Windows.Controls.RichTextBox>. A <xref:System.Windows.Controls.TextBox> requires less system resources then a <xref:System.Windows.Controls.RichTextBox> and it is ideal when only plain text needs to be edited (i.e. usage in forms). See [TextBox Overview](textbox-overview.md) for more information on <xref:System.Windows.Controls.TextBox>. The table below summarizes the main features of <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox>.  
@@ -89,5 +88,6 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
  [!code-vb[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/SaveLoadPrintRTB.xaml.vb#saveloadprintrtbcodeexamplewholepage)]  
   
 ## See also
+
 - [How-to Topics](richtextbox-how-to-topics.md)
 - [TextBox Overview](textbox-overview.md)

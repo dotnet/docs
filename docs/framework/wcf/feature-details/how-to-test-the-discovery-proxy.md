@@ -8,43 +8,44 @@ This is the fourth of four topics that shows how to implement a discovery proxy.
   
 ### Run the Discovery Proxy  
   
-1.  Open a command prompt as an administrator.  
+1. Open a command prompt as an administrator.  
   
-2.  You may see a dialog that says: Windows Firewall has blocked some features of this program. If you see this message, click the **Unblock** button.  
+2. You may see a dialog that says: Windows Firewall has blocked some features of this program. If you see this message, click the **Unblock** button.  
   
-3.  Within the command prompt, run the discovery proxy, DiscoveryProxy.exe.  
+3. Within the command prompt, run the discovery proxy, DiscoveryProxy.exe.  
   
-4.  The application should display the following text: `Proxy started. Hit Enter to exit`.  
+4. The application should display the following text: `Proxy started. Hit Enter to exit`.  
   
 ### Run the Discoverable Service  
   
-1.  Open a command prompt as an administrator.  
+1. Open a command prompt as an administrator.  
   
-2.  Within the command prompt, run the Service.exe discoverable service.  
+2. Within the command prompt, run the Service.exe discoverable service.  
   
-3.  The DiscoveryProxy.exe should display the following text: `******* Adding the following service: ** [Service Contract Name] ** [Service Endpoint Addr] 3.******* Done *******` .  
+3. The DiscoveryProxy.exe should display the following text: `******* Adding the following service: ** [Service Contract Name] ** [Service Endpoint Addr] 3.******* Done *******` .  
   
 ### Run the Client Application  
   
-1.  Open a command prompt.  
+1. Open a command prompt.  
   
-2.  Within the command prompt, run the client.exe application.  
+2. Within the command prompt, run the client.exe application.  
   
-3.  After a few seconds the client application displays the following text: Connecting to [Service-Endpoint].  
+3. After a few seconds the client application displays the following text: Connecting to [Service-Endpoint].  
   
-4.  The service.exe should then display the following text: Greeting request received, I will respond.  
+4. The service.exe should then display the following text: Greeting request received, I will respond.  
   
-5.  The client.exe should then display the following text: Hello Client!  
+5. The client.exe should then display the following text: Hello Client!  
   
 ### Shut Down the Applications  
   
-1.  Shut down the client application.  
+1. Shut down the client application.  
   
-2.  Shut down the service. The discovery proxy displays the following text: `******* Removing the following service: ** [Service Contract Name] ** [Service Endpoint Addr] 2.3.******* Done *******`.  
+2. Shut down the service. The discovery proxy displays the following text: `******* Removing the following service: ** [Service Contract Name] ** [Service Endpoint Addr] 2.3.******* Done *******`.  
   
-3.  Shut down the discovery proxy.  
+3. Shut down the discovery proxy.  
   
 ## See also
+
 - [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
 - [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)
 - [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)

@@ -25,4 +25,5 @@ The following examples show how to load an <xref:System.Windows.Controls.Image> 
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
   
 ## See also
+
 - [Imaging Overview](imaging-overview.md)

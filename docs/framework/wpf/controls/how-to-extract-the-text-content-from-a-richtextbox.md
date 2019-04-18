@@ -28,5 +28,6 @@ This example shows how to extract the contents of a <xref:System.Windows.Control
  [!code-vb[RichTextBoxSnippets#_RTB_StringFrom](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_stringfrom)]  
   
 ## See also
+
 - [RichTextBox Overview](richtextbox-overview.md)
 - [TextBox Overview](textbox-overview.md)

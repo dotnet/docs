@@ -44,7 +44,7 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [C# Guide](csharp/index.md)
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
-- [ML.NET Guide](machine-learning/index.md)
+- [ML.NET Guide](machine-learning/index.yml)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
 

@@ -19,6 +19,7 @@ This example shows how to animate changes to the size and position of a rectangl
  [!code-vb[BasicAnimations_snip#RectAnimationWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/RectAnimationExample.vb#rectanimationwholepage)]  
   
 ## See also
+
 - <xref:System.Windows.Media.Animation.RectAnimation>
 - <xref:System.Windows.Media.RectangleGeometry.Rect%2A>
 - <xref:System.Windows.Media.RectangleGeometry>

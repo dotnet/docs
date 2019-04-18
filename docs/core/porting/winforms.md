@@ -22,7 +22,7 @@ In this article, various names are used to identify types of files used for migr
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=winforms+core) for any designer work you want to do.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for any designer work you want to do.
 
   Install the following Visual Studio workloads:
   - .NET desktop development
@@ -32,9 +32,8 @@ In this article, various names are used to identify types of files used for migr
 - Your project must be coded in C#. 
 - Install the latest [.NET Core 3.0](https://aka.ms/netcore3download) preview.
 
-
 >[!NOTE]
->**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019 Preview/RC** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects. To use the visual designer, you must have a .NET Windows Forms project in your solution that shares the forms files with the .NET Core project.
+>**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects. To use the visual designer, you must have a .NET Windows Forms project in your solution that shares the forms files with the .NET Core project.
 
 ### Consider
 
@@ -56,7 +55,7 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 
     It's always a good practice to use the latest versions of NuGet packages before any migration. If your application is referencing any NuGet packages, update them to the latest version. Ensure your application builds successfully. After upgrading, if there are any package errors, downgrade the package to the latest version that doesn't break your code.
 
-01. Visual Studio 2019 Preview/RC doesn't yet support the Forms Designer for .NET Core 3.0
+01. Visual Studio 2019 doesn't yet support the Forms Designer for .NET Core 3.0
 
     Currently, you need to keep your existing .NET Framework Windows Forms project file if you want to use the Forms Designer from Visual Studio.
 
@@ -290,7 +289,7 @@ The previous command adds the following to the **MyFormsCore.csproj** project:
 
 ## Windows Forms Designer
 
-As detailed in this article, Visual Studio 2019 Preview/RC only supports the Forms Designer in .NET Framework projects. By creating a side-by-side .NET Core project, you can test your project with .NET Core while you use the .NET Framework project to design forms. Your solution file includes both the .NET Framework and .NET Core projects. Add and design your forms and controls in the .NET Framework project, and based on the file glob patterns we added to the .NET Core projects, any new or changed files will automatically be included in the .NET Core projects.
+As detailed in this article, Visual Studio 2019 only supports the Forms Designer in .NET Framework projects. By creating a side-by-side .NET Core project, you can test your project with .NET Core while you use the .NET Framework project to design forms. Your solution file includes both the .NET Framework and .NET Core projects. Add and design your forms and controls in the .NET Framework project, and based on the file glob patterns we added to the .NET Core projects, any new or changed files will automatically be included in the .NET Core projects.
 
 Once Visual Studio 2019 supports the Windows Forms Designer, you can copy/paste the content of your .NET Core project file into the .NET Framework project file. Then delete the file glob patterns added with the `<Source>` and `<EmbeddedResource>` items. Fix the paths to any project reference used by your app. This effectively upgrades the .NET Framework project to a .NET Core project.
  

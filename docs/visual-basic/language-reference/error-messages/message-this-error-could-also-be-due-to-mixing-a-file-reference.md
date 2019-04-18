@@ -19,9 +19,9 @@ ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
   
 ## To correct this error  
   
-1.  Determine which project produces the best assembly for your project to reference. For this decision, you might use criteria such as ease of file access and frequency of updates.  
+1. Determine which project produces the best assembly for your project to reference. For this decision, you might use criteria such as ease of file access and frequency of updates.  
   
-2.  In your project properties, add a reference to the project that contains the assembly that defines the type you are using.  
+2. In your project properties, add a reference to the project that contains the assembly that defines the type you are using.  
   
 ## See also
 

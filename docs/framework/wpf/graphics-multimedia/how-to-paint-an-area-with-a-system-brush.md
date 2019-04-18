@@ -42,5 +42,6 @@ The <xref:System.Windows.SystemColors> class provides access to system brushes a
  For an example showing how to use a system color in a gradient, see [Use System Colors in a Gradient](how-to-use-system-colors-in-a-gradient.md).  
   
 ## See also
+
 - [Use System Colors in a Gradient](how-to-use-system-colors-in-a-gradient.md)
 - [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)

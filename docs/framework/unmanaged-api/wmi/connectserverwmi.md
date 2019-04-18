@@ -2,29 +2,30 @@
 title: ConnectServerWmi function (Unmanaged API Reference)
 description: The ConnectServerWmi function uses DCOM to create a connection to a WMI namespace.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "ConnectServerWmi"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "ConnectServerWmi"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ConnectServerWmi function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ConnectServerWmi function
+
 Creates a connection through DCOM to a WMI namespace on a specified computer.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
 
 ## Syntax
 
-```
+```cpp
 HRESULT ConnectServerWmi (
    [in] BSTR               strNetworkResource,
    [in] BSTR               strUser,
@@ -34,10 +35,11 @@ HRESULT ConnectServerWmi (
    [in] BSTR               strAuthority,
    [in] IWbemContext*      pCtx,
    [out] IWbemServices**   ppNamespace,
-   [in] DWORD              impLevel, 
+   [in] DWORD              impLevel,
    [in] DWORD              authLevel
 );
 ```
+
 ## Parameters
 
 `strNetworkResource`\
@@ -50,8 +52,8 @@ HRESULT ConnectServerWmi (
 [in] A pointer to a valid `BSTR` that contains the password. A `null` indicates the current security context. An empty string ("") indicates a valid zero-length password.
 
 `strLocale`\
-[in] A pointer to a valid `BSTR` that indicates the correct locale for information retrieval. For Microsoft locale identifiers, the format of the string is "MS\_*xxx*", where *xxx* is a string in hexadecimal form that indicates the locale identifier (LCID). If an invalid locale is specified, the method returns `WBEM_E_INVALID_PARAMETER` except on Windows 7, where the default locale of the server is used instead. If `null1, the current locale is used. 
- 
+[in] A pointer to a valid `BSTR` that indicates the correct locale for information retrieval. For Microsoft locale identifiers, the format of the string is "MS\_*xxx*", where *xxx* is a string in hexadecimal form that indicates the locale identifier (LCID). If an invalid locale is specified, the method returns `WBEM_E_INVALID_PARAMETER` except on Windows 7, where the default locale of the server is used instead. If `null1, the current locale is used.
+
 `lSecurityFlags`\
 [in] Flags to pass to the `ConnectServerWmi` method. A value of zero (0) for this parameter results in the call to `ConnectServerWmi` returning only after a connection to the server is established. This could result in an application not responding indefinitely if the server is broken. The other valid values are:
 
@@ -70,7 +72,7 @@ HRESULT ConnectServerWmi (
 | NTLMDOMAIN:*domain name* | NT LAN Manager authentication is used, and this parameter contains an NTLM domain name. |
 
 `pCtx`\
-[in] Typically, this parameter is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) object required by one or more dynamic class providers. 
+[in] Typically, this parameter is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) object required by one or more dynamic class providers.
 
 `ppNamespace`\
 [out] When the function returns, receives a pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object bound to the specified namespace. It is set to point to `null` when there is an error.
@@ -99,7 +101,6 @@ This function wraps a call to the [IWbemLocator::ConnectServer](/windows/desktop
 For local access to the default namespace, `strNetworkResource` can be a simple object path: "root\default" or "\\.\root\default". For access to the default namespace on a remote computer using COM or Microsoft-compatible networking, include the computer name: "\\myserver\root\default". The computer name also can be a DNS name or IP address. The `ConnectServerWmi` function can also connect with computers running IPv6 using an IPv6 address.
 
 `strUser` cannot be an empty string. If the domain is specified in `strAuthority`, it must not also be included in `strUser`, or the function returns `WBEM_E_INVALID_PARAMETER`.
-
 
 ## Requirements
 

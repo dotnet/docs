@@ -17,23 +17,23 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
   
 ### To create a Windows Form inherited from an existing form by using the Inheritance Picker  
   
-1.  From the **Project** menu, choose **Add Windows Form**.  
+1. From the **Project** menu, choose **Add Windows Form**.  
   
      The **Add New Item** dialog box opens.  
   
-2.  Search the **Inherited Form** template either from the searchbox or by clicking on the **Windows Forms** category, select it, and name it in the **Name** box. Click the **Add** button to proceed.  
+2. Search the **Inherited Form** template either from the searchbox or by clicking on the **Windows Forms** category, select it, and name it in the **Name** box. Click the **Add** button to proceed.  
   
      The **Inheritance Picker** dialog box opens. If the current project already contains forms, they are displayed in the **Inheritance Picker** dialog box.  
   
-3.  To inherit from a form in another assembly, click the **Browse** button.  
+3. To inherit from a form in another assembly, click the **Browse** button.  
   
-4.  Within the **Select a file which contains a component to inherit from** dialog box, navigate to the project containing the form or module you desire.  
+4. Within the **Select a file which contains a component to inherit from** dialog box, navigate to the project containing the form or module you desire.  
   
-5.  Click the name of the .exe or .dll file to select it and click the **Open** button.  
+5. Click the name of the .exe or .dll file to select it and click the **Open** button.  
   
      This returns you to the **Inheritance Picker** dialog box, where the component is now listed, along with the project in which it is located.  
   
-6.  Select the component.  
+6. Select the component.  
   
      In **Solution Explorer**, the component is added to your project. If it has a UI, controls that are part of the inherited form will be marked with a glyph (![Screenshot of the Visual Basic inheritance symbol.](./media/how-to-inherit-forms-using-the-inheritance-picker-dialog-box/visual-basic-inheritance-glyph.gif)), and, when selected, have a border indicating the level of security that the control has on the superclassed form. The behaviors that correspond to the different security levels are listed in the table below.  
   
@@ -51,6 +51,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
     >  When you combine inherited controls and components with standard controls and components on Windows Forms, you might encounter conflicts with the z-ordering. You can correct this by modifying the z-order, which is done by clicking in the **Format** menu, pointing to **Order**, and then clicking **Bring To Front** or **Send To Back**. For more information about the z-order of controls, see [How to: Layer Objects on Windows Forms](../controls/how-to-layer-objects-on-windows-forms.md).  
   
 ## See also
+
 - [Inherits Statement](~/docs/visual-basic/language-reference/statements/inherits-statement.md)
 - [using](~/docs/csharp/language-reference/keywords/using.md)
 - [Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md)

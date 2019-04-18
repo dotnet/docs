@@ -13,17 +13,17 @@ This sample demonstrates how to write a visual workflow tracking application usi
 
 #### To use this sample
 
-1.  Open the WorkflowSimulator.sln file from the sample directory in Visual Studio 2010.
+1. Open the WorkflowSimulator.sln file from the sample directory in Visual Studio 2010.
 
-2.  Press CTRL+SHIFT+B to build the solution.
+2. Press CTRL+SHIFT+B to build the solution.
 
-3.  Press CTRL + F5 to run the sample. This displays the Workflow.xaml file in a rehosted workflow designer window.
+3. Press CTRL + F5 to run the sample. This displays the Workflow.xaml file in a rehosted workflow designer window.
 
-4.  Click the **File** menu and select **Run Workflow...**.
+4. Click the **File** menu and select **Run Workflow...**.
 
-5.  Notice the currently executing activity is highlighted as described previously and the tracking records are displayed on the right side of the application window.
+5. Notice the currently executing activity is highlighted as described previously and the tracking records are displayed on the right side of the application window.
 
-6.  When the workflow has completed, you can click any of the tracking records to inspect which activity it corresponds to.
+6. When the workflow has completed, you can click any of the tracking records to inspect which activity it corresponds to.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

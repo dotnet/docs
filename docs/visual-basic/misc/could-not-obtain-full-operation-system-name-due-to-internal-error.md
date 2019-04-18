@@ -12,9 +12,9 @@ Could not obtain full operation system name due to internal error. This might be
   
 ## To correct this error  
   
-1.  Add a `Try...Catch` block around the call to the `My.Computer.Info.OSFullName` property.  
+1. Add a `Try...Catch` block around the call to the `My.Computer.Info.OSFullName` property.  
   
-2.  For more information about WMI and how to install it, go to  and search for "Windows Management Instrumentation Core".  
+2. For more information about WMI and how to install it, go to  and search for "Windows Management Instrumentation Core".  
   
 ## See also
 

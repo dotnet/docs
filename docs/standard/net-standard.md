@@ -107,7 +107,7 @@ For more information, see [.NET Framework compatibility mode](../core/porting/th
 
 ## .NET Standard libraries and Visual Studio
 
-In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/visual-studio-mac/) or later installed on macOS.
+In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) or later installed on macOS.
 
 If you only need to consume .NET Standard 2.0 libraries in your projects, you can also do that in Visual Studio 2015. However, you need NuGet client 3.6 or higher installed. You can download the NuGet client for Visual Studio 2015 from the [NuGet downloads](https://www.nuget.org/downloads) page.
 

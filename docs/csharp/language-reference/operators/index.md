@@ -69,9 +69,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [-x](subtraction-operator.md) – numeric negation.
 
-[\!x](logical-negation-operator.md) – logical negation.
+[\!x](boolean-logical-operators.md#logical-negation-operator-) – logical negation.
 
-[~x](bitwise-complement-operator.md) – bitwise complement.
+[~x](bitwise-and-shift-operators.md#bitwise-complement-operator-) – bitwise complement.
 
 [++x](arithmetic-operators.md#increment-operator-) – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
 
@@ -84,6 +84,10 @@ These operators have higher precedence than the next section and lower precedenc
 [&x](and-operator.md) – address of.
 
 [*x](multiplication-operator.md) – dereferencing.
+
+[true operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
+
+[false operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
 
 ## Multiplicative operators
 
@@ -107,9 +111,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x <\<  y](left-shift-operator.md) – shift bits left and fill with zero on the right.
+[x <\<  y](bitwise-and-shift-operators.md#left-shift-operator-) – shift bits left and fill with zero on the right.
 
-[x >> y](right-shift-operator.md) – shift bits right. If the left operand is `int` or `long`, then left bits are filled with the sign bit. If the left operand is `uint` or `ulong`, then left bits are filled with zero.
+[x >> y](bitwise-and-shift-operators.md#right-shift-operator-) – shift bits right. If the left operand is `int` or `long`, then left bits are filled with the sign bit. If the left operand is `uint` or `ulong`, then left bits are filled with zero.
 
 ## Relational and type-testing operators
 
@@ -139,31 +143,31 @@ These operators have higher precedence than the next section and lower precedenc
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x & y](and-operator.md) – logical or bitwise AND. You can generally use this with integer types and `enum` types.
+`x & y` – [logical AND](boolean-logical-operators.md#logical-and-operator-) for the `bool` operands or [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) for the operands of the integral types.
 
 ## Logical XOR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x ^ y](xor-operator.md) – logical or bitwise XOR. You can generally use this with integer types and `enum` types.
+`x ^ y` – [logical XOR](boolean-logical-operators.md#logical-exclusive-or-operator-) for the `bool` operands or [bitwise logical XOR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) for the operands of the integral types.
 
 ## Logical OR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x &#124; y](or-operator.md) – logical or bitwise OR. You can generally use this with integer types and `enum` types.
+`x | y` – [logical OR](boolean-logical-operators.md#logical-or-operator-) for the `bool` operands or [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) for the operands of the integral types.
 
 ## Conditional AND operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x && y](conditional-and-operator.md) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
+[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
 
 ## Conditional OR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x &#124;&#124; y](conditional-or-operator.md) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
+[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
 
 ## Null-coalescing operator
 
@@ -185,23 +189,23 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x += y](addition-assignment-operator.md) – increment. Add the value of `y` to the value of `x`, store the result in `x`, and return the new value. If `x` designates an `event`, then `y` must be an appropriate function that C# adds as an event handler.
 
-[x -= y](subtraction-assignment-operator.md) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler
+[x -= y](subtraction-assignment-operator.md) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler.
 
-[x *= y](multiplication-assignment-operator.md) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
+[x *= y](arithmetic-operators.md#compound-assignment) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
 
 [x /= y](arithmetic-operators.md#compound-assignment) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.
 
 [x %= y](arithmetic-operators.md#compound-assignment) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.
 
-[x &= y](and-assignment-operator.md) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.
+[x &= y](boolean-logical-operators.md#compound-assignment) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.
 
-[x &#124;= y](or-assignment-operator.md) – OR assignment. OR the value of `y` with the value of `x`, store the result in `x`, and return the new value.
+[x &#124;= y](boolean-logical-operators.md#compound-assignment) – OR assignment. OR the value of `y` with the value of `x`, store the result in `x`, and return the new value.
 
-[x ^= y](xor-assignment-operator.md) – XOR assignment. XOR the value of `y` with the value of `x`, store the result in `x`, and return the new value.
+[x ^= y](boolean-logical-operators.md#compound-assignment) – XOR assignment. XOR the value of `y` with the value of `x`, store the result in `x`, and return the new value.
 
-[x <<= y](left-shift-assignment-operator.md) – left-shift assignment. Shift the value of `x` left by `y` places, store the result in `x`, and return the new value.
+[x <<= y](bitwise-and-shift-operators.md#compound-assignment) – left-shift assignment. Shift the value of `x` left by `y` places, store the result in `x`, and return the new value.
 
-[x >>= y](right-shift-assignment-operator.md) – right-shift assignment. Shift the value of `x` right by `y` places, store the result in `x`, and return the new value.
+[x >>= y](bitwise-and-shift-operators.md#compound-assignment) – right-shift assignment. Shift the value of `x` right by `y` places, store the result in `x`, and return the new value.
 
 [=>](lambda-operator.md) – lambda declaration.
 
@@ -210,5 +214,5 @@ These operators have higher precedence than the next section and lower precedenc
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C#](../../index.md)
-- [Overloadable Operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
+- [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
 - [C# Keywords](../keywords/index.md)

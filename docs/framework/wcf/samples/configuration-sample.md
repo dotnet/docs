@@ -255,11 +255,10 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
 #### To use this sample  
   
-1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1. This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2.  Build the solution.  
+2. Build the solution.  
   
-3.  Run the service executable from the build directory.  
+3. Run the service executable from the build directory.  
   
-4.  Run the client executable. Note that the client is able to locate the service.  
-  
+4. Run the client executable. Note that the client is able to locate the service.  

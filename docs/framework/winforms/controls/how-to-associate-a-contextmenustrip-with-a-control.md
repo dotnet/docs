@@ -16,11 +16,11 @@ After creating your controls and shortcut menus, use the following procedures to
   
 ### To associate a ContextMenuStrip with a Windows Form  
   
-1.  Set the <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> property to the name of the associated <xref:System.Windows.Forms.ContextMenuStrip>.  
+1. Set the <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> property to the name of the associated <xref:System.Windows.Forms.ContextMenuStrip>.  
   
 ### To associate a ContextMenuStrip with a ToolStrip control  
   
-1.  Set the control's <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> property to the name of the associated <xref:System.Windows.Forms.ContextMenuStrip>.  
+1. Set the control's <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> property to the name of the associated <xref:System.Windows.Forms.ContextMenuStrip>.  
   
 ## Example  
  The following code example creates a Windows Form and a <xref:System.Windows.Forms.ToolStrip>, and associates a different <xref:System.Windows.Forms.ContextMenuStrip> control with each of them.  
@@ -36,6 +36,7 @@ After creating your controls and shortcut menus, use the following procedures to
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ContextMenuStrip>
 - <xref:System.Windows.Forms.Control.ContextMenuStrip%2A>
 - <xref:System.Windows.Forms.ToolStrip>

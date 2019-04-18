@@ -15,9 +15,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
 ---
 # Attached Events Overview
 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] defines a language component and type of event called an *attached event*. The concept of an attached event enables you to add a handler for a particular event to an arbitrary element rather than to an element that actually defines or inherits the event. In this case, neither the object potentially raising the event nor the destination handling instance defines or otherwise "owns" the event.  
-  
- 
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you have read [Routed Events Overview](routed-events-overview.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).  
@@ -60,9 +58,9 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
   
  The pattern is as follows:  
   
--   A method **Add*EventName*Handler** with two parameters. The first parameter must identify the event, and the identified event must match names with the ***EventName*** in the method name. The second parameter is the handler to add. The method must be `public` and `static`, with no return value.  
+-   A method **Add*EventName*Handler** with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
   
--   A method **Remove*EventName*Handler** with two parameters. The first parameter must identify the event, and the identified event must match names with the ***EventName*** in the method name. The second parameter is the handler to remove. The method must be `public` and `static`, with no return value.  
+-   A method **Remove*EventName*Handler** with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
   
  The **Add*EventName*Handler** accessor method facilitates the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processing when attached event handler attributes are declared on an element. The **Add*EventName*Handler** and **Remove*EventName*Handler** methods also enable code access to the event handler store for the attached event.  
   
@@ -86,6 +84,7 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
  However, if you are defining a custom attached event based on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] model of basing attached events on <xref:System.Windows.RoutedEvent>, you can use <xref:System.Windows.UIElement.RaiseEvent%2A> to raise an attached event from any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. Raising a routed event (attached or not) requires that you declare a particular element in the element tree as the event source; that source is reported as the <xref:System.Windows.UIElement.RaiseEvent%2A> caller. Determining which element is reported as the source in the tree is your service's responsibility  
   
 ## See also
+
 - [Routed Events Overview](routed-events-overview.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)

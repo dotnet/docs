@@ -56,6 +56,7 @@ This topic describes how to implement a message loop for interoperation with [!I
  A message that goes to the keyboard sink might not be sent to the HWND if you added hooks for that message by using the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method. The message might have been handled at the message pump level directly and not submitted to the `DispatchMessage` function.  
   
 ## See also
+
 - <xref:System.Windows.Interop.ComponentDispatcher>
 - <xref:System.Windows.Interop.IKeyboardInputSink>
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)

@@ -18,11 +18,11 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To draw a control on a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
+1. Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
   
-2.  In the **Toolbox**, click the control you want to add to your form.  
+2. In the **Toolbox**, click the control you want to add to your form.  
   
-3.  On the form, click where you want the upper-left corner of the control to be located, and drag to where you want the lower-right corner of the control to be located.  
+3. On the form, click where you want the upper-left corner of the control to be located, and drag to where you want the lower-right corner of the control to be located.  
   
      The control is added to the form with the specified location and size.  
   
@@ -31,9 +31,9 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To drag a control to a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
+1. Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
   
-2.  In the **Toolbox**, click the control you want and drag it to your form.  
+2. In the **Toolbox**, click the control you want and drag it to your form.  
   
      The control is added to the form at the specified location in its default size.  
   
@@ -47,7 +47,7 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To add a control to a form programmatically  
   
-1.  In the method that handles the button's `Click` event within your form's class, insert code similar to the following to add a reference to your control variable, set the control's `Location`, and add the control.  
+1. In the method that handles the button's `Click` event within your form's class, insert code similar to the following to add a reference to your control variable, set the control's `Location`, and add the control.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -84,6 +84,7 @@ Most forms are designed by adding controls to the surface of the form to define 
     >  You might expose your local computer to a security risk through the network by referencing a malicious `UserControl`. This would only be a concern in the case of a malicious person creating a damaging custom control, followed by you mistakenly adding it to your project.  
   
 ## See also
+
 - [Windows Forms Controls](index.md)
 - [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [How to: Resize Controls on Windows Forms](how-to-resize-controls-on-windows-forms.md)

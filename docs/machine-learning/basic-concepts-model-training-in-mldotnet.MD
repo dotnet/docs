@@ -4,7 +4,7 @@ description: This article explains the basic concepts covering *model training* 
 ms.date: 03/05/2019
 ms.topic: overview
 ms.custom: mvc
-#Customer intent: As a developer, I want to learn the basic ML.NET concepts related to model training so that I can understand how to leverage machine learning in my applications.
+#Customer intent: As a developer, I want to learn basic ML.NET concepts related to model training so that I can understand how to leverage machine learning in my applications.
 ---
 # Basic concepts for model training in ML.NET
 
@@ -32,7 +32,7 @@ This document covers the following concepts related to model training in ML.NET:
 - [*Prediction function*](#prediction-function) represented as a `PredictionEngine<TSrc, TDst>` class.
   - The prediction function can be seen as a machine that applies a transformer to one row, such as at prediction time.
 
-## Data
+## Data 
 
 In ML.NET, data is similar to a SQL view: It's a lazily evaluated, cursorable, heterogenous, schematized dataset.
 

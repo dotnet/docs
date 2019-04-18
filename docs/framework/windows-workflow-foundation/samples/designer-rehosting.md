@@ -108,11 +108,11 @@ protected override void OnInitialized(EventArgs e)
   
 #### Using the sample  
   
-1.  Open the DesignerRehosting.sln solution in Visual Studio 2010.  
+1. Open the DesignerRehosting.sln solution in Visual Studio 2010.  
   
-2.  Press F5 to compile and run the application.  
+2. Press F5 to compile and run the application.  
   
-3.  A WPF application starts with a rehosted designer.  
+3. A WPF application starts with a rehosted designer.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

@@ -9,9 +9,9 @@ ms.author: "mairaw"
 # Removing Attributes from an Element Node in the DOM
 There are many ways to remove attributes. One technique is to remove them from the attribute collection. To do this, the following steps are performed:  
   
-1.  Get the attribute collection from the element using `XmlAttributeCollection attrs = elem.Attributes;`.  
+1. Get the attribute collection from the element using `XmlAttributeCollection attrs = elem.Attributes;`.  
   
-2.  Remove the attribute from the attribute collection using one of three methods:  
+2. Remove the attribute from the attribute collection using one of three methods:  
   
     -   Use <xref:System.Xml.XmlAttributeCollection.Remove%2A> to remove a specific attribute.  
   

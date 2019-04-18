@@ -23,5 +23,6 @@ Achieving optimal application performance requires forethought in application de
  <xref:System.Diagnostics.PresentationTraceSources>  
   
 ## See also
+
 - [Layout](layout.md)
 - [Animation Tips and Tricks](../graphics-multimedia/animation-tips-and-tricks.md)

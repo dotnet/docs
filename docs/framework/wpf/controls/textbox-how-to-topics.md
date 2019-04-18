@@ -36,5 +36,6 @@ This section provides examples that demonstrate how to accomplish common tasks u
  <xref:System.Windows.Controls.PasswordBox>  
   
 ## See also
+
 - [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
 - [TextBox Styles and Templates](textbox-styles-and-templates.md)

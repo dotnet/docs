@@ -38,6 +38,7 @@ This example shows how to create a <xref:System.Windows.Controls.StackPanel>.
 ```  
   
 ## See also
+
 - <xref:System.Windows.Controls.StackPanel>
 - [Panels Overview](panels-overview.md)
 - [How-to Topics](stackpanel-how-to-topics.md)

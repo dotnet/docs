@@ -272,7 +272,7 @@ ms.author: "ronpet"
 <a name="OOMIsManaged"></a>   
 ##### To determine whether the out-of-memory exception is managed  
   
-1.  In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the print exception (**pe**) command:  
+1. In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the print exception (**pe**) command:  
   
      **!pe**  
   
@@ -286,7 +286,7 @@ ms.author: "ronpet"
     StackTrace (generated):  
     ```  
   
-2.  If the output does not specify an exception, you have to determine which thread the out-of-memory exception is from. Type the following command in the debugger to show all the threads with their call stacks:  
+2. If the output does not specify an exception, you have to determine which thread the out-of-memory exception is from. Type the following command in the debugger to show all the threads with their call stacks:  
   
      **~\*kb**  
   
@@ -296,7 +296,7 @@ ms.author: "ronpet"
     28adfb44 7923918f 5b61f2b4 00000000 5b61f2b4 mscorwks!RaiseTheException+0xa0   
     ```  
   
-3.  You can use the following command to dump nested exceptions.  
+3. You can use the following command to dump nested exceptions.  
   
      **!pe -nested**  
   
@@ -338,9 +338,9 @@ ms.author: "ronpet"
 <a name="Physical"></a>   
 ##### To determine whether there is enough physical memory  
   
-1.  Start Windows Task Manager.  
+1. Start Windows Task Manager.  
   
-2.  On the **Performance** tab, look at the committed value. (In Windows 7, look at **Commit (KB)** in the **System group**.)  
+2. On the **Performance** tab, look at the committed value. (In Windows 7, look at **Commit (KB)** in the **System group**.)  
   
      If the **Total** is close to the **Limit**, you are running low on physical memory.  
   
@@ -488,13 +488,13 @@ ms.author: "ronpet"
 <a name="Finalize"></a>   
 ##### To determine whether there are objects waiting to be finalized  
   
-1.  In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
+1. In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
   
      **!finalizequeue**  
   
      Look at the number of objects that are ready for finalization. If the number is high, you must examine why these finalizers cannot progress at all or cannot progress fast enough.  
   
-2.  To get an output of threads, type the following command:  
+2. To get an output of threads, type the following command:  
   
      **threads -special**  
   

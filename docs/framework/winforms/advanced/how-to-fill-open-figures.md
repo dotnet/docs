@@ -26,5 +26,6 @@ You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> ob
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - <xref:System.Drawing.Drawing2D.GraphicsPath>
 - [Graphics Paths in GDI+](graphics-paths-in-gdi.md)

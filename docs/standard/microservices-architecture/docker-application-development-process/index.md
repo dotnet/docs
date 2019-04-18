@@ -26,10 +26,10 @@ By installing [Docker Community Edition (CE)](https://www.docker.com/community-e
 ### Additional resources
 
 - **Visual Studio**. Official site. \
-  [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/)
+  [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 
 - **Visual Studio Code**. Official site. \
-  [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+  <https://code.visualstudio.com/download>
 
 - **Docker Community Edition (CE) for Mac and Windows** \
   [https://www.docker.com/community-editions](https://www.docker.com/community-edition)

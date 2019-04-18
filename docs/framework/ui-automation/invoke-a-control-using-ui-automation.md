@@ -33,4 +33,5 @@ ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
 [!code-vb[InvokePatternApp#1102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1102)]  
   
 ## See also
+
 - [InvokePattern, ExpandCollapsePattern, and TogglePattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)

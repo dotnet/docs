@@ -43,21 +43,21 @@ A lookup table is a table of data that has a column that displays data from reco
   
 ### To create the user interface  
   
-1.  From the **ToolBox**, drag a <xref:System.Windows.Forms.ComboBox> control onto the form.  
+1. From the **ToolBox**, drag a <xref:System.Windows.Forms.ComboBox> control onto the form.  
   
      This control will display the column from parent table.  
   
-2.  Drag other controls to display details from the child table. The format of the data in the table should determine which controls you choose. For more information, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
+2. Drag other controls to display details from the child table. The format of the data in the table should determine which controls you choose. For more information, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
   
-3.  Drag a <xref:System.Windows.Forms.BindingNavigator> control onto the form; this will allow you to navigate the data in the child table.  
+3. Drag a <xref:System.Windows.Forms.BindingNavigator> control onto the form; this will allow you to navigate the data in the child table.  
   
 ### To connect to the data and bind it to controls  
   
-1.  Select the <xref:System.Windows.Forms.ComboBox> and click the Smart Task glyph to display the Smart Task dialog box.  
+1. Select the <xref:System.Windows.Forms.ComboBox> and click the Smart Task glyph to display the Smart Task dialog box.  
   
-2.  Select **Use data bound items**.  
+2. Select **Use data bound items**.  
   
-3.  Click the arrow next to the **Data Source** drop-down box. If a data source has previously been configured for the project or form, it will appear; otherwise, complete the following steps (This example uses the Customers and Orders tables of the Northwind sample database and refers to them in parentheses).  
+3. Click the arrow next to the **Data Source** drop-down box. If a data source has previously been configured for the project or form, it will appear; otherwise, complete the following steps (This example uses the Customers and Orders tables of the Northwind sample database and refers to them in parentheses).  
   
     1.  Click **Add Project Data Source** to connect to data and create a data source.  
   
@@ -75,17 +75,18 @@ A lookup table is a table of data that has a column that displays data from reco
   
     8.  Click **Finish**.  
   
-4.  In the **Display Member** drop-down box, select the column name (for example, ContactName) to be displayed in the combo box.  
+4. In the **Display Member** drop-down box, select the column name (for example, ContactName) to be displayed in the combo box.  
   
-5.  In the **Value Member** drop-down box, select the column (for example, CustomerID) to perform the lookup operation in the child table.  
+5. In the **Value Member** drop-down box, select the column (for example, CustomerID) to perform the lookup operation in the child table.  
   
-6.  In the **Selected Value** drop-down box, navigate to **Project Data Sources** and the dataset you just created that contains the parent and child tables. Select the same property of the child table that is the Value Member of the parent table (for example, Orders.CustomerID). The appropriate <xref:System.Windows.Forms.BindingSource> , data set, and table adapter components will be created and added to the form.  
+6. In the **Selected Value** drop-down box, navigate to **Project Data Sources** and the dataset you just created that contains the parent and child tables. Select the same property of the child table that is the Value Member of the parent table (for example, Orders.CustomerID). The appropriate <xref:System.Windows.Forms.BindingSource> , data set, and table adapter components will be created and added to the form.  
   
-7.  Bind the <xref:System.Windows.Forms.BindingNavigator> control to the <xref:System.Windows.Forms.BindingSource> of the child table (for example, `OrdersBindingSource`).  
+7. Bind the <xref:System.Windows.Forms.BindingNavigator> control to the <xref:System.Windows.Forms.BindingSource> of the child table (for example, `OrdersBindingSource`).  
   
-8.  Bind the controls other than the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.BindingNavigator> control to the details fields from the child table's <xref:System.Windows.Forms.BindingSource> (for example, `OrdersBindingSource`) that you want to display.  
+8. Bind the controls other than the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.BindingNavigator> control to the details fields from the child table's <xref:System.Windows.Forms.BindingSource> (for example, `OrdersBindingSource`) that you want to display.  
   
 ## See also
+
 - <xref:System.Windows.Forms.BindingSource>
 - [BindingSource Component](bindingsource-component.md)
 - [ComboBox Control](combobox-control-windows-forms.md)

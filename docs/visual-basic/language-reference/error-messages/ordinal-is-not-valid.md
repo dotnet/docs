@@ -16,11 +16,11 @@ Your call to a dynamic-link library (DLL) indicated to use a number instead of a
   
 ## To correct this error  
   
-1.  Make sure the expression represents a valid number, or call the procedure by name.  
+1. Make sure the expression represents a valid number, or call the procedure by name.  
   
-2.  Make sure `#num` identifies a valid function in the DLL.  
+2. Make sure `#num` identifies a valid function in the DLL.  
   
-3.  Isolate the procedure call causing the problem by commenting out the code. Write a `Declare` statement for the procedure, and report the problem to the type library vendor.  
+3. Isolate the procedure call causing the problem by commenting out the code. Write a `Declare` statement for the procedure, and report the problem to the type library vendor.  
   
 ## See also
 

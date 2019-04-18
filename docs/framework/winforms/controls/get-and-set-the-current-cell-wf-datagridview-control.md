@@ -42,6 +42,7 @@ Interaction with the <xref:System.Windows.Forms.DataGridView> often requires tha
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.CurrentCell%2A?displayProperty=nameWithType>
 - [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](basic-column-row-and-cell-features-wf-datagridview-control.md)

@@ -29,4 +29,5 @@ The following example shows how to control playback of media using a <xref:Syste
  [!code-vb[MediaGallery_snip#CodeBehindMediaElementExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/MediaElementExample.xaml.vb#codebehindmediaelementexamplewholepage)]  
   
 ## See also
+
 - [Control a MediaElement by Using a Storyboard](how-to-control-a-mediaelement-by-using-a-storyboard.md)

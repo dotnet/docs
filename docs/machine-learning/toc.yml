@@ -1,0 +1,82 @@
+- name: ML.NET Guide
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+  - name: What is ML.NET?
+    href: what-is-mldotnet.md
+  - name: Model training concepts
+    href: basic-concepts-model-training-in-mldotnet.md
+- name: Tutorials
+  href: 
+  items:
+  - name: Overview
+    href: tutorials/index.md
+  - name: Sentiment analysis (binary classification)
+    href: tutorials/sentiment-analysis.md
+  - name: Issue classification (multiclass classification)
+    href: tutorials/github-issue-classification.md
+  - name: Price prediction (regression)
+    href: tutorials/taxi-fare.md
+  - name: Iris flowers (clustering)
+    href: tutorials/iris-clustering.md
+  - name: Movie recommendation (recommendation)
+    href: tutorials/movie-recommmendation.md
+  - name: Image Classification (transfer learning)
+    href: tutorials/image-classification.md
+- name: How-to guides
+  items:
+  - name: Prepare data
+    href: how-to-guides/index.md
+    items:
+    - name: Apply categorical feature engineering
+      href: how-to-guides/train-model-categorical-ml-net.md
+    - name: Apply textual feature engineering
+      href: how-to-guides/train-model-textual-ml-net.md
+    - name: Load data with many columns
+      href: how-to-guides/load-data-from-mult-column-csv-ml-net.md
+    - name: Load data from multiple files
+      href: how-to-guides/load-data-from-multiple-files-ml-net.md
+    - name: Load data from text file
+      href: how-to-guides/load-data-from-text-file-ml-net.MD
+    - name: Preprocess data with normalizers
+      href: how-to-guides/normalizers-preprocess-data-ml-net.md
+  - name: Train, evaluate, and explain the model
+    items:
+    - name: Train model with real-time data sources
+      href: how-to-guides/load-non-file-training-data-ml-net.md
+    - name: Train model using cross-validation
+      href: how-to-guides/train-cross-validation-ml-net.md
+    - name: Inspect intermediate pipeline data values
+      href: how-to-guides/inspect-intermediate-data-ml-net.md
+    - name: Train regression model
+      href: how-to-guides/train-regression-model-ml-net.md
+    - name: Determine model feature importance with PFI
+      href: how-to-guides/determine-global-feature-importance-in-model.md
+  - name: Use the trained model
+    items:
+    - name: One prediction at a time with PredictionEngine
+      href: how-to-guides/single-predict-model-ml-net.md
+    - name: Operationalize a trained model
+      href: how-to-guides/consuming-model-ml-net.md
+    - name: Serve Model Azure Functions
+      href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
+    - name: Serve Model in Web API
+      href: how-to-guides/serve-model-web-api-ml-net.md
+    - name: Infer.NET
+      items:
+    - name: Probabilistic programming with Infer.NET
+      href: how-to-guides/matchup-app-infer-net.md
+- name: Reference
+  items:
+  - name: API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+- name: Resources
+  href: resources/index.md
+  items:
+  - name: Machine learning glossary
+    href: resources/glossary.md
+  - name: Machine learning tasks
+    href: resources/tasks.md
+  - name: Data transforms
+    href: resources/transforms.md

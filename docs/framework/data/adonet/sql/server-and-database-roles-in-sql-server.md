@@ -56,6 +56,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
 |[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine)|Describes principals and contains links to topics that describe server and database roles.|  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
 - [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)

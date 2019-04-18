@@ -51,4 +51,5 @@ enum tagNOTIFY_FILTER
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)

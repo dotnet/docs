@@ -41,9 +41,9 @@ The `&` operator evaluates both operands even if the first operand evaluates to 
 
 [!code-csharp-interactive[bool logical AND](~/samples/snippets/csharp/language-reference/operators/AndOperatorExamples.cs#BooleanOperands)]
 
-The [conditional AND operator](conditional-and-operator.md) `&&` also computes the logical AND of its operands, but evaluates the second operand only if the first operand evaluates to `true`.
+The [conditional AND operator](boolean-logical-operators.md#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the second operand if the first operand evaluates to `false`.
 
-For nullable bool operands, the behavior of the `&` operator is consistent with SQL's three-valued logic. For more information, see the [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+For nullable bool operands, the behavior of the `&` operator is consistent with SQL's three-valued logic. For more information, see the [Nullable Boolean logical operators](boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](boolean-logical-operators.md) article.
 
 ## Operator overloadability
 
@@ -58,8 +58,6 @@ For more information, see [The address-of operator](~/_csharplang/spec/unsafe-co
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
+- [Boolean logical operators](boolean-logical-operators.md)
+- [Bitwise and shift operators](bitwise-and-shift-operators.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [| operator](or-operator.md)
-- [^ operator](xor-operator.md)
-- [~ operator](bitwise-complement-operator.md)
-- [&& operator](conditional-and-operator.md)

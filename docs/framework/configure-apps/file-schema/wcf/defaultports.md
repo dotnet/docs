@@ -43,4 +43,5 @@ A collection of default ports listing the default communications endpoints that 
 |[\<useRequestHeadersForMetadataAddress>](../../../../../docs/framework/configure-apps/file-schema/wcf/userequestheadersformetadataaddress.md)|A list of default ports.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.DefaultPortElementCollection>

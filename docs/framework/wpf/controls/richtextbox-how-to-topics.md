@@ -18,6 +18,7 @@ This section provides examples that demonstrate how to accomplish common tasks u
  [Position a Custom Context Menu in a RichTextBox](how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
   
 ## See also
+
 - <xref:System.Windows.Controls.TextBox>
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 - [Flow Document Overview](../advanced/flow-document-overview.md)

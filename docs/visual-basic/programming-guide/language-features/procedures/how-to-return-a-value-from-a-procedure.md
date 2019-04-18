@@ -12,11 +12,11 @@ A `Function` procedure returns a value to the calling code either by executing a
   
 ### To return a value using the Return statement  
   
-1.  Put a `Return` statement at the point where the procedure's task is completed.  
+1. Put a `Return` statement at the point where the procedure's task is completed.  
   
-2.  Follow the `Return` keyword with an expression that yields the value you want to return to the calling code.  
+2. Follow the `Return` keyword with an expression that yields the value you want to return to the calling code.  
   
-3.  You can have more than one `Return` statement in the same procedure.  
+3. You can have more than one `Return` statement in the same procedure.  
   
      The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, and returns it to the calling code.  
   
@@ -28,13 +28,13 @@ A `Function` procedure returns a value to the calling code either by executing a
   
 ### To return a value using Exit Function or End Function  
   
-1.  In at least one place in the `Function` procedure, assign a value to the procedure's name.  
+1. In at least one place in the `Function` procedure, assign a value to the procedure's name.  
   
-2.  When you execute an `Exit Function` or `End Function` statement, Visual Basic returns the value most recently assigned to the procedure's name.  
+2. When you execute an `Exit Function` or `End Function` statement, Visual Basic returns the value most recently assigned to the procedure's name.  
   
-3.  You can have more than one `Exit Function` statement in the same procedure, and you can mix `Return` and `Exit Function` statements in the same procedure.  
+3. You can have more than one `Exit Function` statement in the same procedure, and you can mix `Return` and `Exit Function` statements in the same procedure.  
   
-4.  You can have only one `End Function` statement in a `Function` procedure.  
+4. You can have only one `End Function` statement in a `Function` procedure.  
   
      For more information and an example, see "Return Value" in [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md).  
   

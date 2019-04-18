@@ -19,6 +19,7 @@ ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
  [How-to Topics](geometries-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Brushes>
 - <xref:System.Windows.Shapes.Shape>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)

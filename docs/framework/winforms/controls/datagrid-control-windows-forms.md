@@ -72,5 +72,6 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
  Provides links to topics on data binding in Windows Forms.  
   
 ## See also
+
 - [DataGridView Control](datagridview-control-windows-forms.md)
 - [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)

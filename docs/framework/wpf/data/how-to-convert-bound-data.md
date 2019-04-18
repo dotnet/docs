@@ -32,6 +32,7 @@ This example shows how to apply conversion to data that is used in bindings.
  The style resources referenced in the above example are defined in a resource section not shown in this topic.  
   
 ## See also
+
 - [Implement Binding Validation](how-to-implement-binding-validation.md)
 - [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

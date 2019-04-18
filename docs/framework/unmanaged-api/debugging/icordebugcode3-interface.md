@@ -42,7 +42,5 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
   
 ## See also
 
-
-
 - [ICorDebugILFrame3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

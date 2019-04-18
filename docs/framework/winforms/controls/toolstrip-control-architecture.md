@@ -115,19 +115,19 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 #### ToolStripContainer Support of Inheritance  
  The <xref:System.Windows.Forms.ToolStripContainer> control supports limited inherited scenarios, similar to the following example:  
   
-1.  Create a new Windows Forms application.  
+1. Create a new Windows Forms application.  
   
-2.  Add a <xref:System.Windows.Forms.ToolStripContainer> to the form.  
+2. Add a <xref:System.Windows.Forms.ToolStripContainer> to the form.  
   
-3.  Set the access modifier of the <xref:System.Windows.Forms.ToolStripContainer> to `public` or `protected`.  
+3. Set the access modifier of the <xref:System.Windows.Forms.ToolStripContainer> to `public` or `protected`.  
   
-4.  Add any combination of <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.ContextMenuStrip> controls to the <xref:System.Windows.Forms.ToolStripPanel> regions of the <xref:System.Windows.Forms.ToolStripContainer>.  
+4. Add any combination of <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.ContextMenuStrip> controls to the <xref:System.Windows.Forms.ToolStripPanel> regions of the <xref:System.Windows.Forms.ToolStripContainer>.  
   
-5.  Build the project.  
+5. Build the project.  
   
-6.  Add a form that inherits from the first form.  
+6. Add a form that inherits from the first form.  
   
-7.  Select the inherited <xref:System.Windows.Forms.ToolStripContainer> on the form.  
+7. Select the inherited <xref:System.Windows.Forms.ToolStripContainer> on the form.  
   
 #### Inherited Behavior of Child Controls  
  After you complete the previous steps, the following inherited behavior occurs:  
@@ -371,6 +371,7 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 -   <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
   
 ## See also
+
 - [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip Technology Summary](toolstrip-technology-summary.md)
 - [ToolStrip Control](toolstrip-control-windows-forms.md)

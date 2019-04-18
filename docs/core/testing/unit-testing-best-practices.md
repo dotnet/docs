@@ -13,7 +13,7 @@ There are numerous benefits to writing unit tests; they help with regression, pr
 
 In this guide, you'll learn some best practices when writing unit tests to keep your tests resilient and easy to understand.
 
-By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](http://osherove.com/)
+By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https://osherove.com/)
 
 ## Why unit test?
 
@@ -245,17 +245,17 @@ Consider the following case
 ```csharp
 public string ParseLogLine(string input)
 {
-    var sanitizedInput = trimInput(input);
+    var sanitizedInput = TrimInput(input);
     return sanitizedInput;
 }
 
-private string trimInput(string input)
+private string TrimInput(string input)
 {
     return input.Trim();
 }
 ```
 
-Your first reaction may be to start writing a test for `trimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `trimInput` useless. 
+Your first reaction may be to start writing a test for `TrimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `TrimInput` useless. 
 
 The real test should be done against the public facing method `ParseLogLine` because that is what you should ultimately care about. 
 

@@ -11,8 +11,7 @@ ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 ---
 # Geometry Overview
 This overview describes how to use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Geometry> classes to describe shapes. This topic also contrasts the differences between <xref:System.Windows.Media.Geometry> objects and <xref:System.Windows.Shapes.Shape> elements.  
-  
-  
+
 <a name="wcpsdk_graphics_geometry_introduction"></a>   
 ## What Is a Geometry?  
  The <xref:System.Windows.Media.Geometry> class and the classes which derive from it, such as <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.PathGeometry>, and <xref:System.Windows.Media.CombinedGeometry>, enable you to describe the geometry of a 2-D shape. These geometric descriptions have many uses, such defining a shape to paint to the screen or defining hit-test and clip regions. You can even use a geometry to define an animation path.  
@@ -211,6 +210,7 @@ A PathGeometry with multiple figures
  See the <xref:System.Windows.Media.Geometry> class for a complete listing of its methods.  
   
 ## See also
+
 - <xref:System.Windows.Media.Geometry>
 - <xref:System.Windows.Media.PathGeometry>
 - <xref:System.Windows.Shapes.Path>

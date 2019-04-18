@@ -48,6 +48,7 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>

@@ -88,7 +88,9 @@ Using rsa = RSA.Create()
    ' Other code to execute using the rsa instance.
 End Using
 ```
+
 with code like this:
+
 ```csharp
 // Starting with .NET Framework 4.7.2
 using (RSA rsa = RSA.Create(rsaParameters))
@@ -96,6 +98,7 @@ using (RSA rsa = RSA.Create(rsaParameters))
    // Other code to execute using the rsa instance.
 }
 ```
+
 ```vb
 ' Starting with .NET Framework 4.7.2
 Using rsa = RSA.Create(rsaParameters)
@@ -261,6 +264,7 @@ c.SameSite = SameSiteMode.Lax;
 Dim c As New HttpCookie("secureCookie", "same origin")
 c.SameSite = SameSiteMode.Lax
 ```
+
 You can also configure SameSite cookies at the application level by modifying the web.config file:
 
 ```xml
@@ -268,6 +272,7 @@ You can also configure SameSite cookies at the application level by modifying th
    <httpCookies sameSite="Strict" />
 </system.web>
 ```
+
 You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xref:System.Web.SessionState> cookies by modifying the web config file:
 
 ```xml
@@ -652,13 +657,13 @@ In the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], ASP.NET includes 
 
 Data annotation validators enable you to perform validation by adding one or more attributes to a class property. The attribute's <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> element defines the text of the error message if validation fails. Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], ASP.NET makes it easy to localize error messages. Error messages will be localized if:
 
-1.  The <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> is provided in the validation attribute.
+1. The <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> is provided in the validation attribute.
 
-2.  The resource file is stored in the App_LocalResources folder.
+2. The resource file is stored in the App_LocalResources folder.
 
-3.  The name of the localized resources file has the form `DataAnnotation.Localization.{`*name*`}.resx`, where *name* is a culture name in the format *languageCode*`-`*country/regionCode* or *languageCode*.
+3. The name of the localized resources file has the form `DataAnnotation.Localization.{`*name*`}.resx`, where *name* is a culture name in the format *languageCode*`-`*country/regionCode* or *languageCode*.
 
-4.  The key name of the resource is the string assigned to the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> attribute,  and its value is the localized error message.
+4. The key name of the resource is the string assigned to the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=nameWithType> attribute,  and its value is the localized error message.
 
 For example, the following data annotation attribute defines the default culture's error message for an invalid rating.
 

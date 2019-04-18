@@ -72,8 +72,7 @@ An operator procedure is a series of Visual Basic statements that define the beh
  The following example shows a typical call to the `+` operator defined on `veryLong`.  
   
  [!code-vb[VbVbcnProcedures#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#24)]  
-  
-  
+
 ## See also
 
 - [Procedures](./index.md)

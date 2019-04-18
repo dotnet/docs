@@ -16,19 +16,19 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
 ### To install the WCF non-HTTP activation components  
   
-1.  Click the **Start** button, and then click **Control Panel**.  
+1. Click the **Start** button, and then click **Control Panel**.  
   
-2.  Click **Programs**, and then click **Programs and Features**.  
+2. Click **Programs**, and then click **Programs and Features**.  
   
-3.  On the **Tasks** menu, click **Turn Windows features on or off**.  
+3. On the **Tasks** menu, click **Turn Windows features on or off**.  
   
-4.  Find the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] node, select and then expand it.  
+4. Find the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] node, select and then expand it.  
   
-5.  Select the **WCF Non-Http Activation Components** box and save the setting.  
+5. Select the **WCF Non-Http Activation Components** box and save the setting.  
   
 ### To configure the WAS to support TCP activation  
   
-1.  To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. In an administrator-level Command Prompt window, run the following command.  
+1. To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. In an administrator-level Command Prompt window, run the following command.  
   
     ```  
     %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  
@@ -37,7 +37,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
     > [!NOTE]
     >  This command is a single line of text. This command adds a net.tcp site binding to the default Web site listening on TCP port 808 with any host name.  
   
-2.  Although all applications within a site share a common net.tcp binding, each application can enable net.tcp support individually. To enable net.tcp for the application, run the following command from an administrator-level command prompt.  
+2. Although all applications within a site share a common net.tcp binding, each application can enable net.tcp support individually. To enable net.tcp for the application, run the following command from an administrator-level command prompt.  
   
     ```  
     %windir%\system32\inetsrv\appcmd.exe set app   
@@ -73,7 +73,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
 ### To remove net.tcp from the list of enabled protocols  
   
-1.  To remove net.tcp from the list of enabled protocols, run the following command in an administrator-level Command Prompt window.  
+1. To remove net.tcp from the list of enabled protocols, run the following command in an administrator-level Command Prompt window.  
   
     ```  
     %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples<WCF Application>" " /enabledProtocols:http  
@@ -84,7 +84,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
 ### To remove the net.tcp site binding  
   
-1.  To remove the net.tcp site binding run the following command in an administrator-level Command Prompt window.  
+1. To remove the net.tcp site binding run the following command in an administrator-level Command Prompt window.  
   
     ```  
     %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
@@ -95,6 +95,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
     >  This command is a single line of text.  
   
 ## See also
+
 - [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
 - [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)
 - [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)

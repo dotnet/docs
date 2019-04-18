@@ -1,6 +1,6 @@
 ---
 title: "Minimum values of the Release DWORD for each .NET Framework version"
-ms.date: "04/02/2019"
+ms.date: "04/18/2019"
 ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"
@@ -24,3 +24,5 @@ The following table lists the minimum value of the **Release** entry for each .N
 |.NET Framework 4.7|460798|
 |.NET Framework 4.7.1|461308|
 |.NET Framework 4.7.2|461808|
+|.NET Framework 4.8|528049|
+

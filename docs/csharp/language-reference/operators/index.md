@@ -85,6 +85,10 @@ These operators have higher precedence than the next section and lower precedenc
 
 [*x](multiplication-operator.md) – dereferencing.
 
+[true operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
+
+[false operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
+
 ## Multiplicative operators
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
@@ -152,14 +156,6 @@ This operator has higher precedence than the next section and lower precedence t
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
 `x | y` – [logical OR](boolean-logical-operators.md#logical-or-operator-) for the `bool` operands or [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) for the operands of the integral types.
-
-## True operator
-
-The [true](../keywords/true-false-operators.md) operator returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true. 
-
-## False operator
-
-The [false](../keywords/true-false-operators.md) operator returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false. 
 
 ## Conditional AND operator
 

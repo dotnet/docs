@@ -8,9 +8,10 @@ metadata:
   author: briacht
   ms.topic: landing-page
   ms.date: 04/02/2019
-abstract:
-  description: ML.NET is a free, open-source and cross-platform machine learning framework that aims to make machine learning approachable and accessible for .NET developers. Using ML.NET, developers can leverage their existing tools and skillsets to develop and infuse custom AI into their .NET applications by creating custom machine learning models.
 sections:
+- items:
+  - type: markdown
+    text: ML.NET is a free, open-source and cross-platform machine learning framework that aims to make machine learning approachable and accessible for .NET developers. Using ML.NET, developers can leverage their existing tools and skillsets to develop and infuse custom AI into their .NET applications by creating custom machine learning models.
 - items:
   - type: list
     style: cards
@@ -46,3 +47,36 @@ sections:
         src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/logo_powershell.svg
       text: Price prediction
       href: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-quick-create-powershell?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json
+- title: ML.NET Scenarios and Tutorials
+  items:
+  - type: paragraph
+    text: 'You can use ML.NET for a variety of machine learning scenarios and app types. Try out one of the tutorials below to understand how to use ML.NET to build custom machine learning solutions and integrate them into your .NET applications:'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: tutorials/sentiment-analysis.md
+      title: Analyze the sentiment of customer reviews using a binary classification algorithm.
+      image:
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/sentiment-analysis.png
+    - href: ui-changes.md
+      title: See where your Intune features are in the Azure portal 
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
+    - href: high-level-architecture.md
+      title: View the Intune high-level architecture
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: enrollment-autopilot.md 
+      title: Windows AutoPilot Deployment Program support in Microsoft Intune
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
+    - href: https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/
+      title: "[Blog] Support Tip: Intune Support for iOS 12"
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
+    - href: https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/
+      title: "[Blog] New Intune support experience for Premier customers"
+      image: 
+        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg

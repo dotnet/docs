@@ -43,7 +43,7 @@ The .NET Framework 4.5 and later versions are backward-compatible with apps that
 
 In practice, this compatibility can be broken by seemingly inconsequential changes in the .NET Framework and changes in programming techniques. For example, performance improvements in the .NET Framework 4.5 can expose a race condition that did not occur on earlier versions. Similarly, using a hard-coded path to .NET Framework assemblies, performing an equality comparison with a particular version of the .NET Framework, and getting the value of a private field by using reflection are not backward-compatible practices. In addition, each version of the .NET Framework includes bug fixes and security-related changes that can affect the compatibility of some apps and components.
 
-If your app or component doesn't work as expected on the .NET Framework 4.5 (including its point releases, the .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8, use the following checklists:
+If your app or component doesn't work as expected on the .NET Framework 4.5 (including its point releases, the .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8), use the following checklists:
 
 -  If your app was developed to run on any version of the .NET Framework starting with the .NET Framework 4.0, see [Application Compatibility in the .NET Framework](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.
 
@@ -55,7 +55,7 @@ If your app or component doesn't work as expected on the .NET Framework 4.5 (inc
 
 - If you're recompiling existing source code to run on the .NET Framework 4.5 or its point releases, or if you're developing a new version of an app or component that targets the .NET Framework 4.5 or its point releases from an existing source code base, check [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md) for obsolete types and members, and apply the workaround described. (Previously compiled code will continue to run against types and members that have been marked as obsolete.)
 
-- If you determine that a change in the .NET Framework 4.5 has broken your app, check the [Runtime Settings Schema](../configure-apps/file-schema/runtime/index.md) to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.
+- If you determine that a change in the .NET Framework 4.5 has broken your app, check the [Runtime Settings Schema](../configure-apps/file-schema/runtime/index.md), and particularly the [\<AppContextSwitchOverrides> Element](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.
 
 - If you come across an issue that isn't documented, open a problem on the [Developer Community site for .NET](https://developercommunity.visualstudio.com/spaces/61/index.html) or open an issue in the [Microsoft/dotnet GitHub repo](https://github.com/microsoft/dotnet/issues).
 

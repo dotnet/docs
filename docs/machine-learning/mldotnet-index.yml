@@ -83,11 +83,15 @@ sections:
     style: icon48
     items: 
     - image: 
-        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/cli.svg
+        src: https://github.com/dotnet/docs/blob/master/docs/images/hub/featured-2.png?raw=true
       text: ML.NET API
       href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
     - image: 
-        src: https://docs.microsoft.com/azure/virtual-machines/linux/media/index/portal.svg
+        src: https://docs.microsoft.com/en-us/dotnet/images/hub/swimlane-machine-learning-brain-lightbulb.svg
       text: Machine learning tasks
       href: tasks.md
+    - image: 
+      src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
+      text: Data transformations
+      href: transforms.md
 

@@ -57,26 +57,32 @@ sections:
     columns: 3
     items: 
     - href: tutorials/sentiment-analysis.md
-      title: Analyze the sentiment of customer reviews using a binary classification algorithm.
+      html: <p>Analyze the sentiment of customer reviews using a binary classification algorithm.</p>
+      title: Sentiment Analysis
       image:
-        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/sentiment-analysis.png
-    - href: ui-changes.md
-      title: See where your Intune features are in the Azure portal 
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
-    - href: high-level-architecture.md
-      title: View the Intune high-level architecture
+        src: https://github.com/dotnet/machinelearning-samples/blob/master/images/sentiment-analysis.png?raw=true
+    - href: tutorials/github-issue-classification.md
+      html: <p>Suggest the GitHub label for new issues using a multi-class classification algorithm.</p>
+      title: GitHub Labeler
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
-    - href: enrollment-autopilot.md 
-      title: Windows AutoPilot Deployment Program support in Microsoft Intune
+    - href: tutorials/taxi-fare.md
+      html: <p>Predict taxi fares based on distance traveled etc. using a regression algorithm.</p>
+      title: Price prediction
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/
-      title: "[Blog] Support Tip: Intune Support for iOS 12"
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: tutorials/iris-clustering.md
+      html: <p>Divide iris flowers into groups based on flower features using a clustering algorithm.</p>
+      title: Iris flowers segmentation
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/
-      title: "[Blog] New Intune support experience for Premier customers"
-      image: 
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: tutorials/movie-recommendation.md
+      html: <p>Recommend movies based on watch history using a matrix factorization algorithm</p>
+      title: Movie Recommendation
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: tutorials/image-classification.md
+      html: <p>Classify images (e.g. broccoli vs pizza) using a TensorFlow deep learning algorithm.</p>
+      title: Image classification
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg

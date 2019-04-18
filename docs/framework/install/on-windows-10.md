@@ -23,9 +23,9 @@ The .NET Framework 4.8 is included with:
 > [!div class="button"]
 > [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
-The [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) can be used to run applications built for the .NET Framework 4.0 through 4.7.2.
+[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) can be used to run applications built for the .NET Framework 4.0 through 4.7.2.
 
-You can install the [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net8) on:
+You can install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) on:
 
 * Windows 10 October 2018 Update (version 1809)
 * Windows 10 April 2018 Updae (version 1803)

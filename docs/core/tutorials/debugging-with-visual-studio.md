@@ -148,6 +148,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```vb
    ? String.IsNullOrEmpty(name)
    ```
+
   ![Immediate Window returning a value of true after the statement is executed - Visual Basic](./media/debugging-with-visual-studio/vb-immediate-window-output.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.

@@ -16,8 +16,8 @@ When an entity already exists in a data service, the [!INCLUDE[ssAstoria](../../
 ## Example  
  The following example shows how to create an existing `Customer` object that contains changes to be saved to the data service. The object is attached to the context and the <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> method is called to mark the attached object as <xref:System.Data.Services.Client.EntityStates.Modified> before the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method is called.  
   
- [!code-csharp[Astoria Northwind Client#AttachObject](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#attachobject)]
- [!code-vb[Astoria Northwind Client#AttachObject](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#attachobject)]  
+ [!code-csharp[Astoria Northwind Client#AttachObject](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#attachobject)]
+ [!code-vb[Astoria Northwind Client#AttachObject](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#attachobject)]  
   
 ## See also
 

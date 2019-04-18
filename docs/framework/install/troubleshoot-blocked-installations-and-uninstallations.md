@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot blocked .NET Framework installations and uninstallations"
-ms.date: "04/16/2019"
+ms.date: "04/18/2019"
 ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - ".NET Framework, troubleshooting blocked installations"

@@ -2,7 +2,7 @@
 title: ".NET Framework system requirements"
 description: "Find out what are the hardware, operating system and software requirements to install .NET Framework 4.5 and later versions."
 ms.custom: "updateeachrelease"
-ms.date: "04/16/2019"
+ms.date: "04/18/2019"
 helpviewer_keywords: 
   - "software requirements"
   - ".NET Framework, system requirements"

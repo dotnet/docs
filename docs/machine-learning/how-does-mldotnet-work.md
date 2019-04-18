@@ -95,7 +95,7 @@ The simplest model is two-dimensional linear regression, where one continuous qu
 
 ![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.svg)
 
-The model is simply: `Price = b * Size + w`. The parameters `b` and `w` are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, `Size` is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the `Price` values in the training data set are the labels. 
+The model is simply: `Price = b + Size * w`. The parameters `b` and `w` are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, `Size` is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the `Price` values in the training data set are the labels. 
 
 ### More complex
 

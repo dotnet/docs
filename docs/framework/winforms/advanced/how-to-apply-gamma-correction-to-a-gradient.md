@@ -13,7 +13,8 @@ ms.assetid: da4690e7-5fac-4fd2-b3f0-5cb35c165b92
 You can enable gamma correction for a linear gradient brush by setting the brush's <xref:System.Drawing.Drawing2D.LinearGradientBrush.GammaCorrection%2A> property to `true`. You can disable gamma correction by setting the <xref:System.Drawing.Drawing2D.LinearGradientBrush.GammaCorrection%2A> property to `false`. Gamma correction is disabled by default.  
   
 ## Example  
- The example creates a linear gradient brush and uses that brush to fill two rectangles. The first rectangle is filled without gamma correction, and the second rectangle is filled with gamma correction.  
+
+The following example is a method that is called from a control's <xref:System.Windows.Forms.Control.Paint> event handler. The example creates a linear gradient brush and uses that brush to fill two rectangles. The first rectangle is filled without gamma correction, and the second rectangle is filled with gamma correction.  
   
  The following illustration shows the two filled rectangles. The top rectangle, which does not have gamma correction, appears dark in the middle. The bottom rectangle, which has gamma correction, appears to have more uniform intensity.  
   
@@ -27,5 +28,5 @@ You can enable gamma correction for a linear gradient brush by setting the brush
   
 ## See also
 
-- <xref:System.Drawing.Drawing2D.LinearGradientBrush>
+- <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=nameWithType>
 - [Using a Gradient Brush to Fill Shapes](using-a-gradient-brush-to-fill-shapes.md)

@@ -20,7 +20,7 @@ The tables in this topic provide the hardware, operating system, and software re
 * .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2).
 * .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2).
 * .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2).
-- .NET Framework 4.8
+* .NET Framework 4.8
 
 For information on .NET Framework versions earlier than .NET Framework 4.5, see [.NET Framework versions and dependencies](../migration-guide/versions-and-dependencies.md).
 
@@ -50,7 +50,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
-| Windows 10 May 2019 Update | 32-bit and 64-bit | .NET Framework 4.8 |
+| Windows 10 May 2019 Update | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 October 2018 Update | 32-bit and 64-bit | .NET Framework 4.7.2 | .NET Framework 4.8 |
 | Windows 10 April 2018 Update | 32-bit and 64-bit | .NET Framework 4.7.2 |.NET Framework 4.8|
 | Windows 10 Fall Creators Update | 32-bit and 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |

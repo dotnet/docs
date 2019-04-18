@@ -194,6 +194,10 @@ The following example demonstrates the usage of compound assignment with arithme
 
 [!code-csharp-interactive[compound assignment](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignment)]
 
+Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
+
+[!code-csharp-interactive[compound assignment with cast](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignmentWithCast)]
+
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from [events](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Arithmetic overflow and division by zero
@@ -250,6 +254,7 @@ For more information, see the following sections of the [C# language specificati
 - [Subtraction operator](~/_csharplang/spec/expressions.md#subtraction-operator)
 - [Compound assignment](~/_csharplang/spec/expressions.md#compound-assignment)
 - [The checked and unchecked operators](~/_csharplang/spec/expressions.md#the-checked-and-unchecked-operators)
+- [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions)
 
 ## See also
 

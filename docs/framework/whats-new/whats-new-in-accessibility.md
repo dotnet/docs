@@ -1,7 +1,7 @@
 ---
 title: "What's new in accessibility in the .NET Framework"
 ms.custom: "updateeachrelease"
-ms.date: "04/10/2018"
+ms.date: "04/18/2018"
 dev_langs:
   - "csharp"
   - "vb"

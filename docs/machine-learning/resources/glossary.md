@@ -37,6 +37,13 @@ When the data is used to predict a category, [supervised machine learning](#supe
 
 In [regression](#regression), an evaluation metric that indicates how well data fits a model. Ranges from 0 to 1. A value of 0 means that the data is random or otherwise cannot be fit to the model. A value of 1 means that the model exactly matches the data. This is often referred to as r<sup>2</sup>, R<sup>2</sup>, or r-squared.
 
+## Data
+
+Data is central to any machine learning application. In ML.NET data is represented by <xref:Microsoft.ML.IDataView> objects. Data view objects:
+- are made up of columns and rows
+- are lazily evaluated, that is they only load data when an operation calls for it
+- contain a schema that defines the type, format and length of each column
+
 ## Estimator
 
 A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator`1> interface.

@@ -8,7 +8,6 @@
   - name: Model training concepts
     href: basic-concepts-model-training-in-mldotnet.md
 - name: Tutorials
-  href: 
   items:
   - name: Overview
     href: tutorials/index.md
@@ -65,12 +64,18 @@
       href: how-to-guides/serve-model-web-api-ml-net.md
     - name: Infer.NET
       items:
-    - name: Probabilistic programming with Infer.NET
-      href: how-to-guides/matchup-app-infer-net.md
+      - name: Probabilistic programming with Infer.NET
+        href: how-to-guides/matchup-app-infer-net.md
+  - name: ML.NET CLI
+    items:
+    - name: Install the ML.NET CLI
+      href: how-to-guides/install-ml-net-cli.md
 - name: Reference
   items:
   - name: API Reference
     href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+  - name: CLI Reference
+    href: reference/ml-net-cli-reference.md
 - name: Resources
   href: resources/index.md
   items:
@@ -80,3 +85,5 @@
     href: resources/tasks.md
   - name: Data transforms
     href: resources/transforms.md
+  - name: ML.NET CLI Telemetry
+    href: resources/ml-net-cli-telemetry.md

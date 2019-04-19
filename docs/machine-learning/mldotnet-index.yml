@@ -42,17 +42,17 @@ sections:
       html: <p>Analyze the sentiment of customer reviews using a binary classification algorithm.</p>
       title: Sentiment analysis
       image:
-        src: sentiment-analysis.png
+        src: images/sentiment-analysis.png
     - href: tutorials/github-issue-classification.md
       html: <p>Suggest the GitHub label for new issues using a multi-class classification algorithm.</p>
       title: GitHub labeler
       image:
-        src: issue-classification.png
+        src: images/issue-classification.png
     - href: tutorials/taxi-fare.md
       html: <p>Predict taxi fares based on distance traveled etc. using a regression algorithm.</p>
       title: Price prediction
       image:
-        src: price-prediction.png
+        src: images/price-prediction.png
     - href: tutorials/iris-clustering.md
       html: <p>Divide iris flowers into groups based on flower features using a clustering algorithm.</p>
       title: Iris flower segmentation
@@ -67,7 +67,7 @@ sections:
       html: <p>Classify images (e.g. broccoli vs pizza) using a TensorFlow deep learning algorithm.</p>
       title: Image classification
       image:
-        src: image-classification.png
+        src: images/image-classification.png
   - type: list
     style: unordered
     items:

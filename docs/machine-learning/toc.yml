@@ -26,6 +26,8 @@
     href: tutorials/image-classification.md
 - name: How-to guides
   items:
+  - name: Load data
+    href: how-to-guides/load-data-ml-net.md
   - name: Prepare data
     href: how-to-guides/index.md
     items:
@@ -33,8 +35,6 @@
       href: how-to-guides/train-model-categorical-ml-net.md
     - name: Apply textual feature engineering
       href: how-to-guides/train-model-textual-ml-net.md
-    - name: Load data from file and real-time sources
-      href: how-to-guides/load-data-ml-net.md      
     - name: Preprocess data with normalizers
       href: how-to-guides/normalizers-preprocess-data-ml-net.md
   - name: Train, evaluate, and explain the model

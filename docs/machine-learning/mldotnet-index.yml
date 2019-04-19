@@ -40,12 +40,12 @@ sections:
     items: 
     - href: tutorials/sentiment-analysis.md
       html: <p>Analyze the sentiment of customer reviews using a binary classification algorithm.</p>
-      title: Sentiment Analysis
+      title: Sentiment analysis
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/sentiment-analysis.png?raw=true
     - href: tutorials/github-issue-classification.md
       html: <p>Suggest the GitHub label for new issues using a multi-class classification algorithm.</p>
-      title: GitHub Labeler
+      title: GitHub labeler
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/issue-labeler.png?raw=true
     - href: tutorials/taxi-fare.md
@@ -55,12 +55,12 @@ sections:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/price-prediction.png?raw=true
     - href: tutorials/iris-clustering.md
       html: <p>Divide iris flowers into groups based on flower features using a clustering algorithm.</p>
-      title: Iris flowers segmentation
+      title: Iris flower segmentation
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/clustering.png?raw=true
     - href: tutorials/movie-recommmendation.md
       html: <p>Recommend movies based on watch history using a matrix factorization algorithm</p>
-      title: Movie Recommendation
+      title: Movie recommendation
       image:
         src: https://github.com/dotnet/machinelearning-samples/blob/master/images/movie-recommendation.png?raw=true
     - href: tutorials/image-classification.md

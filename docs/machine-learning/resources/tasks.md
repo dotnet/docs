@@ -7,6 +7,13 @@ author: natke
 ---
 # Machine learning tasks in ML.NET
 
+Test:<xref:Microsoft.ML.StandardTrainersCatalog.PairwiseCoupling%60%601%28Microsoft.ML.MulticlassClassificationCatalog.MulticlassClassificationTrainers%2CMicrosoft.ML.Trainers.ITrainerEstimator%7BMicrosoft.ML.ISingleFeaturePredictionTransformer%7B%60%600%7D%2C%60%600%7D%2CSystem.String%2CSystem.Boolean%2CMicrosoft.ML.IEstimator%7BMicrosoft.ML.ISingleFeaturePredictionTransformer%7BMicrosoft.ML.Calibrators.ICalibrator%7D%7D%2CSystem.Int32%29>
+
+
+Test 2: <xref:Microsoft.ML.StandardTrainersCatalog.PairwiseCoupling%2A>
+
+   This will look like code
+
 When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 
 Once you have decided which task works for your scenario, then you need to choose the best algorithm to train your model. The available algorithms are listed in the section for each task.

@@ -47,7 +47,7 @@ sections:
       html: <p>Suggest the GitHub label for new issues using a multi-class classification algorithm.</p>
       title: GitHub labeler
       image:
-        src: ../images/issue-classification.png
+        src: ../images/github-labeler.png
     - href: tutorials/taxi-fare.md
       html: <p>Predict taxi fares based on distance traveled etc. using a regression algorithm.</p>
       title: Price prediction
@@ -76,29 +76,12 @@ sections:
   items:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/cCsOvzB3rK8]"
-- title: Reference and resources (icon list)
-  items:
-  - type: list
-    style: icon48
-    items: 
-    - image: 
-        src: https://github.com/dotnet/docs/blob/master/docs/images/hub/featured-2.png?raw=true
-      text: ML.NET API Reference
-      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
-    - image: 
-        src: https://docs.microsoft.com/en-us/dotnet/images/hub/swimlane-machine-learning-brain-lightbulb.svg
-      text: Machine learning tasks
-      href: tasks.md
-    - image: 
-        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
-      text: Data transformations
-      href: transforms.md
-- title: Reference and resources (text list)
+- title: Reference and resources
   items:
   - type: list
     style: unordered
     items:
-    - html: <a href="https://docs.microsoft.com/dotnet/api/?view=ml-dotnet">ML.NET API</a>
+    - html: <a href="https://docs.microsoft.com/dotnet/api/?view=ml-dotnet">ML.NET API reference</a>
     - html: <a href="tasks.md">Machine learning tasks</a>
     - html: <a href="transforms.md">Data transformations</a>
 

@@ -12,7 +12,12 @@ Test:<xref:Microsoft.ML.StandardTrainersCatalog.PairwiseCoupling%60%601%28Micros
 
 Test 2: <xref:Microsoft.ML.StandardTrainersCatalog.PairwiseCoupling%2A>
 
-   This will look like code
+   
+   1. This will look like code
+   1. I want to make a list
+
+         With some indenting
+
 
 When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 

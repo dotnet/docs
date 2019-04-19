@@ -68,4 +68,5 @@ Store and manage container images across all types of Azure deployments.
 ## Next steps
 
 * [Learn how to containerize a .NET Core application.](build-docker-netcore-container.md)
+* [Learn how to containerize an ASP.NET Core application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 * [Try the Learn ASP.NET Core Microservice tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)

@@ -40,8 +40,8 @@ concept, and use that same concept across many different software
 problems.
 
 Second, the team wanted to support both single and multicast method
-calls. (Multicast delegates are delegates where multiple methods have
-been chained together. You'll see examples
+calls. (Multicast delegates are delegates that chain together multiple method calls. 
+You'll see examples
 [later in this series](delegate-class.md).) 
 
 The team wanted delegates to support the same type safety that developers

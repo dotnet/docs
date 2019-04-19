@@ -31,7 +31,7 @@ Use the following table for quick links, or read further for details. To view th
 
 |.NET Framework version|Developer installation|Redistributable installation|Platform support|
 |----------------------------|----------------------------|----------------------------------|----------------------|
-|**4.8**|[.NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?linkid=2085167)|[Download Center 4.8 web installer](http://go.microsoft.com/fwlink/?LinkId=2085155)<br/><br/>[Download Center 4.8 offline installer](https://go.microsoft.com/fwlink/?LinkID=2053984)|**Included in:**<br/><br/>Windows 10 May 2019 Update<br /><br /> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
+|**4.8**|[.NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?linkid=2088517)|[Download Center 4.8 web installer](http://go.microsoft.com/fwlink/?LinkId=2085155)<br/><br/>[Download Center 4.8 offline installer](https://go.microsoft.com/fwlink/?linkid=2088631)|**Included in:**<br/><br/>Windows 10 May 2019 Update<br /><br /> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.7.2**|[.NET Framework 4.7.2 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=874338)|[Download Center 4.7.2 web installer](https://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[Download Center 4.7.2 offline installer](https://go.microsoft.com/fwlink/?LinkId=863265)|**Included in:** <br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br /> **You can install on:**<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /><br/> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.7.1**|[NET Framework 4.7.1 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=852105)|[Download page for 4.7.1 web installer](https://go.microsoft.com/fwlink/?LinkId=852095)<br /><br /> [Download page for 4.7.1 offline installer](https://go.microsoft.com/fwlink/?LinkId=852107)|**Included in:** <br/><br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br /><br /> **You can install on:**<br/><br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
 |**4.7**|[NET Framework 4.7 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](https://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](https://go.microsoft.com/fwlink/?LinkId=825303)|**Included in:** <br/><br/>Windows 10 Creators Update<br /><br /> **You can install on:**<br /><br/> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
@@ -64,7 +64,7 @@ A *targeting pack* lets your app target a specific version of the .NET Framework
 
 The developer pack for .NET Framework 4.5.1 or 4.5.2, the targeting pack for .NET Framework 4.6, and the developer pack for .NET Framework 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 provides a particular .NET Framework's version of the reference assemblies, language packs, and IntelliSense files for use in an integrated development environment such as Visual Studio.  If you are using Visual Studio, the developer pack or targeting pack also adds the installed version of the .NET Framework to the target choices when you create a new project.  Choose one of the following:
 
-- [Microsoft .NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?linkid=2085167)
+- [Microsoft .NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?linkid=2088517)
 
 - [Microsoft .NET Framework 4.7.2 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=874338)
 
@@ -106,25 +106,25 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 1. Open the download page for the .NET Framework version you want to install:
 
-   - .NET Framework 4.8 ([web installer](https://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=2053984))
+   - .NET Framework 4.8 ([web installer](https://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/?linkid=2088631))
 
-    - .NET Framework 4.7.2 ([web installer](https://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=863265))
+   - .NET Framework 4.7.2 ([web installer](https://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=863265))
 
-    - .NET Framework 4.7.1 ([web installer](https://go.microsoft.com/fwlink/?LinkId=852095) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=852107))
+   - .NET Framework 4.7.1 ([web installer](https://go.microsoft.com/fwlink/?LinkId=852095) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=852107))
 
-    - .NET Framework 4.7 ([web installer](https://go.microsoft.com/fwlink/?LinkId=825299) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=825303))
+   - .NET Framework 4.7 ([web installer](https://go.microsoft.com/fwlink/?LinkId=825299) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=825303))
 
-    - .NET Framework 4.6.2 ([web installer](https://go.microsoft.com/fwlink/?LinkId=780597) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=780601))
+   - .NET Framework 4.6.2 ([web installer](https://go.microsoft.com/fwlink/?LinkId=780597) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=780601))
 
-    - .NET Framework 4.6.1 ([web installer](https://go.microsoft.com/fwlink/?LinkId=671729) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=671744))
+   - .NET Framework 4.6.1 ([web installer](https://go.microsoft.com/fwlink/?LinkId=671729) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=671744))
 
-    - .NET Framework 4.6 ([web installer](https://go.microsoft.com/fwlink/?LinkId=528259) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=528233))
+   - .NET Framework 4.6 ([web installer](https://go.microsoft.com/fwlink/?LinkId=528259) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=528233))
 
-    - .NET Framework 4.5.2 ([web installer](https://go.microsoft.com/fwlink/p/?LinkId=397703) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=397706))
+   - .NET Framework 4.5.2 ([web installer](https://go.microsoft.com/fwlink/p/?LinkId=397703) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=397706))
 
-    - .NET Framework 4.5.1 ([web installer](https://go.microsoft.com/fwlink/p/?LinkId=310158) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=310159))
+   - .NET Framework 4.5.1 ([web installer](https://go.microsoft.com/fwlink/p/?LinkId=310158) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=310159))
 
-    - [.NET Framework 4.5](https://go.microsoft.com/fwlink/p/?LinkId=245484)
+   - [.NET Framework 4.5](https://go.microsoft.com/fwlink/p/?LinkId=245484)
 
 1. Select the language for the download page. This option does not download the localized resources of the .NET Framework; it only affects the text displayed on the download page.
 

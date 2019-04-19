@@ -22,7 +22,7 @@ var query = from cust in customers
             select new { Name = cust.Name, Address = cust.PrimaryAddress };
 ```
 
-The `new` operator is also used to invoke the default constructor for value types. For example:
+The `new` operator is also used to invoke the parameterless constructor for value types. For example:
 
 ```csharp
 int i = new int();
@@ -36,7 +36,7 @@ int i = 0;
 
 For a complete list of default values, see [Default Values Table](default-values-table.md).
 
-Remember that it is an error to declare a default constructor for a [struct](struct.md) because every value type implicitly has a public default constructor. It is possible to declare parameterized constructors on a struct type to set its initial values, but this is only necessary if values other than the default are required.
+Remember that it is an error to declare a parameterless constructor for a [struct](struct.md) because every value type implicitly has a public parameterless constructor. It is possible to declare parameterized constructors on a struct type to set its initial values, but this is only necessary if values other than the default are required.
 
 Both value-type objects such as structs and reference-type objects such as classes are destroyed automatically, but value-type objects are destroyed when their containing context is destroyed, whereas reference-type objects are destroyed by the garbage collector at an unspecified time after the last reference to them is removed. For types that contain resources such as file handles, or network connections, it is desirable to employ deterministic cleanup to ensure that the resources they contain are released as soon as possible. For more information, see [using Statement](using-statement.md).
 

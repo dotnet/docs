@@ -304,7 +304,7 @@ The .NET Framework provides a set of stand-alone language pack executable files 
 
 - [.NET Framework 4.8 language packs](https://go.microsoft.com/fwlink/p/?LinkId=2086170)
 
-- [.NET Framework 4.7.2 language packs](https://go.microsoft.com/fwlink/p/?LinkId=863275)
+- [.NET Framework 4.7.2 language packs](https://go.microsoft.com/fwlink/?LinkId=863275)
 
 - [.NET Framework 4.7.1 language packs](https://go.microsoft.com/fwlink/p/?LinkId=852090)
 

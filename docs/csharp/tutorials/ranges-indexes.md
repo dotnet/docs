@@ -1,7 +1,7 @@
 ---
 title: Explore ranges of data using indexes and ranges
-description: This advanced tutorial teach you to explore data using indexes and ranges to examine slices of a sequential data set.
-ms.date: 03/13/2019
+description: This advanced tutorial teaches you to explore data using indexes and ranges to examine slices of a sequential data set.
+ms.date: 04/19/2019
 ms.custom: mvc
 ---
 # Indices and ranges
@@ -15,55 +15,61 @@ In this tutorial, you'll learn how to:
 > * Understand the design decisions for the start and end of each sequence.
 > * Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.
 
-## Prerequisites
-
-You'll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available with the latest [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
-
-This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
-
 ## Language support for indices and ranges
 
-You can specify an index **from the end**. You specify **from the end** using the `^` operator. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or the index that follows the last element.
+You can specify an index **from the end**. You specify **from the end** using the `^` operator. You're familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or the index that follows the last element.
 
 You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
 
-Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
-
-[!code-csharp[Initialization](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Initialization)]
+```csharp-interactive
+string[] words = new string[]
+{
+                // index from start    index from end
+    "The",      // 0                   ^9
+    "quick",    // 1                   ^8
+    "brown",    // 2                   ^7
+    "fox",      // 3                   ^6
+    "jumped",   // 4                   ^5
+    "over",     // 5                   ^4
+    "the",      // 6                   ^3
+    "lazy",     // 7                   ^2
+    "dog"       // 8                   ^1
+};
+```
 
 The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
 
-You can retrieve the last word with the `^1` index:
+You can retrieve the last word with the `^1` index. Add the following code below the initialization:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastIndex)]
+[!code-csharp[LastIndex](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastIndex)]
 
-The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
+The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range. Add the following code to the same method. Copy and paste it at the bottom of the interactive window.
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Range)]
+[!code-csharp[Range](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Range)]
 
-The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:
+The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included. Add the following code as well:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastRange)]
+[!code-csharp[LastRange](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastRange)]
 
 The following examples create ranges that are open ended for the start, end, or both:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_PartialRanges)]
+[!code-csharp[PartialRange](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_PartialRanges)]
 
 You can also declare ranges or indices as variables. The variable can then be used inside the `[` and `]` characters:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_RangeIndexTypes)]
+[!code-csharp[IndexRangeTypes](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_RangeIndexTypes)]
 
 The previous examples show two design decisions that caused much debate:
 
-- Ranges are *exclusive*, meaning the element at the last index is not in the range.
+- Ranges are *exclusive*, meaning the element at the last index isn't in the range.
 - The index `^0` is *the end* of the collection, not *the last element* in the collection.
 
-The following sample shows many of the reasons for those choices. Modify `x` and `y` to try different combinations:
+The following sample shows many of the reasons for those choices. Modify `x`, `y`, and `z` to try different combinations. When you experiment, use values where `x` is less than `y`, and `y` is less than `z` for valid combinations. Try other combinations to see error conditions. Try the following code in the interactive window in your browser.
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
+[!code-csharp-interactive[SemanticsExamples](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
 
 ## Scenarios for Indices and Ranges
 
-Add text to explain what's going on here...
+You'll often use ranges and indices when you want to perform some analysis on subrange of an entire sequence. The new syntax is clearer in reading exactly what subrange is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in the browser:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]
+[!code-csharp-interactive[MovingAverages](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]

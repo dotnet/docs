@@ -302,9 +302,9 @@ To determine whether the final release version of a language pack is installed f
 
 The .NET Framework provides a set of stand-alone language pack executable files that contain localized resources for specific cultures. The language packs are available from the Microsoft Download Center:
 
-- [.NET Framework 4.8 language packs](https://go.microsoft.com/fwlink/p/?LinkId=2053984)
+- [.NET Framework 4.8 language packs](https://go.microsoft.com/fwlink/p/?LinkId=2086170)
 
-- [.NET Framework 4.7.2 language packs](https://go.microsoft.com/fwlink/p/?LinkId=863258)
+- [.NET Framework 4.7.2 language packs](https://go.microsoft.com/fwlink/p/?LinkId=863275)
 
 - [.NET Framework 4.7.1 language packs](https://go.microsoft.com/fwlink/p/?LinkId=852090)
 

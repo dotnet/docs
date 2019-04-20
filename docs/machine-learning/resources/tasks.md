@@ -18,6 +18,10 @@ Test 2: <xref:Microsoft.ML.StandardTrainersCatalog.PairwiseCoupling%2A>
 
          With some indenting
 
+   ```csharp
+   Class class = new Class();
+   ```
+
 
 When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 

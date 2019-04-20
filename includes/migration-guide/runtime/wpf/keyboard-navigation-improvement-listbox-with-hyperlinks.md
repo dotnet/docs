@@ -6,4 +6,3 @@
 |Scope|Major|
 |Version|4.8|
 |Type|Runtime|
-

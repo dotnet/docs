@@ -152,7 +152,7 @@ A method definition can specify that its parameters are required or that they ar
 The parameter's default value must be assigned by one of the following kinds of expressions:
 
 - A constant, such as a literal string or number.
-- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit default constructor, which is not an actual member of the type.
+- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
 - An expression of the form `default(ValType)`, where `ValType` is a value type.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.

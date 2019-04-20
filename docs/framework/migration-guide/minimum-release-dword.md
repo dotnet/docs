@@ -25,4 +25,3 @@ The following table lists the minimum value of the **Release** entry for each .N
 |.NET Framework 4.7.1|461308|
 |.NET Framework 4.7.2|461808|
 |.NET Framework 4.8|528040|
-

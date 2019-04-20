@@ -26,6 +26,8 @@
     href: tutorials/image-classification.md
 - name: How-to guides
   items:
+  - name: Load data
+    href: how-to-guides/load-data-ml-net.md
   - name: Prepare data
     href: how-to-guides/index.md
     items:
@@ -33,18 +35,10 @@
       href: how-to-guides/train-model-categorical-ml-net.md
     - name: Apply textual feature engineering
       href: how-to-guides/train-model-textual-ml-net.md
-    - name: Load data with many columns
-      href: how-to-guides/load-data-from-mult-column-csv-ml-net.md
-    - name: Load data from multiple files
-      href: how-to-guides/load-data-from-multiple-files-ml-net.md
-    - name: Load data from text file
-      href: how-to-guides/load-data-from-text-file-ml-net.MD
     - name: Preprocess data with normalizers
       href: how-to-guides/normalizers-preprocess-data-ml-net.md
   - name: Train, evaluate, and explain the model
     items:
-    - name: Train model with real-time data sources
-      href: how-to-guides/load-non-file-training-data-ml-net.md
     - name: Train model using cross-validation
       href: how-to-guides/train-cross-validation-ml-net.md
     - name: Inspect intermediate pipeline data values

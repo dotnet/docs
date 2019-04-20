@@ -13,9 +13,9 @@ When a [class](../../../csharp/language-reference/keywords/class.md) or [struct]
   
  [!code-csharp[csProgGuideObjects#53](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#53)]  
   
- A constructor that takes no parameters is called a *default constructor*. Default constructors are invoked whenever an object is instantiated by using the `new` operator and no arguments are provided to `new`. For more information, see [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
+ A constructor that takes no parameters is called a *parameterless constructor*. Default constructors are invoked whenever an object is instantiated by using the `new` operator and no arguments are provided to `new`. For more information, see [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
   
- Unless the class is [static](../../../csharp/language-reference/keywords/static.md), classes without constructors are given a public default constructor by the C# compiler in order to enable class instantiation. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
+ Unless the class is [static](../../../csharp/language-reference/keywords/static.md), classes without constructors are given a public parameterless constructor by the C# compiler in order to enable class instantiation. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
   
  You can prevent a class from being instantiated by making the constructor private, as follows:  
   
@@ -23,7 +23,7 @@ When a [class](../../../csharp/language-reference/keywords/class.md) or [struct]
   
  For more information, see [Private Constructors](../../../csharp/programming-guide/classes-and-structs/private-constructors.md).  
   
- Constructors for [struct](../../../csharp/language-reference/keywords/struct.md) types resemble class constructors, but `structs` cannot contain an explicit default constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the default values. For more information, see [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). However, this default constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the default constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
+ Constructors for [struct](../../../csharp/language-reference/keywords/struct.md) types resemble class constructors, but `structs` cannot contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the default values. For more information, see [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
   
 ```csharp  
 int i = new int();  
@@ -46,9 +46,9 @@ b = 33;      // Or assign it before using it.
 Console.WriteLine("{0}, {1}", a, b);  
 ```  
   
- So calling the default constructor for a value type is not required.  
+ So calling the parameterless constructor for a value type is not required.  
   
- Both classes and `structs` can define constructors that take parameters. Constructors that take parameters must be called through a `new` statement or a [base](../../../csharp/language-reference/keywords/base.md) statement. Classes and `structs` can also define multiple constructors, and neither is required to define a default constructor. For example:  
+ Both classes and `structs` can define constructors that take parameters. Constructors that take parameters must be called through a `new` statement or a [base](../../../csharp/language-reference/keywords/base.md) statement. Classes and `structs` can also define multiple constructors, and neither is required to define a parameterless constructor. For example:  
   
  [!code-csharp[csProgGuideObjects#54](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#54)]  
   
@@ -62,13 +62,13 @@ Console.WriteLine("{0}, {1}", a, b);
   
  In this example, the constructor for the base class is called before the block for the constructor is executed. The `base` keyword can be used with or without parameters. Any parameters to the constructor can be used as parameters to `base`, or as part of an expression. For more information, see [base](../../../csharp/language-reference/keywords/base.md).  
   
- In a derived class, if a base-class constructor is not called explicitly by using the `base` keyword, the default constructor, if there is one, is called implicitly. This means that the following constructor declarations are effectively the same:  
+ In a derived class, if a base-class constructor is not called explicitly by using the `base` keyword, the parameterless constructor, if there is one, is called implicitly. This means that the following constructor declarations are effectively the same:  
   
  [!code-csharp[csProgGuideObjects#58](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#58)]  
   
  [!code-csharp[csProgGuideObjects#57](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#57)]  
   
- If a base class does not offer a default constructor, the derived class must make an explicit call to a base constructor by using `base`.  
+ If a base class does not offer a parameterless constructor, the derived class must make an explicit call to a base constructor by using `base`.  
   
  A constructor can invoke another constructor in the same object by using the [this](../../../csharp/language-reference/keywords/this.md) keyword. Like `base`, `this` can be used with or without parameters, and any parameters in the constructor are available as parameters to `this`, or as part of an expression. For example, the second constructor in the previous example can be rewritten using `this`:  
   

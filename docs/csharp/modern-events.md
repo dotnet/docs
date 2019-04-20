@@ -30,7 +30,7 @@ You could also change the `SearchDirectoryArgs` to a struct, if you make one mor
 
 [!code-csharp[SearchDir](../../samples/csharp/events/Program.cs#DeclareSearchEvent "Define search directory event")]
 
-The additional change is to call the default constructor before
+The additional change is to call the parameterless constructor before
 entering the constructor that initializes all the fields. Without
 that addition, the rules of C# would report that the properties are
 being accessed before they have been assigned.

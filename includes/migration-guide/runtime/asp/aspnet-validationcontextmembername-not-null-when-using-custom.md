@@ -8,4 +8,3 @@
 |Version|4.8|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType></li></ul>|
-

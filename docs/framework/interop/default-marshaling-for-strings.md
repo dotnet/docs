@@ -145,8 +145,6 @@ The `ByValTStr` type is used for inline, fixed-length character arrays that appe
 
 The `CharSet` argument of the <xref:System.Runtime.InteropServices.StructLayoutAttribute> that is applied to the containing structure determines the character format of strings in structures. The following example structures contain string references and inline strings, as well as ANSI, Unicode, and platform-dependent characters. The representation of these structures in a type library is shown in the following C++ code:
 
-
-
 ```cpp
 struct StringInfoA
 {

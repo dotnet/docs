@@ -1759,7 +1759,7 @@ private static void GetCredits(String connectionString) {
 
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
-        <exception cref="T:System.InvalidCastException">The returned type was not one of the following types: binary, image, varbinary, or udt.</exception>
+        <exception cref="T:System.InvalidCastException">The specified column isn't a binary type that supports reading with a <see cref="T:System.IO.Stream" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1869,7 +1869,7 @@ private static void GetCredits(String connectionString) {
 
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
-        <exception cref="T:System.InvalidCastException">The returned type was not one of the following types: char, nchar, ntext, nvarchar, text, or varchar.</exception>
+        <exception cref="T:System.InvalidCastException">The specified column isn't a text type that supports reading with a <see cref="T:System.IO.TextReader" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValue">

@@ -1,12 +1,12 @@
 ---
-title: Build an ML.NET custom image classifier with TensorFlow
+title: TensorFlow를 사용하여 ML.NET 사용자 지정 이미지 분류기 만들기
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
 ms.date: 04/05/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
-# Tutorial: Build an ML.NET custom image classifier with TensorFlow
+# Tutorial: TensorFlow를 사용하여 ML.NET 사용자 지정 이미지 분류기 만들기
 
 This sample tutorial illustrates how you can use an already trained Image Classifier `TensorFlow` model to build a new custom model to classify images into a few categories.
 

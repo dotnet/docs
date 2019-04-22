@@ -34,7 +34,7 @@ This topic describes how to access unmanaged functions and introduces several at
 ```vb
 Imports System
 
-Friend Class WindowsAPI
+Friend Class NativeMethods
     Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
@@ -49,7 +49,7 @@ End Class
 Imports System
 Imports System.Runtime.InteropServices
 
-Friend Class WindowsAPI
+Friend Class NativeMethods
     <DllImport("user32.dll", CharSet:=CharSet.Auto)>
     Friend Shared Function MessageBox(
         ByVal hWnd As IntPtr,
@@ -64,7 +64,7 @@ End Class
 using System;
 using System.Runtime.InteropServices;
 
-internal static class WindowsAPI
+internal static class NativeMethods
 {
     [DllImport("user32.dll")]
     internal static extern int MessageBox(

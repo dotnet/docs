@@ -223,14 +223,14 @@ BOOL PtInRect(const RECT *lprc, POINT pt);
  You can pass structures using the following platform invoke definition:  
   
 ```vb
-Friend Class WindowsAPI
+Friend Class NativeMethods
     Friend Shared Declare Auto Function PtInRect Lib "User32.dll" (
         ByRef r As Rect, p As Point) As Boolean
 End Class
 ```
   
 ```csharp
-internal static class WindowsAPI
+internal static class NativeMethods
 {
    [DllImport("User32.dll")]
    internal static extern bool PtInRect(ref Rect r, Point p);
@@ -285,14 +285,14 @@ void GetSystemTime(SYSTEMTIME* SystemTime);
  The equivalent platform invoke definition for **GetSystemTime** is as follows:  
   
 ```vb
-Friend Class WindowsAPI
+Friend Class NativeMethods
     Friend Shared Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
         ByVal sysTime As SystemTime)
 End Class
 ```
   
 ```csharp
-internal static class WindowsAPI
+internal static class NativeMethods
 {
    [DllImport("Kernel32.dll", CharSet = CharSet.Auto)]
    internal static extern void GetSystemTime(SystemTime st);

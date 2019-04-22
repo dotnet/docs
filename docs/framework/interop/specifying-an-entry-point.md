@@ -30,7 +30,7 @@ An entry point identifies the location of a function in a DLL. Within a managed 
 ```vb
 Imports System
 
-Friend Class WindowsAPI
+Friend Class NativeMethods
     Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
@@ -44,7 +44,7 @@ End Class
 ```vb
 Imports System
 
-Friend Class WindowsAPI
+Friend Class NativeMethods
     Friend Shared Declare Auto Function MsgBox _
         Lib "user32.dll" Alias "MessageBox" (
         ByVal hWnd As IntPtr,
@@ -70,7 +70,7 @@ End Class
 using System;
 using System.Runtime.InteropServices;
 
-internal static class WindowsAPI
+internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
     internal static extern int MessageBox(

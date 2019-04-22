@@ -65,7 +65,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
 ```vb
 Imports System
 
-Friend Class WindowsAPI
+Friend Class NativeMethods
     Friend Shared Declare Function MessageBoxA Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
@@ -107,7 +107,7 @@ End Class
 using System;
 using System.Runtime.InteropServices;
 
-internal static class WindowsAPI
+internal static class NativeMethods
 {
     [DllImport("user32.dll")]
     internal static extern int MessageBoxA(

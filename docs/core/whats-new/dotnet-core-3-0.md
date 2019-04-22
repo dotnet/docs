@@ -76,7 +76,7 @@ Corresponds to the `maxNumMag` and `minNumMag` IEEE operations, they return the 
 * <xref:System.Math.ILogB(System.Double)>\
 Corresponds to the `logB` IEEE operation that returns an integral value, it returns the integral base-2 log of the input parameter. This method is effectively the same as `floor(log2(x))`, but done with minimal rounding error.
 
-* <xref:Systen.Math.ScaleB(System.Double,System.Int32)>\
+* <xref:System.Math.ScaleB(System.Double,System.Int32)>\
 Corresponds to the `scaleB` IEEE operation that takes an integral value, it returns effectively `x * pow(2, n)`, but is done with minimal rounding error.
 
 * <xref:System.Math.Log2(System.Double)>\
@@ -203,7 +203,7 @@ The new built-in JSON support is high-performance, low allocation, and based on 
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a foundational, low-level type, that can be used to build custom parsers and deserializers. Reading through a JSON payload using the new `Utf8JsonReader` is 2x faster than using the reader from **Json.NET**. It doesn't allocate until you need to actualize JSON tokens as (UTF-16) strings.
 
-Here is an example of reading through the [**launch.json**](~/samples/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
+Here is an example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
 
 [!CODE-csharp[Utf8JsonReader](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#PrintJson)]
 
@@ -219,7 +219,7 @@ Here is an example of reading through the [**launch.json**](~/samples/core/whats
 
 Here is a sample usage of the `JsonDocument` and `JsonElement` that can be used as a starting point:
 
-Here is a C# 8.0 example of reading through the [**launch.json**](~/samples/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
+Here is a C# 8.0 example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
 
 [!CODE-csharp[JsonDocument](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#ReadJson)]
 

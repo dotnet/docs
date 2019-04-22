@@ -8,7 +8,7 @@ ms.custom: mvc
 ---
 # Tutorial: Build an ML.NET custom image classifier with TensorFlow
 
-This sample tutorial illustrates how you can use an already trained Image Classifier `TensorFlow` model to build a new custom model to classify images into a few categories.
+이 샘플 자습서에서는 이미 숙련된 이미지 분류 `TensorFlow` 모델을 사용하여 이미지를 몇 가지 범주로 분류하는 새로운 사용자 지정 모델을 작성하는 방법을 보여줍니다.
 
 What if you could reuse a model that's already been pre trained to solve a similar problem and retrain either all or some of the layers of that model to make it solve your problem? This technique of reusing part of an already trained model to build a new model is known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning).
 

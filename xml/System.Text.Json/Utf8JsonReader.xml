@@ -833,7 +833,7 @@ The current depth exceeds the recursive limit set by the maximum depth.
 
 
 If <xref:System.Text.Json.Utf8JsonReader.HasValueSequence> is `false`, `ValueSequence` is empty. 
-Therefore, only access `ValueSequence` if <xref:System.Text.Json.Utf8JsonReader.HasValueSequence" /> is `true`.
+Therefore, only access `ValueSequence` if <xref:System.Text.Json.Utf8JsonReader.HasValueSequence> is `true`.
 Otherwise, the token value must be accessed from <xref:System.Text.Json.Utf8JsonReader.ValueSpan>.
 
  ]]></format>

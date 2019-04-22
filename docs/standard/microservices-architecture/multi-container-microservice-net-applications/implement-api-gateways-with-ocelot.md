@@ -12,8 +12,6 @@ The reference microservice application [eShopOnContainers](https://github.com/do
 
 - Docker host, in your local dev PC, on-premises or in the cloud.
 - Kubernetes cluster, on-premises or in managed cloud such as Azure Kubernetes Service (AKS).
-- Service Fabric cluster, on-premises or in the cloud.
-- Service Fabric mesh, as PaaS/Serverless in Azure.
 
 ## Architect and design your API Gateways
 

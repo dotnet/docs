@@ -70,22 +70,22 @@ New <xref:System.Math?displayProperty=nameWithType> APIs include:
 * <xref:System.Math.BitIncrement(System.Double)> and <xref:System.Math.BitDecrement(System.Double)>\
 Corresponds to the `nextUp` and `nextDown` IEEE operations. They return the smallest floating-point number that compares greater or lesser than the input (respectively). For example, `Math.BitIncrement(0.0)` would return `double.Epsilon`.
 
-* <xref:System.Math.MaxMagnitude(System.Double, System.Double)> and <xref:System.Math.MinMagnitude(System.Double, System.Double)>\
+* <xref:System.Math.MaxMagnitude(System.Double,System.Double)> and <xref:System.Math.MinMagnitude(System.Double,System.Double)>\
 Corresponds to the `maxNumMag` and `minNumMag` IEEE operations, they return the value that is greater or lesser in magnitude of the two inputs (respectively). For example, `Math.MaxMagnitude(2.0, -3.0)` would return `-3.0`.
 
 * <xref:System.Math.ILogB(System.Double)>\
 Corresponds to the `logB` IEEE operation that returns an integral value, it returns the integral base-2 log of the input parameter. This method is effectively the same as `floor(log2(x))`, but done with minimal rounding error.
 
-* <xref:Systen.Math.ScaleB(System.Double, System.Int32)>\
+* <xref:Systen.Math.ScaleB(System.Double,System.Int32)>\
 Corresponds to the `scaleB` IEEE operation that takes an integral value, it returns effectively `x * pow(2, n)`, but is done with minimal rounding error.
 
 * <xref:System.Math.Log2(System.Double)>\
 Corresponds to the `log2` IEEE operation, it returns the base-2 logarithm. It minimizes rounding error.
 
-* <xref:System.Math.FusedMultiplyAdd(System.Double, System.Double, System.Double)>\
+* <xref:System.Math.FusedMultiplyAdd(System.Double,System.Double,System.Double)>\
 Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That is, it does `(x * y) + z` as a single operation, there-by minimizing the rounding error. An example would be `FusedMultiplyAdd(1e308, 2.0, -1e308)` which returns `1e308`. The regular `(1e308 * 2.0) - 1e308` returns `double.PositiveInfinity`.
 
-* <xref:System.Math.CopySign(System.Double, System.Double)>\
+* <xref:System.Math.CopySign(System.Double,System.Double)>\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
 

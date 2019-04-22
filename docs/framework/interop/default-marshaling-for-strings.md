@@ -86,6 +86,7 @@ The following table lists the marshaling options for strings when marshaled as a
 |`UnmanagedType.BStr`|A COM-style `BSTR` with a prefixed length and Unicode characters.|
 |`UnmanagedType.LPStr` (default)|A pointer to a null-terminated array of ANSI characters.|
 |`UnmanagedType.LPTStr`|A pointer to a null-terminated array of platform-dependent characters.|
+|`UnmanagedType.LPUTF8Str`|A pointer to a null-terminated array of UTF-8 encoded characters.|
 |`UnmanagedType.LPWStr`|A pointer to a null-terminated array of Unicode characters.|
 |`UnmanagedType.TBStr`|A COM-style `BSTR` with a prefixed length and platform-dependent characters.|
 |`VBByRefStr`|A value that enables Visual Basic .NET to change a string in unmanaged code and have the results reflected in managed code. This value is supported only for platform invoke. This is the default value in Visual Basic for `ByVal` strings.|
@@ -104,6 +105,8 @@ class StringLibAPI
     [DllImport("StringLib.dll")]
     public static extern void PassLPTStr([MarshalAs(UnmanagedType.LPTStr)] string s);
     [DllImport("StringLib.dll")]
+    public static extern void PassLPUTF8Str([MarshalAs(UnmanagedType.LPUTF8Str)] string s);
+    [DllImport("StringLib.dll")]
     public static extern void PassBStr([MarshalAs(UnmanagedType.BStr)] string s);
     [DllImport("StringLib.dll")]
     public static extern void PassAnsiBStr([MarshalAs(UnmanagedType.AnsiBStr)] string s);
@@ -114,18 +117,20 @@ class StringLibAPI
 
 ```vb
 Class StringLibAPI
-    Public Declare Auto Sub PassLPStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.LPStr)> s As String)
-    Public Declare Auto Sub PassLPWStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.LPWStr)> s As String)
-    Public Declare Auto Sub PassLPTStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.LPTStr)> s As String)
-    Public Declare Auto Sub PassBStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.BStr)> s As String)
-    Public Declare Auto Sub PassAnsiBStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.AnsiBStr)> s As String)
-    Public Declare Auto Sub PassTBStr Lib "StringLib.dll" _
-        (<MarshalAs(UnmanagedType.TBStr)> s As String)
+    Public Declare Auto Sub PassLPStr Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.LPStr)> s As String)
+    Public Declare Auto Sub PassLPWStr Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.LPWStr)> s As String)
+    Public Declare Auto Sub PassLPTStr Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.LPTStr)> s As String)
+    Public Declare Auto Sub PassLPUTF8Str Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.LPUTF8Str)> s As String)
+    Public Declare Auto Sub PassBStr Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.BStr)> s As String)
+    Public Declare Auto Sub PassAnsiBStr Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.AnsiBStr)> s As String)
+    Public Declare Auto Sub PassTBStr Lib "StringLib.dll" (
+        <MarshalAs(UnmanagedType.TBStr)> s As String)
 End Class
 ```
 
@@ -138,14 +143,13 @@ Strings are valid members of structures; however, <xref:System.Text.StringBuilde
 |`UnmanagedType.BStr`|A COM-style `BSTR` with a prefixed length and Unicode characters.|
 |`UnmanagedType.LPStr` (default)|A pointer to a null-terminated array of ANSI characters.|
 |`UnmanagedType.LPTStr`|A pointer to a null-terminated array of platform-dependent characters.|
+|`UnmanagedType.LPUTF8Str`|A pointer to a null-terminated array of UTF-8 encoded characters.|
 |`UnmanagedType.LPWStr`|A pointer to a null-terminated array of Unicode characters.|
 |`UnmanagedType.ByValTStr`|A fixed-length array of characters; the array's type is determined by the character set of the containing structure.|
 
 The `ByValTStr` type is used for inline, fixed-length character arrays that appear within a structure. Other types apply to string references contained within structures that contain pointers to strings.
 
 The `CharSet` argument of the <xref:System.Runtime.InteropServices.StructLayoutAttribute> that is applied to the containing structure determines the character format of strings in structures. The following example structures contain string references and inline strings, as well as ANSI, Unicode, and platform-dependent characters. The representation of these structures in a type library is shown in the following C++ code:
-
-
 
 ```cpp
 struct StringInfoA

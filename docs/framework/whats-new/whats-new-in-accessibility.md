@@ -140,7 +140,7 @@ The following example raises the [Notification event](xref:System.Windows.Forms.
 ```csharp
 MethodInfo raiseMethod = typeof(AccessibleObject).GetMethod("RaiseAutomationNotification");
 if (raiseMethod != null) {
-	raiseMethod.Invoke(progressBar1.AccessibilityObject, new object[3] {/*Other*/ 4, /*All*/ 2, "The progress is 50%." });
+   raiseMethod.Invoke(progressBar1.AccessibilityObject, new object[3] {/*Other*/ 4, /*All*/ 2, "The progress is 50%." });
 }
 ```
 
@@ -199,7 +199,7 @@ public class AutoSuggestTextBox: TextBox
 {
    protected override AutomationPeer OnCreateAutomationPeer()
    {
-      return new AutoSuggestTextBoxAutomationPeer(this); 
+      return new AutoSuggestTextBoxAutomationPeer(this);
    }
 
    public ListBox SuggestionListBox;
@@ -208,14 +208,14 @@ public class AutoSuggestTextBox: TextBox
 internal class AutoSuggestTextBoxAutomationPeer : TextBoxAutomationPeer
 {
    public AutoSuggestTextBoxAutomationPeer(AutoSuggestTextBox owner) : base(owner)
-   { 
+   {
    }
 
    protected override List<AutomationPeer> GetControlledPeersCore()
    {
-      List<AutomationPeer> controlledPeers = new List<AutomationPeer>(); 
-      AutoSuggestTextBox owner = Owner as AutoSuggestTextBox; 
-      controlledPeers.Add(UIElementAutomationPeer.CreatePeerForElement(owner.SuggestionListBox)); 
+      List<AutomationPeer> controlledPeers = new List<AutomationPeer>();
+      AutoSuggestTextBox owner = Owner as AutoSuggestTextBox;
+      controlledPeers.Add(UIElementAutomationPeer.CreatePeerForElement(owner.SuggestionListBox));
       return controlledPeers;
    }
 }
@@ -234,7 +234,7 @@ To enable this feature, an application needs to target .NET Framework 4.8 or opt
       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
    </startup>
    <runtime>
-      <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false;Switch.UseLegacyToolTipDisplay=false" /> 
+      <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false;Switch.UseLegacyToolTipDisplay=false" />
    </runtime>
 </configuration>
 ```
@@ -255,13 +255,13 @@ Starting with .NET Framework 4.8, WPF  exposes these two properties to UIAutomat
    WPF adds two new dependency properties, <xref:System.Windows.Automation.AutomationProperties.SizeOfSet?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationProperties.PositionInSet?displayProperty=nameWithType>. A developer can use XAML to set their values:
 
    ```xaml
-   <Button AutomationProperties.SizeOfSet="3" 	
+   <Button AutomationProperties.SizeOfSet="3"
      AutomationProperties.PositionInSet="1">Button 1</Button>
 
-   <Button AutomationProperties.SizeOfSet="3" 	
+   <Button AutomationProperties.SizeOfSet="3"
      AutomationProperties.PositionInSet="2">Button 2</Button>
 
-   <Button AutomationProperties.SizeOfSet="3" 	
+   <Button AutomationProperties.SizeOfSet="3"
      AutomationProperties.PositionInSet="3">Button 3</Button>
    ```
 
@@ -270,20 +270,20 @@ Starting with .NET Framework 4.8, WPF  exposes these two properties to UIAutomat
    The <xref:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSetCore> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSetCore> virtual methods been added to the AutomationPeer class. A developer can provide values for `SizeOfSet` and `PositionInSet` by overriding these methods, as shown in the following example:
 
    ```csharp
-   public class MyButtonAutomationPeer : ButtonAutomationPeer 
-   { 
-      protected override int GetSizeOfSetCore() 
-      { 
-         // Call into your own logic to provide a value for SizeOfSet 
-         return CalculateSizeOfSet(); 
-      } 
+   public class MyButtonAutomationPeer : ButtonAutomationPeer
+   {
+      protected override int GetSizeOfSetCore()
+      {
+         // Call into your own logic to provide a value for SizeOfSet
+         return CalculateSizeOfSet();
+      }
 
-      protected override int GetPositionInSetCore() 
-      { 
-         // Call into your own logic to provide a value for PositionInSet 
-         return CalculatePositionInSet(); 
-      } 
-   } 
+      protected override int GetPositionInSetCore()
+      {
+         // Call into your own logic to provide a value for PositionInSet
+         return CalculatePositionInSet();
+      }
+   }
    ```
 
 In addition, items in <xref:System.Windows.Controls.ItemsControl> instances provide a value for these properties automatically without additional action from the developer. If an <xref:System.Windows.Controls.ItemsControl> is grouped, the collection of groups is represented as a set, and each group is counted as a separate set, with each item inside that group providing its position inside that group as well as the size of the group. Automatic values are not affected by virtualization. Even if an item is not realized, it is still counted toward the total size of the set and affects the position in the set of its sibling items.
@@ -291,14 +291,14 @@ In addition, items in <xref:System.Windows.Controls.ItemsControl> instances prov
 Automatic values are only provided if the application targets .NET Framework 4.8. For applications that target an earlier version of the .NET Framework, you can set the `Switch.UseLegacyAccessibilityFeatures.3` [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), as shown in the following App.config file:
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<configuration> 
-   <startup> 
-      <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" /> 
-   </startup> 
-   <runtime> 
-      <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" /> 
-   </runtime> 
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+   <startup>
+      <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+   </startup>
+   <runtime>
+      <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
+   </runtime>
 </configuration>
 ```
 

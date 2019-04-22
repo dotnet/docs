@@ -247,7 +247,7 @@ items:
 
     [!code-csharp[IteratorMethod](~/samples/snippets/csharp/new-in-7/Iterator.cs#SnippetIteratorMethod "Iterator method")]
 
-    Run the code. Notice that the exception is thrown when the code begins iterating the second result set. The code that iterates the first result set has already run. This sample is both small and doesn't change any data structures, so it's harmless and easy to fix. But, in a larger program, where the two iterator objects may be created in different child methods the root cause could be hard to find. If the first iterator method changed data state, it could even cause data corruption. You'd prefer the exception was thrown immediately, before any work is done. You can refactor the code so that the public method validates all arguments, and a local function that performs the enumeration:
+    Run the code. Notice that the exception is thrown when the code begins iterating the second result set. The code that iterates the first result set has already run. This sample is both small and doesn't change any data structures, so it's harmless and easy to fix. But, in a larger program, where the two iterator objects may be created in different child methods the root cause could be hard to find. If the first iterator method changed data state, it could even cause data corruption. You'd prefer the exception was thrown immediately, before any work is done. You can refactor the code so that the public method validates all arguments, and a local function performs the enumeration:
 
     [!code-csharp[IteratorMethodRefactored](~/samples/snippets/csharp/new-in-7/Iterator.cs#IteratorMethodLocalInteractive "Iterator method refactored")]
 

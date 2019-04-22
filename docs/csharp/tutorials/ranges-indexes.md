@@ -1,6 +1,6 @@
 ---
-title: Explore ranges of data using indexes and ranges
-description: This advanced tutorial teaches you to explore data using indexes and ranges to examine slices of a sequential data set.
+title: Explore ranges of data using indices and ranges
+description: This advanced tutorial teaches you to explore data using indices and ranges to examine slices of a sequential data set.
 ms.date: 04/19/2019
 ms.custom: mvc
 ---

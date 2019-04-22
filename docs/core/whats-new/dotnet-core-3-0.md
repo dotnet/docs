@@ -67,25 +67,25 @@ Parsing and formatting fixes include:
 
 New <xref:System.Math?displayProperty=nameWithType> APIs include:
 
-* <xref:System.Math.BitIncrement(Double)> and <xref:System.Math.BitDecrement(Double)>\
+* <xref:System.Math.BitIncrement(System.Double)> and <xref:System.Math.BitDecrement(System.Double)>\
 Corresponds to the `nextUp` and `nextDown` IEEE operations. They return the smallest floating-point number that compares greater or lesser than the input (respectively). For example, `Math.BitIncrement(0.0)` would return `double.Epsilon`.
 
-* <xref:System.Math.MaxMagnitude(Double, Double)> and <xref:System.Math.MinMagnitude(Double, Double)>\
+* <xref:System.Math.MaxMagnitude(System.Double, System.Double)> and <xref:System.Math.MinMagnitude(System.Double, System.Double)>\
 Corresponds to the `maxNumMag` and `minNumMag` IEEE operations, they return the value that is greater or lesser in magnitude of the two inputs (respectively). For example, `Math.MaxMagnitude(2.0, -3.0)` would return `-3.0`.
 
-* <xref:System.Math.ILogB(Double)>\
+* <xref:System.Math.ILogB(System.Double)>\
 Corresponds to the `logB` IEEE operation that returns an integral value, it returns the integral base-2 log of the input parameter. This method is effectively the same as `floor(log2(x))`, but done with minimal rounding error.
 
-* <xref:Systen.Math.ScaleB(Double, Int32)>\
+* <xref:Systen.Math.ScaleB(System.Double, System.Int32)>\
 Corresponds to the `scaleB` IEEE operation that takes an integral value, it returns effectively `x * pow(2, n)`, but is done with minimal rounding error.
 
-* <xref:System.Math.Log2(Double)>\
+* <xref:System.Math.Log2(System.Double)>\
 Corresponds to the `log2` IEEE operation, it returns the base-2 logarithm. It minimizes rounding error.
 
-* <xref:System.Math.FusedMultiplyAdd(Double, Double, Double)>\
+* <xref:System.Math.FusedMultiplyAdd(System.Double, System.Double, System.Double)>\
 Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That is, it does `(x * y) + z` as a single operation, there-by minimizing the rounding error. An example would be `FusedMultiplyAdd(1e308, 2.0, -1e308)` which returns `1e308`. The regular `(1e308 * 2.0) - 1e308` returns `double.PositiveInfinity`.
 
-* <xref:System.Math.CopySign(Double, Double)>\
+* <xref:System.Math.CopySign(System.Double, System.Double)>\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
 
@@ -205,9 +205,9 @@ The new built-in JSON support is high-performance, low allocation, and based on 
 
 Here is an example of reading through the [**launch.json**](~/samples/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
 
-[!CODE-csharp[Utf8JsonReader](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#PrintJsonCall)]
-
 [!CODE-csharp[Utf8JsonReader](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#PrintJson)]
+
+[!CODE-csharp[Utf8JsonReader](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#PrintJsonCall)]
 
 ### Utf8JsonWriter
 
@@ -301,7 +301,7 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 ## SerialPort for Linux
 
-.NET Core 3.0 now supports <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
+.NET Core 3.0 supports <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
 
 Previously, .NET Core only supported using `SerialPort` on Windows.
 

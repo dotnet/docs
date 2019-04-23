@@ -233,6 +233,8 @@ The compiler generates more efficient code when you call members of a
 is always an `in` parameter passed by reference to the member method. This optimization
 saves copying when you use a `readonly struct` as an `in` argument.
 
+You should not pass a nullable value type as an `in` argument. The type <xref:System.Nullable%601> is not declared as a readonly struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
+
 You can see an example program that demonstrates the performance differences using [Benchmark.net](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/master/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
 
 ## Use `ref struct` types to work with blocks or memory on a single stack frame

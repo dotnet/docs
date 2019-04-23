@@ -13,6 +13,9 @@
   - name: Equality operators
     href: equality-operators.md
     displayName: ==, !=
+  - name: Relational operators
+    href: relational-operators.md
+    displayName: ">, <, >=, <=, greater, less"
   - name: "[] Operator"
     href: index-operator.md
   - name: () Operator
@@ -33,16 +36,8 @@
     href: and-operator.md
   - name: = Operator
     href: assignment-operator.md
-  - name: < Operator
-    href: less-than-operator.md
-  - name: "> Operator"
-    href: greater-than-operator.md
   - name: "?: Operator"
     href: conditional-operator.md
-  - name: <= Operator
-    href: less-than-equal-operator.md
-  - name: ">= Operator"
-    href: greater-than-equal-operator.md
   - name: += Operator
     href: addition-assignment-operator.md
   - name: -= Operator

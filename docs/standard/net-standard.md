@@ -23,7 +23,7 @@ The various .NET implementations target specific versions of .NET Standard. Each
 
 The following table lists the **minimum** platform versions that support each .NET Standard version. That means that later versions of a listed platform also support the corresponding .NET Standard version. For example, .NET Core 2.2 supports .NET Standard 2.0 and earlier.
 
-[!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
+[!INCLUDE [net-standard-table](../../includes/net-standard-table.md)]
 
 To find the highest version of .NET Standard that you can target, do the following steps:
 

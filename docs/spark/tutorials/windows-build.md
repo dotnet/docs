@@ -1,25 +1,25 @@
 ---
-title: Build .NET for Apache Spark on Windows
-description: Discover how to build .NET for Apache Spark on Windows.
+title: Build .NET for Apache Spark sample applications on Windows
+description: Discover how to build .NET for Apache Spark applications on Windows.
 ms.date: 05/01/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a .NET developer, I want to use Apache Spark.
 ---
-# Tutorial: Build .NET for Apache Spark on Windows
+# Tutorial: Build .NET for Apache Spark sample applications on Windows
 
-This tutorial teaches you how to build .NET for Apache Spark on Windows. Once you have built .NET for Spark, you will run several sample applications.
+This tutorial teaches you how to build .NET for Apache Spark applications on Windows. Once you have prepared your environment, you will run several sample applications.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Prepare your environment for .NET for Spark
-> * Build the .NET for Spark Scala Extensions Layer
+> * Prepare your Windows environment for .NET for Spark
 > * Build and run .NET sample applications
-
 
 ## Prepare your environment
 
-1.  Download and install the [.NET Core 2.1x SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1). Installing the SDK adds the `dotnet` toolchain to your path. Use the PowerShell command `dotnet --version` to verify the installation.
+Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command-line. If your environment is already prepared, you can skip to the next section. If you cannot run any or all of the commands, follow the steps below.
+
+1.  Download and install the [.NET Core 2.1x SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1). Installing the SDK adds the `dotnet` toolchain to your PATH. Use the PowerShell command `dotnet --version` to verify the installation.
 
 2. Install [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with the latest updates. You can use Community, Professional, or Enterprise. The Community version is free. 
 
@@ -47,35 +47,10 @@ In this tutorial, you learn how to:
     * Verify you are able to run `spark-shell` from your command-line.
 
 * Set up [WinUtils](https://github.com/steveloughran/winutils).
-    * Download the **winutils.exe** binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with. For example, you use **hadoop-2.7.1** for **Spark 2.3.2**. The Hadoop version is annotated at the end of 
-    * Save winutils.exe binary to a directory of your choice, e.g. c:\hadoop\bin.
-    * Set `HADOOP_HOME` to reflect the directory with winutils.exe (without bin). For instance, using command-line:
-    ```cmd
-    set HADOOP_HOME=c:\hadoop
-    ```
-    * Set PATH environment variable to include `%HADOOP_HOME%\bin`. For instance, using command-line:
-    ```cmd
-    set PATH=%HADOOP_HOME%\bin;%PATH%
-    ```
-
-You may recieve the following error:
- 
-> ERROR Shell:397 - Failed to locate the winutils binary in the hadoop binary path
-> java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
-        
-You can ignore this if you are planning on running Spark in [Standalone mode](https://spark.apache.org/docs/latest/spark-standalone.html). If not, you would have to setup [WinUtils](https://github.com/steveloughran/winutils).
-        
-   * Download **winutils.exe** binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with, e.g. use hadoop-2.7.1 for Spark 2.3.2.
-   * Save **winutils.exe** binary to a directory of your choice, e.g. c:\hadoop\bin.
-   * Set `HADOOP_HOME` to reflect the directory with **winutils.exe** (without bin). For instance, using command-line:
-    ```cmd
-    set HADOOP_HOME=c:\hadoop
-    ```
-           
-   * Set PATH environment variable to include `%HADOOP_HOME%\bin`. For instance, using command-line:
-    ```
-    set PATH=%HADOOP_HOME%\bin;%PATH%
-    ```
+    * Download the **winutils.exe** binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with. For example, you use **hadoop-2.7.1** for **Spark 2.3.2**. The Hadoop version is annotated at the end of your Spark install folder name.
+    * Save the **winutils.exe** binary to a directory of your choice. For example, `c:\hadoop\bin`.
+    * Set `HADOOP_HOME` to reflect the directory with **winutils.exe** without `bin`. For example, `c:\hadoop`.
+    * Set the PATH environment variable to include `%HADOOP_HOME%\bin`.
 
 Please make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your command-line before you move to the next section.
 
@@ -84,7 +59,7 @@ Please make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from
 Use the following [GitBash](https://gitforwindows.org/) command to clone the .NET for Apache Spark repo to your machine. 
 
 ```bash
-git clone https://github.com/dotnet/spark.git
+git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
 ```
 
 ## Building .NET for Spark Scala extensions layer
@@ -106,55 +81,49 @@ You should see JARs created for the supported Spark versions:
 
 1. Open `src\csharp\Microsoft.Spark.sln` in Visual Studio and build the `Microsoft.Spark.CSharp.Examples` project under the `examples` folder. This build will also build the .NET bindings project. If you want, you can write your own code in the `Microsoft.Spark.Examples` project:
   
-      ```csharp
-        // Instantiate a session
-        var spark = SparkSession
-            .Builder()
-            .AppName("Hello Spark!")
-            .GetOrCreate();
+```csharp
+// Instantiate a session
+var spark = SparkSession
+    .Builder()
+    .AppName("Hello Spark!")
+    .GetOrCreate();
 
-        var df = spark.Read().Json(args[0]);
+var df = spark.Read().Json(args[0]);
 
-        // Print schema
-        df.PrintSchema();
+// Print schema
+df.PrintSchema();
 
-        // Apply a filter and show results
-        df.Filter(df["age"] > 21).Show();
-      ```
-     Once the build is successfuly, you will see the appropriate binaries produced in the output directory.
-     <details>
-     <summary>&#x1F4D9; Click to see sample console output</summary>
-     
-      ```
-            Directory: C:\github\spark-dot-net\examples\Microsoft.Spark.CSharp.Examples\bin\Debug\net461
+// Apply a filter and show results
+df.Filter(df["age"] > 21).Show();
+```
+
+Once the build is successful, you will see the appropriate binaries produced in the output directory.
+
+`Directory: C:\github\spark-dot-net\examples\Microsoft.Spark.CSharp.Examples\bin\Debug\net461`
 
 
-        Mode                LastWriteTime         Length Name
-        ----                -------------         ------ ----
-        -a----         3/6/2019  12:18 AM         125440 Apache.Arrow.dll
-        -a----        3/16/2019  12:00 AM          13824 Microsoft.Spark.CSharp.Examples.exe
-        -a----        3/16/2019  12:00 AM          19423 Microsoft.Spark.CSharp.Examples.exe.config
-        -a----        3/16/2019  12:00 AM           2720 Microsoft.Spark.CSharp.Examples.pdb
-        -a----        3/16/2019  12:00 AM         143360 Microsoft.Spark.dll
-        -a----        3/16/2019  12:00 AM          63388 Microsoft.Spark.pdb
-        -a----        3/16/2019  12:00 AM          34304 Microsoft.Spark.Worker.exe
-        -a----        3/16/2019  12:00 AM          19423 Microsoft.Spark.Worker.exe.config
-        -a----        3/16/2019  12:00 AM          11900 Microsoft.Spark.Worker.pdb
-        -a----        3/16/2019  12:00 AM          23552 Microsoft.Spark.Worker.xml
-        -a----        3/16/2019  12:00 AM         332363 Microsoft.Spark.xml
-        ------------------------------------------- More framework files -------------------------------------
-      ```
-
-      </details>
-
-
+|Mode|LastWriteTime|Length Name|
+|----|-------------|-----------|
+|-a----|3/6/2019  12:18 AM|25440 Apache.Arrow.dll|
+|-a----|3/16/2019  12:00 AM|13824|Microsoft.Spark.CSharp.Examples.exe|
+|-a----|3/16/2019  12:00 AM|9423|Microsoft.Spark.CSharp.Examples.exe.config|
+|-a----|3/16/2019  12:00 AM|720|Microsoft.Spark.CSharp.Examples.pdb|
+|-a----|3/16/2019  12:00 AM|43360|Microsoft.Spark.dll|
+|-a----|3/16/2019  12:00 AM|3388|Microsoft.Spark.pdb|
+|-a----|3/16/2019  12:00 AM|4304|Microsoft.Spark.Worker.exe|
+|-a----|3/16/2019  12:00 AM|9423|Microsoft.Spark.Worker.exe.config|
+|-a----|3/16/2019  12:00 AM|1900|Microsoft.Spark.Worker.pdb|
+|-a----|3/16/2019  12:00 AM|3552|Microsoft.Spark.Worker.xml|
+|-a----|3/16/2019  12:00 AM|32363|Microsoft.Spark.xml
 
 # Run Samples
 
-Once you build the samples, running them will be through `spark-submit` regardless of whether you are targeting .NET Framework or .NET Core apps. Make sure you have followed the [pre-requisites](#pre-requisites) section and installed Apache Spark.
+Once you build the samples, running them will be through `spark-submit` regardless of whether you are targeting .NET Framework or .NET Core apps.
 
-  1. Open Powershell and go to the directory where your app binary has been generated (e.g., `c:\github\dotnet\spark\examples\Microsoft.Spark.CSharp.Examples\bin\Debug\net461` for .NET Framework, `c:\github\spark-dot-net\examples\Microsoft.Spark.CSharp.Examples\bin\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core)
+  1. Open Powershell and go to the directory where your app binary has been generated. For example, `c:\github\dotnet\spark\examples\Microsoft.Spark.CSharp.Examples\bin\Debug\net461` for .NET Framework, and  `c:\github\spark-dot-net\examples\Microsoft.Spark.CSharp.Examples\bin\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core.
+
   2. Running your app follows the basic structure:
+
      ```powershell
      spark-submit.cmd `
        [--jars <any-jars-your-app-is-dependent-on>] `
@@ -164,7 +133,8 @@ Once you build the samples, running them will be through `spark-submit` regardle
        <path-to-your-app-exe> <argument(s)-to-your-app>
      ```
 
-     Here are some examples you can run:
+    Run the following examples:
+
      - **[Microsoft.Spark.Examples.Sql.Basic](../../examples/Microsoft.Spark.CSharp.Examples/Sql/Basic.cs)**
          ```powershell
          spark-submit.cmd `
@@ -200,18 +170,10 @@ Once you build the samples, running them will be through `spark-submit` regardle
          Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
           ```
 
-Feel this experience is complicated? Help us by taking up [Simplify User Experience for Running an App](https://github.com/dotnet/spark/issues/6)
-
-Congratulations! You've now successfully built a machine learning model for image classification by reusing a pre-trained `TensorFlow` model in ML.NET.
-
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository.
+Congratulations! You've now successfully built and executed several .NET for Apache Spark applications.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Understand the problem
-> * Reuse and tune the pre-trained model
-> * Classify images with a loaded model
+> * Prepare your Windows environment for .NET for Spark
+> * Build and run .NET sample applications
 
-Check out the Machine Learning samples GitHub repository to explore an expanded image classification sample.
-> [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/)

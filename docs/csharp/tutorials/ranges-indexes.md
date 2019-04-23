@@ -59,17 +59,19 @@ You can also declare ranges or indices as variables. The variable can then be us
 
 [!code-csharp[IndexRangeTypes](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_RangeIndexTypes)]
 
-The previous examples show two design decisions that caused much debate:
+The previous examples show two design decisions that require more explanation:
 
 - Ranges are *exclusive*, meaning the element at the last index isn't in the range.
 - The index `^0` is *the end* of the collection, not *the last element* in the collection.
 
-The following sample shows many of the reasons for those choices. Modify `x`, `y`, and `z` to try different combinations. When you experiment, use values where `x` is less than `y`, and `y` is less than `z` for valid combinations. Try other combinations to see error conditions. Try the following code in the interactive window in your browser.
+The following sample shows many of the reasons for those choices. Modify `x`, `y`, and `z` to try different combinations. When you experiment, use values where `x` is less than `y`, and `y` is less than `z` for valid combinations. Add the following code in a new method. Try different combinations:
 
-[!code-csharp-interactive[SemanticsExamples](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
+[!code-csharp[SemanticsExamples](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
 
 ## Scenarios for Indices and Ranges
 
-You'll often use ranges and indices when you want to perform some analysis on subrange of an entire sequence. The new syntax is clearer in reading exactly what subrange is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in the browser:
+You'll often use ranges and indices when you want to perform some analysis on subrange of an entire sequence. The new syntax is clearer in reading exactly what subrange is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in your project:
 
-[!code-csharp-interactive[MovingAverages](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]
+[!code-csharp[MovingAverages](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]
+
+You can download the completed code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/RangesIndexes) repository.

@@ -239,7 +239,7 @@ Other unsupported interop features include:
 - <xref:System.Runtime.InteropServices.UnmanagedType.AsAny?displayProperty=fullName>  
 - <xref:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler?displayProperty=fullName>  
   
- Rarely used marshalling APIs:  
+ Rarely used marshaling APIs:  
   
 - <xref:System.Runtime.InteropServices.Marshal.ReadByte%28System.Object%2CSystem.Int32%29?displayProperty=fullName>  
 - <xref:System.Runtime.InteropServices.Marshal.ReadInt16%28System.Object%2CSystem.Int32%29?displayProperty=fullName>  

@@ -34,7 +34,7 @@ public class Program
 The previous example is simple, but it does show off what's needed to invoke unmanaged functions from managed code. Let’s step through the example:
 
 *   Line #1 shows the using statement for the `System.Runtime.InteropServices` namespace that holds all the items needed.
-*   Line #7 introduces the `DllImport` attribute. This attribute is crucial, as it tells the runtime that it should load the unmanaged DLL. The string passed in is the DLL our target function is in. Additionally, it specifies which [character set](./charset.md) to use for marshalling the strings. Finally, it specifies that this function calls [SetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) and that the runtime should capture that error code so the user can retrieve it via <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error?displayProperty=nameWithType>.
+*   Line #7 introduces the `DllImport` attribute. This attribute is crucial, as it tells the runtime that it should load the unmanaged DLL. The string passed in is the DLL our target function is in. Additionally, it specifies which [character set](./charset.md) to use for marshaling the strings. Finally, it specifies that this function calls [SetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) and that the runtime should capture that error code so the user can retrieve it via <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error?displayProperty=nameWithType>.
 *   Line #8 is the crux of the P/Invoke work. It defines a managed method that has the **exact same signature** as the unmanaged one. The declaration has a new keyword that you can notice, `extern`, which tells the runtime this is an external method, and that when you invoke it, the runtime should find it in the DLL specified in `DllImport` attribute.
 
 The rest of the example is just invoking the method as you would any other managed method.
@@ -173,7 +173,7 @@ namespace PInvokeSamples
 
     // The native callback takes a pointer to a struct. The below class
     // represents that struct in managed code. You can find more information
-    // about this in the section on marshalling below.
+    // about this in the section on marshaling below.
     [StructLayout(LayoutKind.Sequential)]
     public class StatClass
     {
@@ -249,7 +249,7 @@ namespace PInvokeSamples
 }
 ```
 
-Both of the previous examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Learn about how types are marshalled to native code in our page on [Type marshalling](type-marshalling.md).
+Both of the previous examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Learn about how types are marshaled to native code in our page on [Type marshaling](type-marshaling.md).
 
 ## More resources
 

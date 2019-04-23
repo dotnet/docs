@@ -2454,6 +2454,7 @@
     - name: Data transforms
       href: machine-learning/resources/transforms.md
 - name: .NET for Apache Spark Guide
+  href: spark/index.md
   items:
   - name: Overview
     items:
@@ -2465,8 +2466,11 @@
       href: spark/tutorials/windows-build.md
     - name: Ubuntu sample apps
       href: spark/tutorials/ubuntu-build.md
-  - name: How-to guides
   - name: Reference
   - name: Resources
+    href: spark/resources/index.md
+    items:
+    - name: Submit a Git Issue
+      href: https://github.com/dotnet/spark/issues
 - name: Samples and Tutorials
   href: samples-and-tutorials/index.md

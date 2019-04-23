@@ -16,11 +16,13 @@ To learn about .NET for Apache Spark, see [What is .NET for Apache Spark?](what-
 
 [Build .NET for Apache Spark sample applications on Windows](./tutorials/windows-build.md) shows you how to run several sample .NET for Apache Spark applications on Windows.
 
-## How to guide
+[Build .NET for Apache Spark sample applications on Ubuntu](./tutorials/ubuntu-build.md) shows you how to run several sample .NET for Apache Spark applications on Ubuntu.
 
 
 ## Resources
 
+[Resources overview](./resources/index.md)
+[Submit a Git Issue](https://github.com/dotnet/spark/issues).
 
 ## API reference
 

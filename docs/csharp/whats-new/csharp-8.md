@@ -377,3 +377,5 @@ The range can then be used inside the `[` and `]` characters:
 ```csharp
 var text = words[phrase];
 ```
+
+You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).

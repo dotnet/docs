@@ -17,10 +17,10 @@ This how-to and related sample are currently using **ML.NET version 0.10**. For 
 
 ## Prerequisites
 
-- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed. 
+- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - Powershell
-- Pre-trained model. 
+- Pre-trained model.
     - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
     - Download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
@@ -78,75 +78,74 @@ You need to create some classes for your input data and predictions. Add a new c
 2. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
 3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
 
-```csharp
-using Microsoft.ML.Data;
-```
+    ```csharp
+    using Microsoft.ML.Data;
+    ```
 
-Remove the existing class definition and add the following code to the SentimentData.cs file:
+    Remove the existing class definition and add the following code to the SentimentData.cs file:
 
-```csharp
-public class SentimentData
-{
-    [LoadColumn(0)]
-    public bool Label { get; set; }
-    [LoadColumn(1)]
-    public string Text { get; set; }
-}
-```
+    ```csharp
+    public class SentimentData
+    {
+        [LoadColumn(0)]
+        public bool Label { get; set; }
+        [LoadColumn(1)]
+        public string Text { get; set; }
+    }
+    ```
 
 4. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
 5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the **Add** button. The *SentimentPrediction.cs* file opens in the code editor. Add the following using statement to the top of *SentimentPrediction.cs*:
 
-```csharp
-using Microsoft.ML.Data;
-```
+    ```csharp
+    using Microsoft.ML.Data;
+    ```
 
-Remove the existing class definition and add the following code to the *SentimentPrediction.cs* file:
+    Remove the existing class definition and add the following code to the *SentimentPrediction.cs* file:
 
-```csharp
-public class SentimentPrediction
-{
-    [ColumnName("PredictedLabel")]
-    public bool Prediction { get; set; }
-}
-```
+    ```csharp
+    public class SentimentPrediction
+    {
+        [ColumnName("PredictedLabel")]
+        public bool Prediction { get; set; }
+    }
+    ```
 
 ### Add Prediction Logic
 
 Replace the existing implementation of *Run* method in *AnalyzeSentiment* class with the following code:
 
 ```csharp
-    public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function,"post", Route = null)] HttpRequest req,
-        ILogger log)
+public static async Task<IActionResult> Run(
+    [HttpTrigger(AuthorizationLevel.Function,"post", Route = null)] HttpRequest req,
+    ILogger log)
+{
+    log.LogInformation("C# HTTP trigger function processed a request.");
+
+    //Create Context
+    MLContext mlContext = new MLContext();
+
+    //Load Model
+    using (var fs = File.OpenRead("MLModels/sentiment_model.zip"))
     {
-        log.LogInformation("C# HTTP trigger function processed a request.");
-
-        //Create Context
-        MLContext mlContext = new MLContext();
-
-        //Load Model
-        using (var fs = File.OpenRead("MLModels/sentiment_model.zip"))
-        {
-            model = mlContext.Model.Load(fs);
-        }
-
-        //Parse HTTP Request Body
-        string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-        SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
-
-        //Create Prediction Engine
-        PredictionEngine<SentimentData, SentimentPrediction> predictionEngine = model.CreatePredictionEngine<SentimentData, SentimentPrediction>(mlContext);
-
-        //Make Prediction
-        SentimentPrediction prediction = predictionEngine.Predict(data);
-
-        //Convert prediction to string
-        string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
-
-        //Return Prediction
-        return (ActionResult)new OkObjectResult(isToxic);
+        model = mlContext.Model.Load(fs);
     }
+
+    //Parse HTTP Request Body
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+    SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
+
+    //Create Prediction Engine
+    PredictionEngine<SentimentData, SentimentPrediction> predictionEngine = model.CreatePredictionEngine<SentimentData, SentimentPrediction>(mlContext);
+
+    //Make Prediction
+    SentimentPrediction prediction = predictionEngine.Predict(data);
+
+    //Convert prediction to string
+    string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
+
+    //Return Prediction
+    return (ActionResult)new OkObjectResult(isToxic);
 }
 ```
 
@@ -155,7 +154,7 @@ Replace the existing implementation of *Run* method in *AnalyzeSentiment* class 
 Now that everything is set up, it's time to test the application:
 
 1. Run the application
-1. Open PowerShell and enter the code into the prompt where PORT is the port your application is running on. Typically the port is 7071. 
+1. Open PowerShell and enter the code into the prompt where PORT is the port your application is running on. Typically the port is 7071.
 
 ```powershell
 Invoke-RestMethod "http://localhost:<PORT>/api/AnalyzeSentiment" -Method Post -Body (@{Text="This is a very rude movie"} | ConvertTo-Json) -ContentType "application/json"

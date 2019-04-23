@@ -83,7 +83,7 @@ The `is` expression is `true` if *expr* isn't `null`, and any of the following i
 
 Beginning with C# 7.1, *expr* may have a compile-time type defined by a generic type parameter and its constraints. 
 
-If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned and has local scope within the `if` statement only.
+If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned within the `if` statement only. The scope of *varname* is from the `is` expression to the end of the block enclosing the `if` statement. Using *varname* in any other location generates a compile-time error for use of a variable that has not been assigned.
 
 The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=nameWithType> method.
 

@@ -126,7 +126,7 @@
  [!code-csharp[System.Threading.Tasks.Task#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/WaitAll1.cs#11)]
  [!code-vb[System.Threading.Tasks.Task#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/WaitAll1.vb#11)]  
   
- Note that when you wait for one or more tasks to complete, any exceptions thrown in the running tasks are propagated on the thread that calls the `Wait` method, as the following example shows. It launches 12 tasks, three of which complete normally and three of which throw an exception. Of the remaining six tasks, three are cancelled before the start, and three are cancelled while they executing. Exceptions are thrown in the <xref:System.Threading.Tasks.Task.WaitAll%2A> method call and are handled by a `try`/`catch` block.  
+ Note that when you wait for one or more tasks to complete, any exceptions thrown in the running tasks are propagated on the thread that calls the `Wait` method, as the following example shows. It launches 12 tasks, three of which complete normally and three of which throw an exception. Of the remaining six tasks, three are cancelled before they start, and three are cancelled while they are executing. Exceptions are thrown in the <xref:System.Threading.Tasks.Task.WaitAll%2A> method call and are handled by a `try`/`catch` block.  
   
  [!code-csharp[System.Threading.Tasks.Task#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/WaitAll2.cs#12)]
  [!code-vb[System.Threading.Tasks.Task#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/WaitAll2.vb#12)]  

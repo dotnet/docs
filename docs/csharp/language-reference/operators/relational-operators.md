@@ -21,18 +21,12 @@ helpviewer_keywords:
 ---
 # Relational operators (C# Reference)
 
-The [`>` (greater than)](#greater-than-operator-), [`<` (less than)](#less-than-operator-), [`>=` (greater than or equal)](#greater-than-or-equal-operator-), and [`<=` (less than or equal)](#less-than-or-equal-operator-) relational operators compare two operands. Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
+The [`<` (less than)](#less-than-operator-), [`>` (greater than)](#greater-than-operator-), [`<=` (less than or equal)](#less-than-or-equal-operator-), and [`>=` (greater than or equal)](#greater-than-or-equal-operator-) relational operators compare two operands. Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
 
 > [!NOTE]
 > For equality and relational operators `==`, `>`, `<`, `>=`, and `<=`, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
 Enumeration types also support relational operators. For operands of the same [enum](../keywords/enum.md) type, the corresponding values of the underlying integral type are compared.
-
-## Greater than operator >
-
-The `>` operator returns `true` if its first operand is greater than its second operand, `false` otherwise:
-
-[!code-csharp-interactive[greater than example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#Greater)]
 
 ## Less than operator \<
 
@@ -40,11 +34,11 @@ The `<` operator returns `true` if its first operand is less than its second ope
 
 [!code-csharp-interactive[less than example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#Less)]
 
-## Greater than or equal operator >=
+## Greater than operator >
 
-The `>=` operator returns `true` if its first operand is greater than or equal to its second operand, `false` otherwise:
+The `>` operator returns `true` if its first operand is greater than its second operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than or equal example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#GreaterOrEqual)]
+[!code-csharp-interactive[greater than example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#Greater)]
 
 ## Less than or equal operator \<=
 
@@ -52,9 +46,15 @@ The `<=` operator returns `true` if its first operand is less than or equal to i
 
 [!code-csharp-interactive[less than or equal example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#LessOrEqual)]
 
+## Greater than or equal operator >=
+
+The `>=` operator returns `true` if its first operand is greater than or equal to its second operand, `false` otherwise:
+
+[!code-csharp-interactive[greater than or equal example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#GreaterOrEqual)]
+
 ## Operator overloadability
 
-A user-defined type can [overload](../keywords/operator.md) the `>`, `<`, `>=`, and `<=` operators.
+A user-defined type can [overload](../keywords/operator.md) the `<`, `>`, `<=`, and `>=` operators.
 
 If a type overloads one of the `<` or `>` operators, it must also overload another one. If a type overloads one of the `<=` or `>=` operators, it must also overload another one.
 

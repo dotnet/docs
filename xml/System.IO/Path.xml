@@ -808,7 +808,7 @@ This method obtains the extension of `path` by searching `path` for a period (".
       </Parameters>
       <Docs>
         <param name="path">The path string from which to get the extension.</param>
-        <summary>Returns the extension of the specified path string.</summary>
+        <summary>Returns the extension (including the period ".") of the specified path string.</summary>
         <returns>The extension of the specified path (including the period "."), or <see langword="null" />, or <see cref="F:System.String.Empty" />. If <paramref name="path" /> is <see langword="null" />, <see cref="M:System.IO.Path.GetExtension(System.String)" /> returns <see langword="null" />. If <paramref name="path" /> does not have extension information, <see cref="M:System.IO.Path.GetExtension(System.String)" /> returns <see cref="F:System.String.Empty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

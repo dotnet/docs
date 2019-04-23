@@ -96,12 +96,11 @@ Additional datasets are posted using a standard URL format. Replace `<YEAR>` wit
 
 ## License
 
-The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIBRARY EULA](https://aka.ms/dotnet-core-eula). This license includes the "DATA" section to enable telemetry (shown below).
+
+The Microsoft distribution of .NET Core is licensed with the [Microsoft Software License Terms: Mirosoft .NET Library](https://aka.ms/dotnet-core-eula). For details on data collection and processing, see the section entitled "Data."
 
 [.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use the same license but don't enable telemetry (see [Scope](#scope)).
 
-<!-- markdownlint-disable MD029-->
-> 2. DATA. The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to improve our products and services. You can learn more about data collection and use in the help documentation and the privacy statement at <http://go.microsoft.com/fwlink/?LinkId=528096>. Your use of the software operates as your consent to these practices.
 
 ## Disclosure
 

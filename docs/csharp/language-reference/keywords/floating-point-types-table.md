@@ -1,7 +1,6 @@
 ---
 title: "Floating-point types table - C# Reference"
 ms.custom: seodec18
-
 description: "Overview of the built-in C# floating-point types"
 ms.date: 08/20/2018
 helpviewer_keywords: 

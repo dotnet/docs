@@ -25,7 +25,7 @@ This option specifies which codepage to use during compilation if the required p
 ## Remarks  
  If you compile one or more source code files that were not created to use the default code page on your computer, you can use the **-codepage** option to specify which code page should be used. **-codepage** applies to all source code files in your compilation.  
   
- If the source code files were created with the same codepage that is in effect on your computer or if the source code files were created with UNICODE or UTF-8, you need not use **-codepage**.  
+ If the source code files were created with the same codepage that is in effect on your computer or if the source code files are encoded as Unicode (e.g. UTF-8) with a Byte Order Mark (BOM), you need not use **-codepage**.  
   
  See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.  
   

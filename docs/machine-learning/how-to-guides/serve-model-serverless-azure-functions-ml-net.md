@@ -122,6 +122,9 @@ static ITransformer _model;
 // Define model's DataViewSchema
 static DataViewSchema _modelSchema;
 
+// Define PredictionEngine
+static PredictionEngine<SentimentData, SentimentPrediction> _predictionEngine;
+
 // AnalyzeSentiment class constructor
 static AnalyzeSentiment()
 {
@@ -130,10 +133,13 @@ static AnalyzeSentiment()
 
     // Load Model
     _model = _mlContext.Model.Load("MLModels/sentiment_model.zip", out _modelSchema);
+
+    // Create Prediction Engine
+    _predictionEngine = _mlContext.Model.CreatePredictionEngine<SentimentData, SentimentPrediction>(_model);
 }
 ```
 
-The constructor contains initialization logic for the [`MLContext`](xref:Microsoft.ML.MLContext) and model so that it can be shared throughout the lifecycle of the function instance. This approach reduces the need to load the model from disk each time the `Run` method executes. 
+The constructor contains initialization logic for the [`MLContext`](xref:Microsoft.ML.MLContext), model and [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) so that it can be shared throughout the lifecycle of the function instance. This approach reduces the need to load the model from disk each time the `Run` method executes. 
 
 ## Use the model to make predictions
 
@@ -149,12 +155,9 @@ ILogger log)
     //Parse HTTP Request Body
     string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
     SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
-
-    //Create Prediction Engine
-    PredictionEngine<SentimentData, SentimentPrediction> predictionEngine = _mlContext.Model.CreatePredictionEngine<SentimentData, SentimentPrediction>(_model);
-
+    
     //Make Prediction
-    SentimentPrediction prediction = predictionEngine.Predict(data);
+    SentimentPrediction prediction = _predictionEngine.Predict(data);
 
     //Convert prediction to string
     string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
@@ -163,6 +166,8 @@ ILogger log)
     return (ActionResult)new OkObjectResult(isToxic);
 }
 ```
+
+When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). The [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) method is then called to generate a prediction and return the result to the user. 
 
 ## Test Locally
 

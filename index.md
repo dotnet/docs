@@ -234,6 +234,24 @@ ms.date: "12/04/2018"
                                     </div>
                                 </div>
                             </li>
+                            <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/dotnet/images/hub/netspark.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3><a href="/dotnet/spark">.NET for Apache Spark Guide</a></h3>
+                                                <p><a href="/dotnet/spark/tutorials">Tutorials</a></p>
+                                                <p><a href="/dotnet/spark/resources">Resources</a></p>
+                                                <p><a href="/dotnet/api?view=spark-dotnet">.NET for Apache Spark API reference</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
@@ -719,6 +737,25 @@ ms.date: "12/04/2018"
                                                 <div class="cardText">
                                                     <h3>Azure Machine Learning</h3>
                                                     <p>Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/azure/spark">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/swimlane-net-spark.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>.NET for Apache Spark</h3>
+                                                    <p>Process batches of data, real-time streams, machine learning, and ad-hoc query anywhere you write .NET code.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -225,7 +225,7 @@ C# supports both instance and static constructors. An *instance constructor* is 
 
 A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
 
-Instance constructors can be overloaded, and can have optional parameters. For example, the `MyList<T>` class declares two instance constructors, one with no parameters and one that takes an `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `MyList<string>` instances using the constructor of the `MyList` class with and without the optional argument.
+Instance constructors can be overloaded and can have optional parameters. For example, the `MyList<T>` class declares one instance constructor with a single optional `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `MyList<string>` instances using the constructor of the `MyList` class with and without the optional argument.
 
 [!code-csharp[ListExample1](~/samples/snippets/csharp/tour/classes-and-objects/ListBasedExamples.cs#L95-L96)]
 

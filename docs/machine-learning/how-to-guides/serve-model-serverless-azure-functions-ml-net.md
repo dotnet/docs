@@ -133,7 +133,7 @@ static AnalyzeSentiment()
 }
 ```
 
-The constructor contains initialization logic for the [`MLContext`](xref:Microsoft.ML.MLContext) and model so that it can be shared throughout the lifecycle of the function instance. This approach reduces having to load the model from disk each time the `Run` method is executed. 
+The constructor contains initialization logic for the [`MLContext`](xref:Microsoft.ML.MLContext) and model so that it can be shared throughout the lifecycle of the function instance. This approach reduces the need to load the model from disk each time the `Run` method executes. 
 
 ## Use the model to make predictions
 

@@ -8,6 +8,7 @@ f1_keywords:
   - "!=_CSharpKeyword"
 helpviewer_keywords: 
   - "comparison operators [C#]"
+  - "relational operators [C#]"
   - "equality operator [C#]"
   - "equals operator [C#]"
   - "== operator [C#]"

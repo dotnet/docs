@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # -refout (C# Compiler Options)
 
-The **-refout** option specifies a file path where the reference assembly should be output. This translates to `metadataPeStream` in the Emit API.
+The **-refout** option specifies a file path where the reference assembly should be output. This translates to `metadataPeStream` in the Emit API. This option corresponds to the [ProduceReferenceAssembly](/visualstudio/msbuild/common-msbuild-project-properties) project property of MSBuild.
 
 ## Syntax
 

@@ -59,7 +59,5 @@ For more information, see [The address-of operator](~/_csharplang/spec/unsafe-co
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
 - [Boolean logical operators](boolean-logical-operators.md)
+- [Bitwise and shift operators](bitwise-and-shift-operators.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [| operator](or-operator.md)
-- [^ operator](xor-operator.md)
-- [~ operator](bitwise-complement-operator.md)

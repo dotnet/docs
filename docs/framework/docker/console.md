@@ -21,22 +21,24 @@ The [complete example](https://github.com/dotnet/samples/tree/master/framework/d
 You need to be familiar with some Docker terms before you begin working
 on moving your application to a container.
 
+> [!NOTE]
 > A *Docker image* is a read-only template that defines the environment
 > for a running container, including the operating system (OS), system components, and application(s).
 
 One important feature of Docker images is that images are composed from a
 base image. Each new image adds a small set of features to an existing
-image. 
+image.
 
-> A *Docker container* is a running instance of an image. 
+> [!NOTE]
+> A *Docker container* is a running instance of an image.
 
 You scale an application by running the same image in many containers.
 Conceptually, this is similar to running the same application in multiple
 hosts.
 
-You can learn more about the Docker architecture by reading the 
+You can learn more about the Docker architecture by reading the
 [Docker Overview](https://docs.docker.com/engine/understanding-docker/)
-on the Docker site. 
+on the Docker site.
 
 Moving your console application is a matter of a few steps.
 
@@ -45,7 +47,8 @@ Moving your console application is a matter of a few steps.
 1. [Process to build and run the Docker container](#creating-the-image)
 
 ## Prerequisites
-Windows containers are supported on [Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) or 
+
+Windows containers are supported on [Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) or
 [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server).
 
 > [!NOTE]
@@ -56,13 +59,14 @@ You need to have Docker for Windows, version 1.12 Beta 26 or higher to support W
 ![Screenshot of the Windows container menu option.](./media/console/windows-container-option.png)
 
 ## Building the application
+
 Typically console applications are distributed through an installer, FTP, or File Share deployment. When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.
 
 Here is the sample application: [ConsoleRandomAnswerGenerator](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator)
 
 In *build.ps1*<sup>[[source]](https://github.com/dotnet/samples/blob/master/framework/docker/ConsoleRandomAnswerGenerator/ConsoleRandomAnswerGenerator/build.ps1)</sup>, the script uses [MSBuild](/visualstudio/msbuild/msbuild) to compile the application to complete the task of building the assets. There are a few parameters passed to MSBuild to finalize the needed assets. The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).
 
-In the call to `Invoke-MSBuild` the `OutputPath` is set to **publish** and  `Configuration` set to **Release**. 
+In the call to `Invoke-MSBuild` the `OutputPath` is set to **publish** and  `Configuration` set to **Release**.
 
 ```powershell
 function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
@@ -75,14 +79,16 @@ Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAns
 ## Creating the Dockerfile
 The base image used for a console .NET Framework application is `microsoft/windowsservercore`, publicly available on [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/). The base image contains a minimal installation of Windows Server 2016, .NET Framework 4.6.2 and serves as the base OS image for Windows Containers.
 
-```
+```Dockerfile
 FROM microsoft/windowsservercore
 ADD publish/ /
 ENTRYPOINT ConsoleRandomAnswerGenerator.exe
 ```
-The first line in the Dockerfile designates the base image using the [`FROM`](https://docs.docker.com/engine/reference/builder/#/from) instruction. Next, [`ADD`](https://docs.docker.com/engine/reference/builder/#/add) in the file copies the application assets from the **publish** folder to root folder of the container and last; setting the [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#/entrypoint) of the image states that this is the command or application that will run when the container starts. 
+
+The first line in the Dockerfile designates the base image using the [`FROM`](https://docs.docker.com/engine/reference/builder/#/from) instruction. Next, [`ADD`](https://docs.docker.com/engine/reference/builder/#/add) in the file copies the application assets from the **publish** folder to root folder of the container and last; setting the [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#/entrypoint) of the image states that this is the command or application that will run when the container starts.
 
 ## Creating the image
+
 In order to create the Docker image, the following code is added to the *build.ps1* script. When the script is run, the `console-random-answer-generator` image is created using the assets compiled from MSBuild defined in the [Building the application](#building-the-application) section.
 
 ```powershell
@@ -106,6 +112,7 @@ console-random-answer-generator   latest              8f7c807db1b5        8 seco
 ```
 
 ## Running the container
+
 You can start the container from the command line using the Docker commands.
 
 ```
@@ -121,8 +128,8 @@ The answer to your question: 'Are you a square container?' is Concentrate and as
 If you run the `docker ps -a` command from PowerShell, you can see that the container still exists.
 
 ```
-CONTAINER ID        IMAGE                             COMMAND                  CREATED             STATUS                          
-70c3d48f4343        console-random-answer-generator   "cmd /S /C ConsoleRan"   2 minutes ago       Exited (0) About a minute ago      
+CONTAINER ID        IMAGE                             COMMAND                  CREATED             STATUS
+70c3d48f4343        console-random-answer-generator   "cmd /S /C ConsoleRan"   2 minutes ago       Exited (0) About a minute ago
 ```
 
 The STATUS column shows at "About a minute ago", the application was complete and could be shut down. If the command was run a hundred times, there would be a hundred containers left static with no work to do. In the beginning scenario the ideal operation was to do the work and shutdown or cleanup. To accomplish that workflow, adding the `--rm` option to the `docker run` command will remove the container as soon as the `Exited` signal is received.
@@ -134,6 +141,7 @@ docker run --rm console-random-answer-generator "Are you a square container?"
 Running the command with this option and then looking at the output of `docker ps -a` command; notice that the container id (the `Environment.MachineName`) is not in the list.
 
 ### Running the container using PowerShell
+
 In the sample project files there is also a *run.ps1* which is an example of how to use PowerShell to run the application accepting the arguments.
 
 To run, open PowerShell and use the following command:
@@ -143,4 +151,5 @@ To run, open PowerShell and use the following command:
 ```
 
 ## Summary
+
 Just by adding a Dockerfile and publishing the application, you can containerize your .NET Framework console applications and now take the advantage of running multiple instances, clean start and stop and more Windows Server 2016 capabilities without making any changes to the application code at all.

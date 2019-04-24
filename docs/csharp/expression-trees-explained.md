@@ -25,6 +25,7 @@ Here's a line of code:
 ```csharp
 var sum = 1 + 2;
 ```
+
 If you were to analyze this as an expression tree, the tree contains several nodes.
 The outermost node is a variable declaration statement with assignment (`var sum = 1 + 2;`)
 That outermost node contains several child nodes: a variable declaration, an assignment operator, and an

@@ -4,7 +4,7 @@ description: Learn how to build a simple .NET Core console application with Visu
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-dev_langs: 
+dev_langs:
   - "vb"
 ms.custom: "vs-dotnet, seodec18"
 ---
@@ -25,7 +25,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual Basic** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
 
    ![New Project dialog with Console App selected](./media/vb-with-visual-studio/visual-studio-new-project.png)
-   
+
 1. Visual Studio uses the template to create your project. The Visual Basic Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
    ![Visual Studio and the new HelloWorld project](./media/vb-with-visual-studio/visual-studio-main-window.png)
@@ -38,6 +38,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
    Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
+
    This code prompts the user to press any key and then pauses the program until a key is pressed.
 
 1. On the menu bar, select **Build** > **Build Solution**. This compiles your program into an intermediate language (IL) that's converted into binary code by a just-in-time (JIT) compiler.

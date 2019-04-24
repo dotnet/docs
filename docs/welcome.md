@@ -45,7 +45,7 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
 - [ML.NET Guide](machine-learning/index.yml)
-- [.NET for Apache Spark](spark/index.md)
+- [.NET for Apache Spark](spark/index.yml)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
 

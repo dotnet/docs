@@ -1,32 +1,35 @@
 ---
 title: "Relational operators - C# Reference"
+description: "Learn about C# comparison operators that you can use to check the order of numeric values."
 ms.date: 04/25/2019
 author: pkulikov
 f1_keywords: 
-  - ">_CSharpKeyword"
   - "<_CSharpKeyword"
-  - ">=_CSharpKeyword"
+  - ">_CSharpKeyword"
   - "<=_CSharpKeyword"
+  - ">=_CSharpKeyword"
 helpviewer_keywords: 
   - "comparison operators [C#]"
   - "relational operators [C#]"
-  - "greater than operator [C#]"
-  - "> operator [C#]"
   - "less than operator [C#]"
   - "< operator [C#]"
-  - "greater than or equal to operator [C#]"
-  - ">= operator [C#]"
+  - "greater than operator [C#]"
+  - "> operator [C#]"
   - "less than or equal to operator [C#]"
   - "<= operator [C#]"
+  - "greater than or equal to operator [C#]"
+  - ">= operator [C#]"
 ---
 # Relational operators (C# Reference)
 
-The [`<` (less than)](#less-than-operator-), [`>` (greater than)](#greater-than-operator-), [`<=` (less than or equal)](#less-than-or-equal-operator-), and [`>=` (greater than or equal)](#greater-than-or-equal-operator-) relational operators compare two operands. Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
+The [`<` (less than)](#less-than-operator-), [`>` (greater than)](#greater-than-operator-), [`<=` (less than or equal)](#less-than-or-equal-operator-), and [`>=` (greater than or equal)](#greater-than-or-equal-operator-) relational operators compare their operands. Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
 
 > [!NOTE]
 > For equality and relational operators `==`, `>`, `<`, `>=`, and `<=`, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
 Enumeration types also support relational operators. For operands of the same [enum](../keywords/enum.md) type, the corresponding values of the underlying integral type are compared.
+
+The [`==` and `!=` operators](equality-operators.md) check if their operands are equal or not.
 
 ## Less than operator \<
 

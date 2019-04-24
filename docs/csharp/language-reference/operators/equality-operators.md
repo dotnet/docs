@@ -1,5 +1,6 @@
 ---
 title: "Equality operators - C# Reference"
+description: "Learn about C# equality comparison operators."
 ms.date: 03/28/2019
 author: pkulikov
 f1_keywords: 

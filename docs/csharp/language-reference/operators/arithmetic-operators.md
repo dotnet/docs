@@ -157,23 +157,6 @@ The subtraction operator `-` subtracts its second operand from its first operand
 
 You also can use the `-` operator for delegate removal. For more information, see the [`-` operator](subtraction-operator.md) article.
 
-## Operator precedence and associativity
-
-The following list orders arithmetic operators starting from the highest precedence to the lowest:
-
-- Postfix increment `x++` and decrement `x--` operators
-- Prefix increment `++x` and decrement `--x` and unary `+` and `-` operators
-- Multiplicative `*`, `/`, and `%` operators
-- Additive `+` and `-` operators
-
-Binary arithmetic operators are left-associative. That is, operators with the same precedence level are evaluated from left to right.
-
-Use parentheses, `()`, to change the order of evaluation imposed by operator precedence and associativity.
-
-[!code-csharp-interactive[precedence and associativity](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#PrecedenceAndAssociativity)]
-
-For the complete list of C# operators ordered by precedence level, see [C# operators](index.md).
-
 ## Compound assignment
 
 For a binary operator `op`, a compound assignment expression of the form
@@ -199,6 +182,23 @@ Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promot
 [!code-csharp-interactive[compound assignment with cast](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignmentWithCast)]
 
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from [events](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+
+## Operator precedence and associativity
+
+The following list orders arithmetic operators starting from the highest precedence to the lowest:
+
+- Postfix increment `x++` and decrement `x--` operators
+- Prefix increment `++x` and decrement `--x` and unary `+` and `-` operators
+- Multiplicative `*`, `/`, and `%` operators
+- Additive `+` and `-` operators
+
+Binary arithmetic operators are left-associative. That is, operators with the same precedence level are evaluated from left to right.
+
+Use parentheses, `()`, to change the order of evaluation imposed by operator precedence and associativity.
+
+[!code-csharp-interactive[precedence and associativity](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#PrecedenceAndAssociativity)]
+
+For the complete list of C# operators ordered by precedence level, see [C# operators](index.md).
 
 ## Arithmetic overflow and division by zero
 

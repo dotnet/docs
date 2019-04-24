@@ -89,10 +89,10 @@ In C#, an *operator* is a program element that is applied to one or more *operan
   
 |Expression|Description|  
 |----------------|-----------------|  
-|x [\<](../../language-reference/operators/relational-operators.md#less-than-operator-) y|Less than|  
-|x [>](../../language-reference/operators/relational-operators.md#greater-than-operator-) y|Greater than|  
-|x [\<=](../../language-reference/operators/relational-operators.md#less-than-or-equal-operator-) y|Less than or equal|  
-|x [>=](../../language-reference/operators/relational-operators.md#greater-than-or-equal-operator-) y|Greater than or equal|  
+|x [\<](../../language-reference/operators/comparison-operators.md#less-than-operator-) y|Less than|  
+|x [>](../../language-reference/operators/comparison-operators.md#greater-than-operator-) y|Greater than|  
+|x [\<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) y|Less than or equal|  
+|x [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) y|Greater than or equal|  
 |x [is](../../../csharp/language-reference/keywords/is.md) T|Return true if x is a T, false otherwise|  
 |x [as](../../../csharp/language-reference/keywords/as.md) T|Return x typed as T, or null if x is not a T|  
   

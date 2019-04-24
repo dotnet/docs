@@ -36,7 +36,7 @@ When you define a class or struct, you decide whether it makes sense to create a
   
 4. Override <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> so that two objects that have value equality produce the same hash code.  
   
-5. Optional: To support definitions for "greater than" or "less than," implement the <xref:System.IComparable%601> interface for your type, and also overload the [<=](../../language-reference/operators/relational-operators.md#less-than-or-equal-operator-) and [>=](../../language-reference/operators/relational-operators.md#greater-than-or-equal-operator-) operators.  
+5. Optional: To support definitions for "greater than" or "less than," implement the <xref:System.IComparable%601> interface for your type, and also overload the [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) and [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) operators.  
   
  The first example that follows shows a class implementation. The second example shows a struct implementation.  
 

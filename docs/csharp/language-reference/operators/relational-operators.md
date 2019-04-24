@@ -59,7 +59,7 @@ The `>=` operator returns `true` if its first operand is greater than or equal t
 
 A user-defined type can [overload](../keywords/operator.md) the `<`, `>`, `<=`, and `>=` operators.
 
-If a type overloads one of the `<` or `>` operators, it must also overload another one. If a type overloads one of the `<=` or `>=` operators, it must also overload another one.
+If a type overloads one of the `<` or `>` operators, it must overload both `<` and `>`. If a type overloads one of the `<=` or `>=` operators, it must overload both `<=` and `>=`.
 
 ## C# language specification
 

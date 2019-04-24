@@ -745,7 +745,7 @@ ms.date: "12/04/2018"
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/spark">
+                                <a href="/dotnet/spark/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

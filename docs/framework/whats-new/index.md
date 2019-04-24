@@ -57,7 +57,7 @@ You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing t
 - [Base classes](#core48)
 - [Windows Communication Foundation (WCF)](#wcf48)
 - [Windows Presentation Foundation (WPF)](#wpf48)
-- [Common language runtime](#clr48) 
+- [Common language runtime](#clr48)
 
 Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology, continues to be a major focus of .NET Framework 4.8. For information on accessibility improvements in .NET Framework 4.8, see [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md).
 
@@ -74,7 +74,7 @@ By default in applications that target .NET Framework 4.8, the following managed
 - <xref:System.Security.Cryptography.RC2CryptoServiceProvider>
 - <xref:System.Security.Cryptography.RijndaelManaged>
 - <xref:System.Security.Cryptography.RIPEMD160Managed>
-- <xref:System.Security.Cryptography.SHA256Managed> 
+- <xref:System.Security.Cryptography.SHA256Managed>
 
 Instead, these classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy. Applications that depend on these exceptions can restore the previous behavior by setting the AppContext switch `Switch.System.Security.Cryptography.UseLegacyFipsThrow` to `true`. For more information, see [Managed cryptography classes do not throw a CryptographyException in FIPS mode](../migration-guide/retargeting/4.7.2-4.8.md#managed-cryptography-classes-do-not-throw-a-cryptographyexception-in-fips-mode).
 
@@ -88,7 +88,7 @@ Starting with .NET Framework 4.5, the clrcompression.dll assembly uses [ZLib](ht
 
 **Introduction of ServiceHealthBehavior**
 
-Health endpoints are widely used by orchestration tools to manage services based on their health status. Health checks can also be used by monitoring tools to track and provide notifications about the availability and performance of a service. 
+Health endpoints are widely used by orchestration tools to manage services based on their health status. Health checks can also be used by monitoring tools to track and provide notifications about the availability and performance of a service.
 
 **ServiceHealthBehavior** is a WCF service behavior that extends <xref:System.ServiceModel.Description.IServiceBehavior>.  When added to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors?displayProperty=nameWithType> collection, a service behavior does the following:
 
@@ -101,15 +101,15 @@ There are two ways to expose the health endpoint and publish WCF service health 
 - Through code. For example:
 
   ```csharp
-  ServiceHost host = new ServiceHost(typeof(Service1), 
-                     new Uri("http://contoso:81/Service1")); 
+  ServiceHost host = new ServiceHost(typeof(Service1),
+                     new Uri("http://contoso:81/Service1"));
   ServiceHealthBehavior healthBehavior =
-      host.Description.Behaviors.Find<ServiceHealthBehavior>(); 
+      host.Description.Behaviors.Find<ServiceHealthBehavior>();
   if (healthBehavior == null)
-  { 
-     healthBehavior = new ServiceHealthBehavior(); 
-  } 
-   host.Description.Behaviors.Add(healthBehavior); 
+  {
+     healthBehavior = new ServiceHealthBehavior();
+  }
+   host.Description.Behaviors.Add(healthBehavior);
   ```
 
 - By using a configuration file. For example:
@@ -132,7 +132,7 @@ A service's health status can be queried by using query parameters such as `OnSe
 Query parameters and examples:
 
 - OnDispatcherFailure: `https://contoso:81/Service1?health&OnDispatcherFailure=455`
-  
+
   A 455 HTTP response status code is returned when the state of any of the channel dispatchers is greater than <xref:System.ServiceModel.CommunicationState.Opened?displayProperty=nameWithType>.
 
 - OnListenerFailure: `https://contoso:81/Service1?health&OnListenerFailure=465`
@@ -142,11 +142,11 @@ Query parameters and examples:
 - OnThrottlePercentExceeded: `https://contoso:81/Service1?health&OnThrottlePercentExceeded= 70:350,95:500`
 
   Specifies the percentage {1 – 100} that triggers the response and its HTTP response code {200 – 599}. In this example:
-  
+
     - If the percentage is greater than 95, a 500 HTTP response code is returned.
-    
+
     - If the percentage or between 70 and 95, 350 is returned.
-    
+
     - Otherwise, 200 is returned.
 
 The service health status can be displayed either in HTML by specifying a query string like `https://contoso:81/Service1?health` or in XML by specifying a query string like `https://contoso:81/Service1?health&Xml`. A query string like `https://contoso:81/Service1?health&NoContent` returns an empty HTML page.
@@ -157,9 +157,9 @@ The service health status can be displayed either in HTML by specifying a query 
 
 **High DPI enhancements**
 
-In .NET Framework 4.8, WPF adds support for Per-Monitor V2 DPI Awareness and Mixed-Mode DPI scaling. See [High DPI Desktop Application Development on Windows](/desktop/hidpi/high-dpi-desktop-application-development-on-windows) for additional information about high DPI development. 
+In .NET Framework 4.8, WPF adds support for Per-Monitor V2 DPI Awareness and Mixed-Mode DPI scaling. See [High DPI Desktop Application Development on Windows](/desktop/hidpi/high-dpi-desktop-application-development-on-windows) for additional information about high DPI development.
 
-.NET Framework 4.8 improves support for hosted HWNDs and Windows Forms interoperation in High-DPI WPF applications on platforms that support Mixed-Mode DPI scaling (starting with Windows 10 April 2018 Update). When hosted HWNDs or Windows Forms controls are created as Mixed-Mode DPI-scaled windows by calling [SetThreadDpiHostingBehavior](/windows/desktop/api/winuser/nf-winuser-setthreaddpihostingbehavior) and [SetThreadDpiAwarenessContext](/windows/desktop/api/winuser/nf-winuser-setthreaddpiawarenesscontext), they can be hosted in a Per-Monitor V2 WPF application and are sized and scaled appropriately. Such hosted content is not rendered at the native DPI; instead, the operating system scales the hosted content to the appropriate size. The support for Per-Monitor v2 DPI awareness mode also allows WPF controls to be hosted (i.e., parented) in a native window in a high-DPI application. 
+.NET Framework 4.8 improves support for hosted HWNDs and Windows Forms interoperation in High-DPI WPF applications on platforms that support Mixed-Mode DPI scaling (starting with Windows 10 April 2018 Update). When hosted HWNDs or Windows Forms controls are created as Mixed-Mode DPI-scaled windows by calling [SetThreadDpiHostingBehavior](/windows/desktop/api/winuser/nf-winuser-setthreaddpihostingbehavior) and [SetThreadDpiAwarenessContext](/windows/desktop/api/winuser/nf-winuser-setthreaddpiawarenesscontext), they can be hosted in a Per-Monitor V2 WPF application and are sized and scaled appropriately. Such hosted content is not rendered at the native DPI; instead, the operating system scales the hosted content to the appropriate size. The support for Per-Monitor v2 DPI awareness mode also allows WPF controls to be hosted (i.e., parented) in a native window in a high-DPI application.
 
 To enable support for Mixed-Mode High DPI scaling, you can set the following [AppContext](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) switches the application configuration file:
 
@@ -175,11 +175,11 @@ To enable support for Mixed-Mode High DPI scaling, you can set the following [Ap
 
 The runtime in .NET Framework 4.8 includes the following changes and improvements:
 
-**Improvements to the JIT compiler**. The Just-in-time (JIT) compiler in .NET Framework 4.8 is based on the JIT compiler in .NET Core 2.1. Many of the optimizations and all of the bug fixes made to the .NET Core 2.1 JIT compiler are included in the .NET Framework 4.8 JIT compiler. 
+**Improvements to the JIT compiler**. The Just-in-time (JIT) compiler in .NET Framework 4.8 is based on the JIT compiler in .NET Core 2.1. Many of the optimizations and all of the bug fixes made to the .NET Core 2.1 JIT compiler are included in the .NET Framework 4.8 JIT compiler.
 
 **NGEN improvements**. The runtime has improved its memory management for [Native Image Generator](../tools/ngen-exe-native-image-generator.md) (NGEN) images so that data mapped from NGEN images are not memory-resident. This reduces the surface area available to attacks that attempt to execute arbitrary code by modifying memory that will be executed.
 
-**Antimalware scanning for all assemblies**. In previous versions of the .NET Framework, the runtime scans all assemblies loaded from disk using either Windows Defender or third-party antimalware software. However, assemblies loaded from other sources, such as by the <xref:System.Reflection.Assembly.Load(System.Byte[])?displayProperty=nameWithType> method, are not scanned and can potentially contain undetected malware. Starting with .NET Framework 4.8 running on Windows 10, the runtime triggers a scan by antimalware solutions that implement the [Antimalware Scan Interface (AMSI)](/windows/desktop/AMSI/antimalware-scan-interface-portal).  
+**Antimalware scanning for all assemblies**. In previous versions of the .NET Framework, the runtime scans all assemblies loaded from disk using either Windows Defender or third-party antimalware software. However, assemblies loaded from other sources, such as by the <xref:System.Reflection.Assembly.Load(System.Byte[])?displayProperty=nameWithType> method, are not scanned and can potentially contain undetected malware. Starting with .NET Framework 4.8 running on Windows 10, the runtime triggers a scan by antimalware solutions that implement the [Antimalware Scan Interface (AMSI)](/windows/desktop/AMSI/antimalware-scan-interface-portal).
 
 <a name="v472" />
 

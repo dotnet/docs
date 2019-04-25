@@ -25,16 +25,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides access to an encoding provider for code pages supported in the desktop .NET Framework but not in UWP apps.</summary>
+    <summary>Provides access to an encoding provider for code pages that otherwise are available only in the desktop .NET Framework.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Text.CodePagesEncodingProvider> class is supported in the .NET Native implementation of .NET Core only.  
-  
- The .NET Framework for the Windows desktop supports a large set of Unicode and code page encodings. The Universal Windows platform and .NET Native, on the other hand, support only the following encodings:  
+    
+ The .NET Framework for the Windows desktop supports a large set of Unicode and code page encodings. .NET Core, on the other hand, supports only the following encodings:  
   
 -   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> property.  
   
@@ -54,7 +51,7 @@
   
  Other than code page 20127, code page encodings are not supported.  
   
- The <xref:System.Text.CodePagesEncodingProvider> class extends <xref:System.Text.EncodingProvider> to make these code pages available to .NET Native and Universal Windows Platform (UWP) apps. To use these additional code pages, you do the following:  
+ The <xref:System.Text.CodePagesEncodingProvider> class extends <xref:System.Text.EncodingProvider> to make these code pages available to .NET Core. To use these additional code pages, you do the following:  
   
 -   Add a reference to the System.Text.Encoding.CodePages.dll assembly to your project.  
   
@@ -147,9 +144,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.CodePagesEncodingProvider.Instance%2A> property returns an <xref:System.Text.EncodingProvider> object that makes encodings available to apps that target the [!INCLUDE[net_v46](~/includes/net-v46-md.md)] or a later version  and that otherwise are available only in the .NET Framework on the Windows desktop.  
   
- The .NET Framework on the Windows desktop supports a large number of character encodings and code pages. You can get a complete list of encodings by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method, which is available in the full .NET Framework on the Windows desktop. .NET Native for UWP apps, on the other hand, supports only the following encodings by default:  
+ The .NET Framework on the Windows desktop supports a large number of character encodings and code pages. You can get a complete list of encodings by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method, which is available in the full .NET Framework on the Windows desktop. .NET Core, on the other hand, supports only the following encodings by default:  
   
 -   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> property.  
   
@@ -167,7 +163,7 @@
   
 -   UTF-32BE (code page 12001), which is instantiated by calling an <xref:System.Text.UTF32Encoding> constructor that has a `bigEndian` parameter and providing a value of `true` in the method call.  
   
- To retrieve an encoding that is present in the .NET Framework on the Windows desktop but not in UWP apps, you do the following:  
+ To retrieve an encoding that is present in the .NET Framework on the Windows desktop but not in .NET Core, you do the following:  
   
 -   Add a reference to the System.Text.Encoding.CodePages.dll assembly to your project.  
   

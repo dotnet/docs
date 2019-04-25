@@ -63,7 +63,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-Starting with .NET Framework 4.8, the `WinHttpAutoProxySvc` service attempts to download an `AutoConfigUrl` script if the initial attempt fails. By default, its value is 600 minutes (10 seconds).
+Starting with .NET Framework 4.8, the `WinHttpAutoProxySvc` service attempts to download an `AutoConfigUrl` script if the initial attempt fails. By default, its value is 600 seconds (10 minutes).
 
 In previous versions of the .NET Framework, the runtime is not notified of the failure to download the script, nor is the download retried. You can restore the previous behavior by setting the value of this property to 0.
 

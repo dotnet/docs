@@ -160,13 +160,13 @@ An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This 
 
 ||||
 |-|-|-|
-|Data loading and saving||<xref:Microsoft.ML.Data>|
+|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>|
 |Data preparation||<xref:Microsoft.ML.TransformsCatalog>|
-|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>|
-||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>|
-||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>|
-||Ranking|<xref:Microsoft.ML.RankingCatalog>|
-||Regression|<xref:Microsoft.ML.RegressionCatalog>|
+|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers>|
+||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog.MulticlassClassificationTrainers>|
+||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog.AnomalyDetectionTrainers>|
+||Ranking|<xref:Microsoft.ML.RankingCatalog.RankingTrainers>|
+||Regression|<xref:Microsoft.ML.RegressionCatalog.RegressionTrainers>|
 ||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|
 |Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>|
 
@@ -185,7 +185,7 @@ Inside each catalog is a set of extension methods. Let's look at how extension m
         .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
 ```
 
-In the snippet, `Concatenate` and `Sdca` are both extension functions. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
+In the snippet, `Concatenate` and `Sdca` are both extension methods. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
 
 ### Train the model
 

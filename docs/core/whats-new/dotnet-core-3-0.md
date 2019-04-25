@@ -159,7 +159,16 @@ dotnet new winforms
 
 Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF.
 
-For more information about how to port an existing .NET Framework application, see [Port WPF projects](../porting/winforms.md) and [Port Windows Forms projects](../porting/wpf.md).
+```diff
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+- <UseWPF>true</UseWPF>
++   <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+</Project>
+```
 
 
 

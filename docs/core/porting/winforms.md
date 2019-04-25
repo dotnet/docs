@@ -211,20 +211,20 @@ Consider the differences between the `MyControlsCore.csproj` project and the pre
  <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
    <PropertyGroup>
--    <OutputType>WinExe</OutputType>
+-  <OutputType>WinExe</OutputType>
      <TargetFramework>netcoreapp3.0</TargetFramework>
      <UseWindowsForms>true</UseWindowsForms>
 
      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
--    <AssemblyName>MyCoreApp</AssemblyName>
--    <RootNamespace>WindowsFormsApp1</RootNamespace>
+-  <AssemblyName>MyCoreApp</AssemblyName>
+-  <RootNamespace>WindowsFormsApp1</RootNamespace>
 +    <AssemblyName>MyControlsCore</AssemblyName>
 +    <RootNamespace>WindowsFormsControlLibrary1</RootNamespace>
    </PropertyGroup>
 
    <ItemGroup>
--    <Compile Include="..\MyFormsApp\**\*.cs" />
--    <EmbeddedResource Include="..\MyFormsApp\**\*.resx" />
+-  <Compile Include="..\MyFormsApp\**\*.cs" />
+-  <EmbeddedResource Include="..\MyFormsApp\**\*.resx" />
 +    <Compile Include="..\MyFormsControls\**\*.cs" />
 +    <EmbeddedResource Include="..\MyFormsControls\**\*.resx" />
    </ItemGroup>

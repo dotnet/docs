@@ -90,7 +90,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 * **`--no-logo`**
 
-  Doesn't display the startup banner or the copyright message.
+  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
 * **`--no-restore`**
 

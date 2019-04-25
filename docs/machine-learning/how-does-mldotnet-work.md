@@ -103,7 +103,7 @@ A more complex model classifies financial transactions into categories using the
 
 Each transaction description is broken down into a set of features by removing redundant words and characters, counting word and character combinations, then training a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category. 
 
-![Text Classification Model](./media/text-classification-model.png)
+![Text Classification Model](./media/text-classification-model.svg)
 
 Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models and others. You can find out more about the models in [How to choose an ML.NET model](./resources/tasks.md).
 

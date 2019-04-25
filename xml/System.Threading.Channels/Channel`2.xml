@@ -63,9 +63,9 @@
         <Parameter Name="channel" Type="System.Threading.Channels.Channel&lt;TWrite,TRead&gt;" />
       </Parameters>
       <Docs>
-        <param name="channel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channel">The <see cref="T:System.Threading.Channels.Channel`2" /> being cast.</param>
+        <summary>Implicit cast from a <see cref="T:System.Threading.Channels.Channel`2" /> to its readable half.</summary>
+        <returns>The readable half.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,9 @@
         <Parameter Name="channel" Type="System.Threading.Channels.Channel&lt;TWrite,TRead&gt;" />
       </Parameters>
       <Docs>
-        <param name="channel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channel">The <see cref="T:System.Threading.Channels.Channel`2" /> being cast.</param>
+        <summary>Implicit cast from a <see cref="T:System.Threading.Channels.Channel`2" /> to its writable half.</summary>
+        <returns>The writable half.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

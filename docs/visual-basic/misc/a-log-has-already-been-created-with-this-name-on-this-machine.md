@@ -8,9 +8,9 @@ An attempt has been made to create a log with a name that is already in use.
   
 ## To correct this error  
   
--   Remove the conflicting log.  
+- Remove the conflicting log.  
   
--   Use a different name for the log.  
+- Use a different name for the log.  
   
 ## See also
 

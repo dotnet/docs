@@ -8,11 +8,11 @@ ms.assetid: de6713a6-51d7-4edb-8515-d5fb544e2091
 # This array is fixed or temporarily locked (Visual Basic)
 This error has the following possible causes:  
   
--   Using `ReDim` to change the number of elements of a fixed-size array.  
+- Using `ReDim` to change the number of elements of a fixed-size array.  
   
--   Redimensioning a module-level dynamic array, in which one element has been passed as an argument to a procedure. If an element is passed, the array is locked to prevent deallocating memory for the reference parameter within the procedure.  
+- Redimensioning a module-level dynamic array, in which one element has been passed as an argument to a procedure. If an element is passed, the array is locked to prevent deallocating memory for the reference parameter within the procedure.  
   
--   Attempting to assign a value to a `Variant` variable containing an array, but the `Variant` is currently locked.  
+- Attempting to assign a value to a `Variant` variable containing an array, but the `Variant` is currently locked.  
   
 ## To correct this error  
   

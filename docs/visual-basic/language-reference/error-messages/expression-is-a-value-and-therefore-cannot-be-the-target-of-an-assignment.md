@@ -43,13 +43,13 @@ exitButton.Location = exitLocation
   
 ## To correct this error  
   
--   If the statement assigns a value to an expression, replace the expression with a single writable variable, property, or array element.  
+- If the statement assigns a value to an expression, replace the expression with a single writable variable, property, or array element.  
   
--   If the statement makes indirect access through a value type (usually a structure), create a variable to hold the value type.  
+- If the statement makes indirect access through a value type (usually a structure), create a variable to hold the value type.  
   
--   Assign the appropriate structure (or other value type) to the variable.  
+- Assign the appropriate structure (or other value type) to the variable.  
   
--   Use the variable to access the property to assign it a value.  
+- Use the variable to access the property to assign it a value.  
   
 ## See also
 

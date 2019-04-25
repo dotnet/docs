@@ -10,7 +10,7 @@ You attempted to make a late-bound call to a managed class derived from a COM Cl
   
 ### To correct the problem  
   
--   Make the call early bound.  
+- Make the call early bound.  
   
 ## See also
 

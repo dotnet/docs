@@ -24,7 +24,7 @@ This topic describes how to use `My.Computer.Ports` to send strings to the compu
   
 ## Compiling the Code  
   
--   This example assumes the computer is using `COM1`.  
+- This example assumes the computer is using `COM1`.  
   
 ## Robust Programming  
  This example assumes the computer is using `COM1`; for more flexibility, the code should allow the user to select the desired serial port from a list of available ports. For more information, see [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md).  

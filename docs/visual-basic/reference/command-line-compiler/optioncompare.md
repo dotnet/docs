@@ -40,7 +40,7 @@ Specifies how string comparisons are made.
   
 ### To set -optioncompare programmatically  
   
--   See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
+- See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
   
 ## Example  
  The following code compiles `ProjFile.vb` and uses binary string comparisons.  

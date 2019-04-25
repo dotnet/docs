@@ -13,9 +13,9 @@ You can write and maintain asynchronous programs more easily by using the `Async
   
  The following example uses async methods to download the contents of a specified website as a string and to display the length of the string. The example contains the following two methods.  
   
--   `startButton_Click`, which calls `AccessTheWebAsync` and displays the result.  
+- `startButton_Click`, which calls `AccessTheWebAsync` and displays the result.  
   
--   `AccessTheWebAsync`, which downloads the contents of a website as a string and returns the length of the string. `AccessTheWebAsync` uses an asynchronous <xref:System.Net.Http.HttpClient> method, <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29>, to download the contents.  
+- `AccessTheWebAsync`, which downloads the contents of a website as a string and returns the length of the string. `AccessTheWebAsync` uses an asynchronous <xref:System.Net.Http.HttpClient> method, <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29>, to download the contents.  
   
  Numbered display lines appear at strategic points throughout the program to help you understand how the program runs and to explain what happens at each point that is marked. The display lines are labeled "ONE" through "SIX." The labels represent the order in which the program reaches these lines of code.  
   

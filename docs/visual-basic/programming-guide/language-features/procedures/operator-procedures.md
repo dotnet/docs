@@ -25,13 +25,13 @@ An operator procedure is a series of Visual Basic statements that define the beh
 ## Types of Operator Procedure  
  An operator procedure can be one of the following types:  
   
--   A definition of a unary operator where the argument is of the type of your class or structure.  
+- A definition of a unary operator where the argument is of the type of your class or structure.  
   
--   A definition of a binary operator where at least one of the arguments is of the type of your class or structure.  
+- A definition of a binary operator where at least one of the arguments is of the type of your class or structure.  
   
--   A definition of a conversion operator where the argument is of the type of your class or structure.  
+- A definition of a conversion operator where the argument is of the type of your class or structure.  
   
--   A definition of a conversion operator that returns the type of your class or structure.  
+- A definition of a conversion operator that returns the type of your class or structure.  
   
  Conversion operators are always unary, and you always use `CType` as the operator you are defining.  
   

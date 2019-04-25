@@ -8,7 +8,7 @@ The specified path is not under the current directory. This may be a result of i
   
 ## To correct this error  
   
--   Make sure you are supplying the correct path.  
+- Make sure you are supplying the correct path.  
   
 ## See also
 

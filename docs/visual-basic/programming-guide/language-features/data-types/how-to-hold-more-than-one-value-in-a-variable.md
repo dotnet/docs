@@ -23,11 +23,11 @@ A variable holds more than one value if you declare it to be of a *composite dat
   
 2. If the composite data type is not already defined, define it so that your variable can use it.  
   
-    -   Define a structure with a [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md).  
+    - Define a structure with a [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md).  
   
-    -   Define an array with a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md).  
+    - Define an array with a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md).  
   
-    -   Define a class with a [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md).  
+    - Define a class with a [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md).  
   
 3. Declare your variable with a `Dim` statement.  
   

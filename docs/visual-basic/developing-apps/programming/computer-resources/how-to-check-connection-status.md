@@ -15,7 +15,7 @@ The <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable> property can be use
   
 ### To check whether a computer has a working connection  
   
--   Determine whether the `IsAvailable` property is `True` or `False`. The following code checks the property's status and reports it:  
+- Determine whether the `IsAvailable` property is `True` or `False`. The following code checks the property's status and reports it:  
   
      [!code-vb[VbResourceTasks#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#3)]  
   

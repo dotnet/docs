@@ -94,11 +94,11 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
 ## <a name="vbconinteroperabilitymarshalinganchor10"></a> ActiveX Control Issues  
  Most ActiveX controls that work with Visual Basic 6.0 work with Visual Basic .NET without trouble. The main exceptions are container controls, or controls that visually contain other controls. Some examples of older controls that do not work correctly with Visual Studio are as follows:  
   
--   Microsoft Forms 2.0 Frame control  
+- Microsoft Forms 2.0 Frame control  
   
--   Up-Down control, also known as the spin control  
+- Up-Down control, also known as the spin control  
   
--   Sheridan Tab Control  
+- Sheridan Tab Control  
   
  There are only a few workarounds for unsupported ActiveX control problems. You can migrate existing controls to Visual Studio if you own the original source code. Otherwise, you can check with software vendors for updated .NET-compatible versions of controls to replace unsupported ActiveX controls.  
   

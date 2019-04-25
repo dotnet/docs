@@ -10,7 +10,7 @@ The `EventLog` is attempting to refer to a source that is registered to a differ
   
 ## To correct this error  
   
--   Make sure the source is registered to the correct log. To do this, use the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method or one of its overloads to specify a string that uniquely identifies your component to the event log.  
+- Make sure the source is registered to the correct log. To do this, use the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method or one of its overloads to specify a string that uniquely identifies your component to the event log.  
   
 ## See also
 

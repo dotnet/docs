@@ -10,7 +10,7 @@ When uploading files with the `UploadFile` method, you must supply a file name i
   
 ## To correct this error  
   
--   Supply a file name.  
+- Supply a file name.  
   
 ## See also
 

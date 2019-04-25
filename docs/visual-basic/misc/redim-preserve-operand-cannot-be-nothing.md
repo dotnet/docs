@@ -8,7 +8,7 @@ A `ReDim` statement attempts to use the `Preserve` keyword to change a dimension
   
 ## To correct this error  
   
--   Change the `Preserve` operand to a valid value.  
+- Change the `Preserve` operand to a valid value.  
   
 ## See also
 

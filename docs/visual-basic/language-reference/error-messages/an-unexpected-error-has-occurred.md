@@ -8,11 +8,11 @@ ms.assetid: 0d9f2a30-ff72-4355-8060-744f22339359
 # An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired
 The application could not acquire a necessary operating system resource. Some of the possible causes for this problem are:  
   
--   The application does not have permissions to create named operating-system objects.  
+- The application does not have permissions to create named operating-system objects.  
   
--   The common language runtime does not have permissions to create memory-mapped files.  
+- The common language runtime does not have permissions to create memory-mapped files.  
   
--   The application needs to access an operating-system object, but another process is using it.  
+- The application needs to access an operating-system object, but another process is using it.  
   
 ## To correct this error  
   

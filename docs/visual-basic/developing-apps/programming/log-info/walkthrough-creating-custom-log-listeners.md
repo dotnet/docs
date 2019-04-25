@@ -14,7 +14,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 #### To create the listener  
   
--   In your application, create a class named `SimpleListener` that inherits from <xref:System.Diagnostics.TraceListener>.  
+- In your application, create a class named `SimpleListener` that inherits from <xref:System.Diagnostics.TraceListener>.  
   
      [!code-vb[VbVbalrMyApplicationLog#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#16)]  
   
@@ -58,7 +58,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 #### To determine the strong name of the listener  
   
--   The following code shows how to determine the strongly named type name for `SimpleListener`.  
+- The following code shows how to determine the strongly named type name for `SimpleListener`.  
   
      [!code-vb[VbVbalrMyApplicationLog#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#17)]  
   

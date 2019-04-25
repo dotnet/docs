@@ -121,7 +121,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To mark a class as serializable  
   
--   Change the class declaration for the Loan class as follows:  
+- Change the class declaration for the Loan class as follows:  
   
     ```vb  
     <Serializable()>  
@@ -132,7 +132,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To prevent a member from being serialized  
   
--   Change the declaration for the `PropertyChanged` event as follows:  
+- Change the declaration for the `PropertyChanged` event as follows:  
   
     ```vb  
     <NonSerialized()>  
@@ -144,7 +144,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To add references to namespaces  
   
--   Add the following statements to the top of the `Form1` class:  
+- Add the following statements to the top of the `Form1` class:  
   
     ```vb  
     Imports System.IO  
@@ -191,7 +191,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To save the data and serialize the class  
   
--   Add the following code to the `Form1_FormClosing` event procedure:  
+- Add the following code to the `Form1_FormClosing` event procedure:  
   
     ```vb  
     Private Sub Form1_FormClosing() Handles MyBase.FormClosing  

@@ -18,7 +18,7 @@ The compiler is attempting to resolve a reference to an overloaded property or p
   
 ## To correct this error  
   
--   Use `CType` to cast the argument from `Object` to the type specified by the signature of the overload you want to call.  
+- Use `CType` to cast the argument from `Object` to the type specified by the signature of the overload you want to call.  
   
      Note that it does not help to cast the referring object to the underlying interface. You must cast the argument to avoid this error.  
   

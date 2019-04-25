@@ -33,9 +33,9 @@ For more information about versioning, see [Overview of how .NET Core is version
 
 
 
-## C# 8.0
+## C# 8.0 preview
 
-.NET Core 3.0 supports C# 8. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
+.NET Core 3.0 supports C# 8 preview. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
 
 ## .NET Standard 2.1
 
@@ -127,7 +127,7 @@ There are some operations, like linking and razor page publishing that will stil
 
 
 
-## Local dotnet tools
+## Local tools
 
 .NET Core 3.0 introduces local tools. Local tools are similar to [global tools](../tools/global-tools.md) but are associated with a particular location on disk. Local tools aren't available globally and are distributed as NuGet packages.
 
@@ -146,7 +146,7 @@ For both global and local tools, a compatible version of the runtime is required
 
 ## Windows desktop
 
-.NET Core 3.0 supports Windows desktop applications using Windows Presentation Foundation and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
+.NET Core 3.0 supports Windows desktop applications using Windows Presentation Foundation (WPF) and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
 
 The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
 
@@ -230,7 +230,7 @@ Here is a C# 8.0 example of reading through the [**launch.json**](https://github
 
 ## Interop improvements
 
-Enhancements have been added to .NET Core that improves native API interop.
+.NET Core 3.0 improves native API interop.
 
 ### Type: NativeLibrary
 
@@ -262,7 +262,7 @@ The following C# 8.0 example demonstrates .NET Core 3.0 on Ubuntu 18.10 connecti
 
 ## Cryptography ciphers
 
-Support has been added for **AES-GCM** and **AES-CCM** ciphers, implemented with <xref:System.Security.Cryptography.AesGcm?displayProperty=nameWithType> and <xref:System.Security.Cryptography.AesCcm?displayProperty=nameWithType> respectively. These algorithms are both [Authenticated Encryption with Association Data (AEAD) algorithms](https://en.wikipedia.org/wiki/Authenticated_encryption).
+.NET 3.0 adds support for **AES-GCM** and **AES-CCM** ciphers, implemented with <xref:System.Security.Cryptography.AesGcm?displayProperty=nameWithType> and <xref:System.Security.Cryptography.AesCcm?displayProperty=nameWithType> respectively. These algorithms are both [Authenticated Encryption with Association Data (AEAD) algorithms](https://en.wikipedia.org/wiki/Authenticated_encryption).
 
 The following code demonstrates using `AesGcm` cipher to encrypt and decrypt random data.
 
@@ -330,7 +330,7 @@ The GPIO packages include APIs for *GPIO*, *SPI*, *I2C*, and *PWM* devices. The 
 
 ## ARM64 Linux support
 
-Support has been added for ARM64 for Linux. The primary use case for ARM64 is currently with IoT scenarios. For more information, see [.NET Core ARM64 Status](https://github.com/dotnet/announcements/issues/82).
+.NET Core 3.0 adds support for ARM64 for Linux. The primary use case for ARM64 is currently with IoT scenarios. For more information, see [.NET Core ARM64 Status](https://github.com/dotnet/announcements/issues/82).
 
 [Docker images for .NET Core on ARM64](https://hub.docker.com/r/microsoft/dotnet/) are available for Alpine, Debian, and Ubuntu.
 

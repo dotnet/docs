@@ -15,11 +15,11 @@ Before triggering the outer-loop workflow spanning the entire DevOps cycle, it a
 
 The container or instance of a Docker image will contain these components:
 
--   An operating system selection (for example, a Linux distribution or Windows)
+- An operating system selection (for example, a Linux distribution or Windows)
 
 - Files added by the developer (for example, app binaries)
 
--   Configuration (for example, environment settings and dependencies)
+- Configuration (for example, environment settings and dependencies)
 
 - Instructions for what processes to run by Docker
 

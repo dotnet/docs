@@ -65,11 +65,11 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 #### Assemblies  
  The following two assemblies are referenced by default:  
   
--   System.dll  
+- System.dll  
   
--   System.Xml.dll  
+- System.Xml.dll  
   
--   Microsoft.VisualBasic.dll (when the script language is VB)  
+- Microsoft.VisualBasic.dll (when the script language is VB)  
   
  You can import the additional assemblies using the `msxsl:assembly` element. This includes the assembly when the style sheet is compiled. The `msxsl:assembly` element has the following definition:  
   
@@ -88,21 +88,21 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 #### Namespaces  
  The following namespaces are included by default:  
   
--   System  
+- System  
   
--   System.Collection  
+- System.Collection  
   
--   System.Text  
+- System.Text  
   
--   System.Text.RegularExpressions  
+- System.Text.RegularExpressions  
   
--   System.Xml  
+- System.Xml  
   
--   System.Xml.Xsl  
+- System.Xml.Xsl  
   
--   System.Xml.XPath  
+- System.Xml.XPath  
   
--   Microsoft.VisualBasic (when the script language is VB)  
+- Microsoft.VisualBasic (when the script language is VB)  
   
  You can add support for additional namespaces using the `namespace` attribute. The attribute value is the name of the namespace.  
   

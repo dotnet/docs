@@ -81,9 +81,9 @@ The .NET Framework makes it easy to determine the ordinal day of the week for a 
   
  Individual languages may provide functionality that duplicates or supplements the functionality provided by the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. For example, Visual Basic includes two such functions:  
   
--   `Weekday`, which returns a number that indicates the day of the week of a particular date. It considers the ordinal value of the first day of the week to be one, whereas the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property considers it to be zero.  
+- `Weekday`, which returns a number that indicates the day of the week of a particular date. It considers the ordinal value of the first day of the week to be one, whereas the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property considers it to be zero.  
   
--   `WeekdayName`, which returns the name of the week in the current culture that corresponds to a particular weekday number.  
+- `WeekdayName`, which returns the name of the week in the current culture that corresponds to a particular weekday number.  
   
  The following example illustrates the use of the Visual Basic `Weekday` and `WeekdayName` functions.  
   

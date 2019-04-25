@@ -29,9 +29,9 @@ Because a Web page can be displayed anywhere in the world, operations that parse
   
 4. Call either the `TryParse` or the `Parse` method of the <xref:System.DateTime> or <xref:System.DateTimeOffset> type to try the conversion. Use an overload of the `TryParse` or the `Parse` method with a `provider` parameter, and pass it either of the following:  
   
-    -   The <xref:System.Globalization.CultureInfo> object created in step 3.  
+    - The <xref:System.Globalization.CultureInfo> object created in step 3.  
   
-    -   The <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 3.  
+    - The <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 3.  
   
 5. If the conversion fails, repeat steps 2 through 4 for each remaining element in the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property.  
   
@@ -59,9 +59,9 @@ Because a Web page can be displayed anywhere in the world, operations that parse
   
 10. Call either the <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=nameWithType> method to convert the date and time of the user's request to a <xref:System.DateTime> value. Use an overload of the method with a `provider` parameter, and pass it either of the following:  
   
-    -   The <xref:System.Globalization.CultureInfo> object created in step 8.  
+    - The <xref:System.Globalization.CultureInfo> object created in step 8.  
   
-    -   The <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 8.  
+    - The <xref:System.Globalization.DateTimeFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 8.  
   
 11. If the parse operation in step 10 fails, go to step 13. Otherwise, call the <xref:System.UInt32.Parse%28System.String%29?displayProperty=nameWithType> method to convert the string representation of the user's time zone offset to an integer.  
   
@@ -94,13 +94,13 @@ Because a Web page can be displayed anywhere in the world, operations that parse
 ## Compiling the Code  
  To compile the code, create an [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Web page without a code-behind. Then copy the example into the Web page so that it replaces all the existing code. The [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Web page should contain the following controls:  
   
--   A <xref:System.Web.UI.WebControls.Label> control, which is not referenced in code. Set its <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to "Enter a Number:".  
+- A <xref:System.Web.UI.WebControls.Label> control, which is not referenced in code. Set its <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to "Enter a Number:".  
   
--   A <xref:System.Web.UI.WebControls.TextBox> control named `DateString`.  
+- A <xref:System.Web.UI.WebControls.TextBox> control named `DateString`.  
   
--   A <xref:System.Web.UI.WebControls.Button> control named `OKButton`. Set its <xref:System.Web.UI.WebControls.Button.Text%2A> property to "OK".  
+- A <xref:System.Web.UI.WebControls.Button> control named `OKButton`. Set its <xref:System.Web.UI.WebControls.Button.Text%2A> property to "OK".  
   
--   A <xref:System.Web.UI.WebControls.HiddenField> control named `DateInfo`.  
+- A <xref:System.Web.UI.WebControls.HiddenField> control named `DateInfo`.  
   
 ## .NET Framework Security  
  To prevent a user from injecting script into the HTML stream, user input should never be directly echoed back in the server response. Instead, it should be encoded by using the <xref:System.Web.HttpServerUtility.HtmlEncode%2A?displayProperty=nameWithType> method.  

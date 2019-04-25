@@ -114,8 +114,6 @@ You can train a regression model using the following algorithms:
 
 ### Regression inputs and outputs
 
-Regression trainers can be configured with a [loss function](#loss-function). This configuration depends on the distribution of data.
-
 The input label column data must be <xref:System.Single>.
 
 The trainers for this task output the following:

@@ -18,8 +18,8 @@ Examples of the type of predictions that you can make with ML.NET include:
 |||
 |-|-|
 |Classification/Categorization|Automatically divide customer feedback into positive and negative categories|
-|Regression/Predict Continuous Values|Predict the price of houses based on size and location|
-|Detect Anomalies|Detect fraudulent banking transactions |
+|Regression/Predict continuous values|Predict the price of houses based on size and location|
+|Anomaly Detection|Detect fraudulent banking transactions |
 |Recommendations|Suggest products that online shoppers may want to buy, based on their previous purchases|
 
 ## Hello ML.NET World
@@ -117,7 +117,7 @@ In most cases, the data that you have available is not suitable to be used direc
 
 The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
-To see how data processing is applied more generally, see [How to prepare your data](./how-to-guides/how-to-prepare-data.md).
+[How to prepare your data](./how-to-guides/prepare-data-ml-net.md) shows you how to applied data preparation more generally.
 
 You can find an appendix of all of the [available transformations](./resources/transforms.md) in the resources section.
 
@@ -199,7 +199,7 @@ Once the objects in the pipeline have been created, data can be used to train th
 
 Calling `Fit()` uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**.. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
-You can learn more about model training in [How to train your model](./how-to-guides/train-model.md)
+You can learn more about model training in [How to train your model](./how-to-guides/train-machine-learning-model-ml-net.md)
 
 The resulting model object implements the <xref:Microsoft.ML.ITransformer> interface. That is, the model transforms input data into predictions.
 

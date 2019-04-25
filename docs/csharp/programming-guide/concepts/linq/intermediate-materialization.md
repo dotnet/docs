@@ -78,7 +78,7 @@ Main: str >GHI!!!<
   
  Standard query operators can also be chained together. The final topic in this tutorial illustrates this.  
   
--   [Chaining Standard Query Operators Together (C#)](../../../../csharp/programming-guide/concepts/linq/chaining-standard-query-operators-together.md)  
+- [Chaining Standard Query Operators Together (C#)](../../../../csharp/programming-guide/concepts/linq/chaining-standard-query-operators-together.md)  
   
 ## See also
 

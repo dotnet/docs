@@ -10,9 +10,9 @@ ms.assetid: 086af969-29a5-4ce8-a993-0b7d53839dab
 # Polymorphism (C# Programming Guide)
 Polymorphism is often referred to as the third pillar of object-oriented programming, after encapsulation and inheritance. Polymorphism is a Greek word that means "many-shaped" and it has two distinct aspects:  
   
--   At run time, objects of a derived class may be treated as objects of a base class in places such as method parameters and collections or arrays. When this occurs, the object's declared type is no longer identical to its run-time type.  
+- At run time, objects of a derived class may be treated as objects of a base class in places such as method parameters and collections or arrays. When this occurs, the object's declared type is no longer identical to its run-time type.  
   
--   Base classes may define and implement [virtual](../../../csharp/language-reference/keywords/virtual.md) *methods*, and derived classes can [override](../../../csharp/language-reference/keywords/override.md) them, which means they provide their own definition and implementation. At run-time, when client code calls the method, the CLR looks up the run-time type of the object, and invokes that override of the virtual method. Thus in your source code you can call a method on a base class, and cause a derived class's version of the method to be executed.  
+- Base classes may define and implement [virtual](../../../csharp/language-reference/keywords/virtual.md) *methods*, and derived classes can [override](../../../csharp/language-reference/keywords/override.md) them, which means they provide their own definition and implementation. At run-time, when client code calls the method, the CLR looks up the run-time type of the object, and invokes that override of the virtual method. Thus in your source code you can call a method on a base class, and cause a derived class's version of the method to be executed.  
   
  Virtual methods enable you to work with groups of related objects in a uniform way. For example, suppose you have a drawing application that enables a user to create various kinds of shapes on a drawing surface. You do not know at compile time which specific types of shapes the user will create. However, the application has to keep track of all the various types of shapes that are created, and it has to update them in response to user mouse actions. You can use polymorphism to solve this problem in two basic steps:  
   
@@ -31,11 +31,11 @@ Polymorphism is often referred to as the third pillar of object-oriented program
 ### Virtual Members  
  When a derived class inherits from a base class, it gains all the methods, fields, properties and events of the base class. The designer of the derived class can choose whether to  
   
--   override virtual members in the base class,  
+- override virtual members in the base class,  
   
--   inherit the closest base class method without overriding it  
+- inherit the closest base class method without overriding it  
   
--   define new non-virtual implementation of those members that hide the base class implementations  
+- define new non-virtual implementation of those members that hide the base class implementations  
   
  A derived class can override a base class member only if the base class member is declared as [virtual](../../../csharp/language-reference/keywords/virtual.md) or [abstract](../../../csharp/language-reference/keywords/abstract.md). The derived member must use the [override](../../../csharp/language-reference/keywords/override.md) keyword to explicitly indicate that the method is intended to participate in virtual invocation. The following code provides an example:  
   
@@ -83,11 +83,11 @@ Polymorphism is often referred to as the third pillar of object-oriented program
   
 ## In This Section  
   
--   [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)  
+- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)  
   
--   [Knowing When to Use Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md)  
+- [Knowing When to Use Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md)  
   
--   [How to: Override the ToString Method](../../../csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method.md)  
+- [How to: Override the ToString Method](../../../csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method.md)  
   
 ## See also
 

@@ -54,15 +54,15 @@ If a property has both a `get` and a `set` accessor, both must be auto-implement
 
 ## Related sections  
   
--   [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
   
--   [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
+- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
   
--   [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
   
--   [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
+- [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
   
--   [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
+- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
   
 ## C# Language Specification  
 

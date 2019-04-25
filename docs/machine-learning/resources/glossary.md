@@ -80,6 +80,12 @@ The element to be predicted with the machine learning model. For example, the br
 
 In [classification](#classification), an evaluation metric that characterizes the accuracy of a classifier. The smaller log loss is, the more accurate a classifier is.
 
+## Loss function
+
+A loss function is the difference between the training label values and the prediction made by the model. The parameters of the model are estimated by minimizing the loss function.
+
+Different trainers can be configured with different loss functions.
+
 ## Mean absolute error (MAE)
 
 In [regression](#regression), an evaluation metric that is the average of all the model errors, where model error is the distance between the predicted [label](#label) value and the correct label value.

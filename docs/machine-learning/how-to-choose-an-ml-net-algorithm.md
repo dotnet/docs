@@ -42,12 +42,6 @@ For each algorithm/task combination, ML.NET provides a component that executes t
 
 You will notice that there are more variants than just algorithm/task too. Hold that thought: we will cover that later in this article.
 
-## Loss functions
-
-A loss function is the difference between the training label values and the prediction made by the model. The parameters of the model are estimated by minimizing the loss function.
-
-Different trainers can be configured with different loss functions. This is noted in the [trainer index](#trainer-index) below.
-
 ## Algorithm types
 
 An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 

@@ -103,7 +103,6 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 - <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A?displayProperty=nameWithType>
 - <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>
-- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A?displayProperty=nameWithType>
 - [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
 - [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

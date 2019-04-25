@@ -10,7 +10,7 @@ A call was made to a procedure in a code resource, but the code resource could n
   
 ## To correct this error  
   
--   Check that the resource is available and properly referenced.  
+- Check that the resource is available and properly referenced.  
   
 ## See also
 

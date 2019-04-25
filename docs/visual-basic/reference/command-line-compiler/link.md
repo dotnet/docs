@@ -43,9 +43,9 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
  If you link to a COM assembly (Assembly A) which itself references another COM assembly (Assembly B), you also have to link to Assembly B if either of the following is true:  
   
--   A type from Assembly A inherits from a type or implements an interface from Assembly B.  
+- A type from Assembly A inherits from a type or implements an interface from Assembly B.  
   
--   A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
+- A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
   
  Use [-libpath](../../../visual-basic/reference/command-line-compiler/libpath.md) to specify the directory in which one or more of your assembly references is located.  
   

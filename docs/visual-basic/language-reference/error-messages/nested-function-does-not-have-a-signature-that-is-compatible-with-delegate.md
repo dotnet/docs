@@ -27,7 +27,7 @@ Delegate Function Del(ByVal p As Integer, ByVal q As Integer) As Integer
   
 ## To correct this error  
   
--   Adjust either the delegate definition or the assigned lambda expression so that the signatures are compatible.  
+- Adjust either the delegate definition or the assigned lambda expression so that the signatures are compatible.  
   
 ## See also
 

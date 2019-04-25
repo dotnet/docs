@@ -13,13 +13,13 @@ Enumerations offer an easy way to work with sets of related constants. An enumer
   
  The benefits of using enumerations include:  
   
--   Reduces errors caused by transposing or mistyping numbers.  
+- Reduces errors caused by transposing or mistyping numbers.  
   
--   Makes it easy to change values in the future.  
+- Makes it easy to change values in the future.  
   
--   Makes code easier to read, which means it is less likely that errors will creep into it.  
+- Makes code easier to read, which means it is less likely that errors will creep into it.  
   
--   Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
+- Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
   
 ## Naming Enumerations  
  Use a naming convention for enumeration members. When Visual Basic encounters an enumeration member name, an exception may be thrown if other referenced type libraries contain the same name. Use a unique prefix that identifies the values from your application or component.  

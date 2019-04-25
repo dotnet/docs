@@ -54,7 +54,7 @@ End Module
   
 ## To correct this error  
   
--   To avoid the warning and remove the lambda expression, assign the lambda expression to a variable and use the variable in both the `AddHandler` and `RemoveHandler` statements, as shown in the following example.  
+- To avoid the warning and remove the lambda expression, assign the lambda expression to a variable and use the variable in both the `AddHandler` and `RemoveHandler` statements, as shown in the following example.  
   
 ```vb  
 Module Module1  

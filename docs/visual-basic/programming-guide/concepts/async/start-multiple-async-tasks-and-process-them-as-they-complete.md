@@ -44,13 +44,13 @@ Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =
   
  In the MainWindow.xaml.vb file of the  project, make the following changes to the `AccessTheWebAsync` method.  
   
--   Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.  
+- Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.  
   
     ```vb  
     Dim downloadTasks As List(Of Task(Of Integer)) = downloadTasksQuery.ToList()  
     ```  
   
--   Add a while loop that performs the following steps for each task in the collection.  
+- Add a while loop that performs the following steps for each task in the collection.  
   
     1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.  
   

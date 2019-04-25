@@ -15,7 +15,7 @@ The \<exception> tag provides a way to document the exceptions that may be throw
   
 ## To correct this error  
   
--   Add the `cref` attribute to the exception as follows:  
+- Add the `cref` attribute to the exception as follows:  
   
     ```  
     '''<exception cref="member">description</exception>  

@@ -18,11 +18,11 @@ This topic describes which Visual Basic types can be declared within which other
   
  The levels for declaration contexts are the following:  
   
--   *Namespace level* — within a source file or namespace but not within a class, structure, module, or interface  
+- *Namespace level* — within a source file or namespace but not within a class, structure, module, or interface  
   
--   *Module level* — within a class, structure, module, or interface but not within a procedure or block  
+- *Module level* — within a class, structure, module, or interface but not within a procedure or block  
   
--   *Procedure level* — within a procedure or block (such as `If` or `For`)  
+- *Procedure level* — within a procedure or block (such as `If` or `For`)  
   
  The following table shows the default access levels for various declared programming elements, depending on their declaration contexts.  
   

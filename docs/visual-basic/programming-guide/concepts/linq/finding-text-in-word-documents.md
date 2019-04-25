@@ -299,7 +299,7 @@ StyleName:Code ><
 ## Next Steps  
  The next section provides more information about WordprocessingML documents:  
   
--   [Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)  
+- [Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)  
   
 ## See also
 

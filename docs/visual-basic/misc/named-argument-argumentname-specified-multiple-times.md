@@ -10,7 +10,7 @@ You specified a named argument more than once.
   
 ## To correct this error  
   
--   Remove all but one of the specifications.  
+- Remove all but one of the specifications.  
   
 ## See also
 

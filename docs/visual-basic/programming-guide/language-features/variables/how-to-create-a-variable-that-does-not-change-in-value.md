@@ -11,11 +11,11 @@ The notion of a variable that does not change its value might appear to be contr
   
  You cannot use the [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md) to declare and assign a constant value in the following circumstances:  
   
--   The `Const` statement does not accept the data type you want to use  
+- The `Const` statement does not accept the data type you want to use  
   
--   You do not know the value at compile time  
+- You do not know the value at compile time  
   
--   You are unable to compute the constant value at compile time  
+- You are unable to compute the constant value at compile time  
   
 ### To create a variable that does not change in value  
   

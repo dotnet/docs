@@ -43,19 +43,19 @@ Dim objC As System.OperatingSystem
 ### Advantages of Early Binding  
  Declaring an object variable as a specific class gives you several advantages:  
   
--   Automatic type checking  
+- Automatic type checking  
   
--   Guaranteed access to all members of the specific class  
+- Guaranteed access to all members of the specific class  
   
--   Microsoft IntelliSense support in the Code Editor  
+- Microsoft IntelliSense support in the Code Editor  
   
--   Improved readability of your code  
+- Improved readability of your code  
   
--   Fewer errors in your code  
+- Fewer errors in your code  
   
--   Errors caught at compile time rather than run time  
+- Errors caught at compile time rather than run time  
   
--   Faster code execution  
+- Faster code execution  
   
 ## Access to Object Variable Members  
  When `Option Strict` is turned `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  

@@ -8,7 +8,7 @@ An attempt has been made to read from a file, but the specified encoding is not 
   
 ## To correct this error  
   
--   Check to make sure you are supplying the correct file encoding.  
+- Check to make sure you are supplying the correct file encoding.  
   
 ## See also
 

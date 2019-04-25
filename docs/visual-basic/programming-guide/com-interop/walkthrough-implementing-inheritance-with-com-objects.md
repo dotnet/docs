@@ -119,9 +119,9 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
  Properties and methods inherited from COM classes can be overridden, meaning that you can declare a local property or method that replaces a property or method inherited from a base COM class. The rules for overriding inherited COM properties are similar to the rules for overriding other properties and methods with the following exceptions:  
   
--   If you override any property or method inherited from a COM class, you must override all the other inherited properties and methods.  
+- If you override any property or method inherited from a COM class, you must override all the other inherited properties and methods.  
   
--   Properties that use `ByRef` parameters cannot be overridden.  
+- Properties that use `ByRef` parameters cannot be overridden.  
   
 ## See also
 

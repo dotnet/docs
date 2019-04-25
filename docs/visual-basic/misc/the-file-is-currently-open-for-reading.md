@@ -8,7 +8,7 @@ An attempt has been made to access a file that is currently open for reading.
   
 ## To correct this error  
   
--   Close the file and attempt the operation again.  
+- Close the file and attempt the operation again.  
   
 ## See also
 

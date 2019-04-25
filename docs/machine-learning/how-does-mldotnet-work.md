@@ -80,7 +80,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
 ## Code workflow
 
-The following diagram visually outlines the steps in the code, as well as a couple of additions which are discussed later in this article:
+The following diagram visually outlines the steps in the code, as well as a couple of additions, which are discussed later in this article:
 
 - Evaluate the model and iterate to improve
 - Separate model development and model usage (deployment)
@@ -150,7 +150,7 @@ For our house price example, we used the **Regression** task. To evaluate the mo
         // RMS error: 0.09
 ```
 
-The evaluation metrics tells you that the error is low-ish, and that correlation between the predicted output and the test output is high. That was easy! In real examples, it takes more tuning to achieve good model metrics.
+The evaluation metrics tell you that the error is low-ish, and that correlation between the predicted output and the test output is high. That was easy! In real examples, it takes more tuning to achieve good model metrics.
 
 ## ML.NET architecture
 
@@ -197,7 +197,7 @@ Once the objects in the pipeline have been created, data can be used to train th
     var model = pipeline.Fit(trainingData);
 ```
 
-Calling `Fit()` uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**.. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
+Calling `Fit()` uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
 You can learn more about model training in [How to train your model](./how-to-guides/train-machine-learning-model-ml-net.md)
 

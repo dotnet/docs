@@ -11,7 +11,7 @@ ms.topic: tutorial
 
 # Tutorial: Create a Movie Recommender with ML.NET
 
-This sample tutorial illustrates using ML.NET to build a movie recommender via a .NET Core console application using C# in Visual Studio 2017.
+This sample tutorial illustrates using ML.NET to build a movie recommender via a .NET Core console application using C# in Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

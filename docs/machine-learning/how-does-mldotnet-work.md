@@ -176,7 +176,7 @@ You can navigate to the creation methods in each of the above categories. Using 
 
    ![Intellisense for Regression Trainers](./media/catalog-intellisense.png)
 
-### Build the pipeline with extension methods
+### Build the pipeline
 
 Inside each catalog is a set of extension methods. Let's look at how extension methods are used to create a training pipeline.
 
@@ -185,7 +185,9 @@ Inside each catalog is a set of extension methods. Let's look at how extension m
         .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
 ```
 
-In the snippet, `Concatenate` and `Sdca` are both extension methods. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
+In the snippet, `Concatenate` and `Sdca` are both methods in the catalog. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that is appended to the pipeline.
+
+At this point, the objects are created only. No execution has happened.
 
 ### Train the model
 

@@ -3597,10 +3597,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> or <paramref name="action" /> is a null reference (Nothing in Visual Basic).</exception>
-        <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
+        <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
       </Docs>
     </Member>
@@ -4098,10 +4095,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> or <paramref name="action" /> is a null reference (Nothing in Visual Basic).</exception>
-        <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
+        <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
       </Docs>
     </Member>

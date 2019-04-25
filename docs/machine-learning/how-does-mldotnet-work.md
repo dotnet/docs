@@ -156,26 +156,29 @@ The evaluation metrics tells you that the error is low-ish, and that correlation
 
 In this section, we go through the architectural patterns of ML.NET. If you are an experienced .NET developer, some of these patterns will be familiar to you, and some will be less familiar. Hold tight, while we dive in!
 
-An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains properties, which are **catalogs** for:
+An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs** for:
 
-- Data loading and saving: <xref:Microsoft.ML.Data>
-- Data preparation :<xref:Microsoft.ML.TransformsCatalog>
-- Algorithms for model training
-    - Binary classification model training: <xref:Microsoft.ML.BinaryClassificationCatalog>
-    - Multiclass classification model training: <xref:Microsoft.ML.MulticlassClassificationCatalog>
-    - Anomaly detection model training: <xref:Microsoft.ML.AnomalyDetectionCatalog>
-    - Ranking model training: <xref:Microsoft.ML.RankingCatalog>
-    - Regression model training: <xref:Microsoft.ML.RegressionCatalog>
-    - Recommendation model training: <xref:Microsoft.ML.Recommendationatalog>
-- Model loading, saving, and creating prediction engines: <xref:Microsoft.ML.ModelOperationsCatalog>
+||||
+|-|-|-|
+|Data loading and saving||<xref:Microsoft.ML.Data>|
+|Data preparation||<xref:Microsoft.ML.TransformsCatalog>|
+|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>|
+||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>|
+||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>|
+||Ranking|<xref:Microsoft.ML.RankingCatalog>|
+||Regression|<xref:Microsoft.ML.RegressionCatalog>|
+||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|
+|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>|
 
-The catalogs are a convenience to help you navigate the available operations in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense. 
+A catalog is a factory for data operation, transforms, trainers, and model operation components. Each catalog object has methods to create the different types components.
+
+You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 
    ![Intellisense for Regression Trainers](./media/catalog-intellisense.png)
 
-### Extension functions
+### Build the pipeline with extension methods
 
-Inside each catalog is a set of extension functions. Let's look at how extension functions are used to create a training pipeline.
+Inside each catalog is a set of extension methods. Let's look at how extension methods are used to create a training pipeline.
 
 ```csharp
     var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })

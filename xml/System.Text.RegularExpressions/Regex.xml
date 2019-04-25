@@ -5334,6 +5334,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <param name="matchTimeout">The time-out interval to check.</param>
         <summary>Checks whether a time-out interval is within an acceptable range.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified time-out is not within a valid range.</exception>
       </Docs>
     </Member>
   </Members>

@@ -18,15 +18,15 @@ This topic describes how the Application Settings architecture works, and explor
 ## Defining Settings  
  The application settings architecture is used within both [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and Windows Forms, and it contains a number of base classes that are shared across both environments. The most important is <xref:System.Configuration.SettingsBase>, which provides access to settings through a collection, and provides low-level methods for loading and saving settings. Each environment implements its own class derived from <xref:System.Configuration.SettingsBase> to provide additional settings functionality for that environment. In a Windows Forms-based application, all application settings must be defined on a class derived from the <xref:System.Configuration.ApplicationSettingsBase> class, which adds the following functionality to the base class:  
   
--   Higher-level loading and saving operations  
+- Higher-level loading and saving operations  
   
--   Support for user-scoped settings  
+- Support for user-scoped settings  
   
--   Reverting a user's settings to the predefined defaults  
+- Reverting a user's settings to the predefined defaults  
   
--   Upgrading settings from a previous application version  
+- Upgrading settings from a previous application version  
   
--   Validating settings, either before they are changed or before they are saved  
+- Validating settings, either before they are changed or before they are saved  
   
  The settings can be described using a number of attributes defined within the <xref:System.Configuration> namespace; these are described in [Application Settings Attributes](application-settings-attributes.md). When you define a setting, you must apply it with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, which describes whether the setting applies to the entire application or just to the current user.  
   
@@ -40,11 +40,11 @@ This topic describes how the Application Settings architecture works, and explor
   
  The configuration system that was originally released with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] supports providing static application configuration data through either the local computer's machine.config file or within an `app.`exe.config file that you deploy with your application. The <xref:System.Configuration.LocalFileSettingsProvider> class expands this native support in the following ways:  
   
--   Application-scoped settings can be stored in either the machine.config or `app.`exe.config files. Machine.config is always read-only, while `app`.exe.config is restricted by security considerations to read-only for most applications.  
+- Application-scoped settings can be stored in either the machine.config or `app.`exe.config files. Machine.config is always read-only, while `app`.exe.config is restricted by security considerations to read-only for most applications.  
   
--   User-scoped settings can be stored in `app`.exe.config files, in which case they are treated as static defaults.  
+- User-scoped settings can be stored in `app`.exe.config files, in which case they are treated as static defaults.  
   
--   Non-default user-scoped settings are stored in a new file, *user*.config, where *user* is the user name of the person currently executing the application. You can specify a default for a user-scoped setting with <xref:System.Configuration.DefaultSettingValueAttribute>. Because user-scoped settings often change during application execution, `user`.config is always read/write.  
+- Non-default user-scoped settings are stored in a new file, *user*.config, where *user* is the user name of the person currently executing the application. You can specify a default for a user-scoped setting with <xref:System.Configuration.DefaultSettingValueAttribute>. Because user-scoped settings often change during application execution, `user`.config is always read/write.  
   
  All three configuration files store settings in XML format. The top-level XML element for application-scoped settings is `<appSettings>`, while `<userSettings>` is used for user-scoped settings. An `app`.exe.config file which contains both application-scoped settings and defaults for user-scoped settings would look like this:  
   

@@ -85,21 +85,21 @@ This tutorial explains how to create a localized application by using the LocBam
   
 4. The options that you can specify when you run LocBaml are as follows:  
   
-    -   **parse** or **-p:** Parses Baml, resources, or [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] files to generate a .csv or .txt file.  
+    - **parse** or **-p:** Parses Baml, resources, or [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] files to generate a .csv or .txt file.  
   
-    -   **generate** or **-g:** Generates a localized binary file by using a translated file.  
+    - **generate** or **-g:** Generates a localized binary file by using a translated file.  
   
-    -   **out** or **-o** {*filedirectory*] **:** Output file name.  
+    - **out** or **-o** {*filedirectory*] **:** Output file name.  
   
-    -   **culture** or **-cul** {*culture*] **:** Locale of output assemblies.  
+    - **culture** or **-cul** {*culture*] **:** Locale of output assemblies.  
   
-    -   **translation** or **-trans** {*translation.csv*] **:** Translated or localized file.  
+    - **translation** or **-trans** {*translation.csv*] **:** Translated or localized file.  
   
-    -   **asmpath** or **-asmpath:** {*filedirectory*] **:** If your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] code contains custom controls, you must supply the **asmpath** to the custom control assembly.  
+    - **asmpath** or **-asmpath:** {*filedirectory*] **:** If your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] code contains custom controls, you must supply the **asmpath** to the custom control assembly.  
   
-    -   **nologo:** Displays no logo or copyright information.  
+    - **nologo:** Displays no logo or copyright information.  
   
-    -   **verbose:** Displays verbose mode information.  
+    - **verbose:** Displays verbose mode information.  
   
     > [!NOTE]
     >  If you need a list of the options when you are running the tool, type     **LocBaml.exe** and press ENTER.  
@@ -182,9 +182,9 @@ This tutorial explains how to create a localized application by using the LocBam
   
 7. To test the new satellite assembly, you need to change the culture under which your application will run. You can do this in one of two ways:  
   
-    -   Change your operating system's regional settings (**Start** &#124; **Control Panel** &#124; **Regional and Language Options**).  
+    - Change your operating system's regional settings (**Start** &#124; **Control Panel** &#124; **Regional and Language Options**).  
   
-    -   In your application, add the following code to App.xaml.cs:  
+    - In your application, add the following code to App.xaml.cs:  
   
    [!code-xaml[LocBamlChangeCultureSnippets#LocBamlChangeCultureMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/CSharp/App.xaml#locbamlchangeculturemarkup)]
    [!code-csharp[LocBamlChangeCultureSnippets#LocBamlChangeCultureCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/LocBamlChangeCultureSnippets/CSharp/App.xaml.cs#locbamlchangeculturecodebehind)]
@@ -193,11 +193,11 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="Some_Tips_for_Using_LocBaml"></a>   
 ## Some Tips for Using LocBaml  
   
--   All dependent assemblies that define custom controls must be copied into the local directory of LocBaml or installed into the GAC. This is necessary because the localization API must have access to the dependent assemblies when it reads the [!INCLUDE[TLA#tla_baml](../../../../includes/tlasharptla-baml-md.md)].  
+- All dependent assemblies that define custom controls must be copied into the local directory of LocBaml or installed into the GAC. This is necessary because the localization API must have access to the dependent assemblies when it reads the [!INCLUDE[TLA#tla_baml](../../../../includes/tlasharptla-baml-md.md)].  
   
--   If the main assembly is signed, the generated resource DLL must also be signed in order for it to be loaded.  
+- If the main assembly is signed, the generated resource DLL must also be signed in order for it to be loaded.  
   
--   The version of the localized resource DLL needs to be synchronized with the main assembly.  
+- The version of the localized resource DLL needs to be synchronized with the main assembly.  
   
 <a name="Whats_Next"></a>   
 ## What's Next  

@@ -33,13 +33,13 @@ public interface ICalculator
 
  This defines the operations in the order they are to be processed:  
   
--   An `Add` operation request must include a flowed transaction.  
+- An `Add` operation request must include a flowed transaction.  
   
--   A `Subtract` operation request may include a flowed transaction.  
+- A `Subtract` operation request may include a flowed transaction.  
   
--   A `Multiply` operation request must not include a flowed transaction through the explicit NotAllowed setting.  
+- A `Multiply` operation request must not include a flowed transaction through the explicit NotAllowed setting.  
   
--   A `Divide` operation request must not include a flowed transaction through the omission of a `TransactionFlow` attribute.  
+- A `Divide` operation request must not include a flowed transaction through the omission of a `TransactionFlow` attribute.  
   
  To enable transaction flow, bindings with the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled must be used in addition to the appropriate operation attributes. In this sample, the service's configuration exposes a TCP endpoint and an HTTP endpoint in addition to a Metadata Exchange endpoint. The TCP endpoint and the HTTP endpoint use the following bindings, both of which have the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled.  
   
@@ -176,15 +176,15 @@ Console.WriteLine("Transaction committed");
 
  The calls to the operations are as follows:  
   
--   The `Add` request flows the required transaction to the service and the service's actions occur within the scope of the client's transaction.  
+- The `Add` request flows the required transaction to the service and the service's actions occur within the scope of the client's transaction.  
   
--   The first `Subtract` request also flows the allowed transaction to the service and again the service's actions occur within the scope of the client's transaction.  
+- The first `Subtract` request also flows the allowed transaction to the service and again the service's actions occur within the scope of the client's transaction.  
   
--   The second `Subtract` request is performed within a new transaction scope declared with the `TransactionScopeOption.Suppress` option. This suppresses the client's initial outer transaction and the request does not flow a transaction to the service. This approach allows a client to explicitly opt-out of and protect against flowing a transaction to a service when that is not required. The service's actions occur within the scope of a new and unconnected transaction.  
+- The second `Subtract` request is performed within a new transaction scope declared with the `TransactionScopeOption.Suppress` option. This suppresses the client's initial outer transaction and the request does not flow a transaction to the service. This approach allows a client to explicitly opt-out of and protect against flowing a transaction to a service when that is not required. The service's actions occur within the scope of a new and unconnected transaction.  
   
--   The `Multiply` request does not flow a transaction to the service because the client's generated definition of the `ICalculator` interface includes a <xref:System.ServiceModel.TransactionFlowAttribute> set to <xref:System.ServiceModel.TransactionFlowOption>`NotAllowed`.  
+- The `Multiply` request does not flow a transaction to the service because the client's generated definition of the `ICalculator` interface includes a <xref:System.ServiceModel.TransactionFlowAttribute> set to <xref:System.ServiceModel.TransactionFlowOption>`NotAllowed`.  
   
--   The `Divide` request does not flow a transaction to the service because again the client's generated definition of the `ICalculator` interface does not include a `TransactionFlowAttribute`. The service's actions again occur within the scope of another new and unconnected transaction.  
+- The `Divide` request does not flow a transaction to the service because again the client's generated definition of the `ICalculator` interface does not include a `TransactionFlowAttribute`. The service's actions again occur within the scope of another new and unconnected transaction.  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   

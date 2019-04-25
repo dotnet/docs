@@ -58,11 +58,11 @@ To successfully deploy your .NET Framework application, you must understand how 
 ## Step 1: Examining the Configuration Files  
  Assembly binding behavior can be configured at different levels based on three XML files:  
   
--   Application configuration file.  
+- Application configuration file.  
   
--   Publisher policy file.  
+- Publisher policy file.  
   
--   Machine configuration file.  
+- Machine configuration file.  
   
  These files follow the same syntax and provide information such as binding redirects, the location of code, and binding modes for particular assemblies. Each configuration file can contain an [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) that redirects the binding process. The child elements of the [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) include the [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md). The children of [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) include the [\<assemblyIdentity> element](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment), the [\<bindingRedirect> element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md), and the [\<codeBase> element](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md).  
   
@@ -166,13 +166,13 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 ### Locating the Assembly through Probing  
  If there is no [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element in the application configuration file, the runtime probes for the assembly using four criteria:  
   
--   Application base, which is the root location where the application is being executed.  
+- Application base, which is the root location where the application is being executed.  
   
--   Culture, which is the culture attribute of the assembly being referenced.  
+- Culture, which is the culture attribute of the assembly being referenced.  
   
--   Name, which is the name of the referenced assembly.  
+- Name, which is the name of the referenced assembly.  
   
--   The `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, which is the user-defined list of subdirectories under the root location. This location can be specified in the application configuration file and in managed code using the <xref:System.AppDomainSetup.PrivateBinPath?displayProperty=nameWithType> property for an application domain. When specified in managed code, the managed code `privatePath` is probed first, followed by the path specified in the application configuration file.  
+- The `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, which is the user-defined list of subdirectories under the root location. This location can be specified in the application configuration file and in managed code using the <xref:System.AppDomainSetup.PrivateBinPath?displayProperty=nameWithType> property for an application domain. When specified in managed code, the managed code `privatePath` is probed first, followed by the path specified in the application configuration file.  
   
 #### Probing the Application Base and Culture Directories  
  The runtime always begins probing in the application's base, which can be either a URL or the application's root directory on a computer. If the referenced assembly is not found in the application base and no culture information is provided, the runtime searches any subdirectories with the assembly name. The directories probed include:  
@@ -207,13 +207,13 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 #### Probing Examples  
  Given the following information:  
   
--   Referenced assembly name: myAssembly  
+- Referenced assembly name: myAssembly  
   
--   Application root directory: `http://www.code.microsoft.com`  
+- Application root directory: `http://www.code.microsoft.com`  
   
--   [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element in configuration file specifies: bin  
+- [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element in configuration file specifies: bin  
   
--   Culture: de  
+- Culture: de  
   
  The runtime probes the following URLs:  
   

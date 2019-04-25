@@ -19,11 +19,11 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
  The following list describes the threads that take part in collecting and rendering digital ink:  
   
--   Pen thread - the thread that takes input from the stylus.  (In reality, this is a thread pool, but this topic refers to it as a pen thread.)  
+- Pen thread - the thread that takes input from the stylus.  (In reality, this is a thread pool, but this topic refers to it as a pen thread.)  
   
--   Application user interface thread - the thread that controls the user interface of the application.  
+- Application user interface thread - the thread that controls the user interface of the application.  
   
--   Dynamic rendering thread - the thread that renders the ink while the user draws a stroke. The dynamic rendering thread is different than the thread that renders other UI elements for the application, as mentioned in Window Presentation Foundation [Threading Model](threading-model.md).  
+- Dynamic rendering thread - the thread that renders the ink while the user draws a stroke. The dynamic rendering thread is different than the thread that renders other UI elements for the application, as mentioned in Window Presentation Foundation [Threading Model](threading-model.md).  
   
  The inking model is the same whether the application uses the <xref:System.Windows.Controls.InkCanvas> or a custom control similar to the one in [Creating an Ink Input Control](creating-an-ink-input-control.md).  Although this topic discusses threading in terms of the <xref:System.Windows.Controls.InkCanvas>, the same concepts apply when you create a custom control.  
   

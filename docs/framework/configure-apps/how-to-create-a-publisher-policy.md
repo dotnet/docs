@@ -51,15 +51,15 @@ Vendors of assemblies can state that applications should use a newer version of 
   
      In this command:  
   
-    -   The *publisherPolicyFile* argument is the name of the publisher policy file.  
+    - The *publisherPolicyFile* argument is the name of the publisher policy file.  
   
-    -   The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:  
+    - The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:  
   
          **policy.** *majorNumber* **.** *minorNumber* **.** *mainAssemblyName* **.dll**  
   
-    -   The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.  
+    - The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.  
   
-    -   The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.  
+    - The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.  
   
         > [!NOTE]
         >  The ability to target a specific processor architecture is new in the .NET Framework version 2.0.  

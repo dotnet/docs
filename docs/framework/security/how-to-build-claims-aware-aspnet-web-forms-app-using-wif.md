@@ -7,38 +7,38 @@ author: "BrucePerlerMS"
 # How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   ASP.NET® Web Forms  
+- ASP.NET® Web Forms  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for creating simple claims-aware ASP.NET Web Forms application. It also provides instructions for how to test the simple claims-aware ASP.NET Web Forms application for successful implementation of federated authentication. This How-To does not have detailed instructions for creating a Security Token Service (STS), and assumes you have already configured an STS.  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application  
+- Step 1 – Create a Simple ASP.NET Web Forms Application  
   
--   Step 2 – Configure ASP.NET Web Forms Application for Claims-Based Authentication  
+- Step 2 – Configure ASP.NET Web Forms Application for Claims-Based Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Objectives  
   
--   Configure ASP.NET Web Forms application for claims-based authentication  
+- Configure ASP.NET Web Forms application for claims-based authentication  
   
--   Test successful claims-aware ASP.NET Web Forms application  
+- Test successful claims-aware ASP.NET Web Forms application  
   
 ## Summary of Steps  
   
--   Step 1 – Create Simple ASP.NET Web Forms Application  
+- Step 1 – Create Simple ASP.NET Web Forms Application  
   
--   Step 2 – Configure ASP.NET Web Forms Application for Federated Authentication  
+- Step 2 – Configure ASP.NET Web Forms Application for Federated Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Step 1 – Create a Simple ASP.NET Web Forms Application  
  In this step, you will create a new ASP.NET Web Forms application.  

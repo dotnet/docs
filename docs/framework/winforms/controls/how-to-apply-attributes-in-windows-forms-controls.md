@@ -69,7 +69,7 @@ To develop components and controls that interact correctly with the design envir
   
 ## Compiling the Code  
   
--   The form that hosts the `AttributesDemoControl` requires a reference to the `AttributesDemoControl` assembly in order to build.  
+- The form that hosts the `AttributesDemoControl` requires a reference to the `AttributesDemoControl` assembly in order to build.  
   
 ## See also
 

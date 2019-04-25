@@ -21,13 +21,13 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
 2. Print scenarios.  
   
-    -   [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] as a device printer language.  
+    - [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] as a device printer language.  
   
-    -   [!INCLUDE[TLA#tla_mxdw](../../../../includes/tlasharptla-mxdw-md.md)].  
+    - [!INCLUDE[TLA#tla_mxdw](../../../../includes/tlasharptla-mxdw-md.md)].  
   
-    -   Previous printer drivers, output from [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] applications to the fixed format.  
+    - Previous printer drivers, output from [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] applications to the fixed format.  
   
-    -   Print spool format.  
+    - Print spool format.  
   
 3. Fixed-format document representation, including clients for previous versions of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and other computing devices.  
   
@@ -61,15 +61,15 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
 ### Indices property  
  The <xref:System.Windows.Documents.Glyphs.Indices%2A> property is a string of glyph specifications. Where a sequence of glyphs forms a single cluster, the specification of the first glyph in the cluster is preceded by a specification of how many glyphs and how many code points combine to form the cluster. The <xref:System.Windows.Documents.Glyphs.Indices%2A> property collects in one string the following properties.  
   
--   Glyph indices  
+- Glyph indices  
   
--   Glyph advance widths  
+- Glyph advance widths  
   
--   Combining glyph attachment vectors  
+- Combining glyph attachment vectors  
   
--   Cluster mapping from code points to glyphs  
+- Cluster mapping from code points to glyphs  
   
--   Glyph flags  
+- Glyph flags  
   
  Each glyph specification has the following form.  
   

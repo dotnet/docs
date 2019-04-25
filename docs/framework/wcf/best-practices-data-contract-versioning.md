@@ -33,9 +33,9 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  Occasionally, you must guarantee strict schema compliance for messages sent by your application, but cannot rely on the incoming messages to be strictly schema-compliant. In this case, there is a danger that an incoming message might contain extraneous data. The extraneous values are stored and returned by WCF and thus results in schema-invalid messages being sent. To avoid this problem, the round-tripping feature should be turned off. There are two ways to do this.  
   
--   Do not implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface on any of your types.  
+- Do not implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface on any of your types.  
   
--   Apply a <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to your service contract with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property set to `true`.  
+- Apply a <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to your service contract with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property set to `true`.  
   
  For more information about round-tripping, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   

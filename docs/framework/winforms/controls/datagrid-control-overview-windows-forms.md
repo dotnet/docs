@@ -51,13 +51,13 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  Valid data sources for the <xref:System.Windows.Forms.DataGrid> include:  
   
--   <xref:System.Data.DataTable> class  
+- <xref:System.Data.DataTable> class  
   
--   <xref:System.Data.DataView> class  
+- <xref:System.Data.DataView> class  
   
--   <xref:System.Data.DataSet> class  
+- <xref:System.Data.DataSet> class  
   
--   <xref:System.Data.DataViewManager> class  
+- <xref:System.Data.DataViewManager> class  
   
  If your source is a dataset, the dataset might be an object in the form or an object passed to the form by an XML Web service. You can bind to either typed or untyped datasets.  
   
@@ -65,11 +65,11 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  You can bind to the following structures if their elements expose public properties:  
   
--   Any component that implements the <xref:System.Collections.IList> interface. This includes single-dimension arrays.  
+- Any component that implements the <xref:System.Collections.IList> interface. This includes single-dimension arrays.  
   
--   Any component that implements the <xref:System.ComponentModel.IListSource> interface.  
+- Any component that implements the <xref:System.ComponentModel.IListSource> interface.  
   
--   Any component that implements the <xref:System.ComponentModel.IBindingList> interface.  
+- Any component that implements the <xref:System.ComponentModel.IBindingList> interface.  
   
  For more information about possible data sources, see [Data Sources Supported by Windows Forms](../data-sources-supported-by-windows-forms.md).  
   

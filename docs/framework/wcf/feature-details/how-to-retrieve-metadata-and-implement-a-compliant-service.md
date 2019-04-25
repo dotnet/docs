@@ -33,17 +33,17 @@ Often, the same person does not design and implement services. In environments w
   
  The following code shows:  
   
--   The service contract interface that, when implemented, complies with the contract requirements (`ISampleService`).  
+- The service contract interface that, when implemented, complies with the contract requirements (`ISampleService`).  
   
--   The helper interface for client use that extends both the service contract interface and <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> and is for use in a client application (`ISampleServiceChannel`).  
+- The helper interface for client use that extends both the service contract interface and <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> and is for use in a client application (`ISampleServiceChannel`).  
   
--   The helper class that extends <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> and is for use in a client application (`SampleServiceClient`).  
+- The helper class that extends <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> and is for use in a client application (`SampleServiceClient`).  
   
--   The configuration file generated from the service.  
+- The configuration file generated from the service.  
   
--   A simple `ISampleService` service implementation.  
+- A simple `ISampleService` service implementation.  
   
--   A conversion of the client-side configuration file to a service-side version.  
+- A conversion of the client-side configuration file to a service-side version.  
   
 [!code-csharp[ClientProxyCodeSample#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/clientproxycodesample/cs/proxycode.cs#1)]
 

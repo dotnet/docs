@@ -53,11 +53,11 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
 ### Specifying the Execution Context  
  In addition to specifying a user, you can also use EXECUTE AS with any of the following keywords.  
   
--   CALLER. Executing as CALLER is the default; if no other option is specified, then the procedure executes in the security context of the caller.  
+- CALLER. Executing as CALLER is the default; if no other option is specified, then the procedure executes in the security context of the caller.  
   
--   OWNER. Executing as OWNER executes the procedure in the context of the procedure owner. If the procedure is created in a schema owned by `dbo` or the database owner, the procedure will execute with unrestricted permissions.  
+- OWNER. Executing as OWNER executes the procedure in the context of the procedure owner. If the procedure is created in a schema owned by `dbo` or the database owner, the procedure will execute with unrestricted permissions.  
   
--   SELF. Executing as SELF executes in the security context of the creator of the stored procedure. This is equivalent to executing as a specified user, where the specified user is the person creating or altering the procedure.  
+- SELF. Executing as SELF executes in the security context of the creator of the stored procedure. This is equivalent to executing as a specified user, where the specified user is the person creating or altering the procedure.  
   
 ## See also
 

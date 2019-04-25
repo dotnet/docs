@@ -29,7 +29,7 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
 ### To use horizontal linear gradients  
   
--   Pass in the opaque red and opaque blue as the third and fourth argument, respectively.  
+- Pass in the opaque red and opaque blue as the third and fourth argument, respectively.  
   
      [!code-csharp[System.Drawing.UsingaGradientBrush#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#21)]
      [!code-vb[System.Drawing.UsingaGradientBrush#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#21)]  
@@ -54,7 +54,7 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
 
 ### To customize linear gradients  
   
--   Pass in the opaque black and opaque red as the third and fourth argument, respectively.  
+- Pass in the opaque black and opaque red as the third and fourth argument, respectively.  
   
      [!code-csharp[System.Drawing.UsingaGradientBrush#22](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#22)]
      [!code-vb[System.Drawing.UsingaGradientBrush#22](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#22)]  
@@ -69,7 +69,7 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
 ### To create diagonal linear gradients  
   
--   Pass in the opaque blue and opaque green as the third and fourth argument, respectively.  
+- Pass in the opaque blue and opaque green as the third and fourth argument, respectively.  
   
      [!code-csharp[System.Drawing.UsingaGradientBrush#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#23)]
      [!code-vb[System.Drawing.UsingaGradientBrush#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#23)]  

@@ -8,9 +8,9 @@ ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
 # How to: Install and Configure WCF Activation Components
 This topic describes the steps required to set up Windows Process Activation Service (also known as WAS) on [!INCLUDE[wv](../../../../includes/wv-md.md)] to host Windows Communication Foundation (WCF) services that do not communicate over HTTP network protocols. The following sections outline the steps for this configuration:  
   
--   Install (or confirm the installation of) the WCF activation components.  
+- Install (or confirm the installation of) the WCF activation components.  
   
--   Configure WAS to support a non-HTTP protocol. The following procedure configures [!INCLUDE[wv](../../../../includes/wv-md.md)] for TCP activation.  
+- Configure WAS to support a non-HTTP protocol. The following procedure configures [!INCLUDE[wv](../../../../includes/wv-md.md)] for TCP activation.  
   
  After installing and configuring WAS, see [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md) for the procedures to create a WCF service that exposes an non-HTTP endpoint that employs WAS.  
   

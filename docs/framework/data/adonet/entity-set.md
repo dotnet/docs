@@ -10,11 +10,11 @@ An *entity set* is a logical container for instances of an [entity type](../../.
   
  For an entity type instance to exist in an entity set, the following must be true:  
   
--   The type of the instance is either the same as the entity type on which the entity set is based, or the type of the instance is a subtype of the entity type.  
+- The type of the instance is either the same as the entity type on which the entity set is based, or the type of the instance is a subtype of the entity type.  
   
--   The [entity key](../../../../docs/framework/data/adonet/entity-key.md) for the instance is unique within the entity set.  
+- The [entity key](../../../../docs/framework/data/adonet/entity-key.md) for the instance is unique within the entity set.  
   
--   The instance does not exist in any other entity set.  
+- The instance does not exist in any other entity set.  
   
     > [!NOTE]
     >  Multiple entity sets can be defined using the same entity type, but an instance of a given entity type can only exist in one entity set.  

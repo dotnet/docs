@@ -71,7 +71,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ### To clean up after the sample  
   
--   If the service is hosted in IIS for security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
+- If the service is hosted in IIS for security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
   
 ## See also
 

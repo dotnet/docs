@@ -18,15 +18,15 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  This topic contains the following sections:  
   
--   [Navigation Topologies](#Navigation_Topologies)  
+- [Navigation Topologies](#Navigation_Topologies)  
   
--   [Structured Navigation Topologies](#Structured_Navigation_Topologies)  
+- [Structured Navigation Topologies](#Structured_Navigation_Topologies)  
   
--   [Navigation over a Fixed Linear Topology](#Navigation_over_a_Fixed_Linear_Topology)  
+- [Navigation over a Fixed Linear Topology](#Navigation_over_a_Fixed_Linear_Topology)  
   
--   [Dynamic Navigation over a Fixed Hierarchical Topology](#Dynamic_Navigation_over_a_Fixed_Hierarchical_Topology)  
+- [Dynamic Navigation over a Fixed Hierarchical Topology](#Dynamic_Navigation_over_a_Fixed_Hierarchical_Topology)  
   
--   [Navigation over a Dynamically Generated Topology](#Navigation_over_a_Dynamically_Generated_Topology)  
+- [Navigation over a Dynamically Generated Topology](#Navigation_over_a_Dynamically_Generated_Topology)  
   
 <a name="Navigation_Topologies"></a>   
 ## Navigation Topologies  
@@ -46,9 +46,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 ## Structured Navigation Topologies  
  There are two broad types of navigation topologies:  
   
--   **Fixed Topology**: defined at compile time and does not change at run time. Fixed topologies are useful for navigation through a fixed sequence of pages in either a linear or hierarchical order.  
+- **Fixed Topology**: defined at compile time and does not change at run time. Fixed topologies are useful for navigation through a fixed sequence of pages in either a linear or hierarchical order.  
   
--   **Dynamic Topology**: defined at run time based on input that is collected from the user, the application, or the system. Dynamic topologies are useful when pages can be navigated in different sequences.  
+- **Dynamic Topology**: defined at run time based on input that is collected from the user, the application, or the system. Dynamic topologies are useful when pages can be navigated in different sequences.  
   
  Although it is possible to create navigation topologies using pages, the samples use page functions because they provide additional support that simplifies support for passing and returning data through the pages of a topology.  
   
@@ -60,21 +60,21 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  The typical behaviors for navigating over a fixed linear topology include the following:  
   
--   Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
+- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
   
--   Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
+- Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
   
--   Users can navigate between pages using the journal.  
+- Users can navigate between pages using the journal.  
   
--   Users can cancel the wizard from any wizard page by pressing a Cancel button.  
+- Users can cancel the wizard from any wizard page by pressing a Cancel button.  
   
--   Users can accept the wizard on the last wizard page by pressing a Finish button.  
+- Users can accept the wizard on the last wizard page by pressing a Finish button.  
   
--   If a wizard is canceled, the wizard returns an appropriate result, and does not return any data.  
+- If a wizard is canceled, the wizard returns an appropriate result, and does not return any data.  
   
--   If a user accepts a wizard, the wizard returns an appropriate result, and returns the data it collected.  
+- If a user accepts a wizard, the wizard returns an appropriate result, and returns the data it collected.  
   
--   When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
+- When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
 <a name="Dynamic_Navigation_over_a_Fixed_Hierarchical_Topology"></a>   
 ## Dynamic Navigation over a Fixed Hierarchical Topology  
@@ -88,23 +88,23 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  Even though the sequence in which pages in a fixed hierarchical structure are navigated is determined at run time, the user experience is the same as the user experience for a fixed linear topology:  
   
--   Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
+- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
   
--   Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
+- Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
   
--   Users can navigate between pages using the journal.  
+- Users can navigate between pages using the journal.  
   
--   Users can change the navigation sequence if they navigate back through the journal.  
+- Users can change the navigation sequence if they navigate back through the journal.  
   
--   Users can cancel the wizard from any wizard page by pressing a Cancel button.  
+- Users can cancel the wizard from any wizard page by pressing a Cancel button.  
   
--   Users can accept the wizard on the last wizard page by pressing a Finish button.  
+- Users can accept the wizard on the last wizard page by pressing a Finish button.  
   
--   If a wizard is canceled, the wizard returns an appropriate result, and does not return any data.  
+- If a wizard is canceled, the wizard returns an appropriate result, and does not return any data.  
   
--   If a user accepts a wizard, the wizard returns an appropriate result, and returns the data it collected.  
+- If a user accepts a wizard, the wizard returns an appropriate result, and returns the data it collected.  
   
--   When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
+- When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
 <a name="Navigation_over_a_Dynamically_Generated_Topology"></a>   
 ## Navigation over a Dynamically Generated Topology  
@@ -118,21 +118,21 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  The navigation sequence is known as a dynamically generated topology. For the user, as with the other navigation topologies, the user experience is the same as it is for the previous topologies:  
   
--   Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
+- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
   
--   Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
+- Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
   
--   Users can navigate between pages using the journal.  
+- Users can navigate between pages using the journal.  
   
--   Users can cancel the wizard from any wizard page by pressing a Cancel button.  
+- Users can cancel the wizard from any wizard page by pressing a Cancel button.  
   
--   Users can accept the wizard on the last wizard page by pressing a Finish button.  
+- Users can accept the wizard on the last wizard page by pressing a Finish button.  
   
--   If a wizard is canceled, the wizard returns an appropriate result, and does not return any data.  
+- If a wizard is canceled, the wizard returns an appropriate result, and does not return any data.  
   
--   If a user accepts a wizard, the wizard returns an appropriate result, and returns the data it collected.  
+- If a user accepts a wizard, the wizard returns an appropriate result, and returns the data it collected.  
   
--   When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
+- When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
 ## See also
 

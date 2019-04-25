@@ -20,33 +20,33 @@ The `ProtectionLevel` property is found on many different classes, such as the <
 ## Basics  
  To understand the protection level feature, the following basic statements apply:  
   
--   Three basic levels of protection exist for any part of a message. The property (wherever it occurs) is set to one of the <xref:System.Net.Security.ProtectionLevel> enumeration values. In ascending order of protection, they include:  
+- Three basic levels of protection exist for any part of a message. The property (wherever it occurs) is set to one of the <xref:System.Net.Security.ProtectionLevel> enumeration values. In ascending order of protection, they include:  
   
-    -   `None`.  
+    - `None`.  
   
-    -   `Sign`. The protected part is digitally signed. This ensures detection of any tampering with the protected message part.  
+    - `Sign`. The protected part is digitally signed. This ensures detection of any tampering with the protected message part.  
   
-    -   `EncryptAndSign`. The message part is encrypted to ensure confidentiality before it is signed.  
+    - `EncryptAndSign`. The message part is encrypted to ensure confidentiality before it is signed.  
   
--   You can set protection requirements only for *application data* with this feature. For example, WS-Addressing headers are infrastructure data and, therefore, are not affected by the `ProtectionLevel`.  
+- You can set protection requirements only for *application data* with this feature. For example, WS-Addressing headers are infrastructure data and, therefore, are not affected by the `ProtectionLevel`.  
   
--   When the security mode is set to `Transport`, the entire message is protected by the transport mechanism. Therefore, setting a separate protection level for different parts of a message has no effect.  
+- When the security mode is set to `Transport`, the entire message is protected by the transport mechanism. Therefore, setting a separate protection level for different parts of a message has no effect.  
   
--   The `ProtectionLevel` is a way for the developer to set the *minimum level* that a binding must comply with. When a service is deployed, the actual binding specified in configuration may or may not support the minimum level. For example, by default, the <xref:System.ServiceModel.BasicHttpBinding> class does not supply security (although it can be enabled). Therefore, using it with a contract that has any setting other than `None` will cause an exception to be thrown.  
+- The `ProtectionLevel` is a way for the developer to set the *minimum level* that a binding must comply with. When a service is deployed, the actual binding specified in configuration may or may not support the minimum level. For example, by default, the <xref:System.ServiceModel.BasicHttpBinding> class does not supply security (although it can be enabled). Therefore, using it with a contract that has any setting other than `None` will cause an exception to be thrown.  
   
--   If the service requires that the minimum `ProtectionLevel` for all messages is `Sign`, a client (perhaps created by a non-WCF technology) can encrypt and sign all messages (which is more than the minimum required). In this case, WCF will not throw an exception because the client has done more than the minimum. Note, however, that WCF applications (services or clients) will not over-secure a message part if possible but will comply with the minimum level. Also note that when using `Transport` as the security mode, the transport may over-secure the message stream because it is inherently unable to secure at a more granular level.  
+- If the service requires that the minimum `ProtectionLevel` for all messages is `Sign`, a client (perhaps created by a non-WCF technology) can encrypt and sign all messages (which is more than the minimum required). In this case, WCF will not throw an exception because the client has done more than the minimum. Note, however, that WCF applications (services or clients) will not over-secure a message part if possible but will comply with the minimum level. Also note that when using `Transport` as the security mode, the transport may over-secure the message stream because it is inherently unable to secure at a more granular level.  
   
--   If you set the `ProtectionLevel` explicitly to either `Sign` or `EncryptAndSign`, then you must use a binding with security enabled or an exception will be thrown.  
+- If you set the `ProtectionLevel` explicitly to either `Sign` or `EncryptAndSign`, then you must use a binding with security enabled or an exception will be thrown.  
   
--   If you select a binding that enables security and you do not set the `ProtectionLevel` property anywhere on the contract, all application data will be encrypted and signed.  
+- If you select a binding that enables security and you do not set the `ProtectionLevel` property anywhere on the contract, all application data will be encrypted and signed.  
   
--   If you select a binding that does not have security enabled (for example, the `BasicHttpBinding` class has security disabled by default), and the `ProtectionLevel` is not explicitly set, then none of the application data will be protected.  
+- If you select a binding that does not have security enabled (for example, the `BasicHttpBinding` class has security disabled by default), and the `ProtectionLevel` is not explicitly set, then none of the application data will be protected.  
   
--   If you are using a binding that applies security at the transport level, all application data will be secured according to the capabilities of the transport.  
+- If you are using a binding that applies security at the transport level, all application data will be secured according to the capabilities of the transport.  
   
--   If you use a binding that applies security at the message level, then application data will be secured according to the protection levels set on the contract. If you do not specify a protection level, then all application data in the messages will be encrypted and signed.  
+- If you use a binding that applies security at the message level, then application data will be secured according to the protection levels set on the contract. If you do not specify a protection level, then all application data in the messages will be encrypted and signed.  
   
--   The `ProtectionLevel` can be set at different scoping levels. There is a hierarchy associated with scoping, which is explained in the next section.  
+- The `ProtectionLevel` can be set at different scoping levels. There is a hierarchy associated with scoping, which is explained in the next section.  
   
 ## Scoping  
  Setting the `ProtectionLevel` on the topmost API sets the level for all levels below it. If the `ProtectionLevel` is set to a different value at a lower level, all APIs below that level in the hierarchy will now be reset to the new level (APIs above it, however, will still be affected by the topmost level). The hierarchy is as follows. Attributes at the same level are peers.  

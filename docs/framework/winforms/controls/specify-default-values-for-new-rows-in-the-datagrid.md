@@ -23,11 +23,11 @@ You can make data entry more convenient when the application fills in default va
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   A `NewCustomerId` function for generating unique `CustomerID` values.  
+- A `NewCustomerId` function for generating unique `CustomerID` values.  
   
--   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
 

@@ -39,13 +39,13 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  Specifically, the four account types include:  
   
--   Local User: Machine-only user profile. For example: `MachineName\Administrator` or `MachineName\ProfileName`.  
+- Local User: Machine-only user profile. For example: `MachineName\Administrator` or `MachineName\ProfileName`.  
   
--   Local System: The built-in account SYSTEM on a machine that is not joined to a domain.  
+- Local System: The built-in account SYSTEM on a machine that is not joined to a domain.  
   
--   Domain User: A user account on a Windows domain. For example: `DomainName\ProfileName`.  
+- Domain User: A user account on a Windows domain. For example: `DomainName\ProfileName`.  
   
--   Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
+- Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
   
 > [!NOTE]
 >  The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  

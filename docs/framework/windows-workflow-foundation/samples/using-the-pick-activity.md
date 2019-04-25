@@ -19,18 +19,18 @@ This sample demonstrates how to use the <xref:System.Activities.Statements.Pick>
  Designer Workflow
  The Designer version of the sample demonstrates how to create a workflow in the designer. The following files are included:
 
--   Program.cs : Includes the `Main` function that executes the sample workflow.
+- Program.cs : Includes the `Main` function that executes the sample workflow.
 
--   ReadString.cs: A custom activity that reads some input from the console.
+- ReadString.cs: A custom activity that reads some input from the console.
 
--   Sequence1.xaml: A workflow created using the designer that uses Pick.
+- Sequence1.xaml: A workflow created using the designer that uses Pick.
 
  Coded Workflow
  The coded version of the sample demonstrates how to create a workflow in the designer. The following files are included:
 
--   Program.cs : Includes the `Main` function that executes the sample workflow.
+- Program.cs : Includes the `Main` function that executes the sample workflow.
 
--   ReadString.cs: A custom activity that reads some input from the console.
+- ReadString.cs: A custom activity that reads some input from the console.
 
 #### To use this sample
 

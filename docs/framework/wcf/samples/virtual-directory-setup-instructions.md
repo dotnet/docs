@@ -53,9 +53,9 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 7. By default, the following check boxes are selected:  
   
-    -   **Read**  
+    - **Read**  
   
-    -   **Run scripts (such as ASP)**  
+    - **Run scripts (such as ASP)**  
   
 8. Click **Next**, and then click **Finish** to complete the wizard.  
   
@@ -78,11 +78,11 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 2. By default, the following check boxes are selected:  
   
-    -   **Read**  
+    - **Read**  
   
-    -   **Log visits**  
+    - **Log visits**  
   
-    -   **Index this resource**  
+    - **Index this resource**  
   
 3. Select the **Directory browsing** check box. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.  
   

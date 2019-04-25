@@ -30,9 +30,9 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code creates a service endpoint that uses message security. The code disables service credential negotiation, and the establishment of a security context token (SCT).  
@@ -89,9 +89,9 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ## Client  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone client using the code (and client code).  
+- Create a stand-alone client using the code (and client code).  
   
--   Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
+- Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  

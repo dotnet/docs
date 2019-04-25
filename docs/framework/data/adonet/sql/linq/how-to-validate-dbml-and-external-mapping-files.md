@@ -24,9 +24,9 @@ External mapping files and .dbml files that you modify must be validated against
   
 5. Note the appropriate schema definition for your purpose.  
   
-    -   DbmlSchema.xsd is the schema definition for validating a .dbml file. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
+    - DbmlSchema.xsd is the schema definition for validating a .dbml file. For more information, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
   
-    -   LinqToSqlMapping.xsd is the schema definition for validating an external XML mapping file. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
+    - LinqToSqlMapping.xsd is the schema definition for validating an external XML mapping file. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
   
 6. In the **Use** column of the desired schema definition row, click to open the drop-down box, and then click **Use this schema**.  
   
@@ -45,9 +45,9 @@ External mapping files and .dbml files that you modify must be validated against
   
 1. Locate the Help topic that contains the schema definition as described earlier in this topic.  
   
-    -   For .dbml files, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
+    - For .dbml files, see [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md).  
   
-    -   For external mapping files, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
+    - For external mapping files, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
   
 2. Click **Copy Code** to copy the code file to the Clipboard.  
   

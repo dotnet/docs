@@ -12,11 +12,11 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 
  In this walkthrough, you perform the following tasks:
 
--   Create the project.
+- Create the project.
 
--   Create the WPF control type.
+- Create the WPF control type.
 
--   Apply a style to the WPF control.
+- Apply a style to the WPF control.
 
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -24,7 +24,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio 2012.  
+- Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  
@@ -34,7 +34,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
   
 #### To create the project  
   
--   Create a new Windows Forms Application project in Visual Basic or Visual C# named `StylingWpfContent`.  
+- Create a new Windows Forms Application project in Visual Basic or Visual C# named `StylingWpfContent`.  
   
 ## Creating the WPF Control Types  
  After you add a WPF control type to the project, you can host it in an <xref:System.Windows.Forms.Integration.ElementHost> control.  

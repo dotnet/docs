@@ -18,9 +18,9 @@ ms.assetid: 96fcd78d-1c77-4206-8928-3a0579476ef4
   
  Tasks illustrated in this walkthrough include:  
   
--   Implementing the Windows Forms composite control.  
+- Implementing the Windows Forms composite control.  
   
--   Implementing the WPF host application.  
+- Implementing the WPF host application.  
   
  For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a Windows Forms Composite Control in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159999).  
   
@@ -52,32 +52,32 @@ You need Visual Studio to complete this walkthrough.
   
  Your project should have references to the following system DLLs. If any of these DLLs are not included by default, add them to the project.  
   
--   System  
+- System  
   
--   System.Data  
+- System.Data  
   
--   System.Drawing  
+- System.Drawing  
   
--   System.Windows.Forms  
+- System.Windows.Forms  
   
--   System.Xml  
+- System.Xml  
   
 ### Adding Controls to the Form  
  To add controls to the form:  
   
--   Open `MyControl1` in the designer.  
+- Open `MyControl1` in the designer.  
   
  Add five <xref:System.Windows.Forms.Label> controls and their corresponding <xref:System.Windows.Forms.TextBox> controls, sized and arranged as they are in the preceding illustration, on the form. In the example, the <xref:System.Windows.Forms.TextBox> controls are named:  
   
--   `txtName`  
+- `txtName`  
   
--   `txtAddress`  
+- `txtAddress`  
   
--   `txtCity`  
+- `txtCity`  
   
--   `txtState`  
+- `txtState`  
   
--   `txtZip`  
+- `txtZip`  
   
  Add two <xref:System.Windows.Forms.Button> controls labeled **OK** and **Cancel**. In the example, the button names are `btnOK` and `btnCancel`, respectively.  
   
@@ -153,11 +153,11 @@ The following image shows the complete application, including the control embedd
 ### Implementing the Basic Layout
  The [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] of the host application is implemented in MainWindow.xaml. This file contains [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] markup that defines the layout, and hosts the Windows Forms control. The application is divided into three regions:
 
--   The **Control Properties** panel, which contains a collection of option buttons that you can use to modify various properties of the hosted control.
+- The **Control Properties** panel, which contains a collection of option buttons that you can use to modify various properties of the hosted control.
 
--   The **Data from Control** panel, which contains several <xref:System.Windows.Controls.TextBlock> elements that display the data returned from the hosted control.
+- The **Data from Control** panel, which contains several <xref:System.Windows.Controls.TextBlock> elements that display the data returned from the hosted control.
 
--   The hosted control itself.
+- The hosted control itself.
 
  The basic layout is shown in the following XAML. The markup that is needed to host `MyControl1` is omitted from this example, but will be discussed later.
 
@@ -177,18 +177,18 @@ The following image shows the complete application, including the control embedd
 
  Two elements in the XAML handle the hosting:
 
--   `WindowsFormsHost` represents the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element that enables you to host a Windows Forms control in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.
+- `WindowsFormsHost` represents the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element that enables you to host a Windows Forms control in a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.
 
--   `mcl:MyControl1`, which represents `MyControl1`, is added to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's child collection. As a result, this Windows Forms control is rendered as part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] window, and you can communicate with the control from the application.
+- `mcl:MyControl1`, which represents `MyControl1`, is added to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's child collection. As a result, this Windows Forms control is rendered as part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] window, and you can communicate with the control from the application.
 
 ### Implementing the Code-Behind File
  The code-behind file, MainWindow.xaml.vb or MainWindow.xaml.cs, contains the procedural code that implements the functionality of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] discussed in the preceding section. The primary tasks are:
 
--   Attaching an event handler to `MyControl1`'s `OnButtonClick` event.
+- Attaching an event handler to `MyControl1`'s `OnButtonClick` event.
 
--   Modifying various properties of `MyControl1`, based on how the collection of option buttons are set.
+- Modifying various properties of `MyControl1`, based on how the collection of option buttons are set.
 
--   Displaying the data collected by the control.
+- Displaying the data collected by the control.
 
 #### Initializing the Application
  The initialization code is contained in an event handler for the window's <xref:System.Windows.FrameworkElement.Loaded> event and attaches an event handler to the control's `OnButtonClick` event.

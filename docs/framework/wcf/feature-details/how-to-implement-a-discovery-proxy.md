@@ -8,11 +8,11 @@ This topic explains how to implement a discovery proxy. For more information abo
 
  Implementing a discovery proxy is broken down into three main parts in this topic:
 
--   Define a class that contains a data store and extends the abstract <xref:System.ServiceModel.Discovery.DiscoveryProxy> class.
+- Define a class that contains a data store and extends the abstract <xref:System.ServiceModel.Discovery.DiscoveryProxy> class.
 
--   Implement the helper `AsyncResult` class.
+- Implement the helper `AsyncResult` class.
 
--   Host the Discovery Proxy.
+- Host the Discovery Proxy.
 
 ### To create a new console application project
 

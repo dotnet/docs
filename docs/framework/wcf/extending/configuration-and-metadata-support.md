@@ -9,13 +9,13 @@ This topic describes how to enable configuration and metadata support for bindin
 ## Overview of Configuration and Metadata  
  This topic discusses the following tasks, which are optional items 1, 2, and 4 in the [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md) task list.  
   
--   Enabling configuration file support for a binding element.  
+- Enabling configuration file support for a binding element.  
   
--   Enabling configuration file support for a binding.  
+- Enabling configuration file support for a binding.  
   
--   Exporting WSDL and policy assertions for a binding element.  
+- Exporting WSDL and policy assertions for a binding element.  
   
--   Identifying WSDL and policy assertions to insert and configure your binding or binding element.  
+- Identifying WSDL and policy assertions to insert and configure your binding or binding element.  
   
  For information about creating user-defined bindings and binding elements, see [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md) and [Creating a BindingElement](../../../../docs/framework/wcf/extending/creating-a-bindingelement.md), respectively.  
   

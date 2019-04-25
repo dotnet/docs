@@ -13,11 +13,11 @@ author: "ghogen"
 # How to: Write Services Programmatically
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  
   
--   You must set up your service class to inherit from the <xref:System.ServiceProcess.ServiceBase> class.  
+- You must set up your service class to inherit from the <xref:System.ServiceProcess.ServiceBase> class.  
   
--   You must create a `Main` method for your service project that defines the services to run and calls the <xref:System.ServiceProcess.ServiceBase.Run%2A> method on them.  
+- You must create a `Main` method for your service project that defines the services to run and calls the <xref:System.ServiceProcess.ServiceBase.Run%2A> method on them.  
   
--   You must override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures and fill in any code you want them to run.  
+- You must override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures and fill in any code you want them to run.  
   
 ### To write a service programmatically  
   

@@ -11,33 +11,33 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
   
  This topic contains the following sections:  
   
--   [Ribbon control](#ribbon_control)  
+- [Ribbon control](#ribbon_control)  
   
--   [Improved performance when displaying large sets of grouped data](#grouped_virtualization)  
+- [Improved performance when displaying large sets of grouped data](#grouped_virtualization)  
   
--   [New features for the VirtualizingPanel](#VirtualizingPanel)  
+- [New features for the VirtualizingPanel](#VirtualizingPanel)  
   
--   [Binding to static properties](#static_properties)  
+- [Binding to static properties](#static_properties)  
   
--   [Accessing collections on non-UI Threads](#xthread_access)  
+- [Accessing collections on non-UI Threads](#xthread_access)  
   
--   [Synchronously and Asynchronously validating data](#INotifyDataErrorInfo)  
+- [Synchronously and Asynchronously validating data](#INotifyDataErrorInfo)  
   
--   [Automatically updating the source of a data binding](#delay)  
+- [Automatically updating the source of a data binding](#delay)  
   
--   [Binding to types that Implement ICustomTypeProvider](#ICustomTypeProvider)  
+- [Binding to types that Implement ICustomTypeProvider](#ICustomTypeProvider)  
   
--   [Retrieving data binding information from a binding expression](#binding_state)  
+- [Retrieving data binding information from a binding expression](#binding_state)  
   
--   [Checking for a valid DataContext object](#DisconnectedSource)  
+- [Checking for a valid DataContext object](#DisconnectedSource)  
   
--   [Repositioning data as the data's values change (Live shaping)](#live_shaping)  
+- [Repositioning data as the data's values change (Live shaping)](#live_shaping)  
   
--   [Improved Support for Establishing a Weak Reference to an Event](#weak_event_pattern)  
+- [Improved Support for Establishing a Weak Reference to an Event](#weak_event_pattern)  
   
--   [New methods for the Dispatcher class](#async)  
+- [New methods for the Dispatcher class](#async)  
   
--   [Markup Extensions for Events](#events_markup_extenions)  
+- [Markup Extensions for Events](#events_markup_extenions)  
   
 <a name="ribbon_control"></a>   
 ## Ribbon control  
@@ -58,9 +58,9 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ## Binding to static properties  
  You can use static properties as the source of a data binding. The data binding engine recognizes when the property's value changes if a static event is raised.  For example, if the class `SomeClass` defines a static property called `MyProperty`, `SomeClass` can define a static event that is raised when the value of `MyProperty` changes.  The static event can use either of the following signatures.  
   
--   `public static event EventHandler MyPropertyChanged;`  
+- `public static event EventHandler MyPropertyChanged;`  
   
--   `public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;`  
+- `public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;`  
   
  Note that in the first case, the class exposes a static event named *PropertyName*`Changed` that passes <xref:System.EventArgs> to the event handler.  In the second case, the class exposes a static event named `StaticPropertyChanged` that passes <xref:System.ComponentModel.PropertyChangedEventArgs> to the event handler. A class that implements the static property can choose to raise property-change notifications using either method.  
   

@@ -55,13 +55,13 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
   
  The bypass feature applies to any assembly that is signed with a strong name and that has the following characteristics:  
   
--   Fully trusted without the <xref:System.Security.Policy.StrongName> evidence (for example, has `MyComputer` zone evidence).  
+- Fully trusted without the <xref:System.Security.Policy.StrongName> evidence (for example, has `MyComputer` zone evidence).  
   
--   Loaded into a fully trusted <xref:System.AppDomain>.  
+- Loaded into a fully trusted <xref:System.AppDomain>.  
   
--   Loaded from a location under the <xref:System.AppDomainSetup.ApplicationBase%2A> property of that <xref:System.AppDomain>.  
+- Loaded from a location under the <xref:System.AppDomainSetup.ApplicationBase%2A> property of that <xref:System.AppDomain>.  
   
--   Not delay-signed.  
+- Not delay-signed.  
   
 > [!NOTE]
 >  If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).  

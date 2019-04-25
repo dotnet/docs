@@ -23,11 +23,11 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  This topic contains the following sections:  
   
--   [WPF Feature Partial Trust Support](#WPF_Feature_Partial_Trust_Support)  
+- [WPF Feature Partial Trust Support](#WPF_Feature_Partial_Trust_Support)  
   
--   [Partial Trust Programming](#Partial_Trust_Programming)  
+- [Partial Trust Programming](#Partial_Trust_Programming)  
   
--   [Managing Permissions](#Managing_Permissions)  
+- [Managing Permissions](#Managing_Permissions)  
   
 <a name="WPF_Feature_Partial_Trust_Support"></a>   
 ## WPF Feature Partial Trust Support  
@@ -46,19 +46,19 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the [!INCLUDE[TLA#tla_lhsdk](../../../includes/tlasharptla-lhsdk-md.md)] documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
   
--   [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](./advanced/xaml-overview-wpf.md)).  
+- [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](./advanced/xaml-overview-wpf.md)).  
   
--   Popups (see <xref:System.Windows.Controls.Primitives.Popup?displayProperty=nameWithType>).  
+- Popups (see <xref:System.Windows.Controls.Primitives.Popup?displayProperty=nameWithType>).  
   
--   Drag and Drop (see [Drag and Drop Overview](./advanced/drag-and-drop-overview.md)).  
+- Drag and Drop (see [Drag and Drop Overview](./advanced/drag-and-drop-overview.md)).  
   
--   Clipboard (see <xref:System.Windows.Clipboard?displayProperty=nameWithType>).  
+- Clipboard (see <xref:System.Windows.Clipboard?displayProperty=nameWithType>).  
   
--   Imaging (see <xref:System.Windows.Controls.Image?displayProperty=nameWithType>).  
+- Imaging (see <xref:System.Windows.Controls.Image?displayProperty=nameWithType>).  
   
--   Serialization (see <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType>, <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=nameWithType>).  
+- Serialization (see <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType>, <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=nameWithType>).  
   
--   Open File Dialog Box (see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>).  
+- Open File Dialog Box (see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>).  
   
  The following table outlines the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features that are not safe to run within the limits of the Internet zone permission set.  
   
@@ -147,11 +147,11 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  If you need to increase permissions, you need to change the project settings and the ClickOnce application manifest. For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md). The following documents may also be helpful.  
   
--   [Mage.exe (Manifest Generation and Editing Tool)](../tools/mage-exe-manifest-generation-and-editing-tool.md).  
+- [Mage.exe (Manifest Generation and Editing Tool)](../tools/mage-exe-manifest-generation-and-editing-tool.md).  
   
--   [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).  
+- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).  
   
--   [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications).  
+- [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications).  
   
  If your [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] requires full trust, you can use the same tools to increase the requested permissions. Although an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] will only receive full trust if it is installed on and launched from the local computer, the intranet, or from a URL that is listed in the browser's trusted or allowed sites. If the application is installed from the intranet or a trusted site, the user will receive the standard ClickOnce prompt notifying them of the elevated permissions. The user can choose to continue or cancel the installation.  
   

@@ -111,17 +111,17 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 10. **Make glassCube look like glass:** Set the <xref:System.Windows.Shapes.Shape.Fill%2A> to a glassy look by  using a linear gradient that is 75% opaque and alternates between the color White and Transparent over 6 approximately evenly spaced intervals. This is what to set the gradient stops to:  
   
-    -   Gradient Stop 1: White with Alpha value of 75%  
+    - Gradient Stop 1: White with Alpha value of 75%  
   
-    -   Gradient Stop 2: Transparent  
+    - Gradient Stop 2: Transparent  
   
-    -   Gradient Stop 3: White with Alpha value of 75%  
+    - Gradient Stop 3: White with Alpha value of 75%  
   
-    -   Gradient Stop 4: Transparent  
+    - Gradient Stop 4: Transparent  
   
-    -   Gradient Stop 5: White with Alpha value of 75%  
+    - Gradient Stop 5: White with Alpha value of 75%  
   
-    -   Gradient Stop 6: Transparent  
+    - Gradient Stop 6: Transparent  
   
      This creates a "wavy" glass look.  
   
@@ -167,9 +167,9 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 6. **Create property trigger for IsFocused:** Using the same procedure as for <xref:System.Windows.UIElement.IsMouseOver%2A> (see the first step of this section), create another property trigger for the <xref:System.Windows.UIElement.IsFocused%2A> property. While **Trigger recording is on**, add the following actions to the trigger:  
   
-    -   **glassCube** gets an <xref:System.Windows.UIElement.Opacity%2A> of 100%.  
+    - **glassCube** gets an <xref:System.Windows.UIElement.Opacity%2A> of 100%.  
   
-    -   **outerRectangle** gets a <xref:System.Windows.Shapes.Shape.Stroke%2A> custom expression value of "{DynamicResource {x:Static SystemColors.HighlightBrushKey}}".  
+    - **outerRectangle** gets a <xref:System.Windows.Shapes.Shape.Stroke%2A> custom expression value of "{DynamicResource {x:Static SystemColors.HighlightBrushKey}}".  
   
  As the final step in this walkthrough, we will add animations to the button. These animations will be triggered by events—specifically, the <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.Controls.Primitives.ButtonBase.Click> events.  
   
@@ -231,15 +231,15 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
  In conclusion, in the process of customizing a button template you have learned how to do the following in Microsoft Expression Blend:  
   
--   Customize the look of a control.  
+- Customize the look of a control.  
   
--   Set property triggers. Property triggers are very useful because they can be used on most objects, not just controls.  
+- Set property triggers. Property triggers are very useful because they can be used on most objects, not just controls.  
   
--   Set event triggers. Event triggers are very useful because they can be used on most objects, not just controls.  
+- Set event triggers. Event triggers are very useful because they can be used on most objects, not just controls.  
   
--   Create animations.  
+- Create animations.  
   
--   Miscellaneous: create gradients, add BitmapEffects, use transforms, and set basic properties of objects.  
+- Miscellaneous: create gradients, add BitmapEffects, use transforms, and set basic properties of objects.  
   
 ## See also
 

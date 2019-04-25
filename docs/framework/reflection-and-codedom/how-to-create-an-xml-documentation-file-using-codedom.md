@@ -71,7 +71,7 @@ CodeDOM can be used to create code that generates XML documentation. The process
   
 ## Compiling the Code  
   
--   This code example requires the `FullTrust` permission set to execute successfully.  
+- This code example requires the `FullTrust` permission set to execute successfully.  
   
 ## See also
 

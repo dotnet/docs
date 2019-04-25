@@ -22,21 +22,21 @@ Some applications require a form with a layout that arranges itself appropriatel
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows Forms project  
+- Creating a Windows Forms project  
   
--   Arranging Controls in Rows and Columns  
+- Arranging Controls in Rows and Columns  
   
--   Setting Row and Column Properties  
+- Setting Row and Column Properties  
   
--   Spanning Rows and Columns with a Control  
+- Spanning Rows and Columns with a Control  
   
--   Automatic Handling of Overflows  
+- Automatic Handling of Overflows  
   
--   Inserting Controls by Double-clicking Them in the Toolbox  
+- Inserting Controls by Double-clicking Them in the Toolbox  
   
--   Inserting a Control by Drawing Its Outline  
+- Inserting a Control by Drawing Its Outline  
   
--   Reassigning Existing Controls to a Different Parent  
+- Reassigning Existing Controls to a Different Parent  
   
  When you are finished, you will have an understanding of the role played by these important layout features.  
   
@@ -152,25 +152,25 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 #### To demonstrate that multiple controls within cells are not permitted  
   
--   Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.TableLayoutPanel> control and drop it into one of the occupied cells. Note that the <xref:System.Windows.Forms.TableLayoutPanel> control does not allow you to drop the <xref:System.Windows.Forms.Button> control into the occupied cell.  
+- Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.TableLayoutPanel> control and drop it into one of the occupied cells. Note that the <xref:System.Windows.Forms.TableLayoutPanel> control does not allow you to drop the <xref:System.Windows.Forms.Button> control into the occupied cell.  
   
 ## Swapping Controls  
  The <xref:System.Windows.Forms.TableLayoutPanel> control enables you to swap the controls occupying two different cells.  
   
 #### To swap controls  
   
--   Drag one of the <xref:System.Windows.Forms.Button> controls from an occupied cell and drop into onto another occupied cell. Note that the two controls are moved from one cell into the other.  
+- Drag one of the <xref:System.Windows.Forms.Button> controls from an occupied cell and drop into onto another occupied cell. Note that the two controls are moved from one cell into the other.  
   
 ## Next Steps  
  You can achieve a complex layout using a combination of layout panels and controls. Suggestions for more exploration include:  
   
--   Try resizing one of the <xref:System.Windows.Forms.Button> controls to a larger size and note the effect on the layout.  
+- Try resizing one of the <xref:System.Windows.Forms.Button> controls to a larger size and note the effect on the layout.  
   
--   Paste a selection of multiple controls into the <xref:System.Windows.Forms.TableLayoutPanel> control and note how the controls are inserted.  
+- Paste a selection of multiple controls into the <xref:System.Windows.Forms.TableLayoutPanel> control and note how the controls are inserted.  
   
--   Layout panels can contain other layout panels. Experiment with dropping a <xref:System.Windows.Forms.TableLayoutPanel> control into the existing control.  
+- Layout panels can contain other layout panels. Experiment with dropping a <xref:System.Windows.Forms.TableLayoutPanel> control into the existing control.  
   
--   Dock the <xref:System.Windows.Forms.TableLayoutPanel> control to the parent form. Resize the form and note the effect on the layout.  
+- Dock the <xref:System.Windows.Forms.TableLayoutPanel> control to the parent form. Resize the form and note the effect on the layout.  
   
 ## See also
 

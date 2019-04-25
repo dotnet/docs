@@ -88,25 +88,25 @@ HRESULT GetRequestedRuntimeInfo (
   
  In the .NET Framework version 2.0, you can get information about the latest installed version by using the `GetRequestedRuntimeInfo` method as follows:  
   
--   Specify the `pExe`, `pwszVersion`, and `pConfigurationFile` parameters as null.  
+- Specify the `pExe`, `pwszVersion`, and `pConfigurationFile` parameters as null.  
   
--   Specify the RUNTIME_INFO_UPGRADE_VERSION flag in the `RUNTIME_INFO_FLAGS` enumerations for the `runtimeInfoFlags` parameter.  
+- Specify the RUNTIME_INFO_UPGRADE_VERSION flag in the `RUNTIME_INFO_FLAGS` enumerations for the `runtimeInfoFlags` parameter.  
   
  The `GetRequestedRuntimeInfo` method does not return the latest CLR version in the following circumstances:  
   
--   An application configuration file that specifies loading a particular CLR version exists. Note that the .NET Framework will use the configuration file even if you specify null for the `pConfigurationFile` parameter.  
+- An application configuration file that specifies loading a particular CLR version exists. Note that the .NET Framework will use the configuration file even if you specify null for the `pConfigurationFile` parameter.  
   
--   The [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) method was called specifying an earlier CLR version.  
+- The [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) method was called specifying an earlier CLR version.  
   
--   An application that was compiled for an earlier CLR version is currently running.  
+- An application that was compiled for an earlier CLR version is currently running.  
   
  For the `runtimeInfoFlags` parameter, you can specify only one of the architecture constants of the `RUNTIME_INFO_FLAGS` enumeration at a time:  
   
--   RUNTIME_INFO_REQUEST_IA64  
+- RUNTIME_INFO_REQUEST_IA64  
   
--   RUNTIME_INFO_REQUEST_AMD64  
+- RUNTIME_INFO_REQUEST_AMD64  
   
--   RUNTIME_INFO_REQUEST_X86  
+- RUNTIME_INFO_REQUEST_X86  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

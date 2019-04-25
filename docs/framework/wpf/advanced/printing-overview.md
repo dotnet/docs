@@ -37,21 +37,21 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
  The benefits of the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] print path are significant, and include:  
   
--   [!INCLUDE[TLA2#tla_wys](../../../../includes/tla2sharptla-wys-md.md)] print support  
+- [!INCLUDE[TLA2#tla_wys](../../../../includes/tla2sharptla-wys-md.md)] print support  
   
--   Native support of advanced color profiles, which include 32 bits per channel (bpc), CMYK, named-colors, n-inks, and native support of transparency and gradients.  
+- Native support of advanced color profiles, which include 32 bits per channel (bpc), CMYK, named-colors, n-inks, and native support of transparency and gradients.  
   
--   Improved print performance for both .NET Framework and [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] based applications.  
+- Improved print performance for both .NET Framework and [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] based applications.  
   
--   Industry standard [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] format.  
+- Industry standard [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] format.  
   
  For basic print scenarios, a simple and intuitive [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] is available with a single entry point for user interface, configuration and job submission. For advanced scenarios, an additional support is added for [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] customization (or no [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] at all), synchronous or asynchronous printing, and batch printing capabilities. Both options provide print support in full or partial trust mode.  
   
  [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] was designed with extensibility in mind. By using the extensibility framework, features and capabilities can be added to [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] in a modular manner. Extensibility features include:  
   
--   Print Schema. The public schema is updated regularly and enables rapid extension of device capabilities. (See **PrintTicket and PrintCapabilities** below.)  
+- Print Schema. The public schema is updated regularly and enables rapid extension of device capabilities. (See **PrintTicket and PrintCapabilities** below.)  
   
--   Extensible Filter Pipeline. The [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv) filter pipeline was designed to enable both direct and scalable printing of [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents. For more information, see [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers). 
+- Extensible Filter Pipeline. The [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv) filter pipeline was designed to enable both direct and scalable printing of [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents. For more information, see [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers). 
   
 ### Print Path Architecture  
  While both [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and .NET Framework applications support [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)], [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and Windows Forms applications use a [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] to [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] conversion in order to create [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] formatted content for the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv). These applications are not required to use the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] print path, and can continue to use [!INCLUDE[TLA#tla_emf](../../../../includes/tlasharptla-emf-md.md)] based printing. However, most [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] features and enhancements are only available to applications that target the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] print path.  
@@ -104,7 +104,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
 
 For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] functionality or support, the current [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] print path remains unchanged.  
   
--   For additional reference material on the [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] print path and the various [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] conversion options, see [Microsoft XPS Document Converter (MXDC)](/windows/desktop/printdocs/microsoft-xps-document-converter--mxdc-) and [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers).  
+- For additional reference material on the [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] print path and the various [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] conversion options, see [Microsoft XPS Document Converter (MXDC)](/windows/desktop/printdocs/microsoft-xps-document-converter--mxdc-) and [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers).  
   
 <a name="XPS_Driver_Model_intro"></a>   
 ## XPSDrv Driver Model  
@@ -114,19 +114,19 @@ For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../inclu
   
  Spool file sizes are usually reduced when you use [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] Documents that target an [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] printer driver (XPSDrv) compared with their [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] equivalents; however, there are exceptions:  
   
--   A vector graphic that is very complex, multi-layered, or inefficiently written can be larger than a bitmapped version of the same graphic.  
+- A vector graphic that is very complex, multi-layered, or inefficiently written can be larger than a bitmapped version of the same graphic.  
   
--   For screen display purposes, XPS files embed device fonts as well as computer-based fonts; whereas GDI spool files do not embed device fonts. But both kinds of fonts are subsetted (see below) and printer drivers can remove the device fonts before transmitting the file to the printer.  
+- For screen display purposes, XPS files embed device fonts as well as computer-based fonts; whereas GDI spool files do not embed device fonts. But both kinds of fonts are subsetted (see below) and printer drivers can remove the device fonts before transmitting the file to the printer.  
   
  Spool size reduction is performed through several mechanisms:  
   
--   **Font subsetting**. Only characters used within the actual document are stored in the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] file.  
+- **Font subsetting**. Only characters used within the actual document are stored in the [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] file.  
   
--   **Advanced Graphics Support**. Native support for transparency and gradient primitives avoids rasterization of content in the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Document.  
+- **Advanced Graphics Support**. Native support for transparency and gradient primitives avoids rasterization of content in the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Document.  
   
--   **Identification of common resources**. Resources that are used multiple times (such as an image that represents a corporate logo) are treated as shared resources and are loaded only once.  
+- **Identification of common resources**. Resources that are used multiple times (such as an image that represents a corporate logo) are treated as shared resources and are loaded only once.  
   
--   **ZIP compression**. All [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents use ZIP compression.  
+- **ZIP compression**. All [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents use ZIP compression.  
   
 ## See also
 

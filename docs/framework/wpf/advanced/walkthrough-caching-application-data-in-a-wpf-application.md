@@ -22,24 +22,24 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
  Tasks illustrated in this walkthrough include the following:
 
--   Creating a WPF application project.
+- Creating a WPF application project.
 
--   Adding a reference to the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].
+- Adding a reference to the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].
 
--   Initializing a cache.
+- Initializing a cache.
 
--   Adding a cache entry that contains the contents of a text file.
+- Adding a cache entry that contains the contents of a text file.
 
--   Providing an eviction policy for the cache entry.
+- Providing an eviction policy for the cache entry.
 
--   Monitoring the path of the cached file and notifying the cache instance about changes to the monitored item.
+- Monitoring the path of the cached file and notifying the cache instance about changes to the monitored item.
 
 ## Prerequisites
  In order to complete this walkthrough, you will need:
 
--   Microsoft Visual Studio 2010.
+- Microsoft Visual Studio 2010.
 
--   A text file that contains a small amount of text. (You will display the contents of the text file in a message box.) The code illustrated in the walkthrough assumes that you are working with the following file:
+- A text file that contains a small amount of text. (You will display the contents of the text file in a message box.) The code illustrated in the walkthrough assumes that you are working with the following file:
 
      `c:\cache\cacheText.txt`
 
@@ -137,13 +137,13 @@ Caching enables you to store data in memory for rapid access. When the data is a
 ## Initializing the Cache and Caching an Entry
  Next, you will add the code to perform the following tasks:
 
--   Create an instance of the cache class—that is, you will instantiate a new <xref:System.Runtime.Caching.MemoryCache> object.
+- Create an instance of the cache class—that is, you will instantiate a new <xref:System.Runtime.Caching.MemoryCache> object.
 
--   Specify that the cache uses a <xref:System.Runtime.Caching.HostFileChangeMonitor> object to monitor changes in the text file.
+- Specify that the cache uses a <xref:System.Runtime.Caching.HostFileChangeMonitor> object to monitor changes in the text file.
 
--   Read the text file and cache its contents as a cache entry.
+- Read the text file and cache its contents as a cache entry.
 
--   Display the contents of the cached text file.
+- Display the contents of the cached text file.
 
 #### To create the cache object
 

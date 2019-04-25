@@ -10,11 +10,11 @@ The .NET Framework Data Provider for Oracle includes the <xref:System.Data.Oracl
   
  Other characteristics of a **BFILE** data type that distinguish it from a **LOB** data type are that it:  
   
--   Contains unstructured data.  
+- Contains unstructured data.  
   
--   Supports server-side chunking.  
+- Supports server-side chunking.  
   
--   Uses reference copy semantics. For example, if you perform a copy operation on a **BFILE**, only the **BFILE** locator (which is a reference to the file) is copied. The data in the file is not copied.  
+- Uses reference copy semantics. For example, if you perform a copy operation on a **BFILE**, only the **BFILE** locator (which is a reference to the file) is copied. The data in the file is not copied.  
   
  The **BFILE** data type should be used for referencing LOBs that are large in size, and therefore, not practical to store in the database. More client, server, and communication overhead is involved when using a **BFILE** data type compared with the **LOB** data type. It is more efficient to access a **BFILE** if you only need to obtain a small amount of data. It is more efficient to access database-resident LOBs if you need to obtain the entire object.  
   

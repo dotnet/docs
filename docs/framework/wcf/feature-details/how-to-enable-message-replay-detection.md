@@ -82,19 +82,19 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
  If you do not use secure conversation sessions, replay detection does not guarantee detecting replays in server farm scenarios and when the process is recycled. This applies to the following system-provided bindings:  
   
--   <xref:System.ServiceModel.BasicHttpBinding>.  
+- <xref:System.ServiceModel.BasicHttpBinding>.  
   
--   <xref:System.ServiceModel.WSHttpBinding> with the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property set to `false`.  
+- <xref:System.ServiceModel.WSHttpBinding> with the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property set to `false`.  
   
 ## Compiling the Code  
   
--   The following namespaces are required to compile the code:  
+- The following namespaces are required to compile the code:  
   
--   <xref:System>  
+- <xref:System>  
   
--   <xref:System.ServiceModel>  
+- <xref:System.ServiceModel>  
   
--   <xref:System.ServiceModel.Channels>  
+- <xref:System.ServiceModel.Channels>  
   
 ## See also
 

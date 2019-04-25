@@ -16,13 +16,13 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
   
  This walkthrough demonstrates how to use a <xref:System.Windows.Forms.MenuStrip> control to create a standard menu. The form also responds when a user selects a menu item. The following tasks are illustrated in this walkthrough:  
   
--   Creating a Windows Forms project.  
+- Creating a Windows Forms project.  
   
--   Creating a standard menu.  
+- Creating a standard menu.  
   
--   Creating a <xref:System.Windows.Forms.StatusStrip> control.  
+- Creating a <xref:System.Windows.Forms.StatusStrip> control.  
   
--   Handling menu item selection.  
+- Handling menu item selection.  
   
  When you are finished, you will have a form with a standard menu that displays menu item selections in a <xref:System.Windows.Forms.StatusStrip> control.  
   
@@ -34,7 +34,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
+- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
@@ -107,11 +107,11 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
 ## Next Steps  
  In this walkthrough, you have created a form with a standard menu. You can use the <xref:System.Windows.Forms.ToolStrip> family of controls for many other purposes:  
   
--   Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
+- Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
   
--   Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
+- Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
   
--   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](how-to-set-the-toolstrip-renderer-for-an-application.md).  
+- Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See also
 

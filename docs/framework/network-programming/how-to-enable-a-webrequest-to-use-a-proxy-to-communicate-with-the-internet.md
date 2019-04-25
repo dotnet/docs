@@ -24,7 +24,7 @@ GlobalProxySelection.Select = proxyObject
 ## Compiling the Code  
  This example requires:  
   
--   A [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
+- A [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
   
 ## See also
 

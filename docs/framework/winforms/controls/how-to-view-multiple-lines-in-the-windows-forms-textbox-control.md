@@ -17,7 +17,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
   
 ### To display a carriage return in the TextBox control  
   
--   To display a carriage return in a multi-line <xref:System.Windows.Forms.TextBox>, use the <xref:System.Environment.NewLine%2A> property.  
+- To display a carriage return in a multi-line <xref:System.Windows.Forms.TextBox>, use the <xref:System.Environment.NewLine%2A> property.  
   
      Be aware that the interpretation of escape characters (\\) is language-specific. Visual Basic uses `Chr$(13) & Chr$(10)` for the carriage return and linefeed character combination.  
   

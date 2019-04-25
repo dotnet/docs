@@ -238,11 +238,11 @@ public class PatientRecord
 ## SOAP Header Attributes  
  The SOAP standard defines the following attributes that may exist on a header:  
   
--   `Actor/Role` (`Actor` in SOAP 1.1, `Role` in SOAP 1.2)  
+- `Actor/Role` (`Actor` in SOAP 1.1, `Role` in SOAP 1.2)  
   
--   `MustUnderstand`  
+- `MustUnderstand`  
   
--   `Relay`  
+- `Relay`  
   
  The `Actor` or `Role` attribute specifies the Uniform Resource Identifier (URI) of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the node processing the header must understand it. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. WCF does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute, as specified in the "Message Contract Versioning" section later in this topic. However, it allows you to read and write these attributes as necessary, as in the following description.  
   
@@ -317,9 +317,9 @@ public class BankingTransaction
   
  The following rules apply for versioning headers:  
   
--   WCF does not object to the missing headers—the corresponding members are left at their default values.  
+- WCF does not object to the missing headers—the corresponding members are left at their default values.  
   
--   WCF also ignores unexpected extra headers. The one exception to this rule is if the extra header has a `MustUnderstand` attribute set to `true` in the incoming SOAP message—in this case, an exception is thrown because a header that must be understood cannot be processed.  
+- WCF also ignores unexpected extra headers. The one exception to this rule is if the extra header has a `MustUnderstand` attribute set to `true` in the incoming SOAP message—in this case, an exception is thrown because a header that must be understood cannot be processed.  
   
  Message bodies have similar versioning rules—both missing and additional message body parts are ignored.  
   
@@ -328,9 +328,9 @@ public class BankingTransaction
   
  When creating or accessing a message using a message contract type that inherits from other message contract types, the following rules apply:  
   
--   All of the message headers in the inheritance hierarchy are collected together to form the full set of headers for the message.  
+- All of the message headers in the inheritance hierarchy are collected together to form the full set of headers for the message.  
   
--   All of the message body parts in the inheritance hierarchy are collected together to form the full message body. The body parts are ordered according to the usual ordering rules (by <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=nameWithType> property and then alphabetical), with no relevance to their place in the inheritance hierarchy. Using message contract inheritance where message body parts occur at multiple levels of the inheritance tree is strongly discouraged. If a base class and a derived class define a header or a body part with the same name, the member from the base-most class is used to store the value of that header or body part.  
+- All of the message body parts in the inheritance hierarchy are collected together to form the full message body. The body parts are ordered according to the usual ordering rules (by <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=nameWithType> property and then alphabetical), with no relevance to their place in the inheritance hierarchy. Using message contract inheritance where message body parts occur at multiple levels of the inheritance tree is strongly discouraged. If a base class and a derived class define a header or a body part with the same name, the member from the base-most class is used to store the value of that header or body part.  
   
  Consider the classes in the following code example.  
   
@@ -355,26 +355,26 @@ public class PatientRecord : PersonRecord
 ## WSDL Considerations  
  When generating a Web Services Description Language (WSDL) contract from a service that uses message contracts, it is important to remember that not all message contract features are reflected in the resulting WSDL. Consider the following points:  
   
--   WSDL cannot express the concept of an array of headers. When creating messages with an array of headers using the <xref:System.ServiceModel.MessageHeaderArrayAttribute>, the resulting WSDL reflects only one header instead of the array.  
+- WSDL cannot express the concept of an array of headers. When creating messages with an array of headers using the <xref:System.ServiceModel.MessageHeaderArrayAttribute>, the resulting WSDL reflects only one header instead of the array.  
   
--   The resulting WSDL document may not reflect some protection-level information.  
+- The resulting WSDL document may not reflect some protection-level information.  
   
--   The message type generated in the WSDL has the same name as the class name of the message contract type.  
+- The message type generated in the WSDL has the same name as the class name of the message contract type.  
   
--   When using the same message contract in multiple operations, multiple message types are generated in the WSDL document. The names are made unique by adding the numbers "2", "3", and so on, for subsequent uses. When importing back the WSDL, multiple message contract types are created and are identical except for their names.  
+- When using the same message contract in multiple operations, multiple message types are generated in the WSDL document. The names are made unique by adding the numbers "2", "3", and so on, for subsequent uses. When importing back the WSDL, multiple message contract types are created and are identical except for their names.  
   
 ## SOAP Encoding Considerations  
  WCF allows you to use the legacy SOAP encoding style of XML, however, its use is not recommended. When using this style (by setting the `Use` property to `Encoded` on the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=nameWithType> applied to the service contract), the following additional considerations apply:  
   
--   The message headers are not supported; this means that the attribute <xref:System.ServiceModel.MessageHeaderAttribute> and the array attribute <xref:System.ServiceModel.MessageHeaderArrayAttribute> are incompatible with SOAP encoding.  
+- The message headers are not supported; this means that the attribute <xref:System.ServiceModel.MessageHeaderAttribute> and the array attribute <xref:System.ServiceModel.MessageHeaderArrayAttribute> are incompatible with SOAP encoding.  
   
--   If the message contract is not wrapped, that is, if the property <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is set to `false`, the message contract can have only one body part.  
+- If the message contract is not wrapped, that is, if the property <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is set to `false`, the message contract can have only one body part.  
   
--   The name of the wrapper element for the request message contract must match the operation name. Use the `WrapperName` property of the message contract for this.  
+- The name of the wrapper element for the request message contract must match the operation name. Use the `WrapperName` property of the message contract for this.  
   
--   The name of the wrapper element for the response message contract must be the same as the name of the operation suffixed by 'Response'. Use the <xref:System.ServiceModel.MessageContractAttribute.WrapperName%2A> property of the message contract for this.  
+- The name of the wrapper element for the response message contract must be the same as the name of the operation suffixed by 'Response'. Use the <xref:System.ServiceModel.MessageContractAttribute.WrapperName%2A> property of the message contract for this.  
   
--   SOAP encoding preserves object references. For example, consider the following code.  
+- SOAP encoding preserves object references. For example, consider the following code.  
   
     ```csharp  
     [MessageContract(WrapperName="updateChangeRecord")]  

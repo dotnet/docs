@@ -38,7 +38,7 @@ Like the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.
   
 ### To retrieve the currently selected business object  
   
--   Get the cell <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property and cast it to the business object type.  
+- Get the cell <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property and cast it to the business object type.  
   
      [!code-csharp[System.Windows.Forms.DataGridViewComboBoxObjectBinding#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/CS/form1.cs#120)]
      [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#120)]  
@@ -60,7 +60,7 @@ Like the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.
 ## Compiling the Code  
  This example requires:  
   
--   References to the System and System.Windows.Forms assemblies.  
+- References to the System and System.Windows.Forms assemblies.  
   
 ## See also
 

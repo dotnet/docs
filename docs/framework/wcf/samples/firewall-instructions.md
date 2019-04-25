@@ -6,11 +6,11 @@ ms.assetid: a7dc429f-65ac-4faf-974a-77d5fb977fe1
 # Firewall Instructions
 You must enable several ports or programs in the firewall so that the Windows Communication Foundation (WCF) samples can function. Many of the samples communicate by using ports in the range 8000-8003, and port 9000. The firewall is turned on by default and prevents access to these ports. To enable the firewall for the samples, complete one of the following procedures, depending on your requirements and security environment:  
   
--   Option 1: Interactively enable samples while running. Make no advance changes to your firewall configuration and proceed to start building and running the samples. When a sample is run, a **Windows Security Alert** dialog box appears. The sample program in question can then be added interactively to an unblocked list. With this procedure, you may have to then restart the sample.  
+- Option 1: Interactively enable samples while running. Make no advance changes to your firewall configuration and proceed to start building and running the samples. When a sample is run, a **Windows Security Alert** dialog box appears. The sample program in question can then be added interactively to an unblocked list. With this procedure, you may have to then restart the sample.  
   
--   Option 2: Enable sample programs in advance. Start the **Windows Firewall Control Panel** applet and enable the sample programs you plan to run. You must build the programs first so the executable files exist. You can find more detailed instructions in the following procedure.  
+- Option 2: Enable sample programs in advance. Start the **Windows Firewall Control Panel** applet and enable the sample programs you plan to run. You must build the programs first so the executable files exist. You can find more detailed instructions in the following procedure.  
   
--   Option 3: Enable a port range in advance. Start the **Windows Firewall** **Control Panel** applet and enable ports 80, 443, 8000-8003 and 9000, which are used by the samples. You can find more detailed instructions in the following procedure. This option is less secure than the others because it allows any program to use these ports, not just the samples.  
+- Option 3: Enable a port range in advance. Start the **Windows Firewall** **Control Panel** applet and enable ports 80, 443, 8000-8003 and 9000, which are used by the samples. You can find more detailed instructions in the following procedure. This option is less secure than the others because it allows any program to use these ports, not just the samples.  
   
  If you are unsure of which procedure to use, choose the first option. If you are running a firewall from another vendor, you might need to make similar changes.  
   
@@ -28,9 +28,9 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
 3. Complete one of the following operating specific steps to allow a program through the Windows Firewall:  
   
-    -   On Windows 7 or Windows Server 2008 r2, click **Allow a program or feature through Windows Firewall**. Click **Change Settings**, Allow **Another Program…**.  
+    - On Windows 7 or Windows Server 2008 r2, click **Allow a program or feature through Windows Firewall**. Click **Change Settings**, Allow **Another Program…**.  
   
-    -   On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], click **Allow a program through Windows Firewall**.  
+    - On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], click **Allow a program through Windows Firewall**.  
   
 4. On the **Exceptions** tab, click **Add Program**.  
   

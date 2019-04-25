@@ -14,13 +14,13 @@ Client applications must create, configure, and use WCF client or channel object
 ## Overview  
  This topic describes behavior and issues relating to:  
   
--   Channel and session lifetimes.  
+- Channel and session lifetimes.  
   
--   Handling exceptions.  
+- Handling exceptions.  
   
--   Understanding blocking issues.  
+- Understanding blocking issues.  
   
--   Initializing channels interactively.  
+- Initializing channels interactively.  
   
 ### Channel and Session Lifetimes  
  Windows Communication Foundation (WCF) applications includes two categories of channels, datagram and sessionful.  

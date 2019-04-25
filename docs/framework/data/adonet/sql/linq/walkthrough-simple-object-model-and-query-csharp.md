@@ -14,24 +14,24 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 ## Prerequisites  
   
--   This walkthrough uses a dedicated folder ("c:\linqtest5") to hold files. Create this folder before you begin the walkthrough.  
+- This walkthrough uses a dedicated folder ("c:\linqtest5") to hold files. Create this folder before you begin the walkthrough.  
   
--   This walkthrough requires the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the file to the c:\linqtest5 folder.  
+- This walkthrough requires the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the file to the c:\linqtest5 folder.  
   
 ## Overview  
  This walkthrough consists of six main tasks:  
   
--   Creating a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
+- Creating a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
   
--   Mapping a class to a database table.  
+- Mapping a class to a database table.  
   
--   Designating properties on the class to represent database columns.  
+- Designating properties on the class to represent database columns.  
   
--   Specifying the connection to the Northwind database.  
+- Specifying the connection to the Northwind database.  
   
--   Creating a simple query to run against the database.  
+- Creating a simple query to run against the database.  
   
--   Executing the query and observing the results.  
+- Executing the query and observing the results.  
   
 ## Creating a LINQ to SQL Solution  
  In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
@@ -70,22 +70,22 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To create an entity class and map it to a database table  
   
--   Type or paste the following code into Program.cs immediately above the `Program` class declaration:  
+- Type or paste the following code into Program.cs immediately above the `Program` class declaration:  
   
      [!code-csharp[DLinqWalk1CS#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1CS/cs/Program.cs#2)]  
   
 ## Designating Properties on the Class to Represent Database Columns  
  In this step, you accomplish several tasks.  
   
--   You use the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to designate `CustomerID` and `City` properties on the entity class as representing columns in the database table.  
+- You use the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to designate `CustomerID` and `City` properties on the entity class as representing columns in the database table.  
   
--   You designate the `CustomerID` property as representing a primary key column in the database.  
+- You designate the `CustomerID` property as representing a primary key column in the database.  
   
--   You designate `_CustomerID` and `_City` fields for private storage. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can then store and retrieve values directly, instead of using public accessors that might include business logic.  
+- You designate `_CustomerID` and `_City` fields for private storage. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can then store and retrieve values directly, instead of using public accessors that might include business logic.  
   
 #### To represent characteristics of two database columns  
   
--   Type or paste the following code into Program.cs inside the curly braces for the `Customer` class.  
+- Type or paste the following code into Program.cs inside the curly braces for the `Customer` class.  
   
      [!code-csharp[DLinqWalk1CS#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1CS/cs/Program.cs#3)]  
   
@@ -96,7 +96,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To specify the database connection  
   
--   Type or paste the following code into the `Main` method.  
+- Type or paste the following code into the `Main` method.  
   
      Note that the `northwnd.mdf` file is assumed to be in the linqtest5 folder. For more information, see the Prerequisites section earlier in this walkthrough.  
   
@@ -109,7 +109,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 #### To create a simple query  
   
--   Type or paste the following code into the `Main` method after the `Table<Customer>` declaration.  
+- Type or paste the following code into the `Main` method after the `Table<Customer>` declaration.  
   
      [!code-csharp[DLinqWalk1ACS#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1ACS/cs/Program.cs#5)]  
   

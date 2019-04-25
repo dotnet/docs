@@ -21,13 +21,13 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Add a new class library project called `Common`. Add references to the following assemblies:  
   
-    -   System.Activities.dll  
+    - System.Activities.dll  
   
-    -   System.ServiceModel.dll  
+    - System.ServiceModel.dll  
   
-    -   System.ServiceModel.Activities.dll  
+    - System.ServiceModel.Activities.dll  
   
-    -   System.Transactions.dll  
+    - System.Transactions.dll  
   
 3. Add a new class called `PrintTransactionInfo` to the `Common` project. This class is derived from <xref:System.Activities.NativeActivity> and overloads the <xref:System.Activities.NativeActivity.Execute%2A> method.  
   

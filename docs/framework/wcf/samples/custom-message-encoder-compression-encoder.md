@@ -23,13 +23,13 @@ This sample demonstrates how to implement a custom encoder using the Windows Com
   
  The sample demonstrates how to build and integrate a custom message encoder into a WCF application. The library GZipEncoder.dll is deployed with both the client and the service. This sample also demonstrates the impact of compressing messages. The code in GZipEncoder.dll demonstrates the following:  
   
--   Building a custom encoder and encoder factory.  
+- Building a custom encoder and encoder factory.  
   
--   Developing a binding element for a custom encoder.  
+- Developing a binding element for a custom encoder.  
   
--   Using the custom binding configuration for integrating custom binding elements.  
+- Using the custom binding configuration for integrating custom binding elements.  
   
--   Developing a custom configuration handler to allow file configuration of a custom binding element.  
+- Developing a custom configuration handler to allow file configuration of a custom binding element.  
   
  As indicated previously, there are several layers that are implemented in a custom encoder. To better illustrate the relationship between each of these layers, a simplified order of events for service start-up is in the following list:  
   

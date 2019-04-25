@@ -14,19 +14,19 @@ This topic describes the format of trace data, how to view it, and approaches th
 ## Viewing Trace Content  
  A trace event contains the following most significant information:  
   
--   Activity name when set.  
+- Activity name when set.  
   
--   Emission time.  
+- Emission time.  
   
--   Trace level.  
+- Trace level.  
   
--   Trace source name.  
+- Trace source name.  
   
--   Process name.  
+- Process name.  
   
--   Thread id.  
+- Thread id.  
   
--   A unique trace identifier, which is a URL that points to a destination in Microsoft Docs, from which you can obtain more information related to the trace.  
+- A unique trace identifier, which is a URL that points to a destination in Microsoft Docs, from which you can obtain more information related to the trace.  
   
  All of these can be seen in the upper right panel in the Service Trace Viewer, or in the **Basic Information** section in the formatted view of the lower-right panel when selecting a trace.  
   
@@ -37,19 +37,19 @@ This topic describes the format of trace data, how to view it, and approaches th
   
  In the XML view, useful xml tags include the following:  
   
--   `<SubType>` (trace level).  
+- `<SubType>` (trace level).  
   
--   `<TimeCreated>`.  
+- `<TimeCreated>`.  
   
--   `<Source>` (trace source name).  
+- `<Source>` (trace source name).  
   
--   `<Correlation>` (activity id set when emitting the trace).  
+- `<Correlation>` (activity id set when emitting the trace).  
   
--   `<Execution>` (process and thread id).  
+- `<Execution>` (process and thread id).  
   
--   `<Computer>`.  
+- `<Computer>`.  
   
--   `<ExtendedData>`, including `<Action>`, `<MessageID>` and the `<ActivityId>` set in the message header when sending a message.  
+- `<ExtendedData>`, including `<Action>`, `<MessageID>` and the `<ActivityId>` set in the message header when sending a message.  
   
  If you examine the "Sent a message over a channel" trace, you may see the following content.  
   
@@ -107,17 +107,17 @@ This topic describes the format of trace data, how to view it, and approaches th
   
  In the following screenshot, extracted from the [Tracing and Message Logging](../../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) sample the left panel displays the list of activities created in the client process, sorted by creation time. The following is a chronological list of activities:  
   
--   Constructed the channel factory (ClientBase).  
+- Constructed the channel factory (ClientBase).  
   
--   Opened the channel factory.  
+-  Opened the channel factory.  
   
--   Processed the Add action.  
+- Processed the Add action.  
   
--   Set up the Secure Session (this OCCURRED on the first request) and processed three security infrastructure response messages: RST, RSTR, SCT (Process message 1, 2, 3).  
+- Set up the Secure Session (this OCCURRED on the first request) and processed three security infrastructure response messages: RST, RSTR, SCT (Process message 1, 2, 3).  
   
--   Processed the Subtract, Multiply, and Divide requests.  
+- Processed the Subtract, Multiply, and Divide requests.  
   
--   Closed the channel factory, and doing so closed the Secure session and processed the security message response Cancel.  
+- Closed the channel factory, and doing so closed the Secure session and processed the security message response Cancel.  
   
  We see the security infrastructure messages because of the wsHttpBinding.  
   

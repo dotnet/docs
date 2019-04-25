@@ -24,15 +24,15 @@ This section describes what client applications do, how to configure, create, an
   
  The following sections discuss these steps and provide brief introductions to the following issues:  
   
--   Handling errors.  
+- Handling errors.  
   
--   Configuring and securing clients.  
+- Configuring and securing clients.  
   
--   Creating callback objects for duplex services.  
+- Creating callback objects for duplex services.  
   
--   Calling services asynchronously.  
+- Calling services asynchronously.  
   
--   Calling services using client channels.  
+- Calling services using client channels.  
   
 ## Obtain the Service Contract, Bindings, and Addresses  
  In WCF, services and clients model contracts using managed attributes, interfaces, and methods. To connect to a service in a client application, you need to obtain the type information for the service contract. Typically, you do this by using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), which downloads metadata from the service, converts it to a managed source code file in the language of your choice, and creates a client application configuration file that you can use to configure your WCF client object. For example, if you are going to create an WCF client object to invoke a `MyCalculatorService`, and you know that the metadata for that service is published at `http://computerName/MyCalculatorService/Service.svc?wsdl`, then the following code example shows how to use Svcutil.exe to obtain a `ClientCode.vb` file that contains the service contract in managed code.  
@@ -140,11 +140,11 @@ End Interface
   
  Clients of duplex services must:  
   
--   Implement a callback contract class.  
+- Implement a callback contract class.  
   
--   Create an instance of the callback contract implementation class and use it to create the <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object that you pass to the WCF client constructor.  
+- Create an instance of the callback contract implementation class and use it to create the <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object that you pass to the WCF client constructor.  
   
--   Invoke operations and handle operation callbacks.  
+- Invoke operations and handle operation callbacks.  
   
  Duplex WCF client objects function like their nonduplex counterparts, with the exception that they expose the functionality necessary to support callbacks, including the configuration of the callback service.  
   

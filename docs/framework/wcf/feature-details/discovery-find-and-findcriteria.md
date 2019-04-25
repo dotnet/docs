@@ -14,21 +14,21 @@ A discovery find operation is initiated by a client to discover one or more serv
   
  Search criteria include:  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - Optional. The contract name of the service being searched for and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts reply. Note that in WCF an endpoint can only support one contract.  
+- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - Optional. The contract name of the service being searched for and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts reply. Note that in WCF an endpoint can only support one contract.  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - Optional. Scopes are absolute URIs that are used to categorize individual service endpoints. You may want to use this in scenarios where multiple endpoints expose the same contract and you want a way to search for a subset of the endpoints. If more than one scope is specified, only service endpoints matching ALL scopes reply.  
+- <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - Optional. Scopes are absolute URIs that are used to categorize individual service endpoints. You may want to use this in scenarios where multiple endpoints expose the same contract and you want a way to search for a subset of the endpoints. If more than one scope is specified, only service endpoints matching ALL scopes reply.  
   
--   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Specifies the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint. There are five supported scope-matching rules:  
+- <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Specifies the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint. There are five supported scope-matching rules:  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> does a basic case-sensitive string comparison.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> does a basic case-sensitive string comparison.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> matches by segments separated by "/". A search for `http://contoso/building1` matches a service with scope `http://contoso/building/floor1`. Note that it does not match `http://contoso/building100` because the last two segments do not match.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> matches by segments separated by "/". A search for `http://contoso/building1` matches a service with scope `http://contoso/building/floor1`. Note that it does not match `http://contoso/building100` because the last two segments do not match.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> matches scopes by segments using an LDAP URL.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> matches scopes by segments using an LDAP URL.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByUuid?displayProperty=nameWithType> matches scopes exactly using a UUID string.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByUuid?displayProperty=nameWithType> matches scopes exactly using a UUID string.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByNone?displayProperty=nameWithType> matches only those services that do not specify a scope.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByNone?displayProperty=nameWithType> matches only those services that do not specify a scope.  
   
      If a scope-matching rule is not specified, <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix> is used.  
   

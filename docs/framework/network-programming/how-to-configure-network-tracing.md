@@ -21,7 +21,7 @@ The application or computer configuration file holds the settings that determine
   
 ### To configure network tracing  
   
--   Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.  
+- Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.  
   
     ```xml  
     <configuration>  

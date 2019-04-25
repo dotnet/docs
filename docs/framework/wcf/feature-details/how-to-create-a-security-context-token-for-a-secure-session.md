@@ -20,7 +20,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
 ### To use stateful SCTs in a secure session  
   
--   Create a custom binding that specifies that SOAP messages are protected by a secure session that uses a stateful SCT.  
+- Create a custom binding that specifies that SOAP messages are protected by a secure session that uses a stateful SCT.  
   
     1.  Define a custom binding, by adding a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) to the configuration file for the service.  
   

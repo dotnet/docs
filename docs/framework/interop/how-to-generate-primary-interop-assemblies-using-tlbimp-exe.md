@@ -12,19 +12,19 @@ ms.author: "ronpet"
 # How to: Generate Primary Interop Assemblies Using Tlbimp.exe
 There are two ways to generate a primary interop assembly:  
   
--   Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)].  
+- Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)].  
   
      The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:  
   
-    -   Checks for other registered primary interop assemblies before creating new interop assemblies for any nested type library references.  
+    - Checks for other registered primary interop assemblies before creating new interop assemblies for any nested type library references.  
   
-    -   Fails to emit the primary interop assembly if you do not specify either the container or file name to give the primary interop assembly a strong name.  
+    - Fails to emit the primary interop assembly if you do not specify either the container or file name to give the primary interop assembly a strong name.  
   
-    -   Fails to emit a primary interop assembly if you omit references to dependent assemblies.  
+    - Fails to emit a primary interop assembly if you omit references to dependent assemblies.  
   
-    -   Fails to emit a primary interop assembly if you add references to dependent assemblies that are not primary interop assemblies.  
+    - Fails to emit a primary interop assembly if you add references to dependent assemblies that are not primary interop assemblies.  
   
--   Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.  
+- Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.  
   
  You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md).  
   

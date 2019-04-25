@@ -69,7 +69,7 @@ Order(OrderNumber, EmpNumber)
   
  In addition, the **DataSet** defines the following constraints:  
   
--   A unique constraint on the **Order** table.  
+- A unique constraint on the **Order** table.  
   
     ```  
               Table: Order  
@@ -79,7 +79,7 @@ Order(OrderNumber, EmpNumber)
     IsPrimaryKey: False  
     ```  
   
--   A relationship between the **Order** and **OrderDetail** tables. The **Nested** property is set to **False** because the two elements are not nested in the schema.  
+- A relationship between the **Order** and **OrderDetail** tables. The **Nested** property is set to **False** because the two elements are not nested in the schema.  
   
     ```  
               ParentTable: Order  
@@ -92,7 +92,7 @@ Order(OrderNumber, EmpNumber)
     Nested: False  
     ```  
   
--   A foreign key constraint on the **OrderDetail** table.  
+- A foreign key constraint on the **OrderDetail** table.  
   
     ```  
               ConstraintName: OrderNoRef  

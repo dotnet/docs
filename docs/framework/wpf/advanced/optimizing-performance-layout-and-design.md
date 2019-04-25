@@ -20,25 +20,25 @@ The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharpt
   
  The layout system completes two passes for each child member in a collection: a measure pass, and an arrange pass. Each child object provides its own overridden implementation of the <xref:System.Windows.UIElement.Measure%2A> and <xref:System.Windows.UIElement.Arrange%2A> methods in order to provide its own specific layout behavior. At its simplest, layout is a recursive system that leads to an element being sized, positioned, and drawn onscreen.  
   
--   A child <xref:System.Windows.UIElement> object begins the layout process by first having its core properties measured.  
+- A child <xref:System.Windows.UIElement> object begins the layout process by first having its core properties measured.  
   
--   The object's <xref:System.Windows.FrameworkElement> properties that are related to size, such as <xref:System.Windows.FrameworkElement.Width%2A>, <xref:System.Windows.FrameworkElement.Height%2A>, and <xref:System.Windows.FrameworkElement.Margin%2A>, are evaluated.  
+- The object's <xref:System.Windows.FrameworkElement> properties that are related to size, such as <xref:System.Windows.FrameworkElement.Width%2A>, <xref:System.Windows.FrameworkElement.Height%2A>, and <xref:System.Windows.FrameworkElement.Margin%2A>, are evaluated.  
   
--   <xref:System.Windows.Controls.Panel>-specific logic is applied, such as the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the <xref:System.Windows.Controls.DockPanel>, or the <xref:System.Windows.Controls.StackPanel.Orientation%2A> property of the <xref:System.Windows.Controls.StackPanel>.  
+- <xref:System.Windows.Controls.Panel>-specific logic is applied, such as the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the <xref:System.Windows.Controls.DockPanel>, or the <xref:System.Windows.Controls.StackPanel.Orientation%2A> property of the <xref:System.Windows.Controls.StackPanel>.  
   
--   Content is arranged, or positioned, after all child objects have been measured.  
+- Content is arranged, or positioned, after all child objects have been measured.  
   
--   The collection of child objects is drawn to the screen.  
+- The collection of child objects is drawn to the screen.  
   
  The layout pass process is invoked again if any of the following actions occur:  
   
--   A child object is added to the collection.  
+- A child object is added to the collection.  
   
--   A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> is applied to the child object.  
+- A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> is applied to the child object.  
   
--   The <xref:System.Windows.UIElement.UpdateLayout%2A> method is called for the child object.  
+- The <xref:System.Windows.UIElement.UpdateLayout%2A> method is called for the child object.  
   
--   When a change occurs to the value of a dependency property that is marked with metadata affecting the measure or arrange passes.  
+- When a change occurs to the value of a dependency property that is marked with metadata affecting the measure or arrange passes.  
   
 ### Use the Most Efficient Panel where Possible  
  The complexity of the layout process is directly based on the layout behavior of the <xref:System.Windows.Controls.Panel>-derived elements you use. For example, a <xref:System.Windows.Controls.Grid> or <xref:System.Windows.Controls.StackPanel> control provides much more functionality than a <xref:System.Windows.Controls.Canvas> control. The price for this greater increase in functionality is a greater increase in performance costs. However, if you do not require the functionality that a <xref:System.Windows.Controls.Grid> control provides, you should use the less costly alternatives, such as a <xref:System.Windows.Controls.Canvas> or a custom panel.  

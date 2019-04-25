@@ -14,13 +14,13 @@ An entry point identifies the location of a function in a DLL. Within a managed 
   
  Following is a list of possible reasons to rename a DLL function:  
   
--   To avoid using case-sensitive API function names  
+- To avoid using case-sensitive API function names  
   
--   To comply with existing naming standards  
+- To comply with existing naming standards  
   
--   To accommodate functions that take different data types (by declaring multiple versions of the same DLL function)  
+- To accommodate functions that take different data types (by declaring multiple versions of the same DLL function)  
   
--   To simplify using APIs that contain ANSI and Unicode versions  
+- To simplify using APIs that contain ANSI and Unicode versions  
   
  This topic demonstrates how to rename a DLL function in managed code.  
   

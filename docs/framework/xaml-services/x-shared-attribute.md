@@ -39,9 +39,9 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
  In WPF, `x:Shared` is only valid under the following conditions:  
   
--   The <xref:System.Windows.ResourceDictionary> that contains the items with `x:Shared` must be compiled. The <xref:System.Windows.ResourceDictionary> cannot be within loose XAML or used for themes.  
+- The <xref:System.Windows.ResourceDictionary> that contains the items with `x:Shared` must be compiled. The <xref:System.Windows.ResourceDictionary> cannot be within loose XAML or used for themes.  
   
--   The <xref:System.Windows.ResourceDictionary> that contains the items must not be nested within another <xref:System.Windows.ResourceDictionary>. For example, you cannot use `x:Shared` for items in a <xref:System.Windows.ResourceDictionary> that is within a <xref:System.Windows.Style> that is already a <xref:System.Windows.ResourceDictionary> item.  
+- The <xref:System.Windows.ResourceDictionary> that contains the items must not be nested within another <xref:System.Windows.ResourceDictionary>. For example, you cannot use `x:Shared` for items in a <xref:System.Windows.ResourceDictionary> that is within a <xref:System.Windows.Style> that is already a <xref:System.Windows.ResourceDictionary> item.  
   
 ## See also
 

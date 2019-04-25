@@ -103,35 +103,40 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 
 ## Trainer Index
 
-|Task|Trainer|Type|Properties|
-|----|---------|----|----------|
-|Binary Classification|<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|Linear| Works best with featurized text. Does not have l1-reg, does have l2-reg|
-||<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>|| Stores training data in memory. Doesn't scale as well as the AveragedPerceptronTrainer but produces proper logistic regression training statistics. Does not make multiple passes over data; has parameter to constrain weights to be positive only (bias is adjusted to make weights positive)|
-||<xref:Microsoft.ML.Trainers.LinearSvmTrainer>|| This trainer does not perform regularization |
-||<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>|| Auto-tunes hyper-parameters (l1, l2-regularization), so good performance out of the box |
-||<xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>|| Autotunes hyper-parameters (l1, l2-regularization), so good performance out of the box. Slightly faster than the SdcaLogisticRegressionBinaryTrainer because it is uncalibrated |
-||<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|| Fastest and most accurate linear binary classification trainer. Scales well with number of processors. Performs l-2 regularization |
-||<xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>|Boosted decision tree| Fastest and most accurate of the binary classifition tree trainers. Highly tunable |
-||<xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>|| Resilient to unbalanced data. Highly tunable |
-||<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>|||
-||<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>|GAM| Can control for bias in a model |
-||<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|| Gives independent treatment of one-hot encoded raw inputs. Can accept many feature columns |
-|Multiclass Classification|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer>|Linear||
-||<xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>|||
-||<xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>|||
-||<xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer>|||
-||<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|Naive Bayes|Input features must <xref:System.Single> values that are interpreted as boolean values (greater than 0 being true, and less than or equal to zero being false|
-||<xref:Microsoft.ML.Trainers.OneVersusAllTrainer>|Ensemble||Takes a binary classifier and trains all values within a class against all values not in that class, for all classes. Does not scale well with number of classes|
-||<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>||Similar to the OneVersusAllTrainer but takes pairs of classes at a time|
+|Trainer|Type|Properties|
+|-------|----|======----|
+|Binary classification||||
+|<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|Linear| Works best with featurized text. Does not have l1-reg, does have l2-reg|
+|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>|| Stores training data in memory. Doesn't scale as well as the AveragedPerceptronTrainer but produces proper logistic regression training statistics. Does not make multiple passes over data; has parameter to constrain weights to be positive only (bias is adjusted to make weights positive)|
+|<xref:Microsoft.ML.Trainers.LinearSvmTrainer>|| This trainer does not perform regularization |
+|<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>|| Auto-tunes hyper-parameters (l1, l2-regularization), so good performance out of the box |
+|<xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>|| Autotunes hyper-parameters (l1, l2-regularization), so good performance out of the box. Slightly faster than the SdcaLogisticRegressionBinaryTrainer because it is uncalibrated |
+|<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|| Fastest and most accurate linear binary classification trainer. Scales well with number of processors. Performs l-2 regularization |
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>|Boosted decision tree| Fastest and most accurate of the binary classifition tree trainers. Highly tunable |
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>|| Resilient to unbalanced data. Highly tunable |
+|<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>|||
+|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>|GAM| Can control for bias in a model |
+|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|| Gives independent treatment of one-hot encoded raw inputs. Can accept many feature columns |
+|Multiclass Classification|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer>|Linear||
+|<xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>|||
+|<xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>|||
+|<xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer>|||
+|<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|Naive Bayes|Input features must <xref:System.Single> values that are interpreted as boolean values (greater than 0 being true, and less than or equal to zero being false|
+|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer>|Ensemble|Takes a binary classifier and trains all values within a class against all values not in that class, for all classes. Does not scale well with number of classes|
+|<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>||Similar to the OneVersusAllTrainer but takes pairs of classes at a time|
 |Regression|<xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|Linear||
-||<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>|||
-||<xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|||
-||<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|||
-||<xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer>|Boosted decision tree|Squared loss|
-||<xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer>||Tweedie loss|
-||<xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>||squared loss|
-||<xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|GAM||
-|Clustering|<xref:Microsoft.ML.Trainers.KMeansTrainer>|K Means|Can also use it as a featurizer and then combined with a tree algorithm |
-|Anomaly Detection|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|Principal Component Analysis||
-|Ranking|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>|Linear||
-||<xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|Boosted decision tree| Gives better performance than Light GBM|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>|||
+|<xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|||
+|<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|||
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer>|Boosted decision tree|Squared loss|
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer>||Tweedie loss|
+|<xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>||squared loss|
+|<xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|GAM||
+|Clustering|
+|<xref:Microsoft.ML.Trainers.KMeansTrainer>|K Means|Can also use it as a featurizer and then combined with a tree algorithm |
+|Anomaly Detection|
+|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|Principal Component Analysis||
+|Ranking|
+|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>|Linear||
+|<xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|Boosted decision tree| Gives better performance than Light GBM|

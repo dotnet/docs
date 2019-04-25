@@ -52,60 +52,60 @@ Different trainers can be configured with different loss functions. This is note
 
 An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 
 
-### Linear
+- Linear
 
-Linear algorithms produce a model that calculates **scores** from a linear combination of the input data and a set of **weights**. The weights are parameters of the model estimated during training.
+    Linear algorithms produce a model that calculates **scores** from a linear combination of the input data and a set of **weights**. The weights are parameters of the model estimated during training.
 
-Linear algorithms work well for features that are [linearly separable](https://en.wikipedia.org/wiki/Linear_separability).
+    Linear algorithms work well for features that are [linearly separable](https://en.wikipedia.org/wiki/Linear_separability).
 
-Before training with a linear algorithm, the features should be normalized. This prevents one feature having more influence over the result than others.
+    Before training with a linear algorithm, the features should be normalized. This prevents one feature having more influence over the result than others.
 
-In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
+    In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
 
-You should always add a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer. Linear algorithms make multiple passes over the training data. Adding a cache checkpoint will increase the training efficiency.
+    You should always add a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer. Linear algorithms make multiple passes over the training data. Adding a cache checkpoint will increase the training efficiency.
 
-#### Regularization
+    - Regularization
 
-Regularization penalizes a linear model for being too complicated. There are two types of regularization:
+        Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
-- $L-1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
-- $L-2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
+        - $L-1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
+        - $L-2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
 
-Some linear trainers perform both types of regularization, and some do neither, and some are configurable. The type(s) of regularization for each trainer is noted in the [trainer index](#trainer-index) below.
+        Some linear trainers perform both types of regularization, and some do neither, and some are configurable. The type(s) of regularization for each trainer is noted in the [trainer index](#trainer-index) below.
 
-#### Calibration
+    - Calibration
 
-Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. If you are able to use the raw score in your application, the non calibrated versions execute more efficiently.
+        Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. If you are able to use the raw score in your application, the non calibrated versions execute more efficiently.
 
-### Boosted tree
+- Boosted tree
 
-Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.
+    Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.
 
-Features do not need to be linearly separable to use this type of algorithm. And features do not need to be normalized, because the individual values in the feature vector are used independently in the decision process.
+    Features do not need to be linearly separable to use this type of algorithm. And features do not need to be normalized, because the individual values in the feature vector are used independently in the decision process.
 
-Decision tree algorithms are generally very accurate.
+    Decision tree algorithms are generally very accurate.
 
-Depending on the number of features, tree models can lack explainability.
+    Depending on the number of features, tree models can lack explainability.
 
-Decision tree algorithms take more resources and do not scale as well as linear ones do. They do perform well on datasets that can fit into memory.
+    Decision tree algorithms take more resources and do not scale as well as linear ones do. They do perform well on datasets that can fit into memory.
 
-Boosted decision trees are an ensemble of small trees where each tree scores the input data and passes the score onto the next tree to produce a better score, and so on, where each tree in the ensemble improves on the previous.
+    Boosted decision trees are an ensemble of small trees where each tree scores the input data and passes the score onto the next tree to produce a better score, and so on, where each tree in the ensemble improves on the previous.
 
-These algorithms scale to 30000-100000 features and memory-bound for the size of the training set.
+    These algorithms scale to 30000-100000 features and memory-bound for the size of the training set.
 
-### Generalized additive model (GAM)
+- Generalized additive model (GAM)
 
-Like decision tree algorithms, generalized additive model (GAM) algorithms also use trees.
+    Like decision tree algorithms, generalized additive model (GAM) algorithms also use trees.
 
-They bridge the gap between the explainability of linear models and tree models. 
+    They bridge the gap between the explainability of linear models and tree models. 
 
-### Matrix Factorization
+- Matrix Factorization
 
-Matrix factorization algorithms handle large sparse data sets where there are categories involved.
+    Matrix factorization algorithms handle large sparse data sets where there are categories involved.
 
-### Ensemble
+- Ensemble
 
-Ensemble algorithms try multiple algorithms and return the one with the best results.
+    Ensemble algorithms try multiple algorithms and return the one with the best results.
 
 ## Trainer Index
 

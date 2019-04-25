@@ -102,7 +102,7 @@ All ML.NET operations start in the [MLContext class](xref:Microsoft.ML.MLContext
 
 ### Initialize variables in Main
 
-Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
+Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the `mlContext` variable:
 
 [!code-csharp[CreateMLContext](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#3 "Create the ML Context")]
 
@@ -255,7 +255,7 @@ Next, predict the fare based on a single instance of the taxi trip data and pass
 
 [!code-csharp[Predict](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#24 "Create a prediction of taxi fare")]
 
-The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single column of data.
+The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single instance of data.
 
 To display the predicted fare of the specified trip, add the following code into the `TestSinglePrediction` method:
 

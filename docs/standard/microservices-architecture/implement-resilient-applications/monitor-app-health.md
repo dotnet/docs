@@ -249,7 +249,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 ## Health checks when using orchestrators
 
-To monitor the availability of your microservices, orchestrators like Kubernetesperiodically perform health checks by sending requests to test the microservices. When an orchestrator determines that a service/container is unhealthy, it stops routing requests to that instance. It also usually creates a new instance of that container.
+To monitor the availability of your microservices, orchestrators like Kubernetes periodically perform health checks by sending requests to test the microservices. When an orchestrator determines that a service/container is unhealthy, it stops routing requests to that instance. It also usually creates a new instance of that container.
 
 For instance, most orchestrators can use health checks to manage zero-downtime deployments. Only when the status of a service/container changes to healthy will the orchestrator start routing traffic to service/container instances.
 

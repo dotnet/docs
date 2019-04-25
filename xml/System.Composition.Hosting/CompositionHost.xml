@@ -143,6 +143,7 @@
         <returns>
           <see langword="true" /> if the export was retrieved; otherwise, <see langword="false" />.</returns>
         <remarks></remarks>
+        <exception cref="T:System.Composition.Hosting.CompositionFailedException">There are too many exports.</exception>
       </Docs>
     </Member>
   </Members>

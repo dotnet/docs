@@ -475,6 +475,8 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160055">Writing a Package Sample</related>
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <exception cref="T:System.ArgumentNullException"><paramref name="partUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNormalizedPartUri">
@@ -523,6 +525,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPackageUri">
@@ -570,6 +573,8 @@
         <altmember cref="Overload:System.IO.Packaging.PackUriHelper.Create" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <exception cref="T:System.ArgumentNullException"><paramref name="packUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="packUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPartUri">
@@ -733,6 +738,7 @@
           <paramref name="sourcePartUri" /> or <paramref name="targetPartUri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <exception cref="T:System.ArgumentException">Either the <paramref name="sourcePartUri" /> or <paramref name="targetPartUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSourcePartUriFromRelationshipPartUri">

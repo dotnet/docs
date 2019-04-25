@@ -71,12 +71,11 @@
         <Parameter Name="access" Type="System.IO.FileAccess" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="streamFileMode">To be added.</param>
-        <param name="mode">To be added.</param>
-        <param name="streamFileAccess">To be added.</param>
-        <param name="access">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="mode">The I/O mode in which to open the stream.</param>
+        <param name="access">The access permissions with which the stream should be opened.</param>
+
+        <summary>Custom implementation for the GetStream method.</summary>
+        <returns>A stream corresponding to this <see cref="T:System.IO.Packaging.ZipPackagePart" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

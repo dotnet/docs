@@ -78,12 +78,15 @@
         <Parameter Name="compressionOption" Type="System.IO.Packaging.CompressionOption" />
       </Parameters>
       <Docs>
-        <param name="partUri">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="compressionOption">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partUri">The Uri that represents the <see cref="T:System.IO.Packaging.PackagePart" />.</param>
+        <param name="contentType">A string representing the content type of the <see cref="T:System.IO.Packaging.PackagePart" />.</param>
+        <param name="compressionOption">The compression option to be used for this <see cref="T:System.IO.Packaging.PackagePart" />.</param>
+        <summary>Custom implementation for the underlying file format. Adds a new item to the zip archive corresponding to the <see cref="T:System.IO.Packaging.PackagePart" /> in the <see cref="T:System.IO.Packaging.ZipPackage" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="partUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="compressionOption" /> does not have a valid <see cref="T:System.IO.Packaging.CompressionOption" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeletePartCore">
@@ -113,9 +116,11 @@
         <Parameter Name="partUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="partUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partUri">The Uri that represents the <see cref="T:System.IO.Packaging.PackagePart" />.</param>
+        <summary>This method is for a custom implementation specific to the file format. Deletes the <see cref="T:System.IO.Packaging.PackagePart" /> corresponding to the <see cref="T:System.Uri" /> specified. Attempting to delete a part that does not exist is not an error and so does not throw an exception.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="partUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -145,8 +150,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing"><see langword="true" /> if called during <see cref="M:System.IO.Packaging.ZipPackage.Dispose" />, <see langword="false" /> if called during <see cref="M:System.IO.Packaging.ZipPackage.Finalize" />.</param>
+        <summary>Closes the underlying <see cref="T:System.IO.Packaging.ZipPackage" /> object for this container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +180,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This method is for a custom implementation corresponding to the underlying zip file format.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +211,8 @@
         <Parameter Name="partUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="partUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partUri">The Uri that represents the <see cref="T:System.IO.Packaging.PackagePart" />.</param>
+        <summary>This method is for a custom implementation specific to the file format. Returns a <see cref="T:System.IO.Packaging.PackagePart" /> after reading the actual physical bits. The method returns <see langword="null" /> to indicate that the part corresponding to the specified <see cref="T:System.Uri" />  was not found in the container. This method does not throw an exception if a part does not exist.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,8 +242,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method is for a custom implementation specific to the file format. This method retrieves the actual parts from the underlying <see cref="T:System.IO.Packaging.ZipPackage" />.</summary>
+        <returns>An array of <see cref="T:System.IO.Packaging.ZipPackagePart" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

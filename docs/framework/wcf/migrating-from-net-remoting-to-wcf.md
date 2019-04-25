@@ -518,9 +518,9 @@ public class RemotingServer : MarshalByRefObject
   
 4. We need to modify the server’s configuration file by doing the following two things as shown in the example below:  
   
-    1.  Declare a \<client> section that describes the endpoint for the sessionful object. This is necessary because the server also acts as a client in this situation.  
+    1. Declare a \<client> section that describes the endpoint for the sessionful object. This is necessary because the server also acts as a client in this situation.  
   
-    2.  Declare endpoints for the factory and sessionful object. This is necessary to allow the client to communicate with the service endpoints to acquire the EndpointAddress10 and to create the sessionful channel.  
+    2. Declare endpoints for the factory and sessionful object. This is necessary to allow the client to communicate with the service endpoints to acquire the EndpointAddress10 and to create the sessionful channel.  
   
     ```xml  
     <configuration>  
@@ -587,13 +587,13 @@ public class RemotingServer : MarshalByRefObject
   
 6. In order to create and use this sessionful object, the client must do the following steps:  
   
-    1.  Create a channel to the ISessionBoundFactory service.  
+    1. Create a channel to the ISessionBoundFactory service.  
   
-    2.  Use that channel to invoke that service to obtain an EndpointAddress10.  
+    2. Use that channel to invoke that service to obtain an EndpointAddress10.  
   
-    3.  Use the EndpointAddress10 to create a channel to obtain a sessionful object.  
+    3. Use the EndpointAddress10 to create a channel to obtain a sessionful object.  
   
-    4.  Interact with the sessionful object to demonstrate it remains the same instance across multiple calls.  
+    4. Interact with the sessionful object to demonstrate it remains the same instance across multiple calls.  
   
    ```csharp
    ChannelFactory<ISessionBoundFactory> channelFactory =   

@@ -100,7 +100,7 @@ public class MyServiceHost : ServiceHost
   
 -   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   
-    1.  Add the identity credentials to the endpoint element in the client’s App.config file:  
+    1. Add the identity credentials to the endpoint element in the client’s App.config file:  
   
         ```xml
         <endpoint   
@@ -116,15 +116,15 @@ public class MyServiceHost : ServiceHost
         </endpoint>  
         ```  
   
-    2.  Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
+    2. Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
   
         ```console
         at 12:36 /interactive "cmd.exe"  
         ```  
   
-    3.  Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
+    3. Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
   
-    4.  Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
+    4. Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
   
  For more information about the Kerberos protocol, see [Security Concepts Used in WCF](../../../docs/framework/wcf/feature-details/security-concepts-used-in-wcf.md) and:  
   

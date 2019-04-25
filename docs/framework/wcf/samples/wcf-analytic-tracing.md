@@ -71,13 +71,13 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 10. Test the service using the WCF Test Client.  
   
-    1.  In the WCF Test Client, double-click **Add()** under the ICalculator service node.  
+    1. In the WCF Test Client, double-click **Add()** under the ICalculator service node.  
   
          The **Add()** method appears in the right pane with two parameters.  
   
-    2.  Type in 2 for the first parameter and 3 for the second parameter.  
+    2. Type in 2 for the first parameter and 3 for the second parameter.  
   
-    3.  Click **Invoke** to invoke the method.  
+    3. Click **Invoke** to invoke the method.  
   
 11. Go to the **Event Viewer** window that you have already opened. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**.  
   

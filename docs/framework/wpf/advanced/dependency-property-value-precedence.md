@@ -41,9 +41,9 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 4. **TemplatedParent template properties.** An element has a <xref:System.Windows.FrameworkElement.TemplatedParent%2A> if it was created as part of a template (a <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>). For details on when this applies, see [TemplatedParent](#templatedparent) later in this topic. Within the template, the following precedence applies:  
   
-    1.  Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
+    1. Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
-    2.  Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
+    2. Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
 5. **Implicit style.** Applies only to the `Style` property. The `Style` property is filled by any style resource with a key that matches the type of that element. That style resource must exist either in the page or the application; lookup for an implicit style resource does not proceed into the themes.  
   
@@ -55,9 +55,9 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 9. **Default (theme) style.** For details on when this applies, and how theme styles relate to the templates within theme styles, see [Default (Theme) Styles](#themestyles) later in this topic. Within a default style, the following order of precedence applies:  
   
-    1.  Active triggers in the theme style.  
+    1. Active triggers in the theme style.  
   
-    2.  Setters in the theme style.  
+    2. Setters in the theme style.  
   
 10. **Inheritance.** A few dependency properties inherit their values from parent element to child elements, such that they need not be set specifically on each element throughout an application. For details see [Property Value Inheritance](property-value-inheritance.md).  
   

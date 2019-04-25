@@ -25,9 +25,9 @@ After you have added controls to your form and determined the user interface for
   
 2. In the **Properties** window:  
   
-    1.  Expand the **(DataBindings)** node.  
+    1. Expand the **(DataBindings)** node.  
   
-    2.  Click the arrow next to the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
+    2. Click the arrow next to the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
   
          The **DataSource** UI type editor opens.  
   

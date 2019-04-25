@@ -30,9 +30,9 @@ ms.author: "mairaw"
   
 -   Two kinds of enumeration with `foreach` (`For Each` in Visual Basic):  
   
-    1.  Read-only enumeration.  
+    1. Read-only enumeration.  
   
-    2.  Enumeration that removes items as they are enumerated.  
+    2. Enumeration that removes items as they are enumerated.  
   
 ## Bounding and Blocking Support  
  <xref:System.Collections.Concurrent.BlockingCollection%601> supports bounding and blocking. Bounding means you can set the maximum capacity of the collection. Bounding is important in certain scenarios because it enables you to control the maximum size of the collection in memory, and it prevents the producing threads from moving too far ahead of the consuming threads.  

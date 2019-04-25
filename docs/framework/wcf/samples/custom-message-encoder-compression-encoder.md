@@ -37,13 +37,13 @@ This sample demonstrates how to implement a custom encoder using the Windows Com
   
 2. The configuration information is read.  
   
-    1.  The service configuration registers the custom configuration handler.  
+    1. The service configuration registers the custom configuration handler.  
   
-    2.  The service host is created and opened.  
+    2. The service host is created and opened.  
   
-    3.  The custom configuration element creates and returns the custom binding element.  
+    3. The custom configuration element creates and returns the custom binding element.  
   
-    4.  The custom binding element creates and returns a message encoder factory.  
+    4. The custom binding element creates and returns a message encoder factory.  
   
 3. A message is received.  
   

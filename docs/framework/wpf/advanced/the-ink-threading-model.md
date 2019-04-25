@@ -34,17 +34,17 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
 1. Actions occurring while the user draws the stroke  
   
-    1.  When the user draws a stroke, the stylus points come in on the pen thread.  Stylus plug-ins, including the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, accept the stylus points on the pen thread and have the chance to modify them before the <xref:System.Windows.Controls.InkCanvas> receives them.  
+    1. When the user draws a stroke, the stylus points come in on the pen thread.  Stylus plug-ins, including the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, accept the stylus points on the pen thread and have the chance to modify them before the <xref:System.Windows.Controls.InkCanvas> receives them.  
   
-    2.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> renders the stylus points on the dynamic rendering thread. This happens at the same time as the previous step.  
+    2. The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> renders the stylus points on the dynamic rendering thread. This happens at the same time as the previous step.  
   
-    3.  The <xref:System.Windows.Controls.InkCanvas> receives the stylus points on the UI thread.  
+    3. The <xref:System.Windows.Controls.InkCanvas> receives the stylus points on the UI thread.  
   
 2. Actions occurring after the user ends the stroke  
   
-    1.  When the user finishes drawing the stroke, the <xref:System.Windows.Controls.InkCanvas> creates a <xref:System.Windows.Ink.Stroke> object and adds it to the <xref:System.Windows.Controls.InkPresenter>, which statically renders it.  
+    1. When the user finishes drawing the stroke, the <xref:System.Windows.Controls.InkCanvas> creates a <xref:System.Windows.Ink.Stroke> object and adds it to the <xref:System.Windows.Controls.InkPresenter>, which statically renders it.  
   
-    2.  The UI thread alerts the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> that the stroke is statically rendered, so the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> removes its visual representation of the stroke.  
+    2. The UI thread alerts the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> that the stroke is statically rendered, so the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> removes its visual representation of the stroke.  
   
 ## Ink collection and Stylus Plug-ins  
  Each <xref:System.Windows.UIElement> has a <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>.  The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> objects in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> receive and can modify the stylus points on the pen thread. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> objects receive the stylus points according to their order in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>.  
@@ -79,16 +79,16 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
   
 1. The user begins the stroke.  
   
-    1.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> creates the visual tree.  
+    1. The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> creates the visual tree.  
   
 2. The user is drawing the stroke.  
   
-    1.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> builds the visual tree.  
+    1. The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> builds the visual tree.  
   
 3. The user ends the stroke.  
   
-    1.  The <xref:System.Windows.Controls.InkPresenter> adds the stroke to its visual tree.  
+    1. The <xref:System.Windows.Controls.InkPresenter> adds the stroke to its visual tree.  
   
-    2.  The Media Integration Layer (MIL) statically renders the strokes.  
+    2. The Media Integration Layer (MIL) statically renders the strokes.  
   
-    3.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> cleans up the visuals.
+    3. The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> cleans up the visuals.

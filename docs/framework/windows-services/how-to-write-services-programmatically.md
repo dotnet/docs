@@ -23,13 +23,13 @@ If you choose not to use the Windows Service project template, you can write you
   
 1. Create an empty project and create a reference to the necessary namespaces by following these steps:  
   
-    1.  In **Solution Explorer**, right-click the **References** node and click **Add Reference**.  
+    1. In **Solution Explorer**, right-click the **References** node and click **Add Reference**.  
   
-    2.  On the **.NET Framework** tab, scroll to **System.dll** and click **Select**.  
+    2. On the **.NET Framework** tab, scroll to **System.dll** and click **Select**.  
   
-    3.  Scroll to **System.ServiceProcess.dll** and click **Select**.  
+    3. Scroll to **System.ServiceProcess.dll** and click **Select**.  
   
-    4.  Click **OK**.  
+    4. Click **OK**.  
   
 2. Add a class and configure it to inherit from <xref:System.ServiceProcess.ServiceBase>:  
   

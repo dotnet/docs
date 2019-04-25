@@ -142,9 +142,9 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 8. If you are using Visual C#:  
   
-    1.  In **Solution Explorer**, right-click **Form1** in the **InheritanceTest** project and then choose **Delete**. In the message box that appears, click **OK** to confirm the deletion.  
+    1. In **Solution Explorer**, right-click **Form1** in the **InheritanceTest** project and then choose **Delete**. In the message box that appears, click **OK** to confirm the deletion.  
   
-    2.  Open the Program.cs file and change the line `Application.Run(new Form1());` to `Application.Run(new Form2());`.  
+    2. Open the Program.cs file and change the line `Application.Run(new Form1());` to `Application.Run(new Form2());`.  
   
 9. In **Solution Explorer**, right-click the **InheritanceTest** project and select **Set As Startup Project**.  
   

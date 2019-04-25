@@ -48,7 +48,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 10. On the client computer, run client.exe.  
   
-    1.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+    1. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   

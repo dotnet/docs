@@ -22,13 +22,13 @@ This sample demonstrates how the messaging activities (<xref:System.ServiceModel
   
 2. Once the URL ACLs are added, use the following steps.  
   
-    1.  Build the solution.  
+    1. Build the solution.  
   
-    2.  Set multiple start-up projects by right-clicking the solution and selecting **Set Startup Projects**.  
+    2. Set multiple start-up projects by right-clicking the solution and selecting **Set Startup Projects**.  
   
-    3.  Add **Service** and **Client** (in that order) as multiple start-up projects.  
+    3. Add **Service** and **Client** (in that order) as multiple start-up projects.  
   
-    4.  Run the application. The client console shows a workflow running twice and the Service window shows the instance ID of those workflows.  
+    4. Run the application. The client console shows a workflow running twice and the Service window shows the instance ID of those workflows.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

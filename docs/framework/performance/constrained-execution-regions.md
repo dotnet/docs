@@ -47,13 +47,13 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
 -   <xref:System.Runtime.ConstrainedExecution.Cer.None>. The method, type, or assembly has no concept of a CER and is most likely not safe to call within a CER without substantial mitigation from state corruption. It does not take advantage of CER guarantees. This implies the following:  
   
-    1.  Under exceptional conditions the method might fail.  
+    1. Under exceptional conditions the method might fail.  
   
-    2.  The method might or might not report that it failed.  
+    2. The method might or might not report that it failed.  
   
-    3.  The method is not written to use a CER, the most likely scenario.  
+    3. The method is not written to use a CER, the most likely scenario.  
   
-    4.  If a method, type, or assembly is not explicitly identified to succeed, it is implicitly identified as <xref:System.Runtime.ConstrainedExecution.Cer.None>.  
+    4. If a method, type, or assembly is not explicitly identified to succeed, it is implicitly identified as <xref:System.Runtime.ConstrainedExecution.Cer.None>.  
   
 -   <xref:System.Runtime.ConstrainedExecution.Cer.Success>. Under exceptional conditions, the method is guaranteed to succeed. To achieve this level of reliability you should always construct a CER around the method that is called, even when it is called from within a non-CER region. A method is successful if it accomplishes what is intended, although success can be viewed subjectively. For example, marking Count with `ReliabilityContractAttribute(Cer.Success)` implies that when it is run under a CER, it always returns a count of the number of elements in the <xref:System.Collections.ArrayList> and it can never leave the internal fields in an undetermined state.  However, the <xref:System.Threading.Interlocked.CompareExchange%2A> method is marked as success as well, with the understanding that success may mean the value could not be replaced with a new value due to a race condition.  The key point is that the method behaves in the way it is documented to behave, and CER code does not need to be written to expect any unusual behavior beyond what correct but unreliable code would look like.  
   

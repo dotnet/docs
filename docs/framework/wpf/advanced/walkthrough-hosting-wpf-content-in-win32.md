@@ -35,13 +35,13 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
   
 4. Handle the [WM_CREATE](/windows/desktop/winmsg/wm-create)notification in your window procedure and do the following:  
   
-    1.  Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window as its `parent` parameter.  
+    1. Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window as its `parent` parameter.  
   
-    2.  Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class.  
+    2. Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class.  
   
-    3.  Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource>.  
+    3. Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource>.  
   
-    4.  Get the HWND for the content. The <xref:System.Windows.Interop.HwndSource.Handle%2A> property of the <xref:System.Windows.Interop.HwndSource> object contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
+    4. Get the HWND for the content. The <xref:System.Windows.Interop.HwndSource.Handle%2A> property of the <xref:System.Windows.Interop.HwndSource> object contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
   
 5. Implement a managed class that contains a static field to hold a reference to your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. This class allows you to get a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code.  
   

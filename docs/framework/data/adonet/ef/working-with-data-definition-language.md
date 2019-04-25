@@ -34,13 +34,13 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
 2. Add an existing model to your application.  
   
-    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
+    1. Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
   
      The SchoolModel.edmx file is added to your project.  
   
-    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) topic.  
+    1. Copy the conceptual, storage, and mapping content for the School model from the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) topic.  
   
-    2.  Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
+    2. Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
   
 3. Add the following code to your main function. The code initializes the connection string to your database server, views the DDL script, creates the database, adds a new entity to the context, and saves the changes to the database.  
   

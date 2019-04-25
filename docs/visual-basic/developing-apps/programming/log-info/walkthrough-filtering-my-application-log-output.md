@@ -71,11 +71,11 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, choose **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, choose **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Locate the `<switches>` section, which is in the `<system.diagnostics>` section, which is in the top-level `<configuration>` section.  
   
@@ -146,11 +146,11 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, choose **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, choose **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Right-click app.config in **Solution Explorer**. Choose **Open**.  
   

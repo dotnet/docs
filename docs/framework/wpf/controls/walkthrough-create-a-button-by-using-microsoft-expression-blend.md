@@ -202,19 +202,19 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 5. **Create another Event Trigger and associate a different animation with it:** Let's add one more animation. Use a similar procedure to what you used to create the previous event trigger animation:  
   
-    1.  Create a new event trigger using the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+    1. Create a new event trigger using the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
-    2.  Associate a new timeline with the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+    2. Associate a new timeline with the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
      ![How to create a new timeline](./media/custom-button-blend-clickeventtrigger1.png "custom_button_blend_ClickEventTrigger1")  
   
-    1.  For this timeline, create two keyframes, one at 0.0 seconds and the second one at 0.3 seconds.  
+    1. For this timeline, create two keyframes, one at 0.0 seconds and the second one at 0.3 seconds.  
   
-    2.  With the keyframe at 0.3 seconds highlighted, set the **Rotate Transform Angle** to 360 degrees.  
+    2. With the keyframe at 0.3 seconds highlighted, set the **Rotate Transform Angle** to 360 degrees.  
   
      ![How to create a rotate transform](./media/custom-button-blend-rotatetransform.gif "custom_button_blend_RotateTransform")  
   
-    1.  Press F5 to run the application. Click the button. Notice that the glass layer spins around.  
+    1. Press F5 to run the application. Click the button. Notice that the glass layer spins around.  
   
 ## Conclusion  
  You have completed a customized button. You did this using a button template that was applied to all buttons in the application. If you leave the template editing mode (see the following figure) and create more buttons, you will see that they look and behave like your custom button rather than like the default button.  

@@ -173,18 +173,18 @@ Symbols:
   
 1. Once you install the `TcpSyncStockService` sample, do the following:  
   
-    1.  Open the `TcpSyncStockService` in Visual Studio (Note that the TcpSyncStockService sample is installed with WSE 3.0. It is not part of this sample's code).  
+    1. Open the `TcpSyncStockService` in Visual Studio (Note that the TcpSyncStockService sample is installed with WSE 3.0. It is not part of this sample's code).  
   
-    2.  Set the StockService project as the start up project.  
+    2. Set the StockService project as the start up project.  
   
-    3.  Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
+    3. Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
   
-    4.  Press F5 to start the `TcpSyncStockService`. The service starts in a new console window.  
+    4. Press F5 to start the `TcpSyncStockService`. The service starts in a new console window.  
   
-    5.  Open this TCP transport sample in Visual Studio.  
+    5. Open this TCP transport sample in Visual Studio.  
   
-    6.  Update the "hostname" variable in TestCode.cs to match the machine name running the `TcpSyncStockService`.  
+    6. Update the "hostname" variable in TestCode.cs to match the machine name running the `TcpSyncStockService`.  
   
-    7.  Press F5 to start the TCP transport sample.  
+    7. Press F5 to start the TCP transport sample.  
   
-    8.  The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.  
+    8. The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.  

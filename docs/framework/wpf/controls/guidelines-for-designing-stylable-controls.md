@@ -75,21 +75,21 @@ This document summarizes a set of best practices to consider when designing a co
   
 -   **Use best practices for expressing control state and behavior in a style.** The following is an ordered list of best practices for expressing control state changes and behavior in a style. You should use the first item on the list that enables your scenario.  
   
-    1.  Property binding. Example: binding between <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=nameWithType>.  
+    1. Property binding. Example: binding between <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=nameWithType>.  
   
-    2.  Triggered property changes or property animations. Example: the hover state of a <xref:System.Windows.Controls.Button>.  
+    2. Triggered property changes or property animations. Example: the hover state of a <xref:System.Windows.Controls.Button>.  
   
-    3.  Command. Example: <xref:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand> / <xref:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand> in <xref:System.Windows.Controls.Primitives.ScrollBar>.  
+    3. Command. Example: <xref:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand> / <xref:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand> in <xref:System.Windows.Controls.Primitives.ScrollBar>.  
   
-    4.  Standalone helper elements. Example: <xref:System.Windows.Controls.Primitives.TabPanel> in <xref:System.Windows.Controls.TabControl>.  
+    4. Standalone helper elements. Example: <xref:System.Windows.Controls.Primitives.TabPanel> in <xref:System.Windows.Controls.TabControl>.  
   
-    5.  Type-based helper types. Example: <xref:System.Windows.Controls.ContentPresenter> in <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Primitives.TickBar> in <xref:System.Windows.Controls.Slider>.  
+    5. Type-based helper types. Example: <xref:System.Windows.Controls.ContentPresenter> in <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Primitives.TickBar> in <xref:System.Windows.Controls.Slider>.  
   
-    6.  Named helper elements. Example: <xref:System.Windows.Controls.TextBox> in <xref:System.Windows.Controls.ComboBox>.  
+    6. Named helper elements. Example: <xref:System.Windows.Controls.TextBox> in <xref:System.Windows.Controls.ComboBox>.  
   
-    7.  Bubbled events from named helper types. If you listen for bubbled events from a style element, you should require that the element generating the event can be uniquely identified. Example: <xref:System.Windows.Controls.Primitives.Thumb> in <xref:System.Windows.Controls.ToolBar>.  
+    7. Bubbled events from named helper types. If you listen for bubbled events from a style element, you should require that the element generating the event can be uniquely identified. Example: <xref:System.Windows.Controls.Primitives.Thumb> in <xref:System.Windows.Controls.ToolBar>.  
   
-    8.  Custom `OnRender` behavior. Example: <xref:Microsoft.Windows.Themes.ButtonChrome> in <xref:System.Windows.Controls.Button>.  
+    8. Custom `OnRender` behavior. Example: <xref:Microsoft.Windows.Themes.ButtonChrome> in <xref:System.Windows.Controls.Button>.  
   
 -   **Use style triggers (as opposed to template triggers) sparingly**. Triggers that affect properties on elements in the template must be declared in the template. Triggers that affect properties on the control (no `TargetName`) may be declared in the style unless you know that changing the template should also destroy the trigger.  
   

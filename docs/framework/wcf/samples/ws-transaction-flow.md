@@ -232,47 +232,47 @@ Press <ENTER> to terminate the service.
   
 1. On a service machine running Windows Server 2003 or Windows XP, configure MSDTC to allow incoming network transactions by following these instructions.  
   
-    1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
+    1. From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
-    2.  Expand **Component Services**. Open the **Computers** folder.  
+    2. Expand **Component Services**. Open the **Computers** folder.  
   
-    3.  Right-click **My Computer** and select **Properties**.  
+    3. Right-click **My Computer** and select **Properties**.  
   
-    4.  On the **MSDTC** tab, click **Security Configuration**.  
+    4. On the **MSDTC** tab, click **Security Configuration**.  
   
-    5.  Check **Network DTC Access** and **Allow Inbound**.  
+    5. Check **Network DTC Access** and **Allow Inbound**.  
   
-    6.  Click **OK**, then click **Yes** to restart the MSDTC service.  
+    6. Click **OK**, then click **Yes** to restart the MSDTC service.  
   
-    7.  Click **OK** to close the dialog box.  
+    7. Click **OK** to close the dialog box.  
   
 2. On a service machine running Windows Server 2008 or Windows Vista, configure MSDTC to allow incoming network transactions by following these instructions.  
   
-    1.  From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
+    1. From the **Start** menu, navigate to **Control Panel**, then **Administrative Tools**, and then **Component Services**.  
   
-    2.  Expand **Component Services**. Open the **Computers** folder. Select **Distributed Transaction Coordinator**.  
+    2. Expand **Component Services**. Open the **Computers** folder. Select **Distributed Transaction Coordinator**.  
   
-    3.  Right-click **DTC Coordinator** and select **Properties**.  
+    3. Right-click **DTC Coordinator** and select **Properties**.  
   
-    4.  On the **Security** tab, check **Network DTC Access** and **Allow Inbound**.  
+    4. On the **Security** tab, check **Network DTC Access** and **Allow Inbound**.  
   
-    5.  Click **OK**, then click **Yes** to restart the MSDTC service.  
+    5. Click **OK**, then click **Yes** to restart the MSDTC service.  
   
-    6.  Click **OK** to close the dialog box.  
+    6. Click **OK** to close the dialog box.  
   
 3. On the client machine, configure MSDTC to allow outgoing network transactions:  
   
-    1.  From the **Start** menu, navigate to `Control Panel`, then **Administrative Tools**, and then **Component Services**.  
+    1. From the **Start** menu, navigate to `Control Panel`, then **Administrative Tools**, and then **Component Services**.  
   
-    2.  Right-click **My Computer** and select **Properties**.  
+    2. Right-click **My Computer** and select **Properties**.  
   
-    3.  On the **MSDTC** tab, click **Security Configuration**.  
+    3. On the **MSDTC** tab, click **Security Configuration**.  
   
-    4.  Check **Network DTC Access** and **Allow Outbound**.  
+    4. Check **Network DTC Access** and **Allow Outbound**.  
   
-    5.  Click **OK**, then click **Yes** to restart the MSDTC service.  
+    5. Click **OK**, then click **Yes** to restart the MSDTC service.  
   
-    6.  Click **OK** to close the dialog box.  
+    6. Click **OK** to close the dialog box.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

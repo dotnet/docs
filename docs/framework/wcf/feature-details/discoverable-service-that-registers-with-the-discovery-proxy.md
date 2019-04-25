@@ -12,9 +12,9 @@ This topic is the second of four topics that discusses how to implement a discov
 
 2. Add references to the following assemblies:
 
-    1.  System.ServiceModel
+    1. System.ServiceModel
 
-    2.  System.ServiceModel.Discovery
+    2. System.ServiceModel.Discovery
 
 3. Add a new class to the project called `CalculatorService`.
 

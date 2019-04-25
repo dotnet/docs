@@ -58,25 +58,25 @@ This sample demonstrates how to implement a business process using messaging act
   
 2. The requester’s manager must approve the request:  
   
-    1.  The manager can reject the request.  
+    1. The manager can reject the request.  
   
-    2.  The manager can return the request to the requester for additional information:  
+    2. The manager can return the request to the requester for additional information:  
   
-        1.  The requester reviews and sends the request back to the manager.  
+        1. The requester reviews and sends the request back to the manager.  
   
-    3.  The manager can approve.  
+    3. The manager can approve.  
   
 3. After the requester’s manager approves, the department owner must approve the request:  
   
-    1.  The department owner can reject.  
+    1. The department owner can reject.  
   
-    2.  The department owner can approve.  
+    2. The department owner can approve.  
   
 4. After the department owner approves, the process requires the approval of 2 HR managers or the CEO:  
   
-    1.  The process can transition to the accepted or rejected state.  
+    1. The process can transition to the accepted or rejected state.  
   
-    2.  If the process is Accepted, a new instance of the `ResumeRequest` workflow is started (`ResumeRequest` is linked to HiringRequest.csproj through a service reference.)  
+    2. If the process is Accepted, a new instance of the `ResumeRequest` workflow is started (`ResumeRequest` is linked to HiringRequest.csproj through a service reference.)  
   
  Once the managers approve the hiring of a new employee, HR must find the appropriate candidate. This process is performed by the second workflow (`ResumeRequest`, defined in ResumeRequestService.csproj). This workflow defines the process for submitting a job posting with a career opportunity to Contoso's external Careers Web site, receives resumes from applicants, and monitors the state of the job posting. Positions are available for a fixed time period (until a time expires) or until an employee from Contoso decides to remove it. The `ResumeRequest` workflow consists of the following steps:  
   
@@ -213,15 +213,15 @@ This sample demonstrates how to implement a business process using messaging act
   
 3. If the solution fails to execute, verify the following:  
   
-    1.  All services are running.  
+    1. All services are running.  
   
-    2.  The service references are updated.  
+    2. The service references are updated.  
   
-        1.  Open the App_WebReferences folder  
+        1. Open the App_WebReferences folder  
   
-        2.  Right-click **Contoso** and select **Update Web/Service References**.  
+        2. Right-click **Contoso** and select **Update Web/Service References**.  
   
-        3.  Rebuild the solution by pressing CTRL+SHIFT+B in Visual Studio.  
+        3. Rebuild the solution by pressing CTRL+SHIFT+B in Visual Studio.  
   
 ## Uninstalling  
   

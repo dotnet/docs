@@ -35,21 +35,21 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
   
 2. Implement the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. <xref:System.IFormatProvider.GetFormat%2A> is a callback method that the formatting method (such as the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method) invokes to retrieve the object that is actually responsible for performing custom formatting. A typical implementation of <xref:System.IFormatProvider.GetFormat%2A> does the following:  
   
-    1.  Determines whether the <xref:System.Type> object passed as a method parameter represents an <xref:System.ICustomFormatter> interface.  
+    1. Determines whether the <xref:System.Type> object passed as a method parameter represents an <xref:System.ICustomFormatter> interface.  
   
-    2.  If the parameter does represent the <xref:System.ICustomFormatter> interface, <xref:System.IFormatProvider.GetFormat%2A> returns an object that implements the <xref:System.ICustomFormatter> interface that is responsible for providing custom formatting. Typically, the custom formatting object returns itself.  
+    2. If the parameter does represent the <xref:System.ICustomFormatter> interface, <xref:System.IFormatProvider.GetFormat%2A> returns an object that implements the <xref:System.ICustomFormatter> interface that is responsible for providing custom formatting. Typically, the custom formatting object returns itself.  
   
-    3.  If the parameter does not represent the <xref:System.ICustomFormatter> interface, <xref:System.IFormatProvider.GetFormat%2A> returns `null`.  
+    3. If the parameter does not represent the <xref:System.ICustomFormatter> interface, <xref:System.IFormatProvider.GetFormat%2A> returns `null`.  
   
 3. Implement the <xref:System.ICustomFormatter.Format%2A> method. This method is called by the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method and is responsible for returning the string representation of a number. Implementing the method typically involves the following:  
   
-    1.  Optionally, make sure that the method is legitimately intended to provide formatting services by examining the `provider` parameter. For formatting objects that implement both <xref:System.IFormatProvider> and <xref:System.ICustomFormatter>, this involves testing the `provider` parameter for equality with the current formatting object.  
+    1. Optionally, make sure that the method is legitimately intended to provide formatting services by examining the `provider` parameter. For formatting objects that implement both <xref:System.IFormatProvider> and <xref:System.ICustomFormatter>, this involves testing the `provider` parameter for equality with the current formatting object.  
   
-    2.  Determine whether the formatting object should support custom format specifiers. (For example, an "N" format specifier might indicate that a U.S. telephone number should be output in NANP format, and an "I" might indicate output in ITU-T Recommendation E.123 format.) If format specifiers are used, the method should handle the specific format specifier. It is passed to the method in the `format` parameter. If no specifier is present, the value of the `format` parameter is <xref:System.String.Empty?displayProperty=nameWithType>.  
+    2. Determine whether the formatting object should support custom format specifiers. (For example, an "N" format specifier might indicate that a U.S. telephone number should be output in NANP format, and an "I" might indicate output in ITU-T Recommendation E.123 format.) If format specifiers are used, the method should handle the specific format specifier. It is passed to the method in the `format` parameter. If no specifier is present, the value of the `format` parameter is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
-    3.  Retrieve the numeric value passed to the method as the `arg` parameter. Perform whatever manipulations are required to convert it to its string representation.  
+    3. Retrieve the numeric value passed to the method as the `arg` parameter. Perform whatever manipulations are required to convert it to its string representation.  
   
-    4.  Return the string representation of the `arg` parameter.  
+    4. Return the string representation of the `arg` parameter.  
   
 ### To use a custom numeric formatting object  
   

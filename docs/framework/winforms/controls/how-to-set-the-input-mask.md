@@ -28,15 +28,15 @@ The masked text box control is an enhanced text box control that supports a decl
   
 1. In **Design** view, select a <xref:System.Windows.Forms.MaskedTextBox>.  
   
-    1.  Click the smart tag to open the **MaskedTextBox Tasks** panel.  
+    1. Click the smart tag to open the **MaskedTextBox Tasks** panel.  
   
-    2.  Click **Set Mask**.  
+    2. Click **Set Mask**.  
   
      \- or -  
   
-    1.  In the **Properties** window, select the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
+    1. In the **Properties** window, select the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
-    2.  Click the ellipsis button in the property value column.  
+    2. Click the ellipsis button in the property value column.  
   
      The **Input Mask** dialog box appears.  
   

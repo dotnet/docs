@@ -22,9 +22,9 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 3. Add the following references to the project
 
-    1.  System.ServiceModel.dll
+    1. System.ServiceModel.dll
 
-    2.  System.Servicemodel.Discovery.dll
+    2. System.Servicemodel.Discovery.dll
 
     > [!CAUTION]
     >  Ensure that you reference version 4.0 or greater of these assemblies.

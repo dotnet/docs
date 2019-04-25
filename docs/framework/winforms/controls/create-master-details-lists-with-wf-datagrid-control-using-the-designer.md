@@ -36,15 +36,15 @@ ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
   
 6. Configure the <xref:System.Windows.Forms.DataGrid> control that you want to designate the master grid, as follows:  
   
-    1.  Select the <xref:System.Data.DataSet> from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property.  
+    1. Select the <xref:System.Data.DataSet> from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property.  
   
-    2.  Select the master table (for example, "Customers") from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property.  
+    2. Select the master table (for example, "Customers") from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property.  
   
 7. Configure the <xref:System.Windows.Forms.DataGrid> control that you want to designate the details grid, as follows:  
   
-    1.  Select the <xref:System.Data.DataSet> from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property.  
+    1. Select the <xref:System.Data.DataSet> from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property.  
   
-    2.  Select the relationship (for example, "Customers.CustOrd") between the master and detail tables from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property. In order to see the relationship, expand the node by clicking on the plus (**+**) sign next to the master table in the drop-down list.  
+    2. Select the relationship (for example, "Customers.CustOrd") between the master and detail tables from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property. In order to see the relationship, expand the node by clicking on the plus (**+**) sign next to the master table in the drop-down list.  
   
 ## See also
 

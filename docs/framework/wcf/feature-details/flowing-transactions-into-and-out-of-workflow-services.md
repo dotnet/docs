@@ -209,11 +209,11 @@ Workflow services and clients can participate in transactions.  For a service op
   
 1. Add a new Console Application project called `Service` to the solution. Add references to the following assemblies:  
   
-    1.  System.Activities.dll  
+    1. System.Activities.dll  
   
-    2.  System.ServiceModel.dll  
+    2. System.ServiceModel.dll  
   
-    3.  System.ServiceModel.Activities.dll  
+    3. System.ServiceModel.Activities.dll  
   
 2. Open the generated Program.cs file and the following code:  
   

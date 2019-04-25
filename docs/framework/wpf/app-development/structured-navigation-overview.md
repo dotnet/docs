@@ -111,11 +111,11 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
 -   From the calling page:  
   
-    1.  Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
+    1. Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
-    2.  Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
+    2. Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
   
-    3.  Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
+    3. Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
   
 -   From the called <xref:System.Windows.Navigation.PageFunction%601>:  
   

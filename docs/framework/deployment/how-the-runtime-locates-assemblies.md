@@ -45,11 +45,11 @@ To successfully deploy your .NET Framework application, you must understand how 
   
 4. [Probes for the assembly](#step4) using the following steps:  
   
-    1.  If configuration and publisher policy do not affect the original reference and if the bind request was created using the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method, the runtime checks for location hints.  
+    1. If configuration and publisher policy do not affect the original reference and if the bind request was created using the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method, the runtime checks for location hints.  
   
-    2.  If a codebase is found in the configuration files, the runtime checks only this location. If this probe fails, the runtime determines that the binding request failed and no other probing occurs.  
+    2. If a codebase is found in the configuration files, the runtime checks only this location. If this probe fails, the runtime determines that the binding request failed and no other probing occurs.  
   
-    3.  Probes for the assembly using the heuristics described in the [probing section](#step4). If the assembly is not found after probing, the runtime requests the Windows Installer to provide the assembly. This acts as an install-on-demand feature.  
+    3. Probes for the assembly using the heuristics described in the [probing section](#step4). If the assembly is not found after probing, the runtime requests the Windows Installer to provide the assembly. This acts as an install-on-demand feature.  
   
         > [!NOTE]
         >  There is no version checking for assemblies without strong names, nor does the runtime check in the global assembly cache for assemblies without strong names.  

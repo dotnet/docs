@@ -51,10 +51,17 @@
       href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
     - name: Serve Model in Web API
       href: how-to-guides/serve-model-web-api-ml-net.md
+<<<<<<< HEAD
   - name: Infer.NET
     items:
     - name: Probabilistic programming with Infer.NET
       href: how-to-guides/matchup-app-infer-net.md
+=======
+    - name: Infer.NET
+      items:
+      - name: Probabilistic programming with Infer.NET
+        href: how-to-guides/matchup-app-infer-net.md
+>>>>>>> Move algorithms into resources
 - name: Reference
   items:
   - name: API Reference
@@ -68,5 +75,8 @@
     href: resources/glossary.md
   - name: Machine learning tasks
     href: resources/tasks.md
+  - name: Choose an ML.NET algorithm
+    href: machine-learning/how-to-choose-an-ml-net-algorithm.md
   - name: Data transforms
     href: resources/transforms.md
+

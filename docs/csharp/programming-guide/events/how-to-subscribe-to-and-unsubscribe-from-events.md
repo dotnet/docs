@@ -68,7 +68,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 ### To subscribe to events by using an anonymous method  
   
--   If you will not have to unsubscribe to an event later, you can use the addition assignment operator (`+=`) to attach an anonymous method to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent` and that a `CustomEventArgs` class has also been defined to carry some kind of specialized event information. Note that the subscriber class needs a reference to `publisher` in order to subscribe to its events.  
+- If you will not have to unsubscribe to an event later, you can use the addition assignment operator (`+=`) to attach an anonymous method to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent` and that a `CustomEventArgs` class has also been defined to carry some kind of specialized event information. Note that the subscriber class needs a reference to `publisher` in order to subscribe to its events.  
   
     ```csharp
     publisher.RaiseCustomEvent += delegate(object o, CustomEventArgs e)  
@@ -85,7 +85,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 #### To unsubscribe from an event  
   
--   Use the subtraction assignment operator (`-=`) to unsubscribe from an event:  
+- Use the subtraction assignment operator (`-=`) to unsubscribe from an event:  
   
     ```csharp
     publisher.RaiseCustomEvent -= HandleCustomEvent;  

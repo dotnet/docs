@@ -15,13 +15,13 @@ Parameters declared for a method without [in](../../../csharp/language-reference
   
  This section describes the keywords you can use when declaring method parameters:  
   
--   [params](../../../csharp/language-reference/keywords/params.md) specifies that this parameter may take a variable number of arguments.
+- [params](../../../csharp/language-reference/keywords/params.md) specifies that this parameter may take a variable number of arguments.
   
--   [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md) specifies that this parameter is passed by reference but is only read by the called method.
+- [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md) specifies that this parameter is passed by reference but is only read by the called method.
   
--   [ref](../../../csharp/language-reference/keywords/ref.md) specifies that this parameter is passed by reference and may be read or written by the called method.
+- [ref](../../../csharp/language-reference/keywords/ref.md) specifies that this parameter is passed by reference and may be read or written by the called method.
   
--   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) specifies that this parameter is passed by reference and is written by the called method.
+- [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) specifies that this parameter is passed by reference and is written by the called method.
   
 ## See also
 

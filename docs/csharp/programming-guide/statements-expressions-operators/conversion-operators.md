@@ -19,27 +19,27 @@ C# enables programmers to declare conversions on classes or structs so that clas
 
  Conversion operators have the following properties:  
   
--   Conversions declared as `implicit` occur automatically when it is required.  
+- Conversions declared as `implicit` occur automatically when it is required.  
   
--   Conversions declared as `explicit` require a cast to be called.  
+- Conversions declared as `explicit` require a cast to be called.  
   
--   All conversions must be declared as `static`.  
+- All conversions must be declared as `static`.  
   
 ## Related sections
 
  For more information:  
   
--   [Using Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md)  
+- [Using Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md)  
   
--   [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
+- [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md)  
   
--   [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
+- [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
   
--   [explicit](../../../csharp/language-reference/keywords/explicit.md)  
+- [explicit](../../../csharp/language-reference/keywords/explicit.md)  
   
--   [implicit](../../../csharp/language-reference/keywords/implicit.md)  
+- [implicit](../../../csharp/language-reference/keywords/implicit.md)  
   
--   [static](../../../csharp/language-reference/keywords/static.md)  
+- [static](../../../csharp/language-reference/keywords/static.md)  
   
 ## See also
 

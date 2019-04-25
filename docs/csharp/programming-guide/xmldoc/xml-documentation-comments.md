@@ -32,18 +32,18 @@ public class MyClass {}
   
 ## In This Section  
   
--   [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)  
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)  
   
--   [Processing the XML File](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md)  
+- [Processing the XML File](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md)  
   
--   [Delimiters for Documentation Tags](../../../csharp/programming-guide/xmldoc/delimiters-for-documentation-tags.md)  
+- [Delimiters for Documentation Tags](../../../csharp/programming-guide/xmldoc/delimiters-for-documentation-tags.md)  
   
--   [How to: Use the XML Documentation Features](../../../csharp/programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md)  
+- [How to: Use the XML Documentation Features](../../../csharp/programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md)  
   
 ## Related Sections  
  For more information, see:  
   
--   [/doc (Process Documentation Comments)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
+- [/doc (Process Documentation Comments)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

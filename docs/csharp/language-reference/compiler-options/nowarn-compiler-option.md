@@ -29,11 +29,11 @@ The **-nowarn** option lets you suppress the compiler from displaying one or mor
   
  The following warnings cannot be suppressed by the `-nowarn` option:  
   
--   Compiler Warning (level 1) CS2002  
+- Compiler Warning (level 1) CS2002  
   
--   Compiler Warning (level 1) CS2023  
+- Compiler Warning (level 1) CS2023  
   
--   Compiler Warning (level 1) CS2029  
+- Compiler Warning (level 1) CS2029  
   
 ### To set this compiler option in the Visual Studio development environment  
   

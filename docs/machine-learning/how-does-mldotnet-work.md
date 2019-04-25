@@ -13,16 +13,18 @@ author: natke
 
 ML.NET gives you the ability to add machine learning to your .NET application. With this capability, you can make automatic predictions using the data available to your application.
 
-Examples of the type of prediction that you can make with ML.NET include:
+Examples of the type of predictions that you can make with ML.NET include:
 
-- Categorization, or classification. For example: automatically divide customer feedback into positive and negative categories
-- Prediction, or regression, of continuous quantities. For example: predict the price of houses based on size and location
-- Detection of anomalies. For example: detect fraudulent banking transactions.
-- Recommendations. For example: suggest products that online shoppers may want to buy, based on their previous purchases.
+|||
+|-|-|
+|Classification/Categorization|Automatically divide customer feedback into positive and negative categories|
+|Regression/Predict Continuous Values|Predict the price of houses based on size and location|
+|Detect Anomalies|Detect fraudulent banking transactions |
+|Recommendations|Suggest products that online shoppers may want to buy, based on their previous purchases|
 
 ## Hello ML.NET World
 
-The code in the following snippet demonstrates the simplest ML.NET application. In this example, we use housing size and price data to construct a linear regression model, to make predictions about house price based on size. In your real-life applications, your data and model will be much more complex.
+The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data. In your real-life applications, your data and model will be much more complex.
 
  ```csharp
     using System;
@@ -76,7 +78,9 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
     } 
 ```
 
-The following diagram shows this flow in visual form, with a couple of additions, which we talk about later in this article:
+## ML.NET code workflow
+
+The following diagram visually outlines the steps in the code, as well as a couple of additions which are discussed later in this article:
 
 - Evaluate the model and iterate to improve
 - Separate model development and model usage (deployment)
@@ -89,9 +93,9 @@ Let's dig a little deeper into those concepts.
 
 An ML.NET model is an encapsulation of the transformations to perform on your input data to arrive at the predicted output.
 
-### Simple
+### Basic
 
-The simplest model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above. 
+The most basic model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above. 
 
 ![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.svg)
 
@@ -99,17 +103,17 @@ The model is simply: `Price = b + Size * w`. The parameters `b` and `w` are esti
 
 ### More complex
 
-A more complex model classifies financial transactions into categories using the text description of the transaction.
+A more complex model classifies financial transactions into categories using the transaction text description.
 
-Each transaction description is broken down into a set of features by removing redundant words and characters, counting word and character combinations, then training a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category. 
+Each transaction description is broken down into a set of features by removing redundant words and characters, and counting word and character combinations. The feature set is used to train a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category. 
 
 ![Text Classification Model](./media/text-classification-model.svg)
 
-Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models and others. You can find out more about the models in [How to choose an ML.NET model](./resources/tasks.md).
+Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models, and others. You can find out more about the models in [How to choose an ML.NET model](./resources/tasks.md).
 
 ## Data preparation
 
-In most cases, the data that you have available in your application is not suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled. 
+In most cases, the data that you have available is not suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled. 
 
 The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
@@ -146,23 +150,24 @@ For our house price example, we used the **Regression** task. To evaluate the mo
         // RMS error: 0.09
 ```
 
-The evaluation metrics tell us that the error is low-ish, and that correlation between the predicted output and the test output is high. That was easy! In real examples, it takes more tuning to achieve good model metrics.
+The evaluation metrics tells you that the error is low-ish, and that correlation between the predicted output and the test output is high. That was easy! In real examples, it takes more tuning to achieve good model metrics.
 
-## Architecture
+## ML.NET architecture
 
 In this section, we go through the architectural patterns of ML.NET. If you are an experienced .NET developer, some of these patterns will be familiar to you, and some will be less familiar. Hold tight, while we dive in!
 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains properties, which are **catalogs** for:
 
-- data loading and saving: <xref:Microsoft.ML.Data>
-- data preparation :<xref:Microsoft.ML.TransformsCatalog>
-- algorithms for model training
-    - binary classification model training: <xref:Microsoft.ML.BinaryClassificationCatalog>
-    - multiclass classification model training: <xref:Microsoft.ML.MulticlassClassificationCatalog>
-    - anomaly detection model training: <xref:Microsoft.ML.AnomalyDetectionCatalog>
-    - ranking model training: <xref:Microsoft.ML.RankingCatalog>
-    - regression model training: <xref:Microsoft.ML.RegressionCatalog>
-- model loading, saving, and creating prediction engines: <xref:Microsoft.ML.ModelOperationsCatalog>
+- Data loading and saving: <xref:Microsoft.ML.Data>
+- Data preparation :<xref:Microsoft.ML.TransformsCatalog>
+- Algorithms for model training
+    - Binary classification model training: <xref:Microsoft.ML.BinaryClassificationCatalog>
+    - Multiclass classification model training: <xref:Microsoft.ML.MulticlassClassificationCatalog>
+    - Anomaly detection model training: <xref:Microsoft.ML.AnomalyDetectionCatalog>
+    - Ranking model training: <xref:Microsoft.ML.RankingCatalog>
+    - Regression model training: <xref:Microsoft.ML.RegressionCatalog>
+    - Recommendation model training: <xref:Microsoft.ML.Recommendationatalog>
+- Model loading, saving, and creating prediction engines: <xref:Microsoft.ML.ModelOperationsCatalog>
 
 The catalogs are a convenience to help you navigate the available operations in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense. 
 
@@ -177,25 +182,29 @@ Inside each catalog is a set of extension functions. Let's look at how extension
         .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
 ```
 
-In the snippet, `Concatenate` and `Sdca` are both extension functions. They each create an <xref:Microsoft.ML.IEstimator`1> object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
+In the snippet, `Concatenate` and `Sdca` are both extension functions. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that is appended to the pipeline. At this point, the objects are created only. No execution has happened.
 
-### Fit the model
+### Train the model
 
-Once the objects in the pipeline have been created, data can be used to train or fit the model.
+Once the objects in the pipeline have been created, data can be used to train the model.
 
 ```csharp
     var model = pipeline.Fit(trainingData);
 ```
 
-Calling `Fit()` uses the input training data to estimate the parameters of the model. Remember in our linear regression model above, we had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
+Calling Fit() uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**.. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
 You can learn more about model training in [How to train your model](./how-to-guides/train-model.md)
 
-The resulting model object implements the <xref:Microsoft.ML.ITransformer> interface. That is, the model transforms transforms input data into predictions. 
+The resulting model object implements the <xref:Microsoft.ML.ITransformer> interface. That is, the model transforms input data into predictions.
 
-### Transform data
+```csharp
+   IDataView predictions = model.Transform(inputData);
+```
 
-You can transform input data into predictions in bulk, or one input at a time. In our example, we did both: in bulk for the purpose of evaluating the model, and one at a time to make a new prediction. Let's look at making single predictions.
+### Use the model
+
+You can transform input data into predictions in bulk, or one input at a time. In the house price example, we did both: in bulk for the purpose of evaluating the model, and one at a time to make a new prediction. Let's look at making single predictions.
 
 ```csharp
     var size = new HouseData() { Size = 2.5F };

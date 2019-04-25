@@ -78,7 +78,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
     } 
 ```
 
-## ML.NET code workflow
+## Code workflow
 
 The following diagram visually outlines the steps in the code, as well as a couple of additions which are discussed later in this article:
 
@@ -89,9 +89,9 @@ The following diagram visually outlines the steps in the code, as well as a coup
 
 Let's dig a little deeper into those concepts.
 
-## ML.NET machine learning model
+## Machine learning model
 
-An ML.NET model is an encapsulation of the transformations to perform on your input data to arrive at the predicted output.
+An ML.NET model is an object that contains transformations to perform on your input data to arrive at the predicted output.
 
 ### Basic
 
@@ -99,7 +99,7 @@ The most basic model is two-dimensional linear regression, where one continuous 
 
 ![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.svg)
 
-The model is simply: `Price = b + Size * w`. The parameters `b` and `w` are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, `Size` is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the `Price` values in the training data set are the labels. 
+The model is simply: $Price = b + Size * w$. The parameters $b$ and $w$ are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, $Size$ is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the $Price$ values in the training data set are the labels.
 
 ### More complex
 
@@ -197,7 +197,7 @@ Once the objects in the pipeline have been created, data can be used to train th
     var model = pipeline.Fit(trainingData);
 ```
 
-Calling Fit() uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**.. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
+Calling `Fit()` uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**.. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
 You can learn more about model training in [How to train your model](./how-to-guides/train-model.md)
 
@@ -227,7 +227,7 @@ Each transformation in the pipeline has an input schema (data names, types, and 
 
 If the output schema from one transform in the pipeline does not match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type <xref:System.Single> and they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type  and they are scalar quantities rather than vector ones.
 
    ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 

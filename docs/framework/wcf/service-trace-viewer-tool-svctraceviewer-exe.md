@@ -138,9 +138,12 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
   
 ##### Project View  
  This view enables you to manage trace files in the current project. See the Managing Project section for more details.  
-  
+
+##### Message View
+ This view enables you to view all message log traces, including Action, Date/Time, Process, Acivity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
+ 
 ##### Graph View  
- One of the most powerful features of Service Trace Viewer is the **Graph** view, which displays the trace data for a given activity in chart form. The chart form enables you to see the stepwise execution of events and the interrelationships between multiple activities as data moves between them.  
+ This view displays the trace data for a given activity in chart form. The chart form enables you to see the stepwise execution of events and the interrelationships between multiple activities as data moves between them.  
   
  To switch to **Graph** view, select an activity in the **Activity** view and click the **Activity** tab, or a message log trace in the **Message** View. If multiple trace files are loaded and the activity involves traces from more than one file, all of the relevant traces appear in the graph view. Double-clicking on the activities and message log traces also leads you to the **Graph** view.  
   

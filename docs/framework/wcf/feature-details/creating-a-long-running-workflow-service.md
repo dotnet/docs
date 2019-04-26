@@ -94,10 +94,15 @@ This topic describes how to create a long-running workflow service. Long running
     1.  Select the **Sequence** that contains the newly added **Receive** and **SendReply** activities and click the **Variables** button. Add the variable highlighted in the following illustration:
 
          ![Adding new variables](./media/creating-a-long-running-workflow-service/add-the-itemid-variable.png "Add the ItemId variable.")
+         
+         Also add `orderResult` as **String** in the `Sequence` scope.
 
     2.  Select the **Receive** activity and set the properties shown in the following illustration:
 
          ![Set the Receive acitivity properties](./media/creating-a-long-running-workflow-service/set-receive-activities-properties.png "Set the Receive activities properties.")
+         
+         > [!NOTE]
+         >  Don't forget to change **ServiceContractName** field with `../IAddItem`.
 
     3.  Click the **Define...** link in the **ReceiveAddItem** activity and add the parameters shown in the following illustration:This configures the receive activity to accept two parameters, the order ID and the ID of the item being ordered.
 

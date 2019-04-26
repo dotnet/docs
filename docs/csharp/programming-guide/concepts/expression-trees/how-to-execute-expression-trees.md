@@ -38,9 +38,9 @@ Console.WriteLine(result);
   
 ## Compiling the Code  
   
--   Add a project reference to System.Core.dll if it is not already referenced.  
+- Add a project reference to System.Core.dll if it is not already referenced.  
   
--   Include the System.Linq.Expressions namespace.  
+- Include the System.Linq.Expressions namespace.  
   
 ## See also
 

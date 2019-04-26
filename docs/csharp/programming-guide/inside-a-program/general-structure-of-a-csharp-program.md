@@ -14,15 +14,15 @@ C# programs can consist of one or more files. Each file can contain zero or more
 ## Related Sections  
  For more information:  
   
--   [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
   
--   [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
   
--   [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
   
--   [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
   
--   [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
   
 ## C# Language Specification  
 

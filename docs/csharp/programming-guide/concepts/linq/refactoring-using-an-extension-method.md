@@ -238,7 +238,7 @@ StyleName:Code >Hello World<
 ## Next Steps  
  The next example shows how to refactor this code in another way, by using pure functions:  
   
--   [Refactoring Using a Pure Function (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-a-pure-function.md)  
+- [Refactoring Using a Pure Function (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-a-pure-function.md)  
   
 ## See also
 

@@ -22,9 +22,9 @@ Dynamic objects expose members such as properties and methods at run time, inste
   
  In this walkthrough you will perform the following tasks:  
   
--   Create a custom object that dynamically exposes the contents of a text file as properties of an object.  
+- Create a custom object that dynamically exposes the contents of a text file as properties of an object.  
   
--   Create a project that uses an `IronPython` library.  
+- Create a project that uses an `IronPython` library.  
   
 ## Prerequisites  
 

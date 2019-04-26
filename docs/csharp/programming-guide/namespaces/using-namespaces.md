@@ -46,13 +46,13 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
  In the previous code segment:  
   
--   The namespace `N1` is a member of the global namespace. Its fully qualified name is `N1`.  
+- The namespace `N1` is a member of the global namespace. Its fully qualified name is `N1`.  
   
--   The namespace `N2` is a member of `N1`. Its fully qualified name is `N1.N2`.  
+- The namespace `N2` is a member of `N1`. Its fully qualified name is `N1.N2`.  
   
--   The class `C1` is a member of `N1`. Its fully qualified name is `N1.C1`.  
+- The class `C1` is a member of `N1`. Its fully qualified name is `N1.C1`.  
   
--   The class name `C2` is used two times in this code. However, the fully qualified names are unique. The first instance of `C2` is declared inside `C1`; therefore, its fully qualified name is: `N1.C1.C2`. The second instance of `C2` is declared inside a namespace `N2`; therefore, its fully qualified name is `N1.N2.C2`.  
+- The class name `C2` is used two times in this code. However, the fully qualified names are unique. The first instance of `C2` is declared inside `C1`; therefore, its fully qualified name is: `N1.C1.C2`. The second instance of `C2` is declared inside a namespace `N2`; therefore, its fully qualified name is `N1.N2.C2`.  
   
  Using the previous code segment, you can add a new class member, `C3`, to the namespace `N1.N2` as follows:  
   

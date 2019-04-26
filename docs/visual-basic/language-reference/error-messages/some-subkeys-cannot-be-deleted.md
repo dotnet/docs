@@ -14,5 +14,4 @@ An attempt has been made to delete a registry key, but the operation failed beca
 
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>
 - <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>
-- <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>
 - <xref:System.Security.Permissions.RegistryPermission>

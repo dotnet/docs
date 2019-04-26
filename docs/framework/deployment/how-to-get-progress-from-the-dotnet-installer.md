@@ -35,13 +35,13 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 
 - **Exit codes**. The following exit codes from the command to call the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable program indicate whether setup has succeeded or failed:
 
-    - 0 - Setup completed successfully.
+  - 0 - Setup completed successfully.
 
-    - 3010 – Setup completed successfully; a system restart is required.
+  - 3010 – Setup completed successfully; a system restart is required.
 
-    - 1602 – Setup has been canceled.
+  - 1602 – Setup has been canceled.
 
-    - All other codes - Setup encountered errors; examine the log files created in %temp% for details.
+  - All other codes - Setup encountered errors; examine the log files created in %temp% for details.
 
 - **Canceling setup**. You can cancel setup at any time by using the `Abort` method to set the `m_downloadAbort` and `m_ installAbort` flags in the MMIO section.
 

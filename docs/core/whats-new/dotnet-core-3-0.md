@@ -23,15 +23,11 @@ For more information about what was released with each version, see the followin
 - [.NET Core 3.0 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
 - [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
 
-
-
 ## .NET Core SDK Windows Installer
 
 The MSI installer for Windows has changed starting with .NET Core 3.0. The SDK installers will now upgrade SDK feature-band releases in place. Feature bands are defined in the *hundreds* groups in the *patch* section of the version number. For example, **3.0.*101*** and **3.0.*201*** are versions in two different feature bands while **3.0.*101*** and **3.0.*199*** are in the same feature band. And, when .NET Core SDK **3.0.*101*** is installed, .NET Core SDK **3.0.*100*** will be removed from the machine if it exists. When .NET Core SDK **3.0.*200*** is installed on the same machine, .NET Core SDK **3.0.*101*** won't be removed.
 
 For more information about versioning, see [Overview of how .NET Core is versioned](../versions/index.md).
-
-
 
 ## C# 8.0 preview
 
@@ -52,8 +48,6 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 ```
 
 If you're using Visual Studio, you need Visual Studio 2019 as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
-
-
 
 ## IEEE Floating-point improvements
 
@@ -88,8 +82,6 @@ Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That 
 * <xref:System.Math.CopySign(System.Double,System.Double)>\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
-
-
 ## .NET Platform-Dependent Intrinsics
 
 APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel. 
@@ -97,8 +89,6 @@ APIs have been added that allow access to certain perf-oriented CPU instructions
 Where appropriate, the .NET libraries have begun using these instructions to improve performance.
 
 For more information, see [.NET Platform Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md).
-
-
 
 ## Default executables
 
@@ -109,23 +99,17 @@ During `dotnet build` or `dotnet publish`, an executable is created that matches
 * You can double-click on the executable.
 * You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.
 
-
-
 ## Tiered compilation
 
 [Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
 
 This feature was added as an opt-in feature in [.NET Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt in with the .NET Core 2.2 release.
 
-
-
 ## Build copies dependencies
 
 The `dotnet build` command now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
 
 There are some operations, like linking and razor page publishing that will still require publishing.
-
-
 
 ## Local tools
 
@@ -141,8 +125,6 @@ There are some operations, like linking and razor page publishing that will stil
 Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
 
 For both global and local tools, a compatible version of the runtime is required. Many tools currently on NuGet.org target .NET Core Runtime 2.1. To install these tools globally or locally, you would still need to install the [NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet-core/2.1).
-
-
 
 ## Windows desktop
 
@@ -161,8 +143,6 @@ Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Form
 
 For more information about how to port an existing .NET Framework application, see [Port WPF projects](../porting/winforms.md) and [Port Windows Forms projects](../porting/wpf.md).
 
-
-
 ## MSIX Deployment for Windows Desktop
 
 [MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows application package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
@@ -174,8 +154,6 @@ The .NET Core project file must specify the supported runtimes in the `<RuntimeI
 ```xml
 <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
 ```
-
-
 
 ## WinForms HighDPI
 
@@ -190,8 +168,6 @@ The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Form
 * `DpiUnawareGdiScaled`
 
 For more information about High DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
-
-
 
 ## Fast built-in JSON support
 
@@ -225,9 +201,6 @@ Here is a C# 8.0 example of reading through the [**launch.json**](https://github
 
 [!CODE-csharp[JsonDocument](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#ReadJsonCall)]
 
-
-
-
 ## Interop improvements
 
 .NET Core 3.0 improves native API interop.
@@ -239,8 +212,6 @@ Here is a C# 8.0 example of reading through the [**launch.json**](https://github
 ### Windows Native Interop
 
 Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. While .NET Core supports **P/Invoke**, .NET Core 3.0 adds the ability to **CoCreate COM APIs** and **Activate WinRT APIs**. For a code example, see the [Excel Demo](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo).
-
-
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 
@@ -258,8 +229,6 @@ The following C# 8.0 example demonstrates .NET Core 3.0 on Ubuntu 18.10 connecti
 
 [!CODE-csharp[TLSExample](~/samples/core/whats-new/whats-new-in-30/cs/TLS.cs#TLS)]
 
-
-
 ## Cryptography ciphers
 
 .NET 3.0 adds support for **AES-GCM** and **AES-CCM** ciphers, implemented with <xref:System.Security.Cryptography.AesGcm?displayProperty=nameWithType> and <xref:System.Security.Cryptography.AesCcm?displayProperty=nameWithType> respectively. These algorithms are both [Authenticated Encryption with Association Data (AEAD) algorithms](https://en.wikipedia.org/wiki/Authenticated_encryption).
@@ -267,8 +236,6 @@ The following C# 8.0 example demonstrates .NET Core 3.0 on Ubuntu 18.10 connecti
 The following code demonstrates using `AesGcm` cipher to encrypt and decrypt random data.
 
 [!CODE-csharp[AesGcm](~/samples/core/whats-new/whats-new-in-30/cs/Cipher.cs#AesGcm)]
-
-
 
 ## Cryptographic Key Import/Export
 
@@ -297,15 +264,11 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 **PKCS#8** files can be inspected with <xref:System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo?displayProperty=nameWithType> and **PFX/PKCS#12** files can be inspected with <xref:System.Security.Cryptography.Pkcs.Pkcs12Info?displayProperty=nameWithType>. **PFX/PKCS#12** files can be manipulated with <xref:System.Security.Cryptography.Pkcs.Pkcs12Builder?displayProperty=nameWithType>.
 
-
-
 ## SerialPort for Linux
 
 .NET Core 3.0 supports <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> on Linux.
 
 Previously, .NET Core only supported using `SerialPort` on Windows.
-
-
 
 ## Docker and cgroup memory Limits
 
@@ -315,8 +278,6 @@ Starting with Preview 3, running .NET Core 3.0 on Linux with Docker works better
 * Explicit size can be set as an absolute number or percentage of cgroup limit.
 * Minimum reserved segment size per GC heap is 16 mb. This size reduces the number of heaps that are created on machines.
 
-
-
 ## GPIO Support for Raspberry Pi
 
 Two packages have been released to NuGet that you can use for GPIO programming:
@@ -325,8 +286,6 @@ Two packages have been released to NuGet that you can use for GPIO programming:
 * [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings)
 
 The GPIO packages include APIs for *GPIO*, *SPI*, *I2C*, and *PWM* devices. The IoT bindings package includes device bindings. For more information, see the [devices GitHub repo](https://github.com/dotnet/iot/blob/master/src/devices/).
-
-
 
 ## ARM64 Linux support
 

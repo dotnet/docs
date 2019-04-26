@@ -319,7 +319,6 @@ Add these image transforms as the next lines of code:
 
 [!code-csharp[ImageTransforms](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ImageTransforms)]
 
-
 The `LoadTensorFlowModel` is a convenience method that allows the `TensorFlow` model to be loaded once and then creates the `TensorFlowEstimator` using `ScoreTensorFlowModel`. The `ScoreTensorFlowModel` extracts specified outputs (the `Inception model`'s image features `softmax2_pre_activation`), and scores a dataset using the pre-trained `TensorFlow` model.
 
 `softmax2_pre_activation` assists the model with determining which class the images belongs to. `softmax2_pre_activation` returns a probability for each of the categories for an image, and all of those probabilities must add up to 1. It assumes that an image will belong to only one category, as shown in the following example:

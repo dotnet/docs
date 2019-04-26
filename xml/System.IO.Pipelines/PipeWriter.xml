@@ -39,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <Parameter Name="bytes" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bytes">The number of bytes written to the <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</param>
+        <summary>Notifies the <see cref="T:System.IO.Pipelines.PipeWriter" /> that <paramref name="bytes" /> bytes were written to the output <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />. You must request a new buffer after calling <see cref="M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)" /> to continue writing more data; you cannot write to a previously acquired buffer.</summary>
         <remarks>To be added.</remarks>
         <inheritdoc />
       </Docs>
@@ -90,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a write-only <see cref="T:System.IO.Stream" /> that wraps the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
+        <returns>The <see cref="T:System.IO.Stream" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,10 +160,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The stream from which the contents will be copied.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously reads the bytes from the specified stream and writes them to the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
+        <returns>A task that represents the asynchronous copy operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +215,21 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sizeHint">The minimum length of the returned <see cref="T:System.Memory`1" />. If 0, a non-empty memory buffer of arbitrary size is returned.</param>
+        <summary>Returns a <see cref="T:System.Memory`1" /> to write to that is at least the requested size, as specified by the <paramref name="sizeHint" /> parameter.</summary>
+        <returns>A memory buffer of at least <paramref name="sizeHint" /> bytes. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer of arbitrary size.</returns>
+        <remarks>
+             <format type="text/markdown"><![CDATA[
+
+There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
+
+This method never returns <xref:System.Memory`1.Empty?displayProperty=nameWithType>, but it throws an <xref:System.OutOfMemoryException> if the requested buffer size is not available.
+
+You must request a new buffer after calling <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to continue writing more data; you cannot write to a previously acquired buffer.
+
+              ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">The requested buffer size is not available.</exception>
         <inheritdoc />
       </Docs>
     </Member>
@@ -245,10 +256,21 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sizeHint">The minimum length of the returned <see cref="T:System.Span`1" />. If 0, a non-empty buffer of arbitrary size is returned.</param>
+        <summary>Returns a <see cref="T:System.Span`1" /> to write to that is at least the requested size, as specified by the <paramref name="sizeHint" /> parameter.</summary>
+        <returns>A buffer of at least <paramref name="sizeHint" /> bytes. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer of arbitrary size.</returns>
+        <remarks>
+             <format type="text/markdown"><![CDATA[
+
+There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
+
+This method never returns <see cref="P:System.Span`1.Empty" />, but it throws an <see cref="T:System.OutOfMemoryException" /> if the requested buffer size is not available.
+
+You must request a new buffer after calling <xref:System.IO.Pipelines.PipeWriter.Advance(System.Int32)> to continue writing more data; you cannot write to a previously acquired buffer.
+
+              ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">The requested buffer size is not available.</exception>
         <inheritdoc />
       </Docs>
     </Member>

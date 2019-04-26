@@ -36,7 +36,7 @@ sections:
 - title: Reference and Resources
   items:
   - type: paragraph
-    text: 'The ML.NET API has two sets of packages: the 1.0.0 release components and the 0.12.0 preview components. The release API contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection and ranking, model saving and loading, and much more! The preview API contains ONNX and TensorFlow model handling, algorithms for recommendation tasks, and components to process time-series data.'
+    text: 'The ML.NET API has two sets of packages: release components and preview components. The release API contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection and ranking, model saving and loading, and much more! The preview API contains ONNX and TensorFlow model handling, algorithms for recommendation tasks, and components to process time-series data.'
   - type: list
     style: unordered
     items:

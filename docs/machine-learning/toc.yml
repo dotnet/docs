@@ -3,12 +3,11 @@
 - name: Overview
   expanded: true
   items:
-  - name: What is ML.NET?
-    href: what-is-mldotnet.md
-  - name: Model training concepts
-    href: basic-concepts-model-training-in-mldotnet.md
+  - name: What is machine learning?
+    href: what-is-machine-learning.md
+  - name: How does ML.NET work?
+    href: how-does-mldotnet-work.md
 - name: Tutorials
-  href: 
   items:
   - name: Overview
     href: tutorials/index.md
@@ -59,8 +58,8 @@
       href: how-to-guides/serve-model-web-api-ml-net.md
     - name: Infer.NET
       items:
-    - name: Probabilistic programming with Infer.NET
-      href: how-to-guides/matchup-app-infer-net.md
+       - name: Probabilistic programming with Infer.NET
+         href: how-to-guides/matchup-app-infer-net.md
 - name: Reference
   items:
   - name: API Reference

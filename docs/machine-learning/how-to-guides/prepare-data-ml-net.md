@@ -165,7 +165,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Normalize the data into bins using the [`NormalizeBinning`](xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning*) method. The `maximumBinCount` parameter enables you to specify the numer of bins needed to classify your data. In this example, data will be put into two bins.  
+Normalize the data into bins using the [`NormalizeBinning`](xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning*) method. The `maximumBinCount` parameter enables you to specify the number of bins needed to classify your data. In this example, data will be put into two bins.  
 
 ```csharp
 // Define binning estimator

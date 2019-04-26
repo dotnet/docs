@@ -9,27 +9,27 @@ ms.author: "mairaw"
 # Create New Nodes in the DOM
 The <xref:System.Xml.XmlDocument> has a create method for all of the node types. Supply the method with a name when required, and content or other parameters for those nodes that have content (for example, a text node), and the node is created. The following methods are ones that need a name and a few other parameters filled to create an appropriate node.  
   
--   <xref:System.Xml.XmlDocument.CreateCDataSection%2A>  
+- <xref:System.Xml.XmlDocument.CreateCDataSection%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateComment%2A>  
+- <xref:System.Xml.XmlDocument.CreateComment%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateDocumentFragment%2A>  
+- <xref:System.Xml.XmlDocument.CreateDocumentFragment%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateDocumentType%2A>  
+- <xref:System.Xml.XmlDocument.CreateDocumentType%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateElement%2A>  
+- <xref:System.Xml.XmlDocument.CreateElement%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateNode%2A>  
+- <xref:System.Xml.XmlDocument.CreateNode%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateProcessingInstruction%2A>  
+- <xref:System.Xml.XmlDocument.CreateProcessingInstruction%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateSignificantWhitespace%2A>  
+- <xref:System.Xml.XmlDocument.CreateSignificantWhitespace%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateTextNode%2A>  
+- <xref:System.Xml.XmlDocument.CreateTextNode%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateWhitespace%2A>  
+- <xref:System.Xml.XmlDocument.CreateWhitespace%2A>  
   
--   <xref:System.Xml.XmlDocument.CreateXmlDeclaration%2A>  
+- <xref:System.Xml.XmlDocument.CreateXmlDeclaration%2A>  
   
  Other node types have more requirements than just providing data to parameters.  
   

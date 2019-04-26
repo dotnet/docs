@@ -16,13 +16,13 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  The general pattern for implementing the cooperative cancellation model is:  
   
--   Instantiate a <xref:System.Threading.CancellationTokenSource> object, which manages and sends cancellation notification to the individual cancellation tokens.  
+- Instantiate a <xref:System.Threading.CancellationTokenSource> object, which manages and sends cancellation notification to the individual cancellation tokens.  
   
--   Pass the token returned by the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property to each task or thread that listens for cancellation.  
+- Pass the token returned by the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property to each task or thread that listens for cancellation.  
   
--   Provide a mechanism for each task or thread to respond to cancellation.  
+- Provide a mechanism for each task or thread to respond to cancellation.  
   
--   Call the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to provide notification of cancellation.  
+- Call the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to provide notification of cancellation.  
   
 > [!IMPORTANT]
 >  The <xref:System.Threading.CancellationTokenSource> class implements the <xref:System.IDisposable> interface. You should be sure to call the <xref:System.Threading.CancellationTokenSource.Dispose%2A?displayProperty=nameWithType> method when you have finished using the cancellation token source to free any unmanaged resources it holds.  
@@ -33,17 +33,17 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  The new cancellation model makes it easier to create cancellation-aware applications and libraries, and it supports the following features:  
   
--   Cancellation is cooperative and is not forced on the listener. The listener determines how to gracefully terminate in response to a cancellation request.  
+- Cancellation is cooperative and is not forced on the listener. The listener determines how to gracefully terminate in response to a cancellation request.  
   
--   Requesting is distinct from listening. An object that invokes a cancelable operation can control when (if ever) cancellation is requested.  
+- Requesting is distinct from listening. An object that invokes a cancelable operation can control when (if ever) cancellation is requested.  
   
--   The requesting object issues the cancellation request to all copies of the token by using just one method call.  
+- The requesting object issues the cancellation request to all copies of the token by using just one method call.  
   
--   A listener can listen to multiple tokens simultaneously by joining them into one *linked token*.  
+- A listener can listen to multiple tokens simultaneously by joining them into one *linked token*.  
   
--   User code can notice and respond to cancellation requests from library code, and library code can notice and respond to cancellation requests from user code.  
+- User code can notice and respond to cancellation requests from library code, and library code can notice and respond to cancellation requests from user code.  
   
--   Listeners can be notified of cancellation requests by polling, callback registration, or waiting on wait handles.  
+- Listeners can be notified of cancellation requests by polling, callback registration, or waiting on wait handles.  
   
 ## Cancellation Types  
  The cancellation framework is implemented as a set of related types, which are listed in the following table.  
@@ -102,11 +102,11 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  In order to ensure system responsiveness and to avoid deadlocks, the following guidelines must be followed when registering callbacks:  
   
--   The callback method should be fast because it is called synchronously and therefore the call to <xref:System.Threading.CancellationTokenSource.Cancel%2A> does not return until the callback returns.  
+- The callback method should be fast because it is called synchronously and therefore the call to <xref:System.Threading.CancellationTokenSource.Cancel%2A> does not return until the callback returns.  
   
--   If you call <xref:System.Threading.CancellationTokenRegistration.Dispose%2A> while the callback is running, and you hold a lock that the callback is waiting on, your program can deadlock. After `Dispose` returns, you can free any resources required by the callback.  
+- If you call <xref:System.Threading.CancellationTokenRegistration.Dispose%2A> while the callback is running, and you hold a lock that the callback is waiting on, your program can deadlock. After `Dispose` returns, you can free any resources required by the callback.  
   
--   Callbacks should not perform any manual thread or <xref:System.Threading.SynchronizationContext> usage in a callback. If a callback must run on a particular thread, use the <xref:System.Threading.CancellationTokenRegistration?displayProperty=nameWithType> constructor that enables you to specify that the target syncContext is the active <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType>. Performing manual threading in a callback can cause deadlock.  
+- Callbacks should not perform any manual thread or <xref:System.Threading.SynchronizationContext> usage in a callback. If a callback must run on a particular thread, use the <xref:System.Threading.CancellationTokenRegistration?displayProperty=nameWithType> constructor that enables you to specify that the target syncContext is the active <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType>. Performing manual threading in a callback can cause deadlock.  
   
  For a more complete example, see [How to: Register Callbacks for Cancellation Requests](../../../docs/standard/threading/how-to-register-callbacks-for-cancellation-requests.md).  
   
@@ -134,11 +134,11 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
 ## Cooperation Between Library Code and User Code  
  The unified cancellation framework makes it possible for library code to cancel user code, and for user code to cancel library code in a cooperative manner. Smooth cooperation depends on each side following these guidelines:  
   
--   If library code provides cancelable operations, it should also provide public methods that accept an external cancellation token so that user code can request cancellation.  
+- If library code provides cancelable operations, it should also provide public methods that accept an external cancellation token so that user code can request cancellation.  
   
--   If library code calls into user code, the library code should interpret an OperationCanceledException(externalToken) as *cooperative cancellation*, and not necessarily as a failure exception.  
+- If library code calls into user code, the library code should interpret an OperationCanceledException(externalToken) as *cooperative cancellation*, and not necessarily as a failure exception.  
   
--   User-delegates should attempt to respond to cancellation requests from library code in a timely manner.  
+- User-delegates should attempt to respond to cancellation requests from library code in a timely manner.  
   
  <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> are examples of classes that follow these guidelines. For more information, see [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md) and [How to: Cancel a PLINQ Query](../../../docs/standard/parallel-programming/how-to-cancel-a-plinq-query.md).  
   

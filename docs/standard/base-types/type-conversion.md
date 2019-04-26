@@ -32,25 +32,25 @@ ms.author: "ronpet"
   
  The .NET Framework automatically supports the following conversions:  
   
--   Conversion from a derived class to a base class. This means, for example, that an instance of any class or structure can be converted to an <xref:System.Object> instance.  This conversion does not require a casting or conversion operator.  
+- Conversion from a derived class to a base class. This means, for example, that an instance of any class or structure can be converted to an <xref:System.Object> instance.  This conversion does not require a casting or conversion operator.  
   
--   Conversion from a base class back to the original derived class. In C#, this conversion requires a casting operator. In Visual Basic, it requires the `CType` operator if `Option Strict` is on.  
+- Conversion from a base class back to the original derived class. In C#, this conversion requires a casting operator. In Visual Basic, it requires the `CType` operator if `Option Strict` is on.  
   
--   Conversion from a type that implements an interface to an interface object that represents that interface. This conversion does not require a casting or conversion operator.  
+- Conversion from a type that implements an interface to an interface object that represents that interface. This conversion does not require a casting or conversion operator.  
   
--   Conversion from an interface object back to the original type that implements that interface.  In C#, this conversion requires a casting operator. In Visual Basic, it requires the `CType` operator if `Option Strict` is on.  
+- Conversion from an interface object back to the original type that implements that interface.  In C#, this conversion requires a casting operator. In Visual Basic, it requires the `CType` operator if `Option Strict` is on.  
   
  In addition to these automatic conversions, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides several features that support custom type conversion. These include the following:  
   
--   The `Implicit` operator, which defines the available widening conversions between types. For more information, see the [Implicit Conversion with the Implicit Operator](#implicit_conversion_with_the_implicit_operator) section.  
+- The `Implicit` operator, which defines the available widening conversions between types. For more information, see the [Implicit Conversion with the Implicit Operator](#implicit_conversion_with_the_implicit_operator) section.  
   
--   The `Explicit` operator, which defines the available narrowing conversions between types. For more information, see the [Explicit Conversion with the Explicit Operator](#explicit_conversion_with_the_explicit_operator) section.  
+- The `Explicit` operator, which defines the available narrowing conversions between types. For more information, see the [Explicit Conversion with the Explicit Operator](#explicit_conversion_with_the_explicit_operator) section.  
   
--   The <xref:System.IConvertible> interface, which defines conversions to each of the base .NET Framework data types. For more information, see [The IConvertible Interface](#the_iconvertible_interface) section.  
+- The <xref:System.IConvertible> interface, which defines conversions to each of the base .NET Framework data types. For more information, see [The IConvertible Interface](#the_iconvertible_interface) section.  
   
--   The <xref:System.Convert> class, which provides a set of methods that implement the methods in the <xref:System.IConvertible> interface. For more information, see [The Convert Class](#Convert) section.  
+- The <xref:System.Convert> class, which provides a set of methods that implement the methods in the <xref:System.IConvertible> interface. For more information, see [The Convert Class](#Convert) section.  
   
--   The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see [The TypeConverter Class](#the_typeconverter_class) section.  
+- The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see [The TypeConverter Class](#the_typeconverter_class) section.  
   
 <a name="implicit_conversion_with_the_implicit_operator"></a>   
 ## Implicit Conversion with the Implicit Operator  
@@ -123,11 +123,11 @@ ms.author: "ronpet"
 ## The IConvertible Interface  
  To support the conversion of any type to a common language runtime base type, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the <xref:System.IConvertible> interface. The implementing type is required to provide the following:  
   
--   A method that returns the <xref:System.TypeCode> of the implementing type.  
+- A method that returns the <xref:System.TypeCode> of the implementing type.  
   
--   Methods to convert the implementing type to each common language runtime base type (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, and so on).  
+- Methods to convert the implementing type to each common language runtime base type (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, and so on).  
   
--   A generalized conversion method to convert an instance of the implementing type to another specified type. Conversions that are not supported should throw an <xref:System.InvalidCastException>.  
+- A generalized conversion method to convert an instance of the implementing type to another specified type. Conversions that are not supported should throw an <xref:System.InvalidCastException>.  
   
  Each common language runtime base type (that is, the <xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.String>, <xref:System.UInt16>, <xref:System.UInt32>, and <xref:System.UInt64>), as well as the <xref:System.DBNull> and <xref:System.Enum> types, implement the <xref:System.IConvertible> interface. However, these are explicit interface implementations; the conversion method can be called only through an <xref:System.IConvertible> interface variable, as the following example shows. This example converts an <xref:System.Int32> value to its equivalent <xref:System.Char> value.  
   

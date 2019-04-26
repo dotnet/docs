@@ -23,13 +23,13 @@ This document demonstrates how to create a network of dataflow blocks that perfo
 ## Sections  
  This walkthrough contains the following sections:  
   
--   [Creating the Windows Forms Application](#winforms)  
+- [Creating the Windows Forms Application](#winforms)  
   
--   [Creating the Dataflow Network](#network)  
+- [Creating the Dataflow Network](#network)  
   
--   [Connecting the Dataflow Network to the User Interface](#ui)  
+- [Connecting the Dataflow Network to the User Interface](#ui)  
   
--   [The Complete Example](#complete)  
+- [The Complete Example](#complete)  
   
 <a name="winforms"></a>   
 ## Creating the Windows Forms Application  

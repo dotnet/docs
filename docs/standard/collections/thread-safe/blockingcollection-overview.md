@@ -14,21 +14,21 @@ ms.author: "mairaw"
 # BlockingCollection Overview
 <xref:System.Collections.Concurrent.BlockingCollection%601> is a thread-safe collection class that provides the following features:  
   
--   An implementation of the Producer-Consumer pattern.  
+- An implementation of the Producer-Consumer pattern.  
   
--   Concurrent adding and taking of items from multiple threads.  
+- Concurrent adding and taking of items from multiple threads.  
   
--   Optional maximum capacity.  
+- Optional maximum capacity.  
   
--   Insertion and removal operations that block when collection is empty or full.  
+- Insertion and removal operations that block when collection is empty or full.  
   
--   Insertion and removal "try" operations that do not block or that block up to a specified period of time.  
+- Insertion and removal "try" operations that do not block or that block up to a specified period of time.  
   
--   Encapsulates any collection type that implements <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>  
+- Encapsulates any collection type that implements <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>  
   
--   Cancellation with cancellation tokens.  
+- Cancellation with cancellation tokens.  
   
--   Two kinds of enumeration with `foreach` (`For Each` in Visual Basic):  
+- Two kinds of enumeration with `foreach` (`For Each` in Visual Basic):  
   
     1.  Read-only enumeration.  
   

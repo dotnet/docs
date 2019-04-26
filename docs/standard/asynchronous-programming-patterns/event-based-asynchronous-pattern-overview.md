@@ -22,13 +22,13 @@ Applications that perform many tasks simultaneously, yet remain responsive to us
   
  The Event-based Asynchronous Pattern makes available the advantages of multithreaded applications while hiding many of the complex issues inherent in multithreaded design. Using a class that supports this pattern can allow you to:  
   
--   Perform time-consuming tasks, such as downloads and database operations, "in the background," without interrupting your application.  
+- Perform time-consuming tasks, such as downloads and database operations, "in the background," without interrupting your application.  
   
--   Execute multiple operations simultaneously, receiving notifications when each completes.  
+- Execute multiple operations simultaneously, receiving notifications when each completes.  
   
--   Wait for resources to become available without stopping ("hanging") your application.  
+- Wait for resources to become available without stopping ("hanging") your application.  
   
--   Communicate with pending asynchronous operations using the familiar events-and-delegates model. For more information on using event handlers and delegates, see [Events](../../../docs/standard/events/index.md).  
+- Communicate with pending asynchronous operations using the familiar events-and-delegates model. For more information on using event handlers and delegates, see [Events](../../../docs/standard/events/index.md).  
   
  A class that supports the Event-based Asynchronous Pattern will have one or more methods named _MethodName_**Async**. These methods may mirror synchronous versions, which perform the same operation on the current thread. The class may also have a _MethodName_**Completed** event and it may have a _MethodName_**AsyncCancel** (or simply **CancelAsync**) method.  
   

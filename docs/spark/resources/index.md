@@ -5,7 +5,13 @@ ms.date: 05/06/2019
 ---
 # .NET for Apache Spark resources
 
-The following [.NET for Apache Spark](../index.yml) resources may be helpful to build custom data science solutions and integrate them into your .NET applications:
+The following [.NET for Apache Spark](../index.yml) resources may be helpful for accessing Apache Spark in your .NET applications:
+
+* [.NET for Apache Spark C# and F# samples](https://github.com/dotnet/spark#samples) contains samples that cover several analytics scenarios including, Dataframes and SparkSQL, structured streaming, and TPC-H queries.
+
+* Connect with the developer community using the **spark-dotnet** tag on [Stack Overflow](https://stackoverflow.com/questions/tagged/spark-dotnet).
+
+* Interested in contributing? Visit the [GitHub repo](https://github.com/dotnet/spark) to learn how to build from source.
 
 ### How to engage, contribute and provide feedback
 

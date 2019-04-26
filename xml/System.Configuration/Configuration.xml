@@ -335,7 +335,7 @@
         <param name="sectionName">The path to the section to be returned.</param>
         <param name="path">The path to the section to be returned.</param>
         <summary>Returns the specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
-        <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</returns>
+        <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" /> object, or <see langword="null" /> if the requested section does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -390,7 +390,7 @@
         <param name="sectionGroupName">The path name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> to return.</param>
         <param name="path">The path name of the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> to return.</param>
         <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
-        <returns>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> specified.</returns>
+        <returns>The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> specified, or <see langword="null" /> if the requested section group does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

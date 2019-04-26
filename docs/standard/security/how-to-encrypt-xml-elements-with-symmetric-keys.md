@@ -86,9 +86,9 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## Compiling the Code  
   
--   To compile this example, you need to include a reference to `System.Security.dll`.  
+- To compile this example, you need to include a reference to `System.Security.dll`.  
   
--   Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
+- Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
 ## .NET Framework Security  
  Never store a cryptographic key in plaintext or transfer a key between machines in plaintext.  Instead, use a secure key container to store cryptographic keys.  

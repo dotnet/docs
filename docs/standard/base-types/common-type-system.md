@@ -23,23 +23,23 @@ ms.custom: seodec18
 # Common Type System
 The common type system defines how types are declared, used, and managed in the common language runtime, and is also an important part of the runtime's support for cross-language integration. The common type system performs the following functions:  
   
--   Establishes a framework that helps enable cross-language integration, type safety, and high-performance code execution.  
+- Establishes a framework that helps enable cross-language integration, type safety, and high-performance code execution.  
   
--   Provides an object-oriented model that supports the complete implementation of many programming languages.  
+- Provides an object-oriented model that supports the complete implementation of many programming languages.  
   
--   Defines rules that languages must follow, which helps ensure that objects written in different languages can interact with each other.  
+- Defines rules that languages must follow, which helps ensure that objects written in different languages can interact with each other.  
   
--   Provides a library that contains the primitive data types (such as <xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.Int32>, and <xref:System.UInt64>) used in application development.  
+- Provides a library that contains the primitive data types (such as <xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.Int32>, and <xref:System.UInt64>) used in application development.  
   
  This topic contains the following sections:  
   
--   [Types in .NET](#types_in_the_net_framework)  
+- [Types in .NET](#types_in_the_net_framework)  
   
--   [Type Definitions](#type_definitions)  
+- [Type Definitions](#type_definitions)  
   
--   [Type Members](#type_members)  
+- [Type Members](#type_members)  
   
--   [Characteristics of Type Members](#characteristics_of_type_members)  
+- [Characteristics of Type Members](#characteristics_of_type_members)  
   
 <a name="types_in_the_net_framework"></a>   
 ## Types in .NET  
@@ -51,15 +51,15 @@ The common type system defines how types are declared, used, and managed in the 
   
  The common type system in .NET supports the following five categories of types:  
   
--   [Classes](#Classes)  
+- [Classes](#Classes)  
   
--   [Structures](#Structures)  
+- [Structures](#Structures)  
   
--   [Enumerations](#Enumerations)  
+- [Enumerations](#Enumerations)  
   
--   [Interfaces](#Interfaces)  
+- [Interfaces](#Interfaces)  
   
--   [Delegates](#Delegates)  
+- [Delegates](#Delegates)  
   
 <a name="Classes"></a>   
 ### Classes  
@@ -100,13 +100,13 @@ The common type system defines how types are declared, used, and managed in the 
   
  The following additional restrictions apply to enumerations:  
   
--   They cannot define their own methods.  
+- They cannot define their own methods.  
   
--   They cannot implement interfaces.  
+- They cannot implement interfaces.  
   
--   They cannot define properties or events.  
+- They cannot define properties or events.  
   
--   They cannot be generic, unless they are generic only because they are nested within a generic type. That is, an enumeration cannot have type parameters of its own.  
+- They cannot be generic, unless they are generic only because they are nested within a generic type. That is, an enumeration cannot have type parameters of its own.  
   
     > [!NOTE]
     >  Nested types (including enumerations) created with Visual Basic, C#, and C++ include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own. For more information, see "Nested Types" in the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> reference topic.  
@@ -124,13 +124,13 @@ The common type system defines how types are declared, used, and managed in the 
   
  The following restrictions apply to interfaces:  
   
--   An interface can be declared with any accessibility, but interface members must all have public accessibility.  
+- An interface can be declared with any accessibility, but interface members must all have public accessibility.  
   
--   Interfaces cannot define constructors.  
+- Interfaces cannot define constructors.  
   
--   Interfaces cannot define fields.  
+- Interfaces cannot define fields.  
   
--   Interfaces can define only instance members. They cannot define static members.  
+- Interfaces can define only instance members. They cannot define static members.  
   
  Each language must provide rules for mapping an implementation to the interface that requires the member, because more than one interface can declare a member with the same signature, and these members can have separate implementations.  
   
@@ -164,17 +164,17 @@ The common type system defines how types are declared, used, and managed in the 
 ## Type Definitions  
  A type definition includes the following:  
   
--   Any attributes defined on the type.  
+- Any attributes defined on the type.  
   
--   The type's accessibility (visibility).  
+- The type's accessibility (visibility).  
   
--   The type's name.  
+- The type's name.  
   
--   The type's base type.  
+- The type's base type.  
   
--   Any interfaces implemented by the type.  
+- Any interfaces implemented by the type.  
   
--   Definitions for each of the type's members.  
+- Definitions for each of the type's members.  
   
 ### Attributes  
  Attributes provide additional user-defined metadata. Most commonly, they are used to store additional information about a type in its assembly, or to modify the behavior of a type member in either the design-time or run-time environment.  
@@ -193,22 +193,22 @@ The common type system defines how types are declared, used, and managed in the 
   
  The accessibility domain of a nested member `M` declared in a type `T` within a program `P` is defined as follows (noting that `M` might itself be a type):  
   
--   If the declared accessibility of `M` is `public`, the accessibility domain of `M` is the accessibility domain of `T`.  
+- If the declared accessibility of `M` is `public`, the accessibility domain of `M` is the accessibility domain of `T`.  
   
--   If the declared accessibility of `M` is `protected internal`, the accessibility domain of `M` is the intersection of the accessibility domain of `T` with the program text of `P` and the program text of any type derived from `T` declared outside `P`.  
+- If the declared accessibility of `M` is `protected internal`, the accessibility domain of `M` is the intersection of the accessibility domain of `T` with the program text of `P` and the program text of any type derived from `T` declared outside `P`.  
   
--   If the declared accessibility of `M` is `protected`, the accessibility domain of `M` is the intersection of the accessibility domain of `T` with the program text of `T` and any type derived from `T`.  
+- If the declared accessibility of `M` is `protected`, the accessibility domain of `M` is the intersection of the accessibility domain of `T` with the program text of `T` and any type derived from `T`.  
   
--   If the declared accessibility of `M` is `internal`, the accessibility domain of `M` is the intersection of the accessibility domain of `T` with the program text of `P`.  
+- If the declared accessibility of `M` is `internal`, the accessibility domain of `M` is the intersection of the accessibility domain of `T` with the program text of `P`.  
   
--   If the declared accessibility of `M` is `private`, the accessibility domain of `M` is the program text of `T`.  
+- If the declared accessibility of `M` is `private`, the accessibility domain of `M` is the program text of `T`.  
   
 ### Type Names  
  The common type system imposes only two restrictions on names:  
   
--   All names are encoded as strings of Unicode (16-bit) characters.  
+- All names are encoded as strings of Unicode (16-bit) characters.  
   
--   Names are not permitted to have an embedded (16-bit) value of 0x0000.  
+- Names are not permitted to have an embedded (16-bit) value of 0x0000.  
   
  However, most languages impose additional restrictions on type names. All comparisons are done on a byte-by-byte basis, and are therefore case-sensitive and locale-independent.  
   
@@ -223,25 +223,25 @@ The common type system defines how types are declared, used, and managed in the 
 ## Type Members  
  The runtime enables you to define members of your type, which specifies the behavior and state of a type. Type members include the following:  
   
--   [Fields](#Fields)  
+- [Fields](#Fields)  
   
--   [Properties](#Properties)  
+- [Properties](#Properties)  
   
--   [Methods](#Methods)  
+- [Methods](#Methods)  
   
--   [Constructors](#Constructors)  
+- [Constructors](#Constructors)  
   
--   [Events](#Events)  
+- [Events](#Events)  
   
--   [Nested types](#NestedTypes)  
+- [Nested types](#NestedTypes)  
   
 <a name="Fields"></a>   
 ### Fields  
  A field describes and contains part of the type's state. Fields can be of any type supported by the runtime. Most commonly, fields are either `private` or `protected`, so that they are accessible only from within the class or from a derived class. If the value of a field can be modified from outside its type, a property set accessor is typically used. Publicly exposed fields are usually read-only and can be of two types:  
   
--   Constants, whose value is assigned at design time. These are static members of a class, although they are not defined using the `static` (`Shared` in Visual Basic) keyword.  
+- Constants, whose value is assigned at design time. These are static members of a class, although they are not defined using the `static` (`Shared` in Visual Basic) keyword.  
   
--   Read-only variables, whose values can be assigned in the class constructor.  
+- Read-only variables, whose values can be assigned in the class constructor.  
   
  The following example illustrates these two usages of read-only fields.  
   
@@ -306,9 +306,9 @@ The common type system defines how types are declared, used, and managed in the 
 ### Inheriting, Overriding, and Hiding Members  
  A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type. The behavior or qualities of inherited members can be modified in two ways:  
   
--   A derived type can hide an inherited member by defining a new member with the same signature. This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as `final`.  
+- A derived type can hide an inherited member by defining a new member with the same signature. This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as `final`.  
   
--   A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `final` and the new method is at least as accessible as the virtual method.  
+- A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `final` and the new method is at least as accessible as the virtual method.  
   
 ## See also
 

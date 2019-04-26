@@ -136,11 +136,11 @@ In this section, you'll add two pages and an image to the application.
 
     This page is the first page that's displayed when the application is launched. It will show a list of people to select from, to show an expense report for.
 
-2. Open *`ExpenseItHome.xaml`*.
+1. Open *`ExpenseItHome.xaml`*.
 
-3. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - Home`".
+1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - Home`".
 
-4. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
+1. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
 
     The XAML now appears as follows for Visual Basic:
 
@@ -150,9 +150,9 @@ In this section, you'll add two pages and an image to the application.
 
     [!code-xaml[ExpenseIt#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt2/ExpenseItHome.xaml#6)]
 
-4. Open *MainWindow.xaml*.
+1. Open *MainWindow.xaml*.
 
-5. Add a <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property to the <xref:System.Windows.Navigation.NavigationWindow> element and set it to "`ExpenseItHome.xaml`".
+1. Add a <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property to the <xref:System.Windows.Navigation.NavigationWindow> element and set it to "`ExpenseItHome.xaml`".
 
     This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts. 
 
@@ -169,7 +169,7 @@ In this section, you'll add two pages and an image to the application.
    >
    > ![Source property in Properties window](./media/properties-source.png)
 
-6. Add another new WPF page to the project, and name it *ExpenseReportPage.xaml*::
+1. Add another new WPF page to the project, and name it *ExpenseReportPage.xaml*::
 
    1. In **Solution Explorer**, right-click on the **`ExpenseIt`** project node and choose **Add** > **Page**.
 
@@ -177,11 +177,11 @@ In this section, you'll add two pages and an image to the application.
 
     This page will show the expense report for the person that is selected on the **`ExpenseItHome`** page.
 
-7. Open *ExpenseReportPage.xaml*.
+1. Open *ExpenseReportPage.xaml*.
 
-8. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
+1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
 
-9. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
+1. Set the `DesignHeight` and `DesignWidth` element values to 300 pixels.
 
     *ExpenseReportPage.xaml* now looks like the following in Visual Basic:
 
@@ -191,7 +191,7 @@ In this section, you'll add two pages and an image to the application.
 
     [!code-xaml[ExpenseIt#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/ExpenseReportPage.xaml#4)]
 
-10. Open *ExpenseItHome.xaml.vb* and *ExpenseReportPage.xaml.vb*, or *ExpenseItHome.xaml.cs* and *ExpenseReportPage.xaml.cs*.
+1. Open *ExpenseItHome.xaml.vb* and *ExpenseReportPage.xaml.vb*, or *ExpenseItHome.xaml.cs* and *ExpenseReportPage.xaml.cs*.
 
     When you create a new Page file, Visual Studio automatically creates its *code-behind* file. These code-behind files handle the logic for responding to user input.
 
@@ -207,7 +207,7 @@ In this section, you'll add two pages and an image to the application.
 
     [!code-vb[ExpenseIt#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]
 
-11. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/WalkthroughFirstWPFApp).
+1. Add an image named *watermark.png* to the project. You can create your own image, copy the file from the sample code, or get it [here](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/WalkthroughFirstWPFApp).
 
     1. Right-click on the project node and select **Add** > **Existing Item**, or press **Shift**+**Alt**+**A**.
 

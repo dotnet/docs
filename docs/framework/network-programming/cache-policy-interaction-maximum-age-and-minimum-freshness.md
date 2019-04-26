@@ -16,11 +16,11 @@ To help ensure that the freshest content is returned to the client application, 
   
  The following examples illustrate the cache policy that results from the interaction of the maximum age (`maxAge`) and minimum freshness (`minFresh`) values.  
   
--   If the cache policy sets `maxAge` = 2 days and `minFresh` is not specified, the content is revalidated on January 3.  
+- If the cache policy sets `maxAge` = 2 days and `minFresh` is not specified, the content is revalidated on January 3.  
   
--   If the cache policy sets `maxAge` = 2 days and `minFresh` = 1 day, according to `maxAge`, the content is fresh until January 3. According to `minFresh`, the content is fresh until January 3. Therefore, the content must be revalidated on January 3.  
+- If the cache policy sets `maxAge` = 2 days and `minFresh` = 1 day, according to `maxAge`, the content is fresh until January 3. According to `minFresh`, the content is fresh until January 3. Therefore, the content must be revalidated on January 3.  
   
--   If the cache policy sets `maxAge` = 2 days and `minFresh` = 2 days, according to `maxAge`, the content is fresh until January 3. According to `minFresh` the content is fresh until January 2. Therefore, the content must be revalidated on January 2.  
+- If the cache policy sets `maxAge` = 2 days and `minFresh` = 2 days, according to `maxAge`, the content is fresh until January 3. According to `minFresh` the content is fresh until January 2. Therefore, the content must be revalidated on January 2.  
   
 ## See also
 

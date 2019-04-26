@@ -12,35 +12,35 @@ This sample demonstrates how to implement a business process using messaging act
   
  This sample demonstrates the following features of [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]:  
   
--   <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Sequence> workflows for modeling business processes.  
+- <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Sequence> workflows for modeling business processes.  
   
--   Workflow Services.  
+- Workflow Services.  
   
--   Messaging Activities.  
+- Messaging Activities.  
   
--   Content-based correlation.  
+- Content-based correlation.  
   
--   Custom activities (declarative and code-based).  
+- Custom activities (declarative and code-based).  
   
--   System-provided SQL server persistence.  
+- System-provided SQL server persistence.  
   
--   Custom <xref:System.Activities.Persistence.PersistenceParticipant>.  
+- Custom <xref:System.Activities.Persistence.PersistenceParticipant>.  
   
--   Custom tracking.  
+- Custom tracking.  
   
--   Event Tracking for Windows (ETW) Tracking.  
+- Event Tracking for Windows (ETW) Tracking.  
   
--   Composition of activities.  
+- Composition of activities.  
   
--   <xref:System.Activities.Statements.Parallel> activities.  
+- <xref:System.Activities.Statements.Parallel> activities.  
   
--   <xref:System.Activities.Statements.CancellationScope> activity.  
+- <xref:System.Activities.Statements.CancellationScope> activity.  
   
--   Durable timers (<xref:System.Activities.Statements.Delay> activity).  
+- Durable timers (<xref:System.Activities.Statements.Delay> activity).  
   
--   Transactions.  
+- Transactions.  
   
--   More than one workflow in the same solution.  
+- More than one workflow in the same solution.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -209,7 +209,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 2. If the solution fails to build, verify the following:  
   
-    -   The reference to `ContosoHR` is not missing from the `InternalClient` or `CareersWebSite` projects.  
+    - The reference to `ContosoHR` is not missing from the `InternalClient` or `CareersWebSite` projects.  
   
 3. If the solution fails to execute, verify the following:  
   

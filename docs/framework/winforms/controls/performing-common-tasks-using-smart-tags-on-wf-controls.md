@@ -10,11 +10,11 @@ ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
 # Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls
 As you construct forms and controls for your Windows Forms application, there are many tasks you will perform repeatedly. These are some of the commonly performed tasks you will encounter:  
   
--   Adding or removing a tab on a <xref:System.Windows.Forms.TabControl>.  
+- Adding or removing a tab on a <xref:System.Windows.Forms.TabControl>.  
   
--   Docking a control to its parent.  
+- Docking a control to its parent.  
   
--   Changing the orientation of a <xref:System.Windows.Forms.SplitContainer> control.  
+- Changing the orientation of a <xref:System.Windows.Forms.SplitContainer> control.  
   
  To speed development, many controls offer smart tags, which are context-sensitive menus that allow you to perform common tasks like these in a single gesture at design time. These tasks are called *smart-tag verbs*.  
   
@@ -22,11 +22,11 @@ As you construct forms and controls for your Windows Forms application, there ar
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows Forms project  
+- Creating a Windows Forms project  
   
--   Using smart tags  
+- Using smart tags  
   
--   Enabling and Disabling Smart Tags  
+- Enabling and Disabling Smart Tags  
   
  When you are finished, you will have an understanding of the role played by these important layout features.  
   

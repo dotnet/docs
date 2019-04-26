@@ -39,11 +39,11 @@ The client and server of a network connection frequently do not have a direct an
   
  A common topology for client-server applications is to have clients that are behind a NAT without Teredo with an outbound-only firewall and a server that is directly addressable with a strong firewall. In this scenario, the TCP transport with a duplex MEP and an HTTP transport with a request-reply MEP work well. A common topology for peer-to-peer applications is to have both endpoints behind NATs and firewalls. In this scenario, and in scenarios where the network topology is unknown, consider the following recommendations:  
   
--   Do not use dual transports. A dual transport opens more connections, which reduces the chance of connecting successfully.  
+- Do not use dual transports. A dual transport opens more connections, which reduces the chance of connecting successfully.  
   
--   Support establishing back channels over the originating connection. Using back channels, such as in duplex TCP, opens fewer connections, which increases the chance of connecting successfully.  
+- Support establishing back channels over the originating connection. Using back channels, such as in duplex TCP, opens fewer connections, which increases the chance of connecting successfully.  
   
--   Employ a reachable service for either registering endpoints or relaying traffic. Using a globally reachable connection service, such as a Teredo server, greatly increases the chance of connecting successfully when the network topology is restrictive or unknown.  
+- Employ a reachable service for either registering endpoints or relaying traffic. Using a globally reachable connection service, such as a Teredo server, greatly increases the chance of connecting successfully when the network topology is restrictive or unknown.  
   
  The following tables examine the one-way, request-reply, and duplex MEPs, and the standard TCP, TCP with Teredo, and standard and dual HTTP transports in WCF.  
   

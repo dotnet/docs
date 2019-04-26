@@ -18,15 +18,15 @@ This sample demonstrates how to handle and process messages that have failed del
 
  The dead-letter queue in the `NetMsmqBinding` binding is expressed in the following properties:
 
--   <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
+- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
 
--   `None`: No dead-letter queue is required by the client.
+- `None`: No dead-letter queue is required by the client.
 
--   `System`: The system dead-letter queue is used to store dead messages. The system dead-letter queue is shared by all applications running on the computer.
+- `System`: The system dead-letter queue is used to store dead messages. The system dead-letter queue is shared by all applications running on the computer.
 
--   `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
+- `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
 
--   <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in [!INCLUDE[wv](../../../../includes/wv-md.md)].
 
  In this sample, the client sends a batch of messages to the service from within the scope of a transaction and specifies an arbitrarily low value for "time-to-live" for these messages (about 2 seconds). The client also specifies a custom dead-letter queue to use to enqueue the messages that have expired.
 

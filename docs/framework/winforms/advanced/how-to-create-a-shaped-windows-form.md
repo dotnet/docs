@@ -30,7 +30,7 @@ This example gives a form an elliptical shape that resizes with the form.
 ## Compiling the Code  
  This example requires:  
   
--   References to the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces.  
+- References to the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces.  
   
  This example overrides the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the shape of the form. To use this code, copy the method declaration as well as the drawing code inside the method.  
   

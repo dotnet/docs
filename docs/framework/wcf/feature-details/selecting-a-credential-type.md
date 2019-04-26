@@ -79,9 +79,9 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 ## How Client Credentials Are Used to Authenticate a Client to the Service  
  Client credential information required to communicate with a service is provided using either the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property or the <xref:System.ServiceModel.ChannelFactory.Credentials%2A> property. The security channel uses this information to authenticate the client to the service. Authentication is accomplished through one of two modes:  
   
--   The client credentials are used once before the first message is sent, using the WCF client instance to establish a security context. All application messages are then secured through the security context.  
+- The client credentials are used once before the first message is sent, using the WCF client instance to establish a security context. All application messages are then secured through the security context.  
   
--   The client credentials are used to authenticate every application message sent to the service. In this case, no context is established between the client and the service.  
+- The client credentials are used to authenticate every application message sent to the service. In this case, no context is established between the client and the service.  
   
 ### Established Identities Cannot Be Changed  
  When the first method is used, the established context is permanently associated with the client identity. That is, once the security context has been established, the identity associated with the client cannot be changed.  

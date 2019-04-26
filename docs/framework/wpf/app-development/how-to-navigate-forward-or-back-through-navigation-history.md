@@ -15,11 +15,11 @@ This example illustrates how to navigate forward or back to entries in navigatio
 ## Example  
  Code that runs from content in the following hosts can navigate forward or back through navigation history, one entry at a time.  
   
--   <xref:System.Windows.Navigation.NavigationWindow> using <xref:System.Windows.Navigation.NavigationService>  
+- <xref:System.Windows.Navigation.NavigationWindow> using <xref:System.Windows.Navigation.NavigationService>  
   
--   <xref:System.Windows.Controls.Frame> using <xref:System.Windows.Navigation.NavigationService>  
+- <xref:System.Windows.Controls.Frame> using <xref:System.Windows.Navigation.NavigationService>  
   
--   [!INCLUDE[TLA#tla_iegeneric](../../../../includes/tlasharptla-iegeneric-md.md)]  
+- [!INCLUDE[TLA#tla_iegeneric](../../../../includes/tlasharptla-iegeneric-md.md)]  
   
  Before you can navigate forward one entry, you must first check that there are entries in forward navigation history by inspecting the **CanGoForward** property. To navigate forward one entry, you call the **GoForward** method. This is illustrated in the following example:  
   

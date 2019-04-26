@@ -38,11 +38,11 @@ By default, the client library does not supply credentials when sending a reques
 ## .NET Framework Security  
  The following security considerations apply to the example in this topic:  
   
--   To verify that the credentials supplied in this sample work, the Northwind data service must use an authentication scheme other than anonymous access. Otherwise, the Web site hosting the data service will not request credentials.  
+- To verify that the credentials supplied in this sample work, the Northwind data service must use an authentication scheme other than anonymous access. Otherwise, the Web site hosting the data service will not request credentials.  
   
--   User credentials should only be requested during execution and should not be cached. Credentials must always be stored securely.  
+- User credentials should only be requested during execution and should not be cached. Credentials must always be stored securely.  
   
--   Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary. Additionally, basic authentication credentials (user name and password) are sent in cleartext and can be intercepted.  
+- Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary. Additionally, basic authentication credentials (user name and password) are sent in cleartext and can be intercepted.  
   
  For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md).  
   

@@ -24,11 +24,11 @@ This topic discusses how to create custom encoders.
   
  WCF provides the following types of binding elements derived from the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class that can provide for text, binary and Message Transmission Optimization Mechanism (MTOM) encoding:  
   
--   <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>: The most interoperable, but the least efficient encoder for XML messages. A Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
+- <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>: The most interoperable, but the least efficient encoder for XML messages. A Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is not efficient.  
   
--   <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for binary-based XML messages. This is most efficient of the encoding options, but the least interoperable, because it is only supported by WCF endpoints.  
+- <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for binary-based XML messages. This is most efficient of the encoding options, but the least interoperable, because it is only supported by WCF endpoints.  
   
--   <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
+- <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>: Represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
   
  The binding element creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory>. The factory creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory> instance. Typically, there is only a single instance. However if sessions are used, a different encoder may be provided to each session. The Binary encoder makes use of this to coordinate dynamic dictionaries (see XML Infrastructure).  
   
@@ -63,19 +63,19 @@ This topic discusses how to create custom encoders.
 ## Writing your own Encoder  
  To implement your own custom message encoder, you must provide custom implementations of the following abstract base classes:  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder>  
+- <xref:System.ServiceModel.Channels.MessageEncoder>  
   
--   <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
+- <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
   
--   <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
   
  Converting from the in-memory representation of a message to a representation that can be written to a stream is encapsulated within the <xref:System.ServiceModel.Channels.MessageEncoder> class, which serves as a factory for XML readers and XML writers that support specific types of XML encodings.  
   
--   The key methods of this class that you must override are:  
+- The key methods of this class that you must override are:  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> which takes a <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> object and writes it into a <xref:System.IO.Stream> object.  
+- <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> which takes a <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> object and writes it into a <xref:System.IO.Stream> object.  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> which takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
+- <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> which takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
   
  It is the code you write in these methods that handles conversion between the standard transport protocol, and your customized encoding.  
   

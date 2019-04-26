@@ -31,13 +31,13 @@ A lookup table is a table of data that has a column that displays data from reco
   
  Four important properties are set on the [ComboBox Control](combobox-control-windows-forms.md) control to create the lookup table.  
   
--   The <xref:System.Windows.Forms.ComboBox.DataSource%2A> property contains the name of the table.  
+- The <xref:System.Windows.Forms.ComboBox.DataSource%2A> property contains the name of the table.  
   
--   The <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property contains the data column of that table that you want to display for the control text (the customer's name).  
+- The <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property contains the data column of that table that you want to display for the control text (the customer's name).  
   
--   The <xref:System.Windows.Forms.ListControl.ValueMember%2A> property contains the data column of that table with the stored information (the ID number in the parent table).  
+- The <xref:System.Windows.Forms.ListControl.ValueMember%2A> property contains the data column of that table with the stored information (the ID number in the parent table).  
   
--   The <xref:System.Windows.Forms.ListControl.SelectedValue%2A> property provides the lookup value for the child table, based on the <xref:System.Windows.Forms.ListControl.ValueMember%2A>.  
+- The <xref:System.Windows.Forms.ListControl.SelectedValue%2A> property provides the lookup value for the child table, based on the <xref:System.Windows.Forms.ListControl.ValueMember%2A>.  
   
  The procedures below show you how to lay out your form as a lookup table and bind data to the controls on it. To successfully complete the procedures, you must have a data source with parent and child tables that have a foreign-key relationship, as mentioned previously.  
   

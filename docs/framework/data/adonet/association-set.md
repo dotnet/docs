@@ -10,11 +10,11 @@ An *association set* is a logical container for [association](../../../../docs/f
   
  A definition for an association set contains the following information:  
   
--   The association set name. (Required)  
+- The association set name. (Required)  
   
--   The association of which it will contain instances. (Required)  
+- The association of which it will contain instances. (Required)  
   
--   Two [association set ends](../../../../docs/framework/data/adonet/association-set-end.md).  
+- Two [association set ends](../../../../docs/framework/data/adonet/association-set-end.md).  
   
 ## Example  
  The diagram below shows a conceptual model with two associations: `PublishedBy`, and `WrittenBy`. Although information about association sets is not conveyed in the diagram, the next diagram shows an example of association sets and entity sets based on this model.  

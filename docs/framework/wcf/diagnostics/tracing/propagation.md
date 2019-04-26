@@ -20,11 +20,11 @@ This topic describes activity propagation in the Windows Communication Foundatio
 ## Propagation Definition  
  Activity M’s gAId is propagated to activity N if all of the following conditions apply.  
   
--   N is created because of M  
+- N is created because of M  
   
--   M’s gAId is known to N  
+- M’s gAId is known to N  
   
--   N's gAId is equal to M’s gAId.  
+- N's gAId is equal to M’s gAId.  
   
  The gAId is propagated through the ActivityId message header, as illustrated in the following XML schema.  
   

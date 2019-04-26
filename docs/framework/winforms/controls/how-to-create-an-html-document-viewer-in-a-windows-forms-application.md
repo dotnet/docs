@@ -28,9 +28,9 @@ You can use the <xref:System.Windows.Forms.WebBrowser> control to display and pr
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
+- A <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
   
--   References to the `System` and `System.Windows.Forms` assemblies.  
+- References to the `System` and `System.Windows.Forms` assemblies.  
   
 ## See also
 

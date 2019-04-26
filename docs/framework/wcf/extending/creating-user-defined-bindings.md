@@ -8,11 +8,11 @@ ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
 # Creating User-Defined Bindings
 There are several ways to create bindings not provided by the system:  
   
--   Create a custom binding, based on the <xref:System.ServiceModel.Channels.CustomBinding> class, which is a container that you fill with binding elements. The custom binding is then added to a service endpoint. You can create the custom binding either programmatically or in an application configuration file. To use a binding element from an application configuration file, the binding element must extend <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>. For more information about custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md) and <xref:System.ServiceModel.Channels.CustomBinding>.  
+- Create a custom binding, based on the <xref:System.ServiceModel.Channels.CustomBinding> class, which is a container that you fill with binding elements. The custom binding is then added to a service endpoint. You can create the custom binding either programmatically or in an application configuration file. To use a binding element from an application configuration file, the binding element must extend <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>. For more information about custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md) and <xref:System.ServiceModel.Channels.CustomBinding>.  
   
--   You can create a class that derives from a standard binding. For example, you can derive a class from <xref:System.ServiceModel.WSHttpBinding> and override <xref:System.ServiceModel.Channels.CustomBinding.CreateBindingElements%2A> method to obtain the binding elements and insert a custom binding element or establish a particular value for security.  
+- You can create a class that derives from a standard binding. For example, you can derive a class from <xref:System.ServiceModel.WSHttpBinding> and override <xref:System.ServiceModel.Channels.CustomBinding.CreateBindingElements%2A> method to obtain the binding elements and insert a custom binding element or establish a particular value for security.  
   
--   You can create a new <xref:System.ServiceModel.Channels.Binding> type to completely control the entire binding implementation.  
+- You can create a new <xref:System.ServiceModel.Channels.Binding> type to completely control the entire binding implementation.  
   
 ## The Order of Binding Elements  
  Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channels and listeners necessary to build outgoing and incoming channel stacks.  

@@ -30,7 +30,7 @@ Implement the <xref:System.ComponentModel.IListSource> interface to create a bin
 ## Compiling the Code  
  This example requires:  
   
--   References to the System.Drawing and System.Windows.Forms assemblies.  
+- References to the System.Drawing and System.Windows.Forms assemblies.  
   
 ## See also
 

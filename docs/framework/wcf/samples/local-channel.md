@@ -12,9 +12,9 @@ Local Channel is a Windows Communication Foundation (WCF) transport channel that
 ## Discussion  
  The sample consists of two project files:  
   
--   **LocalChannel**: The programmatic representation of the local channel within the current application domain. In this project, the sending component places the message in an in-memory queue and the receiving component de-queues the message to receive it.  
+- **LocalChannel**: The programmatic representation of the local channel within the current application domain. In this project, the sending component places the message in an in-memory queue and the receiving component de-queues the message to receive it.  
   
--   **ClientAndService**: This project hosts a service in a console application and then runs a client to call the service from within the same application domain.  
+- **ClientAndService**: This project hosts a service in a console application and then runs a client to call the service from within the same application domain.  
   
  The local channel design skips both the channel stack and the serialization process to increase speed. The local transport channel is implemented using a queue to transport service calls from the client to the service and to return back the value to the client. Rather than serializing parameters and return values, the sample copies the objects.  
   

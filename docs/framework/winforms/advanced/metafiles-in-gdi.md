@@ -16,11 +16,11 @@ ms.assetid: 51da872c-c783-440f-8bf6-1e580a966c31
 ## Metafile Formats  
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can display metafiles that have been stored in the following formats:  
   
--   Windows Metafile (WMF)  
+- Windows Metafile (WMF)  
   
--   Enhanced Metafile (EMF)  
+- Enhanced Metafile (EMF)  
   
--   EMF+  
+- EMF+  
   
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can record metafiles in the EMF and EMF+ formats, but not in the WMF format.  
   

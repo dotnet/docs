@@ -13,22 +13,22 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  Mitigations include:  
   
--   Derive from the <xref:System.Xml.NameTable> class and enforce a maximum size quota. (You cannot prevent the use of a <xref:System.Xml.NameTable> or switch the <xref:System.Xml.NameTable> when it is full.)  
+- Derive from the <xref:System.Xml.NameTable> class and enforce a maximum size quota. (You cannot prevent the use of a <xref:System.Xml.NameTable> or switch the <xref:System.Xml.NameTable> when it is full.)  
   
--   Avoid using the properties mentioned and instead use the <xref:System.Xml.XmlReader.MoveToAttribute%2A> method with the <xref:System.Xml.XmlReader.IsStartElement%2A> method where possible; those methods do not return strings and thus avoid the problem of overfilling the <xref:System.Xml.NameTable> collection.  
+- Avoid using the properties mentioned and instead use the <xref:System.Xml.XmlReader.MoveToAttribute%2A> method with the <xref:System.Xml.XmlReader.IsStartElement%2A> method where possible; those methods do not return strings and thus avoid the problem of overfilling the <xref:System.Xml.NameTable> collection.  
   
 ## Malicious Client Sends Excessive License Requests to Service  
  If a malicious client bombards a service with excessive license requests, it can cause the server to use excessive memory.  
   
  Mitigation: Use the following properties of the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> class:  
   
--   <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxCachedCookies%2A>: controls the maximum number of time-bounded `SecurityContextToken`s that the server caches after `SPNego` or `SSL` negotiation.  
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxCachedCookies%2A>: controls the maximum number of time-bounded `SecurityContextToken`s that the server caches after `SPNego` or `SSL` negotiation.  
   
--   <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.IssuedCookieLifetime%2A>: controls the lifetime of the `SecurityContextTokens` that the server issues following `SPNego` or `SSL` negotiation. The server caches the `SecurityContextToken`s for this period of time.  
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.IssuedCookieLifetime%2A>: controls the lifetime of the `SecurityContextTokens` that the server issues following `SPNego` or `SSL` negotiation. The server caches the `SecurityContextToken`s for this period of time.  
   
--   <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxPendingSessions%2A>: controls the maximum number of secure conversations that are established at the server but for which no application messages have been processed. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state per client, but never using them.  
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxPendingSessions%2A>: controls the maximum number of secure conversations that are established at the server but for which no application messages have been processed. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state per client, but never using them.  
   
--   <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.InactivityTimeout%2A>:  controls the maximum time the service keeps a secure conversation alive without receiving an application message from the client for the conversation. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state per client, but never using them.  
+- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.InactivityTimeout%2A>:  controls the maximum time the service keeps a secure conversation alive without receiving an application message from the client for the conversation. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state per client, but never using them.  
   
 ## WSDualHttpBinding or Dual Custom Bindings Require Client Authentication  
  By default, the <xref:System.ServiceModel.WSDualHttpBinding> has security enabled. It is possible, however, that if the client authentication is disabled by setting the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property to <xref:System.ServiceModel.MessageCredentialType.None>, a malicious user can cause a denial of service attack on a third service. This can occur because a malicious client can direct the service to send a stream of messages to a third service.  

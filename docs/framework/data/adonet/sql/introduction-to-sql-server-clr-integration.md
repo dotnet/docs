@@ -14,7 +14,7 @@ The common language runtime (CLR) is the heart of the Microsoft .NET Framework a
   
  **SQL Server Books Online**  
   
--   [Common Language Runtime (CLR) Integration Overview](https://go.microsoft.com/fwlink/?LinkId=115242)  
+- [Common Language Runtime (CLR) Integration Overview](https://go.microsoft.com/fwlink/?LinkId=115242)  
   
 ## Enabling CLR Integration  
  The common language runtime (CLR) integration feature is off by default in Microsoft SQL Server, and must be enabled in order to use objects that are implemented using CLR integration. To enable CLR integration using Transact-SQL, use the `clr enabled` option of the `sp_configure` stored procedure as shown:  
@@ -32,7 +32,7 @@ GO
   
  **SQL Server Books Online**  
   
--   [Enabling CLR Integration](https://go.microsoft.com/fwlink/?LinkId=115230)  
+- [Enabling CLR Integration](https://go.microsoft.com/fwlink/?LinkId=115230)  
   
 ## Deploying a CLR Assembly  
  Once the CLR methods have been tested and verified on the test server, they can be distributed to production servers using a deployment script. The deployment script can be generated manually, or by using SQL Server Management Studio. For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
@@ -48,7 +48,7 @@ GO
   
  **SQL Server Books Online**  
   
--   [CLR Integration Security](https://go.microsoft.com/fwlink/?LinkId=115234)  
+- [CLR Integration Security](https://go.microsoft.com/fwlink/?LinkId=115234)  
   
 ## Debugging a CLR Assembly  
  Microsoft SQL Server provides support for debugging Transact-SQL and common language runtime (CLR) objects in the database. Debugging works across languages: users can step seamlessly into CLR objects from Transact-SQL, and vice versa.  
@@ -57,7 +57,7 @@ GO
   
  **SQL Server Books Online**  
   
--   [Debugging CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115236)  
+- [Debugging CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115236)  
   
 ## See also
 

@@ -14,19 +14,19 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
 ## Custom Classes in Applications or Assemblies  
  Custom classes that are used in XAML can be defined in two distinct ways: within the code-behind or other code that produces the primary [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application, or as a class in a separate assembly, such as an executable or DLL used as a class library. Each of these approaches has particular advantages and disadvantages.  
   
--   The advantage of creating a class library is that any such custom classes can be shared across many different possible applications. A separate library also makes versioning issues of applications easier to control, and simplifies creating a class where the intended class usage is as a root element on a XAML page.  
+- The advantage of creating a class library is that any such custom classes can be shared across many different possible applications. A separate library also makes versioning issues of applications easier to control, and simplifies creating a class where the intended class usage is as a root element on a XAML page.  
   
--   The advantage of defining the custom classes in the application is that this technique is relatively lightweight and minimizes the deployment and testing issues encountered when you introduce separate assemblies beyond the main application executable.  
+- The advantage of defining the custom classes in the application is that this technique is relatively lightweight and minimizes the deployment and testing issues encountered when you introduce separate assemblies beyond the main application executable.  
   
--   Whether defined in the same or different assembly, custom classes need to be mapped between CLR  namespace and XML  namespace in order to be used in XAML as elements. See [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+- Whether defined in the same or different assembly, custom classes need to be mapped between CLR  namespace and XML  namespace in order to be used in XAML as elements. See [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 <a name="Requirements_for_a_Custom_Class_as_a_XAML_Element"></a>   
 ## Requirements for a Custom Class as a XAML Element  
  In order to be able to be instantiated as an object element, your class must meet the following requirements:  
   
--   Your custom class must be public and support a default (parameterless) public constructor. (See following section for notes regarding structures.)  
+- Your custom class must be public and support a default (parameterless) public constructor. (See following section for notes regarding structures.)  
   
--   Your custom class must not be a nested class. Nested classes and the "dot" in their general CLR usage syntax interfere with other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and/or XAML features such as attached properties.  
+- Your custom class must not be a nested class. Nested classes and the "dot" in their general CLR usage syntax interfere with other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and/or XAML features such as attached properties.  
   
  In addition to enabling object element syntax, your object definition also enables property element syntax for any other public properties that take that object as the value type. This is because the object can now be instantiated as an object element and can fill the property element value of such a property.  
   
@@ -69,19 +69,19 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
 ## Writing Collection Properties  
  Properties that take a collection type have a XAML syntax that enables you to specify objects that are added to the collection. This syntax has two notable features.  
   
--   The object that is the collection object does not need to be specified in object element syntax. The presence of that collection type is implicit whenever you specify a property in XAML that takes a collection type.  
+- The object that is the collection object does not need to be specified in object element syntax. The presence of that collection type is implicit whenever you specify a property in XAML that takes a collection type.  
   
--   Child elements of the collection property in markup are processed to become members of the collection. Ordinarily, the code access to the members of a collection is performed through list/dictionary methods such as `Add`, or through an indexer. But XAML syntax does not support methods or indexers (exception: XAML 2009 can support methods, but using XAML 2009 restricts the possible WPF usages; see [XAML 2009 Language Features](../../xaml-services/xaml-2009-language-features.md)). Collections are obviously a very common requirement for building a tree of elements, and you need some way to populate these collections in declarative XAML. Therefore, child elements of a collection property are processed by adding them to the collection that is the collection property type value.  
+- Child elements of the collection property in markup are processed to become members of the collection. Ordinarily, the code access to the members of a collection is performed through list/dictionary methods such as `Add`, or through an indexer. But XAML syntax does not support methods or indexers (exception: XAML 2009 can support methods, but using XAML 2009 restricts the possible WPF usages; see [XAML 2009 Language Features](../../xaml-services/xaml-2009-language-features.md)). Collections are obviously a very common requirement for building a tree of elements, and you need some way to populate these collections in declarative XAML. Therefore, child elements of a collection property are processed by adding them to the collection that is the collection property type value.  
   
  The .NET Framework XAML Services implementation and thus the WPF XAML processor uses the following definition for what constitutes a collection property. The property type of the property must implement one of the following:  
   
--   Implements <xref:System.Collections.IList>.  
+- Implements <xref:System.Collections.IList>.  
   
--   Implements <xref:System.Collections.IDictionary> or the generic equivalent (<xref:System.Collections.Generic.IDictionary%602>).  
+- Implements <xref:System.Collections.IDictionary> or the generic equivalent (<xref:System.Collections.Generic.IDictionary%602>).  
   
--   Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).)  
+- Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).)  
   
--   Implements <xref:System.Windows.Markup.IAddChild> (an interface defined by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]).  
+- Implements <xref:System.Windows.Markup.IAddChild> (an interface defined by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]).  
   
  Each of these types in CLR has an `Add` method, which is used by the XAML processor to add items to the underlying collection when creating the object graph.  
   

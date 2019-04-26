@@ -18,7 +18,7 @@ ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
 <a name="Implementation_Guidelines_and_Conventions"></a>   
 ## Implementation Guidelines and Conventions  
   
--   For related grid item functionality, see [Implementing the UI Automation GridItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-griditem-control-pattern.md).  
+- For related grid item functionality, see [Implementing the UI Automation GridItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-griditem-control-pattern.md).  
   
 <a name="Required_Members_for_ITableItemProvider"></a>   
 ## Required Members for ITableItemProvider  

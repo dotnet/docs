@@ -11,13 +11,13 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
 ## General Migration Considerations  
  The following considerations apply when you migrate any application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:  
   
--   Any application that uses the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 can be migrated to the Entity Framework, as long as the data provider for the data source that is used by the application supports the Entity Framework.  
+- Any application that uses the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 can be migrated to the Entity Framework, as long as the data provider for the data source that is used by the application supports the Entity Framework.  
   
--   The Entity Framework may not support all the functionality of a data source provider, even if that provider supports the Entity Framework.  
+- The Entity Framework may not support all the functionality of a data source provider, even if that provider supports the Entity Framework.  
   
--   For a large or complex application, you are not required to migrate the whole application to the Entity Framework at one time. However, any part of the application that does not use the Entity Framework must still be changed when the data source changes.  
+- For a large or complex application, you are not required to migrate the whole application to the Entity Framework at one time. However, any part of the application that does not use the Entity Framework must still be changed when the data source changes.  
   
--   The data provider connection used by the Entity Framework can be shared with other parts of your application because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers to access the data source. For example, the SqlClient provider is used by the Entity Framework to access a SQL Server database. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
+- The data provider connection used by the Entity Framework can be shared with other parts of your application because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers to access the data source. For example, the SqlClient provider is used by the Entity Framework to access a SQL Server database. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
   
 ## Common Migration Tasks  
  The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  

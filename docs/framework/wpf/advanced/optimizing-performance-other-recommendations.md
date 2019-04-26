@@ -17,17 +17,17 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
  This topic contains the following sections:  
   
--   [Opacity on Brushes Versus Opacity on Elements](#Opacity)  
+- [Opacity on Brushes Versus Opacity on Elements](#Opacity)  
   
--   [Navigation to Object](#Navigation_Objects)  
+- [Navigation to Object](#Navigation_Objects)  
   
--   [Hit Testing on Large 3D Surfaces](#Hit_Testing)  
+- [Hit Testing on Large 3D Surfaces](#Hit_Testing)  
   
--   [CompositionTarget.Rendering Event](#CompositionTarget_Rendering_Event)  
+- [CompositionTarget.Rendering Event](#CompositionTarget_Rendering_Event)  
   
--   [Avoid Using ScrollBarVisibility=Auto](#Avoid_Using_ScrollBarVisibility)  
+- [Avoid Using ScrollBarVisibility=Auto](#Avoid_Using_ScrollBarVisibility)  
   
--   [Configure Font Cache Service to Reduce Start-up Time](#FontCache)  
+- [Configure Font Cache Service to Reduce Start-up Time](#FontCache)  
   
 <a name="Opacity"></a>   
 ## Opacity on Brushes Versus Opacity on Elements  

@@ -20,9 +20,9 @@ A service's *endpoint identity* is a value generated from the service Web Servic
   
  Identity processing consists of the following stages:  
   
--   At design time, the client developer determines the service's identity from the endpoint's metadata (exposed through WSDL).  
+- At design time, the client developer determines the service's identity from the endpoint's metadata (exposed through WSDL).  
   
--   At runtime, the client application checks the claims of the service's security credentials before sending any messages to the service.  
+- At runtime, the client application checks the claims of the service's security credentials before sending any messages to the service.  
   
  Identity processing on the client is analogous to client authentication on the service. A secure service does not execute code until the client's credentials have been authenticated. Likewise, the client does not send messages to the service until the service's credentials have been authenticated based on what is known in advance from the service's metadata.  
   
@@ -72,21 +72,21 @@ A service's *endpoint identity* is a value generated from the service Web Servic
   
  If the channel is configured to authenticate using message- or transport-level Secure Sockets Layer (SSL) with X.509 certificates for authentication, the following identity values are valid:  
   
--   DNS. WCF ensures that the certificate provided during the SSL handshake contains a DNS or `CommonName` (CN) attribute equal to the value specified in the DNS identity on the client. Note that these checks are done in addition to determining the validity of the server certificate. By default, WCF validates that the server certificate is issued by a trusted root authority.  
+- DNS. WCF ensures that the certificate provided during the SSL handshake contains a DNS or `CommonName` (CN) attribute equal to the value specified in the DNS identity on the client. Note that these checks are done in addition to determining the validity of the server certificate. By default, WCF validates that the server certificate is issued by a trusted root authority.  
   
--   Certificate. During the SSL handshake, WCF ensures that the remote endpoint provides the exact certificate value specified in the identity.  
+- Certificate. During the SSL handshake, WCF ensures that the remote endpoint provides the exact certificate value specified in the identity.  
   
--   Certificate Reference. Same as Certificate.  
+- Certificate Reference. Same as Certificate.  
   
--   RSA. During the SSL handshake, WCF ensures that the remote endpoint provides the exact RSA key specified in the identity.  
+- RSA. During the SSL handshake, WCF ensures that the remote endpoint provides the exact RSA key specified in the identity.  
   
  If the service authenticates using message- or transport-level SSL with a Windows credential for authentication, and negotiates the credential, the following identity values are valid:  
   
--   DNS. The negotiation passes the service's SPN so that the DNS name can be checked. The SPN is in the form `host/<dns name>`.  
+- DNS. The negotiation passes the service's SPN so that the DNS name can be checked. The SPN is in the form `host/<dns name>`.  
   
--   SPN. An explicit service SPN is returned, for example, `host/myservice`.  
+- SPN. An explicit service SPN is returned, for example, `host/myservice`.  
   
--   UPN. The UPN of the service account. The UPN is in the form `username`@`domain`. For example, when the service is running in a user account, it may be `username@contoso.com`.  
+- UPN. The UPN of the service account. The UPN is in the form `username`@`domain`. For example, when the service is running in a user account, it may be `username@contoso.com`.  
   
  Specifying the identity programmatically (using the <xref:System.ServiceModel.EndpointAddress.Identity%2A> property) is optional. If no identity is specified, and the client credential type is Windows, the default is SPN with the value set to the hostname part of the service endpoint address prefixed with the "host/" literal. If no identity is specified, and the client credential type is a certificate, the default is `Certificate`. This applies to both message- and transport-level security.  
   

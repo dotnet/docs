@@ -49,7 +49,7 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
   
 ### To return the numeric value  
   
--   Access the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property in code.  
+- Access the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property in code.  
   
     ```vb  
     If NumericUpDown1.Value >= 65 Then  

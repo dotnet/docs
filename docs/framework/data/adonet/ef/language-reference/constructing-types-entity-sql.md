@@ -15,9 +15,9 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  The following rules apply to expression aliasing in a row constructor:  
   
--   Expressions in a row constructor cannot refer to other aliases in the same constructor.  
+- Expressions in a row constructor cannot refer to other aliases in the same constructor.  
   
--   Two expressions in the same row constructor cannot have the same alias.  
+- Two expressions in the same row constructor cannot have the same alias.  
   
  For more information about row constructors, see [ROW](../../../../../../docs/framework/data/adonet/ef/language-reference/row-entity-sql.md).  
   

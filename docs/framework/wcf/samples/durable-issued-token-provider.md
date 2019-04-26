@@ -9,21 +9,21 @@ This sample demonstrates how to implement a custom client issued token provider.
 ## Discussion  
  A token provider in Windows Communication Foundation (WCF) is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with a [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
   
--   If you have a credential store that the built-in token provider cannot operate with.  
+- If you have a credential store that the built-in token provider cannot operate with.  
   
--   If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client uses the credentials.  
+- If you want to provide your own custom mechanism for transforming the credentials from the point when the user provides the details to when the WCF client uses the credentials.  
   
--   If you are building a custom token.  
+- If you are building a custom token.  
   
  This sample shows how to build a custom token provider that caches tokens issued by a Security Token Service (STS).  
   
  To summarize, this sample demonstrates the following:  
   
--   How a client can be configured with a custom token provider.  
+- How a client can be configured with a custom token provider.  
   
--   How issued tokens can be cached and provided to the WCF client.  
+- How issued tokens can be cached and provided to the WCF client.  
   
--   How the server is authenticated by the client using the server's X.509 certificate.  
+- How the server is authenticated by the client using the server's X.509 certificate.  
   
  This sample consists of a client console program (Client.exe), a security token service console program (Securitytokenservice.exe) and a service console program (Service.exe). The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (add, subtract, multiply, and divide). The client gets a security token from the Security Token Service (STS) and makes synchronous requests to the service for a given math operation and the service replies with the result. Client activity is visible in the console window.  
   

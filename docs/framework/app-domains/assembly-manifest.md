@@ -22,15 +22,15 @@ Every assembly, whether static or dynamic, contains a collection of data that de
   
  Each assembly's manifest performs the following functions:  
   
--   Enumerates the files that make up the assembly.  
+- Enumerates the files that make up the assembly.  
   
--   Governs how references to the assembly's types and resources map to the files that contain their declarations and implementations.  
+- Governs how references to the assembly's types and resources map to the files that contain their declarations and implementations.  
   
--   Enumerates other assemblies on which the assembly depends.  
+- Enumerates other assemblies on which the assembly depends.  
   
--   Provides a level of indirection between consumers of the assembly and the assembly's implementation details.  
+- Provides a level of indirection between consumers of the assembly and the assembly's implementation details.  
   
--   Renders the assembly self-describing.  
+- Renders the assembly self-describing.  
   
 ## Assembly Manifest Contents  
  The following table shows the information contained in the assembly manifest. The first four items—the assembly name, version number, culture, and strong name information—make up the assembly's identity.  

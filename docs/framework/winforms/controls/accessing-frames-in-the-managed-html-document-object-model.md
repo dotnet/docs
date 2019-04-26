@@ -15,11 +15,11 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
   
  HTML authors can create frames in one of two ways:  
   
--   Using the `FRAMESET` and `FRAME` tags, which create fixed windows.  
+- Using the `FRAMESET` and `FRAME` tags, which create fixed windows.  
   
  -or-  
   
--   Using the `IFRAME` tag, which creates a floating window that can be repositioned at run time.  
+- Using the `IFRAME` tag, which creates a floating window that can be repositioned at run time.  
   
 1. Because frames contain HTML documents, they are represented in the Document Object Model (DOM) as both window elements and frame elements.  
   

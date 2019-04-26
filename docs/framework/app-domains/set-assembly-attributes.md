@@ -16,13 +16,13 @@ ms.author: "ronpet"
 # Setting Assembly Attributes
 Assembly attributes are values that provide information about an assembly. The attributes are divided into the following sets of information:  
   
--   Assembly identity attributes.  
+- Assembly identity attributes.  
   
--   Informational attributes.  
+- Informational attributes.  
   
--   Assembly manifest attributes.  
+- Assembly manifest attributes.  
   
--   Strong name attributes.  
+- Strong name attributes.  
   
 ## Assembly Identity Attributes  
  Three attributes, together with a strong name (if applicable), determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when referencing the assembly in code. You can use attributes to set an assembly's version and culture. The compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) sets the name value when the assembly is created, based on the file containing the assembly manifest.  

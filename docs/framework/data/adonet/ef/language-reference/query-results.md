@@ -9,13 +9,13 @@ ms.assetid: bcd7b699-4e50-4523-8c33-2f54a103d94e
 # Query Results
 After a [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] query is converted to command trees and executed, the query results are usually returned as one of the following:  
   
--   A collection of zero or more typed entity objects or a projection of complex types in the conceptual model.  
+- A collection of zero or more typed entity objects or a projection of complex types in the conceptual model.  
   
--   CLR types supported by the conceptual model.  
+- CLR types supported by the conceptual model.  
   
--   Inline collections.  
+- Inline collections.  
   
--   Anonymous types.  
+- Anonymous types.  
   
  When the query has executed against the data source, the results are materialized into CLR types and returned to the client. All object materialization is performed by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. Any errors that result from an inability to map between the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] and the CLR will cause exceptions to be thrown during object materialization.  
   

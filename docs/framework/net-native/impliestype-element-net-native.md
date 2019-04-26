@@ -69,9 +69,9 @@ Applies policy to a type, if that policy has been applied to the containing type
 ## Remarks  
  The `<ImpliesType>` element is primarily intended for use by libraries. It addresses the following scenario:  
   
--   If a routine needs to reflect on one type, it necessarily needs to reflect on a second type.  
+- If a routine needs to reflect on one type, it necessarily needs to reflect on a second type.  
   
--   The metadata for the implied instantiation of the second type is otherwise unavailable, because static analysis doesn't indicate that it's necessary.  
+- The metadata for the implied instantiation of the second type is otherwise unavailable, because static analysis doesn't indicate that it's necessary.  
   
  Most commonly, the two types are generic instantiations with shared type arguments.  
   

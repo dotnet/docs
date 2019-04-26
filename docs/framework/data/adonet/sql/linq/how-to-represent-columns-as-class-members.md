@@ -11,7 +11,7 @@ Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xre
   
 ### To map a field or property to a database column  
   
--   Add the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to the property or field declaration.  
+- Add the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to the property or field declaration.  
   
 ## Example  
  The following code maps the `CustomerID` field in the `Customer` class to the `CustomerID` column in the `Customers` database table.  

@@ -11,15 +11,15 @@ When implementing a service, you define a number of contracts that describe the 
   
  <xref:System.ServiceModel.Activities.Receive> Activity  
   
--   <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>  
+- <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>  
   
--   <xref:System.ServiceModel.Activities.Receive.OperationName%2A>
+- <xref:System.ServiceModel.Activities.Receive.OperationName%2A>
   
--   <xref:System.ServiceModel.Activities.Receive.Action%2A>   
+- <xref:System.ServiceModel.Activities.Receive.Action%2A>   
  
  <xref:System.ServiceModel.Activities.SendReply> Activity  
   
--   <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
+- <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
   
  <xref:System.ServiceModel.Activities.TransactedReceiveScope> Activity  
   

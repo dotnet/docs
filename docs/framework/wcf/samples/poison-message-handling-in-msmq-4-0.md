@@ -21,13 +21,13 @@ This sample demonstrates how to perform poison message handling in a service. Th
 
  Once the message is marked as poisoned, the message is dealt with according to the settings in the <xref:System.ServiceModel.MsmqBindingBase.ReceiveErrorHandling%2A> enumeration. To reiterate the possible values:
 
--   Fault (default): To fault the listener and also the service host.
+- Fault (default): To fault the listener and also the service host.
 
--   Drop: To drop the message.
+- Drop: To drop the message.
 
--   Move: To move the message to the poison message sub-queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- Move: To move the message to the poison message sub-queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
 
--   Reject: To reject the message, sending the message back to the sender's dead-letter queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- Reject: To reject the message, sending the message back to the sender's dead-letter queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
 
  The sample demonstrates using the `Move` disposition for the poison message. `Move` causes the message to move to the poison sub-queue.
 

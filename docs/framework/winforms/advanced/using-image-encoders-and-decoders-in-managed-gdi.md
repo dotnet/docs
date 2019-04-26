@@ -11,23 +11,23 @@ The <xref:System.Drawing> namespace provides the <xref:System.Drawing.Image> and
   
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] has built-in encoders and decoders that support the following file types:  
   
--   BMP  
+- BMP  
   
--   GIF  
+- GIF  
   
--   JPEG  
+- JPEG  
   
--   PNG  
+- PNG  
   
--   TIFF  
+- TIFF  
   
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] also has built-in decoders that support the following file types:  
   
--   WMF  
+- WMF  
   
--   EMF  
+- EMF  
   
--   ICON  
+- ICON  
   
  The following topics discuss encoders and decoders in more detail:  
   

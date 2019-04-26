@@ -16,7 +16,7 @@ Not all data is meant for editing. In the <xref:System.Windows.Forms.DataGridVie
   
 ### To make a column read-only programmatically  
   
--   Set the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=nameWithType> property to `true`.  
+- Set the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=nameWithType> property to `true`.  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#064](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#064)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#064](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#064)]  
@@ -24,9 +24,9 @@ Not all data is meant for editing. In the <xref:System.Windows.Forms.DataGridVie
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` with a column named `CompanyName`.  
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` with a column named `CompanyName`.  
   
--   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
 

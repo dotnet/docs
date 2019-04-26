@@ -12,15 +12,15 @@ This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../.
 
 Tasks illustrated in this walkthrough include:
 
--   Creating the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] host project.
+- Creating the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] host project.
 
--   Adding localizable content.
+- Adding localizable content.
 
--   Enabling localization.
+- Enabling localization.
 
--   Assigning resource identifiers.
+- Assigning resource identifiers.
 
--   Using the LocBaml tool to produce a satellite assembly.
+- Using the LocBaml tool to produce a satellite assembly.
 
 For a complete code listing of the tasks illustrated in this walkthrough, see [Localizing a Hybrid Application Sample](https://go.microsoft.com/fwlink/?LinkID=160015).
 
@@ -30,7 +30,7 @@ When you are finished, you will have a localized hybrid application.
 
 You need the following components to complete this walkthrough:
 
--   Visual Studio 2017
+- Visual Studio 2017
 
 ## Creating the Windows Forms Host Project
 

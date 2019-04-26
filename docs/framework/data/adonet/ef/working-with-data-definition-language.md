@@ -11,13 +11,13 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
  The following methods on the <xref:System.Data.Objects.ObjectContext> use the connection string and the SSDL content to accomplish the following: create or delete the database, check whether the database exists, and view the generated DDL script:  
   
--   <xref:System.Data.Objects.ObjectContext.CreateDatabase%2A>  
+- <xref:System.Data.Objects.ObjectContext.CreateDatabase%2A>  
   
--   <xref:System.Data.Objects.ObjectContext.DeleteDatabase%2A>  
+- <xref:System.Data.Objects.ObjectContext.DeleteDatabase%2A>  
   
--   <xref:System.Data.Objects.ObjectContext.DatabaseExists%2A>  
+- <xref:System.Data.Objects.ObjectContext.DatabaseExists%2A>  
   
--   <xref:System.Data.Objects.ObjectContext.CreateDatabaseScript%2A>  
+- <xref:System.Data.Objects.ObjectContext.CreateDatabaseScript%2A>  
   
 > [!NOTE]
 >  Executing the DDL commands assumes sufficient permissions.  

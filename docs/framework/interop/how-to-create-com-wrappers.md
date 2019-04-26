@@ -12,9 +12,9 @@ ms.author: "ronpet"
 
 You can create Component Object Model (COM) wrappers by using Visual Studio 2005 features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
 
--   A [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
+- A [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) from a type library to run a COM object in managed code.
 
--   A [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
+- A [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md) with the required registry settings to run a managed object in a native application.
 
 In Visual Studio 2005, you can add the COM wrapper as a reference to your project.
 
@@ -39,7 +39,7 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 ### To create a runtime callable wrapper using .NET Framework tools  
   
--   Run the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.  
+- Run the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.  
   
  This tool creates an assembly that contains run-time metadata for the types defined in the original type library.  
   

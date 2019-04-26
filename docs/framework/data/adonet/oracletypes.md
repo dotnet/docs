@@ -11,9 +11,9 @@ The .NET Framework Data Provider for Oracle includes several structures you can 
   
  The following C# examples:  
   
--   Create an Oracle table and load it with data.  
+- Create an Oracle table and load it with data.  
   
--   Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
+- Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
   
 ## Creating an Oracle Table  
  This example creates an Oracle table and loads it with data. You must run this example before running the next example.  

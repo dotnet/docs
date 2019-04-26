@@ -17,13 +17,13 @@ You can inspect or modify the incoming or outgoing messages across a WCF client 
 ## Example  
  The following code examples show, in order:  
   
--   A client inspector implementation.  
+- A client inspector implementation.  
   
--   An endpoint behavior that inserts the inspector.  
+- An endpoint behavior that inserts the inspector.  
   
--   A <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>- derived class that allows you to add the behavior in a configuration file.  
+- A <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>- derived class that allows you to add the behavior in a configuration file.  
   
--   A configuration file that adds the endpoint behavior which inserts the client message inspector into the client runtime.  
+- A configuration file that adds the endpoint behavior which inserts the client message inspector into the client runtime.  
   
 ```csharp  
 // Client message inspector  

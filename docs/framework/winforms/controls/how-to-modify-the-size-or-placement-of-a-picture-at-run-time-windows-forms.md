@@ -15,13 +15,13 @@ ms.assetid: d0b332a3-fae2-4891-957c-dc3e17743326
 # How to: Modify the Size or Placement of a Picture at Run Time (Windows Forms)
 If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a form, you can set the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property on it to:  
   
--   Align the picture's upper left corner with the control's upper left corner  
+- Align the picture's upper left corner with the control's upper left corner  
   
--   Center the picture within the control  
+- Center the picture within the control  
   
--   Adjust the size of the control to fit the picture it displays  
+- Adjust the size of the control to fit the picture it displays  
   
--   Stretch any picture it displays to fit the control  
+- Stretch any picture it displays to fit the control  
   
  Stretching a picture (especially one in bitmap format) can produce a loss in image quality. Metafiles, which are lists of graphics instructions for drawing images at run time, are better suited for stretching than bitmaps are.  
   

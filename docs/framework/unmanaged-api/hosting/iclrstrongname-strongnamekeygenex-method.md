@@ -40,9 +40,9 @@ HRESULT StrongNameKeyGenEx (
  `dwFlags`  
  [in] A value that specifies whether to leave the key registered. The following values are supported:  
   
--   0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
+- 0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
   
--   0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
+- 0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
   
  `dwKeySize`  
  [in] The requested size of the key, in bits.  

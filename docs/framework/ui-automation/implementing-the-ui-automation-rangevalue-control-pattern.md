@@ -19,9 +19,9 @@ ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
 ## Implementation Guidelines and Conventions  
  When implementing the Range Value control pattern, note the following guidelines and conventions:  
   
--   Controls allow recalibration of their supported properties based upon locale or user preference. An example of this is a thermometer control that can be set to display the temperature in Fahrenheit or Celsius.  
+- Controls allow recalibration of their supported properties based upon locale or user preference. An example of this is a thermometer control that can be set to display the temperature in Fahrenheit or Celsius.  
   
--   Controls that have ambiguous range values, such as progress bars or sliders, should have those values normalized.  
+- Controls that have ambiguous range values, such as progress bars or sliders, should have those values normalized.  
   
  ![Progress bar.](../../../docs/framework/ui-automation/media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
 Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum Property Values Are Normalized to 0 and 100, Respectively  

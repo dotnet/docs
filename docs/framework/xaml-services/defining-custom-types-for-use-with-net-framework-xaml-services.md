@@ -11,9 +11,9 @@ When you define custom types that are business objects or are types that do not 
 ## Constructor Patterns and Type Definitions for XAML  
  To be instantiated as an object element in XAML, a custom class must meet the following requirements:  
   
--   The custom class must be public and must expose a default (parameterless) public constructor. (See following section for notes regarding structures.)  
+- The custom class must be public and must expose a default (parameterless) public constructor. (See following section for notes regarding structures.)  
   
--   The custom class must not be a nested class. The extra "dot" in the full-name path makes the class-namespace division ambiguous, and interferes with other XAML features such as attached properties.  
+- The custom class must not be a nested class. The extra "dot" in the full-name path makes the class-namespace division ambiguous, and interferes with other XAML features such as attached properties.  
   
  If an object can be instantiated as an object element, the created object can fill the property element form of any properties that take the object as their underlying type.  
   
@@ -66,9 +66,9 @@ When you define custom types that are business objects or are types that do not 
   
  `public static object Get` *PropertyName* `(object`  `target` `)`  
   
--   The `target` object can be specified as a more specific type in your implementation. You can use this to scope the usage of your attachable member; usages outside your intended scope will throw invalid cast exceptions that are then surfaced by a XAML parse error. The parameter name `target` is not a requirement, but is named `target` by convention in most implementations.  
+- The `target` object can be specified as a more specific type in your implementation. You can use this to scope the usage of your attachable member; usages outside your intended scope will throw invalid cast exceptions that are then surfaced by a XAML parse error. The parameter name `target` is not a requirement, but is named `target` by convention in most implementations.  
   
--   The return value can be specified as a more specific type in your implementation.  
+- The return value can be specified as a more specific type in your implementation.  
   
  To support a <xref:System.ComponentModel.TypeConverter> enabled text syntax for attribute usage of the attachable member, apply <xref:System.ComponentModel.TypeConverterAttribute> to the `Get`*PropertyName* accessor. Applying to the `get` instead of the `set` may seem nonintuitive; however, this convention can support the concept of read-only attachable members that are serializable, which is useful in designer scenarios.  
   
@@ -77,9 +77,9 @@ When you define custom types that are business objects or are types that do not 
   
  `public static void Set` *PropertyName* `(object`  `target` `, object`  `value` `)`  
   
--   The `target` object can be specified as a more specific type in your implementation, with same logic and consequences as described in the previous section.  
+- The `target` object can be specified as a more specific type in your implementation, with same logic and consequences as described in the previous section.  
   
--   The `value` object can be specified as a more specific type in your implementation.  
+- The `value` object can be specified as a more specific type in your implementation.  
   
  Remember that the value for this method is the input coming from the XAML usage, typically in attribute form. From attribute form there must be value converter support for a text syntax, and you attribute on the `Get`*PropertyName* accessor.  
   

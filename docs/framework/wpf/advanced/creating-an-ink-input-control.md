@@ -20,15 +20,15 @@ You can create a custom control that dynamically and statically renders ink. Tha
   
  This topic contains the following subsections:  
   
--   [How to: Collect Stylus Point Data and Create Ink Strokes](#CollectingStylusPointDataAndCreatingInkStrokes)  
+- [How to: Collect Stylus Point Data and Create Ink Strokes](#CollectingStylusPointDataAndCreatingInkStrokes)  
   
--   [How to: Enable Your Control to Accept Input from the Mouse](#EnablingYourControlToAcceptInputTromTheMouse)  
+- [How to: Enable Your Control to Accept Input from the Mouse](#EnablingYourControlToAcceptInputTromTheMouse)  
   
--   [Putting it together](#PuttingItTogether)  
+- [Putting it together](#PuttingItTogether)  
   
--   [Using Additional Plug-ins and DynamicRenderers](#UsingAdditionalPluginsAndDynamicRenderers)  
+- [Using Additional Plug-ins and DynamicRenderers](#UsingAdditionalPluginsAndDynamicRenderers)  
   
--   [Conclusion](#AdvancedInkHandling_Conclusion)  
+- [Conclusion](#AdvancedInkHandling_Conclusion)  
   
 <a name="CollectingStylusPointDataAndCreatingInkStrokes"></a>   
 ## How to: Collect Stylus Point Data and Create Ink Strokes  

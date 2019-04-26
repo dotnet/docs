@@ -10,19 +10,19 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
  For an overview about how to create an endpoint, see [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). Each endpoint contains:  
   
--   An address that indicates where to find the endpoint.  
+- An address that indicates where to find the endpoint.  
   
--   A binding that specifies how a client can communicate with the endpoint.  
+- A binding that specifies how a client can communicate with the endpoint.  
   
--   A contract that identifies the methods available.  
+- A contract that identifies the methods available.  
   
  For descriptions about how to specify these individual parts of an endpoint, see:  
   
--   [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)  
+- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)  
   
--   [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
   
--   [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
+- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
   
 ## In This Section  
  [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  

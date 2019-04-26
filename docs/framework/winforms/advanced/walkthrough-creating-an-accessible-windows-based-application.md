@@ -12,15 +12,15 @@ Creating an accessible application has important business implications. Many gov
   
  This walkthrough will address the five accessibility requirements for the Certified for Windows logo. According to these requirements, an accessible application will:  
   
--   Support Control Panel size, color, font, and input settings. The menu bar, title bar, borders, and status bar will all resize themselves when the user changes the control panel settings. No additional changes to the controls or code are required in this application.  
+- Support Control Panel size, color, font, and input settings. The menu bar, title bar, borders, and status bar will all resize themselves when the user changes the control panel settings. No additional changes to the controls or code are required in this application.  
   
--   Support High Contrast mode.  
+- Support High Contrast mode.  
   
--   Provide documented keyboard access to all features.  
+- Provide documented keyboard access to all features.  
   
--   Expose location of the keyboard focus visually and programmatically.  
+- Expose location of the keyboard focus visually and programmatically.  
   
--   Avoid conveying important information by sound alone.  
+- Avoid conveying important information by sound alone.  
   
  For more information, see [Resources for Designing Accessible Applications](/visualstudio/ide/reference/resources-for-designing-accessible-applications).  
   
@@ -35,29 +35,29 @@ Creating an accessible application has important business implications. Many gov
   
 #### To begin making the application  
   
--   Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)  
+- Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)  
   
 ## Adding the Controls to the Form  
  When adding the controls to a form, keep in mind the following guidelines to make an accessible application:  
   
--   Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
+- Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../controls/providing-accessibility-information-for-controls-on-a-windows-form.md).  
   
--   Set the font size to 10 points or larger.  
+- Set the font size to 10 points or larger.  
   
     > [!NOTE]
     >  If you set the font size of the form to 10 when you start, then all controls subsequently added to the form will have a font size of 10.  
   
--   Make sure any Label control that describes a TextBox control immediately precedes the TextBox control in the tab order.  
+- Make sure any Label control that describes a TextBox control immediately precedes the TextBox control in the tab order.  
   
--   Add an access key, using the "&" character, to the <xref:System.Windows.Forms.Control.Text%2A> property of any control the user may want to navigate to.  
+- Add an access key, using the "&" character, to the <xref:System.Windows.Forms.Control.Text%2A> property of any control the user may want to navigate to.  
   
--   Add an access key, using the "&" character, to the <xref:System.Windows.Forms.Control.Text%2A> property of the label that precedes a control that the user may want to navigate to. Set the labels' <xref:System.Windows.Forms.Label.UseMnemonic%2A> property to `true`, so that the focus is set to the next control in the tab order when the user presses the access key.  
+- Add an access key, using the "&" character, to the <xref:System.Windows.Forms.Control.Text%2A> property of the label that precedes a control that the user may want to navigate to. Set the labels' <xref:System.Windows.Forms.Label.UseMnemonic%2A> property to `true`, so that the focus is set to the next control in the tab order when the user presses the access key.  
   
--   Add access keys to all menu items.  
+- Add access keys to all menu items.  
   
 #### To make your Windows Application accessible  
   
--   Add the controls to the form and set the properties as described below. See the picture at the end of the table for a model of how to arrange the controls on the form.  
+- Add the controls to the form and set the properties as described below. See the picture at the end of the table for a model of how to arrange the controls on the form.  
   
     |Object|Property|Value|  
     |------------|--------------|-----------|  
@@ -140,11 +140,11 @@ Creating an accessible application has important business implications. Many gov
   
  If SystemInformation.HighContrast is `true`, the application should:  
   
--   Display all user interface elements using the system color scheme  
+- Display all user interface elements using the system color scheme  
   
--   Convey by visual cues or sound any information that is conveyed through color. For example, if particular list items are highlighted by using a red font, you could also add bold to the font, so that the user has a non-color cue that the items are highlighted.  
+- Convey by visual cues or sound any information that is conveyed through color. For example, if particular list items are highlighted by using a red font, you could also add bold to the font, so that the user has a non-color cue that the items are highlighted.  
   
--   Omit any images or patterns behind text  
+- Omit any images or patterns behind text  
   
  The application should check the setting of <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> when the application starts and respond to the system event <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged>. The <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event is raised whenever the value of <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> changes.  
   

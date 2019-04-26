@@ -13,15 +13,15 @@ This example shows how to specify whether the binding updates only the binding t
 ## Example  
  You use the <xref:System.Windows.Data.Binding.Mode%2A> property to specify the direction of the binding. The following enumeration list shows the available options for binding updates:  
   
--   <xref:System.Windows.Data.BindingMode.TwoWay> updates the target property or the property whenever either the target property or the source property changes.  
+- <xref:System.Windows.Data.BindingMode.TwoWay> updates the target property or the property whenever either the target property or the source property changes.  
   
--   <xref:System.Windows.Data.BindingMode.OneWay> updates the target property only when the source property changes.  
+- <xref:System.Windows.Data.BindingMode.OneWay> updates the target property only when the source property changes.  
   
--   <xref:System.Windows.Data.BindingMode.OneTime> updates the target property only when the application starts or when the <xref:System.Windows.FrameworkElement.DataContext%2A> undergoes a change.  
+- <xref:System.Windows.Data.BindingMode.OneTime> updates the target property only when the application starts or when the <xref:System.Windows.FrameworkElement.DataContext%2A> undergoes a change.  
   
--   <xref:System.Windows.Data.BindingMode.OneWayToSource> updates the source property when the target property changes.  
+- <xref:System.Windows.Data.BindingMode.OneWayToSource> updates the source property when the target property changes.  
   
--   <xref:System.Windows.Data.BindingMode.Default> causes the default <xref:System.Windows.Data.Binding.Mode%2A> value of target property to be used.  
+- <xref:System.Windows.Data.BindingMode.Default> causes the default <xref:System.Windows.Data.Binding.Mode%2A> value of target property to be used.  
   
  For more information, see the <xref:System.Windows.Data.BindingMode> enumeration.  
   

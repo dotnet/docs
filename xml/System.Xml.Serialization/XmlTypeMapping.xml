@@ -79,9 +79,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the XML namespace of the mapped object.</summary>
+        <value>The XML namespace of the mapped object. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+To set a namespace name of an object, apply a <xref:System.Xml.Serialization.SoapTypeAttribute> to the class, and set the <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace?displayProperty=nameWithType> property to a new value.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeFullName">

@@ -1325,9 +1325,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Begins a database transaction.</summary>
+        <returns>An object representing the new transaction.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbConnection.BeginTransaction">
@@ -1350,10 +1351,11 @@
         <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="isolationLevel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="isolationLevel">A bitwise combination of the enumeration values that specify the isolation level of the transaction.</param>
+        <summary>Begins a database transaction with the specified isolation level.</summary>
+        <returns>An object representing the new transaction.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbConnection.CreateCommand">
@@ -1375,9 +1377,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates and returns a command object associated with the connection.</summary>
+        <returns>A command object associated with the connection.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">

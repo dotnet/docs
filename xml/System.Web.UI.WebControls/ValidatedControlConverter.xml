@@ -134,9 +134,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context that can be used to extract additional information about the environment from which this converter is invoked. This parameter or properties of this parameter can be <see langword="null" />.</param>
+        <summary>Returns a collection of standard values for the data type this type converter is designed for when provided with a format context.</summary>
+        <returns>A collection that holds a standard set of valid values, or <see langword="null" /> if the data type does not support a standard set of values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +159,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <summary>Returns a value that indicates whether the collection of standard values returned from <see cref="M:System.Web.UI.WebControls.ValidatedControlConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is an exclusive list of possible values, using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if the collection returned from <see cref="M:System.Web.UI.WebControls.ValidatedControlConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is an exhaustive list of possible values; <see langword="false" /> if other values are possible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +185,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <summary>Returns whether this object supports a standard set of values that can be picked from a list, using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="M:System.Web.UI.WebControls.ValidatedControlConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> should be called to find a common set of values the object supports; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

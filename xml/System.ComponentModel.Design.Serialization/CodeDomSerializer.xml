@@ -168,11 +168,11 @@
         <Parameter Name="expression" Type="System.CodeDom.CodeExpression" Index="2" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="manager">A serialization manager interface that is used during the deserialization process.</param>
+        <param name="name">An optional name to give the expression. If the expression results in the creation of an object, the object is given this name for subsequent searches through the serialization manager. If this is a null reference (Nothing in Visual Basic), no name will be given.</param>
+        <param name="expression">The CodeDOM expression to deserialize.</param>
+        <summary>Deserializes the specified expression.</summary>
+        <returns>An object resulting from interpretation of <paramref name="expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,10 +200,10 @@
         <Parameter Name="filter" Type="System.Attribute[]" Index="2" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="manager">A serialization manager interface that is used during the deserialization process.</param>
+        <param name="value">The object to deserialize properties for.</param>
+        <param name="filter">An optional filter to apply to the properties.</param>
+        <summary>Deserializes the properties of the specified object that match the specified filter, if a filter was specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +230,9 @@
         <Parameter Name="statement" Type="System.CodeDom.CodeStatement" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="statement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="manager">A serialization manager interface that is used during the deserialization process.</param>
+        <param name="statement">The CodeDOM statement to deserialize.</param>
+        <summary>Deserializes the specified statement.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,11 +403,11 @@
         <Parameter Name="filter" Type="System.Attribute[]" Index="3" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="statements">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="manager">The serialization manager to use during serialization.</param>
+        <param name="statements">A statements collection to which serialized event statements are added.</param>
+        <param name="value">The object whose events are to be serialized.</param>
+        <param name="filter">A member attribute filter to apply to the event search.</param>
+        <summary>Serializes all events of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,11 +512,11 @@
         <Parameter Name="filter" Type="System.Attribute[]" Index="3" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="statements">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="manager">The serialization manager to use during serialization.</param>
+        <param name="statements">A collection of statements to add the serialized property statements to.</param>
+        <param name="value">The object whose properties are serialized.</param>
+        <param name="filter">A member attribute filter to apply to the property search.</param>
+        <summary>Serializes all properties for the specified object, using the specified filter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,11 +545,11 @@
         <Parameter Name="filter" Type="System.Attribute[]" Index="3" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="statements">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="manager">The serialization manager to use during serialization.</param>
+        <param name="statements">A collection of statements to use during serialization. The resource serializer uses this to write resource creation statements, but will not have individual property assign statements because all the properties are serialized to a resource.</param>
+        <param name="value">The object to deserialize properties for.</param>
+        <param name="filter">An optional filter to apply to the properties.</param>
+        <summary>Serializes the specified properties to resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,10 +638,10 @@
         <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="manager">The serialization manager to use during serialization.</param>
+        <param name="value">The object to serialize.</param>
+        <summary>Serializes the specified value to a CodeDOM expression.</summary>
+        <returns>The serialized value. This returns a null reference (Nothing in Visual Basic) if there is no serializer for the specified value, or if the serializer for that value did not return a <see cref="T:System.CodeDom.CodeExpression"/>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

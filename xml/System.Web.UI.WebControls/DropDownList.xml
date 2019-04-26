@@ -464,8 +464,8 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The output stream to render HTML content on the client.</param>
+        <summary>Renders the contents of the control to the specified writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -648,9 +648,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ToolTip text displayed when the mouse pointer rests over the control.</summary>
+        <value>The ToolTip text displayed when the mouse pointer rests over the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+> [!NOTE]
+> The `ToolTip` property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.DropDownList> control. 
+> This implementation of the `ToolTip` property doesn't allow you to set a value and returns <xref:System.String.Empty?displayProperty=nameWithType> if you use the get accessor.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyMultiSelect">

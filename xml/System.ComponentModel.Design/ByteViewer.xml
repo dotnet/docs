@@ -214,8 +214,8 @@
         <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

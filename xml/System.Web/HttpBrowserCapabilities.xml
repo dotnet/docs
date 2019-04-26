@@ -71,8 +71,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports ActiveX controls.</summary>
+        <value><see langword="true" /> if the browser client supports ActiveX controls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client is an America Online (AOL) browser.</summary>
+        <value><see langword="true" /> if the browser client is an AOL browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports background sounds.</summary>
+        <value><see langword="true" /> if the browser client supports background sounds; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the browser is a beta release.</summary>
+        <value><see langword="true" /> if the browser client is a beta version; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +155,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the browser string (if any) that was transmitted in the User-Agent header.</summary>
+        <value>The browser type (for example ("IE").</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +176,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports Channel Definition Format (CDF) for webcasting.</summary>
+        <value><see langword="true" /> if the browser client supports CDF; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version number of the .NET common language runtime installed on the client.</summary>
+        <value>The common language runtime version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +218,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports cookies.</summary>
+        <value><see langword="true" /> if the browser client supports cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +239,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser is a Web crawler search engine.</summary>
+        <value><see langword="true" /> if the browser client is a search engine; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,9 +260,18 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the version number of ECMA script that the client browser supports.</summary>
+        <value>The version number of ECMA script that the client browser supports.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The European Computer Manufacturer's Association develops standards for information and communication systems. 
+For more information, see [ECMA's official Web site](https://www.ecma.ch).
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Frames">
@@ -281,8 +290,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports HTML frames.</summary>
+        <value><see langword="true" /> if the browser client supports frames; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +312,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns all versions of the .NET common language runtime (CLR) installed on the client.</summary>
+        <returns>A version array that contains all versions of the .NET CLR installed on the client.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +333,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports Java applets.</summary>
+        <value><see langword="true" /> if the browser client supports Java applets; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,9 +354,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the client browser supports JavaScript.</summary>
+        <value><see langword="true" /> if browser client supports JavaScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+If the client browser supports JavaScript but scripting is disabled through a security setting, `JavaScript` return `true` but script will not execute on the browser.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorVersion">
@@ -366,8 +383,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the major (that is, integer) version number of the client browser.</summary>
+        <value>The major version number of the browser (for example, 5).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +404,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the minor (that is, decimal) version number of the client browser.</summary>
+        <value>The minor version number of the browser (for example, .01).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,8 +425,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of Microsoft HTML (MSHTML) Document Object Model (DOM) that the client browser supports.</summary>
+        <value>The number of the Microsoft HTML DOM version that the client browser supports.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,8 +446,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the platform that the client uses.</summary>
+        <value>The operating system that the client uses.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,8 +467,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports HTML tables.</summary>
+        <value><see langword="true" /> if the browser client supports tables; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,9 +488,10 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Used internally to get the type of the object that is used to write tags for the browser.</summary>
+        <value>The type of the object that is used to write tags for the browser.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -492,8 +510,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name and major (that is, integer) version number of the client browser.</summary>
+        <value>The name and major version number of the client browser.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -513,8 +531,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client browser supports VBScript.</summary>
+        <value><see langword="true" /> if the browser client supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,9 +552,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the full version number (integer and decimal) of the browser as a string.</summary>
+        <value>The full version number of the browser, as a string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The `Version` property returns a string. 
+In some scenarios, `Version` might contain letter characters, as in the case of a browser or client device that is a beta version such as "7.0b."
+To correctly get the version as a data type that can be used in a numeric comparison, concatenate the <xref:System.Web.HttpBrowserCapabilities.MajorVersion> and <xref:System.Web.HttpBrowserCapabilities.MinorVersion> property values.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="W3CDomVersion">
@@ -555,8 +583,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of the World Wide Web Consortium (W3C) XML Document Object Model (DOM) that the client browser supports.</summary>
+        <value>The number of the W3C XML DOM version number that the client browser supports.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,8 +604,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client is a Win16-based computer.</summary>
+        <value><see langword="true" /> if the browser client is a Win16-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,8 +625,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the client is a Win32-based computer.</summary>
+        <value><see langword="true" /> if the browser client is a Win32-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

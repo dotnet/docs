@@ -727,8 +727,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the beginning character or characters to use when specifying database objects (for example, tables or columns) whose names contain characters such as spaces or reserved tokens.</summary>
+        <value>The beginning character or characters to use. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,8 +759,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the ending character or characters to use when specifying database objects (for example, tables or columns) whose names contain characters such as spaces or reserved tokens.</summary>
+        <value>The ending character or characters to use. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -781,7 +781,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears the commands associated with this <see cref="T:System.Data.OleDb.OleDbCommandBuilder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

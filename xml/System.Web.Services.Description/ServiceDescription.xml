@@ -294,9 +294,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the XML name attribute of the <c>descriptions</c> tag enclosing the Web Services Description Language (WSDL) file.</summary>
+        <value>The XML <c>name</c> attribute.</value>
+        <remarks>The property value is an empty string ("") if it has not yet been assigned.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">

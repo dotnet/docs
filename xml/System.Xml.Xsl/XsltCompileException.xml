@@ -300,8 +300,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the formatted error message describing the location of the error. To get the actual error, you need to use the message on the inner exception.</summary>
+        <value>The formatted error message describing the location of the error. This is in the format filename (line, position).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

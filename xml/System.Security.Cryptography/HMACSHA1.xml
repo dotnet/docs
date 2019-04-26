@@ -285,7 +285,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -416,8 +416,8 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the hash algorithm to use for hashing.</summary>
+        <value>The name of the hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,7 +479,7 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of <see cref="T:System.Security.Cryptography.HMACSHA1"/>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,8 +511,8 @@ Releases the unmanaged resources used by the <see cref="T:System.Security.Crypto
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the key to use in the hash algorithm.</summary>
+        <value>The key to use in the hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

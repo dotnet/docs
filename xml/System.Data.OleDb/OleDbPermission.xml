@@ -233,9 +233,9 @@
         <Parameter Name="target" Type="System.Security.IPermission" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target <see cref="T:System.Security.IPermission"/> to intersect with the current <see cref="T:System.Data.OleDb.OleDbPermission"/>.</param>
+        <summary>Returns an <see cref="T:System.Security.IPermission"/> that is the intersection of the current <see cref="T:System.Data.OleDb.OleDbPermission"/> and the specified target <see cref="T:System.Security.IPermission"/>.</summary>
+        <returns>A new permission object that represents the intersection of the current permission object and the specified permission object. This new permission object is a null reference if the intersection is empty.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +299,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an XML representation of the <see cref="T:System.Data.OleDb.OleDbPermission"/> object as a <see cref="T:System.Security.SecurityElement"/>.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

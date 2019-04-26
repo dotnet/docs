@@ -412,7 +412,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes the current stream and releases any resources (such as sockets and file handles) associated with the current stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -586,7 +586,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1128,8 +1128,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Security.Cryptography.CryptoStream" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Write">

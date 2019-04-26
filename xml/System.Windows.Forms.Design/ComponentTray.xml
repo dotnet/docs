@@ -600,8 +600,8 @@
         <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The data for the event.</param>
+        <summary>Called when the mouse is double clicked over the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

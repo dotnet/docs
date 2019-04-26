@@ -363,9 +363,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the specific table in the <see cref="P:System.Web.UI.WebControls.ListControl.DataSource" /> to bind to the control.</summary>
+        <value>A string that specifies a table in the <see cref="P:System.Web.UI.WebControls.ListControl.DataSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Remarks  
+
+If the <xref:System.Web.UI.WebControls.ListControl.DataSource> contains more than one table, use this property to specify the exact table to bind to the control.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -395,9 +403,19 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the data source that populates the items of the list control.</summary>
+        <value>A data source that provides data for populating the list control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Remarks  
+
+Use this property to specify a source of data to populate a list control.
+
+The items in the <xref:System.Web.UI.WebControls.ListControl.Items> collection are initialized from <xref:System.Web.UI.WebControls.ListControl.DataTextField> and <xref:System.Web.UI.WebControls.ListControl.DataValueField>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTextField">

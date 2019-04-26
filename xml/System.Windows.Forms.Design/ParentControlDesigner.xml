@@ -1375,9 +1375,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.GiveFeedbackEventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Called when a drag-and-drop operation is in progress to provide visual cues based on the location of the mouse while a drag operation is in progress.</summary>
+        <remarks>The designer host calls this method when an OLE drag event occurs.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDragBegin">
@@ -1540,7 +1540,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when the mouse first enters the control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1564,8 +1564,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called after the mouse hovers over the control.</summary>
+        <remarks>This method displays the container selector.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -1588,7 +1588,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when the mouse first enters the control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1766,8 +1766,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message"/> to process.</param>
+        <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

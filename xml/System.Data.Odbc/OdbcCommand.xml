@@ -1186,9 +1186,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <see cref="P:System.Data.IDbCommand.CommandText" /> against the <see cref="P:System.Data.IDbCommand.Connection" /> and builds an <see cref="T:System.Data.IDataReader" />.</summary>
+        <returns>An <see cref="T:System.Data.IDataReader" /> object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbCommand.ExecuteReader">
@@ -1215,10 +1216,11 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="behavior">A bitwise combination of the enumeration values that specifies the command behavior.</param>
+        <summary>Executes the <see cref="P:System.Data.IDbCommand.CommandText" /> against the <see cref="P:System.Data.IDbCommand.Connection" />, and builds an <see cref="T:System.Data.IDataReader" /> using the specified behavior.</summary>
+        <returns>An <see cref="T:System.Data.IDataReader" /> object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">

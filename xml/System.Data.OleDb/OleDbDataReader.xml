@@ -167,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows the object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1430,8 +1430,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1456,9 +1456,9 @@
         <Parameter Name="ordinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="ordinal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ordinal">The index of the field to find.</param>
+        <summary>Returns an <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.</summary>
+        <returns>The <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1481,8 +1481,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Data.OleDb.OleDbDataReader" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VisibleFieldCount">

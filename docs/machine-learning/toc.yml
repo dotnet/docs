@@ -31,14 +31,14 @@
     href: how-to-guides/prepare-data-ml-net.md
   - name: Train, evaluate, and explain the model
     items:
-    - name: Train model using cross-validation
-      href: how-to-guides/train-cross-validation-ml-net.md
-    - name: Inspect intermediate pipeline data values
-      href: how-to-guides/inspect-intermediate-data-ml-net.md
-    - name: Train a model
-      href: how-to-guides/train-machine-learning-model-ml-net.md
     - name: Determine model feature importance with PFI
       href: how-to-guides/determine-global-feature-importance-in-model.md
+    - name: Inspect intermediate pipeline data values
+      href: how-to-guides/inspect-intermediate-data-ml-net.md      
+    - name: Train a model
+      href: how-to-guides/train-machine-learning-model-ml-net.md
+    - name: Train model using cross-validation
+      href: how-to-guides/train-cross-validation-ml-net.md
   - name: Use the trained model
     items:
     - name: One prediction at a time with PredictionEngine

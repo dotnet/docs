@@ -260,9 +260,7 @@ You can watch the `debug` variable in the debugger and examine its contents. Do 
 In real-life applications, your model training and evaluation code will be separate from your prediction. In fact, these two activities are often performed by separate teams. Your model development team can save the model for use in the prediction application.
 
 ```csharp   
-   using (var fs = new FileStream("model.zip", FileMode.Create, FileAccess.Write, FileShare.Write))
-        mlContext.Model.Save(model, trainingData.Schema, fs);
-
+   mlContext.Model.Save(model, trainingData.Schema,"model.zip");
 ```
 
 ## Where to now?

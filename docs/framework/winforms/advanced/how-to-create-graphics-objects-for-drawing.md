@@ -25,15 +25,15 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 #### To create a graphics object  
   
--   Receive a reference to a graphics object as part of the <xref:System.Windows.Forms.PaintEventArgs> in the <xref:System.Windows.Forms.Control.Paint> event of a form or control. This is usually how you obtain a reference to a graphics object when creating painting code for a control. Similarly, you can also obtain a graphics object as a property of the <xref:System.Drawing.Printing.PrintPageEventArgs> when handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event for a <xref:System.Drawing.Printing.PrintDocument>.  
+- Receive a reference to a graphics object as part of the <xref:System.Windows.Forms.PaintEventArgs> in the <xref:System.Windows.Forms.Control.Paint> event of a form or control. This is usually how you obtain a reference to a graphics object when creating painting code for a control. Similarly, you can also obtain a graphics object as a property of the <xref:System.Drawing.Printing.PrintPageEventArgs> when handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event for a <xref:System.Drawing.Printing.PrintDocument>.  
   
      -or-  
   
--   Call the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of a control or form to obtain a reference to a <xref:System.Drawing.Graphics> object that represents the drawing surface of that control or form. Use this method if you want to draw on a form or control that already exists.  
+- Call the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of a control or form to obtain a reference to a <xref:System.Drawing.Graphics> object that represents the drawing surface of that control or form. Use this method if you want to draw on a form or control that already exists.  
   
      -or-  
   
--   Create a <xref:System.Drawing.Graphics> object from any object that inherits from <xref:System.Drawing.Image>. This approach is useful when you want to alter an already existing image.  
+- Create a <xref:System.Drawing.Graphics> object from any object that inherits from <xref:System.Drawing.Image>. This approach is useful when you want to alter an already existing image.  
   
      The following sections give details about each of these processes.  
   
@@ -88,7 +88,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 #### To create a Graphics object with the CreateGraphics method  
   
--   Call the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of the form or control upon which you want to render graphics.  
+- Call the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of the form or control upon which you want to render graphics.  
   
     ```vb  
     Dim g as Graphics  
@@ -116,7 +116,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 #### To create a Graphics object from an Image  
   
--   Call the <xref:System.Drawing.Graphics.FromImage%2A?displayProperty=nameWithType> method, supplying the name of the Image variable from which you want to create a <xref:System.Drawing.Graphics> object.  
+- Call the <xref:System.Drawing.Graphics.FromImage%2A?displayProperty=nameWithType> method, supplying the name of the Image variable from which you want to create a <xref:System.Drawing.Graphics> object.  
   
      The following example shows how to use a <xref:System.Drawing.Bitmap> object:  
   
@@ -143,17 +143,17 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
 ## Drawing and Manipulating Shapes and Images  
  After it is created, a <xref:System.Drawing.Graphics> object may be used to draw lines and shapes, render text, or display and manipulate images. The principal objects that are used with the <xref:System.Drawing.Graphics> object are:  
   
--   The <xref:System.Drawing.Pen> class—Used for drawing lines, outlining shapes, or rendering other geometric representations.  
+- The <xref:System.Drawing.Pen> class—Used for drawing lines, outlining shapes, or rendering other geometric representations.  
   
--   The <xref:System.Drawing.Brush> class—Used for filling areas of graphics, such as filled shapes, images, or text.  
+- The <xref:System.Drawing.Brush> class—Used for filling areas of graphics, such as filled shapes, images, or text.  
   
--   The <xref:System.Drawing.Font> class—Provides a description of what shapes to use when rendering text.  
+- The <xref:System.Drawing.Font> class—Provides a description of what shapes to use when rendering text.  
   
--   The <xref:System.Drawing.Color> structure—Represents the different colors to display.  
+- The <xref:System.Drawing.Color> structure—Represents the different colors to display.  
   
 #### To use the Graphics object you have created  
   
--   Work with the appropriate object listed above to draw what you need.  
+- Work with the appropriate object listed above to draw what you need.  
   
      For more information, see the following topics:  
   

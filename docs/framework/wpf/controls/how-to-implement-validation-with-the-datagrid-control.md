@@ -16,7 +16,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To validate individual cell values  
   
--   Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../data/data-binding-overview.md).  
+- Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../data/data-binding-overview.md).  
   
      The following example shows a <xref:System.Windows.Controls.DataGrid> control with four columns bound to different properties of a business object. Three of the columns specify the <xref:System.Windows.Controls.ExceptionValidationRule> by setting the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true`.  
   
@@ -26,7 +26,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To customize cell validation feedback  
   
--   Set the column's <xref:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A> property to a style appropriate for the column's editing control. Because the editing controls are created at run time, you cannot use the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> attached property like you would with simple controls.  
+- Set the column's <xref:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A> property to a style appropriate for the column's editing control. Because the editing controls are created at run time, you cannot use the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> attached property like you would with simple controls.  
   
      The following example updates the previous example by adding an error style shared by the three columns with validation rules. When a user enters an invalid value, the style changes the cell background color and adds a ToolTip. Note the use of a trigger to determine whether there is a validation error. This is required because there is currently no dedicated error template for cells.  
   
@@ -53,7 +53,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To customize row validation feedback  
   
--   Set the <xref:System.Windows.Controls.DataGrid.RowValidationErrorTemplate%2A?displayProperty=nameWithType> property. This property enables you to customize row validation feedback for individual <xref:System.Windows.Controls.DataGrid> controls. You can also affect multiple controls by using an implicit row style to set the <xref:System.Windows.Controls.DataGridRow.ValidationErrorTemplate%2A?displayProperty=nameWithType> property.  
+- Set the <xref:System.Windows.Controls.DataGrid.RowValidationErrorTemplate%2A?displayProperty=nameWithType> property. This property enables you to customize row validation feedback for individual <xref:System.Windows.Controls.DataGrid> controls. You can also affect multiple controls by using an implicit row style to set the <xref:System.Windows.Controls.DataGridRow.ValidationErrorTemplate%2A?displayProperty=nameWithType> property.  
   
      The following example replaces the default row validation feedback with a more visible indicator. When a user enters an invalid value, a red circle with a white exclamation mark appears in the row header. This occurs for both row and cell validation errors. The associated error message is displayed in a ToolTip.  
   
@@ -67,17 +67,17 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
  To test the validation, try the following:  
   
--   In the Course ID column, enter a non-integer value.  
+- In the Course ID column, enter a non-integer value.  
   
--   In the End Date column, enter a date that is earlier than the Start Date.  
+- In the End Date column, enter a date that is earlier than the Start Date.  
   
--   Delete the value in Course ID, Start Date, or End Date.  
+- Delete the value in Course ID, Start Date, or End Date.  
   
--   To undo an invalid cell value, put the cursor back in the cell and press the ESC key.  
+- To undo an invalid cell value, put the cursor back in the cell and press the ESC key.  
   
--   To undo changes for an entire row when the current cell is in edit mode, press the ESC key twice.  
+- To undo changes for an entire row when the current cell is in edit mode, press the ESC key twice.  
   
--   When a validation error occurs, move your mouse pointer over the indicator in the row header to see the associated error message.  
+- When a validation error occurs, move your mouse pointer over the indicator in the row header to see the associated error message.  
   
  [!code-csharp[DataGrid_Validation#FullCode](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml.cs#fullcode)]
  [!code-vb[DataGrid_Validation#FullCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_validation/vb/mainwindow.xaml.vb#fullcode)]  

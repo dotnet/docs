@@ -35,9 +35,9 @@ HRESULT QueryAssemblyInfo (
  `dwFlags`  
  [in] Flags defined in Fusion.idl. The following values are supported:  
   
--   QUERYASMINFO_FLAG_VALIDATE (0x00000001)  
+- QUERYASMINFO_FLAG_VALIDATE (0x00000001)  
   
--   QUERYASMINFO_FLAG_GETSIZE (0x00000002)  
+- QUERYASMINFO_FLAG_GETSIZE (0x00000002)  
   
  `pszAssemblyName`  
  [in] The name of the assembly for which data will be retrieved.  

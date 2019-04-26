@@ -16,11 +16,11 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
   
  This walkthrough demonstrates how to use <xref:System.Windows.Forms.ToolStrip> controls to create a composite control that resembles the **Navigation Pane** provided by Microsoft® Outlook®. The following tasks are illustrated in this walkthrough:  
   
--   Creating a Windows Control Library project.  
+- Creating a Windows Control Library project.  
   
--   Designing the StackView Control.  
+- Designing the StackView Control.  
   
--   Implementing a Custom Renderer.  
+- Implementing a Custom Renderer.  
   
  When you are finished, you will have a reusable custom client control with the professional appearance of a Microsoft Office® XP control.  
   
@@ -32,7 +32,7 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
+- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating a Windows Control Library Project  
  The first step is to create the control library project.  
@@ -172,11 +172,11 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
 ## Next Steps  
  In this walkthrough, you have created a reusable custom client control with the professional appearance of an Office XP control. You can use the <xref:System.Windows.Forms.ToolStrip> family of controls for many other purposes:  
   
--   Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
+- Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
   
--   Create a form with an automatically populated standard menu. For more information, see [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md).  
+- Create a form with an automatically populated standard menu. For more information, see [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md).  
   
--   Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [How to: Create an MDI Form with Menu Merging and ToolStrip Controls](how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
+- Create a multiple document interface (MDI) form with docking <xref:System.Windows.Forms.ToolStrip> controls. For more information, see [How to: Create an MDI Form with Menu Merging and ToolStrip Controls](how-to-create-an-mdi-form-with-menu-merging-and-toolstrip-controls.md).  
   
 ## See also
 

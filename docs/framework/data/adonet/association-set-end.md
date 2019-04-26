@@ -8,9 +8,9 @@ An *association set end* identifies the [entity type](../../../../docs/framework
   
  An association set end definition contains the following information:  
   
--   One of the entity types involved in the association set. (Required)  
+- One of the entity types involved in the association set. (Required)  
   
--   The entity set for the entity type involved in the association set. (Required)  
+- The entity set for the entity type involved in the association set. (Required)  
   
 ## Example  
  The diagram below shows a conceptual model with two associations: `WrittenBy` and `PublishedBy`.  

@@ -8,11 +8,11 @@ This section provides details about public database views supported by the SQL W
   
 ## In This Section  
   
--   [Persistence Database Schema](persistence-database-schema.md)  
+- [Persistence Database Schema](persistence-database-schema.md)  
   
--   [How to: Deserialize Instance Data Properties](how-to-deserialize-instance-data-properties.md)  
+- [How to: Deserialize Instance Data Properties](how-to-deserialize-instance-data-properties.md)  
   
--   [How to: Query for Non-persisted Instances](how-to-query-for-non-persisted-instances.md)  
+- [How to: Query for Non-persisted Instances](how-to-query-for-non-persisted-instances.md)  
   
 ## See also
 

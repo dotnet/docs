@@ -6,13 +6,13 @@ ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
 # Configuring the Windows Process Activation Service for Use with Windows Communication Foundation
 This topic describes the steps required to set up Windows Process Activation Service (also known as WAS) in [!INCLUDE[wv](../../../../includes/wv-md.md)] to host Windows Communication Foundation (WCF) services that do not communicate over HTTP network protocols. The following sections outline the steps for this configuration:  
   
--   Install (or confirm the installation of) the WCF activation components required.  
+- Install (or confirm the installation of) the WCF activation components required.  
   
--   Create a WAS site with the network protocol bindings you wish to use, or add a new protocol binding to an existing site.  
+- Create a WAS site with the network protocol bindings you wish to use, or add a new protocol binding to an existing site.  
   
--   Create an application to host your services and enable that application to use the required network protocols.  
+- Create an application to host your services and enable that application to use the required network protocols.  
   
--   Build a WCF service that exposes a non-HTTP endpoint.  
+- Build a WCF service that exposes a non-HTTP endpoint.  
   
 ## Configuring a Site with Non-HTTP bindings  
  To use a non-HTTP binding with WAS, the site binding must be added to the WAS configuration. The configuration store for WAS is the applicationHost.config file, located in the %windir%\system32\inetsrv\config directory. This configuration store is shared by both WAS and IIS 7.0.  

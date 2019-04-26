@@ -15,15 +15,15 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
 
  In this walkthrough, you perform the following tasks:
 
--   Create the project.
+- Create the project.
 
--   Create the WPF control.
+- Create the WPF control.
 
--   Host WPF controls in a layout panel.
+- Host WPF controls in a layout panel.
 
--   Use snaplines to align WPF controls.
+- Use snaplines to align WPF controls.
 
--   Anchor and dock WPF controls.
+- Anchor and dock WPF controls.
 
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -31,7 +31,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio 2012.  
+- Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  
@@ -41,7 +41,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 #### To create the project  
   
--   Create a new Windows Forms Application project in Visual Basic or Visual C# named `ArrangeElementHost`.  
+- Create a new Windows Forms Application project in Visual Basic or Visual C# named `ArrangeElementHost`.  
   
 ## Creating the WPF Control  
  After you add a WPF control to the project, you can arrange it on the form.  

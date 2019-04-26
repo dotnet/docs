@@ -35,11 +35,11 @@ HRESULT OnComplete (
  `dwErrorCode`  
  [in] An HRESULT value that indicates the status of the bind operation.  
   
--   S_OK indicates that the operation completed successfully.  
+- S_OK indicates that the operation completed successfully.  
   
--   HOST_E_INTERRUPTED indicates that the call terminated before completion.  
+- HOST_E_INTERRUPTED indicates that the call terminated before completion.  
   
--   E_FAIL indicates that an unknown, unrecoverable, catastrophic failure occurred.  
+- E_FAIL indicates that an unknown, unrecoverable, catastrophic failure occurred.  
   
  `NumberOfBytesTransferred`  
  [in] The number of bytes transferred during the processing of the I/O request.  

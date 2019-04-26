@@ -12,13 +12,13 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
 ## Criteria for Using a WF 3 Activity with an Interop Activity  
  For a WF 3 activity to successfully execute within an <xref:System.Activities.Statements.Interop> activity, the following criteria must be met:  
   
--   The WF 3 activity must derive from <xref:System.Workflow.ComponentModel.Activity?displayProperty=nameWithType>.  
+- The WF 3 activity must derive from <xref:System.Workflow.ComponentModel.Activity?displayProperty=nameWithType>.  
   
--   The WF 3 activity must be declared as `public` and cannot be `abstract`.  
+- The WF 3 activity must be declared as `public` and cannot be `abstract`.  
   
--   The WF 3 activity must have a public default constructor.  
+- The WF 3 activity must have a public default constructor.  
   
--   Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](https://go.microsoft.com/fwlink/?LinkId=178889) for details.  
+- Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](https://go.microsoft.com/fwlink/?LinkId=178889) for details.  
   
 ## Configuring a WF 3 Activity Within an Interop Activity  
  To configure and pass data into and out of a WF 3 activity, across the interoperation boundary, the WF 3 activity’s properties and metadata properties are exposed by the <xref:System.Activities.Statements.Interop> activity. The WF 3 activity’s metadata properties (such as <xref:System.Workflow.ComponentModel.Activity.Name%2A>) are exposed through the <xref:System.Activities.Statements.Interop.ActivityMetaProperties%2A> collection. This is a collection of name-value pairs used to define the values for the WF 3 activity’s metadata properties. A metadata property is a property backed by dependency property for which the <xref:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata> flag is set.  

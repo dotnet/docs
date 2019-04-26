@@ -55,13 +55,13 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
   
  Data items within the data grid containers will support at a minimum:  
   
--   Selection Item control pattern (if the data grid is selectable)  
+- Selection Item control pattern (if the data grid is selectable)  
   
--   Scroll Item control pattern (if the data grid is scrollable)  
+- Scroll Item control pattern (if the data grid is scrollable)  
   
--   Grid Item control pattern  
+- Grid Item control pattern  
   
--   Table Item control pattern  
+- Table Item control pattern  
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  

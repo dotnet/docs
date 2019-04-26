@@ -34,17 +34,17 @@ HRESULT CertVerifyAuthenticodeLicense (
  `dwFlags`  
  [in] Optional. A combination of following values:  
   
--   AXL_REVOCATION_NO_CHECK  
+- AXL_REVOCATION_NO_CHECK  
   
--   AXL_REVOCATION_CHECK_END_CERT_ONLY  
+- AXL_REVOCATION_CHECK_END_CERT_ONLY  
   
--   AXL_REVOCATION_CHECK_ENTIRE_CHAIN  
+- AXL_REVOCATION_CHECK_ENTIRE_CHAIN  
   
--   AXL_URL_CACHE_ONLY_RETRIEVAL  
+- AXL_URL_CACHE_ONLY_RETRIEVAL  
   
--   AXL_LIFETIME_SIGNING  
+- AXL_LIFETIME_SIGNING  
   
--   AXL_TRUST_MICROSOFT_ROOT_ONLY  
+- AXL_TRUST_MICROSOFT_ROOT_ONLY  
   
  `pSignerInfo`  
  [out] To receive the signer's information. If the license wasn't signed, `dwError` is set to TRUST_E_NOSIGNATURE. It is the caller's responsibility to free resources by using the [CertFreeAuthenticodeSignerInfo](../../../../docs/framework/unmanaged-api/authenticode/certfreeauthenticodesignerinfo-function.md) function after use.  

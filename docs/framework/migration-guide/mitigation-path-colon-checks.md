@@ -14,11 +14,11 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 ## Mitigation  
  To work around the problem of a previously acceptable path that is no longer supported by the <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> and <xref:System.IO.Path.GetPathRoot%2A?displayProperty=nameWithType> methods, you can do the following:  
   
--   Manually remove the scheme from a URL. For example, remove `file://` from a URL.  
+- Manually remove the scheme from a URL. For example, remove `file://` from a URL.  
   
--   Pass the URI to a <xref:System.Uri> constructor,  and retrieve the value of the <xref:System.Uri.LocalPath%2A?displayProperty=nameWithType> property.  
+- Pass the URI to a <xref:System.Uri> constructor,  and retrieve the value of the <xref:System.Uri.LocalPath%2A?displayProperty=nameWithType> property.  
   
--   Opt out of the new path normalization by setting the `Switch.System.IO.UseLegacyPathHandling`<xref:System.AppContext> switch to `true`.  
+- Opt out of the new path normalization by setting the `Switch.System.IO.UseLegacyPathHandling`<xref:System.AppContext> switch to `true`.  
   
     ```xml  
     <runtime>  

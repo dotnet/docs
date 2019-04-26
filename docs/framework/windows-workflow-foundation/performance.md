@@ -370,25 +370,25 @@ public class Workflow1 : Activity
 
  Note that the WF4 SQL persistence provider performs more work in the database tier.  The SQL database can become a bottleneck so it is important to monitor the CPU and disk usage there.  Be sure to include the following performance counters from the SQL database when performance testing workflow applications:
 
--   PhysicalDisk\\%Disk Read Time
+- PhysicalDisk\\%Disk Read Time
 
--   PhysicalDisk\\% Disk Time
+- PhysicalDisk\\% Disk Time
 
--   PhysicalDisk\\% Disk Write Time
+- PhysicalDisk\\% Disk Write Time
 
--   PhysicalDisk\\% Avg. Disk Queue Length
+- PhysicalDisk\\% Avg. Disk Queue Length
 
--   PhysicalDisk\Avg. Disk Read Queue Length
+- PhysicalDisk\Avg. Disk Read Queue Length
 
--   PhysicalDisk\Avg. Disk Write Queue Length
+- PhysicalDisk\Avg. Disk Write Queue Length
 
--   PhysicalDisk\Current Disk Queue Length
+- PhysicalDisk\Current Disk Queue Length
 
--   Processor Information\\% Processor Time
+- Processor Information\\% Processor Time
 
--   SQLServer:Latches\Average Latch Wait Time (ms)
+- SQLServer:Latches\Average Latch Wait Time (ms)
 
--   SQLServer:Latches\Latch Waits/sec
+- SQLServer:Latches\Latch Waits/sec
 
 ### Tracking
  Workflow tracking can be used to track the progress of a workflow.  The information that is included in the tracking events is determined by a tracking profile.  The more complex the tracking profile, the more expensive tracking becomes.
@@ -401,13 +401,13 @@ public class Workflow1 : Activity
 
  Benefits to the approach of using ETW for tracking instead of SQL include:
 
--   Collection of tracking events can be separated to another process.  This gives greater flexibility in how the events are recorded.
+- Collection of tracking events can be separated to another process.  This gives greater flexibility in how the events are recorded.
 
--   ETW tracking events are easily combined with the WCF ETW events or other ETW providers such as a SQL Server or kernel provider.
+- ETW tracking events are easily combined with the WCF ETW events or other ETW providers such as a SQL Server or kernel provider.
 
--   Workflow authors do not need to alter a workflow to work better with a particular tracking implementation, such as the WF3 SQL tracking service’s batch mode.
+- Workflow authors do not need to alter a workflow to work better with a particular tracking implementation, such as the WF3 SQL tracking service’s batch mode.
 
--   An administrator can turn tracking on or off without recycling the host process.
+- An administrator can turn tracking on or off without recycling the host process.
 
  The performance benefits to ETW tracking come with a drawback.  ETW events can be lost if the system is under intense resource pressure.  The processing of events is not meant to block normal program execution and therefore it is not guaranteed that all ETW events will be broadcast to their subscribers.  This makes ETW tracking great for health monitoring but not suitable for auditing.
 

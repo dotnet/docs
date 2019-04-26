@@ -37,7 +37,7 @@ When you perform custom drawing, you can draw text in a single horizontal line s
 ## Compiling the Code  
  The previous examples require:  
   
--   <xref:System.Windows.Forms.PaintEventArgs>  `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
+- <xref:System.Windows.Forms.PaintEventArgs>  `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
 

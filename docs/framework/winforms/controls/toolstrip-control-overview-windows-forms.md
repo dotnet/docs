@@ -18,19 +18,19 @@ The Windows Forms <xref:System.Windows.Forms.ToolStrip> control and its associat
 ## Features of the ToolStrip Controls  
  Use the <xref:System.Windows.Forms.ToolStrip> control to:  
   
--   Present a common user interface across containers.  
+- Present a common user interface across containers.  
   
--   Create easily customized, commonly employed toolbars that support advanced user interface and layout features, such as docking, rafting, buttons with text and images, drop-down buttons and controls, overflow buttons, and run-time reordering of <xref:System.Windows.Forms.ToolStrip> items.  
+- Create easily customized, commonly employed toolbars that support advanced user interface and layout features, such as docking, rafting, buttons with text and images, drop-down buttons and controls, overflow buttons, and run-time reordering of <xref:System.Windows.Forms.ToolStrip> items.  
   
--   Support overflow and run-time item reordering. The overflow feature moves items to a drop-down menu when there is not enough room to display them in a <xref:System.Windows.Forms.ToolStrip>.  
+- Support overflow and run-time item reordering. The overflow feature moves items to a drop-down menu when there is not enough room to display them in a <xref:System.Windows.Forms.ToolStrip>.  
   
--   Support the typical appearance and behavior of the operating system through a common rendering model.  
+- Support the typical appearance and behavior of the operating system through a common rendering model.  
   
--   Handle events consistently for all containers and contained items, in the same way you handle events for other controls.  
+- Handle events consistently for all containers and contained items, in the same way you handle events for other controls.  
   
--   Drag items from one <xref:System.Windows.Forms.ToolStrip> to another or within a <xref:System.Windows.Forms.ToolStrip>.  
+- Drag items from one <xref:System.Windows.Forms.ToolStrip> to another or within a <xref:System.Windows.Forms.ToolStrip>.  
   
--   Create drop-down controls and user interface type editors with advanced layouts in a <xref:System.Windows.Forms.ToolStripDropDown>.  
+- Create drop-down controls and user interface type editors with advanced layouts in a <xref:System.Windows.Forms.ToolStripDropDown>.  
   
  Use the <xref:System.Windows.Forms.ToolStripControlHost> class to use other controls on a <xref:System.Windows.Forms.ToolStrip> and gain <xref:System.Windows.Forms.ToolStrip> functionality for them.  
   

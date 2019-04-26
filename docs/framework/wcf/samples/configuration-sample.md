@@ -21,15 +21,15 @@ This sample demonstrates the use of a configuration file to make a service disco
 ## Service Configuration  
  The configuration file in this sample demonstrates two features:  
   
--   Making the service discoverable over a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
+- Making the service discoverable over a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
   
--   Adjusting discovery-related information for the service’s application endpoint and adjusting some of the discovery-related settings on the standard endpoint.  
+- Adjusting discovery-related information for the service’s application endpoint and adjusting some of the discovery-related settings on the standard endpoint.  
   
  To enable discovery, a few changes must be made in the application configuration file for the service:  
   
--   A discovery endpoint must be added to the `<service>` element. This is a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint. This is a system endpoint that the runtime associates with the discovery service. The discovery service listens for messages on this endpoint.  
+- A discovery endpoint must be added to the `<service>` element. This is a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint. This is a system endpoint that the runtime associates with the discovery service. The discovery service listens for messages on this endpoint.  
   
--   A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at runtime and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.  
+- A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at runtime and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.  
   
  The following config snippet shows a service with an application endpoint and a discovery endpoint defined:  
   

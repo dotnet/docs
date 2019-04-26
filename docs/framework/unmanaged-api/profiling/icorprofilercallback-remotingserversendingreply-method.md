@@ -33,11 +33,11 @@ HRESULT RemotingServerSendingReply(
  `pCookie`  
  [in] A pointer to a GUID that will correspond with the value provided in [ICorProfilerCallback::RemotingClientReceivingReply](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingclientreceivingreply-method.md) under these conditions:  
   
--   Remoting GUID cookies are active.  
+- Remoting GUID cookies are active.  
   
--   The channel succeeds in transmitting the message.  
+- The channel succeeds in transmitting the message.  
   
--   GUID cookies are active on the client-side process.  
+- GUID cookies are active on the client-side process.  
   
  This allows easy pairing of remoting calls and the creation of a logical call stack.  
   

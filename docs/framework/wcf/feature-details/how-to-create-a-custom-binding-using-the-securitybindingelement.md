@@ -26,22 +26,22 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
   
  Additional classes are used when transport level security is provided:  
   
--   <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
+- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
   
--   <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
   
--   <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
+- <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
   
 ## Required Binding Elements  
  There are a large number of possible binding elements that can be combined into a binding. Not all of these combinations are valid. This section describes the required elements that must be present in a security binding.  
   
  Valid security bindings depend on many factors, including the following:  
   
--   Security mode.  
+- Security mode.  
   
--   Transport protocol.  
+- Transport protocol.  
   
--   The message exchange pattern (MEP) specified in the contract.  
+- The message exchange pattern (MEP) specified in the contract.  
   
  The following table shows the valid binding element stack configurations for each combination of the preceding factors. Note that these are minimal requirements. You can add additional binding elements to the binding, such as message encoding binding elements, transaction binding elements, and other binding elements.  
   

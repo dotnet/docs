@@ -38,15 +38,15 @@ ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
 ## Scaling in UI Automation Clients  
  The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] does not use logical coordinates. The following methods and properties either return physical coordinates or take them as parameters.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.TryGetClickablePoint%2A>  
+- <xref:System.Windows.Automation.AutomationElement.TryGetClickablePoint%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.ClickablePointProperty>  
+- <xref:System.Windows.Automation.AutomationElement.ClickablePointProperty>  
   
--   <xref:System.Windows.Automation.AutomationElement.FromPoint%2A>  
+- <xref:System.Windows.Automation.AutomationElement.FromPoint%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle%2A>  
+- <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle%2A>  
   
  By default, a UI Automation client application running in a non-96- [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] environment will not be able to obtain correct results from these methods and properties. For example, because the cursor position is in logical coordinates, the client cannot simply pass these coordinates to <xref:System.Windows.Automation.AutomationElement.FromPoint%2A> to obtain the element that is under the cursor. In addition, the application will not be able to correctly place windows outside its client area.  
   

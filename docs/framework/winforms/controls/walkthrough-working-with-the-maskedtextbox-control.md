@@ -15,11 +15,11 @@ ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
 # Walkthrough: Working with the MaskedTextBox Control
 Tasks illustrated in this walkthrough include:  
   
--   Initializing the <xref:System.Windows.Forms.MaskedTextBox> control  
+- Initializing the <xref:System.Windows.Forms.MaskedTextBox> control  
   
--   Using the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event handler to alert the user when a character does not conform to the mask  
+- Using the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event handler to alert the user when a character does not conform to the mask  
   
--   Assigning a type to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property and using the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler to alert the user when the value they're attempting to commit is not valid for the type  
+- Assigning a type to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property and using the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler to alert the user when the value they're attempting to commit is not valid for the type  
   
 ## Creating the Project and Adding a Control  
   

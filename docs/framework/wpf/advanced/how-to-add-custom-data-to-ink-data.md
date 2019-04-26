@@ -11,59 +11,59 @@ You can add custom data to ink that will be saved when the ink is saved as ink s
   
  Only the following types can be saved as custom data:  
   
--   <xref:System.Boolean>  
+- <xref:System.Boolean>  
   
--   <xref:System.Boolean>[]  
+- <xref:System.Boolean>[]  
   
--   <xref:System.Byte>  
+- <xref:System.Byte>  
   
--   <xref:System.Byte>[]  
+- <xref:System.Byte>[]  
   
--   <xref:System.Char>  
+- <xref:System.Char>  
   
--   <xref:System.Char>[]  
+- <xref:System.Char>[]  
   
--   <xref:System.DateTime>  
+- <xref:System.DateTime>  
   
--   <xref:System.DateTime>[]  
+- <xref:System.DateTime>[]  
   
--   <xref:System.Decimal>  
+- <xref:System.Decimal>  
   
--   <xref:System.Decimal>[]  
+- <xref:System.Decimal>[]  
   
--   <xref:System.Double>  
+- <xref:System.Double>  
   
--   <xref:System.Double>[]  
+- <xref:System.Double>[]  
   
--   <xref:System.Int16>  
+- <xref:System.Int16>  
   
--   <xref:System.Int16>[]  
+- <xref:System.Int16>[]  
   
--   <xref:System.Int32>  
+- <xref:System.Int32>  
   
--   <xref:System.Int32>[]  
+- <xref:System.Int32>[]  
   
--   <xref:System.Int64>  
+- <xref:System.Int64>  
   
--   <xref:System.Int64>[]  
+- <xref:System.Int64>[]  
   
--   <xref:System.Single>  
+- <xref:System.Single>  
   
--   <xref:System.Single>[]  
+- <xref:System.Single>[]  
   
--   <xref:System.String>  
+- <xref:System.String>  
   
--   <xref:System.UInt16>  
+- <xref:System.UInt16>  
   
--   <xref:System.UInt16>[]  
+- <xref:System.UInt16>[]  
   
--   <xref:System.UInt32>  
+- <xref:System.UInt32>  
   
--   <xref:System.UInt32>[]  
+- <xref:System.UInt32>[]  
   
--   <xref:System.UInt64>  
+- <xref:System.UInt64>  
   
--   <xref:System.UInt64>[]  
+- <xref:System.UInt64>[]  
   
 ## Example  
  The following example demonstrates how to add and retrieve custom data from a <xref:System.Windows.Ink.StrokeCollection>.  

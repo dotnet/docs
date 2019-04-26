@@ -11,11 +11,11 @@ This service identity sample demonstrates how to set the identity for a service.
 
  This sample illustrates the following features:
 
--   How to set the different types of identity on different endpoints for a service. Each type of identity has different capabilities. The type of identity to use is dependent on the type of security credentials used on the endpoint's binding.
+- How to set the different types of identity on different endpoints for a service. Each type of identity has different capabilities. The type of identity to use is dependent on the type of security credentials used on the endpoint's binding.
 
--   Identity can either be set declaratively in configuration or imperatively in code. Typically for both the client and the service you should use configuration to set the identity.
+- Identity can either be set declaratively in configuration or imperatively in code. Typically for both the client and the service you should use configuration to set the identity.
 
--   How to set a custom identity on the client. A custom identity is typically a customization of an existing type of identity that enables the client to examine other claim information provided in the service's credentials to make authorization decisions before calling the service.
+- How to set a custom identity on the client. A custom identity is typically a customization of an existing type of identity that enables the client to examine other claim information provided in the service's credentials to make authorization decisions before calling the service.
 
     > [!NOTE]
     >  This sample checks the identity of a specific certificate called identity.com and the RSA key contained within this certificate. When using the Certificate and RSA identity types in configuration on the client, an easy way to get these values is to inspect the WSDL for the service where these values are serialized.
@@ -148,7 +148,7 @@ class CustomIdentityVerifier : IdentityVerifier
   
 ### To clean up after the sample  
   
--   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+- Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
     >  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

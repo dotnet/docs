@@ -14,19 +14,19 @@ ms.assetid: a5500dec-666c-41fd-9da3-2169dd89c5eb
 # Graphics Paths in GDI+
 Paths are formed by combining lines, rectangles, and simple curves. Recall from the [Vector Graphics Overview](vector-graphics-overview.md) that the following basic building blocks have proven to be the most useful for drawing pictures:  
   
--   Lines  
+- Lines  
   
--   Rectangles  
+- Rectangles  
   
--   Ellipses  
+- Ellipses  
   
--   Arcs  
+- Arcs  
   
--   Polygons  
+- Polygons  
   
--   Cardinal splines  
+- Cardinal splines  
   
--   Bézier splines  
+- Bézier splines  
   
  In GDI+, the <xref:System.Drawing.Drawing2D.GraphicsPath> object allows you to collect a sequence of these building blocks into a single unit. The entire sequence of lines, rectangles, polygons, and curves can then be drawn with one call to the <xref:System.Drawing.Graphics.DrawPath%2A> method of the <xref:System.Drawing.Graphics> class. The following illustration shows a path created by combining a line, an arc, a Bézier spline, and a cardinal spline.  
   

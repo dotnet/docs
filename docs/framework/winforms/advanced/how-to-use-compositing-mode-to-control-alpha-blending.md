@@ -13,11 +13,11 @@ ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
 # How to: Use Compositing Mode to Control Alpha Blending
 There may be times when you want to create an off-screen bitmap that has the following characteristics:  
   
--   Colors have alpha values that are less than 255.  
+- Colors have alpha values that are less than 255.  
   
--   Colors are not alpha blended with each other as you create the bitmap.  
+- Colors are not alpha blended with each other as you create the bitmap.  
   
--   When you display the finished bitmap, colors in the bitmap are alpha blended with the background colors on the display device.  
+- When you display the finished bitmap, colors in the bitmap are alpha blended with the background colors on the display device.  
   
  To create such a bitmap, construct a blank <xref:System.Drawing.Bitmap> object, and then construct a <xref:System.Drawing.Graphics> object based on that bitmap. Set the compositing mode of the <xref:System.Drawing.Graphics> object to <xref:System.Drawing.Drawing2D.CompositingMode.SourceCopy?displayProperty=nameWithType>.  
   

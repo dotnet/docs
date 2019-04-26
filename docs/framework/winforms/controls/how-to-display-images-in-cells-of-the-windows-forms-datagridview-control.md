@@ -27,11 +27,11 @@ A picture or graphic is one of the values that you can display in a row of data.
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   An embedded icon resource named `tree.ico`.  
+- An embedded icon resource named `tree.ico`.  
   
--   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
+- References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
   
 ## See also
 

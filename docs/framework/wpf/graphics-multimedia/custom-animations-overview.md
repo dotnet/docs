@@ -22,11 +22,11 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
 ## Extending the Animation System  
  There are a number of ways to extend the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation system, depending on the level of built-in functionality you want to use.  There are three primary extensibility points in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine:  
   
--   Create a custom key frame object by inheriting from one of the *\<Type>*KeyFrame classes, such as <xref:System.Windows.Media.Animation.DoubleKeyFrame>. This approach uses most of the built-in functionality of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine.  
+- Create a custom key frame object by inheriting from one of the *\<Type>*KeyFrame classes, such as <xref:System.Windows.Media.Animation.DoubleKeyFrame>. This approach uses most of the built-in functionality of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine.  
   
--   Create your own animation class by inheriting from <xref:System.Windows.Media.Animation.AnimationTimeline> or one of the *\<Type>*AnimationBase classes.  
+- Create your own animation class by inheriting from <xref:System.Windows.Media.Animation.AnimationTimeline> or one of the *\<Type>*AnimationBase classes.  
   
--   Use per-frame callback to generate animations on a per-frame basis. This approach completely bypasses the animation and timing system.  
+- Use per-frame callback to generate animations on a per-frame basis. This approach completely bypasses the animation and timing system.  
   
  The following table describes some the scenarios for extending the animation system.  
   
@@ -41,11 +41,11 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
 ## Create a Custom Key Frame  
  Creating a custom key frame class is the simplest way to extend the animation system. Use this approach when you want to a different interpolation method for a key-frame animation.  As described in the [Key-Frame Animations Overview](key-frame-animations-overview.md), a key-frame animation uses key frame objects to generate its output values. Each key frame object performs three functions:  
   
--   Specifies a target value using its <xref:System.Windows.Media.Animation.IKeyFrame.Value%2A> property.  
+- Specifies a target value using its <xref:System.Windows.Media.Animation.IKeyFrame.Value%2A> property.  
   
--   Specifies the time at which that value should be reached using its <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A> property.  
+- Specifies the time at which that value should be reached using its <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A> property.  
   
--   Interpolates between the value of the previous key frame and its own value by implementing the InterpolateValueCore method.  
+- Interpolates between the value of the previous key frame and its own value by implementing the InterpolateValueCore method.  
   
  **Implementation Instructions**  
   
@@ -81,13 +81,13 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  Derive from the <xref:System.Windows.Media.Animation.AnimationTimeline> class and override the following members:  
   
--   <xref:System.Windows.Freezable.CreateInstanceCore%2A> – If your new class is concrete, you must override <xref:System.Windows.Freezable.CreateInstanceCore%2A> to return a new instance of your class.  
+- <xref:System.Windows.Freezable.CreateInstanceCore%2A> – If your new class is concrete, you must override <xref:System.Windows.Freezable.CreateInstanceCore%2A> to return a new instance of your class.  
   
--   <xref:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue%2A> – Override this method to return the current value of your animation. It takes three parameters: a default origin value, a default destination value, and an <xref:System.Windows.Media.Animation.AnimationClock>. Use the <xref:System.Windows.Media.Animation.AnimationClock> to obtain the current time or progress for the animation. You can choose whether to use the default origin and destination values.  
+- <xref:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue%2A> – Override this method to return the current value of your animation. It takes three parameters: a default origin value, a default destination value, and an <xref:System.Windows.Media.Animation.AnimationClock>. Use the <xref:System.Windows.Media.Animation.AnimationClock> to obtain the current time or progress for the animation. You can choose whether to use the default origin and destination values.  
   
--   <xref:System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault%2A> – Override this property to indicate whether your animation uses the default destination value specified by the <xref:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue%2A> method.  
+- <xref:System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault%2A> – Override this property to indicate whether your animation uses the default destination value specified by the <xref:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue%2A> method.  
   
--   <xref:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType%2A> – Override this property to indicate the <xref:System.Type> of output your animation produces.  
+- <xref:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType%2A> – Override this property to indicate the <xref:System.Type> of output your animation produces.  
   
  If the class does not use dependency properties to store its data or it requires extra initialization after creation, you might need to override additional methods; see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md) for more information.  
   

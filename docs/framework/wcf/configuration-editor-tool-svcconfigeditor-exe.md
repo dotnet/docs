@@ -44,11 +44,11 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
   
  The Service Configuration Editor's user interface is divided into the following areas:  
   
--   Tree View Pane, which displays configuration elements in a tree structure on the left. You can perform operations in the tree by right-clicking the nodes.  
+- Tree View Pane, which displays configuration elements in a tree structure on the left. You can perform operations in the tree by right-clicking the nodes.  
   
--   Task Pane, which displays common tasks for current elements on the lower-left of the window  
+- Task Pane, which displays common tasks for current elements on the lower-left of the window  
   
--   Detail Pane, which displays detailed settings of the configuration node selected in the Tree View on the right.  
+- Detail Pane, which displays detailed settings of the configuration node selected in the Tree View on the right.  
   
 ### Opening a Configuration File  
   
@@ -71,16 +71,16 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
 #### Creating a new Service Configuration  
  You can create a new service configuration in the following ways:  
   
--   Using a Wizard: Click the link **Create a New Service…** on the Task Pane or Summary Page to launch the wizard. You can also do so in the **File** menu -> **Add New Item**.  
+- Using a Wizard: Click the link **Create a New Service…** on the Task Pane or Summary Page to launch the wizard. You can also do so in the **File** menu -> **Add New Item**.  
   
--   Create manually: You can right-click the **Services** node and choose **New Service**.  
+- Create manually: You can right-click the **Services** node and choose **New Service**.  
   
 #### Creating a new Service Endpoint Configuration  
  You can create a new service endpoint configuration in the following ways:  
   
--   Create using a Wizard: click the link **Create a New Service Endpoint…** on the Task Pane or Summary Page to launch the wizard. You can also do so in the **File** menu -> **Add New Item**.  
+- Create using a Wizard: click the link **Create a New Service Endpoint…** on the Task Pane or Summary Page to launch the wizard. You can also do so in the **File** menu -> **Add New Item**.  
   
--   Create manually: Once you created a Service, you can right-click the **Endpoints** node and choose "**New Service Endpoint**".  
+- Create manually: Once you created a Service, you can right-click the **Endpoints** node and choose "**New Service Endpoint**".  
   
 #### Editing a Service Configuration  
   
@@ -115,9 +115,9 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
 #### Creating a new Client Endpoint Configuration  
  You can create a new client endpoint configuration in the following ways:  
   
--   Create by Wizard: Click the link **Create a New Client…** on the **Task Pane** on the lower-left of the window, or **Summary Page** to launch the wizard. You can also do so in the **File** menu -> **Add New Item**. The wizard prompts you to point to the location of the service configuration, from which the client configuration is generated. You can then choose the service endpoint to connect to.  
+- Create by Wizard: Click the link **Create a New Client…** on the **Task Pane** on the lower-left of the window, or **Summary Page** to launch the wizard. You can also do so in the **File** menu -> **Add New Item**. The wizard prompts you to point to the location of the service configuration, from which the client configuration is generated. You can then choose the service endpoint to connect to.  
   
--   Create manually: Right-click the **Endpoints** node under **Client**, and choose **New Client Endpoint**.  
+- Create manually: Right-click the **Endpoints** node under **Client**, and choose **New Client Endpoint**.  
   
 #### Editing a Client Endpoint Configuration  
   
@@ -135,27 +135,27 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
 #### Creating a New Standard Endpoint Configuration  
  You can create a new standard endpoint configuration in the following ways:  
   
--   Right-click the **Standard Endpoint** node and select **New Standard Endpoint Configuration…** Select the binding type in the dialog box and click **OK**.  
+- Right-click the **Standard Endpoint** node and select **New Standard Endpoint Configuration…** Select the binding type in the dialog box and click **OK**.  
   
--   Select the **Standard Endpoint** node and click **New Standard Endpoint Configuration…** in the **Task Pane** on the lower-left of the window.  
+- Select the **Standard Endpoint** node and click **New Standard Endpoint Configuration…** in the **Task Pane** on the lower-left of the window.  
   
  The **Creating a New Standard Endpoint** dialog box displays and lists all registered standard endpoint types.  
   
 #### Viewing and Editing a Standard Endpoint Configuration  
  You can open a standard endpoint configuration for viewing and editing in the following ways:  
   
--   Click to expand the **Standard Endpoint** node and click the respective endpoint sub-node.  
+- Click to expand the **Standard Endpoint** node and click the respective endpoint sub-node.  
   
--   Click the **Standard Endpoint** node and click the respective endpoint on the Detail pane.  
+- Click the **Standard Endpoint** node and click the respective endpoint on the Detail pane.  
   
  Attributes for the endpoint are shown in the right pane for editing.  
   
 #### Deleting a Standard Endpoint Configuration  
  You can delete a standard endpoint configuration in the following ways:  
   
--   Click to expand the **Standard Endpoint** node and right-click the respective endpoint sub-node. Use the context command **Delete Standard Endpoint Configuration** to delete the endpoint.  
+- Click to expand the **Standard Endpoint** node and right-click the respective endpoint sub-node. Use the context command **Delete Standard Endpoint Configuration** to delete the endpoint.  
   
--   Click the **Standard Endpoint** node. In the **Task** pane, click **Delete Standard Endpoint Configuration**.  
+- Click the **Standard Endpoint** node. In the **Task** pane, click **Delete Standard Endpoint Configuration**.  
   
  If the standard endpoint is in used, a warning message is displayed when you attempt to delete it: **The standard endpoint is in use. If you delete it now, please be sure to delete all of its references in other parts of the configuration (for example, in the service endpoint or client endpoint). Otherwise, the configuration will be invalid and cannot be opened next time. Are you sure you want to delete the standard endpoint?"**  
   
@@ -169,11 +169,11 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
 #### Creating a New Binding Configuration  
  You can create a new binding configuration in the following ways.  
   
--   Right-click the **Bindings** node and select **New Binding Configuration**… Select the binding type in the dialog box and click **OK**.  
+- Right-click the **Bindings** node and select **New Binding Configuration**… Select the binding type in the dialog box and click **OK**.  
   
--   Select the **Bindings** node and click **New Binding Configuration**… in the **Task Pane** on the lower-left of the window.  
+- Select the **Bindings** node and click **New Binding Configuration**… in the **Task Pane** on the lower-left of the window.  
   
--   In the service or client summary page, click **Click to Create** in the **Binding Configuration** field to create a binding configuration for the corresponding endpoint.  
+- In the service or client summary page, click **Click to Create** in the **Binding Configuration** field to create a binding configuration for the corresponding endpoint.  
   
 #### Adding Binding Element Extensions to a Custom Binding  
   
@@ -272,9 +272,9 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
 ##### Creating a new Behavior Configuration  
  You can create a new behavior configuration in two ways.  
   
--   Right-click one of the behavior nodes and select "**New Behavior Configuration…**  
+- Right-click one of the behavior nodes and select "**New Behavior Configuration…**  
   
--   Select one of the behavior nodes and click the **New Behavior Configuration**… in the **Task Pane** on the lower-left of the window.  
+- Select one of the behavior nodes and click the **New Behavior Configuration**… in the **Task Pane** on the lower-left of the window.  
   
 ##### Adding Behavior Element Extensions to a Behavior  
   
@@ -313,13 +313,13 @@ The Windows Communication Foundation (WCF) Service Configuration Editor (SvcConf
 #### Extensions  
  New binding extensions, binding element extensions, standard endpoint extensions and behavior extensions can be registered for use in WCF configuration. Extensions are name/type pairs. The name defines the name of the extension in configuration, whereas the type implements the extension. There are four types of extensions:  
   
--   Binding extensions define an entire binding type. Example: `basicHttpBinding`.  
+- Binding extensions define an entire binding type. Example: `basicHttpBinding`.  
   
--   Binding element extensions define an element of a binding. Example: `textMessageEncoding`.  
+- Binding element extensions define an element of a binding. Example: `textMessageEncoding`.  
   
--   Standard endpoint extensions define an entire standard endpoint. Example: `discoveryEndpoint`.  
+- Standard endpoint extensions define an entire standard endpoint. Example: `discoveryEndpoint`.  
   
--   Behavior element extensions define an element of a behavior. Example: `clientVia`.  
+- Behavior element extensions define an element of a behavior. Example: `clientVia`.  
   
  Extensions that have been registered in configuration can be used like any other WCF component of the same type.  
   

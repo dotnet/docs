@@ -8,9 +8,9 @@ ms.author: "ronpet"
 # Serialization and Metadata
 If your app serializes and deserializes objects, you may need to add entries to your runtime directives (.rd.xml) file to ensure that the necessary metadata is present at run time. There are two categories of serializers, and each requires different handling in your runtime directives file:  
   
--   Reflection-based third-party serializers. These require modifications to your runtime directives file, and are discussed in the next section.  
+- Reflection-based third-party serializers. These require modifications to your runtime directives file, and are discussed in the next section.  
   
--   Non-reflection based serializers found in the .NET Framework class library. These may require modifications to your runtime directives file, and are discussed in the [Microsoft serializers](#Microsoft) section.  
+- Non-reflection based serializers found in the .NET Framework class library. These may require modifications to your runtime directives file, and are discussed in the [Microsoft serializers](#Microsoft) section.  
   
 <a name="ThirdParty"></a>   
 ## Third-party serializers  

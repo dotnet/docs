@@ -166,7 +166,7 @@ ChannelFactory<ICalculator> cf = new    ChannelFactory<ICalculator>(endpoint.Bin
   
 #### To clean up after the sample  
   
--   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+- Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
     >  This script does not remove service certificates on a client when running this sample across machines. If you have run Windows Communication Foundation (WCF) samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>`. For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  

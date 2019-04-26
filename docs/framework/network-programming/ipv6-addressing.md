@@ -33,11 +33,11 @@ In the Internet Protocol version 6 (IPv6), addresses are 128 bits long. One reas
 ## Text Representation  
  The following are the three conventional forms used to represent the IPv6 addresses as text strings:  
   
--   **Colon-hexadecimal form**. This is the preferred form n:n:n:n:n:n:n:n. Each n represents the hexadecimal value of one of the eight 16-bit elements of the address. For example: `3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562`.  
+- **Colon-hexadecimal form**. This is the preferred form n:n:n:n:n:n:n:n. Each n represents the hexadecimal value of one of the eight 16-bit elements of the address. For example: `3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562`.  
   
--   **Compressed form**. Due to the address length, it is common to have addresses containing a long string of zeros. To simplify writing these addresses, use the compressed form, in which a single contiguous sequence of 0 blocks are represented by a double-colon symbol (::). This symbol can appear only once in an address. For example, the multicast address `FFED:0:0:0:0:BA98:3210:4562` in compressed form is `FFED::BA98:3210:4562`. The unicast address `3FFE:FFFF:0:0:8:800:20C4:0` in compressed form is `3FFE:FFFF::8:800:20C4:0`. The loopback address `0:0:0:0:0:0:0:1` in compressed form is `::`1. The unspecified address `0:0:0:0:0:0:0:0` in compressed form is `::`.  
+- **Compressed form**. Due to the address length, it is common to have addresses containing a long string of zeros. To simplify writing these addresses, use the compressed form, in which a single contiguous sequence of 0 blocks are represented by a double-colon symbol (::). This symbol can appear only once in an address. For example, the multicast address `FFED:0:0:0:0:BA98:3210:4562` in compressed form is `FFED::BA98:3210:4562`. The unicast address `3FFE:FFFF:0:0:8:800:20C4:0` in compressed form is `3FFE:FFFF::8:800:20C4:0`. The loopback address `0:0:0:0:0:0:0:1` in compressed form is `::`1. The unspecified address `0:0:0:0:0:0:0:0` in compressed form is `::`.  
   
--   **Mixed form**. This form combines IPv4 and IPv6 addresses. In this case, the address format is n:n:n:n:n:n:d.d.d.d, where each n represents the hexadecimal values of the six IPv6 high-order 16-bit address elements, and each d represents the decimal value of an IPv4 address.  
+- **Mixed form**. This form combines IPv4 and IPv6 addresses. In this case, the address format is n:n:n:n:n:n:d.d.d.d, where each n represents the hexadecimal values of the six IPv6 high-order 16-bit address elements, and each d represents the decimal value of an IPv4 address.  
   
 ## Address Types  
  The leading bits in the address define the specific IPv6 address type. The variable-length field containing these leading bits is called a Format Prefix (FP).  
@@ -52,17 +52,17 @@ In the Internet Protocol version 6 (IPv6), addresses are 128 bits long. One reas
   
  IPv6 defines the following address types:  
   
--   **Unicast address**. An identifier for a single interface. A packet sent to this address is delivered to the identified interface. The unicast addresses are distinguished from the multicast addresses by the value of the high-order octet. The multicast addresses' high-order octet has the hexadecimal value of FF. Any other value for this octet identifies a unicast address. The following are different types of unicast addresses:  
+- **Unicast address**. An identifier for a single interface. A packet sent to this address is delivered to the identified interface. The unicast addresses are distinguished from the multicast addresses by the value of the high-order octet. The multicast addresses' high-order octet has the hexadecimal value of FF. Any other value for this octet identifies a unicast address. The following are different types of unicast addresses:  
   
-    -   **Link-local addresses**. These addresses are used on a single link and have the following format: FE80::*InterfaceID*. Link-local addresses are used between nodes on a link for auto-address configuration, neighbor discovery, or when no routers are present. A link-local address is used primarily at startup and when the system has not yet acquired addresses of larger scope.  
+    - **Link-local addresses**. These addresses are used on a single link and have the following format: FE80::*InterfaceID*. Link-local addresses are used between nodes on a link for auto-address configuration, neighbor discovery, or when no routers are present. A link-local address is used primarily at startup and when the system has not yet acquired addresses of larger scope.  
   
-    -   **Site-local addresses**. These addresses are used on a single site and have the following format: FEC0::*SubnetID*:*InterfaceID*. The site-local addresses are used for addressing inside a site without the need for a global prefix.  
+    - **Site-local addresses**. These addresses are used on a single site and have the following format: FEC0::*SubnetID*:*InterfaceID*. The site-local addresses are used for addressing inside a site without the need for a global prefix.  
   
-    -   **Global IPv6 unicast addresses**. These addresses can be used across the Internet and have the following format: 010(FP, 3 bits) TLA ID (13 bits) Reserved (8 bits) NLA ID (24 bits) SLA ID (16 bits) *InterfaceID* (64 bits).  
+    - **Global IPv6 unicast addresses**. These addresses can be used across the Internet and have the following format: 010(FP, 3 bits) TLA ID (13 bits) Reserved (8 bits) NLA ID (24 bits) SLA ID (16 bits) *InterfaceID* (64 bits).  
   
--   **Multicast address**. An identifier for a set of interfaces (typically belonging to different nodes). A packet sent to this address is delivered to all the interfaces identified by the address. The multicast address types supersede the IPv4 broadcast addresses.  
+- **Multicast address**. An identifier for a set of interfaces (typically belonging to different nodes). A packet sent to this address is delivered to all the interfaces identified by the address. The multicast address types supersede the IPv4 broadcast addresses.  
   
--   **Anycast address**. An identifier for a set of interfaces (typically belonging to different nodes). A packet sent to this address is delivered to only one interface identified by the address. This is the nearest interface as identified by routing metrics. Anycast addresses are taken from the unicast address space and are not syntactically distinguishable. The addressed interface performs the distinction between unicast and anycast addresses as a function of its configuration.  
+- **Anycast address**. An identifier for a set of interfaces (typically belonging to different nodes). A packet sent to this address is delivered to only one interface identified by the address. This is the nearest interface as identified by routing metrics. Anycast addresses are taken from the unicast address space and are not syntactically distinguishable. The addressed interface performs the distinction between unicast and anycast addresses as a function of its configuration.  
   
  In general, a node always has a link-local address. It might have a site-local address and one or more global addresses.  
   

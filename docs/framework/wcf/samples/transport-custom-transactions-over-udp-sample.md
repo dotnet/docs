@@ -44,9 +44,9 @@ int bytesSent = this.socket.SendTo(txmsgBuffer, 0, txmsgBuffer.Length, SocketFla
   
  For custom transaction flow transport, the client implementation must know what service operations require transaction flow and to pass this information to WCF. There should also be a mechanism for transmitting the user transaction to the transport layer. This sample uses "WCF message inspectors" to obtain this information. The client message inspector implemented here, which is called `TransactionFlowInspector`, performs the following tasks:  
   
--   Determines whether a transaction must be flowed for a given message action (this takes place in `IsTxFlowRequiredForThisOperation()`).  
+- Determines whether a transaction must be flowed for a given message action (this takes place in `IsTxFlowRequiredForThisOperation()`).  
   
--   Attaches the current ambient transaction to the message using `TransactionFlowProperty`, if a transaction is required to be flowed (this is done in `BeforeSendRequest()`).  
+- Attaches the current ambient transaction to the message using `TransactionFlowProperty`, if a transaction is required to be flowed (this is done in `BeforeSendRequest()`).  
   
 ```  
 public class TransactionFlowInspector : IClientMessageInspector  

@@ -22,17 +22,17 @@ ms.author: "mairaw"
   
  Managed code offers several ways to restrict method access:  
   
--   Limit the scope of accessibility to the class, assembly, or derived classes, if they can be trusted. This is the simplest way to limit method access. Note that, in general, derived classes can be less trustworthy than the class they derive from, though in some cases they share the parent class's identity. In particular, do not infer trust from the keyword **protected**, which is not necessarily used in the security context.  
+- Limit the scope of accessibility to the class, assembly, or derived classes, if they can be trusted. This is the simplest way to limit method access. Note that, in general, derived classes can be less trustworthy than the class they derive from, though in some cases they share the parent class's identity. In particular, do not infer trust from the keyword **protected**, which is not necessarily used in the security context.  
   
--   Limit the method access to callers of a specified identity--essentially, any particular [evidence](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7y5x1hcd%28v=vs.100%29) (strong name, publisher, zone, and so on) you choose.  
+- Limit the method access to callers of a specified identity--essentially, any particular [evidence](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7y5x1hcd%28v=vs.100%29) (strong name, publisher, zone, and so on) you choose.  
   
--   Limit the method access to callers having whatever permissions you select.  
+- Limit the method access to callers having whatever permissions you select.  
   
  Similarly, declarative security allows you to control inheritance of classes. You can use **InheritanceDemand** to do the following:  
   
--   Require derived classes to have a specified identity or permission.  
+- Require derived classes to have a specified identity or permission.  
   
--   Require derived classes that override specific methods to have a specified identity or permission.  
+- Require derived classes that override specific methods to have a specified identity or permission.  
   
  The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
   

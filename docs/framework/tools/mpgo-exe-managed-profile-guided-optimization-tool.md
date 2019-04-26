@@ -96,9 +96,9 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
 ## Using Mpgo.exe from Visual Studio  
  You can run Mpgo.exe from Visual Studio (see the article [How to: Specify Build Events (C#)](/visualstudio/ide/how-to-specify-build-events-csharp)) with the following restrictions:  
   
--   You cannot use quoted paths with trailing slash marks, because Visual Studio macros also use trailing slash marks by default. (For example, `–OutDir "C:\Output Folder\"` is invalid.) To work around this restriction, you can escape the trailing slash. (For example, use `-OutDir "$(OutDir)\"` instead.)  
+- You cannot use quoted paths with trailing slash marks, because Visual Studio macros also use trailing slash marks by default. (For example, `–OutDir "C:\Output Folder\"` is invalid.) To work around this restriction, you can escape the trailing slash. (For example, use `-OutDir "$(OutDir)\"` instead.)  
   
--   By default, Mpgo.exe is not on the Visual Studio build path. You must either add the path to Visual Studio or specify the full path on the Mpgo command line. You can use either the `–Scenario` or the `–Import` parameter in the post-build event in Visual Studio. However, the typical process is to use `–Scenario` one time from a Developer Command Prompt for Visual Studio, and then use `–Import` to update the optimized assemblies after each build; for example:  `"C:\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\mpgo.exe" -import "$(OutDir)tmp" -assemblylist "$(TargetPath)" -outdir "$(OutDir)\"`.  
+- By default, Mpgo.exe is not on the Visual Studio build path. You must either add the path to Visual Studio or specify the full path on the Mpgo command line. You can use either the `–Scenario` or the `–Import` parameter in the post-build event in Visual Studio. However, the typical process is to use `–Scenario` one time from a Developer Command Prompt for Visual Studio, and then use `–Import` to update the optimized assemblies after each build; for example:  `"C:\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\mpgo.exe" -import "$(OutDir)tmp" -assemblylist "$(TargetPath)" -outdir "$(OutDir)\"`.  
   
 <a name="samples"></a>   
 ## Examples  

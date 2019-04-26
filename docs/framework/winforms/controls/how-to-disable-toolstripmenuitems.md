@@ -19,7 +19,7 @@ You can limit or broaden the commands a user may make by enabling and disabling 
   
 ### To disable a menu item programmatically  
   
--   Within the method where you set the properties of the menu item, add code to set the <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A> property to `false`.  
+- Within the method where you set the properties of the menu item, add code to set the <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A> property to `false`.  
   
     ```vb  
     MenuItem1.Enabled = False  

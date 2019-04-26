@@ -28,23 +28,23 @@ The internal architecture of [!INCLUDE[TLA2#tla_winclient](../../../../includes/
   
  The features of the graphics hardware that most impact the rendering tier levels are:  
   
--   **Video RAM** The amount of video memory on the graphics hardware determines the size and number of buffers that can be used for compositing graphics.  
+- **Video RAM** The amount of video memory on the graphics hardware determines the size and number of buffers that can be used for compositing graphics.  
   
--   **Pixel Shader** A pixel shader is a graphics processing function that calculates effects on a per-pixel basis. Depending on the resolution of the displayed graphics, there could be several million pixels that need to be processed for each display frame.  
+- **Pixel Shader** A pixel shader is a graphics processing function that calculates effects on a per-pixel basis. Depending on the resolution of the displayed graphics, there could be several million pixels that need to be processed for each display frame.  
   
--   **Vertex Shader** A vertex shader is a graphics processing function that performs mathematical operations on the vertex data of the object.  
+- **Vertex Shader** A vertex shader is a graphics processing function that performs mathematical operations on the vertex data of the object.  
   
--   **Multitexture Support** Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
+- **Multitexture Support** Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
   
  The pixel shader, vertex shader, and multitexture features are used to define specific [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version levels, which, in turn, are used to define the different rendering tiers in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
  The features of the graphics hardware determine the rendering capability of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] system defines three rendering tiers:  
   
--   **Rendering Tier 0** No graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is less than version 7.0.  
+- **Rendering Tier 0** No graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is less than version 7.0.  
   
--   **Rendering Tier 1** Partial graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 7.0, and **lesser** than version 9.0.  
+- **Rendering Tier 1** Partial graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 7.0, and **lesser** than version 9.0.  
   
--   **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
+- **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
   
  For more information on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering tiers, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  
   

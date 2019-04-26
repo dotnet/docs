@@ -8,9 +8,9 @@ Windows Communication Foundation (WCF) uses the .NET configuration system and al
   
  Configuration settings defined by WCF are located in the `<system.serviceModel>` section group. For more information about how to configure a WCF service, see the following topics:  
   
--   [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
+- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
   
--   [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)  
+- [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)  
   
  Application-defined configurations settings are defined in the `<appSettings>` section group. For more information about application settings in .NET configuration files, see [\<appSettings>](https://go.microsoft.com/fwlink/?LinkId=95159).  
   

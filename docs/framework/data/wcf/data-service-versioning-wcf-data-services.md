@@ -16,9 +16,9 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 ### Data Model Changes that Recommend a New Data Service Version
  When considering whether to publish a new version of a data service, it is important to understand how the different kinds of changes may affect client applications. Changes to a data service that might require you to create a new version of a data service can be divided into the following two categories:
 
--   Changes to the service contract—which include updates to service operations, changes to the accessibility of entity sets (feeds), version changes, and other changes to service behaviors.
+- Changes to the service contract—which include updates to service operations, changes to the accessibility of entity sets (feeds), version changes, and other changes to service behaviors.
 
--   Changes to the data contract—which include changes to the data model, feed formats, or feed customizations.
+- Changes to the data contract—which include changes to the data model, feed formats, or feed customizations.
 
  The following table details for which kinds of changes you should consider publishing a new version of the data service:
 
@@ -38,9 +38,9 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 ### How to Version a Data Service
  When required, a new data service version is defined by creating a new instance of the service with an updated service contract or data model. This new service is then exposed by using a new URI endpoint, which differentiates it from the previous version. For example:
 
--   Old version: `http://services.odata.org/Northwind/v1/Northwind.svc/`
+- Old version: `http://services.odata.org/Northwind/v1/Northwind.svc/`
 
--   New version: `http://services.odata.org/Northwind/v2/Northwind.svc/`
+- New version: `http://services.odata.org/Northwind/v2/Northwind.svc/`
 
  When upgrading a data service, clients will need to also be updated based on the new data service metadata and to use the new root URI. When possible, you should maintain the previous version of the data service to support clients that have not yet been upgraded to use the new version. Older versions of a data service can be removed when they are no longer needed. You should consider maintaining the data service endpoint URI in an external configuration file.
 

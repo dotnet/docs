@@ -8,13 +8,13 @@ ms.assetid: b8451735-8046-478f-912b-40870a6c0c3a
   
 ## In this topic  
   
--   [Using WorkflowIdentity](using-workflowidentity-and-versioning.md#UsingWorkflowIdentity)  
+- [Using WorkflowIdentity](using-workflowidentity-and-versioning.md#UsingWorkflowIdentity)  
   
-    -   [Side-by-side Execution using WorkflowIdentity](using-workflowidentity-and-versioning.md#SxS)  
+    - [Side-by-side Execution using WorkflowIdentity](using-workflowidentity-and-versioning.md#SxS)  
   
--   [Upgrading .NET Framework 4 Persistence Databases to Support Workflow Versioning](using-workflowidentity-and-versioning.md#UpdatingWF4PersistenceDatabases)  
+- [Upgrading .NET Framework 4 Persistence Databases to Support Workflow Versioning](using-workflowidentity-and-versioning.md#UpdatingWF4PersistenceDatabases)  
   
-    -   [To upgrade the database schema](using-workflowidentity-and-versioning.md#ToUpgrade)  
+    - [To upgrade the database schema](using-workflowidentity-and-versioning.md#ToUpgrade)  
   
 ## <a name="UsingWorkflowIdentity"></a> Using WorkflowIdentity  
  To use <xref:System.Activities.WorkflowIdentity>, create an instance, configure it, and associate it with a <xref:System.Activities.WorkflowApplication> instance. A <xref:System.Activities.WorkflowIdentity> instance contains three identifying pieces of information. <xref:System.Activities.WorkflowIdentity.Name%2A> and <xref:System.Activities.WorkflowIdentity.Version%2A> contain a name and a <xref:System.Version> and are required, and <xref:System.Activities.WorkflowIdentity.Package%2A> is optional and can be used to specify an additional string containing information such as assembly name or other desired information. A <xref:System.Activities.WorkflowIdentity> is unique if any of its three properties are different from another <xref:System.Activities.WorkflowIdentity>.  

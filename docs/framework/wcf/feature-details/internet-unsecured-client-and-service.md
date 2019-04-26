@@ -24,9 +24,9 @@ The following illustration shows an example of a public, unsecured Windows Commu
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code shows how to create an endpoint with no security. By default, the <xref:System.ServiceModel.BasicHttpBinding> has the security mode set to <xref:System.ServiceModel.BasicHttpSecurityMode.None>.  
@@ -64,9 +64,9 @@ The following illustration shows an example of a public, unsecured Windows Commu
 ## Client  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone client using the code (and client code).  
+- Create a stand-alone client using the code (and client code).  
   
--   Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
+- Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  

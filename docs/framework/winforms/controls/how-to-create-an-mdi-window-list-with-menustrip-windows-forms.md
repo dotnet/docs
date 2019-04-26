@@ -69,11 +69,11 @@ Use the multiple-document interface (MDI) to create applications that can open s
 ## Compiling the Code  
  This example requires:  
   
--   Two <xref:System.Windows.Forms.Form> controls named `Form1` and `Form2`.  
+- Two <xref:System.Windows.Forms.Form> controls named `Form1` and `Form2`.  
   
--   A <xref:System.Windows.Forms.MenuStrip> control on `Form1` named `menuStrip1`, and a <xref:System.Windows.Forms.MenuStrip> control on `Form2` named `menuStrip2`.  
+- A <xref:System.Windows.Forms.MenuStrip> control on `Form1` named `menuStrip1`, and a <xref:System.Windows.Forms.MenuStrip> control on `Form2` named `menuStrip2`.  
   
--   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
 

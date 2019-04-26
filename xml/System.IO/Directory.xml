@@ -3468,7 +3468,10 @@ Directory::CreateDirectory("Public\\Html");
  Trailing spaces are removed from the end of the path parameters before moving the directory.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+
+
+> [!NOTE]
+>  Starting with .NET Core 3.0, the `Move` method throws an <xref:System.IO.IOException> in all platforms when the `destDirName` already exists. In .NET Core 2.2 and previous versions, the exception was only thrown on Windows, and other platforms could either fail or overwrite the `destDirName`. See [C++ rename](https://linux.die.net/man/2/rename).
    
   
 ## Examples  
@@ -3476,14 +3479,14 @@ Directory::CreateDirectory("Public\\Html");
   
  [!code-csharp[System.IO.Directory#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Directory/CS/class6.cs#14)]
  [!code-vb[System.IO.Directory#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Directory/VB/class6.vb#14)]  
-  
+
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.IOException">An attempt was made to move a directory to a different volume.  
+        <exception cref="T:System.IO.IOException">An attempt was made to move a directory to a different volume.
   
  -or-  
   
- <paramref name="destDirName" /> already exists.  
+ <paramref name="destDirName" /> already exists. See the Note in the Remarks section.
   
  -or-  
   

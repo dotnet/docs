@@ -26,11 +26,11 @@ In this task, you will create an empty Windows Presentation Foundation (WPF) app
   
 9. In the **Add Reference** dialog box, click the **.NET** tab, hold down the CTRL key, select the following assemblies, and then click **OK**:  
   
-    -   System.Activities  
+    - System.Activities  
   
-    -   System.Activities.Presentation  
+    - System.Activities.Presentation  
   
-    -   System.Activities.Core.Presentation  
+    - System.Activities.Core.Presentation  
   
 10. Click **OK**.  
   

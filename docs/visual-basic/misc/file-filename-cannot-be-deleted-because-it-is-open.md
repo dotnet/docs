@@ -10,7 +10,7 @@ A deletion is being attempted on an open file.
   
 ## To correct this error  
   
--   Close the file before deleting it.  
+- Close the file before deleting it.  
   
 ## See also
 

@@ -39,13 +39,13 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  Specifically, the four account types include:  
   
--   Local User: Machine-only user profile. For example: `MachineName\Administrator` or `MachineName\ProfileName`.  
+- Local User: Machine-only user profile. For example: `MachineName\Administrator` or `MachineName\ProfileName`.  
   
--   Local System: The built-in account SYSTEM on a machine that is not joined to a domain.  
+- Local System: The built-in account SYSTEM on a machine that is not joined to a domain.  
   
--   Domain User: A user account on a Windows domain. For example: `DomainName\ProfileName`.  
+- Domain User: A user account on a Windows domain. For example: `DomainName\ProfileName`.  
   
--   Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
+- Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
   
 > [!NOTE]
 >  The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  
@@ -79,15 +79,15 @@ When using Windows authentication as a security mechanism, the Security Support 
   
 2. Require SSPI negotiation:  
   
-    1.  If you are using standard bindings, set the `NegotiateServiceCredential` property to `true`.  
+    1. If you are using standard bindings, set the `NegotiateServiceCredential` property to `true`.  
   
-    2.  If you are using custom bindings, set the `AuthenticationMode` attribute of the `Security` element to `SspiNegotiated`.  
+    2. If you are using custom bindings, set the `AuthenticationMode` attribute of the `Security` element to `SspiNegotiated`.  
   
 3. Require the SSPI negotiation to use Kerberos by disallowing the use of NTLM:  
   
-    1.  Do this in code, with the following statement: `ChannelFactory.Credentials.Windows.AllowNtlm = false`  
+    1. Do this in code, with the following statement: `ChannelFactory.Credentials.Windows.AllowNtlm = false`  
   
-    2.  Or you can do this in the configuration file by setting the `allowNtlm` attribute to `false`. This attribute is contained in the [\<windows>](../../../../docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
+    2. Or you can do this in the configuration file by setting the `allowNtlm` attribute to `false`. This attribute is contained in the [\<windows>](../../../../docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
   
 ### NTLM Protocol  
   

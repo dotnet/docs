@@ -48,9 +48,9 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
 ## Defining the Support Type for a Custom Markup Extension  
  When you use .NET Framework XAML Services or frameworks that build on .NET Framework XAML Services, you have two choices for how to name the markup extension support type. The type name is relevant to how XAML object writers attempt to access and invoke a markup extension support type when they encounter a markup extension usage in XAML. Use one of the following naming strategies:  
   
--   Name the type name to be an exact match to the XAML markup usage token. For example, to support a `{Collate ...}` extension usage, name the support type `Collate`.  
+- Name the type name to be an exact match to the XAML markup usage token. For example, to support a `{Collate ...}` extension usage, name the support type `Collate`.  
   
--   Name the type name to be the usage string token plus the suffix `Extension`. For example, to support a `{Collate ...}` extension usage, name the support type `CollateExtension`.  
+- Name the type name to be the usage string token plus the suffix `Extension`. For example, to support a `{Collate ...}` extension usage, name the support type `CollateExtension`.  
   
  The order of lookup is to look for the `Extension`-suffixed class name first and then look for the class name without the `Extension` suffix.  
   
@@ -75,9 +75,9 @@ public Collate(CollationMode collationMode) {...}
   
  The processing works conceptually as if the markup extension is an object to be created, and then its member values are set. Each specified property to set is evaluated similar to how a specified member can be set on a created object when XAML is parsed. There are two important differences:  
   
--   As noted previously, a markup extension support type does not need to have a default constructor in order to be instantiated in XAML. Its object construction is deferred until its possible arguments in the text syntax are tokenized and evaluated as either positional or named arguments, and the appropriate constructor is called at that time.  
+- As noted previously, a markup extension support type does not need to have a default constructor in order to be instantiated in XAML. Its object construction is deferred until its possible arguments in the text syntax are tokenized and evaluated as either positional or named arguments, and the appropriate constructor is called at that time.  
   
--   Markup extensions usages can be nested. The innermost markup extension is evaluated first. Therefore, you can assume such a usage and declare one of the construction parameters to be a type that requires a value converter (such as a markup extension) to produce.  
+- Markup extensions usages can be nested. The innermost markup extension is evaluated first. Therefore, you can assume such a usage and declare one of the construction parameters to be a type that requires a value converter (such as a markup extension) to produce.  
   
  A reliance on such processing was shown in the previous example. The .NET Framework XAML Services XAML object writer processes enumeration constant names into enumerated values at a native level.  
   
@@ -118,9 +118,9 @@ public Collate(CollationMode collationMode, object collateThis) {...}
   
  <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> reports the <xref:System.Type> information for the object type that <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns. By its pure signature, <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns <xref:System.Object>. But various consumers might want more precise return type information. This includes:  
   
--   Designers and IDEs, who might be able to provide type-aware support for markup extension usages.  
+- Designers and IDEs, who might be able to provide type-aware support for markup extension usages.  
   
--   Advanced implementations of `SetMarkupExtension` handlers on target classes, which might rely on reflection to determine a markup extension's return type instead of branching on specific known <xref:System.Windows.Markup.MarkupExtension> implementations by name.  
+- Advanced implementations of `SetMarkupExtension` handlers on target classes, which might rely on reflection to determine a markup extension's return type instead of branching on specific known <xref:System.Windows.Markup.MarkupExtension> implementations by name.  
   
 <a name="serialization_of_markup_extension_usages"></a>   
 ## Serialization of Markup Extension Usages  

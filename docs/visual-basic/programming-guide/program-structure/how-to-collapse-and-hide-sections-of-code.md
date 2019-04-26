@@ -14,7 +14,7 @@ The `#Region` directive enables you to collapse and hide sections of code in Vis
   
 ### To collapse and hide a section of code  
   
--   Place the section of code between the `#Region` and `#End Region` statements, as in the following example:  
+- Place the section of code between the `#Region` and `#End Region` statements, as in the following example:  
   
      [!code-vb[VbVbalrConditionalComp#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#6)]  
   

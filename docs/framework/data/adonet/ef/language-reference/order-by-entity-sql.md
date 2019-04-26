@@ -73,23 +73,23 @@ ORDER BY ...
 ## Restricted keywords  
  The following keywords must be enclosed in quotation marks when used in an `ORDER BY` clause:  
   
--   CROSS  
+- CROSS  
   
--   FULL  
+- FULL  
   
--   KEY  
+- KEY  
   
--   LEFT  
+- LEFT  
   
--   ORDER  
+- ORDER  
   
--   OUTER  
+- OUTER  
   
--   RIGHT  
+- RIGHT  
   
--   ROW  
+- ROW  
   
--   VALUE  
+- VALUE  
   
 ## Ordering Nested Queries  
  In the Entity Framework, a nested expression can be placed anywhere in the query; the order of a nested query is not preserved.  

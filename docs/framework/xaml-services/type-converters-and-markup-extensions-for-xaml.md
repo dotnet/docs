@@ -16,13 +16,13 @@ Type converters and markup extensions are two techniques that XAML type systems 
 ## Value Converters  
  In XAML, value converters are used for various scenarios. The following list shows the different types of value converters in XAML:  
   
--   Type converter  
+- Type converter  
   
--   Markup extension  
+- Markup extension  
   
--   Value serializer  
+- Value serializer  
   
--   Related class or support class that provides the logic for a XAML text syntax  
+- Related class or support class that provides the logic for a XAML text syntax  
   
 <a name="type_converters"></a>   
 ## Type Converters  

@@ -37,15 +37,15 @@ The `TextFieldParser` object provides a way to easily and efficiently parse stru
 ## Robust programming  
  The following conditions may cause an exception:  
   
--   A row cannot be parsed using the specified format (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). The exception message specifies the line causing the exception, while the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property is assigned the text contained in the line.  
+- A row cannot be parsed using the specified format (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). The exception message specifies the line causing the exception, while the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property is assigned the text contained in the line.  
   
--   The specified file does not exist (<xref:System.IO.FileNotFoundException>).  
+- The specified file does not exist (<xref:System.IO.FileNotFoundException>).  
   
--   A partial-trust situation in which the user does not have sufficient permissions to access the file. (<xref:System.Security.SecurityException>).  
+- A partial-trust situation in which the user does not have sufficient permissions to access the file. (<xref:System.Security.SecurityException>).  
   
--   The path is too long (<xref:System.IO.PathTooLongException>).  
+- The path is too long (<xref:System.IO.PathTooLongException>).  
   
--   The user does not have sufficient permissions to access the file (<xref:System.UnauthorizedAccessException>).  
+- The user does not have sufficient permissions to access the file (<xref:System.UnauthorizedAccessException>).  
   
 ## See also
 

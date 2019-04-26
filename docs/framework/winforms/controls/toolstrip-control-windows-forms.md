@@ -67,13 +67,13 @@ ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
  [How to: Implement a Custom ToolStripRenderer](how-to-implement-a-custom-toolstriprenderer.md)  
  Describes how to customize the appearance of a <xref:System.Windows.Forms.ToolStrip> control by implementing a class that derives from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
--   [How to: Create a Basic Windows Forms ToolStrip with Standard Items Using the Designer](create-a-basic-wf-toolstrip-with-standard-items-using-the-designer.md)  
+- [How to: Create a Basic Windows Forms ToolStrip with Standard Items Using the Designer](create-a-basic-wf-toolstrip-with-standard-items-using-the-designer.md)  
   
--   [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)  
+- [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)  
   
--   [Walkthrough: Creating a Professionally Styled ToolStrip Control](walkthrough-creating-a-professionally-styled-toolstrip-control.md)  
+- [Walkthrough: Creating a Professionally Styled ToolStrip Control](walkthrough-creating-a-professionally-styled-toolstrip-control.md)  
   
--   [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)  
+- [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)  
   
 ## Reference  
  <xref:System.Windows.Forms.ToolStrip> class  

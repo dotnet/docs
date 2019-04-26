@@ -19,7 +19,7 @@ When you place a <xref:System.Windows.Forms.TabControl> control on your form, it
   
 ### To add or remove a tab using the designer  
   
--   On the control's smart tag, click **Add Tab** or **Remove Tab**  
+- On the control's smart tag, click **Add Tab** or **Remove Tab**  
   
      -or-  
   

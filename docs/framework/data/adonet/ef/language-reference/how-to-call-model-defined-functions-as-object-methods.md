@@ -19,9 +19,9 @@ This topic describes how to call a model-defined function as a method on an <xre
   
 2. Add a common language runtime (CLR) method to your <xref:System.Data.Objects.ObjectContext> class that does the following:  
   
-    -   Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively. Function name resolution for LINQ is case sensitive.  
+    - Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively. Function name resolution for LINQ is case sensitive.  
   
-    -   Returns the results of the <xref:System.Linq.IQueryProvider.Execute%2A> method that is returned by the <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> property.  
+    - Returns the results of the <xref:System.Linq.IQueryProvider.Execute%2A> method that is returned by the <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> property.  
   
 3. Call the method as a member on an instance of the <xref:System.Data.Objects.ObjectContext> class.  
   
@@ -29,11 +29,11 @@ This topic describes how to call a model-defined function as a method on an <xre
   
 1. Add a class to your application with a static method that does the following:  
   
-    -   Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively.  
+    - Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively.  
   
-    -   Accepts an <xref:System.Linq.IQueryable> argument.  
+    - Accepts an <xref:System.Linq.IQueryable> argument.  
   
-    -   Returns the results of the <xref:System.Linq.IQueryProvider.Execute%2A> method that is returned by the <xref:System.Linq.IQueryable.Provider%2A> property.  
+    - Returns the results of the <xref:System.Linq.IQueryProvider.Execute%2A> method that is returned by the <xref:System.Linq.IQueryable.Provider%2A> property.  
   
 2. Call the method as a member a static method on the custom class  
   

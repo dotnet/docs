@@ -15,9 +15,9 @@ ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 # How to: Control the Availability of a Variable (Visual Basic)
 You control the availability of a variable by specifying its *access level*. The access level determines what code has permission to read or write to the variable.  
   
--   *Member variables* (defined at module level and outside any procedure) default to public access, which means any code that can see them can access them. You can change this by specifying an access modifier.  
+- *Member variables* (defined at module level and outside any procedure) default to public access, which means any code that can see them can access them. You can change this by specifying an access modifier.  
   
--   *Local variables* (defined inside a procedure) nominally have public access, although only code within their procedure can access them. You cannot change the access level of a local variable, but you can change the access level of the procedure that contains it.  
+- *Local variables* (defined inside a procedure) nominally have public access, although only code within their procedure can access them. You cannot change the access level of a local variable, but you can change the access level of the procedure that contains it.  
   
  For more information, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   

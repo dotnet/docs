@@ -28,19 +28,19 @@ The TPL Dataflow Library provides the <xref:System.Threading.Tasks.Dataflow.Batc
   
  This walkthrough contains the following sections:  
   
--   [Creating the Console Application](#creating)  
+- [Creating the Console Application](#creating)  
   
--   [Defining the Employee Class](#employeeClass)  
+- [Defining the Employee Class](#employeeClass)  
   
--   [Defining Employee Database Operations](#operations)  
+- [Defining Employee Database Operations](#operations)  
   
--   [Adding Employee Data to the Database without Using Buffering](#nonBuffering)  
+- [Adding Employee Data to the Database without Using Buffering](#nonBuffering)  
   
--   [Using Buffering to Add Employee Data to the Database](#buffering)  
+- [Using Buffering to Add Employee Data to the Database](#buffering)  
   
--   [Using Buffered Join to Read Employee Data from the Database](#bufferedJoin)  
+- [Using Buffered Join to Read Employee Data from the Database](#bufferedJoin)  
   
--   [The Complete Example](#complete)  
+- [The Complete Example](#complete)  
   
 <a name="creating"></a>   
 ## Creating the Console Application  

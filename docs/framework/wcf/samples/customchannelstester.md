@@ -14,7 +14,7 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
   
 ### To run the tool  
   
--   At the command prompt type the following command:  
+- At the command prompt type the following command:  
   
     ```  
     CustomChannelsTester.exe /binding:YourCustomBindngName /dll:TheAssemblyWhereThisTypeisDefined /testspec:XmlFileNameWhichContainsTestOptions  

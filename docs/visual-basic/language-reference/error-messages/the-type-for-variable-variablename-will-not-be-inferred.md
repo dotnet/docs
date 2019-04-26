@@ -38,19 +38,19 @@ End Class
   
 ### To address this warning  
   
--   Make the loop control variable local by changing its name to an identifier that is not also the name of a field of the class.  
+- Make the loop control variable local by changing its name to an identifier that is not also the name of a field of the class.  
   
     ```  
     For I = 1 To 10  
     ```  
   
--   Clarify that the loop control variable binds to the class field by prefixing `Me.` to the variable name.  
+- Clarify that the loop control variable binds to the class field by prefixing `Me.` to the variable name.  
   
     ```  
     For Me.Index = 1 To 10  
     ```  
   
--   Instead of relying on local type inference, use an `As` clause to specify a type for the loop control variable.  
+- Instead of relying on local type inference, use an `As` clause to specify a type for the loop control variable.  
   
     ```  
     For Index As Integer = 1 To 10  

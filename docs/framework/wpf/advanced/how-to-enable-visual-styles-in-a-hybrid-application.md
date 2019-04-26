@@ -24,9 +24,9 @@ This topic shows how to enable [!INCLUDE[TLA#tla_winxp](../../../../includes/tla
   
 2. In Solution Explorer, add references to the following assemblies.  
   
-    -   WindowsFormsIntegration  
+    - WindowsFormsIntegration  
   
-    -   System.Windows.Forms  
+    - System.Windows.Forms  
   
 3. In the Toolbox, double-click the <xref:System.Windows.Controls.Grid> icon to place a <xref:System.Windows.Controls.Grid> element on the design surface.  
   

@@ -12,15 +12,15 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 2. Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](../../../../framework/tools/sn-exe-strong-name-tool.md).  
   
-    1.  Generate a strong-name key for this example and store it in the file FriendAssemblies.snk:  
+    1. Generate a strong-name key for this example and store it in the file FriendAssemblies.snk:  
   
          `sn -k FriendAssemblies.snk`  
   
-    2.  Extract the public key from FriendAssemblies.snk and put it into FriendAssemblies.publickey:  
+    2. Extract the public key from FriendAssemblies.snk and put it into FriendAssemblies.publickey:  
   
          `sn -p FriendAssemblies.snk FriendAssemblies.publickey`  
   
-    3.  Display the public key stored in the file FriendAssemblies.publickey:  
+    3. Display the public key stored in the file FriendAssemblies.publickey:  
   
          `sn -tp FriendAssemblies.publickey`  
   

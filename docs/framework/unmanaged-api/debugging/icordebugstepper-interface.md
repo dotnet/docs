@@ -36,11 +36,11 @@ Represents a step in code execution that is performed by a debugger, serves as a
 ## Remarks  
  The `ICorDebugStepper` interface serves the following purposes:  
   
--   It acts as an identifier between a step command that is issued and the completion of that command.  
+- It acts as an identifier between a step command that is issued and the completion of that command.  
   
--   It provides a central interface to encapsulate all the stepping that can be performed.  
+- It provides a central interface to encapsulate all the stepping that can be performed.  
   
--   It provides a way to prematurely cancel a stepping operation.  
+- It provides a way to prematurely cancel a stepping operation.  
   
  There can be more than one stepper per thread. For example, a breakpoint may be hit while stepping over a function, and the user may wish to start a new stepping operation inside that function. It is up to the debugger to determine how to handle this situation. The debugger may want to cancel the original stepping operation or nest the two operations. The `ICorDebugStepper` interface supports both choices.  
   

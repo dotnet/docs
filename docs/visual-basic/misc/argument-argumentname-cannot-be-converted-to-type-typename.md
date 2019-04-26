@@ -10,7 +10,7 @@ A conversion attempts to change an argument to a type that is not valid.
   
 ## To correct this error  
   
--   Change the type to one that is valid.  
+- Change the type to one that is valid.  
   
 ## See also
 

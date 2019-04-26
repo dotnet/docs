@@ -42,11 +42,11 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
   
  Remember the following points:  
   
--   Every important variable declaration should be preceded by a comment describing the use of the variable being declared.  
+- Every important variable declaration should be preceded by a comment describing the use of the variable being declared.  
   
--   Variables, controls, and procedures should be named clearly enough that commenting is needed only for complex implementation details.  
+- Variables, controls, and procedures should be named clearly enough that commenting is needed only for complex implementation details.  
   
--   Comments cannot follow a line-continuation sequence on the same line.  
+- Comments cannot follow a line-continuation sequence on the same line.  
   
  You can add or remove comment symbols for a block of code by selecting one or more lines of code and choosing the **Comment** (![The Visual Basic Comment button in Visual Studio.](./media/comments-in-code/visual-basic-comment-button.gif)) and **Uncomment** (![The Visual Basic Uncomment button in Visual Studio.](./media/comments-in-code/visual-basic-uncomment-button.gif)) buttons on the **Edit** toolbar.  
   

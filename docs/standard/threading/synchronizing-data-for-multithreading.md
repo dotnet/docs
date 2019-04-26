@@ -15,13 +15,13 @@ When multiple threads can make calls to the properties and methods of a single o
   
  The Common Language Infrastructure provides several strategies to synchronize access to instance and static members:  
   
--   Synchronized code regions. You can use the <xref:System.Threading.Monitor> class or compiler support for this class to synchronize only the code block that needs it, improving performance.  
+- Synchronized code regions. You can use the <xref:System.Threading.Monitor> class or compiler support for this class to synchronize only the code block that needs it, improving performance.  
   
--   Manual synchronization. You can use the synchronization objects provided by the .NET Framework class library. See [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md), which includes a discussion of the <xref:System.Threading.Monitor> class.  
+- Manual synchronization. You can use the synchronization objects provided by the .NET Framework class library. See [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md), which includes a discussion of the <xref:System.Threading.Monitor> class.  
   
--   Synchronized contexts. You can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
+- Synchronized contexts. You can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
   
--   Collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
+- Collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
   
  The common language runtime provides a thread model in which classes fall into a number of categories that can be synchronized in a variety of different ways depending on the requirements. The following table shows what synchronization support is provided for fields and methods with a given synchronization category.  
   

@@ -24,33 +24,33 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
 ## Delegates Overview  
  Delegates have the following properties:  
   
--   Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
+- Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
   
--   Delegates allow methods to be passed as parameters.  
+- Delegates allow methods to be passed as parameters.  
   
--   Delegates can be used to define callback methods.  
+- Delegates can be used to define callback methods.  
   
--   Delegates can be chained together; for example, multiple methods can be called on a single event.  
+- Delegates can be chained together; for example, multiple methods can be called on a single event.  
   
--   Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md).  
+- Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md).  
   
--   C# version 2.0 introduced the concept of [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
+- C# version 2.0 introduced the concept of [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
   
 ## In This Section  
   
--   [Using Delegates](../../../csharp/programming-guide/delegates/using-delegates.md)  
+- [Using Delegates](../../../csharp/programming-guide/delegates/using-delegates.md)  
   
--   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
+- [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
   
--   [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
+- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
   
--   [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
   
--   [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)  
+- [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)  
   
--   [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
+- [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
   
--   [How to: Declare, Instantiate, and Use a Delegate](../../../csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md)  
+- [How to: Declare, Instantiate, and Use a Delegate](../../../csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md)  
 
 ## C# Language Specification  
 

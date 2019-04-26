@@ -50,9 +50,9 @@ HRESULT GetThreadOwningMonitorLock (
 ## Remarks  
  If a managed thread owns the monitor lock on this object:  
   
--   The method returns S_OK.  
+- The method returns S_OK.  
   
--   The thread object is valid until the thread exits.  
+- The thread object is valid until the thread exits.  
   
  If no managed thread owns the monitor lock on this object, `ppThread` and `pAcquisitionCount` are unchanged, and the method returns S_FALSE.  
   

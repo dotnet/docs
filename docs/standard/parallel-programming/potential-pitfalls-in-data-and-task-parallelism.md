@@ -25,11 +25,11 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
   
  The most common scenario in which over-parallelization can occur is in nested loops. In most cases, it is best to parallelize only the outer loop unless one or more of the following conditions apply:  
   
--   The inner loop is known to be very long.  
+- The inner loop is known to be very long.  
   
--   You are performing an expensive computation on each order. (The operation shown in the example is not expensive.)  
+- You are performing an expensive computation on each order. (The operation shown in the example is not expensive.)  
   
--   The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the query on `cust.Orders`.  
+- The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the query on `cust.Orders`.  
   
  In all cases, the best way to determine the optimum query shape is to test and measure.  
   

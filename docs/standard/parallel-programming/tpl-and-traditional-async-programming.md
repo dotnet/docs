@@ -14,21 +14,21 @@ ms.author: "ronpet"
 # TPL and Traditional .NET Framework Asynchronous Programming
 The .NET Framework provides the following two standard patterns for performing I/O-bound and compute-bound asynchronous operations:  
   
--   Asynchronous Programming Model (APM), in which asynchronous operations are represented by a pair of Begin/End methods such as <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.EndRead%2A?displayProperty=nameWithType>.  
+- Asynchronous Programming Model (APM), in which asynchronous operations are represented by a pair of Begin/End methods such as <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.EndRead%2A?displayProperty=nameWithType>.  
   
--   Event-based asynchronous pattern (EAP), in which asynchronous operations are represented by a method/event pair that are named *OperationName*Async and *OperationName*Completed, for example, <xref:System.Net.WebClient.DownloadStringAsync%2A?displayProperty=nameWithType> and <xref:System.Net.WebClient.DownloadStringCompleted?displayProperty=nameWithType>. (EAP was introduced in the .NET Framework version 2.0.)  
+- Event-based asynchronous pattern (EAP), in which asynchronous operations are represented by a method/event pair that are named *OperationName*Async and *OperationName*Completed, for example, <xref:System.Net.WebClient.DownloadStringAsync%2A?displayProperty=nameWithType> and <xref:System.Net.WebClient.DownloadStringCompleted?displayProperty=nameWithType>. (EAP was introduced in the .NET Framework version 2.0.)  
   
  The Task Parallel Library (TPL) can be used in various ways in conjunction with either of the asynchronous patterns. You can expose both APM and EAP operations as Tasks to library consumers, or you can expose the APM patterns but use Task objects to implement them internally. In both scenarios, by using Task objects, you can simplify the code and take advantage of the following useful functionality:  
   
--   Register callbacks, in the form of task continuations, at any time after the task has started.  
+- Register callbacks, in the form of task continuations, at any time after the task has started.  
   
--   Coordinate multiple operations that execute in response to a `Begin_` method, by using the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> and <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> methods, or the <xref:System.Threading.Tasks.Task.WaitAll%2A> method or the <xref:System.Threading.Tasks.Task.WaitAny%2A> method.  
+- Coordinate multiple operations that execute in response to a `Begin_` method, by using the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> and <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> methods, or the <xref:System.Threading.Tasks.Task.WaitAll%2A> method or the <xref:System.Threading.Tasks.Task.WaitAny%2A> method.  
   
--   Encapsulate asynchronous I/O-bound and compute-bound operations in the same Task object.  
+- Encapsulate asynchronous I/O-bound and compute-bound operations in the same Task object.  
   
--   Monitor the status of the Task object.  
+- Monitor the status of the Task object.  
   
--   Marshal the status of an operation to a Task object by using <xref:System.Threading.Tasks.TaskCompletionSource%601>.  
+- Marshal the status of an operation to a Task object by using <xref:System.Threading.Tasks.TaskCompletionSource%601>.  
   
 ## Wrapping APM Operations in a Task  
  Both the <xref:System.Threading.Tasks.TaskFactory?displayProperty=nameWithType> and <xref:System.Threading.Tasks.TaskFactory%601?displayProperty=nameWithType> classes provide several overloads of the <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.TaskFactory%601.FromAsync%2A?displayProperty=nameWithType> methods that let you encapsulate an APM Begin/End method pair in one <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> instance. The various overloads accommodate any Begin/End method pair that have from zero to three input parameters.  
@@ -44,13 +44,13 @@ The .NET Framework provides the following two standard patterns for performing I
   
  The first parameter is a <xref:System.Func%606> delegate that matches the signature of the <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> method. The second parameter is a <xref:System.Func%602> delegate that takes an <xref:System.IAsyncResult> and returns a `TResult`. Because <xref:System.IO.FileStream.EndRead%2A> returns an integer, the compiler infers the type of `TResult` as <xref:System.Int32> and the type of the task as <xref:System.Threading.Tasks.Task>. The last four parameters are identical to those in the <xref:System.IO.FileStream.BeginRead%2A?displayProperty=nameWithType> method:  
   
--   The buffer in which to store the file data.  
+- The buffer in which to store the file data.  
   
--   The offset in the buffer at which to begin writing data.  
+- The offset in the buffer at which to begin writing data.  
   
--   The maximum amount of data to read from the file.  
+- The maximum amount of data to read from the file.  
   
--   An optional object that stores user-defined state data to pass to the callback.  
+- An optional object that stores user-defined state data to pass to the callback.  
   
 ### Using ContinueWith for the Callback Functionality  
  If you require access to the data in the file, as opposed to just the number of bytes, the <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> method is not sufficient. Instead, use <xref:System.Threading.Tasks.Task>, whose `Result` property contains the file data. You can do this by adding a continuation to the original task. The continuation performs the work that would typically be performed by the <xref:System.AsyncCallback> delegate. It is invoked when the antecedent completes, and the data buffer has been filled. (The <xref:System.IO.FileStream> object should be closed before returning.)  

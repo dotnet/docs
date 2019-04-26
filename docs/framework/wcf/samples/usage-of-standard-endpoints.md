@@ -137,13 +137,13 @@ public class CustomEndpoint : ServiceEndpoint
 
 2. Enable multiple projects to start up.
 
-    1.  In **Solution Explorer**, right-click the Standard Endpoints solution and then select **Properties**.
+    1. In **Solution Explorer**, right-click the Standard Endpoints solution and then select **Properties**.
 
-    2.  In **Common Properties**, select **Startup Project**, and then click **Multiple Startup Projects**.
+    2. In **Common Properties**, select **Startup Project**, and then click **Multiple Startup Projects**.
 
-    3.  Move the Service project to the beginning of the list, with the **Action** set to **Start**.
+    3. Move the Service project to the beginning of the list, with the **Action** set to **Start**.
 
-    4.  Move the Client project after the Service project, also with the **Action** set to **Start**.
+    4. Move the Client project after the Service project, also with the **Action** set to **Start**.
 
          This specifies that the Client project is executed after the Service project.
 

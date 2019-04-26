@@ -8,9 +8,9 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
  Migrating an existing ASP.NET AJAX service to a WCF AJAX service gives you the following benefits:
 
--   You can expose your AJAX service as a SOAP service with minimal extra configuration.
+- You can expose your AJAX service as a SOAP service with minimal extra configuration.
 
--   You can benefit from WCF features such as tracing, and so on.
+- You can benefit from WCF features such as tracing, and so on.
 
  The following procedures assume that you are using Visual Studio 2012.
 
@@ -173,9 +173,9 @@ namespace ASPHello
 
  If ASMX Web services are being upgraded and migrated side-by-side to WCF services, avoid mapping two types to the same name on the client. This causes an exception in serializers if the same type is used in a <xref:System.Web.Services.WebMethodAttribute> and a <xref:System.ServiceModel.ServiceContractAttribute>:
 
--   If WCF service is added first, invoking the method on ASMX Web Service causes exception in <xref:System.Web.UI.ObjectConverter.ConvertValue%28System.Object%2CSystem.Type%2CSystem.String%29> because the WCF style definition of the order in the proxy takes precedence.
+- If WCF service is added first, invoking the method on ASMX Web Service causes exception in <xref:System.Web.UI.ObjectConverter.ConvertValue%28System.Object%2CSystem.Type%2CSystem.String%29> because the WCF style definition of the order in the proxy takes precedence.
 
--   If ASMX Web Service is added first, invoking method on WCF service causes exception in <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> because the Web Service style definition of the order in the proxy takes precedence.
+- If ASMX Web Service is added first, invoking method on WCF service causes exception in <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> because the Web Service style definition of the order in the proxy takes precedence.
 
  There are significant differences in behavior between the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> and the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>. For example, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> represents a dictionary as an array of key/value pairs, whereas the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer> represents a dictionary as actual JSON objects. So the following is the dictionary represented in ASP.NET AJAX.
 
@@ -187,9 +187,9 @@ d.Add("two", 2);
 
  This dictionary is represented in JSON objects as shown in the following list:
 
--   [{"Key":"one","Value":1},{"Key":"two","Value":2}] by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
+- [{"Key":"one","Value":1},{"Key":"two","Value":2}] by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
 
--   {"one":1,"two":2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>
+- {"one":1,"two":2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>
 
  The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is more powerful in the sense that it can handle dictionaries where the key type is not string, while the <xref:System.Web.Script.Serialization.JavaScriptSerializer> cannot. But the latter is more JSON-friendly.
 

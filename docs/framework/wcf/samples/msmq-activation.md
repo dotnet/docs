@@ -213,15 +213,15 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md). In addition, you must install the WCF non-HTTP activation components:  
   
-    1.  From the **Start** menu, choose **Control Panel**.  
+    1. From the **Start** menu, choose **Control Panel**.  
   
-    2.  Select **Programs and Features**.  
+    2. Select **Programs and Features**.  
   
-    3.  Click **Turn Windows Features on or off**.  
+    3. Click **Turn Windows Features on or off**.  
   
-    4.  Under **Features Summary**, click **Add Features**.  
+    4. Under **Features Summary**, click **Add Features**.  
   
-    5.  Expand the **Microsoft .NET Framework 3.0** node and check the **Windows Communication Foundation Non-HTTP Activation** feature.  
+    5. Expand the **Microsoft .NET Framework 3.0** node and check the **Windows Communication Foundation Non-HTTP Activation** feature.  
   
 3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
@@ -229,21 +229,21 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
 5. The MSMQ activation service runs as Network Service by default. Therefore, the queue that is used to activate the application must have receive and peek permissions for Network Service. This can be added by using the Message Queuing MMC:  
   
-    1.  From the **Start** menu, click **Run**, then type `Compmgmt.msc` and press ENTER.  
+    1. From the **Start** menu, click **Run**, then type `Compmgmt.msc` and press ENTER.  
   
-    2.  Under **Services and Applications**, expand **Message Queuing**.  
+    2. Under **Services and Applications**, expand **Message Queuing**.  
   
-    3.  Click **Private Queues**.  
+    3. Click **Private Queues**.  
   
-    4.  Right-click the queue (servicemodelsamples/Service.svc) and choose **Properties**.  
+    4. Right-click the queue (servicemodelsamples/Service.svc) and choose **Properties**.  
   
-    5.  On the **Security** tab, click **Add** and give peek and receive permissions to Network Service.  
+    5. On the **Security** tab, click **Add** and give peek and receive permissions to Network Service.  
   
 6. Configure the Windows Process Activation Service (WAS) to support MSMQ activation.  
   
      As a convenience, the following steps are implemented in a batch file called AddMsmqSiteBinding.cmd located in the sample directory.  
   
-    1.  To support net.msmq activation, the default Web site must first be bound to the net.msmq protocol. This can be done using appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. From an elevated (administrator) command prompt, run the following command.  
+    1. To support net.msmq activation, the default Web site must first be bound to the net.msmq protocol. This can be done using appcmd.exe, which is installed with the [!INCLUDE[iisver](../../../../includes/iisver-md.md)] management toolset. From an elevated (administrator) command prompt, run the following command.  
   
         ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
@@ -255,7 +255,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
          This command adds a net.msmq site binding to the default Web site.  
   
-    2.  Although all applications within a site share a common net.msmq binding, each application can enable net.msmq support individually. To enable net.msmq for the /servicemodelsamples application, run the following command from an elevated command prompt.  
+    2. Although all applications within a site share a common net.msmq binding, each application can enable net.msmq support individually. To enable net.msmq for the /servicemodelsamples application, run the following command from an elevated command prompt.  
   
         ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.msmq  
@@ -278,7 +278,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
      As a convenience, the following steps are implemented in a batch file called RemoveMsmqSiteBinding.cmd located in the sample directory:  
   
-    1.  Remove net.msmq from the list of enabled protocols by running the following command from an elevated command prompt.  
+    1. Remove net.msmq from the list of enabled protocols by running the following command from an elevated command prompt.  
   
         ```console  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http  
@@ -287,7 +287,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
         > [!NOTE]
         >  This command is a single line of text.  
   
-    2.  Remove the net.msmq site binding by running the following command from an elevated command prompt.  
+    2. Remove the net.msmq site binding by running the following command from an elevated command prompt.  
   
         ```console  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.msmq',bindingInformation='localhost']  
@@ -324,17 +324,17 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
      To change the identity that the worker process runs under:  
   
-    1.  Run Inetmgr.exe.  
+    1. Run Inetmgr.exe.  
   
-    2.  Under **Application Pools**, right-click the **AppPool** (typically **DefaultAppPool**) and choose **Set Application Pool Defaults…**.  
+    2. Under **Application Pools**, right-click the **AppPool** (typically **DefaultAppPool**) and choose **Set Application Pool Defaults…**.  
   
-    3.  Change the Identity properties to use the specific user account.  
+    3. Change the Identity properties to use the specific user account.  
   
      To change the identity that the Activation Service runs under:  
   
-    1.  Run Services.msc.  
+    1. Run Services.msc.  
   
-    2.  Right-click the **Net.MsmqListener Adapter**, and choose **Properties**.  
+    2. Right-click the **Net.MsmqListener Adapter**, and choose **Properties**.  
   
 4. Change the account in the **LogOn** tab.  
   

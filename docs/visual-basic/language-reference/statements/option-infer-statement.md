@@ -67,7 +67,7 @@ Option Infer { On | Off }
   
 #### To set Option Infer on the command line  
   
--   Include the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option in the **vbc** command.  
+- Include the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option in the **vbc** command.  
   
 ## Default Data Types and Values  
  The following table describes the results of various combinations of specifying the data type and initializer in a `Dim` statement.  

@@ -31,7 +31,7 @@ When you create database objects, you must explicitly grant permissions to make 
 |REVOKE|Revokes a permission. This is the default state of a new object. A permission revoked from a user or role can still be inherited from other groups or roles to which the principal is assigned.|  
 |DENY|DENY revokes a permission so that it cannot be inherited. DENY takes precedence over all permissions, except DENY does not apply to object owners or members of `sysadmin`. If you DENY permissions on an object to the `public` role it is denied to all users and roles except for object owners and `sysadmin` members.|  
   
--   The GRANT statement can assign permissions to a group or role that can be inherited by database users. However, the DENY statement takes precedence over all other permission statements. Therefore, a user who has been denied a permission cannot inherit it from another role.  
+- The GRANT statement can assign permissions to a group or role that can be inherited by database users. However, the DENY statement takes precedence over all other permission statements. Therefore, a user who has been denied a permission cannot inherit it from another role.  
   
 > [!NOTE]
 >  Members of the `sysadmin` fixed server role and object owners cannot be denied permissions.  

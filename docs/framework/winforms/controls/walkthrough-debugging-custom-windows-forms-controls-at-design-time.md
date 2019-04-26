@@ -23,17 +23,17 @@ When you create a custom control, you will often find it necessary to debug its 
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows Forms project to host your custom control  
+- Creating a Windows Forms project to host your custom control  
   
--   Creating a control library project  
+- Creating a control library project  
   
--   Adding a property to your custom control  
+- Adding a property to your custom control  
   
--   Adding your custom control to the host form  
+- Adding your custom control to the host form  
   
--   Setting up the project for design-time debugging  
+- Setting up the project for design-time debugging  
   
--   Debugging your custom control at design time  
+- Debugging your custom control at design time  
   
  When you are finished, you will have an understanding of the tasks necessary for debugging the design-time behavior of a custom control.  
   
@@ -45,7 +45,7 @@ When you create a custom control, you will often find it necessary to debug its 
   
 #### To create the project  
   
--   Create a Windows Application project called "DebuggingExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
+- Create a Windows Application project called "DebuggingExample" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 ## Creating a Control Library Project  
  The next step is to create the control library project and set up the custom control.  
@@ -65,7 +65,7 @@ When you create a custom control, you will often find it necessary to debug its 
   
 #### To check your progress  
   
--   Find the new tab called **DebugControlLibrary Components** and click to select it. When it opens, you will see your control listed as **DebugControl** with the default icon beside it.  
+- Find the new tab called **DebugControlLibrary Components** and click to select it. When it opens, you will see your control listed as **DebugControl** with the default icon beside it.  
   
 ## Adding a Property to Your Custom Control  
  To demonstrate that your custom control's code is running at design-time, you will add a property and set a breakpoint in the code that implements the property.  
@@ -143,9 +143,9 @@ When you create a custom control, you will often find it necessary to debug its 
   
 2. Press F5 to start the debugging session. Note that a new instance of Visual Studio is created. You can distinguish between the instances in two ways:  
   
-    -   The debugging instance has the word **Running** in its title bar  
+    - The debugging instance has the word **Running** in its title bar  
   
-    -   The debugging instance has the **Start** button on its **Debug** toolbar disabled  
+    - The debugging instance has the **Start** button on its **Debug** toolbar disabled  
   
      Your breakpoint is set in the debugging instance.  
   
@@ -160,11 +160,11 @@ When you create a custom control, you will often find it necessary to debug its 
 ## Next Steps  
  Now that you can debug your custom controls at design time, there are many possibilities for expanding your control's interaction with the Visual Studio IDE.  
   
--   You can use the <xref:System.ComponentModel.Component.DesignMode%2A> property of the <xref:System.ComponentModel.Component> class to write code that will only execute at design time. For details, see <xref:System.ComponentModel.Component.DesignMode%2A>.  
+- You can use the <xref:System.ComponentModel.Component.DesignMode%2A> property of the <xref:System.ComponentModel.Component> class to write code that will only execute at design time. For details, see <xref:System.ComponentModel.Component.DesignMode%2A>.  
   
--   There are several attributes you can apply to your control's properties to manipulate your custom control's interaction with the designer. You can find these attributes in the <xref:System.ComponentModel?displayProperty=nameWithType> namespace.  
+- There are several attributes you can apply to your control's properties to manipulate your custom control's interaction with the designer. You can find these attributes in the <xref:System.ComponentModel?displayProperty=nameWithType> namespace.  
   
--   You can write a custom designer for your custom control. This gives you complete control over the design experience using the extensible designer infrastructure exposed by Visual Studio. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md).  
+- You can write a custom designer for your custom control. This gives you complete control over the design experience using the extensible designer infrastructure exposed by Visual Studio. For details, see [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md).  
   
 ## See also
 

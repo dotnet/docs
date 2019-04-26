@@ -227,11 +227,11 @@ else
   
  WCF allows extending its InstanceContext runtime component by adding a new state and behavior using its extensible object pattern. The extensible object pattern is used in WCF to either extend existing runtime classes with new functionality or to add new state features to an object. There are three interfaces in the extensible object pattern - IExtensibleObject\<T>, IExtension\<T>, and IExtensionCollection\<T>:  
   
--   The IExtensibleObject\<T> interface is implemented by objects that allow extensions that customize their functionality.  
+- The IExtensibleObject\<T> interface is implemented by objects that allow extensions that customize their functionality.  
   
--   The IExtension\<T> interface is implemented by objects that are extensions of classes of type T.  
+- The IExtension\<T> interface is implemented by objects that are extensions of classes of type T.  
   
--   The IExtensionCollection\<T> interface is a collection of IExtensions that allows for retrieving IExtensions by their type.  
+- The IExtensionCollection\<T> interface is a collection of IExtensions that allows for retrieving IExtensions by their type.  
   
  Therefore an InstanceContextExtension class should be created that implements the IExtension interface and defines the required state to save the context ID. This class also provides the state to hold the storage manager being used. Once the new state is saved, it should not be possible to modify it. Therefore the state is provided and saved to the instance at the time it is being constructed and then only accessible using read-only properties.  
   

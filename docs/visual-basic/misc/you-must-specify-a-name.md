@@ -8,7 +8,7 @@ When performing file operations such as renaming a file, you must specify the na
   
 ## To correct this error  
   
--   Specify the name.  
+- Specify the name.  
   
 ## See also
 

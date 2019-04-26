@@ -14,9 +14,9 @@ This sample demonstrates how to create a custom scope match using logic and how 
   
 ## Demonstrates  
   
--   Creating a custom discovery service.  
+- Creating a custom discovery service.  
   
--   Implementing a custom scope match by algorithm.  
+- Implementing a custom scope match by algorithm.  
   
 ## Discussion  
  The client is looking for "OR" type matching criteria. A service responds back if the scopes on its endpoints match any of the scopes provided by the client. In this case, the client is looking for a calculator service that has any of the scopes in the following list:  

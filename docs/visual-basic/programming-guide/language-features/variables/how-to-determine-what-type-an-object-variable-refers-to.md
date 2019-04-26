@@ -31,7 +31,7 @@ An object variable contains a pointer to data that is stored elsewhere. The type
   
 ### To determine whether an object variable's type is compatible with a specified type  
   
--   Use the `TypeOf` operator in combination with the [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) to test the object with a `TypeOf`...`Is` expression.  
+- Use the `TypeOf` operator in combination with the [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) to test the object with a `TypeOf`...`Is` expression.  
   
     ```  
     If TypeOf objA Is System.Windows.Forms.Control Then  

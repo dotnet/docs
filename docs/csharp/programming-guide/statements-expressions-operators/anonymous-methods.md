@@ -43,9 +43,9 @@ In versions of C# before 2.0, the only way to declare a [delegate](../../../csha
 ## Example  
  The following example demonstrates two ways of instantiating a delegate:  
   
--   Associating the delegate with an anonymous method.  
+- Associating the delegate with an anonymous method.  
   
--   Associating the delegate with a named method (`DoWork`).  
+- Associating the delegate with a named method (`DoWork`).  
   
  In each case, a message is displayed when the delegate is invoked.  
   

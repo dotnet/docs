@@ -14,13 +14,13 @@ Queued applications use transactions to ensure correctness and reliable delivery
 ## Committing a Transaction  
  A batched transaction is committed based on the following:  
   
--   `MaxBatchSize`. A property of the <xref:System.ServiceModel.Description.TransactedBatchingBehavior> behavior. This property determines the maximum number of messages that are placed into a batch. When this number is reached, the batch is committed. This is value is not a strict limit, it is possible to commit a batch before receiving this number of messages.  
+- `MaxBatchSize`. A property of the <xref:System.ServiceModel.Description.TransactedBatchingBehavior> behavior. This property determines the maximum number of messages that are placed into a batch. When this number is reached, the batch is committed. This is value is not a strict limit, it is possible to commit a batch before receiving this number of messages.  
   
--   `Transaction Timeout`. After 80 percent of the transaction's time-out has elapsed, the batch is committed and a new batch is created. This means that if 20 percent or less of the time given for a transaction to complete remains, the batch is committed.  
+- `Transaction Timeout`. After 80 percent of the transaction's time-out has elapsed, the batch is committed and a new batch is created. This means that if 20 percent or less of the time given for a transaction to complete remains, the batch is committed.  
   
--   `TransactionScopeRequired`. When processing a batch of messages, if WCF finds one that has `TransactionScopeRequired` = `false`, it commits the batch and reopens a new batch on receipt of the first message with `TransactionScopeRequired` = `true` and `TransactionAutoComplete` = `true`.  
+- `TransactionScopeRequired`. When processing a batch of messages, if WCF finds one that has `TransactionScopeRequired` = `false`, it commits the batch and reopens a new batch on receipt of the first message with `TransactionScopeRequired` = `true` and `TransactionAutoComplete` = `true`.  
   
--   If no more messages exist in the queue, then the current batch is committed, even if the `MaxBatchSize` has not been reached or 80 percent of the transaction's time-out has not elapsed.  
+- If no more messages exist in the queue, then the current batch is committed, even if the `MaxBatchSize` has not been reached or 80 percent of the transaction's time-out has not elapsed.  
   
 ## Leaving Batching Mode  
  If a message in a batch causes the transaction to abort, the following steps occur:  

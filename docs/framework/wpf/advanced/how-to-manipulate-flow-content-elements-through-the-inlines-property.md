@@ -14,17 +14,17 @@ ms.assetid: 510780d2-3da1-4360-8763-7054bda22ea3
 # How to: Manipulate Flow Content Elements through the Inlines Property
 These examples demonstrate some of the more common operations that can be performed on inline flow content elements (and containers of such elements, such as <xref:System.Windows.Controls.TextBlock>) through the **Inlines** property. This property is used to add and remove items from <xref:System.Windows.Documents.InlineCollection>. Flow content elements that feature an **Inlines** property include:  
   
--   <xref:System.Windows.Documents.Bold>  
+- <xref:System.Windows.Documents.Bold>  
   
--   <xref:System.Windows.Documents.Hyperlink>  
+- <xref:System.Windows.Documents.Hyperlink>  
   
--   <xref:System.Windows.Documents.Italic>  
+- <xref:System.Windows.Documents.Italic>  
   
--   <xref:System.Windows.Documents.Paragraph>  
+- <xref:System.Windows.Documents.Paragraph>  
   
--   <xref:System.Windows.Documents.Span>  
+- <xref:System.Windows.Documents.Span>  
   
--   <xref:System.Windows.Documents.Underline>  
+- <xref:System.Windows.Documents.Underline>  
   
  These examples happen to use <xref:System.Windows.Documents.Span> as the flow content element, but these techniques are applicable to all elements or controls that host an <xref:System.Windows.Documents.InlineCollection> collection.  
   

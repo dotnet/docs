@@ -7,46 +7,46 @@ author: "BrucePerlerMS"
 # How To: Debug Claims-Aware Applications And Services Using WIF Tracing
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   Service Trace Viewer Tool (SvcTraceViewer.exe)  
+- Service Trace Viewer Tool (SvcTraceViewer.exe)  
   
--   Troubleshooting and Debugging WIF Applications  
+- Troubleshooting and Debugging WIF Applications  
   
 ## Summary  
  This How-To describes required steps for how to configure WIF tracing, collect trace logs, and how to analyze the trace logs using Trace Viewer tool. It provides general mapping for trace entries to actions needed to troubleshoot issues related to WIF.  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Configure WIF Tracing Using Web.config Configuration File  
+- Step 1 – Configure WIF Tracing Using Web.config Configuration File  
   
--   Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
+- Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
   
--   Step 3 – Identify Solutions to Fix WIF Related Issues  
+- Step 3 – Identify Solutions to Fix WIF Related Issues  
   
--   Related Items  
+- Related Items  
   
 ## Objectives  
   
--   Configure WIF tracing.  
+- Configure WIF tracing.  
   
--   View trace logs in the Trace Viewer tool.  
+- View trace logs in the Trace Viewer tool.  
   
--   Identify WIF related issues in the trace logs.  
+- Identify WIF related issues in the trace logs.  
   
--   Apply corrective actions to WIF related issues found in the trace logs.  
+- Apply corrective actions to WIF related issues found in the trace logs.  
   
 ## Summary of Steps  
   
--   Step 1 – Configure WIF Tracing Using Web.config Configuration File  
+- Step 1 – Configure WIF Tracing Using Web.config Configuration File  
   
--   Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
+- Step 2 – Analyze WIF Trace Files Using Trace Viewer Tool  
   
--   Step 3 – Identify Solutions to Fix WIF Related Issues  
+- Step 3 – Identify Solutions to Fix WIF Related Issues  
   
 ## Step 1 – Configure WIF Tracing Using Web.config Configuration File  
  In this step, you will add changes to configuration sections in the *Web.config* file that enable WIF to trace its events and store them in a trace log.  
@@ -102,4 +102,4 @@ author: "BrucePerlerMS"
   
 ## Related Items  
   
--   [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

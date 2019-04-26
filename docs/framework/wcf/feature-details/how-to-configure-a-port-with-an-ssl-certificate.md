@@ -21,15 +21,15 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
  This topic describes how to accomplish several procedures:  
   
--   Determining a computer's current port configuration.  
+- Determining a computer's current port configuration.  
   
--   Getting a certificate's thumbprint (necessary for the following two procedures).  
+- Getting a certificate's thumbprint (necessary for the following two procedures).  
   
--   Binding an SSL certificate to a port configuration.  
+- Binding an SSL certificate to a port configuration.  
   
--   Binding an SSL certificate to a port configuration and supporting client certificates.  
+- Binding an SSL certificate to a port configuration and supporting client certificates.  
   
--   Deleting an SSL certificate from a port number.  
+- Deleting an SSL certificate from a port number.  
   
  Note that modifying certificates stored on the computer requires administrative privileges.  
   
@@ -65,9 +65,9 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  
     ```  
   
-    -   The **-i** switch has the syntax of `IP`:`port` and instructs the tool to set the certificate to port 8012 of the computer. Optionally, the four zeroes that precede the number can also be replaced by the actual IP address of the computer.  
+    - The **-i** switch has the syntax of `IP`:`port` and instructs the tool to set the certificate to port 8012 of the computer. Optionally, the four zeroes that precede the number can also be replaced by the actual IP address of the computer.  
   
-    -   The **-h** switch specifies the thumbprint of the certificate.  
+    - The **-h** switch specifies the thumbprint of the certificate.  
   
 2. In [!INCLUDE[wv](../../../../includes/wv-md.md)], use the Netsh.exe tool, as shown in the following example.  
   
@@ -75,11 +75,11 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
     netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}   
     ```  
   
-    -   The **certhash** parameter specifies the thumbprint of the certificate.  
+    - The **certhash** parameter specifies the thumbprint of the certificate.  
   
-    -   The **ipport** parameter specifies the IP address and port, and functions just like the **-i** switch of the Httpcfg.exe tool described.  
+    - The **ipport** parameter specifies the IP address and port, and functions just like the **-i** switch of the Httpcfg.exe tool described.  
   
-    -   The **appid** parameter is a GUID that can be used to identify the owning application.  
+    - The **appid** parameter is a GUID that can be used to identify the owning application.  
   
 ### To bind an SSL certificate to a port number and support client certificates  
   

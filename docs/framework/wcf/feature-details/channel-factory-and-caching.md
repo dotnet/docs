@@ -6,13 +6,13 @@ ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
 # Channel Factory and Caching
 WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service.  Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:  
   
--   Constructing the <xref:System.ServiceModel.Description.ContractDescription> tree  
+- Constructing the <xref:System.ServiceModel.Description.ContractDescription> tree  
   
--   Reflecting all of the required CLR types  
+- Reflecting all of the required CLR types  
   
--   Constructing the channel stack  
+- Constructing the channel stack  
   
--   Disposing of resources  
+- Disposing of resources  
   
  To help minimize this overhead, WCF can cache channel factories when you are using a WCF client proxy.  
   

@@ -15,17 +15,17 @@ ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
 # Troubleshooting Control and Component Authoring
 This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120)).  
   
--   Cannot Add Control to Toolbox  
+- Cannot Add Control to Toolbox  
   
--   Cannot Debug the Windows Forms User Control or Component  
+- Cannot Debug the Windows Forms User Control or Component  
   
--   Event Is Raised Twice in Inherited Control or Component  
+- Event Is Raised Twice in Inherited Control or Component  
   
--   Design-Time Error: "Failed to Create Component '*Component Name*'"  
+- Design-Time Error: "Failed to Create Component '*Component Name*'"  
   
--   STAThreadAttribute  
+- STAThreadAttribute  
   
--   Component Icon Does Not Appear in Toolbox  
+- Component Icon Does Not Appear in Toolbox  
   
 ## Cannot Add Control to Toolbox  
  If you want to add a custom control that you created in another project or a third-party control to the **Toolbox**, you must do so manually. If the current project contains your control or component, it should appear in the **Toolbox** automatically. For more information, see [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md).  
@@ -36,11 +36,11 @@ This topic lists the following common problems that arise when developing compon
   
 2. In the **Choose Toolbox Items** dialog box, add the component:  
   
-    -   If you want to add a .NET Framework component or control, click the **.NET Framework Components** tab.  
+    - If you want to add a .NET Framework component or control, click the **.NET Framework Components** tab.  
   
          – or –  
   
-    -   If you want to add a COM component or ActiveX control, click the **COM Components** tab.  
+    - If you want to add a COM component or ActiveX control, click the **COM Components** tab.  
   
 3. If your control is listed in the dialog box, confirm it is selected, and then click **OK**.  
   
@@ -48,15 +48,15 @@ This topic lists the following common problems that arise when developing compon
   
 4. If your control is not listed in the dialog box, do the following:  
   
-    1.  Click the **Browse** button.  
+    1. Click the **Browse** button.  
   
-    2.  Browse to the folder that contains the .dll file that contains your control.  
+    2. Browse to the folder that contains the .dll file that contains your control.  
   
-    3.  Select the .dll file and click **Open**.  
+    3. Select the .dll file and click **Open**.  
   
          Your control appears in the dialog box.  
   
-    4.  Confirm that your control is selected, and then click **OK**.  
+    4. Confirm that your control is selected, and then click **OK**.  
   
          Your control is added to the **Toolbox**.  
   

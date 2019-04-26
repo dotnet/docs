@@ -95,13 +95,13 @@ var cts = new CancellationTokenSource();
 
  This approach to cancellation has several advantages:
 
--   You can pass the same cancellation token to any number of asynchronous and synchronous operations.
+- You can pass the same cancellation token to any number of asynchronous and synchronous operations.
 
--   The same cancellation request may be proliferated to any number of listeners.
+- The same cancellation request may be proliferated to any number of listeners.
 
--   The developer of the asynchronous API is in complete control of whether cancellation may be requested and when it may take effect.
+- The developer of the asynchronous API is in complete control of whether cancellation may be requested and when it may take effect.
 
--   The code that consumes the API may selectively determine the asynchronous invocations that cancellation requests will be propagated to.
+- The code that consumes the API may selectively determine the asynchronous invocations that cancellation requests will be propagated to.
 
 ## Monitoring Progress
  Some asynchronous methods expose progress through a progress interface passed into the asynchronous method.  For example, consider a function which asynchronously downloads a string of text, and along the way raises progress updates that include the percentage of the download that has completed thus far.  Such a method could be consumed in a Windows Presentation Foundation (WPF) application as follows:
@@ -241,13 +241,13 @@ catch(Exception exc)
 ### Task.WhenAny
  You can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to asynchronously wait for just one of multiple asynchronous operations represented as tasks to complete.  This method serves four primary use cases:
 
--   Redundancy:  Performing an operation multiple times and selecting the one that completes first (for example, contacting multiple stock quote web services that will produce a single result and selecting the one that completes the fastest).
+- Redundancy:  Performing an operation multiple times and selecting the one that completes first (for example, contacting multiple stock quote web services that will produce a single result and selecting the one that completes the fastest).
 
--   Interleaving:  Launching multiple operations and waiting for all of them to complete, but processing them as they complete.
+- Interleaving:  Launching multiple operations and waiting for all of them to complete, but processing them as they complete.
 
--   Throttling:  Allowing additional operations to begin as others complete.  This is an extension of the interleaving scenario.
+- Throttling:  Allowing additional operations to begin as others complete.  This is an extension of the interleaving scenario.
 
--   Early bailout:  For example, an operation represented by task t1 can be grouped in a <xref:System.Threading.Tasks.Task.WhenAny%2A> task with another task t2, and you can wait on the <xref:System.Threading.Tasks.Task.WhenAny%2A> task. Task t2 could represent a time-out, or cancellation, or some other signal that causes the <xref:System.Threading.Tasks.Task.WhenAny%2A> task to complete before t1 completes.
+- Early bailout:  For example, an operation represented by task t1 can be grouped in a <xref:System.Threading.Tasks.Task.WhenAny%2A> task with another task t2, and you can wait on the <xref:System.Threading.Tasks.Task.WhenAny%2A> task. Task t2 could represent a time-out, or cancellation, or some other signal that causes the <xref:System.Threading.Tasks.Task.WhenAny%2A> task to complete before t1 completes.
 
 #### Redundancy
  Consider a case where you want to make a decision about whether to buy a stock.  There are several stock recommendation web services that you trust, but depending on daily load, each service can end up being slow at different times.  You can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to receive a notification when any operation completes:

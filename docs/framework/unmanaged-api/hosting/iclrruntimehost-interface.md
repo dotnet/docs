@@ -20,9 +20,9 @@ ms.author: "ronpet"
 # ICLRRuntimeHost Interface
 Provides functionality similar to that of the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) interface provided in the .NET Framework version 1, with the following changes:  
   
--   The addition of the [SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md) method to set the host control interface.  
+- The addition of the [SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md) method to set the host control interface.  
   
--   The omission of some methods provided by `ICorRuntimeHost`.  
+- The omission of some methods provided by `ICorRuntimeHost`.  
   
 ## Methods  
   

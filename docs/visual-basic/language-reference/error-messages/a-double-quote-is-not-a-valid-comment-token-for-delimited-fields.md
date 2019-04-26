@@ -10,7 +10,7 @@ A quotation mark has been supplied as the delimiter for the `TextFieldParser`, b
   
 ## To correct this error  
   
--   Set `EscapeQuotes` to `False`.  
+- Set `EscapeQuotes` to `False`.  
   
 ## See also
 

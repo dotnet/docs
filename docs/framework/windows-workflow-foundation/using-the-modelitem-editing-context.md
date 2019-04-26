@@ -93,48 +93,48 @@ protected override void OnModelItemChanged(object newItem)
   
  Items:  
   
--   <xref:System.Activities.Presentation.Hosting.AssemblyContextControlItem>: Manages the list of referenced local assemblies that will be used inside the workflow for controls (such as the expression editor).  
+- <xref:System.Activities.Presentation.Hosting.AssemblyContextControlItem>: Manages the list of referenced local assemblies that will be used inside the workflow for controls (such as the expression editor).  
   
--   <xref:System.Activities.Presentation.Hosting.ReadOnlyState>: Indicates whether the designer is in a read-only state.  
+- <xref:System.Activities.Presentation.Hosting.ReadOnlyState>: Indicates whether the designer is in a read-only state.  
   
--   <xref:System.Activities.Presentation.View.Selection>: Defines the collection of objects that are currently selected.  
+- <xref:System.Activities.Presentation.View.Selection>: Defines the collection of objects that are currently selected.  
   
--   <xref:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem>:  
+- <xref:System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem>:  
   
--   <xref:System.Activities.Presentation.WorkflowFileItem>: Provides information on the file that the current editing session is based on.  
+- <xref:System.Activities.Presentation.WorkflowFileItem>: Provides information on the file that the current editing session is based on.  
   
  Services:  
   
--   <xref:System.Activities.Presentation.Model.AttachedPropertiesService>: Allows properties to be added to the current instance, using <xref:System.Activities.Presentation.Model.AttachedPropertiesService.AddProperty%2A>.  
+- <xref:System.Activities.Presentation.Model.AttachedPropertiesService>: Allows properties to be added to the current instance, using <xref:System.Activities.Presentation.Model.AttachedPropertiesService.AddProperty%2A>.  
   
--   <xref:System.Activities.Presentation.View.DesignerView>: Allows access to the properties of the designer canvas.  
+- <xref:System.Activities.Presentation.View.DesignerView>: Allows access to the properties of the designer canvas.  
   
--   <xref:System.Activities.Presentation.IActivityToolboxService>: Allows the contents of the toolbox to be updated.  
+- <xref:System.Activities.Presentation.IActivityToolboxService>: Allows the contents of the toolbox to be updated.  
   
--   <xref:System.Activities.Presentation.Hosting.ICommandService>: Used to integrate designer commands (such as Context Menu) with custom-provided service implementations.  
+- <xref:System.Activities.Presentation.Hosting.ICommandService>: Used to integrate designer commands (such as Context Menu) with custom-provided service implementations.  
   
--   <xref:System.Activities.Presentation.Debug.IDesignerDebugView>: Provides functionality for the designer debugger.  
+- <xref:System.Activities.Presentation.Debug.IDesignerDebugView>: Provides functionality for the designer debugger.  
   
--   <xref:System.Activities.Presentation.View.IExpressionEditorService>: Provides access to the Expression Editor dialog.  
+- <xref:System.Activities.Presentation.View.IExpressionEditorService>: Provides access to the Expression Editor dialog.  
   
--   <xref:System.Activities.Presentation.IIntegratedHelpService>: Provides the designer with integrated help functionality.  
+- <xref:System.Activities.Presentation.IIntegratedHelpService>: Provides the designer with integrated help functionality.  
   
--   <xref:System.Activities.Presentation.Validation.IValidationErrorService>: Provides access to validation errors using <xref:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors%2A>.  
+- <xref:System.Activities.Presentation.Validation.IValidationErrorService>: Provides access to validation errors using <xref:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors%2A>.  
   
--   <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .NET Framework, and is not intended for external use.  
+- <xref:System.Activities.Presentation.IWorkflowDesignerStorageService>: Provides an internal service to store and retrieve data. This service is used internally by the .NET Framework, and is not intended for external use.  
   
--   <xref:System.Activities.Presentation.IXamlLoadErrorService>: Provides access to the XAML load error collection using <xref:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors%2A>.  
+- <xref:System.Activities.Presentation.IXamlLoadErrorService>: Provides access to the XAML load error collection using <xref:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors%2A>.  
   
--   <xref:System.Activities.Presentation.Services.ModelService>: Used by the designer to interact with the model of the workflow being edited.  
+- <xref:System.Activities.Presentation.Services.ModelService>: Used by the designer to interact with the model of the workflow being edited.  
   
--   <xref:System.Activities.Presentation.Model.ModelTreeManager>: Provides access to the root of the model item tree using <xref:System.Activities.Presentation.Model.ModelItem.Root%2A>.  
+- <xref:System.Activities.Presentation.Model.ModelTreeManager>: Provides access to the root of the model item tree using <xref:System.Activities.Presentation.Model.ModelItem.Root%2A>.  
   
--   <xref:System.Activities.Presentation.UndoEngine>: Provides undo and redo functionality.  
+- <xref:System.Activities.Presentation.UndoEngine>: Provides undo and redo functionality.  
   
--   <xref:System.Activities.Presentation.Services.ViewService>: Maps visual elements to underlying model items.  
+- <xref:System.Activities.Presentation.Services.ViewService>: Maps visual elements to underlying model items.  
   
--   <xref:System.Activities.Presentation.View.ViewStateService>: Stores view states for model items.  
+- <xref:System.Activities.Presentation.View.ViewStateService>: Stores view states for model items.  
   
--   <xref:System.Activities.Presentation.View.VirtualizedContainerService>: Used to customize the virtual container UI behavior.  
+- <xref:System.Activities.Presentation.View.VirtualizedContainerService>: Used to customize the virtual container UI behavior.  
   
--   <xref:System.Activities.Presentation.Hosting.WindowHelperService>: Used to register and unregister delegates for event notifications. Also allows a window owner to be set.
+- <xref:System.Activities.Presentation.Hosting.WindowHelperService>: Used to register and unregister delegates for event notifications. Also allows a window owner to be set.

@@ -8,7 +8,7 @@ An attempt has been made to rename the root directory. This may be a result of a
   
 ## To correct this error  
   
--   Check the file path to make sure that it is correct.  
+- Check the file path to make sure that it is correct.  
   
 ## See also
 

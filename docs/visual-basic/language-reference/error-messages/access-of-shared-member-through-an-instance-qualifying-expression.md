@@ -23,7 +23,7 @@ An instance variable of a class or structure is used to access a `Shared` variab
   
 ## To correct this error  
   
--   Use the name of the class or structure that defines the `Shared` member to access it, as shown in the following example.  
+- Use the name of the class or structure that defines the `Shared` member to access it, as shown in the following example.  
   
 ```vb  
 Public Class testClass  

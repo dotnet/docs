@@ -21,27 +21,27 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
   
  Some of these classes are designed to draw the related control regardless of whether visual styles are available. If visual styles are enabled, then the class members will draw the related control with visual styles; if visual styles are disabled, then the class members will draw the control in the classic Windows style. These classes include:  
   
--   <xref:System.Windows.Forms.ButtonRenderer>  
+- <xref:System.Windows.Forms.ButtonRenderer>  
   
--   <xref:System.Windows.Forms.CheckBoxRenderer>  
+- <xref:System.Windows.Forms.CheckBoxRenderer>  
   
--   <xref:System.Windows.Forms.GroupBoxRenderer>  
+- <xref:System.Windows.Forms.GroupBoxRenderer>  
   
--   <xref:System.Windows.Forms.RadioButtonRenderer>  
+- <xref:System.Windows.Forms.RadioButtonRenderer>  
   
  Other classes can only draw the related control when visual styles are available, and their members will throw an exception if visual styles are disabled. These classes include:  
   
--   <xref:System.Windows.Forms.ComboBoxRenderer>  
+- <xref:System.Windows.Forms.ComboBoxRenderer>  
   
--   <xref:System.Windows.Forms.ProgressBarRenderer>  
+- <xref:System.Windows.Forms.ProgressBarRenderer>  
   
--   <xref:System.Windows.Forms.ScrollBarRenderer>  
+- <xref:System.Windows.Forms.ScrollBarRenderer>  
   
--   <xref:System.Windows.Forms.TabRenderer>  
+- <xref:System.Windows.Forms.TabRenderer>  
   
--   <xref:System.Windows.Forms.TextBoxRenderer>  
+- <xref:System.Windows.Forms.TextBoxRenderer>  
   
--   <xref:System.Windows.Forms.TrackBarRenderer>  
+- <xref:System.Windows.Forms.TrackBarRenderer>  
   
  For more information on using these classes to draw a control, see [How to: Use a Control Rendering Class](how-to-use-a-control-rendering-class.md).  
   

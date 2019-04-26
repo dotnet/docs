@@ -27,12 +27,12 @@ This sample demonstrates how service debug behavior settings can be configured. 
   
  [\<serviceDebug>](../../../../docs/framework/configure-apps/file-schema/wcf/servicedebug.md) is the configuration element that allows changing the service debug behavior properties. The user can modify this behavior to achieve the following:  
   
--   This allows the service to return any exception that is thrown by the application code even if the exception is not declared using the <xref:System.ServiceModel.FaultContractAttribute>. It is done by setting `includeExceptionDetailInFaults` to `true`. This setting is useful when debugging cases where the server is throwing an unexpected exception.  
+- This allows the service to return any exception that is thrown by the application code even if the exception is not declared using the <xref:System.ServiceModel.FaultContractAttribute>. It is done by setting `includeExceptionDetailInFaults` to `true`. This setting is useful when debugging cases where the server is throwing an unexpected exception.  
   
     > [!IMPORTANT]
     >  It is not secure to turn this setting on in a production environment. An unexpected server exception may have some information that is not intended for the client and so setting `includeExceptionDetailsInFaults` to `true` might result in an information leak.  
   
--   The [\<serviceDebug>](../../../../docs/framework/configure-apps/file-schema/wcf/servicedebug.md) also allows a user to enable or disable the help page. Each service can optionally expose a help page that contains information about the service including the endpoint to get WSDL for the service. This can be enabled by setting `httpHelpPageEnabled` to `true`. This enables the help page to be returned to a GET request to the base address of the service. You can change this address by setting another attribute `httpHelpPageUrl`. You can make this secure by using HTTPS instead of HTTP. This can be done by setting `httpsHelpPageEnabled` and `httpsHelpPageUrl`.  
+- The [\<serviceDebug>](../../../../docs/framework/configure-apps/file-schema/wcf/servicedebug.md) also allows a user to enable or disable the help page. Each service can optionally expose a help page that contains information about the service including the endpoint to get WSDL for the service. This can be enabled by setting `httpHelpPageEnabled` to `true`. This enables the help page to be returned to a GET request to the base address of the service. You can change this address by setting another attribute `httpHelpPageUrl`. You can make this secure by using HTTPS instead of HTTP. This can be done by setting `httpsHelpPageEnabled` and `httpsHelpPageUrl`.  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The first three operations (Add, Subtract and Multiply) must succeed. The last operation ("divide") fails with a division by zero exception.  
   

@@ -49,7 +49,7 @@ End Interface
   
 ## To correct this error  
   
--   You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
+- You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
   
 ## See also
 

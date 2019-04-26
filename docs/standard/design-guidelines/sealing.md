@@ -21,13 +21,13 @@ One of the features of object-oriented frameworks is that developers can extend 
   
  Good reasons for sealing a class include the following:  
   
--   The class is a static class. See [Static Class Design](../../../docs/standard/design-guidelines/static-class.md).  
+- The class is a static class. See [Static Class Design](../../../docs/standard/design-guidelines/static-class.md).  
   
--   The class stores security-sensitive secrets in inherited protected members.  
+- The class stores security-sensitive secrets in inherited protected members.  
   
--   The class inherits many virtual members and the cost of sealing them individually would outweigh the benefits of leaving the class unsealed.  
+- The class inherits many virtual members and the cost of sealing them individually would outweigh the benefits of leaving the class unsealed.  
   
--   The class is an attribute that requires very fast runtime look-up. Sealed attributes have slightly higher performance levels than unsealed ones. See [Attributes](../../../docs/standard/design-guidelines/attributes.md).  
+- The class is an attribute that requires very fast runtime look-up. Sealed attributes have slightly higher performance levels than unsealed ones. See [Attributes](../../../docs/standard/design-guidelines/attributes.md).  
   
  **X DO NOT** declare protected or virtual members on sealed types.  
   

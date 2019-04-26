@@ -28,11 +28,11 @@ This document provides a high-level view of the Windows Communication Foundation
   
  Another required element in the communication stack is the encoding that specifies how any given message is formatted. WCF provides the following encodings:  
   
--   Text encoding, an interoperable encoding.  
+- Text encoding, an interoperable encoding.  
   
--   Message Transmission Optimization Mechanism (MTOM) encoding, which is an interoperable way for efficiently sending unstructured binary data to and from a service.  
+- Message Transmission Optimization Mechanism (MTOM) encoding, which is an interoperable way for efficiently sending unstructured binary data to and from a service.  
   
--   Binary encoding for efficient transfer.  
+- Binary encoding for efficient transfer.  
   
  More encoding mechanisms (for example, a compression encoding) can be added using the built-in extension points of WCF.  
   

@@ -66,9 +66,9 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
   
 ## Removing Certificates  
   
--   Use the Internet Information Services Manager as previously directed, but remove the certificate or binding instead of adding it.  
+- Use the Internet Information Services Manager as previously directed, but remove the certificate or binding instead of adding it.  
   
--   Remove the computer certificate by using the following command.  
+- Remove the computer certificate by using the following command.  
   
     ```  
     httpcfg delete ssl -i 0.0.0.0:443  

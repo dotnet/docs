@@ -48,11 +48,11 @@ Services frequently publish metadata to enable automatic generation and configur
   
 10. On the client computer, run client.exe.  
   
-    1.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+    1. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   
--   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+- Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
     > [!NOTE]
     >  This script does not remove service certificates on a client when running this sample across computers. If you have run WCF samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  

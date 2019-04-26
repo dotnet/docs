@@ -6,11 +6,11 @@ ms.assetid: 0aaf91d0-ce18-468d-8006-bc9bc2e48231
 # UriTemplate Sample
 The <xref:System.UriTemplate> class provides methods for working with sets of URIs that share a common structure. This sample demonstrates the following key concepts relating to `UriTemplate`:  
   
--   Syntax for creating templates.  
+- Syntax for creating templates.  
   
--   Instantiating URIs from a `UriTemplate` using <xref:System.UriTemplate.BindByName%2A> and <xref:System.UriTemplate.BindByPosition%2A>.  
+- Instantiating URIs from a `UriTemplate` using <xref:System.UriTemplate.BindByName%2A> and <xref:System.UriTemplate.BindByPosition%2A>.  
   
--   <xref:System.UriTemplateTable.Match%2A>, which is the inverse operation of `BindByName` and `BindByPosition`.  
+- <xref:System.UriTemplateTable.Match%2A>, which is the inverse operation of `BindByName` and `BindByPosition`.  
   
 ### To set up, build, and run the sample  
   

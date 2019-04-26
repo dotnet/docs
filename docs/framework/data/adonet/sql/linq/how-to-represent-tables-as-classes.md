@@ -11,7 +11,7 @@ Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xre
   
 ### To map a class to a database table  
   
--   Add the <xref:System.Data.Linq.Mapping.TableAttribute> attribute to the class declaration.  
+- Add the <xref:System.Data.Linq.Mapping.TableAttribute> attribute to the class declaration.  
   
 ## Example  
  The following code establishes the `Customer` class as an entity class that is associated with the `Customers` database table.  

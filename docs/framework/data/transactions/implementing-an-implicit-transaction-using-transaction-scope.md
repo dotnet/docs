@@ -65,11 +65,11 @@ void SomeMethod()
   
  A <xref:System.Transactions.TransactionScope> object has three options:  
   
--   Join the ambient transaction, or create a new one if one does not exist.  
+- Join the ambient transaction, or create a new one if one does not exist.  
   
--   Be a new root scope, that is, start a new transaction and have that transaction be the new ambient transaction inside its own scope.  
+- Be a new root scope, that is, start a new transaction and have that transaction be the new ambient transaction inside its own scope.  
   
--   Not take part in a transaction at all. There is no ambient transaction as a result.  
+- Not take part in a transaction at all. There is no ambient transaction as a result.  
   
  If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.Required>, and an ambient transaction is present, the scope joins that transaction. If, on the other hand, there is no ambient transaction, then the scope creates a new transaction, and become the root scope. This is the default value. When <xref:System.Transactions.TransactionScopeOption.Required> is used, the code inside the scope does not need to behave differently whether it is the root or just joining the ambient transaction. It should operate identically in both cases.  
   

@@ -48,15 +48,15 @@ w.w3.org/2001/XMLSchema" xmlns="">
   
  This document contains the following pieces of extension data:  
   
--   The `myAttribute` attribute of the `<feed>` element.  
+- The `myAttribute` attribute of the `<feed>` element.  
   
--   `<simpleString>` element.  
+- `<simpleString>` element.  
   
--   `<DataContractExtension>` element.  
+- `<DataContractExtension>` element.  
   
--   `<XmlSerializerExtension>` element.  
+- `<XmlSerializerExtension>` element.  
   
--   `<xElementExtension>` element.  
+- `<xElementExtension>` element.  
   
 ## Writing Extension Data  
  Attribute extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection as shown in the following sample code.  

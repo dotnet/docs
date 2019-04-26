@@ -23,15 +23,15 @@ The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files 
   
  Resgen.exe is a general-purpose resource conversion utility that performs the following tasks:  
   
--   Converts .txt or .restext files to .resources or .resx files. (The format of .restext files is identical to the format of .txt files. However, the .restext extension helps you identify text files that contain resource definitions more easily.)  
+- Converts .txt or .restext files to .resources or .resx files. (The format of .restext files is identical to the format of .txt files. However, the .restext extension helps you identify text files that contain resource definitions more easily.)  
   
--   Converts .resources files to text or .resx files.  
+- Converts .resources files to text or .resx files.  
   
--   Converts .resx files to text or .resources files.  
+- Converts .resx files to text or .resources files.  
   
--   Extracts the string resources from an assembly into a .resw file that is suitable for use in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.  
+- Extracts the string resources from an assembly into a .resw file that is suitable for use in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.  
   
--   Creates a strongly typed class that provides access to individual named resources and to the <xref:System.Resources.ResourceManager> instance.  
+- Creates a strongly typed class that provides access to individual named resources and to the <xref:System.Resources.ResourceManager> instance.  
   
  If Resgen.exe fails for any reason, the return value is –1.  
   
@@ -110,17 +110,17 @@ resgen filename.extension [outputDirectory]
 ## Performing Specific Resgen.exe Tasks  
  You can use Resgen.exe in diverse ways: to compile a text-based or XML-based resource file into a binary file, to convert between resource file formats, and to generate a class that wraps <xref:System.Resources.ResourceManager> functionality and provides access to resources. This section provides detailed information about each task:  
   
--   [Compiling Resources into a Binary File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Compiling)  
+- [Compiling Resources into a Binary File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Compiling)  
   
--   [Converting Between Resource File Types](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Convert)  
+- [Converting Between Resource File Types](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Convert)  
   
--   [Compiling or Converting Multiple Files](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Multiple)  
+- [Compiling or Converting Multiple Files](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Multiple)  
   
--   [Exporting Resources to a .resw File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Exporting)  
+- [Exporting Resources to a .resw File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Exporting)  
   
--   [Conditionally Compiling Resources](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Conditional)  
+- [Conditionally Compiling Resources](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Conditional)  
   
--   [Generating a Strongly Typed Resource Class](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Strong)  
+- [Generating a Strongly Typed Resource Class](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Strong)  
   
 <a name="Compiling"></a>   
 ### Compiling Resources into a Binary File  
@@ -164,13 +164,13 @@ resgen Resources.resx Resources.resources
 ### Converting Between Resource File Types  
  In addition to compiling text-based or XML-based resource files into binary .resources files, Resgen.exe can convert any supported file type to any other supported file type. This means that it can perform the following conversions:  
   
--   .txt and .restext files to .resx files.  
+- .txt and .restext files to .resx files.  
   
--   .resx files to .txt and .restext files.  
+- .resx files to .txt and .restext files.  
   
--   .resources files to .txt and .restext files.  
+- .resources files to .txt and .restext files.  
   
--   .resources files to .resx files.  
+- .resources files to .resx files.  
   
  The syntax is the same as that shown in the previous section.  
   
@@ -309,13 +309,13 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
   
  The strongly typed resource class has the following members:  
   
--   A parameterless constructor, which can be used to instantiate the strongly typed resource class..  
+- A parameterless constructor, which can be used to instantiate the strongly typed resource class..  
   
--   A `static` (C#) or `Shared` (Visual Basic) and read-only `ResourceManager` property, which returns the <xref:System.Resources.ResourceManager> instance that manages the strongly typed resource.  
+- A `static` (C#) or `Shared` (Visual Basic) and read-only `ResourceManager` property, which returns the <xref:System.Resources.ResourceManager> instance that manages the strongly typed resource.  
   
--   A static `Culture` property, which allows you to set the culture used for resource retrieval. By default, its value is `null`, which means that the current UI culture is used.  
+- A static `Culture` property, which allows you to set the culture used for resource retrieval. By default, its value is `null`, which means that the current UI culture is used.  
   
--   One `static` (C#) or `Shared` (Visual Basic) and read-only property for each resource in the .resources file. The name of the property is the name of the resource.-  
+- One `static` (C#) or `Shared` (Visual Basic) and read-only property for each resource in the .resources file. The name of the property is the name of the resource.-  
   
  For example, the following command compiles a resource file named StringResources.txt into StringResources.resources and generates a class named `StringResources` in a Visual Basic source code file named StringResources.vb that can be used to access the Resource Manager.  
   

@@ -9,11 +9,11 @@ Providing error handling in an <xref:System.Activities.AsyncCodeActivity> involv
 ## Returning an error thrown in an asynchronous activity back to the host  
  Routing an error in an asynchronous operation back to the host in the SendMail activity sample involves the following steps:  
   
--   Add an Exception property to the `SendMailAsyncResult` class.  
+- Add an Exception property to the `SendMailAsyncResult` class.  
   
--   Copy the thrown error to that property in the `SendCompleted` event handler.  
+- Copy the thrown error to that property in the `SendCompleted` event handler.  
   
--   Throw the exception in the `EndExecute` event handler.  
+- Throw the exception in the `EndExecute` event handler.  
   
  The resulting code is as follows.  
   

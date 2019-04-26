@@ -41,9 +41,9 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
  If you link to a COM assembly (Assembly A) which itself references another COM assembly (Assembly B), you also have to link to Assembly B if either of the following is true:  
   
--   A type from Assembly A inherits from a type or implements an interface from Assembly B.  
+- A type from Assembly A inherits from a type or implements an interface from Assembly B.  
   
--   A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
+- A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
   
  Like the [-reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option, the `-link` compiler option uses the Csc.rsp response file, which references frequently used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies. Use the [-noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
   

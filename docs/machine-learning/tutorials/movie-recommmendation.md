@@ -3,7 +3,7 @@ title: Use ML.NET in a movie recommendation scenario
 description: Discover how to use ML.NET in a recommendation scenario to recommend movies to users.
 author: briacht
 ms.author: johalex
-ms.date: 03/08/2019
+ms.date: 04/25/2019
 ms.custom: mvc
 ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
@@ -11,7 +11,7 @@ ms.topic: tutorial
 
 # Tutorial: Create a Movie Recommender with ML.NET
 
-This sample tutorial illustrates using ML.NET to build a movie recommender via a .NET Core console application using C# in Visual Studio 2017.
+This sample tutorial illustrates using ML.NET to build a movie recommender via a .NET Core console application using C# in Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-This tutorial and related sample are currently using **ML.NET version 0.11**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
+This tutorial and related sample are currently using **ML.NET version 1.0.0-preview and 0.12.0-preview**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/MovieRecommendation) repository.
 
@@ -57,10 +57,10 @@ There are several ways to approach recommendation problems, such as recommending
 
 3. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the **1.0.0-preview** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender v0.12.0-preview**.
 
     > [!NOTE]
-    > This tutorial uses **Microsoft.ML v0.11.0** and **Microsoft.ML.Recommender v0.11.0**.
+    > This tutorial uses **Microsoft.ML v1.0.0-preview** and **Microsoft.ML.Recommender v0.12.0-preview**.
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 
@@ -171,7 +171,7 @@ Add the following as the next two lines of code in the `Main()` method to call y
 
 ## Build and train your model
 
-There are three major concepts in ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
+There are three major concepts in ML.NET: [Data](../resources/glossary.md#data), [Transformers](../resources/glossary.md#transformer), and [Estimators](../resources/glossary.md#estimator).
 
 Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
 

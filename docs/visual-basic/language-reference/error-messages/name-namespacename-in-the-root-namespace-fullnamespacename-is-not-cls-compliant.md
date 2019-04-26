@@ -23,9 +23,9 @@ An assembly is marked as `<CLSCompliant(True)>`, but an element of the root name
   
 ## To correct this error  
   
--   If you require CLS compliance, change the root namespace name so that none of its elements begins with an underscore.  
+- If you require CLS compliance, change the root namespace name so that none of its elements begins with an underscore.  
   
--   If you require that the namespace name remain unchanged, then remove the <xref:System.CLSCompliantAttribute> from the assembly or mark it as `<CLSCompliant(False)>`.  
+- If you require that the namespace name remain unchanged, then remove the <xref:System.CLSCompliantAttribute> from the assembly or mark it as `<CLSCompliant(False)>`.  
   
 ## See also
 

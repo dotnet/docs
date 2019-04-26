@@ -10,7 +10,7 @@ The argument requires a value other than an empty string ("") or `Nothing`. This
   
 ## To correct this error  
   
--   Supply a valid value for the argument.  
+- Supply a valid value for the argument.  
   
 ## See also
 

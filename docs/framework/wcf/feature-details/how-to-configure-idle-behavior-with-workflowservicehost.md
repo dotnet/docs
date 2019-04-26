@@ -30,7 +30,7 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
   
 ### To change idle behavior in code  
   
--   The following example changes the time to wait before persisting and unloading programmatically.  
+- The following example changes the time to wait before persisting and unloading programmatically.  
   
      [!code-csharp[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/wf_svchost_idle_persist/cs/source.cs#1)]
      [!code-vb[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/wf_svchost_idle_persist/vb/source.vb#1)]  

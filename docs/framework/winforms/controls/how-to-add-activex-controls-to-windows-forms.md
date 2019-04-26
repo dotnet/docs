@@ -20,7 +20,7 @@ While the Windows Forms Designer is optimized to host Windows Forms controls, yo
   
 ### To add an ActiveX control to your Windows Form  
   
--   Double-click the control on the Toolbox.  
+- Double-click the control on the Toolbox.  
   
      Visual Studio adds all references to the control in your project. For more information about things to keep in mind when using ActiveX controls on Windows Forms, see [Considerations When Hosting an ActiveX Control on a Windows Form](considerations-when-hosting-an-activex-control-on-a-windows-form.md).  
   

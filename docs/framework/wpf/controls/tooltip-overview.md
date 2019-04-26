@@ -18,9 +18,9 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  The content of a tooltip can contain one or more lines of text, images, shapes, or other visual content. You define a tooltip for a control by setting one of the following properties to the tooltip content.  
   
--   <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=nameWithType>  
+- <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType>  
+- <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType>  
   
  Which property you use depends on whether the control that defines the tooltip inherits from the <xref:System.Windows.FrameworkContentElement> or <xref:System.Windows.FrameworkElement> class.  
   

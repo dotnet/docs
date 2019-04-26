@@ -32,9 +32,9 @@ Use the **-win32manifest** option to specify a user-defined Win32 application ma
   
  Your application will be subject to virtualization if either of these conditions is true:  
   
--   You use the **-nowin32manifest** option and you do not provide a manifest in a later build step or as part of a Windows Resource (.res) file by using the **-win32res** option.  
+- You use the **-nowin32manifest** option and you do not provide a manifest in a later build step or as part of a Windows Resource (.res) file by using the **-win32res** option.  
   
--   You provide a custom manifest that does not specify a requested execution level.  
+- You provide a custom manifest that does not specify a requested execution level.  
   
  Visual Studio creates a default .manifest file and stores it in the debug and release directories alongside the executable file. You can add a custom manifest by creating one in any text editor and then adding the file to the project. Alternatively, you can right-click the **Project** icon in **Solution Explorer**, click **Add New Item**, and then click **Application Manifest File**. After you have added your new or existing manifest file, it will appear in the **Manifest** drop down list. For more information, see [Application Page, Project Designer (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp).  
   

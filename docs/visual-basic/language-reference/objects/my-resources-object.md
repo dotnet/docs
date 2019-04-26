@@ -26,11 +26,11 @@ Provides properties and classes for accessing the application's resources.
   
  Each resource has a name, category, and value, and these resource settings determine how the property to access the resource appears in the `My.Resources` object. For resources added in the **Project Designer**:  
   
--   The name determines the name of the property,  
+- The name determines the name of the property,  
   
--   The resource data is the value of the property,  
+- The resource data is the value of the property,  
   
--   The category determines the type of the property:  
+- The category determines the type of the property:  
   
 |Category|Property data type|  
 |---|---|  

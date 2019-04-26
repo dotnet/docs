@@ -8,9 +8,9 @@ ms.assetid: 7c2c0cee-02a1-4157-be03-39d18e18408f
 # This single-instance application could not connect to the original instance
 This single-instance application could not connect to the original instance. Some of the possible causes for this problem are as follows:  
   
--   The original instance stopped responding.  
+- The original instance stopped responding.  
   
--   The application does not have permissions to create kernel objects. For more information about kernel objects, see [Mutexes](../../standard/threading/mutexes.md).  
+- The application does not have permissions to create kernel objects. For more information about kernel objects, see [Mutexes](../../standard/threading/mutexes.md).  
   
      The base name for the kernel objects comes from concatenating the assembly's GUID, major version number, and minor version number. For example, the base name could be `3639f15d-9547-43da-8145-60da347829915.1`.  
   

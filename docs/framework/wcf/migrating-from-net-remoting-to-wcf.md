@@ -95,11 +95,11 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
   
  There are many ways to configure and to host WCF services. This is just one example, known as "self-hosted". For more information, see the following topics:  
   
--   [How to: Define a Service Contract](how-to-define-a-wcf-service-contract.md)  
+- [How to: Define a Service Contract](how-to-define-a-wcf-service-contract.md)  
   
--   [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)  
+- [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)  
   
--   [Hosting Services](hosting-services.md)  
+- [Hosting Services](hosting-services.md)  
   
 ### Client Implementation Comparison  
   
@@ -136,9 +136,9 @@ Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received
   
  This example shows programming at the channel level because it is most similar to the Remoting example. Also available is the **Add Service Reference** approach in Visual Studio that generates code to simplify client programming. For more information, see the following topics:  
   
--   [Client Channel-Level Programming](./extending/client-channel-level-programming.md)  
+- [Client Channel-Level Programming](./extending/client-channel-level-programming.md)  
   
--   [How to: Add, Update, or Remove a Service Reference](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)  
+- [How to: Add, Update, or Remove a Service Reference](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)  
   
 ### Serialization Usage  
  Both .NET Remoting and WCF use serialization to send objects between client and server, but they differ in these important ways:  
@@ -152,9 +152,9 @@ Console.WriteLine($"  Customer {customer.FirstName} {customer.LastName} received
 #### Serialization in .NET Remoting  
  .NET Remoting supports two ways to serialize and deserialize objects between the client and server:  
   
--   *By value* – the values of the object are serialized across tier boundaries, and a new instance of that object is created on the other tier. Any calls to methods or properties of that new instance execute only locally and do not affect the original object or tier.  
+- *By value* – the values of the object are serialized across tier boundaries, and a new instance of that object is created on the other tier. Any calls to methods or properties of that new instance execute only locally and do not affect the original object or tier.  
   
--   *By reference* – a special "object reference" is serialized across tier boundaries. When one tier interacts with methods or properties of that object, it communicates back to the original object on the original tier. By-reference objects can flow in either direction – server to client, or client to server.  
+- *By reference* – a special "object reference" is serialized across tier boundaries. When one tier interacts with methods or properties of that object, it communicates back to the original object on the original tier. By-reference objects can flow in either direction – server to client, or client to server.  
   
  By-value types in Remoting are marked with the [Serializable] attribute or implement ISerializable, like in the following example:  
   
@@ -270,36 +270,36 @@ catch (FaultException<CustomerServiceFault> fault)
 #### Security in WCF  
  WCF was designed with security in mind, in part to address the kinds of vulnerabilities found in .NET Remoting. WCF offers security at both the transport and message level, and offers many options for authentication, authorization, encryption, and so on. For more information, see the following topics:  
   
--   [Security](./feature-details/security.md)  
+- [Security](./feature-details/security.md)  
   
--   [WCF Security Guidance](./feature-details/security-guidance-and-best-practices.md)  
+- [WCF Security Guidance](./feature-details/security-guidance-and-best-practices.md)  
   
 ## Migrating to WCF  
   
 ### Why Migrate from Remoting to WCF?  
   
--   **.NET Remoting is a legacy product.** As described in [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507%28v=vs.100%29), it is considered a legacy product and is not recommended for new development. WCF or ASP.NET Web API are recommended for new and existing applications.  
+- **.NET Remoting is a legacy product.** As described in [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507%28v=vs.100%29), it is considered a legacy product and is not recommended for new development. WCF or ASP.NET Web API are recommended for new and existing applications.  
   
--   **WCF uses cross-platform standards.** WCF was designed with cross-platform interoperability in mind and supports many industry standards (SOAP, WS-Security, WS-Trust, etc.). A WCF service can interoperate with clients running on operating systems other than Windows. Remoting was designed primarily for environments where both the server and client applications run using the .NET framework on a Windows operating system.  
+- **WCF uses cross-platform standards.** WCF was designed with cross-platform interoperability in mind and supports many industry standards (SOAP, WS-Security, WS-Trust, etc.). A WCF service can interoperate with clients running on operating systems other than Windows. Remoting was designed primarily for environments where both the server and client applications run using the .NET framework on a Windows operating system.  
   
--   **WCF has built-in security.** WCF was designed with security in mind and offers many options for authentication, transport level security, message level security, etc. Remoting was designed to make it easy for applications to interoperate but was not designed to be secure in non-trusted environments. WCF was designed to work in both trusted and non-trusted environments.  
+- **WCF has built-in security.** WCF was designed with security in mind and offers many options for authentication, transport level security, message level security, etc. Remoting was designed to make it easy for applications to interoperate but was not designed to be secure in non-trusted environments. WCF was designed to work in both trusted and non-trusted environments.  
   
 ### Migration Recommendations  
  The following are the recommended steps to migrate from .NET Remoting to WCF:  
   
--   **Create the service contract.** Define your service interface types, and mark them with the [ServiceContract] attribute.Mark all the methods the clients will be allowed to call with [OperationContract].  
+- **Create the service contract.** Define your service interface types, and mark them with the [ServiceContract] attribute.Mark all the methods the clients will be allowed to call with [OperationContract].  
   
--   **Create the data contract.** Define the data types that will be exchanged between server and client, and mark them with the [DataContract] attribute. Mark all the fields and properties the client will be allowed to use with [DataMember].  
+- **Create the data contract.** Define the data types that will be exchanged between server and client, and mark them with the [DataContract] attribute. Mark all the fields and properties the client will be allowed to use with [DataMember].  
   
--   **Create the fault contract (optional).** Create the types that will be exchanged between server and client when errors are encountered. Mark these types with [DataContract] and [DataMember] to make them serializable. For all service operations you marked with [OperationContract], also mark them with [FaultContract] to indicate which errors they may return.  
+- **Create the fault contract (optional).** Create the types that will be exchanged between server and client when errors are encountered. Mark these types with [DataContract] and [DataMember] to make them serializable. For all service operations you marked with [OperationContract], also mark them with [FaultContract] to indicate which errors they may return.  
   
--   **Configure and host the service.** Once the service contract has been created, the next step is to configure a binding to expose the service at an endpoint. For more information, see [Endpoints: Addresses, Bindings, and Contracts](./feature-details/endpoints-addresses-bindings-and-contracts.md).  
+- **Configure and host the service.** Once the service contract has been created, the next step is to configure a binding to expose the service at an endpoint. For more information, see [Endpoints: Addresses, Bindings, and Contracts](./feature-details/endpoints-addresses-bindings-and-contracts.md).  
   
  Once a Remoting application has been migrated to WCF, it is still important to remove dependencies on .NET Remoting. This ensures that any Remoting vulnerabilities are removed from the application. These steps include the following:  
   
--   **Discontinue use of MarshalByRefObject.** The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed.  
+- **Discontinue use of MarshalByRefObject.** The MarshalByRefObject type exists only for Remoting and is not used by WCF. Any application types that sub-class MarshalByRefObject should be removed or changed.  
   
--   **Discontinue use of [Serializable] and ISerializable.** The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable].  
+- **Discontinue use of [Serializable] and ISerializable.** The [Serializable] attribute and ISerializable interface were originally designed to serialize types within trusted environments, and they are used by Remoting. WCF serialization relies on types being marked with [DataContract] and [DataMember]. Data types used by an application should be modified to use [DataContract] and not to use ISerializable or [Serializable].  
   
 ### Migration Scenarios  
  Now let’s see how to accomplish the following common Remoting scenarios in WCF:  
@@ -518,9 +518,9 @@ public class RemotingServer : MarshalByRefObject
   
 4. We need to modify the server’s configuration file by doing the following two things as shown in the example below:  
   
-    1.  Declare a \<client> section that describes the endpoint for the sessionful object. This is necessary because the server also acts as a client in this situation.  
+    1. Declare a \<client> section that describes the endpoint for the sessionful object. This is necessary because the server also acts as a client in this situation.  
   
-    2.  Declare endpoints for the factory and sessionful object. This is necessary to allow the client to communicate with the service endpoints to acquire the EndpointAddress10 and to create the sessionful channel.  
+    2. Declare endpoints for the factory and sessionful object. This is necessary to allow the client to communicate with the service endpoints to acquire the EndpointAddress10 and to create the sessionful channel.  
   
     ```xml  
     <configuration>  
@@ -587,13 +587,13 @@ public class RemotingServer : MarshalByRefObject
   
 6. In order to create and use this sessionful object, the client must do the following steps:  
   
-    1.  Create a channel to the ISessionBoundFactory service.  
+    1. Create a channel to the ISessionBoundFactory service.  
   
-    2.  Use that channel to invoke that service to obtain an EndpointAddress10.  
+    2. Use that channel to invoke that service to obtain an EndpointAddress10.  
   
-    3.  Use the EndpointAddress10 to create a channel to obtain a sessionful object.  
+    3. Use the EndpointAddress10 to create a channel to obtain a sessionful object.  
   
-    4.  Interact with the sessionful object to demonstrate it remains the same instance across multiple calls.  
+    4. Interact with the sessionful object to demonstrate it remains the same instance across multiple calls.  
   
    ```csharp
    ChannelFactory<ISessionBoundFactory> channelFactory =   

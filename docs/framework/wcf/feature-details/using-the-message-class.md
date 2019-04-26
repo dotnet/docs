@@ -11,11 +11,11 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
   
  You would not usually interact with the <xref:System.ServiceModel.Channels.Message> class directly. Instead, WCF service model constructs, such as data contracts, message contracts, and operation contracts, are used to describe incoming and outgoing messages. However, in some advanced scenarios you can program using the <xref:System.ServiceModel.Channels.Message> class directly. For example, you might want to use the <xref:System.ServiceModel.Channels.Message> class:  
   
--   When you need an alternative way of creating outgoing message contents (for example, creating a message directly from a file on disk) instead of serializing [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
+- When you need an alternative way of creating outgoing message contents (for example, creating a message directly from a file on disk) instead of serializing [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
   
--   When you need an alternative way of using incoming message contents (for example, when you want to apply an XSLT transformation to the raw XML contents) instead of deserializing into [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
+- When you need an alternative way of using incoming message contents (for example, when you want to apply an XSLT transformation to the raw XML contents) instead of deserializing into [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
   
--   When you need to deal with messages in a general way regardless of message contents (for example, when routing or forwarding messages when building a router, load-balancer, or a publish-subscribe system).  
+- When you need to deal with messages in a general way regardless of message contents (for example, when routing or forwarding messages when building a router, load-balancer, or a publish-subscribe system).  
   
  Before using the <xref:System.ServiceModel.Channels.Message> class, familiarize yourself with the WCF data transfer architecture in [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
   
@@ -24,11 +24,11 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
 ## Using the Message Class in Operations  
  You can use the <xref:System.ServiceModel.Channels.Message> class as an input parameter of an operation, the return value of an operation, or both. If <xref:System.ServiceModel.Channels.Message> is used anywhere in an operation, the following restrictions apply:  
   
--   The operation cannot have any `out` or `ref` parameters.  
+- The operation cannot have any `out` or `ref` parameters.  
   
--   There cannot be more than one `input` parameter. If the parameter is present, it must be either Message or a message contract type.  
+- There cannot be more than one `input` parameter. If the parameter is present, it must be either Message or a message contract type.  
   
--   The return type must be either `void`, `Message`, or a message contract type.  
+- The return type must be either `void`, `Message`, or a message contract type.  
   
  The following code example contains a valid operation contract.  
   
@@ -72,11 +72,11 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
 ## Extracting Message Body Data  
  The `Message` class supports multiple ways of extracting information from its body. These can be classified into the following categories:  
   
--   Getting the entire message body written out at once to an XML writer. This is referred to as *writing a message*.  
+- Getting the entire message body written out at once to an XML writer. This is referred to as *writing a message*.  
   
--   Getting an XML reader over the message body. This enables you to later access the message body piece-by-piece as required. This is referred to as *reading a message*.  
+- Getting an XML reader over the message body. This enables you to later access the message body piece-by-piece as required. This is referred to as *reading a message*.  
   
--   The entire message, including its body, can be copied to an in-memory buffer of the <xref:System.ServiceModel.Channels.MessageBuffer> type. This is referred to as *copying a message*.  
+- The entire message, including its body, can be copied to an in-memory buffer of the <xref:System.ServiceModel.Channels.MessageBuffer> type. This is referred to as *copying a message*.  
   
  You can access the body of a `Message` only once, regardless of how it is accessed. A message object has a `State` property, which is initially set to Created. The three access methods described in the preceding list set the state to Written, Read, and Copied, respectively. Additionally, a `Close` method can set the state to Closed when the message body contents are no longer required. The message body can be accessed only in the Created state, and there is no way to go back to the Created state after the state has changed.  
   
@@ -90,9 +90,9 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
   
  Two additional helper methods write out certain SOAP start element tags. These methods do not access the message body and so they do not change the message state. These include:  
   
--   <xref:System.ServiceModel.Channels.Message.WriteStartBody%2A> writes the start body element, for example, `<soap:Body>`.  
+- <xref:System.ServiceModel.Channels.Message.WriteStartBody%2A> writes the start body element, for example, `<soap:Body>`.  
   
--   <xref:System.ServiceModel.Channels.Message.WriteStartEnvelope%2A> writes the start envelope element, for example, `<soap:Envelope>`.  
+- <xref:System.ServiceModel.Channels.Message.WriteStartEnvelope%2A> writes the start envelope element, for example, `<soap:Envelope>`.  
   
  To write the corresponding end element tags, call `WriteEndElement` on the corresponding XML writer. These methods are rarely called directly.  
   
@@ -132,15 +132,15 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
 ## Accessing Other Message Parts  
  Various properties are provided to access information about the message other than its body contents. However, these cannot be called once the message has been closed:  
   
--   The <xref:System.ServiceModel.Channels.Message.Headers%2A> property represents the message headers. See the section on "Working with Headers" later in this topic.  
+- The <xref:System.ServiceModel.Channels.Message.Headers%2A> property represents the message headers. See the section on "Working with Headers" later in this topic.  
   
--   The <xref:System.ServiceModel.Channels.Message.Properties%2A> property represents the message properties, which are pieces of named data attached to the message that do not generally get emitted when the message is sent. See the section on "Working with Properties" later in this topic.  
+- The <xref:System.ServiceModel.Channels.Message.Properties%2A> property represents the message properties, which are pieces of named data attached to the message that do not generally get emitted when the message is sent. See the section on "Working with Properties" later in this topic.  
   
--   The <xref:System.ServiceModel.Channels.Message.Version%2A> property indicates the SOAP and WS-Addressing version associated with the message, or `None` if SOAP is disabled.  
+- The <xref:System.ServiceModel.Channels.Message.Version%2A> property indicates the SOAP and WS-Addressing version associated with the message, or `None` if SOAP is disabled.  
   
--   The <xref:System.ServiceModel.Channels.Message.IsFault%2A> property returns `true` if the message is a SOAP fault message.  
+- The <xref:System.ServiceModel.Channels.Message.IsFault%2A> property returns `true` if the message is a SOAP fault message.  
   
--   The <xref:System.ServiceModel.Channels.Message.IsEmpty%2A> property returns `true` if the message is empty.  
+- The <xref:System.ServiceModel.Channels.Message.IsEmpty%2A> property returns `true` if the message is empty.  
   
  You can use the <xref:System.ServiceModel.Channels.Message.GetBodyAttribute%28System.String%2CSystem.String%29> method to access a particular attribute on the body wrapper element (for example, `<soap:Body>`) identified by a particular name and namespace. If such an attribute is not found, `null` is returned. This method can be called only when the `Message` is in the Created state (when the message body has not yet been accessed).  
   

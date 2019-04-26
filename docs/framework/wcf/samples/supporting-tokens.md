@@ -9,11 +9,11 @@ The Supporting Tokens sample demonstrates how to add additional tokens to a mess
 ## Demonstrates
  The sample demonstrates:
 
--   How a client can pass additional security tokens to a service.
+- How a client can pass additional security tokens to a service.
 
--   How the server can access claims associated with additional security tokens.
+- How the server can access claims associated with additional security tokens.
 
--   How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
+- How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
 
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -455,7 +455,7 @@ iisreset
   
 ##### To clean up after the sample  
   
--   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+- Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!NOTE]
 >  This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

@@ -39,18 +39,18 @@ This section discusses how a data store provider can support the types and funct
   
  You write an XML file that has two sections:  
   
--   A list of provider types expressed in terms of the "EDM counterpart" of a store type or function. Store types have counterpart EDM types. Store functions have corresponding EDM functions. For example, varchar is a SQL Server type but the corresponding EDM type is string.  
+- A list of provider types expressed in terms of the "EDM counterpart" of a store type or function. Store types have counterpart EDM types. Store functions have corresponding EDM functions. For example, varchar is a SQL Server type but the corresponding EDM type is string.  
   
--   A list of functions supported by the provider where parameter and return types are expressed in EDM terms.  
+- A list of functions supported by the provider where parameter and return types are expressed in EDM terms.  
   
 ### Writing a Provider with Asymmetric Type Mapping  
  When writing a data store provider for the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], the EDM-to-provider type mapping for some types may be different from provider-to-EDM type mapping. For instance, unbounded EDM PrimitiveTypeKind.String may map to nvarchar(4000) on the provider, while nvarchar(4000) maps to the EDM PrimitiveTypeKind.String(MaxLength=4000).  
   
  You write an XML file that has two sections:  
   
--   A list of provider types expressed in EDM terms and define mapping for both direction: EDM-to-provider and provider-to-EDM.  
+- A list of provider types expressed in EDM terms and define mapping for both direction: EDM-to-provider and provider-to-EDM.  
   
--   A list of functions supported by the provider where parameter and return types are expressed in EDM terms.  
+- A list of functions supported by the provider where parameter and return types are expressed in EDM terms.  
   
 ## Provider Manifest Discoverability  
  The manifest is used indirectly by several component types in Entity Services (for example Tools or Query) but more directly leveraged by metadata through the use of the data store metadata loader.  

@@ -18,28 +18,28 @@ This topic describes what service contracts are, how they are defined, what oper
   
  This topic describes the following decision points when designing a service contract:  
   
--   Whether to use classes or interfaces.  
+- Whether to use classes or interfaces.  
   
--   How to specify the data types you want to exchange.  
+- How to specify the data types you want to exchange.  
   
--   The types of exchange patterns you can use.  
+- The types of exchange patterns you can use.  
   
--   Whether you can make explicit security requirements part of the contract.  
+- Whether you can make explicit security requirements part of the contract.  
   
--   The restrictions for operation inputs and outputs.  
+- The restrictions for operation inputs and outputs.  
   
 ## Classes or Interfaces  
  Both classes and interfaces represent a grouping of functionality and, therefore, both can be used to define a WCF service contract. However, it is recommended that you use interfaces because they directly model service contracts. Without an implementation, interfaces do no more than define a grouping of methods with certain signatures. Implement a service contract interface and you have implemented a WCF service.  
   
  All the benefits of managed interfaces apply to service contract interfaces:  
   
--   Service contract interfaces can extend any number of other service contract interfaces.  
+- Service contract interfaces can extend any number of other service contract interfaces.  
   
--   A single class can implement any number of service contracts by implementing those service contract interfaces.  
+- A single class can implement any number of service contracts by implementing those service contract interfaces.  
   
--   You can modify the implementation of a service contract by changing the interface implementation, while the service contract remains the same.  
+- You can modify the implementation of a service contract by changing the interface implementation, while the service contract remains the same.  
   
--   You can version your service by implementing the old interface and the new one. Old clients connect to the original version, while newer clients can connect to the newer version.  
+- You can version your service by implementing the old interface and the new one. Old clients connect to the original version, while newer clients can connect to the newer version.  
   
 > [!NOTE]
 >  When inheriting from other service contract interfaces, you cannot override operation properties, such as the name or namespace. If you attempt to do so, you create a new operation in the current service contract.  
@@ -245,11 +245,11 @@ End Interface
   
  A service that implements this `IExplicitProtectionLevelSampleService` contract and has an endpoint that uses the default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType>, which is <xref:System.ServiceModel.SecurityMode.Message>) has the following behavior:  
   
--   The `GetString` operation messages are encrypted and signed.  
+- The `GetString` operation messages are encrypted and signed.  
   
--   The `GetInt` operation messages are sent as unencrypted and unsigned (that is, plain) text.  
+- The `GetInt` operation messages are sent as unencrypted and unsigned (that is, plain) text.  
   
--   The `GetGuid` operation <xref:System.Guid?displayProperty=nameWithType> is returned in a message that is encrypted and signed.  
+- The `GetGuid` operation <xref:System.Guid?displayProperty=nameWithType> is returned in a message that is encrypted and signed.  
   
  For more information about protection levels and how to use them, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md). For more information about security, see [Securing Services](../../../docs/framework/wcf/securing-services.md).  
   

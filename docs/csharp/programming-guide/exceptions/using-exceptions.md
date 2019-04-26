@@ -32,11 +32,11 @@ In C#, errors in the program at run time are propagated through the program by u
   
  If no compatible `catch` block is found on the call stack after an exception is thrown, one of three things occurs:  
   
--   If the exception is within a finalizer, the finalizer is aborted and the base finalizer, if any, is called.  
+- If the exception is within a finalizer, the finalizer is aborted and the base finalizer, if any, is called.  
   
--   If the call stack contains a static constructor, or a static field initializer, a <xref:System.TypeInitializationException> is thrown, with the original exception assigned to the <xref:System.Exception.InnerException%2A> property of the new exception.  
+- If the call stack contains a static constructor, or a static field initializer, a <xref:System.TypeInitializationException> is thrown, with the original exception assigned to the <xref:System.Exception.InnerException%2A> property of the new exception.  
   
--   If the start of the thread is reached, the thread is terminated.  
+- If the start of the thread is reached, the thread is terminated.  
   
 ## See also
 

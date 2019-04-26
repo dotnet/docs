@@ -48,8 +48,8 @@ You can use the <xref:System.Security.Cryptography.CspParameters> class to acces
   
 ## Compiling the Code  
   
--   Include the <xref:System> and <xref:System.Security.Cryptography> namespaces.  
+- Include the <xref:System> and <xref:System.Security.Cryptography> namespaces.  
   
--   You must have a smart card reader and drivers installed on your computer.  
+- You must have a smart card reader and drivers installed on your computer.  
   
--   You must initialize the <xref:System.Security.Cryptography.CspParameters> object using information specific to your card reader.  For more information, see the documentation of your card reader.
+- You must initialize the <xref:System.Security.Cryptography.CspParameters> object using information specific to your card reader.  For more information, see the documentation of your card reader.

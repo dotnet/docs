@@ -12,15 +12,15 @@ ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
 ## Managed Class Interface  
  The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]. The following namespaces make up the managed class interface:  
   
--   <xref:System.Drawing>  
+- <xref:System.Drawing>  
   
--   <xref:System.Drawing.Drawing2D>  
+- <xref:System.Drawing.Drawing2D>  
   
--   <xref:System.Drawing.Imaging>  
+- <xref:System.Drawing.Imaging>  
   
--   <xref:System.Drawing.Text>  
+- <xref:System.Drawing.Text>  
   
--   <xref:System.Drawing.Printing>  
+- <xref:System.Drawing.Printing>  
   
  With a Graphics Device Interface, such as [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], you can display information on a screen or printer without having to be concerned about the details of a particular display device. The programmer makes calls to methods provided by [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] classes. Those methods, in turn, make the appropriate calls to specific device drivers. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] insulates the application from the graphics hardware. It is this insulation that enables a programmer to create device-independent applications.  
   

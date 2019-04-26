@@ -21,9 +21,9 @@ A procedure is called with a [ByRef](../../../visual-basic/language-reference/mo
   
 ## To correct this error  
   
--   If possible, use a calling argument of the same type as the procedure parameter, so Visual Basic does not need to do any conversion.  
+- If possible, use a calling argument of the same type as the procedure parameter, so Visual Basic does not need to do any conversion.  
   
--   If you need to call the procedure with an argument type different from the parameter type but do not need to return a value into the calling argument, define the parameter to be [ByVal](../../../visual-basic/language-reference/modifiers/byval.md) instead of `ByRef`.  
+- If you need to call the procedure with an argument type different from the parameter type but do not need to return a value into the calling argument, define the parameter to be [ByVal](../../../visual-basic/language-reference/modifiers/byval.md) instead of `ByRef`.  
   
 ## See also
 

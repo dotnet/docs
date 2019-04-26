@@ -36,7 +36,7 @@ You can draw wrapped text in a rectangle by using the <xref:System.Drawing.Graph
 ## Compiling the Code  
  The previous examples require:  
   
--   <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
+- <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
 

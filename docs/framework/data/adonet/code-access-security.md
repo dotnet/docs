@@ -21,11 +21,11 @@ The .NET Framework offers role-based security as well as code access security (C
   
  There are three types of code access permissions:  
   
--   `Code access permissions` derive from the <xref:System.Security.CodeAccessPermission> class. Permissions are required in order to access protected resources, such as files and environment variables, and to perform protected operations, such as accessing unmanaged code.  
+- `Code access permissions` derive from the <xref:System.Security.CodeAccessPermission> class. Permissions are required in order to access protected resources, such as files and environment variables, and to perform protected operations, such as accessing unmanaged code.  
   
--   `Identity permissions` represent characteristics that identify an assembly. Permissions are granted to an assembly based on evidence, which can include items such as a digital signature or where the code originated. Identity permissions also derive from the <xref:System.Security.CodeAccessPermission> base class.  
+- `Identity permissions` represent characteristics that identify an assembly. Permissions are granted to an assembly based on evidence, which can include items such as a digital signature or where the code originated. Identity permissions also derive from the <xref:System.Security.CodeAccessPermission> base class.  
   
--   `Role-based security permissions` are based on whether a principal has a specified identity or is a member of a specified role. The <xref:System.Security.Permissions.PrincipalPermission> class allows both declarative and imperative permission checks against the active principal.  
+- `Role-based security permissions` are based on whether a principal has a specified identity or is a member of a specified role. The <xref:System.Security.Permissions.PrincipalPermission> class allows both declarative and imperative permission checks against the active principal.  
   
  To determine whether code is authorized to access a resource or perform an operation, the runtime's security system traverses the call stack, comparing the granted permissions of each caller to the permission being demanded. If any caller in the call stack does not have the demanded permission, a <xref:System.Security.SecurityException> is thrown and access is refused.  
   

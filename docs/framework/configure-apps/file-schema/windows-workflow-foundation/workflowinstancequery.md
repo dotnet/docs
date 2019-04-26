@@ -55,15 +55,15 @@ Represents a query that tracks workflow instance life cycle changes such as a st
 ## Remarks  
  The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe to the following <xref:System.Activities.Tracking.TrackingRecord> objects:  
   
--   <xref:System.Activities.Tracking.WorkflowInstanceRecord>  
+- <xref:System.Activities.Tracking.WorkflowInstanceRecord>  
   
--   <xref:System.Activities.Tracking.WorkflowInstanceAbortedRecord>  
+- <xref:System.Activities.Tracking.WorkflowInstanceAbortedRecord>  
   
--   <xref:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord>  
+- <xref:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord>  
   
--   <xref:System.Activities.Tracking.WorkflowInstanceTerminatedRecord>  
+- <xref:System.Activities.Tracking.WorkflowInstanceTerminatedRecord>  
   
--   <xref:System.Activities.Tracking.WorkflowInstanceSuspendedRecord>  
+- <xref:System.Activities.Tracking.WorkflowInstanceSuspendedRecord>  
   
 ## Example  
  The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  

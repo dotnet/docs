@@ -113,7 +113,7 @@ Both the house price model and the text classification model are **linear** mode
 
 ## Data preparation
 
-In most cases, the data that you have available is not suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled. 
+In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
 
 The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
@@ -156,21 +156,19 @@ The evaluation metrics tell you that the error is low-ish, and that correlation 
 
 In this section, we go through the architectural patterns of ML.NET. If you are an experienced .NET developer, some of these patterns will be familiar to you, and some will be less familiar. Hold tight, while we dive in!
 
-An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs** for:
+An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs**. A catalog is a factory for data loading and saving, transforms, trainers, and model operation components. Each catalog object has methods to create the different types of components:
 
 ||||
 |-|-|-|
 |Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>|
 |Data preparation||<xref:Microsoft.ML.TransformsCatalog>|
-|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers>|
-||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog.MulticlassClassificationTrainers>|
-||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog.AnomalyDetectionTrainers>|
-||Ranking|<xref:Microsoft.ML.RankingCatalog.RankingTrainers>|
-||Regression|<xref:Microsoft.ML.RegressionCatalog.RegressionTrainers>|
+|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>|
+||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>|
+||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>|
+||Ranking|<xref:Microsoft.ML.RankingCatalog>|
+||Regression|<xref:Microsoft.ML.RegressionCatalog>|
 ||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|
 |Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>|
-
-A catalog is a factory for data operation, transforms, trainers, and model operation components. Each catalog object has methods to create the different types components.
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 
@@ -225,7 +223,7 @@ At the core of an ML.NET machine learning pipeline are [DataView](xref:Microsoft
 
 Each transformation in the pipeline has an input schema (data names, types, and sizes that the transform expects to see on its input); and an output schema (data names, types, and sizes that the transform produces after the transformation). 
 
-If the output schema from one transform in the pipeline does not match the input schema of the next transform, ML.NET will throw an exception.
+If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 
 A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type  and they are scalar quantities rather than vector ones.
 

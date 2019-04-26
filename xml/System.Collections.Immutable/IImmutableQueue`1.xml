@@ -92,6 +92,7 @@
         <summary>Removes the first element in the immutable queue, and returns the new queue.</summary>
         <returns>The new immutable queue with the first element removed. This value is never <c>null</c>.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The queue is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Enqueue">
@@ -176,6 +177,7 @@
         <summary>Returns the element at the beginning of the immutable queue without removing it.</summary>
         <returns>The element at the beginning of the queue.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The queue is empty.</exception>
       </Docs>
     </Member>
   </Members>

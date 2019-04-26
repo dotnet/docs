@@ -805,10 +805,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The item index.</param>
+        <summary>Gets a read-only reference to the element at the specified index.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException"><paramref name="index" /> is greater or equal to the array count.</exception>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">

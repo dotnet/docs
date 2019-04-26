@@ -456,6 +456,9 @@
         <summary>Gets or sets the element with the specified key.</summary>
         <value>The element that has the specified key.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is being retrieved, and <paramref name="key" /> is not found.</exception>
+        <exception cref="T:System.NotSupportedException">The property is being set, and the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="KeyComparer">

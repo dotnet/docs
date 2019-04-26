@@ -206,6 +206,7 @@
         <summary>Removes the item at the beginning of the immutable queue, and returns the new queue.</summary>
         <returns>The new queue with the item removed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
   </Members>

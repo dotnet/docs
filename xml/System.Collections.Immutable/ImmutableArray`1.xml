@@ -1042,9 +1042,9 @@
         <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index of the element to get a reference to.</param>
+        <summary>Gets a read-only reference to the element at the specified <paramref name="index" /> in the read-only list.</summary>
+        <returns>A read-only reference to the element at the specified <paramref name="index" /> in the read-only list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2443,6 +2443,7 @@
         <summary>Returns an enumerator that iterates through the immutable array.</summary>
         <returns>An enumerator that iterates through the immutable array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Collections.Immutable.ImmutableArray`1.IsDefault" /> property returns <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -2475,6 +2476,7 @@
         <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <returns>Throws <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -2503,6 +2505,7 @@
       <Docs>
         <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -2600,6 +2603,7 @@
         <param name="value">The value to insert.</param>
         <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -2736,6 +2740,7 @@
         <param name="value">The value to remove from the array.</param>
         <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -2767,6 +2772,7 @@
         <param name="index">The index of the item to remove.</param>
         <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Add">

@@ -329,7 +329,7 @@
         <typeparam name="TOutput">The type of the elements of the target array.</typeparam>
         <param name="converter">A delegate that converts each element from one type to another type.</param>
         <summary>Converts the elements in the current immutable list to another type, and returns a list containing the converted elements.</summary>
-        <returns>To be added.</returns>
+        <returns>A list of the target type containing the converted elements from the current <see cref="T:System.Collections.Immutable.ImmutableList`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1096,6 +1096,7 @@
         <summary>Gets the element at the specified index of the list.</summary>
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">In a get operation, <paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ItemRef">
@@ -1122,10 +1123,11 @@
         <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The 0-based index of the element in the set to return.</param>
+        <summary>Gets a read-only reference to the element of the set at the given <paramref name="index" />.</summary>
+        <returns>A read-only reference to the element at the given position.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException"><paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -1627,6 +1629,7 @@
         <summary>Sorts the elements in the entire immutable list using the specified comparer.</summary>
         <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="comparison" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -2139,7 +2142,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -2175,7 +2178,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -2297,7 +2300,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -2431,7 +2434,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -2470,7 +2473,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Add">

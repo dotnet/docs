@@ -112,6 +112,7 @@
         <summary>Returns the element at the top of the immutable stack without removing it.</summary>
         <returns>The element at the top of the stack.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pop">
@@ -139,6 +140,7 @@
         <summary>Removes the element at the top of the immutable stack and returns the new stack.</summary>
         <returns>The new stack; never <c>null</c></returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Push">

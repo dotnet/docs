@@ -152,6 +152,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="value" /> does not implement <see cref="T:System.IComparable" /> or the search encounters an element that does not implement <see cref="T:System.IComparable" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="index" /> and <paramref name="length" /> do not specify a valid range in <paramref name="array" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> is less than the lower bound of <paramref name="array" />.
+        
+-or-
+
+<paramref name="length" /> is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -198,6 +204,16 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is null and <paramref name="value" /> does not implement <see cref="T:System.IComparable" /> or the search encounters an element that does not implement <see cref="T:System.IComparable" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="index" /> and <paramref name="length" /> do not specify a valid range in <paramref name="array" />.
+        
+-or-
+
+<paramref name="comparer" /> is <see langword="null" />, and <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> is less than the lower bound of <paramref name="array" />.
+
+-or-
+
+<paramref name="length" /> is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T&gt;">

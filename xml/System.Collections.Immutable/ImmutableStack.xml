@@ -199,6 +199,7 @@
         <summary>Removes the specified item from an immutable stack.</summary>
         <returns>A stack; never <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
   </Members>

@@ -186,6 +186,7 @@
         <summary>Returns the object at the top of the stack without removing it.</summary>
         <returns>The object at the top of the stack.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="PeekRef">
@@ -210,9 +211,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a read-only reference to the element on the top of the stack.</summary>
+        <returns>A read-only reference to the element on the top of the stack.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when the stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pop">
@@ -240,6 +242,7 @@
         <summary>Removes the element at the top of the immutable stack and returns the stack after the removal.</summary>
         <returns>A stack; never <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pop">

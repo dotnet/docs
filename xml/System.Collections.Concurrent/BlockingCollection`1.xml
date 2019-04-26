@@ -1249,6 +1249,7 @@
         <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance, or the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> is empty and the collection has been marked as complete for adding.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/987ea3d7-0ad5-4238-8b64-331ce4eb3f0b">BlockingCollection Overview</related>
+        <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> is empty and has been marked as complete with regards to additions.</exception>
       </Docs>
     </Member>
     <Member MemberName="Take">

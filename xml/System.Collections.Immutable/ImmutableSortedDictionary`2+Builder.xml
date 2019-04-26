@@ -1367,9 +1367,10 @@
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns a read-only reference to the value associated with the provided <paramref name="key" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The <paramref name="key" /> is not present.</exception>
       </Docs>
     </Member>
     <Member MemberName="Values">

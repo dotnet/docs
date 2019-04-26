@@ -51,7 +51,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
      As a convenience, the following two steps are implemented in a batch file called RemoveNetTcpSiteBinding.cmd located in the sample directory.  
   
-    1.  Remove net.tcp from the list of enabled protocols by running the following command in an administrator-level Command Prompt window.  
+    1. Remove net.tcp from the list of enabled protocols by running the following command in an administrator-level Command Prompt window.  
   
         ```  
         %windir%\system32\inetsrv\appcmd.exe set app   
@@ -61,7 +61,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
         > [!NOTE]
         >  This command is a single line of text.  
   
-    2.  Remove the net.tcp site binding by running the following command in an elevated Command Prompt window:  
+    2. Remove the net.tcp site binding by running the following command in an elevated Command Prompt window:  
   
         ```  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   

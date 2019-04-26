@@ -52,19 +52,19 @@ Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =
   
 -   Add a while loop that performs the following steps for each task in the collection.  
   
-    1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.  
+    1. Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.  
   
         ```vb  
         Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
         ```  
   
-    2.  Removes that task from the collection.  
+    2. Removes that task from the collection.  
   
         ```vb  
         downloadTasks.Remove(firstFinishedTask)  
         ```  
   
-    3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
+    3. Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
   
         ```vb  
         Dim length = Await firstFinishedTask  

@@ -24,13 +24,13 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
 2. Use the <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A> property to return a reference to the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings> class and set any of the following properties, as appropriate:  
   
-    1.  `DetectReplay`. A Boolean value. This governs whether the client should detect replays from the server. The default is `true`.  
+    1. `DetectReplay`. A Boolean value. This governs whether the client should detect replays from the server. The default is `true`.  
   
-    2.  `MaxClockSkew`. A <xref:System.TimeSpan> value. Governs how much time skew the replay mechanism can tolerate between the client and the server. The security mechanism examines the time stamp sent and determines whether it was sent too far back in the past. The default is 5 minutes.  
+    2. `MaxClockSkew`. A <xref:System.TimeSpan> value. Governs how much time skew the replay mechanism can tolerate between the client and the server. The security mechanism examines the time stamp sent and determines whether it was sent too far back in the past. The default is 5 minutes.  
   
-    3.  `ReplayWindow`. A `TimeSpan` value. This governs how long a message can live in the network after the server sends it (through intermediaries) before reaching the client. The client tracks the signatures of the messages sent within the latest `ReplayWindow` for the purposes of replay detection.  
+    3. `ReplayWindow`. A `TimeSpan` value. This governs how long a message can live in the network after the server sends it (through intermediaries) before reaching the client. The client tracks the signatures of the messages sent within the latest `ReplayWindow` for the purposes of replay detection.  
   
-    4.  `ReplayCacheSize`. An integer value. The client stores the signatures of the message in a cache. This setting specifies how many signatures the cache can store. If the number of messages sent within the last replay window reaches the cache limit, new messages are rejected until the oldest cached signatures reach the time limit. The default is 500000.  
+    4. `ReplayCacheSize`. An integer value. The client stores the signatures of the message in a cache. This setting specifies how many signatures the cache can store. If the number of messages sent within the last replay window reaches the cache limit, new messages are rejected until the oldest cached signatures reach the time limit. The default is 500000.  
   
 ### To control replay detection on the service using code  
   

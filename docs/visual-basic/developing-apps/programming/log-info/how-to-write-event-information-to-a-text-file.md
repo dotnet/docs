@@ -18,11 +18,11 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, choose **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, choose **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Locate the `<listeners>` section in the application configuration file.  
   

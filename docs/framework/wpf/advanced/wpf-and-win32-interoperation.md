@@ -62,13 +62,13 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 5. Within the handler (or a function that the handler calls), do the following:  
   
-    1.  Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window HWND as its `parent` parameter.  
+    1. Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window HWND as its `parent` parameter.  
   
-    2.  Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class.  
+    2. Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class.  
   
-    3.  Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property.  
+    3. Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property.  
   
-    4.  The <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.Handle%2A> property contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
+    4. The <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.Handle%2A> property contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
   
 6. Implement a managed class that contains a static field that holds a reference to your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object. This class allows you to get a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code, but more importantly it prevents your <xref:System.Windows.Interop.HwndSource> from being inadvertently garbage collected.  
   

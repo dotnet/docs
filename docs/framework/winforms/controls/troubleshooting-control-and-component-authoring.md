@@ -48,15 +48,15 @@ This topic lists the following common problems that arise when developing compon
   
 4. If your control is not listed in the dialog box, do the following:  
   
-    1.  Click the **Browse** button.  
+    1. Click the **Browse** button.  
   
-    2.  Browse to the folder that contains the .dll file that contains your control.  
+    2. Browse to the folder that contains the .dll file that contains your control.  
   
-    3.  Select the .dll file and click **Open**.  
+    3. Select the .dll file and click **Open**.  
   
          Your control appears in the dialog box.  
   
-    4.  Confirm that your control is selected, and then click **OK**.  
+    4. Confirm that your control is selected, and then click **OK**.  
   
          Your control is added to the **Toolbox**.  
   

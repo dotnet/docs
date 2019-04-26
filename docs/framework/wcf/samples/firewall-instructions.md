@@ -46,21 +46,21 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
 2. On Windows 7 or Windows Server 2008 R2, follow these steps.  
   
-    1.  Click **Advanced settings** in the left column of the Windows Firewall window.  
+    1. Click **Advanced settings** in the left column of the Windows Firewall window.  
   
-    2.  Click **Inbound Rules** in the left column.  
+    2. Click **Inbound Rules** in the left column.  
   
-    3.  Click **New Rules** in the right column.  
+    3. Click **New Rules** in the right column.  
   
-    4.  Select **Port** and click **next**.  
+    4. Select **Port** and click **next**.  
   
-    5.  Select **TCP** and enter `8000, 8001, 8002, 8003, 9000, 80, 443` in the **Specific local ports** field.  
+    5. Select **TCP** and enter `8000, 8001, 8002, 8003, 9000, 80, 443` in the **Specific local ports** field.  
   
-    6.  Click **Next**.  
+    6. Click **Next**.  
   
-    7.  Select **Allow the connection**, and click **Next** .  
+    7. Select **Allow the connection**, and click **Next** .  
   
-    8.  Select **Domain** and **Private**, and click **Next**.  
+    8. Select **Domain** and **Private**, and click **Next**.  
   
     9. Name this rule `WCF-WF 4.0 Samples`, and click **Finish**.  
   
@@ -68,15 +68,15 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
 3. On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], follow these steps.  
   
-    1.  Click **Allow a program through Windows Firewall**.  
+    1. Click **Allow a program through Windows Firewall**.  
   
-    2.  On the **Exceptions** tab, click **Add Port**.  
+    2. On the **Exceptions** tab, click **Add Port**.  
   
-    3.  Enter a name, enter 8000 as the port number, and select the **TCP** option.  
+    3. Enter a name, enter 8000 as the port number, and select the **TCP** option.  
   
-    4.  Click the **Change Scope** button, select the **My Network** (subnet) only option, and click **OK**.  
+    4. Click the **Change Scope** button, select the **My Network** (subnet) only option, and click **OK**.  
   
-    5.  Repeat steps b to d for ports 8001, 8002, 8003, 9000, 80, and 443.  
+    5. Repeat steps b to d for ports 8001, 8002, 8003, 9000, 80, and 443.  
   
 4. Click **OK** to close the firewall applet.  
   

@@ -17,11 +17,11 @@ When Windows Communication Foundation (WCF) receives a SOAP message signed using
   
      Because Windows ships with a set of default certificate chains for trusted certificate authorities, it may not be necessary to install the certificate chain for all certificate authorities.  
   
-    1.  Export the certification authority certificate chain.  
+    1. Export the certification authority certificate chain.  
   
          Exactly how this is done depends on the certification authority. If the certification authority is running Microsoft Certificate Services, select **Download a CA certificate, certificate chain, or CRL**, and then choose **Download CA certificate**.  
   
-    2.  Import the certification authority certificate chain.  
+    2. Import the certification authority certificate chain.  
   
          In the Microsoft Management Console (MMC), open the Certificates snap-in. For the certificate store that WCF is configured to retrieve X.509 certificates from, select the **Trusted Root** **Certification Authorities** folder. Under the **Trusted Root Certification Authorities** folder, right-click the **Certificates** folder, point to **All Tasks**, and then click **Import**. Provide the file exported in step a.  
   

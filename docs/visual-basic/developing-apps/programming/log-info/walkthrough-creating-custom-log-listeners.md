@@ -74,11 +74,11 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
      If there is an app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, choose **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, choose **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Locate the `<listeners>` section, in the `<source>` section with the `name` attribute "DefaultSource", located in the `<sources>` section. The `<sources>` section is located in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
   

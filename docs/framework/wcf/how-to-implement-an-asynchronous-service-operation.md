@@ -28,11 +28,11 @@ In Windows Communication Foundation (WCF) applications, a service operation can 
   
 1. A service contract interface with:  
   
-    1.  A synchronous `SampleMethod` operation.  
+    1. A synchronous `SampleMethod` operation.  
   
-    2.  An asynchronous `BeginSampleMethod` operation.  
+    2. An asynchronous `BeginSampleMethod` operation.  
   
-    3.  An asynchronous `BeginServiceAsyncMethod`/`EndServiceAsyncMethod` operation pair.  
+    3. An asynchronous `BeginServiceAsyncMethod`/`EndServiceAsyncMethod` operation pair.  
   
 2. A service implementation using a <xref:System.IAsyncResult?displayProperty=nameWithType> object.  
   

@@ -22,11 +22,11 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, select **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, select **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Locate the `<listeners>` section, under the `<source>` section with the `name` attribute "DefaultSource", in the `<sources>` section. The `<sources>` section is in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
   

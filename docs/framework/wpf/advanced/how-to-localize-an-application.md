@@ -127,19 +127,19 @@ This tutorial explains how to create a localized application by using the LocBam
 
    The seven fields are:  
   
-   1.  **BAML Name**. The name of the BAML resource with respect to the source language satellite assembly.  
+   1. **BAML Name**. The name of the BAML resource with respect to the source language satellite assembly.  
   
-   2.  **Resource Key**. The localized resource identifier.  
+   2. **Resource Key**. The localized resource identifier.  
   
-   3.  **Category**. The value type. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
+   3. **Category**. The value type. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   4.  **Readability**. Whether the value can be read by a localizer. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
+   4. **Readability**. Whether the value can be read by a localizer. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   5.  **Modifiability**. Whether the value can be modified by a localizer. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
+   5. **Modifiability**. Whether the value can be modified by a localizer. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   6.  **Comments**. Additional description of the value to help determine how a value is localized. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
+   6. **Comments**. Additional description of the value to help determine how a value is localized. See [Localization Attributes and Comments](localization-attributes-and-comments.md).  
   
-   7.  **Value**. The text value to translate to the desired culture.  
+   7. **Value**. The text value to translate to the desired culture.  
   
    The following table shows how these fields map to the delimited values of the .csv file:  
   

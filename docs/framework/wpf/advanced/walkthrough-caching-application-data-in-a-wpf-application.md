@@ -103,9 +103,9 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 7. Add a reference to the caching assembly by following these steps:
 
-    1.  In **Solution Explorer**, right-click the name of the project and then click **Add Reference**.
+    1. In **Solution Explorer**, right-click the name of the project and then click **Add Reference**.
 
-    2.  Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
+    2. Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
 
 #### To change the target .NET Framework in a Visual C# project
 
@@ -119,9 +119,9 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 4. Add a reference to the caching assembly by following these steps:
 
-    1.  Right-click the **References** folder and then click **Add Reference**.
+    1. Right-click the **References** folder and then click **Add Reference**.
 
-    2.  Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
+    2. Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
 
 ## Adding a Button to the WPF Window
  Next, you will add a button control and create an event handler for the button's `Click` event. Later you will add code to so when you click the button, the contents of the text file are cached and displayed.

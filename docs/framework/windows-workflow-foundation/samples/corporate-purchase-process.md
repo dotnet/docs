@@ -46,21 +46,21 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 1. An employee of Company X creates a Request for Proposal (RFP).  
   
-    1.  The employee types in the RFP title and description.  
+    1. The employee types in the RFP title and description.  
   
-    2.  The employee selects the vendors that he wants to invite to submit proposals.  
+    2. The employee selects the vendors that he wants to invite to submit proposals.  
   
 2. The employee submits the proposal.  
   
-    1.  An instance of the workflow is created.  
+    1. An instance of the workflow is created.  
   
-    2.  The workflow is waiting for all vendors to submit their proposals.  
+    2. The workflow is waiting for all vendors to submit their proposals.  
   
 3. After all proposals are received, the workflow iterates through all the received proposals and selects the best one.  
   
-    1.  Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
+    1. Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
   
-    2.  The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
+    2. The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
   
 4. The original requester can see all the submitted proposals. The best proposal is presented in a special section in the report.  
   

@@ -59,21 +59,21 @@ A lookup table is a table of data that has a column that displays data from reco
   
 3. Click the arrow next to the **Data Source** drop-down box. If a data source has previously been configured for the project or form, it will appear; otherwise, complete the following steps (This example uses the Customers and Orders tables of the Northwind sample database and refers to them in parentheses).  
   
-    1.  Click **Add Project Data Source** to connect to data and create a data source.  
+    1. Click **Add Project Data Source** to connect to data and create a data source.  
   
-    2.  On the **Data Source Configuration Wizard** welcome page, click **Next**.  
+    2. On the **Data Source Configuration Wizard** welcome page, click **Next**.  
   
-    3.  Select **Database** on the **Choose a Data Source Type** page.  
+    3. Select **Database** on the **Choose a Data Source Type** page.  
   
-    4.  Select a data connection from the list of available connections on the **Choose Your Data Connection** page. If your desired data connection is not available, select **New Connection** to create a new data connection.  
+    4. Select a data connection from the list of available connections on the **Choose Your Data Connection** page. If your desired data connection is not available, select **New Connection** to create a new data connection.  
   
-    5.  Click **Yes, save the connection** to save the connection string in the application configuration file.  
+    5. Click **Yes, save the connection** to save the connection string in the application configuration file.  
   
-    6.  Select the database objects to bring into your application. In this case, select a parent table and child table (for example, Customers and Orders) with a foreign key relationship.  
+    6. Select the database objects to bring into your application. In this case, select a parent table and child table (for example, Customers and Orders) with a foreign key relationship.  
   
-    7.  Replace the default dataset name if you want.  
+    7. Replace the default dataset name if you want.  
   
-    8.  Click **Finish**.  
+    8. Click **Finish**.  
   
 4. In the **Display Member** drop-down box, select the column name (for example, ContactName) to be displayed in the combo box.  
   

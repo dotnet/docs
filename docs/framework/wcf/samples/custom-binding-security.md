@@ -122,36 +122,36 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
 1. On the service computer:  
   
-    1.  Create a virtual directory named servicemodelsamples on the service computer.  
+    1. Create a virtual directory named servicemodelsamples on the service computer.  
   
-    2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory.  
+    2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service computer. Ensure that you copy the files in the \bin subdirectory.  
   
-    3.  Copy the Setup.bat and Cleanup.bat files to the service computer.  
+    3. Copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-    4.  Run the following command in a Developer Command Prompt for Visual Studio opened with administrator privileges: `Setup.bat service`. This creates the service certificate with the subject name matching the name of the computer the batch file was run on.  
+    4. Run the following command in a Developer Command Prompt for Visual Studio opened with administrator privileges: `Setup.bat service`. This creates the service certificate with the subject name matching the name of the computer the batch file was run on.  
   
         > [!NOTE]
         >  The Setup.bat batch file is designed to be run from a Visual Studio 2010 Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio 2010 Command Prompt.
 
-    5.  Change the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) inside the Service.exe.config file to reflect the subject name of the certificate generated in the previous step.
+    5. Change the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) inside the Service.exe.config file to reflect the subject name of the certificate generated in the previous step.
 
-    6.  Run Service.exe from a command prompt.
+    6. Run Service.exe from a command prompt.
 
 2. On the client computer:
 
-    1.  Copy the client program files from the \client\bin\ folder to the client computer. Also copy the Cleanup.bat file.
+    1. Copy the client program files from the \client\bin\ folder to the client computer. Also copy the Cleanup.bat file.
 
-    2.  Run Cleanup.bat to remove any old certificates from previous samples.
+    2. Run Cleanup.bat to remove any old certificates from previous samples.
 
-    3.  Export the service's certificate by opening a Developer Command Prompt for Visual Studio with administrative privileges, and running the following command on the service computer (substitute `%SERVER_NAME%` with the fully-qualified name of the computer where the service is running):
+    3. Export the service's certificate by opening a Developer Command Prompt for Visual Studio with administrative privileges, and running the following command on the service computer (substitute `%SERVER_NAME%` with the fully-qualified name of the computer where the service is running):
 
         ```
         certmgr -put -r LocalMachine -s My -c -n %SERVER_NAME% %SERVER_NAME%.cer
         ```
 
-    4.  Copy %SERVER_NAME%.cer to the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running).
+    4. Copy %SERVER_NAME%.cer to the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running).
 
-    5.  Import the service's certificate by opening a Developer Command Prompt for Visual Studio with administrative privileges, and running the following command on the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running):
+    5. Import the service's certificate by opening a Developer Command Prompt for Visual Studio with administrative privileges, and running the following command on the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running):
 
         ```
         certmgr.exe -add -c %SERVER_NAME%.cer -s -r CurrentUser TrustedPeople
@@ -159,7 +159,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
          Steps c, d, and e are not necessary if the certificate is issued by a Trusted Issuer.
 
-    6.  Modify the client’s App.config file as follows:
+    6. Modify the client’s App.config file as follows:
 
         ```xml
         <client>
@@ -172,9 +172,9 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
         </client>
         ```
 
-    7.  If the service is running under an account other than the NetworkService or LocalSystem account in a domain environment, you might need to modify the endpoint identity for the service endpoint inside the client's App.config file to set the appropriate UPN or SPN based on the account that is used to run the service. For more information about endpoint identity, see the [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md) topic.
+    7. If the service is running under an account other than the NetworkService or LocalSystem account in a domain environment, you might need to modify the endpoint identity for the service endpoint inside the client's App.config file to set the appropriate UPN or SPN based on the account that is used to run the service. For more information about endpoint identity, see the [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md) topic.
 
-    8.  Run Client.exe from a command prompt.
+    8. Run Client.exe from a command prompt.
 
 ### To clean up after the sample
 

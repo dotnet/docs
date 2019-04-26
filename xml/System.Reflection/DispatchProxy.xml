@@ -24,7 +24,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a mechanism for instantiating proxy objects and handling their method dispatch.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -90,11 +90,12 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TProxy">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The interface the proxy should implement.</typeparam>
+        <typeparam name="TProxy">The base class to use for the proxy class.</typeparam>
+        <summary>Creates an object instance that derives from class <typeparamref name="TProxy" /> and implements interface <typeparamref name="T" />.</summary>
+        <returns>An object instance that implements <typeparamref name="T" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException"><typeparamref name="T" /> is a class, or <typeparamref name="TProxy" /> is sealed or does not have a parameterless constructor.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -127,10 +128,10 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="targetMethod">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetMethod">The method the caller invoked.</param>
+        <param name="args">The arguments the caller passed to the method.</param>
+        <summary>Whenever any method on the generated proxy type is called. Rhis method will be invoked to dispatch control.</summary>
+        <returns>The object to return to the caller, or <see langword="null" /> for void methods.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -3509,7 +3509,9 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
  If the thread is already suspended, this method has no effect.  
   
 > [!CAUTION]
->  Do not use the <xref:System.Threading.Thread.Suspend%2A> and <xref:System.Threading.Thread.Resume%2A> methods to synchronize the activities of threads. You have no way of knowing what code a thread is executing when you suspend it. If you suspend a thread while it holds locks during a security permission evaluation, other threads in the <xref:System.AppDomain> might be blocked. If you suspend a thread while it is executing a class constructor, other threads in the <xref:System.AppDomain> that attempt to use that class are blocked. Deadlocks can occur very easily.  
+> Do not use the <xref:System.Threading.Thread.Suspend%2A> and <xref:System.Threading.Thread.Resume%2A> methods to synchronize the activities of threads. You have no way of knowing what code a thread is executing when you suspend it. If you suspend a thread while it holds locks during a security permission evaluation, other threads in the <xref:System.AppDomain> might be blocked. If you suspend a thread while it is executing a class constructor, other threads in the <xref:System.AppDomain> that attempt to use that class are blocked. Deadlocks can occur very easily.
+
+When you call the `Suspend` method on a thread, the system notes that a thread suspension has been requested and allows the thread to execute until it reaches a safe point before actually suspending the thread. A safe point for a thread is a point in its execution at which garbage collection can be performed. Once a safe point is reached, the runtime guarantees that the suspended thread will not make any further progress in managed code. A thread executing outside managed code is always safe for garbage collection, and its execution continues until it attempts to resume execution of managed code.  
   
  ]]></format>
         </remarks>

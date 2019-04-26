@@ -339,9 +339,20 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This property represents an entity member name, not the name of a corresponding data field. Therefore, this name is not a localized name. It should be set only for property or parameter contexts.  
-  
+## Remarks
+
+This property represents an entity member name, not the name of a corresponding data field. Therefore, this name is not a localized name. It should be set only for property or parameter contexts.  
+
+In .NET Framework 4.7.2 and earlier versions, when using a custom <xref:System.ComponentModel.DataAnnotations.ValidationAttribute?displayProperty=nameWithType>, the `MemberName` property returns `null`. Starting with .NET Framework 4.8, you can change the default behavior so that the property returns the member name by adding the following setting to your app config file:
+
+```xml
+<configuration>
+   <appSettings>
+      <add key="aspnet:GetValidationMemberName" value="true" />
+   </appSettings>
+</configuration>
+```
+
  ]]></format>
         </remarks>
       </Docs>

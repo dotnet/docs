@@ -41,7 +41,7 @@ In this tutorial, you learn how to:
 
 2. Add a reference in the **GettingStartedClient** project to the <xref:System.ServiceModel> assembly: 
 
-    1.  In the **Solution Explorer** window, select the **References** folder under the **GettingStartedClient** project, and then select **Add Reference** from the shortcut menu. 
+    1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedClient** project, and then select **Add Reference** from the shortcut menu. 
 
     2. In the **Add Reference** window, under **Assemblies** on the left side of the window, select **Framework**.
     

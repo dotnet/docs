@@ -18,11 +18,11 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, choose **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, choose **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Locate the `<listeners>` section in the application configuration file.  
   
@@ -55,7 +55,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 ### To write event information to the file log  
   
--   Use the `My.Application.Log.WriteEntry` or `My.Application.Log.WriteException` method to write information to the file log. For more information, see [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md) and [How to: Log Exceptions](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).  
+- Use the `My.Application.Log.WriteEntry` or `My.Application.Log.WriteException` method to write information to the file log. For more information, see [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md) and [How to: Log Exceptions](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).  
   
      After you configure the file log listener for an assembly, it receives all messages that `My.Application.Log` writes from that assembly.  
   

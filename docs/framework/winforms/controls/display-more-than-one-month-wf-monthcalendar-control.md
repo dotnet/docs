@@ -17,7 +17,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
 ### To display multiple months  
   
--   Set the <xref:System.Windows.Forms.MonthCalendar.CalendarDimensions%2A> property to the number of months to display horizontally and vertically.  
+- Set the <xref:System.Windows.Forms.MonthCalendar.CalendarDimensions%2A> property to the number of months to display horizontally and vertically.  
   
     ```vb  
     MonthCalendar1.CalendarDimensions = New System.Drawing.Size (3,2)  

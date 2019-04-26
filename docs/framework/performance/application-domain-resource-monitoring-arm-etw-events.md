@@ -13,15 +13,15 @@ ms.author: "mairaw"
   
  This category consists of the following events:  
   
--   [ThreadCreated Event](#threadcreated_event)  
+- [ThreadCreated Event](#threadcreated_event)  
   
--   [AppDomainMemAllocated Event](#appdomainmemallocated_event)  
+- [AppDomainMemAllocated Event](#appdomainmemallocated_event)  
   
--   [AppDomainMemSurvived Event](#appdomainmemsurvived_event)  
+- [AppDomainMemSurvived Event](#appdomainmemsurvived_event)  
   
--   [ThreadAppDomainEnter Event](#threadappdomainenter_event)  
+- [ThreadAppDomainEnter Event](#threadappdomainenter_event)  
   
--   [ThreadTerminated Event](#threadterminated_event)  
+- [ThreadTerminated Event](#threadterminated_event)  
   
 <a name="threadcreated_event"></a>   
 ## ThreadCreated Event  

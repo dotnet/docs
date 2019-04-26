@@ -14,11 +14,11 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
 
  In this walkthrough, you perform the following tasks:
 
--   Create the project.
+- Create the project.
 
--   Create the WPF control types.
+- Create the WPF control types.
 
--   Select WPF controls.
+- Select WPF controls.
 
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -26,7 +26,7 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio 2012.  
+- Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  
@@ -36,7 +36,7 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 #### To create the project  
   
--   Create a new Windows Forms Application project in Visual Basic or Visual C# named `SelectingWpfContent`.  
+- Create a new Windows Forms Application project in Visual Basic or Visual C# named `SelectingWpfContent`.  
   
 ## Creating the WPF Control Types  
  After you add WPF control types to the project, you can host them in different <xref:System.Windows.Forms.Integration.ElementHost> controls.  

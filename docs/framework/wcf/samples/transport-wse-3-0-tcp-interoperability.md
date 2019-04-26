@@ -37,16 +37,16 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  The base `WseTcpDuplexSessionChannel` assumes that it receives a connected socket. The base class handles socket shutdown. There are three places that interface with socket closure:  
   
--   OnAbort -- close the socket ungracefully (hard close).  
+- OnAbort -- close the socket ungracefully (hard close).  
   
--   On[Begin]Close -- close the socket gracefully (soft close).  
+- On[Begin]Close -- close the socket gracefully (soft close).  
   
--   session.CloseOutputSession -- shutdown the outbound data stream (half close).  
+- session.CloseOutputSession -- shutdown the outbound data stream (half close).  
   
 ## Channel Factory  
  The next step in writing the TCP transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelFactory> for client channels.  
   
--   `WseTcpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>\<IDuplexSessionChannel>. It is a factory that overrides `OnCreateChannel` to produce client channels.  
+- `WseTcpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>\<IDuplexSessionChannel>. It is a factory that overrides `OnCreateChannel` to produce client channels.  
   
  `protected override IDuplexSessionChannel OnCreateChannel(EndpointAddress remoteAddress, Uri via)`  
   
@@ -56,11 +56,11 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `}`  
   
--   `ClientWseTcpDuplexSessionChannel` adds logic to the base `WseTcpDuplexSessionChannel` to connect to a TCP server at `channel.Open` time. First the hostname is resolved to an IP address, as shown in the following code.  
+- `ClientWseTcpDuplexSessionChannel` adds logic to the base `WseTcpDuplexSessionChannel` to connect to a TCP server at `channel.Open` time. First the hostname is resolved to an IP address, as shown in the following code.  
   
  `hostEntry = Dns.GetHostEntry(Via.Host);`  
   
--   Then the hostname is connected to the first available IP address in a loop, as shown in the following code.  
+- Then the hostname is connected to the first available IP address in a loop, as shown in the following code.  
   
  `IPAddress address = hostEntry.AddressList[i];`  
   
@@ -68,12 +68,12 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `socket.Connect(new IPEndPoint(address, port));`  
   
--   As part of the channel contract, any domain-specific exceptions are wrapped, such as `SocketException` in <xref:System.ServiceModel.CommunicationException>.  
+- As part of the channel contract, any domain-specific exceptions are wrapped, such as `SocketException` in <xref:System.ServiceModel.CommunicationException>.  
   
 ## Channel Listener  
  The next step in writing the TCP transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelListener> for accepting server channels.  
   
--   `WseTcpChannelListener` derives from <xref:System.ServiceModel.Channels.ChannelListenerBase>\<IDuplexSessionChannel> and overrides On[Begin]Open and On[Begin]Close to control the lifetime of its listen socket. In OnOpen, a socket is created to listen on IP_ANY. More advanced implementations can create a second socket to listen on IPv6 as well. They can also allow the IP address to be specified in the hostname.  
+- `WseTcpChannelListener` derives from <xref:System.ServiceModel.Channels.ChannelListenerBase>\<IDuplexSessionChannel> and overrides On[Begin]Open and On[Begin]Close to control the lifetime of its listen socket. In OnOpen, a socket is created to listen on IP_ANY. More advanced implementations can create a second socket to listen on IPv6 as well. They can also allow the IP address to be specified in the hostname.  
   
  `IPEndPoint localEndpoint = new IPEndPoint(IPAddress.Any, uri.Port);`  
   
@@ -173,18 +173,18 @@ Symbols:
   
 1. Once you install the `TcpSyncStockService` sample, do the following:  
   
-    1.  Open the `TcpSyncStockService` in Visual Studio (Note that the TcpSyncStockService sample is installed with WSE 3.0. It is not part of this sample's code).  
+    1. Open the `TcpSyncStockService` in Visual Studio (Note that the TcpSyncStockService sample is installed with WSE 3.0. It is not part of this sample's code).  
   
-    2.  Set the StockService project as the start up project.  
+    2. Set the StockService project as the start up project.  
   
-    3.  Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
+    3. Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
   
-    4.  Press F5 to start the `TcpSyncStockService`. The service starts in a new console window.  
+    4. Press F5 to start the `TcpSyncStockService`. The service starts in a new console window.  
   
-    5.  Open this TCP transport sample in Visual Studio.  
+    5. Open this TCP transport sample in Visual Studio.  
   
-    6.  Update the "hostname" variable in TestCode.cs to match the machine name running the `TcpSyncStockService`.  
+    6. Update the "hostname" variable in TestCode.cs to match the machine name running the `TcpSyncStockService`.  
   
-    7.  Press F5 to start the TCP transport sample.  
+    7. Press F5 to start the TCP transport sample.  
   
-    8.  The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.  
+    8. The TCP transport test client starts in a new console. The client requests stock quotes from the service and then displays the results in its console window.  

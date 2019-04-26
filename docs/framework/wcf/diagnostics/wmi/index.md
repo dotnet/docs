@@ -106,13 +106,13 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
   
      This PowerShell script uses Security Descriptor Definition Language (SDDL) to grant the Built-In Users group access to the "root/servicemodel" WMI namespace. It specifies the following ACLs:  
   
-    -   Built-In Administrator (BA) - Already Had Access.  
+    - Built-In Administrator (BA) - Already Had Access.  
   
-    -   Network Service (NS) - Already Had Access.  
+    - Network Service (NS) - Already Had Access.  
   
-    -   Local System (LS) - Already Had Access.  
+    - Local System (LS) - Already Had Access.  
   
-    -   Built-In Users - The group to grant access to.  
+    - Built-In Users - The group to grant access to.  
   
 #### To grant provider registration access  
   

@@ -25,7 +25,7 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System?displayProperty=nameWithType> namespace.  
+- A reference to the <xref:System?displayProperty=nameWithType> namespace.  
   
 ## See also
 

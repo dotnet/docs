@@ -41,13 +41,13 @@ The Discovery specification does not require that endpoints that participate in 
 ## Sample Details  
  The sample includes a library and 4 console applications:  
   
--   **DiscoverySecurityChannels**: A library that exposes the secure binding. The library computes and verifies the compact signature for outgoing/incoming messages.  
+- **DiscoverySecurityChannels**: A library that exposes the secure binding. The library computes and verifies the compact signature for outgoing/incoming messages.  
   
--   **Service**: A service exposing ICalculatorService contract, self hosted. The service is marked as Discoverable. The user specifies the details of the certificate used to sign messages by specifying the store location and name and the subject name or other unique identifier for the certificate, and the store where the client certificates are located (the certificates used to check signature for incoming messages). Based on these details, a UdpDiscoveryEndpoint with added security is built and used.  
+- **Service**: A service exposing ICalculatorService contract, self hosted. The service is marked as Discoverable. The user specifies the details of the certificate used to sign messages by specifying the store location and name and the subject name or other unique identifier for the certificate, and the store where the client certificates are located (the certificates used to check signature for incoming messages). Based on these details, a UdpDiscoveryEndpoint with added security is built and used.  
   
--   **Client**: This class tries to discover an ICalculatorService and to call methods on the service. Again, a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> with added security is built and used to sign and verify the messages.  
+- **Client**: This class tries to discover an ICalculatorService and to call methods on the service. Again, a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> with added security is built and used to sign and verify the messages.  
   
--   **AnnouncementListener**: A self-hosted service that listens for online and offline announcements and uses the secure announcement endpoint.  
+- **AnnouncementListener**: A self-hosted service that listens for online and offline announcements and uses the secure announcement endpoint.  
   
 > [!NOTE]
 >  If Setup.bat is run multiple times, the certificate manager prompts you for choosing a certificate to add, as there are duplicate certificates. In that case, Setup.bat should be aborted and Cleanup.bat should be called, because the duplicates have already been created. Cleanup.bat also prompts you to choose a certificate to delete. Select a certificate from the list and continue executing Cleanup.bat until no certificates are remaining.  

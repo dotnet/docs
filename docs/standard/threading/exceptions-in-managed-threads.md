@@ -19,11 +19,11 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
   
  The common language runtime provides a backstop for certain unhandled exceptions that are used for controlling program flow:  
   
--   A <xref:System.Threading.ThreadAbortException> is thrown in a thread because <xref:System.Threading.Thread.Abort%2A> was called.  
+- A <xref:System.Threading.ThreadAbortException> is thrown in a thread because <xref:System.Threading.Thread.Abort%2A> was called.  
   
--   An <xref:System.AppDomainUnloadedException> is thrown in a thread because the application domain in which the thread is executing is being unloaded.  
+- An <xref:System.AppDomainUnloadedException> is thrown in a thread because the application domain in which the thread is executing is being unloaded.  
   
--   The common language runtime or a host process terminates the thread by throwing an internal exception.  
+- The common language runtime or a host process terminates the thread by throwing an internal exception.  
   
  If any of these exceptions are unhandled in threads created by the common language runtime, the exception terminates the thread, but the common language runtime does not allow the exception to proceed further.  
   
@@ -41,11 +41,11 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
 ## Change from Previous Versions  
  The most significant change pertains to managed threads. In the .NET Framework versions 1.0 and 1.1, the common language runtime provides a backstop for unhandled exceptions in the following situations:  
   
--   There is no such thing as an unhandled exception on a thread pool thread. When a task throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then returns the thread to the thread pool.  
+- There is no such thing as an unhandled exception on a thread pool thread. When a task throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then returns the thread to the thread pool.  
   
--   There is no such thing as an unhandled exception on a thread created with the <xref:System.Threading.Thread.Start%2A> method of the <xref:System.Threading.Thread> class. When code running on such a thread throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then gracefully terminates the thread.  
+- There is no such thing as an unhandled exception on a thread created with the <xref:System.Threading.Thread.Start%2A> method of the <xref:System.Threading.Thread> class. When code running on such a thread throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then gracefully terminates the thread.  
   
--   There is no such thing as an unhandled exception on the finalizer thread. When a finalizer throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then allows the finalizer thread to resume running finalizers.  
+- There is no such thing as an unhandled exception on the finalizer thread. When a finalizer throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then allows the finalizer thread to resume running finalizers.  
   
  The foreground or background status of a managed thread does not affect this behavior.  
   
@@ -54,11 +54,11 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
 ### Migrating Code  
  In general, the change will expose previously unrecognized programming problems so that they can be fixed. In some cases, however, programmers might have taken advantage of the runtime backstop, for example to terminate threads. Depending on the situation, they should consider one of the following migration strategies:  
   
--   Restructure the code so the thread exits gracefully when a signal is received.  
+- Restructure the code so the thread exits gracefully when a signal is received.  
   
--   Use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method to abort the thread.  
+- Use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method to abort the thread.  
   
--   If a thread must be stopped so that process termination can proceed, make the thread a background thread so that it is automatically terminated on process exit.  
+- If a thread must be stopped so that process termination can proceed, make the thread a background thread so that it is automatically terminated on process exit.  
   
  In all cases, the strategy should follow the design guidelines for exceptions. See [Design Guidelines for Exceptions](../../../docs/standard/design-guidelines/exceptions.md).  
   

@@ -12,11 +12,11 @@ The Visual Basic compiler incorporates only the significant white space characte
 ## Significant and Insignificant White Space  
  White space characters in XML literals are significant in only three areas:  
   
--   When they are in an attribute value.  
+- When they are in an attribute value.  
   
--   When they are part of an element's text content and the text also contains other characters.  
+- When they are part of an element's text content and the text also contains other characters.  
   
--   When they are in an embedded expression for an element's text content.  
+- When they are in an embedded expression for an element's text content.  
   
  Otherwise, the compiler treats white space characters as insignificant and does not include then in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] object for the literal.  
   

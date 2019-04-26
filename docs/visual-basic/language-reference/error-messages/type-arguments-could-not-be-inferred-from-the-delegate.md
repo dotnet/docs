@@ -17,7 +17,7 @@ An assignment statement uses `AddressOf` to assign the address of a generic proc
   
 ## To correct this error  
   
--   Specify the type arguments for the generic procedure in the `AddressOf` expression.  
+- Specify the type arguments for the generic procedure in the `AddressOf` expression.  
   
 ## See also
 

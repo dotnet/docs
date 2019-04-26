@@ -28,53 +28,53 @@ An array is a reference type in managed code that contains one or more elements 
 ## Example  
  This sample demonstrates how to pass the following types of arrays:  
   
--   Array of integers by value.  
+- Array of integers by value.  
   
--   Array of integers by reference, which can be resized.  
+- Array of integers by reference, which can be resized.  
   
--   Multidimensional array (matrix) of integers by value.  
+- Multidimensional array (matrix) of integers by value.  
   
--   Array of strings by value.  
+- Array of strings by value.  
   
--   Array of structures with integers.  
+- Array of structures with integers.  
   
--   Array of structures with strings.  
+- Array of structures with strings.  
   
  Unless an array is explicitly marshaled by reference, the default behavior marshals the array as an In parameter. You can change this behavior by applying the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes explicitly.  
   
  The Arrays sample uses the following unmanaged functions, shown with their original function declaration:  
   
--   **TestArrayOfInts** exported from PinvokeLib.dll.  
+- **TestArrayOfInts** exported from PinvokeLib.dll.  
   
     ```  
     int TestArrayOfInts(int* pArray, int pSize);  
     ```  
   
--   **TestRefArrayOfInts** exported from PinvokeLib.dll.  
+- **TestRefArrayOfInts** exported from PinvokeLib.dll.  
   
     ```  
     int TestRefArrayOfInts(int** ppArray, int* pSize);  
     ```  
   
--   **TestMatrixOfInts** exported from PinvokeLib.dll.  
+- **TestMatrixOfInts** exported from PinvokeLib.dll.  
   
     ```  
     int TestMatrixOfInts(int pMatrix[][COL_DIM], int row);  
     ```  
   
--   **TestArrayOfStrings** exported from PinvokeLib.dll.  
+- **TestArrayOfStrings** exported from PinvokeLib.dll.  
   
     ```  
     int TestArrayOfStrings(char** ppStrArray, int size);  
     ```  
   
--   **TestArrayOfStructs** exported from PinvokeLib.dll.  
+- **TestArrayOfStructs** exported from PinvokeLib.dll.  
   
     ```  
     int TestArrayOfStructs(MYPOINT* pPointArray, int size);  
     ```  
   
--   **TestArrayOfStructs2** exported from PinvokeLib.dll.  
+- **TestArrayOfStructs2** exported from PinvokeLib.dll.  
   
     ```  
     int TestArrayOfStructs2 (MYPERSON* pPersonArray, int size);  

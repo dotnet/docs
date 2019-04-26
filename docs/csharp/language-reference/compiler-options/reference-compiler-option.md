@@ -42,9 +42,9 @@ The **-reference** option causes the compiler to import [public](../../../csharp
   
  If you reference an assembly (Assembly A) that references another assembly (Assembly B), you will need to reference Assembly B if:  
   
--   A type you use from Assembly A inherits from a type or implements an interface from Assembly B.  
+- A type you use from Assembly A inherits from a type or implements an interface from Assembly B.  
   
--   You invoke a field, property, event, or method that has a return type or parameter type from Assembly B.  
+- You invoke a field, property, event, or method that has a return type or parameter type from Assembly B.  
   
  Use [-lib](../../../csharp/language-reference/compiler-options/lib-compiler-option.md) to specify the directory in which one or more of your assembly references is located. The **-lib** topic also discusses the directories in which the compiler searches for assemblies.  
   

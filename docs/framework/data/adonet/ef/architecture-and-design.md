@@ -8,9 +8,9 @@ The SQL generation module in the [Sample Provider](https://code.msdn.microsoft.c
   
  The nodes of the tree are processed from the bottom up. First, an intermediate structure is produced: SqlSelectStatement or SqlBuilder, both implementing ISqlFragment. Next, the string SQL statement is produced from that structure. There are two reasons for the intermediate structure:  
   
--   Logically, a SQL SELECT statement is populated out of order. The nodes that participate in the FROM clause are visited before the nodes that participate in the WHERE, GROUP BY, and the ORDER BY clause.  
+- Logically, a SQL SELECT statement is populated out of order. The nodes that participate in the FROM clause are visited before the nodes that participate in the WHERE, GROUP BY, and the ORDER BY clause.  
   
--   To rename aliases, you must identify all used aliases to avoid collisions during renaming. To defer the renaming choices in SqlBuilder, use Symbol objects to represent the columns that are candidates for renaming.  
+- To rename aliases, you must identify all used aliases to avoid collisions during renaming. To defer the renaming choices in SqlBuilder, use Symbol objects to represent the columns that are candidates for renaming.  
   
  ![Diagram](../../../../../docs/framework/data/adonet/ef/media/de1ca705-4f7c-4d2d-ace5-afefc6d3cefa.gif "de1ca705-4f7c-4d2d-ace5-afefc6d3cefa")  
   
@@ -24,9 +24,9 @@ The SQL generation module in the [Sample Provider](https://code.msdn.microsoft.c
 ### ISqlFragment  
  This section covers the classes that implement the ISqlFragment interface, which serves two purposes:  
   
--   A common return type for all the visitor methods.  
+- A common return type for all the visitor methods.  
   
--   Gives a method to write the final SQL string.  
+- Gives a method to write the final SQL string.  
   
 ```  
 internal interface ISqlFragment {  
@@ -188,11 +188,11 @@ private bool IsParentAJoin{get}
   
  Typically, if SQL statement clauses are evaluated after clauses where the nodes being considered for merging are not empty, the node cannot be added to the current statement. For example, if the next node is a Filter, that node can be incorporated into the current SqlSelectStatement only if the following is true:  
   
--   The SELECT list is empty. If the SELECT list is not empty, the select list was produced by a node preceding the filter and the predicate may refer to columns produced by that SELECT list.  
+- The SELECT list is empty. If the SELECT list is not empty, the select list was produced by a node preceding the filter and the predicate may refer to columns produced by that SELECT list.  
   
--   The GROUPBY is empty. If the GROUPBY is not empty, adding the filter would mean filtering before grouping, which is not correct.  
+- The GROUPBY is empty. If the GROUPBY is not empty, adding the filter would mean filtering before grouping, which is not correct.  
   
--   The TOP clause is empty. If the TOP clause is not empty, adding the filter would mean filtering before doing TOP, which is not correct.  
+- The TOP clause is empty. If the TOP clause is not empty, adding the filter would mean filtering before doing TOP, which is not correct.  
   
  This does not apply to non-relational nodes like DbConstantExpression or arithmetic expressions, because these are always included as part of an existing SqlSelectStatement.  
   
@@ -230,35 +230,35 @@ private bool IsParentAJoin{get}
 ### Relational (Non-Join) Nodes  
  The following expression types support non-join nodes:  
   
--   DbDistinctExpression  
+- DbDistinctExpression  
   
--   DbFilterExpression  
+- DbFilterExpression  
   
--   DbGroupByExpression  
+- DbGroupByExpression  
   
--   DbLimitExpession  
+- DbLimitExpession  
   
--   DbProjectExpression  
+- DbProjectExpression  
   
--   DbSkipExpression  
+- DbSkipExpression  
   
--   DbSortExpression  
+- DbSortExpression  
   
  Visiting these nodes follows the following pattern:  
   
 1. Visit the relational input and get the resulting SqlSelectStatement. The input to a relational node could be one of the following:  
   
-    -   A relational node, including an extent (a DbScanExpression, for example). Visiting such a node returns a SqlSelectStatement.  
+    - A relational node, including an extent (a DbScanExpression, for example). Visiting such a node returns a SqlSelectStatement.  
   
-    -   A set operation expression (UNION ALL, for example). The result has to be wrapped in brackets and put in the FROM clause of a new SqlSelectStatement.  
+    - A set operation expression (UNION ALL, for example). The result has to be wrapped in brackets and put in the FROM clause of a new SqlSelectStatement.  
   
 2. Check whether the current node can be added to the SqlSelectStatement produced by the input. The section titled Grouping Expressions into SQL Statements describes this. If not,  
   
-    -   Pop the current SqlSelectStatement object.  
+    - Pop the current SqlSelectStatement object.  
   
-    -   Create a new SqlSelectStatement object and add the popped SqlSelectStatement as the FROM of the new SqlSelectStatement object.  
+    - Create a new SqlSelectStatement object and add the popped SqlSelectStatement as the FROM of the new SqlSelectStatement object.  
   
-    -   Put the new object on top of the stack.  
+    - Put the new object on top of the stack.  
   
 3. Redirect the input expression binding to the correct symbol from the input. This information is maintained in the SqlSelectStatement object.  
   
@@ -283,11 +283,11 @@ ORDER BY sk1, sk2, ...
 ### Join Expressions  
  The following are considered join expressions and they are processed in a common way, by the VisitJoinExpression method:  
   
--   DbApplyExpression  
+- DbApplyExpression  
   
--   DbJoinExpression  
+- DbJoinExpression  
   
--   DbCrossJoinExpression  
+- DbCrossJoinExpression  
   
  The following are the visit steps:  
   
@@ -299,15 +299,15 @@ ORDER BY sk1, sk2, ...
   
 2. Post process the result of visiting the input by invoking ProcessJoinInputResult, which is responsible for maintaining the symbol table after visiting a child of a join expression and possibly finishing the SqlSelectStatement produced by the child. The child's result could be one of the following:  
   
-    -   A SqlSelectStatement different from the one to which the parent will be added. In such case, it may need to be completed by adding default columns. If the input was a Join, you need to create a new join symbol. Otherwise, create a normal symbol.  
+    - A SqlSelectStatement different from the one to which the parent will be added. In such case, it may need to be completed by adding default columns. If the input was a Join, you need to create a new join symbol. Otherwise, create a normal symbol.  
   
-    -   An extent (a DbScanExpression, for example), in which case it is simply added to the list of inputs of the parent’s SqlSelectStatement.  
+    - An extent (a DbScanExpression, for example), in which case it is simply added to the list of inputs of the parent’s SqlSelectStatement.  
   
-    -   Not a SqlSelectStatement, in which case it is wrapped with brackets.  
+    - Not a SqlSelectStatement, in which case it is wrapped with brackets.  
   
-    -   The same SqlSelectStatement to which the parent is added. In such case, the symbols in the FromExtents list need to be replaced with a single new JoinSymbol representing them all.  
+    - The same SqlSelectStatement to which the parent is added. In such case, the symbols in the FromExtents list need to be replaced with a single new JoinSymbol representing them all.  
   
-    -   For the first three cases, AddFromSymbol is called to add the AS clause, and update the symbol table.  
+    - For the first three cases, AddFromSymbol is called to add the AS clause, and update the symbol table.  
   
  Third, the join condition (if any) is visited.  
   
@@ -331,18 +331,18 @@ ORDER BY sk1, sk2, ...
   
  The Instance property is first visited and the result is a Symbol, a JoinSymbol, or a SymbolPair. Here is how these three cases are handled:  
   
--   If a JoinSymbol is returned, than its NameToExtent property contains a symbol for the needed property. If the join symbol represents a nested join, a new Symbol pair is returned with the join symbol to track the symbol that would be used as the instance alias, and the symbol representing the actual property for further resolving.  
+- If a JoinSymbol is returned, than its NameToExtent property contains a symbol for the needed property. If the join symbol represents a nested join, a new Symbol pair is returned with the join symbol to track the symbol that would be used as the instance alias, and the symbol representing the actual property for further resolving.  
   
--   If a SymbolPair is returned and the Column part is a join symbol, a join symbol is again returned, but now the column property is updated to point to the property represented by the current property expression. Otherwise a SqlBuilder is returned with the SymbolPair source as the alias, and the symbol for the current property as the column.  
+- If a SymbolPair is returned and the Column part is a join symbol, a join symbol is again returned, but now the column property is updated to point to the property represented by the current property expression. Otherwise a SqlBuilder is returned with the SymbolPair source as the alias, and the symbol for the current property as the column.  
   
--   If a Symbol is returned, the Visit method returns a SqlBuilder method with that instance as the alias, and the property name as column name.  
+- If a Symbol is returned, the Visit method returns a SqlBuilder method with that instance as the alias, and the property name as column name.  
   
 ### DbNewInstanceExpression  
  When used as the Projection property of DbProjectExpression, DbNewInstanceExpression produces a comma-separated list of the arguments to represent the projected columns.  
   
  When DbNewInstanceExpression has a collection return type, and defines a new collection of the expressions provided as arguments, the following three cases are handled separately:  
   
--   If DbNewInstanceExpression has DbElementExpression as the only argument, it is translated as follows:  
+- If DbNewInstanceExpression has DbElementExpression as the only argument, it is translated as follows:  
   
     ```  
     NewInstance(Element(X)) =>  SELECT TOP 1 …FROM X  

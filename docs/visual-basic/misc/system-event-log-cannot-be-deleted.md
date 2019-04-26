@@ -8,9 +8,9 @@ An attempt has been made to delete the system event log, which cannot be deleted
   
 ## To correct this error  
   
--   Consider having your application write to an application or custom log, rather than the system event log.  
+- Consider having your application write to an application or custom log, rather than the system event log.  
   
--   Do not attempt to delete the system event log.  
+- Do not attempt to delete the system event log.  
   
 ## See also
 

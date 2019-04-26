@@ -21,9 +21,9 @@ Oftentimes, you will want to convert from one image file format to another. You 
 ## Compiling the Code  
  This example requires:  
   
--   A Windows Forms application.  
+- A Windows Forms application.  
   
--   A reference to the `System.Drawing.Imaging` namespace.  
+- A reference to the `System.Drawing.Imaging` namespace.  
   
 ## See also
 

@@ -26,22 +26,22 @@ This document lists the guidelines to consider when designing an API to be seria
   
 ## Guidelines  
   
--   DO think about serialization when you design new types.  
+- DO think about serialization when you design new types.  
   
      Serialization is an important design consideration for any type, because programs might need to persist or transmit instances of the type.  
   
 ### Choosing the right serialization technology to support  
  Any given type can support none, one, or more of the serialization technologies.  
   
--   CONSIDER supporting *data contract serialization* if instances of your type might need to be persisted or used in Web Services.  
+- CONSIDER supporting *data contract serialization* if instances of your type might need to be persisted or used in Web Services.  
   
--   CONSIDER supporting the *XML serialization* instead of or in addition to data contract serialization if you need more control over the XML format that is produced when the type is serialized.  
+- CONSIDER supporting the *XML serialization* instead of or in addition to data contract serialization if you need more control over the XML format that is produced when the type is serialized.  
   
      This may be necessary in some interoperability scenarios where you need to use an XML construct that is not supported by data contract serialization, for example, to produce XML attributes.  
   
--   CONSIDER supporting *runtime serialization* if instances of your type need to travel across .NET Remoting boundaries.  
+- CONSIDER supporting *runtime serialization* if instances of your type need to travel across .NET Remoting boundaries.  
   
--   AVOID supporting runtime serialization or XML serialization just for general persistence reasons. Prefer data contract serialization instead  
+- AVOID supporting runtime serialization or XML serialization just for general persistence reasons. Prefer data contract serialization instead  
   
 #### Supporting data contract serialization  
  Types can support data contract serialization by applying the <xref:System.Runtime.Serialization.DataContractAttribute> to the type and the <xref:System.Runtime.Serialization.DataMemberAttribute> to the members (fields and properties) of the type.  

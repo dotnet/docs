@@ -40,11 +40,11 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
   
  The `types` parameter specifies the handle types to include in the collection. `types` can be any of the following three members of the [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) enumeration:  
   
--   `CorHandleStrongOnly` (handles to strong references only).  
+- `CorHandleStrongOnly` (handles to strong references only).  
   
--   `CorHandleWeakOnly` (handles to weak references only).  
+- `CorHandleWeakOnly` (handles to weak references only).  
   
--   `CorHandleAll` (all handles).  
+- `CorHandleAll` (all handles).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -55,7 +55,7 @@ End Class
   
 ## To correct this error  
   
--   Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
+- Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
   
 ## See also
 

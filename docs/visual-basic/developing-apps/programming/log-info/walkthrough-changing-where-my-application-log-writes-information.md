@@ -22,11 +22,11 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      If there is no app.config file:  
   
-    1.  On the **Project** menu, choose **Add New Item**.  
+    1. On the **Project** menu, choose **Add New Item**.  
   
-    2.  From the **Add New Item** dialog box, select **Application Configuration File**.  
+    2. From the **Add New Item** dialog box, select **Application Configuration File**.  
   
-    3.  Click **Add**.  
+    3. Click **Add**.  
   
 2. Locate the `<listeners>` section, under the `<source>` section with the `name` attribute "DefaultSource", in the `<sources>` section. The `<sources>` section is in the `<system.diagnostics>` section, in the top-level `<configuration>` section.  
   
@@ -147,13 +147,13 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      Some types that you can use are:  
   
-    -   A <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType> listener, which writes to a file log.  
+    - A <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType> listener, which writes to a file log.  
   
-    -   A <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> listener, which writes information to the computer event log specified by the `initializeData` parameter.  
+    - A <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> listener, which writes information to the computer event log specified by the `initializeData` parameter.  
   
-    -   The <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType> and <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> listeners, which write to the file specified in the `initializeData` parameter.  
+    - The <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType> and <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> listeners, which write to the file specified in the `initializeData` parameter.  
   
-    -   A <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType> listener, which writes to the command-line console.  
+    - A <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType> listener, which writes to the command-line console.  
   
      For information about where other types of log listeners write information, consult that type's documentation.  
   

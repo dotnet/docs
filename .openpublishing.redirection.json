@@ -471,6 +471,14 @@
             "redirect_url":"/dotnet/csharp/language-reference/operators/equality-operators#equality-operator-"
         },
         {
+            "source_path":"docs/csharp/language-reference/operators/greater-than-equal-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#greater-than-or-equal-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/greater-than-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#greater-than-operator-"
+        },
+        {
             "source_path":"docs/csharp/language-reference/operators/increment-operator.md",
             "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-"
         },
@@ -481,6 +489,14 @@
         {
             "source_path":"docs/csharp/language-reference/operators/left-shift-operator.md",
             "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#left-shift-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/less-than-equal-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#less-than-or-equal-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/less-than-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#less-than-operator-"
         },
         {
             "source_path":"docs/csharp/language-reference/operators/logical-negation-operator.md",
@@ -980,6 +996,14 @@
             "source_path": "docs/framework/docker/aspnetmvc.md",
             "redirect_url": "/aspnet/mvc/overview/deployment/docker-aspnetmvc",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/docker/console.md",
+            "redirect_url": "/dotnet/framework"
+        },
+        {
+            "source_path": "docs/framework/docker/index.md",
+            "redirect_url": "/dotnet/framework"
         },
         {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
@@ -1832,10 +1856,38 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-model-categorical-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-model-textual-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-regression-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/train-machine-learning-model-ml-net",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/machine-learning/resources/basics.md",
             "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/resources/what-is-mldotnet.md",
+            "redirect_url": "/dotnet/machine-learning/what-is-machine-learning",
+            "redirect_document_id": true
         },        
+        {
+            "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
+            "redirect_document_id": true
+        },
         {
             "source_path": "docs/scenarios/index.md",
             "redirect_url": "/dotnet/core/tutorials/"
@@ -2246,6 +2298,10 @@
         {
             "source_path": "docs/standard/threading/reader-writer-locks.md",
             "redirect_url": "/dotnet/api/system.threading.readerwriterlockslim"
+        },
+        {
+            "source_path": "docs/standard/threading/thread-suspend-garbage-collection-and-safe-points.md",
+            "redirect_url": "/dotnet/api/system.threading.thread.suspend"
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",

@@ -10,7 +10,7 @@ An attempt to read from or write to a file has failed because the parameter `enc
   
 ## To correct this error  
   
--   Supply a valid value for the `encoding` parameter.  
+- Supply a valid value for the `encoding` parameter.  
   
 ## See also
 

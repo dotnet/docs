@@ -40,13 +40,13 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 8. Make sure the following items are selected:  
   
-    1.  **.NET Extensibility**  
+    1. **.NET Extensibility**  
   
-    2.  **ASP.NET**  
+    2. **ASP.NET**  
   
-    3.  **ISAPI Extensions**  
+    3. **ISAPI Extensions**  
   
-    4.  **ISAPI Filters**  
+    4. **ISAPI Filters**  
   
 9. Under the item labeled **World Wide Web Services**, expand **Common Http Features**.  
   
@@ -98,13 +98,13 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 8. Make sure the following items are selected:  
   
-    1.  **.NET Extensibility**  
+    1. **.NET Extensibility**  
   
-    2.  **ASP.NET**  
+    2. **ASP.NET**  
   
-    3.  **ISAPI Extensions**  
+    3. **ISAPI Extensions**  
   
-    4.  **ISAPI Filters**  
+    4. **ISAPI Filters**  
   
 9. Expand the item labeled **Web Management Tools**, and then select **IIS Management Console**.  
   

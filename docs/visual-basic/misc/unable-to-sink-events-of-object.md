@@ -10,7 +10,7 @@ The maximum number of event receivers supported by the object has been exceeded.
   
 ### To correct the error  
   
--   Reduce the number of event receivers.  
+- Reduce the number of event receivers.  
   
 ## See also
 

@@ -30,11 +30,11 @@ A tuple is a lightweight structure that contains two or more fields whose types 
 ## Array Types  
  There is no single data type comprising all arrays. The data type of a particular instance of an array is determined by the following:  
   
--   The fact of being an array  
+- The fact of being an array  
   
--   The rank (number of dimensions) of the array  
+- The rank (number of dimensions) of the array  
   
--   The element type of the array  
+- The element type of the array  
   
  In particular, the length of a given dimension is not part of the instance's data type. The following example illustrates this.  
   

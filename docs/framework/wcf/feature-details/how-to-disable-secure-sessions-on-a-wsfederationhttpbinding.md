@@ -34,7 +34,7 @@ Some services may require federated credentials but not support secure sessions.
   
 ## Compiling the Code  
   
--   To compile the code example, create a project that references the System.ServiceModel.dll assembly.  
+- To compile the code example, create a project that references the System.ServiceModel.dll assembly.  
   
 ## See also
 

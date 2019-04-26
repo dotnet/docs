@@ -14,15 +14,15 @@ ms.assetid: aeda4ece-b979-4818-a093-ef938e908751
 # How to: Manipulate Flow Content Elements through the Blocks Property
 These examples demonstrate some of the more common operations that can be performed on flow content elements through the **Blocks** property. This property is used to add and remove items from <xref:System.Windows.Documents.BlockCollection>. Flow content elements that feature a **Blocks** property include:  
   
--   <xref:System.Windows.Documents.Figure>  
+- <xref:System.Windows.Documents.Figure>  
   
--   <xref:System.Windows.Documents.Floater>  
+- <xref:System.Windows.Documents.Floater>  
   
--   <xref:System.Windows.Documents.ListItem>  
+- <xref:System.Windows.Documents.ListItem>  
   
--   <xref:System.Windows.Documents.Section>  
+- <xref:System.Windows.Documents.Section>  
   
--   <xref:System.Windows.Documents.TableCell>  
+- <xref:System.Windows.Documents.TableCell>  
   
  These examples happen to use <xref:System.Windows.Documents.Section> as the flow content element, but these techniques are applicable to all elements that host a flow content element collection.  
   

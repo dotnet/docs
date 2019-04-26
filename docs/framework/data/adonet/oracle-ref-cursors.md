@@ -9,19 +9,19 @@ The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** d
 > [!NOTE]
 >  Some behaviors differ from those of the Microsoft OLE DB Provider for Oracle (MSDAORA).  
   
--   For performance reasons, the Data Provider for Oracle does not automatically bind **REF CURSOR** data types, as MSDAORA does, unless you explicitly specify them.  
+- For performance reasons, the Data Provider for Oracle does not automatically bind **REF CURSOR** data types, as MSDAORA does, unless you explicitly specify them.  
   
--   The data provider does not support any ODBC escape sequences, including the {resultset} escape used to specify REF CURSOR parameters.  
+- The data provider does not support any ODBC escape sequences, including the {resultset} escape used to specify REF CURSOR parameters.  
   
--   To execute a stored procedure that returns REF CURSORs, you must define the parameters in the <xref:System.Data.OracleClient.OracleParameterCollection> with an <xref:System.Data.OracleClient.OracleType> of **Cursor** and a <xref:System.Data.OracleClient.OracleParameter.Direction%2A> of **Output**. The data provider supports binding REF CURSORs as output parameters only. The provider does not support REF CURSORs as input parameters.  
+- To execute a stored procedure that returns REF CURSORs, you must define the parameters in the <xref:System.Data.OracleClient.OracleParameterCollection> with an <xref:System.Data.OracleClient.OracleType> of **Cursor** and a <xref:System.Data.OracleClient.OracleParameter.Direction%2A> of **Output**. The data provider supports binding REF CURSORs as output parameters only. The provider does not support REF CURSORs as input parameters.  
   
--   Obtaining an <xref:System.Data.OracleClient.OracleDataReader> from the parameter value is not supported. The values are of type <xref:System.DBNull> after command execution.  
+- Obtaining an <xref:System.Data.OracleClient.OracleDataReader> from the parameter value is not supported. The values are of type <xref:System.DBNull> after command execution.  
   
--   The only **CommandBehavior** enumeration value that works with REF CURSORs (for example, when calling <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A>) is **CloseConnection**; all others are ignored.  
+- The only **CommandBehavior** enumeration value that works with REF CURSORs (for example, when calling <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A>) is **CloseConnection**; all others are ignored.  
   
--   The order of REF CURSORs in the **OracleDataReader** depends on the order of the parameters in the **OracleParameterCollection**. The <xref:System.Data.OracleClient.OracleParameter.ParameterName%2A> property is ignored.  
+- The order of REF CURSORs in the **OracleDataReader** depends on the order of the parameters in the **OracleParameterCollection**. The <xref:System.Data.OracleClient.OracleParameter.ParameterName%2A> property is ignored.  
   
--   The PL/SQL **TABLE** data type is not supported. However, REF CURSORs are more efficient. If you must use a **TABLE** data type, use the OLE DB .NET Data Provider with MSDAORA.  
+- The PL/SQL **TABLE** data type is not supported. However, REF CURSORs are more efficient. If you must use a **TABLE** data type, use the OLE DB .NET Data Provider with MSDAORA.  
   
 ## In This Section  
  [REF CURSOR Examples](../../../../docs/framework/data/adonet/ref-cursor-examples.md)  

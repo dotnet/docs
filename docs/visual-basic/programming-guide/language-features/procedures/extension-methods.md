@@ -87,19 +87,19 @@ End Module
 ## Types That Can Be Extended  
  You can define an extension method on most types that can be represented in a Visual Basic parameter list, including the following:  
   
--   Classes (reference types)  
+- Classes (reference types)  
   
--   Structures (value types)  
+- Structures (value types)  
   
--   Interfaces  
+- Interfaces  
   
--   Delegates  
+- Delegates  
   
--   ByRef and ByVal arguments  
+- ByRef and ByVal arguments  
   
--   Generic method parameters  
+- Generic method parameters  
   
--   Arrays  
+- Arrays  
   
  Because the first parameter specifies the data type that the extension method extends, it is required and cannot be optional. For that reason, `Optional` parameters and `ParamArray` parameters cannot be the first parameter in the parameter list.  
   
@@ -112,15 +112,15 @@ End Module
   
  Most generally, extension methods that you add to types that you do not own are more vulnerable than extension methods added to types that you control. A number of things can occur in classes you do not own that can interfere with your extension methods.  
   
--   If any accessible instance member exists that has a signature that is compatible with the arguments in the calling statement, with no narrowing conversions required from argument to parameter, the instance method will be used in preference to any extension method. Therefore, if an appropriate instance method is added to a class at some point, an existing extension member that you rely on may become inaccessible.  
+- If any accessible instance member exists that has a signature that is compatible with the arguments in the calling statement, with no narrowing conversions required from argument to parameter, the instance method will be used in preference to any extension method. Therefore, if an appropriate instance method is added to a class at some point, an existing extension member that you rely on may become inaccessible.  
   
--   The author of an extension method cannot prevent other programmers from writing conflicting extension methods that may have precedence over the original extension.  
+- The author of an extension method cannot prevent other programmers from writing conflicting extension methods that may have precedence over the original extension.  
   
--   You can improve robustness by putting extension methods in their own namespace. Consumers of your library can then include a namespace or exclude it, or select among namespaces, separately from the rest of the library.  
+- You can improve robustness by putting extension methods in their own namespace. Consumers of your library can then include a namespace or exclude it, or select among namespaces, separately from the rest of the library.  
   
--   It may be safer to extend interfaces than it is to extend classes, especially if you do not own the interface or class. A change in an interface affects every class that implements it. Therefore, the author may be less likely to add or change methods in an interface. However, if a class implements two interfaces that have extension methods with the same signature, neither extension method is visible.  
+- It may be safer to extend interfaces than it is to extend classes, especially if you do not own the interface or class. A change in an interface affects every class that implements it. Therefore, the author may be less likely to add or change methods in an interface. However, if a class implements two interfaces that have extension methods with the same signature, neither extension method is visible.  
   
--   Extend the most specific type you can. In a hierarchy of types, if you select a type from which many other types are derived, there are layers of possibilities for the introduction of instance methods or other extension methods that might interfere with yours.  
+- Extend the most specific type you can. In a hierarchy of types, if you select a type from which many other types are derived, there are layers of possibilities for the introduction of instance methods or other extension methods that might interfere with yours.  
   
 ## Extension Methods, Instance Methods, and Properties  
  When an in-scope instance method has a signature that is compatible with the arguments of a calling statement, the instance method is chosen in preference to any extension method. The instance method has precedence even if the extension method is a better match. In the following example, `ExampleClass` contains an instance method named `ExampleMethod` that has one parameter of type `Integer`. Extension method `ExampleMethod` extends `ExampleClass`, and has one parameter of type `Long`.  

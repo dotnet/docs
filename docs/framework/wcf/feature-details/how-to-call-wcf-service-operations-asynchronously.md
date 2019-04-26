@@ -24,17 +24,17 @@ This topic covers how a client can access a service operation asynchronously. Th
   
      This generates, in addition to the synchronous and standard delegate-based asynchronous operations, a WCF client class that contains:  
   
-    -   Two <`operationName`>`Async` operations for use with the event-based asynchronous calling approach. For example:  
+    - Two <`operationName`>`Async` operations for use with the event-based asynchronous calling approach. For example:  
   
          [!code-csharp[EventAsync#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/generatedclient.cs#1)]
          [!code-vb[EventAsync#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/generatedclient.vb#1)]  
   
-    -   Operation completed events of the form <`operationName`>`Completed` for use with the event-based asynchronous calling approach. For example:  
+    - Operation completed events of the form <`operationName`>`Completed` for use with the event-based asynchronous calling approach. For example:  
   
          [!code-csharp[EventAsync#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/generatedclient.cs#2)]
          [!code-vb[EventAsync#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/generatedclient.vb#2)]  
   
-    -   <xref:System.EventArgs?displayProperty=nameWithType> types for each operation (of the form <`operationName`>`CompletedEventArgs`) for use with the event-based asynchronous calling approach. For example:  
+    - <xref:System.EventArgs?displayProperty=nameWithType> types for each operation (of the form <`operationName`>`CompletedEventArgs`) for use with the event-based asynchronous calling approach. For example:  
   
          [!code-csharp[EventAsync#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/generatedclient.cs#3)]
          [!code-vb[EventAsync#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/generatedclient.vb#3)]  

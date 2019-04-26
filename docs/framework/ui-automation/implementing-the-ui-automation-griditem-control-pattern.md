@@ -19,13 +19,13 @@ ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
 ## Implementation Guidelines and Conventions  
  When implementing <xref:System.Windows.Automation.Provider.IGridProvider>, note the following guidelines and conventions:  
   
--   Grid coordinates are zero-based with the upper left cell having coordinates (0, 0).  
+- Grid coordinates are zero-based with the upper left cell having coordinates (0, 0).  
   
--   Merged cells will report their <xref:System.Windows.Automation.Provider.IGridItemProvider.Row%2A> and <xref:System.Windows.Automation.Provider.IGridItemProvider.Column%2A> properties based on their underlying anchor cell as defined by the UI Automation provider. Typically, it will be the topmost and leftmost row or column.  
+- Merged cells will report their <xref:System.Windows.Automation.Provider.IGridItemProvider.Row%2A> and <xref:System.Windows.Automation.Provider.IGridItemProvider.Column%2A> properties based on their underlying anchor cell as defined by the UI Automation provider. Typically, it will be the topmost and leftmost row or column.  
   
--   <xref:System.Windows.Automation.Provider.IGridItemProvider> does not provide for active manipulation of the grid such as merging or splitting cells.  
+- <xref:System.Windows.Automation.Provider.IGridItemProvider> does not provide for active manipulation of the grid such as merging or splitting cells.  
   
--   Controls that implement <xref:System.Windows.Automation.Provider.IGridItemProvider> can typically be traversed (that is, a UI Automation client can move to adjacent controls) by using the keyboard.  
+- Controls that implement <xref:System.Windows.Automation.Provider.IGridItemProvider> can typically be traversed (that is, a UI Automation client can move to adjacent controls) by using the keyboard.  
   
 <a name="Required_Members_for_IGridItemProvider"></a>   
 ## Required Members for IGridItemProvider  

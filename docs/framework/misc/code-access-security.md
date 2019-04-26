@@ -38,13 +38,13 @@ ms.author: "mairaw"
 ## Key Functions of Code Access Security  
  Code access security helps limit the access that code has to protected resources and operations. In the .NET Framework, code access security performs the following functions:  
   
--   Defines permissions and permission sets that represent the right to access various system resources.  
+- Defines permissions and permission sets that represent the right to access various system resources.  
   
--   Enables code to demand that its callers have specific permissions.  
+- Enables code to demand that its callers have specific permissions.  
   
--   Enables code to demand that its callers possess a digital signature, thus allowing only callers from a particular organization or site to call the protected code.  
+- Enables code to demand that its callers possess a digital signature, thus allowing only callers from a particular organization or site to call the protected code.  
   
--   Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
+- Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
   
 <a name="walking_the_call_stack"></a>   
 ## Walking the Call Stack  

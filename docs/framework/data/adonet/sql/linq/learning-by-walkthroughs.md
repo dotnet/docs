@@ -24,20 +24,20 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
 ## General  
  The following information pertains to these walkthroughs in general:  
   
--   Environment: Each [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthrough uses Visual Studio as its integrated development environment (IDE).  
+- Environment: Each [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthrough uses Visual Studio as its integrated development environment (IDE).  
   
--   SQL engines: These walkthroughs are written to be implemented by using SQL Server Express. If you do not have SQL Server Express, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+- SQL engines: These walkthroughs are written to be implemented by using SQL Server Express. If you do not have SQL Server Express, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
     > [!NOTE]
     >  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs use a file name as a connection string. Simply specifying a file name is a convenience that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for SQL Server Express users. Always pay attention to security issues. For more information, see [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md).  
   
--   [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs typically require the Northwind sample database. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs typically require the Northwind sample database. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
--   The dialog boxes and menu commands you see in walkthroughs might differ from those described in Help, depending on your active settings or Visual Studio edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
+- The dialog boxes and menu commands you see in walkthroughs might differ from those described in Help, depending on your active settings or Visual Studio edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
--   For walkthroughs that address multi-tier scenarios, a server must be located on a computer that is distinct from the development computer, and you must have appropriate permissions to access the server.  
+- For walkthroughs that address multi-tier scenarios, a server must be located on a computer that is distinct from the development computer, and you must have appropriate permissions to access the server.  
   
--   The name of the class that typically represents the Orders table in the Northwind sample database is `[Order]`. The escaping is required because `Order` is a keyword in Visual Basic.  
+- The name of the class that typically represents the Orders table in the Northwind sample database is `[Order]`. The escaping is required because `Order` is a keyword in Visual Basic.  
   
 ## Troubleshooting  
  Run-time errors can occur because you do not have sufficient permissions to access the databases used in these walkthroughs. See the following steps to help resolve the most common of these issues.  

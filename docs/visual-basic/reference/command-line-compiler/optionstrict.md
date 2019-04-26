@@ -41,7 +41,7 @@ Enforces strict type semantics to restrict implicit type conversions.
   
 ### To set -optionstrict programmatically  
   
--   See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).  
+- See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).  
   
 ## Example  
  The following code compiles `Test.vb` using strict type semantics.  

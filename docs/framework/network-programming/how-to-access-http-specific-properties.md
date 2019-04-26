@@ -41,7 +41,7 @@ HttpWResp.Close();
 ## Compiling the Code  
  This example requires:  
   
--   References to the **System.Net** namespace.  
+- References to the **System.Net** namespace.  
   
 ## See also
 

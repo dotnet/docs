@@ -11,7 +11,7 @@ You can disassociate an object variable from any object instance by setting it t
   
 ### To disassociate an object variable from any object instance  
   
--   Set the variable to `Nothing` in an assignment statement.  
+- Set the variable to `Nothing` in an assignment statement.  
   
     ```  
     ' Assume account is a defined class  

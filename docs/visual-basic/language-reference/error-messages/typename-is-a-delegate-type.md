@@ -21,7 +21,7 @@ ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc
   
 ## To correct this error  
   
--   Use a single `AddressOf` expression in the argument list for the delegate class in the `New` clause.  
+- Use a single `AddressOf` expression in the argument list for the delegate class in the `New` clause.  
   
 ## See also
 

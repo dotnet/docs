@@ -21,11 +21,11 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
   
 3. The values that can be assigned are:  
   
-    -   **None** - Both comments and attributes stay inside the assembly and no separate file is generated.  
+    - **None** - Both comments and attributes stay inside the assembly and no separate file is generated.  
   
-    -   **CommentsOnly** - Strips only the comments from the assembly and places them in the separate LocFile.  
+    - **CommentsOnly** - Strips only the comments from the assembly and places them in the separate LocFile.  
   
-    -   **All** - Strips both the comments and the attributes from the assembly and places them both in a separate LocFile.  
+    - **All** - Strips both the comments and the attributes from the assembly and places them both in a separate LocFile.  
   
 4. When localizable resources are extracted from [!INCLUDE[TLA2#tla_baml](../../../../includes/tla2sharptla-baml-md.md)], the localizability attributes are respected by the [!INCLUDE[TLA2#tla_baml](../../../../includes/tla2sharptla-baml-md.md)] Localization API.  
   
@@ -68,11 +68,11 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
   
  There are three types of attributes:  
   
--   **Category**. This specifies whether a value should be modifiable from a localizer tool. See <xref:System.Windows.LocalizabilityAttribute.Category%2A>.  
+- **Category**. This specifies whether a value should be modifiable from a localizer tool. See <xref:System.Windows.LocalizabilityAttribute.Category%2A>.  
   
--   **Readability**. This specifies whether a localizer tool should read (and display) a value. See <xref:System.Windows.LocalizabilityAttribute.Readability%2A>.  
+- **Readability**. This specifies whether a localizer tool should read (and display) a value. See <xref:System.Windows.LocalizabilityAttribute.Readability%2A>.  
   
--   **Modifiability**. This specifies whether a localizer tool allows a value to be modified. See <xref:System.Windows.LocalizabilityAttribute.Modifiability%2A>.  
+- **Modifiability**. This specifies whether a localizer tool allows a value to be modified. See <xref:System.Windows.LocalizabilityAttribute.Modifiability%2A>.  
   
  These attributes can be specified in any order delimited by a space. In case duplicate attributes are specified, the last attribute will override former ones. For example, Localization.Attributes = "Unmodifiable Modifiable" sets Modifiability to Modifiable because it is the last value.  
   

@@ -17,7 +17,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
  The MsgBox sample uses the following unmanaged function, shown with its original function declaration:  
   
--   **MessageBox** exported from User32.dll.  
+- **MessageBox** exported from User32.dll.  
   
     ```  
     int MessageBox(HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption,   

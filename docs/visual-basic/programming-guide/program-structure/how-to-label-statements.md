@@ -22,7 +22,7 @@ Statement blocks are made up of lines of code delimited by colons. Lines of code
   
 ### To label a line of code  
   
--   Place an identifier, followed by a colon, at the beginning of the line of source code.  
+- Place an identifier, followed by a colon, at the beginning of the line of source code.  
   
      For example, the following lines of code are labeled with `Jump` and `120`, respectively:  
   

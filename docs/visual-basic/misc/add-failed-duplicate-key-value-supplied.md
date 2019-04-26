@@ -10,7 +10,7 @@ An `Add` operation failed because the key value is the same as another key value
   
 ## To correct this error  
   
--   Ensure that the key value is unique.  
+- Ensure that the key value is unique.  
   
 ## See also
 

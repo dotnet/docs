@@ -18,19 +18,19 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
   
 ### Features of .NET Framework 3.0 Document Serializers  
   
--   Direct access to the high-level document objects (logical tree and visuals) enable efficient storage of paginated content, 2D/3D elements, images, media, hyperlinks, annotations, and other support content.  
+- Direct access to the high-level document objects (logical tree and visuals) enable efficient storage of paginated content, 2D/3D elements, images, media, hyperlinks, annotations, and other support content.  
   
--   Synchronous and asynchronous operation.  
+- Synchronous and asynchronous operation.  
   
--   Support for plug-in serializers with enhanced capabilities:  
+- Support for plug-in serializers with enhanced capabilities:  
   
-    -   System-wide access for use by all .NET Framework applications.  
+    - System-wide access for use by all .NET Framework applications.  
   
-    -   Simple application plug-in discoverability.  
+    - Simple application plug-in discoverability.  
   
-    -   Simple deployment, installation, and update for custom third-party plug-ins.  
+    - Simple deployment, installation, and update for custom third-party plug-ins.  
   
-    -   User interface support for custom run-time settings and options.  
+    - User interface support for custom run-time settings and options.  
   
 ### XPS Print Path  
  The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](printing-overview.md) for additional information on print path output options and capabilities.  

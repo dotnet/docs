@@ -16,11 +16,11 @@ This sample demonstrates how to implement an RPC-based service and expose it in 
   
  The Web.config file configures the WCF service with 3 endpoints:  
   
--   The ~/service.svc/mex endpoint that exposes the service metadata for access by SOAP-based clients.  
+- The ~/service.svc/mex endpoint that exposes the service metadata for access by SOAP-based clients.  
   
--   The ~/service.svc/http endpoint that enables clients to access the service using the HTTP binding.  
+- The ~/service.svc/http endpoint that enables clients to access the service using the HTTP binding.  
   
--   The ~/service.svc/soap endpoint that allows the clients to access the service using the SOAP over HTTP binding.  
+- The ~/service.svc/soap endpoint that allows the clients to access the service using the SOAP over HTTP binding.  
   
  The HTTP endpoint is configured with a <`webHttp`> standard endpoint which has `helpEnabled` set to `true`. As a result, the service exposes an XHTML based help page at ~/service.svc/http/help that HTTP-based clients can use to access the service.  
   

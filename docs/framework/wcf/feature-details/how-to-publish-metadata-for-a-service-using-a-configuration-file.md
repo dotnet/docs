@@ -134,21 +134,21 @@ namespace Metadata.Samples
   
 7. For the metadata endpoints added in the previous step, set the `binding` attribute to one of the following:  
   
-    -   `mexHttpBinding` for HTTP publication.  
+    - `mexHttpBinding` for HTTP publication.  
   
-    -   `mexHttpsBinding` for HTTPS publication.  
+    - `mexHttpsBinding` for HTTPS publication.  
   
-    -   `mexNamedPipeBinding` for named pipe publication.  
+    - `mexNamedPipeBinding` for named pipe publication.  
   
-    -   `mexTcpBinding` for TCP publication.  
+    - `mexTcpBinding` for TCP publication.  
   
 8. For the metadata endpoints added in a previous step, set the address equal to:  
   
-    -   An empty string to use the host application's base address as the publication point if the base address is the same as the metadata binding.  
+    - An empty string to use the host application's base address as the publication point if the base address is the same as the metadata binding.  
   
-    -   A relative address if the host application has a base address.  
+    - A relative address if the host application has a base address.  
   
-    -   An absolute address.  
+    - An absolute address.  
   
 9. Build and run the console application.  
   

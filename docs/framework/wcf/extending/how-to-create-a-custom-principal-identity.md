@@ -23,29 +23,28 @@ The <xref:System.Security.Permissions.PrincipalPermissionAttribute> is a declara
 ## Compiling the Code  
  References to the following namespaces are needed to compile the code:  
   
--   <xref:System>  
+- <xref:System>  
   
--   <xref:System.Collections.Generic>  
+- <xref:System.Collections.Generic>  
   
--   <xref:System.Security.Permissions>  
+- <xref:System.Security.Permissions>  
   
--   <xref:System.Security.Principal>  
+- <xref:System.Security.Principal>  
   
--   <xref:System.Threading>  
+- <xref:System.Threading>  
   
--   <xref:System.ServiceModel>  
+- <xref:System.ServiceModel>  
   
--   <xref:System.ServiceModel.Channels>  
+- <xref:System.ServiceModel.Channels>  
   
--   <xref:System.ServiceModel.Description>  
+- <xref:System.ServiceModel.Description>  
   
--   <xref:System.IdentityModel.Claims>  
+- <xref:System.IdentityModel.Claims>  
   
--   <xref:System.IdentityModel.Policy>  
+- <xref:System.IdentityModel.Policy>  
   
 ## See also
 
-- <xref:System.ServiceModel.Description.PrincipalPermissionMode>
 - <xref:System.ServiceModel.Description.PrincipalPermissionMode>
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)

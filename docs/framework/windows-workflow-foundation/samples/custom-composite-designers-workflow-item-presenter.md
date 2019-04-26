@@ -10,18 +10,18 @@ The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in
 
 ## Demonstrates
 
--   Creating a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter>.
+- Creating a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter>.
 
--   Registering the custom designer using the metadata store.
+- Registering the custom designer using the metadata store.
 
--   Programming the rehosted toolbox declaratively and imperatively.
+- Programming the rehosted toolbox declaratively and imperatively.
 
 ## Sample Details
  The code for this sample shows:
 
--   The custom activity designer is built for the `SimpleNativeActivity` class.
+- The custom activity designer is built for the `SimpleNativeActivity` class.
 
--   The creation of a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter>.
+- The creation of a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter>.
 
 ```xaml
 <sap:ActivityDesigner x:Class="Microsoft.Samples.UsingWorkflowItemPresenter.SimpleNativeDesigner"

@@ -19,13 +19,13 @@ Provides properties and methods for accessing the application's settings.
   
  Each setting has a **Name**, **Type**, **Scope**, and **Value**, and these settings determine how the property to access each setting appears in the `My.Settings` object:  
   
--   **Name** determines the name of the property.  
+- **Name** determines the name of the property.  
   
--   **Type** determines the type of the property.  
+- **Type** determines the type of the property.  
   
--   **Scope** indicates if the property is read-only. If the value is **Application**, the property is read-only; if the value is **User**, the property is read-write.  
+- **Scope** indicates if the property is read-only. If the value is **Application**, the property is read-only; if the value is **User**, the property is read-write.  
   
--   **Value** is the default value of the property.  
+- **Value** is the default value of the property.  
   
 ## Methods  
   

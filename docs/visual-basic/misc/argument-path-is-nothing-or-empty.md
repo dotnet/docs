@@ -10,7 +10,7 @@ A path name is not valid because it is initialized to `Nothing` or is empty. A p
   
 ## To correct this error  
   
--   Add a valid path name.  
+- Add a valid path name.  
   
 ## See also
 

@@ -33,8 +33,8 @@ After running the analysis, you will see your .NET Portability Report. Only type
 
 Don’t want to use Visual Studio? You can also use the Portability Analyzer from the command prompt. Just download the [API Portability Analyzer](https://www.microsoft.com/download/details.aspx?id=42678).
 
-*   Type the following command to analyze the current directory: `\...\ApiPort.exe analyze -f .`
-*   To analyze a specific list of .dll files, type the following command: `\...\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`
+* Type the following command to analyze the current directory: `\...\ApiPort.exe analyze -f .`
+* To analyze a specific list of .dll files, type the following command: `\...\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`
 
 Your .NET Portability Report is saved as an Excel file (*.xlsx*) in your current directory. The **Details** tab in the Excel Workbook contains more information.
 

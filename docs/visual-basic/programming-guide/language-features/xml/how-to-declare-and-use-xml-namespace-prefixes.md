@@ -15,7 +15,7 @@ This example shows how to import the XML namespace prefix `ns` and use it in an 
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System.Xml.Linq> namespace.  
+- A reference to the <xref:System.Xml.Linq> namespace.  
   
 ## See also
 

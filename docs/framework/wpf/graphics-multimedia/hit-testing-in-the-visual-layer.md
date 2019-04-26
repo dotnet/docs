@@ -16,13 +16,13 @@ This topic provides an overview of hit testing functionality provided by the vis
 ## Hit Testing Scenarios  
  The <xref:System.Windows.UIElement> class provides the <xref:System.Windows.UIElement.InputHitTest%2A> method, which allows you to hit test against an element using a given coordinate value. In many cases, the <xref:System.Windows.UIElement.InputHitTest%2A> method provides the desired functionality for implementing hit testing of elements. However, there are several scenarios in which you may need to implement hit testing at the visual layer.  
   
--   Hit testing against non-<xref:System.Windows.UIElement> objects: This applies if you are hit testing non-<xref:System.Windows.UIElement> objects, such as <xref:System.Windows.Media.DrawingVisual> or graphics objects.  
+- Hit testing against non-<xref:System.Windows.UIElement> objects: This applies if you are hit testing non-<xref:System.Windows.UIElement> objects, such as <xref:System.Windows.Media.DrawingVisual> or graphics objects.  
   
--   Hit testing using a geometry: This applies if you need to hit test using a geometry object rather than the coordinate value of a point.  
+- Hit testing using a geometry: This applies if you need to hit test using a geometry object rather than the coordinate value of a point.  
   
--   Hit testing against multiple objects: This applies when you need to hit test against multiple objects, such as overlapping objects. You can get results for all visuals intersecting a geometry or point, not just the first one.  
+- Hit testing against multiple objects: This applies when you need to hit test against multiple objects, such as overlapping objects. You can get results for all visuals intersecting a geometry or point, not just the first one.  
   
--   Ignoring <xref:System.Windows.UIElement> hit testing policy: This applies when you need to ignore the <xref:System.Windows.UIElement> hit testing policy, which takes into consideration such factors as whether an element is disabled or invisible.  
+- Ignoring <xref:System.Windows.UIElement> hit testing policy: This applies when you need to ignore the <xref:System.Windows.UIElement> hit testing policy, which takes into consideration such factors as whether an element is disabled or invisible.  
   
 > [!NOTE]
 >  For a complete code sample illustrating hit testing at the visual layer, see [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994) and [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  

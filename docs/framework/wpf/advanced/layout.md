@@ -15,19 +15,19 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  This topic contains the following sections:  
   
--   [Element Bounding Boxes](#LayoutSystem_BoundingBox)  
+- [Element Bounding Boxes](#LayoutSystem_BoundingBox)  
   
--   [The Layout System](#LayoutSystem_Overview)  
+- [The Layout System](#LayoutSystem_Overview)  
   
--   [Measuring and Arranging Children](#LayoutSystem_Measure_Arrange)  
+- [Measuring and Arranging Children](#LayoutSystem_Measure_Arrange)  
   
--   [Panel Elements and Custom Layout Behaviors](#LayoutSystem_PanelsCustom)  
+- [Panel Elements and Custom Layout Behaviors](#LayoutSystem_PanelsCustom)  
   
--   [Layout Performance Considerations](#LayoutSystem_Performance)  
+- [Layout Performance Considerations](#LayoutSystem_Performance)  
   
--   [Sub-pixel Rendering and Layout Rounding](#LayoutSystem_LayoutRounding)  
+- [Sub-pixel Rendering and Layout Rounding](#LayoutSystem_LayoutRounding)  
   
--   [What's Next](#LayoutSystem_whatsnext)  
+- [What's Next](#LayoutSystem_whatsnext)  
   
 <a name="LayoutSystem_BoundingBox"></a>   
 ## Element Bounding Boxes  
@@ -114,19 +114,19 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 ## Layout Performance Considerations  
  Layout is a recursive process. Each child element in a <xref:System.Windows.Controls.Panel.Children%2A> collection gets processed during each invocation of the layout system. As a result, triggering the layout system should be avoided when it is not necessary. The following considerations can help you achieve better performance.  
   
--   Be aware of which property value changes will force a recursive update by the layout system.  
+- Be aware of which property value changes will force a recursive update by the layout system.  
   
      Dependency properties whose values can cause the layout system to be initialized are marked with public flags. <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> and <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> provide useful clues as to which property value changes will force a recursive update by the layout system. In general, any property that can affect the size of an element's bounding box should have a <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> flag set to true. For more information, see [Dependency Properties Overview](dependency-properties-overview.md).  
   
--   When possible, use a <xref:System.Windows.UIElement.RenderTransform%2A> instead of a <xref:System.Windows.FrameworkElement.LayoutTransform%2A>.  
+- When possible, use a <xref:System.Windows.UIElement.RenderTransform%2A> instead of a <xref:System.Windows.FrameworkElement.LayoutTransform%2A>.  
   
      A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> can be a very useful way to affect the content of a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. However, if the effect of the transform does not have to impact the position of other elements, it is best to use a <xref:System.Windows.UIElement.RenderTransform%2A> instead, because <xref:System.Windows.UIElement.RenderTransform%2A> does not invoke the layout system. <xref:System.Windows.FrameworkElement.LayoutTransform%2A> applies its transformation and forces a recursive layout update to account for the new position of the affected element.  
   
--   Avoid unnecessary calls to <xref:System.Windows.UIElement.UpdateLayout%2A>.  
+- Avoid unnecessary calls to <xref:System.Windows.UIElement.UpdateLayout%2A>.  
   
      The <xref:System.Windows.UIElement.UpdateLayout%2A> method forces a recursive layout update, and is frequently not necessary. Unless you are sure that a full update is required, rely on the layout system to call this method for you.  
   
--   When working with a large <xref:System.Windows.Controls.Panel.Children%2A> collection, consider using a <xref:System.Windows.Controls.VirtualizingStackPanel> instead of a regular <xref:System.Windows.Controls.StackPanel>.  
+- When working with a large <xref:System.Windows.Controls.Panel.Children%2A> collection, consider using a <xref:System.Windows.Controls.VirtualizingStackPanel> instead of a regular <xref:System.Windows.Controls.StackPanel>.  
   
      By virtualizing the child collection, the <xref:System.Windows.Controls.VirtualizingStackPanel> only keeps objects in memory that are currently within the parent's ViewPort. As a result, performance is substantially improved in most scenarios.  
   

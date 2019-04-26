@@ -64,9 +64,9 @@ BOOLEAN StrongNameSignatureGenerationEx (
  `dwFlags`  
  [in] One or more of the following values:  
   
--   `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
+- `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
   
--   `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
+- `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
   
 ## Return Value  
  `true` on successful completion; otherwise, `false`.  

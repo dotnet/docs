@@ -10,7 +10,7 @@ An application-defined or user-defined error occurred. Check the error.
   
 ## To correct this error  
   
--   Consult the error to see where it is defined and how to address it.  
+- Consult the error to see where it is defined and how to address it.  
   
 ## See also
 

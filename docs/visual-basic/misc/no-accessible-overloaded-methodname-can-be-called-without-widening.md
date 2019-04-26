@@ -10,9 +10,9 @@ An overloaded method was called, but no method could be matched with the list of
   
 ## To correct this error  
   
--   Specify `Option Strict Off`.  
+- Specify `Option Strict Off`.  
   
--   Change the arguments to match one of the signatures of the overloaded method.  
+- Change the arguments to match one of the signatures of the overloaded method.  
   
 ## See also
 

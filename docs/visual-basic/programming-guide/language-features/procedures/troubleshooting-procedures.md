@@ -40,9 +40,9 @@ This page lists some common problems that can occur when working with procedures
 ## Argument Not Being Modified by Procedure Call  
  If you intend to allow a procedure to change a programming element underlying an argument in the calling code, you must pass it by reference. But a procedure can access the elements of a reference type argument even if you pass it by value.  
   
--   **Underlying Variable**. To allow the procedure to replace the value of the underlying variable element itself, the procedure must declare the parameter [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md). Also, the calling code must not enclose the argument in parentheses, because that would override the `ByRef` passing mechanism.  
+- **Underlying Variable**. To allow the procedure to replace the value of the underlying variable element itself, the procedure must declare the parameter [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md). Also, the calling code must not enclose the argument in parentheses, because that would override the `ByRef` passing mechanism.  
   
--   **Reference Type Elements**. If you declare a parameter [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md), the procedure cannot modify the underlying variable element itself. However, if the argument is a reference type, the procedure can modify the members of the object to which it points, even though it cannot replace the variable's value. For example, if the argument is an array variable, the procedure cannot assign a new array to it, but it can change one or more of its elements. The changed elements are reflected in the underlying array variable in the calling code.  
+- **Reference Type Elements**. If you declare a parameter [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md), the procedure cannot modify the underlying variable element itself. However, if the argument is a reference type, the procedure can modify the members of the object to which it points, even though it cannot replace the variable's value. For example, if the argument is an array variable, the procedure cannot assign a new array to it, but it can change one or more of its elements. The changed elements are reflected in the underlying array variable in the calling code.  
   
  The following example defines two procedures that take an array variable by value and operate on its elements. Procedure `increase` simply adds one to each element. Procedure `replace` assigns a new array to the parameter `a()` and then adds one to each element. However, the reassignment does not affect the underlying array variable in the calling code because `a()` is declared `ByVal`.  
   
@@ -69,13 +69,13 @@ This page lists some common problems that can occur when working with procedures
   
  The following items, even though they pertain to the parameter list, are not components of a procedure's signature:  
   
--   Procedure modifier keywords, such as `Public`, `Shared`, and `Static`  
+- Procedure modifier keywords, such as `Public`, `Shared`, and `Static`  
   
--   Parameter names  
+- Parameter names  
   
--   Parameter modifier keywords, such as `ByRef` and `Optional`  
+- Parameter modifier keywords, such as `ByRef` and `Optional`  
   
--   The data type of the return value (except for a conversion operator)  
+- The data type of the return value (except for a conversion operator)  
   
  You cannot overload a procedure by varying only one or more of the preceding items.  
   
@@ -89,11 +89,11 @@ This page lists some common problems that can occur when working with procedures
   
  When you have determined which overload you want to call, be careful to observe the following rules:  
   
--   Supply the correct number of arguments, and in the correct order.  
+- Supply the correct number of arguments, and in the correct order.  
   
--   Ideally, your arguments should have the exact same data types as the corresponding parameters. In any case, the data type of each argument must widen to that of its corresponding parameter. This is true even with the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) set to `Off`. If an overload requires any narrowing conversion from your argument list, that overload is not eligible to be called.  
+- Ideally, your arguments should have the exact same data types as the corresponding parameters. In any case, the data type of each argument must widen to that of its corresponding parameter. This is true even with the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) set to `Off`. If an overload requires any narrowing conversion from your argument list, that overload is not eligible to be called.  
   
--   If you supply arguments that require widening, make their data types as close as possible to the corresponding parameter data types. If two or more overloads accept your argument data types, the compiler resolves your call to the overload that calls for the least amount of widening.  
+- If you supply arguments that require widening, make their data types as close as possible to the corresponding parameter data types. If two or more overloads accept your argument data types, the compiler resolves your call to the overload that calls for the least amount of widening.  
   
  You can reduce the chance of data type mismatches by using the [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) conversion keyword when preparing your arguments.  
   

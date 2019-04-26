@@ -10,4 +10,4 @@ The `Rename` statement cannot specify a drive letter in the file path.
   
 ## To correct this error  
   
--   Remove the drive letter from the file path.
+- Remove the drive letter from the file path.

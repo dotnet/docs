@@ -10,7 +10,7 @@ The structure you are attempting to write to a file contains an unsupported type
   
 ## To correct this error  
   
--   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
+- Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
 ## See also
 

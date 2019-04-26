@@ -40,13 +40,13 @@ HRESULT CanLaunchOrAttach (
 ## Return Value  
  S_OK if the debugging services determine that launching a new process or attaching to the given process is possible, given the information about the current machine and runtime configuration. Possible HRESULT values are:  
   
--   S_OK  
+- S_OK  
   
--   CORDBG_E_DEBUGGING_NOT_POSSIBLE  
+- CORDBG_E_DEBUGGING_NOT_POSSIBLE  
   
--   CORDBG_E_KERNEL_DEBUGGER_PRESENT  
+- CORDBG_E_KERNEL_DEBUGGER_PRESENT  
   
--   CORDBG_E_KERNEL_DEBUGGER_ENABLED  
+- CORDBG_E_KERNEL_DEBUGGER_ENABLED  
   
 ## Remarks  
  This method is purely informational. The interface will not stop you from launching or attaching to a process, regardless of the value returned by `CanLaunchOrAttach`.  

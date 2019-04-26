@@ -119,13 +119,13 @@ These operators have higher precedence than the next section and lower precedenc
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x \< y](less-than-operator.md) – less than (true if x is less than y).
+[x \< y](comparison-operators.md#less-than-operator-) – less than (true if x is less than y).
 
-[x > y](greater-than-operator.md) – greater than (true if x is greater than y).
+[x > y](comparison-operators.md#greater-than-operator-) – greater than (true if x is greater than y).
 
-[x \<= y](less-than-equal-operator.md) – less than or equal to.
+[x \<= y](comparison-operators.md#less-than-or-equal-operator-) – less than or equal to.
 
-[x >= y](greater-than-equal-operator.md) – greater than or equal to.
+[x >= y](comparison-operators.md#greater-than-or-equal-operator-) – greater than or equal to.
 
 [is](../keywords/is.md) – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
 

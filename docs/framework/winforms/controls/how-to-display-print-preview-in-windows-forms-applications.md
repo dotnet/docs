@@ -23,7 +23,7 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
   
 ### To view pages using the PrintPreviewDialog control  
   
--   Use the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box, specifying the <xref:System.Drawing.Printing.PrintDocument> to use.  
+- Use the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box, specifying the <xref:System.Drawing.Printing.PrintDocument> to use.  
   
      In the following code example, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens an instance of the <xref:System.Windows.Forms.PrintPreviewDialog> control. The print document is specified in the <xref:System.Windows.Forms.PrintDialog.Document%2A> property. In the example below, no print document is specified.  
   

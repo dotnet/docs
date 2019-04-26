@@ -23,6 +23,7 @@ Each of these formats passes a null-terminated string to native code. They diffe
 | LPStr | ANSI |
 | LPUTF8Str | UTF-8 | 
 | LPWStr | UTF-16 |
+| LPTStr | UTF-16 |
 
 The <xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr?displayProperty=nameWithType> format is slightly different. Like `LPWStr`, it marshals the string to a native C-style string encoded in UTF-16. However, the managed signature has you pass in the string by reference and the matching native signature takes the string by value. This distinction allows you to use a native API that takes a string by value and modifies it in-place without having to use a `StringBuilder`. We recommend against manually using this format since it's prone to cause confusion with the mismatching native and managed signatures.
 

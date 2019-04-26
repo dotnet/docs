@@ -67,17 +67,17 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind c
 ## Customizing Data Binding Behaviors  
  The <xref:System.Data.Services.Client.DataServiceCollection%601> class enables you to intercept the events raised when changes are made to the collection, such as an object being added or removed, and when changes are made to the properties of object in a collection. You can modify the data binding events to override the default behavior, which includes the following constraints:  
   
--   No validation is performed within the delegates.  
+- No validation is performed within the delegates.  
   
--   Adding an entity automatically adds related entities.  
+- Adding an entity automatically adds related entities.  
   
--   Deleting an entity does not delete the related entities.  
+- Deleting an entity does not delete the related entities.  
   
  When you create a new instance of <xref:System.Data.Services.Client.DataServiceCollection%601>, you have the option to specify the following parameters that define delegates to methods that handle the events raised when bound objects are changed:  
   
--   `entityChanged` - a method that is called when the property of a bound object is changed. This <xref:System.Func%602> delegate accepts an <xref:System.Data.Services.Client.EntityChangedParams> object and returns a Boolean value that indicates whether the default behavior, to call <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> on the <xref:System.Data.Services.Client.DataServiceContext>, should still occur.  
+- `entityChanged` - a method that is called when the property of a bound object is changed. This <xref:System.Func%602> delegate accepts an <xref:System.Data.Services.Client.EntityChangedParams> object and returns a Boolean value that indicates whether the default behavior, to call <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> on the <xref:System.Data.Services.Client.DataServiceContext>, should still occur.  
   
--   `entityCollectionChanged` - a method that is called when an object is added or removed from the binding collection. This <xref:System.Func%602> delegate accepts an <xref:System.Data.Services.Client.EntityCollectionChangedParams> object and returns a Boolean value that indicates whether the default behavior, to call <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> for an <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Add> action or <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A> for a <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Remove> action on the <xref:System.Data.Services.Client.DataServiceContext>, should still occur.  
+- `entityCollectionChanged` - a method that is called when an object is added or removed from the binding collection. This <xref:System.Func%602> delegate accepts an <xref:System.Data.Services.Client.EntityCollectionChangedParams> object and returns a Boolean value that indicates whether the default behavior, to call <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> for an <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Add> action or <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A> for a <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Remove> action on the <xref:System.Data.Services.Client.DataServiceContext>, should still occur.  
   
 > [!NOTE]
 >  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] performs no validation of the custom behaviors that you implement in these delegates.  
@@ -95,15 +95,15 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind c
 ## Data Binding with Custom Client Data Classes  
  To be able to load objects into a <xref:System.Data.Services.Client.DataServiceCollection%601>, the objects themselves must implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. Data service client classes that are generated when you use the **Add Service Reference** dialog box or the [DataSvcUtil.exe](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md) tool implement this interface. If you provide your own client data classes, you must use another type of collection for data binding. When objects change, you must handle events in the data bound controls to call the following methods of the <xref:System.Data.Services.Client.DataServiceContext> class:  
   
--   <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> - when a new object is added to the collection.  
+- <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> - when a new object is added to the collection.  
   
--   <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A> - when an object is removed from the collection.  
+- <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A> - when an object is removed from the collection.  
   
--   <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> - when a property is changed on an object in the collection.  
+- <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> - when a property is changed on an object in the collection.  
   
--   <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A> - when an object is added to a collection of related object.  
+- <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A> - when an object is added to a collection of related object.  
   
--   <xref:System.Data.Services.Client.DataServiceContext.SetLink%2A> - when an object is added to a collection of related objects.  
+- <xref:System.Data.Services.Client.DataServiceContext.SetLink%2A> - when an object is added to a collection of related objects.  
   
  For more information, see [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md).  
   

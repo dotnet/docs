@@ -33,9 +33,9 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
 ### Microsoft Windows XP Service Pack 2 (SP2)  
  In addition to a general review and strengthening of Windows, there are three key features from [!INCLUDE[TLA2#tla_winxpsp2](../../../includes/tla2sharptla-winxpsp2-md.md)] that we will discuss in this topic:  
   
--   /GS compilation  
+- /GS compilation  
   
--   [!INCLUDE[TLA#tla_win_update](../../../includes/tlasharptla-win-update-md.md)].  
+- [!INCLUDE[TLA#tla_win_update](../../../includes/tlasharptla-win-update-md.md)].  
   
 #### /GS Compilation  
  [!INCLUDE[TLA2#tla_winxpsp2](../../../includes/tla2sharptla-winxpsp2-md.md)] provides protection by recompiling many core system libraries, including all of the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] dependencies such as the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], to help mitigate buffer overruns. This is achieved by using the /GS parameter with the C/C++ command-line compiler. Although buffer overruns should be explicitly avoided, /GS compilation provides an example of a defense-in-depth against potential vulnerabilities that are inadvertently or maliciously created by them.  
@@ -60,9 +60,9 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  One way to protect against this security threat is to run applications with the least amount of privileges that are required. This is known as the principle of least privilege, and is a core feature of the [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] operating system. This feature is called User Account Control (UAC), and is used by [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] UAC in two key ways:  
   
--   To run most applications with UAC privileges by default, even if the user is an administrator; only applications that need administrator privileges will run with administrator privileges. To run with administrative privileges, applications must be explicitly marked in either their application manifest or as an entry in security policy.  
+- To run most applications with UAC privileges by default, even if the user is an administrator; only applications that need administrator privileges will run with administrator privileges. To run with administrative privileges, applications must be explicitly marked in either their application manifest or as an entry in security policy.  
   
--   To provide compatibility solutions like virtualization. For example, many applications try to write to restricted locations like C:\Program Files. For applications executing under UAC, an alternative per-user location exists that does not require administrator privileges to write to. For applications running under UAC, UAC virtualizes C:\Program Files so that applications who think they are writing to it are actually writing to the alternative, per-user location. This kind of compatibility work enables the operating system to run many applications that couldn't previously run in UAC.  
+- To provide compatibility solutions like virtualization. For example, many applications try to write to restricted locations like C:\Program Files. For applications executing under UAC, an alternative per-user location exists that does not require administrator privileges to write to. For applications running under UAC, UAC virtualizes C:\Program Files so that applications who think they are writing to it are actually writing to the alternative, per-user location. This kind of compatibility work enables the operating system to run many applications that couldn't previously run in UAC.  
   
 #### Code Integrity Checks  
  [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)] incorporates deeper code integrity checks to help prevent malicious code from being injected into system files or into the kernel at load/run time. This goes beyond system file protection.  
@@ -94,11 +94,11 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  Managed applications are compiled into Microsoft Intermediate Language (MSIL). When methods in a managed application are executed, its MSIL is compiled into native code through Just-In-Time (JIT) compilation. JIT compilation includes a verification process that applies many safety and robustness rules that ensure code does not:  
   
--   Violate type contracts  
+- Violate type contracts  
   
--   Introduce buffer overruns  
+- Introduce buffer overruns  
   
--   Wildly access memory.  
+- Wildly access memory.  
   
  Managed code that does not conform to verification rules is not allowed to execute, unless it is considered trusted code.  
   
@@ -110,23 +110,23 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  The set of permissions that a managed application is granted by [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] when it starts executing is known as a permission set and is determined by evidence provided by the application. For [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications, the evidence that is provided is the location, or zone, from which the applications are launched. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] identifies the following zones:  
   
--   **My Computer**. Applications launched from the client machine (Fully Trusted).  
+- **My Computer**. Applications launched from the client machine (Fully Trusted).  
   
--   **Local Intranet**. Applications launched from the intranet. (Somewhat Trusted).  
+- **Local Intranet**. Applications launched from the intranet. (Somewhat Trusted).  
   
--   **Internet**. Applications launched from the Internet. (Least Trusted).  
+- **Internet**. Applications launched from the Internet. (Least Trusted).  
   
--   **Trusted Sites**. Applications identified by a user as being trusted. (Least Trusted).  
+- **Trusted Sites**. Applications identified by a user as being trusted. (Least Trusted).  
   
--   **Untrusted Sites**. Applications identified by a user as being untrusted. (Untrusted).  
+- **Untrusted Sites**. Applications identified by a user as being untrusted. (Untrusted).  
   
  For each of these zones, [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] provides a predefined permission set that includes the permissions which matches the level of trust associated with each. These include:  
   
--   **FullTrust**. For applications launched from the **My Computer** zone. All possible permissions are granted.  
+- **FullTrust**. For applications launched from the **My Computer** zone. All possible permissions are granted.  
   
--   **LocalIntranet**. For applications launched from the **Local Intranet** zone. A subset of permissions are granted to provide moderate access to a client machine’s resources, including isolated storage, unrestricted UI access, unrestricted file dialogs, limited reflection, limited access to environment variables. Permissions for critical resources like the Registry are not provided.  
+- **LocalIntranet**. For applications launched from the **Local Intranet** zone. A subset of permissions are granted to provide moderate access to a client machine’s resources, including isolated storage, unrestricted UI access, unrestricted file dialogs, limited reflection, limited access to environment variables. Permissions for critical resources like the Registry are not provided.  
   
--   **Internet**. For applications launched from the **Internet** or **Trusted Sites** zone. A subset of permissions are granted to provided limited access to a client machine’s resources, including isolated storage, file open only, and limited UI. Essentially, this permission sets isolates applications from the client machine.  
+- **Internet**. For applications launched from the **Internet** or **Trusted Sites** zone. A subset of permissions are granted to provided limited access to a client machine’s resources, including isolated storage, file open only, and limited UI. Essentially, this permission sets isolates applications from the client machine.  
   
  Applications identified as being from the **Untrusted Sites** zone are granted no permissions by [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] at all. Consequently, a predefined permission set does not exist for them.  
   
@@ -143,11 +143,11 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  To execute this [!INCLUDE[TLA2#tla_winfxwebapp](../../../includes/tla2sharptla-winfxwebapp-md.md)], the underlying [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] code must execute more functionality than is available to the calling [!INCLUDE[TLA2#tla_winfxwebapp](../../../includes/tla2sharptla-winfxwebapp-md.md)], including:  
   
--   Creating a window handle (hWnd) for rendering  
+- Creating a window handle (hWnd) for rendering  
   
--   Dispatching messages  
+- Dispatching messages  
   
--   Loading the Tahoma font  
+- Loading the Tahoma font  
   
  From a security point of view, allowing direct access to any of these operations from the sandboxed application would be catastrophic.  
   
@@ -184,11 +184,11 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
  Prior to [!INCLUDE[TLA2#tla_ie6sp2](../../../includes/tla2sharptla-ie6sp2-md.md)], users could be subject to any of the following:  
   
--   Random popup windows.  
+- Random popup windows.  
   
--   Confusing script redirection.  
+- Confusing script redirection.  
   
--   Numerous security dialogs on some Web sites.  
+- Numerous security dialogs on some Web sites.  
   
  In some cases, untrustworthy Web sites would try to trick users by spoofing installation [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] or repeatedly showing a [!INCLUDE[TLA#tla_actx](../../../includes/tlasharptla-actx-md.md)] installation dialog box, even though the user may have canceled it. Using these techniques, it is possible that a significant number of users have been tricked into making poor decisions that resulted with the installation of spyware applications.  
   

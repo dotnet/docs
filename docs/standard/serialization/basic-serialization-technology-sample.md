@@ -56,21 +56,21 @@ ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
   
  The following bullets briefly describe the classes and technologies used by this sample.  
   
--   Runtime Serialization  
+- Runtime Serialization  
   
-    -   <xref:System.Runtime.Serialization.IFormatter> Used to refer to either a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> or a <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> object.  
+    - <xref:System.Runtime.Serialization.IFormatter> Used to refer to either a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> or a <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> object.  
   
-    -   <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> Used to serialize a linked list to a stream in a binary format. The binary formatter uses a format that only the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type understands. However, the data is concise.  
+    - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> Used to serialize a linked list to a stream in a binary format. The binary formatter uses a format that only the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type understands. However, the data is concise.  
   
-    -   <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> Used to serialize a linked list to a stream in the SOAP format. SOAP is a standard format.  
+    - <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> Used to serialize a linked list to a stream in the SOAP format. SOAP is a standard format.  
   
--   Stream I/O  
+- Stream I/O  
   
-    -   <xref:System.IO.Stream> Used to serialize and deserialize. The specific stream type used in this sample is the <xref:System.IO.FileStream> type. However, serialization can be used with any type derived from <xref:System.IO.Stream>.  
+    - <xref:System.IO.Stream> Used to serialize and deserialize. The specific stream type used in this sample is the <xref:System.IO.FileStream> type. However, serialization can be used with any type derived from <xref:System.IO.Stream>.  
   
-    -   <xref:System.IO.File> Used to create <xref:System.IO.FileStream> objects for reading and creating files on disk.  
+    - <xref:System.IO.File> Used to create <xref:System.IO.FileStream> objects for reading and creating files on disk.  
   
-    -   <xref:System.IO.FileStream> Used to serialize and deserialize linked lists.  
+    - <xref:System.IO.FileStream> Used to serialize and deserialize linked lists.  
   
 ## See also
 

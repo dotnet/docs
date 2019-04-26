@@ -7,43 +7,43 @@ author: "BrucePerlerMS"
 # How To: Display Signed In Status Using WIF
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF) 4.5  
+- Microsoft® Windows® Identity Foundation (WIF) 4.5  
   
--   ASP.NET® Web Forms  
+- ASP.NET® Web Forms  
   
 ## Summary  
  This topic describes how to display the sign in status in a WIF-enabled ASP.NET application. WIF provides the mechanism for making your application claims-aware, and managing authentication and authorization for application resources.  
   
 ## Contents  
   
--   Overview  
+- Overview  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Install the Identity and Access Extension  
+- Step 1 – Install the Identity and Access Extension  
   
--   Step 2 – Create a Relying Party ASP.NET Application  
+- Step 2 – Create a Relying Party ASP.NET Application  
   
--   Step 3 – Enable Local Development STS to Authenticate Users  
+- Step 3 – Enable Local Development STS to Authenticate Users  
   
--   Step 4 – Modify Your ASP.NET Application to Display Sign In Status  
+- Step 4 – Modify Your ASP.NET Application to Display Sign In Status  
   
--   Step 5 – Test the Integration Between WIF and Your ASP.NET Application  
+- Step 5 – Test the Integration Between WIF and Your ASP.NET Application  
   
 ## Overview  
  This topic demonstrates how to create a simple claims-aware application using WIF and how to easily display whether a user is signed in or not. The following steps use the Local Development STS that is included with the Identity and Access Visual Studio Extension. The Local Development STS is intended for a testing and development environment to provide a simple method of integrating claims into your application. It should never be used in a production environment, as it does not perform real authentication and credentials are not required. However, the imperative code in the following steps is the same for a production-ready application using real authentication.  
   
 ## Summary of Steps  
   
--   Step 1 – Install the Identity and Access Extension  
+- Step 1 – Install the Identity and Access Extension  
   
--   Step 2 – Create a Relying Party ASP.NET Application  
+- Step 2 – Create a Relying Party ASP.NET Application  
   
--   Step 3 – Enable Local Development STS to Authenticate Users  
+- Step 3 – Enable Local Development STS to Authenticate Users  
   
--   Step 4 – Modify Your ASP.NET Application to Display Sign In Status  
+- Step 4 – Modify Your ASP.NET Application to Display Sign In Status  
   
--   Step 5 – Test the Integration Between WIF and Your ASP.NET Application  
+- Step 5 – Test the Integration Between WIF and Your ASP.NET Application  
   
 ## Step 1 – Install the Identity and Access Extension  
  This step describes how to configure the Identity and Access extension to Visual Studio 2012. This extension automates the process of configuring your application to communicate with STS endpoints.  

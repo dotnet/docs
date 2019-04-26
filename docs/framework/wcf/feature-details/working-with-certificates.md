@@ -23,27 +23,27 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
 ## Certificate Stores  
  Certificates are found in stores. Two major store locations exist that are further divided into sub-stores. If you are the administrator on a computer, you can view both major stores by using the MMC snap-in tool. Non-administrators can view only the current user store.  
   
--   **The local machine store**. This contains the certificates accessed by machine processes, such as [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]. Use this location to store certificates that authenticate the server to clients.  
+- **The local machine store**. This contains the certificates accessed by machine processes, such as [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]. Use this location to store certificates that authenticate the server to clients.  
   
--   **The current user store**. Interactive applications typically place certificates here for the computer's current user. If you are creating a client application, this is where you typically place certificates that authenticate a user to a service.  
+- **The current user store**. Interactive applications typically place certificates here for the computer's current user. If you are creating a client application, this is where you typically place certificates that authenticate a user to a service.  
   
  These two stores are further divided into sub-stores. The most important of these when programming with WCF include:  
   
--   **Trusted Root Certification Authorities**. You can use the certificates in this store to create a chain of certificates, which can be traced back to a certification authority certificate in this store.  
+- **Trusted Root Certification Authorities**. You can use the certificates in this store to create a chain of certificates, which can be traced back to a certification authority certificate in this store.  
   
     > [!IMPORTANT]
     >  The local computer implicitly trusts any certificate placed in this store, even if the certificate does not come from a trusted third-party certification authority. For this reason, do not place any certificate into this store unless you fully trust the issuer and understand the consequences.  
   
--   **Personal**. This store is used for certificates associated with a user of a computer. Typically this store is used for certificates issued by one of the certification authority certificates found in the Trusted Root Certification Authorities store. Alternatively, a certificate found here may be self-issued and trusted by an application.  
+- **Personal**. This store is used for certificates associated with a user of a computer. Typically this store is used for certificates issued by one of the certification authority certificates found in the Trusted Root Certification Authorities store. Alternatively, a certificate found here may be self-issued and trusted by an application.  
   
  For more information about certificate stores, see [Certificate Stores](/windows/desktop/secauthn/certificate-stores).  
   
 ### Selecting a Store  
  Selecting where to store a certificate depends how and when the service or client runs. The following general rules apply:  
   
--   If the WCF service is hosted in a Windows service use the **local machine** store. Note that administrator privileges are required to install certificates into the local machine store.  
+- If the WCF service is hosted in a Windows service use the **local machine** store. Note that administrator privileges are required to install certificates into the local machine store.  
   
--   If the service or client is an application that runs under a user account, then use the **current user** store.  
+- If the service or client is an application that runs under a user account, then use the **current user** store.  
   
 ### Accessing Stores  
  Stores are protected by access control lists (ACLs), just like folders on a computer. When creating a service hosted by Internet Information Services (IIS), the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] process runs under the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] account. That account must have access to the store that contains the certificates a service uses. Each of the major stores is protected with a default access list, but the lists can be modified. If you create a separate role to access a store, you must grant that role access permission. To learn how to modify the access list using the WinHttpCertConfig.exe tool, see [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md). For more information about using client certificates with IIS, see [How to call a Web service by using a client certificate for authentication in an ASP.NET Web application](https://go.microsoft.com/fwlink/?LinkId=88914).  
@@ -68,11 +68,11 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
  You can also set the property using configuration. The following elements are used to specify the validation mode:  
   
--   [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)  
+- [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)  
   
--   [\<peerAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/peerauthentication-element.md)  
+- [\<peerAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/peerauthentication-element.md)  
   
--   [\<messageSenderAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication-element.md)  
+- [\<messageSenderAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication-element.md)  
   
 ## Custom Authentication  
  The `CertificateValidationMode` property also enables you to customize how certificates are authenticated. By default, the level is set to `ChainTrust`. To use the <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create a custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  

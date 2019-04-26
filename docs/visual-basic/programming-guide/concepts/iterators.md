@@ -38,21 +38,21 @@ End Function
   
  **In this topic**  
   
--   [Simple Iterator](#BKMK_SimpleIterator)  
+- [Simple Iterator](#BKMK_SimpleIterator)  
   
--   [Creating a Collection Class](#BKMK_CollectionClass)  
+- [Creating a Collection Class](#BKMK_CollectionClass)  
   
--   [Try Blocks](#BKMK_TryBlocks)  
+- [Try Blocks](#BKMK_TryBlocks)  
   
--   [Anonymous Methods](#BKMK_AnonymousMethods)  
+- [Anonymous Methods](#BKMK_AnonymousMethods)  
   
--   [Using Iterators with a Generic List](#BKMK_GenericList)  
+- [Using Iterators with a Generic List](#BKMK_GenericList)  
   
--   [Syntax Information](#BKMK_SyntaxInformation)  
+- [Syntax Information](#BKMK_SyntaxInformation)  
   
--   [Technical Implementation](#BKMK_Technical)  
+- [Technical Implementation](#BKMK_Technical)  
   
--   [Use of Iterators](#BKMK_UseOfIterators)  
+- [Use of Iterators](#BKMK_UseOfIterators)  
   
 > [!NOTE]
 >  For all examples in the topic except the Simple Iterator example, include [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.  
@@ -432,11 +432,11 @@ End Class
 ## <a name="BKMK_UseOfIterators"></a> Use of Iterators  
  Iterators enable you to maintain the simplicity of a `For Each` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:  
   
--   Modify the list sequence after the first `For Each` loop iteration.  
+- Modify the list sequence after the first `For Each` loop iteration.  
   
--   Avoid fully loading a large list before the first iteration of a `For Each` loop. An example is a paged fetch to load a batch of table rows. Another example is the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A> method, which implements iterators within the .NET Framework.  
+- Avoid fully loading a large list before the first iteration of a `For Each` loop. An example is a paged fetch to load a batch of table rows. Another example is the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A> method, which implements iterators within the .NET Framework.  
   
--   Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.  
+- Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.  
   
 ## See also
 

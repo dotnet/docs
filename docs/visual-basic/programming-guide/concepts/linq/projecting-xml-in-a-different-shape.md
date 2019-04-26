@@ -224,7 +224,7 @@ End Module
 ## Next Steps  
  In the next example, you'll query to find all the text in a Word document:  
   
--   [Finding Text in Word Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
+- [Finding Text in Word Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
   
 ## See also
 

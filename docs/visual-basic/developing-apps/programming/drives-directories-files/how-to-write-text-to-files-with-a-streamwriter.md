@@ -16,11 +16,11 @@ This example opens a <xref:System.IO.StreamWriter> object with the `My.Computer.
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The file exists and is read-only (<xref:System.IO.IOException>).  
+- The file exists and is read-only (<xref:System.IO.IOException>).  
   
--   The disk is full (<xref:System.IO.IOException>).  
+- The disk is full (<xref:System.IO.IOException>).  
   
--   The pathname is too long (<xref:System.IO.PathTooLongException>).  
+- The pathname is too long (<xref:System.IO.PathTooLongException>).  
   
 ## .NET Framework Security  
  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs `Create` access for the folder. If the file already exists, the application needs only `Write` access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant `Read` access to a single file, rather than `Create` access for a folder.  

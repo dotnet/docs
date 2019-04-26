@@ -34,9 +34,9 @@ However, generated MSIL cannot be unloaded. The only way to unload code is to un
   
  Your application can take advantage of precompiled regular expressions in one of the following two ways:  
   
--   By using a static method of the <xref:System.Text.RegularExpressions.Regex> object to define the regular expression. If you are using a regular expression pattern that has already been defined in another static method call, the regular expression engine will retrieve it from the cache. If not, the engine will compile the regular expression and add it to the cache.  
+- By using a static method of the <xref:System.Text.RegularExpressions.Regex> object to define the regular expression. If you are using a regular expression pattern that has already been defined in another static method call, the regular expression engine will retrieve it from the cache. If not, the engine will compile the regular expression and add it to the cache.  
   
--   By reusing an existing <xref:System.Text.RegularExpressions.Regex> object as long as its regular expression pattern is needed.  
+- By reusing an existing <xref:System.Text.RegularExpressions.Regex> object as long as its regular expression pattern is needed.  
   
  Because of the overhead of object instantiation and regular expression compilation, creating and rapidly destroying numerous <xref:System.Text.RegularExpressions.Regex> objects is a very expensive process. For applications that use a large number of different regular expressions, you can optimize performance by using calls to static `Regex` methods and possibly by increasing the size of the regular expression cache.  
   

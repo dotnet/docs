@@ -1,5 +1,5 @@
 ---
-title: Apply feature engineering for model training on textual data - ML.NET
+title: Apply feature engineering for model training on textual data 
 description: Learn how to apply feature engineering for model training on textual data with ML.NET
 ms.date: 03/05/2019
 ms.custom: mvc,how-to

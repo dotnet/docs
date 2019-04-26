@@ -10,7 +10,7 @@ The `TextFieldParser` is unable to read fixed-width fields because the `FieldWid
   
 ## To correct this error  
   
--   Set `FieldWidths` to a valid value.  
+- Set `FieldWidths` to a valid value.  
   
 ## See also
 

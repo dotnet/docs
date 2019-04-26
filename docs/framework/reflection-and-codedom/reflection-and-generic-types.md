@@ -23,12 +23,12 @@ ms.author: "ronpet"
   
  There are two keys to understanding how reflection handles generic types and methods:  
   
--   The type parameters of generic type definitions and generic method definitions are represented by instances of the <xref:System.Type> class.  
+- The type parameters of generic type definitions and generic method definitions are represented by instances of the <xref:System.Type> class.  
   
     > [!NOTE]
     >  Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method topics. For example, see <xref:System.Type.IsAutoClass%2A> and <xref:System.Type.DeclaringType%2A>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.  
   
--   If an instance of <xref:System.Type> represents a generic type, then it includes an array of types that represent the type parameters (for generic type definitions) or the type arguments (for constructed types). The same is true of an instance of the <xref:System.Reflection.MethodInfo> class that represents a generic method.  
+- If an instance of <xref:System.Type> represents a generic type, then it includes an array of types that represent the type parameters (for generic type definitions) or the type arguments (for constructed types). The same is true of an instance of the <xref:System.Reflection.MethodInfo> class that represents a generic method.  
   
  Reflection provides methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> that allow you to access the array of type parameters, and to determine whether an instance of <xref:System.Type> represents a type parameter or an actual type.  
   
@@ -38,15 +38,15 @@ ms.author: "ronpet"
   
  This overview consists of the following sections:  
   
--   [Is This a Generic Type or Method?](#is_this_a_generic_type_or_method)  
+- [Is This a Generic Type or Method?](#is_this_a_generic_type_or_method)  
   
--   [Generating Closed Generic Types](#generating_closed_generic_types)  
+- [Generating Closed Generic Types](#generating_closed_generic_types)  
   
--   [Examining Type Arguments and Type Parameters](#examining_type_arguments)  
+- [Examining Type Arguments and Type Parameters](#examining_type_arguments)  
   
--   [Invariants](#invariants)  
+- [Invariants](#invariants)  
   
--   [Related Topics](#related_topics)  
+- [Related Topics](#related_topics)  
   
 <a name="is_this_a_generic_type_or_method"></a>   
 ## Is This a Generic Type or Method?  
@@ -109,9 +109,9 @@ generic<typename V, typename W> ref class D : B<int, V> {};
 ### Source of a Generic Parameter  
  A generic type parameter might come from the type you are examining, from an enclosing type, or from a generic method. You can determine the source of the generic type parameter as follows:  
   
--   First, use the <xref:System.Type.DeclaringMethod%2A> property to determine whether the type parameter comes from a generic method. If the property value is not a null reference (`Nothing` in Visual Basic), then the source is a generic method.  
+- First, use the <xref:System.Type.DeclaringMethod%2A> property to determine whether the type parameter comes from a generic method. If the property value is not a null reference (`Nothing` in Visual Basic), then the source is a generic method.  
   
--   If the source is not a generic method, use the <xref:System.Type.DeclaringType%2A> property to determine the generic type the generic type parameter belongs to.  
+- If the source is not a generic method, use the <xref:System.Type.DeclaringType%2A> property to determine the generic type the generic type parameter belongs to.  
   
  If the type parameter belongs to a generic method, the <xref:System.Type.DeclaringType%2A> property returns the type that declared the generic method, which is irrelevant.  
   

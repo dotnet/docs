@@ -20,11 +20,11 @@ You can inspect or modify the incoming or outgoing messages for a single operati
 ## Example  
  The following code examples show, in order:  
   
--   A parameter inspector implementation.  
+- A parameter inspector implementation.  
   
--   The behavior implementation that inserts the parameter inspector using a <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=nameWithType>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType>, and an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=nameWithType>.  
+- The behavior implementation that inserts the parameter inspector using a <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=nameWithType>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType>, and an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=nameWithType>.  
   
--   A configuration file that loads and runs the endpoint behavior in a client application to insert the parameter inspector on the client.  
+- A configuration file that loads and runs the endpoint behavior in a client application to insert the parameter inspector on the client.  
   
  [!code-csharp[Interceptors#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
  [!code-vb[Interceptors#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  

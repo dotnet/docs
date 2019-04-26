@@ -14,9 +14,9 @@ If you have a multiple-document interface (MDI) application, you can merge menu 
 ## General Concepts  
  Merging procedures involve both a target and a source control:  
   
--   The target is the <xref:System.Windows.Forms.MenuStrip> control on the main or MDI parent form into which you are merging menu items.  
+- The target is the <xref:System.Windows.Forms.MenuStrip> control on the main or MDI parent form into which you are merging menu items.  
   
--   The source is the <xref:System.Windows.Forms.MenuStrip> control on the MDI child form that contains the menu items you want to merge into the target menu.  
+- The source is the <xref:System.Windows.Forms.MenuStrip> control on the MDI child form that contains the menu items you want to merge into the target menu.  
   
  The <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property identifies the menu item whose drop-down list you will populate with the titles of the current MDI parent form's MDI children. For example, you typically list MDI children that are currently open on the **Window** menu.  
   

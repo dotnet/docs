@@ -6,11 +6,11 @@ ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 # PII Security Lockdown
 This sample demonstrates how to control several security-related features of a Windows Communication Foundation (WCF) service by:  
   
--   Encrypting sensitive information in a service's configuration file.  
+- Encrypting sensitive information in a service's configuration file.  
   
--   Locking elements in the configuration file so that nested service subdirectories cannot override settings.  
+- Locking elements in the configuration file so that nested service subdirectories cannot override settings.  
   
--   Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
+- Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -118,9 +118,9 @@ This sample demonstrates how to control several security-related features of a W
   
  It is also possible to encrypt configuration file elements using DPAPI and RSA. For more information, see the following links:  
   
--   [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
+- [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
   
--   [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
+- [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
   
 #### To set up, build and run the sample  
   

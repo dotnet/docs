@@ -20,15 +20,15 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
   
  This walkthrough demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with an MDI form. The form also supports menu merging with child menus. The following tasks are illustrated in this walkthrough:  
   
--   Creating a Windows Forms project.  
+- Creating a Windows Forms project.  
   
--   Creating the main menu for your form. The actual name of the menu will vary.  
+- Creating the main menu for your form. The actual name of the menu will vary.  
   
--   Adding the <xref:System.Windows.Forms.ToolStripPanel> control to the **Toolbox**.  
+- Adding the <xref:System.Windows.Forms.ToolStripPanel> control to the **Toolbox**.  
   
--   Creating a child form.  
+- Creating a child form.  
   
--   Arranging <xref:System.Windows.Forms.ToolStripPanel> controls by z-order.  
+- Arranging <xref:System.Windows.Forms.ToolStripPanel> controls by z-order.  
   
  When you are finished, you will have an MDI form that supports menu merging and movable <xref:System.Windows.Forms.ToolStrip> controls.  
   
@@ -40,7 +40,7 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
+- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
@@ -192,11 +192,11 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
 ## Next Steps  
  In this walkthrough, you have created an MDI parent form with <xref:System.Windows.Forms.ToolStrip> controls and menu merging. You can use the <xref:System.Windows.Forms.ToolStrip> family of controls for many other purposes:  
   
--   Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
+- Create shortcut menus for your controls with <xref:System.Windows.Forms.ContextMenuStrip>. For more information, see [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md).  
   
--   Created a form with an automatically populated standard menu. For more information, see [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md).  
+- Created a form with an automatically populated standard menu. For more information, see [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md).  
   
--   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](how-to-set-the-toolstrip-renderer-for-an-application.md).  
+- Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See also
 

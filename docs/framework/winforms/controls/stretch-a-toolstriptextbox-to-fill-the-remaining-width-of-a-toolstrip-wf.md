@@ -21,7 +21,7 @@ When you set the <xref:System.Windows.Forms.ToolStrip.Stretch%2A> property of a 
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
+- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
 ## See also
 

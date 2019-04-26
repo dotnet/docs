@@ -8,7 +8,7 @@ Directories and files may cause exceptions when an operation is attempted but th
   
 ## To correct this error  
   
--   Add the permissions necessary to access all files and folders.  
+- Add the permissions necessary to access all files and folders.  
   
 ## See also
 

@@ -11,11 +11,11 @@ The <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=
 
  This sample demonstrates:
 
--   Creating a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType>.
+- Creating a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType>.
 
--   Creating an activity designer with a "collapsed" and "expanded" view.
+- Creating an activity designer with a "collapsed" and "expanded" view.
 
--   Overriding a default designer in a rehosted application.
+- Overriding a default designer in a rehosted application.
 
 ### To set up, build, and run the sample
 
@@ -26,15 +26,15 @@ The <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=
 ## Sample Highlights
  The code for this sample shows the following:
 
--   The activity a designer is built for:  `Parallel`
+- The activity a designer is built for:  `Parallel`
 
--   The creation of a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType>. A few things to point out:
+- The creation of a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType>. A few things to point out:
 
-    -   Note the use of WPF data binding to bind to `ModelItem.Branches`. `ModelItem` is the property on `WorkflowElementDesigner` that refers to the underlying object the designer is being used for, in this case, our `Parallel`.
+    - Note the use of WPF data binding to bind to `ModelItem.Branches`. `ModelItem` is the property on `WorkflowElementDesigner` that refers to the underlying object the designer is being used for, in this case, our `Parallel`.
 
-    -   The <xref:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate?displayProperty=nameWithType> can be used to put a visual to display between the individual items in the collection.
+    - The <xref:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate?displayProperty=nameWithType> can be used to put a visual to display between the individual items in the collection.
 
-    -   <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=nameWithType> is a template that can be provided to determine the layout of the items in the collection. In this case, a horizontal stack panel is used.
+    - <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=nameWithType> is a template that can be provided to determine the layout of the items in the collection. In this case, a horizontal stack panel is used.
 
  This following example code shows this.
 
@@ -54,9 +54,9 @@ The <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=
   </sad:WorkflowItemsPresenter>
 ```
 
--   Perform an association of the `DesignerAttribute` to the `Parallel` type and then output the attributes reported.
+- Perform an association of the `DesignerAttribute` to the `Parallel` type and then output the attributes reported.
 
-    -   First, register all of the default designers.
+    - First, register all of the default designers.
 
  The following is the code example.
 
@@ -74,7 +74,7 @@ metadata.Register()
 RegisterCustomMetadata()
 ```
 
-    -   Then, override the parallel in `RegisterCustomMetadata` method.
+    - Then, override the parallel in `RegisterCustomMetadata` method.
 
  The following code shows this in C# and Visual Basic.
 
@@ -95,7 +95,7 @@ Sub RegisterCustomMetadata()
 End Sub
 ```
 
--   Finally, note the use of differing data templates and triggers to select the appropriate template based on the `IsRootDesigner` property.
+- Finally, note the use of differing data templates and triggers to select the appropriate template based on the `IsRootDesigner` property.
 
  The following is the code example.
 

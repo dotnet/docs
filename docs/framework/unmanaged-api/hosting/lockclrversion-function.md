@@ -66,15 +66,15 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
 3. The function specified by `hostCallback` then makes the following sequence of calls:  
   
-    -   The function specified by the `pBeginHostSetup` parameter.  
+    - The function specified by the `pBeginHostSetup` parameter.  
   
-    -   `CorBindToRuntimeEx` (or another runtime initialization function).  
+    - `CorBindToRuntimeEx` (or another runtime initialization function).  
   
-    -   [ICLRRuntimeHost::SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md).  
+    - [ICLRRuntimeHost::SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md).  
   
-    -   [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md).  
+    - [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md).  
   
-    -   The function specified by the `pEndHostSetup` parameter.  
+    - The function specified by the `pEndHostSetup` parameter.  
   
  All the calls from `pBeginHostSetup` to `pEndHostSetup` must occur on a single thread or fiber, with the same logical stack. This thread can be different from the thread upon which `hostCallback` is called.  
   

@@ -22,11 +22,11 @@ This sample demonstrates how to do content-based correlation using a custom <xre
   
 2. Once the URL ACLs are added, use the following steps.  
   
-    1.  Build the solution.  
+    1. Build the solution.  
   
-    2.  Set multiple start-up projects by right-clicking the solution and selecting **Set Startup Projects**. Add **Service** and **Client** (in that order) as multiple start-up projects.  
+    2. Set multiple start-up projects by right-clicking the solution and selecting **Set Startup Projects**. Add **Service** and **Client** (in that order) as multiple start-up projects.  
   
-    3.  Run the application. The client console shows a workflow  sending an order and receiving the purchase order id and then subsequently confirming the order. The Service window will show the requests being processed.  
+    3. Run the application. The client console shows a workflow  sending an order and receiving the purchase order id and then subsequently confirming the order. The Service window will show the requests being processed.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

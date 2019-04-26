@@ -17,25 +17,25 @@ This topic introduces <xref:System.Windows.Media.Drawing> objects and describes 
 ## What Is a Drawing Object?  
  A <xref:System.Windows.Media.Drawing> object describes visible content, such as a shape, bitmap, video, or a line of text. Different types of drawings describe different types of content. The following is a list of the different types of drawing objects.  
   
--   <xref:System.Windows.Media.GeometryDrawing> – Draws a shape.  
+- <xref:System.Windows.Media.GeometryDrawing> – Draws a shape.  
   
--   <xref:System.Windows.Media.ImageDrawing> – Draws an image.  
+- <xref:System.Windows.Media.ImageDrawing> – Draws an image.  
   
--   <xref:System.Windows.Media.GlyphRunDrawing> – Draws text.  
+- <xref:System.Windows.Media.GlyphRunDrawing> – Draws text.  
   
--   <xref:System.Windows.Media.VideoDrawing> – Plays an audio or video file.  
+- <xref:System.Windows.Media.VideoDrawing> – Plays an audio or video file.  
   
--   <xref:System.Windows.Media.DrawingGroup> – Draws other drawings. Use a drawing group to combine other drawings into a single composite drawing.  
+- <xref:System.Windows.Media.DrawingGroup> – Draws other drawings. Use a drawing group to combine other drawings into a single composite drawing.  
   
  <xref:System.Windows.Media.Drawing> objects are versatile; there are many ways you can use a <xref:System.Windows.Media.Drawing> object.  
   
--   You can display it as an image by using a <xref:System.Windows.Media.DrawingImage> and an <xref:System.Windows.Controls.Image> control.  
+- You can display it as an image by using a <xref:System.Windows.Media.DrawingImage> and an <xref:System.Windows.Controls.Image> control.  
   
--   You can use it with a <xref:System.Windows.Media.DrawingBrush> to paint an object, such as the <xref:System.Windows.Controls.Page.Background%2A> of a <xref:System.Windows.Controls.Page>.  
+- You can use it with a <xref:System.Windows.Media.DrawingBrush> to paint an object, such as the <xref:System.Windows.Controls.Page.Background%2A> of a <xref:System.Windows.Controls.Page>.  
   
--   You can use it to describe the appearance of a <xref:System.Windows.Media.DrawingVisual>.  
+- You can use it to describe the appearance of a <xref:System.Windows.Media.DrawingVisual>.  
   
--   You can use it to enumerate the contents of a <xref:System.Windows.Media.Visual>.  
+- You can use it to enumerate the contents of a <xref:System.Windows.Media.Visual>.  
   
  WPF provides other types of objects that are capable of drawing shapes, bitmaps, text, and media. For example, you can also use <xref:System.Windows.Shapes.Shape> objects to draw shapes, and the <xref:System.Windows.Controls.MediaElement> control provides another way to add video to your application. So when should you use <xref:System.Windows.Media.Drawing> objects? When you can sacrifice framework level features to gain performance benefits or when you need <xref:System.Windows.Freezable> features. Because <xref:System.Windows.Media.Drawing> objects lack support for [Layout](../advanced/layout.md), input, and focus, they provide performance benefits that make them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects.  
   

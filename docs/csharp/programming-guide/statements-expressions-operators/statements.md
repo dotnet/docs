@@ -77,11 +77,11 @@ The following examples show two uses for an empty statement:
   
 ## Related Sections  
   
--   [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)  
+- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)  
   
--   [Expressions](../../../csharp/programming-guide/statements-expressions-operators/expressions.md)  
+- [Expressions](../../../csharp/programming-guide/statements-expressions-operators/expressions.md)  
   
--   [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

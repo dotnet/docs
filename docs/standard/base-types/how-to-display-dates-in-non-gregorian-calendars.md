@@ -45,19 +45,19 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
   
 3. For each date and time element that you want to display, call the calendar object's `Get`… method. The following methods are available:  
   
-    -   <xref:System.Globalization.Calendar.GetYear%2A>, to display the year in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetYear%2A>, to display the year in the appropriate calendar.  
   
-    -   <xref:System.Globalization.Calendar.GetMonth%2A>, to display the month in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetMonth%2A>, to display the month in the appropriate calendar.  
   
-    -   <xref:System.Globalization.Calendar.GetDayOfMonth%2A>, to display the number of the day of the month in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetDayOfMonth%2A>, to display the number of the day of the month in the appropriate calendar.  
   
-    -   <xref:System.Globalization.Calendar.GetHour%2A>, to display the hour of the day in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetHour%2A>, to display the hour of the day in the appropriate calendar.  
   
-    -   <xref:System.Globalization.Calendar.GetMinute%2A>, to display the minutes in the hour in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetMinute%2A>, to display the minutes in the hour in the appropriate calendar.  
   
-    -   <xref:System.Globalization.Calendar.GetSecond%2A>, to display the seconds in the minute in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetSecond%2A>, to display the seconds in the minute in the appropriate calendar.  
   
-    -   <xref:System.Globalization.Calendar.GetMilliseconds%2A> , to display the milliseconds in the second in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetMilliseconds%2A> , to display the milliseconds in the second in the appropriate calendar.  
   
 ## Example  
  The example displays a date using two different calendars. It displays the date after defining the Hijri calendar as the default calendar for the ar-JO culture, and displays the date using the Persian calendar, which is not supported as an optional calendar by the fa-IR culture.  
@@ -69,13 +69,13 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
   
  The example defines a reusable calendar utility class, `CalendarUtility`, to handle many of the details of generating the string representation of a date using a particular calendar. The `CalendarUtility` class has the following members:  
   
--   A parameterized constructor whose single parameter is a <xref:System.Globalization.Calendar> object in which a date is to be represented. This is assigned to a private field of the class.  
+- A parameterized constructor whose single parameter is a <xref:System.Globalization.Calendar> object in which a date is to be represented. This is assigned to a private field of the class.  
   
--   `CalendarExists`, a private method that returns a Boolean value indicating whether the calendar represented by the `CalendarUtility` object is supported by the <xref:System.Globalization.CultureInfo> object that is passed to the method as a parameter. The method wraps a call to the <xref:System.Array.Exists%2A?displayProperty=nameWithType> method, to which it passes the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> array.  
+- `CalendarExists`, a private method that returns a Boolean value indicating whether the calendar represented by the `CalendarUtility` object is supported by the <xref:System.Globalization.CultureInfo> object that is passed to the method as a parameter. The method wraps a call to the <xref:System.Array.Exists%2A?displayProperty=nameWithType> method, to which it passes the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> array.  
   
--   `HasSameName`, a private method assigned to the <xref:System.Predicate%601> delegate that is passed as a parameter to the <xref:System.Array.Exists%2A?displayProperty=nameWithType> method. Each member of the array is passed to the method until the method returns `true`. The method determines whether the name of an optional calendar is the same as the calendar represented by the `CalendarUtility` object.  
+- `HasSameName`, a private method assigned to the <xref:System.Predicate%601> delegate that is passed as a parameter to the <xref:System.Array.Exists%2A?displayProperty=nameWithType> method. Each member of the array is passed to the method until the method returns `true`. The method determines whether the name of an optional calendar is the same as the calendar represented by the `CalendarUtility` object.  
   
--   `DisplayDate`, an overloaded public method that is passed two parameters: either a <xref:System.DateTime> or <xref:System.DateTimeOffset> value to express in the calendar represented by the `CalendarUtility` object; and the culture whose formatting rules are to be used. Its behavior in returning the string representation of a date depends on whether the target calendar is supported by the culture whose formatting rules are to be used.  
+- `DisplayDate`, an overloaded public method that is passed two parameters: either a <xref:System.DateTime> or <xref:System.DateTimeOffset> value to express in the calendar represented by the `CalendarUtility` object; and the culture whose formatting rules are to be used. Its behavior in returning the string representation of a date depends on whether the target calendar is supported by the culture whose formatting rules are to be used.  
   
  Regardless of the calendar used to create a <xref:System.DateTime> or <xref:System.DateTimeOffset> value in this example, that value is typically expressed as a Gregorian date. This is because the <xref:System.DateTime> and <xref:System.DateTimeOffset> types do not preserve any calendar information. Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001. The interpretation of that number depends on the calendar. For most cultures, the default calendar is the Gregorian calendar.  
   

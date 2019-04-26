@@ -9,21 +9,21 @@ When you build claims-aware applications, the user identity is represented in yo
   
  Under this model, single sign-on is much easier to achieve, and your application is no longer responsible for the following:  
   
--   Authenticating users.  
+- Authenticating users.  
   
--   Storing user accounts and passwords.  
+- Storing user accounts and passwords.  
   
--   Calling to enterprise directories to look up user identity details.  
+- Calling to enterprise directories to look up user identity details.  
   
--   Integrating with identity systems from other platforms or companies.  
+- Integrating with identity systems from other platforms or companies.  
   
  Under this model, your application makes identity-related decisions based on claims supplied by the system that authenticated your user. This could be anything from simple application personalization with the user’s first name, to authorizing the user to access higher valued features and resources in your application.  
   
  This topic provides the following information:  
   
--   [Introduction to Claims-Based Identity](../../../docs/framework/security/claims-based-identity-model.md#BKMK_1)  
+- [Introduction to Claims-Based Identity](../../../docs/framework/security/claims-based-identity-model.md#BKMK_1)  
   
--   [Basic Scenario for a Claims-Based Identity Model](../../../docs/framework/security/claims-based-identity-model.md#BKMK_2)  
+- [Basic Scenario for a Claims-Based Identity Model](../../../docs/framework/security/claims-based-identity-model.md#BKMK_2)  
   
 <a name="BKMK_1"></a>   
 ## Introduction to Claims-Based Identity  

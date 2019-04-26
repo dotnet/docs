@@ -11,11 +11,11 @@ If an XML document is loaded using the <xref:System.Xml.XmlDocument.Load%2A> met
   
  If the reader is already positioned on a node somewhere in the document, and the reader is then passed to the <xref:System.Xml.XmlDocument.Load%2A> method, <xref:System.Xml.XmlDocument.Load%2A> attempts to read the current node and all of its siblings, up to the end tag that closes the current depth into memory. The success of the attempted <xref:System.Xml.XmlDocument.Load%2A> depends on the node that the reader is on when the load is attempted, as <xref:System.Xml.XmlDocument.Load%2A> verifies that the XML from the reader is well-formed. If the XML is not well-formed, the <xref:System.Xml.XmlDocument.Load%2A> throws an exception. For example, the following set of nodes contain two root-level elements, the XML is not well-formed, and <xref:System.Xml.XmlDocument.Load%2A> throws an exception.  
   
--   Comment node, followed by an Element node, followed by an Element node, followed by an EndElement node.  
+- Comment node, followed by an Element node, followed by an Element node, followed by an EndElement node.  
   
  The following set of nodes creates an incomplete DOM, because there is no root-level element.  
   
--   Comment node followed by a ProcessingInstruction node followed by a Comment node followed by an EndElement node.  
+- Comment node followed by a ProcessingInstruction node followed by a Comment node followed by an EndElement node.  
   
  This does not throw an exception, and the data is loaded. You can add a root element to the top of these nodes and create well-formed XML that can be saved without error.  
   

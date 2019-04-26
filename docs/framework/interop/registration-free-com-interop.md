@@ -18,9 +18,9 @@ Registration-free COM interop activates a component without using the Windows re
   
  Using registration-free activation for your assemblies instead of registering them during deployment offers two advantages:  
   
--   You can control which DLL version is activated when more than one version is installed on a computer.  
+- You can control which DLL version is activated when more than one version is installed on a computer.  
   
--   End users can use XCOPY or FTP to copy your application to an appropriate directory on their computer. The application can then be run from that directory.  
+- End users can use XCOPY or FTP to copy your application to an appropriate directory on their computer. The application can then be run from that directory.  
   
  This section describes the two types of manifests needed for registration-free COM interop: application and component manifests. These manifests are XML files. An application manifest, which is created by an application developer, contains metadata that describes assemblies and assembly dependencies. A component manifest, created by a component developer, contains information otherwise located in the Windows registry.  
   

@@ -23,13 +23,13 @@ Server.Database.DatabaseSchema.DatabaseObject
 ### Built-In Schemas  
  SQL Server ships with ten pre-defined schemas that have the same names as the built-in database users and roles. These exist mainly for backward compatibility. You can drop the schemas that have the same names as the fixed database roles if you do not need them. You cannot drop the following schemas:  
   
--   `dbo`  
+- `dbo`  
   
--   `guest`  
+- `guest`  
   
--   `sys`  
+- `sys`  
   
--   `INFORMATION_SCHEMA`  
+- `INFORMATION_SCHEMA`  
   
  If you drop them from the model database, they will not appear in new databases.  
   

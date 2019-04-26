@@ -48,13 +48,13 @@ When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] cli
   
  The following considerations apply when attaching objects:  
   
--   An object is attached in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
+- An object is attached in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
   
--   When an object is attached, objects that are related to the attached object are not also attached.  
+- When an object is attached, objects that are related to the attached object are not also attached.  
   
--   An object cannot be attached if the entity is already being tracked by the context.  
+- An object cannot be attached if the entity is already being tracked by the context.  
   
--   The <xref:System.Data.Services.Client.DataServiceContext.AttachTo%28System.String%2CSystem.Object%2CSystem.String%29> method overload that takes an `etag` parameter is used when you attach an entity object that was received along with an eTag value. This eTag value is then used to check for concurrency when changes to the attached object are saved.  
+- The <xref:System.Data.Services.Client.DataServiceContext.AttachTo%28System.String%2CSystem.Object%2CSystem.String%29> method overload that takes an `etag` parameter is used when you attach an entity object that was received along with an eTag value. This eTag value is then used to check for concurrency when changes to the attached object are saved.  
   
  For more information, see [How to: Attach an Existing Entity to the DataServiceContext](../../../../docs/framework/data/wcf/attach-an-existing-entity-to-dc-wcf-data.md).  
   

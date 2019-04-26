@@ -8,11 +8,11 @@ The <xref:System.UriTemplateTable> class provides a dictionary-like associative 
   
  This sample demonstrates the following key concepts for the `UriTemplateTable` class:  
   
--   Associating delegates with `UriTemplates` in a `UriTemplateTable`.  
+- Associating delegates with `UriTemplates` in a `UriTemplateTable`.  
   
--   Using <xref:System.UriTemplateTable.MatchSingle%2A> to obtain the correct handler delegate for a particular URI.  
+- Using <xref:System.UriTemplateTable.MatchSingle%2A> to obtain the correct handler delegate for a particular URI.  
   
--   Invoking the handler delegate to process the request.  
+- Invoking the handler delegate to process the request.  
   
 ### To set up, build, and run the sample  
   

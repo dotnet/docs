@@ -44,11 +44,11 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
 2. Otherwise, one of the following techniques based on CLR <xref:System.Reflection.Assembly> API are used to load an assembly:  
   
-    -   If the name is qualified in the mapping, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
+    - If the name is qualified in the mapping, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-    -   If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+    - If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
-    -   If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
+    - If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
 #### XamlBuildTask  
  `XamlBuildTask` is used for Windows Communication Foundation (WCF) and Windows Workflow Foundation.  
@@ -76,11 +76,11 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
 2. Otherwise, one of the following techniques is used to load an assembly:  
   
-    -   Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
+    - Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-    -   If a short name + public key token combination match the assembly that the BAML was loaded from, use that assembly.  
+    - If a short name + public key token combination match the assembly that the BAML was loaded from, use that assembly.  
   
-    -   Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
+    - Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 ## See also
 

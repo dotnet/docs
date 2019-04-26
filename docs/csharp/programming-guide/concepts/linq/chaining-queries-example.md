@@ -78,7 +78,7 @@ Main: str >GHI!!!<
   
  The next topic in this tutorial illustrates intermediate materialization:  
   
--   [Intermediate Materialization (C#)](../../../../csharp/programming-guide/concepts/linq/intermediate-materialization.md)  
+- [Intermediate Materialization (C#)](../../../../csharp/programming-guide/concepts/linq/intermediate-materialization.md)  
   
 ## See also
 

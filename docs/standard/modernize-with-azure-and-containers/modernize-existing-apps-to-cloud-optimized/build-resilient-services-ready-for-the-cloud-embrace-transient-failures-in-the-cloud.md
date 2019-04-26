@@ -37,19 +37,19 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 ### Additional resources
 
--   **Implementing resilient communication to handle partial failure**
+- **Implementing resilient communication to handle partial failure**
 
     [https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies](../../microservices-architecture/implement-resilient-applications/partial-failure-strategies.md)
 
--   **Entity Framework connection resiliency and retry logic (version 6 and later)**
+- **Entity Framework connection resiliency and retry logic (version 6 and later)**
 
     [https://docs.microsoft.com/ef/ef6/fundamentals/connection-resiliency/retry-logic](/ef/ef6/fundamentals/connection-resiliency/retry-logic)
 
--   **The Transient Fault Handling Application Block**
+- **The Transient Fault Handling Application Block**
 
--   <https://docs.microsoft.com/previous-versions/msp-n-p/hh680934(v=pandp.50)>
+- <https://docs.microsoft.com/previous-versions/msp-n-p/hh680934(v=pandp.50)>
 
--   **Polly library for resilient HTTP communication**
+- **Polly library for resilient HTTP communication**
 
     https://github.com/App-vNext/Polly
 

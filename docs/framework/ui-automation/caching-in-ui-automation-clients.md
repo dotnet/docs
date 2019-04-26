@@ -58,9 +58,9 @@ ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
 ## Retrieving Cached Properties  
  You can retrieve the cached properties of an element through the following methods and properties.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.Cached%2A>  
+- <xref:System.Windows.Automation.AutomationElement.Cached%2A>  
   
  An exception is raised if the requested property is not in the cache.  
   
@@ -70,9 +70,9 @@ ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
 ## Retrieving Cached Control Patterns  
  You can retrieve the cached control patterns of an element through the following methods.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A>  
+- <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A>  
   
  If the pattern is not in the cache, <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> raises an exception, and <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A> returns `false`.  
   

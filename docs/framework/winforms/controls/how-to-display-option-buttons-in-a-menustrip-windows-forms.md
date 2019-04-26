@@ -72,7 +72,7 @@ Option buttons, also known as radio buttons, are similar to check boxes except t
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
+- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
 ## See also
 

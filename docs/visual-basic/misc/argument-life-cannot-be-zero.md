@@ -10,9 +10,9 @@ An argument for `Life`, which must be a `Double` that specifies the length of us
   
 ## To correct this error  
   
--   Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
+- Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   
--   Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
+- Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See also
 

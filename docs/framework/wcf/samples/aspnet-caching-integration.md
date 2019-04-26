@@ -28,11 +28,11 @@ This sample demonstrates how to utilize the ASP.NET output cache with the WCF WE
 ## To run the sample  
  The sample consists of three projects:  
   
--   **Service**: A Web Application project that includes a WCF HTTP service hosted in ASP.NET.  
+- **Service**: A Web Application project that includes a WCF HTTP service hosted in ASP.NET.  
   
--   **Client**: A console application project that makes calls to the service.  
+- **Client**: A console application project that makes calls to the service.  
   
--   **Common**: A shared library that contains the Customer type used by the client and service.  
+- **Common**: A shared library that contains the Customer type used by the client and service.  
   
  As the Client console application runs, the client makes requests to the service and writes the pertinent information from the responses to the console window.  
   

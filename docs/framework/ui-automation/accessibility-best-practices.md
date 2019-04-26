@@ -72,9 +72,9 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
  Applications should provide the following keyboard interfaces:  
   
--   tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
+- tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
   
--   logical tab order  
+- logical tab order  
   
 <a name="Show_the_Keyboard_Focus"></a>   
 ### Show the Keyboard Focus  
@@ -84,11 +84,11 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
  Applications should do the following with keyboard focus:  
   
--   one item should always have keyboard focus  
+- one item should always have keyboard focus  
   
--   keyboard focus should be visible and obvious  
+- keyboard focus should be visible and obvious  
   
--   selections and/or focused items should be visually highlighted  
+- selections and/or focused items should be visually highlighted  
   
 <a name="Support_Navigation_Standards_and_Powerful_Navigation"></a>   
 ### Support Navigation Standards and Powerful Navigation Schemes  
@@ -96,11 +96,11 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
  Applications should provide the following keyboard interfaces:  
   
--   shortcut keys and underlined access keys for all commands, menus and controls  
+- shortcut keys and underlined access keys for all commands, menus and controls  
   
--   keyboard shortcuts to important links  
+- keyboard shortcuts to important links  
   
--   all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
+- all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
   
 <a name="Do_not_let_Mouse_Location_Interfere_with_Keyboard"></a>   
 ### Do Not Let Mouse Location Interfere with Keyboard Navigation  

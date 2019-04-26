@@ -19,11 +19,11 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
   
 4. In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:  
   
-    -   `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
+    - `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
   
-    -   `Metadata=` `res://*/<resourceName>;`  
+    - `Metadata=` `res://*/<resourceName>;`  
   
-    -   `Metadata=res://*;`  
+    - `Metadata=res://*;`  
   
      For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).  
   

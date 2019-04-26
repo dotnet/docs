@@ -6,15 +6,15 @@ ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
 # Architecture of Syndication
 The Syndication API is designed to provide a format-neutral programming model that allows syndicated content to be written on to the wire in a variety of formats. The abstract data model consists of the following classes:  
   
--   <xref:System.ServiceModel.Syndication.SyndicationCategory>  
+- <xref:System.ServiceModel.Syndication.SyndicationCategory>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationFeed>  
+- <xref:System.ServiceModel.Syndication.SyndicationFeed>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationItem>  
+- <xref:System.ServiceModel.Syndication.SyndicationItem>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationLink>  
+- <xref:System.ServiceModel.Syndication.SyndicationLink>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationPerson>  
+- <xref:System.ServiceModel.Syndication.SyndicationPerson>  
   
  These classes map closely to the constructs defined in the Atom 1.0 specification, although some of the names are different.  
   
@@ -69,7 +69,7 @@ The Syndication API is designed to provide a format-neutral programming model th
   
 ## Extensibility  
   
--   A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The WCF syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. For more information, see [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
+- A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The WCF syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. For more information, see [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
   
 ## See also
 

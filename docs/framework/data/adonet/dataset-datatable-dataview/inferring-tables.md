@@ -6,11 +6,11 @@ ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
 # Inferring Tables
 When inferring a schema for a <xref:System.Data.DataSet> from an XML document, ADO.NET first determines which XML elements represent tables. The following XML structures result in a table for the **DataSet** schema:  
   
--   Elements with attributes  
+- Elements with attributes  
   
--   Elements with child elements  
+- Elements with child elements  
   
--   Repeating elements  
+- Repeating elements  
   
 ## Elements with Attributes  
  Elements that have attributes specified in them result in inferred tables. For example, consider the following XML:  

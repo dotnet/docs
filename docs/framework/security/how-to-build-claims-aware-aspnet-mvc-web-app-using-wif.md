@@ -7,40 +7,40 @@ author: "BrucePerlerMS"
 # How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   ASP.NET® MVC  
+- ASP.NET® MVC  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for creating simple claims-aware ASP.NET MVC web application. It also provides instructions how to test the simple claims-aware ASP.NET MVC web application for successful implementation of claims-based authentication. This How-To does not have detailed instructions for creating a Security Token Service (STS), and assumes you have already configured an STS.  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create Simple ASP.NET MVC Application  
+- Step 1 – Create Simple ASP.NET MVC Application  
   
--   Step 2 – Configure ASP.NET MVC Application for Claims-Based Authentication  
+- Step 2 – Configure ASP.NET MVC Application for Claims-Based Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
--   Related Items  
+- Related Items  
   
 ## Objectives  
   
--   Configure ASP.NET MVC web application for claims-based authentication  
+- Configure ASP.NET MVC web application for claims-based authentication  
   
--   Test successful claims-aware ASP.NET MVC web application  
+- Test successful claims-aware ASP.NET MVC web application  
   
 ## Summary of Steps  
   
--   Step 1 – Create Simple ASP.NET MVC Application  
+- Step 1 – Create Simple ASP.NET MVC Application  
   
--   Step 2 – Configure ASP.NET MVC Application for Claims-Based Authentication  
+- Step 2 – Configure ASP.NET MVC Application for Claims-Based Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Step 1 – Create Simple ASP.NET MVC Application  
  In this step, you will create a new ASP.NET MVC application.  
@@ -212,4 +212,4 @@ author: "BrucePerlerMS"
   
 ## Related Items  
   
--   [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)
+- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)

@@ -9,8 +9,8 @@ ms.assetid: b9f836a7-68f4-4e7e-a3cc-a1bae5d775d6
 ## WCF features supported by the .NET Framework Client Profile  
  The following Windows Communication Foundation features are supported by [!INCLUDE[arrowhead](../../../includes/arrowhead-md.md)]:  
   
--   All of WCF is supported except for Cardspace and web hosting.  
+- All of WCF is supported except for Cardspace and web hosting.  
   
--   Remoting TCP/IP channels are supported.  
+- Remoting TCP/IP channels are supported.  
   
--   Asmx (Web Services) are not supported.
+- Asmx (Web Services) are not supported.

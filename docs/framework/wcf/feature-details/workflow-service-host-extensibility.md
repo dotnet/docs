@@ -12,13 +12,13 @@ ms.assetid: c0e8f7bb-cb13-49ec-852f-b85d7c23972f
 ## React to Unhandled Exceptions  
  The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> enables you to specify the action to take if an unhandled exception occurs within a workflow service. The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior.Action%2A> property specifies one of the <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction> values:  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Abandon> – Aborts the workflow service instance.  
+- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Abandon> – Aborts the workflow service instance.  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.AbandonAndSuspend> – Rolls back to the last persisted state and suspends the workflow service instance. This only occurs if the workflow has already been persisted at least once. If not the workflow instance is aborted.  
+- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.AbandonAndSuspend> – Rolls back to the last persisted state and suspends the workflow service instance. This only occurs if the workflow has already been persisted at least once. If not the workflow instance is aborted.  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Cancel> – Cancels the instance.  
+- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Cancel> – Cancels the instance.  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Terminate> – Terminates the instance.  
+- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Terminate> – Terminates the instance.  
   
  This behavior can be configured in code as shown in the following example.  
   

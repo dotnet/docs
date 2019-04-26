@@ -53,11 +53,11 @@ The following procedures describe the basic steps that you must complete to crea
   
 2. Compile the form.  
   
-    -   If you are using C#, type: `csc form1.cs`  
+    - If you are using C#, type: `csc form1.cs`  
   
          `-or-`  
   
-    -   If you are using Visual Basic, type: `vbc form1.vb`  
+    - If you are using Visual Basic, type: `vbc form1.vb`  
   
 3. At the command prompt, type: `Form1.exe`  
   
@@ -105,7 +105,7 @@ The following procedures describe the basic steps that you must complete to crea
   
 ## Compiling the Code  
   
--   To compile the code, follow the instructions in the proceeding procedure that describe how to compile and run the application.  
+- To compile the code, follow the instructions in the proceeding procedure that describe how to compile and run the application.  
   
 ## See also
 

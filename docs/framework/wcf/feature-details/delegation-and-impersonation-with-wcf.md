@@ -31,22 +31,22 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 ### Cached Token Impersonation  
  You can perform cached-token impersonation with the following:  
   
--   <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a Windows client credential.  
+- <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a Windows client credential.  
   
--   <xref:System.ServiceModel.BasicHttpBinding> with a <xref:System.ServiceModel.BasicHttpSecurityMode> set to the <xref:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential> credential, or any other standard binding where the client presents a user name credential that the service can map to a valid Windows account.  
+- <xref:System.ServiceModel.BasicHttpBinding> with a <xref:System.ServiceModel.BasicHttpSecurityMode> set to the <xref:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential> credential, or any other standard binding where the client presents a user name credential that the service can map to a valid Windows account.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` set to `true`. (The property is available on the following classes: <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>, <xref:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters>, and <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters>.) If a secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` set to `true`. (The property is available on the following classes: <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>, <xref:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters>, and <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters>.) If a secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> where the client presents a user name credential. If secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> where the client presents a user name credential. If secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
   
 ### S4U-Based Impersonation  
  You can perform S4U-based impersonation with the following:  
   
--   <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a certificate client credential that the service can map to a valid Windows account.  
+- <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a certificate client credential that the service can map to a valid Windows account.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` property set to `false`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` property set to `false`.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a user name or Windows client credential and secure conversation with the `requireCancellation` property set to `false`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a user name or Windows client credential and secure conversation with the `requireCancellation` property set to `false`.  
   
  The extent to which the service can impersonate the client depends on the privileges the service account holds when it attempts impersonation, the type of impersonation used, and possibly the extent of impersonation the client permits.  
   
@@ -195,9 +195,9 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
  For more detailed instructions about configuring constrained delegation, see the following topics on MSDN:  
   
--   [Troubleshooting Kerberos Delegation](https://go.microsoft.com/fwlink/?LinkId=36724)  
+- [Troubleshooting Kerberos Delegation](https://go.microsoft.com/fwlink/?LinkId=36724)  
   
--   [Kerberos Protocol Transition and Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=36725)  
+- [Kerberos Protocol Transition and Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=36725)  
   
 ## See also
 

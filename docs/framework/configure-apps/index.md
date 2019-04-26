@@ -60,7 +60,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
  The name and location of the application configuration file depend on the app's host, which can be one of the following:  
   
--   Executable–hosted app.  
+- Executable–hosted app.  
   
      These apps have two configuration files:  a source configuration file, which is modified by the developer during development, and an output file that is distributed with the app.  
   
@@ -68,11 +68,11 @@ The .NET Framework, through configuration files, gives developers and administra
   
      Visual Studio automatically copies the source configuration file to the directory where the compiled assembly is placed to create the output configuration file, which is deployed with the app. In some cases, Visual Studio may modify the output configuration file; for more information, see the [Redirecting assembly versions at the app level](../../../docs/framework/configure-apps/redirect-assembly-versions.md#BKMK_Redirectingassemblyversionsattheapplevel) section of the [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md) article.  
   
--   ASP.NET-hosted app.  
+- ASP.NET-hosted app.  
   
      For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)).
   
--   Internet Explorer-hosted app.  
+- Internet Explorer-hosted app.  
   
      If an app hosted in Internet Explorer has a configuration file, the location of this file is specified in a `<link>` tag with the following syntax:  
   
@@ -88,11 +88,11 @@ The .NET Framework, through configuration files, gives developers and administra
   
  The security configuration files are in the following locations:  
   
--   Enterprise policy configuration file: %*runtime-install-path*%\Config\Enterprisesec.config  
+- Enterprise policy configuration file: %*runtime-install-path*%\Config\Enterprisesec.config  
   
--   Machine policy configuration file: %*runtime-install-path*%\Config\Security.config  
+- Machine policy configuration file: %*runtime-install-path*%\Config\Security.config  
   
--   User policy configuration file: %USERPROFILE%\Application data\Microsoft\CLR security config\v*xx.xx*\Security.config  
+- User policy configuration file: %USERPROFILE%\Application data\Microsoft\CLR security config\v*xx.xx*\Security.config  
   
 ## In This Section  
  [How to: Locate Assemblies by Using DEVPATH](../../../docs/framework/configure-apps/how-to-locate-assemblies-by-using-devpath.md)  

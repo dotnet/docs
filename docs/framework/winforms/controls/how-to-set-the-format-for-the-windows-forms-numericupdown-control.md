@@ -15,7 +15,7 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
   
 ### To format the numeric value  
   
--   Display a decimal value by setting the <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A> property to an integer and setting the <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A> property to `true` or `false`.  
+- Display a decimal value by setting the <xref:System.Windows.Forms.NumericUpDown.DecimalPlaces%2A> property to an integer and setting the <xref:System.Windows.Forms.NumericUpDown.ThousandsSeparator%2A> property to `true` or `false`.  
   
     ```vb  
     NumericUpDown1.DecimalPlaces = 2  
@@ -34,7 +34,7 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
   
      -or-  
   
--   Display a hexadecimal value by setting the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property to `true`.  
+- Display a hexadecimal value by setting the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property to `true`.  
   
     ```vb  
     NumericUpDown1.Hexadecimal = True  

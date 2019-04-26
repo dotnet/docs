@@ -16,11 +16,11 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 
  This feature has the following sub-components:
 
--   .NET Environment
+- .NET Environment
 
--   Configuration APIs
+- Configuration APIs
 
--   Process Model
+- Process Model
 
  If you select the root node of WAS, only the **Process Model** sub-node is checked by default. Please note that with this installation you are only installing WAS, because there is no support for a Web server.
 

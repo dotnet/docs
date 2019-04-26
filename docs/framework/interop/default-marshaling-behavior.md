@@ -52,9 +52,9 @@ BSTR MethodOne (BSTR b) {
   
  For example, the marshaler determines that the class wrapper should be used to wrap the interface that was passed into managed code. When the interface is first passed through the marshaler, the marshaler checks whether the interface is coming from a known object. This check occurs in two situations:  
   
--   An interface is being implemented by another managed object that was passed to COM elsewhere. The marshaler can readily identify interfaces exposed by managed objects and is able to match the interface with the managed object that provides the implementation. The managed object is then passed to the method and no wrapper is needed.  
+- An interface is being implemented by another managed object that was passed to COM elsewhere. The marshaler can readily identify interfaces exposed by managed objects and is able to match the interface with the managed object that provides the implementation. The managed object is then passed to the method and no wrapper is needed.  
   
--   An object that has already been wrapped is implementing the interface. To determine whether this is the case, the marshaler queries the object for its **IUnknown** interface and compares the returned interface to the interfaces of other objects that are already wrapped. If the interface is the same as that of another wrapper, the objects have the same identity and the existing wrapper is passed to the method.  
+- An object that has already been wrapped is implementing the interface. To determine whether this is the case, the marshaler queries the object for its **IUnknown** interface and compares the returned interface to the interfaces of other objects that are already wrapped. If the interface is the same as that of another wrapper, the objects have the same identity and the existing wrapper is passed to the method.  
   
  If an interface is not from a known object, the marshaler does the following:  
   
@@ -67,9 +67,9 @@ BSTR MethodOne (BSTR b) {
 ## Default marshaling for delegates  
  A managed delegate is marshaled as a COM interface or as a function pointer, based on the calling mechanism:  
   
--   For platform invoke, a delegate is marshaled as an unmanaged function pointer by default.  
+- For platform invoke, a delegate is marshaled as an unmanaged function pointer by default.  
   
--   For COM interop, a delegate is marshaled as a COM interface of type **_Delegate** by default. The **_Delegate** interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.  
+- For COM interop, a delegate is marshaled as a COM interface of type **_Delegate** by default. The **_Delegate** interface is defined in the Mscorlib.tlb type library and contains the <xref:System.Delegate.DynamicInvoke%2A?displayProperty=nameWithType> method, which enables you to call the method that the delegate references.  
   
  The following table shows the marshaling options for the managed delegate data type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute provides several <xref:System.Runtime.InteropServices.UnmanagedType> enumeration values to marshal delegates.  
   
@@ -160,23 +160,23 @@ internal class DelegateTest {
   
  This section provides information on the following formatted value types:  
   
--   [Value Types Used in Platform Invoke](#value-types-used-in-platform-invoke)  
+- [Value Types Used in Platform Invoke](#value-types-used-in-platform-invoke)  
   
--   [Value Types Used in COM Interop](#value-types-used-in-com-interop)  
+- [Value Types Used in COM Interop](#value-types-used-in-com-interop)  
   
  In addition to describing formatted types, this topic identifies [System Value Types](#system-value-types) that have unusual marshaling behavior.  
   
  A formatted type is a complex type that contains information that explicitly controls the layout of its members in memory. The member layout information is provided using the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The layout can be one of the following <xref:System.Runtime.InteropServices.LayoutKind> enumeration values:  
   
--   **LayoutKind.Automatic**  
+- **LayoutKind.Automatic**  
   
      Indicates that the common language runtime is free to reorder the members of the type for efficiency. However, when a value type is passed to unmanaged code, the layout of the members is predictable. An attempt to marshal such a structure automatically causes an exception.  
   
--   **LayoutKind.Sequential**  
+- **LayoutKind.Sequential**  
   
      Indicates that the members of the type are to be laid out in unmanaged memory in the same order in which they appear in the managed type definition.  
   
--   **LayoutKind.Explicit**  
+- **LayoutKind.Explicit**  
   
      Indicates that the members are laid out according to the <xref:System.Runtime.InteropServices.FieldOffsetAttribute> supplied with each field.  
   

@@ -7,32 +7,32 @@ author: "BrucePerlerMS"
 # How To: Build Claims-Aware ASP.NET Application Using Windows Authentication
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   ASP.NET® Web Forms  
+- ASP.NET® Web Forms  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for creating a simple claims-aware ASP.NET Web Forms application that uses Windows authentication. It also provides instructions for how to test the application to verify that claims are presented when a user signs in using Windows authentication.  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Overview  
+- Overview  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application  
+- Step 1 – Create a Simple ASP.NET Web Forms Application  
   
--   Step 2 – Configure ASP.NET Web Forms Application for Claims Using Windows Authentication  
+- Step 2 – Configure ASP.NET Web Forms Application for Claims Using Windows Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Objectives  
   
--   Configure an ASP.NET Web Forms application for claims using Windows authentication  
+- Configure an ASP.NET Web Forms application for claims using Windows authentication  
   
--   Test the ASP.NET Web Forms application to see if it is working properly  
+- Test the ASP.NET Web Forms application to see if it is working properly  
   
 ## Overview  
  In .NET 4.5, WIF and its claims-based authorization have been included as an integral part of the Framework. Previously, if you wanted claims from an ASP.NET user, you were required to install WIF, and then cast interfaces to Principal objects such as `Thread.CurrentPrincipal` or `HttpContext.Current.User`. Now, claims are served automatically by these Principal objects.  
@@ -41,11 +41,11 @@ author: "BrucePerlerMS"
   
 ## Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application  
+- Step 1 – Create a Simple ASP.NET Web Forms Application  
   
--   Step 2 – Configure ASP.NET Web Forms Application for Claims Using Windows Authentication  
+- Step 2 – Configure ASP.NET Web Forms Application for Claims Using Windows Authentication  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Step 1 – Create a Simple ASP.NET Web Forms Application  
  In this step, you will create a new ASP.NET Web Forms application.  

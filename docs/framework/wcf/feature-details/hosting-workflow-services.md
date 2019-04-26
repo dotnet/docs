@@ -12,9 +12,9 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
 ## Hosting under IIS or WAS
  Hosting a workflow service under IIS or WAS involves creating a virtual directory and placing files in the virtual directory that define the service and its behavior. When hosting a workflow service under IIS or WAS there are several possibilities:
 
--   Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory along with a Web.config file that specifies the service behaviors, endpoints, and other configuration elements.
+- Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory along with a Web.config file that specifies the service behaviors, endpoints, and other configuration elements.
 
--   Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory. The .xamlx file specifies the endpoints to expose. Endpoints are specified in a `WorkflowService.Endpoints` element as shown in the following example.
+- Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory. The .xamlx file specifies the endpoints to expose. Endpoints are specified in a `WorkflowService.Endpoints` element as shown in the following example.
 
     ```xml
     <WorkflowService xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -32,9 +32,9 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
     > [!NOTE]
     > Behaviors cannot be specified in a .xamlx file, so you must use a Web.config if you need to specify behavior settings.
 
--   Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory. In addition, place a .svc file in the virtual directory. The .svc file allows you to specify a custom Web service host factory, apply custom behavior, or load configuration from a custom location.
+- Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory. In addition, place a .svc file in the virtual directory. The .svc file allows you to specify a custom Web service host factory, apply custom behavior, or load configuration from a custom location.
 
--   Place an assembly in the IIS/WAS virtual directory that contains an activity that uses the WCF messaging activities.
+- Place an assembly in the IIS/WAS virtual directory that contains an activity that uses the WCF messaging activities.
 
  A .xamlx file that defines a workflow service must contain a <`Service`> root element or a root element that contains any type derived from <xref:System.Workflow.ComponentModel.Activity>. When using the Visual Studio activity template, a .xamlx file is created. When using the WCF Workflow Service template, a .xamlx file is created.
 

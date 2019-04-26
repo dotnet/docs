@@ -16,19 +16,19 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
   
 ## In This Section  
   
--   [Properties of SQL Workflow Instance Store](properties-of-sql-workflow-instance-store.md)  
+- [Properties of SQL Workflow Instance Store](properties-of-sql-workflow-instance-store.md)  
   
--   [How to: Enable SQL Persistence for Workflows and Workflow Services](how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)  
+- [How to: Enable SQL Persistence for Workflows and Workflow Services](how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)  
   
--   [Instance Activation](instance-activation.md)  
+- [Instance Activation](instance-activation.md)  
   
--   [Support for Queries](support-for-queries.md)  
+- [Support for Queries](support-for-queries.md)  
   
--   [Store Extensibility](store-extensibility.md)  
+- [Store Extensibility](store-extensibility.md)  
   
--   [Security](security.md)  
+- [Security](security.md)  
   
--   [SQL Server Persistence Database](sql-server-persistence-database.md)  
+- [SQL Server Persistence Database](sql-server-persistence-database.md)  
   
 ## See also
 

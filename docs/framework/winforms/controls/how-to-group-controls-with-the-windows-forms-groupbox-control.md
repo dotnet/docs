@@ -10,11 +10,11 @@ ms.assetid: 0bda316d-bd2a-43aa-ac73-342453303169
 # How to: Group Controls with the Windows Forms GroupBox Control
 Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group other controls. There are three reasons to group controls:  
   
--   To create a visual grouping of related form elements for a clear user interface.  
+- To create a visual grouping of related form elements for a clear user interface.  
   
--   To create programmatic grouping (of radio buttons, for example).  
+- To create programmatic grouping (of radio buttons, for example).  
   
--   For moving the controls as a unit at design time.  
+- For moving the controls as a unit at design time.  
   
 ### To create a group of controls  
   

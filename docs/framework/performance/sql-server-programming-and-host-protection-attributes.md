@@ -21,11 +21,11 @@ The ability to load and execute managed code in a SQL Server host requires meeti
 ## Host Protection Attributes  
  Host protection attributes identify types or members that do not fit the host programming model and represent the following increasing levels of reliability threat:  
   
--   Are otherwise benign.  
+- Are otherwise benign.  
   
--   Could lead to destabilization of server-managed user code.  
+- Could lead to destabilization of server-managed user code.  
   
--   Could lead to destabilization of the server process itself.  
+- Could lead to destabilization of the server process itself.  
   
  SQL Server disallows the use of a type or member that has a <xref:System.Security.Permissions.HostProtectionAttribute> that specifies a <xref:System.Security.Permissions.HostProtectionResource> value of <xref:System.Security.Permissions.HostProtectionResource.SharedState>, <xref:System.Security.Permissions.HostProtectionResource.Synchronization>, <xref:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort>, or <xref:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt>. This prevents the assemblies from calling members that enable sharing state, perform synchronization, might cause a resource leak on termination, or affect the integrity of the SQL Server process.  
   

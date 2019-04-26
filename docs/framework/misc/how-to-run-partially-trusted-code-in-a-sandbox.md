@@ -86,15 +86,15 @@ AppDomain.CreateDomain( string friendlyName,
   
      Additional information:  
   
-    -   This is the only overload of the <xref:System.AppDomain.CreateDomain%2A> method that takes a <xref:System.Security.PermissionSet> as a parameter, and thus the only overload that lets you load an application in a partial-trust setting.  
+    - This is the only overload of the <xref:System.AppDomain.CreateDomain%2A> method that takes a <xref:System.Security.PermissionSet> as a parameter, and thus the only overload that lets you load an application in a partial-trust setting.  
   
-    -   The `evidence` parameter is not used to calculate a permission set; it is used for identification by other features of the .NET Framework.  
+    - The `evidence` parameter is not used to calculate a permission set; it is used for identification by other features of the .NET Framework.  
   
-    -   Setting the <xref:System.AppDomainSetup.ApplicationBase%2A> property of the `info` parameter is mandatory for this overload.  
+    - Setting the <xref:System.AppDomainSetup.ApplicationBase%2A> property of the `info` parameter is mandatory for this overload.  
   
-    -   The `fullTrustAssemblies` parameter has the `params` keyword, which means that it is not necessary to create a <xref:System.Security.Policy.StrongName> array. Passing 0, 1, or more strong names as parameters is allowed.  
+    - The `fullTrustAssemblies` parameter has the `params` keyword, which means that it is not necessary to create a <xref:System.Security.Policy.StrongName> array. Passing 0, 1, or more strong names as parameters is allowed.  
   
-    -   The code to create the application domain is:  
+    - The code to create the application domain is:  
   
     ```csharp
     AppDomain newDomain = AppDomain.CreateDomain("Sandbox", null, adSetup, permSet, fullTrustAssembly);  
@@ -102,15 +102,15 @@ AppDomain.CreateDomain( string friendlyName,
   
 5. Load the code into the sandboxing <xref:System.AppDomain> that you created. This can be done in two ways:  
   
-    -   Call the <xref:System.AppDomain.ExecuteAssembly%2A> method for the assembly.  
+    - Call the <xref:System.AppDomain.ExecuteAssembly%2A> method for the assembly.  
   
-    -   Use the <xref:System.Activator.CreateInstanceFrom%2A> method to create an instance of a class derived from <xref:System.MarshalByRefObject> in the new <xref:System.AppDomain>.  
+    - Use the <xref:System.Activator.CreateInstanceFrom%2A> method to create an instance of a class derived from <xref:System.MarshalByRefObject> in the new <xref:System.AppDomain>.  
   
      The second method is preferable, because it makes it easier to pass parameters to the new <xref:System.AppDomain> instance. The <xref:System.Activator.CreateInstanceFrom%2A> method provides two important features:  
   
-    -   You can use a code base that points to a location that does not contain your assembly.  
+    - You can use a code base that points to a location that does not contain your assembly.  
   
-    -   You can do the creation under an <xref:System.Security.CodeAccessPermission.Assert%2A> for full-trust (<xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType>), which enables you to create an instance of a critical class. (This happens whenever your assembly has no transparency markings and is loaded as fully trusted.) Therefore, you have to be careful to create only code that you trust with this function, and we recommend that you create only instances of fully trusted classes in the new application domain.  
+    - You can do the creation under an <xref:System.Security.CodeAccessPermission.Assert%2A> for full-trust (<xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType>), which enables you to create an instance of a critical class. (This happens whenever your assembly has no transparency markings and is loaded as fully trusted.) Therefore, you have to be careful to create only code that you trust with this function, and we recommend that you create only instances of fully trusted classes in the new application domain.  
   
     ```csharp
     ObjectHandle handle = Activator.CreateInstanceFrom(  

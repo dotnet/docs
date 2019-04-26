@@ -9,11 +9,11 @@ Activities created by inheriting from <xref:System.Activities.CodeActivity> can 
 ## Using CodeActivityContext
  Features of the workflow runtime can be accessed from within the <xref:System.Activities.CodeActivity.Execute%2A> method by using members of the `context` parameter, of type <xref:System.Activities.CodeActivityContext>. The features available through <xref:System.Activities.CodeActivityContext> include the following:
 
--   Getting and setting the values of variables and arguments.
+- Getting and setting the values of variables and arguments.
 
--   Custom tracking features using <xref:System.Activities.CodeActivityContext.Track%2A>.
+- Custom tracking features using <xref:System.Activities.CodeActivityContext.Track%2A>.
 
--   Access to the activity’s execution properties using <xref:System.Activities.CodeActivityContext.GetProperty%2A>.
+- Access to the activity’s execution properties using <xref:System.Activities.CodeActivityContext.GetProperty%2A>.
 
 #### To create a custom activity that inherits from CodeActivity
 

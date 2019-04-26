@@ -20,11 +20,11 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
 ## Large-Value Type Restrictions  
  The following restrictions apply to the `max` data types, which do not exist for smaller data types:  
   
--   A `sql_variant` cannot contain a large `varchar` data type.  
+- A `sql_variant` cannot contain a large `varchar` data type.  
   
--   Large `varchar` columns cannot be specified as a key column in an index. They are allowed in an included column in a non-clustered index.  
+- Large `varchar` columns cannot be specified as a key column in an index. They are allowed in an included column in a non-clustered index.  
   
--   Large `varchar` columns cannot be used as partitioning key columns.  
+- Large `varchar` columns cannot be used as partitioning key columns.  
   
 ## Working with Large-Value Types in Transact-SQL  
  The Transact-SQL `OPENROWSET` function is a one-time method of connecting and accessing remote data. It includes all of the connection information necessary to access remote data from an OLE DB data source. `OPENROWSET` can be referenced in the FROM clause of a query as though it were a table name. It can also be referenced as the target table of an INSERT, UPDATE, or DELETE statement, subject to the capabilities of the OLE DB provider.  

@@ -77,15 +77,15 @@ OData is based on the HTTP protocol. In an HTTP message, the header may contain 
 ### Custom Hosting Requirements  
  By default, WCF Data Services is created as an ASP.NET application hosted in IIS. This enables the data service to leverage the secure behaviors of this platform. You can define WCF Data Services that are hosted by a custom host. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md). The components and platform hosting a data service must ensure the following security behaviors to prevent attacks on the data service:  
   
--   Limit the length of the URI accepted in a data service request for all possible operations.  
+- Limit the length of the URI accepted in a data service request for all possible operations.  
   
--   Limit the size of both incoming and outgoing HTTP messages.  
+- Limit the size of both incoming and outgoing HTTP messages.  
   
--   Limit the total number of outstanding requests at any given time.  
+- Limit the total number of outstanding requests at any given time.  
   
--   Limit the size of HTTP headers and their values, and provide WCF Data Services access to header data.  
+- Limit the size of HTTP headers and their values, and provide WCF Data Services access to header data.  
   
--   Detect and counter known attacks, such as TCP SYN and message replay attacks.  
+- Detect and counter known attacks, such as TCP SYN and message replay attacks.  
   
 ### Values Are Not Further Encoded  
  Property values sent to the data service are not further encoded by the WCF Data Services runtime. For example, when a string property of an entity contains formatted HTML content, the tags are not HTML encoded by the data service. The data service also does not further encode property values in the response. The client library also does not perform any additional encoding.  
@@ -93,17 +93,17 @@ OData is based on the HTTP protocol. In an HTTP message, the header may contain 
 ### Considerations for Client Applications  
  The following security considerations apply to applications that use the WCF Data Services client to access OData services:  
   
--   The client library assumes that the protocols used to access the data service provide an appropriate level of security.  
+- The client library assumes that the protocols used to access the data service provide an appropriate level of security.  
   
--   The client library uses all the default values for timeouts and parsing options of the underlying platform-provided transport stacks.  
+- The client library uses all the default values for timeouts and parsing options of the underlying platform-provided transport stacks.  
   
--   The client library does not read any settings from application configuration files.  
+- The client library does not read any settings from application configuration files.  
   
--   The client library does not implement any cross domain access mechanisms. Instead, it relies on the mechanisms provided by the underlying HTTP stack.  
+- The client library does not implement any cross domain access mechanisms. Instead, it relies on the mechanisms provided by the underlying HTTP stack.  
   
--   The client library has no user interface elements, and it never tries to display or render the data that it receives or sends.  
+- The client library has no user interface elements, and it never tries to display or render the data that it receives or sends.  
   
--   We recommend that client applications always validate user input as well as data accepted from untrusted services.  
+- We recommend that client applications always validate user input as well as data accepted from untrusted services.  
   
 ## See also
 

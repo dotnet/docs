@@ -94,7 +94,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
 
 ## Compiling the Code
 
--   This example is a command-line application. To compile and run this code in Visual Studio, add the C# code `Console.ReadLine();` (in Visual Basic, `Console.ReadLine()`) at the end of `Main()`, to prevent the command window from closing before you can read the output.
+- This example is a command-line application. To compile and run this code in Visual Studio, add the C# code `Console.ReadLine();` (in Visual Basic, `Console.ReadLine()`) at the end of `Main()`, to prevent the command window from closing before you can read the output.
 
 ## See also
 

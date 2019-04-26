@@ -17,15 +17,15 @@ Bitmap effects enable designers and developers to apply visual effects to render
   
  As a special case, in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], effects can be set as properties on live <xref:System.Windows.Media.Visual> objects, such as a <xref:System.Windows.Controls.Button> or <xref:System.Windows.Controls.TextBox>. The pixel processing is applied and rendered at run-time. In this case, at the time of rendering, a <xref:System.Windows.Media.Visual> is automatically converted to its <xref:System.Windows.Media.Imaging.BitmapSource> equivalent and is fed as input to the <xref:System.Windows.Media.Effects.BitmapEffect>. The output replaces the <xref:System.Windows.Media.Visual> object's default rendering behavior. This is why <xref:System.Windows.Media.Effects.BitmapEffect> objects force visuals to render in software only i.e. no hardware acceleration on visuals when effects are applied.  
   
--   <xref:System.Windows.Media.Effects.BlurBitmapEffect> simulates an object that appears out-of-focus.  
+- <xref:System.Windows.Media.Effects.BlurBitmapEffect> simulates an object that appears out-of-focus.  
   
--   <xref:System.Windows.Media.Effects.OuterGlowBitmapEffect> creates a halo of color around the perimeter of an object.  
+- <xref:System.Windows.Media.Effects.OuterGlowBitmapEffect> creates a halo of color around the perimeter of an object.  
   
--   <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> creates a shadow behind an object.  
+- <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> creates a shadow behind an object.  
   
--   <xref:System.Windows.Media.Effects.BevelBitmapEffect> creates a bevel which raises the surface of an image according to a specified curve.  
+- <xref:System.Windows.Media.Effects.BevelBitmapEffect> creates a bevel which raises the surface of an image according to a specified curve.  
   
--   <xref:System.Windows.Media.Effects.EmbossBitmapEffect> creates a bump mapping of a <xref:System.Windows.Media.Visual> to give the impression of depth and texture from an artificial light source.  
+- <xref:System.Windows.Media.Effects.EmbossBitmapEffect> creates a bump mapping of a <xref:System.Windows.Media.Visual> to give the impression of depth and texture from an artificial light source.  
   
 > [!NOTE]
 >  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  

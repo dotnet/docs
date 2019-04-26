@@ -9,11 +9,11 @@ The Discovery APIs provide a unified programming model for the dynamic publicati
 ## Ad-Hoc and Managed Modes  
  The Discovery API supports two different modes: Managed and Ad-Hoc. In Managed mode there is a centralized server called a discovery proxy that maintains information about available services. The discovery proxy can be populated with information about services in a variety of ways. For example, services can send announcement messages during start up to the discovery proxy or the proxy may read data from a database or a configuration file to determine what services are available. How the discovery proxy is populated is completely up to the developer. Clients use the discovery proxy to retrieve information about available services. When a client searches for a service it sends a `Probe` message to the discovery proxy and the proxy determines whether any of the services it knows about match the service the client is searching for. If there are matches the discovery proxy sends a `ProbeMatch` response back to the client. The client can then contact the service directly using the service information returned from the proxy. The key principle behind Managed mode is that the discovery requests are sent in a unicast manner to one authority, the discovery proxy. The .NET Framework contains key components that allow you to build your own proxy. Clients and services can locate the proxy by multiple methods:  
   
--   The proxy can respond to ad-hoc messages.  
+- The proxy can respond to ad-hoc messages.  
   
--   The proxy can send an announcement message during start up.  
+- The proxy can send an announcement message during start up.  
   
--   Clients and services can be written to look for a specific well-known endpoint.  
+- Clients and services can be written to look for a specific well-known endpoint.  
   
  In Ad-Hoc mode, there is no centralized server. All discovery messages such as service announcements and client requests are sent in a multicast fashion. By default the .NET Framework contains support for Ad-Hoc discovery over the UDP protocol. For example, if a service is configured to send out a Hello announcement on start up, it sends it out over a well-known, multicast address using the UDP protocol. Clients have to actively listen for these announcements and process them accordingly. When a client sends a `Probe` message for a service it is sent over the network using a multicast protocol. Each service that receives the request determines whether it matches the criteria in the `Probe` message and responds directly to the client with a `ProbeMatch` message if the service matches the criteria specified in the `Probe` message.  
   

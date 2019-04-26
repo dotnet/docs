@@ -81,18 +81,18 @@ One of the benefits of Visual Studio is the ability to create professional-looki
   
 #### To test the form  
   
--   Press F5 to run the application.  
+- Press F5 to run the application.  
   
      You will see a split form containing a <xref:System.Windows.Forms.TreeView> control that displays your project directory on the left side, and a <xref:System.Windows.Forms.ListView> control on the right side with three columns. You can traverse the <xref:System.Windows.Forms.TreeView> by selecting directory nodes, and the <xref:System.Windows.Forms.ListView> is populated with the contents of the selected directory.  
   
 ## Next Steps  
  This application gives you an example of a way you can use <xref:System.Windows.Forms.TreeView> and <xref:System.Windows.Forms.ListView> controls together. For more information on these controls, see the following topics:  
   
--   [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](add-custom-information-to-a-treeview-or-listview-control-wf.md)  
+- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](add-custom-information-to-a-treeview-or-listview-control-wf.md)  
   
--   [How to: Add Search Capabilities to a ListView Control](how-to-add-search-capabilities-to-a-listview-control.md)  
+- [How to: Add Search Capabilities to a ListView Control](how-to-add-search-capabilities-to-a-listview-control.md)  
   
--   [How to: Attach a ShortCut Menu to a TreeView Node](how-to-attach-a-shortcut-menu-to-a-treeview-node.md)  
+- [How to: Attach a ShortCut Menu to a TreeView Node](how-to-attach-a-shortcut-menu-to-a-treeview-node.md)  
   
 ## See also
 

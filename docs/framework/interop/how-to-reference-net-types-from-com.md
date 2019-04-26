@@ -22,7 +22,7 @@ From the point of view of client and server code, the differences between COM an
   
 ### To import a library  
   
--   Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
+- Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
   
     ```cpp  
     #import "..\LoanLib\LoanLib.tlb" raw_interfaces_only  
@@ -30,7 +30,7 @@ From the point of view of client and server code, the differences between COM an
   
      -or-  
   
--   Include an #import directive for Mscorlib.tlb. For example:  
+- Include an #import directive for Mscorlib.tlb. For example:  
   
     ```cpp  
     #import "mscorlib.tlb"  

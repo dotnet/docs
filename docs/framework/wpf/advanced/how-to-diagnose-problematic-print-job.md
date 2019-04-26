@@ -43,9 +43,9 @@ Network administrators often field complaints from users about print jobs that d
   
  At this point the application contains a branching structure corresponding to the two ways of checking a print job's status:  
   
--   You can read the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property which is of type <xref:System.Printing.PrintJobStatus>.  
+- You can read the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property which is of type <xref:System.Printing.PrintJobStatus>.  
   
--   You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
+- You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
   
  This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
   

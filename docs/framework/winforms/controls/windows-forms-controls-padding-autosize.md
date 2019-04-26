@@ -31,13 +31,13 @@ Precise placement of controls on your form is a high priority for many applicati
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows Forms project  
+- Creating a Windows Forms project  
   
--   Setting Margins for Your Controls  
+- Setting Margins for Your Controls  
   
--   Setting Padding for Your Controls  
+- Setting Padding for Your Controls  
   
--   Automatically Sizing Your Controls  
+- Automatically Sizing Your Controls  
   
  When you are finished, you will have an understanding of the role played by these important layout features.  
   
@@ -47,7 +47,7 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
+- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
@@ -172,11 +172,11 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Next Steps  
  There are many other layout features for arranging controls in your Windows Forms applications. Here are some combinations you might try:  
   
--   Build a form using a <xref:System.Windows.Forms.TableLayoutPanel> control. For details, see [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md). Try changing the values of the <xref:System.Windows.Forms.TableLayoutPanel> control's <xref:System.Windows.Forms.Control.Padding%2A> property, as well as the <xref:System.Windows.Forms.Control.Margin%2A> property on its child controls.  
+- Build a form using a <xref:System.Windows.Forms.TableLayoutPanel> control. For details, see [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md). Try changing the values of the <xref:System.Windows.Forms.TableLayoutPanel> control's <xref:System.Windows.Forms.Control.Padding%2A> property, as well as the <xref:System.Windows.Forms.Control.Margin%2A> property on its child controls.  
   
--   Try the same experiment using a <xref:System.Windows.Forms.FlowLayoutPanel> control. For details, see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md).  
+- Try the same experiment using a <xref:System.Windows.Forms.FlowLayoutPanel> control. For details, see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md).  
   
--   Experiment with docking child controls in a <xref:System.Windows.Forms.Panel> control. The <xref:System.Windows.Forms.Control.Padding%2A> property is a more general realization of the <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A> property, and you can satisfy yourself that this is the case by putting a child control in a <xref:System.Windows.Forms.Panel> control and setting the child control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. Set the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Padding%2A> property to various values and note the effect.  
+- Experiment with docking child controls in a <xref:System.Windows.Forms.Panel> control. The <xref:System.Windows.Forms.Control.Padding%2A> property is a more general realization of the <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A> property, and you can satisfy yourself that this is the case by putting a child control in a <xref:System.Windows.Forms.Panel> control and setting the child control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. Set the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Padding%2A> property to various values and note the effect.  
   
 ## See also
 

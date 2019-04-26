@@ -101,11 +101,11 @@ When you use reflection to load and run assemblies, you cannot use language feat
   
 ## Compiling the Code  
   
--   The code contains the C# `using` statements (`Imports` in Visual Basic) necessary for compilation.  
+- The code contains the C# `using` statements (`Imports` in Visual Basic) necessary for compilation.  
   
--   No additional assembly references are required for compiling from the command line. In Visual Studio you must add a reference to System.Windows.Forms.dll because this example is a console application.  
+- No additional assembly references are required for compiling from the command line. In Visual Studio you must add a reference to System.Windows.Forms.dll because this example is a console application.  
   
--   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
+- Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See also
 

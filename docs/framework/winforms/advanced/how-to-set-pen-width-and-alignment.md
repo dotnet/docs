@@ -20,7 +20,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 ### To vary the width of a pen  
   
--   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.  
+- Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.  
   
      ![A black thin line with green highlight.](./media/how-to-set-pen-width-and-alignment/green-pixels-centered-line.gif)  
   
@@ -31,7 +31,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 ### To change the alignment of a pen  
   
--   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> to specify that the pixels drawn with the green pen will be centered on the boundary of the rectangle.  
+- Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> to specify that the pixels drawn with the green pen will be centered on the boundary of the rectangle.  
   
      The following illustration shows the resulting rectangle:
   
@@ -42,7 +42,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 ### To create an inset pen  
   
--   Change the green pen's alignment by modifying the third statement in the preceding code example as follows:  
+- Change the green pen's alignment by modifying the third statement in the preceding code example as follows:  
   
      [!code-csharp[System.Drawing.UsingAPen#43](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#43)]
      [!code-vb[System.Drawing.UsingAPen#43](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#43)]  

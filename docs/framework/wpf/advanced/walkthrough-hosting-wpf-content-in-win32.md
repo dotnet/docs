@@ -59,13 +59,13 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
  This section describes how to host [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a basic [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application. The content itself is implemented in [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] as a managed class. For the most part, it is straightforward [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming. The key aspects of the content implementation are discussed in [Implementing the WPF Content](#implementing_the_wpf_page).
 
 <a name="autoNestedSectionsOUTLINE1"></a>
--   [The Basic Application](#the_basic_application)
+- [The Basic Application](#the_basic_application)
 
--   [Hosting the WPF Content](#hosting_the_wpf_page)
+- [Hosting the WPF Content](#hosting_the_wpf_page)
 
--   [Holding a Reference to the WPF Content](#holding_a_reference)
+- [Holding a Reference to the WPF Content](#holding_a_reference)
 
--   [Communicating with the WPF Content](#communicating_with_the_page)
+- [Communicating with the WPF Content](#communicating_with_the_page)
 
 <a name="the_basic_application"></a>
 ### The Basic Application
@@ -81,11 +81,11 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
  The template creates a basic [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application, including:
 
--   An entry point for the application.
+- An entry point for the application.
 
--   A window, with an associated window procedure (WndProc).
+- A window, with an associated window procedure (WndProc).
 
--   A menu with **File** and **Help** headings. The **File** menu has an **Exit** item that closes the application. The **Help** menu has an **About** item that launches a simple dialog box.
+- A menu with **File** and **Help** headings. The **File** menu has an **Exit** item that closes the application. The **Help** menu has an **About** item that launches a simple dialog box.
 
  Before you start writing code to host the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, you need to make two modifications to the basic template.
 
@@ -164,11 +164,11 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
  You can host and use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content without any knowledge of the actual implementation. If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content had been packaged in a separate [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)], it could have been built in any [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] language. Following is a brief walkthrough of the [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] implementation that is used in the sample. This section contains the following subsections.
 
 <a name="autoNestedSectionsOUTLINE2"></a>
--   [Layout](#page_layout)
+- [Layout](#page_layout)
 
--   [Returning the Data to the Host Window](#returning_data_to_window)
+- [Returning the Data to the Host Window](#returning_data_to_window)
 
--   [Setting the WPF Properties](#set_page_properties)
+- [Setting the WPF Properties](#set_page_properties)
 
 <a name="page_layout"></a>
 ### Layout

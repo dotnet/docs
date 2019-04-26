@@ -8,9 +8,9 @@ Windows Communication Foundation (WCF) provides application instrumentation and 
   
  WCF outputs the following data for diagnostic tracing:  
   
--   Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events."  
+- Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events."  
   
--   Windows error events when the tracing feature malfunctions.  
+- Windows error events when the tracing feature malfunctions.  
   
 ## In This Section  
  [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  

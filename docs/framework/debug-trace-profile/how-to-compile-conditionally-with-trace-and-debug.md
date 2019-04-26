@@ -22,11 +22,11 @@ While you are debugging an application during development, both your tracing and
   
  You can specify the compiler settings for your application in several ways:  
   
--   The property pages  
+- The property pages  
   
--   The command line  
+- The command line  
   
--   **#CONST** (for Visual Basic) and **#define** (for C#)  
+- **#CONST** (for Visual Basic) and **#define** (for C#)  
   
 ### To change compile settings from the property pages dialog box  
   
@@ -34,9 +34,9 @@ While you are debugging an application during development, both your tracing and
   
 2. Choose **Properties** from the shortcut menu.  
   
-    -   In Visual Basic, click the **Compile** tab in the left pane of the property page, then click the **Advanced Compile Options** button to display the **Advanced Compiler Settings** dialog box. Select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
+    - In Visual Basic, click the **Compile** tab in the left pane of the property page, then click the **Advanced Compile Options** button to display the **Advanced Compiler Settings** dialog box. Select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
   
-    -   In C#, click the **Build** tab in the left pane of the property page, then select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
+    - In C#, click the **Build** tab in the left pane of the property page, then select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
   
 ### To compile instrumented code using the command line  
   

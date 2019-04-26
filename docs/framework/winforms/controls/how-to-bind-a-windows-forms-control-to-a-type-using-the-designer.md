@@ -24,11 +24,11 @@ When you are building controls that interact with data, you sometimes need to bi
   
 6. Select the type to bind to:  
   
-    -   If the type you want to bind to is in the current project, or the assembly that contains the type is already added as a reference, expand the nodes to find the type you want, and then select it.  
+    - If the type you want to bind to is in the current project, or the assembly that contains the type is already added as a reference, expand the nodes to find the type you want, and then select it.  
   
          -or-  
   
-    -   If the type you want to bind to is in another assembly, not currently in the list of references, click **Add Reference**, and then click the **Projects** tab. Select the project that contains the business object you want and click **OK**. This project will appear in the list of assemblies, so you can expand the nodes to find the type you want, and then select it.  
+    - If the type you want to bind to is in another assembly, not currently in the list of references, click **Add Reference**, and then click the **Projects** tab. Select the project that contains the business object you want and click **OK**. This project will appear in the list of assemblies, so you can expand the nodes to find the type you want, and then select it.  
   
         > [!NOTE]
         >  If you want to bind to a type in a framework or Microsoft assembly, clear the **Hide assemblies that begin with Microsoft or System** check box.  

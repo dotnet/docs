@@ -6,11 +6,11 @@ ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
 # Streaming Message Transfer
 Windows Communication Foundation (WCF) transports support two modes for transferring messages:  
   
--   Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
+- Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
   
--   Streamed transfers expose the message as a stream. The receiver starts processing the message before it is completely delivered.  
+- Streamed transfers expose the message as a stream. The receiver starts processing the message before it is completely delivered.  
   
--   Streamed transfers can improve the scalability of a service by eliminating the requirement for large memory buffers. Whether changing the transfer mode improves scalability depends on the size of the messages being transferred. Large message sizes favor using streamed transfers.  
+- Streamed transfers can improve the scalability of a service by eliminating the requirement for large memory buffers. Whether changing the transfer mode improves scalability depends on the size of the messages being transferred. Large message sizes favor using streamed transfers.  
   
  By default, the HTTP, TCP/IP, and named pipe transports use buffered transfers. This document describes how to switch these transports from a buffered to streamed transfer mode and the consequences of doing so.  
   

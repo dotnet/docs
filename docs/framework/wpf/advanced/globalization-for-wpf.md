@@ -63,59 +63,59 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  The following scripts are currently supported:
 
--   Arabic
+- Arabic
 
--   Bengali
+- Bengali
 
--   Devanagari
+- Devanagari
 
--   Cyrillic
+- Cyrillic
 
--   Greek
+- Greek
 
--   Gujarati
+- Gujarati
 
--   Gurmukhi
+- Gurmukhi
 
--   Hebrew
+- Hebrew
 
--   Ideographic scripts
+- Ideographic scripts
 
--   Kannada
+- Kannada
 
--   Lao
+- Lao
 
--   Latin
+- Latin
 
--   Malayalam
+- Malayalam
 
--   Mongolian
+- Mongolian
 
--   Odia
+- Odia
 
--   Syriac
+- Syriac
 
--   Tamil
+- Tamil
 
--   Telugu
+- Telugu
 
--   Thaana
+- Thaana
 
--   Thai*
+- Thai*
 
--   Tibetan
+- Tibetan
 
  *In this release the display and editing of Thai text is supported; word breaking is not.
 
  The following scripts are not currently supported:
 
--   Khmer
+- Khmer
 
--   Korean Old Hangul
+- Korean Old Hangul
 
--   Myanmar
+- Myanmar
 
--   Sinhala
+- Sinhala
 
  All the writing system engines support [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts. [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] fonts can include the [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] layout tables that enable font creators to design better international and high-end typographic fonts. The [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] font layout tables contain information about glyph substitutions, glyph positioning, justification, and baseline positioning, enabling text-processing applications to improve text layout.
 
@@ -127,9 +127,9 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ### International Layout
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a very convenient way to support horizontal, bidirectional, and vertical layouts. In presentation framework the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property can be used to define layout. The flow direction patterns are:
 
--   *LeftToRight* - horizontal layout for Latin, East Asian and so forth.
+- *LeftToRight* - horizontal layout for Latin, East Asian and so forth.
 
--   *RightToLeft* - bidirectional for Arabic, Hebrew and so forth.
+- *RightToLeft* - bidirectional for Arabic, Hebrew and so forth.
 
 <a name="developing_localizable_apps"></a>
 ## Developing Localizable Applications

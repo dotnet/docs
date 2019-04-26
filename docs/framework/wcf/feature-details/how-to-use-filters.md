@@ -6,13 +6,13 @@ ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5
 # How To: Use Filters
 This topic outlines the basic steps required to create a routing configuration that uses multiple filters. In this example, messages are routed to two implementations of a calculator service, regularCalc and roundingCalc. Both implementations support the same operations; however one service rounds all calculations to the nearest integer value before returning. A client application must be able to indicate whether to  use the rounding version of the service; if no service preference is expressed then the message is load balanced between the two services. The operations exposed by both services are:  
   
--   Add  
+- Add  
   
--   Subtract  
+- Subtract  
   
--   Multiply  
+- Multiply  
   
--   Divide  
+- Divide  
   
  Because both services implement the same operations, you cannot use the Action filter, because the action specified in the message will not be unique. Instead you must do additional work to ensure that the messages are routed to the appropriate endpoints.  
   

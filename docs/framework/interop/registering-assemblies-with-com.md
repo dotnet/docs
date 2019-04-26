@@ -24,11 +24,11 @@ You can run a command-line tool called the [Assembly Registration Tool (Regasm.e
   
  Under the HKCR\CLSID\\{0000…0000} key, the default value is set to the ProgID of the class, and two new named values, Class and Assembly, are added. The runtime reads the Assembly value from the registry and passes it on to the runtime assembly resolver. The assembly resolver attempts to locate the assembly, based on assembly information such as the name and version number. For the assembly resolver to locate an assembly, the assembly has to be in one of the following locations:  
   
--   The global assembly cache (must be a strong-named assembly).  
+- The global assembly cache (must be a strong-named assembly).  
   
--   In the application directory. Assemblies loaded from the application path are only accessible from that application.  
+- In the application directory. Assemblies loaded from the application path are only accessible from that application.  
   
--   Along an file path specified with the **/codebase** option to Regasm.exe.  
+- Along an file path specified with the **/codebase** option to Regasm.exe.  
   
  Regasm.exe also creates the InProcServer32 key under the HKCR\CLSID\\{0000…0000} key. The default value for the key is set to the name of the DLL that initializes the common language runtime (Mscoree.dll).  
   

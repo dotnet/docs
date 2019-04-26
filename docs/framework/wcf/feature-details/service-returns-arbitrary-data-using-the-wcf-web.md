@@ -167,7 +167,7 @@ namespace RawImageService
   
 ## Compiling the Code  
   
--   When compiling the sample code reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
+- When compiling the sample code reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
 ## See also
 

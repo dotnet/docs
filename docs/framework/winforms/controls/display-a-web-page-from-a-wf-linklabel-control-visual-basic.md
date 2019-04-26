@@ -34,11 +34,11 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   A Windows Form named `Form1`.  
+- A Windows Form named `Form1`.  
   
--   A <xref:System.Windows.Forms.LinkLabel> control named `LinkLabel1`.  
+- A <xref:System.Windows.Forms.LinkLabel> control named `LinkLabel1`.  
   
--   An active Internet connection.  
+- An active Internet connection.  
   
 ## .NET Framework Security  
  The call to the <xref:System.Diagnostics.Process.Start%2A> method requires full trust. For more information, see <xref:System.Security.SecurityException>.  

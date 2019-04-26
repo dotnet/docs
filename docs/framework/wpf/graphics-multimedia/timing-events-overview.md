@@ -17,11 +17,11 @@ This topic describes how to use the five timing events available on <xref:System
   
  There are multiple ways to animate properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]:  
   
--   **Using storyboard objects** (markup and code): You can use <xref:System.Windows.Media.Animation.Storyboard> objects to arrange and distribute animations to one or more objects. For an example, see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md).  
+- **Using storyboard objects** (markup and code): You can use <xref:System.Windows.Media.Animation.Storyboard> objects to arrange and distribute animations to one or more objects. For an example, see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md).  
   
--   **Using local animations** (code only): You can apply <xref:System.Windows.Media.Animation.AnimationTimeline> objects directly to the properties they animate. For an example, see [Animate a Property Without Using a Storyboard](how-to-animate-a-property-without-using-a-storyboard.md).  
+- **Using local animations** (code only): You can apply <xref:System.Windows.Media.Animation.AnimationTimeline> objects directly to the properties they animate. For an example, see [Animate a Property Without Using a Storyboard](how-to-animate-a-property-without-using-a-storyboard.md).  
   
--   **Using clocks** (code only): You can explicitly manage clock creation and distribute the animation clocks yourself.  For an example, see [Animate a Property by Using an AnimationClock](how-to-animate-a-property-by-using-an-animationclock.md).  
+- **Using clocks** (code only): You can explicitly manage clock creation and distribute the animation clocks yourself.  For an example, see [Animate a Property by Using an AnimationClock](how-to-animate-a-property-by-using-an-animationclock.md).  
   
  Because you can use them in markup and code, the examples in this overview use <xref:System.Windows.Media.Animation.Storyboard> objects. However, the concepts described can be applied to the other methods of animating properties.  
   

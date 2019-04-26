@@ -26,9 +26,9 @@ Windows Communication Foundation (WCF) clients, like Windows Communication Found
   
  Because of the security issues involved, it is strongly recommended that:  
   
--   You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
+- You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
   
--   You do so only in controlled debugging scenarios.  
+- You do so only in controlled debugging scenarios.  
   
  The following code example shows a client configuration file that instructs WCF to return managed exception information from a client callback object in SOAP messages.  
   

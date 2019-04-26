@@ -21,13 +21,13 @@ Tracing is a way for you to monitor the execution of your application while it i
   
  The term *instrumentation* refers to an ability to monitor or measure the level of a product's performance and to diagnose errors. In programming, this means the ability of an application to incorporate:  
   
--   **Code tracing** - Receiving informative messages about the execution of an application at run time.  
+- **Code tracing** - Receiving informative messages about the execution of an application at run time.  
   
--   **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugging-in-visual-studio).  
+- **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugging-in-visual-studio).  
   
--   **Performance counters** - Components that allow you to track the performance of your application. For more information, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
+- **Performance counters** - Components that allow you to track the performance of your application. For more information, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
   
--   **Event logs** - Components that allow you receive and track major events in the execution of your application. For more information, see the <xref:System.Diagnostics.EventLog> class.  
+- **Event logs** - Components that allow you receive and track major events in the execution of your application. For more information, see the <xref:System.Diagnostics.EventLog> class.  
   
  Instrumenting your application by placing trace statements at strategic locations in your code is especially useful for distributed applications. By using trace statements you can instrument an application not only to display information when things go wrong, but also to monitor how well the application is performing.  
   
@@ -85,11 +85,11 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
   
 6. Compile the application into executable code using one of the following procedures:  
   
-    -   Use the **Build** menu along with the **Debug** page of the **Property Pages** dialog box in **Solution Explorer**. Use this when compiling in Visual Studio.  
+    - Use the **Build** menu along with the **Debug** page of the **Property Pages** dialog box in **Solution Explorer**. Use this when compiling in Visual Studio.  
   
          \- or -  
   
-    -   Use the **Trace** and **Debug** compiler directives for the command-line method of compiling. For more information, see [Compiling Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md). Use this when compiling from the command line.  
+    - Use the **Trace** and **Debug** compiler directives for the command-line method of compiling. For more information, see [Compiling Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md). Use this when compiling from the command line.  
   
 7. If a problem occurs during run time, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md).  
   

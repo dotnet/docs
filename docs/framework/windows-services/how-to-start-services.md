@@ -52,11 +52,11 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
   
 1. Open the **Services Control Manager** by doing one of the following:  
   
-    -   In Windows XP and 2000 Professional, right-click **My Computer** on the desktop, and then click **Manage**. In the dialog box that appears, expand the **Services and Applications** node.  
+    - In Windows XP and 2000 Professional, right-click **My Computer** on the desktop, and then click **Manage**. In the dialog box that appears, expand the **Services and Applications** node.  
   
          \- or -  
   
-    -   In Windows Server 2003 and Windows 2000 Server, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Services**.  
+    - In Windows Server 2003 and Windows 2000 Server, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Services**.  
   
         > [!NOTE]
         >  In Windows NT version 4.0, you can open this dialog box from **Control Panel**.  

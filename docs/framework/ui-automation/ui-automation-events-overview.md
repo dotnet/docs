@@ -33,13 +33,13 @@ ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
   
  The following events may be raised even when the state of the UI has not changed.  
   
--   `AutomationPropertyChangedEvent` (depending on the property that has changed)  
+- `AutomationPropertyChangedEvent` (depending on the property that has changed)  
   
--   `ElementSelectedEvent`  
+- `ElementSelectedEvent`  
   
--   `InvalidatedEvent`  
+- `InvalidatedEvent`  
   
--   `TextChangedEvent`  
+- `TextChangedEvent`  
   
 <a name="UI_Automation_Event_Identifiers"></a>   
 ## UI Automation Event Identifiers  

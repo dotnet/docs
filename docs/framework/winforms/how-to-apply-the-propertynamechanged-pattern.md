@@ -20,7 +20,7 @@ The following code example demonstrates how to apply the *PropertyName*Changed p
 ## Compiling the Code  
  To compile the previous code example:  
   
--   Paste the code into an empty code file. You must use the custom control on a Windows Form that contains a `Main` method.  
+- Paste the code into an empty code file. You must use the custom control on a Windows Form that contains a `Main` method.  
   
 ## See also
 

@@ -63,31 +63,31 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
 
  The following advanced settings can be configured for code generation from contracts. Settings can only be configured for all of the files in the project; settings cannot be configured for individual files at this time.
 
--   **Serializer Mode**: This setting determines which serializer is used for reading service contract files. When **XML Serializer** is selected, the **Collection Types** and **Reuse Types** options are disabled. These options only apply to the **Data Contract Serializer**.
+- **Serializer Mode**: This setting determines which serializer is used for reading service contract files. When **XML Serializer** is selected, the **Collection Types** and **Reuse Types** options are disabled. These options only apply to the **Data Contract Serializer**.
 
--   **Reuse Types**: This setting specifies which libraries are used for type reuse. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
+- **Reuse Types**: This setting specifies which libraries are used for type reuse. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
 
--   **Collection Type**: This setting specifies the fully-qualified or assembly-qualified type to be used for the collection data type. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
+- **Collection Type**: This setting specifies the fully-qualified or assembly-qualified type to be used for the collection data type. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
 
--   **Dictionary Type**: This setting specifies the fully-qualified or assembly-qualified type to be used for the dictionary data type.
+- **Dictionary Type**: This setting specifies the fully-qualified or assembly-qualified type to be used for the dictionary data type.
 
--   **EnableDataBinding**: This setting specifies whether to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all data types to implement data binding.
+- **EnableDataBinding**: This setting specifies whether to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all data types to implement data binding.
 
--   **ExcludedTypes**:This setting specifies the list of fully-qualified or assembly-qualified types to be excluded from the referenced assemblies. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
+- **ExcludedTypes**:This setting specifies the list of fully-qualified or assembly-qualified types to be excluded from the referenced assemblies. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
 
--   **GenerateInternalTypes**: This setting specifies whether to generate classes that are marked as internal. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
+- **GenerateInternalTypes**: This setting specifies whether to generate classes that are marked as internal. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
 
--   **GenerateSerializableTypes**: This setting specifies whether to generate classes with the <xref:System.SerializableAttribute> attribute. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
+- **GenerateSerializableTypes**: This setting specifies whether to generate classes with the <xref:System.SerializableAttribute> attribute. This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
 
--   **ImportXMLTypes**: This setting specifies whether to configure the data contract serializer to apply the <xref:System.SerializableAttribute> attribute to classes without the <xref:System.Runtime.Serialization.DataContractAttribute> attribute.  This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
+- **ImportXMLTypes**: This setting specifies whether to configure the data contract serializer to apply the <xref:System.SerializableAttribute> attribute to classes without the <xref:System.Runtime.Serialization.DataContractAttribute> attribute.  This setting only applies if **Serializer Mode** is set to **Data Contract Serializer**.
 
--   **SupportFx35TypedDataSets**: This setting specifies whether to provide additional functionality for typed data sets created for .NET Framework 3.5. When  **Serializer Mode** is set to **XML Serializer**, the <xref:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35> extension will be added to the XML schema importer when this value is set to True. When  **Serializer Mode** is set to **Data Contract Serializer**, the type <xref:System.DateTimeOffset> will be excluded from the References when this value is set to False, so that a <xref:System.DateTimeOffset> is always generated for older framework versions.
+- **SupportFx35TypedDataSets**: This setting specifies whether to provide additional functionality for typed data sets created for .NET Framework 3.5. When  **Serializer Mode** is set to **XML Serializer**, the <xref:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35> extension will be added to the XML schema importer when this value is set to True. When  **Serializer Mode** is set to **Data Contract Serializer**, the type <xref:System.DateTimeOffset> will be excluded from the References when this value is set to False, so that a <xref:System.DateTimeOffset> is always generated for older framework versions.
 
--   **InputXsdFiles**: This setting specifies the list of input files. Each file must contain a valid XML schema.
+- **InputXsdFiles**: This setting specifies the list of input files. Each file must contain a valid XML schema.
 
--   **Language**: This setting specifies the language of the generated contract code. The setting must be recognizable by <xref:System.CodeDom.Compiler.CodeDomProvider>.
+- **Language**: This setting specifies the language of the generated contract code. The setting must be recognizable by <xref:System.CodeDom.Compiler.CodeDomProvider>.
 
--   **NamespaceMappings**: This setting specifies the mappings from the XSD Target Namespaces to CLR namespaces. Each mapping should use the following format:
+- **NamespaceMappings**: This setting specifies the mappings from the XSD Target Namespaces to CLR namespaces. Each mapping should use the following format:
 
     ```xml
     "<Schema Namespace>, <CLR Namespace>"
@@ -99,7 +99,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
     "*, <CLR Namespace>"
     ```
 
--   **OutputDirectory**: This setting specifies the directory where the code files will be generated.
+- **OutputDirectory**: This setting specifies the directory where the code files will be generated.
 
  The settings will be used to generate service contract types from the service contract files when the project is built.
 

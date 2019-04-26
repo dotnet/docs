@@ -13,11 +13,11 @@ Transport quotas are a policy mechanism for deciding when a connection is consum
 ## Types of Transport Quotas  
  WCF transports have three types of quotas:  
   
--   *Timeouts* mitigate denial of service attacks that rely on tying up resources for an extended period of time.  
+- *Timeouts* mitigate denial of service attacks that rely on tying up resources for an extended period of time.  
   
--   *Memory allocation limits* prevent a single connection from exhausting system memory and denying service to other connections.  
+- *Memory allocation limits* prevent a single connection from exhausting system memory and denying service to other connections.  
   
--   *Collection size limits* bound the consumption of resources that indirectly allocate memory or are in limited supply.  
+- *Collection size limits* bound the consumption of resources that indirectly allocate memory or are in limited supply.  
   
 ## Transport Quota Descriptions  
  This section describes the transport quotas available for the standard WCF transports: HTTP(S), TCP/IP, and named pipes. Custom transports can expose their own configurable quotas not included in this list. Consult the documentation for a custom transport to find out about its quotas.  

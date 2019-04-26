@@ -38,17 +38,17 @@ This topic provides a brief overview of the concept of federated security. It al
   
  Typically, organization B requires that a user from organization A provide some valid form of authentication before accessing the service. In addition, the organization may also require that the user be authorized to access the specific resource in question. One way to address this problem and enable users in organization A to access the resource in organization B is as follows:  
   
--   Users from organization A register their credentials (a user name and password) with organization B.  
+- Users from organization A register their credentials (a user name and password) with organization B.  
   
--   During the resource access, users from organization A present their credentials to organization B and are authenticated before accessing the resource.  
+- During the resource access, users from organization A present their credentials to organization B and are authenticated before accessing the resource.  
   
  This approach has three significant drawbacks:  
   
--   Organization B has to manage the credentials for users from organization A in addition to managing the credentials of its local users.  
+- Organization B has to manage the credentials for users from organization A in addition to managing the credentials of its local users.  
   
--   Users in organization A need to maintain an additional set of credentials (that is, remember an additional user name and password) apart from the credentials they normally use to gain access to resources within organization A. This usually encourages the practice of using the same user name and password at multiple service sites, which is a weak security measure.  
+- Users in organization A need to maintain an additional set of credentials (that is, remember an additional user name and password) apart from the credentials they normally use to gain access to resources within organization A. This usually encourages the practice of using the same user name and password at multiple service sites, which is a weak security measure.  
   
--   The architecture does not scale as more organizations perceive the resource at organization B as being of some value.  
+- The architecture does not scale as more organizations perceive the resource at organization B as being of some value.  
   
  An alternative approach, which addresses the previously mentioned drawbacks, is to employ federated security. In this approach, organizations A and B establish a trust relationship and employ Security Token Service (STS) to enable brokering of the established trust.  
   
@@ -70,13 +70,13 @@ This topic provides a brief overview of the concept of federated security. It al
 ### Phase 1: Design Phase  
  During the design phase, the client uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to read the policy the service endpoint exposes and to collect the service's authentication and authorization requirements. The appropriate proxies are constructed to create the following federated security communication pattern at the client:  
   
--   Obtain a security token from the STS in the client trust realm.  
+- Obtain a security token from the STS in the client trust realm.  
   
--   Present the token to the STS in the service trust realm.  
+- Present the token to the STS in the service trust realm.  
   
--   Obtain a security token from the STS in the service trust realm.  
+- Obtain a security token from the STS in the service trust realm.  
   
--   Present the token to the service to access the service.  
+- Present the token to the service to access the service.  
   
 ### Phase 2: Run-Time Phase  
  During the run-time phase, the client instantiates an object of the WCF client class and makes a call using the WCF client. The underlying framework of WCF handles the previously mentioned steps in the federated security communication pattern and enables the client to seamlessly consume the service.  

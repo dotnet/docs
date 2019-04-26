@@ -10,58 +10,58 @@ ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
 # Visual Basic Coding Conventions
 Microsoft develops samples and documentation that follow the guidelines in this topic. If you follow the same coding conventions, you may gain the following benefits:  
   
--   Your code will have a consistent look, so that readers can better focus on content, not layout.  
+- Your code will have a consistent look, so that readers can better focus on content, not layout.  
   
--   Readers understand your code more quickly because they can make assumptions based on previous experience.  
+- Readers understand your code more quickly because they can make assumptions based on previous experience.  
   
--   You can copy, change, and maintain the code more easily.  
+- You can copy, change, and maintain the code more easily.  
   
--   You help ensure that your code demonstrates "best practices" for Visual Basic.  
+- You help ensure that your code demonstrates "best practices" for Visual Basic.  
   
 ## Naming Conventions  
   
--   For information about naming guidelines, see [Naming Guidelines](../../../standard/design-guidelines/naming-guidelines.md) topic.  
+- For information about naming guidelines, see [Naming Guidelines](../../../standard/design-guidelines/naming-guidelines.md) topic.  
   
--   Do not use "My" or "my" as part of a variable name. This practice creates confusion with the `My` objects.  
+- Do not use "My" or "my" as part of a variable name. This practice creates confusion with the `My` objects.  
   
--   You do not have to change the names of objects in auto-generated code to make them fit the guidelines.  
+- You do not have to change the names of objects in auto-generated code to make them fit the guidelines.  
   
 ## Layout Conventions  
   
--   Insert tabs as spaces, and use smart indenting with four-space indents.  
+- Insert tabs as spaces, and use smart indenting with four-space indents.  
   
--   Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
+- Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
   
--   Use only one statement per line. Don't use the Visual Basic line separator character (:).  
+- Use only one statement per line. Don't use the Visual Basic line separator character (:).  
   
--   Avoid using the explicit line continuation character "_" in favor of implicit line continuation wherever the language allows it.  
+- Avoid using the explicit line continuation character "_" in favor of implicit line continuation wherever the language allows it.  
   
--   Use only one declaration per line.  
+- Use only one declaration per line.  
   
--   If **Pretty listing (reformatting) of code** doesn't format continuation lines automatically, manually indent continuation lines one tab stop. However, always left-align items in a list.  
+- If **Pretty listing (reformatting) of code** doesn't format continuation lines automatically, manually indent continuation lines one tab stop. However, always left-align items in a list.  
   
     ```  
     a As Integer,  
     b As Integer  
     ```  
   
--   Add at least one blank line between method and property definitions.  
+- Add at least one blank line between method and property definitions.  
   
 ## Commenting Conventions  
   
--   Put comments on a separate line instead of at the end of a line of code.  
+- Put comments on a separate line instead of at the end of a line of code.  
   
--   Start comment text with an uppercase letter, and end comment text with a period.  
+- Start comment text with an uppercase letter, and end comment text with a period.  
   
--   Insert one space between the comment delimiter (') and the comment text.  
+- Insert one space between the comment delimiter (') and the comment text.  
   
      [!code-vb[VbVbalrGuidelines#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#2)]  
   
--   Do not surround comments with formatted blocks of asterisks.  
+- Do not surround comments with formatted blocks of asterisks.  
   
 ## Program Structure  
   
--   When you use the `Main` method, use the default construct for new console applications, and use `My` for command-line arguments.  
+- When you use the `Main` method, use the default construct for new console applications, and use `My` for command-line arguments.  
   
      [!code-vb[VbVbalrGuidelines#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#3)]  
   
@@ -69,11 +69,11 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### String Data Type  
   
--   To concatenate strings, use an ampersand (&).  
+- To concatenate strings, use an ampersand (&).  
   
      [!code-vb[VbVbalrGuidelines#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#4)]  
   
--   To append strings in loops, use the <xref:System.Text.StringBuilder> object.  
+- To append strings in loops, use the <xref:System.Text.StringBuilder> object.  
   
      [!code-vb[VbVbalrGuidelines#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#5)]  
   
@@ -84,11 +84,11 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### Unsigned Data Type  
   
--   Use `Integer` rather than unsigned types, except where they are necessary.  
+- Use `Integer` rather than unsigned types, except where they are necessary.  
   
 ### Arrays  
   
--   Use the short syntax when you initialize arrays on the declaration line. For example, use the following syntax.  
+- Use the short syntax when you initialize arrays on the declaration line. For example, use the following syntax.  
   
      [!code-vb[VbVbalrGuidelines#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#8)]  
   
@@ -96,7 +96,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
      [!code-vb[VbVbalrGuidelines#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#9)]  
   
--   Put the array designator on the type, not on the variable. For example, use the following syntax:  
+- Put the array designator on the type, not on the variable. For example, use the following syntax:  
   
      [!code-vb[VbVbalrGuidelines#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#11)]  
   
@@ -104,7 +104,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
      [!code-vb[VbVbalrGuidelines#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#10)]  
   
--   Use the { } syntax when you declare and initialize arrays of basic data types. For example, use the following syntax:  
+- Use the { } syntax when you declare and initialize arrays of basic data types. For example, use the following syntax:  
   
      [!code-vb[VbVbalrGuidelines#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#12)]  
   
@@ -125,7 +125,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### New Keyword  
   
--   Use short instantiation. For example, use the following syntax:  
+- Use short instantiation. For example, use the following syntax:  
   
      [!code-vb[VbVbalrGuidelines#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#21)]  
   
@@ -133,25 +133,25 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
      [!code-vb[VbVbalrGuidelines#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#22)]  
   
--   Use object initializers for new objects instead of the parameterless constructor:  
+- Use object initializers for new objects instead of the parameterless constructor:  
   
      [!code-vb[VbVbalrGuidelines#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#23)]  
   
 ### Event Handling  
   
--   Use `Handles` rather than `AddHandler`:  
+- Use `Handles` rather than `AddHandler`:  
   
      [!code-vb[VbVbalrGuidelines#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#24)]  
   
--   Use `AddressOf`, and do not instantiate the delegate explicitly:  
+- Use `AddressOf`, and do not instantiate the delegate explicitly:  
   
      [!code-vb[VbVbalrGuidelines#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#25)]  
   
--   When you define an event, use the short syntax, and let the compiler define the delegate:  
+- When you define an event, use the short syntax, and let the compiler define the delegate:  
   
      [!code-vb[VbVbalrGuidelines#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#26)]  
   
--   Do not verify whether an event is `Nothing` (null) before you call the `RaiseEvent` method. `RaiseEvent` checks for `Nothing` before it raises the event.  
+- Do not verify whether an event is `Nothing` (null) before you call the `RaiseEvent` method. `RaiseEvent` checks for `Nothing` before it raises the event.  
   
 ### Using Shared Members  
  Call `Shared` members by using the class name, not from an instance variable.  
@@ -159,43 +159,43 @@ Microsoft develops samples and documentation that follow the guidelines in this 
 ### Use XML Literals  
  XML literals simplify the most common tasks that you encounter when you work with XML (for example, load, query, and transform). When you develop with XML, follow these guidelines:  
   
--   Use XML literals to create XML documents and fragments instead of calling XML APIs directly.  
+- Use XML literals to create XML documents and fragments instead of calling XML APIs directly.  
   
--   Import XML namespaces at the file or project level to take advantage of the performance optimizations for XML literals.  
+- Import XML namespaces at the file or project level to take advantage of the performance optimizations for XML literals.  
   
--   Use the XML axis properties to access elements and attributes in an XML document.  
+- Use the XML axis properties to access elements and attributes in an XML document.  
   
--   Use embedded expressions to include values and to create XML from existing values instead of using API calls such as the `Add` method:  
+- Use embedded expressions to include values and to create XML from existing values instead of using API calls such as the `Add` method:  
   
      [!code-vb[VbVbalrGuidelines#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#27)]  
   
 ### LINQ Queries  
   
--   Use meaningful names for query variables:  
+- Use meaningful names for query variables:  
   
      [!code-vb[VbVbalrGuidelines#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#28)]  
   
--   Provide names for elements in a query to make sure that property names of anonymous types are correctly capitalized using Pascal casing:  
+- Provide names for elements in a query to make sure that property names of anonymous types are correctly capitalized using Pascal casing:  
   
      [!code-vb[VbVbalrGuidelines#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#29)]  
   
--   Rename properties when the property names in the result would be ambiguous. For example, if your query returns a customer name and an order ID, rename them instead of leaving them as `Name` and `ID` in the result:  
+- Rename properties when the property names in the result would be ambiguous. For example, if your query returns a customer name and an order ID, rename them instead of leaving them as `Name` and `ID` in the result:  
   
      [!code-vb[VbVbalrGuidelines#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#30)]  
   
--   Use type inference in the declaration of query variables and range variables:  
+- Use type inference in the declaration of query variables and range variables:  
   
      [!code-vb[VbVbalrGuidelines#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#31)]  
   
--   Align query clauses under the `From` statement:  
+- Align query clauses under the `From` statement:  
   
      [!code-vb[VbVbalrGuidelines#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#32)]  
   
--   Use `Where` clauses before other query clauses so that later query clauses operate on the filtered set of data:  
+- Use `Where` clauses before other query clauses so that later query clauses operate on the filtered set of data:  
   
      [!code-vb[VbVbalrGuidelines#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#33)]  
   
--   Use the `Join` clause to explicitly define a join operation instead of using the `Where` clause to implicitly define a join operation:  
+- Use the `Join` clause to explicitly define a join operation instead of using the `Where` clause to implicitly define a join operation:  
   
      [!code-vb[VbVbalrGuidelines#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#34)]  
   

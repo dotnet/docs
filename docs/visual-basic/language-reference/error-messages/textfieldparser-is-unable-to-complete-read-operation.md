@@ -10,7 +10,7 @@ The operation cannot be completed because the maximum buffer size (10,000,000 by
   
 ## To correct this error  
   
--   Make sure there are no malformed fields in the file.  
+- Make sure there are no malformed fields in the file.  
   
 ## See also
 

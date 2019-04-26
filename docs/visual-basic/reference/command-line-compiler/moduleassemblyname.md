@@ -27,9 +27,9 @@ Specifies the name of the assembly that this module will be a part of.
   
  The `-moduleassemblyname` option is needed only when the following are true:  
   
--   A data type in the module needs access to a `Friend` type in a referenced assembly.  
+- A data type in the module needs access to a `Friend` type in a referenced assembly.  
   
--   The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
+- The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
   
  For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
   

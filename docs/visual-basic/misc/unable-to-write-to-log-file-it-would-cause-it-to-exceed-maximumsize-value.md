@@ -8,11 +8,11 @@ ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
 # Unable to write to log file because writing to it would cause it to exceed MaximumSize value
 The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not write to the log file because:  
   
--   The log file size (in bytes) is greater than the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property  
+- The log file size (in bytes) is greater than the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property  
   
      —and—  
   
--   The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property was <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.ThrowException>.  
+- The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property was <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.ThrowException>.  
   
 ## To correct this error  
   

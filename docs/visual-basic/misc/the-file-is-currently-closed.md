@@ -8,7 +8,7 @@ An attempt has been made to perform an operation that can only be performed on a
   
 ## To correct this error  
   
--   Open the file and attempt the operation again.  
+- Open the file and attempt the operation again.  
   
 ## See also
 

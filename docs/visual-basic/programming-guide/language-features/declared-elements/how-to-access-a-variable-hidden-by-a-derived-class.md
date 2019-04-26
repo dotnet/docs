@@ -17,7 +17,7 @@ When code in a derived class accesses a variable, the compiler normally resolves
   
 ### To access a base class variable hidden by a derived class  
   
--   In an expression or assignment statement, precede the variable name with the `MyBase` keyword and a period (`.`).  
+- In an expression or assignment statement, precede the variable name with the `MyBase` keyword and a period (`.`).  
   
      The compiler resolves the reference to the base class version of the variable.  
   

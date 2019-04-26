@@ -19,13 +19,13 @@ Specifies that a procedure argument can be omitted when the procedure is called.
   
  The `Optional` modifier can be used in these contexts:  
   
--   [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
   
--   [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
   
--   [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
--   [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 > [!NOTE]
 >  When calling a procedure with or without optional parameters, you can pass arguments by position or by name. For more information, see [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md).  

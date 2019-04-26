@@ -44,11 +44,11 @@ You can define a class from which you can create objects that provide identical 
   
 4. If your code performs operations on a type parameter other than simple assignment, follow that type parameter with an `As` clause to add one or more *constraints*. A constraint guarantees that the type supplied for that type parameter satisfies a requirement such as the following:  
   
-    -   Supports an operation, such as `>`, that your code performs  
+    - Supports an operation, such as `>`, that your code performs  
   
-    -   Supports a member, such as a method, that your code accesses  
+    - Supports a member, such as a method, that your code accesses  
   
-    -   Exposes a parameterless constructor  
+    - Exposes a parameterless constructor  
   
      If you do not specify any constraints, the only operations and members your code can use are those supported by the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). For more information, see [Type List](../../../../visual-basic/language-reference/statements/type-list.md).  
   

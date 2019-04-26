@@ -17,11 +17,11 @@ A nondeclarative statement, such as an assignment or loop statement, occurs outs
   
 ## To correct this error  
   
--   Move the nondeclarative statement to the body of a procedure.  
+- Move the nondeclarative statement to the body of a procedure.  
   
--   Begin the declaration with an appropriate declaration keyword.  
+- Begin the declaration with an appropriate declaration keyword.  
   
--   Ensure that a declaration keyword is not misspelled.  
+- Ensure that a declaration keyword is not misspelled.  
   
 ## See also
 

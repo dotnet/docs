@@ -8,7 +8,7 @@ When a file is open, an attempt has been made to perform an operation that can o
   
 ## To correct this error  
   
--   Close the file and attempt the operation again.  
+- Close the file and attempt the operation again.  
   
 ## See also
 

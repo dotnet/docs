@@ -32,7 +32,7 @@ You create an enumeration with the `Enum` statement in the declarations section 
   
 ### To declare an enumeration as an explicit type  
   
--   Specify the type of the enum by using the `As` clause, as shown in the following example.  
+- Specify the type of the enum by using the `As` clause, as shown in the following example.  
   
      [!code-vb[VbEnumsTask#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#6)]  
   

@@ -17,7 +17,7 @@ A structure definition does not include any nonshared variables or nonshared non
   
 ## To correct this error  
   
--   Define at least one variable or event that is not `Shared`. If you define only one event, it must be noncustom as well as nonshared.  
+- Define at least one variable or event that is not `Shared`. If you define only one event, it must be noncustom as well as nonshared.  
   
 ## See also
 

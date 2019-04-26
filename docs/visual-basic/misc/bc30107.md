@@ -15,7 +15,7 @@ A type name occurs where an expression is required. An expression must consist o
   
 ## To correct this error  
   
--   Remove the type name and construct the expression using valid elements.  
+- Remove the type name and construct the expression using valid elements.  
   
 ## See also
 

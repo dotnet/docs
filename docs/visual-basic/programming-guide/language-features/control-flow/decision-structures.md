@@ -20,13 +20,13 @@ Visual Basic lets you test conditions and perform different operations depending
 ## If...Then...Else Construction  
  `If...Then...Else` constructions let you test for one or more conditions and run one or more statements depending on each condition. You can test conditions and take actions in the following ways:  
   
--   Run one or more statements if a condition is `True`  
+- Run one or more statements if a condition is `True`  
   
--   Run one or more statements if a condition is `False`  
+- Run one or more statements if a condition is `False`  
   
--   Run some statements if a condition is `True` and others if it is `False`  
+- Run some statements if a condition is `True` and others if it is `False`  
   
--   Test an additional condition if a prior condition is `False`  
+- Test an additional condition if a prior condition is `False`  
   
  The control structure that offers all these possibilities is the [If...Then...Else Statement](../../../../visual-basic/language-reference/statements/if-then-else-statement.md). You can use a single-line version if you have just one test and one statement to run. If you have a more complex set of conditions and actions, you can use the multiple-line version.  
   

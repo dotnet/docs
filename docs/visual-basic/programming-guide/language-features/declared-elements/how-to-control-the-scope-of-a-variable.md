@@ -22,13 +22,13 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
   
 #### To make a variable visible only within a block  
   
--   Place the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) for the variable between the initiating and terminating declaration statements of that block, for example between the `For` and `Next` statements of a `For` loop.  
+- Place the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) for the variable between the initiating and terminating declaration statements of that block, for example between the `For` and `Next` statements of a `For` loop.  
   
      You can refer to the variable only from within the block.  
   
 #### To make a variable visible only within a procedure  
   
--   Place the `Dim` statement for the variable inside the procedure but outside any block (such as a `With`...`End With` block).  
+- Place the `Dim` statement for the variable inside the procedure but outside any block (such as a `With`...`End With` block).  
   
      You can refer to the variable only from within the procedure, including inside any block contained in the procedure.  
   

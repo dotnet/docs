@@ -10,7 +10,7 @@ Your array's dimensions do not match the dimensions you have specified in the `V
   
 ## To correct this error  
   
--   Make the array dimensions in the array `Dim` statement match the dimensions specified by the `VBFixedArray` attribute.  
+- Make the array dimensions in the array `Dim` statement match the dimensions specified by the `VBFixedArray` attribute.  
   
 ## See also
 

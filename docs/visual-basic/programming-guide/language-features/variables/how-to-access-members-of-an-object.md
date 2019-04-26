@@ -14,7 +14,7 @@ When you have an object variable that refers to an object, you often want to wor
   
 #### To access members of an object  
   
--   Use the member-access operator (`.`) between the object variable name and the member name.  
+- Use the member-access operator (`.`) between the object variable name and the member name.  
   
     ```  
     currentText = newForm.Text  

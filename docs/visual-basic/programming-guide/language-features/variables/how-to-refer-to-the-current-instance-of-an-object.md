@@ -16,7 +16,7 @@ The *current instance* of an object is the instance in which the code is current
   
 ### To refer to the current instance  
   
--   Use the `Me` keyword where you would normally use the name of an object variable.  
+- Use the `Me` keyword where you would normally use the name of an object variable.  
   
     ```  
     Me.ForeColor = System.Drawing.Color.Crimson  

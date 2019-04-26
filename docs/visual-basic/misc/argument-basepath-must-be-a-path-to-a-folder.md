@@ -8,7 +8,7 @@ The argument `BasePath` must consist of a path to a folder. You may be parsing a
   
 ## To correct this error  
   
--   Check the value you are supplying for `BasePath` to make sure it is a valid path to a folder.  
+- Check the value you are supplying for `BasePath` to make sure it is a valid path to a folder.  
   
 ## See also
 

@@ -15,9 +15,9 @@ There was a problem creating the file.
   
  Common situations where a file is opened exclusively are:  
   
--   The application is already running and using its files. To solve this problem, make sure that the application is not running.  
+- The application is already running and using its files. To solve this problem, make sure that the application is not running.  
   
--   Another application has opened the file. To solve this problem, make sure that no other application is accessing the files. It is not always obvious which application is accessing your files; in that case, restarting the computer might be the easiest way to terminate the application.  
+- Another application has opened the file. To solve this problem, make sure that no other application is accessing the files. It is not always obvious which application is accessing your files; in that case, restarting the computer might be the easiest way to terminate the application.  
   
  If even one of the project output files is marked as read-only, this exception will be thrown.  
   

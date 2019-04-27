@@ -1,5 +1,5 @@
 ---
-title: Train a regression model to predict a value using ML.NET
+title: Train a regression model to predict a value 
 description: Discover how to train a machine learning regression model to predict a value using ML.NET
 ms.date: 03/05/2019
 ms.custom: mvc,how-to

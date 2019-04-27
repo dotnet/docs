@@ -1,5 +1,5 @@
 ---
-title: Machine learning glossary - ML.NET
+title: Machine learning glossary
 description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
 ms.custom: seodec18
 ms.date: 03/05/2019

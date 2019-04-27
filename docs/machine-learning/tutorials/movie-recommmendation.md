@@ -1,5 +1,5 @@
 ---
-title: Use ML.NET in a movie recommendation scenario
+title: Build a movie recommender
 description: Discover how to use ML.NET in a recommendation scenario to recommend movies to users.
 author: briacht
 ms.author: johalex

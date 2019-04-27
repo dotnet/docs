@@ -1,5 +1,5 @@
 ---
-title: Build an ML.NET custom image classifier with TensorFlow
+title: 'Tutorial: Build an ML.NET custom image classifier with TensorFlow'
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
 ms.date: 04/25/2019
 ms.topic: tutorial

@@ -88,7 +88,7 @@ public void ConfigureServices(IServiceCollection services)
     // Register out-of-the-box framework services.
     services.AddDbContext<CatalogContext>(c =>
     {
-        c.UseSqlServer(Configuration["ConnectionString"]);
+        c.UseSqlServer(Configuration.GetConnectionString("ConnectionString"));
     },
     ServiceLifetime.Scoped
     );

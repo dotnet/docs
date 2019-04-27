@@ -400,12 +400,12 @@
         <Parameter Name="keepAliveInterval" Type="System.TimeSpan" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="isServer">To be added.</param>
-        <param name="subProtocol">To be added.</param>
-        <param name="keepAliveInterval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream for the connection.</param>
+        <param name="isServer"><see langword="true" /> to indicate it's the server-side of the connection; <see langword="false" /> if it's the client-side.</param>
+        <param name="subProtocol">The agreed upon sub-protocol that was used when creating the connection.</param>
+        <param name="keepAliveInterval">The keep-alive interval to use, or <see cref="F:System.Threading.Timeout.InfiniteTimeSpan" /> to disable keep-alives.</param>
+        <summary>Creates a new <see cref="T:System.Net.WebSockets.WebSocket" /> object that operates on the specified stream, which represents a web socket connection.</summary>
+        <returns>The new web socket.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

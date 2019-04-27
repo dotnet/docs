@@ -91,7 +91,7 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 
 ## C# language specification
 
-For more information, see the [Interpolated strings](~/_csharplang/spec/expressions.md##interpolated-strings) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the [Interpolated strings](~/_csharplang/spec/expressions.md#interpolated-strings) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

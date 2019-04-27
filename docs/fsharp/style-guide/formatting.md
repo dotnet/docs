@@ -82,6 +82,46 @@ type MyFun = int -> int -> string
 type MyFunBad = int->int->string
 ```
 
+### Surround function arguments with white space
+
+When defining a function, use white space around each argument.
+
+```fsharp
+// OK
+let myFun (a: decimal) b c = a + b + c
+
+// Bad
+let myFunBad (a:decimal)(b)c = a + b + c
+```
+
+### type annotation
+
+#### Right-pad function argument type annotation with white space
+
+When defining arguments with type annotation, use white space after the `:` symbol:
+
+```fsharp
+// OK
+let complexFunction (a: int) (b: int) c = a + b + c
+
+// Bad
+let complexFunctionBad (a :int) (b :int) (c:int) = a + b + c
+```
+
+#### Surround definition type annotations with white space
+
+In a let binding with type annotation, use white space after the `:` symbol:
+
+```fsharp
+// OK
+let expensiveToCompute : int = 0
+let myFun (a: decimal) b c : decimal = a + b + c
+// Bad
+let expensiveToComputeBad1:int = 1
+let expensiveToComputeBad2 :int = 2
+let myFunBad (a: decimal) b c:decimal = a + b + c
+```
+
 ## Formatting blank lines
 
 * Separate top-level function and class definitions with two blank lines.

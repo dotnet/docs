@@ -1,5 +1,5 @@
 ---
-title: Predict prices using a regression learner with ML.NET
+title: Predict prices using a regression learner 
 description: Predict prices using a regression learner with ML.NET.
 author: jralexander
 ms.author: johalex

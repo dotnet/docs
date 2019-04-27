@@ -43,21 +43,17 @@ comfortable with.
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command `dotnet new console` at the command prompt. This
-creates the starter files for a basic "Hello World" application.
-
-Before you start making modifications, let’s go through the steps to run
-the simple Hello World application. After creating the application, type
-`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
-package restore process. NuGet is a .NET package manager. This command
-downloads any of the missing dependencies for your project. As this is a
+creates the starter files for a basic "Hello World" application. As this is a
 new project, none of the dependencies are in place, so the first run will
-download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
-the versions of any of your dependencies.
+download the .NET Core framework, install a development certificate and run
+the NuGet package manager to restore missing dependencies.
 
-After restoring packages, you run `dotnet build`. This executes the build
-engine and creates your application. Finally, you execute `dotnet run` to
-run your application.
+Before you start making modifications, type
+`dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
+run your application. If there are missing dependencies this command will also
+execute `dotnet restore` ([see note](#dotnet-restore-note)) and `dotnet build`.
+After your initial setup, you will only need to run `dotnet restore` or
+`dotnet build` ([see note](#dotnet-restore-note)) when it makes sense for your project.
 
 ## Adding New Dependencies
 
@@ -87,7 +83,7 @@ that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
 Core Application framework.
 
-After you've made these changes, you should run `dotnet restore` ([see note](#dotnet-restore-note)) again so
+After you've made these changes, execute `dotnet restore` ([see note](#dotnet-restore-note)) so
 that the package is installed on your system.
 
 ## Making Web Requests

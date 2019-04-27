@@ -28,24 +28,17 @@
   - name: Load data
     href: how-to-guides/load-data-ml-net.md
   - name: Prepare data
-    href: how-to-guides/index.md
-    items:
-    - name: Apply categorical feature engineering
-      href: how-to-guides/train-model-categorical-ml-net.md
-    - name: Apply textual feature engineering
-      href: how-to-guides/train-model-textual-ml-net.md
-    - name: Preprocess data with normalizers
-      href: how-to-guides/normalizers-preprocess-data-ml-net.md
+    href: how-to-guides/prepare-data-ml-net.md
   - name: Train, evaluate, and explain the model
     items:
-    - name: Train model using cross-validation
-      href: how-to-guides/train-cross-validation-ml-net.md
-    - name: Inspect intermediate pipeline data values
-      href: how-to-guides/inspect-intermediate-data-ml-net.md
-    - name: Train regression model
-      href: how-to-guides/train-regression-model-ml-net.md
     - name: Determine model feature importance with PFI
       href: how-to-guides/determine-global-feature-importance-in-model.md
+    - name: Inspect intermediate pipeline data values
+      href: how-to-guides/inspect-intermediate-data-ml-net.md      
+    - name: Train a model
+      href: how-to-guides/train-machine-learning-model-ml-net.md
+    - name: Train model using cross-validation
+      href: how-to-guides/train-cross-validation-ml-net.md
   - name: Use the trained model
     items:
     - name: One prediction at a time with PredictionEngine
@@ -64,6 +57,8 @@
   items:
   - name: API Reference
     href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+  - name: Preview API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
 - name: Resources
   href: resources/index.md
   items:

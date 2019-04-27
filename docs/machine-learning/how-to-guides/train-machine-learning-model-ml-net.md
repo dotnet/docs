@@ -1,5 +1,5 @@
 ---
-title: "How-To: Train and evaluate a machine learning model in ML.NET" 
+title: 'How-To: Train and evaluate a machine learning model' 
 description: Learn how to train and evaluate machine learning models in ML.NET
 ms.date: 04/17/2019
 author: luisquintanilla

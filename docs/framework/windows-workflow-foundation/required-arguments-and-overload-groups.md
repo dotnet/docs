@@ -138,19 +138,19 @@ Public class DbUpdate: AsyncCodeActivity
   
  When defining an overload group:  
   
--   An overload group cannot be a subset or an equivalent set of another overload group.  
+- An overload group cannot be a subset or an equivalent set of another overload group.  
   
     > [!NOTE]
     >  There is one exception to this rule. If an overload group is a subset of another overload group, and the subset contains only arguments where `RequiredArgument` is `false`, then the overload group is valid.  
   
--   Overload groups can overlap but it is an error if the intersection of the groups contains all the required arguments of one or both of the overload groups. In the previous example the `G2` and `G3` overload groups overlapped, but because the intersection did not contain all the arguments of one or both of the groups this was valid.  
+- Overload groups can overlap but it is an error if the intersection of the groups contains all the required arguments of one or both of the overload groups. In the previous example the `G2` and `G3` overload groups overlapped, but because the intersection did not contain all the arguments of one or both of the groups this was valid.  
   
  When binding arguments in an overload group:  
   
--   An overload group is considered bound if all the `RequiredArgument` arguments in the group are bound.  
+- An overload group is considered bound if all the `RequiredArgument` arguments in the group are bound.  
   
--   If a group has zero `RequiredArgument` arguments and at least one argument bound, then the group is considered bound.  
+- If a group has zero `RequiredArgument` arguments and at least one argument bound, then the group is considered bound.  
   
--   It is a validation error if no overload groups are bound unless one overload group has no `RequiredArgument` arguments in it.  
+- It is a validation error if no overload groups are bound unless one overload group has no `RequiredArgument` arguments in it.  
   
--   It is an error to have more than one overload group bound, that is, all required arguments in one overload group are bound and any argument in another overload group is also bound.
+- It is an error to have more than one overload group bound, that is, all required arguments in one overload group are bound and any argument in another overload group is also bound.

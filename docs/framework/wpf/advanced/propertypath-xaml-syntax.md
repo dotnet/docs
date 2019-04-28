@@ -63,11 +63,11 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
   
  The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:  
   
--   The path is specified in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.  
+- The path is specified in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.  
   
--   The property is an attached property.  
+- The property is an attached property.  
   
--   You are binding to a static property.  
+- You are binding to a static property.  
   
  For use as storyboard target, the property specified as `propertyName` must be a <xref:System.Windows.DependencyProperty>.  
   
@@ -112,19 +112,19 @@ or
 ### Escapes for Property Path Strings  
  For certain business objects, you might encounter a case where the property path string requires an escape sequence in order to parse correctly. The need to escape should be rare, because many of these characters have similar naming-interaction issues in languages that would typically be used to define the business object.  
   
--   Inside indexers ([ ]), the caret character (^) escapes the next character.  
+- Inside indexers ([ ]), the caret character (^) escapes the next character.  
   
--   You must escape (using XML entities) certain characters that are special to the XML language definition. Use `&` to escape the character "&". Use `>` to escape the end tag ">".  
+- You must escape (using XML entities) certain characters that are special to the XML language definition. Use `&` to escape the character "&". Use `>` to escape the end tag ">".  
   
--   You must escape (using backslash `\`) characters that are special to the WPF XAML parser behavior for processing a markup extension.  
+- You must escape (using backslash `\`) characters that are special to the WPF XAML parser behavior for processing a markup extension.  
   
-    -   Backslash (`\`) is the escape character itself.  
+    - Backslash (`\`) is the escape character itself.  
   
-    -   The equal sign (`=`) separates property name from property value.  
+    - The equal sign (`=`) separates property name from property value.  
   
-    -   Comma (`,`) separates properties.  
+    - Comma (`,`) separates properties.  
   
-    -   The right curly brace (`}`) is the end of a markup extension.  
+    - The right curly brace (`}`) is the end of a markup extension.  
   
 > [!NOTE]
 >  Technically, these escapes work for a storyboard property path also, but you are usually traversing object models for existing WPF objects, and escaping should be unnecessary.  

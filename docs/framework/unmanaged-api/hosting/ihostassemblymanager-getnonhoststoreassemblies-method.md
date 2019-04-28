@@ -48,13 +48,13 @@ HRESULT GetNonHostStoreAssemblies (
 ## Remarks  
  The CLR resolves references using the following set of guidelines:  
   
--   First, it consults the list of assembly references returned by `GetNonHostStoreAssemblies`.  
+- First, it consults the list of assembly references returned by `GetNonHostStoreAssemblies`.  
   
--   If the assembly appears in the list, the CLR binds to it normally.  
+- If the assembly appears in the list, the CLR binds to it normally.  
   
--   If the assembly does not appear in the list and the host has provided an implementation of [IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md), the CLR calls [IHostAssemblyStore::ProvideAssembly](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-provideassembly-method.md) to allow the host to supply the assembly to bind to.  
+- If the assembly does not appear in the list and the host has provided an implementation of [IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md), the CLR calls [IHostAssemblyStore::ProvideAssembly](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-provideassembly-method.md) to allow the host to supply the assembly to bind to.  
   
--   Otherwise, the CLR fails to bind to the assembly.  
+- Otherwise, the CLR fails to bind to the assembly.  
   
  If the host sets `ppReferenceList` to null, the CLR first probes the global assembly cache, calls `ProvideAssembly`, and then probes the application base to resolve an assembly reference.  
   

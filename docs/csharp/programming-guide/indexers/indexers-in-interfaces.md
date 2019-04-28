@@ -10,9 +10,9 @@ ms.assetid: e16b54bd-4a83-4f52-bd75-65819fca79e8
 # Indexers in Interfaces (C# Programming Guide)
 Indexers can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). Accessors of interface indexers differ from the accessors of [class](../../../csharp/language-reference/keywords/class.md) indexers in the following ways:  
   
--   Interface accessors do not use modifiers.  
+- Interface accessors do not use modifiers.  
   
--   An interface accessor does not have a body.  
+- An interface accessor does not have a body.  
   
  Thus, the purpose of the accessor is to indicate whether the indexer is read-write, read-only, or write-only.  
   

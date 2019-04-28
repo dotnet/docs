@@ -1,5 +1,5 @@
 ---
-title: Use ML.NET in a GitHub issue multiclass classification scenario
+title: Classify GitHub issues - multiclass classification 
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
 ms.date: 03/12/2019
 ms.topic: tutorial
@@ -186,7 +186,7 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext` 
 
 Next, initialize the `_trainingDataView` <xref:Microsoft.Data.DataView.IDataView> global variable and load the data with the `_trainDataPath` parameter.
 
- As the input and output of [`Transforms`](../basic-concepts-model-training-in-mldotnet.md#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
+ As the input and output of [`Transforms`](../resources/glossary.md#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
 In ML.NET, data is similar to a `SQL view`. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with issue titles, descriptions, and corresponding area GitHub label. The `DataView` is used to create and train the model.
 

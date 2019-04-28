@@ -70,7 +70,7 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 #### To call the LongTask method  
   
--   Add the following code to the `Button1_Click` event handler:  
+- Add the following code to the `Button1_Click` event handler:  
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#8)]  
   
@@ -99,7 +99,7 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 #### To handle events for a different widget  
   
--   Add the following line of code to the `Button1_Click` procedure, immediately preceding the line that reads `mWidget.LongTask(12.2, 0.33)`:  
+- Add the following line of code to the `Button1_Click` procedure, immediately preceding the line that reads `mWidget.LongTask(12.2, 0.33)`:  
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#9)]  
   

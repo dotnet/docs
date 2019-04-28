@@ -12,11 +12,11 @@ The following example shows how to define [abstract](../../../csharp/language-re
   
  This sample consists of three files, each of which is compiled individually and its resulting assembly is referenced by the next compilation:  
   
--   abstractshape.cs: the `Shape` class that contains an abstract `Area` property.  
+- abstractshape.cs: the `Shape` class that contains an abstract `Area` property.  
   
--   shapes.cs: The subclasses of the `Shape` class.  
+- shapes.cs: The subclasses of the `Shape` class.  
   
--   shapetest.cs: A test program to display the areas of some `Shape`-derived objects.  
+- shapetest.cs: A test program to display the areas of some `Shape`-derived objects.  
   
  To compile the example, use the following command:  
   
@@ -29,13 +29,13 @@ The following example shows how to define [abstract](../../../csharp/language-re
   
  [!code-csharp[csProgGuideInheritance#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#1)]  
   
--   Modifiers on the property are placed on the property declaration itself. For example:  
+- Modifiers on the property are placed on the property declaration itself. For example:  
   
     ```csharp  
     public abstract double Area  
     ```  
   
--   When declaring an abstract property (such as `Area` in this example), you simply indicate what property accessors are available, but do not implement them. In this example, only a [get](../../../csharp/language-reference/keywords/get.md) accessor is available, so the property is read-only.  
+- When declaring an abstract property (such as `Area` in this example), you simply indicate what property accessors are available, but do not implement them. In this example, only a [get](../../../csharp/language-reference/keywords/get.md) accessor is available, so the property is read-only.  
   
 ## Example  
  The following code shows three subclasses of `Shape` and how they override the `Area` property to provide their own implementation.  

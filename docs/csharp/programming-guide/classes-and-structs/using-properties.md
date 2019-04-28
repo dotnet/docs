@@ -79,11 +79,11 @@ Properties combine aspects of both fields and methods. To the user of an object,
   
  The following are important points in the previous example:  
   
--   The property `Name` in the derived class hides the property `Name` in the base class. In such a case, the `new` modifier is used in the declaration of the property in the derived class:  
+- The property `Name` in the derived class hides the property `Name` in the base class. In such a case, the `new` modifier is used in the declaration of the property in the derived class:  
   
      [!code-csharp[csProgGuideProperties#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#4)]  
   
--   The cast `(Employee)` is used to access the hidden property in the base class:  
+- The cast `(Employee)` is used to access the hidden property in the base class:  
   
      [!code-csharp[csProgGuideProperties#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#5)]  
   

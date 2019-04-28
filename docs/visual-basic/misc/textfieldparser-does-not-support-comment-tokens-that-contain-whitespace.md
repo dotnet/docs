@@ -10,7 +10,7 @@ A comment token that contains white space has been supplied. The `TextFieldParse
   
 ## To correct this error  
   
--   Supply a correct comment token.  
+- Supply a correct comment token.  
   
 ## See also
 

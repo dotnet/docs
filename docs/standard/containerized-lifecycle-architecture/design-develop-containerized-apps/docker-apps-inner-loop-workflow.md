@@ -15,11 +15,11 @@ Before triggering the outer-loop workflow spanning the entire DevOps cycle, it a
 
 The container or instance of a Docker image will contain these components:
 
--   An operating system selection (for example, a Linux distribution or Windows)
+- An operating system selection (for example, a Linux distribution or Windows)
 
 - Files added by the developer (for example, app binaries)
 
--   Configuration (for example, environment settings and dependencies)
+- Configuration (for example, environment settings and dependencies)
 
 - Instructions for what processes to run by Docker
 
@@ -109,7 +109,7 @@ The following is a sample DockerFile for a .NET Core container:
 
 ```Dockerfile
 # Base Docker image to use  
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
   
 # Set the Working Directory and files to be copied to the image  
 ARG source  
@@ -123,7 +123,7 @@ EXPOSE 80
 ENTRYPOINT ["dotnet", "MyCustomMicroservice.dll"]
 ```
 
-In this case, the image is based on version 2.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows), as per the line `FROM mcr.microsoft.com/dotnet/core/aspnet:2.1`. (For more information about this topic, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) page and the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page).
+In this case, the image is based on version 2.2 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows), as per the line `FROM mcr.microsoft.com/dotnet/core/aspnet:2.2`. (For more information about this topic, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) page and the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page).
 
 In the DockerFile, you can also instruct Docker to listen to the TCP port that you'll use at runtime (such as port 80).
 

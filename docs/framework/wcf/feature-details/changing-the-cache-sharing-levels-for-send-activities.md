@@ -14,11 +14,11 @@ The <xref:System.ServiceModel.Activities.SendMessageChannelCache> extension enab
   
  The following are the different cache sharing levels available for <xref:System.ServiceModel.Activities.Send> activities in a workflow and their recommended use:  
   
--   **Host Level**: In the host sharing level, the cache is available only to the workflow instances hosted in the workflow service host. A cache can also be shared between workflow service hosts in a process-wide cache.  
+- **Host Level**: In the host sharing level, the cache is available only to the workflow instances hosted in the workflow service host. A cache can also be shared between workflow service hosts in a process-wide cache.  
   
--   **Instance Level**: In the instance sharing level, the cache is available to a particular workflow instance throughout its lifetime but the cache is not available to other workflow instances.  
+- **Instance Level**: In the instance sharing level, the cache is available to a particular workflow instance throughout its lifetime but the cache is not available to other workflow instances.  
   
--   **No Cache**: The cache is turned off by default if you have a workflow that uses endpoints defined in configuration. It is also recommended to keep the cache turned off in this case because turning it on could be unsecure. For example, if a different identity (different credentials or using impersonation) is required for each send.  
+- **No Cache**: The cache is turned off by default if you have a workflow that uses endpoints defined in configuration. It is also recommended to keep the cache turned off in this case because turning it on could be unsecure. For example, if a different identity (different credentials or using impersonation) is required for each send.  
   
 ## Changing the Cache Sharing Level for a Client Workflow  
  To set the cache sharing in a client workflow, add an instance of the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class as an extension to the desired set of workflow instances. This results in sharing the cache across all the workflow instances. The following code examples show how to perform these steps.  

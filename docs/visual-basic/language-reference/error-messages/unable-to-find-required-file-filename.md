@@ -15,7 +15,7 @@ A file that is required by Visual Studio is missing or damaged.
   
 ## To correct this error  
   
--   Reinstall Visual Studio.  
+- Reinstall Visual Studio.  
   
 ## See also
 

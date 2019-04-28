@@ -67,9 +67,9 @@ using System.Linq;
   
  If you do implement extension methods for a given type, remember the following points:  
   
--   An extension method will never be called if it has the same signature as a method defined in the type.  
+- An extension method will never be called if it has the same signature as a method defined in the type.  
   
--   Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, they will all be brought into scope by the `using Extensions;` directive.  
+- Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, they will all be brought into scope by the `using Extensions;` directive.  
   
  For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](../../../../docs/framework/app-domains/assembly-versioning.md).  
   

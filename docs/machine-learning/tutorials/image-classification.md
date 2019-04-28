@@ -1,5 +1,5 @@
 ---
-title: Build an ML.NET custom image classifier with TensorFlow
+title: 'Tutorial: Build an ML.NET custom image classifier with TensorFlow'
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
 ms.date: 04/25/2019
 ms.topic: tutorial
@@ -264,7 +264,7 @@ public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
 The following code parses through the `tags.tsv` file to add the file path to the image file name for the `ImagePath` property and load it and the `Label` into an `ImageData` object. Add it as the first line of the `ReadFromTsv()` method.  You need the fully qualified file path to display the prediction results.
 
 [!code-csharp[ReadFromTsv](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReadFromTsv)]
-There are three major concepts in ML.NET: [Data](../basic-concepts-model-training-in-mldotnet.md#data), [Transformers](../basic-concepts-model-training-in-mldotnet.md#transformer), and [Estimators](../basic-concepts-model-training-in-mldotnet.md#estimator).
+There are three major concepts in ML.NET: [Data](../resources/glossary.md#data), [Transformers](../resources/glossary.md#transformer), and [Estimators](../resources/glossary.md#estimator).
 
 ## Reuse and tune pre-trained model
 
@@ -318,7 +318,6 @@ Your image processing estimator uses pre-trained [Deep Neural Network(DNN)](http
 Add these image transforms as the next lines of code:
 
 [!code-csharp[ImageTransforms](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ImageTransforms)]
-
 
 The `LoadTensorFlowModel` is a convenience method that allows the `TensorFlow` model to be loaded once and then creates the `TensorFlowEstimator` using `ScoreTensorFlowModel`. The `ScoreTensorFlowModel` extracts specified outputs (the `Inception model`'s image features `softmax2_pre_activation`), and scores a dataset using the pre-trained `TensorFlow` model.
 

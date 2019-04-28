@@ -19,16 +19,16 @@ ms.assetid: 880cd85c-aa8c-4fb5-9369-45491d34bb78
 ## Implementation Guidelines and Conventions  
  When implementing the Table control pattern, note the following guidelines and conventions:  
   
--   Access to the content of individual cells is through a two-dimensional logical coordinate system or array provided by the required concurrent implementation of <xref:System.Windows.Automation.Provider.IGridProvider>.  
+- Access to the content of individual cells is through a two-dimensional logical coordinate system or array provided by the required concurrent implementation of <xref:System.Windows.Automation.Provider.IGridProvider>.  
   
--   A column or row header can be contained within a table object or be a separate header object that is associated with a table object.  
+- A column or row header can be contained within a table object or be a separate header object that is associated with a table object.  
   
--   Column and row headers may include both a primary header as well as any supporting headers.  
+- Column and row headers may include both a primary header as well as any supporting headers.  
   
 > [!NOTE]
 >  This concept becomes evident in a [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] spreadsheet where a user has defined a "First name" column. This column now has two headers—the "First name" header defined by the user and the alphanumeric designation for that column assigned by the application.  
   
--   See [Implementing the UI Automation Grid Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-grid-control-pattern.md) for related grid functionality.  
+- See [Implementing the UI Automation Grid Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-grid-control-pattern.md) for related grid functionality.  
   
  ![Table with complex header items.](../../../docs/framework/ui-automation/media/uia-tablepattern-complex-column-headers.PNG "UIA_TablePattern_Complex_Column_Headers")  
 Example of a Table with Complex Column Headers  

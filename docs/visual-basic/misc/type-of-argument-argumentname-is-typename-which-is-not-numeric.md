@@ -10,7 +10,7 @@ A non-numeric argument occurs in a situation in which a numeric argument is expe
   
 ## To correct this error  
   
--   Ensure that the argument is numeric.  
+- Ensure that the argument is numeric.  
   
 ## See also
 

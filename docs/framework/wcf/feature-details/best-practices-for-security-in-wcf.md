@@ -20,11 +20,11 @@ The following sections list the best practices to consider when creating secure 
 ## Use X509 Certificates Instead of NTLM  
  WCF offers two mechanisms for peer-to-peer authentication: X509 certificates (used by peer channel) and Windows authentication where an SSPI negotiation downgrades from Kerberos to NTLM.  Certificate-based authentication using key sizes of 1024 bits or more is preferred to NTLM for several reasons:  
   
--   the availability of mutual authentication,  
+- the availability of mutual authentication,  
   
--   the use of stronger cryptographic algorithms, and  
+- the use of stronger cryptographic algorithms, and  
   
--   the greater difficulty of utilizing forwarded X509 credentials.  
+- the greater difficulty of utilizing forwarded X509 credentials.  
    
 ## Always Revert After Impersonation  
  When using APIs that enable impersonation of a client, be sure to revert to the original identity. For example, when using the <xref:System.Security.Principal.WindowsIdentity> and <xref:System.Security.Principal.WindowsImpersonationContext>, use the C# `using` statement or the Visual Basic`Using` statement, as shown in the following code. The <xref:System.Security.Principal.WindowsImpersonationContext> class implements the <xref:System.IDisposable> interface, and therefore the common language runtime (CLR) automatically reverts to the original identity once the code leaves the `using` block.  

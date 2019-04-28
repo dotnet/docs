@@ -15,9 +15,9 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  The following connection properties were added to SqlClient in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]:  
   
--   `ApplicationIntent`  
+- `ApplicationIntent`  
   
--   `MultiSubnetFailover`  
+- `MultiSubnetFailover`  
   
  You can programmatically modify these connection string keywords with:  
   
@@ -39,17 +39,17 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  Use the following guidelines to connect to a server in an availability group or SQL Server 2012 Failover Cluster Instance:  
   
--   Use the `MultiSubnetFailover` connection property when connecting to a single subnet or multi-subnet; it will improve performance for both.  
+- Use the `MultiSubnetFailover` connection property when connecting to a single subnet or multi-subnet; it will improve performance for both.  
   
--   To connect to an availability group, specify the availability group listener of the availability group as the server in your connection string.  
+- To connect to an availability group, specify the availability group listener of the availability group as the server in your connection string.  
   
--   Connecting to a SQL Server instance configured with more than 64 IP addresses will cause a connection failure.  
+- Connecting to a SQL Server instance configured with more than 64 IP addresses will cause a connection failure.  
   
--   Behavior of an application that uses the `MultiSubnetFailover` connection property is not affected based on the type of authentication: SQL Server Authentication, Kerberos Authentication, or Windows Authentication.  
+- Behavior of an application that uses the `MultiSubnetFailover` connection property is not affected based on the type of authentication: SQL Server Authentication, Kerberos Authentication, or Windows Authentication.  
   
--   Increase the value of `Connect Timeout` to accommodate for failover time and reduce application connection retry attempts.  
+- Increase the value of `Connect Timeout` to accommodate for failover time and reduce application connection retry attempts.  
   
--   Distributed transactions are not supported.  
+- Distributed transactions are not supported.  
   
  If read-only routing is not in effect, connecting to a secondary replica location will fail in the following situations:  
   

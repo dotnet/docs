@@ -17,16 +17,16 @@ This example defines and calls the `MessageBox` function in user32.dll and then 
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System> namespace.  
+- A reference to the <xref:System> namespace.  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The method is not static, is abstract, or has been previously defined. The parent type is an interface, or the length of *name* or *dllName* is zero. (<xref:System.ArgumentException>)  
+- The method is not static, is abstract, or has been previously defined. The parent type is an interface, or the length of *name* or *dllName* is zero. (<xref:System.ArgumentException>)  
   
--   The *name* or *dllName* is `Nothing`. (<xref:System.ArgumentNullException>)  
+- The *name* or *dllName* is `Nothing`. (<xref:System.ArgumentNullException>)  
   
--   The containing type has been previously created using `CreateType`. (<xref:System.InvalidOperationException>)  
+- The containing type has been previously created using `CreateType`. (<xref:System.InvalidOperationException>)  
   
 ## See also
 

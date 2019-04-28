@@ -33,21 +33,21 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  Service Binding information is an indication of a client’s intent to authenticate to a particular service endpoint. It is communicated from client to server with the following properties:  
   
--   The SPN value must be available to the server performing client authentication in clear text form.  
+- The SPN value must be available to the server performing client authentication in clear text form.  
   
--   The value of the SPN is public.  
+- The value of the SPN is public.  
   
--   The SPN must be cryptographically protected in transit such that a man-in-the-middle attack cannot insert, remove or modify its value.  
+- The SPN must be cryptographically protected in transit such that a man-in-the-middle attack cannot insert, remove or modify its value.  
   
  A CBT is a property of the outer secure channel (such as TLS) used to tie (bind) it to a conversation over an inner, client-authenticated channel. The CBT must have the following properties (also defined by IETF RFC 5056):  
   
--   When an outer channel exists, the value of the CBT must be a property identifying either the outer channel or the server endpoint, independently arrived at by both client and server sides of a conversation.  
+- When an outer channel exists, the value of the CBT must be a property identifying either the outer channel or the server endpoint, independently arrived at by both client and server sides of a conversation.  
   
--   Value of the CBT sent by the client must not be something an attacker can influence.  
+- Value of the CBT sent by the client must not be something an attacker can influence.  
   
--   No guarantees are made about secrecy of the CBT value. This does not however mean that the value of the service binding as well as channel binding information can always be examined by any other but the server performing authentication, as the protocol carrying the CBT may be encrypting it.  
+- No guarantees are made about secrecy of the CBT value. This does not however mean that the value of the service binding as well as channel binding information can always be examined by any other but the server performing authentication, as the protocol carrying the CBT may be encrypting it.  
   
--   The CBT must be cryptographically integrity protected in transit such that an attacker cannot insert, remove or modify its value.  
+- The CBT must be cryptographically integrity protected in transit such that an attacker cannot insert, remove or modify its value.  
   
  Channel binding is accomplished by the client transferring the SPN and the CBT to the server in a tamperproof fashion. The server validates the channel binding information in accordance with its policy and rejects authentication attempts for which it does not believe itself to have been the intended target. This way, the two channels become cryptographically bound together.  
   
@@ -66,37 +66,37 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  A <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> that has the following elements:  
   
--   An <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.OSSupportsExtendedProtection%2A> property that indicates whether the operating system supports integrated windows authentication with extended protection.  
+- An <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.OSSupportsExtendedProtection%2A> property that indicates whether the operating system supports integrated windows authentication with extended protection.  
   
--   A <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> value that indicates when the extended protection policy should be enforced.  
+- A <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> value that indicates when the extended protection policy should be enforced.  
   
--   A <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> value that indicates the deployment scenario. This influences how extended protection is checked.  
+- A <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> value that indicates the deployment scenario. This influences how extended protection is checked.  
   
--   An optional <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> that contains the custom SPN list that is used to match against the SPN provided by the client as the intended target of the authentication.  
+- An optional <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> that contains the custom SPN list that is used to match against the SPN provided by the client as the intended target of the authentication.  
   
--   An optional <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> that contains a custom channel binding to use for validation. This scenario is not a common case  
+- An optional <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> that contains a custom channel binding to use for validation. This scenario is not a common case  
   
  The <xref:System.Security.Authentication.ExtendedProtection.Configuration> namespace provides support for configuration of authentication using extended protection for applications.  
   
  A number of feature changes were made to support extended protection in the existing <xref:System.Net> namespace. These changes include the following:  
   
--   A new <xref:System.Net.TransportContext> class added to the <xref:System.Net> namespace that represents a transport context.  
+- A new <xref:System.Net.TransportContext> class added to the <xref:System.Net> namespace that represents a transport context.  
   
--   New <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> and <xref:System.Net.HttpWebRequest.GetRequestStream%2A> overload methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> to support extended protection for client applications.  
+- New <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> and <xref:System.Net.HttpWebRequest.GetRequestStream%2A> overload methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> to support extended protection for client applications.  
   
--   Additions to the <xref:System.Net.HttpListener> and <xref:System.Net.HttpListenerRequest> classes to support server applications.  
+- Additions to the <xref:System.Net.HttpListener> and <xref:System.Net.HttpListenerRequest> classes to support server applications.  
   
  A feature change was made to support extended protection for SMTP client applications in the existing <xref:System.Net.Mail> namespace:  
   
--   A <xref:System.Net.Mail.SmtpClient.TargetName%2A> property in the <xref:System.Net.Mail.SmtpClient> class that represents the SPN to use for authentication when using extended protection for SMTP client applications.  
+- A <xref:System.Net.Mail.SmtpClient.TargetName%2A> property in the <xref:System.Net.Mail.SmtpClient> class that represents the SPN to use for authentication when using extended protection for SMTP client applications.  
   
  A number of feature changes were made to support extended protection in the existing <xref:System.Net.Security> namespace. These changes include the following:  
   
--   New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing a CBT to support extended protection for client applications.  
+- New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing a CBT to support extended protection for client applications.  
   
--   New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> to support extended protection for server applications.  
+- New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> to support extended protection for server applications.  
   
--   A new <xref:System.Net.Security.SslStream.TransportContext%2A> property in the <xref:System.Net.Security.SslStream> class to support extended protection for client and server applications.  
+- A new <xref:System.Net.Security.SslStream.TransportContext%2A> property in the <xref:System.Net.Security.SslStream> class to support extended protection for client and server applications.  
   
  A <xref:System.Net.Configuration.SmtpNetworkElement> property was added to support configuration of extended protection for SMTP clients in the <xref:System.Net.Security> namespace.  
   

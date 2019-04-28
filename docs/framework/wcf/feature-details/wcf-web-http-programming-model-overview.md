@@ -6,11 +6,11 @@ ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
 # WCF Web HTTP Programming Model Overview
 The Windows Communication Foundation (WCF) WEB HTTP programming model provides the basic elements required to build WEB HTTP services with WCF. WCF WEB HTTP services are designed to be accessed by the widest range of possible clients, including Web browsers and have the following unique requirements:  
   
--   **URIs and URI Processing** URIs play a central role in the design of WEB HTTP services. The WCF WEB HTTP programming model uses the <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to provide URI processing capabilities.  
+- **URIs and URI Processing** URIs play a central role in the design of WEB HTTP services. The WCF WEB HTTP programming model uses the <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to provide URI processing capabilities.  
   
--   **Support for GET and POST operations** WEB HTTP services make use of the GET verb for data retrieval, in addition to various invoke verbs for data modification and remote invocation. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> to associate service operations with both GET and other HTTP verbs like PUT, POST, and DELETE.  
+- **Support for GET and POST operations** WEB HTTP services make use of the GET verb for data retrieval, in addition to various invoke verbs for data modification and remote invocation. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> to associate service operations with both GET and other HTTP verbs like PUT, POST, and DELETE.  
   
--   **Multiple data formats** Web-style services process many kinds of data in addition to SOAP messages. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> to support many different data formats including XML documents, JSON data object, and streams of binary content such as images, video files, or plain text.  
+- **Multiple data formats** Web-style services process many kinds of data in addition to SOAP messages. The WCF WEB HTTP programming model uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> to support many different data formats including XML documents, JSON data object, and streams of binary content such as images, video files, or plain text.  
   
  The WCF WEB HTTP programming model extends the reach of WCF to cover Web-style scenarios that include WEB HTTP services, AJAX and JSON services, and Syndication (ATOM/RSS) feeds. For more information about AJAX and JSON services, see [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md). For more information about Syndication, see [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md).  
   
@@ -27,23 +27,23 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
   
  This template describes URIs like the following:  
   
--   a/x/c  
+- a/x/c  
   
--   a/y/c  
+- a/y/c  
   
--   a/z/c  
+- a/z/c  
   
--   and so on.  
+- and so on.  
   
  In this template, the curly brace notation ("{segment}") indicates a variable segment instead of a literal value.  
   
  .NET Framework provides an API for working with URI templates called <xref:System.UriTemplate>. `UriTemplates` allow you to do the following:  
   
--   You can call one of the `Bind` methods with a set of parameters to produce a *fully-closed URI* that matches the template. This means all variables within the URI template are replaced with actual values.  
+- You can call one of the `Bind` methods with a set of parameters to produce a *fully-closed URI* that matches the template. This means all variables within the URI template are replaced with actual values.  
   
--   You can call `Match`() with a candidate URI, which uses a template to break up a candidate URI into its constituent parts and returns a dictionary that contains the different parts of the URI labeled according to the variables in the template.  
+- You can call `Match`() with a candidate URI, which uses a template to break up a candidate URI into its constituent parts and returns a dictionary that contains the different parts of the URI labeled according to the variables in the template.  
   
--   `Bind`() and `Match`() are inverses so that you can call `Match`( `Bind`( x ) ) and come back with the same environment you started with.  
+- `Bind`() and `Match`() are inverses so that you can call `Match`( `Bind`( x ) ) and come back with the same environment you started with.  
   
  There are many times (especially on the server, where dispatching a request to a service operation based on the URI is necessary) that you want to keep track of a set of <xref:System.UriTemplate> objects in a data structure that can independently address each of the contained templates. <xref:System.UriTemplateTable> represents a set of URI templates and selects the best match given a set of templates and a candidate URI. This is not affiliated with any particular networking stack (WCF included) so you can use it wherever necessary.  
   
@@ -121,11 +121,11 @@ interface ICustomer
 ## Formats and the WCF WEB HTTP Programming Model  
  The WCF WEB HTTP programming model has new features to work with many different data formats. At the binding layer, the <xref:System.ServiceModel.WebHttpBinding> can read and write the following different kinds of data:  
   
--   XML  
+- XML  
   
--   JSON  
+- JSON  
   
--   Opaque binary streams  
+- Opaque binary streams  
   
  This means the WCF WEB HTTP programming model can handle any type of data but, you may be programming against <xref:System.IO.Stream>.  
   

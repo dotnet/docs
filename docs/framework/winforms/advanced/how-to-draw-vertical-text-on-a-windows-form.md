@@ -29,7 +29,7 @@ The following code example shows how to draw vertical text on a form by using th
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The Arial font is not installed.  
+- The Arial font is not installed.  
   
 ## See also
 

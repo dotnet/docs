@@ -18,9 +18,9 @@ The <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method accepts three
 ## IXPathNavigable Interface  
  The <xref:System.Xml.XPath.IXPathNavigable> interface is implemented in the <xref:System.Xml.XmlNode> and <xref:System.Xml.XPath.XPathDocument> classes. These classes represent an in-memory cache of XML data.  
   
--   The <xref:System.Xml.XmlNode> class is based on the W3C Document Object Model (DOM) and includes editing capabilities.  
+- The <xref:System.Xml.XmlNode> class is based on the W3C Document Object Model (DOM) and includes editing capabilities.  
   
--   The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
+- The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
   
 > [!NOTE]
 >  Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](../../../../docs/standard/data/xml/how-to-transform-a-node-fragment.md).  

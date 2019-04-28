@@ -52,9 +52,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## Object Element Syntax  
  *Object element syntax* is the XAML markup syntax that instantiates a CLR class or structure by declaring an XML element. This syntax resembles the element syntax of other markup languages such as HTML. Object element syntax begins with a left angle bracket (\<), followed immediately by the type name of the class or structure being instantiated. Zero or more spaces can follow the type name, and zero or more attributes may also be declared on the object element, with one or more spaces separating each attribute name="value" pair. Finally, one of the following must be true:  
   
--   The element and tag must be closed by a forward slash (/) followed immediately by a right angle bracket (>).  
+- The element and tag must be closed by a forward slash (/) followed immediately by a right angle bracket (>).  
   
--   The opening tag must be completed by a right angle bracket (>). Other object elements, property elements, or inner text, can follow the opening tag. Exactly what content may be contained here is typically constrained by the object model of the element. The equivalent closing tag for the object element must also exist, in proper nesting and balance with other opening and closing tag pairs.  
+- The opening tag must be completed by a right angle bracket (>). Other object elements, property elements, or inner text, can follow the opening tag. Exactly what content may be contained here is typically constrained by the object model of the element. The equivalent closing tag for the object element must also exist, in proper nesting and balance with other opening and closing tag pairs.  
   
  XAML as implemented by .NET has a set of rules that map object elements into types, attributes into properties or events, and XAML namespaces to CLR namespaces plus assembly. For WPF and the .NET Framework, XAML object elements map to [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] types as defined in referenced assemblies, and the attributes map to members of those types. When you reference a CLR type in XAML, you have access to the inherited members of that type as well.  
   
@@ -148,11 +148,11 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## Collection Syntax  
  The XAML specification requires XAML processor implementations to identify properties where the value type is a collection. The general XAML processor implementation in .NET is based on managed code and the CLR, and it identifies collection types through one of the following:  
   
--   Type implements <xref:System.Collections.IList>.  
+- Type implements <xref:System.Collections.IList>.  
   
--   Type implements <xref:System.Collections.IDictionary>.  
+- Type implements <xref:System.Collections.IDictionary>.  
   
--   Type derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).)  
+- Type derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).)  
   
  If the type of a property is a collection, then the inferred collection type does not need to be specified in the markup as an object element. Instead, the elements that are intended to become the items in the collection are specified as one or more child elements of the property element. Each such item is evaluated to an object during loading and added to the collection by calling the `Add` method of the implied collection. For example, the <xref:System.Windows.Style.Triggers%2A> property of <xref:System.Windows.Style> takes the specialized collection type <xref:System.Windows.TriggerCollection>, which implements <xref:System.Collections.IList>. It is not necessary to instantiate a <xref:System.Windows.TriggerCollection> object element in the markup. Instead, you specify one or more <xref:System.Windows.Trigger> items as elements within the `Style.Triggers` property element, where <xref:System.Windows.Trigger> (or a derived class) is the type expected as the item type for the strongly typed and implicit <xref:System.Windows.TriggerCollection>.  
   
@@ -258,9 +258,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  Attached properties use a syntax that superficially resembles property element syntax, in that you also specify a *typeName*.*propertyName* combination. There are two important differences:  
   
--   You can use the *typeName*.*propertyName* combination even when setting an attached property through attribute syntax. Attached properties are the only case where qualifying the property name is a requirement in an attribute syntax.  
+- You can use the *typeName*.*propertyName* combination even when setting an attached property through attribute syntax. Attached properties are the only case where qualifying the property name is a requirement in an attribute syntax.  
   
--   You can also use property element syntax for attached properties. However, for typical property element syntax, the *typeName* you specify is the object element that contains the property element. If you are referring to an attached property, then the *typeName* is the class that defines the attached property, not the containing object element.  
+- You can also use property element syntax for attached properties. However, for typical property element syntax, the *typeName* you specify is the object element that contains the property element. If you are referring to an attached property, then the *typeName* is the class that defines the attached property, not the containing object element.  
   
 <a name="attached_events"></a>   
 ## Attached Events  

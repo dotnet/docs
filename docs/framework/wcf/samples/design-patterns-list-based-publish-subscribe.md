@@ -124,23 +124,23 @@ public class PriceChangeEventArgs : EventArgs
   
 1. Set up the service machine:  
   
-    1.  On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
+    1. On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
   
-    2.  Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service machine. Be sure to include the files in the \bin directory.  
+    2. Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service machine. Be sure to include the files in the \bin directory.  
   
-    3.  Test that you can access the service from the client machine using a browser.  
+    3. Test that you can access the service from the client machine using a browser.  
   
 2. Set up the client machines:  
   
-    1.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machines.  
+    1. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machines.  
   
-    2.  In each client configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
+    2. In each client configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
   
 3. Set up the data source machine:  
   
-    1.  Copy the data source program files from the \datasource\bin\ folder, under the language-specific folder, to the data source machine.  
+    1. Copy the data source program files from the \datasource\bin\ folder, under the language-specific folder, to the data source machine.  
   
-    2.  In the data source configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
+    2. In the data source configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
   
 4. On the client machines, launch Client.exe from a command prompt.  
   

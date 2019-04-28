@@ -21,13 +21,13 @@ The [get](../../../csharp/language-reference/keywords/get.md) and [set](../../..
 ## Restrictions on Access Modifiers on Accessors  
  Using the accessor modifiers on properties or indexers is subject to these conditions:  
   
--   You cannot use accessor modifiers on an interface or an explicit [interface](../../../csharp/language-reference/keywords/interface.md) member implementation.  
+- You cannot use accessor modifiers on an interface or an explicit [interface](../../../csharp/language-reference/keywords/interface.md) member implementation.  
   
--   You can use accessor modifiers only if the property or indexer has both `set` and `get` accessors. In this case, the modifier is permitted on only one of the two accessors.  
+- You can use accessor modifiers only if the property or indexer has both `set` and `get` accessors. In this case, the modifier is permitted on only one of the two accessors.  
   
--   If the property or indexer has an [override](../../../csharp/language-reference/keywords/override.md) modifier, the accessor modifier must match the accessor of the overridden accessor, if any.  
+- If the property or indexer has an [override](../../../csharp/language-reference/keywords/override.md) modifier, the accessor modifier must match the accessor of the overridden accessor, if any.  
   
--   The accessibility level on the accessor must be more restrictive than the accessibility level on the property or indexer itself.  
+- The accessibility level on the accessor must be more restrictive than the accessibility level on the property or indexer itself.  
   
 ## Access Modifiers on Overriding Accessors  
  When you override a property or indexer, the overridden accessors must be accessible to the overriding code. Also, the accessibility of both the property/indexer and its accessors must match the corresponding overridden property/indexer and its accessors. For example:  

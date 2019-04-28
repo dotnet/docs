@@ -25,11 +25,11 @@ In the .NET Framework, the observer design pattern is implemented as a set of in
   
  The provider should follow these best practices when handling exceptions and calling the <xref:System.IObserver%601.OnError%2A> method:  
   
--   The provider must handle its own exceptions if it has any specific requirements.  
+- The provider must handle its own exceptions if it has any specific requirements.  
   
--   The provider should not expect or require that observers handle exceptions in any particular way.  
+- The provider should not expect or require that observers handle exceptions in any particular way.  
   
--   The provider should call the <xref:System.IObserver%601.OnError%2A> method when it handles an exception that compromises its ability to provide updates. Information on such exceptions can be passed to the observer. In other cases, there is no need to notify observers of an exception.  
+- The provider should call the <xref:System.IObserver%601.OnError%2A> method when it handles an exception that compromises its ability to provide updates. Information on such exceptions can be passed to the observer. In other cases, there is no need to notify observers of an exception.  
   
  Once the provider calls the <xref:System.IObserver%601.OnError%2A> or <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> method, there should be no further notifications, and the provider can unsubscribe its observers. However, the observers can also unsubscribe themselves at any time, including both before and after they receive an <xref:System.IObserver%601.OnError%2A> or <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> notification. The observer design pattern does not dictate whether the provider or the observer is responsible for unsubscribing; therefore, there is a possibility that both may attempt to unsubscribe. Typically, when observers unsubscribe, they are removed from a subscribers collection. In a single-threaded application, the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation should ensure that an object reference is valid and that the object is a member of the subscribers collection before attempting to remove it. In a multithreaded application, a thread-safe collection object, such as a <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> object, should be used.  
   
@@ -38,9 +38,9 @@ In the .NET Framework, the observer design pattern is implemented as a set of in
   
  The observer should follow these best practices when responding to an <xref:System.IObserver%601.OnError%2A> method call from a provider:  
   
--   The observer should not throw exceptions from its interface implementations, such as <xref:System.IObserver%601.OnNext%2A> or <xref:System.IObserver%601.OnError%2A>. However, if the observer does throw exceptions, it should expect these exceptions to go unhandled.  
+- The observer should not throw exceptions from its interface implementations, such as <xref:System.IObserver%601.OnNext%2A> or <xref:System.IObserver%601.OnError%2A>. However, if the observer does throw exceptions, it should expect these exceptions to go unhandled.  
   
--   To preserve the call stack, an observer that wishes to throw an <xref:System.Exception> object that was passed to its <xref:System.IObserver%601.OnError%2A> method should wrap the exception before throwing it. A standard exception object should be used for this purpose.  
+- To preserve the call stack, an observer that wishes to throw an <xref:System.Exception> object that was passed to its <xref:System.IObserver%601.OnError%2A> method should wrap the exception before throwing it. A standard exception object should be used for this purpose.  
   
 ## Additional Best Practices  
  Attempting to unregister in the <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method may result in a null reference. Therefore, we recommend that you avoid this practice.  

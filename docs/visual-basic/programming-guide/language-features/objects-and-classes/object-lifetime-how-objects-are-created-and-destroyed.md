@@ -78,13 +78,13 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
 ### Implementing IDisposable  
  A class that implements the <xref:System.IDisposable> interface should include these sections of code:  
   
--   A field for keeping track of whether the object has been disposed:  
+- A field for keeping track of whether the object has been disposed:  
   
     ```  
     Protected disposed As Boolean = False  
     ```  
   
--   An overload of the <xref:System.IDisposable.Dispose%2A> that frees the class's resources. This method should be called by the <xref:System.IDisposable.Dispose%2A> and `Finalize` methods of the base class:  
+- An overload of the <xref:System.IDisposable.Dispose%2A> that frees the class's resources. This method should be called by the <xref:System.IDisposable.Dispose%2A> and `Finalize` methods of the base class:  
   
     ```  
     Protected Overridable Sub Dispose(ByVal disposing As Boolean)  
@@ -98,7 +98,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
     End Sub  
     ```  
   
--   An implementation of <xref:System.IDisposable.Dispose%2A> that contains only the following code:  
+- An implementation of <xref:System.IDisposable.Dispose%2A> that contains only the following code:  
   
     ```  
     Public Sub Dispose() Implements IDisposable.Dispose  
@@ -107,7 +107,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
     End Sub  
     ```  
   
--   An override of the `Finalize` method that contains only the following code:  
+- An override of the `Finalize` method that contains only the following code:  
   
     ```  
     Protected Overrides Sub Finalize()  

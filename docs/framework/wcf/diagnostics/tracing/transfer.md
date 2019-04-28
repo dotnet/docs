@@ -29,9 +29,9 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
 ## Example of Transfers  
  The following lists two transfer examples.  
   
--   When you create a service host, the constructor gains control from the calling code, or the calling code transfers to the constructor. When the constructor has finished executing, it returns control to the calling code, or the constructor transfers back to the calling code. This is the case of a nested relationship.  
+- When you create a service host, the constructor gains control from the calling code, or the calling code transfers to the constructor. When the constructor has finished executing, it returns control to the calling code, or the constructor transfers back to the calling code. This is the case of a nested relationship.  
   
--   When a listener starts processing transport data, it creates a new thread and hands to the Receive Bytes activity the appropriate context for processing, passing control and data. When that thread has finished processing the request, the Receive Bytes activity passes nothing back to the listener. In this case, we have a transfer in but no transfer out of the new thread activity. The two activities are related but not nested.  
+- When a listener starts processing transport data, it creates a new thread and hands to the Receive Bytes activity the appropriate context for processing, passing control and data. When that thread has finished processing the request, the Receive Bytes activity passes nothing back to the listener. In this case, we have a transfer in but no transfer out of the new thread activity. The two activities are related but not nested.  
   
 ## Activity Transfer Sequence  
  A well-formed activity transfer sequence includes the following steps.  

@@ -12,7 +12,7 @@ All field widths, except the last element, must be greater than zero. A field wi
   
 ## To correct this error  
   
--   Set the field width to the correct length.  
+- Set the field width to the correct length.  
   
 ## See also
 

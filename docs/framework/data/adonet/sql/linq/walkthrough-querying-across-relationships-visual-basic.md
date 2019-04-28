@@ -18,18 +18,18 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 ## Overview  
  This walkthrough consists of three main tasks:  
   
--   Adding an entity class to represent the Orders table in the sample Northwind database.  
+- Adding an entity class to represent the Orders table in the sample Northwind database.  
   
--   Supplementing annotations to the `Customer` class to enhance the relationship between the `Customer` and `Order` classes.  
+- Supplementing annotations to the `Customer` class to enhance the relationship between the `Customer` and `Order` classes.  
   
--   Creating and running a query to test the process of obtaining `Order` information by using the `Customer` class.  
+- Creating and running a query to test the process of obtaining `Order` information by using the `Customer` class.  
   
 ## Mapping Relationships across Tables  
  After the `Customer` class definition, create the `Order` entity class definition that includes the following code, which indicates that `Orders.Customer` relates as a foreign key to `Customers.CustomerID`.  
   
 #### To add the Order entity class  
   
--   Type or paste the following code after the `Customer` class:  
+- Type or paste the following code after the `Customer` class:  
   
      [!code-vb[DLinqWalk2VB#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#1)]  
   
@@ -38,7 +38,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To annotate the Customer class  
   
--   Type or paste the following code into the `Customer` class:  
+- Type or paste the following code into the `Customer` class:  
   
      [!code-vb[DLinqWalk2VB#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb/Module1.vb#2)]  
   

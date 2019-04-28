@@ -23,7 +23,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
 ### To match a character in the string expression against a specific character  
   
--   Put the specific character directly in the pattern string. Certain special characters must be enclosed in brackets (`[ ]`). For more information, see [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md).  
+- Put the specific character directly in the pattern string. Certain special characters must be enclosed in brackets (`[ ]`). For more information, see [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md).  
   
      The following example tests whether `myString` consists exactly of the single character `H`.  
   
@@ -31,7 +31,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
 ### To match a character in the string expression against a wildcard character  
   
--   Put a question mark (`?`) in the pattern string. Any valid character in this position makes a successful match.  
+- Put a question mark (`?`) in the pattern string. Any valid character in this position makes a successful match.  
   
      The following example tests whether `myString` consists of the single character `W` followed by exactly two characters of any values.  
   
@@ -39,7 +39,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
 ### To match a character in the string expression against a list of characters  
   
--   Put brackets (`[ ]`) in the pattern string, and inside the brackets put the list of characters. Do not separate the characters with commas or any other separator. Any single character in the list makes a successful match.  
+- Put brackets (`[ ]`) in the pattern string, and inside the brackets put the list of characters. Do not separate the characters with commas or any other separator. Any single character in the list makes a successful match.  
   
      The following example tests whether `myString` consists of any valid character followed by exactly one of the characters `A`, `C`, or `E`.  
   
@@ -49,7 +49,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
 ### To match a character in the string expression against a range of characters  
   
--   Put brackets (`[ ]`) in the pattern string, and inside the brackets put the lowest and highest characters in the range, separated by a hyphen (`–`). Any single character within the range makes a successful match.  
+- Put brackets (`[ ]`) in the pattern string, and inside the brackets put the lowest and highest characters in the range, separated by a hyphen (`–`). Any single character within the range makes a successful match.  
   
      The following example tests whether `myString` consists of the characters `num` followed by exactly one of the characters `i`, `j`, `k`, `l`, `m`, or `n`.  
   

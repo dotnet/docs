@@ -17,9 +17,9 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio.  
+- Visual Studio.  
   
--   A device that accepts touch input, such as a touchscreen, that supports Windows Touch.  
+- A device that accepts touch input, such as a touchscreen, that supports Windows Touch.  
   
  Additionally, you should have a basic understanding of how to create an application in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
@@ -67,11 +67,11 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 ## Testing the Application
  To test the application, try the following manipulations. Note that you can do more than one of the following at the same time.
 
--   To move the <xref:System.Windows.Shapes.Rectangle>, put a finger on the <xref:System.Windows.Shapes.Rectangle> and move the finger across the screen.
+- To move the <xref:System.Windows.Shapes.Rectangle>, put a finger on the <xref:System.Windows.Shapes.Rectangle> and move the finger across the screen.
 
--   To resize the <xref:System.Windows.Shapes.Rectangle>, put two fingers on the <xref:System.Windows.Shapes.Rectangle> and move the fingers closer together or farther apart from each other.
+- To resize the <xref:System.Windows.Shapes.Rectangle>, put two fingers on the <xref:System.Windows.Shapes.Rectangle> and move the fingers closer together or farther apart from each other.
 
--   To rotate the <xref:System.Windows.Shapes.Rectangle>, put two fingers on the <xref:System.Windows.Shapes.Rectangle> and rotate the fingers around each other.
+- To rotate the <xref:System.Windows.Shapes.Rectangle>, put two fingers on the <xref:System.Windows.Shapes.Rectangle> and rotate the fingers around each other.
 
  To cause inertia, quickly raise your fingers from the screen as you perform the previous manipulations. The <xref:System.Windows.Shapes.Rectangle> will continue to move, resize, or rotate for a few seconds before it stops.
 

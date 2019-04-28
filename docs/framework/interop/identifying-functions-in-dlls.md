@@ -17,9 +17,9 @@ ms.author: "ronpet"
 # Identifying Functions in DLLs
 The identity of a DLL function consists of the following elements:  
   
--   Function name or ordinal  
+- Function name or ordinal  
   
--   Name of the DLL file in which the implementation can be found  
+- Name of the DLL file in which the implementation can be found  
   
  For example, specifying the **MessageBox** function in the User32.dll identifies the function (**MessageBox**) and its location (User32.dll, User32, or user32). The Microsoft Windows application programming interface (Windows API) can contain two versions of each function that handles characters and strings: a 1-byte character ANSI version and a 2-byte character Unicode version. When unspecified, the character set, represented by the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> field, defaults to ANSI. Some functions can have more than two versions.  
   

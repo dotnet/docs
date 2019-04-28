@@ -15,7 +15,7 @@ An array initialization leaves out one or more of the subscripts that define the
   
 ## To correct this error  
   
--   Supply the missing subscript.  
+- Supply the missing subscript.  
   
 ## See also
 

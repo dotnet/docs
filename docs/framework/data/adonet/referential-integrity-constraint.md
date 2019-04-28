@@ -8,13 +8,13 @@ A *referential integrity constraint* in the Entity Data Model (EDM) is similar t
   
  A referential integrity constraint is defined as part of an [association](../../../../docs/framework/data/adonet/association-type.md) between two entity types. The definition for a referential integrity constraint specifies the following information:  
   
--   The principal end of the constraint. (An entity type whose entity key is referenced by the dependent end.)  
+- The principal end of the constraint. (An entity type whose entity key is referenced by the dependent end.)  
   
--   The entity key of the principal end.  
+- The entity key of the principal end.  
   
--   The dependent end of the constraint. (An entity type that has a property or properties that reference the entity key of the principal end.)  
+- The dependent end of the constraint. (An entity type that has a property or properties that reference the entity key of the principal end.)  
   
--   The referencing property or properties of the dependent end.  
+- The referencing property or properties of the dependent end.  
   
  The purpose of referential integrity constraints in the EDM is to ensure that valid associations always exist. For more information, see [foreign key property](../../../../docs/framework/data/adonet/foreign-key-property.md).  
   

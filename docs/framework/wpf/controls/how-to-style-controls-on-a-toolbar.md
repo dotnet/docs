@@ -12,21 +12,21 @@ The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.Resource
   
  The <xref:System.Windows.Controls.ToolBar> defines the following <xref:System.Windows.ResourceKey> objects:  
   
--   <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.CheckBoxStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.CheckBoxStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.ComboBoxStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.ComboBoxStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.MenuStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.MenuStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.RadioButtonStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.RadioButtonStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.SeparatorStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.SeparatorStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.TextBoxStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.TextBoxStyleKey%2A>  
   
--   <xref:System.Windows.Controls.ToolBar.ToggleButtonStyleKey%2A>  
+- <xref:System.Windows.Controls.ToolBar.ToggleButtonStyleKey%2A>  
   
 ## Example  
  The following example defines styles for the controls within a <xref:System.Windows.Controls.ToolBar>.  

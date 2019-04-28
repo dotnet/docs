@@ -11,9 +11,9 @@ You can delete rows in a database by removing the corresponding [!INCLUDE[vbtecd
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support or recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, you must complete either of the following tasks:  
   
--   Set the `ON DELETE CASCADE` rule in the foreign-key constraint in the database.  
+- Set the `ON DELETE CASCADE` rule in the foreign-key constraint in the database.  
   
--   Use your own code to first delete the child objects that prevent the parent object from being deleted.  
+- Use your own code to first delete the child objects that prevent the parent object from being deleted.  
   
  Otherwise, an exception is thrown. See the second code example later in this topic.  
   

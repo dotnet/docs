@@ -10,7 +10,7 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
   
 ## To correct this error  
   
--   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
+- Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   
 ## See also
 

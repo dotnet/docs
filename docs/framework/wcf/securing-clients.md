@@ -65,7 +65,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
   
  A common form of credential is the X.509 certificate. You can supply the credential in two ways:  
   
--   By programming it in your client code (using the `SetCertificate` method).  
+- By programming it in your client code (using the `SetCertificate` method).  
   
  By adding a [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) section of the configuration file for the client and using the `clientCredentials` element (shown below).  
   

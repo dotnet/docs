@@ -20,13 +20,13 @@ The errors encountered by a WCF application belong to one of three groups:
   
  Error handling in WCF is performed by one or more of the following:  
   
--   Directly handling the exception thrown. This is only done for communication and proxy/channel errors.  
+- Directly handling the exception thrown. This is only done for communication and proxy/channel errors.  
   
--   Using fault contracts  
+- Using fault contracts  
   
--   Implementing the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface  
+- Implementing the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface  
   
--   Handling <xref:System.ServiceModel.ServiceHost> events  
+- Handling <xref:System.ServiceModel.ServiceHost> events  
   
 ## Fault Contracts  
  Fault contracts allow you to define the errors that can occur during service operation in a platform independent way. By default all exceptions thrown from within a service operation will be returned to the client as a <xref:System.ServiceModel.FaultException> object. The <xref:System.ServiceModel.FaultException> object will contain very little information. You can control the information sent to the client by defining a fault contract and returning the error as a <xref:System.ServiceModel.FaultException%601>. For more information, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  

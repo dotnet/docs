@@ -14,11 +14,11 @@ ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
   
  The following table organizes the control patterns into the following categories:  
   
--   Supported. The control must support this control pattern.  
+- Supported. The control must support this control pattern.  
   
--   Conditional support. The control may support this control pattern depending on the state of the control.  
+- Conditional support. The control may support this control pattern depending on the state of the control.  
   
--   Not supported. The control does not support this control pattern; custom controls may support this control pattern.  
+- Not supported. The control does not support this control pattern; custom controls may support this control pattern.  
   
 > [!NOTE]
 >  Some controls have conditional support for several control patterns depending on the functionality of the control. For example, the menu item control has conditional support for the <xref:System.Windows.Automation.InvokePattern>, <xref:System.Windows.Automation.ExpandCollapsePattern>, <xref:System.Windows.Automation.TogglePattern>, or <xref:System.Windows.Automation.SelectionItemPattern> control pattern, depending on its function in the menu control.  

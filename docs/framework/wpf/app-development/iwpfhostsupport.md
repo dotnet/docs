@@ -13,11 +13,11 @@ Applications that host [!INCLUDE[TLA#tla_winclient](../../../../includes/tlashar
   
  The integration enabled by `IWpfHostSupport` allows PresentationHost.exe to:  
   
--   Discover and register with the raw input devices (Human Interface Devices) that the host application is interested in.  
+- Discover and register with the raw input devices (Human Interface Devices) that the host application is interested in.  
   
--   Receive input messages from the registered raw input devices and forward appropriate messages to the host application.  
+- Receive input messages from the registered raw input devices and forward appropriate messages to the host application.  
   
--   Query the host application for custom progress and error user interfaces.  
+- Query the host application for custom progress and error user interfaces.  
   
 > [!NOTE]
 >  This API is only intended and supported for use on the local client machine  

@@ -19,27 +19,27 @@ ms.custom: seodec18
 # Character Classes in Regular Expressions
 <a name="Top"></a> A character class defines a set of characters, any one of which can occur in an input string for a match to succeed. The regular expression language in .NET supports the following character classes:  
   
--   Positive character groups. A character in the input string must match one of a specified set of characters. For more information, see [Positive Character Group](#PositiveGroup).  
+- Positive character groups. A character in the input string must match one of a specified set of characters. For more information, see [Positive Character Group](#PositiveGroup).  
   
--   Negative character groups. A character in the input string must not match one of a specified set of characters. For more information, see [Negative Character Group](#NegativeGroup).  
+- Negative character groups. A character in the input string must not match one of a specified set of characters. For more information, see [Negative Character Group](#NegativeGroup).  
   
--   Any character. The `.` (dot or period) character in a regular expression is a wildcard character that matches any character except `\n`. For more information, see [Any Character](#AnyCharacter).  
+- Any character. The `.` (dot or period) character in a regular expression is a wildcard character that matches any character except `\n`. For more information, see [Any Character](#AnyCharacter).  
   
--   A general Unicode category or named block. A character in the input string must be a member of a particular Unicode category or must fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Unicode Category or Unicode Block](#CategoryOrBlock).  
+- A general Unicode category or named block. A character in the input string must be a member of a particular Unicode category or must fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Unicode Category or Unicode Block](#CategoryOrBlock).  
   
--   A negative general Unicode category or named block. A character in the input string must not be a member of a particular Unicode category or must not fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Negative Unicode Category or Unicode Block](#NegativeCategoryOrBlock).  
+- A negative general Unicode category or named block. A character in the input string must not be a member of a particular Unicode category or must not fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Negative Unicode Category or Unicode Block](#NegativeCategoryOrBlock).  
   
--   A word character. A character in the input string can belong to any of the Unicode categories that are appropriate for characters in words. For more information, see [Word Character](#WordCharacter).  
+- A word character. A character in the input string can belong to any of the Unicode categories that are appropriate for characters in words. For more information, see [Word Character](#WordCharacter).  
   
--   A non-word character. A character in the input string can belong to any Unicode category that is not a word character. For more information, see [Non-Word Character](#NonWordCharacter).  
+- A non-word character. A character in the input string can belong to any Unicode category that is not a word character. For more information, see [Non-Word Character](#NonWordCharacter).  
   
--   A white-space character. A character in the input string can be any Unicode separator character, as well as any one of a number of control characters. For more information, see [White-Space Character](#WhitespaceCharacter).  
+- A white-space character. A character in the input string can be any Unicode separator character, as well as any one of a number of control characters. For more information, see [White-Space Character](#WhitespaceCharacter).  
   
--   A non-white-space character. A character in the input string can be any character that is not a white-space character. For more information, see [Non-White-Space Character](#NonWhitespaceCharacter).  
+- A non-white-space character. A character in the input string can be any character that is not a white-space character. For more information, see [Non-White-Space Character](#NonWhitespaceCharacter).  
   
--   A decimal digit. A character in the input string can be any of a number of characters classified as Unicode decimal digits. For more information, see [Decimal Digit Character](#DigitCharacter).  
+- A decimal digit. A character in the input string can be any of a number of characters classified as Unicode decimal digits. For more information, see [Decimal Digit Character](#DigitCharacter).  
   
--   A non-decimal digit. A character in the input string can be anything other than a Unicode decimal digit. For more information, see [Decimal Digit Character](#NonDigitCharacter).  
+- A non-decimal digit. A character in the input string can be anything other than a Unicode decimal digit. For more information, see [Decimal Digit Character](#NonDigitCharacter).  
   
  .NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character Class Subtraction](#CharacterClassSubtraction).  
   
@@ -154,7 +154,7 @@ ms.custom: seodec18
 ## Any Character: .  
  The period character (.) matches any character except `\n` (the newline character, \u000A), with the following two qualifications:  
   
--   If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+- If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   
      The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or \u000D, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
   
@@ -164,7 +164,7 @@ ms.custom: seodec18
 > [!NOTE]
 >  Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character, \u000D).  
   
--   In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
+- In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
   
      [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/any1.cs#4)]
      [!code-vb[Conceptual.RegEx.Language.CharacterClasses#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any1.vb#4)]  

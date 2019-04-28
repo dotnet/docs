@@ -16,7 +16,7 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
   
 ### To enable ToolStripItem rearrangement at run time  
   
--   Set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `true`. By default, <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> is `false`.  
+- Set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `true`. By default, <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> is `false`.  
   
      At run time, the user holds down the ALT key and the left mouse button to drag a <xref:System.Windows.Forms.ToolStripItem> to a different location on the <xref:System.Windows.Forms.ToolStrip>.  
   

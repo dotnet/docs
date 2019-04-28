@@ -19,15 +19,15 @@ ms.assetid: 4a58ec19-84d1-4383-9110-298c06adcfca
 # How to: Save Files with the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the information it displays in one of several formats:  
   
--   Plain text  
+- Plain text  
   
--   Unicode plain text  
+- Unicode plain text  
   
--   Rich-Text Format (RTF)  
+- Rich-Text Format (RTF)  
   
--   RTF with spaces in place of OLE objects  
+- RTF with spaces in place of OLE objects  
   
--   Plain text with a textual representation of OLE objects  
+- Plain text with a textual representation of OLE objects  
   
  To save a file, call the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> method. You can also use the **SaveFile** method to save data to a stream. For more information, see <xref:System.Windows.Forms.RichTextBox.SaveFile%28System.IO.Stream%2CSystem.Windows.Forms.RichTextBoxStreamType%29>.  
   

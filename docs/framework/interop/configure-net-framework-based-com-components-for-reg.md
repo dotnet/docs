@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # How to: Configure .NET Framework-Based COM Components for Registration-Free Activation
 Registration-free activation for .NET Framework-based components is only slightly more complicated than it is for COM components. The setup requires two manifests:  
   
--   COM applications must have a Win32-style application manifest to identify the managed component.  
+- COM applications must have a Win32-style application manifest to identify the managed component.  
   
--   .NET Framework-based components must have a component manifest for activation information needed at run time.  
+- .NET Framework-based components must have a component manifest for activation information needed at run time.  
   
  This topic describes how to associate an application manifest with an application; associate a component manifest with a component; and embed a component manifest in an assembly.  
   

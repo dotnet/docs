@@ -66,11 +66,11 @@ Common properties include:
    This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resolve by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
 * `APP_PATHS`
    This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
-*  `APP_NI_PATHS`
+* `APP_NI_PATHS`
    This list is similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
-*  `NATIVE_DLL_SEARCH_DIRECTORIES`
+* `NATIVE_DLL_SEARCH_DIRECTORIES`
    This property is a list of paths the loader should probe when looking for native libraries called via p/invoke.
-*  `PLATFORM_RESOURCE_ROOTS`
+* `PLATFORM_RESOURCE_ROOTS`
    This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 
 In this sample host, the TPA list is constructed by simply listing all libraries in the current directory:
@@ -167,11 +167,11 @@ Common AppDomain properties include:
    This is a list of assembly paths (delimited by `;` on Windows and `:` on Linux/Mac) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
 * `APP_PATHS`
    This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
-*  `APP_NI_PATHS`
+* `APP_NI_PATHS`
    This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
-*  `NATIVE_DLL_SEARCH_DIRECTORIES`
+* `NATIVE_DLL_SEARCH_DIRECTORIES`
    This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
-*  `PLATFORM_RESOURCE_ROOTS`
+* `PLATFORM_RESOURCE_ROOTS`
    This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 
 In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithMscoree), these properties are set up as follows:

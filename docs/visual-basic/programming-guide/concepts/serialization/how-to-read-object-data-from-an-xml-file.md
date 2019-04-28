@@ -33,11 +33,11 @@ End Sub
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The class being serialized does not have a public, parameterless constructor.  
+- The class being serialized does not have a public, parameterless constructor.  
   
--   The data in the file does not represent data from the class to be deserialized.  
+- The data in the file does not represent data from the class to be deserialized.  
   
--   The file does not exist (<xref:System.IO.IOException>).  
+- The file does not exist (<xref:System.IO.IOException>).  
   
 ## .NET Framework Security  
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  

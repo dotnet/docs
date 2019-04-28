@@ -24,7 +24,7 @@ The following code example demonstrates how use the <xref:System.Windows.Forms.W
 ## Compiling the Code  
  This example requires:  
   
--   References to the `System` and `System.Windows.Forms` assemblies.  
+- References to the `System` and `System.Windows.Forms` assemblies.  
   
 ## See also
 

@@ -21,11 +21,11 @@ Windows Communication Foundation (WCF) provides a new TCP-based network protocol
 ## Port Sharing Architecture  
  The Port Sharing architecture in WCF has three main components:  
   
--   A Worker Process: Any process communicating over net.tcp:// using shared ports.  
+- A Worker Process: Any process communicating over net.tcp:// using shared ports.  
   
--   The WCF TCP transport: Implements the net.tcp:// protocol.  
+- The WCF TCP transport: Implements the net.tcp:// protocol.  
   
--   The Net.TCP Port Sharing Service: Allows many worker processes to share the same TCP port.  
+- The Net.TCP Port Sharing Service: Allows many worker processes to share the same TCP port.  
   
  The Net.TCP Port Sharing Service is a user-mode Windows service that accepts net.tcp:// connections on behalf of the worker processes that connect through it. When a socket connection arrives, the port sharing service inspects the incoming message stream to obtain its destination address. Based on this address, the port sharing service can route the data stream to the application that ultimately processes it.  
   

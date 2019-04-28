@@ -22,15 +22,15 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 ## Type Libraries and Assembly Manifests  
  Type libraries describe characteristics of COM objects, such as member names and data types. Assembly manifests perform the same function for [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] applications. They include information about the following:  
   
--   Assembly identity, version, culture, and digital signature.  
+- Assembly identity, version, culture, and digital signature.  
   
--   Files that make up the assembly implementation.  
+- Files that make up the assembly implementation.  
   
--   Types and resources that make up the assembly. This includes those that are exported from it.  
+- Types and resources that make up the assembly. This includes those that are exported from it.  
   
--   Compile-time dependencies on other assemblies.  
+- Compile-time dependencies on other assemblies.  
   
--   Permissions required for the assembly to run correctly.  
+- Permissions required for the assembly to run correctly.  
   
  For more information about assemblies and assembly manifests, see [Assemblies in .NET](../../../standard/assembly/index.md).  
   

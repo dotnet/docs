@@ -25,11 +25,11 @@ Specifies an assembly whose non-public types a .netmodule can access.
 ## Remarks  
  **-moduleassemblyname** should be used when building a .netmodule, and where the following conditions are true:  
   
--   The .netmodule needs access to non-public types in an existing assembly.  
+- The .netmodule needs access to non-public types in an existing assembly.  
   
--   You know the name of the assembly into which the .netmodule will be built.  
+- You know the name of the assembly into which the .netmodule will be built.  
   
--   The existing assembly has granted friend assembly access to the assembly into which the .netmodule will be built.  
+- The existing assembly has granted friend assembly access to the assembly into which the .netmodule will be built.  
   
  For more information on building a .netmodule, see [-target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
   

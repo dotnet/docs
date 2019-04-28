@@ -11,29 +11,29 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
  In this walkthrough, you perform the following tasks:  
   
--   Create a WPF project to host the Direct3D9 content.  
+- Create a WPF project to host the Direct3D9 content.  
   
--   Import the Direct3D9 content.  
+- Import the Direct3D9 content.  
   
--   Display the Direct3D9 content by using the <xref:System.Windows.Interop.D3DImage> class.  
+- Display the Direct3D9 content by using the <xref:System.Windows.Interop.D3DImage> class.  
   
  When you are finished, you will know how to host Direct3D9 content in a WPF application.  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio.  
+- Visual Studio.  
   
--   DirectX SDK 9 or later.  
+- DirectX SDK 9 or later.  
   
--   A DLL that contains Direct3D9 content in a WPF-compatible format. For more information, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md) and [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md).  
+- A DLL that contains Direct3D9 content in a WPF-compatible format. For more information, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md) and [Walkthrough: Creating Direct3D9 Content for Hosting in WPF](walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md).  
   
 ## Creating the WPF Project  
  The first step is to create the project for the WPF application.  
   
 #### To create the WPF project  
   
--   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+- Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
      MainWindow.xaml opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   

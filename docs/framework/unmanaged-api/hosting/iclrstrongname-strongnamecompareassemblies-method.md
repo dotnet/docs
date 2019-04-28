@@ -41,11 +41,11 @@ HRESULT StrongNameCompareAssemblies (
  `pdwResult`  
  [out] One of the following values:  
   
--   `SN_CMP_DIFFERENT` (0) - Specifies that the assemblies contain different data.  
+- `SN_CMP_DIFFERENT` (0) - Specifies that the assemblies contain different data.  
   
--   `SN_CMP_IDENTICAL` (1) - Specifies that the assemblies are exactly the same, including their signatures and checksum.  
+- `SN_CMP_IDENTICAL` (1) - Specifies that the assemblies are exactly the same, including their signatures and checksum.  
   
--   `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
+- `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  

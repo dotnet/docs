@@ -22,13 +22,13 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Prerequisites  
  This walkthrough requires the following:  
   
--   This walkthrough uses a dedicated folder ("c:\linqtest3") to hold files. Create this folder before you begin the walkthrough.  
+- This walkthrough uses a dedicated folder ("c:\linqtest3") to hold files. Create this folder before you begin the walkthrough.  
   
--   The Northwind sample database.  
+- The Northwind sample database.  
   
      If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest3 folder.  
   
--   A Visual Basic code file generated from the Northwind database.  
+- A Visual Basic code file generated from the Northwind database.  
   
      This walkthrough was written by using the SqlMetal tool with the following command line:  
   
@@ -39,17 +39,17 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Overview  
  This walkthrough consists of six main tasks:  
   
--   Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
+- Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
   
--   Adding the System.Data.Linq assembly to the project.  
+- Adding the System.Data.Linq assembly to the project.  
   
--   Adding the database code file to the project.  
+- Adding the database code file to the project.  
   
--   Creating a connection to the database.  
+- Creating a connection to the database.  
   
--   Setting up the user interface.  
+- Setting up the user interface.  
   
--   Running and testing the application.  
+- Running and testing the application.  
   
 ## Creating a LINQ to SQL Solution  
  In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  

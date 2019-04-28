@@ -8,9 +8,9 @@ You attempted an operation, such as moving or copying a file, which requires sup
   
 ## To correct this error  
   
--   Supply the necessary file name.  
+- Supply the necessary file name.  
   
--   Make sure the path does not end with a directory separator character (\\).  
+- Make sure the path does not end with a directory separator character (\\).  
   
 ## See also
 

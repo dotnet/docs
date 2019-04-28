@@ -20,11 +20,11 @@ The .NET Framework 1.0 introduced the <xref:System.IAsyncResult> pattern, otherw
   
  In this topic:  
   
--   [Tasks and APM](#APM) ([from APM to TAP](#ApmToTap) or [from TAP to APM](#TapToApm))  
+- [Tasks and APM](#APM) ([from APM to TAP](#ApmToTap) or [from TAP to APM](#TapToApm))  
   
--   [Tasks and EAP](#EAP)  
+- [Tasks and EAP](#EAP)  
   
--   [Tasks and wait handles](#WaitHandles) ([from wait handles to TAP](#WHToTap) or [from TAP to wait handles](#TapToWH))  
+- [Tasks and wait handles](#WaitHandles) ([from wait handles to TAP](#WHToTap) or [from TAP to wait handles](#TapToWH))  
   
 <a name="APM"></a>   
 ## Tasks and the Asynchronous Programming Model (APM)  

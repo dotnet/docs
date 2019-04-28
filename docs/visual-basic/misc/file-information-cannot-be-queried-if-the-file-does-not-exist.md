@@ -8,7 +8,7 @@ An attempt has been made to query a <xref:System.IO.FileInfo> object for informa
   
 ## To correct this error  
   
--   Check that you are supplying the correct file name.  
+- Check that you are supplying the correct file name.  
   
 ## See also
 

@@ -35,15 +35,15 @@ When you define a class that inherits from a base class, you sometimes want to r
 ## Guidelines  
  You normally use overriding in the following cases:  
   
--   You are defining polymorphic derived classes.  
+- You are defining polymorphic derived classes.  
   
--   You want the safety of having the compiler enforce the identical element type and calling sequence.  
+- You want the safety of having the compiler enforce the identical element type and calling sequence.  
   
  You normally use shadowing in the following cases:  
   
--   You anticipate that your base class might be modified and define an element using the same name as yours.  
+- You anticipate that your base class might be modified and define an element using the same name as yours.  
   
--   You want the freedom of changing the element type or calling sequence.  
+- You want the freedom of changing the element type or calling sequence.  
   
 ## See also
 

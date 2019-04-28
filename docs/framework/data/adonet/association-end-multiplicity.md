@@ -8,11 +8,11 @@ ms.assetid: 340926ee-aefb-4bef-92cc-453e5251fd03
   
  An association end multiplicity can have one of the following values:  
   
--   one (1): Indicates that exactly one entity type instance exists at the association end.  
+- one (1): Indicates that exactly one entity type instance exists at the association end.  
   
--   zero or one (0..1): Indicates that zero or one entity type instances exist at the association end.  
+- zero or one (0..1): Indicates that zero or one entity type instances exist at the association end.  
   
--   many (\*): Indicates that zero, one, or more entity type instances exist at the association end.  
+- many (\*): Indicates that zero, one, or more entity type instances exist at the association end.  
   
  An association is often characterized by its association end multiplicities. For example, if the ends of an association have multiplicities one (1) and many (\*), the association is called a one-to-many association. In the example below, the `PublishedBy` association is a one-to-many association (a publisher publishes many books and a book is published by one publisher). The `WrittenBy` association is a many-to-many association (a book can have multiple authors and an author can write multiple books).  
   

@@ -7,45 +7,45 @@ author: "BrucePerlerMS"
 # How To: Transform Incoming Claims
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   ASP.NET® Web Forms  
+- ASP.NET® Web Forms  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for creating a simple claims-aware ASP.NET Web Forms application and transforming incoming claims. It also provides instructions for how to test the application to verify that transformed claims are presented when the application is run.  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Overview  
+- Overview  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application  
+- Step 1 – Create a Simple ASP.NET Web Forms Application  
   
--   Step 2 – Implement Claims Transformation Using a Custom ClaimsAuthenticationManager  
+- Step 2 – Implement Claims Transformation Using a Custom ClaimsAuthenticationManager  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Objectives  
   
--   Configure an ASP.NET Web Forms application for claims-based authentication  
+- Configure an ASP.NET Web Forms application for claims-based authentication  
   
--   Transform incoming claims by adding an Administrator role claim  
+- Transform incoming claims by adding an Administrator role claim  
   
--   Test the ASP.NET Web Forms application to see if it is working properly  
+- Test the ASP.NET Web Forms application to see if it is working properly  
   
 ## Overview  
  WIF exposes a class named <xref:System.Security.Claims.ClaimsAuthenticationManager> that enables users to modify claims before they are presented to a relying party (RP) application. The <xref:System.Security.Claims.ClaimsAuthenticationManager> is useful for separation of concerns between authentication and the underlying application code. The example below demonstrates how to add a role to the claims in the incoming <xref:System.Security.Claims.ClaimsPrincipal> that may be required by the RP.  
   
 ## Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application  
+- Step 1 – Create a Simple ASP.NET Web Forms Application  
   
--   Step 2 – Implement Claims Transformation Using a Custom ClaimsAuthenticationManager  
+- Step 2 – Implement Claims Transformation Using a Custom ClaimsAuthenticationManager  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Step 1 – Create a Simple ASP.NET Web Forms Application  
  In this step, you will create a new ASP.NET Web Forms application.  

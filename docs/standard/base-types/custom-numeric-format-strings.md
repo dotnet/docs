@@ -102,11 +102,11 @@ You can create a custom numeric format string, which consists of one or more cus
 ## The "," custom specifier  
  The "," character serves as both a group separator and a number scaling specifier.  
   
--   Group separator: If one or more commas are specified between two digit placeholders (0 or #) that format the integral digits of a number, a group separator character is inserted between each number group in the integral part of the output.  
+- Group separator: If one or more commas are specified between two digit placeholders (0 or #) that format the integral digits of a number, a group separator character is inserted between each number group in the integral part of the output.  
   
      The <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A> and <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> properties of the current <xref:System.Globalization.NumberFormatInfo> object determine the character used as the number group separator and the size of each number group. For example, if the string "#,#" and the invariant culture are used to format the number 1000, the output is "1,000".  
   
--   Number scaling specifier: If one or more commas are specified immediately to the left of the explicit or implicit decimal point, the number to be formatted is divided by 1000 for each comma. For example, if the string "0,," is used to format the number 100 million, the output is "100".  
+- Number scaling specifier: If one or more commas are specified immediately to the left of the explicit or implicit decimal point, the number to be formatted is divided by 1000 for each comma. For example, if the string "0,," is used to format the number 100 million, the output is "100".  
   
  You can use group separator and number scaling specifiers in the same format string. For example, if the string "#,0,," and the invariant culture are used to format the number one billion, the output is "1,000".  
   

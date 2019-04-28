@@ -1,12 +1,12 @@
 ---
-title: Apply feature engineering for model training on categorical data - ML.NET
+title: Apply feature engineering for model training on categorical data 
 description: Learn how to apply feature engineering for machine learning model training on categorical data with ML.NET
 ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to apply feature engineering for my machine learning model training on categorical data with ML.NET so that I can use my model in the ML.NET processing pipeline.
 ---
 
-# Apply feature engineering for model training on categorical data - ML.NET
+# Apply feature engineering for model training on categorical data
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).

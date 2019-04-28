@@ -14,15 +14,15 @@ ms.assetid: 0fc04394-4e47-49ca-b0cf-8cd1161d95b9
 # WPF Security Strategy - Security Engineering
 Trustworthy Computing is a Microsoft initiative for ensuring the production of secure code. A key element of the Trustworthy Computing initiative is the [!INCLUDE[TLA#tla_sdl](../../../includes/tlasharptla-sdl-md.md)]. The [!INCLUDE[TLA2#tla_sdl](../../../includes/tla2sharptla-sdl-md.md)] is an engineering practice that is used in conjunction with standard engineering processes to facilitate the delivery of secure code. The [!INCLUDE[TLA2#tla_sdl](../../../includes/tla2sharptla-sdl-md.md)] consists of ten phases that combine best practices with formalization, measurability, and additional structure, including:  
   
--   Security design analysis  
+- Security design analysis  
   
--   Tool-based quality checks  
+- Tool-based quality checks  
   
--   Penetration testing  
+- Penetration testing  
   
--   Final security review  
+- Final security review  
   
--   Post release product security management  
+- Post release product security management  
   
 ## WPF Specifics  
  The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] engineering team both applies and extends the [!INCLUDE[TLA2#tla_sdl](../../../includes/tla2sharptla-sdl-md.md)], the combination of which includes the following key aspects:  
@@ -49,11 +49,11 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
  Threat modeling is applied throughout [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and includes the following:  
   
--   How the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] parser reads files, maps text to corresponding object model classes, and creates the actual code.  
+- How the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] parser reads files, maps text to corresponding object model classes, and creates the actual code.  
   
--   How a window handle (hWnd) is created, sends messages, and is used for rendering the contents of a window.  
+- How a window handle (hWnd) is created, sends messages, and is used for rendering the contents of a window.  
   
--   How data binding obtains resources and interacts with the system.  
+- How data binding obtains resources and interacts with the system.  
   
  These threat models are important for identifying security design requirements and threat mitigations during the development process.  
   
@@ -61,23 +61,23 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 ### Source Analysis and Editing Tools  
  In addition to the manual security code review elements of the [!INCLUDE[TLA2#tla_sdl](../../../includes/tla2sharptla-sdl-md.md)], the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] team uses several tools for source analysis and associated edits to decrease security vulnerabilities. A wide range of source tools are used, and include the following:  
   
--   **FXCop**: Finds common security issues in managed code ranging from inheritance rules to code access security usage to how to safely interoperate with unmanaged code. See [FXCop](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/bb429476%28v=vs.80%29).  
+- **FXCop**: Finds common security issues in managed code ranging from inheritance rules to code access security usage to how to safely interoperate with unmanaged code. See [FXCop](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/bb429476%28v=vs.80%29).  
   
--   **Prefix/Prefast**: Finds security vulnerabilities and common security issues in unmanaged code such as buffer overruns, format string issues, and error checking.  
+- **Prefix/Prefast**: Finds security vulnerabilities and common security issues in unmanaged code such as buffer overruns, format string issues, and error checking.  
   
--   **Banned APIs**: Searches source code to identify accidental usage of functions that are well-known for causing security issues, such as `strcpy`. Once identified, these functions are replaced with alternatives that are more security.  
+- **Banned APIs**: Searches source code to identify accidental usage of functions that are well-known for causing security issues, such as `strcpy`. Once identified, these functions are replaced with alternatives that are more security.  
   
 <a name="techniques"></a>   
 ### Testing Techniques  
  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses a variety of security testing techniques that include:  
   
--   **Whitebox Testing**: Testers view source code, and then build exploit tests  
+- **Whitebox Testing**: Testers view source code, and then build exploit tests  
   
--   **Blackbox Testing**: Testers try to find security exploits by examining the API and features, and then try to attack the product.  
+- **Blackbox Testing**: Testers try to find security exploits by examining the API and features, and then try to attack the product.  
   
--   **Regressing Security Issues from other Products**: Where relevant, security issues from related products are tested. For example, appropriate variants of approximately sixty security issues for [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)] have been identified and tried for their applicability to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+- **Regressing Security Issues from other Products**: Where relevant, security issues from related products are tested. For example, appropriate variants of approximately sixty security issues for [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)] have been identified and tried for their applicability to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
   
--   **Tools-Based Penetration Testing through File Fuzzing**: File fuzzing is the exploitation of a file reader's input range through a variety of inputs. One example in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] where this technique is used is to check for failure in image decoding code.  
+- **Tools-Based Penetration Testing through File Fuzzing**: File fuzzing is the exploitation of a file reader's input range through a variety of inputs. One example in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] where this technique is used is to check for failure in image decoding code.  
   
 <a name="critical_code"></a>   
 ### Critical Code Management  

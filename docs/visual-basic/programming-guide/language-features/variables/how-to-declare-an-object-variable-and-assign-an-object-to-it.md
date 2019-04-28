@@ -26,11 +26,11 @@ Dim thisObject As Object= "This is an Object"
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System> namespace.  
+- A reference to the <xref:System> namespace.  
   
--   A class, structure, or module in which to put the `Dim` statement.  
+- A class, structure, or module in which to put the `Dim` statement.  
   
--   A procedure in which to put the assignment statement.  
+- A procedure in which to put the assignment statement.  
   
 ## See also
 

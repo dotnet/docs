@@ -21,11 +21,11 @@ These examples show various ways to write text to a file. The first two examples
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The file exists and is read-only.  
+- The file exists and is read-only.  
   
--   The path name may be too long.  
+- The path name may be too long.  
   
--   The disk may be full.  
+- The disk may be full.  
   
 ## See also
 

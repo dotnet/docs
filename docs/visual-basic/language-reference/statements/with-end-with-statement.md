@@ -42,9 +42,9 @@ End With
   
  If your code accesses the same object in multiple statements, you gain the following benefits by using the `With` statement:  
   
--   You don't need to evaluate a complex expression multiple times or assign the result to a temporary variable to refer to its members multiple times.  
+- You don't need to evaluate a complex expression multiple times or assign the result to a temporary variable to refer to its members multiple times.  
   
--   You make your code more readable by eliminating repetitive qualifying expressions.  
+- You make your code more readable by eliminating repetitive qualifying expressions.  
   
  The data type of `objectExpression` can be any class or structure type or even a Visual Basic elementary type such as `Integer`.  If `objectExpression` results in anything other than an object, you can only read the values of its members or invoke methods, and you get an error if you try to assign values to members of a structure used in a `With...End With` statement.  This is the same error you would get if you invoked a method that returned a structure and immediately accessed and assigned a value to a member of the function’s result, such as `GetAPoint().x = 1`.  The problem in both cases is that the structure exists only on the call stack, and there is no way a modified structure member in these situations can write to  a location such that any other code in the program can observe the change.  
   

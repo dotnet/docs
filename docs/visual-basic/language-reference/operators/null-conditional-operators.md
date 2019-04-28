@@ -33,6 +33,24 @@ If customers IsNot Nothing Then
 End If
 ```
 
+Sometimes you need to take an action on an object that may be null, based on the value of a boolean member on that object (like the boolean property `IsAllowedFreeShipping` in the code below):
+
+```vb
+  Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.
+  
+  If customer IsNot Nothing AndAlso customer.IsAllowedFreeShipping Then
+   ApplyFreeShippingToOrders(customer)
+  End If
+```
+
+You can shorten your code and avoid manually checking for null by using the null-conditional operator as follows:
+
+```vb
+ Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.
+ 
+ If customer?.IsAllowedFreeShipping Then ApplyFreeShippingToOrders(customer)
+```
+
 The null-conditional operators are short-circuiting.  If one operation in a chain of conditional member access and index operations returns `Nothing`, the rest of the chain’s execution stops.  In the following example, `C(E)` isn't evaluated if `A`, `B`, or `C` evaluates to `Nothing`.
 
 ```vb

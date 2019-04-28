@@ -204,11 +204,11 @@ Because the primary function of type embedding is to support embedding of type i
 
 3. Open the SampleClass.vb file. Add the following lines of code to the SampleClass class.
 
-```vb
-Public Function GetDate() As DateTime Implements ISampleInterface.GetDate
-    Return Now
-End Function
-```
+    ```vb
+    Public Function GetDate() As DateTime Implements ISampleInterface.GetDate
+        Return Now
+    End Function
+    ```
 
     Save the file.
 

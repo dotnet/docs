@@ -12,13 +12,16 @@ helpviewer_keywords:
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
 ---
 # How to: Create a Linear Gradient
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides horizontal, vertical, and diagonal linear gradients. By default, the color in a linear gradient changes uniformly. However, you can customize a linear gradient so that the color changes in a non-uniform fashion.  
+GDI+ provides horizontal, vertical, and diagonal linear gradients. By default, the color in a linear gradient changes uniformly. However, you can customize a linear gradient so that the color changes in a non-uniform fashion.  
+
+> [!NOTE]
+> The examples in this article are methods that are called from a control's <xref:System.Windows.Forms.Control.Paint> event handler.  
+
+The following example fills a line, an ellipse, and a rectangle with a horizontal linear gradient brush.  
   
- The following example fills a line, an ellipse, and a rectangle with a horizontal linear gradient brush.  
+The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor receives four arguments: two points and two colors. The first point (0, 10) is associated with the first color (red), and the second point (200, 10) is associated with the second color (blue). As you would expect, the line drawn from (0, 10) to (200, 10) changes gradually from red to blue.  
   
- The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor receives four arguments: two points and two colors. The first point (0, 10) is associated with the first color (red), and the second point (200, 10) is associated with the second color (blue). As you would expect, the line drawn from (0, 10) to (200, 10) changes gradually from red to blue.  
-  
- The 10s in the points (50, 10) and (200, 10) are not important. What is important is that the two points have the same second coordinate — the line connecting them is horizontal. The ellipse and the rectangle also change gradually from red to blue as the horizontal coordinate goes from 0 to 200.  
+ The 10s in the points (0, 10) and (200, 10) are not important. What is important is that the two points have the same second coordinate — the line connecting them is horizontal. The ellipse and the rectangle also change gradually from red to blue as the horizontal coordinate goes from 0 to 200.  
   
  The following illustration shows the line, the ellipse, and the rectangle. Note that the color gradient repeats itself as the horizontal coordinate increases beyond 200.  
   
@@ -33,7 +36,7 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  In the preceding example, the color components change linearly as you move from a horizontal coordinate of 0 to a horizontal coordinate of 200. For example, a point whose first coordinate is halfway between 0 and 200 will have a blue component that is halfway between 0 and 255.  
   
- [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] allows you to adjust the way a color varies from one edge of a gradient to the other. Suppose you want to create a gradient brush that changes from black to red according to the following table.  
+ GDI+ allows you to adjust the way a color varies from one edge of a gradient to the other. Suppose you want to create a gradient brush that changes from black to red according to the following table.  
   
 |Horizontal coordinate|RGB components|  
 |---------------------------|--------------------|  
@@ -43,12 +46,12 @@ ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
   
  Note that the red component is at half intensity when the horizontal coordinate is only 20 percent of the way from 0 to 200.  
   
- The following example sets the <xref:System.Drawing.Drawing2D.LinearGradientBrush.Blend%2A> property of a <xref:System.Drawing.Drawing2D.LinearGradientBrush> object to associate three relative intensities with three relative positions. As in the preceding table, a relative intensity of 0.5 is associated with a relative position of 0.2. The code fills an ellipse and a rectangle with the gradient brush.  
+ The following example sets the <xref:System.Drawing.Drawing2D.LinearGradientBrush.Blend%2A?displayProperty=nameWithType> property to associate three relative intensities with three relative positions. As in the preceding table, a relative intensity of 0.5 is associated with a relative position of 0.2. The code fills an ellipse and a rectangle with the gradient brush.  
   
  The following illustration shows the resulting ellipse and rectangle.  
   
  ![Linear Gradient](./media/cslineargradient2.png "cslineargradient2")  
-  
+
 ### To customize linear gradients  
   
 -   Pass in the opaque black and opaque red as the third and fourth argument, respectively.  

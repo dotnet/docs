@@ -236,7 +236,7 @@ one location. These additional private methods keep each method small
 and focused. *Local functions* enable you to declare methods
 inside the context of another method. Local functions make it easier for readers
 of the class to see that the local method is only called from the context
-in which is it declared.
+in which it is declared.
 
 There are two common use cases for local functions: public iterator
 methods and public async methods. Both types of methods generate

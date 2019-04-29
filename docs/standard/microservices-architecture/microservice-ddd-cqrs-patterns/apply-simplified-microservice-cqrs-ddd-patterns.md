@@ -32,7 +32,7 @@ The application layer can be the Web API itself. The important design aspect her
 ## Additional resources
 
  - **Greg Young. Versioning in an Event Sourced System** (Free to read online e-book) \
-   <https://leanpub.com/esversioning>
+   <https://leanpub.com/esversioning/read>
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

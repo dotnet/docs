@@ -35,7 +35,7 @@ public class HousingData
 
 ### Output Data
 
-Like input columns names, ML.NET has default names for columns that contain the predicted value of a model. Depending on the task it may be different. 
+Like input column names, ML.NET has default names for columns that contain the predicted value of a model. Depending on the task it may be different. 
 
 Because the algorithm used in this sample is a linear regression algorithm, the default name of the output column is `Score` which is defined by the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute on the `PredictedPrice` property.
 

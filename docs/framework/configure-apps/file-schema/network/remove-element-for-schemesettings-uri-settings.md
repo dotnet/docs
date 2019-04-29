@@ -1,9 +1,9 @@
 ---
-title: "&lt;remove&gt; Element for schemeSettings (Uri Settings)"
+title: "<remove> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
 ---
-# &lt;remove&gt; Element for schemeSettings (Uri Settings)
+# \<remove> Element for schemeSettings (Uri Settings)
 Removes a scheme setting for a scheme name.  
   
  \<configuration>  
@@ -69,6 +69,7 @@ Removes a scheme setting for a scheme name.
 ```  
   
 ## See also
+
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

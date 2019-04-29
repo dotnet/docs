@@ -1,9 +1,9 @@
 ---
-title: "&lt;routing&gt; of &lt;serviceBehavior&gt;"
+title: "<routing> of <serviceBehavior>"
 ms.date: "03/30/2017"
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
 ---
-# &lt;routing&gt; of &lt;serviceBehavior&gt;
+# \<routing> of \<serviceBehavior>
 Provides run-time access to the routing service to allow dynamic modification of the routing configuration.  
   
  \<system.ServiceModel>  
@@ -50,4 +50,3 @@ Provides run-time access to the routing service to allow dynamic modification of
  When added to the service’s behavior configuration, this configuration element enables routing for the service. You can specify the actual routing table to be used by the service in this element.  
   
  Using this configuration section, you can change your routing settings on the fly when your deployment pattern changes. At runtime, you can register your own routing extension with new routing settings and the routing service will begin using the updated configuration information for new messages and sessions, while leaving in-flight messages/sessions using whatever rules were in place when they started.  This gives you the ability to do session-safe, recycle-less reconfiguration of the Routing Service during runtime.  
-  

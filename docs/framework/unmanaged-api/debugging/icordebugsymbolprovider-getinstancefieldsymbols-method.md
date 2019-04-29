@@ -20,7 +20,7 @@ HRESULT GetInstanceFieldSymbols(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSignature`  
  [in] The number of bytes in the `typeSig` array.  
   
@@ -51,6 +51,7 @@ HRESULT GetInstanceFieldSymbols(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [GetStaticFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getstaticfieldsymbols-method.md)
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

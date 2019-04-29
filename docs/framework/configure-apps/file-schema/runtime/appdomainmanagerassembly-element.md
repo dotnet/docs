@@ -1,5 +1,5 @@
 ---
-title: "&lt;appDomainManagerAssembly&gt; Element"
+title: "<appDomainManagerAssembly> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<appDomainManagerAssembly> element"
@@ -8,7 +8,7 @@ ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;appDomainManagerAssembly&gt; Element
+# \<appDomainManagerAssembly> Element
 Specifies the assembly that provides the application domain manager for the default application domain in the process.  
   
  \<configuration>  
@@ -68,6 +68,7 @@ Specifies the assembly that provides the application domain manager for the defa
 ```  
   
 ## See also
+
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
 - [\<appDomainManagerType> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)

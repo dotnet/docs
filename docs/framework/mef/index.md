@@ -469,11 +469,11 @@ public class Mod : SimpleCalculator.IOperation
 ## Conclusion
  This topic covered the basic concepts of MEF.
 
--   Parts, catalogs, and the composition container
+- Parts, catalogs, and the composition container
 
      Parts and the composition container are the basic building blocks of a MEF application. A part is any object that imports or exports a value, up to and including itself. A catalog provides a collection of parts from a particular source. The composition container uses the parts provided by a catalog to perform composition, the binding of imports to exports.
 
--   Imports and exports
+- Imports and exports
 
      Imports and exports are the way by which components communicate. With an import, the component specifies a need for a particular value or object, and with an export it specifies the availability of a value. Each import is matched with a list of exports by way of its contract.
 

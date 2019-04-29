@@ -1,5 +1,5 @@
 ---
-title: "&lt;PreferComInsteadOfManagedRemoting&gt; Element"
+title: "<PreferComInsteadOfManagedRemoting> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<PreferComInsteadOfManagedRemoting> element"
@@ -8,7 +8,7 @@ ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;PreferComInsteadOfManagedRemoting&gt; Element
+# \<PreferComInsteadOfManagedRemoting> Element
 Specifies whether the runtime will use COM interop instead of remoting for all calls across application domain boundaries.  
   
  \<configuration>  
@@ -50,9 +50,9 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 ## Remarks  
  When you set the `enabled` attribute to `true`, the runtime behaves as follows:  
   
--   The runtime does not call [IUnknown::QueryInterface](https://go.microsoft.com/fwlink/?LinkID=144867) for an [IManagedObject](../../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md) interface when an [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface enters the domain through a COM interface. Instead, it constructs a [Runtime Callable Wrapper](../../../../../docs/framework/interop/runtime-callable-wrapper.md) (RCW) around the object.  
+- The runtime does not call [IUnknown::QueryInterface](https://go.microsoft.com/fwlink/?LinkID=144867) for an [IManagedObject](../../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md) interface when an [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface enters the domain through a COM interface. Instead, it constructs a [Runtime Callable Wrapper](../../../../../docs/framework/interop/runtime-callable-wrapper.md) (RCW) around the object.  
   
--   The runtime returns E_NOINTERFACE when it receives a `QueryInterface` call for an [IManagedObject](../../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md) interface for any [COM Callable Wrapper](../../../../../docs/framework/interop/com-callable-wrapper.md) (CCW) that has been created in this domain.  
+- The runtime returns E_NOINTERFACE when it receives a `QueryInterface` call for an [IManagedObject](../../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md) interface for any [COM Callable Wrapper](../../../../../docs/framework/interop/com-callable-wrapper.md) (CCW) that has been created in this domain.  
   
  These two behaviors ensure that all calls over COM interfaces between managed objects across application domain boundaries use COM and COM interop instead of remoting.  
   
@@ -68,5 +68,6 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 ```  
   
 ## See also
+
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

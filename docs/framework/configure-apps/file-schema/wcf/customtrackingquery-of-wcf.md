@@ -1,9 +1,9 @@
 ---
-title: "&lt;customTrackingQuery&gt; of WCF"
+title: "<customTrackingQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 164446ae-8440-4b67-b217-6786cfae1e01
 ---
-# &lt;customTrackingQuery&gt; of WCF
+# \<customTrackingQuery> of WCF
 
 Represents a query that is used to track events that you define in your code activities. The query is necessary for a tracking participant to subscribe to custom tracking records.
 

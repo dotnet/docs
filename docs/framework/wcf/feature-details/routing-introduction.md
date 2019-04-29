@@ -150,9 +150,9 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
   
  While many Routing Service configurations use exclusive filter logic that routes messages to only one specific endpoint, you may need to route a given message to multiple destination endpoints. To multicast a message to multiple destinations, the following conditions must be true:  
   
--   The channel shape must not be request-reply (though may be one-way or duplex,) because only one reply can be received by the client application in response to the request.  
+- The channel shape must not be request-reply (though may be one-way or duplex,) because only one reply can be received by the client application in response to the request.  
   
--   Multiple filters must return `true` when evaluating the message.  
+- Multiple filters must return `true` when evaluating the message.  
   
  If these conditions are met, the message is routed to all endpoints of all filters that evaluate to `true`. The following example defines a routing configuration that results in messages being routed to both endpoints if the endpoint address in the message is `http://localhost:8000/routingservice/router/rounding`.  
   
@@ -189,33 +189,33 @@ rc.FilterTable.Add(new EndpointAddressMessageFilter(new EndpointAddress(
   
  **Request processing**  
   
--   Get the **MessageVersion** of the outbound binding/channel.  
+- Get the **MessageVersion** of the outbound binding/channel.  
   
--   Get the body reader for the original message.  
+- Get the body reader for the original message.  
   
--   Create a new message with the same action, body reader, and a new **MessageVersion**.  
+- Create a new message with the same action, body reader, and a new **MessageVersion**.  
   
--   If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
+- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
   
--   Copy all message properties to the new message.  
+- Copy all message properties to the new message.  
   
--   Store the original request message to use when processing the response.  
+- Store the original request message to use when processing the response.  
   
--   Return the new request message.  
+- Return the new request message.  
   
  **Response processing**  
   
--   Get the **MessageVersion** of the original request message.  
+- Get the **MessageVersion** of the original request message.  
   
--   Get the body reader for the received response message.  
+- Get the body reader for the received response message.  
   
--   Create a new response message with the same action, body reader, and the **MessageVersion** of the original request message.  
+- Create a new response message with the same action, body reader, and the **MessageVersion** of the original request message.  
   
--   If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
+- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
   
--   Copy the message properties to the new message.  
+- Copy the message properties to the new message.  
   
--   Return the new response message.  
+- Return the new response message.  
   
  By default, the **SoapProcessingBehavior** is automatically added to the client endpoints by the <xref:System.ServiceModel.Routing.RoutingBehavior> when the service starts; however, you can control whether SOAP processing is added to all client endpoints by using the <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> property. You can also add the behavior directly to a specific endpoint and enable or disable this behavior at the endpoint level if a more granular control of SOAP processing is required.  
   
@@ -351,19 +351,19 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), backupList);
 |Pattern|Session|Transaction|Receive Context|Backup List Supported|Notes|  
 |-------------|-------------|-----------------|---------------------|---------------------------|-----------|  
 |One-Way||||Yes|Attempts to resend the message on a backup endpoint. If this message is being multicast, only the message on the failed channel is moved to its backup destination.|  
-|One-Way||![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
-|One-Way|||![Check mark](media/checkmark.gif "Checkmark")|Yes|Attempts to resend the message on a backup endpoint. After the message is successfully received, complete all receive contexts. If the message is not successfully received by any endpoint, do not complete the receive context.<br /><br /> When this message is being multicast, the receive context is only completed if the message is successfully received by at least one endpoint (primary or backup). If none of the endpoints in any of the multicast paths successfully receive the message, do not complete the receive context.|  
-|One-Way||![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")|Yes|Abort the previous transaction, create a new transaction, and resend all messages. Messages that encountered an error are transmitted to a backup destination.<br /><br /> After a transaction has been created in which all transmissions succeed, complete the receive contexts and commit the transaction.|  
-|One-Way|![Check mark](media/checkmark.gif "Checkmark")|||Yes|Attempts to resend the message on a backup endpoint. In a multicast scenario only the messages in a session that encountered an error or in a session whose session close failed are resent to backup destinations.|  
-|One-Way|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
-|One-Way|![Check mark](media/checkmark.gif "Checkmark")||![Check mark](media/checkmark.gif "Checkmark")|Yes|Attempts to resend the message on a backup endpoint. After all message sends complete without error, the session indicates no more messages and the Routing Service successfully closes all outbound session channel(s), all receive contexts are completed, and the inbound session channel is closed.|  
-|One-Way|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")|Yes|Abort the current transaction and create a new one. Resend all previous messages in the session. After a transaction has been created in which all messages have been successfully sent and the session indicates no more messages, all the outbound session channels are closed, receive contexts are all completed with the transaction, the inbound session channel is closed, and the transaction is committed.<br /><br /> When the sessions are being multicast the messages that had no error are resent to the same destination as before, and messages that encountered an error are sent to backup destinations.|  
+|One-Way||✓||No|An exception is thrown and the transaction is rolled back.|  
+|One-Way|||✓|Yes|Attempts to resend the message on a backup endpoint. After the message is successfully received, complete all receive contexts. If the message is not successfully received by any endpoint, do not complete the receive context.<br /><br /> When this message is being multicast, the receive context is only completed if the message is successfully received by at least one endpoint (primary or backup). If none of the endpoints in any of the multicast paths successfully receive the message, do not complete the receive context.|  
+|One-Way||✓|✓|Yes|Abort the previous transaction, create a new transaction, and resend all messages. Messages that encountered an error are transmitted to a backup destination.<br /><br /> After a transaction has been created in which all transmissions succeed, complete the receive contexts and commit the transaction.|  
+|One-Way|✓|||Yes|Attempts to resend the message on a backup endpoint. In a multicast scenario only the messages in a session that encountered an error or in a session whose session close failed are resent to backup destinations.|  
+|One-Way|✓|✓||No|An exception is thrown and the transaction is rolled back.|  
+|One-Way|✓||✓|Yes|Attempts to resend the message on a backup endpoint. After all message sends complete without error, the session indicates no more messages and the Routing Service successfully closes all outbound session channel(s), all receive contexts are completed, and the inbound session channel is closed.|  
+|One-Way|✓|✓|✓|Yes|Abort the current transaction and create a new one. Resend all previous messages in the session. After a transaction has been created in which all messages have been successfully sent and the session indicates no more messages, all the outbound session channels are closed, receive contexts are all completed with the transaction, the inbound session channel is closed, and the transaction is committed.<br /><br /> When the sessions are being multicast the messages that had no error are resent to the same destination as before, and messages that encountered an error are sent to backup destinations.|  
 |Two-Way||||Yes|Send to a backup destination.  After a channel returns a response message, return the response to the original client.|  
-|Two-Way|![Check mark](media/checkmark.gif "Checkmark")|||Yes|Send all messages on the channel to a backup destination.  After a channel returns a response message, return the response to the original client.|  
-|Two-Way||![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
-|Two-Way|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
+|Two-Way|✓|||Yes|Send all messages on the channel to a backup destination.  After a channel returns a response message, return the response to the original client.|  
+|Two-Way||✓||No|An exception is thrown and the transaction is rolled back.|  
+|Two-Way|✓|✓||No|An exception is thrown and the transaction is rolled back.|  
 |Duplex||||No|Non-session duplex communication is not currently supported.|  
-|Duplex|![Check mark](media/checkmark.gif "Checkmark")|||Yes|Send to a backup destination.|  
+|Duplex|✓|||Yes|Send to a backup destination.|  
   
 ## Hosting  
  Because the Routing Service is implemented as a WCF service, it must be either self-hosted within an application or hosted by IIS or WAS. It is recommended that the Routing Service be hosted in either IIS, WAS, or a Windows Service application to take advantage of the automatic start and life-cycle management features available in these hosting environments.  
@@ -396,6 +396,7 @@ using (ServiceHost serviceHost =
  To use Windows credential impersonation with the routing service you need to configure both the credentials and the service. The client credentials object (<xref:System.ServiceModel.Security.WindowsClientCredential>, accessable from the <xref:System.ServiceModel.ChannelFactory>) defines an <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property that must be set to permit impersonation. Finally, on the service you need to configure the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> behavior to set `ImpersonateCallerForAllOperations` to `true`. The routing service uses this flag to decide whether to create the clients for forwarding messages with impersonation enabled.  
   
 ## See also
+
 - [Message Filters](message-filters.md)
 - [Routing Contracts](routing-contracts.md)
 - [Choosing a Filter](choosing-a-filter.md)

@@ -31,7 +31,7 @@ HRESULT GetName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchname`  
  [in] The size of the `szName` array.  
   
@@ -54,5 +54,3 @@ HRESULT GetName(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-

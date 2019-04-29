@@ -29,7 +29,7 @@ HRESULT IsInMemory(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pInMemory`  
  [out] `true` if this module exists only in memory; otherwise, `false`.  
   
@@ -46,5 +46,3 @@ HRESULT IsInMemory(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-

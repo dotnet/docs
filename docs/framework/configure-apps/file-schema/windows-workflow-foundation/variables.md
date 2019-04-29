@@ -1,10 +1,10 @@
 ---
-title: "&lt;variables&gt;"
+title: "<variables>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: da0fd144-dda9-4613-b650-fe6325076513
 ---
-# &lt;variables&gt;
+# \<variables>
 Represents a collection of variables associated with this activity query.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
@@ -70,6 +70,7 @@ Represents a collection of variables associated with this activity query.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.VariableElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>
 - [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

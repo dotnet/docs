@@ -33,7 +33,7 @@ HRESULT NewParameterizedObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConstructor`  
  [in] A pointer to an ICorDebugFunction object that represents the constructor of the object to be instantiated.  
   

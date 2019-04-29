@@ -13,7 +13,7 @@ A <xref:System.Windows.Controls.Primitives.StatusBar> is a horizontal area at th
   
  The following illustration shows an example of a <xref:System.Windows.Controls.Primitives.StatusBar>.  
   
- ![Status bar](../../../../docs/framework/wpf/controls/media/ss-ctl-statusbar.GIF "SS_CTL_statusbar")  
+ ![Status bar](./media/ss-ctl-statusbar.GIF "SS_CTL_statusbar")  
   
 ## In This Section  
   

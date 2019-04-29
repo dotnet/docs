@@ -1,10 +1,10 @@
 ---
-title: "&lt;certificateReference&gt;"
+title: "<certificateReference>"
 ms.date: "03/30/2017"
 ms.assetid: 2ac8bc14-e9f1-48fb-b662-f5991558fbe4
 author: "BrucePerlerMS"
 ---
-# &lt;certificateReference&gt;
+# \<certificateReference>
 Specifies settings that are used to find and validate an X.509 certificate in a certificate store.  
   
  \<system.identityModel.services>  

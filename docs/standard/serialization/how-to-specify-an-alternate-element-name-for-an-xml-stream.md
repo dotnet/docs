@@ -15,25 +15,25 @@ ms.assetid: 5cc1c0b0-f94b-4525-9a41-88a582cd6668
 ---
 # How to: Specify an Alternate Element Name for an XML Stream
   
-Using the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx), you can generate more than one XML stream with the same set of classes. You might want to do this because two different XML Web services require the same basic information, with only slight differences. For example, imagine two XML Web services that process orders for books, and thus both require ISBN numbers. One service uses the tag \<ISBN> while the second uses the tag \<BookID>. You have a class named `Book` that contains a field named `ISBN`. When an instance of the `Book` class is serialized, it will, by default, use the member name (ISBN) as the tag element name. For the first XML Web service, this is as expected. But to send the XML stream to the second XML Web service, you must override the serialization so that the tag's element name is `BookID`.  
+Using the <xref:System.Xml.Serialization.XmlSerializer>, you can generate more than one XML stream with the same set of classes. You might want to do this because two different XML Web services require the same basic information, with only slight differences. For example, imagine two XML Web services that process orders for books, and thus both require ISBN numbers. One service uses the tag \<ISBN> while the second uses the tag \<BookID>. You have a class named `Book` that contains a field named `ISBN`. When an instance of the `Book` class is serialized, it will, by default, use the member name (ISBN) as the tag element name. For the first XML Web service, this is as expected. But to send the XML stream to the second XML Web service, you must override the serialization so that the tag's element name is `BookID`.  
   
 ## To create an XML stream with an alternate element name  
   
-1.  Create an instance of the <xref:System.Xml.Serialization.XmlElementAttribute> class.  
+1. Create an instance of the <xref:System.Xml.Serialization.XmlElementAttribute> class.  
   
-2.  Set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> of the <xref:System.Xml.Serialization.XmlElementAttribute> to "BookID".  
+2. Set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> of the <xref:System.Xml.Serialization.XmlElementAttribute> to "BookID".  
   
-3.  Create an instance of the <xref:System.Xml.Serialization.XmlAttributes> class.  
+3. Create an instance of the <xref:System.Xml.Serialization.XmlAttributes> class.  
   
-4.  Add the `XmlElementAttribute` object to the collection accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of <xref:System.Xml.Serialization.XmlAttributes> .  
+4. Add the `XmlElementAttribute` object to the collection accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of <xref:System.Xml.Serialization.XmlAttributes> .  
   
-5.  Create an instance of the <xref:System.Xml.Serialization.XmlAttributeOverrides> class.  
+5. Create an instance of the <xref:System.Xml.Serialization.XmlAttributeOverrides> class.  
   
-6.  Add the `XmlAttributes` to the <xref:System.Xml.Serialization.XmlAttributeOverrides>, passing the type of the object to override and the name of the member being overridden.  
+6. Add the `XmlAttributes` to the <xref:System.Xml.Serialization.XmlAttributeOverrides>, passing the type of the object to override and the name of the member being overridden.  
   
-7.  Create an instance of the `XmlSerializer` class with `XmlAttributeOverrides`.  
+7. Create an instance of the `XmlSerializer` class with `XmlAttributeOverrides`.  
   
-8.  Create an instance of the `Book` class, and serialize or deserialize it.  
+8. Create an instance of the `Book` class, and serialize or deserialize it.  
   
 ## Example  
   
@@ -91,7 +91,6 @@ public class SerializeOverride()
 - <xref:System.Xml.Serialization.XmlAttributes>
 - <xref:System.Xml.Serialization.XmlAttributeOverrides>
 - [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
-- [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)
+- <xref:System.Xml.Serialization.XmlSerializer>
 - [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

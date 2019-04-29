@@ -20,12 +20,10 @@ ms.assetid: 5e745508-4861-4b48-b5f6-5fc7ce5289d2
 ---
 # Marking Routed Events as Handled, and Class Handling
 Handlers for a routed event can mark the event handled within the event data. Handling the event will effectively shorten the route. Class handling is a programming concept that is supported by routed events. A class handler has the opportunity to handle a particular routed event at a class level with a handler that is invoked before any instance handler on any instance of the class.  
-  
 
-  
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic elaborates on concepts introduced in the [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).  
+ This topic elaborates on concepts introduced in the [Routed Events Overview](routed-events-overview.md).  
   
 <a name="When_to_Mark_Events_as_Handled"></a>   
 ## When to Mark Events as Handled  
@@ -41,7 +39,7 @@ Handlers for a routed event can mark the event handled within the event data. Ha
   
  The connection between the tunneling and bubbling routed events is accomplished by the internal implementation of how any given [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] class raises its own declared routed events, and this is true of the paired input routed events. But unless this class-level implementation exists, there is no connection between a tunneling routed event and a bubbling routed event that share the naming scheme: without such implementation they would be two entirely separate routed events and would not be raised in sequence or share event data.  
   
- For more information about how to implement tunnel/bubble input routed event pairs in a custom class, see [Create a Custom Routed Event](../../../../docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md).  
+ For more information about how to implement tunnel/bubble input routed event pairs in a custom class, see [Create a Custom Routed Event](how-to-create-a-custom-routed-event.md).  
   
 <a name="Class_Handlers_and_Instance_Handlers"></a>   
 ## Class Handlers and Instance Handlers  
@@ -53,9 +51,9 @@ Handlers for a routed event can mark the event handled within the event data. Ha
   
  At a deeper level than the event route, there are also potentially multiple class handlers acting on any given instance of a class. This is because the class handling model for routed events enables all possible classes in a class hierarchy to each register its own class handler for each routed event. Each class handler is added to an internal store, and when the event route for an application is constructed, the class handlers are all added to the event route. Class handlers are added to the route such that the most-derived class handler is invoked first, and class handlers from each successive base class are invoked next. Generally, class handlers are not registered such that they also respond to routed events that were already marked handled. Therefore, this class handling mechanism enables one of two choices:  
   
--   Derived classes can supplement the class handling that is inherited from the base class by adding a handler that does not mark the routed event handled, because the base class handler will be invoked sometime after the derived class handler.  
+- Derived classes can supplement the class handling that is inherited from the base class by adding a handler that does not mark the routed event handled, because the base class handler will be invoked sometime after the derived class handler.  
   
--   Derived classes can replace the class handling from the base class by adding a class handler that marks the routed event handled. You should be cautious with this approach, because it will potentially change the intended base control design in areas such as visual appearance, state logic, input handling, and command handling.  
+- Derived classes can replace the class handling from the base class by adding a class handler that marks the routed event handled. You should be cautious with this approach, because it will potentially change the intended base control design in areas such as visual appearance, state logic, input handling, and command handling.  
   
 <a name="Class_Handling_of_Routed_Events"></a>   
 ## Class Handling of Routed Events by Control Base Classes  
@@ -93,7 +91,8 @@ Handlers for a routed event can mark the event handled within the event data. Ha
  The second technique works only for input events, where the tunneling and bubbling versions of the routed event are paired. For these routed events, you can add handlers to the preview/tunneling equivalent routed event instead. That routed event will tunnel through the route starting from the root, so the button class handling code would not intercept it, presuming that you attached the Preview handler at some ancestor element level in the application's element tree. If you use this approach, be cautious about marking any Preview event handled. For the example given with <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> being handled at the root element, if you marked the event as <xref:System.Windows.RoutedEventArgs.Handled%2A> in the handler implementation, you would actually suppress the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. That is typically not desirable behavior.  
   
 ## See also
+
 - <xref:System.Windows.EventManager>
-- [Preview Events](../../../../docs/framework/wpf/advanced/preview-events.md)
-- [Create a Custom Routed Event](../../../../docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md)
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Preview Events](preview-events.md)
+- [Create a Custom Routed Event](how-to-create-a-custom-routed-event.md)
+- [Routed Events Overview](routed-events-overview.md)

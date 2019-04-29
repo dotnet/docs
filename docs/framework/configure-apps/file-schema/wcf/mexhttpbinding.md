@@ -1,9 +1,9 @@
 ---
-title: "&lt;mexHttpBinding&gt;"
+title: "<mexHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: e50b2e1f-9668-41a5-8077-dee7abff9f0f
 ---
-# &lt;mexHttpBinding&gt;
+# \<mexHttpBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over HTTP.  
   
  \<system.ServiceModel>  
@@ -49,6 +49,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
  This binding is essentially a `WSHttpBinding` binding with security disabled. It supports most metadata requests.  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpBinding%2A>
 - <xref:System.ServiceModel.Configuration.MexHttpBindingElement>
 - [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)

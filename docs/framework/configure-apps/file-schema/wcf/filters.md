@@ -1,10 +1,10 @@
 ---
-title: "&lt;filters&gt;"
+title: "<filters>"
 ms.date: "03/30/2017"
 ms.assetid: 37a87222-ec78-4728-8105-9ca1bd961f0c
 ---
 
-# &lt;filters&gt;
+# \<filters>
 
 The `filters` element holds a collection of XPath filters used to control what kind of message is logged.
 

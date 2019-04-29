@@ -28,7 +28,7 @@ HRESULT CloseScope(
     [in] ULONG32 endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `endOffset`  
  [in] The offset from the beginning of the method of the point at the end of the last instruction in the lexical scope, in bytes.  
   
@@ -44,4 +44,5 @@ HRESULT CloseScope(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

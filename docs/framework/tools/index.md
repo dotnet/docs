@@ -13,7 +13,7 @@ ms.author: "mairaw"
 # .NET Framework Tools
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.  
   
-Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) page.
+Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
   
  You can run all the tools from the command line with the exception of the Assembly Cache Viewer (Shfusion.dll). You must access Shfusion.dll from File Explorer.  
   
@@ -123,7 +123,7 @@ Most of the .NET Framework tools described in this section are automatically ins
  Helps you localize user interface (UI) resources (.resx or .resources files) that are used by Windows Forms. You can translate strings, and then size, move, and hide controls to accommodate the localized strings.  
   
 ## Related Sections  
- [Tools](https://msdn.microsoft.com/library/f533241c-317c-445e-88ca-c80c8d078fca)  
+ [WPF Tools](https://docs.microsoft.com/previous-versions/ms742404(v=vs.110))  
  Includes tools such as the isXPS Conformance tool (isXPS.exe) and performance profiling tools.  
   
  [Windows Communication Foundation Tools](../../../docs/framework/wcf/tools.md)  

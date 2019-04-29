@@ -11,7 +11,7 @@ ms.custom: "seodec18"
 
 .NET Core makes it easy to create unit tests. This article introduces unit tests and illustrates how they differ from other kinds of tests. The linked resources near the bottom of the page show you how to add a test project to your solution. After you set up your test project, you will be able to run your unit tests using the command line or Visual Studio.
 
-.NET Core 2.0 and later supports [.NET Standard 2.0](../../standard/net-standard.md), and we will use it's libraries to demonstrate unit tests.
+.NET Core 2.0 and later supports [.NET Standard 2.0](../../standard/net-standard.md), and we will use its libraries to demonstrate unit tests.
 
 You are able to use built-in .NET Core 2.0 and later unit test project templates for C#, F# and Visual Basic as a starting point for your personal project.
 

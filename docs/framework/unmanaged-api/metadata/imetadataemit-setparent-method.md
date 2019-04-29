@@ -30,7 +30,7 @@ HRESULT SetParent (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The `mdMemberRef` token to receive a new parent.  
   
@@ -47,5 +47,6 @@ HRESULT SetParent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

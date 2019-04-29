@@ -17,26 +17,26 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
 ### To build the COM object that is used in this walkthrough  
   
-1.  In Visual Basic 6.0, open a new ActiveX DLL project. A project named `Project1` is created. It has a class named `Class1`.  
+1. In Visual Basic 6.0, open a new ActiveX DLL project. A project named `Project1` is created. It has a class named `Class1`.  
   
-2.  In the **Project Explorer**, right-click **Project1**, and then click **Project1 Properties**. The **Project Properties** dialog box is displayed.  
+2. In the **Project Explorer**, right-click **Project1**, and then click **Project1 Properties**. The **Project Properties** dialog box is displayed.  
   
-3.  On the **General** tab of the **Project Properties** dialog box, change the project name by typing `ComObject1` in the **Project Name** field.  
+3. On the **General** tab of the **Project Properties** dialog box, change the project name by typing `ComObject1` in the **Project Name** field.  
   
-4.  In the **Project Explorer**, right-click `Class1`, and then click **Properties**. The **Properties** window for the class is displayed.  
+4. In the **Project Explorer**, right-click `Class1`, and then click **Properties**. The **Properties** window for the class is displayed.  
   
-5.  Change the `Name` property to `MathFunctions`.  
+5. Change the `Name` property to `MathFunctions`.  
   
-6.  In the **Project Explorer**, right-click `MathFunctions`, and then click **View Code**. The **Code Editor** is displayed.  
+6. In the **Project Explorer**, right-click `MathFunctions`, and then click **View Code**. The **Code Editor** is displayed.  
   
-7.  Add a local variable to hold the property value:  
+7. Add a local variable to hold the property value:  
   
     ```  
     ' Local variable to hold property value  
     Private mvarProp1 As Integer  
     ```  
   
-8.  Add Property `Let` and Property `Get` property procedures:  
+8. Add Property `Let` and Property `Get` property procedures:  
   
     ```  
     Public Property Let Prop1(ByVal vData As Integer)  
@@ -70,45 +70,45 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
 #### To use a COM object with Visual Basic 2005 and later versions  
   
-1.  Open a new Visual Basic Windows Application project.  
+1. Open a new Visual Basic Windows Application project.  
   
-2.  On the **Project** menu, click **Add Reference**.  
+2. On the **Project** menu, click **Add Reference**.  
   
      The **Add Reference** dialog box is displayed.  
   
-3.  On the **COM** tab, double-click `ComObject1` in the **Component Name** list and click **OK**.  
+3. On the **COM** tab, double-click `ComObject1` in the **Component Name** list and click **OK**.  
   
-4.  On the **Project** menu, click **Add New Item**.  
+4. On the **Project** menu, click **Add New Item**.  
   
      The **Add New Item** dialog box is displayed.  
   
-5.  In the **Templates** pane, click **Class**.  
+5. In the **Templates** pane, click **Class**.  
   
      The default file name, `Class1.vb`, appears in the **Name** field. Change this field to MathClass.vb and click **Add**. This creates a class named `MathClass`, and displays its code.  
   
-6.  Add the following code to the top of `MathClass` to inherit from the COM class.  
+6. Add the following code to the top of `MathClass` to inherit from the COM class.  
   
-     [!code-vb[VbVbalrInterop#31](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_1.vb)]  
+     [!code-vb[VbVbalrInterop#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#31)]  
   
-7.  Overload the public method of the base class by adding the following code to `MathClass`:  
+7. Overload the public method of the base class by adding the following code to `MathClass`:  
   
-     [!code-vb[VbVbalrInterop#32](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_2.vb)]  
+     [!code-vb[VbVbalrInterop#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#32)]  
   
-8.  Extend the inherited class by adding the following code to `MathClass`:  
+8. Extend the inherited class by adding the following code to `MathClass`:  
   
-     [!code-vb[VbVbalrInterop#33](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_3.vb)]  
+     [!code-vb[VbVbalrInterop#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#33)]  
   
  The new class inherits the properties of the base class in the COM object, overloads a method, and defines a new method to extend the class.  
   
 #### To test the inherited class  
   
-1.  Add a button to your startup form, and then double-click it to view its code.  
+1. Add a button to your startup form, and then double-click it to view its code.  
   
-2.  In the button's `Click` event handler procedure, add the following code to create an instance of `MathClass` and call the overloaded methods:  
+2. In the button's `Click` event handler procedure, add the following code to create an instance of `MathClass` and call the overloaded methods:  
   
-     [!code-vb[VbVbalrInterop#34](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_4.vb)]  
+     [!code-vb[VbVbalrInterop#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#34)]  
   
-3.  Run the project by pressing F5.  
+3. Run the project by pressing F5.  
   
  When you click the button on the form, the `AddNumbers` method is first called with `Short` data type numbers, and Visual Basic chooses the appropriate method from the base class. The second call to `AddNumbers` is directed to the overload method from `MathClass`. The third call calls the `SubtractNumbers` method, which extends the class. The property in the base class is set, and the value is displayed.  
   
@@ -119,11 +119,12 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
  Properties and methods inherited from COM classes can be overridden, meaning that you can declare a local property or method that replaces a property or method inherited from a base COM class. The rules for overriding inherited COM properties are similar to the rules for overriding other properties and methods with the following exceptions:  
   
--   If you override any property or method inherited from a COM class, you must override all the other inherited properties and methods.  
+- If you override any property or method inherited from a COM class, you must override all the other inherited properties and methods.  
   
--   Properties that use `ByRef` parameters cannot be overridden.  
+- Properties that use `ByRef` parameters cannot be overridden.  
   
 ## See also
+
 - [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
 - [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
 - [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)

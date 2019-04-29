@@ -64,7 +64,7 @@ Once a self-signed certificate is created, you can install it in the Trusted Roo
 
 4. Right-click the **Certificates** folder and click **All Tasks**, then click **Import**.
 
-5. Follow the on-screen wizard instructions to import the TempCa.cer into the store.
+5. Follow the on-screen wizard instructions to import the RootCA.pfx into the store.
 
 ## Using certificates With WCF
 
@@ -72,7 +72,7 @@ Once you have set up the temporary certificates, you can use them to develop WCF
 
 ### To specify a certificate as the client credential type
 
-- In the configuration file for a service, use the following XML to set the security mode to message, and the client credential type to certificate.
+1. In the configuration file for a service, use the following XML to set the security mode to message, and the client credential type to certificate.
 
     ```xml
     <bindings>
@@ -86,19 +86,19 @@ Once you have set up the temporary certificates, you can use them to develop WCF
     </bindings>
     ```
 
-In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."
+2. In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."
 
-```xml
-<behaviors>
-  <endpointBehaviors>
-    <behavior name="CertForClient">
-      <clientCredentials>
-        <clientCertificate findValue="CohoWinery" x509FindType="FindBySubjectName" />
-       </clientCredentials>
-     </behavior>
-   </endpointBehaviors>
-</behaviors>
-```
+    ```xml
+    <behaviors>
+      <endpointBehaviors>
+        <behavior name="CertForClient">
+          <clientCredentials>
+            <clientCertificate findValue="CohoWinery" x509FindType="FindBySubjectName" />
+          </clientCredentials>
+        </behavior>
+      </endpointBehaviors>
+    </behaviors>
+    ```
 
 For more information about using certificates in WCF, see [Working with Certificates](working-with-certificates.md).
 

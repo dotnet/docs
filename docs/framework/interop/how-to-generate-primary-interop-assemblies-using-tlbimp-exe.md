@@ -12,25 +12,25 @@ ms.author: "ronpet"
 # How to: Generate Primary Interop Assemblies Using Tlbimp.exe
 There are two ways to generate a primary interop assembly:  
   
--   Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)].  
+- Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)].  
   
      The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:  
   
-    -   Checks for other registered primary interop assemblies before creating new interop assemblies for any nested type library references.  
+    - Checks for other registered primary interop assemblies before creating new interop assemblies for any nested type library references.  
   
-    -   Fails to emit the primary interop assembly if you do not specify either the container or file name to give the primary interop assembly a strong name.  
+    - Fails to emit the primary interop assembly if you do not specify either the container or file name to give the primary interop assembly a strong name.  
   
-    -   Fails to emit a primary interop assembly if you omit references to dependent assemblies.  
+    - Fails to emit a primary interop assembly if you omit references to dependent assemblies.  
   
-    -   Fails to emit a primary interop assembly if you add references to dependent assemblies that are not primary interop assemblies.  
+    - Fails to emit a primary interop assembly if you add references to dependent assemblies that are not primary interop assemblies.  
   
--   Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.  
+- Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.  
   
  You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md).  
   
 ### To generate a primary interop assembly using Tlbimp.exe  
   
-1.  At the command prompt, type:  
+1. At the command prompt, type:  
   
      **tlbimp** *tlbfile*  **/primary /keyfile:** *filename* **/out:** *assemblyname*  
   
@@ -40,7 +40,7 @@ There are two ways to generate a primary interop assembly:
   
  A dependent primary interop assembly with a version number that differs from that of the original type library is not discoverable when installed in the current directory. You must either register the dependent primary interop assembly in the Windows registry or use the **/reference** option to be sure that Tlbimp.exe finds the dependent DLL.  
   
- You can also wrap multiple versions of a type library. For instructions, see [How to: Wrap Multiple Versions of Type Libraries](https://msdn.microsoft.com/library/79eefe04-a770-4bc3-8ea2-e90ddb8ec31f(v=vs.100)).  
+ You can also wrap multiple versions of a type library. For instructions, see [How to: Wrap Multiple Versions of Type Libraries](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/1565h6hc(v=vs.100)).  
   
 ## Example  
  The following example imports the COM type library `LibUtil.tlb` and signs the assembly `LibUtil.dll` with a strong name using the key file `CompanyA.snk`. By omitting a specific namespace name, this example produces the default namespace, `LibUtil`.  
@@ -62,4 +62,5 @@ tlbimp MyLib.tlb /primary /keyfile:CompanyB.snk /namespace:CompanyB.MyLib /refer
 ```  
   
 ## See also
+
 - [How to: Register Primary Interop Assemblies](../../../docs/framework/interop/how-to-register-primary-interop-assemblies.md)

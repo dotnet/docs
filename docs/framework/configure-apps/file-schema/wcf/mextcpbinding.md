@@ -1,9 +1,9 @@
 ---
-title: "&lt;mexTcpBinding&gt;"
+title: "<mexTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 01baba8d-d784-4255-9ea2-7afff1482bf0
 ---
-# &lt;mexTcpBinding&gt;
+# \<mexTcpBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over TCP.  
   
  \<system.ServiceModel>  
@@ -46,6 +46,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.MexTcpBindingElement>
 - <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding%2A>
 - [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)

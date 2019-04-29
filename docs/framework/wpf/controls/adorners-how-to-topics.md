@@ -11,11 +11,11 @@ ms.assetid: e29d7516-d5e6-4500-bd4f-775e6f830984
 The following examples demonstrate how to accomplish common tasks using the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] adorner framework.  
   
 ## In This Section  
- [Implement an Adorner](../../../../docs/framework/wpf/controls/how-to-implement-an-adorner.md)  
- [Bind an Adorner to an Element](../../../../docs/framework/wpf/controls/how-to-bind-an-adorner-to-an-element.md)  
- [Adorn the Children of a Panel](../../../../docs/framework/wpf/controls/how-to-adorn-the-children-of-a-panel.md)  
- [Remove an Adorner from an Element](../../../../docs/framework/wpf/controls/how-to-remove-an-adorner-from-an-element.md)  
- [Remove all Adorners from an Element](../../../../docs/framework/wpf/controls/how-to-remove-all-adorners-from-an-element.md)  
+ [Implement an Adorner](how-to-implement-an-adorner.md)  
+ [Bind an Adorner to an Element](how-to-bind-an-adorner-to-an-element.md)  
+ [Adorn the Children of a Panel](how-to-adorn-the-children-of-a-panel.md)  
+ [Remove an Adorner from an Element](how-to-remove-an-adorner-from-an-element.md)  
+ [Remove all Adorners from an Element](how-to-remove-all-adorners-from-an-element.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.AdornedElementPlaceholder>  

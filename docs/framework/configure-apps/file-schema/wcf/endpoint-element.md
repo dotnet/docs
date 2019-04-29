@@ -1,9 +1,9 @@
 ---
-title: "&lt;endpoint&gt; element"
+title: "<endpoint> element"
 ms.date: "03/30/2017"
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
 ---
-# &lt;endpoint&gt; element
+# \<endpoint> element
 Specifies binding, contract, and address properties for a service endpoint, which is used to expose services.  
   
  \<system.ServiceModel>  
@@ -79,6 +79,7 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.Description.ServiceEndpoint>

@@ -117,7 +117,7 @@ adapter.UpdateCommand.Parameters.Add( _
   "@CompanyName", SqlDbType.NVarChar, 30, "CompanyName")  
   
 ' Pass the original values to the WHERE clause parameters.  
-Dim parameter As SqlParameter = dataSet.UpdateCommand.Parameters.Add( _  
+Dim parameter As SqlParameter = adapter.UpdateCommand.Parameters.Add( _  
   "@oldCustomerID", SqlDbType.NChar, 5, "CustomerID")  
 parameter.SourceVersion = DataRowVersion.Original  
 parameter = adapter.UpdateCommand.Parameters.Add( _  
@@ -201,6 +201,7 @@ protected static void OnRowUpdated(object sender, SqlRowUpdatedEventArgs args)
 ```  
   
 ## See also
+
 - [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
 - [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
 - [Row Error Information](../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-error-information.md)

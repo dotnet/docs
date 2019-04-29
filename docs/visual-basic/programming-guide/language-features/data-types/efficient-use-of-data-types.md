@@ -20,11 +20,11 @@ Undeclared variables and variables declared without a data type are assigned the
 ## Strong Typing  
  Specifying data types for all your variables is known as *strong typing*. Using strong typing has several advantages:  
   
--   It enables IntelliSense support for your variables. This allows you to see their properties and other members as you type in the code.  
+- It enables IntelliSense support for your variables. This allows you to see their properties and other members as you type in the code.  
   
--   It takes advantage of compiler type checking. This catches statements that can fail at run time due to errors such as overflow. It also catches calls to methods on objects that do not support them.  
+- It takes advantage of compiler type checking. This catches statements that can fail at run time due to errors such as overflow. It also catches calls to methods on objects that do not support them.  
   
--   It results in faster execution of your code.  
+- It results in faster execution of your code.  
   
 ## Most Efficient Data Types  
  For variables that never contain fractions, the integral data types are more efficient than the nonintegral types. In Visual Basic, `Integer` and `UInteger` are the most efficient numeric types.  
@@ -43,6 +43,7 @@ Protected s As String
  The `AscW` and `ChrW` functions operate in Unicode. You should use them in preference to `Asc` and `Chr`, which must translate into and out of Unicode.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>
 - <xref:Microsoft.VisualBasic.Strings.Chr%2A>

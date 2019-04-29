@@ -53,12 +53,12 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 ## Example  
  The following code example performs an implicit join to combine a list of customers with their orders.  
   
- [!code-vb[VbSimpleQuerySamples#13](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#13)]  
   
 ## Example  
  The following code example joins two collections by using the `Join` clause.  
   
- [!code-vb[VbSimpleQuerySamples#12](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_2.vb)]  
+ [!code-vb[VbSimpleQuerySamples#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples2.vb#12)]  
   
  This example will produce output similar to the following:  
   
@@ -71,7 +71,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 ## Example  
  The following code example joins two collections by using the `Join` clause with two key columns.  
   
- [!code-vb[VbSimpleQuerySamples#17](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_3.vb)]  
+ [!code-vb[VbSimpleQuerySamples#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples3.vb#17)]  
   
  The example will produce output similar to the following:  
   
@@ -82,6 +82,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
  `explorer (2424), File Explorer, Priority = 8`  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

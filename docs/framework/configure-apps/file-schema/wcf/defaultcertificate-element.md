@@ -1,9 +1,9 @@
 ---
-title: "&lt;defaultCertificate&gt; Element"
+title: "<defaultCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
 ---
-# &lt;defaultCertificate&gt; Element
+# \<defaultCertificate> Element
 Specifies an X.509 certificate to be used when a service or STS does not provide one via a negotiation protocol.  
   
  \<system.ServiceModel>  
@@ -93,6 +93,7 @@ endpointBehaviors section
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate%2A>

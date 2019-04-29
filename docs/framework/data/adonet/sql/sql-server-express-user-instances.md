@@ -35,15 +35,15 @@ sp_configure 'user instances enabled','0'
   
  Note the following about the sample connection string shown below:  
   
--   The `Data Source` keyword refers to the parent instance of SQL Server Express that is generating the user instance. The default instance is .\sqlexpress.  
+- The `Data Source` keyword refers to the parent instance of SQL Server Express that is generating the user instance. The default instance is .\sqlexpress.  
   
--   `Integrated Security` is set to `true`. To connect to a user instance, Windows Authentication is required; SQL Server logins are not supported.  
+- `Integrated Security` is set to `true`. To connect to a user instance, Windows Authentication is required; SQL Server logins are not supported.  
   
--   The `User Instance` is set to `true`, which invokes a user instance. (The default is `false`.)  
+- The `User Instance` is set to `true`, which invokes a user instance. (The default is `false`.)  
   
--   The `AttachDbFileName` connection string keyword is used to attach the primary database file (.mdf), which must include the full path name. `AttachDbFileName` also corresponds to the "extended properties" and "initial file name" keys within a <xref:System.Data.SqlClient.SqlConnection> connection string.  
+- The `AttachDbFileName` connection string keyword is used to attach the primary database file (.mdf), which must include the full path name. `AttachDbFileName` also corresponds to the "extended properties" and "initial file name" keys within a <xref:System.Data.SqlClient.SqlConnection> connection string.  
   
--   The `|DataDirectory|` substitution string enclosed in the pipe symbols refers to the data directory of the application opening the connection and provides a relative path indicating the location of the .mdf and .ldf database and log files. If you want to locate these files elsewhere, you must provide the full path to the files.  
+- The `|DataDirectory|` substitution string enclosed in the pipe symbols refers to the data directory of the application opening the connection and provides a relative path indicating the location of the .mdf and .ldf database and log files. If you want to locate these files elsewhere, you must provide the full path to the files.  
   
 ```  
 Data Source=.\\SQLExpress;Integrated Security=true;  
@@ -138,13 +138,14 @@ private static void OpenSqlConnection()
   
  User instance scenarios include:  
   
--   Any single-user application where sharing data is not required.  
+- Any single-user application where sharing data is not required.  
   
--   ClickOnce deployment. If the .NET Framework 2.0 (or later) and SQL Server Express are already installed on the target computer, the installation package downloaded as a result of a ClickOnce action can be installed and used by non-administrator users. Note that an administrator must install SQL Server Express if that is part of the setup. For more information, see [ClickOnce Deployment for Windows Forms Applications](https://msdn.microsoft.com/library/34d8c770-48f2-460c-8d67-4ea5684511df).  
+- ClickOnce deployment. If the .NET Framework 2.0 (or later) and SQL Server Express are already installed on the target computer, the installation package downloaded as a result of a ClickOnce action can be installed and used by non-administrator users. Note that an administrator must install SQL Server Express if that is part of the setup. For more information, see [ClickOnce Deployment for Windows Forms](../../../winforms/clickonce-deployment-for-windows-forms.md).
   
--   Dedicated ASP.NET hosting using Windows Authentication. A single SQL Server Express instance can be hosted on an intranet. The application connects using the ASPNET Windows account, not by using impersonation. User instances should not be used for third-party or shared hosting scenarios where all applications would share the same user instance and would no longer remain isolated from each other.  
+- Dedicated ASP.NET hosting using Windows Authentication. A single SQL Server Express instance can be hosted on an intranet. The application connects using the ASPNET Windows account, not by using impersonation. User instances should not be used for third-party or shared hosting scenarios where all applications would share the same user instance and would no longer remain isolated from each other.  
   
 ## See also
+
 - [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
 - [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)
 - [Connecting to a Data Source](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)

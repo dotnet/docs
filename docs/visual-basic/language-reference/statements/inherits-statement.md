@@ -31,11 +31,11 @@ Inherits basetypenames
   
 ## Rules  
   
--   **Class Inheritance.** If a class uses the `Inherits` statement, you can specify only one base class.  
+- **Class Inheritance.** If a class uses the `Inherits` statement, you can specify only one base class.  
   
      A class cannot inherit from a class nested within it.  
   
--   **Interface Inheritance.** If an interface uses the `Inherits` statement, you can specify one or more base interfaces. You can inherit from two interfaces even if they each define a member with the same name. If you do so, the implementing code must use name qualification to specify which member it is implementing.  
+- **Interface Inheritance.** If an interface uses the `Inherits` statement, you can specify one or more base interfaces. You can inherit from two interfaces even if they each define a member with the same name. If you do so, the implementing code must use name qualification to specify which member it is implementing.  
   
      An interface cannot inherit from another interface with a more restrictive access level. For example, a `Public` interface cannot inherit from a `Friend` interface.  
   
@@ -48,16 +48,17 @@ Inherits basetypenames
 ## Example  
  The following example uses the `Inherits` statement to show how a class named `thisClass` can inherit all the members of a base class named `anotherClass`.  
   
- [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#37)]  
   
 ## Example  
  The following example shows inheritance of multiple interfaces.  
   
- [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#38)]  
   
  The interface named `thisInterface` now includes all the definitions in the <xref:System.IComparable>, <xref:System.IDisposable>, and <xref:System.IFormattable> interfaces The inherited members provide respectively for type-specific comparison of two objects, releasing allocated resources, and expressing the value of an object as a `String`. A class that implements `thisInterface` must implement every member of every base interface.  
   
 ## See also
+
 - [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
 - [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
 - [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

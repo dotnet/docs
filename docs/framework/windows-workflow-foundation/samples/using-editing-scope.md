@@ -18,15 +18,15 @@ This sample demonstrates how to batch a set of changes so that they can be undon
   
 ## To set up, build, and run the sample  
   
-1.  Build and run the sample, and then use the buttons on the left to modify the workflow.  
+1. Build and run the sample, and then use the buttons on the left to modify the workflow.  
   
-2.  Click **Open Editing Scope**.  
+2. Click **Open Editing Scope**.  
   
-    1.  This command calls <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A> that creates an editing scope and pushes it onto the editing stack.  
+    1. This command calls <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A> that creates an editing scope and pushes it onto the editing stack.  
   
-    2.  Three activities are then added to the selected <xref:System.Activities.Presentation.Model.ModelItem>. Note that if the editing scope had not been opened with <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A>, three new activities would appear on the designer canvas. Because this operation is still pending within the <xref:System.Activities.Presentation.Model.EditingScope>, the designer is not yet updated.  
+    2. Three activities are then added to the selected <xref:System.Activities.Presentation.Model.ModelItem>. Note that if the editing scope had not been opened with <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A>, three new activities would appear on the designer canvas. Because this operation is still pending within the <xref:System.Activities.Presentation.Model.EditingScope>, the designer is not yet updated.  
   
-3.  Press **Close Editing Scope** to commit the editing scope. Three activities appear in the designer.  
+3. Press **Close Editing Scope** to commit the editing scope. Three activities appear in the designer.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

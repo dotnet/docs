@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netTcpBinding&gt;"
+title: "<security> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 ---
-# &lt;security&gt; of &lt;netTcpBinding&gt;
+# \<security> of \<netTcpBinding>
 Defines the security settings for a binding.  
   
  \<system.ServiceModel>  
@@ -62,6 +62,7 @@ Defines the security settings for a binding.
  This configuration element provides the security specifications for `netTcpBinding`. This is a secure, reliable, optimized binding suitable for cross-machine communication. By default it generates a runtime communication stack supporting TCP for message delivery and Windows Security for message security and authentication, WS-ReliableMessaging for reliability, and binary message encoding.  
   
 ## See also
+
 - <xref:System.ServiceModel.NetTcpSecurity>
 - <xref:System.ServiceModel.NetTcpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>

@@ -19,26 +19,26 @@ This sample demonstrates how to use the <xref:System.Activities.Statements.Pick>
  Designer Workflow
  The Designer version of the sample demonstrates how to create a workflow in the designer. The following files are included:
 
--   Program.cs : Includes the `Main` function that executes the sample workflow.
+- Program.cs : Includes the `Main` function that executes the sample workflow.
 
--   ReadString.cs: A custom activity that reads some input from the console.
+- ReadString.cs: A custom activity that reads some input from the console.
 
--   Sequence1.xaml: A workflow created using the designer that uses Pick.
+- Sequence1.xaml: A workflow created using the designer that uses Pick.
 
  Coded Workflow
  The coded version of the sample demonstrates how to create a workflow in the designer. The following files are included:
 
--   Program.cs : Includes the `Main` function that executes the sample workflow.
+- Program.cs : Includes the `Main` function that executes the sample workflow.
 
--   ReadString.cs: A custom activity that reads some input from the console.
+- ReadString.cs: A custom activity that reads some input from the console.
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the Pick.sln solution file.
+1. Using Visual Studio 2010, open the Pick.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press F5.
+3. To run the solution, press F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

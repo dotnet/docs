@@ -13,9 +13,9 @@ ms.author: "mairaw"
   
  JIT tracing events consist of the following two categories:  
   
--   [JIT Inlining Events](#jit_inlining_events)  
+- [JIT Inlining Events](#jit_inlining_events)  
   
--   [JIT Tail Call Events](#jit_tail_call_events)  
+- [JIT Tail Call Events](#jit_tail_call_events)  
   
 <a name="jit_inlining_events"></a>   
 ## JIT Inlining Events  
@@ -144,4 +144,5 @@ ms.author: "mairaw"
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ## See also
+
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

@@ -1,10 +1,10 @@
 ---
-title: "&lt;certificateValidation&gt;"
+title: "<certificateValidation>"
 ms.date: "03/30/2017"
 ms.assetid: 6c54c704-b55e-4631-88ff-4d4a5621554c
 author: "BrucePerlerMS"
 ---
-# &lt;certificateValidation&gt;
+# \<certificateValidation>
 Controls the settings that token handlers use to validate certificates. These settings are overridden if a specific handler is configured with its own validator.  
   
  \<system.identityModel>  

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 48fc5240-75a6-44bf-9fce-6aa21b49705a
 ---
 # How Mouse Input Works in Windows Forms
-Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to perform an action in your application, or use mouse location information to perform hit testing or other actions. In addition, you can change the way the controls in your application handle mouse input. This topic describes these mouse events in detail, and how to obtain and change system settings for the mouse. For more information about the data provided with the mouse events and the order in which the mouse click events are raised, see [Mouse Events in Windows Forms](../../../docs/framework/winforms/mouse-events-in-windows-forms.md).  
+Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to perform an action in your application, or use mouse location information to perform hit testing or other actions. In addition, you can change the way the controls in your application handle mouse input. This topic describes these mouse events in detail, and how to obtain and change system settings for the mouse. For more information about the data provided with the mouse events and the order in which the mouse click events are raised, see [Mouse Events in Windows Forms](mouse-events-in-windows-forms.md).  
   
 ## Mouse Location and Hit-Testing  
  When the user moves the mouse, the operating system moves the mouse pointer. The mouse pointer contains a single pixel, called the hot spot, which the operating system tracks and recognizes as the position of the pointer. When the user moves the mouse or presses a mouse button, the <xref:System.Windows.Forms.Control> that contains the <xref:System.Windows.Forms.Cursor.HotSpot%2A> raises the appropriate mouse event. You can obtain the current mouse position with the <xref:System.Windows.Forms.MouseEventArgs.Location%2A> property of the <xref:System.Windows.Forms.MouseEventArgs> when handling a mouse event or by using the <xref:System.Windows.Forms.Cursor.Position%2A> property of the <xref:System.Windows.Forms.Cursor> class. You can subsequently use mouse location information to perform hit-testing, and then perform an action based on the location of the mouse. Hit-testing capability is built in to several controls in Windows Forms such as the <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.TreeView>, <xref:System.Windows.Forms.MonthCalendar> and <xref:System.Windows.Forms.DataGridView> controls. Used with the appropriate mouse event, <xref:System.Windows.Forms.Control.MouseHover> for example, hit-testing is very useful for determining when your application should perform a specific action.  
@@ -47,6 +47,7 @@ Receiving and handling mouse input is an important part of every Windows applica
 |<xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A>|Gets the number of lines to scroll when the mouse wheel is rotated.|  
   
 ## See also
-- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
-- [Mouse Capture in Windows Forms](../../../docs/framework/winforms/mouse-capture-in-windows-forms.md)
-- [Mouse Pointers in Windows Forms](../../../docs/framework/winforms/mouse-pointers-in-windows-forms.md)
+
+- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)
+- [Mouse Capture in Windows Forms](mouse-capture-in-windows-forms.md)
+- [Mouse Pointers in Windows Forms](mouse-pointers-in-windows-forms.md)

@@ -29,7 +29,7 @@ HRESULT GetTaskID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTaskId`  
  [out] A pointer to the identifier of the task running on the thread represented by this ICorDebugThread2 object.  
   

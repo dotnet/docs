@@ -105,7 +105,7 @@ var addition = Expression.Add(one, two);
 var add2 = Expression.Add(three, four);
 var sum = Expression.Add(addition, add2);
 
-// Declare the delegate, so we can call it 
+// Declare the delegate, so we can call it
 // from itself recursively:
 Func<Expression, int> aggregate = null;
 // Aggregate, return constants, or the sum of the left and right operand.
@@ -129,7 +129,7 @@ will have been computed. You can trace the execution by running the sample
 in the debugger and tracing the execution.
 
 Let's make it easier to trace how the nodes are analyzed and how the sum
-is computed by travsersing the tree. Here's an updated version of the
+is computed by traversing the tree. Here's an updated version of the
 Aggregate method that includes quite a bit of tracing information:
 
 ```csharp

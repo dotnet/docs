@@ -1,10 +1,10 @@
 ---
-title: "&lt;argument&gt;"
+title: "<argument>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: a7144d53-8023-4e90-971f-895e016fd58a
 ---
-# &lt;argument&gt;
+# \<argument>
 A configuration element that represents an argument associated with an activity state query.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
@@ -71,6 +71,7 @@ A configuration element that represents an argument associated with an activity 
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>
 - [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

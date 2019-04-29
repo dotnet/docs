@@ -23,9 +23,10 @@ When you query for an object, you actually retrieve only the object you requeste
   
  What you really need is a way to retrieve a set of related objects at the same time. The set is a delineated section of a graph so that you would never be retrieving more or less than was necessary for your intended use. For this purpose, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides <xref:System.Data.Linq.DataLoadOptions> for immediate loading of a region of your object model. Methods include:  
   
--   The  <xref:System.Data.Linq.DataLoadOptions.LoadWith%2A> method, to immediately load data related to the main target.  
+- The  <xref:System.Data.Linq.DataLoadOptions.LoadWith%2A> method, to immediately load data related to the main target.  
   
--   The <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> method, to filter objects retrieved for a particular relationship.  
+- The <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> method, to filter objects retrieved for a particular relationship.  
   
 ## See also
+
 - [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

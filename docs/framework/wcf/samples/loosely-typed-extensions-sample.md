@@ -48,15 +48,15 @@ w.w3.org/2001/XMLSchema" xmlns="">
   
  This document contains the following pieces of extension data:  
   
--   The `myAttribute` attribute of the `<feed>` element.  
+- The `myAttribute` attribute of the `<feed>` element.  
   
--   `<simpleString>` element.  
+- `<simpleString>` element.  
   
--   `<DataContractExtension>` element.  
+- `<DataContractExtension>` element.  
   
--   `<XmlSerializerExtension>` element.  
+- `<XmlSerializerExtension>` element.  
   
--   `<xElementExtension>` element.  
+- `<xElementExtension>` element.  
   
 ## Writing Extension Data  
  Attribute extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection as shown in the following sample code.  
@@ -134,11 +134,11 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -150,5 +150,6 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\LooselyTypedExtensions`  
   
 ## See also
+
 - [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)
 - [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element"
+title: "<serviceCertificate> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
 ---
-# &lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element
+# \<serviceCertificate> of \<clientCredentials> Element
 Specifies a certificate to use when authenticating a service to the client.  
   
  \<system.ServiceModel>  
@@ -45,6 +45,7 @@ Specifies a certificate to use when authenticating a service to the client.
  The attributes of the `serviceCertificate` element are identical to the attributes of the [\<clientCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>
 - <xref:System.ServiceModel.Description.ClientCredentials>

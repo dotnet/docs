@@ -22,25 +22,25 @@ While you are debugging an application during development, both your tracing and
   
  You can specify the compiler settings for your application in several ways:  
   
--   The property pages  
+- The property pages  
   
--   The command line  
+- The command line  
   
--   **#CONST** (for Visual Basic) and **#define** (for C#)  
+- **#CONST** (for Visual Basic) and **#define** (for C#)  
   
 ### To change compile settings from the property pages dialog box  
   
-1.  Right-click the project node in **Solution Explorer**.  
+1. Right-click the project node in **Solution Explorer**.  
   
-2.  Choose **Properties** from the shortcut menu.  
+2. Choose **Properties** from the shortcut menu.  
   
-    -   In Visual Basic, click the **Compile** tab in the left pane of the property page, then click the **Advanced Compile Options** button to display the **Advanced Compiler Settings** dialog box. Select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
+    - In Visual Basic, click the **Compile** tab in the left pane of the property page, then click the **Advanced Compile Options** button to display the **Advanced Compiler Settings** dialog box. Select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
   
-    -   In C#, click the **Build** tab in the left pane of the property page, then select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
+    - In C#, click the **Build** tab in the left pane of the property page, then select the check boxes for the compiler settings you want to enable. Clear the check boxes for settings you want to disable.  
   
 ### To compile instrumented code using the command line  
   
-1.  Set a conditional compiler switch on the command line. The compiler will include trace or debug code in the executable.  
+1. Set a conditional compiler switch on the command line. The compiler will include trace or debug code in the executable.  
   
      For example, the following compiler instruction entered on the command line would include your tracing code in a compiled executable:  
   
@@ -65,7 +65,7 @@ While you are debugging an application during development, both your tracing and
   
 ### To perform conditional compilation using #CONST or #define  
   
-1.  Type the appropriate statement for your programming language at the top of the source code file.  
+1. Type the appropriate statement for your programming language at the top of the source code file.  
   
     |Language|Statement|Result|  
     |--------------|---------------|------------|  
@@ -90,6 +90,7 @@ Comment out the compiler directive.
 >  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
 ## See also
+
 - [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
 - [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
 - [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)

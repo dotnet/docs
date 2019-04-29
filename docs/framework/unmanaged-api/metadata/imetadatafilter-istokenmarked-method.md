@@ -30,7 +30,7 @@ HRESULT IsTokenMarked (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to examine for a processing mark.  
   
@@ -47,4 +47,5 @@ HRESULT IsTokenMarked (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataFilter Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-interface.md)

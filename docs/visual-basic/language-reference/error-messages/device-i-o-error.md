@@ -10,7 +10,8 @@ An input or output error occurred while your program was using a device such as 
   
 ## To correct this error  
   
--   Make sure the device is operating properly, and then retry the operation.  
+- Make sure the device is operating properly, and then retry the operation.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

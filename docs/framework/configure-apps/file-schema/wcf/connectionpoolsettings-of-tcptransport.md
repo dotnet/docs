@@ -1,9 +1,9 @@
 ---
-title: "&lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;"
+title: "<connectionPoolSettings> of <tcpTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 2fbc3aa7-fcc9-4193-99a3-85d31d60d3f7
 ---
-# &lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;
+# \<connectionPoolSettings> of \<tcpTransport>
 Specifies additional connection pool settings for a TCP transport.  
   
  \<system.serviceModel>  
@@ -44,6 +44,7 @@ Specifies additional connection pool settings for a TCP transport.
 |[\<namedPipeTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/namedpipetransport.md)|Defines a transport that causes a channel to transfer messages using named pipes.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.TcpConnectionPoolSettingsElement>
 - <xref:System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings%2A>
 - <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings>

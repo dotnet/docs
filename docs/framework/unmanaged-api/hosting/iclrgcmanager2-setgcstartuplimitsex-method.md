@@ -30,7 +30,7 @@ HRESULT SetGCStartupLimitsEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The specified size of a garbage collection segment.  
   
@@ -67,6 +67,7 @@ HRESULT SetGCStartupLimitsEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
 - [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)

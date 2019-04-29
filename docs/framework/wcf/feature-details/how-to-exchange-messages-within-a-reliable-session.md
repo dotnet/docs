@@ -8,7 +8,7 @@ ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
 
 This topic outlines the steps required to enable a reliable session using one of the system-provided bindings that support such a session, but not by default. You enable a reliable session imperatively using code or declaratively in your configuration file. This procedure uses the client and service configuration files to enable the reliable session and to stipulate that the messages arrive in the same order in which they were sent.
 
-The key part of this procedure is that the endpoint configuration element contain a `bindingConfiguration` attribute that references a binding configuration named `Binding1`. The [**\<binding>**](../../../../docs/framework/misc/binding.md) configuration element references this name to enable reliable sessions by setting the `enabled` attribute of the [**\<reliableSession>**](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) element to `true`. You specify the ordered delivery assurances for the reliable session by setting the `ordered` attribute to `true`.
+The key part of this procedure is that the endpoint configuration element contain a `bindingConfiguration` attribute that references a binding configuration named `Binding1`. The [**\<binding>**](../../../../docs/framework/misc/binding.md) configuration element references this name to enable reliable sessions by setting the `enabled` attribute of the [**\<reliableSession>**](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731302(v=vs.100)) element to `true`. You specify the ordered delivery assurances for the reliable session by setting the `ordered` attribute to `true`.
 
 For the source copy of this example, see [WS Reliable Session](../../../../docs/framework/wcf/samples/ws-reliable-session.md).
 
@@ -32,7 +32,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
 
-1.  Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
+1. Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
 
 ### Configure the client with a WSHttpBinding to use a reliable session
 

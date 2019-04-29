@@ -32,7 +32,7 @@ HRESULT GetString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchString`  
  [in] The size of the `szString` array.  
   

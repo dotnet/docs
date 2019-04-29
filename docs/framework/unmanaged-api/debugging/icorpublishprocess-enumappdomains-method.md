@@ -29,7 +29,7 @@ HRESULT EnumAppDomains (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the address of an [ICorPublishAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md) instance that allows iteration through the collection of application domains in this process.  
   
@@ -48,4 +48,5 @@ HRESULT EnumAppDomains (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;issuerMetadata&gt; of &lt;issuedTokenParameters&gt;"
+title: "<issuerMetadata> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
 ---
-# &lt;issuerMetadata&gt; of &lt;issuedTokenParameters&gt;
+# \<issuerMetadata> of \<issuedTokenParameters>
 \<system.serviceModel>  
 \<bindings>  
 \<customBinding>  
@@ -41,6 +41,7 @@ ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
 |[\<issuedTokenParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md)|Specifies the parameters for an security token issued in a Federated security scenario.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

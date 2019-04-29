@@ -14,29 +14,29 @@ A discovery find operation is initiated by a client to discover one or more serv
   
  Search criteria include:  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - Optional. The contract name of the service being searched for and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts reply. Note that in WCF an endpoint can only support one contract.  
+- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement> - Optional. The contract name of the service being searched for and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts reply. Note that in WCF an endpoint can only support one contract.  
   
--   <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - Optional. Scopes are absolute URIs that are used to categorize individual service endpoints. You may want to use this in scenarios where multiple endpoints expose the same contract and you want a way to search for a subset of the endpoints. If more than one scope is specified, only service endpoints matching ALL scopes reply.  
+- <xref:System.ServiceModel.Discovery.Configuration.ScopeElement> - Optional. Scopes are absolute URIs that are used to categorize individual service endpoints. You may want to use this in scenarios where multiple endpoints expose the same contract and you want a way to search for a subset of the endpoints. If more than one scope is specified, only service endpoints matching ALL scopes reply.  
   
--   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Specifies the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint. There are five supported scope-matching rules:  
+- <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy%2A> - Specifies the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint. There are five supported scope-matching rules:  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> does a basic case-sensitive string comparison.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> does a basic case-sensitive string comparison.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> matches by segments separated by "/". A search for `http://contoso/building1` matches a service with scope `http://contoso/building/floor1`. Note that it does not match `http://contoso/building100` because the last two segments do not match.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> matches by segments separated by "/". A search for `http://contoso/building1` matches a service with scope `http://contoso/building/floor1`. Note that it does not match `http://contoso/building100` because the last two segments do not match.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> matches scopes by segments using an LDAP URL.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> matches scopes by segments using an LDAP URL.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByUuid?displayProperty=nameWithType> matches scopes exactly using a UUID string.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByUuid?displayProperty=nameWithType> matches scopes exactly using a UUID string.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByNone?displayProperty=nameWithType> matches only those services that do not specify a scope.  
+    - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByNone?displayProperty=nameWithType> matches only those services that do not specify a scope.  
   
      If a scope-matching rule is not specified, <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix> is used.  
   
  Termination criteria include:  
   
-1.  <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> - The maximum time to wait for replies from services on the network. The default duration is 20 seconds.  
+1. <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> - The maximum time to wait for replies from services on the network. The default duration is 20 seconds.  
   
-2.  <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> - The maximum number of replies to wait for. If <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> replies are received before <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> has elapsed, the find operation ends.  
+2. <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> - The maximum number of replies to wait for. If <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> replies are received before <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> has elapsed, the find operation ends.  
   
 ## FindResponse  
  <xref:System.ServiceModel.Discovery.FindResponse> has an <xref:System.ServiceModel.Discovery.FindResponse.Endpoints%2A> collection property that contains any replies sent by matching services on the network. If no services replied, the collection is empty. If one or more services replied, each reply is stored in an <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> object, which contains the address, contract, and some additional information about the service.  
@@ -59,6 +59,7 @@ Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endp
 ```  
   
 ## See also
+
 - [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
 - [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)
 - [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)

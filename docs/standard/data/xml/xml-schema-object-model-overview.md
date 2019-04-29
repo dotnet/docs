@@ -13,22 +13,22 @@ The Schema Object Model (SOM) in the Microsoft .NET Framework is a rich API that
   
  The following are ways the SOM API in the .NET Framework enables you to create, edit, and validate schemas.  
   
--   Load and save valid schemas to and from files.  
+- Load and save valid schemas to and from files.  
   
--   Create in-memory schemas using strongly typed classes.  
+- Create in-memory schemas using strongly typed classes.  
   
--   Interact with the <xref:System.Xml.Schema.XmlSchemaSet> class to cache, compile, and retrieve schemas.  
+- Interact with the <xref:System.Xml.Schema.XmlSchemaSet> class to cache, compile, and retrieve schemas.  
   
--   Interact with the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class to validate XML instance documents against schemas.  
+- Interact with the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class to validate XML instance documents against schemas.  
   
--   Build editors for creating and maintaining schemas.  
+- Build editors for creating and maintaining schemas.  
   
--   Dynamically edit a schema that can be complied and saved for use in the validation of XML instance documents.  
+- Dynamically edit a schema that can be complied and saved for use in the validation of XML instance documents.  
   
 ## The Schema Object Model  
  The SOM consists of an extensive set of classes in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace corresponding to the elements in an XML schema. For example, the `<xsd:schema>...</xsd:schema>` element maps to the <xref:System.Xml.Schema.XmlSchema?displayProperty=nameWithType> class, and all the information that can be contained within an `<xsd:schema/>` element can be represented using the <xref:System.Xml.Schema.XmlSchema> class. Similarly, the `<xsd:element>...</xsd:element>` and `<xsd:attribute>...</xsd:attribute>` elements map to the <xref:System.Xml.Schema.XmlSchemaElement?displayProperty=nameWithType> and <xref:System.Xml.Schema.XmlSchemaAttribute?displayProperty=nameWithType> classes respectively. This mapping continues for all the elements of an XML schema creating an XML schema object model in the <xref:System.Xml.Schema> namespace illustrated in the diagram that follows.  
   
- ![System.Xml.Schema Object Model](../../../../docs/standard/data/xml/media/xmlschemaobjmodeloverview.gif "XMLSchemaObjModelOverview")  
+ ![System.Xml.Schema Object Model](./media/xml-schema-object-model-overview/xml-schema-object-model.gif)  
   
  For more information about each class in the <xref:System.Xml.Schema> namespace, see the <xref:System.Xml.Schema> namespace reference documentation in the .NET Framework class library.  
   

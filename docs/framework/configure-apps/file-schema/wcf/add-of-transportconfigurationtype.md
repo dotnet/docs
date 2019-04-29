@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;transportConfigurationType&gt;"
+title: "<add> of <transportConfigurationType>"
 ms.date: "03/30/2017"
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
 ---
-# &lt;add&gt; of &lt;transportConfigurationType&gt;
+# \<add> of \<transportConfigurationType>
 This element is a key/value pair, which identifies the type of a particular transport.  
   
  \<system.ServiceModel>  
@@ -53,6 +53,7 @@ This element is a key/value pair, which identifies the type of a particular tran
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>

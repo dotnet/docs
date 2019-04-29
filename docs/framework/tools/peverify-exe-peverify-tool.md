@@ -26,7 +26,7 @@ The PEVerify tool helps developers who generate Microsoft intermediate language 
 peverify filename [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -115,6 +115,7 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 ```  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Writing Verifiably Type-Safe Code](../../../docs/framework/misc/code-access-security-basics.md#typesafe_code)
 - [Type Safety and Security](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security)

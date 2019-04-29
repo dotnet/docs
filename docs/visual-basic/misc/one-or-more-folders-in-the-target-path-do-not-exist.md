@@ -8,7 +8,8 @@ One or more of the directories supplied in the target path do not exist. This ma
   
 ## To correct this error  
   
--   Check to make sure you are supplying the correct target path.  
+- Check to make sure you are supplying the correct target path.  
   
 ## See also
+
 - [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

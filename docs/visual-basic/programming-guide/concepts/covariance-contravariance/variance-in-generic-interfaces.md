@@ -6,19 +6,19 @@ ms.assetid: cf4096d0-4bb3-45a9-9a6b-f01e29a60333
 # Variance in Generic Interfaces (Visual Basic)
 .NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces. The following interfaces are now variant:  
   
--   <xref:System.Collections.Generic.IEnumerable%601> (T is covariant)  
+- <xref:System.Collections.Generic.IEnumerable%601> (T is covariant)  
   
--   <xref:System.Collections.Generic.IEnumerator%601> (T is covariant)  
+- <xref:System.Collections.Generic.IEnumerator%601> (T is covariant)  
   
--   <xref:System.Linq.IQueryable%601> (T is covariant)  
+- <xref:System.Linq.IQueryable%601> (T is covariant)  
   
--   <xref:System.Linq.IGrouping%602> (`TKey` and `TElement` are covariant)  
+- <xref:System.Linq.IGrouping%602> (`TKey` and `TElement` are covariant)  
   
--   <xref:System.Collections.Generic.IComparer%601> (T is contravariant)  
+- <xref:System.Collections.Generic.IComparer%601> (T is contravariant)  
   
--   <xref:System.Collections.Generic.IEqualityComparer%601> (T is contravariant)  
+- <xref:System.Collections.Generic.IEqualityComparer%601> (T is contravariant)  
   
--   <xref:System.IComparable%601> (T is contravariant)  
+- <xref:System.IComparable%601> (T is contravariant)  
   
  Covariance permits a method to have a more derived return type than that defined by the generic type parameter of the interface. To illustrate the covariance feature, consider these generic interfaces: `IEnumerable(Of Object)` and `IEnumerable(Of String)`. The `IEnumerable(Of String)` interface does not inherit the `IEnumerable(Of Object)` interface. However, the `String` type does inherit the `Object` type, and in some cases you may want to assign objects of these interfaces to each other. This is shown in the following code example.  
   
@@ -86,6 +86,7 @@ Dim listObjects As IEnumerable(Of Object) = New List(Of String)
 ```  
   
 ## See also
+
 - [Using Variance in Interfaces for Generic Collections (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)
 - [Creating Variant Generic Interfaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)
 - [Generic Interfaces](../../../../standard/generics/interfaces.md)

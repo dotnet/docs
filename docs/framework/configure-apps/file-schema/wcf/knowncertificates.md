@@ -1,9 +1,9 @@
 ---
-title: "&lt;knownCertificates&gt;"
+title: "<knownCertificates>"
 ms.date: "03/30/2017"
 ms.assetid: 678e21b4-6493-47c3-8359-fcf0d37e2138
 ---
-# &lt;knownCertificates&gt;
+# \<knownCertificates>
 Represents a collection of X.509 certificates that are provided to authenticate security credentials issued from a Security Token Service (STS).  
   
  \<system.ServiceModel>  
@@ -66,6 +66,7 @@ Represents a collection of X.509 certificates that are provided to authenticate 
  For an example that shows how to populate the collection in configuration, see [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md).  
   
 ## See also
+
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>

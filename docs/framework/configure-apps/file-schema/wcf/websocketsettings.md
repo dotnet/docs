@@ -1,9 +1,9 @@
 ---
-title: "&lt;webSocketSettings&gt;"
+title: "<webSocketSettings>"
 ms.date: "03/30/2017"
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
 ---
-# &lt;webSocketSettings&gt;
+# \<webSocketSettings>
 A configuration element used to specify Web Socket settings.  
   
 \<system.ServiceModel>  
@@ -79,6 +79,7 @@ A configuration element used to specify Web Socket settings.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.Binding>
 - <xref:System.ServiceModel.Channels.BindingElement>
 - <xref:System.ServiceModel.BasicHttpBinding>

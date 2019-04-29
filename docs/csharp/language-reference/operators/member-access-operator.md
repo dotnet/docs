@@ -1,7 +1,7 @@
 ---
 title: ". operator - C# Reference"
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 02/25/2019
 f1_keywords: 
   - "._CSharpKeyword"
 helpviewer_keywords: 
@@ -12,38 +12,37 @@ ms.assetid: a1f54b52-b686-4ae5-a48e-a2a9ebd0eb7b
 ---
 # . operator (C# Reference)
 
-The dot operator (`.`) is used for member access. The dot operator specifies a member of a type or namespace. For example, the dot operator is used to access specific methods within the .NET Framework class libraries:
+The dot, `.`, is typically used for member access.
 
-[!code-csharp[csRefOperators#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#16)]
+You use the `.` token to access a member of a namespace or a type, as the following examples demonstrate:
 
-For example, consider the following class:
+- Use `.` to access a nested namespace within a namespace, as the following example of a [`using` directive](../keywords/using-directive.md) shows:
 
-[!code-csharp[csRefOperators#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#17)]
+  [!code-csharp[nested namespaces](~/samples/snippets/csharp/language-reference/operators/MemberAccessExamples.cs#NestedNamespace)]
 
-[!code-csharp[csRefOperators#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#18)]
+- Use `.` to form a *qualified name* to access a type within a namespace, as the following code shows:
 
-The variable `s` has two members, `a` and `b`; to access them, use the dot operator:
+  [!code-csharp[qualified name](~/samples/snippets/csharp/language-reference/operators/MemberAccessExamples.cs#QualifiedName)]
 
-[!code-csharp[csRefOperators#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#19)]
+  Use the [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-The dot is also used to form qualified names, which are names that specify the namespace or interface, for example, to which they belong.
+- Use `.` to access [type members](../../programming-guide/classes-and-structs/index.md#members), static and non-static, as the following code shows:
 
-[!code-csharp[csRefOperators#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#20)]
+  [!code-csharp-interactive[type members](~/samples/snippets/csharp/language-reference/operators/MemberAccessExamples.cs#TypeMemberAccess)]
 
-The using directive makes some name qualification optional:
+You can also use `.` to invoke an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 
-[!code-csharp[csRefOperators#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#21)]
+## Operator overloadability
 
-But when an identifier is ambiguous, it must be qualified:
-
-[!code-csharp[csRefOperators#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#22)]
+The operator `.` cannot be overloaded.
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see the [Member access](~/_csharplang/spec/expressions.md#member-access) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
+- [?. and ?[] operators](null-conditional-operators.md)

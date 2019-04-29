@@ -59,4 +59,4 @@ The following example uses the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?d
   
 ## See also
 
-[File and stream I/O](../../../docs/standard/io/index.md)
+- [File and stream I/O](../../../docs/standard/io/index.md)

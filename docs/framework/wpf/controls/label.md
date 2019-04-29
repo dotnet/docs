@@ -13,12 +13,12 @@ ms.assetid: 241c1ce2-60f8-4613-a0ec-9b9bb25fb6af
   
  A <xref:System.Windows.Controls.Label> provides both functional and visual support for access keys. It is frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A?displayProperty=nameWithType> property to the control that should get focus when the user presses the access key.  
   
- The following image shows a <xref:System.Windows.Controls.Label> "Themes" that targets a <xref:System.Windows.Controls.ComboBox>.  When the user presses , the <xref:System.Windows.Controls.ComboBox> receives focus.  For more information, see [How to: Set the Target Property of a Label](https://msdn.microsoft.com/library/b24c6977-ebcb-4855-a9bb-3fd4435af8f8).  
+ The following image shows a <xref:System.Windows.Controls.Label> "Themes" that targets a <xref:System.Windows.Controls.ComboBox>.  When the user presses , the <xref:System.Windows.Controls.ComboBox> receives focus.  For more information, see [How to: Set the Target Property of a Label](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90)).  
   
- ![Display properties shows labeled by usage](../../../../docs/framework/wpf/controls/media/labeledby.JPG "LabeledBy")  
+ ![Display properties shows labeled by usage](./media/labeledby.JPG "LabeledBy")  
   
 ## In This Section  
- [How to: Set the Target Property of a Label](https://msdn.microsoft.com/library/b24c6977-ebcb-4855-a9bb-3fd4435af8f8)  
+ [How to: Create a Control That Has an Access Key and Text Wrapping](how-to-create-a-control-that-has-an-access-key-and-text-wrapping.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Label>

@@ -1,10 +1,10 @@
 ---
-title: "&lt;filters&gt; of &lt;routing&gt;"
+title: "<filters> of <routing>"
 ms.date: "03/30/2017"
 ms.assetid: 7993cf90-9afd-4c3c-9608-184d5da1105c
 ---
 
-# &lt;filters&gt; of &lt;routing&gt;
+# \<filters> of \<routing>
 
 Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF) <xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
 

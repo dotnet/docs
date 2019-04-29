@@ -1,5 +1,5 @@
 ---
-title: "&gt;&gt;= Operator (Visual Basic)"
+title: ">>= Operator (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.>>="
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - ">>= operator [Visual Basic]"
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
 ---
-# &gt;&gt;= Operator (Visual Basic)
+# >>= Operator (Visual Basic)
 Performs an arithmetic right shift on the value of a variable or property and assigns the result back to the variable or property.  
   
 ## Syntax  
@@ -40,9 +40,10 @@ variableorproperty >>= amount
 ## Example  
  The following example uses the `>>=` operator to shift the bit pattern of an `Integer` variable right by the specified amount and assign the result to the variable.  
   
- [!code-vb[VbVbalrOperators#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#15)]  
   
 ## See also
+
 - [>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)

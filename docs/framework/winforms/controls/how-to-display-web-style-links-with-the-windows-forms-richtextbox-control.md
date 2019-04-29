@@ -16,18 +16,18 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
   
 ### To link to a Web page with the RichTextBox control  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.Text%2A> property to a string that includes a valid URL (for example, "http://www.microsoft.com/").  
+1. Set the <xref:System.Windows.Forms.RichTextBox.Text%2A> property to a string that includes a valid URL (for example, "http://www.microsoft.com/").  
   
-2.  Make sure the <xref:System.Windows.Forms.RichTextBox.DetectUrls%2A> property is set to `true` (the default).  
+2. Make sure the <xref:System.Windows.Forms.RichTextBox.DetectUrls%2A> property is set to `true` (the default).  
   
-3.  Create a new global instance of the <xref:System.Diagnostics.Process> object.  
+3. Create a new global instance of the <xref:System.Diagnostics.Process> object.  
   
-4.  Write an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event that sends the browser the desired text.  
+4. Write an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event that sends the browser the desired text.  
   
      In the example below, the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event opens an instance of Internet Explorer to the URL specified in the <xref:System.Windows.Forms.RichTextBox.Text%2A> property of the <xref:System.Windows.Forms.RichTextBox> control. This example assumes a form with a <xref:System.Windows.Forms.RichTextBox> control.  
   
     > [!IMPORTANT]
-    >  In calling the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method, you will encounter a <xref:System.Security.SecurityException> exception if you are running the code in a partial-trust context because of insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  In calling the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method, you will encounter a <xref:System.Security.SecurityException> exception if you are running the code in a partial-trust context because of insufficient privileges. For more information, see [Code Access Security Basics](../../misc/code-access-security-basics.md).  
   
     ```vb  
     Public p As New System.Diagnostics.Process  
@@ -111,8 +111,9 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBox.DetectUrls%2A>
 - <xref:System.Windows.Forms.RichTextBox.LinkClicked>
 - <xref:System.Windows.Forms.RichTextBox>
-- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [RichTextBox Control](richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

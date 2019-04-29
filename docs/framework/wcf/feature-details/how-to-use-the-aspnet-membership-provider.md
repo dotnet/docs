@@ -21,13 +21,13 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
   
 ### To configure the membership provider  
   
-1.  In the Web.config file, under the <`system.web`> element, create a <`membership`> element.  
+1. In the Web.config file, under the <`system.web`> element, create a <`membership`> element.  
   
-2.  Under the `<membership>` element, create a `<providers>` element.  
+2. Under the `<membership>` element, create a `<providers>` element.  
   
-3.  As a child to the <`providers`> element, add a `<clear />` element to flush the collection of providers.  
+3. As a child to the <`providers`> element, add a `<clear />` element to flush the collection of providers.  
   
-4.  Under the `<clear />` element, create an <`add`> element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, `applicationName`, `enablePasswordRetrieval`, `enablePasswordReset`, `requiresQuestionAndAnswer`, `requiresUniqueEmail`, and `passwordFormat`. The `name` attribute is used later as a value in the configuration file. The following example sets it to `SqlMembershipProvider`.  
+4. Under the `<clear />` element, create an <`add`> element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, `applicationName`, `enablePasswordRetrieval`, `enablePasswordReset`, `requiresQuestionAndAnswer`, `requiresUniqueEmail`, and `passwordFormat`. The `name` attribute is used later as a value in the configuration file. The following example sets it to `SqlMembershipProvider`.  
   
      The following example shows the configuration section.  
   
@@ -52,13 +52,13 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
   
 ### To configure service security to accept the user name/password combination  
   
-1.  In the configuration file, under the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
+1. In the configuration file, under the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
   
-2.  Add a [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) to the bindings section. For more information about creating an WCF binding element, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
+2. Add a [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) to the bindings section. For more information about creating an WCF binding element, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
   
-3.  Set the `mode` attribute of the `<security>` element to `Message`.  
+3. Set the `mode` attribute of the `<security>` element to `Message`.  
   
-4.  Set the `clientCredentialType` attribute of the <`message`> element to `UserName`. This specifies that a user name/password pair will be used as the client's credential.  
+4. Set the `clientCredentialType` attribute of the <`message`> element to `UserName`. This specifies that a user name/password pair will be used as the client's credential.  
   
      The following example shows the configuration code for the binding.  
   
@@ -79,22 +79,22 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
   
 ### To configure a service to use the membership provider  
   
-1.  As a child to the `<system.serviceModel>` element, add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element  
+1. As a child to the `<system.serviceModel>` element, add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element  
   
-2.  Add a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.  
+2. Add a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.  
   
-3.  Add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.  
+3. Add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.  
   
-4.  Add a [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) to the <`behavior`> element.  
+4. Add a [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) to the <`behavior`> element.  
   
-5.  Add a [\<userNameAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md) to the `<serviceCredentials>` element.  
+5. Add a [\<userNameAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md) to the `<serviceCredentials>` element.  
   
-6.  Set the `userNamePasswordValidationMode` attribute to `MembershipProvider`.  
+6. Set the `userNamePasswordValidationMode` attribute to `MembershipProvider`.  
   
     > [!IMPORTANT]
     >  If the `userNamePasswordValidationMode` value is not set, WCF uses Windows authentication instead of the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider.  
   
-7.  Set the `membershipProviderName` attribute to the name of the provider (specified when adding the provider in the first procedure in this topic). The following example shows the `<serviceCredentials>` fragment to this point.  
+7. Set the `membershipProviderName` attribute to the name of the provider (specified when adding the provider in the first procedure in this topic). The following example shows the `<serviceCredentials>` fragment to this point.  
   
     ```xml  
     <behaviors>  
@@ -149,5 +149,6 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
 ```  
   
 ## See also
+
 - [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)
 - [Membership and Role Provider](../../../../docs/framework/wcf/samples/membership-and-role-provider.md)

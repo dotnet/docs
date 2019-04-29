@@ -1,9 +1,9 @@
 ---
-title: "&lt;netTcpContextBinding&gt;"
+title: "<netTcpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
 ---
-# &lt;netTcpContextBinding&gt;
+# \<netTcpContextBinding>
 Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requires that the protection level be signed. The contextExchangeMechanism for NetTcpContextBinding is SOAPHeader.  
   
  \<system.ServiceModel>  
@@ -62,8 +62,8 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 |Attribute|Description|  
 |---------------|-----------------|  
 |closeTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
-|contextProtectionLevel|A valid <xref:System.Net.Security.ProtectionLevel> value that specifies the desired protection level of the SOAP header used to propagate the context information.  The default value is `Sign`.|  
-|hostnameComparisonMode|Specifies the HTTP hostname comparison mode used to parse URIs. This attribute is of type `System.ServiceModel.HostnameComparisonMode`, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is `StrongWildcard`, which ignores the hostname in the match.|  
+|contextProtectionLevel|A valid <xref:System.Net.Security.ProtectionLevel> value that specifies the desired protection level of the SOAP header used to propagate the context information.  The default value is <xref:System.Net.Security.ProtectionLevel.Sign>.|  
+|hostnameComparisonMode|Specifies the HTTP hostname comparison mode used to parse URIs. This attribute is of type <xref:System.ServiceModel.HostNameComparisonMode>, which indicates whether the hostname is used to reach the service when matching on the URI. The default value is <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>, which ignores the hostname in the match.|  
 |listenBacklog|A positive integer that specifies the maximum number of channels waiting to be accepted on the listener. Connections in excess of this limit are queued until space below the limit becomes available. The `connectionTimeout` attribute limits the time a client will wait to be connected before throwing a connection exception. The default is 10.|  
 |maxBufferPoolSize|An integer that specifies the maximum buffer pool size for this binding. The default is 512 * 1024 bytes. Many parts of Windows Communication Foundation (WCF) use buffers. Creating and destroying buffers each time they are used is expensive, and garbage collection for buffers is also expensive. With buffer pools, you can take a buffer from the pool, use it, and return it to the pool once you are done. Thus the overhead in creating and destroying buffers is avoided.|  
 |maxBufferSize|A positive integer that specifies the maximum size, in bytes, of the buffer used to store messages in memory. If the buffer is full, excess data remains in the underlying socket until the buffer has room again. This value cannot be less than `maxReceivedMessageSize` attribute. The default is 65536. For more information, see <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferSize%2A>.|  
@@ -83,8 +83,8 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>.|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b)|Specifies if reliable sessions are established between channel endpoints.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   
@@ -93,6 +93,7 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## See also
+
 - <xref:System.ServiceModel.NetTcpBinding>
 - <xref:System.ServiceModel.NetTcpContextBinding>
 - <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>

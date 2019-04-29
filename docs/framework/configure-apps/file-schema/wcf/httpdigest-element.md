@@ -1,9 +1,9 @@
 ---
-title: "&lt;httpDigest&gt; Element"
+title: "<httpDigest> Element"
 ms.date: "03/30/2017"
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
 ---
-# &lt;httpDigest&gt; Element
+# \<httpDigest> Element
 Specifies a digest type credential used when authenticating the client to a service.  
   
  \<system.ServiceModel>  
@@ -43,6 +43,7 @@ Specifies a digest type credential used when authenticating the client to a serv
  This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>
 - <xref:System.ServiceModel.Description.ClientCredentials>

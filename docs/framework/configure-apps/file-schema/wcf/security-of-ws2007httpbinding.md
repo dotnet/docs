@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;ws2007HttpBinding&gt;"
+title: "<security> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
 ---
-# &lt;security&gt; of &lt;ws2007HttpBinding&gt;
+# \<security> of \<ws2007HttpBinding>
 Represents the security settings used with the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.  
   
  \<system.serviceModel>  
@@ -66,6 +66,7 @@ Represents the security settings used with the [\<ws2007HttpBinding>](../../../.
  This element is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
   
 ## See also
+
 - <xref:System.ServiceModel.WSHttpSecurity>
 - <xref:System.ServiceModel.WSHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>

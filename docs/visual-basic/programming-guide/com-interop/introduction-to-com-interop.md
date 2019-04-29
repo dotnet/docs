@@ -22,17 +22,17 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 ## Type Libraries and Assembly Manifests  
  Type libraries describe characteristics of COM objects, such as member names and data types. Assembly manifests perform the same function for [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] applications. They include information about the following:  
   
--   Assembly identity, version, culture, and digital signature.  
+- Assembly identity, version, culture, and digital signature.  
   
--   Files that make up the assembly implementation.  
+- Files that make up the assembly implementation.  
   
--   Types and resources that make up the assembly. This includes those that are exported from it.  
+- Types and resources that make up the assembly. This includes those that are exported from it.  
   
--   Compile-time dependencies on other assemblies.  
+- Compile-time dependencies on other assemblies.  
   
--   Permissions required for the assembly to run correctly.  
+- Permissions required for the assembly to run correctly.  
   
- For more information about assemblies and assembly manifests, see [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md).  
+ For more information about assemblies and assembly manifests, see [Assemblies in .NET](../../../standard/assembly/index.md).  
   
 ### Importing and Exporting Type Libraries  
  Visual Studio contains a utility, Tlbimp, that lets you import information from a type library into a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] application. You can generate type libraries from assemblies by using the Tlbexp utility.  
@@ -51,7 +51,7 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 - [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
 - [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
 - [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
-- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
 - [Tlbexp.exe (Type Library Exporter)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
 - [Interop Marshaling](../../../framework/interop/interop-marshaling.md)

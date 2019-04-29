@@ -30,7 +30,7 @@ HRESULT GetArgument (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The index of the argument in this MSIL stack frame.  
   

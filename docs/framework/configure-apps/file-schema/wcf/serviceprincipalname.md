@@ -1,9 +1,9 @@
 ---
-title: "&lt;servicePrincipalName&gt;"
+title: "<servicePrincipalName>"
 ms.date: "03/30/2017"
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
 ---
-# &lt;servicePrincipalName&gt;
+# \<servicePrincipalName>
 Specifies the identity of a service by its Service Principal Name (SPN).  
   
  For more information about setting the SPN, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
@@ -39,6 +39,7 @@ Specifies the identity of a service by its Service Principal Name (SPN).
  A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>

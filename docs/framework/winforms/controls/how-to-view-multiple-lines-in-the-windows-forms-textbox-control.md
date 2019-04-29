@@ -17,15 +17,15 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
   
 ### To display a carriage return in the TextBox control  
   
--   To display a carriage return in a multi-line <xref:System.Windows.Forms.TextBox>, use the <xref:System.Environment.NewLine%2A> property.  
+- To display a carriage return in a multi-line <xref:System.Windows.Forms.TextBox>, use the <xref:System.Environment.NewLine%2A> property.  
   
      Be aware that the interpretation of escape characters (\\) is language-specific. Visual Basic uses `Chr$(13) & Chr$(10)` for the carriage return and linefeed character combination.  
   
 ### To view multiple lines in the TextBox control  
   
-1.  Set the <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`. If <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> is `true` (the default), then the text in the control will appear as one or more paragraphs; otherwise it will appear as a list, in which some lines may be clipped at the edge of the control.  
+1. Set the <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`. If <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> is `true` (the default), then the text in the control will appear as one or more paragraphs; otherwise it will appear as a list, in which some lines may be clipped at the edge of the control.  
   
-2.  Set the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property to an appropriate value.  
+2. Set the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property to an appropriate value.  
   
     |Value|Description|  
     |-----------|-----------------|  
@@ -33,7 +33,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
     |<xref:System.Windows.Forms.ScrollBars.Horizontal>|Use this value if you want to display a list of lines, some of which may be longer than the width of the <xref:System.Windows.Forms.TextBox> control.|  
     |<xref:System.Windows.Forms.ScrollBars.Both>|Use this value if the list may be longer than the height of the control.|  
   
-3.  Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
+3. Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
   
     |Value|Description|  
     |-----------|-----------------|  
@@ -41,11 +41,12 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
     |`true` (default)|The horizontal scrollbar will not appear. Use this value if you chose <xref:System.Windows.Forms.ScrollBars.Vertical> scroll bars or <xref:System.Windows.Forms.ScrollBars.None>, above, to display one or more paragraphs.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
-- [TextBox Control Overview](../../../../docs/framework/winforms/controls/textbox-control-overview-windows-forms.md)
-- [How to: Control the Insertion Point in a Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)
-- [How to: Create a Password Text Box with the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-create-a-password-text-box-with-the-windows-forms-textbox-control.md)
-- [How to: Create a Read-Only Text Box](../../../../docs/framework/winforms/controls/how-to-create-a-read-only-text-box-windows-forms.md)
-- [How to: Put Quotation Marks in a String](../../../../docs/framework/winforms/controls/how-to-put-quotation-marks-in-a-string-windows-forms.md)
-- [How to: Select Text in the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-select-text-in-the-windows-forms-textbox-control.md)
-- [TextBox Control](../../../../docs/framework/winforms/controls/textbox-control-windows-forms.md)
+- [TextBox Control Overview](textbox-control-overview-windows-forms.md)
+- [How to: Control the Insertion Point in a Windows Forms TextBox Control](how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)
+- [How to: Create a Password Text Box with the Windows Forms TextBox Control](how-to-create-a-password-text-box-with-the-windows-forms-textbox-control.md)
+- [How to: Create a Read-Only Text Box](how-to-create-a-read-only-text-box-windows-forms.md)
+- [How to: Put Quotation Marks in a String](how-to-put-quotation-marks-in-a-string-windows-forms.md)
+- [How to: Select Text in the Windows Forms TextBox Control](how-to-select-text-in-the-windows-forms-textbox-control.md)
+- [TextBox Control](textbox-control-windows-forms.md)

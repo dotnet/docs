@@ -22,19 +22,20 @@ A common situation faced by information technology (IT) professionals managing a
   
  Finally, the results are presented to the user.  
   
- [!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](../../../../samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
- [!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]
- [!code-vb[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/visualbasic/program.vb#listsubsetofprintqueues)]  
+ [!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
+ [!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]
+ [!code-vb[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/visualbasic/program.vb#listsubsetofprintqueues)]  
   
  You could extend this example by having the `foreach` loop that steps through each print queue do further screening. For example, you could screen out printers that do not support two-sided printing by having the loop call each print queue's <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A> method and test the returned value for the presence of duplexing.  
   
 ## See also
+
 - <xref:System.Printing.PrintServer.GetPrintQueues%2A>
 - <xref:System.Printing.PrintServer>
 - <xref:System.Printing.LocalPrintServer>
 - <xref:System.Printing.EnumeratedPrintQueueTypes>
 - <xref:System.Printing.PrintQueue>
 - <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)
 - [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319)

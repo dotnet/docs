@@ -12,29 +12,30 @@ Starting with the .NET Framework 2.0, you can create and access values that are 
  The topics in this section describe how to use settings at design time and run time.  
   
 ## In This Section  
- [How To: Create a New Setting at Design Time](../../../../docs/framework/winforms/advanced/how-to-create-a-new-setting-at-design-time.md)  
+ [How To: Create a New Setting at Design Time](how-to-create-a-new-setting-at-design-time.md)  
   
  Explains how to use Visual Studio to create a new setting for an application.  
   
- [How To: Change the Value of an Existing Setting at Design Time](../../../../docs/framework/winforms/advanced/how-to-change-the-value-of-an-existing-setting-at-design-time.md)  
+ [How To: Change the Value of an Existing Setting at Design Time](how-to-change-the-value-of-an-existing-setting-at-design-time.md)  
   
  Describes how to use Visual Studio to change the value of an existing setting.  
   
- [How To: Change the Value of a Setting Between Application Sessions](../../../../docs/framework/winforms/advanced/how-to-change-the-value-of-a-setting-between-application-sessions.md)  
+ [How To: Change the Value of a Setting Between Application Sessions](how-to-change-the-value-of-a-setting-between-application-sessions.md)  
   
  Details how to change the value of a setting in a compiled application between application sessions.  
   
- [How To: Read Settings at Run Time With C#](../../../../docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)  
+ [How To: Read Settings at Run Time With C#](how-to-read-settings-at-run-time-with-csharp.md)  
   
  Describes how to use code to read settings with C#.  
   
- [How To: Write User Settings at Run Time with C#](../../../../docs/framework/winforms/advanced/how-to-write-user-settings-at-run-time-with-csharp.md)  
+ [How To: Write User Settings at Run Time with C#](how-to-write-user-settings-at-run-time-with-csharp.md)  
   
  Explains how to use code to write and save the values of user settings with C#.  
   
- [How To: Add Multiple Sets of Settings To Your Application in C#](../../../../docs/framework/winforms/advanced/how-to-add-multiple-sets-of-settings-to-your-application-in-csharp.md)  
+ [How To: Add Multiple Sets of Settings To Your Application in C#](how-to-add-multiple-sets-of-settings-to-your-application-in-csharp.md)  
   
  Details how to add multiple sets of settings to an application with C#.  
   
 ## See also
-- [Application Settings for Windows Forms](../../../../docs/framework/winforms/advanced/application-settings-for-windows-forms.md)
+
+- [Application Settings for Windows Forms](application-settings-for-windows-forms.md)

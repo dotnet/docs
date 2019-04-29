@@ -29,7 +29,7 @@ HRESULT GetID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pId`  
  [out] The unique identifier of the application domain.  
   

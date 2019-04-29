@@ -1,9 +1,9 @@
 ---
-title: "&lt;userDefinedType&gt;"
+title: "<userDefinedType>"
 ms.date: "03/30/2017"
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
 ---
-# &lt;userDefinedType&gt;
+# \<userDefinedType>
 Represents a User Defined Type (UDT) that is to be included in the service contract.  
   
  \<system.ServiceModel>  
@@ -85,6 +85,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
  When the service is initialized, the integration runtime looks up the specified types and adds them to the known types collection for the specified contracts.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes%2A>
 - <xref:System.ServiceModel.Configuration.ComUdtElementCollection>
 - <xref:System.ServiceModel.Configuration.ComUdtElement>

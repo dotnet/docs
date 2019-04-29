@@ -1,5 +1,5 @@
 ---
-title: "&lt;&lt;= Operator (Visual Basic)"
+title: "<<= Operator (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.<<="
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
 ---
-# &lt;&lt;= Operator (Visual Basic)
+# \<\<= Operator (Visual Basic)
 Performs an arithmetic left shift on the value of a variable or property and assigns the result back to the variable or property.  
   
 ## Syntax  
@@ -41,9 +41,10 @@ variableorproperty <<= amount
 ## Example  
  The following example uses the `<<=` operator to shift the bit pattern of an `Integer` variable left by the specified amount and assign the result to the variable.  
   
- [!code-vb[VbVbalrOperators#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/left-shift-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#13)]  
   
 ## See also
+
 - [<< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)

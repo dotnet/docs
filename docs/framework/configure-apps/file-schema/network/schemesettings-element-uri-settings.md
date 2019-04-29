@@ -1,9 +1,9 @@
 ---
-title: "&lt;schemeSettings&gt; Element (Uri Settings)"
+title: "<schemeSettings> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
 ---
-# &lt;schemeSettings&gt; Element (Uri Settings)
+# \<schemeSettings> Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  
   
  \<configuration>  
@@ -78,6 +78,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |Can be Empty||  
   
 ## See also
+
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

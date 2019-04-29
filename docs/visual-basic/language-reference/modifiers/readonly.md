@@ -18,11 +18,11 @@ Specifies that a variable or property can be read but not written.
   
 ## Rules  
   
--   **Declaration Context.** You can use `ReadOnly` only at module level. This means the declaration context for a `ReadOnly` element must be a class, structure, or module, and cannot be a source file, namespace, or procedure.  
+- **Declaration Context.** You can use `ReadOnly` only at module level. This means the declaration context for a `ReadOnly` element must be a class, structure, or module, and cannot be a source file, namespace, or procedure.  
   
--   **Combined Modifiers.** You cannot specify `ReadOnly` together with `Static` in the same declaration.  
+- **Combined Modifiers.** You cannot specify `ReadOnly` together with `Static` in the same declaration.  
   
--   **Assigning a Value.** Code consuming a `ReadOnly` property cannot set its value. But code that has access to the underlying storage can assign or change the value at any time.  
+- **Assigning a Value.** Code consuming a `ReadOnly` property cannot set its value. But code that has access to the underlying storage can assign or change the value at any time.  
   
      You can assign a value to a `ReadOnly` variable only in its declaration or in the constructor of a class or structure in which it is defined.  
   
@@ -47,7 +47,7 @@ Specifies that a variable or property can be read but not written.
 ## Example  
  The following example defines a `ReadOnly` property for the date on which an employee was hired. The class stores the property value internally as a `Private` variable, and only code inside the class can change that value. However, the property is `Public`, and any code that can access the class can read the property.  
   
- [!code-vb[VbVbalrKeywords#4](../../../visual-basic/language-reference/codesnippet/VisualBasic/readonly_1.vb)]  
+ [!code-vb[VbVbalrKeywords#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#4)]  
   
  The `ReadOnly` modifier can be used in these contexts:  
   
@@ -56,5 +56,6 @@ Specifies that a variable or property can be read but not written.
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## See also
+
 - [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

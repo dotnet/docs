@@ -1,9 +1,9 @@
 ---
-title: "&lt;comContract&gt;"
+title: "<comContract>"
 ms.date: "03/30/2017"
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
 ---
-# &lt;comContract&gt;
+# \<comContract>
 Specifies a COM+ integration service contract.  
   
  \<system.ServiceModel>  
@@ -83,7 +83,7 @@ Specifies a COM+ integration service contract.
  When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
   
 ## See also
-- <xref:System.ServiceModel.Configuration.ComContractElementCollection>
+
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>
 - [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)

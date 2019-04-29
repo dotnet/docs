@@ -12,11 +12,11 @@ ms.assetid: 9488a245-0168-4650-b9ab-d075a108cc8f
 The topics in this section describe how to use the <xref:System.Windows.Controls.Primitives.Popup> control to display content in a separate window that floats over the current application window.  
   
 ## In This Section  
- [Animate a Popup](../../../../docs/framework/wpf/controls/how-to-animate-a-popup.md)  
- [Specify a Custom Popup Position](../../../../docs/framework/wpf/controls/how-to-specify-a-custom-popup-position.md)  
+ [Animate a Popup](how-to-animate-a-popup.md)  
+ [Specify a Custom Popup Position](how-to-specify-a-custom-popup-position.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Primitives.Popup>  
   
 ## Related Sections  
- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)
+ [Popup Overview](popup-overview.md)

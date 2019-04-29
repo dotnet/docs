@@ -29,7 +29,7 @@ HRESULT GetValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pValue`  
  [out] A pointer to a `CORDB_ADDRESS` value that specifies the address of the object to which this ICorDebugReferenceValue object points.  
   

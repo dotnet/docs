@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 164b69bb-2eca-4339-ada3-0679eb2c6dda
 ---
 # How to: Create MDI Child Forms
-MDI child forms are an essential element of [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md), as these forms are the center of user interaction.  
+MDI child forms are an essential element of [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md), as these forms are the center of user interaction.  
   
  In the following procedure, you will create MDI child form that displays a <xref:System.Windows.Forms.RichTextBox> control, similar to most word-processing applications. Substituting the <xref:System.Windows.Forms> control with other controls, such as the <xref:System.Windows.Forms.DataGridView> control, or a mixture of controls enables you to create MDI child windows (and, by extension, MDI applications) with diverse possibilities.  
   
@@ -20,17 +20,17 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
   
 ### To create MDI child forms  
   
-1.  Create a new Windows Forms project. In **the Properties Windows** for the form, set its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`, and its `WindowsState` property to `Maximized`.  
+1. Create a new Windows Forms project. In **the Properties Windows** for the form, set its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`, and its `WindowsState` property to `Maximized`.  
   
      This designates the form as an MDI container for child windows.  
   
-2.  From the `Toolbox`, drag a <xref:System.Windows.Forms.MenuStrip> control to the form. Set its `Text` property to **File**.  
+2. From the `Toolbox`, drag a <xref:System.Windows.Forms.MenuStrip> control to the form. Set its `Text` property to **File**.  
   
-3.  Click the ellipses (…) next to the **Items** property, and click **Add** to add two child tool strip menu items. Set the `Text` property for these items to **New** and **Window**.  
+3. Click the ellipses (…) next to the **Items** property, and click **Add** to add two child tool strip menu items. Set the `Text` property for these items to **New** and **Window**.  
   
-4.  In **Solution Explorer**, right-click the project, point to **Add**, and then select **Add New Item**.  
+4. In **Solution Explorer**, right-click the project, point to **Add**, and then select **Add New Item**.  
   
-5.  In the **Add New Item** dialog box, select **Windows Form** (in Visual Basic or in Visual C#) or **Windows Forms Application (.NET)** (in [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) from the **Templates** pane. In the **Name** box, name the form **Form2**. Click the **Open** button to add the form to the project.  
+5. In the **Add New Item** dialog box, select **Windows Form** (in Visual Basic or in Visual C#) or **Windows Forms Application (.NET)** (in [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) from the **Templates** pane. In the **Name** box, name the form **Form2**. Click the **Open** button to add the form to the project.  
   
     > [!NOTE]
     >  The MDI child form you created in this step is a standard Windows Form. As such, it has an <xref:System.Windows.Forms.Form.Opacity%2A> property, which enables you to control the transparency of the form. However, the <xref:System.Windows.Forms.Form.Opacity%2A> property was designed for top-level windows. Do not use it with MDI child forms, as painting problems can occur.  
@@ -39,13 +39,13 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
   
      The **Windows Forms Designer** opens, displaying **Form2**.  
   
-6.  From the **Toolbox**, drag a **RichTextBox** control to the form.  
+6. From the **Toolbox**, drag a **RichTextBox** control to the form.  
   
-7.  In the **Properties** window, set the `Anchor` property to **Top, Left** and the `Dock` property to **Fill**.  
+7. In the **Properties** window, set the `Anchor` property to **Top, Left** and the `Dock` property to **Fill**.  
   
      This causes the <xref:System.Windows.Forms.RichTextBox> control to completely fill the area of the MDI child form, even when the form is resized.  
   
-8.  Double click the **New** menu item to create a <xref:System.Windows.Forms.Control.Click> event handler for it.  
+8. Double click the **New** menu item to create a <xref:System.Windows.Forms.Control.Click> event handler for it.  
   
 9. Insert code similar to the following to create a new MDI child form when the user clicks the **New** menu item.  
   
@@ -101,8 +101,9 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
     >  When an MDI child form has a <xref:System.Windows.Forms.MainMenu> component (with, usually, a menu structure of menu items) and it is opened within an MDI parent form that has a <xref:System.Windows.Forms.MainMenu> component (with, usually, a menu structure of menu items), the menu items will merge automatically if you have set the <xref:System.Windows.Forms.MenuItem.MergeType%2A> property (and optionally, the <xref:System.Windows.Forms.MenuItem.MergeOrder%2A> property). Set the <xref:System.Windows.Forms.MenuItem.MergeType%2A> property of both <xref:System.Windows.Forms.MainMenu> components and all of the menu items of the child form to <xref:System.Windows.Forms.MenuMerge.MergeItems>. Additionally, set the <xref:System.Windows.Forms.MenuItem.MergeOrder%2A> property so that the menu items from both menus appear in the desired order. Moreover, keep in mind that when you close an MDI parent form, each of the MDI child forms raises a <xref:System.Windows.Forms.Form.Closing> event before the <xref:System.Windows.Forms.Form.Closing> event for the MDI parent is raised. Canceling an MDI child's <xref:System.Windows.Forms.Form.Closing> event will not prevent the MDI parent's <xref:System.Windows.Forms.Form.Closing> event from being raised; however, the <xref:System.ComponentModel.CancelEventArgs> argument for the MDI parent's <xref:System.Windows.Forms.Form.Closing> event will now be set to `true`. You can force the MDI parent and all MDI child forms to close by setting the <xref:System.ComponentModel.CancelEventArgs> argument to `false`.  
   
 ## See also
-- [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md)
-- [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)
-- [How to: Determine the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-determine-the-active-mdi-child.md)
-- [How to: Send Data to the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-send-data-to-the-active-mdi-child.md)
-- [How to: Arrange MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-arrange-mdi-child-forms.md)
+
+- [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
+- [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)
+- [How to: Determine the Active MDI Child](how-to-determine-the-active-mdi-child.md)
+- [How to: Send Data to the Active MDI Child](how-to-send-data-to-the-active-mdi-child.md)
+- [How to: Arrange MDI Child Forms](how-to-arrange-mdi-child-forms.md)

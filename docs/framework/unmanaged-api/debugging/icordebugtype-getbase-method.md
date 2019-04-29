@@ -29,7 +29,7 @@ HRESULT GetBase (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBase`  
  [out] A pointer to the address of an `ICorDebugType` object that represents the base type.  
   

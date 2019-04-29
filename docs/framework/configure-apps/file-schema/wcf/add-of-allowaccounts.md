@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;allowAccounts&gt;"
+title: "<add> of <allowAccounts>"
 ms.date: "03/30/2017"
 ms.assetid: 763c7b1f-e7b0-4d99-a42c-4506fcb8da00
 ---
-# &lt;add&gt; of &lt;allowAccounts&gt;
+# \<add> of \<allowAccounts>
 Specifies a user account for processes that host WCF services, and are granted connection access to the sharing service.  
   
  \<system.serviceModel.activation>  
@@ -53,6 +53,7 @@ Specifies a user account for processes that host WCF services, and are granted c
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>
 - <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>
 - <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>

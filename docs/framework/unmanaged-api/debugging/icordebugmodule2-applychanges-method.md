@@ -32,7 +32,7 @@ HRESULT ApplyChanges (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbMetadata`  
  [in] Size, in bytes, of the delta metadata.  
   

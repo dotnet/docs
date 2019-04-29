@@ -31,7 +31,7 @@ HRESULT GetLocals(
         length_is(*pcLocals)] ISymUnmanagedVariable* locals[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cLocals`  
  [in] A `ULONG32` that indicates the size of the `locals` array.  
   
@@ -48,4 +48,5 @@ HRESULT GetLocals(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)

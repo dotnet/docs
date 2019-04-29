@@ -24,20 +24,20 @@ The term *performance* generally refers to the execution speed of a program. You
   
 ## Other Resources  
   
--   [Writing Faster Managed Code: Know What Things Cost](https://go.microsoft.com/fwlink/?LinkId=99294)  
+- [Writing Faster Managed Code: Know What Things Cost](https://go.microsoft.com/fwlink/?LinkId=99294)  
   
--   [Writing High-Performance Managed Applications: A Primer](https://go.microsoft.com/fwlink/?LinkId=99295)  
+- [Writing High-Performance Managed Applications: A Primer](https://go.microsoft.com/fwlink/?LinkId=99295)  
   
--   [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=99296)  
+- [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=99296)  
   
--   [Performance Tips and Tricks in .NET Applications](https://go.microsoft.com/fwlink/?LinkId=99297)  
+- [Performance Tips and Tricks in .NET Applications](https://go.microsoft.com/fwlink/?LinkId=99297)  
 
--   [Rico Mariani's Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=115679)  
+- [Rico Mariani's Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=115679)  
 
--   [Vance Morrison's Blog](https://blogs.msdn.microsoft.com/vancem/)
+- [Vance Morrison's Blog](https://blogs.msdn.microsoft.com/vancem/)
   
 ## See also
+
 - [Performance](../../../docs/framework/performance/index.md)
-- [Programming Concepts](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)
 - [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)
 - [C# Programming Guide](../../csharp/programming-guide/index.md)

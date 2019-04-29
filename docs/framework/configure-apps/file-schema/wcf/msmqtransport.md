@@ -1,9 +1,9 @@
 ---
-title: "&lt;msmqTransport&gt;"
+title: "<msmqTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 ---
-# &lt;msmqTransport&gt;
+# \<msmqTransport>
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  
   
  \<system.serviceModel>  
@@ -81,6 +81,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
  This binding element is the default binding element used by the Message Queuing standard binding (`netMsmqBinding`).  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.MsmqTransportElement>
 - <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

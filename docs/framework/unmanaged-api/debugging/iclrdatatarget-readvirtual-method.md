@@ -33,7 +33,7 @@ HRESULT ReadVirtual (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A CLRDATA_ADDRESS that stores the virtual memory address.  
   
@@ -56,4 +56,5 @@ HRESULT ReadVirtual (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

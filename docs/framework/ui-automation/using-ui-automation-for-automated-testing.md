@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "testing, UI Automation"
   - "UI Automation, automated testing"
 ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Using UI Automation for Automated Testing
 > [!NOTE]
@@ -57,15 +55,15 @@ ms.author: "mhopkins"
 ### Programmatic Access  
  Programmatic access provides the ability to imitate, through code, any interaction and experience exposed by traditional mouse and keyboard input. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] enables programmatic access through five components:  
   
--   The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree facilitates navigation through the structure of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. The tree is built from the collection of hWnd's. For more information, see [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
+- The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree facilitates navigation through the structure of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. The tree is built from the collection of hWnd's. For more information, see [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
   
--   Automation elements are individual components in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. These can often be more granular than an hWnd. For more information, see [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md).  
+- Automation elements are individual components in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. These can often be more granular than an hWnd. For more information, see [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md).  
   
--   Automation properties provide specific information about [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements. For more information, see [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md).  
+- Automation properties provide specific information about [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements. For more information, see [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md).  
   
--   Control patterns define a particular aspect of a control's functionality; they can consist of property, method, event, and structure information. For more information, see [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md).  
+- Control patterns define a particular aspect of a control's functionality; they can consist of property, method, event, and structure information. For more information, see [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md).  
   
--   Automation events provide event notifications and information. For more information, see [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md).  
+- Automation events provide event notifications and information. For more information, see [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md).  
   
 <a name="Key_properties_critical_to_test_automation"></a>   
 ### Key Properties for Test Automation  
@@ -99,13 +97,14 @@ ms.author: "mhopkins"
 ## Related Tools and Technologies  
  There are a number of related tools and technologies that support automated testing with [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
   
--   Inspect.exe is a [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)] application that can be used to gather [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information for both provider and client development and debugging. Inspect.exe is included in the [!INCLUDE[TLA#tla_winfxsdk](../../../includes/tlasharptla-winfxsdk-md.md)].  
+- Inspect.exe is a [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)] application that can be used to gather [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information for both provider and client development and debugging. Inspect.exe is included in the [!INCLUDE[TLA#tla_winfxsdk](../../../includes/tlasharptla-winfxsdk-md.md)].  
   
--   MSAABridge exposes [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information to [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] clients. The primary goal of bridging [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] to [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] is to allow existing [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] clients the ability to interact with any framework that has implemented [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
+- MSAABridge exposes [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information to [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] clients. The primary goal of bridging [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] to [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] is to allow existing [!INCLUDE[TLA2#tla_aa](../../../includes/tla2sharptla-aa-md.md)] clients the ability to interact with any framework that has implemented [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
   
 <a name="Security"></a>   
 ## Security  
  For security information, see [UI Automation Security Overview](../../../docs/framework/ui-automation/ui-automation-security-overview.md).  
   
 ## See also
+
 - [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)

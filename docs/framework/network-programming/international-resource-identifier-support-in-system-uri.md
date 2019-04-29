@@ -9,11 +9,11 @@ The <xref:System.Uri?displayProperty=nameWithType> class has been extended with 
 ## IRI and IDN Support  
  Web addresses are typically expressed using Uniform Resource Identifiers (URI) that consist of a very restricted set of characters:  
   
--   Upper and lower case ASCII letters from the English alphabet.  
+- Upper and lower case ASCII letters from the English alphabet.  
   
--   Digits from 0 to 9.  
+- Digits from 0 to 9.  
   
--   A small number of other ASCII symbols.  
+- A small number of other ASCII symbols.  
   
  The specifications for URIs are documented in RFC 2396 and RFC 3986 published by the Internet Engineering Task Force (IETF).  
   
@@ -38,6 +38,7 @@ The <xref:System.Uri?displayProperty=nameWithType> class has been extended with 
  The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> and <xref:System.Configuration.IdnElement?displayProperty=nameWithType> configuration classes will be read once when the first <xref:System.Uri?displayProperty=nameWithType> class is constructed. Changes to configuration settings after that time are ignored.  
   
 ## See also
+
 - <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
 - <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>
 - <xref:System.Uri?displayProperty=nameWithType>

@@ -3,7 +3,7 @@ title: Async Programming
 description: Learn how F# async programming is accomplished via a language-level programming model that is easy to use and natural to the language.
 ms.date: 06/20/2016
 ---
-# Async Programming in F# #
+# Async Programming in F\#
 
 > [!NOTE]
 > Some inaccuracies have been discovered in this article.  It is being rewritten.  See [Issue #666](https://github.com/dotnet/docs/issues/666) to learn about the changes.
@@ -20,7 +20,7 @@ For example, say you wanted to download the HTML from dotnetfoundation.org witho
 open System
 open System.Net
 
-let fetchHtmlAsync url = 
+let fetchHtmlAsync url =
     async {
         let uri = Uri(url)
         use webClient = new WebClient()
@@ -39,59 +39,59 @@ And that’s it! Aside from the use of `async`, `let!`, and `return`, this is ju
 
 There are a few syntactical constructs which are worth noting:
 
-*   `let!` binds the result of an async expression (which runs on another context).
-*   `use!` works just like `let!`, but disposes its bound resources when it goes out of scope.
-*   `do!` will await an async workflow which doesn’t return anything.
-*   `return` simply returns a result from an async expression.
-*   `return!` executes another async workflow and returns its return value as a result.
+* `let!` binds the result of an async expression (which runs on another context).
+* `use!` works just like `let!`, but disposes its bound resources when it goes out of scope.
+* `do!` will await an async workflow which doesn’t return anything.
+* `return` simply returns a result from an async expression.
+* `return!` executes another async workflow and returns its return value as a result.
 
 Additionally, normal `let`, `use`, and `do` keywords can be used alongside the async versions just as they would in a normal function.
 
-## How to start Async Code in F# #
+## How to start Async Code in F\#
 
 As mentioned earlier, async code is a specification of work to be done in another context which needs to be explicitly started. Here are two primary ways to accomplish this:
 
-1.  `Async.RunSynchronously` will start an async workflow on another thread and await its result.
+1. `Async.RunSynchronously` will start an async workflow on another thread and await its result.
 
-```fsharp
-open System
-open System.Net
+    ```fsharp
+    open System
+    open System.Net
 
-let fetchHtmlAsync url = 
-    async {
-        let uri = Uri(url)
-        use webClient = new WebClient()
-        let! html = webClient.AsyncDownloadString(uri)
-        return html
-    }
+    let fetchHtmlAsync url =
+        async {
+            let uri = Uri(url)
+            use webClient = new WebClient()
+            let! html = webClient.AsyncDownloadString(uri)
+            return html
+        }
 
- // Execution will pause until fetchHtmlAsync finishes
- let html = "https://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
+    // Execution will pause until fetchHtmlAsync finishes
+    let html = "https://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 
- // you actually have the result from fetchHtmlAsync now!
- printfn "%s" html
- ```
+    // you actually have the result from fetchHtmlAsync now!
+    printfn "%s" html
+    ```
 
-2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
+2. `Async.Start` will start an async workflow on another thread, and will **not** await its result.
 
-```fsharp
-open System
-open System.Net
-  
-let uploadDataAsync url data = 
-    async {
-        let uri = Uri(url)
-        use webClient = new WebClient()
-        webClient.UploadStringAsync(uri, data)
-    }
+    ```fsharp
+    open System
+    open System.Net
 
-let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
+    let uploadDataAsync url data =
+        async {
+            let uri = Uri(url)
+            use webClient = new WebClient()
+            webClient.UploadStringAsync(uri, data)
+        }
 
-// Execution will continue after calling this!
-Async.Start(workflow)
+    let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
 
-printfn "%s" "uploadDataAsync is running in the background..."
- ```
+    // Execution will continue after calling this!
+    Async.Start(workflow)
+
+    printfn "%s" "uploadDataAsync is running in the background..."
+    ```
 
 There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/library/ee370232.aspx).
 
@@ -109,13 +109,13 @@ The following example will use `Async.Parallel` to download the HTML from four p
 open System
 open System.Net
 
-let urlList = 
+let urlList =
     [ "https://www.microsoft.com"
       "https://www.google.com"
       "https://www.amazon.com"
       "https://www.facebook.com" ]
 
-let fetchHtmlAsync url = 
+let fetchHtmlAsync url =
     async {
         let uri = Uri(url)
         use webClient = new WebClient()
@@ -138,15 +138,15 @@ for html in htmlList do
 
 ## Important Info and Advice
 
-*   Append "Async" to the end of any functions you’ll consume
+* Append "Async" to the end of any functions you’ll consume
 
  Although this is just a naming convention, it does make things like API discoverability easier. Particularly if there are synchronous and asynchronous versions of the same routine, it’s a good idea to explicitly state which is asynchronous via the name.
 
-*   Listen to the compiler!
+* Listen to the compiler!
 
- F#’s compiler is very strict, making it nearly impossible to do something troubling like run "async" code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will most likely execute as expected.
+F#’s compiler is very strict, making it nearly impossible to do something troubling like run "async" code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will most likely execute as expected.
 
-## For the C#/VB Programmer Looking Into F# #
+## For the C#/VB Programmer Looking Into F\#
 
 This section assumes you’re familiar with the async model in C#/VB. If you are not, [Async Programming in C#](../../../csharp/async.md) is a starting point.
 
@@ -158,29 +158,29 @@ There are a few other similarities and differences worth noting.
 
 ### Similarities
 
-*   `let!`, `use!`, and `do!` are analogous to `await` when calling an async job from within an `async{ }` block.
+* `let!`, `use!`, and `do!` are analogous to `await` when calling an async job from within an `async{ }` block.
 
- The three keywords can only be used within an `async { }` block, similar to how `await` can only be invoked inside an `async` method. In short, `let!` is for when you want to capture and use a result, `use!` is the same but for something whose resources should get cleaned after it’s used, and `do!` is for when you want to wait for an async workflow with no return value to finish before moving on.
+  The three keywords can only be used within an `async { }` block, similar to how `await` can only be invoked inside an `async` method. In short, `let!` is for when you want to capture and use a result, `use!` is the same but for something whose resources should get cleaned after it’s used, and `do!` is for when you want to wait for an async workflow with no return value to finish before moving on.
 
-*   F# supports data-parallelism in a similar way.
+* F# supports data-parallelism in a similar way.
 
- Although it operates very differently, `Async.Parallel` corresponds to `Task.WhenAll` for the scenario of wanting the results of a set of async jobs when they all complete.
+  Although it operates very differently, `Async.Parallel` corresponds to `Task.WhenAll` for the scenario of wanting the results of a set of async jobs when they all complete.
 
 ### Differences
 
-*   Nested `let!` is not allowed, unlike nested `await`
+* Nested `let!` is not allowed, unlike nested `await`
 
- Unlike `await`, which can be nested indefinitely, `let!` cannot and must have its result bound before using it inside of another `let!`, `do!`, or `use!`.
+  Unlike `await`, which can be nested indefinitely, `let!` cannot and must have its result bound before using it inside of another `let!`, `do!`, or `use!`.
 
-*   Cancellation support is simpler in F# than in C#/VB.
+* Cancellation support is simpler in F# than in C#/VB.
 
- Supporting cancellation of a task midway through its execution in C#/VB requires checking the `IsCancellationRequested` property or calling `ThrowIfCancellationRequested()` on a `CancellationToken` object that’s passed into the async method.
+  Supporting cancellation of a task midway through its execution in C#/VB requires checking the `IsCancellationRequested` property or calling `ThrowIfCancellationRequested()` on a `CancellationToken` object that’s passed into the async method.
 
 In contrast, F# async workflows are more naturally cancellable. Cancellation is a simple three-step process.
 
-1.  Create a new `CancellationTokenSource`.
-2.  Pass it into a starting function.
-3.  Call `Cancel` on the token.
+1. Create a new `CancellationTokenSource`.
+2. Pass it into a starting function.
+3. Call `Cancel` on the token.
 
 Example:
 
@@ -194,7 +194,7 @@ let workflow =
             printfn "Working..."
             do! Async.Sleep 1000
     }
-    
+
 let tokenSource = new CancellationTokenSource()
 
 // Start the workflow in the background
@@ -208,6 +208,6 @@ And that’s it!
 
 ## Further resources:
 
-*   [Async Workflows on MSDN](https://msdn.microsoft.com/library/dd233250.aspx)
-*   [Asynchronous Sequences for F#](https://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
-*   [F# Data HTTP Utilities](https://fsharp.github.io/FSharp.Data/library/Http.html)
+* [Async Workflows on MSDN](https://msdn.microsoft.com/library/dd233250.aspx)
+* [Asynchronous Sequences for F#](https://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
+* [F# Data HTTP Utilities](https://fsharp.github.io/FSharp.Data/library/Http.html)

@@ -28,7 +28,7 @@ HRESULT GetDocumentType(
     [out, retval] GUID*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] Pointer to a variable that receives the document type.  
   
@@ -36,4 +36,5 @@ HRESULT GetDocumentType(
  S_OK if the method succeeds.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

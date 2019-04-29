@@ -81,15 +81,15 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
 ## Tracing  
  Traces enable you to monitor and analyze faults in your transactional applications. You can enable tracing using the following ways:  
   
--   Standard WCF tracing  
+- Standard WCF tracing  
   
      This type of tracing is the same as tracing any WCF application. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
   
--   WS-AtomicTransaction tracing  
+- WS-AtomicTransaction tracing  
   
      WS-AtomicTransaction tracing can be enabled by using the [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md). Such tracing provides insight into the state of transactions and participants within a system. To also enable internal Service Model tracing, you can set the `HKLM\SOFTWARE\Microsoft\WSAT\3.0\ServiceModelDiagnosticTracing` registry key to a valid value of the <xref:System.Diagnostics.SourceLevels> enumeration. You can enable message logging in the same way as other WCF applications.  
   
--   `System.Transactions` tracing  
+- `System.Transactions` tracing  
   
      When using the OleTransactions protocol, protocol messages cannot be traced. The tracing support the <xref:System.Transactions> infrastructure provides (which uses OleTransactions) allows users to view events that occurred to the transactions. To enable tracing for a <xref:System.Transactions> application, include the following code in the `App.config` configuration file.  
   
@@ -115,6 +115,7 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
      This also enables WCF tracing, as WCF also utilizes the <xref:System.Transactions> infrastructure.  
   
 ## See also
+
 - [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)
 - [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
 - [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

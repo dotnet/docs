@@ -35,9 +35,9 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 ### To declare a constant  
   
--   Write a declaration that includes an access specifier, the `Const` keyword, and an expression, as in the following examples:  
+- Write a declaration that includes an access specifier, the `Const` keyword, and an expression, as in the following examples:  
   
-     [!code-vb[VbEnumsTask#8](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-a-constant_1.vb)]  
+     [!code-vb[VbEnumsTask#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#8)]  
   
      When [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) is `Off` and [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) is `On`, you must declare a constant explicitly by specifying a data type (`Boolean`, `Byte`, `Char`, `DateTime`, `Decimal`, `Double`, `Integer`, `Long`, `Short`, `Single`, or `String`).  
   
@@ -45,21 +45,22 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 ### To declare a constant that has an explicitly stated data type  
   
--   Write a declaration that includes the `As` keyword and an explicit data type, as in the following examples:  
+- Write a declaration that includes the `As` keyword and an explicit data type, as in the following examples:  
   
-     [!code-vb[VbEnumsTask#9](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-a-constant_2.vb)]  
+     [!code-vb[VbEnumsTask#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#9)]  
   
      You can declare multiple constants on a single line, although your code is more readable if you declare only a single constant per line. If you declare multiple constants on a single line, they must all have the same access level (`Public`, `Private`, `Friend`, `Protected`, or `Protected Friend`).  
   
 ### To declare multiple constants on a single line  
   
--   Separate the declarations with a comma and a space, as in the following example:  
+- Separate the declarations with a comma and a space, as in the following example:  
   
     ```  
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
 ## See also
+
 - [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)
 - [Constant and Literal Data Types](constant-and-literal-data-types.md)
 - [Constants Overview](constants-overview.md)

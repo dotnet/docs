@@ -29,7 +29,7 @@ HRESULT GetClass (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClass`  
  [out] A pointer to the address of an `ICorDebugClass` interface that represents the uninstantiated generic type.  
   

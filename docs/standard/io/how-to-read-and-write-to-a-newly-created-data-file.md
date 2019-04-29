@@ -1,6 +1,6 @@
 ---
-title: "How to: Read and Write to a Newly Created Data File"
-ms.date: "03/30/2017"
+title: "How to: Read and write to a newly created data file"
+ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -16,28 +16,29 @@ ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# How to: Read and Write to a Newly Created Data File
-The <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader?displayProperty=nameWithType> classes are used for writing and reading data rather than character strings. The following example demonstrates how to write data to, and read data from, a new, empty file stream called `Test.data`. After creating the data file in the current directory, the associated <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader> objects are created, and the <xref:System.IO.BinaryWriter> object is used to write the integers 0 through 10 to `Test.data`, which leaves the file pointer at the end of the file. After setting the file pointer back to the origin, the <xref:System.IO.BinaryReader> object reads out the specified content.  
+# How to: Read and write to a newly created data file
+The <xref:System.IO.BinaryWriter?displayProperty=nameWithType> and <xref:System.IO.BinaryReader?displayProperty=nameWithType> classes are used for writing and reading data other than character strings. The following example shows how to create an empty file stream, write data to it, and read data from it. 
+
+The example creates a data file called *Test.data* in the current directory, creates the associated <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader> objects, and uses the <xref:System.IO.BinaryWriter> object to write the integers 0 through 10 to *Test.data*, which leaves the file pointer at the end of the file. The <xref:System.IO.BinaryReader> object then sets the file pointer back to the origin and reads out the specified content.  
+  
+> [!NOTE]
+> If *Test.data* already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> rather than <xref:System.IO.FileMode.CreateNew?displayProperty=nameWithType> to always create a new file without throwing an exception.  
   
 ## Example  
- [!code-cpp[System.IO.BinaryReaderWriter#7](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source6.cpp#7)]
  [!code-csharp[System.IO.BinaryReaderWriter#7](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source6.cs#7)]
  [!code-vb[System.IO.BinaryReaderWriter#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source6.vb#7)]  
   
-## Robust Programming  
- If `Test.data` already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> when you initialize the file stream to always create a new file without throwing an  exception.  
-  
 ## See also
 
-- <xref:System.IO.BinaryReader>
-- <xref:System.IO.BinaryWriter>
-- <xref:System.IO.FileStream>
-- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>
-- <xref:System.IO.SeekOrigin>
-- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
-- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
-- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)
-- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)
-- [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)
-- [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)
-- [File and Stream I/O](../../../docs/standard/io/index.md)
+- <xref:System.IO.BinaryReader>  
+- <xref:System.IO.BinaryWriter>  
+- <xref:System.IO.FileStream>  
+- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>  
+- <xref:System.IO.SeekOrigin>  
+- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
+- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- [How to: Read characters from a string](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
+- [How to: Write characters to a string](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
+- [File and stream I/O](../../../docs/standard/io/index.md)

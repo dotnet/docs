@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "accessing embedded objects"
   - "UI Automation, accessing embedded objects"
 ms.assetid: a5b513ec-7fa6-4460-869f-c18ff04f7cf2
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Access Embedded Objects Using UI Automation
 > [!NOTE]
@@ -49,6 +47,7 @@ A sample document with textual content, ("Did You Know?"…) and two embedded ob
  [!code-vb[UIATextPattern_snip#GetRangeFromChild](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#getrangefromchild)]  
   
 ## See also
+
 - [UI Automation TextPattern Overview](../../../docs/framework/ui-automation/ui-automation-textpattern-overview.md)
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

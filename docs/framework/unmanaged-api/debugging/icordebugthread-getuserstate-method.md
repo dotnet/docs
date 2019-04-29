@@ -29,7 +29,7 @@ HRESULT GetUserState (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pState`  
  [out] A pointer to a bitwise combination of CorDebugUserState enumeration values that describe the current user state of this thread.  
   

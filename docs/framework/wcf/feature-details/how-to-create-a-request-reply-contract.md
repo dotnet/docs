@@ -8,13 +8,13 @@ A request-reply contract specifies a method that returns a reply. The reply must
   
 ### To create a request-reply contract  
   
-1.  Create an interface in the programming language of your choice.  
+1. Create an interface in the programming language of your choice.  
   
-2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute to the interface.  
+2. Apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute to the interface.  
   
-3.  Apply the <xref:System.ServiceModel.OperationContractAttribute> attribute to each method that clients can invoke.  
+3. Apply the <xref:System.ServiceModel.OperationContractAttribute> attribute to each method that clients can invoke.  
   
-4.  Optional. Set the value of the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true` to prevent the sending of an empty reply message. By default, all operations are request-reply contracts.  
+4. Optional. Set the value of the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true` to prevent the sending of an empty reply message. By default, all operations are request-reply contracts.  
   
 ## Example  
  The following sample defines a contract for a calculator service that provides `Add` and `Subtract` methods. The `Multiply` method is not part of the contract because it is not marked by the <xref:System.ServiceModel.OperationContractAttribute> class and so it is not accessible to clients.  
@@ -37,11 +37,12 @@ public interface ICalculator
 }
 ```
   
--   For more information about how to specify operation contracts, see the <xref:System.ServiceModel.OperationContractAttribute> class and the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property.  
+- For more information about how to specify operation contracts, see the <xref:System.ServiceModel.OperationContractAttribute> class and the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property.  
   
--   Applying the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes causes the automatic generation of service contract definitions in a Web Services Description Language (WSDL) document once the service is deployed. The document is downloaded by appending `?wsdl` to the HTTP base address for the service. For example, `http://microsoft/CalculatorService?wsdl`  
+- Applying the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes causes the automatic generation of service contract definitions in a Web Services Description Language (WSDL) document once the service is deployed. The document is downloaded by appending `?wsdl` to the HTTP base address for the service. For example, `http://microsoft/CalculatorService?wsdl`  
   
 ## See also
+
 - <xref:System.ServiceModel.OperationContractAttribute>
 - [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
 - [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)

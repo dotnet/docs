@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 11/26/2018
+ms.date: 02/08/2019
 ---
 # F# code formatting guidelines
 
@@ -68,7 +68,7 @@ let ( !> ) x f = f x
 let (!>) x f = f x
 ```
 
-For any custom operator that starts with `*`, you'll need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, it's recommended that you simply surround the definitions of all operators with a single white-space character.
+For any custom operator that starts with `*` and that has more than one character, you need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, we recommend that you simply surround the definitions of all operators with a single white-space character.
 
 ### Surround function parameter arrows with white space
 
@@ -270,6 +270,18 @@ match x, y with
 | x, y -> 1
 ```
 
+It is also commonly accepted to omit parentheses if the tuple is the return value of a function:
+
+```fsharp
+// OK
+let update model msg =
+    match msg with
+    | 1 -> model + 1, []
+    | _ -> model, [ msg ]
+```
+
+In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
+
 ## Formatting discriminated union declarations
 
 Indent `|` in type definition by 4 spaces:
@@ -327,28 +339,28 @@ type PostalAddress =
     City: string
     Zip: string }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
-    
+
 // Unusual in F#
 type PostalAddress =
-    { 
+    {
         Address: string
         City: string
         Zip: string
     }
 ```
 
-Placing the opening token on a new line and the closing token on a new line is preferrable if you are declaring interface implementations or members on the record:
+Placing the opening token on a new line and the closing token on a new line is preferable if you are declaring interface implementations or members on the record:
 
 ```fsharp
 // Declaring additional members on PostalAddress
 type PostalAddress =
-    { 
+    {
         Address: string
         City: string
         Zip: string
     } with
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
-    
+
 type MyRecord =
     {
         SomeField: int
@@ -372,7 +384,7 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-Placing the opening token on a new line, the contents tabbed over one scope, and the closing token on a new line is preferrable if you are:
+Placing the opening token on a new line, the contents tabbed over one scope, and the closing token on a new line is preferable if you are:
 
 * Moving records around in code with different indentation scopes
 * Piping them into a function
@@ -390,7 +402,7 @@ let rainbow =
         Boss8 = "Jeffrey"
         Lackeys = ["Zippy"; "George"; "Bungle"]
     }
-    
+
 type MyRecord =
     {
         SomeField: int
@@ -406,6 +418,42 @@ let foo a =
 ```
 
 The same rules apply for list and array elements.
+
+## Formatting copy-and-update record expressions
+
+A copy-and-update record expression is still a record, so similar guidelines apply.
+
+Short expressions can fit on one line:
+
+```fsharp
+let point2 = { point with X = 1; Y = 2 }
+```
+
+Longer expressions should use new lines:
+
+```fsharp
+let rainbow2 =
+    { rainbow with
+        Boss = "Jeffrey"
+        Lackeys = ["Zippy"; "George"; "Bungle"] }
+```
+
+And as with the record guidance, you may want to dedicate separate lines for the braces and indent one scope to the right with the expression. Note that in some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
+
+```fsharp
+type S = { F1: int; F2: string }
+type State = { F:  S option }
+
+let state = { F = Some { F1 = 1; F2 = "Hello" } }
+let newState =
+    {
+        state with
+            F = Some {
+                    F1 = 0
+                    F2 = ""
+                }
+    }
+```
 
 ## Formatting lists and arrays
 
@@ -742,7 +790,7 @@ When applied to a parameter, they must be on the same line and separated by a `;
 
 ## Formatting literals
 
-[F# literals](../language-reference/literals.md) using the `Literal` attribute should should place the attribute on its own line and use camelCase naming:
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use camelCase naming:
 
 ```fsharp
 [<Literal>]

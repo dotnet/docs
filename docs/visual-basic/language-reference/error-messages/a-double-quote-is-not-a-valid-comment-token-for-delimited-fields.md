@@ -10,9 +10,10 @@ A quotation mark has been supplied as the delimiter for the `TextFieldParser`, b
   
 ## To correct this error  
   
--   Set `EscapeQuotes` to `False`.  
+- Set `EscapeQuotes` to `False`.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>

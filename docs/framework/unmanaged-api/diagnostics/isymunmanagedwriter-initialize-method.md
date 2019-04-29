@@ -33,7 +33,7 @@ HRESULT Initialize(
     [in] BOOL         fFullBuild);  
 ```  
   
-#### Parameters  
+## Parameters  
  `emitter`  
  [in] A pointer to the metadata emitter interface.  
   
@@ -53,5 +53,6 @@ HRESULT Initialize(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [Initialize2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-initialize2-method.md)

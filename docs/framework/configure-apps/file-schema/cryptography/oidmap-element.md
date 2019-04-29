@@ -1,5 +1,5 @@
 ---
-title: "&lt;oidMap&gt; Element"
+title: "<oidMap> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#oidMap"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "oidMap element"
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 ---
-# &lt;oidMap&gt; Element
+# \<oidMap> Element
 Contains ASN.1 object identifier (OID) mappings to classes.  
   
  \<configuration>  
@@ -68,6 +68,7 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 ```  
   
 ## See also
+
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

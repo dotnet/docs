@@ -1,5 +1,5 @@
 ---
-title: "&lt;performanceCounter&gt; Element (Network Settings)"
+title: "<performanceCounter> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/performanceCounters"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<performanceCounter> element"
 ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
 ---
-# &lt;performanceCounter&gt; Element (Network Settings)
+# \<performanceCounter> Element (Network Settings)
 Enables or disables networking performance counters.  
   
  \<configuration>  
@@ -68,6 +68,7 @@ Enables or disables networking performance counters.
 ```  
   
 ## See also
+
 - <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

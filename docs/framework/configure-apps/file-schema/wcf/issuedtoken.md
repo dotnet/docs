@@ -1,9 +1,9 @@
 ---
-title: "&lt;issuedToken&gt;"
+title: "<issuedToken>"
 ms.date: "03/30/2017"
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
 ---
-# &lt;issuedToken&gt;
+# \<issuedToken>
 Specifies a custom token used to authenticate a client to a service.  
   
  \<system.ServiceModel>  
@@ -58,6 +58,7 @@ endpointBehaviors section
  This section contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Description.ClientCredentials>

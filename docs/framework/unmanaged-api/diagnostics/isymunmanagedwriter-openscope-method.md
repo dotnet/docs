@@ -29,7 +29,7 @@ HRESULT OpenScope(
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startOffset`  
  [in] The offset of the first instruction in the lexical scope, in bytes, from the beginning of the method.  
   
@@ -46,4 +46,5 @@ HRESULT OpenScope(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

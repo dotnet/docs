@@ -3,14 +3,14 @@ title: Development process for Azure
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Development process for Azure
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
+ms.date: 01/30/2019
 ---
 # Development process for Azure
 
 > _"With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-class services."_  
 > _- Roy Stephan_
 
- ## Vision
+## Vision
 
 > *Develop well-designed ASP .NET Core applications the way you like, using Visual Studio or the dotnet CLI and Visual Studio Code or your editor of choice.*
 

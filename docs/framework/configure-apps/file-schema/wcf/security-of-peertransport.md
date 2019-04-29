@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;peerTransport&gt;"
+title: "<security> of <peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
 ---
-# &lt;security&gt; of &lt;peerTransport&gt;
+# \<security> of \<peerTransport>
 Contains the security settings associated with a peer channel, including the type of authentication used and the security used for the message transport.  
   
  \<system.serviceModel>  
@@ -52,6 +52,7 @@ Contains the security settings associated with a peer channel, including the typ
 |[\<peerTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|Defines a peer transport for a custom binding.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.PeerSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>

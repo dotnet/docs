@@ -1,9 +1,9 @@
 ---
-title: "&lt;transactionFlow&gt;"
+title: "<transactionFlow>"
 ms.date: "03/30/2017"
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
 ---
-# &lt;transactionFlow&gt;
+# \<transactionFlow>
 Specifies transaction flow support for the custom binding.  
   
  \<system.serviceModel>  
@@ -43,6 +43,7 @@ Specifies transaction flow support for the custom binding.
 >  When using the `OleTransactions` protocol to flow transactions from endpoint to endpoint, the transaction timeout can be lost if the destination endpoint attempts to flow again using any protocol other than `OleTransactions`. This can cause all down-level nodes after the OleTransactions hop to timeout later than expected.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.TransactionFlowElement>
 - <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

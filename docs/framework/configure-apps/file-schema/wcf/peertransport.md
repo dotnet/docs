@@ -1,9 +1,9 @@
 ---
-title: "&lt;peerTransport&gt;"
+title: "<peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177
 ---
-# &lt;peerTransport&gt;
+# \<peerTransport>
 Defines a peer transport for a custom binding.  
   
  \<system.serviceModel>  
@@ -52,6 +52,7 @@ Defines a peer transport for a custom binding.
  This transport cannot be used with contracts that have request/reply operations.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.PeerTransportElement>
 - <xref:System.ServiceModel.Channels.PeerTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

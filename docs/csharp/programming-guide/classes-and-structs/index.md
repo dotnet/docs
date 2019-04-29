@@ -38,25 +38,25 @@ Classes and structs are two of the basic constructs of the common type system in
 ### Members  
  All methods, fields, constants, properties, and events must be declared within a type; these are called the *members* of the type. In C#, there are no global variables or methods as there are in some other languages. Even a program's entry point, the `Main` method, must be declared within a class or struct. The following list includes all the various kinds of members that may be declared in a class or struct.  
   
--   [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
+- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
   
--   [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)  
+- [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)  
   
--   [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
   
--   [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
   
--   [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Events](../../../csharp/programming-guide/events/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)  
   
--   [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
   
--   [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
   
--   [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
+- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
   
--   [Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)  
+- [Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)  
   
 ### Accessibility  
  Some methods and properties are meant to be called or accessed from code outside your class or struct, known as *client code*. Other methods and properties might be only for use in the class or struct itself. It is important to limit the accessibility of your code so that only the intended client code can reach it. You specify how accessible your types and their members are to client code by using the access modifiers [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), [protected internal](../../../csharp/language-reference/keywords/protected-internal.md), [private](../../../csharp/language-reference/keywords/private.md) and [private protected](../../../csharp/language-reference/keywords/private-protected.md). The default accessibility is `private`. For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  

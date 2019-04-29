@@ -32,7 +32,7 @@ HRESULT GetPermissionSetProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pm`  
  [in] The Permission metadata token that represents the permission set to get the metadata properties for.  
   
@@ -55,6 +55,7 @@ HRESULT GetPermissionSetProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - <xref:System.Security.PermissionSet>
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

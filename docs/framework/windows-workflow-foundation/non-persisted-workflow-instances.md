@@ -11,13 +11,13 @@ When a new instance of a workflow is created that persists its state in the <xre
 ## The Non-Persisted State  
  Durable workflow instances that have not been persisted remain in a non-persisted state in the following cases:  
   
--   The service host crashes before the workflow instance is persisted for the first time. The workflow instance remains in the instance store and is not recovered. If a correlated message arrives, the workflow instance becomes active again.  
+- The service host crashes before the workflow instance is persisted for the first time. The workflow instance remains in the instance store and is not recovered. If a correlated message arrives, the workflow instance becomes active again.  
   
--   The workflow instance experiences an exception before it is persisted for the first time. Depending on the <xref:System.Activities.UnhandledExceptionAction> returned, the following scenarios occur:  
+- The workflow instance experiences an exception before it is persisted for the first time. Depending on the <xref:System.Activities.UnhandledExceptionAction> returned, the following scenarios occur:  
   
-    -   <xref:System.Activities.UnhandledExceptionAction> is set to <xref:System.Activities.UnhandledExceptionAction.Abort>: When an exception occurs, service deployment information is written to the instance store, and the workflow instance is unloaded from memory. The workflow instance remains in a non-persisted state and cannot be reloaded.  
+    - <xref:System.Activities.UnhandledExceptionAction> is set to <xref:System.Activities.UnhandledExceptionAction.Abort>: When an exception occurs, service deployment information is written to the instance store, and the workflow instance is unloaded from memory. The workflow instance remains in a non-persisted state and cannot be reloaded.  
   
-    -   <xref:System.Activities.UnhandledExceptionAction> is set to <xref:System.Activities.UnhandledExceptionAction.Cancel> or <xref:System.Activities.UnhandledExceptionAction.Terminate>: When an exception occurs, service deployment information is written to the instance store, and the activity instance state is set to <xref:System.Activities.ActivityInstanceState.Closed>.  
+    - <xref:System.Activities.UnhandledExceptionAction> is set to <xref:System.Activities.UnhandledExceptionAction.Cancel> or <xref:System.Activities.UnhandledExceptionAction.Terminate>: When an exception occurs, service deployment information is written to the instance store, and the activity instance state is set to <xref:System.Activities.ActivityInstanceState.Closed>.  
   
  To minimize the risk of encountering unloaded non-persisted workflow instances, we recommend persisting the workflow early in its life cycle.  
   
@@ -28,7 +28,7 @@ When a new instance of a workflow is created that persists its state in the <xre
   
  To find non-persisted instances in the SQL Workflow Instance Store you can use the following SQL queries:  
   
--   This query finds all instances that have not been persisted, and returns the ID and creation time (stored in UTC time) for them.  
+- This query finds all instances that have not been persisted, and returns the ID and creation time (stored in UTC time) for them.  
   
     ```sql  
     select InstanceId, CreationTime   
@@ -36,7 +36,7 @@ When a new instance of a workflow is created that persists its state in the <xre
         where IsInitialized = 0  
     ```  
   
--   This query finds all instances that have not been persisted, and that are not loaded, and returns the ID and creation time (stored in UTC time) for them.  
+- This query finds all instances that have not been persisted, and that are not loaded, and returns the ID and creation time (stored in UTC time) for them.  
   
     ```sql  
     select InstanceId, CreationTime   
@@ -45,7 +45,7 @@ When a new instance of a workflow is created that persists its state in the <xre
             and CurrentMachine is NULL  
     ```  
   
--   This query finds all suspended instances that have not been persisted, and returns the ID, creation time (stored in UTC time), suspension reason, and exception name for them.  
+- This query finds all suspended instances that have not been persisted, and returns the ID, creation time (stored in UTC time), suspension reason, and exception name for them.  
   
     ```sql  
     select InstanceId, CreationTime, SuspensionReason, SuspensionExceptionName   

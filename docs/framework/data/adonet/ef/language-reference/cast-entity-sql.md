@@ -33,11 +33,11 @@ CAST( e as T )
   
  Values for the precision and scale facets may optionally be provided when casting to `Edm.Decimal`. If not explicitly provided, the default values for precision and scale are 18 and 0, respectively. Specifically, the following overloads are supported for `Decimal`:  
   
--   `CAST( d as Edm.Decimal );`  
+- `CAST( d as Edm.Decimal );`  
   
--   `CAST( d as Edm.Decimal(precision) );`  
+- `CAST( d as Edm.Decimal(precision) );`  
   
--   `CAST( d as Edm.Decimal(precision, scale) );`  
+- `CAST( d as Edm.Decimal(precision, scale) );`  
   
  The use of a cast expression is considered an explicit conversion. Explicit conversions might truncate data or lose precision.  
   
@@ -47,11 +47,12 @@ CAST( e as T )
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the CAST operator to cast an expression of one data type to another. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
  [!code-csharp[DP EntityServices Concepts 2#CAST](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#cast)]  
   
 ## See also
+
 - [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

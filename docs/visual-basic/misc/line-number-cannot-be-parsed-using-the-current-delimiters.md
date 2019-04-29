@@ -1,16 +1,16 @@
 ---
-title: "Line &lt;number&gt; cannot be parsed using the current Delimiters"
+title: "Line <number> cannot be parsed using the current Delimiters"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedDelimitedLine"
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
 ---
-# Line &lt;number&gt; cannot be parsed using the current Delimiters
+# Line \<number> cannot be parsed using the current Delimiters
 The specified line cannot be parsed because it uses delimiters other than those specified.  
   
 ## To correct this error  
   
--   Adjust `Delimiters` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
+- Adjust `Delimiters` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
   
 ## See also
 

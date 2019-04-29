@@ -1,7 +1,7 @@
 ---
 title: "Import Declarations: The open Keyword"
 description: Learn about F# import declarations and how they specify a module or namespace whose elements you can reference without using a fully qualified name.
-ms.date: 05/16/2016
+ms.date: 04/04/2019
 ---
 # Import Declarations: The `open` Keyword
 
@@ -62,6 +62,6 @@ Some modules, records, or union types may specify the `RequireQualifiedAccess` a
 
 ## See also
 
-- [# Language Reference](index.md)
+- [F# Language Reference](index.md)
 - [Namespaces](namespaces.md)
 - [Modules](modules.md)

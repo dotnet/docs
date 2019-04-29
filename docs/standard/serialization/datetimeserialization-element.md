@@ -1,5 +1,5 @@
 ---
-title: "&lt;dateTimeSerialization&gt; Element"
+title: "<dateTimeSerialization> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dateTimeSerialization element"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "<dateTimeSerialization> element"
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
 ---
-# &lt;dateTimeSerialization&gt; Element
+# \<dateTimeSerialization> Element
 Determines the serialization mode of <xref:System.DateTime> objects.  
   
  \<configuration>  

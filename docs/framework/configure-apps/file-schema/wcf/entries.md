@@ -1,9 +1,9 @@
 ---
-title: "&lt;entries&gt;"
+title: "<entries>"
 ms.date: "03/30/2017"
 ms.assetid: 202e430c-c1b9-4343-abe2-ac78c181a3b7
 ---
-# &lt;entries&gt;
+# \<entries>
 A routing entry that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  
   
  \<system.serviceModel>  
@@ -48,5 +48,6 @@ A routing entry that contain mappings between the routing filters and the target
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains a routing table.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

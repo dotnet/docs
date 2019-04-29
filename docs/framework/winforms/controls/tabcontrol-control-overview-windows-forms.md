@@ -17,10 +17,11 @@ The Windows Forms <xref:System.Windows.Forms.TabControl> displays multiple tabs,
  The most important property of the <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabControl.TabPages%2A>, which contains the individual tabs. Each individual tab is a <xref:System.Windows.Forms.TabPage> object. When a tab is clicked, it raises the <xref:System.Windows.Forms.Control.Click> event for that <xref:System.Windows.Forms.TabPage> object.  
   
 ## See also
+
 - <xref:System.Windows.Forms.TabControl>
-- [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)
-- [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)
-- [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)
-- [How to: Add and Remove Tabs with the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)
-- [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)
-- [Dialog Boxes in Windows Forms](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)
+- [TabControl Control](tabcontrol-control-windows-forms.md)
+- [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)
+- [How to: Add a Control to a Tab Page](how-to-add-a-control-to-a-tab-page.md)
+- [How to: Add and Remove Tabs with the Windows Forms TabControl](how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)
+- [How to: Disable Tab Pages](how-to-disable-tab-pages.md)
+- [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)

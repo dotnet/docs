@@ -6,8 +6,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "UI automation fundamentals"
 ms.assetid: d270ab45-542b-45c0-a240-e80aa4a61b95
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Fundamentals
 > [!NOTE]

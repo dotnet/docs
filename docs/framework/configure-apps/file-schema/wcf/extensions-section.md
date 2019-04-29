@@ -1,9 +1,9 @@
 ---
-title: "&lt;extensions&gt; section"
+title: "<extensions> section"
 ms.date: "03/30/2017"
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
 ---
-# &lt;extensions&gt; section
+# \<extensions> section
 This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.  
   
 \<system.ServiceModel>  

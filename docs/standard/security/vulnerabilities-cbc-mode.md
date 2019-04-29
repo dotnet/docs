@@ -87,7 +87,7 @@ Applications that are unable to change their messaging format but perform unauth
   - This also doesn't prevent plaintext recovery in situations where the attacker can coerce the same plaintext to be encrypted multiple times with a different message offset.
 - Gate the evaluation of a decryption call to dampen the timing signal:
   - The computation of hold time must have a minimum in excess of the maximum amount of time the decryption operation would take for any data segment that contains padding.
-  - Time computations should be done according to the guidance in [Acquiring high-resolution time stamps](https://msdn.microsoft.com/library/windows/desktop/dn55340.aspx), not by using <xref:System.Environment.TickCount?displayProperty=nameWithType> (subject to roll-over/overflow) or subtracting two system timestamps (subject to NTP adjustment errors).
+  - Time computations should be done according to the guidance in [Acquiring high-resolution time stamps](/windows/desktop/sysinfo/acquiring-high-resolution-time-stamps), not by using <xref:System.Environment.TickCount?displayProperty=nameWithType> (subject to roll-over/overflow) or subtracting two system timestamps (subject to NTP adjustment errors).
   - Time computations must be inclusive of the decryption operation including all potential exceptions in managed or C++ applications, not just padded onto the end.
   - If success or failure has been determined yet, the timing gate needs to return failure when it expires.
 - Services that are performing unauthenticated decryption should have monitoring in place to detect that a flood of "invalid" messages has come through.
@@ -98,7 +98,7 @@ Applications that are unable to change their messaging format but perform unauth
 For programs built against the Windows Cryptography: Next Generation (CNG) library:
 
 - The decryption call is to [BCryptDecrypt](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptdecrypt), specifying the `BCRYPT_BLOCK_PADDING` flag.
-- The key handle has been initialized by calling [BCryptSetProperty](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptsetproperty) with [BCRYPT_CHAINING_MODE](https://msdn.microsoft.com/library/windows/desktop/aa376211.aspx#BCRYPT_CHAINING_MODE) set to `BCRYPT_CHAIN_MODE_CBC`.
+- The key handle has been initialized by calling [BCryptSetProperty](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptsetproperty) with [BCRYPT_CHAINING_MODE](/windows/desktop/SecCNG/cng-property-identifiers#BCRYPT_CHAINING_MODE) set to `BCRYPT_CHAIN_MODE_CBC`.
   - Since `BCRYPT_CHAIN_MODE_CBC` is the default, affected code may not have assigned any value for `BCRYPT_CHAINING_MODE`.
 
 For programs built against the older Windows Cryptographic API:

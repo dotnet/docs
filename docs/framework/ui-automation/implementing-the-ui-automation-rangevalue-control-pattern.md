@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Range Value control pattern"
   - "UI Automation, Range Value control pattern"
 ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation RangeValue Control Pattern
 > [!NOTE]
@@ -21,9 +19,9 @@ ms.author: "mhopkins"
 ## Implementation Guidelines and Conventions  
  When implementing the Range Value control pattern, note the following guidelines and conventions:  
   
--   Controls allow recalibration of their supported properties based upon locale or user preference. An example of this is a thermometer control that can be set to display the temperature in Fahrenheit or Celsius.  
+- Controls allow recalibration of their supported properties based upon locale or user preference. An example of this is a thermometer control that can be set to display the temperature in Fahrenheit or Celsius.  
   
--   Controls that have ambiguous range values, such as progress bars or sliders, should have those values normalized.  
+- Controls that have ambiguous range values, such as progress bars or sliders, should have those values normalized.  
   
  ![Progress bar.](../../../docs/framework/ui-automation/media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
 Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum Property Values Are Normalized to 0 and 100, Respectively  
@@ -52,6 +50,7 @@ Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.RangeValuePattern.SetValue%2A> is called with a value that is either greater than <xref:System.Windows.Automation.RangeValuePattern.MaximumProperty> or less than <xref:System.Windows.Automation.RangeValuePattern.MinimumProperty>.|  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

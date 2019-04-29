@@ -10,7 +10,8 @@ The dynamic-link library (DLL) for Visual Basic can only accommodate access by a
   
 ## To correct this error  
   
--   Reduce the number of open applications accessing Visual Basic.  
+- Reduce the number of open applications accessing Visual Basic.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

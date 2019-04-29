@@ -10,59 +10,59 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Obsolete Types in the .NET Framework
-<a name="introduction"></a> The tables in this article list the types that are obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md).
+<a name="introduction"></a> The tables in this article list the types that are obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
 
--   [Obsolete types in system assemblies](#obsolete_types_in_system_assemblies)
+- [Obsolete types in system assemblies](#obsolete_types_in_system_assemblies)
 
-    -   [mscorlib.dll](#mscorlib)
+    - [mscorlib.dll](#mscorlib)
 
-    -   [System.Core.dll](#Core)
+    - [System.Core.dll](#Core)
 
-    -   [System.Data.dll](#data)
+    - [System.Data.dll](#data)
 
-    -   [System.Data.OracleClient.dll](#oracleclient)
+    - [System.Data.OracleClient.dll](#oracleclient)
 
-    -   [System.Design.dll](#design)
+    - [System.Design.dll](#design)
 
-    -   [System.dll](#system)
+    - [System.dll](#system)
 
-    -   [System.EnterpriseServices.dll](#enterpriseservices)
+    - [System.EnterpriseServices.dll](#enterpriseservices)
 
-    -   [System.Net.dll](#net)
+    - [System.Net.dll](#net)
 
-    -   [System.ServiceModel.dll](#servicemodel)
+    - [System.ServiceModel.dll](#servicemodel)
 
-    -   [System.Web.dll](#web)
+    - [System.Web.dll](#web)
 
-    -   [System.Web.Mobile.dll](#mobile)
+    - [System.Web.Mobile.dll](#mobile)
 
-    -   [System.Workflow.Activities.dll](#workflow_activities)
+    - [System.Workflow.Activities.dll](#workflow_activities)
 
-    -   [System.Workflow.ComponentModel.dll](#workflow_componentmodel)
+    - [System.Workflow.ComponentModel.dll](#workflow_componentmodel)
 
-    -   [System.Workflow.Runtime.dll](#workflow_runtime)
+    - [System.Workflow.Runtime.dll](#workflow_runtime)
 
-    -   [System.WorkflowServices.dll](#workflowservices)
+    - [System.WorkflowServices.dll](#workflowservices)
 
-    -   [System.Xaml.dll](#xaml)
+    - [System.Xaml.dll](#xaml)
 
-    -   [System.Xml.dll](#xml)
+    - [System.Xml.dll](#xml)
 
-    -   [WindowsBase.dll](#WindowsBase)
+    - [WindowsBase.dll](#WindowsBase)
 
--   [Obsolete types in Microsoft assemblies](#obsolete_types_in_microsoft_assemblies)
+- [Obsolete types in Microsoft assemblies](#obsolete_types_in_microsoft_assemblies)
 
-    -   [IEHost.dll and IEExec.exe](#IEHost)
+    - [IEHost.dll and IEExec.exe](#IEHost)
 
-    -   [Microsoft.Build.Engine.dll](#Engine)
+    - [Microsoft.Build.Engine.dll](#Engine)
 
-    -   [Microsoft.JScript.dll](#jscript)
+    - [Microsoft.JScript.dll](#jscript)
 
-    -   [Microsoft.VisualBasic.Compatibility.dll](#VBCompat)
+    - [Microsoft.VisualBasic.Compatibility.dll](#VBCompat)
 
-    -   [Microsoft.VisualBasic.Compatibility.Data.dll](#VBCompatData)
+    - [Microsoft.VisualBasic.Compatibility.Data.dll](#VBCompatData)
 
-    -   [Microsoft.VisualC.dll](#visualc)
+    - [Microsoft.VisualC.dll](#visualc)
 
 <a name="obsolete_types_in_system_assemblies"></a>
 ## Obsolete Types in System Assemblies
@@ -199,7 +199,7 @@ ms.author: "ronpet"
 |----------|-------------|
 |<xref:System.ComponentModel.IComNativeDescriptorHandler?displayProperty=nameWithType>|This interface has been deprecated. Add a <xref:System.ComponentModel.TypeDescriptionProvider?displayProperty=nameWithType> to handle type <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A?displayProperty=nameWithType> instead.|
 |<xref:System.ComponentModel.RecommendedAsConfigurableAttribute?displayProperty=nameWithType>|Use <xref:System.ComponentModel.SettingsBindableAttribute?displayProperty=nameWithType> instead to work with the new settings model.|
-|<xref:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute?displayProperty=nameWithType>|This attribute has been deprecated. Use <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute?displayProperty=nameWithType> instead. For example, to specify a root designer for CodeDom, use `DesignerSerializerAttribute\(...,typeof\(TypeCodeDomSerializer\)\)`.|
+|<xref:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute?displayProperty=nameWithType>|This attribute has been deprecated. Use <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute?displayProperty=nameWithType> instead.|
 |<xref:System.Diagnostics.DiagnosticsConfigurationHandler?displayProperty=nameWithType>|This class has been deprecated.|
 |<xref:System.Diagnostics.PerformanceCounterManager?displayProperty=nameWithType>|This class has been deprecated. Use the performance counters through the <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> class instead.|
 |<xref:System.Net.GlobalProxySelection?displayProperty=nameWithType>|This class has been deprecated. Please use <xref:System.Net.WebRequest.DefaultWebProxy%2A?displayProperty=nameWithType> instead to access and set the global default proxy. Use 'null' instead of <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=nameWithType>.|
@@ -624,7 +624,9 @@ ms.author: "ronpet"
 
 <a name="VBCompat"></a>
 ### Assembly: Microsoft.VisualBasic.Compatibility.dll
-  For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://msdn.microsoft.com/library/windows/desktop/ms788229).
+
+For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation).
+  
 |Type|Message|
 |----------|-------------|
 |<xref:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray?displayProperty=nameWithType>|This member is obsolete.|
@@ -771,5 +773,6 @@ ms.author: "ronpet"
 |<xref:Microsoft.VisualC.NoSignSpecifiedModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|
 
 ## See also
-- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
-- [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)
+
+- [What's Obsolete in the Class Library](whats-obsolete.md)
+- [Obsolete Members](obsolete-members.md)

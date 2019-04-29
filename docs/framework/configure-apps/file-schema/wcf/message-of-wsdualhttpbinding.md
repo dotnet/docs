@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;wsDualHttpBinding&gt;"
+title: "<message> of <wsDualHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
 ---
-# &lt;message&gt; of &lt;wsDualHttpBinding&gt;
+# \<message> of \<wsDualHttpBinding>
 Defines message-level security for the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -77,6 +77,7 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md)|Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>
 - <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>

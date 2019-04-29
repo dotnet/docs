@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Tab control type"
   - "control types, Tab"
 ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Tab Control Type
 > [!NOTE]
@@ -82,6 +80,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.Tab>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

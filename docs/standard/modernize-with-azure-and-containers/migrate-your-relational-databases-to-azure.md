@@ -5,6 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
 ---
+
 # Migrate your relational databases to azure
 
 Vision: Azure offers the most comprehensive database migration.
@@ -43,7 +44,7 @@ Managed Instance in Azure SQL Database has the following characteristics:
 
   - Native backup and restore, and log shipping
 
-With these capabilities, when you migrate existing application databases to Azure SQL Database, the Managed Instance model offers nearly 100% of the benefits of Paas for SQL Server. Managed Instance is a SQL Server environment where you continue using instance-level capabilities without changing your application design.
+With these capabilities, when you migrate existing application databases to Azure SQL Database, the Managed Instance model offers nearly 100% of the benefits of PaaS for SQL Server. Managed Instance is a SQL Server environment where you continue using instance-level capabilities without changing your application design.
 
 Managed Instance is probably the best fit for enterprises that currently are using SQL Server, and which require flexibility in their network security in the cloud. It's like having a private virtual network for your SQL databases.
 
@@ -102,24 +103,24 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
 - **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**
 
-    [https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
+    <https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas>
 
 - **Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service**
 
-    [https://channel9.msdn.com/Events/Build/2017/P4008](https://channel9.msdn.com/Events/Build/2017/P4008)
+    <https://channel9.msdn.com/Events/Build/2017/P4008>
 
 - **SQL Server database migration to SQL Database in the cloud**
 
-    [https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate](https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate)
+    <https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate>
 
 - **Azure SQL Database**
 
-    [https://azure.microsoft.com/services/sql-database/?v=16.50](https://azure.microsoft.com/services/sql-database/?v=16.50)
+    <https://azure.microsoft.com/services/sql-database/?v=16.50>
 
 - **SQL Server on virtual machines**
 
-    [https://azure.microsoft.com/services/virtual-machines/sql-server/](https://azure.microsoft.com/services/virtual-machines/sql-server/)
+    <https://azure.microsoft.com/services/virtual-machines/sql-server/>
 
->[!div class="step-by-step"]
->[Previous](lift-and-shift-existing-apps-azure-iaas.md)
->[Next](modernize-existing-apps-to-cloud-optimized/index.md)
+> [!div class="step-by-step"]
+> [Previous](lift-and-shift-existing-apps-azure-iaas.md)
+> [Next](modernize-existing-apps-to-cloud-optimized/index.md)

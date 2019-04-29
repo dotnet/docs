@@ -16,7 +16,7 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
   
  The following procedure uses recursion to calculate the factorial of its original argument.  
   
- [!code-vb[VbVbcnProcedures#51](./codesnippet/VisualBasic/recursive-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#51)]  
   
 ## Considerations with Recursive Procedures  
  **Limiting Conditions**. You must design a recursive procedure to test for at least one condition that can terminate the recursion, and you must also handle the case where no such condition is satisfied within a reasonable number of recursive calls. Without at least one condition that can be met without fail, your procedure runs a high risk of executing in an infinite loop.  
@@ -32,6 +32,7 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
  **Testing**. If you write a recursive procedure, you should test it very carefully to make sure it always meets some limiting condition. You should also ensure that you cannot run out of memory due to having too many recursive calls.  
   
 ## See also
+
 - <xref:System.StackOverflowException>
 - [Procedures](./index.md)
 - [Sub Procedures](./sub-procedures.md)
@@ -42,4 +43,3 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
 - [Procedure Overloading](./procedure-overloading.md)
 - [Troubleshooting Procedures](./troubleshooting-procedures.md)
 - [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [Troubleshooting Exceptions: System.StackOverflowException](https://msdn.microsoft.com/library/51b71217-c507-4f5b-bc35-0236180d7968)

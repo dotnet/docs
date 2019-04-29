@@ -29,7 +29,7 @@ HRESULT GetPriority (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pPriority`  
  [out] A pointer to an integer that indicates the thread priority level of the task represented by the current `IHostTask` instance.  
   
@@ -57,6 +57,7 @@ HRESULT GetPriority (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

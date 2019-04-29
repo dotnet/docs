@@ -19,33 +19,33 @@ Large enterprises often require that applications are developed in compliance wi
   
 ### To create the endpoint validator  
   
-1.  Create an <xref:System.ServiceModel.Description.IEndpointBehavior> with the desired validation steps in the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%2A> method. The following code provides an example. (The `InternetClientValidatorBehavior` is taken from the [Security Validation](../../../../docs/framework/wcf/samples/security-validation.md) sample.)  
+1. Create an <xref:System.ServiceModel.Description.IEndpointBehavior> with the desired validation steps in the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%2A> method. The following code provides an example. (The `InternetClientValidatorBehavior` is taken from the [Security Validation](../../../../docs/framework/wcf/samples/security-validation.md) sample.)  
   
      [!code-csharp[LockdownValidation#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorbehavior.cs#2)]  
   
-2.  Create new <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that registers the endpoint validator created in step 1. The following code example shows this. (The original code for this example is in the [Security Validation](../../../../docs/framework/wcf/samples/security-validation.md) sample.)  
+2. Create new <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that registers the endpoint validator created in step 1. The following code example shows this. (The original code for this example is in the [Security Validation](../../../../docs/framework/wcf/samples/security-validation.md) sample.)  
   
      [!code-csharp[LockdownValidation#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorelement.cs#3)]  
   
-3.  Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](https://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.  
+3. Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](https://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.  
   
 ### To install the validator into the target computer  
   
-1.  Install the endpoint validator using the appropriate mechanism. In an enterprise, this can be using Group Policy and Systems Management Server (SMS).  
+1. Install the endpoint validator using the appropriate mechanism. In an enterprise, this can be using Group Policy and Systems Management Server (SMS).  
   
-2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](../../../../docs/framework/tools/gacutil-exe-gac-tool.md).  
+2. Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](../../../../docs/framework/tools/gacutil-exe-gac-tool.md).  
   
-3.  Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
+3. Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
   
-    1.  Add the extension to the [\<behaviorExtensions>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md) section using a fully-qualified type name and lock the element.  
+    1. Add the extension to the [\<behaviorExtensions>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md) section using a fully-qualified type name and lock the element.  
   
          [!code-csharp[LockdownValidation#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/hostapplication.cs#5)]  
   
-    2.  Add the behavior element to the `EndpointBehaviors` property of the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section and lock the element. (To install the validator on the service, the validator must be an <xref:System.ServiceModel.Description.IServiceBehavior> and added to the `ServiceBehaviors` property.) The following code example shows the proper configuration after steps a. and b., with the sole exception that there is no strong name.  
+    2. Add the behavior element to the `EndpointBehaviors` property of the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section and lock the element. (To install the validator on the service, the validator must be an <xref:System.ServiceModel.Description.IServiceBehavior> and added to the `ServiceBehaviors` property.) The following code example shows the proper configuration after steps a. and b., with the sole exception that there is no strong name.  
   
          [!code-csharp[LockdownValidation#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/hostapplication.cs#6)]  
   
-    3.  Save the machine.config file. The following code example performs all the tasks in step 3 but saves a copy of the modified machine.config file locally.  
+    3. Save the machine.config file. The following code example performs all the tasks in step 3 but saves a copy of the modified machine.config file locally.  
   
          [!code-csharp[LockdownValidation#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/hostapplication.cs#7)]  
   
@@ -58,5 +58,6 @@ Large enterprises often require that applications are developed in compliance wi
  You may also want to encrypt the configuration file elements. For more information, see the See Also section.  
   
 ## See also
+
 - [Encrypting configuration file elements using DPAPI](https://go.microsoft.com/fwlink/?LinkId=94954)
 - [Encrypting configuration file elements using RSA](https://go.microsoft.com/fwlink/?LinkId=94955)

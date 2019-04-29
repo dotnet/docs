@@ -1,5 +1,5 @@
 ---
-title: "Expression of type &lt;type&gt; is not queryable"
+title: "Expression of type <type> is not queryable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc36593"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC36593"
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
 ---
-# Expression of type &lt;type&gt; is not queryable
+# Expression of type \<type> is not queryable
 Expression of type \<type> is not queryable. Make sure you are not missing an assembly reference and/or namespace import for the LINQ provider.  
   
  Queryable types are defined in the <xref:System.Linq>, <xref:System.Data.Linq>, and <xref:System.Xml.Linq> namespaces. You must import one or more of these namespaces to perform LINQ queries.  
@@ -23,11 +23,12 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
   
 ## To correct this error  
   
-1.  Add an `Import` statement for the <xref:System.Linq>, <xref:System.Data.Linq>, or <xref:System.Xml.Linq> namespace to your code file. You can also import namespaces for your project by using the **References** page of the Project Designer (**My Project**).  
+1. Add an `Import` statement for the <xref:System.Linq>, <xref:System.Data.Linq>, or <xref:System.Xml.Linq> namespace to your code file. You can also import namespaces for your project by using the **References** page of the Project Designer (**My Project**).  
   
-2.  Ensure that the type that you have identified as the source of your query is a queryable type. That is, a type that implements <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601>.  
+2. Ensure that the type that you have identified as the source of your query is a queryable type. That is, a type that implements <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601>.  
   
 ## See also
+
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 - <xref:System.Xml.Linq>

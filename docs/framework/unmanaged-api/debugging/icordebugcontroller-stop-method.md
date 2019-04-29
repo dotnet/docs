@@ -29,7 +29,7 @@ HRESULT Stop (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwTimeoutIgnored`  
  Not used.  
   
@@ -51,4 +51,3 @@ HRESULT Stop (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

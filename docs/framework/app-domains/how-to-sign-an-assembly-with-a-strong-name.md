@@ -17,29 +17,32 @@ ms.author: "ronpet"
 # How to: Sign an Assembly with a Strong Name
 There are a number of ways to sign an assembly with a strong name:  
   
--   By using the **Signing** tab in a project's **Properties** dialog box in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.  
+- By using the **Signing** tab in a project's **Properties** dialog box in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.  
   
--   By using the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to link a .NET Framework code module (a .netmodule file) with a key file.  
+- By using the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to link a .NET Framework code module (a .netmodule file) with a key file.  
   
--   By using assembly attributes to insert the strong name information into your code. You can use either the <xref:System.Reflection.AssemblyKeyFileAttribute> or the <xref:System.Reflection.AssemblyKeyNameAttribute> attribute, depending on where the key file to be used is located.  
+- By using assembly attributes to insert the strong name information into your code. You can use either the <xref:System.Reflection.AssemblyKeyFileAttribute> or the <xref:System.Reflection.AssemblyKeyNameAttribute> attribute, depending on where the key file to be used is located.  
   
--   By using compiler options.  
+- By using compiler options.  
   
  You must have a cryptographic key pair to sign an assembly with a strong name. For more information about creating a key pair, see [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md).  
   
 ### To create and sign an assembly with a strong name by using Visual Studio  
   
-1.  In **Solution Explorer**, open the shortcut menu for the project, and then choose **Properties**.  
+1. In **Solution Explorer**, open the shortcut menu for the project, and then choose **Properties**.  
   
-2.  Choose the **Signing** tab.  
+2. Choose the **Signing** tab.  
   
-3.  Select the **Sign the assembly** box.  
+3. Select the **Sign the assembly** box.  
   
-4.  In the **Choose a strong name key file** box, choose **\<Browse…>**, and then navigate to the key file. To create a new key file, choose **\<New…>** and enter its name in the **Create Strong Name Key** dialog box.  
+4. In the **Choose a strong name key file** box, choose **\<Browse…>**, and then navigate to the key file. To create a new key file, choose **\<New…>** and enter its name in the **Create Strong Name Key** dialog box.  
+  
+> [!NOTE]
+>  In order to [delay sign an assembly](../../../docs/framework/app-domains/delay-sign-assembly.md), choose a public key file.  
   
 ### To create and sign an assembly with a strong name by using the Assembly Linker  
   
--   At the [Developer Command Prompt for Visual Studio](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
+- At the [Developer Command Prompt for Visual Studio](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
   
      **al** **/out:**\<*assemblyName*> *\<moduleName>* **/keyfile:**\<*keyfileName*>  
   
@@ -64,9 +67,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
   
 #### To sign an assembly with a strong name by using attributes  
   
-1.  Add the <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=nameWithType> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute to your source code file, and specify the name of the file or container that contains the key pair to use when signing the assembly with a strong name.  
+1. Add the <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=nameWithType> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute to your source code file, and specify the name of the file or container that contains the key pair to use when signing the assembly with a strong name.  
   
-2.  Compile the source code file normally.  
+2. Compile the source code file normally.  
   
 > [!NOTE]
 >  The C# and Visual Basic compilers issue compiler warnings (CS1699 and BC41008, respectively) when they encounter the <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute in source code. You can ignore the warnings.  
@@ -81,7 +84,7 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
   
 ### To sign an assembly with a strong name by using the compiler  
   
--   Compile your source code file or files with the `/keyfile` or `/delaysign` compiler option in C# and Visual Basic, or the `/KEYFILE` or `/DELAYSIGN` linker option in C++. After the option name, add a colon and the name of the key file. When using command-line compilers, you can copy the key file to the directory that contains your source code files.  
+- Compile your source code file or files with the `/keyfile` or `/delaysign` compiler option in C# and Visual Basic, or the `/KEYFILE` or `/DELAYSIGN` linker option in C++. After the option name, add a colon and the name of the key file. When using command-line compilers, you can copy the key file to the directory that contains your source code files.  
   
      For information on delay signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
   
@@ -92,6 +95,7 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
     ```  
   
 ## See also
+
 - [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
 - [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)

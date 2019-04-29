@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;netHttpBinding&gt;"
+title: "<message> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
 ---
-# &lt;message&gt; of &lt;netHttpBinding&gt;
+# \<message> of \<netHttpBinding>
 Defines the settings for message-level security of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -114,6 +114,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 ```  
   
 ## See also
+
 - [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../../../docs/framework/wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)

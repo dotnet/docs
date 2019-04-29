@@ -6,15 +6,15 @@ ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
 # How to: Query for the Largest File or Files in a Directory Tree (LINQ) (Visual Basic)
 This example shows five queries related to file size in bytes:  
   
--   How to retrieve the size in bytes of the largest file.  
+- How to retrieve the size in bytes of the largest file.  
   
--   How to retrieve the size in bytes of the smallest file.  
+- How to retrieve the size in bytes of the smallest file.  
   
--   How to retrieve the <xref:System.IO.FileInfo> object largest or smallest file from one or more folders under a specified root folder.  
+- How to retrieve the <xref:System.IO.FileInfo> object largest or smallest file from one or more folders under a specified root folder.  
   
--   How to retrieve a sequence such as the 10 largest files.  
+- How to retrieve a sequence such as the 10 largest files.  
   
--   How to order files into groups based on their file size in bytes, ignoring files that are less than a specified size.  
+- How to order files into groups based on their file size in bytes, ignoring files that are less than a specified size.  
   
 ## Example  
  The following example contains five separate queries that show how to query and group files, depending on their file size in bytes. You can easily modify these examples to base the query on some other property of the <xref:System.IO.FileInfo> object.  
@@ -115,5 +115,6 @@ End Module
  Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a `Imports` statement for the System.Linq namespace.  
   
 ## See also
+
 - [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
 - [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

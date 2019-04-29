@@ -1,11 +1,11 @@
 ---
-title: "&lt;GenericParameter&gt; Element (.NET Native)"
+title: "<GenericParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;GenericParameter&gt; Element (.NET Native)
+# \<GenericParameter> Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  
   
 ## Syntax  
@@ -81,6 +81,7 @@ Applies policy to the parameter type of a generic type or method.
 ```  
   
 ## See also
+
 - [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
 - [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

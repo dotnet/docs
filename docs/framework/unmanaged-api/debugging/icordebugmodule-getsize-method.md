@@ -29,7 +29,7 @@ HRESULT GetSize(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcBytes`  
  [out] The size of the module in bytes.  
   

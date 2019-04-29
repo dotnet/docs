@@ -10,7 +10,7 @@ When using the `PeekChars` method of the `TextFieldParser` object, you must supp
   
 ## To correct this error  
   
--   Change `NumberOfChars` to a value that is greater than `0`.  
+- Change `NumberOfChars` to a value that is greater than `0`.  
   
 ## See also
 

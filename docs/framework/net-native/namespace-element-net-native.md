@@ -1,11 +1,11 @@
 ---
-title: "&lt;Namespace&gt; Element (.NET Native)"
+title: "<Namespace> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Namespace&gt; Element (.NET Native)
+# \<Namespace> Element (.NET Native)
 Applies runtime reflection policy to all the types in a specified namespace.  
   
 ## Syntax  
@@ -78,6 +78,7 @@ Applies runtime reflection policy to all the types in a specified namespace.
  When it is a child of the [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md) element, the `<Namespace>` element overrides the runtime reflection policy defined by the  [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md) element.  
   
 ## See also
+
 - [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

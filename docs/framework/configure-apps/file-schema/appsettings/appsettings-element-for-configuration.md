@@ -1,5 +1,5 @@
 ---
-title: "&lt;appSettings&gt; element for &lt;configuration&gt;"
+title: "<appSettings> element for <configuration>"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings"

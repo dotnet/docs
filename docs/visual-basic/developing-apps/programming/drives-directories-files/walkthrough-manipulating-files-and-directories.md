@@ -25,17 +25,17 @@ This walkthrough provides an introduction to the fundamentals of file I/O in Vis
   
 ### To create the project  
   
-1.  On the **File** menu, click **New Project**.  
+1. On the **File** menu, click **New Project**.  
   
      The **New Project** dialog box appears.  
   
-2.  In the **Installed Templates** pane, expand **Visual Basic**, and then click **Windows**. In the **Templates** pane in the middle, click **Windows Forms Application**.  
+2. In the **Installed Templates** pane, expand **Visual Basic**, and then click **Windows**. In the **Templates** pane in the middle, click **Windows Forms Application**.  
   
-3.  In the **Name** box, type `FileExplorer` to set the project name, and then click **OK**.  
+3. In the **Name** box, type `FileExplorer` to set the project name, and then click **OK**.  
   
      Visual Studio adds the project to **Solution Explorer**, and the Windows Forms Designer opens.  
   
-4.  Add the controls in the following table to the form, and set the corresponding values for their properties.  
+4. Add the controls in the following table to the form, and set the corresponding values for their properties.  
   
     |Control|Property|Value|  
     |-------------|--------------|-----------|  
@@ -47,17 +47,17 @@ This walkthrough provides an introduction to the fundamentals of file I/O in Vis
   
 ### To select a folder, and list files in a folder  
   
-1.  Create a `Click` event handler for `browseButton` by double-clicking the control on the form. The Code Editor opens.  
+1. Create a `Click` event handler for `browseButton` by double-clicking the control on the form. The Code Editor opens.  
   
-2.  Add the following code to the `Click` event handler.  
+2. Add the following code to the `Click` event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#103](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#103)]  
   
      The `FolderBrowserDialog1.ShowDialog` call opens the **Browse For Folder** dialog box. After the user clicks **OK**, the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property is sent as an argument to the `ListFiles` method, which is added in the next step.  
   
-3.  Add the following `ListFiles` method.  
+3. Add the following `ListFiles` method.  
   
-     [!code-vb[VbVbcnMyFileSystem#104](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#104](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#104)]  
   
      This code first clears the **ListBox**.  
   
@@ -65,95 +65,96 @@ This walkthrough provides an introduction to the fundamentals of file I/O in Vis
   
      The strings that are returned by the `GetFiles` method are then added to the **ListBox**.  
   
-4.  Run the application. Click the **Browse** button. In the **Browse For Folder** dialog box, browse to a folder that contains .txt files, and then select the folder and click **OK**.  
+4. Run the application. Click the **Browse** button. In the **Browse For Folder** dialog box, browse to a folder that contains .txt files, and then select the folder and click **OK**.  
   
      The `ListBox` contains a list of .txt files in the selected folder.  
   
-5.  Stop running the application.  
+5. Stop running the application.  
   
 ### To obtain attributes of a file, and content from a text file  
   
-1.  Create a `Click` event handler for `examineButton` by double-clicking the control on the form.  
+1. Create a `Click` event handler for `examineButton` by double-clicking the control on the form.  
   
-2.  Add the following code to the `Click` event handler.  
+2. Add the following code to the `Click` event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#105](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_3.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#105](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#105)]  
   
      The code verifies that an item is selected in the `ListBox`. It then obtains the file path entry from the `ListBox`. The <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists%2A> method is used to check whether the file still exists.  
   
      The file path is sent as an argument to the `GetTextForOutput` method, which is added in the next step. This method returns a string that contains file information. The file information appears in a **MessageBox**.  
   
-3.  Add the following `GetTextForOutput` method.  
+3. Add the following `GetTextForOutput` method.  
   
-     [!code-vb[VbVbcnMyFileSystem#107](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_4.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#107](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#107)]  
   
      The code uses the <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A> method to obtain file parameters. The file parameters are added to a <xref:System.Text.StringBuilder>.  
   
      The <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A> method reads the file contents into a <xref:System.IO.StreamReader>. The first line of the contents is obtained from the `StreamReader` and is added to the `StringBuilder`.  
   
-4.  Run the application. Click **Browse**, and browse to a folder that contains .txt files. Click **OK**.  
+4. Run the application. Click **Browse**, and browse to a folder that contains .txt files. Click **OK**.  
   
      Select a file in the `ListBox`, and then click **Examine**. A `MessageBox` shows the file information.  
   
-5.  Stop running the application.  
+5. Stop running the application.  
   
 ### To add a log entry  
   
-1.  Add the following code to the end of the `examineButton_Click` event handler.  
+1. Add the following code to the end of the `examineButton_Click` event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#106](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_5.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#106](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#106)]  
   
      The code sets the log file path to put the log file in the same directory as that of the selected file. The text of the log entry is set to the current date and time followed by the file information.  
   
      The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> method, with the `append` argument set to `True`, is used to create the log entry.  
   
-2.  Run the application. Browse to a text file, select it in the `ListBox`, select the **Save Results** check box, and then click **Examine**. Verify that the log entry is written to the `log.txt` file.  
+2. Run the application. Browse to a text file, select it in the `ListBox`, select the **Save Results** check box, and then click **Examine**. Verify that the log entry is written to the `log.txt` file.  
   
-3.  Stop running the application.  
+3. Stop running the application.  
   
 ### To use the current directory  
   
-1.  Create an event handler for `Form1_Load` by double-clicking the form.  
+1. Create an event handler for `Form1_Load` by double-clicking the form.  
   
-2.  Add the following code to the event handler.  
+2. Add the following code to the event handler.  
   
-     [!code-vb[VbVbcnMyFileSystem#102](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_6.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#102)]  
   
      This code sets the default directory of the folder browser to the current directory.  
   
-3.  Run the application. When you click **Browse** the first time, the **Browse For Folder** dialog box opens to the current directory.  
+3. Run the application. When you click **Browse** the first time, the **Browse For Folder** dialog box opens to the current directory.  
   
-4.  Stop running the application.  
+4. Stop running the application.  
   
 ### To selectively enable controls  
   
-1.  Add the following `SetEnabled` method.  
+1. Add the following `SetEnabled` method.  
   
-     [!code-vb[VbVbcnMyFileSystem#108](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_7.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#108](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#108)]  
   
      The `SetEnabled` method enables or disables controls depending on whether an item is selected in the `ListBox`.  
   
-2.  Create a `SelectedIndexChanged` event handler for `filesListBox` by double-clicking the `ListBox` control on the form.  
+2. Create a `SelectedIndexChanged` event handler for `filesListBox` by double-clicking the `ListBox` control on the form.  
   
-3.  Add a call to `SetEnabled` in the new `filesListBox_SelectedIndexChanged` event handler.  
+3. Add a call to `SetEnabled` in the new `filesListBox_SelectedIndexChanged` event handler.  
   
-4.  Add a call to `SetEnabled` at the end of the `browseButton_Click` event handler.  
+4. Add a call to `SetEnabled` at the end of the `browseButton_Click` event handler.  
   
-5.  Add a call to `SetEnabled` at the end of the `Form1_Load` event handler.  
+5. Add a call to `SetEnabled` at the end of the `Form1_Load` event handler.  
   
-6.  Run the application. The **Save Results** check box and the **Examine** button are disabled if an item is not selected in the `ListBox`.  
+6. Run the application. The **Save Results** check box and the **Examine** button are disabled if an item is not selected in the `ListBox`.  
   
 ## Full example using My.Computer.FileSystem  
  Following is the complete example.  
   
- [!code-vb[VbVbcnMyFileSystem#101](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_8.vb)]  
+ [!code-vb[VbVbcnMyFileSystem#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#101)]  
   
 ## Full example using System.IO  
  The following equivalent example uses classes from the <xref:System.IO> namespace instead of using `My.Computer.FileSystem` objects.  
   
- [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_9.vb)]  
+ [!code-vb[VbVbcnMyFileSystem#111](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class3.vb#111)]  
   
 ## See also
+
 - <xref:System.IO>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>

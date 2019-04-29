@@ -46,17 +46,17 @@ ms.author: "ronpet"
   
  .NET types are the foundation on which .NET applications, components, and controls are built. .NET implementations include types that perform the following functions:  
   
--   Represent base data types and exceptions.  
+- Represent base data types and exceptions.  
   
--   Encapsulate data structures.  
+- Encapsulate data structures.  
   
--   Perform I/O.  
+- Perform I/O.  
   
--   Access information about loaded types.  
+- Access information about loaded types.  
   
--   Invoke .NET Framework security checks.  
+- Invoke .NET Framework security checks.  
   
--   Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
+- Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
   
  .NET provides a rich set of interfaces, as well as abstract and concrete (non-abstract) classes. You can use the concrete classes as is or, in many cases, derive your own classes from them. To use the functionality of an interface, you can either create a class that implements the interface or derive a class from one of the .NET classes that implements the interface.  
   
@@ -90,8 +90,8 @@ ms.author: "ronpet"
 ||<xref:System.UInt16>|A 16-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UShort**|**ushort**|**unsigned short**|**uint16**|  
 ||<xref:System.UInt32>|A 32-bit unsigned integer.<br /><br /> Not CLS-compliant.|**UInteger**|**uint**|**unsigned int**<br /> -or-<br /> **unsigned long**|**uint32**|  
 ||<xref:System.UInt64>|A 64-bit unsigned integer.<br /><br /> Not CLS-compliant.|**ULong**|**ulong**|**unsigned __int64**|**uint64**|  
-|Floating point|<xref:System.Single>|A single-precision (32-bit) floating-point number.|**Single**|**float**|**float**|**float32**</br> or</br>**single**|  
-||<xref:System.Double>|A double-precision (64-bit) floating-point number.|**Double**|**double**|**double**|**float**</br> or </br> **double**|  
+|Floating point|<xref:System.Single>|A single-precision (32-bit) floating-point number.|**Single**|**float**|**float**|**float32**<br> or<br>**single**|  
+||<xref:System.Double>|A double-precision (64-bit) floating-point number.|**Double**|**double**|**double**|**float**<br> or <br> **double**|  
 |Logical|<xref:System.Boolean>|A Boolean value (true or false).|**Boolean**|**bool**|**bool**|**bool**|  
 |Other|<xref:System.Char>|A Unicode (16-bit) character.|**Char**|**char**|**wchar_t**|**char**|  
 ||<xref:System.Decimal>|A decimal  (128-bit) value.|**Decimal**|**decimal**|**Decimal**|**decimal**|  

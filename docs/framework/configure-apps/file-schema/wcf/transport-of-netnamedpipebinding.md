@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;netNamedPipeBinding&gt;"
+title: "<transport> of <netNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: d9eff52d-4bde-4586-b56a-b0ec24611f8d
 ---
-# &lt;transport&gt; of &lt;netNamedPipeBinding&gt;
+# \<transport> of \<netNamedPipeBinding>
 Defines the transport security settings for a named pipe.  
   
  \<system.ServiceModel>  
@@ -44,6 +44,7 @@ Defines the transport security settings for a named pipe.
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netnamedpipebinding.md)|Defines the security settings for a binding.|  
   
 ## See also
+
 - <xref:System.ServiceModel.NamedPipeTransportSecurity>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>
 - <xref:System.ServiceModel.NetNamedPipeSecurity.Transport%2A>

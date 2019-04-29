@@ -25,17 +25,17 @@ Creates a file that you can use when you file a bug report.
 ## Remarks  
  The following information is added to `file`:  
   
--   A copy of all source-code files in the compilation.  
+- A copy of all source-code files in the compilation.  
   
--   A list of the compiler options used in the compilation.  
+- A list of the compiler options used in the compilation.  
   
--   Version information about your compiler, common language runtime, and operating system.  
+- Version information about your compiler, common language runtime, and operating system.  
   
--   Compiler output, if any.  
+- Compiler output, if any.  
   
--   A description of the problem, for which you are prompted.  
+- A description of the problem, for which you are prompted.  
   
--   A description of how you think the problem should be fixed, for which you are prompted.  
+- A description of how you think the problem should be fixed, for which you are prompted.  
   
  Because a copy of all source-code files is included in `file`, you may want to reproduce the (suspected) code defect in the shortest possible program.  
   
@@ -55,8 +55,9 @@ vbc -bugreport:problem.txt t2.vb
 ```  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)
 - [-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369)
+- [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as399f0x(v=vs.100))

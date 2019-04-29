@@ -62,15 +62,15 @@ An important consideration with a type conversion is whether the result of the c
 ## Narrowing Conversions  
  The standard narrowing conversions include the following:  
   
--   The reverse directions of the widening conversions in the preceding table (except that every type widens to itself)  
+- The reverse directions of the widening conversions in the preceding table (except that every type widens to itself)  
   
--   Conversions in either direction between [Boolean](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) and any numeric type  
+- Conversions in either direction between [Boolean](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) and any numeric type  
   
--   Conversions from any numeric type to any enumerated type (`Enum`)  
+- Conversions from any numeric type to any enumerated type (`Enum`)  
   
--   Conversions in either direction between [String](../../../../visual-basic/language-reference/data-types/string-data-type.md) and any numeric type, `Boolean`, or [Date](../../../../visual-basic/language-reference/data-types/date-data-type.md)  
+- Conversions in either direction between [String](../../../../visual-basic/language-reference/data-types/string-data-type.md) and any numeric type, `Boolean`, or [Date](../../../../visual-basic/language-reference/data-types/date-data-type.md)  
   
--   Conversions from a data type or object type to a type derived from it  
+- Conversions from a data type or object type to a type derived from it  
   
  Narrowing conversions do not always succeed at run time, and can fail or incur data loss. An error occurs if the destination data type cannot receive the value being converted. For example, a numeric conversion can result in an overflow. The compiler does not allow you to perform narrowing conversions implicitly unless the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) sets the type checking switch to `Off`.  
   
@@ -83,9 +83,9 @@ An important consideration with a type conversion is whether the result of the c
 ## Exceptions During Conversion  
  Because widening conversions always succeed, they do not throw exceptions. Narrowing conversions, when they fail, most commonly throw the following exceptions:  
   
--   <xref:System.InvalidCastException> — if no conversion is defined between the two types  
+- <xref:System.InvalidCastException> — if no conversion is defined between the two types  
   
--   <xref:System.OverflowException> — (integral types only) if the converted value is too large for the target type  
+- <xref:System.OverflowException> — (integral types only) if the converted value is too large for the target type  
   
  If a class or structure defines a [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) to serve as a conversion operator to or from that class or structure, that `CType` can throw any exception it deems appropriate. In addition, that `CType` might call Visual Basic functions or [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods, which in turn could throw a variety of exceptions.  
   
@@ -102,6 +102,7 @@ shape = square
 ```  
   
 ## See also
+
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

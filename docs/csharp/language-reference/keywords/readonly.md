@@ -41,10 +41,10 @@ These constructor contexts are also the only contexts in which it is valid to pa
 
 > [!NOTE]
 > The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be assigned multiple times in the field declaration and in any constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for runtime constants as in the following example:
-
-```csharp
-public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
-```
+>
+> ```csharp
+> public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
+> ```
 
 [!code-csharp[Initialize readonly Field example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#InitReadonlyField)]
 

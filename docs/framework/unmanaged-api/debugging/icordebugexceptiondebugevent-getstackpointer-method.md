@@ -16,7 +16,7 @@ HRESULT GetStackPointer(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStackPointer`  
  [out] A pointer to the address of the stack pointer for this exception debug event. See the Remarks section for more information.  
   
@@ -45,5 +45,6 @@ HRESULT GetStackPointer(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

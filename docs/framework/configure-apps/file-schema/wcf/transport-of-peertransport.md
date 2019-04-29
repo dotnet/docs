@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;peerTransport&gt;"
+title: "<transport> of <peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
 ---
-# &lt;transport&gt; of &lt;peerTransport&gt;
+# \<transport> of \<peerTransport>
 Specifies the transport type for secured messages sent by peers configured with this binding.  
   
  \<system.serviceModel>  
@@ -51,6 +51,7 @@ Specifies the transport type for secured messages sent by peers configured with 
  This element is set only if the mode attribute of [\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md) is set to `Transport` or `TransportWithMessageCredential`.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>
 - <xref:System.ServiceModel.PeerTransportSecuritySettings>

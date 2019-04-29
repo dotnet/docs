@@ -9,19 +9,19 @@ This topic itemizes and discusses the components of the Windows Process Activati
 ## Activation Components  
  WAS consists of several architectural components:  
   
--   Listener adapters. Windows services that receive messages on specific network protocols and communicate with WAS to route incoming messages to the correct worker process.  
+- Listener adapters. Windows services that receive messages on specific network protocols and communicate with WAS to route incoming messages to the correct worker process.  
   
--   WAS. The Windows service that manages the creation and lifetime of worker processes.  
+- WAS. The Windows service that manages the creation and lifetime of worker processes.  
   
--   The generic worker process executable (w3wp.exe).  
+- The generic worker process executable (w3wp.exe).  
   
--   Application manager. Manages the creation and lifetime of application domains that host applications within the worker process.  
+- Application manager. Manages the creation and lifetime of application domains that host applications within the worker process.  
   
--   Protocol handlers. Protocol-specific components that run in the worker process and manage communication between the worker process and the individual listener adapters. Two types of protocol handlers exist: process protocol handlers and AppDomain protocol handlers.  
+- Protocol handlers. Protocol-specific components that run in the worker process and manage communication between the worker process and the individual listener adapters. Two types of protocol handlers exist: process protocol handlers and AppDomain protocol handlers.  
   
  When WAS activates a worker process instance, it loads the process protocol handlers required into the worker process and uses the application manager to create an application domain to host the application. The application domain loads the application’s code as well as the AppDomain protocol handlers that the network protocols used by the application require.  
   
- ![WAS Architecture](../../../../docs/framework/wcf/feature-details/media/wasarchitecture.gif "WASArchitecture")  
+ ![Screenshot that shows the WAS architecture.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### Listener Adapters  
  Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for Windows Communication Foundation (WCF) protocols.  
@@ -80,5 +80,6 @@ This topic itemizes and discusses the components of the Windows Process Activati
 ```  
   
 ## See also
+
 - [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
 - [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;code&gt; - C# Programming Guide"
+title: "<code> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,14 +10,14 @@ helpviewer_keywords:
   - "<code> C# XML tag"
 ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 ---
-# &lt;code&gt; (C# Programming Guide)
+# \<code> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
 <code>content</code>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text you want marked as code.  
   

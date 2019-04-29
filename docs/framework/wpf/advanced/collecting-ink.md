@@ -16,11 +16,11 @@ ms.assetid: 66a3129d-9577-43eb-acbd-56c147282016
 ---
 # Collect Ink
 
-The [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md) platform collects digital ink as a core part of its functionality. This topic discusses methods for collection of ink in Windows Presentation Foundation (WPF).
+The [Windows Presentation Foundation](../index.md) platform collects digital ink as a core part of its functionality. This topic discusses methods for collection of ink in Windows Presentation Foundation (WPF).
 
 ## Prerequisites
 
-To use the following examples, you must first install Visual Studio and the [!INCLUDE[TLA2#tla_winfxsdk](../../../../includes/tla2sharptla-winfxsdk-md.md)]. You should also understand how to write applications for the WPF. For more information about getting started with WPF, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).
+To use the following examples, you must first install Visual Studio and the [!INCLUDE[TLA2#tla_winfxsdk](../../../../includes/tla2sharptla-winfxsdk-md.md)]. You should also understand how to write applications for the WPF. For more information about getting started with WPF, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
 ## Use the InkCanvas Element
 
@@ -28,15 +28,15 @@ The <xref:System.Windows.Controls.InkCanvas?displayProperty=fullName> element pr
 
 By using XAML, you can set up ink collection as easily as adding an **InkCanvas** element to your tree. The following example adds an <xref:System.Windows.Controls.InkCanvas> to a default WPF project created in Visual Studio:
 
-[!code-xaml[DigitalInkTopics#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#6)]
+[!code-xaml[DigitalInkTopics#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#6)]
 
 The **InkCanvas** element can also contain child elements, making it possible to add ink annotation capabilities to almost any type of XAML element. For example, to add inking capabilities to a text element, simply make it a child of an <xref:System.Windows.Controls.InkCanvas>:
 
-[!code-xaml[DigitalInkTopics#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#5)]
+[!code-xaml[DigitalInkTopics#5](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#5)]
 
 Adding support for marking up an image with ink is just as easy:
 
-[!code-xaml[DigitalInkTopics#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#7)]
+[!code-xaml[DigitalInkTopics#7](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#7)]
 
 ### InkCollection Modes
 
@@ -52,8 +52,8 @@ Setting selection mode is as simple as setting the <xref:System.Windows.Controls
 
 The following code sets the editing mode based on the value of a <xref:System.Windows.Forms.CheckBox>:
 
-[!code-csharp[DigitalInkTopics#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window1.xaml.cs#8)]
-[!code-vb[DigitalInkTopics#8](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window1.xaml.vb#8)]
+[!code-csharp[DigitalInkTopics#8](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window1.xaml.cs#8)]
+[!code-vb[DigitalInkTopics#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window1.xaml.vb#8)]
 
 #### DrawingAttributes
 
@@ -61,8 +61,8 @@ Use the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property to change
 
 The following example changes the color of the selected strokes to red:
 
-[!code-csharp[DigitalInkTopics#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window1.xaml.cs#9)]
-[!code-vb[DigitalInkTopics#9](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window1.xaml.vb#9)]
+[!code-csharp[DigitalInkTopics#9](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window1.xaml.cs#9)]
+[!code-vb[DigitalInkTopics#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window1.xaml.vb#9)]
 
 ### DefaultDrawingAttributes
 
@@ -72,11 +72,11 @@ In addition to modifying the <xref:System.Windows.Controls.InkCanvas.DefaultDraw
 
 The next example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.Color%2A> property. To use this code, create a new WPF project called "HelloInkCanvas" in Visual Studio. Replace the code in the *MainWindow.xaml* file with the following code:
 
-[!code-xaml[HelloInkCanvas#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HelloInkCanvas/CSharp/Window1.xaml#1)]
+[!code-xaml[HelloInkCanvas#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HelloInkCanvas/CSharp/Window1.xaml#1)]
 
 Next, add the following button event handlers to the code behind file, inside the MainWindow class:
 
-[!code-csharp[HelloInkCanvas#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HelloInkCanvas/CSharp/Window1.xaml.cs#2)]
+[!code-csharp[HelloInkCanvas#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HelloInkCanvas/CSharp/Window1.xaml.cs#2)]
 
 After copying this code, press **F5** in Visual Studio to run the program in the debugger.
 

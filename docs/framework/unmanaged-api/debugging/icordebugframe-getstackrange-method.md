@@ -30,7 +30,7 @@ HRESULT GetStackRange (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStart`  
  [out] A pointer to a `CORDB_ADDRESS` that specifies the starting address of the stack frame represented by this `ICorDebugFrame` object.  
   

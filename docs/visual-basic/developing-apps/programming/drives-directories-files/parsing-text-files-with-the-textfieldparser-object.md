@@ -13,11 +13,11 @@ The `TextFieldParser` object allows you to parse and process very large file tha
 ## Parsing different types of text files  
  Text files may have fields of various width, delimited by a character such as a comma or a tab space. Define `TextFieldType` and the delimiter, as in the following example, which uses the `SetDelimiters` method to define a tab-delimited text file:  
   
- [!code-vb[VbVbalrTextFieldParser#21](../../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/parsing-text-files-with-the-textfieldparser-object_1.vb)]  
+ [!code-vb[VbVbalrTextFieldParser#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#21)]  
   
  Other text files may have field widths that are fixed. In such cases, you need to define the `TextFieldType` as `FixedWidth` and define the widths of each field, as in the following example. This example uses the `SetFieldWidths` method to define the columns of text: the first column is 5 characters wide, the second is 10, the third is 11, and the fourth is of variable width.  
   
- [!code-vb[VbVbalrTextFieldParser#22](../../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/parsing-text-files-with-the-textfieldparser-object_2.vb)]  
+ [!code-vb[VbVbalrTextFieldParser#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#22)]  
   
  Once the format is defined, you can loop through the file, using the `ReadFields` method to process each line in turn.  
   
@@ -27,6 +27,7 @@ The `TextFieldParser` object allows you to parse and process very large file tha
  The `PeekChars` method of the `TextFieldParser` object can be used to check each field before reading it, allowing you to define multiple formats for the fields and react accordingly. For more information, see [How to: Read From Text Files with Multiple Formats](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>

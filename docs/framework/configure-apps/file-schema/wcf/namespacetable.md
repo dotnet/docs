@@ -1,10 +1,10 @@
 ---
-title: "&lt;namespaceTable&gt;"
+title: "<namespaceTable>"
 ms.date: "03/30/2017"
 ms.assetid: 64801766-01b7-4c65-9ce6-70ad5af67689
 ---
 
-# &lt;namespaceTable&gt;
+# \<namespaceTable>
 
 Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.
 

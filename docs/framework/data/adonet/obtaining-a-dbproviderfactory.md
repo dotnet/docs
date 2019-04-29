@@ -90,7 +90,8 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
  [!code-vb[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/VB/source.vb#1)]  
   
 ## See also
+
 - [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)
 - [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
-- [Using the Configuration Classes](https://msdn.microsoft.com/library/98d2b386-baf6-4a17-974b-76e3b4c87acc)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/aspnet/ms228063(v=vs.100))
+- [ADO.NET Overview](ado-net-overview.md)

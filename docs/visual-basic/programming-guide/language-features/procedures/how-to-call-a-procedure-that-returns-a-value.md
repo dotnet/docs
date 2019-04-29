@@ -13,32 +13,33 @@ A `Function` procedure returns a value to the calling code. You call it by inclu
   
 ### To call a Function procedure within an expression  
   
-1.  Use the `Function` procedure name the same way you would use a variable. You can use a `Function` procedure call anywhere you can use a variable or constant in an expression.  
+1. Use the `Function` procedure name the same way you would use a variable. You can use a `Function` procedure call anywhere you can use a variable or constant in an expression.  
   
-2.  Follow the procedure name with parentheses to enclose the argument list. If there are no arguments, you can optionally omit the parentheses. However, using the parentheses makes your code easier to read.  
+2. Follow the procedure name with parentheses to enclose the argument list. If there are no arguments, you can optionally omit the parentheses. However, using the parentheses makes your code easier to read.  
   
-3.  Place the arguments in the argument list within the parentheses, separated by commas. Be sure you supply the arguments in the same order that the `Function` procedure defines the corresponding parameters.  
+3. Place the arguments in the argument list within the parentheses, separated by commas. Be sure you supply the arguments in the same order that the `Function` procedure defines the corresponding parameters.  
   
      Alternatively, you can pass one or more arguments by name. For more information, see [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md).  
   
-4.  The value returned from the procedure participates in the expression just as the value of a variable or constant would.  
+4. The value returned from the procedure participates in the expression just as the value of a variable or constant would.  
   
 ### To call a Function procedure in an assignment statement  
   
-1.  Use the `Function` procedure name following the equal (`=`) sign in the assignment statement.  
+1. Use the `Function` procedure name following the equal (`=`) sign in the assignment statement.  
   
-2.  Follow the procedure name with parentheses to enclose the argument list. If there are no arguments, you can optionally omit the parentheses. However, using the parentheses makes your code easier to read.  
+2. Follow the procedure name with parentheses to enclose the argument list. If there are no arguments, you can optionally omit the parentheses. However, using the parentheses makes your code easier to read.  
   
-3.  Place the arguments in the argument list within the parentheses, separated by commas. Be sure you supply the arguments in the same order that the `Function` procedure defines the corresponding parameters, unless you are passing them by name.  
+3. Place the arguments in the argument list within the parentheses, separated by commas. Be sure you supply the arguments in the same order that the `Function` procedure defines the corresponding parameters, unless you are passing them by name.  
   
-4.  The value returned from the procedure is stored in the variable or property on the left side of the assignment statement.  
+4. The value returned from the procedure is stored in the variable or property on the left side of the assignment statement.  
   
 ## Example  
  The following example calls the Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> to retrieve the value of an operating system environment variable. The first line calls `Environ` within an expression, and the second line calls it in an assignment statement. `Environ` takes the variable name as its sole argument. It returns the variable's value to the calling code.  
   
- [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
+ [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
 ## See also
+
 - [Function Procedures](./function-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)

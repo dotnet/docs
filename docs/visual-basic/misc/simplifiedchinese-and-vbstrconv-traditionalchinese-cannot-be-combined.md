@@ -10,9 +10,10 @@ Your application is attempting to combine the `VbStrConv` enumeration members `S
   
 ## To correct this error  
   
--   Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.  
+- Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.  
   
 ## See also
+
 - <xref:System.Globalization>
 
 - [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;pnrpPeerResolver&gt;"
+title: "<pnrpPeerResolver>"
 ms.date: "03/30/2017"
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
 ---
-# &lt;pnrpPeerResolver&gt;
+# \<pnrpPeerResolver>
 Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used as a resolver. This element is optional because PNRP is the default resolver.  
   
  \<system.serviceModel>  
@@ -43,6 +43,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>
 - <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

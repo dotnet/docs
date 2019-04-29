@@ -12,9 +12,9 @@ You can create an XML document, fragment, or element directly in code by using a
   
 ### To create an XML element  
   
--   Create the XML inline by using the XML literal syntax, which is the same as the actual XML syntax.  
+- Create the XML inline by using the XML literal syntax, which is the same as the actual XML syntax.  
   
-     [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_1.vb)]  
+     [!code-vb[VbXMLSamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#5)]  
   
      Run the code. The output of this code is:  
   
@@ -30,9 +30,9 @@ You can create an XML document, fragment, or element directly in code by using a
   
 ### To create an XML document  
   
--   Create the XML document inline. The following code creates an XML document that has literal syntax, an XML declaration, a processing instruction, a comment, and an element that contains another element.  
+- Create the XML document inline. The following code creates an XML document that has literal syntax, an XML declaration, a processing instruction, a comment, and an element that contains another element.  
   
-     [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_2.vb)]  
+     [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
      Run the code. The output of this code is:  
   
@@ -47,6 +47,7 @@ You can create an XML document, fragment, or element directly in code by using a
      `</books>`  
   
 ## See also
+
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
 - [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
 - [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

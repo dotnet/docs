@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;claimTypeRequirements&gt; element"
+title: "<add> of <claimTypeRequirements> element"
 ms.date: "03/30/2017"
 ms.assetid: 3234cd45-1478-468e-8b19-5c50815c4786
 ---
-# &lt;add&gt; of &lt;claimTypeRequirements&gt; element
+# \<add> of \<claimTypeRequirements> element
 Specifies the types of required and optional claims expected to appear in the federated credential. For example, services state the requirements on incoming credentials, which must possess a certain set of claim types.  
   
  \<system.ServiceModel>  
@@ -67,6 +67,7 @@ Specifies the types of required and optional claims expected to appear in the fe
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
 - <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>

@@ -44,13 +44,13 @@ If you want to evaluate the portability of your assemblies before you make chang
 
 The types and members that are available in Portable Class Library projects are constrained by several compatibility factors:
 
--   They must be shared across the targets you selected.
+- They must be shared across the targets you selected.
 
--   The must behave similarly across those targets.
+- The must behave similarly across those targets.
 
--   They must not be candidates for deprecation.
+- They must not be candidates for deprecation.
 
--   They must make sense in a portable environment, especially when supporting members are not portable.
+- They must make sense in a portable environment, especially when supporting members are not portable.
 
 If a member is supported in the Portable Class Library and for your selected targets, it will appear in your project in IntelliSense. However, remember that an API may be supported in the Portable Class Library, but whether you can use the API depends on the targets you select.
 
@@ -72,9 +72,9 @@ When you create a Universal Windows app that references a Portable Class Library
 
 When you deploy a .NET Framework app that references a Portable Class Library assembly, you must specify a dependency on the correct version of the .NET Framework. By specifying this dependency, you ensure that the required version is installed with your app.
 
--   To create a dependency with ClickOnce deployment: In **Solution Explorer**, choose the project node for the project you want to publish. (This is the project that references the Portable Class Library project.) On the menu bar, choose **Project** > **Properties**, and then choose the **Publish** tab. On the **Publish** page, choose **Prerequisites**. Select the required .NET Framework version as a prerequisite.
+- To create a dependency with ClickOnce deployment: In **Solution Explorer**, choose the project node for the project you want to publish. (This is the project that references the Portable Class Library project.) On the menu bar, choose **Project** > **Properties**, and then choose the **Publish** tab. On the **Publish** page, choose **Prerequisites**. Select the required .NET Framework version as a prerequisite.
 
--   To create a dependency with a setup project: In **Solution Explorer**, choose the setup project. On the menu bar, choose **Project** > **Properties** > **Prerequisites**. Select the required .NET Framework version as a prerequisite.
+- To create a dependency with a setup project: In **Solution Explorer**, choose the setup project. On the menu bar, choose **Project** > **Properties** > **Prerequisites**. Select the required .NET Framework version as a prerequisite.
 
 For more information about deploying .NET Framework apps, see [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md).
 

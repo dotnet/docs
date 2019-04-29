@@ -10,9 +10,10 @@ An assignment has been attempted that is not valid.
   
 ## To correct this error  
   
-1.  Check that the number of arguments you have supplied matches the number required by the target.  
+1. Check that the number of arguments you have supplied matches the number required by the target.  
   
-2.  Check the property assignment.  
+2. Check the property assignment.  
   
 ## See also
+
 - [Assignment Operators](../../visual-basic/language-reference/operators/assignment-operators.md)

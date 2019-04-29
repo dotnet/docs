@@ -28,7 +28,7 @@ HRESULT GetSourceLength(
     [out, retval]  ULONG32*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that indicates the length, in bytes, of the embedded source.  
   
@@ -36,4 +36,5 @@ HRESULT GetSourceLength(
  S_OK if the method succeeds.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

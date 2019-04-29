@@ -29,7 +29,7 @@ HRESULT GetModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppModule`  
  [out] A pointer to the address of an ICorDebugModule object that represents the module in which this function is defined.  
   

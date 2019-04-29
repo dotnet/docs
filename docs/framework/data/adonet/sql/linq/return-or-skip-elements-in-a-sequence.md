@@ -16,9 +16,9 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip%2A> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:  
   
--   The argument must be a set. Multisets are not supported, even if ordered.  
+- The argument must be a set. Multisets are not supported, even if ordered.  
   
--   The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.  
+- The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.  
   
 ## Example  
  The following example uses `Take` to select the first five `Employees` hired. Note that the collection is first sorted by `HireDate`.  
@@ -73,5 +73,6 @@ ORDER BY [t0].[CustomerID]
  For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.  
   
 ## See also
+
 - [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
 - [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

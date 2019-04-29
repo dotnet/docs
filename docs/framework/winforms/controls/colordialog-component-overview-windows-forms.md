@@ -14,7 +14,8 @@ The Windows Forms <xref:System.Windows.Forms.ColorDialog> component is a pre-con
  The color selected in the dialog box is returned in the <xref:System.Windows.Forms.ColorDialog.Color%2A> property. If the <xref:System.Windows.Forms.ColorDialog.AllowFullOpen%2A> property is set to `false`, the "Define Custom Colors" button is disabled and the user is restricted to the predefined colors in the palette. If the <xref:System.Windows.Forms.ColorDialog.SolidColorOnly%2A> property is set to `true`, the user cannot select dithered colors. To display the dialog box, you must call its <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ColorDialog>
-- [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)
-- [Dialog-Box Controls and Components](../../../../docs/framework/winforms/controls/dialog-box-controls-and-components-windows-forms.md)
-- [How to: Change the Appearance of the Windows Forms ColorDialog Component](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-colordialog-component.md)
+- [ColorDialog Component](colordialog-component-windows-forms.md)
+- [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)
+- [How to: Change the Appearance of the Windows Forms ColorDialog Component](how-to-change-the-appearance-of-the-windows-forms-colordialog-component.md)

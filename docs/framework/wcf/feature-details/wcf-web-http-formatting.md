@@ -9,13 +9,13 @@ The WCF Web HTTP programming model allows you to dynamically determine the best 
 ## Automatic formatting  
  When enabled, automatic formatting chooses the best format in which to return the response. It determines the best format by checking the following, in order:  
   
-1.  The media types in the request message’s Accept header.  
+1. The media types in the request message’s Accept header.  
   
-2.  The content-type of the request message.  
+2. The content-type of the request message.  
   
-3.  The default format setting in the operation.  
+3. The default format setting in the operation.  
   
-4.  The default format setting in the WebHttpBehavior.  
+4. The default format setting in the WebHttpBehavior.  
   
  If the request message contains an Accept header the Windows Communication Foundation (WCF) infrastructure searches for a type that it supports. If the `Accept` header specifies priorities for its media types, they are honored. If no suitable format is found in the `Accept` header, the content-type of the request message is used. If no suitable content-type is specified, the default format setting for the operation is used. The default format is set with the `ResponseFormat` parameter of the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes. If no default format is specified on the operation, the value of the <xref:System.ServiceModel.Description.WebHttpBehavior.DefaultOutgoingResponseFormat%2A> property is used. Automatic formatting relies on the <xref:System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled%2A> property. When this property is set to `true`, the WCF infrastructure determines the best format to use. Automatic format selection is disabled by default for backwards compatibility. Automatic format selection can be enabled programmatically or through configuration. The following example shows how to enable automatic format selection in code.  
   
@@ -119,15 +119,15 @@ public class Service : IService
   
  If you need to support formats other than XML or JSON, define your operation to have a return type of <xref:System.ServiceModel.Channels.Message>. Within the operation code, determine the appropriate format to use and then create a <xref:System.ServiceModel.Channels.Message> object using one of the following methods:  
   
--   `WebOperationContext.CreateAtom10Response`  
+- `WebOperationContext.CreateAtom10Response`  
   
--   `WebOperationContext.CreateJsonResponse`  
+- `WebOperationContext.CreateJsonResponse`  
   
--   `WebOperationContext.CreateStreamResponse`  
+- `WebOperationContext.CreateStreamResponse`  
   
--   `WebOperationContext.CreateTextResponse`  
+- `WebOperationContext.CreateTextResponse`  
   
--   `WebOperationContext.CreateXmlResponse`  
+- `WebOperationContext.CreateXmlResponse`  
   
  Each of these methods takes content and creates a message with the appropriate format. The `WebOperationContext.Current.IncomingRequest.GetAcceptHeaderElements` method can be used to get a list of formats preferred by the client in order of decreasing preference. The following example shows how to use `WebOperationContext.Current.IncomingRequest.GetAcceptHeaderElements` to determine the format to use and then uses the appropriate create response method to create the response message.  
   
@@ -158,6 +158,7 @@ public class Service : IService
 ```  
   
 ## See also
+
 - <xref:System.UriTemplate>
 - <xref:System.UriTemplateMatch>
 - [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

@@ -31,7 +31,7 @@ HRESULT ExportTypeForwarder(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkAssemblyRef`  
  Reference to the assembly to which the type forwarder refers.  
   
@@ -51,6 +51,7 @@ HRESULT ExportTypeForwarder(
  Requires alink.h  
   
 ## See also
+
 - [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

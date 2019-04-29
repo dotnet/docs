@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "events, subscribing to"
   - "listening for events"
 ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Subscribe to UI Automation Events
 > [!NOTE]
@@ -32,6 +30,7 @@ ms.author: "mhopkins"
  [!code-vb[UIAClient_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#102)]  
   
 ## See also
+
 - <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>

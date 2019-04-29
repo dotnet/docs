@@ -13,11 +13,11 @@ Vendors of assemblies can state that applications should use a newer version of 
   
  There are three steps involved in creating a publisher policy:  
   
-1.  Create a publisher policy file.  
+1. Create a publisher policy file.  
   
-2.  Create a publisher policy assembly.  
+2. Create a publisher policy assembly.  
   
-3.  Add the publisher policy assembly to the global assembly cache.  
+3. Add the publisher policy assembly to the global assembly cache.  
   
  The schema for publisher policy is described in [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md). The following example shows a publisher policy file that redirects one version of `myAssembly` to another.  
   
@@ -45,21 +45,21 @@ Vendors of assemblies can state that applications should use a newer version of 
   
 #### To create a publisher policy assembly  
   
-1.  Type the following command at the command prompt:  
+1. Type the following command at the command prompt:  
   
      **al /link:** *publisherPolicyFile* **/out:** *publisherPolicyAssemblyFile* **/keyfile:** *keyPairFile* **/platform:** *processorArchitecture*  
   
      In this command:  
   
-    -   The *publisherPolicyFile* argument is the name of the publisher policy file.  
+    - The *publisherPolicyFile* argument is the name of the publisher policy file.  
   
-    -   The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:  
+    - The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:  
   
          **policy.** *majorNumber* **.** *minorNumber* **.** *mainAssemblyName* **.dll**  
   
-    -   The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.  
+    - The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.  
   
-    -   The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.  
+    - The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.  
   
         > [!NOTE]
         >  The ability to target a specific processor architecture is new in the .NET Framework version 2.0.  
@@ -81,7 +81,7 @@ Vendors of assemblies can state that applications should use a newer version of 
   
 #### To add the publisher policy assembly to the global assembly cache  
   
-1.  Type the following command at the command prompt:  
+1. Type the following command at the command prompt:  
   
      **gacutil /i**  *publisherPolicyAssemblyFile*  
   
@@ -95,10 +95,10 @@ Vendors of assemblies can state that applications should use a newer version of 
     >  The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.  
   
 ## See also
+
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Configuring Apps](../../../docs/framework/configure-apps/index.md)
-- [Configuring .NET Framework Apps](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+- [Configuring Apps by using Configuration Files](../../../docs/framework/configure-apps/index.md)
 - [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

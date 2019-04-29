@@ -16,15 +16,16 @@ ms.assetid: 5f445633-529c-4091-8a2c-13035ac8c41b
 The topics in this section describe how to use <xref:System.Windows.Media.Drawing> objects to draw shapes, images, or text.  
   
 ## In This Section  
- [Apply a GuidelineSet to a Drawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-apply-a-guidelineset-to-a-drawing.md)  
-  [Create a Composite Drawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-drawing.md)  
-  [Create a GeometryDrawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-geometrydrawing.md)  
-  [Draw an Image Using ImageDrawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-draw-an-image-using-imagedrawing.md)  
-  [Play Media using a VideoDrawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-play-media-using-a-videodrawing.md)  
-  [Use a Drawing as an Image Source](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-drawing-as-an-image-source.md)  
+ [Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md)  
+  [Create a Composite Drawing](how-to-create-a-composite-drawing.md)  
+  [Create a GeometryDrawing](how-to-create-a-geometrydrawing.md)  
+  [Draw an Image Using ImageDrawing](how-to-draw-an-image-using-imagedrawing.md)  
+  [Play Media using a VideoDrawing](how-to-play-media-using-a-videodrawing.md)  
+  [Use a Drawing as an Image Source](how-to-use-a-drawing-as-an-image-source.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Drawing>
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)
+- [Graphics and Multimedia](index.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;wsFederationHttpBinding&gt;"
+title: "<security> of <wsFederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
 ---
-# &lt;security&gt; of &lt;wsFederationHttpBinding&gt;
+# \<security> of \<wsFederationHttpBinding>
 Defines the security settings of the [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
  \<system.ServiceModel>  
@@ -102,6 +102,7 @@ Defines the security settings of the [\<wsFederationHttpBinding>](../../../../..
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
 ## See also
+
 - <xref:System.ServiceModel.WSFederationHttpSecurity>
 - <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>

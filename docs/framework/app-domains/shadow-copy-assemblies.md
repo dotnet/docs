@@ -24,21 +24,21 @@ Shadow copying enables assemblies that are used in an application domain to be u
   
  This article contains the following sections:  
   
--   [Enabling and Using Shadow Copying](#EnablingAndUsing) describes the basic use and the options that are available for shadow copying.  
+- [Enabling and Using Shadow Copying](#EnablingAndUsing) describes the basic use and the options that are available for shadow copying.  
   
--   [Startup Performance](#StartupPerformance) describes the changes that are made to shadow copying in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] to improve startup performance, and how to revert to the behavior of earlier versions.  
+- [Startup Performance](#StartupPerformance) describes the changes that are made to shadow copying in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] to improve startup performance, and how to revert to the behavior of earlier versions.  
   
--   [Obsolete Methods](#ObsoleteMethods) describes the changes that were made to the properties and methods that control shadow copying in the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)].  
+- [Obsolete Methods](#ObsoleteMethods) describes the changes that were made to the properties and methods that control shadow copying in the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)].  
   
 <a name="EnablingAndUsing"></a>   
 ## Enabling and Using Shadow Copying  
  You can use the properties of the <xref:System.AppDomainSetup> class as follows to configure an application domain for shadow copying:  
   
--   Enable shadow copying by setting the <xref:System.AppDomainSetup.ShadowCopyFiles%2A> property to the string value `"true"`.  
+- Enable shadow copying by setting the <xref:System.AppDomainSetup.ShadowCopyFiles%2A> property to the string value `"true"`.  
   
      By default, this setting causes all assemblies in the application path to be copied to a download cache before they are loaded. This is the same cache maintained by the common language runtime to store files downloaded from other computers, and the common language runtime automatically deletes the files when they are no longer needed.  
   
--   Optionally set a custom location for shadow copied files by using the <xref:System.AppDomainSetup.CachePath%2A> property and the <xref:System.AppDomainSetup.ApplicationName%2A> property.  
+- Optionally set a custom location for shadow copied files by using the <xref:System.AppDomainSetup.CachePath%2A> property and the <xref:System.AppDomainSetup.ApplicationName%2A> property.  
   
      The base path for the location is formed by concatenating the <xref:System.AppDomainSetup.ApplicationName%2A> property to the <xref:System.AppDomainSetup.CachePath%2A> property as a subdirectory. Assemblies are shadow copied to subdirectories of this path, not to the base path itself.  
   
@@ -49,7 +49,7 @@ Shadow copying enables assemblies that are used in an application domain to be u
   
      There are a few reasons why you might want to set a custom location for shadow copied files. You might want to set a custom location for shadow copied files if your application generates a large number of copies. The download cache is limited by size, not by lifetime, so it is possible that the common language runtime will attempt to delete a file that is still in use. Another reason to set a custom location is when users running your application do not have write access to the directory location the common language runtime uses for the download cache.  
   
--   Optionally limit the assemblies that are shadow copied by using the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property.  
+- Optionally limit the assemblies that are shadow copied by using the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property.  
   
      When you enable shadow copying for an application domain, the default is to copy all assemblies in the application path — that is, in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties. You can limit the copying to selected directories by creating a string that contains only those directories you want to shadow copy, and assigning the string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property. Separate the directories with semicolons. The only assemblies that are shadow copied are the ones in the selected directories.  
   
@@ -72,6 +72,7 @@ Shadow copying enables assemblies that are used in an application domain to be u
  The <xref:System.AppDomain> class has several methods, such as <xref:System.AppDomain.SetShadowCopyFiles%2A> and <xref:System.AppDomain.ClearShadowCopyPath%2A>, that can be used to control shadow copying on an application domain, but these have been marked obsolete in the .NET Framework version 2.0. The recommended way to configure an application domain for shadow copying is to use the properties of the <xref:System.AppDomainSetup> class.  
   
 ## See also
+
 - <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType>

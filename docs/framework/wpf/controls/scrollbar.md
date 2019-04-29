@@ -12,7 +12,7 @@ ms.assetid: 60f27d35-8f7b-4285-89d2-28336a4c073a
 A <xref:System.Windows.Controls.Primitives.ScrollBar> allows you to view content that is outside of the current viewing area by sliding the <xref:System.Windows.Controls.Primitives.Thumb> to make the content visible.  
   
 ## In This Section  
- [Customize the Thumb Size on a ScrollBar](../../../../docs/framework/wpf/controls/how-to-customize-the-thumb-size-on-a-scrollbar.md)  
+ [Customize the Thumb Size on a ScrollBar](how-to-customize-the-thumb-size-on-a-scrollbar.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Primitives.ScrollBar>  

@@ -1,5 +1,5 @@
 ---
-title: "-&gt; Operator - C# Reference"
+title: "-> Operator - C# Reference"
 ms.custom: seodec18
 
 ms.date: 11/26/2018
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "-> operator [C#]"
 ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
 ---
-# -&gt; Operator (C# Reference)
+# -> Operator (C# Reference)
 
 The pointer member access operator `->` combines pointer indirection and member access.
 

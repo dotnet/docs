@@ -15,28 +15,29 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
   
 ### To detect changes in the values of DataGridView cells  
   
--   Write a handler for the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event.  
+- Write a handler for the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event.  
   
-     [!code-csharp[System.Windows.Forms.DataGridViewMisc#130](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#130)]
-     [!code-vb[System.Windows.Forms.DataGridViewMisc#130](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#130)]  
+     [!code-csharp[System.Windows.Forms.DataGridViewMisc#130](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#130)]
+     [!code-vb[System.Windows.Forms.DataGridViewMisc#130](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#130)]  
   
 ### To detect changes in the states of DataGridView cells  
   
--   Write a handler for the <xref:System.Windows.Forms.DataGridView.CellStateChanged> event.  
+- Write a handler for the <xref:System.Windows.Forms.DataGridView.CellStateChanged> event.  
   
-     [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
-     [!code-vb[System.Windows.Forms.DataGridViewMisc#135](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
+     [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
+     [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
   
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  
   
--   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=nameWithType>
-- [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/programming-with-cells-rows-and-columns-in-the-datagrid.md)
-- [Walkthrough: Validating Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)
+- [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](programming-with-cells-rows-and-columns-in-the-datagrid.md)
+- [Walkthrough: Validating Data in the Windows Forms DataGridView Control](walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)

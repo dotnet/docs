@@ -1,9 +1,9 @@
 ---
-title: "&lt;localServiceSettings&gt; element"
+title: "<localServiceSettings> element"
 ms.date: "03/30/2017"
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
 ---
-# &lt;localServiceSettings&gt; element
+# \<localServiceSettings> element
 Specifies the security settings of a local service for this binding.  
   
  \<system.serviceModel>  
@@ -70,17 +70,18 @@ Specifies the security settings of a local service for this binding.
   
  The following attributes of the `localServiceSecuritySettings` element can help mitigate a denial-of-service (DOS) security attack:  
   
--   `maxCachedCookies`: controls the maximum number of time-bounded SecurityContextTokens that are cached by the server after doing SPNEGO or SSL negotiation.  
+- `maxCachedCookies`: controls the maximum number of time-bounded SecurityContextTokens that are cached by the server after doing SPNEGO or SSL negotiation.  
   
--   `issuedCookieLifetime`: controls the lifetime of the SecurityContextTokens that are issued by the server following SPNEGO or SSL negotiation. The server caches the SecurityContextTokens for this period of time.  
+- `issuedCookieLifetime`: controls the lifetime of the SecurityContextTokens that are issued by the server following SPNEGO or SSL negotiation. The server caches the SecurityContextTokens for this period of time.  
   
--   `maxPendingSessions`: controls the maximum number of secure conversations that are established at the server but for which no application messages have been processed. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state for each client, but never using them.  
+- `maxPendingSessions`: controls the maximum number of secure conversations that are established at the server but for which no application messages have been processed. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state for each client, but never using them.  
   
--   `inactivityTimeout`: controls the maximum time that the service keeps a secure conversation alive without ever receiving an application message on it. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state for each client, but never using them.  
+- `inactivityTimeout`: controls the maximum time that the service keeps a secure conversation alive without ever receiving an application message on it. This quota prevents clients from establishing secure conversations at the service, thereby causing the service to maintain state for each client, but never using them.  
   
  In a secure conversation session, note that both `inactivityTimeout` and the `receiveTimeout` attributes on the binding affect session timeout. The shorter of the two determines when timeouts occur.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>
 - <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings%2A>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>

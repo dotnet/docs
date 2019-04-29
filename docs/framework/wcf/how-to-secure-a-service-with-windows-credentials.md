@@ -24,15 +24,15 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 #### To create a WSHttpBinding that uses Windows credentials and message security  
   
-1.  This procedure's code is inserted at the beginning of the `Run` method of the `Test` class in the service code in the Example section.  
+1. This procedure's code is inserted at the beginning of the `Run` method of the `Test` class in the service code in the Example section.  
   
-2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class.  
+2. Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class.  
   
-3.  Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode.Message>.  
+3. Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode.Message>.  
   
-4.  Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType.Windows>.  
+4. Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType.Windows>.  
   
-5.  The code for this procedure is as follows:  
+5. The code for this procedure is as follows:  
   
      [!code-csharp[c_SecureWindowsService#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsservice/cs/secureservice.cs#1)]
      [!code-vb[c_SecureWindowsService#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#1)]  
@@ -42,19 +42,19 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 ##### To use a binding in a service  
   
-1.  Insert this procedure's code after the code from the preceding procedure.  
+1. Insert this procedure's code after the code from the preceding procedure.  
   
-2.  Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using Visual Basic, use the `GetType` operator; when using C#, use the `typeof` keyword.  
+2. Create a <xref:System.Type> variable named `contractType` and assign it the type of the interface (`ICalculator`). When using Visual Basic, use the `GetType` operator; when using C#, use the `typeof` keyword.  
   
-3.  Create a second `Type` variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
+3. Create a second <xref:System.Type> variable named `serviceType` and assign it the type of the implemented contract (`Calculator`).  
   
-4.  Create an instance of the <xref:System.Uri> class named `baseAddress` with the base address of the service. The base address must have a scheme that matches the transport. In this case, the transport scheme is HTTP, and the address includes the special Uniform Resource Identifier (URI) "localhost" and a port number (8036) as well as a base endpoint address ("serviceModelSamples/): `http://localhost:8036/serviceModelSamples/`.  
+4. Create an instance of the <xref:System.Uri> class named `baseAddress` with the base address of the service. The base address must have a scheme that matches the transport. In this case, the transport scheme is HTTP, and the address includes the special Uniform Resource Identifier (URI) "localhost" and a port number (8036) as well as a base endpoint address ("serviceModelSamples/): `http://localhost:8036/serviceModelSamples/`.  
   
-5.  Create an instance of the <xref:System.ServiceModel.ServiceHost> class with the `serviceType` and `baseAddress` variables.  
+5. Create an instance of the <xref:System.ServiceModel.ServiceHost> class with the `serviceType` and `baseAddress` variables.  
   
-6.  Add an endpoint to the service using the `contractType`, binding, and an endpoint name (secureCalculator). A client must concatenate the base address and the endpoint name when initiating a call to the service.  
+6. Add an endpoint to the service using the `contractType`, binding, and an endpoint name (secureCalculator). A client must concatenate the base address and the endpoint name when initiating a call to the service.  
   
-7.  Call the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> method to start the service. The code for this procedure is shown here:  
+7. Call the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> method to start the service. The code for this procedure is shown here:  
   
      [!code-csharp[c_SecureWindowsService#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsservice/cs/secureservice.cs#2)]
      [!code-vb[c_SecureWindowsService#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#2)]  
@@ -68,19 +68,19 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 ##### To use a binding in a client with code  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
+1. Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
   
-2.  This procedure's code is inserted at the beginning of the `Main` method of the client program.  
+2. This procedure's code is inserted at the beginning of the `Main` method of the client program.  
   
-3.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set its security mode to `Message` and its client credential type to `Windows`. The example names the variable `clientBinding`.  
+3. Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set its security mode to `Message` and its client credential type to `Windows`. The example names the variable `clientBinding`.  
   
-4.  Create an instance of the <xref:System.ServiceModel.EndpointAddress> class named `serviceAddress`. Initialize the instance with the base address concatenated with the endpoint name.  
+4. Create an instance of the <xref:System.ServiceModel.EndpointAddress> class named `serviceAddress`. Initialize the instance with the base address concatenated with the endpoint name.  
   
-5.  Create an instance of the generated client class with the `serviceAddress` and the `clientBinding` variables.  
+5. Create an instance of the generated client class with the `serviceAddress` and the `clientBinding` variables.  
   
-6.  Call the <xref:System.ServiceModel.ClientBase%601.Open%2A> method, as shown in the following code.  
+6. Call the <xref:System.ServiceModel.ClientBase%601.Open%2A> method, as shown in the following code.  
   
-7.  Call the service and display the results.  
+7. Call the service and display the results.  
   
      [!code-csharp[c_secureWindowsClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#1)]
      [!code-vb[c_secureWindowsClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#1)]  
@@ -94,15 +94,15 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 #### To enable transfer security on a service in a Windows domain using configuration  
   
-1.  Add a [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element section of the configuration file.  
+1. Add a [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element section of the configuration file.  
   
-2.  Add a <`binding`> element to the <`WSHttpBinding`> element and set the `configurationName` attribute to a value appropriate to your application.  
+2. Add a <`binding`> element to the <`WSHttpBinding`> element and set the `configurationName` attribute to a value appropriate to your application.  
   
-3.  Add a <`security`> element and set the `mode` attribute to Message.  
+3. Add a <`security`> element and set the `mode` attribute to Message.  
   
-4.  Add a <`message`> element and set the `clientCredentialType` attribute to Windows.  
+4. Add a <`message`> element and set the `clientCredentialType` attribute to Windows.  
   
-5.  In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
+5. In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
   
     ```xml  
     <bindings>  
@@ -121,17 +121,17 @@ This topic shows how to enable transport security on a Windows Communication Fou
   
 ##### To use a binding in a client with configuration  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+1. Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
-2.  Replace the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
+2. Replace the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
   
-3.  Procedural code is inserted at the beginning of the `Main` method of the client program.  
+3. Procedural code is inserted at the beginning of the `Main` method of the client program.  
   
-4.  Create an instance of the generated client class passing the name of the binding in the configuration file as an input parameter.  
+4. Create an instance of the generated client class passing the name of the binding in the configuration file as an input parameter.  
   
-5.  Call the <xref:System.ServiceModel.ClientBase%601.Open%2A> method, as shown in the following code.  
+5. Call the <xref:System.ServiceModel.ClientBase%601.Open%2A> method, as shown in the following code.  
   
-6.  Call the service and display the results.  
+6. Call the service and display the results.  
   
      [!code-csharp[c_secureWindowsClient#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#2)]  
   
@@ -142,6 +142,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
  [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]      
   
 ## See also
+
 - <xref:System.ServiceModel.WSHttpBinding>
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)

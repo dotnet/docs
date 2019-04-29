@@ -31,7 +31,7 @@ HRESULT GetNextInstallReferenceItem (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRefItem`  
  [out] The returned `IInstallReferenceItem` pointer.  
   
@@ -49,5 +49,6 @@ HRESULT GetNextInstallReferenceItem (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)
 - [IInstallReferenceEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md)

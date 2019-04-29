@@ -35,7 +35,7 @@ HRESULT LoadStringRCEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lcid`  
  [in] A culture identifier. Pass -1 for `lcid` to use the default culture.  
   
@@ -75,6 +75,7 @@ HRESULT LoadStringRCEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
 - [LoadStringRC Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

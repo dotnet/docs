@@ -1,10 +1,10 @@
 ---
-title: "&lt;tokenReplayCache&gt;"
+title: "<tokenReplayCache>"
 ms.date: "03/30/2017"
 ms.assetid: 1572ab23-6933-41b5-bfb4-0c4548145500
 author: "BrucePerlerMS"
 ---
-# &lt;tokenReplayCache&gt;
+# \<tokenReplayCache>
 Registers a token replay cache with a service or a security token handler collection.  
   
  \<system.identityModel>  
@@ -57,5 +57,6 @@ Registers a token replay cache with a service or a security token handler collec
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Tokens.TokenReplayCache>
 - [\<tokenReplayDetection>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md)

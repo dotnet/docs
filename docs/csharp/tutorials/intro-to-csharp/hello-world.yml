@@ -194,7 +194,7 @@ items:
     end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and
     <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
 
-    > [!Note]
+    > [!NOTE]
     > Watch your punctuation when you test for the text at the end of the string. If the string
     > ends with a period, you must check for a string that ends with a period.
 

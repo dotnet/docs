@@ -1,9 +1,9 @@
 ---
-title: "&lt;iriParsing&gt; Element (Uri Settings)"
+title: "<iriParsing> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
 ---
-# &lt;iriParsing&gt; Element (Uri Settings)
+# \<iriParsing> Element (Uri Settings)
 Specifies if International Resource Identifier (IRI) parsing is applied to a <xref:System.Uri> and whether IRI parsing rules should be applied.  
   
 ## Schema Hierarchy  
@@ -44,13 +44,13 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
   
  To enable support for IRI, the following two changes are required:  
   
-1.  Add the following line to the machine.config file under the .NET Framework 2.0 directory  
+1. Add the following line to the machine.config file under the .NET Framework 2.0 directory  
   
     ```xml  
     <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
     ```  
   
-2.  Specify whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.  
+2. Specify whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file.  
   
  Enabling IRI parsing (iriParsing enabled = `true`) will do normalization and character checking according to the latest IRI rules in RFC 3987. The default value is `false` and will do normalization and character checking according to RFC 2396 and RFC 3986 (for IPv6 literals).  
   
@@ -74,6 +74,7 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 ```  
   
 ## See also
+
 - <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

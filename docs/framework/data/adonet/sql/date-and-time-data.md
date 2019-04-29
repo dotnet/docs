@@ -15,7 +15,7 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  **SQL Server Books Online**  
   
-1.  [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
+1. [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
  The following table describes the new date and time data types.  
@@ -45,13 +45,13 @@ SQL Server 2008 introduces new data types for handling date and time information
 ## Date/Time Data Types and Parameters  
  The following enumerations have been added to <xref:System.Data.SqlDbType> to support the new date and time data types.  
   
--   `SqlDbType.Date`  
+- `SqlDbType.Date`  
   
--   `SqlDbType.Time`  
+- `SqlDbType.Time`  
   
--   `SqlDbType.DateTime2`  
+- `SqlDbType.DateTime2`  
   
--   `SqlDbType.DateTimeOffSet`  
+- `SqlDbType.DateTimeOffSet`  
 
 You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by using one of the preceding <xref:System.Data.SqlDbType> enumerations. 
 
@@ -60,9 +60,9 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 
  You can also specify the type of a <xref:System.Data.SqlClient.SqlParameter> generically by setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> property of a `SqlParameter` object to a particular <xref:System.Data.DbType> enumeration value. The following enumeration values have been added to <xref:System.Data.DbType> to support the `datetime2` and `datetimeoffset` data types:  
   
--   DbType.DateTime2  
+- DbType.DateTime2  
   
--   DbType.DateTimeOffset  
+- DbType.DateTimeOffset  
   
  These new enumerations supplement the `Date`, `Time`, and `DateTime` enumerations, which existed in earlier versions of the .NET Framework.  
   
@@ -213,11 +213,11 @@ command.Parameters.AddWithValue( _
 ## Specifying Date and Time Values as Literals  
  You can specify date and time data types by using a variety of different literal string formats, which SQL Server then evaluates at run time, converting them to internal date/time structures. SQL Server recognizes date and time data that is enclosed in single quotation marks ('). The following examples demonstrate some formats:  
   
--   Alphabetic date formats, such as `'October 15, 2006'`.  
+- Alphabetic date formats, such as `'October 15, 2006'`.  
   
--   Numeric date formats, such as `'10/15/2006'`.  
+- Numeric date formats, such as `'10/15/2006'`.  
   
--   Unseparated string formats, such as `'20061015'`, which would be interpreted as October 15, 2006 if you are using the ISO standard date format.  
+- Unseparated string formats, such as `'20061015'`, which would be interpreted as October 15, 2006 if you are using the ISO standard date format.  
   
 > [!NOTE]
 >  You can find complete documentation for all of the literal string formats and other features of the date and time data types in SQL Server Books Online.  
@@ -234,6 +234,7 @@ command.Parameters.AddWithValue( _
 |[Data Types (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98362)|Describes system data types in SQL Server 2008.|  
   
 ## See also
+
 - [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
 - [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
 - [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)

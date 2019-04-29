@@ -1,9 +1,9 @@
 ---
-title: "&lt;useManagedPresentation&gt;"
+title: "<useManagedPresentation>"
 ms.date: "03/30/2017"
 ms.assetid: 17a0dd77-af54-41db-a9d0-4b17ff42878f
 ---
-# &lt;useManagedPresentation&gt;
+# \<useManagedPresentation>
 A binding element used to communicate with a CardSpace Security Token Service that supports the CardSpace profile of WS-Trust. This element has no attribute and is present as an empty switch.  
   
  \<system.serviceModel>  
@@ -37,6 +37,7 @@ A binding element used to communicate with a CardSpace Security Token Service th
  This element is used by an identity provider to express in its policy the fact that it supports the CardSpace profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that CardSpace profile.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.UseManagedPresentationElement>
 - <xref:System.ServiceModel.Channels.UseManagedPresentationBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

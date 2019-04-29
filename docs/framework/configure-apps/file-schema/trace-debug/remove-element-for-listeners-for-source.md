@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;source&gt;"
+title: "<remove> Element for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/remove"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "<remove> element for <listeners> for <source>"
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
 ---
-# &lt;remove&gt; Element for &lt;listeners&gt; for &lt;source&gt;
+# \<remove> Element for \<listeners> for \<source>
 Removes a listener from the `Listeners` collection for a trace source.  
   
  \<configuration>  
@@ -74,6 +74,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.TraceSource.Listeners%2A>
 - <xref:System.Diagnostics.TraceSource>
 - [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

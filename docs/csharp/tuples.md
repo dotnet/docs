@@ -4,7 +4,7 @@ description: Learn about unnamed and named tuple types in C#
 ms.date: 05/15/2018
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
-# C# tuple types #
+# C# tuple types
 
 C# tuples are types that you define using a lightweight syntax. The advantages
 include a simpler syntax, rules for conversions based on number (referred to as cardinality)
@@ -142,7 +142,7 @@ conditions cause compile-time errors. Instead, the elements without projected na
 do not have semantic names projected for them.  The following examples
 demonstrate these conditions:
 
-[!code-csharp[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
+[!code-csharp-interactive[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
 
 These situations do not cause compiler errors because that would be a breaking change for
 code written with C# 7.0, when tuple field name projections were not available.
@@ -151,31 +151,33 @@ code written with C# 7.0, when tuple field name projections were not available.
 
 Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators work by comparing each member of the left argument to each member of the right argument in order. These comparisons short-circuit. They will stop evaluating members as soon as one pair is not equal. The following code examples use `==`, but the comparison rules all apply to `!=`. The following code example shows an equality comparison for two pairs of integers:
 
-[!code-csharp[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
+[!code-csharp-interactive[TupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#Equality "Testing tuples for equality")]
 
 There are several rules that make tuple equality tests more convenient. Tuple equality performs [lifted conversions](~/_csharplang/spec/conversions.md#lifted-conversion-operators) if one of the tuples is a nullable tuple, as shown in the following code:
 
-
-[!code-csharp[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
+[!code-csharp-interactive[NullableTupleEquality](../../samples/snippets/csharp/tuples/tuples/program.cs#NullableEquality "Comparing Tuples and nullable tuples")]
 
 Tuple equality also performs implicit conversions on each member of both tuples. These include lifted conversions, widening conversions, or other implicit conversions. The following examples show that an integer 2-tuple can be compared to a long 2-tuple because of the implicit conversion from integer to long:
 
-[!code-csharp[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
+[!code-csharp-interactive[SnippetMemberConversions](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberConversions "converting tuples for equality tests")]
 
 The names of the tuple members do not participate in tests for equality. However, if one of the operands is a tuple literal with explicit names, the compiler generates warning CS8383 if those names do not match the names of the other operand.
 In the case where both operands are tuple literals, the warning is on the right operand as shown in the following example:
 
-[!code-csharp[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
+[!code-csharp-interactive[MemberNames](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetMemberNames "Tuple member names do not participate in equality tests")]
 
 Finally, tuples may contain nested tuples. Tuple equality compares the "shape" of each operand through nested tuples as shown in the following example:
 
-[!code-csharp[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
+[!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
+
+It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won' attempt any deconstruction of nested tuples in order to compare them.
 
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
 the same number of elements, where each right-hand side element can be implicitly converted to its corresponding left-hand side element. Other
-conversions are not considered for assignments. Let's look at the kinds
+conversions aren't considered for assignments. It's a compile time error to assign one tuple to another when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to assign them.
+Let's look at the kinds
 of assignments that are allowed between tuple types.
 
 Consider these variables used in the following examples:

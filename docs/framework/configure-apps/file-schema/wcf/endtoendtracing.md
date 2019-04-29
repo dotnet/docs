@@ -1,9 +1,9 @@
 ---
-title: "&lt;endToEndTracing&gt;"
+title: "<endToEndTracing>"
 ms.date: "03/30/2017"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
 ---
-# &lt;endToEndTracing&gt;
+# \<endToEndTracing>
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  
   
  \<system.ServiceModel>  
@@ -43,6 +43,7 @@ A configuration element that allows you to enable and disable different aspects 
 |[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
 - <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>

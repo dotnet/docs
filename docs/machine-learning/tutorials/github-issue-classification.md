@@ -19,6 +19,12 @@ In this tutorial, you learn how to:
 > * Predict with the trained model
 > * Deploy and Predict with a loaded model
 
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+
+This tutorial and related sample are currently using **ML.NET version 1.0.0-preview**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
+
+
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/GitHubIssueClassification) repository.
 
 ## Prerequisites
@@ -183,15 +189,7 @@ public static IEstimator<ITransformer> BuildAndTrainModel(IDataView trainingData
 }
 ```
 
-Add the following code as the first line of the `BuildAndTrainModel` method:
-
-### Add a machine learning algorithm
-
 ### About the classification task
-
-"Is it A or B?"
-
-![classification machine learning algorithm](./media/sentiment-analysis/classification.png)
 
 Classification is a machine learning task that uses data to **determine** the category, type, or class of an item or row of data and is frequently one of the following types:
 
@@ -200,7 +198,7 @@ Classification is a machine learning task that uses data to **determine** the ca
 
 For this type of problem, use a Multiclass classification learning algorithm, since your issue category prediction can be one of multiple categories (multiclass) rather than just two (binary).
 
-Append the machine learning algorithm to the data transformation definitions by adding the following as the next line of code in `BuildAndTrainModel()`:
+Append the machine learning algorithm to the data transformation definitions by adding the following as the first line of code in `BuildAndTrainModel()`:
 
 [!code-csharp[AddTrainer](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddTrainer)]
 

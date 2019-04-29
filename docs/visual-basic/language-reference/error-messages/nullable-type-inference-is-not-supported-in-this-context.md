@@ -28,7 +28,7 @@ Dim b As Integer?
   
 ## To correct this error  
   
--   Use an `As` clause to declare the variable as nullable.  
+- Use an `As` clause to declare the variable as nullable.  
   
 ## See also
 

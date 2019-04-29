@@ -38,9 +38,9 @@ HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);
   
  This method must succeed. If it fails, the target platform is unusable. The method may fail for the following reasons:  
   
--   The platform that is being emulated for the target is unusable.  
+- The platform that is being emulated for the target is unusable.  
   
--   The actual hardware on the target platform is unusable.  
+- The actual hardware on the target platform is unusable.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

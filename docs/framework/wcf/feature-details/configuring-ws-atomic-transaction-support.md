@@ -100,17 +100,17 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
   
 4. In the **Value data** input box, enter one of the following valid values to specify the trace level you want to enable.  
   
--   0: off  
+- 0: off  
   
--   1: critical  
+- 1: critical  
   
--   3: error. This is the default value  
+- 3: error. This is the default value  
   
--   7: warning  
+- 7: warning  
   
--   15: information  
+- 15: information  
   
--   31: verbose  
+- 31: verbose  
   
 ## See also
 

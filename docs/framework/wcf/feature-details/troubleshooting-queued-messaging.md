@@ -23,11 +23,11 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** The following features are available in MSMQ 4.0 but not in MSMQ 3.0:  
   
--   Custom dead-letter queue is supported only on MSMQ 4.0.  
+- Custom dead-letter queue is supported only on MSMQ 4.0.  
   
--   MSMQ 3.0 and 4.0 handle poison messages differently.  
+- MSMQ 3.0 and 4.0 handle poison messages differently.  
   
--   Only MSMQ 4.0 supports remote transacted read.  
+- Only MSMQ 4.0 supports remote transacted read.  
   
  For more information, see [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md).  
   
@@ -54,19 +54,19 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** To determine the answer, work through the following check list:  
   
--   Check that the transactional queue requirements are compatible with the assurances specified. Note the following principles:  
+- Check that the transactional queue requirements are compatible with the assurances specified. Note the following principles:  
   
-    -   You can send durable messages (datagrams and sessions) with "exactly once" assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `true`) only to a transactional queue.  
+    - You can send durable messages (datagrams and sessions) with "exactly once" assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `true`) only to a transactional queue.  
   
-    -   You can send sessions only with "exactly once" assurances.  
+    - You can send sessions only with "exactly once" assurances.  
   
-    -   A transaction is required to receive messages in a session from a transactional queue.  
+    - A transaction is required to receive messages in a session from a transactional queue.  
   
-    -   You can send or receive volatile or durable messages (datagrams only) with no assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`) only to a non-transactional queue.  
+    - You can send or receive volatile or durable messages (datagrams only) with no assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`) only to a non-transactional queue.  
   
--   Check the dead-letter queue. If you find the messages there, determine why they were not delivered.  
+- Check the dead-letter queue. If you find the messages there, determine why they were not delivered.  
   
--   Check the outgoing queues for connectivity or addressing problems.  
+- Check the outgoing queues for connectivity or addressing problems.  
   
  **Q:** I have specified a custom dead-letter queue, but when I start the sender application, I get an exception that either the dead-letter queue is not found, or the sending application has no permission to the dead-letter queue. Why is this happening?  
   
@@ -178,17 +178,17 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **A:** There are three possible reasons for this:  
   
--   If you are in domain mode, remote transacted receive requires Microsoft Distributed Transaction Coordinator (MSDTC) network access. You can enable this using **Add/Remove Components**.  
+- If you are in domain mode, remote transacted receive requires Microsoft Distributed Transaction Coordinator (MSDTC) network access. You can enable this using **Add/Remove Components**.  
   
      ![Screenshot that shows enabling network DTC access.](./media/troubleshooting-queued-messaging/enable-distributed-transaction-coordinator-access.jpg)  
   
--   Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.  
+- Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.  
   
      ![Enabling XA transactions](../../../../docs/framework/wcf/feature-details/media/4f3695e0-fb0b-4c5b-afac-75f8860d2bb0.jpg "4f3695e0-fb0b-4c5b-afac-75f8860d2bb0")  
   
--   Make sure that MSDTC is in the list of exceptions in the **Internet Connection Firewall** settings.  
+- Make sure that MSDTC is in the list of exceptions in the **Internet Connection Firewall** settings.  
   
--   Ensure that you are using [!INCLUDE[wv](../../../../includes/wv-md.md)]. MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transacted read. MSMQ on earlier Windows releases does not support remote transacted read.  
+- Ensure that you are using [!INCLUDE[wv](../../../../includes/wv-md.md)]. MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transacted read. MSMQ on earlier Windows releases does not support remote transacted read.  
   
  **Q:** When the service reading from the queue is a network service, for example, in a Web host, why do I get an access-denied exception is raised when reading from the queue?  
   

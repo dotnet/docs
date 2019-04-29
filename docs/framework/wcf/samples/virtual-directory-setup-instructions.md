@@ -53,9 +53,9 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 7. By default, the following check boxes are selected:  
   
-    -   **Read**  
+    - **Read**  
   
-    -   **Run scripts (such as ASP)**  
+    - **Run scripts (such as ASP)**  
   
 8. Click **Next**, and then click **Finish** to complete the wizard.  
   
@@ -78,11 +78,11 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
 2. By default, the following check boxes are selected:  
   
-    -   **Read**  
+    - **Read**  
   
-    -   **Log visits**  
+    - **Log visits**  
   
-    -   **Index this resource**  
+    - **Index this resource**  
   
 3. Select the **Directory browsing** check box. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.  
   
@@ -124,21 +124,21 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
      If it is not listed:  
   
-    1.  Click **Start** and then click **Control Panel**.  
+    1. Click **Start** and then click **Control Panel**.  
   
-    2.  If you do not see the **User Accounts** icon, click **Switch to Category View**.  
+    2. If you do not see the **User Accounts** icon, click **Switch to Category View**.  
   
-    3.  Click the **User Accounts** icon.  
+    3. Click the **User Accounts** icon.  
   
-    4.  Under "or pick a Control Panel icon," click **User Accounts**.  
+    4. Under "or pick a Control Panel icon," click **User Accounts**.  
   
-    5.  In the **User Accounts** dialog box, click the **Advanced** tab.  
+    5. In the **User Accounts** dialog box, click the **Advanced** tab.  
   
-    6.  Click **Advanced**.  
+    6. Click **Advanced**.  
   
-    7.  In the **Local Users and Groups** dialog box, click to expand the **Users** folder.  
+    7. In the **Local Users and Groups** dialog box, click to expand the **Users** folder.  
   
-    8.  In the right pane, double-click **Internet Guest Account**.  
+    8. In the right pane, double-click **Internet Guest Account**.  
   
     9. In the **Properties** dialog box, copy the name used as the Internet guest account. By default, the name begins with "USR_" followed by the name of the computer.  
   
@@ -160,17 +160,17 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
      If NETWORK SERVICE is not listed:  
   
-    1.  Click **Add**.  
+    1. Click **Add**.  
   
-    2.  In the **Select Users or Groups** dialog box, type the name of the computer followed by a backslash.  
+    2. In the **Select Users or Groups** dialog box, type the name of the computer followed by a backslash.  
   
-    3.  Type **service** after the backslash (no space).  
+    3. Type **service** after the backslash (no space).  
   
-    4.  Click **Check names**.  
+    4. Click **Check names**.  
   
-    5.  If multiple names are found, select **NETWORK SERVICE** and click **OK**.  
+    5. If multiple names are found, select **NETWORK SERVICE** and click **OK**.  
   
-    6.  Click **OK** to close the **Select Users or Groups** dialog box.  
+    6. Click **OK** to close the **Select Users or Groups** dialog box.  
   
 6. If you are using Windows XP SP2 with IIS 5.1, check that both Internet Guest Account and ASPNET are listed in the **Group or user names** box.  
   
@@ -178,11 +178,11 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
      To check if ASPNET is part of the **Users** security group:  
   
-    1.  On the **Start** menu, click **Control Panel**.  
+    1. On the **Start** menu, click **Control Panel**.  
   
-    2.  Click the **User Accounts** icon.  
+    2. Click the **User Accounts** icon.  
   
-    3.  In the **Group** column, check that the value for **ASPNET** is "Users."  
+    3. In the **Group** column, check that the value for **ASPNET** is "Users."  
   
 ## See also
 

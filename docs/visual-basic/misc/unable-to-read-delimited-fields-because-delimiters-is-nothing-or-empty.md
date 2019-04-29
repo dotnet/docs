@@ -10,7 +10,7 @@ The `TextFieldParser` is unable to read from the file because the `Delimiters` p
   
 ## To correct this error  
   
--   Supply a valid value for `Delimiters`.  
+- Supply a valid value for `Delimiters`.  
   
 ## See also
 

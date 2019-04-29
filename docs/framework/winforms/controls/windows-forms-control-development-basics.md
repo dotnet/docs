@@ -10,15 +10,15 @@ ms.assetid: 6277bb81-90f7-4c5b-9f4b-b02bb42dd316
 # Windows Forms Control Development Basics
 A Windows Forms control is a class that derives directly or indirectly from <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. The following list describes common scenarios for developing Windows Forms controls:  
   
--   Combining existing controls to author a composite control.  
+- Combining existing controls to author a composite control.  
   
      Composite controls encapsulate a user interface that can be reused as a control. An example of a composite control is a control that consists of a text box and a reset button. Visual designers offer rich support for creating composite controls. To author a composite control, derive from <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>. The base class <xref:System.Windows.Forms.UserControl> provides keyboard routing for child controls and enables child controls to work as a group. For more information, see [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md).  
   
--   Extending an existing control to customize it or to add to its functionality.  
+- Extending an existing control to customize it or to add to its functionality.  
   
      A button whose color cannot be changed and a button that has an additional property that tracks how many times it has been clicked are examples of extended controls. You can customize any Windows Forms control by deriving from it and overriding or adding properties, methods, and events.  
   
--   Authoring a control that does not combine or extend existing controls.  
+- Authoring a control that does not combine or extend existing controls.  
   
      In this scenario, derive your control from the base class <xref:System.Windows.Forms.Control>. You can add as well as override properties, methods, and events of the base class. To get started, see [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md).  
   

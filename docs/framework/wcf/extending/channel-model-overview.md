@@ -22,27 +22,27 @@ The Windows Communication Foundation (WCF) channel stack is a layered communicat
 ## Channel Shapes  
  Each channel implements one or more interfaces known as channel shape interfaces or channel shapes. Those channel shapes provide the communication-oriented methods such as send and receive or request and reply that the channel implements and the user of the channel calls. At the base of the channel shapes is the <xref:System.ServiceModel.Channels.IChannel> interface, which is an interface that provides a `GetProperty`\<T> method intended as a layered mechanism to access arbitrary features exposed by channels in the stack. The five channel shapes that extend <xref:System.ServiceModel.Channels.IChannel> are:  
   
--   <xref:System.ServiceModel.Channels.IInputChannel>  
+- <xref:System.ServiceModel.Channels.IInputChannel>  
   
--   <xref:System.ServiceModel.Channels.IOutputChannel>  
+- <xref:System.ServiceModel.Channels.IOutputChannel>  
   
--   <xref:System.ServiceModel.Channels.IRequestChannel>  
+- <xref:System.ServiceModel.Channels.IRequestChannel>  
   
--   <xref:System.ServiceModel.Channels.IReplyChannel>  
+- <xref:System.ServiceModel.Channels.IReplyChannel>  
   
--   <xref:System.ServiceModel.Channels.IDuplexChannel>  
+- <xref:System.ServiceModel.Channels.IDuplexChannel>  
   
  Further, each of these shapes has an equivalent that extends <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> to support sessions. These are:  
   
--   <xref:System.ServiceModel.Channels.IInputSessionChannel>  
+- <xref:System.ServiceModel.Channels.IInputSessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IOutputSessionChannel>  
+- <xref:System.ServiceModel.Channels.IOutputSessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IRequestSessionChannel>  
+- <xref:System.ServiceModel.Channels.IRequestSessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IReplySessionChannel>  
+- <xref:System.ServiceModel.Channels.IReplySessionChannel>  
   
--   <xref:System.ServiceModel.Channels.IDuplexSessionChannel>  
+- <xref:System.ServiceModel.Channels.IDuplexSessionChannel>  
   
  The channel shapes are patterned after some of the fundamental message exchange patterns supported by existing transport protocols. For example, one-way messaging corresponds to an <xref:System.ServiceModel.Channels.IInputChannel>/<xref:System.ServiceModel.Channels.IOutputChannel> pair, request-reply corresponds to <xref:System.ServiceModel.Channels.IRequestChannel>/<xref:System.ServiceModel.Channels.IReplyChannel> pairs and two-way duplex communications corresponds to <xref:System.ServiceModel.Channels.IDuplexChannel> (which extends both <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel>).  
   

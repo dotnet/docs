@@ -60,11 +60,11 @@ This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../incl
 ## Lifetime Events Application Model Elements  
  Building on the common lifetime events for elements are the following application model elements: <xref:System.Windows.Application>, <xref:System.Windows.Window>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>. These extend the common lifetime events with additional events that are relevant to their specific purpose. These are discussed in detail in the following locations:  
   
--   <xref:System.Windows.Application>: [Application Management Overview](../app-development/application-management-overview.md).  
+- <xref:System.Windows.Application>: [Application Management Overview](../app-development/application-management-overview.md).  
   
--   <xref:System.Windows.Window>: [WPF Windows Overview](../app-development/wpf-windows-overview.md).  
+- <xref:System.Windows.Window>: [WPF Windows Overview](../app-development/wpf-windows-overview.md).  
   
--   <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>: [Navigation Overview](../app-development/navigation-overview.md).  
+- <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>: [Navigation Overview](../app-development/navigation-overview.md).  
   
 ## See also
 

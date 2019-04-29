@@ -77,12 +77,12 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ## Feed Customization Considerations  
  You should consider the following when defining custom feed mappings.  
   
--   The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
+- The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
   
 ## Versioning Requirements  
  Feed customization has the following [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol versioning requirements:  
   
--   Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
+- Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   

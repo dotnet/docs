@@ -23,7 +23,7 @@ Dim numbers() As Integer = {1, 2, 3, 4, 5}
   
 ## To correct this error  
   
--   Assign the expression to a member name, as shown in the following code:  
+- Assign the expression to a member name, as shown in the following code:  
   
     ```  
     Dim instanceName2 = New With {.number = numbers(3)}  

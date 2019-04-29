@@ -8,7 +8,7 @@ Async methods can have the following return types:
 
 - <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value. 
  
--  <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
+- <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
 
 - `void`, for an event handler. 
 

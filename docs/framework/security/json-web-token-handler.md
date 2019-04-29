@@ -11,13 +11,13 @@ The JSON Web Token Handler extension for Windows Identity Foundation enables you
 ## Scenarios  
  The JWT Token Handler enables the following key scenarios:  
   
--   **Validate a JWT Token in a Server Application**: In this scenario, a company named Litware has a server application that uses WIF to handle web sign-on requests. Litware wants to enable their application to use JWT tokens for authentication. The application is updated with the JWT Token Handler, and then the application configuration is updated to add the JWT Token Handler in the WIF pipeline. After the updates have been made and a new request enters the WIF pipeline, the JWT token is validated using the new handler and successful authentication occurs.  
+- **Validate a JWT Token in a Server Application**: In this scenario, a company named Litware has a server application that uses WIF to handle web sign-on requests. Litware wants to enable their application to use JWT tokens for authentication. The application is updated with the JWT Token Handler, and then the application configuration is updated to add the JWT Token Handler in the WIF pipeline. After the updates have been made and a new request enters the WIF pipeline, the JWT token is validated using the new handler and successful authentication occurs.  
   
--   **Validate a JWT Token in a REST Web Service**: In this scenario, a company named Litware has a REST web service that is secured by Windows Azure Active Directory. Requests to the web service must be authenticated by Windows Azure AD, which issues a JWT token upon successful authentication. Litware has a client application that needs to access the web service. The client makes a request to the web service and presents its JWT token from Windows Azure AD, which is then validated by the web service using the JWT Token Handler. After the JWT Token Handler has validated the token, the desired resource is returned to the client by the web service.  
+- **Validate a JWT Token in a REST Web Service**: In this scenario, a company named Litware has a REST web service that is secured by Windows Azure Active Directory. Requests to the web service must be authenticated by Windows Azure AD, which issues a JWT token upon successful authentication. Litware has a client application that needs to access the web service. The client makes a request to the web service and presents its JWT token from Windows Azure AD, which is then validated by the web service using the JWT Token Handler. After the JWT Token Handler has validated the token, the desired resource is returned to the client by the web service.  
   
 ## Features  
  The JWT Token Handler offers the following features:  
   
--   **Validate a JWT Token**: JWT tokens can be easily validated by the token handler’s validation logic, either as a part of the application’s WIF pipeline or called independently of WIF  
+- **Validate a JWT Token**: JWT tokens can be easily validated by the token handler’s validation logic, either as a part of the application’s WIF pipeline or called independently of WIF  
   
--   **Create a JWT Token**: The JWT Token Handler can be used to create JWT tokens for authorization in downstream services
+- **Create a JWT Token**: The JWT Token Handler can be used to create JWT tokens for authorization in downstream services

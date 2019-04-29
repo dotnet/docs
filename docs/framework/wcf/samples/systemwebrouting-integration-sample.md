@@ -52,13 +52,13 @@ This sample may already be installed on your computer. Check for the following (
   
 3. Create a Web application in Internet Information Services (IIS) Manager.  
   
-    1.  In IIS Manager, right click the **Default Web Site** and select **Add an Application**.  
+    1. In IIS Manager, right click the **Default Web Site** and select **Add an Application**.  
   
-    2.  For the **alias**, type in `WebRoutingIntegration`.  
+    2. For the **alias**, type in `WebRoutingIntegration`.  
   
-    3.  For the **Physical Path**, select the Service folder inside the project.  
+    3. For the **Physical Path**, select the Service folder inside the project.  
   
-    4.  Press **OK**.  
+    4. Press **OK**.  
   
 4. Start the application, by right-clicking the Web application and selecting **Manage Application** and then **Browse**.  
   

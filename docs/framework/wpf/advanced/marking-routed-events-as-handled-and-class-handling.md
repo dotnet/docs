@@ -51,9 +51,9 @@ Handlers for a routed event can mark the event handled within the event data. Ha
   
  At a deeper level than the event route, there are also potentially multiple class handlers acting on any given instance of a class. This is because the class handling model for routed events enables all possible classes in a class hierarchy to each register its own class handler for each routed event. Each class handler is added to an internal store, and when the event route for an application is constructed, the class handlers are all added to the event route. Class handlers are added to the route such that the most-derived class handler is invoked first, and class handlers from each successive base class are invoked next. Generally, class handlers are not registered such that they also respond to routed events that were already marked handled. Therefore, this class handling mechanism enables one of two choices:  
   
--   Derived classes can supplement the class handling that is inherited from the base class by adding a handler that does not mark the routed event handled, because the base class handler will be invoked sometime after the derived class handler.  
+- Derived classes can supplement the class handling that is inherited from the base class by adding a handler that does not mark the routed event handled, because the base class handler will be invoked sometime after the derived class handler.  
   
--   Derived classes can replace the class handling from the base class by adding a class handler that marks the routed event handled. You should be cautious with this approach, because it will potentially change the intended base control design in areas such as visual appearance, state logic, input handling, and command handling.  
+- Derived classes can replace the class handling from the base class by adding a class handler that marks the routed event handled. You should be cautious with this approach, because it will potentially change the intended base control design in areas such as visual appearance, state logic, input handling, and command handling.  
   
 <a name="Class_Handling_of_Routed_Events"></a>   
 ## Class Handling of Routed Events by Control Base Classes  

@@ -18,7 +18,7 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
   
 ### To add a tab programmatically  
   
--   Use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
+- Use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
     ```vb  
     Dim myTabPage As New TabPage()  
@@ -41,11 +41,11 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
   
 ### To remove a tab programmatically  
   
--   To remove selected tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Remove%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
+- To remove selected tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Remove%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
      -or-  
   
--   To remove all tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Clear%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
+- To remove all tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Clear%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
     ```vb  
     ' Removes the selected tab:  

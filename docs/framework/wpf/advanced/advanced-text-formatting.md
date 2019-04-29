@@ -49,11 +49,11 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
  To handle the virtualization of the text store, the text store must be derived from <xref:System.Windows.Media.TextFormatting.TextSource>. <xref:System.Windows.Media.TextFormatting.TextSource> defines the method the text formatter uses to retrieve text runs from the text store. <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> is the method used by the text formatter to retrieve text runs used in line formatting. The call to <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> is repeatedly made by the text formatter until one of the following conditions occurs:  
   
--   A <xref:System.Windows.Media.TextFormatting.TextEndOfLine> or a subclass is returned.  
+- A <xref:System.Windows.Media.TextFormatting.TextEndOfLine> or a subclass is returned.  
   
--   The accumulated width of text runs exceeds the maximum line width specified in either the call to create the text formatter or the call to the text formatter's <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method.  
+- The accumulated width of text runs exceeds the maximum line width specified in either the call to create the text formatter or the call to the text formatter's <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method.  
   
--   A [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] newline sequence, such as "CF", "LF", or "CRLF", is returned.  
+- A [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] newline sequence, such as "CF", "LF", or "CRLF", is returned.  
   
 <a name="section4"></a>   
 ## Providing Text Runs  

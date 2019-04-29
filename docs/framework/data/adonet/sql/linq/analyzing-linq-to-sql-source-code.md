@@ -13,9 +13,9 @@ By using the following steps, you can produce [!INCLUDE[vbtecdlinq](../../../../
   
 2. Use the SqlMetal command-line tool to generate a Visual Basic or C# source file. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). By typing the following commands at a command prompt, you can generate Visual Basic and C# source files that include stored procedures and functions:  
   
-    -   `sqlmetal /code:northwind.vb /language:vb "c:\northwnd.mdf" /sprocs /functions /pluralize`  
+    - `sqlmetal /code:northwind.vb /language:vb "c:\northwnd.mdf" /sprocs /functions /pluralize`  
   
-    -   `sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize`  
+    - `sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize`  
   
 ## See also
 

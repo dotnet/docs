@@ -31,11 +31,11 @@ Option Strict { On | Off }
 ## Remarks  
  When `Option Strict On` or `Option Strict` appears in a file, the following conditions cause a compile-time error:  
   
--   Implicit narrowing conversions  
+- Implicit narrowing conversions  
   
--   Late binding  
+- Late binding  
   
--   Implicit typing that results in an `Object` type  
+- Implicit typing that results in an `Object` type  
   
 > [!NOTE]
 >  In the warning configurations that you can set on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), there are three settings that correspond to the three conditions that cause a compile-time error. For information about how to use these settings, see [To set warning configurations in the IDE](../../../visual-basic/language-reference/statements/option-strict-statement.md#conditions) later in this topic.  
@@ -46,11 +46,11 @@ Option Strict { On | Off }
   
  When you set `Option Strict` to `On`, Visual Basic checks that data types are specified for all programming elements. Data types can be specified explicitly, or specified by using local type inference. Specifying data types for all your programming elements is recommended, for the following reasons:  
   
--   It enables IntelliSense support for your variables and parameters. This enables you to see their properties and other members as you type code.  
+- It enables IntelliSense support for your variables and parameters. This enables you to see their properties and other members as you type code.  
   
--   It enables the compiler to perform type checking. Type checking helps you find statements that can fail at run time because of type conversion errors. It also identifies calls to methods on objects that do not support those methods.  
+- It enables the compiler to perform type checking. Type checking helps you find statements that can fail at run time because of type conversion errors. It also identifies calls to methods on objects that do not support those methods.  
   
--   It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
+- It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
 ## Implicit Narrowing Conversion Errors  
  Implicit narrowing conversion errors occur when there is an implicit data type conversion that is a narrowing conversion.  
@@ -59,15 +59,15 @@ Option Strict { On | Off }
   
  Conversions that can cause errors include implicit conversions that occur in expressions. For more information, see the following topics:  
   
--   [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
+- [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
   
--   [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
+- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
   
--   [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
+- [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
   
--   [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
+- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
   
--   [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
+- [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
   
  When you concatenate strings by using the [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md), all conversions to the strings are considered to be widening. So these conversions do not generate an implicit narrowing conversion error, even if `Option Strict` is on.  
   
@@ -110,11 +110,11 @@ Option Strict { On | Off }
 ### <a name="conditions"></a> To set warning configurations in the IDE  
  When you use the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) instead of an `Option Strict` statement, you have additional control over the conditions that generate errors. The **Warning configurations** section of the **Compile Page** has settings that correspond to the three conditions that cause a compile-time error when `Option Strict` is on. Following are these settings:  
   
--   **Implicit conversion**  
+- **Implicit conversion**  
   
--   **Late binding; call could fail at run time**  
+- **Late binding; call could fail at run time**  
   
--   **Implicit type; object assumed**  
+- **Implicit type; object assumed**  
   
  When you set **Option Strict** to **On**, all three of these warning configuration settings are set to **Error**. When you set **Option Strict** to **Off**, all three settings are set to **None**.  
   

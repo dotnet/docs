@@ -10,7 +10,7 @@ When uploading and downloading files with the [My.Computer.Network](xref:Microso
   
 ## To correct this error  
   
--   Supply a `connectionTimeout` that is greater than `0`.  
+- Supply a `connectionTimeout` that is greater than `0`.  
   
 ## See also
 

@@ -25,19 +25,19 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
   
 ## Parts  
   
--   `listField1`, `listField2`  
+- `listField1`, `listField2`  
   
      Optional. One or more fields of the query variable or variables that explicitly identify the fields to be included in the grouped result. If no fields are specified, all fields of the query variable or variables are included in the grouped result.  
   
--   `keyExp1`  
+- `keyExp1`  
   
      Required. An expression that identifies the key to use to determine the groups of elements. You can specify more than one key to specify a composite key.  
   
--   `keyExp2`  
+- `keyExp2`  
   
      Optional. One or more additional keys that are combined with `keyExp1` to create a composite key.  
   
--   `aggregateList`  
+- `aggregateList`  
   
      Required. One or more expressions that identify how the groups are aggregated. To identify a member name for the grouped results, use the `Group` keyword, which can be in either of the following forms:  
   

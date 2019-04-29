@@ -10,7 +10,7 @@ You attempted a late-bound assignment that is not valid.
   
 ## To correct this error  
   
--   Make the assignment early bound.  
+- Make the assignment early bound.  
   
 ## See also
 

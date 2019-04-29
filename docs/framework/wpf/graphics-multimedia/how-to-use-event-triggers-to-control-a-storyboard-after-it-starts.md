@@ -12,17 +12,17 @@ This example shows how to control a <xref:System.Windows.Media.Animation.Storybo
   
  Use the following storyboard actions together with <xref:System.Windows.EventTrigger> objects to control a storyboard.  
   
--   <xref:System.Windows.Media.Animation.PauseStoryboard>: Pauses the storyboard.  
+- <xref:System.Windows.Media.Animation.PauseStoryboard>: Pauses the storyboard.  
   
--   <xref:System.Windows.Media.Animation.ResumeStoryboard>: Resumes a paused storyboard.  
+- <xref:System.Windows.Media.Animation.ResumeStoryboard>: Resumes a paused storyboard.  
   
--   <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>: Changes the storyboard speed.  
+- <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>: Changes the storyboard speed.  
   
--   <xref:System.Windows.Media.Animation.SkipStoryboardToFill>: Advances a storyboard to the end of its fill period, if it has one.  
+- <xref:System.Windows.Media.Animation.SkipStoryboardToFill>: Advances a storyboard to the end of its fill period, if it has one.  
   
--   <xref:System.Windows.Media.Animation.StopStoryboard>: Stops the storyboard.  
+- <xref:System.Windows.Media.Animation.StopStoryboard>: Stops the storyboard.  
   
--   <xref:System.Windows.Media.Animation.RemoveStoryboard>: Removes the storyboard, freeing resources.  
+- <xref:System.Windows.Media.Animation.RemoveStoryboard>: Removes the storyboard, freeing resources.  
   
 ## Example  
  The following example uses controllable storyboard actions to interactively control a storyboard.  

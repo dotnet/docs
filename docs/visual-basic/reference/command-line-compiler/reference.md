@@ -32,9 +32,9 @@ Causes the compiler to make type information in the specified assemblies availab
   
  If you reference an assembly (Assembly A) which itself references another assembly (Assembly B), you need to reference Assembly B if:  
   
--   A type from Assembly A inherits from a type or implements an interface from Assembly B.  
+- A type from Assembly A inherits from a type or implements an interface from Assembly B.  
   
--   A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
+- A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
   
  Use [-libpath](../../../visual-basic/reference/command-line-compiler/libpath.md) to specify the directory in which one or more of your assembly references is located.  
   

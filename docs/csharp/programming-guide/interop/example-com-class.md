@@ -12,13 +12,13 @@ The following is an example of a class that you would expose as a COM object. Af
   
  Exposing Visual C# objects to COM requires declaring a class interface, an events interface if it is required, and the class itself. Class members must follow these rules to be visible to COM:  
   
--   The class must be public.  
+- The class must be public.  
   
--   Properties, methods, and events must be public.  
+- Properties, methods, and events must be public.  
   
--   Properties and methods must be declared on the class interface.  
+- Properties and methods must be declared on the class interface.  
   
--   Events must be declared in the event interface.  
+- Events must be declared in the event interface.  
   
  Other public members in the class that are not declared in these interfaces will not be visible to COM, but they will be visible to other .NET Framework objects.  
   

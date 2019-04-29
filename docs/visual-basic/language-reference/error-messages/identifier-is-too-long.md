@@ -15,7 +15,7 @@ The name, or identifier, of every programming element is limited to 1023 charact
   
 ## To correct this error  
   
--   Reduce the length of the identifier.  
+- Reduce the length of the identifier.  
   
 ## See also
 

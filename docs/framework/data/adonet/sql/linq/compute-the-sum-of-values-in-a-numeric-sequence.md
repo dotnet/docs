@@ -11,9 +11,9 @@ Use the <xref:System.Linq.Enumerable.Sum%2A> operator to compute the sum of nume
   
  Note the following characteristics of the `Sum` operator in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]:  
   
--   The Standard Query Operator aggregate operator `Sum` evaluates to zero for an empty sequence or a sequence that contains only nulls. In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the semantics of SQL are left unchanged. For this reason, `Sum` evaluates to null instead of to zero for an empty sequence or for a sequence that contains only nulls.  
+- The Standard Query Operator aggregate operator `Sum` evaluates to zero for an empty sequence or a sequence that contains only nulls. In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the semantics of SQL are left unchanged. For this reason, `Sum` evaluates to null instead of to zero for an empty sequence or for a sequence that contains only nulls.  
   
--   SQL limitations on intermediate results apply to aggregates in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Sum of 32-bit integer quantities is not computed by using 64-bit results, and overflow can occur for the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of `Sum`. This possibility exists even if the Standard Query Operator implementation does not cause an overflow for the corresponding in-memory sequence.  
+- SQL limitations on intermediate results apply to aggregates in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Sum of 32-bit integer quantities is not computed by using 64-bit results, and overflow can occur for the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of `Sum`. This possibility exists even if the Standard Query Operator implementation does not cause an overflow for the corresponding in-memory sequence.  
   
 ## Example  
  The following example finds the total freight of all orders in the `Order` table.  

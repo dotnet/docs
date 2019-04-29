@@ -34,19 +34,19 @@ End Function
 ## Lambda Expression Syntax  
  The syntax of a lambda expression resembles that of a standard function. The differences are as follows:  
   
--   A lambda expression does not have a name.  
+- A lambda expression does not have a name.  
   
--   Lambda expressions cannot have modifiers, such as `Overloads` or `Overrides`.  
+- Lambda expressions cannot have modifiers, such as `Overloads` or `Overrides`.  
   
--   Lambda expressions do not use an `As` clause to designate the return type of the function. Instead, the type is inferred from the value that the body of a single-line lambda expression evaluates to, or the return value of a multiline lambda expression. For example, if the body of a single-line lambda expression is `Where cust.City = "London"`, its return type is `Boolean`.  
+- Lambda expressions do not use an `As` clause to designate the return type of the function. Instead, the type is inferred from the value that the body of a single-line lambda expression evaluates to, or the return value of a multiline lambda expression. For example, if the body of a single-line lambda expression is `Where cust.City = "London"`, its return type is `Boolean`.  
   
--   The body of a single-line lambda expression must be an expression, not a statement. The body can consist of a call to a function procedure, but not a call to a sub procedure.  
+- The body of a single-line lambda expression must be an expression, not a statement. The body can consist of a call to a function procedure, but not a call to a sub procedure.  
   
--   Either all parameters must have specified data types or all must be inferred.  
+- Either all parameters must have specified data types or all must be inferred.  
   
--   Optional and Paramarray parameters are not permitted.  
+- Optional and Paramarray parameters are not permitted.  
   
--   Generic parameters are not permitted.  
+- Generic parameters are not permitted.  
   
 ## Example  
  The following examples show two ways to create simple lambda expressions. The first uses a `Dim` to provide a name for the function. To call the function, you send in a value for the parameter.  

@@ -8,7 +8,7 @@ The key cannot be deleted because it has subkeys.
   
 ## To correct this error  
   
--   Determine and delete the specified key's subkeys before attempting this operation.  
+- Determine and delete the specified key's subkeys before attempting this operation.  
   
 ## See also
 

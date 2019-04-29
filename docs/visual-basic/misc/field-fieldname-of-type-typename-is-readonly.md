@@ -10,11 +10,11 @@ You attempted to write to a field that is declared `ReadOnly`.
   
 ## To correct this error  
   
--   Change the field so it is no longer declared `ReadOnly`.  
+- Change the field so it is no longer declared `ReadOnly`.  
   
--   —or—  
+- —or—  
   
--   Do not attempt to write to this field.  
+- Do not attempt to write to this field.  
   
 ## See also
 

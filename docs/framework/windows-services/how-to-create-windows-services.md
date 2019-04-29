@@ -15,11 +15,11 @@ When you create a service, you can use a Visual Studio project template called *
   
  At a minimum, to create a functional service you must:  
   
--   Set the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property.  
+- Set the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property.  
   
--   Create the necessary installers for your service application.  
+- Create the necessary installers for your service application.  
   
--   Override and specify code for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> methods to customize the ways in which your service behaves.  
+- Override and specify code for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> methods to customize the ways in which your service behaves.  
   
 ### To create a Windows Service application  
   

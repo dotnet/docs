@@ -106,16 +106,16 @@ When you want to display very large quantities of tabular data in a <xref:System
   
 #### To test the form  
   
--   Compile and run the application.  
+- Compile and run the application.  
   
      You will see a <xref:System.Windows.Forms.DataGridView> control populated with three customer records. You can modify the values of multiple cells in a row and press ESC twice in edit mode and once outside of edit mode to revert the entire row to its original values. When you modify, add, or delete rows in the control, `Customer` objects in the data store are modified, added, or deleted as well.  
   
 ## Next Steps  
  This application gives you a basic understanding of the events you must handle to implement virtual mode in the <xref:System.Windows.Forms.DataGridView> control. You can improve this basic application in a number of ways:  
   
--   Implement a data store that caches values from an external database. The cache should retrieve and discard values as necessary so that it only contains what is necessary for display while consuming a small amount of memory on the client computer.  
+- Implement a data store that caches values from an external database. The cache should retrieve and discard values as necessary so that it only contains what is necessary for display while consuming a small amount of memory on the client computer.  
   
--   Fine-tune the performance of the data store depending on your requirements. For example, you might want to compensate for slow network connections rather than client-computer memory limitations by using a larger cache size and minimizing the number of database queries.  
+- Fine-tune the performance of the data store depending on your requirements. For example, you might want to compensate for slow network connections rather than client-computer memory limitations by using a larger cache size and minimizing the number of database queries.  
   
  For more information about caching values from an external database, see [How to: Implement Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control](virtual-mode-with-just-in-time-data-loading-in-the-datagrid.md).  
   

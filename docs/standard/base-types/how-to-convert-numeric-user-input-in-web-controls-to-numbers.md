@@ -29,9 +29,9 @@ Because a Web page can be displayed anywhere in the world, users can input numer
   
 4. Call either the `TryParse` or the `Parse` method of the numeric type that you want to convert the user's input to. Use an overload of the `TryParse` or the `Parse` method with a `provider` parameter, and pass it either of the following:  
   
-    -   The <xref:System.Globalization.CultureInfo> object created in step 3.  
+    - The <xref:System.Globalization.CultureInfo> object created in step 3.  
   
-    -   The <xref:System.Globalization.NumberFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 3.  
+    - The <xref:System.Globalization.NumberFormatInfo> object that is returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property of the <xref:System.Globalization.CultureInfo> object created in step 3.  
   
 5. If the conversion fails, repeat steps 2 through 4 for each remaining element in the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property.  
   
@@ -54,11 +54,11 @@ Because a Web page can be displayed anywhere in the world, users can input numer
 ## Compiling the Code  
  To compile the code, copy it into an [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] code-behind page so that it replaces all the existing code. The [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Web page should contain the following controls:  
   
--   A <xref:System.Web.UI.WebControls.Label> control, which is not referenced in code. Set its <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to "Enter a Number:".  
+- A <xref:System.Web.UI.WebControls.Label> control, which is not referenced in code. Set its <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to "Enter a Number:".  
   
--   A <xref:System.Web.UI.WebControls.TextBox> control named `NumericString`.  
+- A <xref:System.Web.UI.WebControls.TextBox> control named `NumericString`.  
   
--   A <xref:System.Web.UI.WebControls.Button> control named `OKButton`. Set its <xref:System.Web.UI.WebControls.Button.Text%2A> property to "OK".  
+- A <xref:System.Web.UI.WebControls.Button> control named `OKButton`. Set its <xref:System.Web.UI.WebControls.Button.Text%2A> property to "OK".  
   
  Change the name of the class from `NumericUserInput` to the name of the class that is defined by the `Inherits` attribute of the [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] page's `Page` directive. Change the name of the `NumericInput` object reference to the name defined by the `id` attribute of the [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] page's `form` tag.  
   

@@ -8,7 +8,7 @@ A file operation, such as moving or copying a file, has been attempted without s
   
 ## To correct this error  
   
--   Check that the file path has been supplied and is correct.  
+- Check that the file path has been supplied and is correct.  
   
 ## See also
 

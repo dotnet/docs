@@ -8,11 +8,11 @@ ms.assetid: 0926a3a4-177b-4452-9b33-d8a01e24cc21
 # Bad record length
 Among the possible causes of this error are:  
   
--   The length of a record variable specified in a `FileGet`, `FileGetObject`, `FilePut` or `FilePutObject` statement differs from the length specified in the corresponding `FileOpen` statement.  
+- The length of a record variable specified in a `FileGet`, `FileGetObject`, `FilePut` or `FilePutObject` statement differs from the length specified in the corresponding `FileOpen` statement.  
   
--   The variable in a `FilePut` or `FilePutObject` statement is or includes a variable-length string.  
+- The variable in a `FilePut` or `FilePutObject` statement is or includes a variable-length string.  
   
--   The variable in a `FilePut` or `FilePutObject` is or includes a `Variant` type.  
+- The variable in a `FilePut` or `FilePutObject` is or includes a `Variant` type.  
   
 ## To correct this error  
   

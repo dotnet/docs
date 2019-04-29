@@ -92,11 +92,11 @@ Next [ counter ]
   
  `Exit For` is often used after you evaluate some condition (for example, in an `If`...`Then`...`Else` structure). You might want to use `Exit For` for the following conditions:  
   
--   Continuing to iterate is unnecessary or impossible. An erroneous value or a termination request might create this condition.  
+- Continuing to iterate is unnecessary or impossible. An erroneous value or a termination request might create this condition.  
   
--   A `Try`...`Catch`...`Finally` statement catches an exception. You might use `Exit For` at the end of the `Finally` block.  
+- A `Try`...`Catch`...`Finally` statement catches an exception. You might use `Exit For` at the end of the `Finally` block.  
   
--   You have an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md).  
+- You have an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md).  
   
 ## Technical Implementation  
  When a `For`...`Next` loop starts, Visual Basic evaluates `start`, `end`, and `step`. Visual Basic evaluates these values only at this time and then assigns `start` to `counter`. Before the statement block runs, Visual Basic compares `counter` to `end`. If `counter` is already larger than the `end` value (or smaller if `step` is negative), the `For` loop ends and control passes to the statement that follows the `Next` statement. Otherwise, the statement block runs.  
@@ -131,13 +131,13 @@ Next [ counter ]
   
  The data type of `counter` determines the type of the iteration, which must be one of the following types:  
   
--   A `Byte`, `SByte`, `UShort`, `Short`, `UInteger`, `Integer`, `ULong`, `Long`, `Decimal`, `Single`, or `Double`.  
+- A `Byte`, `SByte`, `UShort`, `Short`, `UInteger`, `Integer`, `ULong`, `Long`, `Decimal`, `Single`, or `Double`.  
   
--   An enumeration that you declare by using an [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md).  
+- An enumeration that you declare by using an [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md).  
   
--   An `Object`.  
+- An `Object`.  
   
--   A type `T` that has the following operators, where `B` is a type that can be used in a `Boolean` expression.  
+- A type `T` that has the following operators, where `B` is a type that can be used in a `Boolean` expression.  
   
      `Public Shared Operator >= (op1 As T, op2 As T) As B`  
   

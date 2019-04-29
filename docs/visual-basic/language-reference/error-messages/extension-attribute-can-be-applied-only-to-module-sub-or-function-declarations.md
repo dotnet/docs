@@ -15,9 +15,9 @@ The only way to extend a data type in Visual Basic is to define an extension met
   
 ## To correct this error  
   
--   Remove the extension attribute.  
+- Remove the extension attribute.  
   
--   Redesign your extension as a method, defined in an enclosing module.  
+- Redesign your extension as a method, defined in an enclosing module.  
   
 ## Example  
  The following example defines a `Print` method for the `String` data type.  

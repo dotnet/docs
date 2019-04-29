@@ -17,11 +17,11 @@ You can customize the appearance of a <xref:System.Windows.Forms.ToolStrip> cont
   
  The `GridStripRenderer` class customizes three aspects of the `GridStrip` control's appearance:  
   
--   `GridStrip` border  
+- `GridStrip` border  
   
--   <xref:System.Windows.Forms.ToolStripButton> border  
+- <xref:System.Windows.Forms.ToolStripButton> border  
   
--   <xref:System.Windows.Forms.ToolStripButton> image  
+- <xref:System.Windows.Forms.ToolStripButton> image  
   
  [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#1)]
  [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#1)]  
@@ -29,7 +29,7 @@ You can customize the appearance of a <xref:System.Windows.Forms.ToolStrip> cont
 ## Compiling the Code  
  This example requires:  
   
--   References to the System.Drawing and System.Windows.Forms assemblies.  
+- References to the System.Drawing and System.Windows.Forms assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   

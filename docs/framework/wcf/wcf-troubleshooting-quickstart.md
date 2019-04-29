@@ -92,15 +92,15 @@ public class MyServiceHost : ServiceHost
 ## My service and client work great, but I can’t get them to work when the client is on another computer? What’s happening?  
  Depending upon the exception, there may be several issues:  
   
--   You might need to change the client endpoint addresses to the host name and not "localhost".  
+- You might need to change the client endpoint addresses to the host name and not "localhost".  
   
--   You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
+- You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
   
--   For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](./samples/running-the-samples.md).  
+- For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](./samples/running-the-samples.md).  
   
--   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
+- If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   
-    1.  Add the identity credentials to the endpoint element in the client’s App.config file:  
+    1. Add the identity credentials to the endpoint element in the client’s App.config file:  
   
         ```xml
         <endpoint   
@@ -116,33 +116,33 @@ public class MyServiceHost : ServiceHost
         </endpoint>  
         ```  
   
-    2.  Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
+    2. Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
   
         ```console
         at 12:36 /interactive "cmd.exe"  
         ```  
   
-    3.  Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
+    3. Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
   
-    4.  Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
+    4. Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
   
  For more information about the Kerberos protocol, see [Security Concepts Used in WCF](../../../docs/framework/wcf/feature-details/security-concepts-used-in-wcf.md) and:  
   
--   [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)  
+- [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)  
   
--   [Registering Kerberos Service Principal Names by Using Http.sys](https://go.microsoft.com/fwlink/?LinkId=86943)  
+- [Registering Kerberos Service Principal Names by Using Http.sys](https://go.microsoft.com/fwlink/?LinkId=86943)  
   
--   [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkId=86946)  
+- [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkId=86946)  
   
 <a name="BKMK_q5"></a>   
 ## When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?  
  It is highly recommended that you create your own custom error data type and declare that as the detail type in your fault contract. The reason is that using system-provided exception types:  
   
--   Creates a type dependency that removes one of the biggest strengths of service-oriented applications.  
+- Creates a type dependency that removes one of the biggest strengths of service-oriented applications.  
   
--   Cannot depend upon exceptions serializing in a standard way. Some—like <xref:System.Security.SecurityException>—may not be serializable at all.  
+- Cannot depend upon exceptions serializing in a standard way. Some—like <xref:System.Security.SecurityException>—may not be serializable at all.  
   
--   Exposes internal implementation details to clients. For more information, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+- Exposes internal implementation details to clients. For more information, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
  If you are debugging an application, however, you can serialize exception information and return it to the client by using the <xref:System.ServiceModel.Description.ServiceDebugBehavior> class.  
   

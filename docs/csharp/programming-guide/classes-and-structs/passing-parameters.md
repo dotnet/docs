@@ -19,9 +19,9 @@ In C#, arguments can be passed to parameters either by value or by reference. Pa
   
  For more information, see the following topics:  
   
--   [Passing Value-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md)  
+- [Passing Value-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md)  
   
--   [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)  
+- [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)  
   
 ## C# Language Specification  
 

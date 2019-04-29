@@ -19,7 +19,7 @@ A procedure is declared with an optional parameter that uses a type parameter th
   
 ## To correct this error  
   
--   Constrain the type parameter to accept only a reference type, or do not use it for the optional parameter.  
+- Constrain the type parameter to accept only a reference type, or do not use it for the optional parameter.  
   
 ## See also
 

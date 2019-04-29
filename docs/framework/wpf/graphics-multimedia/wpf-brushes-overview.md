@@ -125,9 +125,9 @@ A Rectangle painted using a VisualBrush
 ## Paint using Predefined and System Brushes  
  For convenience, Windows Presentation Foundation (WPF) provides a set of predefined and system brushes that you can use to paint objects.  
   
--   For a list of available predefined brushes, see the <xref:System.Windows.Media.Brushes> class. For an example showing how to use a predefined brush, see [Paint an Area with a Solid Color](how-to-paint-an-area-with-a-solid-color.md).  
+- For a list of available predefined brushes, see the <xref:System.Windows.Media.Brushes> class. For an example showing how to use a predefined brush, see [Paint an Area with a Solid Color](how-to-paint-an-area-with-a-solid-color.md).  
   
--   For a list of available system brushes, see the <xref:System.Windows.SystemColors> class. For an example, see [Paint an Area with a System Brush](how-to-paint-an-area-with-a-system-brush.md).  
+- For a list of available system brushes, see the <xref:System.Windows.SystemColors> class. For an example, see [Paint an Area with a System Brush](how-to-paint-an-area-with-a-system-brush.md).  
   
 <a name="commonbrushfeatures"></a>   
 ## Common Brush Features  

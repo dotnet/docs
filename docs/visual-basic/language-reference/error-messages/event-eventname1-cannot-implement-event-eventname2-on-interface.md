@@ -15,11 +15,11 @@ Visual Basic cannot implement an event because the delegate type of the event do
   
 ## To correct this error  
   
--   Implement the events separately.  
+- Implement the events separately.  
   
      —or—  
   
--   Define the events in the interface using the `As` syntax and specify the same delegate type.  
+- Define the events in the interface using the `As` syntax and specify the same delegate type.  
   
 ## See also
 

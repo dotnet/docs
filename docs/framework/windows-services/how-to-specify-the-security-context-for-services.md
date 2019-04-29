@@ -17,13 +17,13 @@ By default, services run in a different security context than that of the logged
   
  You set the security context by manipulating the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property for the process within which the service runs. This property allows you to set the service to one of four account types:  
   
--   `User`, which causes the system to prompt for a valid user name and password when the service is installed and runs in the context of an account specified by a single user on the network;  
+- `User`, which causes the system to prompt for a valid user name and password when the service is installed and runs in the context of an account specified by a single user on the network;  
   
--   `LocalService`, which runs in the context of an account that acts as a non-privileged user on the local computer, and presents anonymous credentials to any remote server;  
+- `LocalService`, which runs in the context of an account that acts as a non-privileged user on the local computer, and presents anonymous credentials to any remote server;  
   
--   `LocalSystem`, which runs in the context of an account that provides extensive local privileges, and presents the computer's credentials to any remote server;  
+- `LocalSystem`, which runs in the context of an account that provides extensive local privileges, and presents the computer's credentials to any remote server;  
   
--   `NetworkService`, which runs in the context of an account that acts as a non-privileged user on the local computer, and presents the computer's credentials to any remote server.  
+- `NetworkService`, which runs in the context of an account that acts as a non-privileged user on the local computer, and presents the computer's credentials to any remote server.  
   
  For more information, see the <xref:System.ServiceProcess.ServiceAccount> enumeration.  
   

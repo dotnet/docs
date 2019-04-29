@@ -18,27 +18,27 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The <xref:System.Windows.Media.Visual> object is a core [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] object, whose primary role is to provide rendering support. User interface controls, such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.TextBox>, derive from the <xref:System.Windows.Media.Visual> class, and use it for persisting their rendering data. The <xref:System.Windows.Media.Visual> object provides support for:  
   
--   Output display: Rendering the persisted, serialized drawing content of a visual.  
+- Output display: Rendering the persisted, serialized drawing content of a visual.  
   
--   Transformations: Performing transformations on a visual.  
+- Transformations: Performing transformations on a visual.  
   
--   Clipping: Providing clipping region support for a visual.  
+- Clipping: Providing clipping region support for a visual.  
   
--   Hit testing: Determining whether a coordinate or geometry is contained within the bounds of a visual.  
+- Hit testing: Determining whether a coordinate or geometry is contained within the bounds of a visual.  
   
--   Bounding box calculations: Determining the bounding rectangle of a visual.  
+- Bounding box calculations: Determining the bounding rectangle of a visual.  
   
  However, the <xref:System.Windows.Media.Visual> object does not include support for non-rendering features, such as:  
   
--   Event handling  
+- Event handling  
   
--   Layout  
+- Layout  
   
--   Styles  
+- Styles  
   
--   Data binding  
+- Data binding  
   
--   Globalization  
+- Globalization  
   
  <xref:System.Windows.Media.Visual> is exposed as a public abstract class from which child classes must be derived. The following illustration shows the hierarchy of the visual objects that are exposed in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
@@ -121,13 +121,13 @@ Order of DrawingGroup operations
   
  There are a number of points to note about the hierarchy of visual objects and vector graphics instruction lists:  
   
--   The ordering in the hierarchy represents the rendering order of the drawing information. From the root visual element, child elements are traversed, left to right, top to bottom. If an element has visual child elements, they are traversed before the element’s siblings.  
+- The ordering in the hierarchy represents the rendering order of the drawing information. From the root visual element, child elements are traversed, left to right, top to bottom. If an element has visual child elements, they are traversed before the element’s siblings.  
   
--   Non-leaf node elements in the hierarchy, such as <xref:System.Windows.Controls.ContentPresenter>, are used to contain child elements—they do not contain instruction lists.  
+- Non-leaf node elements in the hierarchy, such as <xref:System.Windows.Controls.ContentPresenter>, are used to contain child elements—they do not contain instruction lists.  
   
--   If a visual element contains both a vector graphics instruction list and visual children, the instruction list in the parent visual element is rendered before drawings in any of the visual child objects.  
+- If a visual element contains both a vector graphics instruction list and visual children, the instruction list in the parent visual element is rendered before drawings in any of the visual child objects.  
   
--   The items in the vector graphics instruction list are rendered left to right.  
+- The items in the vector graphics instruction list are rendered left to right.  
   
 <a name="visual_tree"></a>   
 ## Visual Tree  

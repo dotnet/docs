@@ -23,7 +23,7 @@ Because this call is not awaited, execution of the current method continues befo
   
 ### To address this warning  
   
--   You should consider suppressing the warning only if you're sure that you don't want to wait for the asynchronous call to complete and that the called method won't raise any exceptions. In that case, you can suppress the warning by assigning the task result of the call to a variable.  
+- You should consider suppressing the warning only if you're sure that you don't want to wait for the asynchronous call to complete and that the called method won't raise any exceptions. In that case, you can suppress the warning by assigning the task result of the call to a variable.  
   
      The following example shows how to cause the warning, how to suppress it, and how to await the call.  
   

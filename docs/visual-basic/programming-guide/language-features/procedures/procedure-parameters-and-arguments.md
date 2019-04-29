@@ -43,11 +43,11 @@ In most cases, a procedure needs some information about the circumstances in whi
   
  If the calling code expects to supply an argument with a data type different from that of its corresponding parameter, such as `Byte` to a `String` parameter, it must do one of the following:  
   
--   Supply only arguments with data types that widen to the parameter data type;  
+- Supply only arguments with data types that widen to the parameter data type;  
   
--   Set `Option Strict Off` to allow implicit narrowing conversions; or  
+- Set `Option Strict Off` to allow implicit narrowing conversions; or  
   
--   Use a conversion keyword to explicitly convert the data type.  
+- Use a conversion keyword to explicitly convert the data type.  
   
 ### Type Parameters  
  A *generic procedure* also defines one or more *type parameters* in addition to its normal parameters. A generic procedure allows the calling code to pass different data types each time it calls the procedure, so it can tailor the data types to the requirements of each individual call. See [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  

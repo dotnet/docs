@@ -18,11 +18,11 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
  Some APIs export two versions of functions that take string arguments: narrow (ANSI) and wide (Unicode). The Windows API, for instance, includes the following entry-point names for the **MessageBox** function:  
   
--   **MessageBoxA**  
+- **MessageBoxA**  
   
      Provides 1-byte character ANSI formatting, distinguished by an "A" appended to the entry-point name. Calls to **MessageBoxA** always marshal strings in ANSI format.  
   
--   **MessageBoxW**  
+- **MessageBoxW**  
   
      Provides 2-byte character Unicode formatting, distinguished by a "W" appended to the entry-point name. Calls to **MessageBoxW** always marshal strings in Unicode format.  
   
@@ -31,11 +31,11 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
  <xref:System.Runtime.InteropServices.CharSet.Ansi> (default value)  
   
--   String marshaling  
+- String marshaling  
   
      Platform invoke marshals strings from their managed format (Unicode) to ANSI format.  
   
--   Name matching  
+- Name matching  
   
      When the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithType> field is `true`, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails when it cannot locate the exact spelling.  
   
@@ -43,11 +43,11 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
  <xref:System.Runtime.InteropServices.CharSet.Unicode>  
   
--   String marshaling  
+- String marshaling  
   
      Platform invoke copies strings from their managed format (Unicode) to Unicode format.  
   
--   Name matching  
+- Name matching  
   
      When the `ExactSpelling` field is `true`, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails if it cannot locate the exact spelling.  
   
@@ -55,7 +55,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
  <xref:System.Runtime.InteropServices.CharSet.Auto>  
   
--   Platform invoke chooses between ANSI and Unicode formats at run time, based on the target platform.  
+- Platform invoke chooses between ANSI and Unicode formats at run time, based on the target platform.  
   
 ## Specifying a Character Set in Visual Basic  
  The following example declares the **MessageBox** function three times, each time with different character-set behavior. You can specify character-set behavior in Visual Basic by adding the **Ansi**, **Unicode**, or **Auto** keyword to the declaration statement.  

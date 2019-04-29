@@ -16,7 +16,7 @@ This example calls the <xref:System.String.IndexOf%2A> method on a <xref:System.
 ## Compiling the Code  
  This example requires:  
   
--   An `Imports` statement specifying the <xref:System> namespace. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
+- An `Imports` statement specifying the <xref:System> namespace. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## Robust Programming  
  The <xref:System.String.IndexOf%2A> method reports the location of the first character of the first occurrence of the substring. The index is 0-based, which means the first character of a string has an index of 0.  

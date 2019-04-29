@@ -14,33 +14,33 @@ This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating the project.  
+- Creating the project.  
   
--   Using default layout settings.  
+- Using default layout settings.  
   
--   Sizing to content.  
+- Sizing to content.  
   
--   Using absolute positioning.  
+- Using absolute positioning.  
   
--   Specifying size explicitly.  
+- Specifying size explicitly.  
   
--   Setting layout properties.  
+- Setting layout properties.  
   
--   Understanding z-order limitations.  
+- Understanding z-order limitations.  
   
--   Docking.  
+- Docking.  
   
--   Setting visibility.  
+- Setting visibility.  
   
--   Hosting a control that does not stretch.  
+- Hosting a control that does not stretch.  
   
--   Scaling.  
+- Scaling.  
   
--   Rotating.  
+- Rotating.  
   
--   Setting padding and margins.  
+- Setting padding and margins.  
   
--   Using dynamic layout containers.  
+- Using dynamic layout containers.  
   
  For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971).  
   
@@ -58,11 +58,11 @@ You need Visual Studio to complete this walkthrough.
   
 2. In Solution Explorer, add references to the following assemblies.  
   
-    -   WindowsFormsIntegration  
+    - WindowsFormsIntegration  
   
-    -   System.Windows.Forms  
+    - System.Windows.Forms  
   
-    -   System.Drawing  
+    - System.Drawing  
   
 3. Double-click MainWindow.xaml to open it in XAML view.  
   

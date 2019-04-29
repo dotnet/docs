@@ -8,13 +8,13 @@ An *entity key* is a [property](../../../../docs/framework/data/adonet/property.
   
  The following are the requirements for a set of properties to be an entity key:  
   
--   No two entity keys within an entity set can be identical. That is, for any two entities within an entity set, the values for all of the properties that constitute a key cannot be the same. However, some (but not all) of the values that make up an entity key can be the same.  
+- No two entity keys within an entity set can be identical. That is, for any two entities within an entity set, the values for all of the properties that constitute a key cannot be the same. However, some (but not all) of the values that make up an entity key can be the same.  
   
--   An entity key must consist of a set of non-nullable, immutable, [primitive type properties](../../../../docs/framework/data/adonet/entity-data-model-primitive-data-types.md).  
+- An entity key must consist of a set of non-nullable, immutable, [primitive type properties](../../../../docs/framework/data/adonet/entity-data-model-primitive-data-types.md).  
   
--   The properties that make up an entity key for a given entity type cannot change. You cannot allow more than one possible entity key for a given entity type; surrogate keys are not supported.  
+- The properties that make up an entity key for a given entity type cannot change. You cannot allow more than one possible entity key for a given entity type; surrogate keys are not supported.  
   
--   When an entity is involved in an inheritance hierarchy, the root entity must contain all the properties that make up the entity key, and the entity key must be defined on the root entity type. For more information, see [Entity Data Model: Inheritance](../../../../docs/framework/data/adonet/entity-data-model-inheritance.md).  
+- When an entity is involved in an inheritance hierarchy, the root entity must contain all the properties that make up the entity key, and the entity key must be defined on the root entity type. For more information, see [Entity Data Model: Inheritance](../../../../docs/framework/data/adonet/entity-data-model-inheritance.md).  
   
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. The properties of each entity type that make up its entity key are denoted with "(Key)". Note that the `Author` entity type has an entity key that consists of two properties, `Name` and `Address`.  

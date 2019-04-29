@@ -35,7 +35,7 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 ### To declare a constant  
   
--   Write a declaration that includes an access specifier, the `Const` keyword, and an expression, as in the following examples:  
+- Write a declaration that includes an access specifier, the `Const` keyword, and an expression, as in the following examples:  
   
      [!code-vb[VbEnumsTask#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#8)]  
   
@@ -45,7 +45,7 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 ### To declare a constant that has an explicitly stated data type  
   
--   Write a declaration that includes the `As` keyword and an explicit data type, as in the following examples:  
+- Write a declaration that includes the `As` keyword and an explicit data type, as in the following examples:  
   
      [!code-vb[VbEnumsTask#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#9)]  
   
@@ -53,7 +53,7 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 ### To declare multiple constants on a single line  
   
--   Separate the declarations with a comma and a space, as in the following example:  
+- Separate the declarations with a comma and a space, as in the following example:  
   
     ```  
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  

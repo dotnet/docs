@@ -14,7 +14,7 @@ ms.author: "mairaw"
 # Pipe Operations in .NET
 Pipes provide a means for interprocess communication. There are two types of pipes:  
   
--   Anonymous pipes.  
+- Anonymous pipes.  
   
      Anonymous pipes provide interprocess communication on a local computer. Anonymous pipes require less overhead than named pipes but offer limited services. Anonymous pipes are one-way and cannot be used over a network. They support only a single server instance. Anonymous pipes are useful for communication between threads, or between parent and child processes where the pipe handles can be easily passed to the child process when it is created.  
   
@@ -22,7 +22,7 @@ Pipes provide a means for interprocess communication. There are two types of pip
   
      See [How to: Use Anonymous Pipes for Local Interprocess Communication](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md).  
   
--   Named pipes.  
+- Named pipes.  
   
      Named pipes provide interprocess communication between a pipe server and one or more pipe clients. Named pipes can be one-way or duplex. They support message-based communication and allow multiple clients to connect simultaneously to the server process using the same pipe name. Named pipes also support impersonation, which enables connecting processes to use their own permissions on remote servers.  
   

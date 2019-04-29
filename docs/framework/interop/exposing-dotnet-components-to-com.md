@@ -12,15 +12,15 @@ ms.author: "ronpet"
 # Exposing .NET Framework Components to COM
 Writing a .NET type and consuming that type from unmanaged code are distinct activities for developers. This section describes several tips for writing managed code that interoperates with COM clients:  
   
--   [Qualifying .NET types for interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md).  
+- [Qualifying .NET types for interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md).  
   
      All managed types, methods, properties, fields, and events that you want to expose to COM must be public. Types must have a public default constructor, which is the only constructor that can be invoked through COM.  
   
--   [Applying interop attributes](../../../docs/framework/interop/applying-interop-attributes.md).  
+- [Applying interop attributes](../../../docs/framework/interop/applying-interop-attributes.md).  
   
      Custom attributes within managed code can enhance the interoperability of a component.  
   
--   [Packaging an assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md).  
+- [Packaging an assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md).  
   
      COM developers might require that you summarize the steps involved in referencing and deploying your assemblies.  
   

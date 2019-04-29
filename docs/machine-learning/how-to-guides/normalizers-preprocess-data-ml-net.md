@@ -1,11 +1,11 @@
 ---
-title: Preprocess training data with normalizers to use in data processing - ML.NET
+title: Preprocess training data with normalizers to use in data processing 
 description: Learn how to use normalizers to preprocess training data for use in machine learning model building, training, and scoring with ML.NET
 ms.date: 03/05/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use normalizers to preprocess training data so that I can optimize it in machine learning model building, training, and scoring with ML.NET.
 ---
-# Preprocess training data with normalizers to use in data processing - ML.NET
+# Preprocess training data with normalizers to use in data processing 
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).

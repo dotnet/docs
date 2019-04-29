@@ -185,7 +185,7 @@ namespace ReceiveRawData
   
 ## Compiling the Code  
   
--   When compiling the code reference System.ServiceModel.dll and System.ServiceModel.Web.dll  
+- When compiling the code reference System.ServiceModel.dll and System.ServiceModel.Web.dll  
   
 ## See also
 

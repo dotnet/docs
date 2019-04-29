@@ -56,13 +56,13 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 ## XAML 2006 and WPF Generic XAML Usages  
  For XAML 2006 usage, and XAML that is used for WPF applications, the following restrictions exist for `x:TypeArguments` and generic type usages from XAML in general:  
   
--   Only the root element of a XAML file can support a generic XAML usage that references a generic type.  
+- Only the root element of a XAML file can support a generic XAML usage that references a generic type.  
   
--   The root element must map to a generic type with at least one type argument. An example is <xref:System.Windows.Navigation.PageFunction%601>. The page functions are the primary scenario for XAML generic usage support in WPF.  
+- The root element must map to a generic type with at least one type argument. An example is <xref:System.Windows.Navigation.PageFunction%601>. The page functions are the primary scenario for XAML generic usage support in WPF.  
   
--   The root element XAML object element for the generic must also declare a partial class using `x:Class`. This is true even if defining a WPF build action.  
+- The root element XAML object element for the generic must also declare a partial class using `x:Class`. This is true even if defining a WPF build action.  
   
--   `x:TypeArguments` cannot reference nested generic constraints.  
+- `x:TypeArguments` cannot reference nested generic constraints.  
   
 ## XAML 2009 or XAML 2006 with No WPF 3.0 or WPF 3.5 Dependency  
  In .NET Framework XAML Services for either XAML 2006 or XAML 2009, the WPF-related restrictions on generic XAML usage are relaxed. You can instantiate a generic object element at any position in XAML markup that the backing type system and object model can support.  

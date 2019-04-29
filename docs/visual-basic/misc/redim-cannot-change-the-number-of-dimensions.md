@@ -10,7 +10,7 @@ An operation attempts to use the `ReDim` statement to change the rank (number of
   
 ## To correct this error  
   
--   Ensure that you intend to change the array's rank and not the sizes of its dimensions, and if possible, use `Dim` to declare a new array with the desired rank.  
+- Ensure that you intend to change the array's rank and not the sizes of its dimensions, and if possible, use `Dim` to declare a new array with the desired rank.  
   
 ## See also
 

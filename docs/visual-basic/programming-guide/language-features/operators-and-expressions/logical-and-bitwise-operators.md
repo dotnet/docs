@@ -66,13 +66,13 @@ Logical operators compare `Boolean` expressions and return a `Boolean` result. T
   
  The preceding example sets the value of `x` to 1. This happens for the following reasons:  
   
--   The values are treated as binary:  
+- The values are treated as binary:  
   
      3 in binary form = 011  
   
      5 in binary form = 101  
   
--   The `And` operator compares the binary representations, one binary position (bit) at a time. If both bits at a given position are 1, then a 1 is placed in that position in the result. If either bit is 0, then a 0 is placed in that position in the result. In the preceding example this works out as follows:  
+- The `And` operator compares the binary representations, one binary position (bit) at a time. If both bits at a given position are 1, then a 1 is placed in that position in the result. If either bit is 0, then a 0 is placed in that position in the result. In the preceding example this works out as follows:  
   
      011 (3 in binary form)  
   
@@ -80,7 +80,7 @@ Logical operators compare `Boolean` expressions and return a `Boolean` result. T
   
      001 (The result, in binary form)  
   
--   The result is treated as decimal. The value 001 is the binary representation of 1, so `x` = 1.  
+- The result is treated as decimal. The value 001 is the binary representation of 1, so `x` = 1.  
   
  The bitwise `Or` operation is similar, except that a 1 is assigned to the result bit if either or both of the compared bits is 1. `Xor` assigns a 1 to the result bit if exactly one of the compared bits (not both) is 1. `Not` takes a single operand and inverts all the bits, including the sign bit, and assigns that value to the result. This means that for signed positive numbers, `Not` always returns a negative value, and for negative numbers, `Not` always returns a positive or zero value.  
   

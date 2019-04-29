@@ -1,11 +1,14 @@
 ---
 title: "Equality operators - C# Reference"
+description: "Learn about C# equality comparison operators."
 ms.date: 03/28/2019
 author: pkulikov
 f1_keywords: 
   - "==_CSharpKeyword"
   - "!=_CSharpKeyword"
 helpviewer_keywords: 
+  - "comparison operators [C#]"
+  - "relational operators [C#]"
   - "equality operator [C#]"
   - "equals operator [C#]"
   - "== operator [C#]"
@@ -28,7 +31,7 @@ Operands of the [built-in value types](../keywords/value-types-table.md) are equ
 [!code-csharp-interactive[value types equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ValueTypesEquality)]
 
 > [!NOTE]
-> For equality and relational operators `==`, `>`, `<`, `>=`, and `<=`, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
+> For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
 Two operands of the same [enum](../keywords/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
@@ -77,3 +80,4 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>
 - <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>
 - [Equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md)
+- [Comparison operators](comparison-operators.md)

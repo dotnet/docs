@@ -8,7 +8,7 @@ An attempt was made to obtain information about a file that is currently open fo
   
 ## To correct this error  
   
--   Close the file and attempt the operation again.  
+- Close the file and attempt the operation again.  
   
 ## See also
 

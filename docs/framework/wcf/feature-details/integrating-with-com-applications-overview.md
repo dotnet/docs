@@ -15,11 +15,11 @@ Windows Communication Foundation (WCF) provides the managed code developer with 
   
  In common with other WCF clients, when using the moniker, applications specify the address, binding and contract to communicate with a service. The contract can be specified in one of the following ways:  
   
--   Typed contract – the contract is registered as a COM visible type on the client machine.  
+- Typed contract – the contract is registered as a COM visible type on the client machine.  
   
--   WSDL contract – the contract is supplied in the form of a WSDL document.  
+- WSDL contract – the contract is supplied in the form of a WSDL document.  
   
--   MEX contract – the contract is retrieved at runtime from a Metadata Exchange (MEX) endpoint.  
+- MEX contract – the contract is retrieved at runtime from a Metadata Exchange (MEX) endpoint.  
   
 ## Parameters Supported by the Service Moniker  
  The following table shows the parameters that are supported by the service moniker.  

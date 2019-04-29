@@ -24,7 +24,7 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
   
 ### To position a control on the design surface of the Windows Forms Designer  
   
--   Drag the control to the appropriate location with the mouse.  
+- Drag the control to the appropriate location with the mouse.  
   
     > [!NOTE]
     >  Select the control and move it with the ARROW keys to position it more precisely. Also, *snaplines* assist you in placing controls precisely on your form. For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).  

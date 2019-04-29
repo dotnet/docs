@@ -8,11 +8,11 @@ This topic discusses how access is restricted on the types of resources that <xr
   
  There are three main levels of trust for <xref:System.Transactions>. The trust levels are defined based on the types of resources that <xref:System.Transactions> exposes, and the level of trust that should be required to access those resources. The resources that <xref:System.Transactions> provides access to are system memory, shared process wide resources, and system wide resources. The levels are:  
   
--   **AllowPartiallyTrustedCallers** (APTCA) for applications using transactions within a single application domain.  
+- **AllowPartiallyTrustedCallers** (APTCA) for applications using transactions within a single application domain.  
   
--   **DistributedTransactionPermission** (DTP) for applications using distributed transactions.  
+- **DistributedTransactionPermission** (DTP) for applications using distributed transactions.  
   
--   Full trust for durable resources, configuration management applications, and legacy interop applications.  
+- Full trust for durable resources, configuration management applications, and legacy interop applications.  
   
 > [!NOTE]
 >  You should not call any of the enlistment interfaces with impersonated contexts.  
@@ -40,20 +40,20 @@ This topic discusses how access is restricted on the types of resources that <xr
   
  `PermissionSetAttribute(SecurityAction.LinkDemand, Name := "FullTrust")`  
   
--   <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=nameWithType>  
+- <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=nameWithType>  
   
--   <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A>  
+- <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A>  
   
--   <xref:System.Transactions.TransactionInterop>  
+- <xref:System.Transactions.TransactionInterop>  
   
--   <xref:System.Transactions.TransactionManager.DistributedTransactionStarted>  
+- <xref:System.Transactions.TransactionManager.DistributedTransactionStarted>  
   
--   <xref:System.Transactions.HostCurrentTransactionCallback>  
+- <xref:System.Transactions.HostCurrentTransactionCallback>  
   
--   <xref:System.Transactions.TransactionManager.Reenlist%2A>  
+- <xref:System.Transactions.TransactionManager.Reenlist%2A>  
   
--   <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>  
+- <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>  
   
--   <xref:System.Transactions.TransactionScope.%23ctor%28System.Transactions.TransactionScopeOption%2CSystem.Transactions.TransactionOptions%2CSystem.Transactions.EnterpriseServicesInteropOption%29>  
+- <xref:System.Transactions.TransactionScope.%23ctor%28System.Transactions.TransactionScopeOption%2CSystem.Transactions.TransactionOptions%2CSystem.Transactions.EnterpriseServicesInteropOption%29>  
   
  Only the immediate caller is required to possess the **FullTrust** permission set to use the above types or methods.

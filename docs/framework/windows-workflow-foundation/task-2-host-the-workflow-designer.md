@@ -36,7 +36,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
   
 8. In **Solution Explorer**, right-click MainWindow.xaml and select **View Code**. Modify the code by following these steps:  
   
-    1.  Add the following namespaces:  
+    1. Add the following namespaces:  
   
         ```csharp  
         using System.Activities;  
@@ -48,7 +48,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         using System.ComponentModel;  
         ```  
   
-    2.  To declare a private member field to hold an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, add the following code to the `MainWindow` class.  
+    2. To declare a private member field to hold an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, add the following code to the `MainWindow` class.  
   
         ```csharp  
         public partial class MainWindow : Window  
@@ -62,7 +62,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         }  
         ```  
   
-    3.  Add the following `AddDesigner` method to the `MainWindow` class. The implementation creates an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, adds a <xref:System.Activities.Statements.Sequence> activity to it, and places it in middle column of the grid1 **Grid**.  
+    3. Add the following `AddDesigner` method to the `MainWindow` class. The implementation creates an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, adds a <xref:System.Activities.Statements.Sequence> activity to it, and places it in middle column of the grid1 **Grid**.  
   
         ```csharp  
         private void AddDesigner()  
@@ -81,7 +81,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         }  
         ```  
   
-    4.  Register the designer metadata to add designer support for all the  built-in activities. This enables you to drop activities from the toolbox onto the original <xref:System.Activities.Statements.Sequence> activity in the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, add the `RegisterMetadata` method to the `MainWindow` class.  
+    4. Register the designer metadata to add designer support for all the  built-in activities. This enables you to drop activities from the toolbox onto the original <xref:System.Activities.Statements.Sequence> activity in the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, add the `RegisterMetadata` method to the `MainWindow` class.  
   
         ```csharp  
         private void RegisterMetadata()  
@@ -93,7 +93,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
   
          For more information about registering activity designers, see [How to: Create a Custom Activity Designer](how-to-create-a-custom-activity-designer.md).  
   
-    5.  In the `MainWindow` class constructor, add calls to the methods declared previously to register the metadata for designer support and to create the <xref:System.Activities.Presentation.WorkflowDesigner>.  
+    5. In the `MainWindow` class constructor, add calls to the methods declared previously to register the metadata for designer support and to create the <xref:System.Activities.Presentation.WorkflowDesigner>.  
   
         ```csharp  
         public MainWindow()  

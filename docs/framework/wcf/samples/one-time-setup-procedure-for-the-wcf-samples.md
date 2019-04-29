@@ -42,9 +42,9 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
   
 9. Run the **Setupvroot.bat** batch file. The following steps are performed:  
   
-    -   A virtual directory is created in IIS named ServiceModelSamples.  
+    - A virtual directory is created in IIS named ServiceModelSamples.  
   
-    -   New disk directories are created named %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples and %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples\bin.  
+    - New disk directories are created named %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples and %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples\bin.  
   
      If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](../../../../docs/framework/wcf/samples/virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.  
   
@@ -60,11 +60,11 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
 
 12. Run the Setupcerttool.bat file. This file is located in the  \<InstallPath>\WF_WCF_Samples\WCF\Setup\  folder.  This script will perform the following tasks:
 
-    -   Build the FindPrivateKey tool.
+    - Build the FindPrivateKey tool.
 
-    -   Create a directory called %ProgramFiles%\ServiceModelSampleTools.
+    - Create a directory called %ProgramFiles%\ServiceModelSampleTools.
 
-    -   Copy the new FindPrivateKey tool to this directory.
+    - Copy the new FindPrivateKey tool to this directory.
 
      This tool is required by samples that use certificates and are hosted in IIS.
 

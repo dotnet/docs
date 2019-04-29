@@ -23,11 +23,11 @@ In *conditional compilation*, particular blocks of code in a program are compile
 ## Declaring Conditional Compilation Constants  
  You can set conditional compilation constants in one of three ways:  
   
--   In the **Project Designer**  
+- In the **Project Designer**  
   
--   At the command line when using the command-line compiler  
+- At the command line when using the command-line compiler  
   
--   In your code  
+- In your code  
   
  Conditional compilation constants have a special scope and cannot be accessed from standard code. The scope of a conditional compilation constant is dependent on the way it is set. The following table lists the scope of constants declared using each of the three ways mentioned above.  
   

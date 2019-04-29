@@ -19,7 +19,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
   
 ### To derive a tree node  
   
--   Create a new node class, derived from the <xref:System.Windows.Forms.TreeNode> class, which has a custom field to record a file path.  
+- Create a new node class, derived from the <xref:System.Windows.Forms.TreeNode> class, which has a custom field to record a file path.  
   
     ```vb  
     Class myTreeNode  

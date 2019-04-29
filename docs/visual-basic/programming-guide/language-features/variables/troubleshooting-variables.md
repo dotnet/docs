@@ -12,9 +12,9 @@ This page lists some common problems that can occur when working with variables 
 ## Unable to Access Members of an Object  
  If your code attempts to access a property or method on an object, there are two possible error outcomes:  
   
--   The compiler can generate an error message if you declare the object variable to be of a specific type and then refer to a member not defined by that type.  
+- The compiler can generate an error message if you declare the object variable to be of a specific type and then refer to a member not defined by that type.  
   
--   A run-time <xref:System.MemberAccessException> occurs when the object assigned to an object variable does not expose the member your code is trying to access. In the case of a variable of [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md), you can also get this exception if the member is not `Public`. This is because late binding allows access only to `Public` members.  
+- A run-time <xref:System.MemberAccessException> occurs when the object assigned to an object variable does not expose the member your code is trying to access. In the case of a variable of [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md), you can also get this exception if the member is not `Public`. This is because late binding allows access only to `Public` members.  
   
  When the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) sets type checking `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  
 

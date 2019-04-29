@@ -58,15 +58,15 @@ result = pattern >> amount
   
  The results of the preceding example are as follows:  
   
--   `result1` is 2560 (0000 1010 0000 0000).  
+- `result1` is 2560 (0000 1010 0000 0000).  
   
--   `result2` is 160 (0000 0000 1010 0000).  
+- `result2` is 160 (0000 0000 1010 0000).  
   
--   `result3` is 2 (0000 0000 0000 0010).  
+- `result3` is 2 (0000 0000 0000 0010).  
   
--   `result4` is 640 (0000 0010 1000 0000).  
+- `result4` is 640 (0000 0010 1000 0000).  
   
--   `result5` is 0 (shifted 15 places to the right).  
+- `result5` is 0 (shifted 15 places to the right).  
   
  The shift amount for `result4` is calculated as 18 AND 15, which equals 2.  
   
@@ -76,9 +76,9 @@ result = pattern >> amount
   
  The results of the preceding example are as follows:  
   
--   `negresult1` is -512 (1111 1110 0000 0000).  
+- `negresult1` is -512 (1111 1110 0000 0000).  
   
--   `negresult2` is -1 (the sign bit is propagated).  
+- `negresult2` is -1 (the sign bit is propagated).  
   
 ## See also
 

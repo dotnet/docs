@@ -14,7 +14,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
   
 ### To copy the XML and XSLT files to your local computer  
   
--   Copy the XSLT file to your local computer and name it Transform.xsl.  
+- Copy the XSLT file to your local computer and name it Transform.xsl.  
   
     ```xml  
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
@@ -81,7 +81,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
     </xsl:stylesheet>  
     ```  
   
--   Copy the XML file to your local computer and name it `books.xml`.  
+- Copy the XML file to your local computer and name it `books.xml`.  
   
     ```xml  
     <?xml version="1.0"?>  

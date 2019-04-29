@@ -7,32 +7,32 @@ author: "BrucePerlerMS"
 # How To: Enable WIF for a WCF Web Service Application
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   Microsoft® Windows® Communication Foundation (WCF)  
+- Microsoft® Windows® Communication Foundation (WCF)  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for enabling WIF in a WCF web service. It also provides instructions for how to test the application to verify that the web service is correctly presenting claims when the application is run. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](https://go.microsoft.com/fwlink/?LinkID=245849)  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Overview  
+- Overview  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create a Simple WCF Service  
+- Step 1 – Create a Simple WCF Service  
   
--   Step 2 – Create a Client Application for the WCF Service  
+- Step 2 – Create a Client Application for the WCF Service  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Objectives  
   
--   Create a WCF service that requires issued tokens  
+- Create a WCF service that requires issued tokens  
   
--   Create a WCF client that requests a token from an STS and passes it to the WCF service  
+- Create a WCF client that requests a token from an STS and passes it to the WCF service  
   
 ## Overview  
  This How-To is intended to demonstrate how a developer can use federated authentication when developing WCF services. Some of the benefits of using federation in WCF services include:  
@@ -49,11 +49,11 @@ author: "BrucePerlerMS"
   
 ## Summary of Steps  
   
--   Step 1 – Create a Simple WCF Service  
+- Step 1 – Create a Simple WCF Service  
   
--   Step 2 – Create a Client Application for the WCF Service  
+- Step 2 – Create a Client Application for the WCF Service  
   
--   Step 3 – Test Your Solution  
+- Step 3 – Test Your Solution  
   
 ## Step 1 – Create a Simple WCF Service  
  In this step, you will create a new WCF service that uses the Development STS that is included with the Identity and Access tool.  

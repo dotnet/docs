@@ -27,11 +27,11 @@ End Sub
   
  The definition must meet the following conditions:  
   
--   The method must be a `Sub`, not a `Function`.  
+- The method must be a `Sub`, not a `Function`.  
   
--   The body of the method must be left empty.  
+- The body of the method must be left empty.  
   
--   The access modifier must be `Private`.  
+- The access modifier must be `Private`.  
   
 ## Implementation  
  The implementation consists primarily of filling in the body of the partial method. The implementation is typically in a separate partial class from the definition, and is written by a developer who wants to extend the generated code.  

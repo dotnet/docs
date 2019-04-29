@@ -16,6 +16,10 @@ metadata:
 abstract:
   description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework for building custom machine learning solutions and integrating them into .NET applications. Tutorials, code examples, API reference, and other documentation show you how. 
 sections:
+- title: Get Started
+  items:
+  - type: paragraph
+    text: 'If you are new to machine learning, get an overview from <a href="dotnet/machine-learning/what-is-machine-learning">What is machine learning</a>? To understand how an ML.NET application is built, read <a href="dotnet/machine-learning/how-does-mldotnet-work">How does ML.NET work</a>? Or get started by adding the <b>Microsoft.ML</b> nuget package to your application.'
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
@@ -31,8 +35,11 @@ sections:
     - html: <a href="/dotnet/machine-learning/tutorials/image-classification">Build a custom image classifier with TensorFlow</a>
 - title: Reference and Resources
   items:
+  - type: paragraph
+    text: 'The ML.NET API has two sets of packages: release components and preview components. The release API contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection and ranking, model saving and loading, and much more! The preview API contains ONNX and TensorFlow model handling, algorithms for recommendation tasks, and components to process time-series data.'
   - type: list
     style: unordered
     items:
     - html: '<a href="/dotnet/api/?view=ml-dotnet">ML.NET API</a>'
+    - html: '<a href="/dotnet/api/?view=ml-dotnet-preview">ML.NET Preview API</a>'
     - html: '<a href="https://github.com/dotnet/machinelearning-samples/blob/master/README.md">ML.NET samples: C# and F#</a>'

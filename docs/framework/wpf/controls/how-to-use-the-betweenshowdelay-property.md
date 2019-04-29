@@ -14,9 +14,9 @@ This example shows how to use the <xref:System.Windows.Controls.ToolTipService.B
   
  In either of the following scenarios, the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> applies, which causes the tooltip for the second ellipse to wait one second before it appears:  
   
--   If the time it takes to move to the second button is more than two seconds.  
+- If the time it takes to move to the second button is more than two seconds.  
   
--   If the tooltip is not visible at the beginning of the time interval for the first ellipse.  
+- If the tooltip is not visible at the beginning of the time interval for the first ellipse.  
   
  [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
 [!code-xaml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  

@@ -61,7 +61,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
   
 ### To arrange ToolStrip items on the ToolStrip  
   
--   Set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to the value of <xref:System.Windows.Forms.ToolStripLayoutStyle> that you want.  
+- Set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to the value of <xref:System.Windows.Forms.ToolStripLayoutStyle> that you want.  
   
     ```vb  
     ToolStripDropDown1.LayoutStyle = _  

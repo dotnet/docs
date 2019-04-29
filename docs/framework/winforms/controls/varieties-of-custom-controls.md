@@ -25,17 +25,17 @@ With the .NET Framework, you can develop and implement new controls. You can ext
   
  The <xref:System.Windows.Forms.Control> class performs the following tasks to provide visual display in Windows Forms applications:  
   
--   Exposes a window handle.  
+- Exposes a window handle.  
   
--   Manages message routing.  
+- Manages message routing.  
   
--   Provides mouse and keyboard events, and many other user interface events.  
+- Provides mouse and keyboard events, and many other user interface events.  
   
--   Provides advanced layout features.  
+- Provides advanced layout features.  
   
--   Contains many properties specific to visual display, such as <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Height%2A>, and <xref:System.Windows.Forms.Control.Width%2A>.  
+- Contains many properties specific to visual display, such as <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Height%2A>, and <xref:System.Windows.Forms.Control.Width%2A>.  
   
--   Provides the security and threading support necessary for a Windows Forms control to act as a Microsoft® ActiveX® control.  
+- Provides the security and threading support necessary for a Windows Forms control to act as a Microsoft® ActiveX® control.  
   
  Because so much of the infrastructure is provided by the base class, it is relatively easy to develop your own Windows Forms controls.  
   
@@ -55,7 +55,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
   
  Inherit from the <xref:System.Windows.Forms.UserControl> class if:  
   
--   You want to combine the functionality of several Windows Forms controls into a single reusable unit.  
+- You want to combine the functionality of several Windows Forms controls into a single reusable unit.  
   
 ### Extended Controls  
  You can derive an inherited control from any existing Windows Forms control. With this approach, you can retain all of the inherent functionality of a Windows Forms control, and then extend that functionality by adding custom properties, methods, or other features. With this option, you can override the base control's paint logic, and then extend its user interface by changing its appearance.  
@@ -68,9 +68,9 @@ With the .NET Framework, you can develop and implement new controls. You can ext
   
  Inherit from a Windows Forms control if:  
   
--   Most of the functionality you need is already identical to an existing Windows Forms control.  
+- Most of the functionality you need is already identical to an existing Windows Forms control.  
   
--   You do not need a custom graphical user interface, or you want to design a new graphical user interface for an existing control.  
+- You do not need a custom graphical user interface, or you want to design a new graphical user interface for an existing control.  
   
 ### Custom Controls  
  Another way to create a control is to create one substantially from the beginning by inheriting from <xref:System.Windows.Forms.Control>. The <xref:System.Windows.Forms.Control> class provides all of the basic functionality required by controls, including mouse and keyboard handling events, but no control-specific functionality or graphical interface.  
@@ -85,9 +85,9 @@ With the .NET Framework, you can develop and implement new controls. You can ext
   
  Inherit from the <xref:System.Windows.Forms.Control> class if:  
   
--   You want to provide a custom graphical representation of your control.  
+- You want to provide a custom graphical representation of your control.  
   
--   You need to implement custom functionality that is not available through standard controls.  
+- You need to implement custom functionality that is not available through standard controls.  
   
 ### ActiveX Controls  
  Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There is support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).  

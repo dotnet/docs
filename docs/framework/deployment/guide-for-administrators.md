@@ -113,13 +113,13 @@ To create a package:
 
 7. On the **Program** page of the **Create Package and Program Wizard**, enter the following information:
 
-    1.  **Name:** `.NET Framework 4.5`
+    1. **Name:** `.NET Framework 4.5`
 
-    2.  **Command line:** `dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage ADMINDEPLOYMENT` (command-line options are described in the table after these steps)
+    2. **Command line:** `dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage ADMINDEPLOYMENT` (command-line options are described in the table after these steps)
 
-    3.  **Run:** Choose **Hidden**.
+    3. **Run:** Choose **Hidden**.
 
-    4.  **Program can run:** Choose the option that specifies that the program can run regardless of whether a user is logged on.
+    4. **Program can run:** Choose the option that specifies that the program can run regardless of whether a user is logged on.
 
 8. On the **Requirements** page, choose **Next** to accept the default values, and then complete the wizard.
 

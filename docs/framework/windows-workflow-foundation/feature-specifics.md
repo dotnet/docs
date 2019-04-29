@@ -38,9 +38,9 @@ The <xref:System.ServiceModel.WorkflowServiceHost> is the out-of-box workflow ho
 
 - Samples for the <xref:System.ServiceModel.WorkflowServiceHost> can be found in the following sections:
 
-    - [Execution](./samples/execution.md)
+  - [Execution](./samples/execution.md)
 
-    - Application: [Suspended Instance Management](./samples/suspended-instance-management.md)
+  - Application: [Suspended Instance Management](./samples/suspended-instance-management.md)
 
 - [Hosting Workflow services overview](../wcf/feature-details/hosting-workflow-services-overview.md)
 
@@ -62,13 +62,13 @@ A correlation is one of two things:
 
 - An example of correlation used to group messages together is a Request-Reply correlation that groups messages together.
 
-    - On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.
+  - On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.
 
-    - Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.
+  - Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.
 
 - An example of mapping a piece of data to a service instance is content-based correlation which maps a piece of data (for example, an order ID) to a particular workflow instance.
 
-    - On any messaging activity, click on the `CorrelationInitializers` property and add a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> using the <xref:System.ServiceModel.Activities.CorrelationHandle> variable created above. Double-click on the desired property on the message (e.g. OrderID) from the drop-down menu. Set the `CorrelatesWith` property to the <xref:System.ServiceModel.Activities.CorrelationHandle> variable used above.
+  - On any messaging activity, click on the `CorrelationInitializers` property and add a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> using the <xref:System.ServiceModel.Activities.CorrelationHandle> variable created above. Double-click on the desired property on the message (e.g. OrderID) from the drop-down menu. Set the `CorrelatesWith` property to the <xref:System.ServiceModel.Activities.CorrelationHandle> variable used above.
 
 - [Correlation Conceptual Documentation](../wcf/feature-details/correlation.md)
 
@@ -126,9 +126,9 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 - Samples:
 
-    - [DataContractResolver](../wcf/samples/datacontractresolver.md)
+  - [DataContractResolver](../wcf/samples/datacontractresolver.md)
 
-    - [KnownAssemblyAttribute](../wcf/samples/knownassemblyattribute.md)
+  - [KnownAssemblyAttribute](../wcf/samples/knownassemblyattribute.md)
 
 ### Data Contract Resolver Scenarios
 
@@ -146,25 +146,25 @@ Flowchart is a well-known paradigm to visually represent domain problems. It is 
 
 - The flowchart feature uses the following classes:
 
-    - <xref:System.Activities.Statements.Flowchart>
+  - <xref:System.Activities.Statements.Flowchart>
 
-    - <xref:System.Activities.Statements.FlowNode>
+  - <xref:System.Activities.Statements.FlowNode>
 
-    - <xref:System.Activities.Statements.FlowDecision>
+  - <xref:System.Activities.Statements.FlowDecision>
 
-    - <xref:System.Activities.Statements.FlowStep>
+  - <xref:System.Activities.Statements.FlowStep>
 
-    - <xref:System.Activities.Statements.FlowSwitch%601>
+  - <xref:System.Activities.Statements.FlowSwitch%601>
 
 - Samples:
 
-    - [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
+  - [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
 
-    - [Hiring Process](./samples/hiring-process.md)
+  - [Hiring Process](./samples/hiring-process.md)
 
 - Designer Documentation:
 
-    - [Flowchart Activity Designers](/visualstudio/workflow-designer/flowchart-activity-designers)
+  - [Flowchart Activity Designers](/visualstudio/workflow-designer/flowchart-activity-designers)
 
 ### Flowchart Scenarios
 
@@ -192,15 +192,15 @@ Procedural activities provide a mechanism to model sequential control flow using
 
 - Samples:
 
-    - [Hiring Process](./samples/hiring-process.md)
+  - [Hiring Process](./samples/hiring-process.md)
 
-    - [Corporate Purchase Process](./samples/corporate-purchase-process.md)
+  - [Corporate Purchase Process](./samples/corporate-purchase-process.md)
 
 - Designer Documentation:
 
-    - [Parallel Activity Designer](/visualstudio/workflow-designer/parallel-activity-designer)
+  - [Parallel Activity Designer](/visualstudio/workflow-designer/parallel-activity-designer)
 
-    - [ParallelForEach\<T> Activity Designer](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)
+  - [ParallelForEach\<T> Activity Designer](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)
 
 ### Procedural Activity Scenarios
 

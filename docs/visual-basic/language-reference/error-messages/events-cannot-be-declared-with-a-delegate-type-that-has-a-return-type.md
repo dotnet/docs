@@ -15,7 +15,7 @@ A delegate was specified for a function procedure.
   
 ## To correct this error  
   
--   Specify a delegate for a `Sub` procedure.  
+- Specify a delegate for a `Sub` procedure.  
   
 ## See also
 

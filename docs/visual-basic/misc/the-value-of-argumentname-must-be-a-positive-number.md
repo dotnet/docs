@@ -12,7 +12,7 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Reserv
   
 ## To correct this error  
   
--   Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property to a positive number.  
+- Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property to a positive number.  
   
 ## See also
 

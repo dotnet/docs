@@ -19,9 +19,9 @@ Windows Communication Foundation (WCF) applications handle error situations by m
   
  Typically, services (and duplex clients) take the following steps to successfully integrate error handling into their applications:  
   
--   Map exception conditions to custom SOAP faults.  
+- Map exception conditions to custom SOAP faults.  
   
--   Clients and services send and receive SOAP faults as exceptions.  
+- Clients and services send and receive SOAP faults as exceptions.  
   
  In addition, WCF clients and services can use undeclared soap faults for debugging purposes and can extend the default error behavior. The following sections discuss these tasks and concepts.  
   

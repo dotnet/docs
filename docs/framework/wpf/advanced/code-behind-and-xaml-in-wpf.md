@@ -11,15 +11,15 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
  This topic contains the following sections:  
   
--   [Prerequisites](#Prerequisites)  
+- [Prerequisites](#Prerequisites)  
   
--   [Code-Behind and the XAML Language](#codebehind_and_the_xaml_language)  
+- [Code-Behind and the XAML Language](#codebehind_and_the_xaml_language)  
   
--   [Code-behind, Event Handler, and Partial Class Requirements in WPF](#Code_behind__Event_Handler__and_Partial_Class)  
+- [Code-behind, Event Handler, and Partial Class Requirements in WPF](#Code_behind__Event_Handler__and_Partial_Class)  
   
--   [x:Code](#x_Code)  
+- [x:Code](#x_Code)  
   
--   [Inline Code Limitations](#Inline_Code_Limitations)  
+- [Inline Code Limitations](#Inline_Code_Limitations)  
   
 <a name="Prerequisites"></a>   
 ## Prerequisites  
@@ -32,15 +32,15 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
 <a name="Code_behind__Event_Handler__and_Partial_Class"></a>   
 ## Code-behind, Event Handler, and Partial Class Requirements in WPF  
   
--   The partial class must derive from the type that backs the root element.  
+- The partial class must derive from the type that backs the root element.  
   
--   Note that under the default behavior of the markup compile build actions, you can leave the derivation blank in the partial class definition on the code-behind side. The compiled result will assume the page root's backing type to be the basis for the partial class, even if it not specified. However, relying on this behavior is not a best practice.  
+- Note that under the default behavior of the markup compile build actions, you can leave the derivation blank in the partial class definition on the code-behind side. The compiled result will assume the page root's backing type to be the basis for the partial class, even if it not specified. However, relying on this behavior is not a best practice.  
   
--   The event handlers you write in the code-behind must be instance methods and cannot be static methods. These methods must be defined by the partial class within the CLR namespace identified by `x:Class`. You cannot qualify the name of an event handler to instruct a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor to look for an event handler for event wiring in a different class scope.  
+- The event handlers you write in the code-behind must be instance methods and cannot be static methods. These methods must be defined by the partial class within the CLR namespace identified by `x:Class`. You cannot qualify the name of an event handler to instruct a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor to look for an event handler for event wiring in a different class scope.  
   
--   The handler must match the delegate for the appropriate event in the backing type system.  
+- The handler must match the delegate for the appropriate event in the backing type system.  
   
--   For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
+- For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
   
 <a name="x_Code"></a>   
 ## x:Code  

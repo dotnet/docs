@@ -30,9 +30,9 @@ The following scenario outlines the process of signing an assembly with a strong
 
 1. Assembly A is created with a strong name using one of the following methods:
 
-    -   Using a development environment that supports creating strong names, such as Visual Studio.
+    - Using a development environment that supports creating strong names, such as Visual Studio.
 
-    -   Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). The Windows Software Development Kit (SDK) provides both Sn.exe and Al.exe.
+    - Creating a cryptographic key pair using the [Strong Name tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) and assigning that key pair to the assembly using either a command-line compiler or the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md). The Windows Software Development Kit (SDK) provides both Sn.exe and Al.exe.
 
 2. The development environment or tool signs the hash of the file containing the assembly's manifest with the developer's private key. This digital signature is stored in the portable executable (PE) file that contains Assembly A's manifest.
 
@@ -49,13 +49,13 @@ Starting with the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-m
 
 The bypass feature applies to any assembly that is signed with a strong name and that has the following characteristics:
 
--   Fully trusted without <xref:System.Security.Policy.StrongName> evidence (for example, has `MyComputer` zone evidence).
+- Fully trusted without <xref:System.Security.Policy.StrongName> evidence (for example, has `MyComputer` zone evidence).
 
--   Loaded into a fully trusted <xref:System.AppDomain>.
+- Loaded into a fully trusted <xref:System.AppDomain>.
 
--   Loaded from a location under the <xref:System.AppDomainSetup.ApplicationBase%2A> property of that <xref:System.AppDomain>.
+- Loaded from a location under the <xref:System.AppDomainSetup.ApplicationBase%2A> property of that <xref:System.AppDomain>.
 
--   Not delay-signed.
+- Not delay-signed.
 
 This feature can be disabled for individual applications or for a computer. See [How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md).
 

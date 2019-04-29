@@ -1,11 +1,11 @@
 ---
-title: Build ASP.NET Core 2.1 applications deployed as Linux containers into AKS/Kubernetes clusters
+title: Build ASP.NET Core 2.2 applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 02/25/2019
 ---
-# Build ASP.NET Core 2.1 applications deployed as Linux containers into an AKS/Kubernetes orchestrator
+# Build ASP.NET Core 2.2 applications deployed as Linux containers into an AKS/Kubernetes orchestrator
 
 Azure Kubernetes Services (AKS) is Azure's managed Kubernetes orchestrations services that simplify container deployment and management.
 
@@ -17,13 +17,13 @@ AKS main features are:
 - User configurable scaling
 - A simpler user experience for both developers and cluster operators.
 
-The following examples explore the creation of an ASP.NET Core 2.1 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2017.
+The following examples explore the creation of an ASP.NET Core 2.2 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2017.
 
-## Creating the ASP.NET Core 2.1 Project using Visual Studio 2017
+## Creating the ASP.NET Core 2.2 Project using Visual Studio 2017
 
 ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on GitHub. It's cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
 
-This example uses a simple project that's based on a Visual Studio Web API template, so you don't need any additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API, using ASP.NET Core 2.1 technology.
+This example uses a simple project that's based on a Visual Studio Web API template, so you don't need any additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API, using ASP.NET Core 2.2 technology.
 
 ![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/create-aspnet-core-application.png)
 
@@ -33,13 +33,13 @@ To create the sample project in Visual Studio, select **File** > **New** > **Pro
 
 Visual Studio lists templates for web projects. For our example, select **API** to create an ASP.NET Web API Application.
 
-Verify that you've selected ASP.NET Core 2.1 as the framework. .NET Core 2.1 is included in the last version of Visual Studio 2017 and is automatically installed and configured for you when you install Visual Studio 2017.
+Verify that you've selected ASP.NET Core 2.2 as the framework. .NET Core 2.2 is included in the last version of Visual Studio 2017 and is automatically installed and configured for you when you install Visual Studio 2017.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/create-web-api-application.png)
 
-**Figure 4-37**. Selecting ASP.NET CORE 2.1 and Web API project type
+**Figure 4-37**. Selecting ASP.NET CORE 2.2 and Web API project type
 
-If you have any previous version of .NET Core, you can download and install the 2.1 version from <https://www.microsoft.com/net/download/core#/sdk>.
+If you have any previous version of .NET Core, you can download and install the 2.2 version from <https://www.microsoft.com/net/download/core#/sdk>.
 
 You can add Docker support when creating the project or afterwards, so you can "Dockerize" your project at any time. To add Docker support after project creation, right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 
@@ -53,7 +53,7 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 **Figure 4-39**. Selecting Linux containers.
 
-With these simple steps, you have your ASP.NET Core 2.1 application running on a Linux container.
+With these simple steps, you have your ASP.NET Core 2.2 application running on a Linux container.
 
 As you can see, the integration between Visual Studio 2017 and Docker is totally oriented to the developer’s productivity.
 

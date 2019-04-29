@@ -13,23 +13,23 @@ author: "ghogen"
 # How to: Write Services Programmatically
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  
   
--   You must set up your service class to inherit from the <xref:System.ServiceProcess.ServiceBase> class.  
+- You must set up your service class to inherit from the <xref:System.ServiceProcess.ServiceBase> class.  
   
--   You must create a `Main` method for your service project that defines the services to run and calls the <xref:System.ServiceProcess.ServiceBase.Run%2A> method on them.  
+- You must create a `Main` method for your service project that defines the services to run and calls the <xref:System.ServiceProcess.ServiceBase.Run%2A> method on them.  
   
--   You must override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures and fill in any code you want them to run.  
+- You must override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures and fill in any code you want them to run.  
   
 ### To write a service programmatically  
   
 1. Create an empty project and create a reference to the necessary namespaces by following these steps:  
   
-    1.  In **Solution Explorer**, right-click the **References** node and click **Add Reference**.  
+    1. In **Solution Explorer**, right-click the **References** node and click **Add Reference**.  
   
-    2.  On the **.NET Framework** tab, scroll to **System.dll** and click **Select**.  
+    2. On the **.NET Framework** tab, scroll to **System.dll** and click **Select**.  
   
-    3.  Scroll to **System.ServiceProcess.dll** and click **Select**.  
+    3. Scroll to **System.ServiceProcess.dll** and click **Select**.  
   
-    4.  Click **OK**.  
+    4. Click **OK**.  
   
 2. Add a class and configure it to inherit from <xref:System.ServiceProcess.ServiceBase>:  
   

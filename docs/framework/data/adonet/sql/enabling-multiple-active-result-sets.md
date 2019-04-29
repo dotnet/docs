@@ -69,15 +69,15 @@ string connectionString = "Data Source=MSSQL1;" +
   
  The batch execution environment includes the following components:  
   
--   Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)  
+- Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)  
   
--   Security context (user/application role)  
+- Security context (user/application role)  
   
--   Database context (current database)  
+- Database context (current database)  
   
--   Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)  
+- Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)  
   
--   Top-level temporary tables  
+- Top-level temporary tables  
   
  With MARS, a default execution environment is associated to a connection. Every new batch that starts executing under a given connection receives a copy of the default environment. Whenever code is executed under a given batch, all changes made to the environment are scoped to the specific batch. Once execution finishes, the execution settings are copied into the default environment. In the case of a single batch issuing several commands to be executed sequentially under the same transaction, semantics are the same as those exposed by connections involving earlier clients or servers.  
   

@@ -49,15 +49,15 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
   
  Application developers have several design choices for accessing the results of the asynchronous operation. The correct choice depends on whether the application has instructions that can execute while the operation completes. If an application cannot perform any additional work until it receives the results of the asynchronous operation, the application must block until the results are available. To block until an asynchronous operation completes, you can use one of the following approaches:  
   
--   Call `EndOperationName` from the application’s main thread, blocking application execution until the operation is complete. For an example that illustrates this technique, see [Blocking Application Execution by Ending an Async Operation](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md).  
+- Call `EndOperationName` from the application’s main thread, blocking application execution until the operation is complete. For an example that illustrates this technique, see [Blocking Application Execution by Ending an Async Operation](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md).  
   
--   Use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> to block application execution until one or more operations are complete. For an example that illustrates this technique, see [Blocking Application Execution Using an AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md).  
+- Use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> to block application execution until one or more operations are complete. For an example that illustrates this technique, see [Blocking Application Execution Using an AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md).  
   
  Applications that do not need to block while the asynchronous operation completes can use one of the following approaches:  
   
--   Poll for operation completion status by checking the <xref:System.IAsyncResult.IsCompleted%2A> property periodically and calling `EndOperationName` when the operation is complete. For an example that illustrates this technique, see [Polling for the Status of an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md).  
+- Poll for operation completion status by checking the <xref:System.IAsyncResult.IsCompleted%2A> property periodically and calling `EndOperationName` when the operation is complete. For an example that illustrates this technique, see [Polling for the Status of an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md).  
   
--   Use an <xref:System.AsyncCallback> delegate to specify a method to be invoked when the operation is complete. For an example that illustrates this technique, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
+- Use an <xref:System.AsyncCallback> delegate to specify a method to be invoked when the operation is complete. For an example that illustrates this technique, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
   
 ## See also
 

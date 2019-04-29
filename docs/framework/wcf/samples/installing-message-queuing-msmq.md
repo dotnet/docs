@@ -31,9 +31,9 @@ The following procedures show how to install Message Queuing 4.0 and Message Que
   
 3. Expand Microsoft Message Queue (MSMQ) Server, expand Microsoft Message Queue (MSMQ) Server Core, and then select the check boxes for the following Message Queuing features to install:  
   
-    -   MSMQ Active Directory Domain Services Integration (for computers joined to a Domain).  
+    - MSMQ Active Directory Domain Services Integration (for computers joined to a Domain).  
   
-    -   MSMQ HTTP Support.  
+    - MSMQ HTTP Support.  
   
 4. Click **OK**.  
   

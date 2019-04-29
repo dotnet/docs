@@ -10,27 +10,27 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 
 ## Requirements
 
--   Visual Studio 2012.
+- Visual Studio 2012.
 
--   [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].
+- [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].
 
 ## Demonstrates
 
--   Custom activities.
+- Custom activities.
 
--   Composition of activities.
+- Composition of activities.
 
--   Bookmarks.
+- Bookmarks.
 
--   Persistence.
+- Persistence.
 
--   Schematized persistence.
+- Schematized persistence.
 
--   Tracing.
+- Tracing.
 
--   Tracking.
+- Tracking.
 
--   Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients ([!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web applications and WinForms applications).
+- Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients ([!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web applications and WinForms applications).
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -46,21 +46,21 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 1. An employee of Company X creates a Request for Proposal (RFP).  
   
-    1.  The employee types in the RFP title and description.  
+    1. The employee types in the RFP title and description.  
   
-    2.  The employee selects the vendors that he wants to invite to submit proposals.  
+    2. The employee selects the vendors that he wants to invite to submit proposals.  
   
 2. The employee submits the proposal.  
   
-    1.  An instance of the workflow is created.  
+    1. An instance of the workflow is created.  
   
-    2.  The workflow is waiting for all vendors to submit their proposals.  
+    2. The workflow is waiting for all vendors to submit their proposals.  
   
 3. After all proposals are received, the workflow iterates through all the received proposals and selects the best one.  
   
-    1.  Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
+    1. Each vendor has a reputation (this sample stores the reputation list in VendorRepository.cs).  
   
-    2.  The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
+    2. The total value of the proposal is determined by (The value typed in by the vendor) * (The vendor's recorded reputation) / 100.  
   
 4. The original requester can see all the submitted proposals. The best proposal is presented in a special section in the report.  
   
@@ -149,20 +149,20 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
 ### Web Client Options  
   
--   **Create a new RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
+- **Create a new RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
   
--   **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
+- **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
   
--   **View**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished).  
+- **View**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished).  
   
--   View As: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.  
+- View As: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.  
   
 ### WinForms Client Options  
   
--   **Create RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
+- **Create RFP**: Creates a new Request for Proposals (RFP) and starts a Purchase Process workflow.  
   
--   **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
+- **Refresh**: Refreshes the list of Active and Finished RFPs in the main window.  
   
--   **View RFP**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished)  
+- **View RFP**: Shows the content of an existing RFP. Vendors can submit their proposals (if invited or the RFP is not finished)  
   
--   **Connect As**: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.
+- **Connect As**: The user can access the RFP using different identities by selecting the desired participant in the **View as** combo box in the active RFPs grid.

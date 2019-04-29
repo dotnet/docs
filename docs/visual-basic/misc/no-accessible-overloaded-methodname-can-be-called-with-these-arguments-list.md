@@ -10,9 +10,9 @@ An overloaded method is called, but no method can be matched with the list of ar
   
 ## To correct this error  
   
--   Match the argument list against the overload you intended to call.  
+- Match the argument list against the overload you intended to call.  
   
--   Adjust the argument list so that the signature matches the overload.  
+- Adjust the argument list so that the signature matches the overload.  
   
 ## See also
 

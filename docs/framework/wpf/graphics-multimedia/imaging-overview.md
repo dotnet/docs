@@ -31,19 +31,19 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
  There are two ways to access the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], a managed component and an unmanaged component. The unmanaged component provides the following features.  
   
--   Extensibility model for new or proprietary image formats.  
+- Extensibility model for new or proprietary image formats.  
   
--   Improved performance and security on native image formats including [!INCLUDE[TLA#tla_bmp](../../../../includes/tlasharptla-bmp-md.md)], [!INCLUDE[TLA#tla_jpegorg](../../../../includes/tlasharptla-jpegorg-md.md)], [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)], [!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)], [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], [!INCLUDE[TLA#tla_gif](../../../../includes/tlasharptla-gif-md.md)], and icon (.ico).  
+- Improved performance and security on native image formats including [!INCLUDE[TLA#tla_bmp](../../../../includes/tlasharptla-bmp-md.md)], [!INCLUDE[TLA#tla_jpegorg](../../../../includes/tlasharptla-jpegorg-md.md)], [!INCLUDE[TLA#tla_png](../../../../includes/tlasharptla-png-md.md)], [!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)], [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], [!INCLUDE[TLA#tla_gif](../../../../includes/tlasharptla-gif-md.md)], and icon (.ico).  
   
--   Preservation of high bit-depth image data up to 8 bits per channel (32 bits per pixel).  
+- Preservation of high bit-depth image data up to 8 bits per channel (32 bits per pixel).  
   
--   Nondestructive image scaling, cropping, and rotations.  
+- Nondestructive image scaling, cropping, and rotations.  
   
--   Simplified color management.  
+- Simplified color management.  
   
--   Support for in-file, proprietary metadata.  
+- Support for in-file, proprietary metadata.  
   
--   The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features such as [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
+- The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features such as [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
  The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
@@ -126,13 +126,13 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
 #### Stretching Images  
  The <xref:System.Windows.Controls.Image.Stretch%2A> property controls how an image is stretched to fill its container. The <xref:System.Windows.Controls.Image.Stretch%2A> property accepts the following values, defined by the <xref:System.Windows.Media.Stretch> enumeration:  
   
--   <xref:System.Windows.Media.Stretch.None>: The image is not stretched to fill the output area. If the image is larger than the output area, the image is drawn to the output area, clipping what does not fit.  
+- <xref:System.Windows.Media.Stretch.None>: The image is not stretched to fill the output area. If the image is larger than the output area, the image is drawn to the output area, clipping what does not fit.  
   
--   <xref:System.Windows.Media.Stretch.Fill>: The image is scaled to fit the output area. Because the image height and width are scaled independently, the original aspect ratio of the image might not be preserved. That is, the image might be warped in order to completely fill the output container.  
+- <xref:System.Windows.Media.Stretch.Fill>: The image is scaled to fit the output area. Because the image height and width are scaled independently, the original aspect ratio of the image might not be preserved. That is, the image might be warped in order to completely fill the output container.  
   
--   <xref:System.Windows.Media.Stretch.Uniform>: The image is scaled so that it fits completely within the output area. The image's aspect ratio is preserved.  
+- <xref:System.Windows.Media.Stretch.Uniform>: The image is scaled so that it fits completely within the output area. The image's aspect ratio is preserved.  
   
--   <xref:System.Windows.Media.Stretch.UniformToFill>: The image is scaled so that it completely fills the output area while preserving the image's original aspect ratio.  
+- <xref:System.Windows.Media.Stretch.UniformToFill>: The image is scaled so that it completely fills the output area while preserving the image's original aspect ratio.  
   
  The following example applies each of the available <xref:System.Windows.Media.Stretch> enumerations to an <xref:System.Windows.Controls.Image>.  
   

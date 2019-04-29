@@ -39,13 +39,13 @@ Type converters supply logic for an object writer that converts from a string in
   
  <xref:System.ComponentModel.TypeConverter> defines four members that are relevant for converting to-string and from-string for XAML processing purposes:  
   
--   <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A>  
+- <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A>  
   
--   <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A>  
+- <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A>  
   
--   <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>  
+- <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>  
   
--   <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A>  
+- <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A>  
   
  Of these members, the most important method is <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A>, which converts the input string to the required object type. The <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> method can be implemented to convert a wider range of types into the intended destination type of the converter. Therefore, it can serve purposes that extend beyond XAML, such as supporting run-time conversions. However, for XAML use, only the code path that can process a <xref:System.String> input is important.  
   

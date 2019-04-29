@@ -33,13 +33,13 @@ In Windows Containers, the process of packaging applications is fully automated.
 
 Many organizations are containerizing existing monolithic applications for the following reasons:
 
--   **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can say, "It runs as a container, so it will run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
+- **Release agility through improved deployment**. Containers offer a consistent deployment contract between development and operations. When you use containers, you won't hear developers say, "It works on my machine, why not in production?" They can say, "It runs as a container, so it will run in production." The packaged application, with all its dependencies, can be executed in any supported container-based environment. It will run the way it was intended to run in all deployment targets (dev, QA, staging, production). Containers eliminate most frictions when they move from one stage to the next, which greatly improves deployment, and you can ship faster.
 
--   **Cost reductions**. Containers lead to lower costs, either by the consolidation and removal of existing hardware, or from running applications at a higher density per unit of hardware.
+- **Cost reductions**. Containers lead to lower costs, either by the consolidation and removal of existing hardware, or from running applications at a higher density per unit of hardware.
 
--   **Portability**. Containers are modular and portable. Docker containers are supported on any server operating system (Linux and Windows), in any major public cloud (Microsoft Azure, Amazon AWS, Google, IBM), and in on-premises and private or hybrid cloud environments.
+- **Portability**. Containers are modular and portable. Docker containers are supported on any server operating system (Linux and Windows), in any major public cloud (Microsoft Azure, Amazon AWS, Google, IBM), and in on-premises and private or hybrid cloud environments.
 
--   **Control**. Containers offer a flexible and secure environment that's controlled at the container level. A container can be secured, isolated, and even limited by setting execution constraint policies on the container. As detailed in the section about Windows Containers, Windows Server 2016 and Hyper-V containers offer additional enterprise support options.
+- **Control**. Containers offer a flexible and secure environment that's controlled at the container level. A container can be secured, isolated, and even limited by setting execution constraint policies on the container. As detailed in the section about Windows Containers, Windows Server 2016 and Hyper-V containers offer additional enterprise support options.
 
 Significant improvements in agility, portability, and control ultimately lead to significant cost reductions when you use containers to develop and maintain applications.
 
@@ -117,15 +117,15 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 ### Additional resources
 
--   **Windows Containers documentation**
+- **Windows Containers documentation**
 
     <https://docs.microsoft.com/virtualization/windowscontainers/>
 
--   **Windows Containers fundamentals**
+- **Windows Containers fundamentals**
 
     <https://docs.microsoft.com/virtualization/windowscontainers/about/>
 
--   **Infographic: Microsoft and containers**
+- **Infographic: Microsoft and containers**
 
     <https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf>
 
@@ -139,18 +139,18 @@ However, when thinking about the production deployment environment or even QA an
 > **Figure 4-7.5.** The container ecosystem in Azure
 
 From the container ecosystem in Azure, the following products supporting containers that are considered infrastructure:
--   **Azure Container Instances (ACI)**
--   **Azure Virtual Machines** (With container's support)
--   **Azure Virtual Machine Scale Sets** (With container's support)
+- **Azure Container Instances (ACI)**
+- **Azure Virtual Machines** (With container's support)
+- **Azure Virtual Machine Scale Sets** (With container's support)
 
 From those three, ACI provides a great benefit, which is the fact that you don't need to maintain the underlying OS, no need for you to upgrade/patch, etc. but ACI still is positioned in the infrastructure level, as better explained in the upcoming sections of this book.
 
 The products in Azure supporting containers that are at the same time positioned more in the PaaS (Platform as a Service) level are:
 
--   **Azure App Service**
--   **Azure Kubernetes Service (AKS and ACS)**
--   **Azure Service Fabric** 
--   **Azure Batch** 
+- **Azure App Service**
+- **Azure Kubernetes Service (AKS and ACS)**
+- **Azure Service Fabric** 
+- **Azure Batch** 
 
 Then, Azure Container Registry is a high scalable container registry hosted in Azure that you can use from all the previous products when registering and deploying your custom container images.
 

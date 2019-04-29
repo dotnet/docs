@@ -12,13 +12,13 @@ C# provides built-in support for handling anomalous situations, known as excepti
   
  The following exception handling topics are explained in this section:  
   
--   [throw](../../../csharp/language-reference/keywords/throw.md)  
+- [throw](../../../csharp/language-reference/keywords/throw.md)  
   
--   [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
   
--   [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
   
--   [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
   
 ## See also
 

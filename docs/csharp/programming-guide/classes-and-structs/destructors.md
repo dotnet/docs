@@ -13,15 +13,15 @@ Finalizers (which are also called **destructors**) are used to perform any neces
   
 ## Remarks  
   
--   Finalizers cannot be defined in structs. They are only used with classes.  
+- Finalizers cannot be defined in structs. They are only used with classes.  
   
--   A class can only have one finalizer.  
+- A class can only have one finalizer.  
   
--   Finalizers cannot be inherited or overloaded.  
+- Finalizers cannot be inherited or overloaded.  
   
--   Finalizers cannot be called. They are invoked automatically.  
+- Finalizers cannot be called. They are invoked automatically.  
   
--   A finalizer does not take modifiers or have parameters.  
+- A finalizer does not take modifiers or have parameters.  
   
  For example, the following is a declaration of a finalizer for the `Car` class.
   
@@ -66,11 +66,11 @@ protected override void Finalize()
   
  For more details about cleaning up resources, see the following topics:  
   
--   [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)  
+- [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)  
   
--   [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)  
+- [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)  
   
--   [using Statement](../../../csharp/language-reference/keywords/using-statement.md)  
+- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)  
   
 ## Example  
  The following example creates three classes that make a chain of inheritance. The class `First` is the base class, `Second` is derived from `First`, and `Third` is derived from `Second`. All three have finalizers. In `Main`, an instance of the most-derived class is created. When the program runs, notice that the finalizers for the three classes are called automatically, and in order, from the most-derived to the least-derived.  

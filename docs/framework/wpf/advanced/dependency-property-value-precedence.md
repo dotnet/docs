@@ -41,9 +41,9 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 4. **TemplatedParent template properties.** An element has a <xref:System.Windows.FrameworkElement.TemplatedParent%2A> if it was created as part of a template (a <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>). For details on when this applies, see [TemplatedParent](#templatedparent) later in this topic. Within the template, the following precedence applies:  
   
-    1.  Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
+    1. Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
-    2.  Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
+    2. Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
 5. **Implicit style.** Applies only to the `Style` property. The `Style` property is filled by any style resource with a key that matches the type of that element. That style resource must exist either in the page or the application; lookup for an implicit style resource does not proceed into the themes.  
   
@@ -55,9 +55,9 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 9. **Default (theme) style.** For details on when this applies, and how theme styles relate to the templates within theme styles, see [Default (Theme) Styles](#themestyles) later in this topic. Within a default style, the following order of precedence applies:  
   
-    1.  Active triggers in the theme style.  
+    1. Active triggers in the theme style.  
   
-    2.  Setters in the theme style.  
+    2. Setters in the theme style.  
   
 10. **Inheritance.** A few dependency properties inherit their values from parent element to child elements, such that they need not be set specifically on each element throughout an application. For details see [Property Value Inheritance](property-value-inheritance.md).  
   
@@ -71,11 +71,11 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ## The Style Property  
  The order of lookup described earlier applies to all possible dependency properties except one: the <xref:System.Windows.FrameworkElement.Style%2A> property. The <xref:System.Windows.FrameworkElement.Style%2A> property is unique in that it cannot itself be styled, so the precedence items 5 through 8 do not apply. Also, either animating or coercing <xref:System.Windows.FrameworkElement.Style%2A> is not recommended (and animating <xref:System.Windows.FrameworkElement.Style%2A> would require a custom animation class). This leaves three ways that the <xref:System.Windows.FrameworkElement.Style%2A> property might be set:  
   
--   **Explicit style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is set directly. In most scenarios, the style is not defined inline, but instead is referenced as a resource, by explicit key. In this case the Style property itself acts as if it were a local value, precedence item 3.  
+- **Explicit style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is set directly. In most scenarios, the style is not defined inline, but instead is referenced as a resource, by explicit key. In this case the Style property itself acts as if it were a local value, precedence item 3.  
   
--   **Implicit style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly. However, the <xref:System.Windows.FrameworkElement.Style%2A> exists at some level in the resource lookup sequence (page, application) and is keyed using a resource key that matches the type the style is to be applied to. In this case, the <xref:System.Windows.FrameworkElement.Style%2A> property itself acts by a precedence identified in the sequence as item 5. This condition can be detected by using <xref:System.Windows.DependencyPropertyHelper> against the <xref:System.Windows.FrameworkElement.Style%2A> property and looking for <xref:System.Windows.BaseValueSource.ImplicitStyleReference> in the results.  
+- **Implicit style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly. However, the <xref:System.Windows.FrameworkElement.Style%2A> exists at some level in the resource lookup sequence (page, application) and is keyed using a resource key that matches the type the style is to be applied to. In this case, the <xref:System.Windows.FrameworkElement.Style%2A> property itself acts by a precedence identified in the sequence as item 5. This condition can be detected by using <xref:System.Windows.DependencyPropertyHelper> against the <xref:System.Windows.FrameworkElement.Style%2A> property and looking for <xref:System.Windows.BaseValueSource.ImplicitStyleReference> in the results.  
   
--   **Default style**, also known as **theme style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly, and in fact will read as `null` up until run time. In this case, the style comes from the run-time theme evaluation that is part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation engine.  
+- **Default style**, also known as **theme style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly, and in fact will read as `null` up until run time. In this case, the style comes from the run-time theme evaluation that is part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation engine.  
   
  For implicit styles not in themes, the type must match exactly - a `MyButton` `Button`-derived class will not implicitly use a style for `Button`.  
   

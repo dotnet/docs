@@ -56,9 +56,9 @@ The .NET Framework provides access to the data protection API (DPAPI), which all
   
 ## Compiling the Code  
   
--   Include a reference to `System.Security.dll`.  
+- Include a reference to `System.Security.dll`.  
   
--   Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.  
+- Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.  
   
 ## See also
 

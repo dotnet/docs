@@ -46,13 +46,13 @@ End Class
   
  The backing field also has the following characteristics:  
   
--   The access modifier for the backing field is always `Private`, even when the property itself has a different access level, such as `Public`.  
+- The access modifier for the backing field is always `Private`, even when the property itself has a different access level, such as `Public`.  
   
--   If the property is marked as `Shared`, the backing field also is shared.  
+- If the property is marked as `Shared`, the backing field also is shared.  
   
--   Attributes specified for the property do not apply to the backing field.  
+- Attributes specified for the property do not apply to the backing field.  
   
--   The backing field can be accessed from code within the class and from debugging tools such as the Watch window. However, the backing field does not show in an IntelliSense word completion list.  
+- The backing field can be accessed from code within the class and from debugging tools such as the Watch window. However, the backing field does not show in an IntelliSense word completion list.  
   
 ## Initializing an Auto-Implemented Property  
  Any expression that can be used to initialize a field is valid for initializing an auto-implemented property. When you initialize an auto-implemented property, the expression is evaluated and passed to the `Set` procedure for the property. The following code examples show some auto-implemented properties that include initial values.  
@@ -72,17 +72,17 @@ End Class
   
  You have to use expanded property-definition syntax if you want to do any one of the following:  
   
--   Add code to the `Get` or `Set` procedure of a property, such as code to validate incoming values in the `Set` procedure. For example, you might want to verify that a string that represents a telephone number contains the required number of numerals before setting the property value.  
+- Add code to the `Get` or `Set` procedure of a property, such as code to validate incoming values in the `Set` procedure. For example, you might want to verify that a string that represents a telephone number contains the required number of numerals before setting the property value.  
   
--   Specify different accessibility for the `Get` and `Set` procedure. For example, you might want to make the `Set` procedure `Private` and the `Get` procedure `Public`.  
+- Specify different accessibility for the `Get` and `Set` procedure. For example, you might want to make the `Set` procedure `Private` and the `Get` procedure `Public`.  
   
--   Create properties that are `WriteOnly`.  
+- Create properties that are `WriteOnly`.  
   
--   Use parameterized properties (including `Default` properties). You must declare an expanded property in order to specify a parameter for the property, or to specify additional parameters for the `Set` procedure.  
+- Use parameterized properties (including `Default` properties). You must declare an expanded property in order to specify a parameter for the property, or to specify additional parameters for the `Set` procedure.  
   
--   Place an attribute on the backing field, or change the access level of the backing field.  
+- Place an attribute on the backing field, or change the access level of the backing field.  
   
--   Provide XML comments for the backing field.  
+- Provide XML comments for the backing field.  
   
 ## Expanding an Auto-Implemented Property  
  If you have to convert an auto-implemented property to an expanded property that contains a `Get` or `Set` procedure, the Visual Basic Code Editor can automatically generate the `Get` and `Set` procedures and `End Property` statement for the property. The code is generated if you put the cursor on a blank line following the `Property` statement, type a `G` (for `Get`) or an `S` (for `Set`) and press ENTER. The Visual Basic Code Editor automatically generates the `Get` or `Set` procedure for read-only and write-only properties when you press ENTER at the end of a `Property` statement.  

@@ -95,9 +95,9 @@ A Rectangle element rotated 45 degrees about the point (25, 25)
 ## Transforming a FrameworkElement  
  To apply transformations to a <xref:System.Windows.FrameworkElement>, create a <xref:System.Windows.Media.Transform> and apply it to one of the two properties that the <xref:System.Windows.FrameworkElement> class provides:  
   
--   <xref:System.Windows.FrameworkElement.LayoutTransform%2A> – A transform that is applied before the layout pass. After the transform is applied, the layout system processes the transformed size and position of the element.  
+- <xref:System.Windows.FrameworkElement.LayoutTransform%2A> – A transform that is applied before the layout pass. After the transform is applied, the layout system processes the transformed size and position of the element.  
   
--   <xref:System.Windows.UIElement.RenderTransform%2A> – A transform that modifies the appearance of the element but is applied after the layout pass is complete. By using the <xref:System.Windows.UIElement.RenderTransform%2A> property instead of the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property, you can obtain performance benefits.  
+- <xref:System.Windows.UIElement.RenderTransform%2A> – A transform that modifies the appearance of the element but is applied after the layout pass is complete. By using the <xref:System.Windows.UIElement.RenderTransform%2A> property instead of the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property, you can obtain performance benefits.  
   
  Which property should you use? Because of the performance benefits that it provides, use the <xref:System.Windows.UIElement.RenderTransform%2A> property whenever possible, especially when you use animated <xref:System.Windows.Media.Transform> objects. Use the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property when scaling, rotating, or skewing and you need the  parent of the element to adjust to the transformed size of the element. Note that, when they are used with the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property, <xref:System.Windows.Media.TranslateTransform> objects appear to have no effect on elements. That is because the layout system returns the translated element to its original position as part of its processing.  
   

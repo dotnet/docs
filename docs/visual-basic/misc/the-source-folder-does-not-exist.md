@@ -8,7 +8,7 @@ You attempted an operation that references a source folder that does not exist. 
   
 ## To correct this error  
   
--   Check that you are using the correct path, particularly if you are using relative paths.  
+- Check that you are using the correct path, particularly if you are using relative paths.  
   
 ## See also
 

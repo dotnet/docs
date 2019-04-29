@@ -363,7 +363,6 @@ Which gives you:
 
 ![Screenshot of the WPF app running.](./media/hosting-win32-content-in-wpf/windows-presentation-foundation-application.png)
 
-
 ## See also
 
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)

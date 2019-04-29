@@ -30,9 +30,9 @@ HRESULT ProfilerAttachComplete ();
 ## Remarks  
  The `ProfilerAttachComplete` callback is issued after the [ICorProfilerCallback3::InitializeForAttach](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-initializeforattach-method.md) method is called. It indicates the following:  
   
--   The callbacks that were requested by the profiler in `InitializeForAttach` have been activated.  
+- The callbacks that were requested by the profiler in `InitializeForAttach` have been activated.  
   
--   The profiler can now perform catch-up on the associated IDs without being concerned about missing notifications.  
+- The profiler can now perform catch-up on the associated IDs without being concerned about missing notifications.  
   
  The CLR ignores the return value from this callback.  
   

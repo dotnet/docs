@@ -12,9 +12,9 @@ This topic is the third of three topics that discusses how to implement a discov
   
 2. Add references to the following assemblies:  
   
-    1.  System.ServiceModel  
+    1. System.ServiceModel  
   
-    2.  System.ServiceModel.Discovery  
+    2. System.ServiceModel.Discovery  
   
 3. Add the GeneratedClient.cs found at the bottom of this topic to the project.  
   

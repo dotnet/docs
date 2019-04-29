@@ -10,7 +10,7 @@ A path name contains one or more characters that are not valid.
   
 ## To correct this error  
   
--   Remove the character from the path name.  
+- Remove the character from the path name.  
   
 ## See also
 

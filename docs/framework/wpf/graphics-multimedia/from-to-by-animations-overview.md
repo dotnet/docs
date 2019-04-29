@@ -59,15 +59,15 @@ This topic describes how to use From/To/By animations to animate dependency prop
 ## Target Values  
  A From/To/By animation creates a transition between two target values. It is common to specify a starting value (set it by using the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property) and an ending value (set it by using the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property). However, you can also specify only a starting value, a destination value, or an offset value. In these cases, the animation obtains the missing target value from the property that is being animated. The following list describes the different ways to specify the target values of an animation.  
   
--   **Starting Value**  
+- **Starting Value**  
   
      Use the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property when you want to explicitly specify the starting value of an animation. You can use the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property by itself, or with the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> or <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property. If you specify only the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, the animation transitions from that value to the base value of the animated property.  
   
--   **Ending Value**  
+- **Ending Value**  
   
      To specify an ending value of an animation, use its <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property. If you use the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property by itself, the animation obtains its starting value from the property that is being animated or from the output of another animation that is applied to the same property. You can use the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property together with the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property to explicitly specify starting and ending values for the animation.  
   
--   **Offset Value**  
+- **Offset Value**  
   
      The <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property enables you to specify an offset instead of an explicit starting or ending value for the animation. The <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of an animation specifies by how much the animation changes a value over its duration. You can use the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property by itself or with the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property. If you specify only the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property, the animation adds the offset value to the base value of the property or to the output of another animation.  
   
@@ -128,9 +128,9 @@ This topic describes how to use From/To/By animations to animate dependency prop
 ## Other Animation Types  
  From/To/By animations are not the only type of animations that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides: it also provides key-frame animations and path animations.  
   
--   A key-frame animation animates along any number of destination values, described using key frames. For more information, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
+- A key-frame animation animates along any number of destination values, described using key frames. For more information, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
--   A path animation generates output values from a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Animations Overview](path-animations-overview.md).  
+- A path animation generates output values from a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Animations Overview](path-animations-overview.md).  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also enables you to create your own custom animation types. For more information, see the [Custom Animations Overview](custom-animations-overview.md).  
   

@@ -26,15 +26,15 @@ The <xref:System.Net> classes use the .NET Framework's standard asynchronous pro
   
  The **ClientGetAsync** class implements an asynchronous request to an Internet resource and writes the resulting response to the console. It contains the methods and properties described in the following list.  
   
--   The `allDone` property contains an instance of the <xref:System.Threading.ManualResetEvent> class that signals the completion of the request.  
+- The `allDone` property contains an instance of the <xref:System.Threading.ManualResetEvent> class that signals the completion of the request.  
   
--   The `Main()` method reads the command line and begins the request for the specified Internet resource. It creates the **WebRequest** `wreq` and the **RequestState** `rs`, calls **BeginGetResponse** to begin processing the request, and then calls the `allDone.WaitOne()`method so that the application will not exit until the callback is complete. After the response is read from the Internet resource, `Main()` writes it to the console and the application ends.  
+- The `Main()` method reads the command line and begins the request for the specified Internet resource. It creates the **WebRequest** `wreq` and the **RequestState** `rs`, calls **BeginGetResponse** to begin processing the request, and then calls the `allDone.WaitOne()`method so that the application will not exit until the callback is complete. After the response is read from the Internet resource, `Main()` writes it to the console and the application ends.  
   
--   The `showusage()` method writes an example command line on the console. It is called by `Main()` when no URI is provided on the command line.  
+- The `showusage()` method writes an example command line on the console. It is called by `Main()` when no URI is provided on the command line.  
   
--   The `RespCallBack()` method implements the asynchronous callback method for the Internet request. It creates the **WebResponse** instance containing the response from the Internet resource, gets the response stream, and then starts reading the data from the stream asynchronously.  
+- The `RespCallBack()` method implements the asynchronous callback method for the Internet request. It creates the **WebResponse** instance containing the response from the Internet resource, gets the response stream, and then starts reading the data from the stream asynchronously.  
   
--   The `ReadCallBack()` method implements the asynchronous callback method for reading the response stream. It transfers data received from the Internet resource into the **ResponseData** property of the **RequestState** instance, then starts another asynchronous read of the response stream until no more data is returned. Once all the data has been read, `ReadCallBack()` closes the response stream and calls the `allDone.Set()` method to indicate that the entire response is present in **ResponseData**.  
+- The `ReadCallBack()` method implements the asynchronous callback method for reading the response stream. It transfers data received from the Internet resource into the **ResponseData** property of the **RequestState** instance, then starts another asynchronous read of the response stream until no more data is returned. Once all the data has been read, `ReadCallBack()` closes the response stream and calls the `allDone.Set()` method to indicate that the entire response is present in **ResponseData**.  
   
     > [!NOTE]
     >  It is critical that all network streams are closed. If you do not close each request and response stream, your application will run out of connections to the server and be unable to process additional requests.  

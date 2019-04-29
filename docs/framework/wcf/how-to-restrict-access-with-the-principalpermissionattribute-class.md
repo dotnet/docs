@@ -81,7 +81,6 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
 ## See also
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
-- <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - <xref:System.Security.Permissions.SecurityAction.Demand>
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A>
 - [Authorizing Access to Service Operations](../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)

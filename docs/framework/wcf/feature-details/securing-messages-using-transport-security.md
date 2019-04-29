@@ -19,11 +19,11 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
   
  Transport security using <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> impacts how MSMQ messages are secured in-transit between the transmission queue and the target queue where secured implies:  
   
--   Signing the message to ensure it is not tampered with.  
+- Signing the message to ensure it is not tampered with.  
   
--   Encrypting the message to ensure that it cannot be seen or tampered with. This is recommended but optional.  
+- Encrypting the message to ensure that it cannot be seen or tampered with. This is recommended but optional.  
   
--   The target queue manager that identifies the sender of the message for non-repudiation.  
+- The target queue manager that identifies the sender of the message for non-repudiation.  
   
  In MSMQ, independent of authentication, the target queue has an access control list (ACL) to check whether the client has permission to send the message to the target queue. The receiving application is also checked for permission to receive the message from the target queue.  
   

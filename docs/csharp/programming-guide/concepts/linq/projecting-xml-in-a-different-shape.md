@@ -227,7 +227,7 @@ class Program
 ## Next Steps  
  In the next example, you'll query to find all the text in a Word document:  
   
--   [Finding Text in Word Documents (C#)](../../../../csharp/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
+- [Finding Text in Word Documents (C#)](../../../../csharp/programming-guide/concepts/linq/finding-text-in-word-documents.md)  
   
 ## See also
 

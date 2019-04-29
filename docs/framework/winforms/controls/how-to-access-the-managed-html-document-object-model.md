@@ -12,9 +12,9 @@ ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb
 # How to: Access the Managed HTML Document Object Model
 You can access the managed HTML Document Object Model (DOM) from two types of applications:  
   
--   A Windows Forms application (.exe) that hosted the managed <xref:System.Windows.Forms.WebBrowser> control. These two technologies complement one another, with the <xref:System.Windows.Forms.WebBrowser> control displaying the page to the user and the HTML DOM representing the document's logical structure.  
+- A Windows Forms application (.exe) that hosted the managed <xref:System.Windows.Forms.WebBrowser> control. These two technologies complement one another, with the <xref:System.Windows.Forms.WebBrowser> control displaying the page to the user and the HTML DOM representing the document's logical structure.  
   
--   A Windows Forms <xref:System.Windows.Forms.UserControl> hosted within Internet Explorer. You can access the HTML DOM representing the page on which your <xref:System.Windows.Forms.UserControl> is hosted in order to change the document's structure or open modal dialog boxes, among many other possibilities.  
+- A Windows Forms <xref:System.Windows.Forms.UserControl> hosted within Internet Explorer. You can access the HTML DOM representing the page on which your <xref:System.Windows.Forms.UserControl> is hosted in order to change the document's structure or open modal dialog boxes, among many other possibilities.  
   
 ### To access DOM from a Windows Forms application  
   

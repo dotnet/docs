@@ -14,19 +14,19 @@ Binding a data source to a control is essential for providing users with access 
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating the project.  
+- Creating the project.  
   
--   Defining the data template.  
+- Defining the data template.  
   
--   Specifying the form layout.  
+- Specifying the form layout.  
   
--   Specifying data bindings.  
+- Specifying data bindings.  
   
--   Displaying data by using interoperation.  
+- Displaying data by using interoperation.  
   
--   Adding the data source to the project.  
+- Adding the data source to the project.  
   
--   Binding to the data source.  
+- Binding to the data source.  
   
  For a complete code listing of the tasks illustrated in this walkthrough, see [Data Binding in Hybrid Applications Sample](https://go.microsoft.com/fwlink/?LinkID=159983).  
   
@@ -35,9 +35,9 @@ Binding a data source to a control is essential for providing users with access 
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio.  
+- Visual Studio.  
   
--   Access to the Northwind sample database running on Microsoft SQL Server.  
+- Access to the Northwind sample database running on Microsoft SQL Server.  
   
 ## Creating the Project  
   
@@ -47,9 +47,9 @@ Binding a data source to a control is essential for providing users with access 
   
 2. In Solution Explorer, add references to the following assemblies.  
   
-    -   WindowsFormsIntegration  
+    - WindowsFormsIntegration  
   
-    -   System.Windows.Forms  
+    - System.Windows.Forms  
   
 3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
@@ -68,7 +68,7 @@ Binding a data source to a control is essential for providing users with access 
   
 #### To define the data template  
   
--   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
+- Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
      [!code-xaml[WPFWithWFAndDatabinding#3](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#3)]  
   
@@ -77,13 +77,13 @@ Binding a data source to a control is essential for providing users with access 
   
 #### To set up the Grid layout  
   
--   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
+- Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
      [!code-xaml[WPFWithWFAndDatabinding#4](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#4)]  
   
 #### To set up the Label controls  
   
--   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
+- Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
      [!code-xaml[WPFWithWFAndDatabinding#5](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#5)]  
   
@@ -94,7 +94,7 @@ Binding a data source to a control is essential for providing users with access 
   
 #### To specify data bindings  
   
--   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
+- Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
      The <xref:System.Windows.Data.Binding> class binds the <xref:System.Windows.Controls.TextBox> controls to the appropriate fields in the database.  
   
@@ -105,7 +105,7 @@ Binding a data source to a control is essential for providing users with access 
   
 #### To display data in the DataGridView control  
   
--   Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
+- Copy the following XAML into the <xref:System.Windows.Controls.Grid> element's declaration.  
   
      [!code-xaml[WPFWithWFAndDatabinding#7](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#7)]  
   

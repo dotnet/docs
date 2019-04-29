@@ -415,15 +415,15 @@ The objective of this walkthrough is to learn how to create an animated button f
 ## Summary  
  In this walkthrough, you performed the following exercises:  
   
--   Targeted a <xref:System.Windows.Style> to an object type (<xref:System.Windows.Controls.Button>).  
+- Targeted a <xref:System.Windows.Style> to an object type (<xref:System.Windows.Controls.Button>).  
   
--   Controlled basic properties of the buttons in the entire application using the <xref:System.Windows.Style>.  
+- Controlled basic properties of the buttons in the entire application using the <xref:System.Windows.Style>.  
   
--   Created resources like gradients to use for property values of the <xref:System.Windows.Style> setters.  
+- Created resources like gradients to use for property values of the <xref:System.Windows.Style> setters.  
   
--   Customized the look of buttons in the entire application by applying a template to the buttons.  
+- Customized the look of buttons in the entire application by applying a template to the buttons.  
   
--   Customized behavior for the buttons in response to user actions (such as <xref:System.Windows.UIElement.MouseEnter>, <xref:System.Windows.UIElement.MouseLeave>, and <xref:System.Windows.Controls.Primitives.ButtonBase.Click>) that included animation effects.  
+- Customized behavior for the buttons in response to user actions (such as <xref:System.Windows.UIElement.MouseEnter>, <xref:System.Windows.UIElement.MouseLeave>, and <xref:System.Windows.Controls.Primitives.ButtonBase.Click>) that included animation effects.  
   
 ## See also
 

@@ -17,7 +17,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
   
 ### To save a file using the SaveFileDialog component  
   
--   Display the **Save File** dialog box and call a method to save the file selected by the user.  
+- Display the **Save File** dialog box and call a method to save the file selected by the user.  
   
      Use the <xref:System.Windows.Forms.SaveFileDialog> component's <xref:System.Windows.Forms.SaveFileDialog.OpenFile%2A> method to save the file. This method gives you a <xref:System.IO.Stream> object you can write to.  
   

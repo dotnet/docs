@@ -8,7 +8,7 @@ An attempt has been made to access an event log that does not exist on this mach
   
 ## To correct this error  
   
--   Check that you are supplying the correct file name and path.  
+- Check that you are supplying the correct file name and path.  
   
 ## See also
 

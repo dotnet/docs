@@ -18,15 +18,15 @@ This sample demonstrates how to handle and process messages that have failed del
 
  The dead-letter queue in the `NetMsmqBinding` binding is expressed in the following properties:
 
--   <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
+- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
 
--   `None`: No dead-letter queue is required by the client.
+- `None`: No dead-letter queue is required by the client.
 
--   `System`: The system dead-letter queue is used to store dead messages. The system dead-letter queue is shared by all applications running on the computer.
+- `System`: The system dead-letter queue is used to store dead messages. The system dead-letter queue is shared by all applications running on the computer.
 
--   `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
+- `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
 
--   <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in [!INCLUDE[wv](../../../../includes/wv-md.md)].
 
  In this sample, the client sends a batch of messages to the service from within the scope of a transaction and specifies an arbitrarily low value for "time-to-live" for these messages (about 2 seconds). The client also specifies a custom dead-letter queue to use to enqueue the messages that have expired.
 
@@ -308,15 +308,15 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 
 2. If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
 
-    1.  Open Server Manager in Visual Studio 2012.
+    1. Open Server Manager in Visual Studio 2012.
 
-    2.  Expand the **Features** tab.
+    2. Expand the **Features** tab.
 
-    3.  Right-click **Private Message Queues**, and select **New**, **Private Queue**.
+    3. Right-click **Private Message Queues**, and select **New**, **Private Queue**.
 
-    4.  Check the **Transactional** box.
+    4. Check the **Transactional** box.
 
-    5.  Enter `ServiceModelSamplesTransacted` as the name of the new queue.
+    5. Enter `ServiceModelSamplesTransacted` as the name of the new queue.
 
 3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 

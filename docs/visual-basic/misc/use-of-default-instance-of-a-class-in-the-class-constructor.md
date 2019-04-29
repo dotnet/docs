@@ -8,7 +8,7 @@ A default instance of a class has been used in the constructor of the class. Thi
   
 ## To correct this error  
   
--   Remove the default instance from the class constructor.  
+- Remove the default instance from the class constructor.  
   
 ## See also
 

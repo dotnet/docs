@@ -27,15 +27,15 @@ Side-by-side execution is the ability to run multiple versions of an application
   
  Side-by-side execution and the .NET Framework provide the following features to eliminate DLL conflicts:  
   
--   Strong-named assemblies.  
+- Strong-named assemblies.  
   
      Side-by-side execution uses strong-named assemblies to bind type information to a specific version of an assembly. This prevents an application or component from binding to an invalid version of an assembly. Strong-named assemblies also allow multiple versions of a file to exist on the same computer and to be used by applications. For more information, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md).  
   
--   Version-aware code storage.  
+- Version-aware code storage.  
   
      The .NET Framework provides version-aware code storage in the global assembly cache. The global assembly cache is a computer-wide code cache present on all computers with the .NET Framework installed. It stores assemblies based on version, culture, and publisher information, and supports multiple versions of components and applications. For more information, see [Global Assembly Cache](../../../docs/framework/app-domains/gac.md).  
   
--   Isolation.  
+- Isolation.  
   
      Using the .NET Framework, you can create applications and components that execute in isolation. Isolation is an essential component of side-by-side execution. It involves being aware of the resources you are using and sharing resources with confidence among multiple versions of an application or component. Isolation also includes storing files in a version-specific way. For more information about isolation, see [Guidelines for Creating Components for Side-by-Side Execution](../../../docs/framework/deployment/guidelines-for-creating-components-for-side-by-side-execution.md).  
   
@@ -60,9 +60,9 @@ Side-by-side execution is the ability to run multiple versions of an application
 ## Determining Which Version of the Runtime to Load  
  The common language runtime uses the following information to determine which version of the runtime to load for an application:  
   
--   The runtime versions that are available.  
+- The runtime versions that are available.  
   
--   The runtime versions that an application supports.  
+- The runtime versions that an application supports.  
   
 ### Supported Runtime Versions  
  The runtime uses the application configuration file and the portable executable (PE) file header to determine which version of the runtime an application supports. If no application configuration file is present, the runtime loads the runtime version specified in the application's PE file header, if that version is available.  

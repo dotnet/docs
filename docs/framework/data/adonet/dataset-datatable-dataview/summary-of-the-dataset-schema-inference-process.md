@@ -8,21 +8,21 @@ The inference process first determines, from the XML document, which elements wi
   
  Following is a brief summary of inference rules:  
   
--   Elements that have attributes are inferred as tables.  
+- Elements that have attributes are inferred as tables.  
   
--   Elements that have child elements are inferred as tables.  
+- Elements that have child elements are inferred as tables.  
   
--   Elements that repeat are inferred as a single table.  
+- Elements that repeat are inferred as a single table.  
   
--   If the document, or root, element has no attributes, and no child elements that would be inferred as columns, it is inferred as a <xref:System.Data.DataSet>. Otherwise, the document element is inferred as a table.  
+- If the document, or root, element has no attributes, and no child elements that would be inferred as columns, it is inferred as a <xref:System.Data.DataSet>. Otherwise, the document element is inferred as a table.  
   
--   Attributes are inferred as columns.  
+- Attributes are inferred as columns.  
   
--   Elements that have no attributes or child elements, and that do not repeat, are inferred as columns.  
+- Elements that have no attributes or child elements, and that do not repeat, are inferred as columns.  
   
--   For elements that are inferred as nested tables within other elements that are also inferred as tables, a nested **DataRelation** is created between the two tables. A new, primary key column named **TableName_Id** is added to both tables and used by the **DataRelation**. A **ForeignKeyConstraint** is created between the two tables using the **TableName_Id** column.  
+- For elements that are inferred as nested tables within other elements that are also inferred as tables, a nested **DataRelation** is created between the two tables. A new, primary key column named **TableName_Id** is added to both tables and used by the **DataRelation**. A **ForeignKeyConstraint** is created between the two tables using the **TableName_Id** column.  
   
--   For elements that are inferred as tables and that contain text but have no child elements, a new column named **TableName_Text** is created for the text of each of the elements. If an element is inferred as a table and has text, but also has child elements, the text is ignored.  
+- For elements that are inferred as tables and that contain text but have no child elements, a new column named **TableName_Text** is created for the text of each of the elements. If an element is inferred as a table and has text, but also has child elements, the text is ignored.  
   
 ## See also
 

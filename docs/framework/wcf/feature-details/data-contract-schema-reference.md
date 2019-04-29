@@ -18,19 +18,19 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 ### Support Levels  
  The `DataContractSerializer` provides the following levels of support for a given XML Schema feature:  
   
--   **Supported**. There is explicit mapping from this feature to CLR types or attributes (or both) using `DataContractSerializer`.  
+- **Supported**. There is explicit mapping from this feature to CLR types or attributes (or both) using `DataContractSerializer`.  
   
--   **Ignored**. The feature is allowed in schemas imported by the `DataContractSerializer`, but has no effect on code generation.  
+- **Ignored**. The feature is allowed in schemas imported by the `DataContractSerializer`, but has no effect on code generation.  
   
--   **Forbidden**. The `DataContractSerializer` does not support importing a schema using the feature. For example, Svcutil.exe, when accessing a WSDL with a schema that uses such a feature, falls back to using the <xref:System.Xml.Serialization.XmlSerializer> instead. This is by default.  
+- **Forbidden**. The `DataContractSerializer` does not support importing a schema using the feature. For example, Svcutil.exe, when accessing a WSDL with a schema that uses such a feature, falls back to using the <xref:System.Xml.Serialization.XmlSerializer> instead. This is by default.  
   
 ## General Information  
   
--   The schema namespace is described at [XML Schema](https://go.microsoft.com/fwlink/?LinkId=95475). The prefix "xs" is used in this document.  
+- The schema namespace is described at [XML Schema](https://go.microsoft.com/fwlink/?LinkId=95475). The prefix "xs" is used in this document.  
   
--   Any attributes with a non-schema namespace are ignored.  
+- Any attributes with a non-schema namespace are ignored.  
   
--   Any annotations (except for those described in this document) are ignored.  
+- Any annotations (except for those described in this document) are ignored.  
   
 ### \<xs:schema>: attributes  
   
@@ -114,11 +114,11 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 ### General Information  
  `<xs:element>` can occur in the following contexts:  
   
--   It can occur within an `<xs:sequence>`, which describes a data member of a regular (non-collection) data contract. In this case, the `maxOccurs` attribute must be 1. (A value of 0 is not allowed).  
+- It can occur within an `<xs:sequence>`, which describes a data member of a regular (non-collection) data contract. In this case, the `maxOccurs` attribute must be 1. (A value of 0 is not allowed).  
   
--   It can occur within an `<xs:sequence>`, which describes a data member of a collection data contract. In this case, the `maxOccurs` attribute must be greater than 1 or "unbounded".  
+- It can occur within an `<xs:sequence>`, which describes a data member of a collection data contract. In this case, the `maxOccurs` attribute must be greater than 1 or "unbounded".  
   
--   It can occur within an `<xs:schema>` as a Global Element Declaration (GED).  
+- It can occur within an `<xs:schema>` as a Global Element Declaration (GED).  
   
 ### \<xs:element> with maxOccurs=1 within an \<xs:sequence> (Data Members)  
   
@@ -138,17 +138,17 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
 ### \<xs:element> with maxOccurs>1 within an \<xs:sequence> (Collections)  
   
--   Maps to a <xref:System.Runtime.Serialization.CollectionDataContractAttribute>.  
+- Maps to a <xref:System.Runtime.Serialization.CollectionDataContractAttribute>.  
   
--   In collection types, only one xs:element is allowed within an xs:sequence.  
+- In collection types, only one xs:element is allowed within an xs:sequence.  
   
  Collections can be of the following types:  
   
--   Regular collections (for example, arrays).  
+- Regular collections (for example, arrays).  
   
--   Dictionary collections (mapping one value to another; for example, a <xref:System.Collections.Hashtable>).  
+- Dictionary collections (mapping one value to another; for example, a <xref:System.Collections.Hashtable>).  
   
--   The only difference between a dictionary and an array of a key/value pair type is in the generated programming model. There is a schema annotation mechanism that can be used to indicate that a given type is a dictionary collection.  
+- The only difference between a dictionary and an array of a key/value pair type is in the generated programming model. There is a schema annotation mechanism that can be used to indicate that a given type is a dictionary collection.  
   
  The rules for the `ref`, `block`, `default`, `fixed`, `form`, and `id` attributes are the same as for the non-collection case. Other attributes include those in the following table.  
   
@@ -162,13 +162,13 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
 ### \<xs:element> within an \<xs:schema> Global Element Declaration  
   
--   A Global Element Declaration (GED) that has the same name and namespace as a type in schema, or that defines an anonymous type inside itself, is said to be associated with the type.  
+- A Global Element Declaration (GED) that has the same name and namespace as a type in schema, or that defines an anonymous type inside itself, is said to be associated with the type.  
   
--   Schema export: associated GEDs are generated for every generated type, both simple and complex.  
+- Schema export: associated GEDs are generated for every generated type, both simple and complex.  
   
--   Deserialization/serialization: associated GEDs are used as root elements for the type.  
+- Deserialization/serialization: associated GEDs are used as root elements for the type.  
   
--   Schema import: associated GEDs are not required and are ignored if they follow the following rules (unless they define types).  
+- Schema import: associated GEDs are not required and are ignored if they follow the following rules (unless they define types).  
   
 |Attribute|Schema|  
 |---------------|------------|  
@@ -196,11 +196,11 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
  \* When using the `simpleType` and `complexType,` mapping for anonymous types is the same as for non-anonymous types, except that there is no anonymous data contracts, and so a named data contract is created, with a generated name derived from the element name. The rules for anonymous types are in the following list:  
   
--   WCF implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
+- WCF implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).  
   
--   The generated data contract name of the inner type is the data contract name of the outer type followed by a period, the name of the element, and the string "Type".  
+- The generated data contract name of the inner type is the data contract name of the outer type followed by a period, the name of the element, and the string "Type".  
   
--   If a data contract with such a name already exists, the name is made unique by appending "1", "2", "3", and so on until a unique name is created.  
+- If a data contract with such a name already exists, the name is made unique by appending "1", "2", "3", and so on until a unique name is created.  
   
 ## Simple Types - \<xs:simpleType>  
   
@@ -222,11 +222,11 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
 ### \<xs:restriction>  
   
--   Complex type restrictions are supported only for base="`xs:anyType`".  
+- Complex type restrictions are supported only for base="`xs:anyType`".  
   
--   Simple type restrictions of `xs:string` that do not have any restriction facets other than `xs:enumeration` are mapped to enumeration data contracts.  
+- Simple type restrictions of `xs:string` that do not have any restriction facets other than `xs:enumeration` are mapped to enumeration data contracts.  
   
--   All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. For more information about primitive type mapping, see Type/primitive mapping.  
+- All other simple type restrictions are mapped to the types they restrict. For example, a restriction of `xs:int` maps to an integer, just as `xs:int` itself does. For more information about primitive type mapping, see Type/primitive mapping.  
   
 ### \<xs:restriction>: attributes  
   
@@ -458,9 +458,9 @@ public class Employee : Person
   
  If a derived type contains an element with the same name as an element in a base type, the duplicate element declaration maps to a data member with a name that is generated to be unique. Positive integer numbers are added to the data member name ("member1", "member2", and so on) until a unique name is found. Conversely:  
   
--   If a derived data contract has a data member with the same name and type as a data member in a base data contract, `DataContractSerializer` generates this corresponding element in the derived type.  
+- If a derived data contract has a data member with the same name and type as a data member in a base data contract, `DataContractSerializer` generates this corresponding element in the derived type.  
   
--   If a derived data contract has a data member with the same name as a data member in a base data contract but a different type, the `DataContractSerializer` imports a schema with an element of the type `xs:anyType` in both base type and derived type declarations. The original type name is preserved in `xs:annotations/xs:appInfo/ser:ActualType/@Name`.  
+- If a derived data contract has a data member with the same name as a data member in a base data contract but a different type, the `DataContractSerializer` imports a schema with an element of the type `xs:anyType` in both base type and derived type declarations. The original type name is preserved in `xs:annotations/xs:appInfo/ser:ActualType/@Name`.  
   
  Both variations may lead to a schema with an ambiguous content model, which depends on the order of the respective data members.  
   
@@ -603,11 +603,11 @@ public class Employee : Person
   
  The following should be noted:  
   
--   `ser:char` is introduced to represent Unicode characters of type <xref:System.Char>.  
+- `ser:char` is introduced to represent Unicode characters of type <xref:System.Char>.  
   
--   The `valuespace` of `xs:duration` is reduced to an ordered set so that it can be mapped to a <xref:System.TimeSpan>.  
+- The `valuespace` of `xs:duration` is reduced to an ordered set so that it can be mapped to a <xref:System.TimeSpan>.  
   
--   `FactoryType` is used in schemas exported from types that are derived from <xref:System.Runtime.Serialization.ISerializable>.  
+- `FactoryType` is used in schemas exported from types that are derived from <xref:System.Runtime.Serialization.ISerializable>.  
   
 ## Importing non-DataContract schemas  
  `DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).  

@@ -16,9 +16,9 @@ Extension methods are a language feature that allows static methods to be called
   
  **✓ CONSIDER** using extension methods in any of the following scenarios:  
   
--   To provide helper functionality relevant to every implementation of an interface, if said functionality can be written in terms of the core interface. This is because concrete implementations cannot otherwise be assigned to interfaces. For example, the `LINQ to Objects` operators are implemented as extension methods for all <xref:System.Collections.Generic.IEnumerable%601> types. Thus, any `IEnumerable<>` implementation is automatically LINQ-enabled.  
+- To provide helper functionality relevant to every implementation of an interface, if said functionality can be written in terms of the core interface. This is because concrete implementations cannot otherwise be assigned to interfaces. For example, the `LINQ to Objects` operators are implemented as extension methods for all <xref:System.Collections.Generic.IEnumerable%601> types. Thus, any `IEnumerable<>` implementation is automatically LINQ-enabled.  
   
--   When an instance method would introduce a dependency on some type, but such a dependency would break dependency management rules. For example, a dependency from <xref:System.String> to <xref:System.Uri?displayProperty=nameWithType> is probably not desirable, and so `String.ToUri()` instance method returning `System.Uri` would be the wrong design from a dependency management perspective. A static extension method `Uri.ToUri(this string str)` returning `System.Uri` would be a much better design.  
+- When an instance method would introduce a dependency on some type, but such a dependency would break dependency management rules. For example, a dependency from <xref:System.String> to <xref:System.Uri?displayProperty=nameWithType> is probably not desirable, and so `String.ToUri()` instance method returning `System.Uri` would be the wrong design from a dependency management perspective. A static extension method `Uri.ToUri(this string str)` returning `System.Uri` would be a much better design.  
   
  **X AVOID** defining extension methods on <xref:System.Object?displayProperty=nameWithType>.  
   

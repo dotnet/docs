@@ -8,13 +8,13 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
   
  When a client calls a Web method in an ASMX Web service that is session-based, the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] engine does the following:  
   
--   Generates a unique ID (session ID).  
+- Generates a unique ID (session ID).  
   
--   Generates the session object and associates it with the unique ID.  
+- Generates the session object and associates it with the unique ID.  
   
--   Adds the unique ID to a Set-Cookie HTTP response header and sends it to the client.  
+- Adds the unique ID to a Set-Cookie HTTP response header and sends it to the client.  
   
--   Identifies the client on subsequent calls based on the session ID it sends to it.  
+- Identifies the client on subsequent calls based on the session ID it sends to it.  
   
  The client includes this session ID in its subsequent requests to the server. The server uses the session ID from the client to load the appropriate session object for the current HTTP context.  
   
@@ -33,7 +33,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
 ## Service Channel  
  The sample provides a service channel in the `HttpCookieReplySessionChannelListener` class. This class implements the <xref:System.ServiceModel.Channels.IChannelListener> interface and converts the <xref:System.ServiceModel.Channels.IReplyChannel> channel from lower in the channel stack to a <xref:System.ServiceModel.Channels.IReplySessionChannel>. This process can be divided into the following parts:  
   
--   When the channel listener is opened, it accepts an inner channel from its inner listener. Because the inner listener is a datagram listener and the lifetime of an accepted channel is decoupled from the lifetime of the listener, we can close the inner listener and only hold on to the inner channel  
+- When the channel listener is opened, it accepts an inner channel from its inner listener. Because the inner listener is a datagram listener and the lifetime of an accepted channel is decoupled from the lifetime of the listener, we can close the inner listener and only hold on to the inner channel  
   
     ```  
                 this.innerChannelListener.Open(timeoutHelper.RemainingTime());  
@@ -42,7 +42,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
     this.innerChannelListener.Close(timeoutHelper.RemainingTime());  
     ```  
   
--   When the open process completes, we set up a message loop to receive messages from the inner channel.  
+- When the open process completes, we set up a message loop to receive messages from the inner channel.  
   
     ```  
     IAsyncResult result = BeginInnerReceiveRequest();  
@@ -57,7 +57,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
     }  
     ```  
   
--   When a message arrives, the service channel examines the session identifier and de-multiplexes to the appropriate session channel. The channel listener maintains a dictionary that maps the session identifiers to the session channel instances.  
+- When a message arrives, the service channel examines the session identifier and de-multiplexes to the appropriate session channel. The channel listener maintains a dictionary that maps the session identifiers to the session channel instances.  
   
     ```  
     Dictionary<string, IReplySessionChannel> channelMapping;  

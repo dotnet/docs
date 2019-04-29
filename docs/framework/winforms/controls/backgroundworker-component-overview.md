@@ -21,17 +21,17 @@ ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
 # BackgroundWorker Component Overview
 There are many commonly performed operations that can take a long time to execute. For example:  
   
--   Image downloads  
+- Image downloads  
   
--   Web service invocations  
+- Web service invocations  
   
--   File downloads and uploads (including for peer-to-peer applications)  
+- File downloads and uploads (including for peer-to-peer applications)  
   
--   Complex local computations  
+- Complex local computations  
   
--   Database transactions  
+- Database transactions  
   
--   Local disk access, given its slow speed relative to memory access  
+- Local disk access, given its slow speed relative to memory access  
   
  Operations like these can cause your user interface to hang while they are running. When you want a responsive UI and you are faced with long delays associated with such operations, the <xref:System.ComponentModel.BackgroundWorker> component provides a convenient solution.  
   

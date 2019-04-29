@@ -17,7 +17,7 @@ XML literals and XML properties are not supported in embedded code within ASP.NE
   
 ## To correct this error  
   
--   Move the code that includes the XML literal or XML axis property to an ASP.NET code-behind file.  
+- Move the code that includes the XML literal or XML axis property to an ASP.NET code-behind file.  
   
 ## See also
 

@@ -13,13 +13,13 @@ ms.author: "ronpet"
 # Assembly Contents
 In general, a static assembly can consist of four elements:  
   
--   The [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md), which contains assembly metadata.  
+- The [assembly manifest](../../../docs/framework/app-domains/assembly-manifest.md), which contains assembly metadata.  
   
--   Type metadata.  
+- Type metadata.  
   
--   Microsoft intermediate language (MSIL) code that implements the types.  
+- Microsoft intermediate language (MSIL) code that implements the types.  
   
--   A set of resources.  
+- A set of resources.  
   
  Only the assembly manifest is required, but either types or resources are needed to give the assembly any meaningful functionality.  
   

@@ -15,13 +15,13 @@ Array sizes cannot be declared as part of a data type specifier.
   
 ## To correct this error  
   
--   Specify the size of the array immediately following the variable name instead of placing the array size after the type, as shown in the following example.  
+- Specify the size of the array immediately following the variable name instead of placing the array size after the type, as shown in the following example.  
   
     ```  
     Dim Array(8) As Integer   
     ```  
   
--   Define an array and initialize it with the desired number of elements, as shown in the following example.  
+- Define an array and initialize it with the desired number of elements, as shown in the following example.  
   
     ```  
     Dim Array2() As Integer = New Integer(8) {}  

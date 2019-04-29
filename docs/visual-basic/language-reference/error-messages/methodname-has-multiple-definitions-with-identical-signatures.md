@@ -15,7 +15,7 @@ A `Function` or `Sub` procedure declaration uses the identical procedure name an
   
 ## To correct this error  
   
--   Change the procedure name or the argument list, or remove the duplicate declaration.  
+- Change the procedure name or the argument list, or remove the duplicate declaration.  
   
 ## See also
 

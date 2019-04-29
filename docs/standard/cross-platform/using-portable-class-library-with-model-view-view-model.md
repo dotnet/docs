@@ -26,27 +26,27 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
 ## Classes That Support MVVM
  When you target the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], Silverlight, or Windows Phone 7.5 for your [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project, the following classes are available for implementing the MVVM pattern:
 
--   <xref:System.Collections.ObjectModel.ObservableCollection%601?displayProperty=nameWithType> class
+- <xref:System.Collections.ObjectModel.ObservableCollection%601?displayProperty=nameWithType> class
 
--   <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601?displayProperty=nameWithType> class
+- <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601?displayProperty=nameWithType> class
 
--   <xref:System.Collections.Specialized.INotifyCollectionChanged?displayProperty=nameWithType> class
+- <xref:System.Collections.Specialized.INotifyCollectionChanged?displayProperty=nameWithType> class
 
--   <xref:System.Collections.Specialized.NotifyCollectionChangedAction?displayProperty=nameWithType> class
+- <xref:System.Collections.Specialized.NotifyCollectionChangedAction?displayProperty=nameWithType> class
 
--   <xref:System.Collections.Specialized.NotifyCollectionChangedEventArgs?displayProperty=nameWithType> class
+- <xref:System.Collections.Specialized.NotifyCollectionChangedEventArgs?displayProperty=nameWithType> class
 
--   <xref:System.Collections.Specialized.NotifyCollectionChangedEventHandler?displayProperty=nameWithType> class
+- <xref:System.Collections.Specialized.NotifyCollectionChangedEventHandler?displayProperty=nameWithType> class
 
--   <xref:System.ComponentModel.DataErrorsChangedEventArgs?displayProperty=nameWithType> class
+- <xref:System.ComponentModel.DataErrorsChangedEventArgs?displayProperty=nameWithType> class
 
--   <xref:System.ComponentModel.INotifyDataErrorInfo?displayProperty=nameWithType> class
+- <xref:System.ComponentModel.INotifyDataErrorInfo?displayProperty=nameWithType> class
 
--   <xref:System.ComponentModel.INotifyPropertyChanged?displayProperty=nameWithType> class
+- <xref:System.ComponentModel.INotifyPropertyChanged?displayProperty=nameWithType> class
 
--   <xref:System.Windows.Input.ICommand?displayProperty=nameWithType> class
+- <xref:System.Windows.Input.ICommand?displayProperty=nameWithType> class
 
--   All classes in the <xref:System.ComponentModel.DataAnnotations?displayProperty=nameWithType> namespace
+- All classes in the <xref:System.ComponentModel.DataAnnotations?displayProperty=nameWithType> namespace
 
 ## Implementing MVVM
  To implement MVVM, you typically create both the model and the view model in a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project, because a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project cannot reference a non-portable project. The model and view model can be in the same project or in separate projects. If you use separate projects, add a reference from the view model project to the model project.

@@ -35,9 +35,9 @@ HRESULT InstallAssembly (
  `dwFlags`  
  [in] Flags defined in Fusion.idl. The following values are supported:  
   
--   IASSEMBLYCACHE_INSTALL_FLAG_REFRESH (0x00000001)  
+- IASSEMBLYCACHE_INSTALL_FLAG_REFRESH (0x00000001)  
   
--   IASSEMBLYCACHE_INSTALL_FLAG_FORCE_REFRESH (0x00000002)  
+- IASSEMBLYCACHE_INSTALL_FLAG_FORCE_REFRESH (0x00000002)  
   
  `pszManifestFilePath`  
  [in] The path to the manifest for the assembly to install.  

@@ -6,9 +6,9 @@ ms.assetid: acfd3149-f519-4c6e-8fe1-b21d243a0e58
 # Aggregate Functions (Entity SQL)
 An aggregate is a language construct that condenses a collection into a scalar as a part of a group operation. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] aggregates come in two forms:  
   
--   [!INCLUDE[esql](../../../../../../includes/esql-md.md)] collection functions that may be used anywhere in an expression. This includes using aggregate functions in projections and predicates that act on collections. Collection functions are the preferred mode of specifying aggregates in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
+- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] collection functions that may be used anywhere in an expression. This includes using aggregate functions in projections and predicates that act on collections. Collection functions are the preferred mode of specifying aggregates in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
--   Group aggregates in query expressions that have a GROUP BY clause. As in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], group aggregates accept DISTINCT and ALL as modifiers to the aggregate input.  
+- Group aggregates in query expressions that have a GROUP BY clause. As in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], group aggregates accept DISTINCT and ALL as modifiers to the aggregate input.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] first tries to interpret an expression as a collection function and if the expression is in the context of a SELECT expression it interprets it as a group aggregate.  
   

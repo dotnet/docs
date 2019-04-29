@@ -14,7 +14,7 @@ Use the following procedure to enable the user to press the TAB key to move out 
   
 ### To enable the user to press the TAB key to move out of a ToolStrip to the next control  
   
--   Set the <xref:System.Windows.Forms.ToolStrip.TabStop%2A> property of the <xref:System.Windows.Forms.ToolStrip> to `true`.  
+- Set the <xref:System.Windows.Forms.ToolStrip.TabStop%2A> property of the <xref:System.Windows.Forms.ToolStrip> to `true`.  
   
 ## See also
 

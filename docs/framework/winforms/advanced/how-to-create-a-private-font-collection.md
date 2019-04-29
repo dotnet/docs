@@ -19,11 +19,11 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
 ## Example  
  The following example adds the following three font files to a <xref:System.Drawing.Text.PrivateFontCollection> object:  
   
--   C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
+- C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
   
--   C:\\*systemroot*\Fonts\CourBI.tff (Courier New, bold italic)  
+- C:\\*systemroot*\Fonts\CourBI.tff (Courier New, bold italic)  
   
--   C:\\*systemroot*\Fonts\TimesBd.tff (Times New Roman, bold)  
+- C:\\*systemroot*\Fonts\TimesBd.tff (Times New Roman, bold)  
   
  The code retrieves an array of <xref:System.Drawing.FontFamily> objects from the <xref:System.Drawing.Text.FontCollection.Families%2A> property of the <xref:System.Drawing.Text.PrivateFontCollection> object.  
   

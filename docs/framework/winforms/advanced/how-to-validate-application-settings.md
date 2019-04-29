@@ -28,11 +28,11 @@ This topic demonstrates how to validate application settings before they are per
   
  An event handler generally performs one of the following actions when it detects an invalid value:  
   
--   Automatically supplies a value known to be correct, such as the default value.  
+- Automatically supplies a value known to be correct, such as the default value.  
   
--   Re-queries the user of server code for information.  
+- Re-queries the user of server code for information.  
   
--   For events raised before their associated actions, such as <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>, uses the <xref:System.ComponentModel.CancelEventArgs> argument to cancel the operation.  
+- For events raised before their associated actions, such as <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>, uses the <xref:System.ComponentModel.CancelEventArgs> argument to cancel the operation.  
   
  For more information about event handling, see [Event Handlers Overview](../event-handlers-overview-windows-forms.md).  
   
@@ -40,9 +40,9 @@ This topic demonstrates how to validate application settings before they are per
   
 ### To obtain the application settings object  
   
--   Obtain a reference to the application settings object (the wrapper instance) by completing one of the following bulleted items:  
+- Obtain a reference to the application settings object (the wrapper instance) by completing one of the following bulleted items:  
   
-    -   If you created your settings using the Visual Studio Application Settings dialog box in the **Property Editor**, you can retrieve the default settings object generated for your language through the following expression.  
+    - If you created your settings using the Visual Studio Application Settings dialog box in the **Property Editor**, you can retrieve the default settings object generated for your language through the following expression.  
   
         ```csharp  
         Configuration.Settings.Default   
@@ -54,11 +54,11 @@ This topic demonstrates how to validate application settings before they are per
   
          -or-  
   
-    -   If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](~/docs/visual-basic/language-reference/objects/my-settings-object.md).  
+    - If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](~/docs/visual-basic/language-reference/objects/my-settings-object.md).  
   
          -or-  
   
-    -   If you created your settings by deriving from <xref:System.Configuration.ApplicationSettingsBase> directly, you need to instantiate your class manually.  
+    - If you created your settings by deriving from <xref:System.Configuration.ApplicationSettingsBase> directly, you need to instantiate your class manually.  
   
         ```csharp  
         MyCustomSettings settings = new MyCustomSettings();  

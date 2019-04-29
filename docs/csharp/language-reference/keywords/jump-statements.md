@@ -11,15 +11,15 @@ ms.assetid: 58da6ae7-7388-491e-828f-e74485d87d53
 # Jump Statements (C# Reference)
 Branching is performed using jump statements, which cause an immediate transfer of the program control. The following keywords are used in jump statements:  
   
--   [break](../../../csharp/language-reference/keywords/break.md)  
+- [break](../../../csharp/language-reference/keywords/break.md)  
   
--   [continue](../../../csharp/language-reference/keywords/continue.md)  
+- [continue](../../../csharp/language-reference/keywords/continue.md)  
   
--   [goto](../../../csharp/language-reference/keywords/goto.md)  
+- [goto](../../../csharp/language-reference/keywords/goto.md)  
   
--   [return](../../../csharp/language-reference/keywords/return.md)  
+- [return](../../../csharp/language-reference/keywords/return.md)  
   
--   [throw](../../../csharp/language-reference/keywords/throw.md)  
+- [throw](../../../csharp/language-reference/keywords/throw.md)  
   
 ## See also
 

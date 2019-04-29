@@ -19,15 +19,15 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 ## Implementation Guidelines and Conventions  
  When implementing the Window control pattern, note the following guidelines and conventions:  
   
--   To support the ability to modify both window size and screen position using UI Automation, a control must implement <xref:System.Windows.Automation.Provider.ITransformProvider> in addition to <xref:System.Windows.Automation.Provider.IWindowProvider>.  
+- To support the ability to modify both window size and screen position using UI Automation, a control must implement <xref:System.Windows.Automation.Provider.ITransformProvider> in addition to <xref:System.Windows.Automation.Provider.IWindowProvider>.  
   
--   Controls that contain title bars and title bar elements that enable the control to be moved, resized, maximized, minimized, or closed are typically required to implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
+- Controls that contain title bars and title bar elements that enable the control to be moved, resized, maximized, minimized, or closed are typically required to implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
   
--   Controls such as tooltip pop-ups and combo box or menu drop-downs do not typically implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
+- Controls such as tooltip pop-ups and combo box or menu drop-downs do not typically implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
   
--   Balloon help windows are differentiated from basic tooltip pop-ups by the provision of a window-like Close button.  
+- Balloon help windows are differentiated from basic tooltip pop-ups by the provision of a window-like Close button.  
   
--   Full-screen mode is not supported by IWindowProvider as it is feature-specific to an application and is not typical window behavior.  
+- Full-screen mode is not supported by IWindowProvider as it is feature-specific to an application and is not typical window behavior.  
   
 <a name="Required_Members_for_IWindowProvider"></a>   
 ## Required Members for IWindowProvider  

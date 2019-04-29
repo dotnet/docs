@@ -9,21 +9,21 @@ Procedural workflows use flow-control methods similar to those found in procedur
 ## Controlling Execution Flow  
  The workflow activity library has activities for modeling most flow-control methods used in procedural languages. These include:  
   
--   <xref:System.Activities.Statements.While>  
+- <xref:System.Activities.Statements.While>  
   
--   <xref:System.Activities.Statements.DoWhile>  
+- <xref:System.Activities.Statements.DoWhile>  
   
--   <xref:System.Activities.Statements.ForEach%601>  
+- <xref:System.Activities.Statements.ForEach%601>  
   
--   <xref:System.Activities.Statements.Parallel>  
+- <xref:System.Activities.Statements.Parallel>  
   
--   <xref:System.Activities.Statements.ParallelForEach%601>  
+- <xref:System.Activities.Statements.ParallelForEach%601>  
   
--   <xref:System.Activities.Statements.If>  
+- <xref:System.Activities.Statements.If>  
   
--   <xref:System.Activities.Statements.Switch%601>  
+- <xref:System.Activities.Statements.Switch%601>  
   
--   <xref:System.Activities.Statements.Pick>  
+- <xref:System.Activities.Statements.Pick>  
   
  To use flow control activities, drag and drop them from the **Activity** toolbox into a composite activity inside the designer window.  
   

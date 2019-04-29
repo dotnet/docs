@@ -13,9 +13,9 @@ ms.author: "mairaw"
   
  This category consists of the following events:  
   
--   [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstart_v1_and_strongnameverificationstop_v1_events)  
+- [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstart_v1_and_strongnameverificationstop_v1_events)  
   
--   [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events)  
+- [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events)  
   
 <a name="strongnameverificationstart_v1_and_strongnameverificationstop_v1_events"></a>   
 ## StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events  

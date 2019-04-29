@@ -17,27 +17,27 @@ Precise placement of controls on your form is a high priority for many applicati
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows Forms project  
+- Creating a Windows Forms project  
   
--   Spacing and Aligning Controls Using Snaplines  
+- Spacing and Aligning Controls Using Snaplines  
   
--   Aligning to Form and Container Margins  
+- Aligning to Form and Container Margins  
   
--   Aligning to Grouped Controls  
+- Aligning to Grouped Controls  
   
--   Using Snaplines to Place a Control by Outlining Its Size  
+- Using Snaplines to Place a Control by Outlining Its Size  
   
--   Using Snaplines When Dragging a Control from the Toolbox  
+- Using Snaplines When Dragging a Control from the Toolbox  
   
--   Resizing Controls Using Snaplines  
+- Resizing Controls Using Snaplines  
   
--   Aligning a Label to a Control's Text  
+- Aligning a Label to a Control's Text  
   
--   Using Snaplines with Keyboard Navigation  
+- Using Snaplines with Keyboard Navigation  
   
--   Snaplines and Layout Panels  
+- Snaplines and Layout Panels  
   
--   Disabling Snaplines  
+- Disabling Snaplines  
   
  When you are finished, you will have an understanding of the layout role played by the snaplines feature.  
   
@@ -210,7 +210,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 #### To selectively disable snaplines  
   
--   Press the ALT key and while moving a control around the form.  
+- Press the ALT key and while moving a control around the form.  
   
      Note that no snaplines appear and the control does not snap to any potential alignment positions.  
   
@@ -227,9 +227,9 @@ Precise placement of controls on your form is a high priority for many applicati
 ## Next Steps  
  Snaplines offer an intuitive means of aligning controls on your form. Suggestions for more exploration include:  
   
--   Try nesting a <xref:System.Windows.Forms.GroupBox> control within another <xref:System.Windows.Forms.GroupBox> control. Place a <xref:System.Windows.Forms.Button> control within the child <xref:System.Windows.Forms.GroupBox> control, and another within the parent <xref:System.Windows.Forms.GroupBox> control. Move the <xref:System.Windows.Forms.Button> controls around to see how the snaplines cross container boundaries.  
+- Try nesting a <xref:System.Windows.Forms.GroupBox> control within another <xref:System.Windows.Forms.GroupBox> control. Place a <xref:System.Windows.Forms.Button> control within the child <xref:System.Windows.Forms.GroupBox> control, and another within the parent <xref:System.Windows.Forms.GroupBox> control. Move the <xref:System.Windows.Forms.Button> controls around to see how the snaplines cross container boundaries.  
   
--   Create a column of <xref:System.Windows.Forms.TextBox> controls and a corresponding column of <xref:System.Windows.Forms.Label> controls. Set the value of the <xref:System.Windows.Forms.Label> controls' <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`. Use snaplines to move the <xref:System.Windows.Forms.Label> controls so their displayed text is aligned with the text in the <xref:System.Windows.Forms.TextBox> controls.  
+- Create a column of <xref:System.Windows.Forms.TextBox> controls and a corresponding column of <xref:System.Windows.Forms.Label> controls. Set the value of the <xref:System.Windows.Forms.Label> controls' <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`. Use snaplines to move the <xref:System.Windows.Forms.Label> controls so their displayed text is aligned with the text in the <xref:System.Windows.Forms.TextBox> controls.  
   
  For information about Windows user interface design, see the book *Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers* Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1).  
   

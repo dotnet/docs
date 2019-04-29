@@ -32,11 +32,11 @@ In Visual Basic, adding references to COM objects that have type libraries requi
   
 2. Call Tlbimp from a command prompt, providing the following information:  
   
-    -   Name and location of the DLL that contains the type library  
+    - Name and location of the DLL that contains the type library  
   
-    -   Name and location of the namespace where the information should be placed  
+    - Name and location of the namespace where the information should be placed  
   
-    -   Name and location of the target interop assembly  
+    - Name and location of the target interop assembly  
   
      The following code provides an example:  
   

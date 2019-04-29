@@ -15,32 +15,32 @@ This section shows you how to define and implement Windows Communication Foundat
 ## Overview  
  This topic provides a high-level conceptual orientation to designing and implementing WCF services. Subtopics provide more detailed information about the specifics of designing and implementation. Before designing and implementing your WCF application, it is recommended that you:  
   
--   Understand what a service contract is, how it works, and how to create one.  
+- Understand what a service contract is, how it works, and how to create one.  
   
--   Understand that contracts state minimum requirements that run-time configuration or the hosting environment may not support.  
+- Understand that contracts state minimum requirements that run-time configuration or the hosting environment may not support.  
   
 ## Service Contracts  
  A service contract is a statement that provides information about:  
   
--   The grouping of operations in a service.  
+- The grouping of operations in a service.  
   
--   The signature of the operations in terms of messages exchanged.  
+- The signature of the operations in terms of messages exchanged.  
   
--   The data types of these messages.  
+- The data types of these messages.  
   
--   The location of the operations.  
+- The location of the operations.  
   
--   The specific protocols and serialization formats that are used to support successful communication with the service.  
+- The specific protocols and serialization formats that are used to support successful communication with the service.  
   
  For example, a purchase order contract might have a `CreateOrder` operation that accepts an input of order information types and returns success or failure information, including an order identifier. It might also have a `GetOrderStatus` operation that accepts an order identifier and returns order status information. A service contract of this sort would specify:  
   
--   That the purchase order contract consisted of `CreateOrder` and `GetOrderStatus` operations.  
+- That the purchase order contract consisted of `CreateOrder` and `GetOrderStatus` operations.  
   
--   That the operations have specified input messages and output messages.  
+- That the operations have specified input messages and output messages.  
   
--   The data that these messages can carry.  
+- The data that these messages can carry.  
   
--   Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
+- Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
   
  To convey this kind of information to applications on other platforms (including non-Microsoft platforms), XML service contracts are publicly expressed in standard XML formats, such as [Web Services Description Language (WSDL)](https://go.microsoft.com/fwlink/?LinkId=87004) and [XML Schema (XSD)](https://go.microsoft.com/fwlink/?LinkId=87005), among others. Developers for many platforms can use this public contract information to create applications that can communicate with the service, both because they understand the language of the specification and because those languages are designed to enable interoperation by describing the public forms, formats, and protocols that the service supports. For more information about how WCF handles this kind of information, see [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md).  
   

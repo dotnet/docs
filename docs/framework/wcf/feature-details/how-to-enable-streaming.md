@@ -15,9 +15,9 @@ Windows Communication Foundation (WCF) can send messages using either buffered o
   
 1. To stream data, the `OperationContract` for the service must satisfy two requirements:  
   
-    1.  The parameter that holds the data to be streamed must be the only parameter in the method. For example, if the input message is the one to be streamed, the operation must have exactly one input parameter. Similarly, if the output message is to be streamed, the operation must have either exactly one output parameter or a return value.  
+    1. The parameter that holds the data to be streamed must be the only parameter in the method. For example, if the input message is the one to be streamed, the operation must have exactly one input parameter. Similarly, if the output message is to be streamed, the operation must have either exactly one output parameter or a return value.  
   
-    2.  At least one of the types of the parameter and return value must be either <xref:System.IO.Stream>, <xref:System.ServiceModel.Channels.Message>, or <xref:System.Xml.Serialization.IXmlSerializable>.  
+    2. At least one of the types of the parameter and return value must be either <xref:System.IO.Stream>, <xref:System.ServiceModel.Channels.Message>, or <xref:System.Xml.Serialization.IXmlSerializable>.  
   
      The following is an example of a contract for streamed data.  
   
@@ -28,28 +28,28 @@ Windows Communication Foundation (WCF) can send messages using either buffered o
   
 2. Streaming must be enabled on the binding. You set a `TransferMode` property, which can take one of the following values:  
   
-    1.  `Buffered`,  
+    1. `Buffered`,  
   
-    2.  `Streamed`, which enables streaming communication in both directions.  
+    2. `Streamed`, which enables streaming communication in both directions.  
   
-    3.  `StreamedRequest`, which enables streaming the request only.  
+    3. `StreamedRequest`, which enables streaming the request only.  
   
-    4.  `StreamedResponse`, which enables streaming the response only.  
+    4. `StreamedResponse`, which enables streaming the response only.  
   
      The `BasicHttpBinding` exposes the `TransferMode` property on the binding, as does `NetTcpBinding` and `NetNamedPipeBinding`. The `TransferMode` property can also be set on the transport binding element and used in a custom binding.  
   
      The following samples show how to set `TransferMode` by code and by changing the configuration file. The samples also both set the `maxReceivedMessageSize` property to 64 MB, which places a cap on the maximum allowable size of messages on receive. The default `maxReceivedMessageSize` is 64 KB, which is usually too low for streaming scenarios. Set this quota setting as appropriate depending on the maximum size of messages your application expects to receive. Also note that `maxBufferSize` controls the maximum size that is buffered, and set it appropriately.  
   
-    1.  The following configuration snippet from the sample shows setting the `TransferMode` property to streaming on the `basicHttpBinding` and a custom HTTP binding.  
+    1. The following configuration snippet from the sample shows setting the `TransferMode` property to streaming on the `basicHttpBinding` and a custom HTTP binding.  
   
          [!code-xml[c_HowTo_EnableStreaming#103](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_enablestreaming/common/app.config#103)]   
   
-    2.  The following code snippet shows setting the `TransferMode` property to streaming on the `basicHttpBinding` and a custom HTTP binding.  
+    2. The following code snippet shows setting the `TransferMode` property to streaming on the `basicHttpBinding` and a custom HTTP binding.  
   
          [!code-csharp[c_HowTo_EnableStreaming_code#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_enablestreaming_code/cs/c_howto_enablestreaming_code.cs#2)]
          [!code-vb[c_HowTo_EnableStreaming_code#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_enablestreaming_code/vb/c_howto_enablestreaming_code.vb#2)]  
   
-    3.  The following code snippet shows setting the `TransferMode` property to streaming on a custom TCP binding.  
+    3. The following code snippet shows setting the `TransferMode` property to streaming on a custom TCP binding.  
   
          [!code-csharp[c_HowTo_EnableStreaming_code#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_enablestreaming_code/cs/c_howto_enablestreaming_code.cs#3)]
          [!code-vb[c_HowTo_EnableStreaming_code#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_enablestreaming_code/vb/c_howto_enablestreaming_code.vb#3)]  

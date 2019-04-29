@@ -21,13 +21,13 @@ In some cases, when an app uses two or more app domains with different applicati
   
 5. If the configuration system has not already been initialized, it must complete its initialization. This means, among other things, that the runtime has to create a stable path for a configuration system, which it does as follows:  
   
-    1.  It looks for evidence for the non-default app domain.  
+    1. It looks for evidence for the non-default app domain.  
   
-    2.  It tries to calculate the evidence for the non-default app domain based on the default app domain.  
+    2. It tries to calculate the evidence for the non-default app domain based on the default app domain.  
   
-    3.  The call to get evidence for the default app domain triggers a cross-app domain call from the non-default app domain to the default app domain.  
+    3. The call to get evidence for the default app domain triggers a cross-app domain call from the non-default app domain to the default app domain.  
   
-    4.  As part of the cross-app domain contract in the .NET Framework, the contents of the logical call context also have to be marshaled across app domain boundaries.  
+    4. As part of the cross-app domain contract in the .NET Framework, the contents of the logical call context also have to be marshaled across app domain boundaries.  
   
 6. Because the types that are in the logical call context cannot be resolved in the default app domain, an exception is thrown.  
   

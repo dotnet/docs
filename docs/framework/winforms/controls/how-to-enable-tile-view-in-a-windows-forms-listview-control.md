@@ -46,9 +46,9 @@ With the tile view feature of the <xref:System.Windows.Forms.ListView> control, 
 ## Compiling the Code  
  This example requires:  
   
--   References to the System and System.Windows.Forms assemblies.  
+- References to the System and System.Windows.Forms assemblies.  
   
--   An icon file named book.ico in the same directory as the executable file.  
+- An icon file named book.ico in the same directory as the executable file.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   

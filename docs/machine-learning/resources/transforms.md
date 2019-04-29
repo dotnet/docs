@@ -1,5 +1,5 @@
 ---
-title: Data transformations | ML.NET
+title: Data transformations 
 description: Explore the feature engineering components supported in ML.NET.
 author: natke
 ms.author: nakersha

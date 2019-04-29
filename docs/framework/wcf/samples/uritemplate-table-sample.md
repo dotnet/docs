@@ -8,11 +8,11 @@ The <xref:System.UriTemplateTable> class provides a dictionary-like associative 
   
  This sample demonstrates the following key concepts related to the `UriTemplateTable` class:  
   
--   Syntax for instantiating a `UriTemplateTable`.  
+- Syntax for instantiating a `UriTemplateTable`.  
   
--   Populating a `UriTemplateTable` with a set of key/value pairs.  
+- Populating a `UriTemplateTable` with a set of key/value pairs.  
   
--   Matching a candidate URI against the table using <xref:System.UriTemplateTable.MatchSingle%2A>.  
+- Matching a candidate URI against the table using <xref:System.UriTemplateTable.MatchSingle%2A>.  
   
 ### To set up, build, and run the sample  
   

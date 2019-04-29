@@ -19,56 +19,56 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
   
  The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the <xref:System.Windows.Forms.ToolStrip> control:  
   
--   <xref:System.Windows.Forms.ToolStripButton>  
+- <xref:System.Windows.Forms.ToolStripButton>  
   
--   <xref:System.Windows.Forms.ToolStripSeparator>  
+- <xref:System.Windows.Forms.ToolStripSeparator>  
   
--   <xref:System.Windows.Forms.ToolStripLabel>  
+- <xref:System.Windows.Forms.ToolStripLabel>  
   
--   <xref:System.Windows.Forms.ToolStripDropDownButton>  
+- <xref:System.Windows.Forms.ToolStripDropDownButton>  
   
--   <xref:System.Windows.Forms.ToolStripSplitButton>  
+- <xref:System.Windows.Forms.ToolStripSplitButton>  
   
--   <xref:System.Windows.Forms.ToolStripTextBox>  
+- <xref:System.Windows.Forms.ToolStripTextBox>  
   
--   <xref:System.Windows.Forms.ToolStripComboBox>  
+- <xref:System.Windows.Forms.ToolStripComboBox>  
   
 ### MenuStrip  
  <xref:System.Windows.Forms.MenuStrip> is the top-level container that supersedes <xref:System.Windows.Forms.MainMenu>. It also provides key handling and multiple document interface (MDI) features. Functionally, <xref:System.Windows.Forms.ToolStripDropDownItem> and <xref:System.Windows.Forms.ToolStripMenuItem> work along with <xref:System.Windows.Forms.MenuStrip>, although they are derived from <xref:System.Windows.Forms.ToolStripItem>.  
   
  The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the <xref:System.Windows.Forms.MenuStrip> control:  
   
--   <xref:System.Windows.Forms.ToolStripMenuItem>  
+- <xref:System.Windows.Forms.ToolStripMenuItem>  
   
--   <xref:System.Windows.Forms.ToolStripTextBox>  
+- <xref:System.Windows.Forms.ToolStripTextBox>  
   
--   <xref:System.Windows.Forms.ToolStripComboBox>  
+- <xref:System.Windows.Forms.ToolStripComboBox>  
   
 ### StatusStrip  
  <xref:System.Windows.Forms.StatusStrip> replaces the <xref:System.Windows.Forms.StatusBar> control. Special features of <xref:System.Windows.Forms.StatusStrip> include a custom table layout, support for the form's sizing and moving grips, and the `Spring` property, which allows a <xref:System.Windows.Forms.ToolStripStatusLabel> to fill available space automatically.  
   
  The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the <xref:System.Windows.Forms.StatusStrip> control:  
   
--   <xref:System.Windows.Forms.ToolStripStatusLabel>  
+- <xref:System.Windows.Forms.ToolStripStatusLabel>  
   
--   <xref:System.Windows.Forms.ToolStripDropDownButton>  
+- <xref:System.Windows.Forms.ToolStripDropDownButton>  
   
--   <xref:System.Windows.Forms.ToolStripSplitButton>  
+- <xref:System.Windows.Forms.ToolStripSplitButton>  
   
--   <xref:System.Windows.Forms.ToolStripProgressBar>  
+- <xref:System.Windows.Forms.ToolStripProgressBar>  
   
 ### ContextMenuStrip  
  <xref:System.Windows.Forms.ContextMenuStrip> replaces <xref:System.Windows.Forms.ContextMenu>. You can associate a <xref:System.Windows.Forms.ContextMenuStrip> with any control, and a right mouse click automatically displays the context menu (or shortcut menu). You can show a <xref:System.Windows.Forms.ContextMenuStrip> programmatically by using the <xref:System.Windows.Forms.ToolStripDropDown.Show%2A> method. <xref:System.Windows.Forms.ContextMenuStrip> supports cancelable <xref:System.Windows.Forms.ToolStripDropDown.Opening> and <xref:System.Windows.Forms.ToolStripDropDown.Closing> events to handle dynamic population and multiple-click scenarios. <xref:System.Windows.Forms.ContextMenuStrip> supports images, menu-item check state, text, access keys, shortcuts, and cascading menus.  
   
  The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the <xref:System.Windows.Forms.ContextMenuStrip> control:  
   
--   <xref:System.Windows.Forms.ToolStripMenuItem>  
+- <xref:System.Windows.Forms.ToolStripMenuItem>  
   
--   <xref:System.Windows.Forms.ToolStripSeparator>  
+- <xref:System.Windows.Forms.ToolStripSeparator>  
   
--   <xref:System.Windows.Forms.ToolStripTextBox>  
+- <xref:System.Windows.Forms.ToolStripTextBox>  
   
--   <xref:System.Windows.Forms.ToolStripComboBox>  
+- <xref:System.Windows.Forms.ToolStripComboBox>  
   
 ### ToolStrip Generic Features  
  The following topics describe features and behavior that are generic to the <xref:System.Windows.Forms.ToolStrip> and derived controls.  
@@ -89,26 +89,26 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
   
  The following list describes members related to parenting and explains their use.  
   
--   <xref:System.Windows.Forms.ToolStripDropDown.OwnerItem%2A> accesses the item that is the source of the drop-down item. This is similar to <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A>, but instead of returning a control, it returns a <xref:System.Windows.Forms.ToolStripItem>.  
+- <xref:System.Windows.Forms.ToolStripDropDown.OwnerItem%2A> accesses the item that is the source of the drop-down item. This is similar to <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A>, but instead of returning a control, it returns a <xref:System.Windows.Forms.ToolStripItem>.  
   
--   <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A> determines which control is the source of the <xref:System.Windows.Forms.ContextMenuStrip> when multiple controls share the same <xref:System.Windows.Forms.ContextMenuStrip>.  
+- <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A> determines which control is the source of the <xref:System.Windows.Forms.ContextMenuStrip> when multiple controls share the same <xref:System.Windows.Forms.ContextMenuStrip>.  
   
--   <xref:System.Windows.Forms.ToolStripItem.GetCurrentParent%2A> is a read-only accessor to the <xref:System.Windows.Forms.ToolStripItem.Parent%2A> property. A parent differs from an owner in that a parent denotes the returned current <xref:System.Windows.Forms.ToolStrip> in which the item is displayed, which might be in the overflow area.  
+- <xref:System.Windows.Forms.ToolStripItem.GetCurrentParent%2A> is a read-only accessor to the <xref:System.Windows.Forms.ToolStripItem.Parent%2A> property. A parent differs from an owner in that a parent denotes the returned current <xref:System.Windows.Forms.ToolStrip> in which the item is displayed, which might be in the overflow area.  
   
--   <xref:System.Windows.Forms.ToolStripItem.Owner%2A> returns the <xref:System.Windows.Forms.ToolStrip> whose Items collection contains the current <xref:System.Windows.Forms.ToolStripItem>. This is the best way to reference <xref:System.Windows.Forms.ToolStrip.ImageList%2A> or other properties in the top-level <xref:System.Windows.Forms.ToolStrip> without writing special code to handle overflow.  
+- <xref:System.Windows.Forms.ToolStripItem.Owner%2A> returns the <xref:System.Windows.Forms.ToolStrip> whose Items collection contains the current <xref:System.Windows.Forms.ToolStripItem>. This is the best way to reference <xref:System.Windows.Forms.ToolStrip.ImageList%2A> or other properties in the top-level <xref:System.Windows.Forms.ToolStrip> without writing special code to handle overflow.  
   
 #### Behavior of Inherited Controls  
  The following controls are locked whenever they are used in inheritance:  
   
--   <xref:System.Windows.Forms.ToolStrip>  
+- <xref:System.Windows.Forms.ToolStrip>  
   
--   <xref:System.Windows.Forms.MenuStrip>  
+- <xref:System.Windows.Forms.MenuStrip>  
   
--   <xref:System.Windows.Forms.ContextMenuStrip>  
+- <xref:System.Windows.Forms.ContextMenuStrip>  
   
--   <xref:System.Windows.Forms.StatusStrip>  
+- <xref:System.Windows.Forms.StatusStrip>  
   
--   <xref:System.Windows.Forms.ToolStripPanel> that includes the panels in a <xref:System.Windows.Forms.ToolStripContainer> and also individual <xref:System.Windows.Forms.ToolStripPanel> controls.  
+- <xref:System.Windows.Forms.ToolStripPanel> that includes the panels in a <xref:System.Windows.Forms.ToolStripContainer> and also individual <xref:System.Windows.Forms.ToolStripPanel> controls.  
   
  For example, create a new Windows Forms application by using one or more of the controls in the previous list. Set the access modifier of one or more controls to `public` or `protected`, and then build the project. Add a form that inherits from the first form, and then select an inherited control. The control appears locked, behaving as if its access modifier was `private`.  
   
@@ -132,13 +132,13 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 #### Inherited Behavior of Child Controls  
  After you complete the previous steps, the following inherited behavior occurs:  
   
--   In the designer, the control appears with an inherited icon.  
+- In the designer, the control appears with an inherited icon.  
   
--   The <xref:System.Windows.Forms.ToolStripPanel> controls are locked; you cannot select or rearrange their contents.  
+- The <xref:System.Windows.Forms.ToolStripPanel> controls are locked; you cannot select or rearrange their contents.  
   
--   You can add controls to the <xref:System.Windows.Forms.ToolStripContentPanel>, move the controls, and make them child controls of the <xref:System.Windows.Forms.ToolStripContentPanel>.  
+- You can add controls to the <xref:System.Windows.Forms.ToolStripContentPanel>, move the controls, and make them child controls of the <xref:System.Windows.Forms.ToolStripContentPanel>.  
   
--   Your changes persist after building the form.  
+- Your changes persist after building the form.  
   
     > [!NOTE]
     >  Remove the access modifiers from all <xref:System.Windows.Forms.ToolStripPanel> controls that are part of a <xref:System.Windows.Forms.ToolStripContainer>. The access modifier of the <xref:System.Windows.Forms.ToolStripContainer> governs the whole control.  
@@ -146,26 +146,26 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 #### Partial Trust  
  The limitations of `ToolStrip`s under partial trust are designed to prevent inadvertent entry of personal information that might be used by unauthorized persons or services. The protective measures are as follows:  
   
--   `ToolStripDropDown` controls require <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> to display items in a <xref:System.Windows.Forms.ToolStripControlHost>. This applies to both intrinsic controls such as <xref:System.Windows.Forms.ToolStripTextBox>, <xref:System.Windows.Forms.ToolStripComboBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> as well as to user-created controls. If this requirement is not met, these items are not displayed. No exception is thrown.  
+- `ToolStripDropDown` controls require <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> to display items in a <xref:System.Windows.Forms.ToolStripControlHost>. This applies to both intrinsic controls such as <xref:System.Windows.Forms.ToolStripTextBox>, <xref:System.Windows.Forms.ToolStripComboBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> as well as to user-created controls. If this requirement is not met, these items are not displayed. No exception is thrown.  
   
--   Setting the <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> property to `false` is not allowed, and the cancelable <xref:System.Windows.Forms.ToolStripDropDown.Closing> event parameter is ignored. This makes it impossible to enter more than one keystroke without dismissing the drop-down item. If this requirement is not met, such items are not displayed. No exception is thrown.  
+- Setting the <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> property to `false` is not allowed, and the cancelable <xref:System.Windows.Forms.ToolStripDropDown.Closing> event parameter is ignored. This makes it impossible to enter more than one keystroke without dismissing the drop-down item. If this requirement is not met, such items are not displayed. No exception is thrown.  
   
--   Many keystroke handling events will not be raised if they occur in partial trust contexts other than <xref:System.Security.Permissions.UIPermissionWindow.AllWindows>.  
+- Many keystroke handling events will not be raised if they occur in partial trust contexts other than <xref:System.Security.Permissions.UIPermissionWindow.AllWindows>.  
   
--   Access keys are not processed when <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> is not granted.  
+- Access keys are not processed when <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> is not granted.  
   
 #### Usage  
  The following usage patterns have a bearing on <xref:System.Windows.Forms.ToolStrip> layout, keyboard interaction, and end-user behavior:  
   
--   Joined in a <xref:System.Windows.Forms.ToolStripPanel>  
+- Joined in a <xref:System.Windows.Forms.ToolStripPanel>  
   
      The <xref:System.Windows.Forms.ToolStrip> can be repositioned within the <xref:System.Windows.Forms.ToolStripPanel> and across <xref:System.Windows.Forms.ToolStripPanel>s. The `Dock` property is ignored, and if the <xref:System.Windows.Forms.ToolStrip.Stretch%2A> property is `false`, the size of the <xref:System.Windows.Forms.ToolStrip> grows as items are added to the <xref:System.Windows.Forms.ToolStripPanel>. Typically, the <xref:System.Windows.Forms.ToolStrip> does not participate in the tab order.  
   
--   Docked  
+- Docked  
   
      The <xref:System.Windows.Forms.ToolStrip> is placed on one side of a container in a fixed position, and its size expands over the entire edge to which it is docked. Typically, the <xref:System.Windows.Forms.ToolStrip> does not participate in the tab order.  
   
--   Absolutely positioned  
+- Absolutely positioned  
   
      The <xref:System.Windows.Forms.ToolStrip> is like other controls, in that it is placed by the <xref:System.Windows.Forms.Control.Location%2A> property, has a fixed size, and typically participates in the tab order.  
   
@@ -191,11 +191,11 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 ##### Stack Layouts  
  Stacking is the arranging of items beside each other at both ends of the <xref:System.Windows.Forms.ToolStrip>. The following list describes the stack layouts.  
   
--   <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow> is the default. This setting causes the <xref:System.Windows.Forms.ToolStrip> to alter its layout automatically in accordance with the <xref:System.Windows.Forms.ToolStrip.Orientation%2A> property to handle dragging and docking scenarios.  
+- <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow> is the default. This setting causes the <xref:System.Windows.Forms.ToolStrip> to alter its layout automatically in accordance with the <xref:System.Windows.Forms.ToolStrip.Orientation%2A> property to handle dragging and docking scenarios.  
   
--   <xref:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other vertically.  
+- <xref:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other vertically.  
   
--   <xref:System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other horizontally.  
+- <xref:System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other horizontally.  
   
 ##### Other Features of Stack Layouts  
  <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> determines the end of the <xref:System.Windows.Forms.ToolStrip> to which the item is aligned.  
@@ -212,32 +212,32 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 ##### Flow Layout  
  <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout is the default for <xref:System.Windows.Forms.ContextMenuStrip>, <xref:System.Windows.Forms.ToolStripDropDownMenu>, and <xref:System.Windows.Forms.ToolStripOverflow>. It is similar to the <xref:System.Windows.Forms.FlowLayoutPanel>. The features of <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout are as follows:  
   
--   All of the features of <xref:System.Windows.Forms.FlowLayoutPanel> are exposed by the <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A> property. You must cast the <xref:System.Windows.Forms.LayoutSettings> class to a <xref:System.Windows.Forms.FlowLayoutSettings> class.  
+- All of the features of <xref:System.Windows.Forms.FlowLayoutPanel> are exposed by the <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A> property. You must cast the <xref:System.Windows.Forms.LayoutSettings> class to a <xref:System.Windows.Forms.FlowLayoutSettings> class.  
   
--   You can use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> and <xref:System.Windows.Forms.ToolStripItem.Anchor%2A> properties in code to align the items within the row.  
+- You can use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> and <xref:System.Windows.Forms.ToolStripItem.Anchor%2A> properties in code to align the items within the row.  
   
--   The <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property is ignored.  
+- The <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property is ignored.  
   
--   In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip> or did not fit.  
+- In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip> or did not fit.  
   
--   The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
+- The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
   
--   The <xref:System.Windows.Forms.ToolStrip> overflow button is not rendered, and <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> is ignored.  
+- The <xref:System.Windows.Forms.ToolStrip> overflow button is not rendered, and <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> is ignored.  
   
 ##### Table Layout  
  <xref:System.Windows.Forms.ToolStripLayoutStyle.Table> layout is the default for <xref:System.Windows.Forms.StatusStrip>. It is similar to <xref:System.Windows.Forms.TableLayoutPanel>. The features of <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout are as follows:  
   
--   All of the features of <xref:System.Windows.Forms.TableLayoutPanel> are exposed by the <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A> property. You must cast the <xref:System.Windows.Forms.LayoutSettings> class to a <xref:System.Windows.Forms.TableLayoutSettings> class.  
+- All of the features of <xref:System.Windows.Forms.TableLayoutPanel> are exposed by the <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A> property. You must cast the <xref:System.Windows.Forms.LayoutSettings> class to a <xref:System.Windows.Forms.TableLayoutSettings> class.  
   
--   You can use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> and <xref:System.Windows.Forms.ToolStripItem.Anchor%2A> properties in code to align the items within the table cell.  
+- You can use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> and <xref:System.Windows.Forms.ToolStripItem.Anchor%2A> properties in code to align the items within the table cell.  
   
--   The <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property is ignored.  
+- The <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property is ignored.  
   
--   In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip> or did not fit.  
+- In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip> or did not fit.  
   
--   The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle.Table> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
+- The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle.Table> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
   
--   The <xref:System.Windows.Forms.ToolStrip> overflow button is not rendered, and <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> is ignored.  
+- The <xref:System.Windows.Forms.ToolStrip> overflow button is not rendered, and <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> is ignored.  
   
 ## ToolStripItem  
  The following topics describe <xref:System.Windows.Forms.ToolStripItem> and the controls that derive from it.  
@@ -290,9 +290,9 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 ### ToolStripControlHost  
  <xref:System.Windows.Forms.ToolStripControlHost> is the abstract base class for <xref:System.Windows.Forms.ToolStripComboBox>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.ToolStripProgressBar>. <xref:System.Windows.Forms.ToolStripControlHost> can host other controls, including custom controls, in two ways:  
   
--   Construct a <xref:System.Windows.Forms.ToolStripControlHost> with a class that derives from <xref:System.Windows.Forms.Control>. To fully access the hosted control and properties, you must cast the <xref:System.Windows.Forms.ToolStripControlHost.Control%2A> property back to the actual class it represents.  
+- Construct a <xref:System.Windows.Forms.ToolStripControlHost> with a class that derives from <xref:System.Windows.Forms.Control>. To fully access the hosted control and properties, you must cast the <xref:System.Windows.Forms.ToolStripControlHost.Control%2A> property back to the actual class it represents.  
   
--   Extend <xref:System.Windows.Forms.ToolStripControlHost>, and in the inherited class's default constructor, call the base class constructor passing a class that derives from <xref:System.Windows.Forms.Control>. This option lets you wrap common control methods and properties for easy access in a <xref:System.Windows.Forms.ToolStrip>.  
+- Extend <xref:System.Windows.Forms.ToolStripControlHost>, and in the inherited class's default constructor, call the base class constructor passing a class that derives from <xref:System.Windows.Forms.Control>. This option lets you wrap common control methods and properties for easy access in a <xref:System.Windows.Forms.ToolStrip>.  
   
 ### ToolStripComboBox  
  <xref:System.Windows.Forms.ToolStripComboBox> is the <xref:System.Windows.Forms.ComboBox> optimized for hosting in a <xref:System.Windows.Forms.ToolStrip>. A subset of the hosted control's properties and events are exposed at the <xref:System.Windows.Forms.ToolStripComboBox> level, but the underlying <xref:System.Windows.Forms.ComboBox> control is fully accessible through the <xref:System.Windows.Forms.ToolStripComboBox.ComboBox%2A> property.  
@@ -320,15 +320,15 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 ### ToolStripItem Generic Features  
  <xref:System.Windows.Forms.ToolStripItem> provides the following generic features and options to inheriting controls:  
   
--   Core events  
+- Core events  
   
--   Image handling  
+- Image handling  
   
--   Alignment  
+- Alignment  
   
--   Text and image relationship  
+- Text and image relationship  
   
--   Display style  
+- Display style  
   
 #### Core Events  
  <xref:System.Windows.Forms.ToolStripItem> controls receive their own click, mouse, and paint events, and can perform some keyboard preprocessing also.  
@@ -338,11 +338,11 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
   
  Image scaling is determined by the interaction of properties in both <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem>, as follows:  
   
--   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
+- <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    - If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    - If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
 #### Alignment  
  The value of the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property determines the end of the <xref:System.Windows.Forms.ToolStrip> at which an item appears. The <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property works only when the layout style of the <xref:System.Windows.Forms.ToolStrip> is set to one of the stack overflow values.  
@@ -358,17 +358,17 @@ The <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStr
 ## Accessory Classes  
  Classes that provide various other functionality include:  
   
--   <xref:System.Windows.Forms.ToolStripManager> supports <xref:System.Windows.Forms.ToolStrip>-related tasks for entire applications, such as merging, settings, and renderer options.  
+- <xref:System.Windows.Forms.ToolStripManager> supports <xref:System.Windows.Forms.ToolStrip>-related tasks for entire applications, such as merging, settings, and renderer options.  
   
--   <xref:System.Windows.Forms.ToolStripRenderer> allows you to apply a particular style or theme to a <xref:System.Windows.Forms.ToolStrip> easily.  
+- <xref:System.Windows.Forms.ToolStripRenderer> allows you to apply a particular style or theme to a <xref:System.Windows.Forms.ToolStrip> easily.  
   
--   <xref:System.Windows.Forms.ToolStripProfessionalRenderer> creates pens and brushes based on a replaceable color table (<xref:System.Windows.Forms.ProfessionalColorTable>).  
+- <xref:System.Windows.Forms.ToolStripProfessionalRenderer> creates pens and brushes based on a replaceable color table (<xref:System.Windows.Forms.ProfessionalColorTable>).  
   
--   <xref:System.Windows.Forms.ToolStripSystemRenderer> applies system colors and a flat visual style to <xref:System.Windows.Forms.ToolStrip> applications.  
+- <xref:System.Windows.Forms.ToolStripSystemRenderer> applies system colors and a flat visual style to <xref:System.Windows.Forms.ToolStrip> applications.  
   
--   <xref:System.Windows.Forms.ToolStripContainer> is similar to <xref:System.Windows.Forms.SplitContainer>. It uses four docked side panels (instances of <xref:System.Windows.Forms.ToolStripPanel>) and one central panel (an instance of <xref:System.Windows.Forms.ToolStripContentPanel>) to create a typical arrangement. You cannot remove the side panels, but you can hide them. You can neither remove nor hide the central panel. You can arrange one or more <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, or <xref:System.Windows.Forms.StatusStrip> controls in the side panels, and you can use the central panel for other controls. The <xref:System.Windows.Forms.ToolStripContentPanel> also provides a way to get renderer support into the body of your form for a consistent appearance. <xref:System.Windows.Forms.ToolStripContainer> does not support multiple document interface (MDI).  
+- <xref:System.Windows.Forms.ToolStripContainer> is similar to <xref:System.Windows.Forms.SplitContainer>. It uses four docked side panels (instances of <xref:System.Windows.Forms.ToolStripPanel>) and one central panel (an instance of <xref:System.Windows.Forms.ToolStripContentPanel>) to create a typical arrangement. You cannot remove the side panels, but you can hide them. You can neither remove nor hide the central panel. You can arrange one or more <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, or <xref:System.Windows.Forms.StatusStrip> controls in the side panels, and you can use the central panel for other controls. The <xref:System.Windows.Forms.ToolStripContentPanel> also provides a way to get renderer support into the body of your form for a consistent appearance. <xref:System.Windows.Forms.ToolStripContainer> does not support multiple document interface (MDI).  
   
--   <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
+- <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
   
 ## See also
 

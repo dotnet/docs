@@ -32,9 +32,9 @@ This step involves customizing an application for specific cultures or regions. 
 
 Following these three steps provides two advantages:
 
--   It frees you from having to retrofit an application that is designed to support a single culture, such as U.S. English, to support additional cultures.
+- It frees you from having to retrofit an application that is designed to support a single culture, such as U.S. English, to support additional cultures.
 
--   It results in localized applications that are more stable and have fewer bugs.
+- It results in localized applications that are more stable and have fewer bugs.
 
 .NET provides extensive support for the development of world-ready and localized applications. In particular, many type members in the .NET class library aid globalization by returning values that reflect the conventions of either the current user's culture or a specified culture. Also, .NET supports satellite assemblies, which facilitate the process of localizing an application.
 

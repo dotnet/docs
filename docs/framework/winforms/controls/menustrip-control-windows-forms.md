@@ -49,19 +49,19 @@ This control groups application commands and makes them easily accessible.
  [How to: Set Up Automatic Menu Merging for MDI Applications](how-to-set-up-automatic-menu-merging-for-mdi-applications.md)  
  Describes how to merge menu items automatically at run time.  
   
--   [MenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
+- [MenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
   
--   [How to: Copy ToolStripMenuItems](how-to-copy-toolstripmenuitems.md)  
+- [How to: Copy ToolStripMenuItems](how-to-copy-toolstripmenuitems.md)  
   
--   [How to: Hide ToolStripMenuItems Using the Designer](how-to-hide-toolstripmenuitems-using-the-designer.md)  
+- [How to: Hide ToolStripMenuItems Using the Designer](how-to-hide-toolstripmenuitems-using-the-designer.md)  
   
--   [How to: Disable ToolStripMenuItems Using the Designer](how-to-disable-toolstripmenuitems-using-the-designer.md)  
+- [How to: Disable ToolStripMenuItems Using the Designer](how-to-disable-toolstripmenuitems-using-the-designer.md)  
   
--   [How to: Move ToolStripMenuItems](how-to-move-toolstripmenuitems.md)  
+- [How to: Move ToolStripMenuItems](how-to-move-toolstripmenuitems.md)  
   
--   [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md)  
+- [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md)  
   
--   [MenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
+- [MenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
   
 ## Reference  
  <xref:System.Windows.Forms.MenuStrip>  

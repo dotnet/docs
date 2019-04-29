@@ -24,18 +24,18 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
  The binding has the following dead-letter queue properties:  
   
--   <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A>  
+- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A>  
   
--   <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>  
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>  
   
 ## Reading Messages from the Dead-Letter Queue  
  An application that reads messages out of a dead-letter queue is similar to a WCF service that reads from an application queue, except for the following minor differences:  
   
--   To read messages from a system transactional dead-letter queue, the Uniform Resource Identifier (URI) must be of the form: net.msmq://localhost/system$;DeadXact.  
+- To read messages from a system transactional dead-letter queue, the Uniform Resource Identifier (URI) must be of the form: net.msmq://localhost/system$;DeadXact.  
   
--   To read messages from a system non-transactional dead-letter queue, the URI must be of the form: net.msmq://localhost/system$;DeadLetter.  
+- To read messages from a system non-transactional dead-letter queue, the URI must be of the form: net.msmq://localhost/system$;DeadLetter.  
   
--   To read messages from a custom dead-letter queue, the URI must be of the form:net.msmq://localhost/private/\<*custom-dlq-name*> where *custom-dlq-name* is the name of the custom dead-letter queue.  
+- To read messages from a custom dead-letter queue, the URI must be of the form:net.msmq://localhost/private/\<*custom-dlq-name*> where *custom-dlq-name* is the name of the custom dead-letter queue.  
   
  For more information about how to address queues, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   

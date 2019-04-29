@@ -40,11 +40,11 @@ Dim result = Await myTask
   
 1. To set up a WPF application, complete the following steps. You can find detailed instructions for these steps in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
-    -   Create a WPF application that contains a text box and a button. Name the button `startButton`, and name the text box `resultsTextBox`.  
+    - Create a WPF application that contains a text box and a button. Name the button `startButton`, and name the text box `resultsTextBox`.  
   
-    -   Add a reference for <xref:System.Net.Http>.  
+    - Add a reference for <xref:System.Net.Http>.  
   
-    -   In the MainWindow.xaml.vb file, add an `Imports` statement for `System.Net.Http`.  
+    - In the MainWindow.xaml.vb file, add an `Imports` statement for `System.Net.Http`.  
   
 ### To add the code  
   
@@ -62,9 +62,9 @@ Dim result = Await myTask
   
 3. Add the following support methods to the project:  
   
-    -   `ProcessURLAsync` uses an <xref:System.Net.Http.HttpClient> method to download the contents of a website as a byte array. The support method, `ProcessURLAsync` then displays and returns the length of the array.  
+    - `ProcessURLAsync` uses an <xref:System.Net.Http.HttpClient> method to download the contents of a website as a byte array. The support method, `ProcessURLAsync` then displays and returns the length of the array.  
   
-    -   `DisplayResults` displays the number of bytes in the byte array for each URL. This display shows when each task has finished downloading.  
+    - `DisplayResults` displays the number of bytes in the byte array for each URL. This display shows when each task has finished downloading.  
   
      Copy the following methods, and paste them after the `startButton_Click` event handler in MainWindow.xaml.vb.  
   
@@ -90,13 +90,13 @@ Dim result = Await myTask
   
 4. Finally, define method `CreateMultipleTasksAsync`, which performs the following steps.  
   
-    -   The method declares an `HttpClient` object,which you need  to access method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> in `ProcessURLAsync`.  
+    - The method declares an `HttpClient` object,which you need  to access method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> in `ProcessURLAsync`.  
   
-    -   The method creates and starts three tasks of type <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer. As each task finishes, `DisplayResults` displays the task's URL and the length of the downloaded contents. Because the tasks are running asynchronously, the order in which the results appear might differ from the order in which they were declared.  
+    - The method creates and starts three tasks of type <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer. As each task finishes, `DisplayResults` displays the task's URL and the length of the downloaded contents. Because the tasks are running asynchronously, the order in which the results appear might differ from the order in which they were declared.  
   
-    -   The method awaits the completion of each task. Each `Await` operator suspends execution of `CreateMultipleTasksAsync` until the awaited task is finished. The operator also retrieves the return value from the call to `ProcessURLAsync` from each completed task.  
+    - The method awaits the completion of each task. Each `Await` operator suspends execution of `CreateMultipleTasksAsync` until the awaited task is finished. The operator also retrieves the return value from the call to `ProcessURLAsync` from each completed task.  
   
-    -   When the tasks have been completed and the integer values have been retrieved, the method sums the lengths of the websites and displays the result.  
+    - When the tasks have been completed and the integer values have been retrieved, the method sums the lengths of the websites and displays the result.  
   
      Copy the following method, and paste it into your solution.  
   

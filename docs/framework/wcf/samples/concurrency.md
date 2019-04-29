@@ -16,11 +16,11 @@ The Concurrency sample demonstrates using the <xref:System.ServiceModel.ServiceB
   
  There are three concurrency modes available:  
   
--   `Single`: Each service instance processes one message at a time. This is the default concurrency mode.  
+- `Single`: Each service instance processes one message at a time. This is the default concurrency mode.  
   
--   `Multiple`: Each service instance processes multiple messages concurrently. The service implementation must be thread-safe to use this concurrency mode.  
+- `Multiple`: Each service instance processes multiple messages concurrently. The service implementation must be thread-safe to use this concurrency mode.  
   
--   `Reentrant`: Each service instance processes one message at a time, but accepts reentrant calls. The service only accepts these calls when it is calling out. Reentrant is demonstrated in the [ConcurrencyMode.Reentrant](../../../../docs/framework/wcf/samples/concurrencymode-reentrant.md) sample.  
+- `Reentrant`: Each service instance processes one message at a time, but accepts reentrant calls. The service only accepts these calls when it is calling out. Reentrant is demonstrated in the [ConcurrencyMode.Reentrant](../../../../docs/framework/wcf/samples/concurrencymode-reentrant.md) sample.  
   
  The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode.PerCall> instancing, concurrency is not relevant, because each message is processed by a new service instance. In <xref:System.ServiceModel.InstanceContextMode.Single> instancing, either <xref:System.ServiceModel.ConcurrencyMode.Single> or <xref:System.ServiceModel.ConcurrencyMode.Multiple> concurrency is relevant, depending on whether the single instance processes messages sequentially or concurrently. In <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing, any of the concurrency modes may be relevant.  
   

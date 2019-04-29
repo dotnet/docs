@@ -10,7 +10,7 @@ During a file-access or disk-access operation, the operating system was unable t
   
 ## To correct this error  
   
--   Verify and respecify the path.  
+- Verify and respecify the path.  
   
 ## See also
 

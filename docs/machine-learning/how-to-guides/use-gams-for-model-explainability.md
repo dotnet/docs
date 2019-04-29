@@ -1,5 +1,5 @@
 ---
-title: Use Generalized Additive Models and shape functions for model explainability in ML.NET
+title: Use Generalized Additive Models and shape functions for model explainability 
 description: Use Generalized Additive Models and shape functions for model explainability in ML.NET
 ms.date: 03/05/2019
 ms.custom: mvc,how-to

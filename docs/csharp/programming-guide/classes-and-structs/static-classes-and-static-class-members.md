@@ -38,13 +38,13 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  The following list provides the main features of a static class:  
   
--   Contains only static members.  
+- Contains only static members.  
   
--   Cannot be instantiated.  
+- Cannot be instantiated.  
   
--   Is sealed.  
+- Is sealed.  
   
--   Cannot contain [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
+- Cannot contain [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
   
  Creating a static class is therefore basically the same as creating a class that contains only static members and a private constructor. A private constructor prevents the class from being instantiated. The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added. The compiler will guarantee that instances of this class cannot be created.  
   

@@ -35,17 +35,17 @@ This walkthrough demonstrates the C# language features that are used to write LI
 ## Create an in-Memory Data Source  
  The data source for the queries is a simple list of `Student` objects. Each `Student` record has a first name, last name, and an array of integers that represents their test scores in the class. Copy this code into your project. Note the following characteristics:  
   
--   The `Student` class consists of auto-implemented properties.  
+- The `Student` class consists of auto-implemented properties.  
   
--   Each student in the list is initialized with an object initializer.  
+- Each student in the list is initialized with an object initializer.  
   
--   The list itself is initialized with a collection initializer.  
+- The list itself is initialized with a collection initializer.  
   
  This whole data structure will be initialized and instantiated without explicit calls to any constructor or explicit member access. For more information about these new features, see [Auto-Implemented Properties](../../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md) and [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md).  
   
 #### To add the data source  
   
--   Add the `Student` class and the initialized list of students to the `Program` class in your project.  
+- Add the `Student` class and the initialized list of students to the `Program` class in your project.  
   
      [!code-csharp[CsLinqGettingStarted#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#11)]  
   
@@ -57,7 +57,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 #### To create a simple query  
   
--   In the application's `Main` method, create a simple query that, when it is executed, will produce a list of all students whose score on the first test was greater than 90. Note that because the whole `Student` object is selected, the type of the query is `IEnumerable<Student>`. Although the code could also use implicit typing by using the [var](../../../../csharp/language-reference/keywords/var.md) keyword, explicit typing is used to clearly illustrate results. (For more information about `var`, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).)  
+- In the application's `Main` method, create a simple query that, when it is executed, will produce a list of all students whose score on the first test was greater than 90. Note that because the whole `Student` object is selected, the type of the query is `IEnumerable<Student>`. Although the code could also use implicit typing by using the [var](../../../../csharp/language-reference/keywords/var.md) keyword, explicit typing is used to clearly illustrate results. (For more information about `var`, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).)  
   
      Note also that the query's range variable, `student`, serves as a reference to each `Student` in the source, providing member access for each object.  
   
@@ -69,9 +69,9 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 1. Now write the `foreach` loop that will cause the query to execute. Note the following about the code:  
   
-    -   Each element in the returned sequence is accessed through the iteration variable in the `foreach` loop.  
+    - Each element in the returned sequence is accessed through the iteration variable in the `foreach` loop.  
   
-    -   The type of this variable is `Student`, and the type of the query variable is compatible, `IEnumerable<Student>`.  
+    - The type of this variable is `Student`, and the type of the query variable is compatible, `IEnumerable<Student>`.  
   
 2. After you have added this code, build and run the application to see the results in the **Console** window.  
   

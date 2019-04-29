@@ -26,9 +26,9 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
   
  Create a device by calling one of the following methods.  
   
--   `IDirect3D9 * Direct3DCreate9(UINT SDKVersion);`  
+- `IDirect3D9 * Direct3DCreate9(UINT SDKVersion);`  
   
--   `HRESULT Direct3DCreate9Ex(UINT SDKVersion, IDirect3D9Ex **ppD3D);`  
+- `HRESULT Direct3DCreate9Ex(UINT SDKVersion, IDirect3D9Ex **ppD3D);`  
   
  On Windows Vista or later operating system, use the `Direct3DCreate9Ex` method with a display that is configured to use the Windows Display Driver Model (WDDM). Use the `Direct3DCreate9` method on any other platform.  
   
@@ -91,11 +91,11 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
   
  There are three possible approaches to handle resizing.  
   
--   Participate in the layout system and create a new surface when the size changes. Do not create too many surfaces, because you may exhaust or fragment video memory.  
+- Participate in the layout system and create a new surface when the size changes. Do not create too many surfaces, because you may exhaust or fragment video memory.  
   
--   Wait until a resize event has not occurred for a fixed period of time to create the new surface.  
+- Wait until a resize event has not occurred for a fixed period of time to create the new surface.  
   
--   Create a <xref:System.Windows.Threading.DispatcherTimer> that checks the container dimensions several times per second.  
+- Create a <xref:System.Windows.Threading.DispatcherTimer> that checks the container dimensions several times per second.  
   
 ## Multi-monitor Optimization  
  Significantly reduced performance can result when the rendering system moves a <xref:System.Windows.Interop.D3DImage> to another monitor.  
@@ -126,11 +126,11 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
 ## WPF Software Rendering  
  WPF renders synchronously on the UI thread in software in the following situations.  
   
--   Printing  
+- Printing  
   
--   <xref:System.Windows.Media.Effects.BitmapEffect>  
+- <xref:System.Windows.Media.Effects.BitmapEffect>  
   
--   <xref:System.Windows.Media.Imaging.RenderTargetBitmap>  
+- <xref:System.Windows.Media.Imaging.RenderTargetBitmap>  
   
  When one of these situations occurs, the rendering system calls the <xref:System.Windows.Interop.D3DImage.CopyBackBuffer%2A> method to copy the hardware buffer to software. The default implementation calls the `GetRenderTargetData` method with your surface. Because this call occurs outside of the Lock/Unlock pattern, it may fail. In this case, the `CopyBackBuffer` method returns `null` and no image is displayed.  
   

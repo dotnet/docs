@@ -36,9 +36,9 @@ All versioning of assemblies that use the common language runtime is done at the
 ## Version Information  
  Each assembly has two distinct ways of expressing version information:  
   
--   The assembly's version number, which, together with the assembly name and culture information, is part of the assembly's identity. This number is used by the runtime to enforce version policy and plays a key part in the type resolution process at run time.  
+- The assembly's version number, which, together with the assembly name and culture information, is part of the assembly's identity. This number is used by the runtime to enforce version policy and plays a key part in the type resolution process at run time.  
   
--   An informational version, which is a string that represents additional version information included for informational purposes only.  
+- An informational version, which is a string that represents additional version information included for informational purposes only.  
   
 ### Assembly Version Number  
  Each assembly has a version number as part of its identity. As such, two assemblies that differ by version number are considered by the runtime to be completely different assemblies. This version number is physically represented as a four-part string with the following format:  

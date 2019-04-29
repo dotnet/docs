@@ -10,11 +10,11 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
   
  There are three parts to a creating a WCF AJAX service:  
   
--   Creating an AJAX endpoint that can be accessed from the browser.  
+- Creating an AJAX endpoint that can be accessed from the browser.  
   
--   Creating an AJAX-compatible service contract.  
+- Creating an AJAX-compatible service contract.  
   
--   Accessing WCF AJAX services.  
+- Accessing WCF AJAX services.  
   
 ## Creating an AJAX Endpoint  
  The most basic way to enable AJAX support in a WCF service is to use the <xref:System.ServiceModel.Activation.WebServiceHostFactory> in the .svc file associated with the service, as in the following example.  

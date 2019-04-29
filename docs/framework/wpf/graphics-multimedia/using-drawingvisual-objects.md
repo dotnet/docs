@@ -45,9 +45,9 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
   
  The following list describes the two members you must override:  
   
--   <xref:System.Windows.FrameworkElement.GetVisualChild%2A>: Returns a child at the specified index from the collection of child elements.  
+- <xref:System.Windows.FrameworkElement.GetVisualChild%2A>: Returns a child at the specified index from the collection of child elements.  
   
--   <xref:System.Windows.FrameworkElement.VisualChildrenCount%2A>: Gets the number of visual child elements within this element.  
+- <xref:System.Windows.FrameworkElement.VisualChildrenCount%2A>: Gets the number of visual child elements within this element.  
   
  In the following example, overrides for the two <xref:System.Windows.FrameworkElement> members are implemented.  
   

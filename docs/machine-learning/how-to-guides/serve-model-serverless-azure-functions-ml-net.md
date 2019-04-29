@@ -18,7 +18,7 @@ Learn how to deploy a pre-trained ML.NET machine learning model for predictions 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - Powershell
-- Pre-trained model.
+- Pre-trained model
     - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
     
     or 
@@ -81,7 +81,7 @@ You need to create some classes for your input data and predictions. Add a new c
     using Microsoft.ML.Data;
     ```
 
-Remove the existing class definition and add the following code to the *SentimentData.cs* file:
+    Remove the existing class definition and add the following code to the *SentimentData.cs* file:
     
     ```csharp
     public class SentimentData
@@ -184,11 +184,11 @@ Now that everything is set up, it's time to test the application:
     Invoke-RestMethod "http://localhost:<PORT>/api/AnalyzeSentiment" -Method Post -Body (@{Text="This is a very rude movie"} | ConvertTo-Json) -ContentType "application/json"
     ```
 
-If successful, the output should look similar to the text below:
-
-    ```powershell
-    Toxic
-    ```
+    If successful, the output should look similar to the text below:
+    
+        ```powershell
+        Toxic
+        ```
 
 Congratulations! You have successfully served your model to make predictions over the internet using an Azure Function.
 

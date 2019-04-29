@@ -51,7 +51,7 @@ The `HousingPrediction` data model inherits from `HousingData` to make it easy t
 
 ## Set up Prediction Pipeline
 
-Whether making a single or batch prediction, the prediction pipeline needs to be set up. After loading the data preparation pipeline and the trained model, they are combined into an [`ITransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601).
+Whether making a single or batch prediction, the prediction pipeline needs to be set up. After loading the data preparation pipeline and the trained model, they're  combined into an [`ITransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601).
 
 ```csharp
 //Create MLContext 

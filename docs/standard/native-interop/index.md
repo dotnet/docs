@@ -23,5 +23,5 @@ The previous list doesn't cover all of the potential situations and scenarios in
 ## See also
 
 - [Platform Invoke (P/Invoke)](pinvoke.md)
-- [Type marshalling](type-marshalling.md)
+- [Type marshaling](type-marshaling.md)
 - [Native interoperability best practices](best-practices.md)

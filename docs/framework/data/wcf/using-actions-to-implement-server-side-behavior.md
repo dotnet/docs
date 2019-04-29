@@ -40,7 +40,7 @@ OData Actions provide a way to implement a behavior that acts upon a resource re
   
 3. Storing any results from Invoke() so they can be retrieved using GetResult()  
   
- The parameters may be passed as tokens. This is because it is possible to write a Data Service Provider that works with tokens that represent resources, if this is the case you may need to convert (marshal) these tokens into actual resources before dispatching to the actual action. After the parameter has been marshalled, it must be in an editable state so that any changes to the resource that occur when the action is invoked will be saved and written to disk.  
+ The parameters may be passed as tokens. This is because it is possible to write a Data Service Provider that works with tokens that represent resources, if this is the case you may need to convert (marshal) these tokens into actual resources before dispatching to the actual action. After the parameter has been marshaled, it must be in an editable state so that any changes to the resource that occur when the action is invoked will be saved and written to disk.  
   
  This interface requires two methods: Invoke and GetResult. Invoke invokes the delegate that implements the action’s behavior and GetResult returns the result of the action.  
   

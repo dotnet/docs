@@ -173,7 +173,7 @@ namespace PInvokeSamples
 
     // The native callback takes a pointer to a struct. The below class
     // represents that struct in managed code. You can find more information
-    // about this in the section on marshalling below.
+    // about this in the section on marshaling below.
     [StructLayout(LayoutKind.Sequential)]
     public class StatClass
     {
@@ -249,7 +249,7 @@ namespace PInvokeSamples
 }
 ```
 
-Both of the previous examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Learn about how types are marshalled to native code in our page on [Type marshalling](type-marshalling.md).
+Both of the previous examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Learn about how types are marshaled to native code in our page on [Type marshaling](type-marshaling.md).
 
 ## More resources
 

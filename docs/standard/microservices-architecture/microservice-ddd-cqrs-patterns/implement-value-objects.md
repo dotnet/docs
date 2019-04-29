@@ -319,7 +319,7 @@ public class Address
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/aspnet/EntityFramework/issues/246>
 
-- **ValueObject.cs.** Base value object class in eShopOnContainers.**  \
+- **ValueObject.cs.** Base value object class in eShopOnContainers. \
   <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs>
 
 - **Address class.** Sample value object class in eShopOnContainers. \
